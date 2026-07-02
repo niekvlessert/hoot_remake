@@ -8,8 +8,9 @@
 #include <fstream>
 #include <iterator>
 #include <map>
-#include <regex>
-#include <sstream>
+#include <string>
+#include <vector>
+#include <utility>
 
 namespace hoot {
 namespace {
@@ -59,58 +60,6 @@ std::string xml_unescape(std::string value)
     return value;
 }
 
-std::string strip_xml_comments(std::string value)
-{
-    std::string stripped;
-    size_t pos = 0;
-    while (pos < value.size()) {
-        const auto begin = value.find("<!--", pos);
-        if (begin == std::string::npos) {
-            stripped.append(value, pos, std::string::npos);
-            break;
-        }
-        stripped.append(value, pos, begin - pos);
-        const auto end = value.find("-->", begin + 4);
-        if (end == std::string::npos) {
-            break;
-        }
-        pos = end + 3;
-    }
-    return stripped;
-}
-
-std::string tag_text(const std::string& block, const std::string& tag)
-{
-    const std::regex pattern("<" + tag + "(?:\\s+[^>]*)?>([\\s\\S]*?)</" + tag + ">",
-                             std::regex::icase);
-    std::smatch match;
-    if (!std::regex_search(block, match, pattern)) {
-        return {};
-    }
-    return xml_unescape(trim(match[1].str()));
-}
-
-std::string tag_open(const std::string& block, const std::string& tag)
-{
-    const std::regex pattern("<" + tag + "(?:\\s+[^>]*)?>",
-                             std::regex::icase);
-    std::smatch match;
-    if (!std::regex_search(block, match, pattern)) {
-        return {};
-    }
-    return match[0].str();
-}
-
-std::string attr_value(const std::string& open_tag, const std::string& attr)
-{
-    const std::regex pattern("\\s" + attr + "\\s*=\\s*\"([^\"]*)\"",
-                             std::regex::icase);
-    std::smatch match;
-    if (!std::regex_search(open_tag, match, pattern)) {
-        return {};
-    }
-    return xml_unescape(match[1].str());
-}
 
 uint32_t parse_u32(const std::string& text)
 {
@@ -156,89 +105,303 @@ std::string unique_id(const HootEntry& entry, std::map<std::string, int>& seen)
     return base + "-" + std::to_string(count + 1);
 }
 
-std::vector<std::string> matching_blocks(const std::string& xml, const std::string& tag)
-{
-    const std::regex pattern("<" + tag + "(?:\\s+[^>]*)?>[\\s\\S]*?</" + tag + ">",
-                             std::regex::icase);
-    std::vector<std::string> blocks;
-    for (std::sregex_iterator it(xml.begin(), xml.end(), pattern), end; it != end; ++it) {
-        blocks.push_back(it->str());
+struct XmlNode {
+    std::string name;
+    std::vector<std::pair<std::string, std::string>> attributes;
+    std::string text;
+    std::vector<XmlNode> children;
+
+    std::string attribute(std::string_view attr_name) const {
+        for (const auto& attr : attributes) {
+            if (attr.first == attr_name) {
+                return attr.second;
+            }
+        }
+        return {};
     }
-    return blocks;
+};
+
+void skip_whitespace(std::string_view& sv) {
+    while (!sv.empty() && std::isspace(static_cast<unsigned char>(sv[0]))) {
+        sv.remove_prefix(1);
+    }
 }
 
-std::vector<std::string> matching_open_tags(const std::string& xml, const std::string& tag)
-{
-    const std::regex pattern("<" + tag + "(?:\\s+[^>]*)?/?>",
-                             std::regex::icase);
-    std::vector<std::string> tags;
-    for (std::sregex_iterator it(xml.begin(), xml.end(), pattern), end; it != end; ++it) {
-        tags.push_back(it->str());
+bool parse_tag(std::string_view tag_content, std::string& name, std::vector<std::pair<std::string, std::string>>& attributes, bool& self_closing) {
+    skip_whitespace(tag_content);
+    if (tag_content.empty()) return false;
+
+    // Read name
+    size_t name_end = 0;
+    while (name_end < tag_content.size() && !std::isspace(static_cast<unsigned char>(tag_content[name_end])) && tag_content[name_end] != '/' && tag_content[name_end] != '>') {
+        name_end++;
     }
-    return tags;
-}
+    if (name_end == 0) return false;
+    name = std::string(tag_content.substr(0, name_end));
+    std::transform(name.begin(), name.end(), name.begin(), [](unsigned char c) {
+        return static_cast<char>(std::tolower(c));
+    });
+    tag_content.remove_prefix(name_end);
 
-bool parse_games(const std::string& xml, HootCatalog& catalog, std::map<std::string, int>& seen_ids)
-{
-    const auto uncommented_xml = strip_xml_comments(xml);
-
-    for (const auto& game : matching_blocks(uncommented_xml, "game")) {
-        HootEntry entry;
-        entry.title = tag_text(game, "name");
-
-        const auto driver_open = tag_open(game, "driver");
-        entry.driver_name = tag_text(game, "driver");
-        entry.driver_type = attr_value(driver_open, "type");
-        if (!entry.driver_type.empty()) {
-            entry.driver_name += "/" + entry.driver_type;
+    // Read attributes
+    while (true) {
+        skip_whitespace(tag_content);
+        if (tag_content.empty()) break;
+        if (tag_content[0] == '/') {
+            self_closing = true;
+            tag_content.remove_prefix(1);
+            skip_whitespace(tag_content);
+            break;
+        }
+        if (tag_content[0] == '>') {
+            break;
         }
 
-        const auto driver_alias_open = tag_open(game, "driveralias");
-        const auto driver_alias_text = tag_text(game, "driveralias");
-        const auto driver_alias_type = attr_value(driver_alias_open, "type");
-        if (!driver_alias_text.empty()) {
-            entry.driver_alias = driver_alias_text;
-            if (!driver_alias_type.empty()) {
-                entry.driver_alias += "/" + driver_alias_type;
+        // Read attribute key
+        size_t key_end = 0;
+        while (key_end < tag_content.size() && tag_content[key_end] != '=' && !std::isspace(static_cast<unsigned char>(tag_content[key_end])) && tag_content[key_end] != '/' && tag_content[key_end] != '>') {
+            key_end++;
+        }
+        if (key_end == 0) {
+            tag_content.remove_prefix(1);
+            continue;
+        }
+        std::string key(tag_content.substr(0, key_end));
+        std::transform(key.begin(), key.end(), key.begin(), [](unsigned char c) {
+            return static_cast<char>(std::tolower(c));
+        });
+        tag_content.remove_prefix(key_end);
+
+        skip_whitespace(tag_content);
+        if (tag_content.empty() || tag_content[0] != '=') {
+            attributes.push_back({key, ""});
+            continue;
+        }
+        tag_content.remove_prefix(1); // skip '='
+        skip_whitespace(tag_content);
+
+        if (tag_content.empty()) return false;
+        char quote = tag_content[0];
+        if (quote != '"' && quote != '\'') {
+            size_t val_end = 0;
+            while (val_end < tag_content.size() && !std::isspace(static_cast<unsigned char>(tag_content[val_end])) && tag_content[val_end] != '/' && tag_content[val_end] != '>') {
+                val_end++;
+            }
+            std::string val(tag_content.substr(0, val_end));
+            attributes.push_back({key, xml_unescape(val)});
+            tag_content.remove_prefix(val_end);
+            continue;
+        }
+        tag_content.remove_prefix(1); // skip quote
+
+        size_t val_end = tag_content.find(quote);
+        if (val_end == std::string_view::npos) return false;
+        std::string val(tag_content.substr(0, val_end));
+        attributes.push_back({key, xml_unescape(val)});
+        tag_content.remove_prefix(val_end + 1); // skip val and quote
+    }
+    return true;
+}
+
+bool parse_xml(std::string_view xml, XmlNode& root, std::string& error) {
+    std::vector<XmlNode*> stack;
+    XmlNode dummy;
+    stack.push_back(&dummy);
+
+    size_t pos = 0;
+    while (pos < xml.size()) {
+        size_t next_lt = xml.find('<', pos);
+        if (next_lt == std::string_view::npos) {
+            if (!stack.empty() && pos < xml.size()) {
+                stack.back()->text.append(xml.substr(pos));
+            }
+            break;
+        }
+
+        if (next_lt > pos) {
+            if (!stack.empty()) {
+                stack.back()->text.append(xml.substr(pos, next_lt - pos));
             }
         }
 
-        const auto optionlists = matching_blocks(game, "options");
-        if (!optionlists.empty()) {
-            for (const auto& option_open : matching_open_tags(optionlists.front(), "option")) {
-                const auto name = attr_value(option_open, "name");
-                if (!name.empty()) {
-                    entry.options[name] = static_cast<int>(parse_u32(attr_value(option_open, "value")));
+        pos = next_lt;
+
+        if (xml.compare(pos, 4, "<!--") == 0) {
+            size_t end_comment = xml.find("-->", pos + 4);
+            if (end_comment == std::string_view::npos) {
+                error = "Unclosed comment";
+                return false;
+            }
+            pos = end_comment + 3;
+        } else if (xml.compare(pos, 9, "<![CDATA[") == 0) {
+            size_t end_cdata = xml.find("]]>", pos + 9);
+            if (end_cdata == std::string_view::npos) {
+                error = "Unclosed CDATA";
+                return false;
+            }
+            if (!stack.empty()) {
+                stack.back()->text.append(xml.substr(pos + 9, end_cdata - (pos + 9)));
+            }
+            pos = end_cdata + 3;
+        } else if (xml.compare(pos, 2, "<!") == 0) {
+            size_t bracket_count = 1;
+            size_t scan = pos + 2;
+            while (scan < xml.size() && bracket_count > 0) {
+                if (xml[scan] == '<') bracket_count++;
+                else if (xml[scan] == '>') bracket_count--;
+                scan++;
+            }
+            pos = scan;
+        } else if (xml.compare(pos, 2, "<?") == 0) {
+            size_t end_pi = xml.find("?>", pos + 2);
+            if (end_pi == std::string_view::npos) {
+                error = "Unclosed processing instruction";
+                return false;
+            }
+            pos = end_pi + 2;
+        } else if (xml.compare(pos, 2, "</") == 0) {
+            size_t end_tag = xml.find('>', pos + 2);
+            if (end_tag == std::string_view::npos) {
+                error = "Unclosed closing tag";
+                return false;
+            }
+            std::string_view tag_name = xml.substr(pos + 2, end_tag - (pos + 2));
+            while (!tag_name.empty() && std::isspace(static_cast<unsigned char>(tag_name.front()))) tag_name.remove_prefix(1);
+            while (!tag_name.empty() && std::isspace(static_cast<unsigned char>(tag_name.back()))) tag_name.remove_suffix(1);
+
+            if (stack.size() <= 1) {
+                error = "Unexpected closing tag: " + std::string(tag_name);
+                return false;
+            }
+
+            auto nocase_compare = [](std::string_view s1, std::string_view s2) {
+                if (s1.size() != s2.size()) return false;
+                for (size_t i = 0; i < s1.size(); ++i) {
+                    if (std::tolower(static_cast<unsigned char>(s1[i])) != std::tolower(static_cast<unsigned char>(s2[i]))) {
+                        return false;
+                    }
                 }
-            }
-        }
+                return true;
+            };
 
-        const auto romlist = tag_text(game, "romlist").empty()
-            ? std::string()
-            : matching_blocks(game, "romlist").front();
-        if (!romlist.empty()) {
-            entry.archive = attr_value(tag_open(romlist, "romlist"), "archive");
-            for (const auto& rom : matching_blocks(romlist, "rom")) {
-                HootAssetRef asset;
-                asset.type = attr_value(tag_open(rom, "rom"), "type");
-                asset.offset = parse_u32(attr_value(tag_open(rom, "rom"), "offset"));
-                asset.path = tag_text(rom, "rom");
-                entry.assets.push_back(std::move(asset));
+            if (!nocase_compare(stack.back()->name, tag_name)) {
+                error = "Mismatched closing tag: expected " + stack.back()->name + ", found " + std::string(tag_name);
+                return false;
             }
-        }
+            stack.pop_back();
+            pos = end_tag + 1;
+        } else {
+            size_t end_tag = xml.find('>', pos + 1);
+            if (end_tag == std::string_view::npos) {
+                error = "Unclosed opening tag";
+                return false;
+            }
+            std::string_view tag_content = xml.substr(pos + 1, end_tag - (pos + 1));
+            
+            std::string name;
+            std::vector<std::pair<std::string, std::string>> attributes;
+            bool self_closing = false;
+            if (!parse_tag(tag_content, name, attributes, self_closing)) {
+                error = "Failed to parse tag: <" + std::string(tag_content) + ">";
+                return false;
+            }
 
-        const auto titlelists = matching_blocks(game, "titlelist");
-        if (!titlelists.empty()) {
-            for (const auto& title : matching_blocks(titlelists.front(), "title")) {
-                CatalogTrack track;
-                track.code = parse_u32(attr_value(tag_open(title, "title"), "code"));
-                track.title = tag_text(title, "title");
-                entry.tracks.push_back(std::move(track));
+            if (!tag_content.empty() && tag_content.back() == '/') {
+                self_closing = true;
+            }
+
+            stack.back()->children.emplace_back();
+            XmlNode* new_node = &stack.back()->children.back();
+            new_node->name = std::move(name);
+            new_node->attributes = std::move(attributes);
+
+            if (!self_closing) {
+                stack.push_back(new_node);
+            }
+            pos = end_tag + 1;
+        }
+    }
+
+    if (stack.size() != 1) {
+        error = "Unclosed tags remaining: " + stack.back()->name;
+        return false;
+    }
+
+    if (dummy.children.empty()) {
+        error = "No elements found in XML";
+        return false;
+    }
+
+    root = std::move(dummy.children.front());
+    return true;
+}
+
+void find_nodes_by_name(const XmlNode& node, std::string_view name, std::vector<const XmlNode*>& result) {
+    if (node.name == name) {
+        result.push_back(&node);
+    }
+    for (const auto& child : node.children) {
+        find_nodes_by_name(child, name, result);
+    }
+}
+
+bool parse_games(const XmlNode& root, HootCatalog& catalog, std::map<std::string, int>& seen_ids)
+{
+    std::vector<const XmlNode*> game_nodes;
+    find_nodes_by_name(root, "game", game_nodes);
+
+    for (const auto* game_node : game_nodes) {
+        HootEntry entry;
+        for (const auto& game_child : game_node->children) {
+            if (game_child.name == "name") {
+                entry.title = xml_unescape(trim(game_child.text));
+            } else if (game_child.name == "driver") {
+                entry.driver_name = xml_unescape(trim(game_child.text));
+                entry.driver_type = game_child.attribute("type");
+            } else if (game_child.name == "driveralias") {
+                entry.driver_alias = xml_unescape(trim(game_child.text));
+                const auto driver_alias_type = game_child.attribute("type");
+                if (!entry.driver_alias.empty() && !driver_alias_type.empty()) {
+                    entry.driver_alias += "/" + driver_alias_type;
+                }
+            } else if (game_child.name == "options") {
+                for (const auto& opt_child : game_child.children) {
+                    if (opt_child.name == "option") {
+                        const auto opt_name = opt_child.attribute("name");
+                        if (!opt_name.empty()) {
+                            entry.options[opt_name] = static_cast<int>(parse_u32(opt_child.attribute("value")));
+                        }
+                    }
+                }
+            } else if (game_child.name == "romlist") {
+                entry.archive = game_child.attribute("archive");
+                for (const auto& rom_child : game_child.children) {
+                    if (rom_child.name == "rom") {
+                        HootAssetRef asset;
+                        asset.type = rom_child.attribute("type");
+                        asset.offset = parse_u32(rom_child.attribute("offset"));
+                        asset.path = xml_unescape(trim(rom_child.text));
+                        entry.assets.push_back(std::move(asset));
+                    }
+                }
+            } else if (game_child.name == "titlelist") {
+                for (const auto& title_child : game_child.children) {
+                    if (title_child.name == "title") {
+                        CatalogTrack track;
+                        track.code = parse_u32(title_child.attribute("code"));
+                        track.title = xml_unescape(trim(title_child.text));
+                        entry.tracks.push_back(std::move(track));
+                    }
+                }
             }
         }
 
         if (entry.title.empty() || entry.driver_name.empty()) {
             continue;
+        }
+
+        if (!entry.driver_type.empty()) {
+            entry.driver_name += "/" + entry.driver_type;
         }
 
         entry.id = unique_id(entry, seen_ids);
@@ -247,15 +410,18 @@ bool parse_games(const std::string& xml, HootCatalog& catalog, std::map<std::str
     return true;
 }
 
-std::vector<std::string> child_list_paths(const std::string& xml)
+std::vector<std::string> child_list_paths(const XmlNode& root)
 {
     std::vector<std::string> paths;
-    const auto uncommented_xml = strip_xml_comments(xml);
-    for (const auto& childlists : matching_blocks(uncommented_xml, "childlists")) {
-        for (const auto& list : matching_blocks(childlists, "list")) {
-            const auto path = tag_text(list, "list");
-            if (!path.empty()) {
-                paths.push_back(path);
+    std::vector<const XmlNode*> childlists_nodes;
+    find_nodes_by_name(root, "childlists", childlists_nodes);
+    for (const auto* childlists : childlists_nodes) {
+        for (const auto& list_node : childlists->children) {
+            if (list_node.name == "list") {
+                auto path = xml_unescape(trim(list_node.text));
+                if (!path.empty()) {
+                    paths.push_back(std::move(path));
+                }
             }
         }
     }
@@ -263,10 +429,10 @@ std::vector<std::string> child_list_paths(const std::string& xml)
 }
 
 bool load_file_recursive(const std::filesystem::path& path,
-                         HootCatalog& catalog,
-                         std::map<std::string, int>& seen_ids,
-                         std::map<std::filesystem::path, bool>& visited,
-                         std::string& error)
+                          HootCatalog& catalog,
+                          std::map<std::string, int>& seen_ids,
+                          std::map<std::filesystem::path, bool>& visited,
+                          std::string& error)
 {
     const auto canonical_path = std::filesystem::weakly_canonical(path);
     if (visited[canonical_path]) {
@@ -280,10 +446,16 @@ bool load_file_recursive(const std::filesystem::path& path,
         return false;
     }
 
-    parse_games(xml, catalog, seen_ids);
+    XmlNode root;
+    if (!parse_xml(xml, root, error)) {
+        error = "unable to parse XML: " + error + " in " + canonical_path.string();
+        return false;
+    }
+
+    parse_games(root, catalog, seen_ids);
 
     const auto base_dir = canonical_path.parent_path();
-    for (const auto& child : child_list_paths(xml)) {
+    for (const auto& child : child_list_paths(root)) {
         const std::filesystem::path child_path(child);
         const auto resolved = child_path.is_absolute() ? child_path : base_dir / child_path;
         if (!load_file_recursive(resolved, catalog, seen_ids, visited, error)) {
@@ -315,7 +487,11 @@ bool HootXmlLoader::load_string(const std::string& xml, HootCatalog& catalog, st
 {
     catalog.clear();
     std::map<std::string, int> seen_ids;
-    parse_games(xml, catalog, seen_ids);
+    XmlNode root;
+    if (!parse_xml(xml, root, error)) {
+        return false;
+    }
+    parse_games(root, catalog, seen_ids);
 
     if (catalog.entries().empty()) {
         error = "catalog contains no supported <game> entries";

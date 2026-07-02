@@ -466,6 +466,28 @@ int main(int argc, char** argv)
         return 1;
     }
 
+    std::printf("==================================================\n");
+    std::printf("Game Title:   %s\n", entry->title.c_str());
+    std::printf("ID:           %s\n", entry->id.c_str());
+    std::printf("Driver:       %s\n", entry->driver_name.c_str());
+    if (!entry->driver_alias.empty()) {
+        std::printf("Driver Alias: %s\n", entry->driver_alias.c_str());
+    }
+    std::printf("Archive:      %s\n", entry->archive.c_str());
+    if (!entry->options.empty()) {
+        std::printf("Options:\n");
+        for (const auto& opt : entry->options) {
+            std::printf("  - %s: %d (0x%x)\n", opt.first.c_str(), opt.second, opt.second);
+        }
+    }
+    if (!entry->assets.empty()) {
+        std::printf("Assets:\n");
+        for (const auto& asset : entry->assets) {
+            std::printf("  - [%s] %s (offset: 0x%x)\n", asset.type.c_str(), asset.path.c_str(), asset.offset);
+        }
+    }
+    std::printf("==================================================\n\n");
+
     std::signal(SIGINT, handle_signal);
     std::signal(SIGTERM, handle_signal);
 
