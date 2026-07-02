@@ -1,0 +1,393 @@
+#include "StdAfx.h"
+#include "sound/ssYM2610.h"
+#include "sound/ssAY8910.h"
+#include "ssConfig.h"
+#include "ssSoundDriverManager.h"
+#include "ssSoundStream.h"
+
+#include "m88/opna.h"
+
+#include <math.h>
+
+const DWORD ssYM2610::MAX_YM2610 = 1;
+DWORD ssYM2610::m_bitmap = 0;
+
+static ssYM2610 *mapYM2610[ssYM2610::MAX_YM2610];
+
+
+static FM::OPNB *instYM2610[ssYM2610::MAX_YM2610];
+
+ssYM2610::ssYM2610(int _idTimerA, int _idTimerB)
+{
+	m_ChipNo = -1;
+	InitTimer(_idTimerA, _idTimerB);
+
+	m_SSG = new ssAY8910(ssAY8910::TYPE_YM2610_M88);
+
+	m_pris = 0xff;
+
+	memset(reg, 0, 512);
+}
+
+ssYM2610::~ssYM2610()
+{
+	delete instYM2610[m_ChipNo];
+	instYM2610[m_ChipNo] = NULL;
+
+	delete m_SSG;
+
+	if (m_ChipNo != -1) {
+		m_bitmap &= ~(1 << m_ChipNo);
+		mapYM2610[m_ChipNo] = NULL;
+	}
+}
+
+void ssYM2610::calc_notetable(int _pris, int _ssg_pris)
+{
+	m_SSG->SetClock(m_baseclock / _ssg_pris);
+
+	if (m_pris == _pris) {
+		return;
+	}
+	m_pris = _pris;
+	for (int oct = 0; oct < 8; oct++) {
+		for (int fnum = 0; fnum < 2048; fnum++) {
+			const int kci = oct*2048 + fnum;
+			const int n = _pris;
+			const double freq = (double)fnum * pow(2.0, (double)(oct - 1)) * (double)m_baseclock / (24.0 * n * pow(2.0, 20));
+			int kco = (int)(12.0 * log(freq/440.0) / log(2.0) + 57.0 + 0.5);
+			if (kco < 0) {
+				kco = 0;
+			} else if (kco > 127) {
+				kco = 127;
+			}
+			notetable[kci] = kco;
+		}
+	}
+}
+
+bool ssYM2610::Initialize(int _baseclock,
+						  void *_pcmroma, int _pcmsizea,
+						  void *_pcmromb, int _pcmsizeb)
+{
+	bool ret = false;
+
+	int num;
+	ssSoundDriverManager *manager = ssSoundDriverManager::Instance();
+	const ssConfig &config = manager->GetConfig();
+	int sampling_rate = config.sampling_rate;
+
+	m_baseclock = _baseclock;
+
+	SetClock(72. / (m_baseclock / 2));
+
+	for (num = 0; num < MAX_YM2610; num++) {
+		if ((m_bitmap & (1 << num)) == 0) {
+			m_ChipNo = num;
+			m_bitmap |= 1 << m_ChipNo;
+			mapYM2610[m_ChipNo] = this;
+			instYM2610[m_ChipNo] = new FM::OPNB;
+			instYM2610[m_ChipNo]->Init(_baseclock, config.sampling_rate,
+									   config.ym2610_interpolation > 0,
+									   (unsigned char *)_pcmroma, _pcmsizea,
+									   (unsigned char *)_pcmromb, _pcmsizeb);
+			instYM2610[m_ChipNo]->SetVolumeFM(config.ym2610_volume_fm);
+			instYM2610[m_ChipNo]->SetVolumePSG(config.ym2610_volume_psg);
+			instYM2610[m_ChipNo]->SetVolumeADPCMATotal(config.ym2610_volume_adpcma);
+			instYM2610[m_ChipNo]->SetVolumeADPCMB(config.ym2610_volume_adpcmb);
+			instYM2610[m_ChipNo]->Reset();
+
+			m_SSG->Initialize(_baseclock);
+
+			ret =  true;
+			break;
+		}
+	}
+
+	int t;
+	for (t = 0; t < 4; t++) {
+		InitTrackInfo(&info[t]);
+		sprintf(info[t].name, "YM-2610 FM#%d", t);
+	}
+
+	for (t = 0; t < 6; t++) {
+		InitTrackInfo(&info[INFO_ADPCMA + t]);
+		sprintf(info[INFO_ADPCMA + t].name, "YM-2610 ADPCM-A#%d", t);
+	}
+
+	for (t = 0; t < 1; t++) {
+		InitTrackInfo(&info[INFO_ADPCMB + t]);
+		sprintf(info[INFO_ADPCMB + t].name, "YM-2610 ADPCM-B#%d", t);
+	}
+
+	calc_notetable(6, 4);
+
+	SetMask(0);
+
+	return ret;
+}
+
+void ssYM2610::TimerAOver(void)
+{
+}
+
+void ssYM2610::TimerBOver(void)
+{
+}
+
+void ssYM2610::write_reg(BYTE _reg, BYTE _data, BYTE _c)
+{
+	//reg[_reg + 0x100*_c] = _data;
+	BYTE ch = _reg & 3;
+	if (ch != 0 && ch != 3) {
+		ch -= 1;
+		ch += _c*2;
+		switch (_reg & 0xfc) {
+		case 0x4c:	// TL(4): 4C-4E 
+			{
+				info[ch].volume = 127 - (_data & 0x7f);
+			}
+			break;
+		case 0xa0:	// F-Num1 : A1-A2
+			{
+				const int kc = ((reg[_reg+4 + 0x100*_c]<<8) + _data) & 0x3fff;
+				info[ch].keycode = notetable[kc];
+			}
+			break;
+		case 0xb4:	// PAN : B4-B6
+			{
+				switch (_data & 0xc0) {
+				case 0xc0:
+					info[ch].pan = ssTrackInfo::PAN_CENTER;
+					break;
+				case 0x80:
+					info[ch].pan = ssTrackInfo::PAN_LEFT;
+					break;
+				case 0x40:
+					info[ch].pan = ssTrackInfo::PAN_RIGHT;
+					break;
+				case 0x00:
+					info[ch].pan = ssTrackInfo::PAN_OFF;
+					break;
+				}
+			}
+			break;
+		}
+	}
+}
+
+void ssYM2610::Write(int _adr, BYTE _data)
+{
+	switch (_adr & 3) {
+	case 0x00:
+		m_reg1 = _data;
+		break;
+	case 0x01:
+		reg[m_reg1] = _data;
+		if (m_reg1 == 0x24 || m_reg1 == 0x25) {
+			SetTimerA(m_reg1, _data);
+		} else if (m_reg1 == 0x26) {
+			SetTimerB(_data);
+		} else if (m_reg1 == 0x27) {
+			SetTimerControl(_data);
+		} else if (m_reg1 == 0x28) {
+			BYTE ch = _data & 3;
+			if (ch != 0 && ch != 3) {
+				ch -= 1;
+				if (_data &0x04) {
+					ch += 2;
+				}
+				if (_data & 0xf0) {
+					info[ch].keyon = 0xff;
+				} else {
+					info[ch].keyon &= 0x80;
+				}
+			}
+		} else if (m_reg1 < 16) {
+			m_SSG->WriteInfo(0, m_reg1);
+			m_SSG->WriteInfo(1, _data);
+		} else if (m_reg1 == 0x10) {
+			if (_data & 0x80) {
+				info[INFO_ADPCMB].keyon = 0xff;
+			} else {
+				info[INFO_ADPCMB].keyon &= 0x80;
+			}
+		} else if (m_reg1 == 0x11) {
+			const int ch = INFO_ADPCMB;
+			switch (_data & 0xc0) {
+			case 0xc0:
+				info[ch].pan = ssTrackInfo::PAN_CENTER;
+				break;
+			case 0x80:
+				info[ch].pan = ssTrackInfo::PAN_LEFT;
+				break;
+			case 0x40:
+				info[ch].pan = ssTrackInfo::PAN_RIGHT;
+				break;
+			case 0x00:
+				info[ch].pan = ssTrackInfo::PAN_OFF;
+				break;
+			}
+		} else if (m_reg1 == 0x12 || m_reg1 == 0x13) {
+			reg[m_reg1] = _data;
+		} else if (m_reg1 == 0x19 || m_reg1 == 0x1a) {
+			reg[m_reg1] = _data;
+			const int delta = (reg[0x1a] << 8) + reg[0x19];
+			info[INFO_ADPCMB].keycode = Hz2Kc(440.0 * (double)delta / (double)0x556a * m_baseclock / 8000000.0);
+		} else if (m_reg1 == 0x1b) {
+			info[INFO_ADPCMB].volume = _data >> 1;
+		} else {
+			write_reg(m_reg1, _data, 0);
+		}
+		break;
+	case 0x02:
+		m_reg2 = _data;
+		break;
+	case 0x03:
+		reg[m_reg2+0x100] = _data;
+		if (m_reg2 == 0x00) {
+			if (_data & 0x80) {
+				if (_data & 0x01) info[INFO_ADPCMA + 0].keyon &= 0x80;
+				if (_data & 0x02) info[INFO_ADPCMA + 1].keyon &= 0x80;
+				if (_data & 0x04) info[INFO_ADPCMA + 2].keyon &= 0x80;
+				if (_data & 0x08) info[INFO_ADPCMA + 3].keyon &= 0x80;
+				if (_data & 0x10) info[INFO_ADPCMA + 4].keyon &= 0x80;
+				if (_data & 0x20) info[INFO_ADPCMA + 5].keyon &= 0x80;
+			} else {
+				if (_data & 0x01) info[INFO_ADPCMA + 0].keyon = 0xff;
+				if (_data & 0x02) info[INFO_ADPCMA + 1].keyon = 0xff;
+				if (_data & 0x04) info[INFO_ADPCMA + 2].keyon = 0xff;
+				if (_data & 0x08) info[INFO_ADPCMA + 3].keyon = 0xff;
+				if (_data & 0x10) info[INFO_ADPCMA + 4].keyon = 0xff;
+				if (_data & 0x20) info[INFO_ADPCMA + 5].keyon = 0xff;
+			}
+		} else if (m_reg2 >= 0x08 && m_reg2 <= 0x0d) {
+			int t = m_reg2 - 0x08;
+			const int ch = INFO_ADPCMA + t;
+			info[ch].volume = (_data & 0x1f) * 4;
+			switch (_data & 0xc0) {
+			case 0xc0:
+				info[ch].pan = ssTrackInfo::PAN_CENTER;
+				break;
+			case 0x80:
+				info[ch].pan = ssTrackInfo::PAN_LEFT;
+				break;
+			case 0x40:
+				info[ch].pan = ssTrackInfo::PAN_RIGHT;
+				break;
+			case 0x00:
+				info[ch].pan = ssTrackInfo::PAN_OFF;
+				break;
+			}
+		} else {
+			write_reg(m_reg2, _data, 1);
+		}
+		break;
+	}
+
+	switch (_adr & 3) {
+	case 1:
+		instYM2610[m_ChipNo]->SetReg(m_reg1, _data);
+		break;
+	case 3:
+		instYM2610[m_ChipNo]->SetReg(m_reg2 + 0x100, _data);
+		break;
+	}
+}
+
+BYTE ssYM2610::Read(int _adr)
+{
+	switch (_adr & 3) {
+	case 0:
+		//return instYM2610[m_ChipNo]->ReadStatus();
+		return GetStatus();
+	case 1:
+		return instYM2610[m_ChipNo]->GetReg(m_reg1);
+	case 2:
+		return instYM2610[m_ChipNo]->ReadStatusEx();
+	case 3:
+		return instYM2610[m_ChipNo]->GetReg(m_reg2);
+	}
+	return 0xff;
+}
+
+int ssYM2610::GetBufferCount(void) const
+{
+	return 1;
+}
+
+WORD ssYM2610::GetBufferFlag(int _b) const
+{
+	return ssSoundStream::F_STEREO_LONG;
+}
+
+int ssYM2610::GetTrackCount(void) const
+{
+	return 4 + 6 + 1 + m_SSG->GetTrackCount();
+}
+
+ssTrackInfo *ssYM2610::GetInfo(int _track)
+{
+	if (_track < 4) {
+		return &info[_track];
+	} if (_track >= 7 && _track < 14) {
+		return &info[_track - 7 + 4];
+	}
+
+	return m_SSG->GetInfo(_track - 4);
+}
+
+
+int ssYM2610::GetRegs(BYTE *_buffer, int _count, int _offset)
+{
+	int count;
+
+	if (_offset >= 512) {
+		return 0;
+	}
+
+	if (_offset + _count >= 512) {
+		count = 512 - _offset;
+	} else {
+		count = _count;
+	}
+
+	memcpy(_buffer, reg + _offset, count);
+
+	return count;
+}
+
+
+void ssYM2610::Update(SHORT **_buffer, DWORD _count)
+{
+	int *buff = (int *)(_buffer[0]);
+	memset(buff, 0, _count * sizeof(int) * 2);
+	instYM2610[m_ChipNo]->Mix(buff, _count);
+
+	BYTE s = Read(2);
+#if 0
+	if (s & 0x01) info[INFO_ADPCMA + 0].keyon = 0x00;
+	if (s & 0x02) info[INFO_ADPCMA + 1].keyon = 0x00;
+	if (s & 0x04) info[INFO_ADPCMA + 2].keyon = 0x00;
+	if (s & 0x08) info[INFO_ADPCMA + 3].keyon = 0x00;
+	if (s & 0x10) info[INFO_ADPCMA + 4].keyon = 0x00;
+	if (s & 0x20) info[INFO_ADPCMA + 5].keyon = 0x00;
+	if (s & 0x80) info[INFO_ADPCMB].keyon = 0x00;
+#endif
+}
+
+void ssYM2610::SetMask(DWORD _mask)
+{
+	ssSoundChip::SetMask(_mask);
+	// BAAAAAAS SSFFxFFx
+	DWORD mask = 0;
+	mask |= (m_mask<<1) & 0x0006;
+	mask |= (m_mask<<2) & 0x0030;
+	mask |= (m_mask<<2) & 0xffc0;
+	instYM2610[m_ChipNo]->SetChannelMask(mask);
+}
+
+DWORD ssYM2610::GetMask(void)
+{
+	return ssSoundChip::GetMask();
+}
