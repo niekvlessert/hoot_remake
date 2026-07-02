@@ -9,6 +9,7 @@
 #include "config/hoot_xml_loader.h"
 #include "drivers/microcabin_pc88_driver.h"
 #include "drivers/microcabin_pc98dos_driver.h"
+#include "drivers/pc98_dos_driver.h"
 #include "drivers/x68k_generic_driver.h"
 #include "io/d88_image.h"
 #include "io/filesystem_asset_provider.h"
@@ -108,8 +109,11 @@ std::unique_ptr<hoot::HootDriver> create_driver_for_entry(const hoot::HootEntry&
         || (entry.driver_name == "pc88/opn" && entry.archive == "xak2_98")) {
         return std::make_unique<hoot::MicrocabinPc88Driver>();
     }
-    if (entry.driver_name == "pc98dos/opn" && entry.driver_alias.find("MICROCABIN") != std::string::npos) {
-        return std::make_unique<hoot::MicrocabinPc98DosDriver>();
+    if (entry.driver_name == "pc98dos/opn") {
+        if (entry.driver_alias.find("MICROCABIN") != std::string::npos) {
+            return std::make_unique<hoot::MicrocabinPc98DosDriver>();
+        }
+        return std::make_unique<hoot::Pc98DosDriver>();
     }
     if (entry.driver_name == "x68k/generic") {
         return std::make_unique<hoot::X68kGenericDriver>();

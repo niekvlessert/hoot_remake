@@ -32,7 +32,7 @@ target_include_directories(libvgm_ym2203 PUBLIC
     ${CMAKE_CURRENT_SOURCE_DIR}/third_party/libvgm/emu
     ${CMAKE_CURRENT_SOURCE_DIR}/third_party/libvgm/emu/cores)
 
-target_compile_definitions(libvgm_ym2203 PUBLIC HAVE_STDINT_H)
+target_compile_definitions(libvgm_ym2203 PUBLIC HAVE_STDINT_H SNDDEV_YM2608)
 
 add_library(px68k_musashi STATIC
     third_party/px68k-libretro/m68000/musashi/m68kcpu.c
@@ -50,8 +50,10 @@ add_library(hootcore STATIC
     src/config/hoot_xml_loader.cpp
     src/core/hoot_context.cpp
     src/cpu/kmz80_cpu.cpp
+    src/cpu/x86_cpu.cpp
     src/drivers/microcabin_pc88_driver.cpp
     src/drivers/microcabin_pc98dos_driver.cpp
+    src/drivers/pc98_dos_driver.cpp
     src/drivers/x68k_generic_driver.cpp
     src/io/d88_image.cpp
     src/io/filesystem_asset_provider.cpp
@@ -59,7 +61,8 @@ add_library(hootcore STATIC
     src/io/zip_archive.cpp
     src/sound/libvgm_ym2151.cpp
     src/sound/libvgm_okim6258.cpp
-    src/sound/libvgm_ym2203.cpp)
+    src/sound/libvgm_ym2203.cpp
+    src/sound/libvgm_ym2608.cpp)
 
 target_include_directories(hootcore
     PUBLIC
