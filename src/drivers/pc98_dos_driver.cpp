@@ -3,6 +3,7 @@
 #include <algorithm>
 #include <cstring>
 #include <filesystem>
+#include <map>
 #include <sstream>
 
 #include "io/zip_archive.h"
@@ -36,6 +37,15 @@ std::string to_lower(std::string s)
     return s;
 }
 
+std::string shell_executable_name(const std::string& shell)
+{
+    auto name = to_lower(shell);
+    if (std::filesystem::path(name).extension().empty()) {
+        name += ".com";
+    }
+    return name;
+}
+
 } // namespace
 
 namespace hoot {
@@ -62,6 +72,9 @@ HootResult Pc98DosDriver::load(const HootEntry& entry,
         return HOOT_ERROR_IO;
     }
 
+    std::map<std::string, LoadedFile> files_by_name;
+    std::vector<std::string> shell_names;
+    std::vector<HootAssetRef> conin_assets;
     for (const auto& asset : entry.assets) {
         if (asset.type == "device") {
             auto driver_name = asset.path;
@@ -75,6 +88,11 @@ HootResult Pc98DosDriver::load(const HootEntry& entry,
         if (asset.type == "shell") {
             shell_command_ = std::vector<uint8_t>(asset.path.begin(), asset.path.end());
             shell_command_.push_back(0);
+            shell_names.push_back(asset.path);
+            continue;
+        }
+        if (asset.type == "conin") {
+            conin_assets.push_back(asset);
             continue;
         }
         if (asset.type != "file") {
@@ -87,21 +105,58 @@ HootResult Pc98DosDriver::load(const HootEntry& entry,
         }
 
         auto lower_path = to_lower(asset.path);
+        files_by_name[lower_path] = LoadedFile{asset.path, data};
         if (lower_path == "pmd.com" || lower_path == "pmd.pmd" || lower_path == "pmd") {
-            driver_data_ = std::move(data);
+            driver_data_ = data;
             driver_type_ = DriverType::PMD;
         } else if (lower_path == "mmd.sys" || lower_path == "mmd2.sys") {
-            driver_data_ = std::move(data);
+            driver_data_ = data;
             driver_type_ = DriverType::MMD;
         }
 
         if (!has_negative_offset(asset.offset)) {
-            files_by_slot_[asset.offset] = LoadedFile{asset.path, std::move(data)};
+            files_by_slot_[asset.offset] = LoadedFile{asset.path, data};
+        }
+    }
+
+    for (const auto& asset : conin_assets) {
+        if (has_negative_offset(asset.offset)) {
+            continue;
+        }
+        const auto found = files_by_name.find(to_lower(asset.path));
+        if (found != files_by_name.end()) {
+            files_by_slot_[asset.offset] = found->second;
         }
     }
 
     if (driver_data_.empty()) {
-        error = "pc98dos entry did not provide a driver binary (PMD.COM, MMD.SYS, etc.)";
+        auto load_shell = [&](const std::string& shell) {
+            const auto found = files_by_name.find(shell_executable_name(shell));
+            if (found == files_by_name.end()) {
+                return false;
+            }
+            driver_data_ = found->second.data;
+            driver_type_ = DriverType::Shell;
+            return true;
+        };
+        for (const auto& shell : shell_names) {
+            if (shell_executable_name(shell) == "cplay98.com" && shell_names.size() > 1) {
+                continue;
+            }
+            if (load_shell(shell)) {
+                break;
+            }
+        }
+        for (const auto& shell : shell_names) {
+            if (!driver_data_.empty()) {
+                break;
+            }
+            load_shell(shell);
+        }
+    }
+
+    if (driver_data_.empty()) {
+        error = "pc98dos entry did not provide a driver binary or runnable shell program";
         return HOOT_ERROR_NOT_FOUND;
     }
 

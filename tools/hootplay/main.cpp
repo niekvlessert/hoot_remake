@@ -140,7 +140,7 @@ bool is_supported_driver(const hoot::HootEntry& entry)
         || (entry.driver_name == "pc88/opn" && entry.archive == "xak2_98")) {
         return true;
     }
-    if (entry.driver_name == "pc98dos/opn" && entry.driver_alias.find("MICROCABIN") != std::string::npos) {
+    if (entry.driver_name == "pc98dos/opn") {
         return true;
     }
     return false;

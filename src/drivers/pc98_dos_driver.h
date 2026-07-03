@@ -42,6 +42,7 @@ private:
         Unknown,
         PMD,
         MMD,
+        Shell,
     };
 
     void clear();
