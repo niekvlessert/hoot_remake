@@ -77,6 +77,10 @@ void X86Cpu::reset()
     bp_ = 0;
     flags_ = 0xF000;
     halted_ = false;
+    last_unsupported_opcode_ = 0;
+    last_unsupported_cs_ = 0;
+    last_unsupported_ip_ = 0;
+    unsupported_count_ = 0;
     segment_override_active_ = false;
     segment_override_ = 0;
     repeat_prefix_ = RepeatPrefix::None;
@@ -410,6 +414,174 @@ void X86Cpu::update_flags_sub_16(uint16_t a, uint16_t b, uint32_t result)
     set_overflow((((a ^ b) & (a ^ r)) & 0x8000) != 0);
 }
 
+uint8_t X86Cpu::shift8(uint8_t value, uint8_t op, uint8_t count)
+{
+    count &= 0x1f;
+    if (count == 0) {
+        return value;
+    }
+    uint8_t result = value;
+    if (op <= 3) {
+        const uint8_t rotate_count = static_cast<uint8_t>(count & 0x07);
+        if (rotate_count == 0) {
+            return result;
+        }
+        for (uint8_t i = 0; i < rotate_count; ++i) {
+            switch (op) {
+            case 0: { // ROL
+                const bool high = (result & 0x80) != 0;
+                result = static_cast<uint8_t>((result << 1) | (high ? 1 : 0));
+                set_carry(high);
+                break;
+            }
+            case 1: { // ROR
+                const bool low = (result & 0x01) != 0;
+                result = static_cast<uint8_t>((result >> 1) | (low ? 0x80 : 0));
+                set_carry(low);
+                break;
+            }
+            case 2: { // RCL
+                const bool old_carry = get_carry();
+                const bool high = (result & 0x80) != 0;
+                result = static_cast<uint8_t>((result << 1) | (old_carry ? 1 : 0));
+                set_carry(high);
+                break;
+            }
+            case 3: { // RCR
+                const bool old_carry = get_carry();
+                const bool low = (result & 0x01) != 0;
+                result = static_cast<uint8_t>((result >> 1) | (old_carry ? 0x80 : 0));
+                set_carry(low);
+                break;
+            }
+            }
+        }
+        if (count == 1) {
+            if (op == 0 || op == 2) {
+                set_overflow(((result & 0x80) != 0) != get_carry());
+            } else if (op == 1) {
+                set_overflow(((result ^ (result << 1)) & 0x80) != 0);
+            }
+        }
+        return result;
+    }
+    for (uint8_t i = 0; i < count; ++i) {
+        switch (op) {
+        case 4: // SHL/SAL
+            set_carry((result & 0x80) != 0);
+            result = static_cast<uint8_t>(result << 1);
+            break;
+        case 5: // SHR
+            set_carry((result & 0x01) != 0);
+            result = static_cast<uint8_t>(result >> 1);
+            break;
+        case 7: // SAR
+            set_carry((result & 0x01) != 0);
+            result = static_cast<uint8_t>((result >> 1) | (result & 0x80));
+            break;
+        default:
+            return result;
+        }
+    }
+    set_zero(result == 0);
+    set_sign((result & 0x80) != 0);
+    set_parity_from_byte(result);
+    if (count == 1) {
+        if (op == 4) {
+            set_overflow(((result & 0x80) != 0) != get_carry());
+        } else if (op == 5) {
+            set_overflow((value & 0x80) != 0);
+        } else if (op == 7) {
+            set_overflow(false);
+        }
+    }
+    return result;
+}
+
+uint16_t X86Cpu::shift16(uint16_t value, uint8_t op, uint8_t count)
+{
+    count &= 0x1f;
+    if (count == 0) {
+        return value;
+    }
+    uint16_t result = value;
+    if (op <= 3) {
+        const uint8_t rotate_count = static_cast<uint8_t>(count & 0x0f);
+        if (rotate_count == 0) {
+            return result;
+        }
+        for (uint8_t i = 0; i < rotate_count; ++i) {
+            switch (op) {
+            case 0: { // ROL
+                const bool high = (result & 0x8000) != 0;
+                result = static_cast<uint16_t>((result << 1) | (high ? 1 : 0));
+                set_carry(high);
+                break;
+            }
+            case 1: { // ROR
+                const bool low = (result & 0x0001) != 0;
+                result = static_cast<uint16_t>((result >> 1) | (low ? 0x8000 : 0));
+                set_carry(low);
+                break;
+            }
+            case 2: { // RCL
+                const bool old_carry = get_carry();
+                const bool high = (result & 0x8000) != 0;
+                result = static_cast<uint16_t>((result << 1) | (old_carry ? 1 : 0));
+                set_carry(high);
+                break;
+            }
+            case 3: { // RCR
+                const bool old_carry = get_carry();
+                const bool low = (result & 0x0001) != 0;
+                result = static_cast<uint16_t>((result >> 1) | (old_carry ? 0x8000 : 0));
+                set_carry(low);
+                break;
+            }
+            }
+        }
+        if (count == 1) {
+            if (op == 0 || op == 2) {
+                set_overflow(((result & 0x8000) != 0) != get_carry());
+            } else if (op == 1) {
+                set_overflow(((result ^ (result << 1)) & 0x8000) != 0);
+            }
+        }
+        return result;
+    }
+    for (uint8_t i = 0; i < count; ++i) {
+        switch (op) {
+        case 4: // SHL/SAL
+            set_carry((result & 0x8000) != 0);
+            result = static_cast<uint16_t>(result << 1);
+            break;
+        case 5: // SHR
+            set_carry((result & 0x0001) != 0);
+            result = static_cast<uint16_t>(result >> 1);
+            break;
+        case 7: // SAR
+            set_carry((result & 0x0001) != 0);
+            result = static_cast<uint16_t>((result >> 1) | (result & 0x8000));
+            break;
+        default:
+            return result;
+        }
+    }
+    set_zero(result == 0);
+    set_sign((result & 0x8000) != 0);
+    set_parity_from_byte(static_cast<uint8_t>(result));
+    if (count == 1) {
+        if (op == 4) {
+            set_overflow(((result & 0x8000) != 0) != get_carry());
+        } else if (op == 5) {
+            set_overflow((value & 0x8000) != 0);
+        } else if (op == 7) {
+            set_overflow(false);
+        }
+    }
+    return result;
+}
+
 bool X86Cpu::check_jump(bool cond)
 {
     return cond;
@@ -456,6 +628,7 @@ int X86Cpu::execute(int cycles)
 
 void X86Cpu::execute_one()
 {
+    const uint16_t opcode_ip = ip_;
     const uint8_t opcode = fetch_byte();
 
     switch (opcode) {
@@ -544,6 +717,50 @@ void X86Cpu::execute_one()
     case 0x16:
         push(ss_);
         break;
+    case 0x18: case 0x1A: case 0x10: case 0x12: { // SBB/ADC byte
+        const uint8_t modrm = fetch_byte();
+        const uint8_t reg = (modrm >> 3) & 7;
+        const auto rm = decode_rm(modrm);
+        const bool adc = opcode == 0x10 || opcode == 0x12;
+        const bool rm_dest = opcode == 0x10 || opcode == 0x18;
+        const uint8_t src = rm_dest ? reg8(reg) : read_rm8(rm);
+        const uint8_t dst = rm_dest ? read_rm8(rm) : reg8(reg);
+        const uint8_t carry = get_carry() ? 1 : 0;
+        if (adc) {
+            const uint16_t result = static_cast<uint16_t>(dst) + src + carry;
+            if (rm_dest) write_rm8(rm, static_cast<uint8_t>(result));
+            else set_reg8(reg, static_cast<uint8_t>(result));
+            update_flags_add_8(dst, static_cast<uint8_t>(src + carry), result);
+        } else {
+            const uint16_t result = static_cast<uint16_t>(dst) - src - carry;
+            if (rm_dest) write_rm8(rm, static_cast<uint8_t>(result));
+            else set_reg8(reg, static_cast<uint8_t>(result));
+            update_flags_sub_8(dst, static_cast<uint8_t>(src + carry), result);
+        }
+        break;
+    }
+    case 0x19: case 0x1B: case 0x11: case 0x13: { // SBB/ADC word
+        const uint8_t modrm = fetch_byte();
+        const uint8_t reg = (modrm >> 3) & 7;
+        const auto rm = decode_rm(modrm);
+        const bool adc = opcode == 0x11 || opcode == 0x13;
+        const bool rm_dest = opcode == 0x11 || opcode == 0x19;
+        const uint16_t src = rm_dest ? reg16(reg) : read_rm16(rm);
+        const uint16_t dst = rm_dest ? read_rm16(rm) : reg16(reg);
+        const uint16_t carry = get_carry() ? 1 : 0;
+        if (adc) {
+            const uint32_t result = static_cast<uint32_t>(dst) + src + carry;
+            if (rm_dest) write_rm16(rm, static_cast<uint16_t>(result));
+            else reg16(reg) = static_cast<uint16_t>(result);
+            update_flags_add_16(dst, static_cast<uint16_t>(src + carry), result);
+        } else {
+            const uint32_t result = static_cast<uint32_t>(dst) - src - carry;
+            if (rm_dest) write_rm16(rm, static_cast<uint16_t>(result));
+            else reg16(reg) = static_cast<uint16_t>(result);
+            update_flags_sub_16(dst, static_cast<uint16_t>(src + carry), result);
+        }
+        break;
+    }
     case 0x17:
         ss_ = pop();
         break;
@@ -816,6 +1033,18 @@ void X86Cpu::execute_one()
         std::swap(ax_, reg16(reg));
         break;
     }
+    case 0x98: // CBW
+        ax_ = static_cast<uint16_t>(static_cast<int16_t>(static_cast<int8_t>(get_al())));
+        break;
+    case 0x99: // CWD
+        dx_ = (ax_ & 0x8000) ? 0xFFFF : 0x0000;
+        break;
+    case 0x9C:
+        push(flags_);
+        break;
+    case 0x9D:
+        flags_ = pop();
+        break;
 
     case 0xA0: set_al(read_byte(get_linear(effective_data_segment(), fetch_word()))); break;
     case 0xA1: ax_ = read_word(get_linear(effective_data_segment(), fetch_word())); break;
@@ -861,6 +1090,12 @@ void X86Cpu::execute_one()
         }
         break;
     }
+    case 0xA8:
+        update_logic_flags_8(static_cast<uint8_t>(get_al() & fetch_byte()));
+        break;
+    case 0xA9:
+        update_logic_flags_16(static_cast<uint16_t>(ax_ & fetch_word()));
+        break;
     case 0xAA: { // STOSB
         const uint16_t count = consume_string_count();
         const int step = string_step();
@@ -970,26 +1205,19 @@ void X86Cpu::execute_one()
         flags_ = pop();
         break;
 
-    case 0xD0: case 0xD1: {
+    case 0xC0: case 0xC1: case 0xD0: case 0xD1: case 0xD2: case 0xD3: {
         const uint8_t modrm = fetch_byte();
         const uint8_t op = (modrm >> 3) & 7;
         const auto rm = decode_rm(modrm);
-        if (opcode == 0xD0) {
+        const uint8_t count = (opcode == 0xC0 || opcode == 0xC1)
+            ? fetch_byte()
+            : ((opcode == 0xD2 || opcode == 0xD3) ? get_cl() : 1);
+        if (opcode == 0xC0 || opcode == 0xD0 || opcode == 0xD2) {
             const uint8_t old = read_rm8(rm);
-            if (op == 4) {
-                const uint16_t r = static_cast<uint16_t>(old) << 1;
-                write_rm8(rm, static_cast<uint8_t>(r));
-                set_carry((r & 0x100) != 0);
-                update_logic_flags_8(static_cast<uint8_t>(r));
-            }
+            write_rm8(rm, shift8(old, op, count));
         } else {
             const uint16_t old = read_rm16(rm);
-            if (op == 4) {
-                const uint32_t r = static_cast<uint32_t>(old) << 1;
-                write_rm16(rm, static_cast<uint16_t>(r));
-                set_carry((r & 0x10000) != 0);
-                update_logic_flags_16(static_cast<uint16_t>(r));
-            }
+            write_rm16(rm, shift16(old, op, count));
         }
         break;
     }
@@ -1026,6 +1254,26 @@ void X86Cpu::execute_one()
     case 0xE9: {
         const int16_t disp = static_cast<int16_t>(fetch_word());
         ip_ = static_cast<uint16_t>(ip_ + disp);
+        break;
+    }
+    case 0xE0: case 0xE1: case 0xE2: case 0xE3: {
+        const int8_t disp = static_cast<int8_t>(fetch_byte());
+        bool take = false;
+        if (opcode == 0xE3) {
+            take = cx_ == 0;
+        } else {
+            cx_ = static_cast<uint16_t>(cx_ - 1);
+            if (opcode == 0xE0) {
+                take = cx_ != 0 && !get_zero();
+            } else if (opcode == 0xE1) {
+                take = cx_ != 0 && get_zero();
+            } else {
+                take = cx_ != 0;
+            }
+        }
+        if (take) {
+            ip_ = static_cast<uint16_t>(ip_ + disp);
+        }
         break;
     }
     case 0xEA: {
@@ -1094,6 +1342,19 @@ void X86Cpu::execute_one()
                 const uint8_t result = static_cast<uint8_t>(-static_cast<int8_t>(old));
                 write_rm8(rm, result);
                 update_flags_sub_8(0, old, static_cast<uint16_t>(0) - old);
+            } else if (op == 4) {
+                const uint16_t result = static_cast<uint16_t>(get_al()) * old;
+                ax_ = result;
+                set_carry((result & 0xff00) != 0);
+                set_overflow(get_carry());
+            } else if (op == 6) {
+                if (old == 0) {
+                    halted_ = true;
+                    break;
+                }
+                const uint16_t dividend = ax_;
+                set_al(static_cast<uint8_t>(dividend / old));
+                set_ah(static_cast<uint8_t>(dividend % old));
             }
         } else {
             const uint16_t old = read_rm16(rm);
@@ -1106,6 +1367,20 @@ void X86Cpu::execute_one()
                 const uint16_t result = static_cast<uint16_t>(-static_cast<int16_t>(old));
                 write_rm16(rm, result);
                 update_flags_sub_16(0, old, static_cast<uint32_t>(0) - old);
+            } else if (op == 4) {
+                const uint32_t result = static_cast<uint32_t>(ax_) * old;
+                ax_ = static_cast<uint16_t>(result & 0xffff);
+                dx_ = static_cast<uint16_t>((result >> 16) & 0xffff);
+                set_carry(dx_ != 0);
+                set_overflow(get_carry());
+            } else if (op == 6) {
+                if (old == 0) {
+                    halted_ = true;
+                    break;
+                }
+                const uint32_t dividend = (static_cast<uint32_t>(dx_) << 16) | ax_;
+                ax_ = static_cast<uint16_t>(dividend / old);
+                dx_ = static_cast<uint16_t>(dividend % old);
             }
         }
         break;
@@ -1183,6 +1458,11 @@ void X86Cpu::execute_one()
     }
 
     default:
+        last_unsupported_opcode_ = opcode;
+        last_unsupported_cs_ = cs_;
+        last_unsupported_ip_ = opcode_ip;
+        ++unsupported_count_;
+        halted_ = true;
         break;
     }
 }

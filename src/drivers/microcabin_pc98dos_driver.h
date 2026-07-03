@@ -54,6 +54,8 @@ private:
     void dos_read_selected_file();
     void dos_seek_selected_file();
     void call_mmd_api(uint16_t ax, uint16_t bx = 0, uint16_t cx = 0, uint16_t dx = 0);
+    void call_mmd_timer();
+    double mmd_timer_rate_hz() const;
     void load_mmd_stream(uint8_t command, const std::vector<uint8_t>& data);
     void copy_to_transfer_buffer(const uint8_t* data, size_t size);
 
@@ -80,17 +82,31 @@ private:
     uint8_t command_high_ = 0xff;
     uint8_t selected_file_handle_ = 1;
     size_t selected_file_offset_ = 0;
+    double mmd_timer_frames_until_tick_ = 0.0;
     uint64_t executed_cpu_steps_ = 0;
     uint32_t debug_io_reads_ = 0;
     uint32_t debug_io_writes_ = 0;
     uint32_t debug_int21_ = 0;
     uint32_t debug_intd2_ = 0;
     uint32_t debug_opna_writes_ = 0;
+    uint64_t debug_opna_keyons_ = 0;
+    uint32_t debug_opna_bank1_writes_ = 0;
+    uint32_t debug_opna_ssg_writes_ = 0;
+    uint32_t debug_opna_rhythm_writes_ = 0;
+    uint32_t debug_opna_adpcm_b_writes_ = 0;
+    std::array<uint32_t, 6> debug_fm_keyons_by_channel_{};
     uint32_t debug_mailbox_reads_ = 0;
     uint32_t debug_file_reads_ = 0;
     uint32_t debug_file_seeks_ = 0;
+    uint32_t debug_mmd_errors_ = 0;
+    uint32_t debug_mmd_select_errors_ = 0;
+    uint32_t debug_mmd_bgm_load_errors_ = 0;
+    uint32_t debug_mmd_voice_load_errors_ = 0;
+    uint32_t debug_mmd_play_errors_ = 0;
     uint8_t debug_last_int_ = 0;
     uint8_t debug_last_ah_ = 0;
+    uint16_t debug_last_mmd_command_ = 0;
+    uint8_t debug_last_mmd_return_ = 0;
     uint8_t debug_last_mailbox_port_ = 0;
     uint8_t debug_last_mailbox_value_ = 0;
     uint8_t current_opna_address_[2] = {0, 0};
@@ -106,6 +122,7 @@ private:
     static constexpr uint16_t kIretSegment = 0x0000;
     static constexpr uint16_t kIretOffset = 0x00f0;
     static constexpr uint16_t kApiReturnOffset = 0x00f1;
+    static constexpr uint16_t kMmdReturnOffset = 0x1ff0;
     static constexpr uint16_t kDeviceRequestOffset = 0x0600;
     static constexpr uint16_t kDeviceCommandOffset = 0x0700;
     static constexpr uint16_t kTransferSegment = 0x0000;

@@ -40,6 +40,10 @@ private:
     uint32_t ssg_sample_rate_ = 0;
     double ssg_phase_ = 0.0;
     double ssg_gain_ = 0.90;
+    double ssg_dc_prev_in_left_ = 0.0;
+    double ssg_dc_prev_in_right_ = 0.0;
+    double ssg_dc_prev_out_left_ = 0.0;
+    double ssg_dc_prev_out_right_ = 0.0;
     std::vector<int32_t> left_;
     std::vector<int32_t> right_;
     std::vector<int32_t> ssg_left_;

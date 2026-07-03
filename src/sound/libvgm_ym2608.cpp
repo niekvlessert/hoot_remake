@@ -33,6 +33,10 @@ bool LibvgmYm2608::initialize(uint32_t clock, uint32_t sample_rate)
     sample_rate_ = sample_rate;
     ssg_sample_rate_ = 0;
     ssg_phase_ = 0.0;
+    ssg_dc_prev_in_left_ = 0.0;
+    ssg_dc_prev_in_right_ = 0.0;
+    ssg_dc_prev_out_left_ = 0.0;
+    ssg_dc_prev_out_right_ = 0.0;
     ssg_gain_ = 0.90;
     if (const char* value = std::getenv("HOOT_PSG_GAIN")) {
         ssg_gain_ = std::clamp(std::strtod(value, nullptr), 0.0, 4.0);
@@ -59,6 +63,8 @@ bool LibvgmYm2608::initialize(uint32_t clock, uint32_t sample_rate)
     ym2608_link_ssg(chip_, &callbacks, this);
     update_ssg_sample_rate();
     ym2608_reset_chip(chip_);
+    ym2608_write(chip_, 0, 0x29);
+    ym2608_write(chip_, 1, 0x80);
     update_ssg_sample_rate();
     return true;
 }
@@ -67,7 +73,13 @@ void LibvgmYm2608::reset()
 {
     if (chip_ != nullptr) {
         ym2608_reset_chip(chip_);
+        ym2608_write(chip_, 0, 0x29);
+        ym2608_write(chip_, 1, 0x80);
         ssg_phase_ = 0.0;
+        ssg_dc_prev_in_left_ = 0.0;
+        ssg_dc_prev_in_right_ = 0.0;
+        ssg_dc_prev_out_left_ = 0.0;
+        ssg_dc_prev_out_right_ = 0.0;
         update_ssg_sample_rate();
     }
 }
@@ -75,7 +87,7 @@ void LibvgmYm2608::reset()
 void LibvgmYm2608::write(uint8_t port, uint8_t data)
 {
     if (chip_ != nullptr) {
-        ym2608_write(chip_, static_cast<uint8_t>(port & 1), data);
+        ym2608_write(chip_, static_cast<uint8_t>(port & 3), data);
     }
 }
 
@@ -84,7 +96,7 @@ uint8_t LibvgmYm2608::read(uint8_t port)
     if (chip_ == nullptr) {
         return 0xff;
     }
-    return ym2608_read(chip_, static_cast<uint8_t>(port & 1));
+    return ym2608_read(chip_, static_cast<uint8_t>(port & 3));
 }
 
 void LibvgmYm2608::render_s16(int16_t* interleaved_stereo, int frames)
@@ -112,15 +124,7 @@ void LibvgmYm2608::render_s16(int16_t* interleaved_stereo, int frames)
             DEV_SMPL* ssg_buffers[2] = {ssg_left_.data(), ssg_right_.data()};
             ay8910_update_one(ssg_, static_cast<UINT32>(ssg_frames), ssg_buffers);
 
-            int64_t ssg_left_sum = 0;
-            int64_t ssg_right_sum = 0;
-            for (int i = 0; i < ssg_frames; ++i) {
-                ssg_left_sum += ssg_left_[i];
-                ssg_right_sum += ssg_right_[i];
-            }
-            const auto ssg_left_dc = static_cast<int32_t>(ssg_left_sum / ssg_frames);
-            const auto ssg_right_dc = static_cast<int32_t>(ssg_right_sum / ssg_frames);
-
+            constexpr double kDcBlock = 0.995;
             for (int i = 0; i < frames; ++i) {
                 const double source_start = ssg_phase_ + (static_cast<double>(i) * ratio);
                 const double source_end = ssg_phase_ + (static_cast<double>(i + 1) * ratio);
@@ -138,10 +142,18 @@ void LibvgmYm2608::render_s16(int16_t* interleaved_stereo, int frames)
                         right_sum += ssg_right_[source_index];
                     }
                     const auto count = static_cast<int32_t>(last - first);
-                    const auto ssg_left_sample = static_cast<int32_t>(left_sum / count) - ssg_left_dc;
-                    const auto ssg_right_sample = static_cast<int32_t>(right_sum / count) - ssg_right_dc;
-                    left_[i] += static_cast<int32_t>(std::lround(static_cast<double>(ssg_left_sample) * ssg_gain_));
-                    right_[i] += static_cast<int32_t>(std::lround(static_cast<double>(ssg_right_sample) * ssg_gain_));
+                    const double ssg_left_sample = static_cast<double>(left_sum) / static_cast<double>(count);
+                    const double ssg_right_sample = static_cast<double>(right_sum) / static_cast<double>(count);
+                    const double filtered_left = ssg_left_sample - ssg_dc_prev_in_left_
+                        + (kDcBlock * ssg_dc_prev_out_left_);
+                    const double filtered_right = ssg_right_sample - ssg_dc_prev_in_right_
+                        + (kDcBlock * ssg_dc_prev_out_right_);
+                    ssg_dc_prev_in_left_ = ssg_left_sample;
+                    ssg_dc_prev_in_right_ = ssg_right_sample;
+                    ssg_dc_prev_out_left_ = filtered_left;
+                    ssg_dc_prev_out_right_ = filtered_right;
+                    left_[i] += static_cast<int32_t>(std::lround(filtered_left * ssg_gain_));
+                    right_[i] += static_cast<int32_t>(std::lround(filtered_right * ssg_gain_));
                 }
             }
             ssg_phase_ = end_phase - static_cast<double>(ssg_frames);
@@ -197,6 +209,10 @@ void LibvgmYm2608::reset_ssg(void* param)
     if (self->ssg_ != nullptr) {
         ay8910_reset(self->ssg_);
         self->ssg_phase_ = 0.0;
+        self->ssg_dc_prev_in_left_ = 0.0;
+        self->ssg_dc_prev_in_right_ = 0.0;
+        self->ssg_dc_prev_out_left_ = 0.0;
+        self->ssg_dc_prev_out_right_ = 0.0;
         self->update_ssg_sample_rate();
     }
 }

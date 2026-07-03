@@ -93,6 +93,10 @@ public:
 
     bool is_halted() const { return halted_; }
     void clear_halted() { halted_ = false; }
+    uint8_t last_unsupported_opcode() const { return last_unsupported_opcode_; }
+    uint16_t last_unsupported_cs() const { return last_unsupported_cs_; }
+    uint16_t last_unsupported_ip() const { return last_unsupported_ip_; }
+    uint32_t unsupported_count() const { return unsupported_count_; }
 
 private:
     uint32_t get_linear(uint16_t seg, uint16_t off) const { return (static_cast<uint32_t>(seg) << 4) + off; }
@@ -119,6 +123,8 @@ private:
     void update_flags_add_16(uint16_t a, uint16_t b, uint32_t result);
     void update_flags_sub_8(uint8_t a, uint8_t b, uint16_t result);
     void update_flags_sub_16(uint16_t a, uint16_t b, uint32_t result);
+    uint8_t shift8(uint8_t value, uint8_t op, uint8_t count);
+    uint16_t shift16(uint16_t value, uint8_t op, uint8_t count);
 
     void execute_one();
 
@@ -166,6 +172,10 @@ private:
     uint16_t flags_ = 0xF000;
 
     bool halted_ = false;
+    uint8_t last_unsupported_opcode_ = 0;
+    uint16_t last_unsupported_cs_ = 0;
+    uint16_t last_unsupported_ip_ = 0;
+    uint32_t unsupported_count_ = 0;
     bool segment_override_active_ = false;
     uint16_t segment_override_ = 0;
     enum class RepeatPrefix {

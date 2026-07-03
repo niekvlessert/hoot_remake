@@ -1,6 +1,8 @@
 #include "drivers/microcabin_pc98dos_driver.h"
 
 #include <algorithm>
+#include <cmath>
+#include <cstdlib>
 #include <cstring>
 #include <filesystem>
 #include <sstream>
@@ -153,10 +155,12 @@ HootResult MicrocabinPc98DosDriver::select_track(const HootEntry& entry,
     command_latch_ = 0;
     command_low_ = static_cast<uint8_t>(bgm_slot & 0xff);
     command_high_ = static_cast<uint8_t>(voice_slot & 0xff);
+    mmd_timer_frames_until_tick_ = 0.0;
     playing_ = true;
-    call_mmd_api(static_cast<uint16_t>(0x0300 | ((bgm_slot + 1) & 0xff)));
+    call_mmd_api(0x0000);
     if (!selected_voice_data_.empty()) {
-        load_mmd_stream(0x11, selected_voice_data_);
+        load_mmd_stream(0x0c, selected_voice_data_);
+        call_mmd_api(static_cast<uint16_t>(0x0d00 | (voice_slot & 0xff)));
     }
     load_mmd_stream(0x10, selected_bgm_data_);
     call_mmd_api(0x0100);
@@ -174,6 +178,7 @@ void MicrocabinPc98DosDriver::reset()
     selected_bgm_data_.clear();
     selected_voice_data_.clear();
     selected_file_offset_ = 0;
+    mmd_timer_frames_until_tick_ = 0.0;
     playing_ = false;
     command_pending_ = false;
     if (ym2608_) {
@@ -196,14 +201,22 @@ int MicrocabinPc98DosDriver::render_s16(int16_t* interleaved_stereo, int frames)
         return frames;
     }
 
-    constexpr int kTickRate = 60;
-    const int tick_frames = std::max(1, sample_rate_ / kTickRate);
+    const double timer_rate_hz = mmd_timer_rate_hz();
+    const double frames_per_tick = timer_rate_hz > 0.0
+        ? static_cast<double>(sample_rate_) / timer_rate_hz
+        : static_cast<double>(sample_rate_) / 60.0;
     int rendered = 0;
     while (rendered < frames) {
-        const int chunk = std::min(tick_frames, frames - rendered);
-        call_mmd_api(0x0608);
+        if (mmd_timer_frames_until_tick_ <= 0.0) {
+            call_mmd_timer();
+            mmd_timer_frames_until_tick_ += frames_per_tick;
+        }
+        const int chunk = std::min(
+            std::max(1, static_cast<int>(std::ceil(mmd_timer_frames_until_tick_))),
+            frames - rendered);
         run_cpu_steps(chunk * 12);
         ym2608_->render_s16(interleaved_stereo + (rendered * 2), chunk);
+        mmd_timer_frames_until_tick_ -= static_cast<double>(chunk);
         rendered += chunk;
     }
     return frames;
@@ -234,24 +247,36 @@ void MicrocabinPc98DosDriver::fill_track_info(const HootEntry& entry,
     std::memset(&out, 0, sizeof(out));
     out.track_index = track_index;
     out.sample_rate = sample_rate_;
-    out.debug_cpu_cycles = static_cast<uint32_t>(std::min<uint64_t>(executed_cpu_steps_, UINT32_MAX));
+    out.debug_cpu_cycles = cpu_ && cpu_->unsupported_count() != 0
+        ? cpu_->unsupported_count()
+        : static_cast<uint32_t>(std::min<uint64_t>(executed_cpu_steps_, UINT32_MAX));
     out.debug_io_reads = debug_io_reads_;
     out.debug_io_writes = debug_io_writes_;
     out.debug_opn_writes = debug_opna_writes_;
-    out.debug_pc = cpu_ ? ((static_cast<uint32_t>(cpu_->get_cs()) << 16) | cpu_->get_pc()) : 0;
+    out.debug_opn_keyons = debug_opna_keyons_;
+    out.debug_pc = cpu_ && cpu_->unsupported_count() != 0
+        ? ((static_cast<uint32_t>(cpu_->last_unsupported_cs()) << 16) | cpu_->last_unsupported_ip())
+        : (cpu_ ? ((static_cast<uint32_t>(cpu_->get_cs()) << 16) | cpu_->get_pc()) : 0);
     const uint32_t mmd_base = (static_cast<uint32_t>(kMmdSegment) << 4) + kMmdOffset;
     const auto* mem = cpu_ ? cpu_->memory() : nullptr;
     out.debug_last_opn_reg = mem ? mem[mmd_base + 0x152c] : debug_last_int_;
     out.debug_last_opn_data = mem ? static_cast<uint32_t>(mem[mmd_base + 0x152e]
         | (mem[mmd_base + 0x152f] << 8)) : debug_last_ah_;
-    out.debug_port_writes_00 = debug_int21_;
-    out.debug_port_writes_01 = debug_intd2_;
-    out.debug_port_writes_02 = debug_mailbox_reads_;
-    out.debug_port_writes_03 = debug_file_reads_;
-    out.debug_port_writes_32 = debug_file_seeks_;
-    out.debug_port_writes_44 = mem ? static_cast<uint32_t>(mem[mmd_base + 0x1530]
-        | (mem[mmd_base + 0x1531] << 8)) : debug_last_mailbox_port_;
-    out.debug_port_writes_45 = debug_last_mailbox_value_;
+    out.debug_port_writes_00 = debug_mmd_select_errors_;
+    out.debug_port_writes_01 = static_cast<uint64_t>(debug_fm_keyons_by_channel_[0])
+        | (static_cast<uint64_t>(debug_fm_keyons_by_channel_[1]) << 16)
+        | (static_cast<uint64_t>(debug_fm_keyons_by_channel_[2]) << 32)
+        | (static_cast<uint64_t>(debug_fm_keyons_by_channel_[3]) << 48);
+    out.debug_port_writes_02 = static_cast<uint64_t>(debug_fm_keyons_by_channel_[4])
+        | (static_cast<uint64_t>(debug_fm_keyons_by_channel_[5]) << 32);
+    out.debug_port_writes_03 = debug_opna_ssg_writes_;
+    out.debug_port_writes_32 = mem ? static_cast<uint32_t>(mem[mmd_base + 0x17d8]
+        | (mem[mmd_base + 0x17e9] << 8)
+        | (mem[mmd_base + 0x1594] << 16)) : debug_file_seeks_;
+    out.debug_port_writes_44 = debug_opna_adpcm_b_writes_;
+    out.debug_port_writes_45 = (static_cast<uint32_t>(debug_mmd_play_errors_) << 24)
+        | (static_cast<uint32_t>(debug_last_mmd_command_) << 8)
+        | debug_last_mmd_return_;
     copy_c_string(out.driver, name());
     if (track_index >= 0 && static_cast<size_t>(track_index) < entry.tracks.size()) {
         copy_c_string(out.title, entry.tracks[track_index].title);
@@ -289,17 +314,31 @@ void MicrocabinPc98DosDriver::clear()
     command_low_ = 0xff;
     command_high_ = 0xff;
     selected_file_offset_ = 0;
+    mmd_timer_frames_until_tick_ = 0.0;
     executed_cpu_steps_ = 0;
     debug_io_reads_ = 0;
     debug_io_writes_ = 0;
     debug_int21_ = 0;
     debug_intd2_ = 0;
     debug_opna_writes_ = 0;
+    debug_opna_keyons_ = 0;
+    debug_opna_bank1_writes_ = 0;
+    debug_opna_ssg_writes_ = 0;
+    debug_opna_rhythm_writes_ = 0;
+    debug_opna_adpcm_b_writes_ = 0;
+    debug_fm_keyons_by_channel_.fill(0);
     debug_mailbox_reads_ = 0;
     debug_file_reads_ = 0;
     debug_file_seeks_ = 0;
+    debug_mmd_errors_ = 0;
+    debug_mmd_select_errors_ = 0;
+    debug_mmd_bgm_load_errors_ = 0;
+    debug_mmd_voice_load_errors_ = 0;
+    debug_mmd_play_errors_ = 0;
     debug_last_int_ = 0;
     debug_last_ah_ = 0;
+    debug_last_mmd_command_ = 0;
+    debug_last_mmd_return_ = 0;
     debug_last_mailbox_port_ = 0;
     debug_last_mailbox_value_ = 0;
     current_opna_address_[0] = 0;
@@ -332,6 +371,7 @@ bool MicrocabinPc98DosDriver::setup_runtime(std::string& error)
     std::fill(mem, mem + kMemorySize, 0);
     mem[kIretOffset] = 0xcf;
     mem[kApiReturnOffset] = 0xf4;
+    mem[(static_cast<uint32_t>(kMmdSegment) << 4) + kMmdReturnOffset] = 0xf4;
 
     const auto helper_linear = (static_cast<uint32_t>(kHelperSegment) << 4) + kHelperOffset;
     std::copy_n(mmd_helper_.begin(),
@@ -358,11 +398,24 @@ bool MicrocabinPc98DosDriver::setup_runtime(std::string& error)
     debug_int21_ = 0;
     debug_intd2_ = 0;
     debug_opna_writes_ = 0;
+    debug_opna_keyons_ = 0;
+    debug_opna_bank1_writes_ = 0;
+    debug_opna_ssg_writes_ = 0;
+    debug_opna_rhythm_writes_ = 0;
+    debug_opna_adpcm_b_writes_ = 0;
+    debug_fm_keyons_by_channel_.fill(0);
     debug_mailbox_reads_ = 0;
     debug_file_reads_ = 0;
     debug_file_seeks_ = 0;
+    debug_mmd_errors_ = 0;
+    debug_mmd_select_errors_ = 0;
+    debug_mmd_bgm_load_errors_ = 0;
+    debug_mmd_voice_load_errors_ = 0;
+    debug_mmd_play_errors_ = 0;
     debug_last_int_ = 0;
     debug_last_ah_ = 0;
+    debug_last_mmd_command_ = 0;
+    debug_last_mmd_return_ = 0;
     debug_last_mailbox_port_ = 0;
     debug_last_mailbox_value_ = 0;
     return true;
@@ -437,6 +490,31 @@ void MicrocabinPc98DosDriver::initialize_mmd_device()
         write_memory_byte(mmd_base + 0x152f, 0x01);
         write_memory_byte(mmd_base + 0x1530, 0x8a);
         write_memory_byte(mmd_base + 0x1531, 0x01);
+    }
+    const uint16_t bgm_size = static_cast<uint16_t>(read_memory_byte(mmd_base + 0x153e)
+        | (read_memory_byte(mmd_base + 0x153f) << 8));
+    const uint16_t voice_size = static_cast<uint16_t>(read_memory_byte(mmd_base + 0x1540)
+        | (read_memory_byte(mmd_base + 0x1541) << 8));
+    if (bgm_size < 0x0400 || voice_size == 0) {
+        const uint16_t voice_buffer = 0x19e8;
+        const uint16_t bgm_buffer = 0x21e8;
+        const uint16_t end_buffer = 0x2de8;
+        write_memory_byte(mmd_base + 0x153e, 0x00);
+        write_memory_byte(mmd_base + 0x153f, 0x0c);
+        write_memory_byte(mmd_base + 0x1540, 0x00);
+        write_memory_byte(mmd_base + 0x1541, 0x08);
+        write_memory_byte(mmd_base + 0x1544, static_cast<uint8_t>(voice_buffer & 0xff));
+        write_memory_byte(mmd_base + 0x1545, static_cast<uint8_t>((voice_buffer >> 8) & 0xff));
+        write_memory_byte(mmd_base + 0x1542, static_cast<uint8_t>(bgm_buffer & 0xff));
+        write_memory_byte(mmd_base + 0x1543, static_cast<uint8_t>((bgm_buffer >> 8) & 0xff));
+        write_memory_byte(mmd_base + 0x1546, static_cast<uint8_t>(end_buffer & 0xff));
+        write_memory_byte(mmd_base + 0x1547, static_cast<uint8_t>((end_buffer >> 8) & 0xff));
+    }
+    const uint16_t output_callback = static_cast<uint16_t>(read_memory_byte(mmd_base + 0x19be)
+        | (read_memory_byte(mmd_base + 0x19bf) << 8));
+    if (output_callback == 0) {
+        write_memory_byte(mmd_base + 0x19be, 0x01);
+        write_memory_byte(mmd_base + 0x19bf, 0x10);
     }
     cpu_->set_cs(kHelperSegment);
     cpu_->set_pc(kApiReturnOffset);
@@ -578,6 +656,23 @@ void MicrocabinPc98DosDriver::write_io_port(uint16_t port, uint8_t data)
         ym2608_->write(0, data);
     } else if (port == 0x0089 || port == 0x008a || port == 0x018a) {
         ++debug_opna_writes_;
+        if (current_opna_address_[0] < 0x10) {
+            ++debug_opna_ssg_writes_;
+        } else if (current_opna_address_[0] >= 0x10 && current_opna_address_[0] < 0x20) {
+            ++debug_opna_rhythm_writes_;
+        }
+        if (current_opna_address_[0] == 0x28 && (data & 0xf0) != 0) {
+            ++debug_opna_keyons_;
+            uint8_t channel = data & 0x03;
+            if (channel != 3) {
+                if ((data & 0x04) != 0) {
+                    channel = static_cast<uint8_t>(channel + 3);
+                }
+                if (channel < debug_fm_keyons_by_channel_.size()) {
+                    ++debug_fm_keyons_by_channel_[channel];
+                }
+            }
+        }
         opna_registers_[0][current_opna_address_[0]] = data;
         ym2608_->write(1, data);
     } else if (port == 0x008c || port == 0x018c) {
@@ -585,6 +680,10 @@ void MicrocabinPc98DosDriver::write_io_port(uint16_t port, uint8_t data)
         ym2608_->write(2, data);
     } else if (port == 0x008d || port == 0x008e || port == 0x018e) {
         ++debug_opna_writes_;
+        ++debug_opna_bank1_writes_;
+        if (current_opna_address_[1] < 0x10) {
+            ++debug_opna_adpcm_b_writes_;
+        }
         opna_registers_[1][current_opna_address_[1]] = data;
         ym2608_->write(3, data);
     }
@@ -719,9 +818,77 @@ void MicrocabinPc98DosDriver::call_mmd_api(uint16_t ax, uint16_t bx, uint16_t cx
     cpu_->set_cs(kHelperSegment);
     cpu_->set_pc(kApiReturnOffset);
     trigger_interrupt_vector(0xD2);
-    run_cpu_steps(100000);
+    run_cpu_steps(2000000);
+    debug_last_mmd_command_ = ax;
+    debug_last_mmd_return_ = cpu_->get_al();
+    if (debug_last_mmd_return_ != 0) {
+        ++debug_mmd_errors_;
+        const uint8_t command = static_cast<uint8_t>((ax >> 8) & 0xff);
+        if (command == 0x03) {
+            ++debug_mmd_select_errors_;
+        } else if (command == 0x10) {
+            ++debug_mmd_bgm_load_errors_;
+        } else if (command == 0x11) {
+            ++debug_mmd_voice_load_errors_;
+        } else if (command == 0x01) {
+            ++debug_mmd_play_errors_;
+        }
+    }
     cpu_->set_cs(kHelperSegment);
     cpu_->set_pc(kApiReturnOffset);
+}
+
+void MicrocabinPc98DosDriver::call_mmd_timer()
+{
+    if (!cpu_) {
+        return;
+    }
+
+    const uint32_t mmd_base = (static_cast<uint32_t>(kMmdSegment) << 4) + kMmdOffset;
+    const uint16_t timer_stack = static_cast<uint16_t>(read_memory_byte(mmd_base + 0x036e)
+        | (read_memory_byte(mmd_base + 0x036f) << 8));
+    if (timer_stack == 0) {
+        write_memory_byte(mmd_base + 0x036e, 0xe6);
+        write_memory_byte(mmd_base + 0x036f, 0x2f);
+        write_memory_byte(mmd_base + 0x0370, static_cast<uint8_t>(kMmdSegment & 0xff));
+        write_memory_byte(mmd_base + 0x0371, static_cast<uint8_t>((kMmdSegment >> 8) & 0xff));
+    }
+    cpu_->set_ds(kMmdSegment);
+    cpu_->set_es(kMmdSegment);
+    cpu_->set_ss(kStackSegment);
+    cpu_->set_sp(kStackPointer);
+    push_cpu_word(0x0200);
+    push_cpu_word(kMmdSegment);
+    push_cpu_word(kMmdReturnOffset);
+    cpu_->set_cs(kMmdSegment);
+    cpu_->set_pc(0x0376);
+    run_cpu_steps(2000000);
+    cpu_->set_cs(kHelperSegment);
+    cpu_->set_pc(kApiReturnOffset);
+}
+
+double MicrocabinPc98DosDriver::mmd_timer_rate_hz() const
+{
+    if (const char* value = std::getenv("HOOT_MMD_TIMER_HZ")) {
+        const double override_hz = std::strtod(value, nullptr);
+        if (override_hz > 0.0) {
+            return override_hz;
+        }
+    }
+
+    constexpr double kPc98OpnaClock = 7987200.0;
+    // MMD programs OPNA Timer A directly. For the PC-98 YM2608 cadence used by
+    // this resident driver, the stable audible rate is half the raw FM timer
+    // helper rate used by fmgen.
+    constexpr double kOpnaTimerClockDivisor = 144.0;
+    const uint16_t timer_a = static_cast<uint16_t>(
+        (static_cast<uint16_t>(opna_registers_[0][0x24]) << 2)
+        | (opna_registers_[0][0x25] & 0x03));
+    const int period = 1024 - static_cast<int>(timer_a);
+    if (period <= 0) {
+        return 60.0;
+    }
+    return (kPc98OpnaClock / kOpnaTimerClockDivisor) / static_cast<double>(period);
 }
 
 } // namespace hoot
