@@ -1,10 +1,55 @@
 #include "sound/libvgm_ym2608.h"
 
 #include <algorithm>
-#include <cstdlib>
 #include <cmath>
+#include <cstdlib>
+#include <cstring>
 
 namespace hoot {
+namespace {
+
+uint8_t parse_psg_channel_mask()
+{
+    const char* value = std::getenv("HOOT_PSG_CHANNELS");
+    if (value == nullptr) {
+        value = std::getenv("HOOT_PSG_ONLY");
+    }
+    if (value == nullptr || *value == '\0') {
+        return 0x07;
+    }
+
+    uint8_t mask = 0;
+    for (const char* p = value; *p != '\0'; ++p) {
+        switch (*p) {
+        case 'A':
+        case 'a':
+        case '0':
+            mask |= 0x01;
+            break;
+        case 'B':
+        case 'b':
+        case '1':
+            mask |= 0x02;
+            break;
+        case 'C':
+        case 'c':
+        case '2':
+            mask |= 0x04;
+            break;
+        default:
+            break;
+        }
+    }
+    return mask;
+}
+
+bool env_is_zero(const char* name)
+{
+    const char* value = std::getenv(name);
+    return value != nullptr && (std::strcmp(value, "0") == 0 || std::strcmp(value, "false") == 0);
+}
+
+} // namespace
 
 LibvgmYm2608::LibvgmYm2608() = default;
 
@@ -33,16 +78,25 @@ bool LibvgmYm2608::initialize(uint32_t clock, uint32_t sample_rate)
     sample_rate_ = sample_rate;
     ssg_sample_rate_ = 0;
     ssg_phase_ = 0.0;
+    ssg_gain_ = 0.90;
+    ssg_polarity_ = 1.0;
     ssg_dc_prev_in_left_ = 0.0;
     ssg_dc_prev_in_right_ = 0.0;
     ssg_dc_prev_out_left_ = 0.0;
     ssg_dc_prev_out_right_ = 0.0;
-    ssg_gain_ = 0.90;
+    reset_debug_ssg_state();
+    debug_psg_channel_mask_ = parse_psg_channel_mask();
+    debug_psg_disable_tone_ = env_is_zero("HOOT_PSG_TONE");
+    debug_psg_disable_noise_ = env_is_zero("HOOT_PSG_NOISE");
+    debug_psg_raw_dc_ = std::getenv("HOOT_PSG_RAW") != nullptr;
     if (const char* value = std::getenv("HOOT_PSG_GAIN")) {
         ssg_gain_ = std::clamp(std::strtod(value, nullptr), 0.0, 4.0);
     }
     if (std::getenv("HOOT_DISABLE_PSG") != nullptr) {
         ssg_gain_ = 0.0;
+    }
+    if (const char* value = std::getenv("HOOT_PSG_INVERT")) {
+        ssg_polarity_ = std::strtol(value, nullptr, 0) != 0 ? -1.0 : 1.0;
     }
 
     chip_ = ym2608_init(this, clock, sample_rate, nullptr, nullptr);
@@ -80,6 +134,7 @@ void LibvgmYm2608::reset()
         ssg_dc_prev_in_right_ = 0.0;
         ssg_dc_prev_out_left_ = 0.0;
         ssg_dc_prev_out_right_ = 0.0;
+        reset_debug_ssg_state();
         update_ssg_sample_rate();
     }
 }
@@ -113,6 +168,10 @@ void LibvgmYm2608::render_s16(int16_t* interleaved_stereo, int frames)
     right_.assign(static_cast<size_t>(frames), 0);
     DEV_SMPL* buffers[2] = {left_.data(), right_.data()};
     ym2608_update_one(chip_, static_cast<UINT32>(frames), buffers);
+    if (std::getenv("HOOT_SOLO_PSG") != nullptr) {
+        std::fill(left_.begin(), left_.end(), 0);
+        std::fill(right_.begin(), right_.end(), 0);
+    }
 
     if (ssg_ != nullptr && ssg_sample_rate_ != 0 && sample_rate_ != 0) {
         const double ratio = static_cast<double>(ssg_sample_rate_) / static_cast<double>(sample_rate_);
@@ -124,7 +183,6 @@ void LibvgmYm2608::render_s16(int16_t* interleaved_stereo, int frames)
             DEV_SMPL* ssg_buffers[2] = {ssg_left_.data(), ssg_right_.data()};
             ay8910_update_one(ssg_, static_cast<UINT32>(ssg_frames), ssg_buffers);
 
-            constexpr double kDcBlock = 0.995;
             for (int i = 0; i < frames; ++i) {
                 const double source_start = ssg_phase_ + (static_cast<double>(i) * ratio);
                 const double source_end = ssg_phase_ + (static_cast<double>(i + 1) * ratio);
@@ -144,16 +202,21 @@ void LibvgmYm2608::render_s16(int16_t* interleaved_stereo, int frames)
                     const auto count = static_cast<int32_t>(last - first);
                     const double ssg_left_sample = static_cast<double>(left_sum) / static_cast<double>(count);
                     const double ssg_right_sample = static_cast<double>(right_sum) / static_cast<double>(count);
-                    const double filtered_left = ssg_left_sample - ssg_dc_prev_in_left_
-                        + (kDcBlock * ssg_dc_prev_out_left_);
-                    const double filtered_right = ssg_right_sample - ssg_dc_prev_in_right_
-                        + (kDcBlock * ssg_dc_prev_out_right_);
-                    ssg_dc_prev_in_left_ = ssg_left_sample;
-                    ssg_dc_prev_in_right_ = ssg_right_sample;
-                    ssg_dc_prev_out_left_ = filtered_left;
-                    ssg_dc_prev_out_right_ = filtered_right;
-                    left_[i] += static_cast<int32_t>(std::lround(filtered_left * ssg_gain_));
-                    right_[i] += static_cast<int32_t>(std::lround(filtered_right * ssg_gain_));
+                    double filtered_left = ssg_left_sample;
+                    double filtered_right = ssg_right_sample;
+                    if (!debug_psg_raw_dc_) {
+                        constexpr double kDcBlock = 0.9995;
+                        filtered_left = ssg_left_sample - ssg_dc_prev_in_left_
+                            + (kDcBlock * ssg_dc_prev_out_left_);
+                        filtered_right = ssg_right_sample - ssg_dc_prev_in_right_
+                            + (kDcBlock * ssg_dc_prev_out_right_);
+                        ssg_dc_prev_in_left_ = ssg_left_sample;
+                        ssg_dc_prev_in_right_ = ssg_right_sample;
+                        ssg_dc_prev_out_left_ = filtered_left;
+                        ssg_dc_prev_out_right_ = filtered_right;
+                    }
+                    left_[i] += static_cast<int32_t>(std::lround(filtered_left * ssg_gain_ * ssg_polarity_));
+                    right_[i] += static_cast<int32_t>(std::lround(filtered_right * ssg_gain_ * ssg_polarity_));
                 }
             }
             ssg_phase_ = end_phase - static_cast<double>(ssg_frames);
@@ -177,6 +240,16 @@ void LibvgmYm2608::set_mute_mask(uint32_t mask)
     }
 }
 
+void LibvgmYm2608::set_ssg_gain(double gain)
+{
+    ssg_gain_ = std::clamp(gain, 0.0, 4.0);
+}
+
+void LibvgmYm2608::set_ssg_inverted(bool inverted)
+{
+    ssg_polarity_ = inverted ? -1.0 : 1.0;
+}
+
 void LibvgmYm2608::set_ssg_clock(void* param, uint32_t clock)
 {
     auto* self = static_cast<LibvgmYm2608*>(param);
@@ -190,6 +263,7 @@ void LibvgmYm2608::write_ssg(void* param, uint8_t address, uint8_t data)
 {
     auto* self = static_cast<LibvgmYm2608*>(param);
     if (self->ssg_ != nullptr) {
+        data = self->filter_debug_ssg_write(address, data);
         ay8910_write(self->ssg_, address, data);
     }
 }
@@ -213,8 +287,46 @@ void LibvgmYm2608::reset_ssg(void* param)
         self->ssg_dc_prev_in_right_ = 0.0;
         self->ssg_dc_prev_out_left_ = 0.0;
         self->ssg_dc_prev_out_right_ = 0.0;
+        self->reset_debug_ssg_state();
         self->update_ssg_sample_rate();
     }
+}
+
+void LibvgmYm2608::reset_debug_ssg_state()
+{
+    debug_ssg_latch_ = 0;
+    debug_ssg_regs_.fill(0);
+}
+
+uint8_t LibvgmYm2608::filter_debug_ssg_write(uint8_t address, uint8_t data)
+{
+    if ((address & 1) == 0) {
+        debug_ssg_latch_ = static_cast<uint8_t>(data & 0x0f);
+        return data;
+    }
+
+    const uint8_t reg = debug_ssg_latch_;
+    uint8_t filtered = data;
+    if (reg == 7) {
+        for (uint8_t channel = 0; channel < 3; ++channel) {
+            if ((debug_psg_channel_mask_ & (1u << channel)) == 0) {
+                filtered = static_cast<uint8_t>(filtered | (1u << channel) | (1u << (channel + 3)));
+            }
+        }
+        if (debug_psg_disable_tone_) {
+            filtered = static_cast<uint8_t>(filtered | 0x07);
+        }
+        if (debug_psg_disable_noise_) {
+            filtered = static_cast<uint8_t>(filtered | 0x38);
+        }
+    } else if (reg >= 8 && reg <= 10) {
+        const uint8_t channel = static_cast<uint8_t>(reg - 8);
+        if ((debug_psg_channel_mask_ & (1u << channel)) == 0) {
+            filtered = 0;
+        }
+    }
+    debug_ssg_regs_[reg] = filtered;
+    return filtered;
 }
 
 void LibvgmYm2608::update_ssg_sample_rate()

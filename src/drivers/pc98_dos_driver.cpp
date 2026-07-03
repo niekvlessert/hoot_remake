@@ -2,6 +2,8 @@
 
 #include <algorithm>
 #include <cmath>
+#include <cstdio>
+#include <cstdlib>
 #include <cstring>
 #include <filesystem>
 #include <map>
@@ -168,13 +170,34 @@ HootResult Pc98DosDriver::load(const HootEntry& entry,
     cpu_->set_io_write_callback([this](uint16_t p, uint8_t d) { write_io_port(p, d); });
     cpu_->set_interrupt_callback([this](uint8_t i) { handle_interrupt(i); });
 
-    ym2608_ = std::make_unique<LibvgmYm2608>();
-    if (!ym2608_->initialize(7'967'264, static_cast<uint32_t>(sample_rate_))) {
-        error = "failed to initialize YM2608 sound chip";
-        return HOOT_ERROR_UNSUPPORTED;
+    use_ym2203_ = driver_type_ == DriverType::Shell && entry.driver_name == "pc98dos/opn";
+    if (use_ym2203_) {
+        ym2203_ = std::make_unique<LibvgmYm2203>();
+        if (!ym2203_->initialize(3'993'632, static_cast<uint32_t>(sample_rate_))) {
+            error = "failed to initialize YM2203 sound chip";
+            return HOOT_ERROR_UNSUPPORTED;
+        }
+        if (std::getenv("HOOT_PSG_GAIN") == nullptr
+            && std::getenv("HOOT_DISABLE_PSG") == nullptr) {
+            ym2203_->set_ssg_gain(0.45);
+        }
+    } else {
+        ym2608_ = std::make_unique<LibvgmYm2608>();
+        if (!ym2608_->initialize(7'967'264, static_cast<uint32_t>(sample_rate_))) {
+            error = "failed to initialize YM2608 sound chip";
+            return HOOT_ERROR_UNSUPPORTED;
+        }
     }
-    ym2608_->write(0, 0x29);
-    ym2608_->write(1, 0x00);
+    trace_opna_ = std::getenv("HOOT_TRACE_PC98_OPN") != nullptr;
+    trace_opna_limit_ = 512;
+    if (const char* value = std::getenv("HOOT_TRACE_PC98_OPN_LIMIT")) {
+        trace_opna_limit_ = static_cast<uint32_t>(std::max(0L, std::strtol(value, nullptr, 0)));
+    }
+    disable_opn_tl_compat_ = std::getenv("HOOT_DISABLE_OPN_TL_COMPAT") != nullptr;
+    if (ym2608_) {
+        ym2608_->write(0, 0x29);
+        ym2608_->write(1, 0x00);
+    }
 
     if (!setup_memory()) {
         error = "failed to setup PC-98 memory";
@@ -222,6 +245,8 @@ HootResult Pc98DosDriver::select_track(const HootEntry& entry,
     selected_bgm_data_ = bgm->second.data;
     selected_file_offset_ = 0;
     selected_file_open_ = false;
+    rendered_frames_ = 0;
+    trace_opna_events_ = 0;
 
     const auto voice = files_by_slot_.find(voice_slot);
     if (voice != files_by_slot_.end()) {
@@ -264,9 +289,7 @@ void Pc98DosDriver::reset()
     playing_ = false;
     pit_counter_ = 0;
     timer_frames_until_tick_ = 0.0;
-    if (ym2608_) {
-        ym2608_->reset();
-    }
+    reset_opn();
     reset_cpu_context();
 }
 
@@ -294,26 +317,18 @@ int Pc98DosDriver::render_s16(int16_t* interleaved_stereo, int frames)
                 std::max(1, static_cast<int>(std::ceil(timer_frames_until_tick_))),
                 frames - rendered);
             run_cpu_steps(chunk * 8);
-            if (ym2608_) {
-                ym2608_->render_s16(interleaved_stereo + (rendered * 2), chunk);
-            } else {
-                std::fill(interleaved_stereo + (rendered * 2),
-                          interleaved_stereo + ((rendered + chunk) * 2),
-                          int16_t{0});
-            }
+            render_opn(interleaved_stereo + (rendered * 2), chunk);
             timer_frames_until_tick_ -= static_cast<double>(chunk);
             rendered += chunk;
+            rendered_frames_ += static_cast<uint64_t>(chunk);
         }
         return frames;
     }
 
     run_cpu_steps(frames * 8);
 
-    if (ym2608_) {
-        ym2608_->render_s16(interleaved_stereo, frames);
-    } else {
-        std::fill(interleaved_stereo, interleaved_stereo + (frames * 2), int16_t{0});
-    }
+    render_opn(interleaved_stereo, frames);
+    rendered_frames_ += static_cast<uint64_t>(frames);
     return frames;
 }
 
@@ -362,20 +377,17 @@ void Pc98DosDriver::fill_track_info(const HootEntry& entry,
     out.debug_port_writes_02 = static_cast<uint64_t>(debug_fm_keyons_by_channel_[4])
         | (static_cast<uint64_t>(debug_fm_keyons_by_channel_[5]) << 32);
     out.debug_port_writes_03 = debug_opna_ssg_writes_;
-    out.debug_port_writes_32 = static_cast<uint32_t>(opna_registers_[0][0xb0] & 0x07)
-        | (static_cast<uint32_t>(opna_registers_[0][0xb1] & 0x07) << 8)
-        | (static_cast<uint32_t>(opna_registers_[0][0xb2] & 0x07) << 16);
-    uint64_t keyon_mask_summary = 0;
-    for (size_t i = 0; i < 8; ++i) {
-        keyon_mask_summary |= (static_cast<uint64_t>(std::min<uint32_t>(debug_keyon_masks_[i + 8], 0xff)) << (i * 8));
-    }
+    out.debug_port_writes_32 = debug_opna_rhythm_writes_;
     uint32_t tl_summary = 0;
     for (uint8_t ch = 0; ch < 3; ++ch) {
         const uint8_t carrier_tl = static_cast<uint8_t>(opna_registers_[0][0x4c + ch] & 0x7f);
         tl_summary |= static_cast<uint32_t>(carrier_tl) << (ch * 8);
     }
     out.debug_port_writes_44 = tl_summary;
-    out.debug_port_writes_45 = keyon_mask_summary;
+    out.debug_port_writes_45 = static_cast<uint64_t>(debug_opna_rhythm_keyons_)
+        | (static_cast<uint64_t>(debug_opna_rhythm_keyoffs_) << 24)
+        | (static_cast<uint64_t>(debug_last_rhythm_command_) << 48)
+        | (static_cast<uint64_t>(opna_registers_[0][0x11] & 0x3f) << 56);
     copy_c_string(out.driver, name());
     if (track_index >= 0 && static_cast<size_t>(track_index) < entry.tracks.size()) {
         copy_c_string(out.title, entry.tracks[track_index].title);
@@ -401,7 +413,9 @@ void Pc98DosDriver::clear()
     selected_file_open_ = false;
     driver_type_ = DriverType::Unknown;
     cpu_.reset();
+    ym2203_.reset();
     ym2608_.reset();
+    use_ym2203_ = false;
     int_vector_table_.clear();
     dos_memory_.clear();
     sample_rate_ = 44100;
@@ -421,10 +435,19 @@ void Pc98DosDriver::clear()
     debug_opna_bank1_writes_ = 0;
     debug_opna_ssg_writes_ = 0;
     debug_opna_rhythm_writes_ = 0;
+    debug_opna_rhythm_keyons_ = 0;
+    debug_opna_rhythm_keyoffs_ = 0;
+    debug_last_rhythm_command_ = 0;
+    debug_ssg_writes_by_reg_.fill(0);
+    debug_last_ssg_regs_.fill(0);
     debug_fm_keyons_by_channel_.fill(0);
     debug_keyon_masks_.fill(0);
     debug_last_opna_reg_ = 0;
     debug_last_opna_data_ = 0;
+    trace_opna_ = false;
+    trace_opna_events_ = 0;
+    trace_opna_limit_ = 0;
+    rendered_frames_ = 0;
     for (auto& bank : opna_registers_) {
         bank.fill(0);
     }
@@ -526,18 +549,18 @@ void Pc98DosDriver::write_memory_byte(uint32_t address, uint8_t data)
 
 uint8_t Pc98DosDriver::read_io_port(uint16_t port)
 {
-    if (!ym2608_) {
+    if (!ym2203_ && !ym2608_) {
         return 0xFF;
     }
 
     if (port == 0x88 || port == 0x8B || port == 0x188) {
-        return ym2608_->read(0);
+        return read_opn(0);
     }
     if (port == 0x89 || port == 0x8A || port == 0x18A) {
         return opna_registers_[0][current_opna_address_[0]];
     }
     if (port == 0x8C || port == 0x8F || port == 0x18C) {
-        return ym2608_->read(1);
+        return read_opn(2);
     }
     if (port == 0x8D || port == 0x8E || port == 0x18E) {
         return opna_registers_[1][current_opna_address_[1]];
@@ -548,13 +571,13 @@ uint8_t Pc98DosDriver::read_io_port(uint16_t port)
 
 void Pc98DosDriver::write_io_port(uint16_t port, uint8_t data)
 {
-    if (!ym2608_) {
+    if (!ym2203_ && !ym2608_) {
         return;
     }
 
     if (port == 0x88 || port == 0x188) {
         current_opna_address_[0] = data;
-        ym2608_->write(0, data);
+        write_opn(0, data);
     } else if (port == 0x89 || port == 0x8A || port == 0x18A) {
         const uint8_t chip_data = (current_opna_address_[0] >= 0xb4 && current_opna_address_[0] <= 0xb6)
             ? static_cast<uint8_t>(data | 0xc0)
@@ -564,8 +587,34 @@ void Pc98DosDriver::write_io_port(uint16_t port, uint8_t data)
         debug_last_opna_data_ = chip_data;
         if (current_opna_address_[0] < 0x10) {
             ++debug_opna_ssg_writes_;
+            ++debug_ssg_writes_by_reg_[current_opna_address_[0] & 0x0f];
+            debug_last_ssg_regs_[current_opna_address_[0] & 0x0f] = chip_data;
+            if (trace_opna_ && trace_opna_events_ < trace_opna_limit_) {
+                std::fprintf(stderr,
+                             "pc98opn frame=%llu ssg r%02x=%02x regs[6,7,8,9,a,b,c,d]=%02x,%02x,%02x,%02x,%02x,%02x,%02x,%02x\n",
+                             static_cast<unsigned long long>(rendered_frames_),
+                             current_opna_address_[0],
+                             chip_data,
+                             debug_last_ssg_regs_[0x06],
+                             debug_last_ssg_regs_[0x07],
+                             debug_last_ssg_regs_[0x08],
+                             debug_last_ssg_regs_[0x09],
+                             debug_last_ssg_regs_[0x0a],
+                             debug_last_ssg_regs_[0x0b],
+                             debug_last_ssg_regs_[0x0c],
+                             debug_last_ssg_regs_[0x0d]);
+                ++trace_opna_events_;
+            }
         } else if (current_opna_address_[0] < 0x20) {
             ++debug_opna_rhythm_writes_;
+            if (current_opna_address_[0] == 0x10) {
+                debug_last_rhythm_command_ = chip_data;
+                if ((chip_data & 0x80) != 0) {
+                    ++debug_opna_rhythm_keyoffs_;
+                } else if ((chip_data & 0x3f) != 0) {
+                    ++debug_opna_rhythm_keyons_;
+                }
+            }
         }
         if (current_opna_address_[0] == 0x28 && (data & 0xf0) != 0) {
             ++debug_opna_keyons_;
@@ -573,40 +622,114 @@ void Pc98DosDriver::write_io_port(uint16_t port, uint8_t data)
             ++debug_keyon_masks_[(data >> 4) & 0x0f];
             uint8_t channel = data & 0x03;
             if (channel != 3) {
+                const uint8_t base_channel = channel;
                 if ((data & 0x04) != 0) {
                     channel = static_cast<uint8_t>(channel + 3);
                 }
                 ++debug_fm_keyons_by_channel_[channel];
+                if (trace_opna_ && trace_opna_events_ < trace_opna_limit_) {
+                    const uint8_t alg = static_cast<uint8_t>(opna_registers_[0][0xb0 + base_channel] & 0x07);
+                    const uint8_t feedback = static_cast<uint8_t>((opna_registers_[0][0xb0 + base_channel] >> 3) & 0x07);
+                    std::fprintf(stderr,
+                                 "pc98opn frame=%llu fm-keyon cmd=%02x ch=%u alg=%u fb=%u tl=%02x,%02x,%02x,%02x ar=%02x,%02x,%02x,%02x rr=%02x,%02x,%02x,%02x\n",
+                                 static_cast<unsigned long long>(rendered_frames_),
+                                 data,
+                                 channel,
+                                 alg,
+                                 feedback,
+                                 opna_registers_[0][0x40 + base_channel],
+                                 opna_registers_[0][0x44 + base_channel],
+                                 opna_registers_[0][0x48 + base_channel],
+                                 opna_registers_[0][0x4c + base_channel],
+                                 opna_registers_[0][0x50 + base_channel],
+                                 opna_registers_[0][0x54 + base_channel],
+                                 opna_registers_[0][0x58 + base_channel],
+                                 opna_registers_[0][0x5c + base_channel],
+                                 opna_registers_[0][0x80 + base_channel],
+                                 opna_registers_[0][0x84 + base_channel],
+                                 opna_registers_[0][0x88 + base_channel],
+                                 opna_registers_[0][0x8c + base_channel]);
+                    ++trace_opna_events_;
+                }
             }
         } else if (current_opna_address_[0] == 0x28) {
             ++debug_opna_keyoffs_;
             debug_last_key_command_ = data;
         }
         opna_registers_[0][current_opna_address_[0]] = chip_data;
-        ym2608_->write(1, chip_data);
+        write_opn(1, chip_data);
         if ((current_opna_address_[0] >= 0x40 && current_opna_address_[0] <= 0x4e)
             || (current_opna_address_[0] >= 0xb0 && current_opna_address_[0] <= 0xb2)) {
             apply_opn_fm_tl_compat(static_cast<uint8_t>(current_opna_address_[0] & 0x03));
         }
     } else if (port == 0x8C || port == 0x18C) {
         current_opna_address_[1] = data;
-        ym2608_->write(2, data);
+        write_opn(2, data);
     } else if (port == 0x8D || port == 0x8E || port == 0x18E) {
         ++debug_opna_writes_;
         ++debug_opna_bank1_writes_;
         debug_last_opna_reg_ = static_cast<uint16_t>(0x100 | current_opna_address_[1]);
         debug_last_opna_data_ = data;
         opna_registers_[1][current_opna_address_[1]] = data;
-        ym2608_->write(3, data);
+        write_opn(3, data);
     }
 
     if (port == kPitIoport) {
     }
 }
 
+void Pc98DosDriver::write_opn(uint8_t port, uint8_t data)
+{
+    if (ym2203_) {
+        if ((port & 2) != 0) {
+            return;
+        }
+        ym2203_->write(static_cast<uint8_t>(port & 1), data);
+    } else if (ym2608_) {
+        ym2608_->write(static_cast<uint8_t>(port & 3), data);
+    }
+}
+
+uint8_t Pc98DosDriver::read_opn(uint8_t port)
+{
+    if (ym2203_) {
+        if ((port & 2) != 0) {
+            return 0xff;
+        }
+        return ym2203_->read(static_cast<uint8_t>(port & 1));
+    }
+    if (ym2608_) {
+        return ym2608_->read(static_cast<uint8_t>(port & 3));
+    }
+    return 0xff;
+}
+
+void Pc98DosDriver::render_opn(int16_t* interleaved_stereo, int frames)
+{
+    if (ym2203_) {
+        ym2203_->render_s16(interleaved_stereo, frames);
+    } else if (ym2608_) {
+        ym2608_->render_s16(interleaved_stereo, frames);
+    } else if (interleaved_stereo != nullptr && frames > 0) {
+        std::fill(interleaved_stereo, interleaved_stereo + (frames * 2), int16_t{0});
+    }
+}
+
+void Pc98DosDriver::reset_opn()
+{
+    if (ym2203_) {
+        ym2203_->reset();
+    }
+    if (ym2608_) {
+        ym2608_->reset();
+        ym2608_->write(0, 0x29);
+        ym2608_->write(1, 0x00);
+    }
+}
+
 void Pc98DosDriver::apply_opn_fm_tl_compat(uint8_t channel)
 {
-    if (!ym2608_ || channel >= 3) {
+    if (disable_opn_tl_compat_ || (!ym2203_ && !ym2608_) || channel >= 3) {
         return;
     }
 
@@ -615,15 +738,28 @@ void Pc98DosDriver::apply_opn_fm_tl_compat(uint8_t channel)
     if (source_tl >= 0x7f) {
         return;
     }
+    bool changed = false;
 
     const auto lower_tl = [&](uint8_t reg) {
         const uint8_t current = opna_registers_[0][reg] & 0x7f;
         if (current <= source_tl) {
             return;
         }
+        if (trace_opna_ && trace_opna_events_ < trace_opna_limit_) {
+            std::fprintf(stderr,
+                         "pc98opn frame=%llu tl-compat ch=%u alg=%u reg=%02x %02x->%02x\n",
+                         static_cast<unsigned long long>(rendered_frames_),
+                         channel,
+                         algorithm,
+                         reg,
+                         current,
+                         source_tl);
+            ++trace_opna_events_;
+        }
         opna_registers_[0][reg] = source_tl;
-        ym2608_->write(0, reg);
-        ym2608_->write(1, source_tl);
+        write_opn(0, reg);
+        write_opn(1, source_tl);
+        changed = true;
     };
 
     if (algorithm <= 3) {
@@ -635,6 +771,9 @@ void Pc98DosDriver::apply_opn_fm_tl_compat(uint8_t channel)
         lower_tl(static_cast<uint8_t>(0x44 + channel));
         lower_tl(static_cast<uint8_t>(0x48 + channel));
         lower_tl(static_cast<uint8_t>(0x4c + channel));
+    }
+    if (changed) {
+        write_opn(0, current_opna_address_[0]);
     }
 }
 

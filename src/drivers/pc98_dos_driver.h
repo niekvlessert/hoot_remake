@@ -9,6 +9,7 @@
 
 #include "cpu/x86_cpu.h"
 #include "drivers/hoot_driver.h"
+#include "sound/libvgm_ym2203.h"
 #include "sound/libvgm_ym2608.h"
 
 namespace hoot {
@@ -54,6 +55,10 @@ private:
     void write_memory_byte(uint32_t address, uint8_t data);
     uint8_t read_io_port(uint16_t port);
     void write_io_port(uint16_t port, uint8_t data);
+    void write_opn(uint8_t port, uint8_t data);
+    uint8_t read_opn(uint8_t port);
+    void render_opn(int16_t* interleaved_stereo, int frames);
+    void reset_opn();
     void apply_opn_fm_tl_compat(uint8_t channel);
     void handle_interrupt(uint8_t int_num);
     void handle_dos_interrupt();
@@ -83,7 +88,9 @@ private:
     DriverType driver_type_ = DriverType::Unknown;
 
     std::unique_ptr<X86Cpu> cpu_;
+    std::unique_ptr<LibvgmYm2203> ym2203_;
     std::unique_ptr<LibvgmYm2608> ym2608_;
+    bool use_ym2203_ = false;
 
     std::vector<int16_t> mix_buffer_;
 
@@ -109,10 +116,20 @@ private:
     uint32_t debug_opna_bank1_writes_ = 0;
     uint32_t debug_opna_ssg_writes_ = 0;
     uint32_t debug_opna_rhythm_writes_ = 0;
+    uint32_t debug_opna_rhythm_keyons_ = 0;
+    uint32_t debug_opna_rhythm_keyoffs_ = 0;
+    uint8_t debug_last_rhythm_command_ = 0;
+    std::array<uint32_t, 16> debug_ssg_writes_by_reg_{};
+    std::array<uint8_t, 16> debug_last_ssg_regs_{};
     std::array<uint32_t, 6> debug_fm_keyons_by_channel_{};
     std::array<uint32_t, 16> debug_keyon_masks_{};
     uint16_t debug_last_opna_reg_ = 0;
     uint8_t debug_last_opna_data_ = 0;
+    bool trace_opna_ = false;
+    uint32_t trace_opna_events_ = 0;
+    uint32_t trace_opna_limit_ = 0;
+    bool disable_opn_tl_compat_ = false;
+    uint64_t rendered_frames_ = 0;
     std::array<std::array<uint8_t, 256>, 2> opna_registers_{};
     uint32_t debug_file_opens_ = 0;
     uint32_t debug_file_open_matches_ = 0;

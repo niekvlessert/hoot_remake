@@ -1,8 +1,9 @@
 #include "sound/libvgm_ym2203.h"
 
 #include <algorithm>
-#include <cstdlib>
 #include <cmath>
+#include <cstdlib>
+#include <cstring>
 
 extern "C" {
 #define SNDDEV_YM2203
@@ -12,6 +13,50 @@ extern "C" {
 }
 
 namespace hoot {
+namespace {
+
+uint8_t parse_psg_channel_mask()
+{
+    const char* value = std::getenv("HOOT_PSG_CHANNELS");
+    if (value == nullptr) {
+        value = std::getenv("HOOT_PSG_ONLY");
+    }
+    if (value == nullptr || *value == '\0') {
+        return 0x07;
+    }
+
+    uint8_t mask = 0;
+    for (const char* p = value; *p != '\0'; ++p) {
+        switch (*p) {
+        case 'A':
+        case 'a':
+        case '0':
+            mask |= 0x01;
+            break;
+        case 'B':
+        case 'b':
+        case '1':
+            mask |= 0x02;
+            break;
+        case 'C':
+        case 'c':
+        case '2':
+            mask |= 0x04;
+            break;
+        default:
+            break;
+        }
+    }
+    return mask;
+}
+
+bool env_is_zero(const char* name)
+{
+    const char* value = std::getenv(name);
+    return value != nullptr && (std::strcmp(value, "0") == 0 || std::strcmp(value, "false") == 0);
+}
+
+} // namespace
 
 LibvgmYm2203::LibvgmYm2203() = default;
 
@@ -40,6 +85,15 @@ bool LibvgmYm2203::initialize(uint32_t clock, uint32_t sample_rate)
     sample_rate_ = sample_rate;
     ssg_sample_rate_ = 0;
     ssg_phase_ = 0.0;
+    ssg_dc_prev_in_left_ = 0.0;
+    ssg_dc_prev_in_right_ = 0.0;
+    ssg_dc_prev_out_left_ = 0.0;
+    ssg_dc_prev_out_right_ = 0.0;
+    reset_debug_ssg_state();
+    debug_psg_channel_mask_ = parse_psg_channel_mask();
+    debug_psg_disable_tone_ = env_is_zero("HOOT_PSG_TONE");
+    debug_psg_disable_noise_ = env_is_zero("HOOT_PSG_NOISE");
+    debug_psg_raw_dc_ = std::getenv("HOOT_PSG_RAW") != nullptr;
     ssg_gain_ = 0.90;
     if (const char* value = std::getenv("HOOT_PSG_GAIN")) {
         ssg_gain_ = std::clamp(std::strtod(value, nullptr), 0.0, 4.0);
@@ -75,6 +129,11 @@ void LibvgmYm2203::reset()
     if (chip_ != nullptr) {
         ym2203_reset_chip(chip_);
         ssg_phase_ = 0.0;
+        ssg_dc_prev_in_left_ = 0.0;
+        ssg_dc_prev_in_right_ = 0.0;
+        ssg_dc_prev_out_left_ = 0.0;
+        ssg_dc_prev_out_right_ = 0.0;
+        reset_debug_ssg_state();
         update_ssg_sample_rate();
     }
 }
@@ -94,6 +153,11 @@ uint8_t LibvgmYm2203::read(uint8_t port)
     return ym2203_read(chip_, static_cast<uint8_t>(port & 1));
 }
 
+void LibvgmYm2203::set_ssg_gain(double gain)
+{
+    ssg_gain_ = std::clamp(gain, 0.0, 4.0);
+}
+
 void LibvgmYm2203::render_s16(int16_t* interleaved_stereo, int frames)
 {
     if (interleaved_stereo == nullptr || frames <= 0) {
@@ -108,6 +172,10 @@ void LibvgmYm2203::render_s16(int16_t* interleaved_stereo, int frames)
     right_.assign(static_cast<size_t>(frames), 0);
     DEV_SMPL* buffers[2] = {left_.data(), right_.data()};
     ym2203_update_one(chip_, static_cast<UINT32>(frames), buffers);
+    if (std::getenv("HOOT_SOLO_PSG") != nullptr) {
+        std::fill(left_.begin(), left_.end(), 0);
+        std::fill(right_.begin(), right_.end(), 0);
+    }
 
     if (ssg_ != nullptr && ssg_sample_rate_ != 0 && sample_rate_ != 0) {
         const double ratio = static_cast<double>(ssg_sample_rate_) / static_cast<double>(sample_rate_);
@@ -118,15 +186,6 @@ void LibvgmYm2203::render_s16(int16_t* interleaved_stereo, int frames)
             ssg_right_.assign(static_cast<size_t>(ssg_frames), 0);
             DEV_SMPL* ssg_buffers[2] = {ssg_left_.data(), ssg_right_.data()};
             ay8910_update_one(ssg_, static_cast<UINT32>(ssg_frames), ssg_buffers);
-
-            int64_t ssg_left_sum = 0;
-            int64_t ssg_right_sum = 0;
-            for (int i = 0; i < ssg_frames; ++i) {
-                ssg_left_sum += ssg_left_[i];
-                ssg_right_sum += ssg_right_[i];
-            }
-            const auto ssg_left_dc = static_cast<int32_t>(ssg_left_sum / ssg_frames);
-            const auto ssg_right_dc = static_cast<int32_t>(ssg_right_sum / ssg_frames);
 
             for (int i = 0; i < frames; ++i) {
                 const double source_start = ssg_phase_ + (static_cast<double>(i) * ratio);
@@ -145,10 +204,23 @@ void LibvgmYm2203::render_s16(int16_t* interleaved_stereo, int frames)
                         right_sum += ssg_right_[source_index];
                     }
                     const auto count = static_cast<int32_t>(last - first);
-                    const auto ssg_left_sample = static_cast<int32_t>(left_sum / count) - ssg_left_dc;
-                    const auto ssg_right_sample = static_cast<int32_t>(right_sum / count) - ssg_right_dc;
-                    left_[i] += static_cast<int32_t>(std::lround(static_cast<double>(ssg_left_sample) * ssg_gain_));
-                    right_[i] += static_cast<int32_t>(std::lround(static_cast<double>(ssg_right_sample) * ssg_gain_));
+                    const double ssg_left_sample = static_cast<double>(left_sum) / static_cast<double>(count);
+                    const double ssg_right_sample = static_cast<double>(right_sum) / static_cast<double>(count);
+                    double filtered_left = ssg_left_sample;
+                    double filtered_right = ssg_right_sample;
+                    if (!debug_psg_raw_dc_) {
+                        constexpr double kDcBlock = 0.9995;
+                        filtered_left = ssg_left_sample - ssg_dc_prev_in_left_
+                            + (kDcBlock * ssg_dc_prev_out_left_);
+                        filtered_right = ssg_right_sample - ssg_dc_prev_in_right_
+                            + (kDcBlock * ssg_dc_prev_out_right_);
+                        ssg_dc_prev_in_left_ = ssg_left_sample;
+                        ssg_dc_prev_in_right_ = ssg_right_sample;
+                        ssg_dc_prev_out_left_ = filtered_left;
+                        ssg_dc_prev_out_right_ = filtered_right;
+                    }
+                    left_[i] += static_cast<int32_t>(std::lround(filtered_left * ssg_gain_));
+                    right_[i] += static_cast<int32_t>(std::lround(filtered_right * ssg_gain_));
                 }
             }
             ssg_phase_ = end_phase - static_cast<double>(ssg_frames);
@@ -178,6 +250,7 @@ void LibvgmYm2203::write_ssg(void* param, uint8_t address, uint8_t data)
 {
     auto* self = static_cast<LibvgmYm2203*>(param);
     if (self->ssg_ != nullptr) {
+        data = self->filter_debug_ssg_write(address, data);
         ay8910_write(self->ssg_, address, data);
     }
 }
@@ -197,8 +270,50 @@ void LibvgmYm2203::reset_ssg(void* param)
     if (self->ssg_ != nullptr) {
         ay8910_reset(self->ssg_);
         self->ssg_phase_ = 0.0;
+        self->ssg_dc_prev_in_left_ = 0.0;
+        self->ssg_dc_prev_in_right_ = 0.0;
+        self->ssg_dc_prev_out_left_ = 0.0;
+        self->ssg_dc_prev_out_right_ = 0.0;
+        self->reset_debug_ssg_state();
         self->update_ssg_sample_rate();
     }
+}
+
+void LibvgmYm2203::reset_debug_ssg_state()
+{
+    debug_ssg_latch_ = 0;
+    debug_ssg_regs_.fill(0);
+}
+
+uint8_t LibvgmYm2203::filter_debug_ssg_write(uint8_t address, uint8_t data)
+{
+    if ((address & 1) == 0) {
+        debug_ssg_latch_ = static_cast<uint8_t>(data & 0x0f);
+        return data;
+    }
+
+    const uint8_t reg = debug_ssg_latch_;
+    uint8_t filtered = data;
+    if (reg == 7) {
+        for (uint8_t channel = 0; channel < 3; ++channel) {
+            if ((debug_psg_channel_mask_ & (1u << channel)) == 0) {
+                filtered = static_cast<uint8_t>(filtered | (1u << channel) | (1u << (channel + 3)));
+            }
+        }
+        if (debug_psg_disable_tone_) {
+            filtered = static_cast<uint8_t>(filtered | 0x07);
+        }
+        if (debug_psg_disable_noise_) {
+            filtered = static_cast<uint8_t>(filtered | 0x38);
+        }
+    } else if (reg >= 8 && reg <= 10) {
+        const uint8_t channel = static_cast<uint8_t>(reg - 8);
+        if ((debug_psg_channel_mask_ & (1u << channel)) == 0) {
+            filtered = 0;
+        }
+    }
+    debug_ssg_regs_[reg] = filtered;
+    return filtered;
 }
 
 void LibvgmYm2203::update_ssg_sample_rate()
