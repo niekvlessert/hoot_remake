@@ -92,6 +92,7 @@ public:
     uint8_t* memory() { return memory_.data(); }
 
     bool is_halted() const { return halted_; }
+    void halt() { halted_ = true; }
     void clear_halted() { halted_ = false; }
     uint8_t last_unsupported_opcode() const { return last_unsupported_opcode_; }
     uint16_t last_unsupported_cs() const { return last_unsupported_cs_; }

@@ -1,6 +1,7 @@
 #pragma once
 
 #include <cstdint>
+#include <array>
 #include <map>
 #include <memory>
 #include <string>
@@ -53,10 +54,21 @@ private:
     void write_memory_byte(uint32_t address, uint8_t data);
     uint8_t read_io_port(uint16_t port);
     void write_io_port(uint16_t port, uint8_t data);
+    void apply_opn_fm_tl_compat(uint8_t channel);
     void handle_interrupt(uint8_t int_num);
+    void handle_dos_interrupt();
+    std::string read_dos_string(uint16_t segment, uint16_t offset) const;
+    void dos_open_file();
+    void dos_read_file();
+    void dos_close_file();
     void pit_timer_tick();
     void reset_cpu_context();
     void run_cpu_steps(int steps);
+    void push_cpu_word(uint16_t value);
+    void setup_interrupt_vector(uint8_t vector, uint16_t segment, uint16_t offset);
+    void trigger_interrupt_vector(uint8_t vector, int steps = 200000);
+    void install_shell_driver();
+    void call_shell_player_api(uint16_t ax, uint16_t ds = 0, uint16_t dx = 0);
     bool is_playing() const { return playing_; }
 
     std::map<uint32_t, LoadedFile> files_by_slot_;
@@ -64,6 +76,10 @@ private:
     std::vector<uint8_t> shell_command_;
     std::string selected_bgm_path_;
     std::string selected_voice_path_;
+    std::vector<uint8_t> selected_bgm_data_;
+    size_t selected_file_offset_ = 0;
+    uint16_t selected_file_handle_ = 5;
+    bool selected_file_open_ = false;
     DriverType driver_type_ = DriverType::Unknown;
 
     std::unique_ptr<X86Cpu> cpu_;
@@ -84,9 +100,33 @@ private:
     uint32_t pit_rate_ = 0;
     uint32_t pit_target_ = 0;
     uint64_t executed_cpu_steps_ = 0;
+    double timer_frames_until_tick_ = 0.0;
+    uint8_t current_opna_address_[2] = {0, 0};
+    uint32_t debug_opna_writes_ = 0;
+    uint32_t debug_opna_keyons_ = 0;
+    uint32_t debug_opna_keyoffs_ = 0;
+    uint8_t debug_last_key_command_ = 0;
+    uint32_t debug_opna_bank1_writes_ = 0;
+    uint32_t debug_opna_ssg_writes_ = 0;
+    uint32_t debug_opna_rhythm_writes_ = 0;
+    std::array<uint32_t, 6> debug_fm_keyons_by_channel_{};
+    std::array<uint32_t, 16> debug_keyon_masks_{};
+    uint16_t debug_last_opna_reg_ = 0;
+    uint8_t debug_last_opna_data_ = 0;
+    std::array<std::array<uint8_t, 256>, 2> opna_registers_{};
+    uint32_t debug_file_opens_ = 0;
+    uint32_t debug_file_open_matches_ = 0;
+    uint32_t debug_file_reads_ = 0;
+    uint32_t debug_last_open_name_ = 0;
 
     static constexpr uint32_t kDosMemorySize = 64 * 1024;
+    static constexpr uint16_t kProgramSegment = 0x1000;
     static constexpr uint32_t kDosEntryPoint = 0x0100;
+    static constexpr uint16_t kIretOffset = 0x00f0;
+    static constexpr uint16_t kHaltOffset = 0x00f1;
+    static constexpr uint16_t kBridgeBufferOffset = 0x0174;
+    static constexpr uint16_t kResidentDataOffset = 0x4000;
+    static constexpr uint16_t kTransferOffset = 0x8000;
     static constexpr uint16_t kPitIoport = 0x0080;
     static constexpr uint8_t kYm2608Clock = 8;
 };

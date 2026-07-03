@@ -1,4 +1,5 @@
 #include <cstdlib>
+#include <cmath>
 #include <iostream>
 #include <memory>
 #include <string>
@@ -205,6 +206,17 @@ int main(int argc, char** argv)
         if (hoot_get_track_info(ctx.get(), &info) == HOOT_OK) {
             print_track_info(options, info);
         }
+        int peak = 0;
+        long double sum_squares = 0.0;
+        for (const auto sample : pcm) {
+            const int value = std::abs(static_cast<int>(sample));
+            peak = std::max(peak, value);
+            sum_squares += static_cast<long double>(sample) * static_cast<long double>(sample);
+        }
+        const auto rms = pcm.empty()
+            ? 0.0L
+            : std::sqrt(sum_squares / static_cast<long double>(pcm.size()));
+        std::cerr << "audio peak=" << peak << " rms=" << static_cast<double>(rms) << "\n";
         std::cerr << "wrote " << options.out << " (" << frames << " frames)\n";
     }
     return 0;
