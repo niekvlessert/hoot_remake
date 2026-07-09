@@ -2,6 +2,7 @@
 
 #include <cstdint>
 #include <array>
+#include <fstream>
 #include <map>
 #include <memory>
 #include <string>
@@ -40,6 +41,11 @@ private:
         std::vector<uint8_t> data;
     };
 
+    struct ShellProgram {
+        std::string command;
+        std::vector<uint8_t> data;
+    };
+
     enum class DriverType {
         Unknown,
         PMD,
@@ -67,25 +73,49 @@ private:
     void dos_read_file();
     void dos_close_file();
     void pit_timer_tick();
-    void reset_cpu_context();
+    void reset_cpu_context(uint16_t segment = kProgramSegment);
     void run_cpu_steps(int steps);
     void push_cpu_word(uint16_t value);
     void setup_interrupt_vector(uint8_t vector, uint16_t segment, uint16_t offset);
+    bool is_interrupt_vector_active(uint8_t vector);
     void trigger_interrupt_vector(uint8_t vector, int steps = 200000);
+    void trigger_async_interrupt_vector(uint8_t vector, int steps = 256);
+    void trigger_near_subroutine(uint16_t segment, uint16_t offset, int steps = 200000);
     void install_shell_driver();
+    void load_shell_program(const ShellProgram& program, uint16_t segment);
+    void setup_shell_psp(const std::string& command, uint16_t segment);
+    void run_shell_program(const ShellProgram& program, uint16_t segment, int steps = 2000000);
     void call_shell_player_api(uint16_t ax, uint16_t ds = 0, uint16_t dx = 0);
+    void load_hhd98_track();
+    void emit_trace_event(const std::string& json);
+    void trace_cpu_event(const char* type,
+                         uint8_t opcode,
+                         uint16_t from_cs,
+                         uint16_t from_ip,
+                         uint16_t to_cs,
+                         uint16_t to_ip);
+    void trace_io_event(const char* type, uint16_t port, uint8_t value);
+    void trace_interrupt_event(uint8_t int_num);
     bool is_playing() const { return playing_; }
 
     std::map<uint32_t, LoadedFile> files_by_slot_;
     std::vector<uint8_t> driver_data_;
     std::vector<uint8_t> shell_command_;
+    std::vector<ShellProgram> shell_programs_;
     std::string selected_bgm_path_;
     std::string selected_voice_path_;
     std::vector<uint8_t> selected_bgm_data_;
     size_t selected_file_offset_ = 0;
     uint16_t selected_file_handle_ = 5;
     bool selected_file_open_ = false;
+    bool bridge_load_pending_ = false;
+    bool bridge_command_active_ = false;
+    uint8_t bridge_command_ = 0xff;
+    uint16_t bridge_argument_ = 0xffff;
     DriverType driver_type_ = DriverType::Unknown;
+    bool uses_hhd98_bridge_ = false;
+    bool uses_pmd98_bridge_ = false;
+    uint8_t function_vector_ = 0x7f;
 
     std::unique_ptr<X86Cpu> cpu_;
     std::unique_ptr<LibvgmYm2203> ym2203_;
@@ -135,6 +165,15 @@ private:
     uint32_t debug_file_open_matches_ = 0;
     uint32_t debug_file_reads_ = 0;
     uint32_t debug_last_open_name_ = 0;
+    uint16_t dos_alloc_segment_ = 0x2000;
+    size_t installed_shell_programs_ = 0;
+    bool trace_dos_ = false;
+    std::ofstream trace_file_;
+    uint32_t trace_events_ = 0;
+    uint32_t trace_event_limit_ = 0;
+    bool trace_pc98_ = false;
+    bool shell_async_interrupts_ = false;
+    bool suppress_async_interrupts_ = false;
 
     static constexpr uint32_t kDosMemorySize = 64 * 1024;
     static constexpr uint16_t kProgramSegment = 0x1000;

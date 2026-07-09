@@ -1,6 +1,8 @@
 #include "cpu/x86_cpu.h"
 
 #include <algorithm>
+#include <cstdio>
+#include <cstdlib>
 #include <cstring>
 #include <utility>
 
@@ -58,6 +60,11 @@ void X86Cpu::set_io_write_callback(IoWriteCallback cb)
 void X86Cpu::set_interrupt_callback(InterruptCallback cb)
 {
     interrupt_ = std::move(cb);
+}
+
+void X86Cpu::set_trace_callback(TraceCallback cb)
+{
+    trace_ = std::move(cb);
 }
 
 void X86Cpu::reset()
@@ -591,7 +598,22 @@ void X86Cpu::jump_short_if(bool condition)
 {
     const int8_t disp = static_cast<int8_t>(fetch_byte());
     if (condition) {
+        const uint16_t from_ip = static_cast<uint16_t>(ip_ - 2);
+        const uint16_t to_ip = static_cast<uint16_t>(ip_ + disp);
+        trace_control_flow("jmp", read_byte(get_linear(cs_, from_ip)), cs_, from_ip, cs_, to_ip);
         ip_ = static_cast<uint16_t>(ip_ + disp);
+    }
+}
+
+void X86Cpu::trace_control_flow(const char* type,
+                                uint8_t opcode,
+                                uint16_t from_cs,
+                                uint16_t from_ip,
+                                uint16_t to_cs,
+                                uint16_t to_ip)
+{
+    if (trace_) {
+        trace_(type, opcode, from_cs, from_ip, to_cs, to_ip);
     }
 }
 
@@ -1011,9 +1033,38 @@ void X86Cpu::execute_one()
         ax_ = pop();
         break;
     }
+    case 0x62: { // BOUND r16,m16&16
+        const uint8_t modrm = fetch_byte();
+        const uint8_t reg = (modrm >> 3) & 7;
+        const auto rm = decode_rm(modrm);
+        if (!rm.is_register) {
+            const int16_t value = static_cast<int16_t>(reg16(reg));
+            const int16_t lower = static_cast<int16_t>(read_word(rm.address));
+            const int16_t upper = static_cast<int16_t>(read_word(rm.address + 2));
+            if (value < lower || value > upper) {
+                do_int(5);
+            }
+        }
+        break;
+    }
     case 0x68:
         push(fetch_word());
         break;
+    case 0x69: case 0x6B: {
+        const uint8_t modrm = fetch_byte();
+        const uint8_t reg = (modrm >> 3) & 7;
+        const auto rm = decode_rm(modrm);
+        const int16_t lhs = static_cast<int16_t>(read_rm16(rm));
+        const int16_t rhs = opcode == 0x69
+            ? static_cast<int16_t>(fetch_word())
+            : static_cast<int16_t>(sign_extend8(fetch_byte()));
+        const int32_t product = static_cast<int32_t>(lhs) * static_cast<int32_t>(rhs);
+        reg16(reg) = static_cast<uint16_t>(product);
+        const bool overflow = product < -32768 || product > 32767;
+        set_carry(overflow);
+        set_overflow(overflow);
+        break;
+    }
     case 0x6A:
         push(sign_extend8(fetch_byte()));
         break;
@@ -1024,7 +1075,12 @@ void X86Cpu::execute_one()
         const int step = string_step() * (word ? 2 : 1);
         for (uint16_t i = 0; i < count; ++i) {
             if (input) {
-                const uint16_t value = read_io_ ? read_io_(dx_) : 0xffff;
+                const uint16_t value = read_io_
+                    ? (word
+                        ? static_cast<uint16_t>(read_io_(dx_)
+                            | (read_io_(static_cast<uint16_t>(dx_ + 1)) << 8))
+                        : read_io_(dx_))
+                    : 0xffff;
                 if (word) {
                     write_word(get_linear(es_, di_), value);
                 } else {
@@ -1081,6 +1137,22 @@ void X86Cpu::execute_one()
                 result = static_cast<uint8_t>(r);
                 write_rm8(rm, result);
                 update_flags_add_8(old, imm, r);
+            } else if (op == 1) {
+                result = static_cast<uint8_t>(old | imm);
+                write_rm8(rm, result);
+                update_logic_flags_8(result);
+            } else if (op == 2) {
+                const uint8_t carry = get_carry() ? 1 : 0;
+                const uint16_t r = static_cast<uint16_t>(old) + imm + carry;
+                result = static_cast<uint8_t>(r);
+                write_rm8(rm, result);
+                update_flags_add_8(old, static_cast<uint8_t>(imm + carry), r);
+            } else if (op == 3) {
+                const uint8_t carry = get_carry() ? 1 : 0;
+                const uint16_t r = static_cast<uint16_t>(old) - imm - carry;
+                result = static_cast<uint8_t>(r);
+                write_rm8(rm, result);
+                update_flags_sub_8(old, static_cast<uint8_t>(imm + carry), r);
             } else if (op == 4) {
                 result = static_cast<uint8_t>(old & imm);
                 write_rm8(rm, result);
@@ -1090,6 +1162,10 @@ void X86Cpu::execute_one()
                 result = static_cast<uint8_t>(r);
                 if (op == 5) write_rm8(rm, result);
                 update_flags_sub_8(old, imm, r);
+            } else if (op == 6) {
+                result = static_cast<uint8_t>(old ^ imm);
+                write_rm8(rm, result);
+                update_logic_flags_8(result);
             }
         } else {
             const uint16_t old = read_rm16(rm);
@@ -1098,6 +1174,20 @@ void X86Cpu::execute_one()
                 const uint32_t r = static_cast<uint32_t>(old) + imm;
                 write_rm16(rm, static_cast<uint16_t>(r));
                 update_flags_add_16(old, imm, r);
+            } else if (op == 1) {
+                const uint16_t r = static_cast<uint16_t>(old | imm);
+                write_rm16(rm, r);
+                update_logic_flags_16(r);
+            } else if (op == 2) {
+                const uint16_t carry = get_carry() ? 1 : 0;
+                const uint32_t r = static_cast<uint32_t>(old) + imm + carry;
+                write_rm16(rm, static_cast<uint16_t>(r));
+                update_flags_add_16(old, static_cast<uint16_t>(imm + carry), r);
+            } else if (op == 3) {
+                const uint16_t carry = get_carry() ? 1 : 0;
+                const uint32_t r = static_cast<uint32_t>(old) - imm - carry;
+                write_rm16(rm, static_cast<uint16_t>(r));
+                update_flags_sub_16(old, static_cast<uint16_t>(imm + carry), r);
             } else if (op == 4) {
                 const uint16_t r = static_cast<uint16_t>(old & imm);
                 write_rm16(rm, r);
@@ -1106,6 +1196,10 @@ void X86Cpu::execute_one()
                 const uint32_t r = static_cast<uint32_t>(old) - imm;
                 if (op == 5) write_rm16(rm, static_cast<uint16_t>(r));
                 update_flags_sub_16(old, imm, r);
+            } else if (op == 6) {
+                const uint16_t r = static_cast<uint16_t>(old ^ imm);
+                write_rm16(rm, r);
+                update_logic_flags_16(r);
             }
         }
         break;
@@ -1194,6 +1288,8 @@ void X86Cpu::execute_one()
         break;
     case 0x99: // CWD
         dx_ = (ax_ & 0x8000) ? 0xFFFF : 0x0000;
+        break;
+    case 0x9B: // WAIT/FWAIT
         break;
     case 0x9C:
         push(flags_);
@@ -1325,13 +1421,20 @@ void X86Cpu::execute_one()
 
     case 0xC2: {
         const uint16_t imm = fetch_word();
+        const uint16_t old_cs = cs_;
+        const uint16_t old_ip = opcode_ip;
         ip_ = pop();
+        trace_control_flow("ret", opcode, old_cs, old_ip, cs_, ip_);
         sp_ = static_cast<uint16_t>(sp_ + imm);
         break;
     }
-    case 0xC3:
+    case 0xC3: {
+        const uint16_t old_cs = cs_;
+        const uint16_t old_ip = opcode_ip;
         ip_ = pop();
+        trace_control_flow("ret", opcode, old_cs, old_ip, cs_, ip_);
         break;
+    }
     case 0xC4: case 0xC5: { // LES/LDS r16,m16:16
         const uint8_t modrm = fetch_byte();
         const uint8_t reg = (modrm >> 3) & 7;
@@ -1375,15 +1478,22 @@ void X86Cpu::execute_one()
         break;
     case 0xCA: {
         const uint16_t imm = fetch_word();
+        const uint16_t old_cs = cs_;
+        const uint16_t old_ip = opcode_ip;
         ip_ = pop();
         cs_ = pop();
+        trace_control_flow("retf", opcode, old_cs, old_ip, cs_, ip_);
         sp_ = static_cast<uint16_t>(sp_ + imm);
         break;
     }
-    case 0xCB:
+    case 0xCB: {
+        const uint16_t old_cs = cs_;
+        const uint16_t old_ip = opcode_ip;
         ip_ = pop();
         cs_ = pop();
+        trace_control_flow("retf", opcode, old_cs, old_ip, cs_, ip_);
         break;
+    }
     case 0xCC:
         do_int(3);
         break;
@@ -1396,10 +1506,15 @@ void X86Cpu::execute_one()
         }
         break;
     case 0xCF:
+    {
+        const uint16_t old_cs = cs_;
+        const uint16_t old_ip = opcode_ip;
         ip_ = pop();
         cs_ = pop();
         flags_ = pop();
+        trace_control_flow("iret", opcode, old_cs, old_ip, cs_, ip_);
         break;
+    }
 
     case 0xC0: case 0xC1: case 0xD0: case 0xD1: case 0xD2: case 0xD3: {
         const uint8_t modrm = fetch_byte();
@@ -1417,12 +1532,34 @@ void X86Cpu::execute_one()
         }
         break;
     }
+    case 0xD4: { // AAM imm8
+        const uint8_t base = fetch_byte();
+        if (base == 0) {
+            do_int(0);
+            break;
+        }
+        const uint8_t value = get_al();
+        set_ah(static_cast<uint8_t>(value / base));
+        set_al(static_cast<uint8_t>(value % base));
+        update_logic_flags_8(get_al());
+        break;
+    }
+    case 0xD5: { // AAD imm8
+        const uint8_t base = fetch_byte();
+        set_al(static_cast<uint8_t>(get_al() + (get_ah() * base)));
+        set_ah(0);
+        update_logic_flags_8(get_al());
+        break;
+    }
     case 0xD8: case 0xD9: case 0xDA: case 0xDB:
     case 0xDC: case 0xDD: case 0xDE: case 0xDF:
         (void)decode_rm(fetch_byte());
         break;
     case 0xD7: // XLAT
         set_al(read_byte(get_linear(effective_data_segment(), static_cast<uint16_t>(bx_ + get_al()))));
+        break;
+    case 0xD6: // SALC (undocumented 8086): AL = CF ? 0xff : 0x00
+        set_al(get_carry() ? 0xff : 0x00);
         break;
 
     case 0xE4: {
@@ -1432,7 +1569,9 @@ void X86Cpu::execute_one()
     }
     case 0xE5: {
         const uint8_t port = fetch_byte();
-        set_ax(read_io_ ? read_io_(port) : 0xFFFF);
+        set_ax(read_io_
+            ? static_cast<uint16_t>(read_io_(port) | (read_io_(static_cast<uint8_t>(port + 1)) << 8))
+            : 0xFFFF);
         break;
     }
     case 0xE6: {
@@ -1450,13 +1589,17 @@ void X86Cpu::execute_one()
     }
     case 0xE8: {
         const int16_t disp = static_cast<int16_t>(fetch_word());
+        const uint16_t return_ip = ip_;
         push(ip_);
         ip_ = static_cast<uint16_t>(ip_ + disp);
+        (void)return_ip;
+        trace_control_flow("call", opcode, cs_, opcode_ip, cs_, ip_);
         break;
     }
     case 0xE9: {
         const int16_t disp = static_cast<int16_t>(fetch_word());
         ip_ = static_cast<uint16_t>(ip_ + disp);
+        trace_control_flow("jmp", opcode, cs_, opcode_ip, cs_, ip_);
         break;
     }
     case 0xE0: case 0xE1: case 0xE2: case 0xE3: {
@@ -1480,9 +1623,12 @@ void X86Cpu::execute_one()
         break;
     }
     case 0xEA: {
+        const uint16_t old_cs = cs_;
+        const uint16_t old_ip = opcode_ip;
         const uint16_t off = fetch_word();
         const uint16_t seg = fetch_word();
         set_cs_ip(seg, off);
+        trace_control_flow("jmpf", opcode, old_cs, old_ip, cs_, ip_);
         break;
     }
     case 0xEB:
@@ -1492,7 +1638,9 @@ void X86Cpu::execute_one()
         set_al(read_io_ ? read_io_(dx_) : 0xFF);
         break;
     case 0xED:
-        set_ax(read_io_ ? read_io_(dx_) : 0xFFFF);
+        set_ax(read_io_
+            ? static_cast<uint16_t>(read_io_(dx_) | (read_io_(static_cast<uint16_t>(dx_ + 1)) << 8))
+            : 0xFFFF);
         break;
     case 0xEE:
         if (write_io_) write_io_(dx_, get_al());
@@ -1588,8 +1736,8 @@ void X86Cpu::execute_one()
         }
         break;
     }
-    case 0xF8: set_carry(true); break;
-    case 0xF9: set_carry(false); break;
+    case 0xF8: set_carry(false); break;
+    case 0xF9: set_carry(true); break;
     case 0xFA: set_interrupt_flag(false); break;
     case 0xFB: set_interrupt_flag(true); break;
     case 0xFC: set_direction(false); break;
@@ -1636,20 +1784,32 @@ void X86Cpu::execute_one()
             case 2:
                 push(ip_);
                 ip_ = old;
+                trace_control_flow("call", opcode, cs_, opcode_ip, cs_, ip_);
                 break;
             case 3:
+            {
+                const uint16_t old_cs = cs_;
+                const uint16_t old_ip = opcode_ip;
                 push(cs_);
                 push(ip_);
                 ip_ = old;
                 cs_ = rm.is_register ? cs_ : read_word(rm.address + 2);
+                trace_control_flow("callf", opcode, old_cs, old_ip, cs_, ip_);
                 break;
+            }
             case 4:
                 ip_ = old;
+                trace_control_flow("jmp", opcode, cs_, opcode_ip, cs_, ip_);
                 break;
             case 5:
+            {
+                const uint16_t old_cs = cs_;
+                const uint16_t old_ip = opcode_ip;
                 ip_ = old;
                 cs_ = rm.is_register ? cs_ : read_word(rm.address + 2);
+                trace_control_flow("jmpf", opcode, old_cs, old_ip, cs_, ip_);
                 break;
+            }
             case 6:
                 push(old);
                 break;
@@ -1665,6 +1825,33 @@ void X86Cpu::execute_one()
         last_unsupported_cs_ = cs_;
         last_unsupported_ip_ = opcode_ip;
         ++unsupported_count_;
+        trace_control_flow("unsupported", opcode, cs_, opcode_ip, cs_, ip_);
+        if (std::getenv("HOOT_TRACE_X86_UNSUPPORTED") != nullptr) {
+            std::fprintf(stderr,
+                         "x86 unsupported opcode=%02x at %04x:%04x linear=%05x bytes=%02x %02x %02x %02x "
+                         "ax=%04x bx=%04x cx=%04x dx=%04x si=%04x di=%04x bp=%04x sp=%04x ss=%04x "
+                         "stack=%04x %04x %04x\n",
+                         opcode,
+                         cs_,
+                         opcode_ip,
+                         get_linear(cs_, opcode_ip),
+                         read_byte(get_linear(cs_, opcode_ip)),
+                         read_byte(get_linear(cs_, static_cast<uint16_t>(opcode_ip + 1))),
+                         read_byte(get_linear(cs_, static_cast<uint16_t>(opcode_ip + 2))),
+                         read_byte(get_linear(cs_, static_cast<uint16_t>(opcode_ip + 3))),
+                         ax_,
+                         bx_,
+                         cx_,
+                         dx_,
+                         si_,
+                         di_,
+                         bp_,
+                         sp_,
+                         ss_,
+                         read_word(get_linear(ss_, sp_)),
+                         read_word(get_linear(ss_, static_cast<uint16_t>(sp_ + 2))),
+                         read_word(get_linear(ss_, static_cast<uint16_t>(sp_ + 4))));
+        }
         halted_ = true;
         break;
     }

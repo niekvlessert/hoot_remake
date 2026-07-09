@@ -32,7 +32,7 @@ public:
     void write_memory_8(uint32_t address, uint8_t data);
 
 private:
-    static constexpr size_t kRomSize = 0x100000;
+    static constexpr size_t kRomSize = 0x200000;
     static constexpr size_t kRamSize = 0x10000;
     static constexpr size_t kScratchSize = 0x100000;
 

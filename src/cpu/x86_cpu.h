@@ -13,6 +13,12 @@ public:
     using IoReadCallback = std::function<uint8_t(uint16_t port)>;
     using IoWriteCallback = std::function<void(uint16_t port, uint8_t data)>;
     using InterruptCallback = std::function<void(uint8_t int_num)>;
+    using TraceCallback = std::function<void(const char* type,
+                                             uint8_t opcode,
+                                             uint16_t from_cs,
+                                             uint16_t from_ip,
+                                             uint16_t to_cs,
+                                             uint16_t to_ip)>;
 
     X86Cpu();
     ~X86Cpu() = default;
@@ -22,6 +28,7 @@ public:
     void set_io_read_callback(IoReadCallback cb);
     void set_io_write_callback(IoWriteCallback cb);
     void set_interrupt_callback(InterruptCallback cb);
+    void set_trace_callback(TraceCallback cb);
 
     void reset();
     int execute(int cycles);
@@ -94,6 +101,13 @@ public:
     bool is_halted() const { return halted_; }
     void halt() { halted_ = true; }
     void clear_halted() { halted_ = false; }
+    void clear_unsupported_status()
+    {
+        last_unsupported_opcode_ = 0;
+        last_unsupported_cs_ = 0;
+        last_unsupported_ip_ = 0;
+        unsupported_count_ = 0;
+    }
     uint8_t last_unsupported_opcode() const { return last_unsupported_opcode_; }
     uint16_t last_unsupported_cs() const { return last_unsupported_cs_; }
     uint16_t last_unsupported_ip() const { return last_unsupported_ip_; }
@@ -154,6 +168,12 @@ private:
     void update_logic_flags_16(uint16_t result);
     void set_parity_from_byte(uint8_t result);
     void jump_short_if(bool condition);
+    void trace_control_flow(const char* type,
+                            uint8_t opcode,
+                            uint16_t from_cs,
+                            uint16_t from_ip,
+                            uint16_t to_cs,
+                            uint16_t to_ip);
 
     uint16_t cs_ = 0;
     uint16_t ip_ = 0;
@@ -191,6 +211,7 @@ private:
     IoReadCallback read_io_;
     IoWriteCallback write_io_;
     InterruptCallback interrupt_;
+    TraceCallback trace_;
 
     std::vector<uint8_t> memory_;
 };

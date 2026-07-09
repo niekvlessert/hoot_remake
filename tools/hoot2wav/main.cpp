@@ -23,6 +23,7 @@ struct Options {
     bool list = false;
     bool verbose = false;
     std::string trace_xak2;
+    std::string trace_pc98;
     int trace_limit = 0;
 };
 
@@ -32,7 +33,8 @@ void usage()
         << "usage: hoot2wav --catalog <path> [--packs <path>] [--entry <id>]\n"
         << "                [--track <n>] [--seconds <n>] [--rate <hz>]\n"
         << "                [--out <path>] [--list] [--verbose]\n"
-        << "                [--trace-xak2 <path>] [--trace-limit <n>]\n";
+        << "                [--trace-xak2 <path>] [--trace-pc98 <path>]\n"
+        << "                [--trace-limit <n>]\n";
 }
 
 bool need_value(int argc, char** argv, int index)
@@ -68,6 +70,8 @@ bool parse_options(int argc, char** argv, Options& options)
             options.verbose = true;
         } else if (arg == "--trace-xak2" && need_value(argc, argv, i)) {
             options.trace_xak2 = argv[++i];
+        } else if (arg == "--trace-pc98" && need_value(argc, argv, i)) {
+            options.trace_pc98 = argv[++i];
         } else if (arg == "--trace-limit" && need_value(argc, argv, i)) {
             options.trace_limit = std::atoi(argv[++i]);
         } else if (arg == "--help" || arg == "-h") {
@@ -164,6 +168,12 @@ int main(int argc, char** argv)
         setenv("HOOT_XAK2_TRACE", options.trace_xak2.c_str(), 1);
         if (options.trace_limit > 0) {
             setenv("HOOT_XAK2_TRACE_LIMIT", std::to_string(options.trace_limit).c_str(), 1);
+        }
+    }
+    if (!options.trace_pc98.empty()) {
+        setenv("HOOT_PC98_TRACE", options.trace_pc98.c_str(), 1);
+        if (options.trace_limit > 0) {
+            setenv("HOOT_PC98_TRACE_LIMIT", std::to_string(options.trace_limit).c_str(), 1);
         }
     }
 
