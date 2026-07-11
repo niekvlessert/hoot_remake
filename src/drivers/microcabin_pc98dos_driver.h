@@ -77,10 +77,13 @@ private:
     bool loaded_ = false;
     bool playing_ = false;
     bool command_pending_ = false;
+    bool mmd2_api_ = false;
+    bool early_mmd2_layout_ = false;
     uint8_t command_latch_ = 0;
     uint8_t command_low_ = 0xff;
     uint8_t command_high_ = 0xff;
     uint8_t selected_file_handle_ = 1;
+    uint8_t mmd_timer_vector_ = 0;
     size_t selected_file_offset_ = 0;
     double mmd_timer_frames_until_tick_ = 0.0;
     uint64_t executed_cpu_steps_ = 0;

@@ -291,9 +291,11 @@ std::vector<uint8_t> expand_opmdrv_compact_voice(const std::vector<uint8_t>& dat
 
 extern "C" {
 
-signed int my_irqh_callback(signed int)
+signed int my_irqh_callback(signed int level)
 {
-    return M68K_INT_ACK_AUTOVECTOR;
+    return hoot::g_active_driver != nullptr
+        ? hoot::g_active_driver->acknowledge_interrupt(level)
+        : M68K_INT_ACK_AUTOVECTOR;
 }
 
 uint32_t m68k_read_memory_8(uint32_t address)
@@ -529,20 +531,31 @@ HootResult X68kGenericDriver::select_track(const HootEntry& entry,
         return HOOT_ERROR_INVALID_ARGUMENT;
     }
 
-    // Hootplay keeps one driver instance alive while navigating tracks.  The
-    // X68k resident driver does not guarantee that a new mailbox command
-    // fully stops the previous sequence, so restart the machine and chips at
-    // each selection to avoid stale notes/ADPCM state leaking into the cue.
-    reset();
+    const auto reset_on_track = entry.options.find("reset_on_track");
+    const bool restart_machine = reset_on_track != entry.options.end()
+        && reset_on_track->second != 0;
+    if (restart_machine) {
+        reset();
+    } else if (has_selected_track_) {
+        const auto stop = entry.options.find("stop");
+        if (stop != entry.options.end()) {
+            mailbox_code_ = static_cast<uint16_t>(stop->second);
+            mailbox_flag_ = 0x01;
+            g_active_driver = this;
+            execute_with_audio_clock(100000.0 / cpu_clock_hz_);
+        }
+    }
     select_voice_bank(entry, track_index);
     diagnose_opmdrv_voices(entry, track_index);
     selected_track_ = track_index;
     selected_code_ = entry.tracks[track_index].code;
     uint32_t command_code = selected_code_;
+
     mailbox_code_ = static_cast<uint16_t>(command_code);
     mailbox_flag_ = 0x01;
     g_active_driver = this;
     execute_with_audio_clock(100000.0 / cpu_clock_hz_);
+    has_selected_track_ = true;
     return HOOT_OK;
 }
 
@@ -653,6 +666,7 @@ void X68kGenericDriver::reset()
     scratch_.fill(0);
     selected_track_ = 0;
     selected_code_ = 0;
+    has_selected_track_ = false;
     render_cycle_remainder_ = 0.0;
     cpu_cycle_debt_ = 0;
     mailbox_flag_ = 0;
@@ -773,6 +787,7 @@ void X68kGenericDriver::clear()
     ym2151_clock_hz_ = 4000000;
     selected_track_ = 0;
     selected_code_ = 0;
+    has_selected_track_ = false;
     reset_sp_ = 0;
     reset_pc_ = 0;
     memdump_address_ = 0;
@@ -857,6 +872,7 @@ void X68kGenericDriver::execute_seconds(double seconds)
         if (!timer_a_overflow && !timer_b_overflow) {
             continue;
         }
+        const uint8_t previous_status = ym2151_timer_status_;
         if (timer_a_overflow) {
             ym2151_timer_a_remaining_ += ym2151_timer_a_cycles();
             ym2151_timer_status_ |= 0x01;
@@ -867,7 +883,9 @@ void X68kGenericDriver::execute_seconds(double seconds)
         }
 
         const bool was_asserted = ym2151_irq_asserted_;
-        update_ym2151_irq();
+        if (ym2151_timer_status_ != previous_status) {
+            update_ym2151_irq();
+        }
         if (!was_asserted && ym2151_irq_asserted_) {
             ++debug_ym2151_irqs_;
         }
@@ -924,6 +942,18 @@ void X68kGenericDriver::update_ym2151_irq()
     }
     ym2151_irq_asserted_ = active;
     m68k_set_irq(active ? 6 : 0);
+}
+
+int X68kGenericDriver::acknowledge_interrupt(int level)
+{
+    if (level == 6) {
+        // X68000 IRQH clears its CPU-side request latch on acknowledge. The
+        // YM2151 status bit remains set until register 0x14 resets it.
+        ym2151_irq_asserted_ = false;
+        trace_io("irq6-ack", 0, 0);
+        m68k_set_irq(0);
+    }
+    return M68K_INT_ACK_AUTOVECTOR;
 }
 
 double X68kGenericDriver::ym2151_timer_a_cycles() const
@@ -1027,6 +1057,12 @@ void X68kGenericDriver::trace_io(const char* operation, uint32_t address, uint8_
     trace_ << operation
            << " cycles=" << debug_cpu_cycles_
            << " pc=0x" << std::hex << std::setw(6) << std::setfill('0') << m68k_get_reg(nullptr, M68K_REG_PC)
+           << " d0=0x" << std::setw(8) << m68k_get_reg(nullptr, M68K_REG_D0)
+           << " d1=0x" << std::setw(8) << m68k_get_reg(nullptr, M68K_REG_D1)
+           << " d2=0x" << std::setw(8) << m68k_get_reg(nullptr, M68K_REG_D2)
+           << " a0=0x" << std::setw(8) << m68k_get_reg(nullptr, M68K_REG_A0)
+           << " a1=0x" << std::setw(8) << m68k_get_reg(nullptr, M68K_REG_A1)
+           << " a2=0x" << std::setw(8) << m68k_get_reg(nullptr, M68K_REG_A2)
            << " addr=0x" << std::setw(6) << address
            << " data=0x" << std::setw(2) << static_cast<unsigned>(data)
            << std::dec << std::setfill(' ') << "\n";

@@ -158,7 +158,11 @@ HootResult MicrocabinPc98DosDriver::select_track(const HootEntry& entry,
     mmd_timer_frames_until_tick_ = 0.0;
     playing_ = true;
     call_mmd_api(0x0000);
-    if (!selected_voice_data_.empty()) {
+    if (mmd2_api_) {
+        if (!selected_voice_data_.empty()) {
+            load_mmd_stream(0x11, selected_voice_data_);
+        }
+    } else if (!selected_voice_data_.empty()) {
         load_mmd_stream(0x0c, selected_voice_data_);
         call_mmd_api(static_cast<uint16_t>(0x0d00 | (voice_slot & 0xff)));
     }
@@ -313,6 +317,9 @@ void MicrocabinPc98DosDriver::clear()
     command_latch_ = 0;
     command_low_ = 0xff;
     command_high_ = 0xff;
+    mmd2_api_ = false;
+    early_mmd2_layout_ = false;
+    mmd_timer_vector_ = 0;
     selected_file_offset_ = 0;
     mmd_timer_frames_until_tick_ = 0.0;
     executed_cpu_steps_ = 0;
@@ -383,6 +390,14 @@ bool MicrocabinPc98DosDriver::setup_runtime(std::string& error)
                 std::min<size_t>(mmd_sys_.size(), kMemorySize - mmd_linear),
                 mem + mmd_linear);
 
+    const uint16_t device_interrupt_offset = mmd_sys_.size() >= 10
+        ? static_cast<uint16_t>(mmd_sys_[8] | (static_cast<uint16_t>(mmd_sys_[9]) << 8))
+        : 0;
+    mmd2_api_ = mmd_sys_.size() >= 16
+        && std::memcmp(mmd_sys_.data() + 10, "MMD2", 4) == 0
+        && device_interrupt_offset != 0x0057;
+    early_mmd2_layout_ = device_interrupt_offset == 0x0041;
+
     setup_interrupt_vector(0x21, kIretSegment, kIretOffset);
     setup_interrupt_vector(0xD2, kMmdSegment, 0x009c);
     setup_interrupt_vector(0x7F, kIretSegment, kIretOffset);
@@ -436,13 +451,27 @@ void MicrocabinPc98DosDriver::setup_interrupt_vector(uint8_t vector, uint16_t se
 
 void MicrocabinPc98DosDriver::initialize_mmd_device()
 {
-    if (!cpu_) {
+    if (!cpu_ || mmd_sys_.size() < 10) {
         return;
     }
 
-    const std::string command = mmd_device_command_.empty()
+    // MMD2 follows the DOS character-device header offsets. Keep the existing
+    // MMD bridge entry points for later resident builds, whose pack bootstrap
+    // contract uses the relocated callbacks directly.
+    const uint16_t strategy_offset = mmd2_api_
+        ? static_cast<uint16_t>(mmd_sys_[6] | (static_cast<uint16_t>(mmd_sys_[7]) << 8))
+        : 0x004e;
+    const uint16_t interrupt_offset = mmd2_api_
+        ? static_cast<uint16_t>(mmd_sys_[8] | (static_cast<uint16_t>(mmd_sys_[9]) << 8))
+        : 0x0057;
+
+    const std::string declaration = mmd_device_command_.empty()
         ? std::string("MMD.SYS 3072 2048")
         : mmd_device_command_;
+    const auto arguments = declaration.find_first_of(" \t");
+    const std::string command = mmd2_api_
+        ? (arguments == std::string::npos ? std::string() : declaration.substr(arguments))
+        : declaration;
     for (size_t i = 0; i < command.size() && kDeviceCommandOffset + i < kMemorySize; ++i) {
         write_memory_byte(kDeviceCommandOffset + static_cast<uint32_t>(i),
                           static_cast<uint8_t>(command[i]));
@@ -465,7 +494,7 @@ void MicrocabinPc98DosDriver::initialize_mmd_device()
     cpu_->set_ss(kStackSegment);
     cpu_->set_sp(kStackPointer);
     cpu_->set_cs(kMmdSegment);
-    cpu_->set_pc(0x004e);
+    cpu_->set_pc(strategy_offset);
     push_cpu_word(kHelperSegment);
     push_cpu_word(kApiReturnOffset);
     run_cpu_steps(1000);
@@ -475,11 +504,64 @@ void MicrocabinPc98DosDriver::initialize_mmd_device()
     cpu_->set_ss(kStackSegment);
     cpu_->set_sp(kStackPointer);
     cpu_->set_cs(kMmdSegment);
-    cpu_->set_pc(0x0057);
+    cpu_->set_pc(interrupt_offset);
     push_cpu_word(kHelperSegment);
     push_cpu_word(kApiReturnOffset);
     run_cpu_steps(200000);
     const uint32_t mmd_base = (static_cast<uint32_t>(kMmdSegment) << 4) + kMmdOffset;
+    if (early_mmd2_layout_) {
+        uint32_t bgm_capacity = 0;
+        uint32_t voice_capacity = 0;
+        std::istringstream arguments_stream(command);
+        arguments_stream >> bgm_capacity >> voice_capacity;
+        bgm_capacity = std::min<uint32_t>((bgm_capacity + 15) & ~uint32_t{15}, 0xffff);
+        voice_capacity = std::min<uint32_t>((voice_capacity + 15) & ~uint32_t{15}, 0xffff);
+        const uint16_t initialized_bgm_capacity = static_cast<uint16_t>(
+            read_memory_byte(mmd_base + 0x0c84)
+            | (read_memory_byte(mmd_base + 0x0c85) << 8));
+        if (bgm_capacity != 0 && initialized_bgm_capacity < bgm_capacity) {
+            const auto write_mmd_word = [&](uint16_t offset, uint16_t value) {
+                write_memory_byte(mmd_base + offset, static_cast<uint8_t>(value));
+                write_memory_byte(mmd_base + offset + 1, static_cast<uint8_t>(value >> 8));
+            };
+            const uint16_t bgm_buffer_end = static_cast<uint16_t>(0x0f86 + bgm_capacity + 0x0400);
+            const uint16_t resident_end = static_cast<uint16_t>(bgm_buffer_end + voice_capacity);
+            const uint16_t timer_stack = static_cast<uint16_t>(resident_end + 0x0200);
+            write_mmd_word(0x0c84, static_cast<uint16_t>(bgm_capacity));
+            write_mmd_word(0x0c86, static_cast<uint16_t>(voice_capacity));
+            write_mmd_word(0x0c82, static_cast<uint16_t>(bgm_capacity + voice_capacity + 0x0400));
+            write_mmd_word(0x0c8a, bgm_buffer_end);
+            write_mmd_word(0x0c8c, timer_stack);
+            write_mmd_word(0x025c, static_cast<uint16_t>(timer_stack - 2));
+            write_mmd_word(0x025e, kMmdSegment);
+        }
+    } else if (mmd2_api_ && interrupt_offset == 0x005d) {
+        uint32_t bgm_capacity = 0;
+        uint32_t voice_capacity = 0;
+        std::istringstream arguments_stream(command);
+        arguments_stream >> bgm_capacity >> voice_capacity;
+        bgm_capacity = std::min<uint32_t>((bgm_capacity + 15) & ~uint32_t{15}, 0xffff);
+        voice_capacity = std::min<uint32_t>((voice_capacity + 15) & ~uint32_t{15}, 0xffff);
+        const uint16_t initialized_bgm_capacity = static_cast<uint16_t>(
+            read_memory_byte(mmd_base + 0x0d16)
+            | (read_memory_byte(mmd_base + 0x0d17) << 8));
+        if (bgm_capacity != 0 && initialized_bgm_capacity < bgm_capacity) {
+            const auto write_mmd_word = [&](uint16_t offset, uint16_t value) {
+                write_memory_byte(mmd_base + offset, static_cast<uint8_t>(value));
+                write_memory_byte(mmd_base + offset + 1, static_cast<uint8_t>(value >> 8));
+            };
+            const uint16_t bgm_buffer_end = static_cast<uint16_t>(0x109c + bgm_capacity + 0x0400);
+            const uint16_t resident_end = static_cast<uint16_t>(bgm_buffer_end + voice_capacity);
+            const uint16_t timer_stack = static_cast<uint16_t>(resident_end + 0x0200);
+            write_mmd_word(0x0d16, static_cast<uint16_t>(bgm_capacity));
+            write_mmd_word(0x0d18, static_cast<uint16_t>(voice_capacity));
+            write_mmd_word(0x0d14, static_cast<uint16_t>(bgm_capacity + voice_capacity + 0x0400));
+            write_mmd_word(0x0d1c, bgm_buffer_end);
+            write_mmd_word(0x0d1e, timer_stack);
+            write_mmd_word(0x02a0, static_cast<uint16_t>(timer_stack - 2));
+            write_mmd_word(0x02a2, kMmdSegment);
+        }
+    }
     const uint8_t device_flags = read_memory_byte(mmd_base + 0x152c);
     const uint16_t address_port = static_cast<uint16_t>(read_memory_byte(mmd_base + 0x152e)
         | (read_memory_byte(mmd_base + 0x152f) << 8));
@@ -708,10 +790,18 @@ void MicrocabinPc98DosDriver::handle_dos_interrupt()
     const uint8_t ah = cpu_->get_ah();
     debug_last_ah_ = ah;
     switch (ah) {
-    case 0x25:
-        setup_interrupt_vector(cpu_->get_al(), cpu_->get_ds(), cpu_->get_dx());
+    case 0x25: {
+        const uint8_t vector = cpu_->get_al();
+        const uint16_t segment = cpu_->get_ds();
+        const uint16_t offset = cpu_->get_dx();
+        setup_interrupt_vector(vector, segment, offset);
+        if (mmd_timer_vector_ == 0 && segment == kMmdSegment
+            && vector != 0xD2 && offset != 0x0078) {
+            mmd_timer_vector_ = vector;
+        }
         cpu_->set_carry(false);
         break;
+    }
     case 0x3f:
         dos_read_selected_file();
         break;
@@ -844,24 +934,33 @@ void MicrocabinPc98DosDriver::call_mmd_timer()
         return;
     }
 
-    const uint32_t mmd_base = (static_cast<uint32_t>(kMmdSegment) << 4) + kMmdOffset;
-    const uint16_t timer_stack = static_cast<uint16_t>(read_memory_byte(mmd_base + 0x036e)
-        | (read_memory_byte(mmd_base + 0x036f) << 8));
-    if (timer_stack == 0) {
-        write_memory_byte(mmd_base + 0x036e, 0xe6);
-        write_memory_byte(mmd_base + 0x036f, 0x2f);
-        write_memory_byte(mmd_base + 0x0370, static_cast<uint8_t>(kMmdSegment & 0xff));
-        write_memory_byte(mmd_base + 0x0371, static_cast<uint8_t>((kMmdSegment >> 8) & 0xff));
-    }
-    cpu_->set_ds(kMmdSegment);
-    cpu_->set_es(kMmdSegment);
     cpu_->set_ss(kStackSegment);
     cpu_->set_sp(kStackPointer);
-    push_cpu_word(0x0200);
-    push_cpu_word(kMmdSegment);
-    push_cpu_word(kMmdReturnOffset);
-    cpu_->set_cs(kMmdSegment);
-    cpu_->set_pc(0x0376);
+    if (mmd2_api_) {
+        if (mmd_timer_vector_ == 0) {
+            return;
+        }
+        cpu_->set_cs(kHelperSegment);
+        cpu_->set_pc(kApiReturnOffset);
+        trigger_interrupt_vector(mmd_timer_vector_);
+    } else {
+        const uint32_t mmd_base = (static_cast<uint32_t>(kMmdSegment) << 4) + kMmdOffset;
+        const uint16_t timer_stack = static_cast<uint16_t>(read_memory_byte(mmd_base + 0x036e)
+            | (read_memory_byte(mmd_base + 0x036f) << 8));
+        if (timer_stack == 0) {
+            write_memory_byte(mmd_base + 0x036e, 0xe6);
+            write_memory_byte(mmd_base + 0x036f, 0x2f);
+            write_memory_byte(mmd_base + 0x0370, static_cast<uint8_t>(kMmdSegment));
+            write_memory_byte(mmd_base + 0x0371, static_cast<uint8_t>(kMmdSegment >> 8));
+        }
+        cpu_->set_ds(kMmdSegment);
+        cpu_->set_es(kMmdSegment);
+        push_cpu_word(0x0200);
+        push_cpu_word(kMmdSegment);
+        push_cpu_word(kMmdReturnOffset);
+        cpu_->set_cs(kMmdSegment);
+        cpu_->set_pc(0x0376);
+    }
     run_cpu_steps(2000000);
     cpu_->set_cs(kHelperSegment);
     cpu_->set_pc(kApiReturnOffset);
@@ -877,10 +976,9 @@ double MicrocabinPc98DosDriver::mmd_timer_rate_hz() const
     }
 
     constexpr double kPc98OpnaClock = 7987200.0;
-    // MMD programs OPNA Timer A directly. For the PC-98 YM2608 cadence used by
-    // this resident driver, the stable audible rate is half the raw FM timer
-    // helper rate used by fmgen.
-    constexpr double kOpnaTimerClockDivisor = 144.0;
+    // The original MMD2 DOS host dispatches two service phases per raw Timer A
+    // period. Later resident builds use the established half-rate callback.
+    const double opna_timer_clock_divisor = mmd2_api_ ? 36.0 : 144.0;
     const uint16_t timer_a = static_cast<uint16_t>(
         (static_cast<uint16_t>(opna_registers_[0][0x24]) << 2)
         | (opna_registers_[0][0x25] & 0x03));
@@ -888,7 +986,7 @@ double MicrocabinPc98DosDriver::mmd_timer_rate_hz() const
     if (period <= 0) {
         return 60.0;
     }
-    return (kPc98OpnaClock / kOpnaTimerClockDivisor) / static_cast<double>(period);
+    return (kPc98OpnaClock / opna_timer_clock_divisor) / static_cast<double>(period);
 }
 
 } // namespace hoot

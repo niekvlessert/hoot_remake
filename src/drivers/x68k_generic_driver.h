@@ -32,6 +32,7 @@ public:
 
     uint8_t read_memory_8(uint32_t address);
     void write_memory_8(uint32_t address, uint8_t data);
+    int acknowledge_interrupt(int level);
 
 private:
     struct VoiceBankImage {
@@ -76,6 +77,7 @@ private:
     uint32_t ym2151_clock_hz_ = 4000000;
     int selected_track_ = 0;
     uint32_t selected_code_ = 0;
+    bool has_selected_track_ = false;
     uint32_t reset_sp_ = 0;
     uint32_t reset_pc_ = 0;
     uint32_t memdump_address_ = 0;

@@ -517,6 +517,14 @@ bool apply_overrides(const std::filesystem::path& path,
                         error = "override track code " + code_text + " was not found in " + entry.id;
                         return false;
                     }
+                } else if (item.name == "option") {
+                    const auto name = item.attribute("name");
+                    const auto value = item.attribute("value");
+                    if (name.empty() || value.empty()) {
+                        error = "<option> requires name and value in " + path.string();
+                        return false;
+                    }
+                    entry.options[name] = static_cast<int>(parse_u32(value));
                 }
             }
         }
