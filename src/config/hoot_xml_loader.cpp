@@ -475,6 +475,7 @@ bool apply_overrides(const std::filesystem::path& path,
                     HootAssetRef asset;
                     asset.type = "voicebank:" + id;
                     asset.path = file;
+                    asset.transform = item.attribute("transform");
                     asset.offset = parse_u32(item.attribute("offset"));
                     entry.assets.erase(
                         std::remove_if(entry.assets.begin(), entry.assets.end(), [&](const auto& existing) {
@@ -482,6 +483,21 @@ bool apply_overrides(const std::filesystem::path& path,
                         }),
                         entry.assets.end());
                     entry.assets.push_back(std::move(asset));
+                } else if (item.name == "asset") {
+                    const auto file = item.attribute("file");
+                    const auto transform = item.attribute("transform");
+                    if (file.empty() || transform.empty()) {
+                        error = "<asset> requires file and transform in " + path.string();
+                        return false;
+                    }
+                    const auto asset = std::find_if(entry.assets.begin(), entry.assets.end(), [&](const auto& existing) {
+                        return existing.path == file;
+                    });
+                    if (asset == entry.assets.end()) {
+                        error = "override asset " + file + " was not found in " + entry.id;
+                        return false;
+                    }
+                    asset->transform = transform;
                 } else if (item.name == "track") {
                     const auto code_text = item.attribute("code");
                     const auto voice_bank = item.attribute("voicebank");

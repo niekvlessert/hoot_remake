@@ -44,7 +44,6 @@ private:
     static constexpr size_t kScratchSize = 0x100000;
 
     void clear();
-    bool load_ad68snd_legacy_pack(const std::string& packs_path, std::string& error);
     void execute_seconds(double seconds);
     void execute_with_audio_clock(double seconds);
     void update_ym2151_timer(uint8_t reg, uint8_t data);
@@ -59,16 +58,16 @@ private:
     void write_midi(uint32_t address, uint8_t data);
     uint32_t read_memory_32(uint32_t address);
     uint32_t read_be32(size_t offset) const;
-    void select_xak_voice_bank(const HootEntry& entry, int track_index);
-    void diagnose_xak_voices(const HootEntry& entry, int track_index);
+    void select_voice_bank(const HootEntry& entry, int track_index);
+    void diagnose_opmdrv_voices(const HootEntry& entry, int track_index);
 
     std::array<uint8_t, kRomSize> rom_{};
     // Immutable pack image used to give each selected track a clean machine.
     std::array<uint8_t, kRomSize> rom_image_{};
     std::array<uint8_t, kRamSize> ram_{};
     std::array<uint8_t, kScratchSize> scratch_{};
-    std::map<std::string, VoiceBankImage> xak_voice_banks_;
-    uint32_t active_xak_voice_bank_offset_ = 0x20000;
+    std::map<std::string, VoiceBankImage> voice_banks_;
+    uint32_t active_voice_bank_offset_ = 0x20000;
     std::string track_warning_;
     int sample_rate_ = 44100;
     double cpu_clock_hz_ = 10000000.0;
@@ -114,7 +113,7 @@ private:
     uint8_t midi_int_vect_ = 0x10;
     uint32_t midi_buffered_ = 0;
     bool loaded_ = false;
-    bool ad68snd_legacy_layout_ = false;
+    bool has_opmdrv_voice_transform_ = false;
     std::ofstream trace_;
     uint64_t trace_events_ = 0;
     uint64_t trace_limit_ = 0;

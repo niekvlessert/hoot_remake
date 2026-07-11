@@ -250,7 +250,7 @@ uint32_t parse_opm_mute_mask(const char* value)
     return (~solo_mask) & 0xffu;
 }
 
-std::vector<uint8_t> expand_xak_voice_bank(const std::vector<uint8_t>& data)
+std::vector<uint8_t> expand_opmdrv_compact_voice(const std::vector<uint8_t>& data)
 {
     if (data.size() < 2 || data[0] != '(' || data[1] != 0xb6) {
         return data;
@@ -351,10 +351,10 @@ namespace hoot {
 
 namespace {
 
-constexpr size_t kXakVoiceBankOffset = 0x20000;
-constexpr size_t kXakVoiceBankCapacity = 0x14000;
+constexpr size_t kVoiceBankOffset = 0x20000;
+constexpr size_t kVoiceBankCapacity = 0x14000;
 
-std::string xak_track_filename(const HootEntry& entry, int track_index)
+std::string track_filename(const HootEntry& entry, int track_index)
 {
     if (track_index < 0 || static_cast<size_t>(track_index) >= entry.tracks.size()) {
         return {};
@@ -403,13 +403,6 @@ HootResult X68kGenericDriver::load(const HootEntry& entry,
             continue;
         }
 
-        if (entry.archive == "ad68snd" && asset.path == "kmdrv.bin" && !archive.contains(asset.path)) {
-            if (!load_ad68snd_legacy_pack(packs_path, error)) {
-                return HOOT_ERROR_IO;
-            }
-            continue;
-        }
-
         if (asset.type == "x") {
             if (!load_human68k_x_at(archive, rom_, asset.path, asset.offset, error)) {
                 return HOOT_ERROR_IO;
@@ -429,6 +422,14 @@ HootResult X68kGenericDriver::load(const HootEntry& entry,
         if (!error.empty()) {
             return HOOT_ERROR_IO;
         }
+        if (!asset.transform.empty()) {
+            if (asset.transform != "opmdrv-compact-voice") {
+                error = "unsupported x68k asset transform: " + asset.transform;
+                return HOOT_ERROR_UNSUPPORTED;
+            }
+            data = expand_opmdrv_compact_voice(data);
+            has_opmdrv_voice_transform_ = true;
+        }
         if (asset.offset >= rom_.size()) {
             error = "x68k code asset offset is outside ROM: " + asset.path;
             return HOOT_ERROR_PARSE;
@@ -439,34 +440,24 @@ HootResult X68kGenericDriver::load(const HootEntry& entry,
         loaded_code_bytes_ += count;
     }
 
-    if (entry.archive == "xak68snd") {
-        const auto default_bank = std::find_if(entry.assets.begin(), entry.assets.end(), [](const auto& asset) {
-            return asset.type == "code" && asset.offset == kXakVoiceBankOffset;
-        });
-        if (default_bank != entry.assets.end()) {
-            const size_t end = std::min(rom_.size(), kXakVoiceBankOffset + kXakVoiceBankCapacity);
-            auto data = archive.read(default_bank->path, error);
-            if (!error.empty()) {
-                return HOOT_ERROR_IO;
-            }
-            const auto expanded = expand_xak_voice_bank(data);
-            std::fill(rom_.begin() + static_cast<std::ptrdiff_t>(kXakVoiceBankOffset),
-                      rom_.begin() + static_cast<std::ptrdiff_t>(end), 0);
-            std::copy_n(expanded.begin(), std::min(expanded.size(), end - kXakVoiceBankOffset),
-                        rom_.begin() + static_cast<std::ptrdiff_t>(kXakVoiceBankOffset));
+    for (const auto& asset : entry.assets) {
+        constexpr std::string_view prefix = "voicebank:";
+        if (asset.type.compare(0, prefix.size(), prefix) != 0) {
+            continue;
         }
-        for (const auto& asset : entry.assets) {
-            constexpr std::string_view prefix = "voicebank:";
-            if (asset.type.compare(0, prefix.size(), prefix) != 0) {
-                continue;
-            }
-            auto data = archive.read(asset.path, error);
-            if (!error.empty()) {
-                return HOOT_ERROR_IO;
-            }
-            xak_voice_banks_[asset.type.substr(prefix.size())] = {
-                asset.offset, expand_xak_voice_bank(data)};
+        auto data = archive.read(asset.path, error);
+        if (!error.empty()) {
+            return HOOT_ERROR_IO;
         }
+        if (!asset.transform.empty()) {
+            if (asset.transform != "opmdrv-compact-voice") {
+                error = "unsupported x68k voice-bank transform: " + asset.transform;
+                return HOOT_ERROR_UNSUPPORTED;
+            }
+            data = expand_opmdrv_compact_voice(data);
+            has_opmdrv_voice_transform_ = true;
+        }
+        voice_banks_[asset.type.substr(prefix.size())] = {asset.offset, std::move(data)};
     }
 
     if (loaded_code_bytes_ == 0) {
@@ -543,22 +534,11 @@ HootResult X68kGenericDriver::select_track(const HootEntry& entry,
     // fully stops the previous sequence, so restart the machine and chips at
     // each selection to avoid stale notes/ADPCM state leaking into the cue.
     reset();
-    select_xak_voice_bank(entry, track_index);
-    diagnose_xak_voices(entry, track_index);
+    select_voice_bank(entry, track_index);
+    diagnose_opmdrv_voices(entry, track_index);
     selected_track_ = track_index;
     selected_code_ = entry.tracks[track_index].code;
     uint32_t command_code = selected_code_;
-    const bool ad68snd_modern_code = entry.archive == "ad68snd" && command_code >= 0xb0 && command_code <= 0xc6;
-    if (std::getenv("HOOT_AD68_TRANSLATE_CODES") != nullptr
-        && ad68snd_modern_code) {
-        command_code -= 0xaf;
-    }
-    if (ad68snd_legacy_layout_ && command_code != 0x00 && command_code != 0x11) {
-        mailbox_code_ = 0x11;
-        mailbox_flag_ = 0x01;
-        g_active_driver = this;
-        execute_with_audio_clock(500000.0 / cpu_clock_hz_);
-    }
     mailbox_code_ = static_cast<uint16_t>(command_code);
     mailbox_flag_ = 0x01;
     g_active_driver = this;
@@ -566,14 +546,14 @@ HootResult X68kGenericDriver::select_track(const HootEntry& entry,
     return HOOT_OK;
 }
 
-void X68kGenericDriver::diagnose_xak_voices(const HootEntry& entry, int track_index)
+void X68kGenericDriver::diagnose_opmdrv_voices(const HootEntry& entry, int track_index)
 {
     track_warning_.clear();
-    if (entry.archive != "xak68snd") {
+    if (!has_opmdrv_voice_transform_) {
         return;
     }
 
-    const auto filename = xak_track_filename(entry, track_index);
+    const auto filename = track_filename(entry, track_index);
     const auto asset = std::find_if(entry.assets.begin(), entry.assets.end(), [&](const auto& item) {
         return std::filesystem::path(item.path).filename().string() == filename;
     });
@@ -582,8 +562,8 @@ void X68kGenericDriver::diagnose_xak_voices(const HootEntry& entry, int track_in
     }
 
     std::array<bool, 256> available{};
-    const size_t bank_end = std::min(rom_.size(), active_xak_voice_bank_offset_ + kXakVoiceBankCapacity);
-    for (size_t pos = active_xak_voice_bank_offset_; pos + 2 < bank_end; ++pos) {
+    const size_t bank_end = std::min(rom_.size(), active_voice_bank_offset_ + kVoiceBankCapacity);
+    for (size_t pos = active_voice_bank_offset_; pos + 2 < bank_end; ++pos) {
         if (rom_[pos] == '(' && rom_[pos + 1] == 0xb6) {
             available[rom_[pos + 2]] = true;
         } else if (rom_[pos] == '(' && (rom_[pos + 1] == 'v' || rom_[pos + 1] == 'V')
@@ -648,22 +628,18 @@ void X68kGenericDriver::diagnose_xak_voices(const HootEntry& entry, int track_in
     }
 }
 
-void X68kGenericDriver::select_xak_voice_bank(const HootEntry& entry, int track_index)
+void X68kGenericDriver::select_voice_bank(const HootEntry& entry, int track_index)
 {
-    if (entry.archive != "xak68snd") {
-        return;
-    }
-
     if (track_index < 0 || static_cast<size_t>(track_index) >= entry.tracks.size()) {
         return;
     }
-    const auto bank = xak_voice_banks_.find(entry.tracks[track_index].voice_bank);
-    if (bank == xak_voice_banks_.end() || bank->second.offset >= rom_.size()) {
+    const auto bank = voice_banks_.find(entry.tracks[track_index].voice_bank);
+    if (bank == voice_banks_.end() || bank->second.offset >= rom_.size()) {
         return;
     }
 
-    active_xak_voice_bank_offset_ = bank->second.offset;
-    const size_t capacity = std::min(kXakVoiceBankCapacity, rom_.size() - bank->second.offset);
+    active_voice_bank_offset_ = bank->second.offset;
+    const size_t capacity = std::min(kVoiceBankCapacity, rom_.size() - bank->second.offset);
     std::fill_n(rom_.begin() + static_cast<std::ptrdiff_t>(bank->second.offset), capacity, 0);
     std::copy_n(bank->second.data.begin(), std::min(bank->second.data.size(), capacity),
                 rom_.begin() + static_cast<std::ptrdiff_t>(bank->second.offset));
@@ -672,7 +648,7 @@ void X68kGenericDriver::select_xak_voice_bank(const HootEntry& entry, int track_
 void X68kGenericDriver::reset()
 {
     rom_ = rom_image_;
-    active_xak_voice_bank_offset_ = kXakVoiceBankOffset;
+    active_voice_bank_offset_ = kVoiceBankOffset;
     ram_.fill(0);
     scratch_.fill(0);
     selected_track_ = 0;
@@ -787,8 +763,8 @@ void X68kGenericDriver::clear()
     rom_image_.fill(0);
     ram_.fill(0);
     scratch_.fill(0);
-    xak_voice_banks_.clear();
-    active_xak_voice_bank_offset_ = kXakVoiceBankOffset;
+    voice_banks_.clear();
+    active_voice_bank_offset_ = kVoiceBankOffset;
     track_warning_.clear();
     sample_rate_ = 44100;
     cpu_clock_hz_ = 10000000.0;
@@ -832,50 +808,12 @@ void X68kGenericDriver::clear()
     midi_int_vect_ = 0x10;
     midi_buffered_ = 0;
     loaded_ = false;
-    ad68snd_legacy_layout_ = false;
+    has_opmdrv_voice_transform_ = false;
     if (trace_.is_open()) {
         trace_.close();
     }
     trace_events_ = 0;
     trace_limit_ = 0;
-}
-
-bool X68kGenericDriver::load_ad68snd_legacy_pack(const std::string& packs_path, std::string& error)
-{
-    const auto archive_path = std::filesystem::path(packs_path) / "ad68snd.zip";
-    ZipArchive archive;
-    if (!archive.open(archive_path, error)) {
-        return false;
-    }
-
-    struct Member {
-        const char* path;
-        size_t offset;
-    };
-    constexpr Member kAd68sndBgLayout[] = {
-        {"ad68snd.bin", 0x00000},
-        {"ADPCM_BG.DAT", 0x20000},
-        {"ADPCM_SE.DAT", 0x40000},
-        {"SOUND_BG.DAT", 0x60000},
-        {"SOUND_SE.DAT", 0x70000},
-        {"VOICE_BG.DAT", 0x80000},
-        {"VOICE_SE.DAT", 0x90000},
-        {"TABLE_BG.DAT", 0xa0000},
-        {"YUSEN_TB.DAT", 0xa8000},
-    };
-
-    for (const auto& member : kAd68sndBgLayout) {
-        if (!load_archive_member_at(archive, rom_, member.path, member.offset, error)) {
-            return false;
-        }
-    }
-    if (!load_human68k_x_at(archive, rom_, "KMDRV.X", 0x08000, error)) {
-        return false;
-    }
-
-    loaded_code_bytes_ += 1;
-    ad68snd_legacy_layout_ = true;
-    return true;
 }
 
 void X68kGenericDriver::execute_seconds(double seconds)

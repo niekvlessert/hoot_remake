@@ -10,6 +10,7 @@ namespace hoot {
 struct HootAssetRef {
     std::string type;
     std::string path;
+    std::string transform;
     uint32_t offset = 0;
 };
 
