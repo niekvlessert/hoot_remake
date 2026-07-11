@@ -17,6 +17,11 @@ const std::vector<HootEntry>& HootCatalog::entries() const
     return entries_;
 }
 
+std::vector<HootEntry>& HootCatalog::mutable_entries()
+{
+    return entries_;
+}
+
 const HootEntry* HootCatalog::find(std::string_view id) const
 {
     for (const auto& entry : entries_) {

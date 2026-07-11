@@ -27,6 +27,7 @@
 #include "config/hoot_catalog.h"
 #include "config/hoot_xml_loader.h"
 #include "core/hoot_api.h"
+#include "../hoot2wav/wav_writer.h"
 
 namespace {
 
@@ -45,17 +46,24 @@ struct Options {
     int rate = 44100;
     bool list = false;
     bool packs_explicit = false;
+    bool mute_percussion = false;
+    std::string channels;
+    std::string wav_path;
+    int wav_seconds = 0;
+    int track = 1;
 };
 
 void usage(const char* argv0)
 {
     std::fprintf(stderr,
-                 "usage: %s [--catalog hoot.xml] [--packs dir] [--rate hz] <archive-or-entry-or-zip>\n"
+                 "usage: %s [--catalog hoot.xml] [--packs dir] [--rate hz] [--channels 3|2-5] [--track n] <archive-or-entry-or-zip>\n"
+                 "       %s --wav output.wav --seconds n [--track n] <archive-or-entry-or-zip>\n"
                  "       %s --list [--catalog hoot.xml]\n"
                  "\n"
                  "Example: %s --packs packs fz68snd\n"
                  "         %s --catalog packs/hoot20251231/hoot.xml packs/fz68snd.zip\n"
                  "Controls: Space pause/resume, N next, P previous, Q quit\n",
+                 argv0,
                  argv0,
                  argv0,
                  argv0,
@@ -82,6 +90,16 @@ bool parse_options(int argc, char** argv, Options& options)
             options.packs_explicit = true;
         } else if ((arg == "--rate" || arg == "-r") && need_value(argc, argv, i)) {
             options.rate = std::atoi(argv[++i]);
+        } else if (arg == "--mute-percussion") {
+            options.mute_percussion = true;
+        } else if (arg == "--channels" && need_value(argc, argv, i)) {
+            options.channels = argv[++i];
+        } else if (arg == "--wav" && need_value(argc, argv, i)) {
+            options.wav_path = argv[++i];
+        } else if (arg == "--seconds" && need_value(argc, argv, i)) {
+            options.wav_seconds = std::atoi(argv[++i]);
+        } else if (arg == "--track" && need_value(argc, argv, i)) {
+            options.track = std::atoi(argv[++i]);
         } else if (arg == "--list" || arg == "-l") {
             options.list = true;
         } else if (arg == "--help" || arg == "-h") {
@@ -285,6 +303,35 @@ bool render_frames(std::vector<int16_t>& pcm, size_t frames, size_t* rendered)
     return true;
 }
 
+bool record_current_track(const std::string& path, int seconds, uint32_t sample_rate)
+{
+    if (seconds <= 0) {
+        std::fprintf(stderr, "hootplay: --seconds must be positive with --wav\n");
+        return false;
+    }
+
+    size_t frames_remaining = static_cast<size_t>(seconds) * sample_rate;
+    std::vector<int16_t> capture;
+    capture.reserve(frames_remaining * 2);
+    while (frames_remaining != 0 && !g_quit) {
+        std::vector<int16_t> pcm;
+        size_t rendered = 0;
+        const size_t request = std::min(frames_remaining, kFramesPerBuffer);
+        if (!render_frames(pcm, request, &rendered) || rendered == 0) {
+            return false;
+        }
+        capture.insert(capture.end(), pcm.begin(), pcm.begin() + static_cast<std::ptrdiff_t>(rendered * 2));
+        frames_remaining -= rendered;
+    }
+    std::string error;
+    if (!write_wav_s16(path, capture.data(), static_cast<int>(capture.size() / 2),
+                       static_cast<int>(sample_rate), error)) {
+        std::fprintf(stderr, "hootplay: %s\n", error.c_str());
+        return false;
+    }
+    return true;
+}
+
 #if defined(__APPLE__)
 AudioQueueRef g_queue = nullptr;
 
@@ -449,6 +496,12 @@ int main(int argc, char** argv)
         return 1;
     }
 
+    if (options.mute_percussion) {
+        setenv("HOOT_X68K_MUTE_PERCUSSION", "1", 1);
+    }
+    if (!options.channels.empty()) {
+        setenv("HOOT_X68K_CHANNELS", options.channels.c_str(), 1);
+    }
     HootConfig config{};
     config.sample_rate = options.rate;
     config.packs_path = options.packs.c_str();
@@ -493,18 +546,35 @@ int main(int argc, char** argv)
 
     std::thread controls(keyboard_thread);
     g_context = ctx.get();
-    int track = 0;
+    int track = options.track - 1;
+    if (track < 0 || static_cast<size_t>(track) >= entry->tracks.size()) {
+        std::fprintf(stderr, "hootplay: --track is outside the catalog track list\n");
+        return 1;
+    }
     while (!g_quit) {
         if (hoot_select_track(ctx.get(), track) != HOOT_OK) {
             std::fprintf(stderr, "%s\n", hoot_last_error(ctx.get()));
             break;
         }
 
+        HootTrackInfo info{};
+        if (hoot_get_track_info(ctx.get(), &info) == HOOT_OK && info.warning[0] != '\0') {
+            std::fprintf(stderr, "hootplay: warning: %s\n", info.warning);
+        }
+
         g_stop_track = false;
         g_paused = false;
         g_nav_delta = 0;
         print_now_playing(*entry, track);
-        if (!play_current_track(static_cast<uint32_t>(options.rate))) {
+        const bool played = options.wav_path.empty()
+            ? play_current_track(static_cast<uint32_t>(options.rate))
+            : record_current_track(options.wav_path,
+                                   options.wav_seconds,
+                                   static_cast<uint32_t>(options.rate));
+        if (!played) {
+            break;
+        }
+        if (!options.wav_path.empty()) {
             break;
         }
 

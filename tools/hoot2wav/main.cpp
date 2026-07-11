@@ -22,6 +22,8 @@ struct Options {
     int rate = 44100;
     bool list = false;
     bool verbose = false;
+    bool mute_percussion = false;
+    std::string channels;
     std::string trace_xak2;
     std::string trace_pc98;
     int trace_limit = 0;
@@ -32,7 +34,7 @@ void usage()
     std::cerr
         << "usage: hoot2wav --catalog <path> [--packs <path>] [--entry <id>]\n"
         << "                [--track <n>] [--seconds <n>] [--rate <hz>]\n"
-        << "                [--out <path>] [--list] [--verbose]\n"
+        << "                [--out <path>] [--list] [--verbose] [--channels 3|2-5]\n"
         << "                [--trace-xak2 <path>] [--trace-pc98 <path>]\n"
         << "                [--trace-limit <n>]\n";
 }
@@ -62,6 +64,10 @@ bool parse_options(int argc, char** argv, Options& options)
             options.seconds = std::atoi(argv[++i]);
         } else if (arg == "--rate" && need_value(argc, argv, i)) {
             options.rate = std::atoi(argv[++i]);
+        } else if (arg == "--mute-percussion") {
+            options.mute_percussion = true;
+        } else if (arg == "--channels" && need_value(argc, argv, i)) {
+            options.channels = argv[++i];
         } else if (arg == "--out" && need_value(argc, argv, i)) {
             options.out = argv[++i];
         } else if (arg == "--list") {
@@ -128,6 +134,9 @@ void print_track_info(const Options& options, const HootTrackInfo& info)
               << info.debug_port_writes_32 << ","
               << info.debug_port_writes_44 << ","
               << info.debug_port_writes_45 << "\n";
+    if (info.warning[0] != '\0') {
+        std::cerr << "warning: " << info.warning << "\n";
+    }
 }
 
 } // namespace
@@ -158,6 +167,13 @@ int main(int argc, char** argv)
     if (options.seconds <= 0 || options.rate <= 0) {
         std::cerr << "--seconds and --rate must be positive\n";
         return 2;
+    }
+
+    if (options.mute_percussion) {
+        setenv("HOOT_X68K_MUTE_PERCUSSION", "1", 1);
+    }
+    if (!options.channels.empty()) {
+        setenv("HOOT_X68K_CHANNELS", options.channels.c_str(), 1);
     }
 
     HootConfig config{};

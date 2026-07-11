@@ -8,13 +8,15 @@ extern "C" {
 
 enum {
     HOOT_TRACK_TITLE_MAX = 128,
-    HOOT_DRIVER_NAME_MAX = 64
+    HOOT_DRIVER_NAME_MAX = 64,
+    HOOT_TRACK_WARNING_MAX = 256
 };
 
 typedef struct HootTrackInfo {
     int track_index;
     char title[HOOT_TRACK_TITLE_MAX];
     char driver[HOOT_DRIVER_NAME_MAX];
+    char warning[HOOT_TRACK_WARNING_MAX];
     int sample_rate;
     uint64_t debug_cpu_cycles;
     uint64_t debug_io_reads;

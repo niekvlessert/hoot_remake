@@ -16,6 +16,7 @@ struct HootAssetRef {
 struct CatalogTrack {
     uint32_t code = 0;
     std::string title;
+    std::string voice_bank;
 };
 
 struct HootEntry {
@@ -38,6 +39,7 @@ public:
     void add_entry(HootEntry entry);
 
     const std::vector<HootEntry>& entries() const;
+    std::vector<HootEntry>& mutable_entries();
     const HootEntry* find(std::string_view id) const;
 
 private:

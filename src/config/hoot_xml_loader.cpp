@@ -428,6 +428,87 @@ std::vector<std::string> child_list_paths(const XmlNode& root)
     return paths;
 }
 
+bool apply_overrides(const std::filesystem::path& path,
+                     HootCatalog& catalog,
+                     std::string& error)
+{
+    const auto xml = read_file(path.string());
+    if (xml.empty()) {
+        error = "unable to read overrides: " + path.string();
+        return false;
+    }
+
+    XmlNode root;
+    if (!parse_xml(xml, root, error)) {
+        error = "unable to parse overrides: " + error + " in " + path.string();
+        return false;
+    }
+    if (root.name != "hoot-overrides") {
+        error = "override root must be <hoot-overrides>: " + path.string();
+        return false;
+    }
+
+    for (const auto& game : root.children) {
+        if (game.name != "game") {
+            continue;
+        }
+        const auto match_id = game.attribute("id");
+        const auto match_archive = game.attribute("archive");
+        bool matched = false;
+        for (auto& entry : catalog.mutable_entries()) {
+            if ((!match_id.empty() && entry.id != match_id)
+                || (!match_archive.empty() && entry.archive != match_archive)) {
+                continue;
+            }
+            if (match_id.empty() && match_archive.empty()) {
+                continue;
+            }
+            matched = true;
+            for (const auto& item : game.children) {
+                if (item.name == "voicebank") {
+                    const auto id = item.attribute("id");
+                    const auto file = item.attribute("file");
+                    if (id.empty() || file.empty()) {
+                        error = "<voicebank> requires id and file in " + path.string();
+                        return false;
+                    }
+                    HootAssetRef asset;
+                    asset.type = "voicebank:" + id;
+                    asset.path = file;
+                    asset.offset = parse_u32(item.attribute("offset"));
+                    entry.assets.erase(
+                        std::remove_if(entry.assets.begin(), entry.assets.end(), [&](const auto& existing) {
+                            return existing.type == asset.type;
+                        }),
+                        entry.assets.end());
+                    entry.assets.push_back(std::move(asset));
+                } else if (item.name == "track") {
+                    const auto code_text = item.attribute("code");
+                    const auto voice_bank = item.attribute("voicebank");
+                    if (code_text.empty() || voice_bank.empty()) {
+                        error = "<track> requires code and voicebank in " + path.string();
+                        return false;
+                    }
+                    const auto code = parse_u32(code_text);
+                    bool track_matched = false;
+                    for (auto& track : entry.tracks) {
+                        if (track.code == code) {
+                            track.voice_bank = voice_bank;
+                            track_matched = true;
+                        }
+                    }
+                    if (!track_matched) {
+                        error = "override track code " + code_text + " was not found in " + entry.id;
+                        return false;
+                    }
+                }
+            }
+        }
+        (void)matched;
+    }
+    return true;
+}
+
 bool load_file_recursive(const std::filesystem::path& path,
                           HootCatalog& catalog,
                           std::map<std::string, int>& seen_ids,
@@ -478,6 +559,26 @@ bool HootXmlLoader::load_file(const std::string& path, HootCatalog& catalog, std
 
     if (catalog.entries().empty()) {
         error = "catalog contains no supported <game> entries";
+        return false;
+    }
+
+    std::filesystem::path override_path;
+    if (const char* configured = std::getenv("HOOT_OVERRIDE_XML")) {
+        override_path = configured;
+        if (!std::filesystem::exists(override_path)) {
+            error = "configured override file does not exist: " + override_path.string();
+            return false;
+        }
+    } else {
+        const auto cwd_override = std::filesystem::current_path() / "hoot-overrides.xml";
+        const auto catalog_override = std::filesystem::path(path).parent_path() / "hoot-overrides.xml";
+        if (std::filesystem::exists(cwd_override)) {
+            override_path = cwd_override;
+        } else if (std::filesystem::exists(catalog_override)) {
+            override_path = catalog_override;
+        }
+    }
+    if (!override_path.empty() && !apply_overrides(override_path, catalog, error)) {
         return false;
     }
     return true;

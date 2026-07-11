@@ -24,6 +24,7 @@ add_library(libvgm_ym2203 STATIC
     third_party/libvgm/emu/cores/ay8910.c
     third_party/libvgm/emu/cores/fmopn.c
     third_party/libvgm/emu/cores/ym2151.c
+    third_party/libvgm/emu/cores/nukedopm.c
     third_party/libvgm/emu/cores/ymdeltat.c
     third_party/libvgm/emu/logging.c)
 
@@ -90,7 +91,8 @@ else()
 endif()
 
 add_executable(hootplay
-    tools/hootplay/main.cpp)
+    tools/hootplay/main.cpp
+    tools/hoot2wav/wav_writer.cpp)
 
 target_link_libraries(hootplay PRIVATE hootcore)
 if(APPLE)

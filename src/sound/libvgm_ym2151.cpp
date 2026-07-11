@@ -5,6 +5,7 @@
 
 extern "C" {
 #include "EmuStructs.h"
+#include "nukedopm.h"
 #include "ym2151.h"
 void ym2151_set_irq_handler(void* chip, void (*handler)(void* param, uint8_t irq));
 }
@@ -40,7 +41,9 @@ LibvgmYm2151::~LibvgmYm2151()
     }
 }
 
-bool LibvgmYm2151::initialize(uint32_t clock, uint32_t sample_rate)
+bool LibvgmYm2151::initialize(uint32_t clock,
+                               uint32_t sample_rate,
+                               bool use_nuked_core)
 {
     if (chip_ != nullptr) {
         static_cast<const DEV_DEF*>(dev_def_)->Stop(chip_);
@@ -48,13 +51,16 @@ bool LibvgmYm2151::initialize(uint32_t clock, uint32_t sample_rate)
     }
 
     sample_rate_ = sample_rate;
+    using_nuked_core_ = use_nuked_core;
+
     DEV_GEN_CFG config{};
     config.clock = clock;
     config.srMode = DEVRI_SRMODE_CUSTOM;
     config.smplRate = sample_rate;
 
     DEV_INFO info{};
-    if (devDef_YM2151_MAME.Start(&config, &info) != 0 || info.dataPtr == nullptr) {
+    const DEV_DEF& core = using_nuked_core_ ? devDef_YM2151_Nuked : devDef_YM2151_MAME;
+    if (core.Start(&config, &info) != 0 || info.dataPtr == nullptr) {
         return false;
     }
     chip_ = info.dataPtr;
@@ -72,9 +78,16 @@ void LibvgmYm2151::reset()
 
 void LibvgmYm2151::set_irq_handler(void (*handler)(void* param, uint8_t irq), void* param)
 {
-    if (chip_ != nullptr) {
+    if (chip_ != nullptr && !using_nuked_core_) {
         ym2151_set_irq_handler(chip_, handler);
         (void)param;
+    }
+}
+
+void LibvgmYm2151::set_mute_mask(uint32_t mask)
+{
+    if (chip_ != nullptr && dev_def_ != nullptr) {
+        static_cast<const DEV_DEF*>(dev_def_)->SetMuteMask(chip_, mask);
     }
 }
 
@@ -95,6 +108,10 @@ uint8_t LibvgmYm2151::read(uint8_t port)
 {
     if (chip_ == nullptr) {
         return 0xff;
+    }
+
+    if (using_nuked_core_) {
+        return 0;
     }
     const auto* func = find_rw_func(static_cast<const DEV_DEF*>(dev_def_),
                                     RWF_REGISTER | RWF_READ,
@@ -126,6 +143,11 @@ void LibvgmYm2151::render_s16(int16_t* interleaved_stereo, int frames)
         interleaved_stereo[i * 2] = static_cast<int16_t>(l);
         interleaved_stereo[i * 2 + 1] = static_cast<int16_t>(r);
     }
+}
+
+bool LibvgmYm2151::uses_nuked_core() const
+{
+    return using_nuked_core_;
 }
 
 } // namespace hoot
