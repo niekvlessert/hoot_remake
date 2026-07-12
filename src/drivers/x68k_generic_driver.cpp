@@ -386,6 +386,28 @@ HootResult X68kGenericDriver::load(const HootEntry& entry,
     }
     const auto midiout = entry.options.find("midiout");
     midi_enabled_ = midiout != entry.options.end() && midiout->second != 0;
+    const auto mfp = entry.options.find("mfp");
+    mfp_enabled_ = mfp != entry.options.end() && mfp->second != 0;
+    mfp_timer_divider_ = 1;
+    if (const auto option = entry.options.find("mfp_timer_divider");
+        option != entry.options.end()) {
+        mfp_timer_divider_ = std::clamp(option->second, 1, 1000);
+    }
+    mfp_sound_timer_ = -1;
+    if (const auto option = entry.options.find("mfp_sound_timer");
+        option != entry.options.end()) {
+        mfp_sound_timer_ = option->second;
+    }
+    mfp_initial_ierb_ = 0x3e;
+    if (const auto option = entry.options.find("mfp_initial_ierb");
+        option != entry.options.end()) {
+        mfp_initial_ierb_ = static_cast<uint8_t>(option->second);
+    }
+    mfp_initial_imrb_ = 0x3e;
+    if (const auto option = entry.options.find("mfp_initial_imrb");
+        option != entry.options.end()) {
+        mfp_initial_imrb_ = static_cast<uint8_t>(option->second);
+    }
     if (const char* value = std::getenv("HOOT_X68K_MIDI")) {
         if (std::strcmp(value, "1") == 0 || std::strcmp(value, "on") == 0) {
             midi_enabled_ = true;
@@ -513,6 +535,7 @@ HootResult X68kGenericDriver::load(const HootEntry& entry,
     m68k_pulse_reset();
     m68k_set_reg(M68K_REG_ISP, reset_sp_);
     m68k_set_reg(M68K_REG_MSP, reset_sp_);
+    initialize_mfp();
     execute_with_audio_clock(5000.0 / cpu_clock_hz_);
     loaded_ = true;
     return HOOT_OK;
@@ -683,6 +706,7 @@ void X68kGenericDriver::reset()
     debug_ym2151_keyons_ = 0;
     debug_ym2151_irqs_ = 0;
     reset_ym2151_timers();
+    initialize_mfp();
     debug_adpcm_writes_ = 0;
     debug_adpcm_starts_ = 0;
     adpcm_address_ = 0;
@@ -817,6 +841,15 @@ void X68kGenericDriver::clear()
     mailbox_flag_ = 0;
     mailbox_code_ = 0;
     midi_enabled_ = false;
+    mfp_enabled_ = false;
+    mfp_irq_asserted_ = false;
+    mfp_timer_divider_ = 1;
+    mfp_sound_timer_ = -1;
+    mfp_initial_ierb_ = 0x3e;
+    mfp_initial_imrb_ = 0x3e;
+    std::fill(std::begin(mfp_regs_), std::end(mfp_regs_), uint8_t{0});
+    std::fill(std::begin(mfp_timer_values_), std::end(mfp_timer_values_), uint8_t{0});
+    std::fill(std::begin(mfp_timer_accumulators_), std::end(mfp_timer_accumulators_), 0.0);
     midi_reg_high_ = 0;
     midi_vector_ = 0;
     midi_int_enable_ = 0;
@@ -866,6 +899,7 @@ void X68kGenericDriver::execute_seconds(double seconds)
         if (timer_b_running) {
             ym2151_timer_b_remaining_ -= static_cast<double>(executed);
         }
+        update_mfp(executed);
 
         const bool timer_a_overflow = timer_a_running && ym2151_timer_a_remaining_ <= 0.0;
         const bool timer_b_overflow = timer_b_running && ym2151_timer_b_remaining_ <= 0.0;
@@ -931,6 +965,143 @@ void X68kGenericDriver::reset_ym2151_timers()
     ym2151_timer_b_remaining_ = 0.0;
 }
 
+void X68kGenericDriver::initialize_mfp()
+{
+    if (!mfp_enabled_) {
+        std::fill(std::begin(mfp_regs_), std::end(mfp_regs_), uint8_t{0});
+        std::fill(std::begin(mfp_timer_values_), std::end(mfp_timer_values_), uint8_t{0});
+        std::fill(std::begin(mfp_timer_accumulators_), std::end(mfp_timer_accumulators_), 0.0);
+        mfp_irq_asserted_ = false;
+        return;
+    }
+
+    // Power-on values used by the X68000 MFP model. The sound drivers that
+    // request MFP support rely on the resident timer setup being present
+    // before they receive their first mailbox command.
+    uint8_t defaults[24] = {
+        0x7b, 0x06, 0x00, 0x18, mfp_initial_ierb_, 0x00, 0x00, 0x00,
+        0x00, 0x18, mfp_initial_imrb_, 0x40, 0x08, 0x01, 0x77, 0x01,
+        0x0d, 0xc8, 0x14, 0x00, 0x88, 0x01, 0x81, 0x00,
+    };
+    std::copy(std::begin(defaults), std::end(defaults), std::begin(mfp_regs_));
+    mfp_timer_values_[0] = mfp_regs_[15];
+    mfp_timer_values_[1] = mfp_regs_[16];
+    mfp_timer_values_[2] = mfp_regs_[17];
+    mfp_timer_values_[3] = mfp_regs_[18];
+    std::fill(std::begin(mfp_timer_accumulators_), std::end(mfp_timer_accumulators_), 0.0);
+    mfp_irq_asserted_ = false;
+}
+
+void X68kGenericDriver::update_mfp(int executed_cycles)
+{
+    if (!mfp_enabled_ || executed_cycles <= 0) {
+        return;
+    }
+
+    constexpr int prescalers[8] = {1, 10, 25, 40, 125, 160, 250, 500};
+    constexpr uint8_t timer_sources[4] = {0x20, 0x01, 0x20, 0x10};
+    constexpr uint8_t pending_registers[4] = {5, 5, 6, 6};
+    for (int timer = 0; timer < 4; ++timer) {
+        uint8_t mode = 0;
+        if (timer == 0) {
+            mode = mfp_regs_[12] & 0x0f;
+        } else if (timer == 1) {
+            mode = mfp_regs_[13] & 0x0f;
+        } else if (timer == 2) {
+            mode = (mfp_regs_[14] >> 4) & 0x07;
+        } else {
+            mode = mfp_regs_[14] & 0x07;
+        }
+        if (mode >= 8) {
+            continue;
+        }
+
+        mfp_timer_accumulators_[timer] += static_cast<double>(executed_cycles)
+            / static_cast<double>(mfp_timer_divider_);
+        while (mfp_timer_accumulators_[timer] >= prescalers[mode]) {
+            mfp_timer_accumulators_[timer] -= prescalers[mode];
+            if (mfp_timer_values_[timer] != 0) {
+                --mfp_timer_values_[timer];
+            }
+            if (mfp_timer_values_[timer] == 0) {
+                mfp_timer_values_[timer] = mfp_regs_[15 + timer];
+                if (mfp_timer_values_[timer] != 0) {
+                    mfp_regs_[pending_registers[timer]] |= timer_sources[timer];
+                    trace_io("mfp-expire", static_cast<uint32_t>(timer),
+                             mfp_timer_values_[timer]);
+                    update_mfp_irq();
+                }
+            }
+        }
+    }
+}
+
+void X68kGenericDriver::update_mfp_irq()
+{
+    if (!mfp_enabled_) {
+        return;
+    }
+    const bool pending = ((mfp_regs_[5] & mfp_regs_[3] & mfp_regs_[9]
+                           & static_cast<uint8_t>(~mfp_regs_[7])) != 0)
+        || ((mfp_regs_[6] & mfp_regs_[4] & mfp_regs_[10]
+             & static_cast<uint8_t>(~mfp_regs_[8])) != 0);
+    if (pending && !mfp_irq_asserted_) {
+        mfp_irq_asserted_ = true;
+        m68k_set_irq(6);
+    }
+}
+
+uint8_t X68kGenericDriver::read_mfp(uint32_t address)
+{
+    if ((address & 1) == 0) {
+        return 0xff;
+    }
+    const size_t reg = static_cast<size_t>((address & 0x3f) >> 1);
+    const uint8_t data = reg < std::size(mfp_regs_) ? mfp_regs_[reg] : 0;
+    trace_io("mfp-read", address, data);
+    return data;
+}
+
+void X68kGenericDriver::write_mfp(uint32_t address, uint8_t data)
+{
+    if ((address & 1) == 0) {
+        return;
+    }
+    const size_t reg = static_cast<size_t>((address & 0x3f) >> 1);
+    if (reg >= std::size(mfp_regs_)) {
+        return;
+    }
+    trace_io("mfp-write", address, data);
+    switch (reg) {
+    case 3:
+    case 4:
+        mfp_regs_[reg] = data;
+        mfp_regs_[reg + 2] &= data;
+        break;
+    case 5:
+    case 6:
+    case 7:
+    case 8:
+        mfp_regs_[reg] &= data;
+        break;
+    case 9:
+    case 10:
+        mfp_regs_[reg] = data;
+        break;
+    case 15:
+    case 16:
+    case 17:
+    case 18:
+        mfp_regs_[reg] = data;
+        mfp_timer_values_[reg - 15] = data;
+        break;
+    default:
+        mfp_regs_[reg] = data;
+        break;
+    }
+    update_mfp_irq();
+}
+
 void X68kGenericDriver::update_ym2151_irq()
 {
     const bool active = ((ym2151_timer_status_ & 0x01) != 0
@@ -941,15 +1112,87 @@ void X68kGenericDriver::update_ym2151_irq()
         return;
     }
     ym2151_irq_asserted_ = active;
-    m68k_set_irq(active ? 6 : 0);
+    if (mfp_enabled_) {
+        // The X68000 routes the OPM interrupt through MFP GPIP3. With the
+        // standard vector base this is vector 0x43, ahead of Timer D (0x44).
+        if (active) {
+            mfp_regs_[6] |= 0x08;
+        }
+        update_mfp_irq();
+    } else {
+        m68k_set_irq(active ? 6 : 0);
+    }
 }
 
 int X68kGenericDriver::acknowledge_interrupt(int level)
 {
     if (level == 6) {
+        if (mfp_enabled_ && mfp_irq_asserted_) {
+            // The MFP callback acknowledges the highest-priority request and
+            // clears its pending bit before returning the source vector.
+            // Leaving the bit set lets an unrelated timer re-trigger the same
+            // sound interrupt as soon as the CPU line is lowered.
+            uint8_t flag = 0;
+            int vector = -1;
+            uint8_t* pending = nullptr;
+            uint8_t* in_service = nullptr;
+            const uint8_t vector_base = mfp_regs_[11] & 0xf0;
+
+            for (uint8_t candidate = 0x80; candidate != 0; candidate >>= 1) {
+                if ((mfp_regs_[5] & candidate) != 0
+                    && (mfp_regs_[3] & candidate) != 0
+                    && (mfp_regs_[9] & candidate) != 0
+                    && (mfp_regs_[7] & candidate) == 0) {
+                    flag = candidate;
+                    vector = 15;
+                    for (uint8_t bit = 0x80; bit != candidate; bit >>= 1) {
+                        --vector;
+                    }
+                    pending = &mfp_regs_[5];
+                    in_service = &mfp_regs_[7];
+                    break;
+                }
+            }
+            if (flag == 0) {
+                for (uint8_t candidate = 0x80; candidate != 0; candidate >>= 1) {
+                    if ((mfp_regs_[6] & candidate) != 0
+                        && (mfp_regs_[4] & candidate) != 0
+                        && (mfp_regs_[10] & candidate) != 0
+                        && (mfp_regs_[8] & candidate) == 0) {
+                        flag = candidate;
+                        vector = 7;
+                        for (uint8_t bit = 0x80; bit != candidate; bit >>= 1) {
+                            --vector;
+                        }
+                        pending = &mfp_regs_[6];
+                        in_service = &mfp_regs_[8];
+                        break;
+                    }
+                }
+            }
+
+            if (flag != 0 && pending != nullptr && in_service != nullptr) {
+                *pending &= static_cast<uint8_t>(~flag);
+                if ((mfp_regs_[11] & 0x08) != 0) {
+                    *in_service |= flag;
+                }
+                mfp_irq_asserted_ = false;
+                const uint32_t delivered_vector = (mfp_sound_timer_ == 2
+                                                    && pending == &mfp_regs_[6]
+                                                    && flag == 0x20)
+                    ? 0x43u
+                    : static_cast<uint32_t>(vector_base | vector);
+                trace_io("mfp-ack", delivered_vector, flag);
+                m68k_set_irq(0);
+                update_mfp_irq();
+                return delivered_vector;
+            }
+        }
+
         // X68000 IRQH clears its CPU-side request latch on acknowledge. The
         // YM2151 status bit remains set until register 0x14 resets it.
         ym2151_irq_asserted_ = false;
+        mfp_irq_asserted_ = false;
         trace_io("irq6-ack", 0, 0);
         m68k_set_irq(0);
     }
@@ -1160,6 +1403,9 @@ uint8_t X68kGenericDriver::read_memory_8(uint32_t address)
     case 0xe9a005:
         return adpcm_.pan_and_rate();
     default:
+        if (mfp_enabled_ && address >= 0xe88000 && address <= 0xe8802f) {
+            return read_mfp(address);
+        }
         if (address >= 0xeafa01 && address < 0xeafa10) {
             return read_midi(address);
         }
@@ -1177,7 +1423,8 @@ void X68kGenericDriver::write_memory_8(uint32_t address, uint8_t data)
 {
     address &= 0x00ffffff;
     if (address < rom_.size()) {
-        if (address >= 0x0400 && address < 0x0410) {
+        if ((address >= 0x0100 && address < 0x0200)
+            || (address >= 0x0400 && address < 0x0410)) {
             trace_io("low-vector-write", address, data);
         }
         rom_[address] = data;
@@ -1239,6 +1486,10 @@ void X68kGenericDriver::write_memory_8(uint32_t address, uint8_t data)
         adpcm_.set_pan_and_rate(data);
         break;
     default:
+        if (mfp_enabled_ && address >= 0xe88000 && address <= 0xe8802f) {
+            write_mfp(address, data);
+            break;
+        }
         if (address >= 0xeafa01 && address < 0xeafa10) {
             write_midi(address, data);
             break;

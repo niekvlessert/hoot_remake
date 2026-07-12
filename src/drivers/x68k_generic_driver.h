@@ -49,6 +49,11 @@ private:
     void execute_with_audio_clock(double seconds);
     void update_ym2151_timer(uint8_t reg, uint8_t data);
     void update_ym2151_irq();
+    void initialize_mfp();
+    void update_mfp(int executed_cycles);
+    uint8_t read_mfp(uint32_t address);
+    void write_mfp(uint32_t address, uint8_t data);
+    void update_mfp_irq();
     void reset_ym2151_timers();
     double ym2151_timer_a_cycles() const;
     double ym2151_timer_b_cycles() const;
@@ -109,6 +114,15 @@ private:
     uint8_t mailbox_flag_ = 0;
     uint16_t mailbox_code_ = 0;
     bool midi_enabled_ = false;
+    bool mfp_enabled_ = false;
+    bool mfp_irq_asserted_ = false;
+    int mfp_timer_divider_ = 1;
+    int mfp_sound_timer_ = -1;
+    uint8_t mfp_initial_ierb_ = 0x3e;
+    uint8_t mfp_initial_imrb_ = 0x3e;
+    uint8_t mfp_regs_[24]{};
+    uint8_t mfp_timer_values_[4]{};
+    double mfp_timer_accumulators_[4]{};
     uint8_t midi_reg_high_ = 0;
     uint8_t midi_vector_ = 0;
     uint8_t midi_int_enable_ = 0;
