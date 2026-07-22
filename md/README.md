@@ -192,3 +192,83 @@ For example:
   --seconds 120 \
   --out fz68-opaopa.wav
 ```
+
+### Selectable X68000 MFP backend
+
+The X68000 generic driver has two MFP implementations for comparison. The
+default `hoot` backend keeps the current post-OS bootstrap behavior. The
+optional `mame` backend follows the BSD-licensed MAME MC68901 behavior for
+prescalers, `IPR & IMR` interrupt routing, and YM2151's active-low GPIO3
+connection, while using the same Hoot post-OS bootstrap so standalone entries
+remain playable.
+
+The original Hoot generic X68000 driver did not use an MFP. It mapped the
+68000 ROM/RAM and sound devices, reset the CPU, and delivered YM2151 Timer A/B
+events directly as IRQ6. Reproduce that startup path with:
+
+```sh
+HOOT_X68K_STARTUP=hoot ./build/hootplay ...
+```
+
+This explicitly bypasses MFP emulation and all MFP-specific overrides.
+It is appropriate for older generic entries such as `fz68snd` and
+`nama68snd`; newer entries such as Neural Gear use MFP Timer C and should use
+the normal bootstrapped MFP path instead.
+
+Use the environment variable for an A/B run:
+
+```sh
+HOOT_X68K_MFP_CORE=hoot ./build/hoot2wav \
+  --catalog hootsrc20011006/hoot.xml --packs packs \
+  --entry ngear68snd-generic --track 0 --seconds 2 --out /dev/null --verbose
+
+HOOT_X68K_MFP_CORE=mame ./build/hoot2wav \
+  --catalog hootsrc20011006/hoot.xml --packs packs \
+  --entry ngear68snd-generic --track 0 --seconds 2 --out /dev/null --verbose
+```
+
+To compare without the MFP-specific entries from `hoot-overrides.xml`, add:
+
+```sh
+HOOT_X68K_MFP_CORE=mame HOOT_X68K_MFP_IGNORE_OVERRIDES=1 ./build/hoot2wav \
+  --catalog hootsrc20011006/hoot.xml --packs packs \
+  --entry ngear68snd-generic --track 0 --seconds 2 --out /dev/null --verbose
+```
+
+This ignores only `mfp_timer_divider`, `mfp_sound_timer`,
+`mfp_initial_ierb`, and `mfp_initial_imrb`. Other catalog and asset overrides
+remain active.
+
+For the strict power-on experiment, bypass that bootstrap explicitly:
+
+```sh
+HOOT_X68K_MFP_CORE=mame HOOT_X68K_MFP_BOOTSTRAP=reset ./build/hoot2wav \
+  --catalog hootsrc20011006/hoot.xml --packs packs \
+  --entry ngear68snd-generic --track 0 --seconds 2 --out /dev/null --verbose
+```
+
+The strict reset mode may be silent because standalone Hoot entries expect the
+original resident OS to initialize the MFP.
+
+### Trace an X68000 MFP entry
+
+Set `HOOT_X68K_TRACE` to write a trace while running a short entry. The trace
+includes the initial MFP register state, all accesses in `0xe88000-0xe89fff`,
+IRQ6 assertion/acknowledgement, delivered MFP vectors, and YM2151 writes:
+
+```sh
+HOOT_X68K_MFP_CORE=mame \
+HOOT_X68K_TRACE=/tmp/ngear-mfp.trace \
+HOOT_X68K_TRACE_LIMIT=10000 \
+./build/hoot2wav \
+  --catalog packs/hoot20251231/hoot.xml \
+  --packs packs/czarek/hoot/x68k \
+  --entry ngear68snd-generic --track 0 --seconds 1 \
+  --out /dev/null --verbose
+
+rg 'mfp-|irq6-|ym2151' /tmp/ngear-mfp.trace
+```
+
+The `pc=`, `cycles=`, `addr=`, and `data=` fields make it possible to line up
+MFP timer expiry, IRQ6 acknowledge, vector delivery, and subsequent OPM
+writes. `HOOT_X68K_TRACE_LIMIT=0` means no event limit.

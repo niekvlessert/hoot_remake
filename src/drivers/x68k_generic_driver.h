@@ -53,6 +53,7 @@ private:
     void update_mfp(int executed_cycles);
     uint8_t read_mfp(uint32_t address);
     void write_mfp(uint32_t address, uint8_t data);
+    void write_mfp_gpio3(int state);
     void update_mfp_irq();
     void reset_ym2151_timers();
     double ym2151_timer_a_cycles() const;
@@ -115,13 +116,20 @@ private:
     uint16_t mailbox_code_ = 0;
     bool midi_enabled_ = false;
     bool mfp_enabled_ = false;
+    bool mame_mfp_ = false;
+    bool mfp_bootstrap_ = true;
+    bool mfp_ignore_overrides_ = false;
+    bool hoot_startup_ = false;
     bool mfp_irq_asserted_ = false;
     int mfp_timer_divider_ = 1;
     int mfp_sound_timer_ = -1;
     uint8_t mfp_initial_ierb_ = 0x3e;
     uint8_t mfp_initial_imrb_ = 0x3e;
     uint8_t mfp_regs_[24]{};
-    uint8_t mfp_timer_values_[4]{};
+    uint8_t mfp_gpio_input_ = 0;
+    // MFP timer counters treat a zero data register as 0x100. Keep the
+    // current count wide enough to represent that value.
+    uint16_t mfp_timer_values_[4]{};
     double mfp_timer_accumulators_[4]{};
     uint8_t midi_reg_high_ = 0;
     uint8_t midi_vector_ = 0;

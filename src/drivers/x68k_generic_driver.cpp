@@ -388,25 +388,86 @@ HootResult X68kGenericDriver::load(const HootEntry& entry,
     midi_enabled_ = midiout != entry.options.end() && midiout->second != 0;
     const auto mfp = entry.options.find("mfp");
     mfp_enabled_ = mfp != entry.options.end() && mfp->second != 0;
-    mfp_timer_divider_ = 1;
-    if (const auto option = entry.options.find("mfp_timer_divider");
+    mame_mfp_ = false;
+    if (const auto option = entry.options.find("mfp_core");
         option != entry.options.end()) {
-        mfp_timer_divider_ = std::clamp(option->second, 1, 1000);
+        mame_mfp_ = option->second != 0;
+    }
+    if (const char* value = std::getenv("HOOT_X68K_MFP_CORE")) {
+        if (std::strcmp(value, "mame") == 0 || std::strcmp(value, "mc68901") == 0) {
+            mame_mfp_ = true;
+        } else if (std::strcmp(value, "hoot") == 0 || std::strcmp(value, "legacy") == 0) {
+            mame_mfp_ = false;
+        }
+    }
+    mfp_bootstrap_ = true;
+    if (const auto option = entry.options.find("mfp_bootstrap");
+        option != entry.options.end()) {
+        mfp_bootstrap_ = option->second != 0;
+    }
+    if (const char* value = std::getenv("HOOT_X68K_MFP_BOOTSTRAP")) {
+        if (std::strcmp(value, "reset") == 0 || std::strcmp(value, "strict") == 0
+            || std::strcmp(value, "0") == 0 || std::strcmp(value, "off") == 0) {
+            mfp_bootstrap_ = false;
+        } else if (std::strcmp(value, "hoot") == 0 || std::strcmp(value, "1") == 0
+                   || std::strcmp(value, "on") == 0) {
+            mfp_bootstrap_ = true;
+        }
+    }
+    mfp_ignore_overrides_ = false;
+    if (const auto option = entry.options.find("mfp_ignore_overrides");
+        option != entry.options.end()) {
+        mfp_ignore_overrides_ = option->second != 0;
+    }
+    if (const char* value = std::getenv("HOOT_X68K_MFP_IGNORE_OVERRIDES")) {
+        mfp_ignore_overrides_ = std::strcmp(value, "1") == 0
+            || std::strcmp(value, "on") == 0
+            || std::strcmp(value, "true") == 0;
+    }
+    hoot_startup_ = false;
+    if (const auto option = entry.options.find("hoot_startup");
+        option != entry.options.end()) {
+        hoot_startup_ = option->second != 0;
+    }
+    if (const char* value = std::getenv("HOOT_X68K_STARTUP")) {
+        hoot_startup_ = std::strcmp(value, "hoot") == 0
+            || std::strcmp(value, "direct") == 0
+            || std::strcmp(value, "1") == 0
+            || std::strcmp(value, "on") == 0;
+    }
+    if (hoot_startup_) {
+        // The original Hoot generic x68k driver did not expose an MFP. Its
+        // YM2151 timer manager delivered both timer events directly as IRQ6.
+        mfp_enabled_ = false;
+        mame_mfp_ = false;
+    }
+    mfp_timer_divider_ = 1;
+    if (!mfp_ignore_overrides_) {
+        if (const auto option = entry.options.find("mfp_timer_divider");
+            option != entry.options.end()) {
+            mfp_timer_divider_ = std::clamp(option->second, 1, 1000);
+        }
     }
     mfp_sound_timer_ = -1;
-    if (const auto option = entry.options.find("mfp_sound_timer");
-        option != entry.options.end()) {
-        mfp_sound_timer_ = option->second;
+    if (!mfp_ignore_overrides_) {
+        if (const auto option = entry.options.find("mfp_sound_timer");
+            option != entry.options.end()) {
+            mfp_sound_timer_ = option->second;
+        }
     }
     mfp_initial_ierb_ = 0x3e;
-    if (const auto option = entry.options.find("mfp_initial_ierb");
-        option != entry.options.end()) {
-        mfp_initial_ierb_ = static_cast<uint8_t>(option->second);
+    if (!mfp_ignore_overrides_) {
+        if (const auto option = entry.options.find("mfp_initial_ierb");
+            option != entry.options.end()) {
+            mfp_initial_ierb_ = static_cast<uint8_t>(option->second);
+        }
     }
     mfp_initial_imrb_ = 0x3e;
-    if (const auto option = entry.options.find("mfp_initial_imrb");
-        option != entry.options.end()) {
-        mfp_initial_imrb_ = static_cast<uint8_t>(option->second);
+    if (!mfp_ignore_overrides_) {
+        if (const auto option = entry.options.find("mfp_initial_imrb");
+            option != entry.options.end()) {
+            mfp_initial_imrb_ = static_cast<uint8_t>(option->second);
+        }
     }
     if (const char* value = std::getenv("HOOT_X68K_MIDI")) {
         if (std::strcmp(value, "1") == 0 || std::strcmp(value, "on") == 0) {
@@ -503,6 +564,11 @@ HootResult X68kGenericDriver::load(const HootEntry& entry,
                << " archive=\"" << entry.archive << "\""
                << " cpu-clock=" << cpu_clock_hz_
                << " ym2151-clock=" << ym2151_clock_hz_
+               << " mfp=" << (mfp_enabled_ ? 1 : 0)
+               << " mfp-core=" << (mame_mfp_ ? "mame" : "hoot")
+               << " mfp-bootstrap=" << (mfp_bootstrap_ ? 1 : 0)
+               << " mfp-ignore-overrides=" << (mfp_ignore_overrides_ ? 1 : 0)
+               << " startup=" << (hoot_startup_ ? "hoot" : "native")
                << "\n";
     }
     trace_io(midi_enabled_ ? "midi-board-present" : "midi-board-absent", 0xeafa00, 0);
@@ -842,13 +908,18 @@ void X68kGenericDriver::clear()
     mailbox_code_ = 0;
     midi_enabled_ = false;
     mfp_enabled_ = false;
+    mame_mfp_ = false;
+    mfp_bootstrap_ = true;
+    mfp_ignore_overrides_ = false;
+    hoot_startup_ = false;
     mfp_irq_asserted_ = false;
     mfp_timer_divider_ = 1;
     mfp_sound_timer_ = -1;
     mfp_initial_ierb_ = 0x3e;
     mfp_initial_imrb_ = 0x3e;
     std::fill(std::begin(mfp_regs_), std::end(mfp_regs_), uint8_t{0});
-    std::fill(std::begin(mfp_timer_values_), std::end(mfp_timer_values_), uint8_t{0});
+    mfp_gpio_input_ = 0;
+    std::fill(std::begin(mfp_timer_values_), std::end(mfp_timer_values_), uint16_t{0});
     std::fill(std::begin(mfp_timer_accumulators_), std::end(mfp_timer_accumulators_), 0.0);
     midi_reg_high_ = 0;
     midi_vector_ = 0;
@@ -967,11 +1038,36 @@ void X68kGenericDriver::reset_ym2151_timers()
 
 void X68kGenericDriver::initialize_mfp()
 {
+    const auto trace_initial_state = [this]() {
+        for (size_t reg = 0; reg <= 18; ++reg) {
+            trace_io("mfp-init-reg",
+                     0xe88001u + static_cast<uint32_t>(reg * 2),
+                     mfp_regs_[reg]);
+        }
+    };
+
     if (!mfp_enabled_) {
         std::fill(std::begin(mfp_regs_), std::end(mfp_regs_), uint8_t{0});
-        std::fill(std::begin(mfp_timer_values_), std::end(mfp_timer_values_), uint8_t{0});
+        std::fill(std::begin(mfp_timer_values_), std::end(mfp_timer_values_), uint16_t{0});
         std::fill(std::begin(mfp_timer_accumulators_), std::end(mfp_timer_accumulators_), 0.0);
         mfp_irq_asserted_ = false;
+        mfp_gpio_input_ = 0;
+        trace_initial_state();
+        return;
+    }
+
+    if (mame_mfp_ && !mfp_bootstrap_) {
+        // Behavior adapted from MAME's BSD-3-Clause mc68901_device. MAME
+        // resets the device registers to zero; the Hoot bootstrap defaults
+        // below are bypassed for a strict power-on comparison.
+        std::fill(std::begin(mfp_regs_), std::end(mfp_regs_), uint8_t{0});
+        // GPIP inputs are inactive-high after reset.
+        mfp_regs_[0] = 0xff;
+        std::fill(std::begin(mfp_timer_values_), std::end(mfp_timer_values_), uint16_t{0});
+        std::fill(std::begin(mfp_timer_accumulators_), std::end(mfp_timer_accumulators_), 0.0);
+        mfp_irq_asserted_ = false;
+        mfp_gpio_input_ = 0xff;
+        trace_initial_state();
         return;
     }
 
@@ -984,12 +1080,14 @@ void X68kGenericDriver::initialize_mfp()
         0x0d, 0xc8, 0x14, 0x00, 0x88, 0x01, 0x81, 0x00,
     };
     std::copy(std::begin(defaults), std::end(defaults), std::begin(mfp_regs_));
-    mfp_timer_values_[0] = mfp_regs_[15];
-    mfp_timer_values_[1] = mfp_regs_[16];
-    mfp_timer_values_[2] = mfp_regs_[17];
-    mfp_timer_values_[3] = mfp_regs_[18];
+    for (int timer = 0; timer < 4; ++timer) {
+        const uint8_t reload = mfp_regs_[15 + timer];
+        mfp_timer_values_[timer] = reload != 0 ? reload : 0x100;
+    }
     std::fill(std::begin(mfp_timer_accumulators_), std::end(mfp_timer_accumulators_), 0.0);
     mfp_irq_asserted_ = false;
+    mfp_gpio_input_ = mame_mfp_ ? 0xff : 0;
+    trace_initial_state();
 }
 
 void X68kGenericDriver::update_mfp(int executed_cycles)
@@ -998,9 +1096,14 @@ void X68kGenericDriver::update_mfp(int executed_cycles)
         return;
     }
 
-    constexpr int prescalers[8] = {1, 10, 25, 40, 125, 160, 250, 500};
+    // The legacy path follows PX68K's post-boot model. The selectable MAME
+    // path follows mc68901's native prescaler table and 4 MHz device clock.
+    constexpr int hoot_prescalers[8] = {1, 10, 25, 40, 125, 160, 250, 500};
+    constexpr int mame_prescalers[8] = {0, 4, 10, 16, 50, 64, 100, 200};
     constexpr uint8_t timer_sources[4] = {0x20, 0x01, 0x20, 0x10};
     constexpr uint8_t pending_registers[4] = {5, 5, 6, 6};
+    // Timer A is in IERA; Timer B/C/D are in IERB.
+    constexpr uint8_t enable_registers[4] = {3, 4, 4, 4};
     for (int timer = 0; timer < 4; ++timer) {
         uint8_t mode = 0;
         if (timer == 0) {
@@ -1008,29 +1111,38 @@ void X68kGenericDriver::update_mfp(int executed_cycles)
         } else if (timer == 1) {
             mode = mfp_regs_[13] & 0x0f;
         } else if (timer == 2) {
-            mode = (mfp_regs_[14] >> 4) & 0x07;
+            mode = (mfp_regs_[14] >> 4) & 0x0f;
         } else {
-            mode = mfp_regs_[14] & 0x07;
+            mode = mfp_regs_[14] & 0x0f;
         }
-        if (mode >= 8) {
+        if (mode == 0 || mode >= 8) {
             continue;
         }
 
-        mfp_timer_accumulators_[timer] += static_cast<double>(executed_cycles)
-            / static_cast<double>(mfp_timer_divider_);
-        while (mfp_timer_accumulators_[timer] >= prescalers[mode]) {
-            mfp_timer_accumulators_[timer] -= prescalers[mode];
-            if (mfp_timer_values_[timer] != 0) {
-                --mfp_timer_values_[timer];
-            }
-            if (mfp_timer_values_[timer] == 0) {
-                mfp_timer_values_[timer] = mfp_regs_[15 + timer];
-                if (mfp_timer_values_[timer] != 0) {
+        const int prescaler = mame_mfp_ ? mame_prescalers[mode] : hoot_prescalers[mode];
+        if (prescaler <= 0) {
+            continue;
+        }
+        const double mfp_ticks = mame_mfp_
+            ? static_cast<double>(executed_cycles) * 0.4
+            : static_cast<double>(executed_cycles) / static_cast<double>(mfp_timer_divider_);
+        mfp_timer_accumulators_[timer] += mfp_ticks / static_cast<double>(prescaler);
+        while (mfp_timer_accumulators_[timer] >= 1.0) {
+            mfp_timer_accumulators_[timer] -= 1.0;
+            const bool expired = mame_mfp_
+                ? mfp_timer_values_[timer] <= 1
+                : mfp_timer_values_[timer] == 1;
+            if (expired) {
+                const uint8_t reload = mfp_regs_[15 + timer];
+                mfp_timer_values_[timer] = reload != 0 ? reload : 0x100;
+                if (!mame_mfp_ || (mfp_regs_[enable_registers[timer]] & timer_sources[timer])) {
                     mfp_regs_[pending_registers[timer]] |= timer_sources[timer];
                     trace_io("mfp-expire", static_cast<uint32_t>(timer),
                              mfp_timer_values_[timer]);
                     update_mfp_irq();
                 }
+            } else if (mfp_timer_values_[timer] != 0) {
+                --mfp_timer_values_[timer];
             }
         }
     }
@@ -1041,13 +1153,19 @@ void X68kGenericDriver::update_mfp_irq()
     if (!mfp_enabled_) {
         return;
     }
-    const bool pending = ((mfp_regs_[5] & mfp_regs_[3] & mfp_regs_[9]
-                           & static_cast<uint8_t>(~mfp_regs_[7])) != 0)
-        || ((mfp_regs_[6] & mfp_regs_[4] & mfp_regs_[10]
-             & static_cast<uint8_t>(~mfp_regs_[8])) != 0);
-    if (pending && !mfp_irq_asserted_) {
-        mfp_irq_asserted_ = true;
-        m68k_set_irq(6);
+    const bool pending = mame_mfp_
+        ? ((mfp_regs_[5] & mfp_regs_[9] & static_cast<uint8_t>(~mfp_regs_[7])) != 0)
+            || ((mfp_regs_[6] & mfp_regs_[10] & static_cast<uint8_t>(~mfp_regs_[8])) != 0)
+        : ((mfp_regs_[5] & mfp_regs_[3] & mfp_regs_[9]
+            & static_cast<uint8_t>(~mfp_regs_[7])) != 0)
+            || ((mfp_regs_[6] & mfp_regs_[4] & mfp_regs_[10]
+                & static_cast<uint8_t>(~mfp_regs_[8])) != 0);
+    if (pending != mfp_irq_asserted_) {
+        mfp_irq_asserted_ = pending;
+        trace_io(pending ? "irq6-assert-mfp" : "irq6-clear-mfp",
+                 (static_cast<uint32_t>(mfp_regs_[5]) << 8) | mfp_regs_[6],
+                 pending ? 6 : 0);
+        m68k_set_irq(pending ? 6 : 0);
     }
 }
 
@@ -1057,7 +1175,11 @@ uint8_t X68kGenericDriver::read_mfp(uint32_t address)
         return 0xff;
     }
     const size_t reg = static_cast<size_t>((address & 0x3f) >> 1);
-    const uint8_t data = reg < std::size(mfp_regs_) ? mfp_regs_[reg] : 0;
+    uint8_t data = reg < std::size(mfp_regs_) ? mfp_regs_[reg] : 0;
+    if (mame_mfp_ && reg == 0) {
+        data = static_cast<uint8_t>((mfp_gpio_input_ & ~mfp_regs_[2])
+                                    | (mfp_regs_[0] & mfp_regs_[2]));
+    }
     trace_io("mfp-read", address, data);
     return data;
 }
@@ -1076,13 +1198,20 @@ void X68kGenericDriver::write_mfp(uint32_t address, uint8_t data)
     case 3:
     case 4:
         mfp_regs_[reg] = data;
-        mfp_regs_[reg + 2] &= data;
+        if (!mame_mfp_) {
+            mfp_regs_[reg + 2] &= data;
+        }
         break;
     case 5:
     case 6:
     case 7:
     case 8:
-        mfp_regs_[reg] &= data;
+        if (mame_mfp_) {
+            // Hoot's MC68901 implementation stores IPR/ISR writes directly.
+            mfp_regs_[reg] = data;
+        } else {
+            mfp_regs_[reg] &= data;
+        }
         break;
     case 9:
     case 10:
@@ -1093,10 +1222,20 @@ void X68kGenericDriver::write_mfp(uint32_t address, uint8_t data)
     case 17:
     case 18:
         mfp_regs_[reg] = data;
-        mfp_timer_values_[reg - 15] = data;
+        mfp_timer_values_[reg - 15] = data != 0 ? data : 0x100;
         break;
     default:
-        mfp_regs_[reg] = data;
+        if (mame_mfp_ && reg == 11) {
+            // Hoot stores VR verbatim; bit 3 selects automatic EOI.
+            mfp_regs_[reg] = data;
+        } else if (mame_mfp_ && (reg == 12 || reg == 13)) {
+            mfp_regs_[reg] = data & 0x0f;
+        } else if (mame_mfp_ && reg == 14) {
+            // Both nibbles retain bit 3 for event-count mode.
+            mfp_regs_[reg] = data;
+        } else {
+            mfp_regs_[reg] = data;
+        }
         break;
     }
     update_mfp_irq();
@@ -1113,20 +1252,51 @@ void X68kGenericDriver::update_ym2151_irq()
     }
     ym2151_irq_asserted_ = active;
     if (mfp_enabled_) {
-        // The X68000 routes the OPM interrupt through MFP GPIP3. With the
-        // standard vector base this is vector 0x43, ahead of Timer D (0x44).
-        if (active) {
-            mfp_regs_[6] |= 0x08;
+        if (mame_mfp_) {
+            // MAME wires the YM2151 IRQ to MFP GPIO3 as an active-low input.
+            write_mfp_gpio3(active ? 0 : 1);
+        } else {
+            // The legacy bootstrap path represents the source directly as a
+            // pending MFP bit. With the standard vector base this is 0x43.
+            if (active) {
+                mfp_regs_[6] |= 0x08;
+            }
+            update_mfp_irq();
         }
-        update_mfp_irq();
     } else {
+        trace_io(active ? "irq6-assert-ym" : "irq6-clear-ym",
+                 0xe90003, ym2151_timer_status_);
         m68k_set_irq(active ? 6 : 0);
+    }
+}
+
+void X68kGenericDriver::write_mfp_gpio3(int state)
+{
+    if (!mame_mfp_) {
+        return;
+    }
+    state = state ? 1 : 0;
+    const int previous = (mfp_gpio_input_ >> 3) & 1;
+    if (state == previous) {
+        return;
+    }
+    const int active_edge = (mfp_regs_[1] >> 3) & 1;
+    if (state == active_edge && (mfp_regs_[4] & 0x08) != 0) {
+        mfp_regs_[6] |= 0x08;
+        trace_io("mfp-gpio3-edge", 3, static_cast<uint8_t>(state));
+        update_mfp_irq();
+    }
+    if (state != 0) {
+        mfp_gpio_input_ |= 0x08;
+    } else {
+        mfp_gpio_input_ &= static_cast<uint8_t>(~0x08u);
     }
 }
 
 int X68kGenericDriver::acknowledge_interrupt(int level)
 {
     if (level == 6) {
+        trace_io("irq6-ack-request", 6, static_cast<uint8_t>(mfp_irq_asserted_ ? 1 : 0));
         if (mfp_enabled_ && mfp_irq_asserted_) {
             // The MFP callback acknowledges the highest-priority request and
             // clears its pending bit before returning the source vector.
@@ -1140,7 +1310,7 @@ int X68kGenericDriver::acknowledge_interrupt(int level)
 
             for (uint8_t candidate = 0x80; candidate != 0; candidate >>= 1) {
                 if ((mfp_regs_[5] & candidate) != 0
-                    && (mfp_regs_[3] & candidate) != 0
+                    && (mame_mfp_ || (mfp_regs_[3] & candidate) != 0)
                     && (mfp_regs_[9] & candidate) != 0
                     && (mfp_regs_[7] & candidate) == 0) {
                     flag = candidate;
@@ -1156,7 +1326,7 @@ int X68kGenericDriver::acknowledge_interrupt(int level)
             if (flag == 0) {
                 for (uint8_t candidate = 0x80; candidate != 0; candidate >>= 1) {
                     if ((mfp_regs_[6] & candidate) != 0
-                        && (mfp_regs_[4] & candidate) != 0
+                        && (mame_mfp_ || (mfp_regs_[4] & candidate) != 0)
                         && (mfp_regs_[10] & candidate) != 0
                         && (mfp_regs_[8] & candidate) == 0) {
                         flag = candidate;
@@ -1177,7 +1347,8 @@ int X68kGenericDriver::acknowledge_interrupt(int level)
                     *in_service |= flag;
                 }
                 mfp_irq_asserted_ = false;
-                const uint32_t delivered_vector = (mfp_sound_timer_ == 2
+                const uint32_t delivered_vector = ((!mame_mfp_ || mfp_bootstrap_)
+                                                    && mfp_sound_timer_ == 2
                                                     && pending == &mfp_regs_[6]
                                                     && flag == 0x20)
                     ? 0x43u
@@ -1403,8 +1574,12 @@ uint8_t X68kGenericDriver::read_memory_8(uint32_t address)
     case 0xe9a005:
         return adpcm_.pan_and_rate();
     default:
-        if (mfp_enabled_ && address >= 0xe88000 && address <= 0xe8802f) {
-            return read_mfp(address);
+        if (mfp_enabled_ && address >= 0xe88000 && address <= 0xe89fff) {
+            if (address <= 0xe8802f) {
+                return read_mfp(address);
+            }
+            trace_io("mfp-unmapped-read", address, 0);
+            return 0;
         }
         if (address >= 0xeafa01 && address < 0xeafa10) {
             return read_midi(address);
@@ -1486,8 +1661,12 @@ void X68kGenericDriver::write_memory_8(uint32_t address, uint8_t data)
         adpcm_.set_pan_and_rate(data);
         break;
     default:
-        if (mfp_enabled_ && address >= 0xe88000 && address <= 0xe8802f) {
-            write_mfp(address, data);
+        if (mfp_enabled_ && address >= 0xe88000 && address <= 0xe89fff) {
+            if (address <= 0xe8802f) {
+                write_mfp(address, data);
+            } else {
+                trace_io("mfp-unmapped-write", address, data);
+            }
             break;
         }
         if (address >= 0xeafa01 && address < 0xeafa10) {
