@@ -57,19 +57,26 @@ jobs:
       - name: Bootstrap vcpkg
         shell: bash
         run: |
-          git clone --depth 1 https://github.com/microsoft/vcpkg.git "$RUNNER_TEMP/vcpkg"
+          VCPKG_ROOT_UNIX="$RUNNER_TEMP/vcpkg"
+          VCPKG_ROOT_NATIVE="$VCPKG_ROOT_UNIX"
           if [ "${{ runner.os }}" = "Windows" ]; then
-            cmd.exe /c "$(cygpath -w "$RUNNER_TEMP/vcpkg/bootstrap-vcpkg.bat") -disableMetrics"
-          else
-            "$RUNNER_TEMP/vcpkg/bootstrap-vcpkg.sh" -disableMetrics
+            VCPKG_ROOT_UNIX="$(cygpath -u "$RUNNER_TEMP")/vcpkg"
+            VCPKG_ROOT_NATIVE="$(cygpath -w "$VCPKG_ROOT_UNIX")"
           fi
-          echo "VCPKG_ROOT=$RUNNER_TEMP/vcpkg" >> "$GITHUB_ENV"
+          git clone --depth 1 https://github.com/microsoft/vcpkg.git "$VCPKG_ROOT_UNIX"
+          if [ "${{ runner.os }}" = "Windows" ]; then
+            cmd.exe /c "$(cygpath -w "$VCPKG_ROOT_UNIX/bootstrap-vcpkg.bat") -disableMetrics"
+          else
+            "$VCPKG_ROOT_UNIX/bootstrap-vcpkg.sh" -disableMetrics
+          fi
+          echo "VCPKG_ROOT=$VCPKG_ROOT_NATIVE" >> "$GITHUB_ENV"
+          echo "VCPKG_ROOT_UNIX=$VCPKG_ROOT_UNIX" >> "$GITHUB_ENV"
 
       - name: Install native dependencies
         shell: bash
         run: |
-          VCPKG="$RUNNER_TEMP/vcpkg/vcpkg"
-          if [ "${{ runner.os }}" = "Windows" ]; then VCPKG="$RUNNER_TEMP/vcpkg/vcpkg.exe"; fi
+          VCPKG="$VCPKG_ROOT_UNIX/vcpkg"
+          if [ "${{ runner.os }}" = "Windows" ]; then VCPKG="$VCPKG_ROOT_UNIX/vcpkg.exe"; fi
           "$VCPKG" install \
             --triplet "${{ matrix.triplet }}" \
             zlib sqlite3 zstd sdl3 sdl3-ttf
@@ -77,9 +84,10 @@ jobs:
       - name: Configure
         shell: bash
         run: |
+          TOOLCHAIN_FILE="$VCPKG_ROOT_NATIVE/scripts/buildsystems/vcpkg.cmake"
           cmake -S . -B build -G Ninja \
             -DCMAKE_BUILD_TYPE=Release \
-            -DCMAKE_TOOLCHAIN_FILE="$RUNNER_TEMP/vcpkg/scripts/buildsystems/vcpkg.cmake" \
+            -DCMAKE_TOOLCHAIN_FILE="$TOOLCHAIN_FILE" \
             -DVCPKG_TARGET_TRIPLET="${{ matrix.triplet }}" \
             -DHOOT_BUILD_GUI=ON
 
@@ -159,6 +167,7 @@ jobs:
           TERMUX_PKG_HOMEPAGE=https://github.com/${TERMUX_REPOSITORY}
           TERMUX_PKG_DESCRIPTION="Native Hoot sound hardware emulator"
           TERMUX_PKG_LICENSE="custom"
+          TERMUX_PKG_LICENSE_FILE="md/LICENSES.md,third_party/libkss/LICENSE.md,third_party/px68k-libretro/COPYING"
           TERMUX_PKG_MAINTAINER="Hoot contributors"
           TERMUX_PKG_VERSION=0.1.0
           TERMUX_PKG_SRCURL=file:///home/builder/termux-packages/sources/hoot.tar.gz

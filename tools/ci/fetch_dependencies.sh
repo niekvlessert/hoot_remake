@@ -37,7 +37,29 @@ sources_present() {
   done
 }
 
+patch_dependency_sources() {
+  local kmz80_header="$DEPENDENCY_ROOT/libkss/modules/kmz80/kmz80i.h"
+  local temporary_header="${kmz80_header}.tmp"
+
+  # libkss keeps the Z80 refresh high bit (R7) separate from the interrupt
+  # vector page register (I). Its pinned source revision aliases I to R7,
+  # which corrupts IM2 vector addressing after refresh cycles. Keep this small
+  # source fix in the main repository because third_party is intentionally
+  # ignored and cannot carry a working-tree change into CI.
+  if [[ -f "$kmz80_header" ]] && grep -Fq '#define I (context->regs8[REGID_R7])' "$kmz80_header"; then
+    awk '{
+      sub(/\r$/, "")
+      if ($0 == "#define I (context->regs8[REGID_R7])")
+        $0 = "#define I (context->regs8[REGID_I])"
+      print
+    }' "$kmz80_header" > "$temporary_header"
+    mv "$temporary_header" "$kmz80_header"
+    echo "Applied Hoot's KMZ80 I-register fix."
+  fi
+}
+
 if sources_present; then
+  patch_dependency_sources
   echo "Hoot vendored dependency sources are already present."
   exit 0
 fi
@@ -64,6 +86,7 @@ if [[ -f "$ARCHIVE" ]]; then
   if ((sources_present_from_archive)); then
     mkdir -p "$DEPENDENCY_ROOT"
     cp -a "$archive_root/." "$DEPENDENCY_ROOT/"
+    patch_dependency_sources
     echo "Restored Hoot vendored dependencies from $ARCHIVE."
     exit 0
   fi
@@ -99,6 +122,8 @@ clone_at_revision libvgm \
 clone_at_revision px68k-libretro \
   https://github.com/libretro/px68k-libretro.git \
   45dfd4005434d1199b01fb74a5371ec9bc513164
+
+patch_dependency_sources
 
 if ! sources_present; then
   echo "error: dependency restore completed, but required source files are missing" >&2
