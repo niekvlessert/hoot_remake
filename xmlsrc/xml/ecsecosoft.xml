@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="hoot.xsl"?>
+<!DOCTYPE gamelist [
+	<!ELEMENT gamelist (game|bind|childlists)*>
+	<!ATTLIST gamelist date CDATA #IMPLIED>
+	<!ELEMENT childlists (list)*>
+	<!ELEMENT list (#PCDATA)>
+	<!ELEMENT bind (exts,driver,options?)>
+	<!ELEMENT exts (ext)*>
+	<!ELEMENT ext (#PCDATA)>
+	<!ELEMENT game (name,driver,driveralias?,options?,romlist?,titlelist?)>
+	<!ELEMENT name (#PCDATA)>
+	<!ELEMENT driver (#PCDATA)>
+	<!ATTLIST driver type CDATA #IMPLIED>
+	<!ELEMENT driveralias (#PCDATA)>
+	<!ATTLIST driveralias type CDATA #IMPLIED>
+	<!ELEMENT options (option)*>
+	<!ELEMENT option EMPTY>
+	<!ATTLIST option name CDATA #REQUIRED
+					 value CDATA #REQUIRED>
+	<!ELEMENT romlist (rom)*>
+	<!ATTLIST romlist archive CDATA #IMPLIED>
+	<!ELEMENT rom (#PCDATA)>
+	<!ATTLIST rom type CDATA #REQUIRED
+				  offset CDATA #IMPLIED
+				  crc32 CDATA #IMPLIED>
+	<!ELEMENT titlelist (title|range)*>
+	<!ELEMENT title (#PCDATA)>
+	<!ATTLIST title code CDATA #REQUIRED
+					type CDATA #IMPLIED>
+	<!ELEMENT range (#PCDATA)>
+	<!ATTLIST range min CDATA #REQUIRED
+					max CDATA #REQUIRED
+					extcode CDATA #IMPLIED
+					start CDATA #IMPLIED>
+
+]>
+<gamelist date="2020/09/13">
+	<!-- //ECSECO Soft / ECSECO Development -->
+	<game>
+		<name>[PC-9801] SWAP</name>
+		<driver type="opna">pc98dos</driver>
+		<driveralias type="NEC PC-9801">ECSECO SOFT</driveralias>
+		<romlist archive="swap_98">
+			<rom type="file" offset="-1">TRPSCR98.COM</rom>
+			<rom type="file" offset="-1">TRPSCHRN.COM</rom>
+			<rom type="file" offset="0x00">MUSIC0.SWP</rom>
+			<rom type="file" offset="0x01">MUSIC1.SWP</rom>
+			<rom type="file" offset="0x02">MUSIC2.SWP</rom>
+			<rom type="file" offset="0x03">MUSIC3.SWP</rom>
+			<rom type="file" offset="0x04">MUSIC4.SWP</rom>
+			<rom type="file" offset="0x05">MUSIC5.SWP</rom>
+			<rom type="file" offset="0x06">MUSIC6.SWP</rom>
+			<rom type="file" offset="0x07">MUSIC7.SWP</rom>
+			<rom type="file" offset="0x08">MUSIC8.SWP</rom>
+			<rom type="shell" offset="0">TRPSCHRN</rom>
+			<rom type="shell" offset="0">TRPSCR98</rom>
+		</romlist>
+		<titlelist>
+			<title code="0x00">MUSIC0.SWP : </title>
+			<title code="0x01">MUSIC1.SWP : </title>
+			<title code="0x02">MUSIC2.SWP : </title>
+			<title code="0x03">MUSIC3.SWP : </title>
+			<title code="0x04">MUSIC4.SWP : </title>
+			<title code="0x05">MUSIC5.SWP : </title>
+			<title code="0x06">MUSIC6.SWP : </title>
+			<title code="0x07">MUSIC7.SWP : </title>
+			<title code="0x08">MUSIC8.SWP : </title>
+			<range min="0x121" max="0x12f" extcode="0">SE         : %02x</range>
+		</titlelist>
+	</game>
+</gamelist>

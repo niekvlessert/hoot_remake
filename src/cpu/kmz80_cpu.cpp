@@ -74,6 +74,26 @@ void Kmz80Cpu::set_pc(uint16_t pc)
     context_.pc = pc;
 }
 
+uint8_t Kmz80Cpu::interrupt_enable() const
+{
+    return context_.regs8[REGID_IFF1];
+}
+
+uint8_t Kmz80Cpu::interrupt_mode() const
+{
+    return context_.regs8[REGID_IMODE];
+}
+
+uint8_t Kmz80Cpu::interrupt_page() const
+{
+    return context_.regs8[REGID_I];
+}
+
+uint8_t Kmz80Cpu::interrupt_request() const
+{
+    return context_.regs8[REGID_INTREQ];
+}
+
 Uint32 Kmz80Cpu::read_memory(void* user, Uint32 address)
 {
     auto* cpu = static_cast<Kmz80Cpu*>(user);
@@ -112,6 +132,51 @@ Uint32 Kmz80Cpu::read_bus(void* user, Uint32)
 {
     auto* cpu = static_cast<Kmz80Cpu*>(user);
     return cpu->interrupt_bus_;
+}
+
+uint16_t Kmz80Cpu::af() const
+{
+    return static_cast<uint16_t>((static_cast<uint16_t>(context_.regs8[REGID_A]) << 8) | context_.regs8[REGID_F]);
+}
+
+uint16_t Kmz80Cpu::bc() const
+{
+    return static_cast<uint16_t>((static_cast<uint16_t>(context_.regs8[REGID_B]) << 8) | context_.regs8[REGID_C]);
+}
+
+uint16_t Kmz80Cpu::de() const
+{
+    return static_cast<uint16_t>((static_cast<uint16_t>(context_.regs8[REGID_D]) << 8) | context_.regs8[REGID_E]);
+}
+
+uint16_t Kmz80Cpu::hl() const
+{
+    return static_cast<uint16_t>((static_cast<uint16_t>(context_.regs8[REGID_H]) << 8) | context_.regs8[REGID_L]);
+}
+
+uint16_t Kmz80Cpu::ix() const
+{
+    return static_cast<uint16_t>((static_cast<uint16_t>(context_.regs8[REGID_IXH]) << 8) | context_.regs8[REGID_IXL]);
+}
+
+uint16_t Kmz80Cpu::iy() const
+{
+    return static_cast<uint16_t>((static_cast<uint16_t>(context_.regs8[REGID_IYH]) << 8) | context_.regs8[REGID_IYL]);
+}
+
+uint16_t Kmz80Cpu::sp() const
+{
+    return static_cast<uint16_t>(context_.sp & 0xffff);
+}
+
+uint8_t Kmz80Cpu::i() const
+{
+    return context_.regs8[REGID_I];
+}
+
+uint8_t Kmz80Cpu::r() const
+{
+    return static_cast<uint8_t>((context_.regs8[REGID_R] & 0x7f) | (context_.regs8[REGID_R7] & 0x80));
 }
 
 } // namespace hoot

@@ -1,0 +1,84 @@
+{
+  "format": "hoot-catalog-shard",
+  "version": 1,
+  "source_file": "xml/gray.xml",
+  "date": "2005/09/25",
+  "comments": [
+    " //GRAY "
+  ],
+  "games": [
+    {
+      "title": "[PC-9801] NIGHT SEEP",
+      "driver": {
+        "name": "pc98dos",
+        "type": "opn",
+        "alias": "GRAY",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "clockmul",
+          "value": "8"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "NSHEEP_98.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "VSYNCMAN.SYS",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "SNDDRV2.SYS",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "NIGHT.MFB",
+          "offset": "0x10"
+        },
+        {
+          "type": "device",
+          "path": "vsyncman.sys",
+          "offset": "0"
+        },
+        {
+          "type": "device",
+          "path": "snddrv2.sys",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "nsheep_98",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "range",
+          "min": "0x01",
+          "max": "0x08",
+          "title_format": "BGM %02x",
+          "extcode": "1"
+        },
+        {
+          "kind": "range",
+          "min": "0x09",
+          "max": "0x12",
+          "title_format": "SE %02x",
+          "extcode": "1"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/gray.xml",
+      "source_order": 2333,
+      "archive": "nghtseep_98",
+      "id": "nghtseep-98-opn"
+    }
+  ]
+}

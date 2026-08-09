@@ -1,0 +1,7529 @@
+{
+  "format": "hoot-catalog-shard",
+  "version": 1,
+  "source_file": "xml/panther.xml",
+  "date": "2005/09/25",
+  "comments": [
+    " //スタジオパンサー "
+  ],
+  "games": [
+    {
+      "title": "[PC-8801] 神の聖都(OPNA)",
+      "driver": {
+        "name": "pc88",
+        "type": "opna",
+        "alias": "スタジオパンサー",
+        "platform": "NEC PC-8801"
+      },
+      "options": [
+        {
+          "name": "mdata_addr",
+          "value": "0xd000"
+        },
+        {
+          "name": "mdata_size",
+          "value": "0x1000"
+        },
+        {
+          "name": "vdata_addr",
+          "value": "0xb000"
+        },
+        {
+          "name": "vdata_size",
+          "value": "0x2000"
+        },
+        {
+          "name": "vfile_size",
+          "value": "0x2000"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "PATCH",
+          "offset": "0x0000"
+        },
+        {
+          "type": "code",
+          "path": "DRIVER01.BIN",
+          "offset": "0xe100"
+        },
+        {
+          "type": "code",
+          "path": "DRIVER02.BIN",
+          "offset": "0x9000"
+        },
+        {
+          "type": "bgm",
+          "path": "mdat01",
+          "offset": "0x00"
+        },
+        {
+          "type": "voice",
+          "path": "2000.dat",
+          "offset": "0x00"
+        },
+        {
+          "type": "bgm",
+          "path": "mdat02",
+          "offset": "0x01"
+        },
+        {
+          "type": "voice",
+          "path": "mdat021",
+          "offset": "0x01"
+        },
+        {
+          "type": "bgm",
+          "path": "mdat03",
+          "offset": "0x02"
+        },
+        {
+          "type": "voice",
+          "path": "2000.dat",
+          "offset": "0x02"
+        },
+        {
+          "type": "bgm",
+          "path": "1000.dat",
+          "offset": "0x03"
+        },
+        {
+          "type": "voice",
+          "path": "mdat041",
+          "offset": "0x03"
+        },
+        {
+          "type": "bgm",
+          "path": "mdat05",
+          "offset": "0x04"
+        },
+        {
+          "type": "voice",
+          "path": "2000.dat",
+          "offset": "0x04"
+        },
+        {
+          "type": "bgm",
+          "path": "mdat06",
+          "offset": "0x05"
+        },
+        {
+          "type": "voice",
+          "path": "mdat061",
+          "offset": "0x05"
+        },
+        {
+          "type": "bgm",
+          "path": "1000.dat",
+          "offset": "0x06"
+        },
+        {
+          "type": "voice",
+          "path": "mdat071",
+          "offset": "0x06"
+        },
+        {
+          "type": "bgm",
+          "path": "mdat08",
+          "offset": "0x07"
+        },
+        {
+          "type": "voice",
+          "path": "2000.dat",
+          "offset": "0x07"
+        },
+        {
+          "type": "bgm",
+          "path": "mdat09",
+          "offset": "0x08"
+        },
+        {
+          "type": "voice",
+          "path": "mdat091",
+          "offset": "0x08"
+        },
+        {
+          "type": "bgm",
+          "path": "mdat10",
+          "offset": "0x09"
+        },
+        {
+          "type": "voice",
+          "path": "2000.dat",
+          "offset": "0x09"
+        },
+        {
+          "type": "bgm",
+          "path": "1000.dat",
+          "offset": "0x10"
+        },
+        {
+          "type": "voice",
+          "path": "mdat111",
+          "offset": "0x10"
+        },
+        {
+          "type": "bgm",
+          "path": "mdat12",
+          "offset": "0x11"
+        },
+        {
+          "type": "voice",
+          "path": "2000.dat",
+          "offset": "0x11"
+        },
+        {
+          "type": "bgm",
+          "path": "mdat13",
+          "offset": "0x12"
+        },
+        {
+          "type": "voice",
+          "path": "2000.dat",
+          "offset": "0x12"
+        },
+        {
+          "type": "bgm",
+          "path": "mdat14",
+          "offset": "0x13"
+        },
+        {
+          "type": "voice",
+          "path": "2000.dat",
+          "offset": "0x13"
+        },
+        {
+          "type": "bgm",
+          "path": "mdat15",
+          "offset": "0x14"
+        },
+        {
+          "type": "voice",
+          "path": "2000.dat",
+          "offset": "0x14"
+        },
+        {
+          "type": "bgm",
+          "path": "mdat16",
+          "offset": "0x15"
+        },
+        {
+          "type": "voice",
+          "path": "2000.dat",
+          "offset": "0x15"
+        },
+        {
+          "type": "bgm",
+          "path": "mdat17",
+          "offset": "0x16"
+        },
+        {
+          "type": "voice",
+          "path": "2000.dat",
+          "offset": "0x16"
+        },
+        {
+          "type": "bgm",
+          "path": "mdat18",
+          "offset": "0x17"
+        },
+        {
+          "type": "voice",
+          "path": "2000.dat",
+          "offset": "0x17"
+        },
+        {
+          "type": "bgm",
+          "path": "mdat19",
+          "offset": "0x18"
+        },
+        {
+          "type": "voice",
+          "path": "2000.dat",
+          "offset": "0x18"
+        },
+        {
+          "type": "bgm",
+          "path": "mdat20",
+          "offset": "0x19"
+        },
+        {
+          "type": "voice",
+          "path": "2000.dat",
+          "offset": "0x19"
+        },
+        {
+          "type": "bgm",
+          "path": "mdat21",
+          "offset": "0x20"
+        },
+        {
+          "type": "voice",
+          "path": "2000.dat",
+          "offset": "0x20"
+        },
+        {
+          "type": "bgm",
+          "path": "mdat22",
+          "offset": "0x21"
+        },
+        {
+          "type": "voice",
+          "path": "2000.dat",
+          "offset": "0x21"
+        },
+        {
+          "type": "bgm",
+          "path": "mdat23",
+          "offset": "0x22"
+        },
+        {
+          "type": "voice",
+          "path": "mdat231",
+          "offset": "0x22"
+        },
+        {
+          "type": "bgm",
+          "path": "mdat24",
+          "offset": "0x23"
+        },
+        {
+          "type": "voice",
+          "path": "2000.dat",
+          "offset": "0x23"
+        },
+        {
+          "type": "bgm",
+          "path": "mdat25",
+          "offset": "0x24"
+        },
+        {
+          "type": "voice",
+          "path": "2000.dat",
+          "offset": "0x24"
+        },
+        {
+          "type": "bgm",
+          "path": "mdat26",
+          "offset": "0x25"
+        },
+        {
+          "type": "voice",
+          "path": "2000.dat",
+          "offset": "0x25"
+        },
+        {
+          "type": "bgm",
+          "path": "mdat27",
+          "offset": "0x26"
+        },
+        {
+          "type": "voice",
+          "path": "2000.dat",
+          "offset": "0x26"
+        },
+        {
+          "type": "bgm",
+          "path": "mdat28",
+          "offset": "0x27"
+        },
+        {
+          "type": "voice",
+          "path": "2000.dat",
+          "offset": "0x27"
+        },
+        {
+          "type": "bgm",
+          "path": "mdat29",
+          "offset": "0x28"
+        },
+        {
+          "type": "voice",
+          "path": "2000.dat",
+          "offset": "0x28"
+        },
+        {
+          "type": "bgm",
+          "path": "mdat30",
+          "offset": "0x29"
+        },
+        {
+          "type": "voice",
+          "path": "2000.dat",
+          "offset": "0x29"
+        },
+        {
+          "type": "bgm",
+          "path": "mdat31",
+          "offset": "0x30"
+        },
+        {
+          "type": "voice",
+          "path": "2000.dat",
+          "offset": "0x30"
+        },
+        {
+          "type": "bgm",
+          "path": "mdat32",
+          "offset": "0x31"
+        },
+        {
+          "type": "voice",
+          "path": "2000.dat",
+          "offset": "0x31"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x05",
+          "title": "open   : 神の聖都のテーマ"
+        },
+        {
+          "kind": "title",
+          "code": "0x03",
+          "title": "demo1  : オープニングデモ1"
+        },
+        {
+          "kind": "title",
+          "code": "0x04",
+          "title": "demo2  : オープニングデモ2"
+        },
+        {
+          "kind": "title",
+          "code": "0x06",
+          "title": "demo3  : オープニングデモ3"
+        },
+        {
+          "kind": "title",
+          "code": "0x00",
+          "title": "shop   : アレック商会"
+        },
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "bar    : 酒場"
+        },
+        {
+          "kind": "title",
+          "code": "0x07",
+          "title": "doctor : ハイツン先生の病院"
+        },
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "run    : 移動(走る)"
+        },
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "walk   : 移動(歩く)"
+        },
+        {
+          "kind": "title",
+          "code": "0x08",
+          "title": "fight  : 戦闘"
+        },
+        {
+          "kind": "title",
+          "code": "0x09",
+          "title": "fear   : 病院の襲撃"
+        },
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "mushi  : 戦慄の蟲"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "norton : ノートンの過去"
+        },
+        {
+          "kind": "title",
+          "code": "0x14",
+          "title": "shar   : ノートンとシャーマス"
+        },
+        {
+          "kind": "title",
+          "code": "0x15",
+          "title": "shinden: 神殿"
+        },
+        {
+          "kind": "title",
+          "code": "0x16",
+          "title": "shrine : 神殿の中"
+        },
+        {
+          "kind": "title",
+          "code": "0x17",
+          "title": "hardsh : アルフィスへの試練"
+        },
+        {
+          "kind": "title",
+          "code": "0x18",
+          "title": "felna  : フェルナンドの家"
+        },
+        {
+          "kind": "title",
+          "code": "0x19",
+          "title": "war    : 事件発生"
+        },
+        {
+          "kind": "title",
+          "code": "0x20",
+          "title": "jina   : 逃亡してきたジナ"
+        },
+        {
+          "kind": "title",
+          "code": "0x21",
+          "title": "ranon  : ラノン登場"
+        },
+        {
+          "kind": "title",
+          "code": "0x22",
+          "title": "vsranon: ラノンとの戦い"
+        },
+        {
+          "kind": "title",
+          "code": "0x23",
+          "title": "file   : フィレンVSラノン"
+        },
+        {
+          "kind": "title",
+          "code": "0x24",
+          "title": "after  : 戦いのあとで"
+        },
+        {
+          "kind": "title",
+          "code": "0x25",
+          "title": "confess: 由加利とジナの関係"
+        },
+        {
+          "kind": "title",
+          "code": "0x02",
+          "title": "ruin   : 敵・本拠地"
+        },
+        {
+          "kind": "title",
+          "code": "0x26",
+          "title": "murd   : 3番目の部屋"
+        },
+        {
+          "kind": "title",
+          "code": "0x27",
+          "title": "wall   : 人間の壁"
+        },
+        {
+          "kind": "title",
+          "code": "0x28",
+          "title": "dalta  : ダルダルート"
+        },
+        {
+          "kind": "title",
+          "code": "0x29",
+          "title": "yukari : ショック～由加利の死1"
+        },
+        {
+          "kind": "title",
+          "code": "0x30",
+          "title": "yukari2: 由加利の死2"
+        },
+        {
+          "kind": "title",
+          "code": "0x31",
+          "title": "end1   : エンディング1"
+        },
+        {
+          "kind": "title",
+          "code": "0x05",
+          "title": "end2   : エンディング2"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/panther.xml",
+      "source_order": 3564,
+      "archive": "kami",
+      "id": "kami-opna"
+    },
+    {
+      "title": "[PC-8801] 神の聖都(OPN)",
+      "driver": {
+        "name": "pc88",
+        "type": "opn",
+        "alias": "スタジオパンサー",
+        "platform": "NEC PC-8801"
+      },
+      "options": [
+        {
+          "name": "mdata_addr",
+          "value": "0xd000"
+        },
+        {
+          "name": "mdata_size",
+          "value": "0x1000"
+        },
+        {
+          "name": "vdata_addr",
+          "value": "0xb000"
+        },
+        {
+          "name": "vdata_size",
+          "value": "0x2000"
+        },
+        {
+          "name": "vfile_size",
+          "value": "0x2000"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "PATCH2",
+          "offset": "0x0000"
+        },
+        {
+          "type": "code",
+          "path": "DRIVER01.BIN",
+          "offset": "0xe100"
+        },
+        {
+          "type": "code",
+          "path": "DRIVER02.BIN",
+          "offset": "0x9000"
+        },
+        {
+          "type": "bgm",
+          "path": "mdat01",
+          "offset": "0x00"
+        },
+        {
+          "type": "voice",
+          "path": "2000.dat",
+          "offset": "0x00"
+        },
+        {
+          "type": "bgm",
+          "path": "mdat02",
+          "offset": "0x01"
+        },
+        {
+          "type": "voice",
+          "path": "mdat021",
+          "offset": "0x01"
+        },
+        {
+          "type": "bgm",
+          "path": "mdat03",
+          "offset": "0x02"
+        },
+        {
+          "type": "voice",
+          "path": "2000.dat",
+          "offset": "0x02"
+        },
+        {
+          "type": "bgm",
+          "path": "1000.dat",
+          "offset": "0x03"
+        },
+        {
+          "type": "voice",
+          "path": "mdat041",
+          "offset": "0x03"
+        },
+        {
+          "type": "bgm",
+          "path": "mdat05",
+          "offset": "0x04"
+        },
+        {
+          "type": "voice",
+          "path": "2000.dat",
+          "offset": "0x04"
+        },
+        {
+          "type": "bgm",
+          "path": "mdat06",
+          "offset": "0x05"
+        },
+        {
+          "type": "voice",
+          "path": "mdat061",
+          "offset": "0x05"
+        },
+        {
+          "type": "bgm",
+          "path": "1000.dat",
+          "offset": "0x06"
+        },
+        {
+          "type": "voice",
+          "path": "mdat071",
+          "offset": "0x06"
+        },
+        {
+          "type": "bgm",
+          "path": "mdat08",
+          "offset": "0x07"
+        },
+        {
+          "type": "voice",
+          "path": "2000.dat",
+          "offset": "0x07"
+        },
+        {
+          "type": "bgm",
+          "path": "mdat09",
+          "offset": "0x08"
+        },
+        {
+          "type": "voice",
+          "path": "mdat091",
+          "offset": "0x08"
+        },
+        {
+          "type": "bgm",
+          "path": "mdat10",
+          "offset": "0x09"
+        },
+        {
+          "type": "voice",
+          "path": "2000.dat",
+          "offset": "0x09"
+        },
+        {
+          "type": "bgm",
+          "path": "1000.dat",
+          "offset": "0x10"
+        },
+        {
+          "type": "voice",
+          "path": "mdat111",
+          "offset": "0x10"
+        },
+        {
+          "type": "bgm",
+          "path": "mdat12",
+          "offset": "0x11"
+        },
+        {
+          "type": "voice",
+          "path": "2000.dat",
+          "offset": "0x11"
+        },
+        {
+          "type": "bgm",
+          "path": "mdat13",
+          "offset": "0x12"
+        },
+        {
+          "type": "voice",
+          "path": "2000.dat",
+          "offset": "0x12"
+        },
+        {
+          "type": "bgm",
+          "path": "mdat14",
+          "offset": "0x13"
+        },
+        {
+          "type": "voice",
+          "path": "2000.dat",
+          "offset": "0x13"
+        },
+        {
+          "type": "bgm",
+          "path": "mdat15",
+          "offset": "0x14"
+        },
+        {
+          "type": "voice",
+          "path": "2000.dat",
+          "offset": "0x14"
+        },
+        {
+          "type": "bgm",
+          "path": "mdat16",
+          "offset": "0x15"
+        },
+        {
+          "type": "voice",
+          "path": "2000.dat",
+          "offset": "0x15"
+        },
+        {
+          "type": "bgm",
+          "path": "mdat17",
+          "offset": "0x16"
+        },
+        {
+          "type": "voice",
+          "path": "2000.dat",
+          "offset": "0x16"
+        },
+        {
+          "type": "bgm",
+          "path": "mdat18",
+          "offset": "0x17"
+        },
+        {
+          "type": "voice",
+          "path": "2000.dat",
+          "offset": "0x17"
+        },
+        {
+          "type": "bgm",
+          "path": "mdat19",
+          "offset": "0x18"
+        },
+        {
+          "type": "voice",
+          "path": "2000.dat",
+          "offset": "0x18"
+        },
+        {
+          "type": "bgm",
+          "path": "mdat20",
+          "offset": "0x19"
+        },
+        {
+          "type": "voice",
+          "path": "2000.dat",
+          "offset": "0x19"
+        },
+        {
+          "type": "bgm",
+          "path": "mdat21",
+          "offset": "0x20"
+        },
+        {
+          "type": "voice",
+          "path": "2000.dat",
+          "offset": "0x20"
+        },
+        {
+          "type": "bgm",
+          "path": "mdat22",
+          "offset": "0x21"
+        },
+        {
+          "type": "voice",
+          "path": "2000.dat",
+          "offset": "0x21"
+        },
+        {
+          "type": "bgm",
+          "path": "mdat23",
+          "offset": "0x22"
+        },
+        {
+          "type": "voice",
+          "path": "mdat231",
+          "offset": "0x22"
+        },
+        {
+          "type": "bgm",
+          "path": "mdat24",
+          "offset": "0x23"
+        },
+        {
+          "type": "voice",
+          "path": "2000.dat",
+          "offset": "0x23"
+        },
+        {
+          "type": "bgm",
+          "path": "mdat25",
+          "offset": "0x24"
+        },
+        {
+          "type": "voice",
+          "path": "2000.dat",
+          "offset": "0x24"
+        },
+        {
+          "type": "bgm",
+          "path": "mdat26",
+          "offset": "0x25"
+        },
+        {
+          "type": "voice",
+          "path": "2000.dat",
+          "offset": "0x25"
+        },
+        {
+          "type": "bgm",
+          "path": "mdat27",
+          "offset": "0x26"
+        },
+        {
+          "type": "voice",
+          "path": "2000.dat",
+          "offset": "0x26"
+        },
+        {
+          "type": "bgm",
+          "path": "mdat28",
+          "offset": "0x27"
+        },
+        {
+          "type": "voice",
+          "path": "2000.dat",
+          "offset": "0x27"
+        },
+        {
+          "type": "bgm",
+          "path": "mdat29",
+          "offset": "0x28"
+        },
+        {
+          "type": "voice",
+          "path": "2000.dat",
+          "offset": "0x28"
+        },
+        {
+          "type": "bgm",
+          "path": "mdat30",
+          "offset": "0x29"
+        },
+        {
+          "type": "voice",
+          "path": "2000.dat",
+          "offset": "0x29"
+        },
+        {
+          "type": "bgm",
+          "path": "mdat31",
+          "offset": "0x30"
+        },
+        {
+          "type": "voice",
+          "path": "2000.dat",
+          "offset": "0x30"
+        },
+        {
+          "type": "bgm",
+          "path": "mdat32",
+          "offset": "0x31"
+        },
+        {
+          "type": "voice",
+          "path": "2000.dat",
+          "offset": "0x31"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x05",
+          "title": "open   : 神の聖都のテーマ"
+        },
+        {
+          "kind": "title",
+          "code": "0x03",
+          "title": "demo1  : オープニングデモ1"
+        },
+        {
+          "kind": "title",
+          "code": "0x04",
+          "title": "demo2  : オープニングデモ2"
+        },
+        {
+          "kind": "title",
+          "code": "0x06",
+          "title": "demo3  : オープニングデモ3"
+        },
+        {
+          "kind": "title",
+          "code": "0x00",
+          "title": "shop   : アレック商会"
+        },
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "bar    : 酒場"
+        },
+        {
+          "kind": "title",
+          "code": "0x07",
+          "title": "doctor : ハイツン先生の病院"
+        },
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "run    : 移動(走る)"
+        },
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "walk   : 移動(歩く)"
+        },
+        {
+          "kind": "title",
+          "code": "0x08",
+          "title": "fight  : 戦闘"
+        },
+        {
+          "kind": "title",
+          "code": "0x09",
+          "title": "fear   : 病院の襲撃"
+        },
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "mushi  : 戦慄の蟲"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "norton : ノートンの過去"
+        },
+        {
+          "kind": "title",
+          "code": "0x14",
+          "title": "shar   : ノートンとシャーマス"
+        },
+        {
+          "kind": "title",
+          "code": "0x15",
+          "title": "shinden: 神殿"
+        },
+        {
+          "kind": "title",
+          "code": "0x16",
+          "title": "shrine : 神殿の中"
+        },
+        {
+          "kind": "title",
+          "code": "0x17",
+          "title": "hardsh : アルフィスへの試練"
+        },
+        {
+          "kind": "title",
+          "code": "0x18",
+          "title": "felna  : フェルナンドの家"
+        },
+        {
+          "kind": "title",
+          "code": "0x19",
+          "title": "war    : 事件発生"
+        },
+        {
+          "kind": "title",
+          "code": "0x20",
+          "title": "jina   : 逃亡してきたジナ"
+        },
+        {
+          "kind": "title",
+          "code": "0x21",
+          "title": "ranon  : ラノン登場"
+        },
+        {
+          "kind": "title",
+          "code": "0x22",
+          "title": "vsranon: ラノンとの戦い"
+        },
+        {
+          "kind": "title",
+          "code": "0x23",
+          "title": "file   : フィレンVSラノン"
+        },
+        {
+          "kind": "title",
+          "code": "0x24",
+          "title": "after  : 戦いのあとで"
+        },
+        {
+          "kind": "title",
+          "code": "0x25",
+          "title": "confess: 由加利とジナの関係"
+        },
+        {
+          "kind": "title",
+          "code": "0x02",
+          "title": "ruin   : 敵・本拠地"
+        },
+        {
+          "kind": "title",
+          "code": "0x26",
+          "title": "murd   : 3番目の部屋"
+        },
+        {
+          "kind": "title",
+          "code": "0x27",
+          "title": "wall   : 人間の壁"
+        },
+        {
+          "kind": "title",
+          "code": "0x28",
+          "title": "dalta  : ダルダルート"
+        },
+        {
+          "kind": "title",
+          "code": "0x29",
+          "title": "yukari : ショック～由加利の死1"
+        },
+        {
+          "kind": "title",
+          "code": "0x30",
+          "title": "yukari2: 由加利の死2"
+        },
+        {
+          "kind": "title",
+          "code": "0x31",
+          "title": "end1   : エンディング1"
+        },
+        {
+          "kind": "title",
+          "code": "0x05",
+          "title": "end2   : エンディング2"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/panther.xml",
+      "source_order": 3565,
+      "archive": "kami",
+      "id": "kami-opn"
+    },
+    {
+      "title": "[PC-9801] Lesser Mern",
+      "driver": {
+        "name": "pc98vx",
+        "type": "opn",
+        "alias": "スタジオパンサー",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "bootcs",
+          "value": "0x0060"
+        },
+        {
+          "name": "bootip",
+          "value": "0x0000"
+        },
+        {
+          "name": "funcvect",
+          "value": "0x7f"
+        },
+        {
+          "name": "dataaddr",
+          "value": "0x20000"
+        },
+        {
+          "name": "filesize",
+          "value": "0x6000"
+        },
+        {
+          "name": "clockmul",
+          "value": "8"
+        },
+        {
+          "name": "datamax",
+          "value": "0x3c"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "msc.bin",
+          "offset": "0x00600"
+        },
+        {
+          "type": "code",
+          "path": "MSC",
+          "offset": "0x10000"
+        },
+        {
+          "type": "code",
+          "path": "SND",
+          "offset": "0x18000"
+        },
+        {
+          "type": "bgm",
+          "path": "M01",
+          "offset": "0x01"
+        },
+        {
+          "type": "bgm",
+          "path": "M02",
+          "offset": "0x02"
+        },
+        {
+          "type": "bgm",
+          "path": "M03",
+          "offset": "0x03"
+        },
+        {
+          "type": "bgm",
+          "path": "M04",
+          "offset": "0x04"
+        },
+        {
+          "type": "bgm",
+          "path": "M05",
+          "offset": "0x05"
+        },
+        {
+          "type": "bgm",
+          "path": "M06",
+          "offset": "0x06"
+        },
+        {
+          "type": "bgm",
+          "path": "M07",
+          "offset": "0x07"
+        },
+        {
+          "type": "bgm",
+          "path": "M08",
+          "offset": "0x08"
+        },
+        {
+          "type": "bgm",
+          "path": "M09",
+          "offset": "0x09"
+        },
+        {
+          "type": "bgm",
+          "path": "M10",
+          "offset": "0x0a"
+        },
+        {
+          "type": "bgm",
+          "path": "M11",
+          "offset": "0x0b"
+        },
+        {
+          "type": "bgm",
+          "path": "M12",
+          "offset": "0x0c"
+        },
+        {
+          "type": "bgm",
+          "path": "M13",
+          "offset": "0x0d"
+        },
+        {
+          "type": "bgm",
+          "path": "M14",
+          "offset": "0x0e"
+        },
+        {
+          "type": "bgm",
+          "path": "M15",
+          "offset": "0x0f"
+        },
+        {
+          "type": "bgm",
+          "path": "M16",
+          "offset": "0x10"
+        },
+        {
+          "type": "bgm",
+          "path": "M17",
+          "offset": "0x11"
+        },
+        {
+          "type": "bgm",
+          "path": "M18",
+          "offset": "0x12"
+        },
+        {
+          "type": "bgm",
+          "path": "M19",
+          "offset": "0x13"
+        },
+        {
+          "type": "bgm",
+          "path": "M20",
+          "offset": "0x14"
+        },
+        {
+          "type": "bgm",
+          "path": "M21",
+          "offset": "0x15"
+        },
+        {
+          "type": "bgm",
+          "path": "M22",
+          "offset": "0x16"
+        },
+        {
+          "type": "bgm",
+          "path": "M23",
+          "offset": "0x17"
+        },
+        {
+          "type": "bgm",
+          "path": "M24",
+          "offset": "0x18"
+        },
+        {
+          "type": "bgm",
+          "path": "M25",
+          "offset": "0x19"
+        },
+        {
+          "type": "bgm",
+          "path": "M26",
+          "offset": "0x1a"
+        },
+        {
+          "type": "bgm",
+          "path": "M27",
+          "offset": "0x1b"
+        },
+        {
+          "type": "bgm",
+          "path": "M28",
+          "offset": "0x1c"
+        },
+        {
+          "type": "bgm",
+          "path": "M29",
+          "offset": "0x1d"
+        },
+        {
+          "type": "bgm",
+          "path": "M30",
+          "offset": "0x1e"
+        },
+        {
+          "type": "bgm",
+          "path": "M31",
+          "offset": "0x1f"
+        },
+        {
+          "type": "bgm",
+          "path": "M32",
+          "offset": "0x20"
+        },
+        {
+          "type": "bgm",
+          "path": "M33",
+          "offset": "0x21"
+        },
+        {
+          "type": "bgm",
+          "path": "M34",
+          "offset": "0x22"
+        },
+        {
+          "type": "bgm",
+          "path": "M35",
+          "offset": "0x23"
+        },
+        {
+          "type": "bgm",
+          "path": "M36",
+          "offset": "0x24"
+        },
+        {
+          "type": "bgm",
+          "path": "M37",
+          "offset": "0x25"
+        },
+        {
+          "type": "bgm",
+          "path": "M38",
+          "offset": "0x26"
+        },
+        {
+          "type": "bgm",
+          "path": "M39",
+          "offset": "0x27"
+        },
+        {
+          "type": "bgm",
+          "path": "M40",
+          "offset": "0x28"
+        },
+        {
+          "type": "bgm",
+          "path": "M41",
+          "offset": "0x29"
+        },
+        {
+          "type": "bgm",
+          "path": "M42",
+          "offset": "0x2a"
+        },
+        {
+          "type": "bgm",
+          "path": "M43",
+          "offset": "0x2b"
+        },
+        {
+          "type": "bgm",
+          "path": "M44",
+          "offset": "0x2c"
+        },
+        {
+          "type": "bgm",
+          "path": "M45",
+          "offset": "0x2d"
+        },
+        {
+          "type": "bgm",
+          "path": "M46",
+          "offset": "0x2e"
+        },
+        {
+          "type": "bgm",
+          "path": "M47",
+          "offset": "0x2f"
+        },
+        {
+          "type": "bgm",
+          "path": "M48",
+          "offset": "0x30"
+        },
+        {
+          "type": "bgm",
+          "path": "M49",
+          "offset": "0x31"
+        },
+        {
+          "type": "bgm",
+          "path": "M50",
+          "offset": "0x32"
+        },
+        {
+          "type": "bgm",
+          "path": "M51",
+          "offset": "0x33"
+        },
+        {
+          "type": "bgm",
+          "path": "M52",
+          "offset": "0x34"
+        },
+        {
+          "type": "bgm",
+          "path": "M53",
+          "offset": "0x35"
+        },
+        {
+          "type": "bgm",
+          "path": "M54",
+          "offset": "0x36"
+        },
+        {
+          "type": "bgm",
+          "path": "M55",
+          "offset": "0x37"
+        },
+        {
+          "type": "bgm",
+          "path": "M56",
+          "offset": "0x38"
+        },
+        {
+          "type": "bgm",
+          "path": "M57",
+          "offset": "0x39"
+        },
+        {
+          "type": "bgm",
+          "path": "M99",
+          "offset": "0x3a"
+        },
+        {
+          "type": "bgm",
+          "path": "MSC.DAT",
+          "offset": "0x3b"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x01003b",
+          "title": "MSC.DAT #00"
+        },
+        {
+          "kind": "title",
+          "code": "0x02003b",
+          "title": "MSC.DAT #01"
+        },
+        {
+          "kind": "title",
+          "code": "0x03003b",
+          "title": "MSC.DAT #02"
+        },
+        {
+          "kind": "title",
+          "code": "0x04003b",
+          "title": "MSC.DAT #03"
+        },
+        {
+          "kind": "title",
+          "code": "0x05003b",
+          "title": "MSC.DAT #04"
+        },
+        {
+          "kind": "title",
+          "code": "0x06003b",
+          "title": "MSC.DAT #05"
+        },
+        {
+          "kind": "title",
+          "code": "0x07003b",
+          "title": "MSC.DAT #06"
+        },
+        {
+          "kind": "title",
+          "code": "0x08003b",
+          "title": "MSC.DAT #07"
+        },
+        {
+          "kind": "title",
+          "code": "0x09003b",
+          "title": "MSC.DAT #08"
+        },
+        {
+          "kind": "title",
+          "code": "0x0a003b",
+          "title": "MSC.DAT #09"
+        },
+        {
+          "kind": "title",
+          "code": "0x0b003b",
+          "title": "MSC.DAT #0A"
+        },
+        {
+          "kind": "title",
+          "code": "0x0c003b",
+          "title": "MSC.DAT #0B"
+        },
+        {
+          "kind": "title",
+          "code": "0x0d003b",
+          "title": "MSC.DAT #0C"
+        },
+        {
+          "kind": "title",
+          "code": "0x0e003b",
+          "title": "MSC.DAT #0D"
+        },
+        {
+          "kind": "title",
+          "code": "0x0f003b",
+          "title": "MSC.DAT #0E"
+        },
+        {
+          "kind": "title",
+          "code": "0x10003b",
+          "title": "MSC.DAT #0F"
+        },
+        {
+          "kind": "title",
+          "code": "0x11003b",
+          "title": "MSC.DAT #10"
+        },
+        {
+          "kind": "title",
+          "code": "0x12003b",
+          "title": "MSC.DAT #11"
+        },
+        {
+          "kind": "title",
+          "code": "0x000001",
+          "title": "M01"
+        },
+        {
+          "kind": "title",
+          "code": "0x000002",
+          "title": "M02"
+        },
+        {
+          "kind": "title",
+          "code": "0x000003",
+          "title": "M03"
+        },
+        {
+          "kind": "title",
+          "code": "0x000004",
+          "title": "M04"
+        },
+        {
+          "kind": "title",
+          "code": "0x000005",
+          "title": "M05"
+        },
+        {
+          "kind": "title",
+          "code": "0x000006",
+          "title": "M06"
+        },
+        {
+          "kind": "title",
+          "code": "0x000007",
+          "title": "M07"
+        },
+        {
+          "kind": "title",
+          "code": "0x000008",
+          "title": "M08"
+        },
+        {
+          "kind": "title",
+          "code": "0x000009",
+          "title": "M09"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000a",
+          "title": "M10"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000b",
+          "title": "M11"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000c",
+          "title": "M12"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000d",
+          "title": "M13"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000e",
+          "title": "M14"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000f",
+          "title": "M15"
+        },
+        {
+          "kind": "title",
+          "code": "0x000010",
+          "title": "M16"
+        },
+        {
+          "kind": "title",
+          "code": "0x000011",
+          "title": "M17"
+        },
+        {
+          "kind": "title",
+          "code": "0x000012",
+          "title": "M18"
+        },
+        {
+          "kind": "title",
+          "code": "0x000013",
+          "title": "M19"
+        },
+        {
+          "kind": "title",
+          "code": "0x000014",
+          "title": "M20"
+        },
+        {
+          "kind": "title",
+          "code": "0x000015",
+          "title": "M21"
+        },
+        {
+          "kind": "title",
+          "code": "0x000016",
+          "title": "M22"
+        },
+        {
+          "kind": "title",
+          "code": "0x000017",
+          "title": "M23"
+        },
+        {
+          "kind": "title",
+          "code": "0x000018",
+          "title": "M24"
+        },
+        {
+          "kind": "title",
+          "code": "0x000019",
+          "title": "M25"
+        },
+        {
+          "kind": "title",
+          "code": "0x00001a",
+          "title": "M26"
+        },
+        {
+          "kind": "title",
+          "code": "0x00001b",
+          "title": "M27"
+        },
+        {
+          "kind": "title",
+          "code": "0x00001c",
+          "title": "M28"
+        },
+        {
+          "kind": "title",
+          "code": "0x00001d",
+          "title": "M29"
+        },
+        {
+          "kind": "title",
+          "code": "0x00001e",
+          "title": "M30"
+        },
+        {
+          "kind": "title",
+          "code": "0x00001f",
+          "title": "M31"
+        },
+        {
+          "kind": "title",
+          "code": "0x000020",
+          "title": "M32"
+        },
+        {
+          "kind": "title",
+          "code": "0x000021",
+          "title": "M33"
+        },
+        {
+          "kind": "title",
+          "code": "0x000022",
+          "title": "M34"
+        },
+        {
+          "kind": "title",
+          "code": "0x000023",
+          "title": "M35"
+        },
+        {
+          "kind": "title",
+          "code": "0x000024",
+          "title": "M36"
+        },
+        {
+          "kind": "title",
+          "code": "0x000025",
+          "title": "M37"
+        },
+        {
+          "kind": "title",
+          "code": "0x000026",
+          "title": "M38"
+        },
+        {
+          "kind": "title",
+          "code": "0x000027",
+          "title": "M39"
+        },
+        {
+          "kind": "title",
+          "code": "0x000028",
+          "title": "M40"
+        },
+        {
+          "kind": "title",
+          "code": "0x000029",
+          "title": "M41"
+        },
+        {
+          "kind": "title",
+          "code": "0x00002a",
+          "title": "M42"
+        },
+        {
+          "kind": "title",
+          "code": "0x00002b",
+          "title": "M43"
+        },
+        {
+          "kind": "title",
+          "code": "0x00002c",
+          "title": "M44"
+        },
+        {
+          "kind": "title",
+          "code": "0x00002d",
+          "title": "M45"
+        },
+        {
+          "kind": "title",
+          "code": "0x00002e",
+          "title": "M46"
+        },
+        {
+          "kind": "title",
+          "code": "0x00002f",
+          "title": "M47"
+        },
+        {
+          "kind": "title",
+          "code": "0x000030",
+          "title": "M48"
+        },
+        {
+          "kind": "title",
+          "code": "0x000031",
+          "title": "M49"
+        },
+        {
+          "kind": "title",
+          "code": "0x000032",
+          "title": "M50"
+        },
+        {
+          "kind": "title",
+          "code": "0x000033",
+          "title": "M51"
+        },
+        {
+          "kind": "title",
+          "code": "0x000034",
+          "title": "M52"
+        },
+        {
+          "kind": "title",
+          "code": "0x000035",
+          "title": "M53"
+        },
+        {
+          "kind": "title",
+          "code": "0x000036",
+          "title": "M54"
+        },
+        {
+          "kind": "title",
+          "code": "0x000037",
+          "title": "M55"
+        },
+        {
+          "kind": "title",
+          "code": "0x000038",
+          "title": "M56"
+        },
+        {
+          "kind": "title",
+          "code": "0x000039",
+          "title": "M57"
+        },
+        {
+          "kind": "title",
+          "code": "0x00003a",
+          "title": "M99 : 演奏停止"
+        },
+        {
+          "kind": "title",
+          "code": "0x00ffff",
+          "title": "EFFECT #00"
+        },
+        {
+          "kind": "title",
+          "code": "0x01ffff",
+          "title": "EFFECT #01"
+        },
+        {
+          "kind": "title",
+          "code": "0x02ffff",
+          "title": "EFFECT #02"
+        },
+        {
+          "kind": "title",
+          "code": "0x03ffff",
+          "title": "EFFECT #03"
+        },
+        {
+          "kind": "title",
+          "code": "0x04ffff",
+          "title": "EFFECT #04"
+        },
+        {
+          "kind": "title",
+          "code": "0x05ffff",
+          "title": "EFFECT #05"
+        },
+        {
+          "kind": "title",
+          "code": "0x06ffff",
+          "title": "EFFECT #06"
+        },
+        {
+          "kind": "title",
+          "code": "0x07ffff",
+          "title": "EFFECT #07"
+        },
+        {
+          "kind": "title",
+          "code": "0x08ffff",
+          "title": "EFFECT #08"
+        },
+        {
+          "kind": "title",
+          "code": "0x09ffff",
+          "title": "EFFECT #09"
+        },
+        {
+          "kind": "title",
+          "code": "0x0affff",
+          "title": "EFFECT #0a"
+        },
+        {
+          "kind": "title",
+          "code": "0x0bffff",
+          "title": "EFFECT #0b"
+        },
+        {
+          "kind": "title",
+          "code": "0x0cffff",
+          "title": "EFFECT #0c"
+        },
+        {
+          "kind": "title",
+          "code": "0x0dffff",
+          "title": "EFFECT #0d"
+        },
+        {
+          "kind": "title",
+          "code": "0x0effff",
+          "title": "EFFECT #0e"
+        },
+        {
+          "kind": "title",
+          "code": "0x0fffff",
+          "title": "EFFECT #0f"
+        },
+        {
+          "kind": "title",
+          "code": "0x10ffff",
+          "title": "EFFECT #10"
+        },
+        {
+          "kind": "title",
+          "code": "0x11ffff",
+          "title": "EFFECT #11"
+        },
+        {
+          "kind": "title",
+          "code": "0x12ffff",
+          "title": "EFFECT #12"
+        },
+        {
+          "kind": "title",
+          "code": "0x13ffff",
+          "title": "EFFECT #13"
+        },
+        {
+          "kind": "title",
+          "code": "0x14ffff",
+          "title": "EFFECT #14"
+        },
+        {
+          "kind": "title",
+          "code": "0x15ffff",
+          "title": "EFFECT #15"
+        },
+        {
+          "kind": "title",
+          "code": "0x16ffff",
+          "title": "EFFECT #16"
+        },
+        {
+          "kind": "title",
+          "code": "0x17ffff",
+          "title": "EFFECT #17"
+        },
+        {
+          "kind": "title",
+          "code": "0x18ffff",
+          "title": "EFFECT #18"
+        },
+        {
+          "kind": "title",
+          "code": "0x19ffff",
+          "title": "EFFECT #19"
+        },
+        {
+          "kind": "title",
+          "code": "0x1affff",
+          "title": "EFFECT #1a"
+        },
+        {
+          "kind": "title",
+          "code": "0x1bffff",
+          "title": "EFFECT #1b"
+        },
+        {
+          "kind": "title",
+          "code": "0x1cffff",
+          "title": "EFFECT #1c"
+        },
+        {
+          "kind": "title",
+          "code": "0x1dffff",
+          "title": "EFFECT #1d"
+        },
+        {
+          "kind": "title",
+          "code": "0x1effff",
+          "title": "EFFECT #1e"
+        },
+        {
+          "kind": "title",
+          "code": "0x1fffff",
+          "title": "EFFECT #1f"
+        },
+        {
+          "kind": "title",
+          "code": "0x20ffff",
+          "title": "EFFECT #20"
+        },
+        {
+          "kind": "title",
+          "code": "0x21ffff",
+          "title": "EFFECT #21"
+        },
+        {
+          "kind": "title",
+          "code": "0x22ffff",
+          "title": "EFFECT #22"
+        },
+        {
+          "kind": "title",
+          "code": "0x23ffff",
+          "title": "EFFECT #23"
+        },
+        {
+          "kind": "title",
+          "code": "0x24ffff",
+          "title": "EFFECT #24"
+        },
+        {
+          "kind": "title",
+          "code": "0x25ffff",
+          "title": "EFFECT #25"
+        },
+        {
+          "kind": "title",
+          "code": "0x26ffff",
+          "title": "EFFECT #26"
+        },
+        {
+          "kind": "title",
+          "code": "0x27ffff",
+          "title": "EFFECT #27"
+        },
+        {
+          "kind": "title",
+          "code": "0x28ffff",
+          "title": "EFFECT #28"
+        },
+        {
+          "kind": "title",
+          "code": "0x29ffff",
+          "title": "EFFECT #29"
+        },
+        {
+          "kind": "title",
+          "code": "0x2affff",
+          "title": "EFFECT #2a"
+        },
+        {
+          "kind": "title",
+          "code": "0x2bffff",
+          "title": "EFFECT #2b"
+        },
+        {
+          "kind": "title",
+          "code": "0x2cffff",
+          "title": "EFFECT #2c"
+        },
+        {
+          "kind": "title",
+          "code": "0x2dffff",
+          "title": "EFFECT #2d"
+        },
+        {
+          "kind": "title",
+          "code": "0x2effff",
+          "title": "EFFECT #2e"
+        },
+        {
+          "kind": "title",
+          "code": "0x2fffff",
+          "title": "EFFECT #2f"
+        },
+        {
+          "kind": "title",
+          "code": "0x30ffff",
+          "title": "EFFECT #30"
+        },
+        {
+          "kind": "title",
+          "code": "0x31ffff",
+          "title": "EFFECT #31"
+        },
+        {
+          "kind": "title",
+          "code": "0x32ffff",
+          "title": "EFFECT #32"
+        },
+        {
+          "kind": "title",
+          "code": "0x33ffff",
+          "title": "EFFECT #33"
+        },
+        {
+          "kind": "title",
+          "code": "0x34ffff",
+          "title": "EFFECT #34"
+        },
+        {
+          "kind": "title",
+          "code": "0x35ffff",
+          "title": "EFFECT #35"
+        },
+        {
+          "kind": "title",
+          "code": "0x36ffff",
+          "title": "EFFECT #36"
+        },
+        {
+          "kind": "title",
+          "code": "0x37ffff",
+          "title": "EFFECT #37"
+        },
+        {
+          "kind": "title",
+          "code": "0x38ffff",
+          "title": "EFFECT #38"
+        },
+        {
+          "kind": "title",
+          "code": "0x39ffff",
+          "title": "EFFECT #39"
+        },
+        {
+          "kind": "title",
+          "code": "0x3affff",
+          "title": "EFFECT #3a"
+        },
+        {
+          "kind": "title",
+          "code": "0x3bffff",
+          "title": "EFFECT #3b"
+        },
+        {
+          "kind": "title",
+          "code": "0x3cffff",
+          "title": "EFFECT #3c"
+        },
+        {
+          "kind": "title",
+          "code": "0x3dffff",
+          "title": "EFFECT #3d"
+        },
+        {
+          "kind": "title",
+          "code": "0x3effff",
+          "title": "EFFECT #3e"
+        },
+        {
+          "kind": "title",
+          "code": "0x3fffff",
+          "title": "EFFECT #3f"
+        },
+        {
+          "kind": "title",
+          "code": "0x40ffff",
+          "title": "EFFECT #40"
+        },
+        {
+          "kind": "title",
+          "code": "0x41ffff",
+          "title": "EFFECT #41"
+        },
+        {
+          "kind": "title",
+          "code": "0x42ffff",
+          "title": "EFFECT #42"
+        },
+        {
+          "kind": "title",
+          "code": "0x43ffff",
+          "title": "EFFECT #43"
+        },
+        {
+          "kind": "title",
+          "code": "0x44ffff",
+          "title": "EFFECT #44"
+        },
+        {
+          "kind": "title",
+          "code": "0x45ffff",
+          "title": "EFFECT #45"
+        },
+        {
+          "kind": "title",
+          "code": "0x46ffff",
+          "title": "EFFECT #46"
+        },
+        {
+          "kind": "title",
+          "code": "0x47ffff",
+          "title": "EFFECT #47"
+        },
+        {
+          "kind": "title",
+          "code": "0x48ffff",
+          "title": "EFFECT #48"
+        },
+        {
+          "kind": "title",
+          "code": "0x49ffff",
+          "title": "EFFECT #49"
+        },
+        {
+          "kind": "title",
+          "code": "0x4affff",
+          "title": "EFFECT #4a"
+        },
+        {
+          "kind": "title",
+          "code": "0x4bffff",
+          "title": "EFFECT #4b"
+        },
+        {
+          "kind": "title",
+          "code": "0x4cffff",
+          "title": "EFFECT #4c"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/panther.xml",
+      "source_order": 3566,
+      "archive": "lesserm98",
+      "id": "lesserm98-opn"
+    },
+    {
+      "title": "[PC-9821] Lesser Mern",
+      "driver": {
+        "name": "pc98vx",
+        "type": "86",
+        "alias": "スタジオパンサー",
+        "platform": "NEC PC-9821"
+      },
+      "options": [
+        {
+          "name": "bootcs",
+          "value": "0x0060"
+        },
+        {
+          "name": "bootip",
+          "value": "0x0000"
+        },
+        {
+          "name": "funcvect",
+          "value": "0x7f"
+        },
+        {
+          "name": "dataaddr",
+          "value": "0x20000"
+        },
+        {
+          "name": "filesize",
+          "value": "0x7000"
+        },
+        {
+          "name": "clockmul",
+          "value": "8"
+        },
+        {
+          "name": "datamax",
+          "value": "0x3d"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "msc.bin",
+          "offset": "0x00600"
+        },
+        {
+          "type": "code",
+          "path": "MSCD",
+          "offset": "0x10000"
+        },
+        {
+          "type": "code",
+          "path": "SND",
+          "offset": "0x18000"
+        },
+        {
+          "type": "bgm",
+          "path": "M01",
+          "offset": "0x01"
+        },
+        {
+          "type": "bgm",
+          "path": "M02",
+          "offset": "0x02"
+        },
+        {
+          "type": "bgm",
+          "path": "M03",
+          "offset": "0x03"
+        },
+        {
+          "type": "bgm",
+          "path": "M04",
+          "offset": "0x04"
+        },
+        {
+          "type": "bgm",
+          "path": "M05",
+          "offset": "0x05"
+        },
+        {
+          "type": "bgm",
+          "path": "M06",
+          "offset": "0x06"
+        },
+        {
+          "type": "bgm",
+          "path": "M07",
+          "offset": "0x07"
+        },
+        {
+          "type": "bgm",
+          "path": "M08",
+          "offset": "0x08"
+        },
+        {
+          "type": "bgm",
+          "path": "M09",
+          "offset": "0x09"
+        },
+        {
+          "type": "bgm",
+          "path": "M10",
+          "offset": "0x0a"
+        },
+        {
+          "type": "bgm",
+          "path": "M11",
+          "offset": "0x0b"
+        },
+        {
+          "type": "bgm",
+          "path": "M12",
+          "offset": "0x0c"
+        },
+        {
+          "type": "bgm",
+          "path": "M13",
+          "offset": "0x0d"
+        },
+        {
+          "type": "bgm",
+          "path": "M14",
+          "offset": "0x0e"
+        },
+        {
+          "type": "bgm",
+          "path": "M15",
+          "offset": "0x0f"
+        },
+        {
+          "type": "bgm",
+          "path": "M16",
+          "offset": "0x10"
+        },
+        {
+          "type": "bgm",
+          "path": "M17",
+          "offset": "0x11"
+        },
+        {
+          "type": "bgm",
+          "path": "M18",
+          "offset": "0x12"
+        },
+        {
+          "type": "bgm",
+          "path": "M19",
+          "offset": "0x13"
+        },
+        {
+          "type": "bgm",
+          "path": "M20",
+          "offset": "0x14"
+        },
+        {
+          "type": "bgm",
+          "path": "M21",
+          "offset": "0x15"
+        },
+        {
+          "type": "bgm",
+          "path": "M22",
+          "offset": "0x16"
+        },
+        {
+          "type": "bgm",
+          "path": "M23",
+          "offset": "0x17"
+        },
+        {
+          "type": "bgm",
+          "path": "M24",
+          "offset": "0x18"
+        },
+        {
+          "type": "bgm",
+          "path": "M25",
+          "offset": "0x19"
+        },
+        {
+          "type": "bgm",
+          "path": "M26",
+          "offset": "0x1a"
+        },
+        {
+          "type": "bgm",
+          "path": "M27",
+          "offset": "0x1b"
+        },
+        {
+          "type": "bgm",
+          "path": "M28",
+          "offset": "0x1c"
+        },
+        {
+          "type": "bgm",
+          "path": "M29",
+          "offset": "0x1d"
+        },
+        {
+          "type": "bgm",
+          "path": "M30",
+          "offset": "0x1e"
+        },
+        {
+          "type": "bgm",
+          "path": "M31",
+          "offset": "0x1f"
+        },
+        {
+          "type": "bgm",
+          "path": "M32",
+          "offset": "0x20"
+        },
+        {
+          "type": "bgm",
+          "path": "M33",
+          "offset": "0x21"
+        },
+        {
+          "type": "bgm",
+          "path": "M34",
+          "offset": "0x22"
+        },
+        {
+          "type": "bgm",
+          "path": "M35",
+          "offset": "0x23"
+        },
+        {
+          "type": "bgm",
+          "path": "M36",
+          "offset": "0x24"
+        },
+        {
+          "type": "bgm",
+          "path": "M37",
+          "offset": "0x25"
+        },
+        {
+          "type": "bgm",
+          "path": "M38",
+          "offset": "0x26"
+        },
+        {
+          "type": "bgm",
+          "path": "M39",
+          "offset": "0x27"
+        },
+        {
+          "type": "bgm",
+          "path": "M40",
+          "offset": "0x28"
+        },
+        {
+          "type": "bgm",
+          "path": "M41",
+          "offset": "0x29"
+        },
+        {
+          "type": "bgm",
+          "path": "M42",
+          "offset": "0x2a"
+        },
+        {
+          "type": "bgm",
+          "path": "M43",
+          "offset": "0x2b"
+        },
+        {
+          "type": "bgm",
+          "path": "M44",
+          "offset": "0x2c"
+        },
+        {
+          "type": "bgm",
+          "path": "M45",
+          "offset": "0x2d"
+        },
+        {
+          "type": "bgm",
+          "path": "M46",
+          "offset": "0x2e"
+        },
+        {
+          "type": "bgm",
+          "path": "M47",
+          "offset": "0x2f"
+        },
+        {
+          "type": "bgm",
+          "path": "M48",
+          "offset": "0x30"
+        },
+        {
+          "type": "bgm",
+          "path": "M49",
+          "offset": "0x31"
+        },
+        {
+          "type": "bgm",
+          "path": "M50",
+          "offset": "0x32"
+        },
+        {
+          "type": "bgm",
+          "path": "M51",
+          "offset": "0x33"
+        },
+        {
+          "type": "bgm",
+          "path": "M52",
+          "offset": "0x34"
+        },
+        {
+          "type": "bgm",
+          "path": "M53",
+          "offset": "0x35"
+        },
+        {
+          "type": "bgm",
+          "path": "M54",
+          "offset": "0x36"
+        },
+        {
+          "type": "bgm",
+          "path": "M55",
+          "offset": "0x37"
+        },
+        {
+          "type": "bgm",
+          "path": "M56",
+          "offset": "0x38"
+        },
+        {
+          "type": "bgm",
+          "path": "M57",
+          "offset": "0x39"
+        },
+        {
+          "type": "bgm",
+          "path": "M99",
+          "offset": "0x3a"
+        },
+        {
+          "type": "bgm",
+          "path": "OMSC",
+          "offset": "0x3b"
+        },
+        {
+          "type": "bgm",
+          "path": "EMSC",
+          "offset": "0x3c"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x01003b",
+          "title": "OMSC #00"
+        },
+        {
+          "kind": "title",
+          "code": "0x02003b",
+          "title": "OMSC #01"
+        },
+        {
+          "kind": "title",
+          "code": "0x03003b",
+          "title": "OMSC #02"
+        },
+        {
+          "kind": "title",
+          "code": "0x04003b",
+          "title": "OMSC #03"
+        },
+        {
+          "kind": "title",
+          "code": "0x05003b",
+          "title": "OMSC #04"
+        },
+        {
+          "kind": "title",
+          "code": "0x06003b",
+          "title": "OMSC #05"
+        },
+        {
+          "kind": "title",
+          "code": "0x07003b",
+          "title": "OMSC #06"
+        },
+        {
+          "kind": "title",
+          "code": "0x08003b",
+          "title": "OMSC #07"
+        },
+        {
+          "kind": "title",
+          "code": "0x09003b",
+          "title": "OMSC #08"
+        },
+        {
+          "kind": "title",
+          "code": "0x01003c",
+          "title": "EMSC #00"
+        },
+        {
+          "kind": "title",
+          "code": "0x02003c",
+          "title": "EMSC #01"
+        },
+        {
+          "kind": "title",
+          "code": "0x03003c",
+          "title": "EMSC #02"
+        },
+        {
+          "kind": "title",
+          "code": "0x04003c",
+          "title": "EMSC #03"
+        },
+        {
+          "kind": "title",
+          "code": "0x05003c",
+          "title": "EMSC #04"
+        },
+        {
+          "kind": "title",
+          "code": "0x000001",
+          "title": "M01"
+        },
+        {
+          "kind": "title",
+          "code": "0x000002",
+          "title": "M02"
+        },
+        {
+          "kind": "title",
+          "code": "0x000003",
+          "title": "M03"
+        },
+        {
+          "kind": "title",
+          "code": "0x000004",
+          "title": "M04"
+        },
+        {
+          "kind": "title",
+          "code": "0x000005",
+          "title": "M05"
+        },
+        {
+          "kind": "title",
+          "code": "0x000006",
+          "title": "M06"
+        },
+        {
+          "kind": "title",
+          "code": "0x000007",
+          "title": "M07"
+        },
+        {
+          "kind": "title",
+          "code": "0x000008",
+          "title": "M08"
+        },
+        {
+          "kind": "title",
+          "code": "0x000009",
+          "title": "M09"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000a",
+          "title": "M10"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000b",
+          "title": "M11"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000c",
+          "title": "M12"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000d",
+          "title": "M13"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000e",
+          "title": "M14"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000f",
+          "title": "M15"
+        },
+        {
+          "kind": "title",
+          "code": "0x000010",
+          "title": "M16"
+        },
+        {
+          "kind": "title",
+          "code": "0x000011",
+          "title": "M17"
+        },
+        {
+          "kind": "title",
+          "code": "0x000012",
+          "title": "M18"
+        },
+        {
+          "kind": "title",
+          "code": "0x000013",
+          "title": "M19"
+        },
+        {
+          "kind": "title",
+          "code": "0x000014",
+          "title": "M20"
+        },
+        {
+          "kind": "title",
+          "code": "0x000015",
+          "title": "M21"
+        },
+        {
+          "kind": "title",
+          "code": "0x000016",
+          "title": "M22"
+        },
+        {
+          "kind": "title",
+          "code": "0x000017",
+          "title": "M23"
+        },
+        {
+          "kind": "title",
+          "code": "0x000018",
+          "title": "M24"
+        },
+        {
+          "kind": "title",
+          "code": "0x000019",
+          "title": "M25"
+        },
+        {
+          "kind": "title",
+          "code": "0x00001a",
+          "title": "M26"
+        },
+        {
+          "kind": "title",
+          "code": "0x00001b",
+          "title": "M27"
+        },
+        {
+          "kind": "title",
+          "code": "0x00001c",
+          "title": "M28"
+        },
+        {
+          "kind": "title",
+          "code": "0x00001d",
+          "title": "M29"
+        },
+        {
+          "kind": "title",
+          "code": "0x00001e",
+          "title": "M30"
+        },
+        {
+          "kind": "title",
+          "code": "0x00001f",
+          "title": "M31"
+        },
+        {
+          "kind": "title",
+          "code": "0x000020",
+          "title": "M32"
+        },
+        {
+          "kind": "title",
+          "code": "0x000021",
+          "title": "M33"
+        },
+        {
+          "kind": "title",
+          "code": "0x000022",
+          "title": "M34"
+        },
+        {
+          "kind": "title",
+          "code": "0x000023",
+          "title": "M35"
+        },
+        {
+          "kind": "title",
+          "code": "0x000024",
+          "title": "M36"
+        },
+        {
+          "kind": "title",
+          "code": "0x000025",
+          "title": "M37"
+        },
+        {
+          "kind": "title",
+          "code": "0x000026",
+          "title": "M38"
+        },
+        {
+          "kind": "title",
+          "code": "0x000027",
+          "title": "M39"
+        },
+        {
+          "kind": "title",
+          "code": "0x000028",
+          "title": "M40"
+        },
+        {
+          "kind": "title",
+          "code": "0x000029",
+          "title": "M41"
+        },
+        {
+          "kind": "title",
+          "code": "0x00002a",
+          "title": "M42"
+        },
+        {
+          "kind": "title",
+          "code": "0x00002b",
+          "title": "M43"
+        },
+        {
+          "kind": "title",
+          "code": "0x00002c",
+          "title": "M44"
+        },
+        {
+          "kind": "title",
+          "code": "0x00002d",
+          "title": "M45"
+        },
+        {
+          "kind": "title",
+          "code": "0x00002e",
+          "title": "M46"
+        },
+        {
+          "kind": "title",
+          "code": "0x00002f",
+          "title": "M47"
+        },
+        {
+          "kind": "title",
+          "code": "0x000030",
+          "title": "M48"
+        },
+        {
+          "kind": "title",
+          "code": "0x000031",
+          "title": "M49"
+        },
+        {
+          "kind": "title",
+          "code": "0x000032",
+          "title": "M50"
+        },
+        {
+          "kind": "title",
+          "code": "0x000033",
+          "title": "M51"
+        },
+        {
+          "kind": "title",
+          "code": "0x000034",
+          "title": "M52"
+        },
+        {
+          "kind": "title",
+          "code": "0x000035",
+          "title": "M53"
+        },
+        {
+          "kind": "title",
+          "code": "0x000036",
+          "title": "M54"
+        },
+        {
+          "kind": "title",
+          "code": "0x000037",
+          "title": "M55"
+        },
+        {
+          "kind": "title",
+          "code": "0x000038",
+          "title": "M56"
+        },
+        {
+          "kind": "title",
+          "code": "0x000039",
+          "title": "M57"
+        },
+        {
+          "kind": "title",
+          "code": "0x00003a",
+          "title": "M99 : 演奏停止"
+        },
+        {
+          "kind": "title",
+          "code": "0x00ffff",
+          "title": "EFFECT #00"
+        },
+        {
+          "kind": "title",
+          "code": "0x01ffff",
+          "title": "EFFECT #01"
+        },
+        {
+          "kind": "title",
+          "code": "0x02ffff",
+          "title": "EFFECT #02"
+        },
+        {
+          "kind": "title",
+          "code": "0x03ffff",
+          "title": "EFFECT #03"
+        },
+        {
+          "kind": "title",
+          "code": "0x04ffff",
+          "title": "EFFECT #04"
+        },
+        {
+          "kind": "title",
+          "code": "0x05ffff",
+          "title": "EFFECT #05"
+        },
+        {
+          "kind": "title",
+          "code": "0x06ffff",
+          "title": "EFFECT #06"
+        },
+        {
+          "kind": "title",
+          "code": "0x07ffff",
+          "title": "EFFECT #07"
+        },
+        {
+          "kind": "title",
+          "code": "0x08ffff",
+          "title": "EFFECT #08"
+        },
+        {
+          "kind": "title",
+          "code": "0x09ffff",
+          "title": "EFFECT #09"
+        },
+        {
+          "kind": "title",
+          "code": "0x0affff",
+          "title": "EFFECT #0a"
+        },
+        {
+          "kind": "title",
+          "code": "0x0bffff",
+          "title": "EFFECT #0b"
+        },
+        {
+          "kind": "title",
+          "code": "0x0cffff",
+          "title": "EFFECT #0c"
+        },
+        {
+          "kind": "title",
+          "code": "0x0dffff",
+          "title": "EFFECT #0d"
+        },
+        {
+          "kind": "title",
+          "code": "0x0effff",
+          "title": "EFFECT #0e"
+        },
+        {
+          "kind": "title",
+          "code": "0x0fffff",
+          "title": "EFFECT #0f"
+        },
+        {
+          "kind": "title",
+          "code": "0x10ffff",
+          "title": "EFFECT #10"
+        },
+        {
+          "kind": "title",
+          "code": "0x11ffff",
+          "title": "EFFECT #11"
+        },
+        {
+          "kind": "title",
+          "code": "0x12ffff",
+          "title": "EFFECT #12"
+        },
+        {
+          "kind": "title",
+          "code": "0x13ffff",
+          "title": "EFFECT #13"
+        },
+        {
+          "kind": "title",
+          "code": "0x14ffff",
+          "title": "EFFECT #14"
+        },
+        {
+          "kind": "title",
+          "code": "0x15ffff",
+          "title": "EFFECT #15"
+        },
+        {
+          "kind": "title",
+          "code": "0x16ffff",
+          "title": "EFFECT #16"
+        },
+        {
+          "kind": "title",
+          "code": "0x17ffff",
+          "title": "EFFECT #17"
+        },
+        {
+          "kind": "title",
+          "code": "0x18ffff",
+          "title": "EFFECT #18"
+        },
+        {
+          "kind": "title",
+          "code": "0x19ffff",
+          "title": "EFFECT #19"
+        },
+        {
+          "kind": "title",
+          "code": "0x1affff",
+          "title": "EFFECT #1a"
+        },
+        {
+          "kind": "title",
+          "code": "0x1bffff",
+          "title": "EFFECT #1b"
+        },
+        {
+          "kind": "title",
+          "code": "0x1cffff",
+          "title": "EFFECT #1c"
+        },
+        {
+          "kind": "title",
+          "code": "0x1dffff",
+          "title": "EFFECT #1d"
+        },
+        {
+          "kind": "title",
+          "code": "0x1effff",
+          "title": "EFFECT #1e"
+        },
+        {
+          "kind": "title",
+          "code": "0x1fffff",
+          "title": "EFFECT #1f"
+        },
+        {
+          "kind": "title",
+          "code": "0x20ffff",
+          "title": "EFFECT #20"
+        },
+        {
+          "kind": "title",
+          "code": "0x21ffff",
+          "title": "EFFECT #21"
+        },
+        {
+          "kind": "title",
+          "code": "0x22ffff",
+          "title": "EFFECT #22"
+        },
+        {
+          "kind": "title",
+          "code": "0x23ffff",
+          "title": "EFFECT #23"
+        },
+        {
+          "kind": "title",
+          "code": "0x24ffff",
+          "title": "EFFECT #24"
+        },
+        {
+          "kind": "title",
+          "code": "0x25ffff",
+          "title": "EFFECT #25"
+        },
+        {
+          "kind": "title",
+          "code": "0x26ffff",
+          "title": "EFFECT #26"
+        },
+        {
+          "kind": "title",
+          "code": "0x27ffff",
+          "title": "EFFECT #27"
+        },
+        {
+          "kind": "title",
+          "code": "0x28ffff",
+          "title": "EFFECT #28"
+        },
+        {
+          "kind": "title",
+          "code": "0x29ffff",
+          "title": "EFFECT #29"
+        },
+        {
+          "kind": "title",
+          "code": "0x2affff",
+          "title": "EFFECT #2a"
+        },
+        {
+          "kind": "title",
+          "code": "0x2bffff",
+          "title": "EFFECT #2b"
+        },
+        {
+          "kind": "title",
+          "code": "0x2cffff",
+          "title": "EFFECT #2c"
+        },
+        {
+          "kind": "title",
+          "code": "0x2dffff",
+          "title": "EFFECT #2d"
+        },
+        {
+          "kind": "title",
+          "code": "0x2effff",
+          "title": "EFFECT #2e"
+        },
+        {
+          "kind": "title",
+          "code": "0x2fffff",
+          "title": "EFFECT #2f"
+        },
+        {
+          "kind": "title",
+          "code": "0x30ffff",
+          "title": "EFFECT #30"
+        },
+        {
+          "kind": "title",
+          "code": "0x31ffff",
+          "title": "EFFECT #31"
+        },
+        {
+          "kind": "title",
+          "code": "0x32ffff",
+          "title": "EFFECT #32"
+        },
+        {
+          "kind": "title",
+          "code": "0x33ffff",
+          "title": "EFFECT #33"
+        },
+        {
+          "kind": "title",
+          "code": "0x34ffff",
+          "title": "EFFECT #34"
+        },
+        {
+          "kind": "title",
+          "code": "0x35ffff",
+          "title": "EFFECT #35"
+        },
+        {
+          "kind": "title",
+          "code": "0x36ffff",
+          "title": "EFFECT #36"
+        },
+        {
+          "kind": "title",
+          "code": "0x37ffff",
+          "title": "EFFECT #37"
+        },
+        {
+          "kind": "title",
+          "code": "0x38ffff",
+          "title": "EFFECT #38"
+        },
+        {
+          "kind": "title",
+          "code": "0x39ffff",
+          "title": "EFFECT #39"
+        },
+        {
+          "kind": "title",
+          "code": "0x3affff",
+          "title": "EFFECT #3a"
+        },
+        {
+          "kind": "title",
+          "code": "0x3bffff",
+          "title": "EFFECT #3b"
+        },
+        {
+          "kind": "title",
+          "code": "0x3cffff",
+          "title": "EFFECT #3c"
+        },
+        {
+          "kind": "title",
+          "code": "0x3dffff",
+          "title": "EFFECT #3d"
+        },
+        {
+          "kind": "title",
+          "code": "0x3effff",
+          "title": "EFFECT #3e"
+        },
+        {
+          "kind": "title",
+          "code": "0x3fffff",
+          "title": "EFFECT #3f"
+        },
+        {
+          "kind": "title",
+          "code": "0x40ffff",
+          "title": "EFFECT #40"
+        },
+        {
+          "kind": "title",
+          "code": "0x41ffff",
+          "title": "EFFECT #41"
+        },
+        {
+          "kind": "title",
+          "code": "0x42ffff",
+          "title": "EFFECT #42"
+        },
+        {
+          "kind": "title",
+          "code": "0x43ffff",
+          "title": "EFFECT #43"
+        },
+        {
+          "kind": "title",
+          "code": "0x44ffff",
+          "title": "EFFECT #44"
+        },
+        {
+          "kind": "title",
+          "code": "0x45ffff",
+          "title": "EFFECT #45"
+        },
+        {
+          "kind": "title",
+          "code": "0x46ffff",
+          "title": "EFFECT #46"
+        },
+        {
+          "kind": "title",
+          "code": "0x47ffff",
+          "title": "EFFECT #47"
+        },
+        {
+          "kind": "title",
+          "code": "0x48ffff",
+          "title": "EFFECT #48"
+        },
+        {
+          "kind": "title",
+          "code": "0x49ffff",
+          "title": "EFFECT #49"
+        },
+        {
+          "kind": "title",
+          "code": "0x4affff",
+          "title": "EFFECT #4a"
+        },
+        {
+          "kind": "title",
+          "code": "0x4bffff",
+          "title": "EFFECT #4b"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/panther.xml",
+      "source_order": 3567,
+      "archive": "lesserm9821",
+      "id": "lesserm9821-86"
+    },
+    {
+      "title": "[PC-9801] JOSHUA ～異世界伝承～",
+      "driver": {
+        "name": "pc98dos",
+        "type": "opn",
+        "alias": "スタジオパンサー",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "clockmul",
+          "value": "8"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "YOUJU_98.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "JOSHUA.EXE",
+          "offset": "-1"
+        },
+        {
+          "type": "conin",
+          "path": "JOSHUA.EXE",
+          "offset": "5"
+        },
+        {
+          "type": "file",
+          "path": "JM002",
+          "offset": "0x10"
+        },
+        {
+          "type": "file",
+          "path": "LM002",
+          "offset": "0x11"
+        },
+        {
+          "type": "file",
+          "path": "LM003",
+          "offset": "0x12"
+        },
+        {
+          "type": "file",
+          "path": "LM006",
+          "offset": "0x13"
+        },
+        {
+          "type": "file",
+          "path": "LM008",
+          "offset": "0x14"
+        },
+        {
+          "type": "shell",
+          "path": "YOUJU_98",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "JM002"
+        },
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "LM002"
+        },
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "LM003"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "LM006"
+        },
+        {
+          "kind": "title",
+          "code": "0x14",
+          "title": "LM008"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/panther.xml",
+      "source_order": 3568,
+      "archive": "joshua_98",
+      "id": "joshua-98-opn"
+    },
+    {
+      "title": "[PC-9801] ハムレット",
+      "driver": {
+        "name": "pc98vx",
+        "type": "opn",
+        "alias": "スタジオパンサー",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "bootcs",
+          "value": "0x0060"
+        },
+        {
+          "name": "bootip",
+          "value": "0x0000"
+        },
+        {
+          "name": "funcvect",
+          "value": "0x7f"
+        },
+        {
+          "name": "adressing",
+          "value": "0"
+        },
+        {
+          "name": "dataaddr",
+          "value": "0x10000"
+        },
+        {
+          "name": "filesize",
+          "value": "0x6000"
+        },
+        {
+          "name": "datamax",
+          "value": "0xff"
+        },
+        {
+          "name": "clockmul",
+          "value": "8"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "DOFMD_98.BIN",
+          "offset": "0x600"
+        },
+        {
+          "type": "code",
+          "path": "MV22",
+          "offset": "0xfa0"
+        },
+        {
+          "type": "bgm",
+          "path": "HML001",
+          "offset": "0x01"
+        },
+        {
+          "type": "bgm",
+          "path": "HML002",
+          "offset": "0x02"
+        },
+        {
+          "type": "bgm",
+          "path": "HML003",
+          "offset": "0x03"
+        },
+        {
+          "type": "bgm",
+          "path": "HML004",
+          "offset": "0x04"
+        },
+        {
+          "type": "bgm",
+          "path": "HML005",
+          "offset": "0x05"
+        },
+        {
+          "type": "bgm",
+          "path": "HML006",
+          "offset": "0x06"
+        },
+        {
+          "type": "bgm",
+          "path": "HML007",
+          "offset": "0x07"
+        },
+        {
+          "type": "bgm",
+          "path": "HML008",
+          "offset": "0x08"
+        },
+        {
+          "type": "bgm",
+          "path": "HML009",
+          "offset": "0x09"
+        },
+        {
+          "type": "bgm",
+          "path": "HML010",
+          "offset": "0x0a"
+        },
+        {
+          "type": "bgm",
+          "path": "HML011",
+          "offset": "0x0b"
+        },
+        {
+          "type": "bgm",
+          "path": "HML012",
+          "offset": "0x0c"
+        },
+        {
+          "type": "bgm",
+          "path": "HML013",
+          "offset": "0x0d"
+        },
+        {
+          "type": "bgm",
+          "path": "HML014",
+          "offset": "0x0e"
+        },
+        {
+          "type": "bgm",
+          "path": "HML015",
+          "offset": "0x0f"
+        },
+        {
+          "type": "bgm",
+          "path": "HML016",
+          "offset": "0x10"
+        },
+        {
+          "type": "bgm",
+          "path": "HML017",
+          "offset": "0x11"
+        },
+        {
+          "type": "bgm",
+          "path": "HML018",
+          "offset": "0x12"
+        },
+        {
+          "type": "bgm",
+          "path": "HML019",
+          "offset": "0x13"
+        },
+        {
+          "type": "bgm",
+          "path": "HML020",
+          "offset": "0x14"
+        },
+        {
+          "type": "bgm",
+          "path": "HML021",
+          "offset": "0x15"
+        },
+        {
+          "type": "bgm",
+          "path": "HML022",
+          "offset": "0x16"
+        },
+        {
+          "type": "bgm",
+          "path": "HML023",
+          "offset": "0x17"
+        },
+        {
+          "type": "bgm",
+          "path": "HML024",
+          "offset": "0x18"
+        },
+        {
+          "type": "bgm",
+          "path": "HML025",
+          "offset": "0x19"
+        },
+        {
+          "type": "bgm",
+          "path": "HML028",
+          "offset": "0x1a"
+        },
+        {
+          "type": "bgm",
+          "path": "HML029",
+          "offset": "0x1b"
+        },
+        {
+          "type": "bgm",
+          "path": "HML030",
+          "offset": "0x1c"
+        },
+        {
+          "type": "bgm",
+          "path": "HML031",
+          "offset": "0x1d"
+        },
+        {
+          "type": "bgm",
+          "path": "HML032",
+          "offset": "0x1e"
+        },
+        {
+          "type": "bgm",
+          "path": "HML033",
+          "offset": "0x1f"
+        },
+        {
+          "type": "bgm",
+          "path": "HML034",
+          "offset": "0x20"
+        },
+        {
+          "type": "bgm",
+          "path": "HML035",
+          "offset": "0x21"
+        },
+        {
+          "type": "bgm",
+          "path": "HML036",
+          "offset": "0x22"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "HML001"
+        },
+        {
+          "kind": "title",
+          "code": "0x02",
+          "title": "HML002"
+        },
+        {
+          "kind": "title",
+          "code": "0x03",
+          "title": "HML003"
+        },
+        {
+          "kind": "title",
+          "code": "0x04",
+          "title": "HML004"
+        },
+        {
+          "kind": "title",
+          "code": "0x05",
+          "title": "HML005"
+        },
+        {
+          "kind": "title",
+          "code": "0x06",
+          "title": "HML006"
+        },
+        {
+          "kind": "title",
+          "code": "0x07",
+          "title": "HML007"
+        },
+        {
+          "kind": "title",
+          "code": "0x08",
+          "title": "HML008"
+        },
+        {
+          "kind": "title",
+          "code": "0x09",
+          "title": "HML009"
+        },
+        {
+          "kind": "title",
+          "code": "0x0a",
+          "title": "HML010"
+        },
+        {
+          "kind": "title",
+          "code": "0x0b",
+          "title": "HML011"
+        },
+        {
+          "kind": "title",
+          "code": "0x0c",
+          "title": "HML012"
+        },
+        {
+          "kind": "title",
+          "code": "0x0d",
+          "title": "HML013"
+        },
+        {
+          "kind": "title",
+          "code": "0x0e",
+          "title": "HML014"
+        },
+        {
+          "kind": "title",
+          "code": "0x0f",
+          "title": "HML015"
+        },
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "HML016"
+        },
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "HML017"
+        },
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "HML018"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "HML019"
+        },
+        {
+          "kind": "title",
+          "code": "0x14",
+          "title": "HML020"
+        },
+        {
+          "kind": "title",
+          "code": "0x15",
+          "title": "HML021"
+        },
+        {
+          "kind": "title",
+          "code": "0x16",
+          "title": "HML022"
+        },
+        {
+          "kind": "title",
+          "code": "0x17",
+          "title": "HML023"
+        },
+        {
+          "kind": "title",
+          "code": "0x18",
+          "title": "HML024"
+        },
+        {
+          "kind": "title",
+          "code": "0x19",
+          "title": "HML025"
+        },
+        {
+          "kind": "title",
+          "code": "0x1a",
+          "title": "HML028"
+        },
+        {
+          "kind": "title",
+          "code": "0x1b",
+          "title": "HML029"
+        },
+        {
+          "kind": "title",
+          "code": "0x1c",
+          "title": "HML030"
+        },
+        {
+          "kind": "title",
+          "code": "0x1d",
+          "title": "HML031"
+        },
+        {
+          "kind": "title",
+          "code": "0x1e",
+          "title": "HML032"
+        },
+        {
+          "kind": "title",
+          "code": "0x1f",
+          "title": "HML033"
+        },
+        {
+          "kind": "title",
+          "code": "0x20",
+          "title": "HML034"
+        },
+        {
+          "kind": "title",
+          "code": "0x21",
+          "title": "HML035"
+        },
+        {
+          "kind": "title",
+          "code": "0x22",
+          "title": "HML036"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/panther.xml",
+      "source_order": 3569,
+      "archive": "hamlet_98",
+      "id": "hamlet-98-opn"
+    },
+    {
+      "title": "[X68000] JOSHUA ～異世界伝承～(OPM)",
+      "driver": {
+        "name": "x68k",
+        "type": "generic",
+        "alias": "スタジオパンサー",
+        "platform": "SHARP X68000"
+      },
+      "options": [
+        {
+          "name": "mfp",
+          "value": "0x01"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "jsh68snd.bin",
+          "offset": "0x00000"
+        },
+        {
+          "type": "x",
+          "path": "PSMSCDRV.X",
+          "offset": "0x10000"
+        },
+        {
+          "type": "code",
+          "path": "NEIRO.DT",
+          "offset": "0x14000"
+        },
+        {
+          "type": "code",
+          "path": "LM002.DT",
+          "offset": "0x16000"
+        },
+        {
+          "type": "code",
+          "path": "LM003.DT",
+          "offset": "0x18000"
+        },
+        {
+          "type": "code",
+          "path": "LM006.DT",
+          "offset": "0x1a000"
+        },
+        {
+          "type": "code",
+          "path": "LM008.DT",
+          "offset": "0x1c000"
+        },
+        {
+          "type": "code",
+          "path": "MARS.DT",
+          "offset": "0x1e000"
+        },
+        {
+          "type": "code",
+          "path": "MPCM.DT",
+          "offset": "0x22000"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x05",
+          "title": "MARS.DT  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "LM002.DT :"
+        },
+        {
+          "kind": "title",
+          "code": "0x02",
+          "title": "LM003.DT :"
+        },
+        {
+          "kind": "title",
+          "code": "0x03",
+          "title": "LM006.DT :"
+        },
+        {
+          "kind": "title",
+          "code": "0x04",
+          "title": "LM008.DT :"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/panther.xml",
+      "source_order": 3570,
+      "archive": "joshua68snd",
+      "id": "joshua68snd-generic"
+    },
+    {
+      "title": "[X68000] JOSHUA ～異世界伝承～(MT-32)",
+      "driver": {
+        "name": "x68k",
+        "type": "generic",
+        "alias": "スタジオパンサー",
+        "platform": "SHARP X68000"
+      },
+      "options": [
+        {
+          "name": "midiout",
+          "value": "1"
+        },
+        {
+          "name": "midiout_type",
+          "value": "2"
+        },
+        {
+          "name": "mfp",
+          "value": "0x01"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "jsh68mt.bin",
+          "offset": "0x00000"
+        },
+        {
+          "type": "x",
+          "path": "PSMSCDRV.X",
+          "offset": "0x10000"
+        },
+        {
+          "type": "code",
+          "path": "NEIRO.DT",
+          "offset": "0x14000"
+        },
+        {
+          "type": "code",
+          "path": "LM002.DTM",
+          "offset": "0x16000"
+        },
+        {
+          "type": "code",
+          "path": "LM003.DTM",
+          "offset": "0x18000"
+        },
+        {
+          "type": "code",
+          "path": "LM006.DTM",
+          "offset": "0x1a000"
+        },
+        {
+          "type": "code",
+          "path": "LM008.DTM",
+          "offset": "0x1c000"
+        },
+        {
+          "type": "code",
+          "path": "MARS.DTM",
+          "offset": "0x1e000"
+        },
+        {
+          "type": "code",
+          "path": "MPCM.DT",
+          "offset": "0x22000"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x05",
+          "title": "MARS.DTM  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "LM002.DTM :"
+        },
+        {
+          "kind": "title",
+          "code": "0x02",
+          "title": "LM003.DTM :"
+        },
+        {
+          "kind": "title",
+          "code": "0x03",
+          "title": "LM006.DTM :"
+        },
+        {
+          "kind": "title",
+          "code": "0x04",
+          "title": "LM008.DTM :"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/panther.xml",
+      "source_order": 3571,
+      "archive": "joshua68snd",
+      "id": "joshua68snd-generic-2"
+    },
+    {
+      "title": "[X68000] JOSHUA ～異世界伝承～(MT-32 Emulation)",
+      "driver": {
+        "name": "x68k",
+        "type": "generic",
+        "alias": "スタジオパンサー",
+        "platform": "SHARP X68000"
+      },
+      "options": [
+        {
+          "name": "midiout",
+          "value": "1"
+        },
+        {
+          "name": "midiout_type",
+          "value": "1"
+        },
+        {
+          "name": "mfp",
+          "value": "0x01"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "jsh68mt.bin",
+          "offset": "0x00000"
+        },
+        {
+          "type": "x",
+          "path": "PSMSCDRV.X",
+          "offset": "0x10000"
+        },
+        {
+          "type": "code",
+          "path": "NEIRO.DT",
+          "offset": "0x14000"
+        },
+        {
+          "type": "code",
+          "path": "LM002.DTM",
+          "offset": "0x16000"
+        },
+        {
+          "type": "code",
+          "path": "LM003.DTM",
+          "offset": "0x18000"
+        },
+        {
+          "type": "code",
+          "path": "LM006.DTM",
+          "offset": "0x1a000"
+        },
+        {
+          "type": "code",
+          "path": "LM008.DTM",
+          "offset": "0x1c000"
+        },
+        {
+          "type": "code",
+          "path": "MARS.DTM",
+          "offset": "0x1e000"
+        },
+        {
+          "type": "code",
+          "path": "MPCM.DT",
+          "offset": "0x22000"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x05",
+          "title": "MARS.DTM  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "LM002.DTM :"
+        },
+        {
+          "kind": "title",
+          "code": "0x02",
+          "title": "LM003.DTM :"
+        },
+        {
+          "kind": "title",
+          "code": "0x03",
+          "title": "LM006.DTM :"
+        },
+        {
+          "kind": "title",
+          "code": "0x04",
+          "title": "LM008.DTM :"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/panther.xml",
+      "source_order": 3572,
+      "archive": "joshua68snd",
+      "id": "joshua68snd-generic-3"
+    },
+    {
+      "title": "[X68000] JOSHUA ～異世界伝承～(GS)",
+      "driver": {
+        "name": "x68k",
+        "type": "generic",
+        "alias": "スタジオパンサー",
+        "platform": "SHARP X68000"
+      },
+      "options": [
+        {
+          "name": "midiout",
+          "value": "1"
+        },
+        {
+          "name": "midiout_type",
+          "value": "4"
+        },
+        {
+          "name": "mfp",
+          "value": "0x01"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "jsh68gs.bin",
+          "offset": "0x00000"
+        },
+        {
+          "type": "x",
+          "path": "PSMSCDRV.X",
+          "offset": "0x10000"
+        },
+        {
+          "type": "code",
+          "path": "NEIRO.DT",
+          "offset": "0x14000"
+        },
+        {
+          "type": "code",
+          "path": "LM002.DTG",
+          "offset": "0x16000"
+        },
+        {
+          "type": "code",
+          "path": "LM003.DTG",
+          "offset": "0x18000"
+        },
+        {
+          "type": "code",
+          "path": "LM006.DTG",
+          "offset": "0x1a000"
+        },
+        {
+          "type": "code",
+          "path": "LM008.DTG",
+          "offset": "0x1c000"
+        },
+        {
+          "type": "code",
+          "path": "MARS.DTG",
+          "offset": "0x1e000"
+        },
+        {
+          "type": "code",
+          "path": "MPCM.DT",
+          "offset": "0x22000"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x05",
+          "title": "MARS.DTG  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "LM002.DTG :"
+        },
+        {
+          "kind": "title",
+          "code": "0x02",
+          "title": "LM003.DTG :"
+        },
+        {
+          "kind": "title",
+          "code": "0x03",
+          "title": "LM006.DTG :"
+        },
+        {
+          "kind": "title",
+          "code": "0x04",
+          "title": "LM008.DTG :"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/panther.xml",
+      "source_order": 3573,
+      "archive": "joshua68snd",
+      "id": "joshua68snd-generic-4"
+    },
+    {
+      "title": "[X68000] KU2(OPM)",
+      "driver": {
+        "name": "x68k",
+        "type": "generic",
+        "alias": "スタジオパンサー",
+        "platform": "SHARP X68000"
+      },
+      "options": [
+        {
+          "name": "mfp",
+          "value": "0x01"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "ku268snd.bin",
+          "offset": "0x00000"
+        },
+        {
+          "type": "x",
+          "path": "KDRV.X",
+          "offset": "0x10000"
+        },
+        {
+          "type": "code",
+          "path": "NEIRO.DT",
+          "offset": "0x14000"
+        },
+        {
+          "type": "code",
+          "path": "MPCMTBL.DT",
+          "offset": "0x16000"
+        },
+        {
+          "type": "code",
+          "path": "MPCM.DT",
+          "offset": "0x17000"
+        },
+        {
+          "type": "code",
+          "path": "M01F.DT",
+          "offset": "0x56000"
+        },
+        {
+          "type": "code",
+          "path": "M02F.DT",
+          "offset": "0x58000"
+        },
+        {
+          "type": "code",
+          "path": "M03F.DT",
+          "offset": "0x5a000"
+        },
+        {
+          "type": "code",
+          "path": "M04F.DT",
+          "offset": "0x5c000"
+        },
+        {
+          "type": "code",
+          "path": "M05F.DT",
+          "offset": "0x5e000"
+        },
+        {
+          "type": "code",
+          "path": "M06F.DT",
+          "offset": "0x60000"
+        },
+        {
+          "type": "code",
+          "path": "M07F.DT",
+          "offset": "0x62000"
+        },
+        {
+          "type": "code",
+          "path": "M11F.DT",
+          "offset": "0x64000"
+        },
+        {
+          "type": "code",
+          "path": "M14F.DT",
+          "offset": "0x66000"
+        },
+        {
+          "type": "code",
+          "path": "M16F.DT",
+          "offset": "0x6a000"
+        },
+        {
+          "type": "code",
+          "path": "M17F.DT",
+          "offset": "0x6c000"
+        },
+        {
+          "type": "code",
+          "path": "M18F.DT",
+          "offset": "0x6e000"
+        },
+        {
+          "type": "code",
+          "path": "M19F.DT",
+          "offset": "0x70000"
+        },
+        {
+          "type": "code",
+          "path": "M21F.DT",
+          "offset": "0x72000"
+        },
+        {
+          "type": "code",
+          "path": "M28F.DT",
+          "offset": "0x74000"
+        },
+        {
+          "type": "code",
+          "path": "M08F.DT",
+          "offset": "0x76000"
+        },
+        {
+          "type": "code",
+          "path": "M09F.DT",
+          "offset": "0x78000"
+        },
+        {
+          "type": "code",
+          "path": "M10F.DT",
+          "offset": "0x7a000"
+        },
+        {
+          "type": "code",
+          "path": "M12F.DT",
+          "offset": "0x7c000"
+        },
+        {
+          "type": "code",
+          "path": "M15F.DT",
+          "offset": "0x7e000"
+        },
+        {
+          "type": "code",
+          "path": "M20F.DT",
+          "offset": "0x80000"
+        },
+        {
+          "type": "code",
+          "path": "M22F.DT",
+          "offset": "0x82000"
+        },
+        {
+          "type": "code",
+          "path": "M23F.DT",
+          "offset": "0x84000"
+        },
+        {
+          "type": "code",
+          "path": "M24F.DT",
+          "offset": "0x88000"
+        },
+        {
+          "type": "code",
+          "path": "M25F.DT",
+          "offset": "0x8a000"
+        },
+        {
+          "type": "code",
+          "path": "M26F.DT",
+          "offset": "0x8c000"
+        },
+        {
+          "type": "code",
+          "path": "M27F.DT",
+          "offset": "0x8e000"
+        },
+        {
+          "type": "code",
+          "path": "M29F.DT",
+          "offset": "0x92000"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x009",
+          "title": "M14F.DT : Scerious Opening"
+        },
+        {
+          "kind": "title",
+          "code": "0x002",
+          "title": "M02F.DT : Scerious Stage Demo"
+        },
+        {
+          "kind": "title",
+          "code": "0x003",
+          "title": "M03F.DT : Scerious Stage 1"
+        },
+        {
+          "kind": "title",
+          "code": "0x007",
+          "title": "M07F.DT : Scerious Boss"
+        },
+        {
+          "kind": "title",
+          "code": "0x006",
+          "title": "M06F.DT : Scerious Stage Clear"
+        },
+        {
+          "kind": "title",
+          "code": "0x001",
+          "title": "M01F.DT : Scerious Stage 2"
+        },
+        {
+          "kind": "title",
+          "code": "0x008",
+          "title": "M11F.DT : Scerious Stage 3"
+        },
+        {
+          "kind": "title",
+          "code": "0x004",
+          "title": "M04F.DT : Scerious Stage 4"
+        },
+        {
+          "kind": "title",
+          "code": "0x00e",
+          "title": "M19F.DT : Scerious Stage 5"
+        },
+        {
+          "kind": "title",
+          "code": "0x00b",
+          "title": "M16F.DT : Scerious Stage 6"
+        },
+        {
+          "kind": "title",
+          "code": "0x00f",
+          "title": "M21F.DT : Scerious Stage 7"
+        },
+        {
+          "kind": "title",
+          "code": "0x00c",
+          "title": "M17F.DT : Scerious Stage 8"
+        },
+        {
+          "kind": "title",
+          "code": "0x010",
+          "title": "M28F.DT : Scerious Ending"
+        },
+        {
+          "kind": "title",
+          "code": "0x10d",
+          "title": "M18F.DT : Scerious Game Over"
+        },
+        {
+          "kind": "title",
+          "code": "0x005",
+          "title": "M05F.DT : Scerious Result"
+        },
+        {
+          "kind": "title",
+          "code": "0x018",
+          "title": "M23F.DT : Comical Opening"
+        },
+        {
+          "kind": "title",
+          "code": "0x017",
+          "title": "M22F.DT : Comical Stage Demo"
+        },
+        {
+          "kind": "title",
+          "code": "0x012",
+          "title": "M09F.DT : Comical Stage 1"
+        },
+        {
+          "kind": "title",
+          "code": "0x014",
+          "title": "M12F.DT : Comical Boss"
+        },
+        {
+          "kind": "title",
+          "code": "0x016",
+          "title": "M20F.DT : Comical Stage 2"
+        },
+        {
+          "kind": "title",
+          "code": "0x015",
+          "title": "M15F.DT : Comical Stage 3"
+        },
+        {
+          "kind": "title",
+          "code": "0x011",
+          "title": "M08F.DT : Comical Stage 4"
+        },
+        {
+          "kind": "title",
+          "code": "0x013",
+          "title": "M10F.DT : Comical Stage 5"
+        },
+        {
+          "kind": "title",
+          "code": "0x01f",
+          "title": "M29F.DT : Comical Ending 1"
+        },
+        {
+          "kind": "title",
+          "code": "0x01d",
+          "title": "M27F.DT : Comical Ending 2"
+        },
+        {
+          "kind": "title",
+          "code": "0x11a",
+          "title": "M24F.DT : Comical Game Over"
+        },
+        {
+          "kind": "title",
+          "code": "0x01b",
+          "title": "M25F.DT : Comical Result"
+        },
+        {
+          "kind": "title",
+          "code": "0x01c",
+          "title": "M26F.DT :"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/panther.xml",
+      "source_order": 3574,
+      "archive": "ku268snd",
+      "id": "ku268snd-generic"
+    },
+    {
+      "title": "[X68000] KU2(MT-32)",
+      "driver": {
+        "name": "x68k",
+        "type": "generic",
+        "alias": "スタジオパンサー",
+        "platform": "SHARP X68000"
+      },
+      "options": [
+        {
+          "name": "midiout",
+          "value": "1"
+        },
+        {
+          "name": "midiout_type",
+          "value": "2"
+        },
+        {
+          "name": "mfp",
+          "value": "0x01"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "ku268snd.bin",
+          "offset": "0x00000"
+        },
+        {
+          "type": "x",
+          "path": "KDRV.X",
+          "offset": "0x10000"
+        },
+        {
+          "type": "code",
+          "path": "NEIRO.DT",
+          "offset": "0x14000"
+        },
+        {
+          "type": "code",
+          "path": "MPCMTBL.DT",
+          "offset": "0x16000"
+        },
+        {
+          "type": "code",
+          "path": "MPCM.DT",
+          "offset": "0x17000"
+        },
+        {
+          "type": "code",
+          "path": "M01C.DT",
+          "offset": "0x56000"
+        },
+        {
+          "type": "code",
+          "path": "M02C.DT",
+          "offset": "0x58000"
+        },
+        {
+          "type": "code",
+          "path": "M03C.DT",
+          "offset": "0x5a000"
+        },
+        {
+          "type": "code",
+          "path": "M04C.DT",
+          "offset": "0x5c000"
+        },
+        {
+          "type": "code",
+          "path": "M05C.DT",
+          "offset": "0x5e000"
+        },
+        {
+          "type": "code",
+          "path": "M06C.DT",
+          "offset": "0x60000"
+        },
+        {
+          "type": "code",
+          "path": "M07C.DT",
+          "offset": "0x62000"
+        },
+        {
+          "type": "code",
+          "path": "M11C.DT",
+          "offset": "0x64000"
+        },
+        {
+          "type": "code",
+          "path": "M14C.DT",
+          "offset": "0x66000"
+        },
+        {
+          "type": "code",
+          "path": "M16C.DT",
+          "offset": "0x6a000"
+        },
+        {
+          "type": "code",
+          "path": "M17C.DT",
+          "offset": "0x6c000"
+        },
+        {
+          "type": "code",
+          "path": "M18C.DT",
+          "offset": "0x6e000"
+        },
+        {
+          "type": "code",
+          "path": "M19C.DT",
+          "offset": "0x70000"
+        },
+        {
+          "type": "code",
+          "path": "M21C.DT",
+          "offset": "0x72000"
+        },
+        {
+          "type": "code",
+          "path": "M28C.DT",
+          "offset": "0x74000"
+        },
+        {
+          "type": "code",
+          "path": "M08C.DT",
+          "offset": "0x76000"
+        },
+        {
+          "type": "code",
+          "path": "M09C.DT",
+          "offset": "0x78000"
+        },
+        {
+          "type": "code",
+          "path": "M10C.DT",
+          "offset": "0x7a000"
+        },
+        {
+          "type": "code",
+          "path": "M12C.DT",
+          "offset": "0x7c000"
+        },
+        {
+          "type": "code",
+          "path": "M15C.DT",
+          "offset": "0x7e000"
+        },
+        {
+          "type": "code",
+          "path": "M20C.DT",
+          "offset": "0x80000"
+        },
+        {
+          "type": "code",
+          "path": "M22C.DT",
+          "offset": "0x82000"
+        },
+        {
+          "type": "code",
+          "path": "M23C.DT",
+          "offset": "0x84000"
+        },
+        {
+          "type": "code",
+          "path": "M24C.DT",
+          "offset": "0x88000"
+        },
+        {
+          "type": "code",
+          "path": "M25C.DT",
+          "offset": "0x8a000"
+        },
+        {
+          "type": "code",
+          "path": "M26C.DT",
+          "offset": "0x8c000"
+        },
+        {
+          "type": "code",
+          "path": "M27C.DT",
+          "offset": "0x8e000"
+        },
+        {
+          "type": "code",
+          "path": "M29C.DT",
+          "offset": "0x92000"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x009",
+          "title": "M14C.DT : Scerious Opening"
+        },
+        {
+          "kind": "title",
+          "code": "0x002",
+          "title": "M02C.DT : Scerious Stage Demo"
+        },
+        {
+          "kind": "title",
+          "code": "0x003",
+          "title": "M03C.DT : Scerious Stage 1"
+        },
+        {
+          "kind": "title",
+          "code": "0x007",
+          "title": "M07C.DT : Scerious Boss"
+        },
+        {
+          "kind": "title",
+          "code": "0x006",
+          "title": "M06C.DT : Scerious Stage Clear"
+        },
+        {
+          "kind": "title",
+          "code": "0x001",
+          "title": "M01C.DT : Scerious Stage 2"
+        },
+        {
+          "kind": "title",
+          "code": "0x008",
+          "title": "M11C.DT : Scerious Stage 3"
+        },
+        {
+          "kind": "title",
+          "code": "0x004",
+          "title": "M04C.DT : Scerious Stage 4"
+        },
+        {
+          "kind": "title",
+          "code": "0x00e",
+          "title": "M19C.DT : Scerious Stage 5"
+        },
+        {
+          "kind": "title",
+          "code": "0x00b",
+          "title": "M16C.DT : Scerious Stage 6"
+        },
+        {
+          "kind": "title",
+          "code": "0x00f",
+          "title": "M21C.DT : Scerious Stage 7"
+        },
+        {
+          "kind": "title",
+          "code": "0x00c",
+          "title": "M17C.DT : Scerious Stage 8"
+        },
+        {
+          "kind": "title",
+          "code": "0x010",
+          "title": "M28C.DT : Scerious Ending"
+        },
+        {
+          "kind": "title",
+          "code": "0x10d",
+          "title": "M18C.DT : Scerious Game Over"
+        },
+        {
+          "kind": "title",
+          "code": "0x005",
+          "title": "M05C.DT : Scerious Result"
+        },
+        {
+          "kind": "title",
+          "code": "0x018",
+          "title": "M23C.DT : Comical Opening"
+        },
+        {
+          "kind": "title",
+          "code": "0x017",
+          "title": "M22C.DT : Comical Stage Demo"
+        },
+        {
+          "kind": "title",
+          "code": "0x012",
+          "title": "M09C.DT : Comical Stage 1"
+        },
+        {
+          "kind": "title",
+          "code": "0x014",
+          "title": "M12C.DT : Comical Boss"
+        },
+        {
+          "kind": "title",
+          "code": "0x016",
+          "title": "M20C.DT : Comical Stage 2"
+        },
+        {
+          "kind": "title",
+          "code": "0x015",
+          "title": "M15C.DT : Comical Stage 3"
+        },
+        {
+          "kind": "title",
+          "code": "0x011",
+          "title": "M08C.DT : Comical Stage 4"
+        },
+        {
+          "kind": "title",
+          "code": "0x013",
+          "title": "M10C.DT : Comical Stage 5"
+        },
+        {
+          "kind": "title",
+          "code": "0x01f",
+          "title": "M29C.DT : Comical Ending 1"
+        },
+        {
+          "kind": "title",
+          "code": "0x01d",
+          "title": "M27C.DT : Comical Ending 2"
+        },
+        {
+          "kind": "title",
+          "code": "0x11a",
+          "title": "M24C.DT : Comical Game Over"
+        },
+        {
+          "kind": "title",
+          "code": "0x01b",
+          "title": "M25C.DT : Comical Result"
+        },
+        {
+          "kind": "title",
+          "code": "0x01c",
+          "title": "M26C.DT :"
+        }
+      ],
+      "comments": [
+        " ConfigurationにはMT32/CM32L/CM64の表記 "
+      ],
+      "source_file": "xml/panther.xml",
+      "source_order": 3575,
+      "archive": "ku268snd",
+      "id": "ku268snd-generic-2"
+    },
+    {
+      "title": "[X68000] KU2(MT-32 Emulation)",
+      "driver": {
+        "name": "x68k",
+        "type": "generic",
+        "alias": "スタジオパンサー",
+        "platform": "SHARP X68000"
+      },
+      "options": [
+        {
+          "name": "midiout",
+          "value": "1"
+        },
+        {
+          "name": "midiout_type",
+          "value": "1"
+        },
+        {
+          "name": "mfp",
+          "value": "0x01"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "ku268snd.bin",
+          "offset": "0x00000"
+        },
+        {
+          "type": "x",
+          "path": "KDRV.X",
+          "offset": "0x10000"
+        },
+        {
+          "type": "code",
+          "path": "NEIRO.DT",
+          "offset": "0x14000"
+        },
+        {
+          "type": "code",
+          "path": "MPCMTBL.DT",
+          "offset": "0x16000"
+        },
+        {
+          "type": "code",
+          "path": "MPCM.DT",
+          "offset": "0x17000"
+        },
+        {
+          "type": "code",
+          "path": "M01C.DT",
+          "offset": "0x56000"
+        },
+        {
+          "type": "code",
+          "path": "M02C.DT",
+          "offset": "0x58000"
+        },
+        {
+          "type": "code",
+          "path": "M03C.DT",
+          "offset": "0x5a000"
+        },
+        {
+          "type": "code",
+          "path": "M04C.DT",
+          "offset": "0x5c000"
+        },
+        {
+          "type": "code",
+          "path": "M05C.DT",
+          "offset": "0x5e000"
+        },
+        {
+          "type": "code",
+          "path": "M06C.DT",
+          "offset": "0x60000"
+        },
+        {
+          "type": "code",
+          "path": "M07C.DT",
+          "offset": "0x62000"
+        },
+        {
+          "type": "code",
+          "path": "M11C.DT",
+          "offset": "0x64000"
+        },
+        {
+          "type": "code",
+          "path": "M14C.DT",
+          "offset": "0x66000"
+        },
+        {
+          "type": "code",
+          "path": "M16C.DT",
+          "offset": "0x6a000"
+        },
+        {
+          "type": "code",
+          "path": "M17C.DT",
+          "offset": "0x6c000"
+        },
+        {
+          "type": "code",
+          "path": "M18C.DT",
+          "offset": "0x6e000"
+        },
+        {
+          "type": "code",
+          "path": "M19C.DT",
+          "offset": "0x70000"
+        },
+        {
+          "type": "code",
+          "path": "M21C.DT",
+          "offset": "0x72000"
+        },
+        {
+          "type": "code",
+          "path": "M28C.DT",
+          "offset": "0x74000"
+        },
+        {
+          "type": "code",
+          "path": "M08C.DT",
+          "offset": "0x76000"
+        },
+        {
+          "type": "code",
+          "path": "M09C.DT",
+          "offset": "0x78000"
+        },
+        {
+          "type": "code",
+          "path": "M10C.DT",
+          "offset": "0x7a000"
+        },
+        {
+          "type": "code",
+          "path": "M12C.DT",
+          "offset": "0x7c000"
+        },
+        {
+          "type": "code",
+          "path": "M15C.DT",
+          "offset": "0x7e000"
+        },
+        {
+          "type": "code",
+          "path": "M20C.DT",
+          "offset": "0x80000"
+        },
+        {
+          "type": "code",
+          "path": "M22C.DT",
+          "offset": "0x82000"
+        },
+        {
+          "type": "code",
+          "path": "M23C.DT",
+          "offset": "0x84000"
+        },
+        {
+          "type": "code",
+          "path": "M24C.DT",
+          "offset": "0x88000"
+        },
+        {
+          "type": "code",
+          "path": "M25C.DT",
+          "offset": "0x8a000"
+        },
+        {
+          "type": "code",
+          "path": "M26C.DT",
+          "offset": "0x8c000"
+        },
+        {
+          "type": "code",
+          "path": "M27C.DT",
+          "offset": "0x8e000"
+        },
+        {
+          "type": "code",
+          "path": "M29C.DT",
+          "offset": "0x92000"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x009",
+          "title": "M14C.DT : Scerious Opening"
+        },
+        {
+          "kind": "title",
+          "code": "0x002",
+          "title": "M02C.DT : Scerious Stage Demo"
+        },
+        {
+          "kind": "title",
+          "code": "0x003",
+          "title": "M03C.DT : Scerious Stage 1"
+        },
+        {
+          "kind": "title",
+          "code": "0x007",
+          "title": "M07C.DT : Scerious Boss"
+        },
+        {
+          "kind": "title",
+          "code": "0x006",
+          "title": "M06C.DT : Scerious Stage Clear"
+        },
+        {
+          "kind": "title",
+          "code": "0x001",
+          "title": "M01C.DT : Scerious Stage 2"
+        },
+        {
+          "kind": "title",
+          "code": "0x008",
+          "title": "M11C.DT : Scerious Stage 3"
+        },
+        {
+          "kind": "title",
+          "code": "0x004",
+          "title": "M04C.DT : Scerious Stage 4"
+        },
+        {
+          "kind": "title",
+          "code": "0x00e",
+          "title": "M19C.DT : Scerious Stage 5"
+        },
+        {
+          "kind": "title",
+          "code": "0x00b",
+          "title": "M16C.DT : Scerious Stage 6"
+        },
+        {
+          "kind": "title",
+          "code": "0x00f",
+          "title": "M21C.DT : Scerious Stage 7"
+        },
+        {
+          "kind": "title",
+          "code": "0x00c",
+          "title": "M17C.DT : Scerious Stage 8"
+        },
+        {
+          "kind": "title",
+          "code": "0x010",
+          "title": "M28C.DT : Scerious Ending"
+        },
+        {
+          "kind": "title",
+          "code": "0x10d",
+          "title": "M18C.DT : Scerious Game Over"
+        },
+        {
+          "kind": "title",
+          "code": "0x005",
+          "title": "M05C.DT : Scerious Result"
+        },
+        {
+          "kind": "title",
+          "code": "0x018",
+          "title": "M23C.DT : Comical Opening"
+        },
+        {
+          "kind": "title",
+          "code": "0x017",
+          "title": "M22C.DT : Comical Stage Demo"
+        },
+        {
+          "kind": "title",
+          "code": "0x012",
+          "title": "M09C.DT : Comical Stage 1"
+        },
+        {
+          "kind": "title",
+          "code": "0x014",
+          "title": "M12C.DT : Comical Boss"
+        },
+        {
+          "kind": "title",
+          "code": "0x016",
+          "title": "M20C.DT : Comical Stage 2"
+        },
+        {
+          "kind": "title",
+          "code": "0x015",
+          "title": "M15C.DT : Comical Stage 3"
+        },
+        {
+          "kind": "title",
+          "code": "0x011",
+          "title": "M08C.DT : Comical Stage 4"
+        },
+        {
+          "kind": "title",
+          "code": "0x013",
+          "title": "M10C.DT : Comical Stage 5"
+        },
+        {
+          "kind": "title",
+          "code": "0x01f",
+          "title": "M29C.DT : Comical Ending 1"
+        },
+        {
+          "kind": "title",
+          "code": "0x01d",
+          "title": "M27C.DT : Comical Ending 2"
+        },
+        {
+          "kind": "title",
+          "code": "0x11a",
+          "title": "M24C.DT : Comical Game Over"
+        },
+        {
+          "kind": "title",
+          "code": "0x01b",
+          "title": "M25C.DT : Comical Result"
+        },
+        {
+          "kind": "title",
+          "code": "0x01c",
+          "title": "M26C.DT :"
+        }
+      ],
+      "comments": [
+        " ConfigurationにはMT32/CM32L/CM64の表記 "
+      ],
+      "source_file": "xml/panther.xml",
+      "source_order": 3576,
+      "archive": "ku268snd",
+      "id": "ku268snd-generic-3"
+    },
+    {
+      "title": "[X68000] KU2(GS)",
+      "driver": {
+        "name": "x68k",
+        "type": "generic",
+        "alias": "スタジオパンサー",
+        "platform": "SHARP X68000"
+      },
+      "options": [
+        {
+          "name": "midiout",
+          "value": "1"
+        },
+        {
+          "name": "midiout_type",
+          "value": "4"
+        },
+        {
+          "name": "mfp",
+          "value": "0x01"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "ku268snd.bin",
+          "offset": "0x00000"
+        },
+        {
+          "type": "x",
+          "path": "KDRV.X",
+          "offset": "0x10000"
+        },
+        {
+          "type": "code",
+          "path": "NEIRO.DT",
+          "offset": "0x14000"
+        },
+        {
+          "type": "code",
+          "path": "MPCMTBL.DT",
+          "offset": "0x16000"
+        },
+        {
+          "type": "code",
+          "path": "MPCM.DT",
+          "offset": "0x17000"
+        },
+        {
+          "type": "code",
+          "path": "M01G.DT",
+          "offset": "0x56000"
+        },
+        {
+          "type": "code",
+          "path": "M02G.DT",
+          "offset": "0x58000"
+        },
+        {
+          "type": "code",
+          "path": "M03G.DT",
+          "offset": "0x5a000"
+        },
+        {
+          "type": "code",
+          "path": "M04G.DT",
+          "offset": "0x5c000"
+        },
+        {
+          "type": "code",
+          "path": "M05G.DT",
+          "offset": "0x5e000"
+        },
+        {
+          "type": "code",
+          "path": "M06G.DT",
+          "offset": "0x60000"
+        },
+        {
+          "type": "code",
+          "path": "M07G.DT",
+          "offset": "0x62000"
+        },
+        {
+          "type": "code",
+          "path": "M11G.DT",
+          "offset": "0x64000"
+        },
+        {
+          "type": "code",
+          "path": "M14G.DT",
+          "offset": "0x66000"
+        },
+        {
+          "type": "code",
+          "path": "M16G.DT",
+          "offset": "0x6a000"
+        },
+        {
+          "type": "code",
+          "path": "M17G.DT",
+          "offset": "0x6c000"
+        },
+        {
+          "type": "code",
+          "path": "M18G.DT",
+          "offset": "0x6e000"
+        },
+        {
+          "type": "code",
+          "path": "M19G.DT",
+          "offset": "0x70000"
+        },
+        {
+          "type": "code",
+          "path": "M21G.DT",
+          "offset": "0x72000"
+        },
+        {
+          "type": "code",
+          "path": "M28G.DT",
+          "offset": "0x74000"
+        },
+        {
+          "type": "code",
+          "path": "M08G.DT",
+          "offset": "0x76000"
+        },
+        {
+          "type": "code",
+          "path": "M09G.DT",
+          "offset": "0x78000"
+        },
+        {
+          "type": "code",
+          "path": "M10G.DT",
+          "offset": "0x7a000"
+        },
+        {
+          "type": "code",
+          "path": "M12G.DT",
+          "offset": "0x7c000"
+        },
+        {
+          "type": "code",
+          "path": "M15G.DT",
+          "offset": "0x7e000"
+        },
+        {
+          "type": "code",
+          "path": "M20G.DT",
+          "offset": "0x80000"
+        },
+        {
+          "type": "code",
+          "path": "M22G.DT",
+          "offset": "0x82000"
+        },
+        {
+          "type": "code",
+          "path": "M23G.DT",
+          "offset": "0x84000"
+        },
+        {
+          "type": "code",
+          "path": "M24G.DT",
+          "offset": "0x88000"
+        },
+        {
+          "type": "code",
+          "path": "M25G.DT",
+          "offset": "0x8a000"
+        },
+        {
+          "type": "code",
+          "path": "M26G.DT",
+          "offset": "0x8c000"
+        },
+        {
+          "type": "code",
+          "path": "M27G.DT",
+          "offset": "0x8e000"
+        },
+        {
+          "type": "code",
+          "path": "M29G.DT",
+          "offset": "0x92000"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x009",
+          "title": "M14G.DT : Scerious Opening"
+        },
+        {
+          "kind": "title",
+          "code": "0x002",
+          "title": "M02G.DT : Scerious Stage Demo"
+        },
+        {
+          "kind": "title",
+          "code": "0x003",
+          "title": "M03G.DT : Scerious Stage 1"
+        },
+        {
+          "kind": "title",
+          "code": "0x007",
+          "title": "M07G.DT : Scerious Boss"
+        },
+        {
+          "kind": "title",
+          "code": "0x006",
+          "title": "M06G.DT : Scerious Stage Clear"
+        },
+        {
+          "kind": "title",
+          "code": "0x001",
+          "title": "M01G.DT : Scerious Stage 2"
+        },
+        {
+          "kind": "title",
+          "code": "0x008",
+          "title": "M11G.DT : Scerious Stage 3"
+        },
+        {
+          "kind": "title",
+          "code": "0x004",
+          "title": "M04G.DT : Scerious Stage 4"
+        },
+        {
+          "kind": "title",
+          "code": "0x00e",
+          "title": "M19G.DT : Scerious Stage 5"
+        },
+        {
+          "kind": "title",
+          "code": "0x00b",
+          "title": "M16G.DT : Scerious Stage 6"
+        },
+        {
+          "kind": "title",
+          "code": "0x00f",
+          "title": "M21G.DT : Scerious Stage 7"
+        },
+        {
+          "kind": "title",
+          "code": "0x00c",
+          "title": "M17G.DT : Scerious Stage 8"
+        },
+        {
+          "kind": "title",
+          "code": "0x010",
+          "title": "M28G.DT : Scerious Ending"
+        },
+        {
+          "kind": "title",
+          "code": "0x10d",
+          "title": "M18G.DT : Scerious Game Over"
+        },
+        {
+          "kind": "title",
+          "code": "0x005",
+          "title": "M05G.DT : Scerious Result"
+        },
+        {
+          "kind": "title",
+          "code": "0x018",
+          "title": "M23G.DT : Comical Opening"
+        },
+        {
+          "kind": "title",
+          "code": "0x017",
+          "title": "M22G.DT : Comical Stage Demo"
+        },
+        {
+          "kind": "title",
+          "code": "0x012",
+          "title": "M09G.DT : Comical Stage 1"
+        },
+        {
+          "kind": "title",
+          "code": "0x014",
+          "title": "M12G.DT : Comical Boss"
+        },
+        {
+          "kind": "title",
+          "code": "0x016",
+          "title": "M20G.DT : Comical Stage 2"
+        },
+        {
+          "kind": "title",
+          "code": "0x015",
+          "title": "M15G.DT : Comical Stage 3"
+        },
+        {
+          "kind": "title",
+          "code": "0x011",
+          "title": "M08G.DT : Comical Stage 4"
+        },
+        {
+          "kind": "title",
+          "code": "0x013",
+          "title": "M10G.DT : Comical Stage 5"
+        },
+        {
+          "kind": "title",
+          "code": "0x01f",
+          "title": "M29G.DT : Comical Ending 1"
+        },
+        {
+          "kind": "title",
+          "code": "0x01d",
+          "title": "M27G.DT : Comical Ending 2"
+        },
+        {
+          "kind": "title",
+          "code": "0x11a",
+          "title": "M24G.DT : Comical Game Over"
+        },
+        {
+          "kind": "title",
+          "code": "0x01b",
+          "title": "M25G.DT : Comical Result"
+        },
+        {
+          "kind": "title",
+          "code": "0x01c",
+          "title": "M26G.DT :"
+        }
+      ],
+      "comments": [
+        " ConfigurationにはSC55/CM300/CM500の表記 "
+      ],
+      "source_file": "xml/panther.xml",
+      "source_order": 3577,
+      "archive": "ku268snd",
+      "id": "ku268snd-generic-4"
+    },
+    {
+      "title": "[X68000] 大江戸繁盛記",
+      "driver": {
+        "name": "x68k",
+        "type": "generic",
+        "alias": "スタジオパンサー",
+        "platform": "SHARP X68000"
+      },
+      "options": [],
+      "assets": [
+        {
+          "type": "code",
+          "path": "oedoh68snd.bin"
+        },
+        {
+          "type": "x",
+          "path": "OPMDRV.X",
+          "offset": "0x10000"
+        },
+        {
+          "type": "x",
+          "path": "大江戸繁盛記.X",
+          "offset": "0x30000"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "00 :"
+        },
+        {
+          "kind": "comment",
+          "text": "\n\t\t\t<title code=\"0x02\">01 : </title>\n\t\t\t<title code=\"0x03\">02 : </title>\n\t\t\t<title code=\"0x04\">03 : </title>\n\t\t\t<title code=\"0x05\">04 : </title>\n\t\t\t<title code=\"0x06\">05 : </title>\n\t\t\t  "
+        },
+        {
+          "kind": "title",
+          "code": "0x07",
+          "title": "06 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x08",
+          "title": "07 :"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/panther.xml",
+      "source_order": 3578,
+      "archive": "oedoh68snd",
+      "id": "oedoh68snd-generic"
+    },
+    {
+      "title": "[X68000] 天九牌",
+      "driver": {
+        "name": "x68k",
+        "type": "generic",
+        "alias": "スタジオパンサー",
+        "platform": "SHARP X68000"
+      },
+      "options": [],
+      "assets": [
+        {
+          "type": "code",
+          "path": "tnkyu68snd.bin"
+        },
+        {
+          "type": "x",
+          "path": "OPMDRV.X",
+          "offset": "0x10000"
+        },
+        {
+          "type": "x",
+          "path": "ten.x",
+          "offset": "0x30000"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "00 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x02",
+          "title": "01 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x03",
+          "title": "02 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x04",
+          "title": "03 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x05",
+          "title": "04 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x06",
+          "title": "05 :"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/panther.xml",
+      "source_order": 3579,
+      "archive": "tkh68snd",
+      "id": "tkh68snd-generic"
+    },
+    {
+      "title": "[X68000] 天九牌Special 桃源の宴",
+      "driver": {
+        "name": "x68k",
+        "type": "generic",
+        "alias": "スタジオパンサー",
+        "platform": "SHARP X68000"
+      },
+      "options": [],
+      "assets": [
+        {
+          "type": "code",
+          "path": "tkhsp68snd.bin"
+        },
+        {
+          "type": "x",
+          "path": "OPMDRV.X",
+          "offset": "0x10000"
+        },
+        {
+          "type": "x",
+          "path": "ten.x",
+          "offset": "0x30000"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "00 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x02",
+          "title": "01 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x03",
+          "title": "02 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x04",
+          "title": "03 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x05",
+          "title": "04 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x06",
+          "title": "05 :"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/panther.xml",
+      "source_order": 3580,
+      "archive": "tkhsp68snd",
+      "id": "tkhsp68snd-generic"
+    },
+    {
+      "title": "[X68000] 天九牌Special 桃源の宴II",
+      "driver": {
+        "name": "x68k",
+        "type": "generic",
+        "alias": "スタジオパンサー",
+        "platform": "SHARP X68000"
+      },
+      "options": [],
+      "assets": [
+        {
+          "type": "code",
+          "path": "tkhsp268snd.bin"
+        },
+        {
+          "type": "x",
+          "path": "OPMDRV.X",
+          "offset": "0x10000"
+        },
+        {
+          "type": "x",
+          "path": "ten.x",
+          "offset": "0x30000"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "00 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x02",
+          "title": "01 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x03",
+          "title": "02 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x04",
+          "title": "03 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x05",
+          "title": "04 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x06",
+          "title": "05 :"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/panther.xml",
+      "source_order": 3581,
+      "archive": "tkhsp268snd",
+      "id": "tkhsp268snd-generic"
+    },
+    {
+      "title": "[MSX] 神の聖都(OPLL)",
+      "driver": {
+        "name": "msx",
+        "type": "generic",
+        "alias": "スタジオパンサー",
+        "platform": "MSX"
+      },
+      "options": [
+        {
+          "name": "mdata_addr",
+          "value": "0x98cd"
+        },
+        {
+          "name": "mdata_size",
+          "value": "0x1a00"
+        },
+        {
+          "name": "mfile_size",
+          "value": "0x1a00"
+        },
+        {
+          "name": "init_pc",
+          "value": "0x0400"
+        },
+        {
+          "name": "use_opll",
+          "value": "0x01"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "patch",
+          "offset": "0x0400"
+        },
+        {
+          "type": "code",
+          "path": "DOSYS",
+          "offset": "0x4000"
+        },
+        {
+          "type": "bgm",
+          "path": "120MM",
+          "offset": "0x00"
+        },
+        {
+          "type": "bgm",
+          "path": "ALFIS",
+          "offset": "0x01"
+        },
+        {
+          "type": "bgm",
+          "path": "BAKU3",
+          "offset": "0x02"
+        },
+        {
+          "type": "bgm",
+          "path": "BOMB2",
+          "offset": "0x03"
+        },
+        {
+          "type": "bgm",
+          "path": "DAL",
+          "offset": "0x04"
+        },
+        {
+          "type": "bgm",
+          "path": "DALDAL",
+          "offset": "0x05"
+        },
+        {
+          "type": "bgm",
+          "path": "DAMAGE",
+          "offset": "0x06"
+        },
+        {
+          "type": "bgm",
+          "path": "HITLER",
+          "offset": "0x07"
+        },
+        {
+          "type": "bgm",
+          "path": "JINA",
+          "offset": "0x08"
+        },
+        {
+          "type": "bgm",
+          "path": "JINARI",
+          "offset": "0x09"
+        },
+        {
+          "type": "bgm",
+          "path": "JYAN3",
+          "offset": "0x0a"
+        },
+        {
+          "type": "bgm",
+          "path": "KAGI",
+          "offset": "0x0b"
+        },
+        {
+          "type": "bgm",
+          "path": "KAKIN",
+          "offset": "0x0c"
+        },
+        {
+          "type": "bgm",
+          "path": "KM10BF",
+          "offset": "0x0d"
+        },
+        {
+          "type": "bgm",
+          "path": "KM11F",
+          "offset": "0x0e"
+        },
+        {
+          "type": "bgm",
+          "path": "KM12F",
+          "offset": "0x0f"
+        },
+        {
+          "type": "bgm",
+          "path": "KM13F",
+          "offset": "0x10"
+        },
+        {
+          "type": "bgm",
+          "path": "KM14F",
+          "offset": "0x11"
+        },
+        {
+          "type": "bgm",
+          "path": "KM15F",
+          "offset": "0x12"
+        },
+        {
+          "type": "bgm",
+          "path": "KM17F",
+          "offset": "0x13"
+        },
+        {
+          "type": "bgm",
+          "path": "KM18F",
+          "offset": "0x14"
+        },
+        {
+          "type": "bgm",
+          "path": "KM19F",
+          "offset": "0x15"
+        },
+        {
+          "type": "bgm",
+          "path": "KM1BF",
+          "offset": "0x16"
+        },
+        {
+          "type": "bgm",
+          "path": "KM20F",
+          "offset": "0x17"
+        },
+        {
+          "type": "bgm",
+          "path": "KM22F",
+          "offset": "0x18"
+        },
+        {
+          "type": "bgm",
+          "path": "KM23F",
+          "offset": "0x19"
+        },
+        {
+          "type": "bgm",
+          "path": "KM24F",
+          "offset": "0x1a"
+        },
+        {
+          "type": "bgm",
+          "path": "KM25F",
+          "offset": "0x1b"
+        },
+        {
+          "type": "bgm",
+          "path": "KM26F",
+          "offset": "0x1c"
+        },
+        {
+          "type": "bgm",
+          "path": "KM27BF",
+          "offset": "0x1d"
+        },
+        {
+          "type": "bgm",
+          "path": "KM28F",
+          "offset": "0x1e"
+        },
+        {
+          "type": "bgm",
+          "path": "KM29F",
+          "offset": "0x1f"
+        },
+        {
+          "type": "bgm",
+          "path": "KM2F",
+          "offset": "0x20"
+        },
+        {
+          "type": "bgm",
+          "path": "KM30F",
+          "offset": "0x21"
+        },
+        {
+          "type": "bgm",
+          "path": "KM31F",
+          "offset": "0x22"
+        },
+        {
+          "type": "bgm",
+          "path": "KM32F",
+          "offset": "0x23"
+        },
+        {
+          "type": "bgm",
+          "path": "KM33F",
+          "offset": "0x24"
+        },
+        {
+          "type": "bgm",
+          "path": "KM3F",
+          "offset": "0x25"
+        },
+        {
+          "type": "bgm",
+          "path": "KM4F",
+          "offset": "0x26"
+        },
+        {
+          "type": "bgm",
+          "path": "KM6F",
+          "offset": "0x27"
+        },
+        {
+          "type": "bgm",
+          "path": "KM9BF",
+          "offset": "0x28"
+        },
+        {
+          "type": "bgm",
+          "path": "KTM1BF",
+          "offset": "0x29"
+        },
+        {
+          "type": "bgm",
+          "path": "LANON",
+          "offset": "0x2a"
+        },
+        {
+          "type": "bgm",
+          "path": "MUSHI",
+          "offset": "0x2b"
+        },
+        {
+          "type": "bgm",
+          "path": "NAGRI",
+          "offset": "0x2c"
+        },
+        {
+          "type": "bgm",
+          "path": "NOTON",
+          "offset": "0x2d"
+        },
+        {
+          "type": "bgm",
+          "path": "S",
+          "offset": "0x2e"
+        },
+        {
+          "type": "bgm",
+          "path": "S3",
+          "offset": "0x2f"
+        },
+        {
+          "type": "bgm",
+          "path": "SAKEBI",
+          "offset": "0x30"
+        },
+        {
+          "type": "bgm",
+          "path": "UCHU",
+          "offset": "0x31"
+        },
+        {
+          "type": "bgm",
+          "path": "YUKA",
+          "offset": "0x32"
+        },
+        {
+          "type": "bgm",
+          "path": "ZIPO",
+          "offset": "0x33"
+        },
+        {
+          "type": "bgm",
+          "path": "KM16",
+          "offset": "0x34"
+        },
+        {
+          "type": "bgm",
+          "path": "KM21",
+          "offset": "0x35"
+        },
+        {
+          "type": "bgm",
+          "path": "GUN",
+          "offset": "0x36"
+        },
+        {
+          "type": "bgm",
+          "path": "MIMI",
+          "offset": "0x37"
+        },
+        {
+          "type": "bgm",
+          "path": "OTO",
+          "offset": "0x38"
+        },
+        {
+          "type": "bgm",
+          "path": "OTO2",
+          "offset": "0x39"
+        },
+        {
+          "type": "bgm",
+          "path": "OTO3",
+          "offset": "0x3a"
+        },
+        {
+          "type": "bgm",
+          "path": "OTO4",
+          "offset": "0x3b"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x29",
+          "title": "KTM1BF : 神の聖都のテーマ"
+        },
+        {
+          "kind": "title",
+          "code": "0x0d",
+          "title": "KM10BF : オープニングデモ1"
+        },
+        {
+          "kind": "title",
+          "code": "0x28",
+          "title": "KM9BF  : オープニングデモ3"
+        },
+        {
+          "kind": "title",
+          "code": "0x1a",
+          "title": "KM24F  : アレック商会"
+        },
+        {
+          "kind": "title",
+          "code": "0x27",
+          "title": "KM6F   : 酒場"
+        },
+        {
+          "kind": "title",
+          "code": "0x18",
+          "title": "KM22F  : ハイツン先生の病院"
+        },
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "KM14F  : 移動(走る)"
+        },
+        {
+          "kind": "title",
+          "code": "0x23",
+          "title": "KM32F  : 移動(歩く)"
+        },
+        {
+          "kind": "title",
+          "code": "0x16",
+          "title": "KM1BF  : 戦闘"
+        },
+        {
+          "kind": "title",
+          "code": "0x17",
+          "title": "KM20F  : 病院の襲撃"
+        },
+        {
+          "kind": "title",
+          "code": "0x1b",
+          "title": "KM25F  : 戦慄の蟲"
+        },
+        {
+          "kind": "title",
+          "code": "0x1d",
+          "title": "KM27BF : ノートンの過去"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "KM17F  : ノートンとシャーマス"
+        },
+        {
+          "kind": "title",
+          "code": "0x0e",
+          "title": "KM11F  : 神殿"
+        },
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "KM13F  : 神殿の中"
+        },
+        {
+          "kind": "title",
+          "code": "0x34",
+          "title": "KM16   : アルフィスへの試練"
+        },
+        {
+          "kind": "title",
+          "code": "0x35",
+          "title": "KM21   : フェルナンドの家"
+        },
+        {
+          "kind": "title",
+          "code": "0x24",
+          "title": "KM33F  : 事件発生"
+        },
+        {
+          "kind": "title",
+          "code": "0x25",
+          "title": "KM3F   : 逃亡してきたジナ"
+        },
+        {
+          "kind": "title",
+          "code": "0x20",
+          "title": "KM2F   : ラノン登場"
+        },
+        {
+          "kind": "title",
+          "code": "0x0f",
+          "title": "KM12F  : ラノンとの戦い"
+        },
+        {
+          "kind": "title",
+          "code": "0x19",
+          "title": "KM23F  : フィレンVSラノン"
+        },
+        {
+          "kind": "title",
+          "code": "0x1c",
+          "title": "KM26F  : 戦いのあとで"
+        },
+        {
+          "kind": "title",
+          "code": "0x22",
+          "title": "KM31F  : 由加利とジナの関係"
+        },
+        {
+          "kind": "title",
+          "code": "0x15",
+          "title": "KM19F  : 敵・本拠地"
+        },
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "KM15F  : 3番目の部屋"
+        },
+        {
+          "kind": "title",
+          "code": "0x14",
+          "title": "KM18F  : 人間の壁"
+        },
+        {
+          "kind": "title",
+          "code": "0x1e",
+          "title": "KM28F  : ダルダルート"
+        },
+        {
+          "kind": "title",
+          "code": "0x1f",
+          "title": "KM29F  : ショック～由加利の死1"
+        },
+        {
+          "kind": "title",
+          "code": "0x26",
+          "title": "KM4F   : 由加利の死2"
+        },
+        {
+          "kind": "title",
+          "code": "0x21",
+          "title": "KM30F  : エンディング1"
+        },
+        {
+          "kind": "title",
+          "code": "0x00",
+          "title": "120MM  : SE"
+        },
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "ALFIS  : SE"
+        },
+        {
+          "kind": "title",
+          "code": "0x02",
+          "title": "BAKU3  : SE"
+        },
+        {
+          "kind": "title",
+          "code": "0x03",
+          "title": "BOMB2  : SE"
+        },
+        {
+          "kind": "title",
+          "code": "0x04",
+          "title": "DAL    : SE"
+        },
+        {
+          "kind": "title",
+          "code": "0x05",
+          "title": "DALDAL : SE"
+        },
+        {
+          "kind": "title",
+          "code": "0x06",
+          "title": "DAMAGE : SE"
+        },
+        {
+          "kind": "title",
+          "code": "0x36",
+          "title": "GUN    : SE"
+        },
+        {
+          "kind": "title",
+          "code": "0x07",
+          "title": "HITLER : SE"
+        },
+        {
+          "kind": "title",
+          "code": "0x08",
+          "title": "JINA   : SE"
+        },
+        {
+          "kind": "title",
+          "code": "0x09",
+          "title": "JINARI : SE"
+        },
+        {
+          "kind": "title",
+          "code": "0x0a",
+          "title": "JYAN3  : SE"
+        },
+        {
+          "kind": "title",
+          "code": "0x0b",
+          "title": "KAGI   : SE"
+        },
+        {
+          "kind": "title",
+          "code": "0x0c",
+          "title": "KAKIN  : SE"
+        },
+        {
+          "kind": "title",
+          "code": "0x2a",
+          "title": "LANON  : SE"
+        },
+        {
+          "kind": "title",
+          "code": "0x37",
+          "title": "MIMI   : SE"
+        },
+        {
+          "kind": "title",
+          "code": "0x2b",
+          "title": "MUSHI  : SE"
+        },
+        {
+          "kind": "title",
+          "code": "0x2c",
+          "title": "NAGRI  : SE"
+        },
+        {
+          "kind": "title",
+          "code": "0x2d",
+          "title": "NOTON  : SE"
+        },
+        {
+          "kind": "title",
+          "code": "0x38",
+          "title": "OTO    : SE"
+        },
+        {
+          "kind": "title",
+          "code": "0x39",
+          "title": "OTO2   : SE"
+        },
+        {
+          "kind": "title",
+          "code": "0x3a",
+          "title": "OTO3   : SE"
+        },
+        {
+          "kind": "title",
+          "code": "0x3b",
+          "title": "OTO4   : SE"
+        },
+        {
+          "kind": "title",
+          "code": "0x2e",
+          "title": "S      : SE"
+        },
+        {
+          "kind": "title",
+          "code": "0x2f",
+          "title": "S3     : SE"
+        },
+        {
+          "kind": "title",
+          "code": "0x30",
+          "title": "SAKEBI : SE"
+        },
+        {
+          "kind": "title",
+          "code": "0x31",
+          "title": "UCHU   : SE"
+        },
+        {
+          "kind": "title",
+          "code": "0x32",
+          "title": "YUKA   : SE"
+        },
+        {
+          "kind": "title",
+          "code": "0x33",
+          "title": "ZIPO   : SE"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/panther.xml",
+      "source_order": 3582,
+      "archive": "kami_msx",
+      "id": "kami-msx-generic"
+    },
+    {
+      "title": "[MSX] 神の聖都(PSG)",
+      "driver": {
+        "name": "msx",
+        "type": "generic",
+        "alias": "スタジオパンサー",
+        "platform": "MSX"
+      },
+      "options": [
+        {
+          "name": "mdata_addr",
+          "value": "0x98cd"
+        },
+        {
+          "name": "mdata_size",
+          "value": "0x1a00"
+        },
+        {
+          "name": "mfile_size",
+          "value": "0x1a00"
+        },
+        {
+          "name": "init_pc",
+          "value": "0x0400"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "patch",
+          "offset": "0x0400"
+        },
+        {
+          "type": "code",
+          "path": "DOSYS",
+          "offset": "0x4000"
+        },
+        {
+          "type": "bgm",
+          "path": "120MM",
+          "offset": "0x00"
+        },
+        {
+          "type": "bgm",
+          "path": "ALFIS",
+          "offset": "0x01"
+        },
+        {
+          "type": "bgm",
+          "path": "BAKU3",
+          "offset": "0x02"
+        },
+        {
+          "type": "bgm",
+          "path": "BOMB2",
+          "offset": "0x03"
+        },
+        {
+          "type": "bgm",
+          "path": "DAL",
+          "offset": "0x04"
+        },
+        {
+          "type": "bgm",
+          "path": "DALDAL",
+          "offset": "0x05"
+        },
+        {
+          "type": "bgm",
+          "path": "DAMAGE",
+          "offset": "0x06"
+        },
+        {
+          "type": "bgm",
+          "path": "HITLER",
+          "offset": "0x07"
+        },
+        {
+          "type": "bgm",
+          "path": "JINA",
+          "offset": "0x08"
+        },
+        {
+          "type": "bgm",
+          "path": "JINARI",
+          "offset": "0x09"
+        },
+        {
+          "type": "bgm",
+          "path": "JYAN3",
+          "offset": "0x0a"
+        },
+        {
+          "type": "bgm",
+          "path": "KAGI",
+          "offset": "0x0b"
+        },
+        {
+          "type": "bgm",
+          "path": "KAKIN",
+          "offset": "0x0c"
+        },
+        {
+          "type": "bgm",
+          "path": "KM10BP",
+          "offset": "0x0d"
+        },
+        {
+          "type": "bgm",
+          "path": "KM11P",
+          "offset": "0x0e"
+        },
+        {
+          "type": "bgm",
+          "path": "KM12P",
+          "offset": "0x0f"
+        },
+        {
+          "type": "bgm",
+          "path": "KM13P",
+          "offset": "0x10"
+        },
+        {
+          "type": "bgm",
+          "path": "KM14P",
+          "offset": "0x11"
+        },
+        {
+          "type": "bgm",
+          "path": "KM15P",
+          "offset": "0x12"
+        },
+        {
+          "type": "bgm",
+          "path": "KM17P",
+          "offset": "0x13"
+        },
+        {
+          "type": "bgm",
+          "path": "KM18P",
+          "offset": "0x14"
+        },
+        {
+          "type": "bgm",
+          "path": "KM19P",
+          "offset": "0x15"
+        },
+        {
+          "type": "bgm",
+          "path": "KM1BP",
+          "offset": "0x16"
+        },
+        {
+          "type": "bgm",
+          "path": "KM20P",
+          "offset": "0x17"
+        },
+        {
+          "type": "bgm",
+          "path": "KM22P",
+          "offset": "0x18"
+        },
+        {
+          "type": "bgm",
+          "path": "KM23P",
+          "offset": "0x19"
+        },
+        {
+          "type": "bgm",
+          "path": "KM24P",
+          "offset": "0x1a"
+        },
+        {
+          "type": "bgm",
+          "path": "KM25P",
+          "offset": "0x1b"
+        },
+        {
+          "type": "bgm",
+          "path": "KM26P",
+          "offset": "0x1c"
+        },
+        {
+          "type": "bgm",
+          "path": "KM27BP",
+          "offset": "0x1d"
+        },
+        {
+          "type": "bgm",
+          "path": "KM28P",
+          "offset": "0x1e"
+        },
+        {
+          "type": "bgm",
+          "path": "KM29P",
+          "offset": "0x1f"
+        },
+        {
+          "type": "bgm",
+          "path": "KM2P",
+          "offset": "0x20"
+        },
+        {
+          "type": "bgm",
+          "path": "KM30P",
+          "offset": "0x21"
+        },
+        {
+          "type": "bgm",
+          "path": "KM31P",
+          "offset": "0x22"
+        },
+        {
+          "type": "bgm",
+          "path": "KM32P",
+          "offset": "0x23"
+        },
+        {
+          "type": "bgm",
+          "path": "KM33P",
+          "offset": "0x24"
+        },
+        {
+          "type": "bgm",
+          "path": "KM3P",
+          "offset": "0x25"
+        },
+        {
+          "type": "bgm",
+          "path": "KM4P",
+          "offset": "0x26"
+        },
+        {
+          "type": "bgm",
+          "path": "KM6P",
+          "offset": "0x27"
+        },
+        {
+          "type": "bgm",
+          "path": "KM9BP",
+          "offset": "0x28"
+        },
+        {
+          "type": "bgm",
+          "path": "KTM1BP",
+          "offset": "0x29"
+        },
+        {
+          "type": "bgm",
+          "path": "LANON",
+          "offset": "0x2a"
+        },
+        {
+          "type": "bgm",
+          "path": "MUSHI",
+          "offset": "0x2b"
+        },
+        {
+          "type": "bgm",
+          "path": "NAGRI",
+          "offset": "0x2c"
+        },
+        {
+          "type": "bgm",
+          "path": "NOTON",
+          "offset": "0x2d"
+        },
+        {
+          "type": "bgm",
+          "path": "S",
+          "offset": "0x2e"
+        },
+        {
+          "type": "bgm",
+          "path": "S3",
+          "offset": "0x2f"
+        },
+        {
+          "type": "bgm",
+          "path": "SAKEBI",
+          "offset": "0x30"
+        },
+        {
+          "type": "bgm",
+          "path": "UCHU",
+          "offset": "0x31"
+        },
+        {
+          "type": "bgm",
+          "path": "YUKA",
+          "offset": "0x32"
+        },
+        {
+          "type": "bgm",
+          "path": "ZIPO",
+          "offset": "0x33"
+        },
+        {
+          "type": "bgm",
+          "path": "GUN",
+          "offset": "0x36"
+        },
+        {
+          "type": "bgm",
+          "path": "MIMI",
+          "offset": "0x37"
+        },
+        {
+          "type": "bgm",
+          "path": "OTO",
+          "offset": "0x38"
+        },
+        {
+          "type": "bgm",
+          "path": "OTO2",
+          "offset": "0x39"
+        },
+        {
+          "type": "bgm",
+          "path": "OTO3",
+          "offset": "0x3a"
+        },
+        {
+          "type": "bgm",
+          "path": "OTO4",
+          "offset": "0x3b"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x29",
+          "title": "KTM1BP : 神の聖都のテーマ"
+        },
+        {
+          "kind": "title",
+          "code": "0x0d",
+          "title": "KM10BP : オープニングデモ1"
+        },
+        {
+          "kind": "title",
+          "code": "0x28",
+          "title": "KM9BP  : オープニングデモ3"
+        },
+        {
+          "kind": "title",
+          "code": "0x1a",
+          "title": "KM24P  : アレック商会"
+        },
+        {
+          "kind": "title",
+          "code": "0x27",
+          "title": "KM6P   : 酒場"
+        },
+        {
+          "kind": "title",
+          "code": "0x18",
+          "title": "KM22P  : ハイツン先生の病院"
+        },
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "KM14P  : 移動(走る)"
+        },
+        {
+          "kind": "title",
+          "code": "0x23",
+          "title": "KM32P  : 移動(歩く)"
+        },
+        {
+          "kind": "title",
+          "code": "0x16",
+          "title": "KM1BP  : 戦闘"
+        },
+        {
+          "kind": "title",
+          "code": "0x17",
+          "title": "KM20P  : 病院の襲撃"
+        },
+        {
+          "kind": "title",
+          "code": "0x1b",
+          "title": "KM25P  : 戦慄の蟲"
+        },
+        {
+          "kind": "title",
+          "code": "0x1d",
+          "title": "KM27BP : ノートンの過去"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "KM17P  : ノートンとシャーマス"
+        },
+        {
+          "kind": "title",
+          "code": "0x0e",
+          "title": "KM11P  : 神殿"
+        },
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "KM13P  : 神殿の中"
+        },
+        {
+          "kind": "title",
+          "code": "0x24",
+          "title": "KM33P  : 事件発生"
+        },
+        {
+          "kind": "title",
+          "code": "0x25",
+          "title": "KM3P   : 逃亡してきたジナ"
+        },
+        {
+          "kind": "title",
+          "code": "0x20",
+          "title": "KM2P   : ラノン登場"
+        },
+        {
+          "kind": "title",
+          "code": "0x0f",
+          "title": "KM12P  : ラノンとの戦い"
+        },
+        {
+          "kind": "title",
+          "code": "0x19",
+          "title": "KM23P  : フィレンVSラノン"
+        },
+        {
+          "kind": "title",
+          "code": "0x1c",
+          "title": "KM26P  : 戦いのあとで"
+        },
+        {
+          "kind": "title",
+          "code": "0x22",
+          "title": "KM31P  : 由加利とジナの関係"
+        },
+        {
+          "kind": "title",
+          "code": "0x15",
+          "title": "KM19P  : 敵・本拠地"
+        },
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "KM15P  : 3番目の部屋"
+        },
+        {
+          "kind": "title",
+          "code": "0x14",
+          "title": "KM18P  : 人間の壁"
+        },
+        {
+          "kind": "title",
+          "code": "0x1e",
+          "title": "KM28P  : ダルダルート"
+        },
+        {
+          "kind": "title",
+          "code": "0x1f",
+          "title": "KM29P  : ショック～由加利の死1"
+        },
+        {
+          "kind": "title",
+          "code": "0x26",
+          "title": "KM4P   : 由加利の死2"
+        },
+        {
+          "kind": "title",
+          "code": "0x21",
+          "title": "KM30P  : エンディング1"
+        },
+        {
+          "kind": "title",
+          "code": "0x00",
+          "title": "120MM  : SE"
+        },
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "ALFIS  : SE"
+        },
+        {
+          "kind": "title",
+          "code": "0x02",
+          "title": "BAKU3  : SE"
+        },
+        {
+          "kind": "title",
+          "code": "0x03",
+          "title": "BOMB2  : SE"
+        },
+        {
+          "kind": "title",
+          "code": "0x04",
+          "title": "DAL    : SE"
+        },
+        {
+          "kind": "title",
+          "code": "0x05",
+          "title": "DALDAL : SE"
+        },
+        {
+          "kind": "title",
+          "code": "0x06",
+          "title": "DAMAGE : SE"
+        },
+        {
+          "kind": "title",
+          "code": "0x07",
+          "title": "HITLER : SE"
+        },
+        {
+          "kind": "title",
+          "code": "0x08",
+          "title": "JINA   : SE"
+        },
+        {
+          "kind": "title",
+          "code": "0x09",
+          "title": "JINARI : SE"
+        },
+        {
+          "kind": "title",
+          "code": "0x0a",
+          "title": "JYAN3  : SE"
+        },
+        {
+          "kind": "title",
+          "code": "0x0b",
+          "title": "KAGI   : SE"
+        },
+        {
+          "kind": "title",
+          "code": "0x0c",
+          "title": "KAKIN  : SE"
+        },
+        {
+          "kind": "title",
+          "code": "0x2a",
+          "title": "LANON  : SE"
+        },
+        {
+          "kind": "title",
+          "code": "0x2b",
+          "title": "MUSHI  : SE"
+        },
+        {
+          "kind": "title",
+          "code": "0x2c",
+          "title": "NAGRI  : SE"
+        },
+        {
+          "kind": "title",
+          "code": "0x2d",
+          "title": "NOTON  : SE"
+        },
+        {
+          "kind": "title",
+          "code": "0x2e",
+          "title": "S      : SE"
+        },
+        {
+          "kind": "title",
+          "code": "0x2f",
+          "title": "S3     : SE"
+        },
+        {
+          "kind": "title",
+          "code": "0x30",
+          "title": "SAKEBI : SE"
+        },
+        {
+          "kind": "title",
+          "code": "0x31",
+          "title": "UCHU   : SE"
+        },
+        {
+          "kind": "title",
+          "code": "0x32",
+          "title": "YUKA   : SE"
+        },
+        {
+          "kind": "title",
+          "code": "0x33",
+          "title": "ZIPO   : SE"
+        },
+        {
+          "kind": "title",
+          "code": "0x36",
+          "title": "GUN    : SE"
+        },
+        {
+          "kind": "title",
+          "code": "0x37",
+          "title": "MIMI   : SE"
+        },
+        {
+          "kind": "title",
+          "code": "0x38",
+          "title": "OTO    : SE"
+        },
+        {
+          "kind": "title",
+          "code": "0x39",
+          "title": "OTO2   : SE"
+        },
+        {
+          "kind": "title",
+          "code": "0x3a",
+          "title": "OTO3   : SE"
+        },
+        {
+          "kind": "title",
+          "code": "0x3b",
+          "title": "OTO4   : SE"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/panther.xml",
+      "source_order": 3583,
+      "archive": "kami_msx",
+      "id": "kami-msx-generic-2"
+    },
+    {
+      "title": "[MSX] 天九牌(OPLL)",
+      "driver": {
+        "name": "msx",
+        "type": "generic",
+        "alias": "スタジオパンサー",
+        "platform": "MSX"
+      },
+      "options": [
+        {
+          "name": "mdata_addr",
+          "value": "0xb000"
+        },
+        {
+          "name": "mdata_size",
+          "value": "0x0b00"
+        },
+        {
+          "name": "mfile_size",
+          "value": "0x0b00"
+        },
+        {
+          "name": "init_pc",
+          "value": "0xa000"
+        },
+        {
+          "name": "use_opll",
+          "value": "0x01"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "TEN.COM",
+          "offset": "0x0100"
+        },
+        {
+          "type": "code",
+          "path": "patch",
+          "offset": "0xa000"
+        },
+        {
+          "type": "bgm",
+          "path": "TENK1",
+          "offset": "0x00"
+        },
+        {
+          "type": "bgm",
+          "path": "TENK2",
+          "offset": "0x01"
+        },
+        {
+          "type": "bgm",
+          "path": "TENK3",
+          "offset": "0x02"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x02",
+          "title": "TENK3 : Title"
+        },
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "TENK2"
+        },
+        {
+          "kind": "title",
+          "code": "0x00",
+          "title": "TENK1"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/panther.xml",
+      "source_order": 3584,
+      "archive": "tkh_msx",
+      "id": "tkh-msx-generic"
+    },
+    {
+      "title": "[MSX] 天九牌(PSG)",
+      "driver": {
+        "name": "msx",
+        "type": "generic",
+        "alias": "スタジオパンサー",
+        "platform": "MSX"
+      },
+      "options": [
+        {
+          "name": "mdata_addr",
+          "value": "0xb000"
+        },
+        {
+          "name": "mdata_size",
+          "value": "0x0b00"
+        },
+        {
+          "name": "mfile_size",
+          "value": "0x0b00"
+        },
+        {
+          "name": "init_pc",
+          "value": "0xa000"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "TEN.COM",
+          "offset": "0x0100"
+        },
+        {
+          "type": "code",
+          "path": "patch",
+          "offset": "0xa000"
+        },
+        {
+          "type": "bgm",
+          "path": "TENK1",
+          "offset": "0x00"
+        },
+        {
+          "type": "bgm",
+          "path": "TENK2",
+          "offset": "0x01"
+        },
+        {
+          "type": "bgm",
+          "path": "TENK3",
+          "offset": "0x02"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x02",
+          "title": "TENK3 : Title"
+        },
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "TENK2"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/panther.xml",
+      "source_order": 3585,
+      "archive": "tkh_msx",
+      "id": "tkh-msx-generic-2"
+    },
+    {
+      "title": "[MSX] 天九牌Special 桃源の宴(OPLL)",
+      "driver": {
+        "name": "msx",
+        "type": "generic",
+        "alias": "スタジオパンサー",
+        "platform": "MSX"
+      },
+      "options": [
+        {
+          "name": "mdata_addr",
+          "value": "0xb000"
+        },
+        {
+          "name": "mdata_size",
+          "value": "0x0b00"
+        },
+        {
+          "name": "mfile_size",
+          "value": "0x0b00"
+        },
+        {
+          "name": "init_pc",
+          "value": "0xa000"
+        },
+        {
+          "name": "use_opll",
+          "value": "0x01"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "TGN.COM",
+          "offset": "0x0100"
+        },
+        {
+          "type": "code",
+          "path": "patch",
+          "offset": "0xa000"
+        },
+        {
+          "type": "bgm",
+          "path": "TENK1",
+          "offset": "0x00"
+        },
+        {
+          "type": "bgm",
+          "path": "TENK2",
+          "offset": "0x01"
+        },
+        {
+          "type": "bgm",
+          "path": "TENK3",
+          "offset": "0x02"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x02",
+          "title": "TENK3 : Title"
+        },
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "TENK2"
+        },
+        {
+          "kind": "title",
+          "code": "0x00",
+          "title": "TENK1"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/panther.xml",
+      "source_order": 3586,
+      "archive": "tkhsp_msx",
+      "id": "tkhsp-msx-generic"
+    },
+    {
+      "title": "[MSX] 天九牌Special 桃源の宴(PSG)",
+      "driver": {
+        "name": "msx",
+        "type": "generic",
+        "alias": "スタジオパンサー",
+        "platform": "MSX"
+      },
+      "options": [
+        {
+          "name": "mdata_addr",
+          "value": "0xb000"
+        },
+        {
+          "name": "mdata_size",
+          "value": "0x0b00"
+        },
+        {
+          "name": "mfile_size",
+          "value": "0x0b00"
+        },
+        {
+          "name": "init_pc",
+          "value": "0xa000"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "TGN.COM",
+          "offset": "0x0100"
+        },
+        {
+          "type": "code",
+          "path": "patch",
+          "offset": "0xa000"
+        },
+        {
+          "type": "bgm",
+          "path": "TENK1",
+          "offset": "0x00"
+        },
+        {
+          "type": "bgm",
+          "path": "TENK2",
+          "offset": "0x01"
+        },
+        {
+          "type": "bgm",
+          "path": "TENK3",
+          "offset": "0x02"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x02",
+          "title": "TENK3 : Title"
+        },
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "TENK2"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/panther.xml",
+      "source_order": 3587,
+      "archive": "tkhsp_msx",
+      "id": "tkhsp-msx-generic-2"
+    },
+    {
+      "title": "[MSX] 天九牌Special 桃源の宴II(OPLL)",
+      "driver": {
+        "name": "msx",
+        "type": "generic",
+        "alias": "スタジオパンサー",
+        "platform": "MSX"
+      },
+      "options": [
+        {
+          "name": "mdata_addr",
+          "value": "0xb000"
+        },
+        {
+          "name": "mdata_size",
+          "value": "0x0b00"
+        },
+        {
+          "name": "mfile_size",
+          "value": "0x0b00"
+        },
+        {
+          "name": "init_pc",
+          "value": "0xa000"
+        },
+        {
+          "name": "use_opll",
+          "value": "0x01"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "TGN.COM",
+          "offset": "0x0100"
+        },
+        {
+          "type": "code",
+          "path": "patch",
+          "offset": "0xa000"
+        },
+        {
+          "type": "bgm",
+          "path": "TENK1",
+          "offset": "0x00"
+        },
+        {
+          "type": "bgm",
+          "path": "TENK2",
+          "offset": "0x01"
+        },
+        {
+          "type": "bgm",
+          "path": "TENK3",
+          "offset": "0x02"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x02",
+          "title": "TENK3 : Title"
+        },
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "TENK2"
+        },
+        {
+          "kind": "title",
+          "code": "0x00",
+          "title": "TENK1"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/panther.xml",
+      "source_order": 3588,
+      "archive": "tkhsp2_msx",
+      "id": "tkhsp2-msx-generic"
+    },
+    {
+      "title": "[MSX] 天九牌Special 桃源の宴II(PSG)",
+      "driver": {
+        "name": "msx",
+        "type": "generic",
+        "alias": "スタジオパンサー",
+        "platform": "MSX"
+      },
+      "options": [
+        {
+          "name": "mdata_addr",
+          "value": "0xb000"
+        },
+        {
+          "name": "mdata_size",
+          "value": "0x0b00"
+        },
+        {
+          "name": "mfile_size",
+          "value": "0x0b00"
+        },
+        {
+          "name": "init_pc",
+          "value": "0xa000"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "TGN.COM",
+          "offset": "0x0100"
+        },
+        {
+          "type": "code",
+          "path": "patch",
+          "offset": "0xa000"
+        },
+        {
+          "type": "bgm",
+          "path": "TENK1",
+          "offset": "0x00"
+        },
+        {
+          "type": "bgm",
+          "path": "TENK2",
+          "offset": "0x01"
+        },
+        {
+          "type": "bgm",
+          "path": "TENK3",
+          "offset": "0x02"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x02",
+          "title": "TENK3 : Title"
+        },
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "TENK2"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/panther.xml",
+      "source_order": 3589,
+      "archive": "tkhsp2_msx",
+      "id": "tkhsp2-msx-generic-2"
+    }
+  ]
+}

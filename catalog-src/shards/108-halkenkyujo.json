@@ -1,0 +1,122 @@
+{
+  "format": "hoot-catalog-shard",
+  "version": 1,
+  "source_file": "xml/halkenkyujo.xml",
+  "date": "2005/02/13",
+  "comments": [
+    "//HAL研究所 "
+  ],
+  "games": [
+    {
+      "title": "[MSX] 田代まさしのプリンセスがいっぱい",
+      "driver": {
+        "name": "msx",
+        "type": "generic",
+        "alias": "HAL研究所",
+        "platform": "MSX"
+      },
+      "options": [
+        {
+          "name": "mdata_addr",
+          "value": "0x0100"
+        },
+        {
+          "name": "mdata_size",
+          "value": "0xd000"
+        },
+        {
+          "name": "mfile_size",
+          "value": "0xd000"
+        },
+        {
+          "name": "init_pc",
+          "value": "0xe000"
+        }
+      ],
+      "assets": [
+        {
+          "type": "bgm",
+          "path": "PRINCESS.COM",
+          "offset": "0x00"
+        },
+        {
+          "type": "bgm",
+          "path": "P.COM",
+          "offset": "0x01"
+        },
+        {
+          "type": "code",
+          "path": "patch",
+          "offset": "0xe000"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "タイトル"
+        },
+        {
+          "kind": "title",
+          "code": "0x02",
+          "title": "ストーンマージョ ステージ(白雪姫)"
+        },
+        {
+          "kind": "title",
+          "code": "0x08",
+          "title": "マージョ城"
+        },
+        {
+          "kind": "title",
+          "code": "0x07",
+          "title": "マージョ戦"
+        },
+        {
+          "kind": "title",
+          "code": "0x0a",
+          "title": "ステージクリア"
+        },
+        {
+          "kind": "title",
+          "code": "0x03",
+          "title": "アイスマージョ ステージ(シンデレラ)"
+        },
+        {
+          "kind": "title",
+          "code": "0x05",
+          "title": "ファイヤーマージョ ステージ(人魚姫)"
+        },
+        {
+          "kind": "title",
+          "code": "0x04",
+          "title": "プラントマージョ ステージ(おやゆび姫)"
+        },
+        {
+          "kind": "title",
+          "code": "0x106",
+          "title": "ハイパーマージョ ステージ"
+        },
+        {
+          "kind": "title",
+          "code": "0x10b",
+          "title": "浮遊城"
+        },
+        {
+          "kind": "title",
+          "code": "0x10c",
+          "title": "ハイパーマージョ戦"
+        },
+        {
+          "kind": "title",
+          "code": "0x109",
+          "title": "スタッフロール (ランナウェイ)"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/halkenkyujo.xml",
+      "source_order": 2387,
+      "archive": "tashiro_msx",
+      "id": "tashiro-msx-generic"
+    }
+  ]
+}

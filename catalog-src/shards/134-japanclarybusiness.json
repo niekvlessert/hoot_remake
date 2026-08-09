@@ -1,0 +1,198 @@
+{
+  "format": "hoot-catalog-shard",
+  "version": 1,
+  "source_file": "xml/japanclarybusiness.xml",
+  "date": "2005/09/25",
+  "comments": [
+    " //日本クラリービジネス "
+  ],
+  "games": [
+    {
+      "title": "[PC-9801] El-Dominion",
+      "driver": {
+        "name": "pc98vx",
+        "type": "opn",
+        "alias": "日本クラリービジネス",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "bootcs",
+          "value": "0x0060"
+        },
+        {
+          "name": "bootip",
+          "value": "0x0000"
+        },
+        {
+          "name": "funcvect",
+          "value": "0x7f"
+        },
+        {
+          "name": "adressing",
+          "value": "0"
+        },
+        {
+          "name": "dataaddr",
+          "value": "0x4176"
+        },
+        {
+          "name": "filesize",
+          "value": "16384"
+        },
+        {
+          "name": "datamax",
+          "value": "4"
+        },
+        {
+          "name": "clockmul",
+          "value": "8"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "eldom_98.bin",
+          "offset": "0x600"
+        },
+        {
+          "type": "code",
+          "path": "効果音.TBL",
+          "offset": "0xf00"
+        },
+        {
+          "type": "code",
+          "path": "MRSDRV.COM",
+          "offset": "0x1000"
+        },
+        {
+          "type": "code",
+          "path": "MEGATON.OPN",
+          "offset": "0x2176"
+        },
+        {
+          "type": "bgm",
+          "path": "END用.FMD",
+          "offset": "1"
+        },
+        {
+          "type": "bgm",
+          "path": "OPEN用.FMD",
+          "offset": "2"
+        },
+        {
+          "type": "bgm",
+          "path": "効果音.FMD",
+          "offset": "3"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "2",
+          "title": "OPEN用.FMD      :"
+        },
+        {
+          "kind": "title",
+          "code": "1",
+          "title": "END用.FMD       :"
+        },
+        {
+          "kind": "title",
+          "code": "0x300",
+          "title": "効果音.FMD : 00 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x301",
+          "title": "効果音.FMD : 01 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x302",
+          "title": "効果音.FMD : 02 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x303",
+          "title": "効果音.FMD : 03 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x304",
+          "title": "効果音.FMD : 04 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x305",
+          "title": "効果音.FMD : 05 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x306",
+          "title": "効果音.FMD : 06 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x307",
+          "title": "効果音.FMD : 07 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x308",
+          "title": "効果音.FMD : 08 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x309",
+          "title": "効果音.FMD : 09 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x30a",
+          "title": "効果音.FMD : 0A :"
+        },
+        {
+          "kind": "title",
+          "code": "0x30b",
+          "title": "効果音.FMD : 0B :"
+        },
+        {
+          "kind": "title",
+          "code": "0x30c",
+          "title": "効果音.FMD : 0C :"
+        },
+        {
+          "kind": "title",
+          "code": "0x30d",
+          "title": "効果音.FMD : 0D :"
+        },
+        {
+          "kind": "title",
+          "code": "0x30e",
+          "title": "効果音.FMD : 0E :"
+        },
+        {
+          "kind": "title",
+          "code": "0x30f",
+          "title": "効果音.FMD : 0F :"
+        },
+        {
+          "kind": "title",
+          "code": "0x310",
+          "title": "効果音.FMD : 10 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x311",
+          "title": "効果音.FMD : 11 :"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/japanclarybusiness.xml",
+      "source_order": 2679,
+      "archive": "eldmnon_98",
+      "id": "eldmnon-98-opn"
+    }
+  ]
+}

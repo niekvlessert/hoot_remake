@@ -1,0 +1,1461 @@
+{
+  "format": "hoot-catalog-shard",
+  "version": 1,
+  "source_file": "xml/softbank.xml",
+  "date": "2005/09/25",
+  "comments": [
+    " //SoftBank "
+  ],
+  "games": [
+    {
+      "title": "[PC-8801] BOMB JACK",
+      "driver": {
+        "name": "pc88",
+        "type": "opn",
+        "alias": "SoftBank",
+        "platform": "NEC PC-8801"
+      },
+      "options": [
+        {
+          "name": "baseclock",
+          "value": "0x04"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "PATCH",
+          "offset": "0x0000"
+        },
+        {
+          "type": "code",
+          "path": "PROG",
+          "offset": "0x0100"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x00",
+          "title": "00 : STOP"
+        },
+        {
+          "kind": "title",
+          "code": "0x09",
+          "title": "09 : OPENING TITLE"
+        },
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "01 : Stage 1 / リンゴの森の子猫たち (飯島真理)"
+        },
+        {
+          "kind": "title",
+          "code": "0x02",
+          "title": "02 : Stage 2 / Lady Madonna (Beatles)"
+        },
+        {
+          "kind": "title",
+          "code": "0x03",
+          "title": "03 : Stage 3"
+        },
+        {
+          "kind": "title",
+          "code": "0x08",
+          "title": "08 : POWER BALL出現"
+        },
+        {
+          "kind": "title",
+          "code": "0x07",
+          "title": "07 : POWER UP"
+        },
+        {
+          "kind": "title",
+          "code": "0x04",
+          "title": "04 : ROUND CLEAR"
+        },
+        {
+          "kind": "title",
+          "code": "0x05",
+          "title": "05 : BONUS"
+        },
+        {
+          "kind": "title",
+          "code": "0x06",
+          "title": "06 : GAME OVER"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/softbank.xml",
+      "source_order": 4148,
+      "archive": "bmjack88",
+      "id": "bmjack88-opn"
+    },
+    {
+      "title": "[PC-8801] ぐっちゃんばんく",
+      "driver": {
+        "name": "pc88",
+        "type": "opn",
+        "alias": "SoftBank",
+        "platform": "NEC PC-8801"
+      },
+      "options": [
+        {
+          "name": "init_pc",
+          "value": "0xf000"
+        },
+        {
+          "name": "use_rtc",
+          "value": "0x01"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "PROG",
+          "offset": "0x0000"
+        },
+        {
+          "type": "code",
+          "path": "patch",
+          "offset": "0xf000"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x00000000",
+          "title": "タイトル"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000001",
+          "title": "メインBGM"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000002",
+          "title": "面クリア"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000003",
+          "title": "ボーナスステージ開始"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000004",
+          "title": "ボーナスステージ"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000005",
+          "title": "ボーナスステージ終了"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000006",
+          "title": "タイムアップ"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000007",
+          "title": "面クリアデモ"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000008",
+          "title": "ゲームオーバー"
+        },
+        {
+          "kind": "title",
+          "code": "0x000000ff",
+          "title": "EFFECT 00"
+        },
+        {
+          "kind": "title",
+          "code": "0x010000ff",
+          "title": "EFFECT 01"
+        },
+        {
+          "kind": "title",
+          "code": "0x020000ff",
+          "title": "EFFECT 02"
+        },
+        {
+          "kind": "title",
+          "code": "0x030000ff",
+          "title": "EFFECT 03"
+        },
+        {
+          "kind": "title",
+          "code": "0x040000ff",
+          "title": "EFFECT 04"
+        },
+        {
+          "kind": "title",
+          "code": "0x050000ff",
+          "title": "EFFECT 05"
+        },
+        {
+          "kind": "title",
+          "code": "0x060000ff",
+          "title": "EFFECT 06"
+        },
+        {
+          "kind": "title",
+          "code": "0x070000ff",
+          "title": "EFFECT 07"
+        },
+        {
+          "kind": "title",
+          "code": "0x080000ff",
+          "title": "EFFECT 08"
+        },
+        {
+          "kind": "title",
+          "code": "0x090000ff",
+          "title": "EFFECT 09"
+        },
+        {
+          "kind": "title",
+          "code": "0x0a0000ff",
+          "title": "EFFECT 10"
+        },
+        {
+          "kind": "title",
+          "code": "0x0b0000ff",
+          "title": "EFFECT 11"
+        },
+        {
+          "kind": "title",
+          "code": "0x0c0000ff",
+          "title": "EFFECT 12"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/softbank.xml",
+      "source_order": 4149,
+      "archive": "gutchan88",
+      "id": "gutchan88-opn"
+    },
+    {
+      "title": "[X68000] SION II The First Attack.(OPM)",
+      "driver": {
+        "name": "x68k",
+        "type": "generic",
+        "alias": "SoftBank",
+        "platform": "SHARP X68000"
+      },
+      "options": [],
+      "assets": [
+        {
+          "type": "code",
+          "path": "sion268snd.bin",
+          "offset": "0x000000"
+        },
+        {
+          "type": "code",
+          "path": "NEIRO.ZMD",
+          "offset": "0x010000"
+        },
+        {
+          "type": "code",
+          "path": "AMOUNT_FM.ZMD",
+          "offset": "0x011000"
+        },
+        {
+          "type": "code",
+          "path": "ASTERO_FM.ZMD",
+          "offset": "0x013000"
+        },
+        {
+          "type": "code",
+          "path": "BOSS_FM.ZMD",
+          "offset": "0x014000"
+        },
+        {
+          "type": "code",
+          "path": "LEGEND_FM.ZMD",
+          "offset": "0x015000"
+        },
+        {
+          "type": "code",
+          "path": "OLD_FM.ZMD",
+          "offset": "0x019000"
+        },
+        {
+          "type": "code",
+          "path": "SIGH_FM.ZMD",
+          "offset": "0x01a000"
+        },
+        {
+          "type": "code",
+          "path": "SMART2_FM.ZMD",
+          "offset": "0x01c000"
+        },
+        {
+          "type": "code",
+          "path": "WAY1_FM.ZMD",
+          "offset": "0x01e000"
+        },
+        {
+          "type": "code",
+          "path": "SION2.ZPD",
+          "offset": "0x020000"
+        },
+        {
+          "type": "x",
+          "path": "zmusic.x",
+          "offset": "0x080000"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x04",
+          "title": "LEGEND_FM.ZMD : LEGEND"
+        },
+        {
+          "kind": "title",
+          "code": "0x08",
+          "title": "WAY1_FM.ZMD   : GATHER WAY!"
+        },
+        {
+          "kind": "title",
+          "code": "0x02",
+          "title": "ASTERO_FM.ZMD : THE SEA OF ASTEROIDS"
+        },
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "AMOUNT_FM.ZMD : IT DOESN'T AMOUNT TO ANYTHING."
+        },
+        {
+          "kind": "title",
+          "code": "0x07",
+          "title": "SMART2_FM.ZMD : SMART BOMBER2"
+        },
+        {
+          "kind": "title",
+          "code": "0x03",
+          "title": "BOSS_FM.ZMD   : I DON'T KNOW WHO SHE IS."
+        },
+        {
+          "kind": "title",
+          "code": "0x05",
+          "title": "OLD_FM.ZMD    : AN OLD PICTURE"
+        },
+        {
+          "kind": "title",
+          "code": "0x06",
+          "title": "SIGH_FM.ZMD   : SIGHING IN THE WIND"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/softbank.xml",
+      "source_order": 4150,
+      "archive": "sion268snd",
+      "id": "sion268snd-generic"
+    },
+    {
+      "title": "[X68000] SION II The First Attack.(GS)",
+      "driver": {
+        "name": "x68k",
+        "type": "generic",
+        "alias": "SoftBank",
+        "platform": "SHARP X68000"
+      },
+      "options": [
+        {
+          "name": "midiout",
+          "value": "1"
+        },
+        {
+          "name": "midiout_type",
+          "value": "4"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "sion268mid.bin",
+          "offset": "0x000000"
+        },
+        {
+          "type": "code",
+          "path": "AMOUNT.ZMD",
+          "offset": "0x010000"
+        },
+        {
+          "type": "code",
+          "path": "ASTERO.ZMD",
+          "offset": "0x014000"
+        },
+        {
+          "type": "code",
+          "path": "CLEAN_SHOT.ZMD",
+          "offset": "0x015000"
+        },
+        {
+          "type": "code",
+          "path": "DUST_IN_SPACE.ZMD",
+          "offset": "0x017000"
+        },
+        {
+          "type": "code",
+          "path": "HEADQUATERS.ZMD",
+          "offset": "0x018000"
+        },
+        {
+          "type": "code",
+          "path": "HESPERUS.ZMD",
+          "offset": "0x01c000"
+        },
+        {
+          "type": "code",
+          "path": "LEGEND.ZMD",
+          "offset": "0x01e000"
+        },
+        {
+          "type": "code",
+          "path": "METEOR.ZMD",
+          "offset": "0x022000"
+        },
+        {
+          "type": "code",
+          "path": "MIND_CONTROL.ZMD",
+          "offset": "0x023000"
+        },
+        {
+          "type": "code",
+          "path": "OLD.ZMD",
+          "offset": "0x026000"
+        },
+        {
+          "type": "code",
+          "path": "ON_THE_HOP.ZMD",
+          "offset": "0x027000"
+        },
+        {
+          "type": "code",
+          "path": "PEACE.ZMD",
+          "offset": "0x02a000"
+        },
+        {
+          "type": "code",
+          "path": "SHOOTING_MASTER.ZMD",
+          "offset": "0x02c000"
+        },
+        {
+          "type": "code",
+          "path": "SIGH.ZMD",
+          "offset": "0x02f000"
+        },
+        {
+          "type": "code",
+          "path": "sion2_ed.zmd",
+          "offset": "0x032000"
+        },
+        {
+          "type": "code",
+          "path": "SION2_OP.ZMD",
+          "offset": "0x03a000"
+        },
+        {
+          "type": "code",
+          "path": "SMART2.ZMD",
+          "offset": "0x03d000"
+        },
+        {
+          "type": "code",
+          "path": "TRY.ZMD",
+          "offset": "0x040000"
+        },
+        {
+          "type": "code",
+          "path": "WAY1.ZMD",
+          "offset": "0x043000"
+        },
+        {
+          "type": "x",
+          "path": "zmusic.x",
+          "offset": "0x080000"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x06",
+          "title": "HESPERUS.ZMD : HESPERUS"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "WAY1.ZMD     : GATHER WAY!"
+        },
+        {
+          "kind": "title",
+          "code": "0x02",
+          "title": "ASTERO.ZMD   : THE SEA OF ASTEROIDS"
+        },
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "AMOUNT.ZMD   : IT DOESN'T AMOUNT TO ANYTHING."
+        },
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "SMART2.ZMD   : SMART BOMBER2"
+        },
+        {
+          "kind": "title",
+          "code": "0x0a",
+          "title": "OLD.ZMD      : AN OLD PICTURE"
+        },
+        {
+          "kind": "title",
+          "code": "0x0e",
+          "title": "SIGH.ZMD     : SIGHING IN THE WIND"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/softbank.xml",
+      "source_order": 4151,
+      "archive": "sion268snd",
+      "id": "sion268snd-generic-2"
+    },
+    {
+      "title": "[X68000] SION II The First Attack.(MT-32)",
+      "driver": {
+        "name": "x68k",
+        "type": "generic",
+        "alias": "SoftBank",
+        "platform": "SHARP X68000"
+      },
+      "options": [
+        {
+          "name": "midiout",
+          "value": "1"
+        },
+        {
+          "name": "midiout_type",
+          "value": "2"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "sion268mid.bin",
+          "offset": "0x000000"
+        },
+        {
+          "type": "code",
+          "path": "AMOUNT.ZMD",
+          "offset": "0x010000"
+        },
+        {
+          "type": "code",
+          "path": "ASTERO.ZMD",
+          "offset": "0x014000"
+        },
+        {
+          "type": "code",
+          "path": "CLEAN_SHOT.ZMD",
+          "offset": "0x015000"
+        },
+        {
+          "type": "code",
+          "path": "DUST_IN_SPACE.ZMD",
+          "offset": "0x017000"
+        },
+        {
+          "type": "code",
+          "path": "HEADQUATERS.ZMD",
+          "offset": "0x018000"
+        },
+        {
+          "type": "code",
+          "path": "HESPERUS.ZMD",
+          "offset": "0x01c000"
+        },
+        {
+          "type": "code",
+          "path": "LEGEND.ZMD",
+          "offset": "0x01e000"
+        },
+        {
+          "type": "code",
+          "path": "METEOR.ZMD",
+          "offset": "0x022000"
+        },
+        {
+          "type": "code",
+          "path": "MIND_CONTROL.ZMD",
+          "offset": "0x023000"
+        },
+        {
+          "type": "code",
+          "path": "OLD.ZMD",
+          "offset": "0x026000"
+        },
+        {
+          "type": "code",
+          "path": "ON_THE_HOP.ZMD",
+          "offset": "0x027000"
+        },
+        {
+          "type": "code",
+          "path": "PEACE.ZMD",
+          "offset": "0x02a000"
+        },
+        {
+          "type": "code",
+          "path": "SHOOTING_MASTER.ZMD",
+          "offset": "0x02c000"
+        },
+        {
+          "type": "code",
+          "path": "SIGH.ZMD",
+          "offset": "0x02f000"
+        },
+        {
+          "type": "code",
+          "path": "sion2_ed.zmd",
+          "offset": "0x032000"
+        },
+        {
+          "type": "code",
+          "path": "SION2_OP.ZMD",
+          "offset": "0x03a000"
+        },
+        {
+          "type": "code",
+          "path": "SMART2.ZMD",
+          "offset": "0x03d000"
+        },
+        {
+          "type": "code",
+          "path": "TRY.ZMD",
+          "offset": "0x040000"
+        },
+        {
+          "type": "code",
+          "path": "WAY1.ZMD",
+          "offset": "0x043000"
+        },
+        {
+          "type": "x",
+          "path": "zmusic.x",
+          "offset": "0x080000"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x07",
+          "title": "LEGEND.ZMD          : LEGEND"
+        },
+        {
+          "kind": "title",
+          "code": "0x0b",
+          "title": "ON_THE_HOP.ZMD      : ON THE HOP!"
+        },
+        {
+          "kind": "title",
+          "code": "0x08",
+          "title": "METEOR.ZMD          : METEOR"
+        },
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "TRY.ZMD             : TRY"
+        },
+        {
+          "kind": "title",
+          "code": "0x03",
+          "title": "CLEAN_SHOT.ZMD      : CLEAN SHOT"
+        },
+        {
+          "kind": "title",
+          "code": "0x0d",
+          "title": "SHOOTING_MASTER.ZMD : SHOOTING MASTER"
+        },
+        {
+          "kind": "title",
+          "code": "0x05",
+          "title": "HEADQUATERS.ZMD     : HEADQUATERS"
+        },
+        {
+          "kind": "title",
+          "code": "0x09",
+          "title": "MIND_CONTROL.ZMD    : MIND CONTROL"
+        },
+        {
+          "kind": "title",
+          "code": "0x04",
+          "title": "DUST_IN_SPACE.ZMD   : DUST IN SPACE"
+        },
+        {
+          "kind": "title",
+          "code": "0x0c",
+          "title": "PEACE.ZMD           : PEACE"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/softbank.xml",
+      "source_order": 4152,
+      "archive": "sion268snd",
+      "id": "sion268snd-generic-3"
+    },
+    {
+      "title": "[X68000] SION II The First Attack.(MT-32 Emulation)",
+      "driver": {
+        "name": "x68k",
+        "type": "generic",
+        "alias": "SoftBank",
+        "platform": "SHARP X68000"
+      },
+      "options": [
+        {
+          "name": "midiout",
+          "value": "1"
+        },
+        {
+          "name": "midiout_type",
+          "value": "1"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "sion268mid.bin",
+          "offset": "0x000000"
+        },
+        {
+          "type": "code",
+          "path": "AMOUNT.ZMD",
+          "offset": "0x010000"
+        },
+        {
+          "type": "code",
+          "path": "ASTERO.ZMD",
+          "offset": "0x014000"
+        },
+        {
+          "type": "code",
+          "path": "CLEAN_SHOT.ZMD",
+          "offset": "0x015000"
+        },
+        {
+          "type": "code",
+          "path": "DUST_IN_SPACE.ZMD",
+          "offset": "0x017000"
+        },
+        {
+          "type": "code",
+          "path": "HEADQUATERS.ZMD",
+          "offset": "0x018000"
+        },
+        {
+          "type": "code",
+          "path": "HESPERUS.ZMD",
+          "offset": "0x01c000"
+        },
+        {
+          "type": "code",
+          "path": "LEGEND.ZMD",
+          "offset": "0x01e000"
+        },
+        {
+          "type": "code",
+          "path": "METEOR.ZMD",
+          "offset": "0x022000"
+        },
+        {
+          "type": "code",
+          "path": "MIND_CONTROL.ZMD",
+          "offset": "0x023000"
+        },
+        {
+          "type": "code",
+          "path": "OLD.ZMD",
+          "offset": "0x026000"
+        },
+        {
+          "type": "code",
+          "path": "ON_THE_HOP.ZMD",
+          "offset": "0x027000"
+        },
+        {
+          "type": "code",
+          "path": "PEACE.ZMD",
+          "offset": "0x02a000"
+        },
+        {
+          "type": "code",
+          "path": "SHOOTING_MASTER.ZMD",
+          "offset": "0x02c000"
+        },
+        {
+          "type": "code",
+          "path": "SIGH.ZMD",
+          "offset": "0x02f000"
+        },
+        {
+          "type": "code",
+          "path": "sion2_ed.zmd",
+          "offset": "0x032000"
+        },
+        {
+          "type": "code",
+          "path": "SION2_OP.ZMD",
+          "offset": "0x03a000"
+        },
+        {
+          "type": "code",
+          "path": "SMART2.ZMD",
+          "offset": "0x03d000"
+        },
+        {
+          "type": "code",
+          "path": "TRY.ZMD",
+          "offset": "0x040000"
+        },
+        {
+          "type": "code",
+          "path": "WAY1.ZMD",
+          "offset": "0x043000"
+        },
+        {
+          "type": "x",
+          "path": "zmusic.x",
+          "offset": "0x080000"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x07",
+          "title": "LEGEND.ZMD          : LEGEND"
+        },
+        {
+          "kind": "title",
+          "code": "0x0b",
+          "title": "ON_THE_HOP.ZMD      : ON THE HOP!"
+        },
+        {
+          "kind": "title",
+          "code": "0x08",
+          "title": "METEOR.ZMD          : METEOR"
+        },
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "TRY.ZMD             : TRY"
+        },
+        {
+          "kind": "title",
+          "code": "0x03",
+          "title": "CLEAN_SHOT.ZMD      : CLEAN SHOT"
+        },
+        {
+          "kind": "title",
+          "code": "0x0d",
+          "title": "SHOOTING_MASTER.ZMD : SHOOTING MASTER"
+        },
+        {
+          "kind": "title",
+          "code": "0x05",
+          "title": "HEADQUATERS.ZMD     : HEADQUATERS"
+        },
+        {
+          "kind": "title",
+          "code": "0x09",
+          "title": "MIND_CONTROL.ZMD    : MIND CONTROL"
+        },
+        {
+          "kind": "title",
+          "code": "0x04",
+          "title": "DUST_IN_SPACE.ZMD   : DUST IN SPACE"
+        },
+        {
+          "kind": "title",
+          "code": "0x0c",
+          "title": "PEACE.ZMD           : PEACE"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/softbank.xml",
+      "source_order": 4153,
+      "archive": "sion268snd",
+      "id": "sion268snd-generic-4"
+    },
+    {
+      "title": "[X68000] SION II The First Attack.(CM-64)",
+      "driver": {
+        "name": "x68k",
+        "type": "generic",
+        "alias": "SoftBank",
+        "platform": "SHARP X68000"
+      },
+      "options": [
+        {
+          "name": "midiout",
+          "value": "1"
+        },
+        {
+          "name": "midiout_type",
+          "value": "3"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "sion268mid.bin",
+          "offset": "0x000000"
+        },
+        {
+          "type": "code",
+          "path": "AMOUNT.ZMD",
+          "offset": "0x010000"
+        },
+        {
+          "type": "code",
+          "path": "ASTERO.ZMD",
+          "offset": "0x014000"
+        },
+        {
+          "type": "code",
+          "path": "CLEAN_SHOT.ZMD",
+          "offset": "0x015000"
+        },
+        {
+          "type": "code",
+          "path": "DUST_IN_SPACE.ZMD",
+          "offset": "0x017000"
+        },
+        {
+          "type": "code",
+          "path": "HEADQUATERS.ZMD",
+          "offset": "0x018000"
+        },
+        {
+          "type": "code",
+          "path": "HESPERUS.ZMD",
+          "offset": "0x01c000"
+        },
+        {
+          "type": "code",
+          "path": "LEGEND.ZMD",
+          "offset": "0x01e000"
+        },
+        {
+          "type": "code",
+          "path": "METEOR.ZMD",
+          "offset": "0x022000"
+        },
+        {
+          "type": "code",
+          "path": "MIND_CONTROL.ZMD",
+          "offset": "0x023000"
+        },
+        {
+          "type": "code",
+          "path": "OLD.ZMD",
+          "offset": "0x026000"
+        },
+        {
+          "type": "code",
+          "path": "ON_THE_HOP.ZMD",
+          "offset": "0x027000"
+        },
+        {
+          "type": "code",
+          "path": "PEACE.ZMD",
+          "offset": "0x02a000"
+        },
+        {
+          "type": "code",
+          "path": "SHOOTING_MASTER.ZMD",
+          "offset": "0x02c000"
+        },
+        {
+          "type": "code",
+          "path": "SIGH.ZMD",
+          "offset": "0x02f000"
+        },
+        {
+          "type": "code",
+          "path": "sion2_ed.zmd",
+          "offset": "0x032000"
+        },
+        {
+          "type": "code",
+          "path": "SION2_OP.ZMD",
+          "offset": "0x03a000"
+        },
+        {
+          "type": "code",
+          "path": "SMART2.ZMD",
+          "offset": "0x03d000"
+        },
+        {
+          "type": "code",
+          "path": "TRY.ZMD",
+          "offset": "0x040000"
+        },
+        {
+          "type": "code",
+          "path": "WAY1.ZMD",
+          "offset": "0x043000"
+        },
+        {
+          "type": "x",
+          "path": "zmusic.x",
+          "offset": "0x080000"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "SOPN2_OP.ZMD        : THE SHIRIVE APPLE"
+        },
+        {
+          "kind": "title",
+          "code": "0x0b",
+          "title": "ON_THE_HOP.ZMD      : ON THE HOP!"
+        },
+        {
+          "kind": "title",
+          "code": "0x08",
+          "title": "METEOR.ZMD          : METEOR"
+        },
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "TRY.ZMD             : TRY"
+        },
+        {
+          "kind": "title",
+          "code": "0x03",
+          "title": "CLEAN_SHOT.ZMD      : CLEAN SHOT"
+        },
+        {
+          "kind": "title",
+          "code": "0x0d",
+          "title": "SHOOTING_MASTER.ZMD : SHOOTING MASTER"
+        },
+        {
+          "kind": "title",
+          "code": "0x05",
+          "title": "HEADQUATERS.ZMD     : HEADQUATERS"
+        },
+        {
+          "kind": "title",
+          "code": "0x09",
+          "title": "MIND_CONTROL.ZMD    : MIND CONTROL"
+        },
+        {
+          "kind": "title",
+          "code": "0x04",
+          "title": "DUST_IN_SPACE.ZMD   : DUST IN SPACE"
+        },
+        {
+          "kind": "title",
+          "code": "0x0f",
+          "title": "SION2_ED.ZMD        : LONLY CHIRLDREN"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/softbank.xml",
+      "source_order": 4154,
+      "archive": "sion268snd",
+      "id": "sion268snd-generic-5"
+    },
+    {
+      "title": "[X68000] SION IV(OPM)",
+      "driver": {
+        "name": "x68k",
+        "type": "generic",
+        "alias": "SoftBank",
+        "platform": "SHARP X68000"
+      },
+      "options": [],
+      "assets": [
+        {
+          "type": "code",
+          "path": "sion468snd.bin",
+          "offset": "0x000000"
+        },
+        {
+          "type": "code",
+          "path": "SION4_SE.ZMD",
+          "offset": "0x010000"
+        },
+        {
+          "type": "code",
+          "path": "ALART.ZMD",
+          "offset": "0x011000"
+        },
+        {
+          "type": "code",
+          "path": "FIN.ZMD",
+          "offset": "0x012000"
+        },
+        {
+          "type": "code",
+          "path": "G_O.ZMD",
+          "offset": "0x014000"
+        },
+        {
+          "type": "code",
+          "path": "HUGE5.ZMD",
+          "offset": "0x015000"
+        },
+        {
+          "type": "code",
+          "path": "INSEKI2.ZMD",
+          "offset": "0x016000"
+        },
+        {
+          "type": "code",
+          "path": "l_boss2.ZMD",
+          "offset": "0x017000"
+        },
+        {
+          "type": "code",
+          "path": "MISSION.ZMD",
+          "offset": "0x019000"
+        },
+        {
+          "type": "code",
+          "path": "M_BOSS2.ZMD",
+          "offset": "0x01a000"
+        },
+        {
+          "type": "code",
+          "path": "OPTION2.ZMD",
+          "offset": "0x01b000"
+        },
+        {
+          "type": "code",
+          "path": "rest.ZMD",
+          "offset": "0x01c000"
+        },
+        {
+          "type": "code",
+          "path": "SELECT.ZMD",
+          "offset": "0x01d000"
+        },
+        {
+          "type": "code",
+          "path": "SELECT2.ZMD",
+          "offset": "0x01e000"
+        },
+        {
+          "type": "code",
+          "path": "SLIDE3.ZMD",
+          "offset": "0x01f000"
+        },
+        {
+          "type": "code",
+          "path": "SPACE4.ZMD",
+          "offset": "0x022000"
+        },
+        {
+          "type": "code",
+          "path": "SS2.ZMD",
+          "offset": "0x024000"
+        },
+        {
+          "type": "code",
+          "path": "SION4.ZPD",
+          "offset": "0x026000"
+        },
+        {
+          "type": "x",
+          "path": "zmusic.x",
+          "offset": "0x040000"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x0a",
+          "title": "rest.ZMD    : [STOP]"
+        },
+        {
+          "kind": "title",
+          "code": "0x0c",
+          "title": "SELECT2.ZMD : WEAPON SELECT"
+        },
+        {
+          "kind": "title",
+          "code": "0x07",
+          "title": "MISSION.ZMD : MISSION DEMO"
+        },
+        {
+          "kind": "title",
+          "code": "0x0e",
+          "title": "SPACE4.ZMD  : MISSION 1"
+        },
+        {
+          "kind": "title",
+          "code": "0x05",
+          "title": "INSEKI2.ZMD : MISSION 2"
+        },
+        {
+          "kind": "title",
+          "code": "0x04",
+          "title": "HUGE5.ZMD   : MISSION 3"
+        },
+        {
+          "kind": "title",
+          "code": "0x0d",
+          "title": "SLIDE3.ZMD  : MISSION 4"
+        },
+        {
+          "kind": "title",
+          "code": "0x0f",
+          "title": "SS2.ZMD     : MISSION 5"
+        },
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "ALART.ZMD   : BOSS WARNING"
+        },
+        {
+          "kind": "title",
+          "code": "0x08",
+          "title": "M_BOSS2.ZMD : BOSS"
+        },
+        {
+          "kind": "title",
+          "code": "0x06",
+          "title": "l_boss2.ZMD : LAST BOSS"
+        },
+        {
+          "kind": "title",
+          "code": "0x02",
+          "title": "FIN.ZMD     : ENDING"
+        },
+        {
+          "kind": "title",
+          "code": "0x03",
+          "title": "G_O.ZMD     : GAME OVER"
+        },
+        {
+          "kind": "title",
+          "code": "0x09",
+          "title": "OPTION2.ZMD : NAME ENTRY"
+        },
+        {
+          "kind": "title",
+          "code": "0x0b",
+          "title": "SELECT.ZMD  :"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/softbank.xml",
+      "source_order": 4155,
+      "archive": "sion468snd",
+      "id": "sion468snd-generic"
+    },
+    {
+      "title": "[X68000] SION IV(GS)",
+      "driver": {
+        "name": "x68k",
+        "type": "generic",
+        "alias": "SoftBank",
+        "platform": "SHARP X68000"
+      },
+      "options": [
+        {
+          "name": "midiout",
+          "value": "1"
+        },
+        {
+          "name": "midiout_type",
+          "value": "4"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "sion468mid.bin",
+          "offset": "0x000000"
+        },
+        {
+          "type": "code",
+          "path": "SION4_SE.ZMD",
+          "offset": "0x010000"
+        },
+        {
+          "type": "code",
+          "path": "ALART.ZMD",
+          "offset": "0x011000"
+        },
+        {
+          "type": "code",
+          "path": "SC_FIN.ZMD",
+          "offset": "0x012000"
+        },
+        {
+          "type": "code",
+          "path": "SC_G_O.ZMD",
+          "offset": "0x014000"
+        },
+        {
+          "type": "code",
+          "path": "SC_HUGE5.ZMD",
+          "offset": "0x016000"
+        },
+        {
+          "type": "code",
+          "path": "SC_INSEKI2.ZMD",
+          "offset": "0x017000"
+        },
+        {
+          "type": "code",
+          "path": "sc_l_boss2.ZMD",
+          "offset": "0x018000"
+        },
+        {
+          "type": "code",
+          "path": "sc_mission.ZMD",
+          "offset": "0x01a000"
+        },
+        {
+          "type": "code",
+          "path": "SC_M_BOSS2.ZMD",
+          "offset": "0x01b000"
+        },
+        {
+          "type": "code",
+          "path": "SC_OPTION2.ZMD",
+          "offset": "0x01c000"
+        },
+        {
+          "type": "code",
+          "path": "rest.ZMD",
+          "offset": "0x01e000"
+        },
+        {
+          "type": "code",
+          "path": "SELECT.ZMD",
+          "offset": "0x01f000"
+        },
+        {
+          "type": "code",
+          "path": "SC_SELECT2.ZMD",
+          "offset": "0x020000"
+        },
+        {
+          "type": "code",
+          "path": "sc_slide3.ZMD",
+          "offset": "0x021000"
+        },
+        {
+          "type": "code",
+          "path": "SC_SPACE4.ZMD",
+          "offset": "0x024000"
+        },
+        {
+          "type": "code",
+          "path": "SC_SS2.ZMD",
+          "offset": "0x026000"
+        },
+        {
+          "type": "code",
+          "path": "SION4.ZPD",
+          "offset": "0x028000"
+        },
+        {
+          "type": "x",
+          "path": "zmusic.x",
+          "offset": "0x040000"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x0a",
+          "title": "rest.ZMD       : [STOP]"
+        },
+        {
+          "kind": "title",
+          "code": "0x0c",
+          "title": "SC_SELECT2.ZMD : WEAPON SELECT"
+        },
+        {
+          "kind": "title",
+          "code": "0x07",
+          "title": "sc_mission.ZMD : MISSION DEMO"
+        },
+        {
+          "kind": "title",
+          "code": "0x0e",
+          "title": "SC_SPACE4.ZMD  : MISSION 1"
+        },
+        {
+          "kind": "title",
+          "code": "0x05",
+          "title": "SC_INSEKI2.ZMD : MISSION 2"
+        },
+        {
+          "kind": "title",
+          "code": "0x04",
+          "title": "SC_HUGE5.ZMD   : MISSION 3"
+        },
+        {
+          "kind": "title",
+          "code": "0x0d",
+          "title": "SC_SLIDE3.ZMD  : MISSION 4"
+        },
+        {
+          "kind": "title",
+          "code": "0x0f",
+          "title": "SC_SS2.ZMD     : MISSION 5"
+        },
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "ALART.ZMD      : BOSS WARNING"
+        },
+        {
+          "kind": "title",
+          "code": "0x08",
+          "title": "SC_M_BOSS2.ZMD : BOSS"
+        },
+        {
+          "kind": "title",
+          "code": "0x06",
+          "title": "sc_l_boss2.ZMD : LAST BOSS"
+        },
+        {
+          "kind": "title",
+          "code": "0x02",
+          "title": "SC_FIN.ZMD     : ENDING"
+        },
+        {
+          "kind": "title",
+          "code": "0x03",
+          "title": "SC_G_O.ZMD     : GAME OVER"
+        },
+        {
+          "kind": "title",
+          "code": "0x09",
+          "title": "SC_OPTION2.ZMD : NAME ENTRY"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/softbank.xml",
+      "source_order": 4156,
+      "archive": "sion468snd",
+      "id": "sion468snd-generic-2"
+    }
+  ]
+}

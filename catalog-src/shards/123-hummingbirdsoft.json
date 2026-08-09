@@ -1,0 +1,7727 @@
+{
+  "format": "hoot-catalog-shard",
+  "version": 1,
+  "source_file": "xml/hummingbirdsoft.xml",
+  "date": "2005/09/25",
+  "comments": [
+    " //Humming Bird Soft "
+  ],
+  "games": [
+    {
+      "title": "[PC-8801] ABYSS II 帝王の涙",
+      "driver": {
+        "name": "pc88",
+        "type": "opn",
+        "alias": "Humming Bird Soft",
+        "platform": "NEC PC-8801"
+      },
+      "options": [
+        {
+          "name": "mdata_addr",
+          "value": "0x8900"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "PATCH",
+          "offset": "0x0000"
+        },
+        {
+          "type": "code",
+          "path": "DRIVER",
+          "offset": "0x8600"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS00",
+          "offset": "0x00"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS01",
+          "offset": "0x01"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS02",
+          "offset": "0x02"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x00",
+          "title": "タイトル"
+        },
+        {
+          "kind": "title",
+          "code": "0x02",
+          "title": "エンディング"
+        },
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "ゲームオーバー"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/hummingbirdsoft.xml",
+      "source_order": 2560,
+      "archive": "abyss2",
+      "id": "abyss2-opn"
+    },
+    {
+      "title": "[PC-8801] ラプラスの魔",
+      "driver": {
+        "name": "pc88",
+        "type": "opn",
+        "alias": "Humming Bird Soft",
+        "platform": "NEC PC-8801"
+      },
+      "options": [
+        {
+          "name": "use_rtc",
+          "value": "0x01"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "PATCH",
+          "offset": "0x0000"
+        },
+        {
+          "type": "code",
+          "path": "DRIVER",
+          "offset": "0x8000"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS00",
+          "offset": "0x00"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS01",
+          "offset": "0x01"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS02",
+          "offset": "0x02"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS03",
+          "offset": "0x03"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS04",
+          "offset": "0x04"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS05",
+          "offset": "0x05"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS06",
+          "offset": "0x06"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS07",
+          "offset": "0x07"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS08",
+          "offset": "0x08"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS09",
+          "offset": "0x09"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS10",
+          "offset": "0x0a"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS11",
+          "offset": "0x0b"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS12",
+          "offset": "0x0c"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS13",
+          "offset": "0x0d"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS14",
+          "offset": "0x0e"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS15",
+          "offset": "0x0f"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS16",
+          "offset": "0x10"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS17",
+          "offset": "0x11"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS18",
+          "offset": "0x12"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS19",
+          "offset": "0x13"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS20",
+          "offset": "0x14"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS21",
+          "offset": "0x15"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x00",
+          "title": "MUS00 : イントロダクション"
+        },
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "MUS01 : ラプラスのテーマ ～旅立つ勇者～ (オープニング)"
+        },
+        {
+          "kind": "title",
+          "code": "0x05",
+          "title": "MUS05 : 想い出のニューカム              (ホテル)"
+        },
+        {
+          "kind": "title",
+          "code": "0x04",
+          "title": "MUS04 : ニューカムの街                  (街)"
+        },
+        {
+          "kind": "title",
+          "code": "0x02",
+          "title": "MUS02 : Pub Time Song                   (酒場)"
+        },
+        {
+          "kind": "title",
+          "code": "0x03",
+          "title": "MUS03 : 復活のクロス                    (教会)"
+        },
+        {
+          "kind": "title",
+          "code": "0x0a",
+          "title": "MUS10 : 幽霊屋敷                        (ウェザートップの館 地上)"
+        },
+        {
+          "kind": "title",
+          "code": "0x0c",
+          "title": "MUS12 : 鐘"
+        },
+        {
+          "kind": "title",
+          "code": "0x0d",
+          "title": "MUS13 : ピアノ"
+        },
+        {
+          "kind": "title",
+          "code": "0x06",
+          "title": "MUS06 : ゴースト ハンター               (戦闘)"
+        },
+        {
+          "kind": "title",
+          "code": "0x0b",
+          "title": "MUS11 : 不気味な地下                    (ウェザートップの館 地下)"
+        },
+        {
+          "kind": "title",
+          "code": "0x0e",
+          "title": "MUS14 : 魔城                            (ラプラス城)"
+        },
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "MUS16 : 幽霊舞踏会                      (舞踏する幽霊)"
+        },
+        {
+          "kind": "title",
+          "code": "0x0f",
+          "title": "MUS15 : 恐怖の回廊                      (ラプラス城地下)"
+        },
+        {
+          "kind": "title",
+          "code": "0x08",
+          "title": "MUS08 : 哀しき勇者                      (死人との戦闘)"
+        },
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "MUS17 : 悲しみの部屋"
+        },
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "MUS18 : 揺れる小舟                      (ラプラス城3階 湖)"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "MUS19 : 南国の光                        (ラプラス城3階 ジャングル)"
+        },
+        {
+          "kind": "title",
+          "code": "0x07",
+          "title": "MUS07 : バトル ウィズ ハスター          (最終ボス)"
+        },
+        {
+          "kind": "title",
+          "code": "0x09",
+          "title": "MUS09 : 奈落の叫び                      (ゲームオーバー)"
+        },
+        {
+          "kind": "title",
+          "code": "0x14",
+          "title": "MUS20 :                                 (エンディング1)"
+        },
+        {
+          "kind": "title",
+          "code": "0x15",
+          "title": "MUS21 : 明日への誓い                    (エンディング2)"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/hummingbirdsoft.xml",
+      "source_order": 2561,
+      "archive": "laplace",
+      "id": "laplace-opn"
+    },
+    {
+      "title": "[PC-8801] アグニの石",
+      "driver": {
+        "name": "pc88",
+        "type": "opn",
+        "alias": "Humming Bird Soft",
+        "platform": "NEC PC-8801"
+      },
+      "options": [
+        {
+          "name": "init_pc",
+          "value": "0xf000"
+        },
+        {
+          "name": "use_rtc",
+          "value": "0x01"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "DRIVER",
+          "offset": "0x0000"
+        },
+        {
+          "type": "code",
+          "path": "PATCH",
+          "offset": "0xf000"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS00",
+          "offset": "0x00"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS01",
+          "offset": "0x01"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS02",
+          "offset": "0x02"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS03",
+          "offset": "0x03"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS04",
+          "offset": "0x04"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS05",
+          "offset": "0x05"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS06",
+          "offset": "0x06"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS07",
+          "offset": "0x07"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS08",
+          "offset": "0x08"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS09",
+          "offset": "0x09"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS10",
+          "offset": "0x0a"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS11",
+          "offset": "0x0b"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS12",
+          "offset": "0x0c"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS13",
+          "offset": "0x0d"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS14",
+          "offset": "0x0e"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS15",
+          "offset": "0x0f"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS16",
+          "offset": "0x10"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x00",
+          "title": "MUS00 : オープニング"
+        },
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "MUS01 : ゲーム開始"
+        },
+        {
+          "kind": "title",
+          "code": "0x02",
+          "title": "MUS02 : 街"
+        },
+        {
+          "kind": "title",
+          "code": "0x03",
+          "title": "MUS03 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x04",
+          "title": "MUS04 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x05",
+          "title": "MUS05 : 屋敷"
+        },
+        {
+          "kind": "title",
+          "code": "0x06",
+          "title": "MUS06 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x07",
+          "title": "MUS07 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x08",
+          "title": "MUS08 : ゲームオーバー"
+        },
+        {
+          "kind": "title",
+          "code": "0x09",
+          "title": "MUS09 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x0a",
+          "title": "MUS10 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x0b",
+          "title": "MUS11 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x0c",
+          "title": "MUS12 : BAR"
+        },
+        {
+          "kind": "title",
+          "code": "0x0d",
+          "title": "MUS13 : 街へ"
+        },
+        {
+          "kind": "title",
+          "code": "0x0e",
+          "title": "MUS14 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x0f",
+          "title": "MUS15 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "MUS16 :"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/hummingbirdsoft.xml",
+      "source_order": 2562,
+      "archive": "agni",
+      "id": "agni-opn"
+    },
+    {
+      "title": "[X1] ラプラスの魔",
+      "driver": {
+        "name": "x1",
+        "type": "psg",
+        "alias": "Humming Bird Soft",
+        "platform": "SHARP X1"
+      },
+      "options": [],
+      "assets": [
+        {
+          "type": "code",
+          "path": "PATCH",
+          "offset": "0x0000"
+        },
+        {
+          "type": "code",
+          "path": "DRIVER",
+          "offset": "0x8000"
+        },
+        {
+          "type": "bgm",
+          "path": "MUSIC1",
+          "offset": "0x00"
+        },
+        {
+          "type": "bgm",
+          "path": "MUSIC2",
+          "offset": "0x01"
+        },
+        {
+          "type": "bgm",
+          "path": "MUSIC3",
+          "offset": "0x02"
+        },
+        {
+          "type": "bgm",
+          "path": "MUSIC4",
+          "offset": "0x03"
+        },
+        {
+          "type": "bgm",
+          "path": "MUSIC5",
+          "offset": "0x04"
+        },
+        {
+          "type": "bgm",
+          "path": "MUSIC6",
+          "offset": "0x05"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x80000000",
+          "title": "イントロダクション"
+        },
+        {
+          "kind": "title",
+          "code": "0x88020000",
+          "title": "ラプラスのテーマ －旅立つ勇者－ (オープニング)"
+        },
+        {
+          "kind": "title",
+          "code": "0xc0000003",
+          "title": "想い出のニューカム              (ホテル)"
+        },
+        {
+          "kind": "title",
+          "code": "0x80102f00",
+          "title": "ニューカムの街                  (街)"
+        },
+        {
+          "kind": "title",
+          "code": "0x980c0000",
+          "title": "Pub Time Song                   (酒場)"
+        },
+        {
+          "kind": "title",
+          "code": "0x700f1e00",
+          "title": "復活のクロス                    (教会)"
+        },
+        {
+          "kind": "title",
+          "code": "0x88080001",
+          "title": "幽霊屋敷                        (ウェザートップの館 地上)"
+        },
+        {
+          "kind": "title",
+          "code": "0x80000002",
+          "title": "鐘"
+        },
+        {
+          "kind": "title",
+          "code": "0x800c0001",
+          "title": "ピアノ"
+        },
+        {
+          "kind": "title",
+          "code": "0x80016e01",
+          "title": "ゴースト ハンター               (戦闘)"
+        },
+        {
+          "kind": "title",
+          "code": "0x880a0001",
+          "title": "不気味な地下                    (ウェザートップの館 地下)"
+        },
+        {
+          "kind": "title",
+          "code": "0x900d0001",
+          "title": "魔城                            (ラプラス城)"
+        },
+        {
+          "kind": "title",
+          "code": "0x800f6601",
+          "title": "幽霊舞踏会                      (舞踏する幽霊)"
+        },
+        {
+          "kind": "title",
+          "code": "0x880e3001",
+          "title": "恐怖の回廊                      (ラプラス城地下)"
+        },
+        {
+          "kind": "title",
+          "code": "0x90060001",
+          "title": "哀しき勇者                      (死人との戦闘)"
+        },
+        {
+          "kind": "title",
+          "code": "0x7011eb01",
+          "title": "悲しみの部屋"
+        },
+        {
+          "kind": "title",
+          "code": "0x68150001",
+          "title": "揺れる小舟                      (ラプラス城3階 湖)"
+        },
+        {
+          "kind": "title",
+          "code": "0x98130001",
+          "title": "南国の光                        (ラプラス城3階 ジャングル)"
+        },
+        {
+          "kind": "title",
+          "code": "0x90000001",
+          "title": "バトル ウィズ ハスター          (最終ボス)"
+        },
+        {
+          "kind": "title",
+          "code": "0x80053701",
+          "title": "奈落の叫び                      (ゲームオーバー)"
+        },
+        {
+          "kind": "title",
+          "code": "0xa0000004",
+          "title": "(エンディング)"
+        },
+        {
+          "kind": "title",
+          "code": "0x98000005",
+          "title": "明日への誓い                    (スタッフロール)"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/hummingbirdsoft.xml",
+      "source_order": 2563,
+      "archive": "x1laplace",
+      "id": "x1laplace-psg"
+    },
+    {
+      "title": "[X68000] ラプラスの魔",
+      "driver": {
+        "name": "x68k",
+        "type": "generic",
+        "alias": "Humming Bird Soft",
+        "platform": "SHARP X68000"
+      },
+      "options": [],
+      "assets": [
+        {
+          "type": "code",
+          "path": "lap68snd.bin"
+        },
+        {
+          "type": "x",
+          "path": "fmdrv.x",
+          "offset": "0x08000"
+        },
+        {
+          "type": "code",
+          "path": "laplace.snd",
+          "offset": "0x20000"
+        },
+        {
+          "type": "code",
+          "path": "song0.mfa",
+          "offset": "0x30000"
+        },
+        {
+          "type": "code",
+          "path": "song1.mfa",
+          "offset": "0x34000"
+        },
+        {
+          "type": "code",
+          "path": "song2.mfa",
+          "offset": "0x38000"
+        },
+        {
+          "type": "code",
+          "path": "song3.mfa",
+          "offset": "0x3c000"
+        },
+        {
+          "type": "code",
+          "path": "song4.mfa",
+          "offset": "0x40000"
+        },
+        {
+          "type": "code",
+          "path": "song5.mfa",
+          "offset": "0x44000"
+        },
+        {
+          "type": "code",
+          "path": "song6.mfa",
+          "offset": "0x48000"
+        },
+        {
+          "type": "code",
+          "path": "song7.mfa",
+          "offset": "0x4c000"
+        },
+        {
+          "type": "code",
+          "path": "song8.mfa",
+          "offset": "0x50000"
+        },
+        {
+          "type": "code",
+          "path": "laplace.dat",
+          "offset": "0x60000"
+        },
+        {
+          "type": "code",
+          "path": "ending.dat",
+          "offset": "0x70000"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x00ff",
+          "title": "D O O R W A Y"
+        },
+        {
+          "kind": "title",
+          "code": "0x0200",
+          "title": "明 日 へ の 誓 い"
+        },
+        {
+          "kind": "title",
+          "code": "0x0201",
+          "title": "ニ ュ ー カ ム の 街"
+        },
+        {
+          "kind": "title",
+          "code": "0x0202",
+          "title": "Pub Time Song"
+        },
+        {
+          "kind": "title",
+          "code": "0x0203",
+          "title": "復 活 の ク ロ ス"
+        },
+        {
+          "kind": "title",
+          "code": "0x0301",
+          "title": "幽 霊 屋 敷"
+        },
+        {
+          "kind": "title",
+          "code": "0x0302",
+          "title": "不 気 味 な 地 下"
+        },
+        {
+          "kind": "title",
+          "code": "0x0300",
+          "title": "ゴ ー ス ト ハ ン タ ー"
+        },
+        {
+          "kind": "title",
+          "code": "0x0401",
+          "title": "魔 城"
+        },
+        {
+          "kind": "title",
+          "code": "0x0402",
+          "title": "恐 怖 の 回 廊"
+        },
+        {
+          "kind": "title",
+          "code": "0x0405",
+          "title": "幽 霊 舞 踏 会"
+        },
+        {
+          "kind": "title",
+          "code": "0x0406",
+          "title": "哀 し き 戦 士"
+        },
+        {
+          "kind": "title",
+          "code": "0x0403",
+          "title": "南 国 の 光"
+        },
+        {
+          "kind": "title",
+          "code": "0x0404",
+          "title": "揺 れ る 小 船"
+        },
+        {
+          "kind": "title",
+          "code": "0x07ff",
+          "title": "奈 落 の 叫 び"
+        },
+        {
+          "kind": "title",
+          "code": "0x0500",
+          "title": "バトル ウィズ ハスター"
+        },
+        {
+          "kind": "title",
+          "code": "0x0501",
+          "title": "脱出(ESCAPE)"
+        },
+        {
+          "kind": "title",
+          "code": "0x0800",
+          "title": "Dizziness"
+        },
+        {
+          "kind": "title",
+          "code": "0x0801",
+          "title": "Flywheel"
+        },
+        {
+          "kind": "title",
+          "code": "0x0802",
+          "title": "Invitation"
+        },
+        {
+          "kind": "title",
+          "code": "0x01ff",
+          "title": "song1.mfa: オープニング"
+        },
+        {
+          "kind": "title",
+          "code": "0x16ff",
+          "title": "song6.mfa: エンディング"
+        },
+        {
+          "kind": "title",
+          "code": "0x0303",
+          "title": "song3.mfa: ピアノ"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/hummingbirdsoft.xml",
+      "source_order": 2564,
+      "archive": "lap68snd",
+      "id": "lap68snd-generic"
+    },
+    {
+      "title": "[PC-9801] ロードス島戦記 -灰色の魔女-",
+      "driver": {
+        "name": "pc98",
+        "type": "opn",
+        "alias": "Humming Bird Soft",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "dummysndrom",
+          "value": "1"
+        },
+        {
+          "name": "bootcs",
+          "value": "0x0060"
+        },
+        {
+          "name": "bootip",
+          "value": "0x0000"
+        },
+        {
+          "name": "funcvect",
+          "value": "0x7f"
+        },
+        {
+          "name": "addressing",
+          "value": "1"
+        },
+        {
+          "name": "dataaddr",
+          "value": "0x10000000"
+        },
+        {
+          "name": "filesize",
+          "value": "0x4000"
+        },
+        {
+          "name": "datamax",
+          "value": "0x1b"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "rolw1_98.bin",
+          "offset": "0x00600000"
+        },
+        {
+          "type": "code",
+          "path": "file_ff.bin",
+          "offset": "0x02180000"
+        },
+        {
+          "type": "code",
+          "path": "file_fe.bin",
+          "offset": "0x03500000"
+        },
+        {
+          "type": "bgm",
+          "path": "file_3c.bin",
+          "offset": "0x01"
+        },
+        {
+          "type": "bgm",
+          "path": "file_3d.bin",
+          "offset": "0x02"
+        },
+        {
+          "type": "bgm",
+          "path": "file_3e.bin",
+          "offset": "0x03"
+        },
+        {
+          "type": "bgm",
+          "path": "file_3f.bin",
+          "offset": "0x04"
+        },
+        {
+          "type": "bgm",
+          "path": "file_40.bin",
+          "offset": "0x05"
+        },
+        {
+          "type": "bgm",
+          "path": "file_41.bin",
+          "offset": "0x06"
+        },
+        {
+          "type": "bgm",
+          "path": "file_42.bin",
+          "offset": "0x07"
+        },
+        {
+          "type": "bgm",
+          "path": "file_43.bin",
+          "offset": "0x08"
+        },
+        {
+          "type": "bgm",
+          "path": "file_44.bin",
+          "offset": "0x09"
+        },
+        {
+          "type": "bgm",
+          "path": "file_45.bin",
+          "offset": "0x0a"
+        },
+        {
+          "type": "bgm",
+          "path": "file_46.bin",
+          "offset": "0x0b"
+        },
+        {
+          "type": "bgm",
+          "path": "file_47.bin",
+          "offset": "0x0c"
+        },
+        {
+          "type": "bgm",
+          "path": "file_48.bin",
+          "offset": "0x0d"
+        },
+        {
+          "type": "bgm",
+          "path": "file_49.bin",
+          "offset": "0x0e"
+        },
+        {
+          "type": "bgm",
+          "path": "file_4a.bin",
+          "offset": "0x0f"
+        },
+        {
+          "type": "bgm",
+          "path": "file_4b.bin",
+          "offset": "0x10"
+        },
+        {
+          "type": "bgm",
+          "path": "file_4c.bin",
+          "offset": "0x11"
+        },
+        {
+          "type": "bgm",
+          "path": "file_4d.bin",
+          "offset": "0x12"
+        },
+        {
+          "type": "bgm",
+          "path": "file_4e.bin",
+          "offset": "0x13"
+        },
+        {
+          "type": "bgm",
+          "path": "file_4f.bin",
+          "offset": "0x14"
+        },
+        {
+          "type": "bgm",
+          "path": "file_50.bin",
+          "offset": "0x15"
+        },
+        {
+          "type": "bgm",
+          "path": "file_51.bin",
+          "offset": "0x16"
+        },
+        {
+          "type": "bgm",
+          "path": "file_52.bin",
+          "offset": "0x17"
+        },
+        {
+          "type": "bgm",
+          "path": "file_53.bin",
+          "offset": "0x18"
+        },
+        {
+          "type": "bgm",
+          "path": "file_54.bin",
+          "offset": "0x19"
+        },
+        {
+          "type": "bgm",
+          "path": "file_55.bin",
+          "offset": "0x1a"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x00",
+          "title": "[STOP]"
+        },
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "prg 60 : ワンダーランド"
+        },
+        {
+          "kind": "title",
+          "code": "0x02",
+          "title": "prg 61 : 迷宮伝説"
+        },
+        {
+          "kind": "title",
+          "code": "0x03",
+          "title": "prg 62 : 迷いの路"
+        },
+        {
+          "kind": "title",
+          "code": "0x04",
+          "title": "prg 63 : 村"
+        },
+        {
+          "kind": "title",
+          "code": "0x05",
+          "title": "prg 64 : 聖歌"
+        },
+        {
+          "kind": "title",
+          "code": "0x06",
+          "title": "prg 65 : 安息の宿"
+        },
+        {
+          "kind": "title",
+          "code": "0x07",
+          "title": "prg 66 : バザー"
+        },
+        {
+          "kind": "title",
+          "code": "0x08",
+          "title": "prg 67 : 吟遊詩人"
+        },
+        {
+          "kind": "title",
+          "code": "0x09",
+          "title": "prg 68 : スレイン"
+        },
+        {
+          "kind": "title",
+          "code": "0x0a",
+          "title": "prg 69 : エト"
+        },
+        {
+          "kind": "title",
+          "code": "0x0b",
+          "title": "prg 70 : ウッド・チャック"
+        },
+        {
+          "kind": "title",
+          "code": "0x0c",
+          "title": "prg 71 : ギム"
+        },
+        {
+          "kind": "title",
+          "code": "0x0d",
+          "title": "prg 72 : ディードリット"
+        },
+        {
+          "kind": "title",
+          "code": "0x0e",
+          "title": "prg 73 : パーン"
+        },
+        {
+          "kind": "title",
+          "code": "0x0f",
+          "title": "prg 74 : 街"
+        },
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "prg 75 : シャイニングトゥリー"
+        },
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "prg 76 : 覇王"
+        },
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "prg 77 : 亡き戦士達への哀歌"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "prg 78 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x14",
+          "title": "prg 79 : ブラックバトル"
+        },
+        {
+          "kind": "title",
+          "code": "0x15",
+          "title": "prg 80 : バトルソング"
+        },
+        {
+          "kind": "title",
+          "code": "0x16",
+          "title": "prg 81 : バトルファンファーレ"
+        },
+        {
+          "kind": "title",
+          "code": "0x17",
+          "title": "prg 82 : 序曲『灰色の魔女』"
+        },
+        {
+          "kind": "title",
+          "code": "0x18",
+          "title": "prg 83 : (スタッフロール)"
+        },
+        {
+          "kind": "title",
+          "code": "0x19",
+          "title": "prg 84 : 永遠のロードス (バッドエンディング)"
+        },
+        {
+          "kind": "title",
+          "code": "0x1a",
+          "title": "prg 85 : 永遠のロードス (エンディング)"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/hummingbirdsoft.xml",
+      "source_order": 2565,
+      "archive": "rolw1_98",
+      "id": "rolw1-98-opn"
+    },
+    {
+      "title": "[PC-88VA] ロードス島戦記 -灰色の魔女-",
+      "driver": {
+        "name": "pc88va",
+        "type": "opn",
+        "alias": "Humming Bird Soft",
+        "platform": "NEC PC-88VA"
+      },
+      "options": [
+        {
+          "name": "bootcs",
+          "value": "0x0060"
+        },
+        {
+          "name": "bootip",
+          "value": "0x0000"
+        },
+        {
+          "name": "funcvect",
+          "value": "0x7f"
+        },
+        {
+          "name": "dataaddr",
+          "value": "0x10000"
+        },
+        {
+          "name": "filesize",
+          "value": "0x3000"
+        },
+        {
+          "name": "datamax",
+          "value": "0x1b"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "rolw1_va.bin",
+          "offset": "0x00600"
+        },
+        {
+          "type": "code",
+          "path": "file_fe.bin",
+          "offset": "0x06380"
+        },
+        {
+          "type": "code",
+          "path": "file_ff.bin",
+          "offset": "0x07380"
+        },
+        {
+          "type": "bgm",
+          "path": "file_3c.bin",
+          "offset": "0x01"
+        },
+        {
+          "type": "bgm",
+          "path": "file_3d.bin",
+          "offset": "0x02"
+        },
+        {
+          "type": "bgm",
+          "path": "file_3e.bin",
+          "offset": "0x03"
+        },
+        {
+          "type": "bgm",
+          "path": "file_3f.bin",
+          "offset": "0x04"
+        },
+        {
+          "type": "bgm",
+          "path": "file_40.bin",
+          "offset": "0x05"
+        },
+        {
+          "type": "bgm",
+          "path": "file_41.bin",
+          "offset": "0x06"
+        },
+        {
+          "type": "bgm",
+          "path": "file_42.bin",
+          "offset": "0x07"
+        },
+        {
+          "type": "bgm",
+          "path": "file_43.bin",
+          "offset": "0x08"
+        },
+        {
+          "type": "bgm",
+          "path": "file_44.bin",
+          "offset": "0x09"
+        },
+        {
+          "type": "bgm",
+          "path": "file_45.bin",
+          "offset": "0x0a"
+        },
+        {
+          "type": "bgm",
+          "path": "file_46.bin",
+          "offset": "0x0b"
+        },
+        {
+          "type": "bgm",
+          "path": "file_47.bin",
+          "offset": "0x0c"
+        },
+        {
+          "type": "bgm",
+          "path": "file_48.bin",
+          "offset": "0x0d"
+        },
+        {
+          "type": "bgm",
+          "path": "file_49.bin",
+          "offset": "0x0e"
+        },
+        {
+          "type": "bgm",
+          "path": "file_4a.bin",
+          "offset": "0x0f"
+        },
+        {
+          "type": "bgm",
+          "path": "file_4b.bin",
+          "offset": "0x10"
+        },
+        {
+          "type": "bgm",
+          "path": "file_4c.bin",
+          "offset": "0x11"
+        },
+        {
+          "type": "bgm",
+          "path": "file_4d.bin",
+          "offset": "0x12"
+        },
+        {
+          "type": "bgm",
+          "path": "file_4e.bin",
+          "offset": "0x13"
+        },
+        {
+          "type": "bgm",
+          "path": "file_4f.bin",
+          "offset": "0x14"
+        },
+        {
+          "type": "bgm",
+          "path": "file_50.bin",
+          "offset": "0x15"
+        },
+        {
+          "type": "bgm",
+          "path": "file_51.bin",
+          "offset": "0x16"
+        },
+        {
+          "type": "bgm",
+          "path": "file_52.bin",
+          "offset": "0x17"
+        },
+        {
+          "type": "bgm",
+          "path": "file_53.bin",
+          "offset": "0x18"
+        },
+        {
+          "type": "bgm",
+          "path": "file_54.bin",
+          "offset": "0x19"
+        },
+        {
+          "type": "bgm",
+          "path": "file_55.bin",
+          "offset": "0x1a"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x00",
+          "title": "[STOP]"
+        },
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "prg 60 : ワンダーランド"
+        },
+        {
+          "kind": "title",
+          "code": "0x02",
+          "title": "prg 61 : 迷宮伝説"
+        },
+        {
+          "kind": "title",
+          "code": "0x03",
+          "title": "prg 62 : 迷いの路"
+        },
+        {
+          "kind": "title",
+          "code": "0x04",
+          "title": "prg 63 : 村"
+        },
+        {
+          "kind": "title",
+          "code": "0x05",
+          "title": "prg 64 : 聖歌"
+        },
+        {
+          "kind": "title",
+          "code": "0x06",
+          "title": "prg 65 : 安息の宿"
+        },
+        {
+          "kind": "title",
+          "code": "0x07",
+          "title": "prg 66 : バザー"
+        },
+        {
+          "kind": "title",
+          "code": "0x08",
+          "title": "prg 67 : 吟遊詩人"
+        },
+        {
+          "kind": "title",
+          "code": "0x09",
+          "title": "prg 68 : スレイン"
+        },
+        {
+          "kind": "title",
+          "code": "0x0a",
+          "title": "prg 69 : エト"
+        },
+        {
+          "kind": "title",
+          "code": "0x0b",
+          "title": "prg 70 : ウッド・チャック"
+        },
+        {
+          "kind": "title",
+          "code": "0x0c",
+          "title": "prg 71 : ギム"
+        },
+        {
+          "kind": "title",
+          "code": "0x0d",
+          "title": "prg 72 : ディードリット"
+        },
+        {
+          "kind": "title",
+          "code": "0x0e",
+          "title": "prg 73 : パーン"
+        },
+        {
+          "kind": "title",
+          "code": "0x0f",
+          "title": "prg 74 : 街"
+        },
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "prg 75 : シャイニングトゥリー"
+        },
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "prg 76 : 覇王"
+        },
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "prg 77 : 亡き戦士達への哀歌"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "prg 78 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x14",
+          "title": "prg 79 : ブラックバトル"
+        },
+        {
+          "kind": "title",
+          "code": "0x15",
+          "title": "prg 80 : バトルソング"
+        },
+        {
+          "kind": "title",
+          "code": "0x16",
+          "title": "prg 81 : バトルファンファーレ"
+        },
+        {
+          "kind": "title",
+          "code": "0x17",
+          "title": "prg 82 : 序曲『灰色の魔女』"
+        },
+        {
+          "kind": "title",
+          "code": "0x18",
+          "title": "prg 83 : (スタッフロール)"
+        },
+        {
+          "kind": "title",
+          "code": "0x19",
+          "title": "prg 84 : 永遠のロードス (バッドエンディング)"
+        },
+        {
+          "kind": "title",
+          "code": "0x1a",
+          "title": "prg 85 : 永遠のロードス (エンディング)"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/hummingbirdsoft.xml",
+      "source_order": 2566,
+      "archive": "rolw1_va",
+      "id": "rolw1-va-opn"
+    },
+    {
+      "title": "[PC-9801] パラケルススの魔剣(OPN)",
+      "driver": {
+        "name": "pc98dos",
+        "type": "opn",
+        "alias": "Humming Bird Soft",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "clockmul",
+          "value": "8"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "PARA_98.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "PARALIBD.EXE",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "SLDEXE.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "KSNDDRV.EXZ",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MDZ.ARC",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "FMTONE.DAT",
+          "offset": "-1"
+        },
+        {
+          "type": "shell",
+          "path": "PARALIBD",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "SLDEXE KSNDDRV.EXZ",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "PARA_98 13",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "18",
+          "title": "18 : オープニング1"
+        },
+        {
+          "kind": "title",
+          "code": "21",
+          "title": "21 : パーティ会場"
+        },
+        {
+          "kind": "title",
+          "code": "19",
+          "title": "19 : オープニング2"
+        },
+        {
+          "kind": "title",
+          "code": "20",
+          "title": "20 : オープニング3"
+        },
+        {
+          "kind": "title",
+          "code": "51",
+          "title": "51 : キャラクターメイク"
+        },
+        {
+          "kind": "title",
+          "code": "16",
+          "title": "16 : ホテル"
+        },
+        {
+          "kind": "title",
+          "code": "17",
+          "title": "17 : LONDON"
+        },
+        {
+          "kind": "title",
+          "code": "13",
+          "title": "13 : エドガーライトの家/獣のアジト/オカルト研究会/スミスの家"
+        },
+        {
+          "kind": "title",
+          "code": "14",
+          "title": "14 : エドガーライトの家(地下)/廃鉱/地下湖"
+        },
+        {
+          "kind": "title",
+          "code": "15",
+          "title": "15 : 戦闘"
+        },
+        {
+          "kind": "title",
+          "code": "22",
+          "title": "22 : ストーンサークル"
+        },
+        {
+          "kind": "title",
+          "code": "23",
+          "title": "23 : PARIS"
+        },
+        {
+          "kind": "title",
+          "code": "24",
+          "title": "24 : カタコンベ/洞穴/洞窟"
+        },
+        {
+          "kind": "title",
+          "code": "28",
+          "title": "28 : STRASBOURG"
+        },
+        {
+          "kind": "title",
+          "code": "37",
+          "title": "37 : 大聖堂"
+        },
+        {
+          "kind": "title",
+          "code": "34",
+          "title": "34 : 儀式の間"
+        },
+        {
+          "kind": "title",
+          "code": "43",
+          "title": "43 : ストラスブール市街/プラハ市街"
+        },
+        {
+          "kind": "title",
+          "code": "39",
+          "title": "39 : STUTTGART"
+        },
+        {
+          "kind": "title",
+          "code": "26",
+          "title": "26 : 黒い森"
+        },
+        {
+          "kind": "title",
+          "code": "25",
+          "title": "25 : 城/強制収容所/精神病院/エジプト博物館/実験施設"
+        },
+        {
+          "kind": "title",
+          "code": "33",
+          "title": "33 : 舞踏会"
+        },
+        {
+          "kind": "title",
+          "code": "30",
+          "title": "30 : MUNICH"
+        },
+        {
+          "kind": "title",
+          "code": "27",
+          "title": "27 : 湖"
+        },
+        {
+          "kind": "title",
+          "code": "46",
+          "title": "46 : 獣のアジト:イベント/ロンドン:イベント"
+        },
+        {
+          "kind": "title",
+          "code": "45",
+          "title": "45 : BERLIN"
+        },
+        {
+          "kind": "title",
+          "code": "29",
+          "title": "29 : VIENNA"
+        },
+        {
+          "kind": "title",
+          "code": "38",
+          "title": "38 : PRAGUE"
+        },
+        {
+          "kind": "title",
+          "code": "42",
+          "title": "42 : オリエント急行"
+        },
+        {
+          "kind": "title",
+          "code": "41",
+          "title": "41 : BUCHAREST"
+        },
+        {
+          "kind": "title",
+          "code": "36",
+          "title": "36 : スキー場"
+        },
+        {
+          "kind": "title",
+          "code": "35",
+          "title": "35 : 古城"
+        },
+        {
+          "kind": "title",
+          "code": "31",
+          "title": "31 : ISTANBUL"
+        },
+        {
+          "kind": "title",
+          "code": "32",
+          "title": "32 : バザール"
+        },
+        {
+          "kind": "title",
+          "code": "40",
+          "title": "40 : 沖合の島"
+        },
+        {
+          "kind": "title",
+          "code": "47",
+          "title": "47 : ラスボス戦"
+        },
+        {
+          "kind": "title",
+          "code": "44",
+          "title": "44 : 洞窟脱出"
+        },
+        {
+          "kind": "title",
+          "code": "48",
+          "title": "48 : エピローグ1"
+        },
+        {
+          "kind": "title",
+          "code": "49",
+          "title": "49 : エピローグ2"
+        },
+        {
+          "kind": "title",
+          "code": "50",
+          "title": "50 : スタッフロール"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/hummingbirdsoft.xml",
+      "source_order": 2567,
+      "archive": "para_98",
+      "id": "para-98-opn"
+    },
+    {
+      "title": "[PC-9801] パラケルススの魔剣(MIDI)",
+      "driver": {
+        "name": "pc98dos",
+        "type": "beep",
+        "alias": "Humming Bird Soft",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "clockmul",
+          "value": "8"
+        },
+        {
+          "name": "midiout",
+          "value": "1"
+        },
+        {
+          "name": "midiout_type",
+          "value": "8"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "PARA_98.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "PARALIBD.EXE",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "SLDEXE.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "KSNDDRV.EXZ",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "ZMD.ARC",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "ZMR.ARC",
+          "offset": "-1"
+        },
+        {
+          "type": "shell",
+          "path": "PARALIBD",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "SLDEXE KSNDDRV.EXZ",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "PARA_98 12",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x0101",
+          "title": "change to SC-55系(SC-55/155,CM-300/500)"
+        },
+        {
+          "kind": "title",
+          "code": "0x0102",
+          "title": "change to SC-55mkII"
+        },
+        {
+          "kind": "title",
+          "code": "0x0103",
+          "title": "change to SC-88"
+        },
+        {
+          "kind": "title",
+          "code": "0x0104",
+          "title": "change to SC-33"
+        },
+        {
+          "kind": "title",
+          "code": "0x0105",
+          "title": "change to SC-7"
+        },
+        {
+          "kind": "title",
+          "code": "0x0106",
+          "title": "change to GMega, GMega L"
+        },
+        {
+          "kind": "title",
+          "code": "0x0107",
+          "title": "change to GMega LX"
+        },
+        {
+          "kind": "title",
+          "code": "0x0108",
+          "title": "change to MSB-98LX"
+        },
+        {
+          "kind": "title",
+          "code": "0x0109",
+          "title": "change to TG100"
+        },
+        {
+          "kind": "title",
+          "code": "0x010a",
+          "title": "change to TG300"
+        },
+        {
+          "kind": "title",
+          "code": "0x010b",
+          "title": "change to 05R/W系(05R/W ,AG-10)"
+        },
+        {
+          "kind": "title",
+          "code": "0x010c",
+          "title": "change to GM"
+        },
+        {
+          "kind": "title",
+          "code": "18",
+          "title": "18 : オープニング1"
+        },
+        {
+          "kind": "title",
+          "code": "21",
+          "title": "21 : パーティ会場"
+        },
+        {
+          "kind": "title",
+          "code": "19",
+          "title": "19 : オープニング2"
+        },
+        {
+          "kind": "title",
+          "code": "20",
+          "title": "20 : オープニング3"
+        },
+        {
+          "kind": "title",
+          "code": "51",
+          "title": "51 : キャラクターメイク"
+        },
+        {
+          "kind": "title",
+          "code": "16",
+          "title": "16 : ホテル"
+        },
+        {
+          "kind": "title",
+          "code": "17",
+          "title": "17 : LONDON"
+        },
+        {
+          "kind": "title",
+          "code": "13",
+          "title": "13 : エドガーライトの家/獣のアジト/オカルト研究会/スミスの家"
+        },
+        {
+          "kind": "title",
+          "code": "14",
+          "title": "14 : エドガーライトの家(地下)/廃鉱/地下湖"
+        },
+        {
+          "kind": "title",
+          "code": "15",
+          "title": "15 : 戦闘"
+        },
+        {
+          "kind": "title",
+          "code": "22",
+          "title": "22 : ストーンサークル"
+        },
+        {
+          "kind": "title",
+          "code": "23",
+          "title": "23 : PARIS"
+        },
+        {
+          "kind": "title",
+          "code": "24",
+          "title": "24 : カタコンベ/洞穴/洞窟"
+        },
+        {
+          "kind": "title",
+          "code": "28",
+          "title": "28 : STRASBOURG"
+        },
+        {
+          "kind": "title",
+          "code": "37",
+          "title": "37 : 大聖堂"
+        },
+        {
+          "kind": "title",
+          "code": "34",
+          "title": "34 : 儀式の間"
+        },
+        {
+          "kind": "title",
+          "code": "43",
+          "title": "43 : ストラスブール市街/プラハ市街"
+        },
+        {
+          "kind": "title",
+          "code": "39",
+          "title": "39 : STUTTGART"
+        },
+        {
+          "kind": "title",
+          "code": "26",
+          "title": "26 : 黒い森"
+        },
+        {
+          "kind": "title",
+          "code": "25",
+          "title": "25 : 城/強制収容所/精神病院/エジプト博物館/実験施設"
+        },
+        {
+          "kind": "title",
+          "code": "33",
+          "title": "33 : 舞踏会"
+        },
+        {
+          "kind": "title",
+          "code": "30",
+          "title": "30 : MUNICH"
+        },
+        {
+          "kind": "title",
+          "code": "27",
+          "title": "27 : 湖"
+        },
+        {
+          "kind": "title",
+          "code": "46",
+          "title": "46 : 獣のアジト:イベント/ロンドン:イベント"
+        },
+        {
+          "kind": "title",
+          "code": "45",
+          "title": "45 : BERLIN"
+        },
+        {
+          "kind": "title",
+          "code": "29",
+          "title": "29 : VIENNA"
+        },
+        {
+          "kind": "title",
+          "code": "38",
+          "title": "38 : PRAGUE"
+        },
+        {
+          "kind": "title",
+          "code": "42",
+          "title": "42 : オリエント急行"
+        },
+        {
+          "kind": "title",
+          "code": "41",
+          "title": "41 : BUCHAREST"
+        },
+        {
+          "kind": "title",
+          "code": "36",
+          "title": "36 : スキー場"
+        },
+        {
+          "kind": "title",
+          "code": "35",
+          "title": "35 : 古城"
+        },
+        {
+          "kind": "title",
+          "code": "31",
+          "title": "31 : ISTANBUL"
+        },
+        {
+          "kind": "title",
+          "code": "32",
+          "title": "32 : バザール"
+        },
+        {
+          "kind": "title",
+          "code": "40",
+          "title": "40 : 沖合の島"
+        },
+        {
+          "kind": "title",
+          "code": "47",
+          "title": "47 : ラスボス戦"
+        },
+        {
+          "kind": "title",
+          "code": "44",
+          "title": "44 : 洞窟脱出"
+        },
+        {
+          "kind": "title",
+          "code": "48",
+          "title": "48 : エピローグ1"
+        },
+        {
+          "kind": "title",
+          "code": "49",
+          "title": "49 : エピローグ2"
+        },
+        {
+          "kind": "title",
+          "code": "50",
+          "title": "50 : スタッフロール"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/hummingbirdsoft.xml",
+      "source_order": 2568,
+      "archive": "para_98",
+      "id": "para-98-beep"
+    },
+    {
+      "title": "[PC-9801] ロードス島戦記 II 五色の魔竜",
+      "driver": {
+        "name": "pc98dos",
+        "type": "opn",
+        "alias": "Humming Bird Soft",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "clockmul",
+          "value": "8"
+        }
+      ],
+      "assets": [
+        {
+          "type": "binary",
+          "path": "46 4f 4e 54 53 45 54",
+          "offset": "0xafff0"
+        },
+        {
+          "type": "file",
+          "path": "MUDRV2.SYS",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MUDRV298.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "LODOSS.MLD",
+          "offset": "0x09"
+        },
+        {
+          "type": "file",
+          "path": "END1.MLD",
+          "offset": "0x10"
+        },
+        {
+          "type": "file",
+          "path": "END_2.MLD",
+          "offset": "0x11"
+        },
+        {
+          "type": "file",
+          "path": "GRAYROAD.MLD",
+          "offset": "0x12"
+        },
+        {
+          "type": "file",
+          "path": "GUILD.MLD",
+          "offset": "0x13"
+        },
+        {
+          "type": "file",
+          "path": "M_FORMAT.MLD",
+          "offset": "0x15"
+        },
+        {
+          "type": "file",
+          "path": "OPEN_12.MLD",
+          "offset": "0x16"
+        },
+        {
+          "type": "file",
+          "path": "OPEN_2.MLD",
+          "offset": "0x17"
+        },
+        {
+          "type": "file",
+          "path": "OPEN_34.MLD",
+          "offset": "0x18"
+        },
+        {
+          "type": "file",
+          "path": "MUSIC00.MLD",
+          "offset": "0x19"
+        },
+        {
+          "type": "file",
+          "path": "MUSIC01.MLD",
+          "offset": "0x1a"
+        },
+        {
+          "type": "file",
+          "path": "MUSIC02.MLD",
+          "offset": "0x1b"
+        },
+        {
+          "type": "file",
+          "path": "MUSIC03.MLD",
+          "offset": "0x1c"
+        },
+        {
+          "type": "file",
+          "path": "MUSIC04.MLD",
+          "offset": "0x1d"
+        },
+        {
+          "type": "file",
+          "path": "MUSIC05.MLD",
+          "offset": "0x1e"
+        },
+        {
+          "type": "file",
+          "path": "MUSIC06.MLD",
+          "offset": "0x1f"
+        },
+        {
+          "type": "file",
+          "path": "MUSIC07.MLD",
+          "offset": "0x20"
+        },
+        {
+          "type": "file",
+          "path": "MUSIC08.MLD",
+          "offset": "0x21"
+        },
+        {
+          "type": "file",
+          "path": "MUSIC09.MLD",
+          "offset": "0x22"
+        },
+        {
+          "type": "file",
+          "path": "MUSIC10.MLD",
+          "offset": "0x23"
+        },
+        {
+          "type": "file",
+          "path": "MUSIC11.MLD",
+          "offset": "0x24"
+        },
+        {
+          "type": "file",
+          "path": "MUSIC12.MLD",
+          "offset": "0x25"
+        },
+        {
+          "type": "file",
+          "path": "MUSIC13.MLD",
+          "offset": "0x26"
+        },
+        {
+          "type": "file",
+          "path": "MUSIC14.MLD",
+          "offset": "0x27"
+        },
+        {
+          "type": "file",
+          "path": "MUSIC15.MLD",
+          "offset": "0x28"
+        },
+        {
+          "type": "file",
+          "path": "MUSIC16.MLD",
+          "offset": "0x29"
+        },
+        {
+          "type": "file",
+          "path": "MUSIC17.MLD",
+          "offset": "0x2a"
+        },
+        {
+          "type": "file",
+          "path": "MUSIC18.MLD",
+          "offset": "0x2b"
+        },
+        {
+          "type": "file",
+          "path": "MUSIC19.MLD",
+          "offset": "0x2c"
+        },
+        {
+          "type": "file",
+          "path": "MUSIC20.MLD",
+          "offset": "0x2d"
+        },
+        {
+          "type": "file",
+          "path": "MUSIC21.MLD",
+          "offset": "0x2e"
+        },
+        {
+          "type": "file",
+          "path": "MUSIC22.MLD",
+          "offset": "0x2f"
+        },
+        {
+          "type": "file",
+          "path": "MUSIC23.MLD",
+          "offset": "0x30"
+        },
+        {
+          "type": "file",
+          "path": "MUSIC24.MLD",
+          "offset": "0x31"
+        },
+        {
+          "type": "file",
+          "path": "MUSIC25.MLD",
+          "offset": "0x32"
+        },
+        {
+          "type": "file",
+          "path": "MUSIC26.MLD",
+          "offset": "0x33"
+        },
+        {
+          "type": "file",
+          "path": "MUSIC27.MLD",
+          "offset": "0x34"
+        },
+        {
+          "type": "file",
+          "path": "MUSIC28.MLD",
+          "offset": "0x35"
+        },
+        {
+          "type": "file",
+          "path": "MUSIC29.MLD",
+          "offset": "0x36"
+        },
+        {
+          "type": "file",
+          "path": "MUSIC30.MLD",
+          "offset": "0x37"
+        },
+        {
+          "type": "file",
+          "path": "MUSIC31.MLD",
+          "offset": "0x38"
+        },
+        {
+          "type": "file",
+          "path": "MUSIC32.MLD",
+          "offset": "0x39"
+        },
+        {
+          "type": "file",
+          "path": "MUSIC33.MLD",
+          "offset": "0x3a"
+        },
+        {
+          "type": "file",
+          "path": "MUSIC34.MLD",
+          "offset": "0x3b"
+        },
+        {
+          "type": "file",
+          "path": "MUSIC35.MLD",
+          "offset": "0x3c"
+        },
+        {
+          "type": "file",
+          "path": "MUSIC36.MLD",
+          "offset": "0x3d"
+        },
+        {
+          "type": "file",
+          "path": "MUSIC37.MLD",
+          "offset": "0x3e"
+        },
+        {
+          "type": "file",
+          "path": "MUSIC38.MLD",
+          "offset": "0x3f"
+        },
+        {
+          "type": "file",
+          "path": "MUSIC39.MLD",
+          "offset": "0x40"
+        },
+        {
+          "type": "file",
+          "path": "MUSIC40.MLD",
+          "offset": "0x41"
+        },
+        {
+          "type": "file",
+          "path": "MUSIC41.MLD",
+          "offset": "0x42"
+        },
+        {
+          "type": "file",
+          "path": "MUSIC42.MLD",
+          "offset": "0x43"
+        },
+        {
+          "type": "file",
+          "path": "MUSIC43.MLD",
+          "offset": "0x44"
+        },
+        {
+          "type": "device",
+          "path": "MUDRV2.SYS",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "MUDRV298",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x16",
+          "title": "OPEN_12.MLD  : 湖底の記憶"
+        },
+        {
+          "kind": "title",
+          "code": "0x17",
+          "title": "OPEN_2.MLD   : ロードスの危機"
+        },
+        {
+          "kind": "title",
+          "code": "0x18",
+          "title": "OPEN_34.MLD  : 飛翔"
+        },
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "GRAYROAD.MLD : 暁の道"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "GUILD.MLD    : 友達"
+        },
+        {
+          "kind": "title",
+          "code": "0x15",
+          "title": "M_FORMAT.MLD : 胎動"
+        },
+        {
+          "kind": "title",
+          "code": "0x19",
+          "title": "MUSIC00.MLD  : かなしき運命"
+        },
+        {
+          "kind": "title",
+          "code": "0x1a",
+          "title": "MUSIC01.MLD  : 悪の巣窟"
+        },
+        {
+          "kind": "title",
+          "code": "0x1b",
+          "title": "MUSIC02.MLD  : 魔導師バクナード"
+        },
+        {
+          "kind": "title",
+          "code": "0x1c",
+          "title": "MUSIC03.MLD  : バトル・オブ・ファイヤ"
+        },
+        {
+          "kind": "title",
+          "code": "0x1d",
+          "title": "MUSIC04.MLD  : 地底探検"
+        },
+        {
+          "kind": "title",
+          "code": "0x1e",
+          "title": "MUSIC05.MLD  : バッファローサーガ"
+        },
+        {
+          "kind": "title",
+          "code": "0x1f",
+          "title": "MUSIC06.MLD  : バトルソング"
+        },
+        {
+          "kind": "title",
+          "code": "0x20",
+          "title": "MUSIC07.MLD  : 邪神復活"
+        },
+        {
+          "kind": "title",
+          "code": "0x21",
+          "title": "MUSIC08.MLD  : 勝利の行進"
+        },
+        {
+          "kind": "title",
+          "code": "0x22",
+          "title": "MUSIC09.MLD  : 奇跡"
+        },
+        {
+          "kind": "title",
+          "code": "0x23",
+          "title": "MUSIC10.MLD  : 迷宮伝説"
+        },
+        {
+          "kind": "title",
+          "code": "0x24",
+          "title": "MUSIC11.MLD  : 闇の洞窟"
+        },
+        {
+          "kind": "title",
+          "code": "0x25",
+          "title": "MUSIC12.MLD  : カオス「魔の城」"
+        },
+        {
+          "kind": "title",
+          "code": "0x26",
+          "title": "MUSIC13.MLD  : ダウン・タウン"
+        },
+        {
+          "kind": "title",
+          "code": "0x27",
+          "title": "MUSIC14.MLD  : 閉じこめられた街"
+        },
+        {
+          "kind": "title",
+          "code": "0x28",
+          "title": "MUSIC15.MLD  : 大地の怒り"
+        },
+        {
+          "kind": "title",
+          "code": "0x29",
+          "title": "MUSIC16.MLD  : 輝ける正義"
+        },
+        {
+          "kind": "title",
+          "code": "0x2a",
+          "title": "MUSIC17.MLD  : 渦巻く欲望"
+        },
+        {
+          "kind": "title",
+          "code": "0x2b",
+          "title": "MUSIC18.MLD  : 想いでのパヴァーヌ"
+        },
+        {
+          "kind": "title",
+          "code": "0x2c",
+          "title": "MUSIC19.MLD  : 許して! 女王様"
+        },
+        {
+          "kind": "title",
+          "code": "0x2d",
+          "title": "MUSIC20.MLD  : 安らぎ"
+        },
+        {
+          "kind": "title",
+          "code": "0x2e",
+          "title": "MUSIC21.MLD  : 金鱗の竜王"
+        },
+        {
+          "kind": "title",
+          "code": "0x2f",
+          "title": "MUSIC22.MLD  : ブラックマーケット"
+        },
+        {
+          "kind": "title",
+          "code": "0x30",
+          "title": "MUSIC23.MLD  : 酒場の大道芸人"
+        },
+        {
+          "kind": "title",
+          "code": "0x31",
+          "title": "MUSIC24.MLD  : デザート・アンド・ロック"
+        },
+        {
+          "kind": "title",
+          "code": "0x32",
+          "title": "MUSIC25.MLD  : 妖精の踊り"
+        },
+        {
+          "kind": "title",
+          "code": "0x33",
+          "title": "MUSIC26.MLD  : 勇ましき騎兵"
+        },
+        {
+          "kind": "title",
+          "code": "0x34",
+          "title": "MUSIC27.MLD  : 傭兵王"
+        },
+        {
+          "kind": "title",
+          "code": "0x35",
+          "title": "MUSIC28.MLD  : 地平の果て"
+        },
+        {
+          "kind": "title",
+          "code": "0x36",
+          "title": "MUSIC29.MLD  : 恵"
+        },
+        {
+          "kind": "title",
+          "code": "0x37",
+          "title": "MUSIC30.MLD  : 安息の街"
+        },
+        {
+          "kind": "title",
+          "code": "0x38",
+          "title": "MUSIC31.MLD  : 約束"
+        },
+        {
+          "kind": "title",
+          "code": "0x39",
+          "title": "MUSIC32.MLD  : 港"
+        },
+        {
+          "kind": "title",
+          "code": "0x3a",
+          "title": "MUSIC33.MLD  : 穏やかなる時"
+        },
+        {
+          "kind": "title",
+          "code": "0x3b",
+          "title": "MUSIC34.MLD  : ラン・アウト"
+        },
+        {
+          "kind": "title",
+          "code": "0x3c",
+          "title": "MUSIC35.MLD  : ささやかな喜び"
+        },
+        {
+          "kind": "title",
+          "code": "0x3d",
+          "title": "MUSIC36.MLD  : 紺碧の水平線"
+        },
+        {
+          "kind": "title",
+          "code": "0x3e",
+          "title": "MUSIC37.MLD  : 試練"
+        },
+        {
+          "kind": "title",
+          "code": "0x3f",
+          "title": "MUSIC38.MLD  : 苦悩の挫折"
+        },
+        {
+          "kind": "title",
+          "code": "0x40",
+          "title": "MUSIC39.MLD  : 新たなる緊張"
+        },
+        {
+          "kind": "title",
+          "code": "0x41",
+          "title": "MUSIC40.MLD  : その頃…"
+        },
+        {
+          "kind": "title",
+          "code": "0x42",
+          "title": "MUSIC41.MLD  : サーカス広場"
+        },
+        {
+          "kind": "title",
+          "code": "0x43",
+          "title": "MUSIC42.MLD  : 村"
+        },
+        {
+          "kind": "title",
+          "code": "0x44",
+          "title": "MUSIC43.MLD  : 夢"
+        },
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "END1.MLD     : (エンディング)"
+        },
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "END_2.MLD    : (スタッフロール)"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/hummingbirdsoft.xml",
+      "source_order": 2569,
+      "archive": "rolw2_98",
+      "id": "rolw2-98-opn"
+    },
+    {
+      "title": "[PC-9801] ロードス島戦記 福神漬2",
+      "driver": {
+        "name": "pc98dos",
+        "type": "opn",
+        "alias": "Humming Bird Soft",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "clockmul",
+          "value": "8"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "MUDRV2.SYS",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MUDRV298.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "LODOSS.MLD",
+          "offset": "0x09"
+        },
+        {
+          "type": "file",
+          "path": "MUSIC00.MLD",
+          "offset": "0x19"
+        },
+        {
+          "type": "file",
+          "path": "MUSIC01.MLD",
+          "offset": "0x1a"
+        },
+        {
+          "type": "file",
+          "path": "MUSIC02.MLD",
+          "offset": "0x1b"
+        },
+        {
+          "type": "file",
+          "path": "MUSIC03.MLD",
+          "offset": "0x1c"
+        },
+        {
+          "type": "file",
+          "path": "MUSIC04.MLD",
+          "offset": "0x1d"
+        },
+        {
+          "type": "file",
+          "path": "MUSIC05.MLD",
+          "offset": "0x1e"
+        },
+        {
+          "type": "file",
+          "path": "MUSIC06.MLD",
+          "offset": "0x1f"
+        },
+        {
+          "type": "file",
+          "path": "MUSIC07.MLD",
+          "offset": "0x20"
+        },
+        {
+          "type": "file",
+          "path": "MUSIC08.MLD",
+          "offset": "0x21"
+        },
+        {
+          "type": "file",
+          "path": "MUSIC09.MLD",
+          "offset": "0x22"
+        },
+        {
+          "type": "file",
+          "path": "MUSIC10.MLD",
+          "offset": "0x23"
+        },
+        {
+          "type": "file",
+          "path": "MUSIC11.MLD",
+          "offset": "0x24"
+        },
+        {
+          "type": "file",
+          "path": "MUSIC12.MLD",
+          "offset": "0x25"
+        },
+        {
+          "type": "file",
+          "path": "MUSIC13.MLD",
+          "offset": "0x26"
+        },
+        {
+          "type": "file",
+          "path": "MUSIC14.MLD",
+          "offset": "0x27"
+        },
+        {
+          "type": "file",
+          "path": "MUSIC15.MLD",
+          "offset": "0x28"
+        },
+        {
+          "type": "file",
+          "path": "MUSIC16.MLD",
+          "offset": "0x29"
+        },
+        {
+          "type": "file",
+          "path": "MUSIC17.MLD",
+          "offset": "0x2a"
+        },
+        {
+          "type": "file",
+          "path": "MUSIC18.MLD",
+          "offset": "0x2b"
+        },
+        {
+          "type": "file",
+          "path": "MUSIC19.MLD",
+          "offset": "0x2c"
+        },
+        {
+          "type": "file",
+          "path": "MUSIC20.MLD",
+          "offset": "0x2d"
+        },
+        {
+          "type": "file",
+          "path": "MUSIC21.MLD",
+          "offset": "0x2e"
+        },
+        {
+          "type": "file",
+          "path": "MUSIC22.MLD",
+          "offset": "0x2f"
+        },
+        {
+          "type": "file",
+          "path": "MUSIC23.MLD",
+          "offset": "0x30"
+        },
+        {
+          "type": "file",
+          "path": "MUSIC24.MLD",
+          "offset": "0x31"
+        },
+        {
+          "type": "file",
+          "path": "MUSIC25.MLD",
+          "offset": "0x32"
+        },
+        {
+          "type": "file",
+          "path": "MUSIC26.MLD",
+          "offset": "0x33"
+        },
+        {
+          "type": "file",
+          "path": "MUSIC27.MLD",
+          "offset": "0x34"
+        },
+        {
+          "type": "file",
+          "path": "MUSIC28.MLD",
+          "offset": "0x35"
+        },
+        {
+          "type": "file",
+          "path": "MUSIC29.MLD",
+          "offset": "0x36"
+        },
+        {
+          "type": "file",
+          "path": "MUSIC30.MLD",
+          "offset": "0x37"
+        },
+        {
+          "type": "file",
+          "path": "MUSIC31.MLD",
+          "offset": "0x38"
+        },
+        {
+          "type": "file",
+          "path": "MUSIC32.MLD",
+          "offset": "0x39"
+        },
+        {
+          "type": "file",
+          "path": "MUSIC33.MLD",
+          "offset": "0x3a"
+        },
+        {
+          "type": "file",
+          "path": "MUSIC34.MLD",
+          "offset": "0x3b"
+        },
+        {
+          "type": "file",
+          "path": "MUSIC35.MLD",
+          "offset": "0x3c"
+        },
+        {
+          "type": "file",
+          "path": "MUSIC36.MLD",
+          "offset": "0x3d"
+        },
+        {
+          "type": "file",
+          "path": "MUSIC37.MLD",
+          "offset": "0x3e"
+        },
+        {
+          "type": "file",
+          "path": "MUSIC38.MLD",
+          "offset": "0x3f"
+        },
+        {
+          "type": "file",
+          "path": "MUSIC39.MLD",
+          "offset": "0x40"
+        },
+        {
+          "type": "file",
+          "path": "MUSIC40.MLD",
+          "offset": "0x41"
+        },
+        {
+          "type": "file",
+          "path": "MUSIC41.MLD",
+          "offset": "0x42"
+        },
+        {
+          "type": "file",
+          "path": "MUSIC42.MLD",
+          "offset": "0x43"
+        },
+        {
+          "type": "file",
+          "path": "MUSIC43.MLD",
+          "offset": "0x44"
+        },
+        {
+          "type": "file",
+          "path": "MUSIC44.MLD",
+          "offset": "0x45"
+        },
+        {
+          "type": "file",
+          "path": "MUSIC45.MLD",
+          "offset": "0x46"
+        },
+        {
+          "type": "file",
+          "path": "MUSIC46.MLD",
+          "offset": "0x47"
+        },
+        {
+          "type": "file",
+          "path": "MUSIC47.MLD",
+          "offset": "0x48"
+        },
+        {
+          "type": "file",
+          "path": "MUSIC48.MLD",
+          "offset": "0x49"
+        },
+        {
+          "type": "file",
+          "path": "MUSIC49.MLD",
+          "offset": "0x4a"
+        },
+        {
+          "type": "file",
+          "path": "MUSIC50.MLD",
+          "offset": "0x4b"
+        },
+        {
+          "type": "file",
+          "path": "MUSIC51.MLD",
+          "offset": "0x4c"
+        },
+        {
+          "type": "file",
+          "path": "MUSIC52.MLD",
+          "offset": "0x4d"
+        },
+        {
+          "type": "file",
+          "path": "MUSIC53.MLD",
+          "offset": "0x4e"
+        },
+        {
+          "type": "file",
+          "path": "MUSIC54.MLD",
+          "offset": "0x4f"
+        },
+        {
+          "type": "file",
+          "path": "MUSIC55.MLD",
+          "offset": "0x50"
+        },
+        {
+          "type": "file",
+          "path": "MUSIC56.MLD",
+          "offset": "0x51"
+        },
+        {
+          "type": "file",
+          "path": "MUSIC57.MLD",
+          "offset": "0x52"
+        },
+        {
+          "type": "file",
+          "path": "MUSIC58.MLD",
+          "offset": "0x53"
+        },
+        {
+          "type": "file",
+          "path": "MUSIC59.MLD",
+          "offset": "0x54"
+        },
+        {
+          "type": "file",
+          "path": "MUSIC60.MLD",
+          "offset": "0x55"
+        },
+        {
+          "type": "file",
+          "path": "MUSIC61.MLD",
+          "offset": "0x56"
+        },
+        {
+          "type": "device",
+          "path": "MUDRV2.SYS",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "MUDRV298",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x19",
+          "title": "MUSIC00.MLD  : かなしき運命"
+        },
+        {
+          "kind": "title",
+          "code": "0x1a",
+          "title": "MUSIC01.MLD  : 悪の巣窟"
+        },
+        {
+          "kind": "title",
+          "code": "0x1b",
+          "title": "MUSIC02.MLD  : 魔導師バクナード"
+        },
+        {
+          "kind": "title",
+          "code": "0x1c",
+          "title": "MUSIC03.MLD  : バトル・オブ・ファイヤ"
+        },
+        {
+          "kind": "title",
+          "code": "0x1d",
+          "title": "MUSIC04.MLD  : 地底探検"
+        },
+        {
+          "kind": "title",
+          "code": "0x1e",
+          "title": "MUSIC05.MLD  : バッファローサーガ"
+        },
+        {
+          "kind": "title",
+          "code": "0x1f",
+          "title": "MUSIC06.MLD  : バトルソング"
+        },
+        {
+          "kind": "title",
+          "code": "0x20",
+          "title": "MUSIC07.MLD  : 邪神復活"
+        },
+        {
+          "kind": "title",
+          "code": "0x21",
+          "title": "MUSIC08.MLD  : 勝利の行進"
+        },
+        {
+          "kind": "title",
+          "code": "0x22",
+          "title": "MUSIC09.MLD  : 奇跡"
+        },
+        {
+          "kind": "title",
+          "code": "0x23",
+          "title": "MUSIC10.MLD  : 迷宮伝説"
+        },
+        {
+          "kind": "title",
+          "code": "0x24",
+          "title": "MUSIC11.MLD  : 闇の洞窟"
+        },
+        {
+          "kind": "title",
+          "code": "0x25",
+          "title": "MUSIC12.MLD  : カオス「魔の城」"
+        },
+        {
+          "kind": "title",
+          "code": "0x26",
+          "title": "MUSIC13.MLD  : ダウン・タウン"
+        },
+        {
+          "kind": "title",
+          "code": "0x27",
+          "title": "MUSIC14.MLD  : 閉じこめられた街"
+        },
+        {
+          "kind": "title",
+          "code": "0x28",
+          "title": "MUSIC15.MLD  : 大地の怒り"
+        },
+        {
+          "kind": "title",
+          "code": "0x29",
+          "title": "MUSIC16.MLD  : 輝ける正義"
+        },
+        {
+          "kind": "title",
+          "code": "0x2a",
+          "title": "MUSIC17.MLD  : 渦巻く欲望"
+        },
+        {
+          "kind": "title",
+          "code": "0x2b",
+          "title": "MUSIC18.MLD  : 想いでのパヴァーヌ"
+        },
+        {
+          "kind": "title",
+          "code": "0x2c",
+          "title": "MUSIC19.MLD  : 許して! 女王様"
+        },
+        {
+          "kind": "title",
+          "code": "0x2d",
+          "title": "MUSIC20.MLD  : 安らぎ"
+        },
+        {
+          "kind": "title",
+          "code": "0x2e",
+          "title": "MUSIC21.MLD  : 金鱗の竜王"
+        },
+        {
+          "kind": "title",
+          "code": "0x2f",
+          "title": "MUSIC22.MLD  : ブラックマーケット"
+        },
+        {
+          "kind": "title",
+          "code": "0x30",
+          "title": "MUSIC23.MLD  : 酒場の大道芸人"
+        },
+        {
+          "kind": "title",
+          "code": "0x31",
+          "title": "MUSIC24.MLD  : デザート・アンド・ロック"
+        },
+        {
+          "kind": "title",
+          "code": "0x32",
+          "title": "MUSIC25.MLD  : 妖精の踊り"
+        },
+        {
+          "kind": "title",
+          "code": "0x33",
+          "title": "MUSIC26.MLD  : 勇ましき騎兵"
+        },
+        {
+          "kind": "title",
+          "code": "0x34",
+          "title": "MUSIC27.MLD  : 傭兵王"
+        },
+        {
+          "kind": "title",
+          "code": "0x35",
+          "title": "MUSIC28.MLD  : 地平の果て"
+        },
+        {
+          "kind": "title",
+          "code": "0x36",
+          "title": "MUSIC29.MLD  : 恵"
+        },
+        {
+          "kind": "title",
+          "code": "0x37",
+          "title": "MUSIC30.MLD  : 安息の街"
+        },
+        {
+          "kind": "title",
+          "code": "0x38",
+          "title": "MUSIC31.MLD  : 約束"
+        },
+        {
+          "kind": "title",
+          "code": "0x39",
+          "title": "MUSIC32.MLD  : 港"
+        },
+        {
+          "kind": "title",
+          "code": "0x3a",
+          "title": "MUSIC33.MLD  : 穏やかなる時"
+        },
+        {
+          "kind": "title",
+          "code": "0x3b",
+          "title": "MUSIC34.MLD  : ラン・アウト"
+        },
+        {
+          "kind": "title",
+          "code": "0x3c",
+          "title": "MUSIC35.MLD  : ささやかな喜び"
+        },
+        {
+          "kind": "title",
+          "code": "0x3d",
+          "title": "MUSIC36.MLD  : 紺碧の水平線"
+        },
+        {
+          "kind": "title",
+          "code": "0x3e",
+          "title": "MUSIC37.MLD  : 試練"
+        },
+        {
+          "kind": "title",
+          "code": "0x3f",
+          "title": "MUSIC38.MLD  : 苦悩の挫折"
+        },
+        {
+          "kind": "title",
+          "code": "0x40",
+          "title": "MUSIC39.MLD  : 新たなる緊張"
+        },
+        {
+          "kind": "title",
+          "code": "0x41",
+          "title": "MUSIC40.MLD  : その頃…"
+        },
+        {
+          "kind": "title",
+          "code": "0x42",
+          "title": "MUSIC41.MLD  : サーカス広場"
+        },
+        {
+          "kind": "title",
+          "code": "0x43",
+          "title": "MUSIC42.MLD  : 村"
+        },
+        {
+          "kind": "title",
+          "code": "0x44",
+          "title": "MUSIC43.MLD  : 夢"
+        },
+        {
+          "kind": "title",
+          "code": "0x45",
+          "title": "MUSIC44.MLD  : 湖底の記憶"
+        },
+        {
+          "kind": "title",
+          "code": "0x46",
+          "title": "MUSIC45.MLD  : ロードスの危機"
+        },
+        {
+          "kind": "title",
+          "code": "0x47",
+          "title": "MUSIC46.MLD  : 飛翔"
+        },
+        {
+          "kind": "title",
+          "code": "0x48",
+          "title": "MUSIC47.MLD  : 胎動"
+        },
+        {
+          "kind": "title",
+          "code": "0x49",
+          "title": "MUSIC48.MLD  : 友達"
+        },
+        {
+          "kind": "title",
+          "code": "0x4a",
+          "title": "MUSIC49.MLD  : 暁の道"
+        },
+        {
+          "kind": "title",
+          "code": "0x4b",
+          "title": "MUSIC50.MLD  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x4c",
+          "title": "MUSIC51.MLD  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x4d",
+          "title": "MUSIC52.MLD  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x4e",
+          "title": "MUSIC53.MLD  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x4f",
+          "title": "MUSIC54.MLD  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x50",
+          "title": "MUSIC55.MLD  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x51",
+          "title": "MUSIC56.MLD  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x52",
+          "title": "MUSIC57.MLD  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x53",
+          "title": "MUSIC58.MLD  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x54",
+          "title": "MUSIC59.MLD  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x55",
+          "title": "MUSIC60.MLD  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x56",
+          "title": "MUSIC61.MLD  :"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/hummingbirdsoft.xml",
+      "source_order": 2570,
+      "archive": "fukujin2_98",
+      "id": "fukujin2-98-opn"
+    },
+    {
+      "title": "[PC-9801] ロードス島戦記 福神漬3",
+      "driver": {
+        "name": "pc98dos",
+        "type": "opn",
+        "alias": "Humming Bird Soft",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "clockmul",
+          "value": "8"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "MUDRV3.EXE",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MUDRV298.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "LODOSS.MLD",
+          "offset": "0x09"
+        },
+        {
+          "type": "file",
+          "path": "F3_MDT00.MLD",
+          "offset": "0x10"
+        },
+        {
+          "type": "file",
+          "path": "F3_MDT01.MLD",
+          "offset": "0x11"
+        },
+        {
+          "type": "file",
+          "path": "F3_MDT02.MLD",
+          "offset": "0x12"
+        },
+        {
+          "type": "file",
+          "path": "F3_MDT03.MLD",
+          "offset": "0x13"
+        },
+        {
+          "type": "file",
+          "path": "F3_MDT04.MLD",
+          "offset": "0x14"
+        },
+        {
+          "type": "file",
+          "path": "F3_MDT05.MLD",
+          "offset": "0x15"
+        },
+        {
+          "type": "file",
+          "path": "F3_MDT06.MLD",
+          "offset": "0x16"
+        },
+        {
+          "type": "file",
+          "path": "F3_MDT07.MLD",
+          "offset": "0x17"
+        },
+        {
+          "type": "file",
+          "path": "F3_MDT08.MLD",
+          "offset": "0x18"
+        },
+        {
+          "type": "file",
+          "path": "F3_MDT09.MLD",
+          "offset": "0x19"
+        },
+        {
+          "type": "file",
+          "path": "F3_MDT10.MLD",
+          "offset": "0x1a"
+        },
+        {
+          "type": "file",
+          "path": "F3_MDT11.MLD",
+          "offset": "0x1b"
+        },
+        {
+          "type": "file",
+          "path": "F3_MDT12.MLD",
+          "offset": "0x1c"
+        },
+        {
+          "type": "file",
+          "path": "F3_MDT13.MLD",
+          "offset": "0x1d"
+        },
+        {
+          "type": "file",
+          "path": "F3_MDT14.MLD",
+          "offset": "0x1e"
+        },
+        {
+          "type": "file",
+          "path": "F3_MDT15.MLD",
+          "offset": "0x1f"
+        },
+        {
+          "type": "file",
+          "path": "F3_MDT16.MLD",
+          "offset": "0x20"
+        },
+        {
+          "type": "file",
+          "path": "F3_MDT17.MLD",
+          "offset": "0x21"
+        },
+        {
+          "type": "file",
+          "path": "F3_MDT18.MLD",
+          "offset": "0x22"
+        },
+        {
+          "type": "file",
+          "path": "F3_MDT19.MLD",
+          "offset": "0x23"
+        },
+        {
+          "type": "file",
+          "path": "F3_MDT20.MLD",
+          "offset": "0x24"
+        },
+        {
+          "type": "file",
+          "path": "F3_MDT21.MLD",
+          "offset": "0x25"
+        },
+        {
+          "type": "file",
+          "path": "F3_MDT22.MLD",
+          "offset": "0x26"
+        },
+        {
+          "type": "file",
+          "path": "F3_MDT23.MLD",
+          "offset": "0x27"
+        },
+        {
+          "type": "shell",
+          "path": "MUDRV3",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "MUDRV298",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "F3_MDT00.MLD :"
+        },
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "F3_MDT01.MLD :"
+        },
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "F3_MDT02.MLD :"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "F3_MDT03.MLD :"
+        },
+        {
+          "kind": "title",
+          "code": "0x14",
+          "title": "F3_MDT04.MLD :"
+        },
+        {
+          "kind": "title",
+          "code": "0x15",
+          "title": "F3_MDT05.MLD :"
+        },
+        {
+          "kind": "title",
+          "code": "0x16",
+          "title": "F3_MDT06.MLD :"
+        },
+        {
+          "kind": "title",
+          "code": "0x17",
+          "title": "F3_MDT07.MLD :"
+        },
+        {
+          "kind": "title",
+          "code": "0x18",
+          "title": "F3_MDT08.MLD :"
+        },
+        {
+          "kind": "title",
+          "code": "0x19",
+          "title": "F3_MDT09.MLD :"
+        },
+        {
+          "kind": "title",
+          "code": "0x1a",
+          "title": "F3_MDT10.MLD :"
+        },
+        {
+          "kind": "title",
+          "code": "0x1b",
+          "title": "F3_MDT11.MLD :"
+        },
+        {
+          "kind": "title",
+          "code": "0x1c",
+          "title": "F3_MDT12.MLD :"
+        },
+        {
+          "kind": "title",
+          "code": "0x1d",
+          "title": "F3_MDT13.MLD :"
+        },
+        {
+          "kind": "title",
+          "code": "0x1e",
+          "title": "F3_MDT14.MLD :"
+        },
+        {
+          "kind": "title",
+          "code": "0x1f",
+          "title": "F3_MDT15.MLD :"
+        },
+        {
+          "kind": "title",
+          "code": "0x20",
+          "title": "F3_MDT16.MLD :"
+        },
+        {
+          "kind": "title",
+          "code": "0x21",
+          "title": "F3_MDT17.MLD :"
+        },
+        {
+          "kind": "title",
+          "code": "0x22",
+          "title": "F3_MDT18.MLD :"
+        },
+        {
+          "kind": "title",
+          "code": "0x23",
+          "title": "F3_MDT19.MLD :"
+        },
+        {
+          "kind": "title",
+          "code": "0x24",
+          "title": "F3_MDT20.MLD :"
+        },
+        {
+          "kind": "title",
+          "code": "0x25",
+          "title": "F3_MDT21.MLD :"
+        },
+        {
+          "kind": "title",
+          "code": "0x26",
+          "title": "F3_MDT22.MLD :"
+        },
+        {
+          "kind": "title",
+          "code": "0x27",
+          "title": "F3_MDT23.MLD :"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/hummingbirdsoft.xml",
+      "source_order": 2571,
+      "archive": "fukujin3_98",
+      "id": "fukujin3-98-opn"
+    },
+    {
+      "title": "[PC-9801] ロードス島戦記 福神漬",
+      "driver": {
+        "name": "pc98",
+        "type": "opn",
+        "alias": "Humming Bird Soft",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "dummysndrom",
+          "value": "1"
+        },
+        {
+          "name": "bootcs",
+          "value": "0x0060"
+        },
+        {
+          "name": "bootip",
+          "value": "0x0000"
+        },
+        {
+          "name": "funcvect",
+          "value": "0x7f"
+        },
+        {
+          "name": "addressing",
+          "value": "1"
+        },
+        {
+          "name": "dataaddr",
+          "value": "0x10000000"
+        },
+        {
+          "name": "filesize",
+          "value": "0x4000"
+        },
+        {
+          "name": "datamax",
+          "value": "0x20"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "fuku1_98.bin",
+          "offset": "0x00600000"
+        },
+        {
+          "type": "code",
+          "path": "file_01.bin",
+          "offset": "0x02180000"
+        },
+        {
+          "type": "code",
+          "path": "file_02.bin",
+          "offset": "0x0D000000"
+        },
+        {
+          "type": "bgm",
+          "path": "file_0a.bin",
+          "offset": "0x01"
+        },
+        {
+          "type": "bgm",
+          "path": "file_0b.bin",
+          "offset": "0x02"
+        },
+        {
+          "type": "bgm",
+          "path": "file_0c.bin",
+          "offset": "0x03"
+        },
+        {
+          "type": "bgm",
+          "path": "file_0d.bin",
+          "offset": "0x04"
+        },
+        {
+          "type": "bgm",
+          "path": "file_0e.bin",
+          "offset": "0x05"
+        },
+        {
+          "type": "bgm",
+          "path": "file_0f.bin",
+          "offset": "0x06"
+        },
+        {
+          "type": "bgm",
+          "path": "file_10.bin",
+          "offset": "0x07"
+        },
+        {
+          "type": "bgm",
+          "path": "file_11.bin",
+          "offset": "0x08"
+        },
+        {
+          "type": "bgm",
+          "path": "file_12.bin",
+          "offset": "0x09"
+        },
+        {
+          "type": "bgm",
+          "path": "file_13.bin",
+          "offset": "0x0a"
+        },
+        {
+          "type": "bgm",
+          "path": "file_14.bin",
+          "offset": "0x0b"
+        },
+        {
+          "type": "bgm",
+          "path": "file_15.bin",
+          "offset": "0x0c"
+        },
+        {
+          "type": "bgm",
+          "path": "file_16.bin",
+          "offset": "0x0d"
+        },
+        {
+          "type": "bgm",
+          "path": "file_17.bin",
+          "offset": "0x0e"
+        },
+        {
+          "type": "bgm",
+          "path": "file_18.bin",
+          "offset": "0x0f"
+        },
+        {
+          "type": "bgm",
+          "path": "file_19.bin",
+          "offset": "0x10"
+        },
+        {
+          "type": "bgm",
+          "path": "file_1a.bin",
+          "offset": "0x11"
+        },
+        {
+          "type": "bgm",
+          "path": "file_1b.bin",
+          "offset": "0x12"
+        },
+        {
+          "type": "bgm",
+          "path": "file_1c.bin",
+          "offset": "0x13"
+        },
+        {
+          "type": "bgm",
+          "path": "file_1d.bin",
+          "offset": "0x14"
+        },
+        {
+          "type": "bgm",
+          "path": "file_1e.bin",
+          "offset": "0x15"
+        },
+        {
+          "type": "bgm",
+          "path": "file_1f.bin",
+          "offset": "0x16"
+        },
+        {
+          "type": "bgm",
+          "path": "file_20.bin",
+          "offset": "0x17"
+        },
+        {
+          "type": "bgm",
+          "path": "file_21.bin",
+          "offset": "0x18"
+        },
+        {
+          "type": "bgm",
+          "path": "file_22.bin",
+          "offset": "0x19"
+        },
+        {
+          "type": "bgm",
+          "path": "file_23.bin",
+          "offset": "0x1a"
+        },
+        {
+          "type": "bgm",
+          "path": "file_be.bin",
+          "offset": "0x1b"
+        },
+        {
+          "type": "bgm",
+          "path": "file_bf.bin",
+          "offset": "0x1c"
+        },
+        {
+          "type": "bgm",
+          "path": "file_c0.bin",
+          "offset": "0x1d"
+        },
+        {
+          "type": "bgm",
+          "path": "file_c1.bin",
+          "offset": "0x1e"
+        },
+        {
+          "type": "bgm",
+          "path": "file_c2.bin",
+          "offset": "0x1f"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x1b",
+          "title": "1B : タイトル"
+        },
+        {
+          "kind": "title",
+          "code": "0x1c",
+          "title": "1C : メニュー"
+        },
+        {
+          "kind": "title",
+          "code": "0x1d",
+          "title": "1D : 16&25パズル"
+        },
+        {
+          "kind": "title",
+          "code": "0x1e",
+          "title": "1E : 16&25パズル クリア"
+        },
+        {
+          "kind": "title",
+          "code": "0x1f",
+          "title": "1F : 水野良のQ&A"
+        },
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "01 : ワンダーランド"
+        },
+        {
+          "kind": "title",
+          "code": "0x02",
+          "title": "02 : 迷宮伝説"
+        },
+        {
+          "kind": "title",
+          "code": "0x03",
+          "title": "03 : 迷いの路"
+        },
+        {
+          "kind": "title",
+          "code": "0x04",
+          "title": "04 : 村"
+        },
+        {
+          "kind": "title",
+          "code": "0x05",
+          "title": "05 : 聖歌"
+        },
+        {
+          "kind": "title",
+          "code": "0x06",
+          "title": "06 : 安息の宿"
+        },
+        {
+          "kind": "title",
+          "code": "0x07",
+          "title": "07 : バザー"
+        },
+        {
+          "kind": "title",
+          "code": "0x08",
+          "title": "08 : 吟遊詩人"
+        },
+        {
+          "kind": "title",
+          "code": "0x09",
+          "title": "09 : スレイン"
+        },
+        {
+          "kind": "title",
+          "code": "0x0a",
+          "title": "0A : エト"
+        },
+        {
+          "kind": "title",
+          "code": "0x0b",
+          "title": "0B : ウッド・チャック"
+        },
+        {
+          "kind": "title",
+          "code": "0x0c",
+          "title": "0C : ギム"
+        },
+        {
+          "kind": "title",
+          "code": "0x0d",
+          "title": "0D : ディードリット"
+        },
+        {
+          "kind": "title",
+          "code": "0x0e",
+          "title": "0E : パーン"
+        },
+        {
+          "kind": "title",
+          "code": "0x0f",
+          "title": "0F : 街"
+        },
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "10 : シャイニングトゥリー"
+        },
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "11 : 覇王"
+        },
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "12 : 亡き戦士達への哀歌"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "13 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x14",
+          "title": "14 : ブラックバトル"
+        },
+        {
+          "kind": "title",
+          "code": "0x15",
+          "title": "15 : バトルソング"
+        },
+        {
+          "kind": "title",
+          "code": "0x16",
+          "title": "16 : バトルファンファーレ"
+        },
+        {
+          "kind": "title",
+          "code": "0x17",
+          "title": "17 : 序曲『灰色の魔女』"
+        },
+        {
+          "kind": "title",
+          "code": "0x18",
+          "title": "18 : (スタッフロール)"
+        },
+        {
+          "kind": "title",
+          "code": "0x19",
+          "title": "19 : 永遠のロードス (バッドエンディング)"
+        },
+        {
+          "kind": "title",
+          "code": "0x1a",
+          "title": "1A : 永遠のロードス (エンディング)"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/hummingbirdsoft.xml",
+      "source_order": 2572,
+      "archive": "fukujin1_98",
+      "id": "fukujin1-98-opn"
+    },
+    {
+      "title": "[PC-9821] ロードス島戦記CD -灰色の魔女-",
+      "driver": {
+        "name": "pc98dos",
+        "type": "opn",
+        "alias": "Humming Bird Soft",
+        "platform": "NEC PC-9821"
+      },
+      "options": [
+        {
+          "name": "clockmul",
+          "value": "8"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "MUDRV3.BIN",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "LW1CD_98.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "CMAKE00.MLD",
+          "offset": "0x08"
+        },
+        {
+          "type": "file",
+          "path": "CMAKE01.MLD",
+          "offset": "0x09"
+        },
+        {
+          "type": "file",
+          "path": "CMAKE02.MLD",
+          "offset": "0x10"
+        },
+        {
+          "type": "file",
+          "path": "LCD100.MLD",
+          "offset": "0x11"
+        },
+        {
+          "type": "file",
+          "path": "LCD101.MLD",
+          "offset": "0x12"
+        },
+        {
+          "type": "file",
+          "path": "LCD102.MLD",
+          "offset": "0x13"
+        },
+        {
+          "type": "file",
+          "path": "LCD103.MLD",
+          "offset": "0x14"
+        },
+        {
+          "type": "file",
+          "path": "LCD104.MLD",
+          "offset": "0x15"
+        },
+        {
+          "type": "file",
+          "path": "LCD105.MLD",
+          "offset": "0x16"
+        },
+        {
+          "type": "file",
+          "path": "LCD106.MLD",
+          "offset": "0x17"
+        },
+        {
+          "type": "file",
+          "path": "LCD107.MLD",
+          "offset": "0x18"
+        },
+        {
+          "type": "file",
+          "path": "LCD108.MLD",
+          "offset": "0x19"
+        },
+        {
+          "type": "file",
+          "path": "LCD109.MLD",
+          "offset": "0x1a"
+        },
+        {
+          "type": "file",
+          "path": "LCD110.MLD",
+          "offset": "0x1b"
+        },
+        {
+          "type": "file",
+          "path": "LCD111.MLD",
+          "offset": "0x1c"
+        },
+        {
+          "type": "file",
+          "path": "LCD112.MLD",
+          "offset": "0x1d"
+        },
+        {
+          "type": "file",
+          "path": "LCD113.MLD",
+          "offset": "0x1e"
+        },
+        {
+          "type": "file",
+          "path": "LCD114.MLD",
+          "offset": "0x1f"
+        },
+        {
+          "type": "file",
+          "path": "LCD115.MLD",
+          "offset": "0x20"
+        },
+        {
+          "type": "file",
+          "path": "LCD116.MLD",
+          "offset": "0x21"
+        },
+        {
+          "type": "file",
+          "path": "LCD117.MLD",
+          "offset": "0x22"
+        },
+        {
+          "type": "file",
+          "path": "LCD118.MLD",
+          "offset": "0x23"
+        },
+        {
+          "type": "file",
+          "path": "LCD119.MLD",
+          "offset": "0x24"
+        },
+        {
+          "type": "file",
+          "path": "LCD120.MLD",
+          "offset": "0x25"
+        },
+        {
+          "type": "device",
+          "path": "MUDRV3.BIN",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "LW1CD_98",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x090010",
+          "title": "CMAKE02.MLD : 暁の道"
+        },
+        {
+          "kind": "title",
+          "code": "0x080011",
+          "title": "LCD100.MLD  : バトルファンファーレ"
+        },
+        {
+          "kind": "title",
+          "code": "0x080012",
+          "title": "LCD101.MLD  : バトルソング"
+        },
+        {
+          "kind": "title",
+          "code": "0x080013",
+          "title": "LCD102.MLD  : ブラックバトル"
+        },
+        {
+          "kind": "title",
+          "code": "0x080014",
+          "title": "LCD103.MLD  : ワンダーランド"
+        },
+        {
+          "kind": "title",
+          "code": "0x080015",
+          "title": "LCD104.MLD  : 迷宮伝説"
+        },
+        {
+          "kind": "title",
+          "code": "0x080016",
+          "title": "LCD105.MLD  : 迷いの路"
+        },
+        {
+          "kind": "title",
+          "code": "0x080017",
+          "title": "LCD106.MLD  : 村"
+        },
+        {
+          "kind": "title",
+          "code": "0x080018",
+          "title": "LCD107.MLD  : 街"
+        },
+        {
+          "kind": "title",
+          "code": "0x080019",
+          "title": "LCD108.MLD  : 聖歌"
+        },
+        {
+          "kind": "title",
+          "code": "0x08001a",
+          "title": "LCD109.MLD  : 安息の宿"
+        },
+        {
+          "kind": "title",
+          "code": "0x08001b",
+          "title": "LCD110.MLD  : バザー"
+        },
+        {
+          "kind": "title",
+          "code": "0x08001c",
+          "title": "LCD111.MLD  : 吟遊詩人"
+        },
+        {
+          "kind": "title",
+          "code": "0x08001d",
+          "title": "LCD112.MLD  : シャイニングトゥリー"
+        },
+        {
+          "kind": "title",
+          "code": "0x08001e",
+          "title": "LCD113.MLD  : 覇王"
+        },
+        {
+          "kind": "title",
+          "code": "0x08001f",
+          "title": "LCD114.MLD  : 亡き戦士達への哀歌"
+        },
+        {
+          "kind": "title",
+          "code": "0x080020",
+          "title": "LCD115.MLD  : ギム"
+        },
+        {
+          "kind": "title",
+          "code": "0x080021",
+          "title": "LCD116.MLD  : スレイン"
+        },
+        {
+          "kind": "title",
+          "code": "0x080022",
+          "title": "LCD117.MLD  : パーン"
+        },
+        {
+          "kind": "title",
+          "code": "0x080023",
+          "title": "LCD118.MLD  : エト"
+        },
+        {
+          "kind": "title",
+          "code": "0x080024",
+          "title": "LCD119.MLD  : ディードリット"
+        },
+        {
+          "kind": "title",
+          "code": "0x080025",
+          "title": "LCD120.MLD  : ウッド・チャック"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/hummingbirdsoft.xml",
+      "source_order": 2573,
+      "archive": "rolw1_21",
+      "id": "rolw1-21-opn"
+    },
+    {
+      "title": "[PC-9821] ロードス島戦記IICD -五色の魔竜-",
+      "driver": {
+        "name": "pc98dos",
+        "type": "opn",
+        "alias": "Humming Bird Soft",
+        "platform": "NEC PC-9821"
+      },
+      "options": [
+        {
+          "name": "clockmul",
+          "value": "8"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "MUDRV3.BIN",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MUDRV298.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "LODOSS.MLD",
+          "offset": "0x09"
+        },
+        {
+          "type": "file",
+          "path": "END_2.MLD",
+          "offset": "0x10"
+        },
+        {
+          "type": "file",
+          "path": "END1.MLD",
+          "offset": "0x11"
+        },
+        {
+          "type": "file",
+          "path": "GRAYROAD.MLD",
+          "offset": "0x12"
+        },
+        {
+          "type": "file",
+          "path": "GUILD.MLD",
+          "offset": "0x13"
+        },
+        {
+          "type": "file",
+          "path": "M_FORMAT.MLD",
+          "offset": "0x14"
+        },
+        {
+          "type": "file",
+          "path": "MUSIC00.MLD",
+          "offset": "0x15"
+        },
+        {
+          "type": "file",
+          "path": "MUSIC01.MLD",
+          "offset": "0x16"
+        },
+        {
+          "type": "file",
+          "path": "MUSIC02.MLD",
+          "offset": "0x17"
+        },
+        {
+          "type": "file",
+          "path": "MUSIC03.MLD",
+          "offset": "0x18"
+        },
+        {
+          "type": "file",
+          "path": "MUSIC04.MLD",
+          "offset": "0x19"
+        },
+        {
+          "type": "file",
+          "path": "MUSIC05.MLD",
+          "offset": "0x1a"
+        },
+        {
+          "type": "file",
+          "path": "MUSIC06.MLD",
+          "offset": "0x1b"
+        },
+        {
+          "type": "file",
+          "path": "MUSIC07.MLD",
+          "offset": "0x1c"
+        },
+        {
+          "type": "file",
+          "path": "MUSIC08.MLD",
+          "offset": "0x1d"
+        },
+        {
+          "type": "file",
+          "path": "MUSIC09.MLD",
+          "offset": "0x1e"
+        },
+        {
+          "type": "file",
+          "path": "MUSIC10.MLD",
+          "offset": "0x1f"
+        },
+        {
+          "type": "file",
+          "path": "MUSIC11.MLD",
+          "offset": "0x20"
+        },
+        {
+          "type": "file",
+          "path": "MUSIC12.MLD",
+          "offset": "0x21"
+        },
+        {
+          "type": "file",
+          "path": "MUSIC13.MLD",
+          "offset": "0x22"
+        },
+        {
+          "type": "file",
+          "path": "MUSIC14.MLD",
+          "offset": "0x23"
+        },
+        {
+          "type": "file",
+          "path": "MUSIC15.MLD",
+          "offset": "0x24"
+        },
+        {
+          "type": "file",
+          "path": "MUSIC16.MLD",
+          "offset": "0x25"
+        },
+        {
+          "type": "file",
+          "path": "MUSIC17.MLD",
+          "offset": "0x26"
+        },
+        {
+          "type": "file",
+          "path": "MUSIC18.MLD",
+          "offset": "0x27"
+        },
+        {
+          "type": "file",
+          "path": "MUSIC19.MLD",
+          "offset": "0x28"
+        },
+        {
+          "type": "file",
+          "path": "MUSIC20.MLD",
+          "offset": "0x29"
+        },
+        {
+          "type": "file",
+          "path": "MUSIC21.MLD",
+          "offset": "0x2a"
+        },
+        {
+          "type": "file",
+          "path": "MUSIC22.MLD",
+          "offset": "0x2b"
+        },
+        {
+          "type": "file",
+          "path": "MUSIC23.MLD",
+          "offset": "0x2c"
+        },
+        {
+          "type": "file",
+          "path": "MUSIC24.MLD",
+          "offset": "0x2d"
+        },
+        {
+          "type": "file",
+          "path": "MUSIC25.MLD",
+          "offset": "0x2e"
+        },
+        {
+          "type": "file",
+          "path": "MUSIC26.MLD",
+          "offset": "0x2f"
+        },
+        {
+          "type": "file",
+          "path": "MUSIC27.MLD",
+          "offset": "0x30"
+        },
+        {
+          "type": "file",
+          "path": "MUSIC28.MLD",
+          "offset": "0x31"
+        },
+        {
+          "type": "file",
+          "path": "MUSIC29.MLD",
+          "offset": "0x32"
+        },
+        {
+          "type": "file",
+          "path": "MUSIC30.MLD",
+          "offset": "0x33"
+        },
+        {
+          "type": "file",
+          "path": "MUSIC31.MLD",
+          "offset": "0x34"
+        },
+        {
+          "type": "file",
+          "path": "MUSIC32.MLD",
+          "offset": "0x35"
+        },
+        {
+          "type": "file",
+          "path": "MUSIC33.MLD",
+          "offset": "0x36"
+        },
+        {
+          "type": "file",
+          "path": "MUSIC34.MLD",
+          "offset": "0x37"
+        },
+        {
+          "type": "file",
+          "path": "MUSIC35.MLD",
+          "offset": "0x38"
+        },
+        {
+          "type": "file",
+          "path": "MUSIC36.MLD",
+          "offset": "0x39"
+        },
+        {
+          "type": "file",
+          "path": "MUSIC37.MLD",
+          "offset": "0x3a"
+        },
+        {
+          "type": "file",
+          "path": "MUSIC38.MLD",
+          "offset": "0x3b"
+        },
+        {
+          "type": "file",
+          "path": "MUSIC39.MLD",
+          "offset": "0x3c"
+        },
+        {
+          "type": "file",
+          "path": "MUSIC40.MLD",
+          "offset": "0x3d"
+        },
+        {
+          "type": "file",
+          "path": "MUSIC41.MLD",
+          "offset": "0x3e"
+        },
+        {
+          "type": "file",
+          "path": "MUSIC42.MLD",
+          "offset": "0x3f"
+        },
+        {
+          "type": "file",
+          "path": "MUSIC43.MLD",
+          "offset": "0x40"
+        },
+        {
+          "type": "file",
+          "path": "OPEN_12.MLD",
+          "offset": "0x41"
+        },
+        {
+          "type": "file",
+          "path": "OPEN_34.MLD",
+          "offset": "0x42"
+        },
+        {
+          "type": "device",
+          "path": "MUDRV3.BIN",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "MUDRV298",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x41",
+          "title": "OPEN_12.MLD  : 湖底の記憶"
+        },
+        {
+          "kind": "title",
+          "code": "0x42",
+          "title": "OPEN_34.MLD  : 飛翔"
+        },
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "GRAYROAD.MLD : 暁の道"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "GUILD.MLD    : 友達"
+        },
+        {
+          "kind": "title",
+          "code": "0x14",
+          "title": "M_FORMAT.MLD : 胎動"
+        },
+        {
+          "kind": "title",
+          "code": "0x15",
+          "title": "MUSIC00.MLD  : かなしき運命"
+        },
+        {
+          "kind": "title",
+          "code": "0x16",
+          "title": "MUSIC01.MLD  : 悪の巣窟"
+        },
+        {
+          "kind": "title",
+          "code": "0x17",
+          "title": "MUSIC02.MLD  : 魔導師バクナード"
+        },
+        {
+          "kind": "title",
+          "code": "0x18",
+          "title": "MUSIC03.MLD  : バトル・オブ・ファイヤ"
+        },
+        {
+          "kind": "title",
+          "code": "0x19",
+          "title": "MUSIC04.MLD  : 地底探検"
+        },
+        {
+          "kind": "title",
+          "code": "0x1a",
+          "title": "MUSIC05.MLD  : バッファローサーガ"
+        },
+        {
+          "kind": "title",
+          "code": "0x1b",
+          "title": "MUSIC06.MLD  : バトルソング"
+        },
+        {
+          "kind": "title",
+          "code": "0x1c",
+          "title": "MUSIC07.MLD  : 邪神復活"
+        },
+        {
+          "kind": "title",
+          "code": "0x1d",
+          "title": "MUSIC08.MLD  : 勝利の行進"
+        },
+        {
+          "kind": "title",
+          "code": "0x1e",
+          "title": "MUSIC09.MLD  : 奇跡"
+        },
+        {
+          "kind": "title",
+          "code": "0x1f",
+          "title": "MUSIC10.MLD  : 迷宮伝説"
+        },
+        {
+          "kind": "title",
+          "code": "0x20",
+          "title": "MUSIC11.MLD  : 闇の洞窟"
+        },
+        {
+          "kind": "title",
+          "code": "0x21",
+          "title": "MUSIC12.MLD  : カオス「魔の城」"
+        },
+        {
+          "kind": "title",
+          "code": "0x22",
+          "title": "MUSIC13.MLD  : ダウン・タウン"
+        },
+        {
+          "kind": "title",
+          "code": "0x23",
+          "title": "MUSIC14.MLD  : 閉じこめられた街"
+        },
+        {
+          "kind": "title",
+          "code": "0x24",
+          "title": "MUSIC15.MLD  : 大地の怒り"
+        },
+        {
+          "kind": "title",
+          "code": "0x25",
+          "title": "MUSIC16.MLD  : 輝ける正義"
+        },
+        {
+          "kind": "title",
+          "code": "0x26",
+          "title": "MUSIC17.MLD  : 渦巻く欲望"
+        },
+        {
+          "kind": "title",
+          "code": "0x27",
+          "title": "MUSIC18.MLD  : 想いでのパヴァーヌ"
+        },
+        {
+          "kind": "title",
+          "code": "0x28",
+          "title": "MUSIC19.MLD  : 許して! 女王様"
+        },
+        {
+          "kind": "title",
+          "code": "0x29",
+          "title": "MUSIC20.MLD  : 安らぎ"
+        },
+        {
+          "kind": "title",
+          "code": "0x2a",
+          "title": "MUSIC21.MLD  : 金鱗の竜王"
+        },
+        {
+          "kind": "title",
+          "code": "0x2b",
+          "title": "MUSIC22.MLD  : ブラックマーケット"
+        },
+        {
+          "kind": "title",
+          "code": "0x2c",
+          "title": "MUSIC23.MLD  : 酒場の大道芸人"
+        },
+        {
+          "kind": "title",
+          "code": "0x2d",
+          "title": "MUSIC24.MLD  : デザート・アンド・ロック"
+        },
+        {
+          "kind": "title",
+          "code": "0x2e",
+          "title": "MUSIC25.MLD  : 妖精の踊り"
+        },
+        {
+          "kind": "title",
+          "code": "0x2f",
+          "title": "MUSIC26.MLD  : 勇ましき騎兵"
+        },
+        {
+          "kind": "title",
+          "code": "0x30",
+          "title": "MUSIC27.MLD  : 傭兵王"
+        },
+        {
+          "kind": "title",
+          "code": "0x31",
+          "title": "MUSIC28.MLD  : 地平の果て"
+        },
+        {
+          "kind": "title",
+          "code": "0x32",
+          "title": "MUSIC29.MLD  : 恵"
+        },
+        {
+          "kind": "title",
+          "code": "0x33",
+          "title": "MUSIC30.MLD  : 安息の街"
+        },
+        {
+          "kind": "title",
+          "code": "0x34",
+          "title": "MUSIC31.MLD  : 約束"
+        },
+        {
+          "kind": "title",
+          "code": "0x35",
+          "title": "MUSIC32.MLD  : 港"
+        },
+        {
+          "kind": "title",
+          "code": "0x36",
+          "title": "MUSIC33.MLD  : 穏やかなる時"
+        },
+        {
+          "kind": "title",
+          "code": "0x37",
+          "title": "MUSIC34.MLD  : ラン・アウト"
+        },
+        {
+          "kind": "title",
+          "code": "0x38",
+          "title": "MUSIC35.MLD  : ささやかな喜び"
+        },
+        {
+          "kind": "title",
+          "code": "0x39",
+          "title": "MUSIC36.MLD  : 紺碧の水平線"
+        },
+        {
+          "kind": "title",
+          "code": "0x3a",
+          "title": "MUSIC37.MLD  : 試練"
+        },
+        {
+          "kind": "title",
+          "code": "0x3b",
+          "title": "MUSIC38.MLD  : 苦悩の挫折"
+        },
+        {
+          "kind": "title",
+          "code": "0x3c",
+          "title": "MUSIC39.MLD  : 新たなる緊張"
+        },
+        {
+          "kind": "title",
+          "code": "0x3d",
+          "title": "MUSIC40.MLD  : その頃…"
+        },
+        {
+          "kind": "title",
+          "code": "0x3e",
+          "title": "MUSIC41.MLD  : サーカス広場"
+        },
+        {
+          "kind": "title",
+          "code": "0x3f",
+          "title": "MUSIC42.MLD  : 村"
+        },
+        {
+          "kind": "title",
+          "code": "0x40",
+          "title": "MUSIC43.MLD  : 夢"
+        },
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "END1.MLD     : (エンディング)"
+        },
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "END_2.MLD    : (スタッフロール)"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/hummingbirdsoft.xml",
+      "source_order": 2574,
+      "archive": "rolw2_21",
+      "id": "rolw2-21-opn"
+    },
+    {
+      "title": "[X68000] ロードス島戦記 -灰色の魔女-",
+      "driver": {
+        "name": "x68k",
+        "type": "generic",
+        "alias": "Humming Bird Soft",
+        "platform": "SHARP X68000"
+      },
+      "options": [],
+      "assets": [
+        {
+          "type": "code",
+          "path": "lorw68snd.bin",
+          "offset": "0x00000"
+        },
+        {
+          "type": "code",
+          "path": "kmdrv.r",
+          "offset": "0x10000"
+        },
+        {
+          "type": "code",
+          "path": "lodoss.sdt",
+          "offset": "0x12000"
+        },
+        {
+          "type": "code",
+          "path": "lodoss.pdt",
+          "offset": "0x14000"
+        },
+        {
+          "type": "code",
+          "path": "lodoss_.pdt",
+          "offset": "0x28000"
+        },
+        {
+          "type": "code",
+          "path": "fmt68k.mdt",
+          "offset": "0x60000"
+        },
+        {
+          "type": "code",
+          "path": "intro.mdt",
+          "offset": "0x64000"
+        },
+        {
+          "type": "code",
+          "path": "s&fin.mdt",
+          "offset": "0x68000"
+        },
+        {
+          "type": "code",
+          "path": "v&fin.mdt",
+          "offset": "0x6c000"
+        },
+        {
+          "type": "code",
+          "path": "mdt.000",
+          "offset": "0x70000"
+        },
+        {
+          "type": "code",
+          "path": "mdt.001",
+          "offset": "0x74000"
+        },
+        {
+          "type": "code",
+          "path": "mdt.002",
+          "offset": "0x78000"
+        },
+        {
+          "type": "code",
+          "path": "mdt.003",
+          "offset": "0x7C000"
+        },
+        {
+          "type": "code",
+          "path": "mdt.004",
+          "offset": "0x80000"
+        },
+        {
+          "type": "code",
+          "path": "mdt.005",
+          "offset": "0x84000"
+        },
+        {
+          "type": "code",
+          "path": "mdt.006",
+          "offset": "0x88000"
+        },
+        {
+          "type": "code",
+          "path": "mdt.007",
+          "offset": "0x8C000"
+        },
+        {
+          "type": "code",
+          "path": "mdt.008",
+          "offset": "0x90000"
+        },
+        {
+          "type": "code",
+          "path": "mdt.009",
+          "offset": "0x94000"
+        },
+        {
+          "type": "code",
+          "path": "mdt.010",
+          "offset": "0x98000"
+        },
+        {
+          "type": "code",
+          "path": "mdt.011",
+          "offset": "0x9C000"
+        },
+        {
+          "type": "code",
+          "path": "mdt.012",
+          "offset": "0xA0000"
+        },
+        {
+          "type": "code",
+          "path": "mdt.013",
+          "offset": "0xA4000"
+        },
+        {
+          "type": "code",
+          "path": "mdt.014",
+          "offset": "0xA8000"
+        },
+        {
+          "type": "code",
+          "path": "mdt.015",
+          "offset": "0xAC000"
+        },
+        {
+          "type": "code",
+          "path": "mdt.016",
+          "offset": "0xB0000"
+        },
+        {
+          "type": "code",
+          "path": "mdt.017",
+          "offset": "0xB4000"
+        },
+        {
+          "type": "code",
+          "path": "mdt.018",
+          "offset": "0xB8000"
+        },
+        {
+          "type": "code",
+          "path": "mdt.019",
+          "offset": "0xBC000"
+        },
+        {
+          "type": "code",
+          "path": "mdt.020",
+          "offset": "0xC0000"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "fmt68k.mdt : ロードス島への路"
+        },
+        {
+          "kind": "title",
+          "code": "0x102",
+          "title": "intro.mdt  : 序曲『灰色の魔女』"
+        },
+        {
+          "kind": "title",
+          "code": "0x05",
+          "title": "mdt:00     : 街"
+        },
+        {
+          "kind": "title",
+          "code": "0x06",
+          "title": "mdt:01     : 村"
+        },
+        {
+          "kind": "title",
+          "code": "0x07",
+          "title": "mdt:02     : シャイニングトゥリー"
+        },
+        {
+          "kind": "title",
+          "code": "0x08",
+          "title": "mdt:03     : 聖歌"
+        },
+        {
+          "kind": "title",
+          "code": "0x09",
+          "title": "mdt:04     : バザー"
+        },
+        {
+          "kind": "title",
+          "code": "0x0a",
+          "title": "mdt:05     : 安息の宿"
+        },
+        {
+          "kind": "title",
+          "code": "0x0b",
+          "title": "mdt:06     : バトルソング"
+        },
+        {
+          "kind": "title",
+          "code": "0x0c",
+          "title": "mdt:07     : バトルファンファーレ"
+        },
+        {
+          "kind": "title",
+          "code": "0x0d",
+          "title": "mdt:08     : 迷宮伝説"
+        },
+        {
+          "kind": "title",
+          "code": "0x0e",
+          "title": "mdt:09     : 覇王"
+        },
+        {
+          "kind": "title",
+          "code": "0x0f",
+          "title": "mdt:10     : 迷いの路"
+        },
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "mdt:11     : ワンダーランド"
+        },
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "mdt:12     : 吟遊詩人"
+        },
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "mdt:13     : ブラックバトル"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "mdt:14     : 亡き戦士達への哀歌"
+        },
+        {
+          "kind": "title",
+          "code": "0x14",
+          "title": "mdt:15     : ギム"
+        },
+        {
+          "kind": "title",
+          "code": "0x15",
+          "title": "mdt:16     : パーン"
+        },
+        {
+          "kind": "title",
+          "code": "0x16",
+          "title": "mdt:17     : エト"
+        },
+        {
+          "kind": "title",
+          "code": "0x17",
+          "title": "mdt:18     : スレイン"
+        },
+        {
+          "kind": "title",
+          "code": "0x18",
+          "title": "mdt:19     : ディードリット"
+        },
+        {
+          "kind": "title",
+          "code": "0x19",
+          "title": "mdt:20     : ウッド・チャック"
+        },
+        {
+          "kind": "title",
+          "code": "0x03",
+          "title": "s&fin.mdt  : 永遠のロードス (バッドエンディング)"
+        },
+        {
+          "kind": "title",
+          "code": "0x04",
+          "title": "v&fin.mdt  : 永遠のロードス (エンディング)"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/hummingbirdsoft.xml",
+      "source_order": 2575,
+      "archive": "rolw68snd",
+      "id": "rolw68snd-generic"
+    },
+    {
+      "title": "[X68000] ロードス島戦記 福神漬",
+      "driver": {
+        "name": "x68k",
+        "type": "generic",
+        "alias": "Humming Bird Soft",
+        "platform": "SHARP X68000"
+      },
+      "options": [],
+      "assets": [
+        {
+          "type": "code",
+          "path": "lorw68snd.bin",
+          "offset": "0x00000"
+        },
+        {
+          "type": "code",
+          "path": "kmdrv.r",
+          "offset": "0x10000"
+        },
+        {
+          "type": "code",
+          "path": "fuku.sdt",
+          "offset": "0x12000"
+        },
+        {
+          "type": "code",
+          "path": "fuku.pdt",
+          "offset": "0x28000"
+        },
+        {
+          "type": "code",
+          "path": "mdt.000",
+          "offset": "0x60000"
+        },
+        {
+          "type": "code",
+          "path": "mdt.001",
+          "offset": "0x64000"
+        },
+        {
+          "type": "code",
+          "path": "mdt.002",
+          "offset": "0x68000"
+        },
+        {
+          "type": "code",
+          "path": "mdt.003",
+          "offset": "0x6c000"
+        },
+        {
+          "type": "code",
+          "path": "mdt.004",
+          "offset": "0x70000"
+        },
+        {
+          "type": "code",
+          "path": "mdt.005",
+          "offset": "0x74000"
+        },
+        {
+          "type": "code",
+          "path": "mdt.006",
+          "offset": "0x78000"
+        },
+        {
+          "type": "code",
+          "path": "mdt.007",
+          "offset": "0x7C000"
+        },
+        {
+          "type": "code",
+          "path": "mdt.008",
+          "offset": "0x80000"
+        },
+        {
+          "type": "code",
+          "path": "mdt.009",
+          "offset": "0x84000"
+        },
+        {
+          "type": "code",
+          "path": "mdt.010",
+          "offset": "0x88000"
+        },
+        {
+          "type": "code",
+          "path": "mdt.011",
+          "offset": "0x8C000"
+        },
+        {
+          "type": "code",
+          "path": "mdt.012",
+          "offset": "0x90000"
+        },
+        {
+          "type": "code",
+          "path": "mdt.013",
+          "offset": "0x94000"
+        },
+        {
+          "type": "code",
+          "path": "mdt.014",
+          "offset": "0x98000"
+        },
+        {
+          "type": "code",
+          "path": "mdt.015",
+          "offset": "0x9C000"
+        },
+        {
+          "type": "code",
+          "path": "mdt.016",
+          "offset": "0xA0000"
+        },
+        {
+          "type": "code",
+          "path": "mdt.017",
+          "offset": "0xA4000"
+        },
+        {
+          "type": "code",
+          "path": "mdt.018",
+          "offset": "0xA8000"
+        },
+        {
+          "type": "code",
+          "path": "mdt.019",
+          "offset": "0xAC000"
+        },
+        {
+          "type": "code",
+          "path": "mdt.020",
+          "offset": "0xB0000"
+        },
+        {
+          "type": "code",
+          "path": "mdt.021",
+          "offset": "0xB4000"
+        },
+        {
+          "type": "code",
+          "path": "mdt.022",
+          "offset": "0xB8000"
+        },
+        {
+          "type": "code",
+          "path": "mdt.023",
+          "offset": "0xBC000"
+        },
+        {
+          "type": "code",
+          "path": "mdt.024",
+          "offset": "0xC0000"
+        },
+        {
+          "type": "code",
+          "path": "mdt.025",
+          "offset": "0xC4000"
+        },
+        {
+          "type": "code",
+          "path": "mdt.026",
+          "offset": "0xC8000"
+        },
+        {
+          "type": "code",
+          "path": "mdt.027",
+          "offset": "0xCC000"
+        },
+        {
+          "type": "code",
+          "path": "mdt.028",
+          "offset": "0xD0000"
+        },
+        {
+          "type": "code",
+          "path": "mdt.029",
+          "offset": "0xD4000"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x1d",
+          "title": "mdt.dat:28 : タイトル"
+        },
+        {
+          "kind": "title",
+          "code": "0x1a",
+          "title": "mdt.dat:25 : メニュー"
+        },
+        {
+          "kind": "title",
+          "code": "0x1b",
+          "title": "mdt.dat:26 : 16&25パズル"
+        },
+        {
+          "kind": "title",
+          "code": "0x1e",
+          "title": "mdt.dat:29 : 16&25パズル クリア"
+        },
+        {
+          "kind": "title",
+          "code": "0x1c",
+          "title": "mdt.dat:27 : 水野良のQ&A"
+        },
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "mdt.dat:00 : 序曲『灰色の魔女』"
+        },
+        {
+          "kind": "title",
+          "code": "0x02",
+          "title": "mdt.dat:01 : パーン"
+        },
+        {
+          "kind": "title",
+          "code": "0x03",
+          "title": "mdt.dat:02 : ディードリット"
+        },
+        {
+          "kind": "title",
+          "code": "0x04",
+          "title": "mdt.dat:03 : ギム"
+        },
+        {
+          "kind": "title",
+          "code": "0x05",
+          "title": "mdt.dat:04 : ウッド・チャック"
+        },
+        {
+          "kind": "title",
+          "code": "0x06",
+          "title": "mdt.dat:05 : エト"
+        },
+        {
+          "kind": "title",
+          "code": "0x07",
+          "title": "mdt.dat:06 : スレイン"
+        },
+        {
+          "kind": "title",
+          "code": "0x08",
+          "title": "mdt.dat:07 : バトルソング"
+        },
+        {
+          "kind": "title",
+          "code": "0x09",
+          "title": "mdt.dat:08 : バトルファンファーレ"
+        },
+        {
+          "kind": "title",
+          "code": "0x0a",
+          "title": "mdt.dat:09 : 街"
+        },
+        {
+          "kind": "title",
+          "code": "0x0b",
+          "title": "mdt.dat:10 : 村"
+        },
+        {
+          "kind": "title",
+          "code": "0x0c",
+          "title": "mdt.dat:11 : シャイニングトゥリー"
+        },
+        {
+          "kind": "title",
+          "code": "0x0d",
+          "title": "mdt.dat:12 : バザー"
+        },
+        {
+          "kind": "title",
+          "code": "0x0e",
+          "title": "mdt.dat:13 : 安息の宿"
+        },
+        {
+          "kind": "title",
+          "code": "0x0f",
+          "title": "mdt.dat:14 : 聖歌"
+        },
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "mdt.dat:15 : 覇王"
+        },
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "mdt.dat:16 : 吟遊詩人"
+        },
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "mdt.dat:17 : ワンダーランド"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "mdt.dat:18 : 迷いの路"
+        },
+        {
+          "kind": "title",
+          "code": "0x14",
+          "title": "mdt.dat:19 : 迷宮伝説"
+        },
+        {
+          "kind": "title",
+          "code": "0x15",
+          "title": "mdt.dat:20 : 亡き戦士達への哀歌"
+        },
+        {
+          "kind": "title",
+          "code": "0x16",
+          "title": "mdt.dat:21 : ブラックバトル"
+        },
+        {
+          "kind": "title",
+          "code": "0x17",
+          "title": "mdt.dat:22 : 哀しみのニース"
+        },
+        {
+          "kind": "title",
+          "code": "0x18",
+          "title": "mdt.dat:23 : ARRIVE"
+        },
+        {
+          "kind": "title",
+          "code": "0x19",
+          "title": "mdt.dat:24 : ロードス島への路"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/hummingbirdsoft.xml",
+      "source_order": 2576,
+      "archive": "fukujin68snd",
+      "id": "fukujin68snd-generic"
+    },
+    {
+      "title": "[MSX] アグニの石(OPLL)",
+      "driver": {
+        "name": "msx",
+        "type": "generic",
+        "alias": "Humming Bird Soft",
+        "platform": "MSX"
+      },
+      "options": [
+        {
+          "name": "mdata_addr",
+          "value": "0xa800"
+        },
+        {
+          "name": "mdata_size",
+          "value": "0xb00"
+        },
+        {
+          "name": "mfile_size",
+          "value": "0xb00"
+        },
+        {
+          "name": "init_pc",
+          "value": "0x0400"
+        },
+        {
+          "name": "use_opll",
+          "value": "0x01"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "patch",
+          "offset": "0x0400"
+        },
+        {
+          "type": "code",
+          "path": "OPLL.MIN",
+          "offset": "0x9800"
+        },
+        {
+          "type": "bgm",
+          "path": "OP01.BGM",
+          "offset": "0x00"
+        },
+        {
+          "type": "bgm",
+          "path": "OP02.BGM",
+          "offset": "0x01"
+        },
+        {
+          "type": "bgm",
+          "path": "OP03.BGM",
+          "offset": "0x02"
+        },
+        {
+          "type": "bgm",
+          "path": "OP04.BGM",
+          "offset": "0x03"
+        },
+        {
+          "type": "bgm",
+          "path": "OP05.BGM",
+          "offset": "0x04"
+        },
+        {
+          "type": "bgm",
+          "path": "OP06.BGM",
+          "offset": "0x05"
+        },
+        {
+          "type": "bgm",
+          "path": "OP07.BGM",
+          "offset": "0x06"
+        },
+        {
+          "type": "bgm",
+          "path": "OP08.BGM",
+          "offset": "0x07"
+        },
+        {
+          "type": "bgm",
+          "path": "OP09.BGM",
+          "offset": "0x08"
+        },
+        {
+          "type": "bgm",
+          "path": "OP10.BGM",
+          "offset": "0x09"
+        },
+        {
+          "type": "bgm",
+          "path": "OP11.BGM",
+          "offset": "0x0a"
+        },
+        {
+          "type": "bgm",
+          "path": "OP12.BGM",
+          "offset": "0x0b"
+        },
+        {
+          "type": "bgm",
+          "path": "OP13.BGM",
+          "offset": "0x0c"
+        },
+        {
+          "type": "bgm",
+          "path": "OP15.BGM",
+          "offset": "0x0d"
+        },
+        {
+          "type": "bgm",
+          "path": "OP16.BGM",
+          "offset": "0x0e"
+        },
+        {
+          "type": "bgm",
+          "path": "OP17.BGM",
+          "offset": "0x0f"
+        },
+        {
+          "type": "bgm",
+          "path": "OP18.BGM",
+          "offset": "0x10"
+        },
+        {
+          "type": "bgm",
+          "path": "OP19.BGM",
+          "offset": "0x11"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x00",
+          "title": "OP01.BGM : オープニング"
+        },
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "OP02.BGM : ゲーム開始"
+        },
+        {
+          "kind": "title",
+          "code": "0x02",
+          "title": "OP03.BGM : 屋敷"
+        },
+        {
+          "kind": "title",
+          "code": "0x03",
+          "title": "OP04.BGM :"
+        },
+        {
+          "kind": "title",
+          "code": "0x04",
+          "title": "OP05.BGM :"
+        },
+        {
+          "kind": "title",
+          "code": "0x05",
+          "title": "OP06.BGM : 街へ"
+        },
+        {
+          "kind": "title",
+          "code": "0x06",
+          "title": "OP07.BGM : 街"
+        },
+        {
+          "kind": "title",
+          "code": "0x07",
+          "title": "OP08.BGM : BAR"
+        },
+        {
+          "kind": "title",
+          "code": "0x08",
+          "title": "OP09.BGM :"
+        },
+        {
+          "kind": "title",
+          "code": "0x09",
+          "title": "OP10.BGM :"
+        },
+        {
+          "kind": "title",
+          "code": "0x0a",
+          "title": "OP11.BGM :"
+        },
+        {
+          "kind": "title",
+          "code": "0x0b",
+          "title": "OP12.BGM : ゲームオーバー"
+        },
+        {
+          "kind": "title",
+          "code": "0x0c",
+          "title": "OP13.BGM :"
+        },
+        {
+          "kind": "title",
+          "code": "0x0d",
+          "title": "OP15.BGM :"
+        },
+        {
+          "kind": "title",
+          "code": "0x0e",
+          "title": "OP16.BGM :"
+        },
+        {
+          "kind": "title",
+          "code": "0x0f",
+          "title": "OP17.BGM :"
+        },
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "OP18.BGM :"
+        },
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "OP19.BGM :"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/hummingbirdsoft.xml",
+      "source_order": 2577,
+      "archive": "agni_msx",
+      "id": "agni-msx-generic"
+    },
+    {
+      "title": "[MSX] アグニの石(PSG)",
+      "driver": {
+        "name": "msx",
+        "type": "generic",
+        "alias": "Humming Bird Soft",
+        "platform": "MSX"
+      },
+      "options": [
+        {
+          "name": "mdata_addr",
+          "value": "0xa800"
+        },
+        {
+          "name": "mdata_size",
+          "value": "0xb00"
+        },
+        {
+          "name": "mfile_size",
+          "value": "0xb00"
+        },
+        {
+          "name": "init_pc",
+          "value": "0x0400"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "patch",
+          "offset": "0x0400"
+        },
+        {
+          "type": "code",
+          "path": "PSG.MIN",
+          "offset": "0x9800"
+        },
+        {
+          "type": "bgm",
+          "path": "AG01.BGM",
+          "offset": "0x00"
+        },
+        {
+          "type": "bgm",
+          "path": "AG02.BGM",
+          "offset": "0x01"
+        },
+        {
+          "type": "bgm",
+          "path": "AG03.BGM",
+          "offset": "0x02"
+        },
+        {
+          "type": "bgm",
+          "path": "AG04.BGM",
+          "offset": "0x03"
+        },
+        {
+          "type": "bgm",
+          "path": "AG05.BGM",
+          "offset": "0x04"
+        },
+        {
+          "type": "bgm",
+          "path": "AG06.BGM",
+          "offset": "0x05"
+        },
+        {
+          "type": "bgm",
+          "path": "AG07.BGM",
+          "offset": "0x06"
+        },
+        {
+          "type": "bgm",
+          "path": "AG08.BGM",
+          "offset": "0x07"
+        },
+        {
+          "type": "bgm",
+          "path": "AG09.BGM",
+          "offset": "0x08"
+        },
+        {
+          "type": "bgm",
+          "path": "AG10.BGM",
+          "offset": "0x09"
+        },
+        {
+          "type": "bgm",
+          "path": "AG11.BGM",
+          "offset": "0x0a"
+        },
+        {
+          "type": "bgm",
+          "path": "AG12.BGM",
+          "offset": "0x0b"
+        },
+        {
+          "type": "bgm",
+          "path": "AG13.BGM",
+          "offset": "0x0c"
+        },
+        {
+          "type": "bgm",
+          "path": "AG15.BGM",
+          "offset": "0x0d"
+        },
+        {
+          "type": "bgm",
+          "path": "AG16.BGM",
+          "offset": "0x0e"
+        },
+        {
+          "type": "bgm",
+          "path": "AG17.BGM",
+          "offset": "0x0f"
+        },
+        {
+          "type": "bgm",
+          "path": "AG18.BGM",
+          "offset": "0x10"
+        },
+        {
+          "type": "bgm",
+          "path": "AG19.BGM",
+          "offset": "0x11"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x00",
+          "title": "AG01.BGM : オープニング"
+        },
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "AG02.BGM : ゲーム開始"
+        },
+        {
+          "kind": "title",
+          "code": "0x02",
+          "title": "AG03.BGM : 屋敷"
+        },
+        {
+          "kind": "title",
+          "code": "0x03",
+          "title": "AG04.BGM :"
+        },
+        {
+          "kind": "title",
+          "code": "0x04",
+          "title": "AG05.BGM :"
+        },
+        {
+          "kind": "title",
+          "code": "0x05",
+          "title": "AG06.BGM : 街へ"
+        },
+        {
+          "kind": "title",
+          "code": "0x06",
+          "title": "AG07.BGM : 街"
+        },
+        {
+          "kind": "title",
+          "code": "0x07",
+          "title": "AG08.BGM : BAR"
+        },
+        {
+          "kind": "title",
+          "code": "0x08",
+          "title": "AG09.BGM :"
+        },
+        {
+          "kind": "title",
+          "code": "0x09",
+          "title": "AG10.BGM :"
+        },
+        {
+          "kind": "title",
+          "code": "0x0a",
+          "title": "AG11.BGM :"
+        },
+        {
+          "kind": "title",
+          "code": "0x0b",
+          "title": "AG12.BGM : ゲームオーバー"
+        },
+        {
+          "kind": "title",
+          "code": "0x0c",
+          "title": "AG13.BGM :"
+        },
+        {
+          "kind": "title",
+          "code": "0x0d",
+          "title": "AG15.BGM :"
+        },
+        {
+          "kind": "title",
+          "code": "0x0e",
+          "title": "AG16.BGM :"
+        },
+        {
+          "kind": "title",
+          "code": "0x0f",
+          "title": "AG17.BGM :"
+        },
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "AG18.BGM :"
+        },
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "AG19.BGM :"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/hummingbirdsoft.xml",
+      "source_order": 2578,
+      "archive": "agni_msx",
+      "id": "agni-msx-generic-2"
+    },
+    {
+      "title": "[MSX] ロードス島戦記 -灰色の魔女-(OPLL)",
+      "driver": {
+        "name": "msx",
+        "type": "generic",
+        "alias": "Humming Bird Soft",
+        "platform": "MSX"
+      },
+      "options": [
+        {
+          "name": "mdata_addr",
+          "value": "0xa400"
+        },
+        {
+          "name": "mdata_size",
+          "value": "0x2000"
+        },
+        {
+          "name": "mfile_size",
+          "value": "0x2000"
+        },
+        {
+          "name": "init_pc",
+          "value": "0x0400"
+        },
+        {
+          "name": "use_opll",
+          "value": "0x01"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "patch",
+          "offset": "0x0400"
+        },
+        {
+          "type": "code",
+          "path": "FMPAC.ROM",
+          "offset": "0x4000"
+        },
+        {
+          "type": "code",
+          "path": "DRIVER.BIN",
+          "offset": "0x8000"
+        },
+        {
+          "type": "bgm",
+          "path": "FG100.BIN",
+          "offset": "0x00"
+        },
+        {
+          "type": "bgm",
+          "path": "FG101.BIN",
+          "offset": "0x01"
+        },
+        {
+          "type": "bgm",
+          "path": "FG102.BIN",
+          "offset": "0x02"
+        },
+        {
+          "type": "bgm",
+          "path": "FG103.BIN",
+          "offset": "0x03"
+        },
+        {
+          "type": "bgm",
+          "path": "FG104.BIN",
+          "offset": "0x04"
+        },
+        {
+          "type": "bgm",
+          "path": "FG105.BIN",
+          "offset": "0x05"
+        },
+        {
+          "type": "bgm",
+          "path": "FG106.BIN",
+          "offset": "0x06"
+        },
+        {
+          "type": "bgm",
+          "path": "FG107.BIN",
+          "offset": "0x07"
+        },
+        {
+          "type": "bgm",
+          "path": "FG108.BIN",
+          "offset": "0x08"
+        },
+        {
+          "type": "bgm",
+          "path": "FG109.BIN",
+          "offset": "0x09"
+        },
+        {
+          "type": "bgm",
+          "path": "FG10A.BIN",
+          "offset": "0x0a"
+        },
+        {
+          "type": "bgm",
+          "path": "FG10B.BIN",
+          "offset": "0x0b"
+        },
+        {
+          "type": "bgm",
+          "path": "FG10C.BIN",
+          "offset": "0x0c"
+        },
+        {
+          "type": "bgm",
+          "path": "FG10D.BIN",
+          "offset": "0x0d"
+        },
+        {
+          "type": "bgm",
+          "path": "FG10E.BIN",
+          "offset": "0x0e"
+        },
+        {
+          "type": "bgm",
+          "path": "FG200.BIN",
+          "offset": "0x0f"
+        },
+        {
+          "type": "bgm",
+          "path": "FG201.BIN",
+          "offset": "0x10"
+        },
+        {
+          "type": "bgm",
+          "path": "FG202.BIN",
+          "offset": "0x11"
+        },
+        {
+          "type": "bgm",
+          "path": "FG203.BIN",
+          "offset": "0x12"
+        },
+        {
+          "type": "bgm",
+          "path": "FG204.BIN",
+          "offset": "0x13"
+        },
+        {
+          "type": "bgm",
+          "path": "FG300.BIN",
+          "offset": "0x14"
+        },
+        {
+          "type": "bgm",
+          "path": "FG301.BIN",
+          "offset": "0x15"
+        },
+        {
+          "type": "bgm",
+          "path": "FG302.BIN",
+          "offset": "0x16"
+        },
+        {
+          "type": "bgm",
+          "path": "FG303.BIN",
+          "offset": "0x17"
+        },
+        {
+          "type": "bgm",
+          "path": "FG304.BIN",
+          "offset": "0x18"
+        },
+        {
+          "type": "bgm",
+          "path": "FG305.BIN",
+          "offset": "0x19"
+        },
+        {
+          "type": "bgm",
+          "path": "FOP00.BIN",
+          "offset": "0x1a"
+        },
+        {
+          "type": "bgm",
+          "path": "FOP01.BIN",
+          "offset": "0x1b"
+        },
+        {
+          "type": "bgm",
+          "path": "FOP02.BIN",
+          "offset": "0x1c"
+        },
+        {
+          "type": "bgm",
+          "path": "FOP03.BIN",
+          "offset": "0x1d"
+        },
+        {
+          "type": "bgm",
+          "path": "FOP04.BIN",
+          "offset": "0x1e"
+        },
+        {
+          "type": "bgm",
+          "path": "FOP05.BIN",
+          "offset": "0x1f"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x1b",
+          "title": "序曲『灰色の魔女』"
+        },
+        {
+          "kind": "title",
+          "code": "0x0f",
+          "title": "ワンダーランド"
+        },
+        {
+          "kind": "title",
+          "code": "0x17",
+          "title": "迷宮伝説"
+        },
+        {
+          "kind": "title",
+          "code": "0x18",
+          "title": "迷いの路"
+        },
+        {
+          "kind": "title",
+          "code": "0x00",
+          "title": "街"
+        },
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "村"
+        },
+        {
+          "kind": "title",
+          "code": "0x0a",
+          "title": "ブラックバトル"
+        },
+        {
+          "kind": "comment",
+          "text": "\n\t\t\t<title code=\"0x10\">ブラックバトル</title>\n\t\t\t<title code=\"0x14\">ブラックバトル</title>\n\t\t\t  "
+        },
+        {
+          "kind": "title",
+          "code": "0x0b",
+          "title": "バトルソング"
+        },
+        {
+          "kind": "comment",
+          "text": "\n\t\t\t<title code=\"0x11\">バトルソング</title>\n\t\t\t<title code=\"0x15\">バトルソング</title>\n\t\t\t  "
+        },
+        {
+          "kind": "title",
+          "code": "0x0c",
+          "title": "バトルファンファーレ"
+        },
+        {
+          "kind": "comment",
+          "text": "\n\t\t\t<title code=\"0x12\">バトルファンファーレ</title>\n\t\t\t<title code=\"0x16\">バトルファンファーレ</title>\n\t\t\t  "
+        },
+        {
+          "kind": "title",
+          "code": "0x0e",
+          "title": "亡き戦士達への哀歌"
+        },
+        {
+          "kind": "comment",
+          "text": "\n\t\t\t<title code=\"0x13\">亡き戦士達への哀歌</title>\n\t\t\t<title code=\"0x19\">亡き戦士達への哀歌</title>\n\t\t\t<title code=\"0x1f\">亡き戦士達への哀歌</title>\n\t\t\t  "
+        },
+        {
+          "kind": "title",
+          "code": "0x0d",
+          "title": "吟遊詩人"
+        },
+        {
+          "kind": "title",
+          "code": "0x02",
+          "title": "覇王"
+        },
+        {
+          "kind": "title",
+          "code": "0x03",
+          "title": "シャイニングトゥリー"
+        },
+        {
+          "kind": "title",
+          "code": "0x04",
+          "title": "ギム"
+        },
+        {
+          "kind": "title",
+          "code": "0x05",
+          "title": "スレイン"
+        },
+        {
+          "kind": "title",
+          "code": "0x06",
+          "title": "パーン"
+        },
+        {
+          "kind": "title",
+          "code": "0x07",
+          "title": "エト"
+        },
+        {
+          "kind": "title",
+          "code": "0x08",
+          "title": "ディードリット"
+        },
+        {
+          "kind": "title",
+          "code": "0x09",
+          "title": "ウッド・チャック"
+        },
+        {
+          "kind": "title",
+          "code": "0x1d",
+          "title": "永遠のロードス (バッドエンディング)"
+        },
+        {
+          "kind": "title",
+          "code": "0x1e",
+          "title": "永遠のロードス (エンディング)"
+        },
+        {
+          "kind": "title",
+          "code": "0x1c",
+          "title": "(スタッフロール)"
+        },
+        {
+          "kind": "title",
+          "code": "0x1a",
+          "title": "BGM OP 00"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/hummingbirdsoft.xml",
+      "source_order": 2579,
+      "archive": "rolw1_msx,fmpac_msx",
+      "id": "rolw1-msx-fmpac-msx-generic"
+    },
+    {
+      "title": "[MSX] ロードス島戦記 -灰色の魔女-(PSG)",
+      "driver": {
+        "name": "msx",
+        "type": "generic",
+        "alias": "Humming Bird Soft",
+        "platform": "MSX"
+      },
+      "options": [
+        {
+          "name": "mdata_addr",
+          "value": "0xa400"
+        },
+        {
+          "name": "mdata_size",
+          "value": "0x1800"
+        },
+        {
+          "name": "mfile_size",
+          "value": "0x1800"
+        },
+        {
+          "name": "init_pc",
+          "value": "0x0400"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "patch",
+          "offset": "0x0400"
+        },
+        {
+          "type": "code",
+          "path": "DRIVER.BIN",
+          "offset": "0x8000"
+        },
+        {
+          "type": "bgm",
+          "path": "FG100.BIN",
+          "offset": "0x00"
+        },
+        {
+          "type": "bgm",
+          "path": "FG101.BIN",
+          "offset": "0x01"
+        },
+        {
+          "type": "bgm",
+          "path": "FG102.BIN",
+          "offset": "0x02"
+        },
+        {
+          "type": "bgm",
+          "path": "FG103.BIN",
+          "offset": "0x03"
+        },
+        {
+          "type": "bgm",
+          "path": "FG104.BIN",
+          "offset": "0x04"
+        },
+        {
+          "type": "bgm",
+          "path": "FG105.BIN",
+          "offset": "0x05"
+        },
+        {
+          "type": "bgm",
+          "path": "FG106.BIN",
+          "offset": "0x06"
+        },
+        {
+          "type": "bgm",
+          "path": "FG107.BIN",
+          "offset": "0x07"
+        },
+        {
+          "type": "bgm",
+          "path": "FG108.BIN",
+          "offset": "0x08"
+        },
+        {
+          "type": "bgm",
+          "path": "FG109.BIN",
+          "offset": "0x09"
+        },
+        {
+          "type": "bgm",
+          "path": "FG10A.BIN",
+          "offset": "0x0a"
+        },
+        {
+          "type": "bgm",
+          "path": "FG10B.BIN",
+          "offset": "0x0b"
+        },
+        {
+          "type": "bgm",
+          "path": "FG10C.BIN",
+          "offset": "0x0c"
+        },
+        {
+          "type": "bgm",
+          "path": "FG10D.BIN",
+          "offset": "0x0d"
+        },
+        {
+          "type": "bgm",
+          "path": "FG10E.BIN",
+          "offset": "0x0e"
+        },
+        {
+          "type": "bgm",
+          "path": "FG200.BIN",
+          "offset": "0x0f"
+        },
+        {
+          "type": "bgm",
+          "path": "FG201.BIN",
+          "offset": "0x10"
+        },
+        {
+          "type": "bgm",
+          "path": "FG202.BIN",
+          "offset": "0x11"
+        },
+        {
+          "type": "bgm",
+          "path": "FG203.BIN",
+          "offset": "0x12"
+        },
+        {
+          "type": "bgm",
+          "path": "FG204.BIN",
+          "offset": "0x13"
+        },
+        {
+          "type": "bgm",
+          "path": "FG300.BIN",
+          "offset": "0x14"
+        },
+        {
+          "type": "bgm",
+          "path": "FG301.BIN",
+          "offset": "0x15"
+        },
+        {
+          "type": "bgm",
+          "path": "FG302.BIN",
+          "offset": "0x16"
+        },
+        {
+          "type": "bgm",
+          "path": "FG303.BIN",
+          "offset": "0x17"
+        },
+        {
+          "type": "bgm",
+          "path": "FG304.BIN",
+          "offset": "0x18"
+        },
+        {
+          "type": "bgm",
+          "path": "FG305.BIN",
+          "offset": "0x19"
+        },
+        {
+          "type": "bgm",
+          "path": "FOP00.BIN",
+          "offset": "0x1a"
+        },
+        {
+          "type": "bgm",
+          "path": "POP01.BIN",
+          "offset": "0x1b"
+        },
+        {
+          "type": "bgm",
+          "path": "POP02.BIN",
+          "offset": "0x1c"
+        },
+        {
+          "type": "bgm",
+          "path": "FOP03.BIN",
+          "offset": "0x1d"
+        },
+        {
+          "type": "bgm",
+          "path": "FOP04.BIN",
+          "offset": "0x1e"
+        },
+        {
+          "type": "bgm",
+          "path": "FOP05.BIN",
+          "offset": "0x1f"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x1b",
+          "title": "序曲『灰色の魔女』"
+        },
+        {
+          "kind": "title",
+          "code": "0x0f",
+          "title": "ワンダーランド"
+        },
+        {
+          "kind": "title",
+          "code": "0x17",
+          "title": "迷宮伝説"
+        },
+        {
+          "kind": "title",
+          "code": "0x18",
+          "title": "迷いの路"
+        },
+        {
+          "kind": "title",
+          "code": "0x00",
+          "title": "街"
+        },
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "村"
+        },
+        {
+          "kind": "title",
+          "code": "0x0a",
+          "title": "ブラックバトル"
+        },
+        {
+          "kind": "comment",
+          "text": "\n\t\t\t<title code=\"0x10\">ブラックバトル</title>\n\t\t\t<title code=\"0x14\">ブラックバトル</title>\n\t\t\t  "
+        },
+        {
+          "kind": "title",
+          "code": "0x0b",
+          "title": "バトルソング"
+        },
+        {
+          "kind": "comment",
+          "text": "\n\t\t\t<title code=\"0x11\">バトルソング</title>\n\t\t\t<title code=\"0x15\">バトルソング</title>\n\t\t\t  "
+        },
+        {
+          "kind": "title",
+          "code": "0x0c",
+          "title": "バトルファンファーレ"
+        },
+        {
+          "kind": "comment",
+          "text": "\n\t\t\t<title code=\"0x12\">バトルファンファーレ</title>\n\t\t\t<title code=\"0x16\">バトルファンファーレ</title>\n\t\t\t  "
+        },
+        {
+          "kind": "title",
+          "code": "0x0e",
+          "title": "亡き戦士達への哀歌"
+        },
+        {
+          "kind": "comment",
+          "text": "\n\t\t\t<title code=\"0x13\">亡き戦士達への哀歌</title>\n\t\t\t<title code=\"0x19\">亡き戦士達への哀歌</title>\n\t\t\t<title code=\"0x1f\">亡き戦士達への哀歌</title>\n\t\t\t  "
+        },
+        {
+          "kind": "title",
+          "code": "0x0d",
+          "title": "吟遊詩人"
+        },
+        {
+          "kind": "title",
+          "code": "0x02",
+          "title": "覇王"
+        },
+        {
+          "kind": "title",
+          "code": "0x03",
+          "title": "シャイニングトゥリー"
+        },
+        {
+          "kind": "title",
+          "code": "0x04",
+          "title": "ギム"
+        },
+        {
+          "kind": "title",
+          "code": "0x05",
+          "title": "スレイン"
+        },
+        {
+          "kind": "title",
+          "code": "0x06",
+          "title": "パーン"
+        },
+        {
+          "kind": "title",
+          "code": "0x07",
+          "title": "エト"
+        },
+        {
+          "kind": "title",
+          "code": "0x08",
+          "title": "ディードリット"
+        },
+        {
+          "kind": "title",
+          "code": "0x09",
+          "title": "ウッド・チャック"
+        },
+        {
+          "kind": "title",
+          "code": "0x1d",
+          "title": "永遠のロードス (バッドエンディング)"
+        },
+        {
+          "kind": "title",
+          "code": "0x1e",
+          "title": "永遠のロードス (エンディング)"
+        },
+        {
+          "kind": "title",
+          "code": "0x1c",
+          "title": "(スタッフロール)"
+        },
+        {
+          "kind": "title",
+          "code": "0x1a",
+          "title": "BGM OP 00"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/hummingbirdsoft.xml",
+      "source_order": 2580,
+      "archive": "rolw1_msx",
+      "id": "rolw1-msx-generic"
+    },
+    {
+      "title": "[MSX] ロードス島戦記 福神漬(OPLL)",
+      "driver": {
+        "name": "msx",
+        "type": "generic",
+        "alias": "Humming Bird Soft",
+        "platform": "MSX"
+      },
+      "options": [
+        {
+          "name": "mdata_addr",
+          "value": "0xb000"
+        },
+        {
+          "name": "mdata_size",
+          "value": "0x2000"
+        },
+        {
+          "name": "mfile_size",
+          "value": "0x2000"
+        },
+        {
+          "name": "init_pc",
+          "value": "0x0400"
+        },
+        {
+          "name": "use_opll",
+          "value": "0x01"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "patch",
+          "offset": "0x0400"
+        },
+        {
+          "type": "code",
+          "path": "FMPAC.ROM",
+          "offset": "0x4000"
+        },
+        {
+          "type": "code",
+          "path": "DRIVER.BIN",
+          "offset": "0x8000"
+        },
+        {
+          "type": "bgm",
+          "path": "FM00.BIN",
+          "offset": "0x00"
+        },
+        {
+          "type": "bgm",
+          "path": "FM01.BIN",
+          "offset": "0x01"
+        },
+        {
+          "type": "bgm",
+          "path": "FM02.BIN",
+          "offset": "0x02"
+        },
+        {
+          "type": "bgm",
+          "path": "FM03.BIN",
+          "offset": "0x03"
+        },
+        {
+          "type": "bgm",
+          "path": "FM04.BIN",
+          "offset": "0x04"
+        },
+        {
+          "type": "bgm",
+          "path": "FM05.BIN",
+          "offset": "0x05"
+        },
+        {
+          "type": "bgm",
+          "path": "FM06.BIN",
+          "offset": "0x06"
+        },
+        {
+          "type": "bgm",
+          "path": "FM07.BIN",
+          "offset": "0x07"
+        },
+        {
+          "type": "bgm",
+          "path": "FM08.BIN",
+          "offset": "0x08"
+        },
+        {
+          "type": "bgm",
+          "path": "FM09.BIN",
+          "offset": "0x09"
+        },
+        {
+          "type": "bgm",
+          "path": "FM0A.BIN",
+          "offset": "0x0a"
+        },
+        {
+          "type": "bgm",
+          "path": "FM0B.BIN",
+          "offset": "0x0b"
+        },
+        {
+          "type": "bgm",
+          "path": "FM0C.BIN",
+          "offset": "0x0c"
+        },
+        {
+          "type": "bgm",
+          "path": "FM0D.BIN",
+          "offset": "0x0d"
+        },
+        {
+          "type": "bgm",
+          "path": "FM0E.BIN",
+          "offset": "0x0e"
+        },
+        {
+          "type": "bgm",
+          "path": "FM0F.BIN",
+          "offset": "0x0f"
+        },
+        {
+          "type": "bgm",
+          "path": "FM10.BIN",
+          "offset": "0x10"
+        },
+        {
+          "type": "bgm",
+          "path": "FM11.BIN",
+          "offset": "0x11"
+        },
+        {
+          "type": "bgm",
+          "path": "FM12.BIN",
+          "offset": "0x12"
+        },
+        {
+          "type": "bgm",
+          "path": "FM13.BIN",
+          "offset": "0x13"
+        },
+        {
+          "type": "bgm",
+          "path": "FM14.BIN",
+          "offset": "0x14"
+        },
+        {
+          "type": "bgm",
+          "path": "FM15.BIN",
+          "offset": "0x15"
+        },
+        {
+          "type": "bgm",
+          "path": "FM16.BIN",
+          "offset": "0x16"
+        },
+        {
+          "type": "bgm",
+          "path": "FM17.BIN",
+          "offset": "0x17"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x0000",
+          "title": "タイトル"
+        },
+        {
+          "kind": "title",
+          "code": "0x0001",
+          "title": "メニュー"
+        },
+        {
+          "kind": "title",
+          "code": "0x0002",
+          "title": "16&25パズル"
+        },
+        {
+          "kind": "title",
+          "code": "0x0104",
+          "title": "16&25パズル クリア"
+        },
+        {
+          "kind": "title",
+          "code": "0x0003",
+          "title": "水野良のQ&A"
+        },
+        {
+          "kind": "title",
+          "code": "0x0005",
+          "title": "序曲『灰色の魔女』"
+        },
+        {
+          "kind": "title",
+          "code": "0x0006",
+          "title": "街"
+        },
+        {
+          "kind": "title",
+          "code": "0x0007",
+          "title": "村"
+        },
+        {
+          "kind": "title",
+          "code": "0x0008",
+          "title": "覇王"
+        },
+        {
+          "kind": "title",
+          "code": "0x0009",
+          "title": "シャイニングトゥリー"
+        },
+        {
+          "kind": "title",
+          "code": "0x000a",
+          "title": "ギム"
+        },
+        {
+          "kind": "title",
+          "code": "0x000b",
+          "title": "スレイン"
+        },
+        {
+          "kind": "title",
+          "code": "0x000c",
+          "title": "パーン"
+        },
+        {
+          "kind": "title",
+          "code": "0x000d",
+          "title": "エト"
+        },
+        {
+          "kind": "title",
+          "code": "0x000e",
+          "title": "ディードリット"
+        },
+        {
+          "kind": "title",
+          "code": "0x000f",
+          "title": "ウッド・チャック"
+        },
+        {
+          "kind": "title",
+          "code": "0x0010",
+          "title": "ワンダーランド"
+        },
+        {
+          "kind": "title",
+          "code": "0x0011",
+          "title": "ブラックバトル"
+        },
+        {
+          "kind": "title",
+          "code": "0x0012",
+          "title": "バトルソング"
+        },
+        {
+          "kind": "title",
+          "code": "0x0013",
+          "title": "バトルファンファーレ"
+        },
+        {
+          "kind": "title",
+          "code": "0x0014",
+          "title": "迷宮伝説"
+        },
+        {
+          "kind": "title",
+          "code": "0x0015",
+          "title": "迷いの路"
+        },
+        {
+          "kind": "title",
+          "code": "0x0016",
+          "title": "吟遊詩人"
+        },
+        {
+          "kind": "title",
+          "code": "0x0017",
+          "title": "亡き戦士達への哀歌"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/hummingbirdsoft.xml",
+      "source_order": 2581,
+      "archive": "fukujin1_msx,fmpac_msx",
+      "id": "fukujin1-msx-fmpac-msx-generic"
+    },
+    {
+      "title": "[MSX] ロードス島戦記 福神漬(PSG)",
+      "driver": {
+        "name": "msx",
+        "type": "generic",
+        "alias": "Humming Bird Soft",
+        "platform": "MSX"
+      },
+      "options": [
+        {
+          "name": "mdata_addr",
+          "value": "0xb000"
+        },
+        {
+          "name": "mdata_size",
+          "value": "0x2000"
+        },
+        {
+          "name": "mfile_size",
+          "value": "0x2000"
+        },
+        {
+          "name": "init_pc",
+          "value": "0x0400"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "patch",
+          "offset": "0x0400"
+        },
+        {
+          "type": "code",
+          "path": "DRIVER.BIN",
+          "offset": "0x8000"
+        },
+        {
+          "type": "bgm",
+          "path": "FM00.BIN",
+          "offset": "0x00"
+        },
+        {
+          "type": "bgm",
+          "path": "FM01.BIN",
+          "offset": "0x01"
+        },
+        {
+          "type": "bgm",
+          "path": "FM02.BIN",
+          "offset": "0x02"
+        },
+        {
+          "type": "bgm",
+          "path": "FM03.BIN",
+          "offset": "0x03"
+        },
+        {
+          "type": "bgm",
+          "path": "FM04.BIN",
+          "offset": "0x04"
+        },
+        {
+          "type": "bgm",
+          "path": "PS05.BIN",
+          "offset": "0x05"
+        },
+        {
+          "type": "bgm",
+          "path": "FM06.BIN",
+          "offset": "0x06"
+        },
+        {
+          "type": "bgm",
+          "path": "FM07.BIN",
+          "offset": "0x07"
+        },
+        {
+          "type": "bgm",
+          "path": "FM08.BIN",
+          "offset": "0x08"
+        },
+        {
+          "type": "bgm",
+          "path": "FM09.BIN",
+          "offset": "0x09"
+        },
+        {
+          "type": "bgm",
+          "path": "FM0A.BIN",
+          "offset": "0x0a"
+        },
+        {
+          "type": "bgm",
+          "path": "FM0B.BIN",
+          "offset": "0x0b"
+        },
+        {
+          "type": "bgm",
+          "path": "FM0C.BIN",
+          "offset": "0x0c"
+        },
+        {
+          "type": "bgm",
+          "path": "FM0D.BIN",
+          "offset": "0x0d"
+        },
+        {
+          "type": "bgm",
+          "path": "FM0E.BIN",
+          "offset": "0x0e"
+        },
+        {
+          "type": "bgm",
+          "path": "FM0F.BIN",
+          "offset": "0x0f"
+        },
+        {
+          "type": "bgm",
+          "path": "FM10.BIN",
+          "offset": "0x10"
+        },
+        {
+          "type": "bgm",
+          "path": "FM11.BIN",
+          "offset": "0x11"
+        },
+        {
+          "type": "bgm",
+          "path": "FM12.BIN",
+          "offset": "0x12"
+        },
+        {
+          "type": "bgm",
+          "path": "FM13.BIN",
+          "offset": "0x13"
+        },
+        {
+          "type": "bgm",
+          "path": "FM14.BIN",
+          "offset": "0x14"
+        },
+        {
+          "type": "bgm",
+          "path": "FM15.BIN",
+          "offset": "0x15"
+        },
+        {
+          "type": "bgm",
+          "path": "FM16.BIN",
+          "offset": "0x16"
+        },
+        {
+          "type": "bgm",
+          "path": "FM17.BIN",
+          "offset": "0x17"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x0000",
+          "title": "タイトル"
+        },
+        {
+          "kind": "title",
+          "code": "0x0001",
+          "title": "メニュー"
+        },
+        {
+          "kind": "title",
+          "code": "0x0002",
+          "title": "16&25パズル"
+        },
+        {
+          "kind": "title",
+          "code": "0x0003",
+          "title": "水野良のQ&A"
+        },
+        {
+          "kind": "title",
+          "code": "0x0104",
+          "title": "16&25パズル クリア"
+        },
+        {
+          "kind": "title",
+          "code": "0x0005",
+          "title": "序曲『灰色の魔女』"
+        },
+        {
+          "kind": "title",
+          "code": "0x0006",
+          "title": "街"
+        },
+        {
+          "kind": "title",
+          "code": "0x0007",
+          "title": "村"
+        },
+        {
+          "kind": "title",
+          "code": "0x0008",
+          "title": "覇王"
+        },
+        {
+          "kind": "title",
+          "code": "0x0009",
+          "title": "シャイニングトゥリー"
+        },
+        {
+          "kind": "title",
+          "code": "0x000a",
+          "title": "ギム"
+        },
+        {
+          "kind": "title",
+          "code": "0x000b",
+          "title": "スレイン"
+        },
+        {
+          "kind": "title",
+          "code": "0x000c",
+          "title": "パーン"
+        },
+        {
+          "kind": "title",
+          "code": "0x000d",
+          "title": "エト"
+        },
+        {
+          "kind": "title",
+          "code": "0x000e",
+          "title": "ディードリット"
+        },
+        {
+          "kind": "title",
+          "code": "0x000f",
+          "title": "ウッド・チャック"
+        },
+        {
+          "kind": "title",
+          "code": "0x0010",
+          "title": "ワンダーランド"
+        },
+        {
+          "kind": "title",
+          "code": "0x0011",
+          "title": "ブラックバトル"
+        },
+        {
+          "kind": "title",
+          "code": "0x0012",
+          "title": "バトルソング"
+        },
+        {
+          "kind": "title",
+          "code": "0x0013",
+          "title": "バトルファンファーレ"
+        },
+        {
+          "kind": "title",
+          "code": "0x0014",
+          "title": "迷宮伝説"
+        },
+        {
+          "kind": "title",
+          "code": "0x0015",
+          "title": "迷いの路"
+        },
+        {
+          "kind": "title",
+          "code": "0x0016",
+          "title": "吟遊詩人"
+        },
+        {
+          "kind": "title",
+          "code": "0x0017",
+          "title": "亡き戦士達への哀歌"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/hummingbirdsoft.xml",
+      "source_order": 2582,
+      "archive": "fukujin1_msx",
+      "id": "fukujin1-msx-generic"
+    },
+    {
+      "title": "[MSX] ラプラスの魔(OPLL)",
+      "driver": {
+        "name": "msx",
+        "type": "generic",
+        "alias": "Humming Bird Soft",
+        "platform": "MSX"
+      },
+      "options": [
+        {
+          "name": "mdata_addr",
+          "value": "0xa000"
+        },
+        {
+          "name": "mdata_size",
+          "value": "0x1000"
+        },
+        {
+          "name": "mfile_size",
+          "value": "0x1000"
+        },
+        {
+          "name": "init_pc",
+          "value": "0x0400"
+        },
+        {
+          "name": "use_opll",
+          "value": "0x01"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "patch",
+          "offset": "0x0400"
+        },
+        {
+          "type": "code",
+          "path": "FMPAC.ROM",
+          "offset": "0x4000"
+        },
+        {
+          "type": "code",
+          "path": "S0",
+          "offset": "0xbe00"
+        },
+        {
+          "type": "bgm",
+          "path": "M1",
+          "offset": "0x00"
+        },
+        {
+          "type": "bgm",
+          "path": "M10",
+          "offset": "0x01"
+        },
+        {
+          "type": "bgm",
+          "path": "M11",
+          "offset": "0x02"
+        },
+        {
+          "type": "bgm",
+          "path": "M13B",
+          "offset": "0x03"
+        },
+        {
+          "type": "bgm",
+          "path": "M14A",
+          "offset": "0x04"
+        },
+        {
+          "type": "bgm",
+          "path": "M14B",
+          "offset": "0x05"
+        },
+        {
+          "type": "bgm",
+          "path": "M16",
+          "offset": "0x06"
+        },
+        {
+          "type": "bgm",
+          "path": "M18_",
+          "offset": "0x07"
+        },
+        {
+          "type": "bgm",
+          "path": "M3",
+          "offset": "0x08"
+        },
+        {
+          "type": "bgm",
+          "path": "M4",
+          "offset": "0x09"
+        },
+        {
+          "type": "bgm",
+          "path": "M5_",
+          "offset": "0x0a"
+        },
+        {
+          "type": "bgm",
+          "path": "M6",
+          "offset": "0x0b"
+        },
+        {
+          "type": "bgm",
+          "path": "M7",
+          "offset": "0x0c"
+        },
+        {
+          "type": "bgm",
+          "path": "M8_",
+          "offset": "0x0d"
+        },
+        {
+          "type": "bgm",
+          "path": "M9_",
+          "offset": "0x0e"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x008000",
+          "title": "M1   : イントロダクション"
+        },
+        {
+          "kind": "title",
+          "code": "0x00ff00",
+          "title": "M1   : ラプラスのテーマ ～旅立つ勇者～ (オープニング)"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000b",
+          "title": "M6   : 想い出のニューカム              (ホテル)"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000c",
+          "title": "M7   : ニューカムの街                  (街)"
+        },
+        {
+          "kind": "title",
+          "code": "0x000009",
+          "title": "M4   : Pub Time Song                   (酒場)"
+        },
+        {
+          "kind": "title",
+          "code": "0x01800a",
+          "title": "M5_  : 復活のクロス                    (教会)"
+        },
+        {
+          "kind": "title",
+          "code": "0x000004",
+          "title": "M14A : ゴースト ハンター               (戦闘)"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000d",
+          "title": "M8_  : 幽霊屋敷                        (ウェザートップの館 地上)"
+        },
+        {
+          "kind": "title",
+          "code": "0x00020d",
+          "title": "M8_  : 鐘"
+        },
+        {
+          "kind": "title",
+          "code": "0x00030d",
+          "title": "M8_  : ピアノ"
+        },
+        {
+          "kind": "title",
+          "code": "0x00040d",
+          "title": "M8_  : 不気味な地下                    (ウェザートップの館 地下)"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000e",
+          "title": "M9_  : 魔城                            (ラプラス城)"
+        },
+        {
+          "kind": "title",
+          "code": "0x02810e",
+          "title": "M9_  : 幽霊舞踏会                      (舞踏する幽霊)"
+        },
+        {
+          "kind": "title",
+          "code": "0x000006",
+          "title": "M16  : 恐怖の回廊                      (ラプラス城地下)"
+        },
+        {
+          "kind": "title",
+          "code": "0x000005",
+          "title": "M14B : 哀しき勇者                      (死人との戦闘)"
+        },
+        {
+          "kind": "title",
+          "code": "0x000002",
+          "title": "M11  : 揺れる小舟                      (ラプラス城３階 湖)"
+        },
+        {
+          "kind": "title",
+          "code": "0x000001",
+          "title": "M10  : 南国の光                        (ラプラス城３階 ジャングル)"
+        },
+        {
+          "kind": "title",
+          "code": "0x000003",
+          "title": "M13B : バトル ウィズ ハスター          (最終ボス)"
+        },
+        {
+          "kind": "title",
+          "code": "0x008008",
+          "title": "M3   : 奈落の叫び                      (ゲームオーバー)"
+        },
+        {
+          "kind": "title",
+          "code": "0x000007",
+          "title": "M18_ :                                 (エンディング)"
+        },
+        {
+          "kind": "title",
+          "code": "0x000507",
+          "title": "M18_ : 明日への誓い                    (エンディング)"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/hummingbirdsoft.xml",
+      "source_order": 2583,
+      "archive": "laplace_msx,fmpac_msx",
+      "id": "laplace-msx-fmpac-msx-generic"
+    },
+    {
+      "title": "[MSX] ラプラスの魔(PSG)",
+      "driver": {
+        "name": "msx",
+        "type": "generic",
+        "alias": "Humming Bird Soft",
+        "platform": "MSX"
+      },
+      "options": [
+        {
+          "name": "mdata_addr",
+          "value": "0xa000"
+        },
+        {
+          "name": "mdata_size",
+          "value": "0xc00"
+        },
+        {
+          "name": "mfile_size",
+          "value": "0xc00"
+        },
+        {
+          "name": "init_pc",
+          "value": "0x0400"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "patch2",
+          "offset": "0x0400"
+        },
+        {
+          "type": "code",
+          "path": "MAIN",
+          "offset": "0x4000"
+        },
+        {
+          "type": "code",
+          "path": "MIPL",
+          "offset": "0x9000"
+        },
+        {
+          "type": "code",
+          "path": "P1",
+          "offset": "0xb800"
+        },
+        {
+          "type": "bgm",
+          "path": "P1_",
+          "offset": "0x00"
+        },
+        {
+          "type": "bgm",
+          "path": "P10",
+          "offset": "0x01"
+        },
+        {
+          "type": "bgm",
+          "path": "P11",
+          "offset": "0x02"
+        },
+        {
+          "type": "bgm",
+          "path": "P13B",
+          "offset": "0x03"
+        },
+        {
+          "type": "bgm",
+          "path": "P14A",
+          "offset": "0x04"
+        },
+        {
+          "type": "bgm",
+          "path": "P14B",
+          "offset": "0x05"
+        },
+        {
+          "type": "bgm",
+          "path": "P16",
+          "offset": "0x06"
+        },
+        {
+          "type": "bgm",
+          "path": "P3",
+          "offset": "0x07"
+        },
+        {
+          "type": "bgm",
+          "path": "P4",
+          "offset": "0x08"
+        },
+        {
+          "type": "bgm",
+          "path": "P5_",
+          "offset": "0x0a"
+        },
+        {
+          "type": "bgm",
+          "path": "P6",
+          "offset": "0x0b"
+        },
+        {
+          "type": "bgm",
+          "path": "P7",
+          "offset": "0x0c"
+        },
+        {
+          "type": "bgm",
+          "path": "P8_",
+          "offset": "0x0d"
+        },
+        {
+          "type": "bgm",
+          "path": "P9_",
+          "offset": "0x0e"
+        },
+        {
+          "type": "bgm",
+          "path": "END",
+          "offset": "0x0f"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x000000",
+          "title": "P1_  : イントロダクション"
+        },
+        {
+          "kind": "title",
+          "code": "0x00ff00",
+          "title": "P1_  : ラプラスのテーマ ～旅立つ勇者～ (オープニング)"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000b",
+          "title": "P6   : 想い出のニューカム              (ホテル)"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000c",
+          "title": "P7   : ニューカムの街                  (街)"
+        },
+        {
+          "kind": "title",
+          "code": "0x000008",
+          "title": "P4   : Pub Time Song                   (酒場)"
+        },
+        {
+          "kind": "title",
+          "code": "0x01000a",
+          "title": "P5_  : 復活のクロス                    (教会)"
+        },
+        {
+          "kind": "title",
+          "code": "0x000004",
+          "title": "P14A : ゴースト ハンター               (戦闘)"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000d",
+          "title": "P8_  : 幽霊屋敷                        (ウェザートップの館 地上)"
+        },
+        {
+          "kind": "title",
+          "code": "0x00070d",
+          "title": "P8_  : 鐘"
+        },
+        {
+          "kind": "title",
+          "code": "0x00030d",
+          "title": "P8_  : ピアノ"
+        },
+        {
+          "kind": "title",
+          "code": "0x00040d",
+          "title": "P8_  : 不気味な地下                    (ウェザートップの館 地下)"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000e",
+          "title": "P9_  : 魔城                            (ラプラス城)"
+        },
+        {
+          "kind": "title",
+          "code": "0x02010e",
+          "title": "P9_  : 幽霊舞踏会                      (舞踏する幽霊)"
+        },
+        {
+          "kind": "title",
+          "code": "0x000006",
+          "title": "P16  : 恐怖の回廊                      (ラプラス城地下)"
+        },
+        {
+          "kind": "title",
+          "code": "0x000005",
+          "title": "P14B : 哀しき勇者                      (死人との戦闘)"
+        },
+        {
+          "kind": "title",
+          "code": "0x000002",
+          "title": "P11  : 揺れる小舟                      (ラプラス城3階 湖)"
+        },
+        {
+          "kind": "title",
+          "code": "0x000001",
+          "title": "P10  : 南国の光                        (ラプラス城3階 ジャングル)"
+        },
+        {
+          "kind": "title",
+          "code": "0x000003",
+          "title": "P13B : バトル ウィズ ハスター          (最終ボス)"
+        },
+        {
+          "kind": "title",
+          "code": "0x000007",
+          "title": "P3   : 奈落の叫び                      (ゲームオーバー)"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000f",
+          "title": "END  :                                 (エンディング)"
+        },
+        {
+          "kind": "title",
+          "code": "0x00050f",
+          "title": "END  : 明日への誓い                    (エンディング)"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/hummingbirdsoft.xml",
+      "source_order": 2584,
+      "archive": "laplace_msx",
+      "id": "laplace-msx-generic"
+    }
+  ]
+}

@@ -1,0 +1,137 @@
+{
+  "format": "hoot-catalog-shard",
+  "version": 1,
+  "source_file": "xml/sting.xml",
+  "date": "2005/09/25",
+  "comments": [
+    " //STING "
+  ],
+  "games": [
+    {
+      "title": "[X68000] LAST BATTALION",
+      "driver": {
+        "name": "x68k",
+        "type": "generic",
+        "alias": "STING",
+        "platform": "SHARP X68000"
+      },
+      "options": [
+        {
+          "name": "mfp",
+          "value": "0x01"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "lastb68snd.bin",
+          "offset": "0x000000"
+        },
+        {
+          "type": "x",
+          "path": "lb.x",
+          "offset": "0x010000"
+        },
+        {
+          "type": "code",
+          "path": "lb.pcm",
+          "offset": "0x0427e8"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x0e",
+          "title": "OPENING"
+        },
+        {
+          "kind": "title",
+          "code": "0x0f",
+          "title": "OPENING 2"
+        },
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "TITLE"
+        },
+        {
+          "kind": "title",
+          "code": "0x02",
+          "title": "STAGE 1"
+        },
+        {
+          "kind": "title",
+          "code": "0x03",
+          "title": "STAGE 2"
+        },
+        {
+          "kind": "title",
+          "code": "0x04",
+          "title": "STAGE 3"
+        },
+        {
+          "kind": "title",
+          "code": "0x05",
+          "title": "STAGE 4"
+        },
+        {
+          "kind": "title",
+          "code": "0x06",
+          "title": "STAGE 5"
+        },
+        {
+          "kind": "title",
+          "code": "0x07",
+          "title": "STAGE 6"
+        },
+        {
+          "kind": "title",
+          "code": "0x09",
+          "title": "BOSS 1"
+        },
+        {
+          "kind": "title",
+          "code": "0x08",
+          "title": "BOSS 2"
+        },
+        {
+          "kind": "title",
+          "code": "0x0a",
+          "title": "BOSS 3"
+        },
+        {
+          "kind": "title",
+          "code": "0x0c",
+          "title": "STAGE CLEAR"
+        },
+        {
+          "kind": "title",
+          "code": "0x0b",
+          "title": "GAME OVER"
+        },
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "ENDING"
+        },
+        {
+          "kind": "title",
+          "code": "0x0d",
+          "title": "ENDING 2"
+        },
+        {
+          "kind": "range",
+          "min": "0x11",
+          "max": "0x22",
+          "title_format": "SE 0x%02x",
+          "extcode": "1"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/sting.xml",
+      "source_order": 4293,
+      "archive": "lastbt68snd",
+      "id": "lastbt68snd-generic"
+    }
+  ]
+}

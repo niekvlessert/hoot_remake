@@ -1,0 +1,1039 @@
+{
+  "format": "hoot-catalog-shard",
+  "version": 1,
+  "source_file": "xml/frontier.xml",
+  "date": "2005/09/25",
+  "comments": [
+    " //FRONTIER "
+  ],
+  "games": [
+    {
+      "title": "[PC-9801] FRONTIER(OPNA)",
+      "driver": {
+        "name": "pc98dos",
+        "type": "opna",
+        "alias": "FRONTIER",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "clockmul",
+          "value": "8"
+        },
+        {
+          "name": "showfm3ex",
+          "value": "1"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "MSDRV4.EXE",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MSP_HOOT.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "FRONT1.OPN",
+          "offset": "0x10"
+        },
+        {
+          "type": "file",
+          "path": "FRONT1.SSG",
+          "offset": "0x11"
+        },
+        {
+          "type": "file",
+          "path": "BADEN_86.MS",
+          "offset": "0x12"
+        },
+        {
+          "type": "file",
+          "path": "BL_01_B2.MS",
+          "offset": "0x13"
+        },
+        {
+          "type": "file",
+          "path": "BL_02_B2.MS",
+          "offset": "0x14"
+        },
+        {
+          "type": "file",
+          "path": "BL_03_B2.MS",
+          "offset": "0x15"
+        },
+        {
+          "type": "file",
+          "path": "BL_E_B2.MS",
+          "offset": "0x16"
+        },
+        {
+          "type": "file",
+          "path": "HHHH2_86.MS",
+          "offset": "0x17"
+        },
+        {
+          "type": "file",
+          "path": "HONOB_86.MS",
+          "offset": "0x18"
+        },
+        {
+          "type": "file",
+          "path": "MAIN_86.MS",
+          "offset": "0x19"
+        },
+        {
+          "type": "file",
+          "path": "THEME_86.MS",
+          "offset": "0x1a"
+        },
+        {
+          "type": "file",
+          "path": "TITLE_86.MS",
+          "offset": "0x1b"
+        },
+        {
+          "type": "file",
+          "path": "WAI00B2.MS",
+          "offset": "0x1c"
+        },
+        {
+          "type": "file",
+          "path": "WAI01B2.MS",
+          "offset": "0x1d"
+        },
+        {
+          "type": "file",
+          "path": "WAI03B2.MS",
+          "offset": "0x1e"
+        },
+        {
+          "type": "file",
+          "path": "WAI04B2.MS",
+          "offset": "0x1f"
+        },
+        {
+          "type": "shell",
+          "path": "MSDRV4 -B49152",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "MSP_HOOT",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x19",
+          "title": "MAIN_86.MS  : Frontier island"
+        },
+        {
+          "kind": "title",
+          "code": "0x1c",
+          "title": "WAI00B2.MS  : ロンリネス・ナイト"
+        },
+        {
+          "kind": "title",
+          "code": "0x1d",
+          "title": "WAI01B2.MS  : ラバーズ・メモリー"
+        },
+        {
+          "kind": "title",
+          "code": "0x1e",
+          "title": "WAI03B2.MS  : ジャスティス・ブレイカー"
+        },
+        {
+          "kind": "title",
+          "code": "0x1f",
+          "title": "WAI04B2.MS  : 遠雷ワイヴァーン"
+        },
+        {
+          "kind": "title",
+          "code": "0x1b",
+          "title": "TITLE_86.MS : 愛こそすべて"
+        },
+        {
+          "kind": "title",
+          "code": "0x1a",
+          "title": "THEME_86.MS : 重い想い"
+        },
+        {
+          "kind": "title",
+          "code": "0x18",
+          "title": "HONOB_86.MS : 時の波間"
+        },
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "BADEN_86.MS : 心を捨てた恋人達"
+        },
+        {
+          "kind": "title",
+          "code": "0x17",
+          "title": "HHHH2_86.MS : 奇嬉快戒"
+        },
+        {
+          "kind": "title",
+          "code": "0x14",
+          "title": "BL_02_B2.MS : スペースシップ・フロンティア"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "BL_01_B2.MS : 妖しきBLOOD-LINE(血統)"
+        },
+        {
+          "kind": "title",
+          "code": "0x15",
+          "title": "BL_03_B2.MS : シュルツカッツェのテーマ"
+        },
+        {
+          "kind": "title",
+          "code": "0x16",
+          "title": "BL_E_B2.MS  : 旅立ち～父を探して～"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/frontier.xml",
+      "source_order": 2127,
+      "archive": "frontier_98",
+      "id": "frontier-98-opna"
+    },
+    {
+      "title": "[PC-9801] FRONTIER(OPN)",
+      "driver": {
+        "name": "pc98dos",
+        "type": "opn",
+        "alias": "FRONTIER",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "showfm3ex",
+          "value": "1"
+        },
+        {
+          "name": "clockmul",
+          "value": "8"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "MSDRV4.EXE",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MSP_HOOT.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "FRONT1.OPN",
+          "offset": "0x10"
+        },
+        {
+          "type": "file",
+          "path": "FRONT1.SSG",
+          "offset": "0x11"
+        },
+        {
+          "type": "file",
+          "path": "BADEN_26.MS",
+          "offset": "0x12"
+        },
+        {
+          "type": "file",
+          "path": "BL_01_N.MS",
+          "offset": "0x13"
+        },
+        {
+          "type": "file",
+          "path": "BL_02_N.MS",
+          "offset": "0x14"
+        },
+        {
+          "type": "file",
+          "path": "BL_03_N.MS",
+          "offset": "0x15"
+        },
+        {
+          "type": "file",
+          "path": "BL_E_N.MS",
+          "offset": "0x16"
+        },
+        {
+          "type": "file",
+          "path": "HHHH2_26.MS",
+          "offset": "0x17"
+        },
+        {
+          "type": "file",
+          "path": "HONOB_26.MS",
+          "offset": "0x18"
+        },
+        {
+          "type": "file",
+          "path": "MAIN_26.MS",
+          "offset": "0x19"
+        },
+        {
+          "type": "file",
+          "path": "THEME_26.MS",
+          "offset": "0x1a"
+        },
+        {
+          "type": "file",
+          "path": "TITLE_26.MS",
+          "offset": "0x1b"
+        },
+        {
+          "type": "file",
+          "path": "WAI00N.MS",
+          "offset": "0x1c"
+        },
+        {
+          "type": "file",
+          "path": "WAI01N.MS",
+          "offset": "0x1d"
+        },
+        {
+          "type": "file",
+          "path": "WAI03N.MS",
+          "offset": "0x1e"
+        },
+        {
+          "type": "file",
+          "path": "WAI04N.MS",
+          "offset": "0x1f"
+        },
+        {
+          "type": "shell",
+          "path": "MSDRV4 -B49152",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "MSP_HOOT",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x19",
+          "title": "MAIN_26.MS  : Frontier island"
+        },
+        {
+          "kind": "title",
+          "code": "0x1c",
+          "title": "WAI00N.MS   : ロンリネス・ナイト"
+        },
+        {
+          "kind": "title",
+          "code": "0x1d",
+          "title": "WAI01N.MS   : ラバーズ・メモリー"
+        },
+        {
+          "kind": "title",
+          "code": "0x1e",
+          "title": "WAI03N.MS   : ジャスティス・ブレイカー"
+        },
+        {
+          "kind": "title",
+          "code": "0x1f",
+          "title": "WAI04N.MS   : 遠雷ワイヴァーン"
+        },
+        {
+          "kind": "title",
+          "code": "0x1b",
+          "title": "TITLE_26.MS : 愛こそすべて"
+        },
+        {
+          "kind": "title",
+          "code": "0x1a",
+          "title": "THEME_26.MS : 重い想い"
+        },
+        {
+          "kind": "title",
+          "code": "0x18",
+          "title": "HONOB_26.MS : 時の波間"
+        },
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "BADEN_26.MS : 心を捨てた恋人達"
+        },
+        {
+          "kind": "title",
+          "code": "0x17",
+          "title": "HHHH2_26.MS : 奇嬉快戒"
+        },
+        {
+          "kind": "title",
+          "code": "0x14",
+          "title": "BL_02_N.MS  : スペースシップ・フロンティア"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "BL_01_N.MS  : 妖しきBLOOD-LINE(血統)"
+        },
+        {
+          "kind": "title",
+          "code": "0x15",
+          "title": "BL_03_N.MS  : シュルツカッツェのテーマ"
+        },
+        {
+          "kind": "title",
+          "code": "0x16",
+          "title": "BL_E_N.MS   : 旅立ち～父を探して～"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/frontier.xml",
+      "source_order": 2128,
+      "archive": "frontier_98",
+      "id": "frontier-98-opn"
+    },
+    {
+      "title": "[PC-9801] FRONTIER(GS)",
+      "driver": {
+        "name": "pc98dos",
+        "type": "beep",
+        "alias": "FRONTIER",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "clockmul",
+          "value": "8"
+        },
+        {
+          "name": "midiout",
+          "value": "1"
+        },
+        {
+          "name": "midiout_type",
+          "value": "4"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "MSDRV4.EXE",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MSP_HOOT.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "INIT.MS",
+          "offset": "0x12"
+        },
+        {
+          "type": "file",
+          "path": "BADEN_GS.MS",
+          "offset": "0x13"
+        },
+        {
+          "type": "file",
+          "path": "BL_01B.MS",
+          "offset": "0x14"
+        },
+        {
+          "type": "file",
+          "path": "BL_02.MS",
+          "offset": "0x15"
+        },
+        {
+          "type": "file",
+          "path": "BL_03_.MS",
+          "offset": "0x16"
+        },
+        {
+          "type": "file",
+          "path": "BL_04B.MS",
+          "offset": "0x17"
+        },
+        {
+          "type": "file",
+          "path": "HHHH2_GS.MS",
+          "offset": "0x18"
+        },
+        {
+          "type": "file",
+          "path": "HONOB_GS.MS",
+          "offset": "0x19"
+        },
+        {
+          "type": "file",
+          "path": "MAIN_GS.MS",
+          "offset": "0x1a"
+        },
+        {
+          "type": "file",
+          "path": "THEME_GS.MS",
+          "offset": "0x1b"
+        },
+        {
+          "type": "file",
+          "path": "TITLE_GS.MS",
+          "offset": "0x1c"
+        },
+        {
+          "type": "file",
+          "path": "WAI_01.MS",
+          "offset": "0x1d"
+        },
+        {
+          "type": "file",
+          "path": "WAI_02.MS",
+          "offset": "0x1e"
+        },
+        {
+          "type": "file",
+          "path": "WAI_03.MS",
+          "offset": "0x1f"
+        },
+        {
+          "type": "file",
+          "path": "WAI_ED.MS",
+          "offset": "0x20"
+        },
+        {
+          "type": "shell",
+          "path": "MSDRV4 -B49152",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "MSP_HOOT",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "INIT.MS     : [音源初期化/最初に実行して下さい]"
+        },
+        {
+          "kind": "title",
+          "code": "0x1a",
+          "title": "MAIN_GS.MS  : Frontier island"
+        },
+        {
+          "kind": "title",
+          "code": "0x1d",
+          "title": "WAI_01.MS   : ロンリネス・ナイト"
+        },
+        {
+          "kind": "title",
+          "code": "0x1e",
+          "title": "WAI_02.MS   : ラバーズ・メモリー"
+        },
+        {
+          "kind": "title",
+          "code": "0x1f",
+          "title": "WAI_03.MS   : ジャスティス・ブレイカー"
+        },
+        {
+          "kind": "title",
+          "code": "0x20",
+          "title": "WAI_ED.MS   : 遠雷ワイヴァーン"
+        },
+        {
+          "kind": "title",
+          "code": "0x1c",
+          "title": "TITLE_GS.MS : 愛こそすべて"
+        },
+        {
+          "kind": "title",
+          "code": "0x1b",
+          "title": "THEME_GS.MS : 重い想い"
+        },
+        {
+          "kind": "title",
+          "code": "0x19",
+          "title": "HONOB_GS.MS : 時の波間"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "BADEN_GS.MS : 心を捨てた恋人達"
+        },
+        {
+          "kind": "title",
+          "code": "0x18",
+          "title": "HHHH2_GS.MS : 奇嬉快戒"
+        },
+        {
+          "kind": "title",
+          "code": "0x15",
+          "title": "BL_02.MS    : スペースシップ・フロンティア"
+        },
+        {
+          "kind": "title",
+          "code": "0x14",
+          "title": "BL_01B.MS   : 妖しきBLOOD-LINE(血統)"
+        },
+        {
+          "kind": "title",
+          "code": "0x16",
+          "title": "BL_03_.MS   : シュルツカッツェのテーマ"
+        },
+        {
+          "kind": "title",
+          "code": "0x17",
+          "title": "BL_04B.MS   : 旅立ち～父を探して～"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/frontier.xml",
+      "source_order": 2129,
+      "archive": "frontier_98",
+      "id": "frontier-98-beep"
+    },
+    {
+      "title": "[PC-9801] RONDO -ロンド-(OPNA)",
+      "driver": {
+        "name": "pc98dos",
+        "type": "opna",
+        "alias": "FRONTIER",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "clockmul",
+          "value": "8"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "MSDRV4.EXE",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MSP_HOOT.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "RON_MS.OPN",
+          "offset": "0x10"
+        },
+        {
+          "type": "file",
+          "path": "RON_MS.SSG",
+          "offset": "0x11"
+        },
+        {
+          "type": "file",
+          "path": "RON01_86.MS",
+          "offset": "0x12"
+        },
+        {
+          "type": "file",
+          "path": "RON02_86.MS",
+          "offset": "0x13"
+        },
+        {
+          "type": "file",
+          "path": "RON03_86.MS",
+          "offset": "0x14"
+        },
+        {
+          "type": "file",
+          "path": "RON04_86.MS",
+          "offset": "0x15"
+        },
+        {
+          "type": "file",
+          "path": "RON05_86.MS",
+          "offset": "0x16"
+        },
+        {
+          "type": "file",
+          "path": "RON06_86.MS",
+          "offset": "0x17"
+        },
+        {
+          "type": "file",
+          "path": "RON07_86.MS",
+          "offset": "0x18"
+        },
+        {
+          "type": "file",
+          "path": "RON08_86.MS",
+          "offset": "0x19"
+        },
+        {
+          "type": "file",
+          "path": "RON09_86.MS",
+          "offset": "0x1a"
+        },
+        {
+          "type": "shell",
+          "path": "MSDRV4 -B49152",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "MSP_HOOT",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "RON01_86.MS : At School"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "RON02_86.MS : Look for"
+        },
+        {
+          "kind": "title",
+          "code": "0x14",
+          "title": "RON03_86.MS : fu・shi・gi"
+        },
+        {
+          "kind": "title",
+          "code": "0x15",
+          "title": "RON04_86.MS : 悲しみ"
+        },
+        {
+          "kind": "title",
+          "code": "0x16",
+          "title": "RON05_86.MS : 奇怪"
+        },
+        {
+          "kind": "title",
+          "code": "0x17",
+          "title": "RON06_86.MS : にげろっ"
+        },
+        {
+          "kind": "title",
+          "code": "0x18",
+          "title": "RON07_86.MS : Silent Scene"
+        },
+        {
+          "kind": "title",
+          "code": "0x19",
+          "title": "RON08_86.MS : また逢おうね"
+        },
+        {
+          "kind": "title",
+          "code": "0x1a",
+          "title": "RON09_86.MS : チャイム"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/frontier.xml",
+      "source_order": 2130,
+      "archive": "rondo_98",
+      "id": "rondo-98-opna"
+    },
+    {
+      "title": "[PC-9801] RONDO -ロンド-(OPN)",
+      "driver": {
+        "name": "pc98dos",
+        "type": "opn",
+        "alias": "FRONTIER",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "clockmul",
+          "value": "8"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "MSDRV4.EXE",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MSP_HOOT.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "RON_MS.OPN",
+          "offset": "0x10"
+        },
+        {
+          "type": "file",
+          "path": "RON_MS.SSG",
+          "offset": "0x11"
+        },
+        {
+          "type": "file",
+          "path": "RON01_26.MS",
+          "offset": "0x12"
+        },
+        {
+          "type": "file",
+          "path": "RON02_26.MS",
+          "offset": "0x13"
+        },
+        {
+          "type": "file",
+          "path": "RON03_26.MS",
+          "offset": "0x14"
+        },
+        {
+          "type": "file",
+          "path": "RON04_26.MS",
+          "offset": "0x15"
+        },
+        {
+          "type": "file",
+          "path": "RON05_26.MS",
+          "offset": "0x16"
+        },
+        {
+          "type": "file",
+          "path": "RON06_26.MS",
+          "offset": "0x17"
+        },
+        {
+          "type": "file",
+          "path": "RON07_26.MS",
+          "offset": "0x18"
+        },
+        {
+          "type": "file",
+          "path": "RON08_26.MS",
+          "offset": "0x19"
+        },
+        {
+          "type": "file",
+          "path": "RON09_26.MS",
+          "offset": "0x1a"
+        },
+        {
+          "type": "shell",
+          "path": "MSDRV4 -B49152",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "MSP_HOOT",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "RON01_26.MS : At School"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "RON02_26.MS : Look for"
+        },
+        {
+          "kind": "title",
+          "code": "0x14",
+          "title": "RON03_26.MS : fu・shi・gi"
+        },
+        {
+          "kind": "title",
+          "code": "0x15",
+          "title": "RON04_26.MS : 悲しみ"
+        },
+        {
+          "kind": "title",
+          "code": "0x16",
+          "title": "RON05_26.MS : 奇怪"
+        },
+        {
+          "kind": "title",
+          "code": "0x17",
+          "title": "RON06_26.MS : にげろっ"
+        },
+        {
+          "kind": "title",
+          "code": "0x18",
+          "title": "RON07_26.MS : Silent Scene"
+        },
+        {
+          "kind": "title",
+          "code": "0x19",
+          "title": "RON08_26.MS : また逢おうね"
+        },
+        {
+          "kind": "title",
+          "code": "0x1a",
+          "title": "RON09_26.MS : チャイム"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/frontier.xml",
+      "source_order": 2131,
+      "archive": "rondo_98",
+      "id": "rondo-98-opn"
+    },
+    {
+      "title": "[PC-9801] RONDO -ロンド-(GS)",
+      "driver": {
+        "name": "pc98dos",
+        "type": "beep",
+        "alias": "FRONTIER",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "clockmul",
+          "value": "8"
+        },
+        {
+          "name": "midiout",
+          "value": "1"
+        },
+        {
+          "name": "midiout_type",
+          "value": "4"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "MSDRV4.EXE",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MSP_HOOT.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "RON01_GS.MS",
+          "offset": "0x12"
+        },
+        {
+          "type": "file",
+          "path": "RON02_GS.MS",
+          "offset": "0x13"
+        },
+        {
+          "type": "file",
+          "path": "RON03_GS.MS",
+          "offset": "0x14"
+        },
+        {
+          "type": "file",
+          "path": "RON04_GS.MS",
+          "offset": "0x15"
+        },
+        {
+          "type": "file",
+          "path": "RON05_GS.MS",
+          "offset": "0x16"
+        },
+        {
+          "type": "file",
+          "path": "RON06_GS.MS",
+          "offset": "0x17"
+        },
+        {
+          "type": "file",
+          "path": "RON07_GS.MS",
+          "offset": "0x18"
+        },
+        {
+          "type": "file",
+          "path": "RON08_GS.MS",
+          "offset": "0x19"
+        },
+        {
+          "type": "file",
+          "path": "RON09_GS.MS",
+          "offset": "0x1a"
+        },
+        {
+          "type": "shell",
+          "path": "MSDRV4 -B49152",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "MSP_HOOT",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "RON01_GS.MS : At School"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "RON02_GS.MS : Look for"
+        },
+        {
+          "kind": "title",
+          "code": "0x14",
+          "title": "RON03_GS.MS : fu・shi・gi"
+        },
+        {
+          "kind": "title",
+          "code": "0x15",
+          "title": "RON04_GS.MS : 悲しみ"
+        },
+        {
+          "kind": "title",
+          "code": "0x16",
+          "title": "RON05_GS.MS : 奇怪"
+        },
+        {
+          "kind": "title",
+          "code": "0x17",
+          "title": "RON06_GS.MS : にげろっ"
+        },
+        {
+          "kind": "title",
+          "code": "0x18",
+          "title": "RON07_GS.MS : Silent Scene"
+        },
+        {
+          "kind": "title",
+          "code": "0x19",
+          "title": "RON08_GS.MS : また逢おうね"
+        },
+        {
+          "kind": "title",
+          "code": "0x1a",
+          "title": "RON09_GS.MS : チャイム"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/frontier.xml",
+      "source_order": 2132,
+      "archive": "rondo_98",
+      "id": "rondo-98-beep"
+    }
+  ]
+}

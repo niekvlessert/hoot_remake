@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="hoot.xsl"?>
+<!DOCTYPE gamelist [
+	<!ELEMENT gamelist (game|bind|childlists)*>
+	<!ATTLIST gamelist date CDATA #IMPLIED>
+	<!ELEMENT childlists (list)*>
+	<!ELEMENT list (#PCDATA)>
+	<!ELEMENT bind (exts,driver,options?)>
+	<!ELEMENT exts (ext)*>
+	<!ELEMENT ext (#PCDATA)>
+	<!ELEMENT game (name,driver,driveralias?,options?,romlist?,titlelist?)>
+	<!ELEMENT name (#PCDATA)>
+	<!ELEMENT driver (#PCDATA)>
+	<!ATTLIST driver type CDATA #IMPLIED>
+	<!ELEMENT driveralias (#PCDATA)>
+	<!ATTLIST driveralias type CDATA #IMPLIED>
+	<!ELEMENT options (option)*>
+	<!ELEMENT option EMPTY>
+	<!ATTLIST option name CDATA #REQUIRED
+					 value CDATA #REQUIRED>
+	<!ELEMENT romlist (rom)*>
+	<!ATTLIST romlist archive CDATA #IMPLIED>
+	<!ELEMENT rom (#PCDATA)>
+	<!ATTLIST rom type CDATA #REQUIRED
+				  offset CDATA #IMPLIED
+				  crc32 CDATA #IMPLIED>
+	<!ELEMENT titlelist (title|range)*>
+	<!ELEMENT title (#PCDATA)>
+	<!ATTLIST title code CDATA #REQUIRED
+					type CDATA #IMPLIED>
+	<!ELEMENT range (#PCDATA)>
+	<!ATTLIST range min CDATA #REQUIRED
+					max CDATA #REQUIRED
+					extcode CDATA #IMPLIED
+					start CDATA #IMPLIED>
+
+]>
+<gamelist date="2009/03/06">
+	<!-- //Electric Sheep -->
+	<game>
+		<name>[X68000] Robot Construction R.C.</name>
+		<driver type="generic">x68k</driver>
+		<driveralias type="SHARP X68000">Electric Sheep</driveralias>
+		<options>
+			<option name="mfp"    value="0x01"/>
+			<option name="dmaint" value="0x01"/>
+		</options>
+		<romlist archive="rc68snd">
+			<rom type="code" offset="0x000000">rc68snd.bin</rom>
+			<rom type="code" offset="0x009000">RC_TONE.ZMD</rom>
+			<rom type="x"    offset="0x010000">ROBOT.X</rom>
+			<rom type="x"    offset="0x0b0000">OPENING.X</rom>
+			<rom type="code" offset="0x060000">RC_PCM.ZPD</rom>
+			<rom type="x"    offset="0x080000">ZMSC.X</rom>
+		</romlist>
+		<titlelist>
+			<title code="0x0b">OPENING.X : 02 : Electric Sheep</title>
+			<title code="0x0a">OPENING.X : 01 : オープニング</title>
+			<title code="0x04">ROBOT.X   : 04 : トーナメント順位</title>
+			<title code="0x01">ROBOT.X   : 01 : 舗装路</title>
+			<title code="0x02">ROBOT.X   : 02 : 森</title>
+			<title code="0x03">ROBOT.X   : 03 : 砂漠</title>
+			<title code="0x09">ROBOT.X   : 09 : トーナメント優勝</title>
+			<title code="0x08">ROBOT.X   : 08 : 勝利</title>
+			<title code="0x06">ROBOT.X   : 06 : ドロー</title>
+			<title code="0x07">ROBOT.X   : 07 : ダブルブレイクダウン</title>
+			<range min="0x101" max="0x107" extcode="0">SE        : %02x</range>
+		</titlelist>
+	</game>
+</gamelist>

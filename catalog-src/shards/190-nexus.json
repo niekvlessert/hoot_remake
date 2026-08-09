@@ -1,0 +1,353 @@
+{
+  "format": "hoot-catalog-shard",
+  "version": 1,
+  "source_file": "xml/nexus.xml",
+  "date": "2005/09/25",
+  "comments": [
+    " //Nexus Interact "
+  ],
+  "games": [
+    {
+      "title": "[PC-9801] 2601 帝國機動部隊の興亡",
+      "driver": {
+        "name": "pc98dos",
+        "type": "opn",
+        "alias": "Nexus Interact",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "clockmul",
+          "value": "8"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "fgplay_h.com",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "OPNDRV.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "2601_000.MD",
+          "offset": "0x10"
+        },
+        {
+          "type": "file",
+          "path": "2601_001.MD",
+          "offset": "0x11"
+        },
+        {
+          "type": "file",
+          "path": "2601_002.MD",
+          "offset": "0x12"
+        },
+        {
+          "type": "file",
+          "path": "2601_003.MD",
+          "offset": "0x13"
+        },
+        {
+          "type": "file",
+          "path": "2601_004.MD",
+          "offset": "0x14"
+        },
+        {
+          "type": "file",
+          "path": "2601_005.MD",
+          "offset": "0x15"
+        },
+        {
+          "type": "file",
+          "path": "2601_006.MD",
+          "offset": "0x16"
+        },
+        {
+          "type": "file",
+          "path": "2601_007.MD",
+          "offset": "0x17"
+        },
+        {
+          "type": "file",
+          "path": "2601_008.MD",
+          "offset": "0x18"
+        },
+        {
+          "type": "file",
+          "path": "2601_009.MD",
+          "offset": "0x19"
+        },
+        {
+          "type": "file",
+          "path": "2601_010.MD",
+          "offset": "0x1a"
+        },
+        {
+          "type": "file",
+          "path": "2601_011.MD",
+          "offset": "0x1b"
+        },
+        {
+          "type": "shell",
+          "path": "opndrv",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "fgplay_h",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "2601_000.MD : 演奏停止"
+        },
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "2601_001.MD :"
+        },
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "2601_002.MD :"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "2601_003.MD :"
+        },
+        {
+          "kind": "title",
+          "code": "0x14",
+          "title": "2601_004.MD :"
+        },
+        {
+          "kind": "title",
+          "code": "0x15",
+          "title": "2601_005.MD :"
+        },
+        {
+          "kind": "title",
+          "code": "0x16",
+          "title": "2601_006.MD :"
+        },
+        {
+          "kind": "title",
+          "code": "0x17",
+          "title": "2601_007.MD :"
+        },
+        {
+          "kind": "title",
+          "code": "0x18",
+          "title": "2601_008.MD :"
+        },
+        {
+          "kind": "title",
+          "code": "0x19",
+          "title": "2601_009.MD :"
+        },
+        {
+          "kind": "title",
+          "code": "0x1a",
+          "title": "2601_010.MD :"
+        },
+        {
+          "kind": "title",
+          "code": "0x1b",
+          "title": "2601_011.MD :"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/nexus.xml",
+      "source_order": 3446,
+      "archive": "2601_98",
+      "id": "2601-98-opn"
+    },
+    {
+      "title": "[X68000] VIEW POINT",
+      "driver": {
+        "name": "x68k",
+        "type": "generic",
+        "alias": "Nexus Interact",
+        "platform": "SHARP X68000"
+      },
+      "options": [
+        {
+          "name": "mfp",
+          "value": "0x01"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "vp68snd.bin",
+          "offset": "0x000000"
+        },
+        {
+          "type": "x",
+          "path": "ZMSC.X",
+          "offset": "0x010000"
+        },
+        {
+          "type": "code",
+          "path": "fmpara.ZMD",
+          "offset": "0x030000"
+        },
+        {
+          "type": "code",
+          "path": "view00.ZMD",
+          "offset": "0x031000"
+        },
+        {
+          "type": "code",
+          "path": "VIEW01.ZMD",
+          "offset": "0x032000"
+        },
+        {
+          "type": "code",
+          "path": "VIEW02.ZMD",
+          "offset": "0x033000"
+        },
+        {
+          "type": "code",
+          "path": "VIEW03.ZMD",
+          "offset": "0x034000"
+        },
+        {
+          "type": "code",
+          "path": "view04.ZMD",
+          "offset": "0x035000"
+        },
+        {
+          "type": "code",
+          "path": "VIEW05.ZMD",
+          "offset": "0x036000"
+        },
+        {
+          "type": "code",
+          "path": "VIEW06.ZMD",
+          "offset": "0x037000"
+        },
+        {
+          "type": "code",
+          "path": "VIEW07.ZMD",
+          "offset": "0x038000"
+        },
+        {
+          "type": "code",
+          "path": "VIEW08.ZMD",
+          "offset": "0x039000"
+        },
+        {
+          "type": "code",
+          "path": "VIEW09.ZMD",
+          "offset": "0x03a000"
+        },
+        {
+          "type": "code",
+          "path": "VIEW0A.ZMD",
+          "offset": "0x03b000"
+        },
+        {
+          "type": "code",
+          "path": "VIEW0B.ZMD",
+          "offset": "0x03c000"
+        },
+        {
+          "type": "code",
+          "path": "VIEW03.ZPD",
+          "offset": "0x03e000"
+        },
+        {
+          "type": "code",
+          "path": "VIEW04.ZPD",
+          "offset": "0x042000"
+        },
+        {
+          "type": "code",
+          "path": "VIEW06.ZPD",
+          "offset": "0x058000"
+        },
+        {
+          "type": "code",
+          "path": "VIEW0A.ZPD",
+          "offset": "0x05c000"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "comment",
+          "text": "\t<title code=\"0x01\">view00.ZMD : [STOP]</title> "
+        },
+        {
+          "kind": "title",
+          "code": "0x02",
+          "title": "VIEW01.ZMD : EYE CATCH SAMMY"
+        },
+        {
+          "kind": "title",
+          "code": "0x03",
+          "title": "VIEW02.ZMD : TITLE BACK"
+        },
+        {
+          "kind": "title",
+          "code": "0x04",
+          "title": "VIEW03.ZMD : NOT ALL THERE"
+        },
+        {
+          "kind": "title",
+          "code": "0x05",
+          "title": "view04.ZMD : F.O.B."
+        },
+        {
+          "kind": "title",
+          "code": "0x06",
+          "title": "VIEW05.ZMD : UN CAILLOU RICOCHET"
+        },
+        {
+          "kind": "title",
+          "code": "0x07",
+          "title": "VIEW06.ZMD : BE YOUR AGE!"
+        },
+        {
+          "kind": "title",
+          "code": "0x08",
+          "title": "VIEW07.ZMD : ASS BACK WARDS"
+        },
+        {
+          "kind": "title",
+          "code": "0x09",
+          "title": "VIEW08.ZMD : LA NERVATURA M."
+        },
+        {
+          "kind": "title",
+          "code": "0x0a",
+          "title": "VIEW09.ZMD : PHYSICAL DAYDREAM"
+        },
+        {
+          "kind": "title",
+          "code": "0x0b",
+          "title": "VIEW0A.ZMD : F.O.B. - BIOTRON MIX -"
+        },
+        {
+          "kind": "title",
+          "code": "0x0c",
+          "title": "VIEW0B.ZMD : MES VOLUTES BLEUES"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/nexus.xml",
+      "source_order": 3447,
+      "archive": "viewpoin68snd",
+      "id": "viewpoin68snd-generic"
+    }
+  ]
+}

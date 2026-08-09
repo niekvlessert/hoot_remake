@@ -1,0 +1,1422 @@
+{
+  "format": "hoot-catalog-shard",
+  "version": 1,
+  "source_file": "xml/quasarsoft.xml",
+  "date": "2005/09/25",
+  "comments": [
+    " //QUASAR SOFT "
+  ],
+  "games": [
+    {
+      "title": "[PC-8801] A.I.R. - ANTI-INTRUDER RANGERS -",
+      "driver": {
+        "name": "pc88",
+        "type": "opn",
+        "alias": "QUASAR SOFT",
+        "platform": "NEC PC-8801"
+      },
+      "options": [
+        {
+          "name": "mdata_addr",
+          "value": "0xa7d5"
+        },
+        {
+          "name": "mdata_size",
+          "value": "0x1300"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "PATCH",
+          "offset": "0x0000"
+        },
+        {
+          "type": "code",
+          "path": "DRIVER",
+          "offset": "0x8a00"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS00",
+          "offset": "0x00"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS01",
+          "offset": "0x01"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS02",
+          "offset": "0x02"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS03",
+          "offset": "0x03"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS04",
+          "offset": "0x04"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS05",
+          "offset": "0x05"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS06",
+          "offset": "0x06"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS07",
+          "offset": "0x07"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x09000000",
+          "title": "MUS00 : BOSIHARI"
+        },
+        {
+          "kind": "title",
+          "code": "0x08000001",
+          "title": "MUS01 : HUNGARIAN"
+        },
+        {
+          "kind": "title",
+          "code": "0x11000002",
+          "title": "MUS02 : AIR THEME"
+        },
+        {
+          "kind": "title",
+          "code": "0x05000003",
+          "title": "MUS03 : INFINITY"
+        },
+        {
+          "kind": "title",
+          "code": "0x09000004",
+          "title": "MUS04 : PRALUDIUM"
+        },
+        {
+          "kind": "title",
+          "code": "0x0b000005",
+          "title": "MUS05 : VICTORY MARCH"
+        },
+        {
+          "kind": "title",
+          "code": "0x02000006",
+          "title": "MUS06 : THE END"
+        },
+        {
+          "kind": "title",
+          "code": "0x07000007",
+          "title": "MUS07 : SPACE"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/quasarsoft.xml",
+      "source_order": 3761,
+      "archive": "air88",
+      "id": "air88-opn"
+    },
+    {
+      "title": "[PC-8801] Legend",
+      "driver": {
+        "name": "pc88",
+        "type": "opn",
+        "alias": "QUASAR SOFT",
+        "platform": "NEC PC-8801"
+      },
+      "options": [
+        {
+          "name": "mdata_addr",
+          "value": "0xa900"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "PATCH",
+          "offset": "0x0000"
+        },
+        {
+          "type": "code",
+          "path": "legend2",
+          "offset": "0x9330"
+        },
+        {
+          "type": "bgm",
+          "path": "cry",
+          "offset": "0x00"
+        },
+        {
+          "type": "bgm",
+          "path": "ooomer",
+          "offset": "0x01"
+        },
+        {
+          "type": "bgm",
+          "path": "meme22",
+          "offset": "0x02"
+        },
+        {
+          "type": "bgm",
+          "path": "rock",
+          "offset": "0x03"
+        },
+        {
+          "type": "bgm",
+          "path": "legend1",
+          "offset": "0x04"
+        },
+        {
+          "type": "bgm",
+          "path": "bach",
+          "offset": "0x05"
+        },
+        {
+          "type": "bgm",
+          "path": "gogo",
+          "offset": "0x06"
+        },
+        {
+          "type": "bgm",
+          "path": "runba",
+          "offset": "0x07"
+        },
+        {
+          "type": "bgm",
+          "path": "pol",
+          "offset": "0x08"
+        },
+        {
+          "type": "bgm",
+          "path": "baba",
+          "offset": "0x09"
+        },
+        {
+          "type": "bgm",
+          "path": "final",
+          "offset": "0x0a"
+        },
+        {
+          "type": "bgm",
+          "path": "didi",
+          "offset": "0x0b"
+        },
+        {
+          "type": "bgm",
+          "path": "heart",
+          "offset": "0x0c"
+        },
+        {
+          "type": "bgm",
+          "path": "bl",
+          "offset": "0x0d"
+        },
+        {
+          "type": "bgm",
+          "path": "samb2",
+          "offset": "0x0e"
+        },
+        {
+          "type": "bgm",
+          "path": "openn",
+          "offset": "0x0f"
+        },
+        {
+          "type": "bgm",
+          "path": "big",
+          "offset": "0x10"
+        },
+        {
+          "type": "bgm",
+          "path": "koz",
+          "offset": "0x11"
+        },
+        {
+          "type": "bgm",
+          "path": "leoo1",
+          "offset": "0x12"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x00",
+          "title": "cry"
+        },
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "ooomer"
+        },
+        {
+          "kind": "title",
+          "code": "0x02",
+          "title": "meme22"
+        },
+        {
+          "kind": "title",
+          "code": "0x03",
+          "title": "rock"
+        },
+        {
+          "kind": "title",
+          "code": "0x04",
+          "title": "legend"
+        },
+        {
+          "kind": "title",
+          "code": "0x05",
+          "title": "bach"
+        },
+        {
+          "kind": "title",
+          "code": "0x06",
+          "title": "gogo"
+        },
+        {
+          "kind": "title",
+          "code": "0x07",
+          "title": "runba"
+        },
+        {
+          "kind": "title",
+          "code": "0x08",
+          "title": "pol"
+        },
+        {
+          "kind": "title",
+          "code": "0x09",
+          "title": "baba"
+        },
+        {
+          "kind": "title",
+          "code": "0x0a",
+          "title": "final"
+        },
+        {
+          "kind": "title",
+          "code": "0x0b",
+          "title": "didi"
+        },
+        {
+          "kind": "title",
+          "code": "0x0c",
+          "title": "heart"
+        },
+        {
+          "kind": "title",
+          "code": "0x0d",
+          "title": "bl"
+        },
+        {
+          "kind": "title",
+          "code": "0x0e",
+          "title": "samb2"
+        },
+        {
+          "kind": "title",
+          "code": "0x0f",
+          "title": "openn"
+        },
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "big"
+        },
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "koz"
+        },
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "leoo1"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/quasarsoft.xml",
+      "source_order": 3762,
+      "archive": "legend88",
+      "id": "legend88-opn"
+    },
+    {
+      "title": "[PC-8801] ASHE",
+      "driver": {
+        "name": "pc88",
+        "type": "opn",
+        "alias": "QUASAR SOFT",
+        "platform": "NEC PC-8801"
+      },
+      "options": [],
+      "assets": [
+        {
+          "type": "code",
+          "path": "PATCH",
+          "offset": "0x0000"
+        },
+        {
+          "type": "code",
+          "path": "DRIVER",
+          "offset": "0x7800"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS00",
+          "offset": "0x00"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS01",
+          "offset": "0x01"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS02",
+          "offset": "0x02"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS03",
+          "offset": "0x03"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS04",
+          "offset": "0x04"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS05",
+          "offset": "0x05"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS06",
+          "offset": "0x06"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS07",
+          "offset": "0x07"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS08",
+          "offset": "0x08"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS09",
+          "offset": "0x09"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS10",
+          "offset": "0x0a"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS11",
+          "offset": "0x0b"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x11000009",
+          "title": "MUS09 : ロゴ～オープニング1"
+        },
+        {
+          "kind": "title",
+          "code": "0x10000000",
+          "title": "MUS00 : オープニング2～オープニング3"
+        },
+        {
+          "kind": "title",
+          "code": "0x10000001",
+          "title": "MUS01 : オープニング2～オープニング3(別アレンジ:未使用)"
+        },
+        {
+          "kind": "title",
+          "code": "0x1100000a",
+          "title": "MUS10 : 討魔隊のテーマ"
+        },
+        {
+          "kind": "title",
+          "code": "0x11000002",
+          "title": "MUS02 : メインBGM1"
+        },
+        {
+          "kind": "title",
+          "code": "0x11000005",
+          "title": "MUS05 : メインBGM2"
+        },
+        {
+          "kind": "title",
+          "code": "0x11000006",
+          "title": "MUS06 : 奈落の滝"
+        },
+        {
+          "kind": "title",
+          "code": "0x11000007",
+          "title": "MUS07 : ガブロンの巣"
+        },
+        {
+          "kind": "title",
+          "code": "0x11000008",
+          "title": "MUS08 : ユキコのテーマ"
+        },
+        {
+          "kind": "title",
+          "code": "0x11000004",
+          "title": "MUS04 : ラストダンジョン～ラスボス"
+        },
+        {
+          "kind": "title",
+          "code": "0x1100000b",
+          "title": "MUS11 : エンディング1～エンディング2"
+        },
+        {
+          "kind": "title",
+          "code": "0x11000003",
+          "title": "MUS03 : ゲームオーバー"
+        },
+        {
+          "kind": "title",
+          "code": "0x0000001f",
+          "title": "演奏停止"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000020",
+          "title": "EFFECT #00"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000021",
+          "title": "EFFECT #01"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000022",
+          "title": "EFFECT #02"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000023",
+          "title": "EFFECT #03"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000024",
+          "title": "EFFECT #04"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000025",
+          "title": "EFFECT #05"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000026",
+          "title": "EFFECT #06"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000027",
+          "title": "EFFECT #07"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000028",
+          "title": "EFFECT #08"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000029",
+          "title": "EFFECT #09"
+        },
+        {
+          "kind": "title",
+          "code": "0x0000002a",
+          "title": "EFFECT #10"
+        },
+        {
+          "kind": "title",
+          "code": "0x0000002b",
+          "title": "EFFECT #11"
+        },
+        {
+          "kind": "title",
+          "code": "0x0000002c",
+          "title": "EFFECT #12"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/quasarsoft.xml",
+      "source_order": 3763,
+      "archive": "ashe",
+      "id": "ashe-opn"
+    },
+    {
+      "title": "[PC-8801] どろろ －地獄絵巻の章－(OPNA)",
+      "driver": {
+        "name": "pc88",
+        "type": "opna",
+        "alias": "QUASAR SOFT",
+        "platform": "NEC PC-8801"
+      },
+      "options": [
+        {
+          "name": "mdata_addr",
+          "value": "0x8c00"
+        },
+        {
+          "name": "use_rtc",
+          "value": "0x01"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "PATCH",
+          "offset": "0x0000"
+        },
+        {
+          "type": "code",
+          "path": "DRIVER",
+          "offset": "0x7800"
+        },
+        {
+          "type": "bgm",
+          "path": "MA100",
+          "offset": "0x00"
+        },
+        {
+          "type": "bgm",
+          "path": "MA101",
+          "offset": "0x01"
+        },
+        {
+          "type": "bgm",
+          "path": "MA102",
+          "offset": "0x02"
+        },
+        {
+          "type": "bgm",
+          "path": "MA103",
+          "offset": "0x03"
+        },
+        {
+          "type": "bgm",
+          "path": "MA104",
+          "offset": "0x04"
+        },
+        {
+          "type": "bgm",
+          "path": "MA105",
+          "offset": "0x05"
+        },
+        {
+          "type": "bgm",
+          "path": "MA106",
+          "offset": "0x06"
+        },
+        {
+          "type": "bgm",
+          "path": "MA107",
+          "offset": "0x07"
+        },
+        {
+          "type": "bgm",
+          "path": "MB107",
+          "offset": "0x08"
+        },
+        {
+          "type": "bgm",
+          "path": "MA200",
+          "offset": "0x09"
+        },
+        {
+          "type": "bgm",
+          "path": "MA300",
+          "offset": "0x0a"
+        },
+        {
+          "type": "bgm",
+          "path": "MA301",
+          "offset": "0x0b"
+        },
+        {
+          "type": "bgm",
+          "path": "MA302",
+          "offset": "0x0c"
+        },
+        {
+          "type": "bgm",
+          "path": "MA400",
+          "offset": "0x0d"
+        },
+        {
+          "type": "bgm",
+          "path": "MA401",
+          "offset": "0x0e"
+        },
+        {
+          "type": "bgm",
+          "path": "MA402",
+          "offset": "0x0f"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x00",
+          "title": "MA100 : オープニング ～地獄堂～ ／ 夜叉王"
+        },
+        {
+          "kind": "title",
+          "code": "0x07",
+          "title": "MA107 : オープニング ～タイトル～ ／ 戦闘(クヌギ・水晶鬼・どどめ)"
+        },
+        {
+          "kind": "title",
+          "code": "0x08",
+          "title": "MB107 : 再会 ／ エンディングロール"
+        },
+        {
+          "kind": "title",
+          "code": "0x04",
+          "title": "MA104 : 探索"
+        },
+        {
+          "kind": "title",
+          "code": "0x02",
+          "title": "MA102 : 戦闘 (野盗)"
+        },
+        {
+          "kind": "title",
+          "code": "0x06",
+          "title": "MA106 : 戦闘 (ミンツチカムイ・おどろび)"
+        },
+        {
+          "kind": "title",
+          "code": "0x09",
+          "title": "MA200 : おどろび出現"
+        },
+        {
+          "kind": "title",
+          "code": "0x05",
+          "title": "MA105 : うま"
+        },
+        {
+          "kind": "title",
+          "code": "0x0c",
+          "title": "MA302 : 戦闘 (役人)"
+        },
+        {
+          "kind": "title",
+          "code": "0x0a",
+          "title": "MA300 : 戦闘 (ハチヤドリ)"
+        },
+        {
+          "kind": "title",
+          "code": "0x0b",
+          "title": "MA301 : 砦への抜け穴"
+        },
+        {
+          "kind": "title",
+          "code": "0x0e",
+          "title": "MA401 : 色ふすまの部屋"
+        },
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "MA101 : 季節の部屋 ～ 春の間・夏の間・冬の間・秋の間"
+        },
+        {
+          "kind": "title",
+          "code": "0x0d",
+          "title": "MA400 : 戦闘 (夜叉王)"
+        },
+        {
+          "kind": "title",
+          "code": "0x03",
+          "title": "MA103 : ゲームオーバー"
+        },
+        {
+          "kind": "title",
+          "code": "0x0f",
+          "title": "MA402 : エンディング"
+        },
+        {
+          "kind": "title",
+          "code": "0x81",
+          "title": "EFC01 : 効果音#01"
+        },
+        {
+          "kind": "title",
+          "code": "0x82",
+          "title": "EFC02 : 効果音#02"
+        },
+        {
+          "kind": "title",
+          "code": "0x83",
+          "title": "EFC03 : 効果音#03"
+        },
+        {
+          "kind": "title",
+          "code": "0x84",
+          "title": "EFC04 : 効果音#04"
+        },
+        {
+          "kind": "title",
+          "code": "0x85",
+          "title": "EFC05 : 効果音#05"
+        },
+        {
+          "kind": "title",
+          "code": "0x86",
+          "title": "EFC06 : 効果音#06"
+        },
+        {
+          "kind": "title",
+          "code": "0x87",
+          "title": "EFC07 : 効果音#07"
+        },
+        {
+          "kind": "title",
+          "code": "0x88",
+          "title": "EFC08 : 効果音#08"
+        },
+        {
+          "kind": "title",
+          "code": "0x89",
+          "title": "EFC09 : 効果音#09"
+        },
+        {
+          "kind": "title",
+          "code": "0x8a",
+          "title": "EFC10 : 効果音#10"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/quasarsoft.xml",
+      "source_order": 3764,
+      "archive": "dororo",
+      "id": "dororo-opna"
+    },
+    {
+      "title": "[PC-8801] どろろ －地獄絵巻の章－(OPN)",
+      "driver": {
+        "name": "pc88",
+        "type": "opn",
+        "alias": "QUASAR SOFT",
+        "platform": "NEC PC-8801"
+      },
+      "options": [
+        {
+          "name": "mdata_addr",
+          "value": "0x8c00"
+        },
+        {
+          "name": "use_rtc",
+          "value": "0x01"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "PATCH",
+          "offset": "0x0000"
+        },
+        {
+          "type": "code",
+          "path": "DRIVER",
+          "offset": "0x7800"
+        },
+        {
+          "type": "bgm",
+          "path": "MB100",
+          "offset": "0x00"
+        },
+        {
+          "type": "bgm",
+          "path": "MB101",
+          "offset": "0x01"
+        },
+        {
+          "type": "bgm",
+          "path": "MB102",
+          "offset": "0x02"
+        },
+        {
+          "type": "bgm",
+          "path": "MB103",
+          "offset": "0x03"
+        },
+        {
+          "type": "bgm",
+          "path": "MB104",
+          "offset": "0x04"
+        },
+        {
+          "type": "bgm",
+          "path": "MB105",
+          "offset": "0x05"
+        },
+        {
+          "type": "bgm",
+          "path": "MB106",
+          "offset": "0x06"
+        },
+        {
+          "type": "bgm",
+          "path": "MB107",
+          "offset": "0x07"
+        },
+        {
+          "type": "bgm",
+          "path": "MB108",
+          "offset": "0x08"
+        },
+        {
+          "type": "bgm",
+          "path": "MB200",
+          "offset": "0x09"
+        },
+        {
+          "type": "bgm",
+          "path": "MB300",
+          "offset": "0x0a"
+        },
+        {
+          "type": "bgm",
+          "path": "MB301",
+          "offset": "0x0b"
+        },
+        {
+          "type": "bgm",
+          "path": "MB302",
+          "offset": "0x0c"
+        },
+        {
+          "type": "bgm",
+          "path": "MB400",
+          "offset": "0x0d"
+        },
+        {
+          "type": "bgm",
+          "path": "MB401",
+          "offset": "0x0e"
+        },
+        {
+          "type": "bgm",
+          "path": "MB402",
+          "offset": "0x0f"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "MB101 : オープニング ～地獄堂～ ／ 夜叉王"
+        },
+        {
+          "kind": "title",
+          "code": "0x03",
+          "title": "MB103 : オープニング ～タイトル～ ／ 戦闘(クヌギ・水晶鬼・どどめ)"
+        },
+        {
+          "kind": "title",
+          "code": "0x07",
+          "title": "MB107 : 再会 ／ エンディングロール"
+        },
+        {
+          "kind": "title",
+          "code": "0x06",
+          "title": "MB106 : 探索"
+        },
+        {
+          "kind": "title",
+          "code": "0x05",
+          "title": "MB105 : 戦闘(野盗)"
+        },
+        {
+          "kind": "title",
+          "code": "0x02",
+          "title": "MB102 : 戦闘 (ミンツチカムイ・おどろび)"
+        },
+        {
+          "kind": "title",
+          "code": "0x09",
+          "title": "MB200 : おどろび出現"
+        },
+        {
+          "kind": "title",
+          "code": "0x00",
+          "title": "MB100 : うま"
+        },
+        {
+          "kind": "title",
+          "code": "0x0c",
+          "title": "MB302 : 戦闘 (役人)"
+        },
+        {
+          "kind": "title",
+          "code": "0x0b",
+          "title": "MB301 : 戦闘 (ハチヤドリ)"
+        },
+        {
+          "kind": "title",
+          "code": "0x0a",
+          "title": "MB300 : 砦への抜け穴"
+        },
+        {
+          "kind": "title",
+          "code": "0x0e",
+          "title": "MB401 : 色ふすまの部屋"
+        },
+        {
+          "kind": "title",
+          "code": "0x04",
+          "title": "MB104 : 季節の部屋 ～ 春の間・夏の間・冬の間・秋の間"
+        },
+        {
+          "kind": "title",
+          "code": "0x0d",
+          "title": "MB400 : 戦闘 (夜叉王)"
+        },
+        {
+          "kind": "title",
+          "code": "0x08",
+          "title": "MB108 : ゲームオーバー"
+        },
+        {
+          "kind": "title",
+          "code": "0x0f",
+          "title": "MB402 : エンディング"
+        },
+        {
+          "kind": "title",
+          "code": "0x81",
+          "title": "EFC01 : 効果音#01"
+        },
+        {
+          "kind": "title",
+          "code": "0x82",
+          "title": "EFC02 : 効果音#02"
+        },
+        {
+          "kind": "title",
+          "code": "0x83",
+          "title": "EFC03 : 効果音#03"
+        },
+        {
+          "kind": "title",
+          "code": "0x84",
+          "title": "EFC04 : 効果音#04"
+        },
+        {
+          "kind": "title",
+          "code": "0x85",
+          "title": "EFC05 : 効果音#05"
+        },
+        {
+          "kind": "title",
+          "code": "0x86",
+          "title": "EFC06 : 効果音#06"
+        },
+        {
+          "kind": "title",
+          "code": "0x87",
+          "title": "EFC07 : 効果音#07"
+        },
+        {
+          "kind": "title",
+          "code": "0x88",
+          "title": "EFC08 : 効果音#08"
+        },
+        {
+          "kind": "title",
+          "code": "0x89",
+          "title": "EFC09 : 効果音#09"
+        },
+        {
+          "kind": "title",
+          "code": "0x8a",
+          "title": "EFC10 : 効果音#10"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/quasarsoft.xml",
+      "source_order": 3765,
+      "archive": "dororo",
+      "id": "dororo-opn"
+    },
+    {
+      "title": "[X1] Legend(OPM)",
+      "driver": {
+        "name": "x1",
+        "type": "opm",
+        "alias": "QUASAR SOFT",
+        "platform": "SHARP X1"
+      },
+      "options": [
+        {
+          "name": "mdata_addr",
+          "value": "0xf9a0"
+        },
+        {
+          "name": "mdata_size",
+          "value": "0x0600"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "PATCH",
+          "offset": "0x0000"
+        },
+        {
+          "type": "code",
+          "path": "BIOS",
+          "offset": "0xe800"
+        },
+        {
+          "type": "code",
+          "path": "81",
+          "offset": "0xf400"
+        },
+        {
+          "type": "bgm",
+          "path": "82",
+          "offset": "0x00"
+        },
+        {
+          "type": "bgm",
+          "path": "90",
+          "offset": "0x01"
+        },
+        {
+          "type": "bgm",
+          "path": "92",
+          "offset": "0x02"
+        },
+        {
+          "type": "bgm",
+          "path": "99",
+          "offset": "0x03"
+        },
+        {
+          "type": "bgm",
+          "path": "9C",
+          "offset": "0x04"
+        },
+        {
+          "type": "bgm",
+          "path": "A3",
+          "offset": "0x05"
+        },
+        {
+          "type": "bgm",
+          "path": "A5",
+          "offset": "0x06"
+        },
+        {
+          "type": "bgm",
+          "path": "AC",
+          "offset": "0x07"
+        },
+        {
+          "type": "bgm",
+          "path": "AE",
+          "offset": "0x08"
+        },
+        {
+          "type": "bgm",
+          "path": "B6",
+          "offset": "0x09"
+        },
+        {
+          "type": "bgm",
+          "path": "B9",
+          "offset": "0x0a"
+        },
+        {
+          "type": "bgm",
+          "path": "BA",
+          "offset": "0x0b"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x00000000",
+          "title": "82 LEOO1"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000001",
+          "title": "90 DIDI"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000002",
+          "title": "92 MEME11"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000003",
+          "title": "99 POL"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000004",
+          "title": "9C BIG1"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000005",
+          "title": "A3 BABA"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000006",
+          "title": "A5 BACH"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000007",
+          "title": "AC BL"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000008",
+          "title": "AE BIG2"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000009",
+          "title": "B6 HEART"
+        },
+        {
+          "kind": "title",
+          "code": "0x0000000a",
+          "title": "B9 OPENN"
+        },
+        {
+          "kind": "title",
+          "code": "0x0000000b",
+          "title": "BA CRY"
+        },
+        {
+          "kind": "comment",
+          "text": "\t<title code=\"0x000000ff\">EFFECT #00</title> "
+        },
+        {
+          "kind": "title",
+          "code": "0x010000ff",
+          "title": "EFFECT #01"
+        },
+        {
+          "kind": "title",
+          "code": "0x020000ff",
+          "title": "EFFECT #02"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/quasarsoft.xml",
+      "source_order": 3766,
+      "archive": "x1legend",
+      "id": "x1legend-opm"
+    },
+    {
+      "title": "[X1] Legend(PSG)",
+      "driver": {
+        "name": "x1",
+        "type": "psg",
+        "alias": "QUASAR SOFT",
+        "platform": "SHARP X1"
+      },
+      "options": [
+        {
+          "name": "mdata_addr",
+          "value": "0xf9a0"
+        },
+        {
+          "name": "mdata_size",
+          "value": "0x0600"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "PATCH",
+          "offset": "0x0000"
+        },
+        {
+          "type": "code",
+          "path": "BIOS",
+          "offset": "0xe800"
+        },
+        {
+          "type": "code",
+          "path": "80",
+          "offset": "0xf400"
+        },
+        {
+          "type": "bgm",
+          "path": "82",
+          "offset": "0x00"
+        },
+        {
+          "type": "bgm",
+          "path": "90",
+          "offset": "0x01"
+        },
+        {
+          "type": "bgm",
+          "path": "92",
+          "offset": "0x02"
+        },
+        {
+          "type": "bgm",
+          "path": "99",
+          "offset": "0x03"
+        },
+        {
+          "type": "bgm",
+          "path": "9C",
+          "offset": "0x04"
+        },
+        {
+          "type": "bgm",
+          "path": "A3",
+          "offset": "0x05"
+        },
+        {
+          "type": "bgm",
+          "path": "A5",
+          "offset": "0x06"
+        },
+        {
+          "type": "bgm",
+          "path": "AC",
+          "offset": "0x07"
+        },
+        {
+          "type": "bgm",
+          "path": "AE",
+          "offset": "0x08"
+        },
+        {
+          "type": "bgm",
+          "path": "B6",
+          "offset": "0x09"
+        },
+        {
+          "type": "bgm",
+          "path": "B9",
+          "offset": "0x0a"
+        },
+        {
+          "type": "bgm",
+          "path": "BA",
+          "offset": "0x0b"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x00000000",
+          "title": "82 LEOO1"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000001",
+          "title": "90 DIDI"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000002",
+          "title": "92 MEME11"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000003",
+          "title": "99 POL"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000004",
+          "title": "9C BIG1"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000005",
+          "title": "A3 BABA"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000006",
+          "title": "A5 BACH"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000007",
+          "title": "AC BL"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000008",
+          "title": "AE BIG2"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000009",
+          "title": "B6 HEART"
+        },
+        {
+          "kind": "title",
+          "code": "0x0000000a",
+          "title": "B9 OPENN"
+        },
+        {
+          "kind": "title",
+          "code": "0x0000000b",
+          "title": "BA CRY"
+        },
+        {
+          "kind": "comment",
+          "text": "\t<title code=\"0x000000ff\">EFFECT #00</title> "
+        },
+        {
+          "kind": "title",
+          "code": "0x010000ff",
+          "title": "EFFECT #01"
+        },
+        {
+          "kind": "title",
+          "code": "0x020000ff",
+          "title": "EFFECT #02"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/quasarsoft.xml",
+      "source_order": 3767,
+      "archive": "x1legend",
+      "id": "x1legend-psg"
+    }
+  ]
+}

@@ -1,0 +1,269 @@
+{
+  "format": "hoot-catalog-shard",
+  "version": 1,
+  "source_file": "xml/kaneko.xml",
+  "date": "2005/09/25",
+  "comments": [
+    " //KANEKO "
+  ],
+  "games": [
+    {
+      "title": "[X68000] 究極タイガー",
+      "driver": {
+        "name": "x68k",
+        "type": "generic",
+        "alias": "KANEKO",
+        "platform": "SHARP X68000"
+      },
+      "options": [],
+      "assets": [
+        {
+          "type": "code",
+          "path": "ktig68snd.bin"
+        },
+        {
+          "type": "x",
+          "path": "GAME.x",
+          "offset": "0x8000"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x00",
+          "title": "STOP"
+        },
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "00 : Break A Leg!"
+        },
+        {
+          "kind": "title",
+          "code": "0x02",
+          "title": "01 : Over The Sea"
+        },
+        {
+          "kind": "title",
+          "code": "0x03",
+          "title": "02 : Good Figure"
+        },
+        {
+          "kind": "title",
+          "code": "0x04",
+          "title": "03 : Tsugaru"
+        },
+        {
+          "kind": "title",
+          "code": "0x05",
+          "title": "04 : Our Life"
+        },
+        {
+          "kind": "title",
+          "code": "0x06",
+          "title": "05 : Next Dream"
+        },
+        {
+          "kind": "title",
+          "code": "0x07",
+          "title": "06 : I'm Victor"
+        },
+        {
+          "kind": "title",
+          "code": "0x08",
+          "title": "07 : The End"
+        },
+        {
+          "kind": "title",
+          "code": "0x09",
+          "title": "08 : Affection"
+        },
+        {
+          "kind": "title",
+          "code": "0x0a",
+          "title": "09 : Challenge"
+        },
+        {
+          "kind": "title",
+          "code": "0x0b",
+          "title": "0a : CREDIT"
+        },
+        {
+          "kind": "title",
+          "code": "0x0c",
+          "title": "0b : SE"
+        },
+        {
+          "kind": "title",
+          "code": "0x0d",
+          "title": "0c : SE"
+        },
+        {
+          "kind": "title",
+          "code": "0x0e",
+          "title": "0d : SE"
+        },
+        {
+          "kind": "title",
+          "code": "0x0f",
+          "title": "0e : SE"
+        },
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "0f : SE"
+        },
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "10 : SE"
+        },
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "11 : SE"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "12 : SE"
+        },
+        {
+          "kind": "title",
+          "code": "0x14",
+          "title": "13 : SE"
+        },
+        {
+          "kind": "title",
+          "code": "0x15",
+          "title": "14 : SE"
+        },
+        {
+          "kind": "title",
+          "code": "0x16",
+          "title": "15 : SE"
+        },
+        {
+          "kind": "title",
+          "code": "0x17",
+          "title": "16 : SE"
+        },
+        {
+          "kind": "title",
+          "code": "0x18",
+          "title": "17 : SE"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/kaneko.xml",
+      "source_order": 2724,
+      "archive": "ktig68snd",
+      "id": "ktig68snd-generic"
+    },
+    {
+      "title": "[X68000] 飛翔鮫",
+      "driver": {
+        "name": "x68k",
+        "type": "generic",
+        "alias": "KANEKO",
+        "platform": "SHARP X68000"
+      },
+      "options": [
+        {
+          "name": "mfp",
+          "value": "0x01"
+        },
+        {
+          "name": "dmaint",
+          "value": "0x01"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "fshark68snd.bin",
+          "offset": "0x000000"
+        },
+        {
+          "type": "code",
+          "path": "driver.bin",
+          "offset": "0x006400"
+        },
+        {
+          "type": "code",
+          "path": "music.bin",
+          "offset": "0x033000"
+        },
+        {
+          "type": "code",
+          "path": "se.bin",
+          "offset": "0x041000"
+        },
+        {
+          "type": "code",
+          "path": "pcm.bin",
+          "offset": "0x038000"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "Sky Shark"
+        },
+        {
+          "kind": "title",
+          "code": "0x02",
+          "title": "Asia"
+        },
+        {
+          "kind": "title",
+          "code": "0x03",
+          "title": "Against The Attack"
+        },
+        {
+          "kind": "title",
+          "code": "0x06",
+          "title": "Water Fromt"
+        },
+        {
+          "kind": "title",
+          "code": "0x09",
+          "title": "Behind The Bush"
+        },
+        {
+          "kind": "title",
+          "code": "0x07",
+          "title": "Last Fighter"
+        },
+        {
+          "kind": "title",
+          "code": "0x04",
+          "title": "Triumph"
+        },
+        {
+          "kind": "title",
+          "code": "0x08",
+          "title": "Forgive Your All"
+        },
+        {
+          "kind": "title",
+          "code": "0x05",
+          "title": "Restful"
+        },
+        {
+          "kind": "range",
+          "min": "0x101",
+          "max": "0x10c",
+          "title_format": "SE 0x%02x",
+          "extcode": "0"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/kaneko.xml",
+      "source_order": 2725,
+      "archive": "fshark68snd",
+      "id": "fshark68snd-generic"
+    }
+  ]
+}

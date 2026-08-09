@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="hoot.xsl"?>
+<!DOCTYPE gamelist [
+	<!ELEMENT gamelist (game|bind|childlists)*>
+	<!ATTLIST gamelist date CDATA #IMPLIED>
+	<!ELEMENT childlists (list)*>
+	<!ELEMENT list (#PCDATA)>
+	<!ELEMENT bind (exts,driver,options?)>
+	<!ELEMENT exts (ext)*>
+	<!ELEMENT ext (#PCDATA)>
+	<!ELEMENT game (name,driver,driveralias?,options?,romlist?,titlelist?)>
+	<!ELEMENT name (#PCDATA)>
+	<!ELEMENT driver (#PCDATA)>
+	<!ATTLIST driver type CDATA #IMPLIED>
+	<!ELEMENT driveralias (#PCDATA)>
+	<!ATTLIST driveralias type CDATA #IMPLIED>
+	<!ELEMENT options (option)*>
+	<!ELEMENT option EMPTY>
+	<!ATTLIST option name CDATA #REQUIRED
+					 value CDATA #REQUIRED>
+	<!ELEMENT romlist (rom)*>
+	<!ATTLIST romlist archive CDATA #IMPLIED>
+	<!ELEMENT rom (#PCDATA)>
+	<!ATTLIST rom type CDATA #REQUIRED
+				  offset CDATA #IMPLIED
+				  crc32 CDATA #IMPLIED>
+	<!ELEMENT titlelist (title|range)*>
+	<!ELEMENT title (#PCDATA)>
+	<!ATTLIST title code CDATA #REQUIRED
+					type CDATA #IMPLIED>
+	<!ELEMENT range (#PCDATA)>
+	<!ATTLIST range min CDATA #REQUIRED
+					max CDATA #REQUIRED
+					extcode CDATA #IMPLIED
+					start CDATA #IMPLIED>
+
+]>
+<gamelist date="2024/12/05">
+	<!-- //レモンクラブ -->
+	<game>
+		<name>[PC-9801] QUIZ 雑念研究所</name>
+		<driver type="opn">pc98dos</driver>
+		<driveralias type="NEC PC-9801">レモンクラブ</driveralias>
+		<!-- TAKERU販売 -->
+		<options>
+			<option name="clockmul" value="8"/>
+		</options>
+		<romlist archive="qzatuken_98">
+			<rom type="file" offset="-1">mlalf_98.com</rom>
+			<rom type="file" offset="-1">QUIZ.EXE</rom>
+			<rom type="conin" offset="5">QUIZ.EXE</rom>
+			<rom type="file" offset="0x10">LS_0.SEF</rom>
+			<rom type="file" offset="0x11">LS_1.SEF</rom>
+			<rom type="file" offset="0x12">LS_2.SEF</rom>
+			<rom type="file" offset="0x13">LS_3.SEF</rom>
+			<rom type="file" offset="0x14">LS_4.SEF</rom>
+			<rom type="file" offset="0x15">LS_5.SEF</rom>
+			<rom type="file" offset="0x16">LS_6.SEF</rom>
+			<rom type="file" offset="0x17">LS_7.SEF</rom>
+			<rom type="file" offset="0x18">LS_8.SEF</rom>
+			<rom type="file" offset="0x19">LS_9.SEF</rom>
+			<rom type="file" offset="0x1a">LS_A.SEF</rom>
+			<rom type="file" offset="0x1b">LS_B.SEF</rom>
+			<rom type="file" offset="0x1c">LS_C.SEF</rom>
+			<rom type="file" offset="0x1d">LS_D.SEF</rom>
+			<rom type="file" offset="0x1e">LS_E.SEF</rom>
+			<rom type="file" offset="0x1f">LS_F.SEF</rom>
+			<rom type="file" offset="0x20">LS_G.SEF</rom>
+			<rom type="file" offset="0x21">LS_H.SEF</rom>
+			<rom type="file" offset="0x22">LS_I.SEF</rom>
+			<rom type="file" offset="0x23">LS_J.SEF</rom>
+			<rom type="file" offset="0x24">LS_K.SEF</rom>
+			<rom type="file" offset="0x25">LS_L.SEF</rom>
+			<rom type="file" offset="0x26">LS_M.SEF</rom>
+			<rom type="file" offset="0x27">LS_N.SEF</rom>
+			<rom type="shell" offset="0">mlalf_98</rom>
+		</romlist>
+		<titlelist>
+			<title code="0x10">LS_0.SEF : </title>
+			<title code="0x11">LS_1.SEF : </title>
+			<title code="0x12">LS_2.SEF : </title>
+			<title code="0x13">LS_3.SEF : </title>
+			<title code="0x14">LS_4.SEF : </title>
+			<title code="0x15">LS_5.SEF : </title>
+			<title code="0x16">LS_6.SEF : </title>
+			<title code="0x17">LS_7.SEF : </title>
+			<title code="0x18">LS_8.SEF : </title>
+			<title code="0x19">LS_9.SEF : </title>
+			<title code="0x1a">LS_A.SEF : </title>
+			<title code="0x1b">LS_B.SEF : </title>
+			<title code="0x1c">LS_C.SEF : </title>
+			<title code="0x1d">LS_D.SEF : </title>
+			<title code="0x1e">LS_E.SEF : </title>
+			<title code="0x1f">LS_F.SEF : </title>
+			<title code="0x20">LS_G.SEF : </title>
+			<title code="0x21">LS_H.SEF : </title>
+			<title code="0x22">LS_I.SEF : </title>
+			<title code="0x23">LS_J.SEF : </title>
+			<title code="0x24">LS_K.SEF : </title>
+			<title code="0x25">LS_L.SEF : </title>
+			<title code="0x26">LS_M.SEF : </title>
+			<title code="0x27">LS_N.SEF : </title>
+		</titlelist>
+	</game>
+</gamelist>

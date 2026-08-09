@@ -6,6 +6,7 @@
 #include "config/hoot_catalog.h"
 #include "core/hoot_errors.h"
 #include "core/hoot_track_info.h"
+#include "core/hoot_visual_state.h"
 
 namespace hoot {
 
@@ -26,6 +27,11 @@ public:
     virtual void fill_track_info(const HootEntry& entry,
                                  int track_index,
                                  HootTrackInfo& out) const = 0;
+    virtual void fill_visual_state(const HootEntry&, int, HootVisualState& out) const
+    {
+        out.abi_version = HOOT_VISUAL_ABI_VERSION;
+        out.struct_size = sizeof(out);
+    }
     virtual const char* name() const = 0;
 };
 

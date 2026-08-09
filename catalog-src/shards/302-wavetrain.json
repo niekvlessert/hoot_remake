@@ -1,0 +1,275 @@
+{
+  "format": "hoot-catalog-shard",
+  "version": 1,
+  "source_file": "xml/wavetrain.xml",
+  "date": "2005/09/25",
+  "comments": [
+    " //WaveTrain "
+  ],
+  "games": [
+    {
+      "title": "[X68000] SPACE ROGUE",
+      "driver": {
+        "name": "x68k",
+        "type": "generic",
+        "alias": "WaveTrain",
+        "platform": "SHARP X68000"
+      },
+      "options": [
+        {
+          "name": "opm_mix",
+          "value": "0x60"
+        },
+        {
+          "name": "pcm_mix",
+          "value": "0x70"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "srogue68snd.bin",
+          "offset": "0x00000"
+        },
+        {
+          "type": "x",
+          "path": "fmd.x",
+          "offset": "0x10000"
+        },
+        {
+          "type": "x",
+          "path": "fmdm.x",
+          "offset": "0x20000"
+        },
+        {
+          "type": "code",
+          "path": "FMD.DAT",
+          "offset": "0x201f8"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "range",
+          "min": "0x02",
+          "max": "0x11",
+          "title_format": "BGM %02x",
+          "extcode": "1"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/wavetrain.xml",
+      "source_order": 4913,
+      "archive": "srogue68snd",
+      "id": "srogue68snd-generic"
+    },
+    {
+      "title": "[PC-9801] SPACE ROGUE",
+      "driver": {
+        "name": "pc98dos",
+        "type": "opn",
+        "alias": "WaveTrain",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "clockmul",
+          "value": "8"
+        }
+      ],
+      "assets": [
+        {
+          "type": "binary",
+          "path": "08",
+          "offset": "0xA3FEE"
+        },
+        {
+          "type": "code",
+          "path": "SOUND.ROM",
+          "offset": "0xCC000"
+        },
+        {
+          "type": "file",
+          "path": "SBD_98.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "SBD.EXE",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "VOICE.DAT",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "SR_01.M",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "SR_02.M",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "SR_03.M",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "SR_04.M",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "SR_05.M",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "SR_06.M",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "SR_07.M",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "SR_08.M",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "SR_10.M",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "SR_12.M",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "SR_13.M",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "SR_14.M",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "SR_15.M",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "SR_18.M",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "SR_19.M",
+          "offset": "-1"
+        },
+        {
+          "type": "shell",
+          "path": "sbd",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "sbd_98",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "SR_01.M :"
+        },
+        {
+          "kind": "title",
+          "code": "0x02",
+          "title": "SR_02.M :"
+        },
+        {
+          "kind": "title",
+          "code": "0x03",
+          "title": "SR_03.M :"
+        },
+        {
+          "kind": "title",
+          "code": "0x04",
+          "title": "SR_04.M :"
+        },
+        {
+          "kind": "title",
+          "code": "0x05",
+          "title": "SR_05.M :"
+        },
+        {
+          "kind": "title",
+          "code": "0x06",
+          "title": "SR_06.M :"
+        },
+        {
+          "kind": "title",
+          "code": "0x07",
+          "title": "SR_07.M :"
+        },
+        {
+          "kind": "title",
+          "code": "0x08",
+          "title": "SR_08.M :"
+        },
+        {
+          "kind": "title",
+          "code": "0x0a",
+          "title": "SR_10.M :"
+        },
+        {
+          "kind": "title",
+          "code": "0x0c",
+          "title": "SR_12.M :"
+        },
+        {
+          "kind": "title",
+          "code": "0x0d",
+          "title": "SR_13.M :"
+        },
+        {
+          "kind": "title",
+          "code": "0x0e",
+          "title": "SR_14.M :"
+        },
+        {
+          "kind": "title",
+          "code": "0x0f",
+          "title": "SR_15.M :"
+        },
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "SR_18.M :"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "SR_19.M :"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/wavetrain.xml",
+      "source_order": 4914,
+      "archive": "srogue_98",
+      "id": "srogue-98-opn"
+    }
+  ]
+}

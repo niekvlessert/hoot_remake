@@ -1,0 +1,229 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>hoot... - Sound Hardware Emulator</title>
+<style>
+html,body{margin:0;width:100%;height:100%;background:#05060a;color:#8aa0ff;font-family:monospace;overflow:hidden}
+#toolbar{height:38px;box-sizing:border-box;padding:7px 10px;background:#111631;border-bottom:1px solid #39406d;display:flex;gap:14px;align-items:center}
+#toolbar button{font:inherit;color:#aebcff;cursor:pointer;padding:4px 10px;border:1px solid #59679f;background:#171c3d}
+#toolbar button:disabled{cursor:default;opacity:.45}
+#pack{position:fixed;left:-10000px;width:1px;height:1px;opacity:0}
+#status{opacity:.85;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+#canvas{display:block;width:100vw;height:calc(100vh - 38px);outline:none;background:#030408}
+</style>
+</head>
+<body>
+<div id="toolbar">
+  <button id="openButton" disabled>Open Hoot pack ZIP</button>
+  <span id="status">Starting Hoot and browser storage...</span>
+</div>
+<input id="pack" type="file" accept=".zip,application/zip" multiple>
+<canvas id="canvas" tabindex="0" oncontextmenu="event.preventDefault()"></canvas>
+<script>
+const packInput = document.getElementById('pack');
+const openButton = document.getElementById('openButton');
+const statusText = document.getElementById('status');
+let persistenceQueue = Promise.resolve();
+let suppressNextCppPicker = false;
+let hootReady = false;
+
+function setStatus(message) {
+  statusText.textContent = message;
+}
+
+function openPackPickerFromGesture() {
+  suppressNextCppPicker = true;
+  packInput.click();
+}
+
+function ensureDir(path) {
+  try { FS.mkdirTree(path); } catch (_) {}
+}
+
+function persistBrowserFS() {
+  if (!Module.FS || typeof FS === 'undefined') return Promise.resolve();
+  persistenceQueue = persistenceQueue.catch(() => {}).then(() => new Promise(resolve => {
+    FS.syncfs(false, err => {
+      if (err) console.error('Hoot IDBFS sync failed', err);
+      resolve();
+    });
+  }));
+  return persistenceQueue;
+}
+
+function downloadVirtualFile(path) {
+  try {
+    const data = FS.readFile(path);
+    const blob = new Blob([data], {type:'audio/wav'});
+    const a = document.createElement('a');
+    a.href = URL.createObjectURL(blob);
+    a.download = path.split('/').pop() || 'hoot.wav';
+    document.body.appendChild(a);
+    a.click();
+    a.remove();
+    setTimeout(() => URL.revokeObjectURL(a.href), 1000);
+  } catch (error) {
+    console.error(error);
+    setStatus('Could not download WAV: ' + error);
+  }
+}
+
+function archiveFallbackName(fileName) {
+  const match = /^(.*?)(\.zip)$/i.exec(fileName);
+  if (!match) return fileName;
+  const originalStem = match[1];
+  const duplicateSuffixRemoved = originalStem.replace(/\s*\(\d+\)$/i, '');
+  const trailingCopyMarkRemoved = duplicateSuffixRemoved.replace(/[_\s-]+$/, '');
+  return (trailingCopyMarkRemoved || originalStem) + '.zip';
+}
+
+function openVirtualPack(path) {
+  return Module.ccall('hoot_web_open_pack', 'number', ['string'], [path]) !== 0;
+}
+
+async function importPacks(files) {
+  const list = Array.from(files || []).filter(file => /\.zip$/i.test(file.name));
+  if (!list.length) {
+    setStatus('No ZIP file was selected.');
+    return false;
+  }
+  if (!hootReady || !Module.FS || !Module.ccall) {
+    setStatus('Hoot is still starting. Please try the pack again in a moment.');
+    return false;
+  }
+
+  ensureDir('/hoot/packs');
+  setStatus('Importing ' + list.length + ' pack' + (list.length === 1 ? '' : 's') + '...');
+
+  const imported = [];
+  for (const file of list) {
+    const safeName = file.name.replace(/[\\/]/g, '_');
+    const path = '/hoot/packs/' + safeName;
+    const bytes = new Uint8Array(await file.arrayBuffer());
+    FS.writeFile(path, bytes);
+    imported.push({file, path, bytes});
+  }
+
+  Module.ccall('hoot_web_refresh_packs', null, [], []);
+  let opened = openVirtualPack(imported[0].path);
+  let openedName = imported[0].file.name;
+
+  // Browser downloads are often renamed to "pack(1).zip"; some old Hoot
+  // mirrors also use a trailing underscore. The catalogue uses the original
+  // archive stem, so retry a cleaned name only when the exact name failed.
+  if (!opened) {
+    const fallbackName = archiveFallbackName(imported[0].file.name);
+    if (fallbackName !== imported[0].file.name) {
+      const fallbackPath = '/hoot/packs/' + fallbackName.replace(/[\\/]/g, '_');
+      FS.writeFile(fallbackPath, imported[0].bytes);
+      Module.ccall('hoot_web_refresh_packs', null, [], []);
+      opened = openVirtualPack(fallbackPath);
+      if (opened) openedName = fallbackName;
+    }
+  }
+
+  void persistBrowserFS();
+  if (opened) {
+    const renamed = openedName !== imported[0].file.name
+      ? ' (matched as ' + openedName + ')'
+      : '';
+    setStatus('Loaded ' + imported[0].file.name + renamed + '.');
+  } else {
+    setStatus('Imported, but no catalogue entry matches ' + imported[0].file.name + '. Open Library for details.');
+  }
+  Module.ccall('hoot_web_resume_audio', null, [], []);
+  Module.canvas.focus();
+  return opened;
+}
+
+var Module = {
+  canvas: document.getElementById('canvas'),
+  hootPersist: persistBrowserFS,
+  hootDownloadFile: downloadVirtualFile,
+  hootOpenPackPicker: function() {
+    if (suppressNextCppPicker) {
+      suppressNextCppPicker = false;
+      return;
+    }
+    packInput.click();
+  },
+  printErr: function(message) {
+    console.error(message);
+  },
+  preRun: [function() {
+    const dependency = 'hoot-idbfs';
+    addRunDependency(dependency);
+    try { FS.mkdir('/hoot'); } catch (_) {}
+    FS.mount(IDBFS, {}, '/hoot');
+    FS.syncfs(true, function(error) {
+      if (error) console.error('Hoot IDBFS restore failed', error);
+      ensureDir('/hoot/packs');
+      ensureDir('/hoot/catalog');
+      ensureDir('/hoot/recordings');
+      removeRunDependency(dependency);
+    });
+  }],
+  onRuntimeInitialized: function() {
+    setStatus('Finishing Hoot startup...');
+  },
+  postRun: [function() {
+    Module.ccall('hoot_web_refresh_packs', null, [], []);
+    hootReady = true;
+    openButton.disabled = false;
+    setStatus('Ready. Open a Hoot pack ZIP to start playback.');
+  }]
+};
+
+openButton.addEventListener('click', openPackPickerFromGesture);
+packInput.addEventListener('change', async event => {
+  try {
+    await importPacks(event.target.files);
+  } catch (error) {
+    console.error(error);
+    setStatus('Import failed: ' + (error && error.message ? error.message : error));
+  } finally {
+    event.target.value = '';
+  }
+});
+
+for (const eventName of ['pointerdown', 'keydown']) {
+  document.addEventListener(eventName, () => {
+    if (hootReady && Module.ccall)
+      Module.ccall('hoot_web_resume_audio', null, [], []);
+  }, {passive:true});
+}
+
+document.addEventListener('keydown', event => {
+  if (document.activeElement !== Module.canvas) return;
+  const key = String(event.key || '').toLowerCase();
+  if (event.ctrlKey && (key === 's' || key === 'r')) event.preventDefault();
+}, {capture:true});
+
+const canvas = document.getElementById('canvas');
+canvas.addEventListener('pointerdown', event => {
+  const rect = canvas.getBoundingClientRect();
+  if (!rect.width || !rect.height) return;
+  const x = (event.clientX - rect.left) * 1440 / rect.width;
+  const y = (event.clientY - rect.top) * 900 / rect.height;
+  if (x >= 1006 && x < 1122 && y >= 5 && y < 29) openPackPickerFromGesture();
+});
+canvas.addEventListener('keydown', event => {
+  if (!event.ctrlKey && !event.metaKey && !event.altKey && String(event.key || '').toLowerCase() === 'o')
+    openPackPickerFromGesture();
+});
+canvas.addEventListener('dragover', event => { event.preventDefault(); });
+canvas.addEventListener('drop', async event => {
+  event.preventDefault();
+  try {
+    await importPacks(event.dataTransfer.files);
+  } catch (error) {
+    console.error(error);
+    setStatus('Import failed: ' + (error && error.message ? error.message : error));
+  }
+});
+</script>
+{{{ SCRIPT }}}
+</body>
+</html>

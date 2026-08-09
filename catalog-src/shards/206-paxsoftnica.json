@@ -1,0 +1,84 @@
+{
+  "format": "hoot-catalog-shard",
+  "version": 1,
+  "source_file": "xml/paxsoftnica.xml",
+  "date": "2008/01/22",
+  "comments": [
+    " //パックスソフトニカ "
+  ],
+  "games": [
+    {
+      "title": "[PC-8801] HANG-ON",
+      "driver": {
+        "name": "pc88",
+        "type": "opn",
+        "alias": "パックスソフトニカ",
+        "platform": "NEC PC-8801"
+      },
+      "options": [
+        {
+          "name": "init_pc",
+          "value": "0x8f00"
+        },
+        {
+          "name": "use_rtc",
+          "value": "0x01"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "PATCH",
+          "offset": "0x8f00"
+        },
+        {
+          "type": "code",
+          "path": "PROG",
+          "offset": "0x9000"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x8f",
+          "title": "8f : TITLE"
+        },
+        {
+          "kind": "title",
+          "code": "0x86",
+          "title": "86 : START SIGNAL"
+        },
+        {
+          "kind": "title",
+          "code": "0x81",
+          "title": "81 : MAIN BGM"
+        },
+        {
+          "kind": "title",
+          "code": "0x87",
+          "title": "87 : CHECK POINT SIGNAL"
+        },
+        {
+          "kind": "title",
+          "code": "0x88",
+          "title": "88 : GOAL"
+        },
+        {
+          "kind": "title",
+          "code": "0x89",
+          "title": "89 : GAME OVER"
+        },
+        {
+          "kind": "title",
+          "code": "0x8b",
+          "title": "8b : MISS"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/paxsoftnica.xml",
+      "source_order": 3636,
+      "archive": "hangon88",
+      "id": "hangon88-opn"
+    }
+  ]
+}

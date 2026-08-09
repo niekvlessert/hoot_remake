@@ -6,7 +6,8 @@
 #include <vector>
 
 #include "config/hoot_catalog.h"
-#include "config/hoot_xml_loader.h"
+#include "config/hoot_catalog_loader.h"
+#include "core/console_utf8.h"
 #include "core/hoot_api.h"
 #include "wav_writer.h"
 
@@ -94,7 +95,7 @@ bool parse_options(int argc, char** argv, Options& options)
 int list_entries(const std::string& catalog_path)
 {
     hoot::HootCatalog catalog;
-    hoot::HootXmlLoader loader;
+    hoot::HootCatalogLoader loader;
     std::string error;
     if (!loader.load_file(catalog_path, catalog, error)) {
         std::cerr << error << "\n";
@@ -126,6 +127,10 @@ void print_track_info(const Options& options, const HootTrackInfo& info)
               << " opn-keyon=" << info.debug_opn_keyons
               << " last-opn=0x" << std::hex << info.debug_last_opn_reg
               << ":0x" << info.debug_last_opn_data << std::dec
+              << " unsupported=" << info.debug_unsupported_opcodes
+              << " last-unsupported=0x" << std::hex << info.debug_last_unsupported_opcode
+              << "@" << info.debug_last_unsupported_cs << ":" << info.debug_last_unsupported_ip
+              << std::dec
               << " writes[00,01,02,03,32,44,45]="
               << info.debug_port_writes_00 << ","
               << info.debug_port_writes_01 << ","
@@ -133,7 +138,28 @@ void print_track_info(const Options& options, const HootTrackInfo& info)
               << info.debug_port_writes_03 << ","
               << info.debug_port_writes_32 << ","
               << info.debug_port_writes_44 << ","
-              << info.debug_port_writes_45 << "\n";
+              << info.debug_port_writes_45
+              << " midi[type=" << info.debug_midiout_type
+              << " backend=" << info.debug_midi_backend_kind
+              << " active=" << info.debug_midi_backend_active
+              << " enq=" << info.debug_midi_bytes_enqueued
+              << " tx=" << info.debug_midi_bytes_transmitted
+              << " msg=" << info.debug_midi_channel_messages
+              << " sysex=" << info.debug_midi_sysex_messages
+              << " noteon=" << info.debug_midi_note_ons
+              << " noteoff=" << info.debug_midi_note_offs
+              << " cc=" << info.debug_midi_control_changes
+              << " pc=" << info.debug_midi_program_changes
+              << " bend=" << info.debug_midi_pitch_bends
+              << " run=" << info.debug_midi_running_status_messages
+              << " malformed=" << info.debug_midi_malformed_bytes
+              << " fifo=" << info.debug_midi_fifo_bytes
+              << "/" << info.debug_midi_peak_fifo_bytes
+              << " irq=" << info.debug_midi_irq_count
+              << " synth_frames=" << info.debug_midi_synth_frames
+              << "] beep[audible=" << info.debug_beep_audible_frames
+              << " rendered=" << info.debug_beep_rendered_frames
+              << "]\n";
     if (info.warning[0] != '\0') {
         std::cerr << "warning: " << info.warning << "\n";
     }
@@ -143,6 +169,7 @@ void print_track_info(const Options& options, const HootTrackInfo& info)
 
 int main(int argc, char** argv)
 {
+    hoot::enable_utf8_console();
     Options options;
     if (!parse_options(argc, argv, options)) {
         usage();
@@ -200,7 +227,7 @@ int main(int argc, char** argv)
         return 1;
     }
 
-    if (hoot_load_xml(ctx.get(), options.catalog.c_str()) != HOOT_OK) {
+    if (hoot_load_catalog(ctx.get(), options.catalog.c_str()) != HOOT_OK) {
         std::cerr << hoot_last_error(ctx.get()) << "\n";
         return 1;
     }

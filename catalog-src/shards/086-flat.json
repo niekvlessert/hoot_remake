@@ -1,0 +1,838 @@
+{
+  "format": "hoot-catalog-shard",
+  "version": 1,
+  "source_file": "xml/flat.xml",
+  "date": "2005/09/25",
+  "comments": [
+    " //FLAT "
+  ],
+  "games": [
+    {
+      "title": "[PC-9801] NOLTIA(OPN)",
+      "driver": {
+        "name": "pc98dos",
+        "type": "opn",
+        "alias": "FLAT",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "clockmul",
+          "value": "8"
+        },
+        {
+          "name": "showfm3ex",
+          "value": "1"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "NAX.com",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "NLP_HOOT.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "TONES.DTA",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "PCM.DTA",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "PCM.TBL",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "SSGPCM.TBL",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "SSGPCM.DTA",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "NOLTIA00.N",
+          "offset": "0x10"
+        },
+        {
+          "type": "file",
+          "path": "NOLTIA01.N",
+          "offset": "0x11"
+        },
+        {
+          "type": "file",
+          "path": "NOLTIA02.N",
+          "offset": "0x12"
+        },
+        {
+          "type": "file",
+          "path": "NOLTIA03.N",
+          "offset": "0x13"
+        },
+        {
+          "type": "file",
+          "path": "NOLTIA04.N",
+          "offset": "0x14"
+        },
+        {
+          "type": "file",
+          "path": "NOLTIA05.N",
+          "offset": "0x15"
+        },
+        {
+          "type": "file",
+          "path": "NOLTIA06.N",
+          "offset": "0x16"
+        },
+        {
+          "type": "file",
+          "path": "NOLTIA08.N",
+          "offset": "0x17"
+        },
+        {
+          "type": "file",
+          "path": "NOLTIA09.N",
+          "offset": "0x18"
+        },
+        {
+          "type": "file",
+          "path": "NOLTIA10.N",
+          "offset": "0x19"
+        },
+        {
+          "type": "file",
+          "path": "NOLTIA11.N",
+          "offset": "0x1A"
+        },
+        {
+          "type": "file",
+          "path": "NOLTIA12.N",
+          "offset": "0x1B"
+        },
+        {
+          "type": "file",
+          "path": "TEST.N",
+          "offset": "0x1C"
+        },
+        {
+          "type": "shell",
+          "path": "NAX -P -Q",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "NLP_HOOT",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "NOLTIA00.N : その1"
+        },
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "NOLTIA01.N : その2"
+        },
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "NOLTIA02.N : その3"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "NOLTIA03.N : その4"
+        },
+        {
+          "kind": "title",
+          "code": "0x15",
+          "title": "NOLTIA05.N : その5"
+        },
+        {
+          "kind": "title",
+          "code": "0x16",
+          "title": "NOLTIA06.N : その6"
+        },
+        {
+          "kind": "title",
+          "code": "0x17",
+          "title": "NOLTIA08.N : その7"
+        },
+        {
+          "kind": "title",
+          "code": "0x18",
+          "title": "NOLTIA09.N : その8"
+        },
+        {
+          "kind": "title",
+          "code": "0x19",
+          "title": "NOLTIA10.N : その9"
+        },
+        {
+          "kind": "title",
+          "code": "0x1A",
+          "title": "NOLTIA11.N : その10"
+        },
+        {
+          "kind": "title",
+          "code": "0x14",
+          "title": "NOLTIA04.N :"
+        },
+        {
+          "kind": "title",
+          "code": "0x1B",
+          "title": "NOLTIA12.N :"
+        },
+        {
+          "kind": "title",
+          "code": "0x1C",
+          "title": "TEST.N     :"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/flat.xml",
+      "source_order": 2060,
+      "archive": "noltia_98",
+      "id": "noltia-98-opn"
+    },
+    {
+      "title": "[PC-9801] NOLTIA(SPB)",
+      "driver": {
+        "name": "pc98dos",
+        "type": "opna",
+        "alias": "FLAT",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "clockmul",
+          "value": "8"
+        },
+        {
+          "name": "showfm3ex",
+          "value": "1"
+        },
+        {
+          "name": "fm_mix",
+          "value": "0"
+        },
+        {
+          "name": "ssg_mix",
+          "value": "-13"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "NAX.com",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "NLP_HOOT.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "TONES.DTA",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "PCM.DTA",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "PCM.TBL",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "SSGPCM.TBL",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "SSGPCM.DTA",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "NOLTIA00.NA",
+          "offset": "0x10"
+        },
+        {
+          "type": "file",
+          "path": "NOLTIA01.NA",
+          "offset": "0x11"
+        },
+        {
+          "type": "file",
+          "path": "NOLTIA02.NA",
+          "offset": "0x12"
+        },
+        {
+          "type": "file",
+          "path": "NOLTIA03.NA",
+          "offset": "0x13"
+        },
+        {
+          "type": "file",
+          "path": "NOLTIA04.NA",
+          "offset": "0x14"
+        },
+        {
+          "type": "file",
+          "path": "NOLTIA05.NA",
+          "offset": "0x15"
+        },
+        {
+          "type": "file",
+          "path": "NOLTIA06.NA",
+          "offset": "0x16"
+        },
+        {
+          "type": "file",
+          "path": "NOLTIA08.NA",
+          "offset": "0x17"
+        },
+        {
+          "type": "file",
+          "path": "NOLTIA09.NA",
+          "offset": "0x18"
+        },
+        {
+          "type": "file",
+          "path": "NOLTIA10.NA",
+          "offset": "0x19"
+        },
+        {
+          "type": "file",
+          "path": "NOLTIA11.NA",
+          "offset": "0x1A"
+        },
+        {
+          "type": "file",
+          "path": "NOLTIA12.NA",
+          "offset": "0x1B"
+        },
+        {
+          "type": "file",
+          "path": "TEST.NA",
+          "offset": "0x1C"
+        },
+        {
+          "type": "shell",
+          "path": "NAX -P",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "NLP_HOOT",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "NOLTIA00.NA : その1"
+        },
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "NOLTIA01.NA : その2"
+        },
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "NOLTIA02.NA : その3"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "NOLTIA03.NA : その4"
+        },
+        {
+          "kind": "title",
+          "code": "0x15",
+          "title": "NOLTIA05.NA : その5"
+        },
+        {
+          "kind": "title",
+          "code": "0x16",
+          "title": "NOLTIA06.NA : その6"
+        },
+        {
+          "kind": "title",
+          "code": "0x17",
+          "title": "NOLTIA08.NA : その7"
+        },
+        {
+          "kind": "title",
+          "code": "0x18",
+          "title": "NOLTIA09.NA : その8"
+        },
+        {
+          "kind": "title",
+          "code": "0x19",
+          "title": "NOLTIA10.NA : その9"
+        },
+        {
+          "kind": "title",
+          "code": "0x1A",
+          "title": "NOLTIA11.NA : その10"
+        },
+        {
+          "kind": "title",
+          "code": "0x14",
+          "title": "NOLTIA04.NA :"
+        },
+        {
+          "kind": "title",
+          "code": "0x1B",
+          "title": "NOLTIA12.NA :"
+        },
+        {
+          "kind": "title",
+          "code": "0x1C",
+          "title": "TEST.NA     :"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/flat.xml",
+      "source_order": 2061,
+      "archive": "noltia_98",
+      "id": "noltia-98-opna"
+    },
+    {
+      "title": "[PC-9801] NOLTIA(OPN+SSGPCM)",
+      "driver": {
+        "name": "pc98dos",
+        "type": "opn",
+        "alias": "FLAT",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "clockmul",
+          "value": "8"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "NAX.com",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "NLP_HOOT.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "TONES.DTA",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "PCM.DTA",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "PCM.TBL",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "SSGPCM.TBL",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "SSGPCM.DTA",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "NOLTIA00.NX",
+          "offset": "0x10"
+        },
+        {
+          "type": "file",
+          "path": "NOLTIA01.NX",
+          "offset": "0x11"
+        },
+        {
+          "type": "file",
+          "path": "NOLTIA02.NX",
+          "offset": "0x12"
+        },
+        {
+          "type": "file",
+          "path": "NOLTIA03.NX",
+          "offset": "0x13"
+        },
+        {
+          "type": "file",
+          "path": "NOLTIA04.NX",
+          "offset": "0x14"
+        },
+        {
+          "type": "file",
+          "path": "NOLTIA05.NX",
+          "offset": "0x15"
+        },
+        {
+          "type": "file",
+          "path": "NOLTIA06.NX",
+          "offset": "0x16"
+        },
+        {
+          "type": "file",
+          "path": "NOLTIA08.NX",
+          "offset": "0x17"
+        },
+        {
+          "type": "file",
+          "path": "NOLTIA09.NX",
+          "offset": "0x18"
+        },
+        {
+          "type": "file",
+          "path": "NOLTIA10.NX",
+          "offset": "0x19"
+        },
+        {
+          "type": "file",
+          "path": "NOLTIA11.NX",
+          "offset": "0x1A"
+        },
+        {
+          "type": "file",
+          "path": "NOLTIA12.NX",
+          "offset": "0x1B"
+        },
+        {
+          "type": "file",
+          "path": "TEST.NX",
+          "offset": "0x1C"
+        },
+        {
+          "type": "shell",
+          "path": "NAX -P -Q",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "NLP_HOOT",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "NOLTIA00.NX : その1"
+        },
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "NOLTIA01.NX : その2"
+        },
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "NOLTIA02.NX : その3"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "NOLTIA03.NX : その4"
+        },
+        {
+          "kind": "title",
+          "code": "0x15",
+          "title": "NOLTIA05.NX : その5"
+        },
+        {
+          "kind": "title",
+          "code": "0x16",
+          "title": "NOLTIA06.NX : その6"
+        },
+        {
+          "kind": "title",
+          "code": "0x17",
+          "title": "NOLTIA08.NX : その7"
+        },
+        {
+          "kind": "title",
+          "code": "0x18",
+          "title": "NOLTIA09.NX : その8"
+        },
+        {
+          "kind": "title",
+          "code": "0x19",
+          "title": "NOLTIA10.NX : その9"
+        },
+        {
+          "kind": "title",
+          "code": "0x1A",
+          "title": "NOLTIA11.NX : その10"
+        },
+        {
+          "kind": "title",
+          "code": "0x14",
+          "title": "NOLTIA04.NX :"
+        },
+        {
+          "kind": "title",
+          "code": "0x1B",
+          "title": "NOLTIA12.NX :"
+        },
+        {
+          "kind": "title",
+          "code": "0x1C",
+          "title": "TEST.NX     :"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/flat.xml",
+      "source_order": 2062,
+      "archive": "noltia_98",
+      "id": "noltia-98-opn-2"
+    },
+    {
+      "title": "[PC-9801] Camisole",
+      "driver": {
+        "name": "pc98dos",
+        "type": "opn",
+        "alias": "FLAT",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "clockmul",
+          "value": "8"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "NA.com",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "NLP_HOOT.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "TONES.DTA",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "PCM.TBL",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "DDRIVE_N.O",
+          "offset": "0x10"
+        },
+        {
+          "type": "file",
+          "path": "FINE.O",
+          "offset": "0x11"
+        },
+        {
+          "type": "file",
+          "path": "MUSIC_10.O",
+          "offset": "0x12"
+        },
+        {
+          "type": "file",
+          "path": "MUSIC_11.O",
+          "offset": "0x13"
+        },
+        {
+          "type": "file",
+          "path": "MUSIC_12.O",
+          "offset": "0x14"
+        },
+        {
+          "type": "file",
+          "path": "MUSIC_13.O",
+          "offset": "0x15"
+        },
+        {
+          "type": "file",
+          "path": "MUSIC_14.O",
+          "offset": "0x16"
+        },
+        {
+          "type": "file",
+          "path": "MUSIC_15.O",
+          "offset": "0x17"
+        },
+        {
+          "type": "file",
+          "path": "MUSIC_16.O",
+          "offset": "0x18"
+        },
+        {
+          "type": "file",
+          "path": "MUSIC_17.O",
+          "offset": "0x19"
+        },
+        {
+          "type": "file",
+          "path": "MUSIC_18.O",
+          "offset": "0x1A"
+        },
+        {
+          "type": "file",
+          "path": "MUSIC_19.O",
+          "offset": "0x1B"
+        },
+        {
+          "type": "file",
+          "path": "MUSIC_20.O",
+          "offset": "0x1C"
+        },
+        {
+          "type": "file",
+          "path": "MUSIC_21.O",
+          "offset": "0x1D"
+        },
+        {
+          "type": "file",
+          "path": "PFMS_12N.O",
+          "offset": "0x1E"
+        },
+        {
+          "type": "file",
+          "path": "PFMS_OPN.O",
+          "offset": "0x1F"
+        },
+        {
+          "type": "shell",
+          "path": "NA -I",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "NLP_HOOT",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x1F",
+          "title": "PFMS_OPN.O : CAMISOLE (キャミソ-ル)"
+        },
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "MUSIC_10.O : Presentiment"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "MUSIC_11.O : beat of town"
+        },
+        {
+          "kind": "title",
+          "code": "0x14",
+          "title": "MUSIC_12.O : Funny time"
+        },
+        {
+          "kind": "title",
+          "code": "0x15",
+          "title": "MUSIC_13.O : Girl Step"
+        },
+        {
+          "kind": "title",
+          "code": "0x16",
+          "title": "MUSIC_14.O : ファイナル・アタック"
+        },
+        {
+          "kind": "title",
+          "code": "0x17",
+          "title": "MUSIC_15.O : サンセット・ビ-チ"
+        },
+        {
+          "kind": "title",
+          "code": "0x18",
+          "title": "MUSIC_16.O : ノスタルジア… (琥珀色の思い…)"
+        },
+        {
+          "kind": "title",
+          "code": "0x19",
+          "title": "MUSIC_17.O : MEMORY (セピアの想い出…)"
+        },
+        {
+          "kind": "title",
+          "code": "0x1A",
+          "title": "MUSIC_18.O : コンフュ－ジョン"
+        },
+        {
+          "kind": "title",
+          "code": "0x1B",
+          "title": "MUSIC_19.O : マリオネット"
+        },
+        {
+          "kind": "title",
+          "code": "0x1C",
+          "title": "MUSIC_20.O : インサイド・オブ・ザ・スト－ム"
+        },
+        {
+          "kind": "title",
+          "code": "0x1E",
+          "title": "PFMS_12N.O : タイトル　テ－マ"
+        },
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "DDRIVE_N.O :"
+        },
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "FINE.O     : (MUSIC ROOM)"
+        },
+        {
+          "kind": "title",
+          "code": "0x1D",
+          "title": "MUSIC_21.O : (エンディング)"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/flat.xml",
+      "source_order": 2063,
+      "archive": "camisole_98",
+      "id": "camisole-98-opn"
+    }
+  ]
+}

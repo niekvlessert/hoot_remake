@@ -1,0 +1,830 @@
+{
+  "format": "hoot-catalog-shard",
+  "version": 1,
+  "source_file": "xml/pack-in-video.xml",
+  "date": "2007/11/23",
+  "comments": [
+    " //Pack-In-Video "
+  ],
+  "games": [
+    {
+      "title": "[PC-8801] SUPER RAMBO",
+      "driver": {
+        "name": "pc88",
+        "type": "opn",
+        "alias": "Pack-In-Video",
+        "platform": "NEC PC-8801"
+      },
+      "options": [
+        {
+          "name": "mdata_size",
+          "value": "0x2400"
+        },
+        {
+          "name": "mfile_size",
+          "value": "0x2400"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "PATCH",
+          "offset": "0x0000"
+        },
+        {
+          "type": "code",
+          "path": "01F",
+          "offset": "0x0100"
+        },
+        {
+          "type": "bgm",
+          "path": "011",
+          "offset": "0x00"
+        },
+        {
+          "type": "bgm",
+          "path": "01F",
+          "offset": "0x01"
+        },
+        {
+          "type": "bgm",
+          "path": "022",
+          "offset": "0x02"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "01F : DEMO"
+        },
+        {
+          "kind": "title",
+          "code": "0x00",
+          "title": "011 : GAME OVER"
+        },
+        {
+          "kind": "title",
+          "code": "0x02",
+          "title": "022 : ENDING"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/pack-in-video.xml",
+      "source_order": 3543,
+      "archive": "srambo88",
+      "id": "srambo88-opn"
+    },
+    {
+      "title": "[PC-8801] 歌声人",
+      "driver": {
+        "name": "pc88",
+        "type": "opna",
+        "alias": "Pack-In-Video",
+        "platform": "NEC PC-8801"
+      },
+      "options": [
+        {
+          "name": "mdata_addr",
+          "value": "0xb800"
+        },
+        {
+          "name": "use_pcmx8",
+          "value": "0x01"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "PATCH",
+          "offset": "0x0000"
+        },
+        {
+          "type": "code",
+          "path": "MAIN1-.COM",
+          "offset": "0x0140"
+        },
+        {
+          "type": "code",
+          "path": "MAIN2-.COM",
+          "offset": "0x8a00"
+        },
+        {
+          "type": "adpcm",
+          "path": "VOIB01.PDT",
+          "offset": "0x00000"
+        },
+        {
+          "type": "adpcm",
+          "path": "VOIB02.PDT",
+          "offset": "0x04000"
+        },
+        {
+          "type": "adpcm",
+          "path": "VOIB03.PDT",
+          "offset": "0x08000"
+        },
+        {
+          "type": "adpcm",
+          "path": "VOIB04.PDT",
+          "offset": "0x0c000"
+        },
+        {
+          "type": "adpcm",
+          "path": "VOIB05.PDT",
+          "offset": "0x10000"
+        },
+        {
+          "type": "adpcm",
+          "path": "VOIB06.PDT",
+          "offset": "0x14000"
+        },
+        {
+          "type": "adpcm",
+          "path": "VOIB07.PDT",
+          "offset": "0x18000"
+        },
+        {
+          "type": "adpcm",
+          "path": "VOIB08.PDT",
+          "offset": "0x1c000"
+        },
+        {
+          "type": "adpcm",
+          "path": "VOIB09.PDT",
+          "offset": "0x20000"
+        },
+        {
+          "type": "adpcm",
+          "path": "VOIB10.PDT",
+          "offset": "0x24000"
+        },
+        {
+          "type": "adpcm",
+          "path": "VOIB11.PDT",
+          "offset": "0x28000"
+        },
+        {
+          "type": "adpcm",
+          "path": "VOIB12.PDT",
+          "offset": "0x2c000"
+        },
+        {
+          "type": "adpcm",
+          "path": "VOIB13.PDT",
+          "offset": "0x30000"
+        },
+        {
+          "type": "adpcm",
+          "path": "VOIB14.PDT",
+          "offset": "0x34000"
+        },
+        {
+          "type": "adpcm",
+          "path": "VOIB15.PDT",
+          "offset": "0x38000"
+        },
+        {
+          "type": "adpcm",
+          "path": "VOIB16.PDT",
+          "offset": "0x3c000"
+        },
+        {
+          "type": "bgm",
+          "path": "DEMO01.MEL",
+          "offset": "0x00"
+        },
+        {
+          "type": "bgm",
+          "path": "DEMO02.MEL",
+          "offset": "0x01"
+        },
+        {
+          "type": "bgm",
+          "path": "DEMO03.MEL",
+          "offset": "0x02"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x00",
+          "title": "DEMO01.MEL : 赤いスイートピー"
+        },
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "DEMO02.MEL : 悲しみよ こんにちは"
+        },
+        {
+          "kind": "title",
+          "code": "0x02",
+          "title": "DEMO03.MEL : 彼女とTIP ON DUO"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/pack-in-video.xml",
+      "source_order": 3544,
+      "archive": "kaseijin",
+      "id": "kaseijin-opna"
+    },
+    {
+      "title": "[MSX] THE GOLF(OPLL)",
+      "driver": {
+        "name": "msx",
+        "type": "generic",
+        "alias": "Pack-In-Video",
+        "platform": "MSX"
+      },
+      "options": [
+        {
+          "name": "init_pc",
+          "value": "0x0400"
+        },
+        {
+          "name": "use_opll",
+          "value": "0x01"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "patch",
+          "offset": "0x0400"
+        },
+        {
+          "type": "code",
+          "path": "PAC.BIN",
+          "offset": "0x8FF9"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "range",
+          "min": "0x00",
+          "max": "0x03",
+          "title_format": "BGM 0x%02x",
+          "extcode": "1"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/pack-in-video.xml",
+      "source_order": 3545,
+      "archive": "thegolf_msx",
+      "id": "thegolf-msx-generic"
+    },
+    {
+      "title": "[MSX] THE GOLF(PSG)",
+      "driver": {
+        "name": "msx",
+        "type": "generic",
+        "alias": "Pack-In-Video",
+        "platform": "MSX"
+      },
+      "options": [
+        {
+          "name": "init_pc",
+          "value": "0x0400"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "patch2",
+          "offset": "0x0400"
+        },
+        {
+          "type": "code",
+          "path": "FM1.BIN",
+          "offset": "0x8FF9"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "range",
+          "min": "0x01",
+          "max": "0x05",
+          "title_format": "BGM 0x%02x",
+          "extcode": "1"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/pack-in-video.xml",
+      "source_order": 3546,
+      "archive": "thegolf_msx",
+      "id": "thegolf-msx-generic-2"
+    },
+    {
+      "title": "[MSX] シルヴィアーナ ～愛いっぱいの冒険者～(OPLL)",
+      "driver": {
+        "name": "msx",
+        "type": "generic",
+        "alias": "Pack-In-Video",
+        "platform": "MSX"
+      },
+      "options": [
+        {
+          "name": "mdata_addr",
+          "value": "0x9c65"
+        },
+        {
+          "name": "mdata_size",
+          "value": "0xe00"
+        },
+        {
+          "name": "mfile_size",
+          "value": "0xe00"
+        },
+        {
+          "name": "init_pc",
+          "value": "0x0400"
+        },
+        {
+          "name": "use_opll",
+          "value": "0x01"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "patch",
+          "offset": "0x0400"
+        },
+        {
+          "type": "code",
+          "path": "FM_DRV.COM",
+          "offset": "0xBA50"
+        },
+        {
+          "type": "bgm",
+          "path": "BGM_00.COM",
+          "offset": "0x00"
+        },
+        {
+          "type": "bgm",
+          "path": "BGM_01.COM",
+          "offset": "0x01"
+        },
+        {
+          "type": "bgm",
+          "path": "BGM_02.COM",
+          "offset": "0x02"
+        },
+        {
+          "type": "bgm",
+          "path": "BGM_03.COM",
+          "offset": "0x03"
+        },
+        {
+          "type": "bgm",
+          "path": "BGM_04.COM",
+          "offset": "0x04"
+        },
+        {
+          "type": "bgm",
+          "path": "BGM_05.COM",
+          "offset": "0x05"
+        },
+        {
+          "type": "bgm",
+          "path": "BGM_06.COM",
+          "offset": "0x06"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x00",
+          "title": "BGM_00.COM : オープニング"
+        },
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "BGM_01.COM : フィールド"
+        },
+        {
+          "kind": "title",
+          "code": "0x02",
+          "title": "BGM_02.COM : 自宅/村"
+        },
+        {
+          "kind": "title",
+          "code": "0x03",
+          "title": "BGM_03.COM : 洞窟"
+        },
+        {
+          "kind": "title",
+          "code": "0x04",
+          "title": "BGM_04.COM : ボス"
+        },
+        {
+          "kind": "title",
+          "code": "0x05",
+          "title": "BGM_05.COM : 勝利"
+        },
+        {
+          "kind": "title",
+          "code": "0x06",
+          "title": "BGM_06.COM : エンディング"
+        },
+        {
+          "kind": "range",
+          "min": "0x107",
+          "max": "0x119",
+          "title_format": "SE  : 0x%02x :",
+          "extcode": "0"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/pack-in-video.xml",
+      "source_order": 3547,
+      "archive": "silviana_msx",
+      "id": "silviana-msx-generic"
+    },
+    {
+      "title": "[MSX] シルヴィアーナ ～愛いっぱいの冒険者～(PSG)",
+      "driver": {
+        "name": "msx",
+        "type": "generic",
+        "alias": "Pack-In-Video",
+        "platform": "MSX"
+      },
+      "options": [
+        {
+          "name": "mdata_addr",
+          "value": "0x9c65"
+        },
+        {
+          "name": "mdata_size",
+          "value": "0xe00"
+        },
+        {
+          "name": "mfile_size",
+          "value": "0xe00"
+        },
+        {
+          "name": "init_pc",
+          "value": "0x0400"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "patch",
+          "offset": "0x0400"
+        },
+        {
+          "type": "code",
+          "path": "PSG_DRV.COM",
+          "offset": "0xBA50"
+        },
+        {
+          "type": "bgm",
+          "path": "P_BGM_00.COM",
+          "offset": "0x00"
+        },
+        {
+          "type": "bgm",
+          "path": "P_BGM_01.COM",
+          "offset": "0x01"
+        },
+        {
+          "type": "bgm",
+          "path": "P_BGM_02.COM",
+          "offset": "0x02"
+        },
+        {
+          "type": "bgm",
+          "path": "P_BGM_03.COM",
+          "offset": "0x03"
+        },
+        {
+          "type": "bgm",
+          "path": "P_BGM_04.COM",
+          "offset": "0x04"
+        },
+        {
+          "type": "bgm",
+          "path": "P_BGM_05.COM",
+          "offset": "0x05"
+        },
+        {
+          "type": "bgm",
+          "path": "P_BGM_06.COM",
+          "offset": "0x06"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x00",
+          "title": "P_BGM_00.COM : オープニング"
+        },
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "P_BGM_01.COM : フィールド"
+        },
+        {
+          "kind": "title",
+          "code": "0x02",
+          "title": "P_BGM_02.COM : 自宅/村"
+        },
+        {
+          "kind": "title",
+          "code": "0x03",
+          "title": "P_BGM_03.COM : 洞窟"
+        },
+        {
+          "kind": "title",
+          "code": "0x04",
+          "title": "P_BGM_04.COM : ボス"
+        },
+        {
+          "kind": "title",
+          "code": "0x05",
+          "title": "P_BGM_05.COM : 勝利"
+        },
+        {
+          "kind": "title",
+          "code": "0x06",
+          "title": "P_BGM_06.COM : エンディング"
+        },
+        {
+          "kind": "range",
+          "min": "0x107",
+          "max": "0x119",
+          "title_format": "SE    : 0x%02x :",
+          "extcode": "0"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/pack-in-video.xml",
+      "source_order": 3548,
+      "archive": "silviana_msx",
+      "id": "silviana-msx-generic-2"
+    },
+    {
+      "title": "[MSX] 軍人将棋",
+      "driver": {
+        "name": "msx",
+        "type": "generic",
+        "alias": "Pack-In-Video",
+        "platform": "MSX"
+      },
+      "options": [
+        {
+          "name": "mdata_addr",
+          "value": "0xa000"
+        },
+        {
+          "name": "mdata_size",
+          "value": "0x3000"
+        },
+        {
+          "name": "mfile_size",
+          "value": "0x3000"
+        },
+        {
+          "name": "init_pc",
+          "value": "0x400"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "patch",
+          "offset": "0x0400"
+        },
+        {
+          "type": "bgm",
+          "path": "BMSC.BIN",
+          "offset": "0x00"
+        },
+        {
+          "type": "bgm",
+          "path": "EMSC.BIN",
+          "offset": "0x01"
+        },
+        {
+          "type": "bgm",
+          "path": "MMSC.BIN",
+          "offset": "0x02"
+        },
+        {
+          "type": "bgm",
+          "path": "RMSC.BIN",
+          "offset": "0x03"
+        },
+        {
+          "type": "bgm",
+          "path": "SMSC.BIN",
+          "offset": "0x04"
+        },
+        {
+          "type": "bgm",
+          "path": "TMSC.BIN",
+          "offset": "0x05"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x0501",
+          "title": "TMSC.BIN : 01 : タイトル"
+        },
+        {
+          "kind": "title",
+          "code": "0x0201",
+          "title": "MMSC.BIN : 01 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x0202",
+          "title": "MMSC.BIN : 02 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x0203",
+          "title": "MMSC.BIN : 03 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x0204",
+          "title": "MMSC.BIN : 04 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x0205",
+          "title": "MMSC.BIN : 05 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x0206",
+          "title": "MMSC.BIN : 06 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x0207",
+          "title": "MMSC.BIN : 07 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x0001",
+          "title": "BMSC.BIN : 01 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x0401",
+          "title": "SMSC.BIN : 01 : 連勝CG1"
+        },
+        {
+          "kind": "title",
+          "code": "0x0402",
+          "title": "SMSC.BIN : 02 : 連勝CG2"
+        },
+        {
+          "kind": "title",
+          "code": "0x0301",
+          "title": "RMSC.BIN : 01 : 100勝(レプリカート)"
+        },
+        {
+          "kind": "title",
+          "code": "0x0101",
+          "title": "EMSC.BIN : 01 : スタッフロール"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/pack-in-video.xml",
+      "source_order": 3549,
+      "archive": "gshogi_msx",
+      "id": "gshogi-msx-generic"
+    },
+    {
+      "title": "[MSX] L'Affaire ～失われた時を求めて～",
+      "driver": {
+        "name": "msx",
+        "type": "generic",
+        "alias": "Pack-In-Video",
+        "platform": "MSX"
+      },
+      "options": [
+        {
+          "name": "mdata_addr",
+          "value": "0x5000"
+        },
+        {
+          "name": "mdata_size",
+          "value": "0x0f00"
+        },
+        {
+          "name": "mfile_size",
+          "value": "0x0f00"
+        },
+        {
+          "name": "init_pc",
+          "value": "0x0400"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "patch",
+          "offset": "0x0400"
+        },
+        {
+          "type": "code",
+          "path": "LAFFAIRE.COM",
+          "offset": "0x4680"
+        },
+        {
+          "type": "bgm",
+          "path": "M1.MUS",
+          "offset": "0x00"
+        },
+        {
+          "type": "bgm",
+          "path": "M2.MUS",
+          "offset": "0x01"
+        },
+        {
+          "type": "bgm",
+          "path": "M3.MUS",
+          "offset": "0x02"
+        },
+        {
+          "type": "bgm",
+          "path": "M4.MUS",
+          "offset": "0x03"
+        },
+        {
+          "type": "bgm",
+          "path": "M5.MUS",
+          "offset": "0x04"
+        },
+        {
+          "type": "bgm",
+          "path": "M6.MUS",
+          "offset": "0x05"
+        },
+        {
+          "type": "bgm",
+          "path": "M7.MUS",
+          "offset": "0x06"
+        },
+        {
+          "type": "bgm",
+          "path": "M8.MUS",
+          "offset": "0x07"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x000",
+          "title": "M1.MUS :"
+        },
+        {
+          "kind": "title",
+          "code": "0x001",
+          "title": "M2.MUS :"
+        },
+        {
+          "kind": "title",
+          "code": "0x002",
+          "title": "M3.MUS :"
+        },
+        {
+          "kind": "title",
+          "code": "0x003",
+          "title": "M4.MUS :"
+        },
+        {
+          "kind": "title",
+          "code": "0x004",
+          "title": "M5.MUS :"
+        },
+        {
+          "kind": "title",
+          "code": "0x005",
+          "title": "M6.MUS :"
+        },
+        {
+          "kind": "title",
+          "code": "0x006",
+          "title": "M7.MUS :"
+        },
+        {
+          "kind": "title",
+          "code": "0x007",
+          "title": "M8.MUS :"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/pack-in-video.xml",
+      "source_order": 3550,
+      "archive": "laffaire_msx",
+      "id": "laffaire-msx-generic"
+    }
+  ]
+}

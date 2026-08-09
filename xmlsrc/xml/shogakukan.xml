@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="hoot.xsl"?>
+<!DOCTYPE gamelist [
+	<!ELEMENT gamelist (game|bind|childlists)*>
+	<!ATTLIST gamelist date CDATA #IMPLIED>
+	<!ELEMENT childlists (list)*>
+	<!ELEMENT list (#PCDATA)>
+	<!ELEMENT bind (exts,driver,options?)>
+	<!ELEMENT exts (ext)*>
+	<!ELEMENT ext (#PCDATA)>
+	<!ELEMENT game (name,driver,driveralias?,options?,romlist?,titlelist?)>
+	<!ELEMENT name (#PCDATA)>
+	<!ELEMENT driver (#PCDATA)>
+	<!ATTLIST driver type CDATA #IMPLIED>
+	<!ELEMENT driveralias (#PCDATA)>
+	<!ATTLIST driveralias type CDATA #IMPLIED>
+	<!ELEMENT options (option)*>
+	<!ELEMENT option EMPTY>
+	<!ATTLIST option name CDATA #REQUIRED
+					 value CDATA #REQUIRED>
+	<!ELEMENT romlist (rom)*>
+	<!ATTLIST romlist archive CDATA #IMPLIED>
+	<!ELEMENT rom (#PCDATA)>
+	<!ATTLIST rom type CDATA #REQUIRED
+				  offset CDATA #IMPLIED
+				  crc32 CDATA #IMPLIED>
+	<!ELEMENT titlelist (title|range)*>
+	<!ELEMENT title (#PCDATA)>
+	<!ATTLIST title code CDATA #REQUIRED
+					type CDATA #IMPLIED>
+	<!ELEMENT range (#PCDATA)>
+	<!ATTLIST range min CDATA #REQUIRED
+					max CDATA #REQUIRED
+					extcode CDATA #IMPLIED
+					start CDATA #IMPLIED>
+
+]>
+<gamelist date="2007/09/12">
+	<!-- //小学館 -->
+	<game>
+		<name>[PC-9801] らんま1/2 グー・ちょき・パズル 奥義邪暗拳</name>
+		<driver type="opn">pc98dos</driver>
+		<driveralias type="NEC PC-9801">小学館プロダクション</driveralias>
+		<options>
+			<option name="clockmul" value="8"/>
+		</options>
+		<romlist archive="ranmaoj_98">
+			<rom type="file" offset="-1">NA.com</rom>
+			<rom type="file" offset="-1">NLP_HOOT.COM</rom>
+			<rom type="file" offset="0x10">44.BIN</rom>
+			<rom type="file" offset="0x11">45.BIN</rom>
+			<rom type="file" offset="0x12">46.BIN</rom>
+			<rom type="file" offset="0x13">47.BIN</rom>
+			<rom type="file" offset="0x14">48.BIN</rom>
+			<rom type="file" offset="0x15">49.BIN</rom>
+			<rom type="file" offset="0x16">4A.BIN</rom>
+			<rom type="file" offset="0x17">4B.BIN</rom>
+			<rom type="file" offset="0x18">4C.BIN</rom>
+			<rom type="file" offset="0x19">4D.BIN</rom>
+			<rom type="file" offset="0x1A">4E.BIN</rom>
+			<rom type="file" offset="0x1B">4F.BIN</rom>
+			<rom type="file" offset="0x1C">50.BIN</rom>
+			<rom type="file" offset="0x1D">51.BIN</rom>
+			<rom type="file" offset="0x1E">52.BIN</rom>
+			<rom type="file" offset="0x1F">53.BIN</rom>
+			<rom type="file" offset="0x20">54.BIN</rom>
+			<rom type="file" offset="0x21">55.BIN</rom>
+			<rom type="file" offset="0x22">56.BIN</rom>
+			<rom type="file" offset="0x23">57.BIN</rom>
+			<rom type="file" offset="0x24">58.BIN</rom>
+			<rom type="file" offset="0x25">59.BIN</rom>
+			<rom type="file" offset="0x26">5A.BIN</rom>
+			<rom type="file" offset="0x27">5B.BIN</rom>
+			<rom type="file" offset="0x28">5C.BIN</rom>
+			<rom type="file" offset="0x29">5D.BIN</rom>
+			<rom type="file" offset="0x2A">5E.BIN</rom>
+			<rom type="file" offset="0x2B">5F.BIN</rom>
+			<rom type="file" offset="0x2C">60.BIN</rom>
+			<rom type="shell" offset="0">NA</rom>
+			<rom type="shell" offset="0">NLP_HOOT</rom>
+		</romlist>
+		<titlelist>
+<!--
+			<title code="0x10">RANMA_A.DAT : 44 : </title>
+-->
+			<title code="0x11">RANMA_A.DAT : 45 : </title>
+			<title code="0x12">RANMA_A.DAT : 46 : </title>
+			<title code="0x13">RANMA_A.DAT : 47 : </title>
+			<title code="0x14">RANMA_A.DAT : 48 : </title>
+			<title code="0x15">RANMA_A.DAT : 49 : </title>
+			<title code="0x16">RANMA_A.DAT : 4A : </title>
+			<title code="0x17">RANMA_A.DAT : 4B : </title>
+			<title code="0x18">RANMA_A.DAT : 4C : </title>
+			<title code="0x19">RANMA_A.DAT : 4D : </title>
+			<title code="0x1A">RANMA_A.DAT : 4E : </title>
+			<title code="0x1B">RANMA_A.DAT : 4F : </title>
+			<title code="0x1C">RANMA_A.DAT : 50 : </title>
+			<title code="0x1D">RANMA_A.DAT : 51 : </title>
+			<title code="0x1E">RANMA_A.DAT : 52 : </title>
+			<title code="0x1F">RANMA_A.DAT : 53 : </title>
+			<title code="0x20">RANMA_A.DAT : 54 : </title>
+			<title code="0x21">RANMA_A.DAT : 55 : </title>
+			<title code="0x22">RANMA_A.DAT : 56 : </title>
+			<title code="0x23">RANMA_A.DAT : 57 : </title>
+			<title code="0x24">RANMA_A.DAT : 58 : </title>
+			<title code="0x25">RANMA_A.DAT : 59 : </title>
+			<title code="0x26">RANMA_A.DAT : 5A : </title>
+			<title code="0x27">RANMA_A.DAT : 5B : </title>
+			<title code="0x28">RANMA_A.DAT : 5C : </title>
+			<title code="0x29">RANMA_A.DAT : 5D : </title>
+			<title code="0x2A">RANMA_A.DAT : 5E : </title>
+			<title code="0x2B">RANMA_A.DAT : 5F : </title>
+			<title code="0x2C">RANMA_A.DAT : 60 : </title>
+		</titlelist>
+	</game>
+	<game>
+		<name>[PC-9801] 宇宙冒険少女NAMI Davie Jones 海の悪魔</name>
+		<driver type="opn">pc98dos</driver>
+		<driveralias type="NEC PC-9801">POPCOM SOFT</driveralias>
+		<options>
+			<option name="clockmul" value="0x04"/>
+		</options>
+		<romlist archive="nami_98">
+			<rom type="file" offset="-1">nami_98.com</rom>
+			<rom type="file" offset="-1">OPNING.EXE</rom>
+			<rom type="file" offset="0x05">NAMI00.MO</rom>
+			<rom type="file" offset="0x06">NAMI01.MO</rom>
+			<rom type="file" offset="0x07">NAMI02.MO</rom>
+			<rom type="file" offset="0x08">NAMI03.MO</rom>
+			<rom type="file" offset="0x09">NAMI04.MO</rom>
+			<rom type="file" offset="0x0a">NAMI05.MO</rom>
+			<rom type="file" offset="0x0b">NAMI06.MO</rom>
+			<rom type="file" offset="0x0c">NAMI07.MO</rom>
+			<rom type="file" offset="0x0d">NAMI08.MO</rom>
+			<rom type="file" offset="0x0e">NAMI09.MO</rom>
+			<rom type="file" offset="0x0f">NAMI10.MO</rom>
+			<rom type="file" offset="0x10">NAMI11.MO</rom>
+			<rom type="file" offset="0x11">NAMI12.MO</rom>
+			<rom type="file" offset="0x12">NAMI13.MO</rom>
+			<rom type="file" offset="0x13">NAMI14.MO</rom>
+			<rom type="file" offset="0x14">NAMI15.MO</rom>
+			<rom type="file" offset="0x15">NAMI16.MO</rom>
+			<rom type="file" offset="0x16">NAMI17.MO</rom>
+			<rom type="file" offset="0x17">NAMI18.MO</rom>
+			<rom type="file" offset="0x18">NAMI19.MO</rom>
+			<rom type="file" offset="0x19">NAMI20.MO</rom>
+			<rom type="file" offset="0x1a">NAMI21.MO</rom>
+			<rom type="file" offset="0x1b">NAMI22.MO</rom>
+			<rom type="file" offset="0x1c">NAMI23.MO</rom>
+			<rom type="file" offset="0x1d">NAMI24.MO</rom>
+			<rom type="file" offset="0x1e">NAMI25.MO</rom>
+			<rom type="file" offset="0x1f">NAMI26.MO</rom>
+			<rom type="file" offset="0x20">NAMI27.MO</rom>
+			<rom type="file" offset="0x21">NAMI28.MO</rom>
+			<rom type="file" offset="0x22">NAMI29.MO</rom>
+			<rom type="file" offset="0x23">NAMI30.MO</rom>
+			<rom type="file" offset="0x24">NAMI31.MO</rom>
+			<rom type="file" offset="0x25">NAMI32.MO</rom>
+			<rom type="file" offset="0x26">NAMI33.MO</rom>
+			<rom type="shell" offset="0">nami_98</rom>
+		</romlist>
+		<titlelist>
+			<title code="0x05">NAMI00.MO</title>
+			<title code="0x06">NAMI01.MO</title>
+			<title code="0x07">NAMI02.MO</title>
+			<title code="0x08">NAMI03.MO</title>
+			<title code="0x09">NAMI04.MO</title>
+			<title code="0x0a">NAMI05.MO</title>
+			<title code="0x0b">NAMI06.MO</title>
+			<title code="0x0c">NAMI07.MO</title>
+			<title code="0x0d">NAMI08.MO</title>
+			<title code="0x0e">NAMI09.MO</title>
+			<title code="0x0f">NAMI10.MO</title>
+			<title code="0x10">NAMI11.MO</title>
+			<title code="0x11">NAMI12.MO</title>
+			<title code="0x12">NAMI13.MO</title>
+			<title code="0x13">NAMI14.MO</title>
+			<title code="0x14">NAMI15.MO</title>
+			<title code="0x15">NAMI16.MO</title>
+			<title code="0x16">NAMI17.MO</title>
+			<title code="0x17">NAMI18.MO</title>
+			<title code="0x18">NAMI19.MO</title>
+			<title code="0x19">NAMI20.MO</title>
+			<title code="0x1a">NAMI21.MO</title>
+			<title code="0x1b">NAMI22.MO</title>
+			<title code="0x1c">NAMI23.MO</title>
+			<title code="0x1d">NAMI24.MO</title>
+			<title code="0x1e">NAMI25.MO</title>
+			<title code="0x1f">NAMI26.MO</title>
+			<title code="0x20">NAMI27.MO</title>
+			<title code="0x21">NAMI28.MO</title>
+			<title code="0x22">NAMI29.MO</title>
+			<title code="0x23">NAMI30.MO</title>
+			<title code="0x24">NAMI31.MO</title>
+			<title code="0x25">NAMI32.MO</title>
+			<title code="0x26">NAMI33.MO</title>
+		</titlelist>
+	</game>
+</gamelist>

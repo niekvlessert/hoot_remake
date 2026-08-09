@@ -1,0 +1,299 @@
+{
+  "format": "hoot-catalog-shard",
+  "version": 1,
+  "source_file": "xml/shuwasystem.xml",
+  "date": "2025/03/29",
+  "comments": [
+    " 秀和システムトレーディング/秀和システム "
+  ],
+  "games": [
+    {
+      "title": "[PC-9801] ゲームコレクション エクストラ NetHack(OPNA)",
+      "driver": {
+        "name": "pc98dos",
+        "type": "opna",
+        "alias": "秀和システムトレーディング",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "clockmul",
+          "value": "0x08"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "FMPP.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "FMP.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "NTHK.PVI",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "NTHK_01.OPI",
+          "offset": "0x10"
+        },
+        {
+          "type": "file",
+          "path": "NTHK_02.OPI",
+          "offset": "0x11"
+        },
+        {
+          "type": "file",
+          "path": "NTHK_03.OVI",
+          "offset": "0x12"
+        },
+        {
+          "type": "file",
+          "path": "NTHK_04.OPI",
+          "offset": "0x13"
+        },
+        {
+          "type": "file",
+          "path": "NTHK_05.OPI",
+          "offset": "0x14"
+        },
+        {
+          "type": "file",
+          "path": "NTHK_C.OPI",
+          "offset": "0x15"
+        },
+        {
+          "type": "file",
+          "path": "NTHK_L.OPI",
+          "offset": "0x16"
+        },
+        {
+          "type": "file",
+          "path": "NTHK_N.OPI",
+          "offset": "0x17"
+        },
+        {
+          "type": "file",
+          "path": "NTHK_X.OPI",
+          "offset": "0x18"
+        },
+        {
+          "type": "shell",
+          "path": "SET PVI=.",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "FMP s /s /g",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "FMPP",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x18",
+          "title": "NTHK_X.OPI  : NetHack - オ－プニング -"
+        },
+        {
+          "kind": "title",
+          "code": "0x15",
+          "title": "NTHK_C.OPI  : NetHack - タイトルバック (Chaotic) -"
+        },
+        {
+          "kind": "title",
+          "code": "0x16",
+          "title": "NTHK_L.OPI  : NetHack - タイトルバック (Lawful) -"
+        },
+        {
+          "kind": "title",
+          "code": "0x17",
+          "title": "NTHK_N.OPI  : NetHack - タイトルバック (Neutral) -"
+        },
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "NTHK_01.OPI : NetHack - プレイングBGM -"
+        },
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "NTHK_02.OPI :  ･･･  Fiction."
+        },
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "NTHK_03.OVI : NetHack - ﾌﾟﾚｲﾝｸﾞBGM SPBﾊﾞ-ｼﾞｮﾝ -"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "NTHK_04.OPI : NetHack - ラウンドスタ－ト -"
+        },
+        {
+          "kind": "title",
+          "code": "0x14",
+          "title": "NTHK_05.OPI : NetHack - レクイエム -"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/shuwasystem.xml",
+      "source_order": 4022,
+      "archive": "nethack_98",
+      "id": "nethack-98-opna"
+    },
+    {
+      "title": "[PC-9801] ゲームコレクション エクストラ NetHack(OPN)",
+      "driver": {
+        "name": "pc98dos",
+        "type": "opn",
+        "alias": "秀和システムトレーディング",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "clockmul",
+          "value": "0x08"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "FMPP.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "FMP.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "NTHK.PVI",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "NTHK_01.OPI",
+          "offset": "0x10"
+        },
+        {
+          "type": "file",
+          "path": "NTHK_02.OPI",
+          "offset": "0x11"
+        },
+        {
+          "type": "file",
+          "path": "NTHK_03.OVI",
+          "offset": "0x12"
+        },
+        {
+          "type": "file",
+          "path": "NTHK_04.OPI",
+          "offset": "0x13"
+        },
+        {
+          "type": "file",
+          "path": "NTHK_05.OPI",
+          "offset": "0x14"
+        },
+        {
+          "type": "file",
+          "path": "NTHK_C.OPI",
+          "offset": "0x15"
+        },
+        {
+          "type": "file",
+          "path": "NTHK_L.OPI",
+          "offset": "0x16"
+        },
+        {
+          "type": "file",
+          "path": "NTHK_N.OPI",
+          "offset": "0x17"
+        },
+        {
+          "type": "file",
+          "path": "NTHK_X.OPI",
+          "offset": "0x18"
+        },
+        {
+          "type": "shell",
+          "path": "SET PVI=.",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "FMP s /s /g",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "FMPP",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x18",
+          "title": "NTHK_X.OPI  : NetHack - オ－プニング -"
+        },
+        {
+          "kind": "title",
+          "code": "0x15",
+          "title": "NTHK_C.OPI  : NetHack - タイトルバック (Chaotic) -"
+        },
+        {
+          "kind": "title",
+          "code": "0x16",
+          "title": "NTHK_L.OPI  : NetHack - タイトルバック (Lawful) -"
+        },
+        {
+          "kind": "title",
+          "code": "0x17",
+          "title": "NTHK_N.OPI  : NetHack - タイトルバック (Neutral) -"
+        },
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "NTHK_01.OPI : NetHack - プレイングBGM -"
+        },
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "NTHK_02.OPI :  ･･･  Fiction."
+        },
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "NTHK_03.OVI : NetHack - ﾌﾟﾚｲﾝｸﾞBGM SPBﾊﾞ-ｼﾞｮﾝ -"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "NTHK_04.OPI : NetHack - ラウンドスタ－ト -"
+        },
+        {
+          "kind": "title",
+          "code": "0x14",
+          "title": "NTHK_05.OPI : NetHack - レクイエム -"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/shuwasystem.xml",
+      "source_order": 4023,
+      "archive": "nethack_98",
+      "id": "nethack-98-opn"
+    }
+  ]
+}

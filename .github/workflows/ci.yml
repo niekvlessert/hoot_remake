@@ -1,0 +1,249 @@
+name: CI
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  desktop:
+    name: ${{ matrix.name }}
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - name: Linux x64
+            os: ubuntu-latest
+            triplet: x64-linux
+          - name: Windows x64
+            os: windows-latest
+            triplet: x64-windows
+          - name: macOS arm64
+            os: macos-15
+            triplet: arm64-osx
+    runs-on: ${{ matrix.os }}
+    env:
+      VCPKG_BINARY_SOURCES: "clear;x-gha,readwrite"
+      VCPKG_FEATURE_FLAGS: manifests,binarycaching
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+
+      - name: Export GitHub Actions cache variables
+        shell: bash
+        run: |
+          echo "ACTIONS_CACHE_URL=$ACTIONS_CACHE_URL" >> "$GITHUB_ENV"
+          echo "ACTIONS_RUNTIME_TOKEN=$ACTIONS_RUNTIME_TOKEN" >> "$GITHUB_ENV"
+
+      - name: Bootstrap vcpkg
+        shell: bash
+        run: |
+          git clone --depth 1 https://github.com/microsoft/vcpkg.git "$RUNNER_TEMP/vcpkg"
+          if [ "${{ runner.os }}" = "Windows" ]; then
+            cmd.exe /c "$(cygpath -w "$RUNNER_TEMP/vcpkg/bootstrap-vcpkg.bat") -disableMetrics"
+          else
+            "$RUNNER_TEMP/vcpkg/bootstrap-vcpkg.sh" -disableMetrics
+          fi
+          echo "VCPKG_ROOT=$RUNNER_TEMP/vcpkg" >> "$GITHUB_ENV"
+
+      - name: Install native dependencies
+        shell: bash
+        run: |
+          VCPKG="$RUNNER_TEMP/vcpkg/vcpkg"
+          if [ "${{ runner.os }}" = "Windows" ]; then VCPKG="$RUNNER_TEMP/vcpkg/vcpkg.exe"; fi
+          "$VCPKG" install \
+            --triplet "${{ matrix.triplet }}" \
+            zlib sqlite3 zstd sdl3 sdl3-ttf
+
+      - name: Install Japanese system font (Linux)
+        if: runner.os == 'Linux'
+        shell: bash
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y fonts-noto-cjk
+
+      - name: Configure
+        shell: bash
+        run: |
+          cmake -S . -B build -G Ninja \
+            -DCMAKE_BUILD_TYPE=Release \
+            -DCMAKE_TOOLCHAIN_FILE="$RUNNER_TEMP/vcpkg/scripts/buildsystems/vcpkg.cmake" \
+            -DVCPKG_TARGET_TRIPLET="${{ matrix.triplet }}" \
+            -DHOOT_BUILD_GUI=ON
+
+      - name: Build
+        run: cmake --build build --parallel
+
+      - name: Test
+        run: ctest --test-dir build --output-on-failure -C Release
+
+      - name: Japanese UI font smoke
+        shell: bash
+        run: |
+          if [ "${{ runner.os }}" = "Windows" ]; then
+            ./build/hootui.exe --check-font
+          else
+            ./build/hootui --check-font
+          fi
+
+      - name: Japanese UTF-8 smoke
+        run: python ci/unicode_smoke.py build
+
+      - name: Verify SDL3_ttf Unicode GUI was built
+        shell: bash
+        run: |
+          if [ "${{ runner.os }}" = "Windows" ]; then
+            test -f build/hootui.exe
+          else
+            test -f build/hootui
+          fi
+          grep -R "HOOT_HAVE_SDL3_TTF=1" build/CMakeFiles/hootgui.dir/flags.make build/build.ninja >/dev/null 2>&1 || {
+            echo "SDL3_ttf Unicode renderer was not enabled" >&2
+            exit 1
+          }
+
+      - name: Install staging tree
+        shell: bash
+        run: cmake --install build --prefix "$RUNNER_TEMP/hoot-install" --config Release
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: hoot-${{ matrix.triplet }}
+          path: ${{ runner.temp }}/hoot-install
+          if-no-files-found: error
+
+  # Termux packages are Android/Bionic binaries, so a normal Ubuntu CMake job
+  # is not a valid substitute. This job uses Termux's own cross-build system.
+  # The GUI depends on the Termux X11 repository's SDL3 + SDL3_ttf packages.
+  termux-aarch64:
+    name: Termux aarch64 (best effort)
+    runs-on: ubuntu-latest
+    continue-on-error: true
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          path: hoot
+
+      - name: Prepare official Termux package builder
+        shell: bash
+        run: |
+          git clone --depth 1 https://github.com/termux/termux-packages.git termux-packages
+          mkdir -p termux-packages/sources
+          tar --exclude='./build' --exclude='./termux-packages' -C hoot -czf termux-packages/sources/hoot.tar.gz .
+          mkdir -p termux-packages/x11-packages/hoot
+          cat > termux-packages/x11-packages/hoot/build.sh <<'EOF'
+          TERMUX_PKG_HOMEPAGE=https://github.com/${GITHUB_REPOSITORY}
+          TERMUX_PKG_DESCRIPTION="Native Hoot sound hardware emulator"
+          TERMUX_PKG_LICENSE="custom"
+          TERMUX_PKG_MAINTAINER="Hoot contributors"
+          TERMUX_PKG_VERSION=0.1.0
+          TERMUX_PKG_SRCURL=file:///home/builder/termux-packages/sources/hoot.tar.gz
+          TERMUX_PKG_SHA256=SKIP_CHECKSUM
+          TERMUX_PKG_DEPENDS="zlib, libsqlite, zstd, sdl3, sdl3-ttf"
+          TERMUX_PKG_FORCE_CMAKE=true
+          TERMUX_PKG_EXTRA_CONFIGURE_ARGS="-DHOOT_BUILD_GUI=ON -DBUILD_TESTING=OFF"
+          EOF
+
+      - name: Cross-build with Termux packages
+        working-directory: termux-packages
+        shell: bash
+        run: ./scripts/run-docker.sh ./build-package.sh -f -I -a aarch64 hoot
+
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: hoot-termux-aarch64
+          path: termux-packages/output/*hoot*.deb
+          if-no-files-found: ignore
+
+  web-wasm:
+    name: Web / WASM
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+
+      - name: Install web build tools and Japanese font
+        shell: bash
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y ninja-build zstd fonts-noto-cjk fontconfig
+
+      - name: Setup current Emscripten SDK
+        uses: emscripten-core/setup-emsdk@v15
+        with:
+          version: latest
+          actions-cache-folder: emsdk-cache
+
+      - name: Verify required Emscripten ports
+        shell: bash
+        run: |
+          emcc --show-ports | grep -i 'sdl3'
+          emcc --show-ports | grep -i 'sdl3_ttf'
+          emcc --show-ports | grep -i 'sqlite3'
+          emcc --show-ports | grep -i 'zlib'
+
+      - name: Configure WebAssembly build
+        shell: bash
+        run: |
+          FONT="$(fc-match -f '%{file}\n' 'Noto Sans CJK JP' | head -1)"
+          test -f "$FONT"
+          echo "Using Japanese web font: $FONT"
+          emcmake cmake -S . -B build-web -G Ninja \
+            -DCMAKE_BUILD_TYPE=Release \
+            -DHOOT_BUILD_GUI=ON \
+            -DHOOT_BUILD_WEB=ON \
+            -DBUILD_TESTING=OFF \
+            -DHOOT_GUI_FONT_FILE="$FONT"
+
+      - name: Build WebAssembly player
+        run: cmake --build build-web --target hootgui --parallel
+
+      - name: Verify web catalogue UTF-8
+        shell: bash
+        run: |
+          python - <<'PY'
+          import sqlite3
+          db = sqlite3.connect('build-web/hoot-web.sqlite')
+          row = db.execute("SELECT title FROM games WHERE archive='slayers_98' LIMIT 1").fetchone()
+          assert row and 'スレイヤーズ' in row[0], row
+          print(row[0])
+          PY
+
+      - name: Verify deployable web bundle
+        shell: bash
+        run: |
+          test -s build-web/hootweb.html
+          test -s build-web/hootweb.js
+          test -s build-web/hootweb.wasm
+          test -s build-web/hootweb.data
+          grep -q 'IDBFS' build-web/hootweb.js
+          grep -q '/hoot/packs' build-web/hootweb.html
+          grep -q 'hoot_web_open_pack' build-web/hootweb.js
+          grep -q 'function getMemoryBuffer(){return wasmMemory.buffer}' build-web/hootweb.js
+          ! grep -q 'wasmMemory.toResizableBuffer()' build-web/hootweb.js
+          grep -q 'postRun:' build-web/hootweb.html
+          grep -q 'No ZIP file was selected' build-web/hootweb.html
+          grep -q 'archiveFallbackName' build-web/hootweb.html
+          grep -q '@/fonts/hoot-ui-font' build-web/build.ninja
+          grep -q '@/catalog/hoot.sqlite' build-web/build.ninja
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: hoot-web-wasm
+          path: |
+            build-web/hootweb.html
+            build-web/hootweb.js
+            build-web/hootweb.wasm
+            build-web/hootweb.data
+          if-no-files-found: error

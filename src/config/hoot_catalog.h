@@ -3,6 +3,7 @@
 #include <cstdint>
 #include <map>
 #include <string>
+#include <string_view>
 #include <vector>
 
 namespace hoot {
@@ -12,6 +13,8 @@ struct HootAssetRef {
     std::string path;
     std::string transform;
     uint32_t offset = 0;
+    uint32_t crc32 = 0;
+    bool has_crc32 = false;
 };
 
 struct CatalogTrack {

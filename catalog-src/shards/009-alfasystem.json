@@ -1,0 +1,187 @@
+{
+  "format": "hoot-catalog-shard",
+  "version": 1,
+  "source_file": "xml/alfasystem.xml",
+  "date": "2005/09/25",
+  "comments": [
+    " //Alfa System "
+  ],
+  "games": [
+    {
+      "title": "[X68000] Noble Mind",
+      "driver": {
+        "name": "x68k",
+        "type": "generic",
+        "alias": "Alfa System",
+        "platform": "SHARP X68000"
+      },
+      "options": [
+        {
+          "name": "mfp",
+          "value": "0x01"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "noble68snd.bin"
+        },
+        {
+          "type": "x",
+          "path": "core.x",
+          "offset": "0x10000"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x16",
+          "title": "オープニング"
+        },
+        {
+          "kind": "title",
+          "code": "0x0d",
+          "title": "タイトル"
+        },
+        {
+          "kind": "title",
+          "code": "0x15",
+          "title": "城"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "街1"
+        },
+        {
+          "kind": "title",
+          "code": "0x08",
+          "title": "街2"
+        },
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "イベント1"
+        },
+        {
+          "kind": "title",
+          "code": "0x14",
+          "title": "イベント2"
+        },
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "フィールド"
+        },
+        {
+          "kind": "title",
+          "code": "0x04",
+          "title": "戦闘"
+        },
+        {
+          "kind": "title",
+          "code": "0x05",
+          "title": "ボス戦闘"
+        },
+        {
+          "kind": "title",
+          "code": "0x07",
+          "title": "戦闘終了"
+        },
+        {
+          "kind": "title",
+          "code": "0x02",
+          "title": "ダンジョン1"
+        },
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "ダンジョン2"
+        },
+        {
+          "kind": "title",
+          "code": "0x09",
+          "title": "武器屋/道具屋"
+        },
+        {
+          "kind": "title",
+          "code": "0x0a",
+          "title": "宿屋"
+        },
+        {
+          "kind": "title",
+          "code": "0x06",
+          "title": "宿屋で休む"
+        },
+        {
+          "kind": "title",
+          "code": "0x0b",
+          "title": "宝くじ屋"
+        },
+        {
+          "kind": "title",
+          "code": "0x19",
+          "title": "アイテム取得"
+        },
+        {
+          "kind": "title",
+          "code": "0x17",
+          "title": "レベルアップ"
+        },
+        {
+          "kind": "range",
+          "min": "0x0f",
+          "max": "0x0f",
+          "title_format": "BGM 0x%02x",
+          "extcode": "1"
+        },
+        {
+          "kind": "range",
+          "min": "0x12",
+          "max": "0x12",
+          "title_format": "BGM 0x%02x",
+          "extcode": "1"
+        },
+        {
+          "kind": "range",
+          "min": "0x1a",
+          "max": "0x1b",
+          "title_format": "BGM 0x%02x",
+          "extcode": "1"
+        },
+        {
+          "kind": "title",
+          "code": "0x03",
+          "title": "ラスボス戦闘"
+        },
+        {
+          "kind": "title",
+          "code": "0x0e",
+          "title": "エンディング1"
+        },
+        {
+          "kind": "title",
+          "code": "0x0c",
+          "title": "スタッフロール"
+        },
+        {
+          "kind": "title",
+          "code": "0x18",
+          "title": "ゲームオーバー"
+        },
+        {
+          "kind": "range",
+          "min": "0x65",
+          "max": "0x7e",
+          "title_format": "SE %02x",
+          "extcode": "1"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/alfasystem.xml",
+      "source_order": 103,
+      "archive": "noble68snd",
+      "id": "noble68snd-generic"
+    }
+  ]
+}

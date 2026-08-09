@@ -1,0 +1,7031 @@
+{
+  "format": "hoot-catalog-shard",
+  "version": 1,
+  "source_file": "xml/bps.xml",
+  "date": "2005/09/25",
+  "comments": [
+    " //BPS "
+  ],
+  "games": [
+    {
+      "title": "[PC-8801] ARCHON",
+      "driver": {
+        "name": "pc88",
+        "type": "opn",
+        "alias": "BPS",
+        "platform": "NEC PC-8801"
+      },
+      "options": [
+        {
+          "name": "use_rtc",
+          "value": "0x01"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "PATCH",
+          "offset": "0x0000"
+        },
+        {
+          "type": "code",
+          "path": "MUSIC",
+          "offset": "0xa000"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x00",
+          "title": "OPENING"
+        },
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "MAIN BGM"
+        },
+        {
+          "kind": "title",
+          "code": "0x02",
+          "title": "COMBAT ARENA"
+        },
+        {
+          "kind": "title",
+          "code": "0x03",
+          "title": "GAME END"
+        },
+        {
+          "kind": "title",
+          "code": "0x04",
+          "title": "STOP"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/bps.xml",
+      "source_order": 581,
+      "archive": "archon",
+      "id": "archon-opn"
+    },
+    {
+      "title": "[PC-8801] LYRANE",
+      "driver": {
+        "name": "pc88",
+        "type": "opn",
+        "alias": "BPS",
+        "platform": "NEC PC-8801"
+      },
+      "options": [
+        {
+          "name": "mdata_addr",
+          "value": "0x0100"
+        },
+        {
+          "name": "mdata_size",
+          "value": "0x4e00"
+        },
+        {
+          "name": "mfile_size",
+          "value": "0x4e00"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "PATCH",
+          "offset": "0x0000"
+        },
+        {
+          "type": "code",
+          "path": "OP",
+          "offset": "0x0100"
+        },
+        {
+          "type": "code",
+          "path": "ED1",
+          "offset": "0x5000"
+        },
+        {
+          "type": "bgm",
+          "path": "OP",
+          "offset": "0x00"
+        },
+        {
+          "type": "bgm",
+          "path": "GAME",
+          "offset": "0x01"
+        },
+        {
+          "type": "bgm",
+          "path": "ED1",
+          "offset": "0x02"
+        },
+        {
+          "type": "bgm",
+          "path": "ED2",
+          "offset": "0x03"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x00",
+          "title": "OP  : オープニング"
+        },
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "BGM : メインBGM"
+        },
+        {
+          "kind": "title",
+          "code": "0x02",
+          "title": "ED1 : ゲームオーバー"
+        },
+        {
+          "kind": "title",
+          "code": "0x03",
+          "title": "ED2 : エンディング"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/bps.xml",
+      "source_order": 582,
+      "archive": "lyrane",
+      "id": "lyrane-opn"
+    },
+    {
+      "title": "[PC-8801] DEFLEKTOR(OPN)",
+      "driver": {
+        "name": "pc88",
+        "type": "opn",
+        "alias": "BPS",
+        "platform": "NEC PC-8801"
+      },
+      "options": [
+        {
+          "name": "mdata_addr",
+          "value": "0x9600"
+        },
+        {
+          "name": "showfm3ex",
+          "value": "0x01"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "PATCH",
+          "offset": "0x0000"
+        },
+        {
+          "type": "code",
+          "path": "DRIVER",
+          "offset": "0x7000"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS00",
+          "offset": "0x00"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS01",
+          "offset": "0x01"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS02",
+          "offset": "0x02"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS03",
+          "offset": "0x03"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS04",
+          "offset": "0x04"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS05",
+          "offset": "0x05"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS06",
+          "offset": "0x06"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS07",
+          "offset": "0x07"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS08",
+          "offset": "0x08"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS09",
+          "offset": "0x09"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS10",
+          "offset": "0x0a"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS11",
+          "offset": "0x0b"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS12",
+          "offset": "0x0c"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS13",
+          "offset": "0x0d"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS14",
+          "offset": "0x0e"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS15",
+          "offset": "0x0f"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x00",
+          "title": "MUS00"
+        },
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "MUS01"
+        },
+        {
+          "kind": "title",
+          "code": "0x02",
+          "title": "MUS02"
+        },
+        {
+          "kind": "title",
+          "code": "0x03",
+          "title": "MUS03"
+        },
+        {
+          "kind": "title",
+          "code": "0x04",
+          "title": "MUS04"
+        },
+        {
+          "kind": "title",
+          "code": "0x05",
+          "title": "MUS05"
+        },
+        {
+          "kind": "title",
+          "code": "0x06",
+          "title": "MUS06"
+        },
+        {
+          "kind": "title",
+          "code": "0x07",
+          "title": "MUS07"
+        },
+        {
+          "kind": "title",
+          "code": "0x08",
+          "title": "MUS08"
+        },
+        {
+          "kind": "title",
+          "code": "0x09",
+          "title": "MUS09"
+        },
+        {
+          "kind": "title",
+          "code": "0x0a",
+          "title": "MUS10"
+        },
+        {
+          "kind": "title",
+          "code": "0x0b",
+          "title": "MUS11"
+        },
+        {
+          "kind": "title",
+          "code": "0x0c",
+          "title": "MUS12"
+        },
+        {
+          "kind": "title",
+          "code": "0x0d",
+          "title": "MUS13"
+        },
+        {
+          "kind": "title",
+          "code": "0x0e",
+          "title": "MUS14"
+        },
+        {
+          "kind": "title",
+          "code": "0x0f",
+          "title": "MUS15"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/bps.xml",
+      "source_order": 583,
+      "archive": "deflektor",
+      "id": "deflektor-opn"
+    },
+    {
+      "title": "[PC-8801] DEFLEKTOR(OPNA)",
+      "driver": {
+        "name": "pc88",
+        "type": "opna",
+        "alias": "BPS",
+        "platform": "NEC PC-8801"
+      },
+      "options": [
+        {
+          "name": "mdata_addr",
+          "value": "0x9600"
+        },
+        {
+          "name": "showfm3ex",
+          "value": "0x01"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "PATCH",
+          "offset": "0x0000"
+        },
+        {
+          "type": "code",
+          "path": "DRIVER",
+          "offset": "0x7000"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS00",
+          "offset": "0x00"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS01",
+          "offset": "0x01"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS02",
+          "offset": "0x02"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS03",
+          "offset": "0x03"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS04",
+          "offset": "0x04"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS05",
+          "offset": "0x05"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS06",
+          "offset": "0x06"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS07",
+          "offset": "0x07"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS08",
+          "offset": "0x08"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS09",
+          "offset": "0x09"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS10",
+          "offset": "0x0a"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS11",
+          "offset": "0x0b"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS12",
+          "offset": "0x0c"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS13",
+          "offset": "0x0d"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS14",
+          "offset": "0x0e"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS15",
+          "offset": "0x0f"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x00",
+          "title": "MUS00"
+        },
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "MUS01"
+        },
+        {
+          "kind": "title",
+          "code": "0x02",
+          "title": "MUS02"
+        },
+        {
+          "kind": "title",
+          "code": "0x03",
+          "title": "MUS03"
+        },
+        {
+          "kind": "title",
+          "code": "0x04",
+          "title": "MUS04"
+        },
+        {
+          "kind": "title",
+          "code": "0x05",
+          "title": "MUS05"
+        },
+        {
+          "kind": "title",
+          "code": "0x06",
+          "title": "MUS06"
+        },
+        {
+          "kind": "title",
+          "code": "0x07",
+          "title": "MUS07"
+        },
+        {
+          "kind": "title",
+          "code": "0x08",
+          "title": "MUS08"
+        },
+        {
+          "kind": "title",
+          "code": "0x09",
+          "title": "MUS09"
+        },
+        {
+          "kind": "title",
+          "code": "0x0a",
+          "title": "MUS10"
+        },
+        {
+          "kind": "title",
+          "code": "0x0b",
+          "title": "MUS11"
+        },
+        {
+          "kind": "title",
+          "code": "0x0c",
+          "title": "MUS12"
+        },
+        {
+          "kind": "title",
+          "code": "0x0d",
+          "title": "MUS13"
+        },
+        {
+          "kind": "title",
+          "code": "0x0e",
+          "title": "MUS14"
+        },
+        {
+          "kind": "title",
+          "code": "0x0f",
+          "title": "MUS15"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/bps.xml",
+      "source_order": 584,
+      "archive": "deflektor",
+      "id": "deflektor-opna"
+    },
+    {
+      "title": "[PC-8801] M.U.L.E.",
+      "driver": {
+        "name": "pc88",
+        "type": "opn",
+        "alias": "BPS",
+        "platform": "NEC PC-8801"
+      },
+      "options": [
+        {
+          "name": "mdata_addr",
+          "value": "0xb000"
+        },
+        {
+          "name": "mdata_size",
+          "value": "0x0900"
+        },
+        {
+          "name": "use_vrtc",
+          "value": "0x01"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "PATCH",
+          "offset": "0x0000"
+        },
+        {
+          "type": "code",
+          "path": "PROG",
+          "offset": "0x6000"
+        },
+        {
+          "type": "code",
+          "path": "MUS00",
+          "offset": "0xb000"
+        },
+        {
+          "type": "code",
+          "path": "MUS01",
+          "offset": "0xb900"
+        },
+        {
+          "type": "code",
+          "path": "MUS02",
+          "offset": "0xbb00"
+        },
+        {
+          "type": "code",
+          "path": "MUS03",
+          "offset": "0xbc00"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS00",
+          "offset": "0x00"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS01",
+          "offset": "0x01"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS02",
+          "offset": "0x02"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS03",
+          "offset": "0x03"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x01000000",
+          "title": "MUS00 : メインテーマ"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000001",
+          "title": "MUS01 : PUB"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000002",
+          "title": "MUS02 : ラッキーイベント"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000003",
+          "title": "MUS03 : バッドイベント"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/bps.xml",
+      "source_order": 585,
+      "archive": "mule",
+      "id": "mule-opn"
+    },
+    {
+      "title": "[PC-8801] Pipe Dream(OPN)",
+      "driver": {
+        "name": "pc88",
+        "type": "opn",
+        "alias": "BPS",
+        "platform": "NEC PC-8801"
+      },
+      "options": [
+        {
+          "name": "use_vrtc",
+          "value": "0x01"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "PATCH",
+          "offset": "0x0000"
+        },
+        {
+          "type": "code",
+          "path": "VOICE",
+          "offset": "0x1000"
+        },
+        {
+          "type": "code",
+          "path": "DRIVER",
+          "offset": "0x8400"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS00",
+          "offset": "0x00"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS01",
+          "offset": "0x01"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS02",
+          "offset": "0x02"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS03",
+          "offset": "0x03"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS04",
+          "offset": "0x04"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS05",
+          "offset": "0x05"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS06",
+          "offset": "0x06"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS07",
+          "offset": "0x07"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS08",
+          "offset": "0x08"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS09",
+          "offset": "0x09"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS10",
+          "offset": "0x0a"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS11",
+          "offset": "0x0b"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS12",
+          "offset": "0x0c"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS13",
+          "offset": "0x0d"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS14",
+          "offset": "0x0e"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS15",
+          "offset": "0x0f"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS16",
+          "offset": "0x10"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS17",
+          "offset": "0x11"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS18",
+          "offset": "0x12"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS19",
+          "offset": "0x13"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS20",
+          "offset": "0x14"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS21",
+          "offset": "0x15"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS22",
+          "offset": "0x16"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS23",
+          "offset": "0x17"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS24",
+          "offset": "0x18"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x00",
+          "title": "MUS00"
+        },
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "MUS01"
+        },
+        {
+          "kind": "title",
+          "code": "0x02",
+          "title": "MUS02"
+        },
+        {
+          "kind": "title",
+          "code": "0x03",
+          "title": "MUS03"
+        },
+        {
+          "kind": "title",
+          "code": "0x04",
+          "title": "MUS04"
+        },
+        {
+          "kind": "title",
+          "code": "0x05",
+          "title": "MUS05"
+        },
+        {
+          "kind": "title",
+          "code": "0x06",
+          "title": "MUS06"
+        },
+        {
+          "kind": "title",
+          "code": "0x07",
+          "title": "MUS07"
+        },
+        {
+          "kind": "title",
+          "code": "0x08",
+          "title": "MUS08"
+        },
+        {
+          "kind": "title",
+          "code": "0x09",
+          "title": "MUS09"
+        },
+        {
+          "kind": "title",
+          "code": "0x0a",
+          "title": "MUS10"
+        },
+        {
+          "kind": "title",
+          "code": "0x0b",
+          "title": "MUS11"
+        },
+        {
+          "kind": "title",
+          "code": "0x0c",
+          "title": "MUS12"
+        },
+        {
+          "kind": "title",
+          "code": "0x0d",
+          "title": "MUS13"
+        },
+        {
+          "kind": "comment",
+          "text": "\t<title code=\"0x0e\">MUS14</title> "
+        },
+        {
+          "kind": "title",
+          "code": "0x0f",
+          "title": "MUS15"
+        },
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "MUS16"
+        },
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "MUS17"
+        },
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "MUS18"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "MUS19"
+        },
+        {
+          "kind": "title",
+          "code": "0x14",
+          "title": "MUS20"
+        },
+        {
+          "kind": "title",
+          "code": "0x15",
+          "title": "MUS21"
+        },
+        {
+          "kind": "title",
+          "code": "0x16",
+          "title": "MUS22"
+        },
+        {
+          "kind": "title",
+          "code": "0x17",
+          "title": "MUS23"
+        },
+        {
+          "kind": "title",
+          "code": "0x18",
+          "title": "MUS24"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/bps.xml",
+      "source_order": 586,
+      "archive": "pipedrm88",
+      "id": "pipedrm88-opn"
+    },
+    {
+      "title": "[PC-8801] Pipe Dream(OPNA)",
+      "driver": {
+        "name": "pc88",
+        "type": "opna",
+        "alias": "BPS",
+        "platform": "NEC PC-8801"
+      },
+      "options": [
+        {
+          "name": "use_vrtc",
+          "value": "0x01"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "PATCH",
+          "offset": "0x0000"
+        },
+        {
+          "type": "code",
+          "path": "VOICE",
+          "offset": "0x1000"
+        },
+        {
+          "type": "code",
+          "path": "DRIVER",
+          "offset": "0x8400"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS00",
+          "offset": "0x00"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS01",
+          "offset": "0x01"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS02",
+          "offset": "0x02"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS03",
+          "offset": "0x03"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS04",
+          "offset": "0x04"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS05",
+          "offset": "0x05"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS06",
+          "offset": "0x06"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS07",
+          "offset": "0x07"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS08",
+          "offset": "0x08"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS09",
+          "offset": "0x09"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS10",
+          "offset": "0x0a"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS11",
+          "offset": "0x0b"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS12",
+          "offset": "0x0c"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS13",
+          "offset": "0x0d"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS14",
+          "offset": "0x0e"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS15",
+          "offset": "0x0f"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS16",
+          "offset": "0x10"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS17",
+          "offset": "0x11"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS18",
+          "offset": "0x12"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS19",
+          "offset": "0x13"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS20",
+          "offset": "0x14"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS21",
+          "offset": "0x15"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS22",
+          "offset": "0x16"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS23",
+          "offset": "0x17"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS24",
+          "offset": "0x18"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x00",
+          "title": "MUS00"
+        },
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "MUS01"
+        },
+        {
+          "kind": "title",
+          "code": "0x02",
+          "title": "MUS02"
+        },
+        {
+          "kind": "title",
+          "code": "0x03",
+          "title": "MUS03"
+        },
+        {
+          "kind": "title",
+          "code": "0x04",
+          "title": "MUS04"
+        },
+        {
+          "kind": "title",
+          "code": "0x05",
+          "title": "MUS05"
+        },
+        {
+          "kind": "title",
+          "code": "0x06",
+          "title": "MUS06"
+        },
+        {
+          "kind": "title",
+          "code": "0x07",
+          "title": "MUS07"
+        },
+        {
+          "kind": "title",
+          "code": "0x08",
+          "title": "MUS08"
+        },
+        {
+          "kind": "title",
+          "code": "0x09",
+          "title": "MUS09"
+        },
+        {
+          "kind": "title",
+          "code": "0x0a",
+          "title": "MUS10"
+        },
+        {
+          "kind": "title",
+          "code": "0x0b",
+          "title": "MUS11"
+        },
+        {
+          "kind": "title",
+          "code": "0x0c",
+          "title": "MUS12"
+        },
+        {
+          "kind": "title",
+          "code": "0x0d",
+          "title": "MUS13"
+        },
+        {
+          "kind": "comment",
+          "text": "\t<title code=\"0x0e\">MUS14</title> "
+        },
+        {
+          "kind": "title",
+          "code": "0x0f",
+          "title": "MUS15"
+        },
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "MUS16"
+        },
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "MUS17"
+        },
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "MUS18"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "MUS19"
+        },
+        {
+          "kind": "title",
+          "code": "0x14",
+          "title": "MUS20"
+        },
+        {
+          "kind": "title",
+          "code": "0x15",
+          "title": "MUS21"
+        },
+        {
+          "kind": "title",
+          "code": "0x16",
+          "title": "MUS22"
+        },
+        {
+          "kind": "title",
+          "code": "0x17",
+          "title": "MUS23"
+        },
+        {
+          "kind": "title",
+          "code": "0x18",
+          "title": "MUS24"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/bps.xml",
+      "source_order": 587,
+      "archive": "pipedrm88",
+      "id": "pipedrm88-opna"
+    },
+    {
+      "title": "[PC-8801] TETRIS",
+      "driver": {
+        "name": "pc88",
+        "type": "opn",
+        "alias": "BPS",
+        "platform": "NEC PC-8801"
+      },
+      "options": [
+        {
+          "name": "mdata_addr",
+          "value": "0x1000"
+        },
+        {
+          "name": "showfm3ex",
+          "value": "0x01"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "PATCH",
+          "offset": "0x0000"
+        },
+        {
+          "type": "code",
+          "path": "DRIVER",
+          "offset": "0x9000"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS00",
+          "offset": "0x00"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS01",
+          "offset": "0x01"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS02",
+          "offset": "0x02"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS03",
+          "offset": "0x03"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS04",
+          "offset": "0x04"
+        },
+        {
+          "type": "bgm",
+          "path": "PCM00",
+          "offset": "0x30"
+        },
+        {
+          "type": "bgm",
+          "path": "PCM01",
+          "offset": "0x31"
+        },
+        {
+          "type": "bgm",
+          "path": "PCM02",
+          "offset": "0x32"
+        },
+        {
+          "type": "bgm",
+          "path": "PCM03",
+          "offset": "0x33"
+        },
+        {
+          "type": "bgm",
+          "path": "PCM04",
+          "offset": "0x34"
+        },
+        {
+          "type": "bgm",
+          "path": "PCM05",
+          "offset": "0x35"
+        },
+        {
+          "type": "bgm",
+          "path": "PCM06",
+          "offset": "0x36"
+        },
+        {
+          "type": "bgm",
+          "path": "PCM07",
+          "offset": "0x37"
+        },
+        {
+          "type": "bgm",
+          "path": "PCM08",
+          "offset": "0x38"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x00000000",
+          "title": "MUS00 : STROLLING PLAYER"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000001",
+          "title": "MUS01 : TECHNOTRIS"
+        },
+        {
+          "kind": "title",
+          "code": "0x01000001",
+          "title": "MUS01 : KARINKA"
+        },
+        {
+          "kind": "title",
+          "code": "0x02000001",
+          "title": "MUS01 : TROIKA"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000002",
+          "title": "MUS02 : HEROES"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000003",
+          "title": "MUS03 : PEDDLER"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000004",
+          "title": "MUS04 : CELEBRATION 1"
+        },
+        {
+          "kind": "title",
+          "code": "0x01000004",
+          "title": "MUS04 : CELEBRATION 2"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000030",
+          "title": "PCM00 : \"Keep it up!\""
+        },
+        {
+          "kind": "title",
+          "code": "0x00000031",
+          "title": "PCM01 : \"You made it!\""
+        },
+        {
+          "kind": "title",
+          "code": "0x00000032",
+          "title": "PCM02 : \"Way to go!\""
+        },
+        {
+          "kind": "title",
+          "code": "0x00000033",
+          "title": "PCM03 : \"Bullet-Proof Software.\""
+        },
+        {
+          "kind": "title",
+          "code": "0x00000034",
+          "title": "PCM04 : \"Right on!\""
+        },
+        {
+          "kind": "title",
+          "code": "0x00000035",
+          "title": "PCM05 : \"Congratulations!\""
+        },
+        {
+          "kind": "title",
+          "code": "0x00000036",
+          "title": "PCM06 : \"You've got a high score!\""
+        },
+        {
+          "kind": "title",
+          "code": "0x00000037",
+          "title": "PCM07 : \"Oops... Too bad."
+        },
+        {
+          "kind": "title",
+          "code": "0x00000038",
+          "title": "PCM08 : \"This is your last chance!\""
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/bps.xml",
+      "source_order": 588,
+      "archive": "tetris88",
+      "id": "tetris88-opn"
+    },
+    {
+      "title": "[PC-8801] 碁・遊・技",
+      "driver": {
+        "name": "pc88",
+        "type": "opn",
+        "alias": "BPS",
+        "platform": "NEC PC-8801"
+      },
+      "options": [],
+      "assets": [
+        {
+          "type": "code",
+          "path": "PATCH",
+          "offset": "0x0000"
+        },
+        {
+          "type": "code",
+          "path": "PROG",
+          "offset": "0x2800"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x00",
+          "title": "演奏停止"
+        },
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "BGM 1"
+        },
+        {
+          "kind": "title",
+          "code": "0x02",
+          "title": "BGM 2"
+        },
+        {
+          "kind": "title",
+          "code": "0x03",
+          "title": "BGM 3"
+        },
+        {
+          "kind": "title",
+          "code": "0x04",
+          "title": "BGM 4"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/bps.xml",
+      "source_order": 589,
+      "archive": "goyugi",
+      "id": "goyugi-opn"
+    },
+    {
+      "title": "[PC-88VA] TETRIS(OPNA)",
+      "driver": {
+        "name": "pc88vados",
+        "type": "opna",
+        "alias": "BPS",
+        "platform": "NEC PC-88VA"
+      },
+      "options": [],
+      "assets": [
+        {
+          "type": "file",
+          "path": "tetrisva.com",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "TETRIS.EXE",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "VHISC.S",
+          "offset": "0x10"
+        },
+        {
+          "type": "file",
+          "path": "VKARI.S",
+          "offset": "0x11"
+        },
+        {
+          "type": "file",
+          "path": "VREA.S",
+          "offset": "0x12"
+        },
+        {
+          "type": "file",
+          "path": "VREB.S",
+          "offset": "0x13"
+        },
+        {
+          "type": "file",
+          "path": "VT1.S",
+          "offset": "0x14"
+        },
+        {
+          "type": "file",
+          "path": "VT2.S",
+          "offset": "0x15"
+        },
+        {
+          "type": "file",
+          "path": "VTEC.S",
+          "offset": "0x16"
+        },
+        {
+          "type": "file",
+          "path": "VTRO.S",
+          "offset": "0x17"
+        },
+        {
+          "type": "shell",
+          "path": "tetrisva",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x010014",
+          "title": "VT1.S   : STROLLING PLAYER"
+        },
+        {
+          "kind": "title",
+          "code": "0x010016",
+          "title": "VTEC.S  : TECHNOTRIS"
+        },
+        {
+          "kind": "title",
+          "code": "0x010011",
+          "title": "VKARI.S : KARINKA"
+        },
+        {
+          "kind": "title",
+          "code": "0x010017",
+          "title": "VTRO.S  : TROIKA"
+        },
+        {
+          "kind": "title",
+          "code": "0x010010",
+          "title": "VHISC.S : HEROES"
+        },
+        {
+          "kind": "title",
+          "code": "0x010015",
+          "title": "VT2.S   : PEDDLER"
+        },
+        {
+          "kind": "title",
+          "code": "0x010012",
+          "title": "VREA.S  : CELEBRATION 1"
+        },
+        {
+          "kind": "title",
+          "code": "0x010013",
+          "title": "VREB.S  : CELEBRATION 2"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/bps.xml",
+      "source_order": 590,
+      "archive": "tetrisva",
+      "id": "tetrisva-opna"
+    },
+    {
+      "title": "[PC-88VA] TETRIS(OPN)",
+      "driver": {
+        "name": "pc88vados",
+        "type": "opn",
+        "alias": "BPS",
+        "platform": "NEC PC-88VA"
+      },
+      "options": [],
+      "assets": [
+        {
+          "type": "file",
+          "path": "tetrisva.com",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "TETRIS.EXE",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "3HISC.S",
+          "offset": "0x10"
+        },
+        {
+          "type": "file",
+          "path": "3KARI.S",
+          "offset": "0x11"
+        },
+        {
+          "type": "file",
+          "path": "3REA.S",
+          "offset": "0x12"
+        },
+        {
+          "type": "file",
+          "path": "3REB.S",
+          "offset": "0x13"
+        },
+        {
+          "type": "file",
+          "path": "3T1.S",
+          "offset": "0x14"
+        },
+        {
+          "type": "file",
+          "path": "3T2.S",
+          "offset": "0x15"
+        },
+        {
+          "type": "file",
+          "path": "3TEC.S",
+          "offset": "0x16"
+        },
+        {
+          "type": "file",
+          "path": "3TRO.S",
+          "offset": "0x17"
+        },
+        {
+          "type": "shell",
+          "path": "tetrisva",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x010014",
+          "title": "3T1.S   : STROLLING PLAYER"
+        },
+        {
+          "kind": "title",
+          "code": "0x010016",
+          "title": "3TEC.S  : TECHNOTRIS"
+        },
+        {
+          "kind": "title",
+          "code": "0x010011",
+          "title": "3KARI.S : KARINKA"
+        },
+        {
+          "kind": "title",
+          "code": "0x010017",
+          "title": "3TRO.S  : TROIKA"
+        },
+        {
+          "kind": "title",
+          "code": "0x010010",
+          "title": "3HISC.S : HEROES"
+        },
+        {
+          "kind": "title",
+          "code": "0x010015",
+          "title": "3T2.S   : PEDDLER"
+        },
+        {
+          "kind": "title",
+          "code": "0x010012",
+          "title": "3REA.S  : CELEBRATION 1"
+        },
+        {
+          "kind": "title",
+          "code": "0x010013",
+          "title": "3REB.S  : CELEBRATION 2"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/bps.xml",
+      "source_order": 591,
+      "archive": "tetrisva",
+      "id": "tetrisva-opn"
+    },
+    {
+      "title": "[X1] M.U.L.E.",
+      "driver": {
+        "name": "x1",
+        "type": "psg",
+        "alias": "BPS",
+        "platform": "SHARP X1"
+      },
+      "options": [
+        {
+          "name": "ctc3",
+          "value": "0x2b"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "PATCH",
+          "offset": "0x0000"
+        },
+        {
+          "type": "code",
+          "path": "PROG",
+          "offset": "0x6000"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x00",
+          "title": "MAIN BGM"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/bps.xml",
+      "source_order": 592,
+      "archive": "x1mule",
+      "id": "x1mule-psg"
+    },
+    {
+      "title": "[X1] TETRIS(PSG)",
+      "driver": {
+        "name": "x1",
+        "type": "psg",
+        "alias": "BPS",
+        "platform": "SHARP X1"
+      },
+      "options": [],
+      "assets": [
+        {
+          "type": "code",
+          "path": "PATCH2",
+          "offset": "0x0000"
+        },
+        {
+          "type": "code",
+          "path": "MUSPSG",
+          "offset": "0x5000"
+        },
+        {
+          "type": "code",
+          "path": "PROG",
+          "offset": "0xa000"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "01 : TECHNOTRIS"
+        },
+        {
+          "kind": "title",
+          "code": "0x02",
+          "title": "02 : KARINKA"
+        },
+        {
+          "kind": "title",
+          "code": "0x03",
+          "title": "03 : TROIKA"
+        },
+        {
+          "kind": "title",
+          "code": "0x05",
+          "title": "05 : STROLLING PLAYER"
+        },
+        {
+          "kind": "title",
+          "code": "0x06",
+          "title": "06 : PEDDLER"
+        },
+        {
+          "kind": "title",
+          "code": "0x07",
+          "title": "07 : HEROES"
+        },
+        {
+          "kind": "title",
+          "code": "0x08",
+          "title": "08 : CELEBRATION 1"
+        },
+        {
+          "kind": "title",
+          "code": "0x09",
+          "title": "09 : CELEBRATION 2"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/bps.xml",
+      "source_order": 593,
+      "archive": "x1tetris",
+      "id": "x1tetris-psg"
+    },
+    {
+      "title": "[X1] TETRIS(OPM)",
+      "driver": {
+        "name": "x1",
+        "type": "opm",
+        "alias": "BPS",
+        "platform": "SHARP X1"
+      },
+      "options": [
+        {
+          "name": "mdata_addr",
+          "value": "0x5000"
+        },
+        {
+          "name": "mfile_size",
+          "value": "0x4400"
+        },
+        {
+          "name": "mdata_size",
+          "value": "0x4400"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "PATCH",
+          "offset": "0x0000"
+        },
+        {
+          "type": "code",
+          "path": "PROG",
+          "offset": "0xa000"
+        },
+        {
+          "type": "bgm",
+          "path": "MUSFM0",
+          "offset": "0x00"
+        },
+        {
+          "type": "bgm",
+          "path": "MUSFM1",
+          "offset": "0x01"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x01000000",
+          "title": "01 : TECHNOTRIS"
+        },
+        {
+          "kind": "title",
+          "code": "0x02000000",
+          "title": "02 : KARINKA"
+        },
+        {
+          "kind": "title",
+          "code": "0x03000000",
+          "title": "03 : TROIKA"
+        },
+        {
+          "kind": "title",
+          "code": "0x04000000",
+          "title": "04 : RUSSIAN WALTZ"
+        },
+        {
+          "kind": "title",
+          "code": "0x05000001",
+          "title": "05 : STROLLING PLAYER"
+        },
+        {
+          "kind": "title",
+          "code": "0x06000001",
+          "title": "06 : PEDDLER"
+        },
+        {
+          "kind": "title",
+          "code": "0x07000001",
+          "title": "07 : HEROES"
+        },
+        {
+          "kind": "title",
+          "code": "0x08000001",
+          "title": "08 : CELEBRATION 1"
+        },
+        {
+          "kind": "title",
+          "code": "0x09000001",
+          "title": "09 : CELEBRATION 2"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/bps.xml",
+      "source_order": 594,
+      "archive": "x1tetris",
+      "id": "x1tetris-opm"
+    },
+    {
+      "title": "[PC-9801] FRONTIER UNIVERSE(BEEP)",
+      "driver": {
+        "name": "pc98dos",
+        "type": "beep",
+        "alias": "BPS",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "funcvect",
+          "value": "0x7e"
+        },
+        {
+          "name": "clockmul",
+          "value": "8"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "PMD_98.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "PMDB.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "F_BP.EFC",
+          "offset": "0x08"
+        },
+        {
+          "type": "file",
+          "path": "BADEVENT.BEP",
+          "offset": "0x10"
+        },
+        {
+          "type": "file",
+          "path": "BATTLE1.BEP",
+          "offset": "0x11"
+        },
+        {
+          "type": "file",
+          "path": "BATTLE2.BEP",
+          "offset": "0x12"
+        },
+        {
+          "type": "file",
+          "path": "CLEAR.BEP",
+          "offset": "0x13"
+        },
+        {
+          "type": "file",
+          "path": "COMU.BEP",
+          "offset": "0x14"
+        },
+        {
+          "type": "file",
+          "path": "ENDING.BEP",
+          "offset": "0x15"
+        },
+        {
+          "type": "file",
+          "path": "ENDMES.BEP",
+          "offset": "0x16"
+        },
+        {
+          "type": "file",
+          "path": "GAMEOVER.BEP",
+          "offset": "0x17"
+        },
+        {
+          "type": "file",
+          "path": "KAIGI.BEP",
+          "offset": "0x18"
+        },
+        {
+          "type": "file",
+          "path": "MAP1.BEP",
+          "offset": "0x19"
+        },
+        {
+          "type": "file",
+          "path": "MAP2.BEP",
+          "offset": "0x1a"
+        },
+        {
+          "type": "file",
+          "path": "MAP3.BEP",
+          "offset": "0x1b"
+        },
+        {
+          "type": "file",
+          "path": "MENU.BEP",
+          "offset": "0x1c"
+        },
+        {
+          "type": "file",
+          "path": "OPENING.BEP",
+          "offset": "0x1d"
+        },
+        {
+          "type": "file",
+          "path": "PROTECT.BEP",
+          "offset": "0x1e"
+        },
+        {
+          "type": "file",
+          "path": "SALOON.BEP",
+          "offset": "0x1f"
+        },
+        {
+          "type": "file",
+          "path": "SEIZOU.BEP",
+          "offset": "0x20"
+        },
+        {
+          "type": "file",
+          "path": "SION.BEP",
+          "offset": "0x21"
+        },
+        {
+          "type": "file",
+          "path": "SIREN.BEP",
+          "offset": "0x22"
+        },
+        {
+          "type": "file",
+          "path": "YOUSAI1.BEP",
+          "offset": "0x23"
+        },
+        {
+          "type": "file",
+          "path": "YOUSAI2.BEP",
+          "offset": "0x24"
+        },
+        {
+          "type": "shell",
+          "path": "pmdb /K",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "pmd_98",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "BADEVENT.BEP :"
+        },
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "BATTLE1.BEP  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "BATTLE2.BEP  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "CLEAR.BEP    :"
+        },
+        {
+          "kind": "title",
+          "code": "0x14",
+          "title": "COMU.BEP     :"
+        },
+        {
+          "kind": "title",
+          "code": "0x15",
+          "title": "ENDING.BEP   :"
+        },
+        {
+          "kind": "title",
+          "code": "0x16",
+          "title": "ENDMES.BEP   :"
+        },
+        {
+          "kind": "title",
+          "code": "0x17",
+          "title": "GAMEOVER.BEP :"
+        },
+        {
+          "kind": "title",
+          "code": "0x18",
+          "title": "KAIGI.BEP    :"
+        },
+        {
+          "kind": "title",
+          "code": "0x19",
+          "title": "MAP1.BEP     :"
+        },
+        {
+          "kind": "title",
+          "code": "0x1a",
+          "title": "MAP2.BEP     :"
+        },
+        {
+          "kind": "title",
+          "code": "0x1b",
+          "title": "MAP3.BEP     :"
+        },
+        {
+          "kind": "title",
+          "code": "0x1c",
+          "title": "MENU.BEP     :"
+        },
+        {
+          "kind": "title",
+          "code": "0x1d",
+          "title": "OPENING.BEP  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x1e",
+          "title": "PROTECT.BEP  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x1f",
+          "title": "SALOON.BEP   :"
+        },
+        {
+          "kind": "title",
+          "code": "0x20",
+          "title": "SEIZOU.BEP   :"
+        },
+        {
+          "kind": "title",
+          "code": "0x21",
+          "title": "SION.BEP     :"
+        },
+        {
+          "kind": "title",
+          "code": "0x22",
+          "title": "SIREN.BEP    :"
+        },
+        {
+          "kind": "title",
+          "code": "0x23",
+          "title": "YOUSAI1.BEP  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x24",
+          "title": "YOUSAI2.BEP  :"
+        },
+        {
+          "kind": "range",
+          "min": "0x0801",
+          "max": "0x0814",
+          "title_format": "F_BP.EFC     : %2X",
+          "extcode": "1"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/bps.xml",
+      "source_order": 595,
+      "archive": "frnunv98",
+      "id": "frnunv98-beep"
+    },
+    {
+      "title": "[PC-9801] FRONTIER UNIVERSE(OPN)",
+      "driver": {
+        "name": "pc98dos",
+        "type": "opn",
+        "alias": "BPS",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "funcvect",
+          "value": "0x7e"
+        },
+        {
+          "name": "clockmul",
+          "value": "8"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "PMD_98.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "PMD.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "F_FM.EFC",
+          "offset": "0x08"
+        },
+        {
+          "type": "file",
+          "path": "BADEVENT.FM",
+          "offset": "0x10"
+        },
+        {
+          "type": "file",
+          "path": "BATTLE1.FM",
+          "offset": "0x11"
+        },
+        {
+          "type": "file",
+          "path": "BATTLE2.FM",
+          "offset": "0x12"
+        },
+        {
+          "type": "file",
+          "path": "CLEAR.FM",
+          "offset": "0x13"
+        },
+        {
+          "type": "file",
+          "path": "COMU.FM",
+          "offset": "0x14"
+        },
+        {
+          "type": "file",
+          "path": "ENDING.FM",
+          "offset": "0x15"
+        },
+        {
+          "type": "file",
+          "path": "ENDMES.FM",
+          "offset": "0x16"
+        },
+        {
+          "type": "file",
+          "path": "GAMEOVER.FM",
+          "offset": "0x17"
+        },
+        {
+          "type": "file",
+          "path": "KAIGI.FM",
+          "offset": "0x18"
+        },
+        {
+          "type": "file",
+          "path": "LOGO.FM",
+          "offset": "0x19"
+        },
+        {
+          "type": "file",
+          "path": "MAP1.FM",
+          "offset": "0x1a"
+        },
+        {
+          "type": "file",
+          "path": "MAP2.FM",
+          "offset": "0x1b"
+        },
+        {
+          "type": "file",
+          "path": "MAP3.FM",
+          "offset": "0x1c"
+        },
+        {
+          "type": "file",
+          "path": "MENU.FM",
+          "offset": "0x1d"
+        },
+        {
+          "type": "file",
+          "path": "OPENING.FM",
+          "offset": "0x1e"
+        },
+        {
+          "type": "file",
+          "path": "PROTECT.FM",
+          "offset": "0x1f"
+        },
+        {
+          "type": "file",
+          "path": "SALOON.FM",
+          "offset": "0x20"
+        },
+        {
+          "type": "file",
+          "path": "SEIZOU.FM",
+          "offset": "0x21"
+        },
+        {
+          "type": "file",
+          "path": "SION.FM",
+          "offset": "0x22"
+        },
+        {
+          "type": "file",
+          "path": "SIREN.FM",
+          "offset": "0x23"
+        },
+        {
+          "type": "file",
+          "path": "WAKUSEI.FM",
+          "offset": "0x24"
+        },
+        {
+          "type": "file",
+          "path": "YOUSAI1.FM",
+          "offset": "0x25"
+        },
+        {
+          "type": "file",
+          "path": "YOUSAI2.FM",
+          "offset": "0x26"
+        },
+        {
+          "type": "shell",
+          "path": "pmd /K",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "pmd_98",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "BADEVENT.FM :"
+        },
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "BATTLE1.FM  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "BATTLE2.FM  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "CLEAR.FM    :"
+        },
+        {
+          "kind": "title",
+          "code": "0x14",
+          "title": "COMU.FM     :"
+        },
+        {
+          "kind": "title",
+          "code": "0x15",
+          "title": "ENDING.FM   :"
+        },
+        {
+          "kind": "title",
+          "code": "0x16",
+          "title": "ENDMES.FM   :"
+        },
+        {
+          "kind": "title",
+          "code": "0x17",
+          "title": "GAMEOVER.FM :"
+        },
+        {
+          "kind": "title",
+          "code": "0x18",
+          "title": "KAIGI.FM    :"
+        },
+        {
+          "kind": "title",
+          "code": "0x19",
+          "title": "LOGO.FM     :"
+        },
+        {
+          "kind": "title",
+          "code": "0x1a",
+          "title": "MAP1.FM     :"
+        },
+        {
+          "kind": "title",
+          "code": "0x1b",
+          "title": "MAP2.FM     :"
+        },
+        {
+          "kind": "title",
+          "code": "0x1c",
+          "title": "MAP3.FM     :"
+        },
+        {
+          "kind": "title",
+          "code": "0x1d",
+          "title": "MENU.FM     :"
+        },
+        {
+          "kind": "title",
+          "code": "0x1e",
+          "title": "OPENING.FM  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x1f",
+          "title": "PROTECT.FM  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x20",
+          "title": "SALOON.FM   :"
+        },
+        {
+          "kind": "title",
+          "code": "0x21",
+          "title": "SEIZOU.FM   :"
+        },
+        {
+          "kind": "title",
+          "code": "0x22",
+          "title": "SION.FM     :"
+        },
+        {
+          "kind": "title",
+          "code": "0x23",
+          "title": "SIREN.FM    :"
+        },
+        {
+          "kind": "title",
+          "code": "0x24",
+          "title": "WAKUSEI.FM  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x25",
+          "title": "YOUSAI1.FM  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x26",
+          "title": "YOUSAI2.FM  :"
+        },
+        {
+          "kind": "range",
+          "min": "0x0801",
+          "max": "0x0819",
+          "title_format": "F_FM.EFC    : %2X",
+          "extcode": "1"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/bps.xml",
+      "source_order": 596,
+      "archive": "frnunv98",
+      "id": "frnunv98-opn"
+    },
+    {
+      "title": "[PC-9801] FRONTIER UNIVERSE(MT-32)",
+      "driver": {
+        "name": "pc98dos",
+        "type": "beep",
+        "alias": "BPS",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "clockmul",
+          "value": "4"
+        },
+        {
+          "name": "midiout",
+          "value": "1"
+        },
+        {
+          "name": "midiout_type",
+          "value": "2"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "mmp_hoot.com",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MMD.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "PUTEX.EXE",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MT32_ROM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "BADEVENT.32",
+          "offset": "0x10"
+        },
+        {
+          "type": "file",
+          "path": "BATTLE1.32",
+          "offset": "0x11"
+        },
+        {
+          "type": "file",
+          "path": "BATTLE2.32",
+          "offset": "0x12"
+        },
+        {
+          "type": "file",
+          "path": "CLEAR.32",
+          "offset": "0x13"
+        },
+        {
+          "type": "file",
+          "path": "COMU.32",
+          "offset": "0x14"
+        },
+        {
+          "type": "file",
+          "path": "ENDING.32",
+          "offset": "0x15"
+        },
+        {
+          "type": "file",
+          "path": "ENDMES.32",
+          "offset": "0x16"
+        },
+        {
+          "type": "file",
+          "path": "GAMEOVER.32",
+          "offset": "0x17"
+        },
+        {
+          "type": "file",
+          "path": "KAIGI.32",
+          "offset": "0x18"
+        },
+        {
+          "type": "file",
+          "path": "LOGO.32",
+          "offset": "0x19"
+        },
+        {
+          "type": "file",
+          "path": "MAP1.32",
+          "offset": "0x1a"
+        },
+        {
+          "type": "file",
+          "path": "MAP2.32",
+          "offset": "0x1b"
+        },
+        {
+          "type": "file",
+          "path": "MAP3.32",
+          "offset": "0x1c"
+        },
+        {
+          "type": "file",
+          "path": "MENU.32",
+          "offset": "0x1d"
+        },
+        {
+          "type": "file",
+          "path": "OPENING.32",
+          "offset": "0x1e"
+        },
+        {
+          "type": "file",
+          "path": "PROTECT.32",
+          "offset": "0x1f"
+        },
+        {
+          "type": "file",
+          "path": "SALOON.32",
+          "offset": "0x20"
+        },
+        {
+          "type": "file",
+          "path": "SEIZOU.32",
+          "offset": "0x21"
+        },
+        {
+          "type": "file",
+          "path": "SION.32",
+          "offset": "0x22"
+        },
+        {
+          "type": "file",
+          "path": "SIREN.32",
+          "offset": "0x23"
+        },
+        {
+          "type": "file",
+          "path": "WAKUSEI.32",
+          "offset": "0x24"
+        },
+        {
+          "type": "file",
+          "path": "YOUSAI1.32",
+          "offset": "0x25"
+        },
+        {
+          "type": "file",
+          "path": "YOUSAI2.32",
+          "offset": "0x26"
+        },
+        {
+          "type": "shell",
+          "path": "putex",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "mmd /K",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "mmp_hoot",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "BADEVENT.32"
+        },
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "BATTLE1.32"
+        },
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "BATTLE2.32"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "CLEAR.32"
+        },
+        {
+          "kind": "title",
+          "code": "0x14",
+          "title": "COMU.32"
+        },
+        {
+          "kind": "title",
+          "code": "0x15",
+          "title": "ENDING.32"
+        },
+        {
+          "kind": "title",
+          "code": "0x16",
+          "title": "ENDMES.32"
+        },
+        {
+          "kind": "title",
+          "code": "0x17",
+          "title": "GAMEOVER.32"
+        },
+        {
+          "kind": "title",
+          "code": "0x18",
+          "title": "KAIGI.32"
+        },
+        {
+          "kind": "title",
+          "code": "0x19",
+          "title": "LOGO.32"
+        },
+        {
+          "kind": "title",
+          "code": "0x1a",
+          "title": "MAP1.32"
+        },
+        {
+          "kind": "title",
+          "code": "0x1b",
+          "title": "MAP2.32"
+        },
+        {
+          "kind": "title",
+          "code": "0x1c",
+          "title": "MAP3.32"
+        },
+        {
+          "kind": "title",
+          "code": "0x1d",
+          "title": "MENU.32"
+        },
+        {
+          "kind": "title",
+          "code": "0x1e",
+          "title": "OPENING.32"
+        },
+        {
+          "kind": "title",
+          "code": "0x1f",
+          "title": "PROTECT.32"
+        },
+        {
+          "kind": "title",
+          "code": "0x20",
+          "title": "SALOON.32"
+        },
+        {
+          "kind": "title",
+          "code": "0x21",
+          "title": "SEIZOU.32"
+        },
+        {
+          "kind": "title",
+          "code": "0x22",
+          "title": "SION.32"
+        },
+        {
+          "kind": "title",
+          "code": "0x23",
+          "title": "SIREN.32"
+        },
+        {
+          "kind": "title",
+          "code": "0x24",
+          "title": "WAKUSEI.32"
+        },
+        {
+          "kind": "title",
+          "code": "0x25",
+          "title": "YOUSAI1.32"
+        },
+        {
+          "kind": "title",
+          "code": "0x26",
+          "title": "YOUSAI2.32"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/bps.xml",
+      "source_order": 597,
+      "archive": "frnunv98",
+      "id": "frnunv98-beep-2"
+    },
+    {
+      "title": "[PC-9801] FRONTIER UNIVERSE(MT-32 Emulation)",
+      "driver": {
+        "name": "pc98dos",
+        "type": "beep",
+        "alias": "BPS",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "clockmul",
+          "value": "4"
+        },
+        {
+          "name": "midiout",
+          "value": "1"
+        },
+        {
+          "name": "midiout_type",
+          "value": "1"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "mmp_hoot.com",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MMD.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "PUTEX.EXE",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MT32_ROM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "BADEVENT.32",
+          "offset": "0x10"
+        },
+        {
+          "type": "file",
+          "path": "BATTLE1.32",
+          "offset": "0x11"
+        },
+        {
+          "type": "file",
+          "path": "BATTLE2.32",
+          "offset": "0x12"
+        },
+        {
+          "type": "file",
+          "path": "CLEAR.32",
+          "offset": "0x13"
+        },
+        {
+          "type": "file",
+          "path": "COMU.32",
+          "offset": "0x14"
+        },
+        {
+          "type": "file",
+          "path": "ENDING.32",
+          "offset": "0x15"
+        },
+        {
+          "type": "file",
+          "path": "ENDMES.32",
+          "offset": "0x16"
+        },
+        {
+          "type": "file",
+          "path": "GAMEOVER.32",
+          "offset": "0x17"
+        },
+        {
+          "type": "file",
+          "path": "KAIGI.32",
+          "offset": "0x18"
+        },
+        {
+          "type": "file",
+          "path": "LOGO.32",
+          "offset": "0x19"
+        },
+        {
+          "type": "file",
+          "path": "MAP1.32",
+          "offset": "0x1a"
+        },
+        {
+          "type": "file",
+          "path": "MAP2.32",
+          "offset": "0x1b"
+        },
+        {
+          "type": "file",
+          "path": "MAP3.32",
+          "offset": "0x1c"
+        },
+        {
+          "type": "file",
+          "path": "MENU.32",
+          "offset": "0x1d"
+        },
+        {
+          "type": "file",
+          "path": "OPENING.32",
+          "offset": "0x1e"
+        },
+        {
+          "type": "file",
+          "path": "PROTECT.32",
+          "offset": "0x1f"
+        },
+        {
+          "type": "file",
+          "path": "SALOON.32",
+          "offset": "0x20"
+        },
+        {
+          "type": "file",
+          "path": "SEIZOU.32",
+          "offset": "0x21"
+        },
+        {
+          "type": "file",
+          "path": "SION.32",
+          "offset": "0x22"
+        },
+        {
+          "type": "file",
+          "path": "SIREN.32",
+          "offset": "0x23"
+        },
+        {
+          "type": "file",
+          "path": "WAKUSEI.32",
+          "offset": "0x24"
+        },
+        {
+          "type": "file",
+          "path": "YOUSAI1.32",
+          "offset": "0x25"
+        },
+        {
+          "type": "file",
+          "path": "YOUSAI2.32",
+          "offset": "0x26"
+        },
+        {
+          "type": "shell",
+          "path": "putex",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "mmd /K",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "mmp_hoot",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "BADEVENT.32 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "BATTLE1.32  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "BATTLE2.32  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "CLEAR.32    :"
+        },
+        {
+          "kind": "title",
+          "code": "0x14",
+          "title": "COMU.32     :"
+        },
+        {
+          "kind": "title",
+          "code": "0x15",
+          "title": "ENDING.32   :"
+        },
+        {
+          "kind": "title",
+          "code": "0x16",
+          "title": "ENDMES.32   :"
+        },
+        {
+          "kind": "title",
+          "code": "0x17",
+          "title": "GAMEOVER.32 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x18",
+          "title": "KAIGI.32    :"
+        },
+        {
+          "kind": "title",
+          "code": "0x19",
+          "title": "LOGO.32     :"
+        },
+        {
+          "kind": "title",
+          "code": "0x1a",
+          "title": "MAP1.32     :"
+        },
+        {
+          "kind": "title",
+          "code": "0x1b",
+          "title": "MAP2.32     :"
+        },
+        {
+          "kind": "title",
+          "code": "0x1c",
+          "title": "MAP3.32     :"
+        },
+        {
+          "kind": "title",
+          "code": "0x1d",
+          "title": "MENU.32     :"
+        },
+        {
+          "kind": "title",
+          "code": "0x1e",
+          "title": "OPENING.32  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x1f",
+          "title": "PROTECT.32  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x20",
+          "title": "SALOON.32   :"
+        },
+        {
+          "kind": "title",
+          "code": "0x21",
+          "title": "SEIZOU.32   :"
+        },
+        {
+          "kind": "title",
+          "code": "0x22",
+          "title": "SION.32     :"
+        },
+        {
+          "kind": "title",
+          "code": "0x23",
+          "title": "SIREN.32    :"
+        },
+        {
+          "kind": "title",
+          "code": "0x24",
+          "title": "WAKUSEI.32  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x25",
+          "title": "YOUSAI1.32  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x26",
+          "title": "YOUSAI2.32  :"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/bps.xml",
+      "source_order": 598,
+      "archive": "frnunv98",
+      "id": "frnunv98-beep-3"
+    },
+    {
+      "title": "[PC-9801] FRONTIER UNIVERSE(CM-64)",
+      "driver": {
+        "name": "pc98dos",
+        "type": "beep",
+        "alias": "BPS",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "clockmul",
+          "value": "4"
+        },
+        {
+          "name": "midiout",
+          "value": "1"
+        },
+        {
+          "name": "midiout_type",
+          "value": "3"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "mmp_hoot.com",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MMD.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "PUTEX.EXE",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MT32_ROM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "BADEVENT.64",
+          "offset": "0x10"
+        },
+        {
+          "type": "file",
+          "path": "BATTLE1.64",
+          "offset": "0x11"
+        },
+        {
+          "type": "file",
+          "path": "BATTLE2.64",
+          "offset": "0x12"
+        },
+        {
+          "type": "file",
+          "path": "CLEAR.64",
+          "offset": "0x13"
+        },
+        {
+          "type": "file",
+          "path": "COMU.64",
+          "offset": "0x14"
+        },
+        {
+          "type": "file",
+          "path": "ENDING.64",
+          "offset": "0x15"
+        },
+        {
+          "type": "file",
+          "path": "ENDMES.64",
+          "offset": "0x16"
+        },
+        {
+          "type": "file",
+          "path": "GAMEOVER.64",
+          "offset": "0x17"
+        },
+        {
+          "type": "file",
+          "path": "KAIGI.64",
+          "offset": "0x18"
+        },
+        {
+          "type": "file",
+          "path": "LOGO.64",
+          "offset": "0x19"
+        },
+        {
+          "type": "file",
+          "path": "MAP1.64",
+          "offset": "0x1a"
+        },
+        {
+          "type": "file",
+          "path": "MAP2.64",
+          "offset": "0x1b"
+        },
+        {
+          "type": "file",
+          "path": "MAP3.64",
+          "offset": "0x1c"
+        },
+        {
+          "type": "file",
+          "path": "MENU.64",
+          "offset": "0x1d"
+        },
+        {
+          "type": "file",
+          "path": "OPENING.64",
+          "offset": "0x1e"
+        },
+        {
+          "type": "file",
+          "path": "PROTECT.64",
+          "offset": "0x1f"
+        },
+        {
+          "type": "file",
+          "path": "SALOON.64",
+          "offset": "0x20"
+        },
+        {
+          "type": "file",
+          "path": "SEIZOU.64",
+          "offset": "0x21"
+        },
+        {
+          "type": "file",
+          "path": "SION.64",
+          "offset": "0x22"
+        },
+        {
+          "type": "file",
+          "path": "SIREN.64",
+          "offset": "0x23"
+        },
+        {
+          "type": "file",
+          "path": "WAKUSEI.64",
+          "offset": "0x24"
+        },
+        {
+          "type": "file",
+          "path": "YOUSAI1.64",
+          "offset": "0x25"
+        },
+        {
+          "type": "file",
+          "path": "YOUSAI2.64",
+          "offset": "0x26"
+        },
+        {
+          "type": "shell",
+          "path": "putex",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "mmd /K",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "mmp_hoot",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "BADEVENT.64"
+        },
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "BATTLE1.64"
+        },
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "BATTLE2.64"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "CLEAR.64"
+        },
+        {
+          "kind": "title",
+          "code": "0x14",
+          "title": "COMU.64"
+        },
+        {
+          "kind": "title",
+          "code": "0x15",
+          "title": "ENDING.64"
+        },
+        {
+          "kind": "title",
+          "code": "0x16",
+          "title": "ENDMES.64"
+        },
+        {
+          "kind": "title",
+          "code": "0x17",
+          "title": "GAMEOVER.64"
+        },
+        {
+          "kind": "title",
+          "code": "0x18",
+          "title": "KAIGI.64"
+        },
+        {
+          "kind": "title",
+          "code": "0x19",
+          "title": "LOGO.64"
+        },
+        {
+          "kind": "title",
+          "code": "0x1a",
+          "title": "MAP1.64"
+        },
+        {
+          "kind": "title",
+          "code": "0x1b",
+          "title": "MAP2.64"
+        },
+        {
+          "kind": "title",
+          "code": "0x1c",
+          "title": "MAP3.64"
+        },
+        {
+          "kind": "title",
+          "code": "0x1d",
+          "title": "MENU.64"
+        },
+        {
+          "kind": "title",
+          "code": "0x1e",
+          "title": "OPENING.64"
+        },
+        {
+          "kind": "title",
+          "code": "0x1f",
+          "title": "PROTECT.64"
+        },
+        {
+          "kind": "title",
+          "code": "0x20",
+          "title": "SALOON.64"
+        },
+        {
+          "kind": "title",
+          "code": "0x21",
+          "title": "SEIZOU.64"
+        },
+        {
+          "kind": "title",
+          "code": "0x22",
+          "title": "SION.64"
+        },
+        {
+          "kind": "title",
+          "code": "0x23",
+          "title": "SIREN.64"
+        },
+        {
+          "kind": "title",
+          "code": "0x24",
+          "title": "WAKUSEI.64"
+        },
+        {
+          "kind": "title",
+          "code": "0x25",
+          "title": "YOUSAI1.64"
+        },
+        {
+          "kind": "title",
+          "code": "0x26",
+          "title": "YOUSAI2.64"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/bps.xml",
+      "source_order": 599,
+      "archive": "frnunv98",
+      "id": "frnunv98-beep-4"
+    },
+    {
+      "title": "[PC-9801] FRONTIER UNIVERSE(GS)",
+      "driver": {
+        "name": "pc98dos",
+        "type": "beep",
+        "alias": "BPS",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "clockmul",
+          "value": "4"
+        },
+        {
+          "name": "midiout",
+          "value": "1"
+        },
+        {
+          "name": "midiout_type",
+          "value": "4"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "mmp_hoot.com",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MMD.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "BADEVENT.GS",
+          "offset": "0x10"
+        },
+        {
+          "type": "file",
+          "path": "BATTLE1.GS",
+          "offset": "0x11"
+        },
+        {
+          "type": "file",
+          "path": "BATTLE2.GS",
+          "offset": "0x12"
+        },
+        {
+          "type": "file",
+          "path": "CLEAR.GS",
+          "offset": "0x13"
+        },
+        {
+          "type": "file",
+          "path": "COMU.GS",
+          "offset": "0x14"
+        },
+        {
+          "type": "file",
+          "path": "ENDING.GS",
+          "offset": "0x15"
+        },
+        {
+          "type": "file",
+          "path": "ENDMES.GS",
+          "offset": "0x16"
+        },
+        {
+          "type": "file",
+          "path": "GAMEOVER.GS",
+          "offset": "0x17"
+        },
+        {
+          "type": "file",
+          "path": "KAIGI.GS",
+          "offset": "0x18"
+        },
+        {
+          "type": "file",
+          "path": "LOGO.GS",
+          "offset": "0x19"
+        },
+        {
+          "type": "file",
+          "path": "MAP1.GS",
+          "offset": "0x1a"
+        },
+        {
+          "type": "file",
+          "path": "MAP2.GS",
+          "offset": "0x1b"
+        },
+        {
+          "type": "file",
+          "path": "MAP3.GS",
+          "offset": "0x1c"
+        },
+        {
+          "type": "file",
+          "path": "MENU.GS",
+          "offset": "0x1d"
+        },
+        {
+          "type": "file",
+          "path": "OPENING.GS",
+          "offset": "0x1e"
+        },
+        {
+          "type": "file",
+          "path": "PROTECT.GS",
+          "offset": "0x1f"
+        },
+        {
+          "type": "file",
+          "path": "SALOON.GS",
+          "offset": "0x20"
+        },
+        {
+          "type": "file",
+          "path": "SEIZOU.GS",
+          "offset": "0x21"
+        },
+        {
+          "type": "file",
+          "path": "SION.GS",
+          "offset": "0x22"
+        },
+        {
+          "type": "file",
+          "path": "SIREN.GS",
+          "offset": "0x23"
+        },
+        {
+          "type": "file",
+          "path": "WAKUSEI.GS",
+          "offset": "0x24"
+        },
+        {
+          "type": "file",
+          "path": "YOUSAI1.GS",
+          "offset": "0x25"
+        },
+        {
+          "type": "file",
+          "path": "YOUSAI2.GS",
+          "offset": "0x26"
+        },
+        {
+          "type": "shell",
+          "path": "mmd /K",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "mmp_hoot",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "BADEVENT.GS"
+        },
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "BATTLE1.GS"
+        },
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "BATTLE2.GS"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "CLEAR.GS"
+        },
+        {
+          "kind": "title",
+          "code": "0x14",
+          "title": "COMU.GS"
+        },
+        {
+          "kind": "title",
+          "code": "0x15",
+          "title": "ENDING.GS"
+        },
+        {
+          "kind": "title",
+          "code": "0x16",
+          "title": "ENDMES.GS"
+        },
+        {
+          "kind": "title",
+          "code": "0x17",
+          "title": "GAMEOVER.GS"
+        },
+        {
+          "kind": "title",
+          "code": "0x18",
+          "title": "KAIGI.GS"
+        },
+        {
+          "kind": "title",
+          "code": "0x19",
+          "title": "LOGO.GS"
+        },
+        {
+          "kind": "title",
+          "code": "0x1a",
+          "title": "MAP1.GS"
+        },
+        {
+          "kind": "title",
+          "code": "0x1b",
+          "title": "MAP2.GS"
+        },
+        {
+          "kind": "title",
+          "code": "0x1c",
+          "title": "MAP3.GS"
+        },
+        {
+          "kind": "title",
+          "code": "0x1d",
+          "title": "MENU.GS"
+        },
+        {
+          "kind": "title",
+          "code": "0x1e",
+          "title": "OPENING.GS"
+        },
+        {
+          "kind": "title",
+          "code": "0x1f",
+          "title": "PROTECT.GS"
+        },
+        {
+          "kind": "title",
+          "code": "0x20",
+          "title": "SALOON.GS"
+        },
+        {
+          "kind": "title",
+          "code": "0x21",
+          "title": "SEIZOU.GS"
+        },
+        {
+          "kind": "title",
+          "code": "0x22",
+          "title": "SION.GS"
+        },
+        {
+          "kind": "title",
+          "code": "0x23",
+          "title": "SIREN.GS"
+        },
+        {
+          "kind": "title",
+          "code": "0x24",
+          "title": "WAKUSEI.GS"
+        },
+        {
+          "kind": "title",
+          "code": "0x25",
+          "title": "YOUSAI1.GS"
+        },
+        {
+          "kind": "title",
+          "code": "0x26",
+          "title": "YOUSAI2.GS"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/bps.xml",
+      "source_order": 600,
+      "archive": "frnunv98",
+      "id": "frnunv98-beep-5"
+    },
+    {
+      "title": "[PC-9801] Pipe Dream(OPN)",
+      "driver": {
+        "name": "pc98dos",
+        "type": "opn",
+        "alias": "BPS",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "clockmul",
+          "value": "8"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "ppd.com",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "STAY.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "PIPBG1.BIN",
+          "offset": "0x10"
+        },
+        {
+          "type": "file",
+          "path": "PIPBG2.BIN",
+          "offset": "0x11"
+        },
+        {
+          "type": "file",
+          "path": "PIPBG3.BIN",
+          "offset": "0x12"
+        },
+        {
+          "type": "file",
+          "path": "PIPBG4.BIN",
+          "offset": "0x13"
+        },
+        {
+          "type": "file",
+          "path": "PIPBG5.BIN",
+          "offset": "0x14"
+        },
+        {
+          "type": "file",
+          "path": "PIPBG6.BIN",
+          "offset": "0x15"
+        },
+        {
+          "type": "file",
+          "path": "PIPBG7.BIN",
+          "offset": "0x16"
+        },
+        {
+          "type": "file",
+          "path": "PIPBG8.BIN",
+          "offset": "0x17"
+        },
+        {
+          "type": "file",
+          "path": "PIPBON.BIN",
+          "offset": "0x18"
+        },
+        {
+          "type": "file",
+          "path": "PIPCF1.BIN",
+          "offset": "0x19"
+        },
+        {
+          "type": "file",
+          "path": "PIPCF2.BIN",
+          "offset": "0x1a"
+        },
+        {
+          "type": "file",
+          "path": "PIPCF3.BIN",
+          "offset": "0x1b"
+        },
+        {
+          "type": "file",
+          "path": "PIPCF4.BIN",
+          "offset": "0x1c"
+        },
+        {
+          "type": "file",
+          "path": "PIPCLR.BIN",
+          "offset": "0x1d"
+        },
+        {
+          "type": "file",
+          "path": "PIPDMO.BIN",
+          "offset": "0x1e"
+        },
+        {
+          "type": "file",
+          "path": "PIPED1.BIN",
+          "offset": "0x1f"
+        },
+        {
+          "type": "file",
+          "path": "PIPED2.BIN",
+          "offset": "0x20"
+        },
+        {
+          "type": "file",
+          "path": "PIPED3.BIN",
+          "offset": "0x21"
+        },
+        {
+          "type": "file",
+          "path": "PIPMNU.BIN",
+          "offset": "0x22"
+        },
+        {
+          "type": "file",
+          "path": "PIPNAM.BIN",
+          "offset": "0x23"
+        },
+        {
+          "type": "file",
+          "path": "PIPOVR.BIN",
+          "offset": "0x24"
+        },
+        {
+          "type": "file",
+          "path": "PIPRNK.BIN",
+          "offset": "0x25"
+        },
+        {
+          "type": "file",
+          "path": "PIPTIT.BIN",
+          "offset": "0x26"
+        },
+        {
+          "type": "shell",
+          "path": "stay",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "ppd",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x26",
+          "title": "PIPTIT.BIN : TITLE"
+        },
+        {
+          "kind": "title",
+          "code": "0x1e",
+          "title": "PIPDMO.BIN : DEMO"
+        },
+        {
+          "kind": "title",
+          "code": "0x22",
+          "title": "PIPMNU.BIN : MENU"
+        },
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "PIPBG1.BIN : BGM1"
+        },
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "PIPBG2.BIN : BGM2"
+        },
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "PIPBG3.BIN : BGM3"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "PIPBG4.BIN : BGM4"
+        },
+        {
+          "kind": "title",
+          "code": "0x14",
+          "title": "PIPBG5.BIN : BGM5"
+        },
+        {
+          "kind": "title",
+          "code": "0x15",
+          "title": "PIPBG6.BIN : BGM6"
+        },
+        {
+          "kind": "title",
+          "code": "0x16",
+          "title": "PIPBG7.BIN : BGM7"
+        },
+        {
+          "kind": "title",
+          "code": "0x17",
+          "title": "PIPBG8.BIN : BGM8"
+        },
+        {
+          "kind": "title",
+          "code": "0x24",
+          "title": "PIPOVR.BIN : OVER"
+        },
+        {
+          "kind": "title",
+          "code": "0x23",
+          "title": "PIPNAM.BIN : NAME"
+        },
+        {
+          "kind": "title",
+          "code": "0x25",
+          "title": "PIPRNK.BIN : RANKING"
+        },
+        {
+          "kind": "title",
+          "code": "0x19",
+          "title": "PIPCF1.BIN : BREAK1"
+        },
+        {
+          "kind": "title",
+          "code": "0x1a",
+          "title": "PIPCF2.BIN : BREAK2"
+        },
+        {
+          "kind": "title",
+          "code": "0x1b",
+          "title": "PIPCF3.BIN : BREAK3"
+        },
+        {
+          "kind": "title",
+          "code": "0x1c",
+          "title": "PIPCF4.BIN : BREAK4"
+        },
+        {
+          "kind": "title",
+          "code": "0x1d",
+          "title": "PIPCLR.BIN : CLEAR"
+        },
+        {
+          "kind": "title",
+          "code": "0x1f",
+          "title": "PIPED1.BIN : ENDING1"
+        },
+        {
+          "kind": "title",
+          "code": "0x20",
+          "title": "PIPED2.BIN : ENDING2"
+        },
+        {
+          "kind": "title",
+          "code": "0x21",
+          "title": "PIPED3.BIN : ENDING3"
+        },
+        {
+          "kind": "title",
+          "code": "0x18",
+          "title": "PIPBON.BIN :"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/bps.xml",
+      "source_order": 601,
+      "archive": "pipedrm98",
+      "id": "pipedrm98-opn"
+    },
+    {
+      "title": "[PC-9801] Pipe Dream(BEEP)",
+      "driver": {
+        "name": "pc98dos",
+        "type": "beep",
+        "alias": "BPS",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "clockmul",
+          "value": "8"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "bp.com",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "BDRV.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "BEPBG1.BIN",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "BEPBG2.BIN",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "BEPBG3.BIN",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "BEPBG4.BIN",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "BEPBG5.BIN",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "BEPBG6.BIN",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "BEPBG7.BIN",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "BEPBG8.BIN",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "BEPBON.BIN",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "BEPCF1.BIN",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "BEPCF2.BIN",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "BEPCF3.BIN",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "BEPCF4.BIN",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "BEPCLR.BIN",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "BEPDBG.BIN",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "BEPDMO.BIN",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "BEPED1.BIN",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "BEPED2.BIN",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "BEPED3.BIN",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "BEPMNU.BIN",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "BEPNAM.BIN",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "BEPOVR.BIN",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "BEPRNK.BIN",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "BEPTIT.BIN",
+          "offset": "-1"
+        },
+        {
+          "type": "conin",
+          "path": "BEPBG1.BIN",
+          "offset": "0x10"
+        },
+        {
+          "type": "conin",
+          "path": "BEPBG2.BIN",
+          "offset": "0x11"
+        },
+        {
+          "type": "conin",
+          "path": "BEPBG3.BIN",
+          "offset": "0x12"
+        },
+        {
+          "type": "conin",
+          "path": "BEPBG4.BIN",
+          "offset": "0x13"
+        },
+        {
+          "type": "conin",
+          "path": "BEPBG5.BIN",
+          "offset": "0x14"
+        },
+        {
+          "type": "conin",
+          "path": "BEPBG6.BIN",
+          "offset": "0x15"
+        },
+        {
+          "type": "conin",
+          "path": "BEPBG7.BIN",
+          "offset": "0x16"
+        },
+        {
+          "type": "conin",
+          "path": "BEPBG8.BIN",
+          "offset": "0x17"
+        },
+        {
+          "type": "conin",
+          "path": "BEPBON.BIN",
+          "offset": "0x18"
+        },
+        {
+          "type": "conin",
+          "path": "BEPCF1.BIN",
+          "offset": "0x19"
+        },
+        {
+          "type": "conin",
+          "path": "BEPCF2.BIN",
+          "offset": "0x1a"
+        },
+        {
+          "type": "conin",
+          "path": "BEPCF3.BIN",
+          "offset": "0x1b"
+        },
+        {
+          "type": "conin",
+          "path": "BEPCF4.BIN",
+          "offset": "0x1c"
+        },
+        {
+          "type": "conin",
+          "path": "BEPCLR.BIN",
+          "offset": "0x1d"
+        },
+        {
+          "type": "conin",
+          "path": "BEPDBG.BIN",
+          "offset": "0x1e"
+        },
+        {
+          "type": "conin",
+          "path": "BEPDMO.BIN",
+          "offset": "0x1f"
+        },
+        {
+          "type": "conin",
+          "path": "BEPED1.BIN",
+          "offset": "0x20"
+        },
+        {
+          "type": "conin",
+          "path": "BEPED2.BIN",
+          "offset": "0x21"
+        },
+        {
+          "type": "conin",
+          "path": "BEPED3.BIN",
+          "offset": "0x22"
+        },
+        {
+          "type": "conin",
+          "path": "BEPMNU.BIN",
+          "offset": "0x23"
+        },
+        {
+          "type": "conin",
+          "path": "BEPNAM.BIN",
+          "offset": "0x24"
+        },
+        {
+          "type": "conin",
+          "path": "BEPOVR.BIN",
+          "offset": "0x25"
+        },
+        {
+          "type": "conin",
+          "path": "BEPRNK.BIN",
+          "offset": "0x26"
+        },
+        {
+          "type": "conin",
+          "path": "BEPTIT.BIN",
+          "offset": "0x27"
+        },
+        {
+          "type": "shell",
+          "path": "bdrv",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "bp",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x27",
+          "title": "BEPTIT.BIN : TITLE"
+        },
+        {
+          "kind": "title",
+          "code": "0x1f",
+          "title": "BEPDMO.BIN : DEMO"
+        },
+        {
+          "kind": "title",
+          "code": "0x23",
+          "title": "BEPMNU.BIN : MENU"
+        },
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "BEPBG1.BIN : BGM1"
+        },
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "BEPBG2.BIN : BGM2"
+        },
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "BEPBG3.BIN : BGM3"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "BEPBG4.BIN : BGM4"
+        },
+        {
+          "kind": "title",
+          "code": "0x14",
+          "title": "BEPBG5.BIN : BGM5"
+        },
+        {
+          "kind": "title",
+          "code": "0x15",
+          "title": "BEPBG6.BIN : BGM6"
+        },
+        {
+          "kind": "title",
+          "code": "0x16",
+          "title": "BEPBG7.BIN : BGM7"
+        },
+        {
+          "kind": "title",
+          "code": "0x17",
+          "title": "BEPBG8.BIN : BGM8"
+        },
+        {
+          "kind": "title",
+          "code": "0x25",
+          "title": "BEPOVR.BIN : OVER"
+        },
+        {
+          "kind": "title",
+          "code": "0x24",
+          "title": "BEPNAM.BIN : NAME"
+        },
+        {
+          "kind": "title",
+          "code": "0x26",
+          "title": "BEPRNK.BIN : RANKING"
+        },
+        {
+          "kind": "title",
+          "code": "0x19",
+          "title": "BEPCF1.BIN : BREAK1"
+        },
+        {
+          "kind": "title",
+          "code": "0x1a",
+          "title": "BEPCF2.BIN : BREAK2"
+        },
+        {
+          "kind": "title",
+          "code": "0x1b",
+          "title": "BEPCF3.BIN : BREAK3"
+        },
+        {
+          "kind": "title",
+          "code": "0x1c",
+          "title": "BEPCF4.BIN : BREAK4"
+        },
+        {
+          "kind": "title",
+          "code": "0x1d",
+          "title": "BEPCLR.BIN : CLEAR"
+        },
+        {
+          "kind": "title",
+          "code": "0x20",
+          "title": "BEPED1.BIN : ENDING1"
+        },
+        {
+          "kind": "title",
+          "code": "0x21",
+          "title": "BEPED2.BIN : ENDING2"
+        },
+        {
+          "kind": "title",
+          "code": "0x22",
+          "title": "BEPED3.BIN : ENDING3"
+        },
+        {
+          "kind": "title",
+          "code": "0x18",
+          "title": "BEPBON.BIN :"
+        },
+        {
+          "kind": "title",
+          "code": "0x1e",
+          "title": "BEPDBG.BIN : DEBUG?"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/bps.xml",
+      "source_order": 602,
+      "archive": "pipedrm98",
+      "id": "pipedrm98-beep"
+    },
+    {
+      "title": "[PC-9801] HATRIS(OPN)",
+      "driver": {
+        "name": "pc98dos",
+        "type": "opn",
+        "alias": "BPS",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "clockmul",
+          "value": "8"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "sp.com",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "SDRV.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "VOICE.BIN",
+          "offset": "0x05"
+        },
+        {
+          "type": "file",
+          "path": "MUSIC_F0.BIN",
+          "offset": "0x10"
+        },
+        {
+          "type": "file",
+          "path": "MUSIC_F1.BIN",
+          "offset": "0x11"
+        },
+        {
+          "type": "file",
+          "path": "MUSIC_F2.BIN",
+          "offset": "0x12"
+        },
+        {
+          "type": "file",
+          "path": "MUSIC_F3.BIN",
+          "offset": "0x13"
+        },
+        {
+          "type": "file",
+          "path": "MUSIC_F4.BIN",
+          "offset": "0x14"
+        },
+        {
+          "type": "file",
+          "path": "MUSIC_F5.BIN",
+          "offset": "0x15"
+        },
+        {
+          "type": "file",
+          "path": "MUSIC_F6.BIN",
+          "offset": "0x16"
+        },
+        {
+          "type": "file",
+          "path": "MUSIC_F7.BIN",
+          "offset": "0x17"
+        },
+        {
+          "type": "file",
+          "path": "MUSIC_F8.BIN",
+          "offset": "0x18"
+        },
+        {
+          "type": "file",
+          "path": "MUSIC_F9.BIN",
+          "offset": "0x19"
+        },
+        {
+          "type": "file",
+          "path": "MUSIC_FC.BIN",
+          "offset": "0x1a"
+        },
+        {
+          "type": "file",
+          "path": "MUSIC_FE.BIN",
+          "offset": "0x1b"
+        },
+        {
+          "type": "file",
+          "path": "MUSIC_FN.BIN",
+          "offset": "0x1c"
+        },
+        {
+          "type": "file",
+          "path": "MUSIC_FO.BIN",
+          "offset": "0x1d"
+        },
+        {
+          "type": "file",
+          "path": "MUSIC_FT.BIN",
+          "offset": "0x1e"
+        },
+        {
+          "type": "shell",
+          "path": "sdrv",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "sp",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x1e",
+          "title": "MUSIC_FT.BIN : Title"
+        },
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "MUSIC_F0.BIN : Weekend Jam"
+        },
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "MUSIC_F1.BIN : Gold Rush"
+        },
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "MUSIC_F2.BIN : Parade"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "MUSIC_F3.BIN : Running Porter"
+        },
+        {
+          "kind": "title",
+          "code": "0x14",
+          "title": "MUSIC_F4.BIN : Puppeteer's Tango"
+        },
+        {
+          "kind": "title",
+          "code": "0x15",
+          "title": "MUSIC_F5.BIN : Celebration Day"
+        },
+        {
+          "kind": "title",
+          "code": "0x16",
+          "title": "MUSIC_F6.BIN : Uncle of Angel"
+        },
+        {
+          "kind": "title",
+          "code": "0x17",
+          "title": "MUSIC_F7.BIN : Cryptic Number"
+        },
+        {
+          "kind": "title",
+          "code": "0x18",
+          "title": "MUSIC_F8.BIN : Anzu"
+        },
+        {
+          "kind": "title",
+          "code": "0x19",
+          "title": "MUSIC_F9.BIN : Third Wave Dance"
+        },
+        {
+          "kind": "title",
+          "code": "0x1a",
+          "title": "MUSIC_FC.BIN : Coffee Break"
+        },
+        {
+          "kind": "title",
+          "code": "0x1d",
+          "title": "MUSIC_FO.BIN : Game Over"
+        },
+        {
+          "kind": "title",
+          "code": "0x1c",
+          "title": "MUSIC_FN.BIN : Name Entry"
+        },
+        {
+          "kind": "title",
+          "code": "0x1b",
+          "title": "MUSIC_FE.BIN : Ending"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/bps.xml",
+      "source_order": 603,
+      "archive": "hatris98",
+      "id": "hatris98-opn"
+    },
+    {
+      "title": "[PC-9801] HATRIS(BEEP)",
+      "driver": {
+        "name": "pc98dos",
+        "type": "beep",
+        "alias": "BPS",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "clockmul",
+          "value": "8"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "bp.com",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "BDRV.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MUSIC_B0.BIN",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MUSIC_B1.BIN",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MUSIC_B2.BIN",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MUSIC_B3.BIN",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MUSIC_B4.BIN",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MUSIC_B5.BIN",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MUSIC_B6.BIN",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MUSIC_B7.BIN",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MUSIC_B8.BIN",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MUSIC_B9.BIN",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MUSIC_BC.BIN",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MUSIC_BE.BIN",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MUSIC_BN.BIN",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MUSIC_BO.BIN",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MUSIC_BT.BIN",
+          "offset": "-1"
+        },
+        {
+          "type": "conin",
+          "path": "MUSIC_B0.BIN",
+          "offset": "0x10"
+        },
+        {
+          "type": "conin",
+          "path": "MUSIC_B1.BIN",
+          "offset": "0x11"
+        },
+        {
+          "type": "conin",
+          "path": "MUSIC_B2.BIN",
+          "offset": "0x12"
+        },
+        {
+          "type": "conin",
+          "path": "MUSIC_B3.BIN",
+          "offset": "0x13"
+        },
+        {
+          "type": "conin",
+          "path": "MUSIC_B4.BIN",
+          "offset": "0x14"
+        },
+        {
+          "type": "conin",
+          "path": "MUSIC_B5.BIN",
+          "offset": "0x15"
+        },
+        {
+          "type": "conin",
+          "path": "MUSIC_B6.BIN",
+          "offset": "0x16"
+        },
+        {
+          "type": "conin",
+          "path": "MUSIC_B7.BIN",
+          "offset": "0x17"
+        },
+        {
+          "type": "conin",
+          "path": "MUSIC_B8.BIN",
+          "offset": "0x18"
+        },
+        {
+          "type": "conin",
+          "path": "MUSIC_B9.BIN",
+          "offset": "0x19"
+        },
+        {
+          "type": "conin",
+          "path": "MUSIC_BC.BIN",
+          "offset": "0x1a"
+        },
+        {
+          "type": "conin",
+          "path": "MUSIC_BE.BIN",
+          "offset": "0x1b"
+        },
+        {
+          "type": "conin",
+          "path": "MUSIC_BN.BIN",
+          "offset": "0x1c"
+        },
+        {
+          "type": "conin",
+          "path": "MUSIC_BO.BIN",
+          "offset": "0x1d"
+        },
+        {
+          "type": "conin",
+          "path": "MUSIC_BT.BIN",
+          "offset": "0x1e"
+        },
+        {
+          "type": "shell",
+          "path": "bdrv",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "bp",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x1e",
+          "title": "MUSIC_BT.BIN : Title"
+        },
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "MUSIC_B0.BIN : Weekend Jam"
+        },
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "MUSIC_B1.BIN : Gold Rush"
+        },
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "MUSIC_B2.BIN : Parade"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "MUSIC_B3.BIN : Running Porter"
+        },
+        {
+          "kind": "title",
+          "code": "0x14",
+          "title": "MUSIC_B4.BIN : Puppeteer's Tango"
+        },
+        {
+          "kind": "title",
+          "code": "0x15",
+          "title": "MUSIC_B5.BIN : Celebration Day"
+        },
+        {
+          "kind": "title",
+          "code": "0x16",
+          "title": "MUSIC_B6.BIN : Uncle of Angel"
+        },
+        {
+          "kind": "title",
+          "code": "0x17",
+          "title": "MUSIC_B7.BIN : Cryptic Number"
+        },
+        {
+          "kind": "title",
+          "code": "0x18",
+          "title": "MUSIC_B8.BIN : Anzu"
+        },
+        {
+          "kind": "title",
+          "code": "0x19",
+          "title": "MUSIC_B9.BIN : Third Wave Dance"
+        },
+        {
+          "kind": "title",
+          "code": "0x1a",
+          "title": "MUSIC_BC.BIN : Coffee Break"
+        },
+        {
+          "kind": "title",
+          "code": "0x1d",
+          "title": "MUSIC_BO.BIN : Game Over"
+        },
+        {
+          "kind": "title",
+          "code": "0x1c",
+          "title": "MUSIC_BN.BIN : Name Entry"
+        },
+        {
+          "kind": "title",
+          "code": "0x1b",
+          "title": "MUSIC_BE.BIN : Ending"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/bps.xml",
+      "source_order": 604,
+      "archive": "hatris98",
+      "id": "hatris98-beep"
+    },
+    {
+      "title": "[PC-9801] WELLTRIS(OPN)",
+      "driver": {
+        "name": "pc98dos",
+        "type": "opn",
+        "alias": "BPS",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "clockmul",
+          "value": "8"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "ppd.com",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "STAY.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "WELBG1.BIN",
+          "offset": "0x10"
+        },
+        {
+          "type": "file",
+          "path": "WELBG2.BIN",
+          "offset": "0x11"
+        },
+        {
+          "type": "file",
+          "path": "WELBG3.BIN",
+          "offset": "0x12"
+        },
+        {
+          "type": "file",
+          "path": "WELBG4.BIN",
+          "offset": "0x13"
+        },
+        {
+          "type": "file",
+          "path": "WELBG5.BIN",
+          "offset": "0x14"
+        },
+        {
+          "type": "file",
+          "path": "WELBG6.BIN",
+          "offset": "0x15"
+        },
+        {
+          "type": "file",
+          "path": "WELBG7.BIN",
+          "offset": "0x16"
+        },
+        {
+          "type": "file",
+          "path": "WELBG8.BIN",
+          "offset": "0x17"
+        },
+        {
+          "type": "file",
+          "path": "WELBG9.BIN",
+          "offset": "0x18"
+        },
+        {
+          "type": "file",
+          "path": "WELBGA.BIN",
+          "offset": "0x19"
+        },
+        {
+          "type": "file",
+          "path": "WELDBG.BIN",
+          "offset": "0x1a"
+        },
+        {
+          "type": "file",
+          "path": "WELKG2.BIN",
+          "offset": "0x1b"
+        },
+        {
+          "type": "file",
+          "path": "WELKNG.BIN",
+          "offset": "0x1c"
+        },
+        {
+          "type": "file",
+          "path": "WELMNU.BIN",
+          "offset": "0x1d"
+        },
+        {
+          "type": "file",
+          "path": "WELNAM.BIN",
+          "offset": "0x1e"
+        },
+        {
+          "type": "file",
+          "path": "WELOV2.BIN",
+          "offset": "0x1f"
+        },
+        {
+          "type": "file",
+          "path": "WELOVR.BIN",
+          "offset": "0x20"
+        },
+        {
+          "type": "file",
+          "path": "WELTIT.BIN",
+          "offset": "0x21"
+        },
+        {
+          "type": "shell",
+          "path": "stay",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "ppd",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "WELBG1.BIN :"
+        },
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "WELBG2.BIN :"
+        },
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "WELBG3.BIN :"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "WELBG4.BIN :"
+        },
+        {
+          "kind": "title",
+          "code": "0x14",
+          "title": "WELBG5.BIN :"
+        },
+        {
+          "kind": "title",
+          "code": "0x15",
+          "title": "WELBG6.BIN :"
+        },
+        {
+          "kind": "title",
+          "code": "0x16",
+          "title": "WELBG7.BIN :"
+        },
+        {
+          "kind": "title",
+          "code": "0x17",
+          "title": "WELBG8.BIN :"
+        },
+        {
+          "kind": "title",
+          "code": "0x18",
+          "title": "WELBG9.BIN :"
+        },
+        {
+          "kind": "title",
+          "code": "0x19",
+          "title": "WELBGA.BIN :"
+        },
+        {
+          "kind": "title",
+          "code": "0x1a",
+          "title": "WELDBG.BIN :"
+        },
+        {
+          "kind": "title",
+          "code": "0x1b",
+          "title": "WELKG2.BIN :"
+        },
+        {
+          "kind": "title",
+          "code": "0x1c",
+          "title": "WELKNG.BIN :"
+        },
+        {
+          "kind": "title",
+          "code": "0x1d",
+          "title": "WELMNU.BIN :"
+        },
+        {
+          "kind": "title",
+          "code": "0x1e",
+          "title": "WELNAM.BIN :"
+        },
+        {
+          "kind": "title",
+          "code": "0x1f",
+          "title": "WELOV2.BIN :"
+        },
+        {
+          "kind": "title",
+          "code": "0x20",
+          "title": "WELOVR.BIN :"
+        },
+        {
+          "kind": "title",
+          "code": "0x21",
+          "title": "WELTIT.BIN :"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/bps.xml",
+      "source_order": 605,
+      "archive": "welltris_98",
+      "id": "welltris-98-opn"
+    },
+    {
+      "title": "[PC-9801] WELLTRIS(BEEP)",
+      "driver": {
+        "name": "pc98dos",
+        "type": "beep",
+        "alias": "BPS",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "clockmul",
+          "value": "8"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "bp.com",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "BDRV.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "BMUSIC.000",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "BMUSIC.001",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "BMUSIC.002",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "BMUSIC.003",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "BMUSIC.004",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "BMUSIC.005",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "BMUSIC.006",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "BMUSIC.007",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "BMUSIC.008",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "BMUSIC.009",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "BMUSIC.00A",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "BMUSIC.00B",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "BMUSIC.00C",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "BMUSIC.00D",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "BMUSIC.00E",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "BMUSIC.00F",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "BMUSIC.010",
+          "offset": "-1"
+        },
+        {
+          "type": "conin",
+          "path": "BMUSIC.000",
+          "offset": "0x10"
+        },
+        {
+          "type": "conin",
+          "path": "BMUSIC.001",
+          "offset": "0x11"
+        },
+        {
+          "type": "conin",
+          "path": "BMUSIC.002",
+          "offset": "0x12"
+        },
+        {
+          "type": "conin",
+          "path": "BMUSIC.003",
+          "offset": "0x13"
+        },
+        {
+          "type": "conin",
+          "path": "BMUSIC.004",
+          "offset": "0x14"
+        },
+        {
+          "type": "conin",
+          "path": "BMUSIC.005",
+          "offset": "0x15"
+        },
+        {
+          "type": "conin",
+          "path": "BMUSIC.006",
+          "offset": "0x16"
+        },
+        {
+          "type": "conin",
+          "path": "BMUSIC.007",
+          "offset": "0x17"
+        },
+        {
+          "type": "conin",
+          "path": "BMUSIC.008",
+          "offset": "0x18"
+        },
+        {
+          "type": "conin",
+          "path": "BMUSIC.009",
+          "offset": "0x19"
+        },
+        {
+          "type": "conin",
+          "path": "BMUSIC.00A",
+          "offset": "0x1a"
+        },
+        {
+          "type": "conin",
+          "path": "BMUSIC.00B",
+          "offset": "0x1b"
+        },
+        {
+          "type": "conin",
+          "path": "BMUSIC.00C",
+          "offset": "0x1c"
+        },
+        {
+          "type": "conin",
+          "path": "BMUSIC.00D",
+          "offset": "0x1d"
+        },
+        {
+          "type": "conin",
+          "path": "BMUSIC.00E",
+          "offset": "0x1e"
+        },
+        {
+          "type": "conin",
+          "path": "BMUSIC.00F",
+          "offset": "0x1f"
+        },
+        {
+          "type": "conin",
+          "path": "BMUSIC.010",
+          "offset": "0x20"
+        },
+        {
+          "type": "shell",
+          "path": "bdrv",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "bp",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "BMUSIC.BIN : 00"
+        },
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "BMUSIC.BIN : 01"
+        },
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "BMUSIC.BIN : 02"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "BMUSIC.BIN : 03"
+        },
+        {
+          "kind": "title",
+          "code": "0x14",
+          "title": "BMUSIC.BIN : 04"
+        },
+        {
+          "kind": "title",
+          "code": "0x15",
+          "title": "BMUSIC.BIN : 05"
+        },
+        {
+          "kind": "title",
+          "code": "0x16",
+          "title": "BMUSIC.BIN : 06"
+        },
+        {
+          "kind": "title",
+          "code": "0x17",
+          "title": "BMUSIC.BIN : 07"
+        },
+        {
+          "kind": "title",
+          "code": "0x18",
+          "title": "BMUSIC.BIN : 08"
+        },
+        {
+          "kind": "title",
+          "code": "0x19",
+          "title": "BMUSIC.BIN : 09"
+        },
+        {
+          "kind": "title",
+          "code": "0x1a",
+          "title": "BMUSIC.BIN : 0A"
+        },
+        {
+          "kind": "title",
+          "code": "0x1b",
+          "title": "BMUSIC.BIN : 0B"
+        },
+        {
+          "kind": "title",
+          "code": "0x1c",
+          "title": "BMUSIC.BIN : 0C"
+        },
+        {
+          "kind": "title",
+          "code": "0x1d",
+          "title": "BMUSIC.BIN : 0D"
+        },
+        {
+          "kind": "title",
+          "code": "0x1e",
+          "title": "BMUSIC.BIN : 0E"
+        },
+        {
+          "kind": "title",
+          "code": "0x1f",
+          "title": "BMUSIC.BIN : 0F"
+        },
+        {
+          "kind": "title",
+          "code": "0x20",
+          "title": "BMUSIC.BIN : 10"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/bps.xml",
+      "source_order": 606,
+      "archive": "welltris_98",
+      "id": "welltris-98-beep"
+    },
+    {
+      "title": "[PC-9801] SUPER TETRIS2 + BOMBLISS",
+      "driver": {
+        "name": "pc98dos",
+        "type": "opn",
+        "alias": "BPS",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "clockmul",
+          "value": "8"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "46.com",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "fakecall.com",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MUSIC.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "shell",
+          "path": "fakecall",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "music",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "46",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x0f",
+          "title": "BPS LOGO"
+        },
+        {
+          "kind": "title",
+          "code": "0x07",
+          "title": "BGM 7 (Title)"
+        },
+        {
+          "kind": "title",
+          "code": "0x05",
+          "title": "BGM 5 (Tetris: A-Type)"
+        },
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "BGM 1 (Tetris: B-Type)"
+        },
+        {
+          "kind": "title",
+          "code": "0x03",
+          "title": "BGM 3 (Tetris: C-Type)"
+        },
+        {
+          "kind": "title",
+          "code": "0x06",
+          "title": "BGM 6 (Tetris: 2Players)"
+        },
+        {
+          "kind": "title",
+          "code": "0x00",
+          "title": "BGM 0 (Bombliss: Contest)"
+        },
+        {
+          "kind": "title",
+          "code": "0x02",
+          "title": "BGM 2 (Bombliss: Puzzle)"
+        },
+        {
+          "kind": "title",
+          "code": "0x04",
+          "title": "BGM 4 (Bombliss: 2Players)"
+        },
+        {
+          "kind": "title",
+          "code": "0x0a",
+          "title": "FAN 1 (Stage Clear)"
+        },
+        {
+          "kind": "title",
+          "code": "0x09",
+          "title": "GAME OVER"
+        },
+        {
+          "kind": "title",
+          "code": "0x0c",
+          "title": "WIN 1"
+        },
+        {
+          "kind": "title",
+          "code": "0x0d",
+          "title": "WIN 2"
+        },
+        {
+          "kind": "title",
+          "code": "0x08",
+          "title": "BGM 8"
+        },
+        {
+          "kind": "title",
+          "code": "0x0b",
+          "title": "FAN 2"
+        },
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "TITLE"
+        },
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "SE 00"
+        },
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "SE 01"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "SE 02"
+        },
+        {
+          "kind": "title",
+          "code": "0x14",
+          "title": "SE 03"
+        },
+        {
+          "kind": "title",
+          "code": "0x15",
+          "title": "SE 04"
+        },
+        {
+          "kind": "title",
+          "code": "0x16",
+          "title": "SE 05"
+        },
+        {
+          "kind": "title",
+          "code": "0x17",
+          "title": "SE 06"
+        },
+        {
+          "kind": "title",
+          "code": "0x18",
+          "title": "SE 07"
+        },
+        {
+          "kind": "title",
+          "code": "0x19",
+          "title": "SE 08"
+        },
+        {
+          "kind": "title",
+          "code": "0x1a",
+          "title": "SE 09"
+        },
+        {
+          "kind": "title",
+          "code": "0x1b",
+          "title": "SE 0A"
+        },
+        {
+          "kind": "title",
+          "code": "0x1c",
+          "title": "SE 0B"
+        },
+        {
+          "kind": "title",
+          "code": "0x1d",
+          "title": "SE 0C"
+        },
+        {
+          "kind": "title",
+          "code": "0x1e",
+          "title": "SE 10"
+        },
+        {
+          "kind": "title",
+          "code": "0x1f",
+          "title": "SE 11"
+        },
+        {
+          "kind": "title",
+          "code": "0x20",
+          "title": "SE 12"
+        },
+        {
+          "kind": "title",
+          "code": "0x21",
+          "title": "SE 13"
+        },
+        {
+          "kind": "title",
+          "code": "0x22",
+          "title": "SE 14"
+        },
+        {
+          "kind": "title",
+          "code": "0x23",
+          "title": "SE 15"
+        },
+        {
+          "kind": "title",
+          "code": "0x24",
+          "title": "SE 16"
+        },
+        {
+          "kind": "title",
+          "code": "0x25",
+          "title": "SE 17"
+        },
+        {
+          "kind": "title",
+          "code": "0x26",
+          "title": "SE 18"
+        },
+        {
+          "kind": "title",
+          "code": "0x27",
+          "title": "SE 19"
+        },
+        {
+          "kind": "title",
+          "code": "0x28",
+          "title": "SE 1A"
+        },
+        {
+          "kind": "title",
+          "code": "0x29",
+          "title": "SE 1B"
+        },
+        {
+          "kind": "title",
+          "code": "0x2a",
+          "title": "SE 1C"
+        },
+        {
+          "kind": "title",
+          "code": "0x2b",
+          "title": "SE 1D"
+        },
+        {
+          "kind": "title",
+          "code": "0x2c",
+          "title": "SE 1E"
+        },
+        {
+          "kind": "title",
+          "code": "0x2d",
+          "title": "SE 1F"
+        },
+        {
+          "kind": "title",
+          "code": "0x2f",
+          "title": "SE 20"
+        },
+        {
+          "kind": "title",
+          "code": "0x30",
+          "title": "SE 21"
+        },
+        {
+          "kind": "title",
+          "code": "0x31",
+          "title": "SE 22"
+        },
+        {
+          "kind": "title",
+          "code": "0x32",
+          "title": "SE 23"
+        },
+        {
+          "kind": "title",
+          "code": "0x33",
+          "title": "SE 24"
+        },
+        {
+          "kind": "title",
+          "code": "0x34",
+          "title": "SE 25"
+        },
+        {
+          "kind": "title",
+          "code": "0x35",
+          "title": "SE 26"
+        },
+        {
+          "kind": "title",
+          "code": "0x36",
+          "title": "SE 27"
+        },
+        {
+          "kind": "title",
+          "code": "0x37",
+          "title": "SE 28"
+        },
+        {
+          "kind": "title",
+          "code": "0x38",
+          "title": "SE 29"
+        },
+        {
+          "kind": "title",
+          "code": "0x39",
+          "title": "SE 2A"
+        },
+        {
+          "kind": "title",
+          "code": "0x3a",
+          "title": "SE 2B"
+        },
+        {
+          "kind": "title",
+          "code": "0x3b",
+          "title": "SE 2D"
+        },
+        {
+          "kind": "title",
+          "code": "0x3c",
+          "title": "SE 2E"
+        },
+        {
+          "kind": "title",
+          "code": "0x3d",
+          "title": "SE 2F"
+        },
+        {
+          "kind": "title",
+          "code": "0x3e",
+          "title": "SE 30"
+        },
+        {
+          "kind": "title",
+          "code": "0x3f",
+          "title": "SE 31"
+        },
+        {
+          "kind": "title",
+          "code": "0x40",
+          "title": "SE 32"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/bps.xml",
+      "source_order": 607,
+      "archive": "stetris298",
+      "id": "stetris298-opn"
+    },
+    {
+      "title": "[PC-9801] TETRIS",
+      "driver": {
+        "name": "pc98dos",
+        "type": "opn",
+        "alias": "BPS",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "clockmul",
+          "value": "8"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "tetris98.com",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "TETRIS.EXE",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "3HISC.S",
+          "offset": "0x10"
+        },
+        {
+          "type": "file",
+          "path": "3KARI.S",
+          "offset": "0x11"
+        },
+        {
+          "type": "file",
+          "path": "3REA.S",
+          "offset": "0x12"
+        },
+        {
+          "type": "file",
+          "path": "3REB.S",
+          "offset": "0x13"
+        },
+        {
+          "type": "file",
+          "path": "3T1.S",
+          "offset": "0x14"
+        },
+        {
+          "type": "file",
+          "path": "3T2.S",
+          "offset": "0x15"
+        },
+        {
+          "type": "file",
+          "path": "3TEC.S",
+          "offset": "0x16"
+        },
+        {
+          "type": "file",
+          "path": "3TRO.S",
+          "offset": "0x17"
+        },
+        {
+          "type": "shell",
+          "path": "tetris98",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x010014",
+          "title": "3T1.S   : STROLLING PLAYER"
+        },
+        {
+          "kind": "title",
+          "code": "0x010016",
+          "title": "3TEC.S  : TECHNOTRIS"
+        },
+        {
+          "kind": "title",
+          "code": "0x010011",
+          "title": "3KARI.S : KARINKA"
+        },
+        {
+          "kind": "title",
+          "code": "0x010017",
+          "title": "3TRO.S  : TROIKA"
+        },
+        {
+          "kind": "title",
+          "code": "0x010010",
+          "title": "3HISC.S : HEROES"
+        },
+        {
+          "kind": "title",
+          "code": "0x010015",
+          "title": "3T2.S   : PEDDLER"
+        },
+        {
+          "kind": "title",
+          "code": "0x010012",
+          "title": "3REA.S  : CELEBRATION 1"
+        },
+        {
+          "kind": "title",
+          "code": "0x010013",
+          "title": "3REB.S  : CELEBRATION 2"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/bps.xml",
+      "source_order": 608,
+      "archive": "tetris98",
+      "id": "tetris98-opn"
+    },
+    {
+      "title": "[X68000] Pipe Dream",
+      "driver": {
+        "name": "x68k",
+        "type": "generic",
+        "alias": "BPS",
+        "platform": "SHARP X68000"
+      },
+      "options": [
+        {
+          "name": "total_mix",
+          "value": "0x80"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "axd68snd.bin",
+          "offset": "0x00000"
+        },
+        {
+          "type": "x",
+          "path": "AXDRIVE.X",
+          "offset": "0x10000"
+        },
+        {
+          "type": "code",
+          "path": "PIPE.PDX",
+          "offset": "0x13000"
+        },
+        {
+          "type": "code",
+          "path": "PD01.ADX",
+          "offset": "0x34000"
+        },
+        {
+          "type": "code",
+          "path": "PD02.ADX",
+          "offset": "0x38000"
+        },
+        {
+          "type": "code",
+          "path": "PD03.ADX",
+          "offset": "0x3C000"
+        },
+        {
+          "type": "code",
+          "path": "PD04.ADX",
+          "offset": "0x40000"
+        },
+        {
+          "type": "code",
+          "path": "PD05.ADX",
+          "offset": "0x44000"
+        },
+        {
+          "type": "code",
+          "path": "PD06.ADX",
+          "offset": "0x48000"
+        },
+        {
+          "type": "code",
+          "path": "PD07.ADX",
+          "offset": "0x4C000"
+        },
+        {
+          "type": "code",
+          "path": "PD08.ADX",
+          "offset": "0x50000"
+        },
+        {
+          "type": "code",
+          "path": "PD09.ADX",
+          "offset": "0x54000"
+        },
+        {
+          "type": "code",
+          "path": "PD10.ADX",
+          "offset": "0x58000"
+        },
+        {
+          "type": "code",
+          "path": "PD11.ADX",
+          "offset": "0x5C000"
+        },
+        {
+          "type": "code",
+          "path": "PD12.ADX",
+          "offset": "0x60000"
+        },
+        {
+          "type": "code",
+          "path": "PD13.ADX",
+          "offset": "0x64000"
+        },
+        {
+          "type": "code",
+          "path": "PD14.ADX",
+          "offset": "0x68000"
+        },
+        {
+          "type": "code",
+          "path": "PD15.ADX",
+          "offset": "0x6C000"
+        },
+        {
+          "type": "code",
+          "path": "PD16.ADX",
+          "offset": "0x70000"
+        },
+        {
+          "type": "code",
+          "path": "PD17.ADX",
+          "offset": "0x74000"
+        },
+        {
+          "type": "code",
+          "path": "PD18.ADX",
+          "offset": "0x78000"
+        },
+        {
+          "type": "code",
+          "path": "PD19.ADX",
+          "offset": "0x7C000"
+        },
+        {
+          "type": "code",
+          "path": "PD20.ADX",
+          "offset": "0x80000"
+        },
+        {
+          "type": "code",
+          "path": "PD21.ADX",
+          "offset": "0x84000"
+        },
+        {
+          "type": "code",
+          "path": "PD22.ADX",
+          "offset": "0x88000"
+        },
+        {
+          "type": "code",
+          "path": "PD23.ADX",
+          "offset": "0x8C000"
+        },
+        {
+          "type": "code",
+          "path": "PD24.ADX",
+          "offset": "0x90000"
+        },
+        {
+          "type": "code",
+          "path": "PD25.ADX",
+          "offset": "0x94000"
+        },
+        {
+          "type": "code",
+          "path": "PD26.ADX",
+          "offset": "0x98000"
+        },
+        {
+          "type": "code",
+          "path": "PD27.ADX",
+          "offset": "0x9C000"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "PD01.ADX : TITLE"
+        },
+        {
+          "kind": "title",
+          "code": "0x02",
+          "title": "PD02.ADX : DEMO"
+        },
+        {
+          "kind": "title",
+          "code": "0x03",
+          "title": "PD03.ADX : MENU"
+        },
+        {
+          "kind": "title",
+          "code": "0x04",
+          "title": "PD04.ADX : BGM1"
+        },
+        {
+          "kind": "title",
+          "code": "0x05",
+          "title": "PD05.ADX : BGM2"
+        },
+        {
+          "kind": "title",
+          "code": "0x06",
+          "title": "PD06.ADX : BGM3"
+        },
+        {
+          "kind": "title",
+          "code": "0x07",
+          "title": "PD07.ADX : BGM4"
+        },
+        {
+          "kind": "title",
+          "code": "0x08",
+          "title": "PD08.ADX : BGM5"
+        },
+        {
+          "kind": "title",
+          "code": "0x09",
+          "title": "PD09.ADX : BGM6"
+        },
+        {
+          "kind": "title",
+          "code": "0x0a",
+          "title": "PD10.ADX : BGM7"
+        },
+        {
+          "kind": "title",
+          "code": "0x0b",
+          "title": "PD11.ADX : BGM8"
+        },
+        {
+          "kind": "title",
+          "code": "0x0c",
+          "title": "PD12.ADX : OVER"
+        },
+        {
+          "kind": "title",
+          "code": "0x0d",
+          "title": "PD13.ADX : NAME"
+        },
+        {
+          "kind": "title",
+          "code": "0x0e",
+          "title": "PD14.ADX : RANKING"
+        },
+        {
+          "kind": "title",
+          "code": "0x0f",
+          "title": "PD15.ADX : BREAK1"
+        },
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "PD16.ADX : BREAK2"
+        },
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "PD17.ADX : BREAK3"
+        },
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "PD18.ADX : BREAK4"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "PD19.ADX : BREAK5"
+        },
+        {
+          "kind": "title",
+          "code": "0x14",
+          "title": "PD20.ADX : BREAK6"
+        },
+        {
+          "kind": "title",
+          "code": "0x15",
+          "title": "PD21.ADX : BREAK7"
+        },
+        {
+          "kind": "title",
+          "code": "0x16",
+          "title": "PD22.ADX : BREAK8"
+        },
+        {
+          "kind": "title",
+          "code": "0x18",
+          "title": "PD24.ADX : ENDING1"
+        },
+        {
+          "kind": "title",
+          "code": "0x19",
+          "title": "PD25.ADX : ENDING2"
+        },
+        {
+          "kind": "title",
+          "code": "0x17",
+          "title": "PD23.ADX : ENDING3"
+        },
+        {
+          "kind": "title",
+          "code": "0x1a",
+          "title": "PD26.ADX : CLEAR"
+        },
+        {
+          "kind": "title",
+          "code": "0x1b",
+          "title": "PD27.ADX : PERFECT"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/bps.xml",
+      "source_order": 609,
+      "archive": "ppd68snd",
+      "id": "ppd68snd-generic"
+    },
+    {
+      "title": "[X68000] TETRIS",
+      "driver": {
+        "name": "x68k",
+        "type": "generic",
+        "alias": "BPS",
+        "platform": "SHARP X68000"
+      },
+      "options": [],
+      "assets": [
+        {
+          "type": "code",
+          "path": "opmdrv.bin"
+        },
+        {
+          "type": "x",
+          "path": "OPMDRV.X",
+          "offset": "0x08000"
+        },
+        {
+          "type": "code",
+          "path": "WALT8.MML",
+          "offset": "0x24000"
+        },
+        {
+          "type": "code",
+          "path": "XHISCORE.MML",
+          "offset": "0x28000"
+        },
+        {
+          "type": "code",
+          "path": "XKARINKA.MML",
+          "offset": "0x2c000"
+        },
+        {
+          "type": "code",
+          "path": "XREWA_A.MML",
+          "offset": "0x30000"
+        },
+        {
+          "type": "code",
+          "path": "XREWA_B.MML",
+          "offset": "0x34000"
+        },
+        {
+          "type": "code",
+          "path": "XTECHNO.MML",
+          "offset": "0x38000"
+        },
+        {
+          "type": "code",
+          "path": "XTITLE1.MML",
+          "offset": "0x3c000"
+        },
+        {
+          "type": "code",
+          "path": "XTITLE1_LOOP.MML",
+          "offset": "0x40000"
+        },
+        {
+          "type": "code",
+          "path": "XTITLE2.MML",
+          "offset": "0x44000"
+        },
+        {
+          "type": "code",
+          "path": "XTROIKA.MML",
+          "offset": "0x48000"
+        },
+        {
+          "type": "code",
+          "path": "TETRIS.OPM",
+          "offset": "0x4c000"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x0c08",
+          "title": "XTITLE1.MML      : STROLLING PLAYER"
+        },
+        {
+          "kind": "title",
+          "code": "0x0c09",
+          "title": "XTITLE1_LOOP.MML : STROLLING PLAYER(loop)"
+        },
+        {
+          "kind": "title",
+          "code": "0x0c07",
+          "title": "XTECHNO.MML      : TECHNOTRIS"
+        },
+        {
+          "kind": "title",
+          "code": "0x0c04",
+          "title": "XKARINKA.MML     : KARINKA"
+        },
+        {
+          "kind": "title",
+          "code": "0x0c0b",
+          "title": "XTROIKA.MML      : TROIKA"
+        },
+        {
+          "kind": "title",
+          "code": "0x0c02",
+          "title": "WALT8.MML        : RUSSIAN WALTZ"
+        },
+        {
+          "kind": "title",
+          "code": "0x0c0a",
+          "title": "XTITLE2.MML      : PEDDLER"
+        },
+        {
+          "kind": "title",
+          "code": "0x0c03",
+          "title": "XHISCORE.MML     : HEROES"
+        },
+        {
+          "kind": "title",
+          "code": "0x0c05",
+          "title": "XREWA_A.MML      : CELEBRATION 1"
+        },
+        {
+          "kind": "title",
+          "code": "0x0c06",
+          "title": "XREWA_B.MML      : CELEBRATION 2"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/bps.xml",
+      "source_order": 610,
+      "archive": "tetris68snd",
+      "id": "tetris68snd-generic"
+    },
+    {
+      "title": "[PC-9801] DEFLEKTOR",
+      "driver": {
+        "name": "pc98dos",
+        "type": "opn",
+        "alias": "BPS",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "clockmul",
+          "value": "8"
+        },
+        {
+          "name": "dummysndrom",
+          "value": "1"
+        },
+        {
+          "name": "showfm3ex",
+          "value": "1"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "ODQ_98.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "OD.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "DSONGS.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "shell",
+          "path": "od",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "dsongs",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "odq_98",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "range",
+          "min": "0x10",
+          "max": "0x1f",
+          "title_format": "SOUND : %2X",
+          "extcode": "1"
+        },
+        {
+          "kind": "range",
+          "min": "0x80",
+          "max": "0x90",
+          "title_format": "SE    : %2X",
+          "extcode": "1"
+        },
+        {
+          "kind": "range",
+          "min": "0x98",
+          "max": "0x98",
+          "title_format": "SE    : %2X",
+          "extcode": "1"
+        },
+        {
+          "kind": "range",
+          "min": "0x9B",
+          "max": "0x9B",
+          "title_format": "SE    : %2X",
+          "extcode": "1"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/bps.xml",
+      "source_order": 611,
+      "archive": "deflektr_98",
+      "id": "deflektr-98-opn"
+    },
+    {
+      "title": "[MSX] TETRIS(OPLL)",
+      "driver": {
+        "name": "msx",
+        "type": "generic",
+        "alias": "BPS",
+        "platform": "MSX"
+      },
+      "options": [
+        {
+          "name": "mdata_addr",
+          "value": "0xc000"
+        },
+        {
+          "name": "mdata_size",
+          "value": "0x1500"
+        },
+        {
+          "name": "mfile_size",
+          "value": "0x1500"
+        },
+        {
+          "name": "init_pc",
+          "value": "0x400"
+        },
+        {
+          "name": "use_opll",
+          "value": "0x01"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "patch",
+          "offset": "0x0400"
+        },
+        {
+          "type": "code",
+          "path": "driver",
+          "offset": "0x4000"
+        },
+        {
+          "type": "bgm",
+          "path": "mus00",
+          "offset": "0x00"
+        },
+        {
+          "type": "bgm",
+          "path": "mus01",
+          "offset": "0x01"
+        },
+        {
+          "type": "bgm",
+          "path": "mus02",
+          "offset": "0x02"
+        },
+        {
+          "type": "bgm",
+          "path": "mus03",
+          "offset": "0x03"
+        },
+        {
+          "type": "bgm",
+          "path": "mus04",
+          "offset": "0x04"
+        },
+        {
+          "type": "bgm",
+          "path": "mus05",
+          "offset": "0x05"
+        },
+        {
+          "type": "bgm",
+          "path": "mus06",
+          "offset": "0x06"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x00",
+          "title": "PEDDLER"
+        },
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "TECHNOTRIS"
+        },
+        {
+          "kind": "title",
+          "code": "0x02",
+          "title": "KARINKA"
+        },
+        {
+          "kind": "title",
+          "code": "0x03",
+          "title": "TROIKA"
+        },
+        {
+          "kind": "title",
+          "code": "0x04",
+          "title": "CELEBRATION 1"
+        },
+        {
+          "kind": "title",
+          "code": "0x05",
+          "title": "CELEBRATION 2"
+        },
+        {
+          "kind": "title",
+          "code": "0x06",
+          "title": "HEROES"
+        },
+        {
+          "kind": "range",
+          "min": "0x80",
+          "max": "0x88",
+          "title_format": "SE : %02x",
+          "extcode": "1"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/bps.xml",
+      "source_order": 612,
+      "archive": "tetris_msx",
+      "id": "tetris-msx-generic"
+    },
+    {
+      "title": "[MSX] TETRIS(PSG)",
+      "driver": {
+        "name": "msx",
+        "type": "generic",
+        "alias": "BPS",
+        "platform": "MSX"
+      },
+      "options": [
+        {
+          "name": "mdata_addr",
+          "value": "0xc000"
+        },
+        {
+          "name": "mdata_size",
+          "value": "0x1500"
+        },
+        {
+          "name": "mfile_size",
+          "value": "0x1500"
+        },
+        {
+          "name": "init_pc",
+          "value": "0x400"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "patch",
+          "offset": "0x0400"
+        },
+        {
+          "type": "code",
+          "path": "driver",
+          "offset": "0x4000"
+        },
+        {
+          "type": "bgm",
+          "path": "mus00",
+          "offset": "0x00"
+        },
+        {
+          "type": "bgm",
+          "path": "mus01",
+          "offset": "0x01"
+        },
+        {
+          "type": "bgm",
+          "path": "mus02",
+          "offset": "0x02"
+        },
+        {
+          "type": "bgm",
+          "path": "mus03",
+          "offset": "0x03"
+        },
+        {
+          "type": "bgm",
+          "path": "mus04",
+          "offset": "0x04"
+        },
+        {
+          "type": "bgm",
+          "path": "mus05",
+          "offset": "0x05"
+        },
+        {
+          "type": "bgm",
+          "path": "mus06",
+          "offset": "0x06"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x00",
+          "title": "PEDDLER"
+        },
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "TECHNOTRIS"
+        },
+        {
+          "kind": "title",
+          "code": "0x02",
+          "title": "KARINKA"
+        },
+        {
+          "kind": "title",
+          "code": "0x03",
+          "title": "TROIKA"
+        },
+        {
+          "kind": "title",
+          "code": "0x04",
+          "title": "CELEBRATION 1"
+        },
+        {
+          "kind": "title",
+          "code": "0x05",
+          "title": "CELEBRATION 2"
+        },
+        {
+          "kind": "title",
+          "code": "0x06",
+          "title": "HEROES"
+        },
+        {
+          "kind": "range",
+          "min": "0x80",
+          "max": "0x87",
+          "title_format": "SE : %02x",
+          "extcode": "1"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/bps.xml",
+      "source_order": 613,
+      "archive": "tetris_msx",
+      "id": "tetris-msx-generic-2"
+    },
+    {
+      "title": "[MSX] M.U.L.E.",
+      "driver": {
+        "name": "msx",
+        "type": "generic",
+        "alias": "BPS",
+        "platform": "MSX"
+      },
+      "options": [
+        {
+          "name": "init_pc",
+          "value": "0x400"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "patch",
+          "offset": "0x0400"
+        },
+        {
+          "type": "code",
+          "path": "DRIVER.BIN",
+          "offset": "0x3164"
+        },
+        {
+          "type": "code",
+          "path": "DRIVER2.BIN",
+          "offset": "0x85ca"
+        },
+        {
+          "type": "code",
+          "path": "DATA2.BIN",
+          "offset": "0xbb9f"
+        },
+        {
+          "type": "code",
+          "path": "DATA.BIN",
+          "offset": "0xc000"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x00",
+          "title": "メインテーマ"
+        },
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "PUB"
+        },
+        {
+          "kind": "title",
+          "code": "0x02",
+          "title": "ラッキーイベント"
+        },
+        {
+          "kind": "title",
+          "code": "0x03",
+          "title": "バッドイベント"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/bps.xml",
+      "source_order": 614,
+      "archive": "mule_msx",
+      "id": "mule-msx-generic"
+    },
+    {
+      "title": "[FM-7] LYRANE(OPN)",
+      "driver": {
+        "name": "fm77av",
+        "type": "generic",
+        "alias": "BPS",
+        "platform": "FUJITSU FM-7"
+      },
+      "options": [
+        {
+          "name": "init_pc",
+          "value": "0x0000"
+        },
+        {
+          "name": "mdata_addr",
+          "value": "0x8000"
+        },
+        {
+          "name": "mfile_size",
+          "value": "0x1700"
+        },
+        {
+          "name": "mdata_size",
+          "value": "0x1700"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "PATCH.BIN",
+          "offset": "0x0000"
+        },
+        {
+          "type": "code",
+          "path": "DRIVER.BIN",
+          "offset": "0x3e00"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS00.BIN",
+          "offset": "0x00"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS01.BIN",
+          "offset": "0x01"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS02.BIN",
+          "offset": "0x02"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS03.BIN",
+          "offset": "0x03"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS04.BIN",
+          "offset": "0x04"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x03",
+          "title": "Station LYREAN"
+        },
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "Fighting on GLODIA"
+        },
+        {
+          "kind": "comment",
+          "text": "\t<title code=\"0x04\">Fighting on GLODIA</title> "
+        },
+        {
+          "kind": "title",
+          "code": "0x02",
+          "title": "Space run away GLODIA"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/bps.xml",
+      "source_order": 615,
+      "archive": "lyrane_fm7",
+      "id": "lyrane-fm7-generic"
+    },
+    {
+      "title": "[FM-7] LYRANE(PSG)",
+      "driver": {
+        "name": "fm7",
+        "type": "generic",
+        "alias": "BPS",
+        "platform": "FUJITSU FM-7"
+      },
+      "options": [
+        {
+          "name": "init_pc",
+          "value": "0x0000"
+        },
+        {
+          "name": "mdata_addr",
+          "value": "0x8000"
+        },
+        {
+          "name": "mfile_size",
+          "value": "0x1700"
+        },
+        {
+          "name": "mdata_size",
+          "value": "0x1700"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "PATCH.BIN",
+          "offset": "0x0000"
+        },
+        {
+          "type": "code",
+          "path": "DRIVER.BIN",
+          "offset": "0x3e00"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS00.BIN",
+          "offset": "0x00"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS01.BIN",
+          "offset": "0x01"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS02.BIN",
+          "offset": "0x02"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS03.BIN",
+          "offset": "0x03"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS04.BIN",
+          "offset": "0x04"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x03",
+          "title": "Station LYREAN"
+        },
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "Fighting on GLODIA"
+        },
+        {
+          "kind": "comment",
+          "text": "\t<title code=\"0x04\">Fighting on GLODIA</title> "
+        },
+        {
+          "kind": "title",
+          "code": "0x02",
+          "title": "Space run away GLODIA"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/bps.xml",
+      "source_order": 616,
+      "archive": "lyrane_fm7",
+      "id": "lyrane-fm7-generic-2"
+    },
+    {
+      "title": "[FM77AV] TETRIS",
+      "driver": {
+        "name": "fm77av",
+        "type": "generic",
+        "alias": "BPS",
+        "platform": "FUJITSU FM77AV"
+      },
+      "options": [
+        {
+          "name": "init_pc",
+          "value": "0x0000"
+        },
+        {
+          "name": "mdata_addr",
+          "value": "0x6000"
+        },
+        {
+          "name": "mfile_size",
+          "value": "0x0800"
+        },
+        {
+          "name": "mdata_size",
+          "value": "0x0800"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "PATCH.BIN",
+          "offset": "0x0000"
+        },
+        {
+          "type": "code",
+          "path": "DRIVER.BIN",
+          "offset": "0x5000"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS00.BIN",
+          "offset": "0x00"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS01.BIN",
+          "offset": "0x01"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS02.BIN",
+          "offset": "0x02"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS03.BIN",
+          "offset": "0x03"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS04.BIN",
+          "offset": "0x04"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS05.BIN",
+          "offset": "0x05"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS06.BIN",
+          "offset": "0x06"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS07.BIN",
+          "offset": "0x07"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS08.BIN",
+          "offset": "0x08"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x03",
+          "title": "STROLLING PLAYER"
+        },
+        {
+          "kind": "comment",
+          "text": "\t<title code=\"0x06\">STROLLING PLAYER</title> "
+        },
+        {
+          "kind": "title",
+          "code": "0x00",
+          "title": "TECHNOTRIS"
+        },
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "KARINKA"
+        },
+        {
+          "kind": "title",
+          "code": "0x02",
+          "title": "TROIKA"
+        },
+        {
+          "kind": "title",
+          "code": "0x04",
+          "title": "HEROES"
+        },
+        {
+          "kind": "comment",
+          "text": "\t<title code=\"0x05\">HEROES</title> "
+        },
+        {
+          "kind": "title",
+          "code": "0x07",
+          "title": "CELEBRATION 1"
+        },
+        {
+          "kind": "title",
+          "code": "0x08",
+          "title": "CELEBRATION 2"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/bps.xml",
+      "source_order": 617,
+      "archive": "tetris_fmav",
+      "id": "tetris-fmav-generic"
+    },
+    {
+      "title": "[X68000] DEFLEKTOR",
+      "driver": {
+        "name": "x68k",
+        "type": "generic",
+        "alias": "BPS",
+        "platform": "SHARP X68000"
+      },
+      "options": [
+        {
+          "name": "mfp",
+          "value": "1"
+        },
+        {
+          "name": "dmaint",
+          "value": "1"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "def68snd.bin",
+          "offset": "0x000000"
+        },
+        {
+          "type": "x",
+          "path": "tenq.x",
+          "offset": "0x010000"
+        },
+        {
+          "type": "code",
+          "path": "tone.odq",
+          "offset": "0x01a000"
+        },
+        {
+          "type": "code",
+          "path": "bgmdata0.odq",
+          "offset": "0x020000"
+        },
+        {
+          "type": "code",
+          "path": "adpcm.dat",
+          "offset": "0x030000"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "range",
+          "min": "0x02",
+          "max": "0x10",
+          "title_format": "BGM %02x",
+          "extcode": "1"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/bps.xml",
+      "source_order": 618,
+      "archive": "def68snd",
+      "id": "def68snd-generic"
+    }
+  ]
+}

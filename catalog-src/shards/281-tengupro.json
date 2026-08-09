@@ -1,0 +1,83 @@
+{
+  "format": "hoot-catalog-shard",
+  "version": 1,
+  "source_file": "xml/tengupro.xml",
+  "date": "2005/09/25",
+  "comments": [
+    " //天狗プロ "
+  ],
+  "games": [
+    {
+      "title": "[PC-9801] 越後屋 H-Go! Yeah!",
+      "driver": {
+        "name": "pc98dos",
+        "type": "opn",
+        "alias": "天狗プロ",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "clockmul",
+          "value": "8"
+        },
+        {
+          "name": "dummysndrom",
+          "value": "1"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "ODQ_98.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "OD.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "ETISND.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "shell",
+          "path": "od",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "etisnd",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "odq_98",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "range",
+          "min": "0x10",
+          "max": "0x14",
+          "title_format": "SOUND : %2X",
+          "extcode": "1"
+        },
+        {
+          "kind": "range",
+          "min": "0x80",
+          "max": "0x9c",
+          "title_format": "SE    : %2X",
+          "extcode": "1"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/tengupro.xml",
+      "source_order": 4679,
+      "archive": "hgoya_98",
+      "id": "hgoya-98-opn"
+    }
+  ]
+}

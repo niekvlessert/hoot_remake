@@ -1,0 +1,1566 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="hoot.xsl"?>
+<!DOCTYPE gamelist [
+	<!ELEMENT gamelist (game|bind|childlists)*>
+	<!ATTLIST gamelist date CDATA #IMPLIED>
+	<!ELEMENT childlists (list)*>
+	<!ELEMENT list (#PCDATA)>
+	<!ELEMENT bind (exts,driver,options?)>
+	<!ELEMENT exts (ext)*>
+	<!ELEMENT ext (#PCDATA)>
+	<!ELEMENT game (name,driver,driveralias?,options?,romlist?,titlelist?)>
+	<!ELEMENT name (#PCDATA)>
+	<!ELEMENT driver (#PCDATA)>
+	<!ATTLIST driver type CDATA #IMPLIED>
+	<!ELEMENT driveralias (#PCDATA)>
+	<!ATTLIST driveralias type CDATA #IMPLIED>
+	<!ELEMENT options (option)*>
+	<!ELEMENT option EMPTY>
+	<!ATTLIST option name CDATA #REQUIRED
+					 value CDATA #REQUIRED>
+	<!ELEMENT romlist (rom)*>
+	<!ATTLIST romlist archive CDATA #IMPLIED>
+	<!ELEMENT rom (#PCDATA)>
+	<!ATTLIST rom type CDATA #REQUIRED
+				  offset CDATA #IMPLIED
+				  crc32 CDATA #IMPLIED>
+	<!ELEMENT titlelist (title|range)*>
+	<!ELEMENT title (#PCDATA)>
+	<!ATTLIST title code CDATA #REQUIRED
+					type CDATA #IMPLIED>
+	<!ELEMENT range (#PCDATA)>
+	<!ATTLIST range min CDATA #REQUIRED
+					max CDATA #REQUIRED
+					extcode CDATA #IMPLIED
+					start CDATA #IMPLIED>
+
+]>
+<gamelist date="2005/09/25">
+
+	<!-- //wing -->
+	<game>
+		<name>[PC-8801] 波動の標的</name>
+		<driver type="opn">pc88</driver>
+		<driveralias type="NEC PC-8801">スタジオWING</driveralias>
+		<options>
+			<option name="vdata_addr" value="0xe1d0"/>
+		</options>
+		<romlist archive="hadou">
+			<rom type="code" offset="0x0000">PATCH</rom>
+			<rom type="code" offset="0xc400">DRIVER1.BIN</rom>
+			<rom type="code" offset="0xdd00">DRIVER2.BIN</rom>
+			<rom type="code" offset="0xb100">DRIVER3.BIN</rom>
+			<rom type="code" offset="0xfc00">VOICE.BIN</rom>
+			<rom type="bgm" offset="0x00">HD000</rom>
+			<rom type="voice" offset="0x00">HV000</rom>
+			<rom type="bgm" offset="0x01">HD001</rom>
+			<rom type="voice" offset="0x01">HV000</rom>
+			<rom type="bgm" offset="0x02">HD002</rom>
+			<rom type="voice" offset="0x02">HV000</rom>
+			<rom type="bgm" offset="0x03">HD003</rom>
+			<rom type="voice" offset="0x03">HV000</rom>
+			<rom type="bgm" offset="0x04">HD004</rom>
+			<rom type="voice" offset="0x04">HV000</rom>
+			<rom type="bgm" offset="0x05">HD005</rom>
+			<rom type="voice" offset="0x05">HV000</rom>
+			<rom type="bgm" offset="0x06">HD006</rom>
+			<rom type="voice" offset="0x06">HV000</rom>
+			<rom type="bgm" offset="0x07">HD007</rom>
+			<rom type="voice" offset="0x07">HV000</rom>
+			<rom type="bgm" offset="0x08">HD008</rom>
+			<rom type="voice" offset="0x08">HV000</rom>
+			<rom type="bgm" offset="0x09">HD009</rom>
+			<rom type="voice" offset="0x09">HV000</rom>
+			<rom type="bgm" offset="0x2f">HD009</rom>
+			<rom type="voice" offset="0x2f">HV001</rom>
+			<rom type="bgm" offset="0x0a">HD010</rom>
+			<rom type="voice" offset="0x0a">HV000</rom>
+			<rom type="bgm" offset="0x0b">HD011</rom>
+			<rom type="voice" offset="0x0b">HV000</rom>
+			<rom type="bgm" offset="0x0c">HD012</rom>
+			<rom type="voice" offset="0x0c">HV000</rom>
+			<rom type="bgm" offset="0x0d">HD013</rom>
+			<rom type="voice" offset="0x0d">HV000</rom>
+			<rom type="bgm" offset="0x0e">HD014</rom>
+			<rom type="voice" offset="0x0e">HV000</rom>
+			<rom type="bgm" offset="0x30">HD014</rom>
+			<rom type="voice" offset="0x30">HV000</rom>
+			<rom type="bgm" offset="0x0f">HD015</rom>
+			<rom type="voice" offset="0x0f">HV000</rom>
+			<rom type="bgm" offset="0x31">HD015</rom>
+			<rom type="voice" offset="0x31">HV000</rom>
+			<rom type="bgm" offset="0x36">HD015</rom>
+			<rom type="voice" offset="0x36">HV002</rom>
+			<rom type="bgm" offset="0x37">HD015</rom>
+			<rom type="voice" offset="0x37">HV003</rom>
+			<rom type="bgm" offset="0x10">HD016</rom>
+			<rom type="voice" offset="0x10">HV000</rom>
+			<rom type="bgm" offset="0x11">HD017</rom>
+			<rom type="voice" offset="0x11">HV000</rom>
+			<rom type="bgm" offset="0x32">HD017</rom>
+			<rom type="voice" offset="0x32">HV001</rom>
+			<rom type="bgm" offset="0x33">HD017</rom>
+			<rom type="voice" offset="0x33">HV002</rom>
+			<rom type="bgm" offset="0x12">HD018</rom>
+			<rom type="voice" offset="0x12">HV000</rom>
+			<rom type="bgm" offset="0x13">HD019</rom>
+			<rom type="voice" offset="0x13">HV000</rom>
+			<rom type="bgm" offset="0x14">HD020</rom>
+			<rom type="voice" offset="0x14">HV000</rom>
+			<rom type="bgm" offset="0x15">HD021</rom>
+			<rom type="voice" offset="0x15">HV002</rom>
+			<rom type="bgm" offset="0x16">HD022</rom>
+			<rom type="voice" offset="0x16">HV000</rom>
+			<rom type="bgm" offset="0x17">HD023</rom>
+			<rom type="voice" offset="0x17">HV000</rom>
+			<rom type="bgm" offset="0x18">HD024</rom>
+			<rom type="voice" offset="0x18">HV000</rom>
+			<rom type="bgm" offset="0x19">HD025</rom>
+			<rom type="voice" offset="0x19">HV000</rom>
+			<rom type="bgm" offset="0x1a">HD026</rom>
+			<rom type="voice" offset="0x1a">HV000</rom>
+			<rom type="bgm" offset="0x1b">HD027</rom>
+			<rom type="voice" offset="0x1b">HV000</rom>
+			<rom type="bgm" offset="0x34">HD027</rom>
+			<rom type="voice" offset="0x34">HV002</rom>
+			<rom type="bgm" offset="0x1c">HD028</rom>
+			<rom type="voice" offset="0x1c">HV000</rom>
+			<rom type="bgm" offset="0x35">HD028</rom>
+			<rom type="voice" offset="0x35">HV000</rom>
+			<rom type="bgm" offset="0x1d">HD029</rom>
+			<rom type="voice" offset="0x1d">HV000</rom>
+			<rom type="bgm" offset="0x1e">HD030</rom>
+			<rom type="voice" offset="0x1e">HV000</rom>
+			<rom type="bgm" offset="0x1f">HD031</rom>
+			<rom type="voice" offset="0x1f">HV000</rom>
+			<rom type="bgm" offset="0x20">HD032</rom>
+			<rom type="voice" offset="0x20">HV000</rom>
+			<rom type="bgm" offset="0x21">HD033</rom>
+			<rom type="voice" offset="0x21">HV000</rom>
+			<rom type="bgm" offset="0x22">HD034</rom>
+			<rom type="voice" offset="0x22">HV000</rom>
+			<rom type="bgm" offset="0x23">HD035</rom>
+			<rom type="voice" offset="0x23">HV000</rom>
+			<rom type="bgm" offset="0x24">HD036</rom>
+			<rom type="voice" offset="0x24">HV000</rom>
+			<rom type="bgm" offset="0x25">HD037</rom>
+			<rom type="voice" offset="0x25">HV000</rom>
+			<rom type="bgm" offset="0x38">HD037</rom>
+			<rom type="voice" offset="0x38">HV000</rom>
+			<rom type="bgm" offset="0x26">HD038</rom>
+			<rom type="voice" offset="0x26">HV000</rom>
+			<rom type="bgm" offset="0x27">HD039</rom>
+			<rom type="voice" offset="0x27">HV000</rom>
+			<rom type="bgm" offset="0x2a">HD042</rom>
+			<rom type="voice" offset="0x2a">HV000</rom>
+			<rom type="bgm" offset="0x2b">HD043</rom>
+			<rom type="voice" offset="0x2b">HV000</rom>
+		</romlist>
+		<titlelist>
+			<title code="0x02">WINGロゴ</title>
+			<title code="0x27">19XX 東京</title>
+			<title code="0x01">予言者</title>
+			<title code="0x03">タイトル</title>
+			<title code="0x05">易者</title>
+			<title code="0x00">草薙のテーマ</title>
+			<title code="0x06">メサイヤ教団集団殺人現場</title>
+			<title code="0x0a">メサイヤ教団集団殺人現場 type2</title>
+			<title code="0x04">効果音楽１</title>
+			<title code="0x07">教団内捜索</title>
+			<title code="0x09">AOTA type1</title>
+			<title code="0x2f">AOTA type2</title>
+			<title code="0x08">AOTA typeX</title>
+			<title code="0x0b">効果音楽２</title>
+			<title code="0x0c">あやしい人影</title>
+			<title code="0x0d">船着場</title>
+			<title code="0x15">メリム川</title>
+			<title code="0x13">虎人間襲撃</title>
+			<title code="0x1b">密林 type1</title>
+			<title code="0x34">密林 type2</title>
+			<title code="0x10">効果音楽3</title>
+			<title code="0x12">洞窟の怪物</title>
+			<title code="0x16">ピンチのテーマ</title>
+			<title code="0x14">深雪のテーマ typeX</title>
+			<title code="0x21">追跡のテーマ type1</title>
+			<title code="0x22">追跡のテーマ type2</title>
+			<title code="0x1e">竹林のテーマ</title>
+			<title code="0x17">加茂老人</title>
+			<title code="0x18">誘惑</title>
+			<title code="0x1d">効果音楽4</title>
+			<title code="0x1f">効果音楽5</title>
+			<title code="0x19">テレポート</title>
+			<title code="0x23">テレポート type2</title>
+			<title code="0x1a">地下道</title>
+			<title code="0x11">黒い塔 type1</title>
+			<title code="0x32">黒い塔 typeX</title>
+			<title code="0x33">黒い塔 typeZ</title>
+			<title code="0x1c">新宿～黒い塔 type1</title>
+			<title code="0x35">新宿～黒い塔 type2</title>
+			<title code="0x0e">新宿街 type1</title>
+			<title code="0x30">新宿街 type2</title>
+			<title code="0x0f">弾薬庫 type1</title>
+			<title code="0x31">弾薬庫 type2</title>
+			<title code="0x36">弾薬庫 typeX</title>
+			<title code="0x37">弾薬庫 typeY</title>
+			<title code="0x25">弾薬庫 typeZ</title>
+			<title code="0x38">弾薬庫 typeZZ</title>
+			<title code="0x26">加茂屋敷の攻防</title>
+			<title code="0x20">紗夜姫のテーマ</title>
+			<title code="0x24">深雪のテーマ</title>
+			<title code="0x2a">機関銃 type1</title>
+			<title code="0x2b">機関銃 type2</title>
+		</titlelist>
+	</game>
+	<game>
+		<name>[PC-8801] デストラクション(上巻)(OPNA)</name>
+		<driver type="opna">pc88</driver>
+		<driveralias type="NEC PC-8801">スタジオWING</driveralias>
+		<options>
+			<option name="mdata_num" value="0x0100"/>
+			<option name="vdata_addr" value="0xe1d0"/>
+		</options>
+		<romlist archive="destjyo">
+			<rom type="code" offset="0x0000">PATCH</rom>
+			<rom type="code" offset="0xc900">WMC1</rom>
+			<rom type="code" offset="0xde00">TCLS</rom>
+			<rom type="code" offset="0xdf40">PFRQ</rom>
+			<rom type="code" offset="0xc400">MCM1</rom>
+			<rom type="code" offset="0xf800">VDAT</rom>
+			<rom type="adpcm" offset="0x00000">BASS</rom>
+			<rom type="adpcm" offset="0x002c4">ｽﾈｱ1</rom>
+			<rom type="adpcm" offset="0x00640">ｼﾓﾝｽ</rom>
+			<rom type="adpcm" offset="0x00bc0">ｽﾈｱ2</rom>
+			<rom type="adpcm" offset="0x00f80">ｽﾈｱ3</rom>
+			<rom type="adpcm" offset="0x01340">BAS2</rom>
+			<rom type="adpcm" offset="0x01500">TYPE</rom>
+			<rom type="adpcm" offset="0x01780">SFX1</rom>
+			<rom type="adpcm" offset="0x01A80">SFX2</rom>
+			<rom type="adpcm" offset="0x01F80">ｷﾘ</rom>
+			<rom type="adpcm" offset="0x039C0">HART</rom>
+			<rom type="bgm" offset="0x00">MU000</rom>
+			<rom type="voice" offset="0x00">FRQM</rom>
+			<rom type="bgm" offset="0x01">MU001</rom>
+			<rom type="voice" offset="0x01">FRQM</rom>
+			<rom type="bgm" offset="0x02">MU002</rom>
+			<rom type="voice" offset="0x02">FRQM</rom>
+			<rom type="bgm" offset="0x03">MU003</rom>
+			<rom type="voice" offset="0x03">FRQM</rom>
+			<rom type="bgm" offset="0x04">MU004</rom>
+			<rom type="voice" offset="0x04">FRQM</rom>
+			<rom type="bgm" offset="0x05">MU005</rom>
+			<rom type="voice" offset="0x05">FRQM</rom>
+			<rom type="bgm" offset="0x06">MU006</rom>
+			<rom type="voice" offset="0x06">FRQM</rom>
+			<rom type="bgm" offset="0x07">MU007</rom>
+			<rom type="voice" offset="0x07">FRQM</rom>
+			<rom type="bgm" offset="0x08">MU008</rom>
+			<rom type="voice" offset="0x08">FRQM</rom>
+			<rom type="bgm" offset="0x09">MU009</rom>
+			<rom type="voice" offset="0x09">FRQM</rom>
+			<rom type="bgm" offset="0x0a">MU062</rom>
+			<rom type="voice" offset="0x0a">FRQM</rom>
+			<rom type="bgm" offset="0x0b">MU069</rom>
+			<rom type="voice" offset="0x0b">FRQ1</rom>
+			<rom type="bgm" offset="0x0c">MU046</rom>
+			<rom type="voice" offset="0x0c">FRQ2</rom>
+			<rom type="bgm" offset="0x0d">MU049</rom>
+			<rom type="voice" offset="0x0d">FRQ1</rom>
+			<rom type="bgm" offset="0x0e">MU010</rom>
+			<rom type="voice" offset="0x0e">FRQM</rom>
+			<rom type="bgm" offset="0x10">MU010</rom>
+			<rom type="voice" offset="0x10">FRQM</rom>
+			<rom type="bgm" offset="0x11">MU011</rom>
+			<rom type="voice" offset="0x11">FRQM</rom>
+			<rom type="bgm" offset="0x12">MU012</rom>
+			<rom type="voice" offset="0x12">FRQM</rom>
+			<rom type="bgm" offset="0x13">MU013</rom>
+			<rom type="voice" offset="0x13">FRQM</rom>
+			<rom type="bgm" offset="0x14">MU014</rom>
+			<rom type="voice" offset="0x14">FRQM</rom>
+			<rom type="bgm" offset="0x15">MU015</rom>
+			<rom type="voice" offset="0x15">FRQM</rom>
+			<rom type="bgm" offset="0x16">MU016</rom>
+			<rom type="voice" offset="0x16">FRQM</rom>
+			<rom type="bgm" offset="0x17">MU017</rom>
+			<rom type="voice" offset="0x17">FRQ1</rom>
+			<rom type="bgm" offset="0x18">MU018</rom>
+			<rom type="voice" offset="0x18">FRQM</rom>
+			<rom type="bgm" offset="0x19">MU019</rom>
+			<rom type="voice" offset="0x19">FRQM</rom>
+			<rom type="bgm" offset="0x20">MU020</rom>
+			<rom type="voice" offset="0x20">FRQM</rom>
+			<rom type="bgm" offset="0x21">MU021</rom>
+			<rom type="voice" offset="0x21">FRQM</rom>
+			<rom type="bgm" offset="0x22">MU022</rom>
+			<rom type="voice" offset="0x22">FRQM</rom>
+			<rom type="bgm" offset="0x23">MU023</rom>
+			<rom type="voice" offset="0x23">FRQM</rom>
+			<rom type="bgm" offset="0x24">MU024</rom>
+			<rom type="voice" offset="0x24">FRQM</rom>
+			<rom type="bgm" offset="0x25">MU025</rom>
+			<rom type="voice" offset="0x25">FRQM</rom>
+			<rom type="bgm" offset="0x26">MU026</rom>
+			<rom type="voice" offset="0x26">FRQM</rom>
+			<rom type="bgm" offset="0x27">MU027</rom>
+			<rom type="voice" offset="0x27">FRQM</rom>
+			<rom type="bgm" offset="0x28">MU028</rom>
+			<rom type="voice" offset="0x28">FRQM</rom>
+			<rom type="bgm" offset="0x29">MU029</rom>
+			<rom type="voice" offset="0x29">FRQM</rom>
+			<rom type="bgm" offset="0x30">MU030</rom>
+			<rom type="voice" offset="0x30">FRQM</rom>
+			<rom type="bgm" offset="0x31">MU031</rom>
+			<rom type="voice" offset="0x31">FRQM</rom>
+			<rom type="bgm" offset="0x32">MU032</rom>
+			<rom type="voice" offset="0x32">FRQM</rom>
+			<rom type="bgm" offset="0x33">MU033</rom>
+			<rom type="voice" offset="0x33">FRQM</rom>
+			<rom type="bgm" offset="0x34">MU034</rom>
+			<rom type="voice" offset="0x34">FRQM</rom>
+			<rom type="bgm" offset="0x35">MU035</rom>
+			<rom type="voice" offset="0x35">FRQM</rom>
+			<rom type="bgm" offset="0x36">MU036</rom>
+			<rom type="voice" offset="0x36">FRQ1</rom>
+			<rom type="bgm" offset="0x37">MU037</rom>
+			<rom type="voice" offset="0x37">FRQM</rom>
+			<rom type="bgm" offset="0x38">MU038</rom>
+			<rom type="voice" offset="0x38">FRQM</rom>
+			<rom type="bgm" offset="0x39">MU039</rom>
+			<rom type="voice" offset="0x39">FRQM</rom>
+			<rom type="bgm" offset="0x40">MU040</rom>
+			<rom type="voice" offset="0x40">FRQM</rom>
+			<rom type="bgm" offset="0x41">MU041</rom>
+			<rom type="voice" offset="0x41">FRQM</rom>
+			<rom type="bgm" offset="0x42">MU042</rom>
+			<rom type="voice" offset="0x42">FRQM</rom>
+			<rom type="bgm" offset="0x43">MU043</rom>
+			<rom type="voice" offset="0x43">FRQM</rom>
+			<rom type="bgm" offset="0x44">MU044</rom>
+			<rom type="voice" offset="0x44">FRQM</rom>
+			<rom type="bgm" offset="0x45">MU045</rom>
+			<rom type="voice" offset="0x45">FRQM</rom>
+			<rom type="bgm" offset="0x46">MU046</rom>
+			<rom type="voice" offset="0x46">FRQM</rom>
+			<rom type="bgm" offset="0x47">MU047</rom>
+			<rom type="voice" offset="0x47">FRQ1</rom>
+			<rom type="bgm" offset="0x48">MU048</rom>
+			<rom type="voice" offset="0x48">FRQM</rom>
+			<rom type="bgm" offset="0x49">MU049</rom>
+			<rom type="voice" offset="0x49">FRQM</rom>
+			<rom type="bgm" offset="0x50">MU050</rom>
+			<rom type="voice" offset="0x50">FRQM</rom>
+			<rom type="bgm" offset="0x51">MU051</rom>
+			<rom type="voice" offset="0x51">FRQ2</rom>
+			<rom type="bgm" offset="0x52">MU052</rom>
+			<rom type="voice" offset="0x52">FRQM</rom>
+			<rom type="bgm" offset="0x53">MU053</rom>
+			<rom type="voice" offset="0x53">FRQM</rom>
+			<rom type="bgm" offset="0x54">MU054</rom>
+			<rom type="voice" offset="0x54">FRQM</rom>
+			<rom type="bgm" offset="0x55">MU055</rom>
+			<rom type="voice" offset="0x55">FRQM</rom>
+			<rom type="bgm" offset="0x56">MU056</rom>
+			<rom type="voice" offset="0x56">FRQM</rom>
+			<rom type="bgm" offset="0x57">MU057</rom>
+			<rom type="voice" offset="0x57">FRQ1</rom>
+			<rom type="bgm" offset="0x58">MU058</rom>
+			<rom type="voice" offset="0x58">FRQ1</rom>
+			<rom type="bgm" offset="0x59">MU059</rom>
+			<rom type="voice" offset="0x59">FRQM</rom>
+			<rom type="bgm" offset="0x60">MU060</rom>
+			<rom type="voice" offset="0x60">FRQM</rom>
+			<rom type="bgm" offset="0x61">MU061</rom>
+			<rom type="voice" offset="0x61">FRQM</rom>
+			<rom type="bgm" offset="0x62">MU062</rom>
+			<rom type="voice" offset="0x62">FRQ2</rom>
+			<rom type="bgm" offset="0x63">MU063</rom>
+			<rom type="voice" offset="0x63">FRQM</rom>
+			<rom type="bgm" offset="0x64">MU064</rom>
+			<rom type="voice" offset="0x64">FRQM</rom>
+			<rom type="bgm" offset="0x65">MU065</rom>
+			<rom type="voice" offset="0x65">FRQM</rom>
+			<rom type="bgm" offset="0x66">MU066</rom>
+			<rom type="voice" offset="0x66">FRQM</rom>
+			<rom type="bgm" offset="0x67">MU067</rom>
+			<rom type="voice" offset="0x67">FRQM</rom>
+			<rom type="bgm" offset="0x68">MU068</rom>
+			<rom type="voice" offset="0x68">FRQM</rom>
+			<rom type="bgm" offset="0x69">MU069</rom>
+			<rom type="voice" offset="0x69">FRQM</rom>
+			<rom type="bgm" offset="0x70">MU070</rom>
+			<rom type="voice" offset="0x70">FRQM</rom>
+			<rom type="bgm" offset="0x71">MU071</rom>
+			<rom type="voice" offset="0x71">FRQM</rom>
+			<rom type="bgm" offset="0x72">MU072</rom>
+			<rom type="voice" offset="0x72">FRQM</rom>
+			<rom type="bgm" offset="0x73">MU073</rom>
+			<rom type="voice" offset="0x73">FRQM</rom>
+			<rom type="bgm" offset="0x74">MU074</rom>
+			<rom type="voice" offset="0x74">FRQM</rom>
+			<rom type="bgm" offset="0x75">MU075</rom>
+			<rom type="voice" offset="0x75">FRQM</rom>
+			<rom type="bgm" offset="0x76">MU076</rom>
+			<rom type="voice" offset="0x76">FRQM</rom>
+			<rom type="bgm" offset="0x77">MU077</rom>
+			<rom type="voice" offset="0x77">FRQM</rom>
+			<rom type="bgm" offset="0x78">MU078</rom>
+			<rom type="voice" offset="0x78">FRQM</rom>
+			<rom type="bgm" offset="0x79">MU079</rom>
+			<rom type="voice" offset="0x79">FRQM</rom>
+		</romlist>
+		<titlelist>
+			<title code="0x77">タイトル</title>
+			<title code="0x69">Destruction type1</title>
+			<title code="0x0b">Destruction type2</title>
+			<title code="0x71">百鬼のテーマ type1</title>
+			<title code="0x67">百鬼のテーマ type2</title>
+			<title code="0x72">百鬼のテーマ typeY</title>
+			<title code="0x00">場面転換</title>
+			<title code="0x46">P・P・G type1</title>
+			<title code="0x22">P・P・G type2</title>
+			<title code="0x50">P・P・G typeX</title>
+			<title code="0x17">P・P・G type3</title>
+			<title code="0x0c">P・P・G type4</title>
+			<title code="0x63">ベースハックマン type1</title>
+			<title code="0x36">ベースハックマン type2</title>
+			<title code="0x18">VCF Sound type1</title>
+			<title code="0x47">VCF Sound type2</title>
+			<title code="0x10">ZAP type1</title>
+			<title code="0x0e">ZAP type2</title>
+			<title code="0x34">TerminalState type1</title>
+			<title code="0x57">TerminalState type2</title>
+			<title code="0x11">AOTA</title>
+			<title code="0x30">フロム・シティ</title>
+			<title code="0x58">フロム・シティ type2</title>
+			<title code="0x35">プロト1 type1</title>
+			<title code="0x62">プロト1 type2</title>
+			<title code="0x0a">プロト1 typeX</title>
+			<title code="0x06">プロト2 type1</title>
+			<title code="0x07">プロト2 type2</title>
+			<title code="0x09">プロト3</title>
+			<title code="0x12">Working Area</title>
+			<title code="0x79">Working Area</title>
+			<title code="0x64">DV・music type1</title>
+			<title code="0x38">DV・music type2</title>
+			<title code="0x39">DV・music type3</title>
+			<title code="0x40">DV・music type4</title>
+			<title code="0x41">DV・music type5</title>
+			<title code="0x16">ESP type1</title>
+			<title code="0x13">ESP type2</title>
+			<title code="0x14">ESP type2X</title>
+			<title code="0x15">ESP type2Y</title>
+			<title code="0x42">ESP type2Z</title>
+			<title code="0x43">ESP type2W</title>
+			<title code="0x44">ESP type2</title>
+			<title code="0x03">ESP type3</title>
+			<title code="0x04">ESP type3X</title>
+			<title code="0x02">ESP type4</title>
+			<title code="0x76">ESP type4X</title>
+			<title code="0x33">Minima type1</title>
+			<title code="0x61">Minima type2</title>
+			<title code="0x65">効果音楽 type1</title>
+			<title code="0x45">効果音楽 type1X</title>
+			<title code="0x66">効果音楽 type2</title>
+			<title code="0x73">効果音楽 type3</title>
+			<title code="0x23">効果音楽 type4</title>
+			<title code="0x51">効果音楽 type4X</title>
+			<title code="0x78">効果音楽 type5</title>
+			<title code="0x21">念写</title>
+			<title code="0x31">幻想 type1</title>
+			<title code="0x32">幻想 type2</title>
+			<title code="0x49">幻想 type3</title>
+			<title code="0x0d">幻想 type4</title>
+			<title code="0x27">TEL type1</title>
+			<title code="0x28">TEL type1</title>
+			<title code="0x01">TEL type2</title>
+			<title code="0x29">ピンポン</title>
+			<title code="0x20">村上刑事 type1</title>
+			<title code="0x48">村上刑事 type2</title>
+			<title code="0x24">深雪のテーマ type1</title>
+			<title code="0x52">深雪のテーマ type2</title>
+			<title code="0x25">野上さんのテーマ</title>
+			<title code="0x26">間奏音楽 type1</title>
+			<title code="0x54">間奏音楽 type2</title>
+			<title code="0x68">サイコメトリ</title>
+			<title code="0x70">超能力の目覚め</title>
+			<title code="0x08">その他音楽0</title>
+			<title code="0x19">その他音楽1</title>
+			<title code="0x37">その他音楽2</title>
+			<title code="0x53">その他音楽3</title>
+			<title code="0x74">その他音楽4</title>
+			<title code="0x05">その他音楽5</title>
+		</titlelist>
+	</game>
+	<game>
+		<name>[PC-8801] デストラクション(上巻)(OPN)</name>
+		<driver type="opn">pc88</driver>
+		<driveralias type="NEC PC-8801">スタジオWING</driveralias>
+		<options>
+			<option name="mdata_num" value="0x0100"/>
+			<option name="vdata_addr" value="0xe1d0"/>
+		</options>
+		<romlist archive="destjyo">
+			<rom type="code" offset="0x0000">PATCH2</rom>
+			<rom type="code" offset="0xc400">Y230</rom>
+			<rom type="code" offset="0xde00">TCLS</rom>
+			<rom type="code" offset="0xdf40">PFRQ</rom>
+			<rom type="code" offset="0xf800">VDAT</rom>
+			<rom type="bgm" offset="0x00">MU000</rom>
+			<rom type="voice" offset="0x00">FRQM</rom>
+			<rom type="bgm" offset="0x01">MU001</rom>
+			<rom type="voice" offset="0x01">FRQM</rom>
+			<rom type="bgm" offset="0x02">MU002</rom>
+			<rom type="voice" offset="0x02">FRQM</rom>
+			<rom type="bgm" offset="0x03">MU003</rom>
+			<rom type="voice" offset="0x03">FRQM</rom>
+			<rom type="bgm" offset="0x04">MU004</rom>
+			<rom type="voice" offset="0x04">FRQM</rom>
+			<rom type="bgm" offset="0x05">MU005</rom>
+			<rom type="voice" offset="0x05">FRQM</rom>
+			<rom type="bgm" offset="0x06">MU006</rom>
+			<rom type="voice" offset="0x06">FRQM</rom>
+			<rom type="bgm" offset="0x07">MU007</rom>
+			<rom type="voice" offset="0x07">FRQM</rom>
+			<rom type="bgm" offset="0x08">MU008</rom>
+			<rom type="voice" offset="0x08">FRQM</rom>
+			<rom type="bgm" offset="0x09">MU009</rom>
+			<rom type="voice" offset="0x09">FRQM</rom>
+			<rom type="bgm" offset="0x0a">MU062</rom>
+			<rom type="voice" offset="0x0a">FRQM</rom>
+			<rom type="bgm" offset="0x0b">MU069</rom>
+			<rom type="voice" offset="0x0b">FRQ1</rom>
+			<rom type="bgm" offset="0x0c">MU046</rom>
+			<rom type="voice" offset="0x0c">FRQ2</rom>
+			<rom type="bgm" offset="0x0d">MU049</rom>
+			<rom type="voice" offset="0x0d">FRQ1</rom>
+			<rom type="bgm" offset="0x0e">MU010</rom>
+			<rom type="voice" offset="0x0e">FRQM</rom>
+			<rom type="bgm" offset="0x10">MU010</rom>
+			<rom type="voice" offset="0x10">FRQM</rom>
+			<rom type="bgm" offset="0x11">MU011</rom>
+			<rom type="voice" offset="0x11">FRQM</rom>
+			<rom type="bgm" offset="0x12">MU012</rom>
+			<rom type="voice" offset="0x12">FRQM</rom>
+			<rom type="bgm" offset="0x13">MU013</rom>
+			<rom type="voice" offset="0x13">FRQM</rom>
+			<rom type="bgm" offset="0x14">MU014</rom>
+			<rom type="voice" offset="0x14">FRQM</rom>
+			<rom type="bgm" offset="0x15">MU015</rom>
+			<rom type="voice" offset="0x15">FRQM</rom>
+			<rom type="bgm" offset="0x16">MU016</rom>
+			<rom type="voice" offset="0x16">FRQM</rom>
+			<rom type="bgm" offset="0x17">MU017</rom>
+			<rom type="voice" offset="0x17">FRQ1</rom>
+			<rom type="bgm" offset="0x18">MU018</rom>
+			<rom type="voice" offset="0x18">FRQM</rom>
+			<rom type="bgm" offset="0x19">MU019</rom>
+			<rom type="voice" offset="0x19">FRQM</rom>
+			<rom type="bgm" offset="0x20">MU020</rom>
+			<rom type="voice" offset="0x20">FRQM</rom>
+			<rom type="bgm" offset="0x21">MU021</rom>
+			<rom type="voice" offset="0x21">FRQM</rom>
+			<rom type="bgm" offset="0x22">MU022</rom>
+			<rom type="voice" offset="0x22">FRQM</rom>
+			<rom type="bgm" offset="0x23">MU023</rom>
+			<rom type="voice" offset="0x23">FRQM</rom>
+			<rom type="bgm" offset="0x24">MU024</rom>
+			<rom type="voice" offset="0x24">FRQM</rom>
+			<rom type="bgm" offset="0x25">MU025</rom>
+			<rom type="voice" offset="0x25">FRQM</rom>
+			<rom type="bgm" offset="0x26">MU026</rom>
+			<rom type="voice" offset="0x26">FRQM</rom>
+			<rom type="bgm" offset="0x27">MU027</rom>
+			<rom type="voice" offset="0x27">FRQM</rom>
+			<rom type="bgm" offset="0x28">MU028</rom>
+			<rom type="voice" offset="0x28">FRQM</rom>
+			<rom type="bgm" offset="0x29">MU029</rom>
+			<rom type="voice" offset="0x29">FRQM</rom>
+			<rom type="bgm" offset="0x30">MU030</rom>
+			<rom type="voice" offset="0x30">FRQM</rom>
+			<rom type="bgm" offset="0x31">MU031</rom>
+			<rom type="voice" offset="0x31">FRQM</rom>
+			<rom type="bgm" offset="0x32">MU032</rom>
+			<rom type="voice" offset="0x32">FRQM</rom>
+			<rom type="bgm" offset="0x33">MU033</rom>
+			<rom type="voice" offset="0x33">FRQM</rom>
+			<rom type="bgm" offset="0x34">MU034</rom>
+			<rom type="voice" offset="0x34">FRQM</rom>
+			<rom type="bgm" offset="0x35">MU035</rom>
+			<rom type="voice" offset="0x35">FRQM</rom>
+			<rom type="bgm" offset="0x36">MU036</rom>
+			<rom type="voice" offset="0x36">FRQ1</rom>
+			<rom type="bgm" offset="0x37">MU037</rom>
+			<rom type="voice" offset="0x37">FRQM</rom>
+			<rom type="bgm" offset="0x38">MU038</rom>
+			<rom type="voice" offset="0x38">FRQM</rom>
+			<rom type="bgm" offset="0x39">MU039</rom>
+			<rom type="voice" offset="0x39">FRQM</rom>
+			<rom type="bgm" offset="0x40">MU040</rom>
+			<rom type="voice" offset="0x40">FRQM</rom>
+			<rom type="bgm" offset="0x41">MU041</rom>
+			<rom type="voice" offset="0x41">FRQM</rom>
+			<rom type="bgm" offset="0x42">MU042</rom>
+			<rom type="voice" offset="0x42">FRQM</rom>
+			<rom type="bgm" offset="0x43">MU043</rom>
+			<rom type="voice" offset="0x43">FRQM</rom>
+			<rom type="bgm" offset="0x44">MU044</rom>
+			<rom type="voice" offset="0x44">FRQM</rom>
+			<rom type="bgm" offset="0x45">MU045</rom>
+			<rom type="voice" offset="0x45">FRQM</rom>
+			<rom type="bgm" offset="0x46">MU046</rom>
+			<rom type="voice" offset="0x46">FRQM</rom>
+			<rom type="bgm" offset="0x47">MU047</rom>
+			<rom type="voice" offset="0x47">FRQ1</rom>
+			<rom type="bgm" offset="0x48">MU048</rom>
+			<rom type="voice" offset="0x48">FRQM</rom>
+			<rom type="bgm" offset="0x49">MU049</rom>
+			<rom type="voice" offset="0x49">FRQM</rom>
+			<rom type="bgm" offset="0x50">MU050</rom>
+			<rom type="voice" offset="0x50">FRQM</rom>
+			<rom type="bgm" offset="0x51">MU051</rom>
+			<rom type="voice" offset="0x51">FRQ2</rom>
+			<rom type="bgm" offset="0x52">MU052</rom>
+			<rom type="voice" offset="0x52">FRQM</rom>
+			<rom type="bgm" offset="0x53">MU053</rom>
+			<rom type="voice" offset="0x53">FRQM</rom>
+			<rom type="bgm" offset="0x54">MU054</rom>
+			<rom type="voice" offset="0x54">FRQM</rom>
+			<rom type="bgm" offset="0x55">MU055</rom>
+			<rom type="voice" offset="0x55">FRQM</rom>
+			<rom type="bgm" offset="0x56">MU056</rom>
+			<rom type="voice" offset="0x56">FRQM</rom>
+			<rom type="bgm" offset="0x57">MU057</rom>
+			<rom type="voice" offset="0x57">FRQ1</rom>
+			<rom type="bgm" offset="0x58">MU058</rom>
+			<rom type="voice" offset="0x58">FRQ1</rom>
+			<rom type="bgm" offset="0x59">MU059</rom>
+			<rom type="voice" offset="0x59">FRQM</rom>
+			<rom type="bgm" offset="0x60">MU060</rom>
+			<rom type="voice" offset="0x60">FRQM</rom>
+			<rom type="bgm" offset="0x61">MU061</rom>
+			<rom type="voice" offset="0x61">FRQM</rom>
+			<rom type="bgm" offset="0x62">MU062</rom>
+			<rom type="voice" offset="0x62">FRQ2</rom>
+			<rom type="bgm" offset="0x63">MU063</rom>
+			<rom type="voice" offset="0x63">FRQM</rom>
+			<rom type="bgm" offset="0x64">MU064</rom>
+			<rom type="voice" offset="0x64">FRQM</rom>
+			<rom type="bgm" offset="0x65">MU065</rom>
+			<rom type="voice" offset="0x65">FRQM</rom>
+			<rom type="bgm" offset="0x66">MU066</rom>
+			<rom type="voice" offset="0x66">FRQM</rom>
+			<rom type="bgm" offset="0x67">MU067</rom>
+			<rom type="voice" offset="0x67">FRQM</rom>
+			<rom type="bgm" offset="0x68">MU068</rom>
+			<rom type="voice" offset="0x68">FRQM</rom>
+			<rom type="bgm" offset="0x69">MU069</rom>
+			<rom type="voice" offset="0x69">FRQM</rom>
+			<rom type="bgm" offset="0x70">MU070</rom>
+			<rom type="voice" offset="0x70">FRQM</rom>
+			<rom type="bgm" offset="0x71">MU071</rom>
+			<rom type="voice" offset="0x71">FRQM</rom>
+			<rom type="bgm" offset="0x72">MU072</rom>
+			<rom type="voice" offset="0x72">FRQM</rom>
+			<rom type="bgm" offset="0x73">MU073</rom>
+			<rom type="voice" offset="0x73">FRQM</rom>
+			<rom type="bgm" offset="0x74">MU074</rom>
+			<rom type="voice" offset="0x74">FRQM</rom>
+			<rom type="bgm" offset="0x75">MU075</rom>
+			<rom type="voice" offset="0x75">FRQM</rom>
+			<rom type="bgm" offset="0x76">MU076</rom>
+			<rom type="voice" offset="0x76">FRQM</rom>
+			<rom type="bgm" offset="0x77">MU077</rom>
+			<rom type="voice" offset="0x77">FRQM</rom>
+			<rom type="bgm" offset="0x78">MU078</rom>
+			<rom type="voice" offset="0x78">FRQM</rom>
+			<rom type="bgm" offset="0x79">MU079</rom>
+			<rom type="voice" offset="0x79">FRQM</rom>
+		</romlist>
+		<titlelist>
+			<title code="0x77">タイトル</title>
+			<title code="0x69">Destruction type1</title>
+			<title code="0x0b">Destruction type2</title>
+			<title code="0x71">百鬼のテーマ type1</title>
+			<title code="0x67">百鬼のテーマ type2</title>
+			<title code="0x72">百鬼のテーマ typeY</title>
+			<title code="0x00">場面転換</title>
+			<title code="0x46">P・P・G type1</title>
+			<title code="0x22">P・P・G type2</title>
+			<title code="0x50">P・P・G typeX</title>
+			<title code="0x17">P・P・G type3</title>
+			<title code="0x0c">P・P・G type4</title>
+			<title code="0x63">ベースハックマン type1</title>
+			<title code="0x36">ベースハックマン type2</title>
+			<title code="0x18">VCF Sound type1</title>
+			<title code="0x47">VCF Sound type2</title>
+			<title code="0x10">ZAP type1</title>
+			<title code="0x0e">ZAP type2</title>
+			<title code="0x34">TerminalState type1</title>
+			<title code="0x57">TerminalState type2</title>
+			<title code="0x11">AOTA</title>
+			<title code="0x30">フロム・シティ</title>
+			<title code="0x58">フロム・シティ type2</title>
+			<title code="0x35">プロト1 type1</title>
+			<title code="0x62">プロト1 type2</title>
+			<title code="0x0a">プロト1 typeX</title>
+			<title code="0x06">プロト2 type1</title>
+			<title code="0x07">プロト2 type2</title>
+			<title code="0x09">プロト3</title>
+			<title code="0x12">Working Area</title>
+			<title code="0x79">Working Area</title>
+			<title code="0x64">DV・music type1</title>
+			<title code="0x38">DV・music type2</title>
+			<title code="0x39">DV・music type3</title>
+			<title code="0x40">DV・music type4</title>
+			<title code="0x41">DV・music type5</title>
+			<title code="0x16">ESP type1</title>
+			<title code="0x13">ESP type2</title>
+			<title code="0x14">ESP type2X</title>
+			<title code="0x15">ESP type2Y</title>
+			<title code="0x42">ESP type2Z</title>
+			<title code="0x43">ESP type2W</title>
+			<title code="0x44">ESP type2</title>
+			<title code="0x03">ESP type3</title>
+			<title code="0x04">ESP type3X</title>
+			<title code="0x02">ESP type4</title>
+			<title code="0x76">ESP type4X</title>
+			<title code="0x33">Minima type1</title>
+			<title code="0x61">Minima type2</title>
+			<title code="0x65">効果音楽 type1</title>
+			<title code="0x45">効果音楽 type1X</title>
+			<title code="0x66">効果音楽 type2</title>
+			<title code="0x73">効果音楽 type3</title>
+			<title code="0x23">効果音楽 type4</title>
+			<title code="0x51">効果音楽 type4X</title>
+			<title code="0x78">効果音楽 type5</title>
+			<title code="0x21">念写</title>
+			<title code="0x31">幻想 type1</title>
+			<title code="0x32">幻想 type2</title>
+			<title code="0x49">幻想 type3</title>
+			<title code="0x0d">幻想 type4</title>
+			<title code="0x27">TEL type1</title>
+			<title code="0x28">TEL type1</title>
+			<title code="0x01">TEL type2</title>
+			<title code="0x29">ピンポン</title>
+			<title code="0x20">村上刑事 type1</title>
+			<title code="0x48">村上刑事 type2</title>
+			<title code="0x24">深雪のテーマ type1</title>
+			<title code="0x52">深雪のテーマ type2</title>
+			<title code="0x25">野上さんのテーマ</title>
+			<title code="0x26">間奏音楽 type1</title>
+			<title code="0x54">間奏音楽 type2</title>
+			<title code="0x68">サイコメトリ</title>
+			<title code="0x70">超能力の目覚め</title>
+			<title code="0x08">その他音楽0</title>
+			<title code="0x19">その他音楽1</title>
+			<title code="0x37">その他音楽2</title>
+			<title code="0x53">その他音楽3</title>
+			<title code="0x74">その他音楽4</title>
+			<title code="0x05">その他音楽5</title>
+		</titlelist>
+	</game>
+	<game>
+		<name>[PC-8801] デストラクション(下巻)(OPNA)</name>
+		<driver type="opna">pc88</driver>
+		<driveralias type="NEC PC-8801">スタジオWING</driveralias>
+		<romlist archive="destge">
+			<rom type="code" offset="0x0000">PATCH</rom>
+			<rom type="code" offset="0xc900">WMC1</rom>
+			<rom type="code" offset="0xde00">TCLS</rom>
+			<rom type="code" offset="0xdf40">PFRQ</rom>
+			<rom type="code" offset="0xc400">MCM1</rom>
+			<rom type="code" offset="0xe1d0">FRQM</rom>
+			<rom type="code" offset="0xf800">VDAT</rom>
+			<rom type="adpcm" offset="0x00000">BASS</rom>
+			<rom type="adpcm" offset="0x002c4">ｽﾈｱ1</rom>
+			<rom type="adpcm" offset="0x00640">ｼﾓﾝｽ</rom>
+			<rom type="adpcm" offset="0x00bc0">ｽﾈｱ2</rom>
+			<rom type="adpcm" offset="0x00f80">ｽﾈｱ3</rom>
+			<rom type="adpcm" offset="0x01340">BAS2</rom>
+			<rom type="adpcm" offset="0x01500">TYPE</rom>
+			<rom type="adpcm" offset="0x01780">SFX1</rom>
+			<rom type="adpcm" offset="0x01A80">SFX2</rom>
+			<rom type="adpcm" offset="0x01F80">ｷﾘ</rom>
+			<rom type="adpcm" offset="0x039C0">HART</rom>
+			<rom type="bgm" offset="0x00">MU000</rom>
+			<rom type="bgm" offset="0x01">MU001</rom>
+			<rom type="bgm" offset="0x02">MU002</rom>
+			<rom type="bgm" offset="0x03">MU003</rom>
+			<rom type="bgm" offset="0x04">MU004</rom>
+			<rom type="bgm" offset="0x05">MU005</rom>
+			<rom type="bgm" offset="0x06">MU006</rom>
+			<rom type="bgm" offset="0x07">MU007</rom>
+			<rom type="bgm" offset="0x08">MU008</rom>
+			<rom type="bgm" offset="0x09">MU009</rom>
+			<rom type="bgm" offset="0x0e">MU010</rom>
+			<rom type="bgm" offset="0x10">MU010</rom>
+			<rom type="bgm" offset="0x11">MU011</rom>
+			<rom type="bgm" offset="0x12">MU012</rom>
+			<rom type="bgm" offset="0x13">MU013</rom>
+			<rom type="bgm" offset="0x14">MU014</rom>
+			<rom type="bgm" offset="0x15">MU015</rom>
+			<rom type="bgm" offset="0x16">MU016</rom>
+			<rom type="bgm" offset="0x17">MU017</rom>
+			<rom type="bgm" offset="0x18">MU018</rom>
+			<rom type="bgm" offset="0x19">MU019</rom>
+			<rom type="bgm" offset="0x20">MU020</rom>
+			<rom type="bgm" offset="0x21">MU021</rom>
+			<rom type="bgm" offset="0x22">MU022</rom>
+			<rom type="bgm" offset="0x23">MU023</rom>
+			<rom type="bgm" offset="0x24">MU024</rom>
+			<rom type="bgm" offset="0x25">MU025</rom>
+			<rom type="bgm" offset="0x26">MU026</rom>
+		</romlist>
+		<titlelist>
+			<title code="0x21">Destruction</title>
+			<title code="0x18">百鬼のテーマ type1</title>
+			<title code="0x23">百鬼のテーマ type2</title>
+			<title code="0x26">百鬼のテーマ type3</title>
+			<title code="0x10">P・P・G 1</title>
+			<title code="0x11">P・P・G 2</title>
+			<title code="0x04">プロト2</title>
+			<title code="0x07">プロト3</title>
+			<title code="0x09">AOTA</title>
+			<title code="0x14">フロム・シティ</title>
+			<title code="0x12">幻想 type1</title>
+			<title code="0x16">幻想 type2</title>
+			<title code="0x17">DV・music</title>
+			<title code="0x19">間奏音楽</title>
+			<title code="0x22">超能力の目覚め</title>
+			<title code="0x25">効果音楽 type3</title>
+			<title code="0x13">効果音楽 type4</title>
+			<title code="0x24">効果音楽 type5</title>
+			<title code="0x00">ESP type1</title>
+			<title code="0x01">ESP type2</title>
+			<title code="0x02">ESP type3</title>
+			<title code="0x03">その他音楽0</title>
+			<title code="0x06">その他音楽1</title>
+			<title code="0x15">その他音楽2</title>
+			<title code="0x20">その他音楽3</title>
+		</titlelist>
+	</game>
+	<game>
+		<name>[PC-8801] デストラクション(下巻)(OPN)</name>
+		<driver type="opn">pc88</driver>
+		<driveralias type="NEC PC-8801">スタジオWING</driveralias>
+		<romlist archive="destge">
+			<rom type="code" offset="0x0000">PATCH2</rom>
+			<rom type="code" offset="0xc400">Y230</rom>
+			<rom type="code" offset="0xde00">TCLS</rom>
+			<rom type="code" offset="0xdf40">PFRQ</rom>
+			<rom type="code" offset="0xf800">VDAT</rom>
+			<rom type="code" offset="0xe1d0">FRQM</rom>
+			<rom type="bgm" offset="0x00">MU000</rom>
+			<rom type="bgm" offset="0x01">MU001</rom>
+			<rom type="bgm" offset="0x02">MU002</rom>
+			<rom type="bgm" offset="0x03">MU003</rom>
+			<rom type="bgm" offset="0x04">MU004</rom>
+			<rom type="bgm" offset="0x05">MU005</rom>
+			<rom type="bgm" offset="0x06">MU006</rom>
+			<rom type="bgm" offset="0x07">MU007</rom>
+			<rom type="bgm" offset="0x08">MU008</rom>
+			<rom type="bgm" offset="0x09">MU009</rom>
+			<rom type="bgm" offset="0x0e">MU010</rom>
+			<rom type="bgm" offset="0x10">MU010</rom>
+			<rom type="bgm" offset="0x11">MU011</rom>
+			<rom type="bgm" offset="0x12">MU012</rom>
+			<rom type="bgm" offset="0x13">MU013</rom>
+			<rom type="bgm" offset="0x14">MU014</rom>
+			<rom type="bgm" offset="0x15">MU015</rom>
+			<rom type="bgm" offset="0x16">MU016</rom>
+			<rom type="bgm" offset="0x17">MU017</rom>
+			<rom type="bgm" offset="0x18">MU018</rom>
+			<rom type="bgm" offset="0x19">MU019</rom>
+			<rom type="bgm" offset="0x20">MU020</rom>
+			<rom type="bgm" offset="0x21">MU021</rom>
+			<rom type="bgm" offset="0x22">MU022</rom>
+			<rom type="bgm" offset="0x23">MU023</rom>
+			<rom type="bgm" offset="0x24">MU024</rom>
+			<rom type="bgm" offset="0x25">MU025</rom>
+			<rom type="bgm" offset="0x26">MU026</rom>
+		</romlist>
+		<titlelist>
+			<title code="0x21">Destruction</title>
+			<title code="0x18">百鬼のテーマ type1</title>
+			<title code="0x23">百鬼のテーマ type2</title>
+			<title code="0x26">百鬼のテーマ type3</title>
+			<title code="0x10">P・P・G 1</title>
+			<title code="0x11">P・P・G 2</title>
+			<title code="0x04">プロト2</title>
+			<title code="0x07">プロト3</title>
+			<title code="0x09">AOTA</title>
+			<title code="0x14">フロム・シティ</title>
+			<title code="0x12">幻想 type1</title>
+			<title code="0x16">幻想 type2</title>
+			<title code="0x17">DV・music</title>
+			<title code="0x19">間奏音楽</title>
+			<title code="0x22">超能力の目覚め</title>
+			<title code="0x25">効果音楽 type3</title>
+			<title code="0x13">効果音楽 type4</title>
+			<title code="0x24">効果音楽 type5</title>
+			<title code="0x00">ESP type1</title>
+			<title code="0x01">ESP type2</title>
+			<title code="0x02">ESP type3</title>
+			<title code="0x03">その他音楽0</title>
+			<title code="0x06">その他音楽1</title>
+			<title code="0x15">その他音楽2</title>
+			<title code="0x20">その他音楽3</title>
+		</titlelist>
+	</game>
+	<game>
+		<name>[PC-8801] 怨霊戦記(OPNA)</name>
+		<driver type="opna">pc88</driver>
+		<driveralias type="NEC PC-8801">スタジオWING</driveralias>
+		<options>
+			<option name="mdata_num" value="0x40"/>
+		</options>
+		<romlist archive="onryo">
+			<rom type="code" offset="0x0000">PATCH</rom>
+			<rom type="code" offset="0x6000">N88_3.ROM</rom>
+			<rom type="code" offset="0xdf40">PFRQ</rom>
+			<rom type="code" offset="0xc400">M.VA</rom>
+			<rom type="code" offset="0xf800">VDAT</rom>
+			<rom type="adpcm" offset="0x00000">BASS</rom>
+			<rom type="adpcm" offset="0x002c4">ｽﾈｱ1</rom>
+			<rom type="adpcm" offset="0x00640">ｼﾓﾝｽ</rom>
+			<rom type="adpcm" offset="0x00bc0">ｽﾈｱ2</rom>
+			<rom type="adpcm" offset="0x00f40">ｺﾝｶﾞ</rom>
+			<rom type="adpcm" offset="0x01200">ｺﾝｶ2</rom>
+			<rom type="adpcm" offset="0x014c0">HCP</rom>
+			<rom type="adpcm" offset="0x017c0">ｽﾈｱ3</rom>
+			<rom type="adpcm" offset="0x02280">ｼｪｲｸ</rom>
+			<rom type="adpcm" offset="0x02540">ｽﾈｱ4</rom>
+			<rom type="adpcm" offset="0x02800">HIT</rom>
+			<rom type="adpcm" offset="0x02d40">ｽｸﾗﾁ</rom>
+			<rom type="adpcm" offset="0x03040">ｷﾘ</rom>
+			<rom type="adpcm" offset="0x03380">ﾚｯﾄ</rom>
+			<rom type="adpcm" offset="0x03500">ﾊﾟｳ</rom>
+			<rom type="adpcm" offset="0x03800">ﾁﾘﾘ</rom>
+			<rom type="adpcm" offset="0x039c0">HART</rom>
+			<rom type="adpcm" offset="0x08000">ｸｼﾞ1</rom>
+			<rom type="adpcm" offset="0x08840">ｸｼﾞ2</rom>
+			<rom type="adpcm" offset="0x09800">ｸｼﾞ3</rom>
+			<rom type="adpcm" offset="0x09e40">ｶｴｼ</rom>
+			<rom type="adpcm" offset="0x0a800">ﾚｲｶﾝ</rom>
+			<rom type="adpcm" offset="0x0b0c0">ﾘｭｳﾝ</rom>
+			<rom type="adpcm" offset="0x10000">ﾉﾛｲ</rom>
+			<rom type="adpcm" offset="0x10f00">ﾀｽｸﾚ</rom>
+			<rom type="adpcm" offset="0x11800">ｳｷﾞｬ</rom>
+			<rom type="adpcm" offset="0x12400">ﾀｽｹﾃ</rom>
+			<rom type="adpcm" offset="0x12a80">ﾅﾙｶﾐ</rom>
+			<rom type="adpcm" offset="0x18000">ｷﾞｬｰ</rom>
+			<rom type="adpcm" offset="0x18e00">ｵｵｶﾐ</rom>
+			<rom type="adpcm" offset="0x19e40">ﾜﾊﾊ</rom>
+			<rom type="adpcm" offset="0x1ac00">ｲﾗｼｲ</rom>
+			<rom type="adpcm" offset="0x20000">ﾅｳﾏ1</rom>
+			<rom type="adpcm" offset="0x21000">ﾅｳﾏ2</rom>
+			<rom type="adpcm" offset="0x22000">ｻﾝﾏﾝ</rom>
+			<rom type="adpcm" offset="0x24000">ｿﾞｳ</rom>
+			<rom type="adpcm" offset="0x25000">ｺﾛｲﾃ</rom>
+			<rom type="bgm" offset="0x00">ARH1</rom>
+			<rom type="bgm" offset="0x01">MRA1</rom>
+			<rom type="bgm" offset="0x02">MRA2</rom>
+			<rom type="bgm" offset="0x03">MU0</rom>
+			<rom type="bgm" offset="0x04">MU1</rom>
+			<rom type="bgm" offset="0x05">MU10</rom>
+			<rom type="bgm" offset="0x06">MU2</rom>
+			<rom type="bgm" offset="0x07">MU8</rom>
+			<rom type="bgm" offset="0x08">MU9</rom>
+			<rom type="bgm" offset="0x09">NEW2</rom>
+			<rom type="bgm" offset="0x0a">OMN2</rom>
+			<rom type="bgm" offset="0x0b">OMN3</rom>
+			<rom type="bgm" offset="0x0c">PI2</rom>
+			<rom type="bgm" offset="0x0d">PIS</rom>
+			<rom type="bgm" offset="0x0e">POP1</rom>
+			<rom type="bgm" offset="0x0f">Sﾀｲｺ</rom>
+			<rom type="bgm" offset="0x10">TEL</rom>
+			<rom type="bgm" offset="0x11">TITL</rom>
+			<rom type="bgm" offset="0x12">WIN1</rom>
+			<rom type="bgm" offset="0x13">WIN2</rom>
+			<rom type="bgm" offset="0x14">XXX1</rom>
+			<rom type="bgm" offset="0x15">ｱﾗﾊ3</rom>
+			<rom type="bgm" offset="0x16">ｳﾗﾐ</rom>
+			<rom type="bgm" offset="0x17">ｵｰﾒﾝ</rom>
+			<rom type="bgm" offset="0x18">ｵﾙｺﾙ</rom>
+			<rom type="bgm" offset="0x19">ｵﾜﾘ</rom>
+			<rom type="bgm" offset="0x1a">ｶﾈﾋﾄ</rom>
+			<rom type="bgm" offset="0x1b">ｶﾞｷ1</rom>
+			<rom type="bgm" offset="0x1c">ｸﾗｲ</rom>
+			<rom type="bgm" offset="0x1d">ｹﾝｿｳ</rom>
+			<rom type="bgm" offset="0x1e">ｻﾌﾞ1</rom>
+			<rom type="bgm" offset="0x1f">ｻﾌﾞ2</rom>
+			<rom type="bgm" offset="0x20">ｻﾌﾞ3</rom>
+			<rom type="bgm" offset="0x21">ｼｽﾞｶ</rom>
+			<rom type="bgm" offset="0x22">ｼﾀｰﾙ</rom>
+			<rom type="bgm" offset="0x23">ｽﾅｯｸ</rom>
+			<rom type="bgm" offset="0x24">ｾﾂﾒｲ</rom>
+			<rom type="bgm" offset="0x25">ﾀｲｻ2</rom>
+			<rom type="bgm" offset="0x26">ﾀｲｻﾝ</rom>
+			<rom type="bgm" offset="0x27">ﾁﾝｺﾝ</rom>
+			<rom type="bgm" offset="0x28">ﾄｳｸﾂ</rom>
+			<rom type="bgm" offset="0x29">ﾄｹﾙ1</rom>
+			<rom type="bgm" offset="0x2a">ﾄﾞｲﾂ</rom>
+			<rom type="bgm" offset="0x2b">ﾅｳｼｶ</rom>
+			<rom type="bgm" offset="0x2c">ﾆﾎﾝ</rom>
+			<rom type="bgm" offset="0x2d">ﾊｶｲ</rom>
+			<rom type="bgm" offset="0x2e">ﾊﾟﾙｺ</rom>
+			<rom type="bgm" offset="0x2f">ﾋｶﾘ</rom>
+			<rom type="bgm" offset="0x30">ﾋﾙﾏ1</rom>
+			<rom type="bgm" offset="0x31">ﾋﾟｽﾄ</rom>
+			<rom type="bgm" offset="0x32">ﾌﾙｲ2</rom>
+			<rom type="bgm" offset="0x33">ﾌﾙｲ3</rom>
+			<rom type="bgm" offset="0x34">ﾌﾙｲ4</rom>
+			<rom type="bgm" offset="0x35">ﾌﾙｲｹ</rom>
+			<rom type="bgm" offset="0x36">ﾌﾞｷﾐ</rom>
+			<rom type="bgm" offset="0x37">ﾖﾙ2</rom>
+			<rom type="bgm" offset="0x38">ﾚｲ1</rom>
+			<rom type="bgm" offset="0x39">ﾚｲﾊ</rom>
+			<rom type="bgm" offset="0x3a">MU3</rom>
+			<rom type="bgm" offset="0x3b">ｸﾗｲ1</rom>
+			<rom type="bgm" offset="0x3c">ｲｷﾘｽ</rom>
+			<rom type="bgm" offset="0x3d">ﾀｲｺ1</rom>
+			<rom type="bgm" offset="0x3e">ﾀｲｺ2</rom>
+			<rom type="bgm" offset="0x3f">ﾄｹｲ</rom>
+		</romlist>
+		<titlelist>
+			<title code="0x00000000">ARH1 : 荒吐神社－１</title>
+			<title code="0x01000000">ARH1 : 荒吐神社－２</title>
+			<title code="0x02000000">ARH1 : 荒吐神社－３</title>
+			<title code="0x03000000">ARH1 : 荒吐神社－４</title>
+			<title code="0x04000000">ARH1 : 荒吐神社－５</title>
+			<title code="0x05000001">MRA1 : 中村市会議員</title>
+			<title code="0x06000002">MRA2 : 村上刑事－１</title>
+			<title code="0x07000002">MRA2 : 村上刑事－２</title>
+			<title code="0x08000003">MU0  : 事件発生－１</title>
+			<title code="0x09000003">MU0  : 事件発生－２</title>
+			<title code="0x0a000003">MU0  : 事件発生－３</title>
+			<title code="0x0b000003">MU0  : 事件発生－４</title>
+			<title code="0x0c000003">MU0  : 事件発生－５</title>
+			<title code="0x0d000003">MU0  : 事件発生－６</title>
+			<title code="0x0e000003">MU0  : 事件発生－７</title>
+			<title code="0x0f000004">MU1  : 最終決戦</title>
+			<title code="0x10000005">MU10 : 悲鳴</title>
+			<title code="0x11000006">MU2  : 調査パターンＡ－１</title>
+			<title code="0x12000006">MU2  : 調査パターンＡ－２</title>
+			<title code="0x13000006">MU2  : 調査パターンＡ－３</title>
+			<title code="0x14000006">MU2  : 調査パターンＡ－４</title>
+			<title code="0x15000006">MU2  : 調査パターンＡ－５</title>
+			<title code="0x16000006">MU2  : 調査パターンＡ－６</title>
+			<title code="0x17000006">MU2  : 調査パターンＡ－７</title>
+			<title code="0x18000006">MU2  : 調査パターンＡ－８</title>
+			<title code="0x19000007">MU8  : 謎の絵－１</title>
+		<!--	<title code="0x1a000007">MU8  : 謎の絵－２</title> -->
+			<title code="0x1b000008">MU9  : 調査パターンＢ</title>
+			<title code="0x1c000009">NEW2 : 荒吐一族－１</title>
+			<title code="0x1d000009">NEW2 : 荒吐一族－２</title>
+			<title code="0x1e000009">NEW2 : 荒吐一族－３</title>
+			<title code="0x1f000009">NEW2 : 荒吐一族－４</title>
+			<title code="0x20000009">NEW2 : 荒吐一族－５</title>
+			<title code="0x21000009">NEW2 : 荒吐一族－６</title>
+			<title code="0x2200000a">OMN2 : 公園にて－１</title>
+			<title code="0x2300000a">OMN2 : 公園にて－２</title>
+			<title code="0x2400000a">OMN2 : 公園にて－３</title>
+			<title code="0x2500000a">OMN2 : 公園にて－４</title>
+			<title code="0x2600000a">OMN2 : 公園にて－５</title>
+			<title code="0x2700000b">OMN3 : 謎の男－１</title>
+			<title code="0x2800000b">OMN3 : 謎の男－２</title>
+			<title code="0x2900000b">OMN3 : 謎の男－３</title>
+			<title code="0x2a00000b">OMN3 : 謎の男－４</title>
+			<title code="0x2b00000b">OMN3 : 謎の男－５</title>
+			<title code="0x2c00000c">PI2  : 宮寺市</title>
+			<title code="0x2d00000d">PIS  : 自宅にて－１</title>
+			<title code="0x2e00000d">PIS  : 自宅にて－２</title>
+			<title code="0x2f00000d">PIS  : 自宅にて－３</title>
+			<title code="0x3000000e">POP1 : 捜査のテーマ</title>
+			<title code="0x3100000f">Sﾀｲｺ : 調査パターンＪ－１</title>
+			<title code="0x3200000f">Sﾀｲｺ : 調査パターンＪ－２</title>
+			<title code="0x3300000f">Sﾀｲｺ : 調査パターンＪ－３</title>
+			<title code="0x34000010">TEL  : 電話</title>
+			<title code="0x35000011">TITL : タイトル</title>
+			<title code="0x36000012">WIN1 : WINGロゴ1</title>
+			<title code="0x37000013">WIN2 : WINGロゴ2</title>
+			<title code="0x38000014">XXX1 : 荒羅心願教パターンＤ－１</title>
+			<title code="0x39000014">XXX1 : 荒羅心願教パターンＤ－２</title>
+			<title code="0x3a000014">XXX1 : 荒羅心願教パターンＤ－３</title>
+			<title code="0x3b000014">XXX1 : 荒羅心願教パターンＤ－４</title>
+			<title code="0x3c000014">XXX1 : 荒羅心願教パターンＤ－５</title>
+			<title code="0x3d000015">ｱﾗﾊ3 : ＡＲＡＨＡＫＩ－１</title>
+			<title code="0x3e000015">ｱﾗﾊ3 : ＡＲＡＨＡＫＩ－２</title>
+			<title code="0x3f000016">ｳﾗﾐ  : 消えた橋－１</title>
+			<title code="0x40000016">ｳﾗﾐ  : 消えた橋－２</title>
+			<title code="0x41000016">ｳﾗﾐ  : 消えた橋－３</title>
+			<title code="0x42000016">ｳﾗﾐ  : 消えた橋－４</title>
+			<title code="0x43000016">ｳﾗﾐ  : 消えた橋－５</title>
+			<title code="0x44000016">ｳﾗﾐ  : 消えた橋－６</title>
+			<title code="0x45000017">ｵｰﾒﾝ : マントの男</title>
+			<title code="0x46000018">ｵﾙｺﾙ : オルゴール－１</title>
+			<title code="0x47000018">ｵﾙｺﾙ : オルゴール－２</title>
+			<title code="0x48000018">ｵﾙｺﾙ : オルゴール－３</title>
+			<title code="0x49000018">ｵﾙｺﾙ : オルゴール－４</title>
+			<title code="0x4a000019">ｵﾜﾘ  : エンディング－１</title>
+			<title code="0x4b00001a">ｶﾈﾋﾄ : 効果音楽－２</title>
+			<title code="0x4c00001b">ｶﾞｷ1 : 餓鬼</title>
+			<title code="0x4d00001c">ｸﾗｲ  : 調査パターンＭ－１</title>
+			<title code="0x4e00001d">ｹﾝｿｳ : 幻想－１</title>
+			<title code="0x4f00001d">ｹﾝｿｳ : 幻想－２</title>
+			<title code="0x5000001d">ｹﾝｿｳ : 幻想－３</title>
+			<title code="0x5100001e">ｻﾌﾞ1 : 調査パターンＬ－１</title>
+			<title code="0x5200001e">ｻﾌﾞ1 : 調査パターンＬ－２</title>
+			<title code="0x5300001e">ｻﾌﾞ1 : 調査パターンＬ－３</title>
+			<title code="0x5400001f">ｻﾌﾞ2 : 調査パターンＥ－１</title>
+			<title code="0x5500001f">ｻﾌﾞ2 : 調査パターンＥ－２</title>
+			<title code="0x5600001f">ｻﾌﾞ2 : 調査パターンＥ－３</title>
+			<title code="0x57000020">ｻﾌﾞ3 : 調査パターンＨ－１</title>
+			<title code="0x58000020">ｻﾌﾞ3 : 調査パターンＨ－１</title>
+			<title code="0x59000021">ｼｽﾞｶ : 調査パターンＫ－１</title>
+			<title code="0x5a000021">ｼｽﾞｶ : 調査パターンＫ－２</title>
+			<title code="0x5b000021">ｼｽﾞｶ : 調査パターンＫ－３</title>
+			<title code="0x5c000022">ｼﾀｰﾙ : 調査パターンＨ－１</title>
+			<title code="0x5d000022">ｼﾀｰﾙ : 調査パターンＨ－２</title>
+			<title code="0x5e000022">ｼﾀｰﾙ : 調査パターンＨ－３</title>
+			<title code="0x5f000022">ｼﾀｰﾙ : 調査パターンＨ－４</title>
+			<title code="0x60000023">ｽﾅｯｸ : スナック－１</title>
+			<title code="0x61000023">ｽﾅｯｸ : スナック－２</title>
+			<title code="0x62000023">ｽﾅｯｸ : スナック－３</title>
+			<title code="0x63000024">ｾﾂﾒｲ : 謎の絵－３</title>
+			<title code="0x64000025">ﾀｲｻ2 : 調査パターンＮ－１</title>
+			<title code="0x65000026">ﾀｲｻﾝ : 調査パターンＮ－２</title>
+			<title code="0x66000027">ﾁﾝｺﾝ : 怨霊出現－１</title>
+			<title code="0x67000027">ﾁﾝｺﾝ : 怨霊出現－２</title>
+			<title code="0x68000027">ﾁﾝｺﾝ : 怨霊出現－３</title>
+			<title code="0x69000027">ﾁﾝｺﾝ : 怨霊出現－４</title>
+			<title code="0x6a000027">ﾁﾝｺﾝ : 怨霊出現－５</title>
+			<title code="0x6b000027">ﾁﾝｺﾝ : 怨霊出現－６</title>
+			<title code="0x6c000027">ﾁﾝｺﾝ : 怨霊出現－７</title>
+			<title code="0x6d000027">ﾁﾝｺﾝ : 怨霊出現－８</title>
+			<title code="0x6e000027">ﾁﾝｺﾝ : 怨霊出現－９</title>
+			<title code="0x6f000027">ﾁﾝｺﾝ : 怨霊出現－１０</title>
+			<title code="0x70000027">ﾁﾝｺﾝ : 怨霊出現－１１</title>
+			<title code="0x71000027">ﾁﾝｺﾝ : 怨霊出現－１２</title>
+			<title code="0x72000027">ﾁﾝｺﾝ : 怨霊出現－１３</title>
+			<title code="0x73000027">ﾁﾝｺﾝ : 怨霊出現－１４</title>
+		<!--	<title code="0x74000027">ﾁﾝｺﾝ : 怨霊出現－１５</title> -->
+			<title code="0x75000028">ﾄｳｸﾂ : 荒羅心願教パターンＣ－１</title>
+			<title code="0x76000028">ﾄｳｸﾂ : 荒羅心願教パターンＣ－２</title>
+			<title code="0x77000028">ﾄｳｸﾂ : 荒羅心願教パターンＣ－３</title>
+			<title code="0x78000029">ﾄｹﾙ1 : 効果音楽－１</title>
+			<title code="0x7900002a">ﾄﾞｲﾂ : 荒羅心願教パターンＡ</title>
+			<title code="0x7a00002b">ﾅｳｼｶ : 荒羅心願教パターンＥ－１</title>
+			<title code="0x7b00002b">ﾅｳｼｶ : 荒羅心願教パターンＥ－２</title>
+			<title code="0x7c00002b">ﾅｳｼｶ : 荒羅心願教パターンＥ－３</title>
+			<title code="0x7d00002c">ﾆﾎﾝ  : 荒羅心願教パターンＢ</title>
+			<title code="0x7e00002d">ﾊｶｲ  : 効果音楽－３</title>
+			<title code="0x7f00002d">ﾊｶｲ  : 効果音楽－４</title>
+			<title code="0x8000002d">ﾊｶｲ  : 効果音楽－５</title>
+			<title code="0x8100002e">ﾊﾟﾙｺ : 霊調査＿ＣＯＭ</title>
+			<title code="0x8200002f">ﾋｶﾘ  : 効果音楽－６</title>
+			<title code="0x83000030">ﾋﾙﾏ1 : 調査パターンＤ－１</title>
+			<title code="0x84000030">ﾋﾙﾏ1 : 調査パターンＤ－２</title>
+			<title code="0x85000031">ﾋﾟｽﾄ : 効果音楽－７</title>
+			<title code="0x86000032">ﾌﾙｲ2 : 調査パターンＧ－１</title>
+			<title code="0x87000032">ﾌﾙｲ2 : 調査パターンＧ－２</title>
+			<title code="0x88000032">ﾌﾙｲ2 : 調査パターンＧ－３</title>
+			<title code="0x89000033">ﾌﾙｲ3 : 調査パターンＩ－１</title>
+			<title code="0x8a000033">ﾌﾙｲ3 : 調査パターンＩ－２</title>
+			<title code="0x8b000033">ﾌﾙｲ3 : 調査パターンＩ－３</title>
+			<title code="0x8c000033">ﾌﾙｲ3 : 調査パターンＩ－４</title>
+			<title code="0x8d000033">ﾌﾙｲ3 : 調査パターンＩ－５</title>
+			<title code="0x8e000034">ﾌﾙｲ4 : 調査パターンＣ－１</title>
+			<title code="0x8f000034">ﾌﾙｲ4 : 調査パターンＣ－２</title>
+			<title code="0x90000034">ﾌﾙｲ4 : 調査パターンＣ－３</title>
+			<title code="0x91000035">ﾌﾙｲｹ : 古池－１</title>
+			<title code="0x92000035">ﾌﾙｲｹ : 古池－２</title>
+			<title code="0x93000035">ﾌﾙｲｹ : 古池－３</title>
+		<!--	<title code="0x94000035">ﾌﾙｲｹ : 古池－４</title> -->
+		<!--	<title code="0x95000035">ﾌﾙｲｹ : 古池－５</title> -->
+			<title code="0x96000036">ﾌﾞｷﾐ : 妖魔－１</title>
+			<title code="0x97000036">ﾌﾞｷﾐ : 妖魔－２</title>
+			<title code="0x98000036">ﾌﾞｷﾐ : 妖魔－３</title>
+			<title code="0x99000036">ﾌﾞｷﾐ : 妖魔－４</title>
+		<!--	<title code="0x9a000036">ﾌﾞｷﾐ : 妖魔－５</title> -->
+			<title code="0x9b000037">ﾖﾙ2  : 調査パターンＦ－１</title>
+			<title code="0x9c000037">ﾖﾙ2  : 調査パターンＦ－２</title>
+			<title code="0x9d000037">ﾖﾙ2  : 調査パターンＦ－３</title>
+			<title code="0x9e000037">ﾖﾙ2  : 調査パターンＦ－４</title>
+			<title code="0x9f000038">ﾚｲ1  : 強力怨霊出現－１</title>
+			<title code="0xa0000038">ﾚｲ1  : 強力怨霊出現－２</title>
+		<!--	<title code="0xa1000038">ﾚｲ1  : 強力怨霊出現－３</title> -->
+			<title code="0xa2000039">ﾚｲﾊ  : 効果音楽－８</title>
+			<title code="0xa300003a">MU3  : 未使用曲</title>
+			<title code="0xa400003b">ｸﾗｲ1 : 未使用曲</title>
+			<title code="0xa500003c">ｲｷﾘｽ : 未使用曲</title>
+			<title code="0xa600003d">ﾀｲｺ1 : 未使用曲</title>
+			<title code="0xa700003e">ﾀｲｺ2 : 未使用曲</title>
+			<title code="0xa800003f">ﾄｹｲ  : 未使用曲</title>
+			<title code="0x000000ff">ADPCM: 00 BASS</title>
+			<title code="0x010000ff">ADPCM: 01 ｽﾈｱ1</title>
+			<title code="0x020000ff">ADPCM: 02 ｼﾓﾝｽ</title>
+			<title code="0x030000ff">ADPCM: 03 ｽﾈｱ2</title>
+			<title code="0x040000ff">ADPCM: 04 ｺﾝｶﾞ</title>
+			<title code="0x050000ff">ADPCM: 05 ｺﾝｶ2</title>
+			<title code="0x060000ff">ADPCM: 06 HCP </title>
+			<title code="0x070000ff">ADPCM: 07 ｽﾈｱ3</title>
+			<title code="0x080000ff">ADPCM: 08 ｼｪｲｸ</title>
+			<title code="0x090000ff">ADPCM: 09 ｽﾈｱ4</title>
+			<title code="0x0a0000ff">ADPCM: 0A HIT </title>
+			<title code="0x0b0000ff">ADPCM: 0B ｽｸﾗﾁ</title>
+			<title code="0x0c0000ff">ADPCM: 0C ｷﾘ  </title>
+			<title code="0x0d0000ff">ADPCM: 0D ﾚｯﾄ </title>
+			<title code="0x0e0000ff">ADPCM: 0E ﾊﾟｳ </title>
+			<title code="0x0f0000ff">ADPCM: 0F ﾁﾘﾘ </title>
+			<title code="0x100000ff">ADPCM: 10 HART</title>
+			<title code="0x110000ff">ADPCM: 11 ｸｼﾞ1</title>
+			<title code="0x120000ff">ADPCM: 12 ｸｼﾞ2</title>
+			<title code="0x130000ff">ADPCM: 13 ｸｼﾞ3</title>
+			<title code="0x140000ff">ADPCM: 14 ｶｴｼ </title>
+			<title code="0x150000ff">ADPCM: 15 ﾚｲｶﾝ</title>
+			<title code="0x160000ff">ADPCM: 16 ﾘｭｳﾝ</title>
+			<title code="0x170000ff">ADPCM: 17 ﾉﾛｲ </title>
+			<title code="0x180000ff">ADPCM: 18 ﾀｽｸﾚ</title>
+			<title code="0x190000ff">ADPCM: 19 ｳｷﾞｬ</title>
+			<title code="0x1a0000ff">ADPCM: 1A ﾀｽｹﾃ</title>
+			<title code="0x1b0000ff">ADPCM: 1B ﾅﾙｶﾐ</title>
+			<title code="0x1c0000ff">ADPCM: 1C ｷﾞｬｰ</title>
+			<title code="0x1d0000ff">ADPCM: 1D ｵｵｶﾐ</title>
+			<title code="0x1e0000ff">ADPCM: 1E ﾜﾊﾊ </title>
+			<title code="0x1f0000ff">ADPCM: 1F ｲﾗｼｲ</title>
+			<title code="0x200000ff">ADPCM: 20 BASS</title>
+			<title code="0x210000ff">ADPCM: 21 HCP</title>
+			<title code="0x220000ff">ADPCM: 22 HCP-</title>
+			<title code="0x230000ff">ADPCM: 23 ｽﾈｱ3</title>
+			<title code="0x240000ff">ADPCM: 24 ｽﾈｱ3</title>
+			<title code="0x250000ff">ADPCM: 25 ｷﾘ</title>
+			<title code="0x260000ff">ADPCM: 26 HART</title>
+			<title code="0x270000ff">ADPCM: 27 ｸｼﾞ1</title>
+			<title code="0x280000ff">ADPCM: 28 ｸｼﾞ1</title>
+			<title code="0x290000ff">ADPCM: 29 ｸｼﾞ1</title>
+			<title code="0x2a0000ff">ADPCM: 2a ｸｼﾞ1</title>
+			<title code="0x2b0000ff">ADPCM: 2b ｸｼﾞ1</title>
+			<title code="0x2c0000ff">ADPCM: 2c ｸｼﾞ2</title>
+			<title code="0x2d0000ff">ADPCM: 2d ｸｼﾞ2</title>
+			<title code="0x2e0000ff">ADPCM: 2e ｸｼﾞ2</title>
+			<title code="0x2f0000ff">ADPCM: 2f ｸｼﾞ2</title>
+			<title code="0x300000ff">ADPCM: 30 ｸｼﾞ2</title>
+			<title code="0x310000ff">ADPCM: 31 ｸｼﾞ2</title>
+			<title code="0x320000ff">ADPCM: 32 ｸｼﾞ2</title>
+			<title code="0x330000ff">ADPCM: 33 ｸｼﾞ3</title>
+			<title code="0x340000ff">ADPCM: 34 ｸｼﾞ3</title>
+			<title code="0x350000ff">ADPCM: 35 ｶｴｼ</title>
+			<title code="0x360000ff">ADPCM: 36 ｶｴｼ</title>
+			<title code="0x370000ff">ADPCM: 37 ｶｴｼ</title>
+			<title code="0x380000ff">ADPCM: 38 ｶｴｼ</title>
+			<title code="0x390000ff">ADPCM: 39 ﾚｲｶﾝ</title>
+			<title code="0x3a0000ff">ADPCM: 3a ﾚｲｶﾝ</title>
+			<title code="0x3b0000ff">ADPCM: 3b ﾚｲｶﾝ</title>
+			<title code="0x3c0000ff">ADPCM: 3c ﾘｭｳﾝ</title>
+			<title code="0x3d0000ff">ADPCM: 3d ﾉﾛｲ</title>
+			<title code="0x3e0000ff">ADPCM: 3e ﾉﾛｲ</title>
+			<title code="0x3f0000ff">ADPCM: 3f ﾉﾛｲ</title>
+			<title code="0x400000ff">ADPCM: 40 ﾉﾛｲ</title>
+			<title code="0x410000ff">ADPCM: 41 ﾉﾛｲ</title>
+			<title code="0x420000ff">ADPCM: 42 ﾉﾛｲ</title>
+			<title code="0x430000ff">ADPCM: 43 ﾉﾛｲ</title>
+			<title code="0x440000ff">ADPCM: 44 ﾉﾛｲ</title>
+			<title code="0x450000ff">ADPCM: 45 ﾉﾛｲ</title>
+			<title code="0x460000ff">ADPCM: 46 ﾉﾛｲ</title>
+			<title code="0x470000ff">ADPCM: 47 ﾉﾛｲ</title>
+			<title code="0x480000ff">ADPCM: 48 ﾉﾛｲ</title>
+			<title code="0x490000ff">ADPCM: 49 ﾉﾛｲ</title>
+			<title code="0x4a0000ff">ADPCM: 4a ﾉﾛｲ</title>
+			<title code="0x4b0000ff">ADPCM: 4b ｳｷﾞｬ</title>
+			<title code="0x4c0000ff">ADPCM: 4c ｳｷﾞｬ</title>
+			<title code="0x4d0000ff">ADPCM: 4d ｳｷﾞｬ</title>
+			<title code="0x4e0000ff">ADPCM: 4e ｳｷﾞｬ</title>
+			<title code="0x4f0000ff">ADPCM: 4f ｳｷﾞｬ</title>
+			<title code="0x500000ff">ADPCM: 50 ｳｷﾞｬ</title>
+			<title code="0x510000ff">ADPCM: 51 ｳｷﾞｬ</title>
+			<title code="0x520000ff">ADPCM: 52 ﾀｽｹﾃ</title>
+			<title code="0x530000ff">ADPCM: 53 ﾀｽｹﾃ</title>
+			<title code="0x540000ff">ADPCM: 54 ﾀｽｹﾃ</title>
+			<title code="0x550000ff">ADPCM: 55 ﾀｽｹﾃ</title>
+			<title code="0x560000ff">ADPCM: 56 ﾅﾙｶﾐ</title>
+			<title code="0x570000ff">ADPCM: 57 ﾅﾙｶﾐ</title>
+			<title code="0x580000ff">ADPCM: 58 ｷﾞｬｰ</title>
+			<title code="0x590000ff">ADPCM: 59 ｷﾞｬｰ</title>
+			<title code="0x5a0000ff">ADPCM: 5a ｷﾞｬｰ</title>
+			<title code="0x5b0000ff">ADPCM: 5b ｷﾞｬｰ</title>
+			<title code="0x5c0000ff">ADPCM: 5c ｷﾞｬｰ</title>
+			<title code="0x5d0000ff">ADPCM: 5d ｷﾞｬｰ</title>
+			<title code="0x5e0000ff">ADPCM: 5e ｷﾞｬｰ</title>
+			<title code="0x5f0000ff">ADPCM: 5f ｷﾞｬｰ</title>
+			<title code="0x600000ff">ADPCM: 60 ｷﾞｬｰ</title>
+			<title code="0x610000ff">ADPCM: 61 ｷﾞｬｰ</title>
+			<title code="0x620000ff">ADPCM: 62 ｷﾞｬｰ</title>
+			<title code="0x630000ff">ADPCM: 63 ｷﾞｬｰ</title>
+			<title code="0x640000ff">ADPCM: 64 ｷﾞｬｰ</title>
+			<title code="0x650000ff">ADPCM: 65 ｷﾞｬｰ</title>
+			<title code="0x660000ff">ADPCM: 66 ｷﾞｬｰ</title>
+			<title code="0x670000ff">ADPCM: 67 ｵｵｶﾐ</title>
+			<title code="0x680000ff">ADPCM: 68 ﾜﾊﾊ </title>
+			<title code="0x690000ff">ADPCM: 69 ﾜﾊﾊ </title>
+			<title code="0x6a0000ff">ADPCM: 6a ﾜﾊﾊ </title>
+			<title code="0x6b0000ff">ADPCM: 6b ﾜﾊﾊ </title>
+			<title code="0x6c0000ff">ADPCM: 6c ﾜﾊﾊ </title>
+			<title code="0x6d0000ff">ADPCM: 6d ﾜﾊﾊ </title>
+			<title code="0x6e0000ff">ADPCM: 6e ｲﾗｼｲ</title>
+			<title code="0x6f0000ff">ADPCM: 6f ｲﾗｼｲ</title>
+			<title code="0x700000ff">ADPCM: 70 ｲﾗｼｲ</title>
+			<title code="0x710000ff">ADPCM: 71 ｲﾗｼｲ</title>
+			<title code="0x720000ff">ADPCM: 72 ﾅｳﾏ1 (未使用)</title>
+			<title code="0x730000ff">ADPCM: 73 ﾅｳﾏ2 (未使用)</title>
+			<title code="0x740000ff">ADPCM: 74 ｻﾝﾏﾝ (未使用)</title>
+			<title code="0x750000ff">ADPCM: 75 ｿﾞｳ  (未使用)</title>
+			<title code="0x760000ff">ADPCM: 76 ｺﾛｲﾃ (未使用)</title>
+		</titlelist>
+	</game>
+	<game>
+		<name>[PC-8801] 怨霊戦記(OPN)</name>
+		<driver type="opn">pc88</driver>
+		<driveralias type="NEC PC-8801">スタジオWING</driveralias>
+		<options>
+			<option name="mdata_num" value="0x40"/>
+		</options>
+		<romlist archive="onryo">
+			<rom type="code" offset="0x0000">PATCH2</rom>
+			<rom type="code" offset="0x6000">N88_3.ROM</rom>
+			<rom type="code" offset="0xdf40">PFRQ</rom>
+			<rom type="code" offset="0xc400">Y230</rom>
+			<rom type="code" offset="0xf800">VDAT</rom>
+			<rom type="bgm" offset="0x00">ARH1</rom>
+			<rom type="bgm" offset="0x01">MRA1</rom>
+			<rom type="bgm" offset="0x02">MRA2</rom>
+			<rom type="bgm" offset="0x03">MU0</rom>
+			<rom type="bgm" offset="0x04">MU1</rom>
+			<rom type="bgm" offset="0x05">MU10</rom>
+			<rom type="bgm" offset="0x06">MU2</rom>
+			<rom type="bgm" offset="0x07">MU8</rom>
+			<rom type="bgm" offset="0x08">MU9</rom>
+			<rom type="bgm" offset="0x09">NEW2</rom>
+			<rom type="bgm" offset="0x0a">OMN2</rom>
+			<rom type="bgm" offset="0x0b">OMN3</rom>
+			<rom type="bgm" offset="0x0c">PI2</rom>
+			<rom type="bgm" offset="0x0d">PIS</rom>
+			<rom type="bgm" offset="0x0e">POP1</rom>
+			<rom type="bgm" offset="0x0f">Sﾀｲｺ</rom>
+			<rom type="bgm" offset="0x10">TEL</rom>
+			<rom type="bgm" offset="0x11">TITL</rom>
+			<rom type="bgm" offset="0x12">WIN1</rom>
+			<rom type="bgm" offset="0x13">WIN2</rom>
+			<rom type="bgm" offset="0x14">XXX1</rom>
+			<rom type="bgm" offset="0x15">ｱﾗﾊ3</rom>
+			<rom type="bgm" offset="0x16">ｳﾗﾐ</rom>
+			<rom type="bgm" offset="0x17">ｵｰﾒﾝ</rom>
+			<rom type="bgm" offset="0x18">ｵﾙｺﾙ</rom>
+			<rom type="bgm" offset="0x19">ｵﾜﾘ</rom>
+			<rom type="bgm" offset="0x1a">ｶﾈﾋﾄ</rom>
+			<rom type="bgm" offset="0x1b">ｶﾞｷ1</rom>
+			<rom type="bgm" offset="0x1c">ｸﾗｲ</rom>
+			<rom type="bgm" offset="0x1d">ｹﾝｿｳ</rom>
+			<rom type="bgm" offset="0x1e">ｻﾌﾞ1</rom>
+			<rom type="bgm" offset="0x1f">ｻﾌﾞ2</rom>
+			<rom type="bgm" offset="0x20">ｻﾌﾞ3</rom>
+			<rom type="bgm" offset="0x21">ｼｽﾞｶ</rom>
+			<rom type="bgm" offset="0x22">ｼﾀｰﾙ</rom>
+			<rom type="bgm" offset="0x23">ｽﾅｯｸ</rom>
+			<rom type="bgm" offset="0x24">ｾﾂﾒｲ</rom>
+			<rom type="bgm" offset="0x25">ﾀｲｻ2</rom>
+			<rom type="bgm" offset="0x26">ﾀｲｻﾝ</rom>
+			<rom type="bgm" offset="0x27">ﾁﾝｺﾝ</rom>
+			<rom type="bgm" offset="0x28">ﾄｳｸﾂ</rom>
+			<rom type="bgm" offset="0x29">ﾄｹﾙ1</rom>
+			<rom type="bgm" offset="0x2a">ﾄﾞｲﾂ</rom>
+			<rom type="bgm" offset="0x2b">ﾅｳｼｶ</rom>
+			<rom type="bgm" offset="0x2c">ﾆﾎﾝ</rom>
+			<rom type="bgm" offset="0x2d">ﾊｶｲ</rom>
+			<rom type="bgm" offset="0x2e">ﾊﾟﾙｺ</rom>
+			<rom type="bgm" offset="0x2f">ﾋｶﾘ</rom>
+			<rom type="bgm" offset="0x30">ﾋﾙﾏ1</rom>
+			<rom type="bgm" offset="0x31">ﾋﾟｽﾄ</rom>
+			<rom type="bgm" offset="0x32">ﾌﾙｲ2</rom>
+			<rom type="bgm" offset="0x33">ﾌﾙｲ3</rom>
+			<rom type="bgm" offset="0x34">ﾌﾙｲ4</rom>
+			<rom type="bgm" offset="0x35">ﾌﾙｲｹ</rom>
+			<rom type="bgm" offset="0x36">ﾌﾞｷﾐ</rom>
+			<rom type="bgm" offset="0x37">ﾖﾙ2</rom>
+			<rom type="bgm" offset="0x38">ﾚｲ1</rom>
+			<rom type="bgm" offset="0x39">ﾚｲﾊ</rom>
+			<rom type="bgm" offset="0x3a">MU3</rom>
+			<rom type="bgm" offset="0x3b">ｸﾗｲ1</rom>
+			<rom type="bgm" offset="0x3c">ｲｷﾘｽ</rom>
+			<rom type="bgm" offset="0x3d">ﾀｲｺ1</rom>
+			<rom type="bgm" offset="0x3e">ﾀｲｺ2</rom>
+			<rom type="bgm" offset="0x3f">ﾄｹｲ</rom>
+		</romlist>
+		<titlelist>
+			<title code="0x00000000">ARH1 : 荒吐神社－１</title>
+			<title code="0x01000000">ARH1 : 荒吐神社－２</title>
+			<title code="0x02000000">ARH1 : 荒吐神社－３</title>
+			<title code="0x03000000">ARH1 : 荒吐神社－４</title>
+			<title code="0x04000000">ARH1 : 荒吐神社－５</title>
+			<title code="0x05000001">MRA1 : 中村市会議員</title>
+			<title code="0x06000002">MRA2 : 村上刑事－１</title>
+			<title code="0x07000002">MRA2 : 村上刑事－２</title>
+			<title code="0x08000003">MU0  : 事件発生－１</title>
+			<title code="0x09000003">MU0  : 事件発生－２</title>
+			<title code="0x0a000003">MU0  : 事件発生－３</title>
+			<title code="0x0b000003">MU0  : 事件発生－４</title>
+			<title code="0x0c000003">MU0  : 事件発生－５</title>
+			<title code="0x0d000003">MU0  : 事件発生－６</title>
+			<title code="0x0e000003">MU0  : 事件発生－７</title>
+			<title code="0x0f000004">MU1  : 最終決戦</title>
+			<title code="0x10000005">MU10 : 悲鳴</title>
+			<title code="0x11000006">MU2  : 調査パターンＡ－１</title>
+			<title code="0x12000006">MU2  : 調査パターンＡ－２</title>
+			<title code="0x13000006">MU2  : 調査パターンＡ－３</title>
+			<title code="0x14000006">MU2  : 調査パターンＡ－４</title>
+			<title code="0x15000006">MU2  : 調査パターンＡ－５</title>
+			<title code="0x16000006">MU2  : 調査パターンＡ－６</title>
+			<title code="0x17000006">MU2  : 調査パターンＡ－７</title>
+			<title code="0x18000006">MU2  : 調査パターンＡ－８</title>
+			<title code="0x19000007">MU8  : 謎の絵－１</title>
+		<!--	<title code="0x1a000007">MU8  : 謎の絵－２</title> -->
+			<title code="0x1b000008">MU9  : 調査パターンＢ</title>
+			<title code="0x1c000009">NEW2 : 荒吐一族－１</title>
+			<title code="0x1d000009">NEW2 : 荒吐一族－２</title>
+			<title code="0x1e000009">NEW2 : 荒吐一族－３</title>
+			<title code="0x1f000009">NEW2 : 荒吐一族－４</title>
+			<title code="0x20000009">NEW2 : 荒吐一族－５</title>
+			<title code="0x21000009">NEW2 : 荒吐一族－６</title>
+			<title code="0x2200000a">OMN2 : 公園にて－１</title>
+			<title code="0x2300000a">OMN2 : 公園にて－２</title>
+			<title code="0x2400000a">OMN2 : 公園にて－３</title>
+			<title code="0x2500000a">OMN2 : 公園にて－４</title>
+			<title code="0x2600000a">OMN2 : 公園にて－５</title>
+			<title code="0x2700000b">OMN3 : 謎の男－１</title>
+			<title code="0x2800000b">OMN3 : 謎の男－２</title>
+			<title code="0x2900000b">OMN3 : 謎の男－３</title>
+			<title code="0x2a00000b">OMN3 : 謎の男－４</title>
+			<title code="0x2b00000b">OMN3 : 謎の男－５</title>
+			<title code="0x2c00000c">PI2  : 宮寺市</title>
+			<title code="0x2d00000d">PIS  : 自宅にて－１</title>
+			<title code="0x2e00000d">PIS  : 自宅にて－２</title>
+			<title code="0x2f00000d">PIS  : 自宅にて－３</title>
+			<title code="0x3000000e">POP1 : 捜査のテーマ</title>
+			<title code="0x3100000f">Sﾀｲｺ : 調査パターンＪ－１</title>
+			<title code="0x3200000f">Sﾀｲｺ : 調査パターンＪ－２</title>
+			<title code="0x3300000f">Sﾀｲｺ : 調査パターンＪ－３</title>
+			<title code="0x34000010">TEL  : 電話</title>
+			<title code="0x35000011">TITL : タイトル</title>
+			<title code="0x36000012">WIN1 : WINGロゴ1</title>
+			<title code="0x37000013">WIN2 : WINGロゴ2</title>
+			<title code="0x38000014">XXX1 : 荒羅心願教パターンＤ－１</title>
+			<title code="0x39000014">XXX1 : 荒羅心願教パターンＤ－２</title>
+			<title code="0x3a000014">XXX1 : 荒羅心願教パターンＤ－３</title>
+			<title code="0x3b000014">XXX1 : 荒羅心願教パターンＤ－４</title>
+			<title code="0x3c000014">XXX1 : 荒羅心願教パターンＤ－５</title>
+			<title code="0x3d000015">ｱﾗﾊ3 : ＡＲＡＨＡＫＩ－１</title>
+			<title code="0x3e000015">ｱﾗﾊ3 : ＡＲＡＨＡＫＩ－２</title>
+			<title code="0x3f000016">ｳﾗﾐ  : 消えた橋－１</title>
+			<title code="0x40000016">ｳﾗﾐ  : 消えた橋－２</title>
+			<title code="0x41000016">ｳﾗﾐ  : 消えた橋－３</title>
+			<title code="0x42000016">ｳﾗﾐ  : 消えた橋－４</title>
+			<title code="0x43000016">ｳﾗﾐ  : 消えた橋－５</title>
+			<title code="0x44000016">ｳﾗﾐ  : 消えた橋－６</title>
+			<title code="0x45000017">ｵｰﾒﾝ : マントの男</title>
+			<title code="0x46000018">ｵﾙｺﾙ : オルゴール－１</title>
+			<title code="0x47000018">ｵﾙｺﾙ : オルゴール－２</title>
+			<title code="0x48000018">ｵﾙｺﾙ : オルゴール－３</title>
+			<title code="0x49000018">ｵﾙｺﾙ : オルゴール－４</title>
+			<title code="0x4a000019">ｵﾜﾘ  : エンディング－１</title>
+			<title code="0x4b00001a">ｶﾈﾋﾄ : 効果音楽－２</title>
+			<title code="0x4c00001b">ｶﾞｷ1 : 餓鬼</title>
+			<title code="0x4d00001c">ｸﾗｲ  : 調査パターンＭ－１</title>
+			<title code="0x4e00001d">ｹﾝｿｳ : 幻想－１</title>
+			<title code="0x4f00001d">ｹﾝｿｳ : 幻想－２</title>
+			<title code="0x5000001d">ｹﾝｿｳ : 幻想－３</title>
+			<title code="0x5100001e">ｻﾌﾞ1 : 調査パターンＬ－１</title>
+			<title code="0x5200001e">ｻﾌﾞ1 : 調査パターンＬ－２</title>
+			<title code="0x5300001e">ｻﾌﾞ1 : 調査パターンＬ－３</title>
+			<title code="0x5400001f">ｻﾌﾞ2 : 調査パターンＥ－１</title>
+			<title code="0x5500001f">ｻﾌﾞ2 : 調査パターンＥ－２</title>
+			<title code="0x5600001f">ｻﾌﾞ2 : 調査パターンＥ－３</title>
+			<title code="0x57000020">ｻﾌﾞ3 : 調査パターンＨ－１</title>
+			<title code="0x58000020">ｻﾌﾞ3 : 調査パターンＨ－１</title>
+			<title code="0x59000021">ｼｽﾞｶ : 調査パターンＫ－１</title>
+			<title code="0x5a000021">ｼｽﾞｶ : 調査パターンＫ－２</title>
+			<title code="0x5b000021">ｼｽﾞｶ : 調査パターンＫ－３</title>
+			<title code="0x5c000022">ｼﾀｰﾙ : 調査パターンＨ－１</title>
+			<title code="0x5d000022">ｼﾀｰﾙ : 調査パターンＨ－２</title>
+			<title code="0x5e000022">ｼﾀｰﾙ : 調査パターンＨ－３</title>
+			<title code="0x5f000022">ｼﾀｰﾙ : 調査パターンＨ－４</title>
+			<title code="0x60000023">ｽﾅｯｸ : スナック－１</title>
+			<title code="0x61000023">ｽﾅｯｸ : スナック－２</title>
+			<title code="0x62000023">ｽﾅｯｸ : スナック－３</title>
+			<title code="0x63000024">ｾﾂﾒｲ : 謎の絵－３</title>
+			<title code="0x64000025">ﾀｲｻ2 : 調査パターンＮ－１</title>
+			<title code="0x65000026">ﾀｲｻﾝ : 調査パターンＮ－２</title>
+			<title code="0x66000027">ﾁﾝｺﾝ : 怨霊出現－１</title>
+			<title code="0x67000027">ﾁﾝｺﾝ : 怨霊出現－２</title>
+			<title code="0x68000027">ﾁﾝｺﾝ : 怨霊出現－３</title>
+			<title code="0x69000027">ﾁﾝｺﾝ : 怨霊出現－４</title>
+			<title code="0x6a000027">ﾁﾝｺﾝ : 怨霊出現－５</title>
+			<title code="0x6b000027">ﾁﾝｺﾝ : 怨霊出現－６</title>
+			<title code="0x6c000027">ﾁﾝｺﾝ : 怨霊出現－７</title>
+			<title code="0x6d000027">ﾁﾝｺﾝ : 怨霊出現－８</title>
+			<title code="0x6e000027">ﾁﾝｺﾝ : 怨霊出現－９</title>
+			<title code="0x6f000027">ﾁﾝｺﾝ : 怨霊出現－１０</title>
+			<title code="0x70000027">ﾁﾝｺﾝ : 怨霊出現－１１</title>
+			<title code="0x71000027">ﾁﾝｺﾝ : 怨霊出現－１２</title>
+			<title code="0x72000027">ﾁﾝｺﾝ : 怨霊出現－１３</title>
+			<title code="0x73000027">ﾁﾝｺﾝ : 怨霊出現－１４</title>
+		<!--	<title code="0x74000027">ﾁﾝｺﾝ : 怨霊出現－１５</title> -->
+			<title code="0x75000028">ﾄｳｸﾂ : 荒羅心願教パターンＣ－１</title>
+			<title code="0x76000028">ﾄｳｸﾂ : 荒羅心願教パターンＣ－２</title>
+			<title code="0x77000028">ﾄｳｸﾂ : 荒羅心願教パターンＣ－３</title>
+			<title code="0x78000029">ﾄｹﾙ1 : 効果音楽－１</title>
+			<title code="0x7900002a">ﾄﾞｲﾂ : 荒羅心願教パターンＡ</title>
+			<title code="0x7a00002b">ﾅｳｼｶ : 荒羅心願教パターンＥ－１</title>
+			<title code="0x7b00002b">ﾅｳｼｶ : 荒羅心願教パターンＥ－２</title>
+			<title code="0x7c00002b">ﾅｳｼｶ : 荒羅心願教パターンＥ－３</title>
+			<title code="0x7d00002c">ﾆﾎﾝ  : 荒羅心願教パターンＢ</title>
+			<title code="0x7e00002d">ﾊｶｲ  : 効果音楽－３</title>
+			<title code="0x7f00002d">ﾊｶｲ  : 効果音楽－４</title>
+			<title code="0x8000002d">ﾊｶｲ  : 効果音楽－５</title>
+			<title code="0x8100002e">ﾊﾟﾙｺ : 霊調査＿ＣＯＭ</title>
+			<title code="0x8200002f">ﾋｶﾘ  : 効果音楽－６</title>
+			<title code="0x83000030">ﾋﾙﾏ1 : 調査パターンＤ－１</title>
+			<title code="0x84000030">ﾋﾙﾏ1 : 調査パターンＤ－２</title>
+			<title code="0x85000031">ﾋﾟｽﾄ : 効果音楽－７</title>
+			<title code="0x86000032">ﾌﾙｲ2 : 調査パターンＧ－１</title>
+			<title code="0x87000032">ﾌﾙｲ2 : 調査パターンＧ－２</title>
+			<title code="0x88000032">ﾌﾙｲ2 : 調査パターンＧ－３</title>
+			<title code="0x89000033">ﾌﾙｲ3 : 調査パターンＩ－１</title>
+			<title code="0x8a000033">ﾌﾙｲ3 : 調査パターンＩ－２</title>
+			<title code="0x8b000033">ﾌﾙｲ3 : 調査パターンＩ－３</title>
+			<title code="0x8c000033">ﾌﾙｲ3 : 調査パターンＩ－４</title>
+			<title code="0x8d000033">ﾌﾙｲ3 : 調査パターンＩ－５</title>
+			<title code="0x8e000034">ﾌﾙｲ4 : 調査パターンＣ－１</title>
+			<title code="0x8f000034">ﾌﾙｲ4 : 調査パターンＣ－２</title>
+			<title code="0x90000034">ﾌﾙｲ4 : 調査パターンＣ－３</title>
+			<title code="0x91000035">ﾌﾙｲｹ : 古池－１</title>
+			<title code="0x92000035">ﾌﾙｲｹ : 古池－２</title>
+			<title code="0x93000035">ﾌﾙｲｹ : 古池－３</title>
+		<!--	<title code="0x94000035">ﾌﾙｲｹ : 古池－４</title> -->
+		<!--	<title code="0x95000035">ﾌﾙｲｹ : 古池－５</title> -->
+			<title code="0x96000036">ﾌﾞｷﾐ : 妖魔－１</title>
+			<title code="0x97000036">ﾌﾞｷﾐ : 妖魔－２</title>
+			<title code="0x98000036">ﾌﾞｷﾐ : 妖魔－３</title>
+			<title code="0x99000036">ﾌﾞｷﾐ : 妖魔－４</title>
+		<!--	<title code="0x9a000036">ﾌﾞｷﾐ : 妖魔－５</title> -->
+			<title code="0x9b000037">ﾖﾙ2  : 調査パターンＦ－１</title>
+			<title code="0x9c000037">ﾖﾙ2  : 調査パターンＦ－２</title>
+			<title code="0x9d000037">ﾖﾙ2  : 調査パターンＦ－３</title>
+			<title code="0x9e000037">ﾖﾙ2  : 調査パターンＦ－４</title>
+			<title code="0x9f000038">ﾚｲ1  : 強力怨霊出現－１</title>
+			<title code="0xa0000038">ﾚｲ1  : 強力怨霊出現－２</title>
+		<!--	<title code="0xa1000038">ﾚｲ1  : 強力怨霊出現－３</title> -->
+			<title code="0xa2000039">ﾚｲﾊ  : 効果音楽－８</title>
+			<title code="0xa300003a">MU3  : 未使用曲</title>
+			<title code="0xa400003b">ｸﾗｲ1 : 未使用曲</title>
+			<title code="0xa500003c">ｲｷﾘｽ : 未使用曲</title>
+			<title code="0xa600003d">ﾀｲｺ1 : 未使用曲</title>
+			<title code="0xa700003e">ﾀｲｺ2 : 未使用曲</title>
+			<title code="0xa800003f">ﾄｹｲ  : 未使用曲</title>
+		</titlelist>
+	</game>
+</gamelist>

@@ -1,0 +1,1831 @@
+{
+  "format": "hoot-catalog-shard",
+  "version": 1,
+  "source_file": "xml/softec.xml",
+  "date": "2005/09/25",
+  "comments": [
+    " //日本ソフテック "
+  ],
+  "games": [
+    {
+      "title": "[X68000] eXOn(OPM)",
+      "driver": {
+        "name": "x68k",
+        "type": "generic",
+        "alias": "日本ソフテック",
+        "platform": "SHARP X68000"
+      },
+      "options": [
+        {
+          "name": "mfp",
+          "value": "0x01"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "exon68snd.bin"
+        },
+        {
+          "type": "x",
+          "path": "OPMDRV2.X",
+          "offset": "0x10000"
+        },
+        {
+          "type": "x",
+          "path": "exong.x",
+          "offset": "0x30000"
+        },
+        {
+          "type": "x",
+          "path": "exmenu.x",
+          "offset": "0x50000"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x02",
+          "title": "exmenu.x : タイトル"
+        },
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "exong.x  : ゲーム"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/softec.xml",
+      "source_order": 4130,
+      "archive": "exon68snd",
+      "id": "exon68snd-generic"
+    },
+    {
+      "title": "[X68000] eXOn(MT-32)",
+      "driver": {
+        "name": "x68k",
+        "type": "generic",
+        "alias": "日本ソフテック",
+        "platform": "SHARP X68000"
+      },
+      "options": [
+        {
+          "name": "mfp",
+          "value": "0x01"
+        },
+        {
+          "name": "midiout",
+          "value": "1"
+        },
+        {
+          "name": "midiout_type",
+          "value": "2"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "exon68mid.bin"
+        },
+        {
+          "type": "x",
+          "path": "OPMDRV2.X",
+          "offset": "0x10000"
+        },
+        {
+          "type": "x",
+          "path": "exong.x",
+          "offset": "0x30000"
+        },
+        {
+          "type": "x",
+          "path": "exmenu.x",
+          "offset": "0x50000"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x02",
+          "title": "exmenu.x : タイトル"
+        },
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "exong.x  : ゲーム"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/softec.xml",
+      "source_order": 4131,
+      "archive": "exon68snd",
+      "id": "exon68snd-generic-2"
+    },
+    {
+      "title": "[X68000] eXOn(MT-32 Emulation)",
+      "driver": {
+        "name": "x68k",
+        "type": "generic",
+        "alias": "日本ソフテック",
+        "platform": "SHARP X68000"
+      },
+      "options": [
+        {
+          "name": "mfp",
+          "value": "0x01"
+        },
+        {
+          "name": "midiout",
+          "value": "1"
+        },
+        {
+          "name": "midiout_type",
+          "value": "1"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "exon68mid.bin"
+        },
+        {
+          "type": "x",
+          "path": "OPMDRV2.X",
+          "offset": "0x10000"
+        },
+        {
+          "type": "x",
+          "path": "exong.x",
+          "offset": "0x30000"
+        },
+        {
+          "type": "x",
+          "path": "exmenu.x",
+          "offset": "0x50000"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x02",
+          "title": "exmenu.x : タイトル"
+        },
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "exong.x  : ゲーム"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/softec.xml",
+      "source_order": 4132,
+      "archive": "exon68snd",
+      "id": "exon68snd-generic-3"
+    },
+    {
+      "title": "[X68000] LUCY SHOT",
+      "driver": {
+        "name": "x68k",
+        "type": "generic",
+        "alias": "日本ソフテック",
+        "platform": "SHARP X68000"
+      },
+      "options": [],
+      "assets": [
+        {
+          "type": "code",
+          "path": "lucy68snd.bin"
+        },
+        {
+          "type": "x",
+          "path": "OPMDRV.X",
+          "offset": "0x010000"
+        },
+        {
+          "type": "x",
+          "path": "PINSP.X",
+          "offset": "0x030000"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "range",
+          "min": "0x001",
+          "max": "0x009",
+          "title_format": "BGM 0x%02x",
+          "extcode": "1"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/softec.xml",
+      "source_order": 4133,
+      "archive": "lucyshot68snd",
+      "id": "lucyshot68snd-generic"
+    },
+    {
+      "title": "[PC-9801] テニス・テニス",
+      "driver": {
+        "name": "pc98dos",
+        "type": "opn",
+        "alias": "日本ソフテック",
+        "platform": "NEC PC-9801"
+      },
+      "options": [],
+      "assets": [
+        {
+          "type": "file",
+          "path": "tennis.com",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "T.EXE",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "FM_TONE.SND",
+          "offset": "0x05"
+        },
+        {
+          "type": "shell",
+          "path": "tennis",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x01f8",
+          "title": "00 : (無音)"
+        },
+        {
+          "kind": "title",
+          "code": "0x020a",
+          "title": "01 : BGM 1"
+        },
+        {
+          "kind": "title",
+          "code": "0x021c",
+          "title": "02 : BGM 2"
+        },
+        {
+          "kind": "title",
+          "code": "0x022e",
+          "title": "03 : BGM 3"
+        },
+        {
+          "kind": "title",
+          "code": "0x0240",
+          "title": "04 : BGM 4"
+        },
+        {
+          "kind": "title",
+          "code": "0x0252",
+          "title": "05 : BGM 5"
+        },
+        {
+          "kind": "title",
+          "code": "0x0264",
+          "title": "06 : BGM 6"
+        },
+        {
+          "kind": "title",
+          "code": "0x0276",
+          "title": "07 : BGM 7"
+        },
+        {
+          "kind": "title",
+          "code": "0xffff",
+          "title": ": FADE OUT"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/softec.xml",
+      "source_order": 4134,
+      "archive": "tennis98",
+      "id": "tennis98-opn"
+    },
+    {
+      "title": "[PC-9801] めざせ！トッププレイヤー テニス・テニス2",
+      "driver": {
+        "name": "pc98dos",
+        "type": "opn",
+        "alias": "日本ソフテック",
+        "platform": "NEC PC-9801"
+      },
+      "options": [],
+      "assets": [
+        {
+          "type": "file",
+          "path": "tennis2.com",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "T.EXE",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "FM_TONE.SND",
+          "offset": "0x05"
+        },
+        {
+          "type": "shell",
+          "path": "tennis2",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x00",
+          "title": "BGM 01 (効果音)"
+        },
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "BGM 02 (無音)"
+        },
+        {
+          "kind": "title",
+          "code": "0x02",
+          "title": "BGM 03"
+        },
+        {
+          "kind": "title",
+          "code": "0x03",
+          "title": "BGM 04"
+        },
+        {
+          "kind": "title",
+          "code": "0x04",
+          "title": "BGM 05"
+        },
+        {
+          "kind": "title",
+          "code": "0x05",
+          "title": "BGM 06"
+        },
+        {
+          "kind": "title",
+          "code": "0x06",
+          "title": "BGM 07"
+        },
+        {
+          "kind": "title",
+          "code": "0x07",
+          "title": "BGM 08"
+        },
+        {
+          "kind": "title",
+          "code": "0x08",
+          "title": "BGM 09"
+        },
+        {
+          "kind": "title",
+          "code": "0x09",
+          "title": "BGM 10"
+        },
+        {
+          "kind": "title",
+          "code": "0x0a",
+          "title": "BGM 11"
+        },
+        {
+          "kind": "title",
+          "code": "0x0b",
+          "title": "BGM 12"
+        },
+        {
+          "kind": "title",
+          "code": "0x0c",
+          "title": "BGM 13"
+        },
+        {
+          "kind": "title",
+          "code": "0xff",
+          "title": "FADE OUT"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/softec.xml",
+      "source_order": 4135,
+      "archive": "tennis2_98",
+      "id": "tennis2-98-opn"
+    },
+    {
+      "title": "[PC-9801] 義経",
+      "driver": {
+        "name": "pc98dos",
+        "type": "opn",
+        "alias": "日本ソフテック",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "dummysndrom",
+          "value": "1"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "yositune.com",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "ADV.EXE",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "DEM.EXE",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "SIM.EXE",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "FM_TONE.SND",
+          "offset": "0x05"
+        },
+        {
+          "type": "shell",
+          "path": "yositune",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x01f100",
+          "title": "DEM.EXE : BGM 01"
+        },
+        {
+          "kind": "title",
+          "code": "0x020300",
+          "title": "DEM.EXE : BGM 02"
+        },
+        {
+          "kind": "title",
+          "code": "0x01F101",
+          "title": "ADV.EXE : BGM 01"
+        },
+        {
+          "kind": "title",
+          "code": "0x020301",
+          "title": "ADV.EXE : BGM 02"
+        },
+        {
+          "kind": "title",
+          "code": "0x021501",
+          "title": "ADV.EXE : BGM 03"
+        },
+        {
+          "kind": "title",
+          "code": "0x022701",
+          "title": "ADV.EXE : BGM 04"
+        },
+        {
+          "kind": "title",
+          "code": "0x023901",
+          "title": "ADV.EXE : BGM 05"
+        },
+        {
+          "kind": "title",
+          "code": "0x024B01",
+          "title": "ADV.EXE : BGM 06"
+        },
+        {
+          "kind": "title",
+          "code": "0x025D01",
+          "title": "ADV.EXE : BGM 07"
+        },
+        {
+          "kind": "title",
+          "code": "0x026F01",
+          "title": "ADV.EXE : BGM 08"
+        },
+        {
+          "kind": "title",
+          "code": "0x028101",
+          "title": "ADV.EXE : BGM 09"
+        },
+        {
+          "kind": "title",
+          "code": "0x029301",
+          "title": "ADV.EXE : BGM 10"
+        },
+        {
+          "kind": "title",
+          "code": "0x02A501",
+          "title": "ADV.EXE : BGM 11"
+        },
+        {
+          "kind": "title",
+          "code": "0x02B701",
+          "title": "ADV.EXE : BGM 12"
+        },
+        {
+          "kind": "title",
+          "code": "0x01f102",
+          "title": "SIM.EXE : BGM 01"
+        },
+        {
+          "kind": "title",
+          "code": "0x020302",
+          "title": "SIM.EXE : BGM 02"
+        },
+        {
+          "kind": "title",
+          "code": "0x021502",
+          "title": "SIM.EXE : BGM 03"
+        },
+        {
+          "kind": "title",
+          "code": "0x022702",
+          "title": "SIM.EXE : BGM 04"
+        },
+        {
+          "kind": "title",
+          "code": "0x0000ff",
+          "title": "FADE OUT"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/softec.xml",
+      "source_order": 4136,
+      "archive": "yositune98",
+      "id": "yositune98-opn"
+    },
+    {
+      "title": "[PC-9801] 雀風",
+      "driver": {
+        "name": "pc98dos",
+        "type": "opn",
+        "alias": "日本ソフテック",
+        "platform": "NEC PC-9801"
+      },
+      "options": [],
+      "assets": [
+        {
+          "type": "file",
+          "path": "janpu.com",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "J.EXE",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "FM_TONE.SND",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "OPNDRV.SYS",
+          "offset": "-1"
+        },
+        {
+          "type": "device",
+          "path": "opndrv.sys",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "janpu",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x010000",
+          "title": "BGM 01"
+        },
+        {
+          "kind": "title",
+          "code": "0x020000",
+          "title": "BGM 02"
+        },
+        {
+          "kind": "title",
+          "code": "0x030000",
+          "title": "BGM 03"
+        },
+        {
+          "kind": "title",
+          "code": "0x040000",
+          "title": "BGM 04"
+        },
+        {
+          "kind": "title",
+          "code": "0x050000",
+          "title": "BGM 05"
+        },
+        {
+          "kind": "title",
+          "code": "0x060000",
+          "title": "(無音)"
+        },
+        {
+          "kind": "title",
+          "code": "0x00fffe",
+          "title": "EFFECT 00"
+        },
+        {
+          "kind": "title",
+          "code": "0x01fffe",
+          "title": "EFFECT 01"
+        },
+        {
+          "kind": "title",
+          "code": "0x02fffe",
+          "title": "EFFECT 02"
+        },
+        {
+          "kind": "title",
+          "code": "0x03fffe",
+          "title": "EFFECT 03"
+        },
+        {
+          "kind": "title",
+          "code": "0x04fffe",
+          "title": "EFFECT 04"
+        },
+        {
+          "kind": "title",
+          "code": "0x05fffe",
+          "title": "EFFECT 05"
+        },
+        {
+          "kind": "title",
+          "code": "0x06fffe",
+          "title": "EFFECT 06"
+        },
+        {
+          "kind": "title",
+          "code": "0x07fffe",
+          "title": "EFFECT 07"
+        },
+        {
+          "kind": "title",
+          "code": "0x08fffe",
+          "title": "EFFECT 08"
+        },
+        {
+          "kind": "title",
+          "code": "0x09fffe",
+          "title": "EFFECT 09"
+        },
+        {
+          "kind": "title",
+          "code": "0x0afffe",
+          "title": "EFFECT 0A"
+        },
+        {
+          "kind": "title",
+          "code": "0x0bfffe",
+          "title": "EFFECT 0B"
+        },
+        {
+          "kind": "title",
+          "code": "0x0cfffe",
+          "title": "EFFECT 0C"
+        },
+        {
+          "kind": "title",
+          "code": "0x0dfffe",
+          "title": "EFFECT 0D"
+        },
+        {
+          "kind": "title",
+          "code": "0x0efffe",
+          "title": "EFFECT 0E"
+        },
+        {
+          "kind": "title",
+          "code": "0x0ffffe",
+          "title": "EFFECT 0F"
+        },
+        {
+          "kind": "title",
+          "code": "0x10fffe",
+          "title": "EFFECT 10"
+        },
+        {
+          "kind": "title",
+          "code": "0x11fffe",
+          "title": "EFFECT 11"
+        },
+        {
+          "kind": "title",
+          "code": "0x12fffe",
+          "title": "EFFECT 12"
+        },
+        {
+          "kind": "title",
+          "code": "0x13fffe",
+          "title": "EFFECT 13"
+        },
+        {
+          "kind": "title",
+          "code": "0x14fffe",
+          "title": "EFFECT 14"
+        },
+        {
+          "kind": "comment",
+          "text": "\t<title code=\"0x15fffe\">EFFECT 15</title> "
+        },
+        {
+          "kind": "comment",
+          "text": "\t<title code=\"0x16fffe\">EFFECT 16</title> "
+        },
+        {
+          "kind": "title",
+          "code": "0x17fffe",
+          "title": "EFFECT 17"
+        },
+        {
+          "kind": "comment",
+          "text": "\t<title code=\"0x18fffe\">EFFECT 18</title> "
+        },
+        {
+          "kind": "title",
+          "code": "0x00ffff",
+          "title": "FADE OUT"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/softec.xml",
+      "source_order": 4137,
+      "archive": "janpu_98",
+      "id": "janpu-98-opn"
+    },
+    {
+      "title": "[PC-9801] 98スタジアム",
+      "driver": {
+        "name": "pc98dos",
+        "type": "opn",
+        "alias": "日本ソフテック",
+        "platform": "NEC PC-9801"
+      },
+      "options": [],
+      "assets": [
+        {
+          "type": "file",
+          "path": "98stdium.com",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "BAS.EXE",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "FM_TONE.SND",
+          "offset": "0x05"
+        },
+        {
+          "type": "shell",
+          "path": "98stdium",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x0000",
+          "title": "BGM 00"
+        },
+        {
+          "kind": "title",
+          "code": "0x0001",
+          "title": "BGM 01"
+        },
+        {
+          "kind": "title",
+          "code": "0x0002",
+          "title": "BGM 02"
+        },
+        {
+          "kind": "title",
+          "code": "0x0003",
+          "title": "BGM 03"
+        },
+        {
+          "kind": "title",
+          "code": "0x0004",
+          "title": "BGM 04"
+        },
+        {
+          "kind": "title",
+          "code": "0x0005",
+          "title": "BGM 05"
+        },
+        {
+          "kind": "title",
+          "code": "0x0006",
+          "title": "BGM 06 (無音)"
+        },
+        {
+          "kind": "title",
+          "code": "0x0007",
+          "title": "BGM 07"
+        },
+        {
+          "kind": "title",
+          "code": "0xffff",
+          "title": "FADE OUT"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/softec.xml",
+      "source_order": 4138,
+      "archive": "98stdium",
+      "id": "98stdium-opn"
+    },
+    {
+      "title": "[PC-9801] NET･JACK",
+      "driver": {
+        "name": "pc98dos",
+        "type": "opn",
+        "alias": "日本ソフテック",
+        "platform": "NEC PC-9801"
+      },
+      "options": [],
+      "assets": [
+        {
+          "type": "file",
+          "path": "netjack.com",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "OPN.EXE",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "COA1.EXE",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "FM_TONE.SND",
+          "offset": "0x05"
+        },
+        {
+          "type": "shell",
+          "path": "netjack",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x01f800",
+          "title": "OPN.EXE  : BGM 01"
+        },
+        {
+          "kind": "title",
+          "code": "0x01f801",
+          "title": "COA1.EXE : BGM 01 (無音)"
+        },
+        {
+          "kind": "title",
+          "code": "0x020a01",
+          "title": "COA1.EXE : BGM 02"
+        },
+        {
+          "kind": "title",
+          "code": "0x021c01",
+          "title": "COA1.EXE : BGM 03"
+        },
+        {
+          "kind": "title",
+          "code": "0x022e01",
+          "title": "COA1.EXE : BGM 04"
+        },
+        {
+          "kind": "title",
+          "code": "0x024001",
+          "title": "COA1.EXE : BGM 05"
+        },
+        {
+          "kind": "title",
+          "code": "0x0000ff",
+          "title": "FADE OUT"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/softec.xml",
+      "source_order": 4139,
+      "archive": "netjack98",
+      "id": "netjack98-opn"
+    },
+    {
+      "title": "[PC-9801] AMIDA EXTRA",
+      "driver": {
+        "name": "pc98dos",
+        "type": "opn",
+        "alias": "日本ソフテック",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "dummysndrom",
+          "value": "1"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "amidaex.com",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "AMIDA.EXE",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "FM_TONE.SND",
+          "offset": "0x05"
+        },
+        {
+          "type": "shell",
+          "path": "amidaex",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x01f1",
+          "title": "BGM 01"
+        },
+        {
+          "kind": "title",
+          "code": "0x0203",
+          "title": "BGM 02"
+        },
+        {
+          "kind": "title",
+          "code": "0x0215",
+          "title": "BGM 03"
+        },
+        {
+          "kind": "title",
+          "code": "0x0227",
+          "title": "BGM 04"
+        },
+        {
+          "kind": "title",
+          "code": "0x0239",
+          "title": "BGM 05"
+        },
+        {
+          "kind": "title",
+          "code": "0x024b",
+          "title": "BGM 06"
+        },
+        {
+          "kind": "title",
+          "code": "0x025d",
+          "title": "BGM 07"
+        },
+        {
+          "kind": "title",
+          "code": "0x026f",
+          "title": "BGM 08"
+        },
+        {
+          "kind": "title",
+          "code": "0xffff",
+          "title": "FADE OUT"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/softec.xml",
+      "source_order": 4140,
+      "archive": "amidaex98",
+      "id": "amidaex98-opn"
+    },
+    {
+      "title": "[PC-9801] 神話の島",
+      "driver": {
+        "name": "pc98dos",
+        "type": "opn",
+        "alias": "日本ソフテック",
+        "platform": "NEC PC-9801"
+      },
+      "options": [],
+      "assets": [
+        {
+          "type": "file",
+          "path": "sinwa98.com",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "SINWA.EXE",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "FM_TONE.SND",
+          "offset": "0x05"
+        },
+        {
+          "type": "shell",
+          "path": "sinwa98",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x01f8",
+          "title": "BGM 01"
+        },
+        {
+          "kind": "title",
+          "code": "0x020a",
+          "title": "BGM 02"
+        },
+        {
+          "kind": "title",
+          "code": "0x021c",
+          "title": "BGM 03"
+        },
+        {
+          "kind": "title",
+          "code": "0x022e",
+          "title": "BGM 04"
+        },
+        {
+          "kind": "title",
+          "code": "0x0240",
+          "title": "BGM 05"
+        },
+        {
+          "kind": "title",
+          "code": "0x0252",
+          "title": "BGM 06"
+        },
+        {
+          "kind": "title",
+          "code": "0x0264",
+          "title": "BGM 07"
+        },
+        {
+          "kind": "title",
+          "code": "0x0276",
+          "title": "BGM 08"
+        },
+        {
+          "kind": "title",
+          "code": "0xffff",
+          "title": "FADE OUT"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/softec.xml",
+      "source_order": 4141,
+      "archive": "sinwa98",
+      "id": "sinwa98-opn"
+    },
+    {
+      "title": "[PC-9801] うさぎなパニック",
+      "driver": {
+        "name": "pc98dos",
+        "type": "opn",
+        "alias": "日本ソフテック",
+        "platform": "NEC PC-9801"
+      },
+      "options": [],
+      "assets": [
+        {
+          "type": "file",
+          "path": "usagi.com",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "T.EXE",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "FM_TONE.SND",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "OPNDRV.SYS",
+          "offset": "-1"
+        },
+        {
+          "type": "device",
+          "path": "opndrv.sys",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "usagi",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x010000",
+          "title": "BGM 01"
+        },
+        {
+          "kind": "title",
+          "code": "0x020000",
+          "title": "BGM 02"
+        },
+        {
+          "kind": "title",
+          "code": "0x030000",
+          "title": "BGM 03"
+        },
+        {
+          "kind": "title",
+          "code": "0x040000",
+          "title": "BGM 04"
+        },
+        {
+          "kind": "title",
+          "code": "0x050000",
+          "title": "BGM 05"
+        },
+        {
+          "kind": "title",
+          "code": "0x060000",
+          "title": "BGM 06"
+        },
+        {
+          "kind": "title",
+          "code": "0x070000",
+          "title": "BGM 07"
+        },
+        {
+          "kind": "title",
+          "code": "0x080000",
+          "title": "BGM 08"
+        },
+        {
+          "kind": "title",
+          "code": "0x090000",
+          "title": "BGM 09"
+        },
+        {
+          "kind": "title",
+          "code": "0x0a0000",
+          "title": "BGM 10"
+        },
+        {
+          "kind": "title",
+          "code": "0x0b0000",
+          "title": "BGM 11"
+        },
+        {
+          "kind": "title",
+          "code": "0x0c0000",
+          "title": "BGM 12"
+        },
+        {
+          "kind": "title",
+          "code": "0x0d0000",
+          "title": "BGM 13"
+        },
+        {
+          "kind": "title",
+          "code": "0x0e0000",
+          "title": "BGM 14"
+        },
+        {
+          "kind": "title",
+          "code": "0x0f0000",
+          "title": "BGM 15"
+        },
+        {
+          "kind": "title",
+          "code": "0x100000",
+          "title": "BGM 16"
+        },
+        {
+          "kind": "title",
+          "code": "0x110000",
+          "title": "BGM 17"
+        },
+        {
+          "kind": "title",
+          "code": "0x120000",
+          "title": "BGM 18"
+        },
+        {
+          "kind": "title",
+          "code": "0x130000",
+          "title": "BGM 19"
+        },
+        {
+          "kind": "title",
+          "code": "0x140000",
+          "title": "BGM 20"
+        },
+        {
+          "kind": "title",
+          "code": "0x150000",
+          "title": "BGM 21"
+        },
+        {
+          "kind": "title",
+          "code": "0x00fffe",
+          "title": "EFFECT 00"
+        },
+        {
+          "kind": "title",
+          "code": "0x01fffe",
+          "title": "EFFECT 01"
+        },
+        {
+          "kind": "title",
+          "code": "0x02fffe",
+          "title": "EFFECT 02"
+        },
+        {
+          "kind": "title",
+          "code": "0x03fffe",
+          "title": "EFFECT 03"
+        },
+        {
+          "kind": "title",
+          "code": "0x04fffe",
+          "title": "EFFECT 04"
+        },
+        {
+          "kind": "title",
+          "code": "0x05fffe",
+          "title": "EFFECT 05"
+        },
+        {
+          "kind": "title",
+          "code": "0x06fffe",
+          "title": "EFFECT 06"
+        },
+        {
+          "kind": "title",
+          "code": "0x07fffe",
+          "title": "EFFECT 07"
+        },
+        {
+          "kind": "title",
+          "code": "0x08fffe",
+          "title": "EFFECT 08"
+        },
+        {
+          "kind": "title",
+          "code": "0x09fffe",
+          "title": "EFFECT 09"
+        },
+        {
+          "kind": "title",
+          "code": "0x0afffe",
+          "title": "EFFECT 0A"
+        },
+        {
+          "kind": "title",
+          "code": "0x0bfffe",
+          "title": "EFFECT 0B"
+        },
+        {
+          "kind": "title",
+          "code": "0x0cfffe",
+          "title": "EFFECT 0C"
+        },
+        {
+          "kind": "title",
+          "code": "0x0dfffe",
+          "title": "EFFECT 0D"
+        },
+        {
+          "kind": "title",
+          "code": "0x0efffe",
+          "title": "EFFECT 0E"
+        },
+        {
+          "kind": "title",
+          "code": "0x0ffffe",
+          "title": "EFFECT 0F"
+        },
+        {
+          "kind": "title",
+          "code": "0x10fffe",
+          "title": "EFFECT 10"
+        },
+        {
+          "kind": "title",
+          "code": "0x11fffe",
+          "title": "EFFECT 11"
+        },
+        {
+          "kind": "title",
+          "code": "0x12fffe",
+          "title": "EFFECT 12"
+        },
+        {
+          "kind": "title",
+          "code": "0x13fffe",
+          "title": "EFFECT 13"
+        },
+        {
+          "kind": "comment",
+          "text": "\t<title code=\"0x14fffe\">EFFECT 14</title> "
+        },
+        {
+          "kind": "comment",
+          "text": "\t<title code=\"0x15fffe\">EFFECT 15</title> "
+        },
+        {
+          "kind": "comment",
+          "text": "\t<title code=\"0x16fffe\">EFFECT 16</title> "
+        },
+        {
+          "kind": "comment",
+          "text": "\t<title code=\"0x17fffe\">EFFECT 17</title> "
+        },
+        {
+          "kind": "comment",
+          "text": "\t<title code=\"0x18fffe\">EFFECT 18</title> "
+        },
+        {
+          "kind": "title",
+          "code": "0x00ffff",
+          "title": "FADE OUT"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/softec.xml",
+      "source_order": 4142,
+      "archive": "usagi_98",
+      "id": "usagi-98-opn"
+    },
+    {
+      "title": "[PC-9801] うさぎなパニック2 -ペンペン島の秘宝-",
+      "driver": {
+        "name": "pc98dos",
+        "type": "opn",
+        "alias": "日本ソフテック",
+        "platform": "NEC PC-9801"
+      },
+      "options": [],
+      "assets": [
+        {
+          "type": "file",
+          "path": "usagi2.com",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "T.EXE",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "FM_TONE.SND",
+          "offset": "0x05"
+        },
+        {
+          "type": "file",
+          "path": "MUS.000",
+          "offset": "0x10"
+        },
+        {
+          "type": "file",
+          "path": "MUS.001",
+          "offset": "0x11"
+        },
+        {
+          "type": "file",
+          "path": "MUS.002",
+          "offset": "0x12"
+        },
+        {
+          "type": "file",
+          "path": "MUS.003",
+          "offset": "0x13"
+        },
+        {
+          "type": "file",
+          "path": "MUS.004",
+          "offset": "0x14"
+        },
+        {
+          "type": "file",
+          "path": "MUS.005",
+          "offset": "0x15"
+        },
+        {
+          "type": "file",
+          "path": "MUS.006",
+          "offset": "0x16"
+        },
+        {
+          "type": "file",
+          "path": "MUS.007",
+          "offset": "0x17"
+        },
+        {
+          "type": "file",
+          "path": "MUS.008",
+          "offset": "0x18"
+        },
+        {
+          "type": "file",
+          "path": "MUS.009",
+          "offset": "0x19"
+        },
+        {
+          "type": "file",
+          "path": "MUS.010",
+          "offset": "0x1a"
+        },
+        {
+          "type": "file",
+          "path": "MUS.011",
+          "offset": "0x1b"
+        },
+        {
+          "type": "file",
+          "path": "MUS.012",
+          "offset": "0x1c"
+        },
+        {
+          "type": "file",
+          "path": "MUS.013",
+          "offset": "0x1d"
+        },
+        {
+          "type": "file",
+          "path": "MUS.014",
+          "offset": "0x1e"
+        },
+        {
+          "type": "file",
+          "path": "MUS.015",
+          "offset": "0x1f"
+        },
+        {
+          "type": "file",
+          "path": "MUS.016",
+          "offset": "0x20"
+        },
+        {
+          "type": "file",
+          "path": "MUS.017",
+          "offset": "0x21"
+        },
+        {
+          "type": "file",
+          "path": "MUS.018",
+          "offset": "0x22"
+        },
+        {
+          "type": "file",
+          "path": "MUS.019",
+          "offset": "0x23"
+        },
+        {
+          "type": "file",
+          "path": "MUS.020",
+          "offset": "0x24"
+        },
+        {
+          "type": "shell",
+          "path": "usagi2",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x000010",
+          "title": "MUS.000"
+        },
+        {
+          "kind": "title",
+          "code": "0x000011",
+          "title": "MUS.001"
+        },
+        {
+          "kind": "title",
+          "code": "0x000012",
+          "title": "MUS.002"
+        },
+        {
+          "kind": "title",
+          "code": "0x000013",
+          "title": "MUS.003"
+        },
+        {
+          "kind": "title",
+          "code": "0x000014",
+          "title": "MUS.004"
+        },
+        {
+          "kind": "title",
+          "code": "0x000015",
+          "title": "MUS.005"
+        },
+        {
+          "kind": "title",
+          "code": "0x000016",
+          "title": "MUS.006"
+        },
+        {
+          "kind": "title",
+          "code": "0x000017",
+          "title": "MUS.007"
+        },
+        {
+          "kind": "title",
+          "code": "0x000018",
+          "title": "MUS.008"
+        },
+        {
+          "kind": "title",
+          "code": "0x000019",
+          "title": "MUS.009"
+        },
+        {
+          "kind": "title",
+          "code": "0x00001a",
+          "title": "MUS.010"
+        },
+        {
+          "kind": "title",
+          "code": "0x00001b",
+          "title": "MUS.011"
+        },
+        {
+          "kind": "title",
+          "code": "0x00001c",
+          "title": "MUS.012"
+        },
+        {
+          "kind": "title",
+          "code": "0x00001d",
+          "title": "MUS.013"
+        },
+        {
+          "kind": "title",
+          "code": "0x00001e",
+          "title": "MUS.014"
+        },
+        {
+          "kind": "title",
+          "code": "0x00001f",
+          "title": "MUS.015"
+        },
+        {
+          "kind": "title",
+          "code": "0x000020",
+          "title": "MUS.016"
+        },
+        {
+          "kind": "title",
+          "code": "0x000021",
+          "title": "MUS.017"
+        },
+        {
+          "kind": "title",
+          "code": "0x000022",
+          "title": "MUS.018"
+        },
+        {
+          "kind": "title",
+          "code": "0x000023",
+          "title": "MUS.019"
+        },
+        {
+          "kind": "title",
+          "code": "0x000024",
+          "title": "MUS.020"
+        },
+        {
+          "kind": "comment",
+          "text": "\t<title code=\"0x01fffe\">STOP</title> "
+        },
+        {
+          "kind": "comment",
+          "text": "\t<title code=\"0x02fffe\">REPLAY</title> "
+        },
+        {
+          "kind": "title",
+          "code": "0x00ffff",
+          "title": "FADE OUT"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/softec.xml",
+      "source_order": 4143,
+      "archive": "usagi2_98",
+      "id": "usagi2-98-opn"
+    },
+    {
+      "title": "[PC-9801] 天下大乱",
+      "driver": {
+        "name": "pc98dos",
+        "type": "opn",
+        "alias": "日本ソフテック",
+        "platform": "NEC PC-9801"
+      },
+      "options": [],
+      "assets": [
+        {
+          "type": "file",
+          "path": "ttairan.com",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "ENDO.EXE",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "JAP.EXE",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "OPN.EXE",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "PED.EXE",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "SIM.EXE",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "FM_TONE.SND",
+          "offset": "0x05"
+        },
+        {
+          "type": "shell",
+          "path": "ttairan",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "comment",
+          "text": "\t<title code=\"0x01f800\">ENDO.EXE : BGM 01 (無音)</title> "
+        },
+        {
+          "kind": "title",
+          "code": "0x020a00",
+          "title": "ENDO.EXE : BGM 02"
+        },
+        {
+          "kind": "title",
+          "code": "0x021c00",
+          "title": "ENDO.EXE : BGM 03"
+        },
+        {
+          "kind": "title",
+          "code": "0x022e00",
+          "title": "ENDO.EXE : BGM 04"
+        },
+        {
+          "kind": "title",
+          "code": "0x01f801",
+          "title": "JAP.EXE  : BGM 01"
+        },
+        {
+          "kind": "title",
+          "code": "0x01f802",
+          "title": "OPN.EXE  : BGM 01"
+        },
+        {
+          "kind": "title",
+          "code": "0x020a02",
+          "title": "OPN.EXE  : BGM 02"
+        },
+        {
+          "kind": "comment",
+          "text": "\t<title code=\"0x021c02\">OPN.EXE  : BGM 03 (無音)</title> "
+        },
+        {
+          "kind": "comment",
+          "text": "\t<title code=\"0x01f803\">PED.EXE  : BGM 01 (無音)</title> "
+        },
+        {
+          "kind": "title",
+          "code": "0x020a03",
+          "title": "PED.EXE  : BGM 02"
+        },
+        {
+          "kind": "title",
+          "code": "0x021c03",
+          "title": "PED.EXE  : BGM 03"
+        },
+        {
+          "kind": "title",
+          "code": "0x022e03",
+          "title": "PED.EXE  : BGM 04"
+        },
+        {
+          "kind": "comment",
+          "text": "\t<title code=\"0x01f804\">SIM.EXE  : BGM 01 (無音)</title> "
+        },
+        {
+          "kind": "title",
+          "code": "0x020a04",
+          "title": "SIM.EXE  : BGM 02"
+        },
+        {
+          "kind": "title",
+          "code": "0x021c04",
+          "title": "SIM.EXE  : BGM 03"
+        },
+        {
+          "kind": "title",
+          "code": "0x022e04",
+          "title": "SIM.EXE  : BGM 04"
+        },
+        {
+          "kind": "title",
+          "code": "0x0000ff",
+          "title": "FADE OUT"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/softec.xml",
+      "source_order": 4144,
+      "archive": "ttairan_98",
+      "id": "ttairan-98-opn"
+    },
+    {
+      "title": "[X68000] Pinball Pinball",
+      "driver": {
+        "name": "x68k",
+        "type": "generic",
+        "alias": "日本ソフテック",
+        "platform": "SHARP X68000"
+      },
+      "options": [],
+      "assets": [
+        {
+          "type": "code",
+          "path": "pbpb68snd.bin"
+        },
+        {
+          "type": "x",
+          "path": "OPMDRV.X",
+          "offset": "0x010000"
+        },
+        {
+          "type": "x",
+          "path": "PINSP.X",
+          "offset": "0x030000"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "range",
+          "min": "0x001",
+          "max": "0x004",
+          "title_format": "BGM 0x%02x",
+          "extcode": "1"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/softec.xml",
+      "source_order": 4145,
+      "archive": "pinbpinb68snd",
+      "id": "pinbpinb68snd-generic"
+    }
+  ]
+}

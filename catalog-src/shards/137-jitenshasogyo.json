@@ -1,0 +1,543 @@
+{
+  "format": "hoot-catalog-shard",
+  "version": 1,
+  "source_file": "xml/jitenshasogyo.xml",
+  "date": "2005/09/25",
+  "comments": [
+    " //自転車創業 "
+  ],
+  "games": [
+    {
+      "title": "[X68000] あの、素晴らしい　　をもう一度",
+      "driver": {
+        "name": "x68k",
+        "type": "generic",
+        "alias": "自転車創業",
+        "platform": "SHARP X68000"
+      },
+      "options": [],
+      "assets": [
+        {
+          "type": "code",
+          "path": "anos68snd.bin",
+          "offset": "0x000000"
+        },
+        {
+          "type": "code",
+          "path": "FMSND.ZMD",
+          "offset": "0x010000"
+        },
+        {
+          "type": "code",
+          "path": "ANOS_MT.ZMD",
+          "offset": "0x012000"
+        },
+        {
+          "type": "code",
+          "path": "CRYSTAL.ZMD",
+          "offset": "0x014000"
+        },
+        {
+          "type": "code",
+          "path": "GIMON.ZMD",
+          "offset": "0x015000"
+        },
+        {
+          "type": "code",
+          "path": "KOYA.ZMD",
+          "offset": "0x017000"
+        },
+        {
+          "type": "code",
+          "path": "MIREIYU.ZMD",
+          "offset": "0x019000"
+        },
+        {
+          "type": "code",
+          "path": "RIBI.ZMD",
+          "offset": "0x01b000"
+        },
+        {
+          "type": "code",
+          "path": "RI_HI.ZMD",
+          "offset": "0x01f000"
+        },
+        {
+          "type": "code",
+          "path": "RI_KI.ZMD",
+          "offset": "0x020000"
+        },
+        {
+          "type": "code",
+          "path": "RI_KIAI.ZMD",
+          "offset": "0x022000"
+        },
+        {
+          "type": "code",
+          "path": "RI_MA.ZMD",
+          "offset": "0x024000"
+        },
+        {
+          "type": "code",
+          "path": "RYUKETU.ZMD",
+          "offset": "0x025000"
+        },
+        {
+          "type": "code",
+          "path": "SEKAI.ZMD",
+          "offset": "0x026000"
+        },
+        {
+          "type": "code",
+          "path": "SHOCK.ZMD",
+          "offset": "0x029000"
+        },
+        {
+          "type": "code",
+          "path": "TANSAKU.ZMD",
+          "offset": "0x02b000"
+        },
+        {
+          "type": "code",
+          "path": "YANE.ZMD",
+          "offset": "0x02c000"
+        },
+        {
+          "type": "code",
+          "path": "ANOS.ZPD",
+          "offset": "0x040000"
+        },
+        {
+          "type": "x",
+          "path": "zmusic.x",
+          "offset": "0x060000"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "ANOS_MT.ZMD : メインテーマ"
+        },
+        {
+          "kind": "title",
+          "code": "0x02",
+          "title": "CRYSTAL.ZMD : 水晶"
+        },
+        {
+          "kind": "title",
+          "code": "0x03",
+          "title": "GIMON.ZMD   : 疑問"
+        },
+        {
+          "kind": "title",
+          "code": "0x04",
+          "title": "KOYA.ZMD    : 荒野を歩く"
+        },
+        {
+          "kind": "title",
+          "code": "0x05",
+          "title": "MIREIYU.ZMD : ミレイユのテーマ"
+        },
+        {
+          "kind": "title",
+          "code": "0x06",
+          "title": "RIBI.ZMD    : 堕天使殺し"
+        },
+        {
+          "kind": "title",
+          "code": "0x07",
+          "title": "RI_HI.ZMD   : リト悲"
+        },
+        {
+          "kind": "title",
+          "code": "0x08",
+          "title": "RI_KI.ZMD   : リト喜"
+        },
+        {
+          "kind": "title",
+          "code": "0x09",
+          "title": "RI_KIAI.ZMD : リト喜哀"
+        },
+        {
+          "kind": "title",
+          "code": "0x0a",
+          "title": "RI_MA.ZMD   : リトのテーマ(間抜け)"
+        },
+        {
+          "kind": "title",
+          "code": "0x0b",
+          "title": "RYUKETU.ZMD : 流血の直前"
+        },
+        {
+          "kind": "title",
+          "code": "0x0c",
+          "title": "SEKAI.ZMD   : 世界の知識"
+        },
+        {
+          "kind": "title",
+          "code": "0x0d",
+          "title": "SHOCK.ZMD   : ショッキング"
+        },
+        {
+          "kind": "title",
+          "code": "0x0e",
+          "title": "TANSAKU.ZMD : 探索中"
+        },
+        {
+          "kind": "title",
+          "code": "0x0f",
+          "title": "YANE.ZMD    : 屋根の下のささやかな夜"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/jitenshasogyo.xml",
+      "source_order": 2718,
+      "archive": "anos68snd",
+      "id": "anos68snd-generic"
+    },
+    {
+      "title": "[X68000] 空の浮動産",
+      "driver": {
+        "name": "x68k",
+        "type": "generic",
+        "alias": "自転車創業",
+        "platform": "SHARP X68000"
+      },
+      "options": [
+        {
+          "name": "pcm8",
+          "value": "0x01"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "anos2mus.r",
+          "offset": "0x000000"
+        },
+        {
+          "type": "code",
+          "path": "00fmsnd.zmd",
+          "offset": "0x010000"
+        },
+        {
+          "type": "code",
+          "path": "01taikut.zmd",
+          "offset": "0x014000"
+        },
+        {
+          "type": "code",
+          "path": "02op.zmd",
+          "offset": "0x018000"
+        },
+        {
+          "type": "code",
+          "path": "03setumei.zmd",
+          "offset": "0x01C000"
+        },
+        {
+          "type": "code",
+          "path": "04manuke.zmd",
+          "offset": "0x020000"
+        },
+        {
+          "type": "code",
+          "path": "05jyumon.zmd",
+          "offset": "0x024000"
+        },
+        {
+          "type": "code",
+          "path": "06sabisi.zmd",
+          "offset": "0x028000"
+        },
+        {
+          "type": "code",
+          "path": "07kowai.zmd",
+          "offset": "0x02C000"
+        },
+        {
+          "type": "code",
+          "path": "08pinch.zmd",
+          "offset": "0x030000"
+        },
+        {
+          "type": "code",
+          "path": "09battl1.zmd",
+          "offset": "0x034000"
+        },
+        {
+          "type": "code",
+          "path": "10battl2.zmd",
+          "offset": "0x038000"
+        },
+        {
+          "type": "code",
+          "path": "11akaru1.zmd",
+          "offset": "0x03C000"
+        },
+        {
+          "type": "code",
+          "path": "12akaru2.zmd",
+          "offset": "0x040000"
+        },
+        {
+          "type": "code",
+          "path": "13kincho.zmd",
+          "offset": "0x044000"
+        },
+        {
+          "type": "code",
+          "path": "14_100m.zmd",
+          "offset": "0x048000"
+        },
+        {
+          "type": "code",
+          "path": "15okoru.zmd",
+          "offset": "0x04C000"
+        },
+        {
+          "type": "code",
+          "path": "16battl3.zmd",
+          "offset": "0x050000"
+        },
+        {
+          "type": "code",
+          "path": "17ed.zmd",
+          "offset": "0x054000"
+        },
+        {
+          "type": "code",
+          "path": "sora.zpd",
+          "offset": "0x060000"
+        },
+        {
+          "type": "x",
+          "path": "zmusic.x",
+          "offset": "0x080000"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x00",
+          "title": "停止"
+        },
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "退屈な授業。"
+        },
+        {
+          "kind": "title",
+          "code": "0x02",
+          "title": "空の浮動産。"
+        },
+        {
+          "kind": "title",
+          "code": "0x03",
+          "title": "法学概論。"
+        },
+        {
+          "kind": "title",
+          "code": "0x04",
+          "title": "……っていうか今日休講日じゃないのよ。"
+        },
+        {
+          "kind": "title",
+          "code": "0x05",
+          "title": "具現化された魔力の化学反応。"
+        },
+        {
+          "kind": "title",
+          "code": "0x06",
+          "title": "春川春菜2。"
+        },
+        {
+          "kind": "title",
+          "code": "0x07",
+          "title": "春川春菜3。"
+        },
+        {
+          "kind": "title",
+          "code": "0x08",
+          "title": "ピンチ。"
+        },
+        {
+          "kind": "title",
+          "code": "0x09",
+          "title": "戦闘。"
+        },
+        {
+          "kind": "title",
+          "code": "0x0A",
+          "title": "決闘。"
+        },
+        {
+          "kind": "title",
+          "code": "0x0B",
+          "title": "羊羹と牛乳。"
+        },
+        {
+          "kind": "title",
+          "code": "0x0C",
+          "title": "春川春菜１。"
+        },
+        {
+          "kind": "title",
+          "code": "0x0D",
+          "title": "即発。"
+        },
+        {
+          "kind": "title",
+          "code": "0x0E",
+          "title": "高度100Mの綱渡りで100Mダッシュ。"
+        },
+        {
+          "kind": "title",
+          "code": "0x0F",
+          "title": "最大の失敗。"
+        },
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "最後の魔法。"
+        },
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "伝模移位。"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/jitenshasogyo.xml",
+      "source_order": 2719,
+      "archive": "anos268snd",
+      "id": "anos268snd-generic"
+    },
+    {
+      "title": "[X68000] こねかけのうどんぶつける祭りがノルウェーの北の村の漁村で",
+      "driver": {
+        "name": "x68k",
+        "type": "generic",
+        "alias": "自転車創業",
+        "platform": "SHARP X68000"
+      },
+      "options": [],
+      "assets": [
+        {
+          "type": "code",
+          "path": "anos368snd.bin",
+          "offset": "0x000000"
+        },
+        {
+          "type": "code",
+          "path": "00LCsnd.ZMD",
+          "offset": "0x010000"
+        },
+        {
+          "type": "code",
+          "path": "02WHITEOUT.ZMD",
+          "offset": "0x012000"
+        },
+        {
+          "type": "code",
+          "path": "03anti.ZMD",
+          "offset": "0x014000"
+        },
+        {
+          "type": "code",
+          "path": "04UDON.ZMD",
+          "offset": "0x017000"
+        },
+        {
+          "type": "code",
+          "path": "05rgb.ZMD",
+          "offset": "0x01b000"
+        },
+        {
+          "type": "code",
+          "path": "06cmyk.ZMD",
+          "offset": "0x01f000"
+        },
+        {
+          "type": "code",
+          "path": "07color.ZMD",
+          "offset": "0x022000"
+        },
+        {
+          "type": "code",
+          "path": "08O_G.ZMD",
+          "offset": "0x024000"
+        },
+        {
+          "type": "code",
+          "path": "17offwhi.ZMD",
+          "offset": "0x028000"
+        },
+        {
+          "type": "code",
+          "path": "LC.ZPD",
+          "offset": "0x030000"
+        },
+        {
+          "type": "code",
+          "path": "orange.ZPD",
+          "offset": "0x047000"
+        },
+        {
+          "type": "x",
+          "path": "zmusic.x",
+          "offset": "0x060000"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "02WHITEOUT.ZMD : whiteout"
+        },
+        {
+          "kind": "title",
+          "code": "0x02",
+          "title": "03anti.ZMD     : アンチエイリアス"
+        },
+        {
+          "kind": "title",
+          "code": "0x03",
+          "title": "04UDON.ZMD     : U/D/O/N"
+        },
+        {
+          "kind": "title",
+          "code": "0x04",
+          "title": "05rgb.ZMD      : RGB"
+        },
+        {
+          "kind": "title",
+          "code": "0x05",
+          "title": "06cmyk.ZMD     : CMYK"
+        },
+        {
+          "kind": "title",
+          "code": "0x06",
+          "title": "07color.ZMD    : colours"
+        },
+        {
+          "kind": "title",
+          "code": "0x07",
+          "title": "08O_G.ZMD      : orange to green"
+        },
+        {
+          "kind": "title",
+          "code": "0x08",
+          "title": "17offwhi.ZMD   : offwhite"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/jitenshasogyo.xml",
+      "source_order": 2720,
+      "archive": "anos368snd",
+      "id": "anos368snd-generic"
+    }
+  ]
+}

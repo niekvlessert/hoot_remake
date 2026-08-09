@@ -1,0 +1,1672 @@
+{
+  "format": "hoot-catalog-shard",
+  "version": 1,
+  "source_file": "xml/namco.xml",
+  "date": "2010/03/20",
+  "comments": [
+    " //NAMCO "
+  ],
+  "games": [
+    {
+      "title": "[MSX] プロ野球ファミリースタジアム ホームランコンテスト(OPLL)",
+      "driver": {
+        "name": "msx",
+        "type": "generic",
+        "alias": "NAMCO",
+        "platform": "MSX"
+      },
+      "options": [
+        {
+          "name": "init_pc",
+          "value": "0x0400"
+        },
+        {
+          "name": "use_opll",
+          "value": "0x01"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "patch",
+          "offset": "0x0400"
+        },
+        {
+          "type": "code",
+          "path": "DRIVER.BIN",
+          "offset": "0x9E60"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x104",
+          "title": "タイトル / ホームラン"
+        },
+        {
+          "kind": "title",
+          "code": "0x101",
+          "title": "プレイボール"
+        },
+        {
+          "kind": "title",
+          "code": "0x102",
+          "title": "メインBGM"
+        },
+        {
+          "kind": "title",
+          "code": "0x103",
+          "title": "チャンスBGM"
+        },
+        {
+          "kind": "title",
+          "code": "0x105",
+          "title": "ゲームセット"
+        },
+        {
+          "kind": "range",
+          "min": "0x00",
+          "max": "0x00",
+          "title_format": "SE 0x%02x",
+          "extcode": "1"
+        },
+        {
+          "kind": "range",
+          "min": "0x20",
+          "max": "0x2e",
+          "title_format": "SE 0x%02x",
+          "extcode": "1"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/namco.xml",
+      "source_order": 3375,
+      "archive": "famstahc_msx",
+      "id": "famstahc-msx-generic"
+    },
+    {
+      "title": "[MSX] プロ野球ファミリースタジアム ホームランコンテスト(MSX-AUDIO)",
+      "driver": {
+        "name": "msx",
+        "type": "generic",
+        "alias": "NAMCO",
+        "platform": "MSX"
+      },
+      "options": [
+        {
+          "name": "init_pc",
+          "value": "0x0400"
+        },
+        {
+          "name": "use_msxa",
+          "value": "0x01"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "patch",
+          "offset": "0x0400"
+        },
+        {
+          "type": "code",
+          "path": "DRIVER.BIN",
+          "offset": "0x9E60"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x104",
+          "title": "タイトル / ホームラン"
+        },
+        {
+          "kind": "title",
+          "code": "0x101",
+          "title": "プレイボール"
+        },
+        {
+          "kind": "title",
+          "code": "0x102",
+          "title": "メインBGM"
+        },
+        {
+          "kind": "title",
+          "code": "0x103",
+          "title": "チャンスBGM"
+        },
+        {
+          "kind": "title",
+          "code": "0x105",
+          "title": "ゲームセット"
+        },
+        {
+          "kind": "range",
+          "min": "0x00",
+          "max": "0x00",
+          "title_format": "SE 0x%02x",
+          "extcode": "1"
+        },
+        {
+          "kind": "range",
+          "min": "0x20",
+          "max": "0x2e",
+          "title_format": "SE 0x%02x",
+          "extcode": "1"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/namco.xml",
+      "source_order": 3376,
+      "archive": "famstahc_msx",
+      "id": "famstahc-msx-generic-2"
+    },
+    {
+      "title": "[MSX] プロ野球ファミリースタジアム ホームランコンテスト(PSG)",
+      "driver": {
+        "name": "msx",
+        "type": "generic",
+        "alias": "NAMCO",
+        "platform": "MSX"
+      },
+      "options": [
+        {
+          "name": "init_pc",
+          "value": "0x0400"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "patch",
+          "offset": "0x0400"
+        },
+        {
+          "type": "code",
+          "path": "DRIVER.BIN",
+          "offset": "0x9E60"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x104",
+          "title": "タイトル / ホームラン"
+        },
+        {
+          "kind": "title",
+          "code": "0x101",
+          "title": "プレイボール"
+        },
+        {
+          "kind": "title",
+          "code": "0x102",
+          "title": "メインBGM"
+        },
+        {
+          "kind": "title",
+          "code": "0x103",
+          "title": "チャンスBGM"
+        },
+        {
+          "kind": "title",
+          "code": "0x105",
+          "title": "ゲームセット"
+        },
+        {
+          "kind": "range",
+          "min": "0x00",
+          "max": "0x00",
+          "title_format": "SE 0x%02x",
+          "extcode": "1"
+        },
+        {
+          "kind": "range",
+          "min": "0x20",
+          "max": "0x2e",
+          "title_format": "SE 0x%02x",
+          "extcode": "1"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/namco.xml",
+      "source_order": 3377,
+      "archive": "famstahc_msx",
+      "id": "famstahc-msx-generic-3"
+    },
+    {
+      "title": "[MSX] BARUNBA",
+      "driver": {
+        "name": "msx",
+        "type": "generic",
+        "alias": "NAMCO",
+        "platform": "MSX"
+      },
+      "options": [
+        {
+          "name": "mdata_addr",
+          "value": "0xb000"
+        },
+        {
+          "name": "mdata_size",
+          "value": "0x1000"
+        },
+        {
+          "name": "mfile_size",
+          "value": "0x1000"
+        },
+        {
+          "name": "init_pc",
+          "value": "0x0400"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "patch",
+          "offset": "0x0400"
+        },
+        {
+          "type": "code",
+          "path": "PSG.COM",
+          "offset": "0xc000"
+        },
+        {
+          "type": "bgm",
+          "path": "BGM1.COM",
+          "offset": "0x0000"
+        },
+        {
+          "type": "bgm",
+          "path": "BGM2.COM",
+          "offset": "0x0001"
+        },
+        {
+          "type": "bgm",
+          "path": "BGM3.COM",
+          "offset": "0x0002"
+        },
+        {
+          "type": "bgm",
+          "path": "BGM4.COM",
+          "offset": "0x0003"
+        },
+        {
+          "type": "bgm",
+          "path": "BGM5.COM",
+          "offset": "0x0004"
+        },
+        {
+          "type": "bgm",
+          "path": "BGM8.COM",
+          "offset": "0x0005"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x0400",
+          "title": "BGM1.COM : 04 : AREA MAP"
+        },
+        {
+          "kind": "comment",
+          "text": "\n\t\t\t<title code=\"0x0401\">BGM2.COM : 04 : AREA MAP</title>\n\t\t\t<title code=\"0x0402\">BGM3.COM : 04 : AREA MAP</title>\n\t\t\t<title code=\"0x0403\">BGM4.COM : 04 : AREA MAP</title>\n\t\t\t<title code=\"0x0404\">BGM5.COM : 04 : AREA MAP</title>\n\t\t\t<title code=\"0x0405\">BGM8.COM : 04 : AREA MAP</title>\n\t\t\t  "
+        },
+        {
+          "kind": "title",
+          "code": "0x0000",
+          "title": "BGM1.COM : 00 : FLOAT ISLAND AREA"
+        },
+        {
+          "kind": "title",
+          "code": "0x0001",
+          "title": "BGM2.COM : 00 : LAKE AREA"
+        },
+        {
+          "kind": "title",
+          "code": "0x0002",
+          "title": "BGM3.COM : 00 : MOUNTAIN AREA"
+        },
+        {
+          "kind": "title",
+          "code": "0x0003",
+          "title": "BGM4.COM : 00 : FOREST AREA"
+        },
+        {
+          "kind": "title",
+          "code": "0x0004",
+          "title": "BGM5.COM : 00 : FORTRESS AREA"
+        },
+        {
+          "kind": "title",
+          "code": "0x0100",
+          "title": "BGM1.COM : 01 : BOSS"
+        },
+        {
+          "kind": "comment",
+          "text": "\n\t\t\t<title code=\"0x0101\">BGM2.COM : 01 : BOSS</title>\n\t\t\t<title code=\"0x0102\">BGM3.COM : 01 : BOSS</title>\n\t\t\t<title code=\"0x0103\">BGM4.COM : 01 : BOSS</title>\n\t\t\t<title code=\"0x0104\">BGM5.COM : 01 : BOSS</title>\n\t\t\t  "
+        },
+        {
+          "kind": "title",
+          "code": "0x0904",
+          "title": "BGM5.COM : 09 : LAST BOSS"
+        },
+        {
+          "kind": "title",
+          "code": "0x0200",
+          "title": "BGM1.COM : 02 : STAGE CLEAR"
+        },
+        {
+          "kind": "comment",
+          "text": "\n\t\t\t<title code=\"0x0201\">BGM2.COM : 02 : STAGE CLEAR</title>\n\t\t\t<title code=\"0x0202\">BGM3.COM : 02 : STAGE CLEAR</title>\n\t\t\t<title code=\"0x0203\">BGM4.COM : 02 : STAGE CLEAR</title>\n\t\t\t  "
+        },
+        {
+          "kind": "title",
+          "code": "0x0300",
+          "title": "BGM1.COM : 03 : GAME OVER"
+        },
+        {
+          "kind": "comment",
+          "text": "\n\t\t\t<title code=\"0x0301\">BGM2.COM : 03 : GAME OVER</title>\n\t\t\t<title code=\"0x0302\">BGM3.COM : 03 : GAME OVER</title>\n\t\t\t<title code=\"0x0303\">BGM4.COM : 03 : GAME OVER</title>\n\t\t\t<title code=\"0x0304\">BGM5.COM : 03 : GAME OVER</title>\n\t\t\t  "
+        },
+        {
+          "kind": "title",
+          "code": "0x0805",
+          "title": "BGM8.COM : 08 : ENDING"
+        },
+        {
+          "kind": "title",
+          "code": "0x0905",
+          "title": "BGM8.COM : 09 : STAFF ROLL"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/namco.xml",
+      "source_order": 3378,
+      "archive": "barunba_msx",
+      "id": "barunba-msx-generic"
+    },
+    {
+      "title": "[MSX] F1道中記(OPLL)",
+      "driver": {
+        "name": "msx",
+        "type": "generic",
+        "alias": "NAMCO",
+        "platform": "MSX"
+      },
+      "options": [
+        {
+          "name": "mdata_addr",
+          "value": "0xaa00"
+        },
+        {
+          "name": "mdata_size",
+          "value": "0x1600"
+        },
+        {
+          "name": "mfile_size",
+          "value": "0x1600"
+        },
+        {
+          "name": "init_pc",
+          "value": "0x0400"
+        },
+        {
+          "name": "use_opll",
+          "value": "0x01"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "patch",
+          "offset": "0x0400"
+        },
+        {
+          "type": "code",
+          "path": "DRIVER.BIN",
+          "offset": "0xa000"
+        },
+        {
+          "type": "code",
+          "path": "TONE.BIN",
+          "offset": "0xd680"
+        },
+        {
+          "type": "bgm",
+          "path": "DATA0.BIN",
+          "offset": "0x0000"
+        },
+        {
+          "type": "bgm",
+          "path": "DATA1.BIN",
+          "offset": "0x0001"
+        },
+        {
+          "type": "bgm",
+          "path": "DATA2.BIN",
+          "offset": "0x0002"
+        },
+        {
+          "type": "bgm",
+          "path": "DATA3.BIN",
+          "offset": "0x0003"
+        },
+        {
+          "type": "bgm",
+          "path": "DATA4.BIN",
+          "offset": "0x0004"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x0000",
+          "title": "タイトル/メインBGM"
+        },
+        {
+          "kind": "title",
+          "code": "0x0001",
+          "title": "名前入力/メインBGM2"
+        },
+        {
+          "kind": "title",
+          "code": "0x0002",
+          "title": "チーム選択/エンディング"
+        },
+        {
+          "kind": "title",
+          "code": "0x0003",
+          "title": "車種選択/リザルト"
+        },
+        {
+          "kind": "title",
+          "code": "0x0004",
+          "title": "車種選択/リザルト(別ver)"
+        },
+        {
+          "kind": "title",
+          "code": "0x0100",
+          "title": "セッティング"
+        },
+        {
+          "kind": "title",
+          "code": "0x0101",
+          "title": "BGM 0x0101"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/namco.xml",
+      "source_order": 3379,
+      "archive": "f1douchu_msx",
+      "id": "f1douchu-msx-generic"
+    },
+    {
+      "title": "[MSX] F1道中記(PSG)",
+      "driver": {
+        "name": "msx",
+        "type": "generic",
+        "alias": "NAMCO",
+        "platform": "MSX"
+      },
+      "options": [
+        {
+          "name": "mdata_addr",
+          "value": "0xaa00"
+        },
+        {
+          "name": "mdata_size",
+          "value": "0x1600"
+        },
+        {
+          "name": "mfile_size",
+          "value": "0x1600"
+        },
+        {
+          "name": "init_pc",
+          "value": "0x0400"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "patch",
+          "offset": "0x0400"
+        },
+        {
+          "type": "code",
+          "path": "DRIVER.BIN",
+          "offset": "0xa000"
+        },
+        {
+          "type": "code",
+          "path": "TONE.BIN",
+          "offset": "0xd680"
+        },
+        {
+          "type": "bgm",
+          "path": "DATA0.BIN",
+          "offset": "0x0000"
+        },
+        {
+          "type": "bgm",
+          "path": "DATA1.BIN",
+          "offset": "0x0001"
+        },
+        {
+          "type": "bgm",
+          "path": "DATA2.BIN",
+          "offset": "0x0002"
+        },
+        {
+          "type": "bgm",
+          "path": "DATA3.BIN",
+          "offset": "0x0003"
+        },
+        {
+          "type": "bgm",
+          "path": "DATA4.BIN",
+          "offset": "0x0004"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x0000",
+          "title": "タイトル/メインBGM"
+        },
+        {
+          "kind": "title",
+          "code": "0x0001",
+          "title": "名前入力/メインBGM2"
+        },
+        {
+          "kind": "title",
+          "code": "0x0002",
+          "title": "チーム選択/エンディング"
+        },
+        {
+          "kind": "title",
+          "code": "0x0003",
+          "title": "車種選択/リザルト"
+        },
+        {
+          "kind": "title",
+          "code": "0x0004",
+          "title": "車種選択/リザルト(別ver)"
+        },
+        {
+          "kind": "title",
+          "code": "0x0100",
+          "title": "セッティング"
+        },
+        {
+          "kind": "title",
+          "code": "0x0101",
+          "title": "BGM 0x0101"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/namco.xml",
+      "source_order": 3380,
+      "archive": "f1douchu_msx",
+      "id": "f1douchu-msx-generic-2"
+    },
+    {
+      "title": "[MSX] DISK NG (MENU)(OPLL)",
+      "driver": {
+        "name": "msx",
+        "type": "generic",
+        "alias": "NAMCO",
+        "platform": "MSX"
+      },
+      "options": [
+        {
+          "name": "init_pc",
+          "value": "0x0400"
+        },
+        {
+          "name": "use_opll",
+          "value": "0x01"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "patch",
+          "offset": "0x0400"
+        },
+        {
+          "type": "code",
+          "path": "TITLE.BIN",
+          "offset": "0x4000"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x00",
+          "title": "BOSCONIAN"
+        },
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "GALAGA"
+        },
+        {
+          "kind": "title",
+          "code": "0x02",
+          "title": "TANK BATTALION"
+        },
+        {
+          "kind": "title",
+          "code": "0x03",
+          "title": "KING & BALLOON"
+        },
+        {
+          "kind": "title",
+          "code": "0x04",
+          "title": "WARP & WARP"
+        },
+        {
+          "kind": "title",
+          "code": "0x05",
+          "title": "XVM"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/namco.xml",
+      "source_order": 3381,
+      "archive": "diskng1_msx",
+      "id": "diskng1-msx-generic"
+    },
+    {
+      "title": "[MSX] DISK NG (MENU)(PSG)",
+      "driver": {
+        "name": "msx",
+        "type": "generic",
+        "alias": "NAMCO",
+        "platform": "MSX"
+      },
+      "options": [
+        {
+          "name": "init_pc",
+          "value": "0x0400"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "patch",
+          "offset": "0x0400"
+        },
+        {
+          "type": "code",
+          "path": "TITLE.BIN",
+          "offset": "0x4000"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x00",
+          "title": "BOSCONIAN"
+        },
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "GALAGA"
+        },
+        {
+          "kind": "title",
+          "code": "0x02",
+          "title": "TANK BATTALION"
+        },
+        {
+          "kind": "title",
+          "code": "0x03",
+          "title": "KING & BALLOON"
+        },
+        {
+          "kind": "title",
+          "code": "0x04",
+          "title": "WARP & WARP"
+        },
+        {
+          "kind": "title",
+          "code": "0x05",
+          "title": "XVM"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/namco.xml",
+      "source_order": 3382,
+      "archive": "diskng1_msx",
+      "id": "diskng1-msx-generic-2"
+    },
+    {
+      "title": "[MSX] DISK NG (XVM)",
+      "driver": {
+        "name": "msx",
+        "type": "generic",
+        "alias": "NAMCO",
+        "platform": "MSX"
+      },
+      "options": [
+        {
+          "name": "init_pc",
+          "value": "0x0400"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "xvm_pat",
+          "offset": "0x0400"
+        },
+        {
+          "type": "code",
+          "path": "XVM.BIN",
+          "offset": "0x4000"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x80",
+          "title": "Game Start"
+        },
+        {
+          "kind": "title",
+          "code": "0x85",
+          "title": "Main BGM"
+        },
+        {
+          "kind": "title",
+          "code": "0x86",
+          "title": "Boss"
+        },
+        {
+          "kind": "title",
+          "code": "0x82",
+          "title": "Game Over"
+        },
+        {
+          "kind": "title",
+          "code": "0x81",
+          "title": "BGM 0x81"
+        },
+        {
+          "kind": "title",
+          "code": "0x83",
+          "title": "SE 0x83"
+        },
+        {
+          "kind": "title",
+          "code": "0x84",
+          "title": "SE Miss"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/namco.xml",
+      "source_order": 3383,
+      "archive": "diskng1_msx",
+      "id": "diskng1-msx-generic-3"
+    },
+    {
+      "title": "[MSX] DISK NG (BOSCONIAN)",
+      "driver": {
+        "name": "msx",
+        "type": "generic",
+        "alias": "NAMCO",
+        "platform": "MSX"
+      },
+      "options": [
+        {
+          "name": "init_pc",
+          "value": "0x0400"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "bosc_pat",
+          "offset": "0x0400"
+        },
+        {
+          "type": "code",
+          "path": "BOSCO.BIN",
+          "offset": "0x4000"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "ゲームスタート"
+        },
+        {
+          "kind": "title",
+          "code": "0x02",
+          "title": "ラウンドクリア"
+        },
+        {
+          "kind": "title",
+          "code": "0x03",
+          "title": "ハイスコア"
+        },
+        {
+          "kind": "title",
+          "code": "0x00",
+          "title": "SE エクステンド"
+        },
+        {
+          "kind": "range",
+          "min": "0x04",
+          "max": "0x09",
+          "title_format": "SE 0x%02x",
+          "extcode": "1"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/namco.xml",
+      "source_order": 3384,
+      "archive": "diskng1_msx",
+      "id": "diskng1-msx-generic-4"
+    },
+    {
+      "title": "[MSX] DISK NG (GALAGA)",
+      "driver": {
+        "name": "msx",
+        "type": "generic",
+        "alias": "NAMCO",
+        "platform": "MSX"
+      },
+      "options": [
+        {
+          "name": "init_pc",
+          "value": "0x0400"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "galg_pat",
+          "offset": "0x0400"
+        },
+        {
+          "type": "code",
+          "path": "GALAGA.BIN",
+          "offset": "0x4000"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x00",
+          "title": "ゲームスタート"
+        },
+        {
+          "kind": "title",
+          "code": "0x06",
+          "title": "チャレンジングステージ スタート"
+        },
+        {
+          "kind": "title",
+          "code": "0x07",
+          "title": "チャレンジングステージ パーフェクト"
+        },
+        {
+          "kind": "title",
+          "code": "0x08",
+          "title": "チャレンジングステージ パーフェクト以外"
+        },
+        {
+          "kind": "title",
+          "code": "0x09",
+          "title": "ランキング"
+        },
+        {
+          "kind": "range",
+          "min": "0x01",
+          "max": "0x05",
+          "title_format": "SE 0x%02x",
+          "extcode": "1"
+        },
+        {
+          "kind": "range",
+          "min": "0x0a",
+          "max": "0x12",
+          "title_format": "SE 0x%02x",
+          "extcode": "1"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/namco.xml",
+      "source_order": 3385,
+      "archive": "diskng1_msx",
+      "id": "diskng1-msx-generic-5"
+    },
+    {
+      "title": "[MSX] DISK NG (KING & BALLOON)",
+      "driver": {
+        "name": "msx",
+        "type": "generic",
+        "alias": "NAMCO",
+        "platform": "MSX"
+      },
+      "options": [
+        {
+          "name": "init_pc",
+          "value": "0x0400"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "king_pat",
+          "offset": "0x0400"
+        },
+        {
+          "type": "code",
+          "path": "KINGBALN.BIN",
+          "offset": "0x4000"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x00",
+          "title": "ゲームスタート"
+        },
+        {
+          "kind": "title",
+          "code": "0x06",
+          "title": "ゲームオーバー"
+        },
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "SE HELP!"
+        },
+        {
+          "kind": "title",
+          "code": "0x02",
+          "title": "SE THANK YOU!"
+        },
+        {
+          "kind": "title",
+          "code": "0x07",
+          "title": "SE BYE BYE!"
+        },
+        {
+          "kind": "range",
+          "min": "0x03",
+          "max": "0x05",
+          "title_format": "SE 0x%02x",
+          "extcode": "1"
+        },
+        {
+          "kind": "range",
+          "min": "0x08",
+          "max": "0x0a",
+          "title_format": "SE 0x%02x",
+          "extcode": "1"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/namco.xml",
+      "source_order": 3386,
+      "archive": "diskng1_msx",
+      "id": "diskng1-msx-generic-6"
+    },
+    {
+      "title": "[MSX] DISK NG (TANK BATTALION)",
+      "driver": {
+        "name": "msx",
+        "type": "generic",
+        "alias": "NAMCO",
+        "platform": "MSX"
+      },
+      "options": [
+        {
+          "name": "init_pc",
+          "value": "0x0400"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "tank_pat",
+          "offset": "0x0400"
+        },
+        {
+          "type": "code",
+          "path": "TANKBTLN.BIN",
+          "offset": "0x4000"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x00",
+          "title": "ゲームスタート"
+        },
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "ゲームオーバー"
+        },
+        {
+          "kind": "range",
+          "min": "0x02",
+          "max": "0x06",
+          "title_format": "SE 0x%02x",
+          "extcode": "1"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/namco.xml",
+      "source_order": 3387,
+      "archive": "diskng1_msx",
+      "id": "diskng1-msx-generic-7"
+    },
+    {
+      "title": "[MSX] DISK NG (WARP & WARP)",
+      "driver": {
+        "name": "msx",
+        "type": "generic",
+        "alias": "NAMCO",
+        "platform": "MSX"
+      },
+      "options": [
+        {
+          "name": "init_pc",
+          "value": "0x0400"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "warp_pat",
+          "offset": "0x0400"
+        },
+        {
+          "type": "code",
+          "path": "WARPWARP.BIN",
+          "offset": "0x4000"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x04",
+          "title": "ゲームスタート"
+        },
+        {
+          "kind": "title",
+          "code": "0x06",
+          "title": "ステージクリア"
+        },
+        {
+          "kind": "range",
+          "min": "0x00",
+          "max": "0x03",
+          "title_format": "SE 0x%02x",
+          "extcode": "1"
+        },
+        {
+          "kind": "range",
+          "min": "0x05",
+          "max": "0x0e",
+          "title_format": "SE 0x%02x",
+          "extcode": "1"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/namco.xml",
+      "source_order": 3388,
+      "archive": "diskng1_msx",
+      "id": "diskng1-msx-generic-8"
+    },
+    {
+      "title": "[MSX] DISK NG2 (MENU)(OPLL)",
+      "driver": {
+        "name": "msx",
+        "type": "generic",
+        "alias": "NAMCO",
+        "platform": "MSX"
+      },
+      "options": [
+        {
+          "name": "init_pc",
+          "value": "0x0400"
+        },
+        {
+          "name": "use_opll",
+          "value": "0x01"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "patch2",
+          "offset": "0x0400"
+        },
+        {
+          "type": "code",
+          "path": "TITLE.BIN",
+          "offset": "0x4000"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x0105",
+          "title": "TITLE"
+        },
+        {
+          "kind": "title",
+          "code": "0x0106",
+          "title": "SELECT"
+        },
+        {
+          "kind": "title",
+          "code": "0x00",
+          "title": "PACMAN"
+        },
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "GALAXIAN"
+        },
+        {
+          "kind": "title",
+          "code": "0x02",
+          "title": "MAPPY"
+        },
+        {
+          "kind": "title",
+          "code": "0x03",
+          "title": "DIG DUG"
+        },
+        {
+          "kind": "title",
+          "code": "0x04",
+          "title": "RALLY-X"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/namco.xml",
+      "source_order": 3389,
+      "archive": "diskng2_msx",
+      "id": "diskng2-msx-generic"
+    },
+    {
+      "title": "[MSX] DISK NG2 (MENU)(PSG)",
+      "driver": {
+        "name": "msx",
+        "type": "generic",
+        "alias": "NAMCO",
+        "platform": "MSX"
+      },
+      "options": [
+        {
+          "name": "init_pc",
+          "value": "0x0400"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "patch2",
+          "offset": "0x0400"
+        },
+        {
+          "type": "code",
+          "path": "TITLE.BIN",
+          "offset": "0x4000"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x0105",
+          "title": "TITLE"
+        },
+        {
+          "kind": "title",
+          "code": "0x0106",
+          "title": "SELECT"
+        },
+        {
+          "kind": "title",
+          "code": "0x00",
+          "title": "PACMAN"
+        },
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "GALAXIAN"
+        },
+        {
+          "kind": "title",
+          "code": "0x02",
+          "title": "MAPPY"
+        },
+        {
+          "kind": "title",
+          "code": "0x03",
+          "title": "DIG DUG"
+        },
+        {
+          "kind": "title",
+          "code": "0x04",
+          "title": "RALLY-X"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/namco.xml",
+      "source_order": 3390,
+      "archive": "diskng2_msx",
+      "id": "diskng2-msx-generic-2"
+    },
+    {
+      "title": "[MSX] DISK NG2 (SHM)",
+      "driver": {
+        "name": "msx",
+        "type": "generic",
+        "alias": "NAMCO",
+        "platform": "MSX"
+      },
+      "options": [
+        {
+          "name": "init_pc",
+          "value": "0x0400"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "patch",
+          "offset": "0x0400"
+        },
+        {
+          "type": "code",
+          "path": "SHM.BIN",
+          "offset": "0x4000"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x80",
+          "title": "Game Start"
+        },
+        {
+          "kind": "title",
+          "code": "0x85",
+          "title": "Main BGM"
+        },
+        {
+          "kind": "title",
+          "code": "0x86",
+          "title": "Boss"
+        },
+        {
+          "kind": "title",
+          "code": "0x82",
+          "title": "Game Over"
+        },
+        {
+          "kind": "title",
+          "code": "0x81",
+          "title": "BGM 0x81"
+        },
+        {
+          "kind": "title",
+          "code": "0x83",
+          "title": "SE 0x83"
+        },
+        {
+          "kind": "title",
+          "code": "0x84",
+          "title": "SE 0x84"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/namco.xml",
+      "source_order": 3391,
+      "archive": "diskng2_msx",
+      "id": "diskng2-msx-generic-3"
+    },
+    {
+      "title": "[MSX] DISK NG2 (DIG DUG)",
+      "driver": {
+        "name": "msx",
+        "type": "generic",
+        "alias": "NAMCO",
+        "platform": "MSX"
+      },
+      "options": [
+        {
+          "name": "init_pc",
+          "value": "0x0400"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "digdug_pat",
+          "offset": "0x0400"
+        },
+        {
+          "type": "code",
+          "path": "DIGDUG.BIN",
+          "offset": "0x4000"
+        },
+        {
+          "type": "binary",
+          "path": "c9",
+          "offset": "0x875f"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x00",
+          "title": "ゲームスタート"
+        },
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "BGM"
+        },
+        {
+          "kind": "title",
+          "code": "0x02",
+          "title": "ステージクリア"
+        },
+        {
+          "kind": "title",
+          "code": "0x03",
+          "title": "エクステンド"
+        },
+        {
+          "kind": "title",
+          "code": "0x04",
+          "title": "ミス"
+        },
+        {
+          "kind": "title",
+          "code": "0x05",
+          "title": "ゲームオーバー"
+        },
+        {
+          "kind": "range",
+          "min": "0x06",
+          "max": "0x0b",
+          "title_format": "SE 0x%02x",
+          "extcode": "1"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/namco.xml",
+      "source_order": 3392,
+      "archive": "diskng2_msx",
+      "id": "diskng2-msx-generic-4"
+    },
+    {
+      "title": "[MSX] DISK NG2 (GALAXIAN)",
+      "driver": {
+        "name": "msx",
+        "type": "generic",
+        "alias": "NAMCO",
+        "platform": "MSX"
+      },
+      "options": [
+        {
+          "name": "init_pc",
+          "value": "0x0400"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "galax_pat",
+          "offset": "0x0400"
+        },
+        {
+          "type": "code",
+          "path": "GALAXIAN.BIN",
+          "offset": "0x4000"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x00",
+          "title": "ゲームスタート"
+        },
+        {
+          "kind": "range",
+          "min": "0x01",
+          "max": "0x05",
+          "title_format": "SE 0x%02x",
+          "extcode": "1"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/namco.xml",
+      "source_order": 3393,
+      "archive": "diskng2_msx",
+      "id": "diskng2-msx-generic-5"
+    },
+    {
+      "title": "[MSX] DISK NG2 (MAPPY)",
+      "driver": {
+        "name": "msx",
+        "type": "generic",
+        "alias": "NAMCO",
+        "platform": "MSX"
+      },
+      "options": [
+        {
+          "name": "init_pc",
+          "value": "0x0400"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "mappy_pat",
+          "offset": "0x0400"
+        },
+        {
+          "type": "code",
+          "path": "MAPPY.BIN",
+          "offset": "0x4000"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x00",
+          "title": "メインBGM"
+        },
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "メインBGM(ハリーアップ)"
+        },
+        {
+          "kind": "title",
+          "code": "0x02",
+          "title": "エクステンド"
+        },
+        {
+          "kind": "title",
+          "code": "0x03",
+          "title": "ハリーアップ"
+        },
+        {
+          "kind": "title",
+          "code": "0x04",
+          "title": "ミス"
+        },
+        {
+          "kind": "range",
+          "min": "0x05",
+          "max": "0x07",
+          "title_format": "SE 0x%02x",
+          "extcode": "1"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/namco.xml",
+      "source_order": 3394,
+      "archive": "diskng2_msx",
+      "id": "diskng2-msx-generic-6"
+    },
+    {
+      "title": "[MSX] DISK NG2 (PAC-MAN)",
+      "driver": {
+        "name": "msx",
+        "type": "generic",
+        "alias": "NAMCO",
+        "platform": "MSX"
+      },
+      "options": [
+        {
+          "name": "init_pc",
+          "value": "0x0400"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "pacman_pat",
+          "offset": "0x0400"
+        },
+        {
+          "type": "code",
+          "path": "PACMAN.BIN",
+          "offset": "0x4000"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x00",
+          "title": "スタートミュージック"
+        },
+        {
+          "kind": "title",
+          "code": "0x08",
+          "title": "平常移動"
+        },
+        {
+          "kind": "title",
+          "code": "0x07",
+          "title": "スパート移動"
+        },
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "コーヒーブレイクミュージック"
+        },
+        {
+          "kind": "title",
+          "code": "0x02",
+          "title": "エクステンドサウンド"
+        },
+        {
+          "kind": "title",
+          "code": "0x03",
+          "title": "クッキーを食べる"
+        },
+        {
+          "kind": "title",
+          "code": "0x06",
+          "title": "モンスターを食べる"
+        },
+        {
+          "kind": "title",
+          "code": "0x04",
+          "title": "フルーツを食べる"
+        },
+        {
+          "kind": "title",
+          "code": "0x05",
+          "title": "ミス"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/namco.xml",
+      "source_order": 3395,
+      "archive": "diskng2_msx",
+      "id": "diskng2-msx-generic-7"
+    },
+    {
+      "title": "[MSX] DISK NG2 (RALLY-X)",
+      "driver": {
+        "name": "msx",
+        "type": "generic",
+        "alias": "NAMCO",
+        "platform": "MSX"
+      },
+      "options": [
+        {
+          "name": "init_pc",
+          "value": "0x0400"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "rally_pat",
+          "offset": "0x0400"
+        },
+        {
+          "type": "code",
+          "path": "RALLYX.BIN",
+          "offset": "0x4000"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "ノーマルステージ スタート"
+        },
+        {
+          "kind": "title",
+          "code": "0x09",
+          "title": "チャレンジングステージ スタート"
+        },
+        {
+          "kind": "title",
+          "code": "0x00",
+          "title": "BGM"
+        },
+        {
+          "kind": "title",
+          "code": "0x02",
+          "title": "ラウンドクリア"
+        },
+        {
+          "kind": "range",
+          "min": "0x03",
+          "max": "0x08",
+          "title_format": "SE 0x%02x",
+          "extcode": "1"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/namco.xml",
+      "source_order": 3396,
+      "archive": "diskng2_msx",
+      "id": "diskng2-msx-generic-8"
+    }
+  ]
+}

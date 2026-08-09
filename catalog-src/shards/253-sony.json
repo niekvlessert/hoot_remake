@@ -1,0 +1,899 @@
+{
+  "format": "hoot-catalog-shard",
+  "version": 1,
+  "source_file": "xml/sony.xml",
+  "date": "2005/09/25",
+  "comments": [
+    " //SONY "
+  ],
+  "games": [
+    {
+      "title": "[MSX] XANADU - Dragon Slayer II -",
+      "driver": {
+        "name": "msx",
+        "type": "generic",
+        "alias": "SONY",
+        "platform": "MSX"
+      },
+      "options": [
+        {
+          "name": "mdata_addr",
+          "value": "0x8100"
+        },
+        {
+          "name": "mdata_size",
+          "value": "0x3100"
+        },
+        {
+          "name": "mfile_size",
+          "value": "0x3100"
+        },
+        {
+          "name": "mdata_num",
+          "value": "0x005"
+        },
+        {
+          "name": "init_pc",
+          "value": "0x0400"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "patch",
+          "offset": "0x0400"
+        },
+        {
+          "type": "bgm",
+          "path": "PR.NO1",
+          "offset": "0x0000"
+        },
+        {
+          "type": "bgm",
+          "path": "PR.NO3",
+          "offset": "0x0001"
+        },
+        {
+          "type": "bgm",
+          "path": "PR.NO4",
+          "offset": "0x0002"
+        },
+        {
+          "type": "bgm",
+          "path": "PR.NO5",
+          "offset": "0x0003"
+        },
+        {
+          "type": "bgm",
+          "path": "PR.NO0",
+          "offset": "0x0004"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x0000",
+          "title": "Training Ground / Main Theme"
+        },
+        {
+          "kind": "title",
+          "code": "0x0001",
+          "title": "Boss"
+        },
+        {
+          "kind": "title",
+          "code": "0x0002",
+          "title": "King Dragon"
+        },
+        {
+          "kind": "title",
+          "code": "0x0003",
+          "title": "Ending"
+        },
+        {
+          "kind": "title",
+          "code": "0x0004",
+          "title": "Food empty"
+        },
+        {
+          "kind": "title",
+          "code": "0x0112",
+          "title": "Battle Start"
+        },
+        {
+          "kind": "title",
+          "code": "0x0111",
+          "title": "Battle End"
+        },
+        {
+          "kind": "range",
+          "min": "0x100",
+          "max": "0x110",
+          "title_format": "SE 0x%02x",
+          "extcode": "0"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/sony.xml",
+      "source_order": 4200,
+      "archive": "xanadus_msx",
+      "id": "xanadus-msx-generic"
+    },
+    {
+      "title": "[MSX] GALL FORCE ETERNAL STORY 創世の序曲",
+      "driver": {
+        "name": "msx",
+        "type": "generic",
+        "alias": "SONY",
+        "platform": "MSX"
+      },
+      "options": [
+        {
+          "name": "init_pc",
+          "value": "0x0100"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "DRIVER.BIN",
+          "offset": "0x0100"
+        },
+        {
+          "type": "code",
+          "path": "patch",
+          "offset": "0x0100"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x03",
+          "title": "オープニング"
+        },
+        {
+          "kind": "comment",
+          "text": " <title code=\"0x01\">オープニング(loop)</title> "
+        },
+        {
+          "kind": "title",
+          "code": "0x00",
+          "title": "BGM"
+        },
+        {
+          "kind": "title",
+          "code": "0x02",
+          "title": "エンディング"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/sony.xml",
+      "source_order": 4201,
+      "archive": "gallforc_msx",
+      "id": "gallforc-msx-generic"
+    },
+    {
+      "title": "[MSX] Membership Golf(OPLL)",
+      "driver": {
+        "name": "msx",
+        "type": "generic",
+        "alias": "SONY",
+        "platform": "MSX"
+      },
+      "options": [
+        {
+          "name": "mdata_addr",
+          "value": "0xa000"
+        },
+        {
+          "name": "mdata_size",
+          "value": "0x0B00"
+        },
+        {
+          "name": "mfile_size",
+          "value": "0x0B00"
+        },
+        {
+          "name": "init_pc",
+          "value": "0x400"
+        },
+        {
+          "name": "use_opll",
+          "value": "0x01"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "patch",
+          "offset": "0x0400"
+        },
+        {
+          "type": "code",
+          "path": "GOPM.MSX",
+          "offset": "0xBB40"
+        },
+        {
+          "type": "bgm",
+          "path": "OPLC.MSX",
+          "offset": "0x00"
+        },
+        {
+          "type": "bgm",
+          "path": "OPLE.MSX",
+          "offset": "0x01"
+        },
+        {
+          "type": "bgm",
+          "path": "OPLF.MSX",
+          "offset": "0x02"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x282",
+          "title": "OPLF.MSX : Title / Menu"
+        },
+        {
+          "kind": "title",
+          "code": "0x015",
+          "title": "GOPM.MSX : Main BGM"
+        },
+        {
+          "kind": "title",
+          "code": "0x080",
+          "title": "OPLC.MSX : 00"
+        },
+        {
+          "kind": "title",
+          "code": "0x180",
+          "title": "OPLE.MSX : 00"
+        },
+        {
+          "kind": "title",
+          "code": "0x181",
+          "title": "OPLE.MSX : 01"
+        },
+        {
+          "kind": "range",
+          "min": "0x010",
+          "max": "0x014",
+          "title_format": "Jingle 0x%02x",
+          "extcode": "1"
+        },
+        {
+          "kind": "range",
+          "min": "0x001",
+          "max": "0x005",
+          "title_format": "SE 0x%02x",
+          "extcode": "1"
+        },
+        {
+          "kind": "range",
+          "min": "0x007",
+          "max": "0x00c",
+          "title_format": "SE 0x%02x",
+          "extcode": "1"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/sony.xml",
+      "source_order": 4202,
+      "archive": "mshpgolf_msx",
+      "id": "mshpgolf-msx-generic"
+    },
+    {
+      "title": "[MSX] Membership Golf(PSG)",
+      "driver": {
+        "name": "msx",
+        "type": "generic",
+        "alias": "SONY",
+        "platform": "MSX"
+      },
+      "options": [
+        {
+          "name": "mdata_addr",
+          "value": "0xa000"
+        },
+        {
+          "name": "mdata_size",
+          "value": "0x0B00"
+        },
+        {
+          "name": "mfile_size",
+          "value": "0x0B00"
+        },
+        {
+          "name": "init_pc",
+          "value": "0x400"
+        },
+        {
+          "name": "use_opll",
+          "value": "0x01"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "patch",
+          "offset": "0x0400"
+        },
+        {
+          "type": "code",
+          "path": "GINT.MSX",
+          "offset": "0xBB40"
+        },
+        {
+          "type": "bgm",
+          "path": "PSGC.MSX",
+          "offset": "0x00"
+        },
+        {
+          "type": "bgm",
+          "path": "PSGE.MSX",
+          "offset": "0x01"
+        },
+        {
+          "type": "bgm",
+          "path": "PSGF.MSX",
+          "offset": "0x02"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x282",
+          "title": "PSGF.MSX : Title / Menu"
+        },
+        {
+          "kind": "title",
+          "code": "0x015",
+          "title": "GOPM.MSX : Main BGM"
+        },
+        {
+          "kind": "title",
+          "code": "0x080",
+          "title": "PSGC.MSX : 00"
+        },
+        {
+          "kind": "title",
+          "code": "0x180",
+          "title": "PSGE.MSX : 00"
+        },
+        {
+          "kind": "title",
+          "code": "0x181",
+          "title": "PSGE.MSX : 01"
+        },
+        {
+          "kind": "range",
+          "min": "0x010",
+          "max": "0x014",
+          "title_format": "Jingle 0x%02x",
+          "extcode": "1"
+        },
+        {
+          "kind": "range",
+          "min": "0x001",
+          "max": "0x005",
+          "title_format": "SE 0x%02x",
+          "extcode": "1"
+        },
+        {
+          "kind": "range",
+          "min": "0x007",
+          "max": "0x00c",
+          "title_format": "SE 0x%02x",
+          "extcode": "1"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/sony.xml",
+      "source_order": 4203,
+      "archive": "mshpgolf_msx",
+      "id": "mshpgolf-msx-generic-2"
+    },
+    {
+      "title": "[MSX] PLAYBALL III(OPLL)",
+      "driver": {
+        "name": "msx",
+        "type": "generic",
+        "alias": "SONY",
+        "platform": "MSX"
+      },
+      "options": [
+        {
+          "name": "mdata_addr",
+          "value": "0xc200"
+        },
+        {
+          "name": "mdata_size",
+          "value": "0x1000"
+        },
+        {
+          "name": "mfile_size",
+          "value": "0x1000"
+        },
+        {
+          "name": "init_pc",
+          "value": "0x400"
+        },
+        {
+          "name": "use_opll",
+          "value": "0x01"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "patcha",
+          "offset": "0x0400"
+        },
+        {
+          "type": "code",
+          "path": "OPLL.BIN",
+          "offset": "0x3500"
+        },
+        {
+          "type": "code",
+          "path": "ENDOPLL.BIN",
+          "offset": "0x6000"
+        },
+        {
+          "type": "code",
+          "path": "OPLL0.BIN",
+          "offset": "0x8000"
+        },
+        {
+          "type": "bgm",
+          "path": "OPLL1.BIN",
+          "offset": "0x0001"
+        },
+        {
+          "type": "bgm",
+          "path": "OPLL2.BIN",
+          "offset": "0x0002"
+        },
+        {
+          "type": "bgm",
+          "path": "OPLL3.BIN",
+          "offset": "0x0003"
+        },
+        {
+          "type": "bgm",
+          "path": "OPLL4.BIN",
+          "offset": "0x0004"
+        },
+        {
+          "type": "bgm",
+          "path": "OPLL5.BIN",
+          "offset": "0x0005"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x000000",
+          "title": "OPLL.BIN    : 00 : タイトル"
+        },
+        {
+          "kind": "title",
+          "code": "0x000001",
+          "title": "OPLL.BIN    : 01 : ゲームセレクト"
+        },
+        {
+          "kind": "title",
+          "code": "0x010202",
+          "title": "OPLL1.BIN   : 02 : 攻撃中(1P)"
+        },
+        {
+          "kind": "title",
+          "code": "0x010203",
+          "title": "OPLL1.BIN   : 03 : 出塁ファンファーレ"
+        },
+        {
+          "kind": "comment",
+          "text": "\t<title code=\"0x020203\">OPLL2.BIN   : 03 : 出塁ファンファーレ</title> "
+        },
+        {
+          "kind": "title",
+          "code": "0x010200",
+          "title": "OPLL1.BIN   : 00 : ホームラン(1P)"
+        },
+        {
+          "kind": "comment",
+          "text": "\t<title code=\"0x040200\">OPLL4.BIN   : 00 : ホームラン(1P)</title>\n\t\t\t<title code=\"0x050200\">OPLL5.BIN   : 00 : ホームラン(1P)</title> "
+        },
+        {
+          "kind": "title",
+          "code": "0x010201",
+          "title": "OPLL1.BIN   : 01 : 攻撃終了(1P)"
+        },
+        {
+          "kind": "comment",
+          "text": "\t<title code=\"0x040201\">OPLL4.BIN   : 01 : 攻撃終了(1P)</title> "
+        },
+        {
+          "kind": "title",
+          "code": "0x020200",
+          "title": "OPLL2.BIN   : 00 : 攻撃中(2P/COM)"
+        },
+        {
+          "kind": "title",
+          "code": "0x020201",
+          "title": "OPLL2.BIN   : 01 : ホームラン(2P/COM)"
+        },
+        {
+          "kind": "comment",
+          "text": "\t<title code=\"0x030201\">OPLL3.BIN   : 01 : ホームラン(2P/COM)</title> "
+        },
+        {
+          "kind": "title",
+          "code": "0x020202",
+          "title": "OPLL2.BIN   : 02 : 攻撃終了(2P/COM)"
+        },
+        {
+          "kind": "comment",
+          "text": "\t<title code=\"0x030202\">OPLL3.BIN   : 02 : 攻撃終了(2P/COM)</title> "
+        },
+        {
+          "kind": "title",
+          "code": "0x030200",
+          "title": "OPLL3.BIN   : 00 : レトロ球場"
+        },
+        {
+          "kind": "title",
+          "code": "0x040202",
+          "title": "OPLL4.BIN   : 02 : 応援"
+        },
+        {
+          "kind": "title",
+          "code": "0x050201",
+          "title": "OPLL5.BIN   : 01 : ホームラン競争"
+        },
+        {
+          "kind": "title",
+          "code": "0x000100",
+          "title": "ENDOPLL.BIN : 00 : エンディング"
+        },
+        {
+          "kind": "title",
+          "code": "0x000101",
+          "title": "ENDOPLL.BIN : 01 : 試合結果"
+        },
+        {
+          "kind": "title",
+          "code": "0x000200",
+          "title": "OPLL0.BIN   : 00 : SE 投球音"
+        },
+        {
+          "kind": "title",
+          "code": "0x000201",
+          "title": "OPLL0.BIN   : 01 : SE 捕球音"
+        },
+        {
+          "kind": "title",
+          "code": "0x000202",
+          "title": "OPLL0.BIN   : 02 : SE 打撃音1"
+        },
+        {
+          "kind": "title",
+          "code": "0x000203",
+          "title": "OPLL0.BIN   : 03 : SE 打撃音2"
+        },
+        {
+          "kind": "title",
+          "code": "0x000204",
+          "title": "OPLL0.BIN   : 04 : SE 送球音"
+        },
+        {
+          "kind": "title",
+          "code": "0x000205",
+          "title": "OPLL0.BIN   : 05 : SE バウンド音"
+        },
+        {
+          "kind": "title",
+          "code": "0x000206",
+          "title": "OPLL0.BIN   : 06 : SE スライディング"
+        },
+        {
+          "kind": "title",
+          "code": "0x000207",
+          "title": "OPLL0.BIN   : 07 : SE ヒット"
+        },
+        {
+          "kind": "title",
+          "code": "0x000208",
+          "title": "OPLL0.BIN   : 08 : SE ホームラン"
+        },
+        {
+          "kind": "title",
+          "code": "0x000209",
+          "title": "OPLL0.BIN   : 09 : SE"
+        },
+        {
+          "kind": "title",
+          "code": "0x00020a",
+          "title": "OPLL0.BIN   : 0a : SE アウト"
+        },
+        {
+          "kind": "title",
+          "code": "0x00020b",
+          "title": "OPLL0.BIN   : 0b : SE セーフ"
+        },
+        {
+          "kind": "title",
+          "code": "0x00020c",
+          "title": "OPLL0.BIN   : 0c : SE ボール"
+        },
+        {
+          "kind": "title",
+          "code": "0x00020d",
+          "title": "OPLL0.BIN   : 0d : SE ストライク"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/sony.xml",
+      "source_order": 4204,
+      "archive": "playbal3_msx",
+      "id": "playbal3-msx-generic"
+    },
+    {
+      "title": "[MSX] PLAYBALL III(PSG)",
+      "driver": {
+        "name": "msx",
+        "type": "generic",
+        "alias": "SONY",
+        "platform": "MSX"
+      },
+      "options": [
+        {
+          "name": "mdata_addr",
+          "value": "0xc200"
+        },
+        {
+          "name": "mdata_size",
+          "value": "0x1000"
+        },
+        {
+          "name": "mfile_size",
+          "value": "0x1000"
+        },
+        {
+          "name": "init_pc",
+          "value": "0x400"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "patchb",
+          "offset": "0x0400"
+        },
+        {
+          "type": "code",
+          "path": "PSG.BIN",
+          "offset": "0x3500"
+        },
+        {
+          "type": "code",
+          "path": "ENDPSG.BIN",
+          "offset": "0x6000"
+        },
+        {
+          "type": "code",
+          "path": "FM0.BIN",
+          "offset": "0x8000"
+        },
+        {
+          "type": "bgm",
+          "path": "FM1.BIN",
+          "offset": "0x0001"
+        },
+        {
+          "type": "bgm",
+          "path": "FM2.BIN",
+          "offset": "0x0002"
+        },
+        {
+          "type": "bgm",
+          "path": "FM3.BIN",
+          "offset": "0x0003"
+        },
+        {
+          "type": "bgm",
+          "path": "FM4.BIN",
+          "offset": "0x0004"
+        },
+        {
+          "type": "bgm",
+          "path": "FM5.BIN",
+          "offset": "0x0005"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x000000",
+          "title": "PSG.BIN    : 00 : タイトル"
+        },
+        {
+          "kind": "title",
+          "code": "0x000001",
+          "title": "PSG.BIN    : 01 : ゲームセレクト"
+        },
+        {
+          "kind": "title",
+          "code": "0x010202",
+          "title": "FM1.BIN    : 02 : 攻撃中(1P)"
+        },
+        {
+          "kind": "title",
+          "code": "0x010203",
+          "title": "FM1.BIN    : 03 : 出塁ファンファーレ"
+        },
+        {
+          "kind": "comment",
+          "text": "\t<title code=\"0x020203\">FM2.BIN    : 03 : 出塁ファンファーレ</title> "
+        },
+        {
+          "kind": "title",
+          "code": "0x010200",
+          "title": "FM1.BIN    : 00 : ホームラン(1P)"
+        },
+        {
+          "kind": "comment",
+          "text": "\t<title code=\"0x040200\">FM4.BIN    : 00 : ホームラン(1P)</title>\n\t\t\t<title code=\"0x050200\">FM5.BIN    : 00 : ホームラン(1P)</title> "
+        },
+        {
+          "kind": "title",
+          "code": "0x010201",
+          "title": "FM1.BIN    : 01 : 攻撃終了(1P)"
+        },
+        {
+          "kind": "comment",
+          "text": "\t<title code=\"0x040201\">FM4.BIN    : 01 : 攻撃終了(1P)</title> "
+        },
+        {
+          "kind": "title",
+          "code": "0x020200",
+          "title": "FM2.BIN    : 00 : 攻撃中(2P/COM)"
+        },
+        {
+          "kind": "title",
+          "code": "0x020201",
+          "title": "FM2.BIN    : 01 : ホームラン(2P/COM)"
+        },
+        {
+          "kind": "comment",
+          "text": "\t<title code=\"0x030201\">FM3.BIN    : 01 : ホームラン(2P/COM)</title> "
+        },
+        {
+          "kind": "title",
+          "code": "0x020202",
+          "title": "FM2.BIN    : 02 : 攻撃終了(2P/COM)"
+        },
+        {
+          "kind": "comment",
+          "text": "\t<title code=\"0x030202\">FM3.BIN    : 02 : 攻撃終了(2P/COM)</title> "
+        },
+        {
+          "kind": "title",
+          "code": "0x030200",
+          "title": "FM3.BIN    : 00 : レトロ球場"
+        },
+        {
+          "kind": "title",
+          "code": "0x040202",
+          "title": "FM4.BIN    : 02 : 応援"
+        },
+        {
+          "kind": "title",
+          "code": "0x050201",
+          "title": "FM5.BIN    : 01 : ホームラン競争"
+        },
+        {
+          "kind": "title",
+          "code": "0x000100",
+          "title": "ENDPSG.BIN : 00 : エンディング"
+        },
+        {
+          "kind": "title",
+          "code": "0x000101",
+          "title": "ENDPSG.BIN : 01 : 試合結果"
+        },
+        {
+          "kind": "title",
+          "code": "0x000200",
+          "title": "FM0.BIN    : 00 : SE"
+        },
+        {
+          "kind": "title",
+          "code": "0x000201",
+          "title": "FM0.BIN    : 01 : SE"
+        },
+        {
+          "kind": "title",
+          "code": "0x000202",
+          "title": "FM0.BIN    : 02 : SE 投球音"
+        },
+        {
+          "kind": "title",
+          "code": "0x000203",
+          "title": "FM0.BIN    : 03 : SE 捕球音"
+        },
+        {
+          "kind": "title",
+          "code": "0x000204",
+          "title": "FM0.BIN    : 04 : SE 打撃音1"
+        },
+        {
+          "kind": "title",
+          "code": "0x000205",
+          "title": "FM0.BIN    : 05 : SE 打撃音2"
+        },
+        {
+          "kind": "title",
+          "code": "0x000206",
+          "title": "FM0.BIN    : 06 : SE 送球音"
+        },
+        {
+          "kind": "title",
+          "code": "0x000207",
+          "title": "FM0.BIN    : 07 : SE バウンド音"
+        },
+        {
+          "kind": "title",
+          "code": "0x000208",
+          "title": "FM0.BIN    : 08 : SE スライディング"
+        },
+        {
+          "kind": "title",
+          "code": "0x000209",
+          "title": "FM0.BIN    : 09 : SE ヒット"
+        },
+        {
+          "kind": "title",
+          "code": "0x00020a",
+          "title": "FM0.BIN    : 0a : SE ホームラン"
+        },
+        {
+          "kind": "title",
+          "code": "0x00020b",
+          "title": "FM0.BIN    : 0b : SE"
+        },
+        {
+          "kind": "title",
+          "code": "0x00020c",
+          "title": "FM0.BIN    : 0c : SE アウト"
+        },
+        {
+          "kind": "title",
+          "code": "0x00020d",
+          "title": "FM0.BIN    : 0d : SE セーフ"
+        },
+        {
+          "kind": "title",
+          "code": "0x00020e",
+          "title": "FM0.BIN    : 0e : SE ボール"
+        },
+        {
+          "kind": "title",
+          "code": "0x00020f",
+          "title": "FM0.BIN    : 0f : SE ストライク"
+        },
+        {
+          "kind": "title",
+          "code": "0x000210",
+          "title": "FM0.BIN    : 10 : SE"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/sony.xml",
+      "source_order": 4205,
+      "archive": "playbal3_msx",
+      "id": "playbal3-msx-generic-2"
+    }
+  ]
+}

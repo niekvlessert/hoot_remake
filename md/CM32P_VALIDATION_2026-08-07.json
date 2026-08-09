@@ -1,0 +1,135 @@
+{
+  "format": "hoot-cm32p-stage-validation-v1",
+  "date": "2026-08-07",
+  "scope": "CM-32P compatibility renderer and full CM-64 composite backend for PC-98/X68000",
+  "tests": {
+    "release": {
+      "passed": 14,
+      "total": 14,
+      "sanitizers": false
+    },
+    "asan_ubsan": {
+      "passed": 14,
+      "total": 14,
+      "sanitizers": true
+    },
+    "cm32p_fixture": {
+      "raw_internal_roms": 3,
+      "bytes_per_rom": 524288,
+      "card_fixture": true,
+      "checks": [
+        "ROM identification/descrambling",
+        "PCM note rendering",
+        "channels 11-16",
+        "CM-32P reversed pan",
+        "DT1 channel remap",
+        "Roland checksum rejection",
+        "SN-U110 card tone",
+        "CM-64 composite mixing"
+      ]
+    }
+  },
+  "catalog_midiout_type_3": {
+    "platforms": [
+      {
+        "platform": "NEC PC-9801",
+        "configurations": 26,
+        "title_tracks": 675,
+        "distinct_archives": 25
+      },
+      {
+        "platform": "SHARP X68000",
+        "configurations": 9,
+        "title_tracks": 185,
+        "distinct_archives": 7
+      }
+    ],
+    "total_configurations": 35,
+    "total_title_tracks": 860,
+    "total_distinct_archives": 32,
+    "named_sn_u110_variants": [
+      {
+        "platform": "SHARP X68000",
+        "entry_id": "cryoku68snd-generic-4",
+        "archive": "cryoku68snd",
+        "title": "[X68000] C力検査V3 [完結編](CM-64+SN-U110-10) (はやぶさそふと)"
+      },
+      {
+        "platform": "SHARP X68000",
+        "entry_id": "gw68snd-generic-5",
+        "archive": "gw68snd",
+        "title": "[X68000] ジェミニウィング(CM-64+SN-U110-10)"
+      },
+      {
+        "platform": "SHARP X68000",
+        "entry_id": "gw68snd-generic-6",
+        "archive": "gw68snd",
+        "title": "[X68000] ジェミニウィング(CM-64+SN-U110-07)"
+      }
+    ]
+  },
+  "x68k_mt32_regression": {
+    "seconds_per_track": 8,
+    "startup_grace_seconds": 1,
+    "fresh_process_per_track": true,
+    "synth_library": "ABI-compatible mock libmt32emu; no Roland ROMs redistributed",
+    "entries": [
+      {
+        "entry": "ad68snd-generic-2",
+        "tracks_scanned": 22,
+        "audio_active": 22,
+        "note_active": 22,
+        "bytes_transmitted": 448451,
+        "sysex_messages": 1606,
+        "malformed_bytes": 0,
+        "failures": []
+      },
+      {
+        "entry": "ad68snd-generic-3",
+        "tracks_scanned": 22,
+        "audio_active": 22,
+        "note_active": 22,
+        "bytes_transmitted": 448451,
+        "sysex_messages": 1606,
+        "malformed_bytes": 0,
+        "failures": []
+      },
+      {
+        "entry": "paro68snd-generic-2",
+        "tracks_scanned": 36,
+        "audio_active": 36,
+        "note_active": 33,
+        "bytes_transmitted": 72124,
+        "sysex_messages": 36,
+        "malformed_bytes": 0,
+        "failures": []
+      },
+      {
+        "entry": "paro68snd-generic-3",
+        "tracks_scanned": 36,
+        "audio_active": 36,
+        "note_active": 33,
+        "bytes_transmitted": 72124,
+        "sysex_messages": 36,
+        "malformed_bytes": 0,
+        "failures": []
+      }
+    ],
+    "aggregate": {
+      "runs": 116,
+      "audio_active": 116,
+      "note_active": 110,
+      "malformed_bytes": 0,
+      "unsupported_opcodes": 0,
+      "bytes_transmitted": 1041150,
+      "sysex_messages": 3284,
+      "note_ons": 24544
+    }
+  },
+  "evidence_boundary": {
+    "authentic_cm32p_roms_present": false,
+    "real_cm64_pack_present_in_working_set": false,
+    "authentic_cm32p_audio_audited": false,
+    "claim": "structural/backend and synthetic-ROM integration validated; authentic CM-32P/CM-64 timbre and real-pack compatibility remain to be auditioned"
+  }
+}

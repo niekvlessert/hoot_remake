@@ -26,6 +26,19 @@ public:
     void set_auto_irq_clear(bool enabled);
     uint16_t pc() const;
     void set_pc(uint16_t pc);
+    uint8_t interrupt_enable() const;
+    uint8_t interrupt_mode() const;
+    uint8_t interrupt_page() const;
+    uint8_t interrupt_request() const;
+    uint16_t af() const;
+    uint16_t bc() const;
+    uint16_t de() const;
+    uint16_t hl() const;
+    uint16_t ix() const;
+    uint16_t iy() const;
+    uint16_t sp() const;
+    uint8_t i() const;
+    uint8_t r() const;
 
 private:
     static Uint32 read_memory(void* user, Uint32 address);

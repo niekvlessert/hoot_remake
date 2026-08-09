@@ -4,11 +4,18 @@
 #include <array>
 #include <vector>
 
+#if defined(__GNUC__)
+#pragma GCC diagnostic push
+#pragma GCC diagnostic ignored "-Wpedantic"
+#endif
 extern "C" {
 #include "fmopn.h"
 #include "ayintf.h"
 #include "ay8910.h"
 }
+#if defined(__GNUC__)
+#pragma GCC diagnostic pop
+#endif
 
 namespace hoot {
 
@@ -28,6 +35,8 @@ public:
     void set_mute_mask(uint32_t mask);
     void set_ssg_gain(double gain);
     void set_ssg_inverted(bool inverted);
+    void allocate_adpcm_memory(uint32_t bytes);
+    void write_adpcm_memory(uint32_t offset, const uint8_t* data, uint32_t bytes);
 
     static void set_ssg_clock(void* param, uint32_t clock);
     static void write_ssg(void* param, uint8_t address, uint8_t data);

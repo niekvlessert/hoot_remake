@@ -1,0 +1,489 @@
+{
+  "format": "hoot-catalog-shard",
+  "version": 1,
+  "source_file": "xml/miamisoft.xml",
+  "date": "2005/09/25",
+  "comments": [
+    "//MiamiSoft "
+  ],
+  "games": [
+    {
+      "title": "[PC-9801] L-est ～エレスト～",
+      "driver": {
+        "name": "pc98dos",
+        "type": "opn",
+        "alias": "MiamiSoft",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "funcvect",
+          "value": "0x7e"
+        },
+        {
+          "name": "clockmul",
+          "value": "8"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "PMD_98.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "PMD.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "LEST.EFC",
+          "offset": "0x08"
+        },
+        {
+          "type": "file",
+          "path": "E001.M",
+          "offset": "0x10"
+        },
+        {
+          "type": "file",
+          "path": "E002.M",
+          "offset": "0x11"
+        },
+        {
+          "type": "file",
+          "path": "E003.M",
+          "offset": "0x12"
+        },
+        {
+          "type": "file",
+          "path": "E004.M",
+          "offset": "0x13"
+        },
+        {
+          "type": "file",
+          "path": "E005.M",
+          "offset": "0x14"
+        },
+        {
+          "type": "file",
+          "path": "E006.M",
+          "offset": "0x15"
+        },
+        {
+          "type": "file",
+          "path": "E007.M",
+          "offset": "0x16"
+        },
+        {
+          "type": "file",
+          "path": "E008.M",
+          "offset": "0x17"
+        },
+        {
+          "type": "file",
+          "path": "E009.M",
+          "offset": "0x18"
+        },
+        {
+          "type": "file",
+          "path": "E010.M",
+          "offset": "0x19"
+        },
+        {
+          "type": "file",
+          "path": "E011.M",
+          "offset": "0x1a"
+        },
+        {
+          "type": "file",
+          "path": "E012.M",
+          "offset": "0x1b"
+        },
+        {
+          "type": "file",
+          "path": "E013.M",
+          "offset": "0x1c"
+        },
+        {
+          "type": "shell",
+          "path": "pmd /M13 /V0 /E2 /DS16 /K",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "pmd_98",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "E001.M   :"
+        },
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "E002.M   :"
+        },
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "E003.M   :"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "E004.M   :"
+        },
+        {
+          "kind": "title",
+          "code": "0x14",
+          "title": "E005.M   :"
+        },
+        {
+          "kind": "title",
+          "code": "0x15",
+          "title": "E006.M   :"
+        },
+        {
+          "kind": "title",
+          "code": "0x16",
+          "title": "E007.M   :"
+        },
+        {
+          "kind": "title",
+          "code": "0x17",
+          "title": "E008.M   :"
+        },
+        {
+          "kind": "title",
+          "code": "0x18",
+          "title": "E009.M   :"
+        },
+        {
+          "kind": "title",
+          "code": "0x19",
+          "title": "E010.M   :"
+        },
+        {
+          "kind": "title",
+          "code": "0x1a",
+          "title": "E011.M   :"
+        },
+        {
+          "kind": "title",
+          "code": "0x1b",
+          "title": "E012.M   :"
+        },
+        {
+          "kind": "title",
+          "code": "0x1c",
+          "title": "E013.M   :"
+        },
+        {
+          "kind": "range",
+          "min": "0x0800",
+          "max": "0x081c",
+          "title_format": "LEST.EFC : %02X",
+          "extcode": "0",
+          "start": "0x00"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/miamisoft.xml",
+      "source_order": 3168,
+      "archive": "l-est_98",
+      "id": "l-est-98-opn"
+    },
+    {
+      "title": "[PC-9801] 琴緋ヶ丘物語",
+      "driver": {
+        "name": "pc98dos",
+        "type": "opn",
+        "alias": "MiamiSoft",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "funcvect",
+          "value": "0x7e"
+        },
+        {
+          "name": "clockmul",
+          "value": "8"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "PMD_98.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "PMD.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "KOTO.EFC",
+          "offset": "0x08"
+        },
+        {
+          "type": "file",
+          "path": "M001.M",
+          "offset": "0x10"
+        },
+        {
+          "type": "file",
+          "path": "M002.M",
+          "offset": "0x11"
+        },
+        {
+          "type": "file",
+          "path": "M003.M",
+          "offset": "0x12"
+        },
+        {
+          "type": "file",
+          "path": "M004.M",
+          "offset": "0x13"
+        },
+        {
+          "type": "file",
+          "path": "M005.M",
+          "offset": "0x14"
+        },
+        {
+          "type": "file",
+          "path": "M006.M",
+          "offset": "0x15"
+        },
+        {
+          "type": "file",
+          "path": "M007.M",
+          "offset": "0x16"
+        },
+        {
+          "type": "file",
+          "path": "M008.M",
+          "offset": "0x17"
+        },
+        {
+          "type": "file",
+          "path": "M009.M",
+          "offset": "0x18"
+        },
+        {
+          "type": "file",
+          "path": "M010.M",
+          "offset": "0x19"
+        },
+        {
+          "type": "file",
+          "path": "M011.M",
+          "offset": "0x1a"
+        },
+        {
+          "type": "file",
+          "path": "M012.M",
+          "offset": "0x1b"
+        },
+        {
+          "type": "file",
+          "path": "M013.M",
+          "offset": "0x1c"
+        },
+        {
+          "type": "file",
+          "path": "M014.M",
+          "offset": "0x1d"
+        },
+        {
+          "type": "file",
+          "path": "M015.M",
+          "offset": "0x1e"
+        },
+        {
+          "type": "file",
+          "path": "M016.M",
+          "offset": "0x1f"
+        },
+        {
+          "type": "file",
+          "path": "M017.M",
+          "offset": "0x20"
+        },
+        {
+          "type": "file",
+          "path": "M018.M",
+          "offset": "0x21"
+        },
+        {
+          "type": "file",
+          "path": "M019.M",
+          "offset": "0x22"
+        },
+        {
+          "type": "file",
+          "path": "M020.M",
+          "offset": "0x23"
+        },
+        {
+          "type": "file",
+          "path": "M101.M",
+          "offset": "0x24"
+        },
+        {
+          "type": "shell",
+          "path": "pmd /M10 /V0 /E4 /DF16 /DS0 /K",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "pmd_98",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "M001.M   : 明るい学園生活"
+        },
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "M002.M   : STRAGGLE-K"
+        },
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "M003.M   : それでも…"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "M004.M   : 君が欲しい"
+        },
+        {
+          "kind": "title",
+          "code": "0x14",
+          "title": "M005.M   : へへ、覚悟しな"
+        },
+        {
+          "kind": "title",
+          "code": "0x15",
+          "title": "M006.M   : で、出たな!"
+        },
+        {
+          "kind": "title",
+          "code": "0x16",
+          "title": "M007.M   : 目の保養だね"
+        },
+        {
+          "kind": "title",
+          "code": "0x17",
+          "title": "M008.M   : 美術館の娘"
+        },
+        {
+          "kind": "title",
+          "code": "0x18",
+          "title": "M009.M   : HATE"
+        },
+        {
+          "kind": "title",
+          "code": "0x19",
+          "title": "M010.M   : 未公認日本記録保持者"
+        },
+        {
+          "kind": "title",
+          "code": "0x1a",
+          "title": "M011.M   : あなたの全てを見せて"
+        },
+        {
+          "kind": "title",
+          "code": "0x1b",
+          "title": "M012.M   : 踊れ、踊れ!"
+        },
+        {
+          "kind": "title",
+          "code": "0x1c",
+          "title": "M013.M   : 華麗に参上"
+        },
+        {
+          "kind": "title",
+          "code": "0x1d",
+          "title": "M014.M   : お昼寝"
+        },
+        {
+          "kind": "title",
+          "code": "0x1e",
+          "title": "M015.M   : V.S."
+        },
+        {
+          "kind": "title",
+          "code": "0x1f",
+          "title": "M016.M   : 天下に一人"
+        },
+        {
+          "kind": "title",
+          "code": "0x20",
+          "title": "M017.M   : ロマンチスト"
+        },
+        {
+          "kind": "title",
+          "code": "0x21",
+          "title": "M018.M   : ちょっと待ってよ"
+        },
+        {
+          "kind": "title",
+          "code": "0x22",
+          "title": "M019.M   : さけては通れぬ"
+        },
+        {
+          "kind": "title",
+          "code": "0x23",
+          "title": "M020.M   : アタシの夢は"
+        },
+        {
+          "kind": "title",
+          "code": "0x24",
+          "title": "M101.M   :"
+        },
+        {
+          "kind": "range",
+          "min": "0x0802",
+          "max": "0x0806",
+          "title_format": "KOTO.EFC : %02X",
+          "extcode": "0",
+          "start": "0x02"
+        },
+        {
+          "kind": "range",
+          "min": "0x0809",
+          "max": "0x0816",
+          "title_format": "KOTO.EFC : %02X",
+          "extcode": "0",
+          "start": "0x09"
+        },
+        {
+          "kind": "range",
+          "min": "0x0819",
+          "max": "0x0819",
+          "title_format": "KOTO.EFC : %02X",
+          "extcode": "0",
+          "start": "0x19"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/miamisoft.xml",
+      "source_order": 3169,
+      "archive": "kotohi_98",
+      "id": "kotohi-98-opn"
+    }
+  ]
+}

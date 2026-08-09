@@ -1,0 +1,264 @@
+{
+  "format": "hoot-munt-mt32-stage-validation-v1",
+  "date": "2026-08-07",
+  "release_ctest": {
+    "passed": 13,
+    "total": 13
+  },
+  "pc98": {
+    "integration_fixture": "real synthetic 8086 .COM guest -> PC-98 E0D0/E0D2 MPU-401 -> shared MIDI decoder -> ABI-compatible mt32emu backend",
+    "midiout_type": 2,
+    "backend_kind": 3,
+    "result": "pass"
+  },
+  "x68k_real_pack_abi_gate": {
+    "note": "Real Hoot archives and complete guest drivers are used; the synth is an ABI-compatible test libmt32emu because Roland ROMs are not redistributed or available in this environment. This proves integration/transport, not authentic MT-32 timbre fidelity.",
+    "fresh_process_per_track": true,
+    "seconds": 8,
+    "entries": [
+      {
+        "entry": "ad68snd-generic-2",
+        "title": "[X68000] 悪魔城ドラキュラ(MT-32)",
+        "track_count": 22,
+        "audible_tracks": 22,
+        "note_active_tracks": 22,
+        "midi_counters": {
+          "bytes_enqueued": 448455,
+          "bytes_transmitted": 448451,
+          "channel_messages": 16489,
+          "system_common_messages": 0,
+          "sysex_messages": 1606,
+          "sysex_bytes": 395978,
+          "running_status_messages": 0,
+          "malformed_bytes": 0,
+          "note_ons": 4355,
+          "note_offs": 4267,
+          "control_changes": 1988,
+          "program_changes": 208,
+          "pitch_bends": 5671,
+          "irq_count": 0,
+          "synth_frames": 15220096,
+          "sysex_handled": 1606
+        },
+        "failures": []
+      },
+      {
+        "entry": "ad68snd-generic-3",
+        "title": "[X68000] 悪魔城ドラキュラ(MT-32 Emulation)",
+        "track_count": 22,
+        "audible_tracks": 22,
+        "note_active_tracks": 22,
+        "midi_counters": {
+          "bytes_enqueued": 448455,
+          "bytes_transmitted": 448451,
+          "channel_messages": 16489,
+          "system_common_messages": 0,
+          "sysex_messages": 1606,
+          "sysex_bytes": 395978,
+          "running_status_messages": 0,
+          "malformed_bytes": 0,
+          "note_ons": 4355,
+          "note_offs": 4267,
+          "control_changes": 1988,
+          "program_changes": 208,
+          "pitch_bends": 5671,
+          "irq_count": 0,
+          "synth_frames": 15220096,
+          "sysex_handled": 1606
+        },
+        "failures": []
+      },
+      {
+        "entry": "paro68snd-generic-2",
+        "title": "[X68000] パロディウスだ! ～神話からお笑いへ～(OPM+MT-32)",
+        "track_count": 36,
+        "audible_tracks": 36,
+        "note_active_tracks": 33,
+        "midi_counters": {
+          "bytes_enqueued": 72124,
+          "bytes_transmitted": 72124,
+          "channel_messages": 23956,
+          "system_common_messages": 0,
+          "sysex_messages": 36,
+          "sysex_bytes": 612,
+          "running_status_messages": 0,
+          "malformed_bytes": 0,
+          "note_ons": 7917,
+          "note_offs": 7125,
+          "control_changes": 4390,
+          "program_changes": 428,
+          "pitch_bends": 4096,
+          "irq_count": 0,
+          "synth_frames": 12729369,
+          "sysex_handled": 36
+        },
+        "failures": []
+      },
+      {
+        "entry": "paro68snd-generic-3",
+        "title": "[X68000] パロディウスだ! ～神話からお笑いへ～(OPM+MT-32 Emulation)",
+        "track_count": 36,
+        "audible_tracks": 36,
+        "note_active_tracks": 33,
+        "midi_counters": {
+          "bytes_enqueued": 72124,
+          "bytes_transmitted": 72124,
+          "channel_messages": 23956,
+          "system_common_messages": 0,
+          "sysex_messages": 36,
+          "sysex_bytes": 612,
+          "running_status_messages": 0,
+          "malformed_bytes": 0,
+          "note_ons": 7917,
+          "note_offs": 7125,
+          "control_changes": 4390,
+          "program_changes": 428,
+          "pitch_bends": 4096,
+          "irq_count": 0,
+          "synth_frames": 12729369,
+          "sysex_handled": 36
+        },
+        "failures": []
+      }
+    ],
+    "summary": {
+      "runs": 116,
+      "audible_runs": 116,
+      "note_active_runs": 110,
+      "midi_counters": {
+        "bytes_enqueued": 1041158,
+        "bytes_transmitted": 1041150,
+        "channel_messages": 80890,
+        "system_common_messages": 0,
+        "sysex_messages": 3284,
+        "sysex_bytes": 793180,
+        "running_status_messages": 0,
+        "malformed_bytes": 0,
+        "note_ons": 24544,
+        "note_offs": 22784,
+        "control_changes": 12756,
+        "program_changes": 1272,
+        "pitch_bends": 19534,
+        "irq_count": 0,
+        "synth_frames": 55898930,
+        "sysex_handled": 3284
+      },
+      "failures": []
+    }
+  },
+  "catalog_impact": {
+    "pc98_midi": {
+      "configurations": 476,
+      "title_tracks": 10516,
+      "fully_software_renderable_configurations": 463,
+      "fully_software_renderable_title_tracks": 10179,
+      "cm64_la_partial_configurations": 13,
+      "cm64_la_partial_title_tracks": 337,
+      "transport_only_configurations": 0,
+      "types": {
+        "1_mt32_emulation": {
+          "configs": 103,
+          "tracks": 2389
+        },
+        "2_mt32": {
+          "configs": 101,
+          "tracks": 2376
+        },
+        "3_cm64_partial": {
+          "configs": 13,
+          "tracks": 337
+        },
+        "4_sc55": {
+          "configs": 216,
+          "tracks": 4614
+        },
+        "7_sc88": {
+          "configs": 17,
+          "tracks": 282
+        },
+        "8_gm": {
+          "configs": 26,
+          "tracks": 518
+        }
+      }
+    },
+    "x68k_midi": {
+      "configurations": 143,
+      "fully_synth_backed_configurations": 127,
+      "cm64_la_partial_configurations": 9,
+      "unsupported_module_configurations": 7,
+      "mt32_type1_configurations": 48,
+      "mt32_type2_configurations": 44,
+      "remaining_types": {
+        "0_unspecified": 2,
+        "3_cm64_partial": 9,
+        "5_m1": 1,
+        "6_vermouth": 4
+      }
+    }
+  },
+  "evidence_boundary": {
+    "authentic_libmt32emu_runtime_tested": false,
+    "authentic_roland_rom_audio_tested": false,
+    "reason": "No libmt32emu installation or user-owned Roland ROM set was present in the supplied dependency/runtime environment.",
+    "cm32p_emulated": false
+  },
+  "asan_ubsan_ctest": {
+    "passed": 13,
+    "total": 13
+  },
+  "x68k_plain_opm_regression": {
+    "catalog_commands": 196,
+    "audio_active_tracks": 191,
+    "control_commands": 5,
+    "failures": []
+  },
+  "pc98_gm_gs_regression_samples": [
+    {
+      "entry": "3x3eyes-98-beep",
+      "result": "audio-active",
+      "backend": "fluidsynth",
+      "bytes_transmitted": 1902,
+      "note_ons": 26,
+      "malformed_bytes": 0,
+      "unsupported_opcodes": 0
+    },
+    {
+      "entry": "charm2-98-beep",
+      "result": "audio-active",
+      "backend": "fluidsynth",
+      "bytes_transmitted": 666,
+      "note_ons": 87,
+      "malformed_bytes": 0,
+      "unsupported_opcodes": 0
+    },
+    {
+      "entry": "mjgensk3-98-beep-2",
+      "result": "audio-active",
+      "backend": "fluidsynth",
+      "bytes_transmitted": 1715,
+      "note_ons": 91,
+      "malformed_bytes": 0,
+      "unsupported_opcodes": 0
+    },
+    {
+      "entry": "mjgensk3-98-beep",
+      "result": "audio-active",
+      "backend": "fluidsynth",
+      "bytes_transmitted": 1715,
+      "note_ons": 91,
+      "malformed_bytes": 0,
+      "unsupported_opcodes": 0
+    },
+    {
+      "entry": "yumenosi-98-beep",
+      "selected_track": 2,
+      "result": "audio-active",
+      "backend": "fluidsynth",
+      "bytes_transmitted": 2151,
+      "note_ons": 163,
+      "malformed_bytes": 0,
+      "unsupported_opcodes": 0
+    }
+  ]
+}

@@ -1,0 +1,2156 @@
+{
+  "format": "hoot-catalog-shard",
+  "version": 1,
+  "source_file": "xml/holywood.xml",
+  "date": "2005/09/25",
+  "comments": [
+    " //Holy Wood "
+  ],
+  "games": [
+    {
+      "title": "[PC-9801] VASTNESS ～空虚の生贄達～(OPN)",
+      "driver": {
+        "name": "pc98dos",
+        "type": "opn",
+        "alias": "Holy Wood",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "clockmul",
+          "value": "8"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "MDRV.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MDRV_98.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "GUN_KUAN.TDT",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "DRUMS.DRM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "PP_CAT.KMD",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "SECT01_1.KMD",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "SECT01_2.KMD",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "SECT02_1.KMD",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "SECT02_2.KMD",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "SECT03_1.KMD",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "SECT03_2.KMD",
+          "offset": "-1"
+        },
+        {
+          "type": "conin",
+          "path": "PP_CAT.KMD",
+          "offset": "0x10"
+        },
+        {
+          "type": "conin",
+          "path": "SECT01_1.KMD",
+          "offset": "0x11"
+        },
+        {
+          "type": "conin",
+          "path": "SECT01_2.KMD",
+          "offset": "0x12"
+        },
+        {
+          "type": "conin",
+          "path": "SECT02_1.KMD",
+          "offset": "0x13"
+        },
+        {
+          "type": "conin",
+          "path": "SECT02_2.KMD",
+          "offset": "0x14"
+        },
+        {
+          "type": "conin",
+          "path": "SECT03_1.KMD",
+          "offset": "0x15"
+        },
+        {
+          "type": "conin",
+          "path": "SECT03_2.KMD",
+          "offset": "0x16"
+        },
+        {
+          "type": "shell",
+          "path": "MDRV",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "MDRV -tGUN_KUAN.TDT > nul",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "MDRV -dDRUMS.DRM > nul",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "MDRV -mPPPP.KMD > nul",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "MDRV_98",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "PP_CAT.KMD"
+        },
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "SECT01_1.KMD"
+        },
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "SECT01_2.KMD"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "SECT02_1.KMD"
+        },
+        {
+          "kind": "title",
+          "code": "0x14",
+          "title": "SECT02_2.KMD"
+        },
+        {
+          "kind": "title",
+          "code": "0x15",
+          "title": "SECT03_1.KMD"
+        },
+        {
+          "kind": "title",
+          "code": "0x16",
+          "title": "SECT03_2.KMD"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/holywood.xml",
+      "source_order": 2494,
+      "archive": "vastness_98",
+      "id": "vastness-98-opn"
+    },
+    {
+      "title": "[PC-9801] VASTNESS ～空虚の生贄達～(GS)",
+      "driver": {
+        "name": "pc98dos",
+        "type": "beep",
+        "alias": "Holy Wood",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "clockmul",
+          "value": "8"
+        },
+        {
+          "name": "midiout",
+          "value": "1"
+        },
+        {
+          "name": "midiout_type",
+          "value": "4"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "MDDRV.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MDDRV_98.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "PP_CAT.KMM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "SECT01_1.KMM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "SECT01_2.KMM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "SECT02_1.KMM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "SECT02_2.KMM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "SECT03_1.KMM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "SECT03_2.KMM",
+          "offset": "-1"
+        },
+        {
+          "type": "conin",
+          "path": "PP_CAT.KMM",
+          "offset": "0x10"
+        },
+        {
+          "type": "conin",
+          "path": "SECT01_1.KMM",
+          "offset": "0x11"
+        },
+        {
+          "type": "conin",
+          "path": "SECT01_2.KMM",
+          "offset": "0x12"
+        },
+        {
+          "type": "conin",
+          "path": "SECT02_1.KMM",
+          "offset": "0x13"
+        },
+        {
+          "type": "conin",
+          "path": "SECT02_2.KMM",
+          "offset": "0x14"
+        },
+        {
+          "type": "conin",
+          "path": "SECT03_1.KMM",
+          "offset": "0x15"
+        },
+        {
+          "type": "conin",
+          "path": "SECT03_2.KMM",
+          "offset": "0x16"
+        },
+        {
+          "type": "shell",
+          "path": "MDDRV",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "MDDRV_98",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "PP_CAT.KMM"
+        },
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "SECT01_1.KMM"
+        },
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "SECT01_2.KMM"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "SECT02_1.KMM"
+        },
+        {
+          "kind": "title",
+          "code": "0x14",
+          "title": "SECT02_2.KMM"
+        },
+        {
+          "kind": "title",
+          "code": "0x15",
+          "title": "SECT03_1.KMM"
+        },
+        {
+          "kind": "title",
+          "code": "0x16",
+          "title": "SECT03_2.KMM"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/holywood.xml",
+      "source_order": 2495,
+      "archive": "vastness_98",
+      "id": "vastness-98-beep"
+    },
+    {
+      "title": "[PC-9821] VASTNESS ～空虚の生贄達～",
+      "driver": {
+        "name": "pc98vx",
+        "type": "86",
+        "alias": "Holy Wood",
+        "platform": "NEC PC-9821"
+      },
+      "options": [
+        {
+          "name": "bootcs",
+          "value": "0x0060"
+        },
+        {
+          "name": "bootip",
+          "value": "0x0000"
+        },
+        {
+          "name": "funcvect",
+          "value": "0x7f"
+        },
+        {
+          "name": "adressing",
+          "value": "0"
+        },
+        {
+          "name": "dataaddr",
+          "value": "0x10000"
+        },
+        {
+          "name": "filesize",
+          "value": "0x6000"
+        },
+        {
+          "name": "datamax",
+          "value": "0xff"
+        },
+        {
+          "name": "clockmul",
+          "value": "8"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "DOFMD_98.BIN",
+          "offset": "0x600"
+        },
+        {
+          "type": "code",
+          "path": "VMD",
+          "offset": "0xfa0"
+        },
+        {
+          "type": "bgm",
+          "path": "VA02.MDF",
+          "offset": "0x01"
+        },
+        {
+          "type": "bgm",
+          "path": "VA03.MDF",
+          "offset": "0x02"
+        },
+        {
+          "type": "bgm",
+          "path": "VA04.MDF",
+          "offset": "0x03"
+        },
+        {
+          "type": "bgm",
+          "path": "VA05.MDF",
+          "offset": "0x04"
+        },
+        {
+          "type": "bgm",
+          "path": "VA06.MDF",
+          "offset": "0x05"
+        },
+        {
+          "type": "bgm",
+          "path": "VA07.MDF",
+          "offset": "0x06"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "VA02.MDF :"
+        },
+        {
+          "kind": "title",
+          "code": "0x02",
+          "title": "VA03.MDF :"
+        },
+        {
+          "kind": "title",
+          "code": "0x03",
+          "title": "VA04.MDF :"
+        },
+        {
+          "kind": "title",
+          "code": "0x04",
+          "title": "VA05.MDF :"
+        },
+        {
+          "kind": "title",
+          "code": "0x05",
+          "title": "VA06.MDF :"
+        },
+        {
+          "kind": "title",
+          "code": "0x06",
+          "title": "VA07.MDF :"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/holywood.xml",
+      "source_order": 2496,
+      "archive": "vastness_21",
+      "id": "vastness-21-86"
+    },
+    {
+      "title": "[PC-9801] PP DISK No.01(OPN)",
+      "driver": {
+        "name": "pc98dos",
+        "type": "opn",
+        "alias": "Holy Wood",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "fm_mix",
+          "value": "0"
+        },
+        {
+          "name": "ssg_mix",
+          "value": "-18"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "MDRV.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MDRV_98.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "GUN_KUAN.TDT",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "DRUMS.DRM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "PPDISK01.KMD",
+          "offset": "-1"
+        },
+        {
+          "type": "conin",
+          "path": "PPDISK01.KMD",
+          "offset": "0x10"
+        },
+        {
+          "type": "shell",
+          "path": "MDRV",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "MDRV -tGUN_KUAN.TDT",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "MDRV -dDRUMS.DRM",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "MDRV_98",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "PPDISK01.KMD"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/holywood.xml",
+      "source_order": 2497,
+      "archive": "ppdisk01_98",
+      "id": "ppdisk01-98-opn"
+    },
+    {
+      "title": "[PC-9801] PP DISK No.01(GS)",
+      "driver": {
+        "name": "pc98dos",
+        "type": "beep",
+        "alias": "Holy Wood",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "clockmul",
+          "value": "4"
+        },
+        {
+          "name": "midiout",
+          "value": "1"
+        },
+        {
+          "name": "midiout_type",
+          "value": "4"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "MDDRV.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MDDRV_98.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "PPDISK01.KMM",
+          "offset": "-1"
+        },
+        {
+          "type": "conin",
+          "path": "PPDISK01.KMM",
+          "offset": "0x10"
+        },
+        {
+          "type": "shell",
+          "path": "MDDRV",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "MDDRV_98",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "PPDISK01.KMM"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/holywood.xml",
+      "source_order": 2498,
+      "archive": "ppdisk01_98",
+      "id": "ppdisk01-98-beep"
+    },
+    {
+      "title": "[PC-9801] PP DISK No.02(OPN)",
+      "driver": {
+        "name": "pc98dos",
+        "type": "opn",
+        "alias": "Holy Wood",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "fm_mix",
+          "value": "0"
+        },
+        {
+          "name": "ssg_mix",
+          "value": "-18"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "MDRV.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MDRV_98.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "GUN_KUAN.TDT",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "DRUMS.DRM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "PPDISK01.KMD",
+          "offset": "-1"
+        },
+        {
+          "type": "conin",
+          "path": "PPDISK01.KMD",
+          "offset": "0x10"
+        },
+        {
+          "type": "shell",
+          "path": "MDRV",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "MDRV -tGUN_KUAN.TDT",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "MDRV -dDRUMS.DRM",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "MDRV_98",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "PPDISK01.KMD"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/holywood.xml",
+      "source_order": 2499,
+      "archive": "ppdisk02_98",
+      "id": "ppdisk02-98-opn"
+    },
+    {
+      "title": "[PC-9801] PP DISK No.02(GS)",
+      "driver": {
+        "name": "pc98dos",
+        "type": "beep",
+        "alias": "Holy Wood",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "clockmul",
+          "value": "4"
+        },
+        {
+          "name": "midiout",
+          "value": "1"
+        },
+        {
+          "name": "midiout_type",
+          "value": "4"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "MDDRV.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MDDRV_98.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "PPDISK01.KMM",
+          "offset": "-1"
+        },
+        {
+          "type": "conin",
+          "path": "PPDISK01.KMM",
+          "offset": "0x10"
+        },
+        {
+          "type": "shell",
+          "path": "MDDRV",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "MDDRV_98",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "PPDISK01.KMM"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/holywood.xml",
+      "source_order": 2500,
+      "archive": "ppdisk02_98",
+      "id": "ppdisk02-98-beep"
+    },
+    {
+      "title": "[PC-9801] PP DISK No.03(OPN)",
+      "driver": {
+        "name": "pc98dos",
+        "type": "opn",
+        "alias": "Holy Wood",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "fm_mix",
+          "value": "0"
+        },
+        {
+          "name": "ssg_mix",
+          "value": "-18"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "MDRV.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MDRV_98.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "GUN_KUAN.TDT",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "DRUMS.DRM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "PPDISK01.KMD",
+          "offset": "-1"
+        },
+        {
+          "type": "conin",
+          "path": "PPDISK01.KMD",
+          "offset": "0x10"
+        },
+        {
+          "type": "shell",
+          "path": "MDRV",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "MDRV -tGUN_KUAN.TDT",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "MDRV -dDRUMS.DRM",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "MDRV_98",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "PPDISK01.KMD"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/holywood.xml",
+      "source_order": 2501,
+      "archive": "ppdisk03_98",
+      "id": "ppdisk03-98-opn"
+    },
+    {
+      "title": "[PC-9801] PP DISK No.03(GS)",
+      "driver": {
+        "name": "pc98dos",
+        "type": "beep",
+        "alias": "Holy Wood",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "clockmul",
+          "value": "4"
+        },
+        {
+          "name": "midiout",
+          "value": "1"
+        },
+        {
+          "name": "midiout_type",
+          "value": "4"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "MDDRV.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MDDRV_98.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "PPDISK01.KMM",
+          "offset": "-1"
+        },
+        {
+          "type": "conin",
+          "path": "PPDISK01.KMM",
+          "offset": "0x10"
+        },
+        {
+          "type": "shell",
+          "path": "MDDRV",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "MDDRV_98",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "PPDISK01.KMM"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/holywood.xml",
+      "source_order": 2502,
+      "archive": "ppdisk03_98",
+      "id": "ppdisk03-98-beep"
+    },
+    {
+      "title": "[PC-9801] PP DISK No.04",
+      "driver": {
+        "name": "pc98dos",
+        "type": "opn",
+        "alias": "Holy Wood",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "fm_mix",
+          "value": "0"
+        },
+        {
+          "name": "ssg_mix",
+          "value": "-18"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "MDRV.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MDRV_98.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "GUN_KUAN.TDT",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "DRUMS.DRM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "PPDISK01.KMD",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "PPDISK02.KMD",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "PPDISK03.KMD",
+          "offset": "-1"
+        },
+        {
+          "type": "conin",
+          "path": "PPDISK01.KMD",
+          "offset": "0x10"
+        },
+        {
+          "type": "conin",
+          "path": "PPDISK02.KMD",
+          "offset": "0x11"
+        },
+        {
+          "type": "conin",
+          "path": "PPDISK03.KMD",
+          "offset": "0x12"
+        },
+        {
+          "type": "shell",
+          "path": "MDRV",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "MDRV -tGUN_KUAN.TDT",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "MDRV -dDRUMS.DRM",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "MDRV_98",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "PPDISK01.KMD"
+        },
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "PPDISK02.KMD"
+        },
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "PPDISK03.KMD"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/holywood.xml",
+      "source_order": 2503,
+      "archive": "ppdisk04_98",
+      "id": "ppdisk04-98-opn"
+    },
+    {
+      "title": "[PC-9801] PP DISK No.05",
+      "driver": {
+        "name": "pc98dos",
+        "type": "opn",
+        "alias": "Holy Wood",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "fm_mix",
+          "value": "0"
+        },
+        {
+          "name": "ssg_mix",
+          "value": "-18"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "MDRV.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MDRV_98.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "GUN_KUAN.TDT",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "DRUMS.DRM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "PPDISK03.KMD",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "PPDISK04.KMD",
+          "offset": "-1"
+        },
+        {
+          "type": "conin",
+          "path": "PPDISK03.KMD",
+          "offset": "0x10"
+        },
+        {
+          "type": "conin",
+          "path": "PPDISK04.KMD",
+          "offset": "0x11"
+        },
+        {
+          "type": "shell",
+          "path": "MDRV",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "MDRV -tGUN_KUAN.TDT",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "MDRV -dDRUMS.DRM",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "MDRV_98",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "PPDISK03.KMD"
+        },
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "PPDISK04.KMD"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/holywood.xml",
+      "source_order": 2504,
+      "archive": "ppdisk05_98",
+      "id": "ppdisk05-98-opn"
+    },
+    {
+      "title": "[PC-9801] PP DISK No.06",
+      "driver": {
+        "name": "pc98dos",
+        "type": "opn",
+        "alias": "Holy Wood",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "fm_mix",
+          "value": "0"
+        },
+        {
+          "name": "ssg_mix",
+          "value": "-18"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "MDRV.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MDRV_98.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "GUN_KUAN.TDT",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "DRUMS.DRM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "PPDISK01.KMD",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "PPDISK02.KMD",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "PPDISK03.KMD",
+          "offset": "-1"
+        },
+        {
+          "type": "conin",
+          "path": "PPDISK01.KMD",
+          "offset": "0x10"
+        },
+        {
+          "type": "conin",
+          "path": "PPDISK02.KMD",
+          "offset": "0x11"
+        },
+        {
+          "type": "conin",
+          "path": "PPDISK03.KMD",
+          "offset": "0x12"
+        },
+        {
+          "type": "shell",
+          "path": "MDRV",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "MDRV -tGUN_KUAN.TDT",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "MDRV -dDRUMS.DRM",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "MDRV_98",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "PPDISK01.KMD"
+        },
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "PPDISK02.KMD"
+        },
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "PPDISK03.KMD"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/holywood.xml",
+      "source_order": 2505,
+      "archive": "ppdisk06_98",
+      "id": "ppdisk06-98-opn"
+    },
+    {
+      "title": "[PC-9801] PP DISK No.07",
+      "driver": {
+        "name": "pc98dos",
+        "type": "opn",
+        "alias": "Holy Wood",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "fm_mix",
+          "value": "0"
+        },
+        {
+          "name": "ssg_mix",
+          "value": "-18"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "MDRV.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MDRV_98.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "GUN_KUAN.TDT",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "DRUMS.DRM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "PPDISK05.KMD",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "PPDISK06.KMD",
+          "offset": "-1"
+        },
+        {
+          "type": "conin",
+          "path": "PPDISK05.KMD",
+          "offset": "0x10"
+        },
+        {
+          "type": "conin",
+          "path": "PPDISK06.KMD",
+          "offset": "0x11"
+        },
+        {
+          "type": "shell",
+          "path": "MDRV",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "MDRV -tGUN_KUAN.TDT",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "MDRV -dDRUMS.DRM",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "MDRV_98",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "PPDISK05.KMD"
+        },
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "PPDISK06.KMD"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/holywood.xml",
+      "source_order": 2506,
+      "archive": "ppdisk07_98",
+      "id": "ppdisk07-98-opn"
+    },
+    {
+      "title": "[PC-9801] PP DISK No.08",
+      "driver": {
+        "name": "pc98dos",
+        "type": "opn",
+        "alias": "Holy Wood",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "fm_mix",
+          "value": "0"
+        },
+        {
+          "name": "ssg_mix",
+          "value": "-18"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "MDRV.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MDRV_98.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "GUN_KUAN.TDT",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "DRUMS.DRM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "PPDISK03.KMD",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "PPDISK05.KMD",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "PPDISK06.KMD",
+          "offset": "-1"
+        },
+        {
+          "type": "conin",
+          "path": "PPDISK03.KMD",
+          "offset": "0x10"
+        },
+        {
+          "type": "conin",
+          "path": "PPDISK05.KMD",
+          "offset": "0x11"
+        },
+        {
+          "type": "conin",
+          "path": "PPDISK06.KMD",
+          "offset": "0x12"
+        },
+        {
+          "type": "shell",
+          "path": "MDRV",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "MDRV -tGUN_KUAN.TDT",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "MDRV -dDRUMS.DRM",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "MDRV_98",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "PPDISK03.KMD"
+        },
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "PPDISK05.KMD"
+        },
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "PPDISK06.KMD"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/holywood.xml",
+      "source_order": 2507,
+      "archive": "ppdisk08_98",
+      "id": "ppdisk08-98-opn"
+    },
+    {
+      "title": "[PC-9801] PP DISK No.09",
+      "driver": {
+        "name": "pc98dos",
+        "type": "opn",
+        "alias": "Holy Wood",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "fm_mix",
+          "value": "0"
+        },
+        {
+          "name": "ssg_mix",
+          "value": "-18"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "MDRV.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MDRV_98.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "GUN_KUAN.TDT",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "DRUMS.DRM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "PPDISK03.KMD",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "PPDISK05.KMD",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "PPDISK06.KMD",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "PPDISK07.KMD",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "PPDISK08.KMD",
+          "offset": "-1"
+        },
+        {
+          "type": "conin",
+          "path": "PPDISK03.KMD",
+          "offset": "0x10"
+        },
+        {
+          "type": "conin",
+          "path": "PPDISK05.KMD",
+          "offset": "0x11"
+        },
+        {
+          "type": "conin",
+          "path": "PPDISK06.KMD",
+          "offset": "0x12"
+        },
+        {
+          "type": "conin",
+          "path": "PPDISK07.KMD",
+          "offset": "0x13"
+        },
+        {
+          "type": "conin",
+          "path": "PPDISK08.KMD",
+          "offset": "0x14"
+        },
+        {
+          "type": "shell",
+          "path": "MDRV",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "MDRV -tGUN_KUAN.TDT",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "MDRV -dDRUMS.DRM",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "MDRV_98",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "PPDISK03.KMD"
+        },
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "PPDISK05.KMD"
+        },
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "PPDISK06.KMD"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "PPDISK07.KMD"
+        },
+        {
+          "kind": "title",
+          "code": "0x14",
+          "title": "PPDISK08.KMD"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/holywood.xml",
+      "source_order": 2508,
+      "archive": "ppdisk09_98",
+      "id": "ppdisk09-98-opn"
+    },
+    {
+      "title": "[PC-9801] PP DISK No.10",
+      "driver": {
+        "name": "pc98dos",
+        "type": "opn",
+        "alias": "Holy Wood",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "fm_mix",
+          "value": "0"
+        },
+        {
+          "name": "ssg_mix",
+          "value": "-18"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "MDRV.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MDRV_98.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "GUN_KUAN.TDT",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "DRUMS.DRM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "PPDISK03.KMD",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "PPDISK07.KMD",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "PPDISK08.KMD",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "PPDISK09.KMD",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "PPDISK10.KMD",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "PPDISK11.KMD",
+          "offset": "-1"
+        },
+        {
+          "type": "conin",
+          "path": "PPDISK03.KMD",
+          "offset": "0x10"
+        },
+        {
+          "type": "conin",
+          "path": "PPDISK07.KMD",
+          "offset": "0x12"
+        },
+        {
+          "type": "conin",
+          "path": "PPDISK08.KMD",
+          "offset": "0x13"
+        },
+        {
+          "type": "conin",
+          "path": "PPDISK09.KMD",
+          "offset": "0x14"
+        },
+        {
+          "type": "conin",
+          "path": "PPDISK10.KMD",
+          "offset": "0x15"
+        },
+        {
+          "type": "conin",
+          "path": "PPDISK11.KMD",
+          "offset": "0x16"
+        },
+        {
+          "type": "shell",
+          "path": "MDRV",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "MDRV -tGUN_KUAN.TDT",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "MDRV -dDRUMS.DRM",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "MDRV_98",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "PPDISK03.KMD"
+        },
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "PPDISK07.KMD"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "PPDISK08.KMD"
+        },
+        {
+          "kind": "title",
+          "code": "0x14",
+          "title": "PPDISK09.KMD"
+        },
+        {
+          "kind": "title",
+          "code": "0x15",
+          "title": "PPDISK10.KMD"
+        },
+        {
+          "kind": "title",
+          "code": "0x16",
+          "title": "PPDISK11.KMD"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/holywood.xml",
+      "source_order": 2509,
+      "archive": "ppdisk10_98",
+      "id": "ppdisk10-98-opn"
+    },
+    {
+      "title": "[PC-9801] PP DISK No.11",
+      "driver": {
+        "name": "pc98dos",
+        "type": "opn",
+        "alias": "Holy Wood",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "fm_mix",
+          "value": "0"
+        },
+        {
+          "name": "ssg_mix",
+          "value": "-18"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "MDRV.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MDRV_98.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "GUN_KUAN.TDT",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "DRUMS.DRM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "PPDISK03.KMD",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "PPDISK07.KMD",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "PPDISK08.KMD",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "PPDISK09.KMD",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "PPDISK10.KMD",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "PPDISK11.KMD",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "PPDISK12.KMD",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "PPDISK13.KMD",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "PPDISK14.KMD",
+          "offset": "-1"
+        },
+        {
+          "type": "conin",
+          "path": "PPDISK03.KMD",
+          "offset": "0x10"
+        },
+        {
+          "type": "conin",
+          "path": "PPDISK07.KMD",
+          "offset": "0x12"
+        },
+        {
+          "type": "conin",
+          "path": "PPDISK08.KMD",
+          "offset": "0x13"
+        },
+        {
+          "type": "conin",
+          "path": "PPDISK09.KMD",
+          "offset": "0x14"
+        },
+        {
+          "type": "conin",
+          "path": "PPDISK10.KMD",
+          "offset": "0x15"
+        },
+        {
+          "type": "conin",
+          "path": "PPDISK11.KMD",
+          "offset": "0x16"
+        },
+        {
+          "type": "conin",
+          "path": "PPDISK12.KMD",
+          "offset": "0x17"
+        },
+        {
+          "type": "conin",
+          "path": "PPDISK13.KMD",
+          "offset": "0x18"
+        },
+        {
+          "type": "conin",
+          "path": "PPDISK14.KMD",
+          "offset": "0x19"
+        },
+        {
+          "type": "shell",
+          "path": "MDRV",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "MDRV -tGUN_KUAN.TDT",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "MDRV -dDRUMS.DRM",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "MDRV_98",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "PPDISK03.KMD"
+        },
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "PPDISK07.KMD"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "PPDISK08.KMD"
+        },
+        {
+          "kind": "title",
+          "code": "0x14",
+          "title": "PPDISK09.KMD"
+        },
+        {
+          "kind": "title",
+          "code": "0x15",
+          "title": "PPDISK10.KMD"
+        },
+        {
+          "kind": "title",
+          "code": "0x16",
+          "title": "PPDISK11.KMD"
+        },
+        {
+          "kind": "title",
+          "code": "0x17",
+          "title": "PPDISK12.KMD"
+        },
+        {
+          "kind": "title",
+          "code": "0x18",
+          "title": "PPDISK13.KMD"
+        },
+        {
+          "kind": "title",
+          "code": "0x19",
+          "title": "PPDISK14.KMD"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/holywood.xml",
+      "source_order": 2510,
+      "archive": "ppdisk11_98",
+      "id": "ppdisk11-98-opn"
+    },
+    {
+      "title": "[PC-9801] PP DISK No.12",
+      "driver": {
+        "name": "pc98dos",
+        "type": "opn",
+        "alias": "Holy Wood",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "fm_mix",
+          "value": "0"
+        },
+        {
+          "name": "ssg_mix",
+          "value": "-18"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "MDRV.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MDRV_98.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "GUN_KUAN.TDT",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "DRUMS.DRM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "PPDISK03.KMD",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "PPDISK07.KMD",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "PPDISK08.KMD",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "PPDISK09.KMD",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "PPDISK10.KMD",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "PPDISK11.KMD",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "PPDISK12.KMD",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "PPDISK13.KMD",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "PPDISK14.KMD",
+          "offset": "-1"
+        },
+        {
+          "type": "conin",
+          "path": "PPDISK03.KMD",
+          "offset": "0x10"
+        },
+        {
+          "type": "conin",
+          "path": "PPDISK07.KMD",
+          "offset": "0x12"
+        },
+        {
+          "type": "conin",
+          "path": "PPDISK08.KMD",
+          "offset": "0x13"
+        },
+        {
+          "type": "conin",
+          "path": "PPDISK09.KMD",
+          "offset": "0x14"
+        },
+        {
+          "type": "conin",
+          "path": "PPDISK10.KMD",
+          "offset": "0x15"
+        },
+        {
+          "type": "conin",
+          "path": "PPDISK11.KMD",
+          "offset": "0x16"
+        },
+        {
+          "type": "conin",
+          "path": "PPDISK12.KMD",
+          "offset": "0x17"
+        },
+        {
+          "type": "conin",
+          "path": "PPDISK13.KMD",
+          "offset": "0x18"
+        },
+        {
+          "type": "conin",
+          "path": "PPDISK14.KMD",
+          "offset": "0x19"
+        },
+        {
+          "type": "shell",
+          "path": "MDRV",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "MDRV -tGUN_KUAN.TDT",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "MDRV -dDRUMS.DRM",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "MDRV_98",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "PPDISK03.KMD"
+        },
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "PPDISK07.KMD"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "PPDISK08.KMD"
+        },
+        {
+          "kind": "title",
+          "code": "0x14",
+          "title": "PPDISK09.KMD"
+        },
+        {
+          "kind": "title",
+          "code": "0x15",
+          "title": "PPDISK10.KMD"
+        },
+        {
+          "kind": "title",
+          "code": "0x16",
+          "title": "PPDISK11.KMD"
+        },
+        {
+          "kind": "title",
+          "code": "0x17",
+          "title": "PPDISK12.KMD"
+        },
+        {
+          "kind": "title",
+          "code": "0x18",
+          "title": "PPDISK13.KMD"
+        },
+        {
+          "kind": "title",
+          "code": "0x19",
+          "title": "PPDISK14.KMD"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/holywood.xml",
+      "source_order": 2511,
+      "archive": "ppdisk12_98",
+      "id": "ppdisk12-98-opn"
+    }
+  ]
+}

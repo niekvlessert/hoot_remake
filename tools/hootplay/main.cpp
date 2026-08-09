@@ -14,18 +14,23 @@
 
 #if defined(__APPLE__)
 #include <AudioToolbox/AudioToolbox.h>
-#include <sys/select.h>
-#include <termios.h>
-#include <unistd.h>
-#else
+#endif
+#if defined(HOOT_HAVE_SDL3)
+#include <SDL3/SDL.h>
+#endif
 #include <chrono>
+#if defined(_WIN32)
+#include <conio.h>
+#include <windows.h>
+#else
 #include <sys/select.h>
 #include <termios.h>
 #include <unistd.h>
 #endif
 
-#include "config/hoot_catalog.h"
-#include "config/hoot_xml_loader.h"
+#include "config/hootplay_config.h"
+#include "config/hoot_app_paths.h"
+#include "core/console_utf8.h"
 #include "core/hoot_api.h"
 #include "../hoot2wav/wav_writer.h"
 
@@ -40,14 +45,18 @@ std::atomic<int> g_nav_delta(0);
 HootContext* g_context = nullptr;
 
 struct Options {
-    std::string catalog = "hoot.xml";
+    std::string catalog = "catalog/hoot.sqlite.zst";
+    std::string config_path;
+    std::string loaded_config_path;
     std::string packs = ".";
     std::string entry_or_archive;
     int rate = 44100;
     bool list = false;
     bool packs_explicit = false;
     bool mute_percussion = false;
+    bool mute_percussion_explicit = false;
     std::string channels;
+    bool channels_explicit = false;
     std::string wav_path;
     int wav_seconds = 0;
     int track = 1;
@@ -56,14 +65,19 @@ struct Options {
 void usage(const char* argv0)
 {
     std::fprintf(stderr,
-                 "usage: %s [--catalog hoot.xml] [--packs dir] [--rate hz] [--channels 3|2-5] [--track n] <archive-or-entry-or-zip>\n"
-                 "       %s --wav output.wav --seconds n [--track n] <archive-or-entry-or-zip>\n"
-                 "       %s --list [--catalog hoot.xml]\n"
+                 "usage: %s [--config hootplay.ini] [options] [archive-or-entry-or-zip]\n"
+                 "       %s --list [--config hootplay.ini]\n"
                  "\n"
-                 "Example: %s --packs packs fz68snd\n"
-                 "         %s --catalog packs/hoot20251231/hoot.xml packs/fz68snd.zip\n"
+                 "Normal runtime settings belong in hootplay.ini. Command-line options\n"
+                 "remain supported as one-shot overrides for backwards compatibility.\n"
+                 "\n"
+                 "Overrides: --catalog file, --packs dir, --rate hz, --channels 3|2-5,\n"
+                 "           --mute-percussion, --track n, --wav file --seconds n\n"
+                 "Config search: --config, HOOTPLAY_CONFIG, ~/.hoot/hootplay.ini, ./hootplay.ini\n"
+                 "\n"
+                 "Example: %s fz68snd\n"
+                 "         %s --config /path/to/hootplay.ini asuka68snd-gs\n"
                  "Controls: Space pause/resume, N next, P previous, Q quit\n",
-                 argv0,
                  argv0,
                  argv0,
                  argv0,
@@ -79,11 +93,104 @@ bool need_value(int argc, char** argv, int index)
     return false;
 }
 
-bool parse_options(int argc, char** argv, Options& options)
+std::string explicit_config_path(int argc, char** argv, bool& supplied, bool& valid)
 {
+    supplied = false;
+    valid = true;
+    std::string result;
     for (int i = 1; i < argc; ++i) {
         const std::string arg = argv[i];
-        if ((arg == "--catalog" || arg == "-c") && need_value(argc, argv, i)) {
+        if (arg == "--config" || arg == "-f") {
+            supplied = true;
+            if (!need_value(argc, argv, i)) {
+                valid = false;
+                return {};
+            }
+            result = argv[++i];
+        }
+    }
+    return result;
+}
+
+std::string discover_config_path(int argc, char** argv, const hoot::HootAppPaths& app_paths, bool& explicit_or_env, bool& valid)
+{
+    bool cli_supplied = false;
+    auto path = explicit_config_path(argc, argv, cli_supplied, valid);
+    if (!valid) return {};
+    if (cli_supplied) {
+        explicit_or_env = true;
+        return path;
+    }
+    if (const char* env = std::getenv("HOOTPLAY_CONFIG"); env != nullptr && env[0] != '\0') {
+        explicit_or_env = true;
+        return env;
+    }
+
+    explicit_or_env = false;
+    if (std::filesystem::is_regular_file(app_paths.config)) return app_paths.config.string();
+    const std::filesystem::path cwd_config = "hootplay.ini";
+    if (std::filesystem::is_regular_file(cwd_config)) {
+        return cwd_config.string();
+    }
+    if (argc > 0 && argv[0] != nullptr && argv[0][0] != '\0') {
+        std::error_code ec;
+        auto executable = std::filesystem::absolute(argv[0], ec);
+        if (!ec) {
+            const auto beside_executable = executable.parent_path() / "hootplay.ini";
+            if (std::filesystem::is_regular_file(beside_executable)) {
+                return beside_executable.string();
+            }
+        }
+    }
+    return {};
+}
+
+void apply_file_config(const hoot::HootplayFileConfig& file, Options& options)
+{
+    if (file.has_catalog) options.catalog = file.catalog;
+    if (file.has_packs) options.packs = file.packs;
+    if (file.has_entry) options.entry_or_archive = file.entry;
+    if (file.has_rate) options.rate = file.rate;
+    if (file.has_list) options.list = file.list;
+    if (file.has_mute_percussion) {
+        options.mute_percussion = file.mute_percussion;
+        options.mute_percussion_explicit = true;
+    }
+    if (file.has_channels) {
+        options.channels = file.channels;
+        options.channels_explicit = true;
+    }
+    if (file.has_wav_path) options.wav_path = file.wav_path;
+    if (file.has_wav_seconds) options.wav_seconds = file.wav_seconds;
+    if (file.has_track) options.track = file.track;
+}
+
+void set_environment_value(const std::string& name, const std::string& value)
+{
+#if defined(_WIN32)
+    _putenv_s(name.c_str(), value.c_str());
+#else
+    setenv(name.c_str(), value.c_str(), 1);
+#endif
+}
+
+void clear_environment_value(const std::string& name)
+{
+#if defined(_WIN32)
+    _putenv_s(name.c_str(), "");
+#else
+    unsetenv(name.c_str());
+#endif
+}
+
+bool parse_options(int argc, char** argv, Options& options)
+{
+    bool positional_seen = false;
+    for (int i = 1; i < argc; ++i) {
+        const std::string arg = argv[i];
+        if ((arg == "--config" || arg == "-f") && need_value(argc, argv, i)) {
+            options.config_path = argv[++i];
+        } else if ((arg == "--catalog" || arg == "-c") && need_value(argc, argv, i)) {
             options.catalog = argv[++i];
         } else if ((arg == "--packs" || arg == "-p") && need_value(argc, argv, i)) {
             options.packs = argv[++i];
@@ -92,8 +199,10 @@ bool parse_options(int argc, char** argv, Options& options)
             options.rate = std::atoi(argv[++i]);
         } else if (arg == "--mute-percussion") {
             options.mute_percussion = true;
+            options.mute_percussion_explicit = true;
         } else if (arg == "--channels" && need_value(argc, argv, i)) {
             options.channels = argv[++i];
+            options.channels_explicit = true;
         } else if (arg == "--wav" && need_value(argc, argv, i)) {
             options.wav_path = argv[++i];
         } else if (arg == "--seconds" && need_value(argc, argv, i)) {
@@ -108,8 +217,9 @@ bool parse_options(int argc, char** argv, Options& options)
         } else if (!arg.empty() && arg[0] == '-') {
             std::fprintf(stderr, "unknown option: %s\n", arg.c_str());
             return false;
-        } else if (options.entry_or_archive.empty()) {
+        } else if (!positional_seen) {
             options.entry_or_archive = arg;
+            positional_seen = true;
         } else {
             std::fprintf(stderr, "unexpected argument: %s\n", arg.c_str());
             return false;
@@ -149,51 +259,26 @@ EntryLookup normalize_entry_lookup(Options& options)
     return lookup;
 }
 
-bool is_supported_driver(const hoot::HootEntry& entry)
+bool is_supported_probe(const HootDriverProbe& probe)
 {
-    if (entry.driver_name == "x68k/generic") {
-        return true;
-    }
-    if (entry.driver_alias == "microcabin/pc88"
-        || (entry.driver_name == "pc88/opn" && entry.archive == "xak2_98")) {
-        return true;
-    }
-    if (entry.driver_name == "pc98dos/opn") {
-        return true;
-    }
-    return false;
+    return probe.status >= HOOT_SUPPORT_EXPERIMENTAL;
 }
 
-const hoot::HootEntry* resolve_entry(const hoot::HootCatalog& catalog, const std::string& name)
+int list_entries(HootContext* ctx)
 {
-    if (const auto* by_id = catalog.find(name)) {
-        return by_id;
-    }
-    const hoot::HootEntry* first_archive_match = nullptr;
-    for (const auto& entry : catalog.entries()) {
-        if (entry.archive == name) {
-            if (first_archive_match == nullptr) {
-                first_archive_match = &entry;
-            }
-            if (is_supported_driver(entry)) {
-                return &entry;
-            }
-        }
-    }
-    return first_archive_match;
-}
-
-int list_entries(const hoot::HootCatalog& catalog)
-{
-    for (const auto& entry : catalog.entries()) {
-        if (!is_supported_driver(entry)) {
-            continue;
-        }
-        std::printf("%s\tarchive=%s\tdriver=%s\t%s\n",
-                    entry.id.c_str(),
-                    entry.archive.c_str(),
-                    entry.driver_name.c_str(),
-                    entry.title.c_str());
+    const int count = hoot_get_entry_count(ctx);
+    for (int i = 0; i < count; ++i) {
+        HootEntryInfo entry{};
+        if (hoot_get_entry_info(ctx, i, &entry) != HOOT_OK) continue;
+        HootDriverProbe probe{};
+        if (hoot_probe_entry(ctx, entry.id, &probe) != HOOT_OK || !is_supported_probe(probe)) continue;
+        std::printf("%s\tarchive=%s\tdriver=%s\tstatus=%s\thost=%s\t%s\n",
+                    entry.id,
+                    entry.archive,
+                    entry.driver,
+                    hoot_support_status_name(probe.status),
+                    probe.driver_id,
+                    entry.title);
     }
     return 0;
 }
@@ -237,30 +322,34 @@ void handle_command_char(char c)
     }
 }
 
+#if defined(_WIN32)
+class TerminalRawMode {
+public:
+    TerminalRawMode() = default;
+};
+
+void keyboard_thread()
+{
+    TerminalRawMode raw;
+    while (!g_quit) {
+        if (_kbhit()) handle_command_char(static_cast<char>(_getch()));
+        else Sleep(20);
+    }
+}
+#else
 class TerminalRawMode {
 public:
     TerminalRawMode()
     {
-        if (!isatty(STDIN_FILENO)) {
-            return;
-        }
-        if (tcgetattr(STDIN_FILENO, &saved_) != 0) {
-            return;
-        }
+        if (!isatty(STDIN_FILENO)) return;
+        if (tcgetattr(STDIN_FILENO, &saved_) != 0) return;
         termios raw = saved_;
         raw.c_lflag &= static_cast<tcflag_t>(~(ICANON | ECHO));
         raw.c_cc[VMIN] = 0;
         raw.c_cc[VTIME] = 0;
         enabled_ = tcsetattr(STDIN_FILENO, TCSANOW, &raw) == 0;
     }
-
-    ~TerminalRawMode()
-    {
-        if (enabled_) {
-            tcsetattr(STDIN_FILENO, TCSANOW, &saved_);
-        }
-    }
-
+    ~TerminalRawMode() { if (enabled_) tcsetattr(STDIN_FILENO, TCSANOW, &saved_); }
 private:
     bool enabled_ = false;
     termios saved_{};
@@ -270,20 +359,16 @@ void keyboard_thread()
 {
     TerminalRawMode raw;
     while (!g_quit) {
-        fd_set fds;
-        FD_ZERO(&fds);
-        FD_SET(STDIN_FILENO, &fds);
-        timeval tv{};
-        tv.tv_usec = 50000;
+        fd_set fds; FD_ZERO(&fds); FD_SET(STDIN_FILENO, &fds);
+        timeval tv{}; tv.tv_usec = 50000;
         const int ready = select(STDIN_FILENO + 1, &fds, nullptr, nullptr, &tv);
         if (ready > 0 && FD_ISSET(STDIN_FILENO, &fds)) {
             char c = 0;
-            if (read(STDIN_FILENO, &c, 1) == 1) {
-                handle_command_char(c);
-            }
+            if (read(STDIN_FILENO, &c, 1) == 1) handle_command_char(c);
         }
     }
 }
+#endif
 
 bool render_frames(std::vector<int16_t>& pcm, size_t frames, size_t* rendered)
 {
@@ -306,7 +391,7 @@ bool render_frames(std::vector<int16_t>& pcm, size_t frames, size_t* rendered)
 bool record_current_track(const std::string& path, int seconds, uint32_t sample_rate)
 {
     if (seconds <= 0) {
-        std::fprintf(stderr, "hootplay: --seconds must be positive with --wav\n");
+        std::fprintf(stderr, "hootplay: seconds must be positive when WAV output is configured\n");
         return false;
     }
 
@@ -396,112 +481,154 @@ bool play_current_track(uint32_t sample_rate)
     g_queue = nullptr;
     return true;
 }
+#elif defined(HOOT_HAVE_SDL3)
+bool play_current_track(uint32_t sample_rate)
+{
+    if (!SDL_InitSubSystem(SDL_INIT_AUDIO)) {
+        std::fprintf(stderr, "hootplay: SDL audio init failed: %s\n", SDL_GetError());
+        return false;
+    }
+    SDL_AudioSpec spec{};
+    spec.format = SDL_AUDIO_S16;
+    spec.channels = 2;
+    spec.freq = static_cast<int>(sample_rate);
+    SDL_AudioStream* stream = SDL_OpenAudioDeviceStream(SDL_AUDIO_DEVICE_DEFAULT_PLAYBACK, &spec, nullptr, nullptr);
+    if (!stream) {
+        std::fprintf(stderr, "hootplay: SDL audio open failed: %s\n", SDL_GetError());
+        SDL_QuitSubSystem(SDL_INIT_AUDIO);
+        return false;
+    }
+    SDL_ResumeAudioStreamDevice(stream);
+    constexpr int bytes_per_frame = 4;
+    while (!g_quit && !g_stop_track) {
+        int queued = SDL_GetAudioStreamQueued(stream);
+        if (queued < 0) queued = 0;
+        if (queued < static_cast<int>(kFramesPerBuffer * bytes_per_frame * 2)) {
+            std::vector<int16_t> pcm;
+            size_t rendered = 0;
+            if (!render_frames(pcm, kFramesPerBuffer, &rendered) && rendered == 0) break;
+            if (!SDL_PutAudioStreamData(stream, pcm.data(), static_cast<int>(rendered * bytes_per_frame))) {
+                std::fprintf(stderr, "hootplay: SDL audio queue failed: %s\n", SDL_GetError());
+                break;
+            }
+        } else {
+            SDL_Delay(2);
+        }
+    }
+    SDL_DestroyAudioStream(stream);
+    SDL_QuitSubSystem(SDL_INIT_AUDIO);
+    return true;
+}
 #else
 bool play_current_track(uint32_t sample_rate)
 {
-    std::fprintf(stderr, "hootplay: no native audio backend built; rendering silently\n");
+    std::fprintf(stderr, "hootplay: SDL3 not available; rendering silently\n");
     while (!g_quit && !g_stop_track) {
         std::vector<int16_t> pcm;
         size_t rendered = 0;
-        if (!render_frames(pcm, kFramesPerBuffer, &rendered) && rendered == 0) {
-            break;
-        }
+        if (!render_frames(pcm, kFramesPerBuffer, &rendered) && rendered == 0) break;
         std::this_thread::sleep_for(std::chrono::milliseconds(rendered * 1000 / sample_rate));
     }
     return true;
 }
 #endif
 
-void print_now_playing(const hoot::HootEntry& entry, int track)
+void print_now_playing(const HootEntryInfo& entry,
+                       const std::vector<HootCatalogTrackInfo>& tracks,
+                       int track)
 {
-    const auto title = track >= 0 && static_cast<size_t>(track) < entry.tracks.size()
-        ? entry.tracks[track].title
+    const char* title = (track >= 0 && static_cast<size_t>(track) < tracks.size())
+        ? tracks[static_cast<size_t>(track)].title
         : entry.title;
     std::printf("Playing %d/%zu: %s [%s]\n",
                 track + 1,
-                entry.tracks.size(),
-                title.c_str(),
-                entry.archive.c_str());
+                tracks.size(),
+                title,
+                entry.archive);
     std::printf("Controls: Space pause/resume, N next, P previous, Q quit\n");
     std::fflush(stdout);
+}
+
+bool help_requested(int argc, char** argv)
+{
+    for (int i = 1; i < argc; ++i) {
+        const std::string arg = argv[i];
+        if (arg == "--help" || arg == "-h") return true;
+    }
+    return false;
 }
 
 } // namespace
 
 int main(int argc, char** argv)
 {
+    hoot::enable_utf8_console();
+    hoot::HootAppPaths app_paths;
+    std::string home_error;
+    if (!hoot::bootstrap_hoot_home(app_paths, home_error)) {
+        std::fprintf(stderr, "hootplay: %s\n", home_error.c_str());
+        return 1;
+    }
+    hoot::apply_hoot_home_resource_defaults(app_paths);
+    if (help_requested(argc, argv)) {
+        usage(argv[0]);
+        return 0;
+    }
+
     Options options;
+    if (std::filesystem::is_regular_file(app_paths.default_catalog)) options.catalog = app_paths.default_catalog.string();
+    hoot::HootplayFileConfig file_config;
+    bool config_required = false;
+    bool config_path_valid = true;
+    const auto config_path = discover_config_path(argc, argv, app_paths, config_required, config_path_valid);
+    if (!config_path_valid) {
+        usage(argv[0]);
+        return 2;
+    }
+    if (!config_path.empty()) {
+        std::string config_error;
+        if (!hoot::load_hootplay_config(config_path, file_config, config_error)) {
+            std::fprintf(stderr, "hootplay: %s\n", config_error.c_str());
+            return config_required ? 2 : 1;
+        }
+        options.loaded_config_path = std::filesystem::absolute(config_path).lexically_normal().string();
+        apply_file_config(file_config, options);
+        hoot::apply_hootplay_environment(file_config);
+    }
     if (!parse_options(argc, argv, options)) {
         usage(argv[0]);
         return 2;
     }
     if (options.rate <= 0) {
-        std::fprintf(stderr, "--rate must be positive\n");
+        std::fprintf(stderr, "sample rate must be positive\n");
         return 2;
     }
-
-    hoot::HootCatalog catalog;
-    hoot::HootXmlLoader loader;
-    std::string error;
-    if (!loader.load_file(options.catalog, catalog, error)) {
-        std::fprintf(stderr, "%s\n", error.c_str());
-        return 1;
-    }
-
-    if (options.list) {
-        return list_entries(catalog);
-    }
-    if (options.entry_or_archive.empty()) {
-        usage(argv[0]);
+    if (options.track <= 0) {
+        std::fprintf(stderr, "track must be 1 or higher\n");
         return 2;
     }
-    const auto lookup = normalize_entry_lookup(options);
-    if (lookup.name.empty()) {
-        std::fprintf(stderr, "unable to derive archive name from zip path: %s\n",
-                     options.entry_or_archive.c_str());
-        return 1;
+    if (options.mute_percussion_explicit) {
+        set_environment_value("HOOT_X68K_MUTE_PERCUSSION", options.mute_percussion ? "1" : "0");
+    }
+    if (options.channels_explicit) {
+        if (options.channels.empty()) clear_environment_value("HOOT_X68K_CHANNELS");
+        else set_environment_value("HOOT_X68K_CHANNELS", options.channels);
     }
 
-    const auto* entry = resolve_entry(catalog, lookup.name);
-    if (entry == nullptr) {
-        if (lookup.from_zip_path) {
-            std::fprintf(stderr,
-                         "no supported catalog entry found in %s for archive \"%s\" from zip path: %s\n",
-                         options.catalog.c_str(),
-                         lookup.name.c_str(),
-                         options.entry_or_archive.c_str());
-        } else {
-            std::fprintf(stderr, "entry/archive not found in %s: %s\n",
-                         options.catalog.c_str(),
-                         options.entry_or_archive.c_str());
+    EntryLookup lookup{};
+    if (!options.list) {
+        if (options.entry_or_archive.empty()) {
+            usage(argv[0]);
+            return 2;
         }
-        return 1;
-    }
-    if (!is_supported_driver(*entry)) {
-        if (lookup.from_zip_path) {
-            std::fprintf(stderr,
-                         "no supported catalog entry found in %s for archive \"%s\" from zip path: %s\n",
-                         options.catalog.c_str(),
-                         lookup.name.c_str(),
+        lookup = normalize_entry_lookup(options);
+        if (lookup.name.empty()) {
+            std::fprintf(stderr, "unable to derive archive name from zip path: %s\n",
                          options.entry_or_archive.c_str());
-        } else {
-            std::fprintf(stderr, "unsupported driver for %s: %s\n",
-                         entry->id.c_str(),
-                         entry->driver_name.c_str());
+            return 1;
         }
-        return 1;
-    }
-    if (entry->tracks.empty()) {
-        std::fprintf(stderr, "entry has no tracks: %s\n", entry->id.c_str());
-        return 1;
     }
 
-    if (options.mute_percussion) {
-        setenv("HOOT_X68K_MUTE_PERCUSSION", "1", 1);
-    }
-    if (!options.channels.empty()) {
-        setenv("HOOT_X68K_CHANNELS", options.channels.c_str(), 1);
-    }
     HootConfig config{};
     config.sample_rate = options.rate;
     config.packs_path = options.packs.c_str();
@@ -510,47 +637,66 @@ int main(int argc, char** argv)
         std::fprintf(stderr, "unable to create Hoot context\n");
         return 1;
     }
-    if (hoot_load_xml(ctx.get(), options.catalog.c_str()) != HOOT_OK) {
+    if (hoot_load_catalog(ctx.get(), options.catalog.c_str()) != HOOT_OK) {
         std::fprintf(stderr, "%s\n", hoot_last_error(ctx.get()));
         return 1;
     }
-    if (hoot_load_entry(ctx.get(), entry->id.c_str()) != HOOT_OK) {
+    if (options.list) return list_entries(ctx.get());
+
+    HootEntryInfo entry{};
+    if (hoot_find_entry(ctx.get(), lookup.name.c_str(), &entry) != HOOT_OK) {
+        if (lookup.from_zip_path) {
+            std::fprintf(stderr,
+                         "no catalog entry found in %s for archive \"%s\" from zip path: %s\n",
+                         options.catalog.c_str(), lookup.name.c_str(), options.entry_or_archive.c_str());
+        } else {
+            std::fprintf(stderr, "%s\n", hoot_last_error(ctx.get()));
+        }
+        return 1;
+    }
+    HootDriverProbe probe{};
+    if (hoot_probe_entry(ctx.get(), entry.id, &probe) != HOOT_OK || !is_supported_probe(probe)) {
+        std::fprintf(stderr, "unsupported driver for %s: %s\n", entry.id, entry.driver);
+        return 1;
+    }
+    if (entry.track_count <= 0) {
+        std::fprintf(stderr, "entry has no tracks: %s\n", entry.id);
+        return 1;
+    }
+    if (hoot_load_entry(ctx.get(), entry.id) != HOOT_OK) {
         std::fprintf(stderr, "%s\n", hoot_last_error(ctx.get()));
         return 1;
+    }
+    std::vector<HootCatalogTrackInfo> tracks(static_cast<size_t>(entry.track_count));
+    for (int i = 0; i < entry.track_count; ++i) {
+        if (hoot_get_catalog_track_info(ctx.get(), i, &tracks[static_cast<size_t>(i)]) != HOOT_OK) {
+            std::fprintf(stderr, "unable to read track %d: %s\n", i + 1, hoot_last_error(ctx.get()));
+            return 1;
+        }
     }
 
     std::printf("==================================================\n");
-    std::printf("Game Title:   %s\n", entry->title.c_str());
-    std::printf("ID:           %s\n", entry->id.c_str());
-    std::printf("Driver:       %s\n", entry->driver_name.c_str());
-    if (!entry->driver_alias.empty()) {
-        std::printf("Driver Alias: %s\n", entry->driver_alias.c_str());
+    if (!options.loaded_config_path.empty()) {
+        std::printf("Config:       %s\n", options.loaded_config_path.c_str());
     }
-    std::printf("Archive:      %s\n", entry->archive.c_str());
-    if (!entry->options.empty()) {
-        std::printf("Options:\n");
-        for (const auto& opt : entry->options) {
-            std::printf("  - %s: %d (0x%x)\n", opt.first.c_str(), opt.second, opt.second);
-        }
-    }
-    if (!entry->assets.empty()) {
-        std::printf("Assets:\n");
-        for (const auto& asset : entry->assets) {
-            std::printf("  - [%s] %s (offset: 0x%x)\n", asset.type.c_str(), asset.path.c_str(), asset.offset);
-        }
-    }
+    std::printf("Game Title:   %s\n", entry.title);
+    std::printf("ID:           %s\n", entry.id);
+    std::printf("Driver:       %s\n", entry.driver);
+    std::printf("Replay Host:  %s (%s)\n", probe.driver_id, hoot_support_status_name(probe.status));
+    std::printf("Archive:      %s\n", entry.archive);
     std::printf("==================================================\n\n");
+
+    int track = options.track - 1;
+    if (track < 0 || static_cast<size_t>(track) >= tracks.size()) {
+        std::fprintf(stderr, "hootplay: configured track is outside the catalog track list\n");
+        return 1;
+    }
 
     std::signal(SIGINT, handle_signal);
     std::signal(SIGTERM, handle_signal);
 
     std::thread controls(keyboard_thread);
     g_context = ctx.get();
-    int track = options.track - 1;
-    if (track < 0 || static_cast<size_t>(track) >= entry->tracks.size()) {
-        std::fprintf(stderr, "hootplay: --track is outside the catalog track list\n");
-        return 1;
-    }
     while (!g_quit) {
         if (hoot_select_track(ctx.get(), track) != HOOT_OK) {
             std::fprintf(stderr, "%s\n", hoot_last_error(ctx.get()));
@@ -565,7 +711,7 @@ int main(int argc, char** argv)
         g_stop_track = false;
         g_paused = false;
         g_nav_delta = 0;
-        print_now_playing(*entry, track);
+        print_now_playing(entry, tracks, track);
         const bool played = options.wav_path.empty()
             ? play_current_track(static_cast<uint32_t>(options.rate))
             : record_current_track(options.wav_path,
@@ -583,9 +729,9 @@ int main(int argc, char** argv)
             break;
         }
         if (delta < 0) {
-            track = track == 0 ? static_cast<int>(entry->tracks.size() - 1) : track - 1;
+            track = track == 0 ? static_cast<int>(tracks.size() - 1) : track - 1;
         } else {
-            track = (track + 1) % static_cast<int>(entry->tracks.size());
+            track = (track + 1) % static_cast<int>(tracks.size());
         }
     }
     g_context = nullptr;

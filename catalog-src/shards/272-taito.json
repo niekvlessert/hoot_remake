@@ -1,0 +1,516 @@
+{
+  "format": "hoot-catalog-shard",
+  "version": 1,
+  "source_file": "xml/taito.xml",
+  "date": "2005/09/25",
+  "comments": [
+    " //taito "
+  ],
+  "games": [
+    {
+      "title": "[PC-8801] ARKANOID",
+      "driver": {
+        "name": "pc88",
+        "type": "opn",
+        "alias": "TAITO",
+        "platform": "NEC PC-8801"
+      },
+      "options": [
+        {
+          "name": "use_rtc",
+          "value": "0x01"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "PATCH",
+          "offset": "0x0000"
+        },
+        {
+          "type": "code",
+          "path": "8000",
+          "offset": "0x8000"
+        },
+        {
+          "type": "code",
+          "path": "B000",
+          "offset": "0xb000"
+        },
+        {
+          "type": "code",
+          "path": "E910",
+          "offset": "0xe910"
+        },
+        {
+          "type": "code",
+          "path": "F000",
+          "offset": "0xf000"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "GAME START"
+        },
+        {
+          "kind": "title",
+          "code": "0x02",
+          "title": "START DEMO EFFECT"
+        },
+        {
+          "kind": "title",
+          "code": "0x0e",
+          "title": "ROUND START"
+        },
+        {
+          "kind": "title",
+          "code": "0x0c",
+          "title": "FINAL STAGE START"
+        },
+        {
+          "kind": "title",
+          "code": "0x0f",
+          "title": "GAME OVER"
+        },
+        {
+          "kind": "title",
+          "code": "0x0d",
+          "title": "NAME ENTRY"
+        },
+        {
+          "kind": "title",
+          "code": "0x04",
+          "title": "PADDLE HIT"
+        },
+        {
+          "kind": "title",
+          "code": "0x03",
+          "title": "PADDLE CATCH"
+        },
+        {
+          "kind": "title",
+          "code": "0x08",
+          "title": "WALL HIT"
+        },
+        {
+          "kind": "title",
+          "code": "0x07",
+          "title": "HARD WALL HIT"
+        },
+        {
+          "kind": "title",
+          "code": "0x09",
+          "title": "LASER"
+        },
+        {
+          "kind": "title",
+          "code": "0x0a",
+          "title": "ENEMY DESTROY"
+        },
+        {
+          "kind": "title",
+          "code": "0x0b",
+          "title": "EXPAND"
+        },
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "BREAK"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "EXTEND"
+        },
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "MISS"
+        },
+        {
+          "kind": "title",
+          "code": "0x05",
+          "title": "code 0x05"
+        },
+        {
+          "kind": "title",
+          "code": "0x06",
+          "title": "code 0x06"
+        },
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "code 0x12"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/taito.xml",
+      "source_order": 4445,
+      "archive": "arka88",
+      "id": "arka88-opn"
+    },
+    {
+      "title": "[PC-8801] Replicart",
+      "driver": {
+        "name": "pc88",
+        "type": "opn",
+        "alias": "TAITO",
+        "platform": "NEC PC-8801"
+      },
+      "options": [
+        {
+          "name": "mdata_addr",
+          "value": "0xd000"
+        },
+        {
+          "name": "mdata_size",
+          "value": "0x1000"
+        },
+        {
+          "name": "use_vrtc",
+          "value": "0x01"
+        },
+        {
+          "name": "showfm3ex",
+          "value": "1"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "PATCH",
+          "offset": "0x0000"
+        },
+        {
+          "type": "code",
+          "path": "PROG",
+          "offset": "0x8100"
+        },
+        {
+          "type": "code",
+          "path": "DRIVER",
+          "offset": "0xc000"
+        },
+        {
+          "type": "code",
+          "path": "SUBMUS",
+          "offset": "0xe000"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS00",
+          "offset": "0x00"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS01",
+          "offset": "0x01"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS02",
+          "offset": "0x02"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS03",
+          "offset": "0x03"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS04",
+          "offset": "0x04"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS05",
+          "offset": "0x05"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x00000000",
+          "title": "BGM #00 タイトル"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000001",
+          "title": "BGM #01 ゲームBGM1"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000002",
+          "title": "BGM #02 ゲームBGM2"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000003",
+          "title": "BGM #03 ゲームBGM3"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000004",
+          "title": "BGM #04"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000005",
+          "title": "BGM #05 エンディング"
+        },
+        {
+          "kind": "title",
+          "code": "0x01000000",
+          "title": "SUB BGM #00 出口オープン"
+        },
+        {
+          "kind": "title",
+          "code": "0x01000001",
+          "title": "SUB BGM #01 次の面へ"
+        },
+        {
+          "kind": "title",
+          "code": "0x01000002",
+          "title": "SUB BGM #02"
+        },
+        {
+          "kind": "title",
+          "code": "0x01000003",
+          "title": "SUB BGM #03"
+        },
+        {
+          "kind": "title",
+          "code": "0x01000004",
+          "title": "SUB BGM #04"
+        },
+        {
+          "kind": "title",
+          "code": "0x01000005",
+          "title": "SUB BGM #00 出口オープン(テンポ速い)"
+        },
+        {
+          "kind": "title",
+          "code": "0x02000000",
+          "title": "EFFECT #00"
+        },
+        {
+          "kind": "title",
+          "code": "0x02000001",
+          "title": "EFFECT #01"
+        },
+        {
+          "kind": "title",
+          "code": "0x02000002",
+          "title": "EFFECT #02"
+        },
+        {
+          "kind": "title",
+          "code": "0x02000003",
+          "title": "EFFECT #03"
+        },
+        {
+          "kind": "title",
+          "code": "0x02000004",
+          "title": "EFFECT #04"
+        },
+        {
+          "kind": "title",
+          "code": "0x02000005",
+          "title": "EFFECT #05"
+        },
+        {
+          "kind": "title",
+          "code": "0x02000006",
+          "title": "EFFECT #06"
+        },
+        {
+          "kind": "title",
+          "code": "0x02000007",
+          "title": "EFFECT #07"
+        },
+        {
+          "kind": "title",
+          "code": "0x02000008",
+          "title": "EFFECT #08"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/taito.xml",
+      "source_order": 4446,
+      "archive": "replcart",
+      "id": "replcart-opn"
+    },
+    {
+      "title": "[PC-9801] ARKANOID",
+      "driver": {
+        "name": "pc98vx",
+        "type": "opn",
+        "alias": "TAITO",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "bootcs",
+          "value": "0x0800"
+        },
+        {
+          "name": "bootip",
+          "value": "0x4000"
+        },
+        {
+          "name": "funcvect",
+          "value": "0x7f"
+        },
+        {
+          "name": "clockmul",
+          "value": "3"
+        },
+        {
+          "name": "wstimer",
+          "value": "2"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "0000",
+          "offset": "0x08000"
+        },
+        {
+          "type": "code",
+          "path": "arkanoid.bin",
+          "offset": "0x0c000"
+        },
+        {
+          "type": "code",
+          "path": "8000",
+          "offset": "0x10000"
+        },
+        {
+          "type": "code",
+          "path": "b000",
+          "offset": "0x13000"
+        },
+        {
+          "type": "code",
+          "path": "c000",
+          "offset": "0x14000"
+        },
+        {
+          "type": "code",
+          "path": "e910",
+          "offset": "0x16910"
+        },
+        {
+          "type": "code",
+          "path": "f000",
+          "offset": "0x17000"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "GAME START"
+        },
+        {
+          "kind": "title",
+          "code": "0x02",
+          "title": "START DEMO EFFECT"
+        },
+        {
+          "kind": "title",
+          "code": "0x0e",
+          "title": "ROUND START"
+        },
+        {
+          "kind": "title",
+          "code": "0x0c",
+          "title": "FINAL STAGE START"
+        },
+        {
+          "kind": "title",
+          "code": "0x0f",
+          "title": "GAME OVER"
+        },
+        {
+          "kind": "title",
+          "code": "0x0d",
+          "title": "NAME ENTRY"
+        },
+        {
+          "kind": "title",
+          "code": "0x04",
+          "title": "PADDLE HIT"
+        },
+        {
+          "kind": "title",
+          "code": "0x03",
+          "title": "PADDLE CATCH"
+        },
+        {
+          "kind": "title",
+          "code": "0x08",
+          "title": "WALL HIT"
+        },
+        {
+          "kind": "title",
+          "code": "0x07",
+          "title": "HARD WALL HIT"
+        },
+        {
+          "kind": "title",
+          "code": "0x09",
+          "title": "LASER"
+        },
+        {
+          "kind": "title",
+          "code": "0x0a",
+          "title": "ENEMY DESTROY"
+        },
+        {
+          "kind": "title",
+          "code": "0x0b",
+          "title": "EXPAND"
+        },
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "BREAK"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "EXTEND"
+        },
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "MISS"
+        },
+        {
+          "kind": "title",
+          "code": "0x05",
+          "title": "code 0x05"
+        },
+        {
+          "kind": "title",
+          "code": "0x06",
+          "title": "code 0x06"
+        },
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "code 0x12"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/taito.xml",
+      "source_order": 4447,
+      "archive": "arkanoid98",
+      "id": "arkanoid98-opn"
+    }
+  ]
+}

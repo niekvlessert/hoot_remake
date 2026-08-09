@@ -1,0 +1,95 @@
+{
+  "format": "hoot-catalog-shard",
+  "version": 1,
+  "source_file": "xml/necinterchannel.xml",
+  "date": "2005/09/25",
+  "comments": [
+    " //NEC InterChannel "
+  ],
+  "games": [
+    {
+      "title": "[PC-9801] PIXY GARDEN ～妖精伝説～",
+      "driver": {
+        "name": "pc98dos",
+        "type": "opn",
+        "alias": "NEC InterChannel",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "clockmul",
+          "value": "8"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "MUSIC.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MUSIC68.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "HOUGAKU1.MLO",
+          "offset": "0x10"
+        },
+        {
+          "type": "file",
+          "path": "ROOK.MLO",
+          "offset": "0x11"
+        },
+        {
+          "type": "file",
+          "path": "SANBA.MLO",
+          "offset": "0x12"
+        },
+        {
+          "type": "file",
+          "path": "TEKUNO.MLO",
+          "offset": "0x13"
+        },
+        {
+          "type": "shell",
+          "path": "MUSIC",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "MUSIC68",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "HOUGAKU1.MLO"
+        },
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "ROOK.MLO"
+        },
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "SANBA.MLO"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "TEKUNO.MLO"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/necinterchannel.xml",
+      "source_order": 3439,
+      "archive": "pixygrdn_98",
+      "id": "pixygrdn-98-opn"
+    }
+  ]
+}

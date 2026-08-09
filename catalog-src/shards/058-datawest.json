@@ -1,0 +1,623 @@
+{
+  "format": "hoot-catalog-shard",
+  "version": 1,
+  "source_file": "xml/datawest.xml",
+  "date": "2006/06/19",
+  "comments": [
+    " //DATAWEST "
+  ],
+  "games": [
+    {
+      "title": "[PC-8801] THE 4TH UNIT",
+      "driver": {
+        "name": "pc88",
+        "type": "opn",
+        "alias": "DATAWEST",
+        "platform": "NEC PC-8801"
+      },
+      "options": [
+        {
+          "name": "mdata_addr",
+          "value": "0x7000"
+        },
+        {
+          "name": "use_rtc",
+          "value": "0x01"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "PATCH",
+          "offset": "0x0000"
+        },
+        {
+          "type": "code",
+          "path": "PROG",
+          "offset": "0x1000"
+        },
+        {
+          "type": "code",
+          "path": "VOICE",
+          "offset": "0x6a75"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS00",
+          "offset": "0x00"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS01",
+          "offset": "0x01"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS02",
+          "offset": "0x02"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS03",
+          "offset": "0x03"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS05",
+          "offset": "0x05"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS06",
+          "offset": "0x06"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS07",
+          "offset": "0x07"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x01000000",
+          "title": "オープニング"
+        },
+        {
+          "kind": "title",
+          "code": "0x01000002",
+          "title": "戦闘"
+        },
+        {
+          "kind": "title",
+          "code": "0x01000001",
+          "title": "スタッフロール"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000003",
+          "title": "ゲームオーバー"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000005",
+          "title": "ジングル1"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000006",
+          "title": "ジングル2"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000007",
+          "title": "ジングル3"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/datawest.xml",
+      "source_order": 993,
+      "archive": "4thunit",
+      "id": "4thunit-opn"
+    },
+    {
+      "title": "[PC-8801] THE 4TH UNIT 2",
+      "driver": {
+        "name": "pc88",
+        "type": "opn",
+        "alias": "DATAWEST",
+        "platform": "NEC PC-8801"
+      },
+      "options": [
+        {
+          "name": "mdata_addr",
+          "value": "0xb000"
+        },
+        {
+          "name": "use_rtc",
+          "value": "0x01"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "PATCH",
+          "offset": "0x0000"
+        },
+        {
+          "type": "code",
+          "path": "PROG",
+          "offset": "0x2000"
+        },
+        {
+          "type": "code",
+          "path": "VOICE",
+          "offset": "0xfa00"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS00",
+          "offset": "0x00"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS01",
+          "offset": "0x01"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS02",
+          "offset": "0x02"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS03",
+          "offset": "0x03"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS04",
+          "offset": "0x04"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS05",
+          "offset": "0x05"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS06",
+          "offset": "0x06"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS07",
+          "offset": "0x07"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS08",
+          "offset": "0x08"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS09",
+          "offset": "0x09"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS10",
+          "offset": "0x0a"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS11",
+          "offset": "0x0b"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS12",
+          "offset": "0x0c"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS13",
+          "offset": "0x0d"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS14",
+          "offset": "0x0e"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS15",
+          "offset": "0x0f"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x00000000",
+          "title": "タイトル"
+        },
+        {
+          "kind": "title",
+          "code": "0x01000002",
+          "title": "オープニング1"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000003",
+          "title": "オープニング2"
+        },
+        {
+          "kind": "title",
+          "code": "0x01000001",
+          "title": "戦闘"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000004",
+          "title": "敗北"
+        },
+        {
+          "kind": "title",
+          "code": "0x0000000b",
+          "title": "非常警報"
+        },
+        {
+          "kind": "title",
+          "code": "0x0000000c",
+          "title": "要人救出"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000005",
+          "title": "ゲームオーバー"
+        },
+        {
+          "kind": "title",
+          "code": "0x01000006",
+          "title": "ゲームオーバー ヒント"
+        },
+        {
+          "kind": "title",
+          "code": "0x0000000f",
+          "title": "脱出"
+        },
+        {
+          "kind": "title",
+          "code": "0x0000000e",
+          "title": "エピローグ"
+        },
+        {
+          "kind": "title",
+          "code": "0x0000000a",
+          "title": "スタッフロール"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000007",
+          "title": "ジングル1"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000008",
+          "title": "ジングル2"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000009",
+          "title": "ジングル3"
+        },
+        {
+          "kind": "title",
+          "code": "0x0100000d",
+          "title": "THE 4TH UNIT スタッフロール(未使用)"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/datawest.xml",
+      "source_order": 994,
+      "archive": "4thunit2",
+      "id": "4thunit2-opn"
+    },
+    {
+      "title": "[MSX] DUAL TARGETS - THE 4th UNIT ACT.3(OPLL)",
+      "driver": {
+        "name": "msx",
+        "type": "generic",
+        "alias": "DATAWEST",
+        "platform": "MSX"
+      },
+      "options": [
+        {
+          "name": "init_pc",
+          "value": "0x0400"
+        },
+        {
+          "name": "use_opll",
+          "value": "0x01"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "patch",
+          "offset": "0x0400"
+        },
+        {
+          "type": "code",
+          "path": "FM.DAT",
+          "offset": "0x5000"
+        },
+        {
+          "type": "code",
+          "path": "TFU3",
+          "offset": "0x7500"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x0000",
+          "title": "FM.DAT : 00 : Opening"
+        },
+        {
+          "kind": "title",
+          "code": "0x0004",
+          "title": "FM.DAT : 04 : Battle"
+        },
+        {
+          "kind": "title",
+          "code": "0x0001",
+          "title": "FM.DAT : 01 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x0003",
+          "title": "FM.DAT : 03 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x0005",
+          "title": "FM.DAT : 05 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x0002",
+          "title": "FM.DAT : 02 : Staff Roll"
+        },
+        {
+          "kind": "title",
+          "code": "0x0106",
+          "title": "FM.DAT : 06 : Game Over"
+        },
+        {
+          "kind": "title",
+          "code": "0x0107",
+          "title": "FM.DAT : 07 :"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/datawest.xml",
+      "source_order": 995,
+      "archive": "4thunit3_msx",
+      "id": "4thunit3-msx-generic"
+    },
+    {
+      "title": "[MSX] DUAL TARGETS - THE 4th UNIT ACT.3(PSG)",
+      "driver": {
+        "name": "msx",
+        "type": "generic",
+        "alias": "DATAWEST",
+        "platform": "MSX"
+      },
+      "options": [
+        {
+          "name": "init_pc",
+          "value": "0x0400"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "patch",
+          "offset": "0x0400"
+        },
+        {
+          "type": "code",
+          "path": "PSG.DAT",
+          "offset": "0x5000"
+        },
+        {
+          "type": "code",
+          "path": "TFU3",
+          "offset": "0x7500"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x0000",
+          "title": "PSG.DAT : 00 : Opening"
+        },
+        {
+          "kind": "title",
+          "code": "0x0004",
+          "title": "PSG.DAT : 04 : Battle"
+        },
+        {
+          "kind": "title",
+          "code": "0x0001",
+          "title": "PSG.DAT : 01 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x0003",
+          "title": "PSG.DAT : 03 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x0005",
+          "title": "PSG.DAT : 05 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x0002",
+          "title": "PSG.DAT : 02 : Staff Roll"
+        },
+        {
+          "kind": "title",
+          "code": "0x0106",
+          "title": "PSG.DAT : 06 : Game Over"
+        },
+        {
+          "kind": "title",
+          "code": "0x0107",
+          "title": "PSG.DAT : 07 :"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/datawest.xml",
+      "source_order": 996,
+      "archive": "4thunit3_msx",
+      "id": "4thunit3-msx-generic-2"
+    },
+    {
+      "title": "[MSX] Zero - THE 4th UNIT ACT.4(OPLL)",
+      "driver": {
+        "name": "msx",
+        "type": "generic",
+        "alias": "DATAWEST",
+        "platform": "MSX"
+      },
+      "options": [
+        {
+          "name": "init_pc",
+          "value": "0x0400"
+        },
+        {
+          "name": "use_opll",
+          "value": "0x01"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "patch",
+          "offset": "0x0400"
+        },
+        {
+          "type": "code",
+          "path": "MAIN.COM",
+          "offset": "0x6400"
+        },
+        {
+          "type": "code",
+          "path": "MUSIC.DAT",
+          "offset": "0xC700"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "range",
+          "min": "0x00",
+          "max": "0x03",
+          "title_format": "MUSIC.DAT : 0x%02x",
+          "extcode": "1"
+        },
+        {
+          "kind": "title",
+          "code": "0x0104",
+          "title": "MUSIC.DAT : 0x04"
+        },
+        {
+          "kind": "range",
+          "min": "0x05",
+          "max": "0x07",
+          "title_format": "MUSIC.DAT : 0x%02x",
+          "extcode": "1"
+        },
+        {
+          "kind": "title",
+          "code": "0x0108",
+          "title": "MUSIC.DAT : 0x08"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/datawest.xml",
+      "source_order": 997,
+      "archive": "4thunit4_msx",
+      "id": "4thunit4-msx-generic"
+    },
+    {
+      "title": "[MSX] Zero - THE 4th UNIT ACT.4(PSG)",
+      "driver": {
+        "name": "msx",
+        "type": "generic",
+        "alias": "DATAWEST",
+        "platform": "MSX"
+      },
+      "options": [
+        {
+          "name": "init_pc",
+          "value": "0x0400"
+        },
+        {
+          "name": "use_opll",
+          "value": "0x01"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "patch",
+          "offset": "0x0400"
+        },
+        {
+          "type": "code",
+          "path": "MAIN.COM",
+          "offset": "0x6400"
+        },
+        {
+          "type": "code",
+          "path": "MUSIC.DAT",
+          "offset": "0xC700"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "range",
+          "min": "0x09",
+          "max": "0x0c",
+          "title_format": "MUSIC.DAT : 0x%02x",
+          "extcode": "1"
+        },
+        {
+          "kind": "title",
+          "code": "0x010d",
+          "title": "MUSIC.DAT : 0x0d"
+        },
+        {
+          "kind": "range",
+          "min": "0x0e",
+          "max": "0x10",
+          "title_format": "MUSIC.DAT : 0x%02x",
+          "extcode": "1"
+        },
+        {
+          "kind": "title",
+          "code": "0x0111",
+          "title": "MUSIC.DAT : 0x11"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/datawest.xml",
+      "source_order": 998,
+      "archive": "4thunit4_msx",
+      "id": "4thunit4-msx-generic-2"
+    }
+  ]
+}

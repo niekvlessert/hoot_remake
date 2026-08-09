@@ -1,0 +1,204 @@
+{
+  "format": "hoot-catalog-shard",
+  "version": 1,
+  "source_file": "xml/microprose.xml",
+  "date": "2005/09/25",
+  "comments": [
+    " //MicroProse "
+  ],
+  "games": [
+    {
+      "title": "[X68000] F-15 Strike Eagle II",
+      "driver": {
+        "name": "x68k",
+        "type": "generic",
+        "alias": "MicroProse",
+        "platform": "SHARP X68000"
+      },
+      "options": [
+        {
+          "name": "opm_mix",
+          "value": "0xc0"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "opmdrv.bin"
+        },
+        {
+          "type": "x",
+          "path": "OPMDRV.X",
+          "offset": "0x08000"
+        },
+        {
+          "type": "code",
+          "path": "F15SND0.OPM",
+          "offset": "0x24000"
+        },
+        {
+          "type": "code",
+          "path": "F15SND1.OPM",
+          "offset": "0x28000"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x02",
+          "title": "F15SND0.OPM :"
+        },
+        {
+          "kind": "title",
+          "code": "0x03",
+          "title": "F15SND1.OPM :"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/microprose.xml",
+      "source_order": 3268,
+      "archive": "f15se68snd",
+      "id": "f15se68snd-generic"
+    },
+    {
+      "title": "[X68000] Gunship",
+      "driver": {
+        "name": "x68k",
+        "type": "generic",
+        "alias": "MicroProse",
+        "platform": "SHARP X68000"
+      },
+      "options": [
+        {
+          "name": "opm_mix",
+          "value": "0xc0"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "opmdrv.bin"
+        },
+        {
+          "type": "x",
+          "path": "OPMDRV.X",
+          "offset": "0x08000"
+        },
+        {
+          "type": "code",
+          "path": "BGM00.OPM",
+          "offset": "0x24000"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x02",
+          "title": "BGM00.OPM : Title (ワルキューレの騎行)"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/microprose.xml",
+      "source_order": 3269,
+      "archive": "gunship68snd",
+      "id": "gunship68snd-generic"
+    },
+    {
+      "title": "[MSX] Gunship",
+      "driver": {
+        "name": "msx",
+        "type": "generic",
+        "alias": "MicroProse",
+        "platform": "MSX"
+      },
+      "options": [
+        {
+          "name": "init_pc",
+          "value": "0x400"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "patch",
+          "offset": "0x0400"
+        },
+        {
+          "type": "code",
+          "path": "OPENING",
+          "offset": "0x8000"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x00",
+          "title": "Title (ワルキューレの騎行)"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/microprose.xml",
+      "source_order": 3270,
+      "archive": "gunship_msx",
+      "id": "gunship-msx-generic"
+    },
+    {
+      "title": "[PC-9801] Elite Plus",
+      "driver": {
+        "name": "pc98dos",
+        "type": "opn",
+        "alias": "MicroProse",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "datamax",
+          "value": "0x02"
+        },
+        {
+          "name": "clockmul",
+          "value": "8"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "OPNDRV.SYS",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "ELTP_98.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "ELITE.MUS",
+          "offset": "0x10"
+        },
+        {
+          "type": "device",
+          "path": "opndrv.sys",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "eltp_98",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "ELITE.EXE : Title (美しき青きドナウ)"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/microprose.xml",
+      "source_order": 3271,
+      "archive": "elitep_98",
+      "id": "elitep-98-opn"
+    }
+  ]
+}

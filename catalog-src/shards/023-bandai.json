@@ -1,0 +1,45 @@
+{
+  "format": "hoot-catalog-shard",
+  "version": 1,
+  "source_file": "xml/bandai.xml",
+  "date": "2005/09/25",
+  "comments": [
+    " //bandai "
+  ],
+  "games": [
+    {
+      "title": "[PC-8801] MOBILE SUIT Z GUNDAM",
+      "driver": {
+        "name": "pc88",
+        "type": "opn",
+        "alias": "BANDAI",
+        "platform": "NEC PC-8801"
+      },
+      "options": [],
+      "assets": [
+        {
+          "type": "code",
+          "path": "PATCH",
+          "offset": "0x0000"
+        },
+        {
+          "type": "code",
+          "path": "PROG",
+          "offset": "0x0100"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x00",
+          "title": "THEME"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/bandai.xml",
+      "source_order": 409,
+      "archive": "zgundam",
+      "id": "zgundam-opn"
+    }
+  ]
+}

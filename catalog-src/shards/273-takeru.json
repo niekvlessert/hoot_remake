@@ -1,0 +1,3255 @@
+{
+  "format": "hoot-catalog-shard",
+  "version": 1,
+  "source_file": "xml/takeru.xml",
+  "date": "2005/09/25",
+  "comments": [
+    " //TAKERU / 武尊プロジェクト "
+  ],
+  "games": [
+    {
+      "title": "[X1] HAYATO(OPM)",
+      "driver": {
+        "name": "x1",
+        "type": "opm",
+        "alias": "TAKERU",
+        "platform": "SHARP X1"
+      },
+      "options": [
+        {
+          "name": "mdata_addr",
+          "value": "0xc000"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "PATCH",
+          "offset": "0x0000"
+        },
+        {
+          "type": "code",
+          "path": "DRIVER1",
+          "offset": "0xb800"
+        },
+        {
+          "type": "code",
+          "path": "DRIVER2",
+          "offset": "0xbc00"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS00",
+          "offset": "0x00"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS01",
+          "offset": "0x01"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x01000001",
+          "title": "01"
+        },
+        {
+          "kind": "title",
+          "code": "0x02000000",
+          "title": "02"
+        },
+        {
+          "kind": "title",
+          "code": "0x03000000",
+          "title": "03"
+        },
+        {
+          "kind": "title",
+          "code": "0x04000000",
+          "title": "04"
+        },
+        {
+          "kind": "title",
+          "code": "0x05000000",
+          "title": "05"
+        },
+        {
+          "kind": "title",
+          "code": "0x06000000",
+          "title": "06"
+        },
+        {
+          "kind": "title",
+          "code": "0x07000000",
+          "title": "07"
+        },
+        {
+          "kind": "title",
+          "code": "0x08000000",
+          "title": "08"
+        },
+        {
+          "kind": "title",
+          "code": "0x09000001",
+          "title": "09"
+        },
+        {
+          "kind": "title",
+          "code": "0x0b000000",
+          "title": "0b"
+        },
+        {
+          "kind": "title",
+          "code": "0x0c000000",
+          "title": "0c"
+        },
+        {
+          "kind": "title",
+          "code": "0x0d000000",
+          "title": "0d"
+        },
+        {
+          "kind": "title",
+          "code": "0x0e000000",
+          "title": "0e"
+        },
+        {
+          "kind": "title",
+          "code": "0x0f000000",
+          "title": "0f"
+        },
+        {
+          "kind": "title",
+          "code": "0x10000000",
+          "title": "10"
+        },
+        {
+          "kind": "title",
+          "code": "0x11000000",
+          "title": "11"
+        },
+        {
+          "kind": "title",
+          "code": "0x12000000",
+          "title": "12"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/takeru.xml",
+      "source_order": 4448,
+      "archive": "x1hayato",
+      "id": "x1hayato-opm"
+    },
+    {
+      "title": "[X1] HAYATO(PSG)",
+      "driver": {
+        "name": "x1",
+        "type": "psg",
+        "alias": "TAKERU",
+        "platform": "SHARP X1"
+      },
+      "options": [
+        {
+          "name": "mdata_addr",
+          "value": "0xc000"
+        },
+        {
+          "name": "psg_mix",
+          "value": "0x70"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "PATCH",
+          "offset": "0x0000"
+        },
+        {
+          "type": "code",
+          "path": "DRIVER1",
+          "offset": "0xb800"
+        },
+        {
+          "type": "code",
+          "path": "DRIVER2",
+          "offset": "0xbc00"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS00",
+          "offset": "0x00"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS01",
+          "offset": "0x01"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x01000001",
+          "title": "01"
+        },
+        {
+          "kind": "title",
+          "code": "0x02000000",
+          "title": "02"
+        },
+        {
+          "kind": "title",
+          "code": "0x03000000",
+          "title": "03"
+        },
+        {
+          "kind": "title",
+          "code": "0x04000000",
+          "title": "04"
+        },
+        {
+          "kind": "title",
+          "code": "0x05000000",
+          "title": "05"
+        },
+        {
+          "kind": "title",
+          "code": "0x06000000",
+          "title": "06"
+        },
+        {
+          "kind": "title",
+          "code": "0x07000000",
+          "title": "07"
+        },
+        {
+          "kind": "title",
+          "code": "0x08000000",
+          "title": "08"
+        },
+        {
+          "kind": "title",
+          "code": "0x09000001",
+          "title": "09"
+        },
+        {
+          "kind": "title",
+          "code": "0x0b000000",
+          "title": "0b"
+        },
+        {
+          "kind": "title",
+          "code": "0x0c000000",
+          "title": "0c"
+        },
+        {
+          "kind": "title",
+          "code": "0x0d000000",
+          "title": "0d"
+        },
+        {
+          "kind": "title",
+          "code": "0x0e000000",
+          "title": "0e"
+        },
+        {
+          "kind": "title",
+          "code": "0x0f000000",
+          "title": "0f"
+        },
+        {
+          "kind": "title",
+          "code": "0x10000000",
+          "title": "10"
+        },
+        {
+          "kind": "title",
+          "code": "0x11000000",
+          "title": "11"
+        },
+        {
+          "kind": "title",
+          "code": "0x12000000",
+          "title": "12"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/takeru.xml",
+      "source_order": 4449,
+      "archive": "x1hayato",
+      "id": "x1hayato-psg"
+    },
+    {
+      "title": "[MSX] SORCERIAN - Dragon Slayer V - (基本シナリオ)(PSG)",
+      "driver": {
+        "name": "msx",
+        "type": "generic",
+        "alias": "TAKERU",
+        "platform": "MSX"
+      },
+      "options": [
+        {
+          "name": "mdata_addr",
+          "value": "0x8000"
+        },
+        {
+          "name": "mdata_size",
+          "value": "0x2000"
+        },
+        {
+          "name": "mfile_size",
+          "value": "0x2000"
+        },
+        {
+          "name": "mdata_num",
+          "value": "0x40"
+        },
+        {
+          "name": "init_pc",
+          "value": "0x0400"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "patch",
+          "offset": "0x0400"
+        },
+        {
+          "type": "code",
+          "path": "BIOS",
+          "offset": "0xb000"
+        },
+        {
+          "type": "bgm",
+          "path": "PS001",
+          "offset": "0x00"
+        },
+        {
+          "type": "bgm",
+          "path": "PS002",
+          "offset": "0x01"
+        },
+        {
+          "type": "bgm",
+          "path": "PS003",
+          "offset": "0x02"
+        },
+        {
+          "type": "bgm",
+          "path": "PS004",
+          "offset": "0x03"
+        },
+        {
+          "type": "bgm",
+          "path": "PS005",
+          "offset": "0x04"
+        },
+        {
+          "type": "bgm",
+          "path": "PS006",
+          "offset": "0x05"
+        },
+        {
+          "type": "bgm",
+          "path": "PS007",
+          "offset": "0x06"
+        },
+        {
+          "type": "bgm",
+          "path": "PS008",
+          "offset": "0x07"
+        },
+        {
+          "type": "bgm",
+          "path": "PS009",
+          "offset": "0x08"
+        },
+        {
+          "type": "bgm",
+          "path": "PS010",
+          "offset": "0x09"
+        },
+        {
+          "type": "bgm",
+          "path": "PS011",
+          "offset": "0x0a"
+        },
+        {
+          "type": "bgm",
+          "path": "PS012",
+          "offset": "0x0b"
+        },
+        {
+          "type": "bgm",
+          "path": "PS014",
+          "offset": "0x0c"
+        },
+        {
+          "type": "bgm",
+          "path": "PS015",
+          "offset": "0x0d"
+        },
+        {
+          "type": "bgm",
+          "path": "PS016",
+          "offset": "0x0e"
+        },
+        {
+          "type": "bgm",
+          "path": "PS017",
+          "offset": "0x0f"
+        },
+        {
+          "type": "bgm",
+          "path": "PS018",
+          "offset": "0x10"
+        },
+        {
+          "type": "bgm",
+          "path": "PS020",
+          "offset": "0x11"
+        },
+        {
+          "type": "bgm",
+          "path": "PS021",
+          "offset": "0x12"
+        },
+        {
+          "type": "bgm",
+          "path": "PS022",
+          "offset": "0x13"
+        },
+        {
+          "type": "bgm",
+          "path": "PS025",
+          "offset": "0x14"
+        },
+        {
+          "type": "bgm",
+          "path": "PS026",
+          "offset": "0x15"
+        },
+        {
+          "type": "bgm",
+          "path": "PS027",
+          "offset": "0x16"
+        },
+        {
+          "type": "bgm",
+          "path": "PS029",
+          "offset": "0x17"
+        },
+        {
+          "type": "bgm",
+          "path": "PS032",
+          "offset": "0x18"
+        },
+        {
+          "type": "bgm",
+          "path": "PS034",
+          "offset": "0x19"
+        },
+        {
+          "type": "bgm",
+          "path": "PS036",
+          "offset": "0x1a"
+        },
+        {
+          "type": "bgm",
+          "path": "PS037",
+          "offset": "0x1b"
+        },
+        {
+          "type": "bgm",
+          "path": "PS039",
+          "offset": "0x1c"
+        },
+        {
+          "type": "bgm",
+          "path": "PS040",
+          "offset": "0x1d"
+        },
+        {
+          "type": "bgm",
+          "path": "PS041",
+          "offset": "0x1e"
+        },
+        {
+          "type": "bgm",
+          "path": "PS042",
+          "offset": "0x1f"
+        },
+        {
+          "type": "bgm",
+          "path": "PS043",
+          "offset": "0x20"
+        },
+        {
+          "type": "bgm",
+          "path": "PS044",
+          "offset": "0x21"
+        },
+        {
+          "type": "bgm",
+          "path": "PS045",
+          "offset": "0x22"
+        },
+        {
+          "type": "bgm",
+          "path": "PS047",
+          "offset": "0x23"
+        },
+        {
+          "type": "bgm",
+          "path": "PS048",
+          "offset": "0x24"
+        },
+        {
+          "type": "bgm",
+          "path": "PS049",
+          "offset": "0x25"
+        },
+        {
+          "type": "bgm",
+          "path": "PS053",
+          "offset": "0x26"
+        },
+        {
+          "type": "bgm",
+          "path": "PS054",
+          "offset": "0x27"
+        },
+        {
+          "type": "bgm",
+          "path": "PS055",
+          "offset": "0x28"
+        },
+        {
+          "type": "bgm",
+          "path": "PS058",
+          "offset": "0x29"
+        },
+        {
+          "type": "bgm",
+          "path": "PS059",
+          "offset": "0x2a"
+        },
+        {
+          "type": "bgm",
+          "path": "PS060",
+          "offset": "0x2b"
+        },
+        {
+          "type": "bgm",
+          "path": "PS061",
+          "offset": "0x2c"
+        },
+        {
+          "type": "bgm",
+          "path": "PS062",
+          "offset": "0x2d"
+        },
+        {
+          "type": "bgm",
+          "path": "PS081",
+          "offset": "0x2e"
+        },
+        {
+          "type": "bgm",
+          "path": "PS082",
+          "offset": "0x2f"
+        },
+        {
+          "type": "bgm",
+          "path": "PS083",
+          "offset": "0x30"
+        },
+        {
+          "type": "bgm",
+          "path": "PS084",
+          "offset": "0x31"
+        },
+        {
+          "type": "bgm",
+          "path": "PS085",
+          "offset": "0x32"
+        },
+        {
+          "type": "bgm",
+          "path": "PS086",
+          "offset": "0x33"
+        },
+        {
+          "type": "bgm",
+          "path": "PS087",
+          "offset": "0x34"
+        },
+        {
+          "type": "bgm",
+          "path": "PS088",
+          "offset": "0x35"
+        },
+        {
+          "type": "bgm",
+          "path": "PS089",
+          "offset": "0x36"
+        },
+        {
+          "type": "bgm",
+          "path": "PS090",
+          "offset": "0x37"
+        },
+        {
+          "type": "bgm",
+          "path": "PS091",
+          "offset": "0x38"
+        },
+        {
+          "type": "bgm",
+          "path": "PS092",
+          "offset": "0x39"
+        },
+        {
+          "type": "bgm",
+          "path": "PS097",
+          "offset": "0x3a"
+        },
+        {
+          "type": "bgm",
+          "path": "PS098",
+          "offset": "0x3b"
+        },
+        {
+          "type": "bgm",
+          "path": "PS099",
+          "offset": "0x3c"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x1c",
+          "title": "PS039 : オープニング"
+        },
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "PS018 : 城「ここで逢えるね」"
+        },
+        {
+          "kind": "title",
+          "code": "0x1d",
+          "title": "PS040 : 町「ペンタウァI」"
+        },
+        {
+          "kind": "title",
+          "code": "0x0a",
+          "title": "PS011 : 町「ペンタウァII」"
+        },
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "PS020 : アイテム分配「トラベラーズ・イン」"
+        },
+        {
+          "kind": "title",
+          "code": "0x3c",
+          "title": "PS099 : ファンファーレ"
+        },
+        {
+          "kind": "title",
+          "code": "0x2d",
+          "title": "PS062 : キングドラゴン"
+        },
+        {
+          "kind": "title",
+          "code": "0x3b",
+          "title": "PS098 : キングドラゴン死亡"
+        },
+        {
+          "kind": "title",
+          "code": "0x2c",
+          "title": "PS061 : エンディングI"
+        },
+        {
+          "kind": "title",
+          "code": "0x38",
+          "title": "PS091 : エンディングII"
+        },
+        {
+          "kind": "title",
+          "code": "0x00",
+          "title": "PS001 : 消えた王様の杖           / ダンジョン"
+        },
+        {
+          "kind": "title",
+          "code": "0x04",
+          "title": "PS005 : 消えた王様の杖           / ヒドラ"
+        },
+        {
+          "kind": "title",
+          "code": "0x17",
+          "title": "PS029 : 消えた王様の杖           / 生還"
+        },
+        {
+          "kind": "title",
+          "code": "0x0f",
+          "title": "PS017 : 失われたタリスマン       / 森"
+        },
+        {
+          "kind": "title",
+          "code": "0x1e",
+          "title": "PS041 : 失われたタリスマン       / 地下ダンジョン"
+        },
+        {
+          "kind": "title",
+          "code": "0x2e",
+          "title": "PS081 : 失われたタリスマン       / 神官デヒテル"
+        },
+        {
+          "kind": "title",
+          "code": "0x32",
+          "title": "PS085 : 失われたタリスマン       / サンド・マリボー"
+        },
+        {
+          "kind": "title",
+          "code": "0x09",
+          "title": "PS010 : ルシフェルの水門         / 地下ダンジョン"
+        },
+        {
+          "kind": "title",
+          "code": "0x16",
+          "title": "PS027 : ルシフェルの水門         / クラーケン"
+        },
+        {
+          "kind": "title",
+          "code": "0x35",
+          "title": "PS088 : ルシフェルの水門         / ブラッディー・リバー"
+        },
+        {
+          "kind": "title",
+          "code": "0x1b",
+          "title": "PS037 : 呪われたオアシス         / 砂漠"
+        },
+        {
+          "kind": "title",
+          "code": "0x29",
+          "title": "PS058 : 呪われたオアシス         / 砂の城"
+        },
+        {
+          "kind": "title",
+          "code": "0x2b",
+          "title": "PS060 : 呪われたオアシス         / ルワンとゴールドドラゴン"
+        },
+        {
+          "kind": "title",
+          "code": "0x25",
+          "title": "PS049 : 盗賊たちの塔             / 塔"
+        },
+        {
+          "kind": "title",
+          "code": "0x27",
+          "title": "PS054 : 盗賊たちの塔             / 地底"
+        },
+        {
+          "kind": "title",
+          "code": "0x28",
+          "title": "PS055 : 盗賊たちの塔             / 屋上"
+        },
+        {
+          "kind": "title",
+          "code": "0x2f",
+          "title": "PS082 : 盗賊たちの塔             / シャドー・ドラゴン"
+        },
+        {
+          "kind": "title",
+          "code": "0x37",
+          "title": "PS090 : 盗賊たちの塔             / メジャー・デーモン"
+        },
+        {
+          "kind": "title",
+          "code": "0x34",
+          "title": "PS087 : 盗賊たちの塔             / 封印"
+        },
+        {
+          "kind": "title",
+          "code": "0x19",
+          "title": "PS034 : 暗き沼の魔法使い         / 暗き沼"
+        },
+        {
+          "kind": "title",
+          "code": "0x08",
+          "title": "PS009 : 暗き沼の魔法使い         / レッド・ドラゴン"
+        },
+        {
+          "kind": "title",
+          "code": "0x02",
+          "title": "PS003 : ロマンシア               / ロマンシア王国"
+        },
+        {
+          "kind": "title",
+          "code": "0x07",
+          "title": "PS008 : ロマンシア               / ロマンシア城"
+        },
+        {
+          "kind": "title",
+          "code": "0x03",
+          "title": "PS004 : ロマンシア               / アゾルバ王国"
+        },
+        {
+          "kind": "title",
+          "code": "0x20",
+          "title": "PS043 : ロマンシア               / ヴァイデス"
+        },
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "PS002 : 紅玉の謎                 / 森"
+        },
+        {
+          "kind": "title",
+          "code": "0x3a",
+          "title": "PS097 : 紅玉の謎                 / モス・ジャイアント"
+        },
+        {
+          "kind": "title",
+          "code": "0x36",
+          "title": "PS089 : 紅玉の謎                 / 平和な森"
+        },
+        {
+          "kind": "title",
+          "code": "0x18",
+          "title": "PS032 : 暗黒の魔導士             / ダンジョンI"
+        },
+        {
+          "kind": "title",
+          "code": "0x15",
+          "title": "PS026 : 暗黒の魔導士             / ブルー・ドラゴン"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "PS022 : 暗黒の魔導士             / ダンジョンII"
+        },
+        {
+          "kind": "title",
+          "code": "0x0e",
+          "title": "PS016 : 暗黒の魔導士             / ゲディス"
+        },
+        {
+          "kind": "title",
+          "code": "0x0c",
+          "title": "PS014 : 呪われたクイーンマリー号 / 船内"
+        },
+        {
+          "kind": "title",
+          "code": "0x21",
+          "title": "PS044 : 呪われたクイーンマリー号 / 上陸後"
+        },
+        {
+          "kind": "title",
+          "code": "0x31",
+          "title": "PS084 : 呪われたクイーンマリー号 / アークデーモン"
+        },
+        {
+          "kind": "title",
+          "code": "0x24",
+          "title": "PS048 : 天の神々たち             / 村"
+        },
+        {
+          "kind": "title",
+          "code": "0x1f",
+          "title": "PS042 : 天の神々たち             / コンバットシーン"
+        },
+        {
+          "kind": "title",
+          "code": "0x2a",
+          "title": "PS059 : 天の神々たち             / 天上界"
+        },
+        {
+          "kind": "title",
+          "code": "0x22",
+          "title": "PS045 : 天の神々たち             / 竪琴"
+        },
+        {
+          "kind": "title",
+          "code": "0x30",
+          "title": "PS083 : 天の神々たち             / エビル=シャーマン"
+        },
+        {
+          "kind": "title",
+          "code": "0x06",
+          "title": "PS007 : 氷の洞窟                 / 洞窟I"
+        },
+        {
+          "kind": "title",
+          "code": "0x05",
+          "title": "PS006 : 氷の洞窟                 / エキム"
+        },
+        {
+          "kind": "title",
+          "code": "0x1a",
+          "title": "PS036 : 氷の洞窟                 / 洞窟II"
+        },
+        {
+          "kind": "title",
+          "code": "0x0b",
+          "title": "PS012 : メデューサの首           / 森"
+        },
+        {
+          "kind": "title",
+          "code": "0x26",
+          "title": "PS053 : メデューサの首           / 村"
+        },
+        {
+          "kind": "title",
+          "code": "0x23",
+          "title": "PS047 : メデューサの首           / メデューサ"
+        },
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "PS021 : 囚われた魔法使い         / 地下要塞"
+        },
+        {
+          "kind": "title",
+          "code": "0x33",
+          "title": "PS086 : 囚われた魔法使い         / ファイヤー・エレメント"
+        },
+        {
+          "kind": "title",
+          "code": "0x14",
+          "title": "PS025 : 不老長寿の水             / 生きている洞窟"
+        },
+        {
+          "kind": "title",
+          "code": "0x0d",
+          "title": "PS015 : 不老長寿の水             / ダブル=デビルス"
+        },
+        {
+          "kind": "title",
+          "code": "0x39",
+          "title": "PS092 : 不老長寿の水             / 動く心臓"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/takeru.xml",
+      "source_order": 4450,
+      "archive": "sor_msx",
+      "id": "sor-msx-generic"
+    },
+    {
+      "title": "[MSX] SORCERIAN - Dragon Slayer V - (基本シナリオ)(OPLL)",
+      "driver": {
+        "name": "msx",
+        "type": "generic",
+        "alias": "TAKERU",
+        "platform": "MSX"
+      },
+      "options": [
+        {
+          "name": "mdata_addr",
+          "value": "0x8000"
+        },
+        {
+          "name": "mdata_size",
+          "value": "0x2000"
+        },
+        {
+          "name": "mfile_size",
+          "value": "0x2000"
+        },
+        {
+          "name": "mdata_num",
+          "value": "0x40"
+        },
+        {
+          "name": "use_opll",
+          "value": "0x01"
+        },
+        {
+          "name": "init_pc",
+          "value": "0x0400"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "patch",
+          "offset": "0x0400"
+        },
+        {
+          "type": "code",
+          "path": "BIOS",
+          "offset": "0xb000"
+        },
+        {
+          "type": "bgm",
+          "path": "SS001",
+          "offset": "0x00"
+        },
+        {
+          "type": "bgm",
+          "path": "SS002",
+          "offset": "0x01"
+        },
+        {
+          "type": "bgm",
+          "path": "SS003",
+          "offset": "0x02"
+        },
+        {
+          "type": "bgm",
+          "path": "SS004",
+          "offset": "0x03"
+        },
+        {
+          "type": "bgm",
+          "path": "SS005",
+          "offset": "0x04"
+        },
+        {
+          "type": "bgm",
+          "path": "SS006",
+          "offset": "0x05"
+        },
+        {
+          "type": "bgm",
+          "path": "SS007",
+          "offset": "0x06"
+        },
+        {
+          "type": "bgm",
+          "path": "SS008",
+          "offset": "0x07"
+        },
+        {
+          "type": "bgm",
+          "path": "SS009",
+          "offset": "0x08"
+        },
+        {
+          "type": "bgm",
+          "path": "SS010",
+          "offset": "0x09"
+        },
+        {
+          "type": "bgm",
+          "path": "SS011",
+          "offset": "0x0a"
+        },
+        {
+          "type": "bgm",
+          "path": "SS012",
+          "offset": "0x0b"
+        },
+        {
+          "type": "bgm",
+          "path": "SS014",
+          "offset": "0x0c"
+        },
+        {
+          "type": "bgm",
+          "path": "SS015",
+          "offset": "0x0d"
+        },
+        {
+          "type": "bgm",
+          "path": "SS016",
+          "offset": "0x0e"
+        },
+        {
+          "type": "bgm",
+          "path": "SS017",
+          "offset": "0x0f"
+        },
+        {
+          "type": "bgm",
+          "path": "SS018",
+          "offset": "0x10"
+        },
+        {
+          "type": "bgm",
+          "path": "SS020",
+          "offset": "0x11"
+        },
+        {
+          "type": "bgm",
+          "path": "SS021",
+          "offset": "0x12"
+        },
+        {
+          "type": "bgm",
+          "path": "SS022",
+          "offset": "0x13"
+        },
+        {
+          "type": "bgm",
+          "path": "SS025",
+          "offset": "0x14"
+        },
+        {
+          "type": "bgm",
+          "path": "SS026",
+          "offset": "0x15"
+        },
+        {
+          "type": "bgm",
+          "path": "SS027",
+          "offset": "0x16"
+        },
+        {
+          "type": "bgm",
+          "path": "SS029",
+          "offset": "0x17"
+        },
+        {
+          "type": "bgm",
+          "path": "SS032",
+          "offset": "0x18"
+        },
+        {
+          "type": "bgm",
+          "path": "SS034",
+          "offset": "0x19"
+        },
+        {
+          "type": "bgm",
+          "path": "SS036",
+          "offset": "0x1a"
+        },
+        {
+          "type": "bgm",
+          "path": "SS037",
+          "offset": "0x1b"
+        },
+        {
+          "type": "bgm",
+          "path": "SS039",
+          "offset": "0x1c"
+        },
+        {
+          "type": "bgm",
+          "path": "SS040",
+          "offset": "0x1d"
+        },
+        {
+          "type": "bgm",
+          "path": "SS041",
+          "offset": "0x1e"
+        },
+        {
+          "type": "bgm",
+          "path": "SS042",
+          "offset": "0x1f"
+        },
+        {
+          "type": "bgm",
+          "path": "SS043",
+          "offset": "0x20"
+        },
+        {
+          "type": "bgm",
+          "path": "SS044",
+          "offset": "0x21"
+        },
+        {
+          "type": "bgm",
+          "path": "SS045",
+          "offset": "0x22"
+        },
+        {
+          "type": "bgm",
+          "path": "SS047",
+          "offset": "0x23"
+        },
+        {
+          "type": "bgm",
+          "path": "SS048",
+          "offset": "0x24"
+        },
+        {
+          "type": "bgm",
+          "path": "SS049",
+          "offset": "0x25"
+        },
+        {
+          "type": "bgm",
+          "path": "SS053",
+          "offset": "0x26"
+        },
+        {
+          "type": "bgm",
+          "path": "SS054",
+          "offset": "0x27"
+        },
+        {
+          "type": "bgm",
+          "path": "SS055",
+          "offset": "0x28"
+        },
+        {
+          "type": "bgm",
+          "path": "SS058",
+          "offset": "0x29"
+        },
+        {
+          "type": "bgm",
+          "path": "SS059",
+          "offset": "0x2a"
+        },
+        {
+          "type": "bgm",
+          "path": "SS060",
+          "offset": "0x2b"
+        },
+        {
+          "type": "bgm",
+          "path": "SS061",
+          "offset": "0x2c"
+        },
+        {
+          "type": "bgm",
+          "path": "SS062",
+          "offset": "0x2d"
+        },
+        {
+          "type": "bgm",
+          "path": "SS081",
+          "offset": "0x2e"
+        },
+        {
+          "type": "bgm",
+          "path": "SS082",
+          "offset": "0x2f"
+        },
+        {
+          "type": "bgm",
+          "path": "SS083",
+          "offset": "0x30"
+        },
+        {
+          "type": "bgm",
+          "path": "SS084",
+          "offset": "0x31"
+        },
+        {
+          "type": "bgm",
+          "path": "SS085",
+          "offset": "0x32"
+        },
+        {
+          "type": "bgm",
+          "path": "SS086",
+          "offset": "0x33"
+        },
+        {
+          "type": "bgm",
+          "path": "SS087",
+          "offset": "0x34"
+        },
+        {
+          "type": "bgm",
+          "path": "SS088",
+          "offset": "0x35"
+        },
+        {
+          "type": "bgm",
+          "path": "SS089",
+          "offset": "0x36"
+        },
+        {
+          "type": "bgm",
+          "path": "SS090",
+          "offset": "0x37"
+        },
+        {
+          "type": "bgm",
+          "path": "SS091",
+          "offset": "0x38"
+        },
+        {
+          "type": "bgm",
+          "path": "SS092",
+          "offset": "0x39"
+        },
+        {
+          "type": "bgm",
+          "path": "SS097",
+          "offset": "0x3a"
+        },
+        {
+          "type": "bgm",
+          "path": "SS098",
+          "offset": "0x3b"
+        },
+        {
+          "type": "bgm",
+          "path": "SS099",
+          "offset": "0x3c"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x1c",
+          "title": "SS039 : オープニング"
+        },
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "SS018 : 城「ここで逢えるね」"
+        },
+        {
+          "kind": "title",
+          "code": "0x1d",
+          "title": "SS040 : 町「ペンタウァI」"
+        },
+        {
+          "kind": "title",
+          "code": "0x0a",
+          "title": "SS011 : 町「ペンタウァII」"
+        },
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "SS020 : アイテム分配「トラベラーズ・イン」"
+        },
+        {
+          "kind": "title",
+          "code": "0x3c",
+          "title": "SS099 : ファンファーレ"
+        },
+        {
+          "kind": "title",
+          "code": "0x2d",
+          "title": "SS062 : キングドラゴン"
+        },
+        {
+          "kind": "title",
+          "code": "0x3b",
+          "title": "SS098 : キングドラゴン死亡"
+        },
+        {
+          "kind": "title",
+          "code": "0x2c",
+          "title": "SS061 : エンディングI"
+        },
+        {
+          "kind": "title",
+          "code": "0x38",
+          "title": "SS091 : エンディングII"
+        },
+        {
+          "kind": "title",
+          "code": "0x00",
+          "title": "SS001 : 消えた王様の杖           / ダンジョン"
+        },
+        {
+          "kind": "title",
+          "code": "0x04",
+          "title": "SS005 : 消えた王様の杖           / ヒドラ"
+        },
+        {
+          "kind": "title",
+          "code": "0x17",
+          "title": "SS029 : 消えた王様の杖           / 生還"
+        },
+        {
+          "kind": "title",
+          "code": "0x0f",
+          "title": "SS017 : 失われたタリスマン       / 森"
+        },
+        {
+          "kind": "title",
+          "code": "0x1e",
+          "title": "SS041 : 失われたタリスマン       / 地下ダンジョン"
+        },
+        {
+          "kind": "title",
+          "code": "0x2e",
+          "title": "SS081 : 失われたタリスマン       / 神官デヒテル"
+        },
+        {
+          "kind": "title",
+          "code": "0x32",
+          "title": "SS085 : 失われたタリスマン       / サンド・マリボー"
+        },
+        {
+          "kind": "title",
+          "code": "0x09",
+          "title": "SS010 : ルシフェルの水門         / 地下ダンジョン"
+        },
+        {
+          "kind": "title",
+          "code": "0x16",
+          "title": "SS027 : ルシフェルの水門         / クラーケン"
+        },
+        {
+          "kind": "title",
+          "code": "0x35",
+          "title": "SS088 : ルシフェルの水門         / ブラッディー・リバー"
+        },
+        {
+          "kind": "title",
+          "code": "0x1b",
+          "title": "SS037 : 呪われたオアシス         / 砂漠"
+        },
+        {
+          "kind": "title",
+          "code": "0x29",
+          "title": "SS058 : 呪われたオアシス         / 砂の城"
+        },
+        {
+          "kind": "title",
+          "code": "0x2b",
+          "title": "SS060 : 呪われたオアシス         / ルワンとゴールドドラゴン"
+        },
+        {
+          "kind": "title",
+          "code": "0x25",
+          "title": "SS049 : 盗賊たちの塔             / 塔"
+        },
+        {
+          "kind": "title",
+          "code": "0x27",
+          "title": "SS054 : 盗賊たちの塔             / 地底"
+        },
+        {
+          "kind": "title",
+          "code": "0x28",
+          "title": "SS055 : 盗賊たちの塔             / 屋上"
+        },
+        {
+          "kind": "title",
+          "code": "0x2f",
+          "title": "SS082 : 盗賊たちの塔             / シャドー・ドラゴン"
+        },
+        {
+          "kind": "title",
+          "code": "0x37",
+          "title": "SS090 : 盗賊たちの塔             / メジャー・デーモン"
+        },
+        {
+          "kind": "title",
+          "code": "0x34",
+          "title": "SS087 : 盗賊たちの塔             / 封印"
+        },
+        {
+          "kind": "title",
+          "code": "0x19",
+          "title": "SS034 : 暗き沼の魔法使い         / 暗き沼"
+        },
+        {
+          "kind": "title",
+          "code": "0x08",
+          "title": "SS009 : 暗き沼の魔法使い         / レッド・ドラゴン"
+        },
+        {
+          "kind": "title",
+          "code": "0x02",
+          "title": "SS003 : ロマンシア               / ロマンシア王国"
+        },
+        {
+          "kind": "title",
+          "code": "0x07",
+          "title": "SS008 : ロマンシア               / ロマンシア城"
+        },
+        {
+          "kind": "title",
+          "code": "0x03",
+          "title": "SS004 : ロマンシア               / アゾルバ王国"
+        },
+        {
+          "kind": "title",
+          "code": "0x20",
+          "title": "SS043 : ロマンシア               / ヴァイデス"
+        },
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "SS002 : 紅玉の謎                 / 森"
+        },
+        {
+          "kind": "title",
+          "code": "0x3a",
+          "title": "SS097 : 紅玉の謎                 / モス・ジャイアント"
+        },
+        {
+          "kind": "title",
+          "code": "0x36",
+          "title": "SS089 : 紅玉の謎                 / 平和な森"
+        },
+        {
+          "kind": "title",
+          "code": "0x18",
+          "title": "SS032 : 暗黒の魔導士             / ダンジョンI"
+        },
+        {
+          "kind": "title",
+          "code": "0x15",
+          "title": "SS026 : 暗黒の魔導士             / ブルー・ドラゴン"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "SS022 : 暗黒の魔導士             / ダンジョンII"
+        },
+        {
+          "kind": "title",
+          "code": "0x0e",
+          "title": "SS016 : 暗黒の魔導士             / ゲディス"
+        },
+        {
+          "kind": "title",
+          "code": "0x0c",
+          "title": "SS014 : 呪われたクイーンマリー号 / 船内"
+        },
+        {
+          "kind": "title",
+          "code": "0x21",
+          "title": "SS044 : 呪われたクイーンマリー号 / 上陸後"
+        },
+        {
+          "kind": "title",
+          "code": "0x31",
+          "title": "SS084 : 呪われたクイーンマリー号 / アークデーモン"
+        },
+        {
+          "kind": "title",
+          "code": "0x24",
+          "title": "SS048 : 天の神々たち             / 村"
+        },
+        {
+          "kind": "title",
+          "code": "0x1f",
+          "title": "SS042 : 天の神々たち             / コンバットシーン"
+        },
+        {
+          "kind": "title",
+          "code": "0x2a",
+          "title": "SS059 : 天の神々たち             / 天上界"
+        },
+        {
+          "kind": "title",
+          "code": "0x22",
+          "title": "SS045 : 天の神々たち             / 竪琴"
+        },
+        {
+          "kind": "title",
+          "code": "0x30",
+          "title": "SS083 : 天の神々たち             / エビル=シャーマン"
+        },
+        {
+          "kind": "title",
+          "code": "0x06",
+          "title": "SS007 : 氷の洞窟                 / 洞窟I"
+        },
+        {
+          "kind": "title",
+          "code": "0x05",
+          "title": "SS006 : 氷の洞窟                 / エキム"
+        },
+        {
+          "kind": "title",
+          "code": "0x1a",
+          "title": "SS036 : 氷の洞窟                 / 洞窟II"
+        },
+        {
+          "kind": "title",
+          "code": "0x0b",
+          "title": "SS012 : メデューサの首           / 森"
+        },
+        {
+          "kind": "title",
+          "code": "0x26",
+          "title": "SS053 : メデューサの首           / 村"
+        },
+        {
+          "kind": "title",
+          "code": "0x23",
+          "title": "SS047 : メデューサの首           / メデューサ"
+        },
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "SS021 : 囚われた魔法使い         / 地下要塞"
+        },
+        {
+          "kind": "title",
+          "code": "0x33",
+          "title": "SS086 : 囚われた魔法使い         / ファイヤー・エレメント"
+        },
+        {
+          "kind": "title",
+          "code": "0x14",
+          "title": "SS025 : 不老長寿の水             / 生きている洞窟"
+        },
+        {
+          "kind": "title",
+          "code": "0x0d",
+          "title": "SS015 : 不老長寿の水             / ダブル=デビルス"
+        },
+        {
+          "kind": "title",
+          "code": "0x39",
+          "title": "SS092 : 不老長寿の水             / 動く心臓"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/takeru.xml",
+      "source_order": 4451,
+      "archive": "sor_msx",
+      "id": "sor-msx-generic-2"
+    },
+    {
+      "title": "[MSX] SORCERIAN - Dragon Slayer V - (戦国ソーサリアン)(PSG)",
+      "driver": {
+        "name": "msx",
+        "type": "generic",
+        "alias": "TAKERU",
+        "platform": "MSX"
+      },
+      "options": [
+        {
+          "name": "mdata_addr",
+          "value": "0x8000"
+        },
+        {
+          "name": "mdata_size",
+          "value": "0x2000"
+        },
+        {
+          "name": "mfile_size",
+          "value": "0x2000"
+        },
+        {
+          "name": "mdata_num",
+          "value": "0x40"
+        },
+        {
+          "name": "init_pc",
+          "value": "0x0400"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "patch",
+          "offset": "0x0400"
+        },
+        {
+          "type": "code",
+          "path": "BIOS",
+          "offset": "0xb000"
+        },
+        {
+          "type": "bgm",
+          "path": "PS000",
+          "offset": "0x00"
+        },
+        {
+          "type": "bgm",
+          "path": "PS005",
+          "offset": "0x01"
+        },
+        {
+          "type": "bgm",
+          "path": "PS011",
+          "offset": "0x02"
+        },
+        {
+          "type": "bgm",
+          "path": "PS018",
+          "offset": "0x03"
+        },
+        {
+          "type": "bgm",
+          "path": "PS020",
+          "offset": "0x04"
+        },
+        {
+          "type": "bgm",
+          "path": "PS026",
+          "offset": "0x05"
+        },
+        {
+          "type": "bgm",
+          "path": "PS039",
+          "offset": "0x06"
+        },
+        {
+          "type": "bgm",
+          "path": "PS040",
+          "offset": "0x07"
+        },
+        {
+          "type": "bgm",
+          "path": "PS043",
+          "offset": "0x08"
+        },
+        {
+          "type": "bgm",
+          "path": "PS061",
+          "offset": "0x09"
+        },
+        {
+          "type": "bgm",
+          "path": "PS062",
+          "offset": "0x0a"
+        },
+        {
+          "type": "bgm",
+          "path": "PS063",
+          "offset": "0x0b"
+        },
+        {
+          "type": "bgm",
+          "path": "PS064",
+          "offset": "0x0c"
+        },
+        {
+          "type": "bgm",
+          "path": "PS065",
+          "offset": "0x0d"
+        },
+        {
+          "type": "bgm",
+          "path": "PS072",
+          "offset": "0x0e"
+        },
+        {
+          "type": "bgm",
+          "path": "PS077",
+          "offset": "0x0f"
+        },
+        {
+          "type": "bgm",
+          "path": "PS078",
+          "offset": "0x10"
+        },
+        {
+          "type": "bgm",
+          "path": "PS079",
+          "offset": "0x11"
+        },
+        {
+          "type": "bgm",
+          "path": "PS080",
+          "offset": "0x12"
+        },
+        {
+          "type": "bgm",
+          "path": "PS091",
+          "offset": "0x13"
+        },
+        {
+          "type": "bgm",
+          "path": "PS093",
+          "offset": "0x14"
+        },
+        {
+          "type": "bgm",
+          "path": "PS094",
+          "offset": "0x15"
+        },
+        {
+          "type": "bgm",
+          "path": "PS095",
+          "offset": "0x16"
+        },
+        {
+          "type": "bgm",
+          "path": "PS096",
+          "offset": "0x17"
+        },
+        {
+          "type": "bgm",
+          "path": "PS098",
+          "offset": "0x18"
+        },
+        {
+          "type": "bgm",
+          "path": "PS099",
+          "offset": "0x19"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x00",
+          "title": "PS000 : 演奏停止"
+        },
+        {
+          "kind": "title",
+          "code": "0x0b",
+          "title": "PS063 : 武田信玄の章   / 異教の地"
+        },
+        {
+          "kind": "title",
+          "code": "0x15",
+          "title": "PS094 : 武田信玄の章   / 阿修羅"
+        },
+        {
+          "kind": "title",
+          "code": "0x0c",
+          "title": "PS064 : 織田信長の章   / 雪の五条大橋"
+        },
+        {
+          "kind": "title",
+          "code": "0x16",
+          "title": "PS095 : 織田信長の章   / 風神 雷神"
+        },
+        {
+          "kind": "title",
+          "code": "0x0e",
+          "title": "PS072 : 豊臣秀吉の章   / 哀愁の天守閣"
+        },
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "PS080 : 豊臣秀吉の章   / ぬえ"
+        },
+        {
+          "kind": "title",
+          "code": "0x0d",
+          "title": "PS065 : 真田幸村の章   / 忍者屋敷"
+        },
+        {
+          "kind": "title",
+          "code": "0x14",
+          "title": "PS093 : 真田幸村の章   / 天狗"
+        },
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "PS079 : 徳川家康の章   / 江戸を斬る"
+        },
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "PS078 : 徳川家康の章   / 邪鬼"
+        },
+        {
+          "kind": "title",
+          "code": "0x19",
+          "title": "PS099 : ファンファーレ"
+        },
+        {
+          "kind": "title",
+          "code": "0x0f",
+          "title": "PS077 : 勝利"
+        },
+        {
+          "kind": "title",
+          "code": "0x17",
+          "title": "PS096 : 帰還"
+        },
+        {
+          "kind": "title",
+          "code": "0x06",
+          "title": "PS039 : オープニング"
+        },
+        {
+          "kind": "title",
+          "code": "0x03",
+          "title": "PS018 : 城「ここで逢えるね」"
+        },
+        {
+          "kind": "title",
+          "code": "0x07",
+          "title": "PS040 : 町「ペンタウァI」"
+        },
+        {
+          "kind": "title",
+          "code": "0x02",
+          "title": "PS011 : 町「ペンタウァII」"
+        },
+        {
+          "kind": "title",
+          "code": "0x04",
+          "title": "PS020 : アイテム分配「トラベラーズ・イン」"
+        },
+        {
+          "kind": "title",
+          "code": "0x0a",
+          "title": "PS062 : キングドラゴン"
+        },
+        {
+          "kind": "title",
+          "code": "0x18",
+          "title": "PS098 : キングドラゴン死亡"
+        },
+        {
+          "kind": "title",
+          "code": "0x09",
+          "title": "PS061 : エンディングI"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "PS091 : エンディングII"
+        },
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "PS005 : 消えた王様の杖 / ヒドラ"
+        },
+        {
+          "kind": "title",
+          "code": "0x08",
+          "title": "PS043 : ロマンシア     / ヴァイデス"
+        },
+        {
+          "kind": "title",
+          "code": "0x05",
+          "title": "PS026 : 暗黒の魔導士   / ブルー・ドラゴン"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/takeru.xml",
+      "source_order": 4452,
+      "archive": "sorsen_msx",
+      "id": "sorsen-msx-generic"
+    },
+    {
+      "title": "[MSX] SORCERIAN - Dragon Slayer V - (戦国ソーサリアン)(OPLL)",
+      "driver": {
+        "name": "msx",
+        "type": "generic",
+        "alias": "TAKERU",
+        "platform": "MSX"
+      },
+      "options": [
+        {
+          "name": "mdata_addr",
+          "value": "0x8000"
+        },
+        {
+          "name": "mdata_size",
+          "value": "0x2000"
+        },
+        {
+          "name": "mfile_size",
+          "value": "0x2000"
+        },
+        {
+          "name": "mdata_num",
+          "value": "0x40"
+        },
+        {
+          "name": "use_opll",
+          "value": "0x01"
+        },
+        {
+          "name": "init_pc",
+          "value": "0x0400"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "patch",
+          "offset": "0x0400"
+        },
+        {
+          "type": "code",
+          "path": "BIOS",
+          "offset": "0xb000"
+        },
+        {
+          "type": "bgm",
+          "path": "SS000",
+          "offset": "0x00"
+        },
+        {
+          "type": "bgm",
+          "path": "SS005",
+          "offset": "0x01"
+        },
+        {
+          "type": "bgm",
+          "path": "SS011",
+          "offset": "0x02"
+        },
+        {
+          "type": "bgm",
+          "path": "SS018",
+          "offset": "0x03"
+        },
+        {
+          "type": "bgm",
+          "path": "SS020",
+          "offset": "0x04"
+        },
+        {
+          "type": "bgm",
+          "path": "SS026",
+          "offset": "0x05"
+        },
+        {
+          "type": "bgm",
+          "path": "SS039",
+          "offset": "0x06"
+        },
+        {
+          "type": "bgm",
+          "path": "SS040",
+          "offset": "0x07"
+        },
+        {
+          "type": "bgm",
+          "path": "SS043",
+          "offset": "0x08"
+        },
+        {
+          "type": "bgm",
+          "path": "SS061",
+          "offset": "0x09"
+        },
+        {
+          "type": "bgm",
+          "path": "SS062",
+          "offset": "0x0a"
+        },
+        {
+          "type": "bgm",
+          "path": "SS063",
+          "offset": "0x0b"
+        },
+        {
+          "type": "bgm",
+          "path": "SS064",
+          "offset": "0x0c"
+        },
+        {
+          "type": "bgm",
+          "path": "SS065",
+          "offset": "0x0d"
+        },
+        {
+          "type": "bgm",
+          "path": "SS072",
+          "offset": "0x0e"
+        },
+        {
+          "type": "bgm",
+          "path": "SS077",
+          "offset": "0x0f"
+        },
+        {
+          "type": "bgm",
+          "path": "SS078",
+          "offset": "0x10"
+        },
+        {
+          "type": "bgm",
+          "path": "SS079",
+          "offset": "0x11"
+        },
+        {
+          "type": "bgm",
+          "path": "SS080",
+          "offset": "0x12"
+        },
+        {
+          "type": "bgm",
+          "path": "SS091",
+          "offset": "0x13"
+        },
+        {
+          "type": "bgm",
+          "path": "SS093",
+          "offset": "0x14"
+        },
+        {
+          "type": "bgm",
+          "path": "SS094",
+          "offset": "0x15"
+        },
+        {
+          "type": "bgm",
+          "path": "SS095",
+          "offset": "0x16"
+        },
+        {
+          "type": "bgm",
+          "path": "SS096",
+          "offset": "0x17"
+        },
+        {
+          "type": "bgm",
+          "path": "SS098",
+          "offset": "0x18"
+        },
+        {
+          "type": "bgm",
+          "path": "SS099",
+          "offset": "0x19"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x00",
+          "title": "SS000 : 演奏停止"
+        },
+        {
+          "kind": "title",
+          "code": "0x0b",
+          "title": "SS063 : 武田信玄の章   / 異教の地"
+        },
+        {
+          "kind": "title",
+          "code": "0x15",
+          "title": "SS094 : 武田信玄の章   / 阿修羅"
+        },
+        {
+          "kind": "title",
+          "code": "0x0c",
+          "title": "SS064 : 織田信長の章   / 雪の五条大橋"
+        },
+        {
+          "kind": "title",
+          "code": "0x16",
+          "title": "SS095 : 織田信長の章   / 風神 雷神"
+        },
+        {
+          "kind": "title",
+          "code": "0x0e",
+          "title": "SS072 : 豊臣秀吉の章   / 哀愁の天守閣"
+        },
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "SS080 : 豊臣秀吉の章   / ぬえ"
+        },
+        {
+          "kind": "title",
+          "code": "0x0d",
+          "title": "SS065 : 真田幸村の章   / 忍者屋敷"
+        },
+        {
+          "kind": "title",
+          "code": "0x14",
+          "title": "SS093 : 真田幸村の章   / 天狗"
+        },
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "SS079 : 徳川家康の章   / 江戸を斬る"
+        },
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "SS078 : 徳川家康の章   / 邪鬼"
+        },
+        {
+          "kind": "title",
+          "code": "0x19",
+          "title": "SS099 : ファンファーレ"
+        },
+        {
+          "kind": "title",
+          "code": "0x0f",
+          "title": "SS077 : 勝利"
+        },
+        {
+          "kind": "title",
+          "code": "0x17",
+          "title": "SS096 : 帰還"
+        },
+        {
+          "kind": "title",
+          "code": "0x06",
+          "title": "SS039 : オープニング"
+        },
+        {
+          "kind": "title",
+          "code": "0x03",
+          "title": "SS018 : 城「ここで逢えるね」"
+        },
+        {
+          "kind": "title",
+          "code": "0x07",
+          "title": "SS040 : 町「ペンタウァI」"
+        },
+        {
+          "kind": "title",
+          "code": "0x02",
+          "title": "SS011 : 町「ペンタウァII」"
+        },
+        {
+          "kind": "title",
+          "code": "0x04",
+          "title": "SS020 : アイテム分配「トラベラーズ・イン」"
+        },
+        {
+          "kind": "title",
+          "code": "0x0a",
+          "title": "SS062 : キングドラゴン"
+        },
+        {
+          "kind": "title",
+          "code": "0x18",
+          "title": "SS098 : キングドラゴン死亡"
+        },
+        {
+          "kind": "title",
+          "code": "0x09",
+          "title": "SS061 : エンディングI"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "SS091 : エンディングII"
+        },
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "SS005 : 消えた王様の杖 / ヒドラ"
+        },
+        {
+          "kind": "title",
+          "code": "0x08",
+          "title": "SS043 : ロマンシア     / ヴァイデス"
+        },
+        {
+          "kind": "title",
+          "code": "0x05",
+          "title": "SS026 : 暗黒の魔導士   / ブルー・ドラゴン"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/takeru.xml",
+      "source_order": 4453,
+      "archive": "sorsen_msx",
+      "id": "sorsen-msx-generic-2"
+    },
+    {
+      "title": "[MSX] SORCERIAN - Dragon Slayer V - (ピラミッドソーサリアン)(PSG)",
+      "driver": {
+        "name": "msx",
+        "type": "generic",
+        "alias": "TAKERU",
+        "platform": "MSX"
+      },
+      "options": [
+        {
+          "name": "mdata_addr",
+          "value": "0x8000"
+        },
+        {
+          "name": "mdata_size",
+          "value": "0x2000"
+        },
+        {
+          "name": "mfile_size",
+          "value": "0x2000"
+        },
+        {
+          "name": "mdata_num",
+          "value": "0x40"
+        },
+        {
+          "name": "init_pc",
+          "value": "0x0400"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "patch",
+          "offset": "0x0400"
+        },
+        {
+          "type": "code",
+          "path": "BIOS",
+          "offset": "0xb000"
+        },
+        {
+          "type": "bgm",
+          "path": "PS000",
+          "offset": "0x00"
+        },
+        {
+          "type": "bgm",
+          "path": "PS001",
+          "offset": "0x01"
+        },
+        {
+          "type": "bgm",
+          "path": "PS002",
+          "offset": "0x02"
+        },
+        {
+          "type": "bgm",
+          "path": "PS003",
+          "offset": "0x03"
+        },
+        {
+          "type": "bgm",
+          "path": "PS004",
+          "offset": "0x04"
+        },
+        {
+          "type": "bgm",
+          "path": "PS005",
+          "offset": "0x05"
+        },
+        {
+          "type": "bgm",
+          "path": "PS006",
+          "offset": "0x06"
+        },
+        {
+          "type": "bgm",
+          "path": "PS007",
+          "offset": "0x07"
+        },
+        {
+          "type": "bgm",
+          "path": "PS008",
+          "offset": "0x08"
+        },
+        {
+          "type": "bgm",
+          "path": "PS009",
+          "offset": "0x09"
+        },
+        {
+          "type": "bgm",
+          "path": "PS010",
+          "offset": "0x0a"
+        },
+        {
+          "type": "bgm",
+          "path": "PS011",
+          "offset": "0x0b"
+        },
+        {
+          "type": "bgm",
+          "path": "PS012",
+          "offset": "0x0c"
+        },
+        {
+          "type": "bgm",
+          "path": "PS013",
+          "offset": "0x0d"
+        },
+        {
+          "type": "bgm",
+          "path": "PS018",
+          "offset": "0x0e"
+        },
+        {
+          "type": "bgm",
+          "path": "PS020",
+          "offset": "0x0f"
+        },
+        {
+          "type": "bgm",
+          "path": "PS026",
+          "offset": "0x10"
+        },
+        {
+          "type": "bgm",
+          "path": "PS039",
+          "offset": "0x11"
+        },
+        {
+          "type": "bgm",
+          "path": "PS040",
+          "offset": "0x12"
+        },
+        {
+          "type": "bgm",
+          "path": "PS043",
+          "offset": "0x13"
+        },
+        {
+          "type": "bgm",
+          "path": "PS046",
+          "offset": "0x14"
+        },
+        {
+          "type": "bgm",
+          "path": "PS057",
+          "offset": "0x15"
+        },
+        {
+          "type": "bgm",
+          "path": "PS061",
+          "offset": "0x16"
+        },
+        {
+          "type": "bgm",
+          "path": "PS062",
+          "offset": "0x17"
+        },
+        {
+          "type": "bgm",
+          "path": "PS091",
+          "offset": "0x18"
+        },
+        {
+          "type": "bgm",
+          "path": "PS098",
+          "offset": "0x19"
+        },
+        {
+          "type": "bgm",
+          "path": "PS099",
+          "offset": "0x1a"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x00",
+          "title": "PS000 : 演奏停止"
+        },
+        {
+          "kind": "title",
+          "code": "0x14",
+          "title": "PS046 : メニュー画面           / Sanders Island"
+        },
+        {
+          "kind": "title",
+          "code": "0x08",
+          "title": "PS008 : 血塗られた王家の秘宝   / Bloody-Diamond"
+        },
+        {
+          "kind": "title",
+          "code": "0x0d",
+          "title": "PS013 : 血塗られた王家の秘宝   / Tutankhamen"
+        },
+        {
+          "kind": "title",
+          "code": "0x03",
+          "title": "PS003 : 魔の下僕ガッシュの陰謀 / Forest of Lafaune"
+        },
+        {
+          "kind": "title",
+          "code": "0x02",
+          "title": "PS002 : 魔の下僕ガッシュの陰謀 / Before Gash"
+        },
+        {
+          "kind": "title",
+          "code": "0x05",
+          "title": "PS005 : 魔の下僕ガッシュの陰謀 / Gash"
+        },
+        {
+          "kind": "title",
+          "code": "0x09",
+          "title": "PS009 : 心を失った姫君         / Cherish-doll"
+        },
+        {
+          "kind": "title",
+          "code": "0x0c",
+          "title": "PS012 : 心を失った姫君         / Gaddlegun"
+        },
+        {
+          "kind": "title",
+          "code": "0x15",
+          "title": "PS057 : 嘆きの神殿             / Grievously Shrine"
+        },
+        {
+          "kind": "title",
+          "code": "0x06",
+          "title": "PS006 : 嘆きの神殿             / Juggler"
+        },
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "PS001 : 魔王ギルバレスの迷宮   / Labyrinth of Gilbares"
+        },
+        {
+          "kind": "title",
+          "code": "0x0b",
+          "title": "PS011 : 魔王ギルバレスの迷宮   / Foreboding"
+        },
+        {
+          "kind": "title",
+          "code": "0x0a",
+          "title": "PS010 : 魔王ギルバレスの迷宮   / Gilbares"
+        },
+        {
+          "kind": "title",
+          "code": "0x1a",
+          "title": "PS099 : ファンファーレ"
+        },
+        {
+          "kind": "title",
+          "code": "0x07",
+          "title": "PS007 : シナリオクリア         / Click! Click!"
+        },
+        {
+          "kind": "title",
+          "code": "0x04",
+          "title": "PS004 : エンディング           / Good-luck ! Good-by !"
+        },
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "PS039 : オープニング"
+        },
+        {
+          "kind": "title",
+          "code": "0x0e",
+          "title": "PS018 : 城「ここで逢えるね」"
+        },
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "PS040 : 町「ペンタウァI」"
+        },
+        {
+          "kind": "title",
+          "code": "0x0f",
+          "title": "PS020 : アイテム分配「トラベラーズ・イン」"
+        },
+        {
+          "kind": "title",
+          "code": "0x17",
+          "title": "PS062 : キングドラゴン"
+        },
+        {
+          "kind": "title",
+          "code": "0x19",
+          "title": "PS098 : キングドラゴン死亡"
+        },
+        {
+          "kind": "title",
+          "code": "0x16",
+          "title": "PS061 : エンディングI"
+        },
+        {
+          "kind": "title",
+          "code": "0x18",
+          "title": "PS091 : エンディングII"
+        },
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "PS026 : 暗黒の魔導士           / ブルー・ドラゴン"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "PS043 : ロマンシア             / ヴァイデス"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/takeru.xml",
+      "source_order": 4454,
+      "archive": "sorpyr_msx",
+      "id": "sorpyr-msx-generic"
+    },
+    {
+      "title": "[MSX] SORCERIAN - Dragon Slayer V - (ピラミッドソーサリアン)(OPLL)",
+      "driver": {
+        "name": "msx",
+        "type": "generic",
+        "alias": "TAKERU",
+        "platform": "MSX"
+      },
+      "options": [
+        {
+          "name": "mdata_addr",
+          "value": "0x8000"
+        },
+        {
+          "name": "mdata_size",
+          "value": "0x2000"
+        },
+        {
+          "name": "mfile_size",
+          "value": "0x2000"
+        },
+        {
+          "name": "mdata_num",
+          "value": "0x40"
+        },
+        {
+          "name": "use_opll",
+          "value": "0x01"
+        },
+        {
+          "name": "init_pc",
+          "value": "0x0400"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "patch",
+          "offset": "0x0400"
+        },
+        {
+          "type": "code",
+          "path": "BIOS",
+          "offset": "0xb000"
+        },
+        {
+          "type": "bgm",
+          "path": "SS000",
+          "offset": "0x00"
+        },
+        {
+          "type": "bgm",
+          "path": "SS001",
+          "offset": "0x01"
+        },
+        {
+          "type": "bgm",
+          "path": "SS002",
+          "offset": "0x02"
+        },
+        {
+          "type": "bgm",
+          "path": "SS003",
+          "offset": "0x03"
+        },
+        {
+          "type": "bgm",
+          "path": "SS004",
+          "offset": "0x04"
+        },
+        {
+          "type": "bgm",
+          "path": "SS005",
+          "offset": "0x05"
+        },
+        {
+          "type": "bgm",
+          "path": "SS006",
+          "offset": "0x06"
+        },
+        {
+          "type": "bgm",
+          "path": "SS007",
+          "offset": "0x07"
+        },
+        {
+          "type": "bgm",
+          "path": "SS008",
+          "offset": "0x08"
+        },
+        {
+          "type": "bgm",
+          "path": "SS009",
+          "offset": "0x09"
+        },
+        {
+          "type": "bgm",
+          "path": "SS010",
+          "offset": "0x0a"
+        },
+        {
+          "type": "bgm",
+          "path": "SS011",
+          "offset": "0x0b"
+        },
+        {
+          "type": "bgm",
+          "path": "SS012",
+          "offset": "0x0c"
+        },
+        {
+          "type": "bgm",
+          "path": "SS013",
+          "offset": "0x0d"
+        },
+        {
+          "type": "bgm",
+          "path": "SS018",
+          "offset": "0x0e"
+        },
+        {
+          "type": "bgm",
+          "path": "SS020",
+          "offset": "0x0f"
+        },
+        {
+          "type": "bgm",
+          "path": "SS026",
+          "offset": "0x10"
+        },
+        {
+          "type": "bgm",
+          "path": "SS039",
+          "offset": "0x11"
+        },
+        {
+          "type": "bgm",
+          "path": "SS040",
+          "offset": "0x12"
+        },
+        {
+          "type": "bgm",
+          "path": "SS043",
+          "offset": "0x13"
+        },
+        {
+          "type": "bgm",
+          "path": "SS046",
+          "offset": "0x14"
+        },
+        {
+          "type": "bgm",
+          "path": "SS057",
+          "offset": "0x15"
+        },
+        {
+          "type": "bgm",
+          "path": "SS061",
+          "offset": "0x16"
+        },
+        {
+          "type": "bgm",
+          "path": "SS062",
+          "offset": "0x17"
+        },
+        {
+          "type": "bgm",
+          "path": "SS091",
+          "offset": "0x18"
+        },
+        {
+          "type": "bgm",
+          "path": "SS098",
+          "offset": "0x19"
+        },
+        {
+          "type": "bgm",
+          "path": "SS099",
+          "offset": "0x1a"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x00",
+          "title": "SS000 : 演奏停止"
+        },
+        {
+          "kind": "title",
+          "code": "0x14",
+          "title": "SS046 : メニュー画面           / Sanders Island"
+        },
+        {
+          "kind": "title",
+          "code": "0x08",
+          "title": "SS008 : 血塗られた王家の秘宝   / Bloody-Diamond"
+        },
+        {
+          "kind": "title",
+          "code": "0x0d",
+          "title": "SS013 : 血塗られた王家の秘宝   / Tutankhamen"
+        },
+        {
+          "kind": "title",
+          "code": "0x03",
+          "title": "SS003 : 魔の下僕ガッシュの陰謀 / Forest of Lafaune"
+        },
+        {
+          "kind": "title",
+          "code": "0x02",
+          "title": "SS002 : 魔の下僕ガッシュの陰謀 / Before Gash"
+        },
+        {
+          "kind": "title",
+          "code": "0x05",
+          "title": "SS005 : 魔の下僕ガッシュの陰謀 / Gash"
+        },
+        {
+          "kind": "title",
+          "code": "0x09",
+          "title": "SS009 : 心を失った姫君         / Cherish-doll"
+        },
+        {
+          "kind": "title",
+          "code": "0x0c",
+          "title": "SS012 : 心を失った姫君         / Gaddlegun"
+        },
+        {
+          "kind": "title",
+          "code": "0x15",
+          "title": "SS057 : 嘆きの神殿             / Grievously Shrine"
+        },
+        {
+          "kind": "title",
+          "code": "0x06",
+          "title": "SS006 : 嘆きの神殿             / Juggler"
+        },
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "SS001 : 魔王ギルバレスの迷宮   / Labyrinth of Gilbares"
+        },
+        {
+          "kind": "title",
+          "code": "0x0b",
+          "title": "SS011 : 魔王ギルバレスの迷宮   / Foreboding"
+        },
+        {
+          "kind": "title",
+          "code": "0x0a",
+          "title": "SS010 : 魔王ギルバレスの迷宮   / Gilbares"
+        },
+        {
+          "kind": "title",
+          "code": "0x1a",
+          "title": "SS099 : ファンファーレ"
+        },
+        {
+          "kind": "title",
+          "code": "0x07",
+          "title": "SS007 : シナリオクリア         / Click! Click!"
+        },
+        {
+          "kind": "title",
+          "code": "0x04",
+          "title": "SS004 : エンディング           / Good-luck ! Good-by !"
+        },
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "SS039 : オープニング"
+        },
+        {
+          "kind": "title",
+          "code": "0x0e",
+          "title": "SS018 : 城「ここで逢えるね」"
+        },
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "SS040 : 町「ペンタウァI」"
+        },
+        {
+          "kind": "title",
+          "code": "0x0f",
+          "title": "SS020 : アイテム分配「トラベラーズ・イン」"
+        },
+        {
+          "kind": "title",
+          "code": "0x17",
+          "title": "SS062 : キングドラゴン"
+        },
+        {
+          "kind": "title",
+          "code": "0x19",
+          "title": "SS098 : キングドラゴン死亡"
+        },
+        {
+          "kind": "title",
+          "code": "0x16",
+          "title": "SS061 : エンディングI"
+        },
+        {
+          "kind": "title",
+          "code": "0x18",
+          "title": "SS091 : エンディングII"
+        },
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "SS026 : 暗黒の魔導士           / ブルー・ドラゴン"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "SS043 : ロマンシア             / ヴァイデス"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/takeru.xml",
+      "source_order": 4455,
+      "archive": "sorpyr_msx",
+      "id": "sorpyr-msx-generic-2"
+    },
+    {
+      "title": "[X68000] Ko-Window アプリケーション集3",
+      "driver": {
+        "name": "x68k",
+        "type": "mxdrv",
+        "alias": "TAKERU",
+        "platform": "SHARP X68000"
+      },
+      "options": [],
+      "assets": [
+        {
+          "type": "data",
+          "path": "kowin3.mdx",
+          "offset": "0x01"
+        },
+        {
+          "type": "data",
+          "path": "KoWin3m.MDX",
+          "offset": "0x02"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "kowin3.mdx  : theme music by ＬＥＥＸ"
+        },
+        {
+          "kind": "title",
+          "code": "0x02",
+          "title": "KoWin3m.MDX : theme music by ＬＥＥＸ"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/takeru.xml",
+      "source_order": 4456,
+      "archive": "kowin368snd",
+      "id": "kowin368snd-mxdrv"
+    },
+    {
+      "title": "[PC-9801] NHK大河ドラマ 信長 -KING OF ZIPANGU-",
+      "driver": {
+        "name": "pc98dos",
+        "type": "opn",
+        "alias": "武尊プロジェクト",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "clockmul",
+          "value": "8"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "usd_98.com",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "ADVBIOS.OVL",
+          "offset": "-1"
+        },
+        {
+          "type": "conin",
+          "path": "ADVBIOS.OVL",
+          "offset": "0x05"
+        },
+        {
+          "type": "file",
+          "path": "VM/BR_01.USO",
+          "offset": "0x10"
+        },
+        {
+          "type": "file",
+          "path": "VM/BR_02.USO",
+          "offset": "0x11"
+        },
+        {
+          "type": "file",
+          "path": "VM/BR_03.USO",
+          "offset": "0x12"
+        },
+        {
+          "type": "file",
+          "path": "VM/BR_04.USO",
+          "offset": "0x13"
+        },
+        {
+          "type": "file",
+          "path": "VM/BR_AK.USO",
+          "offset": "0x14"
+        },
+        {
+          "type": "file",
+          "path": "VM/BR_END.USO",
+          "offset": "0x15"
+        },
+        {
+          "type": "file",
+          "path": "VM/BR_HIS.USO",
+          "offset": "0x16"
+        },
+        {
+          "type": "file",
+          "path": "VM/BR_MET.USO",
+          "offset": "0x17"
+        },
+        {
+          "type": "file",
+          "path": "VM/BR_MUH.USO",
+          "offset": "0x18"
+        },
+        {
+          "type": "file",
+          "path": "VM/BR_N1.USO",
+          "offset": "0x19"
+        },
+        {
+          "type": "file",
+          "path": "VM/BR_N2.USO",
+          "offset": "0x1a"
+        },
+        {
+          "type": "file",
+          "path": "VM/COM_1.USO",
+          "offset": "0x1b"
+        },
+        {
+          "type": "file",
+          "path": "VM/COM_1B.USO",
+          "offset": "0x1c"
+        },
+        {
+          "type": "file",
+          "path": "VM/COM_2.USO",
+          "offset": "0x1d"
+        },
+        {
+          "type": "file",
+          "path": "VM/COM_2B.USO",
+          "offset": "0x1e"
+        },
+        {
+          "type": "file",
+          "path": "VM/COM_3.USO",
+          "offset": "0x1f"
+        },
+        {
+          "type": "file",
+          "path": "VM/COM_4.USO",
+          "offset": "0x20"
+        },
+        {
+          "type": "file",
+          "path": "VM/COM_4B.USO",
+          "offset": "0x21"
+        },
+        {
+          "type": "file",
+          "path": "VM/N_COM1.USO",
+          "offset": "0x22"
+        },
+        {
+          "type": "file",
+          "path": "VM/N_COM2.USO",
+          "offset": "0x23"
+        },
+        {
+          "type": "shell",
+          "path": "usd_98",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "BR_01.USO  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "BR_02.USO  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "BR_03.USO  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "BR_04.USO  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x14",
+          "title": "BR_AK.USO  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x16",
+          "title": "BR_HIS.USO :"
+        },
+        {
+          "kind": "title",
+          "code": "0x17",
+          "title": "BR_MET.USO :"
+        },
+        {
+          "kind": "title",
+          "code": "0x18",
+          "title": "BR_MUH.USO :"
+        },
+        {
+          "kind": "title",
+          "code": "0x19",
+          "title": "BR_N1.USO  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x1a",
+          "title": "BR_N2.USO  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x1b",
+          "title": "COM_1.USO  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x1c",
+          "title": "COM_1B.USO :"
+        },
+        {
+          "kind": "title",
+          "code": "0x1d",
+          "title": "COM_2.USO  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x1e",
+          "title": "COM_2B.USO :"
+        },
+        {
+          "kind": "title",
+          "code": "0x1f",
+          "title": "COM_3.USO  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x20",
+          "title": "COM_4.USO  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x21",
+          "title": "COM_4B.USO :"
+        },
+        {
+          "kind": "title",
+          "code": "0x22",
+          "title": "N_COM1.USO :"
+        },
+        {
+          "kind": "title",
+          "code": "0x23",
+          "title": "N_COM2.USO :"
+        },
+        {
+          "kind": "title",
+          "code": "0x15",
+          "title": "BR_END.USO :"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/takeru.xml",
+      "source_order": 4457,
+      "archive": "nob_koz_98",
+      "id": "nob-koz-98-opn"
+    },
+    {
+      "title": "[X68000] COMET (Pegasus Soft)",
+      "driver": {
+        "name": "x68k",
+        "type": "generic",
+        "alias": "TAKERU",
+        "platform": "SHARP X68000"
+      },
+      "options": [],
+      "assets": [
+        {
+          "type": "code",
+          "path": "cmt68snd.bin"
+        },
+        {
+          "type": "x",
+          "path": "OPMDRV.X",
+          "offset": "0x10000"
+        },
+        {
+          "type": "x",
+          "path": "ONSYOKU.X",
+          "offset": "0x2e000"
+        },
+        {
+          "type": "x",
+          "path": "COMET_T.X",
+          "offset": "0x30000"
+        },
+        {
+          "type": "code",
+          "path": "GLEAM.OPM",
+          "offset": "0x50000"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "00 : 初期バージョンで使っていた曲"
+        },
+        {
+          "kind": "title",
+          "code": "0x02",
+          "title": "01 : A gleam of hope"
+        },
+        {
+          "kind": "title",
+          "code": "0x03",
+          "title": "02 : あっ やられた"
+        },
+        {
+          "kind": "title",
+          "code": "0x04",
+          "title": "03 : Milky Way [タイトル曲]"
+        },
+        {
+          "kind": "title",
+          "code": "0x05",
+          "title": "04 : 空の果てから [エンディング曲]"
+        },
+        {
+          "kind": "title",
+          "code": "0x06",
+          "title": "05 : みずがめδ [ネーム・エントリー曲]"
+        },
+        {
+          "kind": "title",
+          "code": "0x07",
+          "title": "06 : ほうき星 [テーマ曲]"
+        },
+        {
+          "kind": "title",
+          "code": "0x08",
+          "title": "07 : 星時計 [ステージ・セレクト]"
+        },
+        {
+          "kind": "title",
+          "code": "0x09",
+          "title": "08 : 凸レンズ"
+        },
+        {
+          "kind": "title",
+          "code": "0x0a",
+          "title": "09 : 星降る丘"
+        },
+        {
+          "kind": "comment",
+          "text": "\n\t\t\t<title code=\"0x0b\">0A : a gleam of hope (GLEAM.OPM)</title>\n\t\t\t  "
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/takeru.xml",
+      "source_order": 4458,
+      "archive": "comet68snd",
+      "id": "comet68snd-generic"
+    }
+  ]
+}

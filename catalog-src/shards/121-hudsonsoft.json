@@ -1,0 +1,1700 @@
+{
+  "format": "hoot-catalog-shard",
+  "version": 1,
+  "source_file": "xml/hudsonsoft.xml",
+  "date": "2006/05/26",
+  "comments": [
+    " //HUDSON SOFT "
+  ],
+  "games": [
+    {
+      "title": "[PC-8801] ICE CLIMBER",
+      "driver": {
+        "name": "pc88",
+        "type": "opn",
+        "alias": "HUDSON SOFT",
+        "platform": "NEC PC-8801"
+      },
+      "options": [
+        {
+          "name": "use_vrtc",
+          "value": "0x01"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "PATCH",
+          "offset": "0x0000"
+        },
+        {
+          "type": "code",
+          "path": "ICE2",
+          "offset": "0x7100"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x00",
+          "title": "演奏停止"
+        },
+        {
+          "kind": "title",
+          "code": "0x05",
+          "title": "タイトル"
+        },
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "ラウンド紹介"
+        },
+        {
+          "kind": "title",
+          "code": "0x02",
+          "title": "通常BGM"
+        },
+        {
+          "kind": "title",
+          "code": "0x04",
+          "title": "ボーナスステージ"
+        },
+        {
+          "kind": "title",
+          "code": "0x03",
+          "title": "ラウンドクリア"
+        },
+        {
+          "kind": "title",
+          "code": "0x06",
+          "title": "ポーズ"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/hudsonsoft.xml",
+      "source_order": 2547,
+      "archive": "iceclimb88",
+      "id": "iceclimb88-opn"
+    },
+    {
+      "title": "[PC-8801] デゼニワールド(PC-8801mkIISR専用版)",
+      "driver": {
+        "name": "pc88",
+        "type": "opn",
+        "alias": "HUDSON SOFT",
+        "platform": "NEC PC-8801"
+      },
+      "options": [],
+      "assets": [
+        {
+          "type": "code",
+          "path": "PATCH",
+          "offset": "0x0000"
+        },
+        {
+          "type": "code",
+          "path": "MAIN",
+          "offset": "0x1000"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x0e",
+          "title": "デゼニワールド"
+        },
+        {
+          "kind": "title",
+          "code": "0x0a",
+          "title": "電話の音"
+        },
+        {
+          "kind": "title",
+          "code": "0x03",
+          "title": "スーパーマンのテーマ"
+        },
+        {
+          "kind": "title",
+          "code": "0x05",
+          "title": "バットマンのテーマ"
+        },
+        {
+          "kind": "title",
+          "code": "0x02",
+          "title": "ウルトラマンのテーマ"
+        },
+        {
+          "kind": "title",
+          "code": "0x04",
+          "title": "時をかける少女"
+        },
+        {
+          "kind": "title",
+          "code": "0x06",
+          "title": "2001年宇宙の旅のテーマ"
+        },
+        {
+          "kind": "title",
+          "code": "0x07",
+          "title": "黄金バットのテーマ"
+        },
+        {
+          "kind": "title",
+          "code": "0x08",
+          "title": "サンダーバードのテーマ"
+        },
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "デゼニワールド入口"
+        },
+        {
+          "kind": "title",
+          "code": "0x0b",
+          "title": "巨大ブタマル1"
+        },
+        {
+          "kind": "title",
+          "code": "0x0c",
+          "title": "巨大ブタマル2"
+        },
+        {
+          "kind": "title",
+          "code": "0x0d",
+          "title": "巨大ブタマル3"
+        },
+        {
+          "kind": "title",
+          "code": "0x09",
+          "title": "エンディング"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/hudsonsoft.xml",
+      "source_order": 2548,
+      "archive": "dezeniwsr",
+      "id": "dezeniwsr-opn"
+    },
+    {
+      "title": "[PC-8801] デゼニワールド (PC-8801/mkII:PC-8801-11)",
+      "driver": {
+        "name": "pc88",
+        "type": "8801-11",
+        "alias": "HUDSON SOFT",
+        "platform": "NEC PC-8801"
+      },
+      "options": [],
+      "assets": [
+        {
+          "type": "code",
+          "path": "PATCH",
+          "offset": "0x0000"
+        },
+        {
+          "type": "code",
+          "path": "MAIN",
+          "offset": "0x0a00"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x0e",
+          "title": "デゼニワールド"
+        },
+        {
+          "kind": "title",
+          "code": "0x0a",
+          "title": "電話の音"
+        },
+        {
+          "kind": "title",
+          "code": "0x03",
+          "title": "スーパーマンのテーマ"
+        },
+        {
+          "kind": "title",
+          "code": "0x05",
+          "title": "バットマンのテーマ"
+        },
+        {
+          "kind": "title",
+          "code": "0x02",
+          "title": "ウルトラマンのテーマ"
+        },
+        {
+          "kind": "title",
+          "code": "0x04",
+          "title": "時をかける少女"
+        },
+        {
+          "kind": "title",
+          "code": "0x06",
+          "title": "2001年宇宙の旅のテーマ"
+        },
+        {
+          "kind": "title",
+          "code": "0x07",
+          "title": "黄金バットのテーマ"
+        },
+        {
+          "kind": "title",
+          "code": "0x08",
+          "title": "サンダーバードのテーマ"
+        },
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "デゼニワールド入口"
+        },
+        {
+          "kind": "title",
+          "code": "0x0b",
+          "title": "巨大ブタマル1"
+        },
+        {
+          "kind": "title",
+          "code": "0x0c",
+          "title": "巨大ブタマル2"
+        },
+        {
+          "kind": "title",
+          "code": "0x0d",
+          "title": "巨大ブタマル3"
+        },
+        {
+          "kind": "title",
+          "code": "0x09",
+          "title": "エンディング"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/hudsonsoft.xml",
+      "source_order": 2549,
+      "archive": "dezeniw88",
+      "id": "dezeniw88-8801-11"
+    },
+    {
+      "title": "[PC-8801] デゼニワールド (PC-8801/mkII:PC-8801-10)",
+      "driver": {
+        "name": "pc88",
+        "type": "8801-10",
+        "alias": "HUDSON SOFT",
+        "platform": "NEC PC-8801"
+      },
+      "options": [
+        {
+          "name": "use_vrtc",
+          "value": "1"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "PATCH",
+          "offset": "0x0000"
+        },
+        {
+          "type": "code",
+          "path": "MAIN",
+          "offset": "0x0a00"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x0e",
+          "title": "デゼニワールド"
+        },
+        {
+          "kind": "title",
+          "code": "0x0a",
+          "title": "電話の音"
+        },
+        {
+          "kind": "title",
+          "code": "0x03",
+          "title": "スーパーマンのテーマ"
+        },
+        {
+          "kind": "title",
+          "code": "0x05",
+          "title": "バットマンのテーマ"
+        },
+        {
+          "kind": "title",
+          "code": "0x02",
+          "title": "ウルトラマンのテーマ"
+        },
+        {
+          "kind": "title",
+          "code": "0x04",
+          "title": "時をかける少女"
+        },
+        {
+          "kind": "title",
+          "code": "0x06",
+          "title": "2001年宇宙の旅のテーマ"
+        },
+        {
+          "kind": "title",
+          "code": "0x07",
+          "title": "黄金バットのテーマ"
+        },
+        {
+          "kind": "title",
+          "code": "0x08",
+          "title": "サンダーバードのテーマ"
+        },
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "デゼニワールド入口"
+        },
+        {
+          "kind": "title",
+          "code": "0x0b",
+          "title": "巨大ブタマル1"
+        },
+        {
+          "kind": "title",
+          "code": "0x0c",
+          "title": "巨大ブタマル2"
+        },
+        {
+          "kind": "title",
+          "code": "0x0d",
+          "title": "巨大ブタマル3"
+        },
+        {
+          "kind": "title",
+          "code": "0x09",
+          "title": "エンディング"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/hudsonsoft.xml",
+      "source_order": 2550,
+      "archive": "dezeniw88",
+      "id": "dezeniw88-8801-10"
+    },
+    {
+      "title": "[PC-8801] LAMIA1999",
+      "driver": {
+        "name": "pc88",
+        "type": "opn",
+        "alias": "HUDSON SOFT",
+        "platform": "NEC PC-8801"
+      },
+      "options": [
+        {
+          "name": "mdata_addr",
+          "value": "0x1a00"
+        },
+        {
+          "name": "mdata_size",
+          "value": "0x0800"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "PATCH",
+          "offset": "0x0000"
+        },
+        {
+          "type": "code",
+          "path": "PROG",
+          "offset": "0x0100"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS00",
+          "offset": "0x01"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS01",
+          "offset": "0x02"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS02",
+          "offset": "0x03"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS03",
+          "offset": "0x04"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS04",
+          "offset": "0x05"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS05",
+          "offset": "0x06"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS06",
+          "offset": "0x07"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS07",
+          "offset": "0x08"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS08",
+          "offset": "0x09"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS09",
+          "offset": "0x0a"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS10",
+          "offset": "0x0b"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS11",
+          "offset": "0x0c"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS12",
+          "offset": "0x0d"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS13",
+          "offset": "0x0e"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "MUS00"
+        },
+        {
+          "kind": "title",
+          "code": "0x02",
+          "title": "MUS01"
+        },
+        {
+          "kind": "title",
+          "code": "0x03",
+          "title": "MUS02"
+        },
+        {
+          "kind": "title",
+          "code": "0x04",
+          "title": "MUS03"
+        },
+        {
+          "kind": "title",
+          "code": "0x05",
+          "title": "MUS04"
+        },
+        {
+          "kind": "title",
+          "code": "0x06",
+          "title": "MUS05"
+        },
+        {
+          "kind": "title",
+          "code": "0x07",
+          "title": "MUS06"
+        },
+        {
+          "kind": "title",
+          "code": "0x08",
+          "title": "MUS07"
+        },
+        {
+          "kind": "title",
+          "code": "0x09",
+          "title": "MUS08"
+        },
+        {
+          "kind": "title",
+          "code": "0x0a",
+          "title": "MUS09"
+        },
+        {
+          "kind": "title",
+          "code": "0x0b",
+          "title": "MUS10"
+        },
+        {
+          "kind": "title",
+          "code": "0x0c",
+          "title": "MUS11"
+        },
+        {
+          "kind": "title",
+          "code": "0x0d",
+          "title": "MUS12"
+        },
+        {
+          "kind": "title",
+          "code": "0x0e",
+          "title": "MUS13"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/hudsonsoft.xml",
+      "source_order": 2551,
+      "archive": "lamia",
+      "id": "lamia-opn"
+    },
+    {
+      "title": "[PC-8801] SUPER MARIO BROS. Special",
+      "driver": {
+        "name": "pc88",
+        "type": "opn",
+        "alias": "HUDSON SOFT",
+        "platform": "NEC PC-8801"
+      },
+      "options": [
+        {
+          "name": "use_vrtc",
+          "value": "0x01"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "PATCH",
+          "offset": "0x0000"
+        },
+        {
+          "type": "code",
+          "path": "PROG",
+          "offset": "0x0100"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x00000000",
+          "title": "BGM00 : 演奏停止"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000001",
+          "title": "BGM01 : 地上 / スタッフロール"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000002",
+          "title": "BGM02 : 地下"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000003",
+          "title": "BGM03 : 海"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000004",
+          "title": "BGM04 : 城"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000005",
+          "title": "BGM05 : 無敵"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000006",
+          "title": "BGM06 : Hurry up!"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000007",
+          "title": "BGM07 : ラウンドクリア"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000008",
+          "title": "BGM08 : ワールドクリア"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000009",
+          "title": "BGM09 : オールラウンドクリア"
+        },
+        {
+          "kind": "title",
+          "code": "0x0000000a",
+          "title": "BGM0A : ミス"
+        },
+        {
+          "kind": "title",
+          "code": "0x0000000b",
+          "title": "BGM0B : ゲームオーバー"
+        },
+        {
+          "kind": "title",
+          "code": "0x01000000",
+          "title": "EFC01 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x02000000",
+          "title": "EFC02 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x03000000",
+          "title": "EFC03 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x04000000",
+          "title": "EFC04 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x05000000",
+          "title": "EFC05 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x06000000",
+          "title": "EFC06 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x07000000",
+          "title": "EFC07 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x08000000",
+          "title": "EFC08 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x09000000",
+          "title": "EFC09 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x0a000000",
+          "title": "EFC0A :"
+        },
+        {
+          "kind": "title",
+          "code": "0x0b000000",
+          "title": "EFC0B :"
+        },
+        {
+          "kind": "title",
+          "code": "0x0c000000",
+          "title": "EFC0C :"
+        },
+        {
+          "kind": "title",
+          "code": "0x0d000000",
+          "title": "EFC0D :"
+        },
+        {
+          "kind": "title",
+          "code": "0x0e000000",
+          "title": "EFC0E :"
+        },
+        {
+          "kind": "title",
+          "code": "0x0f000000",
+          "title": "EFC0F :"
+        },
+        {
+          "kind": "title",
+          "code": "0x10000000",
+          "title": "EFC10 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x11000000",
+          "title": "EFC11 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x12000000",
+          "title": "EFC12 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x13000000",
+          "title": "EFC13 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x14000000",
+          "title": "EFC14 :"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/hudsonsoft.xml",
+      "source_order": 2552,
+      "archive": "smariosp",
+      "id": "smariosp-opn"
+    },
+    {
+      "title": "[PC-8801] DIONE",
+      "driver": {
+        "name": "pc88",
+        "type": "opn",
+        "alias": "HUDSON SOFT",
+        "platform": "NEC PC-8801"
+      },
+      "options": [
+        {
+          "name": "mdata_addr",
+          "value": "0x1000"
+        },
+        {
+          "name": "vdata_addr",
+          "value": "0x0800"
+        },
+        {
+          "name": "vdata_size",
+          "value": "0x0800"
+        },
+        {
+          "name": "vfile_size",
+          "value": "0x0800"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "PATCH",
+          "offset": "0x0000"
+        },
+        {
+          "type": "code",
+          "path": "DRIVER2",
+          "offset": "0x0800"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS00",
+          "offset": "0x00"
+        },
+        {
+          "type": "voice",
+          "path": "DRIVER1",
+          "offset": "0x00"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS01",
+          "offset": "0x01"
+        },
+        {
+          "type": "voice",
+          "path": "DRIVER2",
+          "offset": "0x01"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS02",
+          "offset": "0x02"
+        },
+        {
+          "type": "voice",
+          "path": "DRIVER1",
+          "offset": "0x02"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x00000000",
+          "title": "#00 STOP"
+        },
+        {
+          "kind": "title",
+          "code": "0x01000000",
+          "title": "#01 EFFECT"
+        },
+        {
+          "kind": "title",
+          "code": "0x02000000",
+          "title": "#02 EFFECT"
+        },
+        {
+          "kind": "comment",
+          "text": "\t<title code=\"0x03000002\">#03 </title> "
+        },
+        {
+          "kind": "title",
+          "code": "0x04000000",
+          "title": "#04 EFFECT"
+        },
+        {
+          "kind": "title",
+          "code": "0x05000000",
+          "title": "#05 EFFECT"
+        },
+        {
+          "kind": "title",
+          "code": "0x06000000",
+          "title": "#06 EFFECT"
+        },
+        {
+          "kind": "title",
+          "code": "0x07000000",
+          "title": "#07 EFFECT"
+        },
+        {
+          "kind": "title",
+          "code": "0x08000000",
+          "title": "#08 EFFECT"
+        },
+        {
+          "kind": "title",
+          "code": "0x09000000",
+          "title": "#09 EFFECT"
+        },
+        {
+          "kind": "title",
+          "code": "0x0a000000",
+          "title": "#0A EFFECT"
+        },
+        {
+          "kind": "title",
+          "code": "0x0b000000",
+          "title": "#0B EFFECT STOP"
+        },
+        {
+          "kind": "title",
+          "code": "0x0c000000",
+          "title": "#0C MUSIC"
+        },
+        {
+          "kind": "title",
+          "code": "0x0d000000",
+          "title": "#0D MUSIC"
+        },
+        {
+          "kind": "title",
+          "code": "0x0e000001",
+          "title": "#0E MUSIC"
+        },
+        {
+          "kind": "title",
+          "code": "0x0f000001",
+          "title": "#0F MUSIC"
+        },
+        {
+          "kind": "title",
+          "code": "0x10000000",
+          "title": "#10 MUSIC"
+        },
+        {
+          "kind": "title",
+          "code": "0x11000002",
+          "title": "#11 MUSIC"
+        },
+        {
+          "kind": "comment",
+          "text": "\t<title code=\"0x12000002\">#12</title> "
+        },
+        {
+          "kind": "comment",
+          "text": "\t<title code=\"0x13000002\">#13</title> "
+        },
+        {
+          "kind": "comment",
+          "text": "\t<title code=\"0x14000002\">#14</title> "
+        },
+        {
+          "kind": "comment",
+          "text": "\t<title code=\"0x15000002\">#15</title> "
+        },
+        {
+          "kind": "comment",
+          "text": "\t<title code=\"0x16000002\">#16</title> "
+        },
+        {
+          "kind": "comment",
+          "text": "\t<title code=\"0x17000002\">#17</title> "
+        },
+        {
+          "kind": "comment",
+          "text": "\t<title code=\"0x18000002\">#18</title> "
+        },
+        {
+          "kind": "comment",
+          "text": "\t<title code=\"0x19000002\">#19</title> "
+        },
+        {
+          "kind": "comment",
+          "text": "\t<title code=\"0x1a000002\">#1a</title> "
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/hudsonsoft.xml",
+      "source_order": 2553,
+      "archive": "dione",
+      "id": "dione-opn"
+    },
+    {
+      "title": "[PC-8801] Hilanipla",
+      "driver": {
+        "name": "pc88",
+        "type": "opn",
+        "alias": "HUDSON SOFT",
+        "platform": "NEC PC-8801"
+      },
+      "options": [
+        {
+          "name": "mdata_addr",
+          "value": "0xe000"
+        },
+        {
+          "name": "mdata_size",
+          "value": "0x1800"
+        },
+        {
+          "name": "use_rtc",
+          "value": "0x01"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "PATCH",
+          "offset": "0x0000"
+        },
+        {
+          "type": "code",
+          "path": "PROG",
+          "offset": "0x1000"
+        },
+        {
+          "type": "code",
+          "path": "VOICE2",
+          "offset": "0xf900"
+        },
+        {
+          "type": "code",
+          "path": "VOICE1",
+          "offset": "0xfa00"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS00",
+          "offset": "0x00"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS01",
+          "offset": "0x01"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS02",
+          "offset": "0x02"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS03",
+          "offset": "0x03"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS04",
+          "offset": "0x04"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS05",
+          "offset": "0x05"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS06",
+          "offset": "0x06"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS07",
+          "offset": "0x07"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS08",
+          "offset": "0x08"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS09",
+          "offset": "0x09"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS10",
+          "offset": "0x0a"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS11",
+          "offset": "0x0b"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS12",
+          "offset": "0x0c"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS13",
+          "offset": "0x0d"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS14",
+          "offset": "0x0e"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS15",
+          "offset": "0x0f"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x00000000",
+          "title": "MUS00 : タイトル"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000001",
+          "title": "MUS01 : フィールド"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000002",
+          "title": "MUS02 : 街"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000003",
+          "title": "MUS03 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000004",
+          "title": "MUS04 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000005",
+          "title": "MUS05 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000006",
+          "title": "MUS06 : 戦闘"
+        },
+        {
+          "kind": "title",
+          "code": "0x01000007",
+          "title": "MUS07 : 戦闘終了"
+        },
+        {
+          "kind": "title",
+          "code": "0x01000008",
+          "title": "MUS08 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000009",
+          "title": "MUS09 : ゲームオーバー"
+        },
+        {
+          "kind": "title",
+          "code": "0x0000000a",
+          "title": "MUS10 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x0100000b",
+          "title": "MUS11 : ラッキー"
+        },
+        {
+          "kind": "title",
+          "code": "0x0100000c",
+          "title": "MUS12 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x0100000d",
+          "title": "MUS13 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x0000000e",
+          "title": "MUS14 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x0100000f",
+          "title": "MUS15 : レベルアップ"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/hudsonsoft.xml",
+      "source_order": 2554,
+      "archive": "hilani88",
+      "id": "hilani88-opn"
+    },
+    {
+      "title": "[X1] デゼニワールド",
+      "driver": {
+        "name": "x1",
+        "type": "psg",
+        "alias": "HUDSON SOFT",
+        "platform": "SHARP X1"
+      },
+      "options": [],
+      "assets": [
+        {
+          "type": "code",
+          "path": "PATCH",
+          "offset": "0x0000"
+        },
+        {
+          "type": "code",
+          "path": "MAIN",
+          "offset": "0x0a00"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x0e",
+          "title": "デゼニワールド"
+        },
+        {
+          "kind": "title",
+          "code": "0x0a",
+          "title": "電話の音"
+        },
+        {
+          "kind": "title",
+          "code": "0x03",
+          "title": "スーパーマンのテーマ"
+        },
+        {
+          "kind": "title",
+          "code": "0x05",
+          "title": "バットマンのテーマ"
+        },
+        {
+          "kind": "title",
+          "code": "0x02",
+          "title": "ウルトラマンのテーマ"
+        },
+        {
+          "kind": "title",
+          "code": "0x04",
+          "title": "時をかける少女"
+        },
+        {
+          "kind": "title",
+          "code": "0x06",
+          "title": "2001年宇宙の旅のテーマ"
+        },
+        {
+          "kind": "title",
+          "code": "0x07",
+          "title": "黄金バットのテーマ"
+        },
+        {
+          "kind": "title",
+          "code": "0x08",
+          "title": "サンダーバードのテーマ"
+        },
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "デゼニワールド入口"
+        },
+        {
+          "kind": "title",
+          "code": "0x0b",
+          "title": "巨大ブタマル1"
+        },
+        {
+          "kind": "title",
+          "code": "0x0c",
+          "title": "巨大ブタマル2"
+        },
+        {
+          "kind": "title",
+          "code": "0x0d",
+          "title": "巨大ブタマル3"
+        },
+        {
+          "kind": "title",
+          "code": "0x09",
+          "title": "エンディング"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/hudsonsoft.xml",
+      "source_order": 2555,
+      "archive": "x1dezeniw",
+      "id": "x1dezeniw-psg"
+    },
+    {
+      "title": "[X68000] 桃太郎伝説",
+      "driver": {
+        "name": "x68k",
+        "type": "generic",
+        "alias": "HUDSON SOFT",
+        "platform": "SHARP X68000"
+      },
+      "options": [],
+      "assets": [
+        {
+          "type": "code",
+          "path": "momoden68snd.bin"
+        },
+        {
+          "type": "x",
+          "path": "MOMO.X",
+          "offset": "0x010000"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x1a",
+          "title": "タイトルデモ"
+        },
+        {
+          "kind": "title",
+          "code": "0x03",
+          "title": "オープニング"
+        },
+        {
+          "kind": "title",
+          "code": "0x1b",
+          "title": "桃太郎の家"
+        },
+        {
+          "kind": "title",
+          "code": "0x07",
+          "title": "村"
+        },
+        {
+          "kind": "title",
+          "code": "0x1c",
+          "title": "愛と勇気のマーチ"
+        },
+        {
+          "kind": "title",
+          "code": "0x14",
+          "title": "戦闘1"
+        },
+        {
+          "kind": "title",
+          "code": "0x0e",
+          "title": "戦闘終了"
+        },
+        {
+          "kind": "title",
+          "code": "0x05",
+          "title": "仙人のテーマ"
+        },
+        {
+          "kind": "title",
+          "code": "0x06",
+          "title": "仙人の修行"
+        },
+        {
+          "kind": "title",
+          "code": "0x0d",
+          "title": "レベルアップ"
+        },
+        {
+          "kind": "title",
+          "code": "0x04",
+          "title": "ユキのテーマ"
+        },
+        {
+          "kind": "title",
+          "code": "0x0a",
+          "title": "貧乏神のテーマ"
+        },
+        {
+          "kind": "title",
+          "code": "0x17",
+          "title": "戦闘2"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "力つきて"
+        },
+        {
+          "kind": "title",
+          "code": "0x18",
+          "title": "天の声"
+        },
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "村祭り"
+        },
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "BGM11"
+        },
+        {
+          "kind": "title",
+          "code": "0x19",
+          "title": "竜宮千年の舞"
+        },
+        {
+          "kind": "title",
+          "code": "0x08",
+          "title": "微笑みの村"
+        },
+        {
+          "kind": "title",
+          "code": "0x0c",
+          "title": "月へ"
+        },
+        {
+          "kind": "title",
+          "code": "0x09",
+          "title": "かぐや姫との対面"
+        },
+        {
+          "kind": "title",
+          "code": "0x02",
+          "title": "あやかしの洞窟"
+        },
+        {
+          "kind": "title",
+          "code": "0x0b",
+          "title": "決戦!エンマ大王"
+        },
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "みんなが待っている"
+        },
+        {
+          "kind": "title",
+          "code": "0x0f",
+          "title": "エンディング"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/hudsonsoft.xml",
+      "source_order": 2556,
+      "archive": "momoden68snd",
+      "id": "momoden68snd-generic"
+    },
+    {
+      "title": "[X68000] 上海II",
+      "driver": {
+        "name": "x68k",
+        "type": "generic",
+        "alias": "HUDSON SOFT",
+        "platform": "SHARP X68000"
+      },
+      "options": [
+        {
+          "name": "mfp",
+          "value": "0x01"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "shan268snd.bin"
+        },
+        {
+          "type": "x",
+          "path": "SH.X",
+          "offset": "0x010000"
+        },
+        {
+          "type": "code",
+          "path": "MUSIC.PAC",
+          "offset": "0x014b4a"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x02",
+          "title": "01 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x03",
+          "title": "02 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x04",
+          "title": "03 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x05",
+          "title": "04 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x06",
+          "title": "05 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x07",
+          "title": "06 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x08",
+          "title": "07 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x09",
+          "title": "08 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x0a",
+          "title": "09 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x0b",
+          "title": "0A :"
+        },
+        {
+          "kind": "title",
+          "code": "0x0c",
+          "title": "0B :"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/hudsonsoft.xml",
+      "source_order": 2557,
+      "archive": "shang268snd",
+      "id": "shang268snd-generic"
+    },
+    {
+      "title": "[X68000] POWER LEAGUE",
+      "driver": {
+        "name": "x68k",
+        "type": "generic",
+        "alias": "HUDSON SOFT",
+        "platform": "SHARP X68000"
+      },
+      "options": [
+        {
+          "name": "mfp",
+          "value": "0x01"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "pl68snd.bin"
+        },
+        {
+          "type": "x",
+          "path": "PL.X",
+          "offset": "0x010000"
+        },
+        {
+          "type": "code",
+          "path": "PL.OVL",
+          "offset": "0x03846c"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "00 : Title"
+        },
+        {
+          "kind": "title",
+          "code": "0x02",
+          "title": "01 : Team Select"
+        },
+        {
+          "kind": "title",
+          "code": "0x03",
+          "title": "02 : Play Ball"
+        },
+        {
+          "kind": "title",
+          "code": "0x04",
+          "title": "03 : Normal"
+        },
+        {
+          "kind": "title",
+          "code": "0x0f",
+          "title": "0E : Normal (No Intro)"
+        },
+        {
+          "kind": "title",
+          "code": "0x0c",
+          "title": "0B : Chance"
+        },
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "0F : Chance (No Intro)"
+        },
+        {
+          "kind": "title",
+          "code": "0x06",
+          "title": "05 : Change"
+        },
+        {
+          "kind": "title",
+          "code": "0x07",
+          "title": "06 : Home In"
+        },
+        {
+          "kind": "title",
+          "code": "0x08",
+          "title": "07 : Home Run"
+        },
+        {
+          "kind": "title",
+          "code": "0x09",
+          "title": "08 : Game Set"
+        },
+        {
+          "kind": "title",
+          "code": "0x0a",
+          "title": "09 : Sports News"
+        },
+        {
+          "kind": "title",
+          "code": "0x0b",
+          "title": "0A : Pinch Hitter"
+        },
+        {
+          "kind": "title",
+          "code": "0x05",
+          "title": "04 : Edit Mode"
+        },
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "10 : SE"
+        },
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "11 : SE"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "12 : SE"
+        },
+        {
+          "kind": "title",
+          "code": "0x14",
+          "title": "13 : SE"
+        },
+        {
+          "kind": "title",
+          "code": "0x15",
+          "title": "14 : SE"
+        },
+        {
+          "kind": "title",
+          "code": "0x16",
+          "title": "15 : SE"
+        },
+        {
+          "kind": "title",
+          "code": "0x17",
+          "title": "16 : SE"
+        },
+        {
+          "kind": "title",
+          "code": "0x18",
+          "title": "17 : SE"
+        },
+        {
+          "kind": "title",
+          "code": "0x19",
+          "title": "18 : SE"
+        },
+        {
+          "kind": "title",
+          "code": "0x1a",
+          "title": "19 : SE"
+        },
+        {
+          "kind": "title",
+          "code": "0x1b",
+          "title": "1A : SE"
+        },
+        {
+          "kind": "title",
+          "code": "0x1c",
+          "title": "1B : SE"
+        },
+        {
+          "kind": "title",
+          "code": "0x1d",
+          "title": "1C : SE"
+        },
+        {
+          "kind": "title",
+          "code": "0x1e",
+          "title": "1D : SE"
+        },
+        {
+          "kind": "title",
+          "code": "0x1f",
+          "title": "1E : SE"
+        },
+        {
+          "kind": "title",
+          "code": "0x20",
+          "title": "1F : SE"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/hudsonsoft.xml",
+      "source_order": 2558,
+      "archive": "pwrlg68snd",
+      "id": "pwrlg68snd-generic"
+    }
+  ]
+}

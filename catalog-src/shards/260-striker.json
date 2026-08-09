@@ -1,0 +1,447 @@
+{
+  "format": "hoot-catalog-shard",
+  "version": 1,
+  "source_file": "xml/striker.xml",
+  "date": "2005/09/25",
+  "comments": [
+    " //Striker "
+  ],
+  "games": [
+    {
+      "title": "[PC-8801] メフィスト(OPNA)",
+      "driver": {
+        "name": "pc88",
+        "type": "opna",
+        "alias": "Striker",
+        "platform": "NEC PC-8801"
+      },
+      "options": [
+        {
+          "name": "mdata_addr",
+          "value": "0x9a00"
+        },
+        {
+          "name": "use_vrtc",
+          "value": "0x01"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "PATCH",
+          "offset": "0x0000"
+        },
+        {
+          "type": "code",
+          "path": "DRIVER.BIN",
+          "offset": "0x8810"
+        },
+        {
+          "type": "bgm",
+          "path": "MDAT1",
+          "offset": "0x00"
+        },
+        {
+          "type": "bgm",
+          "path": "MDAT2",
+          "offset": "0x01"
+        },
+        {
+          "type": "bgm",
+          "path": "MDAT3",
+          "offset": "0x02"
+        },
+        {
+          "type": "bgm",
+          "path": "MDAT4",
+          "offset": "0x03"
+        },
+        {
+          "type": "bgm",
+          "path": "MDAT5",
+          "offset": "0x04"
+        },
+        {
+          "type": "bgm",
+          "path": "MDAT6",
+          "offset": "0x05"
+        },
+        {
+          "type": "bgm",
+          "path": "MDAT7",
+          "offset": "0x06"
+        },
+        {
+          "type": "bgm",
+          "path": "MDAT8",
+          "offset": "0x07"
+        },
+        {
+          "type": "bgm",
+          "path": "MDAT9",
+          "offset": "0x08"
+        },
+        {
+          "type": "bgm",
+          "path": "MDAT10",
+          "offset": "0x09"
+        },
+        {
+          "type": "bgm",
+          "path": "MDAT11",
+          "offset": "0x10"
+        },
+        {
+          "type": "bgm",
+          "path": "MDAT12",
+          "offset": "0x11"
+        },
+        {
+          "type": "bgm",
+          "path": "MDAT13",
+          "offset": "0x12"
+        },
+        {
+          "type": "bgm",
+          "path": "MDAT14",
+          "offset": "0x13"
+        },
+        {
+          "type": "bgm",
+          "path": "MDAT15",
+          "offset": "0x14"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x00",
+          "title": "オープニング"
+        },
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "主人公のテーマ"
+        },
+        {
+          "kind": "title",
+          "code": "0x02",
+          "title": "カインのテーマ"
+        },
+        {
+          "kind": "title",
+          "code": "0x03",
+          "title": "所長のテーマ"
+        },
+        {
+          "kind": "title",
+          "code": "0x04",
+          "title": "調査のテーマ"
+        },
+        {
+          "kind": "title",
+          "code": "0x05",
+          "title": "恐怖のテーマ"
+        },
+        {
+          "kind": "title",
+          "code": "0x06",
+          "title": "メアリーのテーマ"
+        },
+        {
+          "kind": "title",
+          "code": "0x07",
+          "title": "アメリカ軍のテーマ"
+        },
+        {
+          "kind": "title",
+          "code": "0x08",
+          "title": "???"
+        },
+        {
+          "kind": "title",
+          "code": "0x09",
+          "title": "疑惑のテーマ"
+        },
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "ニールセンのテーマ"
+        },
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "レクイエムのテーマ"
+        },
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "アーレスのテーマ"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "決戦のテーマ"
+        },
+        {
+          "kind": "title",
+          "code": "0x14",
+          "title": "エンディング?"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/striker.xml",
+      "source_order": 4294,
+      "archive": "mephist",
+      "id": "mephist-opna"
+    },
+    {
+      "title": "[PC-8801] メフィスト(OPN)",
+      "driver": {
+        "name": "pc88",
+        "type": "opn",
+        "alias": "Striker",
+        "platform": "NEC PC-8801"
+      },
+      "options": [
+        {
+          "name": "mdata_addr",
+          "value": "0x9a00"
+        },
+        {
+          "name": "use_vrtc",
+          "value": "0x01"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "PATCH2",
+          "offset": "0x0000"
+        },
+        {
+          "type": "code",
+          "path": "DRIVER.BIN",
+          "offset": "0x8810"
+        },
+        {
+          "type": "bgm",
+          "path": "MDAT1",
+          "offset": "0x00"
+        },
+        {
+          "type": "bgm",
+          "path": "MDAT2",
+          "offset": "0x01"
+        },
+        {
+          "type": "bgm",
+          "path": "MDAT3",
+          "offset": "0x02"
+        },
+        {
+          "type": "bgm",
+          "path": "MDAT4",
+          "offset": "0x03"
+        },
+        {
+          "type": "bgm",
+          "path": "MDAT5",
+          "offset": "0x04"
+        },
+        {
+          "type": "bgm",
+          "path": "MDAT6",
+          "offset": "0x05"
+        },
+        {
+          "type": "bgm",
+          "path": "MDAT7",
+          "offset": "0x06"
+        },
+        {
+          "type": "bgm",
+          "path": "MDAT8",
+          "offset": "0x07"
+        },
+        {
+          "type": "bgm",
+          "path": "MDAT9",
+          "offset": "0x08"
+        },
+        {
+          "type": "bgm",
+          "path": "MDAT10",
+          "offset": "0x09"
+        },
+        {
+          "type": "bgm",
+          "path": "MDAT11",
+          "offset": "0x10"
+        },
+        {
+          "type": "bgm",
+          "path": "MDAT12",
+          "offset": "0x11"
+        },
+        {
+          "type": "bgm",
+          "path": "MDAT13",
+          "offset": "0x12"
+        },
+        {
+          "type": "bgm",
+          "path": "MDAT14",
+          "offset": "0x13"
+        },
+        {
+          "type": "bgm",
+          "path": "MDAT15",
+          "offset": "0x14"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x00",
+          "title": "オープニング"
+        },
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "主人公のテーマ"
+        },
+        {
+          "kind": "title",
+          "code": "0x02",
+          "title": "カインのテーマ"
+        },
+        {
+          "kind": "title",
+          "code": "0x03",
+          "title": "所長のテーマ"
+        },
+        {
+          "kind": "title",
+          "code": "0x04",
+          "title": "調査のテーマ"
+        },
+        {
+          "kind": "title",
+          "code": "0x05",
+          "title": "恐怖のテーマ"
+        },
+        {
+          "kind": "title",
+          "code": "0x06",
+          "title": "メアリーのテーマ"
+        },
+        {
+          "kind": "title",
+          "code": "0x07",
+          "title": "アメリカ軍のテーマ"
+        },
+        {
+          "kind": "title",
+          "code": "0x08",
+          "title": "???"
+        },
+        {
+          "kind": "title",
+          "code": "0x09",
+          "title": "疑惑のテーマ"
+        },
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "ニールセンのテーマ"
+        },
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "レクイエムのテーマ"
+        },
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "アーレスのテーマ"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "決戦のテーマ"
+        },
+        {
+          "kind": "title",
+          "code": "0x14",
+          "title": "エンディング?"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/striker.xml",
+      "source_order": 4295,
+      "archive": "mephist",
+      "id": "mephist-opn"
+    },
+    {
+      "title": "[X68000] 学園都市Z",
+      "driver": {
+        "name": "x68k",
+        "type": "generic",
+        "alias": "Striker",
+        "platform": "SHARP X68000"
+      },
+      "options": [
+        {
+          "name": "mfp",
+          "value": "1"
+        },
+        {
+          "name": "dmaint",
+          "value": "1"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "gktz68snd.bin",
+          "offset": "0x000000"
+        },
+        {
+          "type": "x",
+          "path": "tenq.x",
+          "offset": "0x010000"
+        },
+        {
+          "type": "code",
+          "path": "tone.odq",
+          "offset": "0x01a000"
+        },
+        {
+          "type": "code",
+          "path": "BGMSONGS.DAT",
+          "offset": "0x020000"
+        },
+        {
+          "type": "code",
+          "path": "adpcm.dat",
+          "offset": "0x030000"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "range",
+          "min": "0x02",
+          "max": "0x0f",
+          "title_format": "BGM %02x",
+          "extcode": "1"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/striker.xml",
+      "source_order": 4296,
+      "archive": "gktz68snd",
+      "id": "gktz68snd-generic"
+    }
+  ]
+}

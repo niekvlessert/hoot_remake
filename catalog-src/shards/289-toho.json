@@ -1,0 +1,346 @@
+{
+  "format": "hoot-catalog-shard",
+  "version": 1,
+  "source_file": "xml/toho.xml",
+  "date": "2008/05/29",
+  "comments": [
+    " //東宝 "
+  ],
+  "games": [
+    {
+      "title": "[PC-8801] 陽あたり良好! ひだまり荘の仲間たち",
+      "driver": {
+        "name": "pc88",
+        "type": "opn",
+        "alias": "東宝",
+        "platform": "NEC PC-8801"
+      },
+      "options": [
+        {
+          "name": "use_vrtc",
+          "value": "0x01"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "PATCH",
+          "offset": "0x0000"
+        },
+        {
+          "type": "code",
+          "path": "DRIVER",
+          "offset": "0xd000"
+        },
+        {
+          "type": "code",
+          "path": "VOICE",
+          "offset": "0xdd00"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS00",
+          "offset": "0x00"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS01",
+          "offset": "0x01"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS02",
+          "offset": "0x02"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS03",
+          "offset": "0x03"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS04",
+          "offset": "0x04"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS05",
+          "offset": "0x05"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS06",
+          "offset": "0x06"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS07",
+          "offset": "0x07"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS08",
+          "offset": "0x08"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS09",
+          "offset": "0x09"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS10",
+          "offset": "0x0a"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS11",
+          "offset": "0x0b"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x00",
+          "title": "MUS00 : ミュージック1"
+        },
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "MUS01 : ミュージック2"
+        },
+        {
+          "kind": "title",
+          "code": "0x02",
+          "title": "MUS02 : ミュージック3"
+        },
+        {
+          "kind": "title",
+          "code": "0x03",
+          "title": "MUS03 : ミュージック4"
+        },
+        {
+          "kind": "title",
+          "code": "0x0b",
+          "title": "MUS11 : ミュージック5"
+        },
+        {
+          "kind": "title",
+          "code": "0x04",
+          "title": "MUS04 : アイキャッチ"
+        },
+        {
+          "kind": "title",
+          "code": "0x05",
+          "title": "MUS05 : 呼鈴"
+        },
+        {
+          "kind": "title",
+          "code": "0x06",
+          "title": "MUS06 : ノック"
+        },
+        {
+          "kind": "title",
+          "code": "0x07",
+          "title": "MUS07 : アラーム1"
+        },
+        {
+          "kind": "title",
+          "code": "0x08",
+          "title": "MUS08 : アラーム2"
+        },
+        {
+          "kind": "title",
+          "code": "0x09",
+          "title": "MUS09 : チャイム"
+        },
+        {
+          "kind": "title",
+          "code": "0x0a",
+          "title": "MUS10 : 電話"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/toho.xml",
+      "source_order": 4773,
+      "archive": "hiatari",
+      "id": "hiatari-opn"
+    },
+    {
+      "title": "[MSX] 陽あたり良好! ひだまり荘の仲間たち",
+      "driver": {
+        "name": "msx",
+        "type": "generic",
+        "alias": "東宝",
+        "platform": "MSX"
+      },
+      "options": [
+        {
+          "name": "mdata_addr",
+          "value": "0x6800"
+        },
+        {
+          "name": "mdata_size",
+          "value": "0x0e00"
+        },
+        {
+          "name": "mfile_size",
+          "value": "0x0e00"
+        },
+        {
+          "name": "init_pc",
+          "value": "0x0400"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "patch",
+          "offset": "0x0400"
+        },
+        {
+          "type": "code",
+          "path": "DRIVER.BIN",
+          "offset": "0x0b00"
+        },
+        {
+          "type": "bgm",
+          "path": "mus00.bin",
+          "offset": "0x00"
+        },
+        {
+          "type": "bgm",
+          "path": "mus01.bin",
+          "offset": "0x01"
+        },
+        {
+          "type": "bgm",
+          "path": "mus02.bin",
+          "offset": "0x02"
+        },
+        {
+          "type": "bgm",
+          "path": "mus03.bin",
+          "offset": "0x03"
+        },
+        {
+          "type": "bgm",
+          "path": "mus04.bin",
+          "offset": "0x04"
+        },
+        {
+          "type": "bgm",
+          "path": "mus05.bin",
+          "offset": "0x05"
+        },
+        {
+          "type": "bgm",
+          "path": "mus06.bin",
+          "offset": "0x06"
+        },
+        {
+          "type": "bgm",
+          "path": "mus07.bin",
+          "offset": "0x07"
+        },
+        {
+          "type": "bgm",
+          "path": "mus08.bin",
+          "offset": "0x08"
+        },
+        {
+          "type": "bgm",
+          "path": "mus09.bin",
+          "offset": "0x09"
+        },
+        {
+          "type": "bgm",
+          "path": "mus0a.bin",
+          "offset": "0x0a"
+        },
+        {
+          "type": "bgm",
+          "path": "mus0b.bin",
+          "offset": "0x0b"
+        },
+        {
+          "type": "bgm",
+          "path": "mus0c.bin",
+          "offset": "0x0c"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x00",
+          "title": "ミュージック1"
+        },
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "ミュージック2"
+        },
+        {
+          "kind": "title",
+          "code": "0x02",
+          "title": "ミュージック3"
+        },
+        {
+          "kind": "title",
+          "code": "0x03",
+          "title": "ミュージック4"
+        },
+        {
+          "kind": "title",
+          "code": "0x05",
+          "title": "ミュージック5"
+        },
+        {
+          "kind": "title",
+          "code": "0x04",
+          "title": "アイキャッチ"
+        },
+        {
+          "kind": "title",
+          "code": "0x06",
+          "title": "呼鈴"
+        },
+        {
+          "kind": "title",
+          "code": "0x07",
+          "title": "ノック"
+        },
+        {
+          "kind": "title",
+          "code": "0x08",
+          "title": "アラーム1"
+        },
+        {
+          "kind": "title",
+          "code": "0x09",
+          "title": "アラーム2"
+        },
+        {
+          "kind": "title",
+          "code": "0x0a",
+          "title": "チャイム"
+        },
+        {
+          "kind": "title",
+          "code": "0x0b",
+          "title": "電話1"
+        },
+        {
+          "kind": "title",
+          "code": "0x0c",
+          "title": "電話2"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/toho.xml",
+      "source_order": 4774,
+      "archive": "hiatari_msx",
+      "id": "hiatari-msx-generic"
+    }
+  ]
+}

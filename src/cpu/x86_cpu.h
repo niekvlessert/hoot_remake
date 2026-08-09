@@ -48,6 +48,8 @@ public:
     uint16_t get_es() const { return es_; }
     uint16_t get_si() const { return si_; }
     uint16_t get_di() const { return di_; }
+    uint16_t get_bp() const { return bp_; }
+    uint16_t get_flags() const { return flags_; }
 
     uint16_t get_ax() const { return ax_; }
     uint16_t get_bx() const { return bx_; }

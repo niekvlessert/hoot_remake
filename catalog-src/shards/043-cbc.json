@@ -1,0 +1,163 @@
+{
+  "format": "hoot-catalog-shard",
+  "version": 1,
+  "source_file": "xml/cbc.xml",
+  "date": "2005/09/25",
+  "comments": [
+    " //CBC "
+  ],
+  "games": [
+    {
+      "title": "[MSX] Gulliver",
+      "driver": {
+        "name": "msx",
+        "type": "generic",
+        "alias": "CBC",
+        "platform": "MSX"
+      },
+      "options": [
+        {
+          "name": "init_pc",
+          "value": "0x0400"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "patch",
+          "offset": "0x0400"
+        },
+        {
+          "type": "code",
+          "path": "MUSC.BIN",
+          "offset": "0xab00"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "range",
+          "min": "0x00",
+          "max": "0x00a",
+          "title_format": "BGM %02d",
+          "extcode": "1"
+        },
+        {
+          "kind": "title",
+          "code": "0x100",
+          "title": "SE 00"
+        },
+        {
+          "kind": "title",
+          "code": "0x101",
+          "title": "SE 01"
+        },
+        {
+          "kind": "title",
+          "code": "0x102",
+          "title": "SE 02"
+        },
+        {
+          "kind": "title",
+          "code": "0x103",
+          "title": "SE 03"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/cbc.xml",
+      "source_order": 691,
+      "archive": "gulliver_msx",
+      "id": "gulliver-msx-generic"
+    },
+    {
+      "title": "[PC-9801] 今日もキャンパス花乱満",
+      "driver": {
+        "name": "pc98vx",
+        "type": "opn",
+        "alias": "CBC",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "bootcs",
+          "value": "0x0060"
+        },
+        {
+          "name": "bootip",
+          "value": "0x0000"
+        },
+        {
+          "name": "funcvect",
+          "value": "0x7f"
+        },
+        {
+          "name": "clockmul",
+          "value": "0x04"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "hanaranm_98.bin",
+          "offset": "0x00600"
+        },
+        {
+          "type": "code",
+          "path": "sound.com",
+          "offset": "0x80000"
+        },
+        {
+          "type": "code",
+          "path": "sound.dat",
+          "offset": "0x81000"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x00",
+          "title": "BGM 1番"
+        },
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "BGM 2番"
+        },
+        {
+          "kind": "title",
+          "code": "0x02",
+          "title": "BGM 3番"
+        },
+        {
+          "kind": "title",
+          "code": "0x03",
+          "title": "BGM 4番"
+        },
+        {
+          "kind": "title",
+          "code": "0x04",
+          "title": "BGM 5番"
+        },
+        {
+          "kind": "title",
+          "code": "0x05",
+          "title": "BGM 6番"
+        },
+        {
+          "kind": "title",
+          "code": "0x06",
+          "title": "BGM 7番"
+        },
+        {
+          "kind": "title",
+          "code": "0x07",
+          "title": "BGM 8番"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/cbc.xml",
+      "source_order": 692,
+      "archive": "hanaranm_98",
+      "id": "hanaranm-98-opn"
+    }
+  ]
+}

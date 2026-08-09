@@ -1,0 +1,567 @@
+{
+  "format": "hoot-catalog-shard",
+  "version": 1,
+  "source_file": "xml/nidecomcarry.xml",
+  "date": "2007/08/10",
+  "comments": [
+    " //Nidecom Carry "
+  ],
+  "games": [
+    {
+      "title": "[PC-8801] VICTORIOUS NINE",
+      "driver": {
+        "name": "pc88",
+        "type": "opn",
+        "alias": "Nidecom Carry",
+        "platform": "NEC PC-8801"
+      },
+      "options": [
+        {
+          "name": "init_pc",
+          "value": "0x0100"
+        },
+        {
+          "name": "use_vrtc",
+          "value": "0x01"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "MAIN",
+          "offset": "0x0000"
+        },
+        {
+          "type": "code",
+          "path": "PATCH",
+          "offset": "0x0100"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x00000000",
+          "title": "タイトル"
+        },
+        {
+          "kind": "title",
+          "code": "0x01000000",
+          "title": "タイトル(ループ)"
+        },
+        {
+          "kind": "title",
+          "code": "0x01000001",
+          "title": "イニング表"
+        },
+        {
+          "kind": "title",
+          "code": "0x01000003",
+          "title": "イニング裏"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000006",
+          "title": "ホームラン"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000005",
+          "title": "勝ち"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000002",
+          "title": "負け"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000004",
+          "title": "未使用"
+        },
+        {
+          "kind": "comment",
+          "text": "\t\t\t<title code=\"0x000000ff\">効果音#00</title>\n\t\t\t<title code=\"0x010000ff\">効果音#01</title>\n\t\t\t<title code=\"0x020000ff\">効果音#02</title>\n\t\t\t<title code=\"0x030000ff\">効果音#03</title>\n\t\t\t<title code=\"0x040000ff\">効果音#04</title>\n\t\t\t<title code=\"0x050000ff\">効果音#05</title>\n\t\t\t<title code=\"0x060000ff\">効果音#06</title>\n\t\t\t<title code=\"0x070000ff\">効果音#07</title>\n\t\t\t<title code=\"0x080000ff\">効果音#08</title>\n\t\t\t<title code=\"0x090000ff\">効果音#09</title>\n\t\t\t<title code=\"0x0a0000ff\">効果音#0A</title>\n\t\t\t<title code=\"0x0b0000ff\">効果音#0B</title>\n\t\t\t<title code=\"0x0c0000ff\">効果音#0C</title>\n\t\t\t<title code=\"0x0d0000ff\">効果音#0D</title>\n\t\t\t<title code=\"0x0e0000ff\">効果音#0E</title> "
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/nidecomcarry.xml",
+      "source_order": 3460,
+      "archive": "vic9_88",
+      "id": "vic9-88-opn"
+    },
+    {
+      "title": "[PC-8801] GYRODINE",
+      "driver": {
+        "name": "pc88",
+        "type": "opn",
+        "alias": "Nidecom Carry",
+        "platform": "NEC PC-8801"
+      },
+      "options": [
+        {
+          "name": "init_pc",
+          "value": "0x0100"
+        },
+        {
+          "name": "use_vrtc",
+          "value": "0x01"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "PATCH",
+          "offset": "0x0100"
+        },
+        {
+          "type": "code",
+          "path": "MUSIC",
+          "offset": "0xee00"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x00",
+          "title": "OPENING TITLE"
+        },
+        {
+          "kind": "title",
+          "code": "0x04",
+          "title": "GAME START"
+        },
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "ENDING (?)"
+        },
+        {
+          "kind": "title",
+          "code": "0x07",
+          "title": "SE #07 ローター音(遅め)"
+        },
+        {
+          "kind": "title",
+          "code": "0x08",
+          "title": "SE #08 ローター音(速め)"
+        },
+        {
+          "kind": "title",
+          "code": "0x09",
+          "title": "SE #09 破壊音"
+        },
+        {
+          "kind": "title",
+          "code": "0x0a",
+          "title": "SE #0A ミサイル発射"
+        },
+        {
+          "kind": "title",
+          "code": "0x0b",
+          "title": "SE #0B 機銃"
+        },
+        {
+          "kind": "title",
+          "code": "0x0c",
+          "title": "SE #0C サイレン"
+        },
+        {
+          "kind": "title",
+          "code": "0x0d",
+          "title": "SE #0D"
+        },
+        {
+          "kind": "title",
+          "code": "0x0e",
+          "title": "SE #0E"
+        },
+        {
+          "kind": "title",
+          "code": "0x0f",
+          "title": "SE #0F"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/nidecomcarry.xml",
+      "source_order": 3461,
+      "archive": "gyro_88",
+      "id": "gyro-88-opn"
+    },
+    {
+      "title": "[X1] 影の伝説(OPM)",
+      "driver": {
+        "name": "x1",
+        "type": "opm",
+        "alias": "Nidecom Carry",
+        "platform": "SHARP X1"
+      },
+      "options": [
+        {
+          "name": "init_pc",
+          "value": "0xf800"
+        },
+        {
+          "name": "mdata_addr",
+          "value": "0xe000"
+        },
+        {
+          "name": "mdata_size",
+          "value": "0x0c00"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "SYSX1.Z80",
+          "offset": "0x0000"
+        },
+        {
+          "type": "code",
+          "path": "OPMX1.Z80",
+          "offset": "0xec00"
+        },
+        {
+          "type": "code",
+          "path": "PATCH",
+          "offset": "0xf800"
+        },
+        {
+          "type": "bgm",
+          "path": "MO1.Z80",
+          "offset": "0x00"
+        },
+        {
+          "type": "bgm",
+          "path": "MO2.Z80",
+          "offset": "0x01"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x00000000",
+          "title": "MO1.Z80/00 : BGM1 (メインテーマ)「走!」(NO INTRO)"
+        },
+        {
+          "kind": "title",
+          "code": "0x01000000",
+          "title": "MO1.Z80/01 : MISS"
+        },
+        {
+          "kind": "title",
+          "code": "0x02000000",
+          "title": "MO1.Z80/02 : BGM1 (メインテーマ)「走!」"
+        },
+        {
+          "kind": "title",
+          "code": "0x03000000",
+          "title": "MO1.Z80/03 : EXTEND"
+        },
+        {
+          "kind": "title",
+          "code": "0x04000000",
+          "title": "MO1.Z80/04 : SE #01"
+        },
+        {
+          "kind": "title",
+          "code": "0x05000000",
+          "title": "MO1.Z80/05 : SE #02"
+        },
+        {
+          "kind": "title",
+          "code": "0x06000000",
+          "title": "MO1.Z80/06 : SE #03"
+        },
+        {
+          "kind": "title",
+          "code": "0x07000000",
+          "title": "MO1.Z80/07 : SE #04"
+        },
+        {
+          "kind": "title",
+          "code": "0x08000000",
+          "title": "MO1.Z80/08 : SE #05"
+        },
+        {
+          "kind": "title",
+          "code": "0x09000000",
+          "title": "MO1.Z80/09 : SE #06"
+        },
+        {
+          "kind": "title",
+          "code": "0x0a000000",
+          "title": "MO1.Z80/0A : SE #07"
+        },
+        {
+          "kind": "title",
+          "code": "0x0b000000",
+          "title": "MO1.Z80/0B : SE #08"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000001",
+          "title": "MO2.Z80/00 : BGM2 (ステージクリア～)「闘!」"
+        },
+        {
+          "kind": "title",
+          "code": "0x01000001",
+          "title": "MO2.Z80/01 : MISS"
+        },
+        {
+          "kind": "title",
+          "code": "0x02000001",
+          "title": "MO2.Z80/02 : 霧姫のテーマ(ネームレジスト)「宴!」"
+        },
+        {
+          "kind": "title",
+          "code": "0x03000001",
+          "title": "MO2.Z80/03 : EXTEND"
+        },
+        {
+          "kind": "title",
+          "code": "0x04000001",
+          "title": "MO2.Z80/04 : SE #09"
+        },
+        {
+          "kind": "title",
+          "code": "0x05000001",
+          "title": "MO2.Z80/05 : SE #10"
+        },
+        {
+          "kind": "title",
+          "code": "0x06000001",
+          "title": "MO2.Z80/06 : SE #11"
+        },
+        {
+          "kind": "title",
+          "code": "0x07000001",
+          "title": "MO2.Z80/07 : SE #12"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/nidecomcarry.xml",
+      "source_order": 3462,
+      "archive": "x1kage",
+      "id": "x1kage-opm"
+    },
+    {
+      "title": "[X1] 影の伝説(PSG)",
+      "driver": {
+        "name": "x1",
+        "type": "psg",
+        "alias": "Nidecom Carry",
+        "platform": "SHARP X1"
+      },
+      "options": [
+        {
+          "name": "init_pc",
+          "value": "0xf800"
+        },
+        {
+          "name": "mdata_addr",
+          "value": "0xe000"
+        },
+        {
+          "name": "mdata_size",
+          "value": "0x0c00"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "SYSX1.Z80",
+          "offset": "0x0000"
+        },
+        {
+          "type": "code",
+          "path": "PSGX1.Z80",
+          "offset": "0xec00"
+        },
+        {
+          "type": "code",
+          "path": "PATCH",
+          "offset": "0xf800"
+        },
+        {
+          "type": "bgm",
+          "path": "MP1.Z80",
+          "offset": "0x00"
+        },
+        {
+          "type": "bgm",
+          "path": "MP2.Z80",
+          "offset": "0x01"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x00000000",
+          "title": "MP1.Z80/00 : BGM1 (メインテーマ)「走!」(NO INTRO)"
+        },
+        {
+          "kind": "title",
+          "code": "0x01000000",
+          "title": "MP1.Z80/01 : MISS"
+        },
+        {
+          "kind": "title",
+          "code": "0x02000000",
+          "title": "MP1.Z80/02 : BGM1 (メインテーマ)「走!」"
+        },
+        {
+          "kind": "title",
+          "code": "0x03000000",
+          "title": "MP1.Z80/03 : EXTEND"
+        },
+        {
+          "kind": "title",
+          "code": "0x04000000",
+          "title": "MP1.Z80/04 : SE #01"
+        },
+        {
+          "kind": "title",
+          "code": "0x05000000",
+          "title": "MP1.Z80/05 : SE #02"
+        },
+        {
+          "kind": "title",
+          "code": "0x06000000",
+          "title": "MP1.Z80/06 : SE #03"
+        },
+        {
+          "kind": "title",
+          "code": "0x07000000",
+          "title": "MP1.Z80/07 : SE #04"
+        },
+        {
+          "kind": "title",
+          "code": "0x08000000",
+          "title": "MP1.Z80/08 : SE #05"
+        },
+        {
+          "kind": "title",
+          "code": "0x09000000",
+          "title": "MP1.Z80/09 : SE #06"
+        },
+        {
+          "kind": "title",
+          "code": "0x0a000000",
+          "title": "MP1.Z80/0A : SE #07"
+        },
+        {
+          "kind": "title",
+          "code": "0x0b000000",
+          "title": "MP1.Z80/0B : SE #08"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000001",
+          "title": "MP2.Z80/00 : BGM2 (ステージクリア～)「闘!」"
+        },
+        {
+          "kind": "title",
+          "code": "0x01000001",
+          "title": "MP2.Z80/01 : MISS"
+        },
+        {
+          "kind": "title",
+          "code": "0x02000001",
+          "title": "MP2.Z80/02 : 霧姫のテーマ(ネームレジスト)「宴!」"
+        },
+        {
+          "kind": "title",
+          "code": "0x03000001",
+          "title": "MP2.Z80/03 : EXTEND"
+        },
+        {
+          "kind": "title",
+          "code": "0x04000001",
+          "title": "MP2.Z80/04 : SE #09"
+        },
+        {
+          "kind": "title",
+          "code": "0x05000001",
+          "title": "MP2.Z80/05 : SE #10"
+        },
+        {
+          "kind": "title",
+          "code": "0x06000001",
+          "title": "MP2.Z80/06 : SE #11"
+        },
+        {
+          "kind": "title",
+          "code": "0x07000001",
+          "title": "MP2.Z80/07 : SE #12"
+        },
+        {
+          "kind": "title",
+          "code": "0x08000001",
+          "title": "MP2.Z80/08 : SE #13"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/nidecomcarry.xml",
+      "source_order": 3463,
+      "archive": "x1kage",
+      "id": "x1kage-psg"
+    },
+    {
+      "title": "[PC-8801] ELEVATOR ACTION",
+      "driver": {
+        "name": "pc88",
+        "type": "opn",
+        "alias": "Nidecom Carry",
+        "platform": "NEC PC-8801"
+      },
+      "options": [
+        {
+          "name": "baseclock",
+          "value": "0x04"
+        },
+        {
+          "name": "use_rtc",
+          "value": "1"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "PATCH",
+          "offset": "0x0000"
+        },
+        {
+          "type": "code",
+          "path": "DATA",
+          "offset": "0x3700"
+        },
+        {
+          "type": "code",
+          "path": "SNDDRV",
+          "offset": "0xEFB0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "range",
+          "min": "0x00",
+          "max": "0x03",
+          "title_format": "BGM %d",
+          "extcode": "0"
+        },
+        {
+          "kind": "range",
+          "min": "0x04",
+          "max": "0x15",
+          "title_format": "0x%02X",
+          "extcode": "1"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/nidecomcarry.xml",
+      "source_order": 3464,
+      "archive": "elvact88",
+      "id": "elvact88-opn"
+    }
+  ]
+}

@@ -1,0 +1,8764 @@
+{
+  "format": "hoot-catalog-shard",
+  "version": 1,
+  "source_file": "xml/kss.xml",
+  "date": "2005/09/25",
+  "comments": [
+    " //KSS "
+  ],
+  "games": [
+    {
+      "title": "[PC-9801] Inocent Tour",
+      "driver": {
+        "name": "pc98dos",
+        "type": "opn",
+        "alias": "KSS",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "funcvect",
+          "value": "0x7e"
+        },
+        {
+          "name": "clockmul",
+          "value": "8"
+        },
+        {
+          "name": "showfm3ex",
+          "value": "1"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "PMD_98.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "PMD.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "FP.EFC",
+          "offset": "0x08"
+        },
+        {
+          "type": "file",
+          "path": "FP01.M",
+          "offset": "0x10"
+        },
+        {
+          "type": "file",
+          "path": "FP02.M",
+          "offset": "0x11"
+        },
+        {
+          "type": "file",
+          "path": "FP03.M",
+          "offset": "0x12"
+        },
+        {
+          "type": "file",
+          "path": "FP04.M",
+          "offset": "0x13"
+        },
+        {
+          "type": "file",
+          "path": "FP05.M",
+          "offset": "0x14"
+        },
+        {
+          "type": "file",
+          "path": "FP06.M",
+          "offset": "0x15"
+        },
+        {
+          "type": "file",
+          "path": "FP07.M",
+          "offset": "0x16"
+        },
+        {
+          "type": "file",
+          "path": "FP08.M",
+          "offset": "0x17"
+        },
+        {
+          "type": "file",
+          "path": "FP09.M",
+          "offset": "0x18"
+        },
+        {
+          "type": "file",
+          "path": "FP10.M",
+          "offset": "0x19"
+        },
+        {
+          "type": "file",
+          "path": "FP11.M",
+          "offset": "0x1A"
+        },
+        {
+          "type": "file",
+          "path": "FP12.M",
+          "offset": "0x1B"
+        },
+        {
+          "type": "file",
+          "path": "FP13.M",
+          "offset": "0x1C"
+        },
+        {
+          "type": "file",
+          "path": "FP14.M",
+          "offset": "0x1D"
+        },
+        {
+          "type": "file",
+          "path": "FP15.M",
+          "offset": "0x1E"
+        },
+        {
+          "type": "file",
+          "path": "FP16.M",
+          "offset": "0x1F"
+        },
+        {
+          "type": "file",
+          "path": "FP17.M",
+          "offset": "0x20"
+        },
+        {
+          "type": "file",
+          "path": "FP18.M",
+          "offset": "0x21"
+        },
+        {
+          "type": "file",
+          "path": "FP19.M",
+          "offset": "0x22"
+        },
+        {
+          "type": "file",
+          "path": "FP20.M",
+          "offset": "0x23"
+        },
+        {
+          "type": "shell",
+          "path": "pmd # /K /M6 /E1 /V1",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "pmd_98",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "FP01.M : Opening for Valkyrie"
+        },
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "FP02.M : Opening for Elf"
+        },
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "FP03.M : Opening for Black Knight"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "FP04.M : Normal Map for Valkyrie"
+        },
+        {
+          "kind": "title",
+          "code": "0x14",
+          "title": "FP05.M : Normal Map for Elf"
+        },
+        {
+          "kind": "title",
+          "code": "0x15",
+          "title": "FP06.M : Normal Map for Black Knight"
+        },
+        {
+          "kind": "title",
+          "code": "0x16",
+          "title": "FP07.M : Last Map for Valkyrie"
+        },
+        {
+          "kind": "title",
+          "code": "0x17",
+          "title": "FP08.M : Last Map for Elf"
+        },
+        {
+          "kind": "title",
+          "code": "0x18",
+          "title": "FP09.M : Last Map for Black Knight"
+        },
+        {
+          "kind": "title",
+          "code": "0x19",
+          "title": "FP10.M : ザコ戦闘"
+        },
+        {
+          "kind": "title",
+          "code": "0x1A",
+          "title": "FP11.M : BOSS戦闘"
+        },
+        {
+          "kind": "title",
+          "code": "0x1B",
+          "title": "FP12.M : 会話シーン用"
+        },
+        {
+          "kind": "title",
+          "code": "0x1C",
+          "title": "FP13.M : ショップ、宿屋、交換、ステータス表示"
+        },
+        {
+          "kind": "title",
+          "code": "0x1D",
+          "title": "FP14.M : 休息の暗転"
+        },
+        {
+          "kind": "title",
+          "code": "0x1E",
+          "title": "FP15.M : 章クリア画面用(Hシーン)"
+        },
+        {
+          "kind": "title",
+          "code": "0x1F",
+          "title": "FP16.M : End Story for Valkyrie"
+        },
+        {
+          "kind": "title",
+          "code": "0x20",
+          "title": "FP17.M : End Story for Elf"
+        },
+        {
+          "kind": "title",
+          "code": "0x21",
+          "title": "FP18.M : End Story for Black Knight"
+        },
+        {
+          "kind": "title",
+          "code": "0x22",
+          "title": "FP19.M : End Scroll"
+        },
+        {
+          "kind": "title",
+          "code": "0x23",
+          "title": "FP20.M : ゲームオーバー"
+        },
+        {
+          "kind": "range",
+          "min": "0x0801",
+          "max": "0x0807",
+          "title_format": "FP.EFC : %2X",
+          "extcode": "1"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/kss.xml",
+      "source_order": 3043,
+      "archive": "inocent_98",
+      "id": "inocent-98-opn"
+    },
+    {
+      "title": "[PC-9801] STAR STRIDERS(OPN)",
+      "driver": {
+        "name": "pc98dos",
+        "type": "opn",
+        "alias": "KSS",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "clockmul",
+          "value": "8"
+        },
+        {
+          "name": "fm_mix",
+          "value": "0"
+        },
+        {
+          "name": "ssg_mix",
+          "value": "-8"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "IBGM.EXE",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "IBGMP.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "BGF001.MID",
+          "offset": "0x10"
+        },
+        {
+          "type": "file",
+          "path": "BGF002.MID",
+          "offset": "0x11"
+        },
+        {
+          "type": "file",
+          "path": "BGF003.MID",
+          "offset": "0x12"
+        },
+        {
+          "type": "file",
+          "path": "BGF004.MID",
+          "offset": "0x13"
+        },
+        {
+          "type": "file",
+          "path": "BGF005.MID",
+          "offset": "0x14"
+        },
+        {
+          "type": "file",
+          "path": "BGF006.MID",
+          "offset": "0x15"
+        },
+        {
+          "type": "file",
+          "path": "BGF007.MID",
+          "offset": "0x16"
+        },
+        {
+          "type": "file",
+          "path": "BGF008.MID",
+          "offset": "0x17"
+        },
+        {
+          "type": "file",
+          "path": "BGF009.MID",
+          "offset": "0x18"
+        },
+        {
+          "type": "file",
+          "path": "BGF010.MID",
+          "offset": "0x19"
+        },
+        {
+          "type": "file",
+          "path": "BGF011.MID",
+          "offset": "0x1A"
+        },
+        {
+          "type": "file",
+          "path": "BGF012.MID",
+          "offset": "0x1B"
+        },
+        {
+          "type": "file",
+          "path": "BGF013.MID",
+          "offset": "0x1C"
+        },
+        {
+          "type": "file",
+          "path": "BGF014.MID",
+          "offset": "0x1D"
+        },
+        {
+          "type": "file",
+          "path": "BGF015.MID",
+          "offset": "0x1E"
+        },
+        {
+          "type": "file",
+          "path": "BGF016.MID",
+          "offset": "0x1F"
+        },
+        {
+          "type": "file",
+          "path": "BGF017.MID",
+          "offset": "0x20"
+        },
+        {
+          "type": "file",
+          "path": "BGF018.MID",
+          "offset": "0x21"
+        },
+        {
+          "type": "file",
+          "path": "BGF019.MID",
+          "offset": "0x22"
+        },
+        {
+          "type": "file",
+          "path": "BGF020.MID",
+          "offset": "0x23"
+        },
+        {
+          "type": "file",
+          "path": "BGF021.MID",
+          "offset": "0x24"
+        },
+        {
+          "type": "file",
+          "path": "BGF022.MID",
+          "offset": "0x25"
+        },
+        {
+          "type": "file",
+          "path": "BGF023.MID",
+          "offset": "0x26"
+        },
+        {
+          "type": "file",
+          "path": "BGF024.MID",
+          "offset": "0x27"
+        },
+        {
+          "type": "file",
+          "path": "BGF025.MID",
+          "offset": "0x28"
+        },
+        {
+          "type": "file",
+          "path": "BGF026.MID",
+          "offset": "0x29"
+        },
+        {
+          "type": "file",
+          "path": "BGF027.MID",
+          "offset": "0x2A"
+        },
+        {
+          "type": "file",
+          "path": "BGF028.MID",
+          "offset": "0x2B"
+        },
+        {
+          "type": "shell",
+          "path": "IBGM -J",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "IBGMP",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "BGF001.MID"
+        },
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "BGF002.MID"
+        },
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "BGF003.MID"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "BGF004.MID"
+        },
+        {
+          "kind": "title",
+          "code": "0x14",
+          "title": "BGF005.MID"
+        },
+        {
+          "kind": "title",
+          "code": "0x15",
+          "title": "BGF006.MID"
+        },
+        {
+          "kind": "title",
+          "code": "0x16",
+          "title": "BGF007.MID"
+        },
+        {
+          "kind": "title",
+          "code": "0x17",
+          "title": "BGF008.MID"
+        },
+        {
+          "kind": "title",
+          "code": "0x18",
+          "title": "BGF009.MID"
+        },
+        {
+          "kind": "title",
+          "code": "0x19",
+          "title": "BGF010.MID"
+        },
+        {
+          "kind": "title",
+          "code": "0x1A",
+          "title": "BGF011.MID"
+        },
+        {
+          "kind": "title",
+          "code": "0x1B",
+          "title": "BGF012.MID"
+        },
+        {
+          "kind": "title",
+          "code": "0x1C",
+          "title": "BGF013.MID"
+        },
+        {
+          "kind": "title",
+          "code": "0x1D",
+          "title": "BGF014.MID"
+        },
+        {
+          "kind": "title",
+          "code": "0x1E",
+          "title": "BGF015.MID"
+        },
+        {
+          "kind": "title",
+          "code": "0x1F",
+          "title": "BGF016.MID"
+        },
+        {
+          "kind": "title",
+          "code": "0x20",
+          "title": "BGF017.MID"
+        },
+        {
+          "kind": "title",
+          "code": "0x21",
+          "title": "BGF018.MID"
+        },
+        {
+          "kind": "title",
+          "code": "0x22",
+          "title": "BGF019.MID"
+        },
+        {
+          "kind": "title",
+          "code": "0x23",
+          "title": "BGF020.MID"
+        },
+        {
+          "kind": "title",
+          "code": "0x24",
+          "title": "BGF021.MID"
+        },
+        {
+          "kind": "title",
+          "code": "0x25",
+          "title": "BGF022.MID"
+        },
+        {
+          "kind": "title",
+          "code": "0x26",
+          "title": "BGF023.MID"
+        },
+        {
+          "kind": "title",
+          "code": "0x27",
+          "title": "BGF024.MID"
+        },
+        {
+          "kind": "title",
+          "code": "0x28",
+          "title": "BGF025.MID"
+        },
+        {
+          "kind": "title",
+          "code": "0x29",
+          "title": "BGF026.MID"
+        },
+        {
+          "kind": "title",
+          "code": "0x2A",
+          "title": "BGF027.MID"
+        },
+        {
+          "kind": "title",
+          "code": "0x2B",
+          "title": "BGF028.MID"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/kss.xml",
+      "source_order": 3044,
+      "archive": "striders_98",
+      "id": "striders-98-opn"
+    },
+    {
+      "title": "[PC-9801] STAR STRIDERS(OPNA)",
+      "driver": {
+        "name": "pc98dos",
+        "type": "opna",
+        "alias": "KSS",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "clockmul",
+          "value": "8"
+        },
+        {
+          "name": "fm_mix",
+          "value": "0"
+        },
+        {
+          "name": "ssg_mix",
+          "value": "-8"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "IBGM.EXE",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "IBGMP.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "BGF001.MID",
+          "offset": "0x10"
+        },
+        {
+          "type": "file",
+          "path": "BGF002.MID",
+          "offset": "0x11"
+        },
+        {
+          "type": "file",
+          "path": "BGF003.MID",
+          "offset": "0x12"
+        },
+        {
+          "type": "file",
+          "path": "BGF004.MID",
+          "offset": "0x13"
+        },
+        {
+          "type": "file",
+          "path": "BGF005.MID",
+          "offset": "0x14"
+        },
+        {
+          "type": "file",
+          "path": "BGF006.MID",
+          "offset": "0x15"
+        },
+        {
+          "type": "file",
+          "path": "BGF007.MID",
+          "offset": "0x16"
+        },
+        {
+          "type": "file",
+          "path": "BGF008.MID",
+          "offset": "0x17"
+        },
+        {
+          "type": "file",
+          "path": "BGF009.MID",
+          "offset": "0x18"
+        },
+        {
+          "type": "file",
+          "path": "BGF010.MID",
+          "offset": "0x19"
+        },
+        {
+          "type": "file",
+          "path": "BGF011.MID",
+          "offset": "0x1A"
+        },
+        {
+          "type": "file",
+          "path": "BGF012.MID",
+          "offset": "0x1B"
+        },
+        {
+          "type": "file",
+          "path": "BGF013.MID",
+          "offset": "0x1C"
+        },
+        {
+          "type": "file",
+          "path": "BGF014.MID",
+          "offset": "0x1D"
+        },
+        {
+          "type": "file",
+          "path": "BGF015.MID",
+          "offset": "0x1E"
+        },
+        {
+          "type": "file",
+          "path": "BGF016.MID",
+          "offset": "0x1F"
+        },
+        {
+          "type": "file",
+          "path": "BGF017.MID",
+          "offset": "0x20"
+        },
+        {
+          "type": "file",
+          "path": "BGF018.MID",
+          "offset": "0x21"
+        },
+        {
+          "type": "file",
+          "path": "BGF019.MID",
+          "offset": "0x22"
+        },
+        {
+          "type": "file",
+          "path": "BGF020.MID",
+          "offset": "0x23"
+        },
+        {
+          "type": "file",
+          "path": "BGF021.MID",
+          "offset": "0x24"
+        },
+        {
+          "type": "file",
+          "path": "BGF022.MID",
+          "offset": "0x25"
+        },
+        {
+          "type": "file",
+          "path": "BGF023.MID",
+          "offset": "0x26"
+        },
+        {
+          "type": "file",
+          "path": "BGF024.MID",
+          "offset": "0x27"
+        },
+        {
+          "type": "file",
+          "path": "BGF025.MID",
+          "offset": "0x28"
+        },
+        {
+          "type": "file",
+          "path": "BGF026.MID",
+          "offset": "0x29"
+        },
+        {
+          "type": "file",
+          "path": "BGF027.MID",
+          "offset": "0x2A"
+        },
+        {
+          "type": "file",
+          "path": "BGF028.MID",
+          "offset": "0x2B"
+        },
+        {
+          "type": "shell",
+          "path": "IBGM -J",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "IBGMP",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "BGF001.MID"
+        },
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "BGF002.MID"
+        },
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "BGF003.MID"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "BGF004.MID"
+        },
+        {
+          "kind": "title",
+          "code": "0x14",
+          "title": "BGF005.MID"
+        },
+        {
+          "kind": "title",
+          "code": "0x15",
+          "title": "BGF006.MID"
+        },
+        {
+          "kind": "title",
+          "code": "0x16",
+          "title": "BGF007.MID"
+        },
+        {
+          "kind": "title",
+          "code": "0x17",
+          "title": "BGF008.MID"
+        },
+        {
+          "kind": "title",
+          "code": "0x18",
+          "title": "BGF009.MID"
+        },
+        {
+          "kind": "title",
+          "code": "0x19",
+          "title": "BGF010.MID"
+        },
+        {
+          "kind": "title",
+          "code": "0x1A",
+          "title": "BGF011.MID"
+        },
+        {
+          "kind": "title",
+          "code": "0x1B",
+          "title": "BGF012.MID"
+        },
+        {
+          "kind": "title",
+          "code": "0x1C",
+          "title": "BGF013.MID"
+        },
+        {
+          "kind": "title",
+          "code": "0x1D",
+          "title": "BGF014.MID"
+        },
+        {
+          "kind": "title",
+          "code": "0x1E",
+          "title": "BGF015.MID"
+        },
+        {
+          "kind": "title",
+          "code": "0x1F",
+          "title": "BGF016.MID"
+        },
+        {
+          "kind": "title",
+          "code": "0x20",
+          "title": "BGF017.MID"
+        },
+        {
+          "kind": "title",
+          "code": "0x21",
+          "title": "BGF018.MID"
+        },
+        {
+          "kind": "title",
+          "code": "0x22",
+          "title": "BGF019.MID"
+        },
+        {
+          "kind": "title",
+          "code": "0x23",
+          "title": "BGF020.MID"
+        },
+        {
+          "kind": "title",
+          "code": "0x24",
+          "title": "BGF021.MID"
+        },
+        {
+          "kind": "title",
+          "code": "0x25",
+          "title": "BGF022.MID"
+        },
+        {
+          "kind": "title",
+          "code": "0x26",
+          "title": "BGF023.MID"
+        },
+        {
+          "kind": "title",
+          "code": "0x27",
+          "title": "BGF024.MID"
+        },
+        {
+          "kind": "title",
+          "code": "0x28",
+          "title": "BGF025.MID"
+        },
+        {
+          "kind": "title",
+          "code": "0x29",
+          "title": "BGF026.MID"
+        },
+        {
+          "kind": "title",
+          "code": "0x2A",
+          "title": "BGF027.MID"
+        },
+        {
+          "kind": "title",
+          "code": "0x2B",
+          "title": "BGF028.MID"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/kss.xml",
+      "source_order": 3045,
+      "archive": "striders_98",
+      "id": "striders-98-opna"
+    },
+    {
+      "title": "[PC-9801] STAR STRIDERS(GS)",
+      "driver": {
+        "name": "pc98dos",
+        "type": "beep",
+        "alias": "KSS",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "clockmul",
+          "value": "4"
+        },
+        {
+          "name": "midiout",
+          "value": "1"
+        },
+        {
+          "name": "midiout_type",
+          "value": "4"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "IBGM.EXE",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "IBGMPM.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "BGM001.MID",
+          "offset": "0x10"
+        },
+        {
+          "type": "file",
+          "path": "BGM002.MID",
+          "offset": "0x11"
+        },
+        {
+          "type": "file",
+          "path": "BGM003.MID",
+          "offset": "0x12"
+        },
+        {
+          "type": "file",
+          "path": "BGM004.MID",
+          "offset": "0x13"
+        },
+        {
+          "type": "file",
+          "path": "BGM005.MID",
+          "offset": "0x14"
+        },
+        {
+          "type": "file",
+          "path": "BGM006.MID",
+          "offset": "0x15"
+        },
+        {
+          "type": "file",
+          "path": "BGM007.MID",
+          "offset": "0x16"
+        },
+        {
+          "type": "file",
+          "path": "BGM008.MID",
+          "offset": "0x17"
+        },
+        {
+          "type": "file",
+          "path": "BGM009.MID",
+          "offset": "0x18"
+        },
+        {
+          "type": "file",
+          "path": "BGM010.MID",
+          "offset": "0x19"
+        },
+        {
+          "type": "file",
+          "path": "BGM011.MID",
+          "offset": "0x1A"
+        },
+        {
+          "type": "file",
+          "path": "BGM012.MID",
+          "offset": "0x1B"
+        },
+        {
+          "type": "file",
+          "path": "BGM013.MID",
+          "offset": "0x1C"
+        },
+        {
+          "type": "file",
+          "path": "BGM014.MID",
+          "offset": "0x1D"
+        },
+        {
+          "type": "file",
+          "path": "BGM015.MID",
+          "offset": "0x1E"
+        },
+        {
+          "type": "file",
+          "path": "BGM016.MID",
+          "offset": "0x1F"
+        },
+        {
+          "type": "file",
+          "path": "BGM017.MID",
+          "offset": "0x20"
+        },
+        {
+          "type": "file",
+          "path": "BGM018.MID",
+          "offset": "0x21"
+        },
+        {
+          "type": "file",
+          "path": "BGM019.MID",
+          "offset": "0x22"
+        },
+        {
+          "type": "file",
+          "path": "BGM020.MID",
+          "offset": "0x23"
+        },
+        {
+          "type": "file",
+          "path": "BGM021.MID",
+          "offset": "0x24"
+        },
+        {
+          "type": "file",
+          "path": "BGM022.MID",
+          "offset": "0x25"
+        },
+        {
+          "type": "file",
+          "path": "BGM023.MID",
+          "offset": "0x26"
+        },
+        {
+          "type": "file",
+          "path": "BGM024.MID",
+          "offset": "0x27"
+        },
+        {
+          "type": "file",
+          "path": "BGM025.MID",
+          "offset": "0x28"
+        },
+        {
+          "type": "file",
+          "path": "BGM026.MID",
+          "offset": "0x29"
+        },
+        {
+          "type": "file",
+          "path": "BGM027.MID",
+          "offset": "0x2A"
+        },
+        {
+          "type": "file",
+          "path": "BGM028.MID",
+          "offset": "0x2B"
+        },
+        {
+          "type": "shell",
+          "path": "IBGM -J",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "IBGMPM",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "BGM001.MID"
+        },
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "BGM002.MID"
+        },
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "BGM003.MID"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "BGM004.MID"
+        },
+        {
+          "kind": "title",
+          "code": "0x14",
+          "title": "BGM005.MID"
+        },
+        {
+          "kind": "title",
+          "code": "0x15",
+          "title": "BGM006.MID"
+        },
+        {
+          "kind": "title",
+          "code": "0x16",
+          "title": "BGM007.MID"
+        },
+        {
+          "kind": "title",
+          "code": "0x17",
+          "title": "BGM008.MID"
+        },
+        {
+          "kind": "title",
+          "code": "0x18",
+          "title": "BGM009.MID"
+        },
+        {
+          "kind": "title",
+          "code": "0x19",
+          "title": "BGM010.MID"
+        },
+        {
+          "kind": "title",
+          "code": "0x1A",
+          "title": "BGM011.MID"
+        },
+        {
+          "kind": "title",
+          "code": "0x1B",
+          "title": "BGM012.MID"
+        },
+        {
+          "kind": "title",
+          "code": "0x1C",
+          "title": "BGM013.MID"
+        },
+        {
+          "kind": "title",
+          "code": "0x1D",
+          "title": "BGM014.MID"
+        },
+        {
+          "kind": "title",
+          "code": "0x1E",
+          "title": "BGM015.MID"
+        },
+        {
+          "kind": "title",
+          "code": "0x1F",
+          "title": "BGM016.MID"
+        },
+        {
+          "kind": "title",
+          "code": "0x20",
+          "title": "BGM017.MID"
+        },
+        {
+          "kind": "title",
+          "code": "0x21",
+          "title": "BGM018.MID"
+        },
+        {
+          "kind": "title",
+          "code": "0x22",
+          "title": "BGM019.MID"
+        },
+        {
+          "kind": "title",
+          "code": "0x23",
+          "title": "BGM020.MID"
+        },
+        {
+          "kind": "title",
+          "code": "0x24",
+          "title": "BGM021.MID"
+        },
+        {
+          "kind": "title",
+          "code": "0x25",
+          "title": "BGM022.MID"
+        },
+        {
+          "kind": "title",
+          "code": "0x26",
+          "title": "BGM023.MID"
+        },
+        {
+          "kind": "title",
+          "code": "0x27",
+          "title": "BGM024.MID"
+        },
+        {
+          "kind": "title",
+          "code": "0x28",
+          "title": "BGM025.MID"
+        },
+        {
+          "kind": "title",
+          "code": "0x29",
+          "title": "BGM026.MID"
+        },
+        {
+          "kind": "title",
+          "code": "0x2A",
+          "title": "BGM027.MID"
+        },
+        {
+          "kind": "title",
+          "code": "0x2B",
+          "title": "BGM028.MID"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/kss.xml",
+      "source_order": 3046,
+      "archive": "striders_98",
+      "id": "striders-98-beep"
+    },
+    {
+      "title": "[PC-9801] アイドルプロジェクト",
+      "driver": {
+        "name": "pc98dos",
+        "type": "opn",
+        "alias": "KSS",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "clockmul",
+          "value": "8"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "NAX.com",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "NLP_HOOT.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "TONES.DTA",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "IP00001.NAX",
+          "offset": "0x10"
+        },
+        {
+          "type": "file",
+          "path": "IP00002.NAX",
+          "offset": "0x11"
+        },
+        {
+          "type": "file",
+          "path": "IP00003.NAX",
+          "offset": "0x12"
+        },
+        {
+          "type": "file",
+          "path": "IP00004.NAX",
+          "offset": "0x13"
+        },
+        {
+          "type": "file",
+          "path": "IP00005.NAX",
+          "offset": "0x14"
+        },
+        {
+          "type": "file",
+          "path": "IP00006.NAX",
+          "offset": "0x15"
+        },
+        {
+          "type": "file",
+          "path": "IP00007.NAX",
+          "offset": "0x16"
+        },
+        {
+          "type": "file",
+          "path": "IP00008.NAX",
+          "offset": "0x17"
+        },
+        {
+          "type": "file",
+          "path": "IP00009.NAX",
+          "offset": "0x18"
+        },
+        {
+          "type": "file",
+          "path": "IP00010.NAX",
+          "offset": "0x19"
+        },
+        {
+          "type": "file",
+          "path": "IP00011.NAX",
+          "offset": "0x1A"
+        },
+        {
+          "type": "file",
+          "path": "IP00012.NAX",
+          "offset": "0x1B"
+        },
+        {
+          "type": "file",
+          "path": "IP00013.NAX",
+          "offset": "0x1C"
+        },
+        {
+          "type": "file",
+          "path": "IP00014.NAX",
+          "offset": "0x1D"
+        },
+        {
+          "type": "file",
+          "path": "IP00015.NAX",
+          "offset": "0x1E"
+        },
+        {
+          "type": "file",
+          "path": "IP00016.NAX",
+          "offset": "0x1F"
+        },
+        {
+          "type": "file",
+          "path": "IP00017.NAX",
+          "offset": "0x20"
+        },
+        {
+          "type": "file",
+          "path": "IP00018.NAX",
+          "offset": "0x21"
+        },
+        {
+          "type": "file",
+          "path": "IP00019.NAX",
+          "offset": "0x22"
+        },
+        {
+          "type": "file",
+          "path": "IP00020.NAX",
+          "offset": "0x23"
+        },
+        {
+          "type": "file",
+          "path": "IP00021.NAX",
+          "offset": "0x24"
+        },
+        {
+          "type": "file",
+          "path": "IP00022.NAX",
+          "offset": "0x25"
+        },
+        {
+          "type": "file",
+          "path": "IP00023.NAX",
+          "offset": "0x26"
+        },
+        {
+          "type": "file",
+          "path": "IP00024.NAX",
+          "offset": "0x27"
+        },
+        {
+          "type": "file",
+          "path": "IP00025.NAX",
+          "offset": "0x28"
+        },
+        {
+          "type": "file",
+          "path": "IP00026.NAX",
+          "offset": "0x29"
+        },
+        {
+          "type": "file",
+          "path": "IP00027.NAX",
+          "offset": "0x2A"
+        },
+        {
+          "type": "file",
+          "path": "IP00028.NAX",
+          "offset": "0x2B"
+        },
+        {
+          "type": "file",
+          "path": "IP00029.NAX",
+          "offset": "0x2C"
+        },
+        {
+          "type": "file",
+          "path": "IP00030.NAX",
+          "offset": "0x2D"
+        },
+        {
+          "type": "file",
+          "path": "IP00031.NAX",
+          "offset": "0x2E"
+        },
+        {
+          "type": "file",
+          "path": "IP00032.NAX",
+          "offset": "0x2F"
+        },
+        {
+          "type": "shell",
+          "path": "NAX -T",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "NLP_HOOT",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "IP00001.NAX"
+        },
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "IP00002.NAX"
+        },
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "IP00003.NAX"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "IP00004.NAX"
+        },
+        {
+          "kind": "title",
+          "code": "0x14",
+          "title": "IP00005.NAX"
+        },
+        {
+          "kind": "title",
+          "code": "0x15",
+          "title": "IP00006.NAX"
+        },
+        {
+          "kind": "title",
+          "code": "0x16",
+          "title": "IP00007.NAX"
+        },
+        {
+          "kind": "title",
+          "code": "0x17",
+          "title": "IP00008.NAX"
+        },
+        {
+          "kind": "title",
+          "code": "0x18",
+          "title": "IP00009.NAX"
+        },
+        {
+          "kind": "title",
+          "code": "0x19",
+          "title": "IP00010.NAX"
+        },
+        {
+          "kind": "title",
+          "code": "0x1A",
+          "title": "IP00011.NAX"
+        },
+        {
+          "kind": "title",
+          "code": "0x1B",
+          "title": "IP00012.NAX"
+        },
+        {
+          "kind": "title",
+          "code": "0x1C",
+          "title": "IP00013.NAX"
+        },
+        {
+          "kind": "title",
+          "code": "0x1D",
+          "title": "IP00014.NAX"
+        },
+        {
+          "kind": "title",
+          "code": "0x1E",
+          "title": "IP00015.NAX"
+        },
+        {
+          "kind": "title",
+          "code": "0x1F",
+          "title": "IP00016.NAX"
+        },
+        {
+          "kind": "title",
+          "code": "0x20",
+          "title": "IP00017.NAX"
+        },
+        {
+          "kind": "title",
+          "code": "0x21",
+          "title": "IP00018.NAX"
+        },
+        {
+          "kind": "title",
+          "code": "0x22",
+          "title": "IP00019.NAX"
+        },
+        {
+          "kind": "title",
+          "code": "0x23",
+          "title": "IP00020.NAX"
+        },
+        {
+          "kind": "title",
+          "code": "0x24",
+          "title": "IP00021.NAX"
+        },
+        {
+          "kind": "title",
+          "code": "0x25",
+          "title": "IP00022.NAX"
+        },
+        {
+          "kind": "title",
+          "code": "0x26",
+          "title": "IP00023.NAX"
+        },
+        {
+          "kind": "title",
+          "code": "0x27",
+          "title": "IP00024.NAX"
+        },
+        {
+          "kind": "title",
+          "code": "0x28",
+          "title": "IP00025.NAX"
+        },
+        {
+          "kind": "title",
+          "code": "0x29",
+          "title": "IP00026.NAX"
+        },
+        {
+          "kind": "title",
+          "code": "0x2A",
+          "title": "IP00027.NAX"
+        },
+        {
+          "kind": "title",
+          "code": "0x2B",
+          "title": "IP00028.NAX"
+        },
+        {
+          "kind": "title",
+          "code": "0x2C",
+          "title": "IP00029.NAX"
+        },
+        {
+          "kind": "title",
+          "code": "0x2D",
+          "title": "IP00030.NAX"
+        },
+        {
+          "kind": "title",
+          "code": "0x2E",
+          "title": "IP00031.NAX"
+        },
+        {
+          "kind": "title",
+          "code": "0x2F",
+          "title": "IP00032.NAX"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/kss.xml",
+      "source_order": 3047,
+      "archive": "idol_p_98",
+      "id": "idol-p-98-opn"
+    },
+    {
+      "title": "[PC-9801] ウェディングピーチ(86)",
+      "driver": {
+        "name": "pc98dos",
+        "type": "86",
+        "alias": "KSS",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "clockmul",
+          "value": "8"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "NAX.com",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "NLP_HOOT.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "WP01B.O",
+          "offset": "0x10"
+        },
+        {
+          "type": "file",
+          "path": "WP02B.O",
+          "offset": "0x11"
+        },
+        {
+          "type": "file",
+          "path": "WP03B.O",
+          "offset": "0x12"
+        },
+        {
+          "type": "file",
+          "path": "WP04B.O",
+          "offset": "0x13"
+        },
+        {
+          "type": "file",
+          "path": "WP05B.O",
+          "offset": "0x14"
+        },
+        {
+          "type": "file",
+          "path": "WP06B.O",
+          "offset": "0x15"
+        },
+        {
+          "type": "file",
+          "path": "WP07B.O",
+          "offset": "0x16"
+        },
+        {
+          "type": "file",
+          "path": "WP08B.O",
+          "offset": "0x17"
+        },
+        {
+          "type": "file",
+          "path": "WP09B.O",
+          "offset": "0x18"
+        },
+        {
+          "type": "file",
+          "path": "WP10B.O",
+          "offset": "0x19"
+        },
+        {
+          "type": "file",
+          "path": "WP11B.O",
+          "offset": "0x1A"
+        },
+        {
+          "type": "file",
+          "path": "WP12B.O",
+          "offset": "0x1B"
+        },
+        {
+          "type": "file",
+          "path": "WP13B.O",
+          "offset": "0x1C"
+        },
+        {
+          "type": "file",
+          "path": "WP14B.O",
+          "offset": "0x1D"
+        },
+        {
+          "type": "file",
+          "path": "WP15B.O",
+          "offset": "0x1E"
+        },
+        {
+          "type": "file",
+          "path": "WP16B.O",
+          "offset": "0x1F"
+        },
+        {
+          "type": "file",
+          "path": "WP17B.O",
+          "offset": "0x20"
+        },
+        {
+          "type": "file",
+          "path": "WP18B.O",
+          "offset": "0x21"
+        },
+        {
+          "type": "file",
+          "path": "WP19B.O",
+          "offset": "0x22"
+        },
+        {
+          "type": "file",
+          "path": "WP20B.O",
+          "offset": "0x23"
+        },
+        {
+          "type": "file",
+          "path": "WP21B.O",
+          "offset": "0x24"
+        },
+        {
+          "type": "file",
+          "path": "WP22B.O",
+          "offset": "0x25"
+        },
+        {
+          "type": "file",
+          "path": "WP23B.O",
+          "offset": "0x26"
+        },
+        {
+          "type": "file",
+          "path": "WP24B.O",
+          "offset": "0x27"
+        },
+        {
+          "type": "file",
+          "path": "SE16.O",
+          "offset": "0x28"
+        },
+        {
+          "type": "file",
+          "path": "SE24.O",
+          "offset": "0x29"
+        },
+        {
+          "type": "shell",
+          "path": "NAX -I -T -P -3",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "NLP_HOOT",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "WP01B.O：アバンタイトル"
+        },
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "WP02B.O：夢見る愛天使"
+        },
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "WP03B.O：世界観紹介"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "WP04B.O：土曜の午後"
+        },
+        {
+          "kind": "title",
+          "code": "0x14",
+          "title": "WP05B.O：戦闘"
+        },
+        {
+          "kind": "title",
+          "code": "0x15",
+          "title": "WP06B.O：変身"
+        },
+        {
+          "kind": "title",
+          "code": "0x16",
+          "title": "WP07B.O：変身省略"
+        },
+        {
+          "kind": "title",
+          "code": "0x17",
+          "title": "WP08B.O：カ～ドバトル"
+        },
+        {
+          "kind": "title",
+          "code": "0x18",
+          "title": "WP09B.O：負けパタ～ン"
+        },
+        {
+          "kind": "title",
+          "code": "0x19",
+          "title": "WP10B.O：勝ちパタ～ン"
+        },
+        {
+          "kind": "title",
+          "code": "0x1A",
+          "title": "WP11B.O：超必殺技"
+        },
+        {
+          "kind": "title",
+          "code": "0x1B",
+          "title": "WP12B.O：黒羽兄妹"
+        },
+        {
+          "kind": "title",
+          "code": "0x1C",
+          "title": "WP13B.O：ももこ・愛のテ～マ"
+        },
+        {
+          "kind": "title",
+          "code": "0x1D",
+          "title": "WP14B.O：ゆり・愛のテ～マ"
+        },
+        {
+          "kind": "title",
+          "code": "0x1E",
+          "title": "WP15B.O：ひなぎく・愛のテ～マ"
+        },
+        {
+          "kind": "title",
+          "code": "0x1F",
+          "title": "WP16B.O：四天王を追って"
+        },
+        {
+          "kind": "title",
+          "code": "0x20",
+          "title": "WP17B.O：日曜日の午前"
+        },
+        {
+          "kind": "title",
+          "code": "0x21",
+          "title": "WP18B.O：学校という名のダンジョン"
+        },
+        {
+          "kind": "title",
+          "code": "0x22",
+          "title": "WP19B.O：クライマックス"
+        },
+        {
+          "kind": "title",
+          "code": "0x23",
+          "title": "WP20B.O：リモ～ネ登場"
+        },
+        {
+          "kind": "title",
+          "code": "0x24",
+          "title": "WP21B.O：ミルクで乾杯"
+        },
+        {
+          "kind": "title",
+          "code": "0x25",
+          "title": "WP22B.O：エピロ～グ"
+        },
+        {
+          "kind": "title",
+          "code": "0x26",
+          "title": "WP23B.O：クレジットタイトル"
+        },
+        {
+          "kind": "title",
+          "code": "0x27",
+          "title": "WP24B.O"
+        },
+        {
+          "kind": "title",
+          "code": "0x28",
+          "title": "SE16.O："
+        },
+        {
+          "kind": "title",
+          "code": "0x29",
+          "title": "SE24.O："
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/kss.xml",
+      "source_order": 3048,
+      "archive": "weding_p_98",
+      "id": "weding-p-98-86"
+    },
+    {
+      "title": "[PC-9801] ウェディングピーチ(OPN)",
+      "driver": {
+        "name": "pc98dos",
+        "type": "opn",
+        "alias": "KSS",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "clockmul",
+          "value": "8"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "NAX.com",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "NLP_HOOT.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "WP01B.O",
+          "offset": "0x10"
+        },
+        {
+          "type": "file",
+          "path": "WP02B.O",
+          "offset": "0x11"
+        },
+        {
+          "type": "file",
+          "path": "WP03B.O",
+          "offset": "0x12"
+        },
+        {
+          "type": "file",
+          "path": "WP04B.O",
+          "offset": "0x13"
+        },
+        {
+          "type": "file",
+          "path": "WP05B.O",
+          "offset": "0x14"
+        },
+        {
+          "type": "file",
+          "path": "WP06B.O",
+          "offset": "0x15"
+        },
+        {
+          "type": "file",
+          "path": "WP07B.O",
+          "offset": "0x16"
+        },
+        {
+          "type": "file",
+          "path": "WP08B.O",
+          "offset": "0x17"
+        },
+        {
+          "type": "file",
+          "path": "WP09B.O",
+          "offset": "0x18"
+        },
+        {
+          "type": "file",
+          "path": "WP10B.O",
+          "offset": "0x19"
+        },
+        {
+          "type": "file",
+          "path": "WP11B.O",
+          "offset": "0x1A"
+        },
+        {
+          "type": "file",
+          "path": "WP12B.O",
+          "offset": "0x1B"
+        },
+        {
+          "type": "file",
+          "path": "WP13B.O",
+          "offset": "0x1C"
+        },
+        {
+          "type": "file",
+          "path": "WP14B.O",
+          "offset": "0x1D"
+        },
+        {
+          "type": "file",
+          "path": "WP15B.O",
+          "offset": "0x1E"
+        },
+        {
+          "type": "file",
+          "path": "WP16B.O",
+          "offset": "0x1F"
+        },
+        {
+          "type": "file",
+          "path": "WP17B.O",
+          "offset": "0x20"
+        },
+        {
+          "type": "file",
+          "path": "WP18B.O",
+          "offset": "0x21"
+        },
+        {
+          "type": "file",
+          "path": "WP19B.O",
+          "offset": "0x22"
+        },
+        {
+          "type": "file",
+          "path": "WP20B.O",
+          "offset": "0x23"
+        },
+        {
+          "type": "file",
+          "path": "WP21B.O",
+          "offset": "0x24"
+        },
+        {
+          "type": "file",
+          "path": "WP22B.O",
+          "offset": "0x25"
+        },
+        {
+          "type": "file",
+          "path": "WP23B.O",
+          "offset": "0x26"
+        },
+        {
+          "type": "file",
+          "path": "WP24B.O",
+          "offset": "0x27"
+        },
+        {
+          "type": "file",
+          "path": "SE16.O",
+          "offset": "0x28"
+        },
+        {
+          "type": "file",
+          "path": "SE24.O",
+          "offset": "0x29"
+        },
+        {
+          "type": "shell",
+          "path": "NAX",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "NLP_HOOT",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "WP01B.O : アバンタイトル"
+        },
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "WP02B.O : 夢見る愛天使"
+        },
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "WP03B.O : 世界観紹介"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "WP04B.O : 土曜の午後"
+        },
+        {
+          "kind": "title",
+          "code": "0x14",
+          "title": "WP05B.O : 戦闘"
+        },
+        {
+          "kind": "title",
+          "code": "0x15",
+          "title": "WP06B.O : 変身"
+        },
+        {
+          "kind": "title",
+          "code": "0x16",
+          "title": "WP07B.O : 変身省略"
+        },
+        {
+          "kind": "title",
+          "code": "0x17",
+          "title": "WP08B.O : カ～ドバトル"
+        },
+        {
+          "kind": "title",
+          "code": "0x18",
+          "title": "WP09B.O : 負けパタ～ン"
+        },
+        {
+          "kind": "title",
+          "code": "0x19",
+          "title": "WP10B.O : 勝ちパタ～ン"
+        },
+        {
+          "kind": "title",
+          "code": "0x1A",
+          "title": "WP11B.O : 超必殺技"
+        },
+        {
+          "kind": "title",
+          "code": "0x1B",
+          "title": "WP12B.O : 黒羽兄妹"
+        },
+        {
+          "kind": "title",
+          "code": "0x1C",
+          "title": "WP13B.O : ももこ・愛のテ～マ"
+        },
+        {
+          "kind": "title",
+          "code": "0x1D",
+          "title": "WP14B.O : ゆり・愛のテ～マ"
+        },
+        {
+          "kind": "title",
+          "code": "0x1E",
+          "title": "WP15B.O : ひなぎく・愛のテ～マ"
+        },
+        {
+          "kind": "title",
+          "code": "0x1F",
+          "title": "WP16B.O : 四天王を追って"
+        },
+        {
+          "kind": "title",
+          "code": "0x20",
+          "title": "WP17B.O : 日曜日の午前"
+        },
+        {
+          "kind": "title",
+          "code": "0x21",
+          "title": "WP18B.O : 学校という名のダンジョン"
+        },
+        {
+          "kind": "title",
+          "code": "0x22",
+          "title": "WP19B.O : クライマックス"
+        },
+        {
+          "kind": "title",
+          "code": "0x23",
+          "title": "WP20B.O : リモ～ネ登場"
+        },
+        {
+          "kind": "title",
+          "code": "0x24",
+          "title": "WP21B.O : ミルクで乾杯"
+        },
+        {
+          "kind": "title",
+          "code": "0x25",
+          "title": "WP22B.O : エピロ～グ"
+        },
+        {
+          "kind": "title",
+          "code": "0x26",
+          "title": "WP23B.O : クレジットタイトル"
+        },
+        {
+          "kind": "title",
+          "code": "0x27",
+          "title": "WP24B.O"
+        },
+        {
+          "kind": "title",
+          "code": "0x28",
+          "title": "SE16.O"
+        },
+        {
+          "kind": "title",
+          "code": "0x29",
+          "title": "SE24.O"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/kss.xml",
+      "source_order": 3049,
+      "archive": "weding_p_98",
+      "id": "weding-p-98-opn"
+    },
+    {
+      "title": "[PC-9801] レッスルエンジェルスV1",
+      "driver": {
+        "name": "pc98dos",
+        "type": "opn",
+        "alias": "KSS",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "clockmul",
+          "value": "8"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "NA.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "NLP_HOOT.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "TONES.DTA",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "WVM02.O",
+          "offset": "0x10"
+        },
+        {
+          "type": "file",
+          "path": "WVM03.O",
+          "offset": "0x11"
+        },
+        {
+          "type": "file",
+          "path": "WVM04.O",
+          "offset": "0x12"
+        },
+        {
+          "type": "file",
+          "path": "WVM05.O",
+          "offset": "0x13"
+        },
+        {
+          "type": "file",
+          "path": "WVM06.O",
+          "offset": "0x14"
+        },
+        {
+          "type": "file",
+          "path": "WVM07.O",
+          "offset": "0x15"
+        },
+        {
+          "type": "file",
+          "path": "WVM08.O",
+          "offset": "0x16"
+        },
+        {
+          "type": "file",
+          "path": "WVM09.O",
+          "offset": "0x17"
+        },
+        {
+          "type": "file",
+          "path": "WVM10.O",
+          "offset": "0x18"
+        },
+        {
+          "type": "file",
+          "path": "WVM11.O",
+          "offset": "0x19"
+        },
+        {
+          "type": "file",
+          "path": "WVM12.O",
+          "offset": "0x1A"
+        },
+        {
+          "type": "file",
+          "path": "WVM13.O",
+          "offset": "0x1B"
+        },
+        {
+          "type": "file",
+          "path": "WVM14.O",
+          "offset": "0x1C"
+        },
+        {
+          "type": "file",
+          "path": "WVM15.O",
+          "offset": "0x1D"
+        },
+        {
+          "type": "file",
+          "path": "WVM16.O",
+          "offset": "0x1E"
+        },
+        {
+          "type": "file",
+          "path": "WVM17.O",
+          "offset": "0x1F"
+        },
+        {
+          "type": "file",
+          "path": "WVM19.O",
+          "offset": "0x20"
+        },
+        {
+          "type": "file",
+          "path": "WVM20.O",
+          "offset": "0x21"
+        },
+        {
+          "type": "file",
+          "path": "WVM21.O",
+          "offset": "0x22"
+        },
+        {
+          "type": "file",
+          "path": "WVM22.O",
+          "offset": "0x23"
+        },
+        {
+          "type": "file",
+          "path": "WVM23.O",
+          "offset": "0x24"
+        },
+        {
+          "type": "file",
+          "path": "WVM24.O",
+          "offset": "0x25"
+        },
+        {
+          "type": "file",
+          "path": "WVM25.O",
+          "offset": "0x26"
+        },
+        {
+          "type": "file",
+          "path": "WVM26.O",
+          "offset": "0x27"
+        },
+        {
+          "type": "file",
+          "path": "WVM27.O",
+          "offset": "0x28"
+        },
+        {
+          "type": "file",
+          "path": "WVM28.O",
+          "offset": "0x29"
+        },
+        {
+          "type": "file",
+          "path": "WVM29.O",
+          "offset": "0x2A"
+        },
+        {
+          "type": "file",
+          "path": "WVM30.O",
+          "offset": "0x2B"
+        },
+        {
+          "type": "file",
+          "path": "WVM32.O",
+          "offset": "0x2C"
+        },
+        {
+          "type": "file",
+          "path": "WVM33.O",
+          "offset": "0x2D"
+        },
+        {
+          "type": "file",
+          "path": "WVM34.O",
+          "offset": "0x2E"
+        },
+        {
+          "type": "file",
+          "path": "WVM35.O",
+          "offset": "0x2F"
+        },
+        {
+          "type": "file",
+          "path": "WVM40.O",
+          "offset": "0x30"
+        },
+        {
+          "type": "file",
+          "path": "WVM51.O",
+          "offset": "0x31"
+        },
+        {
+          "type": "file",
+          "path": "WVM52.O",
+          "offset": "0x32"
+        },
+        {
+          "type": "file",
+          "path": "WVM53.O",
+          "offset": "0x33"
+        },
+        {
+          "type": "file",
+          "path": "WVM54.O",
+          "offset": "0x34"
+        },
+        {
+          "type": "file",
+          "path": "WVM55.O",
+          "offset": "0x35"
+        },
+        {
+          "type": "file",
+          "path": "WVM56.O",
+          "offset": "0x36"
+        },
+        {
+          "type": "file",
+          "path": "WVM57.O",
+          "offset": "0x37"
+        },
+        {
+          "type": "file",
+          "path": "WVM58.O",
+          "offset": "0x38"
+        },
+        {
+          "type": "file",
+          "path": "WVM59.O",
+          "offset": "0x39"
+        },
+        {
+          "type": "file",
+          "path": "WVM60.O",
+          "offset": "0x3A"
+        },
+        {
+          "type": "file",
+          "path": "WVM61.O",
+          "offset": "0x3B"
+        },
+        {
+          "type": "file",
+          "path": "WVM71.O",
+          "offset": "0x3C"
+        },
+        {
+          "type": "file",
+          "path": "WVM72.O",
+          "offset": "0x3D"
+        },
+        {
+          "type": "file",
+          "path": "WVM73.O",
+          "offset": "0x3E"
+        },
+        {
+          "type": "file",
+          "path": "WVM74.O",
+          "offset": "0x3F"
+        },
+        {
+          "type": "file",
+          "path": "WVM75.O",
+          "offset": "0x40"
+        },
+        {
+          "type": "file",
+          "path": "WVM76.O",
+          "offset": "0x41"
+        },
+        {
+          "type": "file",
+          "path": "WVM77.O",
+          "offset": "0x42"
+        },
+        {
+          "type": "file",
+          "path": "WVM78.O",
+          "offset": "0x43"
+        },
+        {
+          "type": "file",
+          "path": "WVM79.O",
+          "offset": "0x44"
+        },
+        {
+          "type": "file",
+          "path": "WVM79_1.O",
+          "offset": "0x45"
+        },
+        {
+          "type": "file",
+          "path": "WVM80.O",
+          "offset": "0x46"
+        },
+        {
+          "type": "file",
+          "path": "WVM81.O",
+          "offset": "0x47"
+        },
+        {
+          "type": "file",
+          "path": "WVM82.O",
+          "offset": "0x48"
+        },
+        {
+          "type": "file",
+          "path": "WVM83.O",
+          "offset": "0x49"
+        },
+        {
+          "type": "file",
+          "path": "WVM84.O",
+          "offset": "0x4A"
+        },
+        {
+          "type": "file",
+          "path": "WVM85.O",
+          "offset": "0x4B"
+        },
+        {
+          "type": "file",
+          "path": "WVM90.O",
+          "offset": "0x4C"
+        },
+        {
+          "type": "file",
+          "path": "WVM91.O",
+          "offset": "0x4D"
+        },
+        {
+          "type": "file",
+          "path": "WVM92.O",
+          "offset": "0x4E"
+        },
+        {
+          "type": "file",
+          "path": "WVM93.O",
+          "offset": "0x4F"
+        },
+        {
+          "type": "file",
+          "path": "WVM96.O",
+          "offset": "0x50"
+        },
+        {
+          "type": "file",
+          "path": "WVM97.O",
+          "offset": "0x51"
+        },
+        {
+          "type": "shell",
+          "path": "NA -FI",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "NLP_HOOT",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "WVM02.O"
+        },
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "WVM03.O"
+        },
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "WVM04.O"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "WVM05.O"
+        },
+        {
+          "kind": "title",
+          "code": "0x14",
+          "title": "WVM06.O"
+        },
+        {
+          "kind": "title",
+          "code": "0x15",
+          "title": "WVM07.O"
+        },
+        {
+          "kind": "title",
+          "code": "0x16",
+          "title": "WVM08.O"
+        },
+        {
+          "kind": "title",
+          "code": "0x17",
+          "title": "WVM09.O"
+        },
+        {
+          "kind": "title",
+          "code": "0x18",
+          "title": "WVM10.O"
+        },
+        {
+          "kind": "title",
+          "code": "0x19",
+          "title": "WVM11.O"
+        },
+        {
+          "kind": "title",
+          "code": "0x1A",
+          "title": "WVM12.O"
+        },
+        {
+          "kind": "title",
+          "code": "0x1B",
+          "title": "WVM13.O"
+        },
+        {
+          "kind": "title",
+          "code": "0x1C",
+          "title": "WVM14.O"
+        },
+        {
+          "kind": "title",
+          "code": "0x1D",
+          "title": "WVM15.O"
+        },
+        {
+          "kind": "title",
+          "code": "0x1E",
+          "title": "WVM16.O"
+        },
+        {
+          "kind": "title",
+          "code": "0x1F",
+          "title": "WVM17.O"
+        },
+        {
+          "kind": "title",
+          "code": "0x20",
+          "title": "WVM19.O"
+        },
+        {
+          "kind": "title",
+          "code": "0x21",
+          "title": "WVM20.O"
+        },
+        {
+          "kind": "title",
+          "code": "0x22",
+          "title": "WVM21.O"
+        },
+        {
+          "kind": "title",
+          "code": "0x23",
+          "title": "WVM22.O"
+        },
+        {
+          "kind": "title",
+          "code": "0x24",
+          "title": "WVM23.O"
+        },
+        {
+          "kind": "title",
+          "code": "0x25",
+          "title": "WVM24.O"
+        },
+        {
+          "kind": "title",
+          "code": "0x26",
+          "title": "WVM25.O"
+        },
+        {
+          "kind": "title",
+          "code": "0x27",
+          "title": "WVM26.O"
+        },
+        {
+          "kind": "title",
+          "code": "0x28",
+          "title": "WVM27.O"
+        },
+        {
+          "kind": "title",
+          "code": "0x29",
+          "title": "WVM28.O"
+        },
+        {
+          "kind": "title",
+          "code": "0x2A",
+          "title": "WVM29.O"
+        },
+        {
+          "kind": "title",
+          "code": "0x2B",
+          "title": "WVM30.O"
+        },
+        {
+          "kind": "title",
+          "code": "0x2C",
+          "title": "WVM32.O"
+        },
+        {
+          "kind": "title",
+          "code": "0x2D",
+          "title": "WVM33.O"
+        },
+        {
+          "kind": "title",
+          "code": "0x2E",
+          "title": "WVM34.O"
+        },
+        {
+          "kind": "title",
+          "code": "0x2F",
+          "title": "WVM35.O"
+        },
+        {
+          "kind": "title",
+          "code": "0x30",
+          "title": "WVM40.O"
+        },
+        {
+          "kind": "title",
+          "code": "0x31",
+          "title": "WVM51.O"
+        },
+        {
+          "kind": "title",
+          "code": "0x32",
+          "title": "WVM52.O"
+        },
+        {
+          "kind": "title",
+          "code": "0x33",
+          "title": "WVM53.O"
+        },
+        {
+          "kind": "title",
+          "code": "0x34",
+          "title": "WVM54.O"
+        },
+        {
+          "kind": "title",
+          "code": "0x35",
+          "title": "WVM55.O"
+        },
+        {
+          "kind": "title",
+          "code": "0x36",
+          "title": "WVM56.O"
+        },
+        {
+          "kind": "title",
+          "code": "0x37",
+          "title": "WVM57.O"
+        },
+        {
+          "kind": "title",
+          "code": "0x38",
+          "title": "WVM58.O"
+        },
+        {
+          "kind": "title",
+          "code": "0x39",
+          "title": "WVM59.O"
+        },
+        {
+          "kind": "title",
+          "code": "0x3A",
+          "title": "WVM60.O"
+        },
+        {
+          "kind": "title",
+          "code": "0x3B",
+          "title": "WVM61.O"
+        },
+        {
+          "kind": "title",
+          "code": "0x3C",
+          "title": "WVM71.O"
+        },
+        {
+          "kind": "title",
+          "code": "0x3D",
+          "title": "WVM72.O"
+        },
+        {
+          "kind": "title",
+          "code": "0x3E",
+          "title": "WVM73.O"
+        },
+        {
+          "kind": "title",
+          "code": "0x3F",
+          "title": "WVM74.O"
+        },
+        {
+          "kind": "title",
+          "code": "0x40",
+          "title": "WVM75.O"
+        },
+        {
+          "kind": "title",
+          "code": "0x41",
+          "title": "WVM76.O"
+        },
+        {
+          "kind": "title",
+          "code": "0x42",
+          "title": "WVM77.O"
+        },
+        {
+          "kind": "title",
+          "code": "0x43",
+          "title": "WVM78.O"
+        },
+        {
+          "kind": "title",
+          "code": "0x44",
+          "title": "WVM79.O"
+        },
+        {
+          "kind": "title",
+          "code": "0x45",
+          "title": "WVM79_1.O"
+        },
+        {
+          "kind": "title",
+          "code": "0x46",
+          "title": "WVM80.O"
+        },
+        {
+          "kind": "title",
+          "code": "0x47",
+          "title": "WVM81.O"
+        },
+        {
+          "kind": "title",
+          "code": "0x48",
+          "title": "WVM82.O"
+        },
+        {
+          "kind": "title",
+          "code": "0x49",
+          "title": "WVM83.O"
+        },
+        {
+          "kind": "title",
+          "code": "0x4A",
+          "title": "WVM84.O"
+        },
+        {
+          "kind": "title",
+          "code": "0x4B",
+          "title": "WVM85.O"
+        },
+        {
+          "kind": "title",
+          "code": "0x4C",
+          "title": "WVM90.O"
+        },
+        {
+          "kind": "title",
+          "code": "0x4D",
+          "title": "WVM91.O"
+        },
+        {
+          "kind": "title",
+          "code": "0x4E",
+          "title": "WVM92.O"
+        },
+        {
+          "kind": "title",
+          "code": "0x4F",
+          "title": "WVM93.O"
+        },
+        {
+          "kind": "title",
+          "code": "0x50",
+          "title": "WVM96.O"
+        },
+        {
+          "kind": "title",
+          "code": "0x51",
+          "title": "WVM97.O"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/kss.xml",
+      "source_order": 3050,
+      "archive": "wa_v1_98",
+      "id": "wa-v1-98-opn"
+    },
+    {
+      "title": "[PC-9801] レッスルエンジェルスV2",
+      "driver": {
+        "name": "pc98dos",
+        "type": "opn",
+        "alias": "KSS",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "clockmul",
+          "value": "8"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "NA.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "NLP_HOOT.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "TONES.DTA",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "WVM02.O",
+          "offset": "0x10"
+        },
+        {
+          "type": "file",
+          "path": "WVM03.O",
+          "offset": "0x11"
+        },
+        {
+          "type": "file",
+          "path": "WVM04.O",
+          "offset": "0x12"
+        },
+        {
+          "type": "file",
+          "path": "WVM05.O",
+          "offset": "0x13"
+        },
+        {
+          "type": "file",
+          "path": "WVM06.O",
+          "offset": "0x14"
+        },
+        {
+          "type": "file",
+          "path": "WVM07.O",
+          "offset": "0x15"
+        },
+        {
+          "type": "file",
+          "path": "WVM08.O",
+          "offset": "0x16"
+        },
+        {
+          "type": "file",
+          "path": "WVM09.O",
+          "offset": "0x17"
+        },
+        {
+          "type": "file",
+          "path": "WVM10.O",
+          "offset": "0x18"
+        },
+        {
+          "type": "file",
+          "path": "WVM11.O",
+          "offset": "0x19"
+        },
+        {
+          "type": "file",
+          "path": "WVM12.O",
+          "offset": "0x1A"
+        },
+        {
+          "type": "file",
+          "path": "WVM13.O",
+          "offset": "0x1B"
+        },
+        {
+          "type": "file",
+          "path": "WVM14.O",
+          "offset": "0x1C"
+        },
+        {
+          "type": "file",
+          "path": "WVM15.O",
+          "offset": "0x1D"
+        },
+        {
+          "type": "file",
+          "path": "WVM16.O",
+          "offset": "0x1E"
+        },
+        {
+          "type": "file",
+          "path": "WVM17.O",
+          "offset": "0x1F"
+        },
+        {
+          "type": "file",
+          "path": "WVM19.O",
+          "offset": "0x20"
+        },
+        {
+          "type": "file",
+          "path": "WVM20.O",
+          "offset": "0x21"
+        },
+        {
+          "type": "file",
+          "path": "WVM201.O",
+          "offset": "0x22"
+        },
+        {
+          "type": "file",
+          "path": "WVM202.O",
+          "offset": "0x23"
+        },
+        {
+          "type": "file",
+          "path": "WVM203.O",
+          "offset": "0x24"
+        },
+        {
+          "type": "file",
+          "path": "WVM204.O",
+          "offset": "0x25"
+        },
+        {
+          "type": "file",
+          "path": "WVM206.O",
+          "offset": "0x26"
+        },
+        {
+          "type": "file",
+          "path": "WVM207.O",
+          "offset": "0x27"
+        },
+        {
+          "type": "file",
+          "path": "WVM208.O",
+          "offset": "0x28"
+        },
+        {
+          "type": "file",
+          "path": "WVM209.O",
+          "offset": "0x29"
+        },
+        {
+          "type": "file",
+          "path": "WVM21.O",
+          "offset": "0x2A"
+        },
+        {
+          "type": "file",
+          "path": "WVM210.O",
+          "offset": "0x2B"
+        },
+        {
+          "type": "file",
+          "path": "WVM211.O",
+          "offset": "0x2C"
+        },
+        {
+          "type": "file",
+          "path": "WVM212.O",
+          "offset": "0x2D"
+        },
+        {
+          "type": "file",
+          "path": "WVM213.O",
+          "offset": "0x2E"
+        },
+        {
+          "type": "file",
+          "path": "WVM215.O",
+          "offset": "0x2F"
+        },
+        {
+          "type": "file",
+          "path": "WVM216.O",
+          "offset": "0x30"
+        },
+        {
+          "type": "file",
+          "path": "WVM217.O",
+          "offset": "0x31"
+        },
+        {
+          "type": "file",
+          "path": "WVM218.O",
+          "offset": "0x32"
+        },
+        {
+          "type": "file",
+          "path": "WVM219.O",
+          "offset": "0x33"
+        },
+        {
+          "type": "file",
+          "path": "WVM22.O",
+          "offset": "0x34"
+        },
+        {
+          "type": "file",
+          "path": "WVM220.O",
+          "offset": "0x35"
+        },
+        {
+          "type": "file",
+          "path": "WVM23.O",
+          "offset": "0x36"
+        },
+        {
+          "type": "file",
+          "path": "WVM24.O",
+          "offset": "0x37"
+        },
+        {
+          "type": "file",
+          "path": "WVM25.O",
+          "offset": "0x38"
+        },
+        {
+          "type": "file",
+          "path": "WVM250.O",
+          "offset": "0x39"
+        },
+        {
+          "type": "file",
+          "path": "WVM251.O",
+          "offset": "0x3A"
+        },
+        {
+          "type": "file",
+          "path": "WVM252.O",
+          "offset": "0x3B"
+        },
+        {
+          "type": "file",
+          "path": "WVM253.O",
+          "offset": "0x3C"
+        },
+        {
+          "type": "file",
+          "path": "WVM254.O",
+          "offset": "0x3D"
+        },
+        {
+          "type": "file",
+          "path": "WVM255.O",
+          "offset": "0x3E"
+        },
+        {
+          "type": "file",
+          "path": "WVM26.O",
+          "offset": "0x3F"
+        },
+        {
+          "type": "file",
+          "path": "WVM27.O",
+          "offset": "0x40"
+        },
+        {
+          "type": "file",
+          "path": "WVM28.O",
+          "offset": "0x41"
+        },
+        {
+          "type": "file",
+          "path": "WVM29.O",
+          "offset": "0x42"
+        },
+        {
+          "type": "file",
+          "path": "WVM30.O",
+          "offset": "0x43"
+        },
+        {
+          "type": "file",
+          "path": "WVM32.O",
+          "offset": "0x44"
+        },
+        {
+          "type": "file",
+          "path": "WVM33.O",
+          "offset": "0x45"
+        },
+        {
+          "type": "file",
+          "path": "WVM34.O",
+          "offset": "0x46"
+        },
+        {
+          "type": "file",
+          "path": "WVM35.O",
+          "offset": "0x47"
+        },
+        {
+          "type": "file",
+          "path": "WVM40.O",
+          "offset": "0x48"
+        },
+        {
+          "type": "file",
+          "path": "WVM51.O",
+          "offset": "0x49"
+        },
+        {
+          "type": "file",
+          "path": "WVM52.O",
+          "offset": "0x4A"
+        },
+        {
+          "type": "file",
+          "path": "WVM53.O",
+          "offset": "0x4B"
+        },
+        {
+          "type": "file",
+          "path": "WVM54.O",
+          "offset": "0x4C"
+        },
+        {
+          "type": "file",
+          "path": "WVM55.O",
+          "offset": "0x4D"
+        },
+        {
+          "type": "file",
+          "path": "WVM56.O",
+          "offset": "0x4E"
+        },
+        {
+          "type": "file",
+          "path": "WVM57.O",
+          "offset": "0x4F"
+        },
+        {
+          "type": "file",
+          "path": "WVM58.O",
+          "offset": "0x50"
+        },
+        {
+          "type": "file",
+          "path": "WVM59.O",
+          "offset": "0x51"
+        },
+        {
+          "type": "file",
+          "path": "WVM60.O",
+          "offset": "0x52"
+        },
+        {
+          "type": "file",
+          "path": "WVM61.O",
+          "offset": "0x53"
+        },
+        {
+          "type": "file",
+          "path": "WVM71.O",
+          "offset": "0x54"
+        },
+        {
+          "type": "file",
+          "path": "WVM72.O",
+          "offset": "0x55"
+        },
+        {
+          "type": "file",
+          "path": "WVM73.O",
+          "offset": "0x56"
+        },
+        {
+          "type": "file",
+          "path": "WVM74.O",
+          "offset": "0x57"
+        },
+        {
+          "type": "file",
+          "path": "WVM75.O",
+          "offset": "0x58"
+        },
+        {
+          "type": "file",
+          "path": "WVM76.O",
+          "offset": "0x59"
+        },
+        {
+          "type": "file",
+          "path": "WVM77.O",
+          "offset": "0x5A"
+        },
+        {
+          "type": "file",
+          "path": "WVM78.O",
+          "offset": "0x5B"
+        },
+        {
+          "type": "file",
+          "path": "WVM79.O",
+          "offset": "0x5C"
+        },
+        {
+          "type": "file",
+          "path": "WVM79_1.O",
+          "offset": "0x5D"
+        },
+        {
+          "type": "file",
+          "path": "WVM80.O",
+          "offset": "0x5E"
+        },
+        {
+          "type": "file",
+          "path": "WVM81.O",
+          "offset": "0x5F"
+        },
+        {
+          "type": "file",
+          "path": "WVM82.O",
+          "offset": "0x60"
+        },
+        {
+          "type": "file",
+          "path": "WVM83.O",
+          "offset": "0x61"
+        },
+        {
+          "type": "file",
+          "path": "WVM84.O",
+          "offset": "0x62"
+        },
+        {
+          "type": "file",
+          "path": "WVM85.O",
+          "offset": "0x63"
+        },
+        {
+          "type": "file",
+          "path": "WVM90.O",
+          "offset": "0x64"
+        },
+        {
+          "type": "file",
+          "path": "WVM91.O",
+          "offset": "0x65"
+        },
+        {
+          "type": "file",
+          "path": "WVM92.O",
+          "offset": "0x66"
+        },
+        {
+          "type": "file",
+          "path": "WVM93.O",
+          "offset": "0x67"
+        },
+        {
+          "type": "file",
+          "path": "WVM96.O",
+          "offset": "0x68"
+        },
+        {
+          "type": "file",
+          "path": "WVM97.O",
+          "offset": "0x69"
+        },
+        {
+          "type": "shell",
+          "path": "NA",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "NLP_HOOT",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "WVM02.O"
+        },
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "WVM03.O"
+        },
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "WVM04.O"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "WVM05.O"
+        },
+        {
+          "kind": "title",
+          "code": "0x14",
+          "title": "WVM06.O"
+        },
+        {
+          "kind": "title",
+          "code": "0x15",
+          "title": "WVM07.O"
+        },
+        {
+          "kind": "title",
+          "code": "0x16",
+          "title": "WVM08.O"
+        },
+        {
+          "kind": "title",
+          "code": "0x17",
+          "title": "WVM09.O"
+        },
+        {
+          "kind": "title",
+          "code": "0x18",
+          "title": "WVM10.O"
+        },
+        {
+          "kind": "title",
+          "code": "0x19",
+          "title": "WVM11.O"
+        },
+        {
+          "kind": "title",
+          "code": "0x1A",
+          "title": "WVM12.O"
+        },
+        {
+          "kind": "title",
+          "code": "0x1B",
+          "title": "WVM13.O"
+        },
+        {
+          "kind": "title",
+          "code": "0x1C",
+          "title": "WVM14.O"
+        },
+        {
+          "kind": "title",
+          "code": "0x1D",
+          "title": "WVM15.O"
+        },
+        {
+          "kind": "title",
+          "code": "0x1E",
+          "title": "WVM16.O"
+        },
+        {
+          "kind": "title",
+          "code": "0x1F",
+          "title": "WVM17.O"
+        },
+        {
+          "kind": "title",
+          "code": "0x20",
+          "title": "WVM19.O"
+        },
+        {
+          "kind": "title",
+          "code": "0x21",
+          "title": "WVM20.O"
+        },
+        {
+          "kind": "title",
+          "code": "0x22",
+          "title": "WVM201.O"
+        },
+        {
+          "kind": "title",
+          "code": "0x23",
+          "title": "WVM202.O"
+        },
+        {
+          "kind": "title",
+          "code": "0x24",
+          "title": "WVM203.O"
+        },
+        {
+          "kind": "title",
+          "code": "0x25",
+          "title": "WVM204.O"
+        },
+        {
+          "kind": "title",
+          "code": "0x26",
+          "title": "WVM206.O"
+        },
+        {
+          "kind": "title",
+          "code": "0x27",
+          "title": "WVM207.O"
+        },
+        {
+          "kind": "title",
+          "code": "0x28",
+          "title": "WVM208.O"
+        },
+        {
+          "kind": "title",
+          "code": "0x29",
+          "title": "WVM209.O"
+        },
+        {
+          "kind": "title",
+          "code": "0x2A",
+          "title": "WVM21.O"
+        },
+        {
+          "kind": "title",
+          "code": "0x2B",
+          "title": "WVM210.O"
+        },
+        {
+          "kind": "title",
+          "code": "0x2C",
+          "title": "WVM211.O"
+        },
+        {
+          "kind": "title",
+          "code": "0x2D",
+          "title": "WVM212.O"
+        },
+        {
+          "kind": "title",
+          "code": "0x2E",
+          "title": "WVM213.O"
+        },
+        {
+          "kind": "title",
+          "code": "0x2F",
+          "title": "WVM215.O"
+        },
+        {
+          "kind": "title",
+          "code": "0x30",
+          "title": "WVM216.O"
+        },
+        {
+          "kind": "title",
+          "code": "0x31",
+          "title": "WVM217.O"
+        },
+        {
+          "kind": "title",
+          "code": "0x32",
+          "title": "WVM218.O"
+        },
+        {
+          "kind": "title",
+          "code": "0x33",
+          "title": "WVM219.O"
+        },
+        {
+          "kind": "title",
+          "code": "0x34",
+          "title": "WVM22.O"
+        },
+        {
+          "kind": "title",
+          "code": "0x35",
+          "title": "WVM220.O"
+        },
+        {
+          "kind": "title",
+          "code": "0x36",
+          "title": "WVM23.O"
+        },
+        {
+          "kind": "title",
+          "code": "0x37",
+          "title": "WVM24.O"
+        },
+        {
+          "kind": "title",
+          "code": "0x38",
+          "title": "WVM25.O"
+        },
+        {
+          "kind": "title",
+          "code": "0x39",
+          "title": "WVM250.O"
+        },
+        {
+          "kind": "title",
+          "code": "0x3A",
+          "title": "WVM251.O"
+        },
+        {
+          "kind": "title",
+          "code": "0x3B",
+          "title": "WVM252.O"
+        },
+        {
+          "kind": "title",
+          "code": "0x3C",
+          "title": "WVM253.O"
+        },
+        {
+          "kind": "title",
+          "code": "0x3D",
+          "title": "WVM254.O"
+        },
+        {
+          "kind": "title",
+          "code": "0x3E",
+          "title": "WVM255.O"
+        },
+        {
+          "kind": "title",
+          "code": "0x3F",
+          "title": "WVM26.O"
+        },
+        {
+          "kind": "title",
+          "code": "0x40",
+          "title": "WVM27.O"
+        },
+        {
+          "kind": "title",
+          "code": "0x41",
+          "title": "WVM28.O"
+        },
+        {
+          "kind": "title",
+          "code": "0x42",
+          "title": "WVM29.O"
+        },
+        {
+          "kind": "title",
+          "code": "0x43",
+          "title": "WVM30.O"
+        },
+        {
+          "kind": "title",
+          "code": "0x44",
+          "title": "WVM32.O"
+        },
+        {
+          "kind": "title",
+          "code": "0x45",
+          "title": "WVM33.O"
+        },
+        {
+          "kind": "title",
+          "code": "0x46",
+          "title": "WVM34.O"
+        },
+        {
+          "kind": "title",
+          "code": "0x47",
+          "title": "WVM35.O"
+        },
+        {
+          "kind": "title",
+          "code": "0x48",
+          "title": "WVM40.O"
+        },
+        {
+          "kind": "title",
+          "code": "0x49",
+          "title": "WVM51.O"
+        },
+        {
+          "kind": "title",
+          "code": "0x4A",
+          "title": "WVM52.O"
+        },
+        {
+          "kind": "title",
+          "code": "0x4B",
+          "title": "WVM53.O"
+        },
+        {
+          "kind": "title",
+          "code": "0x4C",
+          "title": "WVM54.O"
+        },
+        {
+          "kind": "title",
+          "code": "0x4D",
+          "title": "WVM55.O"
+        },
+        {
+          "kind": "title",
+          "code": "0x4E",
+          "title": "WVM56.O"
+        },
+        {
+          "kind": "title",
+          "code": "0x4F",
+          "title": "WVM57.O"
+        },
+        {
+          "kind": "title",
+          "code": "0x50",
+          "title": "WVM58.O"
+        },
+        {
+          "kind": "title",
+          "code": "0x51",
+          "title": "WVM59.O"
+        },
+        {
+          "kind": "title",
+          "code": "0x52",
+          "title": "WVM60.O"
+        },
+        {
+          "kind": "title",
+          "code": "0x53",
+          "title": "WVM61.O"
+        },
+        {
+          "kind": "title",
+          "code": "0x54",
+          "title": "WVM71.O"
+        },
+        {
+          "kind": "title",
+          "code": "0x55",
+          "title": "WVM72.O"
+        },
+        {
+          "kind": "title",
+          "code": "0x56",
+          "title": "WVM73.O"
+        },
+        {
+          "kind": "title",
+          "code": "0x57",
+          "title": "WVM74.O"
+        },
+        {
+          "kind": "title",
+          "code": "0x58",
+          "title": "WVM75.O"
+        },
+        {
+          "kind": "title",
+          "code": "0x59",
+          "title": "WVM76.O"
+        },
+        {
+          "kind": "title",
+          "code": "0x5A",
+          "title": "WVM77.O"
+        },
+        {
+          "kind": "title",
+          "code": "0x5B",
+          "title": "WVM78.O"
+        },
+        {
+          "kind": "title",
+          "code": "0x5C",
+          "title": "WVM79.O"
+        },
+        {
+          "kind": "title",
+          "code": "0x5D",
+          "title": "WVM79_1.O"
+        },
+        {
+          "kind": "title",
+          "code": "0x5E",
+          "title": "WVM80.O"
+        },
+        {
+          "kind": "title",
+          "code": "0x5F",
+          "title": "WVM81.O"
+        },
+        {
+          "kind": "title",
+          "code": "0x60",
+          "title": "WVM82.O"
+        },
+        {
+          "kind": "title",
+          "code": "0x61",
+          "title": "WVM83.O"
+        },
+        {
+          "kind": "title",
+          "code": "0x62",
+          "title": "WVM84.O"
+        },
+        {
+          "kind": "title",
+          "code": "0x63",
+          "title": "WVM85.O"
+        },
+        {
+          "kind": "title",
+          "code": "0x64",
+          "title": "WVM90.O"
+        },
+        {
+          "kind": "title",
+          "code": "0x65",
+          "title": "WVM91.O"
+        },
+        {
+          "kind": "title",
+          "code": "0x66",
+          "title": "WVM92.O"
+        },
+        {
+          "kind": "title",
+          "code": "0x67",
+          "title": "WVM93.O"
+        },
+        {
+          "kind": "title",
+          "code": "0x68",
+          "title": "WVM96.O"
+        },
+        {
+          "kind": "title",
+          "code": "0x69",
+          "title": "WVM97.O"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/kss.xml",
+      "source_order": 3051,
+      "archive": "wa_v2_98",
+      "id": "wa-v2-98-opn"
+    },
+    {
+      "title": "[PC-9801] レッスルエンジェルスV3",
+      "driver": {
+        "name": "pc98dos",
+        "type": "opn",
+        "alias": "KSS",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "clockmul",
+          "value": "8"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "NA.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "NLP_HOOT.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "TONES.DTA",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "WVM02.O",
+          "offset": "0x10"
+        },
+        {
+          "type": "file",
+          "path": "WVM03.O",
+          "offset": "0x11"
+        },
+        {
+          "type": "file",
+          "path": "WVM04.O",
+          "offset": "0x12"
+        },
+        {
+          "type": "file",
+          "path": "WVM05.O",
+          "offset": "0x13"
+        },
+        {
+          "type": "file",
+          "path": "WVM06.O",
+          "offset": "0x14"
+        },
+        {
+          "type": "file",
+          "path": "WVM07.O",
+          "offset": "0x15"
+        },
+        {
+          "type": "file",
+          "path": "WVM08.O",
+          "offset": "0x16"
+        },
+        {
+          "type": "file",
+          "path": "WVM09.O",
+          "offset": "0x17"
+        },
+        {
+          "type": "file",
+          "path": "WVM10.O",
+          "offset": "0x18"
+        },
+        {
+          "type": "file",
+          "path": "WVM101.O",
+          "offset": "0x19"
+        },
+        {
+          "type": "file",
+          "path": "WVM102.O",
+          "offset": "0x1A"
+        },
+        {
+          "type": "file",
+          "path": "WVM103.O",
+          "offset": "0x1B"
+        },
+        {
+          "type": "file",
+          "path": "WVM104.O",
+          "offset": "0x1C"
+        },
+        {
+          "type": "file",
+          "path": "WVM105.O",
+          "offset": "0x1D"
+        },
+        {
+          "type": "file",
+          "path": "WVM106.O",
+          "offset": "0x1E"
+        },
+        {
+          "type": "file",
+          "path": "WVM107.O",
+          "offset": "0x1F"
+        },
+        {
+          "type": "file",
+          "path": "WVM108.O",
+          "offset": "0x20"
+        },
+        {
+          "type": "file",
+          "path": "WVM109.O",
+          "offset": "0x21"
+        },
+        {
+          "type": "file",
+          "path": "WVM11.O",
+          "offset": "0x22"
+        },
+        {
+          "type": "file",
+          "path": "WVM110.O",
+          "offset": "0x23"
+        },
+        {
+          "type": "file",
+          "path": "WVM111.O",
+          "offset": "0x24"
+        },
+        {
+          "type": "file",
+          "path": "WVM112.O",
+          "offset": "0x25"
+        },
+        {
+          "type": "file",
+          "path": "WVM113.O",
+          "offset": "0x26"
+        },
+        {
+          "type": "file",
+          "path": "WVM114.O",
+          "offset": "0x27"
+        },
+        {
+          "type": "file",
+          "path": "WVM115.O",
+          "offset": "0x28"
+        },
+        {
+          "type": "file",
+          "path": "WVM116.O",
+          "offset": "0x29"
+        },
+        {
+          "type": "file",
+          "path": "WVM117.O",
+          "offset": "0x2A"
+        },
+        {
+          "type": "file",
+          "path": "WVM118.O",
+          "offset": "0x2B"
+        },
+        {
+          "type": "file",
+          "path": "WVM119.O",
+          "offset": "0x2C"
+        },
+        {
+          "type": "file",
+          "path": "WVM12.O",
+          "offset": "0x2D"
+        },
+        {
+          "type": "file",
+          "path": "WVM120.O",
+          "offset": "0x2E"
+        },
+        {
+          "type": "file",
+          "path": "WVM121.O",
+          "offset": "0x2F"
+        },
+        {
+          "type": "file",
+          "path": "WVM122.O",
+          "offset": "0x30"
+        },
+        {
+          "type": "file",
+          "path": "WVM123.O",
+          "offset": "0x31"
+        },
+        {
+          "type": "file",
+          "path": "WVM124.O",
+          "offset": "0x32"
+        },
+        {
+          "type": "file",
+          "path": "WVM125.O",
+          "offset": "0x33"
+        },
+        {
+          "type": "file",
+          "path": "WVM13.O",
+          "offset": "0x34"
+        },
+        {
+          "type": "file",
+          "path": "WVM14.O",
+          "offset": "0x35"
+        },
+        {
+          "type": "file",
+          "path": "WVM15.O",
+          "offset": "0x36"
+        },
+        {
+          "type": "file",
+          "path": "WVM16.O",
+          "offset": "0x37"
+        },
+        {
+          "type": "file",
+          "path": "WVM17.O",
+          "offset": "0x38"
+        },
+        {
+          "type": "file",
+          "path": "WVM19.O",
+          "offset": "0x39"
+        },
+        {
+          "type": "file",
+          "path": "WVM20.O",
+          "offset": "0x3A"
+        },
+        {
+          "type": "file",
+          "path": "WVM201.O",
+          "offset": "0x3B"
+        },
+        {
+          "type": "file",
+          "path": "WVM202.O",
+          "offset": "0x3C"
+        },
+        {
+          "type": "file",
+          "path": "WVM203.O",
+          "offset": "0x3D"
+        },
+        {
+          "type": "file",
+          "path": "WVM204.O",
+          "offset": "0x3E"
+        },
+        {
+          "type": "file",
+          "path": "WVM206.O",
+          "offset": "0x3F"
+        },
+        {
+          "type": "file",
+          "path": "WVM207.O",
+          "offset": "0x40"
+        },
+        {
+          "type": "file",
+          "path": "WVM208.O",
+          "offset": "0x41"
+        },
+        {
+          "type": "file",
+          "path": "WVM209.O",
+          "offset": "0x42"
+        },
+        {
+          "type": "file",
+          "path": "WVM21.O",
+          "offset": "0x43"
+        },
+        {
+          "type": "file",
+          "path": "WVM210.O",
+          "offset": "0x44"
+        },
+        {
+          "type": "file",
+          "path": "WVM211.O",
+          "offset": "0x45"
+        },
+        {
+          "type": "file",
+          "path": "WVM212.O",
+          "offset": "0x46"
+        },
+        {
+          "type": "file",
+          "path": "WVM213.O",
+          "offset": "0x47"
+        },
+        {
+          "type": "file",
+          "path": "WVM215.O",
+          "offset": "0x48"
+        },
+        {
+          "type": "file",
+          "path": "WVM216.O",
+          "offset": "0x49"
+        },
+        {
+          "type": "file",
+          "path": "WVM217.O",
+          "offset": "0x4A"
+        },
+        {
+          "type": "file",
+          "path": "WVM218.O",
+          "offset": "0x4B"
+        },
+        {
+          "type": "file",
+          "path": "WVM219.O",
+          "offset": "0x4C"
+        },
+        {
+          "type": "file",
+          "path": "WVM22.O",
+          "offset": "0x4D"
+        },
+        {
+          "type": "file",
+          "path": "WVM220.O",
+          "offset": "0x4E"
+        },
+        {
+          "type": "file",
+          "path": "WVM23.O",
+          "offset": "0x4F"
+        },
+        {
+          "type": "file",
+          "path": "WVM24.O",
+          "offset": "0x50"
+        },
+        {
+          "type": "file",
+          "path": "WVM25.O",
+          "offset": "0x51"
+        },
+        {
+          "type": "file",
+          "path": "WVM250.O",
+          "offset": "0x52"
+        },
+        {
+          "type": "file",
+          "path": "WVM251.O",
+          "offset": "0x53"
+        },
+        {
+          "type": "file",
+          "path": "WVM252.O",
+          "offset": "0x54"
+        },
+        {
+          "type": "file",
+          "path": "WVM253.O",
+          "offset": "0x55"
+        },
+        {
+          "type": "file",
+          "path": "WVM254.O",
+          "offset": "0x56"
+        },
+        {
+          "type": "file",
+          "path": "WVM255.O",
+          "offset": "0x57"
+        },
+        {
+          "type": "file",
+          "path": "WVM26.O",
+          "offset": "0x58"
+        },
+        {
+          "type": "file",
+          "path": "WVM27.O",
+          "offset": "0x59"
+        },
+        {
+          "type": "file",
+          "path": "WVM28.O",
+          "offset": "0x5A"
+        },
+        {
+          "type": "file",
+          "path": "WVM29.O",
+          "offset": "0x5B"
+        },
+        {
+          "type": "file",
+          "path": "WVM30.O",
+          "offset": "0x5C"
+        },
+        {
+          "type": "file",
+          "path": "WVM32.O",
+          "offset": "0x5D"
+        },
+        {
+          "type": "file",
+          "path": "WVM33.O",
+          "offset": "0x5E"
+        },
+        {
+          "type": "file",
+          "path": "WVM34.O",
+          "offset": "0x5F"
+        },
+        {
+          "type": "file",
+          "path": "WVM35.O",
+          "offset": "0x60"
+        },
+        {
+          "type": "file",
+          "path": "WVM40.O",
+          "offset": "0x61"
+        },
+        {
+          "type": "file",
+          "path": "WVM51.O",
+          "offset": "0x62"
+        },
+        {
+          "type": "file",
+          "path": "WVM52.O",
+          "offset": "0x63"
+        },
+        {
+          "type": "file",
+          "path": "WVM53.O",
+          "offset": "0x64"
+        },
+        {
+          "type": "file",
+          "path": "WVM54.O",
+          "offset": "0x65"
+        },
+        {
+          "type": "file",
+          "path": "WVM55.O",
+          "offset": "0x66"
+        },
+        {
+          "type": "file",
+          "path": "WVM56.O",
+          "offset": "0x67"
+        },
+        {
+          "type": "file",
+          "path": "WVM57.O",
+          "offset": "0x68"
+        },
+        {
+          "type": "file",
+          "path": "WVM58.O",
+          "offset": "0x69"
+        },
+        {
+          "type": "file",
+          "path": "WVM59.O",
+          "offset": "0x6A"
+        },
+        {
+          "type": "file",
+          "path": "WVM60.O",
+          "offset": "0x6B"
+        },
+        {
+          "type": "file",
+          "path": "WVM61.O",
+          "offset": "0x6C"
+        },
+        {
+          "type": "file",
+          "path": "WVM71.O",
+          "offset": "0x6D"
+        },
+        {
+          "type": "file",
+          "path": "WVM72.O",
+          "offset": "0x6E"
+        },
+        {
+          "type": "file",
+          "path": "WVM73.O",
+          "offset": "0x6F"
+        },
+        {
+          "type": "file",
+          "path": "WVM74.O",
+          "offset": "0x70"
+        },
+        {
+          "type": "file",
+          "path": "WVM75.O",
+          "offset": "0x71"
+        },
+        {
+          "type": "file",
+          "path": "WVM76.O",
+          "offset": "0x72"
+        },
+        {
+          "type": "file",
+          "path": "WVM77.O",
+          "offset": "0x73"
+        },
+        {
+          "type": "file",
+          "path": "WVM78.O",
+          "offset": "0x74"
+        },
+        {
+          "type": "file",
+          "path": "WVM79.O",
+          "offset": "0x75"
+        },
+        {
+          "type": "file",
+          "path": "WVM79_1.O",
+          "offset": "0x76"
+        },
+        {
+          "type": "file",
+          "path": "WVM80.O",
+          "offset": "0x77"
+        },
+        {
+          "type": "file",
+          "path": "WVM81.O",
+          "offset": "0x78"
+        },
+        {
+          "type": "file",
+          "path": "WVM82.O",
+          "offset": "0x79"
+        },
+        {
+          "type": "file",
+          "path": "WVM83.O",
+          "offset": "0x7A"
+        },
+        {
+          "type": "file",
+          "path": "WVM84.O",
+          "offset": "0x7B"
+        },
+        {
+          "type": "file",
+          "path": "WVM85.O",
+          "offset": "0x7C"
+        },
+        {
+          "type": "file",
+          "path": "WVM90.O",
+          "offset": "0x7D"
+        },
+        {
+          "type": "file",
+          "path": "WVM91.O",
+          "offset": "0x7E"
+        },
+        {
+          "type": "file",
+          "path": "WVM92.O",
+          "offset": "0x7F"
+        },
+        {
+          "type": "file",
+          "path": "WVM93.O",
+          "offset": "0x80"
+        },
+        {
+          "type": "file",
+          "path": "WVM96.O",
+          "offset": "0x81"
+        },
+        {
+          "type": "file",
+          "path": "WVM97.O",
+          "offset": "0x82"
+        },
+        {
+          "type": "shell",
+          "path": "NA -Z1 -FI",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "NLP_HOOT",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "WVM02.O"
+        },
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "WVM03.O"
+        },
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "WVM04.O"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "WVM05.O"
+        },
+        {
+          "kind": "title",
+          "code": "0x14",
+          "title": "WVM06.O"
+        },
+        {
+          "kind": "title",
+          "code": "0x15",
+          "title": "WVM07.O"
+        },
+        {
+          "kind": "title",
+          "code": "0x16",
+          "title": "WVM08.O"
+        },
+        {
+          "kind": "title",
+          "code": "0x17",
+          "title": "WVM09.O"
+        },
+        {
+          "kind": "title",
+          "code": "0x18",
+          "title": "WVM10.O"
+        },
+        {
+          "kind": "title",
+          "code": "0x19",
+          "title": "WVM101.O"
+        },
+        {
+          "kind": "title",
+          "code": "0x1A",
+          "title": "WVM102.O"
+        },
+        {
+          "kind": "title",
+          "code": "0x1B",
+          "title": "WVM103.O"
+        },
+        {
+          "kind": "title",
+          "code": "0x1C",
+          "title": "WVM104.O"
+        },
+        {
+          "kind": "title",
+          "code": "0x1D",
+          "title": "WVM105.O"
+        },
+        {
+          "kind": "title",
+          "code": "0x1E",
+          "title": "WVM106.O"
+        },
+        {
+          "kind": "title",
+          "code": "0x1F",
+          "title": "WVM107.O"
+        },
+        {
+          "kind": "title",
+          "code": "0x20",
+          "title": "WVM108.O"
+        },
+        {
+          "kind": "title",
+          "code": "0x21",
+          "title": "WVM109.O"
+        },
+        {
+          "kind": "title",
+          "code": "0x22",
+          "title": "WVM11.O"
+        },
+        {
+          "kind": "title",
+          "code": "0x23",
+          "title": "WVM110.O"
+        },
+        {
+          "kind": "title",
+          "code": "0x24",
+          "title": "WVM111.O"
+        },
+        {
+          "kind": "title",
+          "code": "0x25",
+          "title": "WVM112.O"
+        },
+        {
+          "kind": "title",
+          "code": "0x26",
+          "title": "WVM113.O"
+        },
+        {
+          "kind": "title",
+          "code": "0x27",
+          "title": "WVM114.O"
+        },
+        {
+          "kind": "title",
+          "code": "0x28",
+          "title": "WVM115.O"
+        },
+        {
+          "kind": "title",
+          "code": "0x29",
+          "title": "WVM116.O"
+        },
+        {
+          "kind": "title",
+          "code": "0x2A",
+          "title": "WVM117.O"
+        },
+        {
+          "kind": "title",
+          "code": "0x2B",
+          "title": "WVM118.O"
+        },
+        {
+          "kind": "title",
+          "code": "0x2C",
+          "title": "WVM119.O"
+        },
+        {
+          "kind": "title",
+          "code": "0x2D",
+          "title": "WVM12.O"
+        },
+        {
+          "kind": "title",
+          "code": "0x2E",
+          "title": "WVM120.O"
+        },
+        {
+          "kind": "title",
+          "code": "0x2F",
+          "title": "WVM121.O"
+        },
+        {
+          "kind": "title",
+          "code": "0x30",
+          "title": "WVM122.O"
+        },
+        {
+          "kind": "title",
+          "code": "0x31",
+          "title": "WVM123.O"
+        },
+        {
+          "kind": "title",
+          "code": "0x32",
+          "title": "WVM124.O"
+        },
+        {
+          "kind": "title",
+          "code": "0x33",
+          "title": "WVM125.O"
+        },
+        {
+          "kind": "title",
+          "code": "0x34",
+          "title": "WVM13.O"
+        },
+        {
+          "kind": "title",
+          "code": "0x35",
+          "title": "WVM14.O"
+        },
+        {
+          "kind": "title",
+          "code": "0x36",
+          "title": "WVM15.O"
+        },
+        {
+          "kind": "title",
+          "code": "0x37",
+          "title": "WVM16.O"
+        },
+        {
+          "kind": "title",
+          "code": "0x38",
+          "title": "WVM17.O"
+        },
+        {
+          "kind": "title",
+          "code": "0x39",
+          "title": "WVM19.O"
+        },
+        {
+          "kind": "title",
+          "code": "0x3A",
+          "title": "WVM20.O"
+        },
+        {
+          "kind": "title",
+          "code": "0x3B",
+          "title": "WVM201.O"
+        },
+        {
+          "kind": "title",
+          "code": "0x3C",
+          "title": "WVM202.O"
+        },
+        {
+          "kind": "title",
+          "code": "0x3D",
+          "title": "WVM203.O"
+        },
+        {
+          "kind": "title",
+          "code": "0x3E",
+          "title": "WVM204.O"
+        },
+        {
+          "kind": "title",
+          "code": "0x3F",
+          "title": "WVM206.O"
+        },
+        {
+          "kind": "title",
+          "code": "0x40",
+          "title": "WVM207.O"
+        },
+        {
+          "kind": "title",
+          "code": "0x41",
+          "title": "WVM208.O"
+        },
+        {
+          "kind": "title",
+          "code": "0x42",
+          "title": "WVM209.O"
+        },
+        {
+          "kind": "title",
+          "code": "0x43",
+          "title": "WVM21.O"
+        },
+        {
+          "kind": "title",
+          "code": "0x44",
+          "title": "WVM210.O"
+        },
+        {
+          "kind": "title",
+          "code": "0x45",
+          "title": "WVM211.O"
+        },
+        {
+          "kind": "title",
+          "code": "0x46",
+          "title": "WVM212.O"
+        },
+        {
+          "kind": "title",
+          "code": "0x47",
+          "title": "WVM213.O"
+        },
+        {
+          "kind": "title",
+          "code": "0x48",
+          "title": "WVM215.O"
+        },
+        {
+          "kind": "title",
+          "code": "0x49",
+          "title": "WVM216.O"
+        },
+        {
+          "kind": "title",
+          "code": "0x4A",
+          "title": "WVM217.O"
+        },
+        {
+          "kind": "title",
+          "code": "0x4B",
+          "title": "WVM218.O"
+        },
+        {
+          "kind": "title",
+          "code": "0x4C",
+          "title": "WVM219.O"
+        },
+        {
+          "kind": "title",
+          "code": "0x4D",
+          "title": "WVM22.O"
+        },
+        {
+          "kind": "title",
+          "code": "0x4E",
+          "title": "WVM220.O"
+        },
+        {
+          "kind": "title",
+          "code": "0x4F",
+          "title": "WVM23.O"
+        },
+        {
+          "kind": "title",
+          "code": "0x50",
+          "title": "WVM24.O"
+        },
+        {
+          "kind": "title",
+          "code": "0x51",
+          "title": "WVM25.O"
+        },
+        {
+          "kind": "title",
+          "code": "0x52",
+          "title": "WVM250.O"
+        },
+        {
+          "kind": "title",
+          "code": "0x53",
+          "title": "WVM251.O"
+        },
+        {
+          "kind": "title",
+          "code": "0x54",
+          "title": "WVM252.O"
+        },
+        {
+          "kind": "title",
+          "code": "0x55",
+          "title": "WVM253.O"
+        },
+        {
+          "kind": "title",
+          "code": "0x56",
+          "title": "WVM254.O"
+        },
+        {
+          "kind": "title",
+          "code": "0x57",
+          "title": "WVM255.O"
+        },
+        {
+          "kind": "title",
+          "code": "0x58",
+          "title": "WVM26.O"
+        },
+        {
+          "kind": "title",
+          "code": "0x59",
+          "title": "WVM27.O"
+        },
+        {
+          "kind": "title",
+          "code": "0x5A",
+          "title": "WVM28.O"
+        },
+        {
+          "kind": "title",
+          "code": "0x5B",
+          "title": "WVM29.O"
+        },
+        {
+          "kind": "title",
+          "code": "0x5C",
+          "title": "WVM30.O"
+        },
+        {
+          "kind": "title",
+          "code": "0x5D",
+          "title": "WVM32.O"
+        },
+        {
+          "kind": "title",
+          "code": "0x5E",
+          "title": "WVM33.O"
+        },
+        {
+          "kind": "title",
+          "code": "0x5F",
+          "title": "WVM34.O"
+        },
+        {
+          "kind": "title",
+          "code": "0x60",
+          "title": "WVM35.O"
+        },
+        {
+          "kind": "title",
+          "code": "0x61",
+          "title": "WVM40.O"
+        },
+        {
+          "kind": "title",
+          "code": "0x62",
+          "title": "WVM51.O"
+        },
+        {
+          "kind": "title",
+          "code": "0x63",
+          "title": "WVM52.O"
+        },
+        {
+          "kind": "title",
+          "code": "0x64",
+          "title": "WVM53.O"
+        },
+        {
+          "kind": "title",
+          "code": "0x65",
+          "title": "WVM54.O"
+        },
+        {
+          "kind": "title",
+          "code": "0x66",
+          "title": "WVM55.O"
+        },
+        {
+          "kind": "title",
+          "code": "0x67",
+          "title": "WVM56.O"
+        },
+        {
+          "kind": "title",
+          "code": "0x68",
+          "title": "WVM57.O"
+        },
+        {
+          "kind": "title",
+          "code": "0x69",
+          "title": "WVM58.O"
+        },
+        {
+          "kind": "title",
+          "code": "0x6A",
+          "title": "WVM59.O"
+        },
+        {
+          "kind": "title",
+          "code": "0x6B",
+          "title": "WVM60.O"
+        },
+        {
+          "kind": "title",
+          "code": "0x6C",
+          "title": "WVM61.O"
+        },
+        {
+          "kind": "title",
+          "code": "0x6D",
+          "title": "WVM71.O"
+        },
+        {
+          "kind": "title",
+          "code": "0x6E",
+          "title": "WVM72.O"
+        },
+        {
+          "kind": "title",
+          "code": "0x6F",
+          "title": "WVM73.O"
+        },
+        {
+          "kind": "title",
+          "code": "0x70",
+          "title": "WVM74.O"
+        },
+        {
+          "kind": "title",
+          "code": "0x71",
+          "title": "WVM75.O"
+        },
+        {
+          "kind": "title",
+          "code": "0x72",
+          "title": "WVM76.O"
+        },
+        {
+          "kind": "title",
+          "code": "0x73",
+          "title": "WVM77.O"
+        },
+        {
+          "kind": "title",
+          "code": "0x74",
+          "title": "WVM78.O"
+        },
+        {
+          "kind": "title",
+          "code": "0x75",
+          "title": "WVM79.O"
+        },
+        {
+          "kind": "title",
+          "code": "0x76",
+          "title": "WVM79_1.O"
+        },
+        {
+          "kind": "title",
+          "code": "0x77",
+          "title": "WVM80.O"
+        },
+        {
+          "kind": "title",
+          "code": "0x78",
+          "title": "WVM81.O"
+        },
+        {
+          "kind": "title",
+          "code": "0x79",
+          "title": "WVM82.O"
+        },
+        {
+          "kind": "title",
+          "code": "0x7A",
+          "title": "WVM83.O"
+        },
+        {
+          "kind": "title",
+          "code": "0x7B",
+          "title": "WVM84.O"
+        },
+        {
+          "kind": "title",
+          "code": "0x7C",
+          "title": "WVM85.O"
+        },
+        {
+          "kind": "title",
+          "code": "0x7D",
+          "title": "WVM90.O"
+        },
+        {
+          "kind": "title",
+          "code": "0x7E",
+          "title": "WVM91.O"
+        },
+        {
+          "kind": "title",
+          "code": "0x7F",
+          "title": "WVM92.O"
+        },
+        {
+          "kind": "title",
+          "code": "0x80",
+          "title": "WVM93.O"
+        },
+        {
+          "kind": "title",
+          "code": "0x81",
+          "title": "WVM96.O"
+        },
+        {
+          "kind": "title",
+          "code": "0x82",
+          "title": "WVM97.O"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/kss.xml",
+      "source_order": 3052,
+      "archive": "wa_v3_98",
+      "id": "wa-v3-98-opn"
+    },
+    {
+      "title": "[PC-9801] 女子校制服物語",
+      "driver": {
+        "name": "pc98dos",
+        "type": "opn",
+        "alias": "KSS",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "clockmul",
+          "value": "8"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "NA.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "NLP_HOOT.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "TONES.DTA",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "NO01.O",
+          "offset": "0x10"
+        },
+        {
+          "type": "file",
+          "path": "NO02.O",
+          "offset": "0x11"
+        },
+        {
+          "type": "file",
+          "path": "NO03.O",
+          "offset": "0x12"
+        },
+        {
+          "type": "file",
+          "path": "NO04.O",
+          "offset": "0x13"
+        },
+        {
+          "type": "file",
+          "path": "NO05.O",
+          "offset": "0x14"
+        },
+        {
+          "type": "file",
+          "path": "NO06.O",
+          "offset": "0x15"
+        },
+        {
+          "type": "file",
+          "path": "NO07.O",
+          "offset": "0x16"
+        },
+        {
+          "type": "file",
+          "path": "NO08.O",
+          "offset": "0x17"
+        },
+        {
+          "type": "file",
+          "path": "NO09.O",
+          "offset": "0x18"
+        },
+        {
+          "type": "file",
+          "path": "NO10.O",
+          "offset": "0x19"
+        },
+        {
+          "type": "file",
+          "path": "NO11.O",
+          "offset": "0x1A"
+        },
+        {
+          "type": "file",
+          "path": "NO12.O",
+          "offset": "0x1B"
+        },
+        {
+          "type": "file",
+          "path": "NO13.O",
+          "offset": "0x1C"
+        },
+        {
+          "type": "file",
+          "path": "NO14.O",
+          "offset": "0x1D"
+        },
+        {
+          "type": "file",
+          "path": "NO15.O",
+          "offset": "0x1E"
+        },
+        {
+          "type": "file",
+          "path": "NO16.O",
+          "offset": "0x1F"
+        },
+        {
+          "type": "file",
+          "path": "NO17.O",
+          "offset": "0x20"
+        },
+        {
+          "type": "file",
+          "path": "NO18.O",
+          "offset": "0x21"
+        },
+        {
+          "type": "shell",
+          "path": "NA",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "NLP_HOOT",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "NO01.O"
+        },
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "NO02.O"
+        },
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "NO03.O"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "NO04.O"
+        },
+        {
+          "kind": "title",
+          "code": "0x14",
+          "title": "NO05.O"
+        },
+        {
+          "kind": "title",
+          "code": "0x15",
+          "title": "NO06.O"
+        },
+        {
+          "kind": "title",
+          "code": "0x16",
+          "title": "NO07.O"
+        },
+        {
+          "kind": "title",
+          "code": "0x17",
+          "title": "NO08.O"
+        },
+        {
+          "kind": "title",
+          "code": "0x18",
+          "title": "NO09.O"
+        },
+        {
+          "kind": "title",
+          "code": "0x19",
+          "title": "NO10.O"
+        },
+        {
+          "kind": "title",
+          "code": "0x1A",
+          "title": "NO11.O"
+        },
+        {
+          "kind": "title",
+          "code": "0x1B",
+          "title": "NO12.O"
+        },
+        {
+          "kind": "title",
+          "code": "0x1C",
+          "title": "NO13.O"
+        },
+        {
+          "kind": "title",
+          "code": "0x1D",
+          "title": "NO14.O"
+        },
+        {
+          "kind": "title",
+          "code": "0x1E",
+          "title": "NO15.O"
+        },
+        {
+          "kind": "title",
+          "code": "0x1F",
+          "title": "NO16.O"
+        },
+        {
+          "kind": "title",
+          "code": "0x20",
+          "title": "NO17.O"
+        },
+        {
+          "kind": "title",
+          "code": "0x21",
+          "title": "NO18.O"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/kss.xml",
+      "source_order": 3053,
+      "archive": "seifuku_98",
+      "id": "seifuku-98-opn"
+    },
+    {
+      "title": "[PC-9801] 竜機伝承 -ドラグーン-(OPN)",
+      "driver": {
+        "name": "pc98dos",
+        "type": "opn",
+        "alias": "KSS",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "clockmul",
+          "value": "8"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "hhd.com",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "hhd_98.com",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "BGM0001.HMD",
+          "offset": "1"
+        },
+        {
+          "type": "file",
+          "path": "BGM0002.HMD",
+          "offset": "2"
+        },
+        {
+          "type": "file",
+          "path": "BGM0003.HMD",
+          "offset": "3"
+        },
+        {
+          "type": "file",
+          "path": "BGM0004.HMD",
+          "offset": "4"
+        },
+        {
+          "type": "file",
+          "path": "BGM0005.HMD",
+          "offset": "5"
+        },
+        {
+          "type": "file",
+          "path": "BGM0006.HMD",
+          "offset": "6"
+        },
+        {
+          "type": "file",
+          "path": "BGM0007.HMD",
+          "offset": "7"
+        },
+        {
+          "type": "file",
+          "path": "BGM0008.HMD",
+          "offset": "8"
+        },
+        {
+          "type": "file",
+          "path": "BGM0009.HMD",
+          "offset": "9"
+        },
+        {
+          "type": "file",
+          "path": "BGM0010.HMD",
+          "offset": "10"
+        },
+        {
+          "type": "file",
+          "path": "BGM0011.HMD",
+          "offset": "11"
+        },
+        {
+          "type": "file",
+          "path": "BGM0012.HMD",
+          "offset": "12"
+        },
+        {
+          "type": "file",
+          "path": "BGM0013.HMD",
+          "offset": "13"
+        },
+        {
+          "type": "file",
+          "path": "BGM0014.HMD",
+          "offset": "14"
+        },
+        {
+          "type": "file",
+          "path": "BGM0015.HMD",
+          "offset": "15"
+        },
+        {
+          "type": "file",
+          "path": "BGM0016.HMD",
+          "offset": "16"
+        },
+        {
+          "type": "file",
+          "path": "BGM0017.HMD",
+          "offset": "17"
+        },
+        {
+          "type": "file",
+          "path": "BGM0018.HMD",
+          "offset": "18"
+        },
+        {
+          "type": "file",
+          "path": "BGM0019.HMD",
+          "offset": "19"
+        },
+        {
+          "type": "file",
+          "path": "BGM0020.HMD",
+          "offset": "20"
+        },
+        {
+          "type": "file",
+          "path": "BGM0021.HMD",
+          "offset": "21"
+        },
+        {
+          "type": "file",
+          "path": "BGM0022.HMD",
+          "offset": "22"
+        },
+        {
+          "type": "file",
+          "path": "BGM0023.HMD",
+          "offset": "23"
+        },
+        {
+          "type": "file",
+          "path": "BGM0024.HMD",
+          "offset": "24"
+        },
+        {
+          "type": "file",
+          "path": "BGM0025.HMD",
+          "offset": "25"
+        },
+        {
+          "type": "file",
+          "path": "BGM0026.HMD",
+          "offset": "26"
+        },
+        {
+          "type": "file",
+          "path": "BGM0027.HMD",
+          "offset": "27"
+        },
+        {
+          "type": "file",
+          "path": "BGM0028.HMD",
+          "offset": "28"
+        },
+        {
+          "type": "shell",
+          "path": "hhd /M8 /E0 /S",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "hhd_98",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "1",
+          "title": "BGM0001.HMD : 雪の降る村"
+        },
+        {
+          "kind": "title",
+          "code": "2",
+          "title": "BGM0002.HMD : 賑わう街角"
+        },
+        {
+          "kind": "title",
+          "code": "3",
+          "title": "BGM0003.HMD : 沈む町並み"
+        },
+        {
+          "kind": "title",
+          "code": "4",
+          "title": "BGM0004.HMD : 王宮のメロディ"
+        },
+        {
+          "kind": "title",
+          "code": "5",
+          "title": "BGM0005.HMD : 軍事帝国ガルバード"
+        },
+        {
+          "kind": "title",
+          "code": "6",
+          "title": "BGM0006.HMD : 蒼竜の神殿"
+        },
+        {
+          "kind": "title",
+          "code": "7",
+          "title": "BGM0007.HMD : 未知の洞窟"
+        },
+        {
+          "kind": "title",
+          "code": "8",
+          "title": "BGM0008.HMD : 旅立ちの唄"
+        },
+        {
+          "kind": "title",
+          "code": "9",
+          "title": "BGM0009.HMD : レジスタンス"
+        },
+        {
+          "kind": "title",
+          "code": "10",
+          "title": "BGM0010.HMD : BATTLE!"
+        },
+        {
+          "kind": "title",
+          "code": "11",
+          "title": "BGM0011.HMD : 解放への一歩"
+        },
+        {
+          "kind": "title",
+          "code": "12",
+          "title": "BGM0012.HMD : 強大なる敵"
+        },
+        {
+          "kind": "title",
+          "code": "13",
+          "title": "BGM0013.HMD : 未知なる戦い"
+        },
+        {
+          "kind": "title",
+          "code": "14",
+          "title": "BGM0014.HMD : 動き出す伝説"
+        },
+        {
+          "kind": "title",
+          "code": "15",
+          "title": "BGM0015.HMD : 竜機伝承"
+        },
+        {
+          "kind": "title",
+          "code": "16",
+          "title": "BGM0016.HMD : ミュウのテーマ"
+        },
+        {
+          "kind": "title",
+          "code": "17",
+          "title": "BGM0017.HMD : ミュウのテーマ2"
+        },
+        {
+          "kind": "title",
+          "code": "18",
+          "title": "BGM0018.HMD : 時を越えて"
+        },
+        {
+          "kind": "title",
+          "code": "19",
+          "title": "BGM0019.HMD : それぞれの未来"
+        },
+        {
+          "kind": "title",
+          "code": "20",
+          "title": "BGM0020.HMD : エンディング"
+        },
+        {
+          "kind": "title",
+          "code": "21",
+          "title": "BGM0021.HMD : 竜機伝承のテーマ2"
+        },
+        {
+          "kind": "title",
+          "code": "22",
+          "title": "BGM0022.HMD : 悲しみにくれて"
+        },
+        {
+          "kind": "title",
+          "code": "23",
+          "title": "BGM0023.HMD : 楽しいひととき"
+        },
+        {
+          "kind": "title",
+          "code": "24",
+          "title": "BGM0024.HMD : 時にはしくじる時もある"
+        },
+        {
+          "kind": "title",
+          "code": "25",
+          "title": "BGM0025.HMD : ラブストーリー"
+        },
+        {
+          "kind": "title",
+          "code": "26",
+          "title": "BGM0026.HMD : ファンファーレ"
+        },
+        {
+          "kind": "title",
+          "code": "27",
+          "title": "BGM0027.HMD : ファンファーレ2"
+        },
+        {
+          "kind": "title",
+          "code": "28",
+          "title": "BGM0028.HMD : 軍事帝国ガルバード帝国"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/kss.xml",
+      "source_order": 3054,
+      "archive": "dragoon_98",
+      "id": "dragoon-98-opn"
+    },
+    {
+      "title": "[PC-9801] 竜機伝承 -ドラグーン-(OPNA)",
+      "driver": {
+        "name": "pc98dos",
+        "type": "opna",
+        "alias": "KSS",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "clockmul",
+          "value": "8"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "hhd.com",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "hhd_98.com",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "BGM0001.HMD",
+          "offset": "1"
+        },
+        {
+          "type": "file",
+          "path": "BGM0002.HMD",
+          "offset": "2"
+        },
+        {
+          "type": "file",
+          "path": "BGM0003.HMD",
+          "offset": "3"
+        },
+        {
+          "type": "file",
+          "path": "BGM0004.HMD",
+          "offset": "4"
+        },
+        {
+          "type": "file",
+          "path": "BGM0005.HMD",
+          "offset": "5"
+        },
+        {
+          "type": "file",
+          "path": "BGM0006.HMD",
+          "offset": "6"
+        },
+        {
+          "type": "file",
+          "path": "BGM0007.HMD",
+          "offset": "7"
+        },
+        {
+          "type": "file",
+          "path": "BGM0008.HMD",
+          "offset": "8"
+        },
+        {
+          "type": "file",
+          "path": "BGM0009.HMD",
+          "offset": "9"
+        },
+        {
+          "type": "file",
+          "path": "BGM0010.HMD",
+          "offset": "10"
+        },
+        {
+          "type": "file",
+          "path": "BGM0011.HMD",
+          "offset": "11"
+        },
+        {
+          "type": "file",
+          "path": "BGM0012.HMD",
+          "offset": "12"
+        },
+        {
+          "type": "file",
+          "path": "BGM0013.HMD",
+          "offset": "13"
+        },
+        {
+          "type": "file",
+          "path": "BGM0014.HMD",
+          "offset": "14"
+        },
+        {
+          "type": "file",
+          "path": "BGM0015.HMD",
+          "offset": "15"
+        },
+        {
+          "type": "file",
+          "path": "BGM0016.HMD",
+          "offset": "16"
+        },
+        {
+          "type": "file",
+          "path": "BGM0017.HMD",
+          "offset": "17"
+        },
+        {
+          "type": "file",
+          "path": "BGM0018.HMD",
+          "offset": "18"
+        },
+        {
+          "type": "file",
+          "path": "BGM0019.HMD",
+          "offset": "19"
+        },
+        {
+          "type": "file",
+          "path": "BGM0020.HMD",
+          "offset": "20"
+        },
+        {
+          "type": "file",
+          "path": "BGM0021.HMD",
+          "offset": "21"
+        },
+        {
+          "type": "file",
+          "path": "BGM0022.HMD",
+          "offset": "22"
+        },
+        {
+          "type": "file",
+          "path": "BGM0023.HMD",
+          "offset": "23"
+        },
+        {
+          "type": "file",
+          "path": "BGM0024.HMD",
+          "offset": "24"
+        },
+        {
+          "type": "file",
+          "path": "BGM0025.HMD",
+          "offset": "25"
+        },
+        {
+          "type": "file",
+          "path": "BGM0026.HMD",
+          "offset": "26"
+        },
+        {
+          "type": "file",
+          "path": "BGM0027.HMD",
+          "offset": "27"
+        },
+        {
+          "type": "file",
+          "path": "BGM0028.HMD",
+          "offset": "28"
+        },
+        {
+          "type": "shell",
+          "path": "hhd /M8 /E0 /S",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "hhd_98",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "1",
+          "title": "BGM0001.HMD : 雪の降る村"
+        },
+        {
+          "kind": "title",
+          "code": "2",
+          "title": "BGM0002.HMD : 賑わう街角"
+        },
+        {
+          "kind": "title",
+          "code": "3",
+          "title": "BGM0003.HMD : 沈む町並み"
+        },
+        {
+          "kind": "title",
+          "code": "4",
+          "title": "BGM0004.HMD : 王宮のメロディ"
+        },
+        {
+          "kind": "title",
+          "code": "5",
+          "title": "BGM0005.HMD : 軍事帝国ガルバード"
+        },
+        {
+          "kind": "title",
+          "code": "6",
+          "title": "BGM0006.HMD : 蒼竜の神殿"
+        },
+        {
+          "kind": "title",
+          "code": "7",
+          "title": "BGM0007.HMD : 未知の洞窟"
+        },
+        {
+          "kind": "title",
+          "code": "8",
+          "title": "BGM0008.HMD : 旅立ちの唄"
+        },
+        {
+          "kind": "title",
+          "code": "9",
+          "title": "BGM0009.HMD : レジスタンス"
+        },
+        {
+          "kind": "title",
+          "code": "10",
+          "title": "BGM0010.HMD : BATTLE!"
+        },
+        {
+          "kind": "title",
+          "code": "11",
+          "title": "BGM0011.HMD : 解放への一歩"
+        },
+        {
+          "kind": "title",
+          "code": "12",
+          "title": "BGM0012.HMD : 強大なる敵"
+        },
+        {
+          "kind": "title",
+          "code": "13",
+          "title": "BGM0013.HMD : 未知なる戦い"
+        },
+        {
+          "kind": "title",
+          "code": "14",
+          "title": "BGM0014.HMD : 動き出す伝説"
+        },
+        {
+          "kind": "title",
+          "code": "15",
+          "title": "BGM0015.HMD : 竜機伝承"
+        },
+        {
+          "kind": "title",
+          "code": "16",
+          "title": "BGM0016.HMD : ミュウのテーマ"
+        },
+        {
+          "kind": "title",
+          "code": "17",
+          "title": "BGM0017.HMD : ミュウのテーマ2"
+        },
+        {
+          "kind": "title",
+          "code": "18",
+          "title": "BGM0018.HMD : 時を越えて"
+        },
+        {
+          "kind": "title",
+          "code": "19",
+          "title": "BGM0019.HMD : それぞれの未来"
+        },
+        {
+          "kind": "title",
+          "code": "20",
+          "title": "BGM0020.HMD : エンディング"
+        },
+        {
+          "kind": "title",
+          "code": "21",
+          "title": "BGM0021.HMD : 竜機伝承のテーマ2"
+        },
+        {
+          "kind": "title",
+          "code": "22",
+          "title": "BGM0022.HMD : 悲しみにくれて"
+        },
+        {
+          "kind": "title",
+          "code": "23",
+          "title": "BGM0023.HMD : 楽しいひととき"
+        },
+        {
+          "kind": "title",
+          "code": "24",
+          "title": "BGM0024.HMD : 時にはしくじる時もある"
+        },
+        {
+          "kind": "title",
+          "code": "25",
+          "title": "BGM0025.HMD : ラブストーリー"
+        },
+        {
+          "kind": "title",
+          "code": "26",
+          "title": "BGM0026.HMD : ファンファーレ"
+        },
+        {
+          "kind": "title",
+          "code": "27",
+          "title": "BGM0027.HMD : ファンファーレ2"
+        },
+        {
+          "kind": "title",
+          "code": "28",
+          "title": "BGM0028.HMD : 軍事帝国ガルバード帝国"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/kss.xml",
+      "source_order": 3055,
+      "archive": "dragoon_98",
+      "id": "dragoon-98-opna"
+    },
+    {
+      "title": "[PC-9801] 竜機伝承 -ドラグーン-(GM)",
+      "driver": {
+        "name": "pc98dos",
+        "type": "beep",
+        "alias": "KSS",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "clockmul",
+          "value": "4"
+        },
+        {
+          "name": "midiout",
+          "value": "1"
+        },
+        {
+          "name": "midiout_type",
+          "value": "8"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "hhd_98.com",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "HMM.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "BGM0001.HMM",
+          "offset": "11"
+        },
+        {
+          "type": "file",
+          "path": "BGM0002.HMM",
+          "offset": "12"
+        },
+        {
+          "type": "file",
+          "path": "BGM0003.HMM",
+          "offset": "13"
+        },
+        {
+          "type": "file",
+          "path": "BGM0004.HMM",
+          "offset": "14"
+        },
+        {
+          "type": "file",
+          "path": "BGM0005.HMM",
+          "offset": "15"
+        },
+        {
+          "type": "file",
+          "path": "BGM0006.HMM",
+          "offset": "16"
+        },
+        {
+          "type": "file",
+          "path": "BGM0007.HMM",
+          "offset": "17"
+        },
+        {
+          "type": "file",
+          "path": "BGM0008.HMM",
+          "offset": "18"
+        },
+        {
+          "type": "file",
+          "path": "BGM0009.HMM",
+          "offset": "19"
+        },
+        {
+          "type": "file",
+          "path": "BGM0010.HMM",
+          "offset": "20"
+        },
+        {
+          "type": "file",
+          "path": "BGM0011.HMM",
+          "offset": "21"
+        },
+        {
+          "type": "file",
+          "path": "BGM0012.HMM",
+          "offset": "22"
+        },
+        {
+          "type": "file",
+          "path": "BGM0013.HMM",
+          "offset": "23"
+        },
+        {
+          "type": "file",
+          "path": "BGM0014.HMM",
+          "offset": "24"
+        },
+        {
+          "type": "file",
+          "path": "BGM0015.HMM",
+          "offset": "25"
+        },
+        {
+          "type": "file",
+          "path": "BGM0016.HMM",
+          "offset": "26"
+        },
+        {
+          "type": "file",
+          "path": "BGM0017.HMM",
+          "offset": "27"
+        },
+        {
+          "type": "file",
+          "path": "BGM0018.HMM",
+          "offset": "28"
+        },
+        {
+          "type": "file",
+          "path": "BGM0019.HMM",
+          "offset": "29"
+        },
+        {
+          "type": "file",
+          "path": "BGM0020.HMM",
+          "offset": "30"
+        },
+        {
+          "type": "file",
+          "path": "BGM0021.HMM",
+          "offset": "31"
+        },
+        {
+          "type": "file",
+          "path": "BGM0022.HMM",
+          "offset": "32"
+        },
+        {
+          "type": "file",
+          "path": "BGM0023.HMM",
+          "offset": "33"
+        },
+        {
+          "type": "file",
+          "path": "BGM0024.HMM",
+          "offset": "34"
+        },
+        {
+          "type": "file",
+          "path": "BGM0025.HMM",
+          "offset": "35"
+        },
+        {
+          "type": "file",
+          "path": "BGM0026.HMM",
+          "offset": "36"
+        },
+        {
+          "type": "file",
+          "path": "BGM0027.HMM",
+          "offset": "37"
+        },
+        {
+          "type": "file",
+          "path": "BGM0028.HMM",
+          "offset": "38"
+        },
+        {
+          "type": "shell",
+          "path": "hmm /M /B16",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "hhd_98",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "11",
+          "title": "BGM0001.HMM : 雪の降る村"
+        },
+        {
+          "kind": "title",
+          "code": "12",
+          "title": "BGM0002.HMM : 賑わう街角"
+        },
+        {
+          "kind": "title",
+          "code": "13",
+          "title": "BGM0003.HMM : 沈む町並み"
+        },
+        {
+          "kind": "title",
+          "code": "14",
+          "title": "BGM0004.HMM : 王宮のメロディ"
+        },
+        {
+          "kind": "title",
+          "code": "15",
+          "title": "BGM0005.HMM : 軍事帝国ガルバード"
+        },
+        {
+          "kind": "title",
+          "code": "16",
+          "title": "BGM0006.HMM : 蒼竜の神殿"
+        },
+        {
+          "kind": "title",
+          "code": "17",
+          "title": "BGM0007.HMM : 未知の洞窟"
+        },
+        {
+          "kind": "title",
+          "code": "18",
+          "title": "BGM0008.HMM : 旅立ちの唄"
+        },
+        {
+          "kind": "title",
+          "code": "19",
+          "title": "BGM0009.HMM : レジスタンス"
+        },
+        {
+          "kind": "title",
+          "code": "20",
+          "title": "BGM0010.HMM : BATTLE!"
+        },
+        {
+          "kind": "title",
+          "code": "21",
+          "title": "BGM0011.HMM : 解放への一歩"
+        },
+        {
+          "kind": "title",
+          "code": "22",
+          "title": "BGM0012.HMM : 強大なる敵"
+        },
+        {
+          "kind": "title",
+          "code": "23",
+          "title": "BGM0013.HMM : 未知なる戦い"
+        },
+        {
+          "kind": "title",
+          "code": "24",
+          "title": "BGM0014.HMM : 動き出す伝説"
+        },
+        {
+          "kind": "title",
+          "code": "25",
+          "title": "BGM0015.HMM : 竜機伝承"
+        },
+        {
+          "kind": "title",
+          "code": "26",
+          "title": "BGM0016.HMM : ミュウのテーマ"
+        },
+        {
+          "kind": "title",
+          "code": "27",
+          "title": "BGM0017.HMM : ミュウのテーマ2"
+        },
+        {
+          "kind": "title",
+          "code": "28",
+          "title": "BGM0018.HMM : 時を越えて"
+        },
+        {
+          "kind": "title",
+          "code": "29",
+          "title": "BGM0019.HMM : それぞれの未来"
+        },
+        {
+          "kind": "title",
+          "code": "30",
+          "title": "BGM0020.HMM : エンディング"
+        },
+        {
+          "kind": "title",
+          "code": "31",
+          "title": "BGM0021.HMM : 竜機伝承のテーマ2"
+        },
+        {
+          "kind": "title",
+          "code": "32",
+          "title": "BGM0022.HMM : 悲しみにくれて"
+        },
+        {
+          "kind": "title",
+          "code": "33",
+          "title": "BGM0023.HMM : 楽しいひととき"
+        },
+        {
+          "kind": "title",
+          "code": "34",
+          "title": "BGM0024.HMM : 時にはしくじる時もある"
+        },
+        {
+          "kind": "title",
+          "code": "35",
+          "title": "BGM0025.HMM : ラブストーリー"
+        },
+        {
+          "kind": "title",
+          "code": "36",
+          "title": "BGM0026.HMM : ファンファーレ"
+        },
+        {
+          "kind": "title",
+          "code": "37",
+          "title": "BGM0027.HMM : ファンファーレ2"
+        },
+        {
+          "kind": "title",
+          "code": "38",
+          "title": "BGM0028.HMM : 軍事帝国ガルバード帝国"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/kss.xml",
+      "source_order": 3056,
+      "archive": "dragoon_98",
+      "id": "dragoon-98-beep"
+    },
+    {
+      "title": "[PC-9801] なんば金融伝 ミナミの帝王",
+      "driver": {
+        "name": "pc98dos",
+        "type": "opn",
+        "alias": "KSS",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "clockmul",
+          "value": "8"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "NA.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "NLP_HOOT.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "TONES.DTA",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "M001.O",
+          "offset": "0x10"
+        },
+        {
+          "type": "file",
+          "path": "M002.O",
+          "offset": "0x11"
+        },
+        {
+          "type": "file",
+          "path": "M003.O",
+          "offset": "0x12"
+        },
+        {
+          "type": "file",
+          "path": "M004.O",
+          "offset": "0x13"
+        },
+        {
+          "type": "file",
+          "path": "M005.O",
+          "offset": "0x14"
+        },
+        {
+          "type": "file",
+          "path": "M006.O",
+          "offset": "0x15"
+        },
+        {
+          "type": "file",
+          "path": "M007.O",
+          "offset": "0x16"
+        },
+        {
+          "type": "file",
+          "path": "M008.O",
+          "offset": "0x17"
+        },
+        {
+          "type": "file",
+          "path": "M010.O",
+          "offset": "0x18"
+        },
+        {
+          "type": "file",
+          "path": "M011.O",
+          "offset": "0x19"
+        },
+        {
+          "type": "file",
+          "path": "M012.O",
+          "offset": "0x1a"
+        },
+        {
+          "type": "file",
+          "path": "M013.O",
+          "offset": "0x1b"
+        },
+        {
+          "type": "file",
+          "path": "M014.O",
+          "offset": "0x1c"
+        },
+        {
+          "type": "file",
+          "path": "M015.O",
+          "offset": "0x1d"
+        },
+        {
+          "type": "file",
+          "path": "M018.O",
+          "offset": "0x1e"
+        },
+        {
+          "type": "file",
+          "path": "M019.O",
+          "offset": "0x1f"
+        },
+        {
+          "type": "file",
+          "path": "M020.O",
+          "offset": "0x20"
+        },
+        {
+          "type": "file",
+          "path": "M021.O",
+          "offset": "0x21"
+        },
+        {
+          "type": "file",
+          "path": "M022.O",
+          "offset": "0x22"
+        },
+        {
+          "type": "file",
+          "path": "M023.O",
+          "offset": "0x23"
+        },
+        {
+          "type": "file",
+          "path": "M024.O",
+          "offset": "0x24"
+        },
+        {
+          "type": "file",
+          "path": "M025.O",
+          "offset": "0x25"
+        },
+        {
+          "type": "file",
+          "path": "M026.O",
+          "offset": "0x26"
+        },
+        {
+          "type": "file",
+          "path": "M028.O",
+          "offset": "0x27"
+        },
+        {
+          "type": "file",
+          "path": "M031.O",
+          "offset": "0x28"
+        },
+        {
+          "type": "file",
+          "path": "M033.O",
+          "offset": "0x29"
+        },
+        {
+          "type": "file",
+          "path": "M034.O",
+          "offset": "0x2a"
+        },
+        {
+          "type": "file",
+          "path": "M035.O",
+          "offset": "0x2b"
+        },
+        {
+          "type": "file",
+          "path": "M036.O",
+          "offset": "0x2c"
+        },
+        {
+          "type": "file",
+          "path": "M037.O",
+          "offset": "0x2d"
+        },
+        {
+          "type": "file",
+          "path": "M038.O",
+          "offset": "0x2e"
+        },
+        {
+          "type": "file",
+          "path": "M041.O",
+          "offset": "0x2f"
+        },
+        {
+          "type": "file",
+          "path": "M060.O",
+          "offset": "0x30"
+        },
+        {
+          "type": "file",
+          "path": "M100.O",
+          "offset": "0x31"
+        },
+        {
+          "type": "file",
+          "path": "M101.O",
+          "offset": "0x32"
+        },
+        {
+          "type": "file",
+          "path": "M102.O",
+          "offset": "0x33"
+        },
+        {
+          "type": "file",
+          "path": "M103.O",
+          "offset": "0x34"
+        },
+        {
+          "type": "file",
+          "path": "M104.O",
+          "offset": "0x35"
+        },
+        {
+          "type": "file",
+          "path": "M105.O",
+          "offset": "0x36"
+        },
+        {
+          "type": "file",
+          "path": "M106.O",
+          "offset": "0x37"
+        },
+        {
+          "type": "file",
+          "path": "M107.O",
+          "offset": "0x38"
+        },
+        {
+          "type": "file",
+          "path": "M108.O",
+          "offset": "0x39"
+        },
+        {
+          "type": "file",
+          "path": "M109.O",
+          "offset": "0x3a"
+        },
+        {
+          "type": "file",
+          "path": "M110.O",
+          "offset": "0x3b"
+        },
+        {
+          "type": "file",
+          "path": "M111.O",
+          "offset": "0x3c"
+        },
+        {
+          "type": "file",
+          "path": "M112.O",
+          "offset": "0x3d"
+        },
+        {
+          "type": "file",
+          "path": "M113.O",
+          "offset": "0x3e"
+        },
+        {
+          "type": "file",
+          "path": "M114.O",
+          "offset": "0x3f"
+        },
+        {
+          "type": "file",
+          "path": "M115.O",
+          "offset": "0x40"
+        },
+        {
+          "type": "file",
+          "path": "M116.O",
+          "offset": "0x41"
+        },
+        {
+          "type": "file",
+          "path": "M117.O",
+          "offset": "0x42"
+        },
+        {
+          "type": "file",
+          "path": "M118.O",
+          "offset": "0x43"
+        },
+        {
+          "type": "file",
+          "path": "M119.O",
+          "offset": "0x44"
+        },
+        {
+          "type": "file",
+          "path": "M120.O",
+          "offset": "0x45"
+        },
+        {
+          "type": "file",
+          "path": "M997.O",
+          "offset": "0x46"
+        },
+        {
+          "type": "file",
+          "path": "M998.O",
+          "offset": "0x47"
+        },
+        {
+          "type": "file",
+          "path": "M999.O",
+          "offset": "0x48"
+        },
+        {
+          "type": "shell",
+          "path": "na",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "nlp_hoot",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "M001.O :"
+        },
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "M002.O :"
+        },
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "M003.O :"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "M004.O :"
+        },
+        {
+          "kind": "title",
+          "code": "0x14",
+          "title": "M005.O :"
+        },
+        {
+          "kind": "title",
+          "code": "0x15",
+          "title": "M006.O :"
+        },
+        {
+          "kind": "title",
+          "code": "0x16",
+          "title": "M007.O :"
+        },
+        {
+          "kind": "title",
+          "code": "0x17",
+          "title": "M008.O :"
+        },
+        {
+          "kind": "title",
+          "code": "0x18",
+          "title": "M010.O :"
+        },
+        {
+          "kind": "title",
+          "code": "0x19",
+          "title": "M011.O :"
+        },
+        {
+          "kind": "title",
+          "code": "0x1a",
+          "title": "M012.O :"
+        },
+        {
+          "kind": "title",
+          "code": "0x1b",
+          "title": "M013.O :"
+        },
+        {
+          "kind": "title",
+          "code": "0x1c",
+          "title": "M014.O :"
+        },
+        {
+          "kind": "title",
+          "code": "0x1d",
+          "title": "M015.O :"
+        },
+        {
+          "kind": "title",
+          "code": "0x1e",
+          "title": "M018.O :"
+        },
+        {
+          "kind": "title",
+          "code": "0x1f",
+          "title": "M019.O :"
+        },
+        {
+          "kind": "title",
+          "code": "0x20",
+          "title": "M020.O :"
+        },
+        {
+          "kind": "title",
+          "code": "0x21",
+          "title": "M021.O :"
+        },
+        {
+          "kind": "title",
+          "code": "0x22",
+          "title": "M022.O :"
+        },
+        {
+          "kind": "title",
+          "code": "0x23",
+          "title": "M023.O :"
+        },
+        {
+          "kind": "title",
+          "code": "0x24",
+          "title": "M024.O :"
+        },
+        {
+          "kind": "title",
+          "code": "0x25",
+          "title": "M025.O :"
+        },
+        {
+          "kind": "title",
+          "code": "0x26",
+          "title": "M026.O :"
+        },
+        {
+          "kind": "title",
+          "code": "0x27",
+          "title": "M028.O :"
+        },
+        {
+          "kind": "title",
+          "code": "0x28",
+          "title": "M031.O :"
+        },
+        {
+          "kind": "title",
+          "code": "0x29",
+          "title": "M033.O :"
+        },
+        {
+          "kind": "title",
+          "code": "0x2a",
+          "title": "M034.O :"
+        },
+        {
+          "kind": "title",
+          "code": "0x2b",
+          "title": "M035.O :"
+        },
+        {
+          "kind": "title",
+          "code": "0x2c",
+          "title": "M036.O :"
+        },
+        {
+          "kind": "title",
+          "code": "0x2d",
+          "title": "M037.O :"
+        },
+        {
+          "kind": "title",
+          "code": "0x2e",
+          "title": "M038.O :"
+        },
+        {
+          "kind": "title",
+          "code": "0x2f",
+          "title": "M041.O :"
+        },
+        {
+          "kind": "title",
+          "code": "0x30",
+          "title": "M060.O : SE"
+        },
+        {
+          "kind": "title",
+          "code": "0x31",
+          "title": "M100.O : SE"
+        },
+        {
+          "kind": "title",
+          "code": "0x32",
+          "title": "M101.O :"
+        },
+        {
+          "kind": "title",
+          "code": "0x33",
+          "title": "M102.O :"
+        },
+        {
+          "kind": "title",
+          "code": "0x34",
+          "title": "M103.O :"
+        },
+        {
+          "kind": "title",
+          "code": "0x35",
+          "title": "M104.O : SE"
+        },
+        {
+          "kind": "title",
+          "code": "0x36",
+          "title": "M105.O : SE"
+        },
+        {
+          "kind": "title",
+          "code": "0x37",
+          "title": "M106.O : SE"
+        },
+        {
+          "kind": "title",
+          "code": "0x38",
+          "title": "M107.O : SE"
+        },
+        {
+          "kind": "title",
+          "code": "0x39",
+          "title": "M108.O : SE"
+        },
+        {
+          "kind": "title",
+          "code": "0x3a",
+          "title": "M109.O : SE"
+        },
+        {
+          "kind": "title",
+          "code": "0x3b",
+          "title": "M110.O : SE"
+        },
+        {
+          "kind": "title",
+          "code": "0x3c",
+          "title": "M111.O : SE"
+        },
+        {
+          "kind": "title",
+          "code": "0x3d",
+          "title": "M112.O : SE"
+        },
+        {
+          "kind": "title",
+          "code": "0x3e",
+          "title": "M113.O : SE"
+        },
+        {
+          "kind": "title",
+          "code": "0x3f",
+          "title": "M114.O : SE"
+        },
+        {
+          "kind": "title",
+          "code": "0x40",
+          "title": "M115.O : SE"
+        },
+        {
+          "kind": "title",
+          "code": "0x41",
+          "title": "M116.O : SE"
+        },
+        {
+          "kind": "title",
+          "code": "0x42",
+          "title": "M117.O : SE"
+        },
+        {
+          "kind": "title",
+          "code": "0x43",
+          "title": "M118.O : SE"
+        },
+        {
+          "kind": "title",
+          "code": "0x44",
+          "title": "M119.O : SE"
+        },
+        {
+          "kind": "title",
+          "code": "0x45",
+          "title": "M120.O : SE"
+        },
+        {
+          "kind": "title",
+          "code": "0x46",
+          "title": "M997.O : SE"
+        },
+        {
+          "kind": "title",
+          "code": "0x47",
+          "title": "M998.O : SE"
+        },
+        {
+          "kind": "title",
+          "code": "0x48",
+          "title": "M999.O : SE"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/kss.xml",
+      "source_order": 3057,
+      "archive": "minateio_98",
+      "id": "minateio-98-opn"
+    },
+    {
+      "title": "[PC-9801] 無人島物語",
+      "driver": {
+        "name": "pc98dos",
+        "type": "opn",
+        "alias": "KSS",
+        "platform": "NEC PC-9801"
+      },
+      "options": [],
+      "assets": [
+        {
+          "type": "file",
+          "path": "mujintou.com",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "T.EXE",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "FM_TONE.SND",
+          "offset": "0x05"
+        },
+        {
+          "type": "shell",
+          "path": "mujintou",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "BGM 01 (無音)"
+        },
+        {
+          "kind": "title",
+          "code": "0x02",
+          "title": "BGM 02"
+        },
+        {
+          "kind": "title",
+          "code": "0x03",
+          "title": "BGM 03"
+        },
+        {
+          "kind": "title",
+          "code": "0x04",
+          "title": "BGM 04"
+        },
+        {
+          "kind": "title",
+          "code": "0x05",
+          "title": "BGM 05"
+        },
+        {
+          "kind": "title",
+          "code": "0x06",
+          "title": "BGM 06"
+        },
+        {
+          "kind": "title",
+          "code": "0x07",
+          "title": "BGM 07"
+        },
+        {
+          "kind": "title",
+          "code": "0x08",
+          "title": "BGM 08"
+        },
+        {
+          "kind": "title",
+          "code": "0x09",
+          "title": "BGM 09"
+        },
+        {
+          "kind": "title",
+          "code": "0x0a",
+          "title": "BGM 10"
+        },
+        {
+          "kind": "title",
+          "code": "0x0b",
+          "title": "BGM 11"
+        },
+        {
+          "kind": "title",
+          "code": "0x0c",
+          "title": "BGM 12"
+        },
+        {
+          "kind": "title",
+          "code": "0x0d",
+          "title": "BGM 13"
+        },
+        {
+          "kind": "title",
+          "code": "0x0e",
+          "title": "BGM 14"
+        },
+        {
+          "kind": "title",
+          "code": "0x0f",
+          "title": "BGM 15"
+        },
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "BGM 16"
+        },
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "BGM 17"
+        },
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "BGM 18"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "BGM 19"
+        },
+        {
+          "kind": "title",
+          "code": "0x14",
+          "title": "BGM 20"
+        },
+        {
+          "kind": "title",
+          "code": "0x15",
+          "title": "BGM 21"
+        },
+        {
+          "kind": "title",
+          "code": "0x16",
+          "title": "BGM 22"
+        },
+        {
+          "kind": "title",
+          "code": "0x17",
+          "title": "BGM 23"
+        },
+        {
+          "kind": "title",
+          "code": "0x18",
+          "title": "BGM 24"
+        },
+        {
+          "kind": "title",
+          "code": "0x19",
+          "title": "BGM 25"
+        },
+        {
+          "kind": "title",
+          "code": "0xff",
+          "title": "FADE OUT"
+        }
+      ],
+      "comments": [
+        " 制作:日本ソフテック "
+      ],
+      "source_file": "xml/kss.xml",
+      "source_order": 3058,
+      "archive": "mujintou_98",
+      "id": "mujintou-98-opn"
+    },
+    {
+      "title": "[PC-9801] 無人島物語2",
+      "driver": {
+        "name": "pc98dos",
+        "type": "opn",
+        "alias": "KSS",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "clockmul",
+          "value": "8"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "OPNDRV.SYS",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MUJN2_98.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "FM_TONE.SND",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "S.01",
+          "offset": "0x10"
+        },
+        {
+          "type": "file",
+          "path": "S.02",
+          "offset": "0x11"
+        },
+        {
+          "type": "file",
+          "path": "S.03",
+          "offset": "0x12"
+        },
+        {
+          "type": "file",
+          "path": "S.04",
+          "offset": "0x13"
+        },
+        {
+          "type": "file",
+          "path": "S.05",
+          "offset": "0x14"
+        },
+        {
+          "type": "file",
+          "path": "S.06",
+          "offset": "0x15"
+        },
+        {
+          "type": "file",
+          "path": "S.07",
+          "offset": "0x16"
+        },
+        {
+          "type": "file",
+          "path": "S.08",
+          "offset": "0x17"
+        },
+        {
+          "type": "file",
+          "path": "S.09",
+          "offset": "0x18"
+        },
+        {
+          "type": "file",
+          "path": "S.0A",
+          "offset": "0x19"
+        },
+        {
+          "type": "file",
+          "path": "S.0B",
+          "offset": "0x1a"
+        },
+        {
+          "type": "file",
+          "path": "S.0C",
+          "offset": "0x1b"
+        },
+        {
+          "type": "file",
+          "path": "S.0D",
+          "offset": "0x1c"
+        },
+        {
+          "type": "file",
+          "path": "S.0E",
+          "offset": "0x1d"
+        },
+        {
+          "type": "file",
+          "path": "S.0F",
+          "offset": "0x1e"
+        },
+        {
+          "type": "file",
+          "path": "S.0G",
+          "offset": "0x1f"
+        },
+        {
+          "type": "file",
+          "path": "S.0H",
+          "offset": "0x20"
+        },
+        {
+          "type": "file",
+          "path": "S.0I",
+          "offset": "0x21"
+        },
+        {
+          "type": "file",
+          "path": "S.0J",
+          "offset": "0x22"
+        },
+        {
+          "type": "file",
+          "path": "S.0K",
+          "offset": "0x23"
+        },
+        {
+          "type": "file",
+          "path": "S.0L",
+          "offset": "0x24"
+        },
+        {
+          "type": "file",
+          "path": "S.0M",
+          "offset": "0x25"
+        },
+        {
+          "type": "file",
+          "path": "S.0N",
+          "offset": "0x26"
+        },
+        {
+          "type": "device",
+          "path": "opndrv.sys",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "mujn2_98",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "S.01 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "S.02 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "S.03 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "S.04 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x14",
+          "title": "S.05 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x15",
+          "title": "S.06 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x16",
+          "title": "S.07 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x17",
+          "title": "S.08 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x18",
+          "title": "S.09 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x19",
+          "title": "S.0A :"
+        },
+        {
+          "kind": "title",
+          "code": "0x1a",
+          "title": "S.0B :"
+        },
+        {
+          "kind": "title",
+          "code": "0x1b",
+          "title": "S.0C :"
+        },
+        {
+          "kind": "title",
+          "code": "0x1c",
+          "title": "S.0D :"
+        },
+        {
+          "kind": "title",
+          "code": "0x1d",
+          "title": "S.0E :"
+        },
+        {
+          "kind": "title",
+          "code": "0x1e",
+          "title": "S.0F :"
+        },
+        {
+          "kind": "title",
+          "code": "0x1f",
+          "title": "S.0G :"
+        },
+        {
+          "kind": "title",
+          "code": "0x20",
+          "title": "S.0H :"
+        },
+        {
+          "kind": "title",
+          "code": "0x21",
+          "title": "S.0I :"
+        },
+        {
+          "kind": "title",
+          "code": "0x22",
+          "title": "S.0J :"
+        },
+        {
+          "kind": "title",
+          "code": "0x23",
+          "title": "S.0K :"
+        },
+        {
+          "kind": "title",
+          "code": "0x24",
+          "title": "S.0L :"
+        },
+        {
+          "kind": "title",
+          "code": "0x25",
+          "title": "S.0M :"
+        },
+        {
+          "kind": "title",
+          "code": "0x26",
+          "title": "S.0N :"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/kss.xml",
+      "source_order": 3059,
+      "archive": "mujinto2_98",
+      "id": "mujinto2-98-opn"
+    },
+    {
+      "title": "[PC-9801] アイドルプロジェクト2(OPN)",
+      "driver": {
+        "name": "pc98dos",
+        "type": "opn",
+        "alias": "KSS",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "clockmul",
+          "value": "8"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "IP2_98.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "PMD.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "1065.DAT",
+          "offset": "11"
+        },
+        {
+          "type": "file",
+          "path": "1066.DAT",
+          "offset": "12"
+        },
+        {
+          "type": "file",
+          "path": "1067.DAT",
+          "offset": "13"
+        },
+        {
+          "type": "file",
+          "path": "1068.DAT",
+          "offset": "14"
+        },
+        {
+          "type": "file",
+          "path": "1069.DAT",
+          "offset": "15"
+        },
+        {
+          "type": "file",
+          "path": "1070.DAT",
+          "offset": "16"
+        },
+        {
+          "type": "file",
+          "path": "1071.DAT",
+          "offset": "17"
+        },
+        {
+          "type": "file",
+          "path": "1072.DAT",
+          "offset": "18"
+        },
+        {
+          "type": "file",
+          "path": "1073.DAT",
+          "offset": "19"
+        },
+        {
+          "type": "file",
+          "path": "1074.DAT",
+          "offset": "20"
+        },
+        {
+          "type": "file",
+          "path": "1075.DAT",
+          "offset": "21"
+        },
+        {
+          "type": "file",
+          "path": "1076.DAT",
+          "offset": "22"
+        },
+        {
+          "type": "file",
+          "path": "1077.DAT",
+          "offset": "23"
+        },
+        {
+          "type": "file",
+          "path": "1078.DAT",
+          "offset": "24"
+        },
+        {
+          "type": "file",
+          "path": "1079.DAT",
+          "offset": "25"
+        },
+        {
+          "type": "file",
+          "path": "1080.DAT",
+          "offset": "26"
+        },
+        {
+          "type": "file",
+          "path": "1081.DAT",
+          "offset": "27"
+        },
+        {
+          "type": "file",
+          "path": "1082.DAT",
+          "offset": "28"
+        },
+        {
+          "type": "file",
+          "path": "1083.DAT",
+          "offset": "29"
+        },
+        {
+          "type": "file",
+          "path": "1084.DAT",
+          "offset": "30"
+        },
+        {
+          "type": "file",
+          "path": "1085.DAT",
+          "offset": "31"
+        },
+        {
+          "type": "file",
+          "path": "1086.DAT",
+          "offset": "32"
+        },
+        {
+          "type": "file",
+          "path": "1087.DAT",
+          "offset": "33"
+        },
+        {
+          "type": "file",
+          "path": "1088.DAT",
+          "offset": "34"
+        },
+        {
+          "type": "file",
+          "path": "1089.DAT",
+          "offset": "35"
+        },
+        {
+          "type": "file",
+          "path": "1090.DAT",
+          "offset": "36"
+        },
+        {
+          "type": "file",
+          "path": "1091.DAT",
+          "offset": "37"
+        },
+        {
+          "type": "file",
+          "path": "1092.DAT",
+          "offset": "38"
+        },
+        {
+          "type": "file",
+          "path": "1093.DAT",
+          "offset": "39"
+        },
+        {
+          "type": "file",
+          "path": "1094.DAT",
+          "offset": "40"
+        },
+        {
+          "type": "file",
+          "path": "1095.DAT",
+          "offset": "41"
+        },
+        {
+          "type": "file",
+          "path": "1096.DAT",
+          "offset": "42"
+        },
+        {
+          "type": "file",
+          "path": "1097.DAT",
+          "offset": "43"
+        },
+        {
+          "type": "file",
+          "path": "1098.DAT",
+          "offset": "44"
+        },
+        {
+          "type": "file",
+          "path": "1099.DAT",
+          "offset": "45"
+        },
+        {
+          "type": "file",
+          "path": "1100.DAT",
+          "offset": "46"
+        },
+        {
+          "type": "file",
+          "path": "1101.DAT",
+          "offset": "47"
+        },
+        {
+          "type": "file",
+          "path": "1102.DAT",
+          "offset": "48"
+        },
+        {
+          "type": "shell",
+          "path": "PMD #",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "IP2_98",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "11",
+          "title": "1065.DAT :"
+        },
+        {
+          "kind": "title",
+          "code": "12",
+          "title": "1066.DAT :"
+        },
+        {
+          "kind": "title",
+          "code": "13",
+          "title": "1067.DAT :"
+        },
+        {
+          "kind": "title",
+          "code": "14",
+          "title": "1068.DAT :"
+        },
+        {
+          "kind": "title",
+          "code": "15",
+          "title": "1069.DAT :"
+        },
+        {
+          "kind": "title",
+          "code": "16",
+          "title": "1070.DAT :"
+        },
+        {
+          "kind": "title",
+          "code": "17",
+          "title": "1071.DAT :"
+        },
+        {
+          "kind": "title",
+          "code": "18",
+          "title": "1072.DAT :"
+        },
+        {
+          "kind": "title",
+          "code": "19",
+          "title": "1073.DAT :"
+        },
+        {
+          "kind": "title",
+          "code": "20",
+          "title": "1074.DAT :"
+        },
+        {
+          "kind": "title",
+          "code": "21",
+          "title": "1075.DAT :"
+        },
+        {
+          "kind": "title",
+          "code": "22",
+          "title": "1076.DAT :"
+        },
+        {
+          "kind": "title",
+          "code": "23",
+          "title": "1077.DAT :"
+        },
+        {
+          "kind": "title",
+          "code": "24",
+          "title": "1078.DAT :"
+        },
+        {
+          "kind": "title",
+          "code": "25",
+          "title": "1079.DAT :"
+        },
+        {
+          "kind": "title",
+          "code": "26",
+          "title": "1080.DAT :"
+        },
+        {
+          "kind": "title",
+          "code": "27",
+          "title": "1081.DAT :"
+        },
+        {
+          "kind": "title",
+          "code": "28",
+          "title": "1082.DAT :"
+        },
+        {
+          "kind": "title",
+          "code": "29",
+          "title": "1083.DAT :"
+        },
+        {
+          "kind": "title",
+          "code": "30",
+          "title": "1084.DAT :"
+        },
+        {
+          "kind": "title",
+          "code": "31",
+          "title": "1085.DAT :"
+        },
+        {
+          "kind": "title",
+          "code": "32",
+          "title": "1086.DAT :"
+        },
+        {
+          "kind": "title",
+          "code": "33",
+          "title": "1087.DAT :"
+        },
+        {
+          "kind": "title",
+          "code": "34",
+          "title": "1088.DAT :"
+        },
+        {
+          "kind": "title",
+          "code": "35",
+          "title": "1089.DAT :"
+        },
+        {
+          "kind": "title",
+          "code": "36",
+          "title": "1090.DAT :"
+        },
+        {
+          "kind": "title",
+          "code": "37",
+          "title": "1091.DAT :"
+        },
+        {
+          "kind": "title",
+          "code": "38",
+          "title": "1092.DAT :"
+        },
+        {
+          "kind": "title",
+          "code": "39",
+          "title": "1093.DAT :"
+        },
+        {
+          "kind": "title",
+          "code": "40",
+          "title": "1094.DAT :"
+        },
+        {
+          "kind": "title",
+          "code": "41",
+          "title": "1095.DAT :"
+        },
+        {
+          "kind": "title",
+          "code": "42",
+          "title": "1096.DAT :"
+        },
+        {
+          "kind": "title",
+          "code": "43",
+          "title": "1097.DAT :"
+        },
+        {
+          "kind": "title",
+          "code": "44",
+          "title": "1098.DAT :"
+        },
+        {
+          "kind": "title",
+          "code": "45",
+          "title": "1099.DAT :"
+        },
+        {
+          "kind": "title",
+          "code": "46",
+          "title": "1100.DAT :"
+        },
+        {
+          "kind": "title",
+          "code": "47",
+          "title": "1101.DAT :"
+        },
+        {
+          "kind": "title",
+          "code": "48",
+          "title": "1102.DAT :"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/kss.xml",
+      "source_order": 3060,
+      "archive": "idol_p2_98",
+      "id": "idol-p2-98-opn"
+    },
+    {
+      "title": "[PC-9801] アイドルプロジェクト2(86)",
+      "driver": {
+        "name": "pc98dos",
+        "type": "86",
+        "alias": "KSS",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "clockmul",
+          "value": "8"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "IP2_98.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "PMDB2.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "1103.DAT",
+          "offset": "11"
+        },
+        {
+          "type": "file",
+          "path": "1104.DAT",
+          "offset": "12"
+        },
+        {
+          "type": "file",
+          "path": "1105.DAT",
+          "offset": "13"
+        },
+        {
+          "type": "file",
+          "path": "1106.DAT",
+          "offset": "14"
+        },
+        {
+          "type": "file",
+          "path": "1107.DAT",
+          "offset": "15"
+        },
+        {
+          "type": "file",
+          "path": "1108.DAT",
+          "offset": "16"
+        },
+        {
+          "type": "file",
+          "path": "1109.DAT",
+          "offset": "17"
+        },
+        {
+          "type": "file",
+          "path": "1110.DAT",
+          "offset": "18"
+        },
+        {
+          "type": "file",
+          "path": "1111.DAT",
+          "offset": "19"
+        },
+        {
+          "type": "file",
+          "path": "1112.DAT",
+          "offset": "20"
+        },
+        {
+          "type": "file",
+          "path": "1113.DAT",
+          "offset": "21"
+        },
+        {
+          "type": "file",
+          "path": "1114.DAT",
+          "offset": "22"
+        },
+        {
+          "type": "file",
+          "path": "1115.DAT",
+          "offset": "23"
+        },
+        {
+          "type": "file",
+          "path": "1116.DAT",
+          "offset": "24"
+        },
+        {
+          "type": "file",
+          "path": "1117.DAT",
+          "offset": "25"
+        },
+        {
+          "type": "file",
+          "path": "1118.DAT",
+          "offset": "26"
+        },
+        {
+          "type": "file",
+          "path": "1119.DAT",
+          "offset": "27"
+        },
+        {
+          "type": "file",
+          "path": "1120.DAT",
+          "offset": "28"
+        },
+        {
+          "type": "file",
+          "path": "1121.DAT",
+          "offset": "29"
+        },
+        {
+          "type": "file",
+          "path": "1122.DAT",
+          "offset": "30"
+        },
+        {
+          "type": "file",
+          "path": "1123.DAT",
+          "offset": "31"
+        },
+        {
+          "type": "file",
+          "path": "1124.DAT",
+          "offset": "32"
+        },
+        {
+          "type": "file",
+          "path": "1125.DAT",
+          "offset": "33"
+        },
+        {
+          "type": "file",
+          "path": "1126.DAT",
+          "offset": "34"
+        },
+        {
+          "type": "file",
+          "path": "1127.DAT",
+          "offset": "35"
+        },
+        {
+          "type": "file",
+          "path": "1128.DAT",
+          "offset": "36"
+        },
+        {
+          "type": "file",
+          "path": "1129.DAT",
+          "offset": "37"
+        },
+        {
+          "type": "file",
+          "path": "1130.DAT",
+          "offset": "38"
+        },
+        {
+          "type": "file",
+          "path": "1131.DAT",
+          "offset": "39"
+        },
+        {
+          "type": "file",
+          "path": "1132.DAT",
+          "offset": "40"
+        },
+        {
+          "type": "file",
+          "path": "1133.DAT",
+          "offset": "41"
+        },
+        {
+          "type": "file",
+          "path": "1134.DAT",
+          "offset": "42"
+        },
+        {
+          "type": "file",
+          "path": "1135.DAT",
+          "offset": "43"
+        },
+        {
+          "type": "file",
+          "path": "1136.DAT",
+          "offset": "44"
+        },
+        {
+          "type": "file",
+          "path": "1137.DAT",
+          "offset": "45"
+        },
+        {
+          "type": "file",
+          "path": "1138.DAT",
+          "offset": "46"
+        },
+        {
+          "type": "file",
+          "path": "1139.DAT",
+          "offset": "47"
+        },
+        {
+          "type": "file",
+          "path": "1140.DAT",
+          "offset": "48"
+        },
+        {
+          "type": "shell",
+          "path": "PMDB2 #",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "IP2_98",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "11",
+          "title": "1103.DAT :"
+        },
+        {
+          "kind": "title",
+          "code": "12",
+          "title": "1104.DAT :"
+        },
+        {
+          "kind": "title",
+          "code": "13",
+          "title": "1105.DAT :"
+        },
+        {
+          "kind": "title",
+          "code": "14",
+          "title": "1106.DAT :"
+        },
+        {
+          "kind": "title",
+          "code": "15",
+          "title": "1107.DAT :"
+        },
+        {
+          "kind": "title",
+          "code": "16",
+          "title": "1108.DAT :"
+        },
+        {
+          "kind": "title",
+          "code": "17",
+          "title": "1109.DAT :"
+        },
+        {
+          "kind": "title",
+          "code": "18",
+          "title": "1110.DAT :"
+        },
+        {
+          "kind": "title",
+          "code": "19",
+          "title": "1111.DAT :"
+        },
+        {
+          "kind": "title",
+          "code": "20",
+          "title": "1112.DAT :"
+        },
+        {
+          "kind": "title",
+          "code": "21",
+          "title": "1113.DAT :"
+        },
+        {
+          "kind": "title",
+          "code": "22",
+          "title": "1114.DAT :"
+        },
+        {
+          "kind": "title",
+          "code": "23",
+          "title": "1115.DAT :"
+        },
+        {
+          "kind": "title",
+          "code": "24",
+          "title": "1116.DAT :"
+        },
+        {
+          "kind": "title",
+          "code": "25",
+          "title": "1117.DAT :"
+        },
+        {
+          "kind": "title",
+          "code": "26",
+          "title": "1118.DAT :"
+        },
+        {
+          "kind": "title",
+          "code": "27",
+          "title": "1119.DAT :"
+        },
+        {
+          "kind": "title",
+          "code": "28",
+          "title": "1120.DAT :"
+        },
+        {
+          "kind": "title",
+          "code": "29",
+          "title": "1121.DAT :"
+        },
+        {
+          "kind": "title",
+          "code": "30",
+          "title": "1122.DAT :"
+        },
+        {
+          "kind": "title",
+          "code": "31",
+          "title": "1123.DAT :"
+        },
+        {
+          "kind": "title",
+          "code": "32",
+          "title": "1124.DAT :"
+        },
+        {
+          "kind": "title",
+          "code": "33",
+          "title": "1125.DAT :"
+        },
+        {
+          "kind": "title",
+          "code": "34",
+          "title": "1126.DAT :"
+        },
+        {
+          "kind": "title",
+          "code": "35",
+          "title": "1127.DAT :"
+        },
+        {
+          "kind": "title",
+          "code": "36",
+          "title": "1128.DAT :"
+        },
+        {
+          "kind": "title",
+          "code": "37",
+          "title": "1129.DAT :"
+        },
+        {
+          "kind": "title",
+          "code": "38",
+          "title": "1130.DAT :"
+        },
+        {
+          "kind": "title",
+          "code": "39",
+          "title": "1131.DAT :"
+        },
+        {
+          "kind": "title",
+          "code": "40",
+          "title": "1132.DAT :"
+        },
+        {
+          "kind": "title",
+          "code": "41",
+          "title": "1133.DAT :"
+        },
+        {
+          "kind": "title",
+          "code": "42",
+          "title": "1134.DAT :"
+        },
+        {
+          "kind": "title",
+          "code": "43",
+          "title": "1135.DAT :"
+        },
+        {
+          "kind": "title",
+          "code": "44",
+          "title": "1136.DAT :"
+        },
+        {
+          "kind": "title",
+          "code": "45",
+          "title": "1137.DAT :"
+        },
+        {
+          "kind": "title",
+          "code": "46",
+          "title": "1138.DAT :"
+        },
+        {
+          "kind": "title",
+          "code": "47",
+          "title": "1139.DAT :"
+        },
+        {
+          "kind": "title",
+          "code": "48",
+          "title": "1140.DAT :"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/kss.xml",
+      "source_order": 3061,
+      "archive": "idol_p2_98",
+      "id": "idol-p2-98-86"
+    },
+    {
+      "title": "[PC-9801] アイドルプロジェクト2(GS)",
+      "driver": {
+        "name": "pc98dos",
+        "type": "beep",
+        "alias": "KSS",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "clockmul",
+          "value": "0x04"
+        },
+        {
+          "name": "midiout",
+          "value": "1"
+        },
+        {
+          "name": "midiout_type",
+          "value": "4"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "IP2_98.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "IP2DRV.EXE",
+          "offset": "-1"
+        },
+        {
+          "type": "conin",
+          "path": "IP2DRV.EXE",
+          "offset": "5"
+        },
+        {
+          "type": "file",
+          "path": "1141.DAT",
+          "offset": "11"
+        },
+        {
+          "type": "file",
+          "path": "1142.DAT",
+          "offset": "12"
+        },
+        {
+          "type": "file",
+          "path": "1143.DAT",
+          "offset": "13"
+        },
+        {
+          "type": "file",
+          "path": "1144.DAT",
+          "offset": "14"
+        },
+        {
+          "type": "file",
+          "path": "1145.DAT",
+          "offset": "15"
+        },
+        {
+          "type": "file",
+          "path": "1146.DAT",
+          "offset": "16"
+        },
+        {
+          "type": "file",
+          "path": "1147.DAT",
+          "offset": "17"
+        },
+        {
+          "type": "file",
+          "path": "1148.DAT",
+          "offset": "18"
+        },
+        {
+          "type": "file",
+          "path": "1149.DAT",
+          "offset": "19"
+        },
+        {
+          "type": "file",
+          "path": "1150.DAT",
+          "offset": "20"
+        },
+        {
+          "type": "file",
+          "path": "1151.DAT",
+          "offset": "21"
+        },
+        {
+          "type": "file",
+          "path": "1152.DAT",
+          "offset": "22"
+        },
+        {
+          "type": "file",
+          "path": "1153.DAT",
+          "offset": "23"
+        },
+        {
+          "type": "file",
+          "path": "1154.DAT",
+          "offset": "24"
+        },
+        {
+          "type": "file",
+          "path": "1155.DAT",
+          "offset": "25"
+        },
+        {
+          "type": "file",
+          "path": "1156.DAT",
+          "offset": "26"
+        },
+        {
+          "type": "file",
+          "path": "1157.DAT",
+          "offset": "27"
+        },
+        {
+          "type": "file",
+          "path": "1158.DAT",
+          "offset": "28"
+        },
+        {
+          "type": "file",
+          "path": "1159.DAT",
+          "offset": "29"
+        },
+        {
+          "type": "file",
+          "path": "1160.DAT",
+          "offset": "30"
+        },
+        {
+          "type": "file",
+          "path": "1161.DAT",
+          "offset": "31"
+        },
+        {
+          "type": "file",
+          "path": "1162.DAT",
+          "offset": "32"
+        },
+        {
+          "type": "file",
+          "path": "1163.DAT",
+          "offset": "33"
+        },
+        {
+          "type": "file",
+          "path": "1164.DAT",
+          "offset": "34"
+        },
+        {
+          "type": "file",
+          "path": "1165.DAT",
+          "offset": "35"
+        },
+        {
+          "type": "file",
+          "path": "1166.DAT",
+          "offset": "36"
+        },
+        {
+          "type": "file",
+          "path": "1167.DAT",
+          "offset": "37"
+        },
+        {
+          "type": "file",
+          "path": "1168.DAT",
+          "offset": "38"
+        },
+        {
+          "type": "file",
+          "path": "1169.DAT",
+          "offset": "39"
+        },
+        {
+          "type": "file",
+          "path": "1170.DAT",
+          "offset": "40"
+        },
+        {
+          "type": "file",
+          "path": "1171.DAT",
+          "offset": "41"
+        },
+        {
+          "type": "file",
+          "path": "1172.DAT",
+          "offset": "42"
+        },
+        {
+          "type": "file",
+          "path": "1173.DAT",
+          "offset": "43"
+        },
+        {
+          "type": "file",
+          "path": "1174.DAT",
+          "offset": "44"
+        },
+        {
+          "type": "file",
+          "path": "1175.DAT",
+          "offset": "45"
+        },
+        {
+          "type": "file",
+          "path": "1176.DAT",
+          "offset": "46"
+        },
+        {
+          "type": "file",
+          "path": "1177.DAT",
+          "offset": "47"
+        },
+        {
+          "type": "file",
+          "path": "1178.DAT",
+          "offset": "48"
+        },
+        {
+          "type": "shell",
+          "path": "IP2_98",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "11",
+          "title": "1141.DAT :"
+        },
+        {
+          "kind": "title",
+          "code": "12",
+          "title": "1142.DAT :"
+        },
+        {
+          "kind": "title",
+          "code": "13",
+          "title": "1143.DAT :"
+        },
+        {
+          "kind": "title",
+          "code": "14",
+          "title": "1144.DAT :"
+        },
+        {
+          "kind": "title",
+          "code": "15",
+          "title": "1145.DAT :"
+        },
+        {
+          "kind": "title",
+          "code": "16",
+          "title": "1146.DAT :"
+        },
+        {
+          "kind": "title",
+          "code": "17",
+          "title": "1147.DAT :"
+        },
+        {
+          "kind": "title",
+          "code": "18",
+          "title": "1148.DAT :"
+        },
+        {
+          "kind": "title",
+          "code": "19",
+          "title": "1149.DAT :"
+        },
+        {
+          "kind": "title",
+          "code": "20",
+          "title": "1150.DAT :"
+        },
+        {
+          "kind": "title",
+          "code": "21",
+          "title": "1151.DAT :"
+        },
+        {
+          "kind": "title",
+          "code": "22",
+          "title": "1152.DAT :"
+        },
+        {
+          "kind": "title",
+          "code": "23",
+          "title": "1153.DAT :"
+        },
+        {
+          "kind": "title",
+          "code": "24",
+          "title": "1154.DAT :"
+        },
+        {
+          "kind": "title",
+          "code": "25",
+          "title": "1155.DAT :"
+        },
+        {
+          "kind": "comment",
+          "text": "\t\t<title code=\"26\">1156.DAT : </title>\t"
+        },
+        {
+          "kind": "title",
+          "code": "27",
+          "title": "1157.DAT :"
+        },
+        {
+          "kind": "title",
+          "code": "28",
+          "title": "1158.DAT :"
+        },
+        {
+          "kind": "title",
+          "code": "29",
+          "title": "1159.DAT :"
+        },
+        {
+          "kind": "title",
+          "code": "30",
+          "title": "1160.DAT :"
+        },
+        {
+          "kind": "title",
+          "code": "31",
+          "title": "1161.DAT :"
+        },
+        {
+          "kind": "title",
+          "code": "32",
+          "title": "1162.DAT :"
+        },
+        {
+          "kind": "title",
+          "code": "33",
+          "title": "1163.DAT :"
+        },
+        {
+          "kind": "comment",
+          "text": "\t\t<title code=\"34\">1164.DAT : </title>\t"
+        },
+        {
+          "kind": "title",
+          "code": "35",
+          "title": "1165.DAT :"
+        },
+        {
+          "kind": "title",
+          "code": "36",
+          "title": "1166.DAT :"
+        },
+        {
+          "kind": "title",
+          "code": "37",
+          "title": "1167.DAT :"
+        },
+        {
+          "kind": "title",
+          "code": "38",
+          "title": "1168.DAT :"
+        },
+        {
+          "kind": "title",
+          "code": "39",
+          "title": "1169.DAT :"
+        },
+        {
+          "kind": "title",
+          "code": "40",
+          "title": "1170.DAT :"
+        },
+        {
+          "kind": "title",
+          "code": "41",
+          "title": "1171.DAT :"
+        },
+        {
+          "kind": "title",
+          "code": "42",
+          "title": "1172.DAT :"
+        },
+        {
+          "kind": "title",
+          "code": "43",
+          "title": "1173.DAT :"
+        },
+        {
+          "kind": "title",
+          "code": "44",
+          "title": "1174.DAT :"
+        },
+        {
+          "kind": "title",
+          "code": "45",
+          "title": "1175.DAT :"
+        },
+        {
+          "kind": "title",
+          "code": "46",
+          "title": "1176.DAT :"
+        },
+        {
+          "kind": "title",
+          "code": "47",
+          "title": "1177.DAT :"
+        },
+        {
+          "kind": "title",
+          "code": "48",
+          "title": "1178.DAT :"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/kss.xml",
+      "source_order": 3062,
+      "archive": "idol_p2_98",
+      "id": "idol-p2-98-beep"
+    },
+    {
+      "title": "[PC-9801] 無人島物語3 A.D.1999 TOKYO.",
+      "driver": {
+        "name": "pc9821dos",
+        "type": "opn",
+        "alias": "KSS",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "clockmul",
+          "value": "8"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "FM26K.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MUJN3_98.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "BGM00.MUS",
+          "offset": "0x10"
+        },
+        {
+          "type": "file",
+          "path": "BGM01.MUS",
+          "offset": "0x11"
+        },
+        {
+          "type": "file",
+          "path": "BGM02.MUS",
+          "offset": "0x12"
+        },
+        {
+          "type": "file",
+          "path": "BGM03.MUS",
+          "offset": "0x13"
+        },
+        {
+          "type": "file",
+          "path": "BGM04.MUS",
+          "offset": "0x14"
+        },
+        {
+          "type": "file",
+          "path": "BGM05.MUS",
+          "offset": "0x15"
+        },
+        {
+          "type": "shell",
+          "path": "FM26K",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "MUJN3_98",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "comment",
+          "text": "\t<title code=\"0x10\">BGM00.MUS : [STOP]</title> "
+        },
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "BGM01.MUS :"
+        },
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "BGM02.MUS :"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "BGM03.MUS :"
+        },
+        {
+          "kind": "title",
+          "code": "0x14",
+          "title": "BGM04.MUS :"
+        },
+        {
+          "kind": "title",
+          "code": "0x15",
+          "title": "BGM05.MUS :"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/kss.xml",
+      "source_order": 3063,
+      "archive": "mujinto3_98",
+      "id": "mujinto3-98-opn"
+    }
+  ]
+}

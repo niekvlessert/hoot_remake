@@ -1,0 +1,354 @@
+{
+  "format": "hoot-catalog-shard",
+  "version": 1,
+  "source_file": "xml/psk.xml",
+  "date": "2005/09/25",
+  "comments": [
+    " //PSK "
+  ],
+  "games": [
+    {
+      "title": "[PC-8801] ザ・病院",
+      "driver": {
+        "name": "pc88",
+        "type": "opn",
+        "alias": "PSK",
+        "platform": "NEC PC-8801"
+      },
+      "options": [
+        {
+          "name": "mdata_addr",
+          "value": "0x6000"
+        },
+        {
+          "name": "mdata_size",
+          "value": "0x1000"
+        },
+        {
+          "name": "mfile_size",
+          "value": "0x1000"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "PATCH",
+          "offset": "0x0000"
+        },
+        {
+          "type": "code",
+          "path": "MUSIC.SYS",
+          "offset": "0x9c00"
+        },
+        {
+          "type": "bgm",
+          "path": "DEMO.MDT",
+          "offset": "0x00"
+        },
+        {
+          "type": "bgm",
+          "path": "ENDING.MDT",
+          "offset": "0x01"
+        },
+        {
+          "type": "bgm",
+          "path": "MDTA00.MDT",
+          "offset": "0x02"
+        },
+        {
+          "type": "bgm",
+          "path": "MDTA01.MDT",
+          "offset": "0x03"
+        },
+        {
+          "type": "bgm",
+          "path": "MDTA02.MDT",
+          "offset": "0x04"
+        },
+        {
+          "type": "bgm",
+          "path": "MDTA03.MDT",
+          "offset": "0x05"
+        },
+        {
+          "type": "bgm",
+          "path": "MDTA04.MDT",
+          "offset": "0x06"
+        },
+        {
+          "type": "bgm",
+          "path": "MDTA05.MDT",
+          "offset": "0x07"
+        },
+        {
+          "type": "bgm",
+          "path": "MDTA06.MDT",
+          "offset": "0x08"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x00",
+          "title": "DEMO.MDT   : Lost My Love"
+        },
+        {
+          "kind": "title",
+          "code": "0x02",
+          "title": "MDTA00.MDT : Intermission"
+        },
+        {
+          "kind": "title",
+          "code": "0x03",
+          "title": "MDTA01.MDT : A faint hope for her"
+        },
+        {
+          "kind": "title",
+          "code": "0x04",
+          "title": "MDTA02.MDT : General anesthesia surgery"
+        },
+        {
+          "kind": "title",
+          "code": "0x05",
+          "title": "MDTA03.MDT : Star Struck"
+        },
+        {
+          "kind": "title",
+          "code": "0x06",
+          "title": "MDTA04.MDT : EVE -the previous night-"
+        },
+        {
+          "kind": "title",
+          "code": "0x07",
+          "title": "MDTA05.MDT : Chase and Escape!"
+        },
+        {
+          "kind": "title",
+          "code": "0x08",
+          "title": "MDTA06.MDT : Reality beyond imagination"
+        },
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "ENDING.MDT : Syntax Error"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/psk.xml",
+      "source_order": 3753,
+      "archive": "byouin_88",
+      "id": "byouin-88-opn"
+    },
+    {
+      "title": "[PC-8801] SKAPON探検隊",
+      "driver": {
+        "name": "pc88",
+        "type": "opn",
+        "alias": "PSK",
+        "platform": "NEC PC-8801"
+      },
+      "options": [
+        {
+          "name": "mdata_addr",
+          "value": "0x5000"
+        },
+        {
+          "name": "mdata_size",
+          "value": "0x2000"
+        },
+        {
+          "name": "mfile_size",
+          "value": "0x2000"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "PATCH",
+          "offset": "0x0000"
+        },
+        {
+          "type": "code",
+          "path": "1/SSIDB.SYS",
+          "offset": "0xd600"
+        },
+        {
+          "type": "bgm",
+          "path": "1/SKAPON.MDT",
+          "offset": "0x00"
+        },
+        {
+          "type": "bgm",
+          "path": "1/SKPN-2.MDT",
+          "offset": "0x01"
+        },
+        {
+          "type": "bgm",
+          "path": "1/SKPN-3.MDT",
+          "offset": "0x02"
+        },
+        {
+          "type": "bgm",
+          "path": "1/SKPN-4.MDT",
+          "offset": "0x03"
+        },
+        {
+          "type": "bgm",
+          "path": "1/SKPN-5.MDT",
+          "offset": "0x04"
+        },
+        {
+          "type": "bgm",
+          "path": "1/SKPN-6.MDT",
+          "offset": "0x05"
+        },
+        {
+          "type": "bgm",
+          "path": "1/SKPN-7.MDT",
+          "offset": "0x06"
+        },
+        {
+          "type": "bgm",
+          "path": "1/SKPN-8.MDT",
+          "offset": "0x07"
+        },
+        {
+          "type": "bgm",
+          "path": "1/SKPN-9.MDT",
+          "offset": "0x08"
+        },
+        {
+          "type": "bgm",
+          "path": "1/SKPN10.MDT",
+          "offset": "0x09"
+        },
+        {
+          "type": "bgm",
+          "path": "1/SKPN11.MDT",
+          "offset": "0x0a"
+        },
+        {
+          "type": "bgm",
+          "path": "1/SKPN12.MDT",
+          "offset": "0x0b"
+        },
+        {
+          "type": "bgm",
+          "path": "1/SKPN13.MDT",
+          "offset": "0x0c"
+        },
+        {
+          "type": "bgm",
+          "path": "1/SKPN14.MDT",
+          "offset": "0x0d"
+        },
+        {
+          "type": "bgm",
+          "path": "1/SKPN15.MDT",
+          "offset": "0x0e"
+        },
+        {
+          "type": "bgm",
+          "path": "2/SKPN16.MDT",
+          "offset": "0x0f"
+        },
+        {
+          "type": "bgm",
+          "path": "3/SKAPON.MDT",
+          "offset": "0x10"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x00",
+          "title": "SKAPON.MDT : Syntax Error II"
+        },
+        {
+          "kind": "comment",
+          "text": "\t<title code=\"0x10\">SKAPON.MDT : Syntax Error II</title> "
+        },
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "SKPN-2.MDT : Fried Rice on the Hot Tin Roof"
+        },
+        {
+          "kind": "title",
+          "code": "0x02",
+          "title": "SKPN-3.MDT : Shooting the Star"
+        },
+        {
+          "kind": "title",
+          "code": "0x03",
+          "title": "SKPN-4.MDT : 大いなる無責任と小心な偏執狂"
+        },
+        {
+          "kind": "title",
+          "code": "0x04",
+          "title": "SKPN-5.MDT : Palade of ..."
+        },
+        {
+          "kind": "title",
+          "code": "0x05",
+          "title": "SKPN-6.MDT : S L U S H"
+        },
+        {
+          "kind": "title",
+          "code": "0x06",
+          "title": "SKPN-7.MDT : One Base Samba"
+        },
+        {
+          "kind": "title",
+          "code": "0x07",
+          "title": "SKPN-8.MDT : Skapon March"
+        },
+        {
+          "kind": "title",
+          "code": "0x08",
+          "title": "SKPN-9.MDT : A Peaceful Moment"
+        },
+        {
+          "kind": "title",
+          "code": "0x09",
+          "title": "SKPN10.MDT : Space Strayer -迷い星"
+        },
+        {
+          "kind": "title",
+          "code": "0x0a",
+          "title": "SKPN11.MDT : EMERGENCY,PANIC!"
+        },
+        {
+          "kind": "title",
+          "code": "0x0b",
+          "title": "SKPN12.MDT : Salade Davocat a la Sause Piqudute"
+        },
+        {
+          "kind": "title",
+          "code": "0x0c",
+          "title": "SKPN13.MDT : 外宇宙探査船STRANGE LOVE号"
+        },
+        {
+          "kind": "title",
+          "code": "0x0d",
+          "title": "SKPN14.MDT : The Cerlian Blue"
+        },
+        {
+          "kind": "title",
+          "code": "0x0e",
+          "title": "SKPN15.MDT : Rhythm Machine"
+        },
+        {
+          "kind": "title",
+          "code": "0x0f",
+          "title": "SKPN16.MDT : Death of Flare"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/psk.xml",
+      "source_order": 3754,
+      "archive": "skapon_88",
+      "id": "skapon-88-opn"
+    }
+  ]
+}

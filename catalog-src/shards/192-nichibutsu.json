@@ -1,0 +1,1020 @@
+{
+  "format": "hoot-catalog-shard",
+  "version": 1,
+  "source_file": "xml/nichibutsu.xml",
+  "date": "2005/09/25",
+  "comments": [
+    " //日本物産 "
+  ],
+  "games": [
+    {
+      "title": "[PC-9801] 麻雀王伝説",
+      "driver": {
+        "name": "pc98dos",
+        "type": "opn",
+        "alias": "日本物産",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "clockmul",
+          "value": "8"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "FM.SYS",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "NBFM_98.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "device",
+          "path": "FM.SYS",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "nbfm_98",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x010201",
+          "title": "02 : TITLE"
+        },
+        {
+          "kind": "title",
+          "code": "0x010301",
+          "title": "03 : BGM1"
+        },
+        {
+          "kind": "title",
+          "code": "0x010401",
+          "title": "04 : BGM2"
+        },
+        {
+          "kind": "title",
+          "code": "0x010501",
+          "title": "05 : BGM3"
+        },
+        {
+          "kind": "title",
+          "code": "0x010601",
+          "title": "06 : BGM4"
+        },
+        {
+          "kind": "title",
+          "code": "0x010701",
+          "title": "07 : BGM5"
+        },
+        {
+          "kind": "title",
+          "code": "0x010801",
+          "title": "08 : 敵リーチ"
+        },
+        {
+          "kind": "title",
+          "code": "0x010901",
+          "title": "09 : プレイヤーリーチ"
+        },
+        {
+          "kind": "title",
+          "code": "0x010A01",
+          "title": "0a : 敵上がり"
+        },
+        {
+          "kind": "title",
+          "code": "0x010B01",
+          "title": "0b : プレイヤー上がり"
+        },
+        {
+          "kind": "title",
+          "code": "0x010C01",
+          "title": "0c : 流局"
+        },
+        {
+          "kind": "title",
+          "code": "0x010D01",
+          "title": "0d : フィールド"
+        },
+        {
+          "kind": "title",
+          "code": "0x010E01",
+          "title": "0e : アイテムショップ"
+        },
+        {
+          "kind": "title",
+          "code": "0x010F01",
+          "title": "0f : 敵出現"
+        },
+        {
+          "kind": "title",
+          "code": "0x011001",
+          "title": "10 : 脱衣1"
+        },
+        {
+          "kind": "title",
+          "code": "0x011101",
+          "title": "11 : 脱衣2"
+        },
+        {
+          "kind": "title",
+          "code": "0x011201",
+          "title": "12 : ゲームオーバー"
+        },
+        {
+          "kind": "title",
+          "code": "0x011301",
+          "title": "13 : コンティニュー"
+        },
+        {
+          "kind": "title",
+          "code": "0x011401",
+          "title": "14 : オールクリア"
+        },
+        {
+          "kind": "title",
+          "code": "0x011501",
+          "title": "15 : UNKNOWN"
+        },
+        {
+          "kind": "title",
+          "code": "0x011601",
+          "title": "16 : ラストチャンス"
+        },
+        {
+          "kind": "title",
+          "code": "0x011701",
+          "title": "17 : エンディング"
+        },
+        {
+          "kind": "title",
+          "code": "0x011801",
+          "title": "18 : オープニング"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/nichibutsu.xml",
+      "source_order": 3452,
+      "archive": "mjohden_98",
+      "id": "mjohden-98-opn"
+    },
+    {
+      "title": "[PC-9801] 麻雀トリプルウォーズ外伝",
+      "driver": {
+        "name": "pc98dos",
+        "type": "opn",
+        "alias": "日本物産",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "clockmul",
+          "value": "0x08"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "triplew.com",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "TRIPLE.EXE",
+          "offset": "-1"
+        },
+        {
+          "type": "shell",
+          "path": "triplew",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x00",
+          "title": "演奏停止"
+        },
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "BGM 01"
+        },
+        {
+          "kind": "title",
+          "code": "0x02",
+          "title": "BGM 02"
+        },
+        {
+          "kind": "title",
+          "code": "0x03",
+          "title": "BGM 03"
+        },
+        {
+          "kind": "title",
+          "code": "0x04",
+          "title": "BGM 04"
+        },
+        {
+          "kind": "title",
+          "code": "0x05",
+          "title": "BGM 05"
+        },
+        {
+          "kind": "title",
+          "code": "0x06",
+          "title": "BGM 06"
+        },
+        {
+          "kind": "title",
+          "code": "0x07",
+          "title": "BGM 07"
+        },
+        {
+          "kind": "title",
+          "code": "0x08",
+          "title": "BGM 08"
+        },
+        {
+          "kind": "title",
+          "code": "0x09",
+          "title": "BGM 09"
+        },
+        {
+          "kind": "title",
+          "code": "0x0a",
+          "title": "BGM 10"
+        },
+        {
+          "kind": "title",
+          "code": "0x0b",
+          "title": "BGM 11"
+        },
+        {
+          "kind": "title",
+          "code": "0x0c",
+          "title": "BGM 12"
+        },
+        {
+          "kind": "title",
+          "code": "0x0d",
+          "title": "BGM 13"
+        },
+        {
+          "kind": "title",
+          "code": "0x0e",
+          "title": "BGM 14"
+        },
+        {
+          "kind": "title",
+          "code": "0x0f",
+          "title": "BGM 15"
+        },
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "BGM 16"
+        },
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "BGM 17"
+        },
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "BGM 18"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "BGM 19"
+        },
+        {
+          "kind": "title",
+          "code": "0x14",
+          "title": "BGM 20"
+        },
+        {
+          "kind": "title",
+          "code": "0x15",
+          "title": "BGM 21"
+        },
+        {
+          "kind": "title",
+          "code": "0x16",
+          "title": "BGM 22"
+        },
+        {
+          "kind": "title",
+          "code": "0x17",
+          "title": "BGM 23"
+        },
+        {
+          "kind": "title",
+          "code": "0x18",
+          "title": "BGM 24"
+        },
+        {
+          "kind": "title",
+          "code": "0x19",
+          "title": "BGM 25"
+        },
+        {
+          "kind": "title",
+          "code": "0x1a",
+          "title": "BGM 26"
+        },
+        {
+          "kind": "title",
+          "code": "0x1b",
+          "title": "BGM 27"
+        },
+        {
+          "kind": "title",
+          "code": "0x1c",
+          "title": "BGM 28"
+        },
+        {
+          "kind": "title",
+          "code": "0x1d",
+          "title": "BGM 29"
+        },
+        {
+          "kind": "title",
+          "code": "0x1e",
+          "title": "BGM 30"
+        },
+        {
+          "kind": "title",
+          "code": "0x1f",
+          "title": "BGM 31"
+        },
+        {
+          "kind": "title",
+          "code": "0x20",
+          "title": "BGM 32"
+        },
+        {
+          "kind": "title",
+          "code": "0x21",
+          "title": "BGM 33"
+        },
+        {
+          "kind": "title",
+          "code": "0x22",
+          "title": "BGM 34"
+        },
+        {
+          "kind": "title",
+          "code": "0x23",
+          "title": "BGM 35"
+        },
+        {
+          "kind": "title",
+          "code": "0x24",
+          "title": "BGM 36"
+        },
+        {
+          "kind": "title",
+          "code": "0x25",
+          "title": "BGM 37"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/nichibutsu.xml",
+      "source_order": 3453,
+      "archive": "triplew_98",
+      "id": "triplew-98-opn"
+    },
+    {
+      "title": "[PC-9801] ま～じゃんバニラシンドローム",
+      "driver": {
+        "name": "pc98dos",
+        "type": "opn",
+        "alias": "日本物産",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "clockmul",
+          "value": "0x08"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "vanilla.com",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "GAME.EXE",
+          "offset": "-1"
+        },
+        {
+          "type": "shell",
+          "path": "vanilla",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x00",
+          "title": "演奏停止"
+        },
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "BGM 01"
+        },
+        {
+          "kind": "title",
+          "code": "0x02",
+          "title": "BGM 02"
+        },
+        {
+          "kind": "title",
+          "code": "0x03",
+          "title": "BGM 03"
+        },
+        {
+          "kind": "title",
+          "code": "0x04",
+          "title": "BGM 04"
+        },
+        {
+          "kind": "title",
+          "code": "0x05",
+          "title": "BGM 05"
+        },
+        {
+          "kind": "title",
+          "code": "0x06",
+          "title": "BGM 06"
+        },
+        {
+          "kind": "title",
+          "code": "0x07",
+          "title": "BGM 07"
+        },
+        {
+          "kind": "title",
+          "code": "0x08",
+          "title": "BGM 08"
+        },
+        {
+          "kind": "title",
+          "code": "0x09",
+          "title": "BGM 09"
+        },
+        {
+          "kind": "title",
+          "code": "0x0a",
+          "title": "BGM 10"
+        },
+        {
+          "kind": "title",
+          "code": "0x0b",
+          "title": "BGM 11"
+        },
+        {
+          "kind": "title",
+          "code": "0x0c",
+          "title": "BGM 12"
+        },
+        {
+          "kind": "title",
+          "code": "0x0d",
+          "title": "BGM 13"
+        },
+        {
+          "kind": "title",
+          "code": "0x0e",
+          "title": "BGM 14"
+        },
+        {
+          "kind": "title",
+          "code": "0x0f",
+          "title": "BGM 15"
+        },
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "BGM 16"
+        },
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "BGM 17"
+        },
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "BGM 18"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "BGM 19"
+        },
+        {
+          "kind": "title",
+          "code": "0x14",
+          "title": "BGM 20"
+        },
+        {
+          "kind": "title",
+          "code": "0x15",
+          "title": "BGM 21"
+        },
+        {
+          "kind": "title",
+          "code": "0x16",
+          "title": "BGM 22"
+        },
+        {
+          "kind": "title",
+          "code": "0x17",
+          "title": "BGM 23"
+        },
+        {
+          "kind": "title",
+          "code": "0x18",
+          "title": "BGM 24"
+        },
+        {
+          "kind": "title",
+          "code": "0x19",
+          "title": "BGM 25"
+        },
+        {
+          "kind": "title",
+          "code": "0x1a",
+          "title": "BGM 26"
+        },
+        {
+          "kind": "title",
+          "code": "0x1b",
+          "title": "BGM 27"
+        },
+        {
+          "kind": "title",
+          "code": "0x1c",
+          "title": "BGM 28"
+        },
+        {
+          "kind": "title",
+          "code": "0x1d",
+          "title": "BGM 29"
+        },
+        {
+          "kind": "title",
+          "code": "0x1e",
+          "title": "BGM 30"
+        },
+        {
+          "kind": "title",
+          "code": "0x1f",
+          "title": "BGM 31"
+        },
+        {
+          "kind": "title",
+          "code": "0x20",
+          "title": "BGM 32"
+        },
+        {
+          "kind": "title",
+          "code": "0x21",
+          "title": "BGM 33"
+        },
+        {
+          "kind": "title",
+          "code": "0x22",
+          "title": "BGM 34"
+        },
+        {
+          "kind": "title",
+          "code": "0x23",
+          "title": "BGM 35"
+        },
+        {
+          "kind": "title",
+          "code": "0x24",
+          "title": "BGM 36"
+        },
+        {
+          "kind": "title",
+          "code": "0x25",
+          "title": "BGM 37"
+        },
+        {
+          "kind": "title",
+          "code": "0x26",
+          "title": "BGM 38"
+        },
+        {
+          "kind": "title",
+          "code": "0x27",
+          "title": "BGM 39"
+        },
+        {
+          "kind": "title",
+          "code": "0x28",
+          "title": "BGM 40"
+        },
+        {
+          "kind": "title",
+          "code": "0x29",
+          "title": "BGM 41"
+        },
+        {
+          "kind": "title",
+          "code": "0x2a",
+          "title": "BGM 42"
+        },
+        {
+          "kind": "title",
+          "code": "0x2b",
+          "title": "BGM 43"
+        },
+        {
+          "kind": "title",
+          "code": "0x2c",
+          "title": "BGM 44"
+        },
+        {
+          "kind": "title",
+          "code": "0x2d",
+          "title": "BGM 45"
+        },
+        {
+          "kind": "title",
+          "code": "0x2e",
+          "title": "BGM 46"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/nichibutsu.xml",
+      "source_order": 3454,
+      "archive": "vanilla_98",
+      "id": "vanilla-98-opn"
+    },
+    {
+      "title": "[MSX] 麻雀刺客(OPLL)",
+      "driver": {
+        "name": "msx",
+        "type": "generic",
+        "alias": "日本物産",
+        "platform": "MSX"
+      },
+      "options": [
+        {
+          "name": "init_pc",
+          "value": "0x1000"
+        },
+        {
+          "name": "use_opll",
+          "value": "0x01"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "MAIN.BIN",
+          "offset": "0x0100"
+        },
+        {
+          "type": "code",
+          "path": "patch",
+          "offset": "0x1000"
+        },
+        {
+          "type": "code",
+          "path": "FMPAC.ROM",
+          "offset": "0x4000"
+        },
+        {
+          "type": "code",
+          "path": "DRIVER.BIN",
+          "offset": "0x8000"
+        },
+        {
+          "type": "code",
+          "path": "FDAT.BIN",
+          "offset": "0x9800"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "range",
+          "min": "0x00",
+          "max": "0x10",
+          "title_format": "BGM 0x%02x",
+          "extcode": "1"
+        },
+        {
+          "kind": "range",
+          "min": "0x1f",
+          "max": "0x21",
+          "title_format": "BGM 0x%02x",
+          "extcode": "1"
+        },
+        {
+          "kind": "range",
+          "min": "0x11",
+          "max": "0x1e",
+          "title_format": "SE 0x%02x",
+          "extcode": "1"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/nichibutsu.xml",
+      "source_order": 3455,
+      "archive": "mjsikaku_msx,fmpac_msx",
+      "id": "mjsikaku-msx-fmpac-msx-generic"
+    },
+    {
+      "title": "[MSX] 麻雀刺客(PSG)",
+      "driver": {
+        "name": "msx",
+        "type": "generic",
+        "alias": "日本物産",
+        "platform": "MSX"
+      },
+      "options": [
+        {
+          "name": "init_pc",
+          "value": "0x1000"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "MAIN.BIN",
+          "offset": "0x0100"
+        },
+        {
+          "type": "code",
+          "path": "patch",
+          "offset": "0x1000"
+        },
+        {
+          "type": "code",
+          "path": "DRIVER.BIN",
+          "offset": "0x8000"
+        },
+        {
+          "type": "code",
+          "path": "PDAT.BIN",
+          "offset": "0x9800"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "range",
+          "min": "0x00",
+          "max": "0x10",
+          "title_format": "BGM 0x%02x",
+          "extcode": "1"
+        },
+        {
+          "kind": "range",
+          "min": "0x1f",
+          "max": "0x21",
+          "title_format": "BGM 0x%02x",
+          "extcode": "1"
+        },
+        {
+          "kind": "range",
+          "min": "0x15",
+          "max": "0x1e",
+          "title_format": "SE 0x%02x",
+          "extcode": "1"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/nichibutsu.xml",
+      "source_order": 3456,
+      "archive": "mjsikaku_msx",
+      "id": "mjsikaku-msx-generic"
+    },
+    {
+      "title": "[MSX] 制覇",
+      "driver": {
+        "name": "msx",
+        "type": "generic",
+        "alias": "日本物産",
+        "platform": "MSX"
+      },
+      "options": [
+        {
+          "name": "init_pc",
+          "value": "0x0100"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "MJ.COM",
+          "offset": "0x0100"
+        },
+        {
+          "type": "code",
+          "path": "patch",
+          "offset": "0x0100"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "range",
+          "min": "0x0e",
+          "max": "0x10",
+          "title_format": "BGM 0x%02x",
+          "extcode": "1"
+        },
+        {
+          "kind": "range",
+          "min": "0x1a",
+          "max": "0x1a",
+          "title_format": "BGM 0x%02x",
+          "extcode": "1"
+        },
+        {
+          "kind": "range",
+          "min": "0x1f",
+          "max": "0x27",
+          "title_format": "BGM 0x%02x",
+          "extcode": "1"
+        },
+        {
+          "kind": "range",
+          "min": "0x01",
+          "max": "0x0d",
+          "title_format": "SE 0x%02x",
+          "extcode": "1"
+        },
+        {
+          "kind": "range",
+          "min": "0x12",
+          "max": "0x19",
+          "title_format": "SE 0x%02x",
+          "extcode": "1"
+        },
+        {
+          "kind": "range",
+          "min": "0x1b",
+          "max": "0x1e",
+          "title_format": "SE 0x%02x",
+          "extcode": "1"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/nichibutsu.xml",
+      "source_order": 3457,
+      "archive": "seiha_msx",
+      "id": "seiha-msx-generic"
+    },
+    {
+      "title": "[MSX] 麻雀刺客外伝 花のももこ組!(OPLL)",
+      "driver": {
+        "name": "msx",
+        "type": "generic",
+        "alias": "日本物産",
+        "platform": "MSX"
+      },
+      "options": [
+        {
+          "name": "init_pc",
+          "value": "0x1000"
+        },
+        {
+          "name": "use_opll",
+          "value": "0x01"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "MAIN.BIN",
+          "offset": "0x0100"
+        },
+        {
+          "type": "code",
+          "path": "patch",
+          "offset": "0x1000"
+        },
+        {
+          "type": "code",
+          "path": "FMPAC.ROM",
+          "offset": "0x4000"
+        },
+        {
+          "type": "code",
+          "path": "DRIVER.BIN",
+          "offset": "0x8000"
+        },
+        {
+          "type": "code",
+          "path": "FDAT.BIN",
+          "offset": "0x9800"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "range",
+          "min": "0x00",
+          "max": "0x0d",
+          "title_format": "BGM 0x%02x",
+          "extcode": "1"
+        },
+        {
+          "kind": "range",
+          "min": "0x0e",
+          "max": "0x1e",
+          "title_format": "SE 0x%02x",
+          "extcode": "1"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/nichibutsu.xml",
+      "source_order": 3458,
+      "archive": "hanamomo_msx,fmpac_msx",
+      "id": "hanamomo-msx-fmpac-msx-generic"
+    },
+    {
+      "title": "[MSX] 麻雀刺客外伝 花のももこ組!(PSG)",
+      "driver": {
+        "name": "msx",
+        "type": "generic",
+        "alias": "日本物産",
+        "platform": "MSX"
+      },
+      "options": [
+        {
+          "name": "init_pc",
+          "value": "0x1000"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "MAIN.BIN",
+          "offset": "0x0100"
+        },
+        {
+          "type": "code",
+          "path": "patch",
+          "offset": "0x1000"
+        },
+        {
+          "type": "code",
+          "path": "DRIVER.BIN",
+          "offset": "0x8000"
+        },
+        {
+          "type": "code",
+          "path": "PDAT.BIN",
+          "offset": "0x9800"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "range",
+          "min": "0x00",
+          "max": "0x0d",
+          "title_format": "BGM 0x%02x",
+          "extcode": "1"
+        },
+        {
+          "kind": "range",
+          "min": "0x1f",
+          "max": "0x1f",
+          "title_format": "BGM 0x%02x",
+          "extcode": "1"
+        },
+        {
+          "kind": "range",
+          "min": "0x0e",
+          "max": "0x1e",
+          "title_format": "SE 0x%02x",
+          "extcode": "1"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/nichibutsu.xml",
+      "source_order": 3459,
+      "archive": "hanamomo_msx",
+      "id": "hanamomo-msx-generic"
+    }
+  ]
+}

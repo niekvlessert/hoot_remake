@@ -1,0 +1,6838 @@
+{
+  "format": "hoot-catalog-shard",
+  "version": 1,
+  "source_file": "xml/csware.xml",
+  "date": "2005/09/25",
+  "comments": [
+    " //C's Ware "
+  ],
+  "games": [
+    {
+      "title": "[PC-9801] DESIRE ～背徳の螺旋～",
+      "driver": {
+        "name": "pc98dos",
+        "type": "opn",
+        "alias": "C's Ware",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "funcvect",
+          "value": "0x7e"
+        },
+        {
+          "name": "clockmul",
+          "value": "8"
+        },
+        {
+          "name": "showfm3ex",
+          "value": "1"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "PMD_98.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "PMD.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "DES_SE.EFC",
+          "offset": "0x08"
+        },
+        {
+          "type": "file",
+          "path": "AIR.M",
+          "offset": "0x10"
+        },
+        {
+          "type": "file",
+          "path": "DES_01.M",
+          "offset": "0x11"
+        },
+        {
+          "type": "file",
+          "path": "DES_02.M",
+          "offset": "0x12"
+        },
+        {
+          "type": "file",
+          "path": "DES_03.M",
+          "offset": "0x13"
+        },
+        {
+          "type": "file",
+          "path": "DES_04.M",
+          "offset": "0x14"
+        },
+        {
+          "type": "file",
+          "path": "DES_05.M",
+          "offset": "0x15"
+        },
+        {
+          "type": "file",
+          "path": "DES_07.M",
+          "offset": "0x16"
+        },
+        {
+          "type": "file",
+          "path": "DES_08.M",
+          "offset": "0x17"
+        },
+        {
+          "type": "file",
+          "path": "DES_12.M",
+          "offset": "0x18"
+        },
+        {
+          "type": "file",
+          "path": "DES_13.M",
+          "offset": "0x19"
+        },
+        {
+          "type": "file",
+          "path": "DES_14.M",
+          "offset": "0x1a"
+        },
+        {
+          "type": "file",
+          "path": "DES_15.M",
+          "offset": "0x1b"
+        },
+        {
+          "type": "file",
+          "path": "DES_16.M",
+          "offset": "0x1c"
+        },
+        {
+          "type": "file",
+          "path": "DES_17.M",
+          "offset": "0x1d"
+        },
+        {
+          "type": "file",
+          "path": "DES_19.M",
+          "offset": "0x1e"
+        },
+        {
+          "type": "file",
+          "path": "DES_21.M",
+          "offset": "0x1f"
+        },
+        {
+          "type": "file",
+          "path": "DES_22.M",
+          "offset": "0x20"
+        },
+        {
+          "type": "file",
+          "path": "DES_24.M",
+          "offset": "0x21"
+        },
+        {
+          "type": "file",
+          "path": "DES_26.M",
+          "offset": "0x22"
+        },
+        {
+          "type": "file",
+          "path": "DES_31.M",
+          "offset": "0x23"
+        },
+        {
+          "type": "file",
+          "path": "DES_32.M",
+          "offset": "0x24"
+        },
+        {
+          "type": "file",
+          "path": "DES_34.M",
+          "offset": "0x25"
+        },
+        {
+          "type": "file",
+          "path": "DES_36.M",
+          "offset": "0x26"
+        },
+        {
+          "type": "file",
+          "path": "DES_41.M",
+          "offset": "0x27"
+        },
+        {
+          "type": "file",
+          "path": "DES_42.M",
+          "offset": "0x28"
+        },
+        {
+          "type": "file",
+          "path": "DES_78.M",
+          "offset": "0x29"
+        },
+        {
+          "type": "file",
+          "path": "DES_79.M",
+          "offset": "0x2a"
+        },
+        {
+          "type": "file",
+          "path": "DES_80.M",
+          "offset": "0x2b"
+        },
+        {
+          "type": "file",
+          "path": "DES_82.M",
+          "offset": "0x2c"
+        },
+        {
+          "type": "file",
+          "path": "DES_84.M",
+          "offset": "0x2d"
+        },
+        {
+          "type": "file",
+          "path": "DES_85.M",
+          "offset": "0x2e"
+        },
+        {
+          "type": "file",
+          "path": "ENDING.M",
+          "offset": "0x2f"
+        },
+        {
+          "type": "file",
+          "path": "OPENING.M",
+          "offset": "0x30"
+        },
+        {
+          "type": "file",
+          "path": "TITLE.M",
+          "offset": "0x31"
+        },
+        {
+          "type": "shell",
+          "path": "pmd /k /m10 /v0",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "pmd_98",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x30",
+          "title": "OPENING.M  : Spiral"
+        },
+        {
+          "kind": "title",
+          "code": "0x31",
+          "title": "TITLE.M    : Title"
+        },
+        {
+          "kind": "title",
+          "code": "0x2a",
+          "title": "DES_79.M   : Ham-and-eggs"
+        },
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "DES_01.M   : Ishtal"
+        },
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "DES_02.M   : Tina"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "DES_03.M   : Consideration"
+        },
+        {
+          "kind": "title",
+          "code": "0x15",
+          "title": "DES_05.M   : Nonsense"
+        },
+        {
+          "kind": "title",
+          "code": "0x16",
+          "title": "DES_07.M   : Night"
+        },
+        {
+          "kind": "title",
+          "code": "0x18",
+          "title": "DES_12.M   : Suspect 1"
+        },
+        {
+          "kind": "title",
+          "code": "0x14",
+          "title": "DES_04.M   : Brain"
+        },
+        {
+          "kind": "title",
+          "code": "0x17",
+          "title": "DES_08.M   : Awakening"
+        },
+        {
+          "kind": "title",
+          "code": "0x19",
+          "title": "DES_13.M   : Dream"
+        },
+        {
+          "kind": "title",
+          "code": "0x24",
+          "title": "DES_32.M   : Smile"
+        },
+        {
+          "kind": "title",
+          "code": "0x1e",
+          "title": "DES_19.M   : Pursuit"
+        },
+        {
+          "kind": "title",
+          "code": "0x2d",
+          "title": "DES_84.M   : Suspect 2"
+        },
+        {
+          "kind": "title",
+          "code": "0x29",
+          "title": "DES_78.M   : Sunset"
+        },
+        {
+          "kind": "title",
+          "code": "0x1f",
+          "title": "DES_21.M   : Beat"
+        },
+        {
+          "kind": "title",
+          "code": "0x25",
+          "title": "DES_34.M   : Indignation"
+        },
+        {
+          "kind": "title",
+          "code": "0x20",
+          "title": "DES_22.M   : Regret"
+        },
+        {
+          "kind": "title",
+          "code": "0x26",
+          "title": "DES_36.M   : Plot"
+        },
+        {
+          "kind": "title",
+          "code": "0x21",
+          "title": "DES_24.M   : Fact"
+        },
+        {
+          "kind": "title",
+          "code": "0x22",
+          "title": "DES_26.M   : Reflector"
+        },
+        {
+          "kind": "title",
+          "code": "0x2c",
+          "title": "DES_82.M   : Solitude"
+        },
+        {
+          "kind": "title",
+          "code": "0x1b",
+          "title": "DES_15.M   : Memory 1"
+        },
+        {
+          "kind": "title",
+          "code": "0x1c",
+          "title": "DES_16.M   : Memory 2"
+        },
+        {
+          "kind": "title",
+          "code": "0x1d",
+          "title": "DES_17.M   : Feel"
+        },
+        {
+          "kind": "title",
+          "code": "0x2e",
+          "title": "DES_85.M   : Lament"
+        },
+        {
+          "kind": "title",
+          "code": "0x2f",
+          "title": "ENDING.M   : Beginning"
+        },
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "AIR.M      :"
+        },
+        {
+          "kind": "title",
+          "code": "0x1a",
+          "title": "DES_14.M   :"
+        },
+        {
+          "kind": "title",
+          "code": "0x23",
+          "title": "DES_31.M   : Responser"
+        },
+        {
+          "kind": "title",
+          "code": "0x2b",
+          "title": "DES_80.M   :"
+        },
+        {
+          "kind": "title",
+          "code": "0x27",
+          "title": "DES_41.M   : SE"
+        },
+        {
+          "kind": "title",
+          "code": "0x28",
+          "title": "DES_42.M   : SE"
+        },
+        {
+          "kind": "range",
+          "min": "0x0801",
+          "max": "0x0821",
+          "title_format": "DES_SE.EFC : %02X",
+          "extcode": "0"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/csware.xml",
+      "source_order": 961,
+      "archive": "desire_98",
+      "id": "desire-98-opn"
+    },
+    {
+      "title": "[PC-9801] EVE burst error(OPN)",
+      "driver": {
+        "name": "pc98dos",
+        "type": "opn",
+        "alias": "C's Ware",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "funcvect",
+          "value": "0x7e"
+        },
+        {
+          "name": "clockmul",
+          "value": "8"
+        },
+        {
+          "name": "showfm3ex",
+          "value": "1"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "PMD_98.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "PMD.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "EVE.EFC",
+          "offset": "0x08"
+        },
+        {
+          "type": "file",
+          "path": "EVE_01.M",
+          "offset": "0x10"
+        },
+        {
+          "type": "file",
+          "path": "EVE_02.M",
+          "offset": "0x11"
+        },
+        {
+          "type": "file",
+          "path": "EVE_03.M",
+          "offset": "0x12"
+        },
+        {
+          "type": "file",
+          "path": "EVE_04.M",
+          "offset": "0x13"
+        },
+        {
+          "type": "file",
+          "path": "EVE_05.M",
+          "offset": "0x14"
+        },
+        {
+          "type": "file",
+          "path": "EVE_06.M",
+          "offset": "0x15"
+        },
+        {
+          "type": "file",
+          "path": "EVE_07.M",
+          "offset": "0x16"
+        },
+        {
+          "type": "file",
+          "path": "EVE_08.M",
+          "offset": "0x17"
+        },
+        {
+          "type": "file",
+          "path": "EVE_09.M",
+          "offset": "0x18"
+        },
+        {
+          "type": "file",
+          "path": "EVE_10.M",
+          "offset": "0x19"
+        },
+        {
+          "type": "file",
+          "path": "EVE_11.M",
+          "offset": "0x1a"
+        },
+        {
+          "type": "file",
+          "path": "EVE_12.M",
+          "offset": "0x1b"
+        },
+        {
+          "type": "file",
+          "path": "EVE_13.M",
+          "offset": "0x1c"
+        },
+        {
+          "type": "file",
+          "path": "EVE_14.M",
+          "offset": "0x1d"
+        },
+        {
+          "type": "file",
+          "path": "EVE_15.M",
+          "offset": "0x1e"
+        },
+        {
+          "type": "file",
+          "path": "EVE_16.M",
+          "offset": "0x1f"
+        },
+        {
+          "type": "file",
+          "path": "EVE_17.M",
+          "offset": "0x20"
+        },
+        {
+          "type": "file",
+          "path": "EVE_18.M",
+          "offset": "0x21"
+        },
+        {
+          "type": "file",
+          "path": "EVE_19.M",
+          "offset": "0x22"
+        },
+        {
+          "type": "file",
+          "path": "EVE_19A.M",
+          "offset": "0x23"
+        },
+        {
+          "type": "file",
+          "path": "EVE_19B.M",
+          "offset": "0x24"
+        },
+        {
+          "type": "file",
+          "path": "EVE_20.M",
+          "offset": "0x25"
+        },
+        {
+          "type": "file",
+          "path": "EVE_21.M",
+          "offset": "0x26"
+        },
+        {
+          "type": "file",
+          "path": "EVE_22.M",
+          "offset": "0x27"
+        },
+        {
+          "type": "file",
+          "path": "EVE_23.M",
+          "offset": "0x28"
+        },
+        {
+          "type": "file",
+          "path": "EVE_24.M",
+          "offset": "0x29"
+        },
+        {
+          "type": "file",
+          "path": "EVE_25.M",
+          "offset": "0x2a"
+        },
+        {
+          "type": "file",
+          "path": "EVE_26.M",
+          "offset": "0x2b"
+        },
+        {
+          "type": "file",
+          "path": "EVE_27.M",
+          "offset": "0x2c"
+        },
+        {
+          "type": "file",
+          "path": "EVE_28.M",
+          "offset": "0x2d"
+        },
+        {
+          "type": "file",
+          "path": "EVE_29.M",
+          "offset": "0x2e"
+        },
+        {
+          "type": "file",
+          "path": "EVE_30.M",
+          "offset": "0x2f"
+        },
+        {
+          "type": "file",
+          "path": "EVE_31.M",
+          "offset": "0x30"
+        },
+        {
+          "type": "file",
+          "path": "EVE_32.M",
+          "offset": "0x31"
+        },
+        {
+          "type": "file",
+          "path": "EVE_33.M",
+          "offset": "0x32"
+        },
+        {
+          "type": "file",
+          "path": "EVE_34.M",
+          "offset": "0x33"
+        },
+        {
+          "type": "file",
+          "path": "EVE_35.M",
+          "offset": "0x34"
+        },
+        {
+          "type": "file",
+          "path": "EVE_36.M",
+          "offset": "0x35"
+        },
+        {
+          "type": "file",
+          "path": "EVE_37.M",
+          "offset": "0x36"
+        },
+        {
+          "type": "file",
+          "path": "EVE_38.M",
+          "offset": "0x37"
+        },
+        {
+          "type": "file",
+          "path": "EVE_39.M",
+          "offset": "0x38"
+        },
+        {
+          "type": "file",
+          "path": "EVE_40.M",
+          "offset": "0x39"
+        },
+        {
+          "type": "file",
+          "path": "EVE_41.M",
+          "offset": "0x3a"
+        },
+        {
+          "type": "file",
+          "path": "EVE_42.M",
+          "offset": "0x3b"
+        },
+        {
+          "type": "file",
+          "path": "EVE_43.M",
+          "offset": "0x3c"
+        },
+        {
+          "type": "file",
+          "path": "EVE_44.M",
+          "offset": "0x3d"
+        },
+        {
+          "type": "file",
+          "path": "EVE_45.M",
+          "offset": "0x3e"
+        },
+        {
+          "type": "file",
+          "path": "EVE_50.M",
+          "offset": "0x3f"
+        },
+        {
+          "type": "file",
+          "path": "EVE_51A.M",
+          "offset": "0x40"
+        },
+        {
+          "type": "file",
+          "path": "EVE_51B.M",
+          "offset": "0x41"
+        },
+        {
+          "type": "file",
+          "path": "EVE_51C.M",
+          "offset": "0x42"
+        },
+        {
+          "type": "file",
+          "path": "EVE_51D.M",
+          "offset": "0x43"
+        },
+        {
+          "type": "file",
+          "path": "EVE_51E.M",
+          "offset": "0x44"
+        },
+        {
+          "type": "file",
+          "path": "EVE_52.M",
+          "offset": "0x45"
+        },
+        {
+          "type": "file",
+          "path": "EVE_54.M",
+          "offset": "0x46"
+        },
+        {
+          "type": "file",
+          "path": "EVE_54A.M",
+          "offset": "0x47"
+        },
+        {
+          "type": "file",
+          "path": "EVE_54B.M",
+          "offset": "0x48"
+        },
+        {
+          "type": "file",
+          "path": "EVE_55.M",
+          "offset": "0x49"
+        },
+        {
+          "type": "file",
+          "path": "EVE_56.M",
+          "offset": "0x50"
+        },
+        {
+          "type": "file",
+          "path": "EVE_57.M",
+          "offset": "0x51"
+        },
+        {
+          "type": "file",
+          "path": "EVE_58.M",
+          "offset": "0x52"
+        },
+        {
+          "type": "file",
+          "path": "EVE_59.M",
+          "offset": "0x53"
+        },
+        {
+          "type": "file",
+          "path": "EVE_60.M",
+          "offset": "0x54"
+        },
+        {
+          "type": "file",
+          "path": "EVE_61.M",
+          "offset": "0x55"
+        },
+        {
+          "type": "file",
+          "path": "EVE_62.M",
+          "offset": "0x56"
+        },
+        {
+          "type": "shell",
+          "path": "pmd # /m10 /e4 /v0 /k /f",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "pmd_98",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "EVE_01.M  : Main(Noon) for Woman"
+        },
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "EVE_02.M  : Main(Night) for Woman"
+        },
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "EVE_03.M  : あまぎ探偵事務所"
+        },
+        {
+          "kind": "title",
+          "code": "0x3c",
+          "title": "EVE_43.M  : 日常"
+        },
+        {
+          "kind": "title",
+          "code": "0x38",
+          "title": "EVE_39.M  : 招かざる客"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "EVE_04.M  : 決意"
+        },
+        {
+          "kind": "title",
+          "code": "0x14",
+          "title": "EVE_05.M  : 安らぎ I"
+        },
+        {
+          "kind": "title",
+          "code": "0x15",
+          "title": "EVE_06.M  : Main(Noon) for Man"
+        },
+        {
+          "kind": "title",
+          "code": "0x16",
+          "title": "EVE_07.M  : イール外国人学校(Noon)"
+        },
+        {
+          "kind": "title",
+          "code": "0x17",
+          "title": "EVE_08.M  : Main(Night) for Man"
+        },
+        {
+          "kind": "title",
+          "code": "0x18",
+          "title": "EVE_09.M  : Bar"
+        },
+        {
+          "kind": "title",
+          "code": "0x19",
+          "title": "EVE_10.M  : イール外国人学校(Night)"
+        },
+        {
+          "kind": "title",
+          "code": "0x1a",
+          "title": "EVE_11.M  : 甲野本部長"
+        },
+        {
+          "kind": "title",
+          "code": "0x1b",
+          "title": "EVE_12.M  : まりな自室"
+        },
+        {
+          "kind": "title",
+          "code": "0x1c",
+          "title": "EVE_13.M  : 推理 Theme I(Common)"
+        },
+        {
+          "kind": "title",
+          "code": "0x1d",
+          "title": "EVE_14.M  : 夢   Theme II"
+        },
+        {
+          "kind": "title",
+          "code": "0x3e",
+          "title": "EVE_45.M  : 錯乱"
+        },
+        {
+          "kind": "title",
+          "code": "0x1e",
+          "title": "EVE_15.M  : 脱走 Theme III"
+        },
+        {
+          "kind": "title",
+          "code": "0x1f",
+          "title": "EVE_16.M  : 憩い"
+        },
+        {
+          "kind": "title",
+          "code": "0x39",
+          "title": "EVE_40.M  : 悪寒"
+        },
+        {
+          "kind": "title",
+          "code": "0x20",
+          "title": "EVE_17.M  : 安らぎ II"
+        },
+        {
+          "kind": "title",
+          "code": "0x21",
+          "title": "EVE_18.M  : トリスタン号"
+        },
+        {
+          "kind": "title",
+          "code": "0x22",
+          "title": "EVE_19.M  : 信頼"
+        },
+        {
+          "kind": "title",
+          "code": "0x25",
+          "title": "EVE_20.M  : 恐怖 Theme IV"
+        },
+        {
+          "kind": "title",
+          "code": "0x26",
+          "title": "EVE_21.M  : 会話"
+        },
+        {
+          "kind": "title",
+          "code": "0x27",
+          "title": "EVE_22.M  : Opening Bridge"
+        },
+        {
+          "kind": "title",
+          "code": "0x28",
+          "title": "EVE_23.M  : プリシア"
+        },
+        {
+          "kind": "title",
+          "code": "0x29",
+          "title": "EVE_24.M  : 死臭"
+        },
+        {
+          "kind": "title",
+          "code": "0x3a",
+          "title": "EVE_41.M  : 弥生"
+        },
+        {
+          "kind": "title",
+          "code": "0x3b",
+          "title": "EVE_42.M  : 狂気"
+        },
+        {
+          "kind": "title",
+          "code": "0x2a",
+          "title": "EVE_25.M  : エルディア"
+        },
+        {
+          "kind": "title",
+          "code": "0x2b",
+          "title": "EVE_26.M  : 疑惑"
+        },
+        {
+          "kind": "title",
+          "code": "0x37",
+          "title": "EVE_38.M  : 思惑"
+        },
+        {
+          "kind": "title",
+          "code": "0x2c",
+          "title": "EVE_27.M  : ピンチ Theme V"
+        },
+        {
+          "kind": "title",
+          "code": "0x2d",
+          "title": "EVE_28.M  : 血族"
+        },
+        {
+          "kind": "title",
+          "code": "0x2e",
+          "title": "EVE_29.M  : 日付変更"
+        },
+        {
+          "kind": "title",
+          "code": "0x2f",
+          "title": "EVE_30.M  : 決意"
+        },
+        {
+          "kind": "title",
+          "code": "0x3d",
+          "title": "EVE_44.M  : ハッカー"
+        },
+        {
+          "kind": "title",
+          "code": "0x30",
+          "title": "EVE_31.M  : 漂流"
+        },
+        {
+          "kind": "title",
+          "code": "0x31",
+          "title": "EVE_32.M  : 日記 I"
+        },
+        {
+          "kind": "title",
+          "code": "0x32",
+          "title": "EVE_33.M  : 日記 II"
+        },
+        {
+          "kind": "title",
+          "code": "0x33",
+          "title": "EVE_34.M  : μ-101"
+        },
+        {
+          "kind": "title",
+          "code": "0x34",
+          "title": "EVE_35.M  : Ending I"
+        },
+        {
+          "kind": "title",
+          "code": "0x35",
+          "title": "EVE_36.M  : Ending II"
+        },
+        {
+          "kind": "title",
+          "code": "0x36",
+          "title": "EVE_37.M  : Ending III"
+        },
+        {
+          "kind": "title",
+          "code": "0x23",
+          "title": "EVE_19A.M : 信頼"
+        },
+        {
+          "kind": "title",
+          "code": "0x24",
+          "title": "EVE_19B.M : 信頼"
+        },
+        {
+          "kind": "title",
+          "code": "0x3f",
+          "title": "EVE_50.M  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x40",
+          "title": "EVE_51A.M :"
+        },
+        {
+          "kind": "title",
+          "code": "0x41",
+          "title": "EVE_51B.M :"
+        },
+        {
+          "kind": "title",
+          "code": "0x42",
+          "title": "EVE_51C.M :"
+        },
+        {
+          "kind": "title",
+          "code": "0x43",
+          "title": "EVE_51D.M :"
+        },
+        {
+          "kind": "title",
+          "code": "0x44",
+          "title": "EVE_51E.M :"
+        },
+        {
+          "kind": "title",
+          "code": "0x45",
+          "title": "EVE_52.M  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x46",
+          "title": "EVE_54.M  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x47",
+          "title": "EVE_54A.M :"
+        },
+        {
+          "kind": "title",
+          "code": "0x48",
+          "title": "EVE_54B.M :"
+        },
+        {
+          "kind": "title",
+          "code": "0x49",
+          "title": "EVE_55.M  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x50",
+          "title": "EVE_56.M  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x51",
+          "title": "EVE_57.M  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x52",
+          "title": "EVE_58.M  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x53",
+          "title": "EVE_59.M  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x54",
+          "title": "EVE_60.M  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x55",
+          "title": "EVE_61.M  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x56",
+          "title": "EVE_62.M  :"
+        },
+        {
+          "kind": "range",
+          "min": "0x0801",
+          "max": "0x0836",
+          "title_format": "EVE.EFC   : %02X",
+          "extcode": "0"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/csware.xml",
+      "source_order": 962,
+      "archive": "eve_98",
+      "id": "eve-98-opn"
+    },
+    {
+      "title": "[PC-9801] EVE burst error(PPZ8)",
+      "driver": {
+        "name": "pc98dos",
+        "type": "86",
+        "alias": "C's Ware",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "funcvect",
+          "value": "0x7e"
+        },
+        {
+          "name": "extramsize",
+          "value": "0x400000"
+        },
+        {
+          "name": "clockmul",
+          "value": "0x20"
+        },
+        {
+          "name": "showfm3ex",
+          "value": "1"
+        },
+        {
+          "name": "pcm_mix",
+          "value": "0x200"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "PMD_98.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "PMDPPZ.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "EMMDRV.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "PPZ8.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "EVE.PZI",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "EVE_01.M",
+          "offset": "0x10"
+        },
+        {
+          "type": "file",
+          "path": "EVE_02.M",
+          "offset": "0x11"
+        },
+        {
+          "type": "file",
+          "path": "EVE_03.M",
+          "offset": "0x12"
+        },
+        {
+          "type": "file",
+          "path": "EVE_04.M",
+          "offset": "0x13"
+        },
+        {
+          "type": "file",
+          "path": "EVE_05.M",
+          "offset": "0x14"
+        },
+        {
+          "type": "file",
+          "path": "EVE_06.M",
+          "offset": "0x15"
+        },
+        {
+          "type": "file",
+          "path": "EVE_07.M",
+          "offset": "0x16"
+        },
+        {
+          "type": "file",
+          "path": "EVE_08.M",
+          "offset": "0x17"
+        },
+        {
+          "type": "file",
+          "path": "EVE_09.M",
+          "offset": "0x18"
+        },
+        {
+          "type": "file",
+          "path": "EVE_10.M",
+          "offset": "0x19"
+        },
+        {
+          "type": "file",
+          "path": "EVE_11.M",
+          "offset": "0x1a"
+        },
+        {
+          "type": "file",
+          "path": "EVE_12.M",
+          "offset": "0x1b"
+        },
+        {
+          "type": "file",
+          "path": "EVE_13.M",
+          "offset": "0x1c"
+        },
+        {
+          "type": "file",
+          "path": "EVE_14.M",
+          "offset": "0x1d"
+        },
+        {
+          "type": "file",
+          "path": "EVE_15.M",
+          "offset": "0x1e"
+        },
+        {
+          "type": "file",
+          "path": "EVE_16.M",
+          "offset": "0x1f"
+        },
+        {
+          "type": "file",
+          "path": "EVE_17.M",
+          "offset": "0x20"
+        },
+        {
+          "type": "file",
+          "path": "EVE_18.M",
+          "offset": "0x21"
+        },
+        {
+          "type": "file",
+          "path": "EVE_19.M",
+          "offset": "0x22"
+        },
+        {
+          "type": "file",
+          "path": "EVE_19A.M",
+          "offset": "0x23"
+        },
+        {
+          "type": "file",
+          "path": "EVE_19B.M",
+          "offset": "0x24"
+        },
+        {
+          "type": "file",
+          "path": "EVE_20.M",
+          "offset": "0x25"
+        },
+        {
+          "type": "file",
+          "path": "EVE_21.M",
+          "offset": "0x26"
+        },
+        {
+          "type": "file",
+          "path": "EVE_22.M",
+          "offset": "0x27"
+        },
+        {
+          "type": "file",
+          "path": "EVE_23.M",
+          "offset": "0x28"
+        },
+        {
+          "type": "file",
+          "path": "EVE_24.M",
+          "offset": "0x29"
+        },
+        {
+          "type": "file",
+          "path": "EVE_25.M",
+          "offset": "0x2a"
+        },
+        {
+          "type": "file",
+          "path": "EVE_26.M",
+          "offset": "0x2b"
+        },
+        {
+          "type": "file",
+          "path": "EVE_27.M",
+          "offset": "0x2c"
+        },
+        {
+          "type": "file",
+          "path": "EVE_28.M",
+          "offset": "0x2d"
+        },
+        {
+          "type": "file",
+          "path": "EVE_29.M",
+          "offset": "0x2e"
+        },
+        {
+          "type": "file",
+          "path": "EVE_30.M",
+          "offset": "0x2f"
+        },
+        {
+          "type": "file",
+          "path": "EVE_31.M",
+          "offset": "0x30"
+        },
+        {
+          "type": "file",
+          "path": "EVE_32.M",
+          "offset": "0x31"
+        },
+        {
+          "type": "file",
+          "path": "EVE_33.M",
+          "offset": "0x32"
+        },
+        {
+          "type": "file",
+          "path": "EVE_34.M",
+          "offset": "0x33"
+        },
+        {
+          "type": "file",
+          "path": "EVE_35.M",
+          "offset": "0x34"
+        },
+        {
+          "type": "file",
+          "path": "EVE_36.M",
+          "offset": "0x35"
+        },
+        {
+          "type": "file",
+          "path": "EVE_37.M",
+          "offset": "0x36"
+        },
+        {
+          "type": "file",
+          "path": "EVE_38.M",
+          "offset": "0x37"
+        },
+        {
+          "type": "file",
+          "path": "EVE_39.M",
+          "offset": "0x38"
+        },
+        {
+          "type": "file",
+          "path": "EVE_40.M",
+          "offset": "0x39"
+        },
+        {
+          "type": "file",
+          "path": "EVE_41.M",
+          "offset": "0x3a"
+        },
+        {
+          "type": "file",
+          "path": "EVE_42.M",
+          "offset": "0x3b"
+        },
+        {
+          "type": "file",
+          "path": "EVE_43.M",
+          "offset": "0x3c"
+        },
+        {
+          "type": "file",
+          "path": "EVE_44.M",
+          "offset": "0x3d"
+        },
+        {
+          "type": "file",
+          "path": "EVE_45.M",
+          "offset": "0x3e"
+        },
+        {
+          "type": "file",
+          "path": "EVE_50.M",
+          "offset": "0x3f"
+        },
+        {
+          "type": "file",
+          "path": "EVE_51A.M",
+          "offset": "0x40"
+        },
+        {
+          "type": "file",
+          "path": "EVE_51B.M",
+          "offset": "0x41"
+        },
+        {
+          "type": "file",
+          "path": "EVE_51C.M",
+          "offset": "0x42"
+        },
+        {
+          "type": "file",
+          "path": "EVE_51D.M",
+          "offset": "0x43"
+        },
+        {
+          "type": "file",
+          "path": "EVE_51E.M",
+          "offset": "0x44"
+        },
+        {
+          "type": "file",
+          "path": "EVE_52.M",
+          "offset": "0x45"
+        },
+        {
+          "type": "file",
+          "path": "EVE_54A.M",
+          "offset": "0x46"
+        },
+        {
+          "type": "file",
+          "path": "EVE_54B.M",
+          "offset": "0x47"
+        },
+        {
+          "type": "file",
+          "path": "EVE_55.M",
+          "offset": "0x48"
+        },
+        {
+          "type": "file",
+          "path": "EVE_56.M",
+          "offset": "0x49"
+        },
+        {
+          "type": "file",
+          "path": "EVE_57.M",
+          "offset": "0x50"
+        },
+        {
+          "type": "file",
+          "path": "EVE_58.M",
+          "offset": "0x51"
+        },
+        {
+          "type": "file",
+          "path": "EVE_59.M",
+          "offset": "0x52"
+        },
+        {
+          "type": "file",
+          "path": "EVE_60.M",
+          "offset": "0x53"
+        },
+        {
+          "type": "file",
+          "path": "EVE_61.M",
+          "offset": "0x54"
+        },
+        {
+          "type": "file",
+          "path": "EVE_62.M",
+          "offset": "0x55"
+        },
+        {
+          "type": "shell",
+          "path": "EMMDRV",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "PPZ8 S -F -B3 -I0",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "PMDPPZ # /DF16 /M13 /E4 /V0 /K /F",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "pmd_98",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "EVE_01.M  : Main(Noon) for Woman"
+        },
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "EVE_02.M  : Main(Night) for Woman"
+        },
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "EVE_03.M  : あまぎ探偵事務所"
+        },
+        {
+          "kind": "title",
+          "code": "0x3c",
+          "title": "EVE_43.M  : 日常"
+        },
+        {
+          "kind": "title",
+          "code": "0x38",
+          "title": "EVE_39.M  : 招かざる客"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "EVE_04.M  : 決意"
+        },
+        {
+          "kind": "title",
+          "code": "0x14",
+          "title": "EVE_05.M  : 安らぎ I"
+        },
+        {
+          "kind": "title",
+          "code": "0x15",
+          "title": "EVE_06.M  : Main(Noon) for Man"
+        },
+        {
+          "kind": "title",
+          "code": "0x16",
+          "title": "EVE_07.M  : イール外国人学校(Noon)"
+        },
+        {
+          "kind": "title",
+          "code": "0x17",
+          "title": "EVE_08.M  : Main(Night) for Man"
+        },
+        {
+          "kind": "title",
+          "code": "0x18",
+          "title": "EVE_09.M  : Bar"
+        },
+        {
+          "kind": "title",
+          "code": "0x19",
+          "title": "EVE_10.M  : イール外国人学校(Night)"
+        },
+        {
+          "kind": "title",
+          "code": "0x1a",
+          "title": "EVE_11.M  : 甲野本部長"
+        },
+        {
+          "kind": "title",
+          "code": "0x1b",
+          "title": "EVE_12.M  : まりな自室"
+        },
+        {
+          "kind": "title",
+          "code": "0x1c",
+          "title": "EVE_13.M  : 推理 Theme I(Common)"
+        },
+        {
+          "kind": "title",
+          "code": "0x1d",
+          "title": "EVE_14.M  : 夢   Theme II"
+        },
+        {
+          "kind": "title",
+          "code": "0x3e",
+          "title": "EVE_45.M  : 錯乱"
+        },
+        {
+          "kind": "title",
+          "code": "0x1e",
+          "title": "EVE_15.M  : 脱走 Theme III"
+        },
+        {
+          "kind": "title",
+          "code": "0x1f",
+          "title": "EVE_16.M  : 憩い"
+        },
+        {
+          "kind": "title",
+          "code": "0x39",
+          "title": "EVE_40.M  : 悪寒"
+        },
+        {
+          "kind": "title",
+          "code": "0x20",
+          "title": "EVE_17.M  : 安らぎ II"
+        },
+        {
+          "kind": "title",
+          "code": "0x21",
+          "title": "EVE_18.M  : トリスタン号"
+        },
+        {
+          "kind": "title",
+          "code": "0x22",
+          "title": "EVE_19.M  : 信頼"
+        },
+        {
+          "kind": "title",
+          "code": "0x25",
+          "title": "EVE_20.M  : 恐怖 Theme IV"
+        },
+        {
+          "kind": "title",
+          "code": "0x26",
+          "title": "EVE_21.M  : 会話"
+        },
+        {
+          "kind": "title",
+          "code": "0x27",
+          "title": "EVE_22.M  : Opening Bridge"
+        },
+        {
+          "kind": "title",
+          "code": "0x28",
+          "title": "EVE_23.M  : プリシア"
+        },
+        {
+          "kind": "title",
+          "code": "0x29",
+          "title": "EVE_24.M  : 死臭"
+        },
+        {
+          "kind": "title",
+          "code": "0x3a",
+          "title": "EVE_41.M  : 弥生"
+        },
+        {
+          "kind": "title",
+          "code": "0x3b",
+          "title": "EVE_42.M  : 狂気"
+        },
+        {
+          "kind": "title",
+          "code": "0x2a",
+          "title": "EVE_25.M  : エルディア"
+        },
+        {
+          "kind": "title",
+          "code": "0x2b",
+          "title": "EVE_26.M  : 疑惑"
+        },
+        {
+          "kind": "title",
+          "code": "0x37",
+          "title": "EVE_38.M  : 思惑"
+        },
+        {
+          "kind": "title",
+          "code": "0x2c",
+          "title": "EVE_27.M  : ピンチ Theme V"
+        },
+        {
+          "kind": "title",
+          "code": "0x2d",
+          "title": "EVE_28.M  : 血族"
+        },
+        {
+          "kind": "title",
+          "code": "0x2e",
+          "title": "EVE_29.M  : 日付変更"
+        },
+        {
+          "kind": "title",
+          "code": "0x2f",
+          "title": "EVE_30.M  : 決意"
+        },
+        {
+          "kind": "title",
+          "code": "0x3d",
+          "title": "EVE_44.M  : ハッカー"
+        },
+        {
+          "kind": "title",
+          "code": "0x30",
+          "title": "EVE_31.M  : 漂流"
+        },
+        {
+          "kind": "title",
+          "code": "0x31",
+          "title": "EVE_32.M  : 日記 I"
+        },
+        {
+          "kind": "title",
+          "code": "0x32",
+          "title": "EVE_33.M  : 日記 II"
+        },
+        {
+          "kind": "title",
+          "code": "0x33",
+          "title": "EVE_34.M  : μ-101"
+        },
+        {
+          "kind": "title",
+          "code": "0x34",
+          "title": "EVE_35.M  : Ending I"
+        },
+        {
+          "kind": "title",
+          "code": "0x35",
+          "title": "EVE_36.M  : Ending II"
+        },
+        {
+          "kind": "title",
+          "code": "0x36",
+          "title": "EVE_37.M  : Ending III"
+        },
+        {
+          "kind": "title",
+          "code": "0x23",
+          "title": "EVE_19A.M : 信頼"
+        },
+        {
+          "kind": "title",
+          "code": "0x24",
+          "title": "EVE_19B.M : 信頼"
+        },
+        {
+          "kind": "title",
+          "code": "0x3f",
+          "title": "EVE_50.M  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x40",
+          "title": "EVE_51A.M :"
+        },
+        {
+          "kind": "title",
+          "code": "0x41",
+          "title": "EVE_51B.M :"
+        },
+        {
+          "kind": "title",
+          "code": "0x42",
+          "title": "EVE_51C.M :"
+        },
+        {
+          "kind": "title",
+          "code": "0x43",
+          "title": "EVE_51D.M :"
+        },
+        {
+          "kind": "title",
+          "code": "0x44",
+          "title": "EVE_51E.M :"
+        },
+        {
+          "kind": "title",
+          "code": "0x45",
+          "title": "EVE_52.M  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x46",
+          "title": "EVE_54A.M :"
+        },
+        {
+          "kind": "title",
+          "code": "0x47",
+          "title": "EVE_54B.M :"
+        },
+        {
+          "kind": "title",
+          "code": "0x48",
+          "title": "EVE_55.M  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x49",
+          "title": "EVE_56.M  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x50",
+          "title": "EVE_57.M  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x51",
+          "title": "EVE_58.M  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x52",
+          "title": "EVE_59.M  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x53",
+          "title": "EVE_60.M  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x54",
+          "title": "EVE_61.M  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x55",
+          "title": "EVE_62.M  :"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/csware.xml",
+      "source_order": 963,
+      "archive": "eveppz8_98",
+      "id": "eveppz8-98-86"
+    },
+    {
+      "title": "[PC-9801] GLO･RI･A ～禁断の血族～",
+      "driver": {
+        "name": "pc98dos",
+        "type": "opn",
+        "alias": "C's Ware",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "funcvect",
+          "value": "0x7e"
+        },
+        {
+          "name": "clockmul",
+          "value": "8"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "PMD_98.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "PMD.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "GLO.EFC",
+          "offset": "0x08"
+        },
+        {
+          "type": "file",
+          "path": "BIRD.M",
+          "offset": "0x10"
+        },
+        {
+          "type": "file",
+          "path": "CG-MODE.M",
+          "offset": "0x11"
+        },
+        {
+          "type": "file",
+          "path": "GL04.M",
+          "offset": "0x12"
+        },
+        {
+          "type": "file",
+          "path": "GL04_MUS.M",
+          "offset": "0x13"
+        },
+        {
+          "type": "file",
+          "path": "GL06.M",
+          "offset": "0x14"
+        },
+        {
+          "type": "file",
+          "path": "GL11.M",
+          "offset": "0x15"
+        },
+        {
+          "type": "file",
+          "path": "GL12.M",
+          "offset": "0x16"
+        },
+        {
+          "type": "file",
+          "path": "LEANE.M",
+          "offset": "0x17"
+        },
+        {
+          "type": "file",
+          "path": "LEANE_OP.M",
+          "offset": "0x18"
+        },
+        {
+          "type": "file",
+          "path": "LS64.M",
+          "offset": "0x19"
+        },
+        {
+          "type": "file",
+          "path": "LS72.M",
+          "offset": "0x1a"
+        },
+        {
+          "type": "file",
+          "path": "MEI.M",
+          "offset": "0x1b"
+        },
+        {
+          "type": "file",
+          "path": "RAIN.M",
+          "offset": "0x1c"
+        },
+        {
+          "type": "file",
+          "path": "WAKEUP.M",
+          "offset": "0x1d"
+        },
+        {
+          "type": "file",
+          "path": "WIND.M",
+          "offset": "0x1e"
+        },
+        {
+          "type": "shell",
+          "path": "pmd /K /M8 /V8 /E4",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "pmd_98",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x17",
+          "title": "LEANE.M    : Leant on Him"
+        },
+        {
+          "kind": "title",
+          "code": "0x18",
+          "title": "LEANE_OP.M : `Gloria'"
+        },
+        {
+          "kind": "title",
+          "code": "0x19",
+          "title": "LS64.M     : Go for A Drive in A Car"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "GL04_MUS.M : Celebrate A Marriage"
+        },
+        {
+          "kind": "title",
+          "code": "0x14",
+          "title": "GL06.M     : Dead Close"
+        },
+        {
+          "kind": "title",
+          "code": "0x1b",
+          "title": "MEI.M      : Monkey Jester"
+        },
+        {
+          "kind": "title",
+          "code": "0x1a",
+          "title": "LS72.M     : Fine Sunday"
+        },
+        {
+          "kind": "title",
+          "code": "0x15",
+          "title": "GL11.M     : Next Challenge"
+        },
+        {
+          "kind": "title",
+          "code": "0x16",
+          "title": "GL12.M     : A Cog of The Lust"
+        },
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "CG-MODE.M  : Moon Flight"
+        },
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "GL04.M     : Celebrate a Marriage(Bell)"
+        },
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "BIRD.M     : Bird mornin"
+        },
+        {
+          "kind": "title",
+          "code": "0x1d",
+          "title": "WAKEUP.M   : おっき"
+        },
+        {
+          "kind": "title",
+          "code": "0x1c",
+          "title": "RAIN.M     : 嵐"
+        },
+        {
+          "kind": "title",
+          "code": "0x1e",
+          "title": "WIND.M     : 風.WIND"
+        },
+        {
+          "kind": "range",
+          "min": "0x0802",
+          "max": "0x080c",
+          "title_format": "GLO.EFC    : %2X",
+          "extcode": "1"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/csware.xml",
+      "source_order": 964,
+      "archive": "gloria_98",
+      "id": "gloria-98-opn"
+    },
+    {
+      "title": "[PC-9801] XENON ～夢幻の肢体～",
+      "driver": {
+        "name": "pc98dos",
+        "type": "opn",
+        "alias": "C's Ware",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "funcvect",
+          "value": "0x7e"
+        },
+        {
+          "name": "clockmul",
+          "value": "8"
+        },
+        {
+          "name": "showfm3ex",
+          "value": "1"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "PMD_98.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "PMD.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "XEN_SE.EFC",
+          "offset": "0x08"
+        },
+        {
+          "type": "file",
+          "path": "XENON_01.M",
+          "offset": "0x10"
+        },
+        {
+          "type": "file",
+          "path": "XENON_02.M",
+          "offset": "0x11"
+        },
+        {
+          "type": "file",
+          "path": "XENON_03.M",
+          "offset": "0x12"
+        },
+        {
+          "type": "file",
+          "path": "XENON_04.M",
+          "offset": "0x13"
+        },
+        {
+          "type": "file",
+          "path": "XENON_05.M",
+          "offset": "0x14"
+        },
+        {
+          "type": "file",
+          "path": "XENON_06.M",
+          "offset": "0x15"
+        },
+        {
+          "type": "file",
+          "path": "XENON_07.M",
+          "offset": "0x16"
+        },
+        {
+          "type": "file",
+          "path": "XENON_08.M",
+          "offset": "0x17"
+        },
+        {
+          "type": "file",
+          "path": "XENON_09.M",
+          "offset": "0x18"
+        },
+        {
+          "type": "file",
+          "path": "XENON_10.M",
+          "offset": "0x19"
+        },
+        {
+          "type": "file",
+          "path": "XENON_11.M",
+          "offset": "0x1a"
+        },
+        {
+          "type": "file",
+          "path": "XENON_12.M",
+          "offset": "0x1b"
+        },
+        {
+          "type": "file",
+          "path": "XENON_13.M",
+          "offset": "0x1c"
+        },
+        {
+          "type": "file",
+          "path": "XENON_14.M",
+          "offset": "0x1d"
+        },
+        {
+          "type": "file",
+          "path": "XENON_15.M",
+          "offset": "0x1e"
+        },
+        {
+          "type": "file",
+          "path": "XENON_16.M",
+          "offset": "0x1f"
+        },
+        {
+          "type": "file",
+          "path": "XENON_17.M",
+          "offset": "0x20"
+        },
+        {
+          "type": "file",
+          "path": "XENON_18.M",
+          "offset": "0x21"
+        },
+        {
+          "type": "file",
+          "path": "XENON_19.M",
+          "offset": "0x22"
+        },
+        {
+          "type": "file",
+          "path": "XENON_20.M",
+          "offset": "0x23"
+        },
+        {
+          "type": "file",
+          "path": "XENON_21.M",
+          "offset": "0x24"
+        },
+        {
+          "type": "file",
+          "path": "XENON_22.M",
+          "offset": "0x25"
+        },
+        {
+          "type": "file",
+          "path": "XENON_23.M",
+          "offset": "0x26"
+        },
+        {
+          "type": "file",
+          "path": "XENON_24.M",
+          "offset": "0x27"
+        },
+        {
+          "type": "file",
+          "path": "XENON_25.M",
+          "offset": "0x28"
+        },
+        {
+          "type": "file",
+          "path": "XENON_26.M",
+          "offset": "0x29"
+        },
+        {
+          "type": "file",
+          "path": "XENON_27.M",
+          "offset": "0x2a"
+        },
+        {
+          "type": "file",
+          "path": "XENON_28.M",
+          "offset": "0x2b"
+        },
+        {
+          "type": "file",
+          "path": "XENON_29.M",
+          "offset": "0x2c"
+        },
+        {
+          "type": "file",
+          "path": "XEN_03A.M",
+          "offset": "0x2d"
+        },
+        {
+          "type": "file",
+          "path": "XEN_03B.M",
+          "offset": "0x2e"
+        },
+        {
+          "type": "shell",
+          "path": "PMD /m10 /v0 /e4 /F /k",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "pmd_98",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "XENON_01.M : Desert Storm"
+        },
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "XENON_02.M : XENON"
+        },
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "XENON_03.M : Ranfa"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "XENON_04.M : 蝶"
+        },
+        {
+          "kind": "title",
+          "code": "0x14",
+          "title": "XENON_05.M : << QUADRA >>"
+        },
+        {
+          "kind": "title",
+          "code": "0x15",
+          "title": "XENON_06.M : Ending II"
+        },
+        {
+          "kind": "title",
+          "code": "0x18",
+          "title": "XENON_09.M : Synaps"
+        },
+        {
+          "kind": "title",
+          "code": "0x19",
+          "title": "XENON_10.M : Ago"
+        },
+        {
+          "kind": "title",
+          "code": "0x1a",
+          "title": "XENON_11.M : Trust"
+        },
+        {
+          "kind": "title",
+          "code": "0x1b",
+          "title": "XENON_12.M : Silence"
+        },
+        {
+          "kind": "title",
+          "code": "0x1c",
+          "title": "XENON_13.M : Encoder"
+        },
+        {
+          "kind": "title",
+          "code": "0x1e",
+          "title": "XENON_15.M : Emergency"
+        },
+        {
+          "kind": "title",
+          "code": "0x1f",
+          "title": "XENON_16.M : Moon"
+        },
+        {
+          "kind": "title",
+          "code": "0x20",
+          "title": "XENON_17.M : Dream"
+        },
+        {
+          "kind": "title",
+          "code": "0x24",
+          "title": "XENON_21.M : Towering Past"
+        },
+        {
+          "kind": "title",
+          "code": "0x25",
+          "title": "XENON_22.M : 7th"
+        },
+        {
+          "kind": "title",
+          "code": "0x29",
+          "title": "XENON_26.M : Mood"
+        },
+        {
+          "kind": "title",
+          "code": "0x16",
+          "title": "XENON_07.M :"
+        },
+        {
+          "kind": "title",
+          "code": "0x17",
+          "title": "XENON_08.M :"
+        },
+        {
+          "kind": "title",
+          "code": "0x1d",
+          "title": "XENON_14.M :"
+        },
+        {
+          "kind": "title",
+          "code": "0x21",
+          "title": "XENON_18.M :"
+        },
+        {
+          "kind": "title",
+          "code": "0x22",
+          "title": "XENON_19.M :"
+        },
+        {
+          "kind": "title",
+          "code": "0x23",
+          "title": "XENON_20.M :"
+        },
+        {
+          "kind": "title",
+          "code": "0x26",
+          "title": "XENON_23.M :"
+        },
+        {
+          "kind": "title",
+          "code": "0x27",
+          "title": "XENON_24.M :"
+        },
+        {
+          "kind": "title",
+          "code": "0x28",
+          "title": "XENON_25.M :"
+        },
+        {
+          "kind": "title",
+          "code": "0x2a",
+          "title": "XENON_27.M :"
+        },
+        {
+          "kind": "title",
+          "code": "0x2b",
+          "title": "XENON_28.M :"
+        },
+        {
+          "kind": "title",
+          "code": "0x2c",
+          "title": "XENON_29.M :"
+        },
+        {
+          "kind": "title",
+          "code": "0x2d",
+          "title": "XEN_03A.M  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x2e",
+          "title": "XEN_03B.M  :"
+        },
+        {
+          "kind": "range",
+          "min": "0x0801",
+          "max": "0x0832",
+          "title_format": "XEN_SE.EFC : %02X",
+          "extcode": "0"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/csware.xml",
+      "source_order": 965,
+      "archive": "xenon_98",
+      "id": "xenon-98-opn"
+    },
+    {
+      "title": "[PC-9801] エイミーと呼ばないでっ(OPN)",
+      "driver": {
+        "name": "pc98dos",
+        "type": "opn",
+        "alias": "C's Ware",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "funcvect",
+          "value": "0x7e"
+        },
+        {
+          "name": "clockmul",
+          "value": "8"
+        },
+        {
+          "name": "showfm3ex",
+          "value": "1"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "PMD_98.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "PMD.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "EIMY.EFC",
+          "offset": "0x08"
+        },
+        {
+          "type": "file",
+          "path": "EMI_01.M",
+          "offset": "0x10"
+        },
+        {
+          "type": "file",
+          "path": "EMI_02.M",
+          "offset": "0x11"
+        },
+        {
+          "type": "file",
+          "path": "EMI_03.M",
+          "offset": "0x12"
+        },
+        {
+          "type": "file",
+          "path": "EMI_04.M",
+          "offset": "0x13"
+        },
+        {
+          "type": "file",
+          "path": "EMI_05.M",
+          "offset": "0x14"
+        },
+        {
+          "type": "file",
+          "path": "EMI_06.M",
+          "offset": "0x15"
+        },
+        {
+          "type": "file",
+          "path": "EMI_07.M",
+          "offset": "0x16"
+        },
+        {
+          "type": "file",
+          "path": "EMI_08.M",
+          "offset": "0x17"
+        },
+        {
+          "type": "file",
+          "path": "EMI_09.M",
+          "offset": "0x18"
+        },
+        {
+          "type": "file",
+          "path": "EMI_10.M",
+          "offset": "0x19"
+        },
+        {
+          "type": "file",
+          "path": "EMI_11.M",
+          "offset": "0x1a"
+        },
+        {
+          "type": "file",
+          "path": "EMI_12.M",
+          "offset": "0x1b"
+        },
+        {
+          "type": "file",
+          "path": "EMI_13.M",
+          "offset": "0x1c"
+        },
+        {
+          "type": "file",
+          "path": "EMI_14.M",
+          "offset": "0x1d"
+        },
+        {
+          "type": "file",
+          "path": "EMI_15.M",
+          "offset": "0x1e"
+        },
+        {
+          "type": "file",
+          "path": "EMI_16.M",
+          "offset": "0x1f"
+        },
+        {
+          "type": "file",
+          "path": "EMI_17.M",
+          "offset": "0x20"
+        },
+        {
+          "type": "file",
+          "path": "EMI_19.M",
+          "offset": "0x21"
+        },
+        {
+          "type": "file",
+          "path": "EMI_21.M",
+          "offset": "0x22"
+        },
+        {
+          "type": "file",
+          "path": "EMI_22.M",
+          "offset": "0x23"
+        },
+        {
+          "type": "file",
+          "path": "EMI_23.M",
+          "offset": "0x24"
+        },
+        {
+          "type": "file",
+          "path": "EMI_24.M",
+          "offset": "0x25"
+        },
+        {
+          "type": "file",
+          "path": "EMI_25.M",
+          "offset": "0x26"
+        },
+        {
+          "type": "file",
+          "path": "EMI_26.M",
+          "offset": "0x27"
+        },
+        {
+          "type": "file",
+          "path": "EMI_27.M",
+          "offset": "0x28"
+        },
+        {
+          "type": "file",
+          "path": "EMI_28.M",
+          "offset": "0x29"
+        },
+        {
+          "type": "file",
+          "path": "EMI_29.M",
+          "offset": "0x2a"
+        },
+        {
+          "type": "file",
+          "path": "EMI_30.M",
+          "offset": "0x2b"
+        },
+        {
+          "type": "file",
+          "path": "EMI_31.M",
+          "offset": "0x2c"
+        },
+        {
+          "type": "file",
+          "path": "EMI_32.M",
+          "offset": "0x2d"
+        },
+        {
+          "type": "file",
+          "path": "EMI_33.M",
+          "offset": "0x2e"
+        },
+        {
+          "type": "file",
+          "path": "EMI_34.M",
+          "offset": "0x2f"
+        },
+        {
+          "type": "file",
+          "path": "EMI_35.M",
+          "offset": "0x30"
+        },
+        {
+          "type": "file",
+          "path": "EMI_36.M",
+          "offset": "0x31"
+        },
+        {
+          "type": "file",
+          "path": "EMI_37.M",
+          "offset": "0x32"
+        },
+        {
+          "type": "shell",
+          "path": "pmd # /m8 /v0 /e3 /k",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "pmd_98",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "EMI_01.M : 眸のarrow(Thema Song)"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "EMI_04.M : 香織"
+        },
+        {
+          "kind": "title",
+          "code": "0x14",
+          "title": "EMI_05.M : 智美"
+        },
+        {
+          "kind": "title",
+          "code": "0x15",
+          "title": "EMI_06.M : すみれ"
+        },
+        {
+          "kind": "title",
+          "code": "0x16",
+          "title": "EMI_07.M : 瞳"
+        },
+        {
+          "kind": "title",
+          "code": "0x17",
+          "title": "EMI_08.M : 鏡子"
+        },
+        {
+          "kind": "title",
+          "code": "0x18",
+          "title": "EMI_09.M : 理恵"
+        },
+        {
+          "kind": "title",
+          "code": "0x1b",
+          "title": "EMI_12.M : 朱い月"
+        },
+        {
+          "kind": "title",
+          "code": "0x1d",
+          "title": "EMI_14.M : 館"
+        },
+        {
+          "kind": "title",
+          "code": "0x1e",
+          "title": "EMI_15.M : Feeling(soft)"
+        },
+        {
+          "kind": "title",
+          "code": "0x1f",
+          "title": "EMI_16.M : Feeling(beat)"
+        },
+        {
+          "kind": "title",
+          "code": "0x20",
+          "title": "EMI_17.M : くつろぎ"
+        },
+        {
+          "kind": "title",
+          "code": "0x21",
+          "title": "EMI_19.M : Came of Well"
+        },
+        {
+          "kind": "title",
+          "code": "0x22",
+          "title": "EMI_21.M : Blood Devil"
+        },
+        {
+          "kind": "title",
+          "code": "0x23",
+          "title": "EMI_22.M : 夢み心地"
+        },
+        {
+          "kind": "title",
+          "code": "0x24",
+          "title": "EMI_23.M : イドの迷宮"
+        },
+        {
+          "kind": "title",
+          "code": "0x25",
+          "title": "EMI_24.M : ワイングラス"
+        },
+        {
+          "kind": "title",
+          "code": "0x26",
+          "title": "EMI_25.M : Heavy Sounds"
+        },
+        {
+          "kind": "title",
+          "code": "0x27",
+          "title": "EMI_26.M : Eight Actuality"
+        },
+        {
+          "kind": "title",
+          "code": "0x28",
+          "title": "EMI_27.M : 戦慄"
+        },
+        {
+          "kind": "title",
+          "code": "0x29",
+          "title": "EMI_28.M : 光と闇と"
+        },
+        {
+          "kind": "title",
+          "code": "0x2a",
+          "title": "EMI_29.M : エスニカン マリオネット"
+        },
+        {
+          "kind": "title",
+          "code": "0x2b",
+          "title": "EMI_30.M : 病院にて"
+        },
+        {
+          "kind": "title",
+          "code": "0x2c",
+          "title": "EMI_31.M : 憂慮"
+        },
+        {
+          "kind": "title",
+          "code": "0x2d",
+          "title": "EMI_32.M : 再会"
+        },
+        {
+          "kind": "title",
+          "code": "0x2e",
+          "title": "EMI_33.M : 吐息のkiss"
+        },
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "EMI_02.M : ファンファーレ"
+        },
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "EMI_03.M : アイキャッチ"
+        },
+        {
+          "kind": "title",
+          "code": "0x19",
+          "title": "EMI_10.M : Ara?"
+        },
+        {
+          "kind": "title",
+          "code": "0x1a",
+          "title": "EMI_11.M : Gian!"
+        },
+        {
+          "kind": "title",
+          "code": "0x1c",
+          "title": "EMI_13.M : ジャーン"
+        },
+        {
+          "kind": "title",
+          "code": "0x2f",
+          "title": "EMI_34.M : MENU【瞳のarrow】Short"
+        },
+        {
+          "kind": "title",
+          "code": "0x30",
+          "title": "EMI_35.M : 次回予告【瞳のarrow】"
+        },
+        {
+          "kind": "title",
+          "code": "0x31",
+          "title": "EMI_36.M : ちゃちゃーん"
+        },
+        {
+          "kind": "title",
+          "code": "0x32",
+          "title": "EMI_37.M : チャイム"
+        },
+        {
+          "kind": "range",
+          "min": "0x0801",
+          "max": "0x0814",
+          "title_format": "EIMY.EFC : %02X",
+          "extcode": "0"
+        },
+        {
+          "kind": "title",
+          "code": "0x818",
+          "title": "EIMY.EFC : 18"
+        },
+        {
+          "kind": "title",
+          "code": "0x81a",
+          "title": "EIMY.EFC : 1A"
+        },
+        {
+          "kind": "title",
+          "code": "0x81b",
+          "title": "EIMY.EFC : 1B"
+        },
+        {
+          "kind": "title",
+          "code": "0x828",
+          "title": "EIMY.EFC : 28"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/csware.xml",
+      "source_order": 966,
+      "archive": "eime_98",
+      "id": "eime-98-opn"
+    },
+    {
+      "title": "[PC-9801] エイミーと呼ばないでっ(GS)",
+      "driver": {
+        "name": "pc98dos",
+        "type": "beep",
+        "alias": "C's Ware",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "clockmul",
+          "value": "8"
+        },
+        {
+          "name": "midiout",
+          "value": "1"
+        },
+        {
+          "name": "midiout_type",
+          "value": "4"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "MMP_HOOT.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MMD.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "EMI_01.MMD",
+          "offset": "0x10"
+        },
+        {
+          "type": "file",
+          "path": "EMI_02.MMD",
+          "offset": "0x11"
+        },
+        {
+          "type": "file",
+          "path": "EMI_03.MMD",
+          "offset": "0x12"
+        },
+        {
+          "type": "file",
+          "path": "EMI_04.MMD",
+          "offset": "0x13"
+        },
+        {
+          "type": "file",
+          "path": "EMI_05.MMD",
+          "offset": "0x14"
+        },
+        {
+          "type": "file",
+          "path": "EMI_06.MMD",
+          "offset": "0x15"
+        },
+        {
+          "type": "file",
+          "path": "EMI_07.MMD",
+          "offset": "0x16"
+        },
+        {
+          "type": "file",
+          "path": "EMI_08.MMD",
+          "offset": "0x17"
+        },
+        {
+          "type": "file",
+          "path": "EMI_09.MMD",
+          "offset": "0x18"
+        },
+        {
+          "type": "file",
+          "path": "EMI_10.MMD",
+          "offset": "0x19"
+        },
+        {
+          "type": "file",
+          "path": "EMI_11.MMD",
+          "offset": "0x1a"
+        },
+        {
+          "type": "file",
+          "path": "EMI_12.MMD",
+          "offset": "0x1b"
+        },
+        {
+          "type": "file",
+          "path": "EMI_13.MMD",
+          "offset": "0x1c"
+        },
+        {
+          "type": "file",
+          "path": "EMI_14.MMD",
+          "offset": "0x1d"
+        },
+        {
+          "type": "file",
+          "path": "EMI_15.MMD",
+          "offset": "0x1e"
+        },
+        {
+          "type": "file",
+          "path": "EMI_16.MMD",
+          "offset": "0x1f"
+        },
+        {
+          "type": "file",
+          "path": "EMI_17.MMD",
+          "offset": "0x20"
+        },
+        {
+          "type": "file",
+          "path": "EMI_19.MMD",
+          "offset": "0x21"
+        },
+        {
+          "type": "file",
+          "path": "EMI_21.MMD",
+          "offset": "0x22"
+        },
+        {
+          "type": "file",
+          "path": "EMI_22.MMD",
+          "offset": "0x23"
+        },
+        {
+          "type": "file",
+          "path": "EMI_23.MMD",
+          "offset": "0x24"
+        },
+        {
+          "type": "file",
+          "path": "EMI_24.MMD",
+          "offset": "0x25"
+        },
+        {
+          "type": "file",
+          "path": "EMI_25.MMD",
+          "offset": "0x26"
+        },
+        {
+          "type": "file",
+          "path": "EMI_26.MMD",
+          "offset": "0x27"
+        },
+        {
+          "type": "file",
+          "path": "EMI_27.MMD",
+          "offset": "0x28"
+        },
+        {
+          "type": "file",
+          "path": "EMI_28.MMD",
+          "offset": "0x29"
+        },
+        {
+          "type": "file",
+          "path": "EMI_29.MMD",
+          "offset": "0x2a"
+        },
+        {
+          "type": "file",
+          "path": "EMI_30.MMD",
+          "offset": "0x2b"
+        },
+        {
+          "type": "file",
+          "path": "EMI_31.MMD",
+          "offset": "0x2c"
+        },
+        {
+          "type": "file",
+          "path": "EMI_32.MMD",
+          "offset": "0x2d"
+        },
+        {
+          "type": "file",
+          "path": "EMI_33.MMD",
+          "offset": "0x2e"
+        },
+        {
+          "type": "file",
+          "path": "EMI_34.MMD",
+          "offset": "0x2f"
+        },
+        {
+          "type": "file",
+          "path": "EMI_35.MMD",
+          "offset": "0x30"
+        },
+        {
+          "type": "file",
+          "path": "EMI_36.MMD",
+          "offset": "0x31"
+        },
+        {
+          "type": "file",
+          "path": "EMI_37.MMD",
+          "offset": "0x32"
+        },
+        {
+          "type": "shell",
+          "path": "MMD /M24 /K",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "MMP_HOOT",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "EMI_01.MMD : 眸のarrow(Thema Song)"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "EMI_04.MMD : 香織"
+        },
+        {
+          "kind": "title",
+          "code": "0x14",
+          "title": "EMI_05.MMD : 智美"
+        },
+        {
+          "kind": "title",
+          "code": "0x15",
+          "title": "EMI_06.MMD : すみれ"
+        },
+        {
+          "kind": "title",
+          "code": "0x16",
+          "title": "EMI_07.MMD : 瞳"
+        },
+        {
+          "kind": "title",
+          "code": "0x17",
+          "title": "EMI_08.MMD : 鏡子"
+        },
+        {
+          "kind": "title",
+          "code": "0x18",
+          "title": "EMI_09.MMD : 理恵"
+        },
+        {
+          "kind": "title",
+          "code": "0x1b",
+          "title": "EMI_12.MMD : 朱い月"
+        },
+        {
+          "kind": "title",
+          "code": "0x1d",
+          "title": "EMI_14.MMD : 館"
+        },
+        {
+          "kind": "title",
+          "code": "0x1e",
+          "title": "EMI_15.MMD : Feeling(soft)"
+        },
+        {
+          "kind": "title",
+          "code": "0x1f",
+          "title": "EMI_16.MMD : Feeling(beat)"
+        },
+        {
+          "kind": "title",
+          "code": "0x20",
+          "title": "EMI_17.MMD : くつろぎ"
+        },
+        {
+          "kind": "title",
+          "code": "0x21",
+          "title": "EMI_19.MMD : Came of Well"
+        },
+        {
+          "kind": "title",
+          "code": "0x22",
+          "title": "EMI_21.MMD : Blood Devil"
+        },
+        {
+          "kind": "title",
+          "code": "0x23",
+          "title": "EMI_22.MMD : 夢み心地"
+        },
+        {
+          "kind": "title",
+          "code": "0x24",
+          "title": "EMI_23.MMD : イドの迷宮"
+        },
+        {
+          "kind": "title",
+          "code": "0x25",
+          "title": "EMI_24.MMD : ワイングラス"
+        },
+        {
+          "kind": "title",
+          "code": "0x26",
+          "title": "EMI_25.MMD : Heavy Sounds"
+        },
+        {
+          "kind": "title",
+          "code": "0x27",
+          "title": "EMI_26.MMD : Eight Actuality"
+        },
+        {
+          "kind": "title",
+          "code": "0x28",
+          "title": "EMI_27.MMD : 戦慄"
+        },
+        {
+          "kind": "title",
+          "code": "0x29",
+          "title": "EMI_28.MMD : 光と闇と"
+        },
+        {
+          "kind": "title",
+          "code": "0x2a",
+          "title": "EMI_29.MMD : エスニカン マリオネット"
+        },
+        {
+          "kind": "title",
+          "code": "0x2b",
+          "title": "EMI_30.MMD : 病院にて"
+        },
+        {
+          "kind": "title",
+          "code": "0x2c",
+          "title": "EMI_31.MMD : 憂慮"
+        },
+        {
+          "kind": "title",
+          "code": "0x2d",
+          "title": "EMI_32.MMD : 再会"
+        },
+        {
+          "kind": "title",
+          "code": "0x2e",
+          "title": "EMI_33.MMD : 吐息のkiss"
+        },
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "EMI_02.MMD : ファンファーレ"
+        },
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "EMI_03.MMD : アイキャッチ"
+        },
+        {
+          "kind": "title",
+          "code": "0x19",
+          "title": "EMI_10.MMD : Ara?"
+        },
+        {
+          "kind": "title",
+          "code": "0x1a",
+          "title": "EMI_11.MMD : Gian!"
+        },
+        {
+          "kind": "title",
+          "code": "0x1c",
+          "title": "EMI_13.MMD : ジャーン"
+        },
+        {
+          "kind": "title",
+          "code": "0x2f",
+          "title": "EMI_34.MMD : MENU【瞳のarrow】Short"
+        },
+        {
+          "kind": "title",
+          "code": "0x30",
+          "title": "EMI_35.MMD : 次回予告【瞳のarrow】"
+        },
+        {
+          "kind": "title",
+          "code": "0x31",
+          "title": "EMI_36.MMD : ちゃちゃーん"
+        },
+        {
+          "kind": "title",
+          "code": "0x32",
+          "title": "EMI_37.MMD : チャイム"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/csware.xml",
+      "source_order": 967,
+      "archive": "eime_98",
+      "id": "eime-98-beep"
+    },
+    {
+      "title": "[PC-9801] ラブィーニ",
+      "driver": {
+        "name": "pc98dos",
+        "type": "opn",
+        "alias": "C's Ware",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "funcvect",
+          "value": "0x7e"
+        },
+        {
+          "name": "clockmul",
+          "value": "8"
+        },
+        {
+          "name": "showfm3ex",
+          "value": "1"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "PMD_98.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "PMD.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "NAZO.EFC",
+          "offset": "0x08"
+        },
+        {
+          "type": "file",
+          "path": "AR07.M",
+          "offset": "0x10"
+        },
+        {
+          "type": "file",
+          "path": "CAR_BUR.M",
+          "offset": "0x11"
+        },
+        {
+          "type": "file",
+          "path": "CHIM.M",
+          "offset": "0x12"
+        },
+        {
+          "type": "file",
+          "path": "DOORCREK.M",
+          "offset": "0x13"
+        },
+        {
+          "type": "file",
+          "path": "DOORKNOC.M",
+          "offset": "0x14"
+        },
+        {
+          "type": "file",
+          "path": "DOSI.M",
+          "offset": "0x15"
+        },
+        {
+          "type": "file",
+          "path": "FRATO.M",
+          "offset": "0x16"
+        },
+        {
+          "type": "file",
+          "path": "GD14.M",
+          "offset": "0x17"
+        },
+        {
+          "type": "file",
+          "path": "GD14_D.M",
+          "offset": "0x18"
+        },
+        {
+          "type": "file",
+          "path": "GD14_E.M",
+          "offset": "0x19"
+        },
+        {
+          "type": "file",
+          "path": "GD69.M",
+          "offset": "0x1A"
+        },
+        {
+          "type": "file",
+          "path": "HARITE.M",
+          "offset": "0x1B"
+        },
+        {
+          "type": "file",
+          "path": "NULK.M",
+          "offset": "0x1C"
+        },
+        {
+          "type": "file",
+          "path": "RF04.M",
+          "offset": "0x1D"
+        },
+        {
+          "type": "file",
+          "path": "RF14.M",
+          "offset": "0x1E"
+        },
+        {
+          "type": "file",
+          "path": "SN04.M",
+          "offset": "0x1F"
+        },
+        {
+          "type": "file",
+          "path": "SN05.M",
+          "offset": "0x20"
+        },
+        {
+          "type": "file",
+          "path": "SN07.M",
+          "offset": "0x21"
+        },
+        {
+          "type": "file",
+          "path": "SN16.M",
+          "offset": "0x22"
+        },
+        {
+          "type": "file",
+          "path": "SN20.M",
+          "offset": "0x23"
+        },
+        {
+          "type": "file",
+          "path": "SN20_S.M",
+          "offset": "0x24"
+        },
+        {
+          "type": "file",
+          "path": "SN21.M",
+          "offset": "0x25"
+        },
+        {
+          "type": "file",
+          "path": "SN23.M",
+          "offset": "0x26"
+        },
+        {
+          "type": "file",
+          "path": "SV11.M",
+          "offset": "0x27"
+        },
+        {
+          "type": "file",
+          "path": "TEL_RING.M",
+          "offset": "0x28"
+        },
+        {
+          "type": "file",
+          "path": "TW01.M",
+          "offset": "0x29"
+        },
+        {
+          "type": "file",
+          "path": "VF30.M",
+          "offset": "0x2A"
+        },
+        {
+          "type": "file",
+          "path": "WF15.M",
+          "offset": "0x2B"
+        },
+        {
+          "type": "file",
+          "path": "WF28.M",
+          "offset": "0x2C"
+        },
+        {
+          "type": "file",
+          "path": "WF78.M",
+          "offset": "0x2D"
+        },
+        {
+          "type": "shell",
+          "path": "PMD",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "pmd_98",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x20",
+          "title": "SN05.M     : 心持ち不安"
+        },
+        {
+          "kind": "title",
+          "code": "0x22",
+          "title": "SN16.M     : My doubts Cleared"
+        },
+        {
+          "kind": "title",
+          "code": "0x1D",
+          "title": "RF04.M     : 流し目"
+        },
+        {
+          "kind": "title",
+          "code": "0x2C",
+          "title": "WF28.M     : The Pure in Heart"
+        },
+        {
+          "kind": "title",
+          "code": "0x17",
+          "title": "GD14.M     : ラブィーニ ～タイトル～"
+        },
+        {
+          "kind": "title",
+          "code": "0x21",
+          "title": "SN07.M     : Under the Escort"
+        },
+        {
+          "kind": "title",
+          "code": "0x23",
+          "title": "SN20.M     : 陽差し"
+        },
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "AR07.M     : Evening"
+        },
+        {
+          "kind": "title",
+          "code": "0x2A",
+          "title": "VF30.M     : Holiday Art"
+        },
+        {
+          "kind": "title",
+          "code": "0x2D",
+          "title": "WF78.M     : 裏工作"
+        },
+        {
+          "kind": "title",
+          "code": "0x25",
+          "title": "SN21.M     : Antipersonnel Weapon"
+        },
+        {
+          "kind": "title",
+          "code": "0x26",
+          "title": "SN23.M     : Skeleton dance"
+        },
+        {
+          "kind": "title",
+          "code": "0x2B",
+          "title": "WF15.M     : I Feel Blue"
+        },
+        {
+          "kind": "title",
+          "code": "0x16",
+          "title": "FRATO.M    : 静かな衝動"
+        },
+        {
+          "kind": "title",
+          "code": "0x1A",
+          "title": "GD69.M     : 自室"
+        },
+        {
+          "kind": "title",
+          "code": "0x1F",
+          "title": "SN04.M     : 放課"
+        },
+        {
+          "kind": "title",
+          "code": "0x1C",
+          "title": "NULK.M     : nulkastra"
+        },
+        {
+          "kind": "title",
+          "code": "0x29",
+          "title": "TW01.M     : Easy WIN"
+        },
+        {
+          "kind": "title",
+          "code": "0x1E",
+          "title": "RF14.M     : Puzzle"
+        },
+        {
+          "kind": "title",
+          "code": "0x19",
+          "title": "GD14_E.M   : ラブィーニ ～安らぎ～"
+        },
+        {
+          "kind": "title",
+          "code": "0x18",
+          "title": "GD14_D.M   : ラブィーニ ～なれ合い～"
+        },
+        {
+          "kind": "title",
+          "code": "0x24",
+          "title": "SN20_S.M   : 目覚め"
+        },
+        {
+          "kind": "title",
+          "code": "0x27",
+          "title": "SV11.M     : Drive Through Shopin'"
+        },
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "CAR_BUR.M  : SE CAR BRAKING"
+        },
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "CHIM.M     : SE チャイム"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "DOORCREK.M : SE ドアノブ"
+        },
+        {
+          "kind": "title",
+          "code": "0x14",
+          "title": "DOORKNOC.M : SE ドアノック"
+        },
+        {
+          "kind": "title",
+          "code": "0x15",
+          "title": "DOSI.M     : SE ぶきゅる"
+        },
+        {
+          "kind": "title",
+          "code": "0x1B",
+          "title": "HARITE.M   : SE 張り手"
+        },
+        {
+          "kind": "title",
+          "code": "0x28",
+          "title": "TEL_RING.M : SE 電話"
+        },
+        {
+          "kind": "range",
+          "min": "0x0801",
+          "max": "0x0810",
+          "title_format": "NAZO.EFC   : %02X",
+          "extcode": "1"
+        },
+        {
+          "kind": "range",
+          "min": "0x081a",
+          "max": "0x081a",
+          "title_format": "NAZO.EFC   : %02X",
+          "extcode": "1"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/csware.xml",
+      "source_order": 968,
+      "archive": "lovey_98",
+      "id": "lovey-98-opn"
+    },
+    {
+      "title": "[PC-9801] 悦楽の学園",
+      "driver": {
+        "name": "pc98dos",
+        "type": "opn",
+        "alias": "C's Ware",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "clockmul",
+          "value": "8"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "MLALF_98.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "AGS.EXE",
+          "offset": "-1"
+        },
+        {
+          "type": "conin",
+          "path": "AGS.EXE",
+          "offset": "5"
+        },
+        {
+          "type": "file",
+          "path": "BAMN.MLO",
+          "offset": "11"
+        },
+        {
+          "type": "file",
+          "path": "CHIM2.MLO",
+          "offset": "12"
+        },
+        {
+          "type": "file",
+          "path": "DOCUL.MLO",
+          "offset": "13"
+        },
+        {
+          "type": "file",
+          "path": "HS0701.MLO",
+          "offset": "14"
+        },
+        {
+          "type": "file",
+          "path": "HS0702.MLO",
+          "offset": "15"
+        },
+        {
+          "type": "file",
+          "path": "HS0711.MLO",
+          "offset": "16"
+        },
+        {
+          "type": "file",
+          "path": "HS0712.MLO",
+          "offset": "17"
+        },
+        {
+          "type": "file",
+          "path": "HS0716.MLO",
+          "offset": "18"
+        },
+        {
+          "type": "file",
+          "path": "HS0718.MLO",
+          "offset": "19"
+        },
+        {
+          "type": "file",
+          "path": "HS0719.MLO",
+          "offset": "20"
+        },
+        {
+          "type": "file",
+          "path": "HS0721.MLO",
+          "offset": "21"
+        },
+        {
+          "type": "file",
+          "path": "HS0722.MLO",
+          "offset": "22"
+        },
+        {
+          "type": "file",
+          "path": "HS0722_B.MLO",
+          "offset": "23"
+        },
+        {
+          "type": "file",
+          "path": "HS0723.MLO",
+          "offset": "24"
+        },
+        {
+          "type": "file",
+          "path": "HS0724.MLO",
+          "offset": "25"
+        },
+        {
+          "type": "file",
+          "path": "HS0726.MLO",
+          "offset": "26"
+        },
+        {
+          "type": "file",
+          "path": "HS0727.MLO",
+          "offset": "27"
+        },
+        {
+          "type": "file",
+          "path": "ID02.MLO",
+          "offset": "28"
+        },
+        {
+          "type": "file",
+          "path": "ID03.MLO",
+          "offset": "29"
+        },
+        {
+          "type": "file",
+          "path": "ID08.MLO",
+          "offset": "30"
+        },
+        {
+          "type": "file",
+          "path": "ID12.MLO",
+          "offset": "31"
+        },
+        {
+          "type": "file",
+          "path": "ID14.MLO",
+          "offset": "32"
+        },
+        {
+          "type": "file",
+          "path": "ID15.MLO",
+          "offset": "33"
+        },
+        {
+          "type": "file",
+          "path": "ID21.MLO",
+          "offset": "34"
+        },
+        {
+          "type": "file",
+          "path": "ID28.MLO",
+          "offset": "35"
+        },
+        {
+          "type": "file",
+          "path": "ID28_B.MLO",
+          "offset": "36"
+        },
+        {
+          "type": "file",
+          "path": "ID40.MLO",
+          "offset": "37"
+        },
+        {
+          "type": "file",
+          "path": "ID49.MLO",
+          "offset": "38"
+        },
+        {
+          "type": "file",
+          "path": "ID51.MLO",
+          "offset": "39"
+        },
+        {
+          "type": "file",
+          "path": "ID54.MLO",
+          "offset": "40"
+        },
+        {
+          "type": "file",
+          "path": "ID57.MLO",
+          "offset": "41"
+        },
+        {
+          "type": "file",
+          "path": "ID59.MLO",
+          "offset": "42"
+        },
+        {
+          "type": "file",
+          "path": "ID62.MLO",
+          "offset": "43"
+        },
+        {
+          "type": "file",
+          "path": "ID67.MLO",
+          "offset": "44"
+        },
+        {
+          "type": "file",
+          "path": "JYU.MLO",
+          "offset": "45"
+        },
+        {
+          "type": "file",
+          "path": "LOGO.MLO",
+          "offset": "46"
+        },
+        {
+          "type": "file",
+          "path": "MIST.MLO",
+          "offset": "47"
+        },
+        {
+          "type": "file",
+          "path": "MIST_R.MLO",
+          "offset": "48"
+        },
+        {
+          "type": "file",
+          "path": "TIT3.MLO",
+          "offset": "49"
+        },
+        {
+          "type": "file",
+          "path": "TIT3_R.MLO",
+          "offset": "50"
+        },
+        {
+          "type": "file",
+          "path": "YK12.MLO",
+          "offset": "51"
+        },
+        {
+          "type": "shell",
+          "path": "MLALF_98",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "46",
+          "title": "LOGO.MLO     :"
+        },
+        {
+          "kind": "title",
+          "code": "29",
+          "title": "ID03.MLO     : 校内の様子"
+        },
+        {
+          "kind": "title",
+          "code": "39",
+          "title": "ID51.MLO     : 雨宮淑子"
+        },
+        {
+          "kind": "title",
+          "code": "14",
+          "title": "HS0701.MLO   : 夢幻"
+        },
+        {
+          "kind": "title",
+          "code": "49",
+          "title": "TIT3.MLO     : 悦楽の学園"
+        },
+        {
+          "kind": "title",
+          "code": "34",
+          "title": "ID21.MLO     : 職員室"
+        },
+        {
+          "kind": "title",
+          "code": "33",
+          "title": "ID15.MLO     : 振間典子"
+        },
+        {
+          "kind": "title",
+          "code": "24",
+          "title": "HS0723.MLO   : 霞んだ日常"
+        },
+        {
+          "kind": "title",
+          "code": "48",
+          "title": "MIST_R.MLO   : ミステリートラベル(オープニング)"
+        },
+        {
+          "kind": "title",
+          "code": "38",
+          "title": "ID49.MLO     : 連絡員・由美"
+        },
+        {
+          "kind": "title",
+          "code": "26",
+          "title": "HS0726.MLO   : アバンチュール"
+        },
+        {
+          "kind": "title",
+          "code": "15",
+          "title": "HS0702.MLO   : MENU"
+        },
+        {
+          "kind": "title",
+          "code": "20",
+          "title": "HS0719.MLO   : 理事長室"
+        },
+        {
+          "kind": "title",
+          "code": "28",
+          "title": "ID02.MLO     : 氷室恭子"
+        },
+        {
+          "kind": "title",
+          "code": "27",
+          "title": "HS0727.MLO   : 弱味"
+        },
+        {
+          "kind": "title",
+          "code": "37",
+          "title": "ID40.MLO     : 保健室"
+        },
+        {
+          "kind": "title",
+          "code": "44",
+          "title": "ID67.MLO     : 松乃広美"
+        },
+        {
+          "kind": "title",
+          "code": "17",
+          "title": "HS0712.MLO   : 真心の広美"
+        },
+        {
+          "kind": "title",
+          "code": "31",
+          "title": "ID12.MLO     : 体育館"
+        },
+        {
+          "kind": "title",
+          "code": "25",
+          "title": "HS0724.MLO   : 純真"
+        },
+        {
+          "kind": "title",
+          "code": "40",
+          "title": "ID54.MLO     : 温水プール"
+        },
+        {
+          "kind": "title",
+          "code": "41",
+          "title": "ID57.MLO     : 謀計"
+        },
+        {
+          "kind": "title",
+          "code": "21",
+          "title": "HS0721.MLO   : 水面下"
+        },
+        {
+          "kind": "title",
+          "code": "19",
+          "title": "HS0718.MLO   : 夜のしじま"
+        },
+        {
+          "kind": "title",
+          "code": "43",
+          "title": "ID62.MLO     : 純愛とナイフ"
+        },
+        {
+          "kind": "title",
+          "code": "22",
+          "title": "HS0722.MLO   : 密事"
+        },
+        {
+          "kind": "title",
+          "code": "16",
+          "title": "HS0711.MLO   : 性奴"
+        },
+        {
+          "kind": "title",
+          "code": "42",
+          "title": "ID59.MLO     : 広美の告白"
+        },
+        {
+          "kind": "title",
+          "code": "51",
+          "title": "YK12.MLO     : 淫虐"
+        },
+        {
+          "kind": "title",
+          "code": "32",
+          "title": "ID14.MLO     : 乱闘"
+        },
+        {
+          "kind": "title",
+          "code": "35",
+          "title": "ID28.MLO     : 終極"
+        },
+        {
+          "kind": "title",
+          "code": "18",
+          "title": "HS0716.MLO   : 名残"
+        },
+        {
+          "kind": "title",
+          "code": "47",
+          "title": "MIST.MLO     : ミステリートラベル(エンディング)"
+        },
+        {
+          "kind": "title",
+          "code": "30",
+          "title": "ID08.MLO     :"
+        },
+        {
+          "kind": "title",
+          "code": "36",
+          "title": "ID28_B.MLO   :"
+        },
+        {
+          "kind": "title",
+          "code": "11",
+          "title": "BAMN.MLO     :"
+        },
+        {
+          "kind": "title",
+          "code": "12",
+          "title": "CHIM2.MLO    :"
+        },
+        {
+          "kind": "title",
+          "code": "13",
+          "title": "DOCUL.MLO    :"
+        },
+        {
+          "kind": "title",
+          "code": "23",
+          "title": "HS0722_B.MLO :"
+        },
+        {
+          "kind": "title",
+          "code": "45",
+          "title": "JYU.MLO      :"
+        },
+        {
+          "kind": "title",
+          "code": "50",
+          "title": "TIT3_R.MLO   :"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/csware.xml",
+      "source_order": 969,
+      "archive": "eturaku_98",
+      "id": "eturaku-98-opn"
+    },
+    {
+      "title": "[PC-9801] 禁断の血族",
+      "driver": {
+        "name": "pc98dos",
+        "type": "opn",
+        "alias": "C's Ware",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "clockmul",
+          "value": "8"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "MLALF_98.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "AGS.EXE",
+          "offset": "-1"
+        },
+        {
+          "type": "conin",
+          "path": "AGS.EXE",
+          "offset": "5"
+        },
+        {
+          "type": "file",
+          "path": "EARA.MLO",
+          "offset": "11"
+        },
+        {
+          "type": "file",
+          "path": "HH09.MLO",
+          "offset": "12"
+        },
+        {
+          "type": "file",
+          "path": "HH11.MLO",
+          "offset": "13"
+        },
+        {
+          "type": "file",
+          "path": "LS11.MLO",
+          "offset": "14"
+        },
+        {
+          "type": "file",
+          "path": "LS71.MLO",
+          "offset": "15"
+        },
+        {
+          "type": "file",
+          "path": "PIP02.MLO",
+          "offset": "16"
+        },
+        {
+          "type": "file",
+          "path": "PIP03.MLO",
+          "offset": "17"
+        },
+        {
+          "type": "file",
+          "path": "PIP04.MLO",
+          "offset": "18"
+        },
+        {
+          "type": "file",
+          "path": "PIP07.MLO",
+          "offset": "19"
+        },
+        {
+          "type": "file",
+          "path": "PIP08.MLO",
+          "offset": "20"
+        },
+        {
+          "type": "file",
+          "path": "PIP13.MLO",
+          "offset": "21"
+        },
+        {
+          "type": "file",
+          "path": "PIP15.MLO",
+          "offset": "22"
+        },
+        {
+          "type": "file",
+          "path": "PIP16.MLO",
+          "offset": "23"
+        },
+        {
+          "type": "file",
+          "path": "PISTLE.MLO",
+          "offset": "24"
+        },
+        {
+          "type": "file",
+          "path": "ROOM03.MLO",
+          "offset": "25"
+        },
+        {
+          "type": "file",
+          "path": "SOR03.MLO",
+          "offset": "26"
+        },
+        {
+          "type": "file",
+          "path": "STR03.MLO",
+          "offset": "27"
+        },
+        {
+          "type": "file",
+          "path": "TI7.MLO",
+          "offset": "28"
+        },
+        {
+          "type": "file",
+          "path": "TIRA.MLO",
+          "offset": "29"
+        },
+        {
+          "type": "file",
+          "path": "YOK02.MLO",
+          "offset": "30"
+        },
+        {
+          "type": "file",
+          "path": "YOK08.MLO",
+          "offset": "31"
+        },
+        {
+          "type": "file",
+          "path": "YOK10.MLO",
+          "offset": "32"
+        },
+        {
+          "type": "file",
+          "path": "YOK14.MLO",
+          "offset": "33"
+        },
+        {
+          "type": "file",
+          "path": "YOK18.MLO",
+          "offset": "34"
+        },
+        {
+          "type": "file",
+          "path": "YOK19.MLO",
+          "offset": "35"
+        },
+        {
+          "type": "file",
+          "path": "YOK40.MLO",
+          "offset": "36"
+        },
+        {
+          "type": "file",
+          "path": "YOK51.MLO",
+          "offset": "37"
+        },
+        {
+          "type": "shell",
+          "path": "MLALF_98",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "16",
+          "title": "PIP02.MLO  : エレピアノ バロック"
+        },
+        {
+          "kind": "title",
+          "code": "26",
+          "title": "SOR03.MLO  : 崩落"
+        },
+        {
+          "kind": "title",
+          "code": "14",
+          "title": "LS11.MLO   : 災難"
+        },
+        {
+          "kind": "title",
+          "code": "27",
+          "title": "STR03.MLO  : 泉の精のワルツ"
+        },
+        {
+          "kind": "title",
+          "code": "15",
+          "title": "LS71.MLO   : 危機"
+        },
+        {
+          "kind": "title",
+          "code": "17",
+          "title": "PIP03.MLO  : 躊躇"
+        },
+        {
+          "kind": "title",
+          "code": "28",
+          "title": "TI7.MLO    : 禁断の血族"
+        },
+        {
+          "kind": "title",
+          "code": "18",
+          "title": "PIP04.MLO  : 別離の逢瀬"
+        },
+        {
+          "kind": "title",
+          "code": "30",
+          "title": "YOK02.MLO  : 緊縛モード"
+        },
+        {
+          "kind": "title",
+          "code": "19",
+          "title": "PIP07.MLO  : 隷属"
+        },
+        {
+          "kind": "title",
+          "code": "20",
+          "title": "PIP08.MLO  : 発覚"
+        },
+        {
+          "kind": "title",
+          "code": "21",
+          "title": "PIP13.MLO  : 一段落"
+        },
+        {
+          "kind": "title",
+          "code": "22",
+          "title": "PIP15.MLO  : 無邪気"
+        },
+        {
+          "kind": "title",
+          "code": "23",
+          "title": "PIP16.MLO  : 朝"
+        },
+        {
+          "kind": "title",
+          "code": "31",
+          "title": "YOK08.MLO  : 帰宅"
+        },
+        {
+          "kind": "title",
+          "code": "32",
+          "title": "YOK10.MLO  : いさかい"
+        },
+        {
+          "kind": "title",
+          "code": "37",
+          "title": "YOK51.MLO  : 疑心"
+        },
+        {
+          "kind": "title",
+          "code": "12",
+          "title": "HH09.MLO   : 濡れた花弁"
+        },
+        {
+          "kind": "title",
+          "code": "13",
+          "title": "HH11.MLO   : 愛欲の虜"
+        },
+        {
+          "kind": "title",
+          "code": "25",
+          "title": "ROOM03.MLO : 花々"
+        },
+        {
+          "kind": "title",
+          "code": "29",
+          "title": "TIRA.MLO   : 遠方よりの依頼"
+        },
+        {
+          "kind": "title",
+          "code": "33",
+          "title": "YOK14.MLO  : 奪い合い"
+        },
+        {
+          "kind": "title",
+          "code": "11",
+          "title": "EARA.MLO   : 自室にて"
+        },
+        {
+          "kind": "title",
+          "code": "35",
+          "title": "YOK19.MLO  : グラスベル"
+        },
+        {
+          "kind": "title",
+          "code": "34",
+          "title": "YOK18.MLO  : 奇妙な屋敷"
+        },
+        {
+          "kind": "title",
+          "code": "24",
+          "title": "PISTLE.MLO : 猟銃"
+        },
+        {
+          "kind": "title",
+          "code": "36",
+          "title": "YOK40.MLO  : 遁走"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/csware.xml",
+      "source_order": 970,
+      "archive": "kinketu_98",
+      "id": "kinketu-98-opn"
+    },
+    {
+      "title": "[PC-9821] エイミーと呼ばないでっ(86)",
+      "driver": {
+        "name": "pc98dos",
+        "type": "86",
+        "alias": "C's Ware",
+        "platform": "NEC PC-9821"
+      },
+      "options": [
+        {
+          "name": "funcvect",
+          "value": "0x7e"
+        },
+        {
+          "name": "clockmul",
+          "value": "8"
+        },
+        {
+          "name": "showfm3ex",
+          "value": "1"
+        },
+        {
+          "name": "total_mix",
+          "value": "0xa0"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "PMD_98.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "PMD86.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "EIMY.EFC",
+          "offset": "0x08"
+        },
+        {
+          "type": "file",
+          "path": "EMI01_86.M",
+          "offset": "0x10"
+        },
+        {
+          "type": "file",
+          "path": "EMI02_86.M",
+          "offset": "0x11"
+        },
+        {
+          "type": "file",
+          "path": "EMI03_86.M",
+          "offset": "0x12"
+        },
+        {
+          "type": "file",
+          "path": "EMI04_86.M",
+          "offset": "0x13"
+        },
+        {
+          "type": "file",
+          "path": "EMI05_86.M",
+          "offset": "0x14"
+        },
+        {
+          "type": "file",
+          "path": "EMI06_86.M",
+          "offset": "0x15"
+        },
+        {
+          "type": "file",
+          "path": "EMI07_86.M",
+          "offset": "0x16"
+        },
+        {
+          "type": "file",
+          "path": "EMI08_86.M",
+          "offset": "0x17"
+        },
+        {
+          "type": "file",
+          "path": "EMI09_86.M",
+          "offset": "0x18"
+        },
+        {
+          "type": "file",
+          "path": "EMI10_86.M",
+          "offset": "0x19"
+        },
+        {
+          "type": "file",
+          "path": "EMI11_86.M",
+          "offset": "0x1a"
+        },
+        {
+          "type": "file",
+          "path": "EMI12_86.M",
+          "offset": "0x1b"
+        },
+        {
+          "type": "file",
+          "path": "EMI13_86.M",
+          "offset": "0x1c"
+        },
+        {
+          "type": "file",
+          "path": "EMI14_86.M",
+          "offset": "0x1d"
+        },
+        {
+          "type": "file",
+          "path": "EMI15_86.M",
+          "offset": "0x1e"
+        },
+        {
+          "type": "file",
+          "path": "EMI16_86.M",
+          "offset": "0x1f"
+        },
+        {
+          "type": "file",
+          "path": "EMI17_86.M",
+          "offset": "0x20"
+        },
+        {
+          "type": "file",
+          "path": "EMI19_86.M",
+          "offset": "0x21"
+        },
+        {
+          "type": "file",
+          "path": "EMI21_86.M",
+          "offset": "0x22"
+        },
+        {
+          "type": "file",
+          "path": "EMI22_86.M",
+          "offset": "0x23"
+        },
+        {
+          "type": "file",
+          "path": "EMI23_86.M",
+          "offset": "0x24"
+        },
+        {
+          "type": "file",
+          "path": "EMI24_86.M",
+          "offset": "0x25"
+        },
+        {
+          "type": "file",
+          "path": "EMI25_86.M",
+          "offset": "0x26"
+        },
+        {
+          "type": "file",
+          "path": "EMI26_86.M",
+          "offset": "0x27"
+        },
+        {
+          "type": "file",
+          "path": "EMI27_86.M",
+          "offset": "0x28"
+        },
+        {
+          "type": "file",
+          "path": "EMI28_86.M",
+          "offset": "0x29"
+        },
+        {
+          "type": "file",
+          "path": "EMI29_86.M",
+          "offset": "0x2a"
+        },
+        {
+          "type": "file",
+          "path": "EMI30_86.M",
+          "offset": "0x2b"
+        },
+        {
+          "type": "file",
+          "path": "EMI31_86.M",
+          "offset": "0x2c"
+        },
+        {
+          "type": "file",
+          "path": "EMI32_86.M",
+          "offset": "0x2d"
+        },
+        {
+          "type": "file",
+          "path": "EMI33_86.M",
+          "offset": "0x2e"
+        },
+        {
+          "type": "file",
+          "path": "EMI34_86.M",
+          "offset": "0x2f"
+        },
+        {
+          "type": "file",
+          "path": "EMI35_86.M",
+          "offset": "0x30"
+        },
+        {
+          "type": "file",
+          "path": "EMI36_86.M",
+          "offset": "0x31"
+        },
+        {
+          "type": "file",
+          "path": "EMI37_86.M",
+          "offset": "0x32"
+        },
+        {
+          "type": "shell",
+          "path": "PMD86 /m10 /v0 /e3 /k",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "pmd_98",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "EMI01_86.M : 眸のarrow(Thema Song)"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "EMI04_86.M : 香織"
+        },
+        {
+          "kind": "title",
+          "code": "0x14",
+          "title": "EMI05_86.M : 智美"
+        },
+        {
+          "kind": "title",
+          "code": "0x15",
+          "title": "EMI06_86.M : すみれ"
+        },
+        {
+          "kind": "title",
+          "code": "0x16",
+          "title": "EMI07_86.M : 瞳"
+        },
+        {
+          "kind": "title",
+          "code": "0x17",
+          "title": "EMI08_86.M : 鏡子"
+        },
+        {
+          "kind": "title",
+          "code": "0x18",
+          "title": "EMI09_86.M : 理恵"
+        },
+        {
+          "kind": "title",
+          "code": "0x1b",
+          "title": "EMI12_86.M : 朱い月"
+        },
+        {
+          "kind": "title",
+          "code": "0x1d",
+          "title": "EMI14_86.M : 館"
+        },
+        {
+          "kind": "title",
+          "code": "0x1e",
+          "title": "EMI15_86.M : Feeling(soft)"
+        },
+        {
+          "kind": "title",
+          "code": "0x1f",
+          "title": "EMI16_86.M : Feeling(beat)"
+        },
+        {
+          "kind": "title",
+          "code": "0x20",
+          "title": "EMI17_86.M : くつろぎ"
+        },
+        {
+          "kind": "title",
+          "code": "0x21",
+          "title": "EMI19_86.M : Came of Well"
+        },
+        {
+          "kind": "title",
+          "code": "0x22",
+          "title": "EMI21_86.M : Blood Devil"
+        },
+        {
+          "kind": "title",
+          "code": "0x23",
+          "title": "EMI22_86.M : 夢み心地"
+        },
+        {
+          "kind": "title",
+          "code": "0x24",
+          "title": "EMI23_86.M : イドの迷宮"
+        },
+        {
+          "kind": "title",
+          "code": "0x25",
+          "title": "EMI24_86.M : ワイングラス"
+        },
+        {
+          "kind": "title",
+          "code": "0x26",
+          "title": "EMI25_86.M : Heavy Sounds"
+        },
+        {
+          "kind": "title",
+          "code": "0x27",
+          "title": "EMI26_86.M : Eight Actuality"
+        },
+        {
+          "kind": "title",
+          "code": "0x28",
+          "title": "EMI27_86.M : 戦慄"
+        },
+        {
+          "kind": "title",
+          "code": "0x29",
+          "title": "EMI28_86.M : 光と闇と"
+        },
+        {
+          "kind": "title",
+          "code": "0x2a",
+          "title": "EMI29_86.M : エスニカン マリオネット"
+        },
+        {
+          "kind": "title",
+          "code": "0x2b",
+          "title": "EMI30_86.M : 病院にて"
+        },
+        {
+          "kind": "title",
+          "code": "0x2c",
+          "title": "EMI31_86.M : 憂慮"
+        },
+        {
+          "kind": "title",
+          "code": "0x2d",
+          "title": "EMI32_86.M : 再会"
+        },
+        {
+          "kind": "title",
+          "code": "0x2e",
+          "title": "EMI33_86.M : 吐息のkiss"
+        },
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "EMI02_86.M : ファンファーレ"
+        },
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "EMI03_86.M : アイキャッチ"
+        },
+        {
+          "kind": "title",
+          "code": "0x19",
+          "title": "EMI10_86.M : Ara？"
+        },
+        {
+          "kind": "title",
+          "code": "0x1a",
+          "title": "EMI11_86.M : Gian!"
+        },
+        {
+          "kind": "title",
+          "code": "0x1c",
+          "title": "EMI13_86.M : ジャーン"
+        },
+        {
+          "kind": "title",
+          "code": "0x2f",
+          "title": "EMI34_86.M : MENU【瞳のarrow】Short"
+        },
+        {
+          "kind": "title",
+          "code": "0x30",
+          "title": "EMI35_86.M : 次回予告【瞳のarrow】"
+        },
+        {
+          "kind": "title",
+          "code": "0x31",
+          "title": "EMI36_86.M : ちゃちゃーん"
+        },
+        {
+          "kind": "title",
+          "code": "0x32",
+          "title": "EMI37_86.M : チャイム"
+        },
+        {
+          "kind": "title",
+          "code": "0x32",
+          "title": "EMI38_86.M : ぽくぽく"
+        },
+        {
+          "kind": "range",
+          "min": "0x0801",
+          "max": "0x0814",
+          "title_format": "EIMY.EFC   : %02X",
+          "extcode": "0"
+        },
+        {
+          "kind": "title",
+          "code": "0x818",
+          "title": "EIMY.EFC   : 18"
+        },
+        {
+          "kind": "title",
+          "code": "0x81a",
+          "title": "EIMY.EFC   : 1A"
+        },
+        {
+          "kind": "title",
+          "code": "0x81b",
+          "title": "EIMY.EFC   : 1B"
+        },
+        {
+          "kind": "title",
+          "code": "0x828",
+          "title": "EIMY.EFC   : 28"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/csware.xml",
+      "source_order": 971,
+      "archive": "eime_21",
+      "id": "eime-21-86"
+    },
+    {
+      "title": "[PC-9821] エイミーと呼ばないでっ(GS)",
+      "driver": {
+        "name": "pc98dos",
+        "type": "beep",
+        "alias": "C's Ware",
+        "platform": "NEC PC-9821"
+      },
+      "options": [
+        {
+          "name": "clockmul",
+          "value": "8"
+        },
+        {
+          "name": "midiout",
+          "value": "1"
+        },
+        {
+          "name": "midiout_type",
+          "value": "4"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "MMP_HOOT.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MMD.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "EMI01.MMD",
+          "offset": "0x10"
+        },
+        {
+          "type": "file",
+          "path": "EMI02.MMD",
+          "offset": "0x11"
+        },
+        {
+          "type": "file",
+          "path": "EMI03.MMD",
+          "offset": "0x12"
+        },
+        {
+          "type": "file",
+          "path": "EMI04.MMD",
+          "offset": "0x13"
+        },
+        {
+          "type": "file",
+          "path": "EMI05.MMD",
+          "offset": "0x14"
+        },
+        {
+          "type": "file",
+          "path": "EMI06.MMD",
+          "offset": "0x15"
+        },
+        {
+          "type": "file",
+          "path": "EMI07.MMD",
+          "offset": "0x16"
+        },
+        {
+          "type": "file",
+          "path": "EMI08.MMD",
+          "offset": "0x17"
+        },
+        {
+          "type": "file",
+          "path": "EMI09.MMD",
+          "offset": "0x18"
+        },
+        {
+          "type": "file",
+          "path": "EMI10.MMD",
+          "offset": "0x19"
+        },
+        {
+          "type": "file",
+          "path": "EMI11.MMD",
+          "offset": "0x1a"
+        },
+        {
+          "type": "file",
+          "path": "EMI12.MMD",
+          "offset": "0x1b"
+        },
+        {
+          "type": "file",
+          "path": "EMI13.MMD",
+          "offset": "0x1c"
+        },
+        {
+          "type": "file",
+          "path": "EMI14.MMD",
+          "offset": "0x1d"
+        },
+        {
+          "type": "file",
+          "path": "EMI15.MMD",
+          "offset": "0x1e"
+        },
+        {
+          "type": "file",
+          "path": "EMI16.MMD",
+          "offset": "0x1f"
+        },
+        {
+          "type": "file",
+          "path": "EMI17.MMD",
+          "offset": "0x20"
+        },
+        {
+          "type": "file",
+          "path": "EMI19.MMD",
+          "offset": "0x21"
+        },
+        {
+          "type": "file",
+          "path": "EMI21.MMD",
+          "offset": "0x22"
+        },
+        {
+          "type": "file",
+          "path": "EMI22.MMD",
+          "offset": "0x23"
+        },
+        {
+          "type": "file",
+          "path": "EMI23.MMD",
+          "offset": "0x24"
+        },
+        {
+          "type": "file",
+          "path": "EMI24.MMD",
+          "offset": "0x25"
+        },
+        {
+          "type": "file",
+          "path": "EMI25.MMD",
+          "offset": "0x26"
+        },
+        {
+          "type": "file",
+          "path": "EMI26.MMD",
+          "offset": "0x27"
+        },
+        {
+          "type": "file",
+          "path": "EMI27.MMD",
+          "offset": "0x28"
+        },
+        {
+          "type": "file",
+          "path": "EMI28.MMD",
+          "offset": "0x29"
+        },
+        {
+          "type": "file",
+          "path": "EMI29.MMD",
+          "offset": "0x2a"
+        },
+        {
+          "type": "file",
+          "path": "EMI30.MMD",
+          "offset": "0x2b"
+        },
+        {
+          "type": "file",
+          "path": "EMI31.MMD",
+          "offset": "0x2c"
+        },
+        {
+          "type": "file",
+          "path": "EMI32.MMD",
+          "offset": "0x2d"
+        },
+        {
+          "type": "file",
+          "path": "EMI33.MMD",
+          "offset": "0x2e"
+        },
+        {
+          "type": "file",
+          "path": "EMI34.MMD",
+          "offset": "0x2f"
+        },
+        {
+          "type": "file",
+          "path": "EMI35.MMD",
+          "offset": "0x30"
+        },
+        {
+          "type": "file",
+          "path": "EMI36.MMD",
+          "offset": "0x31"
+        },
+        {
+          "type": "file",
+          "path": "EMI37.MMD",
+          "offset": "0x32"
+        },
+        {
+          "type": "shell",
+          "path": "MMD /m13 /k",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "MMP_HOOT",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "EMI01.MMD : 眸のarrow(Thema Song)"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "EMI04.MMD : 香織"
+        },
+        {
+          "kind": "title",
+          "code": "0x14",
+          "title": "EMI05.MMD : 智美"
+        },
+        {
+          "kind": "title",
+          "code": "0x15",
+          "title": "EMI06.MMD : すみれ"
+        },
+        {
+          "kind": "title",
+          "code": "0x16",
+          "title": "EMI07.MMD : 瞳"
+        },
+        {
+          "kind": "title",
+          "code": "0x17",
+          "title": "EMI08.MMD : 鏡子"
+        },
+        {
+          "kind": "title",
+          "code": "0x18",
+          "title": "EMI09.MMD : 理恵"
+        },
+        {
+          "kind": "title",
+          "code": "0x1b",
+          "title": "EMI12.MMD : 朱い月"
+        },
+        {
+          "kind": "title",
+          "code": "0x1d",
+          "title": "EMI14.MMD : 館"
+        },
+        {
+          "kind": "title",
+          "code": "0x1e",
+          "title": "EMI15.MMD : Feeling(soft)"
+        },
+        {
+          "kind": "title",
+          "code": "0x1f",
+          "title": "EMI16.MMD : Feeling(beat)"
+        },
+        {
+          "kind": "title",
+          "code": "0x20",
+          "title": "EMI17.MMD : くつろぎ"
+        },
+        {
+          "kind": "title",
+          "code": "0x21",
+          "title": "EMI19.MMD : Came of Well"
+        },
+        {
+          "kind": "title",
+          "code": "0x22",
+          "title": "EMI21.MMD : Blood Devil"
+        },
+        {
+          "kind": "title",
+          "code": "0x23",
+          "title": "EMI22.MMD : 夢み心地"
+        },
+        {
+          "kind": "title",
+          "code": "0x24",
+          "title": "EMI23.MMD : イドの迷宮"
+        },
+        {
+          "kind": "title",
+          "code": "0x25",
+          "title": "EMI24.MMD : ワイングラス"
+        },
+        {
+          "kind": "title",
+          "code": "0x26",
+          "title": "EMI25.MMD : Heavy Sounds"
+        },
+        {
+          "kind": "title",
+          "code": "0x27",
+          "title": "EMI26.MMD : Eight Actuality"
+        },
+        {
+          "kind": "title",
+          "code": "0x28",
+          "title": "EMI27.MMD : 戦慄"
+        },
+        {
+          "kind": "title",
+          "code": "0x29",
+          "title": "EMI28.MMD : 光と闇と"
+        },
+        {
+          "kind": "title",
+          "code": "0x2a",
+          "title": "EMI29.MMD : エスニカン マリオネット"
+        },
+        {
+          "kind": "title",
+          "code": "0x2b",
+          "title": "EMI30.MMD : 病院にて"
+        },
+        {
+          "kind": "title",
+          "code": "0x2c",
+          "title": "EMI31.MMD : 憂慮"
+        },
+        {
+          "kind": "title",
+          "code": "0x2d",
+          "title": "EMI32.MMD : 再会"
+        },
+        {
+          "kind": "title",
+          "code": "0x2e",
+          "title": "EMI33.MMD : 吐息のkiss"
+        },
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "EMI02.MMD : ファンファーレ"
+        },
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "EMI03.MMD : アイキャッチ"
+        },
+        {
+          "kind": "title",
+          "code": "0x19",
+          "title": "EMI10.MMD : Ara?"
+        },
+        {
+          "kind": "title",
+          "code": "0x1a",
+          "title": "EMI11.MMD : Gian!"
+        },
+        {
+          "kind": "title",
+          "code": "0x1c",
+          "title": "EMI13.MMD : ジャーン"
+        },
+        {
+          "kind": "title",
+          "code": "0x2f",
+          "title": "EMI34.MMD : MENU【瞳のarrow】Short"
+        },
+        {
+          "kind": "title",
+          "code": "0x30",
+          "title": "EMI35.MMD : 次回予告【瞳のarrow】"
+        },
+        {
+          "kind": "title",
+          "code": "0x31",
+          "title": "EMI36.MMD : ちゃちゃーん"
+        },
+        {
+          "kind": "title",
+          "code": "0x32",
+          "title": "EMI37.MMD : チャイム"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/csware.xml",
+      "source_order": 972,
+      "archive": "eime_21",
+      "id": "eime-21-beep"
+    },
+    {
+      "title": "[PC-9821] DESIRE ～背徳の螺旋～",
+      "driver": {
+        "name": "pc98vx",
+        "type": "86",
+        "alias": "C's Ware",
+        "platform": "NEC PC-9821"
+      },
+      "options": [
+        {
+          "name": "clockmul",
+          "value": "8"
+        },
+        {
+          "name": "bootcs",
+          "value": "0x0060"
+        },
+        {
+          "name": "bootip",
+          "value": "0x0000"
+        },
+        {
+          "name": "funcvect",
+          "value": "0x7f"
+        },
+        {
+          "name": "adressing",
+          "value": "0"
+        },
+        {
+          "name": "dataaddr",
+          "value": "0x10000"
+        },
+        {
+          "name": "filesize",
+          "value": "0x6000"
+        },
+        {
+          "name": "datamax",
+          "value": "0xff"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "DOFMD_98.BIN",
+          "offset": "0x600"
+        },
+        {
+          "type": "code",
+          "path": "KML",
+          "offset": "0xfa0"
+        },
+        {
+          "type": "bgm",
+          "path": "AIR.M",
+          "offset": "0x01"
+        },
+        {
+          "type": "bgm",
+          "path": "DES_01.M",
+          "offset": "0x02"
+        },
+        {
+          "type": "bgm",
+          "path": "DES_02.M",
+          "offset": "0x03"
+        },
+        {
+          "type": "bgm",
+          "path": "DES_03.M",
+          "offset": "0x04"
+        },
+        {
+          "type": "bgm",
+          "path": "DES_04.M",
+          "offset": "0x05"
+        },
+        {
+          "type": "bgm",
+          "path": "DES_05.M",
+          "offset": "0x06"
+        },
+        {
+          "type": "bgm",
+          "path": "DES_07.M",
+          "offset": "0x07"
+        },
+        {
+          "type": "bgm",
+          "path": "DES_08.M",
+          "offset": "0x08"
+        },
+        {
+          "type": "bgm",
+          "path": "DES_12.M",
+          "offset": "0x09"
+        },
+        {
+          "type": "bgm",
+          "path": "DES_13.M",
+          "offset": "0x0a"
+        },
+        {
+          "type": "bgm",
+          "path": "DES_14.M",
+          "offset": "0x0b"
+        },
+        {
+          "type": "bgm",
+          "path": "DES_15.M",
+          "offset": "0x0c"
+        },
+        {
+          "type": "bgm",
+          "path": "DES_16.M",
+          "offset": "0x0d"
+        },
+        {
+          "type": "bgm",
+          "path": "DES_17.M",
+          "offset": "0x0e"
+        },
+        {
+          "type": "bgm",
+          "path": "DES_19.M",
+          "offset": "0x0f"
+        },
+        {
+          "type": "bgm",
+          "path": "DES_21.M",
+          "offset": "0x10"
+        },
+        {
+          "type": "bgm",
+          "path": "DES_22.M",
+          "offset": "0x11"
+        },
+        {
+          "type": "bgm",
+          "path": "DES_24.M",
+          "offset": "0x12"
+        },
+        {
+          "type": "bgm",
+          "path": "DES_26.M",
+          "offset": "0x13"
+        },
+        {
+          "type": "bgm",
+          "path": "DES_31.M",
+          "offset": "0x14"
+        },
+        {
+          "type": "bgm",
+          "path": "DES_32.M",
+          "offset": "0x15"
+        },
+        {
+          "type": "bgm",
+          "path": "DES_34.M",
+          "offset": "0x16"
+        },
+        {
+          "type": "bgm",
+          "path": "DES_36.M",
+          "offset": "0x17"
+        },
+        {
+          "type": "bgm",
+          "path": "DES_41.M",
+          "offset": "0x18"
+        },
+        {
+          "type": "bgm",
+          "path": "DES_42.M",
+          "offset": "0x19"
+        },
+        {
+          "type": "bgm",
+          "path": "DES_78.M",
+          "offset": "0x1a"
+        },
+        {
+          "type": "bgm",
+          "path": "DES_79.M",
+          "offset": "0x1b"
+        },
+        {
+          "type": "bgm",
+          "path": "DES_80.M",
+          "offset": "0x1c"
+        },
+        {
+          "type": "bgm",
+          "path": "DES_82.M",
+          "offset": "0x1d"
+        },
+        {
+          "type": "bgm",
+          "path": "DES_84.M",
+          "offset": "0x1e"
+        },
+        {
+          "type": "bgm",
+          "path": "DES_85.M",
+          "offset": "0x1f"
+        },
+        {
+          "type": "bgm",
+          "path": "ENDING.M",
+          "offset": "0x20"
+        },
+        {
+          "type": "bgm",
+          "path": "OPENING.M",
+          "offset": "0x21"
+        },
+        {
+          "type": "bgm",
+          "path": "SE17.M",
+          "offset": "0x22"
+        },
+        {
+          "type": "bgm",
+          "path": "SE18.M",
+          "offset": "0x23"
+        },
+        {
+          "type": "bgm",
+          "path": "SE20.M",
+          "offset": "0x24"
+        },
+        {
+          "type": "bgm",
+          "path": "SE25.M",
+          "offset": "0x25"
+        },
+        {
+          "type": "bgm",
+          "path": "SE32.M",
+          "offset": "0x26"
+        },
+        {
+          "type": "bgm",
+          "path": "SE33.M",
+          "offset": "0x27"
+        },
+        {
+          "type": "bgm",
+          "path": "TITLE.M",
+          "offset": "0x28"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x21",
+          "title": "OPENING.M :"
+        },
+        {
+          "kind": "title",
+          "code": "0x28",
+          "title": "TITLE.M   :"
+        },
+        {
+          "kind": "title",
+          "code": "0x02",
+          "title": "DES_01.M  : Noon"
+        },
+        {
+          "kind": "title",
+          "code": "0x03",
+          "title": "DES_02.M  : Music Box"
+        },
+        {
+          "kind": "title",
+          "code": "0x04",
+          "title": "DES_03.M  : Room"
+        },
+        {
+          "kind": "title",
+          "code": "0x05",
+          "title": "DES_04.M  : Search I"
+        },
+        {
+          "kind": "title",
+          "code": "0x06",
+          "title": "DES_05.M  : Gag"
+        },
+        {
+          "kind": "title",
+          "code": "0x07",
+          "title": "DES_07.M  : Night"
+        },
+        {
+          "kind": "title",
+          "code": "0x08",
+          "title": "DES_08.M  : Hard Scene I"
+        },
+        {
+          "kind": "title",
+          "code": "0x09",
+          "title": "DES_12.M  : Suspicion I"
+        },
+        {
+          "kind": "title",
+          "code": "0x0a",
+          "title": "DES_13.M  : Dream I"
+        },
+        {
+          "kind": "title",
+          "code": "0x0c",
+          "title": "DES_15.M  : Hard Scene II"
+        },
+        {
+          "kind": "title",
+          "code": "0x0d",
+          "title": "DES_16.M  : Hard Scene II"
+        },
+        {
+          "kind": "title",
+          "code": "0x0e",
+          "title": "DES_17.M  : Feel Easy"
+        },
+        {
+          "kind": "title",
+          "code": "0x0f",
+          "title": "DES_19.M  : Search II"
+        },
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "DES_21.M  : Anxious I"
+        },
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "DES_22.M  : Anxious II"
+        },
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "DES_24.M  : Dream II"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "DES_26.M  : Responser HungUp!"
+        },
+        {
+          "kind": "title",
+          "code": "0x14",
+          "title": "DES_31.M  : Responser"
+        },
+        {
+          "kind": "title",
+          "code": "0x15",
+          "title": "DES_32.M  : Tina"
+        },
+        {
+          "kind": "title",
+          "code": "0x16",
+          "title": "DES_34.M  : Pinch"
+        },
+        {
+          "kind": "title",
+          "code": "0x17",
+          "title": "DES_36.M  : Suspicion II"
+        },
+        {
+          "kind": "title",
+          "code": "0x1b",
+          "title": "DES_79.M  : Makoto's"
+        },
+        {
+          "kind": "title",
+          "code": "0x1d",
+          "title": "DES_82.M  : The Another World"
+        },
+        {
+          "kind": "title",
+          "code": "0x1e",
+          "title": "DES_84.M  : Suspicion"
+        },
+        {
+          "kind": "title",
+          "code": "0x1f",
+          "title": "DES_85.M  : Lamentable"
+        },
+        {
+          "kind": "title",
+          "code": "0x20",
+          "title": "ENDING.M  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "AIR.M     :"
+        },
+        {
+          "kind": "title",
+          "code": "0x0b",
+          "title": "DES_14.M  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x18",
+          "title": "DES_41.M  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x19",
+          "title": "DES_42.M  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x1a",
+          "title": "DES_78.M  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x1c",
+          "title": "DES_80.M  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x22",
+          "title": "SE17.M    :"
+        },
+        {
+          "kind": "title",
+          "code": "0x23",
+          "title": "SE18.M    :"
+        },
+        {
+          "kind": "title",
+          "code": "0x24",
+          "title": "SE20.M    :"
+        },
+        {
+          "kind": "title",
+          "code": "0x25",
+          "title": "SE25.M    :"
+        },
+        {
+          "kind": "title",
+          "code": "0x26",
+          "title": "SE32.M    :"
+        },
+        {
+          "kind": "title",
+          "code": "0x27",
+          "title": "SE33.M    :"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/csware.xml",
+      "source_order": 973,
+      "archive": "desire_21",
+      "id": "desire-21-86"
+    },
+    {
+      "title": "[PC-9821] XENON ～夢幻の肢体～",
+      "driver": {
+        "name": "pc98dos",
+        "type": "86",
+        "alias": "C's Ware",
+        "platform": "NEC PC-9821"
+      },
+      "options": [
+        {
+          "name": "funcvect",
+          "value": "0x7e"
+        },
+        {
+          "name": "clockmul",
+          "value": "8"
+        },
+        {
+          "name": "showfm3ex",
+          "value": "1"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "PMD_98.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "PMD86.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "XEN_SE.EFC",
+          "offset": "0x08"
+        },
+        {
+          "type": "file",
+          "path": "XEN03A.M",
+          "offset": "0x10"
+        },
+        {
+          "type": "file",
+          "path": "XEN03B.M",
+          "offset": "0x12"
+        },
+        {
+          "type": "file",
+          "path": "XEN86_01.M",
+          "offset": "0x14"
+        },
+        {
+          "type": "file",
+          "path": "XEN86_02.M",
+          "offset": "0x15"
+        },
+        {
+          "type": "file",
+          "path": "XEN86_03.M",
+          "offset": "0x16"
+        },
+        {
+          "type": "file",
+          "path": "XEN86_04.M",
+          "offset": "0x17"
+        },
+        {
+          "type": "file",
+          "path": "XEN86_05.M",
+          "offset": "0x18"
+        },
+        {
+          "type": "file",
+          "path": "XEN86_06.M",
+          "offset": "0x19"
+        },
+        {
+          "type": "file",
+          "path": "XEN86_07.M",
+          "offset": "0x1a"
+        },
+        {
+          "type": "file",
+          "path": "XEN86_08.M",
+          "offset": "0x1b"
+        },
+        {
+          "type": "file",
+          "path": "XEN86_09.M",
+          "offset": "0x1c"
+        },
+        {
+          "type": "file",
+          "path": "XEN86_10.M",
+          "offset": "0x1d"
+        },
+        {
+          "type": "file",
+          "path": "XEN86_11.M",
+          "offset": "0x1e"
+        },
+        {
+          "type": "file",
+          "path": "XEN86_12.M",
+          "offset": "0x1f"
+        },
+        {
+          "type": "file",
+          "path": "XEN86_13.M",
+          "offset": "0x20"
+        },
+        {
+          "type": "file",
+          "path": "XEN86_14.M",
+          "offset": "0x21"
+        },
+        {
+          "type": "file",
+          "path": "XEN86_15.M",
+          "offset": "0x22"
+        },
+        {
+          "type": "file",
+          "path": "XEN86_16.M",
+          "offset": "0x23"
+        },
+        {
+          "type": "file",
+          "path": "XEN86_17.M",
+          "offset": "0x24"
+        },
+        {
+          "type": "file",
+          "path": "XEN86_18.M",
+          "offset": "0x25"
+        },
+        {
+          "type": "file",
+          "path": "XEN86_19.M",
+          "offset": "0x26"
+        },
+        {
+          "type": "file",
+          "path": "XEN86_20.M",
+          "offset": "0x27"
+        },
+        {
+          "type": "file",
+          "path": "XEN86_21.M",
+          "offset": "0x28"
+        },
+        {
+          "type": "file",
+          "path": "XEN86_22.M",
+          "offset": "0x29"
+        },
+        {
+          "type": "file",
+          "path": "XEN86_23.M",
+          "offset": "0x2a"
+        },
+        {
+          "type": "file",
+          "path": "XEN86_24.M",
+          "offset": "0x2b"
+        },
+        {
+          "type": "file",
+          "path": "XEN86_25.M",
+          "offset": "0x2c"
+        },
+        {
+          "type": "file",
+          "path": "XEN86_26.M",
+          "offset": "0x2d"
+        },
+        {
+          "type": "file",
+          "path": "XEN86_27.M",
+          "offset": "0x2e"
+        },
+        {
+          "type": "file",
+          "path": "XEN86_29.M",
+          "offset": "0x2f"
+        },
+        {
+          "type": "shell",
+          "path": "PMD86 /v0 /e4 /F /k",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "pmd_98",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x14",
+          "title": "XEN86_01.M : Desert Storm"
+        },
+        {
+          "kind": "title",
+          "code": "0x15",
+          "title": "XEN86_02.M : XENON"
+        },
+        {
+          "kind": "title",
+          "code": "0x16",
+          "title": "XEN86_03.M : Ranphar I"
+        },
+        {
+          "kind": "title",
+          "code": "0x17",
+          "title": "XEN86_04.M : Dim Memory"
+        },
+        {
+          "kind": "title",
+          "code": "0x18",
+          "title": "XEN86_05.M : Realize Real"
+        },
+        {
+          "kind": "title",
+          "code": "0x19",
+          "title": "XEN86_06.M : Reamer"
+        },
+        {
+          "kind": "title",
+          "code": "0x1a",
+          "title": "XEN86_07.M : Sound Effect No.01"
+        },
+        {
+          "kind": "title",
+          "code": "0x1b",
+          "title": "XEN86_08.M : Sound Effect No.02"
+        },
+        {
+          "kind": "title",
+          "code": "0x1c",
+          "title": "XEN86_09.M : Synaps"
+        },
+        {
+          "kind": "title",
+          "code": "0x1d",
+          "title": "XEN86_10.M : Desert Storm"
+        },
+        {
+          "kind": "title",
+          "code": "0x1e",
+          "title": "XEN86_11.M : Tacit Communicate"
+        },
+        {
+          "kind": "title",
+          "code": "0x1f",
+          "title": "XEN86_12.M : Access"
+        },
+        {
+          "kind": "title",
+          "code": "0x20",
+          "title": "XEN86_13.M : Encoder"
+        },
+        {
+          "kind": "title",
+          "code": "0x21",
+          "title": "XEN86_14.M :"
+        },
+        {
+          "kind": "title",
+          "code": "0x22",
+          "title": "XEN86_15.M : Risk"
+        },
+        {
+          "kind": "title",
+          "code": "0x23",
+          "title": "XEN86_16.M : Moonlight"
+        },
+        {
+          "kind": "title",
+          "code": "0x24",
+          "title": "XEN86_17.M : Dream"
+        },
+        {
+          "kind": "title",
+          "code": "0x25",
+          "title": "XEN86_18.M :"
+        },
+        {
+          "kind": "title",
+          "code": "0x26",
+          "title": "XEN86_19.M :"
+        },
+        {
+          "kind": "title",
+          "code": "0x27",
+          "title": "XEN86_20.M :"
+        },
+        {
+          "kind": "title",
+          "code": "0x28",
+          "title": "XEN86_21.M : Towering Past"
+        },
+        {
+          "kind": "title",
+          "code": "0x29",
+          "title": "XEN86_22.M : 7th"
+        },
+        {
+          "kind": "title",
+          "code": "0x2a",
+          "title": "XEN86_23.M : Magenta"
+        },
+        {
+          "kind": "title",
+          "code": "0x2b",
+          "title": "XEN86_24.M : Magnify Dark"
+        },
+        {
+          "kind": "title",
+          "code": "0x2c",
+          "title": "XEN86_25.M : 俺達の子守唄"
+        },
+        {
+          "kind": "title",
+          "code": "0x2d",
+          "title": "XEN86_26.M : Ranphar II"
+        },
+        {
+          "kind": "title",
+          "code": "0x2e",
+          "title": "XEN86_27.M :"
+        },
+        {
+          "kind": "title",
+          "code": "0x2f",
+          "title": "XEN86_29.M : 警報"
+        },
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "XEN03A.M   :"
+        },
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "XEN03B.M   :"
+        },
+        {
+          "kind": "range",
+          "min": "0x0801",
+          "max": "0x0832",
+          "title_format": "XEN_SE.EFC : %02X",
+          "extcode": "0"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/csware.xml",
+      "source_order": 974,
+      "archive": "xenon_21",
+      "id": "xenon-21-86"
+    },
+    {
+      "title": "[PC-9821] 悦楽の学園",
+      "driver": {
+        "name": "pc98vx",
+        "type": "86",
+        "alias": "C's Ware",
+        "platform": "NEC PC-9821"
+      },
+      "options": [
+        {
+          "name": "clockmul",
+          "value": "8"
+        },
+        {
+          "name": "bootcs",
+          "value": "0x0060"
+        },
+        {
+          "name": "bootip",
+          "value": "0x0000"
+        },
+        {
+          "name": "funcvect",
+          "value": "0x7f"
+        },
+        {
+          "name": "adressing",
+          "value": "0"
+        },
+        {
+          "name": "dataaddr",
+          "value": "0x10000"
+        },
+        {
+          "name": "filesize",
+          "value": "0x6000"
+        },
+        {
+          "name": "datamax",
+          "value": "0xff"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "DOFMD_98.BIN",
+          "offset": "0x600"
+        },
+        {
+          "type": "code",
+          "path": "KML",
+          "offset": "0xfa0"
+        },
+        {
+          "type": "bgm",
+          "path": "HS0701.MLO",
+          "offset": "0x01"
+        },
+        {
+          "type": "bgm",
+          "path": "HS0702.MLO",
+          "offset": "0x02"
+        },
+        {
+          "type": "bgm",
+          "path": "HS0711.MLO",
+          "offset": "0x03"
+        },
+        {
+          "type": "bgm",
+          "path": "HS0712.MLO",
+          "offset": "0x04"
+        },
+        {
+          "type": "bgm",
+          "path": "HS0716.MLO",
+          "offset": "0x05"
+        },
+        {
+          "type": "bgm",
+          "path": "HS0718.MLO",
+          "offset": "0x06"
+        },
+        {
+          "type": "bgm",
+          "path": "HS0719.MLO",
+          "offset": "0x07"
+        },
+        {
+          "type": "bgm",
+          "path": "HS0721.MLO",
+          "offset": "0x08"
+        },
+        {
+          "type": "bgm",
+          "path": "HS0722.MLO",
+          "offset": "0x09"
+        },
+        {
+          "type": "bgm",
+          "path": "HS0722_B.MLO",
+          "offset": "0x0a"
+        },
+        {
+          "type": "bgm",
+          "path": "HS0723.MLO",
+          "offset": "0x0b"
+        },
+        {
+          "type": "bgm",
+          "path": "HS0724.MLO",
+          "offset": "0x0c"
+        },
+        {
+          "type": "bgm",
+          "path": "HS0726.MLO",
+          "offset": "0x0d"
+        },
+        {
+          "type": "bgm",
+          "path": "HS0727.MLO",
+          "offset": "0x0e"
+        },
+        {
+          "type": "bgm",
+          "path": "ID02.MLO",
+          "offset": "0x0f"
+        },
+        {
+          "type": "bgm",
+          "path": "ID03.MLO",
+          "offset": "0x10"
+        },
+        {
+          "type": "bgm",
+          "path": "ID08.MLO",
+          "offset": "0x11"
+        },
+        {
+          "type": "bgm",
+          "path": "ID12.MLO",
+          "offset": "0x12"
+        },
+        {
+          "type": "bgm",
+          "path": "ID14.MLO",
+          "offset": "0x13"
+        },
+        {
+          "type": "bgm",
+          "path": "ID15.MLO",
+          "offset": "0x14"
+        },
+        {
+          "type": "bgm",
+          "path": "ID21.MLO",
+          "offset": "0x15"
+        },
+        {
+          "type": "bgm",
+          "path": "ID28.MLO",
+          "offset": "0x16"
+        },
+        {
+          "type": "bgm",
+          "path": "ID40.MLO",
+          "offset": "0x17"
+        },
+        {
+          "type": "bgm",
+          "path": "ID49.MLO",
+          "offset": "0x18"
+        },
+        {
+          "type": "bgm",
+          "path": "ID51.MLO",
+          "offset": "0x19"
+        },
+        {
+          "type": "bgm",
+          "path": "ID54.MLO",
+          "offset": "0x1a"
+        },
+        {
+          "type": "bgm",
+          "path": "ID57.MLO",
+          "offset": "0x1b"
+        },
+        {
+          "type": "bgm",
+          "path": "ID59.MLO",
+          "offset": "0x1c"
+        },
+        {
+          "type": "bgm",
+          "path": "ID62.MLO",
+          "offset": "0x1d"
+        },
+        {
+          "type": "bgm",
+          "path": "ID67.MLO",
+          "offset": "0x1e"
+        },
+        {
+          "type": "bgm",
+          "path": "KIN_3.MLO",
+          "offset": "0x1f"
+        },
+        {
+          "type": "bgm",
+          "path": "KIN_9.MLO",
+          "offset": "0x20"
+        },
+        {
+          "type": "bgm",
+          "path": "LOGO.MLO",
+          "offset": "0x21"
+        },
+        {
+          "type": "bgm",
+          "path": "MIST.MLO",
+          "offset": "0x22"
+        },
+        {
+          "type": "bgm",
+          "path": "MIST_R.MLO",
+          "offset": "0x23"
+        },
+        {
+          "type": "bgm",
+          "path": "TIT3.MLO",
+          "offset": "0x24"
+        },
+        {
+          "type": "bgm",
+          "path": "TIT3_R.MLO",
+          "offset": "0x25"
+        },
+        {
+          "type": "bgm",
+          "path": "YK12.MLO",
+          "offset": "0x26"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x010021",
+          "title": "LOGO.MLO     :"
+        },
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "ID03.MLO     : 校内の様子"
+        },
+        {
+          "kind": "title",
+          "code": "0x19",
+          "title": "ID51.MLO     : 雨宮淑子"
+        },
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "HS0701.MLO   : 夢幻"
+        },
+        {
+          "kind": "title",
+          "code": "0x24",
+          "title": "TIT3.MLO     : 悦楽の学園"
+        },
+        {
+          "kind": "title",
+          "code": "0x15",
+          "title": "ID21.MLO     : 職員室"
+        },
+        {
+          "kind": "title",
+          "code": "0x14",
+          "title": "ID15.MLO     : 振間典子"
+        },
+        {
+          "kind": "title",
+          "code": "0x0b",
+          "title": "HS0723.MLO   : 霞んだ日常"
+        },
+        {
+          "kind": "title",
+          "code": "0x23",
+          "title": "MIST_R.MLO   : ミステリートラベル(オープニング)"
+        },
+        {
+          "kind": "title",
+          "code": "0x18",
+          "title": "ID49.MLO     : 連絡員・由美"
+        },
+        {
+          "kind": "title",
+          "code": "0x0d",
+          "title": "HS0726.MLO   : アバンチュール"
+        },
+        {
+          "kind": "title",
+          "code": "0x02",
+          "title": "HS0702.MLO   : MENU"
+        },
+        {
+          "kind": "title",
+          "code": "0x07",
+          "title": "HS0719.MLO   : 理事長室"
+        },
+        {
+          "kind": "title",
+          "code": "0x0f",
+          "title": "ID02.MLO     : 氷室恭子"
+        },
+        {
+          "kind": "title",
+          "code": "0x0e",
+          "title": "HS0727.MLO   : 弱味"
+        },
+        {
+          "kind": "title",
+          "code": "0x17",
+          "title": "ID40.MLO     : 保健室"
+        },
+        {
+          "kind": "title",
+          "code": "0x1e",
+          "title": "ID67.MLO     : 松乃広美"
+        },
+        {
+          "kind": "title",
+          "code": "0x04",
+          "title": "HS0712.MLO   : 真心の広美"
+        },
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "ID12.MLO     : 体育館"
+        },
+        {
+          "kind": "title",
+          "code": "0x0c",
+          "title": "HS0724.MLO   : 純真"
+        },
+        {
+          "kind": "title",
+          "code": "0x1a",
+          "title": "ID54.MLO     : 温水プール"
+        },
+        {
+          "kind": "title",
+          "code": "0x1b",
+          "title": "ID57.MLO     : 謀計"
+        },
+        {
+          "kind": "title",
+          "code": "0x08",
+          "title": "HS0721.MLO   : 水面下"
+        },
+        {
+          "kind": "title",
+          "code": "0x06",
+          "title": "HS0718.MLO   : 夜のしじま"
+        },
+        {
+          "kind": "title",
+          "code": "0x1d",
+          "title": "ID62.MLO     : 純愛とナイフ"
+        },
+        {
+          "kind": "title",
+          "code": "0x09",
+          "title": "HS0722.MLO   : 密事"
+        },
+        {
+          "kind": "title",
+          "code": "0x03",
+          "title": "HS0711.MLO   : 性奴"
+        },
+        {
+          "kind": "title",
+          "code": "0x1c",
+          "title": "ID59.MLO     : 広美の告白"
+        },
+        {
+          "kind": "title",
+          "code": "0x26",
+          "title": "YK12.MLO     : 淫虐"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "ID14.MLO     : 乱闘"
+        },
+        {
+          "kind": "title",
+          "code": "0x16",
+          "title": "ID28.MLO     : 終極"
+        },
+        {
+          "kind": "title",
+          "code": "0x05",
+          "title": "HS0716.MLO   : 名残"
+        },
+        {
+          "kind": "title",
+          "code": "0x22",
+          "title": "MIST.MLO     : ミステリートラベル(エンディング)"
+        },
+        {
+          "kind": "title",
+          "code": "0x0a",
+          "title": "HS0722_B.MLO :"
+        },
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "ID08.MLO     :"
+        },
+        {
+          "kind": "title",
+          "code": "0x1f",
+          "title": "KIN_3.MLO    : 災難"
+        },
+        {
+          "kind": "title",
+          "code": "0x20",
+          "title": "KIN_9.MLO    : 緊縛モード"
+        },
+        {
+          "kind": "title",
+          "code": "0x25",
+          "title": "TIT3_R.MLO   :"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/csware.xml",
+      "source_order": 975,
+      "archive": "eturaku_21",
+      "id": "eturaku-21-86"
+    },
+    {
+      "title": "[PC-9821] 禁断の血族",
+      "driver": {
+        "name": "pc98vx",
+        "type": "86",
+        "alias": "C's Ware",
+        "platform": "NEC PC-9821"
+      },
+      "options": [
+        {
+          "name": "bootcs",
+          "value": "0x0060"
+        },
+        {
+          "name": "bootip",
+          "value": "0x0000"
+        },
+        {
+          "name": "funcvect",
+          "value": "0x7f"
+        },
+        {
+          "name": "adressing",
+          "value": "0"
+        },
+        {
+          "name": "dataaddr",
+          "value": "0x10000"
+        },
+        {
+          "name": "filesize",
+          "value": "0x6000"
+        },
+        {
+          "name": "datamax",
+          "value": "0xff"
+        },
+        {
+          "name": "clockmul",
+          "value": "8"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "DOFMD_98.BIN",
+          "offset": "0x600"
+        },
+        {
+          "type": "code",
+          "path": "KML",
+          "offset": "0xfa0"
+        },
+        {
+          "type": "bgm",
+          "path": "EARA.MLO",
+          "offset": "0x01"
+        },
+        {
+          "type": "bgm",
+          "path": "HH09.MLO",
+          "offset": "0x02"
+        },
+        {
+          "type": "bgm",
+          "path": "HH11.MLO",
+          "offset": "0x03"
+        },
+        {
+          "type": "bgm",
+          "path": "LS11.MLO",
+          "offset": "0x04"
+        },
+        {
+          "type": "bgm",
+          "path": "LS71.MLO",
+          "offset": "0x05"
+        },
+        {
+          "type": "bgm",
+          "path": "PIP02.MLO",
+          "offset": "0x06"
+        },
+        {
+          "type": "bgm",
+          "path": "PIP03.MLO",
+          "offset": "0x07"
+        },
+        {
+          "type": "bgm",
+          "path": "PIP07.MLO",
+          "offset": "0x08"
+        },
+        {
+          "type": "bgm",
+          "path": "PIP08.MLO",
+          "offset": "0x09"
+        },
+        {
+          "type": "bgm",
+          "path": "PIP13.MLO",
+          "offset": "0x0a"
+        },
+        {
+          "type": "bgm",
+          "path": "PIP15.MLO",
+          "offset": "0x0b"
+        },
+        {
+          "type": "bgm",
+          "path": "PIP16.MLO",
+          "offset": "0x0c"
+        },
+        {
+          "type": "bgm",
+          "path": "ROOM03.MLO",
+          "offset": "0x0d"
+        },
+        {
+          "type": "bgm",
+          "path": "SOR03.MLO",
+          "offset": "0x0e"
+        },
+        {
+          "type": "bgm",
+          "path": "STR03.MLO",
+          "offset": "0x0f"
+        },
+        {
+          "type": "bgm",
+          "path": "TI7.MLO",
+          "offset": "0x10"
+        },
+        {
+          "type": "bgm",
+          "path": "TIRA.MLO",
+          "offset": "0x11"
+        },
+        {
+          "type": "bgm",
+          "path": "YOK02.MLO",
+          "offset": "0x12"
+        },
+        {
+          "type": "bgm",
+          "path": "YOK08.MLO",
+          "offset": "0x13"
+        },
+        {
+          "type": "bgm",
+          "path": "YOK10.MLO",
+          "offset": "0x14"
+        },
+        {
+          "type": "bgm",
+          "path": "YOK14.MLO",
+          "offset": "0x15"
+        },
+        {
+          "type": "bgm",
+          "path": "YOK18.MLO",
+          "offset": "0x16"
+        },
+        {
+          "type": "bgm",
+          "path": "YOK19.MLO",
+          "offset": "0x17"
+        },
+        {
+          "type": "bgm",
+          "path": "YOK40.MLO",
+          "offset": "0x18"
+        },
+        {
+          "type": "bgm",
+          "path": "YOK51.MLO",
+          "offset": "0x19"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x06",
+          "title": "PIP02.MLO  : エレピアノ バロック"
+        },
+        {
+          "kind": "title",
+          "code": "0x0e",
+          "title": "SOR03.MLO  : 崩落"
+        },
+        {
+          "kind": "title",
+          "code": "0x04",
+          "title": "LS11.MLO   : 災難"
+        },
+        {
+          "kind": "title",
+          "code": "0x0f",
+          "title": "STR03.MLO  : 泉の精のワルツ"
+        },
+        {
+          "kind": "title",
+          "code": "0x05",
+          "title": "LS71.MLO   : 危機"
+        },
+        {
+          "kind": "title",
+          "code": "0x07",
+          "title": "PIP03.MLO  : 躊躇"
+        },
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "TI7.MLO    : 禁断の血族"
+        },
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "YOK02.MLO  : 緊縛モード"
+        },
+        {
+          "kind": "title",
+          "code": "0x08",
+          "title": "PIP07.MLO  : 隷属"
+        },
+        {
+          "kind": "title",
+          "code": "0x09",
+          "title": "PIP08.MLO  : 発覚"
+        },
+        {
+          "kind": "title",
+          "code": "0x0a",
+          "title": "PIP13.MLO  : 一段落"
+        },
+        {
+          "kind": "title",
+          "code": "0x0b",
+          "title": "PIP15.MLO  : 無邪気"
+        },
+        {
+          "kind": "title",
+          "code": "0x0c",
+          "title": "PIP16.MLO  : 朝"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "YOK08.MLO  : 帰宅"
+        },
+        {
+          "kind": "title",
+          "code": "0x14",
+          "title": "YOK10.MLO  : いさかい"
+        },
+        {
+          "kind": "title",
+          "code": "0x19",
+          "title": "YOK51.MLO  : 疑心"
+        },
+        {
+          "kind": "title",
+          "code": "0x02",
+          "title": "HH09.MLO   : 濡れた花弁"
+        },
+        {
+          "kind": "title",
+          "code": "0x03",
+          "title": "HH11.MLO   : 愛欲の虜"
+        },
+        {
+          "kind": "title",
+          "code": "0x0d",
+          "title": "ROOM03.MLO : 花々"
+        },
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "TIRA.MLO   : 遠方よりの依頼"
+        },
+        {
+          "kind": "title",
+          "code": "0x15",
+          "title": "YOK14.MLO  : 奪い合い"
+        },
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "EARA.MLO   : 自室にて"
+        },
+        {
+          "kind": "title",
+          "code": "0x17",
+          "title": "YOK19.MLO  : グラスベル"
+        },
+        {
+          "kind": "title",
+          "code": "0x16",
+          "title": "YOK18.MLO  : 奇妙な屋敷"
+        },
+        {
+          "kind": "title",
+          "code": "0x18",
+          "title": "YOK40.MLO  : 遁走"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/csware.xml",
+      "source_order": 976,
+      "archive": "kinketu_21",
+      "id": "kinketu-21-86"
+    }
+  ]
+}

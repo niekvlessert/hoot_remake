@@ -1,0 +1,185 @@
+{
+  "format": "hoot-catalog-shard",
+  "version": 1,
+  "source_file": "xml/succubus.xml",
+  "date": "2005/09/25",
+  "comments": [
+    " //サッキュバス "
+  ],
+  "games": [
+    {
+      "title": "[PC-9801] 禁忌 Taboo",
+      "driver": {
+        "name": "pc98dos",
+        "type": "opn",
+        "alias": "サッキュバス",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "funcvect",
+          "value": "0x7e"
+        },
+        {
+          "name": "clockmul",
+          "value": "8"
+        },
+        {
+          "name": "showfm3ex",
+          "value": "1"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "PMD_98.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "PMD.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "TABOO_SE.EFC",
+          "offset": "0x08"
+        },
+        {
+          "type": "file",
+          "path": "TAB_00.M",
+          "offset": "0x10"
+        },
+        {
+          "type": "file",
+          "path": "TAB_01.M",
+          "offset": "0x11"
+        },
+        {
+          "type": "file",
+          "path": "TAB_02.M",
+          "offset": "0x12"
+        },
+        {
+          "type": "file",
+          "path": "TAB_03.M",
+          "offset": "0x13"
+        },
+        {
+          "type": "file",
+          "path": "TAB_04.M",
+          "offset": "0x14"
+        },
+        {
+          "type": "file",
+          "path": "TAB_05.M",
+          "offset": "0x15"
+        },
+        {
+          "type": "file",
+          "path": "TAB_06.M",
+          "offset": "0x16"
+        },
+        {
+          "type": "file",
+          "path": "TAB_07.M",
+          "offset": "0x17"
+        },
+        {
+          "type": "file",
+          "path": "TAB_08.M",
+          "offset": "0x18"
+        },
+        {
+          "type": "file",
+          "path": "TAB_09.M",
+          "offset": "0x19"
+        },
+        {
+          "type": "file",
+          "path": "TAB_10.M",
+          "offset": "0x1A"
+        },
+        {
+          "type": "shell",
+          "path": "pmd /df36 /ds36 /k",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "pmd_98",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "TAB_00.M     : ｻｯｷｭﾊﾞｽ ﾀｲﾄﾙﾛｺﾞ"
+        },
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "TAB_01.M     : Panpeo"
+        },
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "TAB_02.M     : Slave"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "TAB_03.M     : Masochist"
+        },
+        {
+          "kind": "title",
+          "code": "0x14",
+          "title": "TAB_04.M     : Dall master"
+        },
+        {
+          "kind": "title",
+          "code": "0x15",
+          "title": "TAB_05.M     : Nightmaer"
+        },
+        {
+          "kind": "title",
+          "code": "0x16",
+          "title": "TAB_06.M     : Sadist"
+        },
+        {
+          "kind": "title",
+          "code": "0x17",
+          "title": "TAB_07.M     : Hard Core"
+        },
+        {
+          "kind": "title",
+          "code": "0x18",
+          "title": "TAB_08.M     : Slave master"
+        },
+        {
+          "kind": "title",
+          "code": "0x19",
+          "title": "TAB_09.M     : Saccubus"
+        },
+        {
+          "kind": "title",
+          "code": "0x1A",
+          "title": "TAB_10.M     : Taboo"
+        },
+        {
+          "kind": "range",
+          "min": "0x0801",
+          "max": "0x080a",
+          "title_format": "TABOO_SE.EFC : %2X",
+          "extcode": "1"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/succubus.xml",
+      "source_order": 3863,
+      "archive": "taboo_98",
+      "id": "taboo-98-opn"
+    }
+  ]
+}

@@ -1,0 +1,519 @@
+{
+  "format": "hoot-catalog-shard",
+  "version": 1,
+  "source_file": "xml/pcmcomplete.xml",
+  "date": "2005/09/25",
+  "comments": [
+    " //PCMコンプリート "
+  ],
+  "games": [
+    {
+      "title": "[PC-9801] GODS 神となる男の伝説(OPN)",
+      "driver": {
+        "name": "pc98dos",
+        "type": "opn",
+        "alias": "PCM COMPLETE",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "funcvect",
+          "value": "0x7e"
+        },
+        {
+          "name": "clockmul",
+          "value": "8"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "PMD_98.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "PMD.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "GEFF.EFC",
+          "offset": "0x08"
+        },
+        {
+          "type": "file",
+          "path": "BOSS.M",
+          "offset": "0x10"
+        },
+        {
+          "type": "file",
+          "path": "E.M",
+          "offset": "0x11"
+        },
+        {
+          "type": "file",
+          "path": "ENDING.M",
+          "offset": "0x12"
+        },
+        {
+          "type": "file",
+          "path": "INTRO.M",
+          "offset": "0x13"
+        },
+        {
+          "type": "file",
+          "path": "INTRO2.M",
+          "offset": "0x14"
+        },
+        {
+          "type": "file",
+          "path": "ROUND1.M",
+          "offset": "0x15"
+        },
+        {
+          "type": "file",
+          "path": "ROUND2.M",
+          "offset": "0x16"
+        },
+        {
+          "type": "file",
+          "path": "ROUND3.M",
+          "offset": "0x17"
+        },
+        {
+          "type": "file",
+          "path": "ROUND4.M",
+          "offset": "0x18"
+        },
+        {
+          "type": "file",
+          "path": "SHOP.M",
+          "offset": "0x19"
+        },
+        {
+          "type": "shell",
+          "path": "pmd",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "pmd_98",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x013",
+          "title": "INTRO.M  : Into The Wonderful (Opening)"
+        },
+        {
+          "kind": "title",
+          "code": "0x014",
+          "title": "INTRO2.M : Into The Wonderful (Menu / Name Entry)"
+        },
+        {
+          "kind": "title",
+          "code": "0x015",
+          "title": "ROUND1.M : The City (Level 1)"
+        },
+        {
+          "kind": "title",
+          "code": "0x016",
+          "title": "ROUND2.M : The Temple (Level 2)"
+        },
+        {
+          "kind": "title",
+          "code": "0x017",
+          "title": "ROUND3.M : The Labyrinth (Level 3)"
+        },
+        {
+          "kind": "title",
+          "code": "0x018",
+          "title": "ROUND4.M : The Underworld (Level 4)"
+        },
+        {
+          "kind": "title",
+          "code": "0x019",
+          "title": "SHOP.M   : Shop"
+        },
+        {
+          "kind": "title",
+          "code": "0x010",
+          "title": "BOSS.M   : Boss"
+        },
+        {
+          "kind": "title",
+          "code": "0x012",
+          "title": "ENDING.M :"
+        },
+        {
+          "kind": "title",
+          "code": "0x011",
+          "title": "E.M      :"
+        },
+        {
+          "kind": "title",
+          "code": "0x83a",
+          "title": "GEFF.EFC : Level Clear"
+        },
+        {
+          "kind": "title",
+          "code": "0x839",
+          "title": "GEFF.EFC : Game Over"
+        },
+        {
+          "kind": "range",
+          "min": "0x0801",
+          "max": "0x083d",
+          "title_format": "GEFF.EFC : %2X",
+          "extcode": "1"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/pcmcomplete.xml",
+      "source_order": 3637,
+      "archive": "gods98",
+      "id": "gods98-opn"
+    },
+    {
+      "title": "[PC-9801] GODS 神となる男の伝説(MT-32)",
+      "driver": {
+        "name": "pc98dos",
+        "type": "beep",
+        "alias": "PCM COMPLETE",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "clockmul",
+          "value": "4"
+        },
+        {
+          "name": "midiout",
+          "value": "1"
+        },
+        {
+          "name": "midiout_type",
+          "value": "2"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "mmp_hoot.com",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MMD.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "PUTEX.EXE",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MT32_ROM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "BOSS.MMD",
+          "offset": "0x10"
+        },
+        {
+          "type": "file",
+          "path": "E.MMD",
+          "offset": "0x11"
+        },
+        {
+          "type": "file",
+          "path": "ENDING.MMD",
+          "offset": "0x12"
+        },
+        {
+          "type": "file",
+          "path": "INTRO.MMD",
+          "offset": "0x13"
+        },
+        {
+          "type": "file",
+          "path": "INTRO2.MMD",
+          "offset": "0x14"
+        },
+        {
+          "type": "file",
+          "path": "ROUND1.MMD",
+          "offset": "0x15"
+        },
+        {
+          "type": "file",
+          "path": "ROUND2.MMD",
+          "offset": "0x16"
+        },
+        {
+          "type": "file",
+          "path": "ROUND3.MMD",
+          "offset": "0x17"
+        },
+        {
+          "type": "file",
+          "path": "ROUND4.MMD",
+          "offset": "0x18"
+        },
+        {
+          "type": "file",
+          "path": "SHOP.MMD",
+          "offset": "0x19"
+        },
+        {
+          "type": "shell",
+          "path": "putex",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "mmd /m30",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "mmp_hoot",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "INTRO.MMD  : Into The Wonderful (Opening)"
+        },
+        {
+          "kind": "title",
+          "code": "0x14",
+          "title": "INTRO2.MMD : Into The Wonderful (Menu / Name Entry)"
+        },
+        {
+          "kind": "title",
+          "code": "0x15",
+          "title": "ROUND1.MMD : The City (Level 1)"
+        },
+        {
+          "kind": "title",
+          "code": "0x16",
+          "title": "ROUND2.MMD : The Temple (Level 2)"
+        },
+        {
+          "kind": "title",
+          "code": "0x17",
+          "title": "ROUND3.MMD : The Labyrinth  (Level 3)"
+        },
+        {
+          "kind": "title",
+          "code": "0x18",
+          "title": "ROUND4.MMD : The Underworld (Level 4)"
+        },
+        {
+          "kind": "title",
+          "code": "0x19",
+          "title": "SHOP.MMD   : Shop"
+        },
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "BOSS.MMD   : Boss"
+        },
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "ENDING.MMD :"
+        },
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "E.MMD      :"
+        }
+      ],
+      "comments": [
+        " 可能な限り最新のMMDとPUTEXを使用する事を推奨 "
+      ],
+      "source_file": "xml/pcmcomplete.xml",
+      "source_order": 3638,
+      "archive": "gods98",
+      "id": "gods98-beep"
+    },
+    {
+      "title": "[PC-9801] GODS 神となる男の伝説(MT-32 Emulation)",
+      "driver": {
+        "name": "pc98dos",
+        "type": "beep",
+        "alias": "PCM COMPLETE",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "clockmul",
+          "value": "4"
+        },
+        {
+          "name": "midiout",
+          "value": "1"
+        },
+        {
+          "name": "midiout_type",
+          "value": "1"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "mmp_hoot.com",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MMD.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "PUTEX.EXE",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MT32_ROM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "BOSS.MMD",
+          "offset": "0x10"
+        },
+        {
+          "type": "file",
+          "path": "E.MMD",
+          "offset": "0x11"
+        },
+        {
+          "type": "file",
+          "path": "ENDING.MMD",
+          "offset": "0x12"
+        },
+        {
+          "type": "file",
+          "path": "INTRO.MMD",
+          "offset": "0x13"
+        },
+        {
+          "type": "file",
+          "path": "INTRO2.MMD",
+          "offset": "0x14"
+        },
+        {
+          "type": "file",
+          "path": "ROUND1.MMD",
+          "offset": "0x15"
+        },
+        {
+          "type": "file",
+          "path": "ROUND2.MMD",
+          "offset": "0x16"
+        },
+        {
+          "type": "file",
+          "path": "ROUND3.MMD",
+          "offset": "0x17"
+        },
+        {
+          "type": "file",
+          "path": "ROUND4.MMD",
+          "offset": "0x18"
+        },
+        {
+          "type": "file",
+          "path": "SHOP.MMD",
+          "offset": "0x19"
+        },
+        {
+          "type": "shell",
+          "path": "putex",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "mmd /m30",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "mmp_hoot",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "INTRO.MMD  : Into The Wonderful (Opening)"
+        },
+        {
+          "kind": "title",
+          "code": "0x14",
+          "title": "INTRO2.MMD : Into The Wonderful (Menu / Name Entry)"
+        },
+        {
+          "kind": "title",
+          "code": "0x15",
+          "title": "ROUND1.MMD : The City (Level 1)"
+        },
+        {
+          "kind": "title",
+          "code": "0x16",
+          "title": "ROUND2.MMD : The Temple (Level 2)"
+        },
+        {
+          "kind": "title",
+          "code": "0x17",
+          "title": "ROUND3.MMD : The Labyrinth  (Level 3)"
+        },
+        {
+          "kind": "title",
+          "code": "0x18",
+          "title": "ROUND4.MMD : The Underworld (Level 4)"
+        },
+        {
+          "kind": "title",
+          "code": "0x19",
+          "title": "SHOP.MMD   : Shop"
+        },
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "BOSS.MMD   : Boss"
+        },
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "ENDING.MMD :"
+        },
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "E.MMD      :"
+        }
+      ],
+      "comments": [
+        " 可能な限り最新のMMDとPUTEXを使用する事を推奨 "
+      ],
+      "source_file": "xml/pcmcomplete.xml",
+      "source_order": 3639,
+      "archive": "gods98",
+      "id": "gods98-beep-2"
+    }
+  ]
+}

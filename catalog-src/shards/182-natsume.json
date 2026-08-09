@@ -1,0 +1,812 @@
+{
+  "format": "hoot-catalog-shard",
+  "version": 1,
+  "source_file": "xml/natsume.xml",
+  "date": "2005/09/25",
+  "comments": [
+    " //NATSUME "
+  ],
+  "games": [
+    {
+      "title": "[PC-8801] ネクロポリス －埋葬都市－(OPNA)",
+      "driver": {
+        "name": "pc88",
+        "type": "opna",
+        "alias": "NATSUME",
+        "platform": "NEC PC-8801"
+      },
+      "options": [
+        {
+          "name": "mdata_addr",
+          "value": "0xd000"
+        },
+        {
+          "name": "mdata_size",
+          "value": "0x2a00"
+        },
+        {
+          "name": "mfile_size",
+          "value": "0x2a00"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "PATCH",
+          "offset": "0x0000"
+        },
+        {
+          "type": "code",
+          "path": "DRIVER",
+          "offset": "0xc000"
+        },
+        {
+          "type": "bgm",
+          "path": "MA100",
+          "offset": "0x00"
+        },
+        {
+          "type": "bgm",
+          "path": "MA101",
+          "offset": "0x01"
+        },
+        {
+          "type": "bgm",
+          "path": "MA102",
+          "offset": "0x02"
+        },
+        {
+          "type": "bgm",
+          "path": "MA200",
+          "offset": "0x03"
+        },
+        {
+          "type": "bgm",
+          "path": "MA201",
+          "offset": "0x04"
+        },
+        {
+          "type": "bgm",
+          "path": "MA202",
+          "offset": "0x05"
+        },
+        {
+          "type": "bgm",
+          "path": "MA203",
+          "offset": "0x06"
+        },
+        {
+          "type": "bgm",
+          "path": "MA204",
+          "offset": "0x07"
+        },
+        {
+          "type": "bgm",
+          "path": "MA205",
+          "offset": "0x08"
+        },
+        {
+          "type": "bgm",
+          "path": "MA206",
+          "offset": "0x09"
+        },
+        {
+          "type": "bgm",
+          "path": "MA207",
+          "offset": "0x0a"
+        },
+        {
+          "type": "bgm",
+          "path": "MA208",
+          "offset": "0x0b"
+        },
+        {
+          "type": "bgm",
+          "path": "MA209",
+          "offset": "0x0c"
+        },
+        {
+          "type": "bgm",
+          "path": "MA210",
+          "offset": "0x0d"
+        },
+        {
+          "type": "bgm",
+          "path": "MA211",
+          "offset": "0x0e"
+        },
+        {
+          "type": "bgm",
+          "path": "MA212",
+          "offset": "0x0f"
+        },
+        {
+          "type": "bgm",
+          "path": "MA213",
+          "offset": "0x10"
+        },
+        {
+          "type": "bgm",
+          "path": "MA214",
+          "offset": "0x11"
+        },
+        {
+          "type": "bgm",
+          "path": "MB102",
+          "offset": "0x12"
+        },
+        {
+          "type": "bgm",
+          "path": "MB106",
+          "offset": "0x13"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "MB102 : オープニング1"
+        },
+        {
+          "kind": "title",
+          "code": "0x02",
+          "title": "MA102 : オープニング2"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "MB106 : 効果音2"
+        },
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "MA101 : タイトル"
+        },
+        {
+          "kind": "title",
+          "code": "0x09",
+          "title": "MA206 : ルクソール神殿"
+        },
+        {
+          "kind": "title",
+          "code": "0x05",
+          "title": "MA202 : バトル1"
+        },
+        {
+          "kind": "title",
+          "code": "0x0a",
+          "title": "MA207 : 迷宮1"
+        },
+        {
+          "kind": "title",
+          "code": "0x0b",
+          "title": "MA208 : カルナック神殿"
+        },
+        {
+          "kind": "title",
+          "code": "0x0f",
+          "title": "MA212 : 迷宮2"
+        },
+        {
+          "kind": "title",
+          "code": "0x03",
+          "title": "MA200 : バトル2"
+        },
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "MA213 : 迷宮3"
+        },
+        {
+          "kind": "title",
+          "code": "0x0c",
+          "title": "MA209 : 迷宮4"
+        },
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "MA214 : 迷宮5"
+        },
+        {
+          "kind": "title",
+          "code": "0x0d",
+          "title": "MA210 : 葬祭神殿"
+        },
+        {
+          "kind": "title",
+          "code": "0x0e",
+          "title": "MA211 : 王家の谷"
+        },
+        {
+          "kind": "title",
+          "code": "0x04",
+          "title": "MA201 : バトル3"
+        },
+        {
+          "kind": "title",
+          "code": "0x06",
+          "title": "MA203 : バトル4 (セト)"
+        },
+        {
+          "kind": "title",
+          "code": "0x07",
+          "title": "MA204 : バトル5 (セト変身後)"
+        },
+        {
+          "kind": "title",
+          "code": "0x00",
+          "title": "MA100 : エンディング"
+        },
+        {
+          "kind": "title",
+          "code": "0x08",
+          "title": "MA205 : ゲームオーバー"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/natsume.xml",
+      "source_order": 3397,
+      "archive": "necropls",
+      "id": "necropls-opna"
+    },
+    {
+      "title": "[PC-8801] ネクロポリス －埋葬都市－(OPN)",
+      "driver": {
+        "name": "pc88",
+        "type": "opn",
+        "alias": "NATSUME",
+        "platform": "NEC PC-8801"
+      },
+      "options": [
+        {
+          "name": "mdata_addr",
+          "value": "0xd000"
+        },
+        {
+          "name": "mdata_size",
+          "value": "0x2a00"
+        },
+        {
+          "name": "mfile_size",
+          "value": "0x2a00"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "PATCH",
+          "offset": "0x0000"
+        },
+        {
+          "type": "code",
+          "path": "DRIVER",
+          "offset": "0xc000"
+        },
+        {
+          "type": "bgm",
+          "path": "MB100",
+          "offset": "0x00"
+        },
+        {
+          "type": "bgm",
+          "path": "MB101",
+          "offset": "0x01"
+        },
+        {
+          "type": "bgm",
+          "path": "MB102",
+          "offset": "0x02"
+        },
+        {
+          "type": "bgm",
+          "path": "MB103",
+          "offset": "0x03"
+        },
+        {
+          "type": "bgm",
+          "path": "MB104",
+          "offset": "0x04"
+        },
+        {
+          "type": "bgm",
+          "path": "MB105",
+          "offset": "0x05"
+        },
+        {
+          "type": "bgm",
+          "path": "MB106",
+          "offset": "0x06"
+        },
+        {
+          "type": "bgm",
+          "path": "MB200",
+          "offset": "0x07"
+        },
+        {
+          "type": "bgm",
+          "path": "MB201",
+          "offset": "0x08"
+        },
+        {
+          "type": "bgm",
+          "path": "MB202",
+          "offset": "0x09"
+        },
+        {
+          "type": "bgm",
+          "path": "MB203",
+          "offset": "0x0a"
+        },
+        {
+          "type": "bgm",
+          "path": "MB204",
+          "offset": "0x0b"
+        },
+        {
+          "type": "bgm",
+          "path": "MB205",
+          "offset": "0x0c"
+        },
+        {
+          "type": "bgm",
+          "path": "MB206",
+          "offset": "0x0d"
+        },
+        {
+          "type": "bgm",
+          "path": "MB207",
+          "offset": "0x0e"
+        },
+        {
+          "type": "bgm",
+          "path": "MB208",
+          "offset": "0x0f"
+        },
+        {
+          "type": "bgm",
+          "path": "MB209",
+          "offset": "0x10"
+        },
+        {
+          "type": "bgm",
+          "path": "MB210",
+          "offset": "0x11"
+        },
+        {
+          "type": "bgm",
+          "path": "MB211",
+          "offset": "0x12"
+        },
+        {
+          "type": "bgm",
+          "path": "MB212",
+          "offset": "0x13"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "comment",
+          "text": "\t<title code=\"0x01\">MB101 : オープニング1(不完全)</title> "
+        },
+        {
+          "kind": "title",
+          "code": "0x02",
+          "title": "MB102 : オープニング1"
+        },
+        {
+          "kind": "title",
+          "code": "0x04",
+          "title": "MB104 : オープニング2"
+        },
+        {
+          "kind": "title",
+          "code": "0x06",
+          "title": "MB106 : 効果音2"
+        },
+        {
+          "kind": "title",
+          "code": "0x03",
+          "title": "MB103 : タイトル"
+        },
+        {
+          "kind": "title",
+          "code": "0x0d",
+          "title": "MB206 : ルクソール神殿"
+        },
+        {
+          "kind": "title",
+          "code": "0x09",
+          "title": "MB202 : バトル1"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "MB212 : 迷宮1"
+        },
+        {
+          "kind": "title",
+          "code": "0x0e",
+          "title": "MB207 : カルナック神殿"
+        },
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "MB211 : 迷宮2"
+        },
+        {
+          "kind": "title",
+          "code": "0x07",
+          "title": "MB200 : バトル2"
+        },
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "MB210 : 迷宮3"
+        },
+        {
+          "kind": "title",
+          "code": "0x0f",
+          "title": "MB208 : 葬祭神殿"
+        },
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "MB209 : 王家の谷"
+        },
+        {
+          "kind": "title",
+          "code": "0x08",
+          "title": "MB201 : バトル3"
+        },
+        {
+          "kind": "title",
+          "code": "0x0a",
+          "title": "MB203 : バトル4 (セト)"
+        },
+        {
+          "kind": "title",
+          "code": "0x0b",
+          "title": "MB204 : バトル5 (セト変身後)"
+        },
+        {
+          "kind": "title",
+          "code": "0x00",
+          "title": "MB100 : エンディング"
+        },
+        {
+          "kind": "title",
+          "code": "0x0c",
+          "title": "MB205 : ゲームオーバー"
+        },
+        {
+          "kind": "title",
+          "code": "0x05",
+          "title": "MB105 : 効果音1"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/natsume.xml",
+      "source_order": 3398,
+      "archive": "necropls",
+      "id": "necropls-opn"
+    },
+    {
+      "title": "[PC-9801] 輝け! キラキラ戦士 リスキージュエル",
+      "driver": {
+        "name": "pc98dos",
+        "type": "opn",
+        "alias": "NATSUME",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "funcvect",
+          "value": "0x7e"
+        },
+        {
+          "name": "clockmul",
+          "value": "8"
+        },
+        {
+          "name": "showfm3ex",
+          "value": "1"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "PMD_98.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "PMD.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "RQJ_1.M",
+          "offset": "0x10"
+        },
+        {
+          "type": "file",
+          "path": "RQJ_2.M",
+          "offset": "0x11"
+        },
+        {
+          "type": "file",
+          "path": "RQJ_3.M",
+          "offset": "0x12"
+        },
+        {
+          "type": "file",
+          "path": "RQJ_5.M",
+          "offset": "0x13"
+        },
+        {
+          "type": "file",
+          "path": "RQJ_S2.M",
+          "offset": "0x14"
+        },
+        {
+          "type": "file",
+          "path": "RQJ_S6.M",
+          "offset": "0x15"
+        },
+        {
+          "type": "shell",
+          "path": "pmd /V0 /E0 /K",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "pmd_98",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "RQJ_1.M"
+        },
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "RQJ_2.M"
+        },
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "RQJ_3.M"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "RQJ_5.M"
+        },
+        {
+          "kind": "title",
+          "code": "0x14",
+          "title": "RQJ_S2.M"
+        },
+        {
+          "kind": "title",
+          "code": "0x15",
+          "title": "RQJ_S6.M"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/natsume.xml",
+      "source_order": 3399,
+      "archive": "risky_98",
+      "id": "risky-98-opn"
+    },
+    {
+      "title": "[PC-9801] 魔浄理子 淫靡界(OPN)",
+      "driver": {
+        "name": "pc98dos",
+        "type": "opn",
+        "alias": "NATSUME",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "clockmul",
+          "value": "8"
+        },
+        {
+          "name": "dummysndrom",
+          "value": "1"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "ODQ_98.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MJSND.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "shell",
+          "path": "mjsnd",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "odq_98",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "range",
+          "min": "0x10",
+          "max": "0x19",
+          "title_format": "SOUND %02x",
+          "extcode": "1"
+        },
+        {
+          "kind": "range",
+          "min": "0x80",
+          "max": "0x9e",
+          "title_format": "SE %02x",
+          "extcode": "1"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/natsume.xml",
+      "source_order": 3400,
+      "archive": "majoriko_98",
+      "id": "majoriko-98-opn"
+    },
+    {
+      "title": "[PC-9801] 魔浄理子 淫靡界(OPN+MT-32)",
+      "driver": {
+        "name": "pc98dos",
+        "type": "opn",
+        "alias": "NATSUME",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "clockmul",
+          "value": "8"
+        },
+        {
+          "name": "dummysndrom",
+          "value": "1"
+        },
+        {
+          "name": "midiout",
+          "value": "1"
+        },
+        {
+          "name": "midiout_type",
+          "value": "2"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "ODQ_98.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MJSND.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "shell",
+          "path": "mjsnd",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "odq_98",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "range",
+          "min": "0x10",
+          "max": "0x19",
+          "title_format": "SOUND %02x",
+          "extcode": "1"
+        },
+        {
+          "kind": "range",
+          "min": "0x80",
+          "max": "0x9e",
+          "title_format": "SE %02x",
+          "extcode": "1"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/natsume.xml",
+      "source_order": 3401,
+      "archive": "majoriko_98",
+      "id": "majoriko-98-opn-2"
+    },
+    {
+      "title": "[PC-9801] 魔浄理子 淫靡界(OPN+MT-32 Emulation)",
+      "driver": {
+        "name": "pc98dos",
+        "type": "opn",
+        "alias": "NATSUME",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "clockmul",
+          "value": "8"
+        },
+        {
+          "name": "dummysndrom",
+          "value": "1"
+        },
+        {
+          "name": "midiout",
+          "value": "1"
+        },
+        {
+          "name": "midiout_type",
+          "value": "1"
+        },
+        {
+          "name": "midiout_mix",
+          "value": "0xa0"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "ODQ_98.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MJSND.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "shell",
+          "path": "mjsnd",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "odq_98",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "range",
+          "min": "0x10",
+          "max": "0x19",
+          "title_format": "SOUND %02x",
+          "extcode": "1"
+        },
+        {
+          "kind": "range",
+          "min": "0x80",
+          "max": "0x9e",
+          "title_format": "SE %02x",
+          "extcode": "1"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/natsume.xml",
+      "source_order": 3402,
+      "archive": "majoriko_98",
+      "id": "majoriko-98-opn-3"
+    }
+  ]
+}

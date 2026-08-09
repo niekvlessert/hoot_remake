@@ -1,0 +1,6409 @@
+{
+  "format": "hoot-catalog-shard",
+  "version": 1,
+  "source_file": "xml/technopolissoft.xml",
+  "date": "2010/03/10",
+  "comments": [
+    " // テクノポリスソフト / GAMEテクノポリス "
+  ],
+  "games": [
+    {
+      "title": "[PC-8801] ドラゴンアイズ",
+      "driver": {
+        "name": "pc88",
+        "type": "opn",
+        "alias": "GAMEテクノポリス",
+        "platform": "NEC PC-8801"
+      },
+      "options": [],
+      "assets": [
+        {
+          "type": "code",
+          "path": "PATCH",
+          "offset": "0x0000"
+        },
+        {
+          "type": "code",
+          "path": "USD88.Z80",
+          "offset": "0x0b00"
+        },
+        {
+          "type": "bgm",
+          "path": "AWA_A.USO",
+          "offset": "0x00"
+        },
+        {
+          "type": "bgm",
+          "path": "AWA_B.USO",
+          "offset": "0x01"
+        },
+        {
+          "type": "bgm",
+          "path": "BARA7.USO",
+          "offset": "0x02"
+        },
+        {
+          "type": "bgm",
+          "path": "D_SH.USO",
+          "offset": "0x03"
+        },
+        {
+          "type": "bgm",
+          "path": "DC_SIZ.USO",
+          "offset": "0x04"
+        },
+        {
+          "type": "bgm",
+          "path": "END.USO",
+          "offset": "0x05"
+        },
+        {
+          "type": "bgm",
+          "path": "FAMI.USO",
+          "offset": "0x06"
+        },
+        {
+          "type": "bgm",
+          "path": "HAPPY.USO",
+          "offset": "0x07"
+        },
+        {
+          "type": "bgm",
+          "path": "KURA3.USO",
+          "offset": "0x08"
+        },
+        {
+          "type": "bgm",
+          "path": "NIGE.USO",
+          "offset": "0x09"
+        },
+        {
+          "type": "bgm",
+          "path": "NIKE.USO",
+          "offset": "0x0a"
+        },
+        {
+          "type": "bgm",
+          "path": "NOS.USO",
+          "offset": "0x0b"
+        },
+        {
+          "type": "bgm",
+          "path": "PARTY.USO",
+          "offset": "0x0c"
+        },
+        {
+          "type": "bgm",
+          "path": "PINK.USO",
+          "offset": "0x0d"
+        },
+        {
+          "type": "bgm",
+          "path": "PROG.USO",
+          "offset": "0x0e"
+        },
+        {
+          "type": "bgm",
+          "path": "SAD.USO",
+          "offset": "0x0f"
+        },
+        {
+          "type": "bgm",
+          "path": "SE.USO",
+          "offset": "0x10"
+        },
+        {
+          "type": "bgm",
+          "path": "SIRO_C.USO",
+          "offset": "0x11"
+        },
+        {
+          "type": "bgm",
+          "path": "SPACE.USO",
+          "offset": "0x12"
+        },
+        {
+          "type": "bgm",
+          "path": "YA6.USO",
+          "offset": "0x13"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x00",
+          "title": "AWA_A.USO  : 回想"
+        },
+        {
+          "kind": "title",
+          "code": "0x06",
+          "title": "FAMI.USO   : '球'たち"
+        },
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "SE.USO     : コスモス"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "YA6.USO    : ミウィ"
+        },
+        {
+          "kind": "title",
+          "code": "0x04",
+          "title": "DC_SIZ.USO : ガールドリア"
+        },
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "SIRO_C.USO : 少女たち"
+        },
+        {
+          "kind": "title",
+          "code": "0x0f",
+          "title": "SAD.USO    : 先見師"
+        },
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "SPACE.USO  : ロゴナ"
+        },
+        {
+          "kind": "title",
+          "code": "0x0c",
+          "title": "PARTY.USO  : 想人の星"
+        },
+        {
+          "kind": "title",
+          "code": "0x08",
+          "title": "KURA3.USO  : 哀する星々"
+        },
+        {
+          "kind": "title",
+          "code": "0x0e",
+          "title": "PROG.USO   : 渡り星"
+        },
+        {
+          "kind": "title",
+          "code": "0x07",
+          "title": "HAPPY.USO  : ぴんく・ぴんく!"
+        },
+        {
+          "kind": "title",
+          "code": "0x0a",
+          "title": "NIKE.USO   : 聖地"
+        },
+        {
+          "kind": "title",
+          "code": "0x09",
+          "title": "NIGE.USO   : 戦星"
+        },
+        {
+          "kind": "title",
+          "code": "0x02",
+          "title": "BARA7.USO  : 別離"
+        },
+        {
+          "kind": "title",
+          "code": "0x0b",
+          "title": "NOS.USO    : 事起"
+        },
+        {
+          "kind": "title",
+          "code": "0x03",
+          "title": "D_SH.USO   : 行きづまりの捷利"
+        },
+        {
+          "kind": "title",
+          "code": "0x0d",
+          "title": "PINK.USO   : ドラゴンアイズ"
+        },
+        {
+          "kind": "title",
+          "code": "0x05",
+          "title": "END.USO    : 再会"
+        },
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "AWA_B.USO  : アイネス"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/technopolissoft.xml",
+      "source_order": 4536,
+      "archive": "drgeye88",
+      "id": "drgeye88-opn"
+    },
+    {
+      "title": "[PC-8801] LotLot",
+      "driver": {
+        "name": "pc88",
+        "type": "opn",
+        "alias": "テクノポリスソフト",
+        "platform": "NEC PC-8801"
+      },
+      "options": [
+        {
+          "name": "init_pc",
+          "value": "0xa000"
+        },
+        {
+          "name": "use_vrtc",
+          "value": "0x01"
+        },
+        {
+          "name": "baseclock",
+          "value": "0x04"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "DATA",
+          "offset": "0x0000"
+        },
+        {
+          "type": "code",
+          "path": "PATCH",
+          "offset": "0xa000"
+        },
+        {
+          "type": "code",
+          "path": "PROG",
+          "offset": "0xb000"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x02",
+          "title": "ROUND START"
+        },
+        {
+          "kind": "title",
+          "code": "0x00",
+          "title": "MAIN BGM"
+        },
+        {
+          "kind": "title",
+          "code": "0x03",
+          "title": "STAGE CLEAR"
+        },
+        {
+          "kind": "title",
+          "code": "0x04",
+          "title": "GAME OVER"
+        },
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "NAME ENTRY"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/technopolissoft.xml",
+      "source_order": 4537,
+      "archive": "lotlot88",
+      "id": "lotlot88-opn"
+    },
+    {
+      "title": "[PC-8801] お嬢様くらぶ",
+      "driver": {
+        "name": "pc88",
+        "type": "opn",
+        "alias": "テクノポリスソフト",
+        "platform": "NEC PC-8801"
+      },
+      "options": [
+        {
+          "name": "mdata_addr",
+          "value": "0x7000"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "PATCH",
+          "offset": "0x0000"
+        },
+        {
+          "type": "code",
+          "path": "VOICE",
+          "offset": "0x6800"
+        },
+        {
+          "type": "code",
+          "path": "WRKTBL",
+          "offset": "0xa900"
+        },
+        {
+          "type": "code",
+          "path": "DRIVER",
+          "offset": "0xf400"
+        },
+        {
+          "type": "bgm",
+          "path": "081",
+          "offset": "0x00"
+        },
+        {
+          "type": "bgm",
+          "path": "082",
+          "offset": "0x01"
+        },
+        {
+          "type": "bgm",
+          "path": "083",
+          "offset": "0x02"
+        },
+        {
+          "type": "bgm",
+          "path": "084",
+          "offset": "0x03"
+        },
+        {
+          "type": "bgm",
+          "path": "085",
+          "offset": "0x04"
+        },
+        {
+          "type": "bgm",
+          "path": "086",
+          "offset": "0x05"
+        },
+        {
+          "type": "bgm",
+          "path": "087",
+          "offset": "0x06"
+        },
+        {
+          "type": "bgm",
+          "path": "088",
+          "offset": "0x07"
+        },
+        {
+          "type": "bgm",
+          "path": "089",
+          "offset": "0x08"
+        },
+        {
+          "type": "bgm",
+          "path": "090",
+          "offset": "0x09"
+        },
+        {
+          "type": "bgm",
+          "path": "091",
+          "offset": "0x0a"
+        },
+        {
+          "type": "bgm",
+          "path": "092",
+          "offset": "0x0b"
+        },
+        {
+          "type": "bgm",
+          "path": "093",
+          "offset": "0x0c"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x00",
+          "title": "081 : Jang ken          / TENTEKO"
+        },
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "082 : Atend of MENUETTE / XKD"
+        },
+        {
+          "kind": "title",
+          "code": "0x02",
+          "title": "083 : Twincle           / TENTEKO"
+        },
+        {
+          "kind": "title",
+          "code": "0x03",
+          "title": "084 : HARD              / NEKO"
+        },
+        {
+          "kind": "title",
+          "code": "0x04",
+          "title": "085 : Sea side          / GOD"
+        },
+        {
+          "kind": "title",
+          "code": "0x05",
+          "title": "086 : Spring skip       / XKD"
+        },
+        {
+          "kind": "title",
+          "code": "0x06",
+          "title": "087 : Theme of GIRLS    / KOSIRON"
+        },
+        {
+          "kind": "title",
+          "code": "0x07",
+          "title": "088 : Queens            / KOSIRON"
+        },
+        {
+          "kind": "title",
+          "code": "0x08",
+          "title": "089 : Epilogue          / KOSIRON"
+        },
+        {
+          "kind": "title",
+          "code": "0x09",
+          "title": "090 : GAME OVER         / TENTEKO"
+        },
+        {
+          "kind": "title",
+          "code": "0x0a",
+          "title": "091 : STREET RUN AWAY   / ONION"
+        },
+        {
+          "kind": "title",
+          "code": "0x0b",
+          "title": "092 : TEA of ONION      / ONION"
+        },
+        {
+          "kind": "title",
+          "code": "0x0c",
+          "title": "093 : TITLE MUSIC       / TENTEKO"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/technopolissoft.xml",
+      "source_order": 4538,
+      "archive": "ojosama",
+      "id": "ojosama-opn"
+    },
+    {
+      "title": "[PC-8801] GAL WARS きゃぴきゃぴるん",
+      "driver": {
+        "name": "pc88",
+        "type": "opn",
+        "alias": "テクノポリスソフト",
+        "platform": "NEC PC-8801"
+      },
+      "options": [],
+      "assets": [
+        {
+          "type": "code",
+          "path": "PATCH",
+          "offset": "0x0000"
+        },
+        {
+          "type": "code",
+          "path": "A032",
+          "offset": "0x0100"
+        },
+        {
+          "type": "code",
+          "path": "A003",
+          "offset": "0xd000"
+        },
+        {
+          "type": "bgm",
+          "path": "A033",
+          "offset": "0x00"
+        },
+        {
+          "type": "bgm",
+          "path": "A034",
+          "offset": "0x01"
+        },
+        {
+          "type": "bgm",
+          "path": "A035",
+          "offset": "0x02"
+        },
+        {
+          "type": "bgm",
+          "path": "A036",
+          "offset": "0x03"
+        },
+        {
+          "type": "bgm",
+          "path": "A037",
+          "offset": "0x04"
+        },
+        {
+          "type": "bgm",
+          "path": "A038",
+          "offset": "0x05"
+        },
+        {
+          "type": "bgm",
+          "path": "A039",
+          "offset": "0x06"
+        },
+        {
+          "type": "bgm",
+          "path": "A040",
+          "offset": "0x07"
+        },
+        {
+          "type": "bgm",
+          "path": "A041",
+          "offset": "0x08"
+        },
+        {
+          "type": "bgm",
+          "path": "A042",
+          "offset": "0x09"
+        },
+        {
+          "type": "bgm",
+          "path": "A043",
+          "offset": "0x0a"
+        },
+        {
+          "type": "bgm",
+          "path": "A044",
+          "offset": "0x0b"
+        },
+        {
+          "type": "bgm",
+          "path": "A045",
+          "offset": "0x0c"
+        },
+        {
+          "type": "bgm",
+          "path": "A046",
+          "offset": "0x0d"
+        },
+        {
+          "type": "bgm",
+          "path": "A047",
+          "offset": "0x0e"
+        },
+        {
+          "type": "bgm",
+          "path": "A048",
+          "offset": "0x0f"
+        },
+        {
+          "type": "bgm",
+          "path": "A049",
+          "offset": "0x10"
+        },
+        {
+          "type": "bgm",
+          "path": "A050",
+          "offset": "0x11"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x00",
+          "title": "A033 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "A034 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x02",
+          "title": "A035 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x03",
+          "title": "A036 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x04",
+          "title": "A037 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x05",
+          "title": "A038 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x06",
+          "title": "A039 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x07",
+          "title": "A040 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x08",
+          "title": "A041 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x09",
+          "title": "A042 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x0a",
+          "title": "A043 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x0b",
+          "title": "A044 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x0c",
+          "title": "A045 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x0d",
+          "title": "A046 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x0e",
+          "title": "A047 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x0f",
+          "title": "A048 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "A049 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "A050 :"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/technopolissoft.xml",
+      "source_order": 4539,
+      "archive": "galwars88",
+      "id": "galwars88-opn"
+    },
+    {
+      "title": "[PC-8801] おんなのこけ～さつたい ＝ねぎ戦略＝",
+      "driver": {
+        "name": "pc88",
+        "type": "opn",
+        "alias": "テクノポリスソフト",
+        "platform": "NEC PC-8801"
+      },
+      "options": [],
+      "assets": [
+        {
+          "type": "code",
+          "path": "PATCH",
+          "offset": "0x0000"
+        },
+        {
+          "type": "code",
+          "path": "splitn.2",
+          "offset": "0x9000"
+        },
+        {
+          "type": "bgm",
+          "path": "No1.mus",
+          "offset": "0x00"
+        },
+        {
+          "type": "bgm",
+          "path": "No2.mus",
+          "offset": "0x01"
+        },
+        {
+          "type": "bgm",
+          "path": "No3.mus",
+          "offset": "0x02"
+        },
+        {
+          "type": "bgm",
+          "path": "No4.mus",
+          "offset": "0x03"
+        },
+        {
+          "type": "bgm",
+          "path": "No5.mus",
+          "offset": "0x04"
+        },
+        {
+          "type": "bgm",
+          "path": "No6.mus",
+          "offset": "0x05"
+        },
+        {
+          "type": "bgm",
+          "path": "No8.mus",
+          "offset": "0x06"
+        },
+        {
+          "type": "bgm",
+          "path": "No9.mus",
+          "offset": "0x07"
+        },
+        {
+          "type": "bgm",
+          "path": "No10.mus",
+          "offset": "0x08"
+        },
+        {
+          "type": "bgm",
+          "path": "No11.mus",
+          "offset": "0x09"
+        },
+        {
+          "type": "bgm",
+          "path": "No14.mus",
+          "offset": "0x0a"
+        },
+        {
+          "type": "bgm",
+          "path": "No15.mus",
+          "offset": "0x0b"
+        },
+        {
+          "type": "bgm",
+          "path": "No16.mus",
+          "offset": "0x0c"
+        },
+        {
+          "type": "bgm",
+          "path": "No18.mus",
+          "offset": "0x0d"
+        },
+        {
+          "type": "bgm",
+          "path": "No19.mus",
+          "offset": "0x0e"
+        },
+        {
+          "type": "bgm",
+          "path": "No20.mus",
+          "offset": "0x0f"
+        },
+        {
+          "type": "bgm",
+          "path": "No21.mus",
+          "offset": "0x12"
+        },
+        {
+          "type": "bgm",
+          "path": "No22.mus",
+          "offset": "0x13"
+        },
+        {
+          "type": "bgm",
+          "path": "No23.mus",
+          "offset": "0x14"
+        },
+        {
+          "type": "bgm",
+          "path": "No24.mus",
+          "offset": "0x15"
+        },
+        {
+          "type": "bgm",
+          "path": "No26.mus",
+          "offset": "0x16"
+        },
+        {
+          "type": "bgm",
+          "path": "No27.mus",
+          "offset": "0x18"
+        },
+        {
+          "type": "bgm",
+          "path": "No28.mus",
+          "offset": "0x19"
+        },
+        {
+          "type": "bgm",
+          "path": "No29.mus",
+          "offset": "0x1a"
+        },
+        {
+          "type": "bgm",
+          "path": "No30.mus",
+          "offset": "0x1c"
+        },
+        {
+          "type": "bgm",
+          "path": "No31.mus",
+          "offset": "0x1d"
+        },
+        {
+          "type": "bgm",
+          "path": "No32.mus",
+          "offset": "0x1e"
+        },
+        {
+          "type": "bgm",
+          "path": "No33.mus",
+          "offset": "0x1f"
+        },
+        {
+          "type": "bgm",
+          "path": "No34.mus",
+          "offset": "0x20"
+        },
+        {
+          "type": "bgm",
+          "path": "No35.mus",
+          "offset": "0x21"
+        },
+        {
+          "type": "bgm",
+          "path": "No36.mus",
+          "offset": "0x22"
+        },
+        {
+          "type": "bgm",
+          "path": "No37.mus",
+          "offset": "0x23"
+        },
+        {
+          "type": "bgm",
+          "path": "No38.mus",
+          "offset": "0x24"
+        },
+        {
+          "type": "bgm",
+          "path": "No39.mus",
+          "offset": "0x25"
+        },
+        {
+          "type": "bgm",
+          "path": "No40.mus",
+          "offset": "0x26"
+        },
+        {
+          "type": "bgm",
+          "path": "No41.mus",
+          "offset": "0x28"
+        },
+        {
+          "type": "bgm",
+          "path": "No42.mus",
+          "offset": "0x29"
+        },
+        {
+          "type": "bgm",
+          "path": "No43.mus",
+          "offset": "0x2a"
+        },
+        {
+          "type": "bgm",
+          "path": "No44.mus",
+          "offset": "0x2c"
+        },
+        {
+          "type": "bgm",
+          "path": "No45.mus",
+          "offset": "0x2d"
+        },
+        {
+          "type": "bgm",
+          "path": "No46.mus",
+          "offset": "0x2e"
+        },
+        {
+          "type": "bgm",
+          "path": "No47.mus",
+          "offset": "0x2f"
+        },
+        {
+          "type": "bgm",
+          "path": "No49.mus",
+          "offset": "0x30"
+        },
+        {
+          "type": "bgm",
+          "path": "No50.mus",
+          "offset": "0x31"
+        },
+        {
+          "type": "bgm",
+          "path": "No51.mus",
+          "offset": "0x32"
+        },
+        {
+          "type": "bgm",
+          "path": "No52.mus",
+          "offset": "0x33"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x00",
+          "title": "No1.mus"
+        },
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "No2.mus"
+        },
+        {
+          "kind": "title",
+          "code": "0x02",
+          "title": "No3.mus"
+        },
+        {
+          "kind": "title",
+          "code": "0x03",
+          "title": "No4.mus"
+        },
+        {
+          "kind": "title",
+          "code": "0x04",
+          "title": "No5.mus"
+        },
+        {
+          "kind": "title",
+          "code": "0x05",
+          "title": "No6.mus"
+        },
+        {
+          "kind": "title",
+          "code": "0x06",
+          "title": "No8.mus"
+        },
+        {
+          "kind": "title",
+          "code": "0x07",
+          "title": "No9.mus"
+        },
+        {
+          "kind": "title",
+          "code": "0x08",
+          "title": "No10.mus"
+        },
+        {
+          "kind": "title",
+          "code": "0x09",
+          "title": "No11.mus"
+        },
+        {
+          "kind": "title",
+          "code": "0x0a",
+          "title": "No14.mus"
+        },
+        {
+          "kind": "title",
+          "code": "0x0b",
+          "title": "No15.mus"
+        },
+        {
+          "kind": "title",
+          "code": "0x0c",
+          "title": "No16.mus"
+        },
+        {
+          "kind": "title",
+          "code": "0x0d",
+          "title": "No18.mus"
+        },
+        {
+          "kind": "title",
+          "code": "0x0e",
+          "title": "No19.mus"
+        },
+        {
+          "kind": "title",
+          "code": "0x0f",
+          "title": "No20.mus"
+        },
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "No21.mus"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "No22.mus"
+        },
+        {
+          "kind": "title",
+          "code": "0x14",
+          "title": "No23.mus"
+        },
+        {
+          "kind": "title",
+          "code": "0x15",
+          "title": "No24.mus"
+        },
+        {
+          "kind": "title",
+          "code": "0x16",
+          "title": "No26.mus"
+        },
+        {
+          "kind": "title",
+          "code": "0x18",
+          "title": "No27.mus"
+        },
+        {
+          "kind": "title",
+          "code": "0x19",
+          "title": "No28.mus"
+        },
+        {
+          "kind": "title",
+          "code": "0x1a",
+          "title": "No29.mus"
+        },
+        {
+          "kind": "title",
+          "code": "0x1c",
+          "title": "No30.mus"
+        },
+        {
+          "kind": "comment",
+          "text": "\t<title code=\"0x1d\">No31.mus</title> "
+        },
+        {
+          "kind": "title",
+          "code": "0x1e",
+          "title": "No32.mus"
+        },
+        {
+          "kind": "title",
+          "code": "0x1f",
+          "title": "No33.mus"
+        },
+        {
+          "kind": "title",
+          "code": "0x20",
+          "title": "No34.mus"
+        },
+        {
+          "kind": "title",
+          "code": "0x21",
+          "title": "No35.mus"
+        },
+        {
+          "kind": "title",
+          "code": "0x22",
+          "title": "No36.mus"
+        },
+        {
+          "kind": "title",
+          "code": "0x23",
+          "title": "No37.mus"
+        },
+        {
+          "kind": "title",
+          "code": "0x24",
+          "title": "No38.mus"
+        },
+        {
+          "kind": "title",
+          "code": "0x25",
+          "title": "No39.mus"
+        },
+        {
+          "kind": "title",
+          "code": "0x26",
+          "title": "No40.mus"
+        },
+        {
+          "kind": "title",
+          "code": "0x28",
+          "title": "No41.mus"
+        },
+        {
+          "kind": "title",
+          "code": "0x29",
+          "title": "No42.mus"
+        },
+        {
+          "kind": "title",
+          "code": "0x2a",
+          "title": "No43.mus"
+        },
+        {
+          "kind": "title",
+          "code": "0x2c",
+          "title": "No44.mus"
+        },
+        {
+          "kind": "title",
+          "code": "0x2d",
+          "title": "No45.mus"
+        },
+        {
+          "kind": "title",
+          "code": "0x2e",
+          "title": "No46.mus"
+        },
+        {
+          "kind": "title",
+          "code": "0x2f",
+          "title": "No47.mus"
+        },
+        {
+          "kind": "title",
+          "code": "0x30",
+          "title": "No49.mus"
+        },
+        {
+          "kind": "title",
+          "code": "0x31",
+          "title": "No50.mus"
+        },
+        {
+          "kind": "title",
+          "code": "0x32",
+          "title": "No51.mus"
+        },
+        {
+          "kind": "title",
+          "code": "0x33",
+          "title": "No52.mus"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/technopolissoft.xml",
+      "source_order": 4540,
+      "archive": "onnanoko88",
+      "id": "onnanoko88-opn"
+    },
+    {
+      "title": "[PC-8801] 破邪大星ダンガイオー(OPNA)",
+      "driver": {
+        "name": "pc88",
+        "type": "opna",
+        "alias": "テクノポリスソフト",
+        "platform": "NEC PC-8801"
+      },
+      "options": [
+        {
+          "name": "init_pc",
+          "value": "0x3100"
+        },
+        {
+          "name": "mdata_addr",
+          "value": "0x97fc"
+        },
+        {
+          "name": "mdata_size",
+          "value": "0x2000"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "PROG1",
+          "offset": "0x0000"
+        },
+        {
+          "type": "code",
+          "path": "PROG2",
+          "offset": "0x1000"
+        },
+        {
+          "type": "code",
+          "path": "PATCH",
+          "offset": "0x3100"
+        },
+        {
+          "type": "code",
+          "path": "B31",
+          "offset": "0x93fc"
+        },
+        {
+          "type": "bgm",
+          "path": "B27",
+          "offset": "0x00"
+        },
+        {
+          "type": "bgm",
+          "path": "B28",
+          "offset": "0x01"
+        },
+        {
+          "type": "bgm",
+          "path": "B29",
+          "offset": "0x02"
+        },
+        {
+          "type": "bgm",
+          "path": "B30",
+          "offset": "0x03"
+        },
+        {
+          "type": "bgm",
+          "path": "C27",
+          "offset": "0x04"
+        },
+        {
+          "type": "bgm",
+          "path": "D38",
+          "offset": "0x05"
+        },
+        {
+          "type": "bgm",
+          "path": "D39",
+          "offset": "0x06"
+        },
+        {
+          "type": "bgm",
+          "path": "D40",
+          "offset": "0x07"
+        },
+        {
+          "type": "bgm",
+          "path": "E30",
+          "offset": "0x08"
+        },
+        {
+          "type": "bgm",
+          "path": "E31",
+          "offset": "0x09"
+        },
+        {
+          "type": "bgm",
+          "path": "E32",
+          "offset": "0x0a"
+        },
+        {
+          "type": "bgm",
+          "path": "F28",
+          "offset": "0x0b"
+        },
+        {
+          "type": "bgm",
+          "path": "F29",
+          "offset": "0x0c"
+        },
+        {
+          "type": "bgm",
+          "path": "F30",
+          "offset": "0x0d"
+        },
+        {
+          "type": "bgm",
+          "path": "F31",
+          "offset": "0x0e"
+        },
+        {
+          "type": "bgm",
+          "path": "F32",
+          "offset": "0x0f"
+        },
+        {
+          "type": "bgm",
+          "path": "F33",
+          "offset": "0x10"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x00000000",
+          "title": "B27 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000001",
+          "title": "B28 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000002",
+          "title": "B29 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000003",
+          "title": "B30 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000004",
+          "title": "C27 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000005",
+          "title": "D38 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000006",
+          "title": "D39 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000007",
+          "title": "D40 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000008",
+          "title": "E30 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000009",
+          "title": "E31 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x0000000a",
+          "title": "E32 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x0000000b",
+          "title": "F28 : CROSS FIGHT!"
+        },
+        {
+          "kind": "title",
+          "code": "0x0000000c",
+          "title": "F29 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x0000000d",
+          "title": "F30 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x0000000e",
+          "title": "F31 : CROSS FIGHT! (サビのみ)"
+        },
+        {
+          "kind": "title",
+          "code": "0x0000000f",
+          "title": "F32 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000010",
+          "title": "F33 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x000000ff",
+          "title": "B31 : 効果音00"
+        },
+        {
+          "kind": "title",
+          "code": "0x010000ff",
+          "title": "B31 : 効果音01"
+        },
+        {
+          "kind": "title",
+          "code": "0x020000ff",
+          "title": "B31 : 効果音02"
+        },
+        {
+          "kind": "title",
+          "code": "0x030000ff",
+          "title": "B31 : 効果音03"
+        },
+        {
+          "kind": "title",
+          "code": "0x040000ff",
+          "title": "B31 : 効果音04"
+        },
+        {
+          "kind": "title",
+          "code": "0x050000ff",
+          "title": "B31 : 効果音05"
+        },
+        {
+          "kind": "title",
+          "code": "0x060000ff",
+          "title": "B31 : 効果音06"
+        },
+        {
+          "kind": "title",
+          "code": "0x070000ff",
+          "title": "B31 : 効果音07"
+        },
+        {
+          "kind": "title",
+          "code": "0x080000ff",
+          "title": "B31 : 効果音08"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/technopolissoft.xml",
+      "source_order": 4541,
+      "archive": "dangaio88",
+      "id": "dangaio88-opna"
+    },
+    {
+      "title": "[PC-8801] 破邪大星ダンガイオー(OPN)",
+      "driver": {
+        "name": "pc88",
+        "type": "opna",
+        "alias": "テクノポリスソフト",
+        "platform": "NEC PC-8801"
+      },
+      "options": [
+        {
+          "name": "init_pc",
+          "value": "0x3100"
+        },
+        {
+          "name": "mdata_addr",
+          "value": "0x97fc"
+        },
+        {
+          "name": "mdata_size",
+          "value": "0x2000"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "PROG1",
+          "offset": "0x0000"
+        },
+        {
+          "type": "code",
+          "path": "PROG2",
+          "offset": "0x1000"
+        },
+        {
+          "type": "code",
+          "path": "PATCH",
+          "offset": "0x3100"
+        },
+        {
+          "type": "code",
+          "path": "B31",
+          "offset": "0x93fc"
+        },
+        {
+          "type": "bgm",
+          "path": "B00",
+          "offset": "0x00"
+        },
+        {
+          "type": "bgm",
+          "path": "B12",
+          "offset": "0x01"
+        },
+        {
+          "type": "bgm",
+          "path": "B16",
+          "offset": "0x02"
+        },
+        {
+          "type": "bgm",
+          "path": "B25",
+          "offset": "0x03"
+        },
+        {
+          "type": "bgm",
+          "path": "C08",
+          "offset": "0x04"
+        },
+        {
+          "type": "bgm",
+          "path": "D01",
+          "offset": "0x05"
+        },
+        {
+          "type": "bgm",
+          "path": "D17",
+          "offset": "0x06"
+        },
+        {
+          "type": "bgm",
+          "path": "D34",
+          "offset": "0x07"
+        },
+        {
+          "type": "bgm",
+          "path": "E03",
+          "offset": "0x08"
+        },
+        {
+          "type": "bgm",
+          "path": "E11",
+          "offset": "0x09"
+        },
+        {
+          "type": "bgm",
+          "path": "E29",
+          "offset": "0x0a"
+        },
+        {
+          "type": "bgm",
+          "path": "F17",
+          "offset": "0x0b"
+        },
+        {
+          "type": "bgm",
+          "path": "F23",
+          "offset": "0x0c"
+        },
+        {
+          "type": "bgm",
+          "path": "F24",
+          "offset": "0x0d"
+        },
+        {
+          "type": "bgm",
+          "path": "F25",
+          "offset": "0x0e"
+        },
+        {
+          "type": "bgm",
+          "path": "F26",
+          "offset": "0x0f"
+        },
+        {
+          "type": "bgm",
+          "path": "F27",
+          "offset": "0x10"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x00000000",
+          "title": "B00 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000001",
+          "title": "B12 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000002",
+          "title": "B16 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000003",
+          "title": "B25 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000004",
+          "title": "C08 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000005",
+          "title": "D01 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000006",
+          "title": "D17 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000007",
+          "title": "D34 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000008",
+          "title": "E03 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000009",
+          "title": "E11 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x0000000a",
+          "title": "E29 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x0000000b",
+          "title": "F17 : CROSS FIGHT!"
+        },
+        {
+          "kind": "title",
+          "code": "0x0000000c",
+          "title": "F23 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x0000000d",
+          "title": "F24 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x0000000e",
+          "title": "F25 : CROSS FIGHT! (サビのみ)"
+        },
+        {
+          "kind": "title",
+          "code": "0x0000000f",
+          "title": "F26 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000010",
+          "title": "F27 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x000000ff",
+          "title": "B31 : 効果音00"
+        },
+        {
+          "kind": "title",
+          "code": "0x010000ff",
+          "title": "B31 : 効果音01"
+        },
+        {
+          "kind": "title",
+          "code": "0x020000ff",
+          "title": "B31 : 効果音02"
+        },
+        {
+          "kind": "title",
+          "code": "0x030000ff",
+          "title": "B31 : 効果音03"
+        },
+        {
+          "kind": "title",
+          "code": "0x040000ff",
+          "title": "B31 : 効果音04"
+        },
+        {
+          "kind": "title",
+          "code": "0x050000ff",
+          "title": "B31 : 効果音05"
+        },
+        {
+          "kind": "title",
+          "code": "0x060000ff",
+          "title": "B31 : 効果音06"
+        },
+        {
+          "kind": "title",
+          "code": "0x070000ff",
+          "title": "B31 : 効果音07"
+        },
+        {
+          "kind": "title",
+          "code": "0x080000ff",
+          "title": "B31 : 効果音08"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/technopolissoft.xml",
+      "source_order": 4542,
+      "archive": "dangaio88",
+      "id": "dangaio88-opna-2"
+    },
+    {
+      "title": "[PC-9801] ヴァージン・ドリーム",
+      "driver": {
+        "name": "pc98dos",
+        "type": "opn",
+        "alias": "GAMEテクノポリス",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "funcvect",
+          "value": "0x7e"
+        },
+        {
+          "name": "clockmul",
+          "value": "8"
+        },
+        {
+          "name": "showfm3ex",
+          "value": "1"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "PMD_98.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "PMD.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "TKEFC.EFC",
+          "offset": "0x08"
+        },
+        {
+          "type": "file",
+          "path": "TK01.M",
+          "offset": "0x10"
+        },
+        {
+          "type": "file",
+          "path": "TK02.M",
+          "offset": "0x11"
+        },
+        {
+          "type": "file",
+          "path": "TK03.M",
+          "offset": "0x12"
+        },
+        {
+          "type": "file",
+          "path": "TK04.M",
+          "offset": "0x13"
+        },
+        {
+          "type": "file",
+          "path": "TK05.M",
+          "offset": "0x14"
+        },
+        {
+          "type": "file",
+          "path": "TK06.M",
+          "offset": "0x15"
+        },
+        {
+          "type": "file",
+          "path": "TK07.M",
+          "offset": "0x16"
+        },
+        {
+          "type": "file",
+          "path": "TK08.M",
+          "offset": "0x17"
+        },
+        {
+          "type": "file",
+          "path": "TK09.M",
+          "offset": "0x18"
+        },
+        {
+          "type": "file",
+          "path": "TK10.M",
+          "offset": "0x19"
+        },
+        {
+          "type": "file",
+          "path": "TK11.M",
+          "offset": "0x1a"
+        },
+        {
+          "type": "file",
+          "path": "TK12.M",
+          "offset": "0x1b"
+        },
+        {
+          "type": "file",
+          "path": "TK13.M",
+          "offset": "0x1c"
+        },
+        {
+          "type": "file",
+          "path": "TK14.M",
+          "offset": "0x1d"
+        },
+        {
+          "type": "file",
+          "path": "TK15.M",
+          "offset": "0x1e"
+        },
+        {
+          "type": "file",
+          "path": "TK16.M",
+          "offset": "0x1f"
+        },
+        {
+          "type": "shell",
+          "path": "pmd /M8 /V2 /E2 /K",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "pmd_98",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "TK01.M    : プロローグ"
+        },
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "TK02.M    : タイトル"
+        },
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "TK03.M    : メイン1/NORMAL"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "TK04.M    : メイン2/HIGH"
+        },
+        {
+          "kind": "title",
+          "code": "0x14",
+          "title": "TK05.M    : メイン3/LOW"
+        },
+        {
+          "kind": "title",
+          "code": "0x15",
+          "title": "TK06.M    : メイン4/スケジュール消化時"
+        },
+        {
+          "kind": "title",
+          "code": "0x16",
+          "title": "TK07.M    : 行楽/入浴/休養"
+        },
+        {
+          "kind": "title",
+          "code": "0x17",
+          "title": "TK08.M    : 外出1/移動中 NORMAL コミカル"
+        },
+        {
+          "kind": "title",
+          "code": "0x18",
+          "title": "TK09.M    : 外出2/移動中門限間近 NORMAL コミカル、焦り、緊迫"
+        },
+        {
+          "kind": "title",
+          "code": "0x19",
+          "title": "TK10.M    : 外出3/移動中イベント発生 CUTOUT ジャジャジャーン"
+        },
+        {
+          "kind": "title",
+          "code": "0x1a",
+          "title": "TK11.M    : 外出4/各種イベント表示中 NORMAL アップテンポ、明るく"
+        },
+        {
+          "kind": "title",
+          "code": "0x1b",
+          "title": "TK12.M    : 外出5/バトル勝利 CUTOUT チャンチャカチャーン"
+        },
+        {
+          "kind": "title",
+          "code": "0x1c",
+          "title": "TK13.M    : 外出6/バトル敗北 CUTOUT ヘロヘロヘロー"
+        },
+        {
+          "kind": "title",
+          "code": "0x1d",
+          "title": "TK14.M    : 大会1/テーマ/得点表示"
+        },
+        {
+          "kind": "title",
+          "code": "0x1e",
+          "title": "TK15.M    : 大会2/審査 NORMAL アップテンポ、緊張"
+        },
+        {
+          "kind": "title",
+          "code": "0x1f",
+          "title": "TK16.M    : エンディング"
+        },
+        {
+          "kind": "range",
+          "min": "0x0801",
+          "max": "0x081c",
+          "title_format": "TKEFC.EFC : %2X",
+          "extcode": "0"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/technopolissoft.xml",
+      "source_order": 4543,
+      "archive": "virgin_d_98",
+      "id": "virgin-d-98-opn"
+    },
+    {
+      "title": "[PC-9801] キミだけに愛を…",
+      "driver": {
+        "name": "pc98dos",
+        "type": "opn",
+        "alias": "GAMEテクノポリス",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "clockmul",
+          "value": "8"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "usd_98.com",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "ADVBIOS.EXE",
+          "offset": "-1"
+        },
+        {
+          "type": "conin",
+          "path": "ADVBIOS.EXE",
+          "offset": "0x05"
+        },
+        {
+          "type": "file",
+          "path": "KI_01.USO",
+          "offset": "0x10"
+        },
+        {
+          "type": "file",
+          "path": "KI_02.USO",
+          "offset": "0x11"
+        },
+        {
+          "type": "file",
+          "path": "KI_03.USO",
+          "offset": "0x12"
+        },
+        {
+          "type": "file",
+          "path": "KI_04.USO",
+          "offset": "0x13"
+        },
+        {
+          "type": "file",
+          "path": "KI_05.USO",
+          "offset": "0x14"
+        },
+        {
+          "type": "file",
+          "path": "KI_06.USO",
+          "offset": "0x15"
+        },
+        {
+          "type": "file",
+          "path": "KI_07.USO",
+          "offset": "0x16"
+        },
+        {
+          "type": "file",
+          "path": "KI_08.USO",
+          "offset": "0x17"
+        },
+        {
+          "type": "file",
+          "path": "KI_09.USO",
+          "offset": "0x18"
+        },
+        {
+          "type": "file",
+          "path": "KI_10.USO",
+          "offset": "0x19"
+        },
+        {
+          "type": "shell",
+          "path": "usd_98",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "KI_01.USO : 後悔しない"
+        },
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "KI_02.USO : いつも、朝に"
+        },
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "KI_03.USO : 白夜"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "KI_04.USO : 予感"
+        },
+        {
+          "kind": "title",
+          "code": "0x14",
+          "title": "KI_05.USO : アン不安"
+        },
+        {
+          "kind": "title",
+          "code": "0x15",
+          "title": "KI_06.USO : 愛すべき乙女"
+        },
+        {
+          "kind": "title",
+          "code": "0x16",
+          "title": "KI_07.USO : 裸／裸／裸"
+        },
+        {
+          "kind": "title",
+          "code": "0x17",
+          "title": "KI_08.USO : 恋愛人"
+        },
+        {
+          "kind": "title",
+          "code": "0x18",
+          "title": "KI_09.USO : サスペンス"
+        },
+        {
+          "kind": "title",
+          "code": "0x19",
+          "title": "KI_10.USO : 永夢"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/technopolissoft.xml",
+      "source_order": 4544,
+      "archive": "kimidake_98",
+      "id": "kimidake-98-opn"
+    },
+    {
+      "title": "[PC-9801] コンチネンタル",
+      "driver": {
+        "name": "pc98dos",
+        "type": "opn",
+        "alias": "GAMEテクノポリス",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "clockmul",
+          "value": "8"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "usd_98.com",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "ADVBIOS.EXE",
+          "offset": "-1"
+        },
+        {
+          "type": "conin",
+          "path": "ADVBIOS.EXE",
+          "offset": "0x05"
+        },
+        {
+          "type": "file",
+          "path": "COCKTAIL.USO",
+          "offset": "0x10"
+        },
+        {
+          "type": "file",
+          "path": "FME13.USO",
+          "offset": "0x11"
+        },
+        {
+          "type": "file",
+          "path": "FME14.USO",
+          "offset": "0x12"
+        },
+        {
+          "type": "file",
+          "path": "FME15.USO",
+          "offset": "0x13"
+        },
+        {
+          "type": "file",
+          "path": "FME16.USO",
+          "offset": "0x14"
+        },
+        {
+          "type": "file",
+          "path": "FRPG01.USO",
+          "offset": "0x15"
+        },
+        {
+          "type": "file",
+          "path": "FRPG03.USO",
+          "offset": "0x16"
+        },
+        {
+          "type": "file",
+          "path": "FRPG04.USO",
+          "offset": "0x17"
+        },
+        {
+          "type": "file",
+          "path": "FRPG05.USO",
+          "offset": "0x18"
+        },
+        {
+          "type": "file",
+          "path": "FRPG06.USO",
+          "offset": "0x19"
+        },
+        {
+          "type": "file",
+          "path": "FRPG07.USO",
+          "offset": "0x1a"
+        },
+        {
+          "type": "file",
+          "path": "FRPG09.USO",
+          "offset": "0x1b"
+        },
+        {
+          "type": "file",
+          "path": "FRPG10.USO",
+          "offset": "0x1c"
+        },
+        {
+          "type": "file",
+          "path": "FRPG11.USO",
+          "offset": "0x1d"
+        },
+        {
+          "type": "file",
+          "path": "FRPG12.USO",
+          "offset": "0x1e"
+        },
+        {
+          "type": "file",
+          "path": "FRPG13.USO",
+          "offset": "0x1f"
+        },
+        {
+          "type": "file",
+          "path": "FRPG14A.USO",
+          "offset": "0x20"
+        },
+        {
+          "type": "file",
+          "path": "FRPG14B.USO",
+          "offset": "0x21"
+        },
+        {
+          "type": "file",
+          "path": "FRPG15.USO",
+          "offset": "0x22"
+        },
+        {
+          "type": "file",
+          "path": "FRPG16.USO",
+          "offset": "0x23"
+        },
+        {
+          "type": "file",
+          "path": "FRPG17.USO",
+          "offset": "0x24"
+        },
+        {
+          "type": "file",
+          "path": "FRPG18.USO",
+          "offset": "0x25"
+        },
+        {
+          "type": "file",
+          "path": "FRPG18B.USO",
+          "offset": "0x26"
+        },
+        {
+          "type": "file",
+          "path": "FRPG19.USO",
+          "offset": "0x27"
+        },
+        {
+          "type": "file",
+          "path": "FRPG2A.USO",
+          "offset": "0x28"
+        },
+        {
+          "type": "file",
+          "path": "FRPG2B.USO",
+          "offset": "0x29"
+        },
+        {
+          "type": "file",
+          "path": "FSE01.USO",
+          "offset": "0x2a"
+        },
+        {
+          "type": "file",
+          "path": "FSE02.USO",
+          "offset": "0x2b"
+        },
+        {
+          "type": "file",
+          "path": "FSE03.USO",
+          "offset": "0x2c"
+        },
+        {
+          "type": "file",
+          "path": "FSE04.USO",
+          "offset": "0x2d"
+        },
+        {
+          "type": "file",
+          "path": "FSE05.USO",
+          "offset": "0x2e"
+        },
+        {
+          "type": "file",
+          "path": "FSE06.USO",
+          "offset": "0x2f"
+        },
+        {
+          "type": "file",
+          "path": "FSE07.USO",
+          "offset": "0x30"
+        },
+        {
+          "type": "file",
+          "path": "FSE088.USO",
+          "offset": "0x31"
+        },
+        {
+          "type": "file",
+          "path": "FSE08A.USO",
+          "offset": "0x32"
+        },
+        {
+          "type": "file",
+          "path": "FSE08B.USO",
+          "offset": "0x33"
+        },
+        {
+          "type": "file",
+          "path": "FSE10.USO",
+          "offset": "0x34"
+        },
+        {
+          "type": "file",
+          "path": "FSE11.USO",
+          "offset": "0x35"
+        },
+        {
+          "type": "file",
+          "path": "FSE12.USO",
+          "offset": "0x36"
+        },
+        {
+          "type": "shell",
+          "path": "usd_98",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "COCKTAIL.USO"
+        },
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "FME13.USO"
+        },
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "FME14.USO"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "FME15.USO"
+        },
+        {
+          "kind": "title",
+          "code": "0x14",
+          "title": "FME16.USO"
+        },
+        {
+          "kind": "title",
+          "code": "0x15",
+          "title": "FRPG01.USO"
+        },
+        {
+          "kind": "title",
+          "code": "0x16",
+          "title": "FRPG03.USO"
+        },
+        {
+          "kind": "title",
+          "code": "0x17",
+          "title": "FRPG04.USO"
+        },
+        {
+          "kind": "title",
+          "code": "0x18",
+          "title": "FRPG05.USO"
+        },
+        {
+          "kind": "title",
+          "code": "0x19",
+          "title": "FRPG06.USO"
+        },
+        {
+          "kind": "title",
+          "code": "0x1a",
+          "title": "FRPG07.USO"
+        },
+        {
+          "kind": "title",
+          "code": "0x1b",
+          "title": "FRPG09.USO"
+        },
+        {
+          "kind": "title",
+          "code": "0x1c",
+          "title": "FRPG10.USO"
+        },
+        {
+          "kind": "title",
+          "code": "0x1d",
+          "title": "FRPG11.USO"
+        },
+        {
+          "kind": "title",
+          "code": "0x1e",
+          "title": "FRPG12.USO"
+        },
+        {
+          "kind": "title",
+          "code": "0x1f",
+          "title": "FRPG13.USO"
+        },
+        {
+          "kind": "title",
+          "code": "0x20",
+          "title": "FRPG14A.USO"
+        },
+        {
+          "kind": "title",
+          "code": "0x21",
+          "title": "FRPG14B.USO"
+        },
+        {
+          "kind": "title",
+          "code": "0x22",
+          "title": "FRPG15.USO"
+        },
+        {
+          "kind": "title",
+          "code": "0x23",
+          "title": "FRPG16.USO"
+        },
+        {
+          "kind": "title",
+          "code": "0x24",
+          "title": "FRPG17.USO"
+        },
+        {
+          "kind": "title",
+          "code": "0x25",
+          "title": "FRPG18.USO"
+        },
+        {
+          "kind": "title",
+          "code": "0x26",
+          "title": "FRPG18B.USO"
+        },
+        {
+          "kind": "title",
+          "code": "0x27",
+          "title": "FRPG19.USO"
+        },
+        {
+          "kind": "title",
+          "code": "0x28",
+          "title": "FRPG2A.USO"
+        },
+        {
+          "kind": "title",
+          "code": "0x29",
+          "title": "FRPG2B.USO"
+        },
+        {
+          "kind": "title",
+          "code": "0x2a",
+          "title": "FSE01.USO"
+        },
+        {
+          "kind": "title",
+          "code": "0x2b",
+          "title": "FSE02.USO"
+        },
+        {
+          "kind": "title",
+          "code": "0x2c",
+          "title": "FSE03.USO"
+        },
+        {
+          "kind": "title",
+          "code": "0x2d",
+          "title": "FSE04.USO"
+        },
+        {
+          "kind": "title",
+          "code": "0x2e",
+          "title": "FSE05.USO"
+        },
+        {
+          "kind": "title",
+          "code": "0x2f",
+          "title": "FSE06.USO"
+        },
+        {
+          "kind": "title",
+          "code": "0x30",
+          "title": "FSE07.USO"
+        },
+        {
+          "kind": "title",
+          "code": "0x31",
+          "title": "FSE088.USO"
+        },
+        {
+          "kind": "title",
+          "code": "0x32",
+          "title": "FSE08A.USO"
+        },
+        {
+          "kind": "title",
+          "code": "0x33",
+          "title": "FSE08B.USO"
+        },
+        {
+          "kind": "title",
+          "code": "0x34",
+          "title": "FSE10.USO"
+        },
+        {
+          "kind": "title",
+          "code": "0x35",
+          "title": "FSE11.USO"
+        },
+        {
+          "kind": "title",
+          "code": "0x36",
+          "title": "FSE12.USO"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/technopolissoft.xml",
+      "source_order": 4545,
+      "archive": "conti_98",
+      "id": "conti-98-opn"
+    },
+    {
+      "title": "[PC-9801] テセラ キミは汚れた天使か聖なる魔女か!?",
+      "driver": {
+        "name": "pc98dos",
+        "type": "opn",
+        "alias": "GAMEテクノポリス",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "clockmul",
+          "value": "8"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "usd_98.com",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "ADVBIOS.OVL",
+          "offset": "-1"
+        },
+        {
+          "type": "conin",
+          "path": "ADVBIOS.OVL",
+          "offset": "0x05"
+        },
+        {
+          "type": "file",
+          "path": "BADEND.USO",
+          "offset": "0x10"
+        },
+        {
+          "type": "file",
+          "path": "ENA.USO",
+          "offset": "0x11"
+        },
+        {
+          "type": "file",
+          "path": "ENDING.USO",
+          "offset": "0x12"
+        },
+        {
+          "type": "file",
+          "path": "KICHIJOJ.USO",
+          "offset": "0x13"
+        },
+        {
+          "type": "file",
+          "path": "KIKEN.USO",
+          "offset": "0x14"
+        },
+        {
+          "type": "file",
+          "path": "MUSUME.USO",
+          "offset": "0x15"
+        },
+        {
+          "type": "file",
+          "path": "OPENING.USO",
+          "offset": "0x16"
+        },
+        {
+          "type": "file",
+          "path": "SHINSEI.USO",
+          "offset": "0x17"
+        },
+        {
+          "type": "file",
+          "path": "SHOUJO.USO",
+          "offset": "0x18"
+        },
+        {
+          "type": "file",
+          "path": "TESERA.USO",
+          "offset": "0x19"
+        },
+        {
+          "type": "file",
+          "path": "UMI.USO",
+          "offset": "0x1a"
+        },
+        {
+          "type": "shell",
+          "path": "usd_98",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x16",
+          "title": "OPENING.USO  : Ⅳ・オープニング"
+        },
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "ENA.USO      : エナ"
+        },
+        {
+          "kind": "title",
+          "code": "0x18",
+          "title": "SHOUJO.USO   : 少女"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "KICHIJOJ.USO : 吉祥寺クエスト"
+        },
+        {
+          "kind": "title",
+          "code": "0x15",
+          "title": "MUSUME.USO   : 娘たち"
+        },
+        {
+          "kind": "title",
+          "code": "0x14",
+          "title": "KIKEN.USO    : 危険な乙女"
+        },
+        {
+          "kind": "title",
+          "code": "0x19",
+          "title": "TESERA.USO   : テセラ"
+        },
+        {
+          "kind": "title",
+          "code": "0x1a",
+          "title": "UMI.USO      : 海"
+        },
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "BADEND.USO   : BAD・END"
+        },
+        {
+          "kind": "title",
+          "code": "0x17",
+          "title": "SHINSEI.USO  : 新生"
+        },
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "ENDING.USO   : エンディング"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/technopolissoft.xml",
+      "source_order": 4546,
+      "archive": "tecera_98",
+      "id": "tecera-98-opn"
+    },
+    {
+      "title": "[PC-9801] ドラゴンアイズ",
+      "driver": {
+        "name": "pc98dos",
+        "type": "opn",
+        "alias": "GAMEテクノポリス",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "clockmul",
+          "value": "8"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "usd_98.com",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "ADVH.EXE",
+          "offset": "-1"
+        },
+        {
+          "type": "conin",
+          "path": "ADVH.EXE",
+          "offset": "0x05"
+        },
+        {
+          "type": "file",
+          "path": "AWA_A.USO",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "AWA_B.USO",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "BARA7.USO",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "DC_SIZ.USO",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "D_SH.USO",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "END.USO",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "FAMI.USO",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "HAPPY.USO",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "KURA3.USO",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "NIGE.USO",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "NIKE.USO",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "NOS.USO",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "PARTY.USO",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "PINK.USO",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "PROG.USO",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "SAD.USO",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "SE.USO",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "SIRO_C.USO",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "SPACE.USO",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "YA6.USO",
+          "offset": "-1"
+        },
+        {
+          "type": "conin",
+          "path": "AWA_A.USO",
+          "offset": "0x10"
+        },
+        {
+          "type": "conin",
+          "path": "AWA_B.USO",
+          "offset": "0x11"
+        },
+        {
+          "type": "conin",
+          "path": "BARA7.USO",
+          "offset": "0x12"
+        },
+        {
+          "type": "conin",
+          "path": "DC_SIZ.USO",
+          "offset": "0x13"
+        },
+        {
+          "type": "conin",
+          "path": "D_SH.USO",
+          "offset": "0x14"
+        },
+        {
+          "type": "conin",
+          "path": "END.USO",
+          "offset": "0x15"
+        },
+        {
+          "type": "conin",
+          "path": "FAMI.USO",
+          "offset": "0x16"
+        },
+        {
+          "type": "conin",
+          "path": "HAPPY.USO",
+          "offset": "0x17"
+        },
+        {
+          "type": "conin",
+          "path": "KURA3.USO",
+          "offset": "0x18"
+        },
+        {
+          "type": "conin",
+          "path": "NIGE.USO",
+          "offset": "0x19"
+        },
+        {
+          "type": "conin",
+          "path": "NIKE.USO",
+          "offset": "0x1a"
+        },
+        {
+          "type": "conin",
+          "path": "NOS.USO",
+          "offset": "0x1b"
+        },
+        {
+          "type": "conin",
+          "path": "PARTY.USO",
+          "offset": "0x1c"
+        },
+        {
+          "type": "conin",
+          "path": "PINK.USO",
+          "offset": "0x1d"
+        },
+        {
+          "type": "conin",
+          "path": "PROG.USO",
+          "offset": "0x1e"
+        },
+        {
+          "type": "conin",
+          "path": "SAD.USO",
+          "offset": "0x1f"
+        },
+        {
+          "type": "conin",
+          "path": "SE.USO",
+          "offset": "0x20"
+        },
+        {
+          "type": "conin",
+          "path": "SIRO_C.USO",
+          "offset": "0x21"
+        },
+        {
+          "type": "conin",
+          "path": "SPACE.USO",
+          "offset": "0x22"
+        },
+        {
+          "type": "conin",
+          "path": "YA6.USO",
+          "offset": "0x23"
+        },
+        {
+          "type": "shell",
+          "path": "usd_98",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "AWA_A.USO  : 回想"
+        },
+        {
+          "kind": "title",
+          "code": "0x16",
+          "title": "FAMI.USO   : '球'たち"
+        },
+        {
+          "kind": "title",
+          "code": "0x20",
+          "title": "SE.USO     : コスモス"
+        },
+        {
+          "kind": "title",
+          "code": "0x23",
+          "title": "YA6.USO    : ミウィ"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "DC_SIZ.USO : ガールドリア"
+        },
+        {
+          "kind": "title",
+          "code": "0x21",
+          "title": "SIRO_C.USO : 少女たち"
+        },
+        {
+          "kind": "title",
+          "code": "0x1f",
+          "title": "SAD.USO    : 先見師"
+        },
+        {
+          "kind": "title",
+          "code": "0x22",
+          "title": "SPACE.USO  : ロゴナ"
+        },
+        {
+          "kind": "title",
+          "code": "0x1c",
+          "title": "PARTY.USO  : 想人の星"
+        },
+        {
+          "kind": "title",
+          "code": "0x18",
+          "title": "KURA3.USO  : 哀する星々"
+        },
+        {
+          "kind": "title",
+          "code": "0x1e",
+          "title": "PROG.USO   : 渡り星"
+        },
+        {
+          "kind": "title",
+          "code": "0x17",
+          "title": "HAPPY.USO  : ぴんく・ぴんく!"
+        },
+        {
+          "kind": "title",
+          "code": "0x1a",
+          "title": "NIKE.USO   : 聖地"
+        },
+        {
+          "kind": "title",
+          "code": "0x19",
+          "title": "NIGE.USO   : 戦星"
+        },
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "BARA7.USO  : 別離"
+        },
+        {
+          "kind": "title",
+          "code": "0x1b",
+          "title": "NOS.USO    : 事起"
+        },
+        {
+          "kind": "title",
+          "code": "0x14",
+          "title": "D_SH.USO   : 行きづまりの捷利"
+        },
+        {
+          "kind": "title",
+          "code": "0x1d",
+          "title": "PINK.USO   : ドラゴンアイズ"
+        },
+        {
+          "kind": "title",
+          "code": "0x15",
+          "title": "END.USO    : 再会"
+        },
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "AWA_B.USO  : アイネス"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/technopolissoft.xml",
+      "source_order": 4547,
+      "archive": "drageye_98",
+      "id": "drageye-98-opn"
+    },
+    {
+      "title": "[PC-9801] 初恋物語",
+      "driver": {
+        "name": "pc98dos",
+        "type": "opn",
+        "alias": "GAMEテクノポリス",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "clockmul",
+          "value": "8"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "usd_98.com",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "ADVBIOS.OVL",
+          "offset": "-1"
+        },
+        {
+          "type": "conin",
+          "path": "ADVBIOS.OVL",
+          "offset": "0x05"
+        },
+        {
+          "type": "file",
+          "path": "H_DENNOU.USO",
+          "offset": "0x10"
+        },
+        {
+          "type": "file",
+          "path": "H_DPOP.USO",
+          "offset": "0x11"
+        },
+        {
+          "type": "file",
+          "path": "H_DSLOW.USO",
+          "offset": "0x12"
+        },
+        {
+          "type": "file",
+          "path": "H_END1.USO",
+          "offset": "0x13"
+        },
+        {
+          "type": "file",
+          "path": "H_END2.USO",
+          "offset": "0x14"
+        },
+        {
+          "type": "file",
+          "path": "H_END3.USO",
+          "offset": "0x15"
+        },
+        {
+          "type": "file",
+          "path": "H_EVENT.USO",
+          "offset": "0x16"
+        },
+        {
+          "type": "file",
+          "path": "H_OPEN.USO",
+          "offset": "0x17"
+        },
+        {
+          "type": "file",
+          "path": "H_PHOTO.USO",
+          "offset": "0x18"
+        },
+        {
+          "type": "file",
+          "path": "H_ROOM.USO",
+          "offset": "0x19"
+        },
+        {
+          "type": "file",
+          "path": "H_SUMMER.USO",
+          "offset": "0x1a"
+        },
+        {
+          "type": "file",
+          "path": "H_WINTER.USO",
+          "offset": "0x1b"
+        },
+        {
+          "type": "shell",
+          "path": "usd_98",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x17",
+          "title": "H_OPEN.USO   : 初恋オープニング"
+        },
+        {
+          "kind": "title",
+          "code": "0x19",
+          "title": "H_ROOM.USO   : 部屋"
+        },
+        {
+          "kind": "title",
+          "code": "0x18",
+          "title": "H_PHOTO.USO  : 写真"
+        },
+        {
+          "kind": "title",
+          "code": "0x1a",
+          "title": "H_SUMMER.USO : 夏"
+        },
+        {
+          "kind": "title",
+          "code": "0x1b",
+          "title": "H_WINTER.USO : 冬"
+        },
+        {
+          "kind": "title",
+          "code": "0x16",
+          "title": "H_EVENT.USO  : イベント"
+        },
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "H_DENNOU.USO : 電脳オープニング"
+        },
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "H_DSLOW.USO  : 電脳(スロー)"
+        },
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "H_DPOP.USO   : 電脳(ポップ)"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "H_END1.USO   : エンディング1"
+        },
+        {
+          "kind": "title",
+          "code": "0x14",
+          "title": "H_END2.USO   : エンディング2"
+        },
+        {
+          "kind": "title",
+          "code": "0x15",
+          "title": "H_END3.USO   : エンディング3"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/technopolissoft.xml",
+      "source_order": 4548,
+      "archive": "hatukoi_98",
+      "id": "hatukoi-98-opn"
+    },
+    {
+      "title": "[PC-9801] 電脳天使 ～デジタルアンジェ～",
+      "driver": {
+        "name": "pc98dos",
+        "type": "opn",
+        "alias": "GAMEテクノポリス",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "clockmul",
+          "value": "8"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "usd_98.com",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "DENAN.OV1",
+          "offset": "-1"
+        },
+        {
+          "type": "conin",
+          "path": "DENAN.OV1",
+          "offset": "0x05"
+        },
+        {
+          "type": "file",
+          "path": "D001.USO",
+          "offset": "0x10"
+        },
+        {
+          "type": "file",
+          "path": "D002.USO",
+          "offset": "0x11"
+        },
+        {
+          "type": "file",
+          "path": "D003.USO",
+          "offset": "0x12"
+        },
+        {
+          "type": "file",
+          "path": "D004.USO",
+          "offset": "0x13"
+        },
+        {
+          "type": "file",
+          "path": "D005.USO",
+          "offset": "0x14"
+        },
+        {
+          "type": "file",
+          "path": "D006.USO",
+          "offset": "0x15"
+        },
+        {
+          "type": "file",
+          "path": "D007.USO",
+          "offset": "0x16"
+        },
+        {
+          "type": "file",
+          "path": "D008.USO",
+          "offset": "0x17"
+        },
+        {
+          "type": "file",
+          "path": "D009.USO",
+          "offset": "0x18"
+        },
+        {
+          "type": "file",
+          "path": "S001.USO",
+          "offset": "0x19"
+        },
+        {
+          "type": "file",
+          "path": "S002.USO",
+          "offset": "0x1a"
+        },
+        {
+          "type": "file",
+          "path": "S003.USO",
+          "offset": "0x1b"
+        },
+        {
+          "type": "shell",
+          "path": "usd_98",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "D001.USO : ベルのテーマ"
+        },
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "D002.USO : 天界"
+        },
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "D003.USO : 貴也のテーマ"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "D004.USO : 悲しみ"
+        },
+        {
+          "kind": "title",
+          "code": "0x14",
+          "title": "D005.USO : 神機登場"
+        },
+        {
+          "kind": "title",
+          "code": "0x15",
+          "title": "D006.USO : ベスティア登場"
+        },
+        {
+          "kind": "title",
+          "code": "0x16",
+          "title": "D007.USO : 行け、アクエリュース!"
+        },
+        {
+          "kind": "title",
+          "code": "0x17",
+          "title": "D008.USO : やすらぎのとき"
+        },
+        {
+          "kind": "title",
+          "code": "0x18",
+          "title": "D009.USO : 学校"
+        },
+        {
+          "kind": "title",
+          "code": "0x19",
+          "title": "S001.USO : 星遊び"
+        },
+        {
+          "kind": "title",
+          "code": "0x1a",
+          "title": "S002.USO : 星遊び"
+        },
+        {
+          "kind": "title",
+          "code": "0x1b",
+          "title": "S003.USO : アンジュの想い"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/technopolissoft.xml",
+      "source_order": 4549,
+      "archive": "dennou_98",
+      "id": "dennou-98-opn"
+    },
+    {
+      "title": "[PC-9801] 秘密の花園",
+      "driver": {
+        "name": "pc98dos",
+        "type": "opn",
+        "alias": "GAMEテクノポリス",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "clockmul",
+          "value": "8"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "usd_98.com",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "ADVBIOS.EXE",
+          "offset": "-1"
+        },
+        {
+          "type": "conin",
+          "path": "ADVBIOS.EXE",
+          "offset": "0x05"
+        },
+        {
+          "type": "file",
+          "path": "HI_01.USO",
+          "offset": "0x10"
+        },
+        {
+          "type": "file",
+          "path": "HI_02.USO",
+          "offset": "0x11"
+        },
+        {
+          "type": "file",
+          "path": "HI_03.USO",
+          "offset": "0x12"
+        },
+        {
+          "type": "file",
+          "path": "HI_04.USO",
+          "offset": "0x13"
+        },
+        {
+          "type": "file",
+          "path": "HI_05.USO",
+          "offset": "0x14"
+        },
+        {
+          "type": "file",
+          "path": "HI_06.USO",
+          "offset": "0x15"
+        },
+        {
+          "type": "file",
+          "path": "HI_07.USO",
+          "offset": "0x16"
+        },
+        {
+          "type": "file",
+          "path": "HI_08.USO",
+          "offset": "0x17"
+        },
+        {
+          "type": "file",
+          "path": "HI_09.USO",
+          "offset": "0x18"
+        },
+        {
+          "type": "file",
+          "path": "HI_10.USO",
+          "offset": "0x19"
+        },
+        {
+          "type": "file",
+          "path": "HI_11.USO",
+          "offset": "0x1a"
+        },
+        {
+          "type": "file",
+          "path": "HI_B.USO",
+          "offset": "0x1b"
+        },
+        {
+          "type": "file",
+          "path": "HI_D.USO",
+          "offset": "0x1c"
+        },
+        {
+          "type": "shell",
+          "path": "usd_98",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "HI_01.USO : アンノン"
+        },
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "HI_02.USO : 年上の女性"
+        },
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "HI_03.USO : バッドモーニング"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "HI_04.USO : 謎々"
+        },
+        {
+          "kind": "title",
+          "code": "0x14",
+          "title": "HI_05.USO : 学園ラビリンス"
+        },
+        {
+          "kind": "title",
+          "code": "0x15",
+          "title": "HI_06.USO : 恋する妖精"
+        },
+        {
+          "kind": "title",
+          "code": "0x16",
+          "title": "HI_07.USO : 突然のニュース"
+        },
+        {
+          "kind": "title",
+          "code": "0x17",
+          "title": "HI_08.USO : 愛愁"
+        },
+        {
+          "kind": "title",
+          "code": "0x18",
+          "title": "HI_09.USO : 解決"
+        },
+        {
+          "kind": "title",
+          "code": "0x19",
+          "title": "HI_10.USO : 別れ＝出会い"
+        },
+        {
+          "kind": "title",
+          "code": "0x1a",
+          "title": "HI_11.USO : 奈保"
+        },
+        {
+          "kind": "title",
+          "code": "0x1b",
+          "title": "HI_B.USO  : SE チャイム"
+        },
+        {
+          "kind": "title",
+          "code": "0x1c",
+          "title": "HI_D.USO  : SE"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/technopolissoft.xml",
+      "source_order": 4550,
+      "archive": "himihana_98",
+      "id": "himihana-98-opn"
+    },
+    {
+      "title": "[X68000] Guerriere Lyewärd",
+      "driver": {
+        "name": "x68k",
+        "type": "generic",
+        "alias": "テクノポリスソフト",
+        "platform": "SHARP X68000"
+      },
+      "options": [
+        {
+          "name": "mfp",
+          "value": "0x01"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "lyw68snd.bin"
+        },
+        {
+          "type": "x",
+          "path": "OPMDRV.X",
+          "offset": "0x010000"
+        },
+        {
+          "type": "code",
+          "path": "JNKMUS.DAT",
+          "offset": "0x030000"
+        },
+        {
+          "type": "x",
+          "path": "LYEWARD.X",
+          "offset": "0x040000"
+        },
+        {
+          "type": "code",
+          "path": "JNKSND.DAT",
+          "offset": "0x06e60e"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "01 : Opening"
+        },
+        {
+          "kind": "title",
+          "code": "0x02",
+          "title": "02 : Scene 1 VS Liz"
+        },
+        {
+          "kind": "title",
+          "code": "0x03",
+          "title": "03 : Boss"
+        },
+        {
+          "kind": "title",
+          "code": "0x04",
+          "title": "04 : Scene 2 VS Queen"
+        },
+        {
+          "kind": "comment",
+          "text": "\n\t\t\t<title code=\"0x05\">05 : Boss</title>\n\t\t\t  "
+        },
+        {
+          "kind": "title",
+          "code": "0x06",
+          "title": "06 : Scene 3 VS 明琳"
+        },
+        {
+          "kind": "comment",
+          "text": "\n\t\t\t<title code=\"0x07\">07 : Boss</title>\n\t\t\t  "
+        },
+        {
+          "kind": "title",
+          "code": "0x08",
+          "title": "08 : Scene 4 VS Ice Devil"
+        },
+        {
+          "kind": "comment",
+          "text": "\n\t\t\t<title code=\"0x09\">09 : Boss</title>\n\t\t\t  "
+        },
+        {
+          "kind": "title",
+          "code": "0x0a",
+          "title": "0A : Scene 5 The Crazy Alien"
+        },
+        {
+          "kind": "title",
+          "code": "0x0b",
+          "title": "0B : Ending"
+        },
+        {
+          "kind": "title",
+          "code": "0x0c",
+          "title": "0C : Game End"
+        },
+        {
+          "kind": "comment",
+          "text": "\t<title code=\"0x0d\">0D : Game End</title> "
+        },
+        {
+          "kind": "title",
+          "code": "0x0e",
+          "title": "0E : Name Entry"
+        },
+        {
+          "kind": "comment",
+          "text": "\t<title code=\"0x0f\">0F : Scene 1</title> "
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/technopolissoft.xml",
+      "source_order": 4551,
+      "archive": "lyeward68snd",
+      "id": "lyeward68snd-generic"
+    },
+    {
+      "title": "[X68000] キミだけに愛を…",
+      "driver": {
+        "name": "x68k",
+        "type": "generic",
+        "alias": "GAMEテクノポリス",
+        "platform": "SHARP X68000"
+      },
+      "options": [
+        {
+          "name": "mfp",
+          "value": "0x01"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "kimidake68snd.bin",
+          "offset": "0x000000"
+        },
+        {
+          "type": "x",
+          "path": "TANK.X",
+          "offset": "0x010000"
+        },
+        {
+          "type": "code",
+          "path": "KIMI.PCD",
+          "offset": "0x050000"
+        },
+        {
+          "type": "code",
+          "path": "KI_01.USO",
+          "offset": "0x090000"
+        },
+        {
+          "type": "code",
+          "path": "KI_02.USO",
+          "offset": "0x095000"
+        },
+        {
+          "type": "code",
+          "path": "KI_03.USO",
+          "offset": "0x09a000"
+        },
+        {
+          "type": "code",
+          "path": "KI_04.USO",
+          "offset": "0x09f000"
+        },
+        {
+          "type": "code",
+          "path": "KI_05.USO",
+          "offset": "0x0a4000"
+        },
+        {
+          "type": "code",
+          "path": "KI_06.USO",
+          "offset": "0x0a9000"
+        },
+        {
+          "type": "code",
+          "path": "KI_07.USO",
+          "offset": "0x0ae000"
+        },
+        {
+          "type": "code",
+          "path": "KI_08.USO",
+          "offset": "0x0b3000"
+        },
+        {
+          "type": "code",
+          "path": "KI_09.USO",
+          "offset": "0x0b8000"
+        },
+        {
+          "type": "code",
+          "path": "KI_10.USO",
+          "offset": "0x0bd000"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "KI_01.USO : 後悔しない"
+        },
+        {
+          "kind": "title",
+          "code": "0x02",
+          "title": "KI_02.USO : いつも、朝に"
+        },
+        {
+          "kind": "title",
+          "code": "0x03",
+          "title": "KI_03.USO : 白夜"
+        },
+        {
+          "kind": "title",
+          "code": "0x04",
+          "title": "KI_04.USO : 予感"
+        },
+        {
+          "kind": "title",
+          "code": "0x05",
+          "title": "KI_05.USO : アン不安"
+        },
+        {
+          "kind": "title",
+          "code": "0x06",
+          "title": "KI_06.USO : 愛すべき乙女"
+        },
+        {
+          "kind": "title",
+          "code": "0x07",
+          "title": "KI_07.USO : 裸／裸／裸"
+        },
+        {
+          "kind": "title",
+          "code": "0x08",
+          "title": "KI_08.USO : 恋愛人"
+        },
+        {
+          "kind": "title",
+          "code": "0x09",
+          "title": "KI_09.USO : サスペンス"
+        },
+        {
+          "kind": "title",
+          "code": "0x0a",
+          "title": "KI_10.USO : 永夢"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/technopolissoft.xml",
+      "source_order": 4552,
+      "archive": "kimidake68snd",
+      "id": "kimidake68snd-generic"
+    },
+    {
+      "title": "[X68000] コンチネンタル",
+      "driver": {
+        "name": "x68k",
+        "type": "generic",
+        "alias": "GAMEテクノポリス",
+        "platform": "SHARP X68000"
+      },
+      "options": [
+        {
+          "name": "mfp",
+          "value": "0x01"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "conti68snd.bin",
+          "offset": "0x000000"
+        },
+        {
+          "type": "x",
+          "path": "TANK.X",
+          "offset": "0x010000"
+        },
+        {
+          "type": "code",
+          "path": "FSE.SE",
+          "offset": "0x040000"
+        },
+        {
+          "type": "code",
+          "path": "CONTINEN.PCD",
+          "offset": "0x042000"
+        },
+        {
+          "type": "code",
+          "path": "FME13.USO",
+          "offset": "0x090000"
+        },
+        {
+          "type": "code",
+          "path": "FME14.USO",
+          "offset": "0x095000"
+        },
+        {
+          "type": "code",
+          "path": "FME15.USO",
+          "offset": "0x09a000"
+        },
+        {
+          "type": "code",
+          "path": "FME16.USO",
+          "offset": "0x09f000"
+        },
+        {
+          "type": "code",
+          "path": "FRPG01.USO",
+          "offset": "0x0a4000"
+        },
+        {
+          "type": "code",
+          "path": "FRPG03.USO",
+          "offset": "0x0a9000"
+        },
+        {
+          "type": "code",
+          "path": "FRPG04.USO",
+          "offset": "0x0ae000"
+        },
+        {
+          "type": "code",
+          "path": "FRPG05.USO",
+          "offset": "0x0b3000"
+        },
+        {
+          "type": "code",
+          "path": "FRPG06.USO",
+          "offset": "0x0b8000"
+        },
+        {
+          "type": "code",
+          "path": "FRPG07.USO",
+          "offset": "0x0bd000"
+        },
+        {
+          "type": "code",
+          "path": "FRPG09.USO",
+          "offset": "0x0c2000"
+        },
+        {
+          "type": "code",
+          "path": "FRPG10.USO",
+          "offset": "0x0c7000"
+        },
+        {
+          "type": "code",
+          "path": "FRPG11.USO",
+          "offset": "0x0cc000"
+        },
+        {
+          "type": "code",
+          "path": "FRPG12.USO",
+          "offset": "0x0d1000"
+        },
+        {
+          "type": "code",
+          "path": "FRPG13.USO",
+          "offset": "0x0d6000"
+        },
+        {
+          "type": "code",
+          "path": "FRPG14A.USO",
+          "offset": "0x0db000"
+        },
+        {
+          "type": "code",
+          "path": "FRPG14B.USO",
+          "offset": "0x0e0000"
+        },
+        {
+          "type": "code",
+          "path": "FRPG15.USO",
+          "offset": "0x0e5000"
+        },
+        {
+          "type": "code",
+          "path": "FRPG16.USO",
+          "offset": "0x0ea000"
+        },
+        {
+          "type": "code",
+          "path": "FRPG17.USO",
+          "offset": "0x0ef000"
+        },
+        {
+          "type": "code",
+          "path": "FRPG18.USO",
+          "offset": "0x0f4000"
+        },
+        {
+          "type": "code",
+          "path": "FRPG18B.USO",
+          "offset": "0x0f9000"
+        },
+        {
+          "type": "code",
+          "path": "FRPG19.USO",
+          "offset": "0x0fe000"
+        },
+        {
+          "type": "code",
+          "path": "FRPG2A.USO",
+          "offset": "0x103000"
+        },
+        {
+          "type": "code",
+          "path": "FRPG2B.USO",
+          "offset": "0x108000"
+        },
+        {
+          "type": "code",
+          "path": "FSE01.USO",
+          "offset": "0x10d000"
+        },
+        {
+          "type": "code",
+          "path": "FSE02.USO",
+          "offset": "0x112000"
+        },
+        {
+          "type": "code",
+          "path": "FSE03.USO",
+          "offset": "0x117000"
+        },
+        {
+          "type": "code",
+          "path": "FSE04.USO",
+          "offset": "0x11c000"
+        },
+        {
+          "type": "code",
+          "path": "FSE05.USO",
+          "offset": "0x121000"
+        },
+        {
+          "type": "code",
+          "path": "FSE06.USO",
+          "offset": "0x126000"
+        },
+        {
+          "type": "code",
+          "path": "FSE07.USO",
+          "offset": "0x12B000"
+        },
+        {
+          "type": "code",
+          "path": "FSE088.USO",
+          "offset": "0x130000"
+        },
+        {
+          "type": "code",
+          "path": "FSE08A.USO",
+          "offset": "0x135000"
+        },
+        {
+          "type": "code",
+          "path": "FSE08B.USO",
+          "offset": "0x13A000"
+        },
+        {
+          "type": "code",
+          "path": "FSE10.USO",
+          "offset": "0x13F000"
+        },
+        {
+          "type": "code",
+          "path": "FSE11.USO",
+          "offset": "0x144000"
+        },
+        {
+          "type": "code",
+          "path": "FSE12.USO",
+          "offset": "0x149000"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "FME13.USO"
+        },
+        {
+          "kind": "title",
+          "code": "0x02",
+          "title": "FME14.USO"
+        },
+        {
+          "kind": "title",
+          "code": "0x03",
+          "title": "FME15.USO"
+        },
+        {
+          "kind": "title",
+          "code": "0x04",
+          "title": "FME16.USO"
+        },
+        {
+          "kind": "title",
+          "code": "0x05",
+          "title": "FRPG01.USO"
+        },
+        {
+          "kind": "title",
+          "code": "0x06",
+          "title": "FRPG03.USO"
+        },
+        {
+          "kind": "title",
+          "code": "0x07",
+          "title": "FRPG04.USO"
+        },
+        {
+          "kind": "title",
+          "code": "0x08",
+          "title": "FRPG05.USO"
+        },
+        {
+          "kind": "title",
+          "code": "0x09",
+          "title": "FRPG06.USO"
+        },
+        {
+          "kind": "title",
+          "code": "0x0a",
+          "title": "FRPG07.USO"
+        },
+        {
+          "kind": "title",
+          "code": "0x0b",
+          "title": "FRPG09.USO"
+        },
+        {
+          "kind": "title",
+          "code": "0x0c",
+          "title": "FRPG10.USO"
+        },
+        {
+          "kind": "title",
+          "code": "0x0d",
+          "title": "FRPG11.USO"
+        },
+        {
+          "kind": "title",
+          "code": "0x0e",
+          "title": "FRPG12.USO"
+        },
+        {
+          "kind": "title",
+          "code": "0x0f",
+          "title": "FRPG13.USO"
+        },
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "FRPG14A.USO"
+        },
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "FRPG14B.USO"
+        },
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "FRPG15.USO"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "FRPG16.USO"
+        },
+        {
+          "kind": "title",
+          "code": "0x14",
+          "title": "FRPG17.USO"
+        },
+        {
+          "kind": "title",
+          "code": "0x15",
+          "title": "FRPG18.USO"
+        },
+        {
+          "kind": "title",
+          "code": "0x16",
+          "title": "FRPG18B.USO"
+        },
+        {
+          "kind": "title",
+          "code": "0x17",
+          "title": "FRPG19.USO"
+        },
+        {
+          "kind": "title",
+          "code": "0x18",
+          "title": "FRPG2A.USO"
+        },
+        {
+          "kind": "title",
+          "code": "0x19",
+          "title": "FRPG2B.USO"
+        },
+        {
+          "kind": "title",
+          "code": "0x1a",
+          "title": "FSE01.USO"
+        },
+        {
+          "kind": "title",
+          "code": "0x1b",
+          "title": "FSE02.USO"
+        },
+        {
+          "kind": "title",
+          "code": "0x1c",
+          "title": "FSE03.USO"
+        },
+        {
+          "kind": "title",
+          "code": "0x1d",
+          "title": "FSE04.USO"
+        },
+        {
+          "kind": "title",
+          "code": "0x1e",
+          "title": "FSE05.USO"
+        },
+        {
+          "kind": "title",
+          "code": "0x1f",
+          "title": "FSE06.USO"
+        },
+        {
+          "kind": "title",
+          "code": "0x20",
+          "title": "FSE07.USO"
+        },
+        {
+          "kind": "title",
+          "code": "0x21",
+          "title": "FSE088.USO"
+        },
+        {
+          "kind": "title",
+          "code": "0x22",
+          "title": "FSE08A.USO"
+        },
+        {
+          "kind": "title",
+          "code": "0x23",
+          "title": "FSE08B.USO"
+        },
+        {
+          "kind": "title",
+          "code": "0x24",
+          "title": "FSE10.USO"
+        },
+        {
+          "kind": "title",
+          "code": "0x25",
+          "title": "FSE11.USO"
+        },
+        {
+          "kind": "title",
+          "code": "0x26",
+          "title": "FSE12.USO"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/technopolissoft.xml",
+      "source_order": 4553,
+      "archive": "conti68snd",
+      "id": "conti68snd-generic"
+    },
+    {
+      "title": "[X68000] テセラ キミは汚れた天使か聖なる魔女か!?",
+      "driver": {
+        "name": "x68k",
+        "type": "generic",
+        "alias": "GAMEテクノポリス",
+        "platform": "SHARP X68000"
+      },
+      "options": [
+        {
+          "name": "mfp",
+          "value": "0x01"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "tecera68snd.bin",
+          "offset": "0x000000"
+        },
+        {
+          "type": "x",
+          "path": "TANK.X",
+          "offset": "0x010000"
+        },
+        {
+          "type": "code",
+          "path": "TEC_SE.SE",
+          "offset": "0x04f000"
+        },
+        {
+          "type": "code",
+          "path": "IV.PCD",
+          "offset": "0x050000"
+        },
+        {
+          "type": "code",
+          "path": "BADEND.USO",
+          "offset": "0x090000"
+        },
+        {
+          "type": "code",
+          "path": "ENA.USO",
+          "offset": "0x095000"
+        },
+        {
+          "type": "code",
+          "path": "ENDING.USO",
+          "offset": "0x09a000"
+        },
+        {
+          "type": "code",
+          "path": "KICHIJOJ.USO",
+          "offset": "0x09f000"
+        },
+        {
+          "type": "code",
+          "path": "KIKEN.USO",
+          "offset": "0x0a4000"
+        },
+        {
+          "type": "code",
+          "path": "MUSUME.USO",
+          "offset": "0x0a9000"
+        },
+        {
+          "type": "code",
+          "path": "OPENING.USO",
+          "offset": "0x0ae000"
+        },
+        {
+          "type": "code",
+          "path": "SHINSEI.USO",
+          "offset": "0x0b3000"
+        },
+        {
+          "type": "code",
+          "path": "SHOUJO.USO",
+          "offset": "0x0b8000"
+        },
+        {
+          "type": "code",
+          "path": "TESERA.USO",
+          "offset": "0x0bd000"
+        },
+        {
+          "type": "code",
+          "path": "UMI.USO",
+          "offset": "0x0c2000"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x07",
+          "title": "OPENING.USO  : Ⅳ・オープニング"
+        },
+        {
+          "kind": "title",
+          "code": "0x02",
+          "title": "ENA.USO      : エナ"
+        },
+        {
+          "kind": "title",
+          "code": "0x09",
+          "title": "SHOUJO.USO   : 少女"
+        },
+        {
+          "kind": "title",
+          "code": "0x04",
+          "title": "KICHIJOJ.USO : 吉祥寺クエスト"
+        },
+        {
+          "kind": "title",
+          "code": "0x06",
+          "title": "MUSUME.USO   : 娘たち"
+        },
+        {
+          "kind": "title",
+          "code": "0x05",
+          "title": "KIKEN.USO    : 危険な乙女"
+        },
+        {
+          "kind": "title",
+          "code": "0x0a",
+          "title": "TESERA.USO   : テセラ"
+        },
+        {
+          "kind": "title",
+          "code": "0x0b",
+          "title": "UMI.USO      : 海"
+        },
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "BADEND.USO   : BAD・END"
+        },
+        {
+          "kind": "title",
+          "code": "0x08",
+          "title": "SHINSEI.USO  : 新生"
+        },
+        {
+          "kind": "title",
+          "code": "0x03",
+          "title": "ENDING.USO   : エンディング"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/technopolissoft.xml",
+      "source_order": 4554,
+      "archive": "tecera68snd",
+      "id": "tecera68snd-generic"
+    },
+    {
+      "title": "[X68000] ドラゴンアイズ",
+      "driver": {
+        "name": "x68k",
+        "type": "generic",
+        "alias": "GAMEテクノポリス",
+        "platform": "SHARP X68000"
+      },
+      "options": [
+        {
+          "name": "mfp",
+          "value": "0x01"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "drageye68snd.bin",
+          "offset": "0x000000"
+        },
+        {
+          "type": "x",
+          "path": "tank.x",
+          "offset": "0x010000"
+        },
+        {
+          "type": "code",
+          "path": "CITY.PCD",
+          "offset": "0x01fb90"
+        },
+        {
+          "type": "code",
+          "path": "AWA_A.USO",
+          "offset": "0x090000"
+        },
+        {
+          "type": "code",
+          "path": "AWA_B.USO",
+          "offset": "0x095000"
+        },
+        {
+          "type": "code",
+          "path": "BARA7.USO",
+          "offset": "0x09a000"
+        },
+        {
+          "type": "code",
+          "path": "DC_SIZ.USO",
+          "offset": "0x09f000"
+        },
+        {
+          "type": "code",
+          "path": "D_SH.USO",
+          "offset": "0x0a4000"
+        },
+        {
+          "type": "code",
+          "path": "END.USO",
+          "offset": "0x0a9000"
+        },
+        {
+          "type": "code",
+          "path": "FAMI.USO",
+          "offset": "0x0ae000"
+        },
+        {
+          "type": "code",
+          "path": "HAPPY.USO",
+          "offset": "0x0b3000"
+        },
+        {
+          "type": "code",
+          "path": "KURA3.USO",
+          "offset": "0x0b8000"
+        },
+        {
+          "type": "code",
+          "path": "NIGE.USO",
+          "offset": "0x0bd000"
+        },
+        {
+          "type": "code",
+          "path": "NIKE.USO",
+          "offset": "0x0c2000"
+        },
+        {
+          "type": "code",
+          "path": "NOS.USO",
+          "offset": "0x0c7000"
+        },
+        {
+          "type": "code",
+          "path": "PARTY.USO",
+          "offset": "0x0cc000"
+        },
+        {
+          "type": "code",
+          "path": "PINK.USO",
+          "offset": "0x0d1000"
+        },
+        {
+          "type": "code",
+          "path": "PROG.USO",
+          "offset": "0x0d6000"
+        },
+        {
+          "type": "code",
+          "path": "SAD.USO",
+          "offset": "0x0db000"
+        },
+        {
+          "type": "code",
+          "path": "SE.USO",
+          "offset": "0x0e0000"
+        },
+        {
+          "type": "code",
+          "path": "SIRO_C.USO",
+          "offset": "0x0e5000"
+        },
+        {
+          "type": "code",
+          "path": "SPACE.USO",
+          "offset": "0x0ea000"
+        },
+        {
+          "type": "code",
+          "path": "YA6.USO",
+          "offset": "0x0ef000"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "AWA_A.USO  : 回想"
+        },
+        {
+          "kind": "title",
+          "code": "0x07",
+          "title": "FAMI.USO   : '球'たち"
+        },
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "SE.USO     : コスモス"
+        },
+        {
+          "kind": "title",
+          "code": "0x14",
+          "title": "YA6.USO    : ミウィ"
+        },
+        {
+          "kind": "title",
+          "code": "0x04",
+          "title": "DC_SIZ.USO : ガールドリア"
+        },
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "SIRO_C.USO : 少女たち"
+        },
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "SAD.USO    : 先見師"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "SPACE.USO  : ロゴナ"
+        },
+        {
+          "kind": "title",
+          "code": "0x0d",
+          "title": "PARTY.USO  : 想人の星"
+        },
+        {
+          "kind": "title",
+          "code": "0x09",
+          "title": "KURA3.USO  : 哀する星々"
+        },
+        {
+          "kind": "title",
+          "code": "0x0f",
+          "title": "PROG.USO   : 渡り星"
+        },
+        {
+          "kind": "title",
+          "code": "0x08",
+          "title": "HAPPY.USO  : ぴんく・ぴんく!"
+        },
+        {
+          "kind": "title",
+          "code": "0x0b",
+          "title": "NIKE.USO   : 聖地"
+        },
+        {
+          "kind": "title",
+          "code": "0x0a",
+          "title": "NIGE.USO   : 戦星"
+        },
+        {
+          "kind": "title",
+          "code": "0x03",
+          "title": "BARA7.USO  : 別離"
+        },
+        {
+          "kind": "title",
+          "code": "0x0c",
+          "title": "NOS.USO    : 事起"
+        },
+        {
+          "kind": "title",
+          "code": "0x05",
+          "title": "D_SH.USO   : 行きづまりの捷利"
+        },
+        {
+          "kind": "title",
+          "code": "0x0e",
+          "title": "PINK.USO   : ドラゴンアイズ"
+        },
+        {
+          "kind": "title",
+          "code": "0x06",
+          "title": "END.USO    : 再会"
+        },
+        {
+          "kind": "title",
+          "code": "0x02",
+          "title": "AWA_B.USO  : アイネス"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/technopolissoft.xml",
+      "source_order": 4555,
+      "archive": "drageye68snd",
+      "id": "drageye68snd-generic"
+    },
+    {
+      "title": "[X68000] 秘密の花園",
+      "driver": {
+        "name": "x68k",
+        "type": "generic",
+        "alias": "GAMEテクノポリス",
+        "platform": "SHARP X68000"
+      },
+      "options": [
+        {
+          "name": "mfp",
+          "value": "0x01"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "himihana68snd.bin",
+          "offset": "0x000000"
+        },
+        {
+          "type": "x",
+          "path": "TANK.X",
+          "offset": "0x010000"
+        },
+        {
+          "type": "code",
+          "path": "HIMITU.SE",
+          "offset": "0x04f000"
+        },
+        {
+          "type": "code",
+          "path": "CITY.PCD",
+          "offset": "0x050000"
+        },
+        {
+          "type": "code",
+          "path": "HI_01.USO",
+          "offset": "0x090000"
+        },
+        {
+          "type": "code",
+          "path": "HI_02.USO",
+          "offset": "0x095000"
+        },
+        {
+          "type": "code",
+          "path": "HI_03.USO",
+          "offset": "0x09a000"
+        },
+        {
+          "type": "code",
+          "path": "HI_04.USO",
+          "offset": "0x09f000"
+        },
+        {
+          "type": "code",
+          "path": "HI_05.USO",
+          "offset": "0x0a4000"
+        },
+        {
+          "type": "code",
+          "path": "HI_06.USO",
+          "offset": "0x0a9000"
+        },
+        {
+          "type": "code",
+          "path": "HI_07.USO",
+          "offset": "0x0ae000"
+        },
+        {
+          "type": "code",
+          "path": "HI_08.USO",
+          "offset": "0x0b3000"
+        },
+        {
+          "type": "code",
+          "path": "HI_09.USO",
+          "offset": "0x0b8000"
+        },
+        {
+          "type": "code",
+          "path": "HI_10.USO",
+          "offset": "0x0bd000"
+        },
+        {
+          "type": "code",
+          "path": "HI_11.USO",
+          "offset": "0x0c2000"
+        },
+        {
+          "type": "code",
+          "path": "HI_B.USO",
+          "offset": "0x0c7000"
+        },
+        {
+          "type": "code",
+          "path": "HI_D.USO",
+          "offset": "0x0cc000"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "HI_01.USO : アンノン"
+        },
+        {
+          "kind": "title",
+          "code": "0x02",
+          "title": "HI_02.USO : 年上の女性"
+        },
+        {
+          "kind": "title",
+          "code": "0x03",
+          "title": "HI_03.USO : バッドモーニング"
+        },
+        {
+          "kind": "title",
+          "code": "0x04",
+          "title": "HI_04.USO : 謎々"
+        },
+        {
+          "kind": "title",
+          "code": "0x05",
+          "title": "HI_05.USO : 学園ラビリンス"
+        },
+        {
+          "kind": "title",
+          "code": "0x06",
+          "title": "HI_06.USO : 恋する妖精"
+        },
+        {
+          "kind": "title",
+          "code": "0x07",
+          "title": "HI_07.USO : 突然のニュース"
+        },
+        {
+          "kind": "title",
+          "code": "0x08",
+          "title": "HI_08.USO : 愛愁"
+        },
+        {
+          "kind": "title",
+          "code": "0x09",
+          "title": "HI_09.USO : 解決"
+        },
+        {
+          "kind": "title",
+          "code": "0x0a",
+          "title": "HI_10.USO : 別れ＝出会い"
+        },
+        {
+          "kind": "title",
+          "code": "0x0b",
+          "title": "HI_11.USO : 奈保"
+        },
+        {
+          "kind": "title",
+          "code": "0x0c",
+          "title": "HI_B.USO  : SE チャイム"
+        },
+        {
+          "kind": "title",
+          "code": "0x0d",
+          "title": "HI_D.USO  : SE"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/technopolissoft.xml",
+      "source_order": 4556,
+      "archive": "himihana68snd",
+      "id": "himihana68snd-generic"
+    },
+    {
+      "title": "[MSX] Shenan Dragon",
+      "driver": {
+        "name": "msx",
+        "type": "generic",
+        "alias": "テクノポリスソフト",
+        "platform": "MSX"
+      },
+      "options": [
+        {
+          "name": "mdata_addr",
+          "value": "0xa000"
+        },
+        {
+          "name": "mdata_size",
+          "value": "0xb00"
+        },
+        {
+          "name": "mfile_size",
+          "value": "0xb00"
+        },
+        {
+          "name": "init_pc",
+          "value": "0x400"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "patch",
+          "offset": "0x0400"
+        },
+        {
+          "type": "code",
+          "path": "MUX.COM",
+          "offset": "0x9000"
+        },
+        {
+          "type": "code",
+          "path": "EFFECT.COM",
+          "offset": "0x9c00"
+        },
+        {
+          "type": "bgm",
+          "path": "EMUS.COM",
+          "offset": "0x00"
+        },
+        {
+          "type": "bgm",
+          "path": "GMUS.COM",
+          "offset": "0x01"
+        },
+        {
+          "type": "bgm",
+          "path": "OMUS.COM",
+          "offset": "0x02"
+        },
+        {
+          "type": "bgm",
+          "path": "TMUS.COM",
+          "offset": "0x03"
+        },
+        {
+          "type": "bgm",
+          "path": "VMUS.COM",
+          "offset": "0x04"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x0000",
+          "title": "EMUS.COM : 00 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x0100",
+          "title": "EMUS.COM : 01 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x0200",
+          "title": "EMUS.COM : 02 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x0300",
+          "title": "EMUS.COM : 03 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x0001",
+          "title": "GMUS.COM : 00 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x0101",
+          "title": "GMUS.COM : 01 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x0201",
+          "title": "GMUS.COM : 02 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x0301",
+          "title": "GMUS.COM : 03 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x0002",
+          "title": "OMUS.COM : 00 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x0102",
+          "title": "OMUS.COM : 01 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x0202",
+          "title": "OMUS.COM : 02 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x0302",
+          "title": "OMUS.COM : 03 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x0003",
+          "title": "TMUS.COM : 00 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x0103",
+          "title": "TMUS.COM : 01 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x0203",
+          "title": "TMUS.COM : 02 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x0303",
+          "title": "TMUS.COM : 03 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x0004",
+          "title": "VMUS.COM : 00 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x0104",
+          "title": "VMUS.COM : 01 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x0204",
+          "title": "VMUS.COM : 02 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x0304",
+          "title": "VMUS.COM : 03 :"
+        },
+        {
+          "kind": "range",
+          "min": "0xff01",
+          "max": "0xff08",
+          "title_format": "SE       : %02x :",
+          "extcode": "0"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/technopolissoft.xml",
+      "source_order": 4557,
+      "archive": "sdragn_msx",
+      "id": "sdragn-msx-generic"
+    },
+    {
+      "title": "[MSX] キミだけに愛を…",
+      "driver": {
+        "name": "msx",
+        "type": "generic",
+        "alias": "GAMEテクノポリス",
+        "platform": "MSX"
+      },
+      "options": [
+        {
+          "name": "mdata_addr",
+          "value": "0x9000"
+        },
+        {
+          "name": "mdata_size",
+          "value": "0x1000"
+        },
+        {
+          "name": "mfile_size",
+          "value": "0x1000"
+        },
+        {
+          "name": "init_pc",
+          "value": "0x0400"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "patch",
+          "offset": "0x0400"
+        },
+        {
+          "type": "code",
+          "path": "IMSX.COM",
+          "offset": "0x8000"
+        },
+        {
+          "type": "bgm",
+          "path": "KI_01.M",
+          "offset": "0x00"
+        },
+        {
+          "type": "bgm",
+          "path": "KI_02.M",
+          "offset": "0x01"
+        },
+        {
+          "type": "bgm",
+          "path": "KI_03.M",
+          "offset": "0x02"
+        },
+        {
+          "type": "bgm",
+          "path": "KI_04.M",
+          "offset": "0x03"
+        },
+        {
+          "type": "bgm",
+          "path": "KI_05.M",
+          "offset": "0x04"
+        },
+        {
+          "type": "bgm",
+          "path": "KI_06.M",
+          "offset": "0x05"
+        },
+        {
+          "type": "bgm",
+          "path": "KI_07.M",
+          "offset": "0x06"
+        },
+        {
+          "type": "bgm",
+          "path": "KI_08.M",
+          "offset": "0x07"
+        },
+        {
+          "type": "bgm",
+          "path": "KI_09.M",
+          "offset": "0x08"
+        },
+        {
+          "type": "bgm",
+          "path": "KI_10.M",
+          "offset": "0x09"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x00",
+          "title": "KI_01.M : 後悔しない"
+        },
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "KI_02.M : いつも、朝に"
+        },
+        {
+          "kind": "title",
+          "code": "0x02",
+          "title": "KI_03.M : 白夜"
+        },
+        {
+          "kind": "title",
+          "code": "0x03",
+          "title": "KI_04.M : 予感"
+        },
+        {
+          "kind": "title",
+          "code": "0x04",
+          "title": "KI_05.M : アン不安"
+        },
+        {
+          "kind": "title",
+          "code": "0x05",
+          "title": "KI_06.M : 愛すべき乙女"
+        },
+        {
+          "kind": "title",
+          "code": "0x06",
+          "title": "KI_07.M : 裸／裸／裸"
+        },
+        {
+          "kind": "title",
+          "code": "0x07",
+          "title": "KI_08.M : 恋愛人"
+        },
+        {
+          "kind": "title",
+          "code": "0x08",
+          "title": "KI_09.M : サスペンス"
+        },
+        {
+          "kind": "title",
+          "code": "0x09",
+          "title": "KI_10.M : 永夢"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/technopolissoft.xml",
+      "source_order": 4558,
+      "archive": "kimidake_msx",
+      "id": "kimidake-msx-generic"
+    },
+    {
+      "title": "[MSX] コンチネンタル",
+      "driver": {
+        "name": "msx",
+        "type": "generic",
+        "alias": "GAMEテクノポリス",
+        "platform": "MSX"
+      },
+      "options": [
+        {
+          "name": "mdata_addr",
+          "value": "0x9000"
+        },
+        {
+          "name": "mdata_size",
+          "value": "0x1000"
+        },
+        {
+          "name": "mfile_size",
+          "value": "0x1000"
+        },
+        {
+          "name": "init_pc",
+          "value": "0x0400"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "patch",
+          "offset": "0x0400"
+        },
+        {
+          "type": "code",
+          "path": "IMSX.COM",
+          "offset": "0x8000"
+        },
+        {
+          "type": "bgm",
+          "path": "FME13.M",
+          "offset": "0x00"
+        },
+        {
+          "type": "bgm",
+          "path": "FME14.M",
+          "offset": "0x01"
+        },
+        {
+          "type": "bgm",
+          "path": "FME15.M",
+          "offset": "0x02"
+        },
+        {
+          "type": "bgm",
+          "path": "FME16.M",
+          "offset": "0x03"
+        },
+        {
+          "type": "bgm",
+          "path": "FRPG01.M",
+          "offset": "0x04"
+        },
+        {
+          "type": "bgm",
+          "path": "FRPG03.M",
+          "offset": "0x05"
+        },
+        {
+          "type": "bgm",
+          "path": "FRPG04.M",
+          "offset": "0x06"
+        },
+        {
+          "type": "bgm",
+          "path": "FRPG05.M",
+          "offset": "0x07"
+        },
+        {
+          "type": "bgm",
+          "path": "FRPG06.M",
+          "offset": "0x08"
+        },
+        {
+          "type": "bgm",
+          "path": "FRPG07.M",
+          "offset": "0x09"
+        },
+        {
+          "type": "bgm",
+          "path": "FRPG09.M",
+          "offset": "0x0a"
+        },
+        {
+          "type": "bgm",
+          "path": "FRPG10.M",
+          "offset": "0x0b"
+        },
+        {
+          "type": "bgm",
+          "path": "FRPG11.M",
+          "offset": "0x0c"
+        },
+        {
+          "type": "bgm",
+          "path": "FRPG12.M",
+          "offset": "0x0d"
+        },
+        {
+          "type": "bgm",
+          "path": "FRPG13.M",
+          "offset": "0x0e"
+        },
+        {
+          "type": "bgm",
+          "path": "FRPG15.M",
+          "offset": "0x0f"
+        },
+        {
+          "type": "bgm",
+          "path": "FRPG16.M",
+          "offset": "0x10"
+        },
+        {
+          "type": "bgm",
+          "path": "FRPG17.M",
+          "offset": "0x11"
+        },
+        {
+          "type": "bgm",
+          "path": "FRPG19.M",
+          "offset": "0x12"
+        },
+        {
+          "type": "bgm",
+          "path": "FRPG2A.M",
+          "offset": "0x13"
+        },
+        {
+          "type": "bgm",
+          "path": "FRPG2B.M",
+          "offset": "0x14"
+        },
+        {
+          "type": "bgm",
+          "path": "FSE088.M",
+          "offset": "0x15"
+        },
+        {
+          "type": "bgm",
+          "path": "RPG14A.M",
+          "offset": "0x16"
+        },
+        {
+          "type": "bgm",
+          "path": "RPG14B.M",
+          "offset": "0x17"
+        },
+        {
+          "type": "bgm",
+          "path": "RPG18A.M",
+          "offset": "0x18"
+        },
+        {
+          "type": "bgm",
+          "path": "RPG18B.M",
+          "offset": "0x19"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x00",
+          "title": "FME13.M  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "FME14.M  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x02",
+          "title": "FME15.M  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x03",
+          "title": "FME16.M  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x04",
+          "title": "FRPG01.M :"
+        },
+        {
+          "kind": "title",
+          "code": "0x05",
+          "title": "FRPG03.M :"
+        },
+        {
+          "kind": "title",
+          "code": "0x06",
+          "title": "FRPG04.M :"
+        },
+        {
+          "kind": "title",
+          "code": "0x07",
+          "title": "FRPG05.M :"
+        },
+        {
+          "kind": "title",
+          "code": "0x08",
+          "title": "FRPG06.M :"
+        },
+        {
+          "kind": "title",
+          "code": "0x09",
+          "title": "FRPG07.M :"
+        },
+        {
+          "kind": "title",
+          "code": "0x0a",
+          "title": "FRPG09.M :"
+        },
+        {
+          "kind": "title",
+          "code": "0x0b",
+          "title": "FRPG10.M :"
+        },
+        {
+          "kind": "title",
+          "code": "0x0c",
+          "title": "FRPG11.M :"
+        },
+        {
+          "kind": "title",
+          "code": "0x0d",
+          "title": "FRPG12.M :"
+        },
+        {
+          "kind": "title",
+          "code": "0x0e",
+          "title": "FRPG13.M :"
+        },
+        {
+          "kind": "title",
+          "code": "0x0f",
+          "title": "FRPG15.M :"
+        },
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "FRPG16.M :"
+        },
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "FRPG17.M :"
+        },
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "FRPG19.M :"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "FRPG2A.M :"
+        },
+        {
+          "kind": "title",
+          "code": "0x14",
+          "title": "FRPG2B.M :"
+        },
+        {
+          "kind": "title",
+          "code": "0x15",
+          "title": "FSE088.M :"
+        },
+        {
+          "kind": "title",
+          "code": "0x16",
+          "title": "RPG14A.M :"
+        },
+        {
+          "kind": "title",
+          "code": "0x17",
+          "title": "RPG14B.M :"
+        },
+        {
+          "kind": "title",
+          "code": "0x18",
+          "title": "RPG18A.M :"
+        },
+        {
+          "kind": "title",
+          "code": "0x19",
+          "title": "RPG18B.M :"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/technopolissoft.xml",
+      "source_order": 4559,
+      "archive": "conti_msx",
+      "id": "conti-msx-generic"
+    },
+    {
+      "title": "[MSX] ドラゴンアイズ",
+      "driver": {
+        "name": "msx",
+        "type": "generic",
+        "alias": "GAMEテクノポリス",
+        "platform": "MSX"
+      },
+      "options": [
+        {
+          "name": "mdata_addr",
+          "value": "0x9000"
+        },
+        {
+          "name": "mdata_size",
+          "value": "0x1000"
+        },
+        {
+          "name": "mfile_size",
+          "value": "0x1000"
+        },
+        {
+          "name": "init_pc",
+          "value": "0x0400"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "patch",
+          "offset": "0x0400"
+        },
+        {
+          "type": "code",
+          "path": "EYEMSX.COM",
+          "offset": "0x8000"
+        },
+        {
+          "type": "bgm",
+          "path": "AWA.M",
+          "offset": "0x00"
+        },
+        {
+          "type": "bgm",
+          "path": "BARA7.M",
+          "offset": "0x01"
+        },
+        {
+          "type": "bgm",
+          "path": "D_SH.M",
+          "offset": "0x02"
+        },
+        {
+          "type": "bgm",
+          "path": "DC_SIZ.M",
+          "offset": "0x03"
+        },
+        {
+          "type": "bgm",
+          "path": "END.M",
+          "offset": "0x04"
+        },
+        {
+          "type": "bgm",
+          "path": "FAMI.M",
+          "offset": "0x05"
+        },
+        {
+          "type": "bgm",
+          "path": "HAPPY.M",
+          "offset": "0x06"
+        },
+        {
+          "type": "bgm",
+          "path": "KURA3.M",
+          "offset": "0x07"
+        },
+        {
+          "type": "bgm",
+          "path": "NIGE.M",
+          "offset": "0x08"
+        },
+        {
+          "type": "bgm",
+          "path": "NIKE.M",
+          "offset": "0x09"
+        },
+        {
+          "type": "bgm",
+          "path": "NOS.M",
+          "offset": "0x0a"
+        },
+        {
+          "type": "bgm",
+          "path": "PARTY.M",
+          "offset": "0x0b"
+        },
+        {
+          "type": "bgm",
+          "path": "PINK.M",
+          "offset": "0x0c"
+        },
+        {
+          "type": "bgm",
+          "path": "PROG.M",
+          "offset": "0x0d"
+        },
+        {
+          "type": "bgm",
+          "path": "SAD.M",
+          "offset": "0x0e"
+        },
+        {
+          "type": "bgm",
+          "path": "SE.M",
+          "offset": "0x0f"
+        },
+        {
+          "type": "bgm",
+          "path": "SIRO.M",
+          "offset": "0x10"
+        },
+        {
+          "type": "bgm",
+          "path": "SPACE.M",
+          "offset": "0x11"
+        },
+        {
+          "type": "bgm",
+          "path": "YA6.M",
+          "offset": "0x12"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x00",
+          "title": "AWA.M    : 回想"
+        },
+        {
+          "kind": "title",
+          "code": "0x05",
+          "title": "FAMI.M   : '球'たち"
+        },
+        {
+          "kind": "title",
+          "code": "0x0f",
+          "title": "SE.M     : コスモス"
+        },
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "YA6.M    : ミウィ"
+        },
+        {
+          "kind": "title",
+          "code": "0x03",
+          "title": "DC_SIZ.M : ガールドリア"
+        },
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "SIRO.M   : 少女たち"
+        },
+        {
+          "kind": "title",
+          "code": "0x0e",
+          "title": "SAD.M    : 先見師"
+        },
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "SPACE.M  : ロゴナ"
+        },
+        {
+          "kind": "title",
+          "code": "0x0b",
+          "title": "PARTY.M  : 想人の星"
+        },
+        {
+          "kind": "title",
+          "code": "0x07",
+          "title": "KURA3.M  : 哀する星々"
+        },
+        {
+          "kind": "title",
+          "code": "0x0d",
+          "title": "PROG.M   : 渡り星"
+        },
+        {
+          "kind": "title",
+          "code": "0x06",
+          "title": "HAPPY.M  : ぴんく・ぴんく!"
+        },
+        {
+          "kind": "title",
+          "code": "0x09",
+          "title": "NIKE.M   : 聖地"
+        },
+        {
+          "kind": "title",
+          "code": "0x08",
+          "title": "NIGE.M   : 戦星"
+        },
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "BARA7.M  : 別離"
+        },
+        {
+          "kind": "title",
+          "code": "0x0a",
+          "title": "NOS.M    : 事起"
+        },
+        {
+          "kind": "title",
+          "code": "0x02",
+          "title": "D_SH.M   : 行きづまりの捷利"
+        },
+        {
+          "kind": "title",
+          "code": "0x0c",
+          "title": "PINK.M   : ドラゴンアイズ"
+        },
+        {
+          "kind": "title",
+          "code": "0x04",
+          "title": "END.M    : 再会"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/technopolissoft.xml",
+      "source_order": 4560,
+      "archive": "drageye_msx",
+      "id": "drageye-msx-generic"
+    },
+    {
+      "title": "[MSX] 秘密の花園",
+      "driver": {
+        "name": "msx",
+        "type": "generic",
+        "alias": "GAMEテクノポリス",
+        "platform": "MSX"
+      },
+      "options": [
+        {
+          "name": "mdata_addr",
+          "value": "0x9000"
+        },
+        {
+          "name": "mdata_size",
+          "value": "0x1000"
+        },
+        {
+          "name": "mfile_size",
+          "value": "0x1000"
+        },
+        {
+          "name": "init_pc",
+          "value": "0x0400"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "patch",
+          "offset": "0x0400"
+        },
+        {
+          "type": "code",
+          "path": "IMSX.COM",
+          "offset": "0x8000"
+        },
+        {
+          "type": "bgm",
+          "path": "HI_01.M",
+          "offset": "0x00"
+        },
+        {
+          "type": "bgm",
+          "path": "HI_02.M",
+          "offset": "0x01"
+        },
+        {
+          "type": "bgm",
+          "path": "HI_03.M",
+          "offset": "0x02"
+        },
+        {
+          "type": "bgm",
+          "path": "HI_04.M",
+          "offset": "0x03"
+        },
+        {
+          "type": "bgm",
+          "path": "HI_05.M",
+          "offset": "0x04"
+        },
+        {
+          "type": "bgm",
+          "path": "HI_06.M",
+          "offset": "0x05"
+        },
+        {
+          "type": "bgm",
+          "path": "HI_07.M",
+          "offset": "0x06"
+        },
+        {
+          "type": "bgm",
+          "path": "HI_08.M",
+          "offset": "0x07"
+        },
+        {
+          "type": "bgm",
+          "path": "HI_09.M",
+          "offset": "0x08"
+        },
+        {
+          "type": "bgm",
+          "path": "HI_10.M",
+          "offset": "0x09"
+        },
+        {
+          "type": "bgm",
+          "path": "HI_11.M",
+          "offset": "0x0a"
+        },
+        {
+          "type": "bgm",
+          "path": "HI_A.M",
+          "offset": "0x0b"
+        },
+        {
+          "type": "bgm",
+          "path": "HI_B.M",
+          "offset": "0x0c"
+        },
+        {
+          "type": "bgm",
+          "path": "HI_C.M",
+          "offset": "0x0d"
+        },
+        {
+          "type": "bgm",
+          "path": "HI_D.M",
+          "offset": "0x0e"
+        },
+        {
+          "type": "bgm",
+          "path": "HI_E.M",
+          "offset": "0x0f"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x00",
+          "title": "HI_01.M : アンノン"
+        },
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "HI_02.M : 年上の女性"
+        },
+        {
+          "kind": "title",
+          "code": "0x02",
+          "title": "HI_03.M : バッドモーニング"
+        },
+        {
+          "kind": "title",
+          "code": "0x03",
+          "title": "HI_04.M : 謎々"
+        },
+        {
+          "kind": "title",
+          "code": "0x04",
+          "title": "HI_05.M : 学園ラビリンス"
+        },
+        {
+          "kind": "title",
+          "code": "0x05",
+          "title": "HI_06.M : 恋する妖精"
+        },
+        {
+          "kind": "title",
+          "code": "0x06",
+          "title": "HI_07.M : 突然のニュース"
+        },
+        {
+          "kind": "title",
+          "code": "0x07",
+          "title": "HI_08.M : 愛愁"
+        },
+        {
+          "kind": "title",
+          "code": "0x08",
+          "title": "HI_09.M : 解決"
+        },
+        {
+          "kind": "title",
+          "code": "0x09",
+          "title": "HI_10.M : 別れ＝出会い"
+        },
+        {
+          "kind": "title",
+          "code": "0x0a",
+          "title": "HI_11.M : 奈保"
+        },
+        {
+          "kind": "title",
+          "code": "0x0b",
+          "title": "HI_A.M  : SE 目覚まし"
+        },
+        {
+          "kind": "title",
+          "code": "0x0c",
+          "title": "HI_B.M  : SE チャイム"
+        },
+        {
+          "kind": "title",
+          "code": "0x0d",
+          "title": "HI_C.M  : SE チャイム"
+        },
+        {
+          "kind": "title",
+          "code": "0x0e",
+          "title": "HI_D.M  : SE"
+        },
+        {
+          "kind": "title",
+          "code": "0x0f",
+          "title": "HI_E.M  : SE 電話"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/technopolissoft.xml",
+      "source_order": 4561,
+      "archive": "himihana_msx",
+      "id": "himihana-msx-generic"
+    },
+    {
+      "title": "[MSX] 単騎狼・ウルフ・AT",
+      "driver": {
+        "name": "msx",
+        "type": "generic",
+        "alias": "テクノポリスソフト",
+        "platform": "MSX"
+      },
+      "options": [
+        {
+          "name": "init_pc",
+          "value": "0x00400"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "WOLF.COM",
+          "offset": "0x0100"
+        },
+        {
+          "type": "code",
+          "path": "patch",
+          "offset": "0x0400"
+        },
+        {
+          "type": "code",
+          "path": "AMAZONA.SNG",
+          "offset": "0xb000"
+        },
+        {
+          "type": "code",
+          "path": "AMAZONB.SNG",
+          "offset": "0xb200"
+        },
+        {
+          "type": "code",
+          "path": "AMAZONC.SNG",
+          "offset": "0xb400"
+        },
+        {
+          "type": "code",
+          "path": "CALIFOA.SNG",
+          "offset": "0xb600"
+        },
+        {
+          "type": "code",
+          "path": "CALIFOB.SNG",
+          "offset": "0xb800"
+        },
+        {
+          "type": "code",
+          "path": "CALIFOC.SNG",
+          "offset": "0xba00"
+        },
+        {
+          "type": "code",
+          "path": "PROG12A.SNG",
+          "offset": "0xbc00"
+        },
+        {
+          "type": "code",
+          "path": "PROG12B.SNG",
+          "offset": "0xbe00"
+        },
+        {
+          "type": "code",
+          "path": "PROG12C.SNG",
+          "offset": "0xc000"
+        },
+        {
+          "type": "code",
+          "path": "RUN5A.SNG",
+          "offset": "0xc200"
+        },
+        {
+          "type": "code",
+          "path": "RUN5B.SNG",
+          "offset": "0xc400"
+        },
+        {
+          "type": "code",
+          "path": "RUN5C.SNG",
+          "offset": "0xc600"
+        },
+        {
+          "type": "code",
+          "path": "SAHARAA.SNG",
+          "offset": "0xc800"
+        },
+        {
+          "type": "code",
+          "path": "SAHARAB.SNG",
+          "offset": "0xca00"
+        },
+        {
+          "type": "code",
+          "path": "SAHARAC.SNG",
+          "offset": "0xcc00"
+        },
+        {
+          "type": "code",
+          "path": "SAMBAA.SNG",
+          "offset": "0xce00"
+        },
+        {
+          "type": "code",
+          "path": "SAMBAB.SNG",
+          "offset": "0xd000"
+        },
+        {
+          "type": "code",
+          "path": "SAMBAC.SNG",
+          "offset": "0xd200"
+        },
+        {
+          "type": "code",
+          "path": "TOKYOA.SNG",
+          "offset": "0xd400"
+        },
+        {
+          "type": "code",
+          "path": "TOKYOB.SNG",
+          "offset": "0xd600"
+        },
+        {
+          "type": "code",
+          "path": "TOKYOC.SNG",
+          "offset": "0xd800"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "TITLE"
+        },
+        {
+          "kind": "title",
+          "code": "0x06",
+          "title": "BGM"
+        },
+        {
+          "kind": "title",
+          "code": "0x02",
+          "title": "BGM2"
+        },
+        {
+          "kind": "title",
+          "code": "0x03",
+          "title": "BGM3"
+        },
+        {
+          "kind": "title",
+          "code": "0x05",
+          "title": "CLEAR DEMO"
+        },
+        {
+          "kind": "title",
+          "code": "0x00",
+          "title": "GAME OVER"
+        },
+        {
+          "kind": "range",
+          "min": "0x04",
+          "max": "0x04",
+          "title_format": "BGM 0x%02x",
+          "extcode": "1"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/technopolissoft.xml",
+      "source_order": 4562,
+      "archive": "fwolfat_msx",
+      "id": "fwolfat-msx-generic"
+    },
+    {
+      "title": "[MSX] お嬢様くらぶ",
+      "driver": {
+        "name": "msx",
+        "type": "generic",
+        "alias": "テクノポリスソフト",
+        "platform": "MSX"
+      },
+      "options": [
+        {
+          "name": "init_pc",
+          "value": "0x0400"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "patch",
+          "offset": "0x0400"
+        },
+        {
+          "type": "code",
+          "path": "M.BIN",
+          "offset": "0x3ff9"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x00",
+          "title": "Jang ken          / TENTEKO"
+        },
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "HARD              / NEKO"
+        },
+        {
+          "kind": "title",
+          "code": "0x02",
+          "title": "Twincle           / TENTEKO"
+        },
+        {
+          "kind": "title",
+          "code": "0x03",
+          "title": "Spring skip       / XKD"
+        },
+        {
+          "kind": "title",
+          "code": "0x04",
+          "title": "Theme of GIRLS    / KOSIRON"
+        },
+        {
+          "kind": "title",
+          "code": "0x05",
+          "title": "Epilogue          / KOSIRON"
+        },
+        {
+          "kind": "title",
+          "code": "0x06",
+          "title": "GAME OVER         / TENTEKO"
+        },
+        {
+          "kind": "title",
+          "code": "0x07",
+          "title": "Sea side          / GOD"
+        },
+        {
+          "kind": "title",
+          "code": "0x08",
+          "title": "Atend of MENUETTE / XKD"
+        },
+        {
+          "kind": "title",
+          "code": "0x09",
+          "title": "Queens            / KOSIRON"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/technopolissoft.xml",
+      "source_order": 4563,
+      "archive": "ojosama_msx",
+      "id": "ojosama-msx-generic"
+    },
+    {
+      "title": "[MSX] と.き.め.きSESIL",
+      "driver": {
+        "name": "msx",
+        "type": "generic",
+        "alias": "テクノポリスソフト",
+        "platform": "MSX"
+      },
+      "options": [
+        {
+          "name": "mdata_addr",
+          "value": "0x11f9"
+        },
+        {
+          "name": "mdata_size",
+          "value": "0x4000"
+        },
+        {
+          "name": "mfile_size",
+          "value": "0x4000"
+        },
+        {
+          "name": "init_pc",
+          "value": "0x8000"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "COMMAND.COM",
+          "offset": "0x0100"
+        },
+        {
+          "type": "code",
+          "path": "patch",
+          "offset": "0x8000"
+        },
+        {
+          "type": "bgm",
+          "path": "OPEN.BIN",
+          "offset": "0x00"
+        },
+        {
+          "type": "bgm",
+          "path": "END.BIN",
+          "offset": "0x01"
+        },
+        {
+          "type": "bgm",
+          "path": "SECIL1.BIN",
+          "offset": "0x02"
+        },
+        {
+          "type": "bgm",
+          "path": "SECIL2.BIN",
+          "offset": "0x03"
+        },
+        {
+          "type": "bgm",
+          "path": "SELECT.BIN",
+          "offset": "0x04"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x0000",
+          "title": "OPEN.BIN        :"
+        },
+        {
+          "kind": "title",
+          "code": "0x0004",
+          "title": "SELECT.BIN : 00 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x0002",
+          "title": "SECIL1.BIN : 00 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x0102",
+          "title": "SECIL1.BIN : 01 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x0202",
+          "title": "SECIL1.BIN : 02 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x0302",
+          "title": "SECIL1.BIN : 03 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x0402",
+          "title": "SECIL1.BIN : 04 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x0502",
+          "title": "SECIL1.BIN : 05 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x0602",
+          "title": "SECIL1.BIN : 06 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x0702",
+          "title": "SECIL1.BIN : 07 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x0802",
+          "title": "SECIL1.BIN : 08 :"
+        },
+        {
+          "kind": "comment",
+          "text": "\t<title code=\"0x0003\">SECIL2.BIN : 00 : </title>\n\t\t\t<title code=\"0x0103\">SECIL2.BIN : 01 : </title>\n\t\t\t<title code=\"0x0203\">SECIL2.BIN : 02 : </title>\n\t\t\t<title code=\"0x0303\">SECIL2.BIN : 03 : </title>\n\t\t\t<title code=\"0x0403\">SECIL2.BIN : 04 : </title>\n\t\t\t<title code=\"0x0503\">SECIL2.BIN : 05 : </title>\n\t\t\t<title code=\"0x0603\">SECIL2.BIN : 06 : </title>\n\t\t\t<title code=\"0x0703\">SECIL2.BIN : 07 : </title>\n\t\t\t<title code=\"0x0803\">SECIL2.BIN : 08 : </title>\n\t\t\t<title code=\"0x0903\">SECIL2.BIN : 09 : </title> "
+        },
+        {
+          "kind": "title",
+          "code": "0x0001",
+          "title": "END.BIN         :"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/technopolissoft.xml",
+      "source_order": 4564,
+      "archive": "tkmsesil_msx",
+      "id": "tkmsesil-msx-generic"
+    },
+    {
+      "title": "[PC-8801] Shenan Dragon",
+      "driver": {
+        "name": "pc88",
+        "type": "opn",
+        "alias": "テクノポリスソフト",
+        "platform": "NEC PC-8801"
+      },
+      "options": [
+        {
+          "name": "mdata_addr",
+          "value": "0x6e00"
+        },
+        {
+          "name": "mdata_size",
+          "value": "0x1500"
+        },
+        {
+          "name": "mfile_size",
+          "value": "0x1500"
+        },
+        {
+          "name": "use_vrtc",
+          "value": "0x01"
+        },
+        {
+          "name": "use_rtc",
+          "value": "0x01"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "PATCH",
+          "offset": "0x0000"
+        },
+        {
+          "type": "code",
+          "path": "title.mus",
+          "offset": "0x6e00"
+        },
+        {
+          "type": "code",
+          "path": "music",
+          "offset": "0x9000"
+        },
+        {
+          "type": "bgm",
+          "path": "title.mus",
+          "offset": "0x01"
+        },
+        {
+          "type": "bgm",
+          "path": "open.mus",
+          "offset": "0x02"
+        },
+        {
+          "type": "bgm",
+          "path": "field.mus",
+          "offset": "0x03"
+        },
+        {
+          "type": "bgm",
+          "path": "visual.mus",
+          "offset": "0x04"
+        },
+        {
+          "type": "bgm",
+          "path": "end.mus",
+          "offset": "0x05"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x00000001",
+          "title": "title.mus  : 00 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x01000001",
+          "title": "title.mus  : 01 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000002",
+          "title": "open.mus   : 00 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x01000002",
+          "title": "open.mus   : 01 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x02000002",
+          "title": "open.mus   : 02 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000003",
+          "title": "field.mus  : 00 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x01000003",
+          "title": "field.mus  : 01 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x02000003",
+          "title": "field.mus  : 02 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x03000003",
+          "title": "field.mus  : 03 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000004",
+          "title": "visual.mus : 00 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x01000004",
+          "title": "visual.mus : 01 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x02000004",
+          "title": "visual.mus : 02 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x03000004",
+          "title": "visual.mus : 03 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000005",
+          "title": "end.mus    : 00 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x01000005",
+          "title": "end.mus    : 01 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x02000005",
+          "title": "end.mus    : 02 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x03000005",
+          "title": "end.mus    : 03 :"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/technopolissoft.xml",
+      "source_order": 4565,
+      "archive": "sdragn_88",
+      "id": "sdragn-88-opn"
+    }
+  ]
+}

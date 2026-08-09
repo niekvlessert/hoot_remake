@@ -1,0 +1,147 @@
+{
+  "format": "hoot-catalog-shard",
+  "version": 1,
+  "source_file": "xml/ecsecosoft.xml",
+  "date": "2020/09/13",
+  "comments": [
+    " //ECSECO Soft / ECSECO Development "
+  ],
+  "games": [
+    {
+      "title": "[PC-9801] SWAP",
+      "driver": {
+        "name": "pc98dos",
+        "type": "opna",
+        "alias": "ECSECO SOFT",
+        "platform": "NEC PC-9801"
+      },
+      "options": [],
+      "assets": [
+        {
+          "type": "file",
+          "path": "TRPSCR98.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "TRPSCHRN.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MUSIC0.SWP",
+          "offset": "0x00"
+        },
+        {
+          "type": "file",
+          "path": "MUSIC1.SWP",
+          "offset": "0x01"
+        },
+        {
+          "type": "file",
+          "path": "MUSIC2.SWP",
+          "offset": "0x02"
+        },
+        {
+          "type": "file",
+          "path": "MUSIC3.SWP",
+          "offset": "0x03"
+        },
+        {
+          "type": "file",
+          "path": "MUSIC4.SWP",
+          "offset": "0x04"
+        },
+        {
+          "type": "file",
+          "path": "MUSIC5.SWP",
+          "offset": "0x05"
+        },
+        {
+          "type": "file",
+          "path": "MUSIC6.SWP",
+          "offset": "0x06"
+        },
+        {
+          "type": "file",
+          "path": "MUSIC7.SWP",
+          "offset": "0x07"
+        },
+        {
+          "type": "file",
+          "path": "MUSIC8.SWP",
+          "offset": "0x08"
+        },
+        {
+          "type": "shell",
+          "path": "TRPSCHRN",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "TRPSCR98",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x00",
+          "title": "MUSIC0.SWP :"
+        },
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "MUSIC1.SWP :"
+        },
+        {
+          "kind": "title",
+          "code": "0x02",
+          "title": "MUSIC2.SWP :"
+        },
+        {
+          "kind": "title",
+          "code": "0x03",
+          "title": "MUSIC3.SWP :"
+        },
+        {
+          "kind": "title",
+          "code": "0x04",
+          "title": "MUSIC4.SWP :"
+        },
+        {
+          "kind": "title",
+          "code": "0x05",
+          "title": "MUSIC5.SWP :"
+        },
+        {
+          "kind": "title",
+          "code": "0x06",
+          "title": "MUSIC6.SWP :"
+        },
+        {
+          "kind": "title",
+          "code": "0x07",
+          "title": "MUSIC7.SWP :"
+        },
+        {
+          "kind": "title",
+          "code": "0x08",
+          "title": "MUSIC8.SWP :"
+        },
+        {
+          "kind": "range",
+          "min": "0x121",
+          "max": "0x12f",
+          "title_format": "SE         : %02x",
+          "extcode": "0"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/ecsecosoft.xml",
+      "source_order": 1549,
+      "archive": "swap_98",
+      "id": "swap-98-opna"
+    }
+  ]
+}

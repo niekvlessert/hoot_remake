@@ -1,0 +1,120 @@
+{
+  "format": "hoot-catalog-shard",
+  "version": 1,
+  "source_file": "xml/katty.xml",
+  "date": "2005/09/25",
+  "comments": [
+    " //Katty "
+  ],
+  "games": [
+    {
+      "title": "[PC-9801] 暗黒千年王国 Magical Cubic(OPN)",
+      "driver": {
+        "name": "pc98dos",
+        "type": "opn",
+        "alias": "Katty",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "clockmul",
+          "value": "8"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "NA.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "NLP_HOOT.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "TONES.DTA",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "BATTLE1.O",
+          "offset": "0x10"
+        },
+        {
+          "type": "file",
+          "path": "BATTLE2.O",
+          "offset": "0x11"
+        },
+        {
+          "type": "file",
+          "path": "ENDING.O",
+          "offset": "0x12"
+        },
+        {
+          "type": "file",
+          "path": "MAP.O",
+          "offset": "0x13"
+        },
+        {
+          "type": "file",
+          "path": "OPENING.O",
+          "offset": "0x14"
+        },
+        {
+          "type": "file",
+          "path": "WIN.O",
+          "offset": "0x15"
+        },
+        {
+          "type": "shell",
+          "path": "NA",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "NLP_HOOT",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x14",
+          "title": "OPENING.O"
+        },
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "BATTLE1.O"
+        },
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "BATTLE2.O"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "MAP.O"
+        },
+        {
+          "kind": "title",
+          "code": "0x15",
+          "title": "WIN.O"
+        },
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "ENDING.O"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/katty.xml",
+      "source_order": 2732,
+      "archive": "ankoku_98",
+      "id": "ankoku-98-opn"
+    }
+  ]
+}

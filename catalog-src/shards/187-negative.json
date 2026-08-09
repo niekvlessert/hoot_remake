@@ -1,0 +1,535 @@
+{
+  "format": "hoot-catalog-shard",
+  "version": 1,
+  "source_file": "xml/negative.xml",
+  "date": "2005/09/25",
+  "comments": [
+    " //NEGATIVE "
+  ],
+  "games": [
+    {
+      "title": "[PC-9801] Marble Cooking",
+      "driver": {
+        "name": "pc98dos",
+        "type": "opn",
+        "alias": "NEGATIVE",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "funcvect",
+          "value": "0x7e"
+        },
+        {
+          "name": "clockmul",
+          "value": "8"
+        },
+        {
+          "name": "showfm3ex",
+          "value": "1"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "PMD_98.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "PMD.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MARBLE.EFC",
+          "offset": "0x08"
+        },
+        {
+          "type": "file",
+          "path": "OPENING.M",
+          "offset": "0x10"
+        },
+        {
+          "type": "file",
+          "path": "MARBLE.M",
+          "offset": "0x11"
+        },
+        {
+          "type": "file",
+          "path": "INTRO.M",
+          "offset": "0x12"
+        },
+        {
+          "type": "file",
+          "path": "START.M",
+          "offset": "0x13"
+        },
+        {
+          "type": "file",
+          "path": "STAGE1.M",
+          "offset": "0x14"
+        },
+        {
+          "type": "file",
+          "path": "STAGE2.M",
+          "offset": "0x15"
+        },
+        {
+          "type": "file",
+          "path": "STAGE3.M",
+          "offset": "0x16"
+        },
+        {
+          "type": "file",
+          "path": "STAGE4.M",
+          "offset": "0x17"
+        },
+        {
+          "type": "file",
+          "path": "STAGE5.M",
+          "offset": "0x18"
+        },
+        {
+          "type": "file",
+          "path": "STAGE6.M",
+          "offset": "0x19"
+        },
+        {
+          "type": "file",
+          "path": "STAGE7.M",
+          "offset": "0x1A"
+        },
+        {
+          "type": "file",
+          "path": "BONUS.M",
+          "offset": "0x1B"
+        },
+        {
+          "type": "file",
+          "path": "BOSS.M",
+          "offset": "0x1C"
+        },
+        {
+          "type": "file",
+          "path": "CLEAR.M",
+          "offset": "0x1D"
+        },
+        {
+          "type": "file",
+          "path": "GRAPHIC.M",
+          "offset": "0x1E"
+        },
+        {
+          "type": "file",
+          "path": "ENDING.M",
+          "offset": "0x1F"
+        },
+        {
+          "type": "file",
+          "path": "NAMING.M",
+          "offset": "0x20"
+        },
+        {
+          "type": "file",
+          "path": "RANKING.M",
+          "offset": "0x21"
+        },
+        {
+          "type": "file",
+          "path": "GAMEOVER.M",
+          "offset": "0x22"
+        },
+        {
+          "type": "file",
+          "path": "STAFF.M",
+          "offset": "0x23"
+        },
+        {
+          "type": "shell",
+          "path": "PMD /M14 /V0 /E3 /K /F /I",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "pmd_98",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "OPENING.M  : おーぷにんぐ"
+        },
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "MARBLE.M   : めにゅー"
+        },
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "INTRO.M    : いんとろだくしょん"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "START.M    : Start"
+        },
+        {
+          "kind": "title",
+          "code": "0x14",
+          "title": "STAGE1.M   : としょかん"
+        },
+        {
+          "kind": "title",
+          "code": "0x15",
+          "title": "STAGE2.M   : おしろ"
+        },
+        {
+          "kind": "title",
+          "code": "0x16",
+          "title": "STAGE3.M   : じゃんぐる"
+        },
+        {
+          "kind": "title",
+          "code": "0x17",
+          "title": "STAGE4.M   : やまたいこく"
+        },
+        {
+          "kind": "title",
+          "code": "0x18",
+          "title": "STAGE5.M   : Stage5"
+        },
+        {
+          "kind": "title",
+          "code": "0x19",
+          "title": "STAGE6.M   : けんきゅうじょ"
+        },
+        {
+          "kind": "title",
+          "code": "0x1A",
+          "title": "STAGE7.M   : LastBoss"
+        },
+        {
+          "kind": "title",
+          "code": "0x1B",
+          "title": "BONUS.M    : ぼぉなす"
+        },
+        {
+          "kind": "title",
+          "code": "0x1C",
+          "title": "BOSS.M     :"
+        },
+        {
+          "kind": "title",
+          "code": "0x1D",
+          "title": "CLEAR.M    : くりぁ～"
+        },
+        {
+          "kind": "title",
+          "code": "0x1E",
+          "title": "GRAPHIC.M  : ぐらふぃっくもぉど"
+        },
+        {
+          "kind": "title",
+          "code": "0x1F",
+          "title": "ENDING.M   : えんでぃんぐ"
+        },
+        {
+          "kind": "title",
+          "code": "0x20",
+          "title": "NAMING.M   : ねぇみんぐ"
+        },
+        {
+          "kind": "title",
+          "code": "0x21",
+          "title": "RANKING.M  : らんきんぐ"
+        },
+        {
+          "kind": "title",
+          "code": "0x22",
+          "title": "GAMEOVER.M : げぇむおーばー"
+        },
+        {
+          "kind": "title",
+          "code": "0x23",
+          "title": "STAFF.M    : Staff Roll"
+        },
+        {
+          "kind": "range",
+          "min": "0x0801",
+          "max": "0x0821",
+          "title_format": "MARBLE.EFC : %2X",
+          "extcode": "1"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/negative.xml",
+      "source_order": 3440,
+      "archive": "mcooking_98",
+      "id": "mcooking-98-opn"
+    },
+    {
+      "title": "[IBM PC] Marble Cooking",
+      "driver": {
+        "name": "pcatdos",
+        "type": "adlib",
+        "alias": "NEGATIVE",
+        "platform": "IBM PC"
+      },
+      "options": [
+        {
+          "name": "funcvect",
+          "value": "0x7e"
+        },
+        {
+          "name": "clockmul",
+          "value": "0x12"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "PMD_98.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "PMDIBM.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MARBLE.EFC",
+          "offset": "0x08"
+        },
+        {
+          "type": "file",
+          "path": "BONUS.M",
+          "offset": "0x10"
+        },
+        {
+          "type": "file",
+          "path": "BOSS.M",
+          "offset": "0x11"
+        },
+        {
+          "type": "file",
+          "path": "CLEAR.M",
+          "offset": "0x12"
+        },
+        {
+          "type": "file",
+          "path": "ENDING.M",
+          "offset": "0x13"
+        },
+        {
+          "type": "file",
+          "path": "GAMEOVER.M",
+          "offset": "0x14"
+        },
+        {
+          "type": "file",
+          "path": "GRAPHIC.M",
+          "offset": "0x15"
+        },
+        {
+          "type": "file",
+          "path": "INTRO.M",
+          "offset": "0x16"
+        },
+        {
+          "type": "file",
+          "path": "MARBLE.M",
+          "offset": "0x17"
+        },
+        {
+          "type": "file",
+          "path": "NAMING.M",
+          "offset": "0x18"
+        },
+        {
+          "type": "file",
+          "path": "OPENING.M",
+          "offset": "0x19"
+        },
+        {
+          "type": "file",
+          "path": "RANKING.M",
+          "offset": "0x1a"
+        },
+        {
+          "type": "file",
+          "path": "STAFF.M",
+          "offset": "0x1b"
+        },
+        {
+          "type": "file",
+          "path": "STAGE1.M",
+          "offset": "0x1c"
+        },
+        {
+          "type": "file",
+          "path": "STAGE2.M",
+          "offset": "0x1d"
+        },
+        {
+          "type": "file",
+          "path": "STAGE3.M",
+          "offset": "0x1e"
+        },
+        {
+          "type": "file",
+          "path": "STAGE4.M",
+          "offset": "0x1f"
+        },
+        {
+          "type": "file",
+          "path": "STAGE5.M",
+          "offset": "0x20"
+        },
+        {
+          "type": "file",
+          "path": "STAGE6.M",
+          "offset": "0x21"
+        },
+        {
+          "type": "file",
+          "path": "STAGE7.M",
+          "offset": "0x22"
+        },
+        {
+          "type": "file",
+          "path": "START.M",
+          "offset": "0x23"
+        },
+        {
+          "type": "shell",
+          "path": "pmdibm /DF48 /M10 /V0 /E2",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "pmd_98",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x19",
+          "title": "OPENING.M  : おーぷにんぐ"
+        },
+        {
+          "kind": "title",
+          "code": "0x17",
+          "title": "MARBLE.M   : めにゅー"
+        },
+        {
+          "kind": "title",
+          "code": "0x16",
+          "title": "INTRO.M    : いんとろだくしょん"
+        },
+        {
+          "kind": "title",
+          "code": "0x23",
+          "title": "START.M    : Start"
+        },
+        {
+          "kind": "title",
+          "code": "0x1c",
+          "title": "STAGE1.M   : としょかん"
+        },
+        {
+          "kind": "title",
+          "code": "0x1d",
+          "title": "STAGE2.M   : おしろ"
+        },
+        {
+          "kind": "title",
+          "code": "0x1e",
+          "title": "STAGE3.M   : じゃんぐる"
+        },
+        {
+          "kind": "title",
+          "code": "0x1f",
+          "title": "STAGE4.M   : やまたいこく"
+        },
+        {
+          "kind": "title",
+          "code": "0x20",
+          "title": "STAGE5.M   : Stage5"
+        },
+        {
+          "kind": "title",
+          "code": "0x21",
+          "title": "STAGE6.M   : けんきゅうじょ"
+        },
+        {
+          "kind": "title",
+          "code": "0x22",
+          "title": "STAGE7.M   : LastBoss"
+        },
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "BONUS.M    : ぼぉなす"
+        },
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "BOSS.M     :"
+        },
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "CLEAR.M    : くりぁ～"
+        },
+        {
+          "kind": "title",
+          "code": "0x15",
+          "title": "GRAPHIC.M  : ぐらふぃっくもぉど"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "ENDING.M   : えんでぃんぐ"
+        },
+        {
+          "kind": "title",
+          "code": "0x18",
+          "title": "NAMING.M   : ねぇみんぐ"
+        },
+        {
+          "kind": "title",
+          "code": "0x1a",
+          "title": "RANKING.M  : らんきんぐ"
+        },
+        {
+          "kind": "title",
+          "code": "0x14",
+          "title": "GAMEOVER.M : げぇむおーばー"
+        },
+        {
+          "kind": "title",
+          "code": "0x1b",
+          "title": "STAFF.M    : Staff Roll"
+        },
+        {
+          "kind": "range",
+          "min": "0x0801",
+          "max": "0x0821",
+          "title_format": "MARBLE.EFC : %2X",
+          "extcode": "1"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/negative.xml",
+      "source_order": 3441,
+      "archive": "mcooking_at",
+      "id": "mcooking-at-adlib"
+    }
+  ]
+}

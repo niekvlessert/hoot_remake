@@ -1,0 +1,110 @@
+{
+  "format": "hoot-catalog-shard",
+  "version": 1,
+  "source_file": "xml/aba.xml",
+  "date": "2005/09/25",
+  "comments": [
+    " //ABA 総合ビジネスアシスト "
+  ],
+  "games": [
+    {
+      "title": "[PC-9801] SPREAD",
+      "driver": {
+        "name": "pc98dos",
+        "type": "opn",
+        "alias": "ABA",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "clockmul",
+          "value": "8"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "nlp_hoot.com",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "NL.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "TONE.DTA",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MUS1.O",
+          "offset": "0x10"
+        },
+        {
+          "type": "file",
+          "path": "MUS2.O",
+          "offset": "0x11"
+        },
+        {
+          "type": "file",
+          "path": "MUS3.O",
+          "offset": "0x12"
+        },
+        {
+          "type": "file",
+          "path": "MUS4.O",
+          "offset": "0x13"
+        },
+        {
+          "type": "file",
+          "path": "MUS5.O",
+          "offset": "0x14"
+        },
+        {
+          "type": "shell",
+          "path": "nl",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "nlp_hoot",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "MUS1.O :"
+        },
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "MUS2.O :"
+        },
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "MUS3.O :"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "MUS4.O :"
+        },
+        {
+          "kind": "title",
+          "code": "0x14",
+          "title": "MUS5.O :"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/aba.xml",
+      "source_order": 4,
+      "archive": "spread_98",
+      "id": "spread-98-opn"
+    }
+  ]
+}

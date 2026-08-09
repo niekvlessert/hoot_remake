@@ -1,0 +1,3715 @@
+{
+  "format": "hoot-catalog-shard",
+  "version": 1,
+  "source_file": "xml/heartsoft.xml",
+  "date": "2005/09/25",
+  "comments": [
+    " //ハート電子産業 "
+  ],
+  "games": [
+    {
+      "title": "[PC-8801] HEAVY ARMED STORMING VEHICLE - VAXOL -",
+      "driver": {
+        "name": "pc88",
+        "type": "opn",
+        "alias": "ハート電子産業",
+        "platform": "NEC PC-8801"
+      },
+      "options": [
+        {
+          "name": "init_pc",
+          "value": "0x0100"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "PATCH",
+          "offset": "0x0100"
+        },
+        {
+          "type": "code",
+          "path": "DRIVER",
+          "offset": "0xe000"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS00",
+          "offset": "0x00"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS01",
+          "offset": "0x01"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS02",
+          "offset": "0x02"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS03",
+          "offset": "0x03"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS04",
+          "offset": "0x04"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS05",
+          "offset": "0x05"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS06",
+          "offset": "0x08"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS07",
+          "offset": "0x09"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x00000000",
+          "title": "OPENING TITLE"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000001",
+          "title": "STAGE 1"
+        },
+        {
+          "kind": "title",
+          "code": "0x01000001",
+          "title": "STAGE 1 BOSS"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000002",
+          "title": "STAGE 2"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000003",
+          "title": "STAGE 3"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000004",
+          "title": "BGM #4-1"
+        },
+        {
+          "kind": "title",
+          "code": "0x01000004",
+          "title": "BGM #4-2"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000005",
+          "title": "BGM #5"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000008",
+          "title": "BGM #6-1"
+        },
+        {
+          "kind": "title",
+          "code": "0x01000008",
+          "title": "BGM #6-2"
+        },
+        {
+          "kind": "title",
+          "code": "0x02000008",
+          "title": "BGM #6-3"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000009",
+          "title": "BGM #7"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/heartsoft.xml",
+      "source_order": 2420,
+      "archive": "vaxol",
+      "id": "vaxol-opn"
+    },
+    {
+      "title": "[PC-8801] 探偵団X",
+      "driver": {
+        "name": "pc88",
+        "type": "opn",
+        "alias": "ハート電子産業",
+        "platform": "NEC PC-8801"
+      },
+      "options": [
+        {
+          "name": "mdata_addr",
+          "value": "0xf800"
+        },
+        {
+          "name": "mdata_size",
+          "value": "0x0800"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "PATCH",
+          "offset": "0x0000"
+        },
+        {
+          "type": "code",
+          "path": "N88_3.ROM",
+          "offset": "0x6000"
+        },
+        {
+          "type": "code",
+          "path": "PLY88.B",
+          "offset": "0xf000"
+        },
+        {
+          "type": "bgm",
+          "path": "BATTLE.X",
+          "offset": "0x00"
+        },
+        {
+          "type": "bgm",
+          "path": "BEAR1.X",
+          "offset": "0x01"
+        },
+        {
+          "type": "bgm",
+          "path": "BEAR2.X",
+          "offset": "0x02"
+        },
+        {
+          "type": "bgm",
+          "path": "BEAR3.X",
+          "offset": "0x03"
+        },
+        {
+          "type": "bgm",
+          "path": "BLIGHT.X",
+          "offset": "0x04"
+        },
+        {
+          "type": "bgm",
+          "path": "BUSY.X",
+          "offset": "0x05"
+        },
+        {
+          "type": "bgm",
+          "path": "CAT1.X",
+          "offset": "0x06"
+        },
+        {
+          "type": "bgm",
+          "path": "CAT2.X",
+          "offset": "0x07"
+        },
+        {
+          "type": "bgm",
+          "path": "FEAR.X",
+          "offset": "0x08"
+        },
+        {
+          "type": "bgm",
+          "path": "KING1.X",
+          "offset": "0x09"
+        },
+        {
+          "type": "bgm",
+          "path": "KING2.X",
+          "offset": "0x0a"
+        },
+        {
+          "type": "bgm",
+          "path": "KING3.X",
+          "offset": "0x0b"
+        },
+        {
+          "type": "bgm",
+          "path": "KOHMON.X",
+          "offset": "0x0c"
+        },
+        {
+          "type": "bgm",
+          "path": "RIDER.X",
+          "offset": "0x0d"
+        },
+        {
+          "type": "bgm",
+          "path": "SE1.X",
+          "offset": "0x0e"
+        },
+        {
+          "type": "bgm",
+          "path": "SE2.X",
+          "offset": "0x0f"
+        },
+        {
+          "type": "bgm",
+          "path": "SE3.X",
+          "offset": "0x10"
+        },
+        {
+          "type": "bgm",
+          "path": "SE5.X",
+          "offset": "0x11"
+        },
+        {
+          "type": "bgm",
+          "path": "TABU.X",
+          "offset": "0x12"
+        },
+        {
+          "type": "bgm",
+          "path": "THEME.X",
+          "offset": "0x13"
+        },
+        {
+          "type": "bgm",
+          "path": "XEND.X",
+          "offset": "0x14"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x00",
+          "title": "BATTLE.X :"
+        },
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "BEAR1.X  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x02",
+          "title": "BEAR2.X  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x03",
+          "title": "BEAR3.X  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x04",
+          "title": "BLIGHT.X :"
+        },
+        {
+          "kind": "title",
+          "code": "0x05",
+          "title": "BUSY.X   :"
+        },
+        {
+          "kind": "title",
+          "code": "0x06",
+          "title": "CAT1.X   :"
+        },
+        {
+          "kind": "title",
+          "code": "0x07",
+          "title": "CAT2.X   :"
+        },
+        {
+          "kind": "title",
+          "code": "0x08",
+          "title": "FEAR.X   :"
+        },
+        {
+          "kind": "title",
+          "code": "0x09",
+          "title": "KING1.X  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x0a",
+          "title": "KING2.X  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x0b",
+          "title": "KING3.X  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x0c",
+          "title": "KOHMON.X :"
+        },
+        {
+          "kind": "title",
+          "code": "0x0d",
+          "title": "RIDER.X  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x0e",
+          "title": "SE1.X    :"
+        },
+        {
+          "kind": "title",
+          "code": "0x0f",
+          "title": "SE2.X    :"
+        },
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "SE3.X    :"
+        },
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "SE5.X    :"
+        },
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "TABU.X   :"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "THEME.X  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x14",
+          "title": "XEND.X   :"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/heartsoft.xml",
+      "source_order": 2421,
+      "archive": "tanteix",
+      "id": "tanteix-opn"
+    },
+    {
+      "title": "[PC-8801] 帰ってきた探偵団X",
+      "driver": {
+        "name": "pc88",
+        "type": "opn",
+        "alias": "ハート電子産業",
+        "platform": "NEC PC-8801"
+      },
+      "options": [
+        {
+          "name": "mdata_addr",
+          "value": "0xf800"
+        },
+        {
+          "name": "mdata_size",
+          "value": "0x0800"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "PATCH",
+          "offset": "0x0000"
+        },
+        {
+          "type": "code",
+          "path": "N88_3.ROM",
+          "offset": "0x6000"
+        },
+        {
+          "type": "code",
+          "path": "PLY88",
+          "offset": "0xf000"
+        },
+        {
+          "type": "bgm",
+          "path": "BGM1.X",
+          "offset": "0x00"
+        },
+        {
+          "type": "bgm",
+          "path": "BGM2.X",
+          "offset": "0x01"
+        },
+        {
+          "type": "bgm",
+          "path": "BGM3.X",
+          "offset": "0x02"
+        },
+        {
+          "type": "bgm",
+          "path": "CURRY.X",
+          "offset": "0x03"
+        },
+        {
+          "type": "bgm",
+          "path": "DOMEST.X",
+          "offset": "0x04"
+        },
+        {
+          "type": "bgm",
+          "path": "ENDING.X",
+          "offset": "0x05"
+        },
+        {
+          "type": "bgm",
+          "path": "F1A.X",
+          "offset": "0x06"
+        },
+        {
+          "type": "bgm",
+          "path": "F1B.X",
+          "offset": "0x07"
+        },
+        {
+          "type": "bgm",
+          "path": "F1C.X",
+          "offset": "0x08"
+        },
+        {
+          "type": "bgm",
+          "path": "FIGHT.X",
+          "offset": "0x09"
+        },
+        {
+          "type": "bgm",
+          "path": "GMOVER.X",
+          "offset": "0x0a"
+        },
+        {
+          "type": "bgm",
+          "path": "HEART.X",
+          "offset": "0x0b"
+        },
+        {
+          "type": "bgm",
+          "path": "INSIDE.X",
+          "offset": "0x0c"
+        },
+        {
+          "type": "bgm",
+          "path": "JAIL.X",
+          "offset": "0x0d"
+        },
+        {
+          "type": "bgm",
+          "path": "MARIN.X",
+          "offset": "0x0e"
+        },
+        {
+          "type": "bgm",
+          "path": "SAKE.X",
+          "offset": "0x0f"
+        },
+        {
+          "type": "bgm",
+          "path": "SE1.X",
+          "offset": "0x10"
+        },
+        {
+          "type": "bgm",
+          "path": "SE2.X",
+          "offset": "0x11"
+        },
+        {
+          "type": "bgm",
+          "path": "SHARK.X",
+          "offset": "0x12"
+        },
+        {
+          "type": "bgm",
+          "path": "TITLE.X",
+          "offset": "0x13"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x00",
+          "title": "BGM1.X   :"
+        },
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "BGM2.X   :"
+        },
+        {
+          "kind": "title",
+          "code": "0x02",
+          "title": "BGM3.X   :"
+        },
+        {
+          "kind": "title",
+          "code": "0x03",
+          "title": "CURRY.X  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x04",
+          "title": "DOMEST.X :"
+        },
+        {
+          "kind": "title",
+          "code": "0x05",
+          "title": "ENDING.X :"
+        },
+        {
+          "kind": "title",
+          "code": "0x06",
+          "title": "F1A.X    :"
+        },
+        {
+          "kind": "title",
+          "code": "0x07",
+          "title": "F1B.X    :"
+        },
+        {
+          "kind": "title",
+          "code": "0x08",
+          "title": "F1C.X    :"
+        },
+        {
+          "kind": "title",
+          "code": "0x09",
+          "title": "FIGHT.X  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x0a",
+          "title": "GMOVER.X :"
+        },
+        {
+          "kind": "title",
+          "code": "0x0b",
+          "title": "HEART.X  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x0c",
+          "title": "INSIDE.X :"
+        },
+        {
+          "kind": "title",
+          "code": "0x0d",
+          "title": "JAIL.X   :"
+        },
+        {
+          "kind": "title",
+          "code": "0x0e",
+          "title": "MARIN.X  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x0f",
+          "title": "SAKE.X   :"
+        },
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "SE1.X    :"
+        },
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "SE2.X    :"
+        },
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "SHARK.X  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "TITLE.X  :"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/heartsoft.xml",
+      "source_order": 2422,
+      "archive": "tanteix2",
+      "id": "tanteix2-opn"
+    },
+    {
+      "title": "[PC-8801] 陽炎迷宮",
+      "driver": {
+        "name": "pc88",
+        "type": "opn",
+        "alias": "ハート電子産業",
+        "platform": "NEC PC-8801"
+      },
+      "options": [
+        {
+          "name": "mdata_addr",
+          "value": "0xf800"
+        },
+        {
+          "name": "mdata_size",
+          "value": "0x0800"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "PATCH",
+          "offset": "0x0000"
+        },
+        {
+          "type": "code",
+          "path": "N88_3.ROM",
+          "offset": "0x6000"
+        },
+        {
+          "type": "code",
+          "path": "PLY88.B",
+          "offset": "0xf000"
+        },
+        {
+          "type": "bgm",
+          "path": "XA",
+          "offset": "0x00"
+        },
+        {
+          "type": "bgm",
+          "path": "XB",
+          "offset": "0x01"
+        },
+        {
+          "type": "bgm",
+          "path": "XC",
+          "offset": "0x02"
+        },
+        {
+          "type": "bgm",
+          "path": "XD",
+          "offset": "0x03"
+        },
+        {
+          "type": "bgm",
+          "path": "XE",
+          "offset": "0x04"
+        },
+        {
+          "type": "bgm",
+          "path": "XF",
+          "offset": "0x05"
+        },
+        {
+          "type": "bgm",
+          "path": "XG",
+          "offset": "0x06"
+        },
+        {
+          "type": "bgm",
+          "path": "XH",
+          "offset": "0x07"
+        },
+        {
+          "type": "bgm",
+          "path": "XI",
+          "offset": "0x08"
+        },
+        {
+          "type": "bgm",
+          "path": "XJ",
+          "offset": "0x09"
+        },
+        {
+          "type": "bgm",
+          "path": "XK",
+          "offset": "0x0a"
+        },
+        {
+          "type": "bgm",
+          "path": "XL",
+          "offset": "0x0b"
+        },
+        {
+          "type": "bgm",
+          "path": "XM",
+          "offset": "0x0c"
+        },
+        {
+          "type": "bgm",
+          "path": "XN",
+          "offset": "0x0d"
+        },
+        {
+          "type": "bgm",
+          "path": "XO",
+          "offset": "0x0e"
+        },
+        {
+          "type": "bgm",
+          "path": "XP",
+          "offset": "0x0f"
+        },
+        {
+          "type": "bgm",
+          "path": "XQ",
+          "offset": "0x10"
+        },
+        {
+          "type": "bgm",
+          "path": "XR",
+          "offset": "0x11"
+        },
+        {
+          "type": "bgm",
+          "path": "XS",
+          "offset": "0x12"
+        },
+        {
+          "type": "bgm",
+          "path": "XT",
+          "offset": "0x13"
+        },
+        {
+          "type": "bgm",
+          "path": "XU",
+          "offset": "0x14"
+        },
+        {
+          "type": "bgm",
+          "path": "XV",
+          "offset": "0x15"
+        },
+        {
+          "type": "bgm",
+          "path": "XW",
+          "offset": "0x16"
+        },
+        {
+          "type": "bgm",
+          "path": "XX",
+          "offset": "0x17"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x00",
+          "title": "XA :"
+        },
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "XB :"
+        },
+        {
+          "kind": "title",
+          "code": "0x02",
+          "title": "XC :"
+        },
+        {
+          "kind": "title",
+          "code": "0x03",
+          "title": "XD :"
+        },
+        {
+          "kind": "title",
+          "code": "0x04",
+          "title": "XE :"
+        },
+        {
+          "kind": "title",
+          "code": "0x05",
+          "title": "XF :"
+        },
+        {
+          "kind": "title",
+          "code": "0x06",
+          "title": "XG :"
+        },
+        {
+          "kind": "title",
+          "code": "0x07",
+          "title": "XH :"
+        },
+        {
+          "kind": "title",
+          "code": "0x08",
+          "title": "XI :"
+        },
+        {
+          "kind": "title",
+          "code": "0x09",
+          "title": "XJ :"
+        },
+        {
+          "kind": "title",
+          "code": "0x0a",
+          "title": "XK :"
+        },
+        {
+          "kind": "title",
+          "code": "0x0b",
+          "title": "XL :"
+        },
+        {
+          "kind": "title",
+          "code": "0x0c",
+          "title": "XM :"
+        },
+        {
+          "kind": "title",
+          "code": "0x0d",
+          "title": "XN :"
+        },
+        {
+          "kind": "title",
+          "code": "0x0e",
+          "title": "XO :"
+        },
+        {
+          "kind": "title",
+          "code": "0x0f",
+          "title": "XP :"
+        },
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "XQ :"
+        },
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "XR :"
+        },
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "XS :"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "XT :"
+        },
+        {
+          "kind": "title",
+          "code": "0x14",
+          "title": "XU :"
+        },
+        {
+          "kind": "title",
+          "code": "0x15",
+          "title": "XV :"
+        },
+        {
+          "kind": "title",
+          "code": "0x16",
+          "title": "XW :"
+        },
+        {
+          "kind": "title",
+          "code": "0x17",
+          "title": "XX :"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/heartsoft.xml",
+      "source_order": 2423,
+      "archive": "kagerou",
+      "id": "kagerou-opn"
+    },
+    {
+      "title": "[PC-8801] PARAGON SEXA DOLL",
+      "driver": {
+        "name": "pc88",
+        "type": "opn",
+        "alias": "ハート電子産業",
+        "platform": "NEC PC-8801"
+      },
+      "options": [
+        {
+          "name": "mdata_addr",
+          "value": "0xf800"
+        },
+        {
+          "name": "mdata_size",
+          "value": "0x0800"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "PATCH",
+          "offset": "0x0000"
+        },
+        {
+          "type": "code",
+          "path": "N88_3.ROM",
+          "offset": "0x6000"
+        },
+        {
+          "type": "code",
+          "path": "PLY88.B",
+          "offset": "0xf000"
+        },
+        {
+          "type": "bgm",
+          "path": "D1.X",
+          "offset": "0x00"
+        },
+        {
+          "type": "bgm",
+          "path": "D2.X",
+          "offset": "0x01"
+        },
+        {
+          "type": "bgm",
+          "path": "DIV.X",
+          "offset": "0x02"
+        },
+        {
+          "type": "bgm",
+          "path": "DOLL.X",
+          "offset": "0x03"
+        },
+        {
+          "type": "bgm",
+          "path": "END1.X",
+          "offset": "0x04"
+        },
+        {
+          "type": "bgm",
+          "path": "END2.X",
+          "offset": "0x05"
+        },
+        {
+          "type": "bgm",
+          "path": "END3.X",
+          "offset": "0x06"
+        },
+        {
+          "type": "bgm",
+          "path": "KILLY.X",
+          "offset": "0x07"
+        },
+        {
+          "type": "bgm",
+          "path": "NANCY.X",
+          "offset": "0x08"
+        },
+        {
+          "type": "bgm",
+          "path": "SAD.X",
+          "offset": "0x09"
+        },
+        {
+          "type": "bgm",
+          "path": "TEESE.X",
+          "offset": "0x0a"
+        },
+        {
+          "type": "bgm",
+          "path": "TINA.X",
+          "offset": "0x0b"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x00",
+          "title": "D1.X    :"
+        },
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "D2.X    :"
+        },
+        {
+          "kind": "title",
+          "code": "0x02",
+          "title": "DIV.X   :"
+        },
+        {
+          "kind": "title",
+          "code": "0x03",
+          "title": "DOLL.X  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x04",
+          "title": "END1.X  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x05",
+          "title": "END2.X  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x06",
+          "title": "END3.X  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x07",
+          "title": "KILLY.X :"
+        },
+        {
+          "kind": "title",
+          "code": "0x08",
+          "title": "NANCY.X :"
+        },
+        {
+          "kind": "title",
+          "code": "0x09",
+          "title": "SAD.X   :"
+        },
+        {
+          "kind": "title",
+          "code": "0x0a",
+          "title": "TEESE.X :"
+        },
+        {
+          "kind": "title",
+          "code": "0x0b",
+          "title": "TINA.X  :"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/heartsoft.xml",
+      "source_order": 2424,
+      "archive": "doll",
+      "id": "doll-opn"
+    },
+    {
+      "title": "[PC-8801] ファーラの時結界",
+      "driver": {
+        "name": "pc88",
+        "type": "opn",
+        "alias": "ハート電子産業",
+        "platform": "NEC PC-8801"
+      },
+      "options": [
+        {
+          "name": "mdata_addr",
+          "value": "0xf800"
+        },
+        {
+          "name": "mdata_size",
+          "value": "0x0800"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "PATCH",
+          "offset": "0x0000"
+        },
+        {
+          "type": "code",
+          "path": "N88_3.ROM",
+          "offset": "0x6000"
+        },
+        {
+          "type": "code",
+          "path": "PLY88.B",
+          "offset": "0xf000"
+        },
+        {
+          "type": "bgm",
+          "path": "X0",
+          "offset": "0x00"
+        },
+        {
+          "type": "bgm",
+          "path": "X1",
+          "offset": "0x01"
+        },
+        {
+          "type": "bgm",
+          "path": "X2",
+          "offset": "0x02"
+        },
+        {
+          "type": "bgm",
+          "path": "X3",
+          "offset": "0x03"
+        },
+        {
+          "type": "bgm",
+          "path": "X4",
+          "offset": "0x04"
+        },
+        {
+          "type": "bgm",
+          "path": "X5",
+          "offset": "0x05"
+        },
+        {
+          "type": "bgm",
+          "path": "X6",
+          "offset": "0x06"
+        },
+        {
+          "type": "bgm",
+          "path": "X7",
+          "offset": "0x07"
+        },
+        {
+          "type": "bgm",
+          "path": "X8",
+          "offset": "0x08"
+        },
+        {
+          "type": "bgm",
+          "path": "X9",
+          "offset": "0x09"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x0400",
+          "title": "X0 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x0401",
+          "title": "X1 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x0402",
+          "title": "X2 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x0403",
+          "title": "X3 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x0404",
+          "title": "X4 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x0405",
+          "title": "X5 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x0406",
+          "title": "X6 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x0407",
+          "title": "X7 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x0408",
+          "title": "X8 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x0409",
+          "title": "X9 :"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/heartsoft.xml",
+      "source_order": 2425,
+      "archive": "farla",
+      "id": "farla-opn"
+    },
+    {
+      "title": "[PC-8801] 死体置場で夕食を",
+      "driver": {
+        "name": "pc88",
+        "type": "opn",
+        "alias": "ハート電子産業",
+        "platform": "NEC PC-8801"
+      },
+      "options": [
+        {
+          "name": "mdata_addr",
+          "value": "0xf800"
+        },
+        {
+          "name": "mdata_size",
+          "value": "0x0800"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "PATCH",
+          "offset": "0x0000"
+        },
+        {
+          "type": "code",
+          "path": "N88_3.ROM",
+          "offset": "0x6000"
+        },
+        {
+          "type": "code",
+          "path": "PLY88.B",
+          "offset": "0xf000"
+        },
+        {
+          "type": "bgm",
+          "path": "2CHO1.X",
+          "offset": "0x00"
+        },
+        {
+          "type": "bgm",
+          "path": "2CHO2.X",
+          "offset": "0x01"
+        },
+        {
+          "type": "bgm",
+          "path": "JAZZ1.X",
+          "offset": "0x02"
+        },
+        {
+          "type": "bgm",
+          "path": "JAZZ2.X",
+          "offset": "0x03"
+        },
+        {
+          "type": "bgm",
+          "path": "MARD1.X",
+          "offset": "0x04"
+        },
+        {
+          "type": "bgm",
+          "path": "MARD2A.X",
+          "offset": "0x05"
+        },
+        {
+          "type": "bgm",
+          "path": "MARD2B.X",
+          "offset": "0x06"
+        },
+        {
+          "type": "bgm",
+          "path": "MINOR1.X",
+          "offset": "0x07"
+        },
+        {
+          "type": "bgm",
+          "path": "MINOR2.X",
+          "offset": "0x08"
+        },
+        {
+          "type": "bgm",
+          "path": "MINOR3.X",
+          "offset": "0x09"
+        },
+        {
+          "type": "bgm",
+          "path": "POPS1.X",
+          "offset": "0x0a"
+        },
+        {
+          "type": "bgm",
+          "path": "POPS2.X",
+          "offset": "0x0b"
+        },
+        {
+          "type": "bgm",
+          "path": "POPS3.X",
+          "offset": "0x0c"
+        },
+        {
+          "type": "bgm",
+          "path": "POPS4.X",
+          "offset": "0x0d"
+        },
+        {
+          "type": "bgm",
+          "path": "POPS5.X",
+          "offset": "0x0e"
+        },
+        {
+          "type": "bgm",
+          "path": "POPS6.X",
+          "offset": "0x0f"
+        },
+        {
+          "type": "bgm",
+          "path": "POPS7.X",
+          "offset": "0x12"
+        },
+        {
+          "type": "bgm",
+          "path": "POPS8.X",
+          "offset": "0x13"
+        },
+        {
+          "type": "bgm",
+          "path": "POPS9.X",
+          "offset": "0x14"
+        },
+        {
+          "type": "bgm",
+          "path": "POPS10.X",
+          "offset": "0x15"
+        },
+        {
+          "type": "bgm",
+          "path": "POPS11.X",
+          "offset": "0x16"
+        },
+        {
+          "type": "bgm",
+          "path": "POPS12.X",
+          "offset": "0x18"
+        },
+        {
+          "type": "bgm",
+          "path": "POPS13.X",
+          "offset": "0x19"
+        },
+        {
+          "type": "bgm",
+          "path": "POPS14.X",
+          "offset": "0x1a"
+        },
+        {
+          "type": "bgm",
+          "path": "POPS15.X",
+          "offset": "0x1c"
+        },
+        {
+          "type": "bgm",
+          "path": "POPS16.X",
+          "offset": "0x1d"
+        },
+        {
+          "type": "bgm",
+          "path": "POPS17.X",
+          "offset": "0x1e"
+        },
+        {
+          "type": "bgm",
+          "path": "POPS18.X",
+          "offset": "0x1f"
+        },
+        {
+          "type": "bgm",
+          "path": "POPS19.X",
+          "offset": "0x20"
+        },
+        {
+          "type": "bgm",
+          "path": "POPS20.X",
+          "offset": "0x21"
+        },
+        {
+          "type": "bgm",
+          "path": "ROCK1.X",
+          "offset": "0x22"
+        },
+        {
+          "type": "bgm",
+          "path": "ROCK2.X",
+          "offset": "0x23"
+        },
+        {
+          "type": "bgm",
+          "path": "ROCK3.X",
+          "offset": "0x24"
+        },
+        {
+          "type": "bgm",
+          "path": "ROCK4.X",
+          "offset": "0x25"
+        },
+        {
+          "type": "bgm",
+          "path": "ROCK5.X",
+          "offset": "0x26"
+        },
+        {
+          "type": "bgm",
+          "path": "ROCK6.X",
+          "offset": "0x28"
+        },
+        {
+          "type": "bgm",
+          "path": "ROCK7.X",
+          "offset": "0x29"
+        },
+        {
+          "type": "bgm",
+          "path": "STRANG.X",
+          "offset": "0x2a"
+        },
+        {
+          "type": "bgm",
+          "path": "TEL.X",
+          "offset": "0x2c"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x00",
+          "title": "2CHO1.X"
+        },
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "2CHO2.X"
+        },
+        {
+          "kind": "title",
+          "code": "0x02",
+          "title": "JAZZ1.X"
+        },
+        {
+          "kind": "title",
+          "code": "0x03",
+          "title": "JAZZ2.X"
+        },
+        {
+          "kind": "title",
+          "code": "0x04",
+          "title": "MARD1.X"
+        },
+        {
+          "kind": "title",
+          "code": "0x05",
+          "title": "MARD2A.X"
+        },
+        {
+          "kind": "title",
+          "code": "0x06",
+          "title": "MARD2B.X"
+        },
+        {
+          "kind": "title",
+          "code": "0x07",
+          "title": "MINOR1.X"
+        },
+        {
+          "kind": "title",
+          "code": "0x08",
+          "title": "MINOR2.X"
+        },
+        {
+          "kind": "title",
+          "code": "0x09",
+          "title": "MINOR3.X"
+        },
+        {
+          "kind": "title",
+          "code": "0x0a",
+          "title": "POPS1.X"
+        },
+        {
+          "kind": "title",
+          "code": "0x0b",
+          "title": "POPS2.X"
+        },
+        {
+          "kind": "title",
+          "code": "0x0c",
+          "title": "POPS3.X"
+        },
+        {
+          "kind": "title",
+          "code": "0x0d",
+          "title": "POPS4.X"
+        },
+        {
+          "kind": "title",
+          "code": "0x0e",
+          "title": "POPS5.X"
+        },
+        {
+          "kind": "title",
+          "code": "0x0f",
+          "title": "POPS6.X"
+        },
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "POPS7.X"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "POPS8.X"
+        },
+        {
+          "kind": "title",
+          "code": "0x14",
+          "title": "POPS9.X"
+        },
+        {
+          "kind": "title",
+          "code": "0x15",
+          "title": "POPS10.X"
+        },
+        {
+          "kind": "title",
+          "code": "0x16",
+          "title": "POPS11.X"
+        },
+        {
+          "kind": "title",
+          "code": "0x18",
+          "title": "POPS12.X"
+        },
+        {
+          "kind": "title",
+          "code": "0x19",
+          "title": "POPS13.X"
+        },
+        {
+          "kind": "title",
+          "code": "0x1a",
+          "title": "POPS14.X"
+        },
+        {
+          "kind": "title",
+          "code": "0x1c",
+          "title": "POPS15.X"
+        },
+        {
+          "kind": "title",
+          "code": "0x1d",
+          "title": "POPS16.X"
+        },
+        {
+          "kind": "title",
+          "code": "0x1e",
+          "title": "POPS17.X"
+        },
+        {
+          "kind": "title",
+          "code": "0x1f",
+          "title": "POPS18.X"
+        },
+        {
+          "kind": "title",
+          "code": "0x20",
+          "title": "POPS19.X"
+        },
+        {
+          "kind": "title",
+          "code": "0x21",
+          "title": "POPS20.X"
+        },
+        {
+          "kind": "title",
+          "code": "0x22",
+          "title": "ROCK1.X"
+        },
+        {
+          "kind": "title",
+          "code": "0x23",
+          "title": "ROCK2.X"
+        },
+        {
+          "kind": "title",
+          "code": "0x24",
+          "title": "ROCK3.X"
+        },
+        {
+          "kind": "title",
+          "code": "0x25",
+          "title": "ROCK4.X"
+        },
+        {
+          "kind": "title",
+          "code": "0x26",
+          "title": "ROCK5.X"
+        },
+        {
+          "kind": "title",
+          "code": "0x28",
+          "title": "ROCK6.X"
+        },
+        {
+          "kind": "title",
+          "code": "0x29",
+          "title": "ROCK7.X"
+        },
+        {
+          "kind": "title",
+          "code": "0x2a",
+          "title": "STRANG.X"
+        },
+        {
+          "kind": "title",
+          "code": "0x2c",
+          "title": "TEL.X"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/heartsoft.xml",
+      "source_order": 2426,
+      "archive": "shitai88",
+      "id": "shitai88-opn"
+    },
+    {
+      "title": "[PC-9801] キサントゲノス 魔性甦る時",
+      "driver": {
+        "name": "pc98dos",
+        "type": "opn",
+        "alias": "ハート電子産業",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "clockmul",
+          "value": "8"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "SDN_98.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "SDN.COM",
+          "offset": "0x09"
+        },
+        {
+          "type": "file",
+          "path": "WXA",
+          "offset": "0x10"
+        },
+        {
+          "type": "file",
+          "path": "WXB",
+          "offset": "0x11"
+        },
+        {
+          "type": "file",
+          "path": "WXC",
+          "offset": "0x12"
+        },
+        {
+          "type": "file",
+          "path": "WXD",
+          "offset": "0x13"
+        },
+        {
+          "type": "file",
+          "path": "WXE",
+          "offset": "0x14"
+        },
+        {
+          "type": "file",
+          "path": "WXF",
+          "offset": "0x15"
+        },
+        {
+          "type": "file",
+          "path": "WXG",
+          "offset": "0x16"
+        },
+        {
+          "type": "file",
+          "path": "WXH",
+          "offset": "0x17"
+        },
+        {
+          "type": "file",
+          "path": "WXI",
+          "offset": "0x18"
+        },
+        {
+          "type": "file",
+          "path": "WXJ",
+          "offset": "0x19"
+        },
+        {
+          "type": "file",
+          "path": "WXK",
+          "offset": "0x1a"
+        },
+        {
+          "type": "file",
+          "path": "WXL",
+          "offset": "0x1b"
+        },
+        {
+          "type": "file",
+          "path": "WXM",
+          "offset": "0x1c"
+        },
+        {
+          "type": "file",
+          "path": "WXN",
+          "offset": "0x1d"
+        },
+        {
+          "type": "file",
+          "path": "WXO",
+          "offset": "0x1e"
+        },
+        {
+          "type": "file",
+          "path": "WXP",
+          "offset": "0x1f"
+        },
+        {
+          "type": "file",
+          "path": "WXEF",
+          "offset": "0x20"
+        },
+        {
+          "type": "shell",
+          "path": "SDN_98",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "WXA"
+        },
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "WXB"
+        },
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "WXC"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "WXD"
+        },
+        {
+          "kind": "title",
+          "code": "0x14",
+          "title": "WXE"
+        },
+        {
+          "kind": "title",
+          "code": "0x15",
+          "title": "WXF"
+        },
+        {
+          "kind": "title",
+          "code": "0x16",
+          "title": "WXG"
+        },
+        {
+          "kind": "title",
+          "code": "0x17",
+          "title": "WXH"
+        },
+        {
+          "kind": "title",
+          "code": "0x18",
+          "title": "WXI"
+        },
+        {
+          "kind": "title",
+          "code": "0x19",
+          "title": "WXJ"
+        },
+        {
+          "kind": "title",
+          "code": "0x1a",
+          "title": "WXK"
+        },
+        {
+          "kind": "title",
+          "code": "0x1b",
+          "title": "WXL"
+        },
+        {
+          "kind": "title",
+          "code": "0x1c",
+          "title": "WXM"
+        },
+        {
+          "kind": "title",
+          "code": "0x1d",
+          "title": "WXN"
+        },
+        {
+          "kind": "title",
+          "code": "0x1e",
+          "title": "WXO"
+        },
+        {
+          "kind": "title",
+          "code": "0x1f",
+          "title": "WXP"
+        },
+        {
+          "kind": "title",
+          "code": "0x20",
+          "title": "WXEF"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/heartsoft.xml",
+      "source_order": 2427,
+      "archive": "xantgeno_98",
+      "id": "xantgeno-98-opn"
+    },
+    {
+      "title": "[PC-9801] GIDDY2",
+      "driver": {
+        "name": "pc98dos",
+        "type": "opn",
+        "alias": "ハート電子産業",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "clockmul",
+          "value": "8"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "SDN_98.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "SDN.COM",
+          "offset": "0x09"
+        },
+        {
+          "type": "file",
+          "path": "BGM00.X",
+          "offset": "0x10"
+        },
+        {
+          "type": "file",
+          "path": "BGM01.X",
+          "offset": "0x11"
+        },
+        {
+          "type": "file",
+          "path": "BGM02.X",
+          "offset": "0x12"
+        },
+        {
+          "type": "file",
+          "path": "BGM03.X",
+          "offset": "0x13"
+        },
+        {
+          "type": "file",
+          "path": "BGM04.X",
+          "offset": "0x14"
+        },
+        {
+          "type": "file",
+          "path": "BGM05.X",
+          "offset": "0x15"
+        },
+        {
+          "type": "file",
+          "path": "BGM06.X",
+          "offset": "0x16"
+        },
+        {
+          "type": "file",
+          "path": "BGM07.X",
+          "offset": "0x17"
+        },
+        {
+          "type": "file",
+          "path": "BGM08.X",
+          "offset": "0x18"
+        },
+        {
+          "type": "file",
+          "path": "BGM09.X",
+          "offset": "0x19"
+        },
+        {
+          "type": "file",
+          "path": "BGM10.X",
+          "offset": "0x1a"
+        },
+        {
+          "type": "file",
+          "path": "BGM11.X",
+          "offset": "0x1b"
+        },
+        {
+          "type": "file",
+          "path": "BGM12.X",
+          "offset": "0x1c"
+        },
+        {
+          "type": "file",
+          "path": "BGM13.X",
+          "offset": "0x1d"
+        },
+        {
+          "type": "file",
+          "path": "BGM14.X",
+          "offset": "0x1e"
+        },
+        {
+          "type": "file",
+          "path": "BGM15.X",
+          "offset": "0x1f"
+        },
+        {
+          "type": "file",
+          "path": "BGM16.X",
+          "offset": "0x20"
+        },
+        {
+          "type": "file",
+          "path": "BGM17.X",
+          "offset": "0x21"
+        },
+        {
+          "type": "file",
+          "path": "BGM18.X",
+          "offset": "0x22"
+        },
+        {
+          "type": "file",
+          "path": "BGM19.X",
+          "offset": "0x23"
+        },
+        {
+          "type": "file",
+          "path": "SE1",
+          "offset": "0x24"
+        },
+        {
+          "type": "file",
+          "path": "SE2",
+          "offset": "0x25"
+        },
+        {
+          "type": "file",
+          "path": "SE3",
+          "offset": "0x26"
+        },
+        {
+          "type": "file",
+          "path": "SE4",
+          "offset": "0x27"
+        },
+        {
+          "type": "file",
+          "path": "SE5",
+          "offset": "0x28"
+        },
+        {
+          "type": "file",
+          "path": "SE6",
+          "offset": "0x29"
+        },
+        {
+          "type": "file",
+          "path": "SE7",
+          "offset": "0x2a"
+        },
+        {
+          "type": "file",
+          "path": "SE8",
+          "offset": "0x2b"
+        },
+        {
+          "type": "shell",
+          "path": "SDN_98",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "BGM00.X"
+        },
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "BGM01.X"
+        },
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "BGM02.X"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "BGM03.X"
+        },
+        {
+          "kind": "title",
+          "code": "0x14",
+          "title": "BGM04.X"
+        },
+        {
+          "kind": "title",
+          "code": "0x15",
+          "title": "BGM05.X"
+        },
+        {
+          "kind": "title",
+          "code": "0x16",
+          "title": "BGM06.X"
+        },
+        {
+          "kind": "title",
+          "code": "0x17",
+          "title": "BGM07.X"
+        },
+        {
+          "kind": "title",
+          "code": "0x18",
+          "title": "BGM08.X"
+        },
+        {
+          "kind": "title",
+          "code": "0x19",
+          "title": "BGM09.X"
+        },
+        {
+          "kind": "title",
+          "code": "0x1a",
+          "title": "BGM10.X"
+        },
+        {
+          "kind": "title",
+          "code": "0x1b",
+          "title": "BGM11.X"
+        },
+        {
+          "kind": "title",
+          "code": "0x1c",
+          "title": "BGM12.X"
+        },
+        {
+          "kind": "title",
+          "code": "0x1d",
+          "title": "BGM13.X"
+        },
+        {
+          "kind": "title",
+          "code": "0x1e",
+          "title": "BGM14.X"
+        },
+        {
+          "kind": "title",
+          "code": "0x1f",
+          "title": "BGM15.X"
+        },
+        {
+          "kind": "title",
+          "code": "0x20",
+          "title": "BGM16.X"
+        },
+        {
+          "kind": "title",
+          "code": "0x21",
+          "title": "BGM17.X"
+        },
+        {
+          "kind": "title",
+          "code": "0x22",
+          "title": "BGM18.X"
+        },
+        {
+          "kind": "title",
+          "code": "0x23",
+          "title": "BGM19.X"
+        },
+        {
+          "kind": "title",
+          "code": "0x24",
+          "title": "SE1"
+        },
+        {
+          "kind": "title",
+          "code": "0x25",
+          "title": "SE2"
+        },
+        {
+          "kind": "title",
+          "code": "0x26",
+          "title": "SE3"
+        },
+        {
+          "kind": "title",
+          "code": "0x27",
+          "title": "SE4"
+        },
+        {
+          "kind": "title",
+          "code": "0x28",
+          "title": "SE5"
+        },
+        {
+          "kind": "title",
+          "code": "0x29",
+          "title": "SE6"
+        },
+        {
+          "kind": "title",
+          "code": "0x2a",
+          "title": "SE7"
+        },
+        {
+          "kind": "title",
+          "code": "0x2b",
+          "title": "SE8"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/heartsoft.xml",
+      "source_order": 2428,
+      "archive": "giddy2_98",
+      "id": "giddy2-98-opn"
+    },
+    {
+      "title": "[PC-9801] シャレイドマジック",
+      "driver": {
+        "name": "pc98dos",
+        "type": "opn",
+        "alias": "ハート電子産業",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "clockmul",
+          "value": "8"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "SDN_98.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "SDN.COM",
+          "offset": "0x09"
+        },
+        {
+          "type": "file",
+          "path": "BGM00.X",
+          "offset": "0x10"
+        },
+        {
+          "type": "file",
+          "path": "BGM01.X",
+          "offset": "0x11"
+        },
+        {
+          "type": "file",
+          "path": "BGM02.X",
+          "offset": "0x12"
+        },
+        {
+          "type": "file",
+          "path": "BGM03.X",
+          "offset": "0x13"
+        },
+        {
+          "type": "file",
+          "path": "BGM04.X",
+          "offset": "0x14"
+        },
+        {
+          "type": "file",
+          "path": "BGM05.X",
+          "offset": "0x15"
+        },
+        {
+          "type": "file",
+          "path": "BGM06.X",
+          "offset": "0x16"
+        },
+        {
+          "type": "file",
+          "path": "BGM07.X",
+          "offset": "0x17"
+        },
+        {
+          "type": "file",
+          "path": "BGM08.X",
+          "offset": "0x18"
+        },
+        {
+          "type": "file",
+          "path": "BGM09.X",
+          "offset": "0x19"
+        },
+        {
+          "type": "file",
+          "path": "BGM10.X",
+          "offset": "0x1a"
+        },
+        {
+          "type": "file",
+          "path": "BGM11.X",
+          "offset": "0x1b"
+        },
+        {
+          "type": "file",
+          "path": "BGM12.X",
+          "offset": "0x1c"
+        },
+        {
+          "type": "file",
+          "path": "BGM13.X",
+          "offset": "0x1d"
+        },
+        {
+          "type": "file",
+          "path": "BGM14.X",
+          "offset": "0x1e"
+        },
+        {
+          "type": "file",
+          "path": "BGM15.X",
+          "offset": "0x1f"
+        },
+        {
+          "type": "file",
+          "path": "BGM99.X",
+          "offset": "0x20"
+        },
+        {
+          "type": "file",
+          "path": "CAT.X",
+          "offset": "0x21"
+        },
+        {
+          "type": "shell",
+          "path": "SDN_98",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "BGM00.X"
+        },
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "BGM01.X"
+        },
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "BGM02.X"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "BGM03.X"
+        },
+        {
+          "kind": "title",
+          "code": "0x14",
+          "title": "BGM04.X"
+        },
+        {
+          "kind": "title",
+          "code": "0x15",
+          "title": "BGM05.X"
+        },
+        {
+          "kind": "title",
+          "code": "0x16",
+          "title": "BGM06.X"
+        },
+        {
+          "kind": "title",
+          "code": "0x17",
+          "title": "BGM07.X"
+        },
+        {
+          "kind": "title",
+          "code": "0x18",
+          "title": "BGM08.X"
+        },
+        {
+          "kind": "title",
+          "code": "0x19",
+          "title": "BGM09.X"
+        },
+        {
+          "kind": "title",
+          "code": "0x1a",
+          "title": "BGM10.X"
+        },
+        {
+          "kind": "title",
+          "code": "0x1b",
+          "title": "BGM11.X"
+        },
+        {
+          "kind": "title",
+          "code": "0x1c",
+          "title": "BGM12.X"
+        },
+        {
+          "kind": "title",
+          "code": "0x1d",
+          "title": "BGM13.X"
+        },
+        {
+          "kind": "title",
+          "code": "0x1e",
+          "title": "BGM14.X"
+        },
+        {
+          "kind": "title",
+          "code": "0x1f",
+          "title": "BGM15.X"
+        },
+        {
+          "kind": "title",
+          "code": "0x20",
+          "title": "BGM99.X"
+        },
+        {
+          "kind": "title",
+          "code": "0x21",
+          "title": "CAT.X"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/heartsoft.xml",
+      "source_order": 2429,
+      "archive": "sharedem_98",
+      "id": "sharedem-98-opn"
+    },
+    {
+      "title": "[MSX] 帰ってきた 探偵団X",
+      "driver": {
+        "name": "msx",
+        "type": "generic",
+        "alias": "ハート電子産業",
+        "platform": "MSX"
+      },
+      "options": [
+        {
+          "name": "mdata_addr",
+          "value": "0x8000"
+        },
+        {
+          "name": "mdata_size",
+          "value": "0x3000"
+        },
+        {
+          "name": "mfile_size",
+          "value": "0x3000"
+        },
+        {
+          "name": "mdata_num",
+          "value": "0x40"
+        },
+        {
+          "name": "psg_mix",
+          "value": "0x60"
+        },
+        {
+          "name": "init_pc",
+          "value": "0x0400"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "patch",
+          "offset": "0x0400"
+        },
+        {
+          "type": "code",
+          "path": "PSGDRV.SYS",
+          "offset": "0xd000"
+        },
+        {
+          "type": "bgm",
+          "path": "X000.EXE",
+          "offset": "0x00"
+        },
+        {
+          "type": "bgm",
+          "path": "X001.EXE",
+          "offset": "0x01"
+        },
+        {
+          "type": "bgm",
+          "path": "X002.EXE",
+          "offset": "0x02"
+        },
+        {
+          "type": "bgm",
+          "path": "X101.EXE",
+          "offset": "0x03"
+        },
+        {
+          "type": "bgm",
+          "path": "X300.EXE",
+          "offset": "0x04"
+        },
+        {
+          "type": "bgm",
+          "path": "X301.EXE",
+          "offset": "0x05"
+        },
+        {
+          "type": "bgm",
+          "path": "X302.EXE",
+          "offset": "0x06"
+        },
+        {
+          "type": "bgm",
+          "path": "X303.EXE",
+          "offset": "0x07"
+        },
+        {
+          "type": "bgm",
+          "path": "X304.EXE",
+          "offset": "0x08"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x239d0000",
+          "title": "X000.EXE : 00 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x239d0100",
+          "title": "X000.EXE : 01 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x239d0200",
+          "title": "X000.EXE : 02 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x239d0300",
+          "title": "X000.EXE : 03 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x239d0400",
+          "title": "X000.EXE : 04 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x11b00001",
+          "title": "X001.EXE : 00 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x11b00101",
+          "title": "X001.EXE : 01 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x1c0b0002",
+          "title": "X002.EXE : 00 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x224d0003",
+          "title": "X101.EXE : 00 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x224d0503",
+          "title": "X101.EXE : 05 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x18570004",
+          "title": "X300.EXE : 00 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x27c00005",
+          "title": "X301.EXE : 00 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x27c00105",
+          "title": "X301.EXE : 01 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x1afb0006",
+          "title": "X302.EXE : 00 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x1afb0106",
+          "title": "X302.EXE : 01 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x15de0007",
+          "title": "X303.EXE : 00 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x15de0107",
+          "title": "X303.EXE : 01 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x15de0207",
+          "title": "X303.EXE : 02 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x26c00008",
+          "title": "X304.EXE : 00 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x26c00108",
+          "title": "X304.EXE : 01 :"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/heartsoft.xml",
+      "source_order": 2430,
+      "archive": "tantexr_msx",
+      "id": "tantexr-msx-generic"
+    },
+    {
+      "title": "[MSX] 陽炎迷宮(PSG)",
+      "driver": {
+        "name": "msx",
+        "type": "generic",
+        "alias": "ハート電子産業",
+        "platform": "MSX"
+      },
+      "options": [
+        {
+          "name": "mdata_addr",
+          "value": "0xa000"
+        },
+        {
+          "name": "mdata_size",
+          "value": "0x1000"
+        },
+        {
+          "name": "mfile_size",
+          "value": "0x1000"
+        },
+        {
+          "name": "init_pc",
+          "value": "0x0400"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "patch",
+          "offset": "0x0400"
+        },
+        {
+          "type": "code",
+          "path": "PSGDRV.SYS",
+          "offset": "0xc3f9"
+        },
+        {
+          "type": "bgm",
+          "path": "PSG_01.BGX",
+          "offset": "0x00"
+        },
+        {
+          "type": "bgm",
+          "path": "PSG_02.BGX",
+          "offset": "0x01"
+        },
+        {
+          "type": "bgm",
+          "path": "PSG_03.BGX",
+          "offset": "0x02"
+        },
+        {
+          "type": "bgm",
+          "path": "PSG_04.BGX",
+          "offset": "0x03"
+        },
+        {
+          "type": "bgm",
+          "path": "PSG_05.BGX",
+          "offset": "0x04"
+        },
+        {
+          "type": "bgm",
+          "path": "PSG_06.BGX",
+          "offset": "0x05"
+        },
+        {
+          "type": "bgm",
+          "path": "PSG_07.BGX",
+          "offset": "0x06"
+        },
+        {
+          "type": "bgm",
+          "path": "PSG_08.BGX",
+          "offset": "0x07"
+        },
+        {
+          "type": "bgm",
+          "path": "PSG_09.BGX",
+          "offset": "0x08"
+        },
+        {
+          "type": "bgm",
+          "path": "PSG_10.BGX",
+          "offset": "0x09"
+        },
+        {
+          "type": "bgm",
+          "path": "PSG_11.BGX",
+          "offset": "0x0a"
+        },
+        {
+          "type": "bgm",
+          "path": "PSG_12.BGX",
+          "offset": "0x0b"
+        },
+        {
+          "type": "bgm",
+          "path": "PSG_13.BGX",
+          "offset": "0x0c"
+        },
+        {
+          "type": "bgm",
+          "path": "PSG_14.BGX",
+          "offset": "0x0d"
+        },
+        {
+          "type": "bgm",
+          "path": "PSG_15.BGX",
+          "offset": "0x0e"
+        },
+        {
+          "type": "bgm",
+          "path": "PSG_16.BGX",
+          "offset": "0x0f"
+        },
+        {
+          "type": "bgm",
+          "path": "PSG_17.BGX",
+          "offset": "0x10"
+        },
+        {
+          "type": "bgm",
+          "path": "PSG_18.BGX",
+          "offset": "0x11"
+        },
+        {
+          "type": "bgm",
+          "path": "PSG_19.BGX",
+          "offset": "0x12"
+        },
+        {
+          "type": "bgm",
+          "path": "PSG_20.BGX",
+          "offset": "0x13"
+        },
+        {
+          "type": "bgm",
+          "path": "PSG_21.BGX",
+          "offset": "0x14"
+        },
+        {
+          "type": "bgm",
+          "path": "PSG_22.BGX",
+          "offset": "0x15"
+        },
+        {
+          "type": "bgm",
+          "path": "PSG_23.BGX",
+          "offset": "0x16"
+        },
+        {
+          "type": "bgm",
+          "path": "PSG_24.BGX",
+          "offset": "0x17"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x00",
+          "title": "PSG_01.BGX"
+        },
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "PSG_02.BGX"
+        },
+        {
+          "kind": "title",
+          "code": "0x02",
+          "title": "PSG_03.BGX"
+        },
+        {
+          "kind": "title",
+          "code": "0x03",
+          "title": "PSG_04.BGX"
+        },
+        {
+          "kind": "title",
+          "code": "0x04",
+          "title": "PSG_05.BGX"
+        },
+        {
+          "kind": "title",
+          "code": "0x05",
+          "title": "PSG_06.BGX"
+        },
+        {
+          "kind": "title",
+          "code": "0x06",
+          "title": "PSG_07.BGX"
+        },
+        {
+          "kind": "title",
+          "code": "0x07",
+          "title": "PSG_08.BGX"
+        },
+        {
+          "kind": "title",
+          "code": "0x08",
+          "title": "PSG_09.BGX"
+        },
+        {
+          "kind": "title",
+          "code": "0x09",
+          "title": "PSG_10.BGX"
+        },
+        {
+          "kind": "title",
+          "code": "0x0a",
+          "title": "PSG_11.BGX"
+        },
+        {
+          "kind": "title",
+          "code": "0x0b",
+          "title": "PSG_12.BGX"
+        },
+        {
+          "kind": "title",
+          "code": "0x0c",
+          "title": "PSG_13.BGX"
+        },
+        {
+          "kind": "title",
+          "code": "0x0d",
+          "title": "PSG_14.BGX"
+        },
+        {
+          "kind": "title",
+          "code": "0x0e",
+          "title": "PSG_15.BGX"
+        },
+        {
+          "kind": "title",
+          "code": "0x0f",
+          "title": "PSG_16.BGX"
+        },
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "PSG_17.BGX"
+        },
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "PSG_18.BGX"
+        },
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "PSG_19.BGX"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "PSG_20.BGX"
+        },
+        {
+          "kind": "title",
+          "code": "0x14",
+          "title": "PSG_21.BGX"
+        },
+        {
+          "kind": "title",
+          "code": "0x15",
+          "title": "PSG_22.BGX"
+        },
+        {
+          "kind": "title",
+          "code": "0x16",
+          "title": "PSG_23.BGX"
+        },
+        {
+          "kind": "title",
+          "code": "0x17",
+          "title": "PSG_24.BGX"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/heartsoft.xml",
+      "source_order": 2431,
+      "archive": "kagerou_msx",
+      "id": "kagerou-msx-generic"
+    },
+    {
+      "title": "[MSX] 陽炎迷宮(OPLL)",
+      "driver": {
+        "name": "msx",
+        "type": "generic",
+        "alias": "ハート電子産業",
+        "platform": "MSX"
+      },
+      "options": [
+        {
+          "name": "mdata_addr",
+          "value": "0xa000"
+        },
+        {
+          "name": "mdata_size",
+          "value": "0x1200"
+        },
+        {
+          "name": "mfile_size",
+          "value": "0x1200"
+        },
+        {
+          "name": "use_opll",
+          "value": "0x01"
+        },
+        {
+          "name": "init_pc",
+          "value": "0x0400"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "patch",
+          "offset": "0x0400"
+        },
+        {
+          "type": "code",
+          "path": "fmpac.rom",
+          "offset": "0x4000"
+        },
+        {
+          "type": "bgm",
+          "path": "FM_01.BGX",
+          "offset": "0x00"
+        },
+        {
+          "type": "bgm",
+          "path": "FM_02.BGX",
+          "offset": "0x01"
+        },
+        {
+          "type": "bgm",
+          "path": "FM_03.BGX",
+          "offset": "0x02"
+        },
+        {
+          "type": "bgm",
+          "path": "FM_04.BGX",
+          "offset": "0x03"
+        },
+        {
+          "type": "bgm",
+          "path": "FM_05.BGX",
+          "offset": "0x04"
+        },
+        {
+          "type": "bgm",
+          "path": "FM_06.BGX",
+          "offset": "0x05"
+        },
+        {
+          "type": "bgm",
+          "path": "FM_07.BGX",
+          "offset": "0x06"
+        },
+        {
+          "type": "bgm",
+          "path": "FM_08.BGX",
+          "offset": "0x07"
+        },
+        {
+          "type": "bgm",
+          "path": "FM_09.BGX",
+          "offset": "0x08"
+        },
+        {
+          "type": "bgm",
+          "path": "FM_10.BGX",
+          "offset": "0x09"
+        },
+        {
+          "type": "bgm",
+          "path": "FM_11.BGX",
+          "offset": "0x0a"
+        },
+        {
+          "type": "bgm",
+          "path": "FM_12.BGX",
+          "offset": "0x0b"
+        },
+        {
+          "type": "bgm",
+          "path": "FM_13.BGX",
+          "offset": "0x0c"
+        },
+        {
+          "type": "bgm",
+          "path": "FM_14.BGX",
+          "offset": "0x0d"
+        },
+        {
+          "type": "bgm",
+          "path": "FM_15.BGX",
+          "offset": "0x0e"
+        },
+        {
+          "type": "bgm",
+          "path": "FM_16.BGX",
+          "offset": "0x0f"
+        },
+        {
+          "type": "bgm",
+          "path": "FM_17.BGX",
+          "offset": "0x10"
+        },
+        {
+          "type": "bgm",
+          "path": "FM_18.BGX",
+          "offset": "0x11"
+        },
+        {
+          "type": "bgm",
+          "path": "FM_19.BGX",
+          "offset": "0x12"
+        },
+        {
+          "type": "bgm",
+          "path": "FM_20.BGX",
+          "offset": "0x13"
+        },
+        {
+          "type": "bgm",
+          "path": "FM_21.BGX",
+          "offset": "0x14"
+        },
+        {
+          "type": "bgm",
+          "path": "FM_22.BGX",
+          "offset": "0x15"
+        },
+        {
+          "type": "bgm",
+          "path": "FM_23.BGX",
+          "offset": "0x16"
+        },
+        {
+          "type": "bgm",
+          "path": "FM_24.BGX",
+          "offset": "0x17"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x00",
+          "title": "FM_01.BGX"
+        },
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "FM_02.BGX"
+        },
+        {
+          "kind": "title",
+          "code": "0x02",
+          "title": "FM_03.BGX"
+        },
+        {
+          "kind": "title",
+          "code": "0x03",
+          "title": "FM_04.BGX"
+        },
+        {
+          "kind": "title",
+          "code": "0x04",
+          "title": "FM_05.BGX"
+        },
+        {
+          "kind": "title",
+          "code": "0x05",
+          "title": "FM_06.BGX"
+        },
+        {
+          "kind": "title",
+          "code": "0x06",
+          "title": "FM_07.BGX"
+        },
+        {
+          "kind": "title",
+          "code": "0x07",
+          "title": "FM_08.BGX"
+        },
+        {
+          "kind": "title",
+          "code": "0x08",
+          "title": "FM_09.BGX"
+        },
+        {
+          "kind": "title",
+          "code": "0x09",
+          "title": "FM_10.BGX"
+        },
+        {
+          "kind": "title",
+          "code": "0x0a",
+          "title": "FM_11.BGX"
+        },
+        {
+          "kind": "title",
+          "code": "0x0b",
+          "title": "FM_12.BGX"
+        },
+        {
+          "kind": "title",
+          "code": "0x0c",
+          "title": "FM_13.BGX"
+        },
+        {
+          "kind": "title",
+          "code": "0x0d",
+          "title": "FM_14.BGX"
+        },
+        {
+          "kind": "title",
+          "code": "0x0e",
+          "title": "FM_15.BGX"
+        },
+        {
+          "kind": "title",
+          "code": "0x0f",
+          "title": "FM_16.BGX"
+        },
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "FM_17.BGX"
+        },
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "FM_18.BGX"
+        },
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "FM_19.BGX"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "FM_20.BGX"
+        },
+        {
+          "kind": "title",
+          "code": "0x14",
+          "title": "FM_21.BGX"
+        },
+        {
+          "kind": "title",
+          "code": "0x15",
+          "title": "FM_22.BGX"
+        },
+        {
+          "kind": "title",
+          "code": "0x16",
+          "title": "FM_23.BGX"
+        },
+        {
+          "kind": "title",
+          "code": "0x17",
+          "title": "FM_24.BGX"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/heartsoft.xml",
+      "source_order": 2432,
+      "archive": "kagerou_msx",
+      "id": "kagerou-msx-generic-2"
+    },
+    {
+      "title": "[MSX] 毎日がえっち(OPLL)",
+      "driver": {
+        "name": "msx",
+        "type": "generic",
+        "alias": "ハート電子産業",
+        "platform": "MSX"
+      },
+      "options": [
+        {
+          "name": "mdata_addr",
+          "value": "0x8000"
+        },
+        {
+          "name": "mdata_size",
+          "value": "0x2000"
+        },
+        {
+          "name": "mfile_size",
+          "value": "0x2000"
+        },
+        {
+          "name": "use_opll",
+          "value": "0x01"
+        },
+        {
+          "name": "init_pc",
+          "value": "0x0400"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "patch",
+          "offset": "0x0400"
+        },
+        {
+          "type": "code",
+          "path": "OPLLDRV.BIN",
+          "offset": "0xca00"
+        },
+        {
+          "type": "bgm",
+          "path": "FM01.BIN",
+          "offset": "0x00"
+        },
+        {
+          "type": "bgm",
+          "path": "FM02.BIN",
+          "offset": "0x01"
+        },
+        {
+          "type": "bgm",
+          "path": "FM03.BIN",
+          "offset": "0x02"
+        },
+        {
+          "type": "bgm",
+          "path": "FM04.BIN",
+          "offset": "0x03"
+        },
+        {
+          "type": "bgm",
+          "path": "FM05.BIN",
+          "offset": "0x04"
+        },
+        {
+          "type": "bgm",
+          "path": "FM06.BIN",
+          "offset": "0x05"
+        },
+        {
+          "type": "bgm",
+          "path": "FM07.BIN",
+          "offset": "0x06"
+        },
+        {
+          "type": "bgm",
+          "path": "FM08.BIN",
+          "offset": "0x07"
+        },
+        {
+          "type": "bgm",
+          "path": "FM09.BIN",
+          "offset": "0x08"
+        },
+        {
+          "type": "bgm",
+          "path": "FM10.BIN",
+          "offset": "0x09"
+        },
+        {
+          "type": "bgm",
+          "path": "FM11.BIN",
+          "offset": "0x0a"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x00",
+          "title": "Music 01"
+        },
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "Music 02"
+        },
+        {
+          "kind": "title",
+          "code": "0x02",
+          "title": "Music 03"
+        },
+        {
+          "kind": "title",
+          "code": "0x03",
+          "title": "Music 04"
+        },
+        {
+          "kind": "title",
+          "code": "0x04",
+          "title": "Music 05"
+        },
+        {
+          "kind": "title",
+          "code": "0x05",
+          "title": "Music 06"
+        },
+        {
+          "kind": "title",
+          "code": "0x06",
+          "title": "Music 07"
+        },
+        {
+          "kind": "title",
+          "code": "0x07",
+          "title": "Music 08"
+        },
+        {
+          "kind": "title",
+          "code": "0x08",
+          "title": "Music 09"
+        },
+        {
+          "kind": "title",
+          "code": "0x09",
+          "title": "Music 10"
+        },
+        {
+          "kind": "title",
+          "code": "0x0a",
+          "title": "Music 11"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/heartsoft.xml",
+      "source_order": 2433,
+      "archive": "mainitih_msx",
+      "id": "mainitih-msx-generic"
+    },
+    {
+      "title": "[MSX] 毎日がえっち(PSG)",
+      "driver": {
+        "name": "msx",
+        "type": "generic",
+        "alias": "ハート電子産業",
+        "platform": "MSX"
+      },
+      "options": [
+        {
+          "name": "mdata_addr",
+          "value": "0x8000"
+        },
+        {
+          "name": "mdata_size",
+          "value": "0x1000"
+        },
+        {
+          "name": "mfile_size",
+          "value": "0x1000"
+        },
+        {
+          "name": "init_pc",
+          "value": "0x0400"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "patch2",
+          "offset": "0x0400"
+        },
+        {
+          "type": "code",
+          "path": "PSGDRV.BIN",
+          "offset": "0xca00"
+        },
+        {
+          "type": "bgm",
+          "path": "PSG01.BIN",
+          "offset": "0x00"
+        },
+        {
+          "type": "bgm",
+          "path": "PSG02.BIN",
+          "offset": "0x01"
+        },
+        {
+          "type": "bgm",
+          "path": "PSG03.BIN",
+          "offset": "0x02"
+        },
+        {
+          "type": "bgm",
+          "path": "PSG04.BIN",
+          "offset": "0x03"
+        },
+        {
+          "type": "bgm",
+          "path": "PSG05.BIN",
+          "offset": "0x04"
+        },
+        {
+          "type": "bgm",
+          "path": "PSG06.BIN",
+          "offset": "0x05"
+        },
+        {
+          "type": "bgm",
+          "path": "PSG07.BIN",
+          "offset": "0x06"
+        },
+        {
+          "type": "bgm",
+          "path": "PSG08.BIN",
+          "offset": "0x07"
+        },
+        {
+          "type": "bgm",
+          "path": "PSG09.BIN",
+          "offset": "0x08"
+        },
+        {
+          "type": "bgm",
+          "path": "PSG10.BIN",
+          "offset": "0x09"
+        },
+        {
+          "type": "bgm",
+          "path": "PSG11.BIN",
+          "offset": "0x0a"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x00",
+          "title": "Music 01"
+        },
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "Music 02"
+        },
+        {
+          "kind": "title",
+          "code": "0x02",
+          "title": "Music 03"
+        },
+        {
+          "kind": "title",
+          "code": "0x03",
+          "title": "Music 04"
+        },
+        {
+          "kind": "title",
+          "code": "0x04",
+          "title": "Music 05"
+        },
+        {
+          "kind": "title",
+          "code": "0x05",
+          "title": "Music 06"
+        },
+        {
+          "kind": "title",
+          "code": "0x06",
+          "title": "Music 07"
+        },
+        {
+          "kind": "title",
+          "code": "0x07",
+          "title": "Music 08"
+        },
+        {
+          "kind": "title",
+          "code": "0x08",
+          "title": "Music 09"
+        },
+        {
+          "kind": "title",
+          "code": "0x09",
+          "title": "Music 10"
+        },
+        {
+          "kind": "title",
+          "code": "0x0a",
+          "title": "Music 11"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/heartsoft.xml",
+      "source_order": 2434,
+      "archive": "mainitih_msx",
+      "id": "mainitih-msx-generic-2"
+    },
+    {
+      "title": "[PC-9801] 風へ 翼よ、愛あるところへ…",
+      "driver": {
+        "name": "pc98dos",
+        "type": "opn",
+        "alias": "ハート電子産業",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "clockmul",
+          "value": "8"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "SDN_98.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "SDN.COM",
+          "offset": "0x09"
+        },
+        {
+          "type": "file",
+          "path": "BGM01.X",
+          "offset": "0x10"
+        },
+        {
+          "type": "file",
+          "path": "BGM02.X",
+          "offset": "0x11"
+        },
+        {
+          "type": "file",
+          "path": "BGM03.X",
+          "offset": "0x12"
+        },
+        {
+          "type": "file",
+          "path": "BGM04.X",
+          "offset": "0x13"
+        },
+        {
+          "type": "file",
+          "path": "BGM05.X",
+          "offset": "0x14"
+        },
+        {
+          "type": "file",
+          "path": "BGM06.X",
+          "offset": "0x15"
+        },
+        {
+          "type": "file",
+          "path": "BGM07.X",
+          "offset": "0x16"
+        },
+        {
+          "type": "file",
+          "path": "BGM08.X",
+          "offset": "0x17"
+        },
+        {
+          "type": "file",
+          "path": "BGM09.X",
+          "offset": "0x18"
+        },
+        {
+          "type": "file",
+          "path": "BGM10.X",
+          "offset": "0x19"
+        },
+        {
+          "type": "file",
+          "path": "BGM11.X",
+          "offset": "0x1a"
+        },
+        {
+          "type": "file",
+          "path": "BGM12.X",
+          "offset": "0x1b"
+        },
+        {
+          "type": "file",
+          "path": "BGM13.X",
+          "offset": "0x1c"
+        },
+        {
+          "type": "file",
+          "path": "BGM14.X",
+          "offset": "0x1d"
+        },
+        {
+          "type": "file",
+          "path": "BGM15.X",
+          "offset": "0x1e"
+        },
+        {
+          "type": "file",
+          "path": "BGM16.X",
+          "offset": "0x1f"
+        },
+        {
+          "type": "file",
+          "path": "BGM17.X",
+          "offset": "0x20"
+        },
+        {
+          "type": "file",
+          "path": "BGM18.X",
+          "offset": "0x21"
+        },
+        {
+          "type": "file",
+          "path": "PIGEON.X",
+          "offset": "0x22"
+        },
+        {
+          "type": "shell",
+          "path": "SDN_98",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "BGM01.X :"
+        },
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "BGM02.X :"
+        },
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "BGM03.X :"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "BGM04.X :"
+        },
+        {
+          "kind": "title",
+          "code": "0x15",
+          "title": "BGM06.X :"
+        },
+        {
+          "kind": "title",
+          "code": "0x16",
+          "title": "BGM07.X :"
+        },
+        {
+          "kind": "title",
+          "code": "0x17",
+          "title": "BGM08.X :"
+        },
+        {
+          "kind": "title",
+          "code": "0x18",
+          "title": "BGM09.X :"
+        },
+        {
+          "kind": "title",
+          "code": "0x19",
+          "title": "BGM10.X :"
+        },
+        {
+          "kind": "title",
+          "code": "0x1a",
+          "title": "BGM11.X :"
+        },
+        {
+          "kind": "title",
+          "code": "0x1b",
+          "title": "BGM12.X :"
+        },
+        {
+          "kind": "title",
+          "code": "0x1c",
+          "title": "BGM13.X :"
+        },
+        {
+          "kind": "title",
+          "code": "0x1d",
+          "title": "BGM14.X :"
+        },
+        {
+          "kind": "title",
+          "code": "0x1e",
+          "title": "BGM15.X :"
+        },
+        {
+          "kind": "title",
+          "code": "0x1f",
+          "title": "BGM16.X :"
+        },
+        {
+          "kind": "title",
+          "code": "0x20",
+          "title": "BGM17.X :"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/heartsoft.xml",
+      "source_order": 2435,
+      "archive": "kazehe_98",
+      "id": "kazehe-98-opn"
+    }
+  ]
+}

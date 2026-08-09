@@ -1,0 +1,3425 @@
+{
+  "format": "hoot-catalog-shard",
+  "version": 1,
+  "source_file": "xml/sharp.xml",
+  "date": "2005/09/25",
+  "comments": [
+    " //SHARP "
+  ],
+  "games": [
+    {
+      "title": "[X68000] GRADIUS",
+      "driver": {
+        "name": "x68k",
+        "type": "generic",
+        "alias": "SHARP",
+        "platform": "SHARP X68000"
+      },
+      "options": [],
+      "assets": [
+        {
+          "type": "code",
+          "path": "gra68snd.bin"
+        },
+        {
+          "type": "code",
+          "path": "OPMX68.68K",
+          "offset": "0x08000"
+        },
+        {
+          "type": "code",
+          "path": "BGM.BIN",
+          "offset": "0x10000"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x00",
+          "title": "演奏停止"
+        },
+        {
+          "kind": "title",
+          "code": "0x0b",
+          "title": "Creadit"
+        },
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "Beginning Of The History"
+        },
+        {
+          "kind": "title",
+          "code": "0x02",
+          "title": "Challenger 1985"
+        },
+        {
+          "kind": "title",
+          "code": "0x03",
+          "title": "Beat Back"
+        },
+        {
+          "kind": "title",
+          "code": "0x04",
+          "title": "Blank Mask"
+        },
+        {
+          "kind": "title",
+          "code": "0x05",
+          "title": "Free Flyer"
+        },
+        {
+          "kind": "title",
+          "code": "0x06",
+          "title": "Mazed Music"
+        },
+        {
+          "kind": "title",
+          "code": "0x07",
+          "title": "Mechanical Globule"
+        },
+        {
+          "kind": "title",
+          "code": "0x08",
+          "title": "Final Attack"
+        },
+        {
+          "kind": "title",
+          "code": "0x09",
+          "title": "Aircraft Carrier"
+        },
+        {
+          "kind": "title",
+          "code": "0x0a",
+          "title": "Game Over"
+        },
+        {
+          "kind": "title",
+          "code": "0x0c",
+          "title": "Historic Soldier"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/sharp.xml",
+      "source_order": 3994,
+      "archive": "gra68snd",
+      "id": "gra68snd-generic"
+    },
+    {
+      "title": "[X68000] NEW PrintShop PRO-68K",
+      "driver": {
+        "name": "x68k",
+        "type": "generic",
+        "alias": "SHARP",
+        "platform": "SHARP X68000"
+      },
+      "options": [],
+      "assets": [
+        {
+          "type": "code",
+          "path": "opmdrv.bin"
+        },
+        {
+          "type": "x",
+          "path": "OPMDRV.X",
+          "offset": "0x08000"
+        },
+        {
+          "type": "code",
+          "path": "MU_SOUND.OPM",
+          "offset": "0x24000"
+        },
+        {
+          "type": "code",
+          "path": "ps_banner.opm",
+          "offset": "0x2c000"
+        },
+        {
+          "type": "code",
+          "path": "ps_envelope.opm",
+          "offset": "0x30000"
+        },
+        {
+          "type": "code",
+          "path": "ps_gedit.opm",
+          "offset": "0x34000"
+        },
+        {
+          "type": "code",
+          "path": "ps_greet.opm",
+          "offset": "0x38000"
+        },
+        {
+          "type": "code",
+          "path": "ps_letter.opm",
+          "offset": "0x3c000"
+        },
+        {
+          "type": "code",
+          "path": "ps_post.opm",
+          "offset": "0x40000"
+        },
+        {
+          "type": "code",
+          "path": "ps_print.opm",
+          "offset": "0x44000"
+        },
+        {
+          "type": "code",
+          "path": "ps_screen.opm",
+          "offset": "0x48000"
+        },
+        {
+          "type": "code",
+          "path": "ps_sign.opm",
+          "offset": "0x4c000"
+        },
+        {
+          "type": "code",
+          "path": "ps_title.opm",
+          "offset": "0x50000"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x0204",
+          "title": "ps_banner.opm"
+        },
+        {
+          "kind": "title",
+          "code": "0x0205",
+          "title": "ps_envelope.opm"
+        },
+        {
+          "kind": "title",
+          "code": "0x0206",
+          "title": "ps_gedit.opm"
+        },
+        {
+          "kind": "title",
+          "code": "0x0207",
+          "title": "ps_greet.opm"
+        },
+        {
+          "kind": "title",
+          "code": "0x0208",
+          "title": "ps_letter.opm"
+        },
+        {
+          "kind": "title",
+          "code": "0x0209",
+          "title": "ps_post.opm"
+        },
+        {
+          "kind": "title",
+          "code": "0x020a",
+          "title": "ps_print.opm"
+        },
+        {
+          "kind": "title",
+          "code": "0x020b",
+          "title": "ps_screen.opm"
+        },
+        {
+          "kind": "title",
+          "code": "0x020c",
+          "title": "ps_sign.opm"
+        },
+        {
+          "kind": "title",
+          "code": "0x020d",
+          "title": "ps_title.opm"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/sharp.xml",
+      "source_order": 3995,
+      "archive": "nps68snd",
+      "id": "nps68snd-generic"
+    },
+    {
+      "title": "[X68000] NEW PrintShop PRO-68K Ver2.0",
+      "driver": {
+        "name": "x68k",
+        "type": "generic",
+        "alias": "SHARP",
+        "platform": "SHARP X68000"
+      },
+      "options": [],
+      "assets": [
+        {
+          "type": "code",
+          "path": "opmdrv.bin"
+        },
+        {
+          "type": "x",
+          "path": "OPMDRV.X",
+          "offset": "0x08000"
+        },
+        {
+          "type": "code",
+          "path": "MU_SOUND.OPM",
+          "offset": "0x24000"
+        },
+        {
+          "type": "code",
+          "path": "PS_BANNER.OPM",
+          "offset": "0x2c000"
+        },
+        {
+          "type": "code",
+          "path": "PS_CALENDAR.OPM",
+          "offset": "0x30000"
+        },
+        {
+          "type": "code",
+          "path": "PS_CASSETTE.OPM",
+          "offset": "0x34000"
+        },
+        {
+          "type": "code",
+          "path": "PS_ENVELOPE.OPM",
+          "offset": "0x38000"
+        },
+        {
+          "type": "code",
+          "path": "PS_GEDIT.OPM",
+          "offset": "0x3c000"
+        },
+        {
+          "type": "code",
+          "path": "PS_GREETING.OPM",
+          "offset": "0x40000"
+        },
+        {
+          "type": "code",
+          "path": "PS_LETTER.OPM",
+          "offset": "0x44000"
+        },
+        {
+          "type": "code",
+          "path": "PS_POST.OPM",
+          "offset": "0x48000"
+        },
+        {
+          "type": "code",
+          "path": "PS_PRINT.OPM",
+          "offset": "0x4c000"
+        },
+        {
+          "type": "code",
+          "path": "PS_SIGN.OPM",
+          "offset": "0x50000"
+        },
+        {
+          "type": "code",
+          "path": "PS_TEDIT.OPM",
+          "offset": "0x54000"
+        },
+        {
+          "type": "code",
+          "path": "PS_TITLE.OPM",
+          "offset": "0x58000"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x0204",
+          "title": "PS_BANNER.OPM"
+        },
+        {
+          "kind": "title",
+          "code": "0x0205",
+          "title": "PS_CALENDAR.OPM"
+        },
+        {
+          "kind": "title",
+          "code": "0x0206",
+          "title": "PS_CASSETTE.OPM"
+        },
+        {
+          "kind": "title",
+          "code": "0x0207",
+          "title": "PS_ENVELOPE.OPM"
+        },
+        {
+          "kind": "title",
+          "code": "0x0208",
+          "title": "PS_GEDIT.OPM"
+        },
+        {
+          "kind": "title",
+          "code": "0x0209",
+          "title": "PS_GREETING.OPM"
+        },
+        {
+          "kind": "title",
+          "code": "0x020a",
+          "title": "PS_LETTER.OPM"
+        },
+        {
+          "kind": "title",
+          "code": "0x020b",
+          "title": "PS_POST.OPM"
+        },
+        {
+          "kind": "title",
+          "code": "0x020c",
+          "title": "PS_PRINT.OPM"
+        },
+        {
+          "kind": "title",
+          "code": "0x020d",
+          "title": "PS_SIGN.OPM"
+        },
+        {
+          "kind": "title",
+          "code": "0x020e",
+          "title": "PS_TEDIT.OPM"
+        },
+        {
+          "kind": "title",
+          "code": "0x020f",
+          "title": "PS_TITLE.OPM"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/sharp.xml",
+      "source_order": 3996,
+      "archive": "nps268snd",
+      "id": "nps268snd-generic"
+    },
+    {
+      "title": "[X68000] SX-WINDOW",
+      "driver": {
+        "name": "x68k",
+        "type": "generic",
+        "alias": "SHARP",
+        "platform": "SHARP X68000"
+      },
+      "options": [
+        {
+          "name": "opm_mix",
+          "value": "0xe0"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "opmdrv.bin"
+        },
+        {
+          "type": "x",
+          "path": "OPMDRV.X",
+          "offset": "0x08000"
+        },
+        {
+          "type": "code",
+          "path": "X68K.OPM",
+          "offset": "0x24000"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x02",
+          "title": "X68K.OPM : X68000のテーマ"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/sharp.xml",
+      "source_order": 3997,
+      "archive": "sxwin68snd",
+      "id": "sxwin68snd-generic"
+    },
+    {
+      "title": "[X68000] BONANZA BROS",
+      "driver": {
+        "name": "x68k",
+        "type": "generic",
+        "alias": "SHARP",
+        "platform": "SHARP X68000"
+      },
+      "options": [
+        {
+          "name": "mfp",
+          "value": "0x01"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "bnzabros68snd.bin"
+        },
+        {
+          "type": "x",
+          "path": "BB.X",
+          "offset": "0x10000"
+        },
+        {
+          "type": "code",
+          "path": "MUSIC.DAT",
+          "offset": "0x537cc"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x08",
+          "title": "摩天楼のテーマ"
+        },
+        {
+          "kind": "title",
+          "code": "0x0a",
+          "title": "STAGE CLEAR"
+        },
+        {
+          "kind": "title",
+          "code": "0x06",
+          "title": "GAME OVER"
+        },
+        {
+          "kind": "title",
+          "code": "0x02",
+          "title": "ボナンザ兄弟仁義"
+        },
+        {
+          "kind": "title",
+          "code": "0x04",
+          "title": "ボナンザ哀歌"
+        },
+        {
+          "kind": "title",
+          "code": "0x0c",
+          "title": "ボナンザ・サスペンス劇場"
+        },
+        {
+          "kind": "title",
+          "code": "0x0e",
+          "title": "ボナンザ・ゴーゴー"
+        },
+        {
+          "kind": "title",
+          "code": "0x14",
+          "title": "BONUS TITLE"
+        },
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "スリルなボナンザ"
+        },
+        {
+          "kind": "title",
+          "code": "0x16",
+          "title": "PERFECT"
+        },
+        {
+          "kind": "title",
+          "code": "0x18",
+          "title": "MISS"
+        },
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "ボナンザ・セレナーデ"
+        },
+        {
+          "kind": "range",
+          "min": "0x0102",
+          "max": "0x0137",
+          "title_format": "SE 0x%02X",
+          "extcode": "1"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/sharp.xml",
+      "source_order": 3998,
+      "archive": "bnzabros68snd",
+      "id": "bnzabros68snd-generic"
+    },
+    {
+      "title": "[X68000] ダッシュ野郎",
+      "driver": {
+        "name": "x68k",
+        "type": "generic",
+        "alias": "SHARP",
+        "platform": "SHARP X68000"
+      },
+      "options": [
+        {
+          "name": "opm_mix",
+          "value": "0x100"
+        },
+        {
+          "name": "mfp",
+          "value": "0x01"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "dash68snd.bin",
+          "offset": "0x000000"
+        },
+        {
+          "type": "x",
+          "path": "DASH.X",
+          "offset": "0x010000"
+        },
+        {
+          "type": "code",
+          "path": "DH.SND",
+          "offset": "0xe68000"
+        },
+        {
+          "type": "code",
+          "path": "DHSND.SND",
+          "offset": "0xe6b600"
+        },
+        {
+          "type": "code",
+          "path": "DHPCM.SND",
+          "offset": "0xe6c000"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x101",
+          "title": "MACOSA"
+        },
+        {
+          "kind": "title",
+          "code": "0x102",
+          "title": "SOUTH WIND"
+        },
+        {
+          "kind": "title",
+          "code": "0x103",
+          "title": "DIXIE LINE"
+        },
+        {
+          "kind": "title",
+          "code": "0x104",
+          "title": "SAND STORM"
+        },
+        {
+          "kind": "title",
+          "code": "0x105",
+          "title": "DEN"
+        },
+        {
+          "kind": "title",
+          "code": "0x107",
+          "title": "BLACK TEA"
+        },
+        {
+          "kind": "title",
+          "code": "0x108",
+          "title": "SECOND LINE"
+        },
+        {
+          "kind": "title",
+          "code": "0x10d",
+          "title": "SUN SET"
+        },
+        {
+          "kind": "title",
+          "code": "0x10e",
+          "title": "AMERICA BYE BYE"
+        },
+        {
+          "kind": "title",
+          "code": "0x10f",
+          "title": "CONGRA"
+        },
+        {
+          "kind": "title",
+          "code": "0x111",
+          "title": "CUT OFF"
+        },
+        {
+          "kind": "title",
+          "code": "0x10b",
+          "title": "やられ"
+        },
+        {
+          "kind": "title",
+          "code": "0x109",
+          "title": "CD未収録曲"
+        },
+        {
+          "kind": "title",
+          "code": "0x10c",
+          "title": "CD未収録曲"
+        },
+        {
+          "kind": "title",
+          "code": "0x110",
+          "title": "CD未収録曲"
+        },
+        {
+          "kind": "range",
+          "min": "0x13",
+          "max": "0x2e",
+          "title_format": "SE %02x",
+          "extcode": "1"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/sharp.xml",
+      "source_order": 3999,
+      "archive": "rallybik68snd",
+      "id": "rallybik68snd-generic"
+    },
+    {
+      "title": "[X68000] 中華大仙",
+      "driver": {
+        "name": "x68k",
+        "type": "generic",
+        "alias": "SHARP",
+        "platform": "SHARP X68000"
+      },
+      "options": [
+        {
+          "name": "mfp",
+          "value": "0x01"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "chukatai68snd.bin",
+          "offset": "0x000000"
+        },
+        {
+          "type": "x",
+          "path": "TAI.X",
+          "offset": "0x010000"
+        },
+        {
+          "type": "code",
+          "path": "TAI.SND",
+          "offset": "0x045000"
+        },
+        {
+          "type": "code",
+          "path": "TAISND.SND",
+          "offset": "0x047000"
+        },
+        {
+          "type": "code",
+          "path": "EFC1.SND",
+          "offset": "0x060000"
+        },
+        {
+          "type": "code",
+          "path": "EFC2.SND",
+          "offset": "0x065000"
+        },
+        {
+          "type": "code",
+          "path": "EFC3.SND",
+          "offset": "0x074E70"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x05",
+          "title": "LOADING"
+        },
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "天上界"
+        },
+        {
+          "kind": "title",
+          "code": "0x02",
+          "title": "五行山"
+        },
+        {
+          "kind": "title",
+          "code": "0x03",
+          "title": "黄河"
+        },
+        {
+          "kind": "title",
+          "code": "0x04",
+          "title": "万里長上"
+        },
+        {
+          "kind": "title",
+          "code": "0x06",
+          "title": "法術セレクト"
+        },
+        {
+          "kind": "title",
+          "code": "0x07",
+          "title": "ボス"
+        },
+        {
+          "kind": "title",
+          "code": "0x09",
+          "title": "GAME OVER"
+        },
+        {
+          "kind": "title",
+          "code": "0x0a",
+          "title": "ENDING"
+        },
+        {
+          "kind": "title",
+          "code": "0x0b",
+          "title": "NAME ENTRY"
+        },
+        {
+          "kind": "title",
+          "code": "0x0d",
+          "title": "1UP"
+        },
+        {
+          "kind": "title",
+          "code": "0x08",
+          "title": "CREDIT (未使用)"
+        },
+        {
+          "kind": "range",
+          "min": "0x0c",
+          "max": "0x0c",
+          "title_format": "SE %02x",
+          "extcode": "1"
+        },
+        {
+          "kind": "range",
+          "min": "0x0f",
+          "max": "0x2f",
+          "title_format": "SE %02x",
+          "extcode": "1"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/sharp.xml",
+      "source_order": 4000,
+      "archive": "chukatai68snd",
+      "id": "chukatai68snd-generic"
+    },
+    {
+      "title": "[X68000] ダウンタウン熱血物語",
+      "driver": {
+        "name": "x68k",
+        "type": "generic",
+        "alias": "SHARP",
+        "platform": "SHARP X68000"
+      },
+      "options": [
+        {
+          "name": "mfp",
+          "value": "0x01"
+        },
+        {
+          "name": "dmaint",
+          "value": "0x01"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "dwntwn68snd.bin",
+          "offset": "0x000000"
+        },
+        {
+          "type": "x",
+          "path": "DTW.X",
+          "offset": "0x010000"
+        },
+        {
+          "type": "code",
+          "path": "DTW.SND",
+          "offset": "0x050000"
+        },
+        {
+          "type": "code",
+          "path": "DTWSND.SND",
+          "offset": "0xe78000"
+        },
+        {
+          "type": "code",
+          "path": "PCMDAT.SND",
+          "offset": "0xe6b920"
+        },
+        {
+          "type": "code",
+          "path": "EFFECT1.SND",
+          "offset": "0xe50000"
+        },
+        {
+          "type": "code",
+          "path": "EFFECT2.SND",
+          "offset": "0xe5dbb0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x0e",
+          "title": "オープニング"
+        },
+        {
+          "kind": "title",
+          "code": "0x03",
+          "title": "タイトル"
+        },
+        {
+          "kind": "title",
+          "code": "0x02",
+          "title": "ストーリー"
+        },
+        {
+          "kind": "title",
+          "code": "0x04",
+          "title": "ダウンタウン熱血物語のテーマ"
+        },
+        {
+          "kind": "title",
+          "code": "0x05",
+          "title": "公園/河原にて～ひとときのやすらぎ～"
+        },
+        {
+          "kind": "title",
+          "code": "0x06",
+          "title": "中ボスのテーマ"
+        },
+        {
+          "kind": "title",
+          "code": "0x07",
+          "title": "長谷部～愛のメロディー～"
+        },
+        {
+          "kind": "title",
+          "code": "0x08",
+          "title": "倉庫/工場～小林登場～"
+        },
+        {
+          "kind": "title",
+          "code": "0x09",
+          "title": "お買い物ソング"
+        },
+        {
+          "kind": "title",
+          "code": "0x0a",
+          "title": "大ボスのテーマ～五代/豪田登場～"
+        },
+        {
+          "kind": "title",
+          "code": "0x0b",
+          "title": "冷峰学園～対決!!～"
+        },
+        {
+          "kind": "title",
+          "code": "0x0c",
+          "title": "ダブドラ兄弟のテーマ～竜一・竜二登場～"
+        },
+        {
+          "kind": "title",
+          "code": "0x0d",
+          "title": "大決闘～最後の闘い～"
+        },
+        {
+          "kind": "title",
+          "code": "0x0f",
+          "title": "勝利(未使用)"
+        },
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "レベルアップ(未使用)"
+        },
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "敗北(未使用)"
+        },
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "エンディング・テーマ1(未使用)"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "エンディング・テーマ2～おちゃらけ～(未使用)"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/sharp.xml",
+      "source_order": 4001,
+      "archive": "dwntwn68snd",
+      "id": "dwntwn68snd-generic"
+    },
+    {
+      "title": "[X68000] U.S. CHAMPIONSHIP V'BALL",
+      "driver": {
+        "name": "x68k",
+        "type": "generic",
+        "alias": "SHARP",
+        "platform": "SHARP X68000"
+      },
+      "options": [
+        {
+          "name": "mfp",
+          "value": "0x01"
+        },
+        {
+          "name": "dmaint",
+          "value": "0x01"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "vball68snd.bin",
+          "offset": "0x000000"
+        },
+        {
+          "type": "x",
+          "path": "VBL.X",
+          "offset": "0x010000"
+        },
+        {
+          "type": "code",
+          "path": "VBDEMO.SND",
+          "offset": "0x030000"
+        },
+        {
+          "type": "code",
+          "path": "VBSND.SND",
+          "offset": "0x038000"
+        },
+        {
+          "type": "code",
+          "path": "PCMDAT.SND",
+          "offset": "0x040000"
+        },
+        {
+          "type": "code",
+          "path": "VBPCM1.SND",
+          "offset": "0x052000"
+        },
+        {
+          "type": "code",
+          "path": "VBPCM2.SND",
+          "offset": "0x060000"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x16",
+          "title": "Loading"
+        },
+        {
+          "kind": "title",
+          "code": "0x06",
+          "title": "V'Ball                              (タイトルバック)"
+        },
+        {
+          "kind": "title",
+          "code": "0x03",
+          "title": "Map"
+        },
+        {
+          "kind": "title",
+          "code": "0x0a",
+          "title": "First Wave                          (ディトナのテーマ)"
+        },
+        {
+          "kind": "title",
+          "code": "0x07",
+          "title": "Twilight Game                       (ニューヨークのテーマ)"
+        },
+        {
+          "kind": "title",
+          "code": "0x08",
+          "title": "SeaSide Walker                      (L.A.のテーマ)"
+        },
+        {
+          "kind": "title",
+          "code": "0x09",
+          "title": "Beyond The Sky                      (ハワイワールド・カップのテーマ)"
+        },
+        {
+          "kind": "title",
+          "code": "0x0e",
+          "title": "Iron Wing                           (空母のテーマ)"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "Winner's Theme                      (優勝シーン)"
+        },
+        {
+          "kind": "title",
+          "code": "0x0b",
+          "title": "An off-day, we're going to shopping (車購入)"
+        },
+        {
+          "kind": "title",
+          "code": "0x04",
+          "title": "Hurry Up"
+        },
+        {
+          "kind": "title",
+          "code": "0x15",
+          "title": "Match Won"
+        },
+        {
+          "kind": "title",
+          "code": "0x0f",
+          "title": "Match Lost"
+        },
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "Game Over"
+        },
+        {
+          "kind": "title",
+          "code": "0x05",
+          "title": "Unused #1"
+        },
+        {
+          "kind": "title",
+          "code": "0x0d",
+          "title": "Unused #2"
+        },
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "Unused #3"
+        },
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "Unused #4"
+        },
+        {
+          "kind": "title",
+          "code": "0x14",
+          "title": "Unused #5"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/sharp.xml",
+      "source_order": 4002,
+      "archive": "vball68snd",
+      "id": "vball68snd-generic"
+    },
+    {
+      "title": "[X68000] 熱血高校ドッヂボール部 サッカー編",
+      "driver": {
+        "name": "x68k",
+        "type": "generic",
+        "alias": "SHARP",
+        "platform": "SHARP X68000"
+      },
+      "options": [
+        {
+          "name": "mfp",
+          "value": "0x01"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "nksoccer68snd.bin",
+          "offset": "0x000000"
+        },
+        {
+          "type": "x",
+          "path": "SOC.X",
+          "offset": "0x010000"
+        },
+        {
+          "type": "code",
+          "path": "SOCSND.SND",
+          "offset": "0x040000"
+        },
+        {
+          "type": "code",
+          "path": "SOC1.SND",
+          "offset": "0x048000"
+        },
+        {
+          "type": "code",
+          "path": "SOC2.SND",
+          "offset": "0x050000"
+        },
+        {
+          "type": "code",
+          "path": "PCMDAT.SND",
+          "offset": "0x058000"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x21",
+          "title": "テクノスジャパンロゴ"
+        },
+        {
+          "kind": "title",
+          "code": "0x02",
+          "title": "イントロ"
+        },
+        {
+          "kind": "title",
+          "code": "0x17",
+          "title": "イントロ2"
+        },
+        {
+          "kind": "title",
+          "code": "0x03",
+          "title": "タイトル"
+        },
+        {
+          "kind": "title",
+          "code": "0x0b",
+          "title": "対優秀院附属高校のテーマ"
+        },
+        {
+          "kind": "title",
+          "code": "0x04",
+          "title": "ポジション選択"
+        },
+        {
+          "kind": "title",
+          "code": "0x05",
+          "title": "第1回戦"
+        },
+        {
+          "kind": "title",
+          "code": "0x18",
+          "title": "ハーフタイム"
+        },
+        {
+          "kind": "title",
+          "code": "0x1b",
+          "title": "クリア"
+        },
+        {
+          "kind": "title",
+          "code": "0x1d",
+          "title": "幕間"
+        },
+        {
+          "kind": "title",
+          "code": "0x0c",
+          "title": "対七福学園高校のテーマ"
+        },
+        {
+          "kind": "title",
+          "code": "0x0d",
+          "title": "対死愚魔高校のテーマ"
+        },
+        {
+          "kind": "title",
+          "code": "0x1a",
+          "title": "敗北"
+        },
+        {
+          "kind": "title",
+          "code": "0x1c",
+          "title": "再挑戦"
+        },
+        {
+          "kind": "title",
+          "code": "0x0e",
+          "title": "対マタギ学園のテーマ"
+        },
+        {
+          "kind": "title",
+          "code": "0x0f",
+          "title": "対吉本工業高校のテーマ"
+        },
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "対江戸華高校のテーマ"
+        },
+        {
+          "kind": "title",
+          "code": "0x06",
+          "title": "第4回戦"
+        },
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "対一本釣水産高校のテーマ"
+        },
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "対恐山商業高校のテーマ"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "対山本興業高校のテーマ"
+        },
+        {
+          "kind": "title",
+          "code": "0x07",
+          "title": "第7回戦"
+        },
+        {
+          "kind": "title",
+          "code": "0x14",
+          "title": "対堀々学園のテーマ"
+        },
+        {
+          "kind": "title",
+          "code": "0x15",
+          "title": "対服部学園のテーマ"
+        },
+        {
+          "kind": "title",
+          "code": "0x08",
+          "title": "第10回戦"
+        },
+        {
+          "kind": "title",
+          "code": "0x16",
+          "title": "対四満忠実業高校のテーマ"
+        },
+        {
+          "kind": "title",
+          "code": "0x09",
+          "title": "決勝戦"
+        },
+        {
+          "kind": "title",
+          "code": "0x19",
+          "title": "ハーフタイム(決勝戦)"
+        },
+        {
+          "kind": "title",
+          "code": "0x1e",
+          "title": "オールクリア(キスシーン)"
+        },
+        {
+          "kind": "title",
+          "code": "0x20",
+          "title": "キャスト"
+        },
+        {
+          "kind": "title",
+          "code": "0x0a",
+          "title": "練習試合"
+        },
+        {
+          "kind": "title",
+          "code": "0x1f",
+          "title": "ゲームオーバー"
+        },
+        {
+          "kind": "range",
+          "min": "0x22",
+          "max": "0x24",
+          "title_format": "BGM %02x",
+          "extcode": "1"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/sharp.xml",
+      "source_order": 4003,
+      "archive": "nksoccer68snd",
+      "id": "nksoccer68snd-generic"
+    },
+    {
+      "title": "[X68000] ARKANOID -REVENGE OF DOH-",
+      "driver": {
+        "name": "x68k",
+        "type": "generic",
+        "alias": "SHARP",
+        "platform": "SHARP X68000"
+      },
+      "options": [
+        {
+          "name": "mfp",
+          "value": "0x01"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "doh68snd.bin",
+          "offset": "0x00000"
+        },
+        {
+          "type": "code",
+          "path": "MUX.R",
+          "offset": "0x10000"
+        },
+        {
+          "type": "code",
+          "path": "ARK1",
+          "offset": "0x20000"
+        },
+        {
+          "type": "code",
+          "path": "ARK2",
+          "offset": "0x21000"
+        },
+        {
+          "type": "code",
+          "path": "ARK3",
+          "offset": "0x22000"
+        },
+        {
+          "type": "code",
+          "path": "ARK4",
+          "offset": "0x23000"
+        },
+        {
+          "type": "code",
+          "path": "ARK5",
+          "offset": "0x24000"
+        },
+        {
+          "type": "code",
+          "path": "ARK6",
+          "offset": "0x25000"
+        },
+        {
+          "type": "code",
+          "path": "ARK7",
+          "offset": "0x26000"
+        },
+        {
+          "type": "code",
+          "path": "ARK8",
+          "offset": "0x27000"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x08",
+          "title": "ARK8 : Loading"
+        },
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "ARK1 : Start Demo"
+        },
+        {
+          "kind": "title",
+          "code": "0x02",
+          "title": "ARK2 : Round Start"
+        },
+        {
+          "kind": "title",
+          "code": "0x03",
+          "title": "ARK3 : 1up"
+        },
+        {
+          "kind": "title",
+          "code": "0x06",
+          "title": "ARK6 : Boss Start"
+        },
+        {
+          "kind": "title",
+          "code": "0x07",
+          "title": "ARK7 : DOH"
+        },
+        {
+          "kind": "title",
+          "code": "0x05",
+          "title": "ARK5 : Game Over"
+        },
+        {
+          "kind": "title",
+          "code": "0x04",
+          "title": "ARK4 : Ending / Name Entry"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/sharp.xml",
+      "source_order": 4004,
+      "archive": "arknoid268snd",
+      "id": "arknoid268snd-generic"
+    },
+    {
+      "title": "[X68000] FULL THROTTLE",
+      "driver": {
+        "name": "x68k",
+        "type": "generic",
+        "alias": "SHARP",
+        "platform": "SHARP X68000"
+      },
+      "options": [
+        {
+          "name": "mfp",
+          "value": "0x01"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "fullthrl68snd.bin",
+          "offset": "0x00000"
+        },
+        {
+          "type": "x",
+          "path": "MUX.X",
+          "offset": "0x10000"
+        },
+        {
+          "type": "code",
+          "path": "SND1/FTHS1.SND",
+          "offset": "0x20000"
+        },
+        {
+          "type": "code",
+          "path": "SND1/FTHS2.SND",
+          "offset": "0x20800"
+        },
+        {
+          "type": "code",
+          "path": "SND2/FTHSND3.SND",
+          "offset": "0x21000"
+        },
+        {
+          "type": "code",
+          "path": "SND2/FTHSND4.SND",
+          "offset": "0x21800"
+        },
+        {
+          "type": "code",
+          "path": "SND1/FTH1.SND",
+          "offset": "0x30000"
+        },
+        {
+          "type": "code",
+          "path": "SND1/FTH2.SND",
+          "offset": "0x32000"
+        },
+        {
+          "type": "code",
+          "path": "SND1/FTH3.SND",
+          "offset": "0x34000"
+        },
+        {
+          "type": "code",
+          "path": "SND1/FTH4.SND",
+          "offset": "0x36000"
+        },
+        {
+          "type": "code",
+          "path": "SND1/FTH5.SND",
+          "offset": "0x38000"
+        },
+        {
+          "type": "code",
+          "path": "SND1/FTHE.SND",
+          "offset": "0x3a000"
+        },
+        {
+          "type": "code",
+          "path": "SND1/FTHN.SND",
+          "offset": "0x3c000"
+        },
+        {
+          "type": "code",
+          "path": "SND1/FTHO.SND",
+          "offset": "0x3e000"
+        },
+        {
+          "type": "code",
+          "path": "SND2/FTH1.SND",
+          "offset": "0x40000"
+        },
+        {
+          "type": "code",
+          "path": "SND2/FTH2.SND",
+          "offset": "0x42000"
+        },
+        {
+          "type": "code",
+          "path": "SND2/FTH3.SND",
+          "offset": "0x44000"
+        },
+        {
+          "type": "code",
+          "path": "SND2/FTH4.SND",
+          "offset": "0x46000"
+        },
+        {
+          "type": "code",
+          "path": "SND2/FTH5.SND",
+          "offset": "0x48000"
+        },
+        {
+          "type": "code",
+          "path": "SND2/FTHE.SND",
+          "offset": "0x4a000"
+        },
+        {
+          "type": "code",
+          "path": "SND2/FTHN.SND",
+          "offset": "0x4c000"
+        },
+        {
+          "type": "code",
+          "path": "SND2/FTHO.SND",
+          "offset": "0x4e000"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x0001",
+          "title": "HIT AND RUN"
+        },
+        {
+          "kind": "title",
+          "code": "0x0002",
+          "title": "RUN A RED LIGHT"
+        },
+        {
+          "kind": "title",
+          "code": "0x0003",
+          "title": "O・N・D・O"
+        },
+        {
+          "kind": "title",
+          "code": "0x0004",
+          "title": "SLEEPING THE PIKE MAN"
+        },
+        {
+          "kind": "title",
+          "code": "0x0005",
+          "title": "I JUST LOSE ONE'S SENSES"
+        },
+        {
+          "kind": "title",
+          "code": "0x0006",
+          "title": "TIME SAVING"
+        },
+        {
+          "kind": "title",
+          "code": "0x0007",
+          "title": "ACCEL #1"
+        },
+        {
+          "kind": "title",
+          "code": "0x0008",
+          "title": "GAME OVER"
+        },
+        {
+          "kind": "comment",
+          "text": "\n\t\t\t<title code=\"0x0101\">HIT AND RUN (未使用 音色違い)</title>\n\t\t\t<title code=\"0x0102\">RUN A RED LIGHT (未使用 音色違い)</title>\n\t\t\t<title code=\"0x0103\">O・N・D・O (未使用 音色違い)</title>\n\t\t\t<title code=\"0x0104\">SLEEPING THE PIKE MAN (未使用 音色違い)</title>\n\t\t\t<title code=\"0x0105\">I JUST LOSE ONE'S SENSES (未使用 音色違い)</title>\n\t\t\t<title code=\"0x0106\">TIME SAVING (未使用 音色違い)</title>\n\t\t\t<title code=\"0x0107\">ACCEL #1 (未使用 音色違い)</title>\n\t\t\t<title code=\"0x0108\">GAME OVER (未使用 音色違い)</title>\n\t\t\t  "
+        },
+        {
+          "kind": "title",
+          "code": "0x0209",
+          "title": "HIT AND RUN (未使用 Stereo)"
+        },
+        {
+          "kind": "title",
+          "code": "0x020a",
+          "title": "RUN A RED LIGHT (未使用 Stereo)"
+        },
+        {
+          "kind": "title",
+          "code": "0x020b",
+          "title": "O・N・D・O (未使用 Stereo)"
+        },
+        {
+          "kind": "title",
+          "code": "0x020c",
+          "title": "SLEEPING THE PIKE MAN (未使用 Stereo)"
+        },
+        {
+          "kind": "title",
+          "code": "0x020d",
+          "title": "I JUST LOSE ONE'S SENSES (未使用 Stereo)"
+        },
+        {
+          "kind": "title",
+          "code": "0x020e",
+          "title": "TIME SAVING (未使用 Stereo)"
+        },
+        {
+          "kind": "title",
+          "code": "0x020f",
+          "title": "ACCEL #1 (未使用 Stereo)"
+        },
+        {
+          "kind": "title",
+          "code": "0x0210",
+          "title": "GAME OVER (未使用 Stereo)"
+        },
+        {
+          "kind": "comment",
+          "text": "\n\t\t\t<title code=\"0x0309\">HIT AND RUN (未使用 Stereo音色違い)</title>\n\t\t\t<title code=\"0x030a\">RUN A RED LIGHT (未使用 Stereo音色違い)</title>\n\t\t\t<title code=\"0x030b\">O・N・D・O (未使用 Stereo音色違い)</title>\n\t\t\t<title code=\"0x030c\">SLEEPING THE PIKE MAN (未使用 Stereo音色違い)</title>\n\t\t\t<title code=\"0x030d\">I JUST LOSE ONE'S SENSES (未使用 Stereo音色違い)</title>\n\t\t\t<title code=\"0x030e\">TIME SAVING (未使用 Stereo音色違い)</title>\n\t\t\t<title code=\"0x030f\">ACCEL #1 (未使用 Stereo音色違い)</title>\n\t\t\t<title code=\"0x0310\">GAME OVER (未使用 Stereo音色違い)</title>\n\t\t\t  "
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/sharp.xml",
+      "source_order": 4005,
+      "archive": "fullthrl68snd",
+      "id": "fullthrl68snd-generic"
+    },
+    {
+      "title": "[X68000] TwinBee",
+      "driver": {
+        "name": "x68k",
+        "type": "generic",
+        "alias": "SHARP",
+        "platform": "SHARP X68000"
+      },
+      "options": [
+        {
+          "name": "mfp",
+          "value": "0x01"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "twb68snd.bin",
+          "offset": "0x00000"
+        },
+        {
+          "type": "code",
+          "path": "MUX.R",
+          "offset": "0x10000"
+        },
+        {
+          "type": "code",
+          "path": "TBBGM.BLK",
+          "offset": "0x20000"
+        },
+        {
+          "type": "code",
+          "path": "TBSE.BLK",
+          "offset": "0x2a000"
+        },
+        {
+          "type": "code",
+          "path": "TBPCM20.BLK",
+          "offset": "0x30000"
+        },
+        {
+          "type": "code",
+          "path": "TBPCM30.BLK",
+          "offset": "0x40000"
+        },
+        {
+          "type": "code",
+          "path": "TBPCM40.BLK",
+          "offset": "0x50000"
+        },
+        {
+          "type": "code",
+          "path": "TBPCM50.BLK",
+          "offset": "0x60000"
+        },
+        {
+          "type": "code",
+          "path": "TBPCM60.BLK",
+          "offset": "0x70000"
+        },
+        {
+          "type": "code",
+          "path": "TWINBEE.68K",
+          "offset": "0x80000"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x02",
+          "title": "Start"
+        },
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "Twinbee's Home Town Song"
+        },
+        {
+          "kind": "title",
+          "code": "0x06",
+          "title": "Power Up"
+        },
+        {
+          "kind": "title",
+          "code": "0x0d",
+          "title": "Fantastic Power"
+        },
+        {
+          "kind": "title",
+          "code": "0x0c",
+          "title": "BOSS BGM A-1"
+        },
+        {
+          "kind": "title",
+          "code": "0x09",
+          "title": "BOSS BGM A-2"
+        },
+        {
+          "kind": "title",
+          "code": "0x07",
+          "title": "BOSS BGM B"
+        },
+        {
+          "kind": "title",
+          "code": "0x04",
+          "title": "1up"
+        },
+        {
+          "kind": "title",
+          "code": "0x03",
+          "title": "Clear"
+        },
+        {
+          "kind": "title",
+          "code": "0x0a",
+          "title": "Game Over"
+        },
+        {
+          "kind": "title",
+          "code": "0x08",
+          "title": "Key Assign"
+        },
+        {
+          "kind": "title",
+          "code": "0x05",
+          "title": "Ranking (未使用)"
+        },
+        {
+          "kind": "title",
+          "code": "0x0b",
+          "title": "Credit (未使用)"
+        },
+        {
+          "kind": "range",
+          "min": "0x41",
+          "max": "0x48",
+          "title_format": "SE 0x%02x",
+          "extcode": "1"
+        },
+        {
+          "kind": "range",
+          "min": "0x150",
+          "max": "0x162",
+          "title_format": "SE 0x%02x",
+          "extcode": "1"
+        },
+        {
+          "kind": "range",
+          "min": "0x120",
+          "max": "0x13c",
+          "title_format": "VOICE 0x%02x",
+          "extcode": "1"
+        },
+        {
+          "kind": "range",
+          "min": "0x140",
+          "max": "0x144",
+          "title_format": "VOICE 0x%02x",
+          "extcode": "1"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/sharp.xml",
+      "source_order": 4006,
+      "archive": "twinbee68snd",
+      "id": "twinbee68snd-generic"
+    },
+    {
+      "title": "[X68000] 沙羅曼蛇",
+      "driver": {
+        "name": "x68k",
+        "type": "generic",
+        "alias": "SHARP",
+        "platform": "SHARP X68000"
+      },
+      "options": [
+        {
+          "name": "mfp",
+          "value": "0x01"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "sala68snd.bin",
+          "offset": "0x00000"
+        },
+        {
+          "type": "x",
+          "path": "MUX.X",
+          "offset": "0x10000"
+        },
+        {
+          "type": "code",
+          "path": "SOUNDPRM.SAL",
+          "offset": "0x20000"
+        },
+        {
+          "type": "code",
+          "path": "BGMDATA.SAL",
+          "offset": "0x30000"
+        },
+        {
+          "type": "code",
+          "path": "PCMTBL.SAL",
+          "offset": "0x38000"
+        },
+        {
+          "type": "code",
+          "path": "PCM20.SAL",
+          "offset": "0x40000"
+        },
+        {
+          "type": "code",
+          "path": "PCM30.SAL",
+          "offset": "0x60000"
+        },
+        {
+          "type": "code",
+          "path": "PCM80.SAL",
+          "offset": "0x80000"
+        },
+        {
+          "type": "code",
+          "path": "PCM90.SAL",
+          "offset": "0xa0000"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x0f",
+          "title": "Loading"
+        },
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "Credit"
+        },
+        {
+          "kind": "title",
+          "code": "0x07",
+          "title": "Power of Anger"
+        },
+        {
+          "kind": "title",
+          "code": "0x0a",
+          "title": "Fly High"
+        },
+        {
+          "kind": "title",
+          "code": "0x17",
+          "title": "Planet RATIS"
+        },
+        {
+          "kind": "title",
+          "code": "0x04",
+          "title": "Starfield"
+        },
+        {
+          "kind": "title",
+          "code": "0x03",
+          "title": "Burn the Wind"
+        },
+        {
+          "kind": "title",
+          "code": "0x1d",
+          "title": "Destroy Them All(1)"
+        },
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "Destroy Them All(2)"
+        },
+        {
+          "kind": "title",
+          "code": "0x16",
+          "title": "Poison of Snake"
+        },
+        {
+          "kind": "title",
+          "code": "0x0d",
+          "title": "Aircraft Carrier"
+        },
+        {
+          "kind": "title",
+          "code": "0x18",
+          "title": "Crystal Forever"
+        },
+        {
+          "kind": "title",
+          "code": "0x08",
+          "title": "Peace Again"
+        },
+        {
+          "kind": "title",
+          "code": "0x02",
+          "title": "未使用曲"
+        },
+        {
+          "kind": "title",
+          "code": "0x05",
+          "title": "未使用曲"
+        },
+        {
+          "kind": "title",
+          "code": "0x06",
+          "title": "未使用曲"
+        },
+        {
+          "kind": "title",
+          "code": "0x09",
+          "title": "未使用曲"
+        },
+        {
+          "kind": "title",
+          "code": "0x0b",
+          "title": "未使用曲"
+        },
+        {
+          "kind": "title",
+          "code": "0x0c",
+          "title": "未使用曲"
+        },
+        {
+          "kind": "title",
+          "code": "0x0e",
+          "title": "未使用曲"
+        },
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "未使用曲"
+        },
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "未使用曲"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "未使用曲"
+        },
+        {
+          "kind": "title",
+          "code": "0x14",
+          "title": "未使用曲"
+        },
+        {
+          "kind": "title",
+          "code": "0x15",
+          "title": "未使用曲"
+        },
+        {
+          "kind": "title",
+          "code": "0x19",
+          "title": "未使用曲"
+        },
+        {
+          "kind": "title",
+          "code": "0x1a",
+          "title": "未使用曲"
+        },
+        {
+          "kind": "title",
+          "code": "0x1b",
+          "title": "未使用曲"
+        },
+        {
+          "kind": "title",
+          "code": "0x1c",
+          "title": "未使用曲"
+        },
+        {
+          "kind": "title",
+          "code": "0x1e",
+          "title": "未使用曲"
+        },
+        {
+          "kind": "title",
+          "code": "0x1f",
+          "title": "未使用曲"
+        },
+        {
+          "kind": "range",
+          "min": "0x80",
+          "max": "0x94",
+          "title_format": "SE 0x%02x",
+          "extcode": "1"
+        },
+        {
+          "kind": "range",
+          "min": "0xa0",
+          "max": "0xbe",
+          "title_format": "SE 0x%02x",
+          "extcode": "1"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/sharp.xml",
+      "source_order": 4007,
+      "archive": "salamand68snd",
+      "id": "salamand68snd-generic"
+    },
+    {
+      "title": "[X68000] 熱血高校ドッジボール部",
+      "driver": {
+        "name": "x68k",
+        "type": "generic",
+        "alias": "SHARP",
+        "platform": "SHARP X68000"
+      },
+      "options": [
+        {
+          "name": "mfp",
+          "value": "0x01"
+        },
+        {
+          "name": "dmaint",
+          "value": "0x01"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "nkdodge68snd.bin",
+          "offset": "0x00000"
+        },
+        {
+          "type": "x",
+          "path": "MUX.X",
+          "offset": "0x10000"
+        },
+        {
+          "type": "code",
+          "path": "DBSND.DAT",
+          "offset": "0x20000"
+        },
+        {
+          "type": "code",
+          "path": "S_PCM.DAT",
+          "offset": "0x28000"
+        },
+        {
+          "type": "code",
+          "path": "DBMUSIC.DAT",
+          "offset": "0x30000"
+        },
+        {
+          "type": "code",
+          "path": "ADPCM1.DAT",
+          "offset": "0x40000"
+        },
+        {
+          "type": "code",
+          "path": "ADPCM2.DAT",
+          "offset": "0x70000"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "タイトル"
+        },
+        {
+          "kind": "title",
+          "code": "0x02",
+          "title": "オープニング・テーマ"
+        },
+        {
+          "kind": "title",
+          "code": "0x03",
+          "title": "「まて！このやろー！」"
+        },
+        {
+          "kind": "title",
+          "code": "0x04",
+          "title": "ゲームスタート"
+        },
+        {
+          "kind": "title",
+          "code": "0x05",
+          "title": "日本選手権～宿敵りきとの対決"
+        },
+        {
+          "kind": "title",
+          "code": "0x0f",
+          "title": "勝利"
+        },
+        {
+          "kind": "title",
+          "code": "0x0b",
+          "title": "世界進出！！"
+        },
+        {
+          "kind": "title",
+          "code": "0x06",
+          "title": "対イギリス・チームのテーマ"
+        },
+        {
+          "kind": "title",
+          "code": "0x07",
+          "title": "対アイスランド・チームのテーマ"
+        },
+        {
+          "kind": "title",
+          "code": "0x08",
+          "title": "対中国・チームのテーマ"
+        },
+        {
+          "kind": "title",
+          "code": "0x09",
+          "title": "対アフリカ・チームのテーマ"
+        },
+        {
+          "kind": "title",
+          "code": "0x0a",
+          "title": "対アメリカ・チームのテーマ"
+        },
+        {
+          "kind": "title",
+          "code": "0x0c",
+          "title": "表彰式"
+        },
+        {
+          "kind": "title",
+          "code": "0x0d",
+          "title": "ゲーム・オーバー"
+        },
+        {
+          "kind": "title",
+          "code": "0x0e",
+          "title": "ネームエントリー"
+        },
+        {
+          "kind": "range",
+          "min": "0x10",
+          "max": "0x11",
+          "title_format": "SE 0x%02X",
+          "extcode": "1"
+        },
+        {
+          "kind": "range",
+          "min": "0x80",
+          "max": "0x95",
+          "title_format": "VOICE 0x%02X",
+          "extcode": "1"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/sharp.xml",
+      "source_order": 4008,
+      "archive": "nkdodge68snd",
+      "id": "nkdodge68snd-generic"
+    },
+    {
+      "title": "[X68000] PAC-MANIA",
+      "driver": {
+        "name": "x68k",
+        "type": "generic",
+        "alias": "SHARP",
+        "platform": "SHARP X68000"
+      },
+      "options": [
+        {
+          "name": "mfp",
+          "value": "0x01"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "pacmania68snd.bin",
+          "offset": "0x000000"
+        },
+        {
+          "type": "x",
+          "path": "PMDEMO.X",
+          "offset": "0x010000"
+        },
+        {
+          "type": "code",
+          "path": "PMDEMO.DAT",
+          "offset": "0x01c028"
+        },
+        {
+          "type": "code",
+          "path": "PM_JPN.DAT",
+          "offset": "0x040e10"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x0000",
+          "title": "[USA mode]"
+        },
+        {
+          "kind": "title",
+          "code": "0x0001",
+          "title": "GAME START"
+        },
+        {
+          "kind": "title",
+          "code": "0x0003",
+          "title": "BLOCK TOWN"
+        },
+        {
+          "kind": "title",
+          "code": "0x0004",
+          "title": "PACMAN'S PARK"
+        },
+        {
+          "kind": "title",
+          "code": "0x0008",
+          "title": "SANDBOX LAND"
+        },
+        {
+          "kind": "title",
+          "code": "0x0007",
+          "title": "JUNGLY STEPS"
+        },
+        {
+          "kind": "title",
+          "code": "0x0005",
+          "title": "GAME OVER"
+        },
+        {
+          "kind": "title",
+          "code": "0x0002",
+          "title": "DEMO 1"
+        },
+        {
+          "kind": "title",
+          "code": "0x000a",
+          "title": "DEMO 2"
+        },
+        {
+          "kind": "title",
+          "code": "0x000c",
+          "title": "DEMO 3"
+        },
+        {
+          "kind": "title",
+          "code": "0x0006",
+          "title": "ALL CLEAR"
+        },
+        {
+          "kind": "title",
+          "code": "0x0009",
+          "title": "CONGRATULATION"
+        },
+        {
+          "kind": "title",
+          "code": "0x000d",
+          "title": "NAME ENTRY"
+        },
+        {
+          "kind": "title",
+          "code": "0x000e",
+          "title": "NAME ENTRY'"
+        },
+        {
+          "kind": "title",
+          "code": "0x000b",
+          "title": "SPEAKER TEST"
+        },
+        {
+          "kind": "title",
+          "code": "0x0000",
+          "title": "[JAPAN mode]"
+        },
+        {
+          "kind": "title",
+          "code": "0x0101",
+          "title": "GAME START"
+        },
+        {
+          "kind": "title",
+          "code": "0x0103",
+          "title": "BLOCK TOWN"
+        },
+        {
+          "kind": "title",
+          "code": "0x0104",
+          "title": "PACMAN'S PARK"
+        },
+        {
+          "kind": "title",
+          "code": "0x0108",
+          "title": "SANDBOX LAND"
+        },
+        {
+          "kind": "title",
+          "code": "0x0107",
+          "title": "JUNGLY STEPS"
+        },
+        {
+          "kind": "title",
+          "code": "0x0105",
+          "title": "GAME OVER"
+        },
+        {
+          "kind": "title",
+          "code": "0x0102",
+          "title": "DEMO 1"
+        },
+        {
+          "kind": "title",
+          "code": "0x010a",
+          "title": "DEMO 2"
+        },
+        {
+          "kind": "title",
+          "code": "0x010c",
+          "title": "DEMO 3"
+        },
+        {
+          "kind": "title",
+          "code": "0x0106",
+          "title": "ALL CLEAR"
+        },
+        {
+          "kind": "title",
+          "code": "0x0109",
+          "title": "CONGRATULATION"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/sharp.xml",
+      "source_order": 4009,
+      "archive": "pacmania68snd",
+      "id": "pacmania68snd-generic"
+    },
+    {
+      "title": "[X68000] SYVALION",
+      "driver": {
+        "name": "x68k",
+        "type": "generic",
+        "alias": "SHARP",
+        "platform": "SHARP X68000"
+      },
+      "options": [
+        {
+          "name": "mfp",
+          "value": "0x01"
+        },
+        {
+          "name": "dmaint",
+          "value": "0x01"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "syvalion68snd.bin",
+          "offset": "0x000000"
+        },
+        {
+          "type": "x",
+          "path": "M2.X",
+          "offset": "0x010000"
+        },
+        {
+          "type": "x",
+          "path": "SEQ2.X",
+          "offset": "0x012000"
+        },
+        {
+          "type": "x",
+          "path": "OPM2SVL.X",
+          "offset": "0x014000"
+        },
+        {
+          "type": "x",
+          "path": "M2MOP.X",
+          "offset": "0x018000"
+        },
+        {
+          "type": "x",
+          "path": "MOPV.X",
+          "offset": "0x01d000"
+        },
+        {
+          "type": "code",
+          "path": "MOPDATA.SVL",
+          "offset": "0x01e000"
+        },
+        {
+          "type": "code",
+          "path": "SVL38.SQ2",
+          "offset": "0x02b000"
+        },
+        {
+          "type": "code",
+          "path": "SVL39.SQ2",
+          "offset": "0x02d000"
+        },
+        {
+          "type": "code",
+          "path": "SVL3A.SQ2",
+          "offset": "0x02f000"
+        },
+        {
+          "type": "code",
+          "path": "SVL3B.SQ2",
+          "offset": "0x031000"
+        },
+        {
+          "type": "code",
+          "path": "SVL3C.SQ2",
+          "offset": "0x033000"
+        },
+        {
+          "type": "code",
+          "path": "SVL3D.SQ2",
+          "offset": "0x035000"
+        },
+        {
+          "type": "code",
+          "path": "SVL3E.SQ2",
+          "offset": "0x037000"
+        },
+        {
+          "type": "code",
+          "path": "SVL3F.SQ2",
+          "offset": "0x039000"
+        },
+        {
+          "type": "code",
+          "path": "SVL40.SQ2",
+          "offset": "0x03b000"
+        },
+        {
+          "type": "code",
+          "path": "SVL41.SQ2",
+          "offset": "0x03d000"
+        },
+        {
+          "type": "code",
+          "path": "SVL42.SQ2",
+          "offset": "0x03f000"
+        },
+        {
+          "type": "code",
+          "path": "SVL43.SQ2",
+          "offset": "0x041000"
+        },
+        {
+          "type": "code",
+          "path": "SVL44.SQ2",
+          "offset": "0x043000"
+        },
+        {
+          "type": "code",
+          "path": "SVL45.SQ2",
+          "offset": "0x045000"
+        },
+        {
+          "type": "code",
+          "path": "SVL46.SQ2",
+          "offset": "0x047000"
+        },
+        {
+          "type": "code",
+          "path": "SVL47.SQ2",
+          "offset": "0x049000"
+        },
+        {
+          "type": "code",
+          "path": "SVL48.SQ2",
+          "offset": "0x04b000"
+        },
+        {
+          "type": "code",
+          "path": "SVL49.SQ2",
+          "offset": "0x04d000"
+        },
+        {
+          "type": "code",
+          "path": "SVL4B.SQ2",
+          "offset": "0x04f000"
+        },
+        {
+          "type": "code",
+          "path": "SVL4C.SQ2",
+          "offset": "0x051000"
+        },
+        {
+          "type": "code",
+          "path": "ADAV13.ADP",
+          "offset": "0x053000"
+        },
+        {
+          "type": "code",
+          "path": "ADAV14.ADP",
+          "offset": "0x055000"
+        },
+        {
+          "type": "code",
+          "path": "ADAV15.ADP",
+          "offset": "0x057000"
+        },
+        {
+          "type": "code",
+          "path": "ADAV24.ADP",
+          "offset": "0x059000"
+        },
+        {
+          "type": "code",
+          "path": "ADAV27.ADP",
+          "offset": "0x05b000"
+        },
+        {
+          "type": "code",
+          "path": "ADAV28.ADP",
+          "offset": "0x05d000"
+        },
+        {
+          "type": "code",
+          "path": "ADAV30.ADP",
+          "offset": "0x05f000"
+        },
+        {
+          "type": "code",
+          "path": "ADAV31.ADP",
+          "offset": "0x061000"
+        },
+        {
+          "type": "code",
+          "path": "ADAV33.ADP",
+          "offset": "0x063000"
+        },
+        {
+          "type": "code",
+          "path": "ADAV34.ADP",
+          "offset": "0x065000"
+        },
+        {
+          "type": "code",
+          "path": "ADAV35.ADP",
+          "offset": "0x068000"
+        },
+        {
+          "type": "code",
+          "path": "ADAV37.ADP",
+          "offset": "0x06b000"
+        },
+        {
+          "type": "code",
+          "path": "ADAV41.ADP",
+          "offset": "0x06d000"
+        },
+        {
+          "type": "code",
+          "path": "ADBV00.ADP",
+          "offset": "0x06f000"
+        },
+        {
+          "type": "code",
+          "path": "ADBV02.ADP",
+          "offset": "0x075000"
+        },
+        {
+          "type": "code",
+          "path": "ADBV03.ADP",
+          "offset": "0x077000"
+        },
+        {
+          "type": "code",
+          "path": "ADBV06.ADP",
+          "offset": "0x079000"
+        },
+        {
+          "type": "code",
+          "path": "ADBV07.ADP",
+          "offset": "0x07c000"
+        },
+        {
+          "type": "code",
+          "path": "ADBV08.ADP",
+          "offset": "0x07e000"
+        },
+        {
+          "type": "code",
+          "path": "ADBV09.ADP",
+          "offset": "0x081000"
+        },
+        {
+          "type": "code",
+          "path": "ADBV16.ADP",
+          "offset": "0x083000"
+        },
+        {
+          "type": "code",
+          "path": "ADBV17.ADP",
+          "offset": "0x08f000"
+        },
+        {
+          "type": "code",
+          "path": "ADBV19.ADP",
+          "offset": "0x094000"
+        },
+        {
+          "type": "code",
+          "path": "ADBV20.ADP",
+          "offset": "0x096000"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "100",
+          "title": "Main Theme"
+        },
+        {
+          "kind": "title",
+          "code": "101",
+          "title": "Universe (Theme 2)"
+        },
+        {
+          "kind": "title",
+          "code": "102",
+          "title": "Fine! Fine! Fine! (Theme 3)"
+        },
+        {
+          "kind": "title",
+          "code": "103",
+          "title": "Larful (Theme 4)"
+        },
+        {
+          "kind": "title",
+          "code": "104",
+          "title": "--so easy (Theme 5)"
+        },
+        {
+          "kind": "title",
+          "code": "105",
+          "title": "Confusion (Theme 6)"
+        },
+        {
+          "kind": "title",
+          "code": "106",
+          "title": "Ja Fraw (Theme 7)"
+        },
+        {
+          "kind": "title",
+          "code": "107",
+          "title": "Boss 1"
+        },
+        {
+          "kind": "title",
+          "code": "108",
+          "title": "Boss 2"
+        },
+        {
+          "kind": "title",
+          "code": "109",
+          "title": "Boss 3"
+        },
+        {
+          "kind": "title",
+          "code": "110",
+          "title": "Boss 4"
+        },
+        {
+          "kind": "title",
+          "code": "111",
+          "title": "Boss 5"
+        },
+        {
+          "kind": "title",
+          "code": "112",
+          "title": "Hurry"
+        },
+        {
+          "kind": "title",
+          "code": "113",
+          "title": "Credit"
+        },
+        {
+          "kind": "title",
+          "code": "114",
+          "title": "Beginning of the end (Ending)"
+        },
+        {
+          "kind": "title",
+          "code": "115",
+          "title": "Stand-bye! (Story 1)"
+        },
+        {
+          "kind": "title",
+          "code": "116",
+          "title": "Next Area (Story 2)"
+        },
+        {
+          "kind": "title",
+          "code": "117",
+          "title": "Contact (Story 3)"
+        },
+        {
+          "kind": "title",
+          "code": "118",
+          "title": "See you again (Name Entry)"
+        },
+        {
+          "kind": "title",
+          "code": "119",
+          "title": "Boss 5 (イントロ無し)"
+        },
+        {
+          "kind": "range",
+          "min": "201",
+          "max": "204",
+          "title_format": "SE %03d",
+          "extcode": "1"
+        },
+        {
+          "kind": "range",
+          "min": "206",
+          "max": "206",
+          "title_format": "SE %03d",
+          "extcode": "1"
+        },
+        {
+          "kind": "range",
+          "min": "208",
+          "max": "212",
+          "title_format": "SE %03d",
+          "extcode": "1"
+        },
+        {
+          "kind": "range",
+          "min": "216",
+          "max": "216",
+          "title_format": "SE %03d",
+          "extcode": "1"
+        },
+        {
+          "kind": "range",
+          "min": "300",
+          "max": "323",
+          "title_format": "SE %03d",
+          "extcode": "1"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/sharp.xml",
+      "source_order": 4010,
+      "archive": "syvalion68snd",
+      "id": "syvalion68snd-generic"
+    },
+    {
+      "title": "[X68000] The New Zealand Story",
+      "driver": {
+        "name": "x68k",
+        "type": "generic",
+        "alias": "SHARP",
+        "platform": "SHARP X68000"
+      },
+      "options": [
+        {
+          "name": "mfp",
+          "value": "0x01"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "nls68snd.bin"
+        },
+        {
+          "type": "x",
+          "path": "nls.x",
+          "offset": "0x010000"
+        },
+        {
+          "type": "code",
+          "path": "NLSMUS.SND",
+          "offset": "0x042e30"
+        },
+        {
+          "type": "code",
+          "path": "NLSSND.SND",
+          "offset": "0x046130"
+        },
+        {
+          "type": "code",
+          "path": "NLSPCM1.SND",
+          "offset": "0xe20000"
+        },
+        {
+          "type": "code",
+          "path": "NLSPCM2.SND",
+          "offset": "0xe3238d"
+        },
+        {
+          "type": "code",
+          "path": "NLSPCM3.SND",
+          "offset": "0xe45e6d"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x0f",
+          "title": "クレジット"
+        },
+        {
+          "kind": "title",
+          "code": "0x06",
+          "title": "オープニングテーマ"
+        },
+        {
+          "kind": "title",
+          "code": "0x07",
+          "title": "メインテーマ"
+        },
+        {
+          "kind": "title",
+          "code": "0x0b",
+          "title": "ハリーアップ 1"
+        },
+        {
+          "kind": "title",
+          "code": "0x32",
+          "title": "ブック・オブ・デス"
+        },
+        {
+          "kind": "title",
+          "code": "0x3c",
+          "title": "ハリーアップ 2"
+        },
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "ミス"
+        },
+        {
+          "kind": "title",
+          "code": "0x0d",
+          "title": "パワーアップBGM"
+        },
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "ラウンドクリア"
+        },
+        {
+          "kind": "title",
+          "code": "0x08",
+          "title": "ボスBGM"
+        },
+        {
+          "kind": "title",
+          "code": "0x39",
+          "title": "天国への入口"
+        },
+        {
+          "kind": "title",
+          "code": "0x09",
+          "title": "天国BGM"
+        },
+        {
+          "kind": "title",
+          "code": "0x0a",
+          "title": "エンディング"
+        },
+        {
+          "kind": "title",
+          "code": "0x0c",
+          "title": "ネームレジスト"
+        },
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "ゲームオーバー"
+        },
+        {
+          "kind": "title",
+          "code": "0x3a",
+          "title": "タイムストップ"
+        },
+        {
+          "kind": "title",
+          "code": "0x0e",
+          "title": "SE 1UP"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "SE ジャンプ"
+        },
+        {
+          "kind": "title",
+          "code": "0x14",
+          "title": "SE ショット"
+        },
+        {
+          "kind": "range",
+          "min": "0x15",
+          "max": "0x31",
+          "title_format": "SE %02x",
+          "extcode": "1"
+        },
+        {
+          "kind": "range",
+          "min": "0x33",
+          "max": "0x38",
+          "title_format": "SE %02x",
+          "extcode": "1"
+        },
+        {
+          "kind": "range",
+          "min": "0x3b",
+          "max": "0x3b",
+          "title_format": "SE %02x",
+          "extcode": "1"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/sharp.xml",
+      "source_order": 4011,
+      "archive": "tnzs68snd",
+      "id": "tnzs68snd-generic"
+    },
+    {
+      "title": "[X1] X1C/X1D DEMONSTRATION",
+      "driver": {
+        "name": "x1",
+        "type": "psg",
+        "alias": "SHARP",
+        "platform": "SHARP X1"
+      },
+      "options": [
+        {
+          "name": "ctc3",
+          "value": "0x70"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "PATCH",
+          "offset": "0x0000"
+        },
+        {
+          "type": "code",
+          "path": "DEMO.Obj",
+          "offset": "0x0100"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x00",
+          "title": "An der schonen, blauen Donau (美しく青きドナウ) / Johann Strauss II."
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/sharp.xml",
+      "source_order": 4012,
+      "archive": "x1cdemo",
+      "id": "x1cdemo-psg"
+    },
+    {
+      "title": "[X1] X1F DEMONSTRATION",
+      "driver": {
+        "name": "x1",
+        "type": "psg",
+        "alias": "SHARP",
+        "platform": "SHARP X1"
+      },
+      "options": [
+        {
+          "name": "mdata_addr",
+          "value": "0x0200"
+        },
+        {
+          "name": "mdata_size",
+          "value": "0xe000"
+        },
+        {
+          "name": "mfile_size",
+          "value": "0xe000"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "PATCH",
+          "offset": "0x0000"
+        },
+        {
+          "type": "code",
+          "path": "DEMO1",
+          "offset": "0x0200"
+        },
+        {
+          "type": "bgm",
+          "path": "DEMO1",
+          "offset": "0x00"
+        },
+        {
+          "type": "bgm",
+          "path": "DEMO1",
+          "offset": "0x01"
+        },
+        {
+          "type": "bgm",
+          "path": "DEMO2",
+          "offset": "0x02"
+        },
+        {
+          "type": "bgm",
+          "path": "DEMO2",
+          "offset": "0x03"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x12000000",
+          "title": "DEMO1-1 : In the Mood / Joe Garland"
+        },
+        {
+          "kind": "title",
+          "code": "0x27000001",
+          "title": "DEMO1-2 : In the Mood / Joe Garland"
+        },
+        {
+          "kind": "title",
+          "code": "0x58000002",
+          "title": "DEMO2-1 : In the Mood / Joe Garland"
+        },
+        {
+          "kind": "title",
+          "code": "0x58000003",
+          "title": "DEMO2-2 : In the Mood / Joe Garland"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/sharp.xml",
+      "source_order": 4013,
+      "archive": "x1fdemo",
+      "id": "x1fdemo-psg"
+    },
+    {
+      "title": "[X1] X1G DEMONSTRATION",
+      "driver": {
+        "name": "x1",
+        "type": "psg",
+        "alias": "SHARP",
+        "platform": "SHARP X1"
+      },
+      "options": [
+        {
+          "name": "ctc3",
+          "value": "0x80"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "PATCH",
+          "offset": "0x0000"
+        },
+        {
+          "type": "code",
+          "path": "DEMO",
+          "offset": "0xa000"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x00",
+          "title": "The Third Man / Anton Karas"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/sharp.xml",
+      "source_order": 4014,
+      "archive": "x1gdemo",
+      "id": "x1gdemo-psg"
+    },
+    {
+      "title": "[X1] X1turbo DEMONSTRATION",
+      "driver": {
+        "name": "x1",
+        "type": "psg",
+        "alias": "SHARP",
+        "platform": "SHARP X1"
+      },
+      "options": [],
+      "assets": [
+        {
+          "type": "code",
+          "path": "PATCH",
+          "offset": "0x0000"
+        },
+        {
+          "type": "code",
+          "path": "DEMO_Sub.Obj",
+          "offset": "0xa000"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x00",
+          "title": "Les Patineurs (スケートする人々) / Emile Waldteufel"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/sharp.xml",
+      "source_order": 4015,
+      "archive": "x1tdemo",
+      "id": "x1tdemo-psg"
+    },
+    {
+      "title": "[X1] X1turboII DEMONSTRATION",
+      "driver": {
+        "name": "x1",
+        "type": "psg",
+        "alias": "SHARP",
+        "platform": "SHARP X1"
+      },
+      "options": [
+        {
+          "name": "init_pc",
+          "value": "0xd800"
+        },
+        {
+          "name": "mdata_addr",
+          "value": "0x0000"
+        },
+        {
+          "name": "mdata_size",
+          "value": "0x8200"
+        },
+        {
+          "name": "mfile_size",
+          "value": "0x8200"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "PATCH",
+          "offset": "0xd800"
+        },
+        {
+          "type": "code",
+          "path": "DEMO.obj",
+          "offset": "0xe000"
+        },
+        {
+          "type": "bgm",
+          "path": "DEMO1",
+          "offset": "0x00"
+        },
+        {
+          "type": "bgm",
+          "path": "DEMO2",
+          "offset": "0x01"
+        },
+        {
+          "type": "bgm",
+          "path": "DEMO3",
+          "offset": "0x02"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x00",
+          "title": "X1発売3周年記念 新発売 X1turboII"
+        },
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "An die Freude (歓喜の歌) / Ludwig van Beethoven"
+        },
+        {
+          "kind": "title",
+          "code": "0x02",
+          "title": "Frohlicher Landmann (楽しき農夫) / Robert Alexander Schumann"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/sharp.xml",
+      "source_order": 4016,
+      "archive": "x1t2demo",
+      "id": "x1t2demo-psg"
+    },
+    {
+      "title": "[X1] X1turboIII DEMONSTRATION",
+      "driver": {
+        "name": "x1",
+        "type": "psg",
+        "alias": "SHARP",
+        "platform": "SHARP X1"
+      },
+      "options": [
+        {
+          "name": "init_pc",
+          "value": "0x6000"
+        },
+        {
+          "name": "mdata_addr",
+          "value": "0x0000"
+        },
+        {
+          "name": "mdata_size",
+          "value": "0x6000"
+        },
+        {
+          "name": "mfile_size",
+          "value": "0x6000"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "PATCH",
+          "offset": "0x6000"
+        },
+        {
+          "type": "code",
+          "path": "DEMO Sub  1.obj",
+          "offset": "0x9900"
+        },
+        {
+          "type": "code",
+          "path": "DEMO Sub  5.obj",
+          "offset": "0xec00"
+        },
+        {
+          "type": "bgm",
+          "path": "DEMO Sub  1.obj",
+          "offset": "0x00"
+        },
+        {
+          "type": "bgm",
+          "path": "DEMO Sub  2.obj",
+          "offset": "0x01"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x00",
+          "title": "DEMO 1"
+        },
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "DEMO 2"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/sharp.xml",
+      "source_order": 4017,
+      "archive": "x1t3demo",
+      "id": "x1t3demo-psg"
+    },
+    {
+      "title": "[X1] X1turbo 店頭デモ",
+      "driver": {
+        "name": "x1",
+        "type": "psg",
+        "alias": "SHARP",
+        "platform": "SHARP X1"
+      },
+      "options": [
+        {
+          "name": "mdata_addr",
+          "value": "0x1000"
+        },
+        {
+          "name": "mdata_size",
+          "value": "0x6100"
+        },
+        {
+          "name": "mfile_size",
+          "value": "0x6100"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "PATCH",
+          "offset": "0x0000"
+        },
+        {
+          "type": "code",
+          "path": "DEMO1",
+          "offset": "0x9900"
+        },
+        {
+          "type": "code",
+          "path": "DEMOOBJ",
+          "offset": "0xee00"
+        },
+        {
+          "type": "bgm",
+          "path": "DEMO1",
+          "offset": "0x00"
+        },
+        {
+          "type": "bgm",
+          "path": "DEMO2",
+          "offset": "0x01"
+        },
+        {
+          "type": "bgm",
+          "path": "DEMO3",
+          "offset": "0x02"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x00",
+          "title": "DEMO 1 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "Les Patineurs (スケートする人々) / Emile Waldteufel"
+        },
+        {
+          "kind": "title",
+          "code": "0x02",
+          "title": "Les Patineurs (スケートする人々) / Emile Waldteufel"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/sharp.xml",
+      "source_order": 4018,
+      "archive": "x1tshopdemo",
+      "id": "x1tshopdemo-psg"
+    }
+  ]
+}

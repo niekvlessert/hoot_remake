@@ -1,0 +1,2143 @@
+{
+  "format": "hoot-catalog-shard",
+  "version": 1,
+  "source_file": "xml/micronet.xml",
+  "date": "2005/09/25",
+  "comments": [
+    " //Micronet "
+  ],
+  "games": [
+    {
+      "title": "[PC-8801] FLICKY",
+      "driver": {
+        "name": "pc88",
+        "type": "opn",
+        "alias": "Micronet",
+        "platform": "NEC PC-8801"
+      },
+      "options": [],
+      "assets": [
+        {
+          "type": "code",
+          "path": "PATCH",
+          "offset": "0x0000"
+        },
+        {
+          "type": "code",
+          "path": "PROG88",
+          "offset": "0x0100"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x05",
+          "title": "05 : STOP"
+        },
+        {
+          "kind": "title",
+          "code": "0x03",
+          "title": "03 : TITLE / NAME REGIST"
+        },
+        {
+          "kind": "title",
+          "code": "0x00",
+          "title": "00 : MAIN BGM"
+        },
+        {
+          "kind": "title",
+          "code": "0x04",
+          "title": "04 : BONUS STAGE"
+        },
+        {
+          "kind": "title",
+          "code": "0x02",
+          "title": "02 : BONUS STAGE END"
+        },
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "01 : GAME OVER"
+        },
+        {
+          "kind": "title",
+          "code": "0x06",
+          "title": "06 : CREDIT???"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/micronet.xml",
+      "source_order": 3247,
+      "archive": "flickypc",
+      "id": "flickypc-opn"
+    },
+    {
+      "title": "[X1] FLICKY",
+      "driver": {
+        "name": "x1",
+        "type": "psg",
+        "alias": "Micronet",
+        "platform": "SHARP X1"
+      },
+      "options": [
+        {
+          "name": "psg_mix",
+          "value": "0x18"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "PATCHX",
+          "offset": "0x0000"
+        },
+        {
+          "type": "code",
+          "path": "PROGX1",
+          "offset": "0x0100"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x05",
+          "title": "05 : STOP"
+        },
+        {
+          "kind": "title",
+          "code": "0x03",
+          "title": "03 : TITLE / NAME REGIST"
+        },
+        {
+          "kind": "title",
+          "code": "0x00",
+          "title": "00 : MAIN BGM"
+        },
+        {
+          "kind": "title",
+          "code": "0x04",
+          "title": "04 : BONUS STAGE"
+        },
+        {
+          "kind": "title",
+          "code": "0x02",
+          "title": "02 : BONUS STAGE END"
+        },
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "01 : GAME OVER"
+        },
+        {
+          "kind": "title",
+          "code": "0x06",
+          "title": "06 : CREDIT???"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/micronet.xml",
+      "source_order": 3248,
+      "archive": "flickypc",
+      "id": "flickypc-psg"
+    },
+    {
+      "title": "[PC-8801] CHAMPION PROWRES SPECIAL",
+      "driver": {
+        "name": "pc88",
+        "type": "opn",
+        "alias": "Micronet",
+        "platform": "NEC PC-8801"
+      },
+      "options": [],
+      "assets": [
+        {
+          "type": "code",
+          "path": "PATCH",
+          "offset": "0x0000"
+        },
+        {
+          "type": "code",
+          "path": "PROG1",
+          "offset": "0x1000"
+        },
+        {
+          "type": "code",
+          "path": "PROG2",
+          "offset": "0x7300"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x00000000",
+          "title": "00 : 演奏停止"
+        },
+        {
+          "kind": "title",
+          "code": "0x01000000",
+          "title": "01 : キャラクターセレクト"
+        },
+        {
+          "kind": "title",
+          "code": "0x02000000",
+          "title": "02 : キャラクター選択終了"
+        },
+        {
+          "kind": "comment",
+          "text": "\t<title code=\"0x00000001\">00 : 演奏停止</title> "
+        },
+        {
+          "kind": "title",
+          "code": "0x01000001",
+          "title": "01 : ラウンドスタート"
+        },
+        {
+          "kind": "title",
+          "code": "0x02000001",
+          "title": "02 : メインBGM"
+        },
+        {
+          "kind": "title",
+          "code": "0x03000001",
+          "title": "03 : 勝ち"
+        },
+        {
+          "kind": "title",
+          "code": "0x05000001",
+          "title": "05 : 負け"
+        },
+        {
+          "kind": "title",
+          "code": "0x04000001",
+          "title": "04 : ゲームオーバー"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/micronet.xml",
+      "source_order": 3249,
+      "archive": "cprwrspc",
+      "id": "cprwrspc-opn"
+    },
+    {
+      "title": "[X1] CHAMPION PROWRES SPECIAL",
+      "driver": {
+        "name": "x1",
+        "type": "psg",
+        "alias": "Micronet",
+        "platform": "SHARP X1"
+      },
+      "options": [
+        {
+          "name": "psg_mix",
+          "value": "0x50"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "PATCHX",
+          "offset": "0x0000"
+        },
+        {
+          "type": "code",
+          "path": "PROGX1",
+          "offset": "0x1000"
+        },
+        {
+          "type": "code",
+          "path": "PROGX2",
+          "offset": "0x7300"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x00",
+          "title": "00 : キャラクターセレクト"
+        },
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "01 : キャラクター選択終了"
+        },
+        {
+          "kind": "title",
+          "code": "0x02",
+          "title": "02 : ラウンドスタート"
+        },
+        {
+          "kind": "title",
+          "code": "0x03",
+          "title": "03 : メインBGM"
+        },
+        {
+          "kind": "title",
+          "code": "0x04",
+          "title": "04 : 勝ち"
+        },
+        {
+          "kind": "title",
+          "code": "0x06",
+          "title": "06 : 負け"
+        },
+        {
+          "kind": "title",
+          "code": "0x05",
+          "title": "05 : ゲームオーバー"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/micronet.xml",
+      "source_order": 3250,
+      "archive": "cprwrspc",
+      "id": "cprwrspc-psg"
+    },
+    {
+      "title": "[PC-8801] ROBO WRES 2001",
+      "driver": {
+        "name": "pc88",
+        "type": "opn",
+        "alias": "Micronet",
+        "platform": "NEC PC-8801"
+      },
+      "options": [
+        {
+          "name": "mdata_addr",
+          "value": "0x818b"
+        },
+        {
+          "name": "mdata_size",
+          "value": "0x7b00"
+        },
+        {
+          "name": "mfile_size",
+          "value": "0x7b00"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "PATCH",
+          "offset": "0x0000"
+        },
+        {
+          "type": "code",
+          "path": "PROG1",
+          "offset": "0x818b"
+        },
+        {
+          "type": "bgm",
+          "path": "PROG1",
+          "offset": "0x00"
+        },
+        {
+          "type": "bgm",
+          "path": "PROG2",
+          "offset": "0x01"
+        },
+        {
+          "type": "bgm",
+          "path": "PROG3",
+          "offset": "0x02"
+        },
+        {
+          "type": "bgm",
+          "path": "PROG4",
+          "offset": "0x03"
+        },
+        {
+          "type": "bgm",
+          "path": "PROG4",
+          "offset": "0x04"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x00",
+          "title": "00 : キャラクターセレクト"
+        },
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "01 : ゲームスタート"
+        },
+        {
+          "kind": "title",
+          "code": "0x02",
+          "title": "02 : ゲーム中BGM"
+        },
+        {
+          "kind": "title",
+          "code": "0x03",
+          "title": "03 : 敗戦"
+        },
+        {
+          "kind": "title",
+          "code": "0x04",
+          "title": "04 : 勝利"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/micronet.xml",
+      "source_order": 3251,
+      "archive": "robowr88",
+      "id": "robowr88-opn"
+    },
+    {
+      "title": "[PC-8801] たんば",
+      "driver": {
+        "name": "pc88",
+        "type": "opn",
+        "alias": "Micronet",
+        "platform": "NEC PC-8801"
+      },
+      "options": [
+        {
+          "name": "use_rtc",
+          "value": "0x01"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "PATCH",
+          "offset": "0x0000"
+        },
+        {
+          "type": "code",
+          "path": "DRIVER",
+          "offset": "0x8100"
+        },
+        {
+          "type": "code",
+          "path": "MUSIC",
+          "offset": "0xc000"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x00",
+          "title": "タイトル"
+        },
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "たんばの由来"
+        },
+        {
+          "kind": "title",
+          "code": "0x02",
+          "title": "ゲームの設定"
+        },
+        {
+          "kind": "title",
+          "code": "0x03",
+          "title": "成績"
+        },
+        {
+          "kind": "title",
+          "code": "0x04",
+          "title": "上がり"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/micronet.xml",
+      "source_order": 3252,
+      "archive": "tanba88",
+      "id": "tanba88-opn"
+    },
+    {
+      "title": "[PC-8801] STORM",
+      "driver": {
+        "name": "pc88",
+        "type": "opn",
+        "alias": "Micronet",
+        "platform": "NEC PC-8801"
+      },
+      "options": [
+        {
+          "name": "mdata_addr",
+          "value": "0x7c00"
+        },
+        {
+          "name": "use_rtc",
+          "value": "0x01"
+        },
+        {
+          "name": "baseclock",
+          "value": "0x04"
+        },
+        {
+          "name": "use_ssgpcm",
+          "value": "0x01"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "PATCH",
+          "offset": "0x0000"
+        },
+        {
+          "type": "code",
+          "path": "ENDING",
+          "offset": "0x0700"
+        },
+        {
+          "type": "code",
+          "path": "OPENING",
+          "offset": "0x0700"
+        },
+        {
+          "type": "code",
+          "path": "DEMO",
+          "offset": "0x5b00"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS00",
+          "offset": "0x00"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS01",
+          "offset": "0x01"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS02",
+          "offset": "0x02"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS03",
+          "offset": "0x03"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS04",
+          "offset": "0x04"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS05",
+          "offset": "0x05"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS06",
+          "offset": "0x06"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS07",
+          "offset": "0x07"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS08",
+          "offset": "0x08"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS09",
+          "offset": "0x09"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS10",
+          "offset": "0x0a"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS11",
+          "offset": "0x0b"
+        },
+        {
+          "type": "bgm",
+          "path": "PCM00",
+          "offset": "0x0c"
+        },
+        {
+          "type": "bgm",
+          "path": "PCM01",
+          "offset": "0x0d"
+        },
+        {
+          "type": "bgm",
+          "path": "PCM02",
+          "offset": "0x0e"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x00000000",
+          "title": "MUS00  : オープニングタイトル"
+        },
+        {
+          "kind": "comment",
+          "text": "\t<title code=\"0x00000003\">MUS03  : オープニングタイトル</title> "
+        },
+        {
+          "kind": "title",
+          "code": "0x00000005",
+          "title": "MUS05  : 第１話 「シェネ軍出現」              (ストラテジーモード)"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000007",
+          "title": "MUS07  : 第２話 「コマンダー特攻」            (コマンド作戦)"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000006",
+          "title": "MUS06  : 戦闘"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000001",
+          "title": "MUS01  : 第３話 「絶体絶命！ キュララの最期」 (ストラテジーモード)"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000008",
+          "title": "MUS08  : 第４話 「フォートレス09からの脱出」  (コマンド作戦)"
+        },
+        {
+          "kind": "title",
+          "code": "0x0000000b",
+          "title": "MUS11  : 第５話 「ラスト・ファイト」          (ストラテジーモード)"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000002",
+          "title": "MUS02  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000004",
+          "title": "MUS04  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000009",
+          "title": "MUS09  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x0000000a",
+          "title": "MUS10  : ゲームオーバー"
+        },
+        {
+          "kind": "title",
+          "code": "0x000000ff",
+          "title": "ENDING : エンディング"
+        },
+        {
+          "kind": "title",
+          "code": "0x0100000c",
+          "title": "PCM00  : 緊急事態発生！"
+        },
+        {
+          "kind": "title",
+          "code": "0x0100000d",
+          "title": "PCM01  : はっはっはっはっ"
+        },
+        {
+          "kind": "title",
+          "code": "0x0100000e",
+          "title": "PCM02  : うわぁー！"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/micronet.xml",
+      "source_order": 3253,
+      "archive": "storm88",
+      "id": "storm88-opn"
+    },
+    {
+      "title": "[PC-8801] 極道陣取り",
+      "driver": {
+        "name": "pc88",
+        "type": "opn",
+        "alias": "Micronet",
+        "platform": "NEC PC-8801"
+      },
+      "options": [
+        {
+          "name": "mdata_addr",
+          "value": "0xa000"
+        },
+        {
+          "name": "mfile_size",
+          "value": "0xb000"
+        },
+        {
+          "name": "use_rtc",
+          "value": "0x01"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "PATCH",
+          "offset": "0x0000"
+        },
+        {
+          "type": "code",
+          "path": "TITLE.COM",
+          "offset": "0x0100"
+        },
+        {
+          "type": "bgm",
+          "path": "TITLE.COM",
+          "offset": "0x00"
+        },
+        {
+          "type": "bgm",
+          "path": "MAIN.COM",
+          "offset": "0x01"
+        },
+        {
+          "type": "bgm",
+          "path": "EMUS1.COM",
+          "offset": "0x02"
+        },
+        {
+          "type": "bgm",
+          "path": "EMUS2.COM",
+          "offset": "0x03"
+        },
+        {
+          "type": "bgm",
+          "path": "EMUS3.COM",
+          "offset": "0x04"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS6.COM",
+          "offset": "0x05"
+        },
+        {
+          "type": "bgm",
+          "path": "OMAKE.COM",
+          "offset": "0x06"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x217100",
+          "title": "TITLE.COM"
+        },
+        {
+          "kind": "title",
+          "code": "0x202301",
+          "title": "MAIN.COM"
+        },
+        {
+          "kind": "title",
+          "code": "0x29f101",
+          "title": "MAIN.COM"
+        },
+        {
+          "kind": "title",
+          "code": "0x2d8701",
+          "title": "MAIN.COM"
+        },
+        {
+          "kind": "title",
+          "code": "0x000002",
+          "title": "EMUS01.COM"
+        },
+        {
+          "kind": "title",
+          "code": "0x000003",
+          "title": "EMUS02.COM"
+        },
+        {
+          "kind": "title",
+          "code": "0x000004",
+          "title": "EMUS03.COM"
+        },
+        {
+          "kind": "title",
+          "code": "0x000005",
+          "title": "MUS6.COM"
+        },
+        {
+          "kind": "title",
+          "code": "0x315006",
+          "title": "OMAKE.COM"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/micronet.xml",
+      "source_order": 3254,
+      "archive": "gokudo88",
+      "id": "gokudo88-opn"
+    },
+    {
+      "title": "[X1] 極道陣取り(OPM)",
+      "driver": {
+        "name": "x1",
+        "type": "opm",
+        "alias": "Micronet",
+        "platform": "SHARP X1"
+      },
+      "options": [
+        {
+          "name": "init_pc",
+          "value": "0xf000"
+        },
+        {
+          "name": "mdata_addr",
+          "value": "0xa000"
+        },
+        {
+          "name": "mfile_size",
+          "value": "0xb000"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "TITLE.COM",
+          "offset": "0x0100"
+        },
+        {
+          "type": "code",
+          "path": "PATCH",
+          "offset": "0xf000"
+        },
+        {
+          "type": "bgm",
+          "path": "TITLE.COM",
+          "offset": "0x00"
+        },
+        {
+          "type": "bgm",
+          "path": "MAIN.COM",
+          "offset": "0x01"
+        },
+        {
+          "type": "bgm",
+          "path": "EMUS1.COM",
+          "offset": "0x02"
+        },
+        {
+          "type": "bgm",
+          "path": "EMUS2.COM",
+          "offset": "0x03"
+        },
+        {
+          "type": "bgm",
+          "path": "EMUS3.COM",
+          "offset": "0x04"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS6.COM",
+          "offset": "0x05"
+        },
+        {
+          "type": "bgm",
+          "path": "OMAKE.COM",
+          "offset": "0x06"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x232000",
+          "title": "TITLE.COM"
+        },
+        {
+          "kind": "title",
+          "code": "0x90bd01",
+          "title": "MAIN.COM"
+        },
+        {
+          "kind": "title",
+          "code": "0x9a8501",
+          "title": "MAIN.COM"
+        },
+        {
+          "kind": "title",
+          "code": "0x9e1501",
+          "title": "MAIN.COM"
+        },
+        {
+          "kind": "title",
+          "code": "0x000002",
+          "title": "EMUS01.COM"
+        },
+        {
+          "kind": "title",
+          "code": "0x000003",
+          "title": "EMUS02.COM"
+        },
+        {
+          "kind": "title",
+          "code": "0x000004",
+          "title": "EMUS03.COM"
+        },
+        {
+          "kind": "title",
+          "code": "0x000005",
+          "title": "MUS6.COM"
+        },
+        {
+          "kind": "title",
+          "code": "0x31d806",
+          "title": "OMAKE.COM"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/micronet.xml",
+      "source_order": 3255,
+      "archive": "x1gokudo",
+      "id": "x1gokudo-opm"
+    },
+    {
+      "title": "[X1] 極道陣取り(PSG)",
+      "driver": {
+        "name": "x1",
+        "type": "psg",
+        "alias": "Micronet",
+        "platform": "SHARP X1"
+      },
+      "options": [
+        {
+          "name": "init_pc",
+          "value": "0xf000"
+        },
+        {
+          "name": "mdata_addr",
+          "value": "0xa000"
+        },
+        {
+          "name": "mfile_size",
+          "value": "0xb000"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "TITLE.COM",
+          "offset": "0x0100"
+        },
+        {
+          "type": "code",
+          "path": "PATCH",
+          "offset": "0xf000"
+        },
+        {
+          "type": "bgm",
+          "path": "TITLE.COM",
+          "offset": "0x00"
+        },
+        {
+          "type": "bgm",
+          "path": "MAIN.COM",
+          "offset": "0x01"
+        },
+        {
+          "type": "bgm",
+          "path": "EMUS1.COM",
+          "offset": "0x02"
+        },
+        {
+          "type": "bgm",
+          "path": "EMUS2.COM",
+          "offset": "0x03"
+        },
+        {
+          "type": "bgm",
+          "path": "EMUS3.COM",
+          "offset": "0x04"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS6.COM",
+          "offset": "0x05"
+        },
+        {
+          "type": "bgm",
+          "path": "OMAKE.COM",
+          "offset": "0x06"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x232000",
+          "title": "TITLE.COM"
+        },
+        {
+          "kind": "title",
+          "code": "0x90bd01",
+          "title": "MAIN.COM"
+        },
+        {
+          "kind": "title",
+          "code": "0x9a8501",
+          "title": "MAIN.COM"
+        },
+        {
+          "kind": "title",
+          "code": "0x9e1501",
+          "title": "MAIN.COM"
+        },
+        {
+          "kind": "title",
+          "code": "0x000002",
+          "title": "EMUS01.COM"
+        },
+        {
+          "kind": "title",
+          "code": "0x000003",
+          "title": "EMUS02.COM"
+        },
+        {
+          "kind": "title",
+          "code": "0x000004",
+          "title": "EMUS03.COM"
+        },
+        {
+          "kind": "title",
+          "code": "0x000005",
+          "title": "MUS6.COM"
+        },
+        {
+          "kind": "title",
+          "code": "0x31d806",
+          "title": "OMAKE.COM"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/micronet.xml",
+      "source_order": 3256,
+      "archive": "x1gokudo",
+      "id": "x1gokudo-psg"
+    },
+    {
+      "title": "[X68000] たんば",
+      "driver": {
+        "name": "x68k",
+        "type": "generic",
+        "alias": "Micronet",
+        "platform": "SHARP X68000"
+      },
+      "options": [
+        {
+          "name": "opm_mix",
+          "value": "0xc0"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "opmdrv.bin"
+        },
+        {
+          "type": "x",
+          "path": "OPMDRV.X",
+          "offset": "0x08000"
+        },
+        {
+          "type": "code",
+          "path": "AKAHS.MML",
+          "offset": "0x24000"
+        },
+        {
+          "type": "code",
+          "path": "COUGHTY.MML",
+          "offset": "0x28000"
+        },
+        {
+          "type": "code",
+          "path": "DAWN.MML",
+          "offset": "0x2c000"
+        },
+        {
+          "type": "code",
+          "path": "FANFA.MML",
+          "offset": "0x30000"
+        },
+        {
+          "type": "code",
+          "path": "QUIETY.MML",
+          "offset": "0x34000"
+        },
+        {
+          "type": "code",
+          "path": "SNAIN.MML",
+          "offset": "0x38000"
+        },
+        {
+          "type": "code",
+          "path": "SHAKA.OPM",
+          "offset": "0x3c000"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x0802",
+          "title": "AKAHS.MML   : タイトル"
+        },
+        {
+          "kind": "title",
+          "code": "0x0807",
+          "title": "SNAIN.MML   : たんばの由来"
+        },
+        {
+          "kind": "title",
+          "code": "0x0803",
+          "title": "COUGHTY.MML : ゲームの設定"
+        },
+        {
+          "kind": "title",
+          "code": "0x0806",
+          "title": "QUIETY.MML  : 成績"
+        },
+        {
+          "kind": "title",
+          "code": "0x0804",
+          "title": "DAWN.MML    : 上がり"
+        },
+        {
+          "kind": "title",
+          "code": "0x0805",
+          "title": "FANFA.MML   :"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/micronet.xml",
+      "source_order": 3257,
+      "archive": "tanba68snd",
+      "id": "tanba68snd-generic"
+    },
+    {
+      "title": "[X68000] 麻雀狂時代 SPECIAL",
+      "driver": {
+        "name": "x68k",
+        "type": "generic",
+        "alias": "Micronet",
+        "platform": "SHARP X68000"
+      },
+      "options": [
+        {
+          "name": "opm_mix",
+          "value": "0xc0"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "opmdrv.bin"
+        },
+        {
+          "type": "x",
+          "path": "OPMDRV.X",
+          "offset": "0x08000"
+        },
+        {
+          "type": "code",
+          "path": "CONCERTO.MML",
+          "offset": "0x24000"
+        },
+        {
+          "type": "code",
+          "path": "FANFA.MML",
+          "offset": "0x28000"
+        },
+        {
+          "type": "code",
+          "path": "STNO1.MML",
+          "offset": "0x2c000"
+        },
+        {
+          "type": "code",
+          "path": "STNO3.MML",
+          "offset": "0x30000"
+        },
+        {
+          "type": "code",
+          "path": "STNO4.MML",
+          "offset": "0x34000"
+        },
+        {
+          "type": "code",
+          "path": "STNO5.MML",
+          "offset": "0x38000"
+        },
+        {
+          "type": "code",
+          "path": "STNO6.MML",
+          "offset": "0x3c000"
+        },
+        {
+          "type": "code",
+          "path": "STNO7.MML",
+          "offset": "0x40000"
+        },
+        {
+          "type": "code",
+          "path": "SHAKA.OPM",
+          "offset": "0x44000"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x0a02",
+          "title": "CONCERTO.MML"
+        },
+        {
+          "kind": "title",
+          "code": "0x0a03",
+          "title": "FANFA.MML"
+        },
+        {
+          "kind": "title",
+          "code": "0x0a04",
+          "title": "STNO1.MML"
+        },
+        {
+          "kind": "title",
+          "code": "0x0a05",
+          "title": "STNO3.MML"
+        },
+        {
+          "kind": "title",
+          "code": "0x0a06",
+          "title": "STNO4.MML"
+        },
+        {
+          "kind": "title",
+          "code": "0x0a07",
+          "title": "STNO5.MML"
+        },
+        {
+          "kind": "title",
+          "code": "0x0a08",
+          "title": "STNO6.MML"
+        },
+        {
+          "kind": "title",
+          "code": "0x0a09",
+          "title": "STNO7.MML"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/micronet.xml",
+      "source_order": 3258,
+      "archive": "mjkyo68snd",
+      "id": "mjkyo68snd-generic"
+    },
+    {
+      "title": "[MSX] 麻雀狂時代 SPECIAL II 冒険篇(OPLL)",
+      "driver": {
+        "name": "msx",
+        "type": "generic",
+        "alias": "Micronet",
+        "platform": "MSX"
+      },
+      "options": [
+        {
+          "name": "init_pc",
+          "value": "0x0400"
+        },
+        {
+          "name": "use_opll",
+          "value": "0x01"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "patch",
+          "offset": "0x0400"
+        },
+        {
+          "type": "code",
+          "path": "MUS.COM",
+          "offset": "0x4000"
+        },
+        {
+          "type": "code",
+          "path": "BIOS.COM",
+          "offset": "0x8f00"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "range",
+          "min": "0x00",
+          "max": "0x10",
+          "title_format": "BGM %02x",
+          "extcode": "1"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/micronet.xml",
+      "source_order": 3259,
+      "archive": "mjkyosp2_msx",
+      "id": "mjkyosp2-msx-generic"
+    },
+    {
+      "title": "[MSX] 麻雀狂時代 SPECIAL II 冒険篇(PSG)",
+      "driver": {
+        "name": "msx",
+        "type": "generic",
+        "alias": "Micronet",
+        "platform": "MSX"
+      },
+      "options": [
+        {
+          "name": "init_pc",
+          "value": "0x0400"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "patch",
+          "offset": "0x0400"
+        },
+        {
+          "type": "code",
+          "path": "MUS.COM",
+          "offset": "0x4000"
+        },
+        {
+          "type": "code",
+          "path": "BIOS.COM",
+          "offset": "0x8f00"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "range",
+          "min": "0x00",
+          "max": "0x10",
+          "title_format": "BGM %02x",
+          "extcode": "1"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/micronet.xml",
+      "source_order": 3260,
+      "archive": "mjkyosp2_msx",
+      "id": "mjkyosp2-msx-generic-2"
+    },
+    {
+      "title": "[MSX] 極道陣取り(OPLL)",
+      "driver": {
+        "name": "msx",
+        "type": "generic",
+        "alias": "Micronet",
+        "platform": "MSX"
+      },
+      "options": [
+        {
+          "name": "mdata_addr",
+          "value": "0x4000"
+        },
+        {
+          "name": "mdata_size",
+          "value": "0x4000"
+        },
+        {
+          "name": "mfile_size",
+          "value": "0x4000"
+        },
+        {
+          "name": "init_pc",
+          "value": "0x400"
+        },
+        {
+          "name": "use_opll",
+          "value": "0x01"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "patch",
+          "offset": "0x0400"
+        },
+        {
+          "type": "code",
+          "path": "SDAT.COM",
+          "offset": "0x1000"
+        },
+        {
+          "type": "bgm",
+          "path": "TITLE.COM",
+          "offset": "0x00"
+        },
+        {
+          "type": "bgm",
+          "path": "ENDMSX.COM",
+          "offset": "0x01"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x002",
+          "title": "TITLE.COM  : タイトル"
+        },
+        {
+          "kind": "title",
+          "code": "0x003",
+          "title": "TITLE.COM  : オープニング1"
+        },
+        {
+          "kind": "title",
+          "code": "0x000",
+          "title": "TITLE.COM  : オープニング2"
+        },
+        {
+          "kind": "title",
+          "code": "0x200",
+          "title": "SDAT.COM   : マップ"
+        },
+        {
+          "kind": "title",
+          "code": "0x202",
+          "title": "SDAT.COM   : 出入り1"
+        },
+        {
+          "kind": "title",
+          "code": "0x201",
+          "title": "SDAT.COM   : 出入り2"
+        },
+        {
+          "kind": "title",
+          "code": "0x001",
+          "title": "TITLE.COM  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x100",
+          "title": "ENDMSX.COM :"
+        },
+        {
+          "kind": "title",
+          "code": "0x101",
+          "title": "ENDMSX.COM :"
+        },
+        {
+          "kind": "title",
+          "code": "0x102",
+          "title": "ENDMSX.COM :"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/micronet.xml",
+      "source_order": 3261,
+      "archive": "gokudo_msx",
+      "id": "gokudo-msx-generic"
+    },
+    {
+      "title": "[MSX] 極道陣取り(PSG)",
+      "driver": {
+        "name": "msx",
+        "type": "generic",
+        "alias": "Micronet",
+        "platform": "MSX"
+      },
+      "options": [
+        {
+          "name": "mdata_addr",
+          "value": "0x4000"
+        },
+        {
+          "name": "mdata_size",
+          "value": "0x4000"
+        },
+        {
+          "name": "mfile_size",
+          "value": "0x4000"
+        },
+        {
+          "name": "init_pc",
+          "value": "0x400"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "patch",
+          "offset": "0x0400"
+        },
+        {
+          "type": "code",
+          "path": "SDAT.COM",
+          "offset": "0x1000"
+        },
+        {
+          "type": "bgm",
+          "path": "TITLE.COM",
+          "offset": "0x00"
+        },
+        {
+          "type": "bgm",
+          "path": "ENDMSX.COM",
+          "offset": "0x01"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x002",
+          "title": "TITLE.COM  : タイトル"
+        },
+        {
+          "kind": "title",
+          "code": "0x003",
+          "title": "TITLE.COM  : オープニング1"
+        },
+        {
+          "kind": "title",
+          "code": "0x000",
+          "title": "TITLE.COM  : オープニング2"
+        },
+        {
+          "kind": "title",
+          "code": "0x200",
+          "title": "SDAT.COM   : マップ"
+        },
+        {
+          "kind": "title",
+          "code": "0x202",
+          "title": "SDAT.COM   : 出入り1"
+        },
+        {
+          "kind": "title",
+          "code": "0x201",
+          "title": "SDAT.COM   : 出入り2"
+        },
+        {
+          "kind": "title",
+          "code": "0x001",
+          "title": "TITLE.COM  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x100",
+          "title": "ENDMSX.COM :"
+        },
+        {
+          "kind": "title",
+          "code": "0x101",
+          "title": "ENDMSX.COM :"
+        },
+        {
+          "kind": "title",
+          "code": "0x102",
+          "title": "ENDMSX.COM :"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/micronet.xml",
+      "source_order": 3262,
+      "archive": "gokudo_msx",
+      "id": "gokudo-msx-generic-2"
+    },
+    {
+      "title": "[MSX] たんば(OPLL)",
+      "driver": {
+        "name": "msx",
+        "type": "generic",
+        "alias": "Micronet",
+        "platform": "MSX"
+      },
+      "options": [
+        {
+          "name": "init_pc",
+          "value": "0x400"
+        },
+        {
+          "name": "use_opll",
+          "value": "0x01"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "patch",
+          "offset": "0x0400"
+        },
+        {
+          "type": "code",
+          "path": "TITLE.COM",
+          "offset": "0x4000"
+        },
+        {
+          "type": "code",
+          "path": "SINMUS.COM",
+          "offset": "0xc0d6"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x00",
+          "title": "タイトル"
+        },
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "上がり"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/micronet.xml",
+      "source_order": 3263,
+      "archive": "tanba_msx",
+      "id": "tanba-msx-generic"
+    },
+    {
+      "title": "[MSX] たんば(PSG)",
+      "driver": {
+        "name": "msx",
+        "type": "generic",
+        "alias": "Micronet",
+        "platform": "MSX"
+      },
+      "options": [
+        {
+          "name": "init_pc",
+          "value": "0x400"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "patch",
+          "offset": "0x0400"
+        },
+        {
+          "type": "code",
+          "path": "TITLE.COM",
+          "offset": "0x4000"
+        },
+        {
+          "type": "code",
+          "path": "SINMUS.COM",
+          "offset": "0xc0d6"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x00",
+          "title": "タイトル"
+        },
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "上がり"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/micronet.xml",
+      "source_order": 3264,
+      "archive": "tanba_msx",
+      "id": "tanba-msx-generic-2"
+    },
+    {
+      "title": "[X68000] HEAVY NOVA",
+      "driver": {
+        "name": "x68k",
+        "type": "generic",
+        "alias": "Micronet",
+        "platform": "SHARP X68000"
+      },
+      "options": [
+        {
+          "name": "mfp",
+          "value": "0x01"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "hnova68snd.bin",
+          "offset": "0x000000"
+        },
+        {
+          "type": "x",
+          "path": "HEAD.X",
+          "offset": "0x010000"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "Title"
+        },
+        {
+          "kind": "title",
+          "code": "0x05",
+          "title": "Demo / Addtional Techniques"
+        },
+        {
+          "kind": "title",
+          "code": "0x02",
+          "title": "Mission 1"
+        },
+        {
+          "kind": "title",
+          "code": "0x07",
+          "title": "Mission 1 Boss 1"
+        },
+        {
+          "kind": "title",
+          "code": "0x08",
+          "title": "Mission 1 Boss 2"
+        },
+        {
+          "kind": "title",
+          "code": "0x09",
+          "title": "Mission 1 Boss 3"
+        },
+        {
+          "kind": "title",
+          "code": "0x04",
+          "title": "Result"
+        },
+        {
+          "kind": "title",
+          "code": "0x03",
+          "title": "Mission 2"
+        },
+        {
+          "kind": "title",
+          "code": "0x0a",
+          "title": "Mission 2 Boss 1"
+        },
+        {
+          "kind": "title",
+          "code": "0x0b",
+          "title": "Mission 2 Boss 2"
+        },
+        {
+          "kind": "title",
+          "code": "0x0c",
+          "title": "Mission 2 Boss 3"
+        },
+        {
+          "kind": "title",
+          "code": "0x0d",
+          "title": "Mission 2 Boss 4"
+        },
+        {
+          "kind": "title",
+          "code": "0x0e",
+          "title": "Mission 2 Last Boss"
+        },
+        {
+          "kind": "title",
+          "code": "0x06",
+          "title": "Continue"
+        },
+        {
+          "kind": "title",
+          "code": "0x0f",
+          "title": "Ending Theme"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/micronet.xml",
+      "source_order": 3265,
+      "archive": "hnova68snd",
+      "id": "hnova68snd-generic"
+    },
+    {
+      "title": "[MSX] アウトロー水滸伝 -極道陣取り2-(OPLL)",
+      "driver": {
+        "name": "msx",
+        "type": "generic",
+        "alias": "Micronet",
+        "platform": "MSX"
+      },
+      "options": [
+        {
+          "name": "init_pc",
+          "value": "0x0400"
+        },
+        {
+          "name": "use_opll",
+          "value": "0x01"
+        },
+        {
+          "name": "mdata_addr",
+          "value": "0x4000"
+        },
+        {
+          "name": "mdata_size",
+          "value": "0x6800"
+        },
+        {
+          "name": "mfile_size",
+          "value": "0x6800"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "patch",
+          "offset": "0x0400"
+        },
+        {
+          "type": "code",
+          "path": "KBIOS.COM",
+          "offset": "0xA800"
+        },
+        {
+          "type": "bgm",
+          "path": "STMAIN.COM",
+          "offset": "0x00"
+        },
+        {
+          "type": "bgm",
+          "path": "MAIN0.COM",
+          "offset": "0x01"
+        },
+        {
+          "type": "bgm",
+          "path": "MAIN1.COM",
+          "offset": "0x02"
+        },
+        {
+          "type": "bgm",
+          "path": "MAIN2.COM",
+          "offset": "0x03"
+        },
+        {
+          "type": "bgm",
+          "path": "MAIN3.COM",
+          "offset": "0x04"
+        },
+        {
+          "type": "bgm",
+          "path": "MAIN4.COM",
+          "offset": "0x05"
+        },
+        {
+          "type": "bgm",
+          "path": "MAIN5.COM",
+          "offset": "0x06"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x00",
+          "title": "STMAIN.COM : 00"
+        },
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "MAIN0.COM  : 00"
+        },
+        {
+          "kind": "title",
+          "code": "0x02",
+          "title": "MAIN0.COM  : 01"
+        },
+        {
+          "kind": "title",
+          "code": "0x03",
+          "title": "MAIN1.COM  : 00"
+        },
+        {
+          "kind": "title",
+          "code": "0x04",
+          "title": "MAIN1.COM  : 01"
+        },
+        {
+          "kind": "title",
+          "code": "0x05",
+          "title": "MAIN1.COM  : 02"
+        },
+        {
+          "kind": "title",
+          "code": "0x06",
+          "title": "MAIN1.COM  : 03"
+        },
+        {
+          "kind": "title",
+          "code": "0x07",
+          "title": "MAIN1.COM  : 04"
+        },
+        {
+          "kind": "title",
+          "code": "0x08",
+          "title": "MAIN2.COM  : 00"
+        },
+        {
+          "kind": "title",
+          "code": "0x09",
+          "title": "MAIN2.COM  : 01"
+        },
+        {
+          "kind": "title",
+          "code": "0x0a",
+          "title": "MAIN2.COM  : 02"
+        },
+        {
+          "kind": "title",
+          "code": "0x0b",
+          "title": "MAIN2.COM  : 03"
+        },
+        {
+          "kind": "title",
+          "code": "0x0c",
+          "title": "MAIN3.COM  : 00"
+        },
+        {
+          "kind": "title",
+          "code": "0x0d",
+          "title": "MAIN3.COM  : 01"
+        },
+        {
+          "kind": "title",
+          "code": "0x0e",
+          "title": "MAIN3.COM  : 02"
+        },
+        {
+          "kind": "title",
+          "code": "0x0f",
+          "title": "MAIN4.COM  : 00"
+        },
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "MAIN4.COM  : 01"
+        },
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "MAIN4.COM  : 02"
+        },
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "MAIN4.COM  : 03"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "MAIN5.COM  : 00"
+        },
+        {
+          "kind": "title",
+          "code": "0x14",
+          "title": "MAIN5.COM  : 01"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/micronet.xml",
+      "source_order": 3266,
+      "archive": "olsuiko_msx",
+      "id": "olsuiko-msx-generic"
+    },
+    {
+      "title": "[MSX] アウトロー水滸伝 -極道陣取り2-(PSG)",
+      "driver": {
+        "name": "msx",
+        "type": "generic",
+        "alias": "Micronet",
+        "platform": "MSX"
+      },
+      "options": [
+        {
+          "name": "init_pc",
+          "value": "0x0400"
+        },
+        {
+          "name": "mdata_addr",
+          "value": "0x4000"
+        },
+        {
+          "name": "mdata_size",
+          "value": "0x6800"
+        },
+        {
+          "name": "mfile_size",
+          "value": "0x6800"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "patch",
+          "offset": "0x0400"
+        },
+        {
+          "type": "code",
+          "path": "KBIOS.COM",
+          "offset": "0xA800"
+        },
+        {
+          "type": "bgm",
+          "path": "STMAIN.COM",
+          "offset": "0x00"
+        },
+        {
+          "type": "bgm",
+          "path": "MAIN0.COM",
+          "offset": "0x01"
+        },
+        {
+          "type": "bgm",
+          "path": "MAIN1.COM",
+          "offset": "0x02"
+        },
+        {
+          "type": "bgm",
+          "path": "MAIN2.COM",
+          "offset": "0x03"
+        },
+        {
+          "type": "bgm",
+          "path": "MAIN3.COM",
+          "offset": "0x04"
+        },
+        {
+          "type": "bgm",
+          "path": "MAIN4.COM",
+          "offset": "0x05"
+        },
+        {
+          "type": "bgm",
+          "path": "MAIN5.COM",
+          "offset": "0x06"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x00",
+          "title": "STMAIN.COM : 00"
+        },
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "MAIN0.COM  : 00"
+        },
+        {
+          "kind": "title",
+          "code": "0x02",
+          "title": "MAIN0.COM  : 01"
+        },
+        {
+          "kind": "title",
+          "code": "0x03",
+          "title": "MAIN1.COM  : 00"
+        },
+        {
+          "kind": "title",
+          "code": "0x04",
+          "title": "MAIN1.COM  : 01"
+        },
+        {
+          "kind": "title",
+          "code": "0x05",
+          "title": "MAIN1.COM  : 02"
+        },
+        {
+          "kind": "title",
+          "code": "0x06",
+          "title": "MAIN1.COM  : 03"
+        },
+        {
+          "kind": "title",
+          "code": "0x07",
+          "title": "MAIN1.COM  : 04"
+        },
+        {
+          "kind": "title",
+          "code": "0x08",
+          "title": "MAIN2.COM  : 00"
+        },
+        {
+          "kind": "title",
+          "code": "0x09",
+          "title": "MAIN2.COM  : 01"
+        },
+        {
+          "kind": "title",
+          "code": "0x0a",
+          "title": "MAIN2.COM  : 02"
+        },
+        {
+          "kind": "title",
+          "code": "0x0b",
+          "title": "MAIN2.COM  : 03"
+        },
+        {
+          "kind": "title",
+          "code": "0x0c",
+          "title": "MAIN3.COM  : 00"
+        },
+        {
+          "kind": "title",
+          "code": "0x0d",
+          "title": "MAIN3.COM  : 01"
+        },
+        {
+          "kind": "title",
+          "code": "0x0e",
+          "title": "MAIN3.COM  : 02"
+        },
+        {
+          "kind": "title",
+          "code": "0x0f",
+          "title": "MAIN4.COM  : 00"
+        },
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "MAIN4.COM  : 01"
+        },
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "MAIN4.COM  : 02"
+        },
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "MAIN4.COM  : 03"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "MAIN5.COM  : 00"
+        },
+        {
+          "kind": "title",
+          "code": "0x14",
+          "title": "MAIN5.COM  : 01"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/micronet.xml",
+      "source_order": 3267,
+      "archive": "olsuiko_msx",
+      "id": "olsuiko-msx-generic-2"
+    }
+  ]
+}

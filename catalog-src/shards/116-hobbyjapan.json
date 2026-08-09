@@ -1,0 +1,974 @@
+{
+  "format": "hoot-catalog-shard",
+  "version": 1,
+  "source_file": "xml/hobbyjapan.xml",
+  "date": "2005/09/25",
+  "comments": [
+    " //HOBBY JAPAN "
+  ],
+  "games": [
+    {
+      "title": "[PC-9801] リングマスター フィリアス・ノギスの暗雲",
+      "driver": {
+        "name": "pc98dos",
+        "type": "opn",
+        "alias": "HOBBY JAPAN",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "clockmul",
+          "value": "8"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "SOUND.ROM",
+          "offset": "0xCC000"
+        },
+        {
+          "type": "file",
+          "path": "PLAY.EXE",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "HJ_98.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "M1.MC",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "M2.MC",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "M3.MC",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "M4.MC",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "M5.MC",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "M6.MC",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "M7.MC",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "M8.MC",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "M9.MC",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "M10.MC",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "M11.MC",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "M12.MC",
+          "offset": "-1"
+        },
+        {
+          "type": "conin",
+          "path": "M1.MC",
+          "offset": "0x10"
+        },
+        {
+          "type": "conin",
+          "path": "M2.MC",
+          "offset": "0x11"
+        },
+        {
+          "type": "conin",
+          "path": "M3.MC",
+          "offset": "0x12"
+        },
+        {
+          "type": "conin",
+          "path": "M4.MC",
+          "offset": "0x13"
+        },
+        {
+          "type": "conin",
+          "path": "M5.MC",
+          "offset": "0x14"
+        },
+        {
+          "type": "conin",
+          "path": "M6.MC",
+          "offset": "0x15"
+        },
+        {
+          "type": "conin",
+          "path": "M7.MC",
+          "offset": "0x16"
+        },
+        {
+          "type": "conin",
+          "path": "M8.MC",
+          "offset": "0x17"
+        },
+        {
+          "type": "conin",
+          "path": "M9.MC",
+          "offset": "0x18"
+        },
+        {
+          "type": "conin",
+          "path": "M10.MC",
+          "offset": "0x19"
+        },
+        {
+          "type": "conin",
+          "path": "M11.MC",
+          "offset": "0x1a"
+        },
+        {
+          "type": "conin",
+          "path": "M12.MC",
+          "offset": "0x1b"
+        },
+        {
+          "type": "shell",
+          "path": "PLAY",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "HJ_98",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "M1.MC  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "M2.MC  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "M3.MC  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "M4.MC  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x14",
+          "title": "M5.MC  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x15",
+          "title": "M6.MC  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x16",
+          "title": "M7.MC  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x17",
+          "title": "M8.MC  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x18",
+          "title": "M9.MC  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x19",
+          "title": "M10.MC :"
+        },
+        {
+          "kind": "title",
+          "code": "0x1a",
+          "title": "M11.MC :"
+        },
+        {
+          "kind": "title",
+          "code": "0x1b",
+          "title": "M12.MC :"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/hobbyjapan.xml",
+      "source_order": 2484,
+      "archive": "ringm_98",
+      "id": "ringm-98-opn"
+    },
+    {
+      "title": "[PC-9801] リングマスターII 永遠なる想い",
+      "driver": {
+        "name": "pc98dos",
+        "type": "opn",
+        "alias": "HOBBY JAPAN",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "clockmul",
+          "value": "8"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "SOUND.ROM",
+          "offset": "0xCC000"
+        },
+        {
+          "type": "file",
+          "path": "PLAY.EXE",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "HJ_98.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "END.MC",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "M2.MC",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "M3.MC",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "M4.MC",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "M5.MC",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "M6.MC",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "M7.MC",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "M8.MC",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "M9.MC",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "OPEN.MC",
+          "offset": "-1"
+        },
+        {
+          "type": "conin",
+          "path": "END.MC",
+          "offset": "0x10"
+        },
+        {
+          "type": "conin",
+          "path": "M2.MC",
+          "offset": "0x11"
+        },
+        {
+          "type": "conin",
+          "path": "M3.MC",
+          "offset": "0x12"
+        },
+        {
+          "type": "conin",
+          "path": "M4.MC",
+          "offset": "0x13"
+        },
+        {
+          "type": "conin",
+          "path": "M5.MC",
+          "offset": "0x14"
+        },
+        {
+          "type": "conin",
+          "path": "M6.MC",
+          "offset": "0x15"
+        },
+        {
+          "type": "conin",
+          "path": "M7.MC",
+          "offset": "0x16"
+        },
+        {
+          "type": "conin",
+          "path": "M8.MC",
+          "offset": "0x17"
+        },
+        {
+          "type": "conin",
+          "path": "M9.MC",
+          "offset": "0x18"
+        },
+        {
+          "type": "conin",
+          "path": "OPEN.MC",
+          "offset": "0x19"
+        },
+        {
+          "type": "shell",
+          "path": "PLAY",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "HJ_98",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x19",
+          "title": "OPEN.MC :"
+        },
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "M2.MC   :"
+        },
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "M3.MC   :"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "M4.MC   :"
+        },
+        {
+          "kind": "title",
+          "code": "0x14",
+          "title": "M5.MC   :"
+        },
+        {
+          "kind": "title",
+          "code": "0x15",
+          "title": "M6.MC   :"
+        },
+        {
+          "kind": "title",
+          "code": "0x16",
+          "title": "M7.MC   :"
+        },
+        {
+          "kind": "title",
+          "code": "0x17",
+          "title": "M8.MC   :"
+        },
+        {
+          "kind": "title",
+          "code": "0x18",
+          "title": "M9.MC   :"
+        },
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "END.MC  :"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/hobbyjapan.xml",
+      "source_order": 2485,
+      "archive": "ringm2_98",
+      "id": "ringm2-98-opn"
+    },
+    {
+      "title": "[PC-9801] 激突! 日米機動部隊",
+      "driver": {
+        "name": "pc98dos",
+        "type": "opn",
+        "alias": "HOBBY JAPAN",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "clockmul",
+          "value": "8"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "SOUND.ROM",
+          "offset": "0xCC000"
+        },
+        {
+          "type": "file",
+          "path": "PLAY.EXE",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "HJ_98.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "AMERICA.M",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "HAIBOKU.M",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "JAPAN.M",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "VICTORY.M",
+          "offset": "-1"
+        },
+        {
+          "type": "conin",
+          "path": "AMERICA.M",
+          "offset": "0x10"
+        },
+        {
+          "type": "conin",
+          "path": "HAIBOKU.M",
+          "offset": "0x11"
+        },
+        {
+          "type": "conin",
+          "path": "JAPAN.M",
+          "offset": "0x12"
+        },
+        {
+          "type": "conin",
+          "path": "VICTORY.M",
+          "offset": "0x13"
+        },
+        {
+          "type": "shell",
+          "path": "PLAY",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "HJ_98",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "AMERICA.M :"
+        },
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "HAIBOKU.M :"
+        },
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "JAPAN.M   :"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "VICTORY.M :"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/hobbyjapan.xml",
+      "source_order": 2486,
+      "archive": "gekiniti_98",
+      "id": "gekiniti-98-opn"
+    },
+    {
+      "title": "[X68000] リングマスター フィリアス・ノギスの暗雲",
+      "driver": {
+        "name": "x68k",
+        "type": "generic",
+        "alias": "HOBBY JAPAN",
+        "platform": "SHARP X68000"
+      },
+      "options": [],
+      "assets": [
+        {
+          "type": "code",
+          "path": "opmdrv.bin"
+        },
+        {
+          "type": "x",
+          "path": "OPMDRV.X",
+          "offset": "0x08000"
+        },
+        {
+          "type": "code",
+          "path": "ALLEGRO.OPM",
+          "offset": "0x2c000"
+        },
+        {
+          "type": "code",
+          "path": "ALLEMAND.OPM",
+          "offset": "0x30000"
+        },
+        {
+          "type": "code",
+          "path": "ALMAIN.OPM",
+          "offset": "0x34000"
+        },
+        {
+          "type": "code",
+          "path": "CORENT.OPM",
+          "offset": "0x38000"
+        },
+        {
+          "type": "code",
+          "path": "DUNGEON.OPM",
+          "offset": "0x3c000"
+        },
+        {
+          "type": "code",
+          "path": "FANFA.OPM",
+          "offset": "0x40000"
+        },
+        {
+          "type": "code",
+          "path": "GALLIARD.OPM",
+          "offset": "0x44000"
+        },
+        {
+          "type": "code",
+          "path": "GAVOTTE.OPM",
+          "offset": "0x48000"
+        },
+        {
+          "type": "code",
+          "path": "GIG.OPM",
+          "offset": "0x4c000"
+        },
+        {
+          "type": "code",
+          "path": "MENUETTE.OPM",
+          "offset": "0x50000"
+        },
+        {
+          "type": "code",
+          "path": "SARABAND.OPM",
+          "offset": "0x54000"
+        },
+        {
+          "type": "code",
+          "path": "SEA.OPM",
+          "offset": "0x58000"
+        },
+        {
+          "type": "code",
+          "path": "TOMB.OPM",
+          "offset": "0x5c000"
+        },
+        {
+          "type": "code",
+          "path": "RING.OPM",
+          "offset": "0x60000"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x1206",
+          "title": "ALMAIN.OPM   : Opening"
+        },
+        {
+          "kind": "title",
+          "code": "0x1205",
+          "title": "ALLEMAND.OPM : Field"
+        },
+        {
+          "kind": "title",
+          "code": "0x1208",
+          "title": "DUNGEON.OPM  : Dungeon"
+        },
+        {
+          "kind": "title",
+          "code": "0x120d",
+          "title": "MENUETTE.OPM : Tower"
+        },
+        {
+          "kind": "title",
+          "code": "0x120a",
+          "title": "GALLIARD.OPM : Town"
+        },
+        {
+          "kind": "title",
+          "code": "0x120c",
+          "title": "GIG.OPM      : Battle"
+        },
+        {
+          "kind": "title",
+          "code": "0x120e",
+          "title": "SARABAND.OPM : House"
+        },
+        {
+          "kind": "title",
+          "code": "0x1209",
+          "title": "FANFA.OPM    : Palade"
+        },
+        {
+          "kind": "title",
+          "code": "0x120f",
+          "title": "SEA.OPM      : Sea"
+        },
+        {
+          "kind": "title",
+          "code": "0x1210",
+          "title": "TOMB.OPM     : Game Over"
+        },
+        {
+          "kind": "title",
+          "code": "0x1204",
+          "title": "ALLEGRO.OPM  : Ending"
+        },
+        {
+          "kind": "title",
+          "code": "0x1207",
+          "title": "CORENT.OPM   : Unused 1"
+        },
+        {
+          "kind": "title",
+          "code": "0x120b",
+          "title": "GAVOTTE.OPM  : Unused 2"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/hobbyjapan.xml",
+      "source_order": 2487,
+      "archive": "ringm68snd",
+      "id": "ringm68snd-generic"
+    },
+    {
+      "title": "[X68000] リングマスターII 永遠なる想い",
+      "driver": {
+        "name": "x68k",
+        "type": "generic",
+        "alias": "HOBBY JAPAN",
+        "platform": "SHARP X68000"
+      },
+      "options": [],
+      "assets": [
+        {
+          "type": "code",
+          "path": "opmdrv.bin"
+        },
+        {
+          "type": "x",
+          "path": "OPMDRV.X",
+          "offset": "0x08000"
+        },
+        {
+          "type": "code",
+          "path": "END.OPM",
+          "offset": "0x2c000"
+        },
+        {
+          "type": "code",
+          "path": "M10.OPM",
+          "offset": "0x30000"
+        },
+        {
+          "type": "code",
+          "path": "M11.OPM",
+          "offset": "0x34000"
+        },
+        {
+          "type": "code",
+          "path": "M12.OPM",
+          "offset": "0x38000"
+        },
+        {
+          "type": "code",
+          "path": "M13.OPM",
+          "offset": "0x3c000"
+        },
+        {
+          "type": "code",
+          "path": "M14.OPM",
+          "offset": "0x40000"
+        },
+        {
+          "type": "code",
+          "path": "M14K.OPM",
+          "offset": "0x44000"
+        },
+        {
+          "type": "code",
+          "path": "M15.OPM",
+          "offset": "0x48000"
+        },
+        {
+          "type": "code",
+          "path": "M16.OPM",
+          "offset": "0x4c000"
+        },
+        {
+          "type": "code",
+          "path": "M1A.OPM",
+          "offset": "0x50000"
+        },
+        {
+          "type": "code",
+          "path": "M1B.OPM",
+          "offset": "0x54000"
+        },
+        {
+          "type": "code",
+          "path": "M1C.OPM",
+          "offset": "0x58000"
+        },
+        {
+          "type": "code",
+          "path": "M1D.OPM",
+          "offset": "0x5c000"
+        },
+        {
+          "type": "code",
+          "path": "M1E.OPM",
+          "offset": "0x60000"
+        },
+        {
+          "type": "code",
+          "path": "M1ED.OPM",
+          "offset": "0x64000"
+        },
+        {
+          "type": "code",
+          "path": "M2.OPM",
+          "offset": "0x68000"
+        },
+        {
+          "type": "code",
+          "path": "M3.OPM",
+          "offset": "0x6c000"
+        },
+        {
+          "type": "code",
+          "path": "M4.OPM",
+          "offset": "0x70000"
+        },
+        {
+          "type": "code",
+          "path": "M5.OPM",
+          "offset": "0x74000"
+        },
+        {
+          "type": "code",
+          "path": "M6.OPM",
+          "offset": "0x78000"
+        },
+        {
+          "type": "code",
+          "path": "M7.OPM",
+          "offset": "0x7c000"
+        },
+        {
+          "type": "code",
+          "path": "M8.OPM",
+          "offset": "0x80000"
+        },
+        {
+          "type": "code",
+          "path": "M9.OPM",
+          "offset": "0x84000"
+        },
+        {
+          "type": "code",
+          "path": "RING.OPM",
+          "offset": "0x88000"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x1b13",
+          "title": "M2.OPM   :"
+        },
+        {
+          "kind": "title",
+          "code": "0x1b14",
+          "title": "M3.OPM   :"
+        },
+        {
+          "kind": "title",
+          "code": "0x1b15",
+          "title": "M4.OPM   :"
+        },
+        {
+          "kind": "title",
+          "code": "0x1b16",
+          "title": "M5.OPM   :"
+        },
+        {
+          "kind": "title",
+          "code": "0x1b17",
+          "title": "M6.OPM   :"
+        },
+        {
+          "kind": "title",
+          "code": "0x1b18",
+          "title": "M7.OPM   :"
+        },
+        {
+          "kind": "title",
+          "code": "0x1b19",
+          "title": "M8.OPM   :"
+        },
+        {
+          "kind": "title",
+          "code": "0x1b1a",
+          "title": "M9.OPM   :"
+        },
+        {
+          "kind": "title",
+          "code": "0x1b05",
+          "title": "M10.OPM  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x1b06",
+          "title": "M11.OPM  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x1b07",
+          "title": "M12.OPM  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x1b08",
+          "title": "M13.OPM  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x1b09",
+          "title": "M14.OPM  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x1b0a",
+          "title": "M14K.OPM :"
+        },
+        {
+          "kind": "title",
+          "code": "0x1b0b",
+          "title": "M15.OPM  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x1b0c",
+          "title": "M16.OPM  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x1b0d",
+          "title": "M1A.OPM  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x1b0e",
+          "title": "M1B.OPM  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x1b0f",
+          "title": "M1C.OPM  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x1b10",
+          "title": "M1D.OPM  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x1b11",
+          "title": "M1E.OPM  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x1b12",
+          "title": "M1ED.OPM :"
+        },
+        {
+          "kind": "title",
+          "code": "0x1b04",
+          "title": "END.OPM  :"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/hobbyjapan.xml",
+      "source_order": 2488,
+      "archive": "ringm268snd",
+      "id": "ringm268snd-generic"
+    }
+  ]
+}

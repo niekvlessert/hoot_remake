@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="hoot.xsl"?>
+<!DOCTYPE gamelist [
+	<!ELEMENT gamelist (game|bind|childlists)*>
+	<!ATTLIST gamelist date CDATA #IMPLIED>
+	<!ELEMENT childlists (list)*>
+	<!ELEMENT list (#PCDATA)>
+	<!ELEMENT bind (exts,driver,options?)>
+	<!ELEMENT exts (ext)*>
+	<!ELEMENT ext (#PCDATA)>
+	<!ELEMENT game (name,driver,driveralias?,options?,romlist?,titlelist?)>
+	<!ELEMENT name (#PCDATA)>
+	<!ELEMENT driver (#PCDATA)>
+	<!ATTLIST driver type CDATA #IMPLIED>
+	<!ELEMENT driveralias (#PCDATA)>
+	<!ATTLIST driveralias type CDATA #IMPLIED>
+	<!ELEMENT options (option)*>
+	<!ELEMENT option EMPTY>
+	<!ATTLIST option name CDATA #REQUIRED
+					 value CDATA #REQUIRED>
+	<!ELEMENT romlist (rom)*>
+	<!ATTLIST romlist archive CDATA #IMPLIED>
+	<!ELEMENT rom (#PCDATA)>
+	<!ATTLIST rom type CDATA #REQUIRED
+				  offset CDATA #IMPLIED
+				  crc32 CDATA #IMPLIED>
+	<!ELEMENT titlelist (title|range)*>
+	<!ELEMENT title (#PCDATA)>
+	<!ATTLIST title code CDATA #REQUIRED
+					type CDATA #IMPLIED>
+	<!ELEMENT range (#PCDATA)>
+	<!ATTLIST range min CDATA #REQUIRED
+					max CDATA #REQUIRED
+					extcode CDATA #IMPLIED
+					start CDATA #IMPLIED>
+
+]>
+<gamelist date="2022/03/25">
+	<!-- //Raccoon -->
+	<game>
+		<name>[PC-9801] PRIVATE SLAVE</name>
+		<driver type="opn">pc98dos</driver>
+		<driveralias type="NEC PC-9801">Raccoon</driveralias>
+		<options>
+			<option name="clockmul" value="8"/>
+		</options>
+		<romlist archive="prslv_98">
+			<rom type="file" offset="-1">prslv_98.com</rom>
+			<rom type="file" offset="-1">MPSL.EXE</rom>
+			<rom type="file" offset="-1">M01.MUS</rom>
+			<rom type="file" offset="-1">M02.MUS</rom>
+			<rom type="file" offset="-1">M03.MUS</rom>
+			<rom type="file" offset="-1">M04.MUS</rom>
+			<rom type="file" offset="-1">M05.MUS</rom>
+			<rom type="file" offset="-1">M06.MUS</rom>
+			<rom type="file" offset="-1">M07.MUS</rom>
+			<rom type="file" offset="-1">M08.MUS</rom>
+			<rom type="shell" offset="0">prslv_98</rom>
+		</romlist>
+		<titlelist>
+			<title code="0x01">M01.MUS</title>
+			<title code="0x02">M02.MUS</title>
+			<title code="0x03">M03.MUS</title>
+			<title code="0x04">M04.MUS</title>
+			<title code="0x05">M05.MUS</title>
+			<title code="0x06">M06.MUS</title>
+			<title code="0x07">M07.MUS</title>
+			<title code="0x08">M08.MUS</title>
+		</titlelist>
+	</game>
+	<game>
+		<name>[PC-9801] MILLION FEVER</name>
+		<driver type="opn">pc98dos</driver>
+		<driveralias type="NEC PC-9801">Raccoon</driveralias>
+		<options>
+			<option name="clockmul" value="8"/>
+		</options>
+		<romlist archive="milfev_98">
+			<rom type="file" offset="-1">mfev_98.com</rom>
+			<rom type="file" offset="-1">MF.EXE</rom>
+			<rom type="file" offset="-1">M01.MUS</rom>
+			<rom type="file" offset="-1">M02.MUS</rom>
+			<rom type="file" offset="-1">M03.MUS</rom>
+			<rom type="file" offset="-1">M04.MUS</rom>
+			<rom type="file" offset="-1">M05.MUS</rom>
+			<rom type="file" offset="-1">M06.MUS</rom>
+			<rom type="file" offset="-1">M07.MUS</rom>
+			<rom type="shell" offset="0">mfev_98</rom>
+		</romlist>
+		<titlelist>
+			<title code="0x01">M01.MUS</title>
+			<title code="0x02">M02.MUS</title>
+			<title code="0x03">M03.MUS</title>
+			<title code="0x04">M04.MUS</title>
+			<title code="0x05">M05.MUS</title>
+			<title code="0x06">M06.MUS</title>
+			<title code="0x07">M07.MUS</title>
+		</titlelist>
+	</game>
+	<game>
+		<name>[PC-9801] プリティ戦隊 きゃるる～ん</name>
+		<driver type="opn">pc98dos</driver>
+		<driveralias type="NEC PC-9801">Raccoon</driveralias>
+		<options>
+			<option name="clockmul" value="8"/>
+		</options>
+		<romlist archive="kyarun_98">
+			<rom type="file" offset="-1">kyaru_98.com</rom>
+			<rom type="file" offset="-1">KYARURU.EXE</rom>
+			<rom type="file" offset="-1">M01.MUS</rom>
+			<rom type="file" offset="-1">M02.MUS</rom>
+			<rom type="file" offset="-1">M03.MUS</rom>
+			<rom type="file" offset="-1">M04.MUS</rom>
+			<rom type="file" offset="-1">M05.MUS</rom>
+			<rom type="file" offset="-1">M06.MUS</rom>
+			<rom type="file" offset="-1">M07.MUS</rom>
+			<rom type="file" offset="-1">M08.MUS</rom>
+			<rom type="file" offset="-1">M09.MUS</rom>
+			<rom type="file" offset="-1">M10.MUS</rom>
+			<rom type="file" offset="-1">M11.MUS</rom>
+			<rom type="file" offset="-1">M12.MUS</rom>
+			<rom type="file" offset="-1">M13.MUS</rom>
+			<rom type="file" offset="-1">M14.MUS</rom>
+			<rom type="file" offset="-1">M15.MUS</rom>
+			<rom type="file" offset="-1">M16.MUS</rom>
+			<rom type="file" offset="-1">M17.MUS</rom>
+			<rom type="file" offset="-1">M18.MUS</rom>
+			<rom type="file" offset="-1">M19.MUS</rom>
+			<rom type="file" offset="-1">M20.MUS</rom>
+			<rom type="file" offset="-1">M21.MUS</rom>
+			<rom type="file" offset="-1">M22.MUS</rom>
+			<rom type="file" offset="-1">M23.MUS</rom>
+			<rom type="shell" offset="0">kyaru_98</rom>
+		</romlist>
+		<titlelist>
+			<title code="0x01">M01.MUS</title>
+			<title code="0x02">M02.MUS</title>
+			<title code="0x03">M03.MUS</title>
+			<title code="0x04">M04.MUS</title>
+			<title code="0x05">M05.MUS</title>
+			<title code="0x06">M06.MUS</title>
+			<title code="0x07">M07.MUS</title>
+			<title code="0x08">M08.MUS</title>
+			<title code="0x09">M09.MUS</title>
+			<title code="0x0a">M10.MUS</title>
+			<title code="0x0b">M11.MUS</title>
+			<title code="0x0c">M12.MUS</title>
+			<title code="0x0d">M13.MUS</title>
+			<title code="0x0e">M14.MUS</title>
+			<title code="0x0f">M15.MUS</title>
+			<title code="0x10">M16.MUS</title>
+			<title code="0x11">M17.MUS</title>
+			<title code="0x12">M18.MUS</title>
+			<title code="0x13">M19.MUS</title>
+			<title code="0x14">M20.MUS</title>
+			<title code="0x15">M21.MUS</title>
+			<title code="0x16">M22.MUS</title>
+			<title code="0x17">M23.MUS</title>
+		</titlelist>
+	</game>
+</gamelist>

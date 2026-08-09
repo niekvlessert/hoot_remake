@@ -1,0 +1,2392 @@
+{
+  "format": "hoot-catalog-shard",
+  "version": 1,
+  "source_file": "xml/winkysoft.xml",
+  "date": "2005/09/25",
+  "comments": [
+    " //ウィンキーソフト "
+  ],
+  "games": [
+    {
+      "title": "[X68000] OLTEUS II",
+      "driver": {
+        "name": "x68k",
+        "type": "generic",
+        "alias": "ウィンキーソフト",
+        "platform": "SHARP X68000"
+      },
+      "options": [],
+      "assets": [
+        {
+          "type": "code",
+          "path": "olt268snd.bin"
+        },
+        {
+          "type": "x",
+          "path": "OLT_DRV2.X",
+          "offset": "0x8000"
+        },
+        {
+          "type": "code",
+          "path": "MUSIC.DAT",
+          "offset": "0xc82a"
+        },
+        {
+          "type": "code",
+          "path": "OLT.PCM",
+          "offset": "0x20000"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "comment",
+          "text": "\t<title code=\"0x00\">Fade out</title> "
+        },
+        {
+          "kind": "comment",
+          "text": "\t<title code=\"0x11\">Stop</title> "
+        },
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "Title"
+        },
+        {
+          "kind": "title",
+          "code": "0x02",
+          "title": "Menu"
+        },
+        {
+          "kind": "title",
+          "code": "0x03",
+          "title": "Stage 1/Area 1"
+        },
+        {
+          "kind": "title",
+          "code": "0x0c",
+          "title": "Boss Approaching"
+        },
+        {
+          "kind": "title",
+          "code": "0x0d",
+          "title": "Boss 1"
+        },
+        {
+          "kind": "title",
+          "code": "0x16",
+          "title": "Area Clear"
+        },
+        {
+          "kind": "title",
+          "code": "0x04",
+          "title": "Stage 1/Area 2"
+        },
+        {
+          "kind": "title",
+          "code": "0x0e",
+          "title": "Boss 2"
+        },
+        {
+          "kind": "title",
+          "code": "0x05",
+          "title": "Stage 1/Area 3"
+        },
+        {
+          "kind": "title",
+          "code": "0x0f",
+          "title": "Boss 3"
+        },
+        {
+          "kind": "title",
+          "code": "0x06",
+          "title": "Stage 1/Area 4"
+        },
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "Boss 4"
+        },
+        {
+          "kind": "title",
+          "code": "0x07",
+          "title": "Stage 2/Area 1"
+        },
+        {
+          "kind": "title",
+          "code": "0x08",
+          "title": "Stage 2/Area 2"
+        },
+        {
+          "kind": "title",
+          "code": "0x09",
+          "title": "Stage 2/Area 3"
+        },
+        {
+          "kind": "title",
+          "code": "0x0a",
+          "title": "Stage 2/Area 4"
+        },
+        {
+          "kind": "title",
+          "code": "0x0b",
+          "title": "Stage 3/Area 1"
+        },
+        {
+          "kind": "title",
+          "code": "0x15",
+          "title": "Boss 5"
+        },
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "Ending"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "Game Over"
+        },
+        {
+          "kind": "title",
+          "code": "0x14",
+          "title": "Unused"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/winkysoft.xml",
+      "source_order": 4961,
+      "archive": "olt268snd",
+      "id": "olt268snd-generic"
+    },
+    {
+      "title": "[PC-8801] LOST POWER",
+      "driver": {
+        "name": "pc88",
+        "type": "opn",
+        "alias": "ウィンキーソフト",
+        "platform": "NEC PC-8801"
+      },
+      "options": [
+        {
+          "name": "use_vrtc",
+          "value": "0x01"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "PATCH",
+          "offset": "0x0000"
+        },
+        {
+          "type": "code",
+          "path": "MUSIC",
+          "offset": "0x8000"
+        },
+        {
+          "type": "code",
+          "path": "DRIVER",
+          "offset": "0x9000"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x00",
+          "title": "オープニング"
+        },
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "ゲーム中BGM"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/winkysoft.xml",
+      "source_order": 4962,
+      "archive": "lostpwr",
+      "id": "lostpwr-opn"
+    },
+    {
+      "title": "[PC-8801] 天地を喰らう －魔界三国志－",
+      "driver": {
+        "name": "pc88",
+        "type": "opn",
+        "alias": "ウィンキーソフト",
+        "platform": "NEC PC-8801"
+      },
+      "options": [
+        {
+          "name": "mdata_addr",
+          "value": "0x7000"
+        },
+        {
+          "name": "mdata_size",
+          "value": "0x0500"
+        },
+        {
+          "name": "use_rtc",
+          "value": "0x01"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "PATCH",
+          "offset": "0x0000"
+        },
+        {
+          "type": "code",
+          "path": "DRIVER",
+          "offset": "0x7500"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS100",
+          "offset": "0x00"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS101",
+          "offset": "0x01"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS102",
+          "offset": "0x02"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS103",
+          "offset": "0x03"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS104",
+          "offset": "0x04"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS105",
+          "offset": "0x05"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS106",
+          "offset": "0x06"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS107",
+          "offset": "0x07"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS108",
+          "offset": "0x08"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS200",
+          "offset": "0x09"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS201",
+          "offset": "0x0a"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS202",
+          "offset": "0x0b"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS203",
+          "offset": "0x0c"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS204",
+          "offset": "0x0d"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS205",
+          "offset": "0x0e"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS206",
+          "offset": "0x0f"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS300",
+          "offset": "0x10"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS301",
+          "offset": "0x11"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS302",
+          "offset": "0x12"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS303",
+          "offset": "0x13"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS304",
+          "offset": "0x14"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS305",
+          "offset": "0x15"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS306",
+          "offset": "0x16"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS307",
+          "offset": "0x17"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS308",
+          "offset": "0x18"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS309",
+          "offset": "0x19"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x41000000",
+          "title": "MUS100"
+        },
+        {
+          "kind": "title",
+          "code": "0x41000001",
+          "title": "MUS101"
+        },
+        {
+          "kind": "title",
+          "code": "0x41000002",
+          "title": "MUS102"
+        },
+        {
+          "kind": "title",
+          "code": "0x41000003",
+          "title": "MUS103"
+        },
+        {
+          "kind": "comment",
+          "text": "\t<title code=\"0x04000003\">EFFECT 04</title> "
+        },
+        {
+          "kind": "comment",
+          "text": "\t<title code=\"0x05000003\">EFFECT 05</title> "
+        },
+        {
+          "kind": "title",
+          "code": "0x41000004",
+          "title": "MUS104"
+        },
+        {
+          "kind": "comment",
+          "text": "\t<title code=\"0x03000004\">EFFECT 03</title> "
+        },
+        {
+          "kind": "comment",
+          "text": "\t<title code=\"0x04000004\">EFFECT 04</title> "
+        },
+        {
+          "kind": "comment",
+          "text": "\t<title code=\"0x05000004\">EFFECT 05</title> "
+        },
+        {
+          "kind": "title",
+          "code": "0x41000005",
+          "title": "MUS105"
+        },
+        {
+          "kind": "title",
+          "code": "0x41000006",
+          "title": "MUS106"
+        },
+        {
+          "kind": "comment",
+          "text": "\t<title code=\"0x03000006\">EFFECT 03</title> "
+        },
+        {
+          "kind": "comment",
+          "text": "\t<title code=\"0x04000006\">EFFECT 04</title> "
+        },
+        {
+          "kind": "title",
+          "code": "0x41000007",
+          "title": "MUS107"
+        },
+        {
+          "kind": "comment",
+          "text": "\t<title code=\"0x03000007\">EFFECT 03</title> "
+        },
+        {
+          "kind": "comment",
+          "text": "\t<title code=\"0x04000007\">EFFECT 04</title> "
+        },
+        {
+          "kind": "title",
+          "code": "0x41000008",
+          "title": "MUS108"
+        },
+        {
+          "kind": "comment",
+          "text": "\t<title code=\"0x03000008\">EFFECT 03</title> "
+        },
+        {
+          "kind": "title",
+          "code": "0x41000009",
+          "title": "MUS200"
+        },
+        {
+          "kind": "comment",
+          "text": "\t<title code=\"0x0a000009\">EFFECT 0A</title> "
+        },
+        {
+          "kind": "title",
+          "code": "0x4100000a",
+          "title": "MUS201"
+        },
+        {
+          "kind": "comment",
+          "text": "\t<title code=\"0x0100000a\">EFFECT 01</title> "
+        },
+        {
+          "kind": "comment",
+          "text": "\t<title code=\"0x0200000a\">EFFECT 02</title> "
+        },
+        {
+          "kind": "comment",
+          "text": "\t<title code=\"0x0500000a\">EFFECT 05</title> "
+        },
+        {
+          "kind": "comment",
+          "text": "\t<title code=\"0x0a00000a\">EFFECT 0A</title> "
+        },
+        {
+          "kind": "title",
+          "code": "0x4100000b",
+          "title": "MUS202"
+        },
+        {
+          "kind": "comment",
+          "text": "\t<title code=\"0x0100000b\">EFFECT 01</title> "
+        },
+        {
+          "kind": "comment",
+          "text": "\t<title code=\"0x0200000b\">EFFECT 02</title> "
+        },
+        {
+          "kind": "comment",
+          "text": "\t<title code=\"0x0300000b\">EFFECT 03</title> "
+        },
+        {
+          "kind": "comment",
+          "text": "\t<title code=\"0x0400000b\">EFFECT 04</title> "
+        },
+        {
+          "kind": "comment",
+          "text": "\t<title code=\"0x0a00000b\">EFFECT 0A</title> "
+        },
+        {
+          "kind": "title",
+          "code": "0x4100000c",
+          "title": "MUS203"
+        },
+        {
+          "kind": "comment",
+          "text": "\t<title code=\"0x0200000c\">EFFECT 02</title> "
+        },
+        {
+          "kind": "comment",
+          "text": "\t<title code=\"0x0300000c\">EFFECT 03</title> "
+        },
+        {
+          "kind": "comment",
+          "text": "\t<title code=\"0x0a00000c\">EFFECT 0A</title> "
+        },
+        {
+          "kind": "title",
+          "code": "0x4100000d",
+          "title": "MUS204"
+        },
+        {
+          "kind": "title",
+          "code": "0x4100000e",
+          "title": "MUS205"
+        },
+        {
+          "kind": "title",
+          "code": "0x4100000f",
+          "title": "MUS206"
+        },
+        {
+          "kind": "title",
+          "code": "0x41000010",
+          "title": "MUS300"
+        },
+        {
+          "kind": "title",
+          "code": "0x41000011",
+          "title": "MUS301"
+        },
+        {
+          "kind": "title",
+          "code": "0x41000012",
+          "title": "MUS302"
+        },
+        {
+          "kind": "title",
+          "code": "0x41000013",
+          "title": "MUS303"
+        },
+        {
+          "kind": "comment",
+          "text": "\t<title code=\"0x04000013\">EFFECT 04</title> "
+        },
+        {
+          "kind": "comment",
+          "text": "\t<title code=\"0x05000013\">EFFECT 05</title> "
+        },
+        {
+          "kind": "title",
+          "code": "0x41000014",
+          "title": "MUS304"
+        },
+        {
+          "kind": "comment",
+          "text": "\t<title code=\"0x03000014\">EFFECT 03</title> "
+        },
+        {
+          "kind": "comment",
+          "text": "\t<title code=\"0x04000014\">EFFECT 04</title> "
+        },
+        {
+          "kind": "comment",
+          "text": "\t<title code=\"0x05000014\">EFFECT 05</title> "
+        },
+        {
+          "kind": "title",
+          "code": "0x41000015",
+          "title": "MUS305"
+        },
+        {
+          "kind": "title",
+          "code": "0x41000016",
+          "title": "MUS306"
+        },
+        {
+          "kind": "comment",
+          "text": "\t<title code=\"0x03000016\">EFFECT 03</title> "
+        },
+        {
+          "kind": "comment",
+          "text": "\t<title code=\"0x04000016\">EFFECT 04</title> "
+        },
+        {
+          "kind": "title",
+          "code": "0x41000017",
+          "title": "MUS307"
+        },
+        {
+          "kind": "comment",
+          "text": "\t<title code=\"0x03000017\">EFFECT 03</title> "
+        },
+        {
+          "kind": "comment",
+          "text": "\t<title code=\"0x04000017\">EFFECT 04</title> "
+        },
+        {
+          "kind": "title",
+          "code": "0x41000018",
+          "title": "MUS308"
+        },
+        {
+          "kind": "comment",
+          "text": "\t<title code=\"0x03000018\">EFFECT 03</title> "
+        },
+        {
+          "kind": "title",
+          "code": "0x41000019",
+          "title": "MUS309"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/winkysoft.xml",
+      "source_order": 4963,
+      "archive": "tenchi",
+      "id": "tenchi-opn"
+    },
+    {
+      "title": "[PC-8801] アメリカン・サクセス",
+      "driver": {
+        "name": "pc88",
+        "type": "opn",
+        "alias": "ウィンキーソフト",
+        "platform": "NEC PC-8801"
+      },
+      "options": [
+        {
+          "name": "mdata_addr",
+          "value": "0x7000"
+        },
+        {
+          "name": "mdata_size",
+          "value": "0x0400"
+        },
+        {
+          "name": "use_rtc",
+          "value": "0x01"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "PATCH",
+          "offset": "0x0000"
+        },
+        {
+          "type": "code",
+          "path": "1A00",
+          "offset": "0x1a00"
+        },
+        {
+          "type": "code",
+          "path": "DRIVER",
+          "offset": "0x7000"
+        },
+        {
+          "type": "code",
+          "path": "GAME",
+          "offset": "0x8000"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS00",
+          "offset": "0x00"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS01",
+          "offset": "0x01"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x41000000",
+          "title": "タイトル"
+        },
+        {
+          "kind": "title",
+          "code": "0x41000001",
+          "title": "ゲーム中"
+        },
+        {
+          "kind": "title",
+          "code": "0x42000001",
+          "title": "バスツアー"
+        },
+        {
+          "kind": "title",
+          "code": "0x010000ff",
+          "title": "01 効果音"
+        },
+        {
+          "kind": "title",
+          "code": "0x020000ff",
+          "title": "02 効果音"
+        },
+        {
+          "kind": "title",
+          "code": "0x030000ff",
+          "title": "03 効果音"
+        },
+        {
+          "kind": "title",
+          "code": "0x040000ff",
+          "title": "04 効果音"
+        },
+        {
+          "kind": "title",
+          "code": "0x700000ff",
+          "title": "70 演奏停止"
+        },
+        {
+          "kind": "comment",
+          "text": "\t<title code=\"0x710000ff\">71 曲番号1再演奏</title> "
+        },
+        {
+          "kind": "comment",
+          "text": "\t<title code=\"0x720000ff\">72 曲番号2再演奏</title> "
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/winkysoft.xml",
+      "source_order": 4964,
+      "archive": "asuccess88",
+      "id": "asuccess88-opn"
+    },
+    {
+      "title": "[PC-88VA] OLTEUS (initial version)(OPNA)",
+      "driver": {
+        "name": "pc88vados",
+        "type": "opna",
+        "alias": "ウィンキーソフト",
+        "platform": "NEC PC-88VA"
+      },
+      "options": [
+        {
+          "name": "clockmul",
+          "value": "8"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "olteus0.com",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MAP.EXE",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "PCM.DAT",
+          "offset": "0x05"
+        },
+        {
+          "type": "file",
+          "path": "NEWBOS.FMS",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "NORMAL.FMS",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "PRISET.FMS",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MUSIC0F.MTB",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MUSIC0F.MUS",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MUSIC1F.MTB",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MUSIC1F.MUS",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MUSIC2F.MTB",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MUSIC2F.MUS",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MUSIC3F.MTB",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MUSIC3F.MUS",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MUSIC4F.MTB",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MUSIC4F.MUS",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MUSIC5F.MTB",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MUSIC5F.MUS",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MUSIC6F.MTB",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MUSIC6F.MUS",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MUSIC7F.MTB",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MUSIC7F.MUS",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MUSIC8F.MTB",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MUSIC8F.MUS",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MUSIC9F.MTB",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MUSIC9F.MUS",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MUSICAF.MTB",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MUSICAF.MUS",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MUSICBF.MTB",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MUSICBF.MUS",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MUSICCF.MTB",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MUSICCF.MUS",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MUSICDF.MTB",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MUSICDF.MUS",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MUSICEF.MTB",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MUSICEF.MUS",
+          "offset": "-1"
+        },
+        {
+          "type": "shell",
+          "path": "olteus0",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x0000",
+          "title": "MUSIC 00"
+        },
+        {
+          "kind": "title",
+          "code": "0x0001",
+          "title": "MUSIC 01"
+        },
+        {
+          "kind": "title",
+          "code": "0x0002",
+          "title": "MUSIC 02"
+        },
+        {
+          "kind": "title",
+          "code": "0x0003",
+          "title": "MUSIC 03"
+        },
+        {
+          "kind": "title",
+          "code": "0x0004",
+          "title": "MUSIC 04"
+        },
+        {
+          "kind": "title",
+          "code": "0x0005",
+          "title": "MUSIC 05"
+        },
+        {
+          "kind": "title",
+          "code": "0x0006",
+          "title": "MUSIC 06"
+        },
+        {
+          "kind": "title",
+          "code": "0x0007",
+          "title": "MUSIC 07"
+        },
+        {
+          "kind": "title",
+          "code": "0x0008",
+          "title": "MUSIC 08"
+        },
+        {
+          "kind": "title",
+          "code": "0x0009",
+          "title": "MUSIC 09"
+        },
+        {
+          "kind": "title",
+          "code": "0x000a",
+          "title": "MUSIC 0A"
+        },
+        {
+          "kind": "title",
+          "code": "0x000b",
+          "title": "MUSIC 0B"
+        },
+        {
+          "kind": "title",
+          "code": "0x000c",
+          "title": "MUSIC 0C"
+        },
+        {
+          "kind": "title",
+          "code": "0x000d",
+          "title": "MUSIC 0D"
+        },
+        {
+          "kind": "title",
+          "code": "0x000e",
+          "title": "MUSIC 0E"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/winkysoft.xml",
+      "source_order": 4965,
+      "archive": "olteus0_va",
+      "id": "olteus0-va-opna"
+    },
+    {
+      "title": "[PC-88VA] OLTEUS (initial version)(OPN)",
+      "driver": {
+        "name": "pc88vados",
+        "type": "opn",
+        "alias": "ウィンキーソフト",
+        "platform": "NEC PC-88VA"
+      },
+      "options": [
+        {
+          "name": "clockmul",
+          "value": "8"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "olteus0.com",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MAP.EXE",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "NEWBOS.FMS",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "NORMAL.FMS",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "PRISET.FMS",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MUSIC0P.MTB",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MUSIC0P.MUS",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MUSIC1P.MTB",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MUSIC1P.MUS",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MUSIC2P.MTB",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MUSIC2P.MUS",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MUSIC3P.MTB",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MUSIC3P.MUS",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MUSIC4P.MTB",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MUSIC4P.MUS",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MUSIC5P.MTB",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MUSIC5P.MUS",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MUSIC6P.MTB",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MUSIC6P.MUS",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MUSIC7P.MTB",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MUSIC7P.MUS",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MUSIC8P.MTB",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MUSIC8P.MUS",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MUSIC9P.MTB",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MUSIC9P.MUS",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MUSICAP.MTB",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MUSICAP.MUS",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MUSICBP.MTB",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MUSICBP.MUS",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MUSICCP.MTB",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MUSICCP.MUS",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MUSICDP.MTB",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MUSICDP.MUS",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MUSICEP.MTB",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MUSICEP.MUS",
+          "offset": "-1"
+        },
+        {
+          "type": "shell",
+          "path": "olteus0",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x0000",
+          "title": "MUSIC 00"
+        },
+        {
+          "kind": "title",
+          "code": "0x0001",
+          "title": "MUSIC 01"
+        },
+        {
+          "kind": "title",
+          "code": "0x0002",
+          "title": "MUSIC 02"
+        },
+        {
+          "kind": "title",
+          "code": "0x0003",
+          "title": "MUSIC 03"
+        },
+        {
+          "kind": "title",
+          "code": "0x0004",
+          "title": "MUSIC 04"
+        },
+        {
+          "kind": "title",
+          "code": "0x0005",
+          "title": "MUSIC 05"
+        },
+        {
+          "kind": "title",
+          "code": "0x0006",
+          "title": "MUSIC 06"
+        },
+        {
+          "kind": "title",
+          "code": "0x0007",
+          "title": "MUSIC 07"
+        },
+        {
+          "kind": "title",
+          "code": "0x0008",
+          "title": "MUSIC 08"
+        },
+        {
+          "kind": "title",
+          "code": "0x0009",
+          "title": "MUSIC 09"
+        },
+        {
+          "kind": "title",
+          "code": "0x000a",
+          "title": "MUSIC 0A"
+        },
+        {
+          "kind": "title",
+          "code": "0x000b",
+          "title": "MUSIC 0B"
+        },
+        {
+          "kind": "title",
+          "code": "0x000c",
+          "title": "MUSIC 0C"
+        },
+        {
+          "kind": "title",
+          "code": "0x000d",
+          "title": "MUSIC 0D"
+        },
+        {
+          "kind": "title",
+          "code": "0x000e",
+          "title": "MUSIC 0E"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/winkysoft.xml",
+      "source_order": 4966,
+      "archive": "olteus0_va",
+      "id": "olteus0-va-opn"
+    },
+    {
+      "title": "[PC-88VA] OLTEUS (bugfix version)(OPNA)",
+      "driver": {
+        "name": "pc88vados",
+        "type": "opna",
+        "alias": "ウィンキーソフト",
+        "platform": "NEC PC-88VA"
+      },
+      "options": [
+        {
+          "name": "clockmul",
+          "value": "8"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "olteus.com",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MAP.EXE",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MUSIC.EXE",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "PCM2.P01",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "PCM2.P02",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "PCM2.P03",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "PCM2.P04",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "PCM2.P05",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "PCM2.P06",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "NEWBOS.FMS",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "NORMAL.FMS",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "PRISET.FMS",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MUSIC0F.MTB",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MUSIC0F.MUS",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MUSIC1F.MTB",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MUSIC1F.MUS",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MUSIC2F.MTB",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MUSIC2F.MUS",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MUSIC3F.MTB",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MUSIC3F.MUS",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MUSIC4F.MTB",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MUSIC4F.MUS",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MUSIC5F.MTB",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MUSIC5F.MUS",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MUSIC6F.MTB",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MUSIC6F.MUS",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MUSIC7F.MTB",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MUSIC7F.MUS",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MUSIC8F.MTB",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MUSIC8F.MUS",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MUSIC9F.MTB",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MUSIC9F.MUS",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MUSICAF.MTB",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MUSICAF.MUS",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MUSICBF.MTB",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MUSICBF.MUS",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MUSICCF.MTB",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MUSICCF.MUS",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MUSICDF.MTB",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MUSICDF.MUS",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MUSICEF.MTB",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MUSICEF.MUS",
+          "offset": "-1"
+        },
+        {
+          "type": "shell",
+          "path": "MUSIC",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "olteus",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x0000",
+          "title": "MUSIC 00"
+        },
+        {
+          "kind": "title",
+          "code": "0x0001",
+          "title": "MUSIC 01"
+        },
+        {
+          "kind": "title",
+          "code": "0x0002",
+          "title": "MUSIC 02"
+        },
+        {
+          "kind": "title",
+          "code": "0x0003",
+          "title": "MUSIC 03"
+        },
+        {
+          "kind": "title",
+          "code": "0x0004",
+          "title": "MUSIC 04"
+        },
+        {
+          "kind": "title",
+          "code": "0x0005",
+          "title": "MUSIC 05"
+        },
+        {
+          "kind": "title",
+          "code": "0x0006",
+          "title": "MUSIC 06"
+        },
+        {
+          "kind": "title",
+          "code": "0x0007",
+          "title": "MUSIC 07"
+        },
+        {
+          "kind": "title",
+          "code": "0x0008",
+          "title": "MUSIC 08"
+        },
+        {
+          "kind": "title",
+          "code": "0x0009",
+          "title": "MUSIC 09"
+        },
+        {
+          "kind": "title",
+          "code": "0x000a",
+          "title": "MUSIC 0A"
+        },
+        {
+          "kind": "title",
+          "code": "0x000b",
+          "title": "MUSIC 0B"
+        },
+        {
+          "kind": "title",
+          "code": "0x000c",
+          "title": "MUSIC 0C"
+        },
+        {
+          "kind": "title",
+          "code": "0x000d",
+          "title": "MUSIC 0D"
+        },
+        {
+          "kind": "title",
+          "code": "0x000e",
+          "title": "MUSIC 0E"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/winkysoft.xml",
+      "source_order": 4967,
+      "archive": "olteus_va",
+      "id": "olteus-va-opna"
+    },
+    {
+      "title": "[PC-88VA] OLTEUS (bugfix version)(OPN)",
+      "driver": {
+        "name": "pc88vados",
+        "type": "opn",
+        "alias": "ウィンキーソフト",
+        "platform": "NEC PC-88VA"
+      },
+      "options": [
+        {
+          "name": "clockmul",
+          "value": "8"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "olteus.com",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MAP.EXE",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MUSIC.EXE",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "NEWBOS.FMS",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "NORMAL.FMS",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "PRISET.FMS",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MUSIC0P.MTB",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MUSIC0P.MUS",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MUSIC1P.MTB",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MUSIC1P.MUS",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MUSIC2P.MTB",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MUSIC2P.MUS",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MUSIC3P.MTB",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MUSIC3P.MUS",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MUSIC4P.MTB",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MUSIC4P.MUS",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MUSIC5P.MTB",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MUSIC5P.MUS",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MUSIC6P.MTB",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MUSIC6P.MUS",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MUSIC7P.MTB",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MUSIC7P.MUS",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MUSIC8P.MTB",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MUSIC8P.MUS",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MUSIC9P.MTB",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MUSIC9P.MUS",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MUSICAP.MTB",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MUSICAP.MUS",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MUSICBP.MTB",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MUSICBP.MUS",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MUSICCP.MTB",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MUSICCP.MUS",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MUSICDP.MTB",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MUSICDP.MUS",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MUSICEP.MTB",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MUSICEP.MUS",
+          "offset": "-1"
+        },
+        {
+          "type": "shell",
+          "path": "MUSIC",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "olteus",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x0000",
+          "title": "MUSIC 00"
+        },
+        {
+          "kind": "title",
+          "code": "0x0001",
+          "title": "MUSIC 01"
+        },
+        {
+          "kind": "title",
+          "code": "0x0002",
+          "title": "MUSIC 02"
+        },
+        {
+          "kind": "title",
+          "code": "0x0003",
+          "title": "MUSIC 03"
+        },
+        {
+          "kind": "title",
+          "code": "0x0004",
+          "title": "MUSIC 04"
+        },
+        {
+          "kind": "title",
+          "code": "0x0005",
+          "title": "MUSIC 05"
+        },
+        {
+          "kind": "title",
+          "code": "0x0006",
+          "title": "MUSIC 06"
+        },
+        {
+          "kind": "title",
+          "code": "0x0007",
+          "title": "MUSIC 07"
+        },
+        {
+          "kind": "title",
+          "code": "0x0008",
+          "title": "MUSIC 08"
+        },
+        {
+          "kind": "title",
+          "code": "0x0009",
+          "title": "MUSIC 09"
+        },
+        {
+          "kind": "title",
+          "code": "0x000a",
+          "title": "MUSIC 0A"
+        },
+        {
+          "kind": "title",
+          "code": "0x000b",
+          "title": "MUSIC 0B"
+        },
+        {
+          "kind": "title",
+          "code": "0x000c",
+          "title": "MUSIC 0C"
+        },
+        {
+          "kind": "title",
+          "code": "0x000d",
+          "title": "MUSIC 0D"
+        },
+        {
+          "kind": "title",
+          "code": "0x000e",
+          "title": "MUSIC 0E"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/winkysoft.xml",
+      "source_order": 4968,
+      "archive": "olteus_va",
+      "id": "olteus-va-opn"
+    },
+    {
+      "title": "[MSX] アメリカンサクセス(OPLL)",
+      "driver": {
+        "name": "msx",
+        "type": "generic",
+        "alias": "ウィンキーソフト",
+        "platform": "MSX"
+      },
+      "options": [
+        {
+          "name": "mdata_addr",
+          "value": "0x7000"
+        },
+        {
+          "name": "mdata_size",
+          "value": "0x0300"
+        },
+        {
+          "name": "mfile_size",
+          "value": "0x0300"
+        },
+        {
+          "name": "init_pc",
+          "value": "0x0400"
+        },
+        {
+          "name": "use_opll",
+          "value": "0x01"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "patch",
+          "offset": "0x0400"
+        },
+        {
+          "type": "code",
+          "path": "DRIVER.BIN",
+          "offset": "0x74C0"
+        },
+        {
+          "type": "code",
+          "path": "DRIVER2.BIN",
+          "offset": "0x8000"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS0.BIN",
+          "offset": "0x00"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS1.BIN",
+          "offset": "0x01"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "タイトル"
+        },
+        {
+          "kind": "title",
+          "code": "0x00",
+          "title": "メインBGM"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/winkysoft.xml",
+      "source_order": 4969,
+      "archive": "asuccess_msx",
+      "id": "asuccess-msx-generic"
+    },
+    {
+      "title": "[MSX] アメリカンサクセス(PSG)",
+      "driver": {
+        "name": "msx",
+        "type": "generic",
+        "alias": "ウィンキーソフト",
+        "platform": "MSX"
+      },
+      "options": [
+        {
+          "name": "mdata_addr",
+          "value": "0x7000"
+        },
+        {
+          "name": "mdata_size",
+          "value": "0x0300"
+        },
+        {
+          "name": "mfile_size",
+          "value": "0x0300"
+        },
+        {
+          "name": "init_pc",
+          "value": "0x0400"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "patch",
+          "offset": "0x0400"
+        },
+        {
+          "type": "code",
+          "path": "DRIVER.BIN",
+          "offset": "0x74C0"
+        },
+        {
+          "type": "code",
+          "path": "DRIVER2.BIN",
+          "offset": "0x8000"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS0.BIN",
+          "offset": "0x00"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS1.BIN",
+          "offset": "0x01"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "タイトル"
+        },
+        {
+          "kind": "title",
+          "code": "0x00",
+          "title": "メインBGM"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/winkysoft.xml",
+      "source_order": 4970,
+      "archive": "asuccess_msx",
+      "id": "asuccess-msx-generic-2"
+    },
+    {
+      "title": "[MSX] あかんべドラゴン(OPLL)",
+      "driver": {
+        "name": "msx",
+        "type": "generic",
+        "alias": "ウィンキーソフト",
+        "platform": "MSX"
+      },
+      "options": [
+        {
+          "name": "mdata_addr",
+          "value": "0xa000"
+        },
+        {
+          "name": "mdata_size",
+          "value": "0x1800"
+        },
+        {
+          "name": "mfile_size",
+          "value": "0x1800"
+        },
+        {
+          "name": "init_pc",
+          "value": "0x08500"
+        },
+        {
+          "name": "use_opll",
+          "value": "0x01"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "AKANBE.COM",
+          "offset": "0x0100"
+        },
+        {
+          "type": "code",
+          "path": "patch",
+          "offset": "0x8500"
+        },
+        {
+          "type": "code",
+          "path": "SOUND.SUB",
+          "offset": "0xb800"
+        },
+        {
+          "type": "bgm",
+          "path": "BGM00.GID",
+          "offset": "0x00"
+        },
+        {
+          "type": "bgm",
+          "path": "BGM01.GID",
+          "offset": "0x01"
+        },
+        {
+          "type": "bgm",
+          "path": "BGM02.GID",
+          "offset": "0x02"
+        },
+        {
+          "type": "bgm",
+          "path": "BGM03.GID",
+          "offset": "0x03"
+        },
+        {
+          "type": "bgm",
+          "path": "BGM04.GID",
+          "offset": "0x04"
+        },
+        {
+          "type": "bgm",
+          "path": "BGM05.GID",
+          "offset": "0x05"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "range",
+          "min": "0x000",
+          "max": "0x001",
+          "title_format": "BGM 0x%03x",
+          "extcode": "1"
+        },
+        {
+          "kind": "range",
+          "min": "0x100",
+          "max": "0x107",
+          "title_format": "BGM 0x%03x",
+          "extcode": "1"
+        },
+        {
+          "kind": "range",
+          "min": "0x109",
+          "max": "0x10c",
+          "title_format": "BGM 0x%03x",
+          "extcode": "1"
+        },
+        {
+          "kind": "range",
+          "min": "0x200",
+          "max": "0x207",
+          "title_format": "BGM 0x%03x",
+          "extcode": "1"
+        },
+        {
+          "kind": "range",
+          "min": "0x209",
+          "max": "0x20c",
+          "title_format": "BGM 0x%03x",
+          "extcode": "1"
+        },
+        {
+          "kind": "range",
+          "min": "0x300",
+          "max": "0x307",
+          "title_format": "BGM 0x%03x",
+          "extcode": "1"
+        },
+        {
+          "kind": "range",
+          "min": "0x309",
+          "max": "0x30c",
+          "title_format": "BGM 0x%03x",
+          "extcode": "1"
+        },
+        {
+          "kind": "range",
+          "min": "0x400",
+          "max": "0x407",
+          "title_format": "BGM 0x%03x",
+          "extcode": "1"
+        },
+        {
+          "kind": "range",
+          "min": "0x409",
+          "max": "0x40c",
+          "title_format": "BGM 0x%03x",
+          "extcode": "1"
+        },
+        {
+          "kind": "range",
+          "min": "0x500",
+          "max": "0x507",
+          "title_format": "BGM 0x%03x",
+          "extcode": "1"
+        },
+        {
+          "kind": "range",
+          "min": "0x509",
+          "max": "0x50c",
+          "title_format": "BGM 0x%03x",
+          "extcode": "1"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/winkysoft.xml",
+      "source_order": 4971,
+      "archive": "akbdragn_msx",
+      "id": "akbdragn-msx-generic"
+    },
+    {
+      "title": "[MSX] あかんべドラゴン(PSG)",
+      "driver": {
+        "name": "msx",
+        "type": "generic",
+        "alias": "ウィンキーソフト",
+        "platform": "MSX"
+      },
+      "options": [
+        {
+          "name": "mdata_addr",
+          "value": "0xa000"
+        },
+        {
+          "name": "mdata_size",
+          "value": "0x1800"
+        },
+        {
+          "name": "mfile_size",
+          "value": "0x1800"
+        },
+        {
+          "name": "init_pc",
+          "value": "0x08500"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "AKANBE.COM",
+          "offset": "0x0100"
+        },
+        {
+          "type": "code",
+          "path": "patch",
+          "offset": "0x8500"
+        },
+        {
+          "type": "code",
+          "path": "SOUND.SUB",
+          "offset": "0xb800"
+        },
+        {
+          "type": "bgm",
+          "path": "BGM00.GID",
+          "offset": "0x00"
+        },
+        {
+          "type": "bgm",
+          "path": "BGM01.GID",
+          "offset": "0x01"
+        },
+        {
+          "type": "bgm",
+          "path": "BGM02.GID",
+          "offset": "0x02"
+        },
+        {
+          "type": "bgm",
+          "path": "BGM03.GID",
+          "offset": "0x03"
+        },
+        {
+          "type": "bgm",
+          "path": "BGM04.GID",
+          "offset": "0x04"
+        },
+        {
+          "type": "bgm",
+          "path": "BGM05.GID",
+          "offset": "0x05"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "range",
+          "min": "0x000",
+          "max": "0x001",
+          "title_format": "BGM 0x%03x",
+          "extcode": "1"
+        },
+        {
+          "kind": "range",
+          "min": "0x100",
+          "max": "0x107",
+          "title_format": "BGM 0x%03x",
+          "extcode": "1"
+        },
+        {
+          "kind": "range",
+          "min": "0x109",
+          "max": "0x10c",
+          "title_format": "BGM 0x%03x",
+          "extcode": "1"
+        },
+        {
+          "kind": "range",
+          "min": "0x200",
+          "max": "0x207",
+          "title_format": "BGM 0x%03x",
+          "extcode": "1"
+        },
+        {
+          "kind": "range",
+          "min": "0x209",
+          "max": "0x20c",
+          "title_format": "BGM 0x%03x",
+          "extcode": "1"
+        },
+        {
+          "kind": "range",
+          "min": "0x300",
+          "max": "0x307",
+          "title_format": "BGM 0x%03x",
+          "extcode": "1"
+        },
+        {
+          "kind": "range",
+          "min": "0x309",
+          "max": "0x30c",
+          "title_format": "BGM 0x%03x",
+          "extcode": "1"
+        },
+        {
+          "kind": "range",
+          "min": "0x400",
+          "max": "0x407",
+          "title_format": "BGM 0x%03x",
+          "extcode": "1"
+        },
+        {
+          "kind": "range",
+          "min": "0x409",
+          "max": "0x40c",
+          "title_format": "BGM 0x%03x",
+          "extcode": "1"
+        },
+        {
+          "kind": "range",
+          "min": "0x500",
+          "max": "0x507",
+          "title_format": "BGM 0x%03x",
+          "extcode": "1"
+        },
+        {
+          "kind": "range",
+          "min": "0x509",
+          "max": "0x50c",
+          "title_format": "BGM 0x%03x",
+          "extcode": "1"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/winkysoft.xml",
+      "source_order": 4972,
+      "archive": "akbdragn_msx",
+      "id": "akbdragn-msx-generic-2"
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "format": "hoot-catalog-shard",
+  "version": 1,
+  "source_file": "xml/studiooffside.xml",
+  "date": "2005/09/25",
+  "comments": [
+    " //STUDIO オフサイド "
+  ],
+  "games": [
+    {
+      "title": "[PC-8801] 華三眩",
+      "driver": {
+        "name": "pc88",
+        "type": "opn",
+        "alias": "STUDIO オフサイド",
+        "platform": "NEC PC-8801"
+      },
+      "options": [
+        {
+          "name": "init_pc",
+          "value": "0x0000"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "PATCH",
+          "offset": "0x0000"
+        },
+        {
+          "type": "code",
+          "path": "DRIVER.BIN",
+          "offset": "0x8000"
+        },
+        {
+          "type": "code",
+          "path": "DATA0.BIN",
+          "offset": "0x9000"
+        },
+        {
+          "type": "code",
+          "path": "DATA1.BIN",
+          "offset": "0xA000"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "BGM"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/studiooffside.xml",
+      "source_order": 4312,
+      "archive": "hanasangen_88",
+      "id": "hanasangen-88-opn"
+    }
+  ]
+}

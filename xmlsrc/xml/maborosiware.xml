@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="hoot.xsl"?>
+<!DOCTYPE gamelist [
+	<!ELEMENT gamelist (game|bind|childlists)*>
+	<!ATTLIST gamelist date CDATA #IMPLIED>
+	<!ELEMENT childlists (list)*>
+	<!ELEMENT list (#PCDATA)>
+	<!ELEMENT bind (exts,driver,options?)>
+	<!ELEMENT exts (ext)*>
+	<!ELEMENT ext (#PCDATA)>
+	<!ELEMENT game (name,driver,driveralias?,options?,romlist?,titlelist?)>
+	<!ELEMENT name (#PCDATA)>
+	<!ELEMENT driver (#PCDATA)>
+	<!ATTLIST driver type CDATA #IMPLIED>
+	<!ELEMENT driveralias (#PCDATA)>
+	<!ATTLIST driveralias type CDATA #IMPLIED>
+	<!ELEMENT options (option)*>
+	<!ELEMENT option EMPTY>
+	<!ATTLIST option name CDATA #REQUIRED
+					 value CDATA #REQUIRED>
+	<!ELEMENT romlist (rom)*>
+	<!ATTLIST romlist archive CDATA #IMPLIED>
+	<!ELEMENT rom (#PCDATA)>
+	<!ATTLIST rom type CDATA #REQUIRED
+				  offset CDATA #IMPLIED
+				  crc32 CDATA #IMPLIED>
+	<!ELEMENT titlelist (title|range)*>
+	<!ELEMENT title (#PCDATA)>
+	<!ATTLIST title code CDATA #REQUIRED
+					type CDATA #IMPLIED>
+	<!ELEMENT range (#PCDATA)>
+	<!ATTLIST range min CDATA #REQUIRED
+					max CDATA #REQUIRED
+					extcode CDATA #IMPLIED
+					start CDATA #IMPLIED>
+
+]>
+<gamelist date="2024/02/24">
+	<!-- //MABOROSI WARE -->
+	<game>
+		<name>[PC-9801] TIME SLIP 桃雀郷</name>
+		<driver type="opn">pc98dos</driver>
+		<driveralias type="NEC PC-9801">MABOROSI WARE</driveralias>
+		<options>
+			<option name="fm_mix" value="-8"/>
+			<option name="ssg_mix" value="-26"/>
+			<option name="clockmul" value="8"/>
+		</options>
+		<romlist archive="tstougen_98">
+			<rom type="file" offset="-1">FM.SYS</rom>
+			<rom type="file" offset="-1">TST_98.COM</rom>
+			<rom type="device" offset="0">fm.sys</rom>
+			<rom type="shell"  offset="0">tst_98</rom>
+		</romlist>
+		<titlelist>
+			<range min="0x02" max="0x08" extcode="0">BGM %02X</range>
+		</titlelist>
+	</game>
+</gamelist>

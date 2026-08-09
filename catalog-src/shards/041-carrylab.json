@@ -1,0 +1,124 @@
+{
+  "format": "hoot-catalog-shard",
+  "version": 1,
+  "source_file": "xml/carrylab.xml",
+  "date": "2005/09/25",
+  "comments": [
+    " //Carry Lab. "
+  ],
+  "games": [
+    {
+      "title": "[PC-9801] Flight in Hawaii",
+      "driver": {
+        "name": "pc98vx",
+        "type": "opn",
+        "alias": "Carry Lab.",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "cpuclock",
+          "value": "1996800"
+        },
+        {
+          "name": "bootcs",
+          "value": "0x0060"
+        },
+        {
+          "name": "bootip",
+          "value": "0x0000"
+        },
+        {
+          "name": "dataaddr",
+          "value": "0x33000"
+        },
+        {
+          "name": "filesize",
+          "value": "0x06000"
+        },
+        {
+          "name": "funcvect",
+          "value": "0x7f"
+        },
+        {
+          "name": "datamax",
+          "value": "0x06"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "fih.bin",
+          "offset": "0x00600"
+        },
+        {
+          "type": "code",
+          "path": "MUSIC PLAY",
+          "offset": "0x31000"
+        },
+        {
+          "type": "bgm",
+          "path": "T MUSIC",
+          "offset": "0x01"
+        },
+        {
+          "type": "bgm",
+          "path": "SPRING MUSIC",
+          "offset": "0x02"
+        },
+        {
+          "type": "bgm",
+          "path": "SUMMER MUSIC",
+          "offset": "0x03"
+        },
+        {
+          "type": "bgm",
+          "path": "FALL MUSIC",
+          "offset": "0x04"
+        },
+        {
+          "type": "bgm",
+          "path": "WINTER MUSIC",
+          "offset": "0x05"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "TITLE MUSIC"
+        },
+        {
+          "kind": "title",
+          "code": "0x02",
+          "title": "SPRING MUSIC"
+        },
+        {
+          "kind": "title",
+          "code": "0x03",
+          "title": "SUMMER MUSIC"
+        },
+        {
+          "kind": "title",
+          "code": "0x04",
+          "title": "FALL MUSIC"
+        },
+        {
+          "kind": "title",
+          "code": "0x05",
+          "title": "WINTER MUSIC"
+        },
+        {
+          "kind": "title",
+          "code": "0xff",
+          "title": "墜落音"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/carrylab.xml",
+      "source_order": 684,
+      "archive": "fih98",
+      "id": "fih98-opn"
+    }
+  ]
+}

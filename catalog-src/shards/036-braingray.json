@@ -1,0 +1,1682 @@
+{
+  "format": "hoot-catalog-shard",
+  "version": 1,
+  "source_file": "xml/braingray.xml",
+  "date": "2005/09/25",
+  "comments": [
+    " //BrainGray "
+  ],
+  "games": [
+    {
+      "title": "[PC-8801] LAST ARMAGEDDON(DEMO:OPNA)",
+      "driver": {
+        "name": "pc88",
+        "type": "opna",
+        "alias": "BrainGray",
+        "platform": "NEC PC-8801"
+      },
+      "options": [],
+      "assets": [
+        {
+          "type": "code",
+          "path": "PATCHD",
+          "offset": "0x0000"
+        },
+        {
+          "type": "code",
+          "path": "DEMO",
+          "offset": "0x0100"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS000",
+          "offset": "0x00"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS001",
+          "offset": "0x01"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS002",
+          "offset": "0x02"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS003",
+          "offset": "0x03"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x00",
+          "title": "MUS000 : Opening BGM #1"
+        },
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "MUS001 : Opening BGM #2"
+        },
+        {
+          "kind": "title",
+          "code": "0x03",
+          "title": "MUS003 : Opening BGM #3"
+        },
+        {
+          "kind": "title",
+          "code": "0x02",
+          "title": "MUS002 : Opening BGM #4"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/braingray.xml",
+      "source_order": 639,
+      "archive": "lastarmg",
+      "id": "lastarmg-opna"
+    },
+    {
+      "title": "[PC-8801] LAST ARMAGEDDON(DEMO:OPN)",
+      "driver": {
+        "name": "pc88",
+        "type": "opn",
+        "alias": "BrainGray",
+        "platform": "NEC PC-8801"
+      },
+      "options": [],
+      "assets": [
+        {
+          "type": "code",
+          "path": "PATCH2D",
+          "offset": "0x0000"
+        },
+        {
+          "type": "code",
+          "path": "DEMO",
+          "offset": "0x0100"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS000",
+          "offset": "0x00"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS001",
+          "offset": "0x01"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS002",
+          "offset": "0x02"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS003",
+          "offset": "0x03"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x00",
+          "title": "MUS000 : Opening BGM #1"
+        },
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "MUS001 : Opening BGM #2"
+        },
+        {
+          "kind": "title",
+          "code": "0x03",
+          "title": "MUS003 : Opening BGM #3"
+        },
+        {
+          "kind": "title",
+          "code": "0x02",
+          "title": "MUS002 : Opening BGM #4"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/braingray.xml",
+      "source_order": 640,
+      "archive": "lastarmg",
+      "id": "lastarmg-opn"
+    },
+    {
+      "title": "[PC-8801] LAST ARMAGEDDON(OPNA)",
+      "driver": {
+        "name": "pc88",
+        "type": "opna",
+        "alias": "BrainGray",
+        "platform": "NEC PC-8801"
+      },
+      "options": [
+        {
+          "name": "mdata_addr",
+          "value": "0xf800"
+        },
+        {
+          "name": "mdata_size",
+          "value": "0x0800"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "PATCH",
+          "offset": "0x0000"
+        },
+        {
+          "type": "code",
+          "path": "PROG",
+          "offset": "0x0100"
+        },
+        {
+          "type": "code",
+          "path": "MUSTBL",
+          "offset": "0xe000"
+        },
+        {
+          "type": "code",
+          "path": "DRIVER",
+          "offset": "0xf000"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS200",
+          "offset": "0x00"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS201",
+          "offset": "0x01"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS203",
+          "offset": "0x03"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS205",
+          "offset": "0x05"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS206",
+          "offset": "0x06"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS300",
+          "offset": "0x07"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS301",
+          "offset": "0x08"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS302",
+          "offset": "0x09"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS303",
+          "offset": "0x0a"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS304",
+          "offset": "0x0b"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS305",
+          "offset": "0x0c"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS306",
+          "offset": "0x0d"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS307",
+          "offset": "0x0e"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x00",
+          "title": "MUS200 : コマンド"
+        },
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "MUS201 : コマンドII"
+        },
+        {
+          "kind": "title",
+          "code": "0x03",
+          "title": "MUS203 : 戦闘"
+        },
+        {
+          "kind": "title",
+          "code": "0x05",
+          "title": "MUS205 : 戦闘II"
+        },
+        {
+          "kind": "title",
+          "code": "0x06",
+          "title": "MUS206 : キャラクター"
+        },
+        {
+          "kind": "title",
+          "code": "0x07",
+          "title": "MUS300 : エイリアン"
+        },
+        {
+          "kind": "title",
+          "code": "0x08",
+          "title": "MUS301 : バスクの樹"
+        },
+        {
+          "kind": "title",
+          "code": "0x09",
+          "title": "MUS302 : 108の石板"
+        },
+        {
+          "kind": "title",
+          "code": "0x0a",
+          "title": "MUS303 : IDカード完成"
+        },
+        {
+          "kind": "title",
+          "code": "0x0b",
+          "title": "MUS304 : 魔界BGM"
+        },
+        {
+          "kind": "title",
+          "code": "0x0c",
+          "title": "MUS305 : 昼の移動のテーマ"
+        },
+        {
+          "kind": "title",
+          "code": "0x0d",
+          "title": "MUS306 : 夜の移動のテーマ"
+        },
+        {
+          "kind": "title",
+          "code": "0x0e",
+          "title": "MUS307 : サルバン"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/braingray.xml",
+      "source_order": 641,
+      "archive": "lastarmg",
+      "id": "lastarmg-opna-2"
+    },
+    {
+      "title": "[PC-8801] LAST ARMAGEDDON(OPN)",
+      "driver": {
+        "name": "pc88",
+        "type": "opn",
+        "alias": "BrainGray",
+        "platform": "NEC PC-8801"
+      },
+      "options": [
+        {
+          "name": "mdata_addr",
+          "value": "0xf800"
+        },
+        {
+          "name": "mdata_size",
+          "value": "0x0800"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "PATCH2",
+          "offset": "0x0000"
+        },
+        {
+          "type": "code",
+          "path": "PROG",
+          "offset": "0x0100"
+        },
+        {
+          "type": "code",
+          "path": "MUSTBL",
+          "offset": "0xe000"
+        },
+        {
+          "type": "code",
+          "path": "DRIVER",
+          "offset": "0xf000"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS200",
+          "offset": "0x00"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS201",
+          "offset": "0x01"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS203",
+          "offset": "0x03"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS205",
+          "offset": "0x05"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS206",
+          "offset": "0x06"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS300",
+          "offset": "0x07"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS301",
+          "offset": "0x08"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS302",
+          "offset": "0x09"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS303",
+          "offset": "0x0a"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS304",
+          "offset": "0x0b"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS305",
+          "offset": "0x0c"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS306",
+          "offset": "0x0d"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS307",
+          "offset": "0x0e"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x00",
+          "title": "MUS200 : コマンド"
+        },
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "MUS201 : コマンドII"
+        },
+        {
+          "kind": "title",
+          "code": "0x03",
+          "title": "MUS203 : 戦闘"
+        },
+        {
+          "kind": "title",
+          "code": "0x05",
+          "title": "MUS205 : 戦闘II"
+        },
+        {
+          "kind": "title",
+          "code": "0x06",
+          "title": "MUS206 : キャラクター"
+        },
+        {
+          "kind": "title",
+          "code": "0x07",
+          "title": "MUS300 : エイリアン"
+        },
+        {
+          "kind": "title",
+          "code": "0x08",
+          "title": "MUS301 : バスクの樹"
+        },
+        {
+          "kind": "title",
+          "code": "0x09",
+          "title": "MUS302 : 108の石板"
+        },
+        {
+          "kind": "title",
+          "code": "0x0a",
+          "title": "MUS303 : IDカード完成"
+        },
+        {
+          "kind": "title",
+          "code": "0x0b",
+          "title": "MUS304 : 魔界BGM"
+        },
+        {
+          "kind": "title",
+          "code": "0x0c",
+          "title": "MUS305 : 昼の移動のテーマ"
+        },
+        {
+          "kind": "title",
+          "code": "0x0d",
+          "title": "MUS306 : 夜の移動のテーマ"
+        },
+        {
+          "kind": "title",
+          "code": "0x0e",
+          "title": "MUS307 : サルバン"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/braingray.xml",
+      "source_order": 642,
+      "archive": "lastarmg",
+      "id": "lastarmg-opn-2"
+    },
+    {
+      "title": "[MSX] LAST ARMAGEDDON(PSG)",
+      "driver": {
+        "name": "msx",
+        "type": "generic",
+        "alias": "BrainGray",
+        "platform": "MSX"
+      },
+      "options": [
+        {
+          "name": "mdata_addr",
+          "value": "0x4000"
+        },
+        {
+          "name": "mdata_size",
+          "value": "0x4000"
+        },
+        {
+          "name": "mfile_size",
+          "value": "0x4000"
+        },
+        {
+          "name": "init_pc",
+          "value": "0x8000"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "028",
+          "offset": "0x0100"
+        },
+        {
+          "type": "code",
+          "path": "patch2",
+          "offset": "0x8000"
+        },
+        {
+          "type": "bgm",
+          "path": "PSG-1.MSC",
+          "offset": "0x00"
+        },
+        {
+          "type": "bgm",
+          "path": "PSG-2.MSC",
+          "offset": "0x01"
+        },
+        {
+          "type": "bgm",
+          "path": "PSG-3.MSC",
+          "offset": "0x02"
+        },
+        {
+          "type": "bgm",
+          "path": "PSG-4.MSC",
+          "offset": "0x03"
+        },
+        {
+          "type": "bgm",
+          "path": "PSGBB57.COM",
+          "offset": "0x04"
+        },
+        {
+          "type": "bgm",
+          "path": "0B5",
+          "offset": "0x05"
+        },
+        {
+          "type": "bgm",
+          "path": "126",
+          "offset": "0x06"
+        },
+        {
+          "type": "bgm",
+          "path": "136",
+          "offset": "0x07"
+        },
+        {
+          "type": "bgm",
+          "path": "1B5",
+          "offset": "0x08"
+        },
+        {
+          "type": "bgm",
+          "path": "1A6",
+          "offset": "0x09"
+        },
+        {
+          "type": "bgm",
+          "path": "1AB",
+          "offset": "0x0A"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x00",
+          "title": "オープニング #1"
+        },
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "オープニング #2"
+        },
+        {
+          "kind": "title",
+          "code": "0x02",
+          "title": "オープニング #3"
+        },
+        {
+          "kind": "title",
+          "code": "0x03",
+          "title": "オープニング #4"
+        },
+        {
+          "kind": "title",
+          "code": "0x04",
+          "title": "モンスターバイブル"
+        },
+        {
+          "kind": "title",
+          "code": "0x05",
+          "title": "コマンド"
+        },
+        {
+          "kind": "title",
+          "code": "0x06",
+          "title": "コマンドII"
+        },
+        {
+          "kind": "title",
+          "code": "0x07",
+          "title": "モンスターフュージョン"
+        },
+        {
+          "kind": "title",
+          "code": "0x08",
+          "title": "戦闘のテーマ"
+        },
+        {
+          "kind": "title",
+          "code": "0x09",
+          "title": "戦闘のテーマII"
+        },
+        {
+          "kind": "title",
+          "code": "0x0a",
+          "title": "キャラクター"
+        },
+        {
+          "kind": "title",
+          "code": "0x0b",
+          "title": "コールドスリープルーム"
+        },
+        {
+          "kind": "title",
+          "code": "0x0c",
+          "title": "ダイアリー"
+        },
+        {
+          "kind": "title",
+          "code": "0x0d",
+          "title": "CDルーム"
+        },
+        {
+          "kind": "title",
+          "code": "0x0e",
+          "title": "スペースシップ"
+        },
+        {
+          "kind": "title",
+          "code": "0x0f",
+          "title": "コントロールルーム"
+        },
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "司令官室のテーマ"
+        },
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "ガルマの部屋"
+        },
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "戻らずの塔"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "鍵の部屋"
+        },
+        {
+          "kind": "title",
+          "code": "0x14",
+          "title": "氷河期"
+        },
+        {
+          "kind": "title",
+          "code": "0x15",
+          "title": "ノアの方舟"
+        },
+        {
+          "kind": "title",
+          "code": "0x16",
+          "title": "ナポレオン"
+        },
+        {
+          "kind": "title",
+          "code": "0x17",
+          "title": "ヒットラー"
+        },
+        {
+          "kind": "title",
+          "code": "0x18",
+          "title": "1999年"
+        },
+        {
+          "kind": "title",
+          "code": "0x19",
+          "title": "想像"
+        },
+        {
+          "kind": "title",
+          "code": "0x1a",
+          "title": "滅亡"
+        },
+        {
+          "kind": "title",
+          "code": "0x1b",
+          "title": "昼の移動テーマII"
+        },
+        {
+          "kind": "title",
+          "code": "0x1c",
+          "title": "夜の移動テーマII"
+        },
+        {
+          "kind": "title",
+          "code": "0x1d",
+          "title": "サルバンII"
+        },
+        {
+          "kind": "title",
+          "code": "0x1e",
+          "title": "愛と優しさ"
+        },
+        {
+          "kind": "title",
+          "code": "0x1f",
+          "title": "エイリアン"
+        },
+        {
+          "kind": "title",
+          "code": "0x20",
+          "title": "バスクの樹"
+        },
+        {
+          "kind": "title",
+          "code": "0x21",
+          "title": "108の石板"
+        },
+        {
+          "kind": "title",
+          "code": "0x22",
+          "title": "IDカード"
+        },
+        {
+          "kind": "title",
+          "code": "0x23",
+          "title": "魔界"
+        },
+        {
+          "kind": "title",
+          "code": "0x24",
+          "title": "昼の移動テーマ"
+        },
+        {
+          "kind": "title",
+          "code": "0x25",
+          "title": "夜の移動テーマ"
+        },
+        {
+          "kind": "title",
+          "code": "0x26",
+          "title": "サルバン"
+        },
+        {
+          "kind": "title",
+          "code": "0x27",
+          "title": "石板製作所"
+        },
+        {
+          "kind": "title",
+          "code": "0x28",
+          "title": "転移機のテーマ"
+        },
+        {
+          "kind": "title",
+          "code": "0x29",
+          "title": "石板製作室"
+        },
+        {
+          "kind": "title",
+          "code": "0x2a",
+          "title": "109個目の石板"
+        },
+        {
+          "kind": "title",
+          "code": "0x2b",
+          "title": "司令塔"
+        },
+        {
+          "kind": "title",
+          "code": "0x2c",
+          "title": "エンディング #1"
+        },
+        {
+          "kind": "title",
+          "code": "0x2d",
+          "title": "エンディング #2"
+        },
+        {
+          "kind": "title",
+          "code": "0x2e",
+          "title": "ファンタジーランドショップ"
+        },
+        {
+          "kind": "title",
+          "code": "0x2f",
+          "title": "戦士たちとの戦い"
+        },
+        {
+          "kind": "title",
+          "code": "0x30",
+          "title": "メディカルセンター"
+        },
+        {
+          "kind": "title",
+          "code": "0x31",
+          "title": "王の城"
+        },
+        {
+          "kind": "title",
+          "code": "0x32",
+          "title": "王の部屋"
+        },
+        {
+          "kind": "title",
+          "code": "0x33",
+          "title": "コンピュータールーム"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/braingray.xml",
+      "source_order": 643,
+      "archive": "lastarmg_msx",
+      "id": "lastarmg-msx-generic"
+    },
+    {
+      "title": "[MSX] LAST ARMAGEDDON(OPLL)",
+      "driver": {
+        "name": "msx",
+        "type": "generic",
+        "alias": "BrainGray",
+        "platform": "MSX"
+      },
+      "options": [
+        {
+          "name": "mdata_addr",
+          "value": "0x4000"
+        },
+        {
+          "name": "mdata_size",
+          "value": "0x4000"
+        },
+        {
+          "name": "mfile_size",
+          "value": "0x4000"
+        },
+        {
+          "name": "init_pc",
+          "value": "0x8000"
+        },
+        {
+          "name": "use_opll",
+          "value": "0x01"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "029",
+          "offset": "0x0100"
+        },
+        {
+          "type": "code",
+          "path": "patch",
+          "offset": "0x8000"
+        },
+        {
+          "type": "bgm",
+          "path": "FM-1.MSC",
+          "offset": "0x00"
+        },
+        {
+          "type": "bgm",
+          "path": "FM-2.MSC",
+          "offset": "0x01"
+        },
+        {
+          "type": "bgm",
+          "path": "FM-3.MSC",
+          "offset": "0x02"
+        },
+        {
+          "type": "bgm",
+          "path": "FM-4.MSC",
+          "offset": "0x03"
+        },
+        {
+          "type": "bgm",
+          "path": "FMBB57.COM",
+          "offset": "0x04"
+        },
+        {
+          "type": "bgm",
+          "path": "0B5",
+          "offset": "0x05"
+        },
+        {
+          "type": "bgm",
+          "path": "126",
+          "offset": "0x06"
+        },
+        {
+          "type": "bgm",
+          "path": "136",
+          "offset": "0x07"
+        },
+        {
+          "type": "bgm",
+          "path": "1B5",
+          "offset": "0x08"
+        },
+        {
+          "type": "bgm",
+          "path": "1A6",
+          "offset": "0x09"
+        },
+        {
+          "type": "bgm",
+          "path": "1AB",
+          "offset": "0x0a"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x00",
+          "title": "オープニング #1"
+        },
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "オープニング #2"
+        },
+        {
+          "kind": "title",
+          "code": "0x02",
+          "title": "オープニング #3"
+        },
+        {
+          "kind": "title",
+          "code": "0x03",
+          "title": "オープニング #4"
+        },
+        {
+          "kind": "title",
+          "code": "0x04",
+          "title": "モンスターバイブル"
+        },
+        {
+          "kind": "title",
+          "code": "0x05",
+          "title": "コマンド"
+        },
+        {
+          "kind": "title",
+          "code": "0x06",
+          "title": "コマンドII"
+        },
+        {
+          "kind": "title",
+          "code": "0x07",
+          "title": "モンスターフュージョン"
+        },
+        {
+          "kind": "title",
+          "code": "0x08",
+          "title": "戦闘のテーマ"
+        },
+        {
+          "kind": "title",
+          "code": "0x09",
+          "title": "戦闘のテーマII"
+        },
+        {
+          "kind": "title",
+          "code": "0x0a",
+          "title": "キャラクター"
+        },
+        {
+          "kind": "title",
+          "code": "0x0b",
+          "title": "コールドスリープルーム"
+        },
+        {
+          "kind": "title",
+          "code": "0x0c",
+          "title": "ダイアリー"
+        },
+        {
+          "kind": "title",
+          "code": "0x0d",
+          "title": "CDルーム"
+        },
+        {
+          "kind": "title",
+          "code": "0x0e",
+          "title": "スペースシップ"
+        },
+        {
+          "kind": "title",
+          "code": "0x0f",
+          "title": "コントロールルーム"
+        },
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "司令官室のテーマ"
+        },
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "ガルマの部屋"
+        },
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "戻らずの塔"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "鍵の部屋"
+        },
+        {
+          "kind": "title",
+          "code": "0x14",
+          "title": "氷河期"
+        },
+        {
+          "kind": "title",
+          "code": "0x15",
+          "title": "ノアの方舟"
+        },
+        {
+          "kind": "title",
+          "code": "0x16",
+          "title": "ナポレオン"
+        },
+        {
+          "kind": "title",
+          "code": "0x17",
+          "title": "ヒットラー"
+        },
+        {
+          "kind": "title",
+          "code": "0x18",
+          "title": "1999年"
+        },
+        {
+          "kind": "title",
+          "code": "0x19",
+          "title": "想像"
+        },
+        {
+          "kind": "title",
+          "code": "0x1a",
+          "title": "滅亡"
+        },
+        {
+          "kind": "title",
+          "code": "0x1b",
+          "title": "昼の移動テーマII"
+        },
+        {
+          "kind": "title",
+          "code": "0x1c",
+          "title": "夜の移動テーマII"
+        },
+        {
+          "kind": "title",
+          "code": "0x1d",
+          "title": "サルバンII"
+        },
+        {
+          "kind": "title",
+          "code": "0x1e",
+          "title": "愛と優しさ"
+        },
+        {
+          "kind": "title",
+          "code": "0x1f",
+          "title": "エイリアン"
+        },
+        {
+          "kind": "title",
+          "code": "0x20",
+          "title": "バスクの樹"
+        },
+        {
+          "kind": "title",
+          "code": "0x21",
+          "title": "108の石板"
+        },
+        {
+          "kind": "title",
+          "code": "0x22",
+          "title": "IDカード"
+        },
+        {
+          "kind": "title",
+          "code": "0x23",
+          "title": "魔界"
+        },
+        {
+          "kind": "title",
+          "code": "0x24",
+          "title": "昼の移動テーマ"
+        },
+        {
+          "kind": "title",
+          "code": "0x25",
+          "title": "夜の移動テーマ"
+        },
+        {
+          "kind": "title",
+          "code": "0x26",
+          "title": "サルバン"
+        },
+        {
+          "kind": "title",
+          "code": "0x27",
+          "title": "石板製作所"
+        },
+        {
+          "kind": "title",
+          "code": "0x28",
+          "title": "転移機のテーマ"
+        },
+        {
+          "kind": "title",
+          "code": "0x29",
+          "title": "石板製作室"
+        },
+        {
+          "kind": "title",
+          "code": "0x2a",
+          "title": "109個目の石板"
+        },
+        {
+          "kind": "title",
+          "code": "0x2b",
+          "title": "司令塔"
+        },
+        {
+          "kind": "title",
+          "code": "0x2c",
+          "title": "エンディング #1"
+        },
+        {
+          "kind": "title",
+          "code": "0x2d",
+          "title": "エンディング #2"
+        },
+        {
+          "kind": "title",
+          "code": "0x2e",
+          "title": "ファンタジーランドショップ"
+        },
+        {
+          "kind": "title",
+          "code": "0x2f",
+          "title": "戦士たちとの戦い"
+        },
+        {
+          "kind": "title",
+          "code": "0x30",
+          "title": "メディカルセンター"
+        },
+        {
+          "kind": "title",
+          "code": "0x31",
+          "title": "王の城"
+        },
+        {
+          "kind": "title",
+          "code": "0x32",
+          "title": "王の部屋"
+        },
+        {
+          "kind": "title",
+          "code": "0x33",
+          "title": "コンピュータールーム"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/braingray.xml",
+      "source_order": 644,
+      "archive": "lastarmg_msx",
+      "id": "lastarmg-msx-generic-2"
+    },
+    {
+      "title": "[MSX] 抜忍伝説",
+      "driver": {
+        "name": "msx",
+        "type": "generic",
+        "alias": "BrainGray",
+        "platform": "MSX"
+      },
+      "options": [
+        {
+          "name": "init_pc",
+          "value": "0x3000"
+        },
+        {
+          "name": "mdata_addr",
+          "value": "0x4000"
+        },
+        {
+          "name": "mfile_size",
+          "value": "0x2600"
+        },
+        {
+          "name": "mdata_size",
+          "value": "0x2600"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "COMMAND.COM",
+          "offset": "0x0100"
+        },
+        {
+          "type": "code",
+          "path": "patch",
+          "offset": "0x3000"
+        },
+        {
+          "type": "code",
+          "path": "OPNMUS",
+          "offset": "0x4000"
+        },
+        {
+          "type": "bgm",
+          "path": "OPNMUS",
+          "offset": "0x00"
+        },
+        {
+          "type": "bgm",
+          "path": "J/EVTMUS",
+          "offset": "0x01"
+        },
+        {
+          "type": "bgm",
+          "path": "K/EVTMUS",
+          "offset": "0x02"
+        },
+        {
+          "type": "bgm",
+          "path": "G/EVTMUS",
+          "offset": "0x03"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "range",
+          "min": "0x00",
+          "max": "0x0e",
+          "title_format": "オープニング %02X",
+          "extcode": "1"
+        },
+        {
+          "kind": "title",
+          "code": "0x100",
+          "title": "邪鬼丸 00"
+        },
+        {
+          "kind": "title",
+          "code": "0x101",
+          "title": "邪鬼丸 01"
+        },
+        {
+          "kind": "title",
+          "code": "0x102",
+          "title": "邪鬼丸 02"
+        },
+        {
+          "kind": "title",
+          "code": "0x103",
+          "title": "邪鬼丸 03"
+        },
+        {
+          "kind": "title",
+          "code": "0x104",
+          "title": "邪鬼丸 04"
+        },
+        {
+          "kind": "title",
+          "code": "0x105",
+          "title": "邪鬼丸 05"
+        },
+        {
+          "kind": "title",
+          "code": "0x106",
+          "title": "邪鬼丸 06"
+        },
+        {
+          "kind": "title",
+          "code": "0x107",
+          "title": "邪鬼丸 07"
+        },
+        {
+          "kind": "title",
+          "code": "0x108",
+          "title": "邪鬼丸 08"
+        },
+        {
+          "kind": "title",
+          "code": "0x109",
+          "title": "邪鬼丸 09"
+        },
+        {
+          "kind": "title",
+          "code": "0x10a",
+          "title": "邪鬼丸 0A"
+        },
+        {
+          "kind": "title",
+          "code": "0x10b",
+          "title": "邪鬼丸 0B"
+        },
+        {
+          "kind": "title",
+          "code": "0x10c",
+          "title": "邪鬼丸 0C"
+        },
+        {
+          "kind": "title",
+          "code": "0x10d",
+          "title": "邪鬼丸 0D"
+        },
+        {
+          "kind": "title",
+          "code": "0x10e",
+          "title": "邪鬼丸 0E"
+        },
+        {
+          "kind": "title",
+          "code": "0x10f",
+          "title": "邪鬼丸 0F"
+        },
+        {
+          "kind": "title",
+          "code": "0x110",
+          "title": "邪鬼丸 10"
+        },
+        {
+          "kind": "title",
+          "code": "0x200",
+          "title": "小源太 00"
+        },
+        {
+          "kind": "title",
+          "code": "0x201",
+          "title": "小源太 01"
+        },
+        {
+          "kind": "title",
+          "code": "0x202",
+          "title": "小源太 02"
+        },
+        {
+          "kind": "title",
+          "code": "0x203",
+          "title": "小源太 03"
+        },
+        {
+          "kind": "title",
+          "code": "0x204",
+          "title": "小源太 04"
+        },
+        {
+          "kind": "title",
+          "code": "0x205",
+          "title": "小源太 05"
+        },
+        {
+          "kind": "title",
+          "code": "0x206",
+          "title": "小源太 06"
+        },
+        {
+          "kind": "title",
+          "code": "0x207",
+          "title": "小源太 07"
+        },
+        {
+          "kind": "title",
+          "code": "0x208",
+          "title": "小源太 08"
+        },
+        {
+          "kind": "title",
+          "code": "0x209",
+          "title": "小源太 09"
+        },
+        {
+          "kind": "title",
+          "code": "0x20a",
+          "title": "小源太 0A"
+        },
+        {
+          "kind": "title",
+          "code": "0x20b",
+          "title": "小源太 0B"
+        },
+        {
+          "kind": "title",
+          "code": "0x20c",
+          "title": "小源太 0C"
+        },
+        {
+          "kind": "title",
+          "code": "0x20d",
+          "title": "小源太 0D"
+        },
+        {
+          "kind": "title",
+          "code": "0x20e",
+          "title": "小源太 0E"
+        },
+        {
+          "kind": "title",
+          "code": "0x20f",
+          "title": "小源太 0F"
+        },
+        {
+          "kind": "title",
+          "code": "0x210",
+          "title": "小源太 10"
+        },
+        {
+          "kind": "title",
+          "code": "0x211",
+          "title": "小源太 11"
+        },
+        {
+          "kind": "title",
+          "code": "0x212",
+          "title": "小源太 12"
+        },
+        {
+          "kind": "title",
+          "code": "0x213",
+          "title": "小源太 13"
+        },
+        {
+          "kind": "title",
+          "code": "0x214",
+          "title": "小源太 14"
+        },
+        {
+          "kind": "title",
+          "code": "0x300",
+          "title": "幻妖斎 00"
+        },
+        {
+          "kind": "title",
+          "code": "0x301",
+          "title": "幻妖斎 01"
+        },
+        {
+          "kind": "title",
+          "code": "0x302",
+          "title": "幻妖斎 02"
+        },
+        {
+          "kind": "title",
+          "code": "0x303",
+          "title": "幻妖斎 03"
+        },
+        {
+          "kind": "title",
+          "code": "0x304",
+          "title": "幻妖斎 04"
+        },
+        {
+          "kind": "title",
+          "code": "0x305",
+          "title": "幻妖斎 05"
+        },
+        {
+          "kind": "title",
+          "code": "0x306",
+          "title": "幻妖斎 06"
+        },
+        {
+          "kind": "title",
+          "code": "0x307",
+          "title": "幻妖斎 07"
+        },
+        {
+          "kind": "title",
+          "code": "0x308",
+          "title": "幻妖斎 08"
+        },
+        {
+          "kind": "title",
+          "code": "0x309",
+          "title": "幻妖斎 09"
+        },
+        {
+          "kind": "title",
+          "code": "0x30a",
+          "title": "幻妖斎 0A"
+        },
+        {
+          "kind": "title",
+          "code": "0x30b",
+          "title": "幻妖斎 0B"
+        },
+        {
+          "kind": "title",
+          "code": "0x30c",
+          "title": "幻妖斎 0C"
+        },
+        {
+          "kind": "title",
+          "code": "0x30d",
+          "title": "幻妖斎 0D"
+        },
+        {
+          "kind": "title",
+          "code": "0x30e",
+          "title": "幻妖斎 0E"
+        },
+        {
+          "kind": "title",
+          "code": "0x30f",
+          "title": "幻妖斎 0F"
+        },
+        {
+          "kind": "title",
+          "code": "0x310",
+          "title": "幻妖斎 10"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/braingray.xml",
+      "source_order": 645,
+      "archive": "nukenin_msx",
+      "id": "nukenin-msx-generic"
+    },
+    {
+      "title": "[MSX] 抜忍伝説 外伝",
+      "driver": {
+        "name": "msx",
+        "type": "generic",
+        "alias": "BrainGray",
+        "platform": "MSX"
+      },
+      "options": [
+        {
+          "name": "init_pc",
+          "value": "0x5000"
+        },
+        {
+          "name": "mdata_addr",
+          "value": "0x6000"
+        },
+        {
+          "name": "mfile_size",
+          "value": "0x2700"
+        },
+        {
+          "name": "mdata_size",
+          "value": "0x2700"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "COMMAND.COM",
+          "offset": "0x0100"
+        },
+        {
+          "type": "code",
+          "path": "patch",
+          "offset": "0x5000"
+        },
+        {
+          "type": "bgm",
+          "path": "EVTMUS",
+          "offset": "0x00"
+        },
+        {
+          "type": "bgm",
+          "path": "MOVMUS",
+          "offset": "0x01"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "range",
+          "min": "0x00",
+          "max": "0x18",
+          "title_format": "EVTMUS : %02X",
+          "extcode": "1"
+        },
+        {
+          "kind": "title",
+          "code": "0x119",
+          "title": "MOVMUS : 00"
+        },
+        {
+          "kind": "title",
+          "code": "0x11a",
+          "title": "MOVMUS : 01"
+        },
+        {
+          "kind": "title",
+          "code": "0x11b",
+          "title": "MOVMUS : 02"
+        },
+        {
+          "kind": "title",
+          "code": "0x11c",
+          "title": "MOVMUS : 03"
+        },
+        {
+          "kind": "title",
+          "code": "0x11d",
+          "title": "MOVMUS : 04"
+        },
+        {
+          "kind": "title",
+          "code": "0x11e",
+          "title": "MOVMUS : 05"
+        },
+        {
+          "kind": "title",
+          "code": "0x11f",
+          "title": "MOVMUS : 06"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/braingray.xml",
+      "source_order": 646,
+      "archive": "nukening_msx",
+      "id": "nukening-msx-generic"
+    }
+  ]
+}

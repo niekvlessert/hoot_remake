@@ -1,0 +1,3717 @@
+{
+  "format": "hoot-catalog-shard",
+  "version": 1,
+  "source_file": "xml/ucom.xml",
+  "date": "2005/09/25",
+  "comments": [
+    " //Ucom "
+  ],
+  "games": [
+    {
+      "title": "[PC-9801] Green Oasis",
+      "driver": {
+        "name": "pc98dos",
+        "type": "opn",
+        "alias": "Ucom",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "clockmul",
+          "value": "40"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "NAX.com",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "NLP_HOOT.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "SSGPCM.TBL",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "SSGPCM.DTA",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "BGM001.O",
+          "offset": "0x10"
+        },
+        {
+          "type": "file",
+          "path": "BGM002.O",
+          "offset": "0x11"
+        },
+        {
+          "type": "file",
+          "path": "BGM003.O",
+          "offset": "0x12"
+        },
+        {
+          "type": "file",
+          "path": "BGM004.O",
+          "offset": "0x13"
+        },
+        {
+          "type": "file",
+          "path": "BGM005.O",
+          "offset": "0x14"
+        },
+        {
+          "type": "file",
+          "path": "BGM006.O",
+          "offset": "0x15"
+        },
+        {
+          "type": "file",
+          "path": "BGM007.O",
+          "offset": "0x16"
+        },
+        {
+          "type": "file",
+          "path": "BGM008.O",
+          "offset": "0x17"
+        },
+        {
+          "type": "file",
+          "path": "BGM009.O",
+          "offset": "0x18"
+        },
+        {
+          "type": "file",
+          "path": "BGM010.O",
+          "offset": "0x19"
+        },
+        {
+          "type": "file",
+          "path": "BGM011.O",
+          "offset": "0x1A"
+        },
+        {
+          "type": "file",
+          "path": "BGM012.O",
+          "offset": "0x1B"
+        },
+        {
+          "type": "file",
+          "path": "BGM013.O",
+          "offset": "0x1C"
+        },
+        {
+          "type": "file",
+          "path": "BGM014.O",
+          "offset": "0x1D"
+        },
+        {
+          "type": "file",
+          "path": "BGM015.O",
+          "offset": "0x1E"
+        },
+        {
+          "type": "file",
+          "path": "BGM016.O",
+          "offset": "0x1F"
+        },
+        {
+          "type": "file",
+          "path": "BGM017.O",
+          "offset": "0x20"
+        },
+        {
+          "type": "file",
+          "path": "BGM018.O",
+          "offset": "0x21"
+        },
+        {
+          "type": "file",
+          "path": "BGM019.O",
+          "offset": "0x22"
+        },
+        {
+          "type": "file",
+          "path": "BGM020.O",
+          "offset": "0x23"
+        },
+        {
+          "type": "file",
+          "path": "BGM021.O",
+          "offset": "0x24"
+        },
+        {
+          "type": "file",
+          "path": "BGM022.O",
+          "offset": "0x25"
+        },
+        {
+          "type": "file",
+          "path": "BGM023.O",
+          "offset": "0x26"
+        },
+        {
+          "type": "file",
+          "path": "BGM024.O",
+          "offset": "0x27"
+        },
+        {
+          "type": "file",
+          "path": "BGM025.O",
+          "offset": "0x28"
+        },
+        {
+          "type": "shell",
+          "path": "NAX -b10 -f9 -q -t",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "NLP_HOOT",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "BGM001.O : メイン・テーマ"
+        },
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "BGM002.O : オープニング１"
+        },
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "BGM003.O : オープニング２"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "BGM004.O : メイEvent I"
+        },
+        {
+          "kind": "title",
+          "code": "0x14",
+          "title": "BGM005.O : 始まり"
+        },
+        {
+          "kind": "title",
+          "code": "0x15",
+          "title": "BGM006.O : サスペンス"
+        },
+        {
+          "kind": "title",
+          "code": "0x16",
+          "title": "BGM007.O : お・ま・け"
+        },
+        {
+          "kind": "title",
+          "code": "0x17",
+          "title": "BGM008.O : 裏通路"
+        },
+        {
+          "kind": "title",
+          "code": "0x18",
+          "title": "BGM009.O : ＲＸ"
+        },
+        {
+          "kind": "title",
+          "code": "0x19",
+          "title": "BGM010.O : メグミ"
+        },
+        {
+          "kind": "title",
+          "code": "0x1A",
+          "title": "BGM011.O : パーティー"
+        },
+        {
+          "kind": "title",
+          "code": "0x1B",
+          "title": "BGM012.O : カジノ"
+        },
+        {
+          "kind": "title",
+          "code": "0x1C",
+          "title": "BGM013.O : ゲーム"
+        },
+        {
+          "kind": "title",
+          "code": "0x1D",
+          "title": "BGM014.O : シリア"
+        },
+        {
+          "kind": "title",
+          "code": "0x1E",
+          "title": "BGM015.O : 艦長の秘密"
+        },
+        {
+          "kind": "title",
+          "code": "0x21",
+          "title": "BGM018.O : サイレンス"
+        },
+        {
+          "kind": "title",
+          "code": "0x23",
+          "title": "BGM020.O : 発見"
+        },
+        {
+          "kind": "title",
+          "code": "0x1F",
+          "title": "BGM016.O : エンディング１"
+        },
+        {
+          "kind": "title",
+          "code": "0x20",
+          "title": "BGM017.O : エンディング２"
+        },
+        {
+          "kind": "title",
+          "code": "0x22",
+          "title": "BGM019.O : Climax!"
+        },
+        {
+          "kind": "title",
+          "code": "0x24",
+          "title": "BGM021.O : Explosion"
+        },
+        {
+          "kind": "title",
+          "code": "0x25",
+          "title": "BGM022.O : Spaceship Going"
+        },
+        {
+          "kind": "title",
+          "code": "0x26",
+          "title": "BGM023.O : Challenge Double Up"
+        },
+        {
+          "kind": "title",
+          "code": "0x27",
+          "title": "BGM024.O : Fanfare"
+        },
+        {
+          "kind": "title",
+          "code": "0x28",
+          "title": "BGM025.O : Count Coins"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/ucom.xml",
+      "source_order": 4816,
+      "archive": "gr_oasis_98",
+      "id": "gr-oasis-98-opn"
+    },
+    {
+      "title": "[PC-9801] Cross Changer(OPN)",
+      "driver": {
+        "name": "pc98dos",
+        "type": "opn",
+        "alias": "Ucom",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "clockmul",
+          "value": "8"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "NAX.com",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "NLP_HOOT.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "TONES.DTA",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "SEI.O",
+          "offset": "0x10"
+        },
+        {
+          "type": "file",
+          "path": "SM03.O",
+          "offset": "0x11"
+        },
+        {
+          "type": "file",
+          "path": "SM04.O",
+          "offset": "0x12"
+        },
+        {
+          "type": "file",
+          "path": "SM05.O",
+          "offset": "0x13"
+        },
+        {
+          "type": "file",
+          "path": "SM06.O",
+          "offset": "0x14"
+        },
+        {
+          "type": "file",
+          "path": "SM07.O",
+          "offset": "0x15"
+        },
+        {
+          "type": "file",
+          "path": "SM08.O",
+          "offset": "0x16"
+        },
+        {
+          "type": "file",
+          "path": "SM09.O",
+          "offset": "0x17"
+        },
+        {
+          "type": "file",
+          "path": "SM10.O",
+          "offset": "0x18"
+        },
+        {
+          "type": "file",
+          "path": "SM11.O",
+          "offset": "0x19"
+        },
+        {
+          "type": "file",
+          "path": "SM12.O",
+          "offset": "0x1A"
+        },
+        {
+          "type": "file",
+          "path": "SM13.O",
+          "offset": "0x1B"
+        },
+        {
+          "type": "file",
+          "path": "SM14.O",
+          "offset": "0x1C"
+        },
+        {
+          "type": "file",
+          "path": "SM15.O",
+          "offset": "0x1D"
+        },
+        {
+          "type": "file",
+          "path": "SM16.O",
+          "offset": "0x1E"
+        },
+        {
+          "type": "file",
+          "path": "SM17.O",
+          "offset": "0x1F"
+        },
+        {
+          "type": "file",
+          "path": "SM18.O",
+          "offset": "0x20"
+        },
+        {
+          "type": "file",
+          "path": "SM19.O",
+          "offset": "0x21"
+        },
+        {
+          "type": "file",
+          "path": "SM20.O",
+          "offset": "0x22"
+        },
+        {
+          "type": "file",
+          "path": "SM21.O",
+          "offset": "0x23"
+        },
+        {
+          "type": "file",
+          "path": "SED.O",
+          "offset": "0x24"
+        },
+        {
+          "type": "file",
+          "path": "SSE03.O",
+          "offset": "0x25"
+        },
+        {
+          "type": "file",
+          "path": "SSE04.O",
+          "offset": "0x26"
+        },
+        {
+          "type": "file",
+          "path": "SSE06.O",
+          "offset": "0x27"
+        },
+        {
+          "type": "shell",
+          "path": "NAX",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "NLP_HOOT",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "SEI.O   : OPENING ﾃｰﾏ"
+        },
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "SM03.O  : アクション1"
+        },
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "SM04.O  : アクション2"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "SM05.O  : アクション3"
+        },
+        {
+          "kind": "title",
+          "code": "0x14",
+          "title": "SM06.O  : サスペンス1"
+        },
+        {
+          "kind": "title",
+          "code": "0x15",
+          "title": "SM07.O  : サスペンス2"
+        },
+        {
+          "kind": "title",
+          "code": "0x16",
+          "title": "SM08.O  : 喫茶サファリ 店内1"
+        },
+        {
+          "kind": "title",
+          "code": "0x17",
+          "title": "SM09.O  : 喫茶サファリ 店内2"
+        },
+        {
+          "kind": "title",
+          "code": "0x18",
+          "title": "SM10.O  : コミカル1"
+        },
+        {
+          "kind": "title",
+          "code": "0x19",
+          "title": "SM11.O  : コミカル2"
+        },
+        {
+          "kind": "title",
+          "code": "0x1A",
+          "title": "SM12.O  : 変身"
+        },
+        {
+          "kind": "title",
+          "code": "0x1B",
+          "title": "SM13.O  : アイキャッチ1"
+        },
+        {
+          "kind": "title",
+          "code": "0x1C",
+          "title": "SM14.O  : アイキャッチ2"
+        },
+        {
+          "kind": "title",
+          "code": "0x1D",
+          "title": "SM15.O  : オープニングアレンジ1"
+        },
+        {
+          "kind": "title",
+          "code": "0x1E",
+          "title": "SM16.O  : オープニングアレンジ2"
+        },
+        {
+          "kind": "title",
+          "code": "0x1F",
+          "title": "SM17.O  : Hシーン1"
+        },
+        {
+          "kind": "title",
+          "code": "0x20",
+          "title": "SM18.O  : Hシーン2"
+        },
+        {
+          "kind": "title",
+          "code": "0x21",
+          "title": "SM19.O  : 異次元シーン1"
+        },
+        {
+          "kind": "title",
+          "code": "0x22",
+          "title": "SM20.O  : 異次元シーン2"
+        },
+        {
+          "kind": "title",
+          "code": "0x23",
+          "title": "SM21.O  : 必殺技を決める"
+        },
+        {
+          "kind": "title",
+          "code": "0x24",
+          "title": "SED.O   : ENDING ﾃｰﾏ"
+        },
+        {
+          "kind": "title",
+          "code": "0x25",
+          "title": "SSE03.O : レーザーガン"
+        },
+        {
+          "kind": "title",
+          "code": "0x26",
+          "title": "SSE04.O : 異次元の電光"
+        },
+        {
+          "kind": "title",
+          "code": "0x27",
+          "title": "SSE06.O : ヒロイン基地内部"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/ucom.xml",
+      "source_order": 4817,
+      "archive": "cross_ch_98",
+      "id": "cross-ch-98-opn"
+    },
+    {
+      "title": "[PC-9801] Cross Changer(OPNA)",
+      "driver": {
+        "name": "pc98dos",
+        "type": "opna",
+        "alias": "Ucom",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "clockmul",
+          "value": "8"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "NAX.com",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "NLP_HOOT.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "TONES.DTA",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "SEI_S.O",
+          "offset": "0x10"
+        },
+        {
+          "type": "file",
+          "path": "SM03_S.O",
+          "offset": "0x11"
+        },
+        {
+          "type": "file",
+          "path": "SM04_S.O",
+          "offset": "0x12"
+        },
+        {
+          "type": "file",
+          "path": "SM05_S.O",
+          "offset": "0x13"
+        },
+        {
+          "type": "file",
+          "path": "SM06_S.O",
+          "offset": "0x14"
+        },
+        {
+          "type": "file",
+          "path": "SM07_S.O",
+          "offset": "0x15"
+        },
+        {
+          "type": "file",
+          "path": "SM08_S.O",
+          "offset": "0x16"
+        },
+        {
+          "type": "file",
+          "path": "SM09_S.O",
+          "offset": "0x17"
+        },
+        {
+          "type": "file",
+          "path": "SM10_S.O",
+          "offset": "0x18"
+        },
+        {
+          "type": "file",
+          "path": "SM11_S.O",
+          "offset": "0x19"
+        },
+        {
+          "type": "file",
+          "path": "SM12_S.O",
+          "offset": "0x1A"
+        },
+        {
+          "type": "file",
+          "path": "SM13_S.O",
+          "offset": "0x1B"
+        },
+        {
+          "type": "file",
+          "path": "SM14_S.O",
+          "offset": "0x1C"
+        },
+        {
+          "type": "file",
+          "path": "SM15_S.O",
+          "offset": "0x1D"
+        },
+        {
+          "type": "file",
+          "path": "SM16_S.O",
+          "offset": "0x1E"
+        },
+        {
+          "type": "file",
+          "path": "SM17_S.O",
+          "offset": "0x1F"
+        },
+        {
+          "type": "file",
+          "path": "SM18_S.O",
+          "offset": "0x20"
+        },
+        {
+          "type": "file",
+          "path": "SM19_S.O",
+          "offset": "0x21"
+        },
+        {
+          "type": "file",
+          "path": "SM20_S.O",
+          "offset": "0x22"
+        },
+        {
+          "type": "file",
+          "path": "SM21_S.O",
+          "offset": "0x23"
+        },
+        {
+          "type": "file",
+          "path": "SED_S.O",
+          "offset": "0x24"
+        },
+        {
+          "type": "file",
+          "path": "SSE03.O",
+          "offset": "0x25"
+        },
+        {
+          "type": "file",
+          "path": "SSE04.O",
+          "offset": "0x26"
+        },
+        {
+          "type": "file",
+          "path": "SSE06.O",
+          "offset": "0x27"
+        },
+        {
+          "type": "shell",
+          "path": "NAX",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "NLP_HOOT",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "SEI_S.O   : OPENING ﾃｰﾏ"
+        },
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "SM03_S.O  : アクション1"
+        },
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "SM04_S.O  : アクション2"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "SM05_S.O  : アクション3"
+        },
+        {
+          "kind": "title",
+          "code": "0x14",
+          "title": "SM06_S.O  : サスペンス1"
+        },
+        {
+          "kind": "title",
+          "code": "0x15",
+          "title": "SM07_S.O  : サスペンス2"
+        },
+        {
+          "kind": "title",
+          "code": "0x16",
+          "title": "SM08_S.O  : 喫茶サファリ 店内1"
+        },
+        {
+          "kind": "title",
+          "code": "0x17",
+          "title": "SM09_S.O  : 喫茶サファリ 店内2"
+        },
+        {
+          "kind": "title",
+          "code": "0x18",
+          "title": "SM10_S.O  : コミカル1"
+        },
+        {
+          "kind": "title",
+          "code": "0x19",
+          "title": "SM11_S.O  : コミカル2"
+        },
+        {
+          "kind": "title",
+          "code": "0x1A",
+          "title": "SM12_S.O  : 変身"
+        },
+        {
+          "kind": "title",
+          "code": "0x1B",
+          "title": "SM13_S.O  : アイキャッチ1"
+        },
+        {
+          "kind": "title",
+          "code": "0x1C",
+          "title": "SM14_S.O  : アイキャッチ2"
+        },
+        {
+          "kind": "title",
+          "code": "0x1D",
+          "title": "SM15_S.O  : オープニングアレンジ1"
+        },
+        {
+          "kind": "title",
+          "code": "0x1E",
+          "title": "SM16_S.O  : オープニングアレンジ2"
+        },
+        {
+          "kind": "title",
+          "code": "0x1F",
+          "title": "SM17_S.O  : Hシーン1"
+        },
+        {
+          "kind": "title",
+          "code": "0x20",
+          "title": "SM18_S.O  : Hシーン2"
+        },
+        {
+          "kind": "title",
+          "code": "0x21",
+          "title": "SM19_S.O  : 異次元シーン1"
+        },
+        {
+          "kind": "title",
+          "code": "0x22",
+          "title": "SM20_S.O  : 異次元シーン2"
+        },
+        {
+          "kind": "title",
+          "code": "0x23",
+          "title": "SM21_S.O  : 必殺技を決める"
+        },
+        {
+          "kind": "title",
+          "code": "0x24",
+          "title": "SED_S.O   : ENDING ﾃｰﾏ"
+        },
+        {
+          "kind": "title",
+          "code": "0x25",
+          "title": "SSE03.O   : レーザーガン"
+        },
+        {
+          "kind": "title",
+          "code": "0x26",
+          "title": "SSE04.O   : 異次元の電光"
+        },
+        {
+          "kind": "title",
+          "code": "0x27",
+          "title": "SSE06.O   : ヒロイン基地内部"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/ucom.xml",
+      "source_order": 4818,
+      "archive": "cross_ch_98",
+      "id": "cross-ch-98-opna"
+    },
+    {
+      "title": "[PC-9801] 人生クイズゲームだ",
+      "driver": {
+        "name": "pc98dos",
+        "type": "opn",
+        "alias": "Ucom",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "clockmul",
+          "value": "8"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "NA.com",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "NLP_HOOT.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "TONES.DTA",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MQ_01.O",
+          "offset": "0x10"
+        },
+        {
+          "type": "file",
+          "path": "MQ_02.O",
+          "offset": "0x11"
+        },
+        {
+          "type": "file",
+          "path": "MQ_03.O",
+          "offset": "0x12"
+        },
+        {
+          "type": "file",
+          "path": "MQ_04.O",
+          "offset": "0x13"
+        },
+        {
+          "type": "file",
+          "path": "MQ_05.O",
+          "offset": "0x14"
+        },
+        {
+          "type": "file",
+          "path": "MQ_06.O",
+          "offset": "0x15"
+        },
+        {
+          "type": "file",
+          "path": "MQ_07.O",
+          "offset": "0x16"
+        },
+        {
+          "type": "file",
+          "path": "MQ_08.O",
+          "offset": "0x17"
+        },
+        {
+          "type": "file",
+          "path": "MQ_09.O",
+          "offset": "0x18"
+        },
+        {
+          "type": "file",
+          "path": "MQ_10.O",
+          "offset": "0x19"
+        },
+        {
+          "type": "file",
+          "path": "MQ_11.O",
+          "offset": "0x1A"
+        },
+        {
+          "type": "file",
+          "path": "MQ_12.O",
+          "offset": "0x1B"
+        },
+        {
+          "type": "file",
+          "path": "MQ_B1.O",
+          "offset": "0x1C"
+        },
+        {
+          "type": "file",
+          "path": "MQ_B2.O",
+          "offset": "0x1D"
+        },
+        {
+          "type": "file",
+          "path": "MQ_B3.O",
+          "offset": "0x1E"
+        },
+        {
+          "type": "file",
+          "path": "MQ_B4.O",
+          "offset": "0x1F"
+        },
+        {
+          "type": "file",
+          "path": "MQ_B5.O",
+          "offset": "0x20"
+        },
+        {
+          "type": "file",
+          "path": "MQ_B6.O",
+          "offset": "0x21"
+        },
+        {
+          "type": "file",
+          "path": "MQ_S1.O",
+          "offset": "0x22"
+        },
+        {
+          "type": "file",
+          "path": "MQ_S2.O",
+          "offset": "0x23"
+        },
+        {
+          "type": "file",
+          "path": "MQ_S4.O",
+          "offset": "0x24"
+        },
+        {
+          "type": "shell",
+          "path": "NA -Z1",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "NLP_HOOT",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "MQ_01.O : オープニング"
+        },
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "MQ_02.O :"
+        },
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "MQ_03.O : メイヤのテ－マ"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "MQ_04.O : ヴァンプのテ－マ"
+        },
+        {
+          "kind": "title",
+          "code": "0x14",
+          "title": "MQ_05.O : レディのテーマ"
+        },
+        {
+          "kind": "title",
+          "code": "0x15",
+          "title": "MQ_06.O : キャラのテーマ"
+        },
+        {
+          "kind": "title",
+          "code": "0x16",
+          "title": "MQ_07.O : ルファのテーマ"
+        },
+        {
+          "kind": "title",
+          "code": "0x17",
+          "title": "MQ_08.O : お店のテーマ"
+        },
+        {
+          "kind": "title",
+          "code": "0x18",
+          "title": "MQ_09.O : ゲームオーバー"
+        },
+        {
+          "kind": "title",
+          "code": "0x19",
+          "title": "MQ_10.O :"
+        },
+        {
+          "kind": "title",
+          "code": "0x1A",
+          "title": "MQ_11.O :"
+        },
+        {
+          "kind": "title",
+          "code": "0x1B",
+          "title": "MQ_12.O : エンディング"
+        },
+        {
+          "kind": "title",
+          "code": "0x1C",
+          "title": "MQ_B1.O :"
+        },
+        {
+          "kind": "title",
+          "code": "0x1D",
+          "title": "MQ_B2.O :"
+        },
+        {
+          "kind": "title",
+          "code": "0x1E",
+          "title": "MQ_B3.O :"
+        },
+        {
+          "kind": "title",
+          "code": "0x1F",
+          "title": "MQ_B4.O :"
+        },
+        {
+          "kind": "title",
+          "code": "0x20",
+          "title": "MQ_B5.O :"
+        },
+        {
+          "kind": "title",
+          "code": "0x21",
+          "title": "MQ_B6.O :"
+        },
+        {
+          "kind": "title",
+          "code": "0x22",
+          "title": "MQ_S1.O : 正解音"
+        },
+        {
+          "kind": "title",
+          "code": "0x23",
+          "title": "MQ_S2.O : 不正解音"
+        },
+        {
+          "kind": "title",
+          "code": "0x24",
+          "title": "MQ_S4.O : 雷の音"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/ucom.xml",
+      "source_order": 4819,
+      "archive": "jin_quiz_98",
+      "id": "jin-quiz-98-opn"
+    },
+    {
+      "title": "[PC-9801] 爆裂クイズ 戦え! マイティルナ",
+      "driver": {
+        "name": "pc98dos",
+        "type": "opn",
+        "alias": "Ucom",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "clockmul",
+          "value": "8"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "NAX.com",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "NLP_HOOT.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "TONES.DTA",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MR01.O",
+          "offset": "0x10"
+        },
+        {
+          "type": "file",
+          "path": "MR02.O",
+          "offset": "0x11"
+        },
+        {
+          "type": "file",
+          "path": "MR03.O",
+          "offset": "0x12"
+        },
+        {
+          "type": "file",
+          "path": "MR04.O",
+          "offset": "0x13"
+        },
+        {
+          "type": "file",
+          "path": "MR05.O",
+          "offset": "0x14"
+        },
+        {
+          "type": "file",
+          "path": "MR06.O",
+          "offset": "0x15"
+        },
+        {
+          "type": "file",
+          "path": "MR07.O",
+          "offset": "0x16"
+        },
+        {
+          "type": "file",
+          "path": "MR08.O",
+          "offset": "0x17"
+        },
+        {
+          "type": "file",
+          "path": "MR09.O",
+          "offset": "0x18"
+        },
+        {
+          "type": "file",
+          "path": "MR10.O",
+          "offset": "0x19"
+        },
+        {
+          "type": "file",
+          "path": "MR11.O",
+          "offset": "0x1A"
+        },
+        {
+          "type": "file",
+          "path": "MR12.O",
+          "offset": "0x1B"
+        },
+        {
+          "type": "file",
+          "path": "MR15.O",
+          "offset": "0x1C"
+        },
+        {
+          "type": "file",
+          "path": "MR16.O",
+          "offset": "0x1D"
+        },
+        {
+          "type": "file",
+          "path": "MR17.O",
+          "offset": "0x1E"
+        },
+        {
+          "type": "file",
+          "path": "MSE01.O",
+          "offset": "0x1F"
+        },
+        {
+          "type": "file",
+          "path": "MSE02.O",
+          "offset": "0x20"
+        },
+        {
+          "type": "file",
+          "path": "MSE03.O",
+          "offset": "0x21"
+        },
+        {
+          "type": "file",
+          "path": "MSE04A.O",
+          "offset": "0x22"
+        },
+        {
+          "type": "file",
+          "path": "MSE04B.O",
+          "offset": "0x23"
+        },
+        {
+          "type": "file",
+          "path": "MSE06.O",
+          "offset": "0x24"
+        },
+        {
+          "type": "file",
+          "path": "MSE09.O",
+          "offset": "0x25"
+        },
+        {
+          "type": "shell",
+          "path": "NAX",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "NLP_HOOT",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "MR01.O   : 雰囲気"
+        },
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "MR02.O   : OPテーマ アイドル"
+        },
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "MR03.O   : るんるん☆"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "MR04.O   : 戦いのテーマ"
+        },
+        {
+          "kind": "title",
+          "code": "0x14",
+          "title": "MR05.O   : 最後の戦い"
+        },
+        {
+          "kind": "title",
+          "code": "0x15",
+          "title": "MR06.O   : ラウンドクリア"
+        },
+        {
+          "kind": "title",
+          "code": "0x16",
+          "title": "MR07.O   : ハーレムノクターン"
+        },
+        {
+          "kind": "title",
+          "code": "0x17",
+          "title": "MR08.O   : へんしーーん"
+        },
+        {
+          "kind": "title",
+          "code": "0x18",
+          "title": "MR09.O   : 暗黒指令の口惜しみ"
+        },
+        {
+          "kind": "title",
+          "code": "0x19",
+          "title": "MR10.O   : ザ・スカウト"
+        },
+        {
+          "kind": "title",
+          "code": "0x1A",
+          "title": "MR11.O   : Oこ決定"
+        },
+        {
+          "kind": "title",
+          "code": "0x1B",
+          "title": "MR12.O   : 鳥人"
+        },
+        {
+          "kind": "title",
+          "code": "0x1C",
+          "title": "MR15.O   : 海より深い・母の愛"
+        },
+        {
+          "kind": "title",
+          "code": "0x1D",
+          "title": "MR16.O   : エクスプロージョン"
+        },
+        {
+          "kind": "title",
+          "code": "0x1E",
+          "title": "MR17.O   : EDテーマ"
+        },
+        {
+          "kind": "title",
+          "code": "0x1F",
+          "title": "MSE01.O  : 管制塔"
+        },
+        {
+          "kind": "title",
+          "code": "0x20",
+          "title": "MSE02.O  : 爆発"
+        },
+        {
+          "kind": "title",
+          "code": "0x21",
+          "title": "MSE03.O  : びんた"
+        },
+        {
+          "kind": "title",
+          "code": "0x22",
+          "title": "MSE04A.O : 目覚まし タイプA"
+        },
+        {
+          "kind": "title",
+          "code": "0x23",
+          "title": "MSE04B.O : 目覚まし タイプB"
+        },
+        {
+          "kind": "title",
+          "code": "0x24",
+          "title": "MSE06.O  : 銃"
+        },
+        {
+          "kind": "title",
+          "code": "0x25",
+          "title": "MSE09.O  : ジャンピングチャンス"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/ucom.xml",
+      "source_order": 4820,
+      "archive": "mighty_l_98",
+      "id": "mighty-l-98-opn"
+    },
+    {
+      "title": "[PC-9801] 文化祭(OPN)",
+      "driver": {
+        "name": "pc98dos",
+        "type": "opn",
+        "alias": "Ucom",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "clockmul",
+          "value": "8"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "bunka_98.com",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "AD.EXE",
+          "offset": "-1"
+        },
+        {
+          "type": "conin",
+          "path": "AD.EXE",
+          "offset": "5"
+        },
+        {
+          "type": "file",
+          "path": "BM01.CMD",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "BM02.CMD",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "BM03.CMD",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "BM04.CMD",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "BM05.CMD",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "BM06.CMD",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "BM07.CMD",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "BM08.CMD",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "BM09.CMD",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "PIRON.CMD",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "SE01.CMD",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "SE02.CMD",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "SE03.CMD",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "SE05.CMD",
+          "offset": "-1"
+        },
+        {
+          "type": "shell",
+          "path": "bunka_98",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "BM01.CMD :"
+        },
+        {
+          "kind": "title",
+          "code": "0x02",
+          "title": "BM02.CMD :"
+        },
+        {
+          "kind": "title",
+          "code": "0x03",
+          "title": "BM03.CMD :"
+        },
+        {
+          "kind": "title",
+          "code": "0x04",
+          "title": "BM04.CMD :"
+        },
+        {
+          "kind": "title",
+          "code": "0x05",
+          "title": "BM05.CMD :"
+        },
+        {
+          "kind": "title",
+          "code": "0x06",
+          "title": "BM06.CMD :"
+        },
+        {
+          "kind": "title",
+          "code": "0x07",
+          "title": "BM07.CMD :"
+        },
+        {
+          "kind": "title",
+          "code": "0x08",
+          "title": "BM08.CMD :"
+        },
+        {
+          "kind": "title",
+          "code": "0x09",
+          "title": "BM09.CMD :"
+        },
+        {
+          "kind": "title",
+          "code": "0x0b",
+          "title": "SE01.CMD :"
+        },
+        {
+          "kind": "title",
+          "code": "0x0c",
+          "title": "SE02.CMD :"
+        },
+        {
+          "kind": "title",
+          "code": "0x0d",
+          "title": "SE03.CMD :"
+        },
+        {
+          "kind": "title",
+          "code": "0x0f",
+          "title": "SE05.CMD :"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/ucom.xml",
+      "source_order": 4821,
+      "archive": "bunka_98",
+      "id": "bunka-98-opn"
+    },
+    {
+      "title": "[PC-9801] 文化祭(OPNA)",
+      "driver": {
+        "name": "pc98dos",
+        "type": "opna",
+        "alias": "Ucom",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "clockmul",
+          "value": "8"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "bunka_98.com",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "AD.EXE",
+          "offset": "-1"
+        },
+        {
+          "type": "conin",
+          "path": "AD.EXE",
+          "offset": "5"
+        },
+        {
+          "type": "file",
+          "path": "BM01.CMD",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "BM02.CMD",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "BM03.CMD",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "BM04.CMD",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "BM05.CMD",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "BM06.CMD",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "BM07.CMD",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "BM08.CMD",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "BM09.CMD",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "PIRON.CMD",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "SE01.CMD",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "SE02.CMD",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "SE03.CMD",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "SE05.CMD",
+          "offset": "-1"
+        },
+        {
+          "type": "shell",
+          "path": "bunka_98",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "BM01.CMD :"
+        },
+        {
+          "kind": "title",
+          "code": "0x02",
+          "title": "BM02.CMD :"
+        },
+        {
+          "kind": "title",
+          "code": "0x03",
+          "title": "BM03.CMD :"
+        },
+        {
+          "kind": "title",
+          "code": "0x04",
+          "title": "BM04.CMD :"
+        },
+        {
+          "kind": "title",
+          "code": "0x05",
+          "title": "BM05.CMD :"
+        },
+        {
+          "kind": "title",
+          "code": "0x06",
+          "title": "BM06.CMD :"
+        },
+        {
+          "kind": "title",
+          "code": "0x07",
+          "title": "BM07.CMD :"
+        },
+        {
+          "kind": "title",
+          "code": "0x08",
+          "title": "BM08.CMD :"
+        },
+        {
+          "kind": "title",
+          "code": "0x09",
+          "title": "BM09.CMD :"
+        },
+        {
+          "kind": "title",
+          "code": "0x0b",
+          "title": "SE01.CMD :"
+        },
+        {
+          "kind": "title",
+          "code": "0x0c",
+          "title": "SE02.CMD :"
+        },
+        {
+          "kind": "title",
+          "code": "0x0d",
+          "title": "SE03.CMD :"
+        },
+        {
+          "kind": "title",
+          "code": "0x0f",
+          "title": "SE05.CMD :"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/ucom.xml",
+      "source_order": 4822,
+      "archive": "bunka_98",
+      "id": "bunka-98-opna"
+    },
+    {
+      "title": "[PC-9801] 文化祭(GS)",
+      "driver": {
+        "name": "pc98dos",
+        "type": "beep",
+        "alias": "Ucom",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "clockmul",
+          "value": "8"
+        },
+        {
+          "name": "midiout",
+          "value": "1"
+        },
+        {
+          "name": "midiout_type",
+          "value": "4"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "bunka_98.com",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "AD.EXE",
+          "offset": "-1"
+        },
+        {
+          "type": "conin",
+          "path": "AD.EXE",
+          "offset": "5"
+        },
+        {
+          "type": "file",
+          "path": "BM01.MID",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "BM02.MID",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "BM03.MID",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "BM04.MID",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "BM05.MID",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "BM06.MID",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "BM07.MID",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "BM08.MID",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "BM09.MID",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "SE01.MID",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "SE02.MID",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "SE03.MID",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "SE05.MID",
+          "offset": "-1"
+        },
+        {
+          "type": "shell",
+          "path": "bunka_98",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x101",
+          "title": "BM01.MID :"
+        },
+        {
+          "kind": "title",
+          "code": "0x102",
+          "title": "BM02.MID :"
+        },
+        {
+          "kind": "title",
+          "code": "0x103",
+          "title": "BM03.MID :"
+        },
+        {
+          "kind": "title",
+          "code": "0x104",
+          "title": "BM04.MID :"
+        },
+        {
+          "kind": "title",
+          "code": "0x105",
+          "title": "BM05.MID :"
+        },
+        {
+          "kind": "title",
+          "code": "0x106",
+          "title": "BM06.MID :"
+        },
+        {
+          "kind": "title",
+          "code": "0x107",
+          "title": "BM07.MID :"
+        },
+        {
+          "kind": "title",
+          "code": "0x108",
+          "title": "BM08.MID :"
+        },
+        {
+          "kind": "title",
+          "code": "0x109",
+          "title": "BM09.MID :"
+        },
+        {
+          "kind": "title",
+          "code": "0x10b",
+          "title": "SE01.MID :"
+        },
+        {
+          "kind": "title",
+          "code": "0x10c",
+          "title": "SE02.MID :"
+        },
+        {
+          "kind": "title",
+          "code": "0x10d",
+          "title": "SE03.MID :"
+        },
+        {
+          "kind": "title",
+          "code": "0x10f",
+          "title": "SE05.MID :"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/ucom.xml",
+      "source_order": 4823,
+      "archive": "bunka_98",
+      "id": "bunka-98-beep"
+    },
+    {
+      "title": "[PC-9801] CHERRY MODERATE(OPN)",
+      "driver": {
+        "name": "pc98dos",
+        "type": "opn",
+        "alias": "Ucom",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "clockmul",
+          "value": "8"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "cmode_98.com",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "AD.EXE",
+          "offset": "-1"
+        },
+        {
+          "type": "conin",
+          "path": "AD.EXE",
+          "offset": "5"
+        },
+        {
+          "type": "file",
+          "path": "CM01.CMD",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "CM02.CMD",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "CM03.CMD",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "CM04.CMD",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "CM05.CMD",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "CM06.CMD",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "CM07.CMD",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "CM08.CMD",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "CM09.CMD",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "CM10.CMD",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "CM11.CMD",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "CM12.CMD",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "CM13.CMD",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "CM14.CMD",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "CM15.CMD",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "CM16.CMD",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "CM17.CMD",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "CM18.CMD",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "CM19.CMD",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "CM20.CMD",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "CM21.CMD",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "CM22.CMD",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "CM23.CMD",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "CM24.CMD",
+          "offset": "-1"
+        },
+        {
+          "type": "shell",
+          "path": "cmode_98",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "CM01.CMD :"
+        },
+        {
+          "kind": "title",
+          "code": "0x02",
+          "title": "CM02.CMD :"
+        },
+        {
+          "kind": "title",
+          "code": "0x03",
+          "title": "CM03.CMD :"
+        },
+        {
+          "kind": "title",
+          "code": "0x04",
+          "title": "CM04.CMD :"
+        },
+        {
+          "kind": "title",
+          "code": "0x05",
+          "title": "CM05.CMD :"
+        },
+        {
+          "kind": "title",
+          "code": "0x06",
+          "title": "CM06.CMD :"
+        },
+        {
+          "kind": "title",
+          "code": "0x07",
+          "title": "CM07.CMD :"
+        },
+        {
+          "kind": "title",
+          "code": "0x08",
+          "title": "CM08.CMD :"
+        },
+        {
+          "kind": "title",
+          "code": "0x09",
+          "title": "CM09.CMD :"
+        },
+        {
+          "kind": "title",
+          "code": "0x0a",
+          "title": "CM10.CMD :"
+        },
+        {
+          "kind": "title",
+          "code": "0x0b",
+          "title": "CM11.CMD :"
+        },
+        {
+          "kind": "title",
+          "code": "0x0c",
+          "title": "CM12.CMD :"
+        },
+        {
+          "kind": "title",
+          "code": "0x0d",
+          "title": "CM13.CMD :"
+        },
+        {
+          "kind": "title",
+          "code": "0x0e",
+          "title": "CM14.CMD :"
+        },
+        {
+          "kind": "title",
+          "code": "0x0f",
+          "title": "CM15.CMD :"
+        },
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "CM16.CMD :"
+        },
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "CM17.CMD :"
+        },
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "CM18.CMD :"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "CM19.CMD :"
+        },
+        {
+          "kind": "title",
+          "code": "0x14",
+          "title": "CM20.CMD :"
+        },
+        {
+          "kind": "title",
+          "code": "0x15",
+          "title": "CM21.CMD :"
+        },
+        {
+          "kind": "title",
+          "code": "0x16",
+          "title": "CM22.CMD :"
+        },
+        {
+          "kind": "title",
+          "code": "0x17",
+          "title": "CM23.CMD :"
+        },
+        {
+          "kind": "title",
+          "code": "0x18",
+          "title": "CM24.CMD :"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/ucom.xml",
+      "source_order": 4824,
+      "archive": "cherrym_98",
+      "id": "cherrym-98-opn"
+    },
+    {
+      "title": "[PC-9801] CHERRY MODERATE(86)",
+      "driver": {
+        "name": "pc98dos",
+        "type": "86",
+        "alias": "Ucom",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "clockmul",
+          "value": "8"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "cmode_98.com",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "AD.EXE",
+          "offset": "-1"
+        },
+        {
+          "type": "conin",
+          "path": "AD.EXE",
+          "offset": "5"
+        },
+        {
+          "type": "file",
+          "path": "CM01.CMD",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "CM02.CMD",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "CM03.CMD",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "CM04.CMD",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "CM05.CMD",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "CM06.CMD",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "CM07.CMD",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "CM08.CMD",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "CM09.CMD",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "CM10.CMD",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "CM11.CMD",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "CM12.CMD",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "CM13.CMD",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "CM14.CMD",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "CM15.CMD",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "CM16.CMD",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "CM17.CMD",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "CM18.CMD",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "CM19.CMD",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "CM20.CMD",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "CM21.CMD",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "CM22.CMD",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "CM23.CMD",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "CM24.CMD",
+          "offset": "-1"
+        },
+        {
+          "type": "shell",
+          "path": "cmode_98",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "CM01.CMD :"
+        },
+        {
+          "kind": "title",
+          "code": "0x02",
+          "title": "CM02.CMD :"
+        },
+        {
+          "kind": "title",
+          "code": "0x03",
+          "title": "CM03.CMD :"
+        },
+        {
+          "kind": "title",
+          "code": "0x04",
+          "title": "CM04.CMD :"
+        },
+        {
+          "kind": "title",
+          "code": "0x05",
+          "title": "CM05.CMD :"
+        },
+        {
+          "kind": "title",
+          "code": "0x06",
+          "title": "CM06.CMD :"
+        },
+        {
+          "kind": "title",
+          "code": "0x07",
+          "title": "CM07.CMD :"
+        },
+        {
+          "kind": "title",
+          "code": "0x08",
+          "title": "CM08.CMD :"
+        },
+        {
+          "kind": "title",
+          "code": "0x09",
+          "title": "CM09.CMD :"
+        },
+        {
+          "kind": "title",
+          "code": "0x0a",
+          "title": "CM10.CMD :"
+        },
+        {
+          "kind": "title",
+          "code": "0x0b",
+          "title": "CM11.CMD :"
+        },
+        {
+          "kind": "title",
+          "code": "0x0c",
+          "title": "CM12.CMD :"
+        },
+        {
+          "kind": "title",
+          "code": "0x0d",
+          "title": "CM13.CMD :"
+        },
+        {
+          "kind": "title",
+          "code": "0x0e",
+          "title": "CM14.CMD :"
+        },
+        {
+          "kind": "title",
+          "code": "0x0f",
+          "title": "CM15.CMD :"
+        },
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "CM16.CMD :"
+        },
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "CM17.CMD :"
+        },
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "CM18.CMD :"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "CM19.CMD :"
+        },
+        {
+          "kind": "title",
+          "code": "0x14",
+          "title": "CM20.CMD :"
+        },
+        {
+          "kind": "title",
+          "code": "0x15",
+          "title": "CM21.CMD :"
+        },
+        {
+          "kind": "title",
+          "code": "0x16",
+          "title": "CM22.CMD :"
+        },
+        {
+          "kind": "title",
+          "code": "0x17",
+          "title": "CM23.CMD :"
+        },
+        {
+          "kind": "title",
+          "code": "0x18",
+          "title": "CM24.CMD :"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/ucom.xml",
+      "source_order": 4825,
+      "archive": "cherrym_98",
+      "id": "cherrym-98-86"
+    },
+    {
+      "title": "[PC-9801] CHERRY MODERATE(GS)",
+      "driver": {
+        "name": "pc98dos",
+        "type": "beep",
+        "alias": "Ucom",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "clockmul",
+          "value": "8"
+        },
+        {
+          "name": "midiout",
+          "value": "1"
+        },
+        {
+          "name": "midiout_type",
+          "value": "4"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "cmode_98.com",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "AD.EXE",
+          "offset": "-1"
+        },
+        {
+          "type": "conin",
+          "path": "AD.EXE",
+          "offset": "5"
+        },
+        {
+          "type": "file",
+          "path": "CM01.MID",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "CM02.MID",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "CM03.MID",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "CM04.MID",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "CM05.MID",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "CM06.MID",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "CM07.MID",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "CM08.MID",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "CM09.MID",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "CM10.MID",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "CM11.MID",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "CM12.MID",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "CM13.MID",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "CM14.MID",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "CM15.MID",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "CM16.MID",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "CM17.MID",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "CM18.MID",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "CM19.MID",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "CM20.MID",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "CM21.MID",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "CM22.MID",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "CM23.MID",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "CM24.MID",
+          "offset": "-1"
+        },
+        {
+          "type": "shell",
+          "path": "cmode_98",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x101",
+          "title": "CM01.MID :"
+        },
+        {
+          "kind": "title",
+          "code": "0x102",
+          "title": "CM02.MID :"
+        },
+        {
+          "kind": "title",
+          "code": "0x103",
+          "title": "CM03.MID :"
+        },
+        {
+          "kind": "title",
+          "code": "0x104",
+          "title": "CM04.MID :"
+        },
+        {
+          "kind": "title",
+          "code": "0x105",
+          "title": "CM05.MID :"
+        },
+        {
+          "kind": "title",
+          "code": "0x106",
+          "title": "CM06.MID :"
+        },
+        {
+          "kind": "title",
+          "code": "0x107",
+          "title": "CM07.MID :"
+        },
+        {
+          "kind": "title",
+          "code": "0x108",
+          "title": "CM08.MID :"
+        },
+        {
+          "kind": "title",
+          "code": "0x109",
+          "title": "CM09.MID :"
+        },
+        {
+          "kind": "title",
+          "code": "0x10a",
+          "title": "CM10.MID :"
+        },
+        {
+          "kind": "title",
+          "code": "0x10b",
+          "title": "CM11.MID :"
+        },
+        {
+          "kind": "title",
+          "code": "0x10c",
+          "title": "CM12.MID :"
+        },
+        {
+          "kind": "title",
+          "code": "0x10d",
+          "title": "CM13.MID :"
+        },
+        {
+          "kind": "title",
+          "code": "0x10e",
+          "title": "CM14.MID :"
+        },
+        {
+          "kind": "title",
+          "code": "0x10f",
+          "title": "CM15.MID :"
+        },
+        {
+          "kind": "title",
+          "code": "0x110",
+          "title": "CM16.MID :"
+        },
+        {
+          "kind": "title",
+          "code": "0x111",
+          "title": "CM17.MID :"
+        },
+        {
+          "kind": "title",
+          "code": "0x112",
+          "title": "CM18.MID :"
+        },
+        {
+          "kind": "title",
+          "code": "0x113",
+          "title": "CM19.MID :"
+        },
+        {
+          "kind": "title",
+          "code": "0x114",
+          "title": "CM20.MID :"
+        },
+        {
+          "kind": "title",
+          "code": "0x115",
+          "title": "CM21.MID :"
+        },
+        {
+          "kind": "title",
+          "code": "0x116",
+          "title": "CM22.MID :"
+        },
+        {
+          "kind": "title",
+          "code": "0x117",
+          "title": "CM23.MID :"
+        },
+        {
+          "kind": "title",
+          "code": "0x118",
+          "title": "CM24.MID :"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/ucom.xml",
+      "source_order": 4826,
+      "archive": "cherrym_98",
+      "id": "cherrym-98-beep"
+    },
+    {
+      "title": "[PC-9801] 放課後は別の顔(OPN)",
+      "driver": {
+        "name": "pc98dos",
+        "type": "opn",
+        "alias": "Ucom",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "clockmul",
+          "value": "8"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "houka_98.com",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "HOU.EXE",
+          "offset": "-1"
+        },
+        {
+          "type": "conin",
+          "path": "HOU.EXE",
+          "offset": "5"
+        },
+        {
+          "type": "file",
+          "path": "HA01.CMD",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "HA02.CMD",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "HA03.CMD",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "HA04.CMD",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "HA05.CMD",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "HA06.CMD",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "HA07.CMD",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "HA08.CMD",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "HA09.CMD",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "PIRON.CMD",
+          "offset": "-1"
+        },
+        {
+          "type": "conin",
+          "path": "HA01.CMD",
+          "offset": "11"
+        },
+        {
+          "type": "conin",
+          "path": "HA02.CMD",
+          "offset": "12"
+        },
+        {
+          "type": "conin",
+          "path": "HA03.CMD",
+          "offset": "13"
+        },
+        {
+          "type": "conin",
+          "path": "HA04.CMD",
+          "offset": "14"
+        },
+        {
+          "type": "conin",
+          "path": "HA05.CMD",
+          "offset": "15"
+        },
+        {
+          "type": "conin",
+          "path": "HA06.CMD",
+          "offset": "16"
+        },
+        {
+          "type": "conin",
+          "path": "HA07.CMD",
+          "offset": "17"
+        },
+        {
+          "type": "conin",
+          "path": "HA08.CMD",
+          "offset": "18"
+        },
+        {
+          "type": "conin",
+          "path": "HA09.CMD",
+          "offset": "19"
+        },
+        {
+          "type": "conin",
+          "path": "PIRON.CMD",
+          "offset": "20"
+        },
+        {
+          "type": "shell",
+          "path": "houka_98",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "11",
+          "title": "HA01.CMD :"
+        },
+        {
+          "kind": "title",
+          "code": "12",
+          "title": "HA02.CMD :"
+        },
+        {
+          "kind": "title",
+          "code": "13",
+          "title": "HA03.CMD :"
+        },
+        {
+          "kind": "title",
+          "code": "14",
+          "title": "HA04.CMD :"
+        },
+        {
+          "kind": "title",
+          "code": "15",
+          "title": "HA05.CMD :"
+        },
+        {
+          "kind": "title",
+          "code": "16",
+          "title": "HA06.CMD :"
+        },
+        {
+          "kind": "title",
+          "code": "17",
+          "title": "HA07.CMD :"
+        },
+        {
+          "kind": "title",
+          "code": "18",
+          "title": "HA08.CMD :"
+        },
+        {
+          "kind": "title",
+          "code": "19",
+          "title": "HA09.CMD :"
+        },
+        {
+          "kind": "title",
+          "code": "20",
+          "title": "PIRON.CMD :"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/ucom.xml",
+      "source_order": 4827,
+      "archive": "houkago_98",
+      "id": "houkago-98-opn"
+    },
+    {
+      "title": "[PC-9801] 放課後は別の顔(OPNA)",
+      "driver": {
+        "name": "pc98dos",
+        "type": "opna",
+        "alias": "Ucom",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "clockmul",
+          "value": "8"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "houka_98.com",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "HOU.EXE",
+          "offset": "-1"
+        },
+        {
+          "type": "conin",
+          "path": "HOU.EXE",
+          "offset": "5"
+        },
+        {
+          "type": "file",
+          "path": "HA01.CMD",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "HA02.CMD",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "HA03.CMD",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "HA04.CMD",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "HA05.CMD",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "HA06.CMD",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "HA07.CMD",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "HA08.CMD",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "HA09.CMD",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "PIRON.CMD",
+          "offset": "-1"
+        },
+        {
+          "type": "conin",
+          "path": "HA01.CMD",
+          "offset": "11"
+        },
+        {
+          "type": "conin",
+          "path": "HA02.CMD",
+          "offset": "12"
+        },
+        {
+          "type": "conin",
+          "path": "HA03.CMD",
+          "offset": "13"
+        },
+        {
+          "type": "conin",
+          "path": "HA04.CMD",
+          "offset": "14"
+        },
+        {
+          "type": "conin",
+          "path": "HA05.CMD",
+          "offset": "15"
+        },
+        {
+          "type": "conin",
+          "path": "HA06.CMD",
+          "offset": "16"
+        },
+        {
+          "type": "conin",
+          "path": "HA07.CMD",
+          "offset": "17"
+        },
+        {
+          "type": "conin",
+          "path": "HA08.CMD",
+          "offset": "18"
+        },
+        {
+          "type": "conin",
+          "path": "HA09.CMD",
+          "offset": "19"
+        },
+        {
+          "type": "conin",
+          "path": "PIRON.CMD",
+          "offset": "20"
+        },
+        {
+          "type": "shell",
+          "path": "houka_98",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "11",
+          "title": "HA01.CMD :"
+        },
+        {
+          "kind": "title",
+          "code": "12",
+          "title": "HA02.CMD :"
+        },
+        {
+          "kind": "title",
+          "code": "13",
+          "title": "HA03.CMD :"
+        },
+        {
+          "kind": "title",
+          "code": "14",
+          "title": "HA04.CMD :"
+        },
+        {
+          "kind": "title",
+          "code": "15",
+          "title": "HA05.CMD :"
+        },
+        {
+          "kind": "title",
+          "code": "16",
+          "title": "HA06.CMD :"
+        },
+        {
+          "kind": "title",
+          "code": "17",
+          "title": "HA07.CMD :"
+        },
+        {
+          "kind": "title",
+          "code": "18",
+          "title": "HA08.CMD :"
+        },
+        {
+          "kind": "title",
+          "code": "19",
+          "title": "HA09.CMD :"
+        },
+        {
+          "kind": "title",
+          "code": "20",
+          "title": "PIRON.CMD :"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/ucom.xml",
+      "source_order": 4828,
+      "archive": "houkago_98",
+      "id": "houkago-98-opna"
+    },
+    {
+      "title": "[PC-9801] PERFECT BLUE(OPN)",
+      "driver": {
+        "name": "pc98dos",
+        "type": "opn",
+        "alias": "Ucom",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "clockmul",
+          "value": "8"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "pblue_98.com",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "ADVC.EXE",
+          "offset": "-1"
+        },
+        {
+          "type": "conin",
+          "path": "ADVC.EXE",
+          "offset": "5"
+        },
+        {
+          "type": "file",
+          "path": "H1_S.CMD",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "H2_S.CMD",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "H3_S.CMD",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "H4_S.CMD",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "HEYA_S.CMD",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "HIAI_S.CMD",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MISA_S.CMD",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "RANBU_S.CMD",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "RIKA_S.CMD",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "SHU_EN_S.CMD",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "TISATO_S.CMD",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "YAKU1_S.CMD",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "YAKU2_S.CMD",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "YUKA_S.CMD",
+          "offset": "-1"
+        },
+        {
+          "type": "conin",
+          "path": "H1_S.CMD",
+          "offset": "11"
+        },
+        {
+          "type": "conin",
+          "path": "H2_S.CMD",
+          "offset": "12"
+        },
+        {
+          "type": "conin",
+          "path": "H3_S.CMD",
+          "offset": "13"
+        },
+        {
+          "type": "conin",
+          "path": "H4_S.CMD",
+          "offset": "14"
+        },
+        {
+          "type": "conin",
+          "path": "HEYA_S.CMD",
+          "offset": "15"
+        },
+        {
+          "type": "conin",
+          "path": "HIAI_S.CMD",
+          "offset": "16"
+        },
+        {
+          "type": "conin",
+          "path": "MISA_S.CMD",
+          "offset": "17"
+        },
+        {
+          "type": "conin",
+          "path": "RANBU_S.CMD",
+          "offset": "18"
+        },
+        {
+          "type": "conin",
+          "path": "RIKA_S.CMD",
+          "offset": "19"
+        },
+        {
+          "type": "conin",
+          "path": "SHU_EN_S.CMD",
+          "offset": "20"
+        },
+        {
+          "type": "conin",
+          "path": "TISATO_S.CMD",
+          "offset": "21"
+        },
+        {
+          "type": "conin",
+          "path": "YAKU1_S.CMD",
+          "offset": "22"
+        },
+        {
+          "type": "conin",
+          "path": "YAKU2_S.CMD",
+          "offset": "23"
+        },
+        {
+          "type": "conin",
+          "path": "YUKA_S.CMD",
+          "offset": "24"
+        },
+        {
+          "type": "shell",
+          "path": "pblue_98",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "24",
+          "title": "YUKA_S.CMD   : 由香"
+        },
+        {
+          "kind": "title",
+          "code": "21",
+          "title": "TISATO_S.CMD : 千里"
+        },
+        {
+          "kind": "title",
+          "code": "17",
+          "title": "MISA_S.CMD   : 美佐"
+        },
+        {
+          "kind": "title",
+          "code": "19",
+          "title": "RIKA_S.CMD   : 里香"
+        },
+        {
+          "kind": "title",
+          "code": "11",
+          "title": "H1_S.CMD     : 淫猥１"
+        },
+        {
+          "kind": "title",
+          "code": "12",
+          "title": "H2_S.CMD     : 淫猥２"
+        },
+        {
+          "kind": "title",
+          "code": "13",
+          "title": "H3_S.CMD     : 淫猥３"
+        },
+        {
+          "kind": "title",
+          "code": "14",
+          "title": "H4_S.CMD     : 淫猥４"
+        },
+        {
+          "kind": "title",
+          "code": "15",
+          "title": "HEYA_S.CMD   : 部屋"
+        },
+        {
+          "kind": "title",
+          "code": "18",
+          "title": "RANBU_S.CMD  : 乱舞"
+        },
+        {
+          "kind": "title",
+          "code": "22",
+          "title": "YAKU1_S.CMD  : 狂気１"
+        },
+        {
+          "kind": "title",
+          "code": "23",
+          "title": "YAKU2_S.CMD  : 狂気２"
+        },
+        {
+          "kind": "title",
+          "code": "16",
+          "title": "HIAI_S.CMD   : 悲哀"
+        },
+        {
+          "kind": "title",
+          "code": "20",
+          "title": "SHU_EN_S.CMD : 終演"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/ucom.xml",
+      "source_order": 4829,
+      "archive": "pblue_98",
+      "id": "pblue-98-opn"
+    },
+    {
+      "title": "[PC-9801] PERFECT BLUE(OPNA)",
+      "driver": {
+        "name": "pc98dos",
+        "type": "opna",
+        "alias": "Ucom",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "clockmul",
+          "value": "8"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "pblue_98.com",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "ADVC.EXE",
+          "offset": "-1"
+        },
+        {
+          "type": "conin",
+          "path": "ADVC.EXE",
+          "offset": "5"
+        },
+        {
+          "type": "file",
+          "path": "H1_S.CMD",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "H2_S.CMD",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "H3_S.CMD",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "H4_S.CMD",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "HEYA_S.CMD",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "HIAI_S.CMD",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MISA_S.CMD",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "RANBU_S.CMD",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "RIKA_S.CMD",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "SHU_EN_S.CMD",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "TISATO_S.CMD",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "YAKU1_S.CMD",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "YAKU2_S.CMD",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "YUKA_S.CMD",
+          "offset": "-1"
+        },
+        {
+          "type": "conin",
+          "path": "H1_S.CMD",
+          "offset": "11"
+        },
+        {
+          "type": "conin",
+          "path": "H2_S.CMD",
+          "offset": "12"
+        },
+        {
+          "type": "conin",
+          "path": "H3_S.CMD",
+          "offset": "13"
+        },
+        {
+          "type": "conin",
+          "path": "H4_S.CMD",
+          "offset": "14"
+        },
+        {
+          "type": "conin",
+          "path": "HEYA_S.CMD",
+          "offset": "15"
+        },
+        {
+          "type": "conin",
+          "path": "HIAI_S.CMD",
+          "offset": "16"
+        },
+        {
+          "type": "conin",
+          "path": "MISA_S.CMD",
+          "offset": "17"
+        },
+        {
+          "type": "conin",
+          "path": "RANBU_S.CMD",
+          "offset": "18"
+        },
+        {
+          "type": "conin",
+          "path": "RIKA_S.CMD",
+          "offset": "19"
+        },
+        {
+          "type": "conin",
+          "path": "SHU_EN_S.CMD",
+          "offset": "20"
+        },
+        {
+          "type": "conin",
+          "path": "TISATO_S.CMD",
+          "offset": "21"
+        },
+        {
+          "type": "conin",
+          "path": "YAKU1_S.CMD",
+          "offset": "22"
+        },
+        {
+          "type": "conin",
+          "path": "YAKU2_S.CMD",
+          "offset": "23"
+        },
+        {
+          "type": "conin",
+          "path": "YUKA_S.CMD",
+          "offset": "24"
+        },
+        {
+          "type": "shell",
+          "path": "pblue_98",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "24",
+          "title": "YUKA_S.CMD   : 由香"
+        },
+        {
+          "kind": "title",
+          "code": "21",
+          "title": "TISATO_S.CMD : 千里"
+        },
+        {
+          "kind": "title",
+          "code": "17",
+          "title": "MISA_S.CMD   : 美佐"
+        },
+        {
+          "kind": "title",
+          "code": "19",
+          "title": "RIKA_S.CMD   : 里香"
+        },
+        {
+          "kind": "title",
+          "code": "11",
+          "title": "H1_S.CMD     : 淫猥１"
+        },
+        {
+          "kind": "title",
+          "code": "12",
+          "title": "H2_S.CMD     : 淫猥２"
+        },
+        {
+          "kind": "title",
+          "code": "13",
+          "title": "H3_S.CMD     : 淫猥３"
+        },
+        {
+          "kind": "title",
+          "code": "14",
+          "title": "H4_S.CMD     : 淫猥４"
+        },
+        {
+          "kind": "title",
+          "code": "15",
+          "title": "HEYA_S.CMD   : 部屋"
+        },
+        {
+          "kind": "title",
+          "code": "18",
+          "title": "RANBU_S.CMD  : 乱舞"
+        },
+        {
+          "kind": "title",
+          "code": "22",
+          "title": "YAKU1_S.CMD  : 狂気１"
+        },
+        {
+          "kind": "title",
+          "code": "23",
+          "title": "YAKU2_S.CMD  : 狂気２"
+        },
+        {
+          "kind": "title",
+          "code": "16",
+          "title": "HIAI_S.CMD   : 悲哀"
+        },
+        {
+          "kind": "title",
+          "code": "20",
+          "title": "SHU_EN_S.CMD : 終演"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/ucom.xml",
+      "source_order": 4830,
+      "archive": "pblue_98",
+      "id": "pblue-98-opna"
+    }
+  ]
+}

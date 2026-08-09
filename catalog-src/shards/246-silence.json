@@ -1,0 +1,6914 @@
+{
+  "format": "hoot-catalog-shard",
+  "version": 1,
+  "source_file": "xml/silence.xml",
+  "date": "2005/09/25",
+  "comments": [
+    " //SILENCE "
+  ],
+  "games": [
+    {
+      "title": "[PC-9801] みにまむがいなろっく",
+      "driver": {
+        "name": "pc98dos",
+        "type": "opn",
+        "alias": "SILENCE",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "funcvect",
+          "value": "0x7e"
+        },
+        {
+          "name": "clockmul",
+          "value": "8"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "PMD_98.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "PMD.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "GASE.EFC",
+          "offset": "0x08"
+        },
+        {
+          "type": "file",
+          "path": "GAI1.M",
+          "offset": "0x10"
+        },
+        {
+          "type": "file",
+          "path": "GAI2.M",
+          "offset": "0x11"
+        },
+        {
+          "type": "file",
+          "path": "GAI3.M",
+          "offset": "0x12"
+        },
+        {
+          "type": "file",
+          "path": "GAI4.M",
+          "offset": "0x13"
+        },
+        {
+          "type": "file",
+          "path": "GAI6.M",
+          "offset": "0x14"
+        },
+        {
+          "type": "file",
+          "path": "GAI8.M",
+          "offset": "0x15"
+        },
+        {
+          "type": "file",
+          "path": "GAN20.M",
+          "offset": "0x16"
+        },
+        {
+          "type": "file",
+          "path": "HEART.M",
+          "offset": "0x17"
+        },
+        {
+          "type": "file",
+          "path": "PI.M",
+          "offset": "0x18"
+        },
+        {
+          "type": "shell",
+          "path": "PMD /k",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "pmd_98",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "GAI1.M   :"
+        },
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "GAI2.M   :"
+        },
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "GAI3.M   :"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "GAI4.M   :"
+        },
+        {
+          "kind": "title",
+          "code": "0x14",
+          "title": "GAI6.M   :"
+        },
+        {
+          "kind": "title",
+          "code": "0x15",
+          "title": "GAI8.M   :"
+        },
+        {
+          "kind": "title",
+          "code": "0x16",
+          "title": "GAN20.M  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x17",
+          "title": "HEART.M  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x18",
+          "title": "PI.M     :"
+        },
+        {
+          "kind": "range",
+          "min": "0x0801",
+          "max": "0x0810",
+          "title_format": "GASE.EFC : %02X",
+          "extcode": "0",
+          "start": "0x01"
+        },
+        {
+          "kind": "range",
+          "min": "0x0880",
+          "max": "0x08bd",
+          "title_format": "GASE.EFC : %02X",
+          "extcode": "0",
+          "start": "0x80"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/silence.xml",
+      "source_order": 4053,
+      "archive": "mgaina_98",
+      "id": "mgaina-98-opn"
+    },
+    {
+      "title": "[PC-9801] エキサイティングみるく 第1話(OPN)",
+      "driver": {
+        "name": "pc98dos",
+        "type": "opn",
+        "alias": "SILENCE",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "clockmul",
+          "value": "8"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "FMX.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "FMXP.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "FAKECALL.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "shell",
+          "path": "FAKECALL",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "FMX",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "FMXP",
+          "offset": "0"
+        },
+        {
+          "type": "file",
+          "path": "MILK.FMX",
+          "offset": "0x10"
+        },
+        {
+          "type": "file",
+          "path": "MILK00.FMX",
+          "offset": "0x11"
+        },
+        {
+          "type": "file",
+          "path": "MILK01.FMX",
+          "offset": "0x12"
+        },
+        {
+          "type": "file",
+          "path": "MILK02.FMX",
+          "offset": "0x13"
+        },
+        {
+          "type": "file",
+          "path": "MILK03.FMX",
+          "offset": "0x14"
+        },
+        {
+          "type": "file",
+          "path": "MILK04.FMX",
+          "offset": "0x15"
+        },
+        {
+          "type": "file",
+          "path": "MILK05.FMX",
+          "offset": "0x16"
+        },
+        {
+          "type": "file",
+          "path": "MILK06.FMX",
+          "offset": "0x17"
+        },
+        {
+          "type": "file",
+          "path": "MILK07.FMX",
+          "offset": "0x18"
+        },
+        {
+          "type": "file",
+          "path": "MILK08.FMX",
+          "offset": "0x19"
+        },
+        {
+          "type": "file",
+          "path": "MILK09.FMX",
+          "offset": "0x1A"
+        },
+        {
+          "type": "file",
+          "path": "MILK10.FMX",
+          "offset": "0x1B"
+        },
+        {
+          "type": "file",
+          "path": "MILK11.FMX",
+          "offset": "0x1C"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "MILK00.FMX"
+        },
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "MILK01.FMX"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "MILK02.FMX"
+        },
+        {
+          "kind": "title",
+          "code": "0x14",
+          "title": "MILK03.FMX"
+        },
+        {
+          "kind": "title",
+          "code": "0x15",
+          "title": "MILK04.FMX"
+        },
+        {
+          "kind": "title",
+          "code": "0x16",
+          "title": "MILK05.FMX"
+        },
+        {
+          "kind": "title",
+          "code": "0x17",
+          "title": "MILK06.FMX"
+        },
+        {
+          "kind": "title",
+          "code": "0x18",
+          "title": "MILK07.FMX"
+        },
+        {
+          "kind": "title",
+          "code": "0x19",
+          "title": "MILK08.FMX"
+        },
+        {
+          "kind": "title",
+          "code": "0x1A",
+          "title": "MILK09.FMX"
+        },
+        {
+          "kind": "title",
+          "code": "0x1B",
+          "title": "MILK10.FMX"
+        },
+        {
+          "kind": "title",
+          "code": "0x1C",
+          "title": "MILK11.FMX"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/silence.xml",
+      "source_order": 4054,
+      "archive": "milk_1_98",
+      "id": "milk-1-98-opn"
+    },
+    {
+      "title": "[PC-9801] エキサイティングみるく 第1話(86)",
+      "driver": {
+        "name": "pc98dos",
+        "type": "86",
+        "alias": "SILENCE",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "clockmul",
+          "value": "8"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "FMX.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "FMXP.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "FAKECALL.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "shell",
+          "path": "FAKECALL",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "FMX",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "FMXP",
+          "offset": "0"
+        },
+        {
+          "type": "file",
+          "path": "MILK.FMX",
+          "offset": "0x10"
+        },
+        {
+          "type": "file",
+          "path": "MILK00.FMX",
+          "offset": "0x11"
+        },
+        {
+          "type": "file",
+          "path": "MILK01.FMX",
+          "offset": "0x12"
+        },
+        {
+          "type": "file",
+          "path": "MILK02.FMX",
+          "offset": "0x13"
+        },
+        {
+          "type": "file",
+          "path": "MILK03.FMX",
+          "offset": "0x14"
+        },
+        {
+          "type": "file",
+          "path": "MILK04.FMX",
+          "offset": "0x15"
+        },
+        {
+          "type": "file",
+          "path": "MILK05.FMX",
+          "offset": "0x16"
+        },
+        {
+          "type": "file",
+          "path": "MILK06.FMX",
+          "offset": "0x17"
+        },
+        {
+          "type": "file",
+          "path": "MILK07.FMX",
+          "offset": "0x18"
+        },
+        {
+          "type": "file",
+          "path": "MILK08.FMX",
+          "offset": "0x19"
+        },
+        {
+          "type": "file",
+          "path": "MILK09.FMX",
+          "offset": "0x1A"
+        },
+        {
+          "type": "file",
+          "path": "MILK10.FMX",
+          "offset": "0x1B"
+        },
+        {
+          "type": "file",
+          "path": "MILK11.FMX",
+          "offset": "0x1C"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "MILK00.FMX"
+        },
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "MILK01.FMX"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "MILK02.FMX"
+        },
+        {
+          "kind": "title",
+          "code": "0x14",
+          "title": "MILK03.FMX"
+        },
+        {
+          "kind": "title",
+          "code": "0x15",
+          "title": "MILK04.FMX"
+        },
+        {
+          "kind": "title",
+          "code": "0x16",
+          "title": "MILK05.FMX"
+        },
+        {
+          "kind": "title",
+          "code": "0x17",
+          "title": "MILK06.FMX"
+        },
+        {
+          "kind": "title",
+          "code": "0x18",
+          "title": "MILK07.FMX"
+        },
+        {
+          "kind": "title",
+          "code": "0x19",
+          "title": "MILK08.FMX"
+        },
+        {
+          "kind": "title",
+          "code": "0x1A",
+          "title": "MILK09.FMX"
+        },
+        {
+          "kind": "title",
+          "code": "0x1B",
+          "title": "MILK10.FMX"
+        },
+        {
+          "kind": "title",
+          "code": "0x1C",
+          "title": "MILK11.FMX"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/silence.xml",
+      "source_order": 4055,
+      "archive": "milk_1_98",
+      "id": "milk-1-98-86"
+    },
+    {
+      "title": "[PC-9801] エキサイティングみるく 第2話(OPN)",
+      "driver": {
+        "name": "pc98dos",
+        "type": "opn",
+        "alias": "SILENCE",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "clockmul",
+          "value": "8"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "FMX.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "FMXP.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "FAKECALL.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "shell",
+          "path": "FAKECALL",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "FMX",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "FMXP",
+          "offset": "0"
+        },
+        {
+          "type": "file",
+          "path": "MILK.FMX",
+          "offset": "0x10"
+        },
+        {
+          "type": "file",
+          "path": "MILK00.FMX",
+          "offset": "0x11"
+        },
+        {
+          "type": "file",
+          "path": "MILK03.FMX",
+          "offset": "0x12"
+        },
+        {
+          "type": "file",
+          "path": "MILK04.FMX",
+          "offset": "0x13"
+        },
+        {
+          "type": "file",
+          "path": "MILK05.FMX",
+          "offset": "0x14"
+        },
+        {
+          "type": "file",
+          "path": "MILK07.FMX",
+          "offset": "0x15"
+        },
+        {
+          "type": "file",
+          "path": "MILK08.FMX",
+          "offset": "0x16"
+        },
+        {
+          "type": "file",
+          "path": "MILK10.FMX",
+          "offset": "0x17"
+        },
+        {
+          "type": "file",
+          "path": "MILK11.FMX",
+          "offset": "0x18"
+        },
+        {
+          "type": "file",
+          "path": "MILK12.FMX",
+          "offset": "0x19"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "MILK00.FMX"
+        },
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "MILK03.FMX"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "MILK04.FMX"
+        },
+        {
+          "kind": "title",
+          "code": "0x14",
+          "title": "MILK05.FMX"
+        },
+        {
+          "kind": "title",
+          "code": "0x15",
+          "title": "MILK07.FMX"
+        },
+        {
+          "kind": "title",
+          "code": "0x16",
+          "title": "MILK08.FMX"
+        },
+        {
+          "kind": "title",
+          "code": "0x17",
+          "title": "MILK10.FMX"
+        },
+        {
+          "kind": "title",
+          "code": "0x18",
+          "title": "MILK11.FMX"
+        },
+        {
+          "kind": "title",
+          "code": "0x19",
+          "title": "MILK12.FMX"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/silence.xml",
+      "source_order": 4056,
+      "archive": "milk_2_98",
+      "id": "milk-2-98-opn"
+    },
+    {
+      "title": "[PC-9801] エキサイティングみるく 第2話(86)",
+      "driver": {
+        "name": "pc98dos",
+        "type": "86",
+        "alias": "SILENCE",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "clockmul",
+          "value": "8"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "FMX.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "FMXP.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "FAKECALL.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "shell",
+          "path": "FAKECALL",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "FMX",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "FMXP",
+          "offset": "0"
+        },
+        {
+          "type": "file",
+          "path": "MILK.FMX",
+          "offset": "0x10"
+        },
+        {
+          "type": "file",
+          "path": "MILK00.FMX",
+          "offset": "0x11"
+        },
+        {
+          "type": "file",
+          "path": "MILK03.FMX",
+          "offset": "0x12"
+        },
+        {
+          "type": "file",
+          "path": "MILK04.FMX",
+          "offset": "0x13"
+        },
+        {
+          "type": "file",
+          "path": "MILK05.FMX",
+          "offset": "0x14"
+        },
+        {
+          "type": "file",
+          "path": "MILK07.FMX",
+          "offset": "0x15"
+        },
+        {
+          "type": "file",
+          "path": "MILK08.FMX",
+          "offset": "0x16"
+        },
+        {
+          "type": "file",
+          "path": "MILK10.FMX",
+          "offset": "0x17"
+        },
+        {
+          "type": "file",
+          "path": "MILK11.FMX",
+          "offset": "0x18"
+        },
+        {
+          "type": "file",
+          "path": "MILK12.FMX",
+          "offset": "0x19"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "MILK00.FMX"
+        },
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "MILK03.FMX"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "MILK04.FMX"
+        },
+        {
+          "kind": "title",
+          "code": "0x14",
+          "title": "MILK05.FMX"
+        },
+        {
+          "kind": "title",
+          "code": "0x15",
+          "title": "MILK07.FMX"
+        },
+        {
+          "kind": "title",
+          "code": "0x16",
+          "title": "MILK08.FMX"
+        },
+        {
+          "kind": "title",
+          "code": "0x17",
+          "title": "MILK10.FMX"
+        },
+        {
+          "kind": "title",
+          "code": "0x18",
+          "title": "MILK11.FMX"
+        },
+        {
+          "kind": "title",
+          "code": "0x19",
+          "title": "MILK12.FMX"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/silence.xml",
+      "source_order": 4057,
+      "archive": "milk_2_98",
+      "id": "milk-2-98-86"
+    },
+    {
+      "title": "[PC-9801] 機甲装神ヴァルカイザー(OPN)",
+      "driver": {
+        "name": "pc98dos",
+        "type": "opn",
+        "alias": "SILENCE",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "funcvect",
+          "value": "0x7e"
+        },
+        {
+          "name": "clockmul",
+          "value": "8"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "PMD_98.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "PMD.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "GASE.EFC",
+          "offset": "0x08"
+        },
+        {
+          "type": "file",
+          "path": "VAL01.M",
+          "offset": "0x10"
+        },
+        {
+          "type": "file",
+          "path": "VAL02.M",
+          "offset": "0x11"
+        },
+        {
+          "type": "file",
+          "path": "VAL03.M",
+          "offset": "0x12"
+        },
+        {
+          "type": "file",
+          "path": "VAL04.M",
+          "offset": "0x13"
+        },
+        {
+          "type": "file",
+          "path": "VAL05.M",
+          "offset": "0x14"
+        },
+        {
+          "type": "file",
+          "path": "VAL06.M",
+          "offset": "0x15"
+        },
+        {
+          "type": "file",
+          "path": "VAL07.M",
+          "offset": "0x16"
+        },
+        {
+          "type": "file",
+          "path": "VAL09.M",
+          "offset": "0x17"
+        },
+        {
+          "type": "file",
+          "path": "VAL10.M",
+          "offset": "0x18"
+        },
+        {
+          "type": "file",
+          "path": "VAL12.M",
+          "offset": "0x19"
+        },
+        {
+          "type": "file",
+          "path": "VAL13.M",
+          "offset": "0x1a"
+        },
+        {
+          "type": "file",
+          "path": "VAL14.M",
+          "offset": "0x1b"
+        },
+        {
+          "type": "file",
+          "path": "VAL15.M",
+          "offset": "0x1c"
+        },
+        {
+          "type": "file",
+          "path": "VAL16.M",
+          "offset": "0x1d"
+        },
+        {
+          "type": "file",
+          "path": "VAL17.M",
+          "offset": "0x1e"
+        },
+        {
+          "type": "file",
+          "path": "VAL18.M",
+          "offset": "0x1f"
+        },
+        {
+          "type": "file",
+          "path": "AME.M",
+          "offset": "0x20"
+        },
+        {
+          "type": "file",
+          "path": "KAMI.M",
+          "offset": "0x21"
+        },
+        {
+          "type": "shell",
+          "path": "pmd /K /DF0",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "pmd_98",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "VAL01.M  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "VAL02.M  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "VAL03.M  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "VAL04.M  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x14",
+          "title": "VAL05.M  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x15",
+          "title": "VAL06.M  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x16",
+          "title": "VAL07.M  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x17",
+          "title": "VAL09.M  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x18",
+          "title": "VAL10.M  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x19",
+          "title": "VAL12.M  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x1a",
+          "title": "VAL13.M  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x1b",
+          "title": "VAL14.M  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x1c",
+          "title": "VAL15.M  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x1d",
+          "title": "VAL16.M  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x1e",
+          "title": "VAL17.M  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x1f",
+          "title": "VAL18.M  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x20",
+          "title": "AME.M    :"
+        },
+        {
+          "kind": "title",
+          "code": "0x21",
+          "title": "KAMI.M   :"
+        },
+        {
+          "kind": "range",
+          "min": "0x0801",
+          "max": "0x0816",
+          "title_format": "GASE.EFC : %2X",
+          "extcode": "0",
+          "start": "0x01"
+        },
+        {
+          "kind": "range",
+          "min": "0x0880",
+          "max": "0x08bd",
+          "title_format": "GASE.EFC : %2X",
+          "extcode": "0",
+          "start": "0x80"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/silence.xml",
+      "source_order": 4058,
+      "archive": "valkzr98",
+      "id": "valkzr98-opn"
+    },
+    {
+      "title": "[PC-9801] 機甲装神ヴァルカイザー(MT-32)",
+      "driver": {
+        "name": "pc98dos",
+        "type": "beep",
+        "alias": "SILENCE",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "clockmul",
+          "value": "4"
+        },
+        {
+          "name": "midiout",
+          "value": "1"
+        },
+        {
+          "name": "midiout_type",
+          "value": "2"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "mmp_hoot.com",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MMD.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "VAL01.MM1",
+          "offset": "0x10"
+        },
+        {
+          "type": "file",
+          "path": "VAL02.MM1",
+          "offset": "0x11"
+        },
+        {
+          "type": "file",
+          "path": "VAL03.MM1",
+          "offset": "0x12"
+        },
+        {
+          "type": "file",
+          "path": "VAL04.MM1",
+          "offset": "0x13"
+        },
+        {
+          "type": "file",
+          "path": "VAL05.MM1",
+          "offset": "0x14"
+        },
+        {
+          "type": "file",
+          "path": "VAL06.MM1",
+          "offset": "0x15"
+        },
+        {
+          "type": "file",
+          "path": "VAL09.MM1",
+          "offset": "0x17"
+        },
+        {
+          "type": "file",
+          "path": "VAL10.MM1",
+          "offset": "0x18"
+        },
+        {
+          "type": "file",
+          "path": "VAL12.MM1",
+          "offset": "0x19"
+        },
+        {
+          "type": "file",
+          "path": "VAL13.MM1",
+          "offset": "0x1a"
+        },
+        {
+          "type": "file",
+          "path": "VAL14.MM1",
+          "offset": "0x1b"
+        },
+        {
+          "type": "file",
+          "path": "VAL15.MM1",
+          "offset": "0x1c"
+        },
+        {
+          "type": "file",
+          "path": "VAL16.MM1",
+          "offset": "0x1d"
+        },
+        {
+          "type": "file",
+          "path": "VAL17.MM1",
+          "offset": "0x1e"
+        },
+        {
+          "type": "file",
+          "path": "AME.MM1",
+          "offset": "0x20"
+        },
+        {
+          "type": "file",
+          "path": "KAMI.MM1",
+          "offset": "0x21"
+        },
+        {
+          "type": "shell",
+          "path": "mmd /k",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "mmp_hoot",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "VAL01.MM1"
+        },
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "VAL02.MM1"
+        },
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "VAL03.MM1"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "VAL04.MM1"
+        },
+        {
+          "kind": "title",
+          "code": "0x14",
+          "title": "VAL05.MM1"
+        },
+        {
+          "kind": "title",
+          "code": "0x15",
+          "title": "VAL06.MM1"
+        },
+        {
+          "kind": "title",
+          "code": "0x17",
+          "title": "VAL09.MM1"
+        },
+        {
+          "kind": "title",
+          "code": "0x18",
+          "title": "VAL10.MM1"
+        },
+        {
+          "kind": "title",
+          "code": "0x19",
+          "title": "VAL12.MM1"
+        },
+        {
+          "kind": "title",
+          "code": "0x1a",
+          "title": "VAL13.MM1"
+        },
+        {
+          "kind": "title",
+          "code": "0x1b",
+          "title": "VAL14.MM1"
+        },
+        {
+          "kind": "title",
+          "code": "0x1c",
+          "title": "VAL15.MM1"
+        },
+        {
+          "kind": "title",
+          "code": "0x1d",
+          "title": "VAL16.MM1"
+        },
+        {
+          "kind": "title",
+          "code": "0x1e",
+          "title": "VAL17.MM1"
+        },
+        {
+          "kind": "title",
+          "code": "0x20",
+          "title": "AME.MM1"
+        },
+        {
+          "kind": "title",
+          "code": "0x21",
+          "title": "KAMI.MM1"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/silence.xml",
+      "source_order": 4059,
+      "archive": "valkzr98",
+      "id": "valkzr98-beep"
+    },
+    {
+      "title": "[PC-9801] 機甲装神ヴァルカイザー(MT-32 Emulation)",
+      "driver": {
+        "name": "pc98dos",
+        "type": "beep",
+        "alias": "SILENCE",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "clockmul",
+          "value": "4"
+        },
+        {
+          "name": "midiout",
+          "value": "1"
+        },
+        {
+          "name": "midiout_type",
+          "value": "1"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "mmp_hoot.com",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MMD.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "VAL01.MM1",
+          "offset": "0x10"
+        },
+        {
+          "type": "file",
+          "path": "VAL02.MM1",
+          "offset": "0x11"
+        },
+        {
+          "type": "file",
+          "path": "VAL03.MM1",
+          "offset": "0x12"
+        },
+        {
+          "type": "file",
+          "path": "VAL04.MM1",
+          "offset": "0x13"
+        },
+        {
+          "type": "file",
+          "path": "VAL05.MM1",
+          "offset": "0x14"
+        },
+        {
+          "type": "file",
+          "path": "VAL06.MM1",
+          "offset": "0x15"
+        },
+        {
+          "type": "file",
+          "path": "VAL09.MM1",
+          "offset": "0x17"
+        },
+        {
+          "type": "file",
+          "path": "VAL10.MM1",
+          "offset": "0x18"
+        },
+        {
+          "type": "file",
+          "path": "VAL12.MM1",
+          "offset": "0x19"
+        },
+        {
+          "type": "file",
+          "path": "VAL13.MM1",
+          "offset": "0x1a"
+        },
+        {
+          "type": "file",
+          "path": "VAL14.MM1",
+          "offset": "0x1b"
+        },
+        {
+          "type": "file",
+          "path": "VAL15.MM1",
+          "offset": "0x1c"
+        },
+        {
+          "type": "file",
+          "path": "VAL16.MM1",
+          "offset": "0x1d"
+        },
+        {
+          "type": "file",
+          "path": "VAL17.MM1",
+          "offset": "0x1e"
+        },
+        {
+          "type": "file",
+          "path": "AME.MM1",
+          "offset": "0x20"
+        },
+        {
+          "type": "file",
+          "path": "KAMI.MM1",
+          "offset": "0x21"
+        },
+        {
+          "type": "shell",
+          "path": "mmd /k",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "mmp_hoot",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "VAL01.MM1"
+        },
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "VAL02.MM1"
+        },
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "VAL03.MM1"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "VAL04.MM1"
+        },
+        {
+          "kind": "title",
+          "code": "0x14",
+          "title": "VAL05.MM1"
+        },
+        {
+          "kind": "title",
+          "code": "0x15",
+          "title": "VAL06.MM1"
+        },
+        {
+          "kind": "title",
+          "code": "0x17",
+          "title": "VAL09.MM1"
+        },
+        {
+          "kind": "title",
+          "code": "0x18",
+          "title": "VAL10.MM1"
+        },
+        {
+          "kind": "title",
+          "code": "0x19",
+          "title": "VAL12.MM1"
+        },
+        {
+          "kind": "title",
+          "code": "0x1a",
+          "title": "VAL13.MM1"
+        },
+        {
+          "kind": "title",
+          "code": "0x1b",
+          "title": "VAL14.MM1"
+        },
+        {
+          "kind": "title",
+          "code": "0x1c",
+          "title": "VAL15.MM1"
+        },
+        {
+          "kind": "title",
+          "code": "0x1d",
+          "title": "VAL16.MM1"
+        },
+        {
+          "kind": "title",
+          "code": "0x1e",
+          "title": "VAL17.MM1"
+        },
+        {
+          "kind": "title",
+          "code": "0x20",
+          "title": "AME.MM1"
+        },
+        {
+          "kind": "title",
+          "code": "0x21",
+          "title": "KAMI.MM1"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/silence.xml",
+      "source_order": 4060,
+      "archive": "valkzr98",
+      "id": "valkzr98-beep-2"
+    },
+    {
+      "title": "[PC-9801] 機甲装神ヴァルカイザー(GS)",
+      "driver": {
+        "name": "pc98dos",
+        "type": "beep",
+        "alias": "SILENCE",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "clockmul",
+          "value": "4"
+        },
+        {
+          "name": "midiout",
+          "value": "1"
+        },
+        {
+          "name": "midiout_type",
+          "value": "4"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "mmp_hoot.com",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MMD.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "VAL01.MM2",
+          "offset": "0x10"
+        },
+        {
+          "type": "file",
+          "path": "VAL02.MM2",
+          "offset": "0x11"
+        },
+        {
+          "type": "file",
+          "path": "VAL03.MM2",
+          "offset": "0x12"
+        },
+        {
+          "type": "file",
+          "path": "VAL04.MM2",
+          "offset": "0x13"
+        },
+        {
+          "type": "file",
+          "path": "VAL05.MM2",
+          "offset": "0x14"
+        },
+        {
+          "type": "file",
+          "path": "VAL06.MM2",
+          "offset": "0x15"
+        },
+        {
+          "type": "file",
+          "path": "VAL09.MM2",
+          "offset": "0x17"
+        },
+        {
+          "type": "file",
+          "path": "VAL10.MM2",
+          "offset": "0x18"
+        },
+        {
+          "type": "file",
+          "path": "VAL12.MM2",
+          "offset": "0x19"
+        },
+        {
+          "type": "file",
+          "path": "VAL13.MM2",
+          "offset": "0x1a"
+        },
+        {
+          "type": "file",
+          "path": "VAL14.MM2",
+          "offset": "0x1b"
+        },
+        {
+          "type": "file",
+          "path": "VAL15.MM2",
+          "offset": "0x1c"
+        },
+        {
+          "type": "file",
+          "path": "VAL16.MM2",
+          "offset": "0x1d"
+        },
+        {
+          "type": "file",
+          "path": "VAL17.MM2",
+          "offset": "0x1e"
+        },
+        {
+          "type": "file",
+          "path": "AME.MM2",
+          "offset": "0x20"
+        },
+        {
+          "type": "file",
+          "path": "KAMI.MM2",
+          "offset": "0x21"
+        },
+        {
+          "type": "shell",
+          "path": "mmd /k",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "mmp_hoot",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "VAL01.MM2"
+        },
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "VAL02.MM2"
+        },
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "VAL03.MM2"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "VAL04.MM2"
+        },
+        {
+          "kind": "title",
+          "code": "0x14",
+          "title": "VAL05.MM2"
+        },
+        {
+          "kind": "title",
+          "code": "0x15",
+          "title": "VAL06.MM2"
+        },
+        {
+          "kind": "title",
+          "code": "0x17",
+          "title": "VAL09.MM2"
+        },
+        {
+          "kind": "title",
+          "code": "0x18",
+          "title": "VAL10.MM2"
+        },
+        {
+          "kind": "title",
+          "code": "0x19",
+          "title": "VAL12.MM2"
+        },
+        {
+          "kind": "title",
+          "code": "0x1a",
+          "title": "VAL13.MM2"
+        },
+        {
+          "kind": "title",
+          "code": "0x1b",
+          "title": "VAL14.MM2"
+        },
+        {
+          "kind": "title",
+          "code": "0x1c",
+          "title": "VAL15.MM2"
+        },
+        {
+          "kind": "title",
+          "code": "0x1d",
+          "title": "VAL16.MM2"
+        },
+        {
+          "kind": "title",
+          "code": "0x1e",
+          "title": "VAL17.MM2"
+        },
+        {
+          "kind": "title",
+          "code": "0x20",
+          "title": "AME.MM2"
+        },
+        {
+          "kind": "title",
+          "code": "0x21",
+          "title": "KAMI.MM2"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/silence.xml",
+      "source_order": 4061,
+      "archive": "valkzr98",
+      "id": "valkzr98-beep-3"
+    },
+    {
+      "title": "[PC-9801] 銀聖戦神ガイナロック2",
+      "driver": {
+        "name": "pc98dos",
+        "type": "opn",
+        "alias": "SILENCE",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "funcvect",
+          "value": "0x7e"
+        },
+        {
+          "name": "clockmul",
+          "value": "8"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "PMD_98.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "PMD.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "GASE.EFC",
+          "offset": "0x08"
+        },
+        {
+          "type": "file",
+          "path": "GYNA_1.M",
+          "offset": "0x10"
+        },
+        {
+          "type": "file",
+          "path": "GYNA_2.M",
+          "offset": "0x11"
+        },
+        {
+          "type": "file",
+          "path": "GYNA_3.M",
+          "offset": "0x12"
+        },
+        {
+          "type": "file",
+          "path": "GYNA_4.M",
+          "offset": "0x13"
+        },
+        {
+          "type": "file",
+          "path": "GYNA_6.M",
+          "offset": "0x14"
+        },
+        {
+          "type": "file",
+          "path": "GYNA_9.M",
+          "offset": "0x15"
+        },
+        {
+          "type": "file",
+          "path": "GYNA_10.M",
+          "offset": "0x16"
+        },
+        {
+          "type": "file",
+          "path": "GYNA_11.M",
+          "offset": "0x17"
+        },
+        {
+          "type": "file",
+          "path": "GYNA_12.M",
+          "offset": "0x18"
+        },
+        {
+          "type": "file",
+          "path": "GYNA_13.M",
+          "offset": "0x19"
+        },
+        {
+          "type": "file",
+          "path": "GYNA_14.M",
+          "offset": "0x1A"
+        },
+        {
+          "type": "shell",
+          "path": "PMD",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "pmd_98",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "GYNA_1.M  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "GYNA_2.M  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "GYNA_3.M  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "GYNA_4.M  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x14",
+          "title": "GYNA_6.M  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x15",
+          "title": "GYNA_9.M  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x16",
+          "title": "GYNA_10.M :"
+        },
+        {
+          "kind": "title",
+          "code": "0x17",
+          "title": "GYNA_11.M :"
+        },
+        {
+          "kind": "title",
+          "code": "0x18",
+          "title": "GYNA_12.M :"
+        },
+        {
+          "kind": "title",
+          "code": "0x19",
+          "title": "GYNA_13.M :"
+        },
+        {
+          "kind": "title",
+          "code": "0x1A",
+          "title": "GYNA_14.M :"
+        },
+        {
+          "kind": "range",
+          "min": "0x0801",
+          "max": "0x080f",
+          "title_format": "GASE.EFC  : %2X",
+          "extcode": "0",
+          "start": "0x01"
+        },
+        {
+          "kind": "range",
+          "min": "0x0880",
+          "max": "0x08bd",
+          "title_format": "GASE.EFC  : %2X",
+          "extcode": "0",
+          "start": "0x80"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/silence.xml",
+      "source_order": 4062,
+      "archive": "gairock2_98",
+      "id": "gairock2-98-opn"
+    },
+    {
+      "title": "[PC-9801] 宝魔ハンターライム 第01話",
+      "driver": {
+        "name": "pc98dos",
+        "type": "opn",
+        "alias": "SILENCE",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "clockmul",
+          "value": "8"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "FMX.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "FMXP.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "FAKECALL.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "shell",
+          "path": "FAKECALL",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "FMX",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "FMXP",
+          "offset": "0"
+        },
+        {
+          "type": "file",
+          "path": "LIME_01.FMX",
+          "offset": "0x10"
+        },
+        {
+          "type": "file",
+          "path": "LIME_02.FMX",
+          "offset": "0x11"
+        },
+        {
+          "type": "file",
+          "path": "LIME_03.FMX",
+          "offset": "0x12"
+        },
+        {
+          "type": "file",
+          "path": "LIME_04.FMX",
+          "offset": "0x13"
+        },
+        {
+          "type": "file",
+          "path": "LIME_05.FMX",
+          "offset": "0x14"
+        },
+        {
+          "type": "file",
+          "path": "LIME_06.FMX",
+          "offset": "0x15"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "LIME_01.FMX : Jewel Bem Hunter LIME"
+        },
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "LIME_02.FMX : STORM"
+        },
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "LIME_03.FMX : 大切なもの"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "LIME_04.FMX : THETA"
+        },
+        {
+          "kind": "title",
+          "code": "0x14",
+          "title": "LIME_05.FMX : ライム変身"
+        },
+        {
+          "kind": "title",
+          "code": "0x15",
+          "title": "LIME_06.FMX : WAITING SUMMER"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/silence.xml",
+      "source_order": 4063,
+      "archive": "lime_01_98",
+      "id": "lime-01-98-opn"
+    },
+    {
+      "title": "[PC-9801] 宝魔ハンターライム 第02話",
+      "driver": {
+        "name": "pc98dos",
+        "type": "opn",
+        "alias": "SILENCE",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "clockmul",
+          "value": "8"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "FMX.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "FMXP.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "FAKECALL.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "shell",
+          "path": "FAKECALL",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "FMX",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "FMXP",
+          "offset": "0"
+        },
+        {
+          "type": "file",
+          "path": "LIME_01.FMX",
+          "offset": "0x10"
+        },
+        {
+          "type": "file",
+          "path": "LIME_02.FMX",
+          "offset": "0x11"
+        },
+        {
+          "type": "file",
+          "path": "LIME_03.FMX",
+          "offset": "0x12"
+        },
+        {
+          "type": "file",
+          "path": "LIME_04.FMX",
+          "offset": "0x13"
+        },
+        {
+          "type": "file",
+          "path": "LIME_05.FMX",
+          "offset": "0x14"
+        },
+        {
+          "type": "file",
+          "path": "LIME_06.FMX",
+          "offset": "0x15"
+        },
+        {
+          "type": "file",
+          "path": "LIME_07.FMX",
+          "offset": "0x16"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "LIME_01.FMX : Jewel Bem Hunter LIME"
+        },
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "LIME_02.FMX : STORM"
+        },
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "LIME_03.FMX : 大切なもの"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "LIME_04.FMX : THETA"
+        },
+        {
+          "kind": "title",
+          "code": "0x14",
+          "title": "LIME_05.FMX : ライム変身"
+        },
+        {
+          "kind": "title",
+          "code": "0x15",
+          "title": "LIME_06.FMX : WAITING SUMMER"
+        },
+        {
+          "kind": "title",
+          "code": "0x16",
+          "title": "LIME_07.FMX :"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/silence.xml",
+      "source_order": 4064,
+      "archive": "lime_02_98",
+      "id": "lime-02-98-opn"
+    },
+    {
+      "title": "[PC-9801] 宝魔ハンターライム 第03話",
+      "driver": {
+        "name": "pc98dos",
+        "type": "opn",
+        "alias": "SILENCE",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "clockmul",
+          "value": "8"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "FMX.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "FMXP.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "FAKECALL.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "shell",
+          "path": "FAKECALL",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "FMX",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "FMXP",
+          "offset": "0"
+        },
+        {
+          "type": "file",
+          "path": "LIME_01.FMX",
+          "offset": "0x10"
+        },
+        {
+          "type": "file",
+          "path": "LIME_02.FMX",
+          "offset": "0x11"
+        },
+        {
+          "type": "file",
+          "path": "LIME_03.FMX",
+          "offset": "0x12"
+        },
+        {
+          "type": "file",
+          "path": "LIME_04.FMX",
+          "offset": "0x13"
+        },
+        {
+          "type": "file",
+          "path": "LIME_05.FMX",
+          "offset": "0x14"
+        },
+        {
+          "type": "file",
+          "path": "LIME_05B.FMX",
+          "offset": "0x15"
+        },
+        {
+          "type": "file",
+          "path": "LIME_06.FMX",
+          "offset": "0x16"
+        },
+        {
+          "type": "file",
+          "path": "LIME_07.FMX",
+          "offset": "0x17"
+        },
+        {
+          "type": "file",
+          "path": "LIME_08.FMX",
+          "offset": "0x18"
+        },
+        {
+          "type": "file",
+          "path": "LIME_EFC.FMX",
+          "offset": "0x19"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "LIME_01.FMX  : Jewel Bem Hunter LIME"
+        },
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "LIME_02.FMX  : STORM"
+        },
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "LIME_03.FMX  : 大切なもの"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "LIME_04.FMX  : THETA"
+        },
+        {
+          "kind": "title",
+          "code": "0x15",
+          "title": "LIME_05B.FMX : ライム変身"
+        },
+        {
+          "kind": "title",
+          "code": "0x14",
+          "title": "LIME_05.FMX  : ライム変身"
+        },
+        {
+          "kind": "title",
+          "code": "0x16",
+          "title": "LIME_06.FMX  : WAITING SUMMER"
+        },
+        {
+          "kind": "title",
+          "code": "0x17",
+          "title": "LIME_07.FMX  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x18",
+          "title": "LIME_08.FMX  : Fell guilty"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/silence.xml",
+      "source_order": 4065,
+      "archive": "lime_03_98",
+      "id": "lime-03-98-opn"
+    },
+    {
+      "title": "[PC-9801] 宝魔ハンターライム 第04話",
+      "driver": {
+        "name": "pc98dos",
+        "type": "opn",
+        "alias": "SILENCE",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "clockmul",
+          "value": "8"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "FMX.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "FMXP.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "FAKECALL.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "shell",
+          "path": "FAKECALL",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "FMX",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "FMXP",
+          "offset": "0"
+        },
+        {
+          "type": "file",
+          "path": "LIME_01.FMX",
+          "offset": "0x10"
+        },
+        {
+          "type": "file",
+          "path": "LIME_02.FMX",
+          "offset": "0x11"
+        },
+        {
+          "type": "file",
+          "path": "LIME_03.FMX",
+          "offset": "0x12"
+        },
+        {
+          "type": "file",
+          "path": "LIME_04.FMX",
+          "offset": "0x13"
+        },
+        {
+          "type": "file",
+          "path": "LIME_05.FMX",
+          "offset": "0x14"
+        },
+        {
+          "type": "file",
+          "path": "LIME_05B.FMX",
+          "offset": "0x15"
+        },
+        {
+          "type": "file",
+          "path": "LIME_06.FMX",
+          "offset": "0x16"
+        },
+        {
+          "type": "file",
+          "path": "LIME_07.FMX",
+          "offset": "0x17"
+        },
+        {
+          "type": "file",
+          "path": "LIME_08.FMX",
+          "offset": "0x18"
+        },
+        {
+          "type": "file",
+          "path": "LIME_09.FMX",
+          "offset": "0x19"
+        },
+        {
+          "type": "file",
+          "path": "LIME_EFC.FMX",
+          "offset": "0x1A"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "LIME_01.FMX  : Jewel Bem Hunter LIME"
+        },
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "LIME_02.FMX  : STORM"
+        },
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "LIME_03.FMX  : 大切なもの"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "LIME_04.FMX  : THETA"
+        },
+        {
+          "kind": "title",
+          "code": "0x14",
+          "title": "LIME_05.FMX  : ライム変身"
+        },
+        {
+          "kind": "title",
+          "code": "0x15",
+          "title": "LIME_05B.FMX : ライム変身"
+        },
+        {
+          "kind": "title",
+          "code": "0x16",
+          "title": "LIME_06.FMX  : WAITING SUMMER"
+        },
+        {
+          "kind": "title",
+          "code": "0x17",
+          "title": "LIME_07.FMX  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x18",
+          "title": "LIME_08.FMX  : Fell guilty"
+        },
+        {
+          "kind": "title",
+          "code": "0x19",
+          "title": "LIME_09.FMX  : YOU-EN-CHI"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/silence.xml",
+      "source_order": 4066,
+      "archive": "lime_04_98",
+      "id": "lime-04-98-opn"
+    },
+    {
+      "title": "[PC-9801] 宝魔ハンターライム 第05話",
+      "driver": {
+        "name": "pc98dos",
+        "type": "opn",
+        "alias": "SILENCE",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "clockmul",
+          "value": "8"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "FMX.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "FMXP.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "FAKECALL.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "shell",
+          "path": "FAKECALL",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "FMX",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "FMXP",
+          "offset": "0"
+        },
+        {
+          "type": "file",
+          "path": "LIME_01.FMX",
+          "offset": "0x11"
+        },
+        {
+          "type": "file",
+          "path": "LIME_02.FMX",
+          "offset": "0x12"
+        },
+        {
+          "type": "file",
+          "path": "LIME_03.FMX",
+          "offset": "0x13"
+        },
+        {
+          "type": "file",
+          "path": "LIME_04.FMX",
+          "offset": "0x14"
+        },
+        {
+          "type": "file",
+          "path": "LIME_05.FMX",
+          "offset": "0x15"
+        },
+        {
+          "type": "file",
+          "path": "LIME_05B.FMX",
+          "offset": "0x16"
+        },
+        {
+          "type": "file",
+          "path": "LIME_06.FMX",
+          "offset": "0x17"
+        },
+        {
+          "type": "file",
+          "path": "LIME_07.FMX",
+          "offset": "0x18"
+        },
+        {
+          "type": "file",
+          "path": "LIME_08.FMX",
+          "offset": "0x19"
+        },
+        {
+          "type": "file",
+          "path": "LIME_09.FMX",
+          "offset": "0x1A"
+        },
+        {
+          "type": "file",
+          "path": "LIME_10.FMX",
+          "offset": "0x1B"
+        },
+        {
+          "type": "file",
+          "path": "LIME_EFC.FMX",
+          "offset": "0x1C"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "LIME_01.FMX  : Jewel Bem Hunter LIME"
+        },
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "LIME_02.FMX  : STORM"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "LIME_03.FMX  : 大切なもの"
+        },
+        {
+          "kind": "title",
+          "code": "0x14",
+          "title": "LIME_04.FMX  : THETA"
+        },
+        {
+          "kind": "title",
+          "code": "0x16",
+          "title": "LIME_05B.FMX : ライム変身"
+        },
+        {
+          "kind": "title",
+          "code": "0x15",
+          "title": "LIME_05.FMX  : ライム変身"
+        },
+        {
+          "kind": "title",
+          "code": "0x17",
+          "title": "LIME_06.FMX  : WAITING SUMMER"
+        },
+        {
+          "kind": "title",
+          "code": "0x18",
+          "title": "LIME_07.FMX  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x19",
+          "title": "LIME_08.FMX  : Fell guilty"
+        },
+        {
+          "kind": "title",
+          "code": "0x1A",
+          "title": "LIME_09.FMX  : YOU-EN-CHI"
+        },
+        {
+          "kind": "title",
+          "code": "0x1B",
+          "title": "LIME_10.FMX  : No Right Turn"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/silence.xml",
+      "source_order": 4067,
+      "archive": "lime_05_98",
+      "id": "lime-05-98-opn"
+    },
+    {
+      "title": "[PC-9801] 宝魔ハンターライム 第06話",
+      "driver": {
+        "name": "pc98dos",
+        "type": "opn",
+        "alias": "SILENCE",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "clockmul",
+          "value": "8"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "FMX.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "FMXP.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "FAKECALL.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "shell",
+          "path": "FAKECALL",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "FMX",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "FMXP",
+          "offset": "0"
+        },
+        {
+          "type": "file",
+          "path": "LIME_01.FMX",
+          "offset": "0x10"
+        },
+        {
+          "type": "file",
+          "path": "LIME_02.FMX",
+          "offset": "0x11"
+        },
+        {
+          "type": "file",
+          "path": "LIME_03.FMX",
+          "offset": "0x12"
+        },
+        {
+          "type": "file",
+          "path": "LIME_04.FMX",
+          "offset": "0x13"
+        },
+        {
+          "type": "file",
+          "path": "LIME_06.FMX",
+          "offset": "0x14"
+        },
+        {
+          "type": "file",
+          "path": "LIME_08.FMX",
+          "offset": "0x15"
+        },
+        {
+          "type": "file",
+          "path": "LIME_11.FMX",
+          "offset": "0x16"
+        },
+        {
+          "type": "file",
+          "path": "LIME_EFC.FMX",
+          "offset": "0x17"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "LIME_01.FMX : Jewel Bem Hunter LIME"
+        },
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "LIME_02.FMX : STORM"
+        },
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "LIME_03.FMX : 大切なもの"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "LIME_04.FMX : THETA"
+        },
+        {
+          "kind": "title",
+          "code": "0x14",
+          "title": "LIME_06.FMX : WAITING SUMMER"
+        },
+        {
+          "kind": "title",
+          "code": "0x15",
+          "title": "LIME_08.FMX : Fell guilty"
+        },
+        {
+          "kind": "title",
+          "code": "0x16",
+          "title": "LIME_11.FMX : Iconoclast"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/silence.xml",
+      "source_order": 4068,
+      "archive": "lime_06_98",
+      "id": "lime-06-98-opn"
+    },
+    {
+      "title": "[PC-9801] 宝魔ハンターライム 第07話",
+      "driver": {
+        "name": "pc98dos",
+        "type": "opn",
+        "alias": "SILENCE",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "clockmul",
+          "value": "8"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "FMX.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "FMXP.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "FAKECALL.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "shell",
+          "path": "FAKECALL",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "FMX",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "FMXP",
+          "offset": "0"
+        },
+        {
+          "type": "file",
+          "path": "LIME05B.FMX",
+          "offset": "0x10"
+        },
+        {
+          "type": "file",
+          "path": "LIME06.FMX",
+          "offset": "0x11"
+        },
+        {
+          "type": "file",
+          "path": "LIME12B.FMX",
+          "offset": "0x12"
+        },
+        {
+          "type": "file",
+          "path": "LIME13B.FMX",
+          "offset": "0x13"
+        },
+        {
+          "type": "file",
+          "path": "LIME13C.FMX",
+          "offset": "0x14"
+        },
+        {
+          "type": "file",
+          "path": "LIME14B.FMX",
+          "offset": "0x15"
+        },
+        {
+          "type": "file",
+          "path": "LIME15B.FMX",
+          "offset": "0x16"
+        },
+        {
+          "type": "file",
+          "path": "LIME16B.FMX",
+          "offset": "0x17"
+        },
+        {
+          "type": "file",
+          "path": "LIME_EFC.FMX",
+          "offset": "0x18"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "LIME05B.FMX : ライム変身"
+        },
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "LIME06.FMX  : WAITING SUMMER"
+        },
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "LIME12B.FMX : GIVE ME A FEELING"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "LIME13B.FMX : 強い南風"
+        },
+        {
+          "kind": "title",
+          "code": "0x14",
+          "title": "LIME13C.FMX : 強い南風(別ver)"
+        },
+        {
+          "kind": "title",
+          "code": "0x15",
+          "title": "LIME14B.FMX : THROUGH THE CROWD"
+        },
+        {
+          "kind": "title",
+          "code": "0x16",
+          "title": "LIME15B.FMX : if"
+        },
+        {
+          "kind": "title",
+          "code": "0x17",
+          "title": "LIME16B.FMX : MIZUKI"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/silence.xml",
+      "source_order": 4069,
+      "archive": "lime_07_98",
+      "id": "lime-07-98-opn"
+    },
+    {
+      "title": "[PC-9801] 宝魔ハンターライム 第08話(BEEP)",
+      "driver": {
+        "name": "pc98dos",
+        "type": "beep",
+        "alias": "SILENCE",
+        "platform": "NEC PC-9801"
+      },
+      "options": [],
+      "assets": [
+        {
+          "type": "file",
+          "path": "FMX.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "FMXPB.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "FAKECALL.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "shell",
+          "path": "FAKECALL",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "FMX",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "FMXPB",
+          "offset": "0"
+        },
+        {
+          "type": "file",
+          "path": "LIME_05.FMB",
+          "offset": "0x10"
+        },
+        {
+          "type": "file",
+          "path": "LIME_05B.FMB",
+          "offset": "0x11"
+        },
+        {
+          "type": "file",
+          "path": "LIME_07.FMB",
+          "offset": "0x12"
+        },
+        {
+          "type": "file",
+          "path": "LIME_09.FMB",
+          "offset": "0x13"
+        },
+        {
+          "type": "file",
+          "path": "LIME_10.FMB",
+          "offset": "0x14"
+        },
+        {
+          "type": "file",
+          "path": "LIME_12.FMB",
+          "offset": "0x15"
+        },
+        {
+          "type": "file",
+          "path": "LIME_13.FMB",
+          "offset": "0x16"
+        },
+        {
+          "type": "file",
+          "path": "LIME_14.FMB",
+          "offset": "0x17"
+        },
+        {
+          "type": "file",
+          "path": "LIME_16.FMB",
+          "offset": "0x18"
+        },
+        {
+          "type": "file",
+          "path": "LIME_17.FMB",
+          "offset": "0x19"
+        },
+        {
+          "type": "file",
+          "path": "LIME_EYE.FMB",
+          "offset": "0x1A"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "LIME_05B.FMB : ライム変身"
+        },
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "LIME_05.FMB  : ライム変身"
+        },
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "LIME_07.FMB  : WAITING SUMMER"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "LIME_09.FMB  : YOU-EN-CHI"
+        },
+        {
+          "kind": "title",
+          "code": "0x14",
+          "title": "LIME_10.FMB  : No Right Turn"
+        },
+        {
+          "kind": "title",
+          "code": "0x15",
+          "title": "LIME_12.FMB  : GIVE ME A FEELING"
+        },
+        {
+          "kind": "title",
+          "code": "0x16",
+          "title": "LIME_13.FMB  : 強い南風"
+        },
+        {
+          "kind": "title",
+          "code": "0x17",
+          "title": "LIME_14.FMB  : THROUGH THE CROWD"
+        },
+        {
+          "kind": "title",
+          "code": "0x18",
+          "title": "LIME_16.FMB  : MIZUKI"
+        },
+        {
+          "kind": "title",
+          "code": "0x19",
+          "title": "LIME_17.FMB  : Magician"
+        },
+        {
+          "kind": "title",
+          "code": "0x1A",
+          "title": "LIME_EYE.FMB :"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/silence.xml",
+      "source_order": 4070,
+      "archive": "lime_08_98",
+      "id": "lime-08-98-beep"
+    },
+    {
+      "title": "[PC-9801] 宝魔ハンターライム 第08話(OPN)",
+      "driver": {
+        "name": "pc98dos",
+        "type": "opn",
+        "alias": "SILENCE",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "clockmul",
+          "value": "8"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "FMX.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "FMXP.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "FAKECALL.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "shell",
+          "path": "FAKECALL",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "FMX",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "FMXP",
+          "offset": "0"
+        },
+        {
+          "type": "file",
+          "path": "LIME_05.FMX",
+          "offset": "0x11"
+        },
+        {
+          "type": "file",
+          "path": "LIME_05B.FMX",
+          "offset": "0x12"
+        },
+        {
+          "type": "file",
+          "path": "LIME_07.FMX",
+          "offset": "0x13"
+        },
+        {
+          "type": "file",
+          "path": "LIME_09.FMX",
+          "offset": "0x14"
+        },
+        {
+          "type": "file",
+          "path": "LIME_10.FMX",
+          "offset": "0x15"
+        },
+        {
+          "type": "file",
+          "path": "LIME_12.FMX",
+          "offset": "0x16"
+        },
+        {
+          "type": "file",
+          "path": "LIME_13.FMX",
+          "offset": "0x17"
+        },
+        {
+          "type": "file",
+          "path": "LIME_14.FMX",
+          "offset": "0x18"
+        },
+        {
+          "type": "file",
+          "path": "LIME_16.FMX",
+          "offset": "0x19"
+        },
+        {
+          "type": "file",
+          "path": "LIME_17.FMX",
+          "offset": "0x1A"
+        },
+        {
+          "type": "file",
+          "path": "LIME_EFC.FMX",
+          "offset": "0x1B"
+        },
+        {
+          "type": "file",
+          "path": "LIME_EYE.FMX",
+          "offset": "0x1C"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "LIME_05B.FMX : ライム変身"
+        },
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "LIME_05.FMX  : ライム変身"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "LIME_07.FMX  : WAITING SUMMER"
+        },
+        {
+          "kind": "title",
+          "code": "0x14",
+          "title": "LIME_09.FMX  : YOU-EN-CHI"
+        },
+        {
+          "kind": "title",
+          "code": "0x15",
+          "title": "LIME_10.FMX  : No Right Turn"
+        },
+        {
+          "kind": "title",
+          "code": "0x16",
+          "title": "LIME_12.FMX  : GIVE ME A FEELING"
+        },
+        {
+          "kind": "title",
+          "code": "0x17",
+          "title": "LIME_13.FMX  : 強い南風"
+        },
+        {
+          "kind": "title",
+          "code": "0x18",
+          "title": "LIME_14.FMX  : THROUGH THE CROWD"
+        },
+        {
+          "kind": "title",
+          "code": "0x19",
+          "title": "LIME_16.FMX  : MIZUKI"
+        },
+        {
+          "kind": "title",
+          "code": "0x1A",
+          "title": "LIME_17.FMX  : Magician"
+        },
+        {
+          "kind": "title",
+          "code": "0x1C",
+          "title": "LIME_EYE.FMX :"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/silence.xml",
+      "source_order": 4071,
+      "archive": "lime_08_98",
+      "id": "lime-08-98-opn"
+    },
+    {
+      "title": "[PC-9801] 宝魔ハンターライム 第09話(BEEP)",
+      "driver": {
+        "name": "pc98dos",
+        "type": "beep",
+        "alias": "SILENCE",
+        "platform": "NEC PC-9801"
+      },
+      "options": [],
+      "assets": [
+        {
+          "type": "file",
+          "path": "FMX.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "FMXPB.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "FAKECALL.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "shell",
+          "path": "FAKECALL",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "FMX",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "FMXPB",
+          "offset": "0"
+        },
+        {
+          "type": "file",
+          "path": "LIME_03.FMB",
+          "offset": "0x10"
+        },
+        {
+          "type": "file",
+          "path": "LIME_04S.FMB",
+          "offset": "0x11"
+        },
+        {
+          "type": "file",
+          "path": "LIME_08.FMB",
+          "offset": "0x12"
+        },
+        {
+          "type": "file",
+          "path": "LIME_11.FMB",
+          "offset": "0x13"
+        },
+        {
+          "type": "file",
+          "path": "LIME_12.FMB",
+          "offset": "0x14"
+        },
+        {
+          "type": "file",
+          "path": "LIME_13.FMB",
+          "offset": "0x15"
+        },
+        {
+          "type": "file",
+          "path": "LIME_15.FMB",
+          "offset": "0x16"
+        },
+        {
+          "type": "file",
+          "path": "LIME_17.FMB",
+          "offset": "0x17"
+        },
+        {
+          "type": "file",
+          "path": "LIME_18.FMB",
+          "offset": "0x18"
+        },
+        {
+          "type": "file",
+          "path": "LIME_19.FMB",
+          "offset": "0x19"
+        },
+        {
+          "type": "file",
+          "path": "LIME_EYE.FMB",
+          "offset": "0x1A"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "LIME_03.FMB  : 大切なもの"
+        },
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "LIME_04S.FMB : THETA"
+        },
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "LIME_08.FMB  : Fell guilty"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "LIME_11.FMB  : Iconoclast"
+        },
+        {
+          "kind": "title",
+          "code": "0x14",
+          "title": "LIME_12.FMB  : GIVE ME A FEELING"
+        },
+        {
+          "kind": "title",
+          "code": "0x15",
+          "title": "LIME_13.FMB  : 強い南風"
+        },
+        {
+          "kind": "title",
+          "code": "0x16",
+          "title": "LIME_15.FMB  : if"
+        },
+        {
+          "kind": "title",
+          "code": "0x17",
+          "title": "LIME_17.FMB  : Magician"
+        },
+        {
+          "kind": "title",
+          "code": "0x18",
+          "title": "LIME_18.FMB  : ココナ変身"
+        },
+        {
+          "kind": "title",
+          "code": "0x19",
+          "title": "LIME_19.FMB  : Sadness"
+        },
+        {
+          "kind": "title",
+          "code": "0x1A",
+          "title": "LIME_EYE.FMB :"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/silence.xml",
+      "source_order": 4072,
+      "archive": "lime_09_98",
+      "id": "lime-09-98-beep"
+    },
+    {
+      "title": "[PC-9801] 宝魔ハンターライム 第09話(OPN)",
+      "driver": {
+        "name": "pc98dos",
+        "type": "opn",
+        "alias": "SILENCE",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "clockmul",
+          "value": "8"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "FMX.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "FMXP.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "FAKECALL.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "shell",
+          "path": "FAKECALL",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "FMX",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "FMXP",
+          "offset": "0"
+        },
+        {
+          "type": "file",
+          "path": "LIME_03.FMX",
+          "offset": "0x10"
+        },
+        {
+          "type": "file",
+          "path": "LIME_04S.FMX",
+          "offset": "0x11"
+        },
+        {
+          "type": "file",
+          "path": "LIME_08.FMX",
+          "offset": "0x12"
+        },
+        {
+          "type": "file",
+          "path": "LIME_11.FMX",
+          "offset": "0x13"
+        },
+        {
+          "type": "file",
+          "path": "LIME_12.FMX",
+          "offset": "0x14"
+        },
+        {
+          "type": "file",
+          "path": "LIME_13.FMX",
+          "offset": "0x15"
+        },
+        {
+          "type": "file",
+          "path": "LIME_15.FMX",
+          "offset": "0x16"
+        },
+        {
+          "type": "file",
+          "path": "LIME_17.FMX",
+          "offset": "0x17"
+        },
+        {
+          "type": "file",
+          "path": "LIME_18.FMX",
+          "offset": "0x18"
+        },
+        {
+          "type": "file",
+          "path": "LIME_19.FMX",
+          "offset": "0x19"
+        },
+        {
+          "type": "file",
+          "path": "LIME_EFC.FMX",
+          "offset": "0x1A"
+        },
+        {
+          "type": "file",
+          "path": "LIME_EYE.FMX",
+          "offset": "0x1B"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "LIME_03.FMX  : 大切なもの"
+        },
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "LIME_04S.FMX : THETA"
+        },
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "LIME_08.FMX  : Fell guilty"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "LIME_11.FMX  : Iconoclast"
+        },
+        {
+          "kind": "title",
+          "code": "0x14",
+          "title": "LIME_12.FMX  : GIVE ME A FEELING"
+        },
+        {
+          "kind": "title",
+          "code": "0x15",
+          "title": "LIME_13.FMX  : 強い南風"
+        },
+        {
+          "kind": "title",
+          "code": "0x16",
+          "title": "LIME_15.FMX  : if"
+        },
+        {
+          "kind": "title",
+          "code": "0x17",
+          "title": "LIME_17.FMX  : Magician"
+        },
+        {
+          "kind": "title",
+          "code": "0x18",
+          "title": "LIME_18.FMX  : ココナ変身"
+        },
+        {
+          "kind": "title",
+          "code": "0x19",
+          "title": "LIME_19.FMX  : Sadness"
+        },
+        {
+          "kind": "title",
+          "code": "0x1B",
+          "title": "LIME_EYE.FMX :"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/silence.xml",
+      "source_order": 4073,
+      "archive": "lime_09_98",
+      "id": "lime-09-98-opn"
+    },
+    {
+      "title": "[PC-9801] 宝魔ハンターライム 第10話(BEEP)",
+      "driver": {
+        "name": "pc98dos",
+        "type": "beep",
+        "alias": "SILENCE",
+        "platform": "NEC PC-9801"
+      },
+      "options": [],
+      "assets": [
+        {
+          "type": "file",
+          "path": "FMX.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "FMXPB.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "FAKECALL.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "shell",
+          "path": "FAKECALL",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "FMX",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "FMXPB",
+          "offset": "0"
+        },
+        {
+          "type": "file",
+          "path": "LIME_12.FMB",
+          "offset": "0x10"
+        },
+        {
+          "type": "file",
+          "path": "LIME_13.FMB",
+          "offset": "0x11"
+        },
+        {
+          "type": "file",
+          "path": "LIME_14.FMB",
+          "offset": "0x12"
+        },
+        {
+          "type": "file",
+          "path": "LIME_15.FMB",
+          "offset": "0x13"
+        },
+        {
+          "type": "file",
+          "path": "LIME_16.FMB",
+          "offset": "0x14"
+        },
+        {
+          "type": "file",
+          "path": "LIME_17.FMB",
+          "offset": "0x15"
+        },
+        {
+          "type": "file",
+          "path": "LIME_20.FMB",
+          "offset": "0x16"
+        },
+        {
+          "type": "file",
+          "path": "LIME_EYE.FMB",
+          "offset": "0x17"
+        },
+        {
+          "type": "file",
+          "path": "TRAIN.FMB",
+          "offset": "0x18"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "LIME_12.FMB  : GIVE ME A FEELING"
+        },
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "LIME_13.FMB  : 強い南風"
+        },
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "LIME_14.FMB  : THROUGH THE CROWD"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "LIME_15.FMB  : if"
+        },
+        {
+          "kind": "title",
+          "code": "0x14",
+          "title": "LIME_16.FMB  : MIZUKI"
+        },
+        {
+          "kind": "title",
+          "code": "0x15",
+          "title": "LIME_17.FMB  : Magician"
+        },
+        {
+          "kind": "title",
+          "code": "0x16",
+          "title": "LIME_20.FMB  : Hot Spring Resort"
+        },
+        {
+          "kind": "title",
+          "code": "0x17",
+          "title": "LIME_EYE.FMB :"
+        },
+        {
+          "kind": "title",
+          "code": "0x18",
+          "title": "TRAIN.FMB    :"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/silence.xml",
+      "source_order": 4074,
+      "archive": "lime_10_98",
+      "id": "lime-10-98-beep"
+    },
+    {
+      "title": "[PC-9801] 宝魔ハンターライム 第10話(OPN)",
+      "driver": {
+        "name": "pc98dos",
+        "type": "opn",
+        "alias": "SILENCE",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "clockmul",
+          "value": "8"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "FMX.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "FMXP.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "FAKECALL.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "shell",
+          "path": "FAKECALL",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "FMX",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "FMXP",
+          "offset": "0"
+        },
+        {
+          "type": "file",
+          "path": "LIME_12.FMX",
+          "offset": "0x10"
+        },
+        {
+          "type": "file",
+          "path": "LIME_13.FMX",
+          "offset": "0x11"
+        },
+        {
+          "type": "file",
+          "path": "LIME_14.FMX",
+          "offset": "0x12"
+        },
+        {
+          "type": "file",
+          "path": "LIME_15.FMX",
+          "offset": "0x13"
+        },
+        {
+          "type": "file",
+          "path": "LIME_16.FMX",
+          "offset": "0x14"
+        },
+        {
+          "type": "file",
+          "path": "LIME_17.FMX",
+          "offset": "0x15"
+        },
+        {
+          "type": "file",
+          "path": "LIME_20.FMX",
+          "offset": "0x16"
+        },
+        {
+          "type": "file",
+          "path": "LIME_EFC.FMX",
+          "offset": "0x17"
+        },
+        {
+          "type": "file",
+          "path": "LIME_EYE.FMX",
+          "offset": "0x18"
+        },
+        {
+          "type": "file",
+          "path": "TRAIN.FMX",
+          "offset": "0x19"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "LIME_12.FMX  : GIVE ME A FEELING"
+        },
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "LIME_13.FMX  : 強い南風"
+        },
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "LIME_14.FMX  : THROUGH THE CROWD"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "LIME_15.FMX  : if"
+        },
+        {
+          "kind": "title",
+          "code": "0x14",
+          "title": "LIME_16.FMX  : MIZUKI"
+        },
+        {
+          "kind": "title",
+          "code": "0x15",
+          "title": "LIME_17.FMX  : Magician"
+        },
+        {
+          "kind": "title",
+          "code": "0x16",
+          "title": "LIME_20.FMX  : Hot Spring Resort"
+        },
+        {
+          "kind": "title",
+          "code": "0x18",
+          "title": "LIME_EYE.FMX :"
+        },
+        {
+          "kind": "title",
+          "code": "0x19",
+          "title": "TRAIN.FMX    :"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/silence.xml",
+      "source_order": 4075,
+      "archive": "lime_10_98",
+      "id": "lime-10-98-opn"
+    },
+    {
+      "title": "[PC-9801] 宝魔ハンターライム 第11話(BEEP)",
+      "driver": {
+        "name": "pc98dos",
+        "type": "beep",
+        "alias": "SILENCE",
+        "platform": "NEC PC-9801"
+      },
+      "options": [],
+      "assets": [
+        {
+          "type": "file",
+          "path": "FMX.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "FMXPB.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "FAKECALL.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "shell",
+          "path": "FAKECALL",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "FMX",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "FMXPB",
+          "offset": "0"
+        },
+        {
+          "type": "file",
+          "path": "LIME_05.FMB",
+          "offset": "0x10"
+        },
+        {
+          "type": "file",
+          "path": "LIME_13.FMB",
+          "offset": "0x11"
+        },
+        {
+          "type": "file",
+          "path": "LIME_14.FMB",
+          "offset": "0x12"
+        },
+        {
+          "type": "file",
+          "path": "LIME_15.FMB",
+          "offset": "0x13"
+        },
+        {
+          "type": "file",
+          "path": "LIME_16.FMB",
+          "offset": "0x14"
+        },
+        {
+          "type": "file",
+          "path": "LIME_17.FMB",
+          "offset": "0x15"
+        },
+        {
+          "type": "file",
+          "path": "LIME_21.FMB",
+          "offset": "0x16"
+        },
+        {
+          "type": "file",
+          "path": "LIME_EYE.FMB",
+          "offset": "0x17"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "LIME_05.FMB  : ライム変身"
+        },
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "LIME_13.FMB  : 強い南風"
+        },
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "LIME_14.FMB  : THROUGH THE CROWD"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "LIME_15.FMB  : if"
+        },
+        {
+          "kind": "title",
+          "code": "0x14",
+          "title": "LIME_16.FMB  : MIZUKI"
+        },
+        {
+          "kind": "title",
+          "code": "0x15",
+          "title": "LIME_17.FMB  : Magician"
+        },
+        {
+          "kind": "title",
+          "code": "0x16",
+          "title": "LIME_21.FMB  : Innocent Smile"
+        },
+        {
+          "kind": "title",
+          "code": "0x17",
+          "title": "LIME_EYE.FMB :"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/silence.xml",
+      "source_order": 4076,
+      "archive": "lime_11_98",
+      "id": "lime-11-98-beep"
+    },
+    {
+      "title": "[PC-9801] 宝魔ハンターライム 第11話(OPN)",
+      "driver": {
+        "name": "pc98dos",
+        "type": "opn",
+        "alias": "SILENCE",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "clockmul",
+          "value": "8"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "FMX.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "FMXP.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "FAKECALL.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "shell",
+          "path": "FAKECALL",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "FMX",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "FMXP",
+          "offset": "0"
+        },
+        {
+          "type": "file",
+          "path": "LIME_05.FMX",
+          "offset": "0x10"
+        },
+        {
+          "type": "file",
+          "path": "LIME_13.FMX",
+          "offset": "0x11"
+        },
+        {
+          "type": "file",
+          "path": "LIME_14.FMX",
+          "offset": "0x12"
+        },
+        {
+          "type": "file",
+          "path": "LIME_15.FMX",
+          "offset": "0x13"
+        },
+        {
+          "type": "file",
+          "path": "LIME_16.FMX",
+          "offset": "0x14"
+        },
+        {
+          "type": "file",
+          "path": "LIME_17.FMX",
+          "offset": "0x15"
+        },
+        {
+          "type": "file",
+          "path": "LIME_21.FMX",
+          "offset": "0x16"
+        },
+        {
+          "type": "file",
+          "path": "LIME_EFC.FMX",
+          "offset": "0x17"
+        },
+        {
+          "type": "file",
+          "path": "LIME_EYE.FMX",
+          "offset": "0x18"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "LIME_05.FMX  : ライム変身"
+        },
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "LIME_13.FMX  : 強い南風"
+        },
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "LIME_14.FMX  : THROUGH THE CROWD"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "LIME_15.FMX  : if"
+        },
+        {
+          "kind": "title",
+          "code": "0x14",
+          "title": "LIME_16.FMX  : MIZUKI"
+        },
+        {
+          "kind": "title",
+          "code": "0x15",
+          "title": "LIME_17.FMX  : Magician"
+        },
+        {
+          "kind": "title",
+          "code": "0x16",
+          "title": "LIME_21.FMX  : Innocent Smile"
+        },
+        {
+          "kind": "title",
+          "code": "0x18",
+          "title": "LIME_EYE.FMX :"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/silence.xml",
+      "source_order": 4077,
+      "archive": "lime_11_98",
+      "id": "lime-11-98-opn"
+    },
+    {
+      "title": "[PC-9801] 宝魔ハンターライム 第12話(BEEP)",
+      "driver": {
+        "name": "pc98dos",
+        "type": "beep",
+        "alias": "SILENCE",
+        "platform": "NEC PC-9801"
+      },
+      "options": [],
+      "assets": [
+        {
+          "type": "file",
+          "path": "FMX.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "FMXPB.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "FAKECALL.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "shell",
+          "path": "FAKECALL",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "FMX",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "FMXPB",
+          "offset": "0"
+        },
+        {
+          "type": "file",
+          "path": "BELL.FMB",
+          "offset": "0x10"
+        },
+        {
+          "type": "file",
+          "path": "LIME_02.FMB",
+          "offset": "0x11"
+        },
+        {
+          "type": "file",
+          "path": "LIME_04.FMB",
+          "offset": "0x12"
+        },
+        {
+          "type": "file",
+          "path": "LIME_11.FMB",
+          "offset": "0x13"
+        },
+        {
+          "type": "file",
+          "path": "LIME_12.FMB",
+          "offset": "0x14"
+        },
+        {
+          "type": "file",
+          "path": "LIME_13.FMB",
+          "offset": "0x15"
+        },
+        {
+          "type": "file",
+          "path": "LIME_14.FMB",
+          "offset": "0x16"
+        },
+        {
+          "type": "file",
+          "path": "LIME_19.FMB",
+          "offset": "0x17"
+        },
+        {
+          "type": "file",
+          "path": "LIME_22.FMB",
+          "offset": "0x18"
+        },
+        {
+          "type": "file",
+          "path": "LIME_23.FMB",
+          "offset": "0x19"
+        },
+        {
+          "type": "file",
+          "path": "LIME_24.FMB",
+          "offset": "0x1A"
+        },
+        {
+          "type": "file",
+          "path": "LIME_EYE.FMB",
+          "offset": "0x1B"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "LIME_02.FMB  : STORM"
+        },
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "LIME_04.FMB  : THETA"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "LIME_11.FMB  : Iconoclast"
+        },
+        {
+          "kind": "title",
+          "code": "0x14",
+          "title": "LIME_12.FMB  : GIVE ME A FEELING"
+        },
+        {
+          "kind": "title",
+          "code": "0x15",
+          "title": "LIME_13.FMB  : 強い南風"
+        },
+        {
+          "kind": "title",
+          "code": "0x16",
+          "title": "LIME_14.FMB  : THROUGH THE CROWD"
+        },
+        {
+          "kind": "title",
+          "code": "0x17",
+          "title": "LIME_19.FMB  : Sadness"
+        },
+        {
+          "kind": "title",
+          "code": "0x18",
+          "title": "LIME_22.FMB  : Vanishing"
+        },
+        {
+          "kind": "title",
+          "code": "0x19",
+          "title": "LIME_23.FMB  : 蒼い光の中で"
+        },
+        {
+          "kind": "title",
+          "code": "0x1A",
+          "title": "LIME_24.FMB  : Speed"
+        },
+        {
+          "kind": "title",
+          "code": "0x1B",
+          "title": "LIME_EYE.FMB :"
+        },
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "BELL.FMB     :"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/silence.xml",
+      "source_order": 4078,
+      "archive": "lime_12_98",
+      "id": "lime-12-98-beep"
+    },
+    {
+      "title": "[PC-9801] 宝魔ハンターライム 第12話(OPN)",
+      "driver": {
+        "name": "pc98dos",
+        "type": "opn",
+        "alias": "SILENCE",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "clockmul",
+          "value": "8"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "FMX.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "FMXP.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "FAKECALL.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "shell",
+          "path": "FAKECALL",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "FMX",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "FMXP",
+          "offset": "0"
+        },
+        {
+          "type": "file",
+          "path": "BELL.FM2",
+          "offset": "0x10"
+        },
+        {
+          "type": "file",
+          "path": "LIME_02.FM2",
+          "offset": "0x11"
+        },
+        {
+          "type": "file",
+          "path": "LIME_04.FM2",
+          "offset": "0x12"
+        },
+        {
+          "type": "file",
+          "path": "LIME_11.FM2",
+          "offset": "0x13"
+        },
+        {
+          "type": "file",
+          "path": "LIME_12.FM2",
+          "offset": "0x14"
+        },
+        {
+          "type": "file",
+          "path": "LIME_13.FM2",
+          "offset": "0x15"
+        },
+        {
+          "type": "file",
+          "path": "LIME_14.FM2",
+          "offset": "0x16"
+        },
+        {
+          "type": "file",
+          "path": "LIME_19.FM2",
+          "offset": "0x17"
+        },
+        {
+          "type": "file",
+          "path": "LIME_22.FM2",
+          "offset": "0x18"
+        },
+        {
+          "type": "file",
+          "path": "LIME_23.FM2",
+          "offset": "0x19"
+        },
+        {
+          "type": "file",
+          "path": "LIME_24.FM2",
+          "offset": "0x1A"
+        },
+        {
+          "type": "file",
+          "path": "LIME_EYE.FM2",
+          "offset": "0x1B"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "LIME_02.FM2  : STORM"
+        },
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "LIME_04.FM2  : THETA"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "LIME_11.FM2  : Iconoclast"
+        },
+        {
+          "kind": "title",
+          "code": "0x14",
+          "title": "LIME_12.FM2  : GIVE ME A FEELING"
+        },
+        {
+          "kind": "title",
+          "code": "0x15",
+          "title": "LIME_13.FM2  : 強い南風"
+        },
+        {
+          "kind": "title",
+          "code": "0x16",
+          "title": "LIME_14.FM2  : THROUGH THE CROWD"
+        },
+        {
+          "kind": "title",
+          "code": "0x17",
+          "title": "LIME_19.FM2  : Sadness"
+        },
+        {
+          "kind": "title",
+          "code": "0x18",
+          "title": "LIME_22.FM2  : Vanishing"
+        },
+        {
+          "kind": "title",
+          "code": "0x19",
+          "title": "LIME_23.FM2  : 蒼い光の中で"
+        },
+        {
+          "kind": "title",
+          "code": "0x1A",
+          "title": "LIME_24.FM2  : Speed"
+        },
+        {
+          "kind": "title",
+          "code": "0x1B",
+          "title": "LIME_EYE.FM2 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "BELL.FM2     :"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/silence.xml",
+      "source_order": 4079,
+      "archive": "lime_12_98",
+      "id": "lime-12-98-opn"
+    },
+    {
+      "title": "[PC-9801] 宝魔ハンターライム 第12話(86)",
+      "driver": {
+        "name": "pc98dos",
+        "type": "86",
+        "alias": "SILENCE",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "clockmul",
+          "value": "8"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "FMX.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "FMXP.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "FAKECALL.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "shell",
+          "path": "FAKECALL",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "FMX",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "FMXP",
+          "offset": "0"
+        },
+        {
+          "type": "file",
+          "path": "BELL.FM2",
+          "offset": "0x10"
+        },
+        {
+          "type": "file",
+          "path": "LIME_02.FM2",
+          "offset": "0x11"
+        },
+        {
+          "type": "file",
+          "path": "LIME_04.FM2",
+          "offset": "0x12"
+        },
+        {
+          "type": "file",
+          "path": "LIME_11.FM2",
+          "offset": "0x13"
+        },
+        {
+          "type": "file",
+          "path": "LIME_12.FM2",
+          "offset": "0x14"
+        },
+        {
+          "type": "file",
+          "path": "LIME_13.FM2",
+          "offset": "0x15"
+        },
+        {
+          "type": "file",
+          "path": "LIME_14.FM2",
+          "offset": "0x16"
+        },
+        {
+          "type": "file",
+          "path": "LIME_19.FM2",
+          "offset": "0x17"
+        },
+        {
+          "type": "file",
+          "path": "LIME_22.FM2",
+          "offset": "0x18"
+        },
+        {
+          "type": "file",
+          "path": "LIME_23.FM2",
+          "offset": "0x19"
+        },
+        {
+          "type": "file",
+          "path": "LIME_24.FM2",
+          "offset": "0x1A"
+        },
+        {
+          "type": "file",
+          "path": "LIME_EYE.FM2",
+          "offset": "0x1B"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "LIME_02.FM2  : STORM"
+        },
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "LIME_04.FM2  : THETA"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "LIME_11.FM2  : Iconoclast"
+        },
+        {
+          "kind": "title",
+          "code": "0x14",
+          "title": "LIME_12.FM2  : GIVE ME A FEELING"
+        },
+        {
+          "kind": "title",
+          "code": "0x15",
+          "title": "LIME_13.FM2  : 強い南風"
+        },
+        {
+          "kind": "title",
+          "code": "0x16",
+          "title": "LIME_14.FM2  : THROUGH THE CROWD"
+        },
+        {
+          "kind": "title",
+          "code": "0x17",
+          "title": "LIME_19.FM2  : Sadness"
+        },
+        {
+          "kind": "title",
+          "code": "0x18",
+          "title": "LIME_22.FM2  : Vanishing"
+        },
+        {
+          "kind": "title",
+          "code": "0x19",
+          "title": "LIME_23.FM2  : 蒼い光の中で"
+        },
+        {
+          "kind": "title",
+          "code": "0x1A",
+          "title": "LIME_24.FM2  : Speed"
+        },
+        {
+          "kind": "title",
+          "code": "0x1B",
+          "title": "LIME_EYE.FM2 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "BELL.FM2     :"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/silence.xml",
+      "source_order": 4080,
+      "archive": "lime_12_98",
+      "id": "lime-12-98-86"
+    },
+    {
+      "title": "[X68000] 宝魔ハンターライム 第01話",
+      "driver": {
+        "name": "x68k",
+        "type": "generic",
+        "alias": "SILENCE",
+        "platform": "SHARP X68000"
+      },
+      "options": [
+        {
+          "name": "mfp",
+          "value": "0x01"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "sgn68snd.bin",
+          "offset": "0x00000"
+        },
+        {
+          "type": "x",
+          "path": "pmd.x",
+          "offset": "0x10000"
+        },
+        {
+          "type": "code",
+          "path": "THOMAS2.FF",
+          "offset": "0x20000"
+        },
+        {
+          "type": "code",
+          "path": "limepcm.p",
+          "offset": "0x22000"
+        },
+        {
+          "type": "code",
+          "path": "LIME01.M",
+          "offset": "0x40000"
+        },
+        {
+          "type": "code",
+          "path": "LIME02.M",
+          "offset": "0x42000"
+        },
+        {
+          "type": "code",
+          "path": "LIME03.M",
+          "offset": "0x44000"
+        },
+        {
+          "type": "code",
+          "path": "LIME04.M",
+          "offset": "0x46000"
+        },
+        {
+          "type": "code",
+          "path": "LIME5A.M",
+          "offset": "0x48000"
+        },
+        {
+          "type": "code",
+          "path": "LIME5B.M",
+          "offset": "0x4a000"
+        },
+        {
+          "type": "code",
+          "path": "LIME07.M",
+          "offset": "0x4c000"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "LIME01.M : Jewel Bem Hunter LIME"
+        },
+        {
+          "kind": "title",
+          "code": "0x02",
+          "title": "LIME02.M : STORM"
+        },
+        {
+          "kind": "title",
+          "code": "0x03",
+          "title": "LIME03.M : 大切なもの"
+        },
+        {
+          "kind": "title",
+          "code": "0x04",
+          "title": "LIME04.M : THETA"
+        },
+        {
+          "kind": "title",
+          "code": "0x05",
+          "title": "LIME5A.M : ライム変身"
+        },
+        {
+          "kind": "title",
+          "code": "0x06",
+          "title": "LIME5B.M : ライム変身"
+        },
+        {
+          "kind": "title",
+          "code": "0x07",
+          "title": "LIME07.M : WAITING SUMMER"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/silence.xml",
+      "source_order": 4081,
+      "archive": "lime_0168snd",
+      "id": "lime-0168snd-generic"
+    },
+    {
+      "title": "[X68000] 宝魔ハンターライム 第02話",
+      "driver": {
+        "name": "x68k",
+        "type": "generic",
+        "alias": "SILENCE",
+        "platform": "SHARP X68000"
+      },
+      "options": [
+        {
+          "name": "mfp",
+          "value": "0x01"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "sgn68snd.bin",
+          "offset": "0x00000"
+        },
+        {
+          "type": "x",
+          "path": "pmd.x",
+          "offset": "0x10000"
+        },
+        {
+          "type": "code",
+          "path": "THOMAS2.FF",
+          "offset": "0x20000"
+        },
+        {
+          "type": "code",
+          "path": "limepcm.p",
+          "offset": "0x22000"
+        },
+        {
+          "type": "code",
+          "path": "LIME01.M",
+          "offset": "0x40000"
+        },
+        {
+          "type": "code",
+          "path": "LIME02.M",
+          "offset": "0x42000"
+        },
+        {
+          "type": "code",
+          "path": "LIME03.M",
+          "offset": "0x44000"
+        },
+        {
+          "type": "code",
+          "path": "LIME04.M",
+          "offset": "0x46000"
+        },
+        {
+          "type": "code",
+          "path": "LIME5A.M",
+          "offset": "0x48000"
+        },
+        {
+          "type": "code",
+          "path": "LIME5B.M",
+          "offset": "0x4a000"
+        },
+        {
+          "type": "code",
+          "path": "LIME07.M",
+          "offset": "0x4c000"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "LIME01.M : Jewel Bem Hunter LIME"
+        },
+        {
+          "kind": "title",
+          "code": "0x02",
+          "title": "LIME02.M : STORM"
+        },
+        {
+          "kind": "title",
+          "code": "0x03",
+          "title": "LIME03.M : 大切なもの"
+        },
+        {
+          "kind": "title",
+          "code": "0x04",
+          "title": "LIME04.M : THETA"
+        },
+        {
+          "kind": "title",
+          "code": "0x05",
+          "title": "LIME5A.M : ライム変身"
+        },
+        {
+          "kind": "title",
+          "code": "0x06",
+          "title": "LIME5B.M : ライム変身"
+        },
+        {
+          "kind": "title",
+          "code": "0x07",
+          "title": "LIME07.M : WAITING SUMMER"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/silence.xml",
+      "source_order": 4082,
+      "archive": "lime_0268snd",
+      "id": "lime-0268snd-generic"
+    },
+    {
+      "title": "[X68000] 宝魔ハンターライム 第03話(OPM)",
+      "driver": {
+        "name": "x68k",
+        "type": "generic",
+        "alias": "SILENCE",
+        "platform": "SHARP X68000"
+      },
+      "options": [
+        {
+          "name": "mfp",
+          "value": "0x01"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "sgn68snd.bin",
+          "offset": "0x00000"
+        },
+        {
+          "type": "x",
+          "path": "pmd.x",
+          "offset": "0x10000"
+        },
+        {
+          "type": "code",
+          "path": "THOMAS2.FF",
+          "offset": "0x20000"
+        },
+        {
+          "type": "code",
+          "path": "limepcm.p",
+          "offset": "0x22000"
+        },
+        {
+          "type": "code",
+          "path": "LIME01.M",
+          "offset": "0x40000"
+        },
+        {
+          "type": "code",
+          "path": "LIME02.M",
+          "offset": "0x42000"
+        },
+        {
+          "type": "code",
+          "path": "LIME03.M",
+          "offset": "0x44000"
+        },
+        {
+          "type": "code",
+          "path": "LIME04.M",
+          "offset": "0x46000"
+        },
+        {
+          "type": "code",
+          "path": "LIME5A.M",
+          "offset": "0x48000"
+        },
+        {
+          "type": "code",
+          "path": "LIME5B.M",
+          "offset": "0x4a000"
+        },
+        {
+          "type": "code",
+          "path": "LIME07.M",
+          "offset": "0x4c000"
+        },
+        {
+          "type": "code",
+          "path": "LIME08.M",
+          "offset": "0x4e000"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "LIME01.M : Jewel Bem Hunter LIME"
+        },
+        {
+          "kind": "title",
+          "code": "0x02",
+          "title": "LIME02.M : STORM"
+        },
+        {
+          "kind": "title",
+          "code": "0x03",
+          "title": "LIME03.M : 大切なもの"
+        },
+        {
+          "kind": "title",
+          "code": "0x04",
+          "title": "LIME04.M : THETA"
+        },
+        {
+          "kind": "title",
+          "code": "0x05",
+          "title": "LIME5A.M : ライム変身"
+        },
+        {
+          "kind": "title",
+          "code": "0x06",
+          "title": "LIME5B.M : ライム変身"
+        },
+        {
+          "kind": "title",
+          "code": "0x07",
+          "title": "LIME07.M : WAITING SUMMER"
+        },
+        {
+          "kind": "title",
+          "code": "0x08",
+          "title": "LIME08.M : Fell guilty"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/silence.xml",
+      "source_order": 4083,
+      "archive": "lime_0368snd",
+      "id": "lime-0368snd-generic"
+    },
+    {
+      "title": "[X68000] 宝魔ハンターライム 第03話(GS)",
+      "driver": {
+        "name": "x68k",
+        "type": "generic",
+        "alias": "SILENCE",
+        "platform": "SHARP X68000"
+      },
+      "options": [
+        {
+          "name": "mfp",
+          "value": "1"
+        },
+        {
+          "name": "midiout",
+          "value": "1"
+        },
+        {
+          "name": "midiout_type",
+          "value": "4"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "lime368snd.bin",
+          "offset": "0x000000"
+        },
+        {
+          "type": "code",
+          "path": "L1.ZMD",
+          "offset": "0x010000"
+        },
+        {
+          "type": "x",
+          "path": "ZMSC.X",
+          "offset": "0x080000"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "L1.ZMD   : Jewel Bem Hunter LIME"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/silence.xml",
+      "source_order": 4084,
+      "archive": "lime_0368snd",
+      "id": "lime-0368snd-generic-2"
+    },
+    {
+      "title": "[X68000] 宝魔ハンターライム 第04話",
+      "driver": {
+        "name": "x68k",
+        "type": "generic",
+        "alias": "SILENCE",
+        "platform": "SHARP X68000"
+      },
+      "options": [
+        {
+          "name": "mfp",
+          "value": "0x01"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "sgn68snd.bin",
+          "offset": "0x00000"
+        },
+        {
+          "type": "x",
+          "path": "pmd.x",
+          "offset": "0x10000"
+        },
+        {
+          "type": "code",
+          "path": "THOMAS2.FF",
+          "offset": "0x20000"
+        },
+        {
+          "type": "code",
+          "path": "limepcm.p",
+          "offset": "0x22000"
+        },
+        {
+          "type": "code",
+          "path": "LIME01.M",
+          "offset": "0x40000"
+        },
+        {
+          "type": "code",
+          "path": "LIME02.M",
+          "offset": "0x42000"
+        },
+        {
+          "type": "code",
+          "path": "LIME03.M",
+          "offset": "0x44000"
+        },
+        {
+          "type": "code",
+          "path": "LIME04.M",
+          "offset": "0x46000"
+        },
+        {
+          "type": "code",
+          "path": "LIME5A.M",
+          "offset": "0x48000"
+        },
+        {
+          "type": "code",
+          "path": "LIME5B.M",
+          "offset": "0x4a000"
+        },
+        {
+          "type": "code",
+          "path": "LIME07.M",
+          "offset": "0x4c000"
+        },
+        {
+          "type": "code",
+          "path": "LIME08.M",
+          "offset": "0x4e000"
+        },
+        {
+          "type": "code",
+          "path": "LIME09.M",
+          "offset": "0x50000"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "LIME01.M : Jewel Bem Hunter LIME"
+        },
+        {
+          "kind": "title",
+          "code": "0x02",
+          "title": "LIME02.M : STORM"
+        },
+        {
+          "kind": "title",
+          "code": "0x03",
+          "title": "LIME03.M : 大切なもの"
+        },
+        {
+          "kind": "title",
+          "code": "0x04",
+          "title": "LIME04.M : THETA"
+        },
+        {
+          "kind": "title",
+          "code": "0x05",
+          "title": "LIME5A.M : ライム変身"
+        },
+        {
+          "kind": "title",
+          "code": "0x06",
+          "title": "LIME5B.M : ライム変身"
+        },
+        {
+          "kind": "title",
+          "code": "0x07",
+          "title": "LIME07.M : WAITING SUMMER"
+        },
+        {
+          "kind": "title",
+          "code": "0x08",
+          "title": "LIME08.M : YOU-EN-CHI"
+        },
+        {
+          "kind": "comment",
+          "text": "\n\t\t\t<title code=\"0x09\">LIME09.M : YOU-EN-CHI</title>\n\t\t\t  "
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/silence.xml",
+      "source_order": 4085,
+      "archive": "lime_0468snd",
+      "id": "lime-0468snd-generic"
+    },
+    {
+      "title": "[X68000] 宝魔ハンターライム 第05話",
+      "driver": {
+        "name": "x68k",
+        "type": "generic",
+        "alias": "SILENCE",
+        "platform": "SHARP X68000"
+      },
+      "options": [
+        {
+          "name": "mfp",
+          "value": "0x01"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "sgn68snd.bin",
+          "offset": "0x00000"
+        },
+        {
+          "type": "x",
+          "path": "pmd.x",
+          "offset": "0x10000"
+        },
+        {
+          "type": "code",
+          "path": "THOMAS2.FF",
+          "offset": "0x20000"
+        },
+        {
+          "type": "code",
+          "path": "limepcm.p",
+          "offset": "0x22000"
+        },
+        {
+          "type": "code",
+          "path": "LIME01.M",
+          "offset": "0x40000"
+        },
+        {
+          "type": "code",
+          "path": "LIME02.M",
+          "offset": "0x42000"
+        },
+        {
+          "type": "code",
+          "path": "LIME03.M",
+          "offset": "0x44000"
+        },
+        {
+          "type": "code",
+          "path": "LIME04.M",
+          "offset": "0x46000"
+        },
+        {
+          "type": "code",
+          "path": "LIME5A.M",
+          "offset": "0x48000"
+        },
+        {
+          "type": "code",
+          "path": "LIME5B.M",
+          "offset": "0x4a000"
+        },
+        {
+          "type": "code",
+          "path": "LIME07.M",
+          "offset": "0x4c000"
+        },
+        {
+          "type": "code",
+          "path": "LIME08.M",
+          "offset": "0x4e000"
+        },
+        {
+          "type": "code",
+          "path": "LIME09.M",
+          "offset": "0x50000"
+        },
+        {
+          "type": "code",
+          "path": "LIME10.M",
+          "offset": "0x52000"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "LIME01.M : Jewel Bem Hunter LIME"
+        },
+        {
+          "kind": "title",
+          "code": "0x02",
+          "title": "LIME02.M : STORM"
+        },
+        {
+          "kind": "title",
+          "code": "0x03",
+          "title": "LIME03.M : 大切なもの"
+        },
+        {
+          "kind": "title",
+          "code": "0x04",
+          "title": "LIME04.M : THETA"
+        },
+        {
+          "kind": "title",
+          "code": "0x05",
+          "title": "LIME5A.M : ライム変身"
+        },
+        {
+          "kind": "title",
+          "code": "0x06",
+          "title": "LIME5B.M : ライム変身"
+        },
+        {
+          "kind": "title",
+          "code": "0x07",
+          "title": "LIME07.M : WAITING SUMMER"
+        },
+        {
+          "kind": "title",
+          "code": "0x08",
+          "title": "LIME08.M : No Right Turn"
+        },
+        {
+          "kind": "comment",
+          "text": "\n\t\t\t<title code=\"0x09\">LIME09.M : No Right Turn</title>\n\t\t\t<title code=\"0x0a\">LIME10.M : No Right Turn</title>\n\t\t\t  "
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/silence.xml",
+      "source_order": 4086,
+      "archive": "lime_0568snd",
+      "id": "lime-0568snd-generic"
+    },
+    {
+      "title": "[X68000] 宝魔ハンターライム 第06話",
+      "driver": {
+        "name": "x68k",
+        "type": "generic",
+        "alias": "SILENCE",
+        "platform": "SHARP X68000"
+      },
+      "options": [
+        {
+          "name": "mfp",
+          "value": "0x01"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "sgn68snd.bin",
+          "offset": "0x00000"
+        },
+        {
+          "type": "x",
+          "path": "pmd.x",
+          "offset": "0x10000"
+        },
+        {
+          "type": "code",
+          "path": "THOMAS2.FF",
+          "offset": "0x20000"
+        },
+        {
+          "type": "code",
+          "path": "limepcm.p",
+          "offset": "0x22000"
+        },
+        {
+          "type": "code",
+          "path": "LIME01.M",
+          "offset": "0x40000"
+        },
+        {
+          "type": "code",
+          "path": "LIME02.M",
+          "offset": "0x42000"
+        },
+        {
+          "type": "code",
+          "path": "LIME03.M",
+          "offset": "0x44000"
+        },
+        {
+          "type": "code",
+          "path": "LIME04.M",
+          "offset": "0x46000"
+        },
+        {
+          "type": "code",
+          "path": "LIME5A.M",
+          "offset": "0x48000"
+        },
+        {
+          "type": "code",
+          "path": "LIME5B.M",
+          "offset": "0x4a000"
+        },
+        {
+          "type": "code",
+          "path": "LIME06.M",
+          "offset": "0x4c000"
+        },
+        {
+          "type": "code",
+          "path": "LIME07.M",
+          "offset": "0x4e000"
+        },
+        {
+          "type": "code",
+          "path": "LIME08.M",
+          "offset": "0x50000"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "LIME01.M : Jewel Bem Hunter LIME"
+        },
+        {
+          "kind": "title",
+          "code": "0x02",
+          "title": "LIME02.M : STORM"
+        },
+        {
+          "kind": "title",
+          "code": "0x03",
+          "title": "LIME03.M : 大切なもの"
+        },
+        {
+          "kind": "title",
+          "code": "0x04",
+          "title": "LIME04.M : THETA"
+        },
+        {
+          "kind": "title",
+          "code": "0x05",
+          "title": "LIME5A.M : ライム変身"
+        },
+        {
+          "kind": "title",
+          "code": "0x06",
+          "title": "LIME5B.M : ライム変身"
+        },
+        {
+          "kind": "title",
+          "code": "0x07",
+          "title": "LIME06.M : Fell guilty"
+        },
+        {
+          "kind": "title",
+          "code": "0x08",
+          "title": "LIME07.M : WAITING SUMMER"
+        },
+        {
+          "kind": "title",
+          "code": "0x09",
+          "title": "LIME08.M : Iconoclast"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/silence.xml",
+      "source_order": 4087,
+      "archive": "lime_0668snd",
+      "id": "lime-0668snd-generic"
+    },
+    {
+      "title": "[X68000] 宝魔ハンターライム 第07話",
+      "driver": {
+        "name": "x68k",
+        "type": "generic",
+        "alias": "SILENCE",
+        "platform": "SHARP X68000"
+      },
+      "options": [
+        {
+          "name": "mfp",
+          "value": "0x01"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "pmd268snd.bin",
+          "offset": "0x00000"
+        },
+        {
+          "type": "x",
+          "path": "pmd.x",
+          "offset": "0x10000"
+        },
+        {
+          "type": "code",
+          "path": "THOMAS2.FF",
+          "offset": "0x20000"
+        },
+        {
+          "type": "code",
+          "path": "limepcm.p",
+          "offset": "0x22000"
+        },
+        {
+          "type": "code",
+          "path": "LIME01.M",
+          "offset": "0x40000"
+        },
+        {
+          "type": "code",
+          "path": "LIME02.M",
+          "offset": "0x42000"
+        },
+        {
+          "type": "code",
+          "path": "LIME03.M",
+          "offset": "0x44000"
+        },
+        {
+          "type": "code",
+          "path": "LIME04.M",
+          "offset": "0x46000"
+        },
+        {
+          "type": "code",
+          "path": "LIME05A.M",
+          "offset": "0x48000"
+        },
+        {
+          "type": "code",
+          "path": "LIME05B.M",
+          "offset": "0x4a000"
+        },
+        {
+          "type": "code",
+          "path": "LIME06.M",
+          "offset": "0x4c000"
+        },
+        {
+          "type": "code",
+          "path": "LIME07.M",
+          "offset": "0x4e000"
+        },
+        {
+          "type": "code",
+          "path": "LIME08.M",
+          "offset": "0x50000"
+        },
+        {
+          "type": "code",
+          "path": "LIME09.M",
+          "offset": "0x52000"
+        },
+        {
+          "type": "code",
+          "path": "LIME10.M",
+          "offset": "0x54000"
+        },
+        {
+          "type": "code",
+          "path": "LIME11.M",
+          "offset": "0x56000"
+        },
+        {
+          "type": "code",
+          "path": "LIME12B.M",
+          "offset": "0x58000"
+        },
+        {
+          "type": "code",
+          "path": "LIME13C.M",
+          "offset": "0x5a000"
+        },
+        {
+          "type": "code",
+          "path": "LIME14B.M",
+          "offset": "0x5c000"
+        },
+        {
+          "type": "code",
+          "path": "LIME15B.M",
+          "offset": "0x5e000"
+        },
+        {
+          "type": "code",
+          "path": "LIME16B.M",
+          "offset": "0x60000"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "LIME01.M  : Jewel Bem Hunter LIME"
+        },
+        {
+          "kind": "title",
+          "code": "0x02",
+          "title": "LIME02.M  : STORM"
+        },
+        {
+          "kind": "title",
+          "code": "0x03",
+          "title": "LIME03.M  : 大切なもの"
+        },
+        {
+          "kind": "title",
+          "code": "0x04",
+          "title": "LIME04.M  : THETA"
+        },
+        {
+          "kind": "title",
+          "code": "0x05",
+          "title": "LIME05A.M : ライム変身"
+        },
+        {
+          "kind": "title",
+          "code": "0x06",
+          "title": "LIME05B.M : ライム変身"
+        },
+        {
+          "kind": "title",
+          "code": "0x07",
+          "title": "LIME06.M  : WAITING SUMMER"
+        },
+        {
+          "kind": "comment",
+          "text": "\n\t\t\t<title code=\"0x08\">LIME07.M  : WAITING SUMMER</title>\n\t\t\t  "
+        },
+        {
+          "kind": "title",
+          "code": "0x09",
+          "title": "LIME08.M  : Fell guilty"
+        },
+        {
+          "kind": "title",
+          "code": "0x0a",
+          "title": "LIME09.M  : YOU-EN-CHI"
+        },
+        {
+          "kind": "title",
+          "code": "0x0b",
+          "title": "LIME10.M  : No Right Turn"
+        },
+        {
+          "kind": "title",
+          "code": "0x0c",
+          "title": "LIME11.M  : Iconoclast"
+        },
+        {
+          "kind": "title",
+          "code": "0x0d",
+          "title": "LIME12B.M : GIVE ME A FEELING"
+        },
+        {
+          "kind": "title",
+          "code": "0x0e",
+          "title": "LIME13C.M : 強い南風"
+        },
+        {
+          "kind": "title",
+          "code": "0x0f",
+          "title": "LIME14B.M : THROUGH THE CROWD"
+        },
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "LIME15B.M : if"
+        },
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "LIME16B.M : MIZUKI"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/silence.xml",
+      "source_order": 4088,
+      "archive": "lime_0768snd",
+      "id": "lime-0768snd-generic"
+    },
+    {
+      "title": "[X68000] 宝魔ハンターライム 第08話",
+      "driver": {
+        "name": "x68k",
+        "type": "generic",
+        "alias": "SILENCE",
+        "platform": "SHARP X68000"
+      },
+      "options": [
+        {
+          "name": "mfp",
+          "value": "0x01"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "pmd268snd.bin",
+          "offset": "0x00000"
+        },
+        {
+          "type": "x",
+          "path": "pmd.x",
+          "offset": "0x10000"
+        },
+        {
+          "type": "code",
+          "path": "THOMAS2.FF",
+          "offset": "0x20000"
+        },
+        {
+          "type": "code",
+          "path": "limepcm.p",
+          "offset": "0x22000"
+        },
+        {
+          "type": "code",
+          "path": "LIME01.M",
+          "offset": "0x40000"
+        },
+        {
+          "type": "code",
+          "path": "LIME02.M",
+          "offset": "0x42000"
+        },
+        {
+          "type": "code",
+          "path": "LIME03.M",
+          "offset": "0x44000"
+        },
+        {
+          "type": "code",
+          "path": "LIME04.M",
+          "offset": "0x46000"
+        },
+        {
+          "type": "code",
+          "path": "LIME05A.M",
+          "offset": "0x48000"
+        },
+        {
+          "type": "code",
+          "path": "LIME05B.M",
+          "offset": "0x4a000"
+        },
+        {
+          "type": "code",
+          "path": "LIME06.M",
+          "offset": "0x4c000"
+        },
+        {
+          "type": "code",
+          "path": "LIME07.M",
+          "offset": "0x4e000"
+        },
+        {
+          "type": "code",
+          "path": "LIME08.M",
+          "offset": "0x50000"
+        },
+        {
+          "type": "code",
+          "path": "LIME09.M",
+          "offset": "0x52000"
+        },
+        {
+          "type": "code",
+          "path": "LIME10.M",
+          "offset": "0x54000"
+        },
+        {
+          "type": "code",
+          "path": "LIME11.M",
+          "offset": "0x56000"
+        },
+        {
+          "type": "code",
+          "path": "LIME12B.M",
+          "offset": "0x58000"
+        },
+        {
+          "type": "code",
+          "path": "LIME13C.M",
+          "offset": "0x5a000"
+        },
+        {
+          "type": "code",
+          "path": "LIME14B.M",
+          "offset": "0x5c000"
+        },
+        {
+          "type": "code",
+          "path": "LIME15B.M",
+          "offset": "0x5e000"
+        },
+        {
+          "type": "code",
+          "path": "LIME16B.M",
+          "offset": "0x60000"
+        },
+        {
+          "type": "code",
+          "path": "LIME17.M",
+          "offset": "0x62000"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "LIME01.M  : Jewel Bem Hunter LIME"
+        },
+        {
+          "kind": "title",
+          "code": "0x02",
+          "title": "LIME02.M  : STORM"
+        },
+        {
+          "kind": "title",
+          "code": "0x03",
+          "title": "LIME03.M  : 大切なもの"
+        },
+        {
+          "kind": "title",
+          "code": "0x04",
+          "title": "LIME04.M  : THETA"
+        },
+        {
+          "kind": "title",
+          "code": "0x05",
+          "title": "LIME05A.M : ライム変身"
+        },
+        {
+          "kind": "title",
+          "code": "0x06",
+          "title": "LIME05B.M : ライム変身"
+        },
+        {
+          "kind": "title",
+          "code": "0x07",
+          "title": "LIME06.M  : WAITING SUMMER"
+        },
+        {
+          "kind": "comment",
+          "text": "\n\t\t\t<title code=\"0x08\">LIME07.M  : WAITING SUMMER</title>\n\t\t\t  "
+        },
+        {
+          "kind": "title",
+          "code": "0x09",
+          "title": "LIME08.M  : Fell guilty"
+        },
+        {
+          "kind": "title",
+          "code": "0x0a",
+          "title": "LIME09.M  : YOU-EN-CHI"
+        },
+        {
+          "kind": "title",
+          "code": "0x0b",
+          "title": "LIME10.M  : No Right Turn"
+        },
+        {
+          "kind": "title",
+          "code": "0x0c",
+          "title": "LIME11.M  : Iconoclast"
+        },
+        {
+          "kind": "title",
+          "code": "0x0d",
+          "title": "LIME12B.M : GIVE ME A FEELING"
+        },
+        {
+          "kind": "title",
+          "code": "0x0e",
+          "title": "LIME13C.M : 強い南風"
+        },
+        {
+          "kind": "title",
+          "code": "0x0f",
+          "title": "LIME14B.M : THROUGH THE CROWD"
+        },
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "LIME15B.M : if"
+        },
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "LIME16B.M : MIZUKI"
+        },
+        {
+          "kind": "comment",
+          "text": "\n\t\t\t<title code=\"0x12\">LIME17.M  : Iconoclast</title>\n\t\t\t  "
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/silence.xml",
+      "source_order": 4089,
+      "archive": "lime_0868snd",
+      "id": "lime-0868snd-generic"
+    },
+    {
+      "title": "[X68000] 宝魔ハンターライム 第09話",
+      "driver": {
+        "name": "x68k",
+        "type": "generic",
+        "alias": "SILENCE",
+        "platform": "SHARP X68000"
+      },
+      "options": [
+        {
+          "name": "mfp",
+          "value": "0x01"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "pmd268snd.bin",
+          "offset": "0x00000"
+        },
+        {
+          "type": "x",
+          "path": "pmd.x",
+          "offset": "0x10000"
+        },
+        {
+          "type": "code",
+          "path": "THOMAS2.FF",
+          "offset": "0x20000"
+        },
+        {
+          "type": "code",
+          "path": "limepcm.p",
+          "offset": "0x22000"
+        },
+        {
+          "type": "code",
+          "path": "LIME01.M",
+          "offset": "0x40000"
+        },
+        {
+          "type": "code",
+          "path": "LIME02.M",
+          "offset": "0x42000"
+        },
+        {
+          "type": "code",
+          "path": "LIME03.M",
+          "offset": "0x44000"
+        },
+        {
+          "type": "code",
+          "path": "LIME04.M",
+          "offset": "0x46000"
+        },
+        {
+          "type": "code",
+          "path": "LIME05A.M",
+          "offset": "0x48000"
+        },
+        {
+          "type": "code",
+          "path": "LIME05B.M",
+          "offset": "0x4a000"
+        },
+        {
+          "type": "code",
+          "path": "LIME06.M",
+          "offset": "0x4c000"
+        },
+        {
+          "type": "code",
+          "path": "LIME07.M",
+          "offset": "0x4e000"
+        },
+        {
+          "type": "code",
+          "path": "LIME08.M",
+          "offset": "0x50000"
+        },
+        {
+          "type": "code",
+          "path": "LIME09.M",
+          "offset": "0x52000"
+        },
+        {
+          "type": "code",
+          "path": "LIME10.M",
+          "offset": "0x54000"
+        },
+        {
+          "type": "code",
+          "path": "LIME11.M",
+          "offset": "0x56000"
+        },
+        {
+          "type": "code",
+          "path": "LIME12B.M",
+          "offset": "0x58000"
+        },
+        {
+          "type": "code",
+          "path": "LIME13C.M",
+          "offset": "0x5a000"
+        },
+        {
+          "type": "code",
+          "path": "LIME14B.M",
+          "offset": "0x5c000"
+        },
+        {
+          "type": "code",
+          "path": "LIME15B.M",
+          "offset": "0x5e000"
+        },
+        {
+          "type": "code",
+          "path": "LIME16B.M",
+          "offset": "0x60000"
+        },
+        {
+          "type": "code",
+          "path": "LIME17.M",
+          "offset": "0x62000"
+        },
+        {
+          "type": "code",
+          "path": "LIME18.M",
+          "offset": "0x64000"
+        },
+        {
+          "type": "code",
+          "path": "LIME19.M",
+          "offset": "0x66000"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "LIME01.M  : Jewel Bem Hunter LIME"
+        },
+        {
+          "kind": "title",
+          "code": "0x02",
+          "title": "LIME02.M  : STORM"
+        },
+        {
+          "kind": "title",
+          "code": "0x03",
+          "title": "LIME03.M  : 大切なもの"
+        },
+        {
+          "kind": "title",
+          "code": "0x04",
+          "title": "LIME04.M  : THETA"
+        },
+        {
+          "kind": "title",
+          "code": "0x05",
+          "title": "LIME05A.M : ライム変身"
+        },
+        {
+          "kind": "title",
+          "code": "0x06",
+          "title": "LIME05B.M : ライム変身"
+        },
+        {
+          "kind": "title",
+          "code": "0x07",
+          "title": "LIME06.M  : WAITING SUMMER"
+        },
+        {
+          "kind": "comment",
+          "text": "\n\t\t\t<title code=\"0x08\">LIME07.M  : WAITING SUMMER</title>\n\t\t\t  "
+        },
+        {
+          "kind": "title",
+          "code": "0x09",
+          "title": "LIME08.M  : Fell guilty"
+        },
+        {
+          "kind": "title",
+          "code": "0x0a",
+          "title": "LIME09.M  : YOU-EN-CHI"
+        },
+        {
+          "kind": "title",
+          "code": "0x0b",
+          "title": "LIME10.M  : No Right Turn"
+        },
+        {
+          "kind": "title",
+          "code": "0x0c",
+          "title": "LIME11.M  : Iconoclast"
+        },
+        {
+          "kind": "title",
+          "code": "0x0d",
+          "title": "LIME12B.M : GIVE ME A FEELING"
+        },
+        {
+          "kind": "title",
+          "code": "0x0e",
+          "title": "LIME13C.M : 強い南風"
+        },
+        {
+          "kind": "title",
+          "code": "0x0f",
+          "title": "LIME14B.M : THROUGH THE CROWD"
+        },
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "LIME15B.M : if"
+        },
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "LIME16B.M : MIZUKI"
+        },
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "LIME17.M  : Magician"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "LIME18.M  : ココナ変身"
+        },
+        {
+          "kind": "title",
+          "code": "0x14",
+          "title": "LIME19.M  : Sadness"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/silence.xml",
+      "source_order": 4090,
+      "archive": "lime_0968snd",
+      "id": "lime-0968snd-generic"
+    },
+    {
+      "title": "[X68000] 宝魔ハンターライム 第10話",
+      "driver": {
+        "name": "x68k",
+        "type": "generic",
+        "alias": "SILENCE",
+        "platform": "SHARP X68000"
+      },
+      "options": [
+        {
+          "name": "mfp",
+          "value": "0x01"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "pmd268snd.bin",
+          "offset": "0x00000"
+        },
+        {
+          "type": "x",
+          "path": "pmd.x",
+          "offset": "0x10000"
+        },
+        {
+          "type": "code",
+          "path": "THOMAS2.FF",
+          "offset": "0x20000"
+        },
+        {
+          "type": "code",
+          "path": "limepcm.p",
+          "offset": "0x22000"
+        },
+        {
+          "type": "code",
+          "path": "LIME01.M",
+          "offset": "0x40000"
+        },
+        {
+          "type": "code",
+          "path": "LIME02.M",
+          "offset": "0x42000"
+        },
+        {
+          "type": "code",
+          "path": "LIME03.M",
+          "offset": "0x44000"
+        },
+        {
+          "type": "code",
+          "path": "LIME04.M",
+          "offset": "0x46000"
+        },
+        {
+          "type": "code",
+          "path": "LIME05A.M",
+          "offset": "0x48000"
+        },
+        {
+          "type": "code",
+          "path": "LIME05B.M",
+          "offset": "0x4a000"
+        },
+        {
+          "type": "code",
+          "path": "LIME06.M",
+          "offset": "0x4c000"
+        },
+        {
+          "type": "code",
+          "path": "LIME07.M",
+          "offset": "0x4e000"
+        },
+        {
+          "type": "code",
+          "path": "LIME08.M",
+          "offset": "0x50000"
+        },
+        {
+          "type": "code",
+          "path": "LIME09.M",
+          "offset": "0x52000"
+        },
+        {
+          "type": "code",
+          "path": "LIME10.M",
+          "offset": "0x54000"
+        },
+        {
+          "type": "code",
+          "path": "LIME11.M",
+          "offset": "0x56000"
+        },
+        {
+          "type": "code",
+          "path": "LIME12B.M",
+          "offset": "0x58000"
+        },
+        {
+          "type": "code",
+          "path": "LIME13C.M",
+          "offset": "0x5a000"
+        },
+        {
+          "type": "code",
+          "path": "LIME14B.M",
+          "offset": "0x5c000"
+        },
+        {
+          "type": "code",
+          "path": "LIME15B.M",
+          "offset": "0x5e000"
+        },
+        {
+          "type": "code",
+          "path": "LIME16B.M",
+          "offset": "0x60000"
+        },
+        {
+          "type": "code",
+          "path": "LIME17.M",
+          "offset": "0x62000"
+        },
+        {
+          "type": "code",
+          "path": "LIME18.M",
+          "offset": "0x64000"
+        },
+        {
+          "type": "code",
+          "path": "LIME19.M",
+          "offset": "0x66000"
+        },
+        {
+          "type": "code",
+          "path": "LIME20.M",
+          "offset": "0x68000"
+        },
+        {
+          "type": "code",
+          "path": "APLLAU.M",
+          "offset": "0x6a000"
+        },
+        {
+          "type": "code",
+          "path": "TRAIN.M",
+          "offset": "0x6c000"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "LIME01.M  : Jewel Bem Hunter LIME"
+        },
+        {
+          "kind": "title",
+          "code": "0x02",
+          "title": "LIME02.M  : STORM"
+        },
+        {
+          "kind": "title",
+          "code": "0x03",
+          "title": "LIME03.M  : 大切なもの"
+        },
+        {
+          "kind": "title",
+          "code": "0x04",
+          "title": "LIME04.M  : THETA"
+        },
+        {
+          "kind": "title",
+          "code": "0x05",
+          "title": "LIME05A.M : ライム変身"
+        },
+        {
+          "kind": "title",
+          "code": "0x06",
+          "title": "LIME05B.M : ライム変身"
+        },
+        {
+          "kind": "title",
+          "code": "0x07",
+          "title": "LIME06.M  : WAITING SUMMER"
+        },
+        {
+          "kind": "comment",
+          "text": "\n\t\t\t<title code=\"0x08\">LIME07.M  : WAITING SUMMER</title>\n\t\t\t  "
+        },
+        {
+          "kind": "title",
+          "code": "0x09",
+          "title": "LIME08.M  : Fell guilty"
+        },
+        {
+          "kind": "title",
+          "code": "0x0a",
+          "title": "LIME09.M  : YOU-EN-CHI"
+        },
+        {
+          "kind": "title",
+          "code": "0x0b",
+          "title": "LIME10.M  : SE 電車"
+        },
+        {
+          "kind": "title",
+          "code": "0x0c",
+          "title": "LIME11.M  : Iconoclast"
+        },
+        {
+          "kind": "title",
+          "code": "0x0d",
+          "title": "LIME12B.M : GIVE ME A FEELING"
+        },
+        {
+          "kind": "title",
+          "code": "0x0e",
+          "title": "LIME13C.M : 強い南風"
+        },
+        {
+          "kind": "title",
+          "code": "0x0f",
+          "title": "LIME14B.M : THROUGH THE CROWD"
+        },
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "LIME15B.M : if"
+        },
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "LIME16B.M : MIZUKI"
+        },
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "LIME17.M  : Magician"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "LIME18.M  : ココナ変身"
+        },
+        {
+          "kind": "title",
+          "code": "0x14",
+          "title": "LIME19.M  : Sadness"
+        },
+        {
+          "kind": "title",
+          "code": "0x15",
+          "title": "LIME20.M  :"
+        },
+        {
+          "kind": "comment",
+          "text": "\n\t\t\t<title code=\"0x16\">APLLAU.M  : ライム変身</title>\n\t\t\t  "
+        },
+        {
+          "kind": "title",
+          "code": "0x17",
+          "title": "TRAIN.M   : No Right Turn"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/silence.xml",
+      "source_order": 4091,
+      "archive": "lime_1068snd",
+      "id": "lime-1068snd-generic"
+    },
+    {
+      "title": "[X68000] 宝魔ハンターライム 第11話",
+      "driver": {
+        "name": "x68k",
+        "type": "generic",
+        "alias": "SILENCE",
+        "platform": "SHARP X68000"
+      },
+      "options": [
+        {
+          "name": "mfp",
+          "value": "0x01"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "pmd268snd.bin",
+          "offset": "0x00000"
+        },
+        {
+          "type": "x",
+          "path": "pmd.x",
+          "offset": "0x10000"
+        },
+        {
+          "type": "code",
+          "path": "THOMAS2.FF",
+          "offset": "0x20000"
+        },
+        {
+          "type": "code",
+          "path": "limepcm.p",
+          "offset": "0x22000"
+        },
+        {
+          "type": "code",
+          "path": "LIME01.M",
+          "offset": "0x40000"
+        },
+        {
+          "type": "code",
+          "path": "LIME02.M",
+          "offset": "0x42000"
+        },
+        {
+          "type": "code",
+          "path": "LIME03.M",
+          "offset": "0x44000"
+        },
+        {
+          "type": "code",
+          "path": "LIME04.M",
+          "offset": "0x46000"
+        },
+        {
+          "type": "code",
+          "path": "LIME05A.M",
+          "offset": "0x48000"
+        },
+        {
+          "type": "code",
+          "path": "LIME05B.M",
+          "offset": "0x4a000"
+        },
+        {
+          "type": "code",
+          "path": "LIME06.M",
+          "offset": "0x4c000"
+        },
+        {
+          "type": "code",
+          "path": "LIME07.M",
+          "offset": "0x4e000"
+        },
+        {
+          "type": "code",
+          "path": "LIME08.M",
+          "offset": "0x50000"
+        },
+        {
+          "type": "code",
+          "path": "LIME09.M",
+          "offset": "0x52000"
+        },
+        {
+          "type": "code",
+          "path": "LIME10.M",
+          "offset": "0x54000"
+        },
+        {
+          "type": "code",
+          "path": "LIME11.M",
+          "offset": "0x56000"
+        },
+        {
+          "type": "code",
+          "path": "LIME12.M",
+          "offset": "0x58000"
+        },
+        {
+          "type": "code",
+          "path": "LIME13.M",
+          "offset": "0x5a000"
+        },
+        {
+          "type": "code",
+          "path": "LIME14.M",
+          "offset": "0x5c000"
+        },
+        {
+          "type": "code",
+          "path": "LIME15.M",
+          "offset": "0x5e000"
+        },
+        {
+          "type": "code",
+          "path": "LIME16.M",
+          "offset": "0x60000"
+        },
+        {
+          "type": "code",
+          "path": "LIME17.M",
+          "offset": "0x62000"
+        },
+        {
+          "type": "code",
+          "path": "LIME18.M",
+          "offset": "0x64000"
+        },
+        {
+          "type": "code",
+          "path": "LIME19.M",
+          "offset": "0x66000"
+        },
+        {
+          "type": "code",
+          "path": "LIME20.M",
+          "offset": "0x68000"
+        },
+        {
+          "type": "code",
+          "path": "LIME21.M",
+          "offset": "0x6a000"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "LIME01.M  : Jewel Bem Hunter LIME"
+        },
+        {
+          "kind": "title",
+          "code": "0x02",
+          "title": "LIME02.M  : STORM"
+        },
+        {
+          "kind": "title",
+          "code": "0x03",
+          "title": "LIME03.M  : 大切なもの"
+        },
+        {
+          "kind": "title",
+          "code": "0x04",
+          "title": "LIME04.M  : THETA"
+        },
+        {
+          "kind": "title",
+          "code": "0x05",
+          "title": "LIME05A.M : ライム変身"
+        },
+        {
+          "kind": "title",
+          "code": "0x06",
+          "title": "LIME05B.M : ライム変身"
+        },
+        {
+          "kind": "title",
+          "code": "0x07",
+          "title": "LIME06.M  : WAITING SUMMER"
+        },
+        {
+          "kind": "comment",
+          "text": "\n\t\t\t<title code=\"0x08\">LIME07.M  : WAITING SUMMER</title>\n\t\t\t  "
+        },
+        {
+          "kind": "title",
+          "code": "0x09",
+          "title": "LIME08.M  : Fell guilty"
+        },
+        {
+          "kind": "title",
+          "code": "0x0a",
+          "title": "LIME09.M  : YOU-EN-CHI"
+        },
+        {
+          "kind": "title",
+          "code": "0x0b",
+          "title": "LIME10.M  : No Right Turn"
+        },
+        {
+          "kind": "title",
+          "code": "0x0c",
+          "title": "LIME11.M  : Iconoclast"
+        },
+        {
+          "kind": "title",
+          "code": "0x0d",
+          "title": "LIME12B.M : GIVE ME A FEELING"
+        },
+        {
+          "kind": "title",
+          "code": "0x0e",
+          "title": "LIME13C.M : 強い南風"
+        },
+        {
+          "kind": "title",
+          "code": "0x0f",
+          "title": "LIME14B.M : THROUGH THE CROWD"
+        },
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "LIME15B.M : if"
+        },
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "LIME16B.M : MIZUKI"
+        },
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "LIME17.M  : Magician"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "LIME18.M  : ココナ変身"
+        },
+        {
+          "kind": "title",
+          "code": "0x14",
+          "title": "LIME19.M  : Sadness"
+        },
+        {
+          "kind": "comment",
+          "text": "\n\t\t\t<title code=\"0x15\">LIME20.M  : ココナ変身</title>\n\t\t\t<title code=\"0x16\">LIME21.M  : ココナ変身</title>\n\t\t\t  "
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/silence.xml",
+      "source_order": 4092,
+      "archive": "lime_1168snd",
+      "id": "lime-1168snd-generic"
+    },
+    {
+      "title": "[X68000] 宝魔ハンターライム 第12話",
+      "driver": {
+        "name": "x68k",
+        "type": "generic",
+        "alias": "SILENCE",
+        "platform": "SHARP X68000"
+      },
+      "options": [
+        {
+          "name": "mfp",
+          "value": "0x01"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "sgn68snd.bin",
+          "offset": "0x00000"
+        },
+        {
+          "type": "x",
+          "path": "pmd.x",
+          "offset": "0x10000"
+        },
+        {
+          "type": "code",
+          "path": "THOMAS2.FF",
+          "offset": "0x20000"
+        },
+        {
+          "type": "code",
+          "path": "limepcm.p",
+          "offset": "0x22000"
+        },
+        {
+          "type": "code",
+          "path": "LIME01.M",
+          "offset": "0x40000"
+        },
+        {
+          "type": "code",
+          "path": "LIME02.M",
+          "offset": "0x42000"
+        },
+        {
+          "type": "code",
+          "path": "LIME03.M",
+          "offset": "0x44000"
+        },
+        {
+          "type": "code",
+          "path": "LIME04.M",
+          "offset": "0x46000"
+        },
+        {
+          "type": "code",
+          "path": "LIME05A.M",
+          "offset": "0x48000"
+        },
+        {
+          "type": "code",
+          "path": "LIME05B.M",
+          "offset": "0x4a000"
+        },
+        {
+          "type": "code",
+          "path": "LIME06.M",
+          "offset": "0x4c000"
+        },
+        {
+          "type": "code",
+          "path": "LIME07.M",
+          "offset": "0x4e000"
+        },
+        {
+          "type": "code",
+          "path": "LIME08.M",
+          "offset": "0x50000"
+        },
+        {
+          "type": "code",
+          "path": "LIME09.M",
+          "offset": "0x52000"
+        },
+        {
+          "type": "code",
+          "path": "LIME10.M",
+          "offset": "0x54000"
+        },
+        {
+          "type": "code",
+          "path": "LIME11.M",
+          "offset": "0x56000"
+        },
+        {
+          "type": "code",
+          "path": "LIME12.M",
+          "offset": "0x58000"
+        },
+        {
+          "type": "code",
+          "path": "LIME13.M",
+          "offset": "0x5a000"
+        },
+        {
+          "type": "code",
+          "path": "LIME14.M",
+          "offset": "0x5c000"
+        },
+        {
+          "type": "code",
+          "path": "LIME15.M",
+          "offset": "0x5e000"
+        },
+        {
+          "type": "code",
+          "path": "LIME16.M",
+          "offset": "0x60000"
+        },
+        {
+          "type": "code",
+          "path": "LIME17.M",
+          "offset": "0x62000"
+        },
+        {
+          "type": "code",
+          "path": "LIME18.M",
+          "offset": "0x64000"
+        },
+        {
+          "type": "code",
+          "path": "LIME19.M",
+          "offset": "0x66000"
+        },
+        {
+          "type": "code",
+          "path": "LIME20.M",
+          "offset": "0x68000"
+        },
+        {
+          "type": "code",
+          "path": "LIME21.M",
+          "offset": "0x6a000"
+        },
+        {
+          "type": "code",
+          "path": "LIME22.M",
+          "offset": "0x6c000"
+        },
+        {
+          "type": "code",
+          "path": "LIME23.M",
+          "offset": "0x6e000"
+        },
+        {
+          "type": "code",
+          "path": "LIME24.M",
+          "offset": "0x70000"
+        },
+        {
+          "type": "code",
+          "path": "BELL.M",
+          "offset": "0x72000"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "LIME01.M  : Jewel Bem Hunter LIME"
+        },
+        {
+          "kind": "title",
+          "code": "0x02",
+          "title": "LIME02.M  : STORM"
+        },
+        {
+          "kind": "title",
+          "code": "0x03",
+          "title": "LIME03.M  : 大切なもの"
+        },
+        {
+          "kind": "title",
+          "code": "0x04",
+          "title": "LIME04.M  : THETA"
+        },
+        {
+          "kind": "title",
+          "code": "0x05",
+          "title": "LIME05A.M : ライム変身"
+        },
+        {
+          "kind": "title",
+          "code": "0x06",
+          "title": "LIME05B.M : ライム変身"
+        },
+        {
+          "kind": "title",
+          "code": "0x07",
+          "title": "LIME06.M  : WAITING SUMMER"
+        },
+        {
+          "kind": "comment",
+          "text": " LIME06.Mと同じ\n\t\t\t<title code=\"0x08\">LIME07.M  : WAITING SUMMER</title>\n\t\t\t  "
+        },
+        {
+          "kind": "title",
+          "code": "0x09",
+          "title": "LIME08.M  : Fell guilty"
+        },
+        {
+          "kind": "title",
+          "code": "0x0a",
+          "title": "LIME09.M  : YOU-EN-CHI"
+        },
+        {
+          "kind": "title",
+          "code": "0x0b",
+          "title": "LIME10.M  : No Right Turn"
+        },
+        {
+          "kind": "title",
+          "code": "0x0c",
+          "title": "LIME11.M  : Iconoclast"
+        },
+        {
+          "kind": "title",
+          "code": "0x0d",
+          "title": "LIME12.M  : GIVE ME A FEELING"
+        },
+        {
+          "kind": "title",
+          "code": "0x0e",
+          "title": "LIME13.M  : 強い南風"
+        },
+        {
+          "kind": "title",
+          "code": "0x0f",
+          "title": "LIME14.M  : THROUGH THE CROWD"
+        },
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "LIME15.M  : if"
+        },
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "LIME16.M  : MIZUKI"
+        },
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "LIME17.M  : Magician"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "LIME18.M  : ココナ変身"
+        },
+        {
+          "kind": "title",
+          "code": "0x14",
+          "title": "LIME19.M  : Sadness"
+        },
+        {
+          "kind": "comment",
+          "text": " LIME18.Mと同じ\n\t\t\t<title code=\"0x15\">LIME20.M  : ココナ変身</title>\n\t\t\t<title code=\"0x16\">LIME21.M  : ココナ変身</title>\n\t\t\t  "
+        },
+        {
+          "kind": "title",
+          "code": "0x17",
+          "title": "LIME22.M  : Vanishing"
+        },
+        {
+          "kind": "title",
+          "code": "0x18",
+          "title": "LIME23.M  : 蒼い光の中で"
+        },
+        {
+          "kind": "title",
+          "code": "0x19",
+          "title": "LIME24.M  : Speed"
+        },
+        {
+          "kind": "comment",
+          "text": " LIME05A.Mと同じ\n\t\t\t<title code=\"0x1a\">BELL.M    : ライム変身</title>\n\t\t\t  "
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/silence.xml",
+      "source_order": 4093,
+      "archive": "lime_1268snd",
+      "id": "lime-1268snd-generic"
+    }
+  ]
+}

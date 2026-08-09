@@ -1,0 +1,2647 @@
+{
+  "format": "hoot-catalog-shard",
+  "version": 1,
+  "source_file": "xml/mucom88.xml",
+  "date": "2018/12/24",
+  "comments": [
+    "//MUCOM88 "
+  ],
+  "games": [
+    {
+      "title": "[PC-8801] MUCOM88 V1.5",
+      "driver": {
+        "name": "pc88",
+        "type": "opna",
+        "alias": "MUCOM88",
+        "platform": "NEC PC-8801"
+      },
+      "options": [
+        {
+          "name": "mdata_addr",
+          "value": "0x0001"
+        },
+        {
+          "name": "init_pc",
+          "value": "0x8000"
+        },
+        {
+          "name": "use_gvram",
+          "value": "1"
+        },
+        {
+          "name": "use_n88rom",
+          "value": "1"
+        },
+        {
+          "name": "debug_mem",
+          "value": "0xf300"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "patch",
+          "offset": "0x8000"
+        },
+        {
+          "type": "code",
+          "path": "errmsg",
+          "offset": "0x8800"
+        },
+        {
+          "type": "code",
+          "path": "music",
+          "offset": "0xb000"
+        },
+        {
+          "type": "code",
+          "path": "muc88",
+          "offset": "0x9600"
+        },
+        {
+          "type": "code",
+          "path": "msub",
+          "offset": "0x9000"
+        },
+        {
+          "type": "code",
+          "path": "expand",
+          "offset": "0xab00"
+        },
+        {
+          "type": "code",
+          "path": "voice.dat",
+          "offset": "0x6000"
+        },
+        {
+          "type": "code",
+          "path": "smon",
+          "offset": "0xde00"
+        },
+        {
+          "type": "code",
+          "path": "ssgdat",
+          "offset": "0x5e00"
+        },
+        {
+          "type": "code",
+          "path": "PCM.adr",
+          "offset": "0xe300"
+        },
+        {
+          "type": "adpcm",
+          "path": "VOICE.1",
+          "offset": "0x00000000"
+        },
+        {
+          "type": "adpcm",
+          "path": "VOICE.2",
+          "offset": "0x000003f8"
+        },
+        {
+          "type": "adpcm",
+          "path": "VOICE.3",
+          "offset": "0x00001088"
+        },
+        {
+          "type": "adpcm",
+          "path": "VOICE.4",
+          "offset": "0x00001ad8"
+        },
+        {
+          "type": "adpcm",
+          "path": "VOICE.5",
+          "offset": "0x00003a70"
+        },
+        {
+          "type": "adpcm",
+          "path": "VOICE.6",
+          "offset": "0x00006048"
+        },
+        {
+          "type": "adpcm",
+          "path": "VOICE.7",
+          "offset": "0x000067f0"
+        },
+        {
+          "type": "adpcm",
+          "path": "VOICE.8",
+          "offset": "0x00007450"
+        },
+        {
+          "type": "adpcm",
+          "path": "VOICE.9",
+          "offset": "0x000080d8"
+        },
+        {
+          "type": "adpcm",
+          "path": "VOICE.10",
+          "offset": "0x00009798"
+        },
+        {
+          "type": "adpcm",
+          "path": "VOICE.11",
+          "offset": "0x00009d68"
+        },
+        {
+          "type": "adpcm",
+          "path": "VOICE.12",
+          "offset": "0x0000a328"
+        },
+        {
+          "type": "adpcm",
+          "path": "VOICE.13",
+          "offset": "0x0000b7e0"
+        },
+        {
+          "type": "adpcm",
+          "path": "VOICE.14",
+          "offset": "0x0000bcf0"
+        },
+        {
+          "type": "adpcm",
+          "path": "VOICE.15",
+          "offset": "0x0000c070"
+        },
+        {
+          "type": "adpcm",
+          "path": "VOICE.16",
+          "offset": "0x0000d4a0"
+        },
+        {
+          "type": "bgm",
+          "path": "sampl1",
+          "offset": "0x01"
+        },
+        {
+          "type": "bgm",
+          "path": "sampl2",
+          "offset": "0x02"
+        },
+        {
+          "type": "bgm",
+          "path": "sampl3",
+          "offset": "0x03"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "Sample Music 1"
+        },
+        {
+          "kind": "title",
+          "code": "0x02",
+          "title": "Sample Music 2"
+        },
+        {
+          "kind": "title",
+          "code": "0x03",
+          "title": "Sample Music 3"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/mucom88.xml",
+      "source_order": 3355,
+      "archive": "MUCOM88_V1.5",
+      "id": "mucom88-v1-5-opna"
+    },
+    {
+      "title": "[PC-8801] MUCOM88 V1.7",
+      "driver": {
+        "name": "pc88",
+        "type": "opna",
+        "alias": "MUCOM88",
+        "platform": "NEC PC-8801"
+      },
+      "options": [
+        {
+          "name": "mdata_addr",
+          "value": "0x0001"
+        },
+        {
+          "name": "init_pc",
+          "value": "0x8000"
+        },
+        {
+          "name": "use_gvram",
+          "value": "1"
+        },
+        {
+          "name": "use_n88rom",
+          "value": "1"
+        },
+        {
+          "name": "debug_mem",
+          "value": "0xf300"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "patch",
+          "offset": "0x8000"
+        },
+        {
+          "type": "code",
+          "path": "errmsg",
+          "offset": "0x8800"
+        },
+        {
+          "type": "code",
+          "path": "music",
+          "offset": "0xb000"
+        },
+        {
+          "type": "code",
+          "path": "muc88",
+          "offset": "0x9600"
+        },
+        {
+          "type": "code",
+          "path": "msub",
+          "offset": "0x9000"
+        },
+        {
+          "type": "code",
+          "path": "expand",
+          "offset": "0xab00"
+        },
+        {
+          "type": "code",
+          "path": "voice.dat",
+          "offset": "0x6000"
+        },
+        {
+          "type": "code",
+          "path": "smon",
+          "offset": "0xde00"
+        },
+        {
+          "type": "code",
+          "path": "ssgdat",
+          "offset": "0x5e00"
+        },
+        {
+          "type": "code",
+          "path": "PCM.adr",
+          "offset": "0xe300"
+        },
+        {
+          "type": "adpcm",
+          "path": "VOICE.1",
+          "offset": "0x00000000"
+        },
+        {
+          "type": "adpcm",
+          "path": "VOICE.2",
+          "offset": "0x000003f8"
+        },
+        {
+          "type": "adpcm",
+          "path": "VOICE.3",
+          "offset": "0x00001088"
+        },
+        {
+          "type": "adpcm",
+          "path": "VOICE.4",
+          "offset": "0x00001ad8"
+        },
+        {
+          "type": "adpcm",
+          "path": "VOICE.5",
+          "offset": "0x00003a70"
+        },
+        {
+          "type": "adpcm",
+          "path": "VOICE.6",
+          "offset": "0x00006048"
+        },
+        {
+          "type": "adpcm",
+          "path": "VOICE.7",
+          "offset": "0x000067f0"
+        },
+        {
+          "type": "adpcm",
+          "path": "VOICE.8",
+          "offset": "0x00007450"
+        },
+        {
+          "type": "adpcm",
+          "path": "VOICE.9",
+          "offset": "0x000080d8"
+        },
+        {
+          "type": "adpcm",
+          "path": "VOICE.10",
+          "offset": "0x00009798"
+        },
+        {
+          "type": "adpcm",
+          "path": "VOICE.11",
+          "offset": "0x00009d68"
+        },
+        {
+          "type": "adpcm",
+          "path": "VOICE.12",
+          "offset": "0x0000a328"
+        },
+        {
+          "type": "adpcm",
+          "path": "VOICE.13",
+          "offset": "0x0000b7e0"
+        },
+        {
+          "type": "adpcm",
+          "path": "VOICE.14",
+          "offset": "0x0000bcf0"
+        },
+        {
+          "type": "adpcm",
+          "path": "VOICE.15",
+          "offset": "0x0000c070"
+        },
+        {
+          "type": "adpcm",
+          "path": "VOICE.16",
+          "offset": "0x0000d4a0"
+        },
+        {
+          "type": "bgm",
+          "path": "sampl1",
+          "offset": "0x01"
+        },
+        {
+          "type": "bgm",
+          "path": "sampl2",
+          "offset": "0x02"
+        },
+        {
+          "type": "bgm",
+          "path": "sampl3",
+          "offset": "0x03"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "Sample Music 1"
+        },
+        {
+          "kind": "title",
+          "code": "0x02",
+          "title": "Sample Music 2"
+        },
+        {
+          "kind": "title",
+          "code": "0x03",
+          "title": "Sample Music 3"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/mucom88.xml",
+      "source_order": 3356,
+      "archive": "MUCOM88_V1.7",
+      "id": "mucom88-v1-7-opna"
+    },
+    {
+      "title": "[PC-8801] ACTRAISER (MUCOM88)",
+      "driver": {
+        "name": "pc88",
+        "type": "opna",
+        "alias": "MUCOM88",
+        "platform": "NEC PC-8801"
+      },
+      "options": [
+        {
+          "name": "mdata_addr",
+          "value": "0x0001"
+        },
+        {
+          "name": "init_pc",
+          "value": "0x8000"
+        },
+        {
+          "name": "use_gvram",
+          "value": "1"
+        },
+        {
+          "name": "use_n88rom",
+          "value": "1"
+        },
+        {
+          "name": "debug_mem",
+          "value": "0xf300"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "patch",
+          "offset": "0x8000"
+        },
+        {
+          "type": "code",
+          "path": "errmsg",
+          "offset": "0x8800"
+        },
+        {
+          "type": "code",
+          "path": "music",
+          "offset": "0xb000"
+        },
+        {
+          "type": "code",
+          "path": "muc88",
+          "offset": "0x9600"
+        },
+        {
+          "type": "code",
+          "path": "msub",
+          "offset": "0x9000"
+        },
+        {
+          "type": "code",
+          "path": "expand",
+          "offset": "0xab00"
+        },
+        {
+          "type": "code",
+          "path": "voice.dat",
+          "offset": "0x6000"
+        },
+        {
+          "type": "code",
+          "path": "smon",
+          "offset": "0xde00"
+        },
+        {
+          "type": "code",
+          "path": "ssgdat",
+          "offset": "0x5e00"
+        },
+        {
+          "type": "code",
+          "path": "PCM_ACTRAISER.adr",
+          "offset": "0xe300"
+        },
+        {
+          "type": "adpcm",
+          "path": "VOICE.1",
+          "offset": "0x00000000"
+        },
+        {
+          "type": "adpcm",
+          "path": "VOICE.2",
+          "offset": "0x000007b0"
+        },
+        {
+          "type": "adpcm",
+          "path": "VOICE.3",
+          "offset": "0x00001440"
+        },
+        {
+          "type": "adpcm",
+          "path": "VOICE.4",
+          "offset": "0x00001e90"
+        },
+        {
+          "type": "adpcm",
+          "path": "VOICE.5",
+          "offset": "0x000026c0"
+        },
+        {
+          "type": "adpcm",
+          "path": "VOICE.6",
+          "offset": "0x000030e0"
+        },
+        {
+          "type": "adpcm",
+          "path": "VOICE.7",
+          "offset": "0x000039c0"
+        },
+        {
+          "type": "adpcm",
+          "path": "VOICE.8",
+          "offset": "0x00005958"
+        },
+        {
+          "type": "adpcm",
+          "path": "VOICE.9",
+          "offset": "0x00007f30"
+        },
+        {
+          "type": "adpcm",
+          "path": "VOICE.10",
+          "offset": "0x00009a98"
+        },
+        {
+          "type": "adpcm",
+          "path": "VOICE.11",
+          "offset": "0x0000a6f8"
+        },
+        {
+          "type": "adpcm",
+          "path": "VOICE.12",
+          "offset": "0x0000b380"
+        },
+        {
+          "type": "adpcm",
+          "path": "VOICE.13",
+          "offset": "0x0000bd30"
+        },
+        {
+          "type": "adpcm",
+          "path": "VOICE.14",
+          "offset": "0x0000c1b0"
+        },
+        {
+          "type": "adpcm",
+          "path": "VOICE.15",
+          "offset": "0x0000dc00"
+        },
+        {
+          "type": "adpcm",
+          "path": "VOICE.16",
+          "offset": "0x0000e090"
+        },
+        {
+          "type": "adpcm",
+          "path": "VOICE.17",
+          "offset": "0x0000f350"
+        },
+        {
+          "type": "adpcm",
+          "path": "VOICE.18",
+          "offset": "0x0000f880"
+        },
+        {
+          "type": "adpcm",
+          "path": "VOICE.19",
+          "offset": "0x00010160"
+        },
+        {
+          "type": "adpcm",
+          "path": "VOICE.20",
+          "offset": "0x00011e48"
+        },
+        {
+          "type": "adpcm",
+          "path": "VOICE.21",
+          "offset": "0x00013818"
+        },
+        {
+          "type": "bgm",
+          "path": "gh002",
+          "offset": "0x01"
+        },
+        {
+          "type": "bgm",
+          "path": "gh011",
+          "offset": "0x02"
+        },
+        {
+          "type": "bgm",
+          "path": "gh029",
+          "offset": "0x03"
+        },
+        {
+          "type": "bgm",
+          "path": "stg001",
+          "offset": "0x04"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "Filmoa"
+        },
+        {
+          "kind": "title",
+          "code": "0x02",
+          "title": "Blood Pool ~ Casandora"
+        },
+        {
+          "kind": "title",
+          "code": "0x03",
+          "title": "Sacrifices"
+        },
+        {
+          "kind": "title",
+          "code": "0x04",
+          "title": "Space Fight"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/mucom88.xml",
+      "source_order": 3357,
+      "archive": "MUCOM88_V1.5_ACTRAISER",
+      "id": "mucom88-v1-5-actraiser-opna"
+    },
+    {
+      "title": "[PC-8801] ALGARNA (MUCOM88)",
+      "driver": {
+        "name": "pc88",
+        "type": "opna",
+        "alias": "MUCOM88",
+        "platform": "NEC PC-8801"
+      },
+      "options": [
+        {
+          "name": "mdata_addr",
+          "value": "0x0001"
+        },
+        {
+          "name": "init_pc",
+          "value": "0x8000"
+        },
+        {
+          "name": "use_gvram",
+          "value": "1"
+        },
+        {
+          "name": "use_n88rom",
+          "value": "1"
+        },
+        {
+          "name": "debug_mem",
+          "value": "0xf300"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "patch",
+          "offset": "0x8000"
+        },
+        {
+          "type": "code",
+          "path": "errmsg",
+          "offset": "0x8800"
+        },
+        {
+          "type": "code",
+          "path": "music",
+          "offset": "0xb000"
+        },
+        {
+          "type": "code",
+          "path": "muc88",
+          "offset": "0x9600"
+        },
+        {
+          "type": "code",
+          "path": "msub",
+          "offset": "0x9000"
+        },
+        {
+          "type": "code",
+          "path": "expand",
+          "offset": "0xab00"
+        },
+        {
+          "type": "code",
+          "path": "voice.dat",
+          "offset": "0x6000"
+        },
+        {
+          "type": "code",
+          "path": "smon",
+          "offset": "0xde00"
+        },
+        {
+          "type": "code",
+          "path": "ssgdat",
+          "offset": "0x5e00"
+        },
+        {
+          "type": "code",
+          "path": "PCM.adr",
+          "offset": "0xe300"
+        },
+        {
+          "type": "adpcm",
+          "path": "VOICE.1",
+          "offset": "0x00000000"
+        },
+        {
+          "type": "adpcm",
+          "path": "VOICE.2",
+          "offset": "0x000003f8"
+        },
+        {
+          "type": "adpcm",
+          "path": "VOICE.3",
+          "offset": "0x00001088"
+        },
+        {
+          "type": "adpcm",
+          "path": "VOICE.4",
+          "offset": "0x00001ad8"
+        },
+        {
+          "type": "adpcm",
+          "path": "VOICE.5",
+          "offset": "0x00003a70"
+        },
+        {
+          "type": "adpcm",
+          "path": "VOICE.6",
+          "offset": "0x00006048"
+        },
+        {
+          "type": "adpcm",
+          "path": "VOICE.7",
+          "offset": "0x000067f0"
+        },
+        {
+          "type": "adpcm",
+          "path": "VOICE.8",
+          "offset": "0x00007450"
+        },
+        {
+          "type": "adpcm",
+          "path": "VOICE.9",
+          "offset": "0x000080d8"
+        },
+        {
+          "type": "adpcm",
+          "path": "VOICE.10",
+          "offset": "0x00009798"
+        },
+        {
+          "type": "adpcm",
+          "path": "VOICE.11",
+          "offset": "0x00009d68"
+        },
+        {
+          "type": "adpcm",
+          "path": "VOICE.12",
+          "offset": "0x0000a328"
+        },
+        {
+          "type": "adpcm",
+          "path": "VOICE.13",
+          "offset": "0x0000b7e0"
+        },
+        {
+          "type": "adpcm",
+          "path": "VOICE.14",
+          "offset": "0x0000bcf0"
+        },
+        {
+          "type": "adpcm",
+          "path": "VOICE.15",
+          "offset": "0x0000c070"
+        },
+        {
+          "type": "adpcm",
+          "path": "VOICE.16",
+          "offset": "0x0000d4a0"
+        },
+        {
+          "type": "bgm",
+          "path": "arg006",
+          "offset": "0x01"
+        },
+        {
+          "type": "bgm",
+          "path": "arg007",
+          "offset": "0x02"
+        },
+        {
+          "type": "bgm",
+          "path": "arg011",
+          "offset": "0x03"
+        },
+        {
+          "type": "bgm",
+          "path": "arg014",
+          "offset": "0x04"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "サルーンの城"
+        },
+        {
+          "kind": "title",
+          "code": "0x02",
+          "title": "バレンツでの戦闘"
+        },
+        {
+          "kind": "title",
+          "code": "0x03",
+          "title": "パトロンの山"
+        },
+        {
+          "kind": "title",
+          "code": "0x04",
+          "title": "カラクームの町"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/mucom88.xml",
+      "source_order": 3358,
+      "archive": "MUCOM88_V1.7_ALGARNA",
+      "id": "mucom88-v1-7-algarna-opna"
+    },
+    {
+      "title": "[PC-8801] BARE KNUCKLE (MUCOM88)",
+      "driver": {
+        "name": "pc88",
+        "type": "opna",
+        "alias": "MUCOM88",
+        "platform": "NEC PC-8801"
+      },
+      "options": [
+        {
+          "name": "mdata_addr",
+          "value": "0x0001"
+        },
+        {
+          "name": "init_pc",
+          "value": "0x8000"
+        },
+        {
+          "name": "use_gvram",
+          "value": "1"
+        },
+        {
+          "name": "use_n88rom",
+          "value": "1"
+        },
+        {
+          "name": "debug_mem",
+          "value": "0xf300"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "patch",
+          "offset": "0x8000"
+        },
+        {
+          "type": "code",
+          "path": "errmsg",
+          "offset": "0x8800"
+        },
+        {
+          "type": "code",
+          "path": "music",
+          "offset": "0xb000"
+        },
+        {
+          "type": "code",
+          "path": "muc88",
+          "offset": "0x9600"
+        },
+        {
+          "type": "code",
+          "path": "msub",
+          "offset": "0x9000"
+        },
+        {
+          "type": "code",
+          "path": "expand",
+          "offset": "0xab00"
+        },
+        {
+          "type": "code",
+          "path": "voice.dat",
+          "offset": "0x6000"
+        },
+        {
+          "type": "code",
+          "path": "smon",
+          "offset": "0xde00"
+        },
+        {
+          "type": "code",
+          "path": "ssgdat",
+          "offset": "0x5e00"
+        },
+        {
+          "type": "code",
+          "path": "PCM_BARE_KNUCKLE.adr",
+          "offset": "0xe300"
+        },
+        {
+          "type": "adpcm",
+          "path": "VOICE.1",
+          "offset": "0x00000000"
+        },
+        {
+          "type": "adpcm",
+          "path": "VOICE.2",
+          "offset": "0x000005d0"
+        },
+        {
+          "type": "adpcm",
+          "path": "VOICE.3",
+          "offset": "0x00000b90"
+        },
+        {
+          "type": "adpcm",
+          "path": "VOICE.4",
+          "offset": "0x000013a0"
+        },
+        {
+          "type": "adpcm",
+          "path": "VOICE.5",
+          "offset": "0x00002858"
+        },
+        {
+          "type": "bgm",
+          "path": "stk004",
+          "offset": "0x01"
+        },
+        {
+          "type": "bgm",
+          "path": "stk013",
+          "offset": "0x02"
+        },
+        {
+          "type": "bgm",
+          "path": "stk020",
+          "offset": "0x03"
+        },
+        {
+          "type": "bgm",
+          "path": "stk023",
+          "offset": "0x04"
+        },
+        {
+          "type": "bgm",
+          "path": "stk027",
+          "offset": "0x05"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "Fighting in the Street"
+        },
+        {
+          "kind": "title",
+          "code": "0x02",
+          "title": "Attack the Barbarian"
+        },
+        {
+          "kind": "title",
+          "code": "0x03",
+          "title": "Stealthy Steps"
+        },
+        {
+          "kind": "title",
+          "code": "0x04",
+          "title": "The Street of Rage"
+        },
+        {
+          "kind": "title",
+          "code": "0x05",
+          "title": "Moon Beach"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/mucom88.xml",
+      "source_order": 3359,
+      "archive": "MUCOM88_V1.5_BARE_KNUCKLE",
+      "id": "mucom88-v1-5-bare-knuckle-opna"
+    },
+    {
+      "title": "[PC-8801] BARE KNUCKLE2 (MUCOM88)",
+      "driver": {
+        "name": "pc88",
+        "type": "opna",
+        "alias": "MUCOM88",
+        "platform": "NEC PC-8801"
+      },
+      "options": [
+        {
+          "name": "mdata_addr",
+          "value": "0x0001"
+        },
+        {
+          "name": "mdata_size",
+          "value": "0x2400"
+        },
+        {
+          "name": "mfile_size",
+          "value": "0x2400"
+        },
+        {
+          "name": "init_pc",
+          "value": "0x8000"
+        },
+        {
+          "name": "use_gvram",
+          "value": "1"
+        },
+        {
+          "name": "use_n88rom",
+          "value": "1"
+        },
+        {
+          "name": "debug_mem",
+          "value": "0xf300"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "patch",
+          "offset": "0x8000"
+        },
+        {
+          "type": "code",
+          "path": "errmsg",
+          "offset": "0x8800"
+        },
+        {
+          "type": "code",
+          "path": "music",
+          "offset": "0xb000"
+        },
+        {
+          "type": "code",
+          "path": "muc88",
+          "offset": "0x9600"
+        },
+        {
+          "type": "code",
+          "path": "msub",
+          "offset": "0x9000"
+        },
+        {
+          "type": "code",
+          "path": "expand",
+          "offset": "0xab00"
+        },
+        {
+          "type": "code",
+          "path": "voice.dat",
+          "offset": "0x6000"
+        },
+        {
+          "type": "code",
+          "path": "smon",
+          "offset": "0xde00"
+        },
+        {
+          "type": "code",
+          "path": "ssgdat",
+          "offset": "0x5e00"
+        },
+        {
+          "type": "code",
+          "path": "PCM_BARE_KNUCKLE2.adr",
+          "offset": "0xe300"
+        },
+        {
+          "type": "adpcm",
+          "path": "VOICE.1",
+          "offset": "0x00000000"
+        },
+        {
+          "type": "adpcm",
+          "path": "VOICE.2",
+          "offset": "0x00000648"
+        },
+        {
+          "type": "adpcm",
+          "path": "VOICE.3",
+          "offset": "0x00000da0"
+        },
+        {
+          "type": "bgm",
+          "path": "bare03",
+          "offset": "0x01"
+        },
+        {
+          "type": "bgm",
+          "path": "bare04",
+          "offset": "0x02"
+        },
+        {
+          "type": "bgm",
+          "path": "bare09",
+          "offset": "0x03"
+        },
+        {
+          "type": "bgm",
+          "path": "bare12",
+          "offset": "0x04"
+        },
+        {
+          "type": "bgm",
+          "path": "bare16",
+          "offset": "0x05"
+        },
+        {
+          "type": "bgm",
+          "path": "bare21",
+          "offset": "0x06"
+        },
+        {
+          "type": "bgm",
+          "path": "bare75",
+          "offset": "0x07"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "Go Straight"
+        },
+        {
+          "kind": "title",
+          "code": "0x02",
+          "title": "Never Return Alive"
+        },
+        {
+          "kind": "title",
+          "code": "0x03",
+          "title": "Too Deep"
+        },
+        {
+          "kind": "title",
+          "code": "0x04",
+          "title": "Round Clear"
+        },
+        {
+          "kind": "title",
+          "code": "0x05",
+          "title": "Dreamer"
+        },
+        {
+          "kind": "title",
+          "code": "0x06",
+          "title": "Alien Power"
+        },
+        {
+          "kind": "title",
+          "code": "0x07",
+          "title": "Expander"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/mucom88.xml",
+      "source_order": 3360,
+      "archive": "MUCOM88_V1.7_BARE_KNUCKLE2",
+      "id": "mucom88-v1-7-bare-knuckle2-opna"
+    },
+    {
+      "title": "[PC-8801] BOSCONIAN (MUCOM88)",
+      "driver": {
+        "name": "pc88",
+        "type": "opna",
+        "alias": "MUCOM88",
+        "platform": "NEC PC-8801"
+      },
+      "options": [
+        {
+          "name": "mdata_addr",
+          "value": "0x0001"
+        },
+        {
+          "name": "mdata_size",
+          "value": "0x2800"
+        },
+        {
+          "name": "mfile_size",
+          "value": "0x2800"
+        },
+        {
+          "name": "init_pc",
+          "value": "0x8000"
+        },
+        {
+          "name": "use_gvram",
+          "value": "1"
+        },
+        {
+          "name": "use_n88rom",
+          "value": "1"
+        },
+        {
+          "name": "debug_mem",
+          "value": "0xf300"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "patch",
+          "offset": "0x8000"
+        },
+        {
+          "type": "code",
+          "path": "errmsg",
+          "offset": "0x8800"
+        },
+        {
+          "type": "code",
+          "path": "music",
+          "offset": "0xb000"
+        },
+        {
+          "type": "code",
+          "path": "muc88",
+          "offset": "0x9600"
+        },
+        {
+          "type": "code",
+          "path": "msub",
+          "offset": "0x9000"
+        },
+        {
+          "type": "code",
+          "path": "expand",
+          "offset": "0xab00"
+        },
+        {
+          "type": "code",
+          "path": "voice.dat",
+          "offset": "0x6000"
+        },
+        {
+          "type": "code",
+          "path": "smon",
+          "offset": "0xde00"
+        },
+        {
+          "type": "code",
+          "path": "ssgdat",
+          "offset": "0x5e00"
+        },
+        {
+          "type": "code",
+          "path": "PCM_BOSCONIAN.adr",
+          "offset": "0xe300"
+        },
+        {
+          "type": "adpcm",
+          "path": "VOICE.1",
+          "offset": "0x00000000"
+        },
+        {
+          "type": "adpcm",
+          "path": "VOICE.2",
+          "offset": "0x000003b8"
+        },
+        {
+          "type": "adpcm",
+          "path": "VOICE.3",
+          "offset": "0x00001290"
+        },
+        {
+          "type": "adpcm",
+          "path": "VOICE.4",
+          "offset": "0x00002418"
+        },
+        {
+          "type": "adpcm",
+          "path": "VOICE.5",
+          "offset": "0x000028a8"
+        },
+        {
+          "type": "adpcm",
+          "path": "VOICE.6",
+          "offset": "0x00003130"
+        },
+        {
+          "type": "adpcm",
+          "path": "VOICE.7",
+          "offset": "0x00005210"
+        },
+        {
+          "type": "adpcm",
+          "path": "VOICE.8",
+          "offset": "0x00007470"
+        },
+        {
+          "type": "adpcm",
+          "path": "VOICE.9",
+          "offset": "0x000092e0"
+        },
+        {
+          "type": "adpcm",
+          "path": "VOICE.10",
+          "offset": "0x000094e8"
+        },
+        {
+          "type": "adpcm",
+          "path": "VOICE.11",
+          "offset": "0x0000a430"
+        },
+        {
+          "type": "adpcm",
+          "path": "VOICE.12",
+          "offset": "0x0000a7b0"
+        },
+        {
+          "type": "adpcm",
+          "path": "VOICE.13",
+          "offset": "0x0000be70"
+        },
+        {
+          "type": "adpcm",
+          "path": "VOICE.14",
+          "offset": "0x0000c280"
+        },
+        {
+          "type": "adpcm",
+          "path": "VOICE.15",
+          "offset": "0x0000c6e8"
+        },
+        {
+          "type": "adpcm",
+          "path": "VOICE.16",
+          "offset": "0x0000ca30"
+        },
+        {
+          "type": "adpcm",
+          "path": "VOICE.17",
+          "offset": "0x0000cf40"
+        },
+        {
+          "type": "adpcm",
+          "path": "VOICE.18",
+          "offset": "0x0000d560"
+        },
+        {
+          "type": "adpcm",
+          "path": "VOICE.19",
+          "offset": "0x0000dd70"
+        },
+        {
+          "type": "adpcm",
+          "path": "VOICE.20",
+          "offset": "0x0000e5c8"
+        },
+        {
+          "type": "adpcm",
+          "path": "VOICE.21",
+          "offset": "0x0000e990"
+        },
+        {
+          "type": "adpcm",
+          "path": "VOICE.22",
+          "offset": "0x0000edd8"
+        },
+        {
+          "type": "adpcm",
+          "path": "VOICE.23",
+          "offset": "0x0000f2d0"
+        },
+        {
+          "type": "adpcm",
+          "path": "VOICE.24",
+          "offset": "0x0000f8a0"
+        },
+        {
+          "type": "adpcm",
+          "path": "VOICE.25",
+          "offset": "0x0000fcd0"
+        },
+        {
+          "type": "adpcm",
+          "path": "VOICE.26",
+          "offset": "0x000101e0"
+        },
+        {
+          "type": "adpcm",
+          "path": "VOICE.27",
+          "offset": "0x00010890"
+        },
+        {
+          "type": "bgm",
+          "path": "bos010",
+          "offset": "0x01"
+        },
+        {
+          "type": "bgm",
+          "path": "bos011",
+          "offset": "0x02"
+        },
+        {
+          "type": "bgm",
+          "path": "bos012",
+          "offset": "0x03"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "Blast Power!"
+        },
+        {
+          "kind": "title",
+          "code": "0x02",
+          "title": "Flash Flash Flash"
+        },
+        {
+          "kind": "title",
+          "code": "0x03",
+          "title": "Asteroid Memory"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/mucom88.xml",
+      "source_order": 3361,
+      "archive": "MUCOM88_V1.7_BOSCONIAN",
+      "id": "mucom88-v1-7-bosconian-opna"
+    },
+    {
+      "title": "[PC-8801] Etrian Odyssey (MUCOM88)",
+      "driver": {
+        "name": "pc88",
+        "type": "opna",
+        "alias": "MUCOM88",
+        "platform": "NEC PC-8801"
+      },
+      "options": [
+        {
+          "name": "mdata_addr",
+          "value": "0x0001"
+        },
+        {
+          "name": "init_pc",
+          "value": "0x8000"
+        },
+        {
+          "name": "use_gvram",
+          "value": "1"
+        },
+        {
+          "name": "use_n88rom",
+          "value": "1"
+        },
+        {
+          "name": "debug_mem",
+          "value": "0xf300"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "patch",
+          "offset": "0x8000"
+        },
+        {
+          "type": "code",
+          "path": "errmsg",
+          "offset": "0x8800"
+        },
+        {
+          "type": "code",
+          "path": "music",
+          "offset": "0xb000"
+        },
+        {
+          "type": "code",
+          "path": "muc88",
+          "offset": "0x9600"
+        },
+        {
+          "type": "code",
+          "path": "msub",
+          "offset": "0x9000"
+        },
+        {
+          "type": "code",
+          "path": "expand",
+          "offset": "0xab00"
+        },
+        {
+          "type": "code",
+          "path": "voice.dat",
+          "offset": "0x6000"
+        },
+        {
+          "type": "code",
+          "path": "smon",
+          "offset": "0xde00"
+        },
+        {
+          "type": "code",
+          "path": "ssgdat",
+          "offset": "0x5e00"
+        },
+        {
+          "type": "code",
+          "path": "PCM_Etrian_Odyssey.adr",
+          "offset": "0xe300"
+        },
+        {
+          "type": "adpcm",
+          "path": "VOICE.1",
+          "offset": "0x00000000"
+        },
+        {
+          "type": "adpcm",
+          "path": "VOICE.2",
+          "offset": "0x00000648"
+        },
+        {
+          "type": "adpcm",
+          "path": "VOICE.3",
+          "offset": "0x00000da0"
+        },
+        {
+          "type": "adpcm",
+          "path": "VOICE.1",
+          "offset": "0x00000000"
+        },
+        {
+          "type": "adpcm",
+          "path": "VOICE.2",
+          "offset": "0x000003b8"
+        },
+        {
+          "type": "adpcm",
+          "path": "VOICE.3",
+          "offset": "0x00000d00"
+        },
+        {
+          "type": "adpcm",
+          "path": "VOICE.4",
+          "offset": "0x00001570"
+        },
+        {
+          "type": "adpcm",
+          "path": "VOICE.5",
+          "offset": "0x00004e80"
+        },
+        {
+          "type": "adpcm",
+          "path": "VOICE.6",
+          "offset": "0x00008878"
+        },
+        {
+          "type": "adpcm",
+          "path": "VOICE.7",
+          "offset": "0x00008b60"
+        },
+        {
+          "type": "adpcm",
+          "path": "VOICE.8",
+          "offset": "0x0000a7d0"
+        },
+        {
+          "type": "adpcm",
+          "path": "VOICE.9",
+          "offset": "0x0000b208"
+        },
+        {
+          "type": "adpcm",
+          "path": "VOICE.10",
+          "offset": "0x0000c0c8"
+        },
+        {
+          "type": "adpcm",
+          "path": "VOICE.11",
+          "offset": "0x0000ce48"
+        },
+        {
+          "type": "adpcm",
+          "path": "VOICE.12",
+          "offset": "0x0000d7f8"
+        },
+        {
+          "type": "adpcm",
+          "path": "VOICE.13",
+          "offset": "0x0000d920"
+        },
+        {
+          "type": "adpcm",
+          "path": "VOICE.14",
+          "offset": "0x0000de88"
+        },
+        {
+          "type": "adpcm",
+          "path": "VOICE.15",
+          "offset": "0x0000f8b0"
+        },
+        {
+          "type": "adpcm",
+          "path": "VOICE.16",
+          "offset": "0x00010010"
+        },
+        {
+          "type": "adpcm",
+          "path": "VOICE.17",
+          "offset": "0x00011528"
+        },
+        {
+          "type": "adpcm",
+          "path": "VOICE.18",
+          "offset": "0x00011720"
+        },
+        {
+          "type": "adpcm",
+          "path": "VOICE.19",
+          "offset": "0x00013268"
+        },
+        {
+          "type": "adpcm",
+          "path": "VOICE.20",
+          "offset": "0x000133d8"
+        },
+        {
+          "type": "adpcm",
+          "path": "VOICE.21",
+          "offset": "0x00013e38"
+        },
+        {
+          "type": "adpcm",
+          "path": "VOICE.22",
+          "offset": "0x000142a8"
+        },
+        {
+          "type": "adpcm",
+          "path": "VOICE.23",
+          "offset": "0x000145c0"
+        },
+        {
+          "type": "adpcm",
+          "path": "VOICE.24",
+          "offset": "0x00014cd0"
+        },
+        {
+          "type": "adpcm",
+          "path": "VOICE.25",
+          "offset": "0x00015318"
+        },
+        {
+          "type": "bgm",
+          "path": "sq1_10.3",
+          "offset": "0x01"
+        },
+        {
+          "type": "bgm",
+          "path": "sq1_10.4",
+          "offset": "0x02"
+        },
+        {
+          "type": "bgm",
+          "path": "sq1_11.2",
+          "offset": "0x03"
+        },
+        {
+          "type": "bgm",
+          "path": "sq1_11.5",
+          "offset": "0x04"
+        },
+        {
+          "type": "bgm",
+          "path": "sq1_ou.t06",
+          "offset": "0x05"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "迷宮Ⅰ 翠緑ノ樹海"
+        },
+        {
+          "kind": "title",
+          "code": "0x02",
+          "title": "鉄華 初太刀"
+        },
+        {
+          "kind": "title",
+          "code": "0x03",
+          "title": "戦場 朱にそまる"
+        },
+        {
+          "kind": "title",
+          "code": "0x04",
+          "title": "鉄華 討ち果て朽ち果て"
+        },
+        {
+          "kind": "title",
+          "code": "0x05",
+          "title": "眠らずの戦場"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/mucom88.xml",
+      "source_order": 3362,
+      "archive": "MUCOM88_V1.7_Etrian_Odyssey",
+      "id": "mucom88-v1-7-etrian-odyssey-opna"
+    },
+    {
+      "title": "[PC-8801] MISTY BLUE (MUCOM88)",
+      "driver": {
+        "name": "pc88",
+        "type": "opna",
+        "alias": "MUCOM88",
+        "platform": "NEC PC-8801"
+      },
+      "options": [
+        {
+          "name": "mdata_addr",
+          "value": "0x0001"
+        },
+        {
+          "name": "init_pc",
+          "value": "0x8000"
+        },
+        {
+          "name": "use_gvram",
+          "value": "1"
+        },
+        {
+          "name": "use_n88rom",
+          "value": "1"
+        },
+        {
+          "name": "debug_mem",
+          "value": "0xf300"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "patch",
+          "offset": "0x8000"
+        },
+        {
+          "type": "code",
+          "path": "errmsg",
+          "offset": "0x8800"
+        },
+        {
+          "type": "code",
+          "path": "music",
+          "offset": "0xb000"
+        },
+        {
+          "type": "code",
+          "path": "muc88",
+          "offset": "0x9600"
+        },
+        {
+          "type": "code",
+          "path": "msub",
+          "offset": "0x9000"
+        },
+        {
+          "type": "code",
+          "path": "expand",
+          "offset": "0xab00"
+        },
+        {
+          "type": "code",
+          "path": "voice.dat",
+          "offset": "0x6000"
+        },
+        {
+          "type": "code",
+          "path": "smon",
+          "offset": "0xde00"
+        },
+        {
+          "type": "code",
+          "path": "ssgdat",
+          "offset": "0x5e00"
+        },
+        {
+          "type": "code",
+          "path": "PCM_MISTY_BLUE.adr",
+          "offset": "0xe300"
+        },
+        {
+          "type": "adpcm",
+          "path": "VOICE.1",
+          "offset": "0x00000000"
+        },
+        {
+          "type": "adpcm",
+          "path": "VOICE.2",
+          "offset": "0x000007b0"
+        },
+        {
+          "type": "adpcm",
+          "path": "VOICE.3",
+          "offset": "0x00001440"
+        },
+        {
+          "type": "adpcm",
+          "path": "VOICE.4",
+          "offset": "0x00001e90"
+        },
+        {
+          "type": "adpcm",
+          "path": "VOICE.5",
+          "offset": "0x000026c0"
+        },
+        {
+          "type": "adpcm",
+          "path": "VOICE.6",
+          "offset": "0x000030e0"
+        },
+        {
+          "type": "adpcm",
+          "path": "VOICE.7",
+          "offset": "0x000039c0"
+        },
+        {
+          "type": "adpcm",
+          "path": "VOICE.8",
+          "offset": "0x00005958"
+        },
+        {
+          "type": "adpcm",
+          "path": "VOICE.9",
+          "offset": "0x00007f30"
+        },
+        {
+          "type": "adpcm",
+          "path": "VOICE.10",
+          "offset": "0x00009a98"
+        },
+        {
+          "type": "adpcm",
+          "path": "VOICE.11",
+          "offset": "0x0000a6f8"
+        },
+        {
+          "type": "adpcm",
+          "path": "VOICE.12",
+          "offset": "0x0000b380"
+        },
+        {
+          "type": "adpcm",
+          "path": "VOICE.13",
+          "offset": "0x0000bd30"
+        },
+        {
+          "type": "adpcm",
+          "path": "VOICE.14",
+          "offset": "0x0000c1b0"
+        },
+        {
+          "type": "adpcm",
+          "path": "VOICE.15",
+          "offset": "0x0000dc00"
+        },
+        {
+          "type": "adpcm",
+          "path": "VOICE.16",
+          "offset": "0x0000e090"
+        },
+        {
+          "type": "adpcm",
+          "path": "VOICE.17",
+          "offset": "0x0000f350"
+        },
+        {
+          "type": "adpcm",
+          "path": "VOICE.18",
+          "offset": "0x0000f880"
+        },
+        {
+          "type": "adpcm",
+          "path": "VOICE.19",
+          "offset": "0x00010160"
+        },
+        {
+          "type": "adpcm",
+          "path": "VOICE.20",
+          "offset": "0x00011e48"
+        },
+        {
+          "type": "adpcm",
+          "path": "VOICE.21",
+          "offset": "0x00012b70"
+        },
+        {
+          "type": "bgm",
+          "path": "disco1",
+          "offset": "0x01"
+        },
+        {
+          "type": "bgm",
+          "path": "disco3",
+          "offset": "0x02"
+        },
+        {
+          "type": "bgm",
+          "path": "disco4",
+          "offset": "0x03"
+        },
+        {
+          "type": "bgm",
+          "path": "hrock1",
+          "offset": "0x04"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "Misty Blue"
+        },
+        {
+          "kind": "title",
+          "code": "0x02",
+          "title": "Catch the step"
+        },
+        {
+          "kind": "title",
+          "code": "0x03",
+          "title": "Hold me tonight"
+        },
+        {
+          "kind": "title",
+          "code": "0x04",
+          "title": "Opening"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/mucom88.xml",
+      "source_order": 3363,
+      "archive": "MUCOM88_V1.5_MISTY_BLUE",
+      "id": "mucom88-v1-5-misty-blue-opna"
+    },
+    {
+      "title": "[PC-8801] SLAP FIGHT MD (MUCOM88)",
+      "driver": {
+        "name": "pc88",
+        "type": "opna",
+        "alias": "MUCOM88",
+        "platform": "NEC PC-8801"
+      },
+      "options": [
+        {
+          "name": "mdata_addr",
+          "value": "0x0001"
+        },
+        {
+          "name": "init_pc",
+          "value": "0x8000"
+        },
+        {
+          "name": "use_gvram",
+          "value": "1"
+        },
+        {
+          "name": "use_n88rom",
+          "value": "1"
+        },
+        {
+          "name": "debug_mem",
+          "value": "0xf300"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "patch",
+          "offset": "0x8000"
+        },
+        {
+          "type": "code",
+          "path": "errmsg",
+          "offset": "0x8800"
+        },
+        {
+          "type": "code",
+          "path": "music",
+          "offset": "0xb000"
+        },
+        {
+          "type": "code",
+          "path": "muc88",
+          "offset": "0x9600"
+        },
+        {
+          "type": "code",
+          "path": "msub",
+          "offset": "0x9000"
+        },
+        {
+          "type": "code",
+          "path": "expand",
+          "offset": "0xab00"
+        },
+        {
+          "type": "code",
+          "path": "voice.dat",
+          "offset": "0x6000"
+        },
+        {
+          "type": "code",
+          "path": "smon",
+          "offset": "0xde00"
+        },
+        {
+          "type": "code",
+          "path": "ssgdat",
+          "offset": "0x5e00"
+        },
+        {
+          "type": "code",
+          "path": "PCM.adr",
+          "offset": "0xe300"
+        },
+        {
+          "type": "adpcm",
+          "path": "VOICE.1",
+          "offset": "0x00000000"
+        },
+        {
+          "type": "adpcm",
+          "path": "VOICE.2",
+          "offset": "0x000003f8"
+        },
+        {
+          "type": "adpcm",
+          "path": "VOICE.3",
+          "offset": "0x00001088"
+        },
+        {
+          "type": "adpcm",
+          "path": "VOICE.4",
+          "offset": "0x00001ad8"
+        },
+        {
+          "type": "adpcm",
+          "path": "VOICE.5",
+          "offset": "0x00003a70"
+        },
+        {
+          "type": "adpcm",
+          "path": "VOICE.6",
+          "offset": "0x00006048"
+        },
+        {
+          "type": "adpcm",
+          "path": "VOICE.7",
+          "offset": "0x000067f0"
+        },
+        {
+          "type": "adpcm",
+          "path": "VOICE.8",
+          "offset": "0x00007450"
+        },
+        {
+          "type": "adpcm",
+          "path": "VOICE.9",
+          "offset": "0x000080d8"
+        },
+        {
+          "type": "adpcm",
+          "path": "VOICE.10",
+          "offset": "0x00009798"
+        },
+        {
+          "type": "adpcm",
+          "path": "VOICE.11",
+          "offset": "0x00009d68"
+        },
+        {
+          "type": "adpcm",
+          "path": "VOICE.12",
+          "offset": "0x0000a328"
+        },
+        {
+          "type": "adpcm",
+          "path": "VOICE.13",
+          "offset": "0x0000b7e0"
+        },
+        {
+          "type": "adpcm",
+          "path": "VOICE.14",
+          "offset": "0x0000bcf0"
+        },
+        {
+          "type": "adpcm",
+          "path": "VOICE.15",
+          "offset": "0x0000c070"
+        },
+        {
+          "type": "adpcm",
+          "path": "VOICE.16",
+          "offset": "0x0000d4a0"
+        },
+        {
+          "type": "bgm",
+          "path": "slp005.b",
+          "offset": "0x01"
+        },
+        {
+          "type": "bgm",
+          "path": "slp010",
+          "offset": "0x02"
+        },
+        {
+          "type": "bgm",
+          "path": "slp020",
+          "offset": "0x03"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "飛翔"
+        },
+        {
+          "kind": "title",
+          "code": "0x02",
+          "title": "作戦"
+        },
+        {
+          "kind": "title",
+          "code": "0x03",
+          "title": "希望"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/mucom88.xml",
+      "source_order": 3364,
+      "archive": "MUCOM88_V1.7_SLAP_FIGHT_MD",
+      "id": "mucom88-v1-7-slap-fight-md-opna"
+    },
+    {
+      "title": "[PC-8801] THE SCHEME (MUCOM88)",
+      "driver": {
+        "name": "pc88",
+        "type": "opna",
+        "alias": "MUCOM88",
+        "platform": "NEC PC-8801"
+      },
+      "options": [
+        {
+          "name": "mdata_addr",
+          "value": "0x0001"
+        },
+        {
+          "name": "init_pc",
+          "value": "0x8000"
+        },
+        {
+          "name": "use_gvram",
+          "value": "1"
+        },
+        {
+          "name": "use_n88rom",
+          "value": "1"
+        },
+        {
+          "name": "debug_mem",
+          "value": "0xf300"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "patch",
+          "offset": "0x8000"
+        },
+        {
+          "type": "code",
+          "path": "errmsg",
+          "offset": "0x8800"
+        },
+        {
+          "type": "code",
+          "path": "music",
+          "offset": "0xb000"
+        },
+        {
+          "type": "code",
+          "path": "muc88",
+          "offset": "0x9600"
+        },
+        {
+          "type": "code",
+          "path": "msub",
+          "offset": "0x9000"
+        },
+        {
+          "type": "code",
+          "path": "expand",
+          "offset": "0xab00"
+        },
+        {
+          "type": "code",
+          "path": "voice.dat",
+          "offset": "0x6000"
+        },
+        {
+          "type": "code",
+          "path": "smon",
+          "offset": "0xde00"
+        },
+        {
+          "type": "code",
+          "path": "ssgdat",
+          "offset": "0x5e00"
+        },
+        {
+          "type": "code",
+          "path": "PCM_THE_SCHEME.adr",
+          "offset": "0xe300"
+        },
+        {
+          "type": "adpcm",
+          "path": "VOICE.1",
+          "offset": "0x00000000"
+        },
+        {
+          "type": "adpcm",
+          "path": "VOICE.2",
+          "offset": "0x00000c88"
+        },
+        {
+          "type": "adpcm",
+          "path": "VOICE.3",
+          "offset": "0x00001968"
+        },
+        {
+          "type": "adpcm",
+          "path": "VOICE.4",
+          "offset": "0x000024f8"
+        },
+        {
+          "type": "adpcm",
+          "path": "VOICE.5",
+          "offset": "0x00002800"
+        },
+        {
+          "type": "adpcm",
+          "path": "VOICE.6",
+          "offset": "0x00002c08"
+        },
+        {
+          "type": "adpcm",
+          "path": "VOICE.7",
+          "offset": "0x00002e68"
+        },
+        {
+          "type": "adpcm",
+          "path": "VOICE.8",
+          "offset": "0x00003fb8"
+        },
+        {
+          "type": "adpcm",
+          "path": "VOICE.9",
+          "offset": "0x000048a8"
+        },
+        {
+          "type": "adpcm",
+          "path": "VOICE.10",
+          "offset": "0x00005400"
+        },
+        {
+          "type": "adpcm",
+          "path": "VOICE.11",
+          "offset": "0x00005ac8"
+        },
+        {
+          "type": "adpcm",
+          "path": "VOICE.12",
+          "offset": "0x000065d0"
+        },
+        {
+          "type": "adpcm",
+          "path": "VOICE.13",
+          "offset": "0x00007140"
+        },
+        {
+          "type": "adpcm",
+          "path": "VOICE.14",
+          "offset": "0x0000b140"
+        },
+        {
+          "type": "adpcm",
+          "path": "VOICE.15",
+          "offset": "0x0000cb90"
+        },
+        {
+          "type": "adpcm",
+          "path": "VOICE.16",
+          "offset": "0x0000d468"
+        },
+        {
+          "type": "adpcm",
+          "path": "VOICE.17",
+          "offset": "0x0000e100"
+        },
+        {
+          "type": "adpcm",
+          "path": "VOICE.18",
+          "offset": "0x0000e738"
+        },
+        {
+          "type": "adpcm",
+          "path": "VOICE.19",
+          "offset": "0x0000efa0"
+        },
+        {
+          "type": "adpcm",
+          "path": "VOICE.20",
+          "offset": "0x0000fc20"
+        },
+        {
+          "type": "adpcm",
+          "path": "VOICE.21",
+          "offset": "0x00012b70"
+        },
+        {
+          "type": "adpcm",
+          "path": "VOICE.22",
+          "offset": "0x000134e8"
+        },
+        {
+          "type": "adpcm",
+          "path": "VOICE.23",
+          "offset": "0x00017258"
+        },
+        {
+          "type": "adpcm",
+          "path": "VOICE.24",
+          "offset": "0x000179b8"
+        },
+        {
+          "type": "adpcm",
+          "path": "VOICE.25",
+          "offset": "0x0001b298"
+        },
+        {
+          "type": "adpcm",
+          "path": "VOICE.26",
+          "offset": "0x0001b7e8"
+        },
+        {
+          "type": "adpcm",
+          "path": "VOICE.27",
+          "offset": "0x0001bcf8"
+        },
+        {
+          "type": "adpcm",
+          "path": "VOICE.28",
+          "offset": "0x0001c0b0"
+        },
+        {
+          "type": "adpcm",
+          "path": "VOICE.29",
+          "offset": "0x0001c798"
+        },
+        {
+          "type": "bgm",
+          "path": "pcmt12",
+          "offset": "0x01"
+        },
+        {
+          "type": "bgm",
+          "path": "pcmt13",
+          "offset": "0x02"
+        },
+        {
+          "type": "bgm",
+          "path": "pcmt16",
+          "offset": "0x03"
+        },
+        {
+          "type": "bgm",
+          "path": "pcmt17",
+          "offset": "0x04"
+        },
+        {
+          "type": "bgm",
+          "path": "pcmt18",
+          "offset": "0x05"
+        },
+        {
+          "type": "bgm",
+          "path": "pcmt20",
+          "offset": "0x06"
+        },
+        {
+          "type": "bgm",
+          "path": "pcmt31",
+          "offset": "0x07"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "I'LL SAVE YOU ALL MY JUSTICE"
+        },
+        {
+          "kind": "title",
+          "code": "0x02",
+          "title": "PERPETUAL DARK!"
+        },
+        {
+          "kind": "title",
+          "code": "0x03",
+          "title": "SHOUT DOWN"
+        },
+        {
+          "kind": "title",
+          "code": "0x04",
+          "title": "THOUSAND EYES"
+        },
+        {
+          "kind": "title",
+          "code": "0x05",
+          "title": "DEATH WORLD"
+        },
+        {
+          "kind": "title",
+          "code": "0x06",
+          "title": "THE FORCE ROTTED AWAY"
+        },
+        {
+          "kind": "title",
+          "code": "0x07",
+          "title": "CHALLENGING TOMORROW"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/mucom88.xml",
+      "source_order": 3365,
+      "archive": "MUCOM88_V1.5_THE_SCHEME",
+      "id": "mucom88-v1-5-the-scheme-opna"
+    },
+    {
+      "title": "[PC-8801] THE SUPER SHINOBI (MUCOM88)",
+      "driver": {
+        "name": "pc88",
+        "type": "opna",
+        "alias": "MUCOM88",
+        "platform": "NEC PC-8801"
+      },
+      "options": [
+        {
+          "name": "mdata_addr",
+          "value": "0x0001"
+        },
+        {
+          "name": "init_pc",
+          "value": "0x8000"
+        },
+        {
+          "name": "use_gvram",
+          "value": "1"
+        },
+        {
+          "name": "use_n88rom",
+          "value": "1"
+        },
+        {
+          "name": "debug_mem",
+          "value": "0xf300"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "patch",
+          "offset": "0x8000"
+        },
+        {
+          "type": "code",
+          "path": "errmsg",
+          "offset": "0x8800"
+        },
+        {
+          "type": "code",
+          "path": "music",
+          "offset": "0xb000"
+        },
+        {
+          "type": "code",
+          "path": "muc88",
+          "offset": "0x9600"
+        },
+        {
+          "type": "code",
+          "path": "msub",
+          "offset": "0x9000"
+        },
+        {
+          "type": "code",
+          "path": "expand",
+          "offset": "0xab00"
+        },
+        {
+          "type": "code",
+          "path": "voice.dat",
+          "offset": "0x6000"
+        },
+        {
+          "type": "code",
+          "path": "smon",
+          "offset": "0xde00"
+        },
+        {
+          "type": "code",
+          "path": "ssgdat",
+          "offset": "0x5e00"
+        },
+        {
+          "type": "code",
+          "path": "PCM_THE_SUPER_SHINOBI.adr",
+          "offset": "0xe300"
+        },
+        {
+          "type": "adpcm",
+          "path": "VOICE.1",
+          "offset": "0x00000000"
+        },
+        {
+          "type": "adpcm",
+          "path": "VOICE.2",
+          "offset": "0x000007b0"
+        },
+        {
+          "type": "adpcm",
+          "path": "VOICE.3",
+          "offset": "0x00001440"
+        },
+        {
+          "type": "adpcm",
+          "path": "VOICE.4",
+          "offset": "0x00001e90"
+        },
+        {
+          "type": "adpcm",
+          "path": "VOICE.5",
+          "offset": "0x00002088"
+        },
+        {
+          "type": "adpcm",
+          "path": "VOICE.6",
+          "offset": "0x000025b8"
+        },
+        {
+          "type": "bgm",
+          "path": "sin002",
+          "offset": "0x01"
+        },
+        {
+          "type": "bgm",
+          "path": "sin008",
+          "offset": "0x02"
+        },
+        {
+          "type": "bgm",
+          "path": "sin013",
+          "offset": "0x03"
+        },
+        {
+          "type": "bgm",
+          "path": "sin014",
+          "offset": "0x04"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "THE SHINOBI"
+        },
+        {
+          "kind": "title",
+          "code": "0x02",
+          "title": "CHINA TOWN"
+        },
+        {
+          "kind": "title",
+          "code": "0x03",
+          "title": "LIKE A WIND"
+        },
+        {
+          "kind": "title",
+          "code": "0x04",
+          "title": "SUNRISE BLVD."
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/mucom88.xml",
+      "source_order": 3366,
+      "archive": "MUCOM88_V1.5_THE_SUPER_SHINOBI",
+      "id": "mucom88-v1-5-the-super-shinobi-opna"
+    }
+  ]
+}

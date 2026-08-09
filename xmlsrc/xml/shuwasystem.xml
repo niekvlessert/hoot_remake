@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="hoot.xsl"?>
+<!DOCTYPE gamelist [
+	<!ELEMENT gamelist (game|bind|childlists)*>
+	<!ATTLIST gamelist date CDATA #IMPLIED>
+	<!ELEMENT childlists (list)*>
+	<!ELEMENT list (#PCDATA)>
+	<!ELEMENT bind (exts,driver,options?)>
+	<!ELEMENT exts (ext)*>
+	<!ELEMENT ext (#PCDATA)>
+	<!ELEMENT game (name,driver,driveralias?,options?,romlist?,titlelist?)>
+	<!ELEMENT name (#PCDATA)>
+	<!ELEMENT driver (#PCDATA)>
+	<!ATTLIST driver type CDATA #IMPLIED>
+	<!ELEMENT driveralias (#PCDATA)>
+	<!ATTLIST driveralias type CDATA #IMPLIED>
+	<!ELEMENT options (option)*>
+	<!ELEMENT option EMPTY>
+	<!ATTLIST option name CDATA #REQUIRED
+					 value CDATA #REQUIRED>
+	<!ELEMENT romlist (rom)*>
+	<!ATTLIST romlist archive CDATA #IMPLIED>
+	<!ELEMENT rom (#PCDATA)>
+	<!ATTLIST rom type CDATA #REQUIRED
+				  offset CDATA #IMPLIED
+				  crc32 CDATA #IMPLIED>
+	<!ELEMENT titlelist (title|range)*>
+	<!ELEMENT title (#PCDATA)>
+	<!ATTLIST title code CDATA #REQUIRED
+					type CDATA #IMPLIED>
+	<!ELEMENT range (#PCDATA)>
+	<!ATTLIST range min CDATA #REQUIRED
+					max CDATA #REQUIRED
+					extcode CDATA #IMPLIED
+					start CDATA #IMPLIED>
+
+]>
+<gamelist date="2025/03/29">
+	<!-- 秀和システムトレーディング/秀和システム -->
+	<game>
+		<name>[PC-9801] ゲームコレクション エクストラ NetHack(OPNA)</name>
+		<driver type="opna">pc98dos</driver>
+		<driveralias type="NEC PC-9801">秀和システムトレーディング</driveralias>
+		<options>
+			<option name="clockmul" value="0x08"/>
+		</options>
+		<romlist archive="nethack_98">
+			<rom type="file" offset="-1">FMPP.COM</rom>
+			<rom type="file" offset="-1">FMP.COM</rom>
+			<rom type="file" offset="-1">NTHK.PVI</rom>
+			<rom type="file" offset="0x10">NTHK_01.OPI</rom>
+			<rom type="file" offset="0x11">NTHK_02.OPI</rom>
+			<rom type="file" offset="0x12">NTHK_03.OVI</rom>
+			<rom type="file" offset="0x13">NTHK_04.OPI</rom>
+			<rom type="file" offset="0x14">NTHK_05.OPI</rom>
+			<rom type="file" offset="0x15">NTHK_C.OPI</rom>
+			<rom type="file" offset="0x16">NTHK_L.OPI</rom>
+			<rom type="file" offset="0x17">NTHK_N.OPI</rom>
+			<rom type="file" offset="0x18">NTHK_X.OPI</rom>
+			<rom type="shell" offset="0">SET PVI=.</rom>
+			<rom type="shell" offset="0">FMP s /s /g</rom>
+			<rom type="shell" offset="0">FMPP</rom>
+		</romlist>
+		<titlelist>
+			<title code="0x18">NTHK_X.OPI  : NetHack - オ－プニング -</title>
+			<title code="0x15">NTHK_C.OPI  : NetHack - タイトルバック (Chaotic) -</title>
+			<title code="0x16">NTHK_L.OPI  : NetHack - タイトルバック (Lawful) -</title>
+			<title code="0x17">NTHK_N.OPI  : NetHack - タイトルバック (Neutral) -</title>
+			<title code="0x10">NTHK_01.OPI : NetHack - プレイングBGM -</title>
+			<title code="0x11">NTHK_02.OPI :  ･･･  Fiction.</title>
+			<title code="0x12">NTHK_03.OVI : NetHack - ﾌﾟﾚｲﾝｸﾞBGM SPBﾊﾞ-ｼﾞｮﾝ -</title>
+			<title code="0x13">NTHK_04.OPI : NetHack - ラウンドスタ－ト -</title>
+			<title code="0x14">NTHK_05.OPI : NetHack - レクイエム -</title>
+		</titlelist>
+	</game>
+	<game>
+		<name>[PC-9801] ゲームコレクション エクストラ NetHack(OPN)</name>
+		<driver type="opn">pc98dos</driver>
+		<driveralias type="NEC PC-9801">秀和システムトレーディング</driveralias>
+		<options>
+			<option name="clockmul" value="0x08"/>
+		</options>
+		<romlist archive="nethack_98">
+			<rom type="file" offset="-1">FMPP.COM</rom>
+			<rom type="file" offset="-1">FMP.COM</rom>
+			<rom type="file" offset="-1">NTHK.PVI</rom>
+			<rom type="file" offset="0x10">NTHK_01.OPI</rom>
+			<rom type="file" offset="0x11">NTHK_02.OPI</rom>
+			<rom type="file" offset="0x12">NTHK_03.OVI</rom>
+			<rom type="file" offset="0x13">NTHK_04.OPI</rom>
+			<rom type="file" offset="0x14">NTHK_05.OPI</rom>
+			<rom type="file" offset="0x15">NTHK_C.OPI</rom>
+			<rom type="file" offset="0x16">NTHK_L.OPI</rom>
+			<rom type="file" offset="0x17">NTHK_N.OPI</rom>
+			<rom type="file" offset="0x18">NTHK_X.OPI</rom>
+			<rom type="shell" offset="0">SET PVI=.</rom>
+			<rom type="shell" offset="0">FMP s /s /g</rom>
+			<rom type="shell" offset="0">FMPP</rom>
+		</romlist>
+		<titlelist>
+			<title code="0x18">NTHK_X.OPI  : NetHack - オ－プニング -</title>
+			<title code="0x15">NTHK_C.OPI  : NetHack - タイトルバック (Chaotic) -</title>
+			<title code="0x16">NTHK_L.OPI  : NetHack - タイトルバック (Lawful) -</title>
+			<title code="0x17">NTHK_N.OPI  : NetHack - タイトルバック (Neutral) -</title>
+			<title code="0x10">NTHK_01.OPI : NetHack - プレイングBGM -</title>
+			<title code="0x11">NTHK_02.OPI :  ･･･  Fiction.</title>
+			<title code="0x12">NTHK_03.OVI : NetHack - ﾌﾟﾚｲﾝｸﾞBGM SPBﾊﾞ-ｼﾞｮﾝ -</title>
+			<title code="0x13">NTHK_04.OPI : NetHack - ラウンドスタ－ト -</title>
+			<title code="0x14">NTHK_05.OPI : NetHack - レクイエム -</title>
+		</titlelist>
+	</game>
+</gamelist>

@@ -1,0 +1,340 @@
+{
+  "format": "hoot-catalog-shard",
+  "version": 1,
+  "source_file": "xml/randomhouse.xml",
+  "date": "2005/09/25",
+  "comments": [
+    " //RANDOM HOUSE "
+  ],
+  "games": [
+    {
+      "title": "[PC-9801] 獣神ローガス(SPT.MSC)",
+      "driver": {
+        "name": "pc98dos",
+        "type": "opn",
+        "alias": "RANDOM HOUSE",
+        "platform": "NEC PC-9801"
+      },
+      "options": [],
+      "assets": [
+        {
+          "type": "file",
+          "path": "VOICE.VCE",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "SPT.MSC",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "digan98.com",
+          "offset": "-1"
+        },
+        {
+          "type": "shell",
+          "path": "set COMSPEC=A:\\DIGAN98.COM",
+          "offset": "0"
+        },
+        {
+          "type": "file",
+          "path": "PLAY.EXE",
+          "offset": "-1"
+        },
+        {
+          "type": "shell",
+          "path": "play.exe voice.vce spt.msc original",
+          "offset": "0"
+        },
+        {
+          "type": "file",
+          "path": "PLAY.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "shell",
+          "path": "play.com voice.vce spt.msc /p",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "digan98 sofbox",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x00",
+          "title": "Opening"
+        },
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "Intro"
+        },
+        {
+          "kind": "title",
+          "code": "0x02",
+          "title": "Operation"
+        },
+        {
+          "kind": "title",
+          "code": "0x03",
+          "title": "Requiem"
+        },
+        {
+          "kind": "title",
+          "code": "0x04",
+          "title": "Battle1"
+        },
+        {
+          "kind": "title",
+          "code": "0x05",
+          "title": "Battle2"
+        },
+        {
+          "kind": "title",
+          "code": "0x06",
+          "title": "Battle3"
+        },
+        {
+          "kind": "title",
+          "code": "0x07",
+          "title": "Battle4"
+        },
+        {
+          "kind": "title",
+          "code": "0x08",
+          "title": "Last"
+        },
+        {
+          "kind": "title",
+          "code": "0x09",
+          "title": "Ruin"
+        },
+        {
+          "kind": "title",
+          "code": "0x0a",
+          "title": "Ending"
+        },
+        {
+          "kind": "title",
+          "code": "0x0b",
+          "title": "Ending2"
+        },
+        {
+          "kind": "comment",
+          "text": "\t<title code=\"0x0c\">ALERT</title>\t"
+        },
+        {
+          "kind": "comment",
+          "text": "\t<title code=\"0x0d\">REPAIR</title>\t"
+        },
+        {
+          "kind": "comment",
+          "text": "\t<title code=\"0x0e\">WON</title>\t\t"
+        },
+        {
+          "kind": "comment",
+          "text": "\t<title code=\"0x0f\">BEEP</title>\t\t"
+        },
+        {
+          "kind": "comment",
+          "text": "\t<title code=\"0x10\">ENT</title>\t\t"
+        },
+        {
+          "kind": "comment",
+          "text": "\t<title code=\"0x11\">CSR</title>\t\t"
+        },
+        {
+          "kind": "comment",
+          "text": "\t<title code=\"0x12\">VAR</title>\t\t"
+        },
+        {
+          "kind": "comment",
+          "text": "\t<title code=\"0x13\">MSG</title>\t\t"
+        },
+        {
+          "kind": "comment",
+          "text": "\t<title code=\"0x14\">EXP</title>\t\t"
+        },
+        {
+          "kind": "comment",
+          "text": "\t<title code=\"0x15\">DMG</title>\t\t"
+        },
+        {
+          "kind": "comment",
+          "text": "\t<title code=\"0x16\">ATK</title>\t\t"
+        },
+        {
+          "kind": "comment",
+          "text": "\t<title code=\"0x17\">SH</title>\t\t"
+        },
+        {
+          "kind": "comment",
+          "text": "\t<title code=\"0x18\">MG</title>\t\t"
+        },
+        {
+          "kind": "comment",
+          "text": "\t<title code=\"0x19\">BL</title>\t\t"
+        },
+        {
+          "kind": "comment",
+          "text": "\t<title code=\"0x1a\">BZ</title>\t\t"
+        },
+        {
+          "kind": "comment",
+          "text": "\t<title code=\"0x1b\">BO</title>\t\t"
+        },
+        {
+          "kind": "comment",
+          "text": "\t<title code=\"0x1c\">HE</title>\t\t"
+        },
+        {
+          "kind": "comment",
+          "text": "\t<title code=\"0x1d\">VX</title>\t\t"
+        },
+        {
+          "kind": "comment",
+          "text": "\t<title code=\"0x1e\">WARN</title>\t\t"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/randomhouse.xml",
+      "source_order": 3796,
+      "archive": "rogus98",
+      "id": "rogus98-opn"
+    },
+    {
+      "title": "[PC-9801] 獣神ローガス(ANIME.MSC)",
+      "driver": {
+        "name": "pc98dos",
+        "type": "opn",
+        "alias": "RANDOM HOUSE",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "showfm3ex",
+          "value": "1"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "VOICE.VCE",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "ANIME.MSC",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "digan98.com",
+          "offset": "-1"
+        },
+        {
+          "type": "shell",
+          "path": "set COMSPEC=A:\\DIGAN98.COM",
+          "offset": "0"
+        },
+        {
+          "type": "file",
+          "path": "PLAY.EXE",
+          "offset": "-1"
+        },
+        {
+          "type": "shell",
+          "path": "play.exe voice.vce anime.msc original",
+          "offset": "0"
+        },
+        {
+          "type": "file",
+          "path": "PLAY.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "shell",
+          "path": "play.com voice.vce anime.msc /p",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "digan98 sofbox",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x00",
+          "title": "Laputa 1"
+        },
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "Laputa 2"
+        },
+        {
+          "kind": "title",
+          "code": "0x02",
+          "title": "Laputa arranged"
+        },
+        {
+          "kind": "title",
+          "code": "0x03",
+          "title": "Heidi 1"
+        },
+        {
+          "kind": "title",
+          "code": "0x04",
+          "title": "Heidi 2"
+        },
+        {
+          "kind": "title",
+          "code": "0x05",
+          "title": "Memol"
+        },
+        {
+          "kind": "title",
+          "code": "0x06",
+          "title": "Arion 1"
+        },
+        {
+          "kind": "title",
+          "code": "0x07",
+          "title": "Arion 2"
+        },
+        {
+          "kind": "title",
+          "code": "0x08",
+          "title": "Yuuki"
+        },
+        {
+          "kind": "title",
+          "code": "0x09",
+          "title": "V-MAX"
+        },
+        {
+          "kind": "title",
+          "code": "0x0a",
+          "title": "Layzner"
+        },
+        {
+          "kind": "title",
+          "code": "0x0b",
+          "title": "Gundom"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/randomhouse.xml",
+      "source_order": 3797,
+      "archive": "rogus98",
+      "id": "rogus98-opn-2"
+    }
+  ]
+}

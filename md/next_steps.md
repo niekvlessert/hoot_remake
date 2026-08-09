@@ -1181,3 +1181,45 @@ At that point, “support everything” becomes a queue rather than a vague targ
 11. Expand driver-by-driver.
 ```
 
+
+---
+
+## Completed compatibility foundation (2026-08-06)
+
+The following items are now implemented:
+
+- one central `DriverRegistry` used by the core and `hootplay`;
+- explicit `unsupported`, `recognized`, `experimental`, `playable`, and
+  `verified` capability levels with machine-readable reasons;
+- `hoot_load_entry()` rejects entries without a registered replay host instead
+  of silently rendering zeroes;
+- shared archive/asset validation;
+- `hootprobe` batch scanning with audio statistics, chip activity, V30/x86
+  unsupported-opcode diagnostics, warnings, missing assets, and JSON output;
+- POSIX child-process isolation for crash and hard-timeout recovery;
+- synthetic registry tests and tested crash/silence report paths.
+
+The next evidence-driven task is to run `hootprobe` against the real local pack
+collection, group failures by replay host, shell executable and capability
+reason, and then stabilize the highest-yield X68000 OPMDRV group. MSX remains an
+explicit non-goal for this player.
+
+
+## 2026-08-06 X68000 MFP/IOCS completion
+
+Completed:
+
+- 191 audible plain-OPM tracks plus five STOP/FADE controls pass;
+- 483/483 supplied MFP/IOCS/FLOAT2 tracks are audio-active;
+- A-Train II FLOAT2/A2 bootstrap is fixed by preserving wrapped writes at
+  `0xfffff8/0xfffffc`;
+- no A-Train-specific code path is present;
+- full build and synthetic tests pass.
+
+Recommended next work:
+
+1. compare representative tracks against trusted original-Hoot WAV captures;
+2. add PCM8 compatibility and a PCM8 pack matrix;
+3. choose and integrate an optional rendered MIDI backend for MT-32/GM/GS
+   variants;
+4. continue expanding generic X68000 pack coverage using the two smoke gates.

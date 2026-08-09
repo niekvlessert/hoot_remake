@@ -1,0 +1,6534 @@
+{
+  "format": "hoot-catalog-shard",
+  "version": 1,
+  "source_file": "xml/dbsoft.xml",
+  "date": "2005/09/25",
+  "comments": [
+    " //dB-SOFT "
+  ],
+  "games": [
+    {
+      "title": "[PC-8801] 始皇帝",
+      "driver": {
+        "name": "pc88",
+        "type": "opn",
+        "alias": "dB-SOFT",
+        "platform": "NEC PC-8801"
+      },
+      "options": [
+        {
+          "name": "use_rtc",
+          "value": "0x01"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "PATCH",
+          "offset": "0x0000"
+        },
+        {
+          "type": "code",
+          "path": "PROG",
+          "offset": "0x0100"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x01000000",
+          "title": "(FM)  #00 タイトル"
+        },
+        {
+          "kind": "title",
+          "code": "0x01000001",
+          "title": "(FM)  #01          (未使用)"
+        },
+        {
+          "kind": "title",
+          "code": "0x01000002",
+          "title": "(FM)  #02          (未使用)"
+        },
+        {
+          "kind": "title",
+          "code": "0x01000003",
+          "title": "(FM)  #03          (未使用)"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000000",
+          "title": "(PSG) #00 タイトル (未使用)"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000001",
+          "title": "(PSG) #01          (未使用)"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000002",
+          "title": "(PSG) #02          (未使用)"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000003",
+          "title": "(PSG) #03          (未使用)"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000007",
+          "title": "(PSG) #07          (未使用)"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/dbsoft.xml",
+      "source_order": 999,
+      "archive": "shikotei88",
+      "id": "shikotei88-opn"
+    },
+    {
+      "title": "[PC-8801] KING FLAPPY (PC-8801mkIISR)",
+      "driver": {
+        "name": "pc88",
+        "type": "opn",
+        "alias": "dB-SOFT",
+        "platform": "NEC PC-8801"
+      },
+      "options": [],
+      "assets": [
+        {
+          "type": "code",
+          "path": "PATCH",
+          "offset": "0x0000"
+        },
+        {
+          "type": "code",
+          "path": "PROG",
+          "offset": "0x0100"
+        },
+        {
+          "type": "code",
+          "path": "MUSIC",
+          "offset": "0x6f00"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x08000000",
+          "title": "タイトル"
+        },
+        {
+          "kind": "title",
+          "code": "0x10000001",
+          "title": "メインBGM"
+        },
+        {
+          "kind": "title",
+          "code": "0x10000003",
+          "title": "キーワード表示"
+        },
+        {
+          "kind": "title",
+          "code": "0x0e000002",
+          "title": "オールクリア"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/dbsoft.xml",
+      "source_order": 1000,
+      "archive": "kflappy",
+      "id": "kflappy-opn"
+    },
+    {
+      "title": "[PC-8801] KING FLAPPY (PC-8801/mkII:PC-8801-10)",
+      "driver": {
+        "name": "pc88",
+        "type": "8801-10",
+        "alias": "dB-SOFT",
+        "platform": "NEC PC-8801"
+      },
+      "options": [],
+      "assets": [
+        {
+          "type": "code",
+          "path": "PATCH2",
+          "offset": "0x0000"
+        },
+        {
+          "type": "code",
+          "path": "PROG2",
+          "offset": "0x0100"
+        },
+        {
+          "type": "code",
+          "path": "MUSIC",
+          "offset": "0x6f00"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x08000000",
+          "title": "タイトル"
+        },
+        {
+          "kind": "title",
+          "code": "0x10000001",
+          "title": "メインBGM"
+        },
+        {
+          "kind": "title",
+          "code": "0x10000003",
+          "title": "キーワード表示"
+        },
+        {
+          "kind": "title",
+          "code": "0x0e000002",
+          "title": "オールクリア"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/dbsoft.xml",
+      "source_order": 1001,
+      "archive": "kflappy",
+      "id": "kflappy-8801-10"
+    },
+    {
+      "title": "[PC-8801] らぷてっく (PC-8801mkIISR)",
+      "driver": {
+        "name": "pc88",
+        "type": "opn",
+        "alias": "dB-SOFT",
+        "platform": "NEC PC-8801"
+      },
+      "options": [
+        {
+          "name": "use_rtc",
+          "value": "0x01"
+        },
+        {
+          "name": "baseclock",
+          "value": "0x04"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "PATCH",
+          "offset": "0x0000"
+        },
+        {
+          "type": "code",
+          "path": "OP",
+          "offset": "0x0800"
+        },
+        {
+          "type": "code",
+          "path": "CAST",
+          "offset": "0x1000"
+        },
+        {
+          "type": "code",
+          "path": "PROG",
+          "offset": "0x4740"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x05",
+          "title": "MUS05 : タイトル"
+        },
+        {
+          "kind": "title",
+          "code": "0x00",
+          "title": "MUS00 : メインBGM"
+        },
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "MUS01 : すーぱーびっきぃ君のテーマ(1)"
+        },
+        {
+          "kind": "title",
+          "code": "0x02",
+          "title": "MUS02 : すーぱーびっきぃ君のテーマ(2)"
+        },
+        {
+          "kind": "title",
+          "code": "0x03",
+          "title": "MUS03 : ミス"
+        },
+        {
+          "kind": "title",
+          "code": "0x04",
+          "title": "MUS04 : ラウンドクリア"
+        },
+        {
+          "kind": "title",
+          "code": "0x06",
+          "title": "MUS06 : ランキング"
+        },
+        {
+          "kind": "title",
+          "code": "0x07",
+          "title": "MUS07 : キャスト"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/dbsoft.xml",
+      "source_order": 1002,
+      "archive": "laptick",
+      "id": "laptick-opn"
+    },
+    {
+      "title": "[PC-8801] らぷてっく (PC-8801/mkII:PC-8801-10)",
+      "driver": {
+        "name": "pc88",
+        "type": "8801-10",
+        "alias": "dB-SOFT",
+        "platform": "NEC PC-8801"
+      },
+      "options": [
+        {
+          "name": "baseclock",
+          "value": "0x04"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "PATCH2",
+          "offset": "0x0000"
+        },
+        {
+          "type": "code",
+          "path": "OP",
+          "offset": "0x0800"
+        },
+        {
+          "type": "code",
+          "path": "CAST",
+          "offset": "0x1000"
+        },
+        {
+          "type": "code",
+          "path": "PROG",
+          "offset": "0x4740"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x05",
+          "title": "MUS05 : タイトル"
+        },
+        {
+          "kind": "title",
+          "code": "0x00",
+          "title": "MUS00 : メインBGM"
+        },
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "MUS01 : すーぱーびっきぃ君のテーマ(1)"
+        },
+        {
+          "kind": "title",
+          "code": "0x02",
+          "title": "MUS02 : すーぱーびっきぃ君のテーマ(2)"
+        },
+        {
+          "kind": "title",
+          "code": "0x03",
+          "title": "MUS03 : ミス"
+        },
+        {
+          "kind": "title",
+          "code": "0x04",
+          "title": "MUS04 : ラウンドクリア"
+        },
+        {
+          "kind": "title",
+          "code": "0x06",
+          "title": "MUS06 : ランキング"
+        },
+        {
+          "kind": "title",
+          "code": "0x07",
+          "title": "MUS07 : キャスト"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/dbsoft.xml",
+      "source_order": 1003,
+      "archive": "laptick",
+      "id": "laptick-8801-10"
+    },
+    {
+      "title": "[PC-8801] うっでいぽこ",
+      "driver": {
+        "name": "pc88",
+        "type": "opn",
+        "alias": "dB-SOFT",
+        "platform": "NEC PC-8801"
+      },
+      "options": [
+        {
+          "name": "mdata_addr",
+          "value": "0x5800"
+        },
+        {
+          "name": "use_rtc",
+          "value": "0x01"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "PROG",
+          "offset": "0x0100"
+        },
+        {
+          "type": "code",
+          "path": "PATCH",
+          "offset": "0x0000"
+        },
+        {
+          "type": "bgm",
+          "path": "PROG",
+          "offset": "0x00"
+        },
+        {
+          "type": "bgm",
+          "path": "PROG",
+          "offset": "0x01"
+        },
+        {
+          "type": "bgm",
+          "path": "PROG",
+          "offset": "0x02"
+        },
+        {
+          "type": "bgm",
+          "path": "PROG",
+          "offset": "0x03"
+        },
+        {
+          "type": "bgm",
+          "path": "OP",
+          "offset": "0x04"
+        },
+        {
+          "type": "bgm",
+          "path": "OP",
+          "offset": "0x05"
+        },
+        {
+          "type": "bgm",
+          "path": "OP",
+          "offset": "0x06"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS00",
+          "offset": "0x07"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS01",
+          "offset": "0x08"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS02",
+          "offset": "0x09"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS03",
+          "offset": "0x0a"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS04",
+          "offset": "0x0b"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS05",
+          "offset": "0x0c"
+        },
+        {
+          "type": "bgm",
+          "path": "DEMO2",
+          "offset": "0x0d"
+        },
+        {
+          "type": "bgm",
+          "path": "ZAP",
+          "offset": "0x0e"
+        },
+        {
+          "type": "bgm",
+          "path": "END",
+          "offset": "0x0f"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x04",
+          "title": "たいとる"
+        },
+        {
+          "kind": "title",
+          "code": "0x00",
+          "title": "お～ぷにんぐ"
+        },
+        {
+          "kind": "title",
+          "code": "0x06",
+          "title": "でも１"
+        },
+        {
+          "kind": "title",
+          "code": "0x07",
+          "title": "はる"
+        },
+        {
+          "kind": "title",
+          "code": "0x08",
+          "title": "なつ"
+        },
+        {
+          "kind": "title",
+          "code": "0x09",
+          "title": "あき"
+        },
+        {
+          "kind": "title",
+          "code": "0x0a",
+          "title": "ふゆ"
+        },
+        {
+          "kind": "title",
+          "code": "0x03",
+          "title": "だんじょん"
+        },
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "こまんども～ど"
+        },
+        {
+          "kind": "title",
+          "code": "0x02",
+          "title": "ぼす"
+        },
+        {
+          "kind": "title",
+          "code": "0x0d",
+          "title": "でも２"
+        },
+        {
+          "kind": "title",
+          "code": "0x0b",
+          "title": "ゆうえんち"
+        },
+        {
+          "kind": "title",
+          "code": "0x0c",
+          "title": "まおうのしろ"
+        },
+        {
+          "kind": "title",
+          "code": "0x0e",
+          "title": "ざっぷ"
+        },
+        {
+          "kind": "title",
+          "code": "0x0f",
+          "title": "えんでぃんぐ"
+        },
+        {
+          "kind": "title",
+          "code": "0x05",
+          "title": "おしまい。"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/dbsoft.xml",
+      "source_order": 1004,
+      "archive": "wpoko",
+      "id": "wpoko-opn"
+    },
+    {
+      "title": "[PC-8801] 今夜も朝までPOWERFULまぁじゃん",
+      "driver": {
+        "name": "pc88",
+        "type": "opn",
+        "alias": "dB-SOFT",
+        "platform": "NEC PC-8801"
+      },
+      "options": [
+        {
+          "name": "init_pc",
+          "value": "0xf000"
+        },
+        {
+          "name": "mdata_addr",
+          "value": "0x6800"
+        },
+        {
+          "name": "mdata_size",
+          "value": "0x8800"
+        },
+        {
+          "name": "mfile_size",
+          "value": "0x8800"
+        },
+        {
+          "name": "use_rtc",
+          "value": "0x01"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "PROG1",
+          "offset": "0x0100"
+        },
+        {
+          "type": "code",
+          "path": "PROG2",
+          "offset": "0x3800"
+        },
+        {
+          "type": "code",
+          "path": "PATCH",
+          "offset": "0xf000"
+        },
+        {
+          "type": "bgm",
+          "path": "PROG2",
+          "offset": "0x02"
+        },
+        {
+          "type": "bgm",
+          "path": "NORMAL",
+          "offset": "0x03"
+        },
+        {
+          "type": "bgm",
+          "path": "SASURAI",
+          "offset": "0x04"
+        },
+        {
+          "type": "bgm",
+          "path": "POCO",
+          "offset": "0x05"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x02000002",
+          "title": "dB-SOFTロゴ (最初に演奏してください)"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000002",
+          "title": "オープニング"
+        },
+        {
+          "kind": "title",
+          "code": "0x01000002",
+          "title": "名前の変更"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000001",
+          "title": "エキサイト麻雀"
+        },
+        {
+          "kind": "title",
+          "code": "0x01000001",
+          "title": "ロード中"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000003",
+          "title": "ゲーム中BGM #00"
+        },
+        {
+          "kind": "title",
+          "code": "0x01000003",
+          "title": "ゲーム中BGM #01"
+        },
+        {
+          "kind": "title",
+          "code": "0x02000003",
+          "title": "ゲーム中BGM #02"
+        },
+        {
+          "kind": "title",
+          "code": "0x03000003",
+          "title": "ゲーム中BGM #03"
+        },
+        {
+          "kind": "title",
+          "code": "0x04000003",
+          "title": "ゲーム中BGM #04"
+        },
+        {
+          "kind": "title",
+          "code": "0x05000003",
+          "title": "ゲーム中BGM #05"
+        },
+        {
+          "kind": "title",
+          "code": "0x06000003",
+          "title": "ゲーム中BGM #06"
+        },
+        {
+          "kind": "title",
+          "code": "0x07000003",
+          "title": "ゲーム中BGM #07"
+        },
+        {
+          "kind": "title",
+          "code": "0x08000003",
+          "title": "ゲーム中BGM #08"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000004",
+          "title": "さすらい麻雀 #00"
+        },
+        {
+          "kind": "title",
+          "code": "0x01000004",
+          "title": "さすらい麻雀 #01"
+        },
+        {
+          "kind": "title",
+          "code": "0x02000004",
+          "title": "さすらい麻雀 #02"
+        },
+        {
+          "kind": "title",
+          "code": "0x03000004",
+          "title": "さすらい麻雀 #03"
+        },
+        {
+          "kind": "title",
+          "code": "0x04000004",
+          "title": "さすらい麻雀 #04"
+        },
+        {
+          "kind": "title",
+          "code": "0x05000004",
+          "title": "さすらい麻雀 #05"
+        },
+        {
+          "kind": "title",
+          "code": "0x06000004",
+          "title": "さすらい麻雀 #06"
+        },
+        {
+          "kind": "title",
+          "code": "0x07000004",
+          "title": "さすらい麻雀 #07"
+        },
+        {
+          "kind": "title",
+          "code": "0x08000004",
+          "title": "さすらい麻雀 #08"
+        },
+        {
+          "kind": "title",
+          "code": "0x09000004",
+          "title": "さすらい麻雀 #09"
+        },
+        {
+          "kind": "title",
+          "code": "0x0a000004",
+          "title": "さすらい麻雀 #0a"
+        },
+        {
+          "kind": "title",
+          "code": "0x0b000004",
+          "title": "さすらい麻雀 #0b"
+        },
+        {
+          "kind": "title",
+          "code": "0x0c000004",
+          "title": "さすらい麻雀 #0c"
+        },
+        {
+          "kind": "title",
+          "code": "0x0d000004",
+          "title": "さすらい麻雀 #0d"
+        },
+        {
+          "kind": "title",
+          "code": "0x0e000004",
+          "title": "さすらい麻雀 #0e"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000005",
+          "title": "ぽこ麻雀 #00"
+        },
+        {
+          "kind": "title",
+          "code": "0x01000005",
+          "title": "ぽこ麻雀 #01"
+        },
+        {
+          "kind": "title",
+          "code": "0x02000005",
+          "title": "ぽこ麻雀 #02"
+        },
+        {
+          "kind": "title",
+          "code": "0x03000005",
+          "title": "ぽこ麻雀 #03"
+        },
+        {
+          "kind": "title",
+          "code": "0x04000005",
+          "title": "ぽこ麻雀 #04"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000000",
+          "title": "効果音#00"
+        },
+        {
+          "kind": "title",
+          "code": "0x01000000",
+          "title": "効果音#01"
+        },
+        {
+          "kind": "title",
+          "code": "0x02000000",
+          "title": "効果音#02"
+        },
+        {
+          "kind": "title",
+          "code": "0x03000000",
+          "title": "効果音#03"
+        },
+        {
+          "kind": "title",
+          "code": "0x04000000",
+          "title": "効果音#04"
+        },
+        {
+          "kind": "title",
+          "code": "0x05000000",
+          "title": "効果音#05"
+        },
+        {
+          "kind": "title",
+          "code": "0x06000000",
+          "title": "効果音#06"
+        },
+        {
+          "kind": "title",
+          "code": "0x07000000",
+          "title": "効果音#07"
+        },
+        {
+          "kind": "title",
+          "code": "0x08000000",
+          "title": "効果音#08"
+        },
+        {
+          "kind": "title",
+          "code": "0x09000000",
+          "title": "効果音#09"
+        },
+        {
+          "kind": "title",
+          "code": "0x0a000000",
+          "title": "効果音#0A"
+        },
+        {
+          "kind": "title",
+          "code": "0x0b000000",
+          "title": "効果音#0B"
+        },
+        {
+          "kind": "title",
+          "code": "0x0c000000",
+          "title": "効果音#0C"
+        },
+        {
+          "kind": "title",
+          "code": "0x0d000000",
+          "title": "効果音#0D"
+        },
+        {
+          "kind": "title",
+          "code": "0x0e000000",
+          "title": "効果音#0E"
+        },
+        {
+          "kind": "title",
+          "code": "0x0f000000",
+          "title": "効果音#0F"
+        },
+        {
+          "kind": "title",
+          "code": "0x10000000",
+          "title": "効果音#10"
+        },
+        {
+          "kind": "title",
+          "code": "0x11000000",
+          "title": "効果音#11"
+        },
+        {
+          "kind": "title",
+          "code": "0x12000000",
+          "title": "効果音#12"
+        },
+        {
+          "kind": "title",
+          "code": "0x13000000",
+          "title": "効果音#13"
+        },
+        {
+          "kind": "title",
+          "code": "0x14000000",
+          "title": "効果音#14"
+        },
+        {
+          "kind": "title",
+          "code": "0x15000000",
+          "title": "効果音#15"
+        },
+        {
+          "kind": "title",
+          "code": "0x16000000",
+          "title": "効果音#16"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/dbsoft.xml",
+      "source_order": 1005,
+      "archive": "pwmajan",
+      "id": "pwmajan-opn"
+    },
+    {
+      "title": "[PC-8801] 今夜も朝までPOWERFULまぁじゃん2",
+      "driver": {
+        "name": "pc88",
+        "type": "opn",
+        "alias": "dB-SOFT",
+        "platform": "NEC PC-8801"
+      },
+      "options": [
+        {
+          "name": "init_pc",
+          "value": "0xf000"
+        },
+        {
+          "name": "mdata_addr",
+          "value": "0x3000"
+        },
+        {
+          "name": "mdata_size",
+          "value": "0xc000"
+        },
+        {
+          "name": "mfile_size",
+          "value": "0xc000"
+        },
+        {
+          "name": "use_rtc",
+          "value": "0x01"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "PROG1",
+          "offset": "0x0100"
+        },
+        {
+          "type": "code",
+          "path": "PROG2",
+          "offset": "0x2000"
+        },
+        {
+          "type": "code",
+          "path": "PROG3",
+          "offset": "0x3000"
+        },
+        {
+          "type": "code",
+          "path": "PROG4",
+          "offset": "0x9000"
+        },
+        {
+          "type": "code",
+          "path": "PATCH",
+          "offset": "0xf000"
+        },
+        {
+          "type": "bgm",
+          "path": "PROG3",
+          "offset": "0x02"
+        },
+        {
+          "type": "bgm",
+          "path": "NORMAL1",
+          "offset": "0x03"
+        },
+        {
+          "type": "bgm",
+          "path": "NORMAL2",
+          "offset": "0x04"
+        },
+        {
+          "type": "bgm",
+          "path": "EXCITE1",
+          "offset": "0x05"
+        },
+        {
+          "type": "bgm",
+          "path": "EXCITE2",
+          "offset": "0x06"
+        },
+        {
+          "type": "bgm",
+          "path": "EXCITE3",
+          "offset": "0x07"
+        },
+        {
+          "type": "bgm",
+          "path": "EXCITE3",
+          "offset": "0x08"
+        },
+        {
+          "type": "bgm",
+          "path": "POCO1",
+          "offset": "0x09"
+        },
+        {
+          "type": "bgm",
+          "path": "POCO2",
+          "offset": "0x0a"
+        },
+        {
+          "type": "bgm",
+          "path": "POCO3",
+          "offset": "0x0b"
+        },
+        {
+          "type": "bgm",
+          "path": "SASURAI1",
+          "offset": "0x0c"
+        },
+        {
+          "type": "bgm",
+          "path": "SASURAI2",
+          "offset": "0x0d"
+        },
+        {
+          "type": "bgm",
+          "path": "SASURAI3",
+          "offset": "0x0e"
+        },
+        {
+          "type": "bgm",
+          "path": "SASURAI3",
+          "offset": "0x0f"
+        },
+        {
+          "type": "bgm",
+          "path": "SASURAI4",
+          "offset": "0x10"
+        },
+        {
+          "type": "bgm",
+          "path": "SASURAI5",
+          "offset": "0x11"
+        },
+        {
+          "type": "bgm",
+          "path": "SASURAI6",
+          "offset": "0x12"
+        },
+        {
+          "type": "bgm",
+          "path": "SASURAI7",
+          "offset": "0x13"
+        },
+        {
+          "type": "bgm",
+          "path": "SASURAI8",
+          "offset": "0x14"
+        },
+        {
+          "type": "bgm",
+          "path": "SASURAI9",
+          "offset": "0x15"
+        },
+        {
+          "type": "bgm",
+          "path": "SASURAI10",
+          "offset": "0x16"
+        },
+        {
+          "type": "bgm",
+          "path": "SASURAI11",
+          "offset": "0x17"
+        },
+        {
+          "type": "bgm",
+          "path": "SASURAI12",
+          "offset": "0x18"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x02000002",
+          "title": "dB-SOFTロゴ"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000002",
+          "title": "オープニング"
+        },
+        {
+          "kind": "title",
+          "code": "0x03000002",
+          "title": "オープニング (HAPPY BIRTHDAY)"
+        },
+        {
+          "kind": "title",
+          "code": "0x04000002",
+          "title": "オープニング (A HAPPY NEW YEAR)"
+        },
+        {
+          "kind": "title",
+          "code": "0x05000002",
+          "title": "オープニング (MERRY CHRISTMAS)"
+        },
+        {
+          "kind": "title",
+          "code": "0x01000002",
+          "title": "名前登録"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000001",
+          "title": "ロード中"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000003",
+          "title": "ノーマル麻雀Excellent      : タイトル"
+        },
+        {
+          "kind": "title",
+          "code": "0x01000003",
+          "title": "ノーマル麻雀Excellent      : 半荘終了"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000004",
+          "title": "ノーマル麻雀Excellent      : ゲーム中"
+        },
+        {
+          "kind": "title",
+          "code": "0x01000004",
+          "title": "ノーマル麻雀Excellent      : リーチ"
+        },
+        {
+          "kind": "title",
+          "code": "0x02000004",
+          "title": "ノーマル麻雀Excellent      : アガり"
+        },
+        {
+          "kind": "title",
+          "code": "0x03000004",
+          "title": "ノーマル麻雀Excellent      : アガられた"
+        },
+        {
+          "kind": "title",
+          "code": "0x04000004",
+          "title": "ノーマル麻雀Excellent      : 役満"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000005",
+          "title": "エキサイト麻雀お姉さん組   : タイトル"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000006",
+          "title": "エキサイト麻雀お姉さん組   : 脱衣デモ"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000007",
+          "title": "エキサイト麻雀お姉さん組   : ゲーム中"
+        },
+        {
+          "kind": "comment",
+          "text": "\t<title code=\"0x00000008\">エキサイト麻雀お姉さん組   : 演奏停止</title> "
+        },
+        {
+          "kind": "title",
+          "code": "0x01000008",
+          "title": "エキサイト麻雀お姉さん組   : リーチ"
+        },
+        {
+          "kind": "title",
+          "code": "0x02000008",
+          "title": "エキサイト麻雀お姉さん組   : アガり"
+        },
+        {
+          "kind": "title",
+          "code": "0x03000008",
+          "title": "エキサイト麻雀お姉さん組   : アガられた"
+        },
+        {
+          "kind": "title",
+          "code": "0x04000008",
+          "title": "エキサイト麻雀お姉さん組   : 役満"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000009",
+          "title": "ぽこまぁじゃんフェステバァ : タイトル"
+        },
+        {
+          "kind": "title",
+          "code": "0x01000009",
+          "title": "ぽこまぁじゃんフェステバァ : デモ"
+        },
+        {
+          "kind": "title",
+          "code": "0x02000009",
+          "title": "ぽこまぁじゃんフェステバァ : エンディング"
+        },
+        {
+          "kind": "title",
+          "code": "0x0000000a",
+          "title": "ぽこまぁじゃんフェステバァ : トーナメント表"
+        },
+        {
+          "kind": "title",
+          "code": "0x0100000a",
+          "title": "ぽこまぁじゃんフェステバァ : GAMEOVER"
+        },
+        {
+          "kind": "title",
+          "code": "0x0100000b",
+          "title": "ぽこまぁじゃんフェステバァ : ゲーム中(春)"
+        },
+        {
+          "kind": "title",
+          "code": "0x0200000b",
+          "title": "ぽこまぁじゃんフェステバァ : ゲーム中(夏)"
+        },
+        {
+          "kind": "title",
+          "code": "0x0300000b",
+          "title": "ぽこまぁじゃんフェステバァ : ゲーム中(秋)"
+        },
+        {
+          "kind": "title",
+          "code": "0x0000000b",
+          "title": "ぽこまぁじゃんフェステバァ : ゲーム中(冬)"
+        },
+        {
+          "kind": "title",
+          "code": "0x0400000b",
+          "title": "ぽこまぁじゃんフェステバァ : リーチ"
+        },
+        {
+          "kind": "title",
+          "code": "0x0500000b",
+          "title": "ぽこまぁじゃんフェステバァ : アガり"
+        },
+        {
+          "kind": "title",
+          "code": "0x0600000b",
+          "title": "ぽこまぁじゃんフェステバァ : アガられた"
+        },
+        {
+          "kind": "title",
+          "code": "0x0000000c",
+          "title": "さすらい麻雀The World      : デモ"
+        },
+        {
+          "kind": "title",
+          "code": "0x0100000c",
+          "title": "さすらい麻雀The World      : #01?"
+        },
+        {
+          "kind": "title",
+          "code": "0x0200000c",
+          "title": "さすらい麻雀The World      : #02?"
+        },
+        {
+          "kind": "title",
+          "code": "0x0000000d",
+          "title": "さすらい麻雀The World      : ミニゲームはずれ"
+        },
+        {
+          "kind": "title",
+          "code": "0x0100000d",
+          "title": "さすらい麻雀The World      : ミニゲームあたり"
+        },
+        {
+          "kind": "title",
+          "code": "0x0200000d",
+          "title": "さすらい麻雀The World      : すごろくシーン"
+        },
+        {
+          "kind": "title",
+          "code": "0x0300000d",
+          "title": "さすらい麻雀The World      : ミニゲーム"
+        },
+        {
+          "kind": "comment",
+          "text": "\t<title code=\"0x0000000e\">さすらい麻雀The World      : 演奏停止</title> "
+        },
+        {
+          "kind": "title",
+          "code": "0x0100000e",
+          "title": "さすらい麻雀The World      : リーチ"
+        },
+        {
+          "kind": "title",
+          "code": "0x0200000e",
+          "title": "さすらい麻雀The World      : アガり"
+        },
+        {
+          "kind": "title",
+          "code": "0x0300000e",
+          "title": "さすらい麻雀The World      : アガられた"
+        },
+        {
+          "kind": "title",
+          "code": "0x0400000e",
+          "title": "さすらい麻雀The World      : 役満"
+        },
+        {
+          "kind": "title",
+          "code": "0x0500000e",
+          "title": "さすらい麻雀The World      : GAME OVER"
+        },
+        {
+          "kind": "title",
+          "code": "0x0000000f",
+          "title": "さすらい麻雀The World      : ザコ対戦"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000010",
+          "title": "さすらい麻雀The World      : 台湾         / キム・キム"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000011",
+          "title": "さすらい麻雀The World      : シドニー     / パティ・マクドォ"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000012",
+          "title": "さすらい麻雀The World      : デリー       / アマホナ・ルー"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000013",
+          "title": "さすらい麻雀The World      : モスクワ     / スルノワ・コメノフ"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000014",
+          "title": "さすらい麻雀The World      : カイロ       / インカ・ニカニカ"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000015",
+          "title": "さすらい麻雀The World      : ハバナ       / ヘラコレ・マック・Jr"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000016",
+          "title": "さすらい麻雀The World      : ヒューストン / キャサリン・ブラウン"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000017",
+          "title": "さすらい麻雀The World      : アンカレッジ / タム・タム"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000018",
+          "title": "さすらい麻雀The World      : 札幌         / 伊賀仁長助"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000000",
+          "title": "効果音#00"
+        },
+        {
+          "kind": "title",
+          "code": "0x01000000",
+          "title": "効果音#01"
+        },
+        {
+          "kind": "title",
+          "code": "0x02000000",
+          "title": "効果音#02"
+        },
+        {
+          "kind": "title",
+          "code": "0x03000000",
+          "title": "効果音#03"
+        },
+        {
+          "kind": "title",
+          "code": "0x04000000",
+          "title": "効果音#04"
+        },
+        {
+          "kind": "title",
+          "code": "0x05000000",
+          "title": "効果音#05"
+        },
+        {
+          "kind": "title",
+          "code": "0x06000000",
+          "title": "効果音#06"
+        },
+        {
+          "kind": "title",
+          "code": "0x07000000",
+          "title": "効果音#07"
+        },
+        {
+          "kind": "title",
+          "code": "0x08000000",
+          "title": "効果音#08"
+        },
+        {
+          "kind": "title",
+          "code": "0x09000000",
+          "title": "効果音#09"
+        },
+        {
+          "kind": "title",
+          "code": "0x0a000000",
+          "title": "効果音#0A"
+        },
+        {
+          "kind": "title",
+          "code": "0x0b000000",
+          "title": "効果音#0B"
+        },
+        {
+          "kind": "title",
+          "code": "0x0c000000",
+          "title": "効果音#0C"
+        },
+        {
+          "kind": "title",
+          "code": "0x0d000000",
+          "title": "効果音#0D"
+        },
+        {
+          "kind": "title",
+          "code": "0x0e000000",
+          "title": "効果音#0E"
+        },
+        {
+          "kind": "title",
+          "code": "0x0f000000",
+          "title": "効果音#0F"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/dbsoft.xml",
+      "source_order": 1006,
+      "archive": "pwmajan2",
+      "id": "pwmajan2-opn"
+    },
+    {
+      "title": "[PC-8801] PRODUCE",
+      "driver": {
+        "name": "pc88",
+        "type": "opn",
+        "alias": "dB-SOFT",
+        "platform": "NEC PC-8801"
+      },
+      "options": [
+        {
+          "name": "mdata_addr",
+          "value": "0x0100"
+        },
+        {
+          "name": "mdata_size",
+          "value": "0x3200"
+        },
+        {
+          "name": "mfile_size",
+          "value": "0x3200"
+        },
+        {
+          "name": "vdata_addr",
+          "value": "0x1200"
+        },
+        {
+          "name": "vdata_size",
+          "value": "0x1a00"
+        },
+        {
+          "name": "vfile_size",
+          "value": "0x1a00"
+        },
+        {
+          "name": "use_rtc",
+          "value": "0x01"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "PATCH",
+          "offset": "0x0000"
+        },
+        {
+          "type": "code",
+          "path": "OP",
+          "offset": "0x0100"
+        },
+        {
+          "type": "code",
+          "path": "END",
+          "offset": "0x8000"
+        },
+        {
+          "type": "bgm",
+          "path": "OP",
+          "offset": "0x00"
+        },
+        {
+          "type": "bgm",
+          "path": "OVER",
+          "offset": "0x01"
+        },
+        {
+          "type": "bgm",
+          "path": "END",
+          "offset": "0x02"
+        },
+        {
+          "type": "bgm",
+          "path": "DEMO1",
+          "offset": "0x03"
+        },
+        {
+          "type": "bgm",
+          "path": "DEMO1",
+          "offset": "0x04"
+        },
+        {
+          "type": "voice",
+          "path": "DEMO2",
+          "offset": "0x04"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x00",
+          "title": "Title"
+        },
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "Game Over"
+        },
+        {
+          "kind": "title",
+          "code": "0x03",
+          "title": "Up by Stairs"
+        },
+        {
+          "kind": "title",
+          "code": "0x04",
+          "title": "Down by Stairs"
+        },
+        {
+          "kind": "title",
+          "code": "0x02",
+          "title": "Ending"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/dbsoft.xml",
+      "source_order": 1007,
+      "archive": "produce88",
+      "id": "produce88-opn"
+    },
+    {
+      "title": "[PC-9801] うっでいぽこ",
+      "driver": {
+        "name": "pc98vx",
+        "type": "opn",
+        "alias": "dB-SOFT",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "bootcs",
+          "value": "0x0200"
+        },
+        {
+          "name": "bootip",
+          "value": "0x0000"
+        },
+        {
+          "name": "dataaddr",
+          "value": "0x15800"
+        },
+        {
+          "name": "filesize",
+          "value": "0x02800"
+        },
+        {
+          "name": "funcvect",
+          "value": "0x7f"
+        },
+        {
+          "name": "clockmul",
+          "value": "8"
+        },
+        {
+          "name": "datamax",
+          "value": "0x09"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "wpoco98.bin",
+          "offset": "0x02000"
+        },
+        {
+          "type": "code",
+          "path": "PROG",
+          "offset": "0x02100"
+        },
+        {
+          "type": "code",
+          "path": "DATA",
+          "offset": "0x10000"
+        },
+        {
+          "type": "bgm",
+          "path": "OP",
+          "offset": "0x00"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS00",
+          "offset": "0x01"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS01",
+          "offset": "0x02"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS02",
+          "offset": "0x03"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS03",
+          "offset": "0x04"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS04",
+          "offset": "0x05"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS05",
+          "offset": "0x06"
+        },
+        {
+          "type": "bgm",
+          "path": "END",
+          "offset": "0x07"
+        },
+        {
+          "type": "bgm",
+          "path": "ZAP",
+          "offset": "0x08"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x00070000",
+          "title": "OP    : たいとる"
+        },
+        {
+          "kind": "title",
+          "code": "0x00030000",
+          "title": "OP    : お～ぷにんぐ"
+        },
+        {
+          "kind": "title",
+          "code": "0x00060000",
+          "title": "OP    : でも1"
+        },
+        {
+          "kind": "title",
+          "code": "0x01000001",
+          "title": "MUS00 : はる"
+        },
+        {
+          "kind": "title",
+          "code": "0x01000002",
+          "title": "MUS01 : なつ"
+        },
+        {
+          "kind": "title",
+          "code": "0x01000003",
+          "title": "MUS02 : あき"
+        },
+        {
+          "kind": "title",
+          "code": "0x01000004",
+          "title": "MUS03 : ふゆ"
+        },
+        {
+          "kind": "title",
+          "code": "0x00010000",
+          "title": "OP    : だんじょん"
+        },
+        {
+          "kind": "title",
+          "code": "0x00020000",
+          "title": "OP    : こまんども～ど"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000000",
+          "title": "OP    : ぼす"
+        },
+        {
+          "kind": "title",
+          "code": "0x00050000",
+          "title": "OP    : でも2"
+        },
+        {
+          "kind": "title",
+          "code": "0x01000005",
+          "title": "MUS04 : ゆうえんち"
+        },
+        {
+          "kind": "title",
+          "code": "0x01000006",
+          "title": "MUS05 : まおうのしろ"
+        },
+        {
+          "kind": "title",
+          "code": "0x00090008",
+          "title": "ZAP   : ざっぷ"
+        },
+        {
+          "kind": "title",
+          "code": "0x00080007",
+          "title": "END   : えんでぃんぐ"
+        },
+        {
+          "kind": "title",
+          "code": "0x00040000",
+          "title": "OP    : おしまい。"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/dbsoft.xml",
+      "source_order": 1008,
+      "archive": "wpoco98",
+      "id": "wpoco98-opn"
+    },
+    {
+      "title": "[PC-9801] 今夜も朝までPOWERFULまぁじゃん",
+      "driver": {
+        "name": "pc98vx",
+        "type": "opn",
+        "alias": "dB-SOFT",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "bootcs",
+          "value": "0x0000"
+        },
+        {
+          "name": "bootip",
+          "value": "0xf000"
+        },
+        {
+          "name": "funcvect",
+          "value": "0x7f"
+        },
+        {
+          "name": "dataaddr",
+          "value": "0x20000"
+        },
+        {
+          "name": "filesize",
+          "value": "0x9000"
+        },
+        {
+          "name": "datamax",
+          "value": "0x08"
+        },
+        {
+          "name": "clockmul",
+          "value": "8"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "PROG",
+          "offset": "0x01000"
+        },
+        {
+          "type": "code",
+          "path": "pwmajan.bin",
+          "offset": "0x0f000"
+        },
+        {
+          "type": "code",
+          "path": "DATA1",
+          "offset": "0x10000"
+        },
+        {
+          "type": "code",
+          "path": "DATA2",
+          "offset": "0x16400"
+        },
+        {
+          "type": "bgm",
+          "path": "DATA1",
+          "offset": "0x01"
+        },
+        {
+          "type": "bgm",
+          "path": "DATA2",
+          "offset": "0x02"
+        },
+        {
+          "type": "bgm",
+          "path": "DATA3",
+          "offset": "0x03"
+        },
+        {
+          "type": "bgm",
+          "path": "DATA4",
+          "offset": "0x04"
+        },
+        {
+          "type": "bgm",
+          "path": "DATA5",
+          "offset": "0x05"
+        },
+        {
+          "type": "bgm",
+          "path": "DATA6",
+          "offset": "0x06"
+        },
+        {
+          "type": "bgm",
+          "path": "DATA7",
+          "offset": "0x07"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x020002",
+          "title": "dB-SOFTロゴ"
+        },
+        {
+          "kind": "title",
+          "code": "0x000002",
+          "title": "オープニング"
+        },
+        {
+          "kind": "title",
+          "code": "0x010002",
+          "title": "名前の変更"
+        },
+        {
+          "kind": "title",
+          "code": "0x010001",
+          "title": "ロード中"
+        },
+        {
+          "kind": "title",
+          "code": "0x000001",
+          "title": "エキサイト麻雀"
+        },
+        {
+          "kind": "title",
+          "code": "0x000003",
+          "title": "ゲーム中BGM #00"
+        },
+        {
+          "kind": "title",
+          "code": "0x010003",
+          "title": "ゲーム中BGM #01"
+        },
+        {
+          "kind": "title",
+          "code": "0x020003",
+          "title": "ゲーム中BGM #02"
+        },
+        {
+          "kind": "title",
+          "code": "0x030003",
+          "title": "ゲーム中BGM #03"
+        },
+        {
+          "kind": "title",
+          "code": "0x040003",
+          "title": "ゲーム中BGM #04"
+        },
+        {
+          "kind": "title",
+          "code": "0x050003",
+          "title": "ゲーム中BGM #05"
+        },
+        {
+          "kind": "title",
+          "code": "0x060003",
+          "title": "ゲーム中BGM #06"
+        },
+        {
+          "kind": "title",
+          "code": "0x070003",
+          "title": "ゲーム中BGM #07"
+        },
+        {
+          "kind": "title",
+          "code": "0x080003",
+          "title": "ゲーム中BGM #08"
+        },
+        {
+          "kind": "title",
+          "code": "0x000005",
+          "title": "さすらい麻雀 オープニング1"
+        },
+        {
+          "kind": "title",
+          "code": "0x010005",
+          "title": "さすらい麻雀 オープニング2"
+        },
+        {
+          "kind": "title",
+          "code": "0x020005",
+          "title": "さすらい麻雀 オープニング3"
+        },
+        {
+          "kind": "title",
+          "code": "0x030005",
+          "title": "さすらい麻雀 オープニング4"
+        },
+        {
+          "kind": "title",
+          "code": "0x040005",
+          "title": "さすらい麻雀 オープニング5"
+        },
+        {
+          "kind": "title",
+          "code": "0x000006",
+          "title": "さすらい麻雀 尾卓 正吾          (対戦地:沖縄県)"
+        },
+        {
+          "kind": "title",
+          "code": "0x010006",
+          "title": "さすらい麻雀 須井 源六          (対戦地:長崎県(東京生まれ))"
+        },
+        {
+          "kind": "title",
+          "code": "0x020006",
+          "title": "さすらい麻雀 平家 和代          (対戦地:高知県)"
+        },
+        {
+          "kind": "title",
+          "code": "0x030006",
+          "title": "さすらい麻雀 近衛 和            (対戦地:大阪府)"
+        },
+        {
+          "kind": "title",
+          "code": "0x040006",
+          "title": "さすらい麻雀 ジョニー・ホリデー (対戦地:神奈川県 横浜市)"
+        },
+        {
+          "kind": "title",
+          "code": "0x050006",
+          "title": "さすらい麻雀 吉田 メグ          (対戦地:宮城県 仙台市)"
+        },
+        {
+          "kind": "title",
+          "code": "0x060006",
+          "title": "さすらい麻雀 形剣地 溜浪        (対戦地:青森県)"
+        },
+        {
+          "kind": "title",
+          "code": "0x070006",
+          "title": "さすらい麻雀 高戸 修            (対戦地:北海道 札幌)"
+        },
+        {
+          "kind": "title",
+          "code": "0x000004",
+          "title": "さすらい麻雀 エンディング"
+        },
+        {
+          "kind": "title",
+          "code": "0x010004",
+          "title": "さすらい麻雀 スタッフロール"
+        },
+        {
+          "kind": "title",
+          "code": "0x000007",
+          "title": "ぽこ麻雀 #00"
+        },
+        {
+          "kind": "title",
+          "code": "0x010007",
+          "title": "ぽこ麻雀 #01"
+        },
+        {
+          "kind": "title",
+          "code": "0x020007",
+          "title": "ぽこ麻雀 #02"
+        },
+        {
+          "kind": "title",
+          "code": "0x030007",
+          "title": "ぽこ麻雀 #03"
+        },
+        {
+          "kind": "title",
+          "code": "0x040007",
+          "title": "ぽこ麻雀 #04"
+        },
+        {
+          "kind": "title",
+          "code": "0x050007",
+          "title": "ぽこ麻雀 #05"
+        },
+        {
+          "kind": "title",
+          "code": "0x060007",
+          "title": "ぽこ麻雀 #06"
+        },
+        {
+          "kind": "title",
+          "code": "0x070007",
+          "title": "ぽこ麻雀 #07"
+        },
+        {
+          "kind": "title",
+          "code": "0x080007",
+          "title": "ぽこ麻雀 #08"
+        },
+        {
+          "kind": "title",
+          "code": "0x090007",
+          "title": "ぽこ麻雀 #09"
+        },
+        {
+          "kind": "title",
+          "code": "0x0000ffff",
+          "title": "EFFECT 00"
+        },
+        {
+          "kind": "title",
+          "code": "0x0001ffff",
+          "title": "EFFECT 01"
+        },
+        {
+          "kind": "title",
+          "code": "0x0002ffff",
+          "title": "EFFECT 02"
+        },
+        {
+          "kind": "title",
+          "code": "0x0003ffff",
+          "title": "EFFECT 03"
+        },
+        {
+          "kind": "title",
+          "code": "0x0004ffff",
+          "title": "EFFECT 04"
+        },
+        {
+          "kind": "title",
+          "code": "0x0005ffff",
+          "title": "EFFECT 05"
+        },
+        {
+          "kind": "title",
+          "code": "0x0006ffff",
+          "title": "EFFECT 06"
+        },
+        {
+          "kind": "title",
+          "code": "0x0007ffff",
+          "title": "EFFECT 07"
+        },
+        {
+          "kind": "title",
+          "code": "0x0008ffff",
+          "title": "EFFECT 08"
+        },
+        {
+          "kind": "title",
+          "code": "0x0009ffff",
+          "title": "EFFECT 09"
+        },
+        {
+          "kind": "title",
+          "code": "0x000affff",
+          "title": "EFFECT 10"
+        },
+        {
+          "kind": "title",
+          "code": "0x000bffff",
+          "title": "EFFECT 11"
+        },
+        {
+          "kind": "title",
+          "code": "0x000cffff",
+          "title": "EFFECT 12"
+        },
+        {
+          "kind": "title",
+          "code": "0x000dffff",
+          "title": "EFFECT 13"
+        },
+        {
+          "kind": "title",
+          "code": "0x000effff",
+          "title": "EFFECT 14"
+        },
+        {
+          "kind": "title",
+          "code": "0x000fffff",
+          "title": "EFFECT 15"
+        },
+        {
+          "kind": "title",
+          "code": "0x0010ffff",
+          "title": "EFFECT 16"
+        },
+        {
+          "kind": "title",
+          "code": "0x0011ffff",
+          "title": "EFFECT 17"
+        },
+        {
+          "kind": "title",
+          "code": "0x0012ffff",
+          "title": "EFFECT 18"
+        },
+        {
+          "kind": "title",
+          "code": "0x0013ffff",
+          "title": "EFFECT 19"
+        },
+        {
+          "kind": "title",
+          "code": "0x0014ffff",
+          "title": "EFFECT 20"
+        },
+        {
+          "kind": "title",
+          "code": "0x0015ffff",
+          "title": "EFFECT 21"
+        },
+        {
+          "kind": "title",
+          "code": "0x0016ffff",
+          "title": "EFFECT 22"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/dbsoft.xml",
+      "source_order": 1009,
+      "archive": "pwmajan_98",
+      "id": "pwmajan-98-opn"
+    },
+    {
+      "title": "[PC-9801] 今夜も朝までPOWERFULまぁじゃん2",
+      "driver": {
+        "name": "pc98vx",
+        "type": "opn",
+        "alias": "dB-SOFT",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "bootcs",
+          "value": "0x0100"
+        },
+        {
+          "name": "bootip",
+          "value": "0xf000"
+        },
+        {
+          "name": "funcvect",
+          "value": "0x7f"
+        },
+        {
+          "name": "dataaddr",
+          "value": "0x30000"
+        },
+        {
+          "name": "filesize",
+          "value": "0x7200"
+        },
+        {
+          "name": "datamax",
+          "value": "0x1b"
+        },
+        {
+          "name": "clockmul",
+          "value": "8"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "PROG",
+          "offset": "0x01100"
+        },
+        {
+          "type": "code",
+          "path": "pwmajan2.bin",
+          "offset": "0x10000"
+        },
+        {
+          "type": "code",
+          "path": "DATA",
+          "offset": "0x11000"
+        },
+        {
+          "type": "bgm",
+          "path": "OP",
+          "offset": "0x00"
+        },
+        {
+          "type": "bgm",
+          "path": "OP",
+          "offset": "0x01"
+        },
+        {
+          "type": "bgm",
+          "path": "NORMAL1",
+          "offset": "0x02"
+        },
+        {
+          "type": "bgm",
+          "path": "NORMAL2",
+          "offset": "0x03"
+        },
+        {
+          "type": "bgm",
+          "path": "EXCITE1",
+          "offset": "0x04"
+        },
+        {
+          "type": "bgm",
+          "path": "EXCITE2",
+          "offset": "0x05"
+        },
+        {
+          "type": "bgm",
+          "path": "EXCITE3",
+          "offset": "0x06"
+        },
+        {
+          "type": "bgm",
+          "path": "EXCITE3",
+          "offset": "0x07"
+        },
+        {
+          "type": "bgm",
+          "path": "POCO1",
+          "offset": "0x08"
+        },
+        {
+          "type": "bgm",
+          "path": "POCO2",
+          "offset": "0x09"
+        },
+        {
+          "type": "bgm",
+          "path": "POCO3",
+          "offset": "0x0a"
+        },
+        {
+          "type": "bgm",
+          "path": "SASURAI1",
+          "offset": "0x0b"
+        },
+        {
+          "type": "bgm",
+          "path": "SASURAI2",
+          "offset": "0x0c"
+        },
+        {
+          "type": "bgm",
+          "path": "SASURAI3",
+          "offset": "0x0d"
+        },
+        {
+          "type": "bgm",
+          "path": "SASURAI3",
+          "offset": "0x0e"
+        },
+        {
+          "type": "bgm",
+          "path": "SASURAI4",
+          "offset": "0x0f"
+        },
+        {
+          "type": "bgm",
+          "path": "SASURAI5",
+          "offset": "0x10"
+        },
+        {
+          "type": "bgm",
+          "path": "SASURAI6",
+          "offset": "0x11"
+        },
+        {
+          "type": "bgm",
+          "path": "SASURAI7",
+          "offset": "0x12"
+        },
+        {
+          "type": "bgm",
+          "path": "SASURAI8",
+          "offset": "0x13"
+        },
+        {
+          "type": "bgm",
+          "path": "SASURAI9",
+          "offset": "0x14"
+        },
+        {
+          "type": "bgm",
+          "path": "SASURAI10",
+          "offset": "0x15"
+        },
+        {
+          "type": "bgm",
+          "path": "SASURAI11",
+          "offset": "0x16"
+        },
+        {
+          "type": "bgm",
+          "path": "SASURAI12",
+          "offset": "0x17"
+        },
+        {
+          "type": "bgm",
+          "path": "SASURAI13",
+          "offset": "0x18"
+        },
+        {
+          "type": "bgm",
+          "path": "SASURAI14",
+          "offset": "0x19"
+        },
+        {
+          "type": "bgm",
+          "path": "SASURAI15",
+          "offset": "0x1a"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x020001",
+          "title": "dB-SOFTロゴ"
+        },
+        {
+          "kind": "title",
+          "code": "0x000001",
+          "title": "オープニング"
+        },
+        {
+          "kind": "title",
+          "code": "0x030001",
+          "title": "オープニング (HAPPY BIRTHDAY)"
+        },
+        {
+          "kind": "title",
+          "code": "0x040001",
+          "title": "オープニング (A HAPPY NEW YEAR)"
+        },
+        {
+          "kind": "title",
+          "code": "0x050001",
+          "title": "オープニング (MERRY CHRISTMAS)"
+        },
+        {
+          "kind": "title",
+          "code": "0x010001",
+          "title": "名前登録"
+        },
+        {
+          "kind": "title",
+          "code": "0x000000",
+          "title": "ロード中"
+        },
+        {
+          "kind": "title",
+          "code": "0x000002",
+          "title": "ノーマル麻雀Excellent      : タイトル"
+        },
+        {
+          "kind": "title",
+          "code": "0x010002",
+          "title": "ノーマル麻雀Excellent      : 半荘終了"
+        },
+        {
+          "kind": "title",
+          "code": "0x000003",
+          "title": "ノーマル麻雀Excellent      : ゲーム中"
+        },
+        {
+          "kind": "title",
+          "code": "0x010003",
+          "title": "ノーマル麻雀Excellent      : リーチ"
+        },
+        {
+          "kind": "title",
+          "code": "0x020003",
+          "title": "ノーマル麻雀Excellent      : アガり"
+        },
+        {
+          "kind": "title",
+          "code": "0x030003",
+          "title": "ノーマル麻雀Excellent      : アガられた"
+        },
+        {
+          "kind": "title",
+          "code": "0x040003",
+          "title": "ノーマル麻雀Excellent      : 役満"
+        },
+        {
+          "kind": "title",
+          "code": "0x000004",
+          "title": "エキサイト麻雀お姉さん組   : タイトル"
+        },
+        {
+          "kind": "title",
+          "code": "0x000005",
+          "title": "エキサイト麻雀お姉さん組   : 脱衣デモ"
+        },
+        {
+          "kind": "title",
+          "code": "0x000006",
+          "title": "エキサイト麻雀お姉さん組   : ゲーム中"
+        },
+        {
+          "kind": "comment",
+          "text": "\t<title code=\"0x000007\">エキサイト麻雀お姉さん組   : 演奏停止</title> "
+        },
+        {
+          "kind": "title",
+          "code": "0x010007",
+          "title": "エキサイト麻雀お姉さん組   : リーチ"
+        },
+        {
+          "kind": "title",
+          "code": "0x020007",
+          "title": "エキサイト麻雀お姉さん組   : アガり"
+        },
+        {
+          "kind": "title",
+          "code": "0x030007",
+          "title": "エキサイト麻雀お姉さん組   : アガられた"
+        },
+        {
+          "kind": "title",
+          "code": "0x040007",
+          "title": "エキサイト麻雀お姉さん組   : 役満"
+        },
+        {
+          "kind": "title",
+          "code": "0x000008",
+          "title": "ぽこまぁじゃんフェステバァ : タイトル"
+        },
+        {
+          "kind": "title",
+          "code": "0x010008",
+          "title": "ぽこまぁじゃんフェステバァ : デモ"
+        },
+        {
+          "kind": "title",
+          "code": "0x020008",
+          "title": "ぽこまぁじゃんフェステバァ : エンディング"
+        },
+        {
+          "kind": "title",
+          "code": "0x000009",
+          "title": "ぽこまぁじゃんフェステバァ : トーナメント表"
+        },
+        {
+          "kind": "title",
+          "code": "0x010009",
+          "title": "ぽこまぁじゃんフェステバァ : GAME OVER"
+        },
+        {
+          "kind": "title",
+          "code": "0x01000a",
+          "title": "ぽこまぁじゃんフェステバァ : ゲーム中(春)"
+        },
+        {
+          "kind": "title",
+          "code": "0x02000a",
+          "title": "ぽこまぁじゃんフェステバァ : ゲーム中(夏)"
+        },
+        {
+          "kind": "title",
+          "code": "0x03000a",
+          "title": "ぽこまぁじゃんフェステバァ : ゲーム中(秋)"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000a",
+          "title": "ぽこまぁじゃんフェステバァ : ゲーム中(冬)"
+        },
+        {
+          "kind": "title",
+          "code": "0x04000a",
+          "title": "ぽこまぁじゃんフェステバァ : リーチ"
+        },
+        {
+          "kind": "title",
+          "code": "0x05000a",
+          "title": "ぽこまぁじゃんフェステバァ : アガり"
+        },
+        {
+          "kind": "title",
+          "code": "0x06000a",
+          "title": "ぽこまぁじゃんフェステバァ : アガられた"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000b",
+          "title": "さすらい麻雀The World      : デモ"
+        },
+        {
+          "kind": "title",
+          "code": "0x01000b",
+          "title": "さすらい麻雀The World      : #01?"
+        },
+        {
+          "kind": "title",
+          "code": "0x02000b",
+          "title": "さすらい麻雀The World      : #02?"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000c",
+          "title": "さすらい麻雀The World      : ミニゲームはずれ"
+        },
+        {
+          "kind": "title",
+          "code": "0x01000c",
+          "title": "さすらい麻雀The World      : ミニゲームあたり"
+        },
+        {
+          "kind": "title",
+          "code": "0x02000c",
+          "title": "さすらい麻雀The World      : すごろくシーン"
+        },
+        {
+          "kind": "title",
+          "code": "0x03000c",
+          "title": "さすらい麻雀The World      : ミニゲーム"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000d",
+          "title": "さすらい麻雀The World      : ザコ対戦"
+        },
+        {
+          "kind": "comment",
+          "text": "\t<title code=\"0x00000e\">さすらい麻雀The World      : 演奏停止</title> "
+        },
+        {
+          "kind": "title",
+          "code": "0x01000e",
+          "title": "さすらい麻雀The World      : リーチ"
+        },
+        {
+          "kind": "title",
+          "code": "0x02000e",
+          "title": "さすらい麻雀The World      : アガり"
+        },
+        {
+          "kind": "title",
+          "code": "0x03000e",
+          "title": "さすらい麻雀The World      : アガられた"
+        },
+        {
+          "kind": "title",
+          "code": "0x04000e",
+          "title": "さすらい麻雀The World      : 役満"
+        },
+        {
+          "kind": "title",
+          "code": "0x05000e",
+          "title": "さすらい麻雀The World      : GAME OVER"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000f",
+          "title": "さすらい麻雀The World      : 台湾         / キム・キム"
+        },
+        {
+          "kind": "title",
+          "code": "0x000010",
+          "title": "さすらい麻雀The World      : シドニー     / パティ・マクドォ"
+        },
+        {
+          "kind": "title",
+          "code": "0x000011",
+          "title": "さすらい麻雀The World      : デリー       / アマホナ・ルー"
+        },
+        {
+          "kind": "title",
+          "code": "0x000012",
+          "title": "さすらい麻雀The World      : モスクワ     / スルノワ・コメノフ"
+        },
+        {
+          "kind": "title",
+          "code": "0x000013",
+          "title": "さすらい麻雀The World      : カイロ       / インカ・ニカニカ"
+        },
+        {
+          "kind": "title",
+          "code": "0x000014",
+          "title": "さすらい麻雀The World      : パリ         / クリボンヌ・フランソワーズ"
+        },
+        {
+          "kind": "title",
+          "code": "0x000015",
+          "title": "さすらい麻雀The World      : アクラ       / ルンボ・タンバ"
+        },
+        {
+          "kind": "title",
+          "code": "0x000016",
+          "title": "さすらい麻雀The World      : タバチンガ   / ムキキ・モココ"
+        },
+        {
+          "kind": "title",
+          "code": "0x000017",
+          "title": "さすらい麻雀The World      : ハバナ       / ヘラコレ・マック・Jr"
+        },
+        {
+          "kind": "title",
+          "code": "0x000018",
+          "title": "さすらい麻雀The World      : ヒューストン / キャサリン・ブラウン"
+        },
+        {
+          "kind": "title",
+          "code": "0x000019",
+          "title": "さすらい麻雀The World      : アンカレジ   / タム・タム"
+        },
+        {
+          "kind": "title",
+          "code": "0x00001a",
+          "title": "さすらい麻雀The World      : 札幌         / 伊賀仁長助"
+        },
+        {
+          "kind": "title",
+          "code": "0x01ffff",
+          "title": "効果音#01"
+        },
+        {
+          "kind": "title",
+          "code": "0x02ffff",
+          "title": "効果音#02"
+        },
+        {
+          "kind": "title",
+          "code": "0x03ffff",
+          "title": "効果音#03"
+        },
+        {
+          "kind": "title",
+          "code": "0x04ffff",
+          "title": "効果音#04"
+        },
+        {
+          "kind": "title",
+          "code": "0x05ffff",
+          "title": "効果音#05"
+        },
+        {
+          "kind": "title",
+          "code": "0x06ffff",
+          "title": "効果音#06"
+        },
+        {
+          "kind": "title",
+          "code": "0x07ffff",
+          "title": "効果音#07"
+        },
+        {
+          "kind": "title",
+          "code": "0x08ffff",
+          "title": "効果音#08"
+        },
+        {
+          "kind": "title",
+          "code": "0x09ffff",
+          "title": "効果音#09"
+        },
+        {
+          "kind": "title",
+          "code": "0x0affff",
+          "title": "効果音#0A"
+        },
+        {
+          "kind": "title",
+          "code": "0x0bffff",
+          "title": "効果音#0B"
+        },
+        {
+          "kind": "title",
+          "code": "0x0cffff",
+          "title": "効果音#0C"
+        },
+        {
+          "kind": "title",
+          "code": "0x0dffff",
+          "title": "効果音#0D"
+        },
+        {
+          "kind": "title",
+          "code": "0x0effff",
+          "title": "効果音#0E"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/dbsoft.xml",
+      "source_order": 1010,
+      "archive": "pwmajan2_98",
+      "id": "pwmajan2-98-opn"
+    },
+    {
+      "title": "[PC-9801] メルルーン",
+      "driver": {
+        "name": "pc98vx",
+        "type": "opn",
+        "alias": "dB-SOFT",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "bootcs",
+          "value": "0x0200"
+        },
+        {
+          "name": "bootip",
+          "value": "0xd000"
+        },
+        {
+          "name": "funcvect",
+          "value": "0x7f"
+        },
+        {
+          "name": "dataaddr",
+          "value": "0x11800"
+        },
+        {
+          "name": "filesize",
+          "value": "0x1000"
+        },
+        {
+          "name": "clockmul",
+          "value": "8"
+        },
+        {
+          "name": "datamax",
+          "value": "0x0d"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "PROG",
+          "offset": "0x02000"
+        },
+        {
+          "type": "code",
+          "path": "melroon.bin",
+          "offset": "0x0f000"
+        },
+        {
+          "type": "code",
+          "path": "DATA",
+          "offset": "0x1c100"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS00",
+          "offset": "0x01"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS01",
+          "offset": "0x02"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS02",
+          "offset": "0x03"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS03",
+          "offset": "0x04"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS04",
+          "offset": "0x05"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS05",
+          "offset": "0x06"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS06",
+          "offset": "0x07"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS07",
+          "offset": "0x08"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS08",
+          "offset": "0x09"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS09",
+          "offset": "0x0a"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS10",
+          "offset": "0x0b"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS11",
+          "offset": "0x0c"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x000008",
+          "title": "MUS07-00 : 城の曲"
+        },
+        {
+          "kind": "title",
+          "code": "0x000009",
+          "title": "MUS08-00 : うぽフィールドの曲"
+        },
+        {
+          "kind": "title",
+          "code": "0x010009",
+          "title": "MUS08-01 : うぽ村の曲"
+        },
+        {
+          "kind": "title",
+          "code": "0x020009",
+          "title": "MUS08-02 : 家の中の曲"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000a",
+          "title": "MUS09-00 : るぴフィールドの曲"
+        },
+        {
+          "kind": "title",
+          "code": "0x01000a",
+          "title": "MUS09-01 : るぴ村の曲"
+        },
+        {
+          "kind": "title",
+          "code": "0x02000a",
+          "title": "MUS09-02 : 家の中の曲"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000b",
+          "title": "MUS10-00 : へるなフィールドの曲"
+        },
+        {
+          "kind": "title",
+          "code": "0x01000b",
+          "title": "MUS10-01 : へるな村の曲"
+        },
+        {
+          "kind": "title",
+          "code": "0x02000b",
+          "title": "MUS10-02 : 家の中の曲"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000c",
+          "title": "MUS11-00 : もるとフィールドの曲"
+        },
+        {
+          "kind": "title",
+          "code": "0x01000c",
+          "title": "MUS11-01 : もると村の曲"
+        },
+        {
+          "kind": "title",
+          "code": "0x02000c",
+          "title": "MUS11-02 : 家の中の曲"
+        },
+        {
+          "kind": "title",
+          "code": "0x000001",
+          "title": "MUS00-00 : まむフィールドの曲"
+        },
+        {
+          "kind": "title",
+          "code": "0x010001",
+          "title": "MUS00-01 : まむ村の曲"
+        },
+        {
+          "kind": "title",
+          "code": "0x020001",
+          "title": "MUS00-02 : 家の中の曲"
+        },
+        {
+          "kind": "title",
+          "code": "0x030001",
+          "title": "MUS00-03 : 祭りばやし"
+        },
+        {
+          "kind": "title",
+          "code": "0x040001",
+          "title": "MUS00-04 : ボツになったまむの曲"
+        },
+        {
+          "kind": "title",
+          "code": "0x000002",
+          "title": "MUS01-00 : ぴこフィールドの曲"
+        },
+        {
+          "kind": "title",
+          "code": "0x010002",
+          "title": "MUS01-01 : ぴこ村の曲"
+        },
+        {
+          "kind": "title",
+          "code": "0x020002",
+          "title": "MUS01-02 : 家の中の曲"
+        },
+        {
+          "kind": "title",
+          "code": "0x000003",
+          "title": "MUS02-00 : ぺこフィールドの曲"
+        },
+        {
+          "kind": "title",
+          "code": "0x010003",
+          "title": "MUS02-01 : ぺこ村の曲"
+        },
+        {
+          "kind": "title",
+          "code": "0x020003",
+          "title": "MUS02-02 : 家の中の曲"
+        },
+        {
+          "kind": "title",
+          "code": "0x000004",
+          "title": "MUS03-00 : ２部のフィールドの曲"
+        },
+        {
+          "kind": "title",
+          "code": "0x010004",
+          "title": "MUS03-01 : ２部の村の曲"
+        },
+        {
+          "kind": "title",
+          "code": "0x020004",
+          "title": "MUS03-02 : ２部の家の中の曲"
+        },
+        {
+          "kind": "title",
+          "code": "0x040004",
+          "title": "MUS03-04 : ２部のボスの曲"
+        },
+        {
+          "kind": "title",
+          "code": "0x050004",
+          "title": "MUS03-05 : ２部の地下の曲"
+        },
+        {
+          "kind": "title",
+          "code": "0x000005",
+          "title": "MUS04-00 : 教会の曲"
+        },
+        {
+          "kind": "title",
+          "code": "0x010005",
+          "title": "MUS04-01 : 何かをもらったときの曲"
+        },
+        {
+          "kind": "title",
+          "code": "0x020005",
+          "title": "MUS04-02 : 追いかけっこの曲"
+        },
+        {
+          "kind": "title",
+          "code": "0x030005",
+          "title": "MUS04-03 : 最後の城の中の曲"
+        },
+        {
+          "kind": "title",
+          "code": "0x040005",
+          "title": "MUS04-04 : タイトルの曲"
+        },
+        {
+          "kind": "title",
+          "code": "0x000006",
+          "title": "MUS05-00 : オープニングの曲"
+        },
+        {
+          "kind": "title",
+          "code": "0x010006",
+          "title": "MUS05-01 : 中間デモの曲"
+        },
+        {
+          "kind": "title",
+          "code": "0x020006",
+          "title": "MUS05-02 : エンディングの曲"
+        },
+        {
+          "kind": "title",
+          "code": "0x030006",
+          "title": "MUS05-03 : スタッフの曲"
+        },
+        {
+          "kind": "title",
+          "code": "0x040006",
+          "title": "MUS05-04 : いそめパート１"
+        },
+        {
+          "kind": "title",
+          "code": "0x050006",
+          "title": "MUS05-05 : いそめパート２"
+        },
+        {
+          "kind": "title",
+          "code": "0x060006",
+          "title": "MUS05-06 : いそめパート３"
+        },
+        {
+          "kind": "title",
+          "code": "0x070006",
+          "title": "MUS05-07 : 魔王復活の曲"
+        },
+        {
+          "kind": "title",
+          "code": "0x000007",
+          "title": "MUS06-00 : ユリカーダの曲"
+        },
+        {
+          "kind": "title",
+          "code": "0x010007",
+          "title": "MUS06-01 : 猫の鳴き声"
+        },
+        {
+          "kind": "title",
+          "code": "0x020007",
+          "title": "MUS06-02 : あざらしの声"
+        },
+        {
+          "kind": "title",
+          "code": "0x030007",
+          "title": "MUS06-03 : 薬屋の娘の歌"
+        },
+        {
+          "kind": "title",
+          "code": "0x040007",
+          "title": "MUS06-04 : メロディーの歌"
+        },
+        {
+          "kind": "title",
+          "code": "0x050007",
+          "title": "MUS06-05 : チッピーの歌"
+        },
+        {
+          "kind": "title",
+          "code": "0x060007",
+          "title": "MUS06-06 : なんかん君の歌"
+        },
+        {
+          "kind": "title",
+          "code": "0x070007",
+          "title": "MUS06-07 : もると村の曲"
+        },
+        {
+          "kind": "title",
+          "code": "0x00ffff",
+          "title": "効果音00"
+        },
+        {
+          "kind": "title",
+          "code": "0x01ffff",
+          "title": "効果音01"
+        },
+        {
+          "kind": "title",
+          "code": "0x02ffff",
+          "title": "効果音02"
+        },
+        {
+          "kind": "title",
+          "code": "0x03ffff",
+          "title": "効果音03"
+        },
+        {
+          "kind": "title",
+          "code": "0x04ffff",
+          "title": "効果音04"
+        },
+        {
+          "kind": "title",
+          "code": "0x05ffff",
+          "title": "効果音05"
+        },
+        {
+          "kind": "title",
+          "code": "0x06ffff",
+          "title": "効果音06"
+        },
+        {
+          "kind": "title",
+          "code": "0x07ffff",
+          "title": "効果音07"
+        },
+        {
+          "kind": "title",
+          "code": "0x08ffff",
+          "title": "効果音08"
+        },
+        {
+          "kind": "title",
+          "code": "0x09ffff",
+          "title": "効果音09"
+        },
+        {
+          "kind": "title",
+          "code": "0x0affff",
+          "title": "効果音10"
+        },
+        {
+          "kind": "title",
+          "code": "0x0bffff",
+          "title": "効果音11"
+        },
+        {
+          "kind": "title",
+          "code": "0x0cffff",
+          "title": "効果音12"
+        },
+        {
+          "kind": "title",
+          "code": "0x0dffff",
+          "title": "効果音13"
+        },
+        {
+          "kind": "title",
+          "code": "0x0effff",
+          "title": "効果音14"
+        },
+        {
+          "kind": "title",
+          "code": "0x0fffff",
+          "title": "効果音15"
+        },
+        {
+          "kind": "title",
+          "code": "0x10ffff",
+          "title": "効果音16"
+        },
+        {
+          "kind": "title",
+          "code": "0x11ffff",
+          "title": "効果音17"
+        },
+        {
+          "kind": "title",
+          "code": "0x12ffff",
+          "title": "効果音18"
+        },
+        {
+          "kind": "title",
+          "code": "0x13ffff",
+          "title": "効果音19"
+        },
+        {
+          "kind": "title",
+          "code": "0x14ffff",
+          "title": "効果音20"
+        },
+        {
+          "kind": "title",
+          "code": "0x15ffff",
+          "title": "効果音21"
+        },
+        {
+          "kind": "title",
+          "code": "0x16ffff",
+          "title": "効果音22"
+        },
+        {
+          "kind": "title",
+          "code": "0x17ffff",
+          "title": "効果音23"
+        },
+        {
+          "kind": "title",
+          "code": "0x18ffff",
+          "title": "効果音24"
+        },
+        {
+          "kind": "title",
+          "code": "0x19ffff",
+          "title": "効果音25"
+        },
+        {
+          "kind": "title",
+          "code": "0x1affff",
+          "title": "効果音26"
+        },
+        {
+          "kind": "title",
+          "code": "0x1bffff",
+          "title": "効果音27"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/dbsoft.xml",
+      "source_order": 1011,
+      "archive": "melroon_98",
+      "id": "melroon-98-opn"
+    },
+    {
+      "title": "[X1] らぷてっく",
+      "driver": {
+        "name": "x1",
+        "type": "psg",
+        "alias": "dB-SOFT",
+        "platform": "SHARP X1"
+      },
+      "options": [],
+      "assets": [
+        {
+          "type": "code",
+          "path": "OP",
+          "offset": "0x0000"
+        },
+        {
+          "type": "code",
+          "path": "PATCH",
+          "offset": "0x0000"
+        },
+        {
+          "type": "code",
+          "path": "PROG",
+          "offset": "0x4740"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x0c000005",
+          "title": "MUS05 : タイトル"
+        },
+        {
+          "kind": "title",
+          "code": "0xd0000000",
+          "title": "MUS00 : メインBGM"
+        },
+        {
+          "kind": "title",
+          "code": "0xd0000001",
+          "title": "MUS01 : すーぱーびっきぃ君のテーマ(1)"
+        },
+        {
+          "kind": "title",
+          "code": "0xd0000002",
+          "title": "MUS02 : すーぱーびっきぃ君のテーマ(2)"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000003",
+          "title": "MUS03 : ミス"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000004",
+          "title": "MUS04 : ラウンドクリア"
+        },
+        {
+          "kind": "title",
+          "code": "0x0a000006",
+          "title": "MUS06 : ランキング"
+        },
+        {
+          "kind": "title",
+          "code": "0x0a000007",
+          "title": "MUS07 : キャスト"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/dbsoft.xml",
+      "source_order": 1012,
+      "archive": "x1laptick",
+      "id": "x1laptick-psg"
+    },
+    {
+      "title": "[X1] うっでいぽこ(OPM)",
+      "driver": {
+        "name": "x1",
+        "type": "opm",
+        "alias": "dB-SOFT",
+        "platform": "SHARP X1"
+      },
+      "options": [
+        {
+          "name": "mdata_addr",
+          "value": "0xa000"
+        },
+        {
+          "name": "init_pc",
+          "value": "0xf000"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "PROG",
+          "offset": "0x0100"
+        },
+        {
+          "type": "code",
+          "path": "FMDRV",
+          "offset": "0x6000"
+        },
+        {
+          "type": "code",
+          "path": "MA000",
+          "offset": "0x9100"
+        },
+        {
+          "type": "code",
+          "path": "MA007",
+          "offset": "0xc000"
+        },
+        {
+          "type": "code",
+          "path": "PATCH",
+          "offset": "0xf000"
+        },
+        {
+          "type": "bgm",
+          "path": "MA000",
+          "offset": "0x00"
+        },
+        {
+          "type": "bgm",
+          "path": "MA001",
+          "offset": "0x01"
+        },
+        {
+          "type": "bgm",
+          "path": "MA002",
+          "offset": "0x02"
+        },
+        {
+          "type": "bgm",
+          "path": "MA003",
+          "offset": "0x03"
+        },
+        {
+          "type": "bgm",
+          "path": "MA004",
+          "offset": "0x04"
+        },
+        {
+          "type": "bgm",
+          "path": "MA005",
+          "offset": "0x05"
+        },
+        {
+          "type": "bgm",
+          "path": "MA006",
+          "offset": "0x06"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x06000000",
+          "title": "たいとる"
+        },
+        {
+          "kind": "title",
+          "code": "0x04000000",
+          "title": "でも1"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000001",
+          "title": "はる"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000002",
+          "title": "なつ"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000003",
+          "title": "あき"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000004",
+          "title": "ふゆ"
+        },
+        {
+          "kind": "title",
+          "code": "0x02000000",
+          "title": "だんじょん"
+        },
+        {
+          "kind": "title",
+          "code": "0x03000000",
+          "title": "こまんども～ど"
+        },
+        {
+          "kind": "title",
+          "code": "0x01000000",
+          "title": "ぼす"
+        },
+        {
+          "kind": "title",
+          "code": "0x05000000",
+          "title": "でも2"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000005",
+          "title": "ゆうえんち"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000006",
+          "title": "まおうのしろ"
+        },
+        {
+          "kind": "title",
+          "code": "0x08000000",
+          "title": "ざっぷ"
+        },
+        {
+          "kind": "title",
+          "code": "0x09000000",
+          "title": "えんでぃんぐ"
+        },
+        {
+          "kind": "title",
+          "code": "0x07000000",
+          "title": "おしまい。"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/dbsoft.xml",
+      "source_order": 1013,
+      "archive": "x1poco",
+      "id": "x1poco-opm"
+    },
+    {
+      "title": "[X1] うっでいぽこ(PSG)",
+      "driver": {
+        "name": "x1",
+        "type": "psg",
+        "alias": "dB-SOFT",
+        "platform": "SHARP X1"
+      },
+      "options": [
+        {
+          "name": "mdata_addr",
+          "value": "0xa000"
+        },
+        {
+          "name": "init_pc",
+          "value": "0xf000"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "PROG",
+          "offset": "0x0100"
+        },
+        {
+          "type": "code",
+          "path": "PSGDRV",
+          "offset": "0x6000"
+        },
+        {
+          "type": "code",
+          "path": "MB000",
+          "offset": "0x9100"
+        },
+        {
+          "type": "code",
+          "path": "MB007",
+          "offset": "0xc000"
+        },
+        {
+          "type": "code",
+          "path": "PATCH",
+          "offset": "0xf000"
+        },
+        {
+          "type": "bgm",
+          "path": "MB000",
+          "offset": "0x00"
+        },
+        {
+          "type": "bgm",
+          "path": "MB001",
+          "offset": "0x01"
+        },
+        {
+          "type": "bgm",
+          "path": "MB002",
+          "offset": "0x02"
+        },
+        {
+          "type": "bgm",
+          "path": "MB003",
+          "offset": "0x03"
+        },
+        {
+          "type": "bgm",
+          "path": "MB004",
+          "offset": "0x04"
+        },
+        {
+          "type": "bgm",
+          "path": "MB005",
+          "offset": "0x05"
+        },
+        {
+          "type": "bgm",
+          "path": "MB006",
+          "offset": "0x06"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x06000000",
+          "title": "たいとる"
+        },
+        {
+          "kind": "title",
+          "code": "0x04000000",
+          "title": "でも1"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000001",
+          "title": "はる"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000002",
+          "title": "なつ"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000003",
+          "title": "あき"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000004",
+          "title": "ふゆ"
+        },
+        {
+          "kind": "title",
+          "code": "0x02000000",
+          "title": "だんじょん"
+        },
+        {
+          "kind": "title",
+          "code": "0x03000000",
+          "title": "こまんども～ど"
+        },
+        {
+          "kind": "title",
+          "code": "0x01000000",
+          "title": "ぼす"
+        },
+        {
+          "kind": "title",
+          "code": "0x05000000",
+          "title": "でも2"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000005",
+          "title": "ゆうえんち"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000006",
+          "title": "まおうのしろ"
+        },
+        {
+          "kind": "title",
+          "code": "0x08000000",
+          "title": "ざっぷ"
+        },
+        {
+          "kind": "title",
+          "code": "0x09000000",
+          "title": "えんでぃんぐ"
+        },
+        {
+          "kind": "title",
+          "code": "0x07000000",
+          "title": "おしまい。"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/dbsoft.xml",
+      "source_order": 1014,
+      "archive": "x1poco",
+      "id": "x1poco-psg"
+    },
+    {
+      "title": "[X1] 今夜も朝までPOWERFULまぁじゃん(OPM)",
+      "driver": {
+        "name": "x1",
+        "type": "opm",
+        "alias": "dB-SOFT",
+        "platform": "SHARP X1"
+      },
+      "options": [
+        {
+          "name": "init_pc",
+          "value": "0xf000"
+        },
+        {
+          "name": "mdata_addr",
+          "value": "0x6000"
+        },
+        {
+          "name": "mdata_size",
+          "value": "0x9000"
+        },
+        {
+          "name": "mfile_size",
+          "value": "0x9000"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "PROG1",
+          "offset": "0x0100"
+        },
+        {
+          "type": "code",
+          "path": "OPMDRV",
+          "offset": "0x3000"
+        },
+        {
+          "type": "code",
+          "path": "PROG2",
+          "offset": "0x3800"
+        },
+        {
+          "type": "code",
+          "path": "PATCH",
+          "offset": "0xf000"
+        },
+        {
+          "type": "bgm",
+          "path": "PROG2",
+          "offset": "0x02"
+        },
+        {
+          "type": "bgm",
+          "path": "NORMAL",
+          "offset": "0x03"
+        },
+        {
+          "type": "bgm",
+          "path": "SASURAI",
+          "offset": "0x04"
+        },
+        {
+          "type": "bgm",
+          "path": "POCO",
+          "offset": "0x05"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x02000002",
+          "title": "dB-SOFTロゴ"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000002",
+          "title": "オープニング"
+        },
+        {
+          "kind": "title",
+          "code": "0x01000002",
+          "title": "名前の変更"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000001",
+          "title": "エキサイト麻雀"
+        },
+        {
+          "kind": "title",
+          "code": "0x01000001",
+          "title": "ロード中"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000003",
+          "title": "ゲーム中BGM #00"
+        },
+        {
+          "kind": "title",
+          "code": "0x01000003",
+          "title": "ゲーム中BGM #01"
+        },
+        {
+          "kind": "title",
+          "code": "0x02000003",
+          "title": "ゲーム中BGM #02"
+        },
+        {
+          "kind": "title",
+          "code": "0x03000003",
+          "title": "ゲーム中BGM #03"
+        },
+        {
+          "kind": "title",
+          "code": "0x04000003",
+          "title": "ゲーム中BGM #04"
+        },
+        {
+          "kind": "title",
+          "code": "0x05000003",
+          "title": "ゲーム中BGM #05"
+        },
+        {
+          "kind": "title",
+          "code": "0x06000003",
+          "title": "ゲーム中BGM #06"
+        },
+        {
+          "kind": "title",
+          "code": "0x07000003",
+          "title": "ゲーム中BGM #07"
+        },
+        {
+          "kind": "title",
+          "code": "0x08000003",
+          "title": "ゲーム中BGM #08"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000004",
+          "title": "さすらい麻雀 #00"
+        },
+        {
+          "kind": "title",
+          "code": "0x01000004",
+          "title": "さすらい麻雀 #01"
+        },
+        {
+          "kind": "title",
+          "code": "0x02000004",
+          "title": "さすらい麻雀 #02"
+        },
+        {
+          "kind": "title",
+          "code": "0x03000004",
+          "title": "さすらい麻雀 #03"
+        },
+        {
+          "kind": "title",
+          "code": "0x04000004",
+          "title": "さすらい麻雀 #04"
+        },
+        {
+          "kind": "title",
+          "code": "0x05000004",
+          "title": "さすらい麻雀 #05"
+        },
+        {
+          "kind": "title",
+          "code": "0x06000004",
+          "title": "さすらい麻雀 #06"
+        },
+        {
+          "kind": "title",
+          "code": "0x07000004",
+          "title": "さすらい麻雀 #07"
+        },
+        {
+          "kind": "title",
+          "code": "0x08000004",
+          "title": "さすらい麻雀 #08"
+        },
+        {
+          "kind": "title",
+          "code": "0x09000004",
+          "title": "さすらい麻雀 #09"
+        },
+        {
+          "kind": "title",
+          "code": "0x0a000004",
+          "title": "さすらい麻雀 #0a"
+        },
+        {
+          "kind": "title",
+          "code": "0x0b000004",
+          "title": "さすらい麻雀 #0b"
+        },
+        {
+          "kind": "title",
+          "code": "0x0c000004",
+          "title": "さすらい麻雀 #0c"
+        },
+        {
+          "kind": "title",
+          "code": "0x0d000004",
+          "title": "さすらい麻雀 #0d"
+        },
+        {
+          "kind": "title",
+          "code": "0x0e000004",
+          "title": "さすらい麻雀 #0e"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000005",
+          "title": "ぽこ麻雀 #00"
+        },
+        {
+          "kind": "title",
+          "code": "0x01000005",
+          "title": "ぽこ麻雀 #01"
+        },
+        {
+          "kind": "title",
+          "code": "0x02000005",
+          "title": "ぽこ麻雀 #02"
+        },
+        {
+          "kind": "title",
+          "code": "0x03000005",
+          "title": "ぽこ麻雀 #03"
+        },
+        {
+          "kind": "title",
+          "code": "0x04000005",
+          "title": "ぽこ麻雀 #04"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000000",
+          "title": "効果音#00"
+        },
+        {
+          "kind": "title",
+          "code": "0x01000000",
+          "title": "効果音#01"
+        },
+        {
+          "kind": "title",
+          "code": "0x02000000",
+          "title": "効果音#02"
+        },
+        {
+          "kind": "title",
+          "code": "0x03000000",
+          "title": "効果音#03"
+        },
+        {
+          "kind": "title",
+          "code": "0x04000000",
+          "title": "効果音#04"
+        },
+        {
+          "kind": "title",
+          "code": "0x05000000",
+          "title": "効果音#05"
+        },
+        {
+          "kind": "title",
+          "code": "0x06000000",
+          "title": "効果音#06"
+        },
+        {
+          "kind": "title",
+          "code": "0x07000000",
+          "title": "効果音#07"
+        },
+        {
+          "kind": "title",
+          "code": "0x08000000",
+          "title": "効果音#08"
+        },
+        {
+          "kind": "title",
+          "code": "0x09000000",
+          "title": "効果音#09"
+        },
+        {
+          "kind": "title",
+          "code": "0x0a000000",
+          "title": "効果音#0A"
+        },
+        {
+          "kind": "title",
+          "code": "0x0b000000",
+          "title": "効果音#0B"
+        },
+        {
+          "kind": "title",
+          "code": "0x0c000000",
+          "title": "効果音#0C"
+        },
+        {
+          "kind": "title",
+          "code": "0x0d000000",
+          "title": "効果音#0D"
+        },
+        {
+          "kind": "title",
+          "code": "0x0e000000",
+          "title": "効果音#0E"
+        },
+        {
+          "kind": "title",
+          "code": "0x0f000000",
+          "title": "効果音#0F"
+        },
+        {
+          "kind": "title",
+          "code": "0x10000000",
+          "title": "効果音#10"
+        },
+        {
+          "kind": "title",
+          "code": "0x11000000",
+          "title": "効果音#11"
+        },
+        {
+          "kind": "title",
+          "code": "0x12000000",
+          "title": "効果音#12"
+        },
+        {
+          "kind": "title",
+          "code": "0x13000000",
+          "title": "効果音#13"
+        },
+        {
+          "kind": "title",
+          "code": "0x14000000",
+          "title": "効果音#14"
+        },
+        {
+          "kind": "title",
+          "code": "0x15000000",
+          "title": "効果音#15"
+        },
+        {
+          "kind": "title",
+          "code": "0x16000000",
+          "title": "効果音#16"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/dbsoft.xml",
+      "source_order": 1015,
+      "archive": "x1pwmajan",
+      "id": "x1pwmajan-opm"
+    },
+    {
+      "title": "[X1] 今夜も朝までPOWERFULまぁじゃん(PSG)",
+      "driver": {
+        "name": "x1",
+        "type": "psg",
+        "alias": "dB-SOFT",
+        "platform": "SHARP X1"
+      },
+      "options": [
+        {
+          "name": "init_pc",
+          "value": "0xf000"
+        },
+        {
+          "name": "mdata_addr",
+          "value": "0x6000"
+        },
+        {
+          "name": "mdata_size",
+          "value": "0x9000"
+        },
+        {
+          "name": "mfile_size",
+          "value": "0x9000"
+        },
+        {
+          "name": "psg_mix",
+          "value": "0x40"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "PROG1",
+          "offset": "0x0100"
+        },
+        {
+          "type": "code",
+          "path": "PROG2",
+          "offset": "0x3800"
+        },
+        {
+          "type": "code",
+          "path": "PATCH",
+          "offset": "0xf000"
+        },
+        {
+          "type": "bgm",
+          "path": "PROG2",
+          "offset": "0x02"
+        },
+        {
+          "type": "bgm",
+          "path": "NORMAL",
+          "offset": "0x03"
+        },
+        {
+          "type": "bgm",
+          "path": "SASURAI",
+          "offset": "0x04"
+        },
+        {
+          "type": "bgm",
+          "path": "POCO",
+          "offset": "0x05"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x02000002",
+          "title": "dB-SOFTロゴ"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000002",
+          "title": "オープニング"
+        },
+        {
+          "kind": "title",
+          "code": "0x01000002",
+          "title": "名前の変更"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000001",
+          "title": "エキサイト麻雀"
+        },
+        {
+          "kind": "title",
+          "code": "0x01000001",
+          "title": "ロード中"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000003",
+          "title": "ゲーム中BGM #00"
+        },
+        {
+          "kind": "title",
+          "code": "0x01000003",
+          "title": "ゲーム中BGM #01"
+        },
+        {
+          "kind": "title",
+          "code": "0x02000003",
+          "title": "ゲーム中BGM #02"
+        },
+        {
+          "kind": "title",
+          "code": "0x03000003",
+          "title": "ゲーム中BGM #03"
+        },
+        {
+          "kind": "title",
+          "code": "0x04000003",
+          "title": "ゲーム中BGM #04"
+        },
+        {
+          "kind": "title",
+          "code": "0x05000003",
+          "title": "ゲーム中BGM #05"
+        },
+        {
+          "kind": "title",
+          "code": "0x06000003",
+          "title": "ゲーム中BGM #06"
+        },
+        {
+          "kind": "title",
+          "code": "0x07000003",
+          "title": "ゲーム中BGM #07"
+        },
+        {
+          "kind": "title",
+          "code": "0x08000003",
+          "title": "ゲーム中BGM #08"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000004",
+          "title": "さすらい麻雀 #00"
+        },
+        {
+          "kind": "title",
+          "code": "0x01000004",
+          "title": "さすらい麻雀 #01"
+        },
+        {
+          "kind": "title",
+          "code": "0x02000004",
+          "title": "さすらい麻雀 #02"
+        },
+        {
+          "kind": "title",
+          "code": "0x03000004",
+          "title": "さすらい麻雀 #03"
+        },
+        {
+          "kind": "title",
+          "code": "0x04000004",
+          "title": "さすらい麻雀 #04"
+        },
+        {
+          "kind": "title",
+          "code": "0x05000004",
+          "title": "さすらい麻雀 #05"
+        },
+        {
+          "kind": "title",
+          "code": "0x06000004",
+          "title": "さすらい麻雀 #06"
+        },
+        {
+          "kind": "title",
+          "code": "0x07000004",
+          "title": "さすらい麻雀 #07"
+        },
+        {
+          "kind": "title",
+          "code": "0x08000004",
+          "title": "さすらい麻雀 #08"
+        },
+        {
+          "kind": "title",
+          "code": "0x09000004",
+          "title": "さすらい麻雀 #09"
+        },
+        {
+          "kind": "title",
+          "code": "0x0a000004",
+          "title": "さすらい麻雀 #0a"
+        },
+        {
+          "kind": "title",
+          "code": "0x0b000004",
+          "title": "さすらい麻雀 #0b"
+        },
+        {
+          "kind": "title",
+          "code": "0x0c000004",
+          "title": "さすらい麻雀 #0c"
+        },
+        {
+          "kind": "title",
+          "code": "0x0d000004",
+          "title": "さすらい麻雀 #0d"
+        },
+        {
+          "kind": "title",
+          "code": "0x0e000004",
+          "title": "さすらい麻雀 #0e"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000005",
+          "title": "ぽこ麻雀 #00"
+        },
+        {
+          "kind": "title",
+          "code": "0x01000005",
+          "title": "ぽこ麻雀 #01"
+        },
+        {
+          "kind": "title",
+          "code": "0x02000005",
+          "title": "ぽこ麻雀 #02"
+        },
+        {
+          "kind": "title",
+          "code": "0x03000005",
+          "title": "ぽこ麻雀 #03"
+        },
+        {
+          "kind": "title",
+          "code": "0x04000005",
+          "title": "ぽこ麻雀 #04"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000000",
+          "title": "効果音#00"
+        },
+        {
+          "kind": "title",
+          "code": "0x01000000",
+          "title": "効果音#01"
+        },
+        {
+          "kind": "title",
+          "code": "0x02000000",
+          "title": "効果音#02"
+        },
+        {
+          "kind": "title",
+          "code": "0x03000000",
+          "title": "効果音#03"
+        },
+        {
+          "kind": "title",
+          "code": "0x04000000",
+          "title": "効果音#04"
+        },
+        {
+          "kind": "title",
+          "code": "0x05000000",
+          "title": "効果音#05"
+        },
+        {
+          "kind": "title",
+          "code": "0x06000000",
+          "title": "効果音#06"
+        },
+        {
+          "kind": "title",
+          "code": "0x07000000",
+          "title": "効果音#07"
+        },
+        {
+          "kind": "title",
+          "code": "0x08000000",
+          "title": "効果音#08"
+        },
+        {
+          "kind": "title",
+          "code": "0x09000000",
+          "title": "効果音#09"
+        },
+        {
+          "kind": "title",
+          "code": "0x0a000000",
+          "title": "効果音#0A"
+        },
+        {
+          "kind": "title",
+          "code": "0x0b000000",
+          "title": "効果音#0B"
+        },
+        {
+          "kind": "title",
+          "code": "0x0c000000",
+          "title": "効果音#0C"
+        },
+        {
+          "kind": "title",
+          "code": "0x0d000000",
+          "title": "効果音#0D"
+        },
+        {
+          "kind": "title",
+          "code": "0x0e000000",
+          "title": "効果音#0E"
+        },
+        {
+          "kind": "title",
+          "code": "0x0f000000",
+          "title": "効果音#0F"
+        },
+        {
+          "kind": "title",
+          "code": "0x10000000",
+          "title": "効果音#10"
+        },
+        {
+          "kind": "title",
+          "code": "0x11000000",
+          "title": "効果音#11"
+        },
+        {
+          "kind": "title",
+          "code": "0x12000000",
+          "title": "効果音#12"
+        },
+        {
+          "kind": "title",
+          "code": "0x13000000",
+          "title": "効果音#13"
+        },
+        {
+          "kind": "title",
+          "code": "0x14000000",
+          "title": "効果音#14"
+        },
+        {
+          "kind": "title",
+          "code": "0x15000000",
+          "title": "効果音#15"
+        },
+        {
+          "kind": "title",
+          "code": "0x16000000",
+          "title": "効果音#16"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/dbsoft.xml",
+      "source_order": 1016,
+      "archive": "x1pwmajan",
+      "id": "x1pwmajan-psg"
+    },
+    {
+      "title": "[X1] 今夜も朝までPOWERFULまぁじゃん2(OPM)",
+      "driver": {
+        "name": "x1",
+        "type": "opm",
+        "alias": "dB-SOFT",
+        "platform": "SHARP X1"
+      },
+      "options": [
+        {
+          "name": "init_pc",
+          "value": "0xf800"
+        },
+        {
+          "name": "mdata_addr",
+          "value": "0x3000"
+        },
+        {
+          "name": "mdata_size",
+          "value": "0xc000"
+        },
+        {
+          "name": "mfile_size",
+          "value": "0xc000"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "PROG",
+          "offset": "0x0000"
+        },
+        {
+          "type": "code",
+          "path": "OP",
+          "offset": "0x3000"
+        },
+        {
+          "type": "code",
+          "path": "PROG2",
+          "offset": "0x9000"
+        },
+        {
+          "type": "code",
+          "path": "OPMDRV",
+          "offset": "0xf000"
+        },
+        {
+          "type": "code",
+          "path": "PATCH",
+          "offset": "0xf800"
+        },
+        {
+          "type": "bgm",
+          "path": "OP",
+          "offset": "0x00"
+        },
+        {
+          "type": "bgm",
+          "path": "OP",
+          "offset": "0x01"
+        },
+        {
+          "type": "bgm",
+          "path": "NORMAL1",
+          "offset": "0x02"
+        },
+        {
+          "type": "bgm",
+          "path": "NORMAL2",
+          "offset": "0x03"
+        },
+        {
+          "type": "bgm",
+          "path": "POCO1",
+          "offset": "0x04"
+        },
+        {
+          "type": "bgm",
+          "path": "POCO2",
+          "offset": "0x05"
+        },
+        {
+          "type": "bgm",
+          "path": "POCO3",
+          "offset": "0x06"
+        },
+        {
+          "type": "bgm",
+          "path": "EXCITE1",
+          "offset": "0x07"
+        },
+        {
+          "type": "bgm",
+          "path": "EXCITE2",
+          "offset": "0x08"
+        },
+        {
+          "type": "bgm",
+          "path": "EXCITE3",
+          "offset": "0x09"
+        },
+        {
+          "type": "bgm",
+          "path": "EXCITE3",
+          "offset": "0x0a"
+        },
+        {
+          "type": "bgm",
+          "path": "SASURAI1",
+          "offset": "0x0b"
+        },
+        {
+          "type": "bgm",
+          "path": "SASURAI2",
+          "offset": "0x0c"
+        },
+        {
+          "type": "bgm",
+          "path": "SASURAI3",
+          "offset": "0x0d"
+        },
+        {
+          "type": "bgm",
+          "path": "SASURAI3",
+          "offset": "0x0e"
+        },
+        {
+          "type": "bgm",
+          "path": "SASURAI4",
+          "offset": "0x0f"
+        },
+        {
+          "type": "bgm",
+          "path": "SASURAI5",
+          "offset": "0x10"
+        },
+        {
+          "type": "bgm",
+          "path": "SASURAI6",
+          "offset": "0x11"
+        },
+        {
+          "type": "bgm",
+          "path": "SASURAI7",
+          "offset": "0x12"
+        },
+        {
+          "type": "bgm",
+          "path": "SASURAI8",
+          "offset": "0x13"
+        },
+        {
+          "type": "bgm",
+          "path": "SASURAI9",
+          "offset": "0x14"
+        },
+        {
+          "type": "bgm",
+          "path": "SASURAI10",
+          "offset": "0x15"
+        },
+        {
+          "type": "bgm",
+          "path": "SASURAI11",
+          "offset": "0x16"
+        },
+        {
+          "type": "bgm",
+          "path": "SASURAI12",
+          "offset": "0x17"
+        },
+        {
+          "type": "bgm",
+          "path": "SASURAI13",
+          "offset": "0x18"
+        },
+        {
+          "type": "bgm",
+          "path": "SASURAI14",
+          "offset": "0x19"
+        },
+        {
+          "type": "bgm",
+          "path": "SASURAI15",
+          "offset": "0x1a"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x02000001",
+          "title": "dB-SOFTロゴ"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000001",
+          "title": "オープニング"
+        },
+        {
+          "kind": "title",
+          "code": "0x03000001",
+          "title": "オープニング (HAPPY BIRTHDAY)"
+        },
+        {
+          "kind": "title",
+          "code": "0x04000001",
+          "title": "オープニング (A HAPPY NEW YEAR)"
+        },
+        {
+          "kind": "title",
+          "code": "0x05000001",
+          "title": "オープニング (MERRY CHRISTMAS)"
+        },
+        {
+          "kind": "title",
+          "code": "0x01000001",
+          "title": "名前登録"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000000",
+          "title": "ロード中"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000002",
+          "title": "ノーマル麻雀Excellent      : タイトル"
+        },
+        {
+          "kind": "title",
+          "code": "0x01000002",
+          "title": "ノーマル麻雀Excellent      : 半荘終了"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000003",
+          "title": "ノーマル麻雀Excellent      : ゲーム中"
+        },
+        {
+          "kind": "title",
+          "code": "0x01000003",
+          "title": "ノーマル麻雀Excellent      : リーチ"
+        },
+        {
+          "kind": "title",
+          "code": "0x02000003",
+          "title": "ノーマル麻雀Excellent      : アガり"
+        },
+        {
+          "kind": "title",
+          "code": "0x03000003",
+          "title": "ノーマル麻雀Excellent      : アガられた"
+        },
+        {
+          "kind": "title",
+          "code": "0x04000003",
+          "title": "ノーマル麻雀Excellent      : 役満"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000007",
+          "title": "エキサイト麻雀お姉さん組   : タイトル"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000008",
+          "title": "エキサイト麻雀お姉さん組   : 脱衣デモ"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000009",
+          "title": "エキサイト麻雀お姉さん組   : ゲーム中"
+        },
+        {
+          "kind": "comment",
+          "text": "\t<title code=\"0x0000000a\">エキサイト麻雀お姉さん組   : 演奏停止</title> "
+        },
+        {
+          "kind": "title",
+          "code": "0x0100000a",
+          "title": "エキサイト麻雀お姉さん組   : リーチ"
+        },
+        {
+          "kind": "title",
+          "code": "0x0200000a",
+          "title": "エキサイト麻雀お姉さん組   : アガり"
+        },
+        {
+          "kind": "title",
+          "code": "0x0300000a",
+          "title": "エキサイト麻雀お姉さん組   : アガられた"
+        },
+        {
+          "kind": "title",
+          "code": "0x0400000a",
+          "title": "エキサイト麻雀お姉さん組   : 役満"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000004",
+          "title": "ぽこまぁじゃんフェステバァ : タイトル"
+        },
+        {
+          "kind": "title",
+          "code": "0x01000004",
+          "title": "ぽこまぁじゃんフェステバァ : デモ"
+        },
+        {
+          "kind": "title",
+          "code": "0x02000004",
+          "title": "ぽこまぁじゃんフェステバァ : エンディング"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000005",
+          "title": "ぽこまぁじゃんフェステバァ : トーナメント表"
+        },
+        {
+          "kind": "title",
+          "code": "0x01000005",
+          "title": "ぽこまぁじゃんフェステバァ : GAME OVER"
+        },
+        {
+          "kind": "title",
+          "code": "0x01000006",
+          "title": "ぽこまぁじゃんフェステバァ : ゲーム中(春)"
+        },
+        {
+          "kind": "title",
+          "code": "0x02000006",
+          "title": "ぽこまぁじゃんフェステバァ : ゲーム中(夏)"
+        },
+        {
+          "kind": "title",
+          "code": "0x03000006",
+          "title": "ぽこまぁじゃんフェステバァ : ゲーム中(秋)"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000006",
+          "title": "ぽこまぁじゃんフェステバァ : ゲーム中(冬)"
+        },
+        {
+          "kind": "title",
+          "code": "0x04000006",
+          "title": "ぽこまぁじゃんフェステバァ : リーチ"
+        },
+        {
+          "kind": "title",
+          "code": "0x05000006",
+          "title": "ぽこまぁじゃんフェステバァ : アガり"
+        },
+        {
+          "kind": "title",
+          "code": "0x06000006",
+          "title": "ぽこまぁじゃんフェステバァ : アガられた"
+        },
+        {
+          "kind": "title",
+          "code": "0x0000000b",
+          "title": "さすらい麻雀The World      : デモ"
+        },
+        {
+          "kind": "title",
+          "code": "0x0100000b",
+          "title": "さすらい麻雀The World      : #01?"
+        },
+        {
+          "kind": "title",
+          "code": "0x0200000b",
+          "title": "さすらい麻雀The World      : #02?"
+        },
+        {
+          "kind": "title",
+          "code": "0x0000000c",
+          "title": "さすらい麻雀The World      : ミニゲームはずれ"
+        },
+        {
+          "kind": "title",
+          "code": "0x0100000c",
+          "title": "さすらい麻雀The World      : ミニゲームあたり"
+        },
+        {
+          "kind": "title",
+          "code": "0x0200000c",
+          "title": "さすらい麻雀The World      : すごろくシーン"
+        },
+        {
+          "kind": "title",
+          "code": "0x0300000c",
+          "title": "さすらい麻雀The World      : ミニゲーム"
+        },
+        {
+          "kind": "title",
+          "code": "0x0000000d",
+          "title": "さすらい麻雀The World      : ザコ対戦"
+        },
+        {
+          "kind": "comment",
+          "text": "\t<title code=\"0x0000000e\">さすらい麻雀The World      : 演奏停止</title> "
+        },
+        {
+          "kind": "title",
+          "code": "0x0100000e",
+          "title": "さすらい麻雀The World      : リーチ"
+        },
+        {
+          "kind": "title",
+          "code": "0x0200000e",
+          "title": "さすらい麻雀The World      : アガり"
+        },
+        {
+          "kind": "title",
+          "code": "0x0300000e",
+          "title": "さすらい麻雀The World      : アガられた"
+        },
+        {
+          "kind": "title",
+          "code": "0x0400000e",
+          "title": "さすらい麻雀The World      : 役満"
+        },
+        {
+          "kind": "title",
+          "code": "0x0500000e",
+          "title": "さすらい麻雀The World      : GAME OVER"
+        },
+        {
+          "kind": "title",
+          "code": "0x0000000f",
+          "title": "さすらい麻雀The World      : 台湾         / キム・キム"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000010",
+          "title": "さすらい麻雀The World      : シドニー     / パティ・マクドォ"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000011",
+          "title": "さすらい麻雀The World      : デリー       / アマホナ・ルー"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000012",
+          "title": "さすらい麻雀The World      : モスクワ     / スルノワ・コメノフ"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000013",
+          "title": "さすらい麻雀The World      : カイロ       / インカ・ニカニカ"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000014",
+          "title": "さすらい麻雀The World      : パリ         / クリボンヌ・フランソワーズ"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000015",
+          "title": "さすらい麻雀The World      : アクラ       / ルンボ・タンバ"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000016",
+          "title": "さすらい麻雀The World      : タバチンガ   / ムキキ・モココ"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000017",
+          "title": "さすらい麻雀The World      : ハバナ       / ヘラコレ・マック・Jr"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000018",
+          "title": "さすらい麻雀The World      : ヒューストン / キャサリン・ブラウン"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000019",
+          "title": "さすらい麻雀The World      : アンカレジ   / タム・タム"
+        },
+        {
+          "kind": "title",
+          "code": "0x0000001a",
+          "title": "さすらい麻雀The World      : 札幌         / 伊賀仁長助"
+        },
+        {
+          "kind": "title",
+          "code": "0x000000ff",
+          "title": "効果音#00"
+        },
+        {
+          "kind": "title",
+          "code": "0x010000ff",
+          "title": "効果音#01"
+        },
+        {
+          "kind": "title",
+          "code": "0x020000ff",
+          "title": "効果音#02"
+        },
+        {
+          "kind": "title",
+          "code": "0x030000ff",
+          "title": "効果音#03"
+        },
+        {
+          "kind": "title",
+          "code": "0x040000ff",
+          "title": "効果音#04"
+        },
+        {
+          "kind": "title",
+          "code": "0x050000ff",
+          "title": "効果音#05"
+        },
+        {
+          "kind": "title",
+          "code": "0x060000ff",
+          "title": "効果音#06"
+        },
+        {
+          "kind": "title",
+          "code": "0x070000ff",
+          "title": "効果音#07"
+        },
+        {
+          "kind": "title",
+          "code": "0x080000ff",
+          "title": "効果音#08"
+        },
+        {
+          "kind": "title",
+          "code": "0x090000ff",
+          "title": "効果音#09"
+        },
+        {
+          "kind": "title",
+          "code": "0x0a0000ff",
+          "title": "効果音#0A"
+        },
+        {
+          "kind": "title",
+          "code": "0x0b0000ff",
+          "title": "効果音#0B"
+        },
+        {
+          "kind": "title",
+          "code": "0x0c0000ff",
+          "title": "効果音#0C"
+        },
+        {
+          "kind": "title",
+          "code": "0x0d0000ff",
+          "title": "効果音#0D"
+        },
+        {
+          "kind": "title",
+          "code": "0x0e0000ff",
+          "title": "効果音#0E"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/dbsoft.xml",
+      "source_order": 1017,
+      "archive": "x1pwmajan2",
+      "id": "x1pwmajan2-opm"
+    },
+    {
+      "title": "[X1] 今夜も朝までPOWERFULまぁじゃん2(PSG)",
+      "driver": {
+        "name": "x1",
+        "type": "psg",
+        "alias": "dB-SOFT",
+        "platform": "SHARP X1"
+      },
+      "options": [
+        {
+          "name": "init_pc",
+          "value": "0xf800"
+        },
+        {
+          "name": "mdata_addr",
+          "value": "0x3000"
+        },
+        {
+          "name": "mdata_size",
+          "value": "0xa000"
+        },
+        {
+          "name": "mfile_size",
+          "value": "0xa000"
+        },
+        {
+          "name": "psg_mix",
+          "value": "0x28"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "PROG",
+          "offset": "0x0000"
+        },
+        {
+          "type": "code",
+          "path": "OP",
+          "offset": "0x3000"
+        },
+        {
+          "type": "code",
+          "path": "PROG2",
+          "offset": "0x9000"
+        },
+        {
+          "type": "code",
+          "path": "PSGDRV",
+          "offset": "0xf000"
+        },
+        {
+          "type": "code",
+          "path": "PATCH",
+          "offset": "0xf800"
+        },
+        {
+          "type": "bgm",
+          "path": "OP",
+          "offset": "0x00"
+        },
+        {
+          "type": "bgm",
+          "path": "OP",
+          "offset": "0x01"
+        },
+        {
+          "type": "bgm",
+          "path": "NORMAL1",
+          "offset": "0x02"
+        },
+        {
+          "type": "bgm",
+          "path": "NORMAL2",
+          "offset": "0x03"
+        },
+        {
+          "type": "bgm",
+          "path": "POCO1",
+          "offset": "0x04"
+        },
+        {
+          "type": "bgm",
+          "path": "POCO2",
+          "offset": "0x05"
+        },
+        {
+          "type": "bgm",
+          "path": "POCO3",
+          "offset": "0x06"
+        },
+        {
+          "type": "bgm",
+          "path": "EXCITE1",
+          "offset": "0x07"
+        },
+        {
+          "type": "bgm",
+          "path": "EXCITE2",
+          "offset": "0x08"
+        },
+        {
+          "type": "bgm",
+          "path": "EXCITE3",
+          "offset": "0x09"
+        },
+        {
+          "type": "bgm",
+          "path": "EXCITE3",
+          "offset": "0x0a"
+        },
+        {
+          "type": "bgm",
+          "path": "SASURAI1",
+          "offset": "0x0b"
+        },
+        {
+          "type": "bgm",
+          "path": "SASURAI2",
+          "offset": "0x0c"
+        },
+        {
+          "type": "bgm",
+          "path": "SASURAI3",
+          "offset": "0x0d"
+        },
+        {
+          "type": "bgm",
+          "path": "SASURAI3",
+          "offset": "0x0e"
+        },
+        {
+          "type": "bgm",
+          "path": "SASURAI4",
+          "offset": "0x0f"
+        },
+        {
+          "type": "bgm",
+          "path": "SASURAI5",
+          "offset": "0x10"
+        },
+        {
+          "type": "bgm",
+          "path": "SASURAI6",
+          "offset": "0x11"
+        },
+        {
+          "type": "bgm",
+          "path": "SASURAI7",
+          "offset": "0x12"
+        },
+        {
+          "type": "bgm",
+          "path": "SASURAI8",
+          "offset": "0x13"
+        },
+        {
+          "type": "bgm",
+          "path": "SASURAI9",
+          "offset": "0x14"
+        },
+        {
+          "type": "bgm",
+          "path": "SASURAI10",
+          "offset": "0x15"
+        },
+        {
+          "type": "bgm",
+          "path": "SASURAI11",
+          "offset": "0x16"
+        },
+        {
+          "type": "bgm",
+          "path": "SASURAI12",
+          "offset": "0x17"
+        },
+        {
+          "type": "bgm",
+          "path": "SASURAI13",
+          "offset": "0x18"
+        },
+        {
+          "type": "bgm",
+          "path": "SASURAI14",
+          "offset": "0x19"
+        },
+        {
+          "type": "bgm",
+          "path": "SASURAI15",
+          "offset": "0x1a"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x02000001",
+          "title": "dB-SOFTロゴ"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000001",
+          "title": "オープニング"
+        },
+        {
+          "kind": "title",
+          "code": "0x03000001",
+          "title": "オープニング (HAPPY BIRTHDAY)"
+        },
+        {
+          "kind": "title",
+          "code": "0x04000001",
+          "title": "オープニング (A HAPPY NEW YEAR)"
+        },
+        {
+          "kind": "title",
+          "code": "0x05000001",
+          "title": "オープニング (MERRY CHRISTMAS)"
+        },
+        {
+          "kind": "title",
+          "code": "0x01000001",
+          "title": "名前登録"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000000",
+          "title": "ロード中"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000002",
+          "title": "ノーマル麻雀Excellent      : タイトル"
+        },
+        {
+          "kind": "title",
+          "code": "0x01000002",
+          "title": "ノーマル麻雀Excellent      : 半荘終了"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000003",
+          "title": "ノーマル麻雀Excellent      : ゲーム中"
+        },
+        {
+          "kind": "title",
+          "code": "0x01000003",
+          "title": "ノーマル麻雀Excellent      : リーチ"
+        },
+        {
+          "kind": "title",
+          "code": "0x02000003",
+          "title": "ノーマル麻雀Excellent      : アガり"
+        },
+        {
+          "kind": "title",
+          "code": "0x03000003",
+          "title": "ノーマル麻雀Excellent      : アガられた"
+        },
+        {
+          "kind": "title",
+          "code": "0x04000003",
+          "title": "ノーマル麻雀Excellent      : 役満"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000007",
+          "title": "エキサイト麻雀お姉さん組   : タイトル"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000008",
+          "title": "エキサイト麻雀お姉さん組   : 脱衣デモ"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000009",
+          "title": "エキサイト麻雀お姉さん組   : ゲーム中"
+        },
+        {
+          "kind": "comment",
+          "text": "\t<title code=\"0x0000000a\">エキサイト麻雀お姉さん組   : 演奏停止</title> "
+        },
+        {
+          "kind": "title",
+          "code": "0x0100000a",
+          "title": "エキサイト麻雀お姉さん組   : リーチ"
+        },
+        {
+          "kind": "title",
+          "code": "0x0200000a",
+          "title": "エキサイト麻雀お姉さん組   : アガり"
+        },
+        {
+          "kind": "title",
+          "code": "0x0300000a",
+          "title": "エキサイト麻雀お姉さん組   : アガられた"
+        },
+        {
+          "kind": "title",
+          "code": "0x0400000a",
+          "title": "エキサイト麻雀お姉さん組   : 役満"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000004",
+          "title": "ぽこまぁじゃんフェステバァ : タイトル"
+        },
+        {
+          "kind": "title",
+          "code": "0x01000004",
+          "title": "ぽこまぁじゃんフェステバァ : デモ"
+        },
+        {
+          "kind": "title",
+          "code": "0x02000004",
+          "title": "ぽこまぁじゃんフェステバァ : エンディング"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000005",
+          "title": "ぽこまぁじゃんフェステバァ : トーナメント表"
+        },
+        {
+          "kind": "title",
+          "code": "0x01000005",
+          "title": "ぽこまぁじゃんフェステバァ : GAME OVER"
+        },
+        {
+          "kind": "title",
+          "code": "0x01000006",
+          "title": "ぽこまぁじゃんフェステバァ : ゲーム中(春)"
+        },
+        {
+          "kind": "title",
+          "code": "0x02000006",
+          "title": "ぽこまぁじゃんフェステバァ : ゲーム中(夏)"
+        },
+        {
+          "kind": "title",
+          "code": "0x03000006",
+          "title": "ぽこまぁじゃんフェステバァ : ゲーム中(秋)"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000006",
+          "title": "ぽこまぁじゃんフェステバァ : ゲーム中(冬)"
+        },
+        {
+          "kind": "title",
+          "code": "0x04000006",
+          "title": "ぽこまぁじゃんフェステバァ : リーチ"
+        },
+        {
+          "kind": "title",
+          "code": "0x05000006",
+          "title": "ぽこまぁじゃんフェステバァ : アガり"
+        },
+        {
+          "kind": "title",
+          "code": "0x06000006",
+          "title": "ぽこまぁじゃんフェステバァ : アガられた"
+        },
+        {
+          "kind": "title",
+          "code": "0x0000000b",
+          "title": "さすらい麻雀The World      : デモ"
+        },
+        {
+          "kind": "title",
+          "code": "0x0100000b",
+          "title": "さすらい麻雀The World      : #01?"
+        },
+        {
+          "kind": "title",
+          "code": "0x0200000b",
+          "title": "さすらい麻雀The World      : #02?"
+        },
+        {
+          "kind": "title",
+          "code": "0x0000000c",
+          "title": "さすらい麻雀The World      : ミニゲームはずれ"
+        },
+        {
+          "kind": "title",
+          "code": "0x0100000c",
+          "title": "さすらい麻雀The World      : ミニゲームあたり"
+        },
+        {
+          "kind": "title",
+          "code": "0x0200000c",
+          "title": "さすらい麻雀The World      : すごろくシーン"
+        },
+        {
+          "kind": "title",
+          "code": "0x0300000c",
+          "title": "さすらい麻雀The World      : ミニゲーム"
+        },
+        {
+          "kind": "title",
+          "code": "0x0000000d",
+          "title": "さすらい麻雀The World      : ザコ対戦"
+        },
+        {
+          "kind": "comment",
+          "text": "\t<title code=\"0x0000000e\">さすらい麻雀The World      : 演奏停止</title> "
+        },
+        {
+          "kind": "title",
+          "code": "0x0100000e",
+          "title": "さすらい麻雀The World      : リーチ"
+        },
+        {
+          "kind": "title",
+          "code": "0x0200000e",
+          "title": "さすらい麻雀The World      : アガり"
+        },
+        {
+          "kind": "title",
+          "code": "0x0300000e",
+          "title": "さすらい麻雀The World      : アガられた"
+        },
+        {
+          "kind": "title",
+          "code": "0x0400000e",
+          "title": "さすらい麻雀The World      : 役満"
+        },
+        {
+          "kind": "title",
+          "code": "0x0500000e",
+          "title": "さすらい麻雀The World      : GAME OVER"
+        },
+        {
+          "kind": "title",
+          "code": "0x0000000f",
+          "title": "さすらい麻雀The World      : 台湾         / キム・キム"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000010",
+          "title": "さすらい麻雀The World      : シドニー     / パティ・マクドォ"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000011",
+          "title": "さすらい麻雀The World      : デリー       / アマホナ・ルー"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000012",
+          "title": "さすらい麻雀The World      : モスクワ     / スルノワ・コメノフ"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000013",
+          "title": "さすらい麻雀The World      : カイロ       / インカ・ニカニカ"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000014",
+          "title": "さすらい麻雀The World      : パリ         / クリボンヌ・フランソワーズ"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000015",
+          "title": "さすらい麻雀The World      : アクラ       / ルンボ・タンバ"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000016",
+          "title": "さすらい麻雀The World      : タバチンガ   / ムキキ・モココ"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000017",
+          "title": "さすらい麻雀The World      : ハバナ       / ヘラコレ・マック・Jr"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000018",
+          "title": "さすらい麻雀The World      : ヒューストン / キャサリン・ブラウン"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000019",
+          "title": "さすらい麻雀The World      : アンカレジ   / タム・タム"
+        },
+        {
+          "kind": "title",
+          "code": "0x0000001a",
+          "title": "さすらい麻雀The World      : 札幌         / 伊賀仁長助"
+        },
+        {
+          "kind": "title",
+          "code": "0x000000ff",
+          "title": "効果音#00"
+        },
+        {
+          "kind": "title",
+          "code": "0x010000ff",
+          "title": "効果音#01"
+        },
+        {
+          "kind": "title",
+          "code": "0x020000ff",
+          "title": "効果音#02"
+        },
+        {
+          "kind": "title",
+          "code": "0x030000ff",
+          "title": "効果音#03"
+        },
+        {
+          "kind": "title",
+          "code": "0x040000ff",
+          "title": "効果音#04"
+        },
+        {
+          "kind": "title",
+          "code": "0x050000ff",
+          "title": "効果音#05"
+        },
+        {
+          "kind": "title",
+          "code": "0x060000ff",
+          "title": "効果音#06"
+        },
+        {
+          "kind": "title",
+          "code": "0x070000ff",
+          "title": "効果音#07"
+        },
+        {
+          "kind": "title",
+          "code": "0x080000ff",
+          "title": "効果音#08"
+        },
+        {
+          "kind": "title",
+          "code": "0x090000ff",
+          "title": "効果音#09"
+        },
+        {
+          "kind": "title",
+          "code": "0x0a0000ff",
+          "title": "効果音#0A"
+        },
+        {
+          "kind": "title",
+          "code": "0x0b0000ff",
+          "title": "効果音#0B"
+        },
+        {
+          "kind": "title",
+          "code": "0x0c0000ff",
+          "title": "効果音#0C"
+        },
+        {
+          "kind": "title",
+          "code": "0x0d0000ff",
+          "title": "効果音#0D"
+        },
+        {
+          "kind": "title",
+          "code": "0x0e0000ff",
+          "title": "効果音#0E"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/dbsoft.xml",
+      "source_order": 1018,
+      "archive": "x1pwmajan2",
+      "id": "x1pwmajan2-psg"
+    },
+    {
+      "title": "[X1] PRODUCE(OPM)",
+      "driver": {
+        "name": "x1",
+        "type": "opm",
+        "alias": "dB-SOFT",
+        "platform": "SHARP X1"
+      },
+      "options": [
+        {
+          "name": "init_pc",
+          "value": "0xf000"
+        },
+        {
+          "name": "mdata_addr",
+          "value": "0x0100"
+        },
+        {
+          "name": "mdata_size",
+          "value": "0x3900"
+        },
+        {
+          "name": "mfile_size",
+          "value": "0x3900"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "PROG1",
+          "offset": "0x0100"
+        },
+        {
+          "type": "code",
+          "path": "OPMMUS5",
+          "offset": "0xd000"
+        },
+        {
+          "type": "code",
+          "path": "PATCH",
+          "offset": "0xf000"
+        },
+        {
+          "type": "bgm",
+          "path": "PROG1",
+          "offset": "0x00"
+        },
+        {
+          "type": "bgm",
+          "path": "PROG2",
+          "offset": "0x01"
+        },
+        {
+          "type": "bgm",
+          "path": "PROG3",
+          "offset": "0x02"
+        },
+        {
+          "type": "bgm",
+          "path": "PROG4",
+          "offset": "0x03"
+        },
+        {
+          "type": "bgm",
+          "path": "PROG4",
+          "offset": "0x04"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x00",
+          "title": "Title"
+        },
+        {
+          "kind": "title",
+          "code": "0x03",
+          "title": "Up by Stairs"
+        },
+        {
+          "kind": "title",
+          "code": "0x04",
+          "title": "Down by Stairs"
+        },
+        {
+          "kind": "title",
+          "code": "0x02",
+          "title": "Ending"
+        },
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "Game Over"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/dbsoft.xml",
+      "source_order": 1019,
+      "archive": "x1produce",
+      "id": "x1produce-opm"
+    },
+    {
+      "title": "[X1] PRODUCE(PSG)",
+      "driver": {
+        "name": "x1",
+        "type": "psg",
+        "alias": "dB-SOFT",
+        "platform": "SHARP X1"
+      },
+      "options": [
+        {
+          "name": "init_pc",
+          "value": "0xf000"
+        },
+        {
+          "name": "mdata_addr",
+          "value": "0x0100"
+        },
+        {
+          "name": "mdata_size",
+          "value": "0x3900"
+        },
+        {
+          "name": "mfile_size",
+          "value": "0x3900"
+        },
+        {
+          "name": "vdata_addr",
+          "value": "0x4000"
+        },
+        {
+          "name": "vdata_size",
+          "value": "0x0500"
+        },
+        {
+          "name": "vfile_size",
+          "value": "0x0500"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "PROG1",
+          "offset": "0x0100"
+        },
+        {
+          "type": "code",
+          "path": "PSGDRV1",
+          "offset": "0x0284"
+        },
+        {
+          "type": "code",
+          "path": "PSGMUS1",
+          "offset": "0xd000"
+        },
+        {
+          "type": "code",
+          "path": "PSGMUS2",
+          "offset": "0xd400"
+        },
+        {
+          "type": "code",
+          "path": "PSGMUS3",
+          "offset": "0xd800"
+        },
+        {
+          "type": "code",
+          "path": "PSGMUS4",
+          "offset": "0xdc00"
+        },
+        {
+          "type": "code",
+          "path": "PSGMUS5",
+          "offset": "0xe000"
+        },
+        {
+          "type": "code",
+          "path": "PATCH2",
+          "offset": "0xf000"
+        },
+        {
+          "type": "bgm",
+          "path": "PROG1",
+          "offset": "0x00"
+        },
+        {
+          "type": "voice",
+          "path": "PSGDRV1",
+          "offset": "0x00"
+        },
+        {
+          "type": "bgm",
+          "path": "PROG2",
+          "offset": "0x01"
+        },
+        {
+          "type": "voice",
+          "path": "PSGDRV2",
+          "offset": "0x01"
+        },
+        {
+          "type": "bgm",
+          "path": "PROG3",
+          "offset": "0x02"
+        },
+        {
+          "type": "voice",
+          "path": "PSGDRV3",
+          "offset": "0x02"
+        },
+        {
+          "type": "bgm",
+          "path": "PROG4",
+          "offset": "0x03"
+        },
+        {
+          "type": "voice",
+          "path": "PSGDRV4",
+          "offset": "0x03"
+        },
+        {
+          "type": "bgm",
+          "path": "PROG4",
+          "offset": "0x04"
+        },
+        {
+          "type": "voice",
+          "path": "PSGDRV4",
+          "offset": "0x04"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x00",
+          "title": "Title"
+        },
+        {
+          "kind": "title",
+          "code": "0x03",
+          "title": "Up by Stairs"
+        },
+        {
+          "kind": "title",
+          "code": "0x04",
+          "title": "Down by Stairs"
+        },
+        {
+          "kind": "title",
+          "code": "0x02",
+          "title": "Ending"
+        },
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "Game Over"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/dbsoft.xml",
+      "source_order": 1020,
+      "archive": "x1produce",
+      "id": "x1produce-psg"
+    },
+    {
+      "title": "[PC-8801] メルルーン",
+      "driver": {
+        "name": "pc88",
+        "type": "opn",
+        "alias": "dB-SOFT",
+        "platform": "NEC PC-8801"
+      },
+      "options": [
+        {
+          "name": "mdata_addr",
+          "value": "0x6800"
+        },
+        {
+          "name": "use_rtc",
+          "value": "0x01"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "PATCH",
+          "offset": "0x0000"
+        },
+        {
+          "type": "code",
+          "path": "PROG",
+          "offset": "0x0100"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS00",
+          "offset": "0x00"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS01",
+          "offset": "0x01"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS02",
+          "offset": "0x02"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS03",
+          "offset": "0x03"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS04",
+          "offset": "0x04"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS05",
+          "offset": "0x05"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS06",
+          "offset": "0x06"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS07",
+          "offset": "0x07"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS08",
+          "offset": "0x08"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS09",
+          "offset": "0x09"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS10",
+          "offset": "0x0a"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS11",
+          "offset": "0x0b"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x00000000",
+          "title": "BGM 00-00 : 城の曲"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000001",
+          "title": "BGM 01-00 : うぽフィールドの曲"
+        },
+        {
+          "kind": "title",
+          "code": "0x01000001",
+          "title": "BGM 01-01 : うぽ村の曲"
+        },
+        {
+          "kind": "title",
+          "code": "0x02000001",
+          "title": "BGM 01-02 : 家の中の曲"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000002",
+          "title": "BGM 02-00 : るぴフィールドの曲"
+        },
+        {
+          "kind": "title",
+          "code": "0x01000002",
+          "title": "BGM 02-01 : るぴ村の曲"
+        },
+        {
+          "kind": "title",
+          "code": "0x02000002",
+          "title": "BGM 02-02 : 家の中の曲"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000003",
+          "title": "BGM 03-00 : へるなフィールドの曲"
+        },
+        {
+          "kind": "title",
+          "code": "0x01000003",
+          "title": "BGM 03-01 : へるな村の曲"
+        },
+        {
+          "kind": "title",
+          "code": "0x02000003",
+          "title": "BGM 03-02 : 家の中の曲"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000004",
+          "title": "BGM 04-00 : もるとフィールドの曲"
+        },
+        {
+          "kind": "title",
+          "code": "0x01000004",
+          "title": "BGM 04-01 : もると村の曲"
+        },
+        {
+          "kind": "title",
+          "code": "0x02000004",
+          "title": "BGM 04-02 : 家の中の曲"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000005",
+          "title": "BGM 05-00 : まむフィールドの曲"
+        },
+        {
+          "kind": "title",
+          "code": "0x01000005",
+          "title": "BGM 05-01 : まむ村の曲"
+        },
+        {
+          "kind": "title",
+          "code": "0x02000005",
+          "title": "BGM 05-02 : 家の中の曲"
+        },
+        {
+          "kind": "title",
+          "code": "0x03000005",
+          "title": "BGM 05-03 : 祭りばやし"
+        },
+        {
+          "kind": "title",
+          "code": "0x04000005",
+          "title": "BGM 05-04 : ボツになったまむの曲"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000006",
+          "title": "BGM 06-00 : ぴこフィールドの曲"
+        },
+        {
+          "kind": "title",
+          "code": "0x01000006",
+          "title": "BGM 06-01 : ぴこ村の曲"
+        },
+        {
+          "kind": "title",
+          "code": "0x02000006",
+          "title": "BGM 06-02 : 家の中の曲"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000007",
+          "title": "BGM 07-00 : ぺこフィールドの曲"
+        },
+        {
+          "kind": "title",
+          "code": "0x01000007",
+          "title": "BGM 07-01 : ぺこ村の曲"
+        },
+        {
+          "kind": "title",
+          "code": "0x02000007",
+          "title": "BGM 07-02 : 家の中の曲"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000008",
+          "title": "BGM 08-00 : ２部のフィールドの曲"
+        },
+        {
+          "kind": "title",
+          "code": "0x01000008",
+          "title": "BGM 08-01 : ２部の村の曲"
+        },
+        {
+          "kind": "title",
+          "code": "0x02000008",
+          "title": "BGM 08-02 : ２部の家の中の曲"
+        },
+        {
+          "kind": "title",
+          "code": "0x04000008",
+          "title": "BGM 08-04 : ２部のボスの曲"
+        },
+        {
+          "kind": "title",
+          "code": "0x05000008",
+          "title": "BGM 08-05 : ２部の地下の曲"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000009",
+          "title": "BGM 09-00 : 教会の曲"
+        },
+        {
+          "kind": "title",
+          "code": "0x01000009",
+          "title": "BGM 09-01 : 何かをもらったときの曲"
+        },
+        {
+          "kind": "title",
+          "code": "0x02000009",
+          "title": "BGM 09-02 : 追いかけっこの曲"
+        },
+        {
+          "kind": "title",
+          "code": "0x03000009",
+          "title": "BGM 09-03 : 最後の城の中の曲"
+        },
+        {
+          "kind": "title",
+          "code": "0x04000009",
+          "title": "BGM 09-04 : タイトルの曲"
+        },
+        {
+          "kind": "title",
+          "code": "0x0000000a",
+          "title": "BGM 10-00 : オープニングの曲"
+        },
+        {
+          "kind": "title",
+          "code": "0x0100000a",
+          "title": "BGM 10-01 : 中間デモの曲"
+        },
+        {
+          "kind": "title",
+          "code": "0x0200000a",
+          "title": "BGM 10-02 : エンディングの曲"
+        },
+        {
+          "kind": "title",
+          "code": "0x0300000a",
+          "title": "BGM 10-03 : スタッフの曲"
+        },
+        {
+          "kind": "title",
+          "code": "0x0400000a",
+          "title": "BGM 10-04 : いそめパート１"
+        },
+        {
+          "kind": "title",
+          "code": "0x0500000a",
+          "title": "BGM 10-05 : いそめパート２"
+        },
+        {
+          "kind": "title",
+          "code": "0x0600000a",
+          "title": "BGM 10-06 : いそめパート３"
+        },
+        {
+          "kind": "title",
+          "code": "0x0700000a",
+          "title": "BGM 10-07 : 魔王復活の曲"
+        },
+        {
+          "kind": "title",
+          "code": "0x0000000b",
+          "title": "BGM 11-00 : ユリカーダの曲"
+        },
+        {
+          "kind": "title",
+          "code": "0x0100000b",
+          "title": "BGM 11-01 : 猫の鳴き声"
+        },
+        {
+          "kind": "title",
+          "code": "0x0200000b",
+          "title": "BGM 11-02 : あざらしの声"
+        },
+        {
+          "kind": "title",
+          "code": "0x0300000b",
+          "title": "BGM 11-03 : 薬屋の娘の歌"
+        },
+        {
+          "kind": "title",
+          "code": "0x0400000b",
+          "title": "BGM 11-04 : メロディーの歌"
+        },
+        {
+          "kind": "title",
+          "code": "0x0500000b",
+          "title": "BGM 11-05 : チッピーの歌"
+        },
+        {
+          "kind": "title",
+          "code": "0x0600000b",
+          "title": "BGM 11-06 : なんかん君の歌"
+        },
+        {
+          "kind": "title",
+          "code": "0x0700000b",
+          "title": "BGM 11-07 : もると村の曲"
+        },
+        {
+          "kind": "title",
+          "code": "0x000000ff",
+          "title": "EFFECT 00 : 効果音00"
+        },
+        {
+          "kind": "title",
+          "code": "0x010000ff",
+          "title": "EFFECT 01 : 効果音01"
+        },
+        {
+          "kind": "title",
+          "code": "0x020000ff",
+          "title": "EFFECT 02 : 効果音02"
+        },
+        {
+          "kind": "title",
+          "code": "0x030000ff",
+          "title": "EFFECT 03 : 効果音03"
+        },
+        {
+          "kind": "title",
+          "code": "0x040000ff",
+          "title": "EFFECT 04 : 効果音04"
+        },
+        {
+          "kind": "title",
+          "code": "0x050000ff",
+          "title": "EFFECT 05 : 効果音05"
+        },
+        {
+          "kind": "title",
+          "code": "0x060000ff",
+          "title": "EFFECT 06 : 効果音06"
+        },
+        {
+          "kind": "title",
+          "code": "0x070000ff",
+          "title": "EFFECT 07 : 効果音07"
+        },
+        {
+          "kind": "title",
+          "code": "0x080000ff",
+          "title": "EFFECT 08 : 効果音08"
+        },
+        {
+          "kind": "title",
+          "code": "0x090000ff",
+          "title": "EFFECT 09 : 効果音09"
+        },
+        {
+          "kind": "title",
+          "code": "0x0a0000ff",
+          "title": "EFFECT 0A : 効果音10"
+        },
+        {
+          "kind": "title",
+          "code": "0x0b0000ff",
+          "title": "EFFECT 0B : 効果音11"
+        },
+        {
+          "kind": "title",
+          "code": "0x0c0000ff",
+          "title": "EFFECT 0C : 効果音12"
+        },
+        {
+          "kind": "title",
+          "code": "0x0d0000ff",
+          "title": "EFFECT 0D : 効果音13"
+        },
+        {
+          "kind": "title",
+          "code": "0x0e0000ff",
+          "title": "EFFECT 0E : 効果音14"
+        },
+        {
+          "kind": "title",
+          "code": "0x0f0000ff",
+          "title": "EFFECT 0F : 効果音15"
+        },
+        {
+          "kind": "title",
+          "code": "0x100000ff",
+          "title": "EFFECT 10 : 効果音16"
+        },
+        {
+          "kind": "title",
+          "code": "0x110000ff",
+          "title": "EFFECT 11 : 効果音17"
+        },
+        {
+          "kind": "title",
+          "code": "0x120000ff",
+          "title": "EFFECT 12 : 効果音18"
+        },
+        {
+          "kind": "title",
+          "code": "0x130000ff",
+          "title": "EFFECT 13 : 効果音19"
+        },
+        {
+          "kind": "title",
+          "code": "0x140000ff",
+          "title": "EFFECT 14 : 効果音20"
+        },
+        {
+          "kind": "title",
+          "code": "0x150000ff",
+          "title": "EFFECT 15 : 効果音21"
+        },
+        {
+          "kind": "title",
+          "code": "0x160000ff",
+          "title": "EFFECT 16 : 効果音22"
+        },
+        {
+          "kind": "title",
+          "code": "0x170000ff",
+          "title": "EFFECT 17 : 効果音23"
+        },
+        {
+          "kind": "title",
+          "code": "0x180000ff",
+          "title": "EFFECT 18 : 効果音24"
+        },
+        {
+          "kind": "title",
+          "code": "0x190000ff",
+          "title": "EFFECT 19 : 効果音25"
+        },
+        {
+          "kind": "title",
+          "code": "0x1a0000ff",
+          "title": "EFFECT 1A : 効果音26"
+        },
+        {
+          "kind": "title",
+          "code": "0x1b0000ff",
+          "title": "EFFECT 1B : 効果音27"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/dbsoft.xml",
+      "source_order": 1021,
+      "archive": "melroon",
+      "id": "melroon-opn"
+    },
+    {
+      "title": "[PC-8801] PERSONAL PUBLISHING PROCESSOR P1 AUTO DEMO part1 (OPN)",
+      "driver": {
+        "name": "pc88",
+        "type": "opn",
+        "alias": "dB-SOFT",
+        "platform": "NEC PC-8801"
+      },
+      "options": [
+        {
+          "name": "use_rtc",
+          "value": "0x01"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "PATCH",
+          "offset": "0x0000"
+        },
+        {
+          "type": "code",
+          "path": "DEMO1A",
+          "offset": "0x0100"
+        },
+        {
+          "type": "code",
+          "path": "DRIVER",
+          "offset": "0x8100"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x00",
+          "title": "dB-SOFT LOGO"
+        },
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "AUTO DEMO part1"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/dbsoft.xml",
+      "source_order": 1022,
+      "archive": "p1demo1",
+      "id": "p1demo1-opn"
+    },
+    {
+      "title": "[PC-8801] PERSONAL PUBLISHING PROCESSOR P1 AUTO DEMO part1 (OPNA)",
+      "driver": {
+        "name": "pc88",
+        "type": "opna",
+        "alias": "dB-SOFT",
+        "platform": "NEC PC-8801"
+      },
+      "options": [
+        {
+          "name": "use_rtc",
+          "value": "0x01"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "PATCH",
+          "offset": "0x0000"
+        },
+        {
+          "type": "code",
+          "path": "DEMO1A",
+          "offset": "0x0100"
+        },
+        {
+          "type": "code",
+          "path": "DRIVER",
+          "offset": "0x8100"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x00",
+          "title": "dB-SOFT LOGO"
+        },
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "AUTO DEMO part1"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/dbsoft.xml",
+      "source_order": 1023,
+      "archive": "p1demo1",
+      "id": "p1demo1-opna"
+    },
+    {
+      "title": "[PC-8801] PERSONAL PUBLISHING PROCESSOR P1 AUTO DEMO part2",
+      "driver": {
+        "name": "pc88",
+        "type": "opn",
+        "alias": "dB-SOFT",
+        "platform": "NEC PC-8801"
+      },
+      "options": [
+        {
+          "name": "mdata_addr",
+          "value": "0x9100"
+        },
+        {
+          "name": "use_rtc",
+          "value": "0x01"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "PATCH",
+          "offset": "0x0000"
+        },
+        {
+          "type": "code",
+          "path": "DRIVER1",
+          "offset": "0x9100"
+        },
+        {
+          "type": "bgm",
+          "path": "DRIVER1",
+          "offset": "0x00"
+        },
+        {
+          "type": "bgm",
+          "path": "DRIVER2",
+          "offset": "0x01"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "AUTO DEMO MUSIC 1"
+        },
+        {
+          "kind": "title",
+          "code": "0x00",
+          "title": "AUTO DEMO MUSIC 2"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/dbsoft.xml",
+      "source_order": 1024,
+      "archive": "p1demo2",
+      "id": "p1demo2-opn"
+    },
+    {
+      "title": "[X68000] FLAPPY2 ブルースター復活の日",
+      "driver": {
+        "name": "x68k",
+        "type": "generic",
+        "alias": "dB-SOFT",
+        "platform": "SHARP X68000"
+      },
+      "options": [
+        {
+          "name": "opm_mix",
+          "value": "0x100"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "flp268snd.bin",
+          "offset": "0x00000"
+        },
+        {
+          "type": "x",
+          "path": "FLAPPY2.X",
+          "offset": "0x10000"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "01 : タイトル"
+        },
+        {
+          "kind": "title",
+          "code": "0x03",
+          "title": "03 : ワールド1"
+        },
+        {
+          "kind": "title",
+          "code": "0x04",
+          "title": "04 : ワールド2"
+        },
+        {
+          "kind": "title",
+          "code": "0x05",
+          "title": "05 : ワールド3"
+        },
+        {
+          "kind": "title",
+          "code": "0x06",
+          "title": "06 : ワールド4"
+        },
+        {
+          "kind": "title",
+          "code": "0x07",
+          "title": "07 : ワールド5"
+        },
+        {
+          "kind": "title",
+          "code": "0x08",
+          "title": "08 : ミス"
+        },
+        {
+          "kind": "title",
+          "code": "0x0c",
+          "title": "12 : ワールドクリア"
+        },
+        {
+          "kind": "title",
+          "code": "0x09",
+          "title": "09 : ボス"
+        },
+        {
+          "kind": "title",
+          "code": "0x0a",
+          "title": "10 : ブレイクタイム"
+        },
+        {
+          "kind": "title",
+          "code": "0x02",
+          "title": "02 : エンディング"
+        },
+        {
+          "kind": "title",
+          "code": "0x0b",
+          "title": "11 : ゲームオーバー"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/dbsoft.xml",
+      "source_order": 1025,
+      "archive": "flappy268snd",
+      "id": "flappy268snd-generic"
+    }
+  ]
+}

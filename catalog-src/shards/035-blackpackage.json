@@ -1,0 +1,3431 @@
+{
+  "format": "hoot-catalog-shard",
+  "version": 1,
+  "source_file": "xml/blackpackage.xml",
+  "date": "2005/09/25",
+  "comments": [
+    " //BLACK PACKAGE "
+  ],
+  "games": [
+    {
+      "title": "[PC-9801] GET!(86)",
+      "driver": {
+        "name": "pc98dos",
+        "type": "opna",
+        "alias": "BLACK PACKAGE",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "clockmul",
+          "value": "8"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "MSP_HOOT.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MSDRV4L.EXE",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "GE.OPN",
+          "offset": "0x10"
+        },
+        {
+          "type": "file",
+          "path": "GE.SSG",
+          "offset": "0x11"
+        },
+        {
+          "type": "file",
+          "path": "GE_01_B2.MSF",
+          "offset": "0x12"
+        },
+        {
+          "type": "file",
+          "path": "GE_02_B2.MSF",
+          "offset": "0x13"
+        },
+        {
+          "type": "file",
+          "path": "GE_03_B2.MSF",
+          "offset": "0x14"
+        },
+        {
+          "type": "file",
+          "path": "GE_04_B2.MSF",
+          "offset": "0x15"
+        },
+        {
+          "type": "file",
+          "path": "GE_05_B2.MSF",
+          "offset": "0x16"
+        },
+        {
+          "type": "file",
+          "path": "GE_06_B2.MSF",
+          "offset": "0x17"
+        },
+        {
+          "type": "file",
+          "path": "GE_07_B2.MSF",
+          "offset": "0x18"
+        },
+        {
+          "type": "file",
+          "path": "GE_08_B2.MSF",
+          "offset": "0x19"
+        },
+        {
+          "type": "file",
+          "path": "GE_09_B2.MSF",
+          "offset": "0x1a"
+        },
+        {
+          "type": "file",
+          "path": "GE_10_B2.MSF",
+          "offset": "0x1b"
+        },
+        {
+          "type": "file",
+          "path": "GE_11_B2.MSF",
+          "offset": "0x1c"
+        },
+        {
+          "type": "file",
+          "path": "GE_12_B2.MSF",
+          "offset": "0x1d"
+        },
+        {
+          "type": "file",
+          "path": "GE_13_B2.MSF",
+          "offset": "0x1e"
+        },
+        {
+          "type": "file",
+          "path": "GE_14_B2.MSF",
+          "offset": "0x1f"
+        },
+        {
+          "type": "shell",
+          "path": "MSDRV4L",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "MSP_HOOT",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "GE_01_B2.MSF : FEEL SO GOOD!"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "GE_02_B2.MSF : そよ風の魔法使いたち"
+        },
+        {
+          "kind": "title",
+          "code": "0x14",
+          "title": "GE_03_B2.MSF : 少女の言葉は雲の上"
+        },
+        {
+          "kind": "title",
+          "code": "0x15",
+          "title": "GE_04_B2.MSF : せつなさは愛への入り口"
+        },
+        {
+          "kind": "title",
+          "code": "0x16",
+          "title": "GE_05_B2.MSF : ハートビートが苦しくて"
+        },
+        {
+          "kind": "title",
+          "code": "0x17",
+          "title": "GE_06_B2.MSF : 狂おしきたかまり"
+        },
+        {
+          "kind": "title",
+          "code": "0x18",
+          "title": "GE_07_B2.MSF : 契り"
+        },
+        {
+          "kind": "title",
+          "code": "0x19",
+          "title": "GE_08_B2.MSF : Get!"
+        },
+        {
+          "kind": "title",
+          "code": "0x1a",
+          "title": "GE_09_B2.MSF : ぬくもり"
+        },
+        {
+          "kind": "title",
+          "code": "0x1b",
+          "title": "GE_10_B2.MSF : 穏やかな昼下がり"
+        },
+        {
+          "kind": "title",
+          "code": "0x1c",
+          "title": "GE_11_B2.MSF : おもひで"
+        },
+        {
+          "kind": "title",
+          "code": "0x1d",
+          "title": "GE_12_B2.MSF : 青天の霹靂"
+        },
+        {
+          "kind": "title",
+          "code": "0x1e",
+          "title": "GE_13_B2.MSF : 陽だまり～微笑み～"
+        },
+        {
+          "kind": "title",
+          "code": "0x1f",
+          "title": "GE_14_B2.MSF : 憂鬱～猜疑のテーマ～"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/blackpackage.xml",
+      "source_order": 619,
+      "archive": "get_98",
+      "id": "get-98-opna"
+    },
+    {
+      "title": "[PC-9801] GET!(OPN)",
+      "driver": {
+        "name": "pc98dos",
+        "type": "opn",
+        "alias": "BLACK PACKAGE",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "clockmul",
+          "value": "8"
+        },
+        {
+          "name": "ssg_mix",
+          "value": "-18"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "MSP_HOOT.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MSDRV4L.EXE",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "GE.OPN",
+          "offset": "0x10"
+        },
+        {
+          "type": "file",
+          "path": "GE.SSG",
+          "offset": "0x11"
+        },
+        {
+          "type": "file",
+          "path": "GE_01_N.MSF",
+          "offset": "0x12"
+        },
+        {
+          "type": "file",
+          "path": "GE_02_N.MSF",
+          "offset": "0x13"
+        },
+        {
+          "type": "file",
+          "path": "GE_03_N.MSF",
+          "offset": "0x14"
+        },
+        {
+          "type": "file",
+          "path": "GE_04_N.MSF",
+          "offset": "0x15"
+        },
+        {
+          "type": "file",
+          "path": "GE_05_N.MSF",
+          "offset": "0x16"
+        },
+        {
+          "type": "file",
+          "path": "GE_06_N.MSF",
+          "offset": "0x17"
+        },
+        {
+          "type": "file",
+          "path": "GE_07_N.MSF",
+          "offset": "0x18"
+        },
+        {
+          "type": "file",
+          "path": "GE_08_N.MSF",
+          "offset": "0x19"
+        },
+        {
+          "type": "file",
+          "path": "GE_09_N.MSF",
+          "offset": "0x1a"
+        },
+        {
+          "type": "file",
+          "path": "GE_10_N.MSF",
+          "offset": "0x1b"
+        },
+        {
+          "type": "file",
+          "path": "GE_11_N.MSF",
+          "offset": "0x1c"
+        },
+        {
+          "type": "file",
+          "path": "GE_12_N.MSF",
+          "offset": "0x1d"
+        },
+        {
+          "type": "file",
+          "path": "GE_13_N.MSF",
+          "offset": "0x1e"
+        },
+        {
+          "type": "file",
+          "path": "GE_14_N.MSF",
+          "offset": "0x1f"
+        },
+        {
+          "type": "shell",
+          "path": "MSDRV4L",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "MSP_HOOT",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "GE_01_N.MSF : FEEL SO GOOD!"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "GE_02_N.MSF : そよ風の魔法使いたち"
+        },
+        {
+          "kind": "title",
+          "code": "0x14",
+          "title": "GE_03_N.MSF : 少女の言葉は雲の上"
+        },
+        {
+          "kind": "title",
+          "code": "0x15",
+          "title": "GE_04_N.MSF : せつなさは愛への入り口"
+        },
+        {
+          "kind": "title",
+          "code": "0x16",
+          "title": "GE_05_N.MSF : ハートビートが苦しくて"
+        },
+        {
+          "kind": "title",
+          "code": "0x17",
+          "title": "GE_06_N.MSF : 狂おしきたかまり"
+        },
+        {
+          "kind": "title",
+          "code": "0x18",
+          "title": "GE_07_N.MSF : 契り"
+        },
+        {
+          "kind": "title",
+          "code": "0x19",
+          "title": "GE_08_N.MSF : Get!"
+        },
+        {
+          "kind": "title",
+          "code": "0x1a",
+          "title": "GE_09_N.MSF : ぬくもり"
+        },
+        {
+          "kind": "title",
+          "code": "0x1b",
+          "title": "GE_10_N.MSF : 穏やかな昼下がり"
+        },
+        {
+          "kind": "title",
+          "code": "0x1c",
+          "title": "GE_11_N.MSF : おもひで"
+        },
+        {
+          "kind": "title",
+          "code": "0x1d",
+          "title": "GE_12_N.MSF : 青天の霹靂"
+        },
+        {
+          "kind": "title",
+          "code": "0x1e",
+          "title": "GE_13_N.MSF : 陽だまり～微笑み～"
+        },
+        {
+          "kind": "title",
+          "code": "0x1f",
+          "title": "GE_14_N.MSF : 憂鬱～猜疑のテーマ～"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/blackpackage.xml",
+      "source_order": 620,
+      "archive": "get_98",
+      "id": "get-98-opn"
+    },
+    {
+      "title": "[PC-9801] GET!(SB16)",
+      "driver": {
+        "name": "pc98dos",
+        "type": "soundblaster16",
+        "alias": "BLACK PACKAGE",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "clockmul",
+          "value": "8"
+        },
+        {
+          "name": "opl3_mix",
+          "value": "0x100"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "MSP_HOOT.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MSDRV4L.EXE",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "GE.OPN",
+          "offset": "0x10"
+        },
+        {
+          "type": "file",
+          "path": "GE_01_SB.MSF",
+          "offset": "0x12"
+        },
+        {
+          "type": "file",
+          "path": "GE_02_SB.MSF",
+          "offset": "0x13"
+        },
+        {
+          "type": "file",
+          "path": "GE_03_SB.MSF",
+          "offset": "0x14"
+        },
+        {
+          "type": "file",
+          "path": "GE_04_SB.MSF",
+          "offset": "0x15"
+        },
+        {
+          "type": "file",
+          "path": "GE_05_SB.MSF",
+          "offset": "0x16"
+        },
+        {
+          "type": "file",
+          "path": "GE_06_SB.MSF",
+          "offset": "0x17"
+        },
+        {
+          "type": "file",
+          "path": "GE_07_SB.MSF",
+          "offset": "0x18"
+        },
+        {
+          "type": "file",
+          "path": "GE_08_SB.MSF",
+          "offset": "0x19"
+        },
+        {
+          "type": "file",
+          "path": "GE_09_SB.MSF",
+          "offset": "0x1a"
+        },
+        {
+          "type": "file",
+          "path": "GE_10_SB.MSF",
+          "offset": "0x1b"
+        },
+        {
+          "type": "file",
+          "path": "GE_11_SB.MSF",
+          "offset": "0x1c"
+        },
+        {
+          "type": "file",
+          "path": "GE_12_SB.MSF",
+          "offset": "0x1d"
+        },
+        {
+          "type": "file",
+          "path": "GE_13_SB.MSF",
+          "offset": "0x1e"
+        },
+        {
+          "type": "file",
+          "path": "GE_14_SB.MSF",
+          "offset": "0x1f"
+        },
+        {
+          "type": "shell",
+          "path": "MSDRV4L",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "MSP_HOOT",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "GE_01_SB.MSF : FEEL SO GOOD!"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "GE_02_SB.MSF : そよ風の魔法使いたち"
+        },
+        {
+          "kind": "title",
+          "code": "0x14",
+          "title": "GE_03_SB.MSF : 少女の言葉は雲の上"
+        },
+        {
+          "kind": "title",
+          "code": "0x15",
+          "title": "GE_04_SB.MSF : せつなさは愛への入り口"
+        },
+        {
+          "kind": "title",
+          "code": "0x16",
+          "title": "GE_05_SB.MSF : ハートビートが苦しくて"
+        },
+        {
+          "kind": "title",
+          "code": "0x17",
+          "title": "GE_06_SB.MSF : 狂おしきたかまり"
+        },
+        {
+          "kind": "title",
+          "code": "0x18",
+          "title": "GE_07_SB.MSF : 契り"
+        },
+        {
+          "kind": "title",
+          "code": "0x19",
+          "title": "GE_08_SB.MSF : Get!"
+        },
+        {
+          "kind": "title",
+          "code": "0x1a",
+          "title": "GE_09_SB.MSF : ぬくもり"
+        },
+        {
+          "kind": "title",
+          "code": "0x1b",
+          "title": "GE_10_SB.MSF : 穏やかな昼下がり"
+        },
+        {
+          "kind": "title",
+          "code": "0x1c",
+          "title": "GE_11_SB.MSF : おもひで"
+        },
+        {
+          "kind": "title",
+          "code": "0x1d",
+          "title": "GE_12_SB.MSF : 青天の霹靂"
+        },
+        {
+          "kind": "title",
+          "code": "0x1e",
+          "title": "GE_13_SB.MSF : 陽だまり～微笑み～"
+        },
+        {
+          "kind": "title",
+          "code": "0x1f",
+          "title": "GE_14_SB.MSF : 憂鬱～猜疑のテーマ～"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/blackpackage.xml",
+      "source_order": 621,
+      "archive": "get_98",
+      "id": "get-98-soundblaster16"
+    },
+    {
+      "title": "[PC-9801] GET!(GS)",
+      "driver": {
+        "name": "pc98dos",
+        "type": "beep",
+        "alias": "BLACK PACKAGE",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "clockmul",
+          "value": "8"
+        },
+        {
+          "name": "midiout",
+          "value": "1"
+        },
+        {
+          "name": "midiout_type",
+          "value": "4"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "MSP_HOOT.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MSDRV4L.EXE",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "GE_01_GS.MSF",
+          "offset": "0x12"
+        },
+        {
+          "type": "file",
+          "path": "GE_02_GS.MSF",
+          "offset": "0x13"
+        },
+        {
+          "type": "file",
+          "path": "GE_03_GS.MSF",
+          "offset": "0x14"
+        },
+        {
+          "type": "file",
+          "path": "GE_04_GS.MSF",
+          "offset": "0x15"
+        },
+        {
+          "type": "file",
+          "path": "GE_05_GS.MSF",
+          "offset": "0x16"
+        },
+        {
+          "type": "file",
+          "path": "GE_06_GS.MSF",
+          "offset": "0x17"
+        },
+        {
+          "type": "file",
+          "path": "GE_07_GS.MSF",
+          "offset": "0x18"
+        },
+        {
+          "type": "file",
+          "path": "GE_08_GS.MSF",
+          "offset": "0x19"
+        },
+        {
+          "type": "file",
+          "path": "GE_09_GS.MSF",
+          "offset": "0x1a"
+        },
+        {
+          "type": "file",
+          "path": "GE_10_GS.MSF",
+          "offset": "0x1b"
+        },
+        {
+          "type": "file",
+          "path": "GE_11_GS.MSF",
+          "offset": "0x1c"
+        },
+        {
+          "type": "file",
+          "path": "GE_12_GS.MSF",
+          "offset": "0x1d"
+        },
+        {
+          "type": "file",
+          "path": "GE_13_GS.MSF",
+          "offset": "0x1e"
+        },
+        {
+          "type": "file",
+          "path": "GE_14_GS.MSF",
+          "offset": "0x1f"
+        },
+        {
+          "type": "shell",
+          "path": "MSDRV4L",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "MSP_HOOT",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "GE_01_GS.MSF : FEEL SO GOOD!"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "GE_02_GS.MSF : そよ風の魔法使いたち"
+        },
+        {
+          "kind": "title",
+          "code": "0x14",
+          "title": "GE_03_GS.MSF : 少女の言葉は雲の上"
+        },
+        {
+          "kind": "title",
+          "code": "0x15",
+          "title": "GE_04_GS.MSF : せつなさは愛への入り口"
+        },
+        {
+          "kind": "title",
+          "code": "0x16",
+          "title": "GE_05_GS.MSF : ハートビートが苦しくて"
+        },
+        {
+          "kind": "title",
+          "code": "0x17",
+          "title": "GE_06_GS.MSF : 狂おしきたかまり"
+        },
+        {
+          "kind": "title",
+          "code": "0x18",
+          "title": "GE_07_GS.MSF : 契り"
+        },
+        {
+          "kind": "title",
+          "code": "0x19",
+          "title": "GE_08_GS.MSF : Get!"
+        },
+        {
+          "kind": "title",
+          "code": "0x1a",
+          "title": "GE_09_GS.MSF : ぬくもり"
+        },
+        {
+          "kind": "title",
+          "code": "0x1b",
+          "title": "GE_10_GS.MSF : 穏やかな昼下がり"
+        },
+        {
+          "kind": "title",
+          "code": "0x1c",
+          "title": "GE_11_GS.MSF : おもひで"
+        },
+        {
+          "kind": "title",
+          "code": "0x1d",
+          "title": "GE_12_GS.MSF : 青天の霹靂"
+        },
+        {
+          "kind": "title",
+          "code": "0x1e",
+          "title": "GE_13_GS.MSF : 陽だまり～微笑み～"
+        },
+        {
+          "kind": "title",
+          "code": "0x1f",
+          "title": "GE_14_GS.MSF : 憂鬱～猜疑のテーマ～"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/blackpackage.xml",
+      "source_order": 622,
+      "archive": "get_98",
+      "id": "get-98-beep"
+    },
+    {
+      "title": "[PC-9801] GET!(SC-88)",
+      "driver": {
+        "name": "pc98dos",
+        "type": "beep",
+        "alias": "BLACK PACKAGE",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "clockmul",
+          "value": "8"
+        },
+        {
+          "name": "midiout",
+          "value": "1"
+        },
+        {
+          "name": "midiout_type",
+          "value": "7"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "MSP_HOOT.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MSDRV4L.EXE",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "GE_01_88.MSF",
+          "offset": "0x12"
+        },
+        {
+          "type": "file",
+          "path": "GE_02_88.MSF",
+          "offset": "0x13"
+        },
+        {
+          "type": "file",
+          "path": "GE_03_88.MSF",
+          "offset": "0x14"
+        },
+        {
+          "type": "file",
+          "path": "GE_04_88.MSF",
+          "offset": "0x15"
+        },
+        {
+          "type": "file",
+          "path": "GE_05_88.MSF",
+          "offset": "0x16"
+        },
+        {
+          "type": "file",
+          "path": "GE_06_88.MSF",
+          "offset": "0x17"
+        },
+        {
+          "type": "file",
+          "path": "GE_07_88.MSF",
+          "offset": "0x18"
+        },
+        {
+          "type": "file",
+          "path": "GE_08_88.MSF",
+          "offset": "0x19"
+        },
+        {
+          "type": "file",
+          "path": "GE_09_88.MSF",
+          "offset": "0x1a"
+        },
+        {
+          "type": "file",
+          "path": "GE_10_88.MSF",
+          "offset": "0x1b"
+        },
+        {
+          "type": "file",
+          "path": "GE_11_88.MSF",
+          "offset": "0x1c"
+        },
+        {
+          "type": "file",
+          "path": "GE_12_88.MSF",
+          "offset": "0x1d"
+        },
+        {
+          "type": "file",
+          "path": "GE_13_88.MSF",
+          "offset": "0x1e"
+        },
+        {
+          "type": "file",
+          "path": "GE_14_88.MSF",
+          "offset": "0x1f"
+        },
+        {
+          "type": "shell",
+          "path": "MSDRV4L",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "MSP_HOOT",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "GE_01_88.MSF : FEEL SO GOOD!"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "GE_02_88.MSF : そよ風の魔法使いたち"
+        },
+        {
+          "kind": "title",
+          "code": "0x14",
+          "title": "GE_03_88.MSF : 少女の言葉は雲の上"
+        },
+        {
+          "kind": "title",
+          "code": "0x15",
+          "title": "GE_04_88.MSF : せつなさは愛への入り口"
+        },
+        {
+          "kind": "title",
+          "code": "0x16",
+          "title": "GE_05_88.MSF : ハートビートが苦しくて"
+        },
+        {
+          "kind": "title",
+          "code": "0x17",
+          "title": "GE_06_88.MSF : 狂おしきたかまり"
+        },
+        {
+          "kind": "title",
+          "code": "0x18",
+          "title": "GE_07_88.MSF : 契り"
+        },
+        {
+          "kind": "title",
+          "code": "0x19",
+          "title": "GE_08_88.MSF : Get!"
+        },
+        {
+          "kind": "title",
+          "code": "0x1a",
+          "title": "GE_09_88.MSF : ぬくもり"
+        },
+        {
+          "kind": "title",
+          "code": "0x1b",
+          "title": "GE_10_88.MSF : 穏やかな昼下がり"
+        },
+        {
+          "kind": "title",
+          "code": "0x1c",
+          "title": "GE_11_88.MSF : おもひで"
+        },
+        {
+          "kind": "title",
+          "code": "0x1d",
+          "title": "GE_12_88.MSF : 青天の霹靂"
+        },
+        {
+          "kind": "title",
+          "code": "0x1e",
+          "title": "GE_13_88.MSF : 陽だまり～微笑み～"
+        },
+        {
+          "kind": "title",
+          "code": "0x1f",
+          "title": "GE_14_88.MSF : 憂鬱～猜疑のテーマ～"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/blackpackage.xml",
+      "source_order": 623,
+      "archive": "get_98",
+      "id": "get-98-beep-2"
+    },
+    {
+      "title": "[PC-9801] エクドラード 鏡の中の王国(86)",
+      "driver": {
+        "name": "pc98dos",
+        "type": "86",
+        "alias": "BLACK PACKAGE",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "clockmul",
+          "value": "8"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "MSP_HOOT.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MSDRV4L.EXE",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "EC.OPN",
+          "offset": "0x10"
+        },
+        {
+          "type": "file",
+          "path": "EC.SSG",
+          "offset": "0x11"
+        },
+        {
+          "type": "file",
+          "path": "EC_01_B2.MS",
+          "offset": "0x12"
+        },
+        {
+          "type": "file",
+          "path": "EC_02_B2.MS",
+          "offset": "0x13"
+        },
+        {
+          "type": "file",
+          "path": "EC_03_B2.MS",
+          "offset": "0x14"
+        },
+        {
+          "type": "file",
+          "path": "EC_04_B2.MS",
+          "offset": "0x15"
+        },
+        {
+          "type": "file",
+          "path": "EC_05_B2.MS",
+          "offset": "0x16"
+        },
+        {
+          "type": "file",
+          "path": "EC_06_B2.MS",
+          "offset": "0x17"
+        },
+        {
+          "type": "file",
+          "path": "EC_07_B2.MS",
+          "offset": "0x18"
+        },
+        {
+          "type": "file",
+          "path": "EC_08_B2.MS",
+          "offset": "0x19"
+        },
+        {
+          "type": "file",
+          "path": "EC_09_B2.MS",
+          "offset": "0x1a"
+        },
+        {
+          "type": "file",
+          "path": "EC_10_B2.MS",
+          "offset": "0x1b"
+        },
+        {
+          "type": "file",
+          "path": "EC_11_B2.MS",
+          "offset": "0x1c"
+        },
+        {
+          "type": "shell",
+          "path": "MSDRV4L",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "MSP_HOOT",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "EC_01_B2.MS : 闘うためには"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "EC_02_B2.MS : 恐怖の中で"
+        },
+        {
+          "kind": "title",
+          "code": "0x14",
+          "title": "EC_03_B2.MS : 異なる自分"
+        },
+        {
+          "kind": "title",
+          "code": "0x15",
+          "title": "EC_04_B2.MS : 始まり"
+        },
+        {
+          "kind": "title",
+          "code": "0x16",
+          "title": "EC_05_B2.MS : 変わらない時を"
+        },
+        {
+          "kind": "title",
+          "code": "0x17",
+          "title": "EC_06_B2.MS : 緊迫する瞬間"
+        },
+        {
+          "kind": "title",
+          "code": "0x18",
+          "title": "EC_07_B2.MS : ふたりのぬくもり"
+        },
+        {
+          "kind": "title",
+          "code": "0x19",
+          "title": "EC_08_B2.MS : 愛欲の果てに……"
+        },
+        {
+          "kind": "title",
+          "code": "0x1a",
+          "title": "EC_09_B2.MS : きっとあなたが"
+        },
+        {
+          "kind": "title",
+          "code": "0x1b",
+          "title": "EC_10_B2.MS : 遠くの空を求めて"
+        },
+        {
+          "kind": "title",
+          "code": "0x1c",
+          "title": "EC_11_B2.MS : いつまでもこのままで"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/blackpackage.xml",
+      "source_order": 624,
+      "archive": "ekudorad_98",
+      "id": "ekudorad-98-86"
+    },
+    {
+      "title": "[PC-9801] エクドラード 鏡の中の王国(OPN)",
+      "driver": {
+        "name": "pc98dos",
+        "type": "opn",
+        "alias": "BLACK PACKAGE",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "clockmul",
+          "value": "8"
+        },
+        {
+          "name": "showfm3ex",
+          "value": "1"
+        },
+        {
+          "name": "ssg_mix",
+          "value": "-18"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "MSP_HOOT.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MSDRV4L.EXE",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "EC.OPN",
+          "offset": "0x10"
+        },
+        {
+          "type": "file",
+          "path": "EC.SSG",
+          "offset": "0x11"
+        },
+        {
+          "type": "file",
+          "path": "EC_01_N.MS",
+          "offset": "0x12"
+        },
+        {
+          "type": "file",
+          "path": "EC_02_N.MS",
+          "offset": "0x13"
+        },
+        {
+          "type": "file",
+          "path": "EC_03_N.MS",
+          "offset": "0x14"
+        },
+        {
+          "type": "file",
+          "path": "EC_04_N.MS",
+          "offset": "0x15"
+        },
+        {
+          "type": "file",
+          "path": "EC_05_N.MS",
+          "offset": "0x16"
+        },
+        {
+          "type": "file",
+          "path": "EC_06_N.MS",
+          "offset": "0x17"
+        },
+        {
+          "type": "file",
+          "path": "EC_07_N.MS",
+          "offset": "0x18"
+        },
+        {
+          "type": "file",
+          "path": "EC_08_N.MS",
+          "offset": "0x19"
+        },
+        {
+          "type": "file",
+          "path": "EC_09_N.MS",
+          "offset": "0x1a"
+        },
+        {
+          "type": "file",
+          "path": "EC_10_N.MS",
+          "offset": "0x1b"
+        },
+        {
+          "type": "file",
+          "path": "EC_11_N.MS",
+          "offset": "0x1c"
+        },
+        {
+          "type": "shell",
+          "path": "MSDRV4L",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "MSP_HOOT",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "EC_01_N.MS : 闘うためには"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "EC_02_N.MS : 恐怖の中で"
+        },
+        {
+          "kind": "title",
+          "code": "0x14",
+          "title": "EC_03_N.MS : 異なる自分"
+        },
+        {
+          "kind": "title",
+          "code": "0x15",
+          "title": "EC_04_N.MS : 始まり"
+        },
+        {
+          "kind": "title",
+          "code": "0x16",
+          "title": "EC_05_N.MS : 変わらない時を"
+        },
+        {
+          "kind": "title",
+          "code": "0x17",
+          "title": "EC_06_N.MS : 緊迫する瞬間"
+        },
+        {
+          "kind": "title",
+          "code": "0x18",
+          "title": "EC_07_N.MS : ふたりのぬくもり"
+        },
+        {
+          "kind": "title",
+          "code": "0x19",
+          "title": "EC_08_N.MS : 愛欲の果てに……"
+        },
+        {
+          "kind": "title",
+          "code": "0x1a",
+          "title": "EC_09_N.MS : きっとあなたが"
+        },
+        {
+          "kind": "title",
+          "code": "0x1b",
+          "title": "EC_10_N.MS : 遠くの空を求めて"
+        },
+        {
+          "kind": "title",
+          "code": "0x1c",
+          "title": "EC_11_N.MS : いつまでもこのままで"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/blackpackage.xml",
+      "source_order": 625,
+      "archive": "ekudorad_98",
+      "id": "ekudorad-98-opn"
+    },
+    {
+      "title": "[PC-9801] エクドラード 鏡の中の王国(SB16)",
+      "driver": {
+        "name": "pc98dos",
+        "type": "soundblaster16",
+        "alias": "BLACK PACKAGE",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "clockmul",
+          "value": "8"
+        },
+        {
+          "name": "opl3_mix",
+          "value": "0x100"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "MSP_HOOT.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MSDRV4L.EXE",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "EC.OPN",
+          "offset": "0x10"
+        },
+        {
+          "type": "file",
+          "path": "EC_01_SB.MS",
+          "offset": "0x12"
+        },
+        {
+          "type": "file",
+          "path": "EC_02_SB.MS",
+          "offset": "0x13"
+        },
+        {
+          "type": "file",
+          "path": "EC_03_SB.MS",
+          "offset": "0x14"
+        },
+        {
+          "type": "file",
+          "path": "EC_04_SB.MS",
+          "offset": "0x15"
+        },
+        {
+          "type": "file",
+          "path": "EC_05_SB.MS",
+          "offset": "0x16"
+        },
+        {
+          "type": "file",
+          "path": "EC_06_SB.MS",
+          "offset": "0x17"
+        },
+        {
+          "type": "file",
+          "path": "EC_07_SB.MS",
+          "offset": "0x18"
+        },
+        {
+          "type": "file",
+          "path": "EC_08_SB.MS",
+          "offset": "0x19"
+        },
+        {
+          "type": "file",
+          "path": "EC_09_SB.MS",
+          "offset": "0x1a"
+        },
+        {
+          "type": "file",
+          "path": "EC_10_SB.MS",
+          "offset": "0x1b"
+        },
+        {
+          "type": "file",
+          "path": "EC_11_SB.MS",
+          "offset": "0x1c"
+        },
+        {
+          "type": "shell",
+          "path": "MSDRV4L",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "MSP_HOOT",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "EC_01_SB.MS : 闘うためには"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "EC_02_SB.MS : 恐怖の中で"
+        },
+        {
+          "kind": "title",
+          "code": "0x14",
+          "title": "EC_03_SB.MS : 異なる自分"
+        },
+        {
+          "kind": "title",
+          "code": "0x15",
+          "title": "EC_04_SB.MS : 始まり"
+        },
+        {
+          "kind": "title",
+          "code": "0x16",
+          "title": "EC_05_SB.MS : 変わらない時を"
+        },
+        {
+          "kind": "title",
+          "code": "0x17",
+          "title": "EC_06_SB.MS : 緊迫する瞬間"
+        },
+        {
+          "kind": "title",
+          "code": "0x18",
+          "title": "EC_07_SB.MS : ふたりのぬくもり"
+        },
+        {
+          "kind": "title",
+          "code": "0x19",
+          "title": "EC_08_SB.MS : 愛欲の果てに……"
+        },
+        {
+          "kind": "title",
+          "code": "0x1a",
+          "title": "EC_09_SB.MS : きっとあなたが"
+        },
+        {
+          "kind": "title",
+          "code": "0x1b",
+          "title": "EC_10_SB.MS : 遠くの空を求めて"
+        },
+        {
+          "kind": "title",
+          "code": "0x1c",
+          "title": "EC_11_SB.MS : いつまでもこのままで"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/blackpackage.xml",
+      "source_order": 626,
+      "archive": "ekudorad_98",
+      "id": "ekudorad-98-soundblaster16"
+    },
+    {
+      "title": "[PC-9801] エクドラード 鏡の中の王国(GS)",
+      "driver": {
+        "name": "pc98dos",
+        "type": "beep",
+        "alias": "BLACK PACKAGE",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "clockmul",
+          "value": "8"
+        },
+        {
+          "name": "midiout",
+          "value": "1"
+        },
+        {
+          "name": "midiout_type",
+          "value": "4"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "MSP_HOOT.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MSDRV4L.EXE",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "EC_01_GS.MS",
+          "offset": "0x12"
+        },
+        {
+          "type": "file",
+          "path": "EC_02_GS.MS",
+          "offset": "0x13"
+        },
+        {
+          "type": "file",
+          "path": "EC_03_GS.MS",
+          "offset": "0x14"
+        },
+        {
+          "type": "file",
+          "path": "EC_04_GS.MS",
+          "offset": "0x15"
+        },
+        {
+          "type": "file",
+          "path": "EC_05_GS.MS",
+          "offset": "0x16"
+        },
+        {
+          "type": "file",
+          "path": "EC_06_GS.MS",
+          "offset": "0x17"
+        },
+        {
+          "type": "file",
+          "path": "EC_07_GS.MS",
+          "offset": "0x18"
+        },
+        {
+          "type": "file",
+          "path": "EC_08_GS.MS",
+          "offset": "0x19"
+        },
+        {
+          "type": "file",
+          "path": "EC_09_GS.MS",
+          "offset": "0x1a"
+        },
+        {
+          "type": "file",
+          "path": "EC_10_GS.MS",
+          "offset": "0x1b"
+        },
+        {
+          "type": "file",
+          "path": "EC_11_GS.MS",
+          "offset": "0x1c"
+        },
+        {
+          "type": "shell",
+          "path": "MSDRV4L",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "MSP_HOOT",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "EC_01_GS.MS : 闘うためには"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "EC_02_GS.MS : 恐怖の中で"
+        },
+        {
+          "kind": "title",
+          "code": "0x14",
+          "title": "EC_03_GS.MS : 異なる自分"
+        },
+        {
+          "kind": "title",
+          "code": "0x15",
+          "title": "EC_04_GS.MS : 始まり"
+        },
+        {
+          "kind": "title",
+          "code": "0x16",
+          "title": "EC_05_GS.MS : 変わらない時を"
+        },
+        {
+          "kind": "title",
+          "code": "0x17",
+          "title": "EC_06_GS.MS : 緊迫する瞬間"
+        },
+        {
+          "kind": "title",
+          "code": "0x18",
+          "title": "EC_07_GS.MS : ふたりのぬくもり"
+        },
+        {
+          "kind": "title",
+          "code": "0x19",
+          "title": "EC_08_GS.MS : 愛欲の果てに……"
+        },
+        {
+          "kind": "title",
+          "code": "0x1a",
+          "title": "EC_09_GS.MS : きっとあなたが"
+        },
+        {
+          "kind": "title",
+          "code": "0x1b",
+          "title": "EC_10_GS.MS : 遠くの空を求めて"
+        },
+        {
+          "kind": "title",
+          "code": "0x1c",
+          "title": "EC_11_GS.MS : いつまでもこのままで"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/blackpackage.xml",
+      "source_order": 627,
+      "archive": "ekudorad_98",
+      "id": "ekudorad-98-beep"
+    },
+    {
+      "title": "[PC-9801] エクドラード 鏡の中の王国(SC-88)",
+      "driver": {
+        "name": "pc98dos",
+        "type": "beep",
+        "alias": "BLACK PACKAGE",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "clockmul",
+          "value": "8"
+        },
+        {
+          "name": "midiout",
+          "value": "1"
+        },
+        {
+          "name": "midiout_type",
+          "value": "7"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "MSP_HOOT.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MSDRV4L.EXE",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "EC_01_88.MS",
+          "offset": "0x12"
+        },
+        {
+          "type": "file",
+          "path": "EC_02_88.MS",
+          "offset": "0x13"
+        },
+        {
+          "type": "file",
+          "path": "EC_03_88.MS",
+          "offset": "0x14"
+        },
+        {
+          "type": "file",
+          "path": "EC_04_88.MS",
+          "offset": "0x15"
+        },
+        {
+          "type": "file",
+          "path": "EC_05_88.MS",
+          "offset": "0x16"
+        },
+        {
+          "type": "file",
+          "path": "EC_06_88.MS",
+          "offset": "0x17"
+        },
+        {
+          "type": "file",
+          "path": "EC_07_88.MS",
+          "offset": "0x18"
+        },
+        {
+          "type": "file",
+          "path": "EC_08_88.MS",
+          "offset": "0x19"
+        },
+        {
+          "type": "file",
+          "path": "EC_09_88.MS",
+          "offset": "0x1a"
+        },
+        {
+          "type": "file",
+          "path": "EC_10_88.MS",
+          "offset": "0x1b"
+        },
+        {
+          "type": "file",
+          "path": "EC_11_88.MS",
+          "offset": "0x1c"
+        },
+        {
+          "type": "shell",
+          "path": "MSDRV4L",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "MSP_HOOT",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "EC_01_88.MS : 闘うためには"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "EC_02_88.MS : 恐怖の中で"
+        },
+        {
+          "kind": "title",
+          "code": "0x14",
+          "title": "EC_03_88.MS : 異なる自分"
+        },
+        {
+          "kind": "title",
+          "code": "0x15",
+          "title": "EC_04_88.MS : 始まり"
+        },
+        {
+          "kind": "title",
+          "code": "0x16",
+          "title": "EC_05_88.MS : 変わらない時を"
+        },
+        {
+          "kind": "title",
+          "code": "0x17",
+          "title": "EC_06_88.MS : 緊迫する瞬間"
+        },
+        {
+          "kind": "title",
+          "code": "0x18",
+          "title": "EC_07_88.MS : ふたりのぬくもり"
+        },
+        {
+          "kind": "title",
+          "code": "0x19",
+          "title": "EC_08_88.MS : 愛欲の果てに……"
+        },
+        {
+          "kind": "title",
+          "code": "0x1a",
+          "title": "EC_09_88.MS : きっとあなたが"
+        },
+        {
+          "kind": "title",
+          "code": "0x1b",
+          "title": "EC_10_88.MS : 遠くの空を求めて"
+        },
+        {
+          "kind": "title",
+          "code": "0x1c",
+          "title": "EC_11_88.MS : いつまでもこのままで"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/blackpackage.xml",
+      "source_order": 628,
+      "archive": "ekudorad_98",
+      "id": "ekudorad-98-beep-2"
+    },
+    {
+      "title": "[PC-9801] 殻の中の小鳥(OPN)",
+      "driver": {
+        "name": "pc98dos",
+        "type": "opn",
+        "alias": "BLACK PACKAGE",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "clockmul",
+          "value": "8"
+        },
+        {
+          "name": "ssg_mix",
+          "value": "-18"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "MSDRV4.EXE",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MSP_HOOT.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MD.OPN",
+          "offset": "0x10"
+        },
+        {
+          "type": "file",
+          "path": "MD.SSG",
+          "offset": "0x11"
+        },
+        {
+          "type": "file",
+          "path": "MD_01_N.MS",
+          "offset": "0x12"
+        },
+        {
+          "type": "file",
+          "path": "MD_02_N.MS",
+          "offset": "0x13"
+        },
+        {
+          "type": "file",
+          "path": "MD_03_N.MS",
+          "offset": "0x14"
+        },
+        {
+          "type": "file",
+          "path": "MD_04_N.MS",
+          "offset": "0x15"
+        },
+        {
+          "type": "file",
+          "path": "MD_05_N.MS",
+          "offset": "0x16"
+        },
+        {
+          "type": "file",
+          "path": "MD_06_N.MS",
+          "offset": "0x17"
+        },
+        {
+          "type": "file",
+          "path": "MD_07_N.MS",
+          "offset": "0x18"
+        },
+        {
+          "type": "file",
+          "path": "MD_08_N.MS",
+          "offset": "0x19"
+        },
+        {
+          "type": "file",
+          "path": "MD_09_N.MS",
+          "offset": "0x1a"
+        },
+        {
+          "type": "shell",
+          "path": "MSDRV4 -B49152",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "MSP_HOOT",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "MD_01_N.MS : 踵が鳴らすは石畳"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "MD_02_N.MS : 滴は線、器は面"
+        },
+        {
+          "kind": "title",
+          "code": "0x14",
+          "title": "MD_03_N.MS : ひとつとふたつとみっつ"
+        },
+        {
+          "kind": "title",
+          "code": "0x15",
+          "title": "MD_04_N.MS : 風が無くとも、鳥は飛ぶ"
+        },
+        {
+          "kind": "title",
+          "code": "0x16",
+          "title": "MD_05_N.MS : かき消される声は雑音"
+        },
+        {
+          "kind": "title",
+          "code": "0x17",
+          "title": "MD_06_N.MS : 見えない鎖は彼女の首を狩る"
+        },
+        {
+          "kind": "title",
+          "code": "0x18",
+          "title": "MD_07_N.MS : 壊れたピアノの音は鳴らない"
+        },
+        {
+          "kind": "title",
+          "code": "0x19",
+          "title": "MD_08_N.MS : 白い聖女と黒い奴隷"
+        },
+        {
+          "kind": "title",
+          "code": "0x1a",
+          "title": "MD_09_N.MS : 夢を見るのは乙女の特権"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/blackpackage.xml",
+      "source_order": 629,
+      "archive": "karanon_98",
+      "id": "karanon-98-opn"
+    },
+    {
+      "title": "[PC-9801] 殻の中の小鳥(86)",
+      "driver": {
+        "name": "pc98dos",
+        "type": "86",
+        "alias": "BLACK PACKAGE",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "clockmul",
+          "value": "8"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "MSDRV4.EXE",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MSP_HOOT.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MD.OPN",
+          "offset": "0x10"
+        },
+        {
+          "type": "file",
+          "path": "MD.SSG",
+          "offset": "0x11"
+        },
+        {
+          "type": "file",
+          "path": "MD_01_B2.MS",
+          "offset": "0x12"
+        },
+        {
+          "type": "file",
+          "path": "MD_02_B2.MS",
+          "offset": "0x13"
+        },
+        {
+          "type": "file",
+          "path": "MD_03_B2.MS",
+          "offset": "0x14"
+        },
+        {
+          "type": "file",
+          "path": "MD_04_B2.MS",
+          "offset": "0x15"
+        },
+        {
+          "type": "file",
+          "path": "MD_05_B2.MS",
+          "offset": "0x16"
+        },
+        {
+          "type": "file",
+          "path": "MD_06_B2.MS",
+          "offset": "0x17"
+        },
+        {
+          "type": "file",
+          "path": "MD_07_B2.MS",
+          "offset": "0x18"
+        },
+        {
+          "type": "file",
+          "path": "MD_08_B2.MS",
+          "offset": "0x19"
+        },
+        {
+          "type": "file",
+          "path": "MD_09_B2.MS",
+          "offset": "0x1a"
+        },
+        {
+          "type": "shell",
+          "path": "MSDRV4 -B49152",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "MSP_HOOT",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "MD_01_B2.MS : 踵が鳴らすは石畳"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "MD_02_B2.MS : 滴は線、器は面"
+        },
+        {
+          "kind": "title",
+          "code": "0x14",
+          "title": "MD_03_B2.MS : ひとつとふたつとみっつ"
+        },
+        {
+          "kind": "title",
+          "code": "0x15",
+          "title": "MD_04_B2.MS : 風が無くとも、鳥は飛ぶ"
+        },
+        {
+          "kind": "title",
+          "code": "0x16",
+          "title": "MD_05_B2.MS : かき消される声は雑音"
+        },
+        {
+          "kind": "title",
+          "code": "0x17",
+          "title": "MD_06_B2.MS : 見えない鎖は彼女の首を狩る"
+        },
+        {
+          "kind": "title",
+          "code": "0x18",
+          "title": "MD_07_B2.MS : 壊れたピアノの音は鳴らない"
+        },
+        {
+          "kind": "title",
+          "code": "0x19",
+          "title": "MD_08_B2.MS : 白い聖女と黒い奴隷"
+        },
+        {
+          "kind": "title",
+          "code": "0x1a",
+          "title": "MD_09_B2.MS : 夢を見るのは乙女の特権"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/blackpackage.xml",
+      "source_order": 630,
+      "archive": "karanon_98",
+      "id": "karanon-98-86"
+    },
+    {
+      "title": "[PC-9801] 殻の中の小鳥(SB16)",
+      "driver": {
+        "name": "pc98dos",
+        "type": "soundblaster16",
+        "alias": "BLACK PACKAGE",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "clockmul",
+          "value": "8"
+        },
+        {
+          "name": "opl3_mix",
+          "value": "0x100"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "MSDRV4.EXE",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MSP_HOOT.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MD.OPN",
+          "offset": "0x10"
+        },
+        {
+          "type": "file",
+          "path": "MD_01_SB.MS",
+          "offset": "0x12"
+        },
+        {
+          "type": "file",
+          "path": "MD_02_SB.MS",
+          "offset": "0x13"
+        },
+        {
+          "type": "file",
+          "path": "MD_03_SB.MS",
+          "offset": "0x14"
+        },
+        {
+          "type": "file",
+          "path": "MD_04_SB.MS",
+          "offset": "0x15"
+        },
+        {
+          "type": "file",
+          "path": "MD_05_SB.MS",
+          "offset": "0x16"
+        },
+        {
+          "type": "file",
+          "path": "MD_06_SB.MS",
+          "offset": "0x17"
+        },
+        {
+          "type": "file",
+          "path": "MD_07_SB.MS",
+          "offset": "0x18"
+        },
+        {
+          "type": "file",
+          "path": "MD_08_SB.MS",
+          "offset": "0x19"
+        },
+        {
+          "type": "file",
+          "path": "MD_09_SB.MS",
+          "offset": "0x1a"
+        },
+        {
+          "type": "shell",
+          "path": "MSDRV4 -B49152",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "MSP_HOOT",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "MD_01_SB.MS : 踵が鳴らすは石畳"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "MD_02_SB.MS : 滴は線、器は面"
+        },
+        {
+          "kind": "title",
+          "code": "0x14",
+          "title": "MD_03_SB.MS : ひとつとふたつとみっつ"
+        },
+        {
+          "kind": "title",
+          "code": "0x15",
+          "title": "MD_04_SB.MS : 風が無くとも、鳥は飛ぶ"
+        },
+        {
+          "kind": "title",
+          "code": "0x16",
+          "title": "MD_05_SB.MS : かき消される声は雑音"
+        },
+        {
+          "kind": "title",
+          "code": "0x17",
+          "title": "MD_06_SB.MS : 見えない鎖は彼女の首を狩る"
+        },
+        {
+          "kind": "title",
+          "code": "0x18",
+          "title": "MD_07_SB.MS : 壊れたピアノの音は鳴らない"
+        },
+        {
+          "kind": "title",
+          "code": "0x19",
+          "title": "MD_08_SB.MS : 白い聖女と黒い奴隷"
+        },
+        {
+          "kind": "title",
+          "code": "0x1a",
+          "title": "MD_09_SB.MS : 夢を見るのは乙女の特権"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/blackpackage.xml",
+      "source_order": 631,
+      "archive": "karanon_98",
+      "id": "karanon-98-soundblaster16"
+    },
+    {
+      "title": "[PC-9801] 殻の中の小鳥(GS)",
+      "driver": {
+        "name": "pc98dos",
+        "type": "beep",
+        "alias": "BLACK PACKAGE",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "clockmul",
+          "value": "8"
+        },
+        {
+          "name": "midiout",
+          "value": "1"
+        },
+        {
+          "name": "midiout_type",
+          "value": "4"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "MSDRV4.EXE",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MSP_HOOT.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "INIT_GS.MS",
+          "offset": "0x12"
+        },
+        {
+          "type": "file",
+          "path": "MD_01_GS.MS",
+          "offset": "0x13"
+        },
+        {
+          "type": "file",
+          "path": "MD_02_GS.MS",
+          "offset": "0x14"
+        },
+        {
+          "type": "file",
+          "path": "MD_03_GS.MS",
+          "offset": "0x15"
+        },
+        {
+          "type": "file",
+          "path": "MD_04_GS.MS",
+          "offset": "0x16"
+        },
+        {
+          "type": "file",
+          "path": "MD_05_GS.MS",
+          "offset": "0x17"
+        },
+        {
+          "type": "file",
+          "path": "MD_06_GS.MS",
+          "offset": "0x18"
+        },
+        {
+          "type": "file",
+          "path": "MD_07_GS.MS",
+          "offset": "0x19"
+        },
+        {
+          "type": "file",
+          "path": "MD_08_GS.MS",
+          "offset": "0x1a"
+        },
+        {
+          "type": "file",
+          "path": "MD_09_GS.MS",
+          "offset": "0x1b"
+        },
+        {
+          "type": "shell",
+          "path": "MSDRV4 -B49152",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "MSP_HOOT",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "[音源初期化/最初に実行して下さい]"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "MD_01_GS.MS : 踵が鳴らすは石畳"
+        },
+        {
+          "kind": "title",
+          "code": "0x14",
+          "title": "MD_02_GS.MS : 滴は線、器は面"
+        },
+        {
+          "kind": "title",
+          "code": "0x15",
+          "title": "MD_03_GS.MS : ひとつとふたつとみっつ"
+        },
+        {
+          "kind": "title",
+          "code": "0x16",
+          "title": "MD_04_GS.MS : 風が無くとも、鳥は飛ぶ"
+        },
+        {
+          "kind": "title",
+          "code": "0x17",
+          "title": "MD_05_GS.MS : かき消される声は雑音"
+        },
+        {
+          "kind": "title",
+          "code": "0x18",
+          "title": "MD_06_GS.MS : 見えない鎖は彼女の首を狩る"
+        },
+        {
+          "kind": "title",
+          "code": "0x19",
+          "title": "MD_07_GS.MS : 壊れたピアノの音は鳴らない"
+        },
+        {
+          "kind": "title",
+          "code": "0x1a",
+          "title": "MD_08_GS.MS : 白い聖女と黒い奴隷"
+        },
+        {
+          "kind": "title",
+          "code": "0x1b",
+          "title": "MD_09_GS.MS : 夢を見るのは乙女の特権"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/blackpackage.xml",
+      "source_order": 632,
+      "archive": "karanon_98",
+      "id": "karanon-98-beep"
+    },
+    {
+      "title": "[PC-9801] 殻の中の小鳥(SC-88)",
+      "driver": {
+        "name": "pc98dos",
+        "type": "beep",
+        "alias": "BLACK PACKAGE",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "clockmul",
+          "value": "8"
+        },
+        {
+          "name": "midiout",
+          "value": "1"
+        },
+        {
+          "name": "midiout_type",
+          "value": "7"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "MSDRV4.EXE",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MSP_HOOT.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "INIT_88.MS",
+          "offset": "0x12"
+        },
+        {
+          "type": "file",
+          "path": "MD_01_88.MS",
+          "offset": "0x13"
+        },
+        {
+          "type": "file",
+          "path": "MD_02_88.MS",
+          "offset": "0x14"
+        },
+        {
+          "type": "file",
+          "path": "MD_03_88.MS",
+          "offset": "0x15"
+        },
+        {
+          "type": "file",
+          "path": "MD_04_88.MS",
+          "offset": "0x16"
+        },
+        {
+          "type": "file",
+          "path": "MD_05_88.MS",
+          "offset": "0x17"
+        },
+        {
+          "type": "file",
+          "path": "MD_06_88.MS",
+          "offset": "0x18"
+        },
+        {
+          "type": "file",
+          "path": "MD_07_88.MS",
+          "offset": "0x19"
+        },
+        {
+          "type": "file",
+          "path": "MD_08_88.MS",
+          "offset": "0x1a"
+        },
+        {
+          "type": "file",
+          "path": "MD_09_88.MS",
+          "offset": "0x1b"
+        },
+        {
+          "type": "shell",
+          "path": "MSDRV4 -B49152",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "MSP_HOOT",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "[音源初期化/最初に実行して下さい]"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "MD_01_88.MS : 踵が鳴らすは石畳"
+        },
+        {
+          "kind": "title",
+          "code": "0x14",
+          "title": "MD_02_88.MS : 滴は線、器は面"
+        },
+        {
+          "kind": "title",
+          "code": "0x15",
+          "title": "MD_03_88.MS : ひとつとふたつとみっつ"
+        },
+        {
+          "kind": "title",
+          "code": "0x16",
+          "title": "MD_04_88.MS : 風が無くとも、鳥は飛ぶ"
+        },
+        {
+          "kind": "title",
+          "code": "0x17",
+          "title": "MD_05_88.MS : かき消される声は雑音"
+        },
+        {
+          "kind": "title",
+          "code": "0x18",
+          "title": "MD_06_88.MS : 見えない鎖は彼女の首を狩る"
+        },
+        {
+          "kind": "title",
+          "code": "0x19",
+          "title": "MD_07_88.MS : 壊れたピアノの音は鳴らない"
+        },
+        {
+          "kind": "title",
+          "code": "0x1a",
+          "title": "MD_08_88.MS : 白い聖女と黒い奴隷"
+        },
+        {
+          "kind": "title",
+          "code": "0x1b",
+          "title": "MD_09_88.MS : 夢を見るのは乙女の特権"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/blackpackage.xml",
+      "source_order": 633,
+      "archive": "karanon_98",
+      "id": "karanon-98-beep-2"
+    },
+    {
+      "title": "[PC-9801] 魅惑の調書(OPN)",
+      "driver": {
+        "name": "pc98dos",
+        "type": "opn",
+        "alias": "BLACK PACKAGE",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "clockmul",
+          "value": "8"
+        },
+        {
+          "name": "ssg_mix",
+          "value": "-18"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "MSDRV4.EXE",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MSP_HOOT.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MC.OPN",
+          "offset": "0x10"
+        },
+        {
+          "type": "file",
+          "path": "MC.SSG",
+          "offset": "0x11"
+        },
+        {
+          "type": "file",
+          "path": "MC_01_N.MS",
+          "offset": "0x12"
+        },
+        {
+          "type": "file",
+          "path": "MC_02_N.MS",
+          "offset": "0x13"
+        },
+        {
+          "type": "file",
+          "path": "MC_03_N.MS",
+          "offset": "0x14"
+        },
+        {
+          "type": "file",
+          "path": "MC_04_N.MS",
+          "offset": "0x15"
+        },
+        {
+          "type": "file",
+          "path": "MC_05_N.MS",
+          "offset": "0x16"
+        },
+        {
+          "type": "file",
+          "path": "MC_06_N.MS",
+          "offset": "0x17"
+        },
+        {
+          "type": "file",
+          "path": "MC_07_N.MS",
+          "offset": "0x18"
+        },
+        {
+          "type": "file",
+          "path": "MC_08_N.MS",
+          "offset": "0x19"
+        },
+        {
+          "type": "file",
+          "path": "MC_09_N.MS",
+          "offset": "0x1a"
+        },
+        {
+          "type": "file",
+          "path": "MC_10_N.MS",
+          "offset": "0x1b"
+        },
+        {
+          "type": "file",
+          "path": "MC_11_N.MS",
+          "offset": "0x1c"
+        },
+        {
+          "type": "file",
+          "path": "MC_12_N.MS",
+          "offset": "0x1d"
+        },
+        {
+          "type": "shell",
+          "path": "MSDRV4 -B49152",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "MSP_HOOT",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "MC_01_N.MS : 切ない吐息"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "MC_02_N.MS : いくつもの夜を越えて"
+        },
+        {
+          "kind": "title",
+          "code": "0x14",
+          "title": "MC_03_N.MS : TIMELESS AREA"
+        },
+        {
+          "kind": "title",
+          "code": "0x15",
+          "title": "MC_04_N.MS : TENSION NIGHT"
+        },
+        {
+          "kind": "title",
+          "code": "0x16",
+          "title": "MC_05_N.MS : 妖しい疼き"
+        },
+        {
+          "kind": "title",
+          "code": "0x17",
+          "title": "MC_06_N.MS : LOVE THE PARTY"
+        },
+        {
+          "kind": "title",
+          "code": "0x18",
+          "title": "MC_07_N.MS : 出会いは風のように"
+        },
+        {
+          "kind": "title",
+          "code": "0x19",
+          "title": "MC_08_N.MS : DON'T LOOK FOR"
+        },
+        {
+          "kind": "title",
+          "code": "0x1a",
+          "title": "MC_09_N.MS : DEEP BLUE"
+        },
+        {
+          "kind": "title",
+          "code": "0x1b",
+          "title": "MC_10_N.MS : 恋人達の明白"
+        },
+        {
+          "kind": "title",
+          "code": "0x1c",
+          "title": "MC_11_N.MS : 自由の女神達"
+        },
+        {
+          "kind": "title",
+          "code": "0x1d",
+          "title": "MC_12_N.MS : 失意の朝焼け"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/blackpackage.xml",
+      "source_order": 634,
+      "archive": "miwaku_c_98",
+      "id": "miwaku-c-98-opn"
+    },
+    {
+      "title": "[PC-9801] 魅惑の調書(86)",
+      "driver": {
+        "name": "pc98dos",
+        "type": "86",
+        "alias": "BLACK PACKAGE",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "clockmul",
+          "value": "8"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "MSDRV4.EXE",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MSP_HOOT.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MC.OPN",
+          "offset": "0x10"
+        },
+        {
+          "type": "file",
+          "path": "MC.SSG",
+          "offset": "0x11"
+        },
+        {
+          "type": "file",
+          "path": "MC_01_B2.MS",
+          "offset": "0x12"
+        },
+        {
+          "type": "file",
+          "path": "MC_02_B2.MS",
+          "offset": "0x13"
+        },
+        {
+          "type": "file",
+          "path": "MC_03_B2.MS",
+          "offset": "0x14"
+        },
+        {
+          "type": "file",
+          "path": "MC_04_B2.MS",
+          "offset": "0x15"
+        },
+        {
+          "type": "file",
+          "path": "MC_05_B2.MS",
+          "offset": "0x16"
+        },
+        {
+          "type": "file",
+          "path": "MC_06_B2.MS",
+          "offset": "0x17"
+        },
+        {
+          "type": "file",
+          "path": "MC_07_B2.MS",
+          "offset": "0x18"
+        },
+        {
+          "type": "file",
+          "path": "MC_08_B2.MS",
+          "offset": "0x19"
+        },
+        {
+          "type": "file",
+          "path": "MC_09_B2.MS",
+          "offset": "0x1a"
+        },
+        {
+          "type": "file",
+          "path": "MC_10_B2.MS",
+          "offset": "0x1b"
+        },
+        {
+          "type": "file",
+          "path": "MC_11_B2.MS",
+          "offset": "0x1c"
+        },
+        {
+          "type": "file",
+          "path": "MC_12_B2.MS",
+          "offset": "0x1d"
+        },
+        {
+          "type": "shell",
+          "path": "MSDRV4 -B49152",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "MSP_HOOT",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "MC_01_B2.MS : 切ない吐息"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "MC_02_B2.MS : いくつもの夜を越えて"
+        },
+        {
+          "kind": "title",
+          "code": "0x14",
+          "title": "MC_03_B2.MS : TIMELESS AREA"
+        },
+        {
+          "kind": "title",
+          "code": "0x15",
+          "title": "MC_04_B2.MS : TENSION NIGHT"
+        },
+        {
+          "kind": "title",
+          "code": "0x16",
+          "title": "MC_05_B2.MS : 妖しい疼き"
+        },
+        {
+          "kind": "title",
+          "code": "0x17",
+          "title": "MC_06_B2.MS : LOVE THE PARTY"
+        },
+        {
+          "kind": "title",
+          "code": "0x18",
+          "title": "MC_07_B2.MS : 出会いは風のように"
+        },
+        {
+          "kind": "title",
+          "code": "0x19",
+          "title": "MC_08_B2.MS : DON'T LOOK FOR"
+        },
+        {
+          "kind": "title",
+          "code": "0x1a",
+          "title": "MC_09_B2.MS : DEEP BLUE"
+        },
+        {
+          "kind": "title",
+          "code": "0x1b",
+          "title": "MC_10_B2.MS : 恋人達の明白"
+        },
+        {
+          "kind": "title",
+          "code": "0x1c",
+          "title": "MC_11_B2.MS : 自由の女神達"
+        },
+        {
+          "kind": "title",
+          "code": "0x1d",
+          "title": "MC_12_B2.MS : 失意の朝焼け"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/blackpackage.xml",
+      "source_order": 635,
+      "archive": "miwaku_c_98",
+      "id": "miwaku-c-98-86"
+    },
+    {
+      "title": "[PC-9801] 魅惑の調書(SB16)",
+      "driver": {
+        "name": "pc98dos",
+        "type": "soundblaster16",
+        "alias": "BLACK PACKAGE",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "clockmul",
+          "value": "8"
+        },
+        {
+          "name": "opl3_mix",
+          "value": "0x100"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "MSDRV4.EXE",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MSP_HOOT.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MC.OPN",
+          "offset": "0x10"
+        },
+        {
+          "type": "file",
+          "path": "MC_01_SB.MS",
+          "offset": "0x12"
+        },
+        {
+          "type": "file",
+          "path": "MC_02_SB.MS",
+          "offset": "0x13"
+        },
+        {
+          "type": "file",
+          "path": "MC_03_SB.MS",
+          "offset": "0x14"
+        },
+        {
+          "type": "file",
+          "path": "MC_04_SB.MS",
+          "offset": "0x15"
+        },
+        {
+          "type": "file",
+          "path": "MC_05_SB.MS",
+          "offset": "0x16"
+        },
+        {
+          "type": "file",
+          "path": "MC_06_SB.MS",
+          "offset": "0x17"
+        },
+        {
+          "type": "file",
+          "path": "MC_07_SB.MS",
+          "offset": "0x18"
+        },
+        {
+          "type": "file",
+          "path": "MC_08_SB.MS",
+          "offset": "0x19"
+        },
+        {
+          "type": "file",
+          "path": "MC_09_SB.MS",
+          "offset": "0x1a"
+        },
+        {
+          "type": "file",
+          "path": "MC_10_SB.MS",
+          "offset": "0x1b"
+        },
+        {
+          "type": "file",
+          "path": "MC_11_SB.MS",
+          "offset": "0x1c"
+        },
+        {
+          "type": "file",
+          "path": "MC_12_SB.MS",
+          "offset": "0x1d"
+        },
+        {
+          "type": "shell",
+          "path": "MSDRV4 -B49152",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "MSP_HOOT",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "MC_01_SB.MS : 切ない吐息"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "MC_02_SB.MS : いくつもの夜を越えて"
+        },
+        {
+          "kind": "title",
+          "code": "0x14",
+          "title": "MC_03_SB.MS : TIMELESS AREA"
+        },
+        {
+          "kind": "title",
+          "code": "0x15",
+          "title": "MC_04_SB.MS : TENSION NIGHT"
+        },
+        {
+          "kind": "title",
+          "code": "0x16",
+          "title": "MC_05_SB.MS : 妖しい疼き"
+        },
+        {
+          "kind": "title",
+          "code": "0x17",
+          "title": "MC_06_SB.MS : LOVE THE PARTY"
+        },
+        {
+          "kind": "title",
+          "code": "0x18",
+          "title": "MC_07_SB.MS : 出会いは風のように"
+        },
+        {
+          "kind": "title",
+          "code": "0x19",
+          "title": "MC_08_SB.MS : DON'T LOOK FOR"
+        },
+        {
+          "kind": "title",
+          "code": "0x1a",
+          "title": "MC_09_SB.MS : DEEP BLUE"
+        },
+        {
+          "kind": "title",
+          "code": "0x1b",
+          "title": "MC_10_SB.MS : 恋人達の明白"
+        },
+        {
+          "kind": "title",
+          "code": "0x1c",
+          "title": "MC_11_SB.MS : 自由の女神達"
+        },
+        {
+          "kind": "title",
+          "code": "0x1d",
+          "title": "MC_12_SB.MS : 失意の朝焼け"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/blackpackage.xml",
+      "source_order": 636,
+      "archive": "miwaku_c_98",
+      "id": "miwaku-c-98-soundblaster16"
+    },
+    {
+      "title": "[PC-9801] 魅惑の調書(GS)",
+      "driver": {
+        "name": "pc98dos",
+        "type": "beep",
+        "alias": "BLACK PACKAGE",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "clockmul",
+          "value": "8"
+        },
+        {
+          "name": "midiout",
+          "value": "1"
+        },
+        {
+          "name": "midiout_type",
+          "value": "4"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "MSDRV4.EXE",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MSP_HOOT.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "INIT_GS.MS",
+          "offset": "0x12"
+        },
+        {
+          "type": "file",
+          "path": "MC_01_GS.MS",
+          "offset": "0x13"
+        },
+        {
+          "type": "file",
+          "path": "MC_02_GS.MS",
+          "offset": "0x14"
+        },
+        {
+          "type": "file",
+          "path": "MC_03_GS.MS",
+          "offset": "0x15"
+        },
+        {
+          "type": "file",
+          "path": "MC_04_GS.MS",
+          "offset": "0x16"
+        },
+        {
+          "type": "file",
+          "path": "MC_05_GS.MS",
+          "offset": "0x17"
+        },
+        {
+          "type": "file",
+          "path": "MC_06_GS.MS",
+          "offset": "0x18"
+        },
+        {
+          "type": "file",
+          "path": "MC_07_GS.MS",
+          "offset": "0x19"
+        },
+        {
+          "type": "file",
+          "path": "MC_08_GS.MS",
+          "offset": "0x1a"
+        },
+        {
+          "type": "file",
+          "path": "MC_09_GS.MS",
+          "offset": "0x1b"
+        },
+        {
+          "type": "file",
+          "path": "MC_10_GS.MS",
+          "offset": "0x1c"
+        },
+        {
+          "type": "file",
+          "path": "MC_11_GS.MS",
+          "offset": "0x1d"
+        },
+        {
+          "type": "file",
+          "path": "MC_12_GS.MS",
+          "offset": "0x1e"
+        },
+        {
+          "type": "shell",
+          "path": "MSDRV4 -B49152",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "MSP_HOOT",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "[音源初期化/最初に実行して下さい]"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "MC_01_GS.MS : 切ない吐息"
+        },
+        {
+          "kind": "title",
+          "code": "0x14",
+          "title": "MC_02_GS.MS : いくつもの夜を越えて"
+        },
+        {
+          "kind": "title",
+          "code": "0x15",
+          "title": "MC_03_GS.MS : TIMELESS AREA"
+        },
+        {
+          "kind": "title",
+          "code": "0x16",
+          "title": "MC_04_GS.MS : TENSION NIGHT"
+        },
+        {
+          "kind": "title",
+          "code": "0x17",
+          "title": "MC_05_GS.MS : 妖しい疼き"
+        },
+        {
+          "kind": "title",
+          "code": "0x18",
+          "title": "MC_06_GS.MS : LOVE THE PARTY"
+        },
+        {
+          "kind": "title",
+          "code": "0x19",
+          "title": "MC_07_GS.MS : 出会いは風のように"
+        },
+        {
+          "kind": "title",
+          "code": "0x1a",
+          "title": "MC_08_GS.MS : DON'T LOOK FOR"
+        },
+        {
+          "kind": "title",
+          "code": "0x1b",
+          "title": "MC_09_GS.MS : DEEP BLUE"
+        },
+        {
+          "kind": "title",
+          "code": "0x1c",
+          "title": "MC_10_GS.MS : 恋人達の明白"
+        },
+        {
+          "kind": "title",
+          "code": "0x1d",
+          "title": "MC_11_GS.MS : 自由の女神達"
+        },
+        {
+          "kind": "title",
+          "code": "0x1e",
+          "title": "MC_12_GS.MS : 失意の朝焼け"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/blackpackage.xml",
+      "source_order": 637,
+      "archive": "miwaku_c_98",
+      "id": "miwaku-c-98-beep"
+    },
+    {
+      "title": "[PC-9801] 魅惑の調書(SC-88)",
+      "driver": {
+        "name": "pc98dos",
+        "type": "beep",
+        "alias": "BLACK PACKAGE",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "clockmul",
+          "value": "8"
+        },
+        {
+          "name": "midiout",
+          "value": "1"
+        },
+        {
+          "name": "midiout_type",
+          "value": "7"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "MSDRV4.EXE",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MSP_HOOT.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "INIT_88.MS",
+          "offset": "0x12"
+        },
+        {
+          "type": "file",
+          "path": "MC_01_88.MS",
+          "offset": "0x13"
+        },
+        {
+          "type": "file",
+          "path": "MC_02_88.MS",
+          "offset": "0x14"
+        },
+        {
+          "type": "file",
+          "path": "MC_03_88.MS",
+          "offset": "0x15"
+        },
+        {
+          "type": "file",
+          "path": "MC_04_88.MS",
+          "offset": "0x16"
+        },
+        {
+          "type": "file",
+          "path": "MC_05_88.MS",
+          "offset": "0x17"
+        },
+        {
+          "type": "file",
+          "path": "MC_06_88.MS",
+          "offset": "0x18"
+        },
+        {
+          "type": "file",
+          "path": "MC_07_88.MS",
+          "offset": "0x19"
+        },
+        {
+          "type": "file",
+          "path": "MC_08_88.MS",
+          "offset": "0x1a"
+        },
+        {
+          "type": "file",
+          "path": "MC_09_88.MS",
+          "offset": "0x1b"
+        },
+        {
+          "type": "file",
+          "path": "MC_10_88.MS",
+          "offset": "0x1c"
+        },
+        {
+          "type": "file",
+          "path": "MC_11_88.MS",
+          "offset": "0x1d"
+        },
+        {
+          "type": "file",
+          "path": "MC_12_88.MS",
+          "offset": "0x1e"
+        },
+        {
+          "type": "shell",
+          "path": "MSDRV4 -B49152",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "MSP_HOOT",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "[音源初期化/最初に実行して下さい]"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "MC_01_88.MS : 切ない吐息"
+        },
+        {
+          "kind": "title",
+          "code": "0x14",
+          "title": "MC_02_88.MS : いくつもの夜を越えて"
+        },
+        {
+          "kind": "title",
+          "code": "0x15",
+          "title": "MC_03_88.MS : TIMELESS AREA"
+        },
+        {
+          "kind": "title",
+          "code": "0x16",
+          "title": "MC_04_88.MS : TENSION NIGHT"
+        },
+        {
+          "kind": "title",
+          "code": "0x17",
+          "title": "MC_05_88.MS : 妖しい疼き"
+        },
+        {
+          "kind": "title",
+          "code": "0x18",
+          "title": "MC_06_88.MS : LOVE THE PARTY"
+        },
+        {
+          "kind": "title",
+          "code": "0x19",
+          "title": "MC_07_88.MS : 出会いは風のように"
+        },
+        {
+          "kind": "title",
+          "code": "0x1a",
+          "title": "MC_08_88.MS : DON'T LOOK FOR"
+        },
+        {
+          "kind": "title",
+          "code": "0x1b",
+          "title": "MC_09_88.MS : DEEP BLUE"
+        },
+        {
+          "kind": "title",
+          "code": "0x1c",
+          "title": "MC_10_88.MS : 恋人達の明白"
+        },
+        {
+          "kind": "title",
+          "code": "0x1d",
+          "title": "MC_11_88.MS : 自由の女神達"
+        },
+        {
+          "kind": "title",
+          "code": "0x1e",
+          "title": "MC_12_88.MS : 失意の朝焼け"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/blackpackage.xml",
+      "source_order": 638,
+      "archive": "miwaku_c_98",
+      "id": "miwaku-c-98-beep-2"
+    }
+  ]
+}

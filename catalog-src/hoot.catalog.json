@@ -1,0 +1,664 @@
+{
+  "format": "hoot-catalog-manifest",
+  "version": 1,
+  "source": "xml_20251231.zip",
+  "root_xml": "hoot.xml",
+  "overrides": "hoot-overrides.xml",
+  "bindings": [
+    {
+      "extensions": [
+        "pce",
+        "hes"
+      ],
+      "driver": {
+        "name": "pcengine",
+        "type": "hes"
+      },
+      "options": [
+        {
+          "name": "adpcm",
+          "value": "0x01"
+        }
+      ]
+    },
+    {
+      "extensions": [
+        "kss"
+      ],
+      "driver": {
+        "name": "msx",
+        "type": "kss"
+      },
+      "options": [
+        {
+          "name": "ay_mix",
+          "value": "0x5a"
+        },
+        {
+          "name": "sn_mix",
+          "value": "0xf0"
+        },
+        {
+          "name": "fmpac_mix",
+          "value": "0x280"
+        },
+        {
+          "name": "fmunit_mix",
+          "value": "0x280"
+        },
+        {
+          "name": "msxa_mix",
+          "value": "0x160"
+        },
+        {
+          "name": "scc_mix",
+          "value": "0xa3"
+        }
+      ]
+    },
+    {
+      "extensions": [
+        "mdx"
+      ],
+      "driver": {
+        "name": "x68k",
+        "type": "mxdrv"
+      },
+      "options": [
+        {
+          "name": "opm_mix",
+          "value": "0xc0"
+        },
+        {
+          "name": "pcm_mix",
+          "value": "0xf0"
+        }
+      ]
+    },
+    {
+      "extensions": [
+        "mnd"
+      ],
+      "driver": {
+        "name": "x68k",
+        "type": "mnd"
+      },
+      "options": [
+        {
+          "name": "mfp",
+          "value": "1"
+        },
+        {
+          "name": "opm_mix",
+          "value": "0xc0"
+        },
+        {
+          "name": "opn3_mix",
+          "value": "0xc0"
+        },
+        {
+          "name": "pcm_mix",
+          "value": "0xf0"
+        }
+      ]
+    },
+    {
+      "extensions": [
+        "nsf"
+      ],
+      "driver": {
+        "name": "nes",
+        "type": "nsf"
+      },
+      "options": [
+        {
+          "name": "apu_mix",
+          "value": "0x100"
+        },
+        {
+          "name": "dpcm_mix",
+          "value": "0x100"
+        },
+        {
+          "name": "vrc6_mix",
+          "value": "0x100"
+        },
+        {
+          "name": "vrc7_mix",
+          "value": "0x100"
+        },
+        {
+          "name": "fds_mix",
+          "value": "0xd0"
+        },
+        {
+          "name": "mmc5_mix",
+          "value": "0x100"
+        },
+        {
+          "name": "n163_mix",
+          "value": "0x100"
+        },
+        {
+          "name": "sunsoft5b_mix",
+          "value": "0x100"
+        },
+        {
+          "name": "n163realmode",
+          "value": "0x80"
+        },
+        {
+          "name": "fdsrealmode",
+          "value": "0"
+        },
+        {
+          "name": "nesrealdac",
+          "value": "0"
+        },
+        {
+          "name": "total_mix",
+          "value": "0x100"
+        }
+      ]
+    },
+    {
+      "extensions": [
+        "nez"
+      ],
+      "driver": {
+        "name": "nes",
+        "type": "nez"
+      },
+      "options": [
+        {
+          "name": "apu_mix",
+          "value": "0x100"
+        },
+        {
+          "name": "dpcm_mix",
+          "value": "0x100"
+        },
+        {
+          "name": "vrc6_mix",
+          "value": "0x100"
+        },
+        {
+          "name": "vrc7_mix",
+          "value": "0x100"
+        },
+        {
+          "name": "fds_mix",
+          "value": "0xd0"
+        },
+        {
+          "name": "mmc5_mix",
+          "value": "0x100"
+        },
+        {
+          "name": "n163_mix",
+          "value": "0x100"
+        },
+        {
+          "name": "sunsoft5b_mix",
+          "value": "0x100"
+        },
+        {
+          "name": "n163realmode",
+          "value": "0x80"
+        },
+        {
+          "name": "fdsrealmode",
+          "value": "0"
+        },
+        {
+          "name": "nesrealdac",
+          "value": "0"
+        },
+        {
+          "name": "total_mix",
+          "value": "0x100"
+        }
+      ]
+    },
+    {
+      "extensions": [
+        "gbs",
+        "gbr"
+      ],
+      "driver": {
+        "name": "gb",
+        "type": "gbs"
+      },
+      "options": [
+        {
+          "name": "dmg_mix",
+          "value": "0x100"
+        }
+      ]
+    },
+    {
+      "extensions": [
+        "spc"
+      ],
+      "driver": {
+        "name": "snes",
+        "type": "spc"
+      },
+      "options": []
+    },
+    {
+      "extensions": [
+        "bgm"
+      ],
+      "driver": {
+        "name": "msx",
+        "type": "kinro5"
+      },
+      "options": [
+        {
+          "name": "scc_mix",
+          "value": "0xae"
+        },
+        {
+          "name": "psg_mix",
+          "value": "0xe6"
+        },
+        {
+          "name": "opll_mix",
+          "value": "0x25e"
+        }
+      ]
+    },
+    {
+      "extensions": [
+        "mpk"
+      ],
+      "driver": {
+        "name": "msx",
+        "type": "mpk"
+      },
+      "options": [
+        {
+          "name": "scc_mix",
+          "value": "0xae"
+        },
+        {
+          "name": "psg_mix",
+          "value": "0xe6"
+        },
+        {
+          "name": "opll_mix",
+          "value": "0x25e"
+        }
+      ]
+    },
+    {
+      "extensions": [
+        "mgs"
+      ],
+      "driver": {
+        "name": "msx",
+        "type": "mgsdrv"
+      },
+      "options": [
+        {
+          "name": "scc_mix",
+          "value": "0xae"
+        },
+        {
+          "name": "psg_mix",
+          "value": "0xe6"
+        },
+        {
+          "name": "opll_mix",
+          "value": "0x25e"
+        }
+      ]
+    },
+    {
+      "extensions": [
+        "pt3"
+      ],
+      "driver": {
+        "name": "msx",
+        "type": "pt3"
+      },
+      "options": []
+    },
+    {
+      "extensions": [
+        "ndp"
+      ],
+      "driver": {
+        "name": "msx",
+        "type": "ndp"
+      },
+      "options": []
+    }
+  ],
+  "includes": [
+    "shards/000-hoot.json",
+    "shards/001-13cm.json",
+    "shards/002-aba.json",
+    "shards/003-abogadopowers.json",
+    "shards/004-acidplan.json",
+    "shards/005-active.json",
+    "shards/006-agumix.json",
+    "shards/007-ail.json",
+    "shards/008-aion.json",
+    "shards/009-alfasystem.json",
+    "shards/010-alicesoft.json",
+    "shards/011-allex.json",
+    "shards/012-allot.json",
+    "shards/013-amorphous.json",
+    "shards/014-ange.json",
+    "shards/015-anjin.json",
+    "shards/016-applepie.json",
+    "shards/017-apricot.json",
+    "shards/018-arsys.json",
+    "shards/019-artdink.json",
+    "shards/020-artec.json",
+    "shards/021-ascii.json",
+    "shards/022-aypio.json",
+    "shards/023-bandai.json",
+    "shards/024-banpresto.json",
+    "shards/025-basement.json",
+    "shards/026-bashohouse.json",
+    "shards/027-bio-100.json",
+    "shards/028-birdysoft.json",
+    "shards/029-bit2.json",
+    "shards/030-blucky.json",
+    "shards/031-bnn.json",
+    "shards/032-bonbeebonbon.json",
+    "shards/033-bothtec.json",
+    "shards/034-bps.json",
+    "shards/035-blackpackage.json",
+    "shards/036-braingray.json",
+    "shards/037-broderbund.json",
+    "shards/038-c-class.json",
+    "shards/039-c-lab.json",
+    "shards/040-capcom.json",
+    "shards/041-carrylab.json",
+    "shards/042-catspro.json",
+    "shards/043-cbc.json",
+    "shards/044-chaos.json",
+    "shards/045-chatnoir.json",
+    "shards/046-chime.json",
+    "shards/047-cocktailsoft.json",
+    "shards/048-colossus.json",
+    "shards/049-compac.json",
+    "shards/050-compile.json",
+    "shards/051-cosmoscomputer.json",
+    "shards/052-crowd.json",
+    "shards/053-csware.json",
+    "shards/054-cuisse.json",
+    "shards/055-curott.json",
+    "shards/056-custom.json",
+    "shards/057-cybelle.json",
+    "shards/058-datawest.json",
+    "shards/059-dbsoft.json",
+    "shards/060-dempa.json",
+    "shards/061-dengekisoft.json",
+    "shards/062-desire.json",
+    "shards/063-dez.json",
+    "shards/064-discovery.json",
+    "shards/065-dixie.json",
+    "shards/066-do.json",
+    "shards/067-doa.json",
+    "shards/068-dotkikaku.json",
+    "shards/069-doujin.json",
+    "shards/070-dynamicproduction.json",
+    "shards/071-eastcube.json",
+    "shards/072-ecsecosoft.json",
+    "shards/073-electricsheep.json",
+    "shards/074-elf.json",
+    "shards/075-enix.json",
+    "shards/076-epic-sony.json",
+    "shards/077-etc.json",
+    "shards/078-exact.json",
+    "shards/079-exst.json",
+    "shards/080-fairytale.json",
+    "shards/081-fairytale-hardcover.json",
+    "shards/082-fairytale-xshitei.json",
+    "shards/083-fairydust.json",
+    "shards/084-falcom.json",
+    "shards/085-familysoft.json",
+    "shards/086-flat.json",
+    "shards/087-flipflop.json",
+    "shards/088-fmc.json",
+    "shards/089-foresight.json",
+    "shards/090-forest.json",
+    "shards/091-foster.json",
+    "shards/092-fournine.json",
+    "shards/093-frontier.json",
+    "shards/094-fugasystem.json",
+    "shards/095-gainax.json",
+    "shards/096-gam.json",
+    "shards/097-gamearts.json",
+    "shards/098-garuda.json",
+    "shards/099-giga.json",
+    "shards/100-gimmickhouse.json",
+    "shards/101-glams.json",
+    "shards/102-glodia.json",
+    "shards/103-gloria.json",
+    "shards/104-gray.json",
+    "shards/105-great.json",
+    "shards/106-grocer.json",
+    "shards/107-gust.json",
+    "shards/108-halkenkyujo.json",
+    "shards/109-happytime.json",
+    "shards/110-hard.json",
+    "shards/111-heartsoft.json",
+    "shards/112-hertz.json",
+    "shards/113-hervest.json",
+    "shards/114-hervestone.json",
+    "shards/115-himeyasoft.json",
+    "shards/116-hobbyjapan.json",
+    "shards/117-hokusho.json",
+    "shards/118-holywood.json",
+    "shards/119-homedata.json",
+    "shards/120-hotb.json",
+    "shards/121-hudsonsoft.json",
+    "shards/122-hulinks.json",
+    "shards/123-hummingbirdsoft.json",
+    "shards/124-ice.json",
+    "shards/125-ides.json",
+    "shards/126-illusion.json",
+    "shards/127-imagineer.json",
+    "shards/128-inside.json",
+    "shards/129-interheart.json",
+    "shards/130-irem.json",
+    "shards/131-isc.json",
+    "shards/132-jam.json",
+    "shards/133-janis.json",
+    "shards/134-japanclarybusiness.json",
+    "shards/135-jast.json",
+    "shards/136-jhv.json",
+    "shards/137-jitenshasogyo.json",
+    "shards/138-juice.json",
+    "shards/139-kaneko.json",
+    "shards/140-kao.json",
+    "shards/141-katty.json",
+    "shards/142-kinpukurin.json",
+    "shards/143-koei.json",
+    "shards/144-kogado.json",
+    "shards/145-konami.json",
+    "shards/146-ksk.json",
+    "shards/147-kss.json",
+    "shards/148-leaf.json",
+    "shards/149-lemonclub.json",
+    "shards/150-libido.json",
+    "shards/151-lipstar.json",
+    "shards/152-log.json",
+    "shards/153-lovegun.json",
+    "shards/154-lunarsoft.json",
+    "shards/155-maborosiware.json",
+    "shards/156-maesta7.json",
+    "shards/157-magicalzoo.json",
+    "shards/158-matrix.json",
+    "shards/159-maxima.json",
+    "shards/160-maybesoft.json",
+    "shards/161-mayfarsoft.json",
+    "shards/162-mbstruth.json",
+    "shards/163-mebiosoftware.json",
+    "shards/164-megami.json",
+    "shards/165-melody.json",
+    "shards/166-miamisoft.json",
+    "shards/167-microcabin.json",
+    "shards/168-micronet.json",
+    "shards/169-microprose.json",
+    "shards/170-microvision.json",
+    "shards/171-mink.json",
+    "shards/172-mischief.json",
+    "shards/173-misty.json",
+    "shards/174-mnm.json",
+    "shards/175-momonokihouse.json",
+    "shards/176-movic.json",
+    "shards/177-mucom88.json",
+    "shards/178-mugen.json",
+    "shards/179-muppetbox.json",
+    "shards/180-mycom.json",
+    "shards/181-namco.json",
+    "shards/182-natsume.json",
+    "shards/183-ncs.json",
+    "shards/184-nec.json",
+    "shards/185-necavenue.json",
+    "shards/186-necinterchannel.json",
+    "shards/187-negative.json",
+    "shards/188-new.json",
+    "shards/189-nexton.json",
+    "shards/190-nexus.json",
+    "shards/191-nichicomren.json",
+    "shards/192-nichibutsu.json",
+    "shards/193-nidecomcarry.json",
+    "shards/194-nihoncreate.json",
+    "shards/195-nihondexter.json",
+    "shards/196-nihonplantech.json",
+    "shards/197-nikukyuu.json",
+    "shards/198-onionsoftware.json",
+    "shards/199-orangehouse.json",
+    "shards/200-outlaw.json",
+    "shards/201-pack-in-video.json",
+    "shards/202-palmtree.json",
+    "shards/203-panasoft.json",
+    "shards/204-panther.json",
+    "shards/205-parsley.json",
+    "shards/206-paxsoftnica.json",
+    "shards/207-pcmcomplete.json",
+    "shards/208-peachsoft.json",
+    "shards/209-pearlsoft.json",
+    "shards/210-pegasusjapan.json",
+    "shards/211-peppermintkids.json",
+    "shards/212-persiansoft.json",
+    "shards/213-pil.json",
+    "shards/214-pis-tonsoft.json",
+    "shards/215-poisonbreath.json",
+    "shards/216-ponyca.json",
+    "shards/217-ponytail.json",
+    "shards/218-pow.json",
+    "shards/219-psd.json",
+    "shards/220-psk.json",
+    "shards/221-puchi.json",
+    "shards/222-quasarsoft.json",
+    "shards/223-queensoft.json",
+    "shards/224-r.json",
+    "shards/225-r-rate.json",
+    "shards/226-raccoon.json",
+    "shards/227-randomhouse.json",
+    "shards/228-redzone.json",
+    "shards/229-rightstuff.json",
+    "shards/230-ringerbell.json",
+    "shards/231-riverhillsoft.json",
+    "shards/232-riruhisparty.json",
+    "shards/233-santafe.json",
+    "shards/234-succubus.json",
+    "shards/235-sacom.json",
+    "shards/236-scaptrust.json",
+    "shards/237-scoop.json",
+    "shards/238-sealion.json",
+    "shards/239-sein.json",
+    "shards/240-sgi.json",
+    "shards/241-sharp.json",
+    "shards/242-shinseisha.json",
+    "shards/243-shogakukan.json",
+    "shards/244-shuwasystem.json",
+    "shards/245-sierraonline.json",
+    "shards/246-silence.json",
+    "shards/247-silkys.json",
+    "shards/248-softec.json",
+    "shards/249-softpal.json",
+    "shards/250-softbank.json",
+    "shards/251-softplan.json",
+    "shards/252-sogna.json",
+    "shards/253-sony.json",
+    "shards/254-sorciere.json",
+    "shards/255-spaceproject.json",
+    "shards/256-sps.json",
+    "shards/257-square.json",
+    "shards/258-starcraft.json",
+    "shards/259-sting.json",
+    "shards/260-striker.json",
+    "shards/261-studioangel.json",
+    "shards/262-studiobroom.json",
+    "shards/263-studiomilk.json",
+    "shards/264-studiomobius.json",
+    "shards/265-studiooffside.json",
+    "shards/266-studiotwinkle.json",
+    "shards/267-sunsoft.json",
+    "shards/268-surdewave.json",
+    "shards/269-swat.json",
+    "shards/270-systemsoft.json",
+    "shards/271-t2.json",
+    "shards/272-taito.json",
+    "shards/273-takeru.json",
+    "shards/274-takicorporation.json",
+    "shards/275-tande.json",
+    "shards/276-teardrop.json",
+    "shards/277-technogrard.json",
+    "shards/278-technopolissoft.json",
+    "shards/279-tecnosoft.json",
+    "shards/280-telenet.json",
+    "shards/281-tengupro.json",
+    "shards/282-tenshindo.json",
+    "shards/283-tetratech.json",
+    "shards/284-tgl.json",
+    "shards/285-tiara.json",
+    "shards/286-tierheit.json",
+    "shards/287-tips.json",
+    "shards/288-thinkingrabbit.json",
+    "shards/289-toho.json",
+    "shards/290-tokumashoten.json",
+    "shards/291-tomboy.json",
+    "shards/292-tonkinhouse.json",
+    "shards/293-trush.json",
+    "shards/294-u-office.json",
+    "shards/295-ucom.json",
+    "shards/296-umesoft.json",
+    "shards/297-umizukiseisakujyo.json",
+    "shards/298-victor.json",
+    "shards/299-ving.json",
+    "shards/300-vivian.json",
+    "shards/301-warlock.json",
+    "shards/302-wavetrain.json",
+    "shards/303-wendymagazine.json",
+    "shards/304-westside.json",
+    "shards/305-wildlife.json",
+    "shards/306-wing.json",
+    "shards/307-winkysoft.json",
+    "shards/308-wiz.json",
+    "shards/309-wolfteam.json",
+    "shards/310-xtalsoft.json",
+    "shards/311-xyz.json",
+    "shards/312-youentai.json",
+    "shards/313-zeit.json",
+    "shards/314-zoom.json",
+    "shards/315-zyx.json"
+  ],
+  "statistics": {
+    "files": 316,
+    "games": 5253,
+    "literal_titles": 126806,
+    "ranges": 800,
+    "assets": 115679
+  }
+}

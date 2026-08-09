@@ -1,0 +1,178 @@
+{
+  "format": "hoot-catalog-shard",
+  "version": 1,
+  "source_file": "xml/muppetbox.xml",
+  "date": "2005/09/25",
+  "comments": [
+    " //まぺっとぼっくす "
+  ],
+  "games": [
+    {
+      "title": "[PC-9801] まぺっとぼっくす",
+      "driver": {
+        "name": "pc98dos",
+        "type": "opn",
+        "alias": "まぺっとぼっくす",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "funcvect",
+          "value": "0x7e"
+        },
+        {
+          "name": "clockmul",
+          "value": "8"
+        },
+        {
+          "name": "showfm3ex",
+          "value": "1"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "PMD_98.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "PMD.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "PDR.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "PPSDRV.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MINE01.PPS",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "SMAP01.M",
+          "offset": "0x10"
+        },
+        {
+          "type": "file",
+          "path": "SMAP02.M",
+          "offset": "0x11"
+        },
+        {
+          "type": "file",
+          "path": "SMAP03.M",
+          "offset": "0x12"
+        },
+        {
+          "type": "file",
+          "path": "SMAP04.M",
+          "offset": "0x13"
+        },
+        {
+          "type": "file",
+          "path": "SMAP05.M",
+          "offset": "0x14"
+        },
+        {
+          "type": "file",
+          "path": "SMAP06.M",
+          "offset": "0x15"
+        },
+        {
+          "type": "file",
+          "path": "SMAP07.M",
+          "offset": "0x16"
+        },
+        {
+          "type": "file",
+          "path": "SMAP08.M",
+          "offset": "0x17"
+        },
+        {
+          "type": "file",
+          "path": "SMAP09.M",
+          "offset": "0x18"
+        },
+        {
+          "type": "shell",
+          "path": "pdr /I",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "ppsdrv /18 MINE01.PPS",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "pmd # /K /i",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "pmd_98",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "SMAP01.M"
+        },
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "SMAP02.M"
+        },
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "SMAP03.M"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "SMAP04.M"
+        },
+        {
+          "kind": "title",
+          "code": "0x14",
+          "title": "SMAP05.M"
+        },
+        {
+          "kind": "title",
+          "code": "0x15",
+          "title": "SMAP06.M"
+        },
+        {
+          "kind": "title",
+          "code": "0x16",
+          "title": "SMAP07.M"
+        },
+        {
+          "kind": "title",
+          "code": "0x17",
+          "title": "SMAP08.M"
+        },
+        {
+          "kind": "title",
+          "code": "0x18",
+          "title": "SMAP09.M"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/muppetbox.xml",
+      "source_order": 3372,
+      "archive": "mp_box_98",
+      "id": "mp-box-98-opn"
+    }
+  ]
+}

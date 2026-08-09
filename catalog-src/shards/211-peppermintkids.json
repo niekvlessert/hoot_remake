@@ -1,0 +1,433 @@
+{
+  "format": "hoot-catalog-shard",
+  "version": 1,
+  "source_file": "xml/peppermintkids.xml",
+  "date": "2005/09/25",
+  "comments": [
+    " //ペパーミントKids "
+  ],
+  "games": [
+    {
+      "title": "[PC-9801] SHOW DOWN",
+      "driver": {
+        "name": "pc98dos",
+        "type": "opn",
+        "alias": "ペパーミントKids",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "clockmul",
+          "value": "8"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "TRPSCR98.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "TRPSCHRN.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "BATTLE.MDT",
+          "offset": "0x10"
+        },
+        {
+          "type": "file",
+          "path": "BONUS.MDT",
+          "offset": "0x11"
+        },
+        {
+          "type": "file",
+          "path": "CHAR_SEL.MDT",
+          "offset": "0x12"
+        },
+        {
+          "type": "file",
+          "path": "ENDING.MDT",
+          "offset": "0x13"
+        },
+        {
+          "type": "file",
+          "path": "GAMEOVER.MDT",
+          "offset": "0x14"
+        },
+        {
+          "type": "file",
+          "path": "MAP_1.MDT",
+          "offset": "0x15"
+        },
+        {
+          "type": "file",
+          "path": "MAP_2.MDT",
+          "offset": "0x16"
+        },
+        {
+          "type": "file",
+          "path": "MAP_3.MDT",
+          "offset": "0x17"
+        },
+        {
+          "type": "file",
+          "path": "MAP_4.MDT",
+          "offset": "0x18"
+        },
+        {
+          "type": "file",
+          "path": "OPENING.MDT",
+          "offset": "0x19"
+        },
+        {
+          "type": "file",
+          "path": "ST_CLEAR.MDT",
+          "offset": "0x1a"
+        },
+        {
+          "type": "file",
+          "path": "SE1.MDT",
+          "offset": "0x1b"
+        },
+        {
+          "type": "file",
+          "path": "SE2.MDT",
+          "offset": "0x1c"
+        },
+        {
+          "type": "file",
+          "path": "SE3.MDT",
+          "offset": "0x1d"
+        },
+        {
+          "type": "file",
+          "path": "SE4.MDT",
+          "offset": "0x1e"
+        },
+        {
+          "type": "file",
+          "path": "SE5.MDT",
+          "offset": "0x1f"
+        },
+        {
+          "type": "file",
+          "path": "SE6.MDT",
+          "offset": "0x20"
+        },
+        {
+          "type": "file",
+          "path": "SE7.MDT",
+          "offset": "0x21"
+        },
+        {
+          "type": "shell",
+          "path": "TRPSCHRN",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "TRPSCR98",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "BATTLE.MDT"
+        },
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "BONUS.MDT"
+        },
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "CHAR_SEL.MDT"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "ENDING.MDT"
+        },
+        {
+          "kind": "title",
+          "code": "0x14",
+          "title": "GAMEOVER.MDT"
+        },
+        {
+          "kind": "title",
+          "code": "0x15",
+          "title": "MAP_1.MDT"
+        },
+        {
+          "kind": "title",
+          "code": "0x16",
+          "title": "MAP_2.MDT"
+        },
+        {
+          "kind": "title",
+          "code": "0x17",
+          "title": "MAP_3.MDT"
+        },
+        {
+          "kind": "title",
+          "code": "0x18",
+          "title": "MAP_4.MDT"
+        },
+        {
+          "kind": "title",
+          "code": "0x19",
+          "title": "OPENING.MDT"
+        },
+        {
+          "kind": "title",
+          "code": "0x1a",
+          "title": "ST_CLEAR.MDT"
+        },
+        {
+          "kind": "title",
+          "code": "0x1b",
+          "title": "SE1.MDT"
+        },
+        {
+          "kind": "title",
+          "code": "0x1c",
+          "title": "SE2.MDT"
+        },
+        {
+          "kind": "title",
+          "code": "0x1d",
+          "title": "SE3.MDT"
+        },
+        {
+          "kind": "title",
+          "code": "0x1e",
+          "title": "SE4.MDT"
+        },
+        {
+          "kind": "title",
+          "code": "0x1f",
+          "title": "SE5.MDT"
+        },
+        {
+          "kind": "title",
+          "code": "0x20",
+          "title": "SE6.MDT"
+        },
+        {
+          "kind": "title",
+          "code": "0x21",
+          "title": "SE7.MDT"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/peppermintkids.xml",
+      "source_order": 3664,
+      "archive": "showdown_98",
+      "id": "showdown-98-opn"
+    },
+    {
+      "title": "[PC-9801] 時空捜査官プリティエンジェル MISTY FLASH",
+      "driver": {
+        "name": "pc98dos",
+        "type": "opn",
+        "alias": "ペパーミントKids",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "funcvect",
+          "value": "0x7e"
+        },
+        {
+          "name": "clockmul",
+          "value": "8"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "PMD_98.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "PMD.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "BGM00.M",
+          "offset": "0x10"
+        },
+        {
+          "type": "file",
+          "path": "BGM01.M",
+          "offset": "0x11"
+        },
+        {
+          "type": "file",
+          "path": "BGM02.M",
+          "offset": "0x12"
+        },
+        {
+          "type": "file",
+          "path": "BGM03.M",
+          "offset": "0x13"
+        },
+        {
+          "type": "file",
+          "path": "BGM04.M",
+          "offset": "0x14"
+        },
+        {
+          "type": "file",
+          "path": "BGM05.M",
+          "offset": "0x15"
+        },
+        {
+          "type": "file",
+          "path": "BGM06.M",
+          "offset": "0x16"
+        },
+        {
+          "type": "file",
+          "path": "BGM07.M",
+          "offset": "0x17"
+        },
+        {
+          "type": "file",
+          "path": "BGM08.M",
+          "offset": "0x18"
+        },
+        {
+          "type": "file",
+          "path": "BGM09.M",
+          "offset": "0x19"
+        },
+        {
+          "type": "file",
+          "path": "BGM10.M",
+          "offset": "0x1a"
+        },
+        {
+          "type": "file",
+          "path": "BGM11.M",
+          "offset": "0x1b"
+        },
+        {
+          "type": "file",
+          "path": "BGM12.M",
+          "offset": "0x1c"
+        },
+        {
+          "type": "file",
+          "path": "BGM13.M",
+          "offset": "0x1d"
+        },
+        {
+          "type": "file",
+          "path": "BGM14.M",
+          "offset": "0x1e"
+        },
+        {
+          "type": "shell",
+          "path": "pmd /k",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "pmd_98",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "BGM00.M"
+        },
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "BGM01.M"
+        },
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "BGM02.M"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "BGM03.M"
+        },
+        {
+          "kind": "title",
+          "code": "0x14",
+          "title": "BGM04.M"
+        },
+        {
+          "kind": "title",
+          "code": "0x15",
+          "title": "BGM05.M"
+        },
+        {
+          "kind": "title",
+          "code": "0x16",
+          "title": "BGM06.M"
+        },
+        {
+          "kind": "title",
+          "code": "0x17",
+          "title": "BGM07.M"
+        },
+        {
+          "kind": "title",
+          "code": "0x18",
+          "title": "BGM08.M"
+        },
+        {
+          "kind": "title",
+          "code": "0x19",
+          "title": "BGM09.M"
+        },
+        {
+          "kind": "title",
+          "code": "0x1a",
+          "title": "BGM10.M"
+        },
+        {
+          "kind": "title",
+          "code": "0x1b",
+          "title": "BGM11.M"
+        },
+        {
+          "kind": "title",
+          "code": "0x1c",
+          "title": "BGM12.M"
+        },
+        {
+          "kind": "title",
+          "code": "0x1d",
+          "title": "BGM13.M"
+        },
+        {
+          "kind": "title",
+          "code": "0x1e",
+          "title": "BGM14.M"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/peppermintkids.xml",
+      "source_order": 3665,
+      "archive": "mistyfl_98",
+      "id": "mistyfl-98-opn"
+    }
+  ]
+}

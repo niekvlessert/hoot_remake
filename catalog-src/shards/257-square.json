@@ -1,0 +1,1529 @@
+{
+  "format": "hoot-catalog-shard",
+  "version": 1,
+  "source_file": "xml/square.xml",
+  "date": "2005/09/25",
+  "comments": [
+    " //SQUARE "
+  ],
+  "games": [
+    {
+      "title": "[PC-8801] WILL - THE DEATH TRAP II -",
+      "driver": {
+        "name": "pc88",
+        "type": "opn",
+        "alias": "SQUARE",
+        "platform": "NEC PC-8801"
+      },
+      "options": [
+        {
+          "name": "use_vrtc",
+          "value": "0x01"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "PATCH",
+          "offset": "0x0000"
+        },
+        {
+          "type": "code",
+          "path": "PROG",
+          "offset": "0x0800"
+        },
+        {
+          "type": "code",
+          "path": "MUSIC",
+          "offset": "0xc000"
+        },
+        {
+          "type": "bgm",
+          "path": "DUMMY",
+          "offset": "0x00"
+        },
+        {
+          "type": "bgm",
+          "path": "DUMMY",
+          "offset": "0x01"
+        },
+        {
+          "type": "bgm",
+          "path": "DUMMY",
+          "offset": "0x02"
+        },
+        {
+          "type": "bgm",
+          "path": "DUMMY",
+          "offset": "0x03"
+        },
+        {
+          "type": "bgm",
+          "path": "DUMMY",
+          "offset": "0x04"
+        },
+        {
+          "type": "bgm",
+          "path": "DUMMY",
+          "offset": "0x05"
+        },
+        {
+          "type": "bgm",
+          "path": "DUMMY",
+          "offset": "0x06"
+        },
+        {
+          "type": "bgm",
+          "path": "DUMMY",
+          "offset": "0x07"
+        },
+        {
+          "type": "bgm",
+          "path": "DUMMY",
+          "offset": "0x08"
+        },
+        {
+          "type": "bgm",
+          "path": "DUMMY",
+          "offset": "0x09"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x00",
+          "title": "STOP"
+        },
+        {
+          "kind": "title",
+          "code": "0x09",
+          "title": "MAIN THEME"
+        },
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "EFFECT #1"
+        },
+        {
+          "kind": "title",
+          "code": "0x02",
+          "title": "EFFECT #2"
+        },
+        {
+          "kind": "title",
+          "code": "0x03",
+          "title": "EFFECT #3"
+        },
+        {
+          "kind": "title",
+          "code": "0x04",
+          "title": "EFFECT #4"
+        },
+        {
+          "kind": "title",
+          "code": "0x05",
+          "title": "EFFECT #5"
+        },
+        {
+          "kind": "title",
+          "code": "0x06",
+          "title": "EFFECT #6"
+        },
+        {
+          "kind": "title",
+          "code": "0x07",
+          "title": "EFFECT #7"
+        },
+        {
+          "kind": "title",
+          "code": "0x08",
+          "title": "EFFECT #8"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/square.xml",
+      "source_order": 4237,
+      "archive": "will",
+      "id": "will-opn"
+    },
+    {
+      "title": "[PC-8801] CRUISE CHASER BLASSTY",
+      "driver": {
+        "name": "pc88",
+        "type": "opn",
+        "alias": "SQUARE",
+        "platform": "NEC PC-8801"
+      },
+      "options": [
+        {
+          "name": "mdata_addr",
+          "value": "0xd800"
+        },
+        {
+          "name": "mdata_size",
+          "value": "0x0b00"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "PATCH",
+          "offset": "0x0000"
+        },
+        {
+          "type": "code",
+          "path": "VOICE",
+          "offset": "0xe300"
+        },
+        {
+          "type": "code",
+          "path": "DRIVER",
+          "offset": "0xe700"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS00",
+          "offset": "0x00"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS01",
+          "offset": "0x01"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS02",
+          "offset": "0x02"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS03",
+          "offset": "0x03"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS04",
+          "offset": "0x04"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS05",
+          "offset": "0x05"
+        },
+        {
+          "type": "bgm",
+          "path": "EFFECT",
+          "offset": "0x06"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x00000001",
+          "title": "MUS01 : BLASSTY MAIN THEME"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000003",
+          "title": "MUS03 : ANTHEM"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000004",
+          "title": "MUS04 : SPACE"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000005",
+          "title": "MUS05 : In The Maze"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000000",
+          "title": "MUS00 : ENDING"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000002",
+          "title": "MUS02 : FINALE"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000006",
+          "title": "EFFECT #0"
+        },
+        {
+          "kind": "title",
+          "code": "0x01000006",
+          "title": "EFFECT #1"
+        },
+        {
+          "kind": "title",
+          "code": "0x02000006",
+          "title": "EFFECT #2"
+        },
+        {
+          "kind": "title",
+          "code": "0x03000006",
+          "title": "EFFECT #3"
+        },
+        {
+          "kind": "title",
+          "code": "0x04000006",
+          "title": "EFFECT #4"
+        },
+        {
+          "kind": "title",
+          "code": "0x05000006",
+          "title": "EFFECT #5"
+        },
+        {
+          "kind": "title",
+          "code": "0x06000006",
+          "title": "EFFECT #6"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/square.xml",
+      "source_order": 4238,
+      "archive": "blassty",
+      "id": "blassty-opn"
+    },
+    {
+      "title": "[PC-8801] ALPHA",
+      "driver": {
+        "name": "pc88",
+        "type": "opn",
+        "alias": "SQUARE",
+        "platform": "NEC PC-8801"
+      },
+      "options": [
+        {
+          "name": "mdata_addr",
+          "value": "0xc300"
+        },
+        {
+          "name": "mdata_size",
+          "value": "0x1400"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "PATCH",
+          "offset": "0x0000"
+        },
+        {
+          "type": "code",
+          "path": "PROG",
+          "offset": "0x0800"
+        },
+        {
+          "type": "code",
+          "path": "DRIVER",
+          "offset": "0xdf00"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS00",
+          "offset": "0x00"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS01",
+          "offset": "0x01"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS02",
+          "offset": "0x02"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS03",
+          "offset": "0x03"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS04",
+          "offset": "0x04"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS05",
+          "offset": "0x05"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS06",
+          "offset": "0x06"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS07",
+          "offset": "0x07"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x07",
+          "title": "MUS07 : ALPHA MAIN THEME"
+        },
+        {
+          "kind": "title",
+          "code": "0x00",
+          "title": "MUS00 : EFFECT #0"
+        },
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "MUS01 : EFFECT #1"
+        },
+        {
+          "kind": "title",
+          "code": "0x02",
+          "title": "MUS02 : EFFECT #2"
+        },
+        {
+          "kind": "title",
+          "code": "0x03",
+          "title": "MUS03 : EFFECT #3"
+        },
+        {
+          "kind": "title",
+          "code": "0x04",
+          "title": "MUS04 : EFFECT #4"
+        },
+        {
+          "kind": "title",
+          "code": "0x05",
+          "title": "MUS05 : EFFECT #5"
+        },
+        {
+          "kind": "title",
+          "code": "0x06",
+          "title": "MUS06 : EFFECT #6"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/square.xml",
+      "source_order": 4239,
+      "archive": "alpha",
+      "id": "alpha-opn"
+    },
+    {
+      "title": "[PC-8801] GENESIS",
+      "driver": {
+        "name": "pc88",
+        "type": "opn",
+        "alias": "SQUARE",
+        "platform": "NEC PC-8801"
+      },
+      "options": [],
+      "assets": [
+        {
+          "type": "code",
+          "path": "PATCH",
+          "offset": "0x0000"
+        },
+        {
+          "type": "code",
+          "path": "DRIVER",
+          "offset": "0xb200"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "オープニング"
+        },
+        {
+          "kind": "title",
+          "code": "0x02",
+          "title": "フィールド"
+        },
+        {
+          "kind": "title",
+          "code": "0x05",
+          "title": "バトルシーン"
+        },
+        {
+          "kind": "title",
+          "code": "0x03",
+          "title": "町"
+        },
+        {
+          "kind": "title",
+          "code": "0x06",
+          "title": "教会"
+        },
+        {
+          "kind": "title",
+          "code": "0x04",
+          "title": "危険地帯"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/square.xml",
+      "source_order": 4240,
+      "archive": "genesis88",
+      "id": "genesis88-opn"
+    },
+    {
+      "title": "[PC-8801] KING' KNIGHT Special",
+      "driver": {
+        "name": "pc88",
+        "type": "opn",
+        "alias": "SQUARE",
+        "platform": "NEC PC-8801"
+      },
+      "options": [
+        {
+          "name": "mdata_addr",
+          "value": "0x0100"
+        },
+        {
+          "name": "mdata_size",
+          "value": "0x7000"
+        },
+        {
+          "name": "mfile_size",
+          "value": "0x7000"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "PATCH",
+          "offset": "0x0000"
+        },
+        {
+          "type": "code",
+          "path": "KMAIN.COM",
+          "offset": "0x0100"
+        },
+        {
+          "type": "bgm",
+          "path": "KMAIN.COM",
+          "offset": "0x00"
+        },
+        {
+          "type": "bgm",
+          "path": "CMAIN.COM",
+          "offset": "0x01"
+        },
+        {
+          "type": "bgm",
+          "path": "DMAIN.COM",
+          "offset": "0x02"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x05000000",
+          "title": "KMAIN.COM : 05 : キャラセレクト"
+        },
+        {
+          "kind": "comment",
+          "text": "\t<title code=\"0x05000002\">DMAIN.COM : 05 : キャラセレクト</title> "
+        },
+        {
+          "kind": "title",
+          "code": "0x01000000",
+          "title": "KMAIN.COM : 01 : ゲームスタート"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000000",
+          "title": "KMAIN.COM : 00 : KING'S KNIGHT"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000002",
+          "title": "DMAIN.COM : 00 : リーン城"
+        },
+        {
+          "kind": "title",
+          "code": "0x01000002",
+          "title": "DMAIN.COM : 01 : シルナスの街"
+        },
+        {
+          "kind": "title",
+          "code": "0x02000002",
+          "title": "DMAIN.COM : 02 : ボルタクスの森"
+        },
+        {
+          "kind": "title",
+          "code": "0x03000002",
+          "title": "DMAIN.COM : 03 : ジブジの幽霊船"
+        },
+        {
+          "kind": "title",
+          "code": "0x02000000",
+          "title": "KMAIN.COM : 02 : フィールドクリア"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000001",
+          "title": "CMAIN.COM : 00 : イザンデ城"
+        },
+        {
+          "kind": "title",
+          "code": "0x01000001",
+          "title": "CMAIN.COM : 01 : ドラゴン登場"
+        },
+        {
+          "kind": "title",
+          "code": "0x03000000",
+          "title": "KMAIN.COM : 03 : HELP THE PRINCESS"
+        },
+        {
+          "kind": "comment",
+          "text": "\t<title code=\"0x06000002\">DMAIN.COM : 06 : HELP THE PRINCESS</title> "
+        },
+        {
+          "kind": "title",
+          "code": "0x03000001",
+          "title": "CMAIN.COM : 03 : LIGHT OF CELEBRATION"
+        },
+        {
+          "kind": "title",
+          "code": "0x04000000",
+          "title": "KMAIN.COM : 04 : ゲームオーバー"
+        },
+        {
+          "kind": "comment",
+          "text": "\t<title code=\"0x04000001\">CMAIN.COM : 04 : ゲームオーバー</title>\n\t\t\t<title code=\"0x04000002\">DMAIN.COM : 04 : ゲームオーバー</title> "
+        },
+        {
+          "kind": "title",
+          "code": "0x02000001",
+          "title": "CMAIN.COM : 02 : BGM1"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/square.xml",
+      "source_order": 4241,
+      "archive": "kgknight",
+      "id": "kgknight-opn"
+    },
+    {
+      "title": "[X1] THEXDER",
+      "driver": {
+        "name": "x1",
+        "type": "psg",
+        "alias": "SQUARE",
+        "platform": "SHARP X1"
+      },
+      "options": [
+        {
+          "name": "mdata_addr",
+          "value": "0x0100"
+        },
+        {
+          "name": "mdata_size",
+          "value": "0xbb00"
+        },
+        {
+          "name": "mfile_size",
+          "value": "0xbb00"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "PATCH",
+          "offset": "0x0000"
+        },
+        {
+          "type": "code",
+          "path": "DEMO",
+          "offset": "0x0100"
+        },
+        {
+          "type": "bgm",
+          "path": "DEMO",
+          "offset": "0x00"
+        },
+        {
+          "type": "bgm",
+          "path": "ENDING",
+          "offset": "0x01"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x80000000",
+          "title": "THEXDER / H.GODAI"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000001",
+          "title": "MOON LIGHT SONATA / BEETHOVEN"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/square.xml",
+      "source_order": 4242,
+      "archive": "x1thexder",
+      "id": "x1thexder-psg"
+    },
+    {
+      "title": "[X1] CRUISE CHASER BLASSTY",
+      "driver": {
+        "name": "x1",
+        "type": "psg",
+        "alias": "SQUARE",
+        "platform": "SHARP X1"
+      },
+      "options": [],
+      "assets": [
+        {
+          "type": "code",
+          "path": "PATCH",
+          "offset": "0x0000"
+        },
+        {
+          "type": "code",
+          "path": "PROG",
+          "offset": "0xd000"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "BLASSTY MAIN THEME"
+        },
+        {
+          "kind": "title",
+          "code": "0x02",
+          "title": "ANTHEM"
+        },
+        {
+          "kind": "title",
+          "code": "0x03",
+          "title": "SPACE"
+        },
+        {
+          "kind": "title",
+          "code": "0x04",
+          "title": "In The Maze"
+        },
+        {
+          "kind": "title",
+          "code": "0x00",
+          "title": "ENDING"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/square.xml",
+      "source_order": 4243,
+      "archive": "x1blassty",
+      "id": "x1blassty-psg"
+    },
+    {
+      "title": "[X1] WILL - THE DEATH TRAP II -",
+      "driver": {
+        "name": "x1",
+        "type": "psg",
+        "alias": "SQUARE",
+        "platform": "SHARP X1"
+      },
+      "options": [],
+      "assets": [
+        {
+          "type": "code",
+          "path": "PATCH",
+          "offset": "0x0000"
+        },
+        {
+          "type": "code",
+          "path": "PROG",
+          "offset": "0x0100"
+        },
+        {
+          "type": "code",
+          "path": "MUSIC",
+          "offset": "0xc000"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x00",
+          "title": "MAIN THEME"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/square.xml",
+      "source_order": 4244,
+      "archive": "x1will",
+      "id": "x1will-psg"
+    },
+    {
+      "title": "[X1] ALPHA",
+      "driver": {
+        "name": "x1",
+        "type": "psg",
+        "alias": "SQUARE",
+        "platform": "SHARP X1"
+      },
+      "options": [],
+      "assets": [
+        {
+          "type": "code",
+          "path": "PATCH",
+          "offset": "0x0000"
+        },
+        {
+          "type": "code",
+          "path": "PROG",
+          "offset": "0x0100"
+        },
+        {
+          "type": "code",
+          "path": "MUSIC",
+          "offset": "0xb000"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x00",
+          "title": "ALPHA MAIN THEME"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/square.xml",
+      "source_order": 4245,
+      "archive": "x1alpha",
+      "id": "x1alpha-psg"
+    },
+    {
+      "title": "[X1] KING' KNIGHT Special(OPM)",
+      "driver": {
+        "name": "x1",
+        "type": "opm",
+        "alias": "SQUARE",
+        "platform": "SHARP X1"
+      },
+      "options": [
+        {
+          "name": "mdata_addr",
+          "value": "0x0100"
+        },
+        {
+          "name": "mdata_size",
+          "value": "0x0a00"
+        },
+        {
+          "name": "init_pc",
+          "value": "0xf000"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "PROG",
+          "offset": "0x0b00"
+        },
+        {
+          "type": "code",
+          "path": "LOGO",
+          "offset": "0x6000"
+        },
+        {
+          "type": "code",
+          "path": "PATCH",
+          "offset": "0xf000"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS00",
+          "offset": "0x01"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS01",
+          "offset": "0x02"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS02",
+          "offset": "0x03"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS03",
+          "offset": "0x04"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS04",
+          "offset": "0x05"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS05",
+          "offset": "0x06"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS06",
+          "offset": "0x07"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS07",
+          "offset": "0x08"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS08",
+          "offset": "0x09"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x00000000",
+          "title": "LOGO     : スクエアロゴ"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000001",
+          "title": "MUS00-00 : フィールドスタート"
+        },
+        {
+          "kind": "title",
+          "code": "0x01000001",
+          "title": "MUS00-01 : フィールド"
+        },
+        {
+          "kind": "title",
+          "code": "0x02000001",
+          "title": "MUS00-02 : ゲームオーバー"
+        },
+        {
+          "kind": "title",
+          "code": "0x03000001",
+          "title": "MUS00-03 : フィールドクリア"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000002",
+          "title": "MUS01-00 : キャラクターセレクト"
+        },
+        {
+          "kind": "title",
+          "code": "0x01000002",
+          "title": "MUS01-01 : ゲームオーバー"
+        },
+        {
+          "kind": "title",
+          "code": "0x02000002",
+          "title": "MUS01-02 : フィールドクリア"
+        },
+        {
+          "kind": "title",
+          "code": "0x03000002",
+          "title": "MUS01-03 : バッドエンド"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000003",
+          "title": "MUS02-00 : イザンデ城スタート"
+        },
+        {
+          "kind": "title",
+          "code": "0x01000003",
+          "title": "MUS02-01 : イザンデ城1"
+        },
+        {
+          "kind": "title",
+          "code": "0x02000003",
+          "title": "MUS02-02 : イザンデ城2"
+        },
+        {
+          "kind": "title",
+          "code": "0x03000003",
+          "title": "MUS02-03 : ボス登場"
+        },
+        {
+          "kind": "title",
+          "code": "0x04000003",
+          "title": "MUS02-04 : エンディング"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000004",
+          "title": "MUS03-00 : リーン城"
+        },
+        {
+          "kind": "title",
+          "code": "0x01000004",
+          "title": "MUS03-01 : カーンの洞窟"
+        },
+        {
+          "kind": "title",
+          "code": "0x02000004",
+          "title": "MUS03-02 : ベスの塔"
+        },
+        {
+          "kind": "title",
+          "code": "0x03000004",
+          "title": "MUS03-03 : シルナスの街"
+        },
+        {
+          "kind": "title",
+          "code": "0x04000004",
+          "title": "MUS03-04 : ヴァルの迷路"
+        },
+        {
+          "kind": "title",
+          "code": "0x05000004",
+          "title": "MUS03-05 : タイロンの神殿"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000005",
+          "title": "MUS04-00 : ボルタクスの森"
+        },
+        {
+          "kind": "title",
+          "code": "0x01000005",
+          "title": "MUS04-01 : ザックの谷"
+        },
+        {
+          "kind": "title",
+          "code": "0x02000005",
+          "title": "MUS04-02 : グールの湖"
+        },
+        {
+          "kind": "title",
+          "code": "0x03000005",
+          "title": "MUS04-03 : ジブジの幽霊船"
+        },
+        {
+          "kind": "title",
+          "code": "0x04000005",
+          "title": "MUS04-04 : エール島"
+        },
+        {
+          "kind": "title",
+          "code": "0x05000005",
+          "title": "MUS04-05 : ベルフォルンの巣"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000006",
+          "title": "MUS05-00 : リーン城"
+        },
+        {
+          "kind": "title",
+          "code": "0x01000006",
+          "title": "MUS05-01 : カーンの洞窟"
+        },
+        {
+          "kind": "title",
+          "code": "0x02000006",
+          "title": "MUS05-02 : ベスの塔"
+        },
+        {
+          "kind": "title",
+          "code": "0x03000006",
+          "title": "MUS05-03 : ゲームオーバー"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000007",
+          "title": "MUS06-00 : シルナスの街"
+        },
+        {
+          "kind": "title",
+          "code": "0x01000007",
+          "title": "MUS06-01 : ヴァルの迷路"
+        },
+        {
+          "kind": "title",
+          "code": "0x02000007",
+          "title": "MUS06-02 : タイロンの神殿"
+        },
+        {
+          "kind": "title",
+          "code": "0x03000007",
+          "title": "MUS06-03 : ゲームオーバー"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000008",
+          "title": "MUS07-00 : ボルタクスの森"
+        },
+        {
+          "kind": "title",
+          "code": "0x01000008",
+          "title": "MUS07-01 : ザックの谷"
+        },
+        {
+          "kind": "title",
+          "code": "0x02000008",
+          "title": "MUS07-02 : グールの湖"
+        },
+        {
+          "kind": "title",
+          "code": "0x03000008",
+          "title": "MUS07-03 : ゲームオーバー"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000009",
+          "title": "MUS08-00 : ジブジの幽霊船"
+        },
+        {
+          "kind": "title",
+          "code": "0x01000009",
+          "title": "MUS08-01 : エール島"
+        },
+        {
+          "kind": "title",
+          "code": "0x02000009",
+          "title": "MUS08-02 : ベルフォルンの巣"
+        },
+        {
+          "kind": "title",
+          "code": "0x03000009",
+          "title": "MUS08-03 : ゲームオーバー"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/square.xml",
+      "source_order": 4246,
+      "archive": "x1kingknight",
+      "id": "x1kingknight-opm"
+    },
+    {
+      "title": "[X1] KING' KNIGHT Special(PSG)",
+      "driver": {
+        "name": "x1",
+        "type": "psg",
+        "alias": "SQUARE",
+        "platform": "SHARP X1"
+      },
+      "options": [
+        {
+          "name": "mdata_addr",
+          "value": "0x0100"
+        },
+        {
+          "name": "mdata_size",
+          "value": "0x0a00"
+        },
+        {
+          "name": "init_pc",
+          "value": "0xf000"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "PROG",
+          "offset": "0x0b00"
+        },
+        {
+          "type": "code",
+          "path": "LOGO",
+          "offset": "0x6000"
+        },
+        {
+          "type": "code",
+          "path": "PATCH",
+          "offset": "0xf000"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS00",
+          "offset": "0x01"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS01",
+          "offset": "0x02"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS02",
+          "offset": "0x03"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS03",
+          "offset": "0x04"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS04",
+          "offset": "0x05"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS05",
+          "offset": "0x06"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS06",
+          "offset": "0x07"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS07",
+          "offset": "0x08"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS08",
+          "offset": "0x09"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x00000000",
+          "title": "LOGO     : スクエアロゴ"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000001",
+          "title": "MUS00-00 : フィールドスタート"
+        },
+        {
+          "kind": "title",
+          "code": "0x01000001",
+          "title": "MUS00-01 : フィールド"
+        },
+        {
+          "kind": "title",
+          "code": "0x02000001",
+          "title": "MUS00-02 : ゲームオーバー"
+        },
+        {
+          "kind": "title",
+          "code": "0x03000001",
+          "title": "MUS00-03 : フィールドクリア"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000002",
+          "title": "MUS01-00 : キャラクターセレクト"
+        },
+        {
+          "kind": "title",
+          "code": "0x01000002",
+          "title": "MUS01-01 : ゲームオーバー"
+        },
+        {
+          "kind": "title",
+          "code": "0x02000002",
+          "title": "MUS01-02 : フィールドクリア"
+        },
+        {
+          "kind": "title",
+          "code": "0x03000002",
+          "title": "MUS01-03 : バッドエンド"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000003",
+          "title": "MUS02-00 : イザンデ城スタート"
+        },
+        {
+          "kind": "title",
+          "code": "0x01000003",
+          "title": "MUS02-01 : イザンデ城1"
+        },
+        {
+          "kind": "title",
+          "code": "0x02000003",
+          "title": "MUS02-02 : イザンデ城2"
+        },
+        {
+          "kind": "title",
+          "code": "0x03000003",
+          "title": "MUS02-03 : ボス登場"
+        },
+        {
+          "kind": "title",
+          "code": "0x04000003",
+          "title": "MUS02-04 : エンディング"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000004",
+          "title": "MUS03-00 : リーン城"
+        },
+        {
+          "kind": "title",
+          "code": "0x01000004",
+          "title": "MUS03-01 : カーンの洞窟"
+        },
+        {
+          "kind": "title",
+          "code": "0x02000004",
+          "title": "MUS03-02 : ベスの塔"
+        },
+        {
+          "kind": "title",
+          "code": "0x03000004",
+          "title": "MUS03-03 : シルナスの街"
+        },
+        {
+          "kind": "title",
+          "code": "0x04000004",
+          "title": "MUS03-04 : ヴァルの迷路"
+        },
+        {
+          "kind": "title",
+          "code": "0x05000004",
+          "title": "MUS03-05 : タイロンの神殿"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000005",
+          "title": "MUS04-00 : ボルタクスの森"
+        },
+        {
+          "kind": "title",
+          "code": "0x01000005",
+          "title": "MUS04-01 : ザックの谷"
+        },
+        {
+          "kind": "title",
+          "code": "0x02000005",
+          "title": "MUS04-02 : グールの湖"
+        },
+        {
+          "kind": "title",
+          "code": "0x03000005",
+          "title": "MUS04-03 : ジブジの幽霊船"
+        },
+        {
+          "kind": "title",
+          "code": "0x04000005",
+          "title": "MUS04-04 : エール島"
+        },
+        {
+          "kind": "title",
+          "code": "0x05000005",
+          "title": "MUS04-05 : ベルフォルンの巣"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000006",
+          "title": "MUS05-00 : リーン城"
+        },
+        {
+          "kind": "title",
+          "code": "0x01000006",
+          "title": "MUS05-01 : カーンの洞窟"
+        },
+        {
+          "kind": "title",
+          "code": "0x02000006",
+          "title": "MUS05-02 : ベスの塔"
+        },
+        {
+          "kind": "title",
+          "code": "0x03000006",
+          "title": "MUS05-03 : ゲームオーバー"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000007",
+          "title": "MUS06-00 : シルナスの街"
+        },
+        {
+          "kind": "title",
+          "code": "0x01000007",
+          "title": "MUS06-01 : ヴァルの迷路"
+        },
+        {
+          "kind": "title",
+          "code": "0x02000007",
+          "title": "MUS06-02 : タイロンの神殿"
+        },
+        {
+          "kind": "title",
+          "code": "0x03000007",
+          "title": "MUS06-03 : ゲームオーバー"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000008",
+          "title": "MUS07-00 : ボルタクスの森"
+        },
+        {
+          "kind": "title",
+          "code": "0x01000008",
+          "title": "MUS07-01 : ザックの谷"
+        },
+        {
+          "kind": "title",
+          "code": "0x02000008",
+          "title": "MUS07-02 : グールの湖"
+        },
+        {
+          "kind": "title",
+          "code": "0x03000008",
+          "title": "MUS07-03 : ゲームオーバー"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000009",
+          "title": "MUS08-00 : ジブジの幽霊船"
+        },
+        {
+          "kind": "title",
+          "code": "0x01000009",
+          "title": "MUS08-01 : エール島"
+        },
+        {
+          "kind": "title",
+          "code": "0x02000009",
+          "title": "MUS08-02 : ベルフォルンの巣"
+        },
+        {
+          "kind": "title",
+          "code": "0x03000009",
+          "title": "MUS08-03 : ゲームオーバー"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/square.xml",
+      "source_order": 4247,
+      "archive": "x1kingknight",
+      "id": "x1kingknight-psg"
+    },
+    {
+      "title": "[FM-7] ALPHA(PSG)",
+      "driver": {
+        "name": "fm7",
+        "type": "generic",
+        "alias": "SQUARE",
+        "platform": "FUJITSU FM-7"
+      },
+      "options": [
+        {
+          "name": "init_pc",
+          "value": "0x0000"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "PATCH.BIN",
+          "offset": "0x0000"
+        },
+        {
+          "type": "code",
+          "path": "DRIVER.BIN",
+          "offset": "0x2000"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x0000",
+          "title": "ALPHA MAIN THEME"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/square.xml",
+      "source_order": 4248,
+      "archive": "alpha_fm7",
+      "id": "alpha-fm7-generic"
+    },
+    {
+      "title": "[FM-7] ALPHA(OPN)",
+      "driver": {
+        "name": "fm77av",
+        "type": "generic",
+        "alias": "SQUARE",
+        "platform": "FUJITSU FM-7"
+      },
+      "options": [
+        {
+          "name": "init_pc",
+          "value": "0x0000"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "PATCH.BIN",
+          "offset": "0x0000"
+        },
+        {
+          "type": "code",
+          "path": "DRIVER.BIN",
+          "offset": "0x2000"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x0000",
+          "title": "ALPHA MAIN THEME"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/square.xml",
+      "source_order": 4249,
+      "archive": "alpha_fm7",
+      "id": "alpha-fm7-generic-2"
+    },
+    {
+      "title": "[FM-7] WILL - THE DEATH TRAP II -",
+      "driver": {
+        "name": "fm7",
+        "type": "generic",
+        "alias": "SQUARE",
+        "platform": "FUJITSU FM-7"
+      },
+      "options": [
+        {
+          "name": "init_pc",
+          "value": "0x0000"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "PATCH.BIN",
+          "offset": "0x0000"
+        },
+        {
+          "type": "code",
+          "path": "DRIVER.BIN",
+          "offset": "0x6600"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x0000",
+          "title": "MAIN THEME"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/square.xml",
+      "source_order": 4250,
+      "archive": "will_fm7",
+      "id": "will-fm7-generic"
+    }
+  ]
+}

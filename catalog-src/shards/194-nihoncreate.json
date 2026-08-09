@@ -1,0 +1,6115 @@
+{
+  "format": "hoot-catalog-shard",
+  "version": 1,
+  "source_file": "xml/nihoncreate.xml",
+  "date": "2005/09/25",
+  "comments": [
+    " //日本クリエイト "
+  ],
+  "games": [
+    {
+      "title": "[PC-8801] 野球道 - THE WAY TO GLORIA -(OPN)",
+      "driver": {
+        "name": "pc88",
+        "type": "opn",
+        "alias": "日本クリエイト",
+        "platform": "NEC PC-8801"
+      },
+      "options": [
+        {
+          "name": "init_pc",
+          "value": "0xf000"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "DRIVER",
+          "offset": "0x1100"
+        },
+        {
+          "type": "code",
+          "path": "PATCH",
+          "offset": "0xf000"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS211",
+          "offset": "0x00"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS100",
+          "offset": "0x01"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS101",
+          "offset": "0x02"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS102",
+          "offset": "0x03"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS103",
+          "offset": "0x04"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS104",
+          "offset": "0x05"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS105",
+          "offset": "0x06"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS200",
+          "offset": "0x07"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS201",
+          "offset": "0x08"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS202",
+          "offset": "0x09"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS203",
+          "offset": "0x0a"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS204",
+          "offset": "0x0b"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS205",
+          "offset": "0x0c"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS206",
+          "offset": "0x0d"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS207",
+          "offset": "0x0e"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS208",
+          "offset": "0x0f"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS209",
+          "offset": "0x10"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS210",
+          "offset": "0x11"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS300",
+          "offset": "0x12"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS400",
+          "offset": "0x13"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS401",
+          "offset": "0x14"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x00004101",
+          "title": "MUS100 : オープニングSE(1)"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000001",
+          "title": "MUS100 : オープニングSE(2)"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000002",
+          "title": "MUS101 : オープニング"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000007",
+          "title": "MUS200 : メニュー(PSGなし)"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000008",
+          "title": "MUS201 : 今日の予定"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000009",
+          "title": "MUS202 : メニュー"
+        },
+        {
+          "kind": "title",
+          "code": "0x0000000a",
+          "title": "MUS203 : プロ野球ニュース"
+        },
+        {
+          "kind": "title",
+          "code": "0x0000000b",
+          "title": "MUS204 : チーム成績"
+        },
+        {
+          "kind": "title",
+          "code": "0x0000000c",
+          "title": "MUS205 : 個人成績"
+        },
+        {
+          "kind": "title",
+          "code": "0x0000000d",
+          "title": "MUS206 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x0000000e",
+          "title": "MUS207 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x0000000f",
+          "title": "MUS208 : チーム情報"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000010",
+          "title": "MUS209 : キャンプ"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000011",
+          "title": "MUS210 : ドラフト会議"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000012",
+          "title": "MUS300 : メイキング"
+        },
+        {
+          "kind": "comment",
+          "text": "\t<title code=\"0x00000013\">MUS400 : メニュー(PSGなし)</title> "
+        },
+        {
+          "kind": "comment",
+          "text": "\t<title code=\"0x00000014\">MUS401 : メニュー(PSGなし)</title> "
+        },
+        {
+          "kind": "title",
+          "code": "0x00000003",
+          "title": "MUS102 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000004",
+          "title": "MUS103 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000005",
+          "title": "MUS104 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000006",
+          "title": "MUS105 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x01000000",
+          "title": "MUS211 : イニング表"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000000",
+          "title": "MUS211 : イニング裏"
+        },
+        {
+          "kind": "title",
+          "code": "0x02000000",
+          "title": "MUS211 : ホームラン"
+        },
+        {
+          "kind": "title",
+          "code": "0x03000000",
+          "title": "MUS211 : 打球音"
+        },
+        {
+          "kind": "title",
+          "code": "0x04000000",
+          "title": "MUS211 : ストライク"
+        },
+        {
+          "kind": "title",
+          "code": "0x05000000",
+          "title": "MUS211 : ボール"
+        },
+        {
+          "kind": "title",
+          "code": "0x06000000",
+          "title": "MUS211 : アウト"
+        },
+        {
+          "kind": "title",
+          "code": "0x07000000",
+          "title": "MUS211 : 三振"
+        },
+        {
+          "kind": "title",
+          "code": "0x08000000",
+          "title": "MUS211 : デッドボール"
+        },
+        {
+          "kind": "title",
+          "code": "0x09000000",
+          "title": "MUS211 : ファール"
+        },
+        {
+          "kind": "title",
+          "code": "0x0a000000",
+          "title": "MUS211 : タイム"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/nihoncreate.xml",
+      "source_order": 3465,
+      "archive": "yakyudou",
+      "id": "yakyudou-opn"
+    },
+    {
+      "title": "[PC-8801] 野球道 - THE WAY TO GLORIA -(OPNA)",
+      "driver": {
+        "name": "pc88",
+        "type": "opna",
+        "alias": "日本クリエイト",
+        "platform": "NEC PC-8801"
+      },
+      "options": [
+        {
+          "name": "init_pc",
+          "value": "0xf000"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "DRIVER",
+          "offset": "0x1100"
+        },
+        {
+          "type": "code",
+          "path": "PATCH",
+          "offset": "0xf000"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS211",
+          "offset": "0x00"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS100",
+          "offset": "0x01"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS101",
+          "offset": "0x02"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS102",
+          "offset": "0x03"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS103",
+          "offset": "0x04"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS104",
+          "offset": "0x05"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS105",
+          "offset": "0x06"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS200",
+          "offset": "0x07"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS201",
+          "offset": "0x08"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS202",
+          "offset": "0x09"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS203",
+          "offset": "0x0a"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS204",
+          "offset": "0x0b"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS205",
+          "offset": "0x0c"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS206",
+          "offset": "0x0d"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS207",
+          "offset": "0x0e"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS208",
+          "offset": "0x0f"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS209",
+          "offset": "0x10"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS210",
+          "offset": "0x11"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS300",
+          "offset": "0x12"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS400",
+          "offset": "0x13"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS401",
+          "offset": "0x14"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x00004101",
+          "title": "MUS100 : オープニングSE(1)"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000001",
+          "title": "MUS100 : オープニングSE(2)"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000002",
+          "title": "MUS101 : オープニング"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000007",
+          "title": "MUS200 : メニュー(PSGなし)"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000008",
+          "title": "MUS201 : 今日の予定"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000009",
+          "title": "MUS202 : メニュー"
+        },
+        {
+          "kind": "title",
+          "code": "0x0000000a",
+          "title": "MUS203 : プロ野球ニュース"
+        },
+        {
+          "kind": "title",
+          "code": "0x0000000b",
+          "title": "MUS204 : チーム成績"
+        },
+        {
+          "kind": "title",
+          "code": "0x0000000c",
+          "title": "MUS205 : 個人成績"
+        },
+        {
+          "kind": "title",
+          "code": "0x0000000d",
+          "title": "MUS206 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x0000000e",
+          "title": "MUS207 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x0000000f",
+          "title": "MUS208 : チーム情報"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000010",
+          "title": "MUS209 : キャンプ"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000011",
+          "title": "MUS210 : ドラフト会議"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000012",
+          "title": "MUS300 : メイキング"
+        },
+        {
+          "kind": "comment",
+          "text": "\t<title code=\"0x00000013\">MUS400 : メニュー(PSGなし)</title> "
+        },
+        {
+          "kind": "comment",
+          "text": "\t<title code=\"0x00000014\">MUS401 : メニュー(PSGなし)</title> "
+        },
+        {
+          "kind": "title",
+          "code": "0x00000003",
+          "title": "MUS102 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000004",
+          "title": "MUS103 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000005",
+          "title": "MUS104 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000006",
+          "title": "MUS105 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x01000000",
+          "title": "MUS211 : イニング表"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000000",
+          "title": "MUS211 : イニング裏"
+        },
+        {
+          "kind": "title",
+          "code": "0x02000000",
+          "title": "MUS211 : ホームラン"
+        },
+        {
+          "kind": "title",
+          "code": "0x03000000",
+          "title": "MUS211 : 打球音"
+        },
+        {
+          "kind": "title",
+          "code": "0x04000000",
+          "title": "MUS211 : ストライク"
+        },
+        {
+          "kind": "title",
+          "code": "0x05000000",
+          "title": "MUS211 : ボール"
+        },
+        {
+          "kind": "title",
+          "code": "0x06000000",
+          "title": "MUS211 : アウト"
+        },
+        {
+          "kind": "title",
+          "code": "0x07000000",
+          "title": "MUS211 : 三振"
+        },
+        {
+          "kind": "title",
+          "code": "0x08000000",
+          "title": "MUS211 : デッドボール"
+        },
+        {
+          "kind": "title",
+          "code": "0x09000000",
+          "title": "MUS211 : ファール"
+        },
+        {
+          "kind": "title",
+          "code": "0x0a000000",
+          "title": "MUS211 : タイム"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/nihoncreate.xml",
+      "source_order": 3466,
+      "archive": "yakyudou",
+      "id": "yakyudou-opna"
+    },
+    {
+      "title": "[PC-8801] 野球道II(OPNA)",
+      "driver": {
+        "name": "pc88",
+        "type": "opna",
+        "alias": "日本クリエイト",
+        "platform": "NEC PC-8801"
+      },
+      "options": [
+        {
+          "name": "init_pc",
+          "value": "0xf000"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "DRIVER",
+          "offset": "0x0100"
+        },
+        {
+          "type": "code",
+          "path": "EFFECT",
+          "offset": "0x0d00"
+        },
+        {
+          "type": "code",
+          "path": "NEWS",
+          "offset": "0x9000"
+        },
+        {
+          "type": "code",
+          "path": "PATCH",
+          "offset": "0xf000"
+        },
+        {
+          "type": "adpcm",
+          "path": "ADPCM",
+          "offset": "0x00000"
+        },
+        {
+          "type": "adpcm",
+          "path": "ADPCM2",
+          "offset": "0x14000"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS100",
+          "offset": "0x00"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS101",
+          "offset": "0x01"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS102",
+          "offset": "0x02"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS103",
+          "offset": "0x03"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS104",
+          "offset": "0x04"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS105",
+          "offset": "0x05"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS106",
+          "offset": "0x06"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS107",
+          "offset": "0x07"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS108",
+          "offset": "0x08"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS109",
+          "offset": "0x09"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS110",
+          "offset": "0x0a"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS111",
+          "offset": "0x0b"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS112",
+          "offset": "0x0c"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS113",
+          "offset": "0x0d"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS200",
+          "offset": "0x0e"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS201",
+          "offset": "0x0f"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS202",
+          "offset": "0x10"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS203",
+          "offset": "0x11"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS204",
+          "offset": "0x12"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS205",
+          "offset": "0x13"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS206",
+          "offset": "0x14"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS207",
+          "offset": "0x15"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS208",
+          "offset": "0x16"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS300",
+          "offset": "0x17"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS301",
+          "offset": "0x18"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS302",
+          "offset": "0x19"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS303",
+          "offset": "0x1a"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS304",
+          "offset": "0x1b"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS305",
+          "offset": "0x1c"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS306",
+          "offset": "0x1d"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS307",
+          "offset": "0x1e"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS308",
+          "offset": "0x1f"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS400",
+          "offset": "0x20"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS401",
+          "offset": "0x21"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x00000000",
+          "title": "MUS100 : オープニング"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000001",
+          "title": "MUS101 : キャンプ(アリゾナ)"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000002",
+          "title": "MUS102 : キャンプ(グアム)"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000003",
+          "title": "MUS103 : キャンプ(沖縄)"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000004",
+          "title": "MUS104 : キャンプ(高知)"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000005",
+          "title": "MUS105 : キャンプ(宮崎)"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000006",
+          "title": "MUS106 : プロ野球ニュース"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000007",
+          "title": "MUS107 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000008",
+          "title": "MUS108 : メイキング"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000009",
+          "title": "MUS109 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x0000000a",
+          "title": "MUS110 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x0000000b",
+          "title": "MUS111 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x0000000c",
+          "title": "MUS112 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x0000000d",
+          "title": "MUS113 : 戦略中"
+        },
+        {
+          "kind": "title",
+          "code": "0x0000000e",
+          "title": "MUS200 : キャンプ(グアム)(未使用)"
+        },
+        {
+          "kind": "title",
+          "code": "0x0000000f",
+          "title": "MUS201 : キャンプ地選択"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000010",
+          "title": "MUS202 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000011",
+          "title": "MUS203 : 戦略中"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000012",
+          "title": "MUS204 : プロ野球ニュース"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000013",
+          "title": "MUS205 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000014",
+          "title": "MUS206 : ホームラン"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000015",
+          "title": "MUS207 : イニング裏"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000016",
+          "title": "MUS208 : イニング表"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000017",
+          "title": "MUS300 : キャンプ(グアム)(未使用)"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000018",
+          "title": "MUS301 : キャンプ(高知)"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000019",
+          "title": "MUS302 : キャンプ(宮崎)"
+        },
+        {
+          "kind": "title",
+          "code": "0x0000001a",
+          "title": "MUS303 : キャンプ(沖縄)"
+        },
+        {
+          "kind": "title",
+          "code": "0x0000001b",
+          "title": "MUS304 : キャンプ(グアム)"
+        },
+        {
+          "kind": "title",
+          "code": "0x0000001c",
+          "title": "MUS305 : キャンプ(アリゾナ)"
+        },
+        {
+          "kind": "title",
+          "code": "0x0000001d",
+          "title": "MUS306 : キャンプ(ハワイ)"
+        },
+        {
+          "kind": "title",
+          "code": "0x0000001e",
+          "title": "MUS307 : キャンプ地選択"
+        },
+        {
+          "kind": "title",
+          "code": "0x0000001f",
+          "title": "MUS308 : 戦略中"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000020",
+          "title": "MUS400 : メイキング"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000021",
+          "title": "MUS401 : キャンプ(グアム)(未使用)"
+        },
+        {
+          "kind": "title",
+          "code": "0x0000007d",
+          "title": "EFCP00 : ヒット"
+        },
+        {
+          "kind": "title",
+          "code": "0x0100007d",
+          "title": "EFCP01 : バント"
+        },
+        {
+          "kind": "comment",
+          "text": "\t<title code=\"0x0000007e\">EFCS00 : ヒット</title> "
+        },
+        {
+          "kind": "title",
+          "code": "0x0100007e",
+          "title": "EFCS01 : タイム"
+        },
+        {
+          "kind": "title",
+          "code": "0x0200007e",
+          "title": "EFCS02 : 交代"
+        },
+        {
+          "kind": "comment",
+          "text": "\t<title code=\"0x0300007e\">EFCS03 : バント</title> "
+        },
+        {
+          "kind": "title",
+          "code": "0x0000007f",
+          "title": "PCM000 : 「こんばんは、プロ野球ニュースの時間です」"
+        },
+        {
+          "kind": "title",
+          "code": "0x0100007f",
+          "title": "PCM001 : 「それでは、今日の試合の結果をお伝えします」"
+        },
+        {
+          "kind": "title",
+          "code": "0x0200007f",
+          "title": "PCM002 : 「明日もこの時間にお会いしましょう さようなら」"
+        },
+        {
+          "kind": "title",
+          "code": "0x0300007f",
+          "title": "PCM003 : 「今日は試合がありませんでした」"
+        },
+        {
+          "kind": "title",
+          "code": "0x0400007f",
+          "title": "PCM004 : 「明日の試合予定をお伝えします」"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/nihoncreate.xml",
+      "source_order": 3467,
+      "archive": "yakyudo2",
+      "id": "yakyudo2-opna"
+    },
+    {
+      "title": "[PC-8801] 野球道II(OPN)",
+      "driver": {
+        "name": "pc88",
+        "type": "opn",
+        "alias": "日本クリエイト",
+        "platform": "NEC PC-8801"
+      },
+      "options": [
+        {
+          "name": "init_pc",
+          "value": "0xf000"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "DRIVER",
+          "offset": "0x0100"
+        },
+        {
+          "type": "code",
+          "path": "EFFECT",
+          "offset": "0x0d00"
+        },
+        {
+          "type": "code",
+          "path": "PATCH2",
+          "offset": "0xf000"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS100",
+          "offset": "0x00"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS101",
+          "offset": "0x01"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS102",
+          "offset": "0x02"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS103",
+          "offset": "0x03"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS104",
+          "offset": "0x04"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS105",
+          "offset": "0x05"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS106",
+          "offset": "0x06"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS107",
+          "offset": "0x07"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS108",
+          "offset": "0x08"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS109",
+          "offset": "0x09"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS110",
+          "offset": "0x0a"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS111",
+          "offset": "0x0b"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS112",
+          "offset": "0x0c"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS113",
+          "offset": "0x0d"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS200",
+          "offset": "0x0e"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS201",
+          "offset": "0x0f"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS202",
+          "offset": "0x10"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS203",
+          "offset": "0x11"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS204",
+          "offset": "0x12"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS205",
+          "offset": "0x13"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS206",
+          "offset": "0x14"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS207",
+          "offset": "0x15"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS208",
+          "offset": "0x16"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS300",
+          "offset": "0x17"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS301",
+          "offset": "0x18"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS302",
+          "offset": "0x19"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS303",
+          "offset": "0x1a"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS304",
+          "offset": "0x1b"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS305",
+          "offset": "0x1c"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS306",
+          "offset": "0x1d"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS307",
+          "offset": "0x1e"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS308",
+          "offset": "0x1f"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS400",
+          "offset": "0x20"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS401",
+          "offset": "0x21"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x00000000",
+          "title": "MUS100 : オープニング"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000001",
+          "title": "MUS101 : キャンプ(アリゾナ)"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000002",
+          "title": "MUS102 : キャンプ(グアム)"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000003",
+          "title": "MUS103 : キャンプ(沖縄)"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000004",
+          "title": "MUS104 : キャンプ(高知)"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000005",
+          "title": "MUS105 : キャンプ(宮崎)"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000006",
+          "title": "MUS106 : プロ野球ニュース"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000007",
+          "title": "MUS107 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000008",
+          "title": "MUS108 : メイキング"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000009",
+          "title": "MUS109 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x0000000a",
+          "title": "MUS110 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x0000000b",
+          "title": "MUS111 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x0000000c",
+          "title": "MUS112 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x0000000d",
+          "title": "MUS113 : 戦略中"
+        },
+        {
+          "kind": "title",
+          "code": "0x0000000e",
+          "title": "MUS200 : キャンプ(グアム)(未使用)"
+        },
+        {
+          "kind": "title",
+          "code": "0x0000000f",
+          "title": "MUS201 : キャンプ地選択"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000010",
+          "title": "MUS202 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000011",
+          "title": "MUS203 : 戦略中"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000012",
+          "title": "MUS204 : プロ野球ニュース"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000013",
+          "title": "MUS205 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000014",
+          "title": "MUS206 : ホームラン"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000015",
+          "title": "MUS207 : イニング裏"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000016",
+          "title": "MUS208 : イニング表"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000017",
+          "title": "MUS300 : キャンプ(グアム)(未使用)"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000018",
+          "title": "MUS301 : キャンプ(高知)"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000019",
+          "title": "MUS302 : キャンプ(宮崎)"
+        },
+        {
+          "kind": "title",
+          "code": "0x0000001a",
+          "title": "MUS303 : キャンプ(沖縄)"
+        },
+        {
+          "kind": "title",
+          "code": "0x0000001b",
+          "title": "MUS304 : キャンプ(グアム)"
+        },
+        {
+          "kind": "title",
+          "code": "0x0000001c",
+          "title": "MUS305 : キャンプ(アリゾナ)"
+        },
+        {
+          "kind": "title",
+          "code": "0x0000001d",
+          "title": "MUS306 : キャンプ(ハワイ)"
+        },
+        {
+          "kind": "title",
+          "code": "0x0000001e",
+          "title": "MUS307 : キャンプ地選択"
+        },
+        {
+          "kind": "title",
+          "code": "0x0000001f",
+          "title": "MUS308 : 戦略中"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000020",
+          "title": "MUS400 : メイキング"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000021",
+          "title": "MUS401 : キャンプ(グアム)(未使用)"
+        },
+        {
+          "kind": "title",
+          "code": "0x0000007e",
+          "title": "EFCS00 : ヒット"
+        },
+        {
+          "kind": "title",
+          "code": "0x0100007e",
+          "title": "EFCS01 : タイム"
+        },
+        {
+          "kind": "title",
+          "code": "0x0200007e",
+          "title": "EFCS02 : 交代"
+        },
+        {
+          "kind": "title",
+          "code": "0x0300007e",
+          "title": "EFCS03 : バント"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/nihoncreate.xml",
+      "source_order": 3468,
+      "archive": "yakyudo2",
+      "id": "yakyudo2-opn"
+    },
+    {
+      "title": "[PC-8801] 双六野球道(OPNA)",
+      "driver": {
+        "name": "pc88",
+        "type": "opna",
+        "alias": "日本クリエイト",
+        "platform": "NEC PC-8801"
+      },
+      "options": [
+        {
+          "name": "init_pc",
+          "value": "0x1000"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "PATCH",
+          "offset": "0x0100"
+        },
+        {
+          "type": "code",
+          "path": "MUSDRV",
+          "offset": "0x1200"
+        },
+        {
+          "type": "code",
+          "path": "PCMDRV",
+          "offset": "0x3000"
+        },
+        {
+          "type": "adpcm",
+          "path": "ADPCM101",
+          "offset": "0x00000"
+        },
+        {
+          "type": "adpcm",
+          "path": "ADPCM102",
+          "offset": "0x03000"
+        },
+        {
+          "type": "adpcm",
+          "path": "ADPCM100",
+          "offset": "0x05400"
+        },
+        {
+          "type": "adpcm",
+          "path": "ADPCM103",
+          "offset": "0x06c00"
+        },
+        {
+          "type": "adpcm",
+          "path": "ADPCM104",
+          "offset": "0x08c00"
+        },
+        {
+          "type": "adpcm",
+          "path": "ADPCM105",
+          "offset": "0x09600"
+        },
+        {
+          "type": "adpcm",
+          "path": "ADPCM106",
+          "offset": "0x0b000"
+        },
+        {
+          "type": "adpcm",
+          "path": "ADPCM200",
+          "offset": "0x0fc00"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS100",
+          "offset": "0x00"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS101",
+          "offset": "0x01"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS102",
+          "offset": "0x02"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS103",
+          "offset": "0x03"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS104",
+          "offset": "0x04"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS105",
+          "offset": "0x05"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS106",
+          "offset": "0x06"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS107",
+          "offset": "0x07"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS108",
+          "offset": "0x08"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS109",
+          "offset": "0x09"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS200",
+          "offset": "0x0a"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x00000007",
+          "title": "MUS107 : 序破急"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000000",
+          "title": "MUS100 : 狸ばやし"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000001",
+          "title": "MUS101 : 御品書"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000002",
+          "title": "MUS102 : 通路"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000009",
+          "title": "MUS109 : 春風"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000004",
+          "title": "MUS104 : 天下浪漫"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000005",
+          "title": "MUS105 : 夜桜"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000006",
+          "title": "MUS106 : 万感"
+        },
+        {
+          "kind": "title",
+          "code": "0x0000000a",
+          "title": "MUS200 : 安らぎ"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000003",
+          "title": "MUS103 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x0000f408",
+          "title": "MUS108 : V2 MODE ONLY"
+        },
+        {
+          "kind": "title",
+          "code": "0x000000ff",
+          "title": "ADPCM  : ちょっとまってね"
+        },
+        {
+          "kind": "title",
+          "code": "0x010000ff",
+          "title": "ADPCM  : リバース"
+        },
+        {
+          "kind": "title",
+          "code": "0x020000ff",
+          "title": "ADPCM  : ラッキー"
+        },
+        {
+          "kind": "title",
+          "code": "0x030000ff",
+          "title": "ADPCM  : おめでとう"
+        },
+        {
+          "kind": "title",
+          "code": "0x040000ff",
+          "title": "ADPCM  : えい"
+        },
+        {
+          "kind": "title",
+          "code": "0x050000ff",
+          "title": "ADPCM  : チェック"
+        },
+        {
+          "kind": "title",
+          "code": "0x060000ff",
+          "title": "ADPCM  : 歓声"
+        },
+        {
+          "kind": "title",
+          "code": "0x070000ff",
+          "title": "ADPCM  : 爆発音?"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/nihoncreate.xml",
+      "source_order": 3469,
+      "archive": "sugoroku88",
+      "id": "sugoroku88-opna"
+    },
+    {
+      "title": "[PC-8801] 双六野球道(OPN)",
+      "driver": {
+        "name": "pc88",
+        "type": "opn",
+        "alias": "日本クリエイト",
+        "platform": "NEC PC-8801"
+      },
+      "options": [
+        {
+          "name": "init_pc",
+          "value": "0x1000"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "PATCH",
+          "offset": "0x0100"
+        },
+        {
+          "type": "code",
+          "path": "MUSDRV",
+          "offset": "0x1200"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS100",
+          "offset": "0x00"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS101",
+          "offset": "0x01"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS102",
+          "offset": "0x02"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS103",
+          "offset": "0x03"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS104",
+          "offset": "0x04"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS105",
+          "offset": "0x05"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS106",
+          "offset": "0x06"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS107",
+          "offset": "0x07"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS108",
+          "offset": "0x08"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS109",
+          "offset": "0x09"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS200",
+          "offset": "0x0a"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x00000007",
+          "title": "MUS107 : 序破急"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000000",
+          "title": "MUS100 : 狸ばやし"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000001",
+          "title": "MUS101 : 御品書"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000002",
+          "title": "MUS102 : 通路"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000009",
+          "title": "MUS109 : 春風"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000004",
+          "title": "MUS104 : 天下浪漫"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000005",
+          "title": "MUS105 : 夜桜"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000006",
+          "title": "MUS106 : 万感"
+        },
+        {
+          "kind": "title",
+          "code": "0x0000000a",
+          "title": "MUS200 : 安らぎ"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000003",
+          "title": "MUS103 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x0000f408",
+          "title": "MUS108 : V2 MODE ONLY"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/nihoncreate.xml",
+      "source_order": 3470,
+      "archive": "sugoroku88",
+      "id": "sugoroku88-opn"
+    },
+    {
+      "title": "[PC-9801] 野球道II",
+      "driver": {
+        "name": "pc98dos",
+        "type": "opn",
+        "alias": "日本クリエイト",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "clockmul",
+          "value": "8"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "yakyudo2.com",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "FMDRV.SYS",
+          "offset": "-1"
+        },
+        {
+          "type": "device",
+          "path": "fmdrv.sys",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "yakyudo2",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0xff",
+          "title": "演奏停止"
+        },
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "BGM 01"
+        },
+        {
+          "kind": "title",
+          "code": "0x02",
+          "title": "BGM 02"
+        },
+        {
+          "kind": "title",
+          "code": "0x03",
+          "title": "BGM 03"
+        },
+        {
+          "kind": "title",
+          "code": "0x04",
+          "title": "BGM 04"
+        },
+        {
+          "kind": "title",
+          "code": "0x05",
+          "title": "BGM 05"
+        },
+        {
+          "kind": "title",
+          "code": "0x06",
+          "title": "BGM 06"
+        },
+        {
+          "kind": "title",
+          "code": "0x07",
+          "title": "BGM 07"
+        },
+        {
+          "kind": "title",
+          "code": "0x08",
+          "title": "BGM 08"
+        },
+        {
+          "kind": "title",
+          "code": "0x09",
+          "title": "BGM 09"
+        },
+        {
+          "kind": "title",
+          "code": "0x0a",
+          "title": "BGM 0A"
+        },
+        {
+          "kind": "title",
+          "code": "0x0b",
+          "title": "BGM 0B"
+        },
+        {
+          "kind": "title",
+          "code": "0x0c",
+          "title": "BGM 0C"
+        },
+        {
+          "kind": "title",
+          "code": "0x0d",
+          "title": "BGM 0D"
+        },
+        {
+          "kind": "title",
+          "code": "0x0e",
+          "title": "BGM 0E"
+        },
+        {
+          "kind": "title",
+          "code": "0x0f",
+          "title": "BGM 0F"
+        },
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "BGM 10"
+        },
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "BGM 11"
+        },
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "BGM 12"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "BGM 13"
+        },
+        {
+          "kind": "title",
+          "code": "0x80",
+          "title": "EFFECT 00"
+        },
+        {
+          "kind": "title",
+          "code": "0x81",
+          "title": "EFFECT 01"
+        },
+        {
+          "kind": "title",
+          "code": "0x82",
+          "title": "EFFECT 02"
+        },
+        {
+          "kind": "title",
+          "code": "0x83",
+          "title": "EFFECT 03"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/nihoncreate.xml",
+      "source_order": 3471,
+      "archive": "yakyudo2_98",
+      "id": "yakyudo2-98-opn"
+    },
+    {
+      "title": "[PC-9801] 3x3EYE'S ～三只眼變成～(OPN)",
+      "driver": {
+        "name": "pc98dos",
+        "type": "opn",
+        "alias": "日本クリエイト",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "clockmul",
+          "value": "8"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "SS.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "SS_98.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "M01.DAT",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "M03.DAT",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "M04.DAT",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "M05.DAT",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "M06.DAT",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "M07.DAT",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "M08.DAT",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "M09.DAT",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "M10.DAT",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "M11.DAT",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "M12.DAT",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "M13.DAT",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "M15.DAT",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "M16.DAT",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "TITLE.DAT",
+          "offset": "-1"
+        },
+        {
+          "type": "conin",
+          "path": "M01.DAT",
+          "offset": "0x10"
+        },
+        {
+          "type": "conin",
+          "path": "M03.DAT",
+          "offset": "0x11"
+        },
+        {
+          "type": "conin",
+          "path": "M04.DAT",
+          "offset": "0x12"
+        },
+        {
+          "type": "conin",
+          "path": "M05.DAT",
+          "offset": "0x13"
+        },
+        {
+          "type": "conin",
+          "path": "M06.DAT",
+          "offset": "0x14"
+        },
+        {
+          "type": "conin",
+          "path": "M07.DAT",
+          "offset": "0x15"
+        },
+        {
+          "type": "conin",
+          "path": "M08.DAT",
+          "offset": "0x16"
+        },
+        {
+          "type": "conin",
+          "path": "M09.DAT",
+          "offset": "0x17"
+        },
+        {
+          "type": "conin",
+          "path": "M10.DAT",
+          "offset": "0x18"
+        },
+        {
+          "type": "conin",
+          "path": "M11.DAT",
+          "offset": "0x19"
+        },
+        {
+          "type": "conin",
+          "path": "M12.DAT",
+          "offset": "0x1a"
+        },
+        {
+          "type": "conin",
+          "path": "M13.DAT",
+          "offset": "0x1b"
+        },
+        {
+          "type": "conin",
+          "path": "M15.DAT",
+          "offset": "0x1c"
+        },
+        {
+          "type": "conin",
+          "path": "M16.DAT",
+          "offset": "0x1d"
+        },
+        {
+          "type": "conin",
+          "path": "TITLE.DAT",
+          "offset": "0x1e"
+        },
+        {
+          "type": "shell",
+          "path": "SS",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "SS_98",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x1e",
+          "title": "TITLE.DAT : タイトル"
+        },
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "M01.DAT   : オープニング"
+        },
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "M03.DAT   : メイン BGM"
+        },
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "M04.DAT   : スキー場のテーマ"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "M05.DAT   : 悪のテーマ"
+        },
+        {
+          "kind": "title",
+          "code": "0x14",
+          "title": "M06.DAT   : MAP"
+        },
+        {
+          "kind": "title",
+          "code": "0x15",
+          "title": "M07.DAT   : イランのテーマ"
+        },
+        {
+          "kind": "title",
+          "code": "0x16",
+          "title": "M08.DAT   : サーレス"
+        },
+        {
+          "kind": "title",
+          "code": "0x17",
+          "title": "M09.DAT   : 迷宮"
+        },
+        {
+          "kind": "title",
+          "code": "0x18",
+          "title": "M10.DAT   : スタッフロール"
+        },
+        {
+          "kind": "title",
+          "code": "0x19",
+          "title": "M11.DAT   : チョモランマ"
+        },
+        {
+          "kind": "title",
+          "code": "0x1a",
+          "title": "M12.DAT   : 悲しみのテーマ"
+        },
+        {
+          "kind": "title",
+          "code": "0x1b",
+          "title": "M13.DAT  *: エピローグ"
+        },
+        {
+          "kind": "title",
+          "code": "0x1c",
+          "title": "M15.DAT   : 戦闘"
+        },
+        {
+          "kind": "title",
+          "code": "0x1d",
+          "title": "M16.DAT   : クレタ島"
+        },
+        {
+          "kind": "title",
+          "code": "0xfe",
+          "title": "*         : ループを抜ける"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/nihoncreate.xml",
+      "source_order": 3472,
+      "archive": "3x3eyes_98",
+      "id": "3x3eyes-98-opn"
+    },
+    {
+      "title": "[PC-9801] 3x3EYE'S ～三只眼變成～(GM)",
+      "driver": {
+        "name": "pc98dos",
+        "type": "beep",
+        "alias": "日本クリエイト",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "clockmul",
+          "value": "8"
+        },
+        {
+          "name": "midiout",
+          "value": "1"
+        },
+        {
+          "name": "midiout_type",
+          "value": "8"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "NC.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "NC_98.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "M01.MID",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "M03.MID",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "M04.MID",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "M05.MID",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "M06.MID",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "M07.MID",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "M08.MID",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "M09.MID",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "M10.MID",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "M11.MID",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "M12.MID",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "M13.MID",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "M15.MID",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "M16.MID",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "TITLE.MID",
+          "offset": "-1"
+        },
+        {
+          "type": "conin",
+          "path": "M01.MID",
+          "offset": "0x10"
+        },
+        {
+          "type": "conin",
+          "path": "M03.MID",
+          "offset": "0x11"
+        },
+        {
+          "type": "conin",
+          "path": "M04.MID",
+          "offset": "0x12"
+        },
+        {
+          "type": "conin",
+          "path": "M05.MID",
+          "offset": "0x13"
+        },
+        {
+          "type": "conin",
+          "path": "M06.MID",
+          "offset": "0x14"
+        },
+        {
+          "type": "conin",
+          "path": "M07.MID",
+          "offset": "0x15"
+        },
+        {
+          "type": "conin",
+          "path": "M08.MID",
+          "offset": "0x16"
+        },
+        {
+          "type": "conin",
+          "path": "M09.MID",
+          "offset": "0x17"
+        },
+        {
+          "type": "conin",
+          "path": "M10.MID",
+          "offset": "0x18"
+        },
+        {
+          "type": "conin",
+          "path": "M11.MID",
+          "offset": "0x19"
+        },
+        {
+          "type": "conin",
+          "path": "M12.MID",
+          "offset": "0x1a"
+        },
+        {
+          "type": "conin",
+          "path": "M13.MID",
+          "offset": "0x1b"
+        },
+        {
+          "type": "conin",
+          "path": "M15.MID",
+          "offset": "0x1c"
+        },
+        {
+          "type": "conin",
+          "path": "M16.MID",
+          "offset": "0x1d"
+        },
+        {
+          "type": "conin",
+          "path": "TITLE.MID",
+          "offset": "0x1e"
+        },
+        {
+          "type": "shell",
+          "path": "NC",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "NC_98",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x1e",
+          "title": "TITLE.MID : タイトル"
+        },
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "M01.MID   : オープニング"
+        },
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "M03.MID   : メイン BGM"
+        },
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "M04.MID   : スキー場のテーマ"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "M05.MID   : 悪のテーマ"
+        },
+        {
+          "kind": "title",
+          "code": "0x14",
+          "title": "M06.MID   : MAP"
+        },
+        {
+          "kind": "title",
+          "code": "0x15",
+          "title": "M07.MID   : イランのテーマ"
+        },
+        {
+          "kind": "title",
+          "code": "0x16",
+          "title": "M08.MID   : サーレス"
+        },
+        {
+          "kind": "title",
+          "code": "0x17",
+          "title": "M09.MID   : 迷宮"
+        },
+        {
+          "kind": "title",
+          "code": "0x18",
+          "title": "M10.MID   : スタッフロール"
+        },
+        {
+          "kind": "title",
+          "code": "0x19",
+          "title": "M11.MID   : チョモランマ"
+        },
+        {
+          "kind": "title",
+          "code": "0x1a",
+          "title": "M12.MID   : 悲しみのテーマ"
+        },
+        {
+          "kind": "title",
+          "code": "0x1b",
+          "title": "M13.MID  *: エピローグ"
+        },
+        {
+          "kind": "title",
+          "code": "0x1c",
+          "title": "M15.MID   : 戦闘"
+        },
+        {
+          "kind": "title",
+          "code": "0x1d",
+          "title": "M16.MID   : クレタ島"
+        },
+        {
+          "kind": "title",
+          "code": "0xfe",
+          "title": "*         : ループを抜ける"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/nihoncreate.xml",
+      "source_order": 3473,
+      "archive": "3x3eyes_98",
+      "id": "3x3eyes-98-beep"
+    },
+    {
+      "title": "[PC-9801] Diadrum(OPN)",
+      "driver": {
+        "name": "pc98dos",
+        "type": "opn",
+        "alias": "日本クリエイト",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "clockmul",
+          "value": "8"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "SS.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "SSD_98.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "FM01.SND",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "FM02.SND",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "FM03.SND",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "FM03.BMP",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "FM04A.BMP",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "FM04B.BMP",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "FM05.BMP",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "FM06.BMP",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "FM07.BMP",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "FM08.BMP",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "FM09.BMP",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "FM10.BMP",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "FM13.BMP",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "FM14.BMP",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "FM15.BMP",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "FM16.BMP",
+          "offset": "-1"
+        },
+        {
+          "type": "conin",
+          "path": "FM01.SND",
+          "offset": "0x10"
+        },
+        {
+          "type": "conin",
+          "path": "FM02.SND",
+          "offset": "0x11"
+        },
+        {
+          "type": "conin",
+          "path": "FM03.SND",
+          "offset": "0x12"
+        },
+        {
+          "type": "conin",
+          "path": "FM03.BMP",
+          "offset": "0x13"
+        },
+        {
+          "type": "conin",
+          "path": "FM04A.BMP",
+          "offset": "0x14"
+        },
+        {
+          "type": "conin",
+          "path": "FM04B.BMP",
+          "offset": "0x15"
+        },
+        {
+          "type": "conin",
+          "path": "FM05.BMP",
+          "offset": "0x16"
+        },
+        {
+          "type": "conin",
+          "path": "FM06.BMP",
+          "offset": "0x17"
+        },
+        {
+          "type": "conin",
+          "path": "FM07.BMP",
+          "offset": "0x18"
+        },
+        {
+          "type": "conin",
+          "path": "FM08.BMP",
+          "offset": "0x19"
+        },
+        {
+          "type": "conin",
+          "path": "FM09.BMP",
+          "offset": "0x1a"
+        },
+        {
+          "type": "conin",
+          "path": "FM10.BMP",
+          "offset": "0x1b"
+        },
+        {
+          "type": "conin",
+          "path": "FM13.BMP",
+          "offset": "0x1c"
+        },
+        {
+          "type": "conin",
+          "path": "FM14.BMP",
+          "offset": "0x1d"
+        },
+        {
+          "type": "conin",
+          "path": "FM15.BMP",
+          "offset": "0x1e"
+        },
+        {
+          "type": "conin",
+          "path": "FM16.BMP",
+          "offset": "0x1f"
+        },
+        {
+          "type": "shell",
+          "path": "SS",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "SSD_98",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "FM02.SND  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "FM01.SND  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "FM03.SND  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "FM03.BMP  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x14",
+          "title": "FM04A.BMP :"
+        },
+        {
+          "kind": "title",
+          "code": "0x15",
+          "title": "FM04B.BMP :"
+        },
+        {
+          "kind": "title",
+          "code": "0x16",
+          "title": "FM05.BMP  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x17",
+          "title": "FM06.BMP  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x18",
+          "title": "FM07.BMP  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x19",
+          "title": "FM08.BMP  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x1a",
+          "title": "FM09.BMP  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x1b",
+          "title": "FM10.BMP  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x1c",
+          "title": "FM13.BMP  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x1d",
+          "title": "FM14.BMP  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x1e",
+          "title": "FM15.BMP  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x1f",
+          "title": "FM16.BMP  :"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/nihoncreate.xml",
+      "source_order": 3474,
+      "archive": "diadrum_98",
+      "id": "diadrum-98-opn"
+    },
+    {
+      "title": "[PC-9801] Diadrum(GM)",
+      "driver": {
+        "name": "pc98dos",
+        "type": "beep",
+        "alias": "日本クリエイト",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "clockmul",
+          "value": "8"
+        },
+        {
+          "name": "midiout",
+          "value": "1"
+        },
+        {
+          "name": "midiout_type",
+          "value": "8"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "NC.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "NC_98.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MI01.MID",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MI02.MID",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MI03.MID",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MI03.BMP",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MI04A.BMP",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MI04B.BMP",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MI05.BMP",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MI06.BMP",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MI07.BMP",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MI08.BMP",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MI09.BMP",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MI10.BMP",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MI13.BMP",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MI14.BMP",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MI15.BMP",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MI16.BMP",
+          "offset": "-1"
+        },
+        {
+          "type": "conin",
+          "path": "MI01.MID",
+          "offset": "0x10"
+        },
+        {
+          "type": "conin",
+          "path": "MI02.MID",
+          "offset": "0x11"
+        },
+        {
+          "type": "conin",
+          "path": "MI03.MID",
+          "offset": "0x12"
+        },
+        {
+          "type": "conin",
+          "path": "MI03.BMP",
+          "offset": "0x13"
+        },
+        {
+          "type": "conin",
+          "path": "MI04A.BMP",
+          "offset": "0x14"
+        },
+        {
+          "type": "conin",
+          "path": "MI04B.BMP",
+          "offset": "0x15"
+        },
+        {
+          "type": "conin",
+          "path": "MI05.BMP",
+          "offset": "0x16"
+        },
+        {
+          "type": "conin",
+          "path": "MI06.BMP",
+          "offset": "0x17"
+        },
+        {
+          "type": "conin",
+          "path": "MI07.BMP",
+          "offset": "0x18"
+        },
+        {
+          "type": "conin",
+          "path": "MI08.BMP",
+          "offset": "0x19"
+        },
+        {
+          "type": "conin",
+          "path": "MI09.BMP",
+          "offset": "0x1a"
+        },
+        {
+          "type": "conin",
+          "path": "MI10.BMP",
+          "offset": "0x1b"
+        },
+        {
+          "type": "conin",
+          "path": "MI13.BMP",
+          "offset": "0x1c"
+        },
+        {
+          "type": "conin",
+          "path": "MI14.BMP",
+          "offset": "0x1d"
+        },
+        {
+          "type": "conin",
+          "path": "MI15.BMP",
+          "offset": "0x1e"
+        },
+        {
+          "type": "conin",
+          "path": "MI16.BMP",
+          "offset": "0x1f"
+        },
+        {
+          "type": "shell",
+          "path": "NC",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "NC_98",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "MI02.MID  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "MI01.MID  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "MI03.MID  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "MI03.BMP  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x14",
+          "title": "MI04A.BMP :"
+        },
+        {
+          "kind": "title",
+          "code": "0x15",
+          "title": "MI04B.BMP :"
+        },
+        {
+          "kind": "title",
+          "code": "0x16",
+          "title": "MI05.BMP  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x17",
+          "title": "MI06.BMP  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x18",
+          "title": "MI07.BMP  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x19",
+          "title": "MI08.BMP  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x1a",
+          "title": "MI09.BMP  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x1b",
+          "title": "MI10.BMP  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x1c",
+          "title": "MI13.BMP  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x1d",
+          "title": "MI14.BMP  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x1e",
+          "title": "MI15.BMP  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x1f",
+          "title": "MI16.BMP  :"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/nihoncreate.xml",
+      "source_order": 3475,
+      "archive": "diadrum_98",
+      "id": "diadrum-98-beep"
+    },
+    {
+      "title": "[PC-9801] 魔京伝",
+      "driver": {
+        "name": "pc98dos",
+        "type": "opn",
+        "alias": "日本クリエイト",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "clockmul",
+          "value": "10"
+        },
+        {
+          "name": "wstimer",
+          "value": "1"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "SS.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "SS_98.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "BGM_001.MUS",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "BGM_002.MUS",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "BGM_003.MUS",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "BGM_004.MUS",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "BGM_005.MUS",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "BGM_006.MUS",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "BGM_007.MUS",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "BGM_008.MUS",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "BGM_009.MUS",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "BGM_010.MUS",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "BGM_011.MUS",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "BGM_012.MUS",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "BGM_013.MUS",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "BGM_015.MUS",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "BGM_016.MUS",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "BGM_017.MUS",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "BGM_018.MUS",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "BGM_019.MUS",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "BGM_020.MUS",
+          "offset": "-1"
+        },
+        {
+          "type": "conin",
+          "path": "BGM_001.MUS",
+          "offset": "0x10"
+        },
+        {
+          "type": "conin",
+          "path": "BGM_002.MUS",
+          "offset": "0x11"
+        },
+        {
+          "type": "conin",
+          "path": "BGM_003.MUS",
+          "offset": "0x12"
+        },
+        {
+          "type": "conin",
+          "path": "BGM_004.MUS",
+          "offset": "0x13"
+        },
+        {
+          "type": "conin",
+          "path": "BGM_005.MUS",
+          "offset": "0x14"
+        },
+        {
+          "type": "conin",
+          "path": "BGM_006.MUS",
+          "offset": "0x15"
+        },
+        {
+          "type": "conin",
+          "path": "BGM_007.MUS",
+          "offset": "0x16"
+        },
+        {
+          "type": "conin",
+          "path": "BGM_008.MUS",
+          "offset": "0x17"
+        },
+        {
+          "type": "conin",
+          "path": "BGM_009.MUS",
+          "offset": "0x18"
+        },
+        {
+          "type": "conin",
+          "path": "BGM_010.MUS",
+          "offset": "0x19"
+        },
+        {
+          "type": "conin",
+          "path": "BGM_011.MUS",
+          "offset": "0x1a"
+        },
+        {
+          "type": "conin",
+          "path": "BGM_012.MUS",
+          "offset": "0x1b"
+        },
+        {
+          "type": "conin",
+          "path": "BGM_013.MUS",
+          "offset": "0x1c"
+        },
+        {
+          "type": "conin",
+          "path": "BGM_015.MUS",
+          "offset": "0x1d"
+        },
+        {
+          "type": "conin",
+          "path": "BGM_016.MUS",
+          "offset": "0x1e"
+        },
+        {
+          "type": "conin",
+          "path": "BGM_017.MUS",
+          "offset": "0x1f"
+        },
+        {
+          "type": "conin",
+          "path": "BGM_018.MUS",
+          "offset": "0x20"
+        },
+        {
+          "type": "conin",
+          "path": "BGM_019.MUS",
+          "offset": "0x21"
+        },
+        {
+          "type": "conin",
+          "path": "BGM_020.MUS",
+          "offset": "0x22"
+        },
+        {
+          "type": "shell",
+          "path": "SS",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "SS_98",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0xff",
+          "title": "[SSG-PCM ON/OFF]"
+        },
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "BGM_001.MUS"
+        },
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "BGM_002.MUS"
+        },
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "BGM_003.MUS"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "BGM_004.MUS"
+        },
+        {
+          "kind": "title",
+          "code": "0x14",
+          "title": "BGM_005.MUS"
+        },
+        {
+          "kind": "title",
+          "code": "0x15",
+          "title": "BGM_006.MUS"
+        },
+        {
+          "kind": "title",
+          "code": "0x16",
+          "title": "BGM_007.MUS"
+        },
+        {
+          "kind": "title",
+          "code": "0x17",
+          "title": "BGM_008.MUS"
+        },
+        {
+          "kind": "title",
+          "code": "0x18",
+          "title": "BGM_009.MUS"
+        },
+        {
+          "kind": "title",
+          "code": "0x19",
+          "title": "BGM_010.MUS"
+        },
+        {
+          "kind": "title",
+          "code": "0x1a",
+          "title": "BGM_011.MUS"
+        },
+        {
+          "kind": "title",
+          "code": "0x1b",
+          "title": "BGM_012.MUS"
+        },
+        {
+          "kind": "title",
+          "code": "0x1c",
+          "title": "BGM_013.MUS"
+        },
+        {
+          "kind": "title",
+          "code": "0x1d",
+          "title": "BGM_015.MUS"
+        },
+        {
+          "kind": "title",
+          "code": "0x1e",
+          "title": "BGM_016.MUS"
+        },
+        {
+          "kind": "title",
+          "code": "0x1f",
+          "title": "BGM_017.MUS"
+        },
+        {
+          "kind": "title",
+          "code": "0x20",
+          "title": "BGM_018.MUS"
+        },
+        {
+          "kind": "title",
+          "code": "0x21",
+          "title": "BGM_019.MUS"
+        },
+        {
+          "kind": "title",
+          "code": "0x22",
+          "title": "BGM_020.MUS"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/nihoncreate.xml",
+      "source_order": 3476,
+      "archive": "makyoden_98",
+      "id": "makyoden-98-opn"
+    },
+    {
+      "title": "[PC-9801] トラぶるCHASER 第1話",
+      "driver": {
+        "name": "pc98dos",
+        "type": "opn",
+        "alias": "日本クリエイト",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "clockmul",
+          "value": "8"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "SS.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "SSD_98.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "TC1_M01.DAT",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "TC1_M02.DAT",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "TC1_M03.DAT",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "TC1_M04.DAT",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "TC1_M05.DAT",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "TC1_M06.DAT",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "TC1_M07.DAT",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "TC1_M08.DAT",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "TC1_M09.DAT",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "TC1_M10.DAT",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "TC1_M11.DAT",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "TC1_M12.DAT",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "TC1_M13.DAT",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "TC1_M15.DAT",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "TC1_M16.DAT",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "TC1_M17.DAT",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "TC1_M18.DAT",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "TC1_M19.DAT",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "TC1_M20.DAT",
+          "offset": "-1"
+        },
+        {
+          "type": "conin",
+          "path": "TC1_M01.DAT",
+          "offset": "0x10"
+        },
+        {
+          "type": "conin",
+          "path": "TC1_M02.DAT",
+          "offset": "0x11"
+        },
+        {
+          "type": "conin",
+          "path": "TC1_M03.DAT",
+          "offset": "0x12"
+        },
+        {
+          "type": "conin",
+          "path": "TC1_M04.DAT",
+          "offset": "0x13"
+        },
+        {
+          "type": "conin",
+          "path": "TC1_M05.DAT",
+          "offset": "0x14"
+        },
+        {
+          "type": "conin",
+          "path": "TC1_M06.DAT",
+          "offset": "0x15"
+        },
+        {
+          "type": "conin",
+          "path": "TC1_M07.DAT",
+          "offset": "0x16"
+        },
+        {
+          "type": "conin",
+          "path": "TC1_M08.DAT",
+          "offset": "0x17"
+        },
+        {
+          "type": "conin",
+          "path": "TC1_M09.DAT",
+          "offset": "0x18"
+        },
+        {
+          "type": "conin",
+          "path": "TC1_M10.DAT",
+          "offset": "0x19"
+        },
+        {
+          "type": "conin",
+          "path": "TC1_M11.DAT",
+          "offset": "0x1a"
+        },
+        {
+          "type": "conin",
+          "path": "TC1_M12.DAT",
+          "offset": "0x1b"
+        },
+        {
+          "type": "conin",
+          "path": "TC1_M13.DAT",
+          "offset": "0x1c"
+        },
+        {
+          "type": "conin",
+          "path": "TC1_M15.DAT",
+          "offset": "0x1d"
+        },
+        {
+          "type": "conin",
+          "path": "TC1_M16.DAT",
+          "offset": "0x1e"
+        },
+        {
+          "type": "conin",
+          "path": "TC1_M17.DAT",
+          "offset": "0x1f"
+        },
+        {
+          "type": "conin",
+          "path": "TC1_M18.DAT",
+          "offset": "0x20"
+        },
+        {
+          "type": "conin",
+          "path": "TC1_M19.DAT",
+          "offset": "0x21"
+        },
+        {
+          "type": "conin",
+          "path": "TC1_M20.DAT",
+          "offset": "0x22"
+        },
+        {
+          "type": "shell",
+          "path": "SS",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "SSD_98",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "TC1_M01.DAT"
+        },
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "TC1_M02.DAT"
+        },
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "TC1_M03.DAT"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "TC1_M04.DAT"
+        },
+        {
+          "kind": "title",
+          "code": "0x14",
+          "title": "TC1_M05.DAT"
+        },
+        {
+          "kind": "title",
+          "code": "0x15",
+          "title": "TC1_M06.DAT"
+        },
+        {
+          "kind": "title",
+          "code": "0x16",
+          "title": "TC1_M07.DAT"
+        },
+        {
+          "kind": "title",
+          "code": "0x17",
+          "title": "TC1_M08.DAT"
+        },
+        {
+          "kind": "title",
+          "code": "0x18",
+          "title": "TC1_M09.DAT"
+        },
+        {
+          "kind": "title",
+          "code": "0x19",
+          "title": "TC1_M10.DAT"
+        },
+        {
+          "kind": "comment",
+          "text": "<title code=\"0x1a\">TC1_M11.DAT</title>"
+        },
+        {
+          "kind": "title",
+          "code": "0x1b",
+          "title": "TC1_M12.DAT"
+        },
+        {
+          "kind": "title",
+          "code": "0x1c",
+          "title": "TC1_M13.DAT"
+        },
+        {
+          "kind": "title",
+          "code": "0x1d",
+          "title": "TC1_M15.DAT"
+        },
+        {
+          "kind": "title",
+          "code": "0x1e",
+          "title": "TC1_M16.DAT"
+        },
+        {
+          "kind": "title",
+          "code": "0x1f",
+          "title": "TC1_M17.DAT"
+        },
+        {
+          "kind": "title",
+          "code": "0x20",
+          "title": "TC1_M18.DAT"
+        },
+        {
+          "kind": "title",
+          "code": "0x21",
+          "title": "TC1_M19.DAT"
+        },
+        {
+          "kind": "title",
+          "code": "0x22",
+          "title": "TC1_M20.DAT"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/nihoncreate.xml",
+      "source_order": 3477,
+      "archive": "tchaser1_98",
+      "id": "tchaser1-98-opn"
+    },
+    {
+      "title": "[PC-9801] トラぶるCHASER 第2話",
+      "driver": {
+        "name": "pc98dos",
+        "type": "opn",
+        "alias": "日本クリエイト",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "clockmul",
+          "value": "8"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "SS.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "SSD_98.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "TC2_M01.DAT",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "TC2_M02.DAT",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "TC2_M03.DAT",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "TC2_M04.DAT",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "TC2_M05.DAT",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "TC2_M06.DAT",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "TC2_M07.DAT",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "TC2_M08.DAT",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "TC2_M09.DAT",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "TC2_M10.DAT",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "TC2_M11.DAT",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "TC2_M12.DAT",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "TC2_M13.DAT",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "TC2_M15.DAT",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "TC2_M16.DAT",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "TC2_M17.DAT",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "TC2_M18.DAT",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "TC2_M19.DAT",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "TC2_M20.DAT",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "TC2_M21.DAT",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "TC2_M22.DAT",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "TC2_M23.DAT",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "TC2_M24.DAT",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "TC2_M25.DAT",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "TC2_M26.DAT",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "TC2_M27.DAT",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "TC2_M28.DAT",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "TC2_M29.DAT",
+          "offset": "-1"
+        },
+        {
+          "type": "conin",
+          "path": "TC2_M01.DAT",
+          "offset": "0x10"
+        },
+        {
+          "type": "conin",
+          "path": "TC2_M02.DAT",
+          "offset": "0x11"
+        },
+        {
+          "type": "conin",
+          "path": "TC2_M03.DAT",
+          "offset": "0x12"
+        },
+        {
+          "type": "conin",
+          "path": "TC2_M04.DAT",
+          "offset": "0x13"
+        },
+        {
+          "type": "conin",
+          "path": "TC2_M05.DAT",
+          "offset": "0x14"
+        },
+        {
+          "type": "conin",
+          "path": "TC2_M06.DAT",
+          "offset": "0x15"
+        },
+        {
+          "type": "conin",
+          "path": "TC2_M07.DAT",
+          "offset": "0x16"
+        },
+        {
+          "type": "conin",
+          "path": "TC2_M08.DAT",
+          "offset": "0x17"
+        },
+        {
+          "type": "conin",
+          "path": "TC2_M09.DAT",
+          "offset": "0x18"
+        },
+        {
+          "type": "conin",
+          "path": "TC2_M10.DAT",
+          "offset": "0x19"
+        },
+        {
+          "type": "conin",
+          "path": "TC2_M11.DAT",
+          "offset": "0x1a"
+        },
+        {
+          "type": "conin",
+          "path": "TC2_M12.DAT",
+          "offset": "0x1b"
+        },
+        {
+          "type": "conin",
+          "path": "TC2_M13.DAT",
+          "offset": "0x1c"
+        },
+        {
+          "type": "conin",
+          "path": "TC2_M15.DAT",
+          "offset": "0x1d"
+        },
+        {
+          "type": "conin",
+          "path": "TC2_M16.DAT",
+          "offset": "0x1e"
+        },
+        {
+          "type": "conin",
+          "path": "TC2_M17.DAT",
+          "offset": "0x1f"
+        },
+        {
+          "type": "conin",
+          "path": "TC2_M18.DAT",
+          "offset": "0x20"
+        },
+        {
+          "type": "conin",
+          "path": "TC2_M19.DAT",
+          "offset": "0x21"
+        },
+        {
+          "type": "conin",
+          "path": "TC2_M20.DAT",
+          "offset": "0x22"
+        },
+        {
+          "type": "conin",
+          "path": "TC2_M21.DAT",
+          "offset": "0x23"
+        },
+        {
+          "type": "conin",
+          "path": "TC2_M22.DAT",
+          "offset": "0x24"
+        },
+        {
+          "type": "conin",
+          "path": "TC2_M23.DAT",
+          "offset": "0x25"
+        },
+        {
+          "type": "conin",
+          "path": "TC2_M24.DAT",
+          "offset": "0x26"
+        },
+        {
+          "type": "conin",
+          "path": "TC2_M25.DAT",
+          "offset": "0x27"
+        },
+        {
+          "type": "conin",
+          "path": "TC2_M26.DAT",
+          "offset": "0x28"
+        },
+        {
+          "type": "conin",
+          "path": "TC2_M27.DAT",
+          "offset": "0x29"
+        },
+        {
+          "type": "conin",
+          "path": "TC2_M28.DAT",
+          "offset": "0x2a"
+        },
+        {
+          "type": "conin",
+          "path": "TC2_M29.DAT",
+          "offset": "0x2b"
+        },
+        {
+          "type": "shell",
+          "path": "SS",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "SSD_98",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "TC2_M01.DAT"
+        },
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "TC2_M02.DAT"
+        },
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "TC2_M03.DAT"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "TC2_M04.DAT"
+        },
+        {
+          "kind": "title",
+          "code": "0x14",
+          "title": "TC2_M05.DAT"
+        },
+        {
+          "kind": "title",
+          "code": "0x15",
+          "title": "TC2_M06.DAT"
+        },
+        {
+          "kind": "title",
+          "code": "0x16",
+          "title": "TC2_M07.DAT"
+        },
+        {
+          "kind": "title",
+          "code": "0x17",
+          "title": "TC2_M08.DAT"
+        },
+        {
+          "kind": "title",
+          "code": "0x18",
+          "title": "TC2_M09.DAT"
+        },
+        {
+          "kind": "title",
+          "code": "0x19",
+          "title": "TC2_M10.DAT"
+        },
+        {
+          "kind": "comment",
+          "text": "<title code=\"0x1a\">TC2_M11.DAT</title>"
+        },
+        {
+          "kind": "title",
+          "code": "0x1b",
+          "title": "TC2_M12.DAT"
+        },
+        {
+          "kind": "title",
+          "code": "0x1c",
+          "title": "TC2_M13.DAT"
+        },
+        {
+          "kind": "title",
+          "code": "0x1d",
+          "title": "TC2_M15.DAT"
+        },
+        {
+          "kind": "title",
+          "code": "0x1e",
+          "title": "TC2_M16.DAT"
+        },
+        {
+          "kind": "title",
+          "code": "0x1f",
+          "title": "TC2_M17.DAT"
+        },
+        {
+          "kind": "title",
+          "code": "0x20",
+          "title": "TC2_M18.DAT"
+        },
+        {
+          "kind": "title",
+          "code": "0x21",
+          "title": "TC2_M19.DAT"
+        },
+        {
+          "kind": "title",
+          "code": "0x22",
+          "title": "TC2_M20.DAT"
+        },
+        {
+          "kind": "title",
+          "code": "0x23",
+          "title": "TC2_M21.DAT"
+        },
+        {
+          "kind": "title",
+          "code": "0x24",
+          "title": "TC2_M22.DAT"
+        },
+        {
+          "kind": "title",
+          "code": "0x25",
+          "title": "TC2_M23.DAT"
+        },
+        {
+          "kind": "title",
+          "code": "0x26",
+          "title": "TC2_M24.DAT"
+        },
+        {
+          "kind": "title",
+          "code": "0x27",
+          "title": "TC2_M25.DAT"
+        },
+        {
+          "kind": "title",
+          "code": "0x28",
+          "title": "TC2_M26.DAT"
+        },
+        {
+          "kind": "title",
+          "code": "0x29",
+          "title": "TC2_M27.DAT"
+        },
+        {
+          "kind": "title",
+          "code": "0x2a",
+          "title": "TC2_M28.DAT"
+        },
+        {
+          "kind": "title",
+          "code": "0x2b",
+          "title": "TC2_M29.DAT"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/nihoncreate.xml",
+      "source_order": 3478,
+      "archive": "tchaser2_98",
+      "id": "tchaser2-98-opn"
+    },
+    {
+      "title": "[PC-9801] トラぶるCHASER 第4話",
+      "driver": {
+        "name": "pc98dos",
+        "type": "opn",
+        "alias": "日本クリエイト",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "clockmul",
+          "value": "8"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "SR.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "SSD_98.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "TC_MUS1.DAT",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "TC_MUS2.DAT",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "TC_MUS3.DAT",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "TC_MUS4.DAT",
+          "offset": "-1"
+        },
+        {
+          "type": "conin",
+          "path": "TC_MUS1.DAT",
+          "offset": "0x10"
+        },
+        {
+          "type": "conin",
+          "path": "TC_MUS2.DAT",
+          "offset": "0x11"
+        },
+        {
+          "type": "conin",
+          "path": "TC_MUS3.DAT",
+          "offset": "0x12"
+        },
+        {
+          "type": "conin",
+          "path": "TC_MUS4.DAT",
+          "offset": "0x13"
+        },
+        {
+          "type": "shell",
+          "path": "SR",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "SSD_98",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "TC_MUS1.DAT"
+        },
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "TC_MUS2.DAT"
+        },
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "TC_MUS3.DAT"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "TC_MUS4.DAT"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/nihoncreate.xml",
+      "source_order": 3479,
+      "archive": "tchaser4_98",
+      "id": "tchaser4-98-opn"
+    },
+    {
+      "title": "[PC-9801] 野球道 PLUS",
+      "driver": {
+        "name": "pc98dos",
+        "type": "opn",
+        "alias": "日本クリエイト",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "clockmul",
+          "value": "8"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "SOUND5.SYS",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "SND5_98.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "device",
+          "path": "sound5.sys",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "snd5_98",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "range",
+          "min": "0x01",
+          "max": "0x0e",
+          "title_format": "code 0x%02X",
+          "extcode": "1"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/nihoncreate.xml",
+      "source_order": 3480,
+      "archive": "yakyudop_98",
+      "id": "yakyudop-98-opn"
+    },
+    {
+      "title": "[PC-9801] Super野球道",
+      "driver": {
+        "name": "pc98dos",
+        "type": "opn",
+        "alias": "日本クリエイト",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "clockmul",
+          "value": "8"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "SDRV.SYS",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "SDRV_98.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "CLS.SND",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "NEWS.SND",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "PB1.SND",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "PB2.SND",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "PB3.SND",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "PB4.SND",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "PB5.SND",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "PB6.SND",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "PB7.SND",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "PB8.SND",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "PB9.SND",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "PB10.SND",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "PB11.SND",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "TEST.SND",
+          "offset": "-1"
+        },
+        {
+          "type": "conin",
+          "path": "CLS.SND",
+          "offset": "0x10"
+        },
+        {
+          "type": "conin",
+          "path": "NEWS.SND",
+          "offset": "0x11"
+        },
+        {
+          "type": "conin",
+          "path": "PB1.SND",
+          "offset": "0x12"
+        },
+        {
+          "type": "conin",
+          "path": "PB2.SND",
+          "offset": "0x13"
+        },
+        {
+          "type": "conin",
+          "path": "PB3.SND",
+          "offset": "0x14"
+        },
+        {
+          "type": "conin",
+          "path": "PB4.SND",
+          "offset": "0x15"
+        },
+        {
+          "type": "conin",
+          "path": "PB5.SND",
+          "offset": "0x16"
+        },
+        {
+          "type": "conin",
+          "path": "PB6.SND",
+          "offset": "0x17"
+        },
+        {
+          "type": "conin",
+          "path": "PB7.SND",
+          "offset": "0x18"
+        },
+        {
+          "type": "conin",
+          "path": "PB8.SND",
+          "offset": "0x19"
+        },
+        {
+          "type": "conin",
+          "path": "PB9.SND",
+          "offset": "0x1a"
+        },
+        {
+          "type": "conin",
+          "path": "PB10.SND",
+          "offset": "0x1b"
+        },
+        {
+          "type": "conin",
+          "path": "PB11.SND",
+          "offset": "0x1c"
+        },
+        {
+          "type": "conin",
+          "path": "TEST.SND",
+          "offset": "0x1d"
+        },
+        {
+          "type": "device",
+          "path": "sdrv.sys",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "sdrv_98",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "CLS.SND  : [STOP]"
+        },
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "NEWS.SND :"
+        },
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "PB1.SND  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "PB2.SND  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x14",
+          "title": "PB3.SND  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x15",
+          "title": "PB4.SND  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x16",
+          "title": "PB5.SND  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x17",
+          "title": "PB6.SND  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x18",
+          "title": "PB7.SND  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x19",
+          "title": "PB8.SND  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x1a",
+          "title": "PB9.SND  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x1b",
+          "title": "PB10.SND :"
+        },
+        {
+          "kind": "title",
+          "code": "0x1c",
+          "title": "PB11.SND :"
+        },
+        {
+          "kind": "comment",
+          "text": " PB10.SNDとバイナリ一致\n\t\t\t<title code=\"0x1d\">TEST.SND : </title>\n"
+        },
+        {
+          "kind": "title",
+          "code": "0x01000001",
+          "title": "code 01  : SE"
+        },
+        {
+          "kind": "title",
+          "code": "0x01000002",
+          "title": "code 02  : SE"
+        },
+        {
+          "kind": "title",
+          "code": "0x01000003",
+          "title": "code 03  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x01000004",
+          "title": "code 04  :"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/nihoncreate.xml",
+      "source_order": 3481,
+      "archive": "syakyu_98",
+      "id": "syakyu-98-opn"
+    },
+    {
+      "title": "[PC-9801] Super野球道'93",
+      "driver": {
+        "name": "pc98dos",
+        "type": "opn",
+        "alias": "日本クリエイト",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "clockmul",
+          "value": "8"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "SS93.EXE",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "SS_98.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "CLS.SND",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "NEWS.SND",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "PB1.SND",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "PB2.SND",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "PB3.SND",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "PB4.SND",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "PB5.SND",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "PB6.SND",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "PB7.SND",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "PB8.SND",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "PB9.SND",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "PB10.SND",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "PB11.SND",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "TEST.SND",
+          "offset": "-1"
+        },
+        {
+          "type": "conin",
+          "path": "CLS.SND",
+          "offset": "0x10"
+        },
+        {
+          "type": "conin",
+          "path": "NEWS.SND",
+          "offset": "0x11"
+        },
+        {
+          "type": "conin",
+          "path": "PB1.SND",
+          "offset": "0x12"
+        },
+        {
+          "type": "conin",
+          "path": "PB2.SND",
+          "offset": "0x13"
+        },
+        {
+          "type": "conin",
+          "path": "PB3.SND",
+          "offset": "0x14"
+        },
+        {
+          "type": "conin",
+          "path": "PB4.SND",
+          "offset": "0x15"
+        },
+        {
+          "type": "conin",
+          "path": "PB5.SND",
+          "offset": "0x16"
+        },
+        {
+          "type": "conin",
+          "path": "PB6.SND",
+          "offset": "0x17"
+        },
+        {
+          "type": "conin",
+          "path": "PB7.SND",
+          "offset": "0x18"
+        },
+        {
+          "type": "conin",
+          "path": "PB8.SND",
+          "offset": "0x19"
+        },
+        {
+          "type": "conin",
+          "path": "PB9.SND",
+          "offset": "0x1a"
+        },
+        {
+          "type": "conin",
+          "path": "PB10.SND",
+          "offset": "0x1b"
+        },
+        {
+          "type": "conin",
+          "path": "PB11.SND",
+          "offset": "0x1c"
+        },
+        {
+          "type": "conin",
+          "path": "TEST.SND",
+          "offset": "0x1d"
+        },
+        {
+          "type": "shell",
+          "path": "ss93",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "ss_98",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "CLS.SND  : [STOP]"
+        },
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "NEWS.SND :"
+        },
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "PB1.SND  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "PB2.SND  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x14",
+          "title": "PB3.SND  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x15",
+          "title": "PB4.SND  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x16",
+          "title": "PB5.SND  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x17",
+          "title": "PB6.SND  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x18",
+          "title": "PB7.SND  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x19",
+          "title": "PB8.SND  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x1a",
+          "title": "PB9.SND  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x1b",
+          "title": "PB10.SND :"
+        },
+        {
+          "kind": "comment",
+          "text": "\n\t\t\t<title code=\"0x1c\">PB11.SND : </title>\n"
+        },
+        {
+          "kind": "title",
+          "code": "0x1d",
+          "title": "TEST.SND :"
+        }
+      ],
+      "comments": [
+        " 94年度データ改訂版もデータは同一 "
+      ],
+      "source_file": "xml/nihoncreate.xml",
+      "source_order": 3482,
+      "archive": "syakyu93_98",
+      "id": "syakyu93-98-opn"
+    },
+    {
+      "title": "[PC-9801] Super野球道2",
+      "driver": {
+        "name": "pc98dos",
+        "type": "opn",
+        "alias": "日本クリエイト",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "clockmul",
+          "value": "8"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "SSHD.EXE",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "SS_98.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "FILE1.MSD",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "FILE10.MSD",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "FILE11.MSD",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "FILE12.MSD",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "FILE15.MSD",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "FILE16.MSD",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "FILE17.MSD",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "FILE18.MSD",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "FILE2.MSD",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "FILE3.MSD",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "FILE4.MSD",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "FILE5.MSD",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "FILE6.MSD",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "FILE7.MSD",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "FILE8.MSD",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "FILE9.MSD",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "HOME.MSD",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "HYO.MSD",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "IDOU.MSD",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "IVENT.MSD",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MAKE.MSD",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "NEWS3.MSD",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "NIHON11.MSD",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "PENA.MSD",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "PENANT.MSD",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "RG3.MSD",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "ｷｬﾝﾌﾟ.MSD",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "ｼｰｽﾞﾝｵﾌ.MSD",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "ﾄﾞﾗﾌﾄ.MSD",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "ﾐｰﾃｨﾝｸﾞ.MSD",
+          "offset": "-1"
+        },
+        {
+          "type": "conin",
+          "path": "FILE1.MSD",
+          "offset": "0x10"
+        },
+        {
+          "type": "conin",
+          "path": "FILE10.MSD",
+          "offset": "0x11"
+        },
+        {
+          "type": "conin",
+          "path": "FILE11.MSD",
+          "offset": "0x12"
+        },
+        {
+          "type": "conin",
+          "path": "FILE12.MSD",
+          "offset": "0x13"
+        },
+        {
+          "type": "conin",
+          "path": "FILE15.MSD",
+          "offset": "0x14"
+        },
+        {
+          "type": "conin",
+          "path": "FILE16.MSD",
+          "offset": "0x15"
+        },
+        {
+          "type": "conin",
+          "path": "FILE17.MSD",
+          "offset": "0x16"
+        },
+        {
+          "type": "conin",
+          "path": "FILE18.MSD",
+          "offset": "0x17"
+        },
+        {
+          "type": "conin",
+          "path": "FILE2.MSD",
+          "offset": "0x18"
+        },
+        {
+          "type": "conin",
+          "path": "FILE3.MSD",
+          "offset": "0x19"
+        },
+        {
+          "type": "conin",
+          "path": "FILE4.MSD",
+          "offset": "0x1a"
+        },
+        {
+          "type": "conin",
+          "path": "FILE5.MSD",
+          "offset": "0x1b"
+        },
+        {
+          "type": "conin",
+          "path": "FILE6.MSD",
+          "offset": "0x1c"
+        },
+        {
+          "type": "conin",
+          "path": "FILE7.MSD",
+          "offset": "0x1d"
+        },
+        {
+          "type": "conin",
+          "path": "FILE8.MSD",
+          "offset": "0x1e"
+        },
+        {
+          "type": "conin",
+          "path": "FILE9.MSD",
+          "offset": "0x1f"
+        },
+        {
+          "type": "conin",
+          "path": "HOME.MSD",
+          "offset": "0x20"
+        },
+        {
+          "type": "conin",
+          "path": "HYO.MSD",
+          "offset": "0x21"
+        },
+        {
+          "type": "conin",
+          "path": "IDOU.MSD",
+          "offset": "0x22"
+        },
+        {
+          "type": "conin",
+          "path": "IVENT.MSD",
+          "offset": "0x23"
+        },
+        {
+          "type": "conin",
+          "path": "MAKE.MSD",
+          "offset": "0x24"
+        },
+        {
+          "type": "conin",
+          "path": "NEWS3.MSD",
+          "offset": "0x25"
+        },
+        {
+          "type": "conin",
+          "path": "NIHON11.MSD",
+          "offset": "0x26"
+        },
+        {
+          "type": "conin",
+          "path": "PENA.MSD",
+          "offset": "0x27"
+        },
+        {
+          "type": "conin",
+          "path": "PENANT.MSD",
+          "offset": "0x28"
+        },
+        {
+          "type": "conin",
+          "path": "RG3.MSD",
+          "offset": "0x29"
+        },
+        {
+          "type": "conin",
+          "path": "ｷｬﾝﾌﾟ.MSD",
+          "offset": "0x2a"
+        },
+        {
+          "type": "conin",
+          "path": "ｼｰｽﾞﾝｵﾌ.MSD",
+          "offset": "0x2b"
+        },
+        {
+          "type": "conin",
+          "path": "ﾄﾞﾗﾌﾄ.MSD",
+          "offset": "0x2c"
+        },
+        {
+          "type": "conin",
+          "path": "ﾐｰﾃｨﾝｸﾞ.MSD",
+          "offset": "0x2d"
+        },
+        {
+          "type": "shell",
+          "path": "sshd",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "ss_98",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "FILE1.MSD   :"
+        },
+        {
+          "kind": "title",
+          "code": "0x18",
+          "title": "FILE2.MSD   :"
+        },
+        {
+          "kind": "title",
+          "code": "0x19",
+          "title": "FILE3.MSD   :"
+        },
+        {
+          "kind": "title",
+          "code": "0x1a",
+          "title": "FILE4.MSD   :"
+        },
+        {
+          "kind": "title",
+          "code": "0x1b",
+          "title": "FILE5.MSD   :"
+        },
+        {
+          "kind": "title",
+          "code": "0x1c",
+          "title": "FILE6.MSD   :"
+        },
+        {
+          "kind": "title",
+          "code": "0x1d",
+          "title": "FILE7.MSD   :"
+        },
+        {
+          "kind": "title",
+          "code": "0x1e",
+          "title": "FILE8.MSD   :"
+        },
+        {
+          "kind": "title",
+          "code": "0x1f",
+          "title": "FILE9.MSD   :"
+        },
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "FILE10.MSD  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "FILE11.MSD  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "FILE12.MSD  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x14",
+          "title": "FILE15.MSD  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x15",
+          "title": "FILE16.MSD  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x16",
+          "title": "FILE17.MSD  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x17",
+          "title": "FILE18.MSD  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x20",
+          "title": "HOME.MSD    :"
+        },
+        {
+          "kind": "title",
+          "code": "0x21",
+          "title": "HYO.MSD     :"
+        },
+        {
+          "kind": "title",
+          "code": "0x22",
+          "title": "IDOU.MSD    :"
+        },
+        {
+          "kind": "title",
+          "code": "0x23",
+          "title": "IVENT.MSD   :"
+        },
+        {
+          "kind": "title",
+          "code": "0x24",
+          "title": "MAKE.MSD    :"
+        },
+        {
+          "kind": "title",
+          "code": "0x25",
+          "title": "NEWS3.MSD   :"
+        },
+        {
+          "kind": "title",
+          "code": "0x26",
+          "title": "NIHON11.MSD :"
+        },
+        {
+          "kind": "title",
+          "code": "0x27",
+          "title": "PENA.MSD    :"
+        },
+        {
+          "kind": "title",
+          "code": "0x28",
+          "title": "PENANT.MSD  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x29",
+          "title": "RG3.MSD     :"
+        },
+        {
+          "kind": "title",
+          "code": "0x2a",
+          "title": "ｷｬﾝﾌﾟ.MSD   :"
+        },
+        {
+          "kind": "title",
+          "code": "0x2b",
+          "title": "ｼｰｽﾞﾝｵﾌ.MSD :"
+        },
+        {
+          "kind": "title",
+          "code": "0x2c",
+          "title": "ﾄﾞﾗﾌﾄ.MSD   :"
+        },
+        {
+          "kind": "title",
+          "code": "0x2d",
+          "title": "ﾐｰﾃｨﾝｸﾞ.MSD :"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/nihoncreate.xml",
+      "source_order": 3483,
+      "archive": "syakyu2_98",
+      "id": "syakyu2-98-opn"
+    },
+    {
+      "title": "[MSX] 野球道 - THE WAY TO GLORIA -(PSG)",
+      "driver": {
+        "name": "msx",
+        "type": "generic",
+        "alias": "日本クリエイト",
+        "platform": "MSX"
+      },
+      "options": [
+        {
+          "name": "mdata_addr",
+          "value": "0xc000"
+        },
+        {
+          "name": "mdata_size",
+          "value": "0x1400"
+        },
+        {
+          "name": "mfile_size",
+          "value": "0x1400"
+        },
+        {
+          "name": "init_pc",
+          "value": "0x0400"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "patch",
+          "offset": "0x0400"
+        },
+        {
+          "type": "code",
+          "path": "DRIVER.BIN",
+          "offset": "0x9000"
+        },
+        {
+          "type": "code",
+          "path": "PSG00.BIN",
+          "offset": "0xc000"
+        },
+        {
+          "type": "bgm",
+          "path": "PSG00.BIN",
+          "offset": "0x00"
+        },
+        {
+          "type": "bgm",
+          "path": "PSG01.BIN",
+          "offset": "0x01"
+        },
+        {
+          "type": "bgm",
+          "path": "PSG02.BIN",
+          "offset": "0x02"
+        },
+        {
+          "type": "bgm",
+          "path": "PSG03.BIN",
+          "offset": "0x03"
+        },
+        {
+          "type": "bgm",
+          "path": "PSG04.BIN",
+          "offset": "0x04"
+        },
+        {
+          "type": "bgm",
+          "path": "PSG05.BIN",
+          "offset": "0x05"
+        },
+        {
+          "type": "bgm",
+          "path": "PSG06.BIN",
+          "offset": "0x06"
+        },
+        {
+          "type": "bgm",
+          "path": "PSG07.BIN",
+          "offset": "0x07"
+        },
+        {
+          "type": "bgm",
+          "path": "PSG08.BIN",
+          "offset": "0x08"
+        },
+        {
+          "type": "bgm",
+          "path": "PSG09.BIN",
+          "offset": "0x09"
+        },
+        {
+          "type": "bgm",
+          "path": "PSG10.BIN",
+          "offset": "0x0a"
+        },
+        {
+          "type": "bgm",
+          "path": "PSG11.BIN",
+          "offset": "0x0b"
+        },
+        {
+          "type": "bgm",
+          "path": "PSG12.BIN",
+          "offset": "0x0c"
+        },
+        {
+          "type": "bgm",
+          "path": "PSG13.BIN",
+          "offset": "0x0d"
+        },
+        {
+          "type": "bgm",
+          "path": "PSG14.BIN",
+          "offset": "0x0e"
+        },
+        {
+          "type": "bgm",
+          "path": "PSG15.BIN",
+          "offset": "0x0f"
+        },
+        {
+          "type": "bgm",
+          "path": "PSG16.BIN",
+          "offset": "0x10"
+        },
+        {
+          "type": "bgm",
+          "path": "PSG17.BIN",
+          "offset": "0x11"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "range",
+          "min": "0x00",
+          "max": "0x11",
+          "title_format": "BGM 0x%02x",
+          "extcode": "1"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/nihoncreate.xml",
+      "source_order": 3484,
+      "archive": "yakyudo_msx",
+      "id": "yakyudo-msx-generic"
+    },
+    {
+      "title": "[MSX] 野球道 - THE WAY TO GLORIA -(OPLL)",
+      "driver": {
+        "name": "msx",
+        "type": "generic",
+        "alias": "日本クリエイト",
+        "platform": "MSX"
+      },
+      "options": [
+        {
+          "name": "mdata_addr",
+          "value": "0xc000"
+        },
+        {
+          "name": "mdata_size",
+          "value": "0x1400"
+        },
+        {
+          "name": "mfile_size",
+          "value": "0x1400"
+        },
+        {
+          "name": "init_pc",
+          "value": "0x0400"
+        },
+        {
+          "name": "use_opll",
+          "value": "0x01"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "patch",
+          "offset": "0x0400"
+        },
+        {
+          "type": "code",
+          "path": "DRIVER.BIN",
+          "offset": "0x9000"
+        },
+        {
+          "type": "code",
+          "path": "OPLL00.BIN",
+          "offset": "0xc000"
+        },
+        {
+          "type": "bgm",
+          "path": "OPLL00.BIN",
+          "offset": "0x00"
+        },
+        {
+          "type": "bgm",
+          "path": "OPLL01.BIN",
+          "offset": "0x01"
+        },
+        {
+          "type": "bgm",
+          "path": "OPLL02.BIN",
+          "offset": "0x02"
+        },
+        {
+          "type": "bgm",
+          "path": "OPLL03.BIN",
+          "offset": "0x03"
+        },
+        {
+          "type": "bgm",
+          "path": "OPLL04.BIN",
+          "offset": "0x04"
+        },
+        {
+          "type": "bgm",
+          "path": "OPLL05.BIN",
+          "offset": "0x05"
+        },
+        {
+          "type": "bgm",
+          "path": "OPLL06.BIN",
+          "offset": "0x06"
+        },
+        {
+          "type": "bgm",
+          "path": "OPLL07.BIN",
+          "offset": "0x07"
+        },
+        {
+          "type": "bgm",
+          "path": "OPLL08.BIN",
+          "offset": "0x08"
+        },
+        {
+          "type": "bgm",
+          "path": "OPLL09.BIN",
+          "offset": "0x09"
+        },
+        {
+          "type": "bgm",
+          "path": "OPLL10.BIN",
+          "offset": "0x0a"
+        },
+        {
+          "type": "bgm",
+          "path": "OPLL11.BIN",
+          "offset": "0x0b"
+        },
+        {
+          "type": "bgm",
+          "path": "OPLL12.BIN",
+          "offset": "0x0c"
+        },
+        {
+          "type": "bgm",
+          "path": "OPLL13.BIN",
+          "offset": "0x0d"
+        },
+        {
+          "type": "bgm",
+          "path": "OPLL14.BIN",
+          "offset": "0x0e"
+        },
+        {
+          "type": "bgm",
+          "path": "OPLL15.BIN",
+          "offset": "0x0f"
+        },
+        {
+          "type": "bgm",
+          "path": "OPLL16.BIN",
+          "offset": "0x10"
+        },
+        {
+          "type": "bgm",
+          "path": "OPLL17.BIN",
+          "offset": "0x11"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "range",
+          "min": "0x00",
+          "max": "0x11",
+          "title_format": "BGM 0x%02x",
+          "extcode": "1"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/nihoncreate.xml",
+      "source_order": 3485,
+      "archive": "yakyudo_msx",
+      "id": "yakyudo-msx-generic-2"
+    },
+    {
+      "title": "[MSX] 野球道II(OPLL)",
+      "driver": {
+        "name": "msx",
+        "type": "generic",
+        "alias": "日本クリエイト",
+        "platform": "MSX"
+      },
+      "options": [
+        {
+          "name": "mdata_addr",
+          "value": "0xc500"
+        },
+        {
+          "name": "mdata_size",
+          "value": "0x1400"
+        },
+        {
+          "name": "mfile_size",
+          "value": "0x1400"
+        },
+        {
+          "name": "init_pc",
+          "value": "0x0400"
+        },
+        {
+          "name": "use_opll",
+          "value": "0x01"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "patch",
+          "offset": "0x0400"
+        },
+        {
+          "type": "code",
+          "path": "DRIVER.BIN",
+          "offset": "0xbd00"
+        },
+        {
+          "type": "fmbios",
+          "path": "FMPAC.ROM",
+          "offset": "0x0000"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS00.BIN",
+          "offset": "0x00"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS10.BIN",
+          "offset": "0x01"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS11.BIN",
+          "offset": "0x02"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS12.BIN",
+          "offset": "0x03"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS13.BIN",
+          "offset": "0x04"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS14.BIN",
+          "offset": "0x05"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS15.BIN",
+          "offset": "0x06"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS16.BIN",
+          "offset": "0x07"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS17.BIN",
+          "offset": "0x08"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS18.BIN",
+          "offset": "0x09"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS19.BIN",
+          "offset": "0x0a"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS20.BIN",
+          "offset": "0x0b"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x00",
+          "title": "オープニング"
+        },
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "キャンプ(高知)"
+        },
+        {
+          "kind": "title",
+          "code": "0x02",
+          "title": "キャンプ(宮崎)"
+        },
+        {
+          "kind": "title",
+          "code": "0x03",
+          "title": "キャンプ(沖縄)"
+        },
+        {
+          "kind": "title",
+          "code": "0x04",
+          "title": "キャンプ(グアム)"
+        },
+        {
+          "kind": "title",
+          "code": "0x05",
+          "title": "キャンプ(アリゾナ)"
+        },
+        {
+          "kind": "title",
+          "code": "0x06",
+          "title": "キャンプ(ハワイ)"
+        },
+        {
+          "kind": "range",
+          "min": "0x07",
+          "max": "0x09",
+          "title_format": "BGM 0x%02x",
+          "extcode": "1"
+        },
+        {
+          "kind": "title",
+          "code": "0x0a",
+          "title": "戦略中"
+        },
+        {
+          "kind": "title",
+          "code": "0x0b",
+          "title": "メイキング"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/nihoncreate.xml",
+      "source_order": 3486,
+      "archive": "yakyudo2_msx,fmpac_msx",
+      "id": "yakyudo2-msx-fmpac-msx-generic"
+    },
+    {
+      "title": "[MSX] 野球道II(PSG)",
+      "driver": {
+        "name": "msx",
+        "type": "generic",
+        "alias": "日本クリエイト",
+        "platform": "MSX"
+      },
+      "options": [
+        {
+          "name": "mdata_addr",
+          "value": "0xc500"
+        },
+        {
+          "name": "mdata_size",
+          "value": "0x1400"
+        },
+        {
+          "name": "mfile_size",
+          "value": "0x1400"
+        },
+        {
+          "name": "init_pc",
+          "value": "0x0400"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "patch",
+          "offset": "0x0400"
+        },
+        {
+          "type": "code",
+          "path": "DRIVER.BIN",
+          "offset": "0xbd00"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS00.BIN",
+          "offset": "0x00"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS10.BIN",
+          "offset": "0x01"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS11.BIN",
+          "offset": "0x02"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS12.BIN",
+          "offset": "0x03"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS13.BIN",
+          "offset": "0x04"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS14.BIN",
+          "offset": "0x05"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS15.BIN",
+          "offset": "0x06"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS16.BIN",
+          "offset": "0x07"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS17.BIN",
+          "offset": "0x08"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS18.BIN",
+          "offset": "0x09"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS19.BIN",
+          "offset": "0x0a"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS20.BIN",
+          "offset": "0x0b"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x00",
+          "title": "オープニング"
+        },
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "キャンプ(高知)"
+        },
+        {
+          "kind": "title",
+          "code": "0x02",
+          "title": "キャンプ(宮崎)"
+        },
+        {
+          "kind": "title",
+          "code": "0x03",
+          "title": "キャンプ(沖縄)"
+        },
+        {
+          "kind": "title",
+          "code": "0x04",
+          "title": "キャンプ(グアム)"
+        },
+        {
+          "kind": "title",
+          "code": "0x05",
+          "title": "キャンプ(アリゾナ)"
+        },
+        {
+          "kind": "title",
+          "code": "0x06",
+          "title": "キャンプ(ハワイ)"
+        },
+        {
+          "kind": "range",
+          "min": "0x07",
+          "max": "0x09",
+          "title_format": "BGM 0x%02x",
+          "extcode": "1"
+        },
+        {
+          "kind": "title",
+          "code": "0x0a",
+          "title": "戦略中"
+        },
+        {
+          "kind": "title",
+          "code": "0x0b",
+          "title": "メイキング"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/nihoncreate.xml",
+      "source_order": 3487,
+      "archive": "yakyudo2_msx",
+      "id": "yakyudo2-msx-generic"
+    },
+    {
+      "title": "[PC-9801] フルーツパック 3x3EYESに夢中なの!",
+      "driver": {
+        "name": "pc98dos",
+        "type": "opn",
+        "alias": "日本クリエイト",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "clockmul",
+          "value": "8"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "SDRV.SYS",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "SDRV_98.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "device",
+          "path": "sdrv.sys",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "sdrv_98",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x01000004",
+          "title": "04 : 通常BGM"
+        },
+        {
+          "kind": "title",
+          "code": "0x01000003",
+          "title": "03 : ホームラン"
+        },
+        {
+          "kind": "title",
+          "code": "0x01000001",
+          "title": "01 : SE"
+        },
+        {
+          "kind": "title",
+          "code": "0x01000002",
+          "title": "02 : SE"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/nihoncreate.xml",
+      "source_order": 3488,
+      "archive": "frutpak1_98",
+      "id": "frutpak1-98-opn"
+    }
+  ]
+}

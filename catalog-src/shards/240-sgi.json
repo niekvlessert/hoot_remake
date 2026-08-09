@@ -1,0 +1,151 @@
+{
+  "format": "hoot-catalog-shard",
+  "version": 1,
+  "source_file": "xml/sgi.xml",
+  "date": "2005/09/25",
+  "comments": [
+    " //S.G.I "
+  ],
+  "games": [
+    {
+      "title": "[MSX] WINNING SOLUTION",
+      "driver": {
+        "name": "msx",
+        "type": "generic",
+        "alias": "S.G.I",
+        "platform": "MSX"
+      },
+      "options": [
+        {
+          "name": "mdata_addr",
+          "value": "0xbba9"
+        },
+        {
+          "name": "mdata_size",
+          "value": "0x0300"
+        },
+        {
+          "name": "mfile_size",
+          "value": "0x0300"
+        },
+        {
+          "name": "init_pc",
+          "value": "0x0400"
+        },
+        {
+          "name": "use_opll",
+          "value": "0x01"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "patch",
+          "offset": "0x0400"
+        },
+        {
+          "type": "code",
+          "path": "ALL.BIN",
+          "offset": "0xb9b9"
+        },
+        {
+          "type": "fmbios",
+          "path": "FMPAC.ROM",
+          "offset": "0x0000"
+        },
+        {
+          "type": "bgm",
+          "path": "AJITO.MD",
+          "offset": "0x00"
+        },
+        {
+          "type": "bgm",
+          "path": "END.MD",
+          "offset": "0x01"
+        },
+        {
+          "type": "bgm",
+          "path": "FAN1.MD",
+          "offset": "0x02"
+        },
+        {
+          "type": "bgm",
+          "path": "GAME.MD",
+          "offset": "0x03"
+        },
+        {
+          "type": "bgm",
+          "path": "KICHI.MD",
+          "offset": "0x04"
+        },
+        {
+          "type": "bgm",
+          "path": "MACHI.MD",
+          "offset": "0x05"
+        },
+        {
+          "type": "bgm",
+          "path": "ROJYOU.MD",
+          "offset": "0x06"
+        },
+        {
+          "type": "bgm",
+          "path": "WARM.MD",
+          "offset": "0x07"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x0008",
+          "title": "ALL.BIN"
+        },
+        {
+          "kind": "title",
+          "code": "0x0004",
+          "title": "KICHI.MD"
+        },
+        {
+          "kind": "title",
+          "code": "0x0005",
+          "title": "MACHI.MD"
+        },
+        {
+          "kind": "title",
+          "code": "0x0006",
+          "title": "ROJYOU.MD"
+        },
+        {
+          "kind": "title",
+          "code": "0x0000",
+          "title": "AJITO.MD"
+        },
+        {
+          "kind": "title",
+          "code": "0x0003",
+          "title": "GAME.MD"
+        },
+        {
+          "kind": "title",
+          "code": "0x0007",
+          "title": "WARM.MD"
+        },
+        {
+          "kind": "title",
+          "code": "0x0101",
+          "title": "END.MD"
+        },
+        {
+          "kind": "title",
+          "code": "0x0102",
+          "title": "FAN1.MD"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/sgi.xml",
+      "source_order": 3993,
+      "archive": "winsltn_msx,fmpac_msx",
+      "id": "winsltn-msx-fmpac-msx-generic"
+    }
+  ]
+}

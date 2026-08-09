@@ -1,0 +1,8474 @@
+{
+  "format": "hoot-catalog-shard",
+  "version": 1,
+  "source_file": "xml/discovery.xml",
+  "date": "2005/09/25",
+  "comments": [
+    " //DISCOVERY "
+  ],
+  "games": [
+    {
+      "title": "[PC-9801] Mirage(OPN)",
+      "driver": {
+        "name": "pc98dos",
+        "type": "opn",
+        "alias": "DISCOVERY",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "clockmul",
+          "value": "8"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "MIRAG_98.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MIRAGE.EXE",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "ML.OP1",
+          "offset": "6"
+        },
+        {
+          "type": "file",
+          "path": "ML.SS1",
+          "offset": "7"
+        },
+        {
+          "type": "file",
+          "path": "MIRAGE.EF1",
+          "offset": "8"
+        },
+        {
+          "type": "file",
+          "path": "ML00.MF1",
+          "offset": "0x10"
+        },
+        {
+          "type": "file",
+          "path": "ML01.MF1",
+          "offset": "0x11"
+        },
+        {
+          "type": "file",
+          "path": "ML02.MF1",
+          "offset": "0x12"
+        },
+        {
+          "type": "file",
+          "path": "ML03.MF1",
+          "offset": "0x13"
+        },
+        {
+          "type": "file",
+          "path": "ML04.MF1",
+          "offset": "0x14"
+        },
+        {
+          "type": "file",
+          "path": "ML05.MF1",
+          "offset": "0x15"
+        },
+        {
+          "type": "file",
+          "path": "ML06.MF1",
+          "offset": "0x16"
+        },
+        {
+          "type": "file",
+          "path": "ML07.MF1",
+          "offset": "0x17"
+        },
+        {
+          "type": "file",
+          "path": "ML08.MF1",
+          "offset": "0x18"
+        },
+        {
+          "type": "file",
+          "path": "ML09.MF1",
+          "offset": "0x19"
+        },
+        {
+          "type": "file",
+          "path": "ML10.MF1",
+          "offset": "0x1a"
+        },
+        {
+          "type": "file",
+          "path": "ML11.MF1",
+          "offset": "0x1b"
+        },
+        {
+          "type": "file",
+          "path": "ML12.MF1",
+          "offset": "0x1c"
+        },
+        {
+          "type": "file",
+          "path": "ML13.MF1",
+          "offset": "0x1d"
+        },
+        {
+          "type": "shell",
+          "path": "MIRAG_98",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "ML00.MF1 : メイン・テーマ"
+        },
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "ML01.MF1 : 魔法使いの弟子"
+        },
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "ML02.MF1 : パリッシュ・ブルー"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "ML03.MF1 : ステップ・アップ"
+        },
+        {
+          "kind": "title",
+          "code": "0x1d",
+          "title": "ML13.MF1 : アローン"
+        },
+        {
+          "kind": "title",
+          "code": "0x14",
+          "title": "ML04.MF1 : ライト・ステップ"
+        },
+        {
+          "kind": "title",
+          "code": "0x15",
+          "title": "ML05.MF1 : スパークル"
+        },
+        {
+          "kind": "title",
+          "code": "0x16",
+          "title": "ML06.MF1 : ミニ・ストップ"
+        },
+        {
+          "kind": "title",
+          "code": "0x17",
+          "title": "ML07.MF1 : アクアのテーマ"
+        },
+        {
+          "kind": "title",
+          "code": "0x18",
+          "title": "ML08.MF1 : 魔王マルデューク"
+        },
+        {
+          "kind": "title",
+          "code": "0x19",
+          "title": "ML09.MF1 : 神々のたそがれ"
+        },
+        {
+          "kind": "title",
+          "code": "0x1a",
+          "title": "ML10.MF1 : コーダ"
+        },
+        {
+          "kind": "title",
+          "code": "0x1b",
+          "title": "ML11.MF1 : シューティング・スター"
+        },
+        {
+          "kind": "title",
+          "code": "0x1c",
+          "title": "ML12.MF1 : マジックグラフィー"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/discovery.xml",
+      "source_order": 1090,
+      "archive": "mirage_98",
+      "id": "mirage-98-opn"
+    },
+    {
+      "title": "[PC-9801] Mirage(MT-32)",
+      "driver": {
+        "name": "pc98dos",
+        "type": "beep",
+        "alias": "DISCOVERY",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "clockmul",
+          "value": "8"
+        },
+        {
+          "name": "midiout",
+          "value": "1"
+        },
+        {
+          "name": "midiout_type",
+          "value": "2"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "mirag_98.com",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MIRAGE.EXE",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "ML00.MD1",
+          "offset": "0x10"
+        },
+        {
+          "type": "file",
+          "path": "ML01.MD1",
+          "offset": "0x11"
+        },
+        {
+          "type": "file",
+          "path": "ML02.MD1",
+          "offset": "0x12"
+        },
+        {
+          "type": "file",
+          "path": "ML03.MD1",
+          "offset": "0x13"
+        },
+        {
+          "type": "file",
+          "path": "ML04.MD1",
+          "offset": "0x14"
+        },
+        {
+          "type": "file",
+          "path": "ML05.MD1",
+          "offset": "0x15"
+        },
+        {
+          "type": "file",
+          "path": "ML06.MD1",
+          "offset": "0x16"
+        },
+        {
+          "type": "file",
+          "path": "ML07.MD1",
+          "offset": "0x17"
+        },
+        {
+          "type": "file",
+          "path": "ML08.MD1",
+          "offset": "0x18"
+        },
+        {
+          "type": "file",
+          "path": "ML09.MD1",
+          "offset": "0x19"
+        },
+        {
+          "type": "file",
+          "path": "ML10.MD1",
+          "offset": "0x1a"
+        },
+        {
+          "type": "file",
+          "path": "ML11.MD1",
+          "offset": "0x1b"
+        },
+        {
+          "type": "file",
+          "path": "ML12.MD1",
+          "offset": "0x1c"
+        },
+        {
+          "type": "file",
+          "path": "ML13.MD1",
+          "offset": "0x1d"
+        },
+        {
+          "type": "shell",
+          "path": "mirag_98",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x110",
+          "title": "ML00.MD1 : メイン・テーマ"
+        },
+        {
+          "kind": "title",
+          "code": "0x111",
+          "title": "ML01.MD1 : 魔法使いの弟子"
+        },
+        {
+          "kind": "title",
+          "code": "0x112",
+          "title": "ML02.MD1 : パリッシュ・ブルー"
+        },
+        {
+          "kind": "title",
+          "code": "0x113",
+          "title": "ML03.MD1 : ステップ・アップ"
+        },
+        {
+          "kind": "title",
+          "code": "0x11d",
+          "title": "ML13.MD1 : アローン"
+        },
+        {
+          "kind": "title",
+          "code": "0x114",
+          "title": "ML04.MD1 : ライト・ステップ"
+        },
+        {
+          "kind": "title",
+          "code": "0x115",
+          "title": "ML05.MD1 : スパークル"
+        },
+        {
+          "kind": "title",
+          "code": "0x116",
+          "title": "ML06.MD1 : ミニ・ストップ"
+        },
+        {
+          "kind": "title",
+          "code": "0x117",
+          "title": "ML07.MD1 : アクアのテーマ"
+        },
+        {
+          "kind": "title",
+          "code": "0x118",
+          "title": "ML08.MD1 : 魔王マルデューク"
+        },
+        {
+          "kind": "title",
+          "code": "0x119",
+          "title": "ML09.MD1 : 神々のたそがれ"
+        },
+        {
+          "kind": "title",
+          "code": "0x11a",
+          "title": "ML10.MD1 : コーダ"
+        },
+        {
+          "kind": "title",
+          "code": "0x11b",
+          "title": "ML11.MD1 : シューティング・スター"
+        },
+        {
+          "kind": "title",
+          "code": "0x11c",
+          "title": "ML12.MD1 : マジックグラフィー"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/discovery.xml",
+      "source_order": 1091,
+      "archive": "mirage_98",
+      "id": "mirage-98-beep"
+    },
+    {
+      "title": "[PC-9801] Mirage(MT-32 Emulation)",
+      "driver": {
+        "name": "pc98dos",
+        "type": "beep",
+        "alias": "DISCOVERY",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "clockmul",
+          "value": "8"
+        },
+        {
+          "name": "midiout",
+          "value": "1"
+        },
+        {
+          "name": "midiout_type",
+          "value": "1"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "mirag_98.com",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MIRAGE.EXE",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "ML00.MD1",
+          "offset": "0x10"
+        },
+        {
+          "type": "file",
+          "path": "ML01.MD1",
+          "offset": "0x11"
+        },
+        {
+          "type": "file",
+          "path": "ML02.MD1",
+          "offset": "0x12"
+        },
+        {
+          "type": "file",
+          "path": "ML03.MD1",
+          "offset": "0x13"
+        },
+        {
+          "type": "file",
+          "path": "ML04.MD1",
+          "offset": "0x14"
+        },
+        {
+          "type": "file",
+          "path": "ML05.MD1",
+          "offset": "0x15"
+        },
+        {
+          "type": "file",
+          "path": "ML06.MD1",
+          "offset": "0x16"
+        },
+        {
+          "type": "file",
+          "path": "ML07.MD1",
+          "offset": "0x17"
+        },
+        {
+          "type": "file",
+          "path": "ML08.MD1",
+          "offset": "0x18"
+        },
+        {
+          "type": "file",
+          "path": "ML09.MD1",
+          "offset": "0x19"
+        },
+        {
+          "type": "file",
+          "path": "ML10.MD1",
+          "offset": "0x1a"
+        },
+        {
+          "type": "file",
+          "path": "ML11.MD1",
+          "offset": "0x1b"
+        },
+        {
+          "type": "file",
+          "path": "ML12.MD1",
+          "offset": "0x1c"
+        },
+        {
+          "type": "file",
+          "path": "ML13.MD1",
+          "offset": "0x1d"
+        },
+        {
+          "type": "shell",
+          "path": "mirag_98",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x110",
+          "title": "ML00.MD1 : メイン・テーマ"
+        },
+        {
+          "kind": "title",
+          "code": "0x111",
+          "title": "ML01.MD1 : 魔法使いの弟子"
+        },
+        {
+          "kind": "title",
+          "code": "0x112",
+          "title": "ML02.MD1 : パリッシュ・ブルー"
+        },
+        {
+          "kind": "title",
+          "code": "0x113",
+          "title": "ML03.MD1 : ステップ・アップ"
+        },
+        {
+          "kind": "title",
+          "code": "0x11d",
+          "title": "ML13.MD1 : アローン"
+        },
+        {
+          "kind": "title",
+          "code": "0x114",
+          "title": "ML04.MD1 : ライト・ステップ"
+        },
+        {
+          "kind": "title",
+          "code": "0x115",
+          "title": "ML05.MD1 : スパークル"
+        },
+        {
+          "kind": "title",
+          "code": "0x116",
+          "title": "ML06.MD1 : ミニ・ストップ"
+        },
+        {
+          "kind": "title",
+          "code": "0x117",
+          "title": "ML07.MD1 : アクアのテーマ"
+        },
+        {
+          "kind": "title",
+          "code": "0x118",
+          "title": "ML08.MD1 : 魔王マルデューク"
+        },
+        {
+          "kind": "title",
+          "code": "0x119",
+          "title": "ML09.MD1 : 神々のたそがれ"
+        },
+        {
+          "kind": "title",
+          "code": "0x11a",
+          "title": "ML10.MD1 : コーダ"
+        },
+        {
+          "kind": "title",
+          "code": "0x11b",
+          "title": "ML11.MD1 : シューティング・スター"
+        },
+        {
+          "kind": "title",
+          "code": "0x11c",
+          "title": "ML12.MD1 : マジックグラフィー"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/discovery.xml",
+      "source_order": 1092,
+      "archive": "mirage_98",
+      "id": "mirage-98-beep-2"
+    },
+    {
+      "title": "[PC-9801] Mirage2 トリーXニートXローンの大冒険(OPN)",
+      "driver": {
+        "name": "pc98dos",
+        "type": "opn",
+        "alias": "DISCOVERY",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "funcvect",
+          "value": "0x7e"
+        },
+        {
+          "name": "clockmul",
+          "value": "8"
+        },
+        {
+          "name": "showfm3ex",
+          "value": "1"
+        },
+        {
+          "name": "ssg_mix",
+          "value": "-18"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "PMD_98.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "PMD.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MIRAGE2.EFC",
+          "offset": "0x08"
+        },
+        {
+          "type": "file",
+          "path": "T_01.M",
+          "offset": "0x10"
+        },
+        {
+          "type": "file",
+          "path": "T_02.M",
+          "offset": "0x11"
+        },
+        {
+          "type": "file",
+          "path": "T_03.M",
+          "offset": "0x12"
+        },
+        {
+          "type": "file",
+          "path": "T_04.M",
+          "offset": "0x13"
+        },
+        {
+          "type": "file",
+          "path": "T_05.M",
+          "offset": "0x14"
+        },
+        {
+          "type": "file",
+          "path": "T_06.M",
+          "offset": "0x15"
+        },
+        {
+          "type": "file",
+          "path": "T_07.M",
+          "offset": "0x16"
+        },
+        {
+          "type": "file",
+          "path": "T_08.M",
+          "offset": "0x17"
+        },
+        {
+          "type": "file",
+          "path": "T_09.M",
+          "offset": "0x18"
+        },
+        {
+          "type": "file",
+          "path": "T_10.M",
+          "offset": "0x19"
+        },
+        {
+          "type": "file",
+          "path": "T_11.M",
+          "offset": "0x1A"
+        },
+        {
+          "type": "file",
+          "path": "T_12.M",
+          "offset": "0x1B"
+        },
+        {
+          "type": "file",
+          "path": "T_13.M",
+          "offset": "0x1C"
+        },
+        {
+          "type": "file",
+          "path": "T_14.M",
+          "offset": "0x1D"
+        },
+        {
+          "type": "file",
+          "path": "SE_19.M",
+          "offset": "0x1E"
+        },
+        {
+          "type": "shell",
+          "path": "PMD # /K /M12 /E2 /V1",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "pmd_98",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "T_01.M      : シーガム・マジック(ミラージュ2のテーマ)"
+        },
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "T_02.M      : ウォーターライン"
+        },
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "T_03.M      : ブルー・スカイ・カクテル"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "T_04.M      : 素直な気持ち"
+        },
+        {
+          "kind": "title",
+          "code": "0x14",
+          "title": "T_05.M      : ポップンロール"
+        },
+        {
+          "kind": "title",
+          "code": "0x15",
+          "title": "T_06.M      : ドラゴン・ロード"
+        },
+        {
+          "kind": "title",
+          "code": "0x16",
+          "title": "T_07.M      : ルート・アドベンチャラス"
+        },
+        {
+          "kind": "title",
+          "code": "0x17",
+          "title": "T_08.M      : クロス・ファイヤー"
+        },
+        {
+          "kind": "title",
+          "code": "0x18",
+          "title": "T_09.M      : ピーチ・ブレイク"
+        },
+        {
+          "kind": "title",
+          "code": "0x19",
+          "title": "T_10.M      : エビル・ストーム"
+        },
+        {
+          "kind": "title",
+          "code": "0x1A",
+          "title": "T_11.M      : 紅蓮の魂"
+        },
+        {
+          "kind": "title",
+          "code": "0x1B",
+          "title": "T_12.M      : 幻想のテーマ"
+        },
+        {
+          "kind": "title",
+          "code": "0x1C",
+          "title": "T_13.M      : リバース・バイ・デス"
+        },
+        {
+          "kind": "title",
+          "code": "0x1D",
+          "title": "T_14.M      : 処女航海"
+        },
+        {
+          "kind": "title",
+          "code": "0x801",
+          "title": "MIRAGE2.EFC : ウインドウが開く音"
+        },
+        {
+          "kind": "title",
+          "code": "0x802",
+          "title": "MIRAGE2.EFC : 選択肢のカーソルが動く音"
+        },
+        {
+          "kind": "title",
+          "code": "0x803",
+          "title": "MIRAGE2.EFC : コマンドを選択した音"
+        },
+        {
+          "kind": "title",
+          "code": "0x804",
+          "title": "MIRAGE2.EFC : コマンドをキャンセルした音"
+        },
+        {
+          "kind": "title",
+          "code": "0x805",
+          "title": "MIRAGE2.EFC : ダンジョンを歩く音"
+        },
+        {
+          "kind": "title",
+          "code": "0x806",
+          "title": "MIRAGE2.EFC : ダンジョンの扉を通り抜けた音"
+        },
+        {
+          "kind": "title",
+          "code": "0x807",
+          "title": "MIRAGE2.EFC : ダンジョンの壁にぶつかった音"
+        },
+        {
+          "kind": "title",
+          "code": "0x808",
+          "title": "MIRAGE2.EFC : 鍵を開けた音"
+        },
+        {
+          "kind": "title",
+          "code": "0x809",
+          "title": "MIRAGE2.EFC : スイッチを動かした音"
+        },
+        {
+          "kind": "title",
+          "code": "0x80a",
+          "title": "MIRAGE2.EFC : 剣で攻撃が命中した音"
+        },
+        {
+          "kind": "title",
+          "code": "0x80b",
+          "title": "MIRAGE2.EFC : 剣で攻撃が外れた音"
+        },
+        {
+          "kind": "title",
+          "code": "0x80c",
+          "title": "MIRAGE2.EFC : 攻撃魔法の音"
+        },
+        {
+          "kind": "title",
+          "code": "0x80d",
+          "title": "MIRAGE2.EFC : 治癒魔法の音"
+        },
+        {
+          "kind": "title",
+          "code": "0x80e",
+          "title": "MIRAGE2.EFC : モンスターを倒した音"
+        },
+        {
+          "kind": "title",
+          "code": "0x80f",
+          "title": "MIRAGE2.EFC : モンスターの通常攻撃の音"
+        },
+        {
+          "kind": "title",
+          "code": "0x810",
+          "title": "MIRAGE2.EFC : モンスターの攻撃をかわした音"
+        },
+        {
+          "kind": "title",
+          "code": "0x811",
+          "title": "MIRAGE2.EFC : モンスターの攻撃魔法の音"
+        },
+        {
+          "kind": "title",
+          "code": "0x812",
+          "title": "MIRAGE2.EFC : モンスターの攻撃を食らった音"
+        },
+        {
+          "kind": "title",
+          "code": "0x1E",
+          "title": "SE_19.M2    : 魔力の音"
+        }
+      ],
+      "comments": [
+        " PMD.COM は ver 4.8p を使用 "
+      ],
+      "source_file": "xml/discovery.xml",
+      "source_order": 1093,
+      "archive": "mirage2_98",
+      "id": "mirage2-98-opn"
+    },
+    {
+      "title": "[PC-9801] Mirage2 トリーXニートXローンの大冒険(OPNA)",
+      "driver": {
+        "name": "pc98dos",
+        "type": "opna",
+        "alias": "DISCOVERY",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "funcvect",
+          "value": "0x7e"
+        },
+        {
+          "name": "clockmul",
+          "value": "8"
+        },
+        {
+          "name": "showfm3ex",
+          "value": "1"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "PMD_98.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "PMDB2.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MIRAGE2.EFC",
+          "offset": "0x08"
+        },
+        {
+          "type": "file",
+          "path": "T_01.M2",
+          "offset": "0x10"
+        },
+        {
+          "type": "file",
+          "path": "T_02.M2",
+          "offset": "0x11"
+        },
+        {
+          "type": "file",
+          "path": "T_03.M2",
+          "offset": "0x12"
+        },
+        {
+          "type": "file",
+          "path": "T_04.M2",
+          "offset": "0x13"
+        },
+        {
+          "type": "file",
+          "path": "T_05.M2",
+          "offset": "0x14"
+        },
+        {
+          "type": "file",
+          "path": "T_06.M2",
+          "offset": "0x15"
+        },
+        {
+          "type": "file",
+          "path": "T_07.M2",
+          "offset": "0x16"
+        },
+        {
+          "type": "file",
+          "path": "T_08.M2",
+          "offset": "0x17"
+        },
+        {
+          "type": "file",
+          "path": "T_09.M2",
+          "offset": "0x18"
+        },
+        {
+          "type": "file",
+          "path": "T_10.M2",
+          "offset": "0x19"
+        },
+        {
+          "type": "file",
+          "path": "T_11.M2",
+          "offset": "0x1A"
+        },
+        {
+          "type": "file",
+          "path": "T_12.M2",
+          "offset": "0x1B"
+        },
+        {
+          "type": "file",
+          "path": "T_13.M2",
+          "offset": "0x1C"
+        },
+        {
+          "type": "file",
+          "path": "T_14.M2",
+          "offset": "0x1D"
+        },
+        {
+          "type": "file",
+          "path": "SE_19.M2",
+          "offset": "0x1E"
+        },
+        {
+          "type": "shell",
+          "path": "PMDB2 # /K /M12 /E2 /V1",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "pmd_98",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "T_01.M2     : シーガム・マジック(ミラージュ2のテーマ)"
+        },
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "T_02.M2     : ウォーターライン"
+        },
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "T_03.M2     : ブルー・スカイ・カクテル"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "T_04.M2     : 素直な気持ち"
+        },
+        {
+          "kind": "title",
+          "code": "0x14",
+          "title": "T_05.M2     : ポップンロール"
+        },
+        {
+          "kind": "title",
+          "code": "0x15",
+          "title": "T_06.M2     : ドラゴン・ロード"
+        },
+        {
+          "kind": "title",
+          "code": "0x16",
+          "title": "T_07.M2     : ルート・アドベンチャラス"
+        },
+        {
+          "kind": "title",
+          "code": "0x17",
+          "title": "T_08.M2     : クロス・ファイヤー"
+        },
+        {
+          "kind": "title",
+          "code": "0x18",
+          "title": "T_09.M2     : ピーチ・ブレイク"
+        },
+        {
+          "kind": "title",
+          "code": "0x19",
+          "title": "T_10.M2     : エビル・ストーム"
+        },
+        {
+          "kind": "title",
+          "code": "0x1A",
+          "title": "T_11.M2     : 紅蓮の魂"
+        },
+        {
+          "kind": "title",
+          "code": "0x1B",
+          "title": "T_12.M2     : 幻想のテーマ"
+        },
+        {
+          "kind": "title",
+          "code": "0x1C",
+          "title": "T_13.M2     : リバース・バイ・デス"
+        },
+        {
+          "kind": "title",
+          "code": "0x1D",
+          "title": "T_14.M2     : 処女航海"
+        },
+        {
+          "kind": "title",
+          "code": "0x801",
+          "title": "MIRAGE2.EFC : ウインドウが開く音"
+        },
+        {
+          "kind": "title",
+          "code": "0x802",
+          "title": "MIRAGE2.EFC : 選択肢のカーソルが動く音"
+        },
+        {
+          "kind": "title",
+          "code": "0x803",
+          "title": "MIRAGE2.EFC : コマンドを選択した音"
+        },
+        {
+          "kind": "title",
+          "code": "0x804",
+          "title": "MIRAGE2.EFC : コマンドをキャンセルした音"
+        },
+        {
+          "kind": "title",
+          "code": "0x805",
+          "title": "MIRAGE2.EFC : ダンジョンを歩く音"
+        },
+        {
+          "kind": "title",
+          "code": "0x806",
+          "title": "MIRAGE2.EFC : ダンジョンの扉を通り抜けた音"
+        },
+        {
+          "kind": "title",
+          "code": "0x807",
+          "title": "MIRAGE2.EFC : ダンジョンの壁にぶつかった音"
+        },
+        {
+          "kind": "title",
+          "code": "0x808",
+          "title": "MIRAGE2.EFC : 鍵を開けた音"
+        },
+        {
+          "kind": "title",
+          "code": "0x809",
+          "title": "MIRAGE2.EFC : スイッチを動かした音"
+        },
+        {
+          "kind": "title",
+          "code": "0x80a",
+          "title": "MIRAGE2.EFC : 剣で攻撃が命中した音"
+        },
+        {
+          "kind": "title",
+          "code": "0x80b",
+          "title": "MIRAGE2.EFC : 剣で攻撃が外れた音"
+        },
+        {
+          "kind": "title",
+          "code": "0x80c",
+          "title": "MIRAGE2.EFC : 攻撃魔法の音"
+        },
+        {
+          "kind": "title",
+          "code": "0x80d",
+          "title": "MIRAGE2.EFC : 治癒魔法の音"
+        },
+        {
+          "kind": "title",
+          "code": "0x80e",
+          "title": "MIRAGE2.EFC : モンスターを倒した音"
+        },
+        {
+          "kind": "title",
+          "code": "0x80f",
+          "title": "MIRAGE2.EFC : モンスターの通常攻撃の音"
+        },
+        {
+          "kind": "title",
+          "code": "0x810",
+          "title": "MIRAGE2.EFC : モンスターの攻撃をかわした音"
+        },
+        {
+          "kind": "title",
+          "code": "0x811",
+          "title": "MIRAGE2.EFC : モンスターの攻撃魔法の音"
+        },
+        {
+          "kind": "title",
+          "code": "0x812",
+          "title": "MIRAGE2.EFC : モンスターの攻撃を食らった音"
+        },
+        {
+          "kind": "title",
+          "code": "0x1E",
+          "title": "SE_19.M2    : 魔力の音"
+        }
+      ],
+      "comments": [
+        " PMD.COM は ver 4.8p を使用 "
+      ],
+      "source_file": "xml/discovery.xml",
+      "source_order": 1094,
+      "archive": "mirage2_98",
+      "id": "mirage2-98-opna"
+    },
+    {
+      "title": "[PC-9801] Mirage2 トリーXニートXローンの大冒険(MT-32)",
+      "driver": {
+        "name": "pc98dos",
+        "type": "beep",
+        "alias": "DISCOVERY",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "clockmul",
+          "value": "8"
+        },
+        {
+          "name": "midiout",
+          "value": "1"
+        },
+        {
+          "name": "midiout_type",
+          "value": "2"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "MMP_HOOT.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MMD.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "T_01.MDM",
+          "offset": "0x10"
+        },
+        {
+          "type": "file",
+          "path": "T_02.MDM",
+          "offset": "0x11"
+        },
+        {
+          "type": "file",
+          "path": "T_03.MDM",
+          "offset": "0x12"
+        },
+        {
+          "type": "file",
+          "path": "T_04.MDM",
+          "offset": "0x13"
+        },
+        {
+          "type": "file",
+          "path": "T_05.MDM",
+          "offset": "0x14"
+        },
+        {
+          "type": "file",
+          "path": "T_06.MDM",
+          "offset": "0x15"
+        },
+        {
+          "type": "file",
+          "path": "T_07.MDM",
+          "offset": "0x16"
+        },
+        {
+          "type": "file",
+          "path": "T_08.MDM",
+          "offset": "0x17"
+        },
+        {
+          "type": "file",
+          "path": "T_09.MDM",
+          "offset": "0x18"
+        },
+        {
+          "type": "file",
+          "path": "T_10.MDM",
+          "offset": "0x19"
+        },
+        {
+          "type": "file",
+          "path": "T_11.MDM",
+          "offset": "0x1A"
+        },
+        {
+          "type": "file",
+          "path": "T_12.MDM",
+          "offset": "0x1B"
+        },
+        {
+          "type": "file",
+          "path": "T_13.MDM",
+          "offset": "0x1C"
+        },
+        {
+          "type": "file",
+          "path": "T_14.MDM",
+          "offset": "0x1D"
+        },
+        {
+          "type": "file",
+          "path": "SE_19.MDM",
+          "offset": "0x1E"
+        },
+        {
+          "type": "shell",
+          "path": "MMD",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "MMP_HOOT",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "T_01.MDM  : シーガム・マジック(ミラージュ2のテーマ)"
+        },
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "T_02.MDM  : ウォーターライン"
+        },
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "T_03.MDM  : ブルー・スカイ・カクテル"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "T_04.MDM  : 素直な気持ち"
+        },
+        {
+          "kind": "title",
+          "code": "0x14",
+          "title": "T_05.MDM  : ポップンロール"
+        },
+        {
+          "kind": "title",
+          "code": "0x15",
+          "title": "T_06.MDM  : ドラゴン・ロード"
+        },
+        {
+          "kind": "title",
+          "code": "0x16",
+          "title": "T_07.MDM  : ルート・アドベンチャラス"
+        },
+        {
+          "kind": "title",
+          "code": "0x17",
+          "title": "T_08.MDM  : クロス・ファイヤー"
+        },
+        {
+          "kind": "title",
+          "code": "0x18",
+          "title": "T_09.MDM  : ピーチ・ブレイク"
+        },
+        {
+          "kind": "title",
+          "code": "0x19",
+          "title": "T_10.MDM  : エビル・ストーム"
+        },
+        {
+          "kind": "title",
+          "code": "0x1A",
+          "title": "T_11.MDM  : 紅蓮の魂"
+        },
+        {
+          "kind": "title",
+          "code": "0x1B",
+          "title": "T_12.MDM  : 幻想のテーマ"
+        },
+        {
+          "kind": "title",
+          "code": "0x1C",
+          "title": "T_13.MDM  : リバース・バイ・デス"
+        },
+        {
+          "kind": "title",
+          "code": "0x1D",
+          "title": "T_14.MDM  : 処女航海"
+        },
+        {
+          "kind": "title",
+          "code": "0x1E",
+          "title": "SE_19.MDM : ぶーん ぶーん"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/discovery.xml",
+      "source_order": 1095,
+      "archive": "mirage2_98",
+      "id": "mirage2-98-beep"
+    },
+    {
+      "title": "[PC-9801] Mirage2 トリーXニートXローンの大冒険(MT-32 Emulation)",
+      "driver": {
+        "name": "pc98dos",
+        "type": "beep",
+        "alias": "DISCOVERY",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "clockmul",
+          "value": "8"
+        },
+        {
+          "name": "midiout",
+          "value": "1"
+        },
+        {
+          "name": "midiout_type",
+          "value": "1"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "MMP_HOOT.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MMD.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "T_01.MDM",
+          "offset": "0x10"
+        },
+        {
+          "type": "file",
+          "path": "T_02.MDM",
+          "offset": "0x11"
+        },
+        {
+          "type": "file",
+          "path": "T_03.MDM",
+          "offset": "0x12"
+        },
+        {
+          "type": "file",
+          "path": "T_04.MDM",
+          "offset": "0x13"
+        },
+        {
+          "type": "file",
+          "path": "T_05.MDM",
+          "offset": "0x14"
+        },
+        {
+          "type": "file",
+          "path": "T_06.MDM",
+          "offset": "0x15"
+        },
+        {
+          "type": "file",
+          "path": "T_07.MDM",
+          "offset": "0x16"
+        },
+        {
+          "type": "file",
+          "path": "T_08.MDM",
+          "offset": "0x17"
+        },
+        {
+          "type": "file",
+          "path": "T_09.MDM",
+          "offset": "0x18"
+        },
+        {
+          "type": "file",
+          "path": "T_10.MDM",
+          "offset": "0x19"
+        },
+        {
+          "type": "file",
+          "path": "T_11.MDM",
+          "offset": "0x1A"
+        },
+        {
+          "type": "file",
+          "path": "T_12.MDM",
+          "offset": "0x1B"
+        },
+        {
+          "type": "file",
+          "path": "T_13.MDM",
+          "offset": "0x1C"
+        },
+        {
+          "type": "file",
+          "path": "T_14.MDM",
+          "offset": "0x1D"
+        },
+        {
+          "type": "file",
+          "path": "SE_19.MDM",
+          "offset": "0x1E"
+        },
+        {
+          "type": "shell",
+          "path": "MMD",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "MMP_HOOT",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "T_01.MDM  : シーガム・マジック(ミラージュ2のテーマ)"
+        },
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "T_02.MDM  : ウォーターライン"
+        },
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "T_03.MDM  : ブルー・スカイ・カクテル"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "T_04.MDM  : 素直な気持ち"
+        },
+        {
+          "kind": "title",
+          "code": "0x14",
+          "title": "T_05.MDM  : ポップンロール"
+        },
+        {
+          "kind": "title",
+          "code": "0x15",
+          "title": "T_06.MDM  : ドラゴン・ロード"
+        },
+        {
+          "kind": "title",
+          "code": "0x16",
+          "title": "T_07.MDM  : ルート・アドベンチャラス"
+        },
+        {
+          "kind": "title",
+          "code": "0x17",
+          "title": "T_08.MDM  : クロス・ファイヤー"
+        },
+        {
+          "kind": "title",
+          "code": "0x18",
+          "title": "T_09.MDM  : ピーチ・ブレイク"
+        },
+        {
+          "kind": "title",
+          "code": "0x19",
+          "title": "T_10.MDM  : エビル・ストーム"
+        },
+        {
+          "kind": "title",
+          "code": "0x1A",
+          "title": "T_11.MDM  : 紅蓮の魂"
+        },
+        {
+          "kind": "title",
+          "code": "0x1B",
+          "title": "T_12.MDM  : 幻想のテーマ"
+        },
+        {
+          "kind": "title",
+          "code": "0x1C",
+          "title": "T_13.MDM  : リバース・バイ・デス"
+        },
+        {
+          "kind": "title",
+          "code": "0x1D",
+          "title": "T_14.MDM  : 処女航海"
+        },
+        {
+          "kind": "title",
+          "code": "0x1E",
+          "title": "SE_19.MDM : ぶーん ぶーん"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/discovery.xml",
+      "source_order": 1096,
+      "archive": "mirage2_98",
+      "id": "mirage2-98-beep-2"
+    },
+    {
+      "title": "[PC-9801] Mirage2 トリーXニートXローンの大冒険(GS)",
+      "driver": {
+        "name": "pc98dos",
+        "type": "beep",
+        "alias": "DISCOVERY",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "clockmul",
+          "value": "8"
+        },
+        {
+          "name": "midiout",
+          "value": "1"
+        },
+        {
+          "name": "midiout_type",
+          "value": "4"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "MMP_HOOT.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MMD.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "T_01.MDG",
+          "offset": "0x10"
+        },
+        {
+          "type": "file",
+          "path": "T_02.MDG",
+          "offset": "0x11"
+        },
+        {
+          "type": "file",
+          "path": "T_03.MDG",
+          "offset": "0x12"
+        },
+        {
+          "type": "file",
+          "path": "T_04.MDG",
+          "offset": "0x13"
+        },
+        {
+          "type": "file",
+          "path": "T_05.MDG",
+          "offset": "0x14"
+        },
+        {
+          "type": "file",
+          "path": "T_06.MDG",
+          "offset": "0x15"
+        },
+        {
+          "type": "file",
+          "path": "T_07.MDG",
+          "offset": "0x16"
+        },
+        {
+          "type": "file",
+          "path": "T_08.MDG",
+          "offset": "0x17"
+        },
+        {
+          "type": "file",
+          "path": "T_09.MDG",
+          "offset": "0x18"
+        },
+        {
+          "type": "file",
+          "path": "T_10.MDG",
+          "offset": "0x19"
+        },
+        {
+          "type": "file",
+          "path": "T_11.MDG",
+          "offset": "0x1A"
+        },
+        {
+          "type": "file",
+          "path": "T_12.MDG",
+          "offset": "0x1B"
+        },
+        {
+          "type": "file",
+          "path": "T_13.MDG",
+          "offset": "0x1C"
+        },
+        {
+          "type": "file",
+          "path": "T_14.MDG",
+          "offset": "0x1D"
+        },
+        {
+          "type": "file",
+          "path": "SE_19.MDG",
+          "offset": "0x1E"
+        },
+        {
+          "type": "file",
+          "path": "GS_INIT.MDG",
+          "offset": "0x1F"
+        },
+        {
+          "type": "shell",
+          "path": "MMD",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "MMP_HOOT",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x1F",
+          "title": "[音源初期化]"
+        },
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "T_01.MDG  : シーガム・マジック(ミラージュ2のテーマ)"
+        },
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "T_02.MDG  : ウォーターライン"
+        },
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "T_03.MDG  : ブルー・スカイ・カクテル"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "T_04.MDG  : 素直な気持ち"
+        },
+        {
+          "kind": "title",
+          "code": "0x14",
+          "title": "T_05.MDG  : ポップンロール"
+        },
+        {
+          "kind": "title",
+          "code": "0x15",
+          "title": "T_06.MDG  : ドラゴン・ロード"
+        },
+        {
+          "kind": "title",
+          "code": "0x16",
+          "title": "T_07.MDG  : ルート・アドベンチャラス"
+        },
+        {
+          "kind": "title",
+          "code": "0x17",
+          "title": "T_08.MDG  : クロス・ファイヤー"
+        },
+        {
+          "kind": "title",
+          "code": "0x18",
+          "title": "T_09.MDG  : ピーチ・ブレイク"
+        },
+        {
+          "kind": "title",
+          "code": "0x19",
+          "title": "T_10.MDG  : エビル・ストーム"
+        },
+        {
+          "kind": "title",
+          "code": "0x1A",
+          "title": "T_11.MDG  : 紅蓮の魂"
+        },
+        {
+          "kind": "title",
+          "code": "0x1B",
+          "title": "T_12.MDG  : 幻想のテーマ"
+        },
+        {
+          "kind": "title",
+          "code": "0x1C",
+          "title": "T_13.MDG  : リバース・バイ・デス"
+        },
+        {
+          "kind": "title",
+          "code": "0x1D",
+          "title": "T_14.MDG  : 処女航海"
+        },
+        {
+          "kind": "title",
+          "code": "0x1E",
+          "title": "SE_19.MDG : ぶーん ぶーん"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/discovery.xml",
+      "source_order": 1097,
+      "archive": "mirage2_98",
+      "id": "mirage2-98-beep-3"
+    },
+    {
+      "title": "[PC-9801] RED(OPN)",
+      "driver": {
+        "name": "pc98dos",
+        "type": "opn",
+        "alias": "DISCOVERY",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "clockmul",
+          "value": "8"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "RED_98.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "RED.EXE",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "RED.OP1",
+          "offset": "6"
+        },
+        {
+          "type": "file",
+          "path": "RED.SS1",
+          "offset": "7"
+        },
+        {
+          "type": "file",
+          "path": "RED.EF1",
+          "offset": "8"
+        },
+        {
+          "type": "file",
+          "path": "RED_00.MF1",
+          "offset": "0x10"
+        },
+        {
+          "type": "file",
+          "path": "RED_01.MF1",
+          "offset": "0x11"
+        },
+        {
+          "type": "file",
+          "path": "RED_02.MF1",
+          "offset": "0x12"
+        },
+        {
+          "type": "file",
+          "path": "RED_03.MF1",
+          "offset": "0x13"
+        },
+        {
+          "type": "file",
+          "path": "RED_04.MF1",
+          "offset": "0x14"
+        },
+        {
+          "type": "file",
+          "path": "RED_05.MF1",
+          "offset": "0x15"
+        },
+        {
+          "type": "file",
+          "path": "RED_06.MF1",
+          "offset": "0x16"
+        },
+        {
+          "type": "file",
+          "path": "RED_07.MF1",
+          "offset": "0x17"
+        },
+        {
+          "type": "file",
+          "path": "RED_08.MF1",
+          "offset": "0x18"
+        },
+        {
+          "type": "file",
+          "path": "RED_09.MF1",
+          "offset": "0x19"
+        },
+        {
+          "type": "file",
+          "path": "RED_10.MF1",
+          "offset": "0x1a"
+        },
+        {
+          "type": "file",
+          "path": "RED_11.MF1",
+          "offset": "0x1b"
+        },
+        {
+          "type": "file",
+          "path": "RED_12.MF1",
+          "offset": "0x1c"
+        },
+        {
+          "type": "file",
+          "path": "RED_13.MF1",
+          "offset": "0x1d"
+        },
+        {
+          "type": "file",
+          "path": "RED_14.MF1",
+          "offset": "0x1e"
+        },
+        {
+          "type": "shell",
+          "path": "RED_98",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x1d",
+          "title": "RED_13.MF1 : ラグランジュ・ポイント"
+        },
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "RED_01.MF1 : グレイ・タイム"
+        },
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "RED_02.MF1 : ティアーズ・オブ・イオス"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "RED_03.MF1 : ビッグ・ブルー"
+        },
+        {
+          "kind": "title",
+          "code": "0x14",
+          "title": "RED_04.MF1 : アラウンド・ザ・クロック"
+        },
+        {
+          "kind": "title",
+          "code": "0x15",
+          "title": "RED_05.MF1 : ムービング・オン"
+        },
+        {
+          "kind": "title",
+          "code": "0x16",
+          "title": "RED_06.MF1 : ダークウォーク"
+        },
+        {
+          "kind": "title",
+          "code": "0x1e",
+          "title": "RED_14.MF1 : ブラスト！"
+        },
+        {
+          "kind": "title",
+          "code": "0x18",
+          "title": "RED_08.MF1 : イエス・ノー"
+        },
+        {
+          "kind": "title",
+          "code": "0x19",
+          "title": "RED_09.MF1 : スノーバード・ファンタジー"
+        },
+        {
+          "kind": "title",
+          "code": "0x1a",
+          "title": "RED_10.MF1 : デス・アンド・リザレクション"
+        },
+        {
+          "kind": "title",
+          "code": "0x1b",
+          "title": "RED_11.MF1 : オーバードライブ"
+        },
+        {
+          "kind": "title",
+          "code": "0x1c",
+          "title": "RED_12.MF1 : レディ・トゥ・スペース"
+        },
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "RED_00.MF1 : グラス・ファイヤー"
+        },
+        {
+          "kind": "title",
+          "code": "0x17",
+          "title": "RED_07.MF1 : ネクスト"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/discovery.xml",
+      "source_order": 1098,
+      "archive": "red_98",
+      "id": "red-98-opn"
+    },
+    {
+      "title": "[PC-9801] RED(MT-32)",
+      "driver": {
+        "name": "pc98dos",
+        "type": "beep",
+        "alias": "DISCOVERY",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "clockmul",
+          "value": "8"
+        },
+        {
+          "name": "midiout",
+          "value": "1"
+        },
+        {
+          "name": "midiout_type",
+          "value": "2"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "red_98.com",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "RED.EXE",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "RED_00.MD1",
+          "offset": "0x10"
+        },
+        {
+          "type": "file",
+          "path": "RED_01.MD1",
+          "offset": "0x11"
+        },
+        {
+          "type": "file",
+          "path": "RED_02.MD1",
+          "offset": "0x12"
+        },
+        {
+          "type": "file",
+          "path": "RED_03.MD1",
+          "offset": "0x13"
+        },
+        {
+          "type": "file",
+          "path": "RED_04.MD1",
+          "offset": "0x14"
+        },
+        {
+          "type": "file",
+          "path": "RED_05.MD1",
+          "offset": "0x15"
+        },
+        {
+          "type": "file",
+          "path": "RED_06.MD1",
+          "offset": "0x16"
+        },
+        {
+          "type": "file",
+          "path": "RED_07.MD1",
+          "offset": "0x17"
+        },
+        {
+          "type": "file",
+          "path": "RED_08.MD1",
+          "offset": "0x18"
+        },
+        {
+          "type": "file",
+          "path": "RED_09.MD1",
+          "offset": "0x19"
+        },
+        {
+          "type": "file",
+          "path": "RED_10.MD1",
+          "offset": "0x1a"
+        },
+        {
+          "type": "file",
+          "path": "RED_11.MD1",
+          "offset": "0x1b"
+        },
+        {
+          "type": "file",
+          "path": "RED_12.MD1",
+          "offset": "0x1c"
+        },
+        {
+          "type": "file",
+          "path": "RED_13.MD1",
+          "offset": "0x1d"
+        },
+        {
+          "type": "file",
+          "path": "RED_14.MD1",
+          "offset": "0x1e"
+        },
+        {
+          "type": "shell",
+          "path": "red_98",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x11d",
+          "title": "RED_13.MD1 : ラグランジュ・ポイント"
+        },
+        {
+          "kind": "title",
+          "code": "0x111",
+          "title": "RED_01.MD1 : グレイ・タイム"
+        },
+        {
+          "kind": "title",
+          "code": "0x112",
+          "title": "RED_02.MD1 : ティアーズ・オブ・イオス"
+        },
+        {
+          "kind": "title",
+          "code": "0x113",
+          "title": "RED_03.MD1 : ビッグ・ブルー"
+        },
+        {
+          "kind": "title",
+          "code": "0x114",
+          "title": "RED_04.MD1 : アラウンド・ザ・クロック"
+        },
+        {
+          "kind": "title",
+          "code": "0x115",
+          "title": "RED_05.MD1 : ムービング・オン"
+        },
+        {
+          "kind": "title",
+          "code": "0x116",
+          "title": "RED_06.MD1 : ダークウォーク"
+        },
+        {
+          "kind": "title",
+          "code": "0x11e",
+          "title": "RED_14.MD1 : ブラスト！"
+        },
+        {
+          "kind": "title",
+          "code": "0x118",
+          "title": "RED_08.MD1 : イエス・ノー"
+        },
+        {
+          "kind": "title",
+          "code": "0x119",
+          "title": "RED_09.MD1 : スノーバード・ファンタジー"
+        },
+        {
+          "kind": "title",
+          "code": "0x11a",
+          "title": "RED_10.MD1 : デス・アンド・リザレクション"
+        },
+        {
+          "kind": "title",
+          "code": "0x11b",
+          "title": "RED_11.MD1 : オーバードライブ"
+        },
+        {
+          "kind": "title",
+          "code": "0x11c",
+          "title": "RED_12.MD1 : レディ・トゥ・スペース"
+        },
+        {
+          "kind": "title",
+          "code": "0x110",
+          "title": "RED_00.MD1 : グラス・ファイヤー"
+        },
+        {
+          "kind": "title",
+          "code": "0x117",
+          "title": "RED_07.MD1 : ネクスト"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/discovery.xml",
+      "source_order": 1099,
+      "archive": "red_98",
+      "id": "red-98-beep"
+    },
+    {
+      "title": "[PC-9801] RED(MT-32 Emulation)",
+      "driver": {
+        "name": "pc98dos",
+        "type": "beep",
+        "alias": "DISCOVERY",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "clockmul",
+          "value": "8"
+        },
+        {
+          "name": "midiout",
+          "value": "1"
+        },
+        {
+          "name": "midiout_type",
+          "value": "1"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "red_98.com",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "RED.EXE",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "RED_00.MD1",
+          "offset": "0x10"
+        },
+        {
+          "type": "file",
+          "path": "RED_01.MD1",
+          "offset": "0x11"
+        },
+        {
+          "type": "file",
+          "path": "RED_02.MD1",
+          "offset": "0x12"
+        },
+        {
+          "type": "file",
+          "path": "RED_03.MD1",
+          "offset": "0x13"
+        },
+        {
+          "type": "file",
+          "path": "RED_04.MD1",
+          "offset": "0x14"
+        },
+        {
+          "type": "file",
+          "path": "RED_05.MD1",
+          "offset": "0x15"
+        },
+        {
+          "type": "file",
+          "path": "RED_06.MD1",
+          "offset": "0x16"
+        },
+        {
+          "type": "file",
+          "path": "RED_07.MD1",
+          "offset": "0x17"
+        },
+        {
+          "type": "file",
+          "path": "RED_08.MD1",
+          "offset": "0x18"
+        },
+        {
+          "type": "file",
+          "path": "RED_09.MD1",
+          "offset": "0x19"
+        },
+        {
+          "type": "file",
+          "path": "RED_10.MD1",
+          "offset": "0x1a"
+        },
+        {
+          "type": "file",
+          "path": "RED_11.MD1",
+          "offset": "0x1b"
+        },
+        {
+          "type": "file",
+          "path": "RED_12.MD1",
+          "offset": "0x1c"
+        },
+        {
+          "type": "file",
+          "path": "RED_13.MD1",
+          "offset": "0x1d"
+        },
+        {
+          "type": "file",
+          "path": "RED_14.MD1",
+          "offset": "0x1e"
+        },
+        {
+          "type": "shell",
+          "path": "red_98",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x11d",
+          "title": "RED_13.MD1 : ラグランジュ・ポイント"
+        },
+        {
+          "kind": "title",
+          "code": "0x111",
+          "title": "RED_01.MD1 : グレイ・タイム"
+        },
+        {
+          "kind": "title",
+          "code": "0x112",
+          "title": "RED_02.MD1 : ティアーズ・オブ・イオス"
+        },
+        {
+          "kind": "title",
+          "code": "0x113",
+          "title": "RED_03.MD1 : ビッグ・ブルー"
+        },
+        {
+          "kind": "title",
+          "code": "0x114",
+          "title": "RED_04.MD1 : アラウンド・ザ・クロック"
+        },
+        {
+          "kind": "title",
+          "code": "0x115",
+          "title": "RED_05.MD1 : ムービング・オン"
+        },
+        {
+          "kind": "title",
+          "code": "0x116",
+          "title": "RED_06.MD1 : ダークウォーク"
+        },
+        {
+          "kind": "title",
+          "code": "0x11e",
+          "title": "RED_14.MD1 : ブラスト！"
+        },
+        {
+          "kind": "title",
+          "code": "0x118",
+          "title": "RED_08.MD1 : イエス・ノー"
+        },
+        {
+          "kind": "title",
+          "code": "0x119",
+          "title": "RED_09.MD1 : スノーバード・ファンタジー"
+        },
+        {
+          "kind": "title",
+          "code": "0x11a",
+          "title": "RED_10.MD1 : デス・アンド・リザレクション"
+        },
+        {
+          "kind": "title",
+          "code": "0x11b",
+          "title": "RED_11.MD1 : オーバードライブ"
+        },
+        {
+          "kind": "title",
+          "code": "0x11c",
+          "title": "RED_12.MD1 : レディ・トゥ・スペース"
+        },
+        {
+          "kind": "title",
+          "code": "0x110",
+          "title": "RED_00.MD1 : グラス・ファイヤー"
+        },
+        {
+          "kind": "title",
+          "code": "0x117",
+          "title": "RED_07.MD1 : ネクスト"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/discovery.xml",
+      "source_order": 1100,
+      "archive": "red_98",
+      "id": "red-98-beep-2"
+    },
+    {
+      "title": "[PC-9801] Sweet Emotion(OPN)",
+      "driver": {
+        "name": "pc98dos",
+        "type": "opn",
+        "alias": "DISCOVERY",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "clockmul",
+          "value": "8"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "SWEET_98.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "ADVB.EXE",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "EDIT.OPN",
+          "offset": "6"
+        },
+        {
+          "type": "file",
+          "path": "EDIT.SSG",
+          "offset": "7"
+        },
+        {
+          "type": "file",
+          "path": "SWEET1.MUF",
+          "offset": "0x11"
+        },
+        {
+          "type": "file",
+          "path": "SWEET2.MUF",
+          "offset": "0x12"
+        },
+        {
+          "type": "file",
+          "path": "SWEET3.MUF",
+          "offset": "0x13"
+        },
+        {
+          "type": "file",
+          "path": "SWEET4.MUF",
+          "offset": "0x14"
+        },
+        {
+          "type": "file",
+          "path": "SWEET5.MUF",
+          "offset": "0x15"
+        },
+        {
+          "type": "file",
+          "path": "SWEET6.MUF",
+          "offset": "0x16"
+        },
+        {
+          "type": "file",
+          "path": "SWEET7.MUF",
+          "offset": "0x17"
+        },
+        {
+          "type": "file",
+          "path": "SWEET8.MUF",
+          "offset": "0x18"
+        },
+        {
+          "type": "file",
+          "path": "SWEET9.MUF",
+          "offset": "0x19"
+        },
+        {
+          "type": "file",
+          "path": "SWEETA.MUF",
+          "offset": "0x1a"
+        },
+        {
+          "type": "file",
+          "path": "SWEETB.MUF",
+          "offset": "0x1b"
+        },
+        {
+          "type": "shell",
+          "path": "SWEET_98",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "SWEET1.MUF :"
+        },
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "SWEET2.MUF :"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "SWEET3.MUF :"
+        },
+        {
+          "kind": "title",
+          "code": "0x14",
+          "title": "SWEET4.MUF :"
+        },
+        {
+          "kind": "title",
+          "code": "0x15",
+          "title": "SWEET5.MUF :"
+        },
+        {
+          "kind": "title",
+          "code": "0x16",
+          "title": "SWEET6.MUF :"
+        },
+        {
+          "kind": "title",
+          "code": "0x17",
+          "title": "SWEET7.MUF :"
+        },
+        {
+          "kind": "title",
+          "code": "0x18",
+          "title": "SWEET8.MUF :"
+        },
+        {
+          "kind": "title",
+          "code": "0x19",
+          "title": "SWEET9.MUF :"
+        },
+        {
+          "kind": "title",
+          "code": "0x1a",
+          "title": "SWEETA.MUF :"
+        },
+        {
+          "kind": "title",
+          "code": "0x1b",
+          "title": "SWEETB.MUF :"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/discovery.xml",
+      "source_order": 1101,
+      "archive": "sweet_e_98",
+      "id": "sweet-e-98-opn"
+    },
+    {
+      "title": "[PC-9801] Sweet Emotion(MT-32)",
+      "driver": {
+        "name": "pc98dos",
+        "type": "beep",
+        "alias": "DISCOVERY",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "clockmul",
+          "value": "8"
+        },
+        {
+          "name": "midiout",
+          "value": "1"
+        },
+        {
+          "name": "midiout_type",
+          "value": "2"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "sweet_98.com",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "ADVB.EXE",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "SWEET1.MUD",
+          "offset": "0x11"
+        },
+        {
+          "type": "file",
+          "path": "SWEET2.MUD",
+          "offset": "0x12"
+        },
+        {
+          "type": "file",
+          "path": "SWEET3.MUD",
+          "offset": "0x13"
+        },
+        {
+          "type": "file",
+          "path": "SWEET4.MUD",
+          "offset": "0x14"
+        },
+        {
+          "type": "file",
+          "path": "SWEET5.MUD",
+          "offset": "0x15"
+        },
+        {
+          "type": "file",
+          "path": "SWEET6.MUD",
+          "offset": "0x16"
+        },
+        {
+          "type": "file",
+          "path": "SWEET7.MUD",
+          "offset": "0x17"
+        },
+        {
+          "type": "file",
+          "path": "SWEET8.MUD",
+          "offset": "0x18"
+        },
+        {
+          "type": "file",
+          "path": "SWEET9.MUD",
+          "offset": "0x19"
+        },
+        {
+          "type": "file",
+          "path": "SWEETA.MUD",
+          "offset": "0x1a"
+        },
+        {
+          "type": "file",
+          "path": "SWEETB.MUD",
+          "offset": "0x1b"
+        },
+        {
+          "type": "shell",
+          "path": "sweet_98",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x111",
+          "title": "SWEET1.MUD :"
+        },
+        {
+          "kind": "title",
+          "code": "0x112",
+          "title": "SWEET2.MUD :"
+        },
+        {
+          "kind": "title",
+          "code": "0x113",
+          "title": "SWEET3.MUD :"
+        },
+        {
+          "kind": "title",
+          "code": "0x114",
+          "title": "SWEET4.MUD :"
+        },
+        {
+          "kind": "title",
+          "code": "0x115",
+          "title": "SWEET5.MUD :"
+        },
+        {
+          "kind": "title",
+          "code": "0x116",
+          "title": "SWEET6.MUD :"
+        },
+        {
+          "kind": "title",
+          "code": "0x117",
+          "title": "SWEET7.MUD :"
+        },
+        {
+          "kind": "title",
+          "code": "0x118",
+          "title": "SWEET8.MUD :"
+        },
+        {
+          "kind": "title",
+          "code": "0x119",
+          "title": "SWEET9.MUD :"
+        },
+        {
+          "kind": "title",
+          "code": "0x11a",
+          "title": "SWEETA.MUD :"
+        },
+        {
+          "kind": "title",
+          "code": "0x11b",
+          "title": "SWEETB.MUD :"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/discovery.xml",
+      "source_order": 1102,
+      "archive": "sweet_e_98",
+      "id": "sweet-e-98-beep"
+    },
+    {
+      "title": "[PC-9801] Sweet Emotion(MT-32 Emulation)",
+      "driver": {
+        "name": "pc98dos",
+        "type": "beep",
+        "alias": "DISCOVERY",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "clockmul",
+          "value": "8"
+        },
+        {
+          "name": "midiout",
+          "value": "1"
+        },
+        {
+          "name": "midiout_type",
+          "value": "1"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "sweet_98.com",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "ADVB.EXE",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "SWEET1.MUD",
+          "offset": "0x11"
+        },
+        {
+          "type": "file",
+          "path": "SWEET2.MUD",
+          "offset": "0x12"
+        },
+        {
+          "type": "file",
+          "path": "SWEET3.MUD",
+          "offset": "0x13"
+        },
+        {
+          "type": "file",
+          "path": "SWEET4.MUD",
+          "offset": "0x14"
+        },
+        {
+          "type": "file",
+          "path": "SWEET5.MUD",
+          "offset": "0x15"
+        },
+        {
+          "type": "file",
+          "path": "SWEET6.MUD",
+          "offset": "0x16"
+        },
+        {
+          "type": "file",
+          "path": "SWEET7.MUD",
+          "offset": "0x17"
+        },
+        {
+          "type": "file",
+          "path": "SWEET8.MUD",
+          "offset": "0x18"
+        },
+        {
+          "type": "file",
+          "path": "SWEET9.MUD",
+          "offset": "0x19"
+        },
+        {
+          "type": "file",
+          "path": "SWEETA.MUD",
+          "offset": "0x1a"
+        },
+        {
+          "type": "file",
+          "path": "SWEETB.MUD",
+          "offset": "0x1b"
+        },
+        {
+          "type": "shell",
+          "path": "sweet_98",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x111",
+          "title": "SWEET1.MUD :"
+        },
+        {
+          "kind": "title",
+          "code": "0x112",
+          "title": "SWEET2.MUD :"
+        },
+        {
+          "kind": "title",
+          "code": "0x113",
+          "title": "SWEET3.MUD :"
+        },
+        {
+          "kind": "title",
+          "code": "0x114",
+          "title": "SWEET4.MUD :"
+        },
+        {
+          "kind": "title",
+          "code": "0x115",
+          "title": "SWEET5.MUD :"
+        },
+        {
+          "kind": "title",
+          "code": "0x116",
+          "title": "SWEET6.MUD :"
+        },
+        {
+          "kind": "title",
+          "code": "0x117",
+          "title": "SWEET7.MUD :"
+        },
+        {
+          "kind": "title",
+          "code": "0x118",
+          "title": "SWEET8.MUD :"
+        },
+        {
+          "kind": "title",
+          "code": "0x119",
+          "title": "SWEET9.MUD :"
+        },
+        {
+          "kind": "title",
+          "code": "0x11a",
+          "title": "SWEETA.MUD :"
+        },
+        {
+          "kind": "title",
+          "code": "0x11b",
+          "title": "SWEETB.MUD :"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/discovery.xml",
+      "source_order": 1103,
+      "archive": "sweet_e_98",
+      "id": "sweet-e-98-beep-2"
+    },
+    {
+      "title": "[PC-9801] Valkyrie The Power Beauties(OPN)",
+      "driver": {
+        "name": "pc98dos",
+        "type": "opn",
+        "alias": "DISCOVERY",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "clockmul",
+          "value": "8"
+        },
+        {
+          "name": "ssg_mix",
+          "value": "-18"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "VALKY_98.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "CSCP.BIN",
+          "offset": "5"
+        },
+        {
+          "type": "file",
+          "path": "VA_MF_01.DAT",
+          "offset": "11"
+        },
+        {
+          "type": "file",
+          "path": "VA_MF_02.DAT",
+          "offset": "12"
+        },
+        {
+          "type": "file",
+          "path": "VA_MF_03.DAT",
+          "offset": "13"
+        },
+        {
+          "type": "file",
+          "path": "VA_MF_04.DAT",
+          "offset": "14"
+        },
+        {
+          "type": "file",
+          "path": "VA_MF_05.DAT",
+          "offset": "15"
+        },
+        {
+          "type": "file",
+          "path": "VA_MF_06.DAT",
+          "offset": "16"
+        },
+        {
+          "type": "file",
+          "path": "VA_MF_07.DAT",
+          "offset": "17"
+        },
+        {
+          "type": "file",
+          "path": "VA_MF_08.DAT",
+          "offset": "18"
+        },
+        {
+          "type": "file",
+          "path": "VA_MF_09.DAT",
+          "offset": "19"
+        },
+        {
+          "type": "file",
+          "path": "VA_MF_10.DAT",
+          "offset": "20"
+        },
+        {
+          "type": "file",
+          "path": "VA_MF_11.DAT",
+          "offset": "21"
+        },
+        {
+          "type": "file",
+          "path": "VA_MF_12.DAT",
+          "offset": "22"
+        },
+        {
+          "type": "file",
+          "path": "VA_MF_13.DAT",
+          "offset": "23"
+        },
+        {
+          "type": "file",
+          "path": "VA_MF_14.DAT",
+          "offset": "24"
+        },
+        {
+          "type": "file",
+          "path": "VA_MF_15.DAT",
+          "offset": "25"
+        },
+        {
+          "type": "file",
+          "path": "VA_MF_16.DAT",
+          "offset": "26"
+        },
+        {
+          "type": "file",
+          "path": "VA_MF_17.DAT",
+          "offset": "27"
+        },
+        {
+          "type": "file",
+          "path": "VA_MF_18.DAT",
+          "offset": "28"
+        },
+        {
+          "type": "file",
+          "path": "VA_MF_19.DAT",
+          "offset": "29"
+        },
+        {
+          "type": "shell",
+          "path": "VALKY_98",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "11",
+          "title": "VA_MF.GML : 01 : Velvet Moon"
+        },
+        {
+          "kind": "title",
+          "code": "12",
+          "title": "VA_MF.GML : 02 : Vivid in Heart"
+        },
+        {
+          "kind": "title",
+          "code": "13",
+          "title": "VA_MF.GML : 03 : Spiraling Hearts"
+        },
+        {
+          "kind": "title",
+          "code": "14",
+          "title": "VA_MF.GML : 04 : Straight Fight"
+        },
+        {
+          "kind": "title",
+          "code": "15",
+          "title": "VA_MF.GML : 05 : Southwester Saxophone"
+        },
+        {
+          "kind": "title",
+          "code": "16",
+          "title": "VA_MF.GML : 06 : Deep-Sky Submarine"
+        },
+        {
+          "kind": "title",
+          "code": "17",
+          "title": "VA_MF.GML : 07 : Rim-Shot"
+        },
+        {
+          "kind": "title",
+          "code": "18",
+          "title": "VA_MF.GML : 08 : Murasaki-Kaze"
+        },
+        {
+          "kind": "title",
+          "code": "19",
+          "title": "VA_MF.GML : 09 : Magic Splash"
+        },
+        {
+          "kind": "title",
+          "code": "20",
+          "title": "VA_MF.GML : 10 : Silicon Lover"
+        },
+        {
+          "kind": "title",
+          "code": "21",
+          "title": "VA_MF.GML : 11 : Frozen Moonlight"
+        },
+        {
+          "kind": "title",
+          "code": "22",
+          "title": "VA_MF.GML : 12 : fight!"
+        },
+        {
+          "kind": "title",
+          "code": "23",
+          "title": "VA_MF.GML : 13 : Win!"
+        },
+        {
+          "kind": "title",
+          "code": "24",
+          "title": "VA_MF.GML : 14 : Lose..."
+        },
+        {
+          "kind": "title",
+          "code": "25",
+          "title": "VA_MF.GML : 15 : Makeup"
+        },
+        {
+          "kind": "title",
+          "code": "26",
+          "title": "VA_MF.GML : 16 : Fruits in Honey"
+        },
+        {
+          "kind": "title",
+          "code": "27",
+          "title": "VA_MF.GML : 17 : Sakanoue"
+        },
+        {
+          "kind": "title",
+          "code": "28",
+          "title": "VA_MF.GML : 18 : Blackstork"
+        },
+        {
+          "kind": "title",
+          "code": "29",
+          "title": "VA_MF.GML : 19 : Walk, Don't Run."
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/discovery.xml",
+      "source_order": 1104,
+      "archive": "valkyrie_98",
+      "id": "valkyrie-98-opn"
+    },
+    {
+      "title": "[PC-9801] Valkyrie The Power Beauties(86)",
+      "driver": {
+        "name": "pc98dos",
+        "type": "86",
+        "alias": "DISCOVERY",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "clockmul",
+          "value": "8"
+        },
+        {
+          "name": "pcm_mix",
+          "value": "0x200"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "VALKY_98.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "CSCP.BIN",
+          "offset": "5"
+        },
+        {
+          "type": "file",
+          "path": "VA_SF_01.DAT",
+          "offset": "11"
+        },
+        {
+          "type": "file",
+          "path": "VA_SF_02.DAT",
+          "offset": "12"
+        },
+        {
+          "type": "file",
+          "path": "VA_SF_03.DAT",
+          "offset": "13"
+        },
+        {
+          "type": "file",
+          "path": "VA_SF_04.DAT",
+          "offset": "14"
+        },
+        {
+          "type": "file",
+          "path": "VA_SF_05.DAT",
+          "offset": "15"
+        },
+        {
+          "type": "file",
+          "path": "VA_SF_06.DAT",
+          "offset": "16"
+        },
+        {
+          "type": "file",
+          "path": "VA_SF_07.DAT",
+          "offset": "17"
+        },
+        {
+          "type": "file",
+          "path": "VA_SF_08.DAT",
+          "offset": "18"
+        },
+        {
+          "type": "file",
+          "path": "VA_SF_09.DAT",
+          "offset": "19"
+        },
+        {
+          "type": "file",
+          "path": "VA_SF_10.DAT",
+          "offset": "20"
+        },
+        {
+          "type": "file",
+          "path": "VA_SF_11.DAT",
+          "offset": "21"
+        },
+        {
+          "type": "file",
+          "path": "VA_SF_12.DAT",
+          "offset": "22"
+        },
+        {
+          "type": "file",
+          "path": "VA_SF_13.DAT",
+          "offset": "23"
+        },
+        {
+          "type": "file",
+          "path": "VA_SF_14.DAT",
+          "offset": "24"
+        },
+        {
+          "type": "file",
+          "path": "VA_SF_15.DAT",
+          "offset": "25"
+        },
+        {
+          "type": "file",
+          "path": "VA_SF_16.DAT",
+          "offset": "26"
+        },
+        {
+          "type": "file",
+          "path": "VA_SF_17.DAT",
+          "offset": "27"
+        },
+        {
+          "type": "file",
+          "path": "VA_SF_18.DAT",
+          "offset": "28"
+        },
+        {
+          "type": "file",
+          "path": "VA_SF_19.DAT",
+          "offset": "29"
+        },
+        {
+          "type": "file",
+          "path": "ATSUKO.SPA",
+          "offset": "0x21"
+        },
+        {
+          "type": "file",
+          "path": "MEGUMI.SPA",
+          "offset": "0x22"
+        },
+        {
+          "type": "file",
+          "path": "MOE.SPA",
+          "offset": "0x23"
+        },
+        {
+          "type": "file",
+          "path": "MOMOKO.SPA",
+          "offset": "0x24"
+        },
+        {
+          "type": "file",
+          "path": "NOMU.SPA",
+          "offset": "0x25"
+        },
+        {
+          "type": "file",
+          "path": "SARI.SPA",
+          "offset": "0x26"
+        },
+        {
+          "type": "file",
+          "path": "SYSTEM.SPA",
+          "offset": "0x27"
+        },
+        {
+          "type": "file",
+          "path": "USAGI.SPA",
+          "offset": "0x28"
+        },
+        {
+          "type": "file",
+          "path": "ATSUKO0A.SPX",
+          "offset": "0x30"
+        },
+        {
+          "type": "file",
+          "path": "ATSUKO0B.SPX",
+          "offset": "0x31"
+        },
+        {
+          "type": "file",
+          "path": "ATSUKO1A.SPX",
+          "offset": "0x32"
+        },
+        {
+          "type": "file",
+          "path": "ATSUKO1B.SPX",
+          "offset": "0x33"
+        },
+        {
+          "type": "file",
+          "path": "ATSUKO1C.SPX",
+          "offset": "0x34"
+        },
+        {
+          "type": "file",
+          "path": "ATSUKO2A.SPX",
+          "offset": "0x35"
+        },
+        {
+          "type": "file",
+          "path": "ATSUKO2B.SPX",
+          "offset": "0x36"
+        },
+        {
+          "type": "file",
+          "path": "ATSUKO_Z.SPX",
+          "offset": "0x37"
+        },
+        {
+          "type": "file",
+          "path": "MEGUMI0A.SPX",
+          "offset": "0x38"
+        },
+        {
+          "type": "file",
+          "path": "MEGUMI0B.SPX",
+          "offset": "0x39"
+        },
+        {
+          "type": "file",
+          "path": "MEGUMI1A.SPX",
+          "offset": "0x3a"
+        },
+        {
+          "type": "file",
+          "path": "MEGUMI1B.SPX",
+          "offset": "0x3b"
+        },
+        {
+          "type": "file",
+          "path": "MEGUMI1C.SPX",
+          "offset": "0x3c"
+        },
+        {
+          "type": "file",
+          "path": "MEGUMI2A.SPX",
+          "offset": "0x3d"
+        },
+        {
+          "type": "file",
+          "path": "MEGUMI2B.SPX",
+          "offset": "0x3e"
+        },
+        {
+          "type": "file",
+          "path": "MEGUMI_Z.SPX",
+          "offset": "0x3f"
+        },
+        {
+          "type": "file",
+          "path": "MOE0A.SPX",
+          "offset": "0x40"
+        },
+        {
+          "type": "file",
+          "path": "MOE0B.SPX",
+          "offset": "0x41"
+        },
+        {
+          "type": "file",
+          "path": "MOE1A.SPX",
+          "offset": "0x42"
+        },
+        {
+          "type": "file",
+          "path": "MOE1B.SPX",
+          "offset": "0x43"
+        },
+        {
+          "type": "file",
+          "path": "MOE1C.SPX",
+          "offset": "0x44"
+        },
+        {
+          "type": "file",
+          "path": "MOE2A.SPX",
+          "offset": "0x45"
+        },
+        {
+          "type": "file",
+          "path": "MOE2B.SPX",
+          "offset": "0x46"
+        },
+        {
+          "type": "file",
+          "path": "MOE_Z.SPX",
+          "offset": "0x47"
+        },
+        {
+          "type": "file",
+          "path": "MOMOKO0A.SPX",
+          "offset": "0x48"
+        },
+        {
+          "type": "file",
+          "path": "MOMOKO0B.SPX",
+          "offset": "0x49"
+        },
+        {
+          "type": "file",
+          "path": "MOMOKO1A.SPX",
+          "offset": "0x4a"
+        },
+        {
+          "type": "file",
+          "path": "MOMOKO1B.SPX",
+          "offset": "0x4b"
+        },
+        {
+          "type": "file",
+          "path": "MOMOKO1C.SPX",
+          "offset": "0x4c"
+        },
+        {
+          "type": "file",
+          "path": "MOMOKO2A.SPX",
+          "offset": "0x4d"
+        },
+        {
+          "type": "file",
+          "path": "MOMOKO2B.SPX",
+          "offset": "0x4e"
+        },
+        {
+          "type": "file",
+          "path": "MOMOKO_Z.SPX",
+          "offset": "0x4f"
+        },
+        {
+          "type": "file",
+          "path": "NOMU0A.SPX",
+          "offset": "0x50"
+        },
+        {
+          "type": "file",
+          "path": "NOMU0B.SPX",
+          "offset": "0x51"
+        },
+        {
+          "type": "file",
+          "path": "NOMU1A.SPX",
+          "offset": "0x52"
+        },
+        {
+          "type": "file",
+          "path": "NOMU1B.SPX",
+          "offset": "0x53"
+        },
+        {
+          "type": "file",
+          "path": "NOMU1C.SPX",
+          "offset": "0x54"
+        },
+        {
+          "type": "file",
+          "path": "NOMU2A.SPX",
+          "offset": "0x55"
+        },
+        {
+          "type": "file",
+          "path": "NOMU2B.SPX",
+          "offset": "0x56"
+        },
+        {
+          "type": "file",
+          "path": "NOMU_Z.SPX",
+          "offset": "0x57"
+        },
+        {
+          "type": "file",
+          "path": "SARI0A.SPX",
+          "offset": "0x58"
+        },
+        {
+          "type": "file",
+          "path": "SARI0B.SPX",
+          "offset": "0x59"
+        },
+        {
+          "type": "file",
+          "path": "SARI1A.SPX",
+          "offset": "0x5a"
+        },
+        {
+          "type": "file",
+          "path": "SARI1B.SPX",
+          "offset": "0x5b"
+        },
+        {
+          "type": "file",
+          "path": "SARI1C.SPX",
+          "offset": "0x5c"
+        },
+        {
+          "type": "file",
+          "path": "SARI2A.SPX",
+          "offset": "0x5d"
+        },
+        {
+          "type": "file",
+          "path": "SARI2B.SPX",
+          "offset": "0x5e"
+        },
+        {
+          "type": "file",
+          "path": "SARI_Z.SPX",
+          "offset": "0x5f"
+        },
+        {
+          "type": "file",
+          "path": "USAGI0A.SPX",
+          "offset": "0x60"
+        },
+        {
+          "type": "file",
+          "path": "USAGI0B.SPX",
+          "offset": "0x61"
+        },
+        {
+          "type": "file",
+          "path": "USAGI1A.SPX",
+          "offset": "0x62"
+        },
+        {
+          "type": "file",
+          "path": "USAGI1B.SPX",
+          "offset": "0x63"
+        },
+        {
+          "type": "file",
+          "path": "USAGI1C.SPX",
+          "offset": "0x64"
+        },
+        {
+          "type": "file",
+          "path": "USAGI2A.SPX",
+          "offset": "0x65"
+        },
+        {
+          "type": "file",
+          "path": "USAGI2B.SPX",
+          "offset": "0x66"
+        },
+        {
+          "type": "file",
+          "path": "USAGI_Z.SPX",
+          "offset": "0x67"
+        },
+        {
+          "type": "file",
+          "path": "VAL.SPX",
+          "offset": "0x68"
+        },
+        {
+          "type": "shell",
+          "path": "VALKY_98",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "11",
+          "title": "VA_SF.GML  : 01 : Velvet Moon"
+        },
+        {
+          "kind": "title",
+          "code": "12",
+          "title": "VA_SF.GML  : 02 : Vivid in Heart"
+        },
+        {
+          "kind": "title",
+          "code": "13",
+          "title": "VA_SF.GML  : 03 : Spiraling Hearts"
+        },
+        {
+          "kind": "title",
+          "code": "14",
+          "title": "VA_SF.GML  : 04 : Straight Fight"
+        },
+        {
+          "kind": "title",
+          "code": "15",
+          "title": "VA_SF.GML  : 05 : Southwester Saxophone"
+        },
+        {
+          "kind": "title",
+          "code": "16",
+          "title": "VA_SF.GML  : 06 : Deep-Sky Submarine"
+        },
+        {
+          "kind": "title",
+          "code": "17",
+          "title": "VA_SF.GML  : 07 : Rim-Shot"
+        },
+        {
+          "kind": "title",
+          "code": "18",
+          "title": "VA_SF.GML  : 08 : Murasaki-Kaze"
+        },
+        {
+          "kind": "title",
+          "code": "19",
+          "title": "VA_SF.GML  : 09 : Magic Splash"
+        },
+        {
+          "kind": "title",
+          "code": "20",
+          "title": "VA_SF.GML  : 10 : Silicon Lover"
+        },
+        {
+          "kind": "title",
+          "code": "21",
+          "title": "VA_SF.GML  : 11 : Frozen Moonlight"
+        },
+        {
+          "kind": "title",
+          "code": "22",
+          "title": "VA_SF.GML  : 12 : fight!"
+        },
+        {
+          "kind": "title",
+          "code": "23",
+          "title": "VA_SF.GML  : 13 : Win!"
+        },
+        {
+          "kind": "title",
+          "code": "24",
+          "title": "VA_SF.GML  : 14 : Lose..."
+        },
+        {
+          "kind": "title",
+          "code": "25",
+          "title": "VA_SF.GML  : 15 : Makeup"
+        },
+        {
+          "kind": "title",
+          "code": "26",
+          "title": "VA_SF.GML  : 16 : Fruits in Honey"
+        },
+        {
+          "kind": "title",
+          "code": "27",
+          "title": "VA_SF.GML  : 17 : Sakanoue"
+        },
+        {
+          "kind": "title",
+          "code": "28",
+          "title": "VA_SF.GML  : 18 : Blackstork"
+        },
+        {
+          "kind": "title",
+          "code": "29",
+          "title": "VA_SF.GML  : 19 : Walk, Don't Run."
+        },
+        {
+          "kind": "title",
+          "code": "0x2701",
+          "title": "SYSTEM.SPA : 01 : パンチ(小)"
+        },
+        {
+          "kind": "title",
+          "code": "0x2702",
+          "title": "SYSTEM.SPA : 02 : キック(小)"
+        },
+        {
+          "kind": "title",
+          "code": "0x2703",
+          "title": "SYSTEM.SPA : 03 : パンチ(大)"
+        },
+        {
+          "kind": "title",
+          "code": "0x2704",
+          "title": "SYSTEM.SPA : 04 : 技ヒット"
+        },
+        {
+          "kind": "title",
+          "code": "0x2705",
+          "title": "SYSTEM.SPA : 05 : ガード"
+        },
+        {
+          "kind": "title",
+          "code": "0x2706",
+          "title": "SYSTEM.SPA : 06 : 叩きつけ"
+        },
+        {
+          "kind": "title",
+          "code": "0x2707",
+          "title": "SYSTEM.SPA : 07 : ダウン"
+        },
+        {
+          "kind": "title",
+          "code": "0x2301",
+          "title": "MOE.SPA    : 01 : 萌慧「もーだめ」"
+        },
+        {
+          "kind": "title",
+          "code": "0x2302",
+          "title": "MOE.SPA    : 02 : 萌慧「シューティングスター」"
+        },
+        {
+          "kind": "title",
+          "code": "0x2303",
+          "title": "MOE.SPA    : 03 : 萌慧「アステロイドトライアングル」"
+        },
+        {
+          "kind": "title",
+          "code": "0x2304",
+          "title": "MOE.SPA    : 04 : 萌慧「シューメイカーレビーキック」"
+        },
+        {
+          "kind": "title",
+          "code": "0x2305",
+          "title": "MOE.SPA    : 05 : 萌慧「モコモコ」"
+        },
+        {
+          "kind": "title",
+          "code": "0x2306",
+          "title": "MOE.SPA    : 06 : 萌慧「えい」"
+        },
+        {
+          "kind": "title",
+          "code": "0x2307",
+          "title": "MOE.SPA    : 07 : 萌慧「えーい」"
+        },
+        {
+          "kind": "title",
+          "code": "0x2308",
+          "title": "MOE.SPA    : 08 : 萌慧「いったーい」"
+        },
+        {
+          "kind": "title",
+          "code": "0x2309",
+          "title": "MOE.SPA    : 09 : 萌慧「勝っちゃった」"
+        },
+        {
+          "kind": "title",
+          "code": "0x2601",
+          "title": "SARI.SPA   : 01 : 佐里「あーん」"
+        },
+        {
+          "kind": "title",
+          "code": "0x2602",
+          "title": "SARI.SPA   : 02 : 佐里「バタフライファントム」"
+        },
+        {
+          "kind": "title",
+          "code": "0x2603",
+          "title": "SARI.SPA   : 03 : 佐里「スケアクロウ」"
+        },
+        {
+          "kind": "title",
+          "code": "0x2604",
+          "title": "SARI.SPA   : 04 : 佐里「テニメントファンスター」"
+        },
+        {
+          "kind": "title",
+          "code": "0x2605",
+          "title": "SARI.SPA   : 05 : 佐里「ジョーカーディメンション」"
+        },
+        {
+          "kind": "title",
+          "code": "0x2606",
+          "title": "SARI.SPA   : 06 : 佐里「やっ」"
+        },
+        {
+          "kind": "title",
+          "code": "0x2607",
+          "title": "SARI.SPA   : 07 : 佐里「はっ」"
+        },
+        {
+          "kind": "title",
+          "code": "0x2608",
+          "title": "SARI.SPA   : 08 : 佐里「はい」"
+        },
+        {
+          "kind": "title",
+          "code": "0x2609",
+          "title": "SARI.SPA   : 09 : 佐里「やだ」"
+        },
+        {
+          "kind": "title",
+          "code": "0x260a",
+          "title": "SARI.SPA   : 10 : 佐里「きゃっ」"
+        },
+        {
+          "kind": "title",
+          "code": "0x260b",
+          "title": "SARI.SPA   : 11 : 佐里「やったー!」"
+        },
+        {
+          "kind": "title",
+          "code": "0x2201",
+          "title": "MEGUMI.SPA : 01 : めぐみ「グロッキー…」"
+        },
+        {
+          "kind": "title",
+          "code": "0x2202",
+          "title": "MEGUMI.SPA : 02 : めぐみ「シャイニングシュー」"
+        },
+        {
+          "kind": "title",
+          "code": "0x2203",
+          "title": "MEGUMI.SPA : 03 : めぐみ「スパイラルボンバー」"
+        },
+        {
+          "kind": "title",
+          "code": "0x2204",
+          "title": "MEGUMI.SPA : 04 : めぐみ「シャイニングランサー」"
+        },
+        {
+          "kind": "title",
+          "code": "0x2205",
+          "title": "MEGUMI.SPA : 05 : めぐみ「やっ」"
+        },
+        {
+          "kind": "title",
+          "code": "0x2206",
+          "title": "MEGUMI.SPA : 06 : めぐみ「やあ」"
+        },
+        {
+          "kind": "title",
+          "code": "0x2207",
+          "title": "MEGUMI.SPA : 07 : めぐみ「とう」"
+        },
+        {
+          "kind": "title",
+          "code": "0x2208",
+          "title": "MEGUMI.SPA : 08 : めぐみ「あっ」"
+        },
+        {
+          "kind": "title",
+          "code": "0x2209",
+          "title": "MEGUMI.SPA : 09 : めぐみ「きゃあ」"
+        },
+        {
+          "kind": "title",
+          "code": "0x220a",
+          "title": "MEGUMI.SPA : 10 : めぐみ「勝った!」"
+        },
+        {
+          "kind": "title",
+          "code": "0x2101",
+          "title": "ATSUKO.SPA : 01 : 敦子「ああーん」"
+        },
+        {
+          "kind": "title",
+          "code": "0x2102",
+          "title": "ATSUKO.SPA : 02 : 敦子「リリカルアッパー」"
+        },
+        {
+          "kind": "title",
+          "code": "0x2103",
+          "title": "ATSUKO.SPA : 03 : 敦子「パステルファイアー」"
+        },
+        {
+          "kind": "title",
+          "code": "0x2104",
+          "title": "ATSUKO.SPA : 04 : 敦子「バトンカッター」"
+        },
+        {
+          "kind": "title",
+          "code": "0x2105",
+          "title": "ATSUKO.SPA : 05 : 敦子「メテオドール」"
+        },
+        {
+          "kind": "title",
+          "code": "0x2106",
+          "title": "ATSUKO.SPA : 06 : 敦子「ぱんち」"
+        },
+        {
+          "kind": "title",
+          "code": "0x2107",
+          "title": "ATSUKO.SPA : 07 : 敦子「きっく」"
+        },
+        {
+          "kind": "title",
+          "code": "0x2108",
+          "title": "ATSUKO.SPA : 08 : 敦子「よいしょ」"
+        },
+        {
+          "kind": "title",
+          "code": "0x2109",
+          "title": "ATSUKO.SPA : 09 : 敦子「あーん」"
+        },
+        {
+          "kind": "title",
+          "code": "0x210a",
+          "title": "ATSUKO.SPA : 10 : 敦子「きゃーっ」"
+        },
+        {
+          "kind": "title",
+          "code": "0x210b",
+          "title": "ATSUKO.SPA : 11 : 敦子「わーい」"
+        },
+        {
+          "kind": "title",
+          "code": "0x2801",
+          "title": "USAGI.SPA  : 01 : 羽紗木「やめてよねー」"
+        },
+        {
+          "kind": "title",
+          "code": "0x2802",
+          "title": "USAGI.SPA  : 02 : 羽紗木「ウィップバスター」"
+        },
+        {
+          "kind": "title",
+          "code": "0x2803",
+          "title": "USAGI.SPA  : 03 : 羽紗木「ガイアズスクリーム」"
+        },
+        {
+          "kind": "title",
+          "code": "0x2804",
+          "title": "USAGI.SPA  : 04 : 羽紗木「ドゥームスダンシング」"
+        },
+        {
+          "kind": "title",
+          "code": "0x2805",
+          "title": "USAGI.SPA  : 05 : 羽紗木「シャドウ」"
+        },
+        {
+          "kind": "title",
+          "code": "0x2806",
+          "title": "USAGI.SPA  : 06 : 羽紗木「たぁ」"
+        },
+        {
+          "kind": "title",
+          "code": "0x2807",
+          "title": "USAGI.SPA  : 07 : 羽紗木「とぅ」"
+        },
+        {
+          "kind": "title",
+          "code": "0x2808",
+          "title": "USAGI.SPA  : 08 : 羽紗木「はっ」"
+        },
+        {
+          "kind": "title",
+          "code": "0x2809",
+          "title": "USAGI.SPA  : 09 : 羽紗木「いや」"
+        },
+        {
+          "kind": "title",
+          "code": "0x280a",
+          "title": "USAGI.SPA  : 10 : 羽紗木「あーん」"
+        },
+        {
+          "kind": "title",
+          "code": "0x280b",
+          "title": "USAGI.SPA  : 11 : 羽紗木「きゃーっ」"
+        },
+        {
+          "kind": "title",
+          "code": "0x2401",
+          "title": "MOMOKO.SPA : 01 : 桃子「いち」"
+        },
+        {
+          "kind": "title",
+          "code": "0x2402",
+          "title": "MOMOKO.SPA : 02 : 桃子「に」"
+        },
+        {
+          "kind": "title",
+          "code": "0x2403",
+          "title": "MOMOKO.SPA : 03 : 桃子「桜花三連撃」"
+        },
+        {
+          "kind": "title",
+          "code": "0x2404",
+          "title": "MOMOKO.SPA : 04 : 桃子「光氣弾」"
+        },
+        {
+          "kind": "title",
+          "code": "0x2405",
+          "title": "MOMOKO.SPA : 05 : 桃子「はっ」"
+        },
+        {
+          "kind": "title",
+          "code": "0x2406",
+          "title": "MOMOKO.SPA : 06 : 桃子「風林火山」"
+        },
+        {
+          "kind": "title",
+          "code": "0x2407",
+          "title": "MOMOKO.SPA : 07 : 桃子「やぁ」"
+        },
+        {
+          "kind": "title",
+          "code": "0x2408",
+          "title": "MOMOKO.SPA : 08 : 桃子「たぁ」"
+        },
+        {
+          "kind": "title",
+          "code": "0x2409",
+          "title": "MOMOKO.SPA : 09 : 桃子「はい」"
+        },
+        {
+          "kind": "title",
+          "code": "0x240a",
+          "title": "MOMOKO.SPA : 10 : 桃子「もう、ふらふら…」"
+        },
+        {
+          "kind": "title",
+          "code": "0x240b",
+          "title": "MOMOKO.SPA : 11 : 桃子「よし、と」"
+        },
+        {
+          "kind": "title",
+          "code": "0x240c",
+          "title": "MOMOKO.SPA : 12 : 桃子「あん」"
+        },
+        {
+          "kind": "title",
+          "code": "0x240d",
+          "title": "MOMOKO.SPA : 13 : 桃子「きゃーっ」"
+        },
+        {
+          "kind": "title",
+          "code": "0x2501",
+          "title": "NOMU.SPA   : 01 : 乃霧「キラークイーン」"
+        },
+        {
+          "kind": "title",
+          "code": "0x2502",
+          "title": "NOMU.SPA   : 02 : 乃霧「レインボーアイズ」"
+        },
+        {
+          "kind": "title",
+          "code": "0x2503",
+          "title": "NOMU.SPA   : 03 : 乃霧「ジョーブレイカー」"
+        },
+        {
+          "kind": "title",
+          "code": "0x2504",
+          "title": "NOMU.SPA   : 04 : 乃霧「セーブザクイーン」"
+        },
+        {
+          "kind": "title",
+          "code": "0x2505",
+          "title": "NOMU.SPA   : 05 : 乃霧「はい」"
+        },
+        {
+          "kind": "title",
+          "code": "0x2506",
+          "title": "NOMU.SPA   : 06 : 乃霧「とう」"
+        },
+        {
+          "kind": "title",
+          "code": "0x2507",
+          "title": "NOMU.SPA   : 07 : 乃霧「はっ」"
+        },
+        {
+          "kind": "title",
+          "code": "0x2508",
+          "title": "NOMU.SPA   : 08 : 乃霧「ボロボロよー…」"
+        },
+        {
+          "kind": "title",
+          "code": "0x2509",
+          "title": "NOMU.SPA   : 09 : 乃霧「おーほっほっほっ」"
+        },
+        {
+          "kind": "title",
+          "code": "0x250a",
+          "title": "NOMU.SPA   : 10 : 乃霧「やっ」"
+        },
+        {
+          "kind": "title",
+          "code": "0x250b",
+          "title": "NOMU.SPA   : 11 : 乃霧「あん」"
+        },
+        {
+          "kind": "title",
+          "code": "0x0130",
+          "title": "ATSUKO0A.SPX    : 敦子「油断しないでね、アッコすっごく強いんだから」"
+        },
+        {
+          "kind": "title",
+          "code": "0x0131",
+          "title": "ATSUKO0B.SPX    : 敦子「じゃ、いきまーす」"
+        },
+        {
+          "kind": "title",
+          "code": "0x0132",
+          "title": "ATSUKO1A.SPX    : 敦子「やっぱりアッコが一番強いね」"
+        },
+        {
+          "kind": "title",
+          "code": "0x0133",
+          "title": "ATSUKO1B.SPX    : 敦子「お疲れ様、名勝負だったね」"
+        },
+        {
+          "kind": "title",
+          "code": "0x0134",
+          "title": "ATSUKO1C.SPX    : 敦子「だから油断しちゃダメって言ったのに」"
+        },
+        {
+          "kind": "title",
+          "code": "0x0135",
+          "title": "ATSUKO2A.SPX    : 敦子「えーん、永遠に勝てっこ無い気がするー」"
+        },
+        {
+          "kind": "title",
+          "code": "0x0136",
+          "title": "ATSUKO2B.SPX    : 敦子「すっごい迫力なんだもん、怖かったよー」"
+        },
+        {
+          "kind": "title",
+          "code": "0x0137",
+          "title": "ATSUKO_Z.SPX    : 敦子「絶対悔しい、負けたままなんてイヤ」"
+        },
+        {
+          "kind": "title",
+          "code": "0x0138",
+          "title": "MEGUMI0A.SPX    : めぐみ「敵は自分のミスだけ、私には誰も敵わない」"
+        },
+        {
+          "kind": "title",
+          "code": "0x0139",
+          "title": "MEGUMI0B.SPX    : めぐみ「ウォームアップにはうってつけの相手ね」"
+        },
+        {
+          "kind": "title",
+          "code": "0x013a",
+          "title": "MEGUMI1A.SPX    : めぐみ「見た目通り、手応えの無い子だね」"
+        },
+        {
+          "kind": "title",
+          "code": "0x013b",
+          "title": "MEGUMI1B.SPX    : めぐみ「普段のトレーニングの方がよほど運動になるわ」"
+        },
+        {
+          "kind": "title",
+          "code": "0x013c",
+          "title": "MEGUMI1C.SPX    : めぐみ「あなたの勝ちへの執念だけは認めるわ」"
+        },
+        {
+          "kind": "title",
+          "code": "0x013d",
+          "title": "MEGUMI2A.SPX    : めぐみ「この次は逆転してみせるよ」"
+        },
+        {
+          "kind": "title",
+          "code": "0x013e",
+          "title": "MEGUMI2B.SPX    : めぐみ「力を出し切っての負けなら、満足だわ」"
+        },
+        {
+          "kind": "title",
+          "code": "0x013f",
+          "title": "MEGUMI_Z.SPX    : めぐみ「ここで諦められるか!」"
+        },
+        {
+          "kind": "title",
+          "code": "0x0140",
+          "title": "MOE0A.SPX       : 萌慧「落ち着いて行こうね、萌慧」"
+        },
+        {
+          "kind": "title",
+          "code": "0x0141",
+          "title": "MOE0B.SPX       : 萌慧「宜しくお願いしまーす」"
+        },
+        {
+          "kind": "title",
+          "code": "0x0142",
+          "title": "MOE1A.SPX       : 萌慧「お疲れ様でしたー」"
+        },
+        {
+          "kind": "title",
+          "code": "0x0143",
+          "title": "MOE1B.SPX       : 萌慧「平気? つい力が入っちゃった」"
+        },
+        {
+          "kind": "title",
+          "code": "0x0144",
+          "title": "MOE1C.SPX       : 萌慧「こーんなに目一杯汗かいたのって久しぶり」"
+        },
+        {
+          "kind": "title",
+          "code": "0x0145",
+          "title": "MOE2A.SPX       : 萌慧「とっても、参ったわ」"
+        },
+        {
+          "kind": "title",
+          "code": "0x0146",
+          "title": "MOE2B.SPX       : 萌慧「ちょっと悔しい感じ」"
+        },
+        {
+          "kind": "title",
+          "code": "0x0147",
+          "title": "MOE_Z.SPX       : 萌慧「私ってダメね、もっと頑張らなくちゃ」"
+        },
+        {
+          "kind": "title",
+          "code": "0x0148",
+          "title": "MOMOKO0A.SPX    : 桃子「手合わせ宜しくお願いします」"
+        },
+        {
+          "kind": "title",
+          "code": "0x0149",
+          "title": "MOMOKO0B.SPX    : 桃子「手合わせ宜しくお願いします」"
+        },
+        {
+          "kind": "title",
+          "code": "0x014a",
+          "title": "MOMOKO1A.SPX    : 桃子「ごめんなさい、ついムキになっちゃった」"
+        },
+        {
+          "kind": "title",
+          "code": "0x014b",
+          "title": "MOMOKO1B.SPX    : 桃子「あなたに勝てて嬉しいです」"
+        },
+        {
+          "kind": "title",
+          "code": "0x014c",
+          "title": "MOMOKO1C.SPX    : 桃子「勝負ありましたね」"
+        },
+        {
+          "kind": "title",
+          "code": "0x014d",
+          "title": "MOMOKO2A.SPX    : 桃子「悔しいけれど力の差は歴然ですね」"
+        },
+        {
+          "kind": "title",
+          "code": "0x014e",
+          "title": "MOMOKO2B.SPX    : 桃子「つけいる隙がありませんでした」"
+        },
+        {
+          "kind": "title",
+          "code": "0x014f",
+          "title": "MOMOKO_Z.SPX    : 桃子「神様、どうか力をお授け下さい」"
+        },
+        {
+          "kind": "title",
+          "code": "0x0150",
+          "title": "NOMU0A.SPX      : 乃霧「どこまで私を本気にさせてくれる相手かしら?」"
+        },
+        {
+          "kind": "title",
+          "code": "0x0151",
+          "title": "NOMU0B.SPX      : 乃霧「少しでも余計に楽しませてほしいものね」"
+        },
+        {
+          "kind": "title",
+          "code": "0x0152",
+          "title": "NOMU1A.SPX      : 乃霧「いつになったら私より強い相手が現れるのかしら?」"
+        },
+        {
+          "kind": "title",
+          "code": "0x0153",
+          "title": "NOMU1B.SPX      : 乃霧「幻滅ね、その程度で女王候補だなんて」"
+        },
+        {
+          "kind": "title",
+          "code": "0x0154",
+          "title": "NOMU1C.SPX      : 乃霧「遊び半分じゃ、私には勝てないわね」"
+        },
+        {
+          "kind": "title",
+          "code": "0x0155",
+          "title": "NOMU2A.SPX      : 乃霧「私を越える相手に出会えて嬉しいわ」"
+        },
+        {
+          "kind": "title",
+          "code": "0x0156",
+          "title": "NOMU2B.SPX      : 乃霧「その程度の力で満足できるうちは幸せね」"
+        },
+        {
+          "kind": "title",
+          "code": "0x0157",
+          "title": "NOMU_Z.SPX      : 乃霧「ちょっと戦いを楽しみすぎたみたいね」"
+        },
+        {
+          "kind": "title",
+          "code": "0x0158",
+          "title": "SARI0A.SPX      : 佐里「残念だけど、アンタは勝てないわ」"
+        },
+        {
+          "kind": "title",
+          "code": "0x0159",
+          "title": "SARI0B.SPX      : 佐里「いつでもどうぞ」"
+        },
+        {
+          "kind": "title",
+          "code": "0x015a",
+          "title": "SARI1A.SPX      : 佐里「私の相手じゃないね」"
+        },
+        {
+          "kind": "title",
+          "code": "0x015b",
+          "title": "SARI1B.SPX      : 佐里「独りよがりの戦いじゃ、勝てないよ」"
+        },
+        {
+          "kind": "title",
+          "code": "0x015c",
+          "title": "SARI1C.SPX      : 佐里「負けた相手が私なら、そう悔やむ必要は無いわ」"
+        },
+        {
+          "kind": "title",
+          "code": "0x015d",
+          "title": "SARI2A.SPX      : 佐里「まさか、候補のままで終わるなんて…」"
+        },
+        {
+          "kind": "title",
+          "code": "0x015e",
+          "title": "SARI2B.SPX      : 佐里「次に勝つのは、私だよ」"
+        },
+        {
+          "kind": "title",
+          "code": "0x015f",
+          "title": "SARI_Z.SPX      : 佐里「絶対女王になってやる!」"
+        },
+        {
+          "kind": "title",
+          "code": "0x0160",
+          "title": "USAGI0A.SPX     : 羽紗木「あたしが勝つんだもの、誰が相手だって同じよ」"
+        },
+        {
+          "kind": "title",
+          "code": "0x0161",
+          "title": "USAGI0B.SPX     : 羽紗木「手加減無し、すぐに終わらせてあげるからね」"
+        },
+        {
+          "kind": "title",
+          "code": "0x0162",
+          "title": "USAGI1A.SPX     : 羽紗木「簡単に勝ちすぎたわ、あーあ、つまらない」"
+        },
+        {
+          "kind": "title",
+          "code": "0x0163",
+          "title": "USAGI1B.SPX     : 羽紗木「あんたって戦いやすいタイプね」"
+        },
+        {
+          "kind": "title",
+          "code": "0x0164",
+          "title": "USAGI1C.SPX     : 羽紗木「自分が最強だと思ったら大間違いよ」"
+        },
+        {
+          "kind": "title",
+          "code": "0x0165",
+          "title": "USAGI2A.SPX     : 羽紗木「ちくしょー、イライラするー」"
+        },
+        {
+          "kind": "title",
+          "code": "0x0166",
+          "title": "USAGI2B.SPX     : 羽紗木「あー悔しい、こんな弱い子に」"
+        },
+        {
+          "kind": "title",
+          "code": "0x0167",
+          "title": "USAGI_Z.SPX     : 羽紗木「あたしより強い奴なんて許せない!」"
+        },
+        {
+          "kind": "title",
+          "code": "0x0168",
+          "title": "VAL.SPX         : 全員「せーの、ヴァルキリー!」"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/discovery.xml",
+      "source_order": 1105,
+      "archive": "valkyrie_98",
+      "id": "valkyrie-98-86"
+    },
+    {
+      "title": "[PC-9801] Valkyrie The Power Beauties(GS)",
+      "driver": {
+        "name": "pc98dos",
+        "type": "opn",
+        "alias": "DISCOVERY",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "clockmul",
+          "value": "8"
+        },
+        {
+          "name": "midiout",
+          "value": "1"
+        },
+        {
+          "name": "midiout_type",
+          "value": "4"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "VALKY_98.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "CSCP.BIN",
+          "offset": "5"
+        },
+        {
+          "type": "file",
+          "path": "VA_GS_01.DAT",
+          "offset": "11"
+        },
+        {
+          "type": "file",
+          "path": "VA_GS_02.DAT",
+          "offset": "12"
+        },
+        {
+          "type": "file",
+          "path": "VA_GS_03.DAT",
+          "offset": "13"
+        },
+        {
+          "type": "file",
+          "path": "VA_GS_04.DAT",
+          "offset": "14"
+        },
+        {
+          "type": "file",
+          "path": "VA_GS_05.DAT",
+          "offset": "15"
+        },
+        {
+          "type": "file",
+          "path": "VA_GS_06.DAT",
+          "offset": "16"
+        },
+        {
+          "type": "file",
+          "path": "VA_GS_07.DAT",
+          "offset": "17"
+        },
+        {
+          "type": "file",
+          "path": "VA_GS_08.DAT",
+          "offset": "18"
+        },
+        {
+          "type": "file",
+          "path": "VA_GS_09.DAT",
+          "offset": "19"
+        },
+        {
+          "type": "file",
+          "path": "VA_GS_10.DAT",
+          "offset": "20"
+        },
+        {
+          "type": "file",
+          "path": "VA_GS_11.DAT",
+          "offset": "21"
+        },
+        {
+          "type": "file",
+          "path": "VA_GS_12.DAT",
+          "offset": "22"
+        },
+        {
+          "type": "file",
+          "path": "VA_GS_13.DAT",
+          "offset": "23"
+        },
+        {
+          "type": "file",
+          "path": "VA_GS_14.DAT",
+          "offset": "24"
+        },
+        {
+          "type": "file",
+          "path": "VA_GS_15.DAT",
+          "offset": "25"
+        },
+        {
+          "type": "file",
+          "path": "VA_GS_16.DAT",
+          "offset": "26"
+        },
+        {
+          "type": "file",
+          "path": "VA_GS_17.DAT",
+          "offset": "27"
+        },
+        {
+          "type": "file",
+          "path": "VA_GS_18.DAT",
+          "offset": "28"
+        },
+        {
+          "type": "file",
+          "path": "VA_GS_19.DAT",
+          "offset": "29"
+        },
+        {
+          "type": "shell",
+          "path": "VALKY_98",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "11",
+          "title": "VA_GS.GML : 01 : Velvet Moon"
+        },
+        {
+          "kind": "title",
+          "code": "12",
+          "title": "VA_GS.GML : 02 : Vivid in Heart"
+        },
+        {
+          "kind": "title",
+          "code": "13",
+          "title": "VA_GS.GML : 03 : Spiraling Hearts"
+        },
+        {
+          "kind": "title",
+          "code": "14",
+          "title": "VA_GS.GML : 04 : Straight Fight"
+        },
+        {
+          "kind": "title",
+          "code": "15",
+          "title": "VA_GS.GML : 05 : Southwester Saxophone"
+        },
+        {
+          "kind": "title",
+          "code": "16",
+          "title": "VA_GS.GML : 06 : Deep-Sky Submarine"
+        },
+        {
+          "kind": "title",
+          "code": "17",
+          "title": "VA_GS.GML : 07 : Rim-Shot"
+        },
+        {
+          "kind": "title",
+          "code": "18",
+          "title": "VA_GS.GML : 08 : Murasaki-Kaze"
+        },
+        {
+          "kind": "title",
+          "code": "19",
+          "title": "VA_GS.GML : 09 : Magic Splash"
+        },
+        {
+          "kind": "title",
+          "code": "20",
+          "title": "VA_GS.GML : 10 : Silicon Lover"
+        },
+        {
+          "kind": "title",
+          "code": "21",
+          "title": "VA_GS.GML : 11 : Frozen Moonlight"
+        },
+        {
+          "kind": "title",
+          "code": "22",
+          "title": "VA_GS.GML : 12 : fight!"
+        },
+        {
+          "kind": "title",
+          "code": "23",
+          "title": "VA_GS.GML : 13 : Win!"
+        },
+        {
+          "kind": "title",
+          "code": "24",
+          "title": "VA_GS.GML : 14 : Lose..."
+        },
+        {
+          "kind": "title",
+          "code": "25",
+          "title": "VA_GS.GML : 15 : Makeup"
+        },
+        {
+          "kind": "title",
+          "code": "26",
+          "title": "VA_GS.GML : 16 : Fruits in Honey"
+        },
+        {
+          "kind": "title",
+          "code": "27",
+          "title": "VA_GS.GML : 17 : Sakanoue"
+        },
+        {
+          "kind": "title",
+          "code": "28",
+          "title": "VA_GS.GML : 18 : Blackstork"
+        },
+        {
+          "kind": "title",
+          "code": "29",
+          "title": "VA_GS.GML : 19 : Walk, Don't Run."
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/discovery.xml",
+      "source_order": 1106,
+      "archive": "valkyrie_98",
+      "id": "valkyrie-98-opn-2"
+    },
+    {
+      "title": "[PC-9801] チャクラ(OPN)",
+      "driver": {
+        "name": "pc98dos",
+        "type": "opn",
+        "alias": "DISCOVERY",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "clockmul",
+          "value": "8"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "CHAKU_98.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "CHAKURA.EXE",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "C_CLUB.OPN",
+          "offset": "6"
+        },
+        {
+          "type": "file",
+          "path": "C_CLUB.SSG",
+          "offset": "7"
+        },
+        {
+          "type": "file",
+          "path": "C_CLUB.EFF",
+          "offset": "8"
+        },
+        {
+          "type": "file",
+          "path": "C_00.MU",
+          "offset": "11"
+        },
+        {
+          "type": "file",
+          "path": "C_01.MU",
+          "offset": "12"
+        },
+        {
+          "type": "file",
+          "path": "C_02.MU",
+          "offset": "13"
+        },
+        {
+          "type": "file",
+          "path": "C_03.MU",
+          "offset": "14"
+        },
+        {
+          "type": "file",
+          "path": "C_11.MU",
+          "offset": "15"
+        },
+        {
+          "type": "file",
+          "path": "C_12.MU",
+          "offset": "16"
+        },
+        {
+          "type": "file",
+          "path": "C_13.MU",
+          "offset": "17"
+        },
+        {
+          "type": "file",
+          "path": "C_21.MU",
+          "offset": "18"
+        },
+        {
+          "type": "file",
+          "path": "C_22.MU",
+          "offset": "19"
+        },
+        {
+          "type": "file",
+          "path": "C_31.MU",
+          "offset": "20"
+        },
+        {
+          "type": "file",
+          "path": "C_32.MU",
+          "offset": "21"
+        },
+        {
+          "type": "file",
+          "path": "C_33.MU",
+          "offset": "22"
+        },
+        {
+          "type": "file",
+          "path": "FUN.MU",
+          "offset": "23"
+        },
+        {
+          "type": "file",
+          "path": "OVER.MU",
+          "offset": "24"
+        },
+        {
+          "type": "shell",
+          "path": "CHAKU_98",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "11",
+          "title": "C_00.MU : チャクラリズム"
+        },
+        {
+          "kind": "title",
+          "code": "12",
+          "title": "C_01.MU : 走れ! チャック・ノリス!"
+        },
+        {
+          "kind": "title",
+          "code": "13",
+          "title": "C_02.MU : え?"
+        },
+        {
+          "kind": "title",
+          "code": "14",
+          "title": "C_03.MU : エンゼル・フィッシュのアリア"
+        },
+        {
+          "kind": "title",
+          "code": "15",
+          "title": "C_11.MU : どきどき☆カウンセリング"
+        },
+        {
+          "kind": "title",
+          "code": "16",
+          "title": "C_12.MU : さくらの園"
+        },
+        {
+          "kind": "title",
+          "code": "17",
+          "title": "C_13.MU : 青、白、さくら色"
+        },
+        {
+          "kind": "title",
+          "code": "18",
+          "title": "C_21.MU : こんにちは、さようなら"
+        },
+        {
+          "kind": "title",
+          "code": "19",
+          "title": "C_22.MU : 緑の光"
+        },
+        {
+          "kind": "title",
+          "code": "20",
+          "title": "C_31.MU : かえるの水玉蝶ネクタイ"
+        },
+        {
+          "kind": "title",
+          "code": "21",
+          "title": "C_32.MU : トリック・スター"
+        },
+        {
+          "kind": "title",
+          "code": "22",
+          "title": "C_33.MU : 聖金曜日の不思議"
+        },
+        {
+          "kind": "title",
+          "code": "23",
+          "title": "FUN.MU  : さて!"
+        },
+        {
+          "kind": "title",
+          "code": "24",
+          "title": "OVER.MU : きのこの里の午後"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/discovery.xml",
+      "source_order": 1107,
+      "archive": "chakura_98",
+      "id": "chakura-98-opn"
+    },
+    {
+      "title": "[PC-9801] チャクラ(MT-32)",
+      "driver": {
+        "name": "pc98dos",
+        "type": "beep",
+        "alias": "DISCOVERY",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "clockmul",
+          "value": "8"
+        },
+        {
+          "name": "midiout",
+          "value": "1"
+        },
+        {
+          "name": "midiout_type",
+          "value": "2"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "MMD.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MMP_HOOT.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "C_00.MMD",
+          "offset": "11"
+        },
+        {
+          "type": "file",
+          "path": "C_01.MMD",
+          "offset": "12"
+        },
+        {
+          "type": "file",
+          "path": "C_02.MMD",
+          "offset": "13"
+        },
+        {
+          "type": "file",
+          "path": "C_03.MMD",
+          "offset": "14"
+        },
+        {
+          "type": "file",
+          "path": "C_11.MMD",
+          "offset": "15"
+        },
+        {
+          "type": "file",
+          "path": "C_12.MMD",
+          "offset": "16"
+        },
+        {
+          "type": "file",
+          "path": "C_13.MMD",
+          "offset": "17"
+        },
+        {
+          "type": "file",
+          "path": "C_21.MMD",
+          "offset": "18"
+        },
+        {
+          "type": "file",
+          "path": "C_22.MMD",
+          "offset": "19"
+        },
+        {
+          "type": "file",
+          "path": "C_31.MMD",
+          "offset": "20"
+        },
+        {
+          "type": "file",
+          "path": "C_32.MMD",
+          "offset": "21"
+        },
+        {
+          "type": "file",
+          "path": "C_33.MMD",
+          "offset": "22"
+        },
+        {
+          "type": "file",
+          "path": "FUN.MMD",
+          "offset": "23"
+        },
+        {
+          "type": "file",
+          "path": "OVER.MMD",
+          "offset": "24"
+        },
+        {
+          "type": "shell",
+          "path": "MMD",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "MMP_HOOT",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "11",
+          "title": "C_00.MMD : チャクラリズム"
+        },
+        {
+          "kind": "title",
+          "code": "12",
+          "title": "C_01.MMD : 走れ! チャック・ノリス!"
+        },
+        {
+          "kind": "title",
+          "code": "13",
+          "title": "C_02.MMD : え?"
+        },
+        {
+          "kind": "title",
+          "code": "14",
+          "title": "C_03.MMD : エンゼル・フィッシュのアリア"
+        },
+        {
+          "kind": "title",
+          "code": "15",
+          "title": "C_11.MMD : どきどき☆カウンセリング"
+        },
+        {
+          "kind": "title",
+          "code": "16",
+          "title": "C_12.MMD : さくらの園"
+        },
+        {
+          "kind": "title",
+          "code": "17",
+          "title": "C_13.MMD : 青、白、さくら色"
+        },
+        {
+          "kind": "title",
+          "code": "18",
+          "title": "C_21.MMD : こんにちは、さようなら"
+        },
+        {
+          "kind": "title",
+          "code": "19",
+          "title": "C_22.MMD : 緑の光"
+        },
+        {
+          "kind": "title",
+          "code": "20",
+          "title": "C_31.MMD : かえるの水玉蝶ネクタイ"
+        },
+        {
+          "kind": "title",
+          "code": "21",
+          "title": "C_32.MMD : トリック・スター"
+        },
+        {
+          "kind": "title",
+          "code": "22",
+          "title": "C_33.MMD : 聖金曜日の不思議"
+        },
+        {
+          "kind": "title",
+          "code": "23",
+          "title": "FUN.MMD  : さて!"
+        },
+        {
+          "kind": "title",
+          "code": "24",
+          "title": "OVER.MMD : きのこの里の午後"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/discovery.xml",
+      "source_order": 1108,
+      "archive": "chakura_98",
+      "id": "chakura-98-beep"
+    },
+    {
+      "title": "[PC-9801] チャクラ(MT-32 Emulation)",
+      "driver": {
+        "name": "pc98dos",
+        "type": "beep",
+        "alias": "DISCOVERY",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "clockmul",
+          "value": "8"
+        },
+        {
+          "name": "midiout",
+          "value": "1"
+        },
+        {
+          "name": "midiout_type",
+          "value": "1"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "MMD.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MMP_HOOT.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "C_00.MMD",
+          "offset": "11"
+        },
+        {
+          "type": "file",
+          "path": "C_01.MMD",
+          "offset": "12"
+        },
+        {
+          "type": "file",
+          "path": "C_02.MMD",
+          "offset": "13"
+        },
+        {
+          "type": "file",
+          "path": "C_03.MMD",
+          "offset": "14"
+        },
+        {
+          "type": "file",
+          "path": "C_11.MMD",
+          "offset": "15"
+        },
+        {
+          "type": "file",
+          "path": "C_12.MMD",
+          "offset": "16"
+        },
+        {
+          "type": "file",
+          "path": "C_13.MMD",
+          "offset": "17"
+        },
+        {
+          "type": "file",
+          "path": "C_21.MMD",
+          "offset": "18"
+        },
+        {
+          "type": "file",
+          "path": "C_22.MMD",
+          "offset": "19"
+        },
+        {
+          "type": "file",
+          "path": "C_31.MMD",
+          "offset": "20"
+        },
+        {
+          "type": "file",
+          "path": "C_32.MMD",
+          "offset": "21"
+        },
+        {
+          "type": "file",
+          "path": "C_33.MMD",
+          "offset": "22"
+        },
+        {
+          "type": "file",
+          "path": "FUN.MMD",
+          "offset": "23"
+        },
+        {
+          "type": "file",
+          "path": "OVER.MMD",
+          "offset": "24"
+        },
+        {
+          "type": "shell",
+          "path": "MMD",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "MMP_HOOT",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "11",
+          "title": "C_00.MMD : チャクラリズム"
+        },
+        {
+          "kind": "title",
+          "code": "12",
+          "title": "C_01.MMD : 走れ! チャック・ノリス!"
+        },
+        {
+          "kind": "title",
+          "code": "13",
+          "title": "C_02.MMD : え?"
+        },
+        {
+          "kind": "title",
+          "code": "14",
+          "title": "C_03.MMD : エンゼル・フィッシュのアリア"
+        },
+        {
+          "kind": "title",
+          "code": "15",
+          "title": "C_11.MMD : どきどき☆カウンセリング"
+        },
+        {
+          "kind": "title",
+          "code": "16",
+          "title": "C_12.MMD : さくらの園"
+        },
+        {
+          "kind": "title",
+          "code": "17",
+          "title": "C_13.MMD : 青、白、さくら色"
+        },
+        {
+          "kind": "title",
+          "code": "18",
+          "title": "C_21.MMD : こんにちは、さようなら"
+        },
+        {
+          "kind": "title",
+          "code": "19",
+          "title": "C_22.MMD : 緑の光"
+        },
+        {
+          "kind": "title",
+          "code": "20",
+          "title": "C_31.MMD : かえるの水玉蝶ネクタイ"
+        },
+        {
+          "kind": "title",
+          "code": "21",
+          "title": "C_32.MMD : トリック・スター"
+        },
+        {
+          "kind": "title",
+          "code": "22",
+          "title": "C_33.MMD : 聖金曜日の不思議"
+        },
+        {
+          "kind": "title",
+          "code": "23",
+          "title": "FUN.MMD  : さて!"
+        },
+        {
+          "kind": "title",
+          "code": "24",
+          "title": "OVER.MMD : きのこの里の午後"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/discovery.xml",
+      "source_order": 1109,
+      "archive": "chakura_98",
+      "id": "chakura-98-beep-2"
+    },
+    {
+      "title": "[PC-9801] Marine Rouge(OPN)",
+      "driver": {
+        "name": "pc98dos",
+        "type": "opn",
+        "alias": "DISCOVERY",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "clockmul",
+          "value": "8"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "VALKY_98.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "SSCP.BIN",
+          "offset": "6"
+        },
+        {
+          "type": "file",
+          "path": "MR_SE.DAT",
+          "offset": "7"
+        },
+        {
+          "type": "file",
+          "path": "MR_MFM_01.DAT",
+          "offset": "11"
+        },
+        {
+          "type": "file",
+          "path": "MR_MFM_02.DAT",
+          "offset": "12"
+        },
+        {
+          "type": "file",
+          "path": "MR_MFM_03.DAT",
+          "offset": "13"
+        },
+        {
+          "type": "file",
+          "path": "MR_MFM_04.DAT",
+          "offset": "14"
+        },
+        {
+          "type": "file",
+          "path": "MR_MFM_05.DAT",
+          "offset": "15"
+        },
+        {
+          "type": "file",
+          "path": "MR_MFM_06.DAT",
+          "offset": "16"
+        },
+        {
+          "type": "file",
+          "path": "MR_MFM_07.DAT",
+          "offset": "17"
+        },
+        {
+          "type": "file",
+          "path": "MR_MFM_08.DAT",
+          "offset": "18"
+        },
+        {
+          "type": "file",
+          "path": "MR_MFM_09.DAT",
+          "offset": "19"
+        },
+        {
+          "type": "file",
+          "path": "MR_MFM_10.DAT",
+          "offset": "20"
+        },
+        {
+          "type": "file",
+          "path": "MR_MFM_11.DAT",
+          "offset": "21"
+        },
+        {
+          "type": "file",
+          "path": "MR_MFM_12.DAT",
+          "offset": "22"
+        },
+        {
+          "type": "file",
+          "path": "MR_MFM_13.DAT",
+          "offset": "23"
+        },
+        {
+          "type": "file",
+          "path": "MR_MFM_14.DAT",
+          "offset": "24"
+        },
+        {
+          "type": "file",
+          "path": "MR_MFM_15.DAT",
+          "offset": "25"
+        },
+        {
+          "type": "file",
+          "path": "MR_MFM_16.DAT",
+          "offset": "26"
+        },
+        {
+          "type": "file",
+          "path": "MR_MFM_17.DAT",
+          "offset": "27"
+        },
+        {
+          "type": "shell",
+          "path": "VALKY_98",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "11",
+          "title": "MR_MFM.GML : 01 : SPLASH!!"
+        },
+        {
+          "kind": "title",
+          "code": "12",
+          "title": "MR_MFM.GML : 02 : BREAK TIME"
+        },
+        {
+          "kind": "title",
+          "code": "13",
+          "title": "MR_MFM.GML : 03 : SEASIDE HOTEL"
+        },
+        {
+          "kind": "title",
+          "code": "14",
+          "title": "MR_MFM.GML : 04 : PEACEFUL TIME"
+        },
+        {
+          "kind": "title",
+          "code": "15",
+          "title": "MR_MFM.GML : 05 : RAINY BLUE"
+        },
+        {
+          "kind": "title",
+          "code": "16",
+          "title": "MR_MFM.GML : 06 : SHELTER FROM RAIN"
+        },
+        {
+          "kind": "title",
+          "code": "17",
+          "title": "MR_MFM.GML : 07 : NOCTURNE"
+        },
+        {
+          "kind": "title",
+          "code": "18",
+          "title": "MR_MFM.GML : 08 : SEA SIDE STEP!!"
+        },
+        {
+          "kind": "title",
+          "code": "24",
+          "title": "MR_MFM.GML : 14 : BEGINNING"
+        },
+        {
+          "kind": "title",
+          "code": "26",
+          "title": "MR_MFM.GML : 16 : POKER FACE"
+        },
+        {
+          "kind": "title",
+          "code": "22",
+          "title": "MR_MFM.GML : 12 : DISTORTION"
+        },
+        {
+          "kind": "title",
+          "code": "21",
+          "title": "MR_MFM.GML : 11 : RAINY HEART"
+        },
+        {
+          "kind": "title",
+          "code": "20",
+          "title": "MR_MFM.GML : 10 : SEA BREEZE"
+        },
+        {
+          "kind": "title",
+          "code": "19",
+          "title": "MR_MFM.GML : 09 : MISSING LOVE"
+        },
+        {
+          "kind": "title",
+          "code": "23",
+          "title": "MR_MFM.GML : 13 : MARINE ROUGE"
+        },
+        {
+          "kind": "title",
+          "code": "25",
+          "title": "MR_MFM.GML : 15 : UNUSED #1"
+        },
+        {
+          "kind": "title",
+          "code": "27",
+          "title": "MR_MFM.GML : 17 : (DISCOVERY LOGO)"
+        },
+        {
+          "kind": "title",
+          "code": "0x200",
+          "title": "MR_SE.DAT  : 00 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x201",
+          "title": "MR_SE.DAT  : 01 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x202",
+          "title": "MR_SE.DAT  : 02 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x203",
+          "title": "MR_SE.DAT  : 03 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x204",
+          "title": "MR_SE.DAT  : 04 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x205",
+          "title": "MR_SE.DAT  : 05 : (??"
+        },
+        {
+          "kind": "title",
+          "code": "0x206",
+          "title": "MR_SE.DAT  : 06 :"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/discovery.xml",
+      "source_order": 1110,
+      "archive": "mariner_98",
+      "id": "mariner-98-opn"
+    },
+    {
+      "title": "[PC-9801] Marine Rouge(86)",
+      "driver": {
+        "name": "pc98dos",
+        "type": "86",
+        "alias": "DISCOVERY",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "clockmul",
+          "value": "8"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "VALKY_98.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "SSCP.BIN",
+          "offset": "6"
+        },
+        {
+          "type": "file",
+          "path": "MR_SFM_01.DAT",
+          "offset": "11"
+        },
+        {
+          "type": "file",
+          "path": "MR_SFM_02.DAT",
+          "offset": "12"
+        },
+        {
+          "type": "file",
+          "path": "MR_SFM_03.DAT",
+          "offset": "13"
+        },
+        {
+          "type": "file",
+          "path": "MR_SFM_04.DAT",
+          "offset": "14"
+        },
+        {
+          "type": "file",
+          "path": "MR_SFM_05.DAT",
+          "offset": "15"
+        },
+        {
+          "type": "file",
+          "path": "MR_SFM_06.DAT",
+          "offset": "16"
+        },
+        {
+          "type": "file",
+          "path": "MR_SFM_07.DAT",
+          "offset": "17"
+        },
+        {
+          "type": "file",
+          "path": "MR_SFM_08.DAT",
+          "offset": "18"
+        },
+        {
+          "type": "file",
+          "path": "MR_SFM_09.DAT",
+          "offset": "19"
+        },
+        {
+          "type": "file",
+          "path": "MR_SFM_10.DAT",
+          "offset": "20"
+        },
+        {
+          "type": "file",
+          "path": "MR_SFM_11.DAT",
+          "offset": "21"
+        },
+        {
+          "type": "file",
+          "path": "MR_SFM_12.DAT",
+          "offset": "22"
+        },
+        {
+          "type": "file",
+          "path": "MR_SFM_13.DAT",
+          "offset": "23"
+        },
+        {
+          "type": "file",
+          "path": "MR_SFM_14.DAT",
+          "offset": "24"
+        },
+        {
+          "type": "file",
+          "path": "MR_SFM_15.DAT",
+          "offset": "25"
+        },
+        {
+          "type": "file",
+          "path": "MR_SFM_16.DAT",
+          "offset": "26"
+        },
+        {
+          "type": "file",
+          "path": "MR_SFM_17.DAT",
+          "offset": "27"
+        },
+        {
+          "type": "shell",
+          "path": "VALKY_98",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "11",
+          "title": "MR_SFM.GML : 01 : SPLASH!!"
+        },
+        {
+          "kind": "title",
+          "code": "12",
+          "title": "MR_SFM.GML : 02 : BREAK TIME"
+        },
+        {
+          "kind": "title",
+          "code": "13",
+          "title": "MR_SFM.GML : 03 : SEASIDE HOTEL"
+        },
+        {
+          "kind": "title",
+          "code": "14",
+          "title": "MR_SFM.GML : 04 : PEACEFUL TIME"
+        },
+        {
+          "kind": "title",
+          "code": "15",
+          "title": "MR_SFM.GML : 05 : RAINY BLUE"
+        },
+        {
+          "kind": "title",
+          "code": "16",
+          "title": "MR_SFM.GML : 06 : SHELTER FROM RAIN"
+        },
+        {
+          "kind": "title",
+          "code": "17",
+          "title": "MR_SFM.GML : 07 : NOCTURNE"
+        },
+        {
+          "kind": "title",
+          "code": "18",
+          "title": "MR_SFM.GML : 08 : SEA SIDE STEP!!"
+        },
+        {
+          "kind": "title",
+          "code": "24",
+          "title": "MR_SFM.GML : 14 : BEGINNING"
+        },
+        {
+          "kind": "title",
+          "code": "26",
+          "title": "MR_SFM.GML : 16 : POKER FACE"
+        },
+        {
+          "kind": "title",
+          "code": "22",
+          "title": "MR_SFM.GML : 12 : DISTORTION"
+        },
+        {
+          "kind": "title",
+          "code": "21",
+          "title": "MR_SFM.GML : 11 : RAINY HEART"
+        },
+        {
+          "kind": "title",
+          "code": "20",
+          "title": "MR_SFM.GML : 10 : SEA BREEZE"
+        },
+        {
+          "kind": "title",
+          "code": "19",
+          "title": "MR_SFM.GML : 09 : MISSING LOVE"
+        },
+        {
+          "kind": "title",
+          "code": "23",
+          "title": "MR_SFM.GML : 13 : MARINE ROUGE"
+        },
+        {
+          "kind": "title",
+          "code": "25",
+          "title": "MR_SFM.GML : 15 : UNUSED #1"
+        },
+        {
+          "kind": "title",
+          "code": "27",
+          "title": "MR_SFM.GML : 17 : (DISCOVERY LOGO)"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/discovery.xml",
+      "source_order": 1111,
+      "archive": "mariner_98",
+      "id": "mariner-98-86"
+    },
+    {
+      "title": "[PC-9801] Marine Rouge(GS)",
+      "driver": {
+        "name": "pc98dos",
+        "type": "opn",
+        "alias": "DISCOVERY",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "clockmul",
+          "value": "4"
+        },
+        {
+          "name": "midiout",
+          "value": "1"
+        },
+        {
+          "name": "midiout_type",
+          "value": "4"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "VALKY_98.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "SSCP.BIN",
+          "offset": "6"
+        },
+        {
+          "type": "file",
+          "path": "MR_55_01.DAT",
+          "offset": "11"
+        },
+        {
+          "type": "file",
+          "path": "MR_55_02.DAT",
+          "offset": "12"
+        },
+        {
+          "type": "file",
+          "path": "MR_55_03.DAT",
+          "offset": "13"
+        },
+        {
+          "type": "file",
+          "path": "MR_55_04.DAT",
+          "offset": "14"
+        },
+        {
+          "type": "file",
+          "path": "MR_55_05.DAT",
+          "offset": "15"
+        },
+        {
+          "type": "file",
+          "path": "MR_55_06.DAT",
+          "offset": "16"
+        },
+        {
+          "type": "file",
+          "path": "MR_55_07.DAT",
+          "offset": "17"
+        },
+        {
+          "type": "file",
+          "path": "MR_55_08.DAT",
+          "offset": "18"
+        },
+        {
+          "type": "file",
+          "path": "MR_55_09.DAT",
+          "offset": "19"
+        },
+        {
+          "type": "file",
+          "path": "MR_55_10.DAT",
+          "offset": "20"
+        },
+        {
+          "type": "file",
+          "path": "MR_55_11.DAT",
+          "offset": "21"
+        },
+        {
+          "type": "file",
+          "path": "MR_55_12.DAT",
+          "offset": "22"
+        },
+        {
+          "type": "file",
+          "path": "MR_55_13.DAT",
+          "offset": "23"
+        },
+        {
+          "type": "file",
+          "path": "MR_55_14.DAT",
+          "offset": "24"
+        },
+        {
+          "type": "file",
+          "path": "MR_55_15.DAT",
+          "offset": "25"
+        },
+        {
+          "type": "file",
+          "path": "MR_55_16.DAT",
+          "offset": "26"
+        },
+        {
+          "type": "file",
+          "path": "MR_55_17.DAT",
+          "offset": "27"
+        },
+        {
+          "type": "shell",
+          "path": "VALKY_98",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "11",
+          "title": "MR_55.GML : 01 : SPLASH!!"
+        },
+        {
+          "kind": "title",
+          "code": "12",
+          "title": "MR_55.GML : 02 : BREAK TIME"
+        },
+        {
+          "kind": "title",
+          "code": "13",
+          "title": "MR_55.GML : 03 : SEASIDE HOTEL"
+        },
+        {
+          "kind": "title",
+          "code": "14",
+          "title": "MR_55.GML : 04 : PEACEFUL TIME"
+        },
+        {
+          "kind": "title",
+          "code": "15",
+          "title": "MR_55.GML : 05 : RAINY BLUE"
+        },
+        {
+          "kind": "title",
+          "code": "16",
+          "title": "MR_55.GML : 06 : SHELTER FROM RAIN"
+        },
+        {
+          "kind": "title",
+          "code": "17",
+          "title": "MR_55.GML : 07 : NOCTURNE"
+        },
+        {
+          "kind": "title",
+          "code": "18",
+          "title": "MR_55.GML : 08 : SEA SIDE STEP!!"
+        },
+        {
+          "kind": "title",
+          "code": "24",
+          "title": "MR_55.GML : 14 : BEGINNING"
+        },
+        {
+          "kind": "title",
+          "code": "26",
+          "title": "MR_55.GML : 16 : POKER FACE"
+        },
+        {
+          "kind": "title",
+          "code": "22",
+          "title": "MR_55.GML : 12 : DISTORTION"
+        },
+        {
+          "kind": "title",
+          "code": "21",
+          "title": "MR_55.GML : 11 : RAINY HEART"
+        },
+        {
+          "kind": "title",
+          "code": "20",
+          "title": "MR_55.GML : 10 : SEA BREEZE"
+        },
+        {
+          "kind": "title",
+          "code": "19",
+          "title": "MR_55.GML : 09 : MISSING LOVE"
+        },
+        {
+          "kind": "title",
+          "code": "23",
+          "title": "MR_55.GML : 13 : MARINE ROUGE"
+        },
+        {
+          "kind": "title",
+          "code": "25",
+          "title": "MR_55.GML : 15 : UNUSED #1"
+        },
+        {
+          "kind": "title",
+          "code": "27",
+          "title": "MR_55.GML : 17 : (DISCOVERY LOGO)"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/discovery.xml",
+      "source_order": 1112,
+      "archive": "mariner_98",
+      "id": "mariner-98-opn-2"
+    },
+    {
+      "title": "[PC-9801] Marine Rouge(SC-88)",
+      "driver": {
+        "name": "pc98dos",
+        "type": "opn",
+        "alias": "DISCOVERY",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "clockmul",
+          "value": "4"
+        },
+        {
+          "name": "midiout",
+          "value": "1"
+        },
+        {
+          "name": "midiout_type",
+          "value": "7"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "VALKY_98.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "SSCP.BIN",
+          "offset": "6"
+        },
+        {
+          "type": "file",
+          "path": "MR_88_01.DAT",
+          "offset": "11"
+        },
+        {
+          "type": "file",
+          "path": "MR_88_02.DAT",
+          "offset": "12"
+        },
+        {
+          "type": "file",
+          "path": "MR_88_03.DAT",
+          "offset": "13"
+        },
+        {
+          "type": "file",
+          "path": "MR_88_04.DAT",
+          "offset": "14"
+        },
+        {
+          "type": "file",
+          "path": "MR_88_05.DAT",
+          "offset": "15"
+        },
+        {
+          "type": "file",
+          "path": "MR_88_06.DAT",
+          "offset": "16"
+        },
+        {
+          "type": "file",
+          "path": "MR_88_07.DAT",
+          "offset": "17"
+        },
+        {
+          "type": "file",
+          "path": "MR_88_08.DAT",
+          "offset": "18"
+        },
+        {
+          "type": "file",
+          "path": "MR_88_09.DAT",
+          "offset": "19"
+        },
+        {
+          "type": "file",
+          "path": "MR_88_10.DAT",
+          "offset": "20"
+        },
+        {
+          "type": "file",
+          "path": "MR_88_11.DAT",
+          "offset": "21"
+        },
+        {
+          "type": "file",
+          "path": "MR_88_12.DAT",
+          "offset": "22"
+        },
+        {
+          "type": "file",
+          "path": "MR_88_13.DAT",
+          "offset": "23"
+        },
+        {
+          "type": "file",
+          "path": "MR_88_14.DAT",
+          "offset": "24"
+        },
+        {
+          "type": "file",
+          "path": "MR_88_15.DAT",
+          "offset": "25"
+        },
+        {
+          "type": "file",
+          "path": "MR_88_16.DAT",
+          "offset": "26"
+        },
+        {
+          "type": "file",
+          "path": "MR_88_17.DAT",
+          "offset": "27"
+        },
+        {
+          "type": "shell",
+          "path": "VALKY_98",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "11",
+          "title": "MR_88.GML : 01 : SPLASH!!"
+        },
+        {
+          "kind": "title",
+          "code": "12",
+          "title": "MR_88.GML : 02 : BREAK TIME"
+        },
+        {
+          "kind": "title",
+          "code": "13",
+          "title": "MR_88.GML : 03 : SEASIDE HOTEL"
+        },
+        {
+          "kind": "title",
+          "code": "14",
+          "title": "MR_88.GML : 04 : PEACEFUL TIME"
+        },
+        {
+          "kind": "title",
+          "code": "15",
+          "title": "MR_88.GML : 05 : RAINY BLUE"
+        },
+        {
+          "kind": "title",
+          "code": "16",
+          "title": "MR_88.GML : 06 : SHELTER FROM RAIN"
+        },
+        {
+          "kind": "title",
+          "code": "17",
+          "title": "MR_88.GML : 07 : NOCTURNE"
+        },
+        {
+          "kind": "title",
+          "code": "18",
+          "title": "MR_88.GML : 08 : SEA SIDE STEP!!"
+        },
+        {
+          "kind": "title",
+          "code": "24",
+          "title": "MR_88.GML : 14 : BEGINNING"
+        },
+        {
+          "kind": "title",
+          "code": "26",
+          "title": "MR_88.GML : 16 : POKER FACE"
+        },
+        {
+          "kind": "title",
+          "code": "22",
+          "title": "MR_88.GML : 12 : DISTORTION"
+        },
+        {
+          "kind": "title",
+          "code": "21",
+          "title": "MR_88.GML : 11 : RAINY HEART"
+        },
+        {
+          "kind": "title",
+          "code": "20",
+          "title": "MR_88.GML : 10 : SEA BREEZE"
+        },
+        {
+          "kind": "title",
+          "code": "19",
+          "title": "MR_88.GML : 09 : MISSING LOVE"
+        },
+        {
+          "kind": "title",
+          "code": "23",
+          "title": "MR_88.GML : 13 : MARINE ROUGE"
+        },
+        {
+          "kind": "title",
+          "code": "25",
+          "title": "MR_88.GML : 15 : UNUSED #1"
+        },
+        {
+          "kind": "title",
+          "code": "27",
+          "title": "MR_88.GML : 17 : (DISCOVERY LOGO)"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/discovery.xml",
+      "source_order": 1113,
+      "archive": "mariner_98",
+      "id": "mariner-98-opn-3"
+    },
+    {
+      "title": "[PC-9801] 淫従の堕天使(OPN)",
+      "driver": {
+        "name": "pc98dos",
+        "type": "opn",
+        "alias": "DISCOVERY",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "showfm3ex",
+          "value": "1"
+        },
+        {
+          "name": "clockmul",
+          "value": "8"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "VALKY_98.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "SSCP.BIN",
+          "offset": "6"
+        },
+        {
+          "type": "file",
+          "path": "IJ_SE.SE",
+          "offset": "7"
+        },
+        {
+          "type": "file",
+          "path": "IJ_MFM_01.DAT",
+          "offset": "11"
+        },
+        {
+          "type": "file",
+          "path": "IJ_MFM_02.DAT",
+          "offset": "12"
+        },
+        {
+          "type": "file",
+          "path": "IJ_MFM_03.DAT",
+          "offset": "13"
+        },
+        {
+          "type": "file",
+          "path": "IJ_MFM_04.DAT",
+          "offset": "14"
+        },
+        {
+          "type": "file",
+          "path": "IJ_MFM_05.DAT",
+          "offset": "15"
+        },
+        {
+          "type": "file",
+          "path": "IJ_MFM_06.DAT",
+          "offset": "16"
+        },
+        {
+          "type": "file",
+          "path": "IJ_MFM_07.DAT",
+          "offset": "17"
+        },
+        {
+          "type": "file",
+          "path": "IJ_MFM_08.DAT",
+          "offset": "18"
+        },
+        {
+          "type": "file",
+          "path": "IJ_MFM_09.DAT",
+          "offset": "19"
+        },
+        {
+          "type": "file",
+          "path": "IJ_MFM_10.DAT",
+          "offset": "20"
+        },
+        {
+          "type": "file",
+          "path": "IJ_MFM_11.DAT",
+          "offset": "21"
+        },
+        {
+          "type": "file",
+          "path": "IJ_MFM_12.DAT",
+          "offset": "22"
+        },
+        {
+          "type": "file",
+          "path": "IJ_MFM_13.DAT",
+          "offset": "23"
+        },
+        {
+          "type": "file",
+          "path": "IJ_MFM_14.DAT",
+          "offset": "24"
+        },
+        {
+          "type": "file",
+          "path": "IJ_MFM_15.DAT",
+          "offset": "25"
+        },
+        {
+          "type": "file",
+          "path": "IJ_MFM_16.DAT",
+          "offset": "26"
+        },
+        {
+          "type": "shell",
+          "path": "VALKY_98",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "11",
+          "title": "IJ_MFM.GML : 01 : DISCOVERY LOGO"
+        },
+        {
+          "kind": "title",
+          "code": "12",
+          "title": "IJ_MFM.GML : 02 : Requiem for Fallen Angels"
+        },
+        {
+          "kind": "title",
+          "code": "13",
+          "title": "IJ_MFM.GML : 03 : Main Street"
+        },
+        {
+          "kind": "title",
+          "code": "14",
+          "title": "IJ_MFM.GML : 04 : If You Are ..."
+        },
+        {
+          "kind": "title",
+          "code": "15",
+          "title": "IJ_MFM.GML : 05 : Missing Wing"
+        },
+        {
+          "kind": "title",
+          "code": "16",
+          "title": "IJ_MFM.GML : 06 : Peace of Mind"
+        },
+        {
+          "kind": "title",
+          "code": "17",
+          "title": "IJ_MFM.GML : 07 : Cat・Tail-Walk"
+        },
+        {
+          "kind": "title",
+          "code": "18",
+          "title": "IJ_MFM.GML : 08 : Feeling of Darkness"
+        },
+        {
+          "kind": "title",
+          "code": "19",
+          "title": "IJ_MFM.GML : 09 : Club Eden"
+        },
+        {
+          "kind": "title",
+          "code": "20",
+          "title": "IJ_MFM.GML : 10 : LIBLA"
+        },
+        {
+          "kind": "title",
+          "code": "21",
+          "title": "IJ_MFM.GML : 11 : Dis Communication"
+        },
+        {
+          "kind": "title",
+          "code": "22",
+          "title": "IJ_MFM.GML : 12 : Only My Fallen Angel"
+        },
+        {
+          "kind": "title",
+          "code": "23",
+          "title": "IJ_MFM.GML : 13 : Welcome Heaven"
+        },
+        {
+          "kind": "title",
+          "code": "24",
+          "title": "IJ_MFM.GML : 14 : Seventh Kiss"
+        },
+        {
+          "kind": "title",
+          "code": "25",
+          "title": "IJ_MFM.GML : 15 : Dark Romance"
+        },
+        {
+          "kind": "title",
+          "code": "26",
+          "title": "IJ_MFM.GML : 16 : Broke'n Gair"
+        },
+        {
+          "kind": "title",
+          "code": "0x200",
+          "title": "IJ_SE.SE : 00 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x201",
+          "title": "IJ_SE.SE : 01 : (??"
+        },
+        {
+          "kind": "title",
+          "code": "0x202",
+          "title": "IJ_SE.SE : 02 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x203",
+          "title": "IJ_SE.SE : 03 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x204",
+          "title": "IJ_SE.SE : 04 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x205",
+          "title": "IJ_SE.SE : 05 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x206",
+          "title": "IJ_SE.SE : 06 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x207",
+          "title": "IJ_SE.SE : 07 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x208",
+          "title": "IJ_SE.SE : 08 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x209",
+          "title": "IJ_SE.SE : 09 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x20a",
+          "title": "IJ_SE.SE : 10 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x20b",
+          "title": "IJ_SE.SE : 11 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x20c",
+          "title": "IJ_SE.SE : 12 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x20d",
+          "title": "IJ_SE.SE : 13 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x20e",
+          "title": "IJ_SE.SE : 14 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x20f",
+          "title": "IJ_SE.SE : 15 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x210",
+          "title": "IJ_SE.SE : 16 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x211",
+          "title": "IJ_SE.SE : 17 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x212",
+          "title": "IJ_SE.SE : 18 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x213",
+          "title": "IJ_SE.SE : 19 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x214",
+          "title": "IJ_SE.SE : 20 : (??"
+        },
+        {
+          "kind": "title",
+          "code": "0x215",
+          "title": "IJ_SE.SE : 21 :"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/discovery.xml",
+      "source_order": 1114,
+      "archive": "injuda_98",
+      "id": "injuda-98-opn"
+    },
+    {
+      "title": "[PC-9801] 淫従の堕天使(86)",
+      "driver": {
+        "name": "pc98dos",
+        "type": "86",
+        "alias": "DISCOVERY",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "clockmul",
+          "value": "8"
+        },
+        {
+          "name": "showfm3ex",
+          "value": "1"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "VALKY_98.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "SSCP.BIN",
+          "offset": "6"
+        },
+        {
+          "type": "file",
+          "path": "IJ_SFM_01.DAT",
+          "offset": "11"
+        },
+        {
+          "type": "file",
+          "path": "IJ_SFM_02.DAT",
+          "offset": "12"
+        },
+        {
+          "type": "file",
+          "path": "IJ_SFM_03.DAT",
+          "offset": "13"
+        },
+        {
+          "type": "file",
+          "path": "IJ_SFM_04.DAT",
+          "offset": "14"
+        },
+        {
+          "type": "file",
+          "path": "IJ_SFM_05.DAT",
+          "offset": "15"
+        },
+        {
+          "type": "file",
+          "path": "IJ_SFM_06.DAT",
+          "offset": "16"
+        },
+        {
+          "type": "file",
+          "path": "IJ_SFM_07.DAT",
+          "offset": "17"
+        },
+        {
+          "type": "file",
+          "path": "IJ_SFM_08.DAT",
+          "offset": "18"
+        },
+        {
+          "type": "file",
+          "path": "IJ_SFM_09.DAT",
+          "offset": "19"
+        },
+        {
+          "type": "file",
+          "path": "IJ_SFM_10.DAT",
+          "offset": "20"
+        },
+        {
+          "type": "file",
+          "path": "IJ_SFM_11.DAT",
+          "offset": "21"
+        },
+        {
+          "type": "file",
+          "path": "IJ_SFM_12.DAT",
+          "offset": "22"
+        },
+        {
+          "type": "file",
+          "path": "IJ_SFM_13.DAT",
+          "offset": "23"
+        },
+        {
+          "type": "file",
+          "path": "IJ_SFM_14.DAT",
+          "offset": "24"
+        },
+        {
+          "type": "file",
+          "path": "IJ_SFM_15.DAT",
+          "offset": "25"
+        },
+        {
+          "type": "file",
+          "path": "IJ_SFM_16.DAT",
+          "offset": "26"
+        },
+        {
+          "type": "shell",
+          "path": "VALKY_98",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "11",
+          "title": "IJ_SFM.GML : 01 : DISCOVERY LOGO"
+        },
+        {
+          "kind": "title",
+          "code": "12",
+          "title": "IJ_SFM.GML : 02 : Requiem for Fallen Angels"
+        },
+        {
+          "kind": "title",
+          "code": "13",
+          "title": "IJ_SFM.GML : 03 : Main Street"
+        },
+        {
+          "kind": "title",
+          "code": "14",
+          "title": "IJ_SFM.GML : 04 : If You Are ..."
+        },
+        {
+          "kind": "title",
+          "code": "15",
+          "title": "IJ_SFM.GML : 05 : Missing Wing"
+        },
+        {
+          "kind": "title",
+          "code": "16",
+          "title": "IJ_SFM.GML : 06 : Peace of Mind"
+        },
+        {
+          "kind": "title",
+          "code": "17",
+          "title": "IJ_SFM.GML : 07 : Cat・Tail-Walk"
+        },
+        {
+          "kind": "title",
+          "code": "18",
+          "title": "IJ_SFM.GML : 08 : Feeling of Darkness"
+        },
+        {
+          "kind": "title",
+          "code": "19",
+          "title": "IJ_SFM.GML : 09 : Club Eden"
+        },
+        {
+          "kind": "title",
+          "code": "20",
+          "title": "IJ_SFM.GML : 10 : LIBLA"
+        },
+        {
+          "kind": "title",
+          "code": "21",
+          "title": "IJ_SFM.GML : 11 : Dis Communication"
+        },
+        {
+          "kind": "title",
+          "code": "22",
+          "title": "IJ_SFM.GML : 12 : Only My Fallen Angel"
+        },
+        {
+          "kind": "title",
+          "code": "23",
+          "title": "IJ_SFM.GML : 13 : Welcome Heaven"
+        },
+        {
+          "kind": "title",
+          "code": "24",
+          "title": "IJ_SFM.GML : 14 : Seventh Kiss"
+        },
+        {
+          "kind": "title",
+          "code": "25",
+          "title": "IJ_SFM.GML : 15 : Dark Romance"
+        },
+        {
+          "kind": "title",
+          "code": "26",
+          "title": "IJ_SFM.GML : 16 : Broke'n Gair"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/discovery.xml",
+      "source_order": 1115,
+      "archive": "injuda_98",
+      "id": "injuda-98-86"
+    },
+    {
+      "title": "[PC-9801] 淫従の堕天使(GM)",
+      "driver": {
+        "name": "pc98dos",
+        "type": "opn",
+        "alias": "DISCOVERY",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "clockmul",
+          "value": "8"
+        },
+        {
+          "name": "midiout",
+          "value": "1"
+        },
+        {
+          "name": "midiout_type",
+          "value": "8"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "VALKY_98.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "SSCP.BIN",
+          "offset": "6"
+        },
+        {
+          "type": "file",
+          "path": "IJ_GM_01.DAT",
+          "offset": "11"
+        },
+        {
+          "type": "file",
+          "path": "IJ_GM_02.DAT",
+          "offset": "12"
+        },
+        {
+          "type": "file",
+          "path": "IJ_GM_03.DAT",
+          "offset": "13"
+        },
+        {
+          "type": "file",
+          "path": "IJ_GM_04.DAT",
+          "offset": "14"
+        },
+        {
+          "type": "file",
+          "path": "IJ_GM_05.DAT",
+          "offset": "15"
+        },
+        {
+          "type": "file",
+          "path": "IJ_GM_06.DAT",
+          "offset": "16"
+        },
+        {
+          "type": "file",
+          "path": "IJ_GM_07.DAT",
+          "offset": "17"
+        },
+        {
+          "type": "file",
+          "path": "IJ_GM_08.DAT",
+          "offset": "18"
+        },
+        {
+          "type": "file",
+          "path": "IJ_GM_09.DAT",
+          "offset": "19"
+        },
+        {
+          "type": "file",
+          "path": "IJ_GM_10.DAT",
+          "offset": "20"
+        },
+        {
+          "type": "file",
+          "path": "IJ_GM_11.DAT",
+          "offset": "21"
+        },
+        {
+          "type": "file",
+          "path": "IJ_GM_12.DAT",
+          "offset": "22"
+        },
+        {
+          "type": "file",
+          "path": "IJ_GM_13.DAT",
+          "offset": "23"
+        },
+        {
+          "type": "file",
+          "path": "IJ_GM_14.DAT",
+          "offset": "24"
+        },
+        {
+          "type": "file",
+          "path": "IJ_GM_15.DAT",
+          "offset": "25"
+        },
+        {
+          "type": "file",
+          "path": "IJ_GM_16.DAT",
+          "offset": "26"
+        },
+        {
+          "type": "shell",
+          "path": "VALKY_98",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "11",
+          "title": "IJ_GM.GML : 01 : DISCOVERY LOGO"
+        },
+        {
+          "kind": "title",
+          "code": "12",
+          "title": "IJ_GM.GML : 02 : Requiem for Fallen Angels"
+        },
+        {
+          "kind": "title",
+          "code": "13",
+          "title": "IJ_GM.GML : 03 : Main Street"
+        },
+        {
+          "kind": "title",
+          "code": "14",
+          "title": "IJ_GM.GML : 04 : If You Are ..."
+        },
+        {
+          "kind": "title",
+          "code": "15",
+          "title": "IJ_GM.GML : 05 : Missing Wing"
+        },
+        {
+          "kind": "title",
+          "code": "16",
+          "title": "IJ_GM.GML : 06 : Peace of Mind"
+        },
+        {
+          "kind": "title",
+          "code": "17",
+          "title": "IJ_GM.GML : 07 : Cat・Tail-Walk"
+        },
+        {
+          "kind": "title",
+          "code": "18",
+          "title": "IJ_GM.GML : 08 : Feeling of Darkness"
+        },
+        {
+          "kind": "title",
+          "code": "19",
+          "title": "IJ_GM.GML : 09 : Club Eden"
+        },
+        {
+          "kind": "title",
+          "code": "20",
+          "title": "IJ_GM.GML : 10 : LIBLA"
+        },
+        {
+          "kind": "title",
+          "code": "21",
+          "title": "IJ_GM.GML : 11 : Dis Communication"
+        },
+        {
+          "kind": "title",
+          "code": "22",
+          "title": "IJ_GM.GML : 12 : Only My Fallen Angel"
+        },
+        {
+          "kind": "title",
+          "code": "23",
+          "title": "IJ_GM.GML : 13 : Welcome Heaven"
+        },
+        {
+          "kind": "title",
+          "code": "24",
+          "title": "IJ_GM.GML : 14 : Seventh Kiss"
+        },
+        {
+          "kind": "title",
+          "code": "25",
+          "title": "IJ_GM.GML : 15 : Dark Romance"
+        },
+        {
+          "kind": "title",
+          "code": "26",
+          "title": "IJ_GM.GML : 16 : Broke'n Gair"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/discovery.xml",
+      "source_order": 1116,
+      "archive": "injuda_98",
+      "id": "injuda-98-opn-2"
+    },
+    {
+      "title": "[PC-9801] 淫従の堕天使(SC-88)",
+      "driver": {
+        "name": "pc98dos",
+        "type": "opn",
+        "alias": "DISCOVERY",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "clockmul",
+          "value": "8"
+        },
+        {
+          "name": "midiout",
+          "value": "1"
+        },
+        {
+          "name": "midiout_type",
+          "value": "7"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "VALKY_98.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "SSCP.BIN",
+          "offset": "6"
+        },
+        {
+          "type": "file",
+          "path": "IJ_88_01.DAT",
+          "offset": "11"
+        },
+        {
+          "type": "file",
+          "path": "IJ_88_02.DAT",
+          "offset": "12"
+        },
+        {
+          "type": "file",
+          "path": "IJ_88_03.DAT",
+          "offset": "13"
+        },
+        {
+          "type": "file",
+          "path": "IJ_88_04.DAT",
+          "offset": "14"
+        },
+        {
+          "type": "file",
+          "path": "IJ_88_05.DAT",
+          "offset": "15"
+        },
+        {
+          "type": "file",
+          "path": "IJ_88_06.DAT",
+          "offset": "16"
+        },
+        {
+          "type": "file",
+          "path": "IJ_88_07.DAT",
+          "offset": "17"
+        },
+        {
+          "type": "file",
+          "path": "IJ_88_08.DAT",
+          "offset": "18"
+        },
+        {
+          "type": "file",
+          "path": "IJ_88_09.DAT",
+          "offset": "19"
+        },
+        {
+          "type": "file",
+          "path": "IJ_88_10.DAT",
+          "offset": "20"
+        },
+        {
+          "type": "file",
+          "path": "IJ_88_11.DAT",
+          "offset": "21"
+        },
+        {
+          "type": "file",
+          "path": "IJ_88_12.DAT",
+          "offset": "22"
+        },
+        {
+          "type": "file",
+          "path": "IJ_88_13.DAT",
+          "offset": "23"
+        },
+        {
+          "type": "file",
+          "path": "IJ_88_14.DAT",
+          "offset": "24"
+        },
+        {
+          "type": "file",
+          "path": "IJ_88_15.DAT",
+          "offset": "25"
+        },
+        {
+          "type": "file",
+          "path": "IJ_88_16.DAT",
+          "offset": "26"
+        },
+        {
+          "type": "shell",
+          "path": "VALKY_98",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "11",
+          "title": "IJ_88.GML : 01 : DISCOVERY LOGO"
+        },
+        {
+          "kind": "title",
+          "code": "12",
+          "title": "IJ_88.GML : 02 : Requiem for Fallen Angels"
+        },
+        {
+          "kind": "title",
+          "code": "13",
+          "title": "IJ_88.GML : 03 : Main Street"
+        },
+        {
+          "kind": "title",
+          "code": "14",
+          "title": "IJ_88.GML : 04 : If You Are ..."
+        },
+        {
+          "kind": "title",
+          "code": "15",
+          "title": "IJ_88.GML : 05 : Missing Wing"
+        },
+        {
+          "kind": "title",
+          "code": "16",
+          "title": "IJ_88.GML : 06 : Peace of Mind"
+        },
+        {
+          "kind": "title",
+          "code": "17",
+          "title": "IJ_88.GML : 07 : Cat・Tail-Walk"
+        },
+        {
+          "kind": "title",
+          "code": "18",
+          "title": "IJ_88.GML : 08 : Feeling of Darkness"
+        },
+        {
+          "kind": "title",
+          "code": "19",
+          "title": "IJ_88.GML : 09 : Club Eden"
+        },
+        {
+          "kind": "title",
+          "code": "20",
+          "title": "IJ_88.GML : 10 : LIBLA"
+        },
+        {
+          "kind": "title",
+          "code": "21",
+          "title": "IJ_88.GML : 11 : Dis Communication"
+        },
+        {
+          "kind": "title",
+          "code": "22",
+          "title": "IJ_88.GML : 12 : Only My Fallen Angel"
+        },
+        {
+          "kind": "title",
+          "code": "23",
+          "title": "IJ_88.GML : 13 : Welcome Heaven"
+        },
+        {
+          "kind": "title",
+          "code": "24",
+          "title": "IJ_88.GML : 14 : Seventh Kiss"
+        },
+        {
+          "kind": "title",
+          "code": "25",
+          "title": "IJ_88.GML : 15 : Dark Romance"
+        },
+        {
+          "kind": "title",
+          "code": "26",
+          "title": "IJ_88.GML : 16 : Broke'n Gair"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/discovery.xml",
+      "source_order": 1117,
+      "archive": "injuda_98",
+      "id": "injuda-98-opn-3"
+    },
+    {
+      "title": "[PC-9821] Mirage2 トリーXニートXローンの大冒険(86)",
+      "driver": {
+        "name": "pc98dos",
+        "type": "86",
+        "alias": "DISCOVERY",
+        "platform": "NEC PC-9821"
+      },
+      "options": [
+        {
+          "name": "clockmul",
+          "value": "8"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "mrg21_98.com",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MRG2.EXE",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MIRAGE2.OP1",
+          "offset": "6"
+        },
+        {
+          "type": "file",
+          "path": "MIRAGE2.SS1",
+          "offset": "7"
+        },
+        {
+          "type": "file",
+          "path": "MIRAGE2.EF1",
+          "offset": "8"
+        },
+        {
+          "type": "file",
+          "path": "T_01.MF2",
+          "offset": "0x11"
+        },
+        {
+          "type": "file",
+          "path": "T_02.MF2",
+          "offset": "0x12"
+        },
+        {
+          "type": "file",
+          "path": "T_03.MF2",
+          "offset": "0x13"
+        },
+        {
+          "type": "file",
+          "path": "T_04.MF2",
+          "offset": "0x14"
+        },
+        {
+          "type": "file",
+          "path": "T_05.MF2",
+          "offset": "0x15"
+        },
+        {
+          "type": "file",
+          "path": "T_06.MF2",
+          "offset": "0x16"
+        },
+        {
+          "type": "file",
+          "path": "T_07.MF2",
+          "offset": "0x17"
+        },
+        {
+          "type": "file",
+          "path": "T_08.MF2",
+          "offset": "0x18"
+        },
+        {
+          "type": "file",
+          "path": "T_09.MF2",
+          "offset": "0x19"
+        },
+        {
+          "type": "file",
+          "path": "T_10.MF2",
+          "offset": "0x1a"
+        },
+        {
+          "type": "file",
+          "path": "T_11.MF2",
+          "offset": "0x1b"
+        },
+        {
+          "type": "file",
+          "path": "T_12.MF2",
+          "offset": "0x1c"
+        },
+        {
+          "type": "file",
+          "path": "T_13.MF2",
+          "offset": "0x1d"
+        },
+        {
+          "type": "file",
+          "path": "T_14.MF2",
+          "offset": "0x1e"
+        },
+        {
+          "type": "file",
+          "path": "T_15.MF2",
+          "offset": "0x1f"
+        },
+        {
+          "type": "file",
+          "path": "T_16.MF2",
+          "offset": "0x20"
+        },
+        {
+          "type": "file",
+          "path": "T_17.MF2",
+          "offset": "0x21"
+        },
+        {
+          "type": "file",
+          "path": "T_18.MF2",
+          "offset": "0x22"
+        },
+        {
+          "type": "file",
+          "path": "SE_19.MF2",
+          "offset": "0x23"
+        },
+        {
+          "type": "file",
+          "path": "INIT_GS.MF2",
+          "offset": "0x24"
+        },
+        {
+          "type": "shell",
+          "path": "mrg21_98",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x211",
+          "title": "T_01.MF2  : オープン・ユア・アイズ"
+        },
+        {
+          "kind": "title",
+          "code": "0x212",
+          "title": "T_02.MF2  : ウォーターライン"
+        },
+        {
+          "kind": "title",
+          "code": "0x213",
+          "title": "T_03.MF2  : ブルー・スカイ・スピリッツ"
+        },
+        {
+          "kind": "title",
+          "code": "0x21f",
+          "title": "T_15.MF2  : ステンドグラス"
+        },
+        {
+          "kind": "title",
+          "code": "0x221",
+          "title": "T_17.MF2  : ストライク急行"
+        },
+        {
+          "kind": "title",
+          "code": "0x214",
+          "title": "T_04.MF2  : 素直な気持ち"
+        },
+        {
+          "kind": "title",
+          "code": "0x220",
+          "title": "T_16.MF2  : 運命の女神"
+        },
+        {
+          "kind": "title",
+          "code": "0x215",
+          "title": "T_05.MF2  : ポップンロール"
+        },
+        {
+          "kind": "title",
+          "code": "0x216",
+          "title": "T_06.MF2  : ドラゴン・ロード"
+        },
+        {
+          "kind": "title",
+          "code": "0x217",
+          "title": "T_07.MF2  : ルート・アドベンチャラス"
+        },
+        {
+          "kind": "title",
+          "code": "0x218",
+          "title": "T_08.MF2  : クロス・ファイヤー"
+        },
+        {
+          "kind": "title",
+          "code": "0x219",
+          "title": "T_09.MF2  : ハート・レスト"
+        },
+        {
+          "kind": "title",
+          "code": "0x21a",
+          "title": "T_10.MF2  : エビル・ストーム"
+        },
+        {
+          "kind": "title",
+          "code": "0x21b",
+          "title": "T_11.MF2  : 紅蓮の魂"
+        },
+        {
+          "kind": "title",
+          "code": "0x21c",
+          "title": "T_12.MF2  : ディア・ミラージュ"
+        },
+        {
+          "kind": "title",
+          "code": "0x222",
+          "title": "T_18.MF2  : 地獄の彷徨"
+        },
+        {
+          "kind": "title",
+          "code": "0x21d",
+          "title": "T_13.MF2  : リバース・バイ・デス"
+        },
+        {
+          "kind": "title",
+          "code": "0x21e",
+          "title": "T_14.MF2  : 処女航海"
+        },
+        {
+          "kind": "title",
+          "code": "0x223",
+          "title": "SE_19.MF2 : 魔力の音"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/discovery.xml",
+      "source_order": 1118,
+      "archive": "mirage2_21",
+      "id": "mirage2-21-86"
+    },
+    {
+      "title": "[PC-9821] Mirage2 トリーXニートXローンの大冒険(MT-32)",
+      "driver": {
+        "name": "pc98dos",
+        "type": "beep",
+        "alias": "DISCOVERY",
+        "platform": "NEC PC-9821"
+      },
+      "options": [
+        {
+          "name": "clockmul",
+          "value": "8"
+        },
+        {
+          "name": "midiout",
+          "value": "1"
+        },
+        {
+          "name": "midiout_type",
+          "value": "2"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "mrg21_98.com",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MRG2.EXE",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MIRAGE2.OP1",
+          "offset": "6"
+        },
+        {
+          "type": "file",
+          "path": "MIRAGE2.SS1",
+          "offset": "7"
+        },
+        {
+          "type": "file",
+          "path": "MIRAGE2.EF1",
+          "offset": "8"
+        },
+        {
+          "type": "file",
+          "path": "T_01.MF2",
+          "offset": "0x11"
+        },
+        {
+          "type": "file",
+          "path": "T_02.MF2",
+          "offset": "0x12"
+        },
+        {
+          "type": "file",
+          "path": "T_03.MF2",
+          "offset": "0x13"
+        },
+        {
+          "type": "file",
+          "path": "T_04.MF2",
+          "offset": "0x14"
+        },
+        {
+          "type": "file",
+          "path": "T_05.MF2",
+          "offset": "0x15"
+        },
+        {
+          "type": "file",
+          "path": "T_06.MF2",
+          "offset": "0x16"
+        },
+        {
+          "type": "file",
+          "path": "T_07.MF2",
+          "offset": "0x17"
+        },
+        {
+          "type": "file",
+          "path": "T_08.MF2",
+          "offset": "0x18"
+        },
+        {
+          "type": "file",
+          "path": "T_09.MF2",
+          "offset": "0x19"
+        },
+        {
+          "type": "file",
+          "path": "T_10.MF2",
+          "offset": "0x1a"
+        },
+        {
+          "type": "file",
+          "path": "T_11.MF2",
+          "offset": "0x1b"
+        },
+        {
+          "type": "file",
+          "path": "T_12.MF2",
+          "offset": "0x1c"
+        },
+        {
+          "type": "file",
+          "path": "T_13.MF2",
+          "offset": "0x1d"
+        },
+        {
+          "type": "file",
+          "path": "T_14.MF2",
+          "offset": "0x1e"
+        },
+        {
+          "type": "file",
+          "path": "T_15.MF2",
+          "offset": "0x1f"
+        },
+        {
+          "type": "file",
+          "path": "T_16.MF2",
+          "offset": "0x20"
+        },
+        {
+          "type": "file",
+          "path": "T_17.MF2",
+          "offset": "0x21"
+        },
+        {
+          "type": "file",
+          "path": "T_18.MF2",
+          "offset": "0x22"
+        },
+        {
+          "type": "file",
+          "path": "SE_19.MF2",
+          "offset": "0x23"
+        },
+        {
+          "type": "file",
+          "path": "INIT_GS.MF2",
+          "offset": "0x24"
+        },
+        {
+          "type": "shell",
+          "path": "mrg21_98",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x411",
+          "title": "T_01.MF2  : オープン・ユア・アイズ"
+        },
+        {
+          "kind": "title",
+          "code": "0x412",
+          "title": "T_02.MF2  : ウォーターライン"
+        },
+        {
+          "kind": "title",
+          "code": "0x413",
+          "title": "T_03.MF2  : ブルー・スカイ・スピリッツ"
+        },
+        {
+          "kind": "title",
+          "code": "0x41f",
+          "title": "T_15.MF2  : ステンドグラス"
+        },
+        {
+          "kind": "title",
+          "code": "0x421",
+          "title": "T_17.MF2  : ストライク急行"
+        },
+        {
+          "kind": "title",
+          "code": "0x414",
+          "title": "T_04.MF2  : 素直な気持ち"
+        },
+        {
+          "kind": "title",
+          "code": "0x420",
+          "title": "T_16.MF2  : 運命の女神"
+        },
+        {
+          "kind": "title",
+          "code": "0x415",
+          "title": "T_05.MF2  : ポップンロール"
+        },
+        {
+          "kind": "title",
+          "code": "0x416",
+          "title": "T_06.MF2  : ドラゴン・ロード"
+        },
+        {
+          "kind": "title",
+          "code": "0x417",
+          "title": "T_07.MF2  : ルート・アドベンチャラス"
+        },
+        {
+          "kind": "title",
+          "code": "0x418",
+          "title": "T_08.MF2  : クロス・ファイヤー"
+        },
+        {
+          "kind": "title",
+          "code": "0x419",
+          "title": "T_09.MF2  : ハート・レスト"
+        },
+        {
+          "kind": "title",
+          "code": "0x41a",
+          "title": "T_10.MF2  : エビル・ストーム"
+        },
+        {
+          "kind": "title",
+          "code": "0x41b",
+          "title": "T_11.MF2  : 紅蓮の魂"
+        },
+        {
+          "kind": "title",
+          "code": "0x41c",
+          "title": "T_12.MF2  : ディア・ミラージュ"
+        },
+        {
+          "kind": "title",
+          "code": "0x422",
+          "title": "T_18.MF2  : 地獄の彷徨"
+        },
+        {
+          "kind": "title",
+          "code": "0x41d",
+          "title": "T_13.MF2  : リバース・バイ・デス"
+        },
+        {
+          "kind": "title",
+          "code": "0x41e",
+          "title": "T_14.MF2  : 処女航海"
+        },
+        {
+          "kind": "title",
+          "code": "0x423",
+          "title": "SE_19.MF2 : 魔力の音"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/discovery.xml",
+      "source_order": 1119,
+      "archive": "mirage2_21",
+      "id": "mirage2-21-beep"
+    },
+    {
+      "title": "[PC-9821] Mirage2 トリーXニートXローンの大冒険(MT-32 Emulation)",
+      "driver": {
+        "name": "pc98dos",
+        "type": "beep",
+        "alias": "DISCOVERY",
+        "platform": "NEC PC-9821"
+      },
+      "options": [
+        {
+          "name": "clockmul",
+          "value": "8"
+        },
+        {
+          "name": "midiout",
+          "value": "1"
+        },
+        {
+          "name": "midiout_type",
+          "value": "1"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "mrg21_98.com",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MRG2.EXE",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MIRAGE2.OP1",
+          "offset": "6"
+        },
+        {
+          "type": "file",
+          "path": "MIRAGE2.SS1",
+          "offset": "7"
+        },
+        {
+          "type": "file",
+          "path": "MIRAGE2.EF1",
+          "offset": "8"
+        },
+        {
+          "type": "file",
+          "path": "T_01.MF2",
+          "offset": "0x11"
+        },
+        {
+          "type": "file",
+          "path": "T_02.MF2",
+          "offset": "0x12"
+        },
+        {
+          "type": "file",
+          "path": "T_03.MF2",
+          "offset": "0x13"
+        },
+        {
+          "type": "file",
+          "path": "T_04.MF2",
+          "offset": "0x14"
+        },
+        {
+          "type": "file",
+          "path": "T_05.MF2",
+          "offset": "0x15"
+        },
+        {
+          "type": "file",
+          "path": "T_06.MF2",
+          "offset": "0x16"
+        },
+        {
+          "type": "file",
+          "path": "T_07.MF2",
+          "offset": "0x17"
+        },
+        {
+          "type": "file",
+          "path": "T_08.MF2",
+          "offset": "0x18"
+        },
+        {
+          "type": "file",
+          "path": "T_09.MF2",
+          "offset": "0x19"
+        },
+        {
+          "type": "file",
+          "path": "T_10.MF2",
+          "offset": "0x1a"
+        },
+        {
+          "type": "file",
+          "path": "T_11.MF2",
+          "offset": "0x1b"
+        },
+        {
+          "type": "file",
+          "path": "T_12.MF2",
+          "offset": "0x1c"
+        },
+        {
+          "type": "file",
+          "path": "T_13.MF2",
+          "offset": "0x1d"
+        },
+        {
+          "type": "file",
+          "path": "T_14.MF2",
+          "offset": "0x1e"
+        },
+        {
+          "type": "file",
+          "path": "T_15.MF2",
+          "offset": "0x1f"
+        },
+        {
+          "type": "file",
+          "path": "T_16.MF2",
+          "offset": "0x20"
+        },
+        {
+          "type": "file",
+          "path": "T_17.MF2",
+          "offset": "0x21"
+        },
+        {
+          "type": "file",
+          "path": "T_18.MF2",
+          "offset": "0x22"
+        },
+        {
+          "type": "file",
+          "path": "SE_19.MF2",
+          "offset": "0x23"
+        },
+        {
+          "type": "file",
+          "path": "INIT_GS.MF2",
+          "offset": "0x24"
+        },
+        {
+          "type": "shell",
+          "path": "mrg21_98",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x411",
+          "title": "T_01.MF2  : オープン・ユア・アイズ"
+        },
+        {
+          "kind": "title",
+          "code": "0x412",
+          "title": "T_02.MF2  : ウォーターライン"
+        },
+        {
+          "kind": "title",
+          "code": "0x413",
+          "title": "T_03.MF2  : ブルー・スカイ・スピリッツ"
+        },
+        {
+          "kind": "title",
+          "code": "0x41f",
+          "title": "T_15.MF2  : ステンドグラス"
+        },
+        {
+          "kind": "title",
+          "code": "0x421",
+          "title": "T_17.MF2  : ストライク急行"
+        },
+        {
+          "kind": "title",
+          "code": "0x414",
+          "title": "T_04.MF2  : 素直な気持ち"
+        },
+        {
+          "kind": "title",
+          "code": "0x420",
+          "title": "T_16.MF2  : 運命の女神"
+        },
+        {
+          "kind": "title",
+          "code": "0x415",
+          "title": "T_05.MF2  : ポップンロール"
+        },
+        {
+          "kind": "title",
+          "code": "0x416",
+          "title": "T_06.MF2  : ドラゴン・ロード"
+        },
+        {
+          "kind": "title",
+          "code": "0x417",
+          "title": "T_07.MF2  : ルート・アドベンチャラス"
+        },
+        {
+          "kind": "title",
+          "code": "0x418",
+          "title": "T_08.MF2  : クロス・ファイヤー"
+        },
+        {
+          "kind": "title",
+          "code": "0x419",
+          "title": "T_09.MF2  : ハート・レスト"
+        },
+        {
+          "kind": "title",
+          "code": "0x41a",
+          "title": "T_10.MF2  : エビル・ストーム"
+        },
+        {
+          "kind": "title",
+          "code": "0x41b",
+          "title": "T_11.MF2  : 紅蓮の魂"
+        },
+        {
+          "kind": "title",
+          "code": "0x41c",
+          "title": "T_12.MF2  : ディア・ミラージュ"
+        },
+        {
+          "kind": "title",
+          "code": "0x422",
+          "title": "T_18.MF2  : 地獄の彷徨"
+        },
+        {
+          "kind": "title",
+          "code": "0x41d",
+          "title": "T_13.MF2  : リバース・バイ・デス"
+        },
+        {
+          "kind": "title",
+          "code": "0x41e",
+          "title": "T_14.MF2  : 処女航海"
+        },
+        {
+          "kind": "title",
+          "code": "0x423",
+          "title": "SE_19.MF2 : 魔力の音"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/discovery.xml",
+      "source_order": 1120,
+      "archive": "mirage2_21",
+      "id": "mirage2-21-beep-2"
+    },
+    {
+      "title": "[PC-9821] Mirage2 トリーXニートXローンの大冒険(GS)",
+      "driver": {
+        "name": "pc98dos",
+        "type": "beep",
+        "alias": "DISCOVERY",
+        "platform": "NEC PC-9821"
+      },
+      "options": [
+        {
+          "name": "clockmul",
+          "value": "8"
+        },
+        {
+          "name": "midiout",
+          "value": "1"
+        },
+        {
+          "name": "midiout_type",
+          "value": "4"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "mrg21_98.com",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MRG2.EXE",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MIRAGE2.OP1",
+          "offset": "6"
+        },
+        {
+          "type": "file",
+          "path": "MIRAGE2.SS1",
+          "offset": "7"
+        },
+        {
+          "type": "file",
+          "path": "MIRAGE2.EF1",
+          "offset": "8"
+        },
+        {
+          "type": "file",
+          "path": "T_01.MF2",
+          "offset": "0x11"
+        },
+        {
+          "type": "file",
+          "path": "T_02.MF2",
+          "offset": "0x12"
+        },
+        {
+          "type": "file",
+          "path": "T_03.MF2",
+          "offset": "0x13"
+        },
+        {
+          "type": "file",
+          "path": "T_04.MF2",
+          "offset": "0x14"
+        },
+        {
+          "type": "file",
+          "path": "T_05.MF2",
+          "offset": "0x15"
+        },
+        {
+          "type": "file",
+          "path": "T_06.MF2",
+          "offset": "0x16"
+        },
+        {
+          "type": "file",
+          "path": "T_07.MF2",
+          "offset": "0x17"
+        },
+        {
+          "type": "file",
+          "path": "T_08.MF2",
+          "offset": "0x18"
+        },
+        {
+          "type": "file",
+          "path": "T_09.MF2",
+          "offset": "0x19"
+        },
+        {
+          "type": "file",
+          "path": "T_10.MF2",
+          "offset": "0x1a"
+        },
+        {
+          "type": "file",
+          "path": "T_11.MF2",
+          "offset": "0x1b"
+        },
+        {
+          "type": "file",
+          "path": "T_12.MF2",
+          "offset": "0x1c"
+        },
+        {
+          "type": "file",
+          "path": "T_13.MF2",
+          "offset": "0x1d"
+        },
+        {
+          "type": "file",
+          "path": "T_14.MF2",
+          "offset": "0x1e"
+        },
+        {
+          "type": "file",
+          "path": "T_15.MF2",
+          "offset": "0x1f"
+        },
+        {
+          "type": "file",
+          "path": "T_16.MF2",
+          "offset": "0x20"
+        },
+        {
+          "type": "file",
+          "path": "T_17.MF2",
+          "offset": "0x21"
+        },
+        {
+          "type": "file",
+          "path": "T_18.MF2",
+          "offset": "0x22"
+        },
+        {
+          "type": "file",
+          "path": "SE_19.MF2",
+          "offset": "0x23"
+        },
+        {
+          "type": "file",
+          "path": "INIT_GS.MF2",
+          "offset": "0x24"
+        },
+        {
+          "type": "shell",
+          "path": "mrg21_98",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x324",
+          "title": "INIT_GS.MF2 : [音源初期化]"
+        },
+        {
+          "kind": "title",
+          "code": "0x311",
+          "title": "T_01.MF2    : オープン・ユア・アイズ"
+        },
+        {
+          "kind": "title",
+          "code": "0x312",
+          "title": "T_02.MF2    : ウォーターライン"
+        },
+        {
+          "kind": "title",
+          "code": "0x313",
+          "title": "T_03.MF2    : ブルー・スカイ・スピリッツ"
+        },
+        {
+          "kind": "title",
+          "code": "0x31f",
+          "title": "T_15.MF2    : ステンドグラス"
+        },
+        {
+          "kind": "title",
+          "code": "0x321",
+          "title": "T_17.MF2    : ストライク急行"
+        },
+        {
+          "kind": "title",
+          "code": "0x314",
+          "title": "T_04.MF2    : 素直な気持ち"
+        },
+        {
+          "kind": "title",
+          "code": "0x320",
+          "title": "T_16.MF2    : 運命の女神"
+        },
+        {
+          "kind": "title",
+          "code": "0x315",
+          "title": "T_05.MF2    : ポップンロール"
+        },
+        {
+          "kind": "title",
+          "code": "0x316",
+          "title": "T_06.MF2    : ドラゴン・ロード"
+        },
+        {
+          "kind": "title",
+          "code": "0x317",
+          "title": "T_07.MF2    : ルート・アドベンチャラス"
+        },
+        {
+          "kind": "title",
+          "code": "0x318",
+          "title": "T_08.MF2    : クロス・ファイヤー"
+        },
+        {
+          "kind": "title",
+          "code": "0x319",
+          "title": "T_09.MF2    : ハート・レスト"
+        },
+        {
+          "kind": "title",
+          "code": "0x31a",
+          "title": "T_10.MF2    : エビル・ストーム"
+        },
+        {
+          "kind": "title",
+          "code": "0x31b",
+          "title": "T_11.MF2    : 紅蓮の魂"
+        },
+        {
+          "kind": "title",
+          "code": "0x31c",
+          "title": "T_12.MF2    : ディア・ミラージュ"
+        },
+        {
+          "kind": "title",
+          "code": "0x322",
+          "title": "T_18.MF2    : 地獄の彷徨"
+        },
+        {
+          "kind": "title",
+          "code": "0x31d",
+          "title": "T_13.MF2    : リバース・バイ・デス"
+        },
+        {
+          "kind": "title",
+          "code": "0x31e",
+          "title": "T_14.MF2    : 処女航海"
+        },
+        {
+          "kind": "title",
+          "code": "0x323",
+          "title": "SE_19.MF2   : 魔力の音"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/discovery.xml",
+      "source_order": 1121,
+      "archive": "mirage2_21",
+      "id": "mirage2-21-beep-3"
+    },
+    {
+      "title": "[X68000] Mirage",
+      "driver": {
+        "name": "x68k",
+        "type": "generic",
+        "alias": "DISCOVERY",
+        "platform": "SHARP X68000"
+      },
+      "options": [],
+      "assets": [
+        {
+          "type": "code",
+          "path": "mirage68snd.bin",
+          "offset": "0x00000"
+        },
+        {
+          "type": "x",
+          "path": "MIRAGE.X",
+          "offset": "0x10000"
+        },
+        {
+          "type": "code",
+          "path": "ML.SS1",
+          "offset": "0xc6000"
+        },
+        {
+          "type": "code",
+          "path": "ML.OP1",
+          "offset": "0xd5000"
+        },
+        {
+          "type": "code",
+          "path": "ML00.MF1",
+          "offset": "0xd7000"
+        },
+        {
+          "type": "code",
+          "path": "ML01.MF1",
+          "offset": "0xd9000"
+        },
+        {
+          "type": "code",
+          "path": "ML02.MF1",
+          "offset": "0xdb000"
+        },
+        {
+          "type": "code",
+          "path": "ML03.MF1",
+          "offset": "0xdd000"
+        },
+        {
+          "type": "code",
+          "path": "ML04.MF1",
+          "offset": "0xdf000"
+        },
+        {
+          "type": "code",
+          "path": "ML05.MF1",
+          "offset": "0xe1000"
+        },
+        {
+          "type": "code",
+          "path": "ML06.MF1",
+          "offset": "0xe3000"
+        },
+        {
+          "type": "code",
+          "path": "ML07.MF1",
+          "offset": "0xe5000"
+        },
+        {
+          "type": "code",
+          "path": "ML08.MF1",
+          "offset": "0xe7000"
+        },
+        {
+          "type": "code",
+          "path": "ML09.MF1",
+          "offset": "0xe9000"
+        },
+        {
+          "type": "code",
+          "path": "ML10.MF1",
+          "offset": "0xeb000"
+        },
+        {
+          "type": "code",
+          "path": "ML11.MF1",
+          "offset": "0xed000"
+        },
+        {
+          "type": "code",
+          "path": "ML12.MF1",
+          "offset": "0xef000"
+        },
+        {
+          "type": "code",
+          "path": "ML13.MF1",
+          "offset": "0xf1000"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "ML00.MF1 : メイン・テーマ"
+        },
+        {
+          "kind": "title",
+          "code": "0x02",
+          "title": "ML01.MF1 : 魔法使いの弟子"
+        },
+        {
+          "kind": "title",
+          "code": "0x03",
+          "title": "ML02.MF1 : パリッシュ・ブルー"
+        },
+        {
+          "kind": "title",
+          "code": "0x04",
+          "title": "ML03.MF1 : ステップ・アップ"
+        },
+        {
+          "kind": "title",
+          "code": "0x0e",
+          "title": "ML13.MF1 : アローン"
+        },
+        {
+          "kind": "title",
+          "code": "0x05",
+          "title": "ML04.MF1 : ライト・ステップ"
+        },
+        {
+          "kind": "title",
+          "code": "0x06",
+          "title": "ML05.MF1 : スパークル"
+        },
+        {
+          "kind": "title",
+          "code": "0x07",
+          "title": "ML06.MF1 : ミニ・ストップ"
+        },
+        {
+          "kind": "title",
+          "code": "0x08",
+          "title": "ML07.MF1 : アクアのテーマ"
+        },
+        {
+          "kind": "title",
+          "code": "0x09",
+          "title": "ML08.MF1 : 魔王マルデューク"
+        },
+        {
+          "kind": "title",
+          "code": "0x0a",
+          "title": "ML09.MF1 : 神々のたそがれ"
+        },
+        {
+          "kind": "title",
+          "code": "0x0b",
+          "title": "ML10.MF1 : コーダ"
+        },
+        {
+          "kind": "title",
+          "code": "0x0c",
+          "title": "ML11.MF1 : シューティング・スター"
+        },
+        {
+          "kind": "title",
+          "code": "0x0d",
+          "title": "ML12.MF1 : マジックグラフィー"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/discovery.xml",
+      "source_order": 1122,
+      "archive": "mirage68snd",
+      "id": "mirage68snd-generic"
+    },
+    {
+      "title": "[X68000] Sweet Emotion",
+      "driver": {
+        "name": "x68k",
+        "type": "generic",
+        "alias": "DISCOVERY",
+        "platform": "SHARP X68000"
+      },
+      "options": [],
+      "assets": [
+        {
+          "type": "code",
+          "path": "opmdrv.bin"
+        },
+        {
+          "type": "x",
+          "path": "OPMDRV.X",
+          "offset": "0x08000"
+        },
+        {
+          "type": "code",
+          "path": "music.muf",
+          "offset": "0x24000"
+        },
+        {
+          "type": "code",
+          "path": "sweet1.muf",
+          "offset": "0x2c000"
+        },
+        {
+          "type": "code",
+          "path": "sweet2.muf",
+          "offset": "0x30000"
+        },
+        {
+          "type": "code",
+          "path": "sweet3.muf",
+          "offset": "0x34000"
+        },
+        {
+          "type": "code",
+          "path": "sweet4.muf",
+          "offset": "0x38000"
+        },
+        {
+          "type": "code",
+          "path": "sweet5.muf",
+          "offset": "0x3c000"
+        },
+        {
+          "type": "code",
+          "path": "sweet6.muf",
+          "offset": "0x40000"
+        },
+        {
+          "type": "code",
+          "path": "sweet7.muf",
+          "offset": "0x44000"
+        },
+        {
+          "type": "code",
+          "path": "sweet8.muf",
+          "offset": "0x48000"
+        },
+        {
+          "type": "code",
+          "path": "sweet9.muf",
+          "offset": "0x4c000"
+        },
+        {
+          "type": "code",
+          "path": "sweeta.muf",
+          "offset": "0x50000"
+        },
+        {
+          "type": "code",
+          "path": "sweetb.muf",
+          "offset": "0x54000"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x0204",
+          "title": "sweet1.muf :"
+        },
+        {
+          "kind": "title",
+          "code": "0x0205",
+          "title": "sweet2.muf :"
+        },
+        {
+          "kind": "title",
+          "code": "0x0206",
+          "title": "sweet3.muf :"
+        },
+        {
+          "kind": "title",
+          "code": "0x0207",
+          "title": "sweet4.muf :"
+        },
+        {
+          "kind": "title",
+          "code": "0x0208",
+          "title": "sweet5.muf :"
+        },
+        {
+          "kind": "title",
+          "code": "0x0209",
+          "title": "sweet6.muf :"
+        },
+        {
+          "kind": "title",
+          "code": "0x020a",
+          "title": "sweet7.muf :"
+        },
+        {
+          "kind": "title",
+          "code": "0x020b",
+          "title": "sweet8.muf :"
+        },
+        {
+          "kind": "title",
+          "code": "0x020c",
+          "title": "sweet9.muf :"
+        },
+        {
+          "kind": "title",
+          "code": "0x020d",
+          "title": "sweeta.muf :"
+        },
+        {
+          "kind": "title",
+          "code": "0x020e",
+          "title": "sweetb.muf :"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/discovery.xml",
+      "source_order": 1123,
+      "archive": "sweete68snd",
+      "id": "sweete68snd-generic"
+    },
+    {
+      "title": "[MSX] Sweet Emotion",
+      "driver": {
+        "name": "msx",
+        "type": "generic",
+        "alias": "DISCOVERY",
+        "platform": "MSX"
+      },
+      "options": [
+        {
+          "name": "mdata_addr",
+          "value": "0xa400"
+        },
+        {
+          "name": "mdata_size",
+          "value": "0x800"
+        },
+        {
+          "name": "mfile_size",
+          "value": "0x800"
+        },
+        {
+          "name": "init_pc",
+          "value": "0x8000"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "TSTIM",
+          "offset": "0xAC00"
+        },
+        {
+          "type": "code",
+          "path": "patch",
+          "offset": "0x8000"
+        },
+        {
+          "type": "bgm",
+          "path": "SWEET1",
+          "offset": "0x00"
+        },
+        {
+          "type": "bgm",
+          "path": "SWEET2",
+          "offset": "0x01"
+        },
+        {
+          "type": "bgm",
+          "path": "SWEET3",
+          "offset": "0x02"
+        },
+        {
+          "type": "bgm",
+          "path": "SWEET4",
+          "offset": "0x03"
+        },
+        {
+          "type": "bgm",
+          "path": "SWEET8",
+          "offset": "0x04"
+        },
+        {
+          "type": "bgm",
+          "path": "SWEET9",
+          "offset": "0x05"
+        },
+        {
+          "type": "bgm",
+          "path": "SWEETA",
+          "offset": "0x06"
+        },
+        {
+          "type": "bgm",
+          "path": "SWEETB",
+          "offset": "0x07"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x00",
+          "title": "SWEET1 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "SWEET2 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x02",
+          "title": "SWEET3 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x03",
+          "title": "SWEET4 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x04",
+          "title": "SWEET8 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x05",
+          "title": "SWEET9 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x06",
+          "title": "SWEETA :"
+        },
+        {
+          "kind": "title",
+          "code": "0x07",
+          "title": "SWEETB :"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/discovery.xml",
+      "source_order": 1124,
+      "archive": "sweetem_msx",
+      "id": "sweetem-msx-generic"
+    }
+  ]
+}

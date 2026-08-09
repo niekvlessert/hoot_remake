@@ -1,0 +1,697 @@
+{
+  "format": "hoot-catalog-shard",
+  "version": 1,
+  "source_file": "xml/thinkingrabbit.xml",
+  "date": "2005/09/25",
+  "comments": [
+    " //Thinking Rabbit "
+  ],
+  "games": [
+    {
+      "title": "[PC-8801] THE MAN I LOVE",
+      "driver": {
+        "name": "pc88",
+        "type": "opn",
+        "alias": "Thinking Rabbit",
+        "platform": "NEC PC-8801"
+      },
+      "options": [],
+      "assets": [
+        {
+          "type": "code",
+          "path": "PATCH",
+          "offset": "0x0000"
+        },
+        {
+          "type": "code",
+          "path": "PROG",
+          "offset": "0x2000"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x00",
+          "title": "BGM 01"
+        },
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "BGM 02"
+        },
+        {
+          "kind": "title",
+          "code": "0x02",
+          "title": "BGM 03"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/thinkingrabbit.xml",
+      "source_order": 4764,
+      "archive": "theman",
+      "id": "theman-opn"
+    },
+    {
+      "title": "[PC-8801] 倉庫番Perfect",
+      "driver": {
+        "name": "pc88",
+        "type": "opn",
+        "alias": "Thinking Rabbit",
+        "platform": "NEC PC-8801"
+      },
+      "options": [
+        {
+          "name": "mdata_addr",
+          "value": "0xe000"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "PATCH",
+          "offset": "0x0000"
+        },
+        {
+          "type": "code",
+          "path": "SBP.COM",
+          "offset": "0x0100"
+        },
+        {
+          "type": "code",
+          "path": "SBPVOICE.BIN",
+          "offset": "0x484c"
+        },
+        {
+          "type": "bgm",
+          "path": "SBPBGM0.BIN",
+          "offset": "0x00"
+        },
+        {
+          "type": "bgm",
+          "path": "SBPBGM1.BIN",
+          "offset": "0x01"
+        },
+        {
+          "type": "bgm",
+          "path": "SBPBGM2.BIN",
+          "offset": "0x02"
+        },
+        {
+          "type": "bgm",
+          "path": "SBPBGM3.BIN",
+          "offset": "0x03"
+        },
+        {
+          "type": "bgm",
+          "path": "SBPBGM4.BIN",
+          "offset": "0x04"
+        },
+        {
+          "type": "bgm",
+          "path": "SBPBGM5.BIN",
+          "offset": "0x05"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x00",
+          "title": "SBPBGM0.BIN"
+        },
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "SBPBGM1.BIN"
+        },
+        {
+          "kind": "title",
+          "code": "0x02",
+          "title": "SBPBGM2.BIN"
+        },
+        {
+          "kind": "title",
+          "code": "0x03",
+          "title": "SBPBGM3.BIN"
+        },
+        {
+          "kind": "title",
+          "code": "0x04",
+          "title": "SBPBGM4.BIN"
+        },
+        {
+          "kind": "title",
+          "code": "0x05",
+          "title": "SBPBGM5.BIN"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/thinkingrabbit.xml",
+      "source_order": 4765,
+      "archive": "sbp88",
+      "id": "sbp88-opn"
+    },
+    {
+      "title": "[PC-9801] 倉庫番Perfect",
+      "driver": {
+        "name": "pc98dos",
+        "type": "opn",
+        "alias": "Thinking Rabbit",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "clockmul",
+          "value": "8"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "mmd2.com",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MMD2.SYS",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "SBPVOICE.VOI",
+          "offset": "0x05"
+        },
+        {
+          "type": "file",
+          "path": "SBPBGM0.BGM",
+          "offset": "0x10"
+        },
+        {
+          "type": "file",
+          "path": "SBPBGM1.BGM",
+          "offset": "0x11"
+        },
+        {
+          "type": "file",
+          "path": "SBPBGM2.BGM",
+          "offset": "0x12"
+        },
+        {
+          "type": "file",
+          "path": "SBPBGM3.BGM",
+          "offset": "0x13"
+        },
+        {
+          "type": "file",
+          "path": "SBPBGM4.BGM",
+          "offset": "0x14"
+        },
+        {
+          "type": "file",
+          "path": "SBPBGM5.BGM",
+          "offset": "0x15"
+        },
+        {
+          "type": "device",
+          "path": "mmd2.sys 5000",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "mmd2",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x050010",
+          "title": "SBPBGM0.BGM"
+        },
+        {
+          "kind": "title",
+          "code": "0x050011",
+          "title": "SBPBGM1.BGM"
+        },
+        {
+          "kind": "title",
+          "code": "0x050012",
+          "title": "SBPBGM2.BGM"
+        },
+        {
+          "kind": "title",
+          "code": "0x050013",
+          "title": "SBPBGM3.BGM"
+        },
+        {
+          "kind": "title",
+          "code": "0x050014",
+          "title": "SBPBGM4.BGM"
+        },
+        {
+          "kind": "title",
+          "code": "0x050015",
+          "title": "SBPBGM5.BGM"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/thinkingrabbit.xml",
+      "source_order": 4766,
+      "archive": "sbp98",
+      "id": "sbp98-opn"
+    },
+    {
+      "title": "[PC-9801] 倉庫番Revenge",
+      "driver": {
+        "name": "pc98dos",
+        "type": "opn",
+        "alias": "Thinking Rabbit",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "clockmul",
+          "value": "8"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "mmd2.com",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MMD.SYS",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "SBRVOICE.VOI",
+          "offset": "0x05"
+        },
+        {
+          "type": "file",
+          "path": "SBRBGM00.BGM",
+          "offset": "0x10"
+        },
+        {
+          "type": "file",
+          "path": "SBRBGM01.BGM",
+          "offset": "0x11"
+        },
+        {
+          "type": "file",
+          "path": "SBRBGM02.BGM",
+          "offset": "0x12"
+        },
+        {
+          "type": "file",
+          "path": "SBRBGM03.BGM",
+          "offset": "0x13"
+        },
+        {
+          "type": "file",
+          "path": "SBRBGM04.BGM",
+          "offset": "0x14"
+        },
+        {
+          "type": "file",
+          "path": "SBRBGM05.BGM",
+          "offset": "0x15"
+        },
+        {
+          "type": "file",
+          "path": "SBRBGM06.BGM",
+          "offset": "0x16"
+        },
+        {
+          "type": "file",
+          "path": "SBRBGM07.BGM",
+          "offset": "0x17"
+        },
+        {
+          "type": "file",
+          "path": "SBRBGM08.BGM",
+          "offset": "0x18"
+        },
+        {
+          "type": "file",
+          "path": "SBRBGM09.BGM",
+          "offset": "0x19"
+        },
+        {
+          "type": "file",
+          "path": "SBRBGM10.BGM",
+          "offset": "0x1a"
+        },
+        {
+          "type": "file",
+          "path": "SBRBGM11.BGM",
+          "offset": "0x1b"
+        },
+        {
+          "type": "device",
+          "path": "mmd.sys /f12 4096 0",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "mmd2",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x050010",
+          "title": "SBRBGM00.BGM :"
+        },
+        {
+          "kind": "title",
+          "code": "0x050011",
+          "title": "SBRBGM01.BGM :"
+        },
+        {
+          "kind": "title",
+          "code": "0x050012",
+          "title": "SBRBGM02.BGM :"
+        },
+        {
+          "kind": "title",
+          "code": "0x050013",
+          "title": "SBRBGM03.BGM :"
+        },
+        {
+          "kind": "title",
+          "code": "0x050014",
+          "title": "SBRBGM04.BGM :"
+        },
+        {
+          "kind": "title",
+          "code": "0x050015",
+          "title": "SBRBGM05.BGM :"
+        },
+        {
+          "kind": "title",
+          "code": "0x050016",
+          "title": "SBRBGM06.BGM :"
+        },
+        {
+          "kind": "title",
+          "code": "0x050017",
+          "title": "SBRBGM07.BGM :"
+        },
+        {
+          "kind": "title",
+          "code": "0x050018",
+          "title": "SBRBGM08.BGM :"
+        },
+        {
+          "kind": "title",
+          "code": "0x050019",
+          "title": "SBRBGM09.BGM :"
+        },
+        {
+          "kind": "title",
+          "code": "0x05001a",
+          "title": "SBRBGM10.BGM :"
+        },
+        {
+          "kind": "title",
+          "code": "0x05001b",
+          "title": "SBRBGM11.BGM :"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/thinkingrabbit.xml",
+      "source_order": 4767,
+      "archive": "sbr_98",
+      "id": "sbr-98-opn"
+    },
+    {
+      "title": "[X1] 倉庫番Perfect",
+      "driver": {
+        "name": "x1",
+        "type": "opm",
+        "alias": "Thinking Rabbit",
+        "platform": "SHARP X1"
+      },
+      "options": [
+        {
+          "name": "init_pc",
+          "value": "0xf000"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "PROG",
+          "offset": "0x8000"
+        },
+        {
+          "type": "code",
+          "path": "PATCH",
+          "offset": "0xf000"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "MUSIC 01"
+        },
+        {
+          "kind": "title",
+          "code": "0x02",
+          "title": "MUSIC 02"
+        },
+        {
+          "kind": "title",
+          "code": "0x03",
+          "title": "MUSIC 03"
+        },
+        {
+          "kind": "title",
+          "code": "0x04",
+          "title": "MUSIC 04"
+        },
+        {
+          "kind": "title",
+          "code": "0x05",
+          "title": "MUSIC 05"
+        },
+        {
+          "kind": "title",
+          "code": "0x06",
+          "title": "MUSIC 06"
+        },
+        {
+          "kind": "title",
+          "code": "0x07",
+          "title": "MUSIC 07"
+        },
+        {
+          "kind": "title",
+          "code": "0x08",
+          "title": "MUSIC 08"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/thinkingrabbit.xml",
+      "source_order": 4768,
+      "archive": "x1sokobanp",
+      "id": "x1sokobanp-opm"
+    },
+    {
+      "title": "[X68000] The Man I Love",
+      "driver": {
+        "name": "x68k",
+        "type": "generic",
+        "alias": "Thinking Rabbit",
+        "platform": "SHARP X68000"
+      },
+      "options": [],
+      "assets": [
+        {
+          "type": "code",
+          "path": "tmil68snd.bin"
+        },
+        {
+          "type": "code",
+          "path": "03.bin",
+          "offset": "0xed000"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "BGM 01"
+        },
+        {
+          "kind": "title",
+          "code": "0x02",
+          "title": "BGM 02"
+        },
+        {
+          "kind": "title",
+          "code": "0x03",
+          "title": "BGM 03"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/thinkingrabbit.xml",
+      "source_order": 4769,
+      "archive": "tmil68snd",
+      "id": "tmil68snd-generic"
+    },
+    {
+      "title": "[X68000] カサブランカに愛を",
+      "driver": {
+        "name": "x68k",
+        "type": "generic",
+        "alias": "Thinking Rabbit",
+        "platform": "SHARP X68000"
+      },
+      "options": [],
+      "assets": [
+        {
+          "type": "code",
+          "path": "tmil68snd.bin"
+        },
+        {
+          "type": "code",
+          "path": "03.bin",
+          "offset": "0xed000"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "BGM 01"
+        },
+        {
+          "kind": "title",
+          "code": "0x02",
+          "title": "BGM 02"
+        },
+        {
+          "kind": "title",
+          "code": "0x03",
+          "title": "BGM 03"
+        },
+        {
+          "kind": "title",
+          "code": "0x04",
+          "title": "BGM 04"
+        },
+        {
+          "kind": "title",
+          "code": "0x05",
+          "title": "BGM 05"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/thinkingrabbit.xml",
+      "source_order": 4770,
+      "archive": "casa68snd",
+      "id": "casa68snd-generic"
+    },
+    {
+      "title": "[X68000] 道化師殺人事件",
+      "driver": {
+        "name": "x68k",
+        "type": "generic",
+        "alias": "Thinking Rabbit",
+        "platform": "SHARP X68000"
+      },
+      "options": [],
+      "assets": [
+        {
+          "type": "code",
+          "path": "dsj68snd.bin"
+        },
+        {
+          "type": "code",
+          "path": "01.bin",
+          "offset": "0x0067c0"
+        },
+        {
+          "type": "code",
+          "path": "05.bin",
+          "offset": "0x13e000"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "BGM 01"
+        },
+        {
+          "kind": "title",
+          "code": "0x02",
+          "title": "BGM 02"
+        },
+        {
+          "kind": "title",
+          "code": "0x03",
+          "title": "BGM 03"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/thinkingrabbit.xml",
+      "source_order": 4771,
+      "archive": "dsj68snd",
+      "id": "dsj68snd-generic"
+    },
+    {
+      "title": "[X68000] 倉庫番Perfect",
+      "driver": {
+        "name": "x68k",
+        "type": "generic",
+        "alias": "Thinking Rabbit",
+        "platform": "SHARP X68000"
+      },
+      "options": [
+        {
+          "name": "mfp",
+          "value": "1"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "souko68snd.bin"
+        },
+        {
+          "type": "code",
+          "path": "MAIN.BIN",
+          "offset": "0x067c0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "range",
+          "min": "0x01",
+          "max": "0x06",
+          "title_format": "BGM %02x",
+          "extcode": "1"
+        },
+        {
+          "kind": "range",
+          "min": "0x08",
+          "max": "0x09",
+          "title_format": "BGM %02x",
+          "extcode": "1"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/thinkingrabbit.xml",
+      "source_order": 4772,
+      "archive": "sbp68snd",
+      "id": "sbp68snd-generic"
+    }
+  ]
+}

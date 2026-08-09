@@ -1,0 +1,2899 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="hoot.xsl"?>
+<!DOCTYPE gamelist [
+	<!ELEMENT gamelist (game|bind|childlists)*>
+	<!ATTLIST gamelist date CDATA #IMPLIED>
+	<!ELEMENT childlists (list)*>
+	<!ELEMENT list (#PCDATA)>
+	<!ELEMENT bind (exts,driver,options?)>
+	<!ELEMENT exts (ext)*>
+	<!ELEMENT ext (#PCDATA)>
+	<!ELEMENT game (name,driver,driveralias?,options?,romlist?,titlelist?)>
+	<!ELEMENT name (#PCDATA)>
+	<!ELEMENT driver (#PCDATA)>
+	<!ATTLIST driver type CDATA #IMPLIED>
+	<!ELEMENT driveralias (#PCDATA)>
+	<!ATTLIST driveralias type CDATA #IMPLIED>
+	<!ELEMENT options (option)*>
+	<!ELEMENT option EMPTY>
+	<!ATTLIST option name CDATA #REQUIRED
+					 value CDATA #REQUIRED>
+	<!ELEMENT romlist (rom)*>
+	<!ATTLIST romlist archive CDATA #IMPLIED>
+	<!ELEMENT rom (#PCDATA)>
+	<!ATTLIST rom type CDATA #REQUIRED
+				  offset CDATA #IMPLIED
+				  crc32 CDATA #IMPLIED>
+	<!ELEMENT titlelist (title|range)*>
+	<!ELEMENT title (#PCDATA)>
+	<!ATTLIST title code CDATA #REQUIRED
+					type CDATA #IMPLIED>
+	<!ELEMENT range (#PCDATA)>
+	<!ATTLIST range min CDATA #REQUIRED
+					max CDATA #REQUIRED
+					extcode CDATA #IMPLIED
+					start CDATA #IMPLIED>
+
+]>
+<gamelist date="2005/09/25">
+	<!-- //Sierra On-Line -->
+	<game>
+		<name>[IBM PC] SORCERIAN(AdLib)</name>
+		<driver type="adlib">pcatdos</driver>
+		<driveralias type="IBM PC">Sierra On-Line</driveralias>
+		<options>
+			<option name="clockmul" value="0x05"/>
+			<option name="opl2_mix" value="0x200"/>
+		</options>
+		<romlist archive="sorc_at">
+			<rom type="file" offset="-1">silp_at.com</rom>
+			<rom type="file" offset="0x08">ADL.DRV</rom>
+			<rom type="file" offset="0x09">PATCH.003</rom>
+			<rom type="file" offset="0x10">SS000</rom>
+			<rom type="file" offset="0x11">SS001</rom>
+			<rom type="file" offset="0x12">SS002</rom>
+			<rom type="file" offset="0x13">SS003</rom>
+			<rom type="file" offset="0x14">SS004</rom>
+			<rom type="file" offset="0x15">SS005</rom>
+			<rom type="file" offset="0x16">SS006</rom>
+			<rom type="file" offset="0x17">SS007</rom>
+			<rom type="file" offset="0x18">SS008</rom>
+			<rom type="file" offset="0x19">SS009</rom>
+			<rom type="file" offset="0x1a">SS010</rom>
+			<rom type="file" offset="0x1b">SS011</rom>
+			<rom type="file" offset="0x1c">SS012</rom>
+			<rom type="file" offset="0x1d">SS014</rom>
+			<rom type="file" offset="0x1e">SS015</rom>
+			<rom type="file" offset="0x1f">SS017</rom>
+			<rom type="file" offset="0x20">SS018</rom>
+			<rom type="file" offset="0x21">SS020</rom>
+			<rom type="file" offset="0x22">SS021</rom>
+			<rom type="file" offset="0x23">SS022</rom>
+			<rom type="file" offset="0x24">SS025</rom>
+			<rom type="file" offset="0x25">SS026</rom>
+			<rom type="file" offset="0x26">SS027</rom>
+			<rom type="file" offset="0x27">SS032</rom>
+			<rom type="file" offset="0x28">SS034</rom>
+			<rom type="file" offset="0x29">SS036</rom>
+			<rom type="file" offset="0x2a">SS037</rom>
+			<rom type="file" offset="0x2b">SS040</rom>
+			<rom type="file" offset="0x2c">SS041</rom>
+			<rom type="file" offset="0x2d">SS042</rom>
+			<rom type="file" offset="0x2e">SS043</rom>
+			<rom type="file" offset="0x2f">SS044</rom>
+			<rom type="file" offset="0x30">SS045</rom>
+			<rom type="file" offset="0x31">SS047</rom>
+			<rom type="file" offset="0x32">SS048</rom>
+			<rom type="file" offset="0x33">SS049</rom>
+			<rom type="file" offset="0x34">SS052</rom>
+			<rom type="file" offset="0x35">SS053</rom>
+			<rom type="file" offset="0x36">SS054</rom>
+			<rom type="file" offset="0x37">SS055</rom>
+			<rom type="file" offset="0x38">SS058</rom>
+			<rom type="file" offset="0x39">SS059</rom>
+			<rom type="file" offset="0x4a">SS059-</rom>
+			<rom type="file" offset="0x3a">SS060</rom>
+			<rom type="file" offset="0x3b">SS061</rom>
+			<rom type="file" offset="0x3c">SS062</rom>
+			<rom type="file" offset="0x3d">SS068</rom>
+			<rom type="file" offset="0x3e">SS071</rom>
+			<rom type="file" offset="0x3f">SS081</rom>
+			<rom type="file" offset="0x40">SS082</rom>
+			<rom type="file" offset="0x41">SS083</rom>
+			<rom type="file" offset="0x42">SS084</rom>
+			<rom type="file" offset="0x43">SS085</rom>
+			<rom type="file" offset="0x44">SS086</rom>
+			<rom type="file" offset="0x45">SS091</rom>
+			<rom type="file" offset="0x46">SS092</rom>
+			<rom type="file" offset="0x47">SS097</rom>
+			<rom type="file" offset="0x48">SS099</rom>
+			<rom type="file" offset="0x49">SSTMP</rom>
+			<rom type="shell" offset="0">silp_at</rom>
+		</romlist>
+		<titlelist>
+			<title code="0x10">SS000 : Opening</title>
+			<title code="0x20">SS018 : Castle "Let's Meet Here"</title>
+			<title code="0x1b">SS011 : Town "Pentawa I"</title>
+			<title code="0x2b">SS040 : Town "Pentawa II"</title>
+			<title code="0x21">SS020 : Travelers Inn</title>
+			<title code="0x3d">SS068 : Beautiful day</title>
+			<title code="0x3c">SS062 : King Dragon</title>
+			<title code="0x3b">SS061 : Ending I</title>
+			<title code="0x45">SS091 : Ending II </title>
+			<title code="0x48">SS099 : Fanfare</title>
+			<title code="0x11">SS001 : The Stolen Scepter       / Dungeon</title>
+			<title code="0x15">SS005 : The Stolen Scepter       / Hydra</title>
+			<title code="0x1f">SS017 : The Lost Talisman        / Forest</title>
+			<title code="0x2c">SS041 : The Lost Talisman        / Underground Dungeon</title>
+			<title code="0x3f">SS081 : The Lost Talisman        / Destru Priest</title>
+			<title code="0x43">SS085 : The Lost Talisman        / Sand Mariber</title>
+			<title code="0x1a">SS010 : Lucifer's Floodgate      / Underground Dungeon</title>
+			<title code="0x26">SS027 : Lucifer's Floodgate      / Kraken</title>
+			<title code="0x34">SS052 : Lucifer's Floodgate      / Bloody River</title>
+			<title code="0x2a">SS037 : The Cursed Oasis         / Desert</title>
+			<title code="0x38">SS058 : The Cursed Oasis         / Sand Castle</title>
+			<!-- ルワンとゴールドドラゴンはブラッディー・リバーが鳴る -->
+			<title code="0x33">SS049 : The Tower of Thieves     / Tower</title>
+			<title code="0x36">SS054 : The Tower of Thieves     / Underworld</title>
+			<title code="0x37">SS055 : The Tower of Thieves     / Rooftop</title>
+			<title code="0x40">SS082 : The Tower of Thieves     / Shadow Dragon</title>
+			<title code="0x39">SS059 : The Tower of Thieves     / Mejor Demon</title>
+			<title code="0x3a">SS060 : The Tower of Thieves     / The Seal</title>
+			<title code="0x28">SS034 : Master of The Dark Marsh / Dark Swamp</title>
+			<title code="0x19">SS009 : Master of The Dark Marsh / Red Dragon</title>
+			<title code="0x13">SS003 : The Dragon King          / Romancia Kingdom</title>
+			<title code="0x18">SS008 : The Dragon King          / Castle Romancia</title>
+			<title code="0x14">SS004 : The Dragon King          / Azoruba Kingdom</title>
+			<title code="0x2e">SS043 : The Dragon King          / Vades</title>
+			<title code="0x12">SS002 : Riddle of The Red Jewel  / Forest</title>
+			<title code="0x3e">SS071 : Riddle of The Red Jewel  / Moss Giant</title>
+			<title code="0x47">SS097 : Riddle of The Red Jewel  / Peaceful Forest</title>
+			<title code="0x27">SS032 : The Dark Magician        / Dungeon</title>
+			<title code="0x25">SS026 : The Dark Magician        / Blue Dragon</title>
+			<title code="0x23">SS022 : The Dark Magician        / Dungeon II</title>
+			<title code="0x1d">SS014 : The Cursed Ship          / Aboard Ship</title>
+			<title code="0x2f">SS044 : The Cursed Ship          / After Disembarking</title>
+			<title code="0x42">SS084 : The Cursed Ship          / Ark Demon</title>
+			<title code="0x32">SS048 : The Garden of The Gods   / Village</title>
+			<title code="0x2d">SS042 : The Garden of The Gods   / Combat Scene</title>
+			<title code="0x4a">SS059 : The Garden of The Gods   / The Heavens</title>
+			<title code="0x30">SS045 : The Garden of The Gods   / Harp</title>
+			<!-- エビル=シャーマンは洞窟Ⅰが鳴る -->
+			<title code="0x17">SS007 : The Caverns of Ice       / Cave I</title>
+			<title code="0x41">SS083 : The Caverns of Ice       / Evil Shaman</title>
+			<title code="0x29">SS036 : The Caverns of Ice       / Ekim</title>
+			<!-- エキムはダブルデビルスが鳴る -->
+			<title code="0x16">SS006 : The Curse of Medusa      / Forest</title>
+			<title code="0x1c">SS012 : The Curse of Medusa      / Village</title>
+			<title code="0x35">SS053 : The Curse of Medusa      / Medusa</title>
+			<title code="0x31">SS047 : The Missing Magician     / Underground Fortress</title>
+			<title code="0x22">SS021 : The Missing Magician     / Fire Elemental</title>
+			<title code="0x44">SS086 : The Water of Life        / The Cave of Life</title>
+			<title code="0x1e">SS015 : The Water of Life        / Double Devils</title>
+			<title code="0x24">SS025 : The Water of Life        / Pounding Heart(1)</title>
+			<title code="0x46">SS092 : The Water of Life        / Pounding Heart(2)</title>
+			<!-- SS045とバイナリ一致
+			<title code="0x49">SSTMP : </title>
+			  -->
+		</titlelist>
+	</game>
+	<game>
+		<name>[IBM PC] SORCERIAN(GameBlaster)</name>
+		<driver type="gameblaster">pcatdos</driver>
+		<driveralias type="IBM PC">Sierra On-Line</driveralias>
+		<options>
+			<option name="clockmul" value="0x05"/>
+			<option name="opl2_mix" value="0x200"/>
+		</options>
+		<romlist archive="sorc_at">
+			<rom type="file" offset="-1">silp_at.com</rom>
+			<rom type="file" offset="0x08">CMS.DRV</rom>
+			<rom type="file" offset="0x09">PATCH.101</rom>
+			<rom type="file" offset="0x10">SS000</rom>
+			<rom type="file" offset="0x11">SS001</rom>
+			<rom type="file" offset="0x12">SS002</rom>
+			<rom type="file" offset="0x13">SS003</rom>
+			<rom type="file" offset="0x14">SS004</rom>
+			<rom type="file" offset="0x15">SS005</rom>
+			<rom type="file" offset="0x16">SS006</rom>
+			<rom type="file" offset="0x17">SS007</rom>
+			<rom type="file" offset="0x18">SS008</rom>
+			<rom type="file" offset="0x19">SS009</rom>
+			<rom type="file" offset="0x1a">SS010</rom>
+			<rom type="file" offset="0x1b">SS011</rom>
+			<rom type="file" offset="0x1c">SS012</rom>
+			<rom type="file" offset="0x1d">SS014</rom>
+			<rom type="file" offset="0x1e">SS015</rom>
+			<rom type="file" offset="0x1f">SS017</rom>
+			<rom type="file" offset="0x20">SS018</rom>
+			<rom type="file" offset="0x21">SS020</rom>
+			<rom type="file" offset="0x22">SS021</rom>
+			<rom type="file" offset="0x23">SS022</rom>
+			<rom type="file" offset="0x24">SS025</rom>
+			<rom type="file" offset="0x25">SS026</rom>
+			<rom type="file" offset="0x26">SS027</rom>
+			<rom type="file" offset="0x27">SS032</rom>
+			<rom type="file" offset="0x28">SS034</rom>
+			<rom type="file" offset="0x29">SS036</rom>
+			<rom type="file" offset="0x2a">SS037</rom>
+			<rom type="file" offset="0x2b">SS040</rom>
+			<rom type="file" offset="0x2c">SS041</rom>
+			<rom type="file" offset="0x2d">SS042</rom>
+			<rom type="file" offset="0x2e">SS043</rom>
+			<rom type="file" offset="0x2f">SS044</rom>
+			<rom type="file" offset="0x30">SS045</rom>
+			<rom type="file" offset="0x31">SS047</rom>
+			<rom type="file" offset="0x32">SS048</rom>
+			<rom type="file" offset="0x33">SS049</rom>
+			<rom type="file" offset="0x34">SS052</rom>
+			<rom type="file" offset="0x35">SS053</rom>
+			<rom type="file" offset="0x36">SS054</rom>
+			<rom type="file" offset="0x37">SS055</rom>
+			<rom type="file" offset="0x38">SS058</rom>
+			<rom type="file" offset="0x39">SS059</rom>
+			<rom type="file" offset="0x4a">SS059-</rom>
+			<rom type="file" offset="0x3a">SS060</rom>
+			<rom type="file" offset="0x3b">SS061</rom>
+			<rom type="file" offset="0x3c">SS062</rom>
+			<rom type="file" offset="0x3d">SS068</rom>
+			<rom type="file" offset="0x3e">SS071</rom>
+			<rom type="file" offset="0x3f">SS081</rom>
+			<rom type="file" offset="0x40">SS082</rom>
+			<rom type="file" offset="0x41">SS083</rom>
+			<rom type="file" offset="0x42">SS084</rom>
+			<rom type="file" offset="0x43">SS085</rom>
+			<rom type="file" offset="0x44">SS086</rom>
+			<rom type="file" offset="0x45">SS091</rom>
+			<rom type="file" offset="0x46">SS092</rom>
+			<rom type="file" offset="0x47">SS097</rom>
+			<rom type="file" offset="0x48">SS099</rom>
+			<rom type="file" offset="0x49">SSTMP</rom>
+			<rom type="shell" offset="0">silp_at</rom>
+		</romlist>
+		<titlelist>
+			<title code="0x10">SS000 : Opening</title>
+			<title code="0x20">SS018 : Castle "Let's Meet Here"</title>
+			<title code="0x1b">SS011 : Town "Pentawa I"</title>
+			<title code="0x2b">SS040 : Town "Pentawa II"</title>
+			<title code="0x21">SS020 : Travelers Inn</title>
+			<title code="0x3d">SS068 : Beautiful day</title>
+			<title code="0x3c">SS062 : King Dragon</title>
+			<title code="0x3b">SS061 : Ending I</title>
+			<title code="0x45">SS091 : Ending II </title>
+			<title code="0x48">SS099 : Fanfare</title>
+			<title code="0x11">SS001 : The Stolen Scepter       / Dungeon</title>
+			<title code="0x15">SS005 : The Stolen Scepter       / Hydra</title>
+			<title code="0x1f">SS017 : The Lost Talisman        / Forest</title>
+			<title code="0x2c">SS041 : The Lost Talisman        / Underground Dungeon</title>
+			<title code="0x3f">SS081 : The Lost Talisman        / Destru Priest</title>
+			<title code="0x43">SS085 : The Lost Talisman        / Sand Mariber</title>
+			<title code="0x1a">SS010 : Lucifer's Floodgate      / Underground Dungeon</title>
+			<title code="0x26">SS027 : Lucifer's Floodgate      / Kraken</title>
+			<title code="0x34">SS052 : Lucifer's Floodgate      / Bloody River</title>
+			<title code="0x2a">SS037 : The Cursed Oasis         / Desert</title>
+			<title code="0x38">SS058 : The Cursed Oasis         / Sand Castle</title>
+			<!-- ルワンとゴールドドラゴンはブラッディー・リバーが鳴る -->
+			<title code="0x33">SS049 : The Tower of Thieves     / Tower</title>
+			<title code="0x36">SS054 : The Tower of Thieves     / Underworld</title>
+			<title code="0x37">SS055 : The Tower of Thieves     / Rooftop</title>
+			<title code="0x40">SS082 : The Tower of Thieves     / Shadow Dragon</title>
+			<title code="0x39">SS059 : The Tower of Thieves     / Mejor Demon</title>
+			<title code="0x3a">SS060 : The Tower of Thieves     / The Seal</title>
+			<title code="0x28">SS034 : Master of The Dark Marsh / Dark Swamp</title>
+			<title code="0x19">SS009 : Master of The Dark Marsh / Red Dragon</title>
+			<title code="0x13">SS003 : The Dragon King          / Romancia Kingdom</title>
+			<title code="0x18">SS008 : The Dragon King          / Castle Romancia</title>
+			<title code="0x14">SS004 : The Dragon King          / Azoruba Kingdom</title>
+			<title code="0x2e">SS043 : The Dragon King          / Vades</title>
+			<title code="0x12">SS002 : Riddle of The Red Jewel  / Forest</title>
+			<title code="0x3e">SS071 : Riddle of The Red Jewel  / Moss Giant</title>
+			<title code="0x47">SS097 : Riddle of The Red Jewel  / Peaceful Forest</title>
+			<title code="0x27">SS032 : The Dark Magician        / Dungeon</title>
+			<title code="0x25">SS026 : The Dark Magician        / Blue Dragon</title>
+			<title code="0x23">SS022 : The Dark Magician        / Dungeon II</title>
+			<title code="0x1d">SS014 : The Cursed Ship          / Aboard Ship</title>
+			<title code="0x2f">SS044 : The Cursed Ship          / After Disembarking</title>
+			<title code="0x42">SS084 : The Cursed Ship          / Ark Demon</title>
+			<title code="0x32">SS048 : The Garden of The Gods   / Village</title>
+			<title code="0x2d">SS042 : The Garden of The Gods   / Combat Scene</title>
+			<title code="0x4a">SS059 : The Garden of The Gods   / The Heavens</title>
+			<title code="0x30">SS045 : The Garden of The Gods   / Harp</title>
+			<!-- エビル=シャーマンは洞窟Ⅰが鳴る -->
+			<title code="0x17">SS007 : The Caverns of Ice       / Cave I</title>
+			<title code="0x41">SS083 : The Caverns of Ice       / Evil Shaman</title>
+			<title code="0x29">SS036 : The Caverns of Ice       / Ekim</title>
+			<!-- エキムはダブルデビルスが鳴る -->
+			<title code="0x16">SS006 : The Curse of Medusa      / Forest</title>
+			<title code="0x1c">SS012 : The Curse of Medusa      / Village</title>
+			<title code="0x35">SS053 : The Curse of Medusa      / Medusa</title>
+			<title code="0x31">SS047 : The Missing Magician     / Underground Fortress</title>
+			<title code="0x22">SS021 : The Missing Magician     / Fire Elemental</title>
+			<title code="0x44">SS086 : The Water of Life        / The Cave of Life</title>
+			<title code="0x1e">SS015 : The Water of Life        / Double Devils</title>
+			<title code="0x24">SS025 : The Water of Life        / Pounding Heart(1)</title>
+			<title code="0x46">SS092 : The Water of Life        / Pounding Heart(2)</title>
+			<!-- SS045とバイナリ一致
+			<title code="0x49">SSTMP : </title>
+			  -->
+		</titlelist>
+	</game>
+	<game>
+		<name>[IBM PC] SORCERIAN(BEEP)</name>
+		<driver type="beep">pcatdos</driver>
+		<driveralias type="IBM PC">Sierra On-Line</driveralias>
+		<options>
+			<option name="clockmul" value="0x05"/>
+		</options>
+		<romlist archive="sorc_at">
+			<rom type="file" offset="-1">silp_at.com</rom>
+			<rom type="file" offset="0x08">STD.DRV</rom>
+			<rom type="file" offset="0x10">SS000</rom>
+			<rom type="file" offset="0x11">SS001</rom>
+			<rom type="file" offset="0x12">SS002</rom>
+			<rom type="file" offset="0x13">SS003</rom>
+			<rom type="file" offset="0x14">SS004</rom>
+			<rom type="file" offset="0x15">SS005</rom>
+			<rom type="file" offset="0x16">SS006</rom>
+			<rom type="file" offset="0x17">SS007</rom>
+			<rom type="file" offset="0x18">SS008</rom>
+			<rom type="file" offset="0x19">SS009</rom>
+			<rom type="file" offset="0x1a">SS010</rom>
+			<rom type="file" offset="0x1b">SS011</rom>
+			<rom type="file" offset="0x1c">SS012</rom>
+			<rom type="file" offset="0x1d">SS014</rom>
+			<rom type="file" offset="0x1e">SS015</rom>
+			<rom type="file" offset="0x1f">SS017</rom>
+			<rom type="file" offset="0x20">SS018</rom>
+			<rom type="file" offset="0x21">SS020</rom>
+			<rom type="file" offset="0x22">SS021</rom>
+			<rom type="file" offset="0x23">SS022</rom>
+			<rom type="file" offset="0x24">SS025</rom>
+			<rom type="file" offset="0x25">SS026</rom>
+			<rom type="file" offset="0x26">SS027</rom>
+			<rom type="file" offset="0x27">SS032</rom>
+			<rom type="file" offset="0x28">SS034</rom>
+			<rom type="file" offset="0x29">SS036</rom>
+			<rom type="file" offset="0x2a">SS037</rom>
+			<rom type="file" offset="0x2b">SS040</rom>
+			<rom type="file" offset="0x2c">SS041</rom>
+			<rom type="file" offset="0x2d">SS042</rom>
+			<rom type="file" offset="0x2e">SS043</rom>
+			<rom type="file" offset="0x2f">SS044</rom>
+			<rom type="file" offset="0x30">SS045</rom>
+			<rom type="file" offset="0x31">SS047</rom>
+			<rom type="file" offset="0x32">SS048</rom>
+			<rom type="file" offset="0x33">SS049</rom>
+			<rom type="file" offset="0x34">SS052</rom>
+			<rom type="file" offset="0x35">SS053</rom>
+			<rom type="file" offset="0x36">SS054</rom>
+			<rom type="file" offset="0x37">SS055</rom>
+			<rom type="file" offset="0x38">SS058</rom>
+			<rom type="file" offset="0x39">SS059</rom>
+			<rom type="file" offset="0x4a">SS059-</rom>
+			<rom type="file" offset="0x3a">SS060</rom>
+			<rom type="file" offset="0x3b">SS061</rom>
+			<rom type="file" offset="0x3c">SS062</rom>
+			<rom type="file" offset="0x3d">SS068</rom>
+			<rom type="file" offset="0x3e">SS071</rom>
+			<rom type="file" offset="0x3f">SS081</rom>
+			<rom type="file" offset="0x40">SS082</rom>
+			<rom type="file" offset="0x41">SS083</rom>
+			<rom type="file" offset="0x42">SS084</rom>
+			<rom type="file" offset="0x43">SS085</rom>
+			<rom type="file" offset="0x44">SS086</rom>
+			<rom type="file" offset="0x45">SS091</rom>
+			<rom type="file" offset="0x46">SS092</rom>
+			<rom type="file" offset="0x47">SS097</rom>
+			<rom type="file" offset="0x48">SS099</rom>
+			<rom type="file" offset="0x49">SSTMP</rom>
+			<rom type="shell" offset="0">silp_at</rom>
+		</romlist>
+		<titlelist>
+			<title code="0x10">SS000 : Opening</title>
+			<title code="0x20">SS018 : Castle "Let's Meet Here"</title>
+			<title code="0x1b">SS011 : Town "Pentawa I"</title>
+			<title code="0x2b">SS040 : Town "Pentawa II"</title>
+			<title code="0x21">SS020 : Travelers Inn</title>
+			<title code="0x3d">SS068 : Beautiful day</title>
+			<title code="0x3c">SS062 : King Dragon</title>
+			<title code="0x3b">SS061 : Ending I</title>
+			<title code="0x45">SS091 : Ending II </title>
+			<title code="0x48">SS099 : Fanfare</title>
+			<title code="0x11">SS001 : The Stolen Scepter       / Dungeon</title>
+			<title code="0x15">SS005 : The Stolen Scepter       / Hydra</title>
+			<title code="0x1f">SS017 : The Lost Talisman        / Forest</title>
+			<title code="0x2c">SS041 : The Lost Talisman        / Underground Dungeon</title>
+			<title code="0x3f">SS081 : The Lost Talisman        / Destru Priest</title>
+			<title code="0x43">SS085 : The Lost Talisman        / Sand Mariber</title>
+			<title code="0x1a">SS010 : Lucifer's Floodgate      / Underground Dungeon</title>
+			<title code="0x26">SS027 : Lucifer's Floodgate      / Kraken</title>
+			<title code="0x34">SS052 : Lucifer's Floodgate      / Bloody River</title>
+			<title code="0x2a">SS037 : The Cursed Oasis         / Desert</title>
+			<title code="0x38">SS058 : The Cursed Oasis         / Sand Castle</title>
+			<!-- ルワンとゴールドドラゴンはブラッディー・リバーが鳴る -->
+			<title code="0x33">SS049 : The Tower of Thieves     / Tower</title>
+			<title code="0x36">SS054 : The Tower of Thieves     / Underworld</title>
+			<title code="0x37">SS055 : The Tower of Thieves     / Rooftop</title>
+			<title code="0x40">SS082 : The Tower of Thieves     / Shadow Dragon</title>
+			<title code="0x39">SS059 : The Tower of Thieves     / Mejor Demon</title>
+			<title code="0x3a">SS060 : The Tower of Thieves     / The Seal</title>
+			<title code="0x28">SS034 : Master of The Dark Marsh / Dark Swamp</title>
+			<title code="0x19">SS009 : Master of The Dark Marsh / Red Dragon</title>
+			<title code="0x13">SS003 : The Dragon King          / Romancia Kingdom</title>
+			<title code="0x18">SS008 : The Dragon King          / Castle Romancia</title>
+			<title code="0x14">SS004 : The Dragon King          / Azoruba Kingdom</title>
+			<title code="0x2e">SS043 : The Dragon King          / Vades</title>
+			<title code="0x12">SS002 : Riddle of The Red Jewel  / Forest</title>
+			<title code="0x3e">SS071 : Riddle of The Red Jewel  / Moss Giant</title>
+			<title code="0x47">SS097 : Riddle of The Red Jewel  / Peaceful Forest</title>
+			<title code="0x27">SS032 : The Dark Magician        / Dungeon</title>
+			<title code="0x25">SS026 : The Dark Magician        / Blue Dragon</title>
+			<title code="0x23">SS022 : The Dark Magician        / Dungeon II</title>
+			<title code="0x1d">SS014 : The Cursed Ship          / Aboard Ship</title>
+			<title code="0x2f">SS044 : The Cursed Ship          / After Disembarking</title>
+			<title code="0x42">SS084 : The Cursed Ship          / Ark Demon</title>
+			<title code="0x32">SS048 : The Garden of The Gods   / Village</title>
+			<title code="0x2d">SS042 : The Garden of The Gods   / Combat Scene</title>
+			<title code="0x4a">SS059 : The Garden of The Gods   / The Heavens</title>
+			<title code="0x30">SS045 : The Garden of The Gods   / Harp</title>
+			<!-- エビル=シャーマンは洞窟Ⅰが鳴る -->
+			<title code="0x17">SS007 : The Caverns of Ice       / Cave I</title>
+			<title code="0x41">SS083 : The Caverns of Ice       / Evil Shaman</title>
+			<title code="0x29">SS036 : The Caverns of Ice       / Ekim</title>
+			<!-- エキムはダブルデビルスが鳴る -->
+			<title code="0x16">SS006 : The Curse of Medusa      / Forest</title>
+			<title code="0x1c">SS012 : The Curse of Medusa      / Village</title>
+			<title code="0x35">SS053 : The Curse of Medusa      / Medusa</title>
+			<title code="0x31">SS047 : The Missing Magician     / Underground Fortress</title>
+			<title code="0x22">SS021 : The Missing Magician     / Fire Elemental</title>
+			<title code="0x44">SS086 : The Water of Life        / The Cave of Life</title>
+			<title code="0x1e">SS015 : The Water of Life        / Double Devils</title>
+			<title code="0x24">SS025 : The Water of Life        / Pounding Heart(1)</title>
+			<title code="0x46">SS092 : The Water of Life        / Pounding Heart(2)</title>
+			<!-- SS045とバイナリ一致
+			<title code="0x49">SSTMP : </title>
+			  -->
+		</titlelist>
+	</game>
+	<game>
+		<name>[IBM PC] SORCERIAN(MT-32)</name>
+		<driver type="beep">pcatdos</driver>
+		<driveralias type="IBM PC">Sierra On-Line</driveralias>
+		<options>
+			<option name="clockmul" value="0x05"/>
+			<option name="midiout" value="1"/>
+			<option name="midiout_type" value="2"/>
+		</options>
+		<romlist archive="sorc_at">
+			<rom type="file" offset="-1">silp_at.com</rom>
+			<rom type="file" offset="0x08">MT32.DRV</rom>
+			<rom type="file" offset="0x09">PATCH.001</rom>
+			<rom type="file" offset="0x10">SS000</rom>
+			<rom type="file" offset="0x11">SS001</rom>
+			<rom type="file" offset="0x12">SS002</rom>
+			<rom type="file" offset="0x13">SS003</rom>
+			<rom type="file" offset="0x14">SS004</rom>
+			<rom type="file" offset="0x15">SS005</rom>
+			<rom type="file" offset="0x16">SS006</rom>
+			<rom type="file" offset="0x17">SS007</rom>
+			<rom type="file" offset="0x18">SS008</rom>
+			<rom type="file" offset="0x19">SS009</rom>
+			<rom type="file" offset="0x1a">SS010</rom>
+			<rom type="file" offset="0x1b">SS011</rom>
+			<rom type="file" offset="0x1c">SS012</rom>
+			<rom type="file" offset="0x1d">SS014</rom>
+			<rom type="file" offset="0x1e">SS015</rom>
+			<rom type="file" offset="0x1f">SS017</rom>
+			<rom type="file" offset="0x20">SS018</rom>
+			<rom type="file" offset="0x21">SS020</rom>
+			<rom type="file" offset="0x22">SS021</rom>
+			<rom type="file" offset="0x23">SS022</rom>
+			<rom type="file" offset="0x24">SS025</rom>
+			<rom type="file" offset="0x25">SS026</rom>
+			<rom type="file" offset="0x26">SS027</rom>
+			<rom type="file" offset="0x27">SS032</rom>
+			<rom type="file" offset="0x28">SS034</rom>
+			<rom type="file" offset="0x29">SS036</rom>
+			<rom type="file" offset="0x2a">SS037</rom>
+			<rom type="file" offset="0x2b">SS040</rom>
+			<rom type="file" offset="0x2c">SS041</rom>
+			<rom type="file" offset="0x2d">SS042</rom>
+			<rom type="file" offset="0x2e">SS043</rom>
+			<rom type="file" offset="0x2f">SS044</rom>
+			<rom type="file" offset="0x30">SS045</rom>
+			<rom type="file" offset="0x31">SS047</rom>
+			<rom type="file" offset="0x32">SS048</rom>
+			<rom type="file" offset="0x33">SS049</rom>
+			<rom type="file" offset="0x34">SS052</rom>
+			<rom type="file" offset="0x35">SS053</rom>
+			<rom type="file" offset="0x36">SS054</rom>
+			<rom type="file" offset="0x37">SS055</rom>
+			<rom type="file" offset="0x38">SS058</rom>
+			<rom type="file" offset="0x39">SS059</rom>
+			<rom type="file" offset="0x4a">SS059-</rom>
+			<rom type="file" offset="0x3a">SS060</rom>
+			<rom type="file" offset="0x3b">SS061</rom>
+			<rom type="file" offset="0x3c">SS062</rom>
+			<rom type="file" offset="0x3d">SS068</rom>
+			<rom type="file" offset="0x3e">SS071</rom>
+			<rom type="file" offset="0x3f">SS081</rom>
+			<rom type="file" offset="0x40">SS082</rom>
+			<rom type="file" offset="0x41">SS083</rom>
+			<rom type="file" offset="0x42">SS084</rom>
+			<rom type="file" offset="0x43">SS085</rom>
+			<rom type="file" offset="0x44">SS086</rom>
+			<rom type="file" offset="0x45">SS091</rom>
+			<rom type="file" offset="0x46">SS092</rom>
+			<rom type="file" offset="0x47">SS097</rom>
+			<rom type="file" offset="0x48">SS099</rom>
+			<rom type="file" offset="0x49">SSTMP</rom>
+			<rom type="shell" offset="0">silp_at</rom>
+		</romlist>
+		<titlelist>
+			<title code="0x10">SS000 : Opening</title>
+			<title code="0x20">SS018 : Castle "Let's Meet Here"</title>
+			<title code="0x1b">SS011 : Town "Pentawa I"</title>
+			<title code="0x2b">SS040 : Town "Pentawa II"</title>
+			<title code="0x21">SS020 : Travelers Inn</title>
+			<title code="0x3d">SS068 : Beautiful day</title>
+			<title code="0x3c">SS062 : King Dragon</title>
+			<title code="0x3b">SS061 : Ending I</title>
+			<title code="0x45">SS091 : Ending II </title>
+			<title code="0x48">SS099 : Fanfare</title>
+			<title code="0x11">SS001 : The Stolen Scepter       / Dungeon</title>
+			<title code="0x15">SS005 : The Stolen Scepter       / Hydra</title>
+			<title code="0x1f">SS017 : The Lost Talisman        / Forest</title>
+			<title code="0x2c">SS041 : The Lost Talisman        / Underground Dungeon</title>
+			<title code="0x3f">SS081 : The Lost Talisman        / Destru Priest</title>
+			<title code="0x43">SS085 : The Lost Talisman        / Sand Mariber</title>
+			<title code="0x1a">SS010 : Lucifer's Floodgate      / Underground Dungeon</title>
+			<title code="0x26">SS027 : Lucifer's Floodgate      / Kraken</title>
+			<title code="0x34">SS052 : Lucifer's Floodgate      / Bloody River</title>
+			<title code="0x2a">SS037 : The Cursed Oasis         / Desert</title>
+			<title code="0x38">SS058 : The Cursed Oasis         / Sand Castle</title>
+			<!-- ルワンとゴールドドラゴンはブラッディー・リバーが鳴る -->
+			<title code="0x33">SS049 : The Tower of Thieves     / Tower</title>
+			<title code="0x36">SS054 : The Tower of Thieves     / Underworld</title>
+			<title code="0x37">SS055 : The Tower of Thieves     / Rooftop</title>
+			<title code="0x40">SS082 : The Tower of Thieves     / Shadow Dragon</title>
+			<title code="0x39">SS059 : The Tower of Thieves     / Mejor Demon</title>
+			<title code="0x3a">SS060 : The Tower of Thieves     / The Seal</title>
+			<title code="0x28">SS034 : Master of The Dark Marsh / Dark Swamp</title>
+			<title code="0x19">SS009 : Master of The Dark Marsh / Red Dragon</title>
+			<title code="0x13">SS003 : The Dragon King          / Romancia Kingdom</title>
+			<title code="0x18">SS008 : The Dragon King          / Castle Romancia</title>
+			<title code="0x14">SS004 : The Dragon King          / Azoruba Kingdom</title>
+			<title code="0x2e">SS043 : The Dragon King          / Vades</title>
+			<title code="0x12">SS002 : Riddle of The Red Jewel  / Forest</title>
+			<title code="0x3e">SS071 : Riddle of The Red Jewel  / Moss Giant</title>
+			<title code="0x47">SS097 : Riddle of The Red Jewel  / Peaceful Forest</title>
+			<title code="0x27">SS032 : The Dark Magician        / Dungeon</title>
+			<title code="0x25">SS026 : The Dark Magician        / Blue Dragon</title>
+			<title code="0x23">SS022 : The Dark Magician        / Dungeon II</title>
+			<title code="0x1d">SS014 : The Cursed Ship          / Aboard Ship</title>
+			<title code="0x2f">SS044 : The Cursed Ship          / After Disembarking</title>
+			<title code="0x42">SS084 : The Cursed Ship          / Ark Demon</title>
+			<title code="0x32">SS048 : The Garden of The Gods   / Village</title>
+			<title code="0x2d">SS042 : The Garden of The Gods   / Combat Scene</title>
+			<title code="0x4a">SS059 : The Garden of The Gods   / The Heavens</title>
+			<title code="0x30">SS045 : The Garden of The Gods   / Harp</title>
+			<!-- エビル=シャーマンは洞窟Ⅰが鳴る -->
+			<title code="0x17">SS007 : The Caverns of Ice       / Cave I</title>
+			<title code="0x41">SS083 : The Caverns of Ice       / Evil Shaman</title>
+			<title code="0x29">SS036 : The Caverns of Ice       / Ekim</title>
+			<!-- エキムはダブルデビルスが鳴る -->
+			<title code="0x16">SS006 : The Curse of Medusa      / Forest</title>
+			<title code="0x1c">SS012 : The Curse of Medusa      / Village</title>
+			<title code="0x35">SS053 : The Curse of Medusa      / Medusa</title>
+			<title code="0x31">SS047 : The Missing Magician     / Underground Fortress</title>
+			<title code="0x22">SS021 : The Missing Magician     / Fire Elemental</title>
+			<title code="0x44">SS086 : The Water of Life        / The Cave of Life</title>
+			<title code="0x1e">SS015 : The Water of Life        / Double Devils</title>
+			<title code="0x24">SS025 : The Water of Life        / Pounding Heart(1)</title>
+			<title code="0x46">SS092 : The Water of Life        / Pounding Heart(2)</title>
+			<!-- SS045とバイナリ一致
+			<title code="0x49">SSTMP : </title>
+			  -->
+		</titlelist>
+	</game>
+	<game>
+		<name>[IBM PC] SORCERIAN(MT-32 Emulation)</name>
+		<driver type="beep">pcatdos</driver>
+		<driveralias type="IBM PC">Sierra On-Line</driveralias>
+		<options>
+			<option name="clockmul" value="0x05"/>
+			<option name="midiout" value="1"/>
+			<option name="midiout_type" value="1"/>
+		</options>
+		<romlist archive="sorc_at">
+			<rom type="file" offset="-1">silp_at.com</rom>
+			<rom type="file" offset="0x08">MT32.DRV</rom>
+			<rom type="file" offset="0x09">PATCH.001</rom>
+			<rom type="file" offset="0x10">SS000</rom>
+			<rom type="file" offset="0x11">SS001</rom>
+			<rom type="file" offset="0x12">SS002</rom>
+			<rom type="file" offset="0x13">SS003</rom>
+			<rom type="file" offset="0x14">SS004</rom>
+			<rom type="file" offset="0x15">SS005</rom>
+			<rom type="file" offset="0x16">SS006</rom>
+			<rom type="file" offset="0x17">SS007</rom>
+			<rom type="file" offset="0x18">SS008</rom>
+			<rom type="file" offset="0x19">SS009</rom>
+			<rom type="file" offset="0x1a">SS010</rom>
+			<rom type="file" offset="0x1b">SS011</rom>
+			<rom type="file" offset="0x1c">SS012</rom>
+			<rom type="file" offset="0x1d">SS014</rom>
+			<rom type="file" offset="0x1e">SS015</rom>
+			<rom type="file" offset="0x1f">SS017</rom>
+			<rom type="file" offset="0x20">SS018</rom>
+			<rom type="file" offset="0x21">SS020</rom>
+			<rom type="file" offset="0x22">SS021</rom>
+			<rom type="file" offset="0x23">SS022</rom>
+			<rom type="file" offset="0x24">SS025</rom>
+			<rom type="file" offset="0x25">SS026</rom>
+			<rom type="file" offset="0x26">SS027</rom>
+			<rom type="file" offset="0x27">SS032</rom>
+			<rom type="file" offset="0x28">SS034</rom>
+			<rom type="file" offset="0x29">SS036</rom>
+			<rom type="file" offset="0x2a">SS037</rom>
+			<rom type="file" offset="0x2b">SS040</rom>
+			<rom type="file" offset="0x2c">SS041</rom>
+			<rom type="file" offset="0x2d">SS042</rom>
+			<rom type="file" offset="0x2e">SS043</rom>
+			<rom type="file" offset="0x2f">SS044</rom>
+			<rom type="file" offset="0x30">SS045</rom>
+			<rom type="file" offset="0x31">SS047</rom>
+			<rom type="file" offset="0x32">SS048</rom>
+			<rom type="file" offset="0x33">SS049</rom>
+			<rom type="file" offset="0x34">SS052</rom>
+			<rom type="file" offset="0x35">SS053</rom>
+			<rom type="file" offset="0x36">SS054</rom>
+			<rom type="file" offset="0x37">SS055</rom>
+			<rom type="file" offset="0x38">SS058</rom>
+			<rom type="file" offset="0x39">SS059</rom>
+			<rom type="file" offset="0x4a">SS059-</rom>
+			<rom type="file" offset="0x3a">SS060</rom>
+			<rom type="file" offset="0x3b">SS061</rom>
+			<rom type="file" offset="0x3c">SS062</rom>
+			<rom type="file" offset="0x3d">SS068</rom>
+			<rom type="file" offset="0x3e">SS071</rom>
+			<rom type="file" offset="0x3f">SS081</rom>
+			<rom type="file" offset="0x40">SS082</rom>
+			<rom type="file" offset="0x41">SS083</rom>
+			<rom type="file" offset="0x42">SS084</rom>
+			<rom type="file" offset="0x43">SS085</rom>
+			<rom type="file" offset="0x44">SS086</rom>
+			<rom type="file" offset="0x45">SS091</rom>
+			<rom type="file" offset="0x46">SS092</rom>
+			<rom type="file" offset="0x47">SS097</rom>
+			<rom type="file" offset="0x48">SS099</rom>
+			<rom type="file" offset="0x49">SSTMP</rom>
+			<rom type="shell" offset="0">silp_at</rom>
+		</romlist>
+		<titlelist>
+			<title code="0x10">SS000 : Opening</title>
+			<title code="0x20">SS018 : Castle "Let's Meet Here"</title>
+			<title code="0x1b">SS011 : Town "Pentawa I"</title>
+			<title code="0x2b">SS040 : Town "Pentawa II"</title>
+			<title code="0x21">SS020 : Travelers Inn</title>
+			<title code="0x3d">SS068 : Beautiful day</title>
+			<title code="0x3c">SS062 : King Dragon</title>
+			<title code="0x3b">SS061 : Ending I</title>
+			<title code="0x45">SS091 : Ending II </title>
+			<title code="0x48">SS099 : Fanfare</title>
+			<title code="0x11">SS001 : The Stolen Scepter       / Dungeon</title>
+			<title code="0x15">SS005 : The Stolen Scepter       / Hydra</title>
+			<title code="0x1f">SS017 : The Lost Talisman        / Forest</title>
+			<title code="0x2c">SS041 : The Lost Talisman        / Underground Dungeon</title>
+			<title code="0x3f">SS081 : The Lost Talisman        / Destru Priest</title>
+			<title code="0x43">SS085 : The Lost Talisman        / Sand Mariber</title>
+			<title code="0x1a">SS010 : Lucifer's Floodgate      / Underground Dungeon</title>
+			<title code="0x26">SS027 : Lucifer's Floodgate      / Kraken</title>
+			<title code="0x34">SS052 : Lucifer's Floodgate      / Bloody River</title>
+			<title code="0x2a">SS037 : The Cursed Oasis         / Desert</title>
+			<title code="0x38">SS058 : The Cursed Oasis         / Sand Castle</title>
+			<!-- ルワンとゴールドドラゴンはブラッディー・リバーが鳴る -->
+			<title code="0x33">SS049 : The Tower of Thieves     / Tower</title>
+			<title code="0x36">SS054 : The Tower of Thieves     / Underworld</title>
+			<title code="0x37">SS055 : The Tower of Thieves     / Rooftop</title>
+			<title code="0x40">SS082 : The Tower of Thieves     / Shadow Dragon</title>
+			<title code="0x39">SS059 : The Tower of Thieves     / Mejor Demon</title>
+			<title code="0x3a">SS060 : The Tower of Thieves     / The Seal</title>
+			<title code="0x28">SS034 : Master of The Dark Marsh / Dark Swamp</title>
+			<title code="0x19">SS009 : Master of The Dark Marsh / Red Dragon</title>
+			<title code="0x13">SS003 : The Dragon King          / Romancia Kingdom</title>
+			<title code="0x18">SS008 : The Dragon King          / Castle Romancia</title>
+			<title code="0x14">SS004 : The Dragon King          / Azoruba Kingdom</title>
+			<title code="0x2e">SS043 : The Dragon King          / Vades</title>
+			<title code="0x12">SS002 : Riddle of The Red Jewel  / Forest</title>
+			<title code="0x3e">SS071 : Riddle of The Red Jewel  / Moss Giant</title>
+			<title code="0x47">SS097 : Riddle of The Red Jewel  / Peaceful Forest</title>
+			<title code="0x27">SS032 : The Dark Magician        / Dungeon</title>
+			<title code="0x25">SS026 : The Dark Magician        / Blue Dragon</title>
+			<title code="0x23">SS022 : The Dark Magician        / Dungeon II</title>
+			<title code="0x1d">SS014 : The Cursed Ship          / Aboard Ship</title>
+			<title code="0x2f">SS044 : The Cursed Ship          / After Disembarking</title>
+			<title code="0x42">SS084 : The Cursed Ship          / Ark Demon</title>
+			<title code="0x32">SS048 : The Garden of The Gods   / Village</title>
+			<title code="0x2d">SS042 : The Garden of The Gods   / Combat Scene</title>
+			<title code="0x4a">SS059 : The Garden of The Gods   / The Heavens</title>
+			<title code="0x30">SS045 : The Garden of The Gods   / Harp</title>
+			<!-- エビル=シャーマンは洞窟Ⅰが鳴る -->
+			<title code="0x17">SS007 : The Caverns of Ice       / Cave I</title>
+			<title code="0x41">SS083 : The Caverns of Ice       / Evil Shaman</title>
+			<title code="0x29">SS036 : The Caverns of Ice       / Ekim</title>
+			<!-- エキムはダブルデビルスが鳴る -->
+			<title code="0x16">SS006 : The Curse of Medusa      / Forest</title>
+			<title code="0x1c">SS012 : The Curse of Medusa      / Village</title>
+			<title code="0x35">SS053 : The Curse of Medusa      / Medusa</title>
+			<title code="0x31">SS047 : The Missing Magician     / Underground Fortress</title>
+			<title code="0x22">SS021 : The Missing Magician     / Fire Elemental</title>
+			<title code="0x44">SS086 : The Water of Life        / The Cave of Life</title>
+			<title code="0x1e">SS015 : The Water of Life        / Double Devils</title>
+			<title code="0x24">SS025 : The Water of Life        / Pounding Heart(1)</title>
+			<title code="0x46">SS092 : The Water of Life        / Pounding Heart(2)</title>
+			<!-- SS045とバイナリ一致
+			<title code="0x49">SSTMP : </title>
+			  -->
+		</titlelist>
+	</game>
+	<game>
+		<name>[IBM PC] SILPHEED(BEEP)</name>
+		<driver type="beep">pcatdos</driver>
+		<driveralias type="IBM PC">Sierra On-Line</driveralias>
+		<options>
+			<option name="clockmul" value="5"/>
+		</options>
+		<romlist archive="silpheed_at">
+			<rom type="file" offset="-1">silp_at.com</rom>
+			<rom type="file" offset="0x08">STD.DRV</rom>
+			<rom type="file" offset="0x10">RESOURCE.001</rom>
+			<rom type="file" offset="0x11">RESOURCE.002</rom>
+			<rom type="file" offset="0x12">RESOURCE.003</rom>
+			<rom type="file" offset="0x13">RESOURCE.004</rom>
+			<rom type="file" offset="0x14">RESOURCE.005</rom>
+			<rom type="file" offset="0x15">RESOURCE.006</rom>
+			<rom type="file" offset="0x16">RESOURCE.007</rom>
+			<rom type="file" offset="0x17">RESOURCE.008</rom>
+			<rom type="file" offset="0x18">RESOURCE.009</rom>
+			<rom type="file" offset="0x19">RESOURCE.010</rom>
+			<rom type="file" offset="0x1a">RESOURCE.011</rom>
+			<rom type="shell" offset="0">silp_at</rom>
+		</romlist>
+		<titlelist>
+			<title code="0x10">RESOURCE.001 : THE LEGEND OF SILPHEED</title>
+			<title code="0x11">RESOURCE.002 : BATTLE ON ORBIT</title>
+			<title code="0x12">RESOURCE.003 : ASTEROID</title>
+			<title code="0x13">RESOURCE.004 : KING JUPITER</title>
+			<title code="0x14">RESOURCE.005 : SILF OF WIND I</title>
+			<title code="0x15">RESOURCE.006 : DOUBLE STAR</title>
+			<title code="0x16">RESOURCE.007 : LANDING BASE</title>
+			<title code="0x17">RESOURCE.008 : GOING IN FORTRESS</title>
+			<title code="0x18">RESOURCE.009 : BATTLESTAR OLLEYUS (1)</title>
+			<title code="0x19">RESOURCE.010 : RETURN OF XACALITE</title>
+			<title code="0x1a">RESOURCE.011 : LITTLE MOMENT PEACE</title>
+		</titlelist>
+	</game>
+	<game>
+		<name>[IBM PC] SILPHEED(AdLib)</name>
+		<driver type="adlib">pcatdos</driver>
+		<driveralias type="IBM PC">Sierra On-Line</driveralias>
+		<options>
+			<option name="clockmul" value="5"/>
+			<option name="opl2_mix" value="0x200"/>
+		</options>
+		<romlist archive="silpheed_at">
+			<rom type="file" offset="-1">silp_at.com</rom>
+			<rom type="file" offset="0x08">ADL.DRV</rom>
+			<rom type="file" offset="0x09">PATCH.003</rom>
+			<rom type="file" offset="0x10">RESOURCE.001</rom>
+			<rom type="file" offset="0x11">RESOURCE.002</rom>
+			<rom type="file" offset="0x12">RESOURCE.003</rom>
+			<rom type="file" offset="0x13">RESOURCE.004</rom>
+			<rom type="file" offset="0x14">RESOURCE.005</rom>
+			<rom type="file" offset="0x15">RESOURCE.006</rom>
+			<rom type="file" offset="0x16">RESOURCE.007</rom>
+			<rom type="file" offset="0x17">RESOURCE.008</rom>
+			<rom type="file" offset="0x18">RESOURCE.009</rom>
+			<rom type="file" offset="0x19">RESOURCE.010</rom>
+			<rom type="file" offset="0x1a">RESOURCE.011</rom>
+			<rom type="shell" offset="0">silp_at</rom>
+		</romlist>
+		<titlelist>
+			<title code="0x10">RESOURCE.001 : THE LEGEND OF SILPHEED</title>
+			<title code="0x11">RESOURCE.002 : BATTLE ON ORBIT</title>
+			<title code="0x12">RESOURCE.003 : ASTEROID</title>
+			<title code="0x13">RESOURCE.004 : KING JUPITER</title>
+			<title code="0x14">RESOURCE.005 : SILF OF WIND I</title>
+			<title code="0x15">RESOURCE.006 : DOUBLE STAR</title>
+			<title code="0x16">RESOURCE.007 : LANDING BASE</title>
+			<title code="0x17">RESOURCE.008 : GOING IN FORTRESS</title>
+			<title code="0x18">RESOURCE.009 : BATTLESTAR OLLEYUS (1)</title>
+			<title code="0x19">RESOURCE.010 : RETURN OF XACALITE</title>
+			<title code="0x1a">RESOURCE.011 : LITTLE MOMENT PEACE</title>
+		</titlelist>
+	</game>
+	<game>
+		<name>[IBM PC] SILPHEED(TANDY)</name>
+		<driver type="tandy">pcatdos</driver>
+		<driveralias type="IBM PC">Sierra On-Line</driveralias>
+		<options>
+			<option name="clockmul" value="5"/>
+		</options>
+		<romlist archive="silpheed_at">
+			<rom type="file" offset="-1">silp_at.com</rom>
+			<rom type="file" offset="0x08">JR.DRV</rom>
+			<rom type="file" offset="0x10">RESOURCE.001</rom>
+			<rom type="file" offset="0x11">RESOURCE.002</rom>
+			<rom type="file" offset="0x12">RESOURCE.003</rom>
+			<rom type="file" offset="0x13">RESOURCE.004</rom>
+			<rom type="file" offset="0x14">RESOURCE.005</rom>
+			<rom type="file" offset="0x15">RESOURCE.006</rom>
+			<rom type="file" offset="0x16">RESOURCE.007</rom>
+			<rom type="file" offset="0x17">RESOURCE.008</rom>
+			<rom type="file" offset="0x18">RESOURCE.009</rom>
+			<rom type="file" offset="0x19">RESOURCE.010</rom>
+			<rom type="file" offset="0x1a">RESOURCE.011</rom>
+			<rom type="shell" offset="0">silp_at</rom>
+		</romlist>
+		<titlelist>
+			<title code="0x10">RESOURCE.001 : THE LEGEND OF SILPHEED</title>
+			<title code="0x11">RESOURCE.002 : BATTLE ON ORBIT</title>
+			<title code="0x12">RESOURCE.003 : ASTEROID</title>
+			<title code="0x13">RESOURCE.004 : KING JUPITER</title>
+			<title code="0x14">RESOURCE.005 : SILF OF WIND I</title>
+			<title code="0x15">RESOURCE.006 : DOUBLE STAR</title>
+			<title code="0x16">RESOURCE.007 : LANDING BASE</title>
+			<title code="0x17">RESOURCE.008 : GOING IN FORTRESS</title>
+			<title code="0x18">RESOURCE.009 : BATTLESTAR OLLEYUS (1)</title>
+			<title code="0x19">RESOURCE.010 : RETURN OF XACALITE</title>
+			<title code="0x1a">RESOURCE.011 : LITTLE MOMENT PEACE</title>
+		</titlelist>
+	</game>
+	<game>
+		<name>[IBM PC] SILPHEED(MT-32)</name>
+		<driver type="beep">pcatdos</driver>
+		<driveralias type="IBM PC">Sierra On-Line</driveralias>
+		<options>
+			<option name="clockmul" value="5"/>
+			<option name="midiout" value="1"/>
+			<option name="midiout_type" value="2"/>
+		</options>
+		<romlist archive="silpheed_at">
+			<rom type="file" offset="-1">silp_at.com</rom>
+			<rom type="file" offset="0x08">MT32.DRV</rom>
+			<rom type="file" offset="0x09">PATCH.001</rom>
+			<rom type="file" offset="0x10">RESOURCE.001</rom>
+			<rom type="file" offset="0x11">RESOURCE.002</rom>
+			<rom type="file" offset="0x12">RESOURCE.003</rom>
+			<rom type="file" offset="0x13">RESOURCE.004</rom>
+			<rom type="file" offset="0x14">RESOURCE.005</rom>
+			<rom type="file" offset="0x15">RESOURCE.006</rom>
+			<rom type="file" offset="0x16">RESOURCE.007</rom>
+			<rom type="file" offset="0x17">RESOURCE.008</rom>
+			<rom type="file" offset="0x18">RESOURCE.009</rom>
+			<rom type="file" offset="0x19">RESOURCE.010</rom>
+			<rom type="file" offset="0x1a">RESOURCE.011</rom>
+			<rom type="shell" offset="0">silp_at</rom>
+		</romlist>
+		<titlelist>
+			<title code="0x10">RESOURCE.001 : THE LEGEND OF SILPHEED</title>
+			<title code="0x11">RESOURCE.002 : BATTLE ON ORBIT</title>
+			<title code="0x12">RESOURCE.003 : ASTEROID</title>
+			<title code="0x13">RESOURCE.004 : KING JUPITER</title>
+			<title code="0x14">RESOURCE.005 : SILF OF WIND I</title>
+			<title code="0x15">RESOURCE.006 : DOUBLE STAR</title>
+			<title code="0x16">RESOURCE.007 : LANDING BASE</title>
+			<title code="0x17">RESOURCE.008 : GOING IN FORTRESS</title>
+			<title code="0x18">RESOURCE.009 : BATTLESTAR OLLEYUS (1)</title>
+			<title code="0x19">RESOURCE.010 : RETURN OF XACALITE</title>
+			<title code="0x1a">RESOURCE.011 : LITTLE MOMENT PEACE</title>
+		</titlelist>
+	</game>
+	<game>
+		<name>[IBM PC] SILPHEED(MT-32 Emulation)</name>
+		<driver type="beep">pcatdos</driver>
+		<driveralias type="IBM PC">Sierra On-Line</driveralias>
+		<options>
+			<option name="clockmul" value="5"/>
+			<option name="midiout" value="1"/>
+			<option name="midiout_type" value="1"/>
+		</options>
+		<romlist archive="silpheed_at">
+			<rom type="file" offset="-1">silp_at.com</rom>
+			<rom type="file" offset="0x08">MT32.DRV</rom>
+			<rom type="file" offset="0x09">PATCH.001</rom>
+			<rom type="file" offset="0x10">RESOURCE.001</rom>
+			<rom type="file" offset="0x11">RESOURCE.002</rom>
+			<rom type="file" offset="0x12">RESOURCE.003</rom>
+			<rom type="file" offset="0x13">RESOURCE.004</rom>
+			<rom type="file" offset="0x14">RESOURCE.005</rom>
+			<rom type="file" offset="0x15">RESOURCE.006</rom>
+			<rom type="file" offset="0x16">RESOURCE.007</rom>
+			<rom type="file" offset="0x17">RESOURCE.008</rom>
+			<rom type="file" offset="0x18">RESOURCE.009</rom>
+			<rom type="file" offset="0x19">RESOURCE.010</rom>
+			<rom type="file" offset="0x1a">RESOURCE.011</rom>
+			<rom type="shell" offset="0">silp_at</rom>
+		</romlist>
+		<titlelist>
+			<title code="0x10">RESOURCE.001 : THE LEGEND OF SILPHEED</title>
+			<title code="0x11">RESOURCE.002 : BATTLE ON ORBIT</title>
+			<title code="0x12">RESOURCE.003 : ASTEROID</title>
+			<title code="0x13">RESOURCE.004 : KING JUPITER</title>
+			<title code="0x14">RESOURCE.005 : SILF OF WIND I</title>
+			<title code="0x15">RESOURCE.006 : DOUBLE STAR</title>
+			<title code="0x16">RESOURCE.007 : LANDING BASE</title>
+			<title code="0x17">RESOURCE.008 : GOING IN FORTRESS</title>
+			<title code="0x18">RESOURCE.009 : BATTLESTAR OLLEYUS (1)</title>
+			<title code="0x19">RESOURCE.010 : RETURN OF XACALITE</title>
+			<title code="0x1a">RESOURCE.011 : LITTLE MOMENT PEACE</title>
+		</titlelist>
+	</game>
+	<game>
+		<name>[IBM PC] SILPHEED (PS/1 Version)(BEEP)</name>
+		<driver type="beep">pcatdos</driver>
+		<driveralias type="IBM PC">Sierra On-Line</driveralias>
+		<options>
+			<option name="clockmul" value="0x05"/>
+		</options>
+		<romlist archive="slphdps1_at">
+			<rom type="file" offset="-1">silp_at.com</rom>
+			<rom type="file" offset="0x08">STD.DRV</rom>
+			<rom type="file" offset="0x10">RES001</rom>
+			<rom type="file" offset="0x11">RES002</rom>
+			<rom type="file" offset="0x12">RES003</rom>
+			<rom type="file" offset="0x13">RES004</rom>
+			<rom type="file" offset="0x14">RES005</rom>
+			<rom type="file" offset="0x15">RES006</rom>
+			<rom type="file" offset="0x16">RES007</rom>
+			<rom type="file" offset="0x17">RES008</rom>
+			<rom type="file" offset="0x18">RES009</rom>
+			<rom type="file" offset="0x19">RES010</rom>
+			<rom type="file" offset="0x1a">RES011</rom>
+			<rom type="shell" offset="0">silp_at</rom>
+		</romlist>
+		<titlelist>
+			<title code="0x10">RES001 : THE LEGEND OF SILPHEED</title>
+			<title code="0x11">RES002 : BATTLE ON ORBIT</title>
+			<title code="0x12">RES003 : ASTEROID</title>
+			<title code="0x13">RES004 : KING JUPITER</title>
+			<title code="0x14">RES005 : SILF OF WIND I</title>
+			<title code="0x15">RES006 : DOUBLE STAR</title>
+			<title code="0x16">RES007 : LANDING BASE</title>
+			<title code="0x17">RES008 : GOING IN FORTRESS</title>
+			<title code="0x18">RES009 : BATTLESTAR OLLEYUS (1)</title>
+			<title code="0x19">RES010 : RETURN OF XACALITE</title>
+			<title code="0x1a">RES011 : LITTLE MOMENT PEACE</title>
+		</titlelist>
+	</game>
+	<game>
+		<name>[IBM PC] SILPHEED (PS/1 Version)(PS/1)</name>
+		<driver type="ps1">pcatdos</driver>
+		<driveralias type="IBM PC">Sierra On-Line</driveralias>
+		<options>
+			<option name="clockmul" value="0x05"/>
+		</options>
+		<romlist archive="slphdps1_at">
+			<rom type="file" offset="-1">silp_at.com</rom>
+			<rom type="file" offset="0x08">IBMCARD.DRV</rom>
+			<rom type="file" offset="0x10">RES001</rom>
+			<rom type="file" offset="0x11">RES002</rom>
+			<rom type="file" offset="0x12">RES003</rom>
+			<rom type="file" offset="0x13">RES004</rom>
+			<rom type="file" offset="0x14">RES005</rom>
+			<rom type="file" offset="0x15">RES006</rom>
+			<rom type="file" offset="0x16">RES007</rom>
+			<rom type="file" offset="0x17">RES008</rom>
+			<rom type="file" offset="0x18">RES009</rom>
+			<rom type="file" offset="0x19">RES010</rom>
+			<rom type="file" offset="0x1a">RES011</rom>
+			<rom type="shell" offset="0">silp_at</rom>
+		</romlist>
+		<titlelist>
+			<title code="0x10">RES001 : THE LEGEND OF SILPHEED</title>
+			<title code="0x11">RES002 : BATTLE ON ORBIT</title>
+			<title code="0x12">RES003 : ASTEROID</title>
+			<title code="0x13">RES004 : KING JUPITER</title>
+			<title code="0x14">RES005 : SILF OF WIND I</title>
+			<title code="0x15">RES006 : DOUBLE STAR</title>
+			<title code="0x16">RES007 : LANDING BASE</title>
+			<title code="0x17">RES008 : GOING IN FORTRESS</title>
+			<title code="0x18">RES009 : BATTLESTAR OLLEYUS (1)</title>
+			<title code="0x19">RES010 : RETURN OF XACALITE</title>
+			<title code="0x1a">RES011 : LITTLE MOMENT PEACE</title>
+		</titlelist>
+	</game>
+	<game>
+		<name>[IBM PC] SILPHEED (PS/1 Version)(MT-32)</name>
+		<driver type="adlib">pcatdos</driver>
+		<driveralias type="IBM PC">Sierra On-Line</driveralias>
+		<options>
+			<option name="clockmul" value="0x05"/>
+			<option name="midiout" value="1"/>
+			<option name="midiout_type" value="2"/>
+		</options>
+		<romlist archive="slphdps1_at">
+			<rom type="file" offset="-1">silp_at.com</rom>
+			<rom type="file" offset="0x08">MT32.DRV</rom>
+			<rom type="file" offset="0x09">PAT001</rom>
+			<rom type="file" offset="0x10">RES001</rom>
+			<rom type="file" offset="0x11">RES002</rom>
+			<rom type="file" offset="0x12">RES003</rom>
+			<rom type="file" offset="0x13">RES004</rom>
+			<rom type="file" offset="0x14">RES005</rom>
+			<rom type="file" offset="0x15">RES006</rom>
+			<rom type="file" offset="0x16">RES007</rom>
+			<rom type="file" offset="0x17">RES008</rom>
+			<rom type="file" offset="0x18">RES009</rom>
+			<rom type="file" offset="0x19">RES010</rom>
+			<rom type="file" offset="0x1a">RES011</rom>
+			<rom type="shell" offset="0">silp_at</rom>
+		</romlist>
+		<titlelist>
+			<title code="0x10">RES001 : THE LEGEND OF SILPHEED</title>
+			<title code="0x11">RES002 : BATTLE ON ORBIT</title>
+			<title code="0x12">RES003 : ASTEROID</title>
+			<title code="0x13">RES004 : KING JUPITER</title>
+			<title code="0x14">RES005 : SILF OF WIND I</title>
+			<title code="0x15">RES006 : DOUBLE STAR</title>
+			<title code="0x16">RES007 : LANDING BASE</title>
+			<title code="0x17">RES008 : GOING IN FORTRESS</title>
+			<title code="0x18">RES009 : BATTLESTAR OLLEYUS (1)</title>
+			<title code="0x19">RES010 : RETURN OF XACALITE</title>
+			<title code="0x1a">RES011 : LITTLE MOMENT PEACE</title>
+		</titlelist>
+	</game>
+	<game>
+		<name>[IBM PC] SILPHEED (PS/1 Version)(MT-32 Emulation)</name>
+		<driver type="beep">pcatdos</driver>
+		<driveralias type="IBM PC">Sierra On-Line</driveralias>
+		<options>
+			<option name="clockmul" value="0x05"/>
+			<option name="midiout" value="1"/>
+			<option name="midiout_type" value="1"/>
+		</options>
+		<romlist archive="slphdps1_at">
+			<rom type="file" offset="-1">silp_at.com</rom>
+			<rom type="file" offset="0x08">MT32.DRV</rom>
+			<rom type="file" offset="0x09">PAT001</rom>
+			<rom type="file" offset="0x10">RES001</rom>
+			<rom type="file" offset="0x11">RES002</rom>
+			<rom type="file" offset="0x12">RES003</rom>
+			<rom type="file" offset="0x13">RES004</rom>
+			<rom type="file" offset="0x14">RES005</rom>
+			<rom type="file" offset="0x15">RES006</rom>
+			<rom type="file" offset="0x16">RES007</rom>
+			<rom type="file" offset="0x17">RES008</rom>
+			<rom type="file" offset="0x18">RES009</rom>
+			<rom type="file" offset="0x19">RES010</rom>
+			<rom type="file" offset="0x1a">RES011</rom>
+			<rom type="shell" offset="0">silp_at</rom>
+		</romlist>
+		<titlelist>
+			<title code="0x10">RES001 : THE LEGEND OF SILPHEED</title>
+			<title code="0x11">RES002 : BATTLE ON ORBIT</title>
+			<title code="0x12">RES003 : ASTEROID</title>
+			<title code="0x13">RES004 : KING JUPITER</title>
+			<title code="0x14">RES005 : SILF OF WIND I</title>
+			<title code="0x15">RES006 : DOUBLE STAR</title>
+			<title code="0x16">RES007 : LANDING BASE</title>
+			<title code="0x17">RES008 : GOING IN FORTRESS</title>
+			<title code="0x18">RES009 : BATTLESTAR OLLEYUS (1)</title>
+			<title code="0x19">RES010 : RETURN OF XACALITE</title>
+			<title code="0x1a">RES011 : LITTLE MOMENT PEACE</title>
+		</titlelist>
+	</game>
+	<game>
+		<name>[IBM PC] Zeliard(Adlib)</name>
+		<driver type="adlib">pcatdos</driver>
+		<driveralias type="IBM PC">Sierra On-Line</driveralias>
+		<options>
+			<option name="clockmul" value="0x04"/>
+			<option name="opl2_mix" value="0x200"/>
+		</options>
+		<romlist archive="zeliard_at">
+			<rom type="file" offset="-1">zeli_at.com</rom>
+			<rom type="file" offset="0x05">MSCADLIB.DRV</rom>
+			<rom type="file" offset="0x06">SNDADLIB.DRV</rom>
+			<rom type="file" offset="0x10">ZELRES1.038</rom>
+			<rom type="file" offset="0x11">ZELRES1.039</rom>
+			<rom type="file" offset="0x12">ZELRES2.046</rom>
+			<rom type="file" offset="0x13">ZELRES2.047</rom>
+			<rom type="file" offset="0x14">ZELRES2.048</rom>
+			<rom type="file" offset="0x15">ZELRES2.049</rom>
+			<rom type="file" offset="0x16">ZELRES3.085</rom>
+			<rom type="file" offset="0x17">ZELRES3.086</rom>
+			<rom type="file" offset="0x18">ZELRES3.087</rom>
+			<rom type="file" offset="0x19">ZELRES3.088</rom>
+			<rom type="file" offset="0x1a">ZELRES3.089</rom>
+			<rom type="file" offset="0x1b">ZELRES3.090</rom>
+			<rom type="file" offset="0x1c">ZELRES3.091</rom>
+			<rom type="file" offset="0x1d">ZELRES3.092</rom>
+			<rom type="file" offset="0x1e">ZELRES3.093</rom>
+			<rom type="file" offset="0x1f">ZELRES3.094</rom>
+			<rom type="file" offset="0x20">ZELRES3.095</rom>
+			<rom type="shell" offset="0">zeli_at</rom>
+		</romlist>
+		<titlelist>
+			<title code="0x010011">ZELRES1.039 : Brilliance of Esmesanti</title>
+			<title code="0x010010">ZELRES1.038 : To a new adventure</title>
+			<title code="0x010012">ZELRES2.046 : Departure</title>
+			<title code="0x010013">ZELRES2.047 : Rest of moment</title>
+			<title code="0x010014">ZELRES2.048 : Town in underground</title>
+			<title code="0x010015">ZELRES2.049 : Closed town</title>
+			<title code="0x010016">ZELRES3.085 : To the world in the dark</title>
+			<title code="0x010017">ZELRES3.086 : Beyond the cave</title>
+			<title code="0x010018">ZELRES3.087 : The world of tree</title>
+			<title code="0x010019">ZELRES3.088 : The world of ice</title>
+			<title code="0x01001a">ZELRES3.089 : The world of mold</title>
+			<title code="0x01001b">ZELRES3.090 : The world of gold</title>
+			<title code="0x01001c">ZELRES3.091 : The world of fire</title>
+			<title code="0x01001d">ZELRES3.092 : The world of wonder</title>
+			<title code="0x01001e">ZELRES3.093 : Messenger of the dark</title>
+			<title code="0x01001f">ZELRES3.094 : Victory</title>
+			<title code="0x010020">ZELRES3.095 : Demon</title>
+		</titlelist>
+	</game>
+	<game>
+		<name>[IBM PC] Zeliard(TANDY)</name>
+		<driver type="tandy">pcatdos</driver>
+		<driveralias type="IBM PC">Sierra On-Line</driveralias>
+		<options>
+			<option name="clockmul" value="0x04"/>
+		</options>
+		<romlist archive="zeliard_at">
+			<rom type="file" offset="-1">zeli_at.com</rom>
+			<rom type="file" offset="0x05">MSCJR.DRV</rom>
+			<rom type="file" offset="0x06">SNDJR.DRV</rom>
+			<rom type="file" offset="0x10">ZELRES1.038</rom>
+			<rom type="file" offset="0x11">ZELRES1.039</rom>
+			<rom type="file" offset="0x12">ZELRES2.046</rom>
+			<rom type="file" offset="0x13">ZELRES2.047</rom>
+			<rom type="file" offset="0x14">ZELRES2.048</rom>
+			<rom type="file" offset="0x15">ZELRES2.049</rom>
+			<rom type="file" offset="0x16">ZELRES3.085</rom>
+			<rom type="file" offset="0x17">ZELRES3.086</rom>
+			<rom type="file" offset="0x18">ZELRES3.087</rom>
+			<rom type="file" offset="0x19">ZELRES3.088</rom>
+			<rom type="file" offset="0x1a">ZELRES3.089</rom>
+			<rom type="file" offset="0x1b">ZELRES3.090</rom>
+			<rom type="file" offset="0x1c">ZELRES3.091</rom>
+			<rom type="file" offset="0x1d">ZELRES3.092</rom>
+			<rom type="file" offset="0x1e">ZELRES3.093</rom>
+			<rom type="file" offset="0x1f">ZELRES3.094</rom>
+			<rom type="file" offset="0x20">ZELRES3.095</rom>
+			<rom type="shell" offset="0">zeli_at</rom>
+		</romlist>
+		<titlelist>
+			<title code="0x010011">ZELRES1.039 : Brilliance of Esmesanti</title>
+			<title code="0x010010">ZELRES1.038 : To a new adventure</title>
+			<title code="0x010012">ZELRES2.046 : Departure</title>
+			<title code="0x010013">ZELRES2.047 : Rest of moment</title>
+			<title code="0x010014">ZELRES2.048 : Town in underground</title>
+			<title code="0x010015">ZELRES2.049 : Closed town</title>
+			<title code="0x010016">ZELRES3.085 : To the world in the dark</title>
+			<title code="0x010017">ZELRES3.086 : Beyond the cave</title>
+			<title code="0x010018">ZELRES3.087 : The world of tree</title>
+			<title code="0x010019">ZELRES3.088 : The world of ice</title>
+			<title code="0x01001a">ZELRES3.089 : The world of mold</title>
+			<title code="0x01001b">ZELRES3.090 : The world of gold</title>
+			<title code="0x01001c">ZELRES3.091 : The world of fire</title>
+			<title code="0x01001d">ZELRES3.092 : The world of wonder</title>
+			<title code="0x01001e">ZELRES3.093 : Messenger of the dark</title>
+			<title code="0x01001f">ZELRES3.094 : Victory</title>
+			<title code="0x010020">ZELRES3.095 : Demon</title>
+		</titlelist>
+	</game>
+	<game>
+		<name>[IBM PC] Zeliard(BEEP)</name>
+		<driver type="beep">pcatdos</driver>
+		<driveralias type="IBM PC">Sierra On-Line</driveralias>
+		<options>
+			<option name="clockmul" value="0x04"/>
+		</options>
+		<romlist archive="zeliard_at">
+			<rom type="file" offset="-1">zeli_at.com</rom>
+			<rom type="file" offset="0x05">MSCSTD.DRV</rom>
+			<rom type="file" offset="0x06">SNDSTD.DRV</rom>
+			<rom type="file" offset="0x10">ZELRES1.038</rom>
+			<rom type="file" offset="0x11">ZELRES1.039</rom>
+			<rom type="file" offset="0x12">ZELRES2.046</rom>
+			<rom type="file" offset="0x13">ZELRES2.047</rom>
+			<rom type="file" offset="0x14">ZELRES2.048</rom>
+			<rom type="file" offset="0x15">ZELRES2.049</rom>
+			<rom type="file" offset="0x16">ZELRES3.085</rom>
+			<rom type="file" offset="0x17">ZELRES3.086</rom>
+			<rom type="file" offset="0x18">ZELRES3.087</rom>
+			<rom type="file" offset="0x19">ZELRES3.088</rom>
+			<rom type="file" offset="0x1a">ZELRES3.089</rom>
+			<rom type="file" offset="0x1b">ZELRES3.090</rom>
+			<rom type="file" offset="0x1c">ZELRES3.091</rom>
+			<rom type="file" offset="0x1d">ZELRES3.092</rom>
+			<rom type="file" offset="0x1e">ZELRES3.093</rom>
+			<rom type="file" offset="0x1f">ZELRES3.094</rom>
+			<rom type="file" offset="0x20">ZELRES3.095</rom>
+			<rom type="shell" offset="0">zeli_at</rom>
+		</romlist>
+		<titlelist>
+			<title code="0x010011">ZELRES1.039 : Brilliance of Esmesanti</title>
+			<title code="0x010010">ZELRES1.038 : To a new adventure</title>
+			<title code="0x010012">ZELRES2.046 : Departure</title>
+			<title code="0x010013">ZELRES2.047 : Rest of moment</title>
+			<title code="0x010014">ZELRES2.048 : Town in underground</title>
+			<title code="0x010015">ZELRES2.049 : Closed town</title>
+			<title code="0x010016">ZELRES3.085 : To the world in the dark</title>
+			<title code="0x010017">ZELRES3.086 : Beyond the cave</title>
+			<title code="0x010018">ZELRES3.087 : The world of tree</title>
+			<title code="0x010019">ZELRES3.088 : The world of ice</title>
+			<title code="0x01001a">ZELRES3.089 : The world of mold</title>
+			<title code="0x01001b">ZELRES3.090 : The world of gold</title>
+			<title code="0x01001c">ZELRES3.091 : The world of fire</title>
+			<title code="0x01001d">ZELRES3.092 : The world of wonder</title>
+			<title code="0x01001e">ZELRES3.093 : Messenger of the dark</title>
+			<title code="0x01001f">ZELRES3.094 : Victory</title>
+			<title code="0x010020">ZELRES3.095 : Demon</title>
+		</titlelist>
+	</game>
+	<game>
+		<name>[IBM PC] Zeliard(MT-32)</name>
+		<driver type="beep">pcatdos</driver>
+		<driveralias type="IBM PC">Sierra On-Line</driveralias>
+		<options>
+			<option name="clockmul" value="0x04"/>
+			<option name="midiout" value="1"/>
+			<option name="midiout_type" value="2"/>
+		</options>
+		<romlist archive="zeliard_at">
+			<rom type="file" offset="-1">zeli_at.com</rom>
+			<rom type="file" offset="-1">MTINIT.COM</rom>
+			<rom type="file" offset="0x05">MSCMT.DRV</rom>
+			<rom type="file" offset="0x06">SNDSTD.DRV</rom>
+			<rom type="file" offset="0x10">ZELRES1.038</rom>
+			<rom type="file" offset="0x11">ZELRES1.039</rom>
+			<rom type="file" offset="0x12">ZELRES2.046</rom>
+			<rom type="file" offset="0x13">ZELRES2.047</rom>
+			<rom type="file" offset="0x14">ZELRES2.048</rom>
+			<rom type="file" offset="0x15">ZELRES2.049</rom>
+			<rom type="file" offset="0x16">ZELRES3.085</rom>
+			<rom type="file" offset="0x17">ZELRES3.086</rom>
+			<rom type="file" offset="0x18">ZELRES3.087</rom>
+			<rom type="file" offset="0x19">ZELRES3.088</rom>
+			<rom type="file" offset="0x1a">ZELRES3.089</rom>
+			<rom type="file" offset="0x1b">ZELRES3.090</rom>
+			<rom type="file" offset="0x1c">ZELRES3.091</rom>
+			<rom type="file" offset="0x1d">ZELRES3.092</rom>
+			<rom type="file" offset="0x1e">ZELRES3.093</rom>
+			<rom type="file" offset="0x1f">ZELRES3.094</rom>
+			<rom type="file" offset="0x20">ZELRES3.095</rom>
+			<rom type="shell" offset="0">mtinit</rom>
+			<rom type="shell" offset="0">zeli_at</rom>
+		</romlist>
+		<titlelist>
+			<title code="0x000011">ZELRES1.039 : Brilliance of Esmesanti</title>
+			<title code="0x000010">ZELRES1.038 : To a new adventure</title>
+			<title code="0x000012">ZELRES2.046 : Departure</title>
+			<title code="0x000013">ZELRES2.047 : Rest of moment</title>
+			<title code="0x000014">ZELRES2.048 : Town in underground</title>
+			<title code="0x000015">ZELRES2.049 : Closed town</title>
+			<title code="0x000016">ZELRES3.085 : To the world in the dark</title>
+			<title code="0x000017">ZELRES3.086 : Beyond the cave</title>
+			<title code="0x000018">ZELRES3.087 : The world of tree</title>
+			<title code="0x000019">ZELRES3.088 : The world of ice</title>
+			<title code="0x00001a">ZELRES3.089 : The world of mold</title>
+			<title code="0x00001b">ZELRES3.090 : The world of gold</title>
+			<title code="0x00001c">ZELRES3.091 : The world of fire</title>
+			<title code="0x00001d">ZELRES3.092 : The world of wonder</title>
+			<title code="0x00001e">ZELRES3.093 : Messenger of the dark</title>
+			<title code="0x00001f">ZELRES3.094 : Victory</title>
+			<title code="0x000020">ZELRES3.095 : Demon</title>
+		</titlelist>
+	</game>
+	<game>
+		<name>[IBM PC] Zeliard(MT-32 Emulation)</name>
+		<driver type="beep">pcatdos</driver>
+		<driveralias type="IBM PC">Sierra On-Line</driveralias>
+		<options>
+			<option name="clockmul" value="0x04"/>
+			<option name="midiout" value="1"/>
+			<option name="midiout_type" value="1"/>
+		</options>
+		<romlist archive="zeliard_at">
+			<rom type="file" offset="-1">zeli_at.com</rom>
+			<rom type="file" offset="-1">MTINIT.COM</rom>
+			<rom type="file" offset="0x05">MSCMT.DRV</rom>
+			<rom type="file" offset="0x06">SNDSTD.DRV</rom>
+			<rom type="file" offset="0x10">ZELRES1.038</rom>
+			<rom type="file" offset="0x11">ZELRES1.039</rom>
+			<rom type="file" offset="0x12">ZELRES2.046</rom>
+			<rom type="file" offset="0x13">ZELRES2.047</rom>
+			<rom type="file" offset="0x14">ZELRES2.048</rom>
+			<rom type="file" offset="0x15">ZELRES2.049</rom>
+			<rom type="file" offset="0x16">ZELRES3.085</rom>
+			<rom type="file" offset="0x17">ZELRES3.086</rom>
+			<rom type="file" offset="0x18">ZELRES3.087</rom>
+			<rom type="file" offset="0x19">ZELRES3.088</rom>
+			<rom type="file" offset="0x1a">ZELRES3.089</rom>
+			<rom type="file" offset="0x1b">ZELRES3.090</rom>
+			<rom type="file" offset="0x1c">ZELRES3.091</rom>
+			<rom type="file" offset="0x1d">ZELRES3.092</rom>
+			<rom type="file" offset="0x1e">ZELRES3.093</rom>
+			<rom type="file" offset="0x1f">ZELRES3.094</rom>
+			<rom type="file" offset="0x20">ZELRES3.095</rom>
+			<rom type="shell" offset="0">mtinit</rom>
+			<rom type="shell" offset="0">zeli_at</rom>
+		</romlist>
+		<titlelist>
+			<title code="0x000011">ZELRES1.039 : Brilliance of Esmesanti</title>
+			<title code="0x000010">ZELRES1.038 : To a new adventure</title>
+			<title code="0x000012">ZELRES2.046 : Departure</title>
+			<title code="0x000013">ZELRES2.047 : Rest of moment</title>
+			<title code="0x000014">ZELRES2.048 : Town in underground</title>
+			<title code="0x000015">ZELRES2.049 : Closed town</title>
+			<title code="0x000016">ZELRES3.085 : To the world in the dark</title>
+			<title code="0x000017">ZELRES3.086 : Beyond the cave</title>
+			<title code="0x000018">ZELRES3.087 : The world of tree</title>
+			<title code="0x000019">ZELRES3.088 : The world of ice</title>
+			<title code="0x00001a">ZELRES3.089 : The world of mold</title>
+			<title code="0x00001b">ZELRES3.090 : The world of gold</title>
+			<title code="0x00001c">ZELRES3.091 : The world of fire</title>
+			<title code="0x00001d">ZELRES3.092 : The world of wonder</title>
+			<title code="0x00001e">ZELRES3.093 : Messenger of the dark</title>
+			<title code="0x00001f">ZELRES3.094 : Victory</title>
+			<title code="0x000020">ZELRES3.095 : Demon</title>
+		</titlelist>
+	</game>
+	<game>
+		<name>[PC-9801] Police Quest II: The Vengeance(MT-32)</name>
+		<driver type="beep">pc98dos</driver>
+		<driveralias type="NEC PC-9801">Sierra On-Line</driveralias>
+		<options>
+			<option name="clockmul" value="5"/>
+			<option name="midiout" value="1"/>
+			<option name="midiout_type" value="2"/>
+		</options>
+		<romlist archive="pq2_98">
+			<rom type="file" offset="-1">sciv_98.com</rom>
+			<rom type="file" offset="0x08">9801MT32.DRV</rom>
+			<rom type="file" offset="0x09">Patch.001</rom>
+			<rom type="file" offset="0x10">Sound.001</rom>
+			<rom type="file" offset="0x11">Sound.002</rom>
+			<rom type="file" offset="0x12">Sound.003</rom>
+			<rom type="file" offset="0x13">Sound.004</rom>
+			<rom type="file" offset="0x14">Sound.005</rom>
+			<rom type="file" offset="0x15">Sound.006</rom>
+			<rom type="file" offset="0x16">Sound.007</rom>
+			<rom type="file" offset="0x17">Sound.008</rom>
+			<rom type="file" offset="0x18">Sound.009</rom>
+			<rom type="file" offset="0x19">Sound.010</rom>
+			<rom type="file" offset="0x1A">Sound.011</rom>
+			<rom type="file" offset="0x1B">Sound.012</rom>
+			<rom type="file" offset="0x1C">Sound.013</rom>
+			<rom type="file" offset="0x1D">Sound.014</rom>
+			<rom type="file" offset="0x1E">Sound.015</rom>
+			<rom type="file" offset="0x1F">Sound.016</rom>
+			<rom type="file" offset="0x20">Sound.017</rom>
+			<rom type="file" offset="0x21">Sound.018</rom>
+			<rom type="file" offset="0x22">Sound.019</rom>
+			<rom type="file" offset="0x23">Sound.020</rom>
+			<rom type="file" offset="0x24">Sound.021</rom>
+			<rom type="file" offset="0x25">Sound.022</rom>
+			<rom type="file" offset="0x26">Sound.023</rom>
+			<rom type="file" offset="0x27">Sound.024</rom>
+			<rom type="file" offset="0x28">Sound.025</rom>
+			<rom type="file" offset="0x29">Sound.026</rom>
+			<rom type="file" offset="0x2A">Sound.027</rom>
+			<rom type="file" offset="0x2B">Sound.028</rom>
+			<rom type="file" offset="0x2C">Sound.029</rom>
+			<rom type="file" offset="0x2D">Sound.030</rom>
+			<rom type="file" offset="0x2E">Sound.032</rom>
+			<rom type="file" offset="0x2F">Sound.033</rom>
+			<rom type="file" offset="0x30">Sound.035</rom>
+			<rom type="file" offset="0x31">Sound.036</rom>
+			<rom type="file" offset="0x32">Sound.037</rom>
+			<rom type="file" offset="0x33">Sound.038</rom>
+			<rom type="file" offset="0x34">Sound.039</rom>
+			<rom type="file" offset="0x35">Sound.040</rom>
+			<rom type="file" offset="0x36">Sound.041</rom>
+			<rom type="file" offset="0x37">Sound.042</rom>
+			<rom type="file" offset="0x38">Sound.043</rom>
+			<rom type="file" offset="0x39">Sound.044</rom>
+			<rom type="file" offset="0x3A">Sound.045</rom>
+			<rom type="file" offset="0x3B">Sound.046</rom>
+			<rom type="file" offset="0x3C">Sound.047</rom>
+			<rom type="file" offset="0x3D">Sound.048</rom>
+			<rom type="file" offset="0x3E">Sound.049</rom>
+			<rom type="shell" offset="0">sciv_98</rom>
+		</romlist>
+		<titlelist>
+			<title code="0x10">Sound.001</title>
+			<title code="0x11">Sound.002</title>
+			<title code="0x12">Sound.003</title>
+			<title code="0x13">Sound.004</title>
+			<title code="0x14">Sound.005</title>
+			<title code="0x15">Sound.006</title>
+			<title code="0x16">Sound.007</title>
+			<title code="0x17">Sound.008</title>
+			<title code="0x18">Sound.009</title>
+			<title code="0x19">Sound.010</title>
+			<title code="0x1A">Sound.011</title>
+			<title code="0x1B">Sound.012</title>
+			<title code="0x1C">Sound.013</title>
+			<title code="0x1D">Sound.014</title>
+			<title code="0x1E">Sound.015</title>
+			<title code="0x1F">Sound.016</title>
+			<title code="0x20">Sound.017</title>
+			<title code="0x21">Sound.018</title>
+			<title code="0x22">Sound.019</title>
+			<title code="0x23">Sound.020</title>
+			<title code="0x24">Sound.021</title>
+			<title code="0x25">Sound.022</title>
+			<title code="0x26">Sound.023</title>
+			<title code="0x27">Sound.024</title>
+			<title code="0x2A">Sound.027</title>
+			<title code="0x2B">Sound.028</title>
+			<title code="0x2C">Sound.029</title>
+			<title code="0x2E">Sound.032</title>
+			<title code="0x2F">Sound.033</title>
+			<title code="0x30">Sound.035</title>
+			<title code="0x31">Sound.036</title>
+			<title code="0x35">Sound.040</title>
+			<title code="0x3C">Sound.047</title>
+			<title code="0x3D">Sound.048</title>
+			<title code="0x3E">Sound.049</title>
+		</titlelist>
+	</game>
+	<game>
+		<name>[PC-9801] Police Quest II: The Vengeance(MT-32 Emulation)</name>
+		<driver type="beep">pc98dos</driver>
+		<driveralias type="NEC PC-9801">Sierra On-Line</driveralias>
+		<options>
+			<option name="clockmul" value="5"/>
+			<option name="midiout" value="1"/>
+			<option name="midiout_type" value="1"/>
+		</options>
+		<romlist archive="pq2_98">
+			<rom type="file" offset="-1">sciv_98.com</rom>
+			<rom type="file" offset="0x08">9801MT32.DRV</rom>
+			<rom type="file" offset="0x09">Patch.001</rom>
+			<rom type="file" offset="0x10">Sound.001</rom>
+			<rom type="file" offset="0x11">Sound.002</rom>
+			<rom type="file" offset="0x12">Sound.003</rom>
+			<rom type="file" offset="0x13">Sound.004</rom>
+			<rom type="file" offset="0x14">Sound.005</rom>
+			<rom type="file" offset="0x15">Sound.006</rom>
+			<rom type="file" offset="0x16">Sound.007</rom>
+			<rom type="file" offset="0x17">Sound.008</rom>
+			<rom type="file" offset="0x18">Sound.009</rom>
+			<rom type="file" offset="0x19">Sound.010</rom>
+			<rom type="file" offset="0x1A">Sound.011</rom>
+			<rom type="file" offset="0x1B">Sound.012</rom>
+			<rom type="file" offset="0x1C">Sound.013</rom>
+			<rom type="file" offset="0x1D">Sound.014</rom>
+			<rom type="file" offset="0x1E">Sound.015</rom>
+			<rom type="file" offset="0x1F">Sound.016</rom>
+			<rom type="file" offset="0x20">Sound.017</rom>
+			<rom type="file" offset="0x21">Sound.018</rom>
+			<rom type="file" offset="0x22">Sound.019</rom>
+			<rom type="file" offset="0x23">Sound.020</rom>
+			<rom type="file" offset="0x24">Sound.021</rom>
+			<rom type="file" offset="0x25">Sound.022</rom>
+			<rom type="file" offset="0x26">Sound.023</rom>
+			<rom type="file" offset="0x27">Sound.024</rom>
+			<rom type="file" offset="0x28">Sound.025</rom>
+			<rom type="file" offset="0x29">Sound.026</rom>
+			<rom type="file" offset="0x2A">Sound.027</rom>
+			<rom type="file" offset="0x2B">Sound.028</rom>
+			<rom type="file" offset="0x2C">Sound.029</rom>
+			<rom type="file" offset="0x2D">Sound.030</rom>
+			<rom type="file" offset="0x2E">Sound.032</rom>
+			<rom type="file" offset="0x2F">Sound.033</rom>
+			<rom type="file" offset="0x30">Sound.035</rom>
+			<rom type="file" offset="0x31">Sound.036</rom>
+			<rom type="file" offset="0x32">Sound.037</rom>
+			<rom type="file" offset="0x33">Sound.038</rom>
+			<rom type="file" offset="0x34">Sound.039</rom>
+			<rom type="file" offset="0x35">Sound.040</rom>
+			<rom type="file" offset="0x36">Sound.041</rom>
+			<rom type="file" offset="0x37">Sound.042</rom>
+			<rom type="file" offset="0x38">Sound.043</rom>
+			<rom type="file" offset="0x39">Sound.044</rom>
+			<rom type="file" offset="0x3A">Sound.045</rom>
+			<rom type="file" offset="0x3B">Sound.046</rom>
+			<rom type="file" offset="0x3C">Sound.047</rom>
+			<rom type="file" offset="0x3D">Sound.048</rom>
+			<rom type="file" offset="0x3E">Sound.049</rom>
+			<rom type="shell" offset="0">sciv_98</rom>
+		</romlist>
+		<titlelist>
+			<title code="0x10">Sound.001</title>
+			<title code="0x11">Sound.002</title>
+			<title code="0x12">Sound.003</title>
+			<title code="0x13">Sound.004</title>
+			<title code="0x14">Sound.005</title>
+			<title code="0x15">Sound.006</title>
+			<title code="0x16">Sound.007</title>
+			<title code="0x17">Sound.008</title>
+			<title code="0x18">Sound.009</title>
+			<title code="0x19">Sound.010</title>
+			<title code="0x1A">Sound.011</title>
+			<title code="0x1B">Sound.012</title>
+			<title code="0x1C">Sound.013</title>
+			<title code="0x1D">Sound.014</title>
+			<title code="0x1E">Sound.015</title>
+			<title code="0x1F">Sound.016</title>
+			<title code="0x20">Sound.017</title>
+			<title code="0x21">Sound.018</title>
+			<title code="0x22">Sound.019</title>
+			<title code="0x23">Sound.020</title>
+			<title code="0x24">Sound.021</title>
+			<title code="0x25">Sound.022</title>
+			<title code="0x26">Sound.023</title>
+			<title code="0x27">Sound.024</title>
+			<title code="0x2A">Sound.027</title>
+			<title code="0x2B">Sound.028</title>
+			<title code="0x2C">Sound.029</title>
+			<title code="0x2E">Sound.032</title>
+			<title code="0x2F">Sound.033</title>
+			<title code="0x30">Sound.035</title>
+			<title code="0x31">Sound.036</title>
+			<title code="0x35">Sound.040</title>
+			<title code="0x3C">Sound.047</title>
+			<title code="0x3D">Sound.048</title>
+			<title code="0x3E">Sound.049</title>
+		</titlelist>
+	</game>
+	<game>
+		<name>[PC-9801] Police Quest II: The Vengeance(BEEP)</name>
+		<driver type="beep">pc98dos</driver>
+		<driveralias type="NEC PC-9801">Sierra On-Line</driveralias>
+		<options>
+			<option name="clockmul" value="8"/>
+		</options>
+		<romlist archive="pq2_98">
+			<rom type="file" offset="-1">sciv_98.com</rom>
+			<rom type="file" offset="0x08">9801STD.DRV</rom>
+			<rom type="file" offset="0x10">Sound.001</rom>
+			<rom type="file" offset="0x11">Sound.002</rom>
+			<rom type="file" offset="0x12">Sound.003</rom>
+			<rom type="file" offset="0x13">Sound.004</rom>
+			<rom type="file" offset="0x14">Sound.005</rom>
+			<rom type="file" offset="0x15">Sound.006</rom>
+			<rom type="file" offset="0x16">Sound.007</rom>
+			<rom type="file" offset="0x17">Sound.008</rom>
+			<rom type="file" offset="0x18">Sound.009</rom>
+			<rom type="file" offset="0x19">Sound.010</rom>
+			<rom type="file" offset="0x1A">Sound.011</rom>
+			<rom type="file" offset="0x1B">Sound.012</rom>
+			<rom type="file" offset="0x1C">Sound.013</rom>
+			<rom type="file" offset="0x1D">Sound.014</rom>
+			<rom type="file" offset="0x1E">Sound.015</rom>
+			<rom type="file" offset="0x1F">Sound.016</rom>
+			<rom type="file" offset="0x20">Sound.017</rom>
+			<rom type="file" offset="0x21">Sound.018</rom>
+			<rom type="file" offset="0x22">Sound.019</rom>
+			<rom type="file" offset="0x23">Sound.020</rom>
+			<rom type="file" offset="0x24">Sound.021</rom>
+			<rom type="file" offset="0x25">Sound.022</rom>
+			<rom type="file" offset="0x26">Sound.023</rom>
+			<rom type="file" offset="0x27">Sound.024</rom>
+			<rom type="file" offset="0x28">Sound.025</rom>
+			<rom type="file" offset="0x29">Sound.026</rom>
+			<rom type="file" offset="0x2A">Sound.027</rom>
+			<rom type="file" offset="0x2B">Sound.028</rom>
+			<rom type="file" offset="0x2C">Sound.029</rom>
+			<rom type="file" offset="0x2D">Sound.030</rom>
+			<rom type="file" offset="0x2E">Sound.032</rom>
+			<rom type="file" offset="0x2F">Sound.033</rom>
+			<rom type="file" offset="0x30">Sound.035</rom>
+			<rom type="file" offset="0x31">Sound.036</rom>
+			<rom type="file" offset="0x32">Sound.037</rom>
+			<rom type="file" offset="0x33">Sound.038</rom>
+			<rom type="file" offset="0x34">Sound.039</rom>
+			<rom type="file" offset="0x35">Sound.040</rom>
+			<rom type="file" offset="0x36">Sound.041</rom>
+			<rom type="file" offset="0x37">Sound.042</rom>
+			<rom type="file" offset="0x38">Sound.043</rom>
+			<rom type="file" offset="0x39">Sound.044</rom>
+			<rom type="file" offset="0x3A">Sound.045</rom>
+			<rom type="file" offset="0x3B">Sound.046</rom>
+			<rom type="file" offset="0x3C">Sound.047</rom>
+			<rom type="file" offset="0x3D">Sound.048</rom>
+			<rom type="file" offset="0x3E">Sound.049</rom>
+			<rom type="shell" offset="0">sciv_98</rom>
+		</romlist>
+		<titlelist>
+			<title code="0x10">Sound.001</title>
+			<title code="0x11">Sound.002</title>
+			<title code="0x12">Sound.003</title>
+			<title code="0x13">Sound.004</title>
+			<title code="0x14">Sound.005</title>
+			<title code="0x15">Sound.006</title>
+			<title code="0x16">Sound.007</title>
+			<title code="0x17">Sound.008</title>
+			<title code="0x18">Sound.009</title>
+			<title code="0x19">Sound.010</title>
+			<title code="0x1A">Sound.011</title>
+			<title code="0x1B">Sound.012</title>
+			<title code="0x1C">Sound.013</title>
+			<title code="0x1D">Sound.014</title>
+			<title code="0x1E">Sound.015</title>
+			<title code="0x1F">Sound.016</title>
+			<title code="0x20">Sound.017</title>
+			<title code="0x21">Sound.018</title>
+			<title code="0x22">Sound.019</title>
+			<title code="0x23">Sound.020</title>
+			<title code="0x24">Sound.021</title>
+			<title code="0x25">Sound.022</title>
+			<title code="0x26">Sound.023</title>
+			<title code="0x27">Sound.024</title>
+			<title code="0x2A">Sound.027</title>
+			<title code="0x2B">Sound.028</title>
+			<title code="0x2C">Sound.029</title>
+			<title code="0x2E">Sound.032</title>
+			<title code="0x2F">Sound.033</title>
+			<title code="0x30">Sound.035</title>
+			<title code="0x31">Sound.036</title>
+			<title code="0x35">Sound.040</title>
+			<title code="0x3C">Sound.047</title>
+			<title code="0x3D">Sound.048</title>
+			<title code="0x3E">Sound.049</title>
+		</titlelist>
+	</game>
+	<game>
+		<name>[PC-9801] Police Quest II: The Vengeance(OPN)</name>
+		<driver type="opn">pc98dos</driver>
+		<driveralias type="NEC PC-9801">Sierra On-Line</driveralias>
+		<options>
+			<option name="clockmul" value="8"/>
+		</options>
+		<romlist archive="pq2_98">
+			<rom type="file" offset="-1">sciv_98.com</rom>
+			<rom type="file" offset="0x08">9801FM.DRV</rom>
+			<rom type="file" offset="0x09">Patch.002</rom>
+			<rom type="file" offset="0x10">Sound.001</rom>
+			<rom type="file" offset="0x11">Sound.002</rom>
+			<rom type="file" offset="0x12">Sound.003</rom>
+			<rom type="file" offset="0x13">Sound.004</rom>
+			<rom type="file" offset="0x14">Sound.005</rom>
+			<rom type="file" offset="0x15">Sound.006</rom>
+			<rom type="file" offset="0x16">Sound.007</rom>
+			<rom type="file" offset="0x17">Sound.008</rom>
+			<rom type="file" offset="0x18">Sound.009</rom>
+			<rom type="file" offset="0x19">Sound.010</rom>
+			<rom type="file" offset="0x1A">Sound.011</rom>
+			<rom type="file" offset="0x1B">Sound.012</rom>
+			<rom type="file" offset="0x1C">Sound.013</rom>
+			<rom type="file" offset="0x1D">Sound.014</rom>
+			<rom type="file" offset="0x1E">Sound.015</rom>
+			<rom type="file" offset="0x1F">Sound.016</rom>
+			<rom type="file" offset="0x20">Sound.017</rom>
+			<rom type="file" offset="0x21">Sound.018</rom>
+			<rom type="file" offset="0x22">Sound.019</rom>
+			<rom type="file" offset="0x23">Sound.020</rom>
+			<rom type="file" offset="0x24">Sound.021</rom>
+			<rom type="file" offset="0x25">Sound.022</rom>
+			<rom type="file" offset="0x26">Sound.023</rom>
+			<rom type="file" offset="0x27">Sound.024</rom>
+			<rom type="file" offset="0x28">Sound.025</rom>
+			<rom type="file" offset="0x29">Sound.026</rom>
+			<rom type="file" offset="0x2A">Sound.027</rom>
+			<rom type="file" offset="0x2B">Sound.028</rom>
+			<rom type="file" offset="0x2C">Sound.029</rom>
+			<rom type="file" offset="0x2D">Sound.030</rom>
+			<rom type="file" offset="0x2E">Sound.032</rom>
+			<rom type="file" offset="0x2F">Sound.033</rom>
+			<rom type="file" offset="0x30">Sound.035</rom>
+			<rom type="file" offset="0x31">Sound.036</rom>
+			<rom type="file" offset="0x32">Sound.037</rom>
+			<rom type="file" offset="0x33">Sound.038</rom>
+			<rom type="file" offset="0x34">Sound.039</rom>
+			<rom type="file" offset="0x35">Sound.040</rom>
+			<rom type="file" offset="0x36">Sound.041</rom>
+			<rom type="file" offset="0x37">Sound.042</rom>
+			<rom type="file" offset="0x38">Sound.043</rom>
+			<rom type="file" offset="0x39">Sound.044</rom>
+			<rom type="file" offset="0x3A">Sound.045</rom>
+			<rom type="file" offset="0x3B">Sound.046</rom>
+			<rom type="file" offset="0x3C">Sound.047</rom>
+			<rom type="file" offset="0x3D">Sound.048</rom>
+			<rom type="file" offset="0x3E">Sound.049</rom>
+			<rom type="shell" offset="0">sciv_98</rom>
+		</romlist>
+		<titlelist>
+			<title code="0x10">Sound.001</title>
+			<title code="0x11">Sound.002</title>
+			<title code="0x12">Sound.003</title>
+			<title code="0x13">Sound.004</title>
+			<title code="0x14">Sound.005</title>
+			<title code="0x15">Sound.006</title>
+			<title code="0x16">Sound.007</title>
+			<title code="0x17">Sound.008</title>
+			<title code="0x18">Sound.009</title>
+			<title code="0x19">Sound.010</title>
+			<title code="0x1A">Sound.011</title>
+			<title code="0x1B">Sound.012</title>
+			<title code="0x1C">Sound.013</title>
+			<title code="0x1D">Sound.014</title>
+			<title code="0x1E">Sound.015</title>
+			<title code="0x1F">Sound.016</title>
+			<title code="0x20">Sound.017</title>
+			<title code="0x21">Sound.018</title>
+			<title code="0x22">Sound.019</title>
+			<title code="0x23">Sound.020</title>
+			<title code="0x24">Sound.021</title>
+			<title code="0x25">Sound.022</title>
+			<title code="0x26">Sound.023</title>
+			<title code="0x27">Sound.024</title>
+			<title code="0x2A">Sound.027</title>
+			<title code="0x2B">Sound.028</title>
+			<title code="0x2C">Sound.029</title>
+			<title code="0x2E">Sound.032</title>
+			<title code="0x2F">Sound.033</title>
+			<title code="0x30">Sound.035</title>
+			<title code="0x31">Sound.036</title>
+			<title code="0x35">Sound.040</title>
+			<title code="0x3C">Sound.047</title>
+			<title code="0x3D">Sound.048</title>
+			<title code="0x3E">Sound.049</title>
+		</titlelist>
+	</game>
+	<game>
+		<name>[PC-9801] Police Quest II: The Vengeance(Sound Orchestra)</name>
+		<driver type="soundorchestra">pc98dos</driver>
+		<driveralias type="NEC PC-9801">Sierra On-Line</driveralias>
+		<options>
+			<option name="clockmul" value="8"/>
+		</options>
+		<romlist archive="pq2_98">
+			<rom type="file" offset="-1">sciv_98.com</rom>
+			<rom type="file" offset="0x08">9801ORCH.DRV</rom>
+			<rom type="file" offset="0x09">Patch.003</rom>
+			<rom type="file" offset="0x10">Sound.001</rom>
+			<rom type="file" offset="0x11">Sound.002</rom>
+			<rom type="file" offset="0x12">Sound.003</rom>
+			<rom type="file" offset="0x13">Sound.004</rom>
+			<rom type="file" offset="0x14">Sound.005</rom>
+			<rom type="file" offset="0x15">Sound.006</rom>
+			<rom type="file" offset="0x16">Sound.007</rom>
+			<rom type="file" offset="0x17">Sound.008</rom>
+			<rom type="file" offset="0x18">Sound.009</rom>
+			<rom type="file" offset="0x19">Sound.010</rom>
+			<rom type="file" offset="0x1A">Sound.011</rom>
+			<rom type="file" offset="0x1B">Sound.012</rom>
+			<rom type="file" offset="0x1C">Sound.013</rom>
+			<rom type="file" offset="0x1D">Sound.014</rom>
+			<rom type="file" offset="0x1E">Sound.015</rom>
+			<rom type="file" offset="0x1F">Sound.016</rom>
+			<rom type="file" offset="0x20">Sound.017</rom>
+			<rom type="file" offset="0x21">Sound.018</rom>
+			<rom type="file" offset="0x22">Sound.019</rom>
+			<rom type="file" offset="0x23">Sound.020</rom>
+			<rom type="file" offset="0x24">Sound.021</rom>
+			<rom type="file" offset="0x25">Sound.022</rom>
+			<rom type="file" offset="0x26">Sound.023</rom>
+			<rom type="file" offset="0x27">Sound.024</rom>
+			<rom type="file" offset="0x28">Sound.025</rom>
+			<rom type="file" offset="0x29">Sound.026</rom>
+			<rom type="file" offset="0x2A">Sound.027</rom>
+			<rom type="file" offset="0x2B">Sound.028</rom>
+			<rom type="file" offset="0x2C">Sound.029</rom>
+			<rom type="file" offset="0x2D">Sound.030</rom>
+			<rom type="file" offset="0x2E">Sound.032</rom>
+			<rom type="file" offset="0x2F">Sound.033</rom>
+			<rom type="file" offset="0x30">Sound.035</rom>
+			<rom type="file" offset="0x31">Sound.036</rom>
+			<rom type="file" offset="0x32">Sound.037</rom>
+			<rom type="file" offset="0x33">Sound.038</rom>
+			<rom type="file" offset="0x34">Sound.039</rom>
+			<rom type="file" offset="0x35">Sound.040</rom>
+			<rom type="file" offset="0x36">Sound.041</rom>
+			<rom type="file" offset="0x37">Sound.042</rom>
+			<rom type="file" offset="0x38">Sound.043</rom>
+			<rom type="file" offset="0x39">Sound.044</rom>
+			<rom type="file" offset="0x3A">Sound.045</rom>
+			<rom type="file" offset="0x3B">Sound.046</rom>
+			<rom type="file" offset="0x3C">Sound.047</rom>
+			<rom type="file" offset="0x3D">Sound.048</rom>
+			<rom type="file" offset="0x3E">Sound.049</rom>
+			<rom type="shell" offset="0">sciv_98</rom>
+		</romlist>
+		<titlelist>
+			<title code="0x10">Sound.001</title>
+			<title code="0x11">Sound.002</title>
+			<title code="0x12">Sound.003</title>
+			<title code="0x13">Sound.004</title>
+			<title code="0x14">Sound.005</title>
+			<title code="0x15">Sound.006</title>
+			<title code="0x16">Sound.007</title>
+			<title code="0x17">Sound.008</title>
+			<title code="0x18">Sound.009</title>
+			<title code="0x19">Sound.010</title>
+			<title code="0x1A">Sound.011</title>
+			<title code="0x1B">Sound.012</title>
+			<title code="0x1C">Sound.013</title>
+			<title code="0x1D">Sound.014</title>
+			<title code="0x1E">Sound.015</title>
+			<title code="0x1F">Sound.016</title>
+			<title code="0x20">Sound.017</title>
+			<title code="0x21">Sound.018</title>
+			<title code="0x22">Sound.019</title>
+			<title code="0x23">Sound.020</title>
+			<title code="0x24">Sound.021</title>
+			<title code="0x25">Sound.022</title>
+			<title code="0x26">Sound.023</title>
+			<title code="0x27">Sound.024</title>
+			<title code="0x2A">Sound.027</title>
+			<title code="0x2B">Sound.028</title>
+			<title code="0x2C">Sound.029</title>
+			<title code="0x2E">Sound.032</title>
+			<title code="0x2F">Sound.033</title>
+			<title code="0x30">Sound.035</title>
+			<title code="0x31">Sound.036</title>
+			<title code="0x35">Sound.040</title>
+			<title code="0x3C">Sound.047</title>
+			<title code="0x3D">Sound.048</title>
+			<title code="0x3E">Sound.049</title>
+		</titlelist>
+	</game>
+	<game>
+		<name>[PC-9801] Quest for Glory(MT-32)</name>
+		<driver type="beep">pc98dos</driver>
+		<driveralias type="NEC PC-9801">Sierra On-Line</driveralias>
+		<options>
+			<option name="clockmul" value="5"/>
+			<option name="midiout" value="1"/>
+			<option name="midiout_type" value="2"/>
+		</options>
+		<romlist archive="qfg_98">
+			<rom type="file" offset="-1">sciv_98.com</rom>
+			<rom type="file" offset="0x08">9801MT32.DRV</rom>
+			<rom type="file" offset="0x09">Patch.001</rom>
+			<rom type="file" offset="0x10">sound.001</rom>
+			<rom type="file" offset="0x11">sound.002</rom>
+			<rom type="file" offset="0x12">sound.003</rom>
+			<rom type="file" offset="0x13">sound.004</rom>
+			<rom type="file" offset="0x14">sound.005</rom>
+			<rom type="file" offset="0x15">sound.006</rom>
+			<rom type="file" offset="0x16">sound.007</rom>
+			<rom type="file" offset="0x17">sound.008</rom>
+			<rom type="file" offset="0x18">sound.009</rom>
+			<rom type="file" offset="0x19">sound.010</rom>
+			<rom type="file" offset="0x1a">sound.011</rom>
+			<rom type="file" offset="0x1b">sound.012</rom>
+			<rom type="file" offset="0x1c">sound.013</rom>
+			<rom type="file" offset="0x1d">sound.014</rom>
+			<rom type="file" offset="0x1e">sound.015</rom>
+			<rom type="file" offset="0x1f">sound.017</rom>
+			<rom type="file" offset="0x20">sound.018</rom>
+			<rom type="file" offset="0x21">sound.020</rom>
+			<rom type="file" offset="0x22">sound.021</rom>
+			<rom type="file" offset="0x23">sound.022</rom>
+			<rom type="file" offset="0x24">sound.023</rom>
+			<rom type="file" offset="0x25">sound.024</rom>
+			<rom type="file" offset="0x26">sound.025</rom>
+			<rom type="file" offset="0x27">sound.026</rom>
+			<rom type="file" offset="0x28">sound.027</rom>
+			<rom type="file" offset="0x29">sound.028</rom>
+			<rom type="file" offset="0x2a">sound.029</rom>
+			<rom type="file" offset="0x2b">sound.030</rom>
+			<rom type="file" offset="0x2c">sound.031</rom>
+			<rom type="file" offset="0x2d">sound.032</rom>
+			<rom type="file" offset="0x2e">sound.033</rom>
+			<rom type="file" offset="0x2f">sound.034</rom>
+			<rom type="file" offset="0x30">sound.035</rom>
+			<rom type="file" offset="0x31">sound.036</rom>
+			<rom type="file" offset="0x32">sound.037</rom>
+			<rom type="file" offset="0x33">sound.038</rom>
+			<rom type="file" offset="0x34">sound.039</rom>
+			<rom type="file" offset="0x35">sound.040</rom>
+			<rom type="file" offset="0x36">sound.041</rom>
+			<rom type="file" offset="0x37">sound.042</rom>
+			<rom type="file" offset="0x38">sound.043</rom>
+			<rom type="file" offset="0x39">sound.044</rom>
+			<rom type="file" offset="0x3a">sound.045</rom>
+			<rom type="file" offset="0x3b">sound.046</rom>
+			<rom type="file" offset="0x3c">sound.047</rom>
+			<rom type="file" offset="0x3d">sound.048</rom>
+			<rom type="file" offset="0x3e">sound.049</rom>
+			<rom type="file" offset="0x3f">sound.050</rom>
+			<rom type="file" offset="0x40">sound.051</rom>
+			<rom type="file" offset="0x41">sound.052</rom>
+			<rom type="file" offset="0x42">sound.054</rom>
+			<rom type="file" offset="0x43">sound.055</rom>
+			<rom type="file" offset="0x44">sound.056</rom>
+			<rom type="file" offset="0x45">sound.057</rom>
+			<rom type="file" offset="0x46">sound.058</rom>
+			<rom type="file" offset="0x47">sound.059</rom>
+			<rom type="file" offset="0x48">sound.061</rom>
+			<rom type="file" offset="0x49">sound.062</rom>
+			<rom type="file" offset="0x4a">sound.064</rom>
+			<rom type="file" offset="0x4b">sound.065</rom>
+			<rom type="file" offset="0x4c">sound.066</rom>
+			<rom type="file" offset="0x4d">sound.067</rom>
+			<rom type="file" offset="0x4e">sound.070</rom>
+			<rom type="file" offset="0x4f">sound.072</rom>
+			<rom type="file" offset="0x50">sound.073</rom>
+			<rom type="file" offset="0x51">sound.074</rom>
+			<rom type="file" offset="0x52">sound.075</rom>
+			<rom type="file" offset="0x53">sound.076</rom>
+			<rom type="file" offset="0x54">sound.077</rom>
+			<rom type="file" offset="0x55">sound.078</rom>
+			<rom type="file" offset="0x56">sound.079</rom>
+			<rom type="file" offset="0x57">sound.080</rom>
+			<rom type="file" offset="0x58">sound.081</rom>
+			<rom type="file" offset="0x59">sound.082</rom>
+			<rom type="file" offset="0x5a">sound.083</rom>
+			<rom type="file" offset="0x5b">sound.084</rom>
+			<rom type="file" offset="0x5c">sound.085</rom>
+			<rom type="file" offset="0x5d">sound.086</rom>
+			<rom type="file" offset="0x5e">sound.087</rom>
+			<rom type="file" offset="0x5f">sound.088</rom>
+			<rom type="file" offset="0x60">sound.090</rom>
+			<rom type="file" offset="0x61">sound.092</rom>
+			<rom type="file" offset="0x62">sound.093</rom>
+			<rom type="file" offset="0x63">sound.096</rom>
+			<rom type="file" offset="0x64">sound.097</rom>
+			<rom type="file" offset="0x65">sound.098</rom>
+			<rom type="file" offset="0x66">sound.099</rom>
+			<rom type="shell" offset="0">sciv_98</rom>
+		</romlist>
+		<titlelist>
+			<title code="0x10">sound.001 : </title>
+			<title code="0x11">sound.002 : </title>
+			<title code="0x12">sound.003 : </title>
+			<title code="0x13">sound.004 : </title>
+			<title code="0x14">sound.005 : </title>
+			<title code="0x15">sound.006 : </title>
+			<title code="0x16">sound.007 : </title>
+			<title code="0x17">sound.008 : </title>
+			<title code="0x18">sound.009 : </title>
+			<title code="0x19">sound.010 : </title>
+			<title code="0x1a">sound.011 : </title>
+			<title code="0x1b">sound.012 : </title>
+			<title code="0x1c">sound.013 : </title>
+			<title code="0x1d">sound.014 : </title>
+			<title code="0x1e">sound.015 : </title>
+			<title code="0x1f">sound.017 : </title>
+			<title code="0x20">sound.018 : </title>
+			<title code="0x21">sound.020 : </title>
+			<title code="0x22">sound.021 : </title>
+			<title code="0x23">sound.022 : </title>
+			<title code="0x24">sound.023 : </title>
+			<title code="0x25">sound.024 : </title>
+			<title code="0x26">sound.025 : </title>
+			<title code="0x27">sound.026 : </title>
+			<title code="0x28">sound.027 : </title>
+			<title code="0x29">sound.028 : </title>
+			<title code="0x2a">sound.029 : </title>
+			<title code="0x2b">sound.030 : </title>
+			<title code="0x2c">sound.031 : </title>
+			<title code="0x2d">sound.032 : </title>
+			<title code="0x2e">sound.033 : </title>
+			<title code="0x2f">sound.034 : </title>
+			<title code="0x30">sound.035 : </title>
+			<title code="0x31">sound.036 : </title>
+			<title code="0x32">sound.037 : </title>
+			<title code="0x33">sound.038 : </title>
+			<title code="0x34">sound.039 : </title>
+			<title code="0x35">sound.040 : </title>
+			<title code="0x36">sound.041 : </title>
+			<title code="0x37">sound.042 : </title>
+			<title code="0x38">sound.043 : </title>
+			<title code="0x39">sound.044 : </title>
+			<title code="0x3a">sound.045 : </title>
+			<title code="0x3b">sound.046 : </title>
+			<title code="0x3c">sound.047 : </title>
+			<title code="0x3d">sound.048 : </title>
+			<title code="0x3e">sound.049 : </title>
+			<title code="0x3f">sound.050 : </title>
+			<title code="0x40">sound.051 : </title>
+			<title code="0x41">sound.052 : </title>
+			<title code="0x42">sound.054 : </title>
+			<title code="0x43">sound.055 : </title>
+			<title code="0x44">sound.056 : </title>
+			<title code="0x45">sound.057 : </title>
+			<title code="0x46">sound.058 : </title>
+			<title code="0x47">sound.059 : </title>
+			<title code="0x48">sound.061 : </title>
+			<title code="0x49">sound.062 : </title>
+			<title code="0x4a">sound.064 : </title>
+			<title code="0x4b">sound.065 : </title>
+			<title code="0x4c">sound.066 : </title>
+			<title code="0x4d">sound.067 : </title>
+			<title code="0x4e">sound.070 : </title>
+			<title code="0x4f">sound.072 : </title>
+			<title code="0x50">sound.073 : </title>
+			<title code="0x51">sound.074 : </title>
+			<title code="0x52">sound.075 : </title>
+			<title code="0x53">sound.076 : </title>
+			<title code="0x54">sound.077 : </title>
+			<title code="0x55">sound.078 : </title>
+			<title code="0x56">sound.079 : </title>
+			<title code="0x57">sound.080 : </title>
+			<title code="0x58">sound.081 : </title>
+			<title code="0x59">sound.082 : </title>
+			<title code="0x5a">sound.083 : </title>
+			<title code="0x5b">sound.084 : </title>
+			<title code="0x5c">sound.085 : </title>
+			<title code="0x5d">sound.086 : </title>
+			<title code="0x5e">sound.087 : </title>
+			<title code="0x5f">sound.088 : </title>
+			<title code="0x60">sound.090 : </title>
+			<title code="0x61">sound.092 : </title>
+			<title code="0x62">sound.093 : </title>
+			<title code="0x63">sound.096 : </title>
+			<title code="0x64">sound.097 : </title>
+			<title code="0x65">sound.098 : </title>
+			<title code="0x66">sound.099 : </title>
+		</titlelist>
+	</game>
+	<game>
+		<name>[PC-9801] Quest for Glory(MT-32 Emulation)</name>
+		<driver type="beep">pc98dos</driver>
+		<driveralias type="NEC PC-9801">Sierra On-Line</driveralias>
+		<options>
+			<option name="clockmul" value="5"/>
+			<option name="midiout" value="1"/>
+			<option name="midiout_type" value="1"/>
+		</options>
+		<romlist archive="qfg_98">
+			<rom type="file" offset="-1">sciv_98.com</rom>
+			<rom type="file" offset="0x08">9801MT32.DRV</rom>
+			<rom type="file" offset="0x09">Patch.001</rom>
+			<rom type="file" offset="0x10">sound.001</rom>
+			<rom type="file" offset="0x11">sound.002</rom>
+			<rom type="file" offset="0x12">sound.003</rom>
+			<rom type="file" offset="0x13">sound.004</rom>
+			<rom type="file" offset="0x14">sound.005</rom>
+			<rom type="file" offset="0x15">sound.006</rom>
+			<rom type="file" offset="0x16">sound.007</rom>
+			<rom type="file" offset="0x17">sound.008</rom>
+			<rom type="file" offset="0x18">sound.009</rom>
+			<rom type="file" offset="0x19">sound.010</rom>
+			<rom type="file" offset="0x1a">sound.011</rom>
+			<rom type="file" offset="0x1b">sound.012</rom>
+			<rom type="file" offset="0x1c">sound.013</rom>
+			<rom type="file" offset="0x1d">sound.014</rom>
+			<rom type="file" offset="0x1e">sound.015</rom>
+			<rom type="file" offset="0x1f">sound.017</rom>
+			<rom type="file" offset="0x20">sound.018</rom>
+			<rom type="file" offset="0x21">sound.020</rom>
+			<rom type="file" offset="0x22">sound.021</rom>
+			<rom type="file" offset="0x23">sound.022</rom>
+			<rom type="file" offset="0x24">sound.023</rom>
+			<rom type="file" offset="0x25">sound.024</rom>
+			<rom type="file" offset="0x26">sound.025</rom>
+			<rom type="file" offset="0x27">sound.026</rom>
+			<rom type="file" offset="0x28">sound.027</rom>
+			<rom type="file" offset="0x29">sound.028</rom>
+			<rom type="file" offset="0x2a">sound.029</rom>
+			<rom type="file" offset="0x2b">sound.030</rom>
+			<rom type="file" offset="0x2c">sound.031</rom>
+			<rom type="file" offset="0x2d">sound.032</rom>
+			<rom type="file" offset="0x2e">sound.033</rom>
+			<rom type="file" offset="0x2f">sound.034</rom>
+			<rom type="file" offset="0x30">sound.035</rom>
+			<rom type="file" offset="0x31">sound.036</rom>
+			<rom type="file" offset="0x32">sound.037</rom>
+			<rom type="file" offset="0x33">sound.038</rom>
+			<rom type="file" offset="0x34">sound.039</rom>
+			<rom type="file" offset="0x35">sound.040</rom>
+			<rom type="file" offset="0x36">sound.041</rom>
+			<rom type="file" offset="0x37">sound.042</rom>
+			<rom type="file" offset="0x38">sound.043</rom>
+			<rom type="file" offset="0x39">sound.044</rom>
+			<rom type="file" offset="0x3a">sound.045</rom>
+			<rom type="file" offset="0x3b">sound.046</rom>
+			<rom type="file" offset="0x3c">sound.047</rom>
+			<rom type="file" offset="0x3d">sound.048</rom>
+			<rom type="file" offset="0x3e">sound.049</rom>
+			<rom type="file" offset="0x3f">sound.050</rom>
+			<rom type="file" offset="0x40">sound.051</rom>
+			<rom type="file" offset="0x41">sound.052</rom>
+			<rom type="file" offset="0x42">sound.054</rom>
+			<rom type="file" offset="0x43">sound.055</rom>
+			<rom type="file" offset="0x44">sound.056</rom>
+			<rom type="file" offset="0x45">sound.057</rom>
+			<rom type="file" offset="0x46">sound.058</rom>
+			<rom type="file" offset="0x47">sound.059</rom>
+			<rom type="file" offset="0x48">sound.061</rom>
+			<rom type="file" offset="0x49">sound.062</rom>
+			<rom type="file" offset="0x4a">sound.064</rom>
+			<rom type="file" offset="0x4b">sound.065</rom>
+			<rom type="file" offset="0x4c">sound.066</rom>
+			<rom type="file" offset="0x4d">sound.067</rom>
+			<rom type="file" offset="0x4e">sound.070</rom>
+			<rom type="file" offset="0x4f">sound.072</rom>
+			<rom type="file" offset="0x50">sound.073</rom>
+			<rom type="file" offset="0x51">sound.074</rom>
+			<rom type="file" offset="0x52">sound.075</rom>
+			<rom type="file" offset="0x53">sound.076</rom>
+			<rom type="file" offset="0x54">sound.077</rom>
+			<rom type="file" offset="0x55">sound.078</rom>
+			<rom type="file" offset="0x56">sound.079</rom>
+			<rom type="file" offset="0x57">sound.080</rom>
+			<rom type="file" offset="0x58">sound.081</rom>
+			<rom type="file" offset="0x59">sound.082</rom>
+			<rom type="file" offset="0x5a">sound.083</rom>
+			<rom type="file" offset="0x5b">sound.084</rom>
+			<rom type="file" offset="0x5c">sound.085</rom>
+			<rom type="file" offset="0x5d">sound.086</rom>
+			<rom type="file" offset="0x5e">sound.087</rom>
+			<rom type="file" offset="0x5f">sound.088</rom>
+			<rom type="file" offset="0x60">sound.090</rom>
+			<rom type="file" offset="0x61">sound.092</rom>
+			<rom type="file" offset="0x62">sound.093</rom>
+			<rom type="file" offset="0x63">sound.096</rom>
+			<rom type="file" offset="0x64">sound.097</rom>
+			<rom type="file" offset="0x65">sound.098</rom>
+			<rom type="file" offset="0x66">sound.099</rom>
+			<rom type="shell" offset="0">sciv_98</rom>
+		</romlist>
+		<titlelist>
+			<title code="0x10">sound.001 : </title>
+			<title code="0x11">sound.002 : </title>
+			<title code="0x12">sound.003 : </title>
+			<title code="0x13">sound.004 : </title>
+			<title code="0x14">sound.005 : </title>
+			<title code="0x15">sound.006 : </title>
+			<title code="0x16">sound.007 : </title>
+			<title code="0x17">sound.008 : </title>
+			<title code="0x18">sound.009 : </title>
+			<title code="0x19">sound.010 : </title>
+			<title code="0x1a">sound.011 : </title>
+			<title code="0x1b">sound.012 : </title>
+			<title code="0x1c">sound.013 : </title>
+			<title code="0x1d">sound.014 : </title>
+			<title code="0x1e">sound.015 : </title>
+			<title code="0x1f">sound.017 : </title>
+			<title code="0x20">sound.018 : </title>
+			<title code="0x21">sound.020 : </title>
+			<title code="0x22">sound.021 : </title>
+			<title code="0x23">sound.022 : </title>
+			<title code="0x24">sound.023 : </title>
+			<title code="0x25">sound.024 : </title>
+			<title code="0x26">sound.025 : </title>
+			<title code="0x27">sound.026 : </title>
+			<title code="0x28">sound.027 : </title>
+			<title code="0x29">sound.028 : </title>
+			<title code="0x2a">sound.029 : </title>
+			<title code="0x2b">sound.030 : </title>
+			<title code="0x2c">sound.031 : </title>
+			<title code="0x2d">sound.032 : </title>
+			<title code="0x2e">sound.033 : </title>
+			<title code="0x2f">sound.034 : </title>
+			<title code="0x30">sound.035 : </title>
+			<title code="0x31">sound.036 : </title>
+			<title code="0x32">sound.037 : </title>
+			<title code="0x33">sound.038 : </title>
+			<title code="0x34">sound.039 : </title>
+			<title code="0x35">sound.040 : </title>
+			<title code="0x36">sound.041 : </title>
+			<title code="0x37">sound.042 : </title>
+			<title code="0x38">sound.043 : </title>
+			<title code="0x39">sound.044 : </title>
+			<title code="0x3a">sound.045 : </title>
+			<title code="0x3b">sound.046 : </title>
+			<title code="0x3c">sound.047 : </title>
+			<title code="0x3d">sound.048 : </title>
+			<title code="0x3e">sound.049 : </title>
+			<title code="0x3f">sound.050 : </title>
+			<title code="0x40">sound.051 : </title>
+			<title code="0x41">sound.052 : </title>
+			<title code="0x42">sound.054 : </title>
+			<title code="0x43">sound.055 : </title>
+			<title code="0x44">sound.056 : </title>
+			<title code="0x45">sound.057 : </title>
+			<title code="0x46">sound.058 : </title>
+			<title code="0x47">sound.059 : </title>
+			<title code="0x48">sound.061 : </title>
+			<title code="0x49">sound.062 : </title>
+			<title code="0x4a">sound.064 : </title>
+			<title code="0x4b">sound.065 : </title>
+			<title code="0x4c">sound.066 : </title>
+			<title code="0x4d">sound.067 : </title>
+			<title code="0x4e">sound.070 : </title>
+			<title code="0x4f">sound.072 : </title>
+			<title code="0x50">sound.073 : </title>
+			<title code="0x51">sound.074 : </title>
+			<title code="0x52">sound.075 : </title>
+			<title code="0x53">sound.076 : </title>
+			<title code="0x54">sound.077 : </title>
+			<title code="0x55">sound.078 : </title>
+			<title code="0x56">sound.079 : </title>
+			<title code="0x57">sound.080 : </title>
+			<title code="0x58">sound.081 : </title>
+			<title code="0x59">sound.082 : </title>
+			<title code="0x5a">sound.083 : </title>
+			<title code="0x5b">sound.084 : </title>
+			<title code="0x5c">sound.085 : </title>
+			<title code="0x5d">sound.086 : </title>
+			<title code="0x5e">sound.087 : </title>
+			<title code="0x5f">sound.088 : </title>
+			<title code="0x60">sound.090 : </title>
+			<title code="0x61">sound.092 : </title>
+			<title code="0x62">sound.093 : </title>
+			<title code="0x63">sound.096 : </title>
+			<title code="0x64">sound.097 : </title>
+			<title code="0x65">sound.098 : </title>
+			<title code="0x66">sound.099 : </title>
+		</titlelist>
+	</game>
+	<game>
+		<name>[PC-9801] Quest for Glory(OPN)</name>
+		<driver type="opn">pc98dos</driver>
+		<driveralias type="NEC PC-9801">Sierra On-Line</driveralias>
+		<options>
+			<option name="clockmul" value="8"/>
+		</options>
+		<romlist archive="qfg_98">
+			<rom type="file" offset="-1">sciv_98.com</rom>
+			<rom type="file" offset="0x08">9801FM.DRV</rom>
+			<rom type="file" offset="0x09">Patch.002</rom>
+			<rom type="file" offset="0x10">sound.001</rom>
+			<rom type="file" offset="0x11">sound.002</rom>
+			<rom type="file" offset="0x12">sound.003</rom>
+			<rom type="file" offset="0x13">sound.004</rom>
+			<rom type="file" offset="0x14">sound.005</rom>
+			<rom type="file" offset="0x15">sound.006</rom>
+			<rom type="file" offset="0x16">sound.007</rom>
+			<rom type="file" offset="0x17">sound.008</rom>
+			<rom type="file" offset="0x18">sound.009</rom>
+			<rom type="file" offset="0x19">sound.010</rom>
+			<rom type="file" offset="0x1a">sound.011</rom>
+			<rom type="file" offset="0x1b">sound.012</rom>
+			<rom type="file" offset="0x1c">sound.013</rom>
+			<rom type="file" offset="0x1d">sound.014</rom>
+			<rom type="file" offset="0x1e">sound.015</rom>
+			<rom type="file" offset="0x1f">sound.017</rom>
+			<rom type="file" offset="0x20">sound.018</rom>
+			<rom type="file" offset="0x21">sound.020</rom>
+			<rom type="file" offset="0x22">sound.021</rom>
+			<rom type="file" offset="0x23">sound.022</rom>
+			<rom type="file" offset="0x24">sound.023</rom>
+			<rom type="file" offset="0x25">sound.024</rom>
+			<rom type="file" offset="0x26">sound.025</rom>
+			<rom type="file" offset="0x27">sound.026</rom>
+			<rom type="file" offset="0x28">sound.027</rom>
+			<rom type="file" offset="0x29">sound.028</rom>
+			<rom type="file" offset="0x2a">sound.029</rom>
+			<rom type="file" offset="0x2b">sound.030</rom>
+			<rom type="file" offset="0x2c">sound.031</rom>
+			<rom type="file" offset="0x2d">sound.032</rom>
+			<rom type="file" offset="0x2e">sound.033</rom>
+			<rom type="file" offset="0x2f">sound.034</rom>
+			<rom type="file" offset="0x30">sound.035</rom>
+			<rom type="file" offset="0x31">sound.036</rom>
+			<rom type="file" offset="0x32">sound.037</rom>
+			<rom type="file" offset="0x33">sound.038</rom>
+			<rom type="file" offset="0x34">sound.039</rom>
+			<rom type="file" offset="0x35">sound.040</rom>
+			<rom type="file" offset="0x36">sound.041</rom>
+			<rom type="file" offset="0x37">sound.042</rom>
+			<rom type="file" offset="0x38">sound.043</rom>
+			<rom type="file" offset="0x39">sound.044</rom>
+			<rom type="file" offset="0x3a">sound.045</rom>
+			<rom type="file" offset="0x3b">sound.046</rom>
+			<rom type="file" offset="0x3c">sound.047</rom>
+			<rom type="file" offset="0x3d">sound.048</rom>
+			<rom type="file" offset="0x3e">sound.049</rom>
+			<rom type="file" offset="0x3f">sound.050</rom>
+			<rom type="file" offset="0x40">sound.051</rom>
+			<rom type="file" offset="0x41">sound.052</rom>
+			<rom type="file" offset="0x42">sound.054</rom>
+			<rom type="file" offset="0x43">sound.055</rom>
+			<rom type="file" offset="0x44">sound.056</rom>
+			<rom type="file" offset="0x45">sound.057</rom>
+			<rom type="file" offset="0x46">sound.058</rom>
+			<rom type="file" offset="0x47">sound.059</rom>
+			<rom type="file" offset="0x48">sound.061</rom>
+			<rom type="file" offset="0x49">sound.062</rom>
+			<rom type="file" offset="0x4a">sound.064</rom>
+			<rom type="file" offset="0x4b">sound.065</rom>
+			<rom type="file" offset="0x4c">sound.066</rom>
+			<rom type="file" offset="0x4d">sound.067</rom>
+			<rom type="file" offset="0x4e">sound.070</rom>
+			<rom type="file" offset="0x4f">sound.072</rom>
+			<rom type="file" offset="0x50">sound.073</rom>
+			<rom type="file" offset="0x51">sound.074</rom>
+			<rom type="file" offset="0x52">sound.075</rom>
+			<rom type="file" offset="0x53">sound.076</rom>
+			<rom type="file" offset="0x54">sound.077</rom>
+			<rom type="file" offset="0x55">sound.078</rom>
+			<rom type="file" offset="0x56">sound.079</rom>
+			<rom type="file" offset="0x57">sound.080</rom>
+			<rom type="file" offset="0x58">sound.081</rom>
+			<rom type="file" offset="0x59">sound.082</rom>
+			<rom type="file" offset="0x5a">sound.083</rom>
+			<rom type="file" offset="0x5b">sound.084</rom>
+			<rom type="file" offset="0x5c">sound.085</rom>
+			<rom type="file" offset="0x5d">sound.086</rom>
+			<rom type="file" offset="0x5e">sound.087</rom>
+			<rom type="file" offset="0x5f">sound.088</rom>
+			<rom type="file" offset="0x60">sound.090</rom>
+			<rom type="file" offset="0x61">sound.092</rom>
+			<rom type="file" offset="0x62">sound.093</rom>
+			<rom type="file" offset="0x63">sound.096</rom>
+			<rom type="file" offset="0x64">sound.097</rom>
+			<rom type="file" offset="0x65">sound.098</rom>
+			<rom type="file" offset="0x66">sound.099</rom>
+			<rom type="file" offset="0x67">sound.102</rom>
+			<rom type="file" offset="0x68">sound.103</rom>
+			<rom type="file" offset="0x69">sound.104</rom>
+			<rom type="file" offset="0x6a">sound.105</rom>
+			<rom type="file" offset="0x6b">sound.106</rom>
+			<rom type="file" offset="0x6c">sound.107</rom>
+			<rom type="file" offset="0x6d">sound.109</rom>
+			<rom type="file" offset="0x6e">sound.110</rom>
+			<rom type="file" offset="0x6f">sound.111</rom>
+			<rom type="file" offset="0x70">sound.114</rom>
+			<rom type="file" offset="0x71">sound.115</rom>
+			<rom type="file" offset="0x72">sound.117</rom>
+			<rom type="file" offset="0x73">sound.118</rom>
+			<rom type="file" offset="0x74">sound.124</rom>
+			<rom type="file" offset="0x75">sound.126</rom>
+			<rom type="file" offset="0x76">sound.127</rom>
+			<rom type="file" offset="0x77">sound.128</rom>
+			<rom type="file" offset="0x78">sound.129</rom>
+			<rom type="file" offset="0x79">sound.130</rom>
+			<rom type="file" offset="0x7a">sound.131</rom>
+			<rom type="file" offset="0x7b">sound.133</rom>
+			<rom type="file" offset="0x7c">sound.134</rom>
+			<rom type="file" offset="0x7d">sound.135</rom>
+			<rom type="file" offset="0x7e">sound.136</rom>
+			<rom type="file" offset="0x7f">sound.138</rom>
+			<rom type="file" offset="0x80">sound.139</rom>
+			<rom type="file" offset="0x81">sound.143</rom>
+			<rom type="file" offset="0x82">sound.144</rom>
+			<rom type="file" offset="0x83">sound.145</rom>
+			<rom type="file" offset="0x84">sound.146</rom>
+			<rom type="file" offset="0x85">sound.152</rom>
+			<rom type="file" offset="0x86">sound.155</rom>
+			<rom type="file" offset="0x87">sound.156</rom>
+			<rom type="file" offset="0x88">sound.157</rom>
+			<rom type="file" offset="0x89">sound.158</rom>
+			<rom type="file" offset="0x8a">sound.159</rom>
+			<rom type="file" offset="0x8b">sound.161</rom>
+			<rom type="file" offset="0x8c">sound.162</rom>
+			<rom type="file" offset="0x8d">sound.165</rom>
+			<rom type="file" offset="0x8e">sound.166</rom>
+			<rom type="file" offset="0x8f">sound.173</rom>
+			<rom type="file" offset="0x90">sound.174</rom>
+			<rom type="file" offset="0x91">sound.175</rom>
+			<rom type="file" offset="0x92">sound.178</rom>
+			<rom type="file" offset="0x93">sound.181</rom>
+			<rom type="file" offset="0x94">sound.183</rom>
+			<rom type="file" offset="0x95">sound.184</rom>
+			<rom type="file" offset="0x96">sound.185</rom>
+			<rom type="file" offset="0x97">sound.186</rom>
+			<rom type="file" offset="0x98">sound.187</rom>
+			<rom type="file" offset="0x99">sound.190</rom>
+			<rom type="file" offset="0x9a">sound.199</rom>
+			<rom type="file" offset="0x9c">sound.301</rom>
+			<rom type="shell" offset="0">sciv_98</rom>
+		</romlist>
+		<titlelist>
+			<title code="0x9c">sound.301 : </title>
+			<title code="0x67">sound.102 : </title>
+			<title code="0x68">sound.103 : </title>
+			<title code="0x69">sound.104 : </title>
+			<title code="0x6a">sound.105 : </title>
+			<title code="0x6b">sound.106 : </title>
+			<title code="0x6c">sound.107 : </title>
+			<title code="0x17">sound.008 : </title>
+			<title code="0x6d">sound.109 : </title>
+			<title code="0x6e">sound.110 : </title>
+			<title code="0x6f">sound.111 : </title>
+			<title code="0x1b">sound.012 : </title>
+			<title code="0x1c">sound.013 : </title>
+			<title code="0x70">sound.114 : </title>
+			<title code="0x71">sound.115 : </title>
+			<title code="0x72">sound.117 : </title>
+			<title code="0x73">sound.118 : </title>
+			<title code="0x21">sound.020 : </title>
+			<title code="0x22">sound.021 : </title>
+			<title code="0x23">sound.022 : </title>
+			<title code="0x24">sound.023 : </title>
+			<title code="0x74">sound.124 : </title>
+			<title code="0x26">sound.025 : </title>
+			<title code="0x75">sound.126 : </title>
+			<title code="0x76">sound.127 : </title>
+			<title code="0x77">sound.128 : </title>
+			<title code="0x78">sound.129 : </title>
+			<title code="0x79">sound.130 : </title>
+			<title code="0x7a">sound.131 : </title>
+			<title code="0x2d">sound.032 : </title>
+			<title code="0x7b">sound.133 : </title>
+			<title code="0x7c">sound.134 : </title>
+			<title code="0x7d">sound.135 : </title>
+			<title code="0x7e">sound.136 : </title>
+			<title code="0x32">sound.037 : </title>
+			<title code="0x7f">sound.138 : </title>
+			<title code="0x80">sound.139 : </title>
+			<title code="0x35">sound.040 : </title>
+			<title code="0x36">sound.041 : </title>
+			<title code="0x37">sound.042 : </title>
+			<title code="0x81">sound.143 : </title>
+			<title code="0x82">sound.144 : </title>
+			<title code="0x83">sound.145 : </title>
+			<title code="0x84">sound.146 : </title>
+			<title code="0x3b">sound.046 : </title>
+			<title code="0x3c">sound.047 : </title>
+			<title code="0x3d">sound.048 : </title>
+			<title code="0x3e">sound.049 : </title>
+			<title code="0x3f">sound.050 : </title>
+			<title code="0x40">sound.051 : </title>
+			<title code="0x85">sound.152 : </title>
+			<title code="0x42">sound.054 : </title>
+			<title code="0x86">sound.155 : </title>
+			<title code="0x87">sound.156 : </title>
+			<title code="0x88">sound.157 : </title>
+			<title code="0x89">sound.158 : </title>
+			<title code="0x8a">sound.159 : </title>
+			<title code="0x8b">sound.161 : </title>
+			<title code="0x8c">sound.162 : </title>
+			<title code="0x4a">sound.064 : </title>
+			<title code="0x8d">sound.165 : </title>
+			<title code="0x8e">sound.166 : </title>
+			<title code="0x4d">sound.067 : </title>
+			<title code="0x4e">sound.070 : </title>
+			<title code="0x4f">sound.072 : </title>
+			<title code="0x8f">sound.173 : </title>
+			<title code="0x90">sound.174 : </title>
+			<title code="0x91">sound.175 : </title>
+			<title code="0x53">sound.076 : </title>
+			<title code="0x54">sound.077 : </title>
+			<title code="0x92">sound.178 : </title>
+			<title code="0x56">sound.079 : </title>
+			<title code="0x57">sound.080 : </title>
+			<title code="0x93">sound.181 : </title>
+			<title code="0x59">sound.082 : </title>
+			<title code="0x94">sound.183 : </title>
+			<title code="0x95">sound.184 : </title>
+			<title code="0x96">sound.185 : </title>
+			<title code="0x97">sound.186 : </title>
+			<title code="0x98">sound.187 : </title>
+			<title code="0x5f">sound.088 : </title>
+			<title code="0x99">sound.190 : </title>
+			<title code="0x61">sound.092 : </title>
+			<title code="0x62">sound.093 : </title>
+			<title code="0x63">sound.096 : </title>
+			<title code="0x64">sound.097 : </title>
+			<title code="0x65">sound.098 : </title>
+			<title code="0x9a">sound.199 : </title>
+		</titlelist>
+	</game>
+	<game>
+		<name>[PC-9801] Quest for Glory(Sound Orchestra)</name>
+		<driver type="soundorchestra">pc98dos</driver>
+		<driveralias type="NEC PC-9801">Sierra On-Line</driveralias>
+		<options>
+			<option name="clockmul" value="8"/>
+		</options>
+		<romlist archive="qfg_98">
+			<rom type="file" offset="-1">sciv_98.com</rom>
+			<rom type="file" offset="0x08">9801ORCH.DRV</rom>
+			<rom type="file" offset="0x09">Patch.003</rom>
+			<rom type="file" offset="0x10">sound.001</rom>
+			<rom type="file" offset="0x11">sound.002</rom>
+			<rom type="file" offset="0x12">sound.003</rom>
+			<rom type="file" offset="0x13">sound.004</rom>
+			<rom type="file" offset="0x14">sound.005</rom>
+			<rom type="file" offset="0x15">sound.006</rom>
+			<rom type="file" offset="0x16">sound.007</rom>
+			<rom type="file" offset="0x17">sound.008</rom>
+			<rom type="file" offset="0x18">sound.009</rom>
+			<rom type="file" offset="0x19">sound.010</rom>
+			<rom type="file" offset="0x1a">sound.011</rom>
+			<rom type="file" offset="0x1b">sound.012</rom>
+			<rom type="file" offset="0x1c">sound.013</rom>
+			<rom type="file" offset="0x1d">sound.014</rom>
+			<rom type="file" offset="0x1e">sound.015</rom>
+			<rom type="file" offset="0x1f">sound.017</rom>
+			<rom type="file" offset="0x20">sound.018</rom>
+			<rom type="file" offset="0x21">sound.020</rom>
+			<rom type="file" offset="0x22">sound.021</rom>
+			<rom type="file" offset="0x23">sound.022</rom>
+			<rom type="file" offset="0x24">sound.023</rom>
+			<rom type="file" offset="0x25">sound.024</rom>
+			<rom type="file" offset="0x26">sound.025</rom>
+			<rom type="file" offset="0x27">sound.026</rom>
+			<rom type="file" offset="0x28">sound.027</rom>
+			<rom type="file" offset="0x29">sound.028</rom>
+			<rom type="file" offset="0x2a">sound.029</rom>
+			<rom type="file" offset="0x2b">sound.030</rom>
+			<rom type="file" offset="0x2c">sound.031</rom>
+			<rom type="file" offset="0x2d">sound.032</rom>
+			<rom type="file" offset="0x2e">sound.033</rom>
+			<rom type="file" offset="0x2f">sound.034</rom>
+			<rom type="file" offset="0x30">sound.035</rom>
+			<rom type="file" offset="0x31">sound.036</rom>
+			<rom type="file" offset="0x32">sound.037</rom>
+			<rom type="file" offset="0x33">sound.038</rom>
+			<rom type="file" offset="0x34">sound.039</rom>
+			<rom type="file" offset="0x35">sound.040</rom>
+			<rom type="file" offset="0x36">sound.041</rom>
+			<rom type="file" offset="0x37">sound.042</rom>
+			<rom type="file" offset="0x38">sound.043</rom>
+			<rom type="file" offset="0x39">sound.044</rom>
+			<rom type="file" offset="0x3a">sound.045</rom>
+			<rom type="file" offset="0x3b">sound.046</rom>
+			<rom type="file" offset="0x3c">sound.047</rom>
+			<rom type="file" offset="0x3d">sound.048</rom>
+			<rom type="file" offset="0x3e">sound.049</rom>
+			<rom type="file" offset="0x3f">sound.050</rom>
+			<rom type="file" offset="0x40">sound.051</rom>
+			<rom type="file" offset="0x41">sound.052</rom>
+			<rom type="file" offset="0x42">sound.054</rom>
+			<rom type="file" offset="0x43">sound.055</rom>
+			<rom type="file" offset="0x44">sound.056</rom>
+			<rom type="file" offset="0x45">sound.057</rom>
+			<rom type="file" offset="0x46">sound.058</rom>
+			<rom type="file" offset="0x47">sound.059</rom>
+			<rom type="file" offset="0x48">sound.061</rom>
+			<rom type="file" offset="0x49">sound.062</rom>
+			<rom type="file" offset="0x4a">sound.064</rom>
+			<rom type="file" offset="0x4b">sound.065</rom>
+			<rom type="file" offset="0x4c">sound.066</rom>
+			<rom type="file" offset="0x4d">sound.067</rom>
+			<rom type="file" offset="0x4e">sound.070</rom>
+			<rom type="file" offset="0x4f">sound.072</rom>
+			<rom type="file" offset="0x50">sound.073</rom>
+			<rom type="file" offset="0x51">sound.074</rom>
+			<rom type="file" offset="0x52">sound.075</rom>
+			<rom type="file" offset="0x53">sound.076</rom>
+			<rom type="file" offset="0x54">sound.077</rom>
+			<rom type="file" offset="0x55">sound.078</rom>
+			<rom type="file" offset="0x56">sound.079</rom>
+			<rom type="file" offset="0x57">sound.080</rom>
+			<rom type="file" offset="0x58">sound.081</rom>
+			<rom type="file" offset="0x59">sound.082</rom>
+			<rom type="file" offset="0x5a">sound.083</rom>
+			<rom type="file" offset="0x5b">sound.084</rom>
+			<rom type="file" offset="0x5c">sound.085</rom>
+			<rom type="file" offset="0x5d">sound.086</rom>
+			<rom type="file" offset="0x5e">sound.087</rom>
+			<rom type="file" offset="0x5f">sound.088</rom>
+			<rom type="file" offset="0x60">sound.090</rom>
+			<rom type="file" offset="0x61">sound.092</rom>
+			<rom type="file" offset="0x62">sound.093</rom>
+			<rom type="file" offset="0x63">sound.096</rom>
+			<rom type="file" offset="0x64">sound.097</rom>
+			<rom type="file" offset="0x65">sound.098</rom>
+			<rom type="file" offset="0x66">sound.099</rom>
+			<rom type="shell" offset="0">sciv_98</rom>
+		</romlist>
+		<titlelist>
+			<title code="0x10">sound.001 : </title>
+			<title code="0x11">sound.002 : </title>
+			<title code="0x12">sound.003 : </title>
+			<title code="0x13">sound.004 : </title>
+			<title code="0x14">sound.005 : </title>
+			<title code="0x15">sound.006 : </title>
+			<title code="0x16">sound.007 : </title>
+			<title code="0x17">sound.008 : </title>
+			<title code="0x18">sound.009 : </title>
+			<title code="0x19">sound.010 : </title>
+			<title code="0x1a">sound.011 : </title>
+			<title code="0x1b">sound.012 : </title>
+			<title code="0x1c">sound.013 : </title>
+			<title code="0x1d">sound.014 : </title>
+			<title code="0x1e">sound.015 : </title>
+			<title code="0x1f">sound.017 : </title>
+			<title code="0x20">sound.018 : </title>
+			<title code="0x21">sound.020 : </title>
+			<title code="0x22">sound.021 : </title>
+			<title code="0x23">sound.022 : </title>
+			<title code="0x24">sound.023 : </title>
+			<title code="0x25">sound.024 : </title>
+			<title code="0x26">sound.025 : </title>
+			<title code="0x27">sound.026 : </title>
+			<title code="0x28">sound.027 : </title>
+			<title code="0x29">sound.028 : </title>
+			<title code="0x2a">sound.029 : </title>
+			<title code="0x2b">sound.030 : </title>
+			<title code="0x2c">sound.031 : </title>
+			<title code="0x2d">sound.032 : </title>
+			<title code="0x2e">sound.033 : </title>
+			<title code="0x2f">sound.034 : </title>
+			<title code="0x30">sound.035 : </title>
+			<title code="0x31">sound.036 : </title>
+			<title code="0x32">sound.037 : </title>
+			<title code="0x33">sound.038 : </title>
+			<title code="0x34">sound.039 : </title>
+			<title code="0x35">sound.040 : </title>
+			<title code="0x36">sound.041 : </title>
+			<title code="0x37">sound.042 : </title>
+			<title code="0x38">sound.043 : </title>
+			<title code="0x39">sound.044 : </title>
+			<title code="0x3a">sound.045 : </title>
+			<title code="0x3b">sound.046 : </title>
+			<title code="0x3c">sound.047 : </title>
+			<title code="0x3d">sound.048 : </title>
+			<title code="0x3e">sound.049 : </title>
+			<title code="0x3f">sound.050 : </title>
+			<title code="0x40">sound.051 : </title>
+			<title code="0x41">sound.052 : </title>
+			<title code="0x42">sound.054 : </title>
+			<title code="0x43">sound.055 : </title>
+			<title code="0x44">sound.056 : </title>
+			<title code="0x45">sound.057 : </title>
+			<title code="0x46">sound.058 : </title>
+			<title code="0x47">sound.059 : </title>
+			<title code="0x48">sound.061 : </title>
+			<title code="0x49">sound.062 : </title>
+			<title code="0x4a">sound.064 : </title>
+			<title code="0x4b">sound.065 : </title>
+			<title code="0x4c">sound.066 : </title>
+			<title code="0x4d">sound.067 : </title>
+			<title code="0x4e">sound.070 : </title>
+			<title code="0x4f">sound.072 : </title>
+			<title code="0x50">sound.073 : </title>
+			<title code="0x51">sound.074 : </title>
+			<title code="0x52">sound.075 : </title>
+			<title code="0x53">sound.076 : </title>
+			<title code="0x54">sound.077 : </title>
+			<title code="0x55">sound.078 : </title>
+			<title code="0x56">sound.079 : </title>
+			<title code="0x57">sound.080 : </title>
+			<title code="0x58">sound.081 : </title>
+			<title code="0x59">sound.082 : </title>
+			<title code="0x5a">sound.083 : </title>
+			<title code="0x5b">sound.084 : </title>
+			<title code="0x5c">sound.085 : </title>
+			<title code="0x5d">sound.086 : </title>
+			<title code="0x5e">sound.087 : </title>
+			<title code="0x5f">sound.088 : </title>
+			<title code="0x60">sound.090 : </title>
+			<title code="0x61">sound.092 : </title>
+			<title code="0x62">sound.093 : </title>
+			<title code="0x63">sound.096 : </title>
+			<title code="0x64">sound.097 : </title>
+			<title code="0x65">sound.098 : </title>
+			<title code="0x66">sound.099 : </title>
+		</titlelist>
+	</game>
+	<game>
+		<name>[PC-9801] Quest for Glory(BEEP)</name>
+		<driver type="beep">pc98dos</driver>
+		<driveralias type="NEC PC-9801">Sierra On-Line</driveralias>
+		<options>
+			<option name="clockmul" value="8"/>
+		</options>
+		<romlist archive="qfg_98">
+			<rom type="file" offset="-1">sciv_98.com</rom>
+			<rom type="file" offset="0x08">9801STD.DRV</rom>
+			<rom type="file" offset="0x10">sound.001</rom>
+			<rom type="file" offset="0x11">sound.002</rom>
+			<rom type="file" offset="0x12">sound.003</rom>
+			<rom type="file" offset="0x13">sound.004</rom>
+			<rom type="file" offset="0x14">sound.005</rom>
+			<rom type="file" offset="0x15">sound.006</rom>
+			<rom type="file" offset="0x16">sound.007</rom>
+			<rom type="file" offset="0x17">sound.008</rom>
+			<rom type="file" offset="0x18">sound.009</rom>
+			<rom type="file" offset="0x19">sound.010</rom>
+			<rom type="file" offset="0x1a">sound.011</rom>
+			<rom type="file" offset="0x1b">sound.012</rom>
+			<rom type="file" offset="0x1c">sound.013</rom>
+			<rom type="file" offset="0x1d">sound.014</rom>
+			<rom type="file" offset="0x1e">sound.015</rom>
+			<rom type="file" offset="0x1f">sound.017</rom>
+			<rom type="file" offset="0x20">sound.018</rom>
+			<rom type="file" offset="0x21">sound.020</rom>
+			<rom type="file" offset="0x22">sound.021</rom>
+			<rom type="file" offset="0x23">sound.022</rom>
+			<rom type="file" offset="0x24">sound.023</rom>
+			<rom type="file" offset="0x25">sound.024</rom>
+			<rom type="file" offset="0x26">sound.025</rom>
+			<rom type="file" offset="0x27">sound.026</rom>
+			<rom type="file" offset="0x28">sound.027</rom>
+			<rom type="file" offset="0x29">sound.028</rom>
+			<rom type="file" offset="0x2a">sound.029</rom>
+			<rom type="file" offset="0x2b">sound.030</rom>
+			<rom type="file" offset="0x2c">sound.031</rom>
+			<rom type="file" offset="0x2d">sound.032</rom>
+			<rom type="file" offset="0x2e">sound.033</rom>
+			<rom type="file" offset="0x2f">sound.034</rom>
+			<rom type="file" offset="0x30">sound.035</rom>
+			<rom type="file" offset="0x31">sound.036</rom>
+			<rom type="file" offset="0x32">sound.037</rom>
+			<rom type="file" offset="0x33">sound.038</rom>
+			<rom type="file" offset="0x34">sound.039</rom>
+			<rom type="file" offset="0x35">sound.040</rom>
+			<rom type="file" offset="0x36">sound.041</rom>
+			<rom type="file" offset="0x37">sound.042</rom>
+			<rom type="file" offset="0x38">sound.043</rom>
+			<rom type="file" offset="0x39">sound.044</rom>
+			<rom type="file" offset="0x3a">sound.045</rom>
+			<rom type="file" offset="0x3b">sound.046</rom>
+			<rom type="file" offset="0x3c">sound.047</rom>
+			<rom type="file" offset="0x3d">sound.048</rom>
+			<rom type="file" offset="0x3e">sound.049</rom>
+			<rom type="file" offset="0x3f">sound.050</rom>
+			<rom type="file" offset="0x40">sound.051</rom>
+			<rom type="file" offset="0x41">sound.052</rom>
+			<rom type="file" offset="0x42">sound.054</rom>
+			<rom type="file" offset="0x43">sound.055</rom>
+			<rom type="file" offset="0x44">sound.056</rom>
+			<rom type="file" offset="0x45">sound.057</rom>
+			<rom type="file" offset="0x46">sound.058</rom>
+			<rom type="file" offset="0x47">sound.059</rom>
+			<rom type="file" offset="0x48">sound.061</rom>
+			<rom type="file" offset="0x49">sound.062</rom>
+			<rom type="file" offset="0x4a">sound.064</rom>
+			<rom type="file" offset="0x4b">sound.065</rom>
+			<rom type="file" offset="0x4c">sound.066</rom>
+			<rom type="file" offset="0x4d">sound.067</rom>
+			<rom type="file" offset="0x4e">sound.070</rom>
+			<rom type="file" offset="0x4f">sound.072</rom>
+			<rom type="file" offset="0x50">sound.073</rom>
+			<rom type="file" offset="0x51">sound.074</rom>
+			<rom type="file" offset="0x52">sound.075</rom>
+			<rom type="file" offset="0x53">sound.076</rom>
+			<rom type="file" offset="0x54">sound.077</rom>
+			<rom type="file" offset="0x55">sound.078</rom>
+			<rom type="file" offset="0x56">sound.079</rom>
+			<rom type="file" offset="0x57">sound.080</rom>
+			<rom type="file" offset="0x58">sound.081</rom>
+			<rom type="file" offset="0x59">sound.082</rom>
+			<rom type="file" offset="0x5a">sound.083</rom>
+			<rom type="file" offset="0x5b">sound.084</rom>
+			<rom type="file" offset="0x5c">sound.085</rom>
+			<rom type="file" offset="0x5d">sound.086</rom>
+			<rom type="file" offset="0x5e">sound.087</rom>
+			<rom type="file" offset="0x5f">sound.088</rom>
+			<rom type="file" offset="0x60">sound.090</rom>
+			<rom type="file" offset="0x61">sound.092</rom>
+			<rom type="file" offset="0x62">sound.093</rom>
+			<rom type="file" offset="0x63">sound.096</rom>
+			<rom type="file" offset="0x64">sound.097</rom>
+			<rom type="file" offset="0x65">sound.098</rom>
+			<rom type="file" offset="0x66">sound.099</rom>
+			<rom type="file" offset="0x67">sound.102</rom>
+			<rom type="file" offset="0x68">sound.103</rom>
+			<rom type="file" offset="0x69">sound.104</rom>
+			<rom type="file" offset="0x6a">sound.105</rom>
+			<rom type="file" offset="0x6b">sound.106</rom>
+			<rom type="file" offset="0x6c">sound.107</rom>
+			<rom type="file" offset="0x6d">sound.109</rom>
+			<rom type="file" offset="0x6e">sound.110</rom>
+			<rom type="file" offset="0x6f">sound.111</rom>
+			<rom type="file" offset="0x70">sound.114</rom>
+			<rom type="file" offset="0x71">sound.115</rom>
+			<rom type="file" offset="0x72">sound.117</rom>
+			<rom type="file" offset="0x73">sound.118</rom>
+			<rom type="file" offset="0x74">sound.124</rom>
+			<rom type="file" offset="0x75">sound.126</rom>
+			<rom type="file" offset="0x76">sound.127</rom>
+			<rom type="file" offset="0x77">sound.128</rom>
+			<rom type="file" offset="0x78">sound.129</rom>
+			<rom type="file" offset="0x79">sound.130</rom>
+			<rom type="file" offset="0x7a">sound.131</rom>
+			<rom type="file" offset="0x7b">sound.133</rom>
+			<rom type="file" offset="0x7c">sound.134</rom>
+			<rom type="file" offset="0x7d">sound.135</rom>
+			<rom type="file" offset="0x7e">sound.136</rom>
+			<rom type="file" offset="0x7f">sound.138</rom>
+			<rom type="file" offset="0x80">sound.139</rom>
+			<rom type="file" offset="0x81">sound.143</rom>
+			<rom type="file" offset="0x82">sound.144</rom>
+			<rom type="file" offset="0x83">sound.145</rom>
+			<rom type="file" offset="0x84">sound.146</rom>
+			<rom type="file" offset="0x85">sound.152</rom>
+			<rom type="file" offset="0x86">sound.155</rom>
+			<rom type="file" offset="0x87">sound.156</rom>
+			<rom type="file" offset="0x88">sound.157</rom>
+			<rom type="file" offset="0x89">sound.158</rom>
+			<rom type="file" offset="0x8a">sound.159</rom>
+			<rom type="file" offset="0x8b">sound.161</rom>
+			<rom type="file" offset="0x8c">sound.162</rom>
+			<rom type="file" offset="0x8d">sound.165</rom>
+			<rom type="file" offset="0x8e">sound.166</rom>
+			<rom type="file" offset="0x8f">sound.173</rom>
+			<rom type="file" offset="0x90">sound.174</rom>
+			<rom type="file" offset="0x91">sound.175</rom>
+			<rom type="file" offset="0x92">sound.178</rom>
+			<rom type="file" offset="0x93">sound.181</rom>
+			<rom type="file" offset="0x94">sound.183</rom>
+			<rom type="file" offset="0x95">sound.184</rom>
+			<rom type="file" offset="0x96">sound.185</rom>
+			<rom type="file" offset="0x97">sound.186</rom>
+			<rom type="file" offset="0x98">sound.187</rom>
+			<rom type="file" offset="0x99">sound.190</rom>
+			<rom type="file" offset="0x9a">sound.199</rom>
+			<rom type="file" offset="0x9b">sound.201</rom>
+			<rom type="shell" offset="0">sciv_98</rom>
+		</romlist>
+		<titlelist>
+			<title code="0x9b">sound.201 : </title>
+			<title code="0x67">sound.102 : </title>
+			<title code="0x68">sound.103 : </title>
+			<title code="0x69">sound.104 : </title>
+			<title code="0x6a">sound.105 : </title>
+			<title code="0x6b">sound.106 : </title>
+			<title code="0x6c">sound.107 : </title>
+			<title code="0x17">sound.008 : </title>
+			<title code="0x6d">sound.109 : </title>
+			<title code="0x6e">sound.110 : </title>
+			<title code="0x6f">sound.111 : </title>
+			<title code="0x1b">sound.012 : </title>
+			<title code="0x1c">sound.013 : </title>
+			<title code="0x70">sound.114 : </title>
+			<title code="0x71">sound.115 : </title>
+			<title code="0x72">sound.117 : </title>
+			<title code="0x73">sound.118 : </title>
+			<title code="0x21">sound.020 : </title>
+			<title code="0x22">sound.021 : </title>
+			<title code="0x23">sound.022 : </title>
+			<title code="0x24">sound.023 : </title>
+			<title code="0x74">sound.124 : </title>
+			<title code="0x26">sound.025 : </title>
+			<title code="0x75">sound.126 : </title>
+			<title code="0x76">sound.127 : </title>
+			<title code="0x77">sound.128 : </title>
+			<title code="0x78">sound.129 : </title>
+			<title code="0x79">sound.130 : </title>
+			<title code="0x7a">sound.131 : </title>
+			<title code="0x2d">sound.032 : </title>
+			<title code="0x7b">sound.133 : </title>
+			<title code="0x7c">sound.134 : </title>
+			<title code="0x7d">sound.135 : </title>
+			<title code="0x7e">sound.136 : </title>
+			<title code="0x32">sound.037 : </title>
+			<title code="0x7f">sound.138 : </title>
+			<title code="0x80">sound.139 : </title>
+			<title code="0x35">sound.040 : </title>
+			<title code="0x36">sound.041 : </title>
+			<title code="0x37">sound.042 : </title>
+			<title code="0x81">sound.143 : </title>
+			<title code="0x82">sound.144 : </title>
+			<title code="0x83">sound.145 : </title>
+			<title code="0x84">sound.146 : </title>
+			<title code="0x3c">sound.047 : </title>
+			<title code="0x3d">sound.048 : </title>
+			<title code="0x3e">sound.049 : </title>
+			<title code="0x3f">sound.050 : </title>
+			<title code="0x40">sound.051 : </title>
+			<title code="0x85">sound.152 : </title>
+			<title code="0x42">sound.054 : </title>
+			<title code="0x86">sound.155 : </title>
+			<title code="0x87">sound.156 : </title>
+			<title code="0x88">sound.157 : </title>
+			<title code="0x89">sound.158 : </title>
+			<title code="0x8a">sound.159 : </title>
+			<title code="0x8b">sound.161 : </title>
+			<title code="0x8c">sound.162 : </title>
+			<title code="0x4a">sound.064 : </title>
+			<title code="0x8d">sound.165 : </title>
+			<title code="0x8e">sound.166 : </title>
+			<title code="0x4d">sound.067 : </title>
+			<title code="0x4e">sound.070 : </title>
+			<title code="0x4f">sound.072 : </title>
+			<title code="0x8f">sound.173 : </title>
+			<title code="0x90">sound.174 : </title>
+			<title code="0x91">sound.175 : </title>
+			<title code="0x53">sound.076 : </title>
+			<title code="0x54">sound.077 : </title>
+			<title code="0x92">sound.178 : </title>
+			<title code="0x56">sound.079 : </title>
+			<title code="0x57">sound.080 : </title>
+			<title code="0x93">sound.181 : </title>
+			<title code="0x59">sound.082 : </title>
+			<title code="0x94">sound.183 : </title>
+			<title code="0x95">sound.184 : </title>
+			<title code="0x96">sound.185 : </title>
+			<title code="0x97">sound.186 : </title>
+			<title code="0x98">sound.187 : </title>
+			<title code="0x5f">sound.088 : </title>
+			<title code="0x99">sound.190 : </title>
+			<title code="0x61">sound.092 : </title>
+			<title code="0x62">sound.093 : </title>
+			<title code="0x63">sound.096 : </title>
+			<title code="0x64">sound.097 : </title>
+			<title code="0x65">sound.098 : </title>
+			<title code="0x9a">sound.199 : </title>
+		</titlelist>
+	</game>
+</gamelist>

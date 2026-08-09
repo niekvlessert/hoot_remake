@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="hoot.xsl"?>
+<!DOCTYPE gamelist [
+	<!ELEMENT gamelist (game|bind|childlists)*>
+	<!ATTLIST gamelist date CDATA #IMPLIED>
+	<!ELEMENT childlists (list)*>
+	<!ELEMENT list (#PCDATA)>
+	<!ELEMENT bind (exts,driver,options?)>
+	<!ELEMENT exts (ext)*>
+	<!ELEMENT ext (#PCDATA)>
+	<!ELEMENT game (name,driver,driveralias?,options?,romlist?,titlelist?)>
+	<!ELEMENT name (#PCDATA)>
+	<!ELEMENT driver (#PCDATA)>
+	<!ATTLIST driver type CDATA #IMPLIED>
+	<!ELEMENT driveralias (#PCDATA)>
+	<!ATTLIST driveralias type CDATA #IMPLIED>
+	<!ELEMENT options (option)*>
+	<!ELEMENT option EMPTY>
+	<!ATTLIST option name CDATA #REQUIRED
+					 value CDATA #REQUIRED>
+	<!ELEMENT romlist (rom)*>
+	<!ATTLIST romlist archive CDATA #IMPLIED>
+	<!ELEMENT rom (#PCDATA)>
+	<!ATTLIST rom type CDATA #REQUIRED
+				  offset CDATA #IMPLIED
+				  crc32 CDATA #IMPLIED>
+	<!ELEMENT titlelist (title|range)*>
+	<!ELEMENT title (#PCDATA)>
+	<!ATTLIST title code CDATA #REQUIRED
+					type CDATA #IMPLIED>
+	<!ELEMENT range (#PCDATA)>
+	<!ATTLIST range min CDATA #REQUIRED
+					max CDATA #REQUIRED
+					extcode CDATA #IMPLIED
+					start CDATA #IMPLIED>
+
+]>
+<gamelist date="2005/09/25">
+	<!-- //ABA 総合ビジネスアシスト -->
+	<game>
+		<name>[PC-9801] SPREAD</name>
+		<driver type="opn">pc98dos</driver>
+		<driveralias type="NEC PC-9801">ABA</driveralias>
+		<options>
+			<option name="clockmul" value="8"/>
+		</options>
+		<romlist archive="spread_98">
+			<rom type="file" offset="-1">nlp_hoot.com</rom>
+			<rom type="file" offset="-1">NL.COM</rom>
+			<rom type="file" offset="-1">TONE.DTA</rom>
+			<rom type="file" offset="0x10">MUS1.O</rom>
+			<rom type="file" offset="0x11">MUS2.O</rom>
+			<rom type="file" offset="0x12">MUS3.O</rom>
+			<rom type="file" offset="0x13">MUS4.O</rom>
+			<rom type="file" offset="0x14">MUS5.O</rom>
+			<rom type="shell" offset="0">nl</rom>
+			<rom type="shell" offset="0">nlp_hoot</rom>
+		</romlist>
+		<titlelist>
+			<title code="0x10">MUS1.O : </title>
+			<title code="0x11">MUS2.O : </title>
+			<title code="0x12">MUS3.O : </title>
+			<title code="0x13">MUS4.O : </title>
+			<title code="0x14">MUS5.O : </title>
+		</titlelist>
+	</game>
+</gamelist>

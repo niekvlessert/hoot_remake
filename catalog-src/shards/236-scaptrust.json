@@ -1,0 +1,2351 @@
+{
+  "format": "hoot-catalog-shard",
+  "version": 1,
+  "source_file": "xml/scaptrust.xml",
+  "date": "2005/09/25",
+  "comments": [
+    " //Scap Trust "
+  ],
+  "games": [
+    {
+      "title": "[PC-8801] GALL FORCE ETERNAL STORY 創世の序曲",
+      "driver": {
+        "name": "pc88",
+        "type": "opn",
+        "alias": "Scap Trust",
+        "platform": "NEC PC-8801"
+      },
+      "options": [
+        {
+          "name": "mdata_addr",
+          "value": "0xa000"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "PATCH",
+          "offset": "0x0000"
+        },
+        {
+          "type": "code",
+          "path": "A00",
+          "offset": "0x1000"
+        },
+        {
+          "type": "bgm",
+          "path": "A01",
+          "offset": "0x01"
+        },
+        {
+          "type": "bgm",
+          "path": "A03",
+          "offset": "0x02"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x04000001",
+          "title": "A01 : オープニング"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000000",
+          "title": "A00 : BGM1"
+        },
+        {
+          "kind": "title",
+          "code": "0x01000000",
+          "title": "A00 : BGM2"
+        },
+        {
+          "kind": "title",
+          "code": "0x02000000",
+          "title": "A00 : BGM3"
+        },
+        {
+          "kind": "title",
+          "code": "0x03000000",
+          "title": "A00 : BGM4"
+        },
+        {
+          "kind": "title",
+          "code": "0x05000002",
+          "title": "A03 : エンディング"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/scaptrust.xml",
+      "source_order": 3930,
+      "archive": "gallforc",
+      "id": "gallforc-opn"
+    },
+    {
+      "title": "[PC-8801] STAR/SHIP RENDEZVOUS(OPNA)",
+      "driver": {
+        "name": "pc88",
+        "type": "opna",
+        "alias": "Scap Trust",
+        "platform": "NEC PC-8801"
+      },
+      "options": [
+        {
+          "name": "init_pc",
+          "value": "0xe000"
+        },
+        {
+          "name": "showfm3ex",
+          "value": "1"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "SUB88.COM",
+          "offset": "0x8000"
+        },
+        {
+          "type": "code",
+          "path": "PATCH",
+          "offset": "0xe000"
+        },
+        {
+          "type": "bgm",
+          "path": "MTIAM07.SND",
+          "offset": "0x00"
+        },
+        {
+          "type": "bgm",
+          "path": "MTYH04.SND",
+          "offset": "0x01"
+        },
+        {
+          "type": "bgm",
+          "path": "MTYH02.SND",
+          "offset": "0x02"
+        },
+        {
+          "type": "bgm",
+          "path": "MTIAM06.SND",
+          "offset": "0x03"
+        },
+        {
+          "type": "bgm",
+          "path": "MTYH05.SND",
+          "offset": "0x04"
+        },
+        {
+          "type": "bgm",
+          "path": "MTIAM02.SND",
+          "offset": "0x05"
+        },
+        {
+          "type": "bgm",
+          "path": "MTIAM05.SND",
+          "offset": "0x06"
+        },
+        {
+          "type": "bgm",
+          "path": "MTYH01.SND",
+          "offset": "0x07"
+        },
+        {
+          "type": "bgm",
+          "path": "MTIAM08.SND",
+          "offset": "0x08"
+        },
+        {
+          "type": "bgm",
+          "path": "MTYH03.SND",
+          "offset": "0x09"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x00000000",
+          "title": "MTIAM07 : Operation in Unsteady Space"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000001",
+          "title": "MTYH04  : The Art of Noise"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000002",
+          "title": "MTYH02  : Madness and Its Synergistic Effect"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000003",
+          "title": "MTIAM06 : MAZE TRAP!!"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000004",
+          "title": "MTYH05  : Bass が ブ・リ・バ・リ"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000005",
+          "title": "MTIAM02 : The Outsider"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000006",
+          "title": "MTIAM05 : Work of Digging at Midnight"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000007",
+          "title": "MTYH01  : Mysticism"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000008",
+          "title": "MTIAM08 : The Sunset for The Sunrise"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000009",
+          "title": "MTYH03  : Don't Forget Your Wonderful Memory"
+        },
+        {
+          "kind": "title",
+          "code": "0x120000ff",
+          "title": "EFFECT #12"
+        },
+        {
+          "kind": "title",
+          "code": "0x130000ff",
+          "title": "EFFECT #13"
+        },
+        {
+          "kind": "title",
+          "code": "0x140000ff",
+          "title": "EFFECT #14"
+        },
+        {
+          "kind": "title",
+          "code": "0x150000ff",
+          "title": "EFFECT #15"
+        },
+        {
+          "kind": "title",
+          "code": "0x160000ff",
+          "title": "EFFECT #16"
+        },
+        {
+          "kind": "title",
+          "code": "0x170000ff",
+          "title": "EFFECT #17"
+        },
+        {
+          "kind": "title",
+          "code": "0x180000ff",
+          "title": "EFFECT #18"
+        },
+        {
+          "kind": "title",
+          "code": "0x190000ff",
+          "title": "EFFECT #19"
+        },
+        {
+          "kind": "title",
+          "code": "0x1a0000ff",
+          "title": "EFFECT #1A"
+        },
+        {
+          "kind": "title",
+          "code": "0x1b0000ff",
+          "title": "EFFECT #1B"
+        },
+        {
+          "kind": "title",
+          "code": "0x1c0000ff",
+          "title": "EFFECT #1C"
+        },
+        {
+          "kind": "title",
+          "code": "0x1d0000ff",
+          "title": "EFFECT #1D"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/scaptrust.xml",
+      "source_order": 3931,
+      "archive": "starship",
+      "id": "starship-opna"
+    },
+    {
+      "title": "[PC-8801] STAR/SHIP RENDEZVOUS(OPN)",
+      "driver": {
+        "name": "pc88",
+        "type": "opn",
+        "alias": "Scap Trust",
+        "platform": "NEC PC-8801"
+      },
+      "options": [
+        {
+          "name": "init_pc",
+          "value": "0xe000"
+        },
+        {
+          "name": "showfm3ex",
+          "value": "1"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "SUB88.COM",
+          "offset": "0x8000"
+        },
+        {
+          "type": "code",
+          "path": "PATCH",
+          "offset": "0xe000"
+        },
+        {
+          "type": "bgm",
+          "path": "MTIAM07.SND",
+          "offset": "0x00"
+        },
+        {
+          "type": "bgm",
+          "path": "MTYH04.SND",
+          "offset": "0x01"
+        },
+        {
+          "type": "bgm",
+          "path": "MTYH02.SND",
+          "offset": "0x02"
+        },
+        {
+          "type": "bgm",
+          "path": "MTIAM06.SND",
+          "offset": "0x03"
+        },
+        {
+          "type": "bgm",
+          "path": "MTYH05.SND",
+          "offset": "0x04"
+        },
+        {
+          "type": "bgm",
+          "path": "MTIAM02.SND",
+          "offset": "0x05"
+        },
+        {
+          "type": "bgm",
+          "path": "MTIAM05.SND",
+          "offset": "0x06"
+        },
+        {
+          "type": "bgm",
+          "path": "MTYH01.SND",
+          "offset": "0x07"
+        },
+        {
+          "type": "bgm",
+          "path": "MTIAM08.SND",
+          "offset": "0x08"
+        },
+        {
+          "type": "bgm",
+          "path": "MTYH03.SND",
+          "offset": "0x09"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x00000000",
+          "title": "MTIAM07 : Operation in Unsteady Space"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000001",
+          "title": "MTYH04  : The Art of Noise"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000002",
+          "title": "MTYH02  : Madness and Its Synergistic Effect"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000003",
+          "title": "MTIAM06 : MAZE TRAP!!"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000004",
+          "title": "MTYH05  : Bass が ブ・リ・バ・リ"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000005",
+          "title": "MTIAM02 : The Outsider"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000006",
+          "title": "MTIAM05 : Work of Digging at Midnight"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000007",
+          "title": "MTYH01  : Mysticism"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000008",
+          "title": "MTIAM08 : The Sunset for The Sunrise"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000009",
+          "title": "MTYH03  : Don't Forget Your Wonderful Memory"
+        },
+        {
+          "kind": "title",
+          "code": "0x120000ff",
+          "title": "EFFECT #12"
+        },
+        {
+          "kind": "title",
+          "code": "0x130000ff",
+          "title": "EFFECT #13"
+        },
+        {
+          "kind": "title",
+          "code": "0x140000ff",
+          "title": "EFFECT #14"
+        },
+        {
+          "kind": "title",
+          "code": "0x150000ff",
+          "title": "EFFECT #15"
+        },
+        {
+          "kind": "title",
+          "code": "0x160000ff",
+          "title": "EFFECT #16"
+        },
+        {
+          "kind": "title",
+          "code": "0x170000ff",
+          "title": "EFFECT #17"
+        },
+        {
+          "kind": "title",
+          "code": "0x180000ff",
+          "title": "EFFECT #18"
+        },
+        {
+          "kind": "title",
+          "code": "0x190000ff",
+          "title": "EFFECT #19"
+        },
+        {
+          "kind": "title",
+          "code": "0x1a0000ff",
+          "title": "EFFECT #1A"
+        },
+        {
+          "kind": "title",
+          "code": "0x1b0000ff",
+          "title": "EFFECT #1B"
+        },
+        {
+          "kind": "title",
+          "code": "0x1c0000ff",
+          "title": "EFFECT #1C"
+        },
+        {
+          "kind": "title",
+          "code": "0x1d0000ff",
+          "title": "EFFECT #1D"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/scaptrust.xml",
+      "source_order": 3932,
+      "archive": "starship",
+      "id": "starship-opn"
+    },
+    {
+      "title": "[PC-8801] 紫禁城",
+      "driver": {
+        "name": "pc88",
+        "type": "opn",
+        "alias": "Scap Trust",
+        "platform": "NEC PC-8801"
+      },
+      "options": [
+        {
+          "name": "mdata_addr",
+          "value": "0xb000"
+        },
+        {
+          "name": "init_pc",
+          "value": "0xf000"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "PROG",
+          "offset": "0x0100"
+        },
+        {
+          "type": "code",
+          "path": "PATCH",
+          "offset": "0xf000"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS00",
+          "offset": "0x00"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS01",
+          "offset": "0x01"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS02",
+          "offset": "0x02"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS03",
+          "offset": "0x03"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS04",
+          "offset": "0x04"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS05",
+          "offset": "0x05"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS06",
+          "offset": "0x06"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS07",
+          "offset": "0x07"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x00000000",
+          "title": "MUSIC 00"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000001",
+          "title": "MUSIC 01"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000002",
+          "title": "MUSIC 02"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000003",
+          "title": "MUSIC 03"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000004",
+          "title": "MUSIC 04"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000005",
+          "title": "MUSIC 05"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000006",
+          "title": "MUSIC 06"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000007",
+          "title": "MUSIC 07"
+        },
+        {
+          "kind": "title",
+          "code": "0x000000ff",
+          "title": "EFFECT 00"
+        },
+        {
+          "kind": "title",
+          "code": "0x010000ff",
+          "title": "EFFECT 01"
+        },
+        {
+          "kind": "title",
+          "code": "0x020000ff",
+          "title": "EFFECT 02"
+        },
+        {
+          "kind": "title",
+          "code": "0x030000ff",
+          "title": "EFFECT 03"
+        },
+        {
+          "kind": "title",
+          "code": "0x040000ff",
+          "title": "EFFECT 04"
+        },
+        {
+          "kind": "title",
+          "code": "0x050000ff",
+          "title": "EFFECT 05"
+        },
+        {
+          "kind": "title",
+          "code": "0x060000ff",
+          "title": "EFFECT 06"
+        },
+        {
+          "kind": "title",
+          "code": "0x070000ff",
+          "title": "EFFECT 07"
+        },
+        {
+          "kind": "title",
+          "code": "0x0b0000ff",
+          "title": "EFFECT 0B"
+        },
+        {
+          "kind": "title",
+          "code": "0x0c0000ff",
+          "title": "EFFECT 0C"
+        },
+        {
+          "kind": "title",
+          "code": "0x0d0000ff",
+          "title": "EFFECT 0D"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/scaptrust.xml",
+      "source_order": 3933,
+      "archive": "shikinjo",
+      "id": "shikinjo-opn"
+    },
+    {
+      "title": "[PC-9801] STAR/SHIP RENDEZVOUS",
+      "driver": {
+        "name": "pc98vx",
+        "type": "opn",
+        "alias": "Scap Trust",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "bootcs",
+          "value": "0x0060"
+        },
+        {
+          "name": "bootip",
+          "value": "0x0000"
+        },
+        {
+          "name": "funcvect",
+          "value": "0x7f"
+        },
+        {
+          "name": "adressing",
+          "value": "0"
+        },
+        {
+          "name": "dataaddr",
+          "value": "0xb145"
+        },
+        {
+          "name": "filesize",
+          "value": "4096"
+        },
+        {
+          "name": "datamax",
+          "value": "11"
+        },
+        {
+          "name": "showfm3ex",
+          "value": "1"
+        },
+        {
+          "name": "ssg_mix",
+          "value": "-28"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "SPX",
+          "offset": "0x600"
+        },
+        {
+          "type": "code",
+          "path": "stars_98.bin",
+          "offset": "0x600"
+        },
+        {
+          "type": "binary",
+          "path": "08",
+          "offset": "0xa3fee"
+        },
+        {
+          "type": "bgm",
+          "path": "MTIAM02.SND",
+          "offset": "1"
+        },
+        {
+          "type": "bgm",
+          "path": "MTIAM05.SND",
+          "offset": "2"
+        },
+        {
+          "type": "bgm",
+          "path": "MTIAM06.SND",
+          "offset": "3"
+        },
+        {
+          "type": "bgm",
+          "path": "MTIAM07.SND",
+          "offset": "4"
+        },
+        {
+          "type": "bgm",
+          "path": "MTIAM08.SND",
+          "offset": "5"
+        },
+        {
+          "type": "bgm",
+          "path": "MTYH01.SND",
+          "offset": "6"
+        },
+        {
+          "type": "bgm",
+          "path": "MTYH02.SND",
+          "offset": "7"
+        },
+        {
+          "type": "bgm",
+          "path": "MTYH03.SND",
+          "offset": "8"
+        },
+        {
+          "type": "bgm",
+          "path": "MTYH04.SND",
+          "offset": "9"
+        },
+        {
+          "type": "bgm",
+          "path": "MTYH05.SND",
+          "offset": "10"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "4",
+          "title": "MTIAM07.SND : Operation in Unsteady Space"
+        },
+        {
+          "kind": "title",
+          "code": "9",
+          "title": "MTYH04.SND  : The Art of Noise"
+        },
+        {
+          "kind": "title",
+          "code": "7",
+          "title": "MTYH02.SND  : Madness and Its Synergistic Effect"
+        },
+        {
+          "kind": "title",
+          "code": "3",
+          "title": "MTIAM06.SND : MAZE TRAP!!"
+        },
+        {
+          "kind": "title",
+          "code": "10",
+          "title": "MTYH05.SND  : Bass が ブ・リ・バ・リ"
+        },
+        {
+          "kind": "title",
+          "code": "1",
+          "title": "MTIAM02.SND : The Outsider"
+        },
+        {
+          "kind": "title",
+          "code": "2",
+          "title": "MTIAM05.SND : Work of Digging at Midnight"
+        },
+        {
+          "kind": "title",
+          "code": "6",
+          "title": "MTYH01.SND  : Mysticism"
+        },
+        {
+          "kind": "title",
+          "code": "5",
+          "title": "MTIAM08.SND : The Sunset for The Sunrise"
+        },
+        {
+          "kind": "title",
+          "code": "8",
+          "title": "MTYH03.SND  : Don't Forget Your Wonderful Memory"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/scaptrust.xml",
+      "source_order": 3934,
+      "archive": "starship_98",
+      "id": "starship-98-opn"
+    },
+    {
+      "title": "[PC-9801] 紫禁城",
+      "driver": {
+        "name": "pc98dos",
+        "type": "opn",
+        "alias": "Scap Trust",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "clockmul",
+          "value": "8"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "mmd2.com",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MMD2.SYS",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "SKM.YBV",
+          "offset": "0x08"
+        },
+        {
+          "type": "file",
+          "path": "SKF.YBF",
+          "offset": "0x09"
+        },
+        {
+          "type": "file",
+          "path": "SKF0.YBM",
+          "offset": "0x10"
+        },
+        {
+          "type": "file",
+          "path": "SKM0.YBM",
+          "offset": "0x11"
+        },
+        {
+          "type": "file",
+          "path": "SKM1.YBM",
+          "offset": "0x12"
+        },
+        {
+          "type": "file",
+          "path": "SKM10.YBM",
+          "offset": "0x13"
+        },
+        {
+          "type": "file",
+          "path": "SKM11.YBM",
+          "offset": "0x14"
+        },
+        {
+          "type": "file",
+          "path": "SKM12.YBM",
+          "offset": "0x15"
+        },
+        {
+          "type": "file",
+          "path": "SKM13.YBM",
+          "offset": "0x16"
+        },
+        {
+          "type": "file",
+          "path": "SKM14.YBM",
+          "offset": "0x17"
+        },
+        {
+          "type": "file",
+          "path": "SKM2.YBM",
+          "offset": "0x18"
+        },
+        {
+          "type": "file",
+          "path": "SKM3.YBM",
+          "offset": "0x19"
+        },
+        {
+          "type": "file",
+          "path": "SKM4.YBM",
+          "offset": "0x1a"
+        },
+        {
+          "type": "file",
+          "path": "SKM5.YBM",
+          "offset": "0x1b"
+        },
+        {
+          "type": "file",
+          "path": "SKM6.YBM",
+          "offset": "0x1c"
+        },
+        {
+          "type": "file",
+          "path": "SKM7.YBM",
+          "offset": "0x1d"
+        },
+        {
+          "type": "file",
+          "path": "SKM8.YBM",
+          "offset": "0x1e"
+        },
+        {
+          "type": "file",
+          "path": "SKM9.YBM",
+          "offset": "0x1f"
+        },
+        {
+          "type": "file",
+          "path": "SKM99.YBM",
+          "offset": "0x20"
+        },
+        {
+          "type": "device",
+          "path": "mmd2.sys 8000 1024",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "mmd2",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x080010",
+          "title": "SKF0.YBM  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x080011",
+          "title": "SKM0.YBM  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x080012",
+          "title": "SKM1.YBM  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x080018",
+          "title": "SKM2.YBM  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x080019",
+          "title": "SKM3.YBM  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x08001a",
+          "title": "SKM4.YBM  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x08001b",
+          "title": "SKM5.YBM  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x08001c",
+          "title": "SKM6.YBM  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x08001d",
+          "title": "SKM7.YBM  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x08001e",
+          "title": "SKM8.YBM  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x08001f",
+          "title": "SKM9.YBM  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x080013",
+          "title": "SKM10.YBM :"
+        },
+        {
+          "kind": "title",
+          "code": "0x080014",
+          "title": "SKM11.YBM :"
+        },
+        {
+          "kind": "title",
+          "code": "0x080015",
+          "title": "SKM12.YBM :"
+        },
+        {
+          "kind": "title",
+          "code": "0x080016",
+          "title": "SKM13.YBM :"
+        },
+        {
+          "kind": "title",
+          "code": "0x080017",
+          "title": "SKM14.YBM :"
+        },
+        {
+          "kind": "comment",
+          "text": "\n\t\t\t<title code=\"0x080020\">SKM99.YBM : [STOP]</title>\n\t\t\t  "
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/scaptrust.xml",
+      "source_order": 3935,
+      "archive": "shikinjo_98",
+      "id": "shikinjo-98-opn"
+    },
+    {
+      "title": "[X68000] 紫禁城",
+      "driver": {
+        "name": "x68k",
+        "type": "generic",
+        "alias": "Scap Trust",
+        "platform": "SHARP X68000"
+      },
+      "options": [
+        {
+          "name": "mfp",
+          "value": "0x01"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "shikin68snd.bin"
+        },
+        {
+          "type": "x",
+          "path": "SKJ.X",
+          "offset": "0x10000"
+        },
+        {
+          "type": "code",
+          "path": "TONE_0.VTD",
+          "offset": "0x50000"
+        },
+        {
+          "type": "code",
+          "path": "TONE_1.VTD",
+          "offset": "0x51000"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "01 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x04",
+          "title": "04 : 柳緑花紅"
+        },
+        {
+          "kind": "title",
+          "code": "0x05",
+          "title": "05 : 白夜の騎士"
+        },
+        {
+          "kind": "title",
+          "code": "0x06",
+          "title": "06 : 茜の空の忍者"
+        },
+        {
+          "kind": "title",
+          "code": "0x02",
+          "title": "02 : 銀河のロマンス"
+        },
+        {
+          "kind": "title",
+          "code": "0x03",
+          "title": "03 : 復得返自然"
+        },
+        {
+          "kind": "title",
+          "code": "0x07",
+          "title": "07 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x08",
+          "title": "08 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x09",
+          "title": "09 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x0a",
+          "title": "0A :"
+        },
+        {
+          "kind": "title",
+          "code": "0x0b",
+          "title": "0B :"
+        },
+        {
+          "kind": "title",
+          "code": "0x0c",
+          "title": "0C :"
+        },
+        {
+          "kind": "title",
+          "code": "0x0d",
+          "title": "0D :"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/scaptrust.xml",
+      "source_order": 3936,
+      "archive": "shikinjo68snd",
+      "id": "shikinjo68snd-generic"
+    },
+    {
+      "title": "[MSX] STAR/SHIP RENDEZVOUS(OPLL)",
+      "driver": {
+        "name": "msx",
+        "type": "generic",
+        "alias": "Scap Trust",
+        "platform": "MSX"
+      },
+      "options": [
+        {
+          "name": "mdata_addr",
+          "value": "0xba00"
+        },
+        {
+          "name": "mdata_size",
+          "value": "0x1900"
+        },
+        {
+          "name": "mfile_size",
+          "value": "0x1900"
+        },
+        {
+          "name": "init_pc",
+          "value": "0x400"
+        },
+        {
+          "name": "use_opll",
+          "value": "0x01"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "patch",
+          "offset": "0x0400"
+        },
+        {
+          "type": "code",
+          "path": "SOUND.COM",
+          "offset": "0x9400"
+        },
+        {
+          "type": "bgm",
+          "path": "MTIAM02.SND",
+          "offset": "0x00"
+        },
+        {
+          "type": "bgm",
+          "path": "MTIAM05.SND",
+          "offset": "0x01"
+        },
+        {
+          "type": "bgm",
+          "path": "MTIAM06.SND",
+          "offset": "0x02"
+        },
+        {
+          "type": "bgm",
+          "path": "MTIAM07.SND",
+          "offset": "0x03"
+        },
+        {
+          "type": "bgm",
+          "path": "MTIAM08.SND",
+          "offset": "0x04"
+        },
+        {
+          "type": "bgm",
+          "path": "MTYH01.SND",
+          "offset": "0x05"
+        },
+        {
+          "type": "bgm",
+          "path": "MTYH02.SND",
+          "offset": "0x06"
+        },
+        {
+          "type": "bgm",
+          "path": "MTYH03.SND",
+          "offset": "0x07"
+        },
+        {
+          "type": "bgm",
+          "path": "MTYH04.SND",
+          "offset": "0x08"
+        },
+        {
+          "type": "bgm",
+          "path": "MTYH05.SND",
+          "offset": "0x09"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x00",
+          "title": "MTIAM02.SND : Operation in Unsteady Space"
+        },
+        {
+          "kind": "comment",
+          "text": "\n\t\t\t<title code=\"0x03\">MTIAM07.SND : Operation in Unsteady Space</title>\n\t\t\t  "
+        },
+        {
+          "kind": "title",
+          "code": "0x08",
+          "title": "MTYH04.SND  : The Art of Noise"
+        },
+        {
+          "kind": "title",
+          "code": "0x06",
+          "title": "MTYH02.SND  : Madness and Its Synergistic Effect"
+        },
+        {
+          "kind": "title",
+          "code": "0x09",
+          "title": "MTYH05.SND  : MAZE TRAP!!"
+        },
+        {
+          "kind": "title",
+          "code": "0x02",
+          "title": "MTIAM06.SND : Bass が ブ・リ・バ・リ"
+        },
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "MTIAM05.SND : Work of Digging at Midnight"
+        },
+        {
+          "kind": "title",
+          "code": "0x05",
+          "title": "MTYH01.SND  : Mysticism"
+        },
+        {
+          "kind": "title",
+          "code": "0x04",
+          "title": "MTIAM08.SND : The Sunset for The Sunrise"
+        },
+        {
+          "kind": "title",
+          "code": "0x07",
+          "title": "MTYH03.SND  : Don't Forget Your Wonderful Memory"
+        },
+        {
+          "kind": "range",
+          "min": "0x80",
+          "max": "0x8b",
+          "title_format": "SE   : 0x%02x :",
+          "extcode": "1"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/scaptrust.xml",
+      "source_order": 3937,
+      "archive": "starship_msx",
+      "id": "starship-msx-generic"
+    },
+    {
+      "title": "[MSX] STAR/SHIP RENDEZVOUS(PSG)",
+      "driver": {
+        "name": "msx",
+        "type": "generic",
+        "alias": "Scap Trust",
+        "platform": "MSX"
+      },
+      "options": [
+        {
+          "name": "mdata_addr",
+          "value": "0xba00"
+        },
+        {
+          "name": "mdata_size",
+          "value": "0x1900"
+        },
+        {
+          "name": "mfile_size",
+          "value": "0x1900"
+        },
+        {
+          "name": "init_pc",
+          "value": "0x400"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "patch",
+          "offset": "0x0400"
+        },
+        {
+          "type": "code",
+          "path": "SOUND.COM",
+          "offset": "0x9400"
+        },
+        {
+          "type": "bgm",
+          "path": "MTIAM02.SND",
+          "offset": "0x00"
+        },
+        {
+          "type": "bgm",
+          "path": "MTIAM05.SND",
+          "offset": "0x01"
+        },
+        {
+          "type": "bgm",
+          "path": "MTIAM06.SND",
+          "offset": "0x02"
+        },
+        {
+          "type": "bgm",
+          "path": "MTIAM07.SND",
+          "offset": "0x03"
+        },
+        {
+          "type": "bgm",
+          "path": "MTIAM08.SND",
+          "offset": "0x04"
+        },
+        {
+          "type": "bgm",
+          "path": "MTYH01.SND",
+          "offset": "0x05"
+        },
+        {
+          "type": "bgm",
+          "path": "MTYH02.SND",
+          "offset": "0x06"
+        },
+        {
+          "type": "bgm",
+          "path": "MTYH03.SND",
+          "offset": "0x07"
+        },
+        {
+          "type": "bgm",
+          "path": "MTYH04.SND",
+          "offset": "0x08"
+        },
+        {
+          "type": "bgm",
+          "path": "MTYH05.SND",
+          "offset": "0x09"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x00",
+          "title": "MTIAM02.SND : Operation in Unsteady Space"
+        },
+        {
+          "kind": "comment",
+          "text": "\n\t\t\t<title code=\"0x03\">MTIAM07.SND : Operation in Unsteady Space</title>\n\t\t\t  "
+        },
+        {
+          "kind": "title",
+          "code": "0x08",
+          "title": "MTYH04.SND  : The Art of Noise"
+        },
+        {
+          "kind": "title",
+          "code": "0x06",
+          "title": "MTYH02.SND  : Madness and Its Synergistic Effect"
+        },
+        {
+          "kind": "title",
+          "code": "0x09",
+          "title": "MTYH05.SND  : MAZE TRAP!!"
+        },
+        {
+          "kind": "title",
+          "code": "0x02",
+          "title": "MTIAM06.SND : Bass が ブ・リ・バ・リ"
+        },
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "MTIAM05.SND : Work of Digging at Midnight"
+        },
+        {
+          "kind": "title",
+          "code": "0x05",
+          "title": "MTYH01.SND  : Mysticism"
+        },
+        {
+          "kind": "title",
+          "code": "0x04",
+          "title": "MTIAM08.SND : The Sunset for The Sunrise"
+        },
+        {
+          "kind": "title",
+          "code": "0x07",
+          "title": "MTYH03.SND  : Don't Forget Your Wonderful Memory"
+        },
+        {
+          "kind": "range",
+          "min": "0x80",
+          "max": "0x8b",
+          "title_format": "SE   : 0x%02x :",
+          "extcode": "1"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/scaptrust.xml",
+      "source_order": 3938,
+      "archive": "starship_msx",
+      "id": "starship-msx-generic-2"
+    },
+    {
+      "title": "[MSX] クリムゾン(OPLL)",
+      "driver": {
+        "name": "msx",
+        "type": "generic",
+        "alias": "Scap Trust",
+        "platform": "MSX"
+      },
+      "options": [
+        {
+          "name": "init_pc",
+          "value": "0x0400"
+        },
+        {
+          "name": "use_opll",
+          "value": "0x01"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "patch",
+          "offset": "0x0400"
+        },
+        {
+          "type": "code",
+          "path": "OPLL.BIN",
+          "offset": "0x4000"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x00",
+          "title": "00 : プロローグ"
+        },
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "01 : オーガ・バトル"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/scaptrust.xml",
+      "source_order": 3939,
+      "archive": "crimson_msx",
+      "id": "crimson-msx-generic"
+    },
+    {
+      "title": "[MSX] クリムゾン(PSG)",
+      "driver": {
+        "name": "msx",
+        "type": "generic",
+        "alias": "Scap Trust",
+        "platform": "MSX"
+      },
+      "options": [
+        {
+          "name": "mdata_addr",
+          "value": "0xbcc0"
+        },
+        {
+          "name": "mdata_size",
+          "value": "0x1d00"
+        },
+        {
+          "name": "mfile_size",
+          "value": "0x1d00"
+        },
+        {
+          "name": "init_pc",
+          "value": "0x0400"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "patch2",
+          "offset": "0x0400"
+        },
+        {
+          "type": "code",
+          "path": "OPEN.BIN",
+          "offset": "0x4000"
+        },
+        {
+          "type": "code",
+          "path": "MSCMAIN.BIN",
+          "offset": "0x9330"
+        },
+        {
+          "type": "bgm",
+          "path": "D@.BIN",
+          "offset": "0x02"
+        },
+        {
+          "type": "bgm",
+          "path": "D{.BIN",
+          "offset": "0x03"
+        },
+        {
+          "type": "bgm",
+          "path": "D}.BIN",
+          "offset": "0x04"
+        },
+        {
+          "type": "bgm",
+          "path": "DA.BIN",
+          "offset": "0x05"
+        },
+        {
+          "type": "bgm",
+          "path": "DB.BIN",
+          "offset": "0x06"
+        },
+        {
+          "type": "bgm",
+          "path": "DC.BIN",
+          "offset": "0x07"
+        },
+        {
+          "type": "bgm",
+          "path": "DD.BIN",
+          "offset": "0x08"
+        },
+        {
+          "type": "bgm",
+          "path": "DE.BIN",
+          "offset": "0x09"
+        },
+        {
+          "type": "bgm",
+          "path": "DF.BIN",
+          "offset": "0x0a"
+        },
+        {
+          "type": "bgm",
+          "path": "DG.BIN",
+          "offset": "0x0b"
+        },
+        {
+          "type": "bgm",
+          "path": "DH.BIN",
+          "offset": "0x0c"
+        },
+        {
+          "type": "bgm",
+          "path": "DI.BIN",
+          "offset": "0x0d"
+        },
+        {
+          "type": "bgm",
+          "path": "DJ.BIN",
+          "offset": "0x0e"
+        },
+        {
+          "type": "bgm",
+          "path": "DK.BIN",
+          "offset": "0x0f"
+        },
+        {
+          "type": "bgm",
+          "path": "DL.BIN",
+          "offset": "0x10"
+        },
+        {
+          "type": "bgm",
+          "path": "DM.BIN",
+          "offset": "0x11"
+        },
+        {
+          "type": "bgm",
+          "path": "DN.BIN",
+          "offset": "0x12"
+        },
+        {
+          "type": "bgm",
+          "path": "DO.BIN",
+          "offset": "0x13"
+        },
+        {
+          "type": "bgm",
+          "path": "DP.BIN",
+          "offset": "0x14"
+        },
+        {
+          "type": "bgm",
+          "path": "DQ.BIN",
+          "offset": "0x15"
+        },
+        {
+          "type": "bgm",
+          "path": "DR.BIN",
+          "offset": "0x16"
+        },
+        {
+          "type": "bgm",
+          "path": "DS.BIN",
+          "offset": "0x17"
+        },
+        {
+          "type": "bgm",
+          "path": "DT.BIN",
+          "offset": "0x18"
+        },
+        {
+          "type": "bgm",
+          "path": "DU.BIN",
+          "offset": "0x19"
+        },
+        {
+          "type": "bgm",
+          "path": "DV.BIN",
+          "offset": "0x1a"
+        },
+        {
+          "type": "bgm",
+          "path": "DW.BIN",
+          "offset": "0x1b"
+        },
+        {
+          "type": "bgm",
+          "path": "DX.BIN",
+          "offset": "0x1c"
+        },
+        {
+          "type": "bgm",
+          "path": "DZ.BIN",
+          "offset": "0x1d"
+        },
+        {
+          "type": "bgm",
+          "path": "DY.BIN",
+          "offset": "0x1e"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x00",
+          "title": "OPEN.BIN    : プロローグ"
+        },
+        {
+          "kind": "title",
+          "code": "0x02",
+          "title": "D@.BIN      : 冒険者達"
+        },
+        {
+          "kind": "title",
+          "code": "0x0b",
+          "title": "DG.BIN      : 遺跡の谷"
+        },
+        {
+          "kind": "comment",
+          "text": "\n\t\t\t<title code=\"0x0c\">DH.BIN      : 遺跡の谷</title>\n\t\t\t<title code=\"0x0d\">DI.BIN      : 遺跡の谷</title>\n\t\t\t<title code=\"0x0e\">DJ.BIN      : 遺跡の谷</title>\n\t\t\t  "
+        },
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "MSCMAIN.BIN : オーガ・バトル"
+        },
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "DL.BIN      : エロイア城"
+        },
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "DN.BIN      : しゃべらずの森"
+        },
+        {
+          "kind": "title",
+          "code": "0x1d",
+          "title": "DZ.BIN      : レクイエム"
+        },
+        {
+          "kind": "title",
+          "code": "0x1a",
+          "title": "DV.BIN      : インキュバス城"
+        },
+        {
+          "kind": "title",
+          "code": "0x14",
+          "title": "DP.BIN      : 魔獣のつり橋"
+        },
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "DM.BIN      : モグネス山"
+        },
+        {
+          "kind": "title",
+          "code": "0x05",
+          "title": "DA.BIN      : 哀しみの町"
+        },
+        {
+          "kind": "comment",
+          "text": "\n\t\t\t<title code=\"0x06\">DB.BIN      : 哀しみの町</title>\n\t\t\t<title code=\"0x07\">DC.BIN      : 哀しみの町</title>\n\t\t\t<title code=\"0x08\">DD.BIN      : 哀しみの町</title>\n\t\t\t<title code=\"0x09\">DE.BIN      : 哀しみの町</title>\n\t\t\t<title code=\"0x0a\">DF.BIN      : 哀しみの町</title>\n\t\t\t<title code=\"0x13\">DO.BIN      : 哀しみの町</title>\n\t\t\t  "
+        },
+        {
+          "kind": "title",
+          "code": "0x1c",
+          "title": "DX.BIN      : 魔物の沼"
+        },
+        {
+          "kind": "title",
+          "code": "0x17",
+          "title": "DS.BIN      : 火吹き山"
+        },
+        {
+          "kind": "comment",
+          "text": "\n\t\t\t<title code=\"0x19\">DU.BIN      : 火吹き山</title>\n\t\t\t  "
+        },
+        {
+          "kind": "title",
+          "code": "0x0f",
+          "title": "DK.BIN      : 死霊の谷"
+        },
+        {
+          "kind": "title",
+          "code": "0x18",
+          "title": "DT.BIN      : キャンプ場"
+        },
+        {
+          "kind": "title",
+          "code": "0x15",
+          "title": "DQ.BIN      : 毒の沼"
+        },
+        {
+          "kind": "title",
+          "code": "0x1b",
+          "title": "DW.BIN      : 幻の城"
+        },
+        {
+          "kind": "title",
+          "code": "0x16",
+          "title": "DR.BIN      : コダール城"
+        },
+        {
+          "kind": "title",
+          "code": "0x1e",
+          "title": "DY.BIN      : クリムゾン城"
+        },
+        {
+          "kind": "title",
+          "code": "0x03",
+          "title": "D{.BIN      : クリムゾン様、永遠に…"
+        },
+        {
+          "kind": "title",
+          "code": "0x04",
+          "title": "D}.BIN      : エピローグ"
+        },
+        {
+          "kind": "range",
+          "min": "0x100",
+          "max": "0x112",
+          "title_format": "SE  : 0x%02x :",
+          "extcode": "1"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/scaptrust.xml",
+      "source_order": 3940,
+      "archive": "crimson_msx",
+      "id": "crimson-msx-generic-2"
+    },
+    {
+      "title": "[MSX] 紫禁城(OPLL)",
+      "driver": {
+        "name": "msx",
+        "type": "generic",
+        "alias": "Scap Trust",
+        "platform": "MSX"
+      },
+      "options": [
+        {
+          "name": "mdata_addr",
+          "value": "0xb14e"
+        },
+        {
+          "name": "mdata_size",
+          "value": "0x1500"
+        },
+        {
+          "name": "mfile_size",
+          "value": "0x1500"
+        },
+        {
+          "name": "init_pc",
+          "value": "0x0400"
+        },
+        {
+          "name": "use_opll",
+          "value": "0x01"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "patch",
+          "offset": "0x0400"
+        },
+        {
+          "type": "code",
+          "path": "FMPAC.ROM",
+          "offset": "0x4000"
+        },
+        {
+          "type": "code",
+          "path": "MAIN.COM",
+          "offset": "0x8000"
+        },
+        {
+          "type": "code",
+          "path": "SK.FMS",
+          "offset": "0xA000"
+        },
+        {
+          "type": "code",
+          "path": "SKP.YBV",
+          "offset": "0xA020"
+        },
+        {
+          "type": "code",
+          "path": "SIK.BGE",
+          "offset": "0xA208"
+        },
+        {
+          "type": "bgm",
+          "path": "DORA.PMS",
+          "offset": "0x00"
+        },
+        {
+          "type": "bgm",
+          "path": "SKPAC0.PMS",
+          "offset": "0x01"
+        },
+        {
+          "type": "bgm",
+          "path": "SKPAC1.PMS",
+          "offset": "0x02"
+        },
+        {
+          "type": "bgm",
+          "path": "SKPAC10.PMS",
+          "offset": "0x03"
+        },
+        {
+          "type": "bgm",
+          "path": "SKPAC11.PMS",
+          "offset": "0x04"
+        },
+        {
+          "type": "bgm",
+          "path": "SKPAC12.PMS",
+          "offset": "0x05"
+        },
+        {
+          "type": "bgm",
+          "path": "SKPAC13.PMS",
+          "offset": "0x06"
+        },
+        {
+          "type": "bgm",
+          "path": "SKPAC14.PMS",
+          "offset": "0x07"
+        },
+        {
+          "type": "bgm",
+          "path": "SKPAC2.PMS",
+          "offset": "0x08"
+        },
+        {
+          "type": "bgm",
+          "path": "SKPAC3.PMS",
+          "offset": "0x09"
+        },
+        {
+          "type": "bgm",
+          "path": "SKPAC4.PMS",
+          "offset": "0x0a"
+        },
+        {
+          "type": "bgm",
+          "path": "SKPAC5.PMS",
+          "offset": "0x0b"
+        },
+        {
+          "type": "bgm",
+          "path": "SKPAC6.PMS",
+          "offset": "0x0c"
+        },
+        {
+          "type": "bgm",
+          "path": "SKPAC7.PMS",
+          "offset": "0x0d"
+        },
+        {
+          "type": "bgm",
+          "path": "SKPAC8.PMS",
+          "offset": "0x0e"
+        },
+        {
+          "type": "bgm",
+          "path": "SKPAC9.PMS",
+          "offset": "0x0f"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x00",
+          "title": "DORA.PMS    :"
+        },
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "SKPAC0.PMS  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x02",
+          "title": "SKPAC1.PMS  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x08",
+          "title": "SKPAC2.PMS  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x09",
+          "title": "SKPAC3.PMS  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x0a",
+          "title": "SKPAC4.PMS  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x0b",
+          "title": "SKPAC5.PMS  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x0c",
+          "title": "SKPAC6.PMS  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x0d",
+          "title": "SKPAC7.PMS  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x0e",
+          "title": "SKPAC8.PMS  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x0f",
+          "title": "SKPAC9.PMS  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x03",
+          "title": "SKPAC10.PMS :"
+        },
+        {
+          "kind": "title",
+          "code": "0x04",
+          "title": "SKPAC11.PMS :"
+        },
+        {
+          "kind": "title",
+          "code": "0x05",
+          "title": "SKPAC12.PMS :"
+        },
+        {
+          "kind": "title",
+          "code": "0x010006",
+          "title": "SKPAC13.PMS :"
+        },
+        {
+          "kind": "title",
+          "code": "0x010007",
+          "title": "SKPAC14.PMS :"
+        },
+        {
+          "kind": "range",
+          "min": "0x101",
+          "max": "0x114",
+          "title_format": "SE    0x%02x :",
+          "extcode": "1"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/scaptrust.xml",
+      "source_order": 3941,
+      "archive": "shikinjo_msx,fmpac_msx",
+      "id": "shikinjo-msx-fmpac-msx-generic"
+    },
+    {
+      "title": "[MSX] 紫禁城(PSG)",
+      "driver": {
+        "name": "msx",
+        "type": "generic",
+        "alias": "Scap Trust",
+        "platform": "MSX"
+      },
+      "options": [
+        {
+          "name": "mdata_addr",
+          "value": "0xb14e"
+        },
+        {
+          "name": "mdata_size",
+          "value": "0x1500"
+        },
+        {
+          "name": "mfile_size",
+          "value": "0x1500"
+        },
+        {
+          "name": "init_pc",
+          "value": "0x0400"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "patch",
+          "offset": "0x0400"
+        },
+        {
+          "type": "code",
+          "path": "MAIN.COM",
+          "offset": "0x8000"
+        },
+        {
+          "type": "code",
+          "path": "SK.FMS",
+          "offset": "0xA000"
+        },
+        {
+          "type": "code",
+          "path": "SKP.YBV",
+          "offset": "0xA020"
+        },
+        {
+          "type": "code",
+          "path": "SIK.BGE",
+          "offset": "0xA208"
+        },
+        {
+          "type": "bgm",
+          "path": "DORA.YBM",
+          "offset": "0x00"
+        },
+        {
+          "type": "bgm",
+          "path": "SKP0.YBM",
+          "offset": "0x01"
+        },
+        {
+          "type": "bgm",
+          "path": "SKP1.YBM",
+          "offset": "0x02"
+        },
+        {
+          "type": "bgm",
+          "path": "SKP10.YBM",
+          "offset": "0x03"
+        },
+        {
+          "type": "bgm",
+          "path": "SKP11.YBM",
+          "offset": "0x04"
+        },
+        {
+          "type": "bgm",
+          "path": "SKP12.YBM",
+          "offset": "0x05"
+        },
+        {
+          "type": "bgm",
+          "path": "SKP13.YBM",
+          "offset": "0x06"
+        },
+        {
+          "type": "bgm",
+          "path": "SKP14.YBM",
+          "offset": "0x07"
+        },
+        {
+          "type": "bgm",
+          "path": "SKP2.YBM",
+          "offset": "0x08"
+        },
+        {
+          "type": "bgm",
+          "path": "SKP3.YBM",
+          "offset": "0x09"
+        },
+        {
+          "type": "bgm",
+          "path": "SKP4.YBM",
+          "offset": "0x0a"
+        },
+        {
+          "type": "bgm",
+          "path": "SKP5.YBM",
+          "offset": "0x0b"
+        },
+        {
+          "type": "bgm",
+          "path": "SKP6.YBM",
+          "offset": "0x0c"
+        },
+        {
+          "type": "bgm",
+          "path": "SKP7.YBM",
+          "offset": "0x0d"
+        },
+        {
+          "type": "bgm",
+          "path": "SKP8.YBM",
+          "offset": "0x0e"
+        },
+        {
+          "type": "bgm",
+          "path": "SKP9.YBM",
+          "offset": "0x0f"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x00",
+          "title": "DORA.YBM  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "SKP0.YBM  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x02",
+          "title": "SKP1.YBM  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x08",
+          "title": "SKP2.YBM  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x09",
+          "title": "SKP3.YBM  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x0a",
+          "title": "SKP4.YBM  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x0b",
+          "title": "SKP5.YBM  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x0c",
+          "title": "SKP6.YBM  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x0d",
+          "title": "SKP7.YBM  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x0e",
+          "title": "SKP8.YBM  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x0f",
+          "title": "SKP9.YBM  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x03",
+          "title": "SKP10.YBM :"
+        },
+        {
+          "kind": "title",
+          "code": "0x04",
+          "title": "SKP11.YBM :"
+        },
+        {
+          "kind": "title",
+          "code": "0x05",
+          "title": "SKP12.YBM :"
+        },
+        {
+          "kind": "title",
+          "code": "0x06",
+          "title": "SKP13.YBM :"
+        },
+        {
+          "kind": "title",
+          "code": "0x07",
+          "title": "SKP14.YBM :"
+        },
+        {
+          "kind": "range",
+          "min": "0x101",
+          "max": "0x114",
+          "title_format": "SE  0x%02x :",
+          "extcode": "1"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/scaptrust.xml",
+      "source_order": 3942,
+      "archive": "shikinjo_msx",
+      "id": "shikinjo-msx-generic"
+    },
+    {
+      "title": "[X68000] STAR/SHIP RENDEZVOUS",
+      "driver": {
+        "name": "x68k",
+        "type": "generic",
+        "alias": "Scap Trust",
+        "platform": "SHARP X68000"
+      },
+      "options": [],
+      "assets": [
+        {
+          "type": "code",
+          "path": "ssr68snd.bin",
+          "offset": "0x000000"
+        },
+        {
+          "type": "code",
+          "path": "MUSIC.BIN",
+          "offset": "0x010000"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "オープニング"
+        },
+        {
+          "kind": "title",
+          "code": "0x02",
+          "title": "メインBGM"
+        },
+        {
+          "kind": "title",
+          "code": "0x03",
+          "title": "ビジュアルシーン"
+        },
+        {
+          "kind": "title",
+          "code": "0x05",
+          "title": "エンディング"
+        },
+        {
+          "kind": "title",
+          "code": "0x04",
+          "title": "ゲームオーバー"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/scaptrust.xml",
+      "source_order": 3943,
+      "archive": "starship68snd",
+      "id": "starship68snd-generic"
+    }
+  ]
+}

@@ -1,0 +1,489 @@
+{
+  "format": "hoot-catalog-shard",
+  "version": 1,
+  "source_file": "xml/log.xml",
+  "date": "2005/09/25",
+  "comments": [
+    " //ログ "
+  ],
+  "games": [
+    {
+      "title": "[X68000] DRAGON",
+      "driver": {
+        "name": "x68k",
+        "type": "generic",
+        "alias": "ログ",
+        "platform": "SHARP X68000"
+      },
+      "options": [],
+      "assets": [
+        {
+          "type": "code",
+          "path": "dragon68snd.bin"
+        },
+        {
+          "type": "x",
+          "path": "OPMDRV.X",
+          "offset": "0x08000"
+        },
+        {
+          "type": "code",
+          "path": "AHIRU.OPM",
+          "offset": "0x2c000"
+        },
+        {
+          "type": "code",
+          "path": "BGM3.OPM",
+          "offset": "0x30000"
+        },
+        {
+          "type": "code",
+          "path": "BGM4.OPM",
+          "offset": "0x34000"
+        },
+        {
+          "type": "code",
+          "path": "BGM5.OPM",
+          "offset": "0x38000"
+        },
+        {
+          "type": "code",
+          "path": "BGM6.OPM",
+          "offset": "0x3c000"
+        },
+        {
+          "type": "code",
+          "path": "BUTA.OPM",
+          "offset": "0x40000"
+        },
+        {
+          "type": "code",
+          "path": "DX_ENKA.OPM",
+          "offset": "0x44000"
+        },
+        {
+          "type": "code",
+          "path": "FANFALE.OPM",
+          "offset": "0x48000"
+        },
+        {
+          "type": "code",
+          "path": "OPENING.OPM",
+          "offset": "0x4c000"
+        },
+        {
+          "type": "code",
+          "path": "SOUND.OPM",
+          "offset": "0x50000"
+        },
+        {
+          "type": "code",
+          "path": "play.OPM",
+          "offset": "0x54000"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x000c",
+          "title": "OPENING.OPM :"
+        },
+        {
+          "kind": "title",
+          "code": "0x050e",
+          "title": "BGM3.OPM    :"
+        },
+        {
+          "kind": "title",
+          "code": "0x060e",
+          "title": "BGM4.OPM    :"
+        },
+        {
+          "kind": "title",
+          "code": "0x070e",
+          "title": "BGM5.OPM    :"
+        },
+        {
+          "kind": "title",
+          "code": "0x080e",
+          "title": "BGM6.OPM    :"
+        },
+        {
+          "kind": "title",
+          "code": "0x0a0e",
+          "title": "DX_ENKA.OPM :"
+        },
+        {
+          "kind": "title",
+          "code": "0x0b0e",
+          "title": "FANFALE.OPM :"
+        },
+        {
+          "kind": "title",
+          "code": "0x090e",
+          "title": "BUTA.OPM    :"
+        },
+        {
+          "kind": "title",
+          "code": "0x040e",
+          "title": "AHIRU.OPM   :"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/log.xml",
+      "source_order": 3086,
+      "archive": "dragon68snd",
+      "id": "dragon68snd-generic"
+    },
+    {
+      "title": "[PC-9801] DRAGON",
+      "driver": {
+        "name": "pc98dos",
+        "type": "opn",
+        "alias": "ログ",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "clockmul",
+          "value": "8"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "我孫子.EXE",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "ABIKO_98.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "BGM1.MUS",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "BGM1.ONS",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "BGM2.MUS",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "BGM2.ONS",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "BGM3.MUS",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "BGM3.ONS",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "BGM4.MUS",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "BGM4.ONS",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "BGM5.MUS",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "BGM5.ONS",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "BGM6.MUS",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "BGM6.ONS",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "BGM7.MUS",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "BGM7.ONS",
+          "offset": "-1"
+        },
+        {
+          "type": "conin",
+          "path": "BGM1",
+          "offset": "0x10"
+        },
+        {
+          "type": "conin",
+          "path": "BGM2",
+          "offset": "0x11"
+        },
+        {
+          "type": "conin",
+          "path": "BGM3",
+          "offset": "0x12"
+        },
+        {
+          "type": "conin",
+          "path": "BGM4",
+          "offset": "0x13"
+        },
+        {
+          "type": "conin",
+          "path": "BGM5",
+          "offset": "0x14"
+        },
+        {
+          "type": "conin",
+          "path": "BGM6",
+          "offset": "0x15"
+        },
+        {
+          "type": "conin",
+          "path": "BGM7",
+          "offset": "0x16"
+        },
+        {
+          "type": "shell",
+          "path": "我孫子",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "ABIKO_98",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "BGM1.MUS :"
+        },
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "BGM2.MUS :"
+        },
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "BGM3.MUS :"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "BGM4.MUS :"
+        },
+        {
+          "kind": "title",
+          "code": "0x14",
+          "title": "BGM5.MUS :"
+        },
+        {
+          "kind": "title",
+          "code": "0x15",
+          "title": "BGM6.MUS :"
+        },
+        {
+          "kind": "title",
+          "code": "0x16",
+          "title": "BGM7.MUS :"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/log.xml",
+      "source_order": 3087,
+      "archive": "dragon_98",
+      "id": "dragon-98-opn"
+    },
+    {
+      "title": "[PC-8801] DRAGON",
+      "driver": {
+        "name": "pc88",
+        "type": "opn",
+        "alias": "ログ",
+        "platform": "NEC PC-8801"
+      },
+      "options": [
+        {
+          "name": "mdata_addr",
+          "value": "0xd000"
+        },
+        {
+          "name": "mdata_size",
+          "value": "0x11f0"
+        },
+        {
+          "name": "vdata_addr",
+          "value": "0xe1f0"
+        },
+        {
+          "name": "vdata_size",
+          "value": "0x02e0"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "PATCH",
+          "offset": "0x0000"
+        },
+        {
+          "type": "code",
+          "path": "onga.obj",
+          "offset": "0xc000"
+        },
+        {
+          "type": "bgm",
+          "path": "dora1.obj",
+          "offset": "0x00"
+        },
+        {
+          "type": "voice",
+          "path": "dora1.ons",
+          "offset": "0x00"
+        },
+        {
+          "type": "bgm",
+          "path": "dora2.obj",
+          "offset": "0x01"
+        },
+        {
+          "type": "voice",
+          "path": "dora2.ons",
+          "offset": "0x01"
+        },
+        {
+          "type": "bgm",
+          "path": "dora3.obj",
+          "offset": "0x02"
+        },
+        {
+          "type": "voice",
+          "path": "dora3.ons",
+          "offset": "0x02"
+        },
+        {
+          "type": "bgm",
+          "path": "dora4.obj",
+          "offset": "0x03"
+        },
+        {
+          "type": "voice",
+          "path": "dora4.ons",
+          "offset": "0x03"
+        },
+        {
+          "type": "bgm",
+          "path": "dora5.obj",
+          "offset": "0x04"
+        },
+        {
+          "type": "voice",
+          "path": "dora5.ons",
+          "offset": "0x04"
+        },
+        {
+          "type": "bgm",
+          "path": "dora6.obj",
+          "offset": "0x05"
+        },
+        {
+          "type": "voice",
+          "path": "dora6.ons",
+          "offset": "0x05"
+        },
+        {
+          "type": "bgm",
+          "path": "dora7.obj",
+          "offset": "0x06"
+        },
+        {
+          "type": "voice",
+          "path": "dora7.ons",
+          "offset": "0x06"
+        },
+        {
+          "type": "bgm",
+          "path": "dora9.obj",
+          "offset": "0x07"
+        },
+        {
+          "type": "voice",
+          "path": "dora9.ons",
+          "offset": "0x07"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x00",
+          "title": "dora1.obj"
+        },
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "dora2.obj"
+        },
+        {
+          "kind": "title",
+          "code": "0x02",
+          "title": "dora3.obj"
+        },
+        {
+          "kind": "title",
+          "code": "0x03",
+          "title": "dora4.obj"
+        },
+        {
+          "kind": "title",
+          "code": "0x04",
+          "title": "dora5.obj"
+        },
+        {
+          "kind": "title",
+          "code": "0x05",
+          "title": "dora6.obj"
+        },
+        {
+          "kind": "title",
+          "code": "0x06",
+          "title": "dora7.obj"
+        },
+        {
+          "kind": "title",
+          "code": "0x07",
+          "title": "dora9.obj"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/log.xml",
+      "source_order": 3088,
+      "archive": "dragon88",
+      "id": "dragon88-opn"
+    }
+  ]
+}

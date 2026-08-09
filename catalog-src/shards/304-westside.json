@@ -1,0 +1,940 @@
+{
+  "format": "hoot-catalog-shard",
+  "version": 1,
+  "source_file": "xml/westside.xml",
+  "date": "2005/09/25",
+  "comments": [
+    " //WESTSIDE "
+  ],
+  "games": [
+    {
+      "title": "[PC-9801] Grand Prix CIRCUS(OPN)",
+      "driver": {
+        "name": "pc98dos",
+        "type": "opn",
+        "alias": "WESTSIDE",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "clockmul",
+          "value": "0x04"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "gpcircus.com",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "FMDRV.EXE",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "SOUND.FMD",
+          "offset": "0x05"
+        },
+        {
+          "type": "file",
+          "path": "F1GP.SD0",
+          "offset": "0x10"
+        },
+        {
+          "type": "file",
+          "path": "F1GP.SD1",
+          "offset": "0x11"
+        },
+        {
+          "type": "file",
+          "path": "F1GP.SD2",
+          "offset": "0x12"
+        },
+        {
+          "type": "file",
+          "path": "F1GP.SD3",
+          "offset": "0x13"
+        },
+        {
+          "type": "file",
+          "path": "F1GP.SD4",
+          "offset": "0x14"
+        },
+        {
+          "type": "file",
+          "path": "F1GP.SD5",
+          "offset": "0x15"
+        },
+        {
+          "type": "shell",
+          "path": "fmdrv",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "gpcircus",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "TRUTH"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/westside.xml",
+      "source_order": 4945,
+      "archive": "gpcircus_98",
+      "id": "gpcircus-98-opn"
+    },
+    {
+      "title": "[PC-9801] Grand Prix CIRCUS(MT-32)",
+      "driver": {
+        "name": "pc98dos",
+        "type": "beep",
+        "alias": "WESTSIDE",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "midiout",
+          "value": "1"
+        },
+        {
+          "name": "midiout_type",
+          "value": "2"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "gpcircus.com",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MDDRV.EXE",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "F1GP.MD0",
+          "offset": "0x10"
+        },
+        {
+          "type": "file",
+          "path": "F1GP.MD1",
+          "offset": "0x11"
+        },
+        {
+          "type": "file",
+          "path": "F1GP.MD2",
+          "offset": "0x12"
+        },
+        {
+          "type": "file",
+          "path": "F1GP.MD3",
+          "offset": "0x13"
+        },
+        {
+          "type": "file",
+          "path": "F1GP.MD4",
+          "offset": "0x14"
+        },
+        {
+          "type": "file",
+          "path": "F1GP.MD5",
+          "offset": "0x15"
+        },
+        {
+          "type": "shell",
+          "path": "mddrv",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "gpcircus",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "TRUTH"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/westside.xml",
+      "source_order": 4946,
+      "archive": "gpcircus_98",
+      "id": "gpcircus-98-beep"
+    },
+    {
+      "title": "[PC-9801] Grand Prix CIRCUS(MT-32 Emulation)",
+      "driver": {
+        "name": "pc98dos",
+        "type": "beep",
+        "alias": "WESTSIDE",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "midiout",
+          "value": "1"
+        },
+        {
+          "name": "midiout_type",
+          "value": "1"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "gpcircus.com",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MDDRV.EXE",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "F1GP.MD0",
+          "offset": "0x10"
+        },
+        {
+          "type": "file",
+          "path": "F1GP.MD1",
+          "offset": "0x11"
+        },
+        {
+          "type": "file",
+          "path": "F1GP.MD2",
+          "offset": "0x12"
+        },
+        {
+          "type": "file",
+          "path": "F1GP.MD3",
+          "offset": "0x13"
+        },
+        {
+          "type": "file",
+          "path": "F1GP.MD4",
+          "offset": "0x14"
+        },
+        {
+          "type": "file",
+          "path": "F1GP.MD5",
+          "offset": "0x15"
+        },
+        {
+          "type": "shell",
+          "path": "mddrv",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "gpcircus",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "TRUTH"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/westside.xml",
+      "source_order": 4947,
+      "archive": "gpcircus_98",
+      "id": "gpcircus-98-beep-2"
+    },
+    {
+      "title": "[PC-9801] Grand Prix CIRCUS 2(OPN)",
+      "driver": {
+        "name": "pc98dos",
+        "type": "opn",
+        "alias": "WESTSIDE",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "clockmul",
+          "value": "0x04"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "gpc2.com",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "FMDRV.EXE",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "SOUND.FMD",
+          "offset": "0x05"
+        },
+        {
+          "type": "file",
+          "path": "COUNT.SDX",
+          "offset": "0x10"
+        },
+        {
+          "type": "file",
+          "path": "DATA.SDX",
+          "offset": "0x11"
+        },
+        {
+          "type": "file",
+          "path": "TRUTH.SDX",
+          "offset": "0x12"
+        },
+        {
+          "type": "shell",
+          "path": "fmdrv",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "gpc2",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "TRUTH.SDX"
+        },
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "COUNT.SDX"
+        },
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "DATA.SDX"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/westside.xml",
+      "source_order": 4948,
+      "archive": "gpc2_98",
+      "id": "gpc2-98-opn"
+    },
+    {
+      "title": "[PC-9801] Grand Prix CIRCUS 2(MT-32)",
+      "driver": {
+        "name": "pc98dos",
+        "type": "beep",
+        "alias": "WESTSIDE",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "midiout",
+          "value": "1"
+        },
+        {
+          "name": "midiout_type",
+          "value": "2"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "gpc2.com",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MDDRV.EXE",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "COUNT.MDX",
+          "offset": "0x10"
+        },
+        {
+          "type": "file",
+          "path": "DATA.MDX",
+          "offset": "0x11"
+        },
+        {
+          "type": "file",
+          "path": "TRUTH.MDX",
+          "offset": "0x12"
+        },
+        {
+          "type": "shell",
+          "path": "mddrv",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "gpc2",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "TRUTH.MDX"
+        },
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "COUNT.MDX"
+        },
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "DATA.MDX"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/westside.xml",
+      "source_order": 4949,
+      "archive": "gpc2_98",
+      "id": "gpc2-98-beep"
+    },
+    {
+      "title": "[PC-9801] Grand Prix CIRCUS 2(MT-32 Emulation)",
+      "driver": {
+        "name": "pc98dos",
+        "type": "beep",
+        "alias": "WESTSIDE",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "midiout",
+          "value": "1"
+        },
+        {
+          "name": "midiout_type",
+          "value": "1"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "gpc2.com",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MDDRV.EXE",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "COUNT.MDX",
+          "offset": "0x10"
+        },
+        {
+          "type": "file",
+          "path": "DATA.MDX",
+          "offset": "0x11"
+        },
+        {
+          "type": "file",
+          "path": "TRUTH.MDX",
+          "offset": "0x12"
+        },
+        {
+          "type": "shell",
+          "path": "mddrv",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "gpc2",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "TRUTH.MDX"
+        },
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "COUNT.MDX"
+        },
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "DATA.MDX"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/westside.xml",
+      "source_order": 4950,
+      "archive": "gpc2_98",
+      "id": "gpc2-98-beep-2"
+    },
+    {
+      "title": "[PC-9801] クイズ de グランプリ",
+      "driver": {
+        "name": "pc98dos",
+        "type": "opn",
+        "alias": "WESTSIDE",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "clockmul",
+          "value": "0x04"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "qgp_hoot.com",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "QGP.EXE",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "AFRICA.MUS",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "AUST.MUS",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "BELGIA.MUS",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "BRAZIL.MUS",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "BRITIS.MUS",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "CANADA.MUS",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "CHAMP.MUS",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "ENDING.MUS",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "FRENCH.MUS",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "GAMEOVER.MUS",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "GERMAN.MUS",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "HUNGAR.MUS",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "ITALY.MUS",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "JAPAN.MUS",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "JUDGE.MUS",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "LOGO.MUS",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MEXICO.MUS",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MONACO.MUS",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "NEWS.MUS",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "OPENING.MUS",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "PORT.MUS",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "SAN.MUS",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "SELECT.MUS",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "SPAIN.MUS",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "SP_LIC.MUS",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "SUPON.MUS",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "TEAM.MUS",
+          "offset": "-1"
+        },
+        {
+          "type": "conin",
+          "path": "AFRICA.MUS",
+          "offset": "0x10"
+        },
+        {
+          "type": "conin",
+          "path": "AUST.MUS",
+          "offset": "0x11"
+        },
+        {
+          "type": "conin",
+          "path": "BELGIA.MUS",
+          "offset": "0x12"
+        },
+        {
+          "type": "conin",
+          "path": "BRAZIL.MUS",
+          "offset": "0x13"
+        },
+        {
+          "type": "conin",
+          "path": "BRITIS.MUS",
+          "offset": "0x14"
+        },
+        {
+          "type": "conin",
+          "path": "CANADA.MUS",
+          "offset": "0x15"
+        },
+        {
+          "type": "conin",
+          "path": "CHAMP.MUS",
+          "offset": "0x16"
+        },
+        {
+          "type": "conin",
+          "path": "ENDING.MUS",
+          "offset": "0x17"
+        },
+        {
+          "type": "conin",
+          "path": "FRENCH.MUS",
+          "offset": "0x18"
+        },
+        {
+          "type": "conin",
+          "path": "GAMEOVER.MUS",
+          "offset": "0x19"
+        },
+        {
+          "type": "conin",
+          "path": "GERMAN.MUS",
+          "offset": "0x1a"
+        },
+        {
+          "type": "conin",
+          "path": "HUNGAR.MUS",
+          "offset": "0x1b"
+        },
+        {
+          "type": "conin",
+          "path": "ITALY.MUS",
+          "offset": "0x1c"
+        },
+        {
+          "type": "conin",
+          "path": "JAPAN.MUS",
+          "offset": "0x1d"
+        },
+        {
+          "type": "conin",
+          "path": "JUDGE.MUS",
+          "offset": "0x1e"
+        },
+        {
+          "type": "conin",
+          "path": "LOGO.MUS",
+          "offset": "0x1f"
+        },
+        {
+          "type": "conin",
+          "path": "MEXICO.MUS",
+          "offset": "0x20"
+        },
+        {
+          "type": "conin",
+          "path": "MONACO.MUS",
+          "offset": "0x21"
+        },
+        {
+          "type": "conin",
+          "path": "NEWS.MUS",
+          "offset": "0x22"
+        },
+        {
+          "type": "conin",
+          "path": "OPENING.MUS",
+          "offset": "0x23"
+        },
+        {
+          "type": "conin",
+          "path": "PORT.MUS",
+          "offset": "0x24"
+        },
+        {
+          "type": "conin",
+          "path": "SAN.MUS",
+          "offset": "0x25"
+        },
+        {
+          "type": "conin",
+          "path": "SELECT.MUS",
+          "offset": "0x26"
+        },
+        {
+          "type": "conin",
+          "path": "SPAIN.MUS",
+          "offset": "0x27"
+        },
+        {
+          "type": "conin",
+          "path": "SP_LIC.MUS",
+          "offset": "0x28"
+        },
+        {
+          "type": "conin",
+          "path": "SUPON.MUS",
+          "offset": "0x29"
+        },
+        {
+          "type": "conin",
+          "path": "TEAM.MUS",
+          "offset": "0x2a"
+        },
+        {
+          "type": "shell",
+          "path": "qgp_hoot",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "AFRICA  .MUS"
+        },
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "AUST    .MUS"
+        },
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "BELGIA  .MUS"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "BRAZIL  .MUS"
+        },
+        {
+          "kind": "title",
+          "code": "0x14",
+          "title": "BRITIS  .MUS"
+        },
+        {
+          "kind": "title",
+          "code": "0x15",
+          "title": "CANADA  .MUS"
+        },
+        {
+          "kind": "title",
+          "code": "0x16",
+          "title": "CHAMP   .MUS"
+        },
+        {
+          "kind": "title",
+          "code": "0x17",
+          "title": "ENDING  .MUS"
+        },
+        {
+          "kind": "title",
+          "code": "0x18",
+          "title": "FRENCH  .MUS"
+        },
+        {
+          "kind": "title",
+          "code": "0x19",
+          "title": "GAMEOVER.MUS"
+        },
+        {
+          "kind": "title",
+          "code": "0x1a",
+          "title": "GERMAN  .MUS"
+        },
+        {
+          "kind": "title",
+          "code": "0x1b",
+          "title": "HUNGAR  .MUS"
+        },
+        {
+          "kind": "title",
+          "code": "0x1c",
+          "title": "ITALY   .MUS"
+        },
+        {
+          "kind": "title",
+          "code": "0x1d",
+          "title": "JAPAN   .MUS"
+        },
+        {
+          "kind": "title",
+          "code": "0x1e",
+          "title": "JUDGE   .MUS"
+        },
+        {
+          "kind": "title",
+          "code": "0x1f",
+          "title": "LOGO    .MUS"
+        },
+        {
+          "kind": "title",
+          "code": "0x20",
+          "title": "MEXICO  .MUS"
+        },
+        {
+          "kind": "title",
+          "code": "0x21",
+          "title": "MONACO  .MUS"
+        },
+        {
+          "kind": "title",
+          "code": "0x22",
+          "title": "NEWS    .MUS"
+        },
+        {
+          "kind": "title",
+          "code": "0x23",
+          "title": "OPENING .MUS"
+        },
+        {
+          "kind": "title",
+          "code": "0x24",
+          "title": "PORT    .MUS"
+        },
+        {
+          "kind": "title",
+          "code": "0x25",
+          "title": "SAN     .MUS"
+        },
+        {
+          "kind": "title",
+          "code": "0x26",
+          "title": "SELECT  .MUS"
+        },
+        {
+          "kind": "title",
+          "code": "0x27",
+          "title": "SPAIN   .MUS"
+        },
+        {
+          "kind": "title",
+          "code": "0x28",
+          "title": "SP_LIC  .MUS"
+        },
+        {
+          "kind": "title",
+          "code": "0x29",
+          "title": "SUPON   .MUS"
+        },
+        {
+          "kind": "title",
+          "code": "0x2a",
+          "title": "TEAM    .MUS"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/westside.xml",
+      "source_order": 4951,
+      "archive": "qgp_98",
+      "id": "qgp-98-opn"
+    }
+  ]
+}

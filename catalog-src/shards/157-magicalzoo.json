@@ -1,0 +1,252 @@
+{
+  "format": "hoot-catalog-shard",
+  "version": 1,
+  "source_file": "xml/magicalzoo.xml",
+  "date": "2005/09/25",
+  "comments": [
+    " //magicalzoo "
+  ],
+  "games": [
+    {
+      "title": "[PC-8801] 摩訶迦羅",
+      "driver": {
+        "name": "pc88",
+        "type": "opn",
+        "alias": "マジカル・ズゥ",
+        "platform": "NEC PC-8801"
+      },
+      "options": [
+        {
+          "name": "mdata_addr",
+          "value": "0x7800"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "PATCH",
+          "offset": "0x0000"
+        },
+        {
+          "type": "code",
+          "path": "DRIVER",
+          "offset": "0xa800"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS00",
+          "offset": "0x00"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS01",
+          "offset": "0x01"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS02",
+          "offset": "0x02"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS03",
+          "offset": "0x03"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS04",
+          "offset": "0x04"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS05",
+          "offset": "0x05"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS06",
+          "offset": "0x06"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS07",
+          "offset": "0x07"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x00",
+          "title": "MUS00 : 表題"
+        },
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "MUS01 : 地上"
+        },
+        {
+          "kind": "title",
+          "code": "0x02",
+          "title": "MUS02 : 戦闘"
+        },
+        {
+          "kind": "title",
+          "code": "0x03",
+          "title": "MUS03 : 明姫"
+        },
+        {
+          "kind": "title",
+          "code": "0x04",
+          "title": "MUS04 : 魔界"
+        },
+        {
+          "kind": "title",
+          "code": "0x05",
+          "title": "MUS05 : 死"
+        },
+        {
+          "kind": "title",
+          "code": "0x06",
+          "title": "MUS06 : 迷宮"
+        },
+        {
+          "kind": "title",
+          "code": "0x07",
+          "title": "MUS07 : 結末"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/magicalzoo.xml",
+      "source_order": 3104,
+      "archive": "makakara",
+      "id": "makakara-opn"
+    },
+    {
+      "title": "[X1] 摩訶迦羅",
+      "driver": {
+        "name": "x1",
+        "type": "opm",
+        "alias": "マジカル・ズゥ",
+        "platform": "SHARP X1"
+      },
+      "options": [
+        {
+          "name": "mdata_addr",
+          "value": "0x7800"
+        },
+        {
+          "name": "mdata_size",
+          "value": "0x1000"
+        },
+        {
+          "name": "init_pc",
+          "value": "0xf000"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "INIT",
+          "offset": "0x9800"
+        },
+        {
+          "type": "code",
+          "path": "OPMDRV",
+          "offset": "0xe000"
+        },
+        {
+          "type": "code",
+          "path": "PATCH",
+          "offset": "0xf000"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS00",
+          "offset": "0x00"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS01",
+          "offset": "0x01"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS02",
+          "offset": "0x02"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS03",
+          "offset": "0x03"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS04",
+          "offset": "0x04"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS05",
+          "offset": "0x05"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS06",
+          "offset": "0x06"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS07",
+          "offset": "0x07"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x00",
+          "title": "MUS00 : 表題"
+        },
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "MUS01 : 地上"
+        },
+        {
+          "kind": "title",
+          "code": "0x02",
+          "title": "MUS02 : 戦闘"
+        },
+        {
+          "kind": "title",
+          "code": "0x03",
+          "title": "MUS03 : 明姫"
+        },
+        {
+          "kind": "title",
+          "code": "0x04",
+          "title": "MUS04 : 魔界"
+        },
+        {
+          "kind": "title",
+          "code": "0x05",
+          "title": "MUS05 : 死"
+        },
+        {
+          "kind": "title",
+          "code": "0x06",
+          "title": "MUS06 : 迷宮"
+        },
+        {
+          "kind": "title",
+          "code": "0x07",
+          "title": "MUS07 : 結末"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/magicalzoo.xml",
+      "source_order": 3105,
+      "archive": "x1mkkr",
+      "id": "x1mkkr-opm"
+    }
+  ]
+}

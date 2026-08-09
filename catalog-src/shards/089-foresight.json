@@ -1,0 +1,788 @@
+{
+  "format": "hoot-catalog-shard",
+  "version": 1,
+  "source_file": "xml/foresight.xml",
+  "date": "2005/09/25",
+  "comments": [
+    " //FORESIGHT "
+  ],
+  "games": [
+    {
+      "title": "[PC-9801] 学園物語'93 ～The Instinct～",
+      "driver": {
+        "name": "pc98dos",
+        "type": "opn",
+        "alias": "FORESIGHT",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "clockmul",
+          "value": "8"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "NA.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "NLP_HOOT.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "TONES.DTA",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "30_BGM01.O",
+          "offset": "0x10"
+        },
+        {
+          "type": "file",
+          "path": "30_BGM02.O",
+          "offset": "0x11"
+        },
+        {
+          "type": "file",
+          "path": "30_BGM03.O",
+          "offset": "0x12"
+        },
+        {
+          "type": "file",
+          "path": "30_BGM04.O",
+          "offset": "0x13"
+        },
+        {
+          "type": "file",
+          "path": "30_BGM05.O",
+          "offset": "0x14"
+        },
+        {
+          "type": "file",
+          "path": "30_BGM06.O",
+          "offset": "0x15"
+        },
+        {
+          "type": "file",
+          "path": "30_BGM07.O",
+          "offset": "0x16"
+        },
+        {
+          "type": "file",
+          "path": "30_BGM08.O",
+          "offset": "0x17"
+        },
+        {
+          "type": "file",
+          "path": "30_BGM09.O",
+          "offset": "0x18"
+        },
+        {
+          "type": "file",
+          "path": "30_BGM0A.O",
+          "offset": "0x19"
+        },
+        {
+          "type": "file",
+          "path": "30_BGM0B.O",
+          "offset": "0x1A"
+        },
+        {
+          "type": "file",
+          "path": "30_BGM0C.O",
+          "offset": "0x1B"
+        },
+        {
+          "type": "file",
+          "path": "30_BGM0D.O",
+          "offset": "0x1C"
+        },
+        {
+          "type": "file",
+          "path": "30_BGM0E.O",
+          "offset": "0x1D"
+        },
+        {
+          "type": "file",
+          "path": "30_BGM0F.O",
+          "offset": "0x1E"
+        },
+        {
+          "type": "file",
+          "path": "30_BGM10.O",
+          "offset": "0x1F"
+        },
+        {
+          "type": "shell",
+          "path": "NA -T",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "NLP_HOOT",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "30_BGM01.O"
+        },
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "30_BGM02.O"
+        },
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "30_BGM03.O"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "30_BGM04.O"
+        },
+        {
+          "kind": "title",
+          "code": "0x14",
+          "title": "30_BGM05.O"
+        },
+        {
+          "kind": "title",
+          "code": "0x15",
+          "title": "30_BGM06.O"
+        },
+        {
+          "kind": "title",
+          "code": "0x16",
+          "title": "30_BGM07.O"
+        },
+        {
+          "kind": "title",
+          "code": "0x17",
+          "title": "30_BGM08.O"
+        },
+        {
+          "kind": "title",
+          "code": "0x18",
+          "title": "30_BGM09.O"
+        },
+        {
+          "kind": "title",
+          "code": "0x19",
+          "title": "30_BGM0A.O"
+        },
+        {
+          "kind": "title",
+          "code": "0x1A",
+          "title": "30_BGM0B.O"
+        },
+        {
+          "kind": "title",
+          "code": "0x1B",
+          "title": "30_BGM0C.O"
+        },
+        {
+          "kind": "title",
+          "code": "0x1C",
+          "title": "30_BGM0D.O"
+        },
+        {
+          "kind": "title",
+          "code": "0x1D",
+          "title": "30_BGM0E.O"
+        },
+        {
+          "kind": "title",
+          "code": "0x1E",
+          "title": "30_BGM0F.O"
+        },
+        {
+          "kind": "title",
+          "code": "0x1F",
+          "title": "30_BGM10.O"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/foresight.xml",
+      "source_order": 2067,
+      "archive": "gakuen93_98",
+      "id": "gakuen93-98-opn"
+    },
+    {
+      "title": "[PC-9801] 魔導学院R",
+      "driver": {
+        "name": "pc98dos",
+        "type": "opn",
+        "alias": "FORESIGHT",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "funcvect",
+          "value": "0x7e"
+        },
+        {
+          "name": "clockmul",
+          "value": "8"
+        },
+        {
+          "name": "showfm3ex",
+          "value": "1"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "PMD_98.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "PMD.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "BGM001.M",
+          "offset": "0x10"
+        },
+        {
+          "type": "file",
+          "path": "BGM002.M",
+          "offset": "0x11"
+        },
+        {
+          "type": "file",
+          "path": "BGM003.M",
+          "offset": "0x12"
+        },
+        {
+          "type": "file",
+          "path": "BGM004.M",
+          "offset": "0x13"
+        },
+        {
+          "type": "file",
+          "path": "BGM005.M",
+          "offset": "0x14"
+        },
+        {
+          "type": "file",
+          "path": "BGM006.M",
+          "offset": "0x15"
+        },
+        {
+          "type": "file",
+          "path": "BGM007.M",
+          "offset": "0x16"
+        },
+        {
+          "type": "file",
+          "path": "BGM008.M",
+          "offset": "0x17"
+        },
+        {
+          "type": "file",
+          "path": "BGM009.M",
+          "offset": "0x18"
+        },
+        {
+          "type": "file",
+          "path": "BGM010.M",
+          "offset": "0x19"
+        },
+        {
+          "type": "file",
+          "path": "BGM011.M",
+          "offset": "0x1A"
+        },
+        {
+          "type": "file",
+          "path": "BGM012.M",
+          "offset": "0x1B"
+        },
+        {
+          "type": "file",
+          "path": "BGM013.M",
+          "offset": "0x1C"
+        },
+        {
+          "type": "file",
+          "path": "BGM020.M",
+          "offset": "0x1D"
+        },
+        {
+          "type": "file",
+          "path": "BGM021.M",
+          "offset": "0x1E"
+        },
+        {
+          "type": "file",
+          "path": "BGM022.M",
+          "offset": "0x1F"
+        },
+        {
+          "type": "file",
+          "path": "BGM023.M",
+          "offset": "0x20"
+        },
+        {
+          "type": "shell",
+          "path": "pmd /M12 /V0 /E2 /DF35 /DS5 /K",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "pmd_98",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "BGM001.M"
+        },
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "BGM002.M"
+        },
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "BGM003.M"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "BGM004.M"
+        },
+        {
+          "kind": "title",
+          "code": "0x14",
+          "title": "BGM005.M"
+        },
+        {
+          "kind": "title",
+          "code": "0x15",
+          "title": "BGM006.M"
+        },
+        {
+          "kind": "title",
+          "code": "0x16",
+          "title": "BGM007.M"
+        },
+        {
+          "kind": "title",
+          "code": "0x17",
+          "title": "BGM008.M"
+        },
+        {
+          "kind": "title",
+          "code": "0x18",
+          "title": "BGM009.M"
+        },
+        {
+          "kind": "title",
+          "code": "0x19",
+          "title": "BGM010.M"
+        },
+        {
+          "kind": "title",
+          "code": "0x1A",
+          "title": "BGM011.M"
+        },
+        {
+          "kind": "title",
+          "code": "0x1B",
+          "title": "BGM012.M"
+        },
+        {
+          "kind": "title",
+          "code": "0x1C",
+          "title": "BGM013.M"
+        },
+        {
+          "kind": "title",
+          "code": "0x1D",
+          "title": "BGM020.M"
+        },
+        {
+          "kind": "title",
+          "code": "0x1E",
+          "title": "BGM021.M"
+        },
+        {
+          "kind": "title",
+          "code": "0x1F",
+          "title": "BGM022.M"
+        },
+        {
+          "kind": "title",
+          "code": "0x20",
+          "title": "BGM023.M"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/foresight.xml",
+      "source_order": 2068,
+      "archive": "mador_98",
+      "id": "mador-98-opn"
+    },
+    {
+      "title": "[PC-9801] 麻雀美少女伝 リップル",
+      "driver": {
+        "name": "pc98dos",
+        "type": "opn",
+        "alias": "FORESIGHT",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "funcvect",
+          "value": "0x7e"
+        },
+        {
+          "name": "clockmul",
+          "value": "8"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "PMD_98.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "PMD.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "BGM001.M",
+          "offset": "0x10"
+        },
+        {
+          "type": "file",
+          "path": "BGM002.M",
+          "offset": "0x11"
+        },
+        {
+          "type": "file",
+          "path": "BGM003.M",
+          "offset": "0x12"
+        },
+        {
+          "type": "file",
+          "path": "BGM004.M",
+          "offset": "0x13"
+        },
+        {
+          "type": "file",
+          "path": "BGM005.M",
+          "offset": "0x14"
+        },
+        {
+          "type": "file",
+          "path": "BGM006.M",
+          "offset": "0x15"
+        },
+        {
+          "type": "file",
+          "path": "BGM007.M",
+          "offset": "0x16"
+        },
+        {
+          "type": "file",
+          "path": "BGM008.M",
+          "offset": "0x17"
+        },
+        {
+          "type": "file",
+          "path": "BGM009.M",
+          "offset": "0x18"
+        },
+        {
+          "type": "file",
+          "path": "BGM010.M",
+          "offset": "0x19"
+        },
+        {
+          "type": "file",
+          "path": "BGM011.M",
+          "offset": "0x1A"
+        },
+        {
+          "type": "file",
+          "path": "BGM012.M",
+          "offset": "0x1B"
+        },
+        {
+          "type": "file",
+          "path": "BGM013.M",
+          "offset": "0x1C"
+        },
+        {
+          "type": "file",
+          "path": "BGM014.M",
+          "offset": "0x1D"
+        },
+        {
+          "type": "file",
+          "path": "BGM016.M",
+          "offset": "0x1E"
+        },
+        {
+          "type": "shell",
+          "path": "pmd /M12 /V0 /E2 /DF35 /DS5 /K",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "pmd_98",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "BGM001.M"
+        },
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "BGM002.M"
+        },
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "BGM003.M"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "BGM004.M"
+        },
+        {
+          "kind": "title",
+          "code": "0x14",
+          "title": "BGM005.M"
+        },
+        {
+          "kind": "title",
+          "code": "0x15",
+          "title": "BGM006.M"
+        },
+        {
+          "kind": "title",
+          "code": "0x16",
+          "title": "BGM007.M"
+        },
+        {
+          "kind": "title",
+          "code": "0x17",
+          "title": "BGM008.M"
+        },
+        {
+          "kind": "title",
+          "code": "0x18",
+          "title": "BGM009.M"
+        },
+        {
+          "kind": "title",
+          "code": "0x19",
+          "title": "BGM010.M"
+        },
+        {
+          "kind": "title",
+          "code": "0x1A",
+          "title": "BGM011.M"
+        },
+        {
+          "kind": "title",
+          "code": "0x1B",
+          "title": "BGM012.M"
+        },
+        {
+          "kind": "title",
+          "code": "0x1C",
+          "title": "BGM013.M"
+        },
+        {
+          "kind": "title",
+          "code": "0x1D",
+          "title": "BGM014.M"
+        },
+        {
+          "kind": "title",
+          "code": "0x1E",
+          "title": "BGM016.M"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/foresight.xml",
+      "source_order": 2069,
+      "archive": "lipple_98",
+      "id": "lipple-98-opn"
+    },
+    {
+      "title": "[PC-9801] 曼陀羅家一族",
+      "driver": {
+        "name": "pc98dos",
+        "type": "opn",
+        "alias": "FORESIGHT",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "funcvect",
+          "value": "0x7e"
+        },
+        {
+          "name": "clockmul",
+          "value": "8"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "PMD_98.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "PMD.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "BGM001.M",
+          "offset": "0x10"
+        },
+        {
+          "type": "file",
+          "path": "BGM002.M",
+          "offset": "0x11"
+        },
+        {
+          "type": "file",
+          "path": "BGM003.M",
+          "offset": "0x12"
+        },
+        {
+          "type": "file",
+          "path": "BGM004.M",
+          "offset": "0x13"
+        },
+        {
+          "type": "file",
+          "path": "BGM005.M",
+          "offset": "0x14"
+        },
+        {
+          "type": "file",
+          "path": "BGM006.M",
+          "offset": "0x15"
+        },
+        {
+          "type": "file",
+          "path": "BGM007.M",
+          "offset": "0x16"
+        },
+        {
+          "type": "file",
+          "path": "BGM008.M",
+          "offset": "0x17"
+        },
+        {
+          "type": "file",
+          "path": "BGM009.M",
+          "offset": "0x18"
+        },
+        {
+          "type": "file",
+          "path": "BGM010.M",
+          "offset": "0x19"
+        },
+        {
+          "type": "shell",
+          "path": "pmd /M12 /V0 /E3 /DF35 /DS5 /K",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "pmd_98",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "BGM001.M : MANDARA FAMILY"
+        },
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "BGM002.M : Welcome!"
+        },
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "BGM003.M : サクサクやるどぉ"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "BGM004.M : 御点棒頂戴!"
+        },
+        {
+          "kind": "title",
+          "code": "0x14",
+          "title": "BGM005.M : ややや、やべぇ!"
+        },
+        {
+          "kind": "title",
+          "code": "0x15",
+          "title": "BGM006.M : アガリィ!"
+        },
+        {
+          "kind": "title",
+          "code": "0x16",
+          "title": "BGM007.M : やられたぁ"
+        },
+        {
+          "kind": "title",
+          "code": "0x17",
+          "title": "BGM008.M : Beautiful Time"
+        },
+        {
+          "kind": "title",
+          "code": "0x18",
+          "title": "BGM009.M : プロローグ ～曼陀羅～"
+        },
+        {
+          "kind": "title",
+          "code": "0x19",
+          "title": "BGM010.M : 何でもできるもん!"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/foresight.xml",
+      "source_order": 2070,
+      "archive": "mandara_98",
+      "id": "mandara-98-opn"
+    }
+  ]
+}

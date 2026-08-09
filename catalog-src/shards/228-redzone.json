@@ -1,0 +1,3265 @@
+{
+  "format": "hoot-catalog-shard",
+  "version": 1,
+  "source_file": "xml/redzone.xml",
+  "date": "2005/09/25",
+  "comments": [
+    " //RED-ZONE "
+  ],
+  "games": [
+    {
+      "title": "[PC-9801] X-GIRL",
+      "driver": {
+        "name": "pc98dos",
+        "type": "opn",
+        "alias": "RED-ZONE",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "clockmul",
+          "value": "8"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "usd_98.com",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "XGIRL.OV1",
+          "offset": "-1"
+        },
+        {
+          "type": "conin",
+          "path": "XGIRL.OV1",
+          "offset": "0x05"
+        },
+        {
+          "type": "file",
+          "path": "XG_01.USO",
+          "offset": "0x10"
+        },
+        {
+          "type": "file",
+          "path": "XG_01V.USO",
+          "offset": "0x11"
+        },
+        {
+          "type": "file",
+          "path": "XG_02.USO",
+          "offset": "0x12"
+        },
+        {
+          "type": "file",
+          "path": "XG_02V.USO",
+          "offset": "0x13"
+        },
+        {
+          "type": "file",
+          "path": "XG_03.USO",
+          "offset": "0x14"
+        },
+        {
+          "type": "file",
+          "path": "XG_03V.USO",
+          "offset": "0x15"
+        },
+        {
+          "type": "file",
+          "path": "XG_04.USO",
+          "offset": "0x16"
+        },
+        {
+          "type": "file",
+          "path": "XG_04V.USO",
+          "offset": "0x17"
+        },
+        {
+          "type": "file",
+          "path": "XG_05.USO",
+          "offset": "0x18"
+        },
+        {
+          "type": "file",
+          "path": "XG_05V.USO",
+          "offset": "0x19"
+        },
+        {
+          "type": "file",
+          "path": "XG_06.USO",
+          "offset": "0x1a"
+        },
+        {
+          "type": "file",
+          "path": "XG_06V.USO",
+          "offset": "0x1b"
+        },
+        {
+          "type": "file",
+          "path": "XG_07.USO",
+          "offset": "0x1c"
+        },
+        {
+          "type": "file",
+          "path": "XG_07V.USO",
+          "offset": "0x1d"
+        },
+        {
+          "type": "file",
+          "path": "XG_08.USO",
+          "offset": "0x1e"
+        },
+        {
+          "type": "file",
+          "path": "XG_08V.USO",
+          "offset": "0x1f"
+        },
+        {
+          "type": "file",
+          "path": "XG_09.USO",
+          "offset": "0x20"
+        },
+        {
+          "type": "file",
+          "path": "XG_09V.USO",
+          "offset": "0x21"
+        },
+        {
+          "type": "file",
+          "path": "XG_10.USO",
+          "offset": "0x22"
+        },
+        {
+          "type": "file",
+          "path": "XG_10V.USO",
+          "offset": "0x23"
+        },
+        {
+          "type": "file",
+          "path": "XG_11.USO",
+          "offset": "0x24"
+        },
+        {
+          "type": "file",
+          "path": "XG_11V.USO",
+          "offset": "0x25"
+        },
+        {
+          "type": "file",
+          "path": "XG_12.USO",
+          "offset": "0x26"
+        },
+        {
+          "type": "file",
+          "path": "XG_12V.USO",
+          "offset": "0x27"
+        },
+        {
+          "type": "file",
+          "path": "XG_13.USO",
+          "offset": "0x28"
+        },
+        {
+          "type": "file",
+          "path": "XG_13V.USO",
+          "offset": "0x29"
+        },
+        {
+          "type": "file",
+          "path": "XG_14.USO",
+          "offset": "0x2a"
+        },
+        {
+          "type": "file",
+          "path": "XG_14V.USO",
+          "offset": "0x2b"
+        },
+        {
+          "type": "file",
+          "path": "XG_15.USO",
+          "offset": "0x2c"
+        },
+        {
+          "type": "file",
+          "path": "XG_15V.USO",
+          "offset": "0x2d"
+        },
+        {
+          "type": "file",
+          "path": "XG_SE_01.USO",
+          "offset": "0x2e"
+        },
+        {
+          "type": "file",
+          "path": "XG_SE_02.USO",
+          "offset": "0x2f"
+        },
+        {
+          "type": "shell",
+          "path": "usd_98",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "comment",
+          "text": " SSGバランス内蔵用\n\t\t\t<title code=\"0x10\">XG_01.USO</title>\n\t\t\t<title code=\"0x12\">XG_02.USO</title>\n\t\t\t<title code=\"0x14\">XG_03.USO</title>\n\t\t\t<title code=\"0x16\">XG_04.USO</title>\n\t\t\t<title code=\"0x18\">XG_05.USO</title>\n\t\t\t<title code=\"0x1a\">XG_06.USO</title>\n\t\t\t<title code=\"0x1c\">XG_07.USO</title>\n\t\t\t<title code=\"0x1e\">XG_08.USO</title>\n\t\t\t<title code=\"0x20\">XG_09.USO</title>\n\t\t\t<title code=\"0x22\">XG_10.USO</title>\n\t\t\t<title code=\"0x24\">XG_11.USO</title>\n\t\t\t<title code=\"0x26\">XG_12.USO</title>\n\t\t\t<title code=\"0x28\">XG_13.USO</title>\n\t\t\t<title code=\"0x2a\">XG_14.USO</title>\n\t\t\t<title code=\"0x2c\">XG_15.USO</title>\n"
+        },
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "XG_01V.USO : open your earth hole"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "XG_02V.USO : are you going with us ?!"
+        },
+        {
+          "kind": "title",
+          "code": "0x15",
+          "title": "XG_03V.USO : just movin'"
+        },
+        {
+          "kind": "title",
+          "code": "0x17",
+          "title": "XG_04V.USO : 4 the future"
+        },
+        {
+          "kind": "title",
+          "code": "0x19",
+          "title": "XG_05V.USO : talking base"
+        },
+        {
+          "kind": "title",
+          "code": "0x1b",
+          "title": "XG_06V.USO : underground floor"
+        },
+        {
+          "kind": "title",
+          "code": "0x1d",
+          "title": "XG_07V.USO : mouth 2 mouth"
+        },
+        {
+          "kind": "title",
+          "code": "0x1f",
+          "title": "XG_08V.USO : a rod of song"
+        },
+        {
+          "kind": "title",
+          "code": "0x21",
+          "title": "XG_09V.USO : open your mouth"
+        },
+        {
+          "kind": "title",
+          "code": "0x23",
+          "title": "XG_10V.USO : slave 2 the rythm"
+        },
+        {
+          "kind": "title",
+          "code": "0x25",
+          "title": "XG_11V.USO : shoot me"
+        },
+        {
+          "kind": "title",
+          "code": "0x27",
+          "title": "XG_12V.USO : tongue 2 tongue"
+        },
+        {
+          "kind": "title",
+          "code": "0x29",
+          "title": "XG_13V.USO : climaxx/spanking love"
+        },
+        {
+          "kind": "title",
+          "code": "0x2b",
+          "title": "XG_14V.USO : 2 be continued"
+        },
+        {
+          "kind": "title",
+          "code": "0x2d",
+          "title": "XG_15V.USO : beat crazy"
+        },
+        {
+          "kind": "title",
+          "code": "0x2e",
+          "title": "XG.SE:01   :"
+        },
+        {
+          "kind": "title",
+          "code": "0x2f",
+          "title": "XG.SE:02   :"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/redzone.xml",
+      "source_order": 3798,
+      "archive": "x-girl_98",
+      "id": "x-girl-98-opn"
+    },
+    {
+      "title": "[PC-9801] 亜紀子 GOLD -THE QUEEN OF ADULT-",
+      "driver": {
+        "name": "pc98dos",
+        "type": "opn",
+        "alias": "RED-ZONE",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "clockmul",
+          "value": "8"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "usd_98.com",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "GOLD.OV1",
+          "offset": "-1"
+        },
+        {
+          "type": "conin",
+          "path": "GOLD.OV1",
+          "offset": "0x05"
+        },
+        {
+          "type": "file",
+          "path": "BGM_10D.USO",
+          "offset": "0x10"
+        },
+        {
+          "type": "file",
+          "path": "BGM_10V.USO",
+          "offset": "0x11"
+        },
+        {
+          "type": "file",
+          "path": "BGM_11D.USO",
+          "offset": "0x12"
+        },
+        {
+          "type": "file",
+          "path": "BGM_11V.USO",
+          "offset": "0x13"
+        },
+        {
+          "type": "file",
+          "path": "BGM_1D.USO",
+          "offset": "0x14"
+        },
+        {
+          "type": "file",
+          "path": "BGM_1V.USO",
+          "offset": "0x15"
+        },
+        {
+          "type": "file",
+          "path": "BGM_2D.USO",
+          "offset": "0x16"
+        },
+        {
+          "type": "file",
+          "path": "BGM_2V.USO",
+          "offset": "0x17"
+        },
+        {
+          "type": "file",
+          "path": "BGM_3D.USO",
+          "offset": "0x18"
+        },
+        {
+          "type": "file",
+          "path": "BGM_3V.USO",
+          "offset": "0x19"
+        },
+        {
+          "type": "file",
+          "path": "BGM_4D.USO",
+          "offset": "0x1a"
+        },
+        {
+          "type": "file",
+          "path": "BGM_4V.USO",
+          "offset": "0x1b"
+        },
+        {
+          "type": "file",
+          "path": "BGM_5D.USO",
+          "offset": "0x1c"
+        },
+        {
+          "type": "file",
+          "path": "BGM_5V.USO",
+          "offset": "0x1d"
+        },
+        {
+          "type": "file",
+          "path": "BGM_6D.USO",
+          "offset": "0x1e"
+        },
+        {
+          "type": "file",
+          "path": "BGM_6V.USO",
+          "offset": "0x1f"
+        },
+        {
+          "type": "file",
+          "path": "BGM_7D.USO",
+          "offset": "0x20"
+        },
+        {
+          "type": "file",
+          "path": "BGM_7V.USO",
+          "offset": "0x21"
+        },
+        {
+          "type": "file",
+          "path": "BGM_8D.USO",
+          "offset": "0x22"
+        },
+        {
+          "type": "file",
+          "path": "BGM_8V.USO",
+          "offset": "0x23"
+        },
+        {
+          "type": "file",
+          "path": "BGM_9D.USO",
+          "offset": "0x24"
+        },
+        {
+          "type": "file",
+          "path": "BGM_9V.USO",
+          "offset": "0x25"
+        },
+        {
+          "type": "file",
+          "path": "BGM_H1D.USO",
+          "offset": "0x26"
+        },
+        {
+          "type": "file",
+          "path": "BGM_H1V.USO",
+          "offset": "0x27"
+        },
+        {
+          "type": "file",
+          "path": "BGM_H2D.USO",
+          "offset": "0x28"
+        },
+        {
+          "type": "file",
+          "path": "BGM_H2V.USO",
+          "offset": "0x29"
+        },
+        {
+          "type": "file",
+          "path": "BGM_H3D.USO",
+          "offset": "0x2a"
+        },
+        {
+          "type": "file",
+          "path": "BGM_H3V.USO",
+          "offset": "0x2b"
+        },
+        {
+          "type": "file",
+          "path": "BGM_H4D.USO",
+          "offset": "0x2c"
+        },
+        {
+          "type": "file",
+          "path": "BGM_H4V.USO",
+          "offset": "0x2d"
+        },
+        {
+          "type": "file",
+          "path": "BGM_H5D.USO",
+          "offset": "0x2e"
+        },
+        {
+          "type": "file",
+          "path": "BGM_H5V.USO",
+          "offset": "0x2f"
+        },
+        {
+          "type": "file",
+          "path": "BGM_H6D.USO",
+          "offset": "0x30"
+        },
+        {
+          "type": "file",
+          "path": "BGM_H6V.USO",
+          "offset": "0x31"
+        },
+        {
+          "type": "file",
+          "path": "DX_SE_01.USO",
+          "offset": "0x32"
+        },
+        {
+          "type": "file",
+          "path": "DX_SE_02.USO",
+          "offset": "0x33"
+        },
+        {
+          "type": "file",
+          "path": "DX_SE_03.USO",
+          "offset": "0x34"
+        },
+        {
+          "type": "file",
+          "path": "DX_SE_04.USO",
+          "offset": "0x35"
+        },
+        {
+          "type": "file",
+          "path": "DX_SE_05.USO",
+          "offset": "0x36"
+        },
+        {
+          "type": "file",
+          "path": "VX_SE_01.USO",
+          "offset": "0x37"
+        },
+        {
+          "type": "file",
+          "path": "VX_SE_02.USO",
+          "offset": "0x38"
+        },
+        {
+          "type": "file",
+          "path": "VX_SE_03.USO",
+          "offset": "0x39"
+        },
+        {
+          "type": "file",
+          "path": "VX_SE_04.USO",
+          "offset": "0x3A"
+        },
+        {
+          "type": "file",
+          "path": "VX_SE_05.USO",
+          "offset": "0x3B"
+        },
+        {
+          "type": "shell",
+          "path": "usd_98",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "comment",
+          "text": " SSGバランスDX用\n\t\t\t<title code=\"0x14\">BGM_1D.USO</title>\n\t\t\t<title code=\"0x16\">BGM_2D.USO</title>\n\t\t\t<title code=\"0x18\">BGM_3D.USO</title>\n\t\t\t<title code=\"0x1a\">BGM_4D.USO</title>\n\t\t\t<title code=\"0x1c\">BGM_5D.USO</title>\n\t\t\t<title code=\"0x1e\">BGM_6D.USO</title>\n\t\t\t<title code=\"0x20\">BGM_7D.USO</title>\n\t\t\t<title code=\"0x22\">BGM_8D.USO</title>\n\t\t\t<title code=\"0x24\">BGM_9D.USO</title>\n\t\t\t<title code=\"0x10\">BGM_10D.USO</title>\n\t\t\t<title code=\"0x12\">BGM_11D.USO</title>\n\t\t\t<title code=\"0x26\">BGM_H1D.USO</title>\n\t\t\t<title code=\"0x28\">BGM_H2D.USO</title>\n\t\t\t<title code=\"0x2a\">BGM_H3D.USO</title>\n\t\t\t<title code=\"0x2c\">BGM_H4D.USO</title>\n\t\t\t<title code=\"0x2e\">BGM_H5D.USO</title>\n\t\t\t<title code=\"0x30\">BGM_H6D.USO</title>\n\t\t\t<title code=\"0x32\">DX.SE:01</title>\n\t\t\t<title code=\"0x33\">DX.SE:02</title>\n\t\t\t<title code=\"0x34\">DX.SE:03</title>\n\t\t\t<title code=\"0x35\">DX.SE:04</title>\n\t\t\t<title code=\"0x36\">DX.SE:05</title>\n"
+        },
+        {
+          "kind": "title",
+          "code": "0x15",
+          "title": "BGM_1V.USO  : 野ばら"
+        },
+        {
+          "kind": "title",
+          "code": "0x27",
+          "title": "BGM_H1V.USO : けだるい午後"
+        },
+        {
+          "kind": "title",
+          "code": "0x17",
+          "title": "BGM_2V.USO  : 忍びよる影"
+        },
+        {
+          "kind": "title",
+          "code": "0x29",
+          "title": "BGM_H2V.USO : 焦燥"
+        },
+        {
+          "kind": "title",
+          "code": "0x19",
+          "title": "BGM_3V.USO  : 追求"
+        },
+        {
+          "kind": "title",
+          "code": "0x2b",
+          "title": "BGM_H3V.USO : 夕暮れ-トワイライト"
+        },
+        {
+          "kind": "title",
+          "code": "0x1b",
+          "title": "BGM_4V.USO  : 悲しみの少女"
+        },
+        {
+          "kind": "title",
+          "code": "0x2d",
+          "title": "BGM_H4V.USO : 反撃ビート"
+        },
+        {
+          "kind": "title",
+          "code": "0x1d",
+          "title": "BGM_5V.USO  : 悪い予感"
+        },
+        {
+          "kind": "title",
+          "code": "0x2f",
+          "title": "BGM_H5V.USO : 見せ物にされて"
+        },
+        {
+          "kind": "title",
+          "code": "0x1f",
+          "title": "BGM_6V.USO  : 背徳の匂い"
+        },
+        {
+          "kind": "title",
+          "code": "0x31",
+          "title": "BGM_H6V.USO : MORE DEEP"
+        },
+        {
+          "kind": "title",
+          "code": "0x21",
+          "title": "BGM_7V.USO  : 裏切りのテーマ"
+        },
+        {
+          "kind": "title",
+          "code": "0x23",
+          "title": "BGM_8V.USO  : 亜紀子見参!"
+        },
+        {
+          "kind": "title",
+          "code": "0x25",
+          "title": "BGM_9V.USO  : クライマックス"
+        },
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "BGM_10V.USO : 追跡"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "BGM_11V.USO : 新世界"
+        },
+        {
+          "kind": "title",
+          "code": "0x37",
+          "title": "VX.SE:01    : SE"
+        },
+        {
+          "kind": "title",
+          "code": "0x38",
+          "title": "VX.SE:02    : SE"
+        },
+        {
+          "kind": "title",
+          "code": "0x39",
+          "title": "VX.SE:03    : SE"
+        },
+        {
+          "kind": "title",
+          "code": "0x3A",
+          "title": "VX.SE:04    : SE"
+        },
+        {
+          "kind": "title",
+          "code": "0x3B",
+          "title": "VX.SE:05    : SE"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/redzone.xml",
+      "source_order": 3799,
+      "archive": "akiko_g_98",
+      "id": "akiko-g-98-opn"
+    },
+    {
+      "title": "[PC-9801] 亜紀子 プレミアム・バージョン",
+      "driver": {
+        "name": "pc98dos",
+        "type": "opn",
+        "alias": "RED-ZONE",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "clockmul",
+          "value": "8"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "usd_98.com",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "ADVBIOS.OVL",
+          "offset": "-1"
+        },
+        {
+          "type": "conin",
+          "path": "ADVBIOS.OVL",
+          "offset": "0x05"
+        },
+        {
+          "type": "file",
+          "path": "AKI_01.USO",
+          "offset": "0x10"
+        },
+        {
+          "type": "file",
+          "path": "AKI_02.USO",
+          "offset": "0x11"
+        },
+        {
+          "type": "file",
+          "path": "AKI_03.USO",
+          "offset": "0x12"
+        },
+        {
+          "type": "file",
+          "path": "AKI_04.USO",
+          "offset": "0x13"
+        },
+        {
+          "type": "file",
+          "path": "AKI_05.USO",
+          "offset": "0x14"
+        },
+        {
+          "type": "file",
+          "path": "AKI_06.USO",
+          "offset": "0x15"
+        },
+        {
+          "type": "file",
+          "path": "AKI_08.USO",
+          "offset": "0x16"
+        },
+        {
+          "type": "file",
+          "path": "END_0.USO",
+          "offset": "0x17"
+        },
+        {
+          "type": "file",
+          "path": "END_2.USO",
+          "offset": "0x18"
+        },
+        {
+          "type": "file",
+          "path": "AKIKO_01.USO",
+          "offset": "0x19"
+        },
+        {
+          "type": "file",
+          "path": "AKIKO_02.USO",
+          "offset": "0x1a"
+        },
+        {
+          "type": "shell",
+          "path": "usd_98",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "AKI_01.USO   : 学園にて………"
+        },
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "AKI_02.USO   : AKIKO"
+        },
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "AKI_03.USO   : 凌辱"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "AKI_04.USO   : めまい"
+        },
+        {
+          "kind": "title",
+          "code": "0x14",
+          "title": "AKI_05.USO   : 欲望"
+        },
+        {
+          "kind": "title",
+          "code": "0x15",
+          "title": "AKI_06.USO   : せつないひととき"
+        },
+        {
+          "kind": "title",
+          "code": "0x16",
+          "title": "AKI_08.USO   : 教育指導室にて"
+        },
+        {
+          "kind": "title",
+          "code": "0x17",
+          "title": "END_0.USO    : 決着"
+        },
+        {
+          "kind": "title",
+          "code": "0x18",
+          "title": "END_2.USO    :"
+        },
+        {
+          "kind": "title",
+          "code": "0x19",
+          "title": "AKIKO.SND:01 : SE"
+        },
+        {
+          "kind": "title",
+          "code": "0x1a",
+          "title": "AKIKO.SND:02 : SE"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/redzone.xml",
+      "source_order": 3800,
+      "archive": "akiko_p_98",
+      "id": "akiko-p-98-opn"
+    },
+    {
+      "title": "[PC-9801] 香奈子",
+      "driver": {
+        "name": "pc98dos",
+        "type": "opn",
+        "alias": "RED-ZONE",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "clockmul",
+          "value": "8"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "usd_98.com",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "KANAKO.OV1",
+          "offset": "-1"
+        },
+        {
+          "type": "conin",
+          "path": "KANAKO.OV1",
+          "offset": "0x05"
+        },
+        {
+          "type": "file",
+          "path": "KAN_01D.USO",
+          "offset": "0x10"
+        },
+        {
+          "type": "file",
+          "path": "KAN_01V.USO",
+          "offset": "0x11"
+        },
+        {
+          "type": "file",
+          "path": "KAN_02D.USO",
+          "offset": "0x12"
+        },
+        {
+          "type": "file",
+          "path": "KAN_02V.USO",
+          "offset": "0x13"
+        },
+        {
+          "type": "file",
+          "path": "KAN_03D.USO",
+          "offset": "0x14"
+        },
+        {
+          "type": "file",
+          "path": "KAN_03V.USO",
+          "offset": "0x15"
+        },
+        {
+          "type": "file",
+          "path": "KAN_04D.USO",
+          "offset": "0x16"
+        },
+        {
+          "type": "file",
+          "path": "KAN_04V.USO",
+          "offset": "0x17"
+        },
+        {
+          "type": "file",
+          "path": "KAN_05D.USO",
+          "offset": "0x18"
+        },
+        {
+          "type": "file",
+          "path": "KAN_05V.USO",
+          "offset": "0x19"
+        },
+        {
+          "type": "file",
+          "path": "KAN_06D.USO",
+          "offset": "0x1a"
+        },
+        {
+          "type": "file",
+          "path": "KAN_06V.USO",
+          "offset": "0x1b"
+        },
+        {
+          "type": "file",
+          "path": "KAN_07D.USO",
+          "offset": "0x1c"
+        },
+        {
+          "type": "file",
+          "path": "KAN_07V.USO",
+          "offset": "0x1d"
+        },
+        {
+          "type": "file",
+          "path": "KAN_08D.USO",
+          "offset": "0x1e"
+        },
+        {
+          "type": "file",
+          "path": "KAN_08V.USO",
+          "offset": "0x1f"
+        },
+        {
+          "type": "file",
+          "path": "KAN_09D.USO",
+          "offset": "0x20"
+        },
+        {
+          "type": "file",
+          "path": "KAN_09V.USO",
+          "offset": "0x21"
+        },
+        {
+          "type": "file",
+          "path": "KAN_10D.USO",
+          "offset": "0x22"
+        },
+        {
+          "type": "file",
+          "path": "KAN_10V.USO",
+          "offset": "0x23"
+        },
+        {
+          "type": "shell",
+          "path": "usd_98",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "comment",
+          "text": " SSGバランスDX用\n\t\t\t<title code=\"0x10\">KAN_01D.USO</title>\n\t\t\t<title code=\"0x12\">KAN_02D.USO</title>\n\t\t\t<title code=\"0x14\">KAN_03D.USO</title>\n\t\t\t<title code=\"0x16\">KAN_04D.USO</title>\n\t\t\t<title code=\"0x18\">KAN_05D.USO</title>\n\t\t\t<title code=\"0x1a\">KAN_06D.USO</title>\n\t\t\t<title code=\"0x1c\">KAN_07D.USO</title>\n\t\t\t<title code=\"0x1e\">KAN_08D.USO</title>\n\t\t\t<title code=\"0x20\">KAN_09D.USO</title>\n\t\t\t<title code=\"0x22\">KAN_10D.USO</title>\n"
+        },
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "KAN_01V.USO : 香奈子のテーマ"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "KAN_02V.USO : オフィスの香奈子"
+        },
+        {
+          "kind": "title",
+          "code": "0x15",
+          "title": "KAN_03V.USO : 命令ですか?"
+        },
+        {
+          "kind": "title",
+          "code": "0x17",
+          "title": "KAN_04V.USO : 香奈子、戸惑う"
+        },
+        {
+          "kind": "title",
+          "code": "0x19",
+          "title": "KAN_05V.USO : どうして乱交?"
+        },
+        {
+          "kind": "title",
+          "code": "0x1b",
+          "title": "KAN_06V.USO : 快楽なお仕事"
+        },
+        {
+          "kind": "title",
+          "code": "0x1d",
+          "title": "KAN_07V.USO : 香奈子の望み"
+        },
+        {
+          "kind": "title",
+          "code": "0x1f",
+          "title": "KAN_08V.USO : 香奈子の幸せ"
+        },
+        {
+          "kind": "title",
+          "code": "0x21",
+          "title": "KAN_09V.USO : お仕事中です"
+        },
+        {
+          "kind": "title",
+          "code": "0x23",
+          "title": "KAN_10V.USO : スイート・オフィス・ラブ"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/redzone.xml",
+      "source_order": 3801,
+      "archive": "kanako_98",
+      "id": "kanako-98-opn"
+    },
+    {
+      "title": "[PC-9801] 沙也香 ～義母～",
+      "driver": {
+        "name": "pc98dos",
+        "type": "opn",
+        "alias": "RED-ZONE",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "clockmul",
+          "value": "8"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "usd_98.com",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "GIBO.OV1",
+          "offset": "-1"
+        },
+        {
+          "type": "conin",
+          "path": "GIBO.OV1",
+          "offset": "0x05"
+        },
+        {
+          "type": "file",
+          "path": "DX/GIBO_01.USO",
+          "offset": "0x10"
+        },
+        {
+          "type": "file",
+          "path": "DX/GIBO_02.USO",
+          "offset": "0x11"
+        },
+        {
+          "type": "file",
+          "path": "DX/GIBO_03.USO",
+          "offset": "0x12"
+        },
+        {
+          "type": "file",
+          "path": "DX/GIBO_04.USO",
+          "offset": "0x13"
+        },
+        {
+          "type": "file",
+          "path": "DX/GIBO_05.USO",
+          "offset": "0x14"
+        },
+        {
+          "type": "file",
+          "path": "DX/GIBO_06.USO",
+          "offset": "0x15"
+        },
+        {
+          "type": "file",
+          "path": "DX/GIBO_07.USO",
+          "offset": "0x16"
+        },
+        {
+          "type": "file",
+          "path": "DX/GIBO_08.USO",
+          "offset": "0x17"
+        },
+        {
+          "type": "file",
+          "path": "DX/GIBO_09.USO",
+          "offset": "0x18"
+        },
+        {
+          "type": "file",
+          "path": "DX/GIBO_10.USO",
+          "offset": "0x19"
+        },
+        {
+          "type": "file",
+          "path": "DX/GIBO_11.USO",
+          "offset": "0x1a"
+        },
+        {
+          "type": "file",
+          "path": "VM/GIBO_01.USO",
+          "offset": "0x1b"
+        },
+        {
+          "type": "file",
+          "path": "VM/GIBO_02.USO",
+          "offset": "0x1c"
+        },
+        {
+          "type": "file",
+          "path": "VM/GIBO_03.USO",
+          "offset": "0x1d"
+        },
+        {
+          "type": "file",
+          "path": "VM/GIBO_04.USO",
+          "offset": "0x1e"
+        },
+        {
+          "type": "file",
+          "path": "VM/GIBO_05.USO",
+          "offset": "0x1f"
+        },
+        {
+          "type": "file",
+          "path": "VM/GIBO_06.USO",
+          "offset": "0x20"
+        },
+        {
+          "type": "file",
+          "path": "VM/GIBO_07.USO",
+          "offset": "0x21"
+        },
+        {
+          "type": "file",
+          "path": "VM/GIBO_08.USO",
+          "offset": "0x22"
+        },
+        {
+          "type": "file",
+          "path": "VM/GIBO_09.USO",
+          "offset": "0x23"
+        },
+        {
+          "type": "file",
+          "path": "VM/GIBO_10.USO",
+          "offset": "0x24"
+        },
+        {
+          "type": "file",
+          "path": "VM/GIBO_11.USO",
+          "offset": "0x25"
+        },
+        {
+          "type": "shell",
+          "path": "usd_98",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "comment",
+          "text": " SSGバランスDX用\n\t\t\t<title code=\"0x10\">DX/GIBO_01.USO</title>\n\t\t\t<title code=\"0x11\">DX/GIBO_02.USO</title>\n\t\t\t<title code=\"0x12\">DX/GIBO_03.USO</title>\n\t\t\t<title code=\"0x13\">DX/GIBO_04.USO</title>\n\t\t\t<title code=\"0x14\">DX/GIBO_05.USO</title>\n\t\t\t<title code=\"0x15\">DX/GIBO_06.USO</title>\n\t\t\t<title code=\"0x16\">DX/GIBO_07.USO</title>\n\t\t\t<title code=\"0x17\">DX/GIBO_08.USO</title>\n\t\t\t<title code=\"0x18\">DX/GIBO_09.USO</title>\n\t\t\t<title code=\"0x19\">DX/GIBO_10.USO</title>\n\t\t\t<title code=\"0x1a\">DX/GIBO_11.USO</title>\n"
+        },
+        {
+          "kind": "title",
+          "code": "0x1b",
+          "title": "VM/GIBO_01.USO : 沙也香のテーマ"
+        },
+        {
+          "kind": "title",
+          "code": "0x1c",
+          "title": "VM/GIBO_02.USO : 一郎のテーマ"
+        },
+        {
+          "kind": "title",
+          "code": "0x1d",
+          "title": "VM/GIBO_03.USO : 銀次のテーマ"
+        },
+        {
+          "kind": "title",
+          "code": "0x1e",
+          "title": "VM/GIBO_04.USO : 一人寂しく"
+        },
+        {
+          "kind": "title",
+          "code": "0x1f",
+          "title": "VM/GIBO_05.USO : 覆面男のテーマ"
+        },
+        {
+          "kind": "title",
+          "code": "0x20",
+          "title": "VM/GIBO_06.USO : 熟れた肉体"
+        },
+        {
+          "kind": "title",
+          "code": "0x21",
+          "title": "VM/GIBO_07.USO : ちょっと乱れて"
+        },
+        {
+          "kind": "title",
+          "code": "0x22",
+          "title": "VM/GIBO_08.USO : 緊縛のテーマ"
+        },
+        {
+          "kind": "title",
+          "code": "0x23",
+          "title": "VM/GIBO_09.USO : 愛の目覚め"
+        },
+        {
+          "kind": "title",
+          "code": "0x24",
+          "title": "VM/GIBO_10.USO : クライマックス"
+        },
+        {
+          "kind": "title",
+          "code": "0x25",
+          "title": "VM/GIBO_11.USO : エンディング"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/redzone.xml",
+      "source_order": 3802,
+      "archive": "sayaka_98",
+      "id": "sayaka-98-opn"
+    },
+    {
+      "title": "[PC-9801] 真奈美 ～愛と交換の日々～",
+      "driver": {
+        "name": "pc98dos",
+        "type": "opn",
+        "alias": "RED-ZONE",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "clockmul",
+          "value": "8"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "usd_98.com",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MANAMI.OV1",
+          "offset": "-1"
+        },
+        {
+          "type": "conin",
+          "path": "MANAMI.OV1",
+          "offset": "0x05"
+        },
+        {
+          "type": "file",
+          "path": "SWP_01D.USO",
+          "offset": "0x10"
+        },
+        {
+          "type": "file",
+          "path": "SWP_01V.USO",
+          "offset": "0x11"
+        },
+        {
+          "type": "file",
+          "path": "SWP_02D.USO",
+          "offset": "0x12"
+        },
+        {
+          "type": "file",
+          "path": "SWP_02V.USO",
+          "offset": "0x13"
+        },
+        {
+          "type": "file",
+          "path": "SWP_03D.USO",
+          "offset": "0x14"
+        },
+        {
+          "type": "file",
+          "path": "SWP_03V.USO",
+          "offset": "0x15"
+        },
+        {
+          "type": "file",
+          "path": "SWP_04D.USO",
+          "offset": "0x16"
+        },
+        {
+          "type": "file",
+          "path": "SWP_04V.USO",
+          "offset": "0x17"
+        },
+        {
+          "type": "file",
+          "path": "SWP_05D.USO",
+          "offset": "0x18"
+        },
+        {
+          "type": "file",
+          "path": "SWP_05V.USO",
+          "offset": "0x19"
+        },
+        {
+          "type": "file",
+          "path": "SWP_06D.USO",
+          "offset": "0x1a"
+        },
+        {
+          "type": "file",
+          "path": "SWP_06V.USO",
+          "offset": "0x1b"
+        },
+        {
+          "type": "file",
+          "path": "SWP_07D.USO",
+          "offset": "0x1c"
+        },
+        {
+          "type": "file",
+          "path": "SWP_07V.USO",
+          "offset": "0x1d"
+        },
+        {
+          "type": "shell",
+          "path": "usd_98",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "comment",
+          "text": " SSGバランスDX用\n\t\t\t<title code=\"0x10\">SWP_01D.USO</title>\n\t\t\t<title code=\"0x12\">SWP_02D.USO</title>\n\t\t\t<title code=\"0x14\">SWP_03D.USO</title>\n\t\t\t<title code=\"0x16\">SWP_04D.USO</title>\n\t\t\t<title code=\"0x18\">SWP_05D.USO</title>\n\t\t\t<title code=\"0x1a\">SWP_06D.USO</title>\n\t\t\t<title code=\"0x1c\">SWP_07D.USO</title>\n"
+        },
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "SWP_01V.USO"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "SWP_02V.USO"
+        },
+        {
+          "kind": "title",
+          "code": "0x15",
+          "title": "SWP_03V.USO"
+        },
+        {
+          "kind": "title",
+          "code": "0x17",
+          "title": "SWP_04V.USO"
+        },
+        {
+          "kind": "title",
+          "code": "0x19",
+          "title": "SWP_05V.USO"
+        },
+        {
+          "kind": "title",
+          "code": "0x1b",
+          "title": "SWP_06V.USO"
+        },
+        {
+          "kind": "title",
+          "code": "0x1d",
+          "title": "SWP_07V.USO"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/redzone.xml",
+      "source_order": 3803,
+      "archive": "manami_98",
+      "id": "manami-98-opn"
+    },
+    {
+      "title": "[PC-9801] 尋問遊戯",
+      "driver": {
+        "name": "pc98dos",
+        "type": "opn",
+        "alias": "RED-ZONE",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "clockmul",
+          "value": "8"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "usd_98.com",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "YUGI.OV1",
+          "offset": "-1"
+        },
+        {
+          "type": "conin",
+          "path": "YUGI.OV1",
+          "offset": "0x05"
+        },
+        {
+          "type": "file",
+          "path": "JIN_01.USO",
+          "offset": "0x10"
+        },
+        {
+          "type": "file",
+          "path": "JIN_02.USO",
+          "offset": "0x11"
+        },
+        {
+          "type": "file",
+          "path": "JIN_03.USO",
+          "offset": "0x12"
+        },
+        {
+          "type": "file",
+          "path": "JIN_04.USO",
+          "offset": "0x13"
+        },
+        {
+          "type": "file",
+          "path": "JIN_05.USO",
+          "offset": "0x14"
+        },
+        {
+          "type": "file",
+          "path": "JIN_06.USO",
+          "offset": "0x15"
+        },
+        {
+          "type": "file",
+          "path": "JIN_07.USO",
+          "offset": "0x16"
+        },
+        {
+          "type": "file",
+          "path": "JIN_08.USO",
+          "offset": "0x17"
+        },
+        {
+          "type": "file",
+          "path": "JIN_09.USO",
+          "offset": "0x18"
+        },
+        {
+          "type": "file",
+          "path": "JIN_10.USO",
+          "offset": "0x19"
+        },
+        {
+          "type": "file",
+          "path": "JIN_11.USO",
+          "offset": "0x1a"
+        },
+        {
+          "type": "file",
+          "path": "JIN_12.USO",
+          "offset": "0x1b"
+        },
+        {
+          "type": "file",
+          "path": "JIN_01V.USO",
+          "offset": "0x1c"
+        },
+        {
+          "type": "file",
+          "path": "JIN_02V.USO",
+          "offset": "0x1d"
+        },
+        {
+          "type": "file",
+          "path": "JIN_03V.USO",
+          "offset": "0x1e"
+        },
+        {
+          "type": "file",
+          "path": "JIN_04V.USO",
+          "offset": "0x1f"
+        },
+        {
+          "type": "file",
+          "path": "JIN_05V.USO",
+          "offset": "0x20"
+        },
+        {
+          "type": "file",
+          "path": "JIN_06V.USO",
+          "offset": "0x21"
+        },
+        {
+          "type": "file",
+          "path": "JIN_07V.USO",
+          "offset": "0x22"
+        },
+        {
+          "type": "file",
+          "path": "JIN_08V.USO",
+          "offset": "0x23"
+        },
+        {
+          "type": "file",
+          "path": "JIN_09V.USO",
+          "offset": "0x24"
+        },
+        {
+          "type": "file",
+          "path": "JIN_10V.USO",
+          "offset": "0x25"
+        },
+        {
+          "type": "file",
+          "path": "JIN_11V.USO",
+          "offset": "0x26"
+        },
+        {
+          "type": "file",
+          "path": "JIN_12V.USO",
+          "offset": "0x27"
+        },
+        {
+          "type": "file",
+          "path": "YUGI_01.USO",
+          "offset": "0x28"
+        },
+        {
+          "type": "file",
+          "path": "YUGI_02.USO",
+          "offset": "0x29"
+        },
+        {
+          "type": "file",
+          "path": "YUGI_03.USO",
+          "offset": "0x2A"
+        },
+        {
+          "type": "file",
+          "path": "YUGI_04.USO",
+          "offset": "0x2B"
+        },
+        {
+          "type": "file",
+          "path": "YUGIV_01.USO",
+          "offset": "0x2C"
+        },
+        {
+          "type": "file",
+          "path": "YUGIV_02.USO",
+          "offset": "0x2D"
+        },
+        {
+          "type": "file",
+          "path": "YUGIV_03.USO",
+          "offset": "0x2E"
+        },
+        {
+          "type": "file",
+          "path": "YUGIV_04.USO",
+          "offset": "0x2F"
+        },
+        {
+          "type": "shell",
+          "path": "usd_98",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "comment",
+          "text": " SSGバランス内蔵用\n\t\t\t<title code=\"0x10\">JIN_01.USO</title>\n\t\t\t<title code=\"0x11\">JIN_02.USO</title>\n\t\t\t<title code=\"0x12\">JIN_03.USO</title>\n\t\t\t<title code=\"0x13\">JIN_04.USO</title>\n\t\t\t<title code=\"0x14\">JIN_05.USO</title>\n\t\t\t<title code=\"0x15\">JIN_06.USO</title>\n\t\t\t<title code=\"0x16\">JIN_07.USO</title>\n\t\t\t<title code=\"0x17\">JIN_08.USO</title>\n\t\t\t<title code=\"0x18\">JIN_09.USO</title>\n\t\t\t<title code=\"0x19\">JIN_10.USO</title>\n\t\t\t<title code=\"0x1a\">JIN_11.USO</title>\n\t\t\t<title code=\"0x1b\">JIN_12.USO</title>\n\t\t\t<title code=\"0x28\">YUGI.SE:01</title>\n\t\t\t<title code=\"0x29\">YUGI.SE:02</title>\n\t\t\t<title code=\"0x2A\">YUGI.SE:03</title>\n\t\t\t<title code=\"0x2B\">YUGI.SE:04</title>\n"
+        },
+        {
+          "kind": "title",
+          "code": "0x1c",
+          "title": "JIN_01V.USO : JIN_01"
+        },
+        {
+          "kind": "title",
+          "code": "0x1d",
+          "title": "JIN_02V.USO : JIN_02"
+        },
+        {
+          "kind": "title",
+          "code": "0x1e",
+          "title": "JIN_03V.USO : JIN_03"
+        },
+        {
+          "kind": "title",
+          "code": "0x1f",
+          "title": "JIN_04V.USO : JIN_04"
+        },
+        {
+          "kind": "title",
+          "code": "0x20",
+          "title": "JIN_05V.USO : JIN_05"
+        },
+        {
+          "kind": "title",
+          "code": "0x21",
+          "title": "JIN_06V.USO : JIN_06"
+        },
+        {
+          "kind": "title",
+          "code": "0x22",
+          "title": "JIN_07V.USO : JIN_07"
+        },
+        {
+          "kind": "title",
+          "code": "0x23",
+          "title": "JIN_08V.USO : JIN_08"
+        },
+        {
+          "kind": "title",
+          "code": "0x24",
+          "title": "JIN_09V.USO : JIN_09"
+        },
+        {
+          "kind": "title",
+          "code": "0x25",
+          "title": "JIN_10V.USO : JIN_10"
+        },
+        {
+          "kind": "title",
+          "code": "0x26",
+          "title": "JIN_11V.USO : JIN_11"
+        },
+        {
+          "kind": "title",
+          "code": "0x27",
+          "title": "JIN_12V.USO : JIN_12"
+        },
+        {
+          "kind": "title",
+          "code": "0x2E",
+          "title": "YUGI.SE:03  : JINSE_02"
+        },
+        {
+          "kind": "title",
+          "code": "0x2C",
+          "title": "YUGI.SE:01  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x2D",
+          "title": "YUGI.SE:02  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x2F",
+          "title": "YUGI.SE:04  :"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/redzone.xml",
+      "source_order": 3804,
+      "archive": "jinmon_98",
+      "id": "jinmon-98-opn"
+    },
+    {
+      "title": "[PC-9801] 雀妃楼",
+      "driver": {
+        "name": "pc98dos",
+        "type": "opn",
+        "alias": "RED-ZONE",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "clockmul",
+          "value": "8"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "usd_98.com",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "JANKI.OV1",
+          "offset": "-1"
+        },
+        {
+          "type": "conin",
+          "path": "JANKI.OV1",
+          "offset": "0x05"
+        },
+        {
+          "type": "file",
+          "path": "MJ_01DX.USO",
+          "offset": "0x10"
+        },
+        {
+          "type": "file",
+          "path": "MJ_01VM.USO",
+          "offset": "0x11"
+        },
+        {
+          "type": "file",
+          "path": "MJ_02DX.USO",
+          "offset": "0x12"
+        },
+        {
+          "type": "file",
+          "path": "MJ_02VM.USO",
+          "offset": "0x13"
+        },
+        {
+          "type": "file",
+          "path": "MJ_03DX.USO",
+          "offset": "0x14"
+        },
+        {
+          "type": "file",
+          "path": "MJ_03VM.USO",
+          "offset": "0x15"
+        },
+        {
+          "type": "file",
+          "path": "MJ_04DX.USO",
+          "offset": "0x16"
+        },
+        {
+          "type": "file",
+          "path": "MJ_04VM.USO",
+          "offset": "0x17"
+        },
+        {
+          "type": "file",
+          "path": "MJ_05DX.USO",
+          "offset": "0x18"
+        },
+        {
+          "type": "file",
+          "path": "MJ_05VM.USO",
+          "offset": "0x19"
+        },
+        {
+          "type": "file",
+          "path": "MJ_06DX.USO",
+          "offset": "0x1a"
+        },
+        {
+          "type": "file",
+          "path": "MJ_06VM.USO",
+          "offset": "0x1b"
+        },
+        {
+          "type": "file",
+          "path": "MJ_07DX.USO",
+          "offset": "0x1c"
+        },
+        {
+          "type": "file",
+          "path": "MJ_07VM.USO",
+          "offset": "0x1d"
+        },
+        {
+          "type": "file",
+          "path": "MJ_DX_01.USO",
+          "offset": "0x1E"
+        },
+        {
+          "type": "file",
+          "path": "MJ_DX_02.USO",
+          "offset": "0x1F"
+        },
+        {
+          "type": "file",
+          "path": "MJ_DX_03.USO",
+          "offset": "0x20"
+        },
+        {
+          "type": "file",
+          "path": "MJ_DX_04.USO",
+          "offset": "0x21"
+        },
+        {
+          "type": "file",
+          "path": "MJ_VM_01.USO",
+          "offset": "0x22"
+        },
+        {
+          "type": "file",
+          "path": "MJ_VM_02.USO",
+          "offset": "0x23"
+        },
+        {
+          "type": "file",
+          "path": "MJ_VM_03.USO",
+          "offset": "0x24"
+        },
+        {
+          "type": "file",
+          "path": "MJ_VM_04.USO",
+          "offset": "0x25"
+        },
+        {
+          "type": "shell",
+          "path": "usd_98",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "comment",
+          "text": " SSGバランスDX用\n\t\t\t<title code=\"0x10\">MJ_01DX.USO</title>\n\t\t\t<title code=\"0x12\">MJ_02DX.USO</title>\n\t\t\t<title code=\"0x14\">MJ_03DX.USO</title>\n\t\t\t<title code=\"0x16\">MJ_04DX.USO</title>\n\t\t\t<title code=\"0x18\">MJ_05DX.USO</title>\n\t\t\t<title code=\"0x1a\">MJ_06DX.USO</title>\n\t\t\t<title code=\"0x1c\">MJ_07DX.USO</title>\n\t\t\t<title code=\"0x1E\">MJ_DX.SE:01</title>\n\t\t\t<title code=\"0x1F\">MJ_DX.SE:02</title>\n\t\t\t<title code=\"0x20\">MJ_DX.SE:03</title>\n\t\t\t<title code=\"0x21\">MJ_DX.SE:04</title>\n"
+        },
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "MJ_01VM.USO : オープニング"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "MJ_02VM.USO : 熱血の門・曲の１"
+        },
+        {
+          "kind": "title",
+          "code": "0x15",
+          "title": "MJ_03VM.USO : 熱血の門・曲の２"
+        },
+        {
+          "kind": "title",
+          "code": "0x17",
+          "title": "MJ_04VM.USO : 幻想の門・曲の１"
+        },
+        {
+          "kind": "title",
+          "code": "0x19",
+          "title": "MJ_05VM.USO : 幻想の門・曲の２"
+        },
+        {
+          "kind": "title",
+          "code": "0x1b",
+          "title": "MJ_06VM.USO : 修羅の門・曲の１"
+        },
+        {
+          "kind": "title",
+          "code": "0x1d",
+          "title": "MJ_07VM.USO : 修羅の門・曲の２"
+        },
+        {
+          "kind": "title",
+          "code": "0x22",
+          "title": "MJ_VM.SE:01 : SE"
+        },
+        {
+          "kind": "title",
+          "code": "0x23",
+          "title": "MJ_VM.SE:02 : SE"
+        },
+        {
+          "kind": "title",
+          "code": "0x24",
+          "title": "MJ_VM.SE:03 : SE"
+        },
+        {
+          "kind": "title",
+          "code": "0x25",
+          "title": "MJ_VM.SE:04 : SE"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/redzone.xml",
+      "source_order": 3805,
+      "archive": "jankirou_98",
+      "id": "jankirou-98-opn"
+    },
+    {
+      "title": "[PC-9801] 稚恵美 ～緊縛エアライン～",
+      "driver": {
+        "name": "pc98dos",
+        "type": "opn",
+        "alias": "RED-ZONE",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "clockmul",
+          "value": "8"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "usd_98.com",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "CHIEMI.OV1",
+          "offset": "-1"
+        },
+        {
+          "type": "conin",
+          "path": "CHIEMI.OV1",
+          "offset": "0x05"
+        },
+        {
+          "type": "file",
+          "path": "DX/ST_02.USO",
+          "offset": "0x10"
+        },
+        {
+          "type": "file",
+          "path": "DX/ST_03.USO",
+          "offset": "0x11"
+        },
+        {
+          "type": "file",
+          "path": "DX/ST_04.USO",
+          "offset": "0x12"
+        },
+        {
+          "type": "file",
+          "path": "DX/ST_05.USO",
+          "offset": "0x13"
+        },
+        {
+          "type": "file",
+          "path": "DX/ST_06.USO",
+          "offset": "0x14"
+        },
+        {
+          "type": "file",
+          "path": "DX/ST_16.USO",
+          "offset": "0x15"
+        },
+        {
+          "type": "file",
+          "path": "DX/ST_20.USO",
+          "offset": "0x16"
+        },
+        {
+          "type": "file",
+          "path": "DX/TIE_01.USO",
+          "offset": "0x17"
+        },
+        {
+          "type": "file",
+          "path": "DX/TIE_02.USO",
+          "offset": "0x18"
+        },
+        {
+          "type": "file",
+          "path": "DX/TIE_03.USO",
+          "offset": "0x19"
+        },
+        {
+          "type": "file",
+          "path": "VM/ST_02.USO",
+          "offset": "0x1a"
+        },
+        {
+          "type": "file",
+          "path": "VM/ST_03.USO",
+          "offset": "0x1b"
+        },
+        {
+          "type": "file",
+          "path": "VM/ST_04.USO",
+          "offset": "0x1c"
+        },
+        {
+          "type": "file",
+          "path": "VM/ST_05.USO",
+          "offset": "0x1d"
+        },
+        {
+          "type": "file",
+          "path": "VM/ST_06.USO",
+          "offset": "0x1e"
+        },
+        {
+          "type": "file",
+          "path": "VM/ST_16.USO",
+          "offset": "0x1f"
+        },
+        {
+          "type": "file",
+          "path": "VM/ST_20.USO",
+          "offset": "0x20"
+        },
+        {
+          "type": "file",
+          "path": "VM/TIE_01.USO",
+          "offset": "0x21"
+        },
+        {
+          "type": "file",
+          "path": "VM/TIE_02.USO",
+          "offset": "0x22"
+        },
+        {
+          "type": "file",
+          "path": "VM/TIE_03.USO",
+          "offset": "0x23"
+        },
+        {
+          "type": "file",
+          "path": "CH_SE_01.USO",
+          "offset": "0x24"
+        },
+        {
+          "type": "file",
+          "path": "CH_SE_02.USO",
+          "offset": "0x25"
+        },
+        {
+          "type": "file",
+          "path": "CH_SE_03.USO",
+          "offset": "0x26"
+        },
+        {
+          "type": "shell",
+          "path": "usd_98",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "comment",
+          "text": " SSGバランスDX用\n\t\t\t<title code=\"0x10\">DX/ST_02.USO</title>\n\t\t\t<title code=\"0x11\">DX/ST_03.USO</title>\n\t\t\t<title code=\"0x12\">DX/ST_04.USO</title>\n\t\t\t<title code=\"0x13\">DX/ST_05.USO</title>\n\t\t\t<title code=\"0x14\">DX/ST_06.USO</title>\n\t\t\t<title code=\"0x15\">DX/ST_16.USO</title>\n\t\t\t<title code=\"0x16\">DX/ST_20.USO</title>\n\t\t\t<title code=\"0x17\">DX/TIE_01.USO</title>\n\t\t\t<title code=\"0x18\">DX/TIE_02.USO</title>\n\t\t\t<title code=\"0x19\">DX/TIE_03.USO</title>\n"
+        },
+        {
+          "kind": "title",
+          "code": "0x21",
+          "title": "VM/TIE_01.USO : FLIGHT"
+        },
+        {
+          "kind": "title",
+          "code": "0x23",
+          "title": "VM/TIE_03.USO : HAVE A NICE TRIP"
+        },
+        {
+          "kind": "title",
+          "code": "0x22",
+          "title": "VM/TIE_02.USO : 昇進"
+        },
+        {
+          "kind": "title",
+          "code": "0x1a",
+          "title": "VM/ST_02.USO  : JACK THE BODY!"
+        },
+        {
+          "kind": "title",
+          "code": "0x1e",
+          "title": "VM/ST_06.USO  : JACK ME!"
+        },
+        {
+          "kind": "title",
+          "code": "0x1f",
+          "title": "VM/ST_16.USO  : 悪い予感"
+        },
+        {
+          "kind": "title",
+          "code": "0x20",
+          "title": "VM/ST_20.USO  : TERROR"
+        },
+        {
+          "kind": "title",
+          "code": "0x1d",
+          "title": "VM/ST_05.USO  : 快楽のワルツ-DANCING"
+        },
+        {
+          "kind": "title",
+          "code": "0x1b",
+          "title": "VM/ST_03.USO  : 傷心"
+        },
+        {
+          "kind": "title",
+          "code": "0x1c",
+          "title": "VM/ST_04.USO  : 明日に向かって"
+        },
+        {
+          "kind": "title",
+          "code": "0x24",
+          "title": "CHIEMI.SE:01  : SE"
+        },
+        {
+          "kind": "title",
+          "code": "0x25",
+          "title": "CHIEMI.SE:02  : SE"
+        },
+        {
+          "kind": "title",
+          "code": "0x26",
+          "title": "CHIEMI.SE:03  : SE"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/redzone.xml",
+      "source_order": 3806,
+      "archive": "chiemi_98",
+      "id": "chiemi-98-opn"
+    },
+    {
+      "title": "[PC-9801] 透明人間あらわるあらわる",
+      "driver": {
+        "name": "pc98dos",
+        "type": "opn",
+        "alias": "RED-ZONE",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "clockmul",
+          "value": "8"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "usd_98.com",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "TOM.OV1",
+          "offset": "-1"
+        },
+        {
+          "type": "conin",
+          "path": "TOM.OV1",
+          "offset": "0x05"
+        },
+        {
+          "type": "file",
+          "path": "N_04.USO",
+          "offset": "0x10"
+        },
+        {
+          "type": "file",
+          "path": "T_001.USO",
+          "offset": "0x11"
+        },
+        {
+          "type": "file",
+          "path": "T_002.USO",
+          "offset": "0x12"
+        },
+        {
+          "type": "file",
+          "path": "T_003.USO",
+          "offset": "0x13"
+        },
+        {
+          "type": "file",
+          "path": "T_004.USO",
+          "offset": "0x14"
+        },
+        {
+          "type": "file",
+          "path": "T_005.USO",
+          "offset": "0x15"
+        },
+        {
+          "type": "file",
+          "path": "T_006.USO",
+          "offset": "0x16"
+        },
+        {
+          "type": "file",
+          "path": "T_007.USO",
+          "offset": "0x17"
+        },
+        {
+          "type": "file",
+          "path": "T_01.USO",
+          "offset": "0x18"
+        },
+        {
+          "type": "file",
+          "path": "T_02.USO",
+          "offset": "0x19"
+        },
+        {
+          "type": "file",
+          "path": "T_03.USO",
+          "offset": "0x1a"
+        },
+        {
+          "type": "file",
+          "path": "T_04.USO",
+          "offset": "0x1b"
+        },
+        {
+          "type": "file",
+          "path": "T_05.USO",
+          "offset": "0x1c"
+        },
+        {
+          "type": "file",
+          "path": "T_06.USO",
+          "offset": "0x1d"
+        },
+        {
+          "type": "file",
+          "path": "T_07.USO",
+          "offset": "0x1e"
+        },
+        {
+          "type": "file",
+          "path": "TOM_01.USO",
+          "offset": "0x1F"
+        },
+        {
+          "type": "file",
+          "path": "TOM_02.USO",
+          "offset": "0x20"
+        },
+        {
+          "type": "file",
+          "path": "TOM_03.USO",
+          "offset": "0x21"
+        },
+        {
+          "type": "file",
+          "path": "TOM_04.USO",
+          "offset": "0x22"
+        },
+        {
+          "type": "file",
+          "path": "TOM_05.USO",
+          "offset": "0x23"
+        },
+        {
+          "type": "file",
+          "path": "TOM1_01.USO",
+          "offset": "0x24"
+        },
+        {
+          "type": "file",
+          "path": "TOM1_02.USO",
+          "offset": "0x25"
+        },
+        {
+          "type": "file",
+          "path": "TOM1_03.USO",
+          "offset": "0x26"
+        },
+        {
+          "type": "file",
+          "path": "TOM1_04.USO",
+          "offset": "0x27"
+        },
+        {
+          "type": "shell",
+          "path": "usd_98",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "comment",
+          "text": " 内蔵音源用\n\t\t\t<title code=\"0x11\">T_001.USO</title>\n\t\t\t<title code=\"0x12\">T_002.USO</title>\n\t\t\t<title code=\"0x13\">T_003.USO</title>\n\t\t\t<title code=\"0x14\">T_004.USO</title>\n\t\t\t<title code=\"0x15\">T_005.USO</title>\n\t\t\t<title code=\"0x16\">T_006.USO</title>\n\t\t\t<title code=\"0x17\">T_007.USO</title>\n\t\t\t<title code=\"0x24\">TOM1.BND:01</title>\n\t\t\t<title code=\"0x25\">TOM1.BND:02</title>\n\t\t\t<title code=\"0x26\">TOM1.BND:03</title>\n\t\t\t<title code=\"0x27\">TOM1.BND:04</title>\n\t\t  "
+        },
+        {
+          "kind": "title",
+          "code": "0x18",
+          "title": "T_01.USO"
+        },
+        {
+          "kind": "title",
+          "code": "0x19",
+          "title": "T_02.USO"
+        },
+        {
+          "kind": "title",
+          "code": "0x1a",
+          "title": "T_03.USO"
+        },
+        {
+          "kind": "title",
+          "code": "0x1b",
+          "title": "T_04.USO"
+        },
+        {
+          "kind": "title",
+          "code": "0x1c",
+          "title": "T_05.USO"
+        },
+        {
+          "kind": "title",
+          "code": "0x1d",
+          "title": "T_06.USO"
+        },
+        {
+          "kind": "title",
+          "code": "0x1e",
+          "title": "T_07.USO"
+        },
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "N_04.USO"
+        },
+        {
+          "kind": "title",
+          "code": "0x1F",
+          "title": "TOM.BND:01"
+        },
+        {
+          "kind": "title",
+          "code": "0x20",
+          "title": "TOM.BND:02"
+        },
+        {
+          "kind": "title",
+          "code": "0x21",
+          "title": "TOM.BND:03"
+        },
+        {
+          "kind": "title",
+          "code": "0x22",
+          "title": "TOM.BND:04"
+        },
+        {
+          "kind": "title",
+          "code": "0x23",
+          "title": "TOM.BND:05"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/redzone.xml",
+      "source_order": 3807,
+      "archive": "toumei_98",
+      "id": "toumei-98-opn"
+    },
+    {
+      "title": "[PC-9801] 奈緒美 ～美少女たちの館～",
+      "driver": {
+        "name": "pc98dos",
+        "type": "opn",
+        "alias": "RED-ZONE",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "clockmul",
+          "value": "8"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "usd_98.com",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "NAOMI.OV1",
+          "offset": "-1"
+        },
+        {
+          "type": "conin",
+          "path": "NAOMI.OV1",
+          "offset": "0x05"
+        },
+        {
+          "type": "file",
+          "path": "EX_20.USO",
+          "offset": "0x10"
+        },
+        {
+          "type": "file",
+          "path": "ST_02.USO",
+          "offset": "0x11"
+        },
+        {
+          "type": "file",
+          "path": "DX/N_01.USO",
+          "offset": "0x12"
+        },
+        {
+          "type": "file",
+          "path": "DX/N_02.USO",
+          "offset": "0x13"
+        },
+        {
+          "type": "file",
+          "path": "DX/N_03.USO",
+          "offset": "0x14"
+        },
+        {
+          "type": "file",
+          "path": "DX/N_04.USO",
+          "offset": "0x15"
+        },
+        {
+          "type": "file",
+          "path": "DX/N_05.USO",
+          "offset": "0x16"
+        },
+        {
+          "type": "file",
+          "path": "DX/N_06.USO",
+          "offset": "0x17"
+        },
+        {
+          "type": "file",
+          "path": "VM/N_01.USO",
+          "offset": "0x18"
+        },
+        {
+          "type": "file",
+          "path": "VM/N_02.USO",
+          "offset": "0x19"
+        },
+        {
+          "type": "file",
+          "path": "VM/N_03.USO",
+          "offset": "0x1a"
+        },
+        {
+          "type": "file",
+          "path": "VM/N_04.USO",
+          "offset": "0x1b"
+        },
+        {
+          "type": "file",
+          "path": "VM/N_05.USO",
+          "offset": "0x1c"
+        },
+        {
+          "type": "file",
+          "path": "VM/N_06.USO",
+          "offset": "0x1d"
+        },
+        {
+          "type": "file",
+          "path": "DX/DX_SE_01.USO",
+          "offset": "0x1E"
+        },
+        {
+          "type": "file",
+          "path": "DX/DX_SE_02.USO",
+          "offset": "0x1F"
+        },
+        {
+          "type": "file",
+          "path": "DX/DX_SE_03.USO",
+          "offset": "0x20"
+        },
+        {
+          "type": "file",
+          "path": "DX/DX_SE_04.USO",
+          "offset": "0x21"
+        },
+        {
+          "type": "file",
+          "path": "DX/DX_SE_05.USO",
+          "offset": "0x22"
+        },
+        {
+          "type": "file",
+          "path": "DX/DX_SE_06.USO",
+          "offset": "0x23"
+        },
+        {
+          "type": "file",
+          "path": "DX/DX_SE_07.USO",
+          "offset": "0x24"
+        },
+        {
+          "type": "file",
+          "path": "DX/DX_SE_08.USO",
+          "offset": "0x25"
+        },
+        {
+          "type": "file",
+          "path": "DX/DX_SE_09.USO",
+          "offset": "0x26"
+        },
+        {
+          "type": "file",
+          "path": "DX/DX_SE_10.USO",
+          "offset": "0x27"
+        },
+        {
+          "type": "file",
+          "path": "VM/VM_SE_01.USO",
+          "offset": "0x28"
+        },
+        {
+          "type": "file",
+          "path": "VM/VM_SE_02.USO",
+          "offset": "0x29"
+        },
+        {
+          "type": "file",
+          "path": "VM/VM_SE_03.USO",
+          "offset": "0x2A"
+        },
+        {
+          "type": "file",
+          "path": "VM/VM_SE_04.USO",
+          "offset": "0x2B"
+        },
+        {
+          "type": "file",
+          "path": "VM/VM_SE_05.USO",
+          "offset": "0x2C"
+        },
+        {
+          "type": "file",
+          "path": "VM/VM_SE_06.USO",
+          "offset": "0x2D"
+        },
+        {
+          "type": "file",
+          "path": "VM/VM_SE_07.USO",
+          "offset": "0x2E"
+        },
+        {
+          "type": "file",
+          "path": "VM/VM_SE_08.USO",
+          "offset": "0x2F"
+        },
+        {
+          "type": "file",
+          "path": "VM/VM_SE_09.USO",
+          "offset": "0x30"
+        },
+        {
+          "type": "file",
+          "path": "VM/VM_SE_10.USO",
+          "offset": "0x31"
+        },
+        {
+          "type": "shell",
+          "path": "usd_98",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "comment",
+          "text": " SSGバランスDX用\n\t\t\t<title code=\"0x12\">DX/N_01.USO</title>\n\t\t\t<title code=\"0x13\">DX/N_02.USO</title>\n\t\t\t<title code=\"0x14\">DX/N_03.USO</title>\n\t\t\t<title code=\"0x15\">DX/N_04.USO</title>\n\t\t\t<title code=\"0x16\">DX/N_05.USO</title>\n\t\t\t<title code=\"0x17\">DX/N_06.USO</title>\n\t\t\t<title code=\"0x1E\">DX/NAOMI.SED:01</title>\n\t\t\t<title code=\"0x1F\">DX/NAOMI.SED:02</title>\n\t\t\t<title code=\"0x20\">DX/NAOMI.SED:03</title>\n\t\t\t<title code=\"0x21\">DX/NAOMI.SED:04</title>\n\t\t\t<title code=\"0x22\">DX/NAOMI.SED:05</title>\n\t\t\t<title code=\"0x23\">DX/NAOMI.SED:06</title>\n\t\t\t<title code=\"0x24\">DX/NAOMI.SED:07</title>\n\t\t\t<title code=\"0x25\">DX/NAOMI.SED:08</title>\n\t\t\t<title code=\"0x26\">DX/NAOMI.SED:09</title>\n\t\t\t<title code=\"0x27\">DX/NAOMI.SED:10</title>\n"
+        },
+        {
+          "kind": "title",
+          "code": "0x18",
+          "title": "VM/N_01.USO"
+        },
+        {
+          "kind": "title",
+          "code": "0x19",
+          "title": "VM/N_02.USO"
+        },
+        {
+          "kind": "title",
+          "code": "0x1a",
+          "title": "VM/N_03.USO"
+        },
+        {
+          "kind": "title",
+          "code": "0x1b",
+          "title": "VM/N_04.USO"
+        },
+        {
+          "kind": "title",
+          "code": "0x1c",
+          "title": "VM/N_05.USO"
+        },
+        {
+          "kind": "title",
+          "code": "0x1d",
+          "title": "VM/N_06.USO"
+        },
+        {
+          "kind": "title",
+          "code": "0x28",
+          "title": "VM/NAOMI.SEV:01"
+        },
+        {
+          "kind": "title",
+          "code": "0x29",
+          "title": "VM/NAOMI.SEV:02"
+        },
+        {
+          "kind": "title",
+          "code": "0x2A",
+          "title": "VM/NAOMI.SEV:03"
+        },
+        {
+          "kind": "title",
+          "code": "0x2B",
+          "title": "VM/NAOMI.SEV:04"
+        },
+        {
+          "kind": "title",
+          "code": "0x2C",
+          "title": "VM/NAOMI.SEV:05"
+        },
+        {
+          "kind": "title",
+          "code": "0x2D",
+          "title": "VM/NAOMI.SEV:06"
+        },
+        {
+          "kind": "title",
+          "code": "0x2E",
+          "title": "VM/NAOMI.SEV:07"
+        },
+        {
+          "kind": "title",
+          "code": "0x2F",
+          "title": "VM/NAOMI.SEV:08"
+        },
+        {
+          "kind": "title",
+          "code": "0x30",
+          "title": "VM/NAOMI.SEV:09"
+        },
+        {
+          "kind": "title",
+          "code": "0x31",
+          "title": "VM/NAOMI.SEV:10"
+        },
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "EX_20.USO"
+        },
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "ST_02.USO"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/redzone.xml",
+      "source_order": 3808,
+      "archive": "naomi_98",
+      "id": "naomi-98-opn"
+    },
+    {
+      "title": "[PC-9801] 秘密指令1919",
+      "driver": {
+        "name": "pc98dos",
+        "type": "opn",
+        "alias": "RED-ZONE",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "clockmul",
+          "value": "8"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "usd_98.com",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "19191.OV1",
+          "offset": "-1"
+        },
+        {
+          "type": "conin",
+          "path": "19191.OV1",
+          "offset": "0x05"
+        },
+        {
+          "type": "file",
+          "path": "MUS01D.USO",
+          "offset": "0x10"
+        },
+        {
+          "type": "file",
+          "path": "MUS01V.USO",
+          "offset": "0x11"
+        },
+        {
+          "type": "file",
+          "path": "MUS02D.USO",
+          "offset": "0x12"
+        },
+        {
+          "type": "file",
+          "path": "MUS02V.USO",
+          "offset": "0x13"
+        },
+        {
+          "type": "file",
+          "path": "MUS03D.USO",
+          "offset": "0x14"
+        },
+        {
+          "type": "file",
+          "path": "MUS03V.USO",
+          "offset": "0x15"
+        },
+        {
+          "type": "file",
+          "path": "MUS04D.USO",
+          "offset": "0x16"
+        },
+        {
+          "type": "file",
+          "path": "MUS04V.USO",
+          "offset": "0x17"
+        },
+        {
+          "type": "file",
+          "path": "MUS05D.USO",
+          "offset": "0x18"
+        },
+        {
+          "type": "file",
+          "path": "MUS05V.USO",
+          "offset": "0x19"
+        },
+        {
+          "type": "file",
+          "path": "MUS06D.USO",
+          "offset": "0x1a"
+        },
+        {
+          "type": "file",
+          "path": "MUS06V.USO",
+          "offset": "0x1b"
+        },
+        {
+          "type": "file",
+          "path": "MUS07D.USO",
+          "offset": "0x1c"
+        },
+        {
+          "type": "file",
+          "path": "MUS07V.USO",
+          "offset": "0x1d"
+        },
+        {
+          "type": "file",
+          "path": "MUS08D.USO",
+          "offset": "0x1e"
+        },
+        {
+          "type": "file",
+          "path": "MUS08V.USO",
+          "offset": "0x1f"
+        },
+        {
+          "type": "file",
+          "path": "MUS09D.USO",
+          "offset": "0x20"
+        },
+        {
+          "type": "file",
+          "path": "MUS09V.USO",
+          "offset": "0x21"
+        },
+        {
+          "type": "file",
+          "path": "MUS10D.USO",
+          "offset": "0x22"
+        },
+        {
+          "type": "file",
+          "path": "MUS10V.USO",
+          "offset": "0x23"
+        },
+        {
+          "type": "shell",
+          "path": "usd_98",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "comment",
+          "text": " SSGバランスDX用\n\t\t\t<title code=\"0x10\">MUS01D.USO</title>\n\t\t\t<title code=\"0x12\">MUS02D.USO</title>\n\t\t\t<title code=\"0x14\">MUS03D.USO</title>\n\t\t\t<title code=\"0x16\">MUS04D.USO</title>\n\t\t\t<title code=\"0x18\">MUS05D.USO</title>\n\t\t\t<title code=\"0x1a\">MUS06D.USO</title>\n\t\t\t<title code=\"0x1c\">MUS07D.USO</title>\n\t\t\t<title code=\"0x1e\">MUS08D.USO</title>\n\t\t\t<title code=\"0x20\">MUS09D.USO</title>\n\t\t\t<title code=\"0x22\">MUS10D.USO</title>\n"
+        },
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "MUS01V.USO : 1919_01"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "MUS02V.USO : 1919_02"
+        },
+        {
+          "kind": "title",
+          "code": "0x15",
+          "title": "MUS03V.USO : 1919_03"
+        },
+        {
+          "kind": "title",
+          "code": "0x17",
+          "title": "MUS04V.USO : 1919_04"
+        },
+        {
+          "kind": "title",
+          "code": "0x19",
+          "title": "MUS05V.USO : 1919_05"
+        },
+        {
+          "kind": "title",
+          "code": "0x1b",
+          "title": "MUS06V.USO : 1919_06"
+        },
+        {
+          "kind": "title",
+          "code": "0x1d",
+          "title": "MUS07V.USO : 1919_07"
+        },
+        {
+          "kind": "title",
+          "code": "0x1f",
+          "title": "MUS08V.USO : 1919_08"
+        },
+        {
+          "kind": "title",
+          "code": "0x21",
+          "title": "MUS09V.USO : 1919_09"
+        },
+        {
+          "kind": "title",
+          "code": "0x23",
+          "title": "MUS10V.USO : 1919_10"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/redzone.xml",
+      "source_order": 3809,
+      "archive": "himi1919_98",
+      "id": "himi1919-98-opn"
+    },
+    {
+      "title": "[PC-9801] 美穂 ～桃色病棟・面会謝絶!～",
+      "driver": {
+        "name": "pc98dos",
+        "type": "opn",
+        "alias": "RED-ZONE",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "clockmul",
+          "value": "8"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "usd_98.com",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MIHO.OV1",
+          "offset": "-1"
+        },
+        {
+          "type": "conin",
+          "path": "MIHO.OV1",
+          "offset": "0x05"
+        },
+        {
+          "type": "file",
+          "path": "DX/MIHO_01.USO",
+          "offset": "0x10"
+        },
+        {
+          "type": "file",
+          "path": "DX/MIHO_02.USO",
+          "offset": "0x11"
+        },
+        {
+          "type": "file",
+          "path": "DX/MIHO_03.USO",
+          "offset": "0x12"
+        },
+        {
+          "type": "file",
+          "path": "DX/MIHO_04.USO",
+          "offset": "0x13"
+        },
+        {
+          "type": "file",
+          "path": "DX/MIHO_05.USO",
+          "offset": "0x14"
+        },
+        {
+          "type": "file",
+          "path": "DX/MIHO_06.USO",
+          "offset": "0x15"
+        },
+        {
+          "type": "file",
+          "path": "DX/MIHO_07.USO",
+          "offset": "0x16"
+        },
+        {
+          "type": "file",
+          "path": "DX/MIHO_08.USO",
+          "offset": "0x17"
+        },
+        {
+          "type": "file",
+          "path": "DX/MIHO_09.USO",
+          "offset": "0x18"
+        },
+        {
+          "type": "file",
+          "path": "DX/MIHO_10.USO",
+          "offset": "0x19"
+        },
+        {
+          "type": "file",
+          "path": "VM/MIHO_01.USO",
+          "offset": "0x1a"
+        },
+        {
+          "type": "file",
+          "path": "VM/MIHO_02.USO",
+          "offset": "0x1b"
+        },
+        {
+          "type": "file",
+          "path": "VM/MIHO_03.USO",
+          "offset": "0x1c"
+        },
+        {
+          "type": "file",
+          "path": "VM/MIHO_04.USO",
+          "offset": "0x1d"
+        },
+        {
+          "type": "file",
+          "path": "VM/MIHO_05.USO",
+          "offset": "0x1e"
+        },
+        {
+          "type": "file",
+          "path": "VM/MIHO_06.USO",
+          "offset": "0x1f"
+        },
+        {
+          "type": "file",
+          "path": "VM/MIHO_07.USO",
+          "offset": "0x20"
+        },
+        {
+          "type": "file",
+          "path": "VM/MIHO_08.USO",
+          "offset": "0x21"
+        },
+        {
+          "type": "file",
+          "path": "VM/MIHO_09.USO",
+          "offset": "0x22"
+        },
+        {
+          "type": "file",
+          "path": "VM/MIHO_10.USO",
+          "offset": "0x23"
+        },
+        {
+          "type": "file",
+          "path": "DX/MI_SE_01.USO",
+          "offset": "0x24"
+        },
+        {
+          "type": "file",
+          "path": "DX/MI_SE_02.USO",
+          "offset": "0x25"
+        },
+        {
+          "type": "file",
+          "path": "DX/MI_SE_03.USO",
+          "offset": "0x26"
+        },
+        {
+          "type": "file",
+          "path": "DX/MI_SE_04.USO",
+          "offset": "0x27"
+        },
+        {
+          "type": "file",
+          "path": "DX/MI_SE_05.USO",
+          "offset": "0x28"
+        },
+        {
+          "type": "file",
+          "path": "VM/MI_SE_01.USO",
+          "offset": "0x29"
+        },
+        {
+          "type": "file",
+          "path": "VM/MI_SE_02.USO",
+          "offset": "0x2A"
+        },
+        {
+          "type": "file",
+          "path": "VM/MI_SE_03.USO",
+          "offset": "0x2B"
+        },
+        {
+          "type": "file",
+          "path": "VM/MI_SE_04.USO",
+          "offset": "0x2C"
+        },
+        {
+          "type": "file",
+          "path": "VM/MI_SE_05.USO",
+          "offset": "0x2D"
+        },
+        {
+          "type": "shell",
+          "path": "usd_98",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "comment",
+          "text": " SSGバランスDX用\n\t\t\t<title code=\"0x10\">DX/MIHO_01.USO</title>\n\t\t\t<title code=\"0x11\">DX/MIHO_02.USO</title>\n\t\t\t<title code=\"0x12\">DX/MIHO_03.USO</title>\n\t\t\t<title code=\"0x13\">DX/MIHO_04.USO</title>\n\t\t\t<title code=\"0x14\">DX/MIHO_05.USO</title>\n\t\t\t<title code=\"0x15\">DX/MIHO_06.USO</title>\n\t\t\t<title code=\"0x16\">DX/MIHO_07.USO</title>\n\t\t\t<title code=\"0x17\">DX/MIHO_08.USO</title>\n\t\t\t<title code=\"0x18\">DX/MIHO_09.USO</title>\n\t\t\t<title code=\"0x19\">DX/MIHO_10.USO</title>\n\t\t\t<title code=\"0x24\">DX/MIHO.SE:01</title>\n\t\t\t<title code=\"0x25\">DX/MIHO.SE:02</title>\n\t\t\t<title code=\"0x26\">DX/MIHO.SE:03</title>\n\t\t\t<title code=\"0x27\">DX/MIHO.SE:04</title>\n\t\t\t<title code=\"0x28\">DX/MIHO.SE:05</title>\n"
+        },
+        {
+          "kind": "title",
+          "code": "0x1a",
+          "title": "VM/MIHO_01.USO  : MAMBO HYPER GIRL"
+        },
+        {
+          "kind": "title",
+          "code": "0x1b",
+          "title": "VM/MIHO_02.USO  : DAYTIME BOSSA"
+        },
+        {
+          "kind": "title",
+          "code": "0x1c",
+          "title": "VM/MIHO_03.USO  : BETWEEN THE SHEETS"
+        },
+        {
+          "kind": "title",
+          "code": "0x1d",
+          "title": "VM/MIHO_04.USO  : SADNESS"
+        },
+        {
+          "kind": "title",
+          "code": "0x1e",
+          "title": "VM/MIHO_05.USO  : TELL ME WHY"
+        },
+        {
+          "kind": "title",
+          "code": "0x1f",
+          "title": "VM/MIHO_06.USO  : BLOW YOUR HEAD"
+        },
+        {
+          "kind": "title",
+          "code": "0x20",
+          "title": "VM/MIHO_07.USO  : NIGHT WALKER"
+        },
+        {
+          "kind": "title",
+          "code": "0x21",
+          "title": "VM/MIHO_08.USO  : HAPPY END"
+        },
+        {
+          "kind": "title",
+          "code": "0x22",
+          "title": "VM/MIHO_09.USO  : VIBLATION"
+        },
+        {
+          "kind": "title",
+          "code": "0x23",
+          "title": "VM/MIHO_10.USO  : HEAVY VIBE"
+        },
+        {
+          "kind": "title",
+          "code": "0x29",
+          "title": "VM/MIHO.SE:01   : SE"
+        },
+        {
+          "kind": "title",
+          "code": "0x2A",
+          "title": "VM/MIHO.SE:02   : SE"
+        },
+        {
+          "kind": "title",
+          "code": "0x2B",
+          "title": "VM/MIHO.SE:03   : SE"
+        },
+        {
+          "kind": "title",
+          "code": "0x2C",
+          "title": "VM/MIHO.SE:04   : SE"
+        },
+        {
+          "kind": "title",
+          "code": "0x2D",
+          "title": "VM/MIHO.SE:05   : SE"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/redzone.xml",
+      "source_order": 3810,
+      "archive": "miho_98",
+      "id": "miho-98-opn"
+    },
+    {
+      "title": "[X68000] 亜紀子 プレミアム・バージョン",
+      "driver": {
+        "name": "x68k",
+        "type": "generic",
+        "alias": "RED-ZONE",
+        "platform": "SHARP X68000"
+      },
+      "options": [
+        {
+          "name": "mfp",
+          "value": "0x01"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "akiko68snd.bin",
+          "offset": "0x000000"
+        },
+        {
+          "type": "x",
+          "path": "TANK.X",
+          "offset": "0x010000"
+        },
+        {
+          "type": "code",
+          "path": "AKIKO.SND",
+          "offset": "0x04f000"
+        },
+        {
+          "type": "code",
+          "path": "AKIKO.PCD",
+          "offset": "0x050000"
+        },
+        {
+          "type": "code",
+          "path": "AKI_01.USO",
+          "offset": "0x090000"
+        },
+        {
+          "type": "code",
+          "path": "AKI_02.USO",
+          "offset": "0x095000"
+        },
+        {
+          "type": "code",
+          "path": "AKI_03.USO",
+          "offset": "0x09a000"
+        },
+        {
+          "type": "code",
+          "path": "AKI_04.USO",
+          "offset": "0x09f000"
+        },
+        {
+          "type": "code",
+          "path": "AKI_05.USO",
+          "offset": "0x0a4000"
+        },
+        {
+          "type": "code",
+          "path": "AKI_06.USO",
+          "offset": "0x0a9000"
+        },
+        {
+          "type": "code",
+          "path": "AKI_08.USO",
+          "offset": "0x0ae000"
+        },
+        {
+          "type": "code",
+          "path": "END_0.USO",
+          "offset": "0x0b3000"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "AKI_01.USO : 学園にて………"
+        },
+        {
+          "kind": "title",
+          "code": "0x02",
+          "title": "AKI_02.USO : AKIKO"
+        },
+        {
+          "kind": "title",
+          "code": "0x03",
+          "title": "AKI_03.USO : 凌辱"
+        },
+        {
+          "kind": "title",
+          "code": "0x04",
+          "title": "AKI_04.USO : めまい"
+        },
+        {
+          "kind": "title",
+          "code": "0x05",
+          "title": "AKI_05.USO : 欲望"
+        },
+        {
+          "kind": "title",
+          "code": "0x06",
+          "title": "AKI_06.USO : せつないひととき"
+        },
+        {
+          "kind": "title",
+          "code": "0x07",
+          "title": "AKI_08.USO : 教育指導室にて"
+        },
+        {
+          "kind": "title",
+          "code": "0x08",
+          "title": "END_0.USO  : 決着"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/redzone.xml",
+      "source_order": 3811,
+      "archive": "akiko68snd",
+      "id": "akiko68snd-generic"
+    }
+  ]
+}

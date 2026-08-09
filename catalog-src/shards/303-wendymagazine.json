@@ -1,0 +1,6647 @@
+{
+  "format": "hoot-catalog-shard",
+  "version": 1,
+  "source_file": "xml/wendymagazine.xml",
+  "date": "2005/09/25",
+  "comments": [
+    " //ウェンディマガジン "
+  ],
+  "games": [
+    {
+      "title": "[PC-9801] Bell's Avenue(OPN)",
+      "driver": {
+        "name": "pc98dos",
+        "type": "opn",
+        "alias": "ウェンディマガジン",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "clockmul",
+          "value": "8"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "SYNUP_98.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "SYNUPS.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "SYNPLAY.EXE",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "BGM101B.OPN",
+          "offset": "0x10"
+        },
+        {
+          "type": "file",
+          "path": "BGM102B.OPN",
+          "offset": "0x11"
+        },
+        {
+          "type": "file",
+          "path": "BGM202B.OPN",
+          "offset": "0x12"
+        },
+        {
+          "type": "file",
+          "path": "BGM203B.OPN",
+          "offset": "0x13"
+        },
+        {
+          "type": "file",
+          "path": "BGM301B.OPN",
+          "offset": "0x14"
+        },
+        {
+          "type": "file",
+          "path": "BGM302B.OPN",
+          "offset": "0x15"
+        },
+        {
+          "type": "file",
+          "path": "BGM401B.OPN",
+          "offset": "0x16"
+        },
+        {
+          "type": "file",
+          "path": "BGM402B.OPN",
+          "offset": "0x17"
+        },
+        {
+          "type": "file",
+          "path": "FUNK_UFO.OPN",
+          "offset": "0x18"
+        },
+        {
+          "type": "file",
+          "path": "MELO001.OPN",
+          "offset": "0x19"
+        },
+        {
+          "type": "file",
+          "path": "OPN2L.OPN",
+          "offset": "0x1a"
+        },
+        {
+          "type": "file",
+          "path": "TTL_01L.OPN",
+          "offset": "0x1b"
+        },
+        {
+          "type": "file",
+          "path": "TTL_02L.OPN",
+          "offset": "0x1c"
+        },
+        {
+          "type": "file",
+          "path": "TTL_03L.OPN",
+          "offset": "0x1d"
+        },
+        {
+          "type": "file",
+          "path": "TTL_04BL.OPN",
+          "offset": "0x1e"
+        },
+        {
+          "type": "shell",
+          "path": "SYNUPS",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "SYNPLAY",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "SYNUP_98",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "BGM101B.OPN  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "BGM102B.OPN  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "BGM202B.OPN  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "BGM203B.OPN  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x14",
+          "title": "BGM301B.OPN  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x15",
+          "title": "BGM302B.OPN  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x16",
+          "title": "BGM401B.OPN  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x17",
+          "title": "BGM402B.OPN  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x18",
+          "title": "FUNK_UFO.OPN :"
+        },
+        {
+          "kind": "title",
+          "code": "0x19",
+          "title": "MELO001.OPN  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x1a",
+          "title": "OPN2L.OPN    :"
+        },
+        {
+          "kind": "title",
+          "code": "0x1b",
+          "title": "TTL_01L.OPN  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x1c",
+          "title": "TTL_02L.OPN  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x1d",
+          "title": "TTL_03L.OPN  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x1e",
+          "title": "TTL_04BL.OPN :"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/wendymagazine.xml",
+      "source_order": 4915,
+      "archive": "belsavn1_98",
+      "id": "belsavn1-98-opn"
+    },
+    {
+      "title": "[PC-9801] Bell's Avenue(MT-32)",
+      "driver": {
+        "name": "pc98dos",
+        "type": "beep",
+        "alias": "ウェンディマガジン",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "midiout",
+          "value": "1"
+        },
+        {
+          "name": "midiout_type",
+          "value": "2"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "SYNUP_98.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "SYNUPS.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "SYNPLAY.EXE",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "BGM101B.MDI",
+          "offset": "0x10"
+        },
+        {
+          "type": "file",
+          "path": "BGM102B.MDI",
+          "offset": "0x11"
+        },
+        {
+          "type": "file",
+          "path": "BGM202B.MDI",
+          "offset": "0x12"
+        },
+        {
+          "type": "file",
+          "path": "BGM203B.MDI",
+          "offset": "0x13"
+        },
+        {
+          "type": "file",
+          "path": "BGM301B.MDI",
+          "offset": "0x14"
+        },
+        {
+          "type": "file",
+          "path": "BGM302B.MDI",
+          "offset": "0x15"
+        },
+        {
+          "type": "file",
+          "path": "BGM401B.MDI",
+          "offset": "0x16"
+        },
+        {
+          "type": "file",
+          "path": "BGM402B.MDI",
+          "offset": "0x17"
+        },
+        {
+          "type": "file",
+          "path": "FUNK_UFO.MDI",
+          "offset": "0x18"
+        },
+        {
+          "type": "file",
+          "path": "OPN2L.MDI",
+          "offset": "0x19"
+        },
+        {
+          "type": "file",
+          "path": "TTL_01L.MDI",
+          "offset": "0x1a"
+        },
+        {
+          "type": "file",
+          "path": "TTL_02L.MDI",
+          "offset": "0x1b"
+        },
+        {
+          "type": "file",
+          "path": "TTL_03L.MDI",
+          "offset": "0x1c"
+        },
+        {
+          "type": "file",
+          "path": "TTL_04BL.MDI",
+          "offset": "0x1d"
+        },
+        {
+          "type": "shell",
+          "path": "SYNUPS",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "SYNPLAY",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "SYNUP_98",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "BGM101B.MDI  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "BGM102B.MDI  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "BGM202B.MDI  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "BGM203B.MDI  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x14",
+          "title": "BGM301B.MDI  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x15",
+          "title": "BGM302B.MDI  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x16",
+          "title": "BGM401B.MDI  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x17",
+          "title": "BGM402B.MDI  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x18",
+          "title": "FUNK_UFO.MDI :"
+        },
+        {
+          "kind": "title",
+          "code": "0x19",
+          "title": "OPN2L.MDI    :"
+        },
+        {
+          "kind": "title",
+          "code": "0x1a",
+          "title": "TTL_01L.MDI  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x1b",
+          "title": "TTL_02L.MDI  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x1c",
+          "title": "TTL_03L.MDI  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x1d",
+          "title": "TTL_04BL.MDI :"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/wendymagazine.xml",
+      "source_order": 4916,
+      "archive": "belsavn1_98",
+      "id": "belsavn1-98-beep"
+    },
+    {
+      "title": "[PC-9801] Bell's Avenue(MT-32 Emulation)",
+      "driver": {
+        "name": "pc98dos",
+        "type": "beep",
+        "alias": "ウェンディマガジン",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "midiout",
+          "value": "1"
+        },
+        {
+          "name": "midiout_type",
+          "value": "1"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "SYNUP_98.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "SYNUPS.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "SYNPLAY.EXE",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "BGM101B.MDI",
+          "offset": "0x10"
+        },
+        {
+          "type": "file",
+          "path": "BGM102B.MDI",
+          "offset": "0x11"
+        },
+        {
+          "type": "file",
+          "path": "BGM202B.MDI",
+          "offset": "0x12"
+        },
+        {
+          "type": "file",
+          "path": "BGM203B.MDI",
+          "offset": "0x13"
+        },
+        {
+          "type": "file",
+          "path": "BGM301B.MDI",
+          "offset": "0x14"
+        },
+        {
+          "type": "file",
+          "path": "BGM302B.MDI",
+          "offset": "0x15"
+        },
+        {
+          "type": "file",
+          "path": "BGM401B.MDI",
+          "offset": "0x16"
+        },
+        {
+          "type": "file",
+          "path": "BGM402B.MDI",
+          "offset": "0x17"
+        },
+        {
+          "type": "file",
+          "path": "FUNK_UFO.MDI",
+          "offset": "0x18"
+        },
+        {
+          "type": "file",
+          "path": "OPN2L.MDI",
+          "offset": "0x19"
+        },
+        {
+          "type": "file",
+          "path": "TTL_01L.MDI",
+          "offset": "0x1a"
+        },
+        {
+          "type": "file",
+          "path": "TTL_02L.MDI",
+          "offset": "0x1b"
+        },
+        {
+          "type": "file",
+          "path": "TTL_03L.MDI",
+          "offset": "0x1c"
+        },
+        {
+          "type": "file",
+          "path": "TTL_04BL.MDI",
+          "offset": "0x1d"
+        },
+        {
+          "type": "shell",
+          "path": "SYNUPS",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "SYNPLAY",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "SYNUP_98",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "BGM101B.MDI  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "BGM102B.MDI  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "BGM202B.MDI  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "BGM203B.MDI  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x14",
+          "title": "BGM301B.MDI  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x15",
+          "title": "BGM302B.MDI  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x16",
+          "title": "BGM401B.MDI  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x17",
+          "title": "BGM402B.MDI  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x18",
+          "title": "FUNK_UFO.MDI :"
+        },
+        {
+          "kind": "title",
+          "code": "0x19",
+          "title": "OPN2L.MDI    :"
+        },
+        {
+          "kind": "title",
+          "code": "0x1a",
+          "title": "TTL_01L.MDI  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x1b",
+          "title": "TTL_02L.MDI  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x1c",
+          "title": "TTL_03L.MDI  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x1d",
+          "title": "TTL_04BL.MDI :"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/wendymagazine.xml",
+      "source_order": 4917,
+      "archive": "belsavn1_98",
+      "id": "belsavn1-98-beep-2"
+    },
+    {
+      "title": "[PC-9801] Bell's Avenue vol.2(OPN)",
+      "driver": {
+        "name": "pc98dos",
+        "type": "opn",
+        "alias": "ウェンディマガジン",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "clockmul",
+          "value": "8"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "SYNUP_98.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "SYNUPS.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "SYNPLAY.EXE",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "SOUND.LIB",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "BGM1_1.OPN",
+          "offset": "0x10"
+        },
+        {
+          "type": "file",
+          "path": "BGM1_2.OPN",
+          "offset": "0x11"
+        },
+        {
+          "type": "file",
+          "path": "BGM1_3.OPN",
+          "offset": "0x12"
+        },
+        {
+          "type": "file",
+          "path": "BGM101B.OPN",
+          "offset": "0x13"
+        },
+        {
+          "type": "file",
+          "path": "BGM102B.OPN",
+          "offset": "0x14"
+        },
+        {
+          "type": "file",
+          "path": "BGM2_1.OPN",
+          "offset": "0x15"
+        },
+        {
+          "type": "file",
+          "path": "BGM2_2.OPN",
+          "offset": "0x16"
+        },
+        {
+          "type": "file",
+          "path": "BGM2_3.OPN",
+          "offset": "0x17"
+        },
+        {
+          "type": "file",
+          "path": "BGM2_4.OPN",
+          "offset": "0x18"
+        },
+        {
+          "type": "file",
+          "path": "BGM3_1.OPN",
+          "offset": "0x19"
+        },
+        {
+          "type": "file",
+          "path": "BGM3_2.OPN",
+          "offset": "0x1a"
+        },
+        {
+          "type": "file",
+          "path": "BGM401B.OPN",
+          "offset": "0x1b"
+        },
+        {
+          "type": "file",
+          "path": "BGM402B.OPN",
+          "offset": "0x1c"
+        },
+        {
+          "type": "file",
+          "path": "FUNK_UFO.OPN",
+          "offset": "0x1d"
+        },
+        {
+          "type": "file",
+          "path": "KOINU.OPN",
+          "offset": "0x1e"
+        },
+        {
+          "type": "file",
+          "path": "MELO001.OPN",
+          "offset": "0x1f"
+        },
+        {
+          "type": "file",
+          "path": "OPN2L.OPN",
+          "offset": "0x20"
+        },
+        {
+          "type": "file",
+          "path": "TTL_01L.OPN",
+          "offset": "0x21"
+        },
+        {
+          "type": "file",
+          "path": "TTL_04BL.OPN",
+          "offset": "0x22"
+        },
+        {
+          "type": "shell",
+          "path": "SYNUPS",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "SYNPLAY",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "SYNUP_98",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "BGM1_1.OPN   :"
+        },
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "BGM1_2.OPN   :"
+        },
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "BGM1_3.OPN   :"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "BGM101B.OPN  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x14",
+          "title": "BGM102B.OPN  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x15",
+          "title": "BGM2_1.OPN   :"
+        },
+        {
+          "kind": "title",
+          "code": "0x16",
+          "title": "BGM2_2.OPN   :"
+        },
+        {
+          "kind": "title",
+          "code": "0x17",
+          "title": "BGM2_3.OPN   :"
+        },
+        {
+          "kind": "title",
+          "code": "0x18",
+          "title": "BGM2_4.OPN   :"
+        },
+        {
+          "kind": "title",
+          "code": "0x19",
+          "title": "BGM3_1.OPN   :"
+        },
+        {
+          "kind": "title",
+          "code": "0x1a",
+          "title": "BGM3_2.OPN   :"
+        },
+        {
+          "kind": "title",
+          "code": "0x1b",
+          "title": "BGM401B.OPN  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x1c",
+          "title": "BGM402B.OPN  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x1d",
+          "title": "FUNK_UFO.OPN :"
+        },
+        {
+          "kind": "title",
+          "code": "0x1e",
+          "title": "KOINU.OPN    :"
+        },
+        {
+          "kind": "title",
+          "code": "0x1f",
+          "title": "MELO001.OPN  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x20",
+          "title": "OPN2L.OPN    :"
+        },
+        {
+          "kind": "title",
+          "code": "0x21",
+          "title": "TTL_01L.OPN  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x22",
+          "title": "TTL_04BL.OPN :"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/wendymagazine.xml",
+      "source_order": 4918,
+      "archive": "belsavn2_98",
+      "id": "belsavn2-98-opn"
+    },
+    {
+      "title": "[PC-9801] Bell's Avenue vol.2(MT-32)",
+      "driver": {
+        "name": "pc98dos",
+        "type": "beep",
+        "alias": "ウェンディマガジン",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "midiout",
+          "value": "1"
+        },
+        {
+          "name": "midiout_type",
+          "value": "2"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "SYNUP_98.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "SYNUPS.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "SYNPLAY.EXE",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "SOUND.LIB",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "BGM1_1.MDI",
+          "offset": "0x10"
+        },
+        {
+          "type": "file",
+          "path": "BGM1_2.MDI",
+          "offset": "0x11"
+        },
+        {
+          "type": "file",
+          "path": "BGM1_3.MDI",
+          "offset": "0x12"
+        },
+        {
+          "type": "file",
+          "path": "BGM101B.MDI",
+          "offset": "0x13"
+        },
+        {
+          "type": "file",
+          "path": "BGM102B.MDI",
+          "offset": "0x14"
+        },
+        {
+          "type": "file",
+          "path": "BGM2_1.MDI",
+          "offset": "0x15"
+        },
+        {
+          "type": "file",
+          "path": "BGM2_2.MDI",
+          "offset": "0x16"
+        },
+        {
+          "type": "file",
+          "path": "BGM2_3.MDI",
+          "offset": "0x17"
+        },
+        {
+          "type": "file",
+          "path": "BGM2_4.MDI",
+          "offset": "0x18"
+        },
+        {
+          "type": "file",
+          "path": "BGM3_1.MDI",
+          "offset": "0x19"
+        },
+        {
+          "type": "file",
+          "path": "BGM3_2.MDI",
+          "offset": "0x1a"
+        },
+        {
+          "type": "file",
+          "path": "BGM401B.MDI",
+          "offset": "0x1b"
+        },
+        {
+          "type": "file",
+          "path": "BGM402B.MDI",
+          "offset": "0x1c"
+        },
+        {
+          "type": "file",
+          "path": "FUNK_UFO.MDI",
+          "offset": "0x1d"
+        },
+        {
+          "type": "file",
+          "path": "KOINU.MDI",
+          "offset": "0x1e"
+        },
+        {
+          "type": "file",
+          "path": "OPN2L.MDI",
+          "offset": "0x1f"
+        },
+        {
+          "type": "file",
+          "path": "TTL_01L.MDI",
+          "offset": "0x20"
+        },
+        {
+          "type": "file",
+          "path": "TTL_04BL.MDI",
+          "offset": "0x21"
+        },
+        {
+          "type": "shell",
+          "path": "SYNUPS",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "SYNPLAY",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "SYNUP_98",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "BGM1_1.MDI   :"
+        },
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "BGM1_2.MDI   :"
+        },
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "BGM1_3.MDI   :"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "BGM101B.MDI  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x14",
+          "title": "BGM102B.MDI  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x15",
+          "title": "BGM2_1.MDI   :"
+        },
+        {
+          "kind": "title",
+          "code": "0x16",
+          "title": "BGM2_2.MDI   :"
+        },
+        {
+          "kind": "title",
+          "code": "0x17",
+          "title": "BGM2_3.MDI   :"
+        },
+        {
+          "kind": "title",
+          "code": "0x18",
+          "title": "BGM2_4.MDI   :"
+        },
+        {
+          "kind": "title",
+          "code": "0x19",
+          "title": "BGM3_1.MDI   :"
+        },
+        {
+          "kind": "title",
+          "code": "0x1a",
+          "title": "BGM3_2.MDI   :"
+        },
+        {
+          "kind": "title",
+          "code": "0x1b",
+          "title": "BGM401B.MDI  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x1c",
+          "title": "BGM402B.MDI  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x1d",
+          "title": "FUNK_UFO.MDI :"
+        },
+        {
+          "kind": "title",
+          "code": "0x1e",
+          "title": "KOINU.MDI    :"
+        },
+        {
+          "kind": "title",
+          "code": "0x1f",
+          "title": "OPN2L.MDI    :"
+        },
+        {
+          "kind": "title",
+          "code": "0x20",
+          "title": "TTL_01L.MDI  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x21",
+          "title": "TTL_04BL.MDI :"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/wendymagazine.xml",
+      "source_order": 4919,
+      "archive": "belsavn2_98",
+      "id": "belsavn2-98-beep"
+    },
+    {
+      "title": "[PC-9801] Bell's Avenue vol.2(MT-32 Emulation)",
+      "driver": {
+        "name": "pc98dos",
+        "type": "beep",
+        "alias": "ウェンディマガジン",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "midiout",
+          "value": "1"
+        },
+        {
+          "name": "midiout_type",
+          "value": "1"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "SYNUP_98.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "SYNUPS.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "SYNPLAY.EXE",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "SOUND.LIB",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "BGM1_1.MDI",
+          "offset": "0x10"
+        },
+        {
+          "type": "file",
+          "path": "BGM1_2.MDI",
+          "offset": "0x11"
+        },
+        {
+          "type": "file",
+          "path": "BGM1_3.MDI",
+          "offset": "0x12"
+        },
+        {
+          "type": "file",
+          "path": "BGM101B.MDI",
+          "offset": "0x13"
+        },
+        {
+          "type": "file",
+          "path": "BGM102B.MDI",
+          "offset": "0x14"
+        },
+        {
+          "type": "file",
+          "path": "BGM2_1.MDI",
+          "offset": "0x15"
+        },
+        {
+          "type": "file",
+          "path": "BGM2_2.MDI",
+          "offset": "0x16"
+        },
+        {
+          "type": "file",
+          "path": "BGM2_3.MDI",
+          "offset": "0x17"
+        },
+        {
+          "type": "file",
+          "path": "BGM2_4.MDI",
+          "offset": "0x18"
+        },
+        {
+          "type": "file",
+          "path": "BGM3_1.MDI",
+          "offset": "0x19"
+        },
+        {
+          "type": "file",
+          "path": "BGM3_2.MDI",
+          "offset": "0x1a"
+        },
+        {
+          "type": "file",
+          "path": "BGM401B.MDI",
+          "offset": "0x1b"
+        },
+        {
+          "type": "file",
+          "path": "BGM402B.MDI",
+          "offset": "0x1c"
+        },
+        {
+          "type": "file",
+          "path": "FUNK_UFO.MDI",
+          "offset": "0x1d"
+        },
+        {
+          "type": "file",
+          "path": "KOINU.MDI",
+          "offset": "0x1e"
+        },
+        {
+          "type": "file",
+          "path": "OPN2L.MDI",
+          "offset": "0x1f"
+        },
+        {
+          "type": "file",
+          "path": "TTL_01L.MDI",
+          "offset": "0x20"
+        },
+        {
+          "type": "file",
+          "path": "TTL_04BL.MDI",
+          "offset": "0x21"
+        },
+        {
+          "type": "shell",
+          "path": "SYNUPS",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "SYNPLAY",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "SYNUP_98",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "BGM1_1.MDI   :"
+        },
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "BGM1_2.MDI   :"
+        },
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "BGM1_3.MDI   :"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "BGM101B.MDI  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x14",
+          "title": "BGM102B.MDI  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x15",
+          "title": "BGM2_1.MDI   :"
+        },
+        {
+          "kind": "title",
+          "code": "0x16",
+          "title": "BGM2_2.MDI   :"
+        },
+        {
+          "kind": "title",
+          "code": "0x17",
+          "title": "BGM2_3.MDI   :"
+        },
+        {
+          "kind": "title",
+          "code": "0x18",
+          "title": "BGM2_4.MDI   :"
+        },
+        {
+          "kind": "title",
+          "code": "0x19",
+          "title": "BGM3_1.MDI   :"
+        },
+        {
+          "kind": "title",
+          "code": "0x1a",
+          "title": "BGM3_2.MDI   :"
+        },
+        {
+          "kind": "title",
+          "code": "0x1b",
+          "title": "BGM401B.MDI  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x1c",
+          "title": "BGM402B.MDI  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x1d",
+          "title": "FUNK_UFO.MDI :"
+        },
+        {
+          "kind": "title",
+          "code": "0x1e",
+          "title": "KOINU.MDI    :"
+        },
+        {
+          "kind": "title",
+          "code": "0x1f",
+          "title": "OPN2L.MDI    :"
+        },
+        {
+          "kind": "title",
+          "code": "0x20",
+          "title": "TTL_01L.MDI  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x21",
+          "title": "TTL_04BL.MDI :"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/wendymagazine.xml",
+      "source_order": 4920,
+      "archive": "belsavn2_98",
+      "id": "belsavn2-98-beep-2"
+    },
+    {
+      "title": "[PC-9801] Bell's Avenue vol.2(GS)",
+      "driver": {
+        "name": "pc98dos",
+        "type": "beep",
+        "alias": "ウェンディマガジン",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "midiout",
+          "value": "1"
+        },
+        {
+          "name": "midiout_type",
+          "value": "4"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "SYNUP_98.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "SYNUPS.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "SYNPLAY.EXE",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "SOUND.LIB",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "BGM1_1.GSM",
+          "offset": "0x10"
+        },
+        {
+          "type": "file",
+          "path": "BGM1_2.GSM",
+          "offset": "0x11"
+        },
+        {
+          "type": "file",
+          "path": "BGM1_3.GSM",
+          "offset": "0x12"
+        },
+        {
+          "type": "file",
+          "path": "BGM101B.GSM",
+          "offset": "0x13"
+        },
+        {
+          "type": "file",
+          "path": "BGM102B.GSM",
+          "offset": "0x14"
+        },
+        {
+          "type": "file",
+          "path": "BGM2_1.GSM",
+          "offset": "0x15"
+        },
+        {
+          "type": "file",
+          "path": "BGM2_2.GSM",
+          "offset": "0x16"
+        },
+        {
+          "type": "file",
+          "path": "BGM2_3.GSM",
+          "offset": "0x17"
+        },
+        {
+          "type": "file",
+          "path": "BGM2_4.GSM",
+          "offset": "0x18"
+        },
+        {
+          "type": "file",
+          "path": "BGM3_1.GSM",
+          "offset": "0x19"
+        },
+        {
+          "type": "file",
+          "path": "BGM3_2.GSM",
+          "offset": "0x1a"
+        },
+        {
+          "type": "file",
+          "path": "BGM401B.GSM",
+          "offset": "0x1b"
+        },
+        {
+          "type": "file",
+          "path": "BGM402B.GSM",
+          "offset": "0x1c"
+        },
+        {
+          "type": "file",
+          "path": "FUNK_UFO.GSM",
+          "offset": "0x1d"
+        },
+        {
+          "type": "file",
+          "path": "KOINU.GSM",
+          "offset": "0x1e"
+        },
+        {
+          "type": "file",
+          "path": "OPN2L.GSM",
+          "offset": "0x1f"
+        },
+        {
+          "type": "file",
+          "path": "TTL_01L.GSM",
+          "offset": "0x20"
+        },
+        {
+          "type": "file",
+          "path": "TTL_04BL.GSM",
+          "offset": "0x21"
+        },
+        {
+          "type": "shell",
+          "path": "SYNUPS",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "SYNPLAY",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "SYNUP_98",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "BGM1_1.GSM   :"
+        },
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "BGM1_2.GSM   :"
+        },
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "BGM1_3.GSM   :"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "BGM101B.GSM  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x14",
+          "title": "BGM102B.GSM  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x15",
+          "title": "BGM2_1.GSM   :"
+        },
+        {
+          "kind": "title",
+          "code": "0x16",
+          "title": "BGM2_2.GSM   :"
+        },
+        {
+          "kind": "title",
+          "code": "0x17",
+          "title": "BGM2_3.GSM   :"
+        },
+        {
+          "kind": "title",
+          "code": "0x18",
+          "title": "BGM2_4.GSM   :"
+        },
+        {
+          "kind": "title",
+          "code": "0x19",
+          "title": "BGM3_1.GSM   :"
+        },
+        {
+          "kind": "title",
+          "code": "0x1a",
+          "title": "BGM3_2.GSM   :"
+        },
+        {
+          "kind": "title",
+          "code": "0x1b",
+          "title": "BGM401B.GSM  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x1c",
+          "title": "BGM402B.GSM  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x1d",
+          "title": "FUNK_UFO.GSM :"
+        },
+        {
+          "kind": "title",
+          "code": "0x1e",
+          "title": "KOINU.GSM    :"
+        },
+        {
+          "kind": "title",
+          "code": "0x1f",
+          "title": "OPN2L.GSM    :"
+        },
+        {
+          "kind": "title",
+          "code": "0x20",
+          "title": "TTL_01L.GSM  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x21",
+          "title": "TTL_04BL.GSM :"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/wendymagazine.xml",
+      "source_order": 4921,
+      "archive": "belsavn2_98",
+      "id": "belsavn2-98-beep-3"
+    },
+    {
+      "title": "[PC-9801] Bell's Avenue vol.3(OPN)",
+      "driver": {
+        "name": "pc98dos",
+        "type": "opn",
+        "alias": "ウェンディマガジン",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "clockmul",
+          "value": "8"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "MDB_98.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MDB.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "TEST.MDD",
+          "offset": "0x09"
+        },
+        {
+          "type": "file",
+          "path": "BEL_3_00.MDB",
+          "offset": "0x10"
+        },
+        {
+          "type": "file",
+          "path": "BEL_3_01.MDB",
+          "offset": "0x11"
+        },
+        {
+          "type": "file",
+          "path": "BEL_3_02.MDB",
+          "offset": "0x12"
+        },
+        {
+          "type": "file",
+          "path": "BEL_3_03.MDB",
+          "offset": "0x13"
+        },
+        {
+          "type": "file",
+          "path": "BEL_3_04.MDB",
+          "offset": "0x14"
+        },
+        {
+          "type": "file",
+          "path": "BEL_3_06.MDB",
+          "offset": "0x15"
+        },
+        {
+          "type": "file",
+          "path": "BEL_3_07.MDB",
+          "offset": "0x16"
+        },
+        {
+          "type": "file",
+          "path": "BEL_3_08.MDB",
+          "offset": "0x17"
+        },
+        {
+          "type": "file",
+          "path": "BEL_3_09.MDB",
+          "offset": "0x18"
+        },
+        {
+          "type": "file",
+          "path": "BEL_3_10.MDB",
+          "offset": "0x19"
+        },
+        {
+          "type": "file",
+          "path": "BEL_3_13.MDB",
+          "offset": "0x1a"
+        },
+        {
+          "type": "file",
+          "path": "BGM21FM.MDB",
+          "offset": "0x1b"
+        },
+        {
+          "type": "file",
+          "path": "BGM22FM.MDB",
+          "offset": "0x1c"
+        },
+        {
+          "type": "file",
+          "path": "BGM24FM.MDB",
+          "offset": "0x1d"
+        },
+        {
+          "type": "file",
+          "path": "KOINUFM.MDB",
+          "offset": "0x1e"
+        },
+        {
+          "type": "file",
+          "path": "OPN2L.MDB",
+          "offset": "0x1f"
+        },
+        {
+          "type": "shell",
+          "path": "MDB -m24",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "MDB_98",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x090010",
+          "title": "BEL_3_00.MDB :"
+        },
+        {
+          "kind": "title",
+          "code": "0x090011",
+          "title": "BEL_3_01.MDB :"
+        },
+        {
+          "kind": "title",
+          "code": "0x090012",
+          "title": "BEL_3_02.MDB :"
+        },
+        {
+          "kind": "title",
+          "code": "0x090013",
+          "title": "BEL_3_03.MDB :"
+        },
+        {
+          "kind": "title",
+          "code": "0x090014",
+          "title": "BEL_3_04.MDB :"
+        },
+        {
+          "kind": "title",
+          "code": "0x090015",
+          "title": "BEL_3_06.MDB :"
+        },
+        {
+          "kind": "title",
+          "code": "0x090016",
+          "title": "BEL_3_07.MDB :"
+        },
+        {
+          "kind": "title",
+          "code": "0x090017",
+          "title": "BEL_3_08.MDB :"
+        },
+        {
+          "kind": "title",
+          "code": "0x090018",
+          "title": "BEL_3_09.MDB :"
+        },
+        {
+          "kind": "title",
+          "code": "0x090019",
+          "title": "BEL_3_10.MDB :"
+        },
+        {
+          "kind": "title",
+          "code": "0x09001a",
+          "title": "BEL_3_13.MDB :"
+        },
+        {
+          "kind": "title",
+          "code": "0x09001b",
+          "title": "BGM21FM.MDB  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x09001c",
+          "title": "BGM22FM.MDB  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x09001d",
+          "title": "BGM24FM.MDB  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x09001e",
+          "title": "KOINUFM.MDB  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x09001f",
+          "title": "OPN2L.MDB    :"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/wendymagazine.xml",
+      "source_order": 4922,
+      "archive": "belsavn3_98",
+      "id": "belsavn3-98-opn"
+    },
+    {
+      "title": "[PC-9801] Bell's Avenue vol.3(OPNA)",
+      "driver": {
+        "name": "pc98dos",
+        "type": "opna",
+        "alias": "ウェンディマガジン",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "clockmul",
+          "value": "8"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "MDB_98.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MDB.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "TEST.MDD",
+          "offset": "0x09"
+        },
+        {
+          "type": "file",
+          "path": "BEL_3_00.MDB",
+          "offset": "0x10"
+        },
+        {
+          "type": "file",
+          "path": "BEL_3_01.MDB",
+          "offset": "0x11"
+        },
+        {
+          "type": "file",
+          "path": "BEL_3_02.MDB",
+          "offset": "0x12"
+        },
+        {
+          "type": "file",
+          "path": "BEL_3_03.MDB",
+          "offset": "0x13"
+        },
+        {
+          "type": "file",
+          "path": "BEL_3_04.MDB",
+          "offset": "0x14"
+        },
+        {
+          "type": "file",
+          "path": "BEL_3_06.MDB",
+          "offset": "0x15"
+        },
+        {
+          "type": "file",
+          "path": "BEL_3_07.MDB",
+          "offset": "0x16"
+        },
+        {
+          "type": "file",
+          "path": "BEL_3_08.MDB",
+          "offset": "0x17"
+        },
+        {
+          "type": "file",
+          "path": "BEL_3_09.MDB",
+          "offset": "0x18"
+        },
+        {
+          "type": "file",
+          "path": "BEL_3_10.MDB",
+          "offset": "0x19"
+        },
+        {
+          "type": "file",
+          "path": "BEL_3_13.MDB",
+          "offset": "0x1a"
+        },
+        {
+          "type": "file",
+          "path": "BGM21FM.MDB",
+          "offset": "0x1b"
+        },
+        {
+          "type": "file",
+          "path": "BGM22FM.MDB",
+          "offset": "0x1c"
+        },
+        {
+          "type": "file",
+          "path": "BGM24FM.MDB",
+          "offset": "0x1d"
+        },
+        {
+          "type": "file",
+          "path": "KOINUFM.MDB",
+          "offset": "0x1e"
+        },
+        {
+          "type": "file",
+          "path": "OPN2L.MDB",
+          "offset": "0x1f"
+        },
+        {
+          "type": "shell",
+          "path": "MDB -m24",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "MDB_98",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x090010",
+          "title": "BEL_3_00.MDB :"
+        },
+        {
+          "kind": "title",
+          "code": "0x090011",
+          "title": "BEL_3_01.MDB :"
+        },
+        {
+          "kind": "title",
+          "code": "0x090012",
+          "title": "BEL_3_02.MDB :"
+        },
+        {
+          "kind": "title",
+          "code": "0x090013",
+          "title": "BEL_3_03.MDB :"
+        },
+        {
+          "kind": "title",
+          "code": "0x090014",
+          "title": "BEL_3_04.MDB :"
+        },
+        {
+          "kind": "title",
+          "code": "0x090015",
+          "title": "BEL_3_06.MDB :"
+        },
+        {
+          "kind": "title",
+          "code": "0x090016",
+          "title": "BEL_3_07.MDB :"
+        },
+        {
+          "kind": "title",
+          "code": "0x090017",
+          "title": "BEL_3_08.MDB :"
+        },
+        {
+          "kind": "title",
+          "code": "0x090018",
+          "title": "BEL_3_09.MDB :"
+        },
+        {
+          "kind": "title",
+          "code": "0x090019",
+          "title": "BEL_3_10.MDB :"
+        },
+        {
+          "kind": "title",
+          "code": "0x09001a",
+          "title": "BEL_3_13.MDB :"
+        },
+        {
+          "kind": "title",
+          "code": "0x09001b",
+          "title": "BGM21FM.MDB  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x09001c",
+          "title": "BGM22FM.MDB  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x09001d",
+          "title": "BGM24FM.MDB  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x09001e",
+          "title": "KOINUFM.MDB  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x09001f",
+          "title": "OPN2L.MDB    :"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/wendymagazine.xml",
+      "source_order": 4923,
+      "archive": "belsavn3_98",
+      "id": "belsavn3-98-opna"
+    },
+    {
+      "title": "[PC-9801] まなみのどこまでイクの?",
+      "driver": {
+        "name": "pc98vx",
+        "type": "opn",
+        "alias": "ウェンディマガジン",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "bootcs",
+          "value": "0x0060"
+        },
+        {
+          "name": "bootip",
+          "value": "0x0000"
+        },
+        {
+          "name": "funcvect",
+          "value": "0x7f"
+        },
+        {
+          "name": "adressing",
+          "value": "0"
+        },
+        {
+          "name": "dataaddr",
+          "value": "0x0A702"
+        },
+        {
+          "name": "filesize",
+          "value": "0xc00"
+        },
+        {
+          "name": "datamax",
+          "value": "16"
+        },
+        {
+          "name": "clockmul",
+          "value": "8"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "00600.BIN",
+          "offset": "0x00600"
+        },
+        {
+          "type": "code",
+          "path": "MANAD_98.BIN",
+          "offset": "0x00600"
+        },
+        {
+          "type": "bgm",
+          "path": "_00.BIN",
+          "offset": "0x00"
+        },
+        {
+          "type": "bgm",
+          "path": "_01.BIN",
+          "offset": "0x01"
+        },
+        {
+          "type": "bgm",
+          "path": "_02.BIN",
+          "offset": "0x02"
+        },
+        {
+          "type": "bgm",
+          "path": "_03.BIN",
+          "offset": "0x03"
+        },
+        {
+          "type": "bgm",
+          "path": "_04.BIN",
+          "offset": "0x04"
+        },
+        {
+          "type": "bgm",
+          "path": "_05.BIN",
+          "offset": "0x05"
+        },
+        {
+          "type": "bgm",
+          "path": "_06.BIN",
+          "offset": "0x06"
+        },
+        {
+          "type": "bgm",
+          "path": "_07.BIN",
+          "offset": "0x07"
+        },
+        {
+          "type": "bgm",
+          "path": "_08.BIN",
+          "offset": "0x08"
+        },
+        {
+          "type": "bgm",
+          "path": "_09.BIN",
+          "offset": "0x09"
+        },
+        {
+          "type": "bgm",
+          "path": "_0A.BIN",
+          "offset": "0x0a"
+        },
+        {
+          "type": "bgm",
+          "path": "_0B.BIN",
+          "offset": "0x0b"
+        },
+        {
+          "type": "bgm",
+          "path": "_0C.BIN",
+          "offset": "0x0c"
+        },
+        {
+          "type": "bgm",
+          "path": "_0D.BIN",
+          "offset": "0x0d"
+        },
+        {
+          "type": "bgm",
+          "path": "_0E.BIN",
+          "offset": "0x0e"
+        },
+        {
+          "type": "bgm",
+          "path": "_0F.BIN",
+          "offset": "0x0f"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x00",
+          "title": "_00.BIN :"
+        },
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "_01.BIN :"
+        },
+        {
+          "kind": "title",
+          "code": "0x02",
+          "title": "_02.BIN :"
+        },
+        {
+          "kind": "title",
+          "code": "0x03",
+          "title": "_03.BIN :"
+        },
+        {
+          "kind": "title",
+          "code": "0x04",
+          "title": "_04.BIN :"
+        },
+        {
+          "kind": "title",
+          "code": "0x05",
+          "title": "_05.BIN :"
+        },
+        {
+          "kind": "title",
+          "code": "0x06",
+          "title": "_06.BIN :"
+        },
+        {
+          "kind": "title",
+          "code": "0x07",
+          "title": "_07.BIN :"
+        },
+        {
+          "kind": "title",
+          "code": "0x08",
+          "title": "_08.BIN :"
+        },
+        {
+          "kind": "title",
+          "code": "0x09",
+          "title": "_09.BIN :"
+        },
+        {
+          "kind": "title",
+          "code": "0x0a",
+          "title": "_0A.BIN :"
+        },
+        {
+          "kind": "title",
+          "code": "0x0b",
+          "title": "_0B.BIN :"
+        },
+        {
+          "kind": "title",
+          "code": "0x0c",
+          "title": "_0C.BIN :"
+        },
+        {
+          "kind": "title",
+          "code": "0x0d",
+          "title": "_0D.BIN :"
+        },
+        {
+          "kind": "title",
+          "code": "0x0e",
+          "title": "_0E.BIN :"
+        },
+        {
+          "kind": "title",
+          "code": "0x0f",
+          "title": "_0F.BIN :"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/wendymagazine.xml",
+      "source_order": 4924,
+      "archive": "manadok1_98",
+      "id": "manadok1-98-opn"
+    },
+    {
+      "title": "[PC-9801] まなみのどこまでイクの? 2 リターンオブTHE黒パック",
+      "driver": {
+        "name": "pc98dos",
+        "type": "opn",
+        "alias": "ウェンディマガジン",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "clockmul",
+          "value": "8"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "MDB_98.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "KURI_DRV.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "TEST.MDD",
+          "offset": "0x09"
+        },
+        {
+          "type": "file",
+          "path": "BGM1.GU1",
+          "offset": "0x10"
+        },
+        {
+          "type": "file",
+          "path": "BGM2.GU1",
+          "offset": "0x11"
+        },
+        {
+          "type": "file",
+          "path": "BGM3.GU1",
+          "offset": "0x12"
+        },
+        {
+          "type": "file",
+          "path": "BGM4.GU1",
+          "offset": "0x13"
+        },
+        {
+          "type": "file",
+          "path": "BGM5.GU1",
+          "offset": "0x14"
+        },
+        {
+          "type": "file",
+          "path": "BGM6.GU1",
+          "offset": "0x15"
+        },
+        {
+          "type": "file",
+          "path": "BGM7.GU1",
+          "offset": "0x16"
+        },
+        {
+          "type": "file",
+          "path": "BGM8.GU1",
+          "offset": "0x17"
+        },
+        {
+          "type": "file",
+          "path": "GAME1.GU1",
+          "offset": "0x18"
+        },
+        {
+          "type": "file",
+          "path": "GAME2.GU1",
+          "offset": "0x19"
+        },
+        {
+          "type": "file",
+          "path": "GAME3.GU1",
+          "offset": "0x1a"
+        },
+        {
+          "type": "file",
+          "path": "GAME4.GU1",
+          "offset": "0x1b"
+        },
+        {
+          "type": "file",
+          "path": "GAME5.GU1",
+          "offset": "0x1c"
+        },
+        {
+          "type": "file",
+          "path": "GAME6.GU1",
+          "offset": "0x1d"
+        },
+        {
+          "type": "file",
+          "path": "GAME7.GU1",
+          "offset": "0x1e"
+        },
+        {
+          "type": "file",
+          "path": "GAME8.GU1",
+          "offset": "0x1f"
+        },
+        {
+          "type": "shell",
+          "path": "KURI_DRV",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "MDB_98",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x090010",
+          "title": "BGM1.GU1  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x090011",
+          "title": "BGM2.GU1  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x090012",
+          "title": "BGM3.GU1  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x090013",
+          "title": "BGM4.GU1  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x090014",
+          "title": "BGM5.GU1  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x090015",
+          "title": "BGM6.GU1  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x090016",
+          "title": "BGM7.GU1  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x090017",
+          "title": "BGM8.GU1  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x090018",
+          "title": "GAME1.GU1 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x090019",
+          "title": "GAME2.GU1 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x09001a",
+          "title": "GAME3.GU1 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x09001b",
+          "title": "GAME4.GU1 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x09001c",
+          "title": "GAME5.GU1 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x09001d",
+          "title": "GAME6.GU1 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x09001e",
+          "title": "GAME7.GU1 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x09001f",
+          "title": "GAME8.GU1 :"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/wendymagazine.xml",
+      "source_order": 4925,
+      "archive": "manadok2_98",
+      "id": "manadok2-98-opn"
+    },
+    {
+      "title": "[PC-9801] PINK SOX",
+      "driver": {
+        "name": "pc98vx",
+        "type": "opn",
+        "alias": "ウェンディマガジン",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "bootcs",
+          "value": "0x3000"
+        },
+        {
+          "name": "bootip",
+          "value": "0x0000"
+        },
+        {
+          "name": "funcvect",
+          "value": "0x7f"
+        },
+        {
+          "name": "adressing",
+          "value": "0"
+        },
+        {
+          "name": "clockmul",
+          "value": "8"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "PINKS_98.BIN",
+          "offset": "0x30000"
+        },
+        {
+          "type": "code",
+          "path": "32C00.BIN",
+          "offset": "0x32c00"
+        },
+        {
+          "type": "code",
+          "path": "40000.BIN",
+          "offset": "0x40000"
+        },
+        {
+          "type": "code",
+          "path": "4A000.BIN",
+          "offset": "0x4a000"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "01 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x02",
+          "title": "02 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x03",
+          "title": "03 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x04",
+          "title": "04 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x05",
+          "title": "05 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x06",
+          "title": "06 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x07",
+          "title": "07 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x08",
+          "title": "08 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x09",
+          "title": "09 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x0a",
+          "title": "0A :"
+        },
+        {
+          "kind": "title",
+          "code": "0x0b",
+          "title": "0B :"
+        },
+        {
+          "kind": "title",
+          "code": "0x0c",
+          "title": "0C :"
+        },
+        {
+          "kind": "title",
+          "code": "0x0d",
+          "title": "0D :"
+        },
+        {
+          "kind": "title",
+          "code": "0x0e",
+          "title": "0E :"
+        },
+        {
+          "kind": "title",
+          "code": "0x0f",
+          "title": "0F :"
+        },
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "10 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "11 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "12 :"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/wendymagazine.xml",
+      "source_order": 4926,
+      "archive": "pinksox1_98",
+      "id": "pinksox1-98-opn"
+    },
+    {
+      "title": "[PC-9801] PINK SOX2",
+      "driver": {
+        "name": "pc98vx",
+        "type": "opn",
+        "alias": "ウェンディマガジン",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "bootcs",
+          "value": "0x3000"
+        },
+        {
+          "name": "bootip",
+          "value": "0x0000"
+        },
+        {
+          "name": "funcvect",
+          "value": "0x7f"
+        },
+        {
+          "name": "adressing",
+          "value": "0"
+        },
+        {
+          "name": "clockmul",
+          "value": "8"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "PINKS_98.BIN",
+          "offset": "0x30000"
+        },
+        {
+          "type": "code",
+          "path": "32C00.BIN",
+          "offset": "0x32c00"
+        },
+        {
+          "type": "code",
+          "path": "40000.BIN",
+          "offset": "0x40000"
+        },
+        {
+          "type": "code",
+          "path": "4a000.BIN",
+          "offset": "0x4a000"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "01 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x02",
+          "title": "02 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x03",
+          "title": "03 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x04",
+          "title": "04 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x05",
+          "title": "05 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x06",
+          "title": "06 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x07",
+          "title": "07 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x08",
+          "title": "08 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x09",
+          "title": "09 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x0a",
+          "title": "0A :"
+        },
+        {
+          "kind": "title",
+          "code": "0x0b",
+          "title": "0B :"
+        },
+        {
+          "kind": "title",
+          "code": "0x0c",
+          "title": "0C :"
+        },
+        {
+          "kind": "title",
+          "code": "0x0d",
+          "title": "0D :"
+        },
+        {
+          "kind": "title",
+          "code": "0x0e",
+          "title": "0E :"
+        },
+        {
+          "kind": "title",
+          "code": "0x0f",
+          "title": "0F :"
+        },
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "10 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "11 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "12 :"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/wendymagazine.xml",
+      "source_order": 4927,
+      "archive": "pinksox2_98",
+      "id": "pinksox2-98-opn"
+    },
+    {
+      "title": "[PC-9801] PINK SOX3",
+      "driver": {
+        "name": "pc98vx",
+        "type": "opn",
+        "alias": "ウェンディマガジン",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "bootcs",
+          "value": "0x3000"
+        },
+        {
+          "name": "bootip",
+          "value": "0x0000"
+        },
+        {
+          "name": "funcvect",
+          "value": "0x7f"
+        },
+        {
+          "name": "adressing",
+          "value": "0"
+        },
+        {
+          "name": "clockmul",
+          "value": "8"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "PINKS_98.BIN",
+          "offset": "0x30000"
+        },
+        {
+          "type": "code",
+          "path": "32C00.BIN",
+          "offset": "0x32c00"
+        },
+        {
+          "type": "code",
+          "path": "40000.BIN",
+          "offset": "0x40000"
+        },
+        {
+          "type": "code",
+          "path": "4a000.BIN",
+          "offset": "0x4a000"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "01 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x02",
+          "title": "02 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x03",
+          "title": "03 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x04",
+          "title": "04 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x05",
+          "title": "05 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x06",
+          "title": "06 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x07",
+          "title": "07 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x08",
+          "title": "08 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x09",
+          "title": "09 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x0a",
+          "title": "0A :"
+        },
+        {
+          "kind": "title",
+          "code": "0x0b",
+          "title": "0B :"
+        },
+        {
+          "kind": "title",
+          "code": "0x0c",
+          "title": "0C :"
+        },
+        {
+          "kind": "title",
+          "code": "0x0d",
+          "title": "0D :"
+        },
+        {
+          "kind": "title",
+          "code": "0x0e",
+          "title": "0E :"
+        },
+        {
+          "kind": "title",
+          "code": "0x0f",
+          "title": "0F :"
+        },
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "10 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "11 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "12 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "13 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x14",
+          "title": "14 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x15",
+          "title": "15 :"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/wendymagazine.xml",
+      "source_order": 4928,
+      "archive": "pinksox3_98",
+      "id": "pinksox3-98-opn"
+    },
+    {
+      "title": "[PC-9801] PINK SOX4",
+      "driver": {
+        "name": "pc98vx",
+        "type": "opn",
+        "alias": "ウェンディマガジン",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "bootcs",
+          "value": "0x3000"
+        },
+        {
+          "name": "bootip",
+          "value": "0x0000"
+        },
+        {
+          "name": "funcvect",
+          "value": "0x7f"
+        },
+        {
+          "name": "adressing",
+          "value": "0"
+        },
+        {
+          "name": "dataaddr",
+          "value": "0x4a000"
+        },
+        {
+          "name": "filesize",
+          "value": "0x5000"
+        },
+        {
+          "name": "datamax",
+          "value": "3"
+        },
+        {
+          "name": "clockmul",
+          "value": "8"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "PINKS_98.BIN",
+          "offset": "0x30000"
+        },
+        {
+          "type": "code",
+          "path": "32C00.BIN",
+          "offset": "0x32c00"
+        },
+        {
+          "type": "code",
+          "path": "40000.BIN",
+          "offset": "0x40000"
+        },
+        {
+          "type": "bgm",
+          "path": "_08.BIN",
+          "offset": "1"
+        },
+        {
+          "type": "bgm",
+          "path": "_0A.BIN",
+          "offset": "2"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x010001",
+          "title": "_08.BIN : 01 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x020001",
+          "title": "_08.BIN : 02 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x030001",
+          "title": "_08.BIN : 03 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x040001",
+          "title": "_08.BIN : 04 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x050001",
+          "title": "_08.BIN : 05 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x060001",
+          "title": "_08.BIN : 06 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x070001",
+          "title": "_08.BIN : 07 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x080001",
+          "title": "_08.BIN : 08 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x090001",
+          "title": "_08.BIN : 09 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x0a0001",
+          "title": "_08.BIN : 0A :"
+        },
+        {
+          "kind": "title",
+          "code": "0x0b0001",
+          "title": "_08.BIN : 0B :"
+        },
+        {
+          "kind": "title",
+          "code": "0x0c0001",
+          "title": "_08.BIN : 0C :"
+        },
+        {
+          "kind": "title",
+          "code": "0x010002",
+          "title": "_0A.BIN : 01 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x020002",
+          "title": "_0A.BIN : 02 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x030002",
+          "title": "_0A.BIN : 03 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x040002",
+          "title": "_0A.BIN : 04 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x050002",
+          "title": "_0A.BIN : 05 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x060002",
+          "title": "_0A.BIN : 06 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x070002",
+          "title": "_0A.BIN : 07 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x080002",
+          "title": "_0A.BIN : 08 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x090002",
+          "title": "_0A.BIN : 09 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x0a0002",
+          "title": "_0A.BIN : 0A :"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/wendymagazine.xml",
+      "source_order": 4929,
+      "archive": "pinksox4_98",
+      "id": "pinksox4-98-opn"
+    },
+    {
+      "title": "[PC-9801] PINK SOX5",
+      "driver": {
+        "name": "pc98vx",
+        "type": "opn",
+        "alias": "ウェンディマガジン",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "bootcs",
+          "value": "0x3000"
+        },
+        {
+          "name": "bootip",
+          "value": "0x0000"
+        },
+        {
+          "name": "funcvect",
+          "value": "0x7f"
+        },
+        {
+          "name": "adressing",
+          "value": "0"
+        },
+        {
+          "name": "dataaddr",
+          "value": "0x4a000"
+        },
+        {
+          "name": "filesize",
+          "value": "0x5000"
+        },
+        {
+          "name": "datamax",
+          "value": "3"
+        },
+        {
+          "name": "clockmul",
+          "value": "8"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "PINKS_98.BIN",
+          "offset": "0x30000"
+        },
+        {
+          "type": "code",
+          "path": "32C00.BIN",
+          "offset": "0x32c00"
+        },
+        {
+          "type": "code",
+          "path": "40000.BIN",
+          "offset": "0x40000"
+        },
+        {
+          "type": "bgm",
+          "path": "_09.BIN",
+          "offset": "1"
+        },
+        {
+          "type": "bgm",
+          "path": "_0A.BIN",
+          "offset": "2"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x010001",
+          "title": "_09.BIN : 01 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x020001",
+          "title": "_09.BIN : 02 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x030001",
+          "title": "_09.BIN : 03 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x040001",
+          "title": "_09.BIN : 04 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x050001",
+          "title": "_09.BIN : 05 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x060001",
+          "title": "_09.BIN : 06 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x070001",
+          "title": "_09.BIN : 07 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x080001",
+          "title": "_09.BIN : 08 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x090001",
+          "title": "_09.BIN : 09 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x0a0001",
+          "title": "_09.BIN : 0A :"
+        },
+        {
+          "kind": "title",
+          "code": "0x0b0001",
+          "title": "_09.BIN : 0B :"
+        },
+        {
+          "kind": "title",
+          "code": "0x0c0001",
+          "title": "_09.BIN : 0C :"
+        },
+        {
+          "kind": "title",
+          "code": "0x010002",
+          "title": "_0a.BIN : 01 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x020002",
+          "title": "_0a.BIN : 02 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x030002",
+          "title": "_0a.BIN : 03 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x040002",
+          "title": "_0a.BIN : 04 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x050002",
+          "title": "_0a.BIN : 05 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x060002",
+          "title": "_0a.BIN : 06 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x070002",
+          "title": "_0a.BIN : 07 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x080002",
+          "title": "_0a.BIN : 08 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x090002",
+          "title": "_0a.BIN : 09 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x0a0002",
+          "title": "_0a.BIN : 0A :"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/wendymagazine.xml",
+      "source_order": 4930,
+      "archive": "pinksox5_98",
+      "id": "pinksox5-98-opn"
+    },
+    {
+      "title": "[PC-9801] PINK SOX6",
+      "driver": {
+        "name": "pc98vx",
+        "type": "opn",
+        "alias": "ウェンディマガジン",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "bootcs",
+          "value": "0x3000"
+        },
+        {
+          "name": "bootip",
+          "value": "0x0000"
+        },
+        {
+          "name": "funcvect",
+          "value": "0x7f"
+        },
+        {
+          "name": "adressing",
+          "value": "0"
+        },
+        {
+          "name": "dataaddr",
+          "value": "0x4a000"
+        },
+        {
+          "name": "filesize",
+          "value": "0x4000"
+        },
+        {
+          "name": "datamax",
+          "value": "3"
+        },
+        {
+          "name": "clockmul",
+          "value": "8"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "PINKS_98.BIN",
+          "offset": "0x30000"
+        },
+        {
+          "type": "code",
+          "path": "32C00.BIN",
+          "offset": "0x32c00"
+        },
+        {
+          "type": "code",
+          "path": "40000.BIN",
+          "offset": "0x40000"
+        },
+        {
+          "type": "bgm",
+          "path": "_08.BIN",
+          "offset": "1"
+        },
+        {
+          "type": "bgm",
+          "path": "_09.BIN",
+          "offset": "2"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x010001",
+          "title": "_08.BIN : 01 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x020001",
+          "title": "_08.BIN : 02 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x030001",
+          "title": "_08.BIN : 03 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x040001",
+          "title": "_08.BIN : 04 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x050001",
+          "title": "_08.BIN : 05 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x060001",
+          "title": "_08.BIN : 06 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x070001",
+          "title": "_08.BIN : 07 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x080001",
+          "title": "_08.BIN : 08 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x090001",
+          "title": "_08.BIN : 09 :"
+        },
+        {
+          "kind": "comment",
+          "text": "\t\t\t<title code=\"0x0a0001\" >_08.BIN : 0A : </title>\t"
+        },
+        {
+          "kind": "title",
+          "code": "0x0b0001",
+          "title": "_08.BIN : 0B :"
+        },
+        {
+          "kind": "title",
+          "code": "0x0c0001",
+          "title": "_08.BIN : 0C :"
+        },
+        {
+          "kind": "title",
+          "code": "0x0d0001",
+          "title": "_08.BIN : 0D :"
+        },
+        {
+          "kind": "title",
+          "code": "0x010002",
+          "title": "_09.BIN : 01 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x020002",
+          "title": "_09.BIN : 02 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x030002",
+          "title": "_09.BIN : 03 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x040002",
+          "title": "_09.BIN : 04 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x050002",
+          "title": "_09.BIN : 05 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x060002",
+          "title": "_09.BIN : 06 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x070002",
+          "title": "_09.BIN : 07 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x080002",
+          "title": "_09.BIN : 08 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x090002",
+          "title": "_09.BIN : 09 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x0a0002",
+          "title": "_09.BIN : 0A :"
+        },
+        {
+          "kind": "title",
+          "code": "0x0b0002",
+          "title": "_09.BIN : 0B :"
+        },
+        {
+          "kind": "title",
+          "code": "0x0c0002",
+          "title": "_09.BIN : 0C :"
+        },
+        {
+          "kind": "title",
+          "code": "0x0d0002",
+          "title": "_09.BIN : 0D :"
+        },
+        {
+          "kind": "title",
+          "code": "0x0e0002",
+          "title": "_09.BIN : 0E :"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/wendymagazine.xml",
+      "source_order": 4931,
+      "archive": "pinksox6_98",
+      "id": "pinksox6-98-opn"
+    },
+    {
+      "title": "[PC-9801] PINK SOX7",
+      "driver": {
+        "name": "pc98vx",
+        "type": "opn",
+        "alias": "ウェンディマガジン",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "bootcs",
+          "value": "0x3000"
+        },
+        {
+          "name": "bootip",
+          "value": "0x0000"
+        },
+        {
+          "name": "funcvect",
+          "value": "0x7f"
+        },
+        {
+          "name": "adressing",
+          "value": "0"
+        },
+        {
+          "name": "dataaddr",
+          "value": "0x4a000"
+        },
+        {
+          "name": "filesize",
+          "value": "0x4000"
+        },
+        {
+          "name": "datamax",
+          "value": "3"
+        },
+        {
+          "name": "clockmul",
+          "value": "8"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "PINKS_98.BIN",
+          "offset": "0x30000"
+        },
+        {
+          "type": "code",
+          "path": "32C00.BIN",
+          "offset": "0x32c00"
+        },
+        {
+          "type": "code",
+          "path": "40000.BIN",
+          "offset": "0x40000"
+        },
+        {
+          "type": "bgm",
+          "path": "_08.BIN",
+          "offset": "1"
+        },
+        {
+          "type": "bgm",
+          "path": "_09.BIN",
+          "offset": "2"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x010001",
+          "title": "_08.BIN : 01 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x020001",
+          "title": "_08.BIN : 02 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x030001",
+          "title": "_08.BIN : 03 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x040001",
+          "title": "_08.BIN : 04 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x050001",
+          "title": "_08.BIN : 05 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x060001",
+          "title": "_08.BIN : 06 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x070001",
+          "title": "_08.BIN : 07 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x080001",
+          "title": "_08.BIN : 08 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x090001",
+          "title": "_08.BIN : 09 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x0a0001",
+          "title": "_08.BIN : 0A :"
+        },
+        {
+          "kind": "title",
+          "code": "0x0b0001",
+          "title": "_08.BIN : 0B :"
+        },
+        {
+          "kind": "title",
+          "code": "0x0c0001",
+          "title": "_08.BIN : 0C :"
+        },
+        {
+          "kind": "title",
+          "code": "0x0d0001",
+          "title": "_08.BIN : 0D :"
+        },
+        {
+          "kind": "title",
+          "code": "0x0e0001",
+          "title": "_08.BIN : 0E :"
+        },
+        {
+          "kind": "title",
+          "code": "0x0f0001",
+          "title": "_08.BIN : 0F :"
+        },
+        {
+          "kind": "title",
+          "code": "0x100001",
+          "title": "_08.BIN : 10 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x110001",
+          "title": "_08.BIN : 11 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x120001",
+          "title": "_08.BIN : 12 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x130001",
+          "title": "_08.BIN : 13 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x140001",
+          "title": "_08.BIN : 14 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x150001",
+          "title": "_08.BIN : 15 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x160001",
+          "title": "_08.BIN : 16 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x170001",
+          "title": "_08.BIN : 17 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x180001",
+          "title": "_08.BIN : 18 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x010002",
+          "title": "_09.BIN : 01 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x020002",
+          "title": "_09.BIN : 02 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x030002",
+          "title": "_09.BIN : 03 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x040002",
+          "title": "_09.BIN : 04 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x050002",
+          "title": "_09.BIN : 05 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x060002",
+          "title": "_09.BIN : 06 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x070002",
+          "title": "_09.BIN : 07 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x080002",
+          "title": "_09.BIN : 08 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x090002",
+          "title": "_09.BIN : 09 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x0a0002",
+          "title": "_09.BIN : 0A :"
+        },
+        {
+          "kind": "title",
+          "code": "0x0b0002",
+          "title": "_09.BIN : 0B :"
+        },
+        {
+          "kind": "title",
+          "code": "0x0c0002",
+          "title": "_09.BIN : 0C :"
+        },
+        {
+          "kind": "title",
+          "code": "0x0d0002",
+          "title": "_09.BIN : 0D :"
+        },
+        {
+          "kind": "title",
+          "code": "0x0e0002",
+          "title": "_09.BIN : 0E :"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/wendymagazine.xml",
+      "source_order": 4932,
+      "archive": "pinksox7_98",
+      "id": "pinksox7-98-opn"
+    },
+    {
+      "title": "[X68000] Bell's Avenue(OPM)",
+      "driver": {
+        "name": "x68k",
+        "type": "generic",
+        "alias": "ウェンディマガジン",
+        "platform": "SHARP X68000"
+      },
+      "options": [
+        {
+          "name": "mfp",
+          "value": "1"
+        },
+        {
+          "name": "dmaint",
+          "value": "1"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "belsavn168snd.bin",
+          "offset": "0x000000"
+        },
+        {
+          "type": "code",
+          "path": "BELLS.ZMD",
+          "offset": "0x010000"
+        },
+        {
+          "type": "code",
+          "path": "BGM_FM.DAT",
+          "offset": "0x020000"
+        },
+        {
+          "type": "code",
+          "path": "BELLS.ZPD",
+          "offset": "0x060000"
+        },
+        {
+          "type": "x",
+          "path": "ZMUSIC.X",
+          "offset": "0x080000"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "BGM_FM.DAT : 00 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x02",
+          "title": "BGM_FM.DAT : 01 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x03",
+          "title": "BGM_FM.DAT : 02 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x04",
+          "title": "BGM_FM.DAT : 03 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x05",
+          "title": "BGM_FM.DAT : 04 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x06",
+          "title": "BGM_FM.DAT : 05 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x07",
+          "title": "BGM_FM.DAT : 06 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x08",
+          "title": "BGM_FM.DAT : 07 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x09",
+          "title": "BGM_FM.DAT : 08 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x0a",
+          "title": "BGM_FM.DAT : 09 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x0b",
+          "title": "BGM_FM.DAT : 0A :"
+        },
+        {
+          "kind": "title",
+          "code": "0x0c",
+          "title": "BGM_FM.DAT : 0B :"
+        },
+        {
+          "kind": "title",
+          "code": "0x0d",
+          "title": "BGM_FM.DAT : 0C :"
+        },
+        {
+          "kind": "title",
+          "code": "0x0e",
+          "title": "BGM_FM.DAT : 0D :"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/wendymagazine.xml",
+      "source_order": 4933,
+      "archive": "belsavn168snd",
+      "id": "belsavn168snd-generic"
+    },
+    {
+      "title": "[X68000] Bell's Avenue(MT-32)",
+      "driver": {
+        "name": "x68k",
+        "type": "generic",
+        "alias": "ウェンディマガジン",
+        "platform": "SHARP X68000"
+      },
+      "options": [
+        {
+          "name": "mfp",
+          "value": "1"
+        },
+        {
+          "name": "midiout",
+          "value": "1"
+        },
+        {
+          "name": "midiout_type",
+          "value": "2"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "belsavn168snd.bin",
+          "offset": "0x000000"
+        },
+        {
+          "type": "code",
+          "path": "BELLS.ZMD",
+          "offset": "0x010000"
+        },
+        {
+          "type": "code",
+          "path": "BGM_MT.DAT",
+          "offset": "0x040000"
+        },
+        {
+          "type": "code",
+          "path": "BELLS.ZPD",
+          "offset": "0x060000"
+        },
+        {
+          "type": "x",
+          "path": "ZMUSIC.X",
+          "offset": "0x080000"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x0f",
+          "title": "BGM_MT.DAT : 00 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "BGM_MT.DAT : 01 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "BGM_MT.DAT : 02 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "BGM_MT.DAT : 03 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "BGM_MT.DAT : 04 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x14",
+          "title": "BGM_MT.DAT : 05 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x15",
+          "title": "BGM_MT.DAT : 06 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x16",
+          "title": "BGM_MT.DAT : 07 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x17",
+          "title": "BGM_MT.DAT : 08 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x18",
+          "title": "BGM_MT.DAT : 09 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x19",
+          "title": "BGM_MT.DAT : 0A :"
+        },
+        {
+          "kind": "title",
+          "code": "0x1a",
+          "title": "BGM_MT.DAT : 0B :"
+        },
+        {
+          "kind": "title",
+          "code": "0x1b",
+          "title": "BGM_MT.DAT : 0C :"
+        },
+        {
+          "kind": "title",
+          "code": "0x1c",
+          "title": "BGM_MT.DAT : 0D :"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/wendymagazine.xml",
+      "source_order": 4934,
+      "archive": "belsavn168snd",
+      "id": "belsavn168snd-generic-2"
+    },
+    {
+      "title": "[X68000] Bell's Avenue(MT-32 Emulation)",
+      "driver": {
+        "name": "x68k",
+        "type": "generic",
+        "alias": "ウェンディマガジン",
+        "platform": "SHARP X68000"
+      },
+      "options": [
+        {
+          "name": "mfp",
+          "value": "1"
+        },
+        {
+          "name": "midiout",
+          "value": "1"
+        },
+        {
+          "name": "midiout_type",
+          "value": "1"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "belsavn168snd.bin",
+          "offset": "0x000000"
+        },
+        {
+          "type": "code",
+          "path": "BELLS.ZMD",
+          "offset": "0x010000"
+        },
+        {
+          "type": "code",
+          "path": "BGM_MT.DAT",
+          "offset": "0x040000"
+        },
+        {
+          "type": "code",
+          "path": "BELLS.ZPD",
+          "offset": "0x060000"
+        },
+        {
+          "type": "x",
+          "path": "ZMUSIC.X",
+          "offset": "0x080000"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x0f",
+          "title": "BGM_MT.DAT : 00 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "BGM_MT.DAT : 01 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "BGM_MT.DAT : 02 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "BGM_MT.DAT : 03 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "BGM_MT.DAT : 04 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x14",
+          "title": "BGM_MT.DAT : 05 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x15",
+          "title": "BGM_MT.DAT : 06 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x16",
+          "title": "BGM_MT.DAT : 07 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x17",
+          "title": "BGM_MT.DAT : 08 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x18",
+          "title": "BGM_MT.DAT : 09 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x19",
+          "title": "BGM_MT.DAT : 0A :"
+        },
+        {
+          "kind": "title",
+          "code": "0x1a",
+          "title": "BGM_MT.DAT : 0B :"
+        },
+        {
+          "kind": "title",
+          "code": "0x1b",
+          "title": "BGM_MT.DAT : 0C :"
+        },
+        {
+          "kind": "title",
+          "code": "0x1c",
+          "title": "BGM_MT.DAT : 0D :"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/wendymagazine.xml",
+      "source_order": 4935,
+      "archive": "belsavn168snd",
+      "id": "belsavn168snd-generic-3"
+    },
+    {
+      "title": "[X68000] Bell's Avenue vol.2(OPM)",
+      "driver": {
+        "name": "x68k",
+        "type": "generic",
+        "alias": "ウェンディマガジン",
+        "platform": "SHARP X68000"
+      },
+      "options": [
+        {
+          "name": "mfp",
+          "value": "1"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "belsavn268snd.bin",
+          "offset": "0x000000"
+        },
+        {
+          "type": "code",
+          "path": "bells.zmd",
+          "offset": "0x010000"
+        },
+        {
+          "type": "code",
+          "path": "bgm101b.fm",
+          "offset": "0x020007"
+        },
+        {
+          "type": "code",
+          "path": "bgm102b.fm",
+          "offset": "0x022007"
+        },
+        {
+          "type": "code",
+          "path": "bgm1_1.fm",
+          "offset": "0x024007"
+        },
+        {
+          "type": "code",
+          "path": "bgm1_2.fm",
+          "offset": "0x026007"
+        },
+        {
+          "type": "code",
+          "path": "bgm1_3.fm",
+          "offset": "0x02c007"
+        },
+        {
+          "type": "code",
+          "path": "bgm2_1.fm",
+          "offset": "0x030007"
+        },
+        {
+          "type": "code",
+          "path": "bgm2_2.fm",
+          "offset": "0x032007"
+        },
+        {
+          "type": "code",
+          "path": "bgm2_3.fm",
+          "offset": "0x034007"
+        },
+        {
+          "type": "code",
+          "path": "bgm2_4.fm",
+          "offset": "0x036007"
+        },
+        {
+          "type": "code",
+          "path": "bgm3_1.fm",
+          "offset": "0x038007"
+        },
+        {
+          "type": "code",
+          "path": "bgm3_2.fm",
+          "offset": "0x03a007"
+        },
+        {
+          "type": "code",
+          "path": "bgm401b.fm",
+          "offset": "0x03c007"
+        },
+        {
+          "type": "code",
+          "path": "bgm402b.fm",
+          "offset": "0x03e007"
+        },
+        {
+          "type": "code",
+          "path": "funk_ufo.fm",
+          "offset": "0x040007"
+        },
+        {
+          "type": "code",
+          "path": "koinu.fm",
+          "offset": "0x042007"
+        },
+        {
+          "type": "code",
+          "path": "opn2l.fm",
+          "offset": "0x046007"
+        },
+        {
+          "type": "code",
+          "path": "ttl_01l.fm",
+          "offset": "0x050007"
+        },
+        {
+          "type": "code",
+          "path": "ttl_04bl.fm",
+          "offset": "0x052007"
+        },
+        {
+          "type": "code",
+          "path": "bells.zpd",
+          "offset": "0x060000"
+        },
+        {
+          "type": "x",
+          "path": "ZMUSIC.X",
+          "offset": "0x080000"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "bgm101b.fm  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x02",
+          "title": "bgm102b.fm  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x03",
+          "title": "bgm1_1.fm   :"
+        },
+        {
+          "kind": "title",
+          "code": "0x04",
+          "title": "bgm1_2.fm   :"
+        },
+        {
+          "kind": "title",
+          "code": "0x07",
+          "title": "bgm1_3.fm   :"
+        },
+        {
+          "kind": "title",
+          "code": "0x09",
+          "title": "bgm2_1.fm   :"
+        },
+        {
+          "kind": "title",
+          "code": "0x0a",
+          "title": "bgm2_2.fm   :"
+        },
+        {
+          "kind": "title",
+          "code": "0x0b",
+          "title": "bgm2_3.fm   :"
+        },
+        {
+          "kind": "title",
+          "code": "0x0c",
+          "title": "bgm2_4.fm   :"
+        },
+        {
+          "kind": "title",
+          "code": "0x0d",
+          "title": "bgm3_1.fm   :"
+        },
+        {
+          "kind": "title",
+          "code": "0x0e",
+          "title": "bgm3_2.fm   :"
+        },
+        {
+          "kind": "title",
+          "code": "0x0f",
+          "title": "bgm401b.fm  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "bgm402b.fm  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "funk_ufo.fm :"
+        },
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "koinu.fm    :"
+        },
+        {
+          "kind": "title",
+          "code": "0x14",
+          "title": "opn2l.fm    :"
+        },
+        {
+          "kind": "title",
+          "code": "0x19",
+          "title": "ttl_01l.fm  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x1a",
+          "title": "ttl_04bl.fm :"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/wendymagazine.xml",
+      "source_order": 4936,
+      "archive": "belsavn268snd",
+      "id": "belsavn268snd-generic"
+    },
+    {
+      "title": "[X68000] Bell's Avenue vol.2(GS)",
+      "driver": {
+        "name": "x68k",
+        "type": "generic",
+        "alias": "ウェンディマガジン",
+        "platform": "SHARP X68000"
+      },
+      "options": [
+        {
+          "name": "mfp",
+          "value": "1"
+        },
+        {
+          "name": "midiout",
+          "value": "1"
+        },
+        {
+          "name": "midiout_type",
+          "value": "7"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "belsavn268snd.bin",
+          "offset": "0x000000"
+        },
+        {
+          "type": "code",
+          "path": "bells.zmd",
+          "offset": "0x010000"
+        },
+        {
+          "type": "code",
+          "path": "bgm101b.gs",
+          "offset": "0x020007"
+        },
+        {
+          "type": "code",
+          "path": "bgm102b.gs",
+          "offset": "0x022007"
+        },
+        {
+          "type": "code",
+          "path": "bgm1_1.gs",
+          "offset": "0x024007"
+        },
+        {
+          "type": "code",
+          "path": "bgm1_2.gs",
+          "offset": "0x026007"
+        },
+        {
+          "type": "code",
+          "path": "bgm1_3.gs",
+          "offset": "0x02c007"
+        },
+        {
+          "type": "code",
+          "path": "bgm2_1.gs",
+          "offset": "0x030007"
+        },
+        {
+          "type": "code",
+          "path": "bgm2_2.gs",
+          "offset": "0x032007"
+        },
+        {
+          "type": "code",
+          "path": "bgm2_3.gs",
+          "offset": "0x034007"
+        },
+        {
+          "type": "code",
+          "path": "bgm2_4.gs",
+          "offset": "0x036007"
+        },
+        {
+          "type": "code",
+          "path": "bgm3_1.gs",
+          "offset": "0x038007"
+        },
+        {
+          "type": "code",
+          "path": "bgm3_2.gs",
+          "offset": "0x03a007"
+        },
+        {
+          "type": "code",
+          "path": "bgm401b.gs",
+          "offset": "0x03c007"
+        },
+        {
+          "type": "code",
+          "path": "bgm402b.gs",
+          "offset": "0x03e007"
+        },
+        {
+          "type": "code",
+          "path": "funk_ufo.gs",
+          "offset": "0x040007"
+        },
+        {
+          "type": "code",
+          "path": "koinu.gs",
+          "offset": "0x042007"
+        },
+        {
+          "type": "code",
+          "path": "opn2l.gs",
+          "offset": "0x044007"
+        },
+        {
+          "type": "code",
+          "path": "ttl_01l.gs",
+          "offset": "0x04e007"
+        },
+        {
+          "type": "code",
+          "path": "ttl_04bl.gs",
+          "offset": "0x052007"
+        },
+        {
+          "type": "code",
+          "path": "bells.zpd",
+          "offset": "0x060000"
+        },
+        {
+          "type": "x",
+          "path": "ZMUSIC.X",
+          "offset": "0x080000"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "bgm101b.gs  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x02",
+          "title": "bgm102b.gs  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x03",
+          "title": "bgm1_1.gs   :"
+        },
+        {
+          "kind": "title",
+          "code": "0x04",
+          "title": "bgm1_2.gs   :"
+        },
+        {
+          "kind": "title",
+          "code": "0x07",
+          "title": "bgm1_3.gs   :"
+        },
+        {
+          "kind": "title",
+          "code": "0x09",
+          "title": "bgm2_1.gs   :"
+        },
+        {
+          "kind": "title",
+          "code": "0x0a",
+          "title": "bgm2_2.gs   :"
+        },
+        {
+          "kind": "title",
+          "code": "0x0b",
+          "title": "bgm2_3.gs   :"
+        },
+        {
+          "kind": "title",
+          "code": "0x0c",
+          "title": "bgm2_4.gs   :"
+        },
+        {
+          "kind": "title",
+          "code": "0x0d",
+          "title": "bgm3_1.gs   :"
+        },
+        {
+          "kind": "title",
+          "code": "0x0e",
+          "title": "bgm3_2.gs   :"
+        },
+        {
+          "kind": "title",
+          "code": "0x0f",
+          "title": "bgm401b.gs  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "bgm402b.gs  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "funk_ufo.gs :"
+        },
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "koinu.gs    :"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "opn2l.gs    :"
+        },
+        {
+          "kind": "title",
+          "code": "0x18",
+          "title": "ttl_01l.gs  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x1a",
+          "title": "ttl_04bl.gs :"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/wendymagazine.xml",
+      "source_order": 4937,
+      "archive": "belsavn268snd",
+      "id": "belsavn268snd-generic-2"
+    },
+    {
+      "title": "[X68000] Bell's Avenue vol.2(MT-32)",
+      "driver": {
+        "name": "x68k",
+        "type": "generic",
+        "alias": "ウェンディマガジン",
+        "platform": "SHARP X68000"
+      },
+      "options": [
+        {
+          "name": "mfp",
+          "value": "1"
+        },
+        {
+          "name": "midiout",
+          "value": "1"
+        },
+        {
+          "name": "midiout_type",
+          "value": "2"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "belsavn268snd.bin",
+          "offset": "0x000000"
+        },
+        {
+          "type": "code",
+          "path": "bells.zmd",
+          "offset": "0x010000"
+        },
+        {
+          "type": "code",
+          "path": "bgm101b.mt",
+          "offset": "0x020007"
+        },
+        {
+          "type": "code",
+          "path": "bgm102b.mt",
+          "offset": "0x022007"
+        },
+        {
+          "type": "code",
+          "path": "bgm1_1.mt",
+          "offset": "0x024007"
+        },
+        {
+          "type": "code",
+          "path": "bgm1_2.mt",
+          "offset": "0x026007"
+        },
+        {
+          "type": "code",
+          "path": "bgm1_3.mt",
+          "offset": "0x02c007"
+        },
+        {
+          "type": "code",
+          "path": "bgm2_1.mt",
+          "offset": "0x030007"
+        },
+        {
+          "type": "code",
+          "path": "bgm2_2.mt",
+          "offset": "0x032007"
+        },
+        {
+          "type": "code",
+          "path": "bgm2_3.mt",
+          "offset": "0x034007"
+        },
+        {
+          "type": "code",
+          "path": "bgm2_4.mt",
+          "offset": "0x036007"
+        },
+        {
+          "type": "code",
+          "path": "bgm3_1.mt",
+          "offset": "0x038007"
+        },
+        {
+          "type": "code",
+          "path": "bgm3_2.mt",
+          "offset": "0x03a007"
+        },
+        {
+          "type": "code",
+          "path": "bgm401b.mt",
+          "offset": "0x03c007"
+        },
+        {
+          "type": "code",
+          "path": "bgm402b.mt",
+          "offset": "0x03e007"
+        },
+        {
+          "type": "code",
+          "path": "funk_ufo.mt",
+          "offset": "0x040007"
+        },
+        {
+          "type": "code",
+          "path": "koinu.mt",
+          "offset": "0x042007"
+        },
+        {
+          "type": "code",
+          "path": "opn2l.mt",
+          "offset": "0x044007"
+        },
+        {
+          "type": "code",
+          "path": "ttl_01l.mt",
+          "offset": "0x04e007"
+        },
+        {
+          "type": "code",
+          "path": "ttl_04bl.mt",
+          "offset": "0x052007"
+        },
+        {
+          "type": "code",
+          "path": "bells.zpd",
+          "offset": "0x060000"
+        },
+        {
+          "type": "x",
+          "path": "ZMUSIC.X",
+          "offset": "0x080000"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "bgm101b.mt  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x02",
+          "title": "bgm102b.mt  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x03",
+          "title": "bgm1_1.mt   :"
+        },
+        {
+          "kind": "title",
+          "code": "0x04",
+          "title": "bgm1_2.mt   :"
+        },
+        {
+          "kind": "title",
+          "code": "0x07",
+          "title": "bgm1_3.mt   :"
+        },
+        {
+          "kind": "title",
+          "code": "0x09",
+          "title": "bgm2_1.mt   :"
+        },
+        {
+          "kind": "title",
+          "code": "0x0a",
+          "title": "bgm2_2.mt   :"
+        },
+        {
+          "kind": "title",
+          "code": "0x0b",
+          "title": "bgm2_3.mt   :"
+        },
+        {
+          "kind": "title",
+          "code": "0x0c",
+          "title": "bgm2_4.mt   :"
+        },
+        {
+          "kind": "title",
+          "code": "0x0d",
+          "title": "bgm3_1.mt   :"
+        },
+        {
+          "kind": "title",
+          "code": "0x0e",
+          "title": "bgm3_2.mt   :"
+        },
+        {
+          "kind": "title",
+          "code": "0x0f",
+          "title": "bgm401b.mt  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "bgm402b.mt  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "funk_ufo.mt :"
+        },
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "koinu.mt    :"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "opn2l.mt    :"
+        },
+        {
+          "kind": "title",
+          "code": "0x18",
+          "title": "ttl_01l.mt  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x1a",
+          "title": "ttl_04bl.mt :"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/wendymagazine.xml",
+      "source_order": 4938,
+      "archive": "belsavn268snd",
+      "id": "belsavn268snd-generic-3"
+    },
+    {
+      "title": "[X68000] Bell's Avenue vol.2(MT-32 Emulation)",
+      "driver": {
+        "name": "x68k",
+        "type": "generic",
+        "alias": "ウェンディマガジン",
+        "platform": "SHARP X68000"
+      },
+      "options": [
+        {
+          "name": "mfp",
+          "value": "1"
+        },
+        {
+          "name": "midiout",
+          "value": "1"
+        },
+        {
+          "name": "midiout_type",
+          "value": "1"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "belsavn268snd.bin",
+          "offset": "0x000000"
+        },
+        {
+          "type": "code",
+          "path": "bells.zmd",
+          "offset": "0x010000"
+        },
+        {
+          "type": "code",
+          "path": "bgm101b.mt",
+          "offset": "0x020007"
+        },
+        {
+          "type": "code",
+          "path": "bgm102b.mt",
+          "offset": "0x022007"
+        },
+        {
+          "type": "code",
+          "path": "bgm1_1.mt",
+          "offset": "0x024007"
+        },
+        {
+          "type": "code",
+          "path": "bgm1_2.mt",
+          "offset": "0x026007"
+        },
+        {
+          "type": "code",
+          "path": "bgm1_3.mt",
+          "offset": "0x02c007"
+        },
+        {
+          "type": "code",
+          "path": "bgm2_1.mt",
+          "offset": "0x030007"
+        },
+        {
+          "type": "code",
+          "path": "bgm2_2.mt",
+          "offset": "0x032007"
+        },
+        {
+          "type": "code",
+          "path": "bgm2_3.mt",
+          "offset": "0x034007"
+        },
+        {
+          "type": "code",
+          "path": "bgm2_4.mt",
+          "offset": "0x036007"
+        },
+        {
+          "type": "code",
+          "path": "bgm3_1.mt",
+          "offset": "0x038007"
+        },
+        {
+          "type": "code",
+          "path": "bgm3_2.mt",
+          "offset": "0x03a007"
+        },
+        {
+          "type": "code",
+          "path": "bgm401b.mt",
+          "offset": "0x03c007"
+        },
+        {
+          "type": "code",
+          "path": "bgm402b.mt",
+          "offset": "0x03e007"
+        },
+        {
+          "type": "code",
+          "path": "funk_ufo.mt",
+          "offset": "0x040007"
+        },
+        {
+          "type": "code",
+          "path": "koinu.mt",
+          "offset": "0x042007"
+        },
+        {
+          "type": "code",
+          "path": "opn2l.mt",
+          "offset": "0x044007"
+        },
+        {
+          "type": "code",
+          "path": "ttl_01l.mt",
+          "offset": "0x04e007"
+        },
+        {
+          "type": "code",
+          "path": "ttl_04bl.mt",
+          "offset": "0x052007"
+        },
+        {
+          "type": "code",
+          "path": "bells.zpd",
+          "offset": "0x060000"
+        },
+        {
+          "type": "x",
+          "path": "ZMUSIC.X",
+          "offset": "0x080000"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "bgm101b.mt  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x02",
+          "title": "bgm102b.mt  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x03",
+          "title": "bgm1_1.mt   :"
+        },
+        {
+          "kind": "title",
+          "code": "0x04",
+          "title": "bgm1_2.mt   :"
+        },
+        {
+          "kind": "title",
+          "code": "0x07",
+          "title": "bgm1_3.mt   :"
+        },
+        {
+          "kind": "title",
+          "code": "0x09",
+          "title": "bgm2_1.mt   :"
+        },
+        {
+          "kind": "title",
+          "code": "0x0a",
+          "title": "bgm2_2.mt   :"
+        },
+        {
+          "kind": "title",
+          "code": "0x0b",
+          "title": "bgm2_3.mt   :"
+        },
+        {
+          "kind": "title",
+          "code": "0x0c",
+          "title": "bgm2_4.mt   :"
+        },
+        {
+          "kind": "title",
+          "code": "0x0d",
+          "title": "bgm3_1.mt   :"
+        },
+        {
+          "kind": "title",
+          "code": "0x0e",
+          "title": "bgm3_2.mt   :"
+        },
+        {
+          "kind": "title",
+          "code": "0x0f",
+          "title": "bgm401b.mt  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "bgm402b.mt  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "funk_ufo.mt :"
+        },
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "koinu.mt    :"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "opn2l.mt    :"
+        },
+        {
+          "kind": "title",
+          "code": "0x18",
+          "title": "ttl_01l.mt  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x1a",
+          "title": "ttl_04bl.mt :"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/wendymagazine.xml",
+      "source_order": 4939,
+      "archive": "belsavn268snd",
+      "id": "belsavn268snd-generic-4"
+    },
+    {
+      "title": "[X68000] Bell's Avenue vol.3(OPM)",
+      "driver": {
+        "name": "x68k",
+        "type": "generic",
+        "alias": "ウェンディマガジン",
+        "platform": "SHARP X68000"
+      },
+      "options": [
+        {
+          "name": "mfp",
+          "value": "1"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "belsavn268snd.bin",
+          "offset": "0x000000"
+        },
+        {
+          "type": "code",
+          "path": "BELLS.ZMD",
+          "offset": "0x010000"
+        },
+        {
+          "type": "code",
+          "path": "BEL_3_00.FM",
+          "offset": "0x020007"
+        },
+        {
+          "type": "code",
+          "path": "BEL_3_01.FM",
+          "offset": "0x024007"
+        },
+        {
+          "type": "code",
+          "path": "BEL_3_02.FM",
+          "offset": "0x026007"
+        },
+        {
+          "type": "code",
+          "path": "BEL_3_03.FM",
+          "offset": "0x028007"
+        },
+        {
+          "type": "code",
+          "path": "BEL_3_04.FM",
+          "offset": "0x02a007"
+        },
+        {
+          "type": "code",
+          "path": "BEL_3_05.FM",
+          "offset": "0x02c007"
+        },
+        {
+          "type": "code",
+          "path": "BEL_3_06.FM",
+          "offset": "0x02e007"
+        },
+        {
+          "type": "code",
+          "path": "BEL_3_07.FM",
+          "offset": "0x030007"
+        },
+        {
+          "type": "code",
+          "path": "BEL_3_08.FM",
+          "offset": "0x032007"
+        },
+        {
+          "type": "code",
+          "path": "BEL_3_09.FM",
+          "offset": "0x034007"
+        },
+        {
+          "type": "code",
+          "path": "BEL_3_10.FM",
+          "offset": "0x036007"
+        },
+        {
+          "type": "code",
+          "path": "BEL_3_13.FM",
+          "offset": "0x038007"
+        },
+        {
+          "type": "code",
+          "path": "BGM21.FM",
+          "offset": "0x03a007"
+        },
+        {
+          "type": "code",
+          "path": "BGM22.FM",
+          "offset": "0x03c007"
+        },
+        {
+          "type": "code",
+          "path": "BGM24.FM",
+          "offset": "0x03e007"
+        },
+        {
+          "type": "code",
+          "path": "BGM31.FM",
+          "offset": "0x040007"
+        },
+        {
+          "type": "code",
+          "path": "KOINU.FM",
+          "offset": "0x042007"
+        },
+        {
+          "type": "code",
+          "path": "BELLS.ZPD",
+          "offset": "0x060000"
+        },
+        {
+          "type": "x",
+          "path": "ZMUSIC.X",
+          "offset": "0x080000"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "BEL_3_00.FM :"
+        },
+        {
+          "kind": "title",
+          "code": "0x03",
+          "title": "BEL_3_01.FM :"
+        },
+        {
+          "kind": "title",
+          "code": "0x04",
+          "title": "BEL_3_02.FM :"
+        },
+        {
+          "kind": "title",
+          "code": "0x05",
+          "title": "BEL_3_03.FM :"
+        },
+        {
+          "kind": "title",
+          "code": "0x06",
+          "title": "BEL_3_04.FM :"
+        },
+        {
+          "kind": "title",
+          "code": "0x07",
+          "title": "BEL_3_05.FM :"
+        },
+        {
+          "kind": "title",
+          "code": "0x08",
+          "title": "BEL_3_06.FM :"
+        },
+        {
+          "kind": "title",
+          "code": "0x09",
+          "title": "BEL_3_07.FM :"
+        },
+        {
+          "kind": "title",
+          "code": "0x0a",
+          "title": "BEL_3_08.FM :"
+        },
+        {
+          "kind": "title",
+          "code": "0x0b",
+          "title": "BEL_3_09.FM :"
+        },
+        {
+          "kind": "title",
+          "code": "0x0c",
+          "title": "BEL_3_10.FM :"
+        },
+        {
+          "kind": "title",
+          "code": "0x0d",
+          "title": "BEL_3_13.FM :"
+        },
+        {
+          "kind": "title",
+          "code": "0x0e",
+          "title": "BGM21.FM    :"
+        },
+        {
+          "kind": "title",
+          "code": "0x0f",
+          "title": "BGM22.FM    :"
+        },
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "BGM24.FM    :"
+        },
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "BGM31.FM    :"
+        },
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "KOINU.FM    :"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/wendymagazine.xml",
+      "source_order": 4940,
+      "archive": "belsavn368snd",
+      "id": "belsavn368snd-generic"
+    },
+    {
+      "title": "[X68000] Bell's Avenue vol.3(GS)",
+      "driver": {
+        "name": "x68k",
+        "type": "generic",
+        "alias": "ウェンディマガジン",
+        "platform": "SHARP X68000"
+      },
+      "options": [
+        {
+          "name": "mfp",
+          "value": "1"
+        },
+        {
+          "name": "midiout",
+          "value": "1"
+        },
+        {
+          "name": "midiout_type",
+          "value": "7"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "belsavn268snd.bin",
+          "offset": "0x000000"
+        },
+        {
+          "type": "code",
+          "path": "BELLS.ZMD",
+          "offset": "0x010000"
+        },
+        {
+          "type": "code",
+          "path": "BEL_3_00.GS",
+          "offset": "0x020007"
+        },
+        {
+          "type": "code",
+          "path": "BEL_3_01.GS",
+          "offset": "0x024007"
+        },
+        {
+          "type": "code",
+          "path": "BEL_3_02.GS",
+          "offset": "0x026007"
+        },
+        {
+          "type": "code",
+          "path": "BEL_3_03.GS",
+          "offset": "0x028007"
+        },
+        {
+          "type": "code",
+          "path": "BEL_3_04.GS",
+          "offset": "0x02a007"
+        },
+        {
+          "type": "code",
+          "path": "BEL_3_05.GS",
+          "offset": "0x02c007"
+        },
+        {
+          "type": "code",
+          "path": "BEL_3_06.GS",
+          "offset": "0x030007"
+        },
+        {
+          "type": "code",
+          "path": "BEL_3_07.GS",
+          "offset": "0x032007"
+        },
+        {
+          "type": "code",
+          "path": "BEL_3_08.GS",
+          "offset": "0x034007"
+        },
+        {
+          "type": "code",
+          "path": "BEL_3_09.GS",
+          "offset": "0x036007"
+        },
+        {
+          "type": "code",
+          "path": "BEL_3_10.GS",
+          "offset": "0x038007"
+        },
+        {
+          "type": "code",
+          "path": "BEL_3_13.GS",
+          "offset": "0x03a007"
+        },
+        {
+          "type": "code",
+          "path": "BGM21.GS",
+          "offset": "0x03c007"
+        },
+        {
+          "type": "code",
+          "path": "BGM22.GS",
+          "offset": "0x03e007"
+        },
+        {
+          "type": "code",
+          "path": "BGM24.GS",
+          "offset": "0x040007"
+        },
+        {
+          "type": "code",
+          "path": "BGM31.GS",
+          "offset": "0x042007"
+        },
+        {
+          "type": "code",
+          "path": "KOINU.GS",
+          "offset": "0x044007"
+        },
+        {
+          "type": "code",
+          "path": "BELLS.ZPD",
+          "offset": "0x060000"
+        },
+        {
+          "type": "x",
+          "path": "ZMUSIC.X",
+          "offset": "0x080000"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "BEL_3_00.GS :"
+        },
+        {
+          "kind": "title",
+          "code": "0x03",
+          "title": "BEL_3_01.GS :"
+        },
+        {
+          "kind": "title",
+          "code": "0x04",
+          "title": "BEL_3_02.GS :"
+        },
+        {
+          "kind": "title",
+          "code": "0x05",
+          "title": "BEL_3_03.GS :"
+        },
+        {
+          "kind": "title",
+          "code": "0x06",
+          "title": "BEL_3_04.GS :"
+        },
+        {
+          "kind": "title",
+          "code": "0x07",
+          "title": "BEL_3_05.GS :"
+        },
+        {
+          "kind": "title",
+          "code": "0x09",
+          "title": "BEL_3_06.GS :"
+        },
+        {
+          "kind": "title",
+          "code": "0x0a",
+          "title": "BEL_3_07.GS :"
+        },
+        {
+          "kind": "title",
+          "code": "0x0b",
+          "title": "BEL_3_08.GS :"
+        },
+        {
+          "kind": "title",
+          "code": "0x0c",
+          "title": "BEL_3_09.GS :"
+        },
+        {
+          "kind": "title",
+          "code": "0x0d",
+          "title": "BEL_3_10.GS :"
+        },
+        {
+          "kind": "title",
+          "code": "0x0e",
+          "title": "BEL_3_13.GS :"
+        },
+        {
+          "kind": "title",
+          "code": "0x0f",
+          "title": "BGM21.GS    :"
+        },
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "BGM22.GS    :"
+        },
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "BGM24.GS    :"
+        },
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "BGM31.GS    :"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "KOINU.GS    :"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/wendymagazine.xml",
+      "source_order": 4941,
+      "archive": "belsavn368snd",
+      "id": "belsavn368snd-generic-2"
+    },
+    {
+      "title": "[X68000] Bell's Avenue vol.3(MT-32)",
+      "driver": {
+        "name": "x68k",
+        "type": "generic",
+        "alias": "ウェンディマガジン",
+        "platform": "SHARP X68000"
+      },
+      "options": [
+        {
+          "name": "mfp",
+          "value": "1"
+        },
+        {
+          "name": "midiout",
+          "value": "1"
+        },
+        {
+          "name": "midiout_type",
+          "value": "2"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "belsavn268snd.bin",
+          "offset": "0x000000"
+        },
+        {
+          "type": "code",
+          "path": "BELLS.ZMD",
+          "offset": "0x010000"
+        },
+        {
+          "type": "code",
+          "path": "BEL_3_00.MT",
+          "offset": "0x020007"
+        },
+        {
+          "type": "code",
+          "path": "BEL_3_01.MT",
+          "offset": "0x024007"
+        },
+        {
+          "type": "code",
+          "path": "BEL_3_02.MT",
+          "offset": "0x026007"
+        },
+        {
+          "type": "code",
+          "path": "BEL_3_03.MT",
+          "offset": "0x028007"
+        },
+        {
+          "type": "code",
+          "path": "BEL_3_04.MT",
+          "offset": "0x02a007"
+        },
+        {
+          "type": "code",
+          "path": "BEL_3_05.MT",
+          "offset": "0x02c007"
+        },
+        {
+          "type": "code",
+          "path": "BEL_3_06.MT",
+          "offset": "0x030007"
+        },
+        {
+          "type": "code",
+          "path": "BEL_3_07.MT",
+          "offset": "0x032007"
+        },
+        {
+          "type": "code",
+          "path": "BEL_3_08.MT",
+          "offset": "0x034007"
+        },
+        {
+          "type": "code",
+          "path": "BEL_3_09.MT",
+          "offset": "0x036007"
+        },
+        {
+          "type": "code",
+          "path": "BEL_3_10.MT",
+          "offset": "0x038007"
+        },
+        {
+          "type": "code",
+          "path": "BEL_3_13.MT",
+          "offset": "0x03a007"
+        },
+        {
+          "type": "code",
+          "path": "BGM21.MT",
+          "offset": "0x03c007"
+        },
+        {
+          "type": "code",
+          "path": "BGM22.MT",
+          "offset": "0x03e007"
+        },
+        {
+          "type": "code",
+          "path": "BGM24.MT",
+          "offset": "0x040007"
+        },
+        {
+          "type": "code",
+          "path": "BGM31.MT",
+          "offset": "0x042007"
+        },
+        {
+          "type": "code",
+          "path": "KOINU.MT",
+          "offset": "0x044007"
+        },
+        {
+          "type": "code",
+          "path": "BELLS.ZPD",
+          "offset": "0x060000"
+        },
+        {
+          "type": "x",
+          "path": "ZMUSIC.X",
+          "offset": "0x080000"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "BEL_3_00.MT :"
+        },
+        {
+          "kind": "title",
+          "code": "0x03",
+          "title": "BEL_3_01.MT :"
+        },
+        {
+          "kind": "title",
+          "code": "0x04",
+          "title": "BEL_3_02.MT :"
+        },
+        {
+          "kind": "title",
+          "code": "0x05",
+          "title": "BEL_3_03.MT :"
+        },
+        {
+          "kind": "title",
+          "code": "0x06",
+          "title": "BEL_3_04.MT :"
+        },
+        {
+          "kind": "title",
+          "code": "0x07",
+          "title": "BEL_3_05.MT :"
+        },
+        {
+          "kind": "title",
+          "code": "0x09",
+          "title": "BEL_3_06.MT :"
+        },
+        {
+          "kind": "title",
+          "code": "0x0a",
+          "title": "BEL_3_07.MT :"
+        },
+        {
+          "kind": "title",
+          "code": "0x0b",
+          "title": "BEL_3_08.MT :"
+        },
+        {
+          "kind": "title",
+          "code": "0x0c",
+          "title": "BEL_3_09.MT :"
+        },
+        {
+          "kind": "title",
+          "code": "0x0d",
+          "title": "BEL_3_10.MT :"
+        },
+        {
+          "kind": "title",
+          "code": "0x0e",
+          "title": "BEL_3_13.MT :"
+        },
+        {
+          "kind": "title",
+          "code": "0x0f",
+          "title": "BGM21.MT    :"
+        },
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "BGM22.MT    :"
+        },
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "BGM24.MT    :"
+        },
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "BGM31.MT    :"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "KOINU.MT    :"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/wendymagazine.xml",
+      "source_order": 4942,
+      "archive": "belsavn368snd",
+      "id": "belsavn368snd-generic-3"
+    },
+    {
+      "title": "[X68000] Bell's Avenue vol.3(MT-32 Emulation)",
+      "driver": {
+        "name": "x68k",
+        "type": "generic",
+        "alias": "ウェンディマガジン",
+        "platform": "SHARP X68000"
+      },
+      "options": [
+        {
+          "name": "mfp",
+          "value": "1"
+        },
+        {
+          "name": "midiout",
+          "value": "1"
+        },
+        {
+          "name": "midiout_type",
+          "value": "1"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "belsavn268snd.bin",
+          "offset": "0x000000"
+        },
+        {
+          "type": "code",
+          "path": "BELLS.ZMD",
+          "offset": "0x010000"
+        },
+        {
+          "type": "code",
+          "path": "BEL_3_00.MT",
+          "offset": "0x020007"
+        },
+        {
+          "type": "code",
+          "path": "BEL_3_01.MT",
+          "offset": "0x024007"
+        },
+        {
+          "type": "code",
+          "path": "BEL_3_02.MT",
+          "offset": "0x026007"
+        },
+        {
+          "type": "code",
+          "path": "BEL_3_03.MT",
+          "offset": "0x028007"
+        },
+        {
+          "type": "code",
+          "path": "BEL_3_04.MT",
+          "offset": "0x02a007"
+        },
+        {
+          "type": "code",
+          "path": "BEL_3_05.MT",
+          "offset": "0x02c007"
+        },
+        {
+          "type": "code",
+          "path": "BEL_3_06.MT",
+          "offset": "0x030007"
+        },
+        {
+          "type": "code",
+          "path": "BEL_3_07.MT",
+          "offset": "0x032007"
+        },
+        {
+          "type": "code",
+          "path": "BEL_3_08.MT",
+          "offset": "0x034007"
+        },
+        {
+          "type": "code",
+          "path": "BEL_3_09.MT",
+          "offset": "0x036007"
+        },
+        {
+          "type": "code",
+          "path": "BEL_3_10.MT",
+          "offset": "0x038007"
+        },
+        {
+          "type": "code",
+          "path": "BEL_3_13.MT",
+          "offset": "0x03a007"
+        },
+        {
+          "type": "code",
+          "path": "BGM21.MT",
+          "offset": "0x03c007"
+        },
+        {
+          "type": "code",
+          "path": "BGM22.MT",
+          "offset": "0x03e007"
+        },
+        {
+          "type": "code",
+          "path": "BGM24.MT",
+          "offset": "0x040007"
+        },
+        {
+          "type": "code",
+          "path": "BGM31.MT",
+          "offset": "0x042007"
+        },
+        {
+          "type": "code",
+          "path": "KOINU.MT",
+          "offset": "0x044007"
+        },
+        {
+          "type": "code",
+          "path": "BELLS.ZPD",
+          "offset": "0x060000"
+        },
+        {
+          "type": "x",
+          "path": "ZMUSIC.X",
+          "offset": "0x080000"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "BEL_3_00.MT :"
+        },
+        {
+          "kind": "title",
+          "code": "0x03",
+          "title": "BEL_3_01.MT :"
+        },
+        {
+          "kind": "title",
+          "code": "0x04",
+          "title": "BEL_3_02.MT :"
+        },
+        {
+          "kind": "title",
+          "code": "0x05",
+          "title": "BEL_3_03.MT :"
+        },
+        {
+          "kind": "title",
+          "code": "0x06",
+          "title": "BEL_3_04.MT :"
+        },
+        {
+          "kind": "title",
+          "code": "0x07",
+          "title": "BEL_3_05.MT :"
+        },
+        {
+          "kind": "title",
+          "code": "0x09",
+          "title": "BEL_3_06.MT :"
+        },
+        {
+          "kind": "title",
+          "code": "0x0a",
+          "title": "BEL_3_07.MT :"
+        },
+        {
+          "kind": "title",
+          "code": "0x0b",
+          "title": "BEL_3_08.MT :"
+        },
+        {
+          "kind": "title",
+          "code": "0x0c",
+          "title": "BEL_3_09.MT :"
+        },
+        {
+          "kind": "title",
+          "code": "0x0d",
+          "title": "BEL_3_10.MT :"
+        },
+        {
+          "kind": "title",
+          "code": "0x0e",
+          "title": "BEL_3_13.MT :"
+        },
+        {
+          "kind": "title",
+          "code": "0x0f",
+          "title": "BGM21.MT    :"
+        },
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "BGM22.MT    :"
+        },
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "BGM24.MT    :"
+        },
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "BGM31.MT    :"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "KOINU.MT    :"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/wendymagazine.xml",
+      "source_order": 4943,
+      "archive": "belsavn368snd",
+      "id": "belsavn368snd-generic-4"
+    },
+    {
+      "title": "[MSX] PINK SOX8",
+      "driver": {
+        "name": "msx",
+        "type": "generic",
+        "alias": "ウェンディマガジン",
+        "platform": "MSX"
+      },
+      "options": [
+        {
+          "name": "mdata_addr",
+          "value": "0x8d80"
+        },
+        {
+          "name": "mdata_size",
+          "value": "0x1400"
+        },
+        {
+          "name": "mfile_size",
+          "value": "0x1400"
+        },
+        {
+          "name": "init_pc",
+          "value": "0x0400"
+        },
+        {
+          "name": "use_opll",
+          "value": "0x01"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "patch",
+          "offset": "0x0400"
+        },
+        {
+          "type": "code",
+          "path": "TONE00.BIN",
+          "offset": "0x4000"
+        },
+        {
+          "type": "code",
+          "path": "TONE01.BIN",
+          "offset": "0x4200"
+        },
+        {
+          "type": "code",
+          "path": "TONE02.BIN",
+          "offset": "0x4400"
+        },
+        {
+          "type": "code",
+          "path": "TONE03.BIN",
+          "offset": "0x4800"
+        },
+        {
+          "type": "code",
+          "path": "FMDRV.BIN",
+          "offset": "0x8000"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS00.BIN",
+          "offset": "0x00"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS01.BIN",
+          "offset": "0x01"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS02.BIN",
+          "offset": "0x02"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS03.BIN",
+          "offset": "0x03"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS04.BIN",
+          "offset": "0x04"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS05.BIN",
+          "offset": "0x05"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS06.BIN",
+          "offset": "0x06"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS07.BIN",
+          "offset": "0x07"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS08.BIN",
+          "offset": "0x08"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS09.BIN",
+          "offset": "0x09"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS0A.BIN",
+          "offset": "0x0a"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS0B.BIN",
+          "offset": "0x0b"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS0C.BIN",
+          "offset": "0x0c"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS0D.BIN",
+          "offset": "0x0d"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS10.BIN",
+          "offset": "0x0e"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS11.BIN",
+          "offset": "0x0f"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS12.BIN",
+          "offset": "0x10"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS13.BIN",
+          "offset": "0x11"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS14.BIN",
+          "offset": "0x12"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS15.BIN",
+          "offset": "0x13"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS16.BIN",
+          "offset": "0x14"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS17.BIN",
+          "offset": "0x15"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS18.BIN",
+          "offset": "0x16"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS19.BIN",
+          "offset": "0x17"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS1A.BIN",
+          "offset": "0x18"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS1B.BIN",
+          "offset": "0x19"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS1C.BIN",
+          "offset": "0x1a"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS1D.BIN",
+          "offset": "0x1b"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS1E.BIN",
+          "offset": "0x1c"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS1F.BIN",
+          "offset": "0x1d"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS20.BIN",
+          "offset": "0x1e"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS21.BIN",
+          "offset": "0x1f"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS22.BIN",
+          "offset": "0x20"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS23.BIN",
+          "offset": "0x21"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS24.BIN",
+          "offset": "0x22"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS25.BIN",
+          "offset": "0x23"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS26.BIN",
+          "offset": "0x24"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS27.BIN",
+          "offset": "0x25"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS28.BIN",
+          "offset": "0x26"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS29.BIN",
+          "offset": "0x27"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS30.BIN",
+          "offset": "0x28"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS31.BIN",
+          "offset": "0x29"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS32.BIN",
+          "offset": "0x2a"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS33.BIN",
+          "offset": "0x2b"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS34.BIN",
+          "offset": "0x2c"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS40.BIN",
+          "offset": "0x2d"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS41.BIN",
+          "offset": "0x2e"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS42.BIN",
+          "offset": "0x2f"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS43.BIN",
+          "offset": "0x30"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS44.BIN",
+          "offset": "0x31"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS45.BIN",
+          "offset": "0x32"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS46.BIN",
+          "offset": "0x33"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS47.BIN",
+          "offset": "0x34"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS48.BIN",
+          "offset": "0x35"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS49.BIN",
+          "offset": "0x36"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS4a.BIN",
+          "offset": "0x37"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS4b.BIN",
+          "offset": "0x38"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS4c.BIN",
+          "offset": "0x39"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS4d.BIN",
+          "offset": "0x3a"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS4e.BIN",
+          "offset": "0x3b"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS4f.BIN",
+          "offset": "0x3c"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS50.BIN",
+          "offset": "0x3d"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x000000",
+          "title": "タイトル"
+        },
+        {
+          "kind": "title",
+          "code": "0x000001",
+          "title": "SIM GIRL #00"
+        },
+        {
+          "kind": "title",
+          "code": "0x000002",
+          "title": "SIM GIRL #01"
+        },
+        {
+          "kind": "title",
+          "code": "0x000003",
+          "title": "SIM GIRL #02"
+        },
+        {
+          "kind": "title",
+          "code": "0x010004",
+          "title": "SIM GIRL #03"
+        },
+        {
+          "kind": "title",
+          "code": "0x010104",
+          "title": "SIM GIRL #04"
+        },
+        {
+          "kind": "title",
+          "code": "0x010204",
+          "title": "SIM GIRL #05"
+        },
+        {
+          "kind": "title",
+          "code": "0x010304",
+          "title": "SIM GIRL #06"
+        },
+        {
+          "kind": "title",
+          "code": "0x010005",
+          "title": "SIM GIRL #07"
+        },
+        {
+          "kind": "title",
+          "code": "0x010105",
+          "title": "SIM GIRL #08"
+        },
+        {
+          "kind": "title",
+          "code": "0x010205",
+          "title": "SIM GIRL #09"
+        },
+        {
+          "kind": "title",
+          "code": "0x020006",
+          "title": "世界名作劇場 -シンデレラ- #00"
+        },
+        {
+          "kind": "title",
+          "code": "0x020007",
+          "title": "世界名作劇場 -シンデレラ- #01"
+        },
+        {
+          "kind": "title",
+          "code": "0x020008",
+          "title": "世界名作劇場 -シンデレラ- #02"
+        },
+        {
+          "kind": "title",
+          "code": "0x020009",
+          "title": "世界名作劇場 -シンデレラ- #03"
+        },
+        {
+          "kind": "title",
+          "code": "0x02000a",
+          "title": "世界名作劇場 -シンデレラ- #04"
+        },
+        {
+          "kind": "title",
+          "code": "0x02000b",
+          "title": "世界名作劇場 -シンデレラ- #05"
+        },
+        {
+          "kind": "title",
+          "code": "0x02000c",
+          "title": "世界名作劇場 -シンデレラ- #06"
+        },
+        {
+          "kind": "title",
+          "code": "0x02000d",
+          "title": "世界名作劇場 -シンデレラ- #07"
+        },
+        {
+          "kind": "title",
+          "code": "0x02000e",
+          "title": "世界名作劇場 -シンデレラ- #08"
+        },
+        {
+          "kind": "title",
+          "code": "0x02000f",
+          "title": "世界名作劇場 -シンデレラ- #09"
+        },
+        {
+          "kind": "title",
+          "code": "0x020010",
+          "title": "世界名作劇場 -シンデレラ- #10"
+        },
+        {
+          "kind": "title",
+          "code": "0x020011",
+          "title": "世界名作劇場 -シンデレラ- #11"
+        },
+        {
+          "kind": "title",
+          "code": "0x020012",
+          "title": "世界名作劇場 -シンデレラ- #12"
+        },
+        {
+          "kind": "title",
+          "code": "0x020013",
+          "title": "世界名作劇場 -シンデレラ- #13"
+        },
+        {
+          "kind": "title",
+          "code": "0x020014",
+          "title": "世界名作劇場 -シンデレラ- #14"
+        },
+        {
+          "kind": "title",
+          "code": "0x020015",
+          "title": "世界名作劇場 -シンデレラ- #15"
+        },
+        {
+          "kind": "title",
+          "code": "0x020016",
+          "title": "世界名作劇場 -シンデレラ- #16"
+        },
+        {
+          "kind": "title",
+          "code": "0x020017",
+          "title": "世界名作劇場 -シンデレラ- #17"
+        },
+        {
+          "kind": "title",
+          "code": "0x020018",
+          "title": "世界名作劇場 -シンデレラ- #18"
+        },
+        {
+          "kind": "title",
+          "code": "0x020019",
+          "title": "世界名作劇場 -シンデレラ- #19"
+        },
+        {
+          "kind": "title",
+          "code": "0x02001a",
+          "title": "世界名作劇場 -シンデレラ- #20"
+        },
+        {
+          "kind": "title",
+          "code": "0x02001b",
+          "title": "世界名作劇場 -シンデレラ- #21"
+        },
+        {
+          "kind": "title",
+          "code": "0x02001c",
+          "title": "世界名作劇場 -シンデレラ- #22"
+        },
+        {
+          "kind": "title",
+          "code": "0x02001d",
+          "title": "世界名作劇場 -シンデレラ- #23"
+        },
+        {
+          "kind": "title",
+          "code": "0x02001e",
+          "title": "世界名作劇場 -シンデレラ- #24"
+        },
+        {
+          "kind": "title",
+          "code": "0x02001f",
+          "title": "世界名作劇場 -シンデレラ- #25"
+        },
+        {
+          "kind": "title",
+          "code": "0x020020",
+          "title": "世界名作劇場 -シンデレラ- #26"
+        },
+        {
+          "kind": "title",
+          "code": "0x030021",
+          "title": "どしふん #00"
+        },
+        {
+          "kind": "title",
+          "code": "0x030022",
+          "title": "どしふん #01"
+        },
+        {
+          "kind": "title",
+          "code": "0x030023",
+          "title": "どしふん #02"
+        },
+        {
+          "kind": "title",
+          "code": "0x030024",
+          "title": "どしふん #03"
+        },
+        {
+          "kind": "title",
+          "code": "0x030025",
+          "title": "どしふん #04"
+        },
+        {
+          "kind": "title",
+          "code": "0x030026",
+          "title": "どしふん #05"
+        },
+        {
+          "kind": "title",
+          "code": "0x030027",
+          "title": "どしふん #06"
+        },
+        {
+          "kind": "title",
+          "code": "0x000028",
+          "title": "HALF TIME LOVER"
+        },
+        {
+          "kind": "title",
+          "code": "0x000029",
+          "title": "小さなあなからコツコツと #00"
+        },
+        {
+          "kind": "title",
+          "code": "0x00002a",
+          "title": "小さなあなからコツコツと #01"
+        },
+        {
+          "kind": "title",
+          "code": "0x00002b",
+          "title": "小さなあなからコツコツと #02"
+        },
+        {
+          "kind": "title",
+          "code": "0x00002c",
+          "title": "小さなあなからコツコツと #03"
+        },
+        {
+          "kind": "title",
+          "code": "0x01002d",
+          "title": "濡れたガンキャノン #00"
+        },
+        {
+          "kind": "title",
+          "code": "0x01002e",
+          "title": "濡れたガンキャノン #01"
+        },
+        {
+          "kind": "title",
+          "code": "0x01002f",
+          "title": "濡れたガンキャノン #02"
+        },
+        {
+          "kind": "title",
+          "code": "0x010030",
+          "title": "濡れたガンキャノン #03"
+        },
+        {
+          "kind": "title",
+          "code": "0x010031",
+          "title": "濡れたガンキャノン #04"
+        },
+        {
+          "kind": "title",
+          "code": "0x010032",
+          "title": "濡れたガンキャノン #05"
+        },
+        {
+          "kind": "title",
+          "code": "0x010033",
+          "title": "濡れたガンキャノン #06"
+        },
+        {
+          "kind": "title",
+          "code": "0x010034",
+          "title": "濡れたガンキャノン #07"
+        },
+        {
+          "kind": "title",
+          "code": "0x010035",
+          "title": "濡れたガンキャノン #08"
+        },
+        {
+          "kind": "title",
+          "code": "0x010036",
+          "title": "濡れたガンキャノン #09"
+        },
+        {
+          "kind": "title",
+          "code": "0x010037",
+          "title": "濡れたガンキャノン #10"
+        },
+        {
+          "kind": "title",
+          "code": "0x010038",
+          "title": "濡れたガンキャノン #11"
+        },
+        {
+          "kind": "title",
+          "code": "0x010039",
+          "title": "濡れたガンキャノン #12"
+        },
+        {
+          "kind": "title",
+          "code": "0x01003a",
+          "title": "濡れたガンキャノン #13"
+        },
+        {
+          "kind": "title",
+          "code": "0x01003b",
+          "title": "濡れたガンキャノン #14"
+        },
+        {
+          "kind": "title",
+          "code": "0x01003c",
+          "title": "濡れたガンキャノン #15"
+        },
+        {
+          "kind": "title",
+          "code": "0x00003d",
+          "title": "OTAYORI"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/wendymagazine.xml",
+      "source_order": 4944,
+      "archive": "ps8_msx",
+      "id": "ps8-msx-generic"
+    }
+  ]
+}

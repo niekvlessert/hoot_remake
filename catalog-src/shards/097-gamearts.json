@@ -1,0 +1,6319 @@
+{
+  "format": "hoot-catalog-shard",
+  "version": 1,
+  "source_file": "xml/gamearts.xml",
+  "date": "2006/08/24",
+  "comments": [
+    " //GAME ARTS "
+  ],
+  "games": [
+    {
+      "title": "[PC-8801] THEXDER(PC-8801mkIISR専用版)",
+      "driver": {
+        "name": "pc88",
+        "type": "opn",
+        "alias": "GAME ARTS",
+        "platform": "NEC PC-8801"
+      },
+      "options": [
+        {
+          "name": "use_rtc",
+          "value": "0x01"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "PATCH",
+          "offset": "0x0000"
+        },
+        {
+          "type": "code",
+          "path": "N88_3.ROM",
+          "offset": "0x6000"
+        },
+        {
+          "type": "code",
+          "path": "DEMOM",
+          "offset": "0x9000"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x00",
+          "title": "THEXDER / H.GODAI"
+        },
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "MOON LIGHT SONATA / BEETHOVEN"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/gamearts.xml",
+      "source_order": 2218,
+      "archive": "thexder",
+      "id": "thexder-opn"
+    },
+    {
+      "title": "[PC-8801] THEXDER88(PC-8801/mkII版)",
+      "driver": {
+        "name": "pc88",
+        "type": "8801-11",
+        "alias": "GAME ARTS",
+        "platform": "NEC PC-8801"
+      },
+      "options": [
+        {
+          "name": "use_vrtc",
+          "value": "0x01"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "PATCH",
+          "offset": "0x0000"
+        },
+        {
+          "type": "code",
+          "path": "fmdtex",
+          "offset": "0x8000"
+        },
+        {
+          "type": "code",
+          "path": "DEMOM",
+          "offset": "0x9000"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x00",
+          "title": "THEXDER / H.GODAI"
+        },
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "MOON LIGHT SONATA / BEETHOVEN"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/gamearts.xml",
+      "source_order": 2219,
+      "archive": "thexder88",
+      "id": "thexder88-8801-11"
+    },
+    {
+      "title": "[PC-8001mkIISR] THEXDER",
+      "driver": {
+        "name": "pc80sr",
+        "type": "opn",
+        "alias": "GAME ARTS",
+        "platform": "NEC PC-8001mkIISR"
+      },
+      "options": [
+        {
+          "name": "use_rtc",
+          "value": "0x01"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "N80_3.ROM",
+          "offset": "0x0000"
+        },
+        {
+          "type": "code",
+          "path": "PATCH",
+          "offset": "0x0000"
+        },
+        {
+          "type": "code",
+          "path": "DEMOM",
+          "offset": "0x98a0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x00",
+          "title": "THEXDER / H.GODAI"
+        },
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "MOON LIGHT SONATA / BEETHOVEN"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/gamearts.xml",
+      "source_order": 2220,
+      "archive": "thexder_80sr",
+      "id": "thexder-80sr-opn"
+    },
+    {
+      "title": "[PC-8801] Cuby Panic",
+      "driver": {
+        "name": "pc88",
+        "type": "opn",
+        "alias": "GAME ARTS",
+        "platform": "NEC PC-8801"
+      },
+      "options": [
+        {
+          "name": "use_vrtc",
+          "value": "0x01"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "PATCH",
+          "offset": "0x0000"
+        },
+        {
+          "type": "code",
+          "path": "N88_3.ROM",
+          "offset": "0x6000"
+        },
+        {
+          "type": "code",
+          "path": "MUSQB",
+          "offset": "0xc000"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x00",
+          "title": "MAIN BGM"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/gamearts.xml",
+      "source_order": 2221,
+      "archive": "cubypanic",
+      "id": "cubypanic-opn"
+    },
+    {
+      "title": "[PC-8801] SILPHEED",
+      "driver": {
+        "name": "pc88",
+        "type": "opn",
+        "alias": "GAME ARTS",
+        "platform": "NEC PC-8801"
+      },
+      "options": [
+        {
+          "name": "use_rtc",
+          "value": "0x01"
+        },
+        {
+          "name": "mdata_addr",
+          "value": "0x1000"
+        },
+        {
+          "name": "mdata_size",
+          "value": "0x3400"
+        },
+        {
+          "name": "mfile_size",
+          "value": "0x3400"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "PATCH88",
+          "offset": "0x0000"
+        },
+        {
+          "type": "code",
+          "path": "FACE",
+          "offset": "0x6000"
+        },
+        {
+          "type": "code",
+          "path": "MDEMO.M",
+          "offset": "0xe600"
+        },
+        {
+          "type": "bgm",
+          "path": "GLR.M",
+          "offset": "0x00"
+        },
+        {
+          "type": "bgm",
+          "path": "MDEMO.M",
+          "offset": "0x01"
+        },
+        {
+          "type": "bgm",
+          "path": "NEKO.M",
+          "offset": "0x02"
+        },
+        {
+          "type": "bgm",
+          "path": "SIL1.M",
+          "offset": "0x03"
+        },
+        {
+          "type": "bgm",
+          "path": "SIL2.M",
+          "offset": "0x04"
+        },
+        {
+          "type": "bgm",
+          "path": "SIL3.M",
+          "offset": "0x05"
+        },
+        {
+          "type": "bgm",
+          "path": "SIL4.M",
+          "offset": "0x06"
+        },
+        {
+          "type": "bgm",
+          "path": "SILH1.M",
+          "offset": "0x07"
+        },
+        {
+          "type": "bgm",
+          "path": "SILH2.M",
+          "offset": "0x08"
+        },
+        {
+          "type": "bgm",
+          "path": "GOODLK",
+          "offset": "0x10"
+        },
+        {
+          "type": "bgm",
+          "path": "HAHAHA",
+          "offset": "0x11"
+        },
+        {
+          "type": "bgm",
+          "path": "KONNA",
+          "offset": "0x12"
+        },
+        {
+          "type": "bgm",
+          "path": "KOUVOI",
+          "offset": "0x13"
+        },
+        {
+          "type": "bgm",
+          "path": "MVOIC0",
+          "offset": "0x14"
+        },
+        {
+          "type": "bgm",
+          "path": "NAKNAK",
+          "offset": "0x15"
+        },
+        {
+          "type": "bgm",
+          "path": "VOICE0",
+          "offset": "0x16"
+        },
+        {
+          "type": "bgm",
+          "path": "WOLF",
+          "offset": "0x17"
+        },
+        {
+          "type": "bgm",
+          "path": "YOWAI",
+          "offset": "0x18"
+        },
+        {
+          "type": "bgm",
+          "path": "G",
+          "offset": "0x19"
+        },
+        {
+          "type": "bgm",
+          "path": "GLOEND",
+          "offset": "0x1a"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x01000001",
+          "title": "MDEMO.M : THE LEGEND OF SILPHEED"
+        },
+        {
+          "kind": "title",
+          "code": "0x01000007",
+          "title": "SILH1.M : SILF OF WIND I"
+        },
+        {
+          "kind": "title",
+          "code": "0x01000008",
+          "title": "SILH2.M : SILF OF WIND II"
+        },
+        {
+          "kind": "title",
+          "code": "0x01000003",
+          "title": "SIL1.M  : BATTLE ON ORBIT"
+        },
+        {
+          "kind": "title",
+          "code": "0x01000002",
+          "title": "NEKO.M  : LANDING BASE"
+        },
+        {
+          "kind": "title",
+          "code": "0x01000004",
+          "title": "SIL2.M  : ASTEROID"
+        },
+        {
+          "kind": "title",
+          "code": "0x01000005",
+          "title": "SIL3.M  : GOING IN FORTRESS"
+        },
+        {
+          "kind": "title",
+          "code": "0x02000002",
+          "title": "NEKO.M  : DOUBLE STAR"
+        },
+        {
+          "kind": "title",
+          "code": "0x02000007",
+          "title": "SILH1.M : BATTLESTAR OLLEYUS (1)"
+        },
+        {
+          "kind": "title",
+          "code": "0x02000003",
+          "title": "SIL1.M  : BATTLESTAR OLLEYUS (2)"
+        },
+        {
+          "kind": "title",
+          "code": "0x03000002",
+          "title": "NEKO.M  : KING JUPITER"
+        },
+        {
+          "kind": "title",
+          "code": "0x01000000",
+          "title": "GLR.M   : RETURN OF XACALITE"
+        },
+        {
+          "kind": "title",
+          "code": "0x81000006",
+          "title": "SIL4.M  : LITTLE MOMENT PEACE"
+        },
+        {
+          "kind": "title",
+          "code": "0x0010ae19",
+          "title": "G      : Presented by GAME ARTS"
+        },
+        {
+          "kind": "title",
+          "code": "0x00002a16",
+          "title": "VOICE0 : わしは 宇宙の帝王 ザカリテ グロアールある限り 貴様ごときに倒されはせぬ"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000017",
+          "title": "WOLF   : Welcome home, Silpheed. You ride on glideslope."
+        },
+        {
+          "kind": "title",
+          "code": "0x00000014",
+          "title": "MVOIC0 : This is Gamma-Alpha control command. Appoint runway, well made!"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000010",
+          "title": "GOODLK : Good Luck! SILPHEED"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000018",
+          "title": "YOWAI  : おまえは弱かった"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000012",
+          "title": "KONNA  : お前の力はこんなものか"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000015",
+          "title": "NAKNAK : なかなかやるな しかし その程度ではわしは倒せぬ"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000011",
+          "title": "HAHAHA : はっはっはっはっ..."
+        },
+        {
+          "kind": "title",
+          "code": "0x001cbb1a",
+          "title": "GLOEND : うーむ グロアールがやられてしまってはしかたがない 今日のところは引きあげだ"
+        },
+        {
+          "kind": "title",
+          "code": "0x002e901a",
+          "title": "GLOEND : わしは あきらめんぞ"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000013",
+          "title": "KOUVOI : お前のような奴にわしは勝てぬ 一応、負けにしておいてやる"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/gamearts.xml",
+      "source_order": 2222,
+      "archive": "silpheed",
+      "id": "silpheed-opn"
+    },
+    {
+      "title": "[PC-8801] Zeliard(OPNA)",
+      "driver": {
+        "name": "pc88",
+        "type": "opna",
+        "alias": "GAME ARTS",
+        "platform": "NEC PC-8801"
+      },
+      "options": [
+        {
+          "name": "use_rtc",
+          "value": "0x01"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "PATCH",
+          "offset": "0x0000"
+        },
+        {
+          "type": "code",
+          "path": "MUSMOD",
+          "offset": "0x2c00"
+        },
+        {
+          "type": "code",
+          "path": "MUS00",
+          "offset": "0xe400"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS00",
+          "offset": "0x00"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS01",
+          "offset": "0x01"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS02",
+          "offset": "0x02"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS03",
+          "offset": "0x03"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS04",
+          "offset": "0x04"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS05",
+          "offset": "0x05"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS06",
+          "offset": "0x06"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS07",
+          "offset": "0x07"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS08",
+          "offset": "0x08"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS09",
+          "offset": "0x09"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS10",
+          "offset": "0x0a"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS11",
+          "offset": "0x0b"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS12",
+          "offset": "0x0c"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS13",
+          "offset": "0x0d"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS14",
+          "offset": "0x0e"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS15",
+          "offset": "0x0f"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS16",
+          "offset": "0x10"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x00",
+          "title": "MUS00 : エスメサンテの輝き"
+        },
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "MUS01 : 旅立ち"
+        },
+        {
+          "kind": "title",
+          "code": "0x02",
+          "title": "MUS02 : 束の間の休息"
+        },
+        {
+          "kind": "title",
+          "code": "0x03",
+          "title": "MUS03 : 地下の街"
+        },
+        {
+          "kind": "title",
+          "code": "0x04",
+          "title": "MUS04 : 閉ざされた街"
+        },
+        {
+          "kind": "title",
+          "code": "0x05",
+          "title": "MUS05 : 闇の世界へ"
+        },
+        {
+          "kind": "title",
+          "code": "0x06",
+          "title": "MUS06 : 洞窟を越えて"
+        },
+        {
+          "kind": "title",
+          "code": "0x07",
+          "title": "MUS07 : 樹の世界"
+        },
+        {
+          "kind": "title",
+          "code": "0x08",
+          "title": "MUS08 : 氷の世界"
+        },
+        {
+          "kind": "title",
+          "code": "0x09",
+          "title": "MUS09 : 腐土の世界"
+        },
+        {
+          "kind": "title",
+          "code": "0x0a",
+          "title": "MUS10 : 黄金の世界"
+        },
+        {
+          "kind": "title",
+          "code": "0x0b",
+          "title": "MUS11 : 炎の世界"
+        },
+        {
+          "kind": "title",
+          "code": "0x0c",
+          "title": "MUS12 : 不思議の世界"
+        },
+        {
+          "kind": "title",
+          "code": "0x0d",
+          "title": "MUS13 : 闇の使者"
+        },
+        {
+          "kind": "title",
+          "code": "0x0e",
+          "title": "MUS14 : 魔王"
+        },
+        {
+          "kind": "title",
+          "code": "0x0f",
+          "title": "MUS15 : 勝利"
+        },
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "MUS16 : 新たなる冒険へ"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/gamearts.xml",
+      "source_order": 2223,
+      "archive": "zeliard",
+      "id": "zeliard-opna"
+    },
+    {
+      "title": "[PC-8801] Zeliard(OPN)",
+      "driver": {
+        "name": "pc88",
+        "type": "opn",
+        "alias": "GAME ARTS",
+        "platform": "NEC PC-8801"
+      },
+      "options": [
+        {
+          "name": "use_rtc",
+          "value": "0x01"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "PATCH",
+          "offset": "0x0000"
+        },
+        {
+          "type": "code",
+          "path": "MUSMOD",
+          "offset": "0x2c00"
+        },
+        {
+          "type": "code",
+          "path": "MUS00B",
+          "offset": "0xe400"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS00B",
+          "offset": "0x00"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS01",
+          "offset": "0x01"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS02",
+          "offset": "0x02"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS03",
+          "offset": "0x03"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS04",
+          "offset": "0x04"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS05",
+          "offset": "0x05"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS06",
+          "offset": "0x06"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS07",
+          "offset": "0x07"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS08",
+          "offset": "0x08"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS09",
+          "offset": "0x09"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS10",
+          "offset": "0x0a"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS11",
+          "offset": "0x0b"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS12",
+          "offset": "0x0c"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS13",
+          "offset": "0x0d"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS14",
+          "offset": "0x0e"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS15",
+          "offset": "0x0f"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS16B",
+          "offset": "0x10"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x00",
+          "title": "MUS00 : エスメサンテの輝き"
+        },
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "MUS01 : 旅立ち"
+        },
+        {
+          "kind": "title",
+          "code": "0x02",
+          "title": "MUS02 : 束の間の休息"
+        },
+        {
+          "kind": "title",
+          "code": "0x03",
+          "title": "MUS03 : 地下の街"
+        },
+        {
+          "kind": "title",
+          "code": "0x04",
+          "title": "MUS04 : 閉ざされた街"
+        },
+        {
+          "kind": "title",
+          "code": "0x05",
+          "title": "MUS05 : 闇の世界へ"
+        },
+        {
+          "kind": "title",
+          "code": "0x06",
+          "title": "MUS06 : 洞窟を越えて"
+        },
+        {
+          "kind": "title",
+          "code": "0x07",
+          "title": "MUS07 : 樹の世界"
+        },
+        {
+          "kind": "title",
+          "code": "0x08",
+          "title": "MUS08 : 氷の世界"
+        },
+        {
+          "kind": "title",
+          "code": "0x09",
+          "title": "MUS09 : 腐土の世界"
+        },
+        {
+          "kind": "title",
+          "code": "0x0a",
+          "title": "MUS10 : 黄金の世界"
+        },
+        {
+          "kind": "title",
+          "code": "0x0b",
+          "title": "MUS11 : 炎の世界"
+        },
+        {
+          "kind": "title",
+          "code": "0x0c",
+          "title": "MUS12 : 不思議の世界"
+        },
+        {
+          "kind": "title",
+          "code": "0x0d",
+          "title": "MUS13 : 闇の使者"
+        },
+        {
+          "kind": "title",
+          "code": "0x0e",
+          "title": "MUS14 : 魔王"
+        },
+        {
+          "kind": "title",
+          "code": "0x0f",
+          "title": "MUS15 : 勝利"
+        },
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "MUS16 : 新たなる冒険へ"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/gamearts.xml",
+      "source_order": 2224,
+      "archive": "zeliard",
+      "id": "zeliard-opn"
+    },
+    {
+      "title": "[PC-8801] Solitaire Royale",
+      "driver": {
+        "name": "pc88",
+        "type": "opn",
+        "alias": "GAME ARTS",
+        "platform": "NEC PC-8801"
+      },
+      "options": [
+        {
+          "name": "use_rtc",
+          "value": "0x01"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "PATCH",
+          "offset": "0x0000"
+        },
+        {
+          "type": "code",
+          "path": "PLAY88",
+          "offset": "0x6000"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS00",
+          "offset": "0x00"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS01",
+          "offset": "0x01"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS02",
+          "offset": "0x02"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS03",
+          "offset": "0x03"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS04",
+          "offset": "0x04"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS05",
+          "offset": "0x05"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS06",
+          "offset": "0x06"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS07",
+          "offset": "0x07"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS08",
+          "offset": "0x08"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS09",
+          "offset": "0x09"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS10",
+          "offset": "0x0a"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS11",
+          "offset": "0x0b"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS12",
+          "offset": "0x0c"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS13",
+          "offset": "0x0d"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS14",
+          "offset": "0x0e"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS15",
+          "offset": "0x0f"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS16",
+          "offset": "0x10"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS17",
+          "offset": "0x11"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x08",
+          "title": "MUS08 : title"
+        },
+        {
+          "kind": "title",
+          "code": "0x0e",
+          "title": "MUS14 : pyramid"
+        },
+        {
+          "kind": "title",
+          "code": "0x0f",
+          "title": "MUS15 : golf"
+        },
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "MUS16 : klondike"
+        },
+        {
+          "kind": "title",
+          "code": "0x0a",
+          "title": "MUS10 : canfield"
+        },
+        {
+          "kind": "title",
+          "code": "0x0b",
+          "title": "MUS11 : corners"
+        },
+        {
+          "kind": "title",
+          "code": "0x0c",
+          "title": "MUS12 : calculation"
+        },
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "MUS17 : shuffle & draw"
+        },
+        {
+          "kind": "title",
+          "code": "0x0d",
+          "title": "MUS13 : reno"
+        },
+        {
+          "kind": "title",
+          "code": "0x00",
+          "title": "MUS00 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "MUS01 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x02",
+          "title": "MUS02 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x03",
+          "title": "MUS03 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x04",
+          "title": "MUS04 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x05",
+          "title": "MUS05 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x06",
+          "title": "MUS06 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x07",
+          "title": "MUS07 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x09",
+          "title": "MUS09 :"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/gamearts.xml",
+      "source_order": 2225,
+      "archive": "solitair",
+      "id": "solitair-opn"
+    },
+    {
+      "title": "[PC-8801] TACTICAL GLADIATOR VEIGUES",
+      "driver": {
+        "name": "pc88",
+        "type": "opn",
+        "alias": "GAME ARTS",
+        "platform": "NEC PC-8801"
+      },
+      "options": [
+        {
+          "name": "use_rtc",
+          "value": "0x01"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "PATCH",
+          "offset": "0x0000"
+        },
+        {
+          "type": "code",
+          "path": "DEMO.SYS",
+          "offset": "0x0400"
+        },
+        {
+          "type": "code",
+          "path": "FMDRV",
+          "offset": "0xd000"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS00",
+          "offset": "0x00"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS02",
+          "offset": "0x02"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS03",
+          "offset": "0x03"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS04",
+          "offset": "0x04"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS05",
+          "offset": "0x05"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS06",
+          "offset": "0x06"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS07",
+          "offset": "0x07"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS08",
+          "offset": "0x08"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS09",
+          "offset": "0x09"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS10",
+          "offset": "0x0a"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS11",
+          "offset": "0x0b"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS12",
+          "offset": "0x0c"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS13",
+          "offset": "0x0d"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS14",
+          "offset": "0x0e"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS15",
+          "offset": "0x0f"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS16",
+          "offset": "0x10"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS17",
+          "offset": "0x11"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x00",
+          "title": "MUS00 : オープニング"
+        },
+        {
+          "kind": "title",
+          "code": "0x02",
+          "title": "MUS02 : ミッション1，エリア1【市街地】"
+        },
+        {
+          "kind": "title",
+          "code": "0x04",
+          "title": "MUS04 : ミッション1，エリア2【荒地】"
+        },
+        {
+          "kind": "title",
+          "code": "0x03",
+          "title": "MUS03 : ミッション1，エリア3【砂漠】"
+        },
+        {
+          "kind": "title",
+          "code": "0x05",
+          "title": "MUS05 : ミッション1，エリア4【湿地帯】"
+        },
+        {
+          "kind": "title",
+          "code": "0x06",
+          "title": "MUS06 : ミッション1，エリア5【森林】"
+        },
+        {
+          "kind": "title",
+          "code": "0x02",
+          "title": "MUS02 : ミッション2，エリア1【洞窟入口】"
+        },
+        {
+          "kind": "title",
+          "code": "0x07",
+          "title": "MUS07 : ミッション2，エリア2【クリスタル】"
+        },
+        {
+          "kind": "title",
+          "code": "0x03",
+          "title": "MUS03 : ミッション2，エリア3【地底湖】"
+        },
+        {
+          "kind": "title",
+          "code": "0x08",
+          "title": "MUS08 : ミッション2，エリア4【地底火山】"
+        },
+        {
+          "kind": "title",
+          "code": "0x09",
+          "title": "MUS09 : ミッション2，エリア5【海底通路】"
+        },
+        {
+          "kind": "title",
+          "code": "0x02",
+          "title": "MUS02 : ミッション3，エリア1【通路１】"
+        },
+        {
+          "kind": "title",
+          "code": "0x0a",
+          "title": "MUS10 : ミッション3，エリア2【集積所】"
+        },
+        {
+          "kind": "title",
+          "code": "0x03",
+          "title": "MUS03 : ミッション3，エリア3【通路２】"
+        },
+        {
+          "kind": "title",
+          "code": "0x0b",
+          "title": "MUS11 : ミッション3，エリア4【プラント】"
+        },
+        {
+          "kind": "title",
+          "code": "0x0c",
+          "title": "MUS12 : ミッション3，エリア5【コア】"
+        },
+        {
+          "kind": "title",
+          "code": "0x0d",
+          "title": "MUS13 : ボス"
+        },
+        {
+          "kind": "title",
+          "code": "0x0f",
+          "title": "MUS15 : 中間デモ（仮エンディング）"
+        },
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "MUS17 : 追撃準備（中間デモ）～ミッション4，エリア1"
+        },
+        {
+          "kind": "title",
+          "code": "0x0e",
+          "title": "BMF2  : ミッション4，エリア2"
+        },
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "veim  : エンディング"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/gamearts.xml",
+      "source_order": 2226,
+      "archive": "veigues",
+      "id": "veigues-opn"
+    },
+    {
+      "title": "[PC-8801] FIRE HAWK - THEXDER THE SECOND CONTACT -(OPNA)",
+      "driver": {
+        "name": "pc88",
+        "type": "opna",
+        "alias": "GAME ARTS",
+        "platform": "NEC PC-8801"
+      },
+      "options": [
+        {
+          "name": "init_pc",
+          "value": "0xf000"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "TSYS",
+          "offset": "0x0000"
+        },
+        {
+          "type": "code",
+          "path": "TPY2",
+          "offset": "0x04c7"
+        },
+        {
+          "type": "code",
+          "path": "OM12",
+          "offset": "0x4000"
+        },
+        {
+          "type": "code",
+          "path": "PATCH88",
+          "offset": "0xf000"
+        },
+        {
+          "type": "adpcm",
+          "path": "ADPCM"
+        },
+        {
+          "type": "bgm",
+          "path": "OM02",
+          "offset": "0x00"
+        },
+        {
+          "type": "bgm",
+          "path": "OM12",
+          "offset": "0x01"
+        },
+        {
+          "type": "bgm",
+          "path": "OM22",
+          "offset": "0x02"
+        },
+        {
+          "type": "bgm",
+          "path": "MM12",
+          "offset": "0x03"
+        },
+        {
+          "type": "bgm",
+          "path": "MM22",
+          "offset": "0x04"
+        },
+        {
+          "type": "bgm",
+          "path": "MM32",
+          "offset": "0x05"
+        },
+        {
+          "type": "bgm",
+          "path": "MM42",
+          "offset": "0x06"
+        },
+        {
+          "type": "bgm",
+          "path": "MM52",
+          "offset": "0x07"
+        },
+        {
+          "type": "bgm",
+          "path": "MM62",
+          "offset": "0x08"
+        },
+        {
+          "type": "bgm",
+          "path": "MM72",
+          "offset": "0x09"
+        },
+        {
+          "type": "bgm",
+          "path": "MM82",
+          "offset": "0x0a"
+        },
+        {
+          "type": "bgm",
+          "path": "MM92",
+          "offset": "0x0b"
+        },
+        {
+          "type": "bgm",
+          "path": "MMA2",
+          "offset": "0x0c"
+        },
+        {
+          "type": "bgm",
+          "path": "EM02",
+          "offset": "0x0d"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x00",
+          "title": "OM02 : OPENING 1"
+        },
+        {
+          "kind": "title",
+          "code": "0x02",
+          "title": "OM22 : OPENING 2 (Moon Light Sonata)"
+        },
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "OM12 : OPENING 3"
+        },
+        {
+          "kind": "title",
+          "code": "0x03",
+          "title": "MM12 : MISSION 1"
+        },
+        {
+          "kind": "title",
+          "code": "0x04",
+          "title": "MM22 : MISSION 2"
+        },
+        {
+          "kind": "title",
+          "code": "0x05",
+          "title": "MM32 : MISSION 3"
+        },
+        {
+          "kind": "title",
+          "code": "0x06",
+          "title": "MM42 : MISSION 4"
+        },
+        {
+          "kind": "title",
+          "code": "0x07",
+          "title": "MM52 : MISSION 5"
+        },
+        {
+          "kind": "title",
+          "code": "0x08",
+          "title": "MM62 : MISSION 6"
+        },
+        {
+          "kind": "title",
+          "code": "0x09",
+          "title": "MM72 : MISSION 7"
+        },
+        {
+          "kind": "title",
+          "code": "0x0a",
+          "title": "MM82 : MISSION 8"
+        },
+        {
+          "kind": "title",
+          "code": "0x0b",
+          "title": "MM92 : MISSION 9"
+        },
+        {
+          "kind": "title",
+          "code": "0x0c",
+          "title": "MMA2 : LAST BOSS"
+        },
+        {
+          "kind": "title",
+          "code": "0x0d",
+          "title": "EM02 : ENDING"
+        },
+        {
+          "kind": "title",
+          "code": "0xff",
+          "title": "BOSS : TO BOSS BGM"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/gamearts.xml",
+      "source_order": 2227,
+      "archive": "firehawk",
+      "id": "firehawk-opna"
+    },
+    {
+      "title": "[PC-8801] FIRE HAWK - THEXDER THE SECOND CONTACT -(OPN)",
+      "driver": {
+        "name": "pc88",
+        "type": "opn",
+        "alias": "GAME ARTS",
+        "platform": "NEC PC-8801"
+      },
+      "options": [
+        {
+          "name": "init_pc",
+          "value": "0xf000"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "TSYS",
+          "offset": "0x0000"
+        },
+        {
+          "type": "code",
+          "path": "TPY1",
+          "offset": "0x04c7"
+        },
+        {
+          "type": "code",
+          "path": "OM11",
+          "offset": "0x4000"
+        },
+        {
+          "type": "code",
+          "path": "PATCH88",
+          "offset": "0xf000"
+        },
+        {
+          "type": "bgm",
+          "path": "OM01",
+          "offset": "0x00"
+        },
+        {
+          "type": "bgm",
+          "path": "OM11",
+          "offset": "0x01"
+        },
+        {
+          "type": "bgm",
+          "path": "OM21",
+          "offset": "0x02"
+        },
+        {
+          "type": "bgm",
+          "path": "MM11",
+          "offset": "0x03"
+        },
+        {
+          "type": "bgm",
+          "path": "MM21",
+          "offset": "0x04"
+        },
+        {
+          "type": "bgm",
+          "path": "MM31",
+          "offset": "0x05"
+        },
+        {
+          "type": "bgm",
+          "path": "MM41",
+          "offset": "0x06"
+        },
+        {
+          "type": "bgm",
+          "path": "MM51",
+          "offset": "0x07"
+        },
+        {
+          "type": "bgm",
+          "path": "MM61",
+          "offset": "0x08"
+        },
+        {
+          "type": "bgm",
+          "path": "MM71",
+          "offset": "0x09"
+        },
+        {
+          "type": "bgm",
+          "path": "MM81",
+          "offset": "0x0a"
+        },
+        {
+          "type": "bgm",
+          "path": "MM91",
+          "offset": "0x0b"
+        },
+        {
+          "type": "bgm",
+          "path": "MMA1",
+          "offset": "0x0c"
+        },
+        {
+          "type": "bgm",
+          "path": "EM01",
+          "offset": "0x0d"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x00",
+          "title": "OM01 : OPENING 1"
+        },
+        {
+          "kind": "title",
+          "code": "0x02",
+          "title": "OM21 : OPENING 2 (Moon Light Sonata)"
+        },
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "OM11 : OPENING 3"
+        },
+        {
+          "kind": "title",
+          "code": "0x03",
+          "title": "MM11 : MISSION 1"
+        },
+        {
+          "kind": "title",
+          "code": "0x04",
+          "title": "MM21 : MISSION 2"
+        },
+        {
+          "kind": "title",
+          "code": "0x05",
+          "title": "MM31 : MISSION 3"
+        },
+        {
+          "kind": "title",
+          "code": "0x06",
+          "title": "MM41 : MISSION 4"
+        },
+        {
+          "kind": "title",
+          "code": "0x07",
+          "title": "MM51 : MISSION 5"
+        },
+        {
+          "kind": "title",
+          "code": "0x08",
+          "title": "MM61 : MISSION 6"
+        },
+        {
+          "kind": "title",
+          "code": "0x09",
+          "title": "MM71 : MISSION 7"
+        },
+        {
+          "kind": "title",
+          "code": "0x0a",
+          "title": "MM81 : MISSION 8"
+        },
+        {
+          "kind": "title",
+          "code": "0x0b",
+          "title": "MM91 : MISSION 9"
+        },
+        {
+          "kind": "title",
+          "code": "0x0c",
+          "title": "MMA1 : LAST BOSS"
+        },
+        {
+          "kind": "title",
+          "code": "0x0d",
+          "title": "EM01 : ENDING"
+        },
+        {
+          "kind": "title",
+          "code": "0xff",
+          "title": "BOSS : TO BOSS BGM"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/gamearts.xml",
+      "source_order": 2228,
+      "archive": "firehawk",
+      "id": "firehawk-opn"
+    },
+    {
+      "title": "[PC-8801] ぎゅわんぶらあ自己中心派",
+      "driver": {
+        "name": "pc88",
+        "type": "opn",
+        "alias": "GAME ARTS",
+        "platform": "NEC PC-8801"
+      },
+      "options": [
+        {
+          "name": "mdata_addr",
+          "value": "0xc000"
+        },
+        {
+          "name": "use_rtc",
+          "value": "0x01"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "PATCH",
+          "offset": "0x0000"
+        },
+        {
+          "type": "code",
+          "path": "GOPEN1._S",
+          "offset": "0xc000"
+        },
+        {
+          "type": "bgm",
+          "path": "GOPEN1._S",
+          "offset": "0x00"
+        },
+        {
+          "type": "bgm",
+          "path": "GOPEN2._S",
+          "offset": "0x01"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x00",
+          "title": "GOPEN1._S : オープニングデモ1"
+        },
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "GOPEN2._S : オープニングデモ2 (デモ1後に演奏のこと)"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/gamearts.xml",
+      "source_order": 2229,
+      "archive": "jikochu1",
+      "id": "jikochu1-opn"
+    },
+    {
+      "title": "[PC-8801] ぎゅわんぶらあ自己中心派2 自称! 強豪雀士編",
+      "driver": {
+        "name": "pc88",
+        "type": "opn",
+        "alias": "GAME ARTS",
+        "platform": "NEC PC-8801"
+      },
+      "options": [
+        {
+          "name": "mdata_addr",
+          "value": "0xc000"
+        },
+        {
+          "name": "use_rtc",
+          "value": "0x01"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "PATCH",
+          "offset": "0x0000"
+        },
+        {
+          "type": "code",
+          "path": "GOPEN1._S",
+          "offset": "0xc000"
+        },
+        {
+          "type": "bgm",
+          "path": "GOPEN1._S",
+          "offset": "0x00"
+        },
+        {
+          "type": "bgm",
+          "path": "GEND1_.S",
+          "offset": "0x01"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x00000000",
+          "title": "GOPEN1._S : オープニングデモ1"
+        },
+        {
+          "kind": "title",
+          "code": "0x01000001",
+          "title": "GEND1_.S  : オープニングデモ2"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000001",
+          "title": "GEND1_.S  : エンディング"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/gamearts.xml",
+      "source_order": 2230,
+      "archive": "jikochu2",
+      "id": "jikochu2-opn"
+    },
+    {
+      "title": "[PC-8801] ぎゅわんぶらあ自己中心派3 望郷さすらい雀士編",
+      "driver": {
+        "name": "pc88",
+        "type": "opn",
+        "alias": "GAME ARTS",
+        "platform": "NEC PC-8801"
+      },
+      "options": [
+        {
+          "name": "use_rtc",
+          "value": "0x01"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "PATCH",
+          "offset": "0x0000"
+        },
+        {
+          "type": "code",
+          "path": "GANPLA.M",
+          "offset": "0xc000"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x00",
+          "title": "GANPLA.M : オープニングデモ1"
+        },
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "GANPLA.M : オープニングデモ2"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/gamearts.xml",
+      "source_order": 2231,
+      "archive": "jikochu3",
+      "id": "jikochu3-opn"
+    },
+    {
+      "title": "[PC-8801] ぎゅわんぶらあ自己中心派 麻雀パズルコレクション(OPNA)",
+      "driver": {
+        "name": "pc88",
+        "type": "opna",
+        "alias": "GAME ARTS",
+        "platform": "NEC PC-8801"
+      },
+      "options": [
+        {
+          "name": "init_pc",
+          "value": "0xf000"
+        },
+        {
+          "name": "showfm3ex",
+          "value": "1"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "BIOS",
+          "offset": "0x0000"
+        },
+        {
+          "type": "code",
+          "path": "FMDRV",
+          "offset": "0x1250"
+        },
+        {
+          "type": "code",
+          "path": "CSM",
+          "offset": "0xe200"
+        },
+        {
+          "type": "code",
+          "path": "PATCH",
+          "offset": "0xf000"
+        },
+        {
+          "type": "adpcm",
+          "path": "ADPCM",
+          "offset": "0x00010"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS00",
+          "offset": "0x00"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS01",
+          "offset": "0x01"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS02",
+          "offset": "0x02"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS03",
+          "offset": "0x03"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS04",
+          "offset": "0x04"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS05",
+          "offset": "0x05"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS06",
+          "offset": "0x06"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS07",
+          "offset": "0x07"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS08",
+          "offset": "0x08"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS09",
+          "offset": "0x09"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS10",
+          "offset": "0x0a"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS11",
+          "offset": "0x0b"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS12",
+          "offset": "0x0c"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS13",
+          "offset": "0x0d"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS14",
+          "offset": "0x0e"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x00",
+          "title": "MUS00  : オープニング"
+        },
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "MUS01  : メニュー"
+        },
+        {
+          "kind": "title",
+          "code": "0x02",
+          "title": "MUS02  : トレーニングモード ゲームスタート"
+        },
+        {
+          "kind": "title",
+          "code": "0x06",
+          "title": "MUS06  : BGM 1 (初級)"
+        },
+        {
+          "kind": "title",
+          "code": "0x07",
+          "title": "MUS07  : BGM 2 (中級)"
+        },
+        {
+          "kind": "title",
+          "code": "0x08",
+          "title": "MUS08  : BGM 3 (上級)"
+        },
+        {
+          "kind": "title",
+          "code": "0x04",
+          "title": "MUS04  : ステージクリア"
+        },
+        {
+          "kind": "title",
+          "code": "0x05",
+          "title": "MUS05  : ゲームオーバー"
+        },
+        {
+          "kind": "title",
+          "code": "0x03",
+          "title": "MUS03  : ツアーモード ゲームスタート"
+        },
+        {
+          "kind": "title",
+          "code": "0x09",
+          "title": "MUS09  : ツアーモード デモ1"
+        },
+        {
+          "kind": "title",
+          "code": "0x0a",
+          "title": "MUS10  : ツアーモード デモ2"
+        },
+        {
+          "kind": "title",
+          "code": "0x0b",
+          "title": "MUS11  : ツアーモード デモ3"
+        },
+        {
+          "kind": "title",
+          "code": "0x0c",
+          "title": "MUS12  : ツアーモード デモ4"
+        },
+        {
+          "kind": "title",
+          "code": "0x0d",
+          "title": "MUS13  : 最終面前デモ"
+        },
+        {
+          "kind": "title",
+          "code": "0x0e",
+          "title": "MUS14  : エンディング"
+        },
+        {
+          "kind": "title",
+          "code": "0xf0",
+          "title": "VOICE0 : 「カン」"
+        },
+        {
+          "kind": "title",
+          "code": "0xf1",
+          "title": "VOICE1 : 「それチャイね」"
+        },
+        {
+          "kind": "title",
+          "code": "0xf2",
+          "title": "VOICE2 : 「えー、それとるのか～?」"
+        },
+        {
+          "kind": "title",
+          "code": "0xf3",
+          "title": "VOICE3 : 「えー、それとるの～?」"
+        },
+        {
+          "kind": "title",
+          "code": "0xf4",
+          "title": "VOICE4 : 「おめでとう!」"
+        },
+        {
+          "kind": "title",
+          "code": "0xf5",
+          "title": "VOICE5 : 「え～ん」"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/gamearts.xml",
+      "source_order": 2232,
+      "archive": "jikopzl",
+      "id": "jikopzl-opna"
+    },
+    {
+      "title": "[PC-8801] ぎゅわんぶらあ自己中心派 麻雀パズルコレクション(OPN)",
+      "driver": {
+        "name": "pc88",
+        "type": "opn",
+        "alias": "GAME ARTS",
+        "platform": "NEC PC-8801"
+      },
+      "options": [
+        {
+          "name": "init_pc",
+          "value": "0xf000"
+        },
+        {
+          "name": "showfm3ex",
+          "value": "1"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "BIOS",
+          "offset": "0x0000"
+        },
+        {
+          "type": "code",
+          "path": "FMDRV2",
+          "offset": "0x1250"
+        },
+        {
+          "type": "code",
+          "path": "CSM",
+          "offset": "0xe200"
+        },
+        {
+          "type": "code",
+          "path": "PATCH",
+          "offset": "0xf000"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS00",
+          "offset": "0x00"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS01",
+          "offset": "0x01"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS02",
+          "offset": "0x02"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS03",
+          "offset": "0x03"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS04",
+          "offset": "0x04"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS05",
+          "offset": "0x05"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS06",
+          "offset": "0x06"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS07",
+          "offset": "0x07"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS08",
+          "offset": "0x08"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS09",
+          "offset": "0x09"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS10",
+          "offset": "0x0a"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS11",
+          "offset": "0x0b"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS12",
+          "offset": "0x0c"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS13",
+          "offset": "0x0d"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS14",
+          "offset": "0x0e"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x00",
+          "title": "MUS00  : オープニング"
+        },
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "MUS01  : メニュー"
+        },
+        {
+          "kind": "title",
+          "code": "0x02",
+          "title": "MUS02  : トレーニングモード ゲームスタート"
+        },
+        {
+          "kind": "title",
+          "code": "0x06",
+          "title": "MUS06  : BGM 1 (初級)"
+        },
+        {
+          "kind": "title",
+          "code": "0x07",
+          "title": "MUS07  : BGM 2 (中級)"
+        },
+        {
+          "kind": "title",
+          "code": "0x08",
+          "title": "MUS08  : BGM 3 (上級)"
+        },
+        {
+          "kind": "title",
+          "code": "0x04",
+          "title": "MUS04  : ステージクリア"
+        },
+        {
+          "kind": "title",
+          "code": "0x05",
+          "title": "MUS05  : ゲームオーバー"
+        },
+        {
+          "kind": "title",
+          "code": "0x03",
+          "title": "MUS03  : ツアーモード ゲームスタート"
+        },
+        {
+          "kind": "title",
+          "code": "0x09",
+          "title": "MUS09  : ツアーモード デモ1"
+        },
+        {
+          "kind": "title",
+          "code": "0x0a",
+          "title": "MUS10  : ツアーモード デモ2"
+        },
+        {
+          "kind": "title",
+          "code": "0x0b",
+          "title": "MUS11  : ツアーモード デモ3"
+        },
+        {
+          "kind": "title",
+          "code": "0x0c",
+          "title": "MUS12  : ツアーモード デモ4"
+        },
+        {
+          "kind": "title",
+          "code": "0x0d",
+          "title": "MUS13  : 最終面前デモ"
+        },
+        {
+          "kind": "title",
+          "code": "0x0e",
+          "title": "MUS14  : エンディング"
+        },
+        {
+          "kind": "title",
+          "code": "0xf0",
+          "title": "VOICE0 : 「カン」"
+        },
+        {
+          "kind": "title",
+          "code": "0xf1",
+          "title": "VOICE1 : 「それチャイね」"
+        },
+        {
+          "kind": "title",
+          "code": "0xf2",
+          "title": "VOICE2 : 「えー、それとるのか～?」"
+        },
+        {
+          "kind": "title",
+          "code": "0xf3",
+          "title": "VOICE3 : 「えー、それとるの～?」"
+        },
+        {
+          "kind": "title",
+          "code": "0xf4",
+          "title": "VOICE4 : 「おめでとう!」"
+        },
+        {
+          "kind": "title",
+          "code": "0xf5",
+          "title": "VOICE5 : 「え～ん」"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/gamearts.xml",
+      "source_order": 2233,
+      "archive": "jikopzl",
+      "id": "jikopzl-opn"
+    },
+    {
+      "title": "[PC-8801] HARAKIRI",
+      "driver": {
+        "name": "pc88",
+        "type": "opna",
+        "alias": "GAME ARTS",
+        "platform": "NEC PC-8801"
+      },
+      "options": [
+        {
+          "name": "vdata_addr",
+          "value": "0xc000"
+        },
+        {
+          "name": "vdata_size",
+          "value": "0x1000"
+        },
+        {
+          "name": "vfile_size",
+          "value": "0x1000"
+        },
+        {
+          "name": "use_rtc",
+          "value": "0x01"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "PATCH",
+          "offset": "0x0000"
+        },
+        {
+          "type": "code",
+          "path": "PROG",
+          "offset": "0x0710"
+        },
+        {
+          "type": "code",
+          "path": "FMDRV",
+          "offset": "0xc000"
+        },
+        {
+          "type": "adpcm",
+          "path": "ADPCM",
+          "offset": "0x00010"
+        },
+        {
+          "type": "voice",
+          "path": "FMDRV",
+          "offset": "0x00"
+        },
+        {
+          "type": "bgm",
+          "path": "MOPEN",
+          "offset": "0x00"
+        },
+        {
+          "type": "voice",
+          "path": "FMDRV",
+          "offset": "0x01"
+        },
+        {
+          "type": "bgm",
+          "path": "MEND",
+          "offset": "0x01"
+        },
+        {
+          "type": "voice",
+          "path": "FMDRV2",
+          "offset": "0x02"
+        },
+        {
+          "type": "bgm",
+          "path": "MOPEN2",
+          "offset": "0x02"
+        },
+        {
+          "type": "voice",
+          "path": "FMDRV2",
+          "offset": "0x03"
+        },
+        {
+          "type": "bgm",
+          "path": "MEND2",
+          "offset": "0x03"
+        },
+        {
+          "type": "voice",
+          "path": "FMDRV2",
+          "offset": "0x04"
+        },
+        {
+          "type": "bgm",
+          "path": "MBADE",
+          "offset": "0x04"
+        },
+        {
+          "type": "voice",
+          "path": "MPLAY",
+          "offset": "0x05"
+        },
+        {
+          "type": "bgm",
+          "path": "MCHINA",
+          "offset": "0x05"
+        },
+        {
+          "type": "voice",
+          "path": "MPLAY",
+          "offset": "0x06"
+        },
+        {
+          "type": "bgm",
+          "path": "MHEXD",
+          "offset": "0x06"
+        },
+        {
+          "type": "voice",
+          "path": "MPLAY",
+          "offset": "0x07"
+        },
+        {
+          "type": "bgm",
+          "path": "MHEXO",
+          "offset": "0x07"
+        },
+        {
+          "type": "voice",
+          "path": "MPLAY",
+          "offset": "0x08"
+        },
+        {
+          "type": "bgm",
+          "path": "MIKKI",
+          "offset": "0x08"
+        },
+        {
+          "type": "voice",
+          "path": "MPLAY",
+          "offset": "0x09"
+        },
+        {
+          "type": "bgm",
+          "path": "MJAPAN",
+          "offset": "0x09"
+        },
+        {
+          "type": "voice",
+          "path": "MPLAY",
+          "offset": "0x0a"
+        },
+        {
+          "type": "bgm",
+          "path": "MKOJO",
+          "offset": "0x0a"
+        },
+        {
+          "type": "voice",
+          "path": "MPLAY",
+          "offset": "0x0b"
+        },
+        {
+          "type": "bgm",
+          "path": "MMAIN",
+          "offset": "0x0b"
+        },
+        {
+          "type": "voice",
+          "path": "MPLAY",
+          "offset": "0x0c"
+        },
+        {
+          "type": "bgm",
+          "path": "MMIKADO",
+          "offset": "0x0c"
+        },
+        {
+          "type": "voice",
+          "path": "MPLAY",
+          "offset": "0x0d"
+        },
+        {
+          "type": "bgm",
+          "path": "MNINJA",
+          "offset": "0x0d"
+        },
+        {
+          "type": "voice",
+          "path": "MPLAY",
+          "offset": "0x0e"
+        },
+        {
+          "type": "bgm",
+          "path": "MROJO",
+          "offset": "0x0e"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x00",
+          "title": "MOPEN   : オープニング(OPNA)"
+        },
+        {
+          "kind": "title",
+          "code": "0x02",
+          "title": "MOPEN2  : オープニング(OPN)"
+        },
+        {
+          "kind": "title",
+          "code": "0x0b",
+          "title": "MMAIN   : 大河ドラマ風"
+        },
+        {
+          "kind": "title",
+          "code": "0x09",
+          "title": "MJAPAN  : 日本風"
+        },
+        {
+          "kind": "title",
+          "code": "0x05",
+          "title": "MCHINA  : 中国風"
+        },
+        {
+          "kind": "title",
+          "code": "0x07",
+          "title": "MHEXO   : 野戦(攻撃)"
+        },
+        {
+          "kind": "title",
+          "code": "0x06",
+          "title": "MHEXD   : 野戦(防衛)"
+        },
+        {
+          "kind": "title",
+          "code": "0x08",
+          "title": "MIKKI   : 一騎討ち"
+        },
+        {
+          "kind": "title",
+          "code": "0x0a",
+          "title": "MKOJO   : 攻城戦"
+        },
+        {
+          "kind": "title",
+          "code": "0x0e",
+          "title": "MROJO   : 籠城戦"
+        },
+        {
+          "kind": "title",
+          "code": "0x0d",
+          "title": "MNINJA  : 忍者"
+        },
+        {
+          "kind": "title",
+          "code": "0x0c",
+          "title": "MMIKADO : 帝"
+        },
+        {
+          "kind": "title",
+          "code": "0x04",
+          "title": "MBADE   : バッドエンド"
+        },
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "MEND    : エンディング(OPNA)"
+        },
+        {
+          "kind": "title",
+          "code": "0x03",
+          "title": "MEND2   : エンディング(OPN)"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/gamearts.xml",
+      "source_order": 2234,
+      "archive": "harakiri",
+      "id": "harakiri-opna"
+    },
+    {
+      "title": "[PC-88VA] プロ野球ファミリースタジアム ペナントレース版 (OPNA)",
+      "driver": {
+        "name": "pc88vados",
+        "type": "opna",
+        "alias": "GAME ARTS",
+        "platform": "NEC PC-88VA"
+      },
+      "options": [],
+      "assets": [
+        {
+          "type": "file",
+          "path": "famista1.com",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "FS.EXE",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "BGM.BIN",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "CDEG.BIN",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "KUMADOOM.BIN",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "KUMAEND.BIN",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "KUMAOUT.BIN",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "NEWS.BIN",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "ROTORS.BIN",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "TENKI.BIN",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "WIN.BIN",
+          "offset": "-1"
+        },
+        {
+          "type": "conin",
+          "path": "BGM.BIN",
+          "offset": "0x10"
+        },
+        {
+          "type": "conin",
+          "path": "CDEG.BIN",
+          "offset": "0x11"
+        },
+        {
+          "type": "conin",
+          "path": "KUMADOOM.BIN",
+          "offset": "0x12"
+        },
+        {
+          "type": "conin",
+          "path": "KUMAEND.BIN",
+          "offset": "0x13"
+        },
+        {
+          "type": "conin",
+          "path": "KUMAOUT.BIN",
+          "offset": "0x14"
+        },
+        {
+          "type": "conin",
+          "path": "NEWS.BIN",
+          "offset": "0x15"
+        },
+        {
+          "type": "conin",
+          "path": "ROTORS.BIN",
+          "offset": "0x16"
+        },
+        {
+          "type": "conin",
+          "path": "TENKI.BIN",
+          "offset": "0x17"
+        },
+        {
+          "type": "conin",
+          "path": "WIN.BIN",
+          "offset": "0x18"
+        },
+        {
+          "type": "shell",
+          "path": "famista1",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x00000010",
+          "title": "BGM     .BIN :"
+        },
+        {
+          "kind": "title",
+          "code": "0x04000010",
+          "title": "BGM     .BIN :"
+        },
+        {
+          "kind": "title",
+          "code": "0x08000010",
+          "title": "BGM     .BIN :"
+        },
+        {
+          "kind": "title",
+          "code": "0x0c000010",
+          "title": "BGM     .BIN :"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000011",
+          "title": "CDEG    .BIN :"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000012",
+          "title": "KUMADOOM.BIN :"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000013",
+          "title": "KUMAEND .BIN :"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000014",
+          "title": "KUMAOUT .BIN :"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000015",
+          "title": "NEWS    .BIN :"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000016",
+          "title": "ROTORS  .BIN :"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000017",
+          "title": "TENKI   .BIN :"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000018",
+          "title": "WIN     .BIN :"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/gamearts.xml",
+      "source_order": 2235,
+      "archive": "famistava",
+      "id": "famistava-opna"
+    },
+    {
+      "title": "[PC-88VA] プロ野球ファミリースタジアム ペナントレース版 (OPN)",
+      "driver": {
+        "name": "pc88vados",
+        "type": "opn",
+        "alias": "GAME ARTS",
+        "platform": "NEC PC-88VA"
+      },
+      "options": [],
+      "assets": [
+        {
+          "type": "file",
+          "path": "famista1.com",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "FS.EXE",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "BGM.BIN",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "CDEG.BIN",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "KUMADOOM.BIN",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "KUMAEND.BIN",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "KUMAOUT.BIN",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "NEWS.BIN",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "ROTORS.BIN",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "TENKI.BIN",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "WIN.BIN",
+          "offset": "-1"
+        },
+        {
+          "type": "conin",
+          "path": "BGM.BIN",
+          "offset": "0x10"
+        },
+        {
+          "type": "conin",
+          "path": "CDEG.BIN",
+          "offset": "0x11"
+        },
+        {
+          "type": "conin",
+          "path": "KUMADOOM.BIN",
+          "offset": "0x12"
+        },
+        {
+          "type": "conin",
+          "path": "KUMAEND.BIN",
+          "offset": "0x13"
+        },
+        {
+          "type": "conin",
+          "path": "KUMAOUT.BIN",
+          "offset": "0x14"
+        },
+        {
+          "type": "conin",
+          "path": "NEWS.BIN",
+          "offset": "0x15"
+        },
+        {
+          "type": "conin",
+          "path": "ROTORS.BIN",
+          "offset": "0x16"
+        },
+        {
+          "type": "conin",
+          "path": "TENKI.BIN",
+          "offset": "0x17"
+        },
+        {
+          "type": "conin",
+          "path": "WIN.BIN",
+          "offset": "0x18"
+        },
+        {
+          "type": "shell",
+          "path": "famista1",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x00000010",
+          "title": "BGM     .BIN :"
+        },
+        {
+          "kind": "title",
+          "code": "0x04000010",
+          "title": "BGM     .BIN :"
+        },
+        {
+          "kind": "title",
+          "code": "0x08000010",
+          "title": "BGM     .BIN :"
+        },
+        {
+          "kind": "title",
+          "code": "0x0c000010",
+          "title": "BGM     .BIN :"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000011",
+          "title": "CDEG    .BIN :"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000012",
+          "title": "KUMADOOM.BIN :"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000013",
+          "title": "KUMAEND .BIN :"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000014",
+          "title": "KUMAOUT .BIN :"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000015",
+          "title": "NEWS    .BIN :"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000016",
+          "title": "ROTORS  .BIN :"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000017",
+          "title": "TENKI   .BIN :"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000018",
+          "title": "WIN     .BIN :"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/gamearts.xml",
+      "source_order": 2236,
+      "archive": "famistava",
+      "id": "famistava-opn"
+    },
+    {
+      "title": "[PC-88VA] プロ野球ファミリースタジアム 89年度ペナントレース版(OPNA)",
+      "driver": {
+        "name": "pc88vados",
+        "type": "opna",
+        "alias": "GAME ARTS",
+        "platform": "NEC PC-88VA"
+      },
+      "options": [],
+      "assets": [
+        {
+          "type": "file",
+          "path": "famista.com",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "FSMDRV.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "FMUS1.DAT",
+          "offset": "0x10"
+        },
+        {
+          "type": "file",
+          "path": "FMUS2.DAT",
+          "offset": "0x11"
+        },
+        {
+          "type": "file",
+          "path": "FMUS3.DAT",
+          "offset": "0x12"
+        },
+        {
+          "type": "file",
+          "path": "FMUS4.DAT",
+          "offset": "0x13"
+        },
+        {
+          "type": "file",
+          "path": "FMUS5.DAT",
+          "offset": "0x14"
+        },
+        {
+          "type": "file",
+          "path": "FMUS6.DAT",
+          "offset": "0x15"
+        },
+        {
+          "type": "file",
+          "path": "FMUS7.DAT",
+          "offset": "0x16"
+        },
+        {
+          "type": "file",
+          "path": "FMUS8.DAT",
+          "offset": "0x17"
+        },
+        {
+          "type": "file",
+          "path": "FMUS9.DAT",
+          "offset": "0x18"
+        },
+        {
+          "type": "file",
+          "path": "FMUSA.DAT",
+          "offset": "0x19"
+        },
+        {
+          "type": "shell",
+          "path": "fsmdrv",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "famista",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "FMUS1.DAT :"
+        },
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "FMUS2.DAT :"
+        },
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "FMUS3.DAT :"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "FMUS4.DAT :"
+        },
+        {
+          "kind": "title",
+          "code": "0x14",
+          "title": "FMUS5.DAT :"
+        },
+        {
+          "kind": "title",
+          "code": "0x15",
+          "title": "FMUS6.DAT :"
+        },
+        {
+          "kind": "title",
+          "code": "0x16",
+          "title": "FMUS7.DAT :"
+        },
+        {
+          "kind": "title",
+          "code": "0x17",
+          "title": "FMUS8.DAT :"
+        },
+        {
+          "kind": "title",
+          "code": "0x18",
+          "title": "FMUS9.DAT :"
+        },
+        {
+          "kind": "title",
+          "code": "0x19",
+          "title": "FMUSA.DAT :"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/gamearts.xml",
+      "source_order": 2237,
+      "archive": "famista89va",
+      "id": "famista89va-opna"
+    },
+    {
+      "title": "[PC-88VA] プロ野球ファミリースタジアム 89年度ペナントレース版(OPN)",
+      "driver": {
+        "name": "pc88vados",
+        "type": "opn",
+        "alias": "GAME ARTS",
+        "platform": "NEC PC-88VA"
+      },
+      "options": [],
+      "assets": [
+        {
+          "type": "file",
+          "path": "famista.com",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "FSMDRV.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "FMUS1.DAT",
+          "offset": "0x10"
+        },
+        {
+          "type": "file",
+          "path": "FMUS2.DAT",
+          "offset": "0x11"
+        },
+        {
+          "type": "file",
+          "path": "FMUS3.DAT",
+          "offset": "0x12"
+        },
+        {
+          "type": "file",
+          "path": "FMUS4.DAT",
+          "offset": "0x13"
+        },
+        {
+          "type": "file",
+          "path": "FMUS5.DAT",
+          "offset": "0x14"
+        },
+        {
+          "type": "file",
+          "path": "FMUS6.DAT",
+          "offset": "0x15"
+        },
+        {
+          "type": "file",
+          "path": "FMUS7.DAT",
+          "offset": "0x16"
+        },
+        {
+          "type": "file",
+          "path": "FMUS8.DAT",
+          "offset": "0x17"
+        },
+        {
+          "type": "file",
+          "path": "FMUS9.DAT",
+          "offset": "0x18"
+        },
+        {
+          "type": "file",
+          "path": "FMUSA.DAT",
+          "offset": "0x19"
+        },
+        {
+          "type": "shell",
+          "path": "fsmdrv",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "famista",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "FMUS1.DAT :"
+        },
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "FMUS2.DAT :"
+        },
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "FMUS3.DAT :"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "FMUS4.DAT :"
+        },
+        {
+          "kind": "title",
+          "code": "0x14",
+          "title": "FMUS5.DAT :"
+        },
+        {
+          "kind": "title",
+          "code": "0x15",
+          "title": "FMUS6.DAT :"
+        },
+        {
+          "kind": "title",
+          "code": "0x16",
+          "title": "FMUS7.DAT :"
+        },
+        {
+          "kind": "title",
+          "code": "0x17",
+          "title": "FMUS8.DAT :"
+        },
+        {
+          "kind": "title",
+          "code": "0x18",
+          "title": "FMUS9.DAT :"
+        },
+        {
+          "kind": "title",
+          "code": "0x19",
+          "title": "FMUSA.DAT :"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/gamearts.xml",
+      "source_order": 2238,
+      "archive": "famista89va",
+      "id": "famista89va-opn"
+    },
+    {
+      "title": "[PC-9801] THEXDER(OPN)",
+      "driver": {
+        "name": "pc98dos",
+        "type": "opn",
+        "alias": "GAME ARTS",
+        "platform": "NEC PC-9801"
+      },
+      "options": [],
+      "assets": [
+        {
+          "type": "file",
+          "path": "THEXDER.EXE",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "txd.com",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "FM.DAT",
+          "offset": "0x05"
+        },
+        {
+          "type": "shell",
+          "path": "txd",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x0000",
+          "title": "THEXDER (Opening Title)"
+        },
+        {
+          "kind": "title",
+          "code": "0x0100",
+          "title": "THEXDER (Game)"
+        },
+        {
+          "kind": "title",
+          "code": "0x0001",
+          "title": "MOON LIGHT SONATA"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/gamearts.xml",
+      "source_order": 2239,
+      "archive": "thexder98",
+      "id": "thexder98-opn"
+    },
+    {
+      "title": "[PC-9801] THEXDER(AMD-98)",
+      "driver": {
+        "name": "pc98dos",
+        "type": "amd98",
+        "alias": "GAME ARTS",
+        "platform": "NEC PC-9801"
+      },
+      "options": [],
+      "assets": [
+        {
+          "type": "file",
+          "path": "THEXDER.EXE",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "txd.com",
+          "offset": "-1"
+        },
+        {
+          "type": "shell",
+          "path": "txd",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x0000",
+          "title": "THEXDER (Opening Title)"
+        },
+        {
+          "kind": "title",
+          "code": "0x0100",
+          "title": "THEXDER (Game)"
+        },
+        {
+          "kind": "title",
+          "code": "0x0001",
+          "title": "MOON LIGHT SONATA"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/gamearts.xml",
+      "source_order": 2240,
+      "archive": "thexder98",
+      "id": "thexder98-amd98"
+    },
+    {
+      "title": "[PC-9801] ぎゅわんぶらあ自己中心派(OPN)",
+      "driver": {
+        "name": "pc98vx",
+        "type": "opn",
+        "alias": "GAME ARTS",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "bootcs",
+          "value": "0x0080"
+        },
+        {
+          "name": "bootip",
+          "value": "0x0000"
+        },
+        {
+          "name": "dataaddr",
+          "value": "0x20000"
+        },
+        {
+          "name": "filesize",
+          "value": "0x01000"
+        },
+        {
+          "name": "funcvect",
+          "value": "0x7f"
+        },
+        {
+          "name": "clockmul",
+          "value": "8"
+        },
+        {
+          "name": "datamax",
+          "value": "0x03"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "jikochu.bin",
+          "offset": "0x00800"
+        },
+        {
+          "type": "code",
+          "path": "GANSYS.BIN",
+          "offset": "0x01200"
+        },
+        {
+          "type": "code",
+          "path": "!",
+          "offset": "0x30000"
+        },
+        {
+          "type": "bgm",
+          "path": "OPNMUS",
+          "offset": "0x00"
+        },
+        {
+          "type": "bgm",
+          "path": "MENMUS",
+          "offset": "0x01"
+        },
+        {
+          "type": "bgm",
+          "path": "ENDMUS",
+          "offset": "0x02"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x00",
+          "title": "OPNMUS : オープニングデモ1"
+        },
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "MENMUS : オープニングデモ2"
+        },
+        {
+          "kind": "title",
+          "code": "0x02",
+          "title": "ENDMUS : エンディング"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/gamearts.xml",
+      "source_order": 2241,
+      "archive": "jikochu98",
+      "id": "jikochu98-opn"
+    },
+    {
+      "title": "[PC-9801] ぎゅわんぶらあ自己中心派(BEEP)",
+      "driver": {
+        "name": "pc98vx",
+        "type": "beep",
+        "alias": "GAME ARTS",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "bootcs",
+          "value": "0x0080"
+        },
+        {
+          "name": "bootip",
+          "value": "0x0000"
+        },
+        {
+          "name": "dataaddr",
+          "value": "0x20000"
+        },
+        {
+          "name": "filesize",
+          "value": "0x01000"
+        },
+        {
+          "name": "funcvect",
+          "value": "0x7f"
+        },
+        {
+          "name": "clockmul",
+          "value": "8"
+        },
+        {
+          "name": "datamax",
+          "value": "0x03"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "jikochu.bin",
+          "offset": "0x00800"
+        },
+        {
+          "type": "code",
+          "path": "GANSYS.BIN",
+          "offset": "0x01200"
+        },
+        {
+          "type": "code",
+          "path": "!",
+          "offset": "0x30000"
+        },
+        {
+          "type": "bgm",
+          "path": "OPNMUS",
+          "offset": "0x00"
+        },
+        {
+          "type": "bgm",
+          "path": "MENMUS",
+          "offset": "0x01"
+        },
+        {
+          "type": "bgm",
+          "path": "ENDMUS",
+          "offset": "0x02"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x00",
+          "title": "OPNMUS : オープニングデモ1"
+        },
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "MENMUS : オープニングデモ2"
+        },
+        {
+          "kind": "title",
+          "code": "0x02",
+          "title": "ENDMUS : エンディング"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/gamearts.xml",
+      "source_order": 2242,
+      "archive": "jikochu98",
+      "id": "jikochu98-beep"
+    },
+    {
+      "title": "[PC-9801] ぎゅわんぶらあ自己中心派2 自称! 強豪雀士編(OPN)",
+      "driver": {
+        "name": "pc98vx",
+        "type": "opn",
+        "alias": "GAME ARTS",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "bootcs",
+          "value": "0x0080"
+        },
+        {
+          "name": "bootip",
+          "value": "0x0000"
+        },
+        {
+          "name": "dataaddr",
+          "value": "0x24000"
+        },
+        {
+          "name": "filesize",
+          "value": "0x02000"
+        },
+        {
+          "name": "funcvect",
+          "value": "0x7f"
+        },
+        {
+          "name": "clockmul",
+          "value": "8"
+        },
+        {
+          "name": "datamax",
+          "value": "0x03"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "jikochu2.bin",
+          "offset": "0x00800"
+        },
+        {
+          "type": "code",
+          "path": "GANSYS.BIN",
+          "offset": "0x02000"
+        },
+        {
+          "type": "code",
+          "path": "!",
+          "offset": "0x30000"
+        },
+        {
+          "type": "bgm",
+          "path": "GAN2OPN",
+          "offset": "0x00"
+        },
+        {
+          "type": "bgm",
+          "path": "FINAL",
+          "offset": "0x01"
+        },
+        {
+          "type": "bgm",
+          "path": "GAN2END",
+          "offset": "0x02"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x000000",
+          "title": "GAN2OPN : オープニングデモ1"
+        },
+        {
+          "kind": "title",
+          "code": "0x010000",
+          "title": "GAN2OPN : オープニングデモ2"
+        },
+        {
+          "kind": "title",
+          "code": "0x000001",
+          "title": "FINAL   :"
+        },
+        {
+          "kind": "title",
+          "code": "0x010001",
+          "title": "FINAL   :"
+        },
+        {
+          "kind": "title",
+          "code": "0x000002",
+          "title": "GAN2END :"
+        },
+        {
+          "kind": "title",
+          "code": "0x010002",
+          "title": "GAN2END :"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/gamearts.xml",
+      "source_order": 2243,
+      "archive": "jikochu2_98",
+      "id": "jikochu2-98-opn"
+    },
+    {
+      "title": "[PC-9801] ぎゅわんぶらあ自己中心派2 自称! 強豪雀士編(BEEP)",
+      "driver": {
+        "name": "pc98vx",
+        "type": "beep",
+        "alias": "GAME ARTS",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "bootcs",
+          "value": "0x0080"
+        },
+        {
+          "name": "bootip",
+          "value": "0x0000"
+        },
+        {
+          "name": "dataaddr",
+          "value": "0x24000"
+        },
+        {
+          "name": "filesize",
+          "value": "0x02000"
+        },
+        {
+          "name": "funcvect",
+          "value": "0x7f"
+        },
+        {
+          "name": "clockmul",
+          "value": "8"
+        },
+        {
+          "name": "datamax",
+          "value": "0x03"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "jikochu2.bin",
+          "offset": "0x00800"
+        },
+        {
+          "type": "code",
+          "path": "GANSYS.BIN",
+          "offset": "0x02000"
+        },
+        {
+          "type": "code",
+          "path": "!",
+          "offset": "0x30000"
+        },
+        {
+          "type": "bgm",
+          "path": "GAN2OPN",
+          "offset": "0x00"
+        },
+        {
+          "type": "bgm",
+          "path": "FINAL",
+          "offset": "0x01"
+        },
+        {
+          "type": "bgm",
+          "path": "GAN2END",
+          "offset": "0x02"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x000000",
+          "title": "GAN2OPN : オープニングデモ1"
+        },
+        {
+          "kind": "title",
+          "code": "0x010000",
+          "title": "GAN2OPN : オープニングデモ2"
+        },
+        {
+          "kind": "title",
+          "code": "0x000001",
+          "title": "FINAL   :"
+        },
+        {
+          "kind": "title",
+          "code": "0x010001",
+          "title": "FINAL   :"
+        },
+        {
+          "kind": "title",
+          "code": "0x000002",
+          "title": "GAN2END :"
+        },
+        {
+          "kind": "title",
+          "code": "0x010002",
+          "title": "GAN2END :"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/gamearts.xml",
+      "source_order": 2244,
+      "archive": "jikochu2_98",
+      "id": "jikochu2-98-beep"
+    },
+    {
+      "title": "[PC-9801] Solitaire Royale",
+      "driver": {
+        "name": "pc98vx",
+        "type": "opn",
+        "alias": "GAME ARTS",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "bootcs",
+          "value": "0x0060"
+        },
+        {
+          "name": "bootip",
+          "value": "0x0000"
+        },
+        {
+          "name": "funcvect",
+          "value": "0x7f"
+        },
+        {
+          "name": "dataaddr",
+          "value": "0x10000"
+        },
+        {
+          "name": "filesize",
+          "value": "0x1000"
+        },
+        {
+          "name": "datamax",
+          "value": "0x05"
+        },
+        {
+          "name": "clockmul",
+          "value": "4"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "soli98.bin",
+          "offset": "0x00600"
+        },
+        {
+          "type": "code",
+          "path": "SOL98SYS.COM",
+          "offset": "0x01c00"
+        },
+        {
+          "type": "code",
+          "path": "MARK.COM",
+          "offset": "0x2a000"
+        },
+        {
+          "type": "bgm",
+          "path": "CLOSE.MDT",
+          "offset": "0x01"
+        },
+        {
+          "type": "bgm",
+          "path": "ENDING.MDT",
+          "offset": "0x02"
+        },
+        {
+          "type": "bgm",
+          "path": "OPEN.MDT",
+          "offset": "0x03"
+        },
+        {
+          "type": "bgm",
+          "path": "OPNING.MDT",
+          "offset": "0x04"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0xff",
+          "title": "MARK.COM   : Presented by GAME ARTS"
+        },
+        {
+          "kind": "title",
+          "code": "0x04",
+          "title": "OPNING.MDT : title"
+        },
+        {
+          "kind": "title",
+          "code": "0x03",
+          "title": "OPEN.MDT   : game start"
+        },
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "CLOSE.MDT  : game clear"
+        },
+        {
+          "kind": "title",
+          "code": "0x02",
+          "title": "ENDING.MDT : all clear"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/gamearts.xml",
+      "source_order": 2245,
+      "archive": "soli98",
+      "id": "soli98-opn"
+    },
+    {
+      "title": "[PC-9801] 雀皇登龍門(OPN)",
+      "driver": {
+        "name": "pc98vx",
+        "type": "opn",
+        "alias": "GAME ARTS",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "bootcs",
+          "value": "0x0080"
+        },
+        {
+          "name": "bootip",
+          "value": "0x0000"
+        },
+        {
+          "name": "funcvect",
+          "value": "0x7f"
+        },
+        {
+          "name": "dataaddr",
+          "value": "0x0cc00"
+        },
+        {
+          "name": "filesize",
+          "value": "0x1000"
+        },
+        {
+          "name": "datamax",
+          "value": "0x05"
+        },
+        {
+          "name": "clockmul",
+          "value": "4"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "janoh.bin",
+          "offset": "0x00800"
+        },
+        {
+          "type": "code",
+          "path": "JTSYS.BIN",
+          "offset": "0x02000"
+        },
+        {
+          "type": "code",
+          "path": "PLAYFM.BIN",
+          "offset": "0x08000"
+        },
+        {
+          "type": "code",
+          "path": "SOUND.MUS",
+          "offset": "0x0c000"
+        },
+        {
+          "type": "code",
+          "path": "!",
+          "offset": "0x26000"
+        },
+        {
+          "type": "bgm",
+          "path": "GOOPN.DAT",
+          "offset": "0x01"
+        },
+        {
+          "type": "bgm",
+          "path": "GOSHO.DAT",
+          "offset": "0x02"
+        },
+        {
+          "type": "bgm",
+          "path": "GOEND.DAT",
+          "offset": "0x03"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x0000fe",
+          "title": "!         : Presented by GAME ARTS"
+        },
+        {
+          "kind": "title",
+          "code": "0x000001",
+          "title": "GOOPN.DAT :"
+        },
+        {
+          "kind": "title",
+          "code": "0x000002",
+          "title": "GOSHO.DAT :"
+        },
+        {
+          "kind": "title",
+          "code": "0x000003",
+          "title": "GOEND.DAT :"
+        },
+        {
+          "kind": "title",
+          "code": "0x0000ff",
+          "title": "SOUND.MUS : ロン"
+        },
+        {
+          "kind": "title",
+          "code": "0x0100ff",
+          "title": "SOUND.MUS : ツモ"
+        },
+        {
+          "kind": "title",
+          "code": "0x0200ff",
+          "title": "SOUND.MUS : ポン"
+        },
+        {
+          "kind": "title",
+          "code": "0x0300ff",
+          "title": "SOUND.MUS : チー"
+        },
+        {
+          "kind": "title",
+          "code": "0x0400ff",
+          "title": "SOUND.MUS : カン"
+        },
+        {
+          "kind": "title",
+          "code": "0x0500ff",
+          "title": "SOUND.MUS : リーチ"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/gamearts.xml",
+      "source_order": 2246,
+      "archive": "jt_98",
+      "id": "jt-98-opn"
+    },
+    {
+      "title": "[PC-9801] 雀皇登龍門(BEEP)",
+      "driver": {
+        "name": "pc98vx",
+        "type": "beep",
+        "alias": "GAME ARTS",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "bootcs",
+          "value": "0x0080"
+        },
+        {
+          "name": "bootip",
+          "value": "0x0000"
+        },
+        {
+          "name": "funcvect",
+          "value": "0x7f"
+        },
+        {
+          "name": "dataaddr",
+          "value": "0x0cc00"
+        },
+        {
+          "name": "filesize",
+          "value": "0x1000"
+        },
+        {
+          "name": "datamax",
+          "value": "0x05"
+        },
+        {
+          "name": "clockmul",
+          "value": "4"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "janoh.bin",
+          "offset": "0x00800"
+        },
+        {
+          "type": "code",
+          "path": "JTSYS.BIN",
+          "offset": "0x02000"
+        },
+        {
+          "type": "code",
+          "path": "PLAYBP.BIN",
+          "offset": "0x08000"
+        },
+        {
+          "type": "bgm",
+          "path": "GOOPN.DAT",
+          "offset": "0x01"
+        },
+        {
+          "type": "bgm",
+          "path": "GOSHO.DAT",
+          "offset": "0x02"
+        },
+        {
+          "type": "bgm",
+          "path": "GOEND.DAT",
+          "offset": "0x03"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x000001",
+          "title": "GOOPN.DAT :"
+        },
+        {
+          "kind": "title",
+          "code": "0x000002",
+          "title": "GOSHO.DAT :"
+        },
+        {
+          "kind": "title",
+          "code": "0x000003",
+          "title": "GOEND.DAT :"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/gamearts.xml",
+      "source_order": 2247,
+      "archive": "jt_98",
+      "id": "jt-98-beep"
+    },
+    {
+      "title": "[PC-9801] 雀皇登龍門II(OPN)",
+      "driver": {
+        "name": "pc98dos",
+        "type": "opn",
+        "alias": "GAME ARTS",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "clockmul",
+          "value": "8"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "janoh2.com",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "GAMDFM.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "FEFFECT.DAT",
+          "offset": "0x05"
+        },
+        {
+          "type": "file",
+          "path": "8BEAT.MDT",
+          "offset": "0x10"
+        },
+        {
+          "type": "file",
+          "path": "END1.MDT",
+          "offset": "0x11"
+        },
+        {
+          "type": "file",
+          "path": "END2.MDT",
+          "offset": "0x12"
+        },
+        {
+          "type": "file",
+          "path": "JANRYOKU.MDT",
+          "offset": "0x13"
+        },
+        {
+          "type": "file",
+          "path": "JAZZ.MDT",
+          "offset": "0x14"
+        },
+        {
+          "type": "file",
+          "path": "OPEN.MDT",
+          "offset": "0x15"
+        },
+        {
+          "type": "file",
+          "path": "SALON.MDT",
+          "offset": "0x16"
+        },
+        {
+          "type": "file",
+          "path": "SEISEKI.MDT",
+          "offset": "0x17"
+        },
+        {
+          "type": "file",
+          "path": "YOBI.MDT",
+          "offset": "0x18"
+        },
+        {
+          "type": "shell",
+          "path": "gamdfm",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "janoh2",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x000015",
+          "title": "OPEN.MDT     : オープニング"
+        },
+        {
+          "kind": "title",
+          "code": "0x000016",
+          "title": "SALON.MDT    : 音楽１"
+        },
+        {
+          "kind": "title",
+          "code": "0x000014",
+          "title": "JAZZ.MDT     : 音楽２"
+        },
+        {
+          "kind": "title",
+          "code": "0x000010",
+          "title": "8BEAT.MDT    : 音楽３"
+        },
+        {
+          "kind": "title",
+          "code": "0x000013",
+          "title": "JANRYOKU.MDT : 雀力診断"
+        },
+        {
+          "kind": "title",
+          "code": "0x000017",
+          "title": "SEISEKI.MDT  : 過去の成績"
+        },
+        {
+          "kind": "title",
+          "code": "0x000012",
+          "title": "END2.MDT     : 半荘終了"
+        },
+        {
+          "kind": "title",
+          "code": "0x000018",
+          "title": "YOBI.MDT"
+        },
+        {
+          "kind": "title",
+          "code": "0x000011",
+          "title": "END1.MDT"
+        },
+        {
+          "kind": "title",
+          "code": "0x00ffff",
+          "title": "EFFECT #00"
+        },
+        {
+          "kind": "title",
+          "code": "0x01ffff",
+          "title": "EFFECT #01"
+        },
+        {
+          "kind": "title",
+          "code": "0x02ffff",
+          "title": "EFFECT #02"
+        },
+        {
+          "kind": "title",
+          "code": "0x03ffff",
+          "title": "EFFECT #03"
+        },
+        {
+          "kind": "title",
+          "code": "0x04ffff",
+          "title": "EFFECT #04"
+        },
+        {
+          "kind": "title",
+          "code": "0x05ffff",
+          "title": "EFFECT #05"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/gamearts.xml",
+      "source_order": 2248,
+      "archive": "jt2_98",
+      "id": "jt2-98-opn"
+    },
+    {
+      "title": "[PC-9801] 雀皇登龍門II(BEEP)",
+      "driver": {
+        "name": "pc98dos",
+        "type": "beep",
+        "alias": "GAME ARTS",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "clockmul",
+          "value": "8"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "janoh2.com",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "GAMDSTD.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "FEFFECT.DAT",
+          "offset": "0x05"
+        },
+        {
+          "type": "file",
+          "path": "8BEAT.MDT",
+          "offset": "0x10"
+        },
+        {
+          "type": "file",
+          "path": "END1.MDT",
+          "offset": "0x11"
+        },
+        {
+          "type": "file",
+          "path": "END2.MDT",
+          "offset": "0x12"
+        },
+        {
+          "type": "file",
+          "path": "JANRYOKU.MDT",
+          "offset": "0x13"
+        },
+        {
+          "type": "file",
+          "path": "JAZZ.MDT",
+          "offset": "0x14"
+        },
+        {
+          "type": "file",
+          "path": "OPEN.MDT",
+          "offset": "0x15"
+        },
+        {
+          "type": "file",
+          "path": "SALON.MDT",
+          "offset": "0x16"
+        },
+        {
+          "type": "file",
+          "path": "SEISEKI.MDT",
+          "offset": "0x17"
+        },
+        {
+          "type": "file",
+          "path": "YOBI.MDT",
+          "offset": "0x18"
+        },
+        {
+          "type": "shell",
+          "path": "gamdstd",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "janoh2",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x000015",
+          "title": "OPEN.MDT     : オープニング"
+        },
+        {
+          "kind": "title",
+          "code": "0x000016",
+          "title": "SALON.MDT    : 音楽１"
+        },
+        {
+          "kind": "title",
+          "code": "0x000014",
+          "title": "JAZZ.MDT     : 音楽２"
+        },
+        {
+          "kind": "title",
+          "code": "0x000010",
+          "title": "8BEAT.MDT    : 音楽３"
+        },
+        {
+          "kind": "title",
+          "code": "0x000013",
+          "title": "JANRYOKU.MDT : 雀力診断"
+        },
+        {
+          "kind": "title",
+          "code": "0x000017",
+          "title": "SEISEKI.MDT  : 過去の成績"
+        },
+        {
+          "kind": "title",
+          "code": "0x000012",
+          "title": "END2.MDT     : 半荘終了"
+        },
+        {
+          "kind": "title",
+          "code": "0x000018",
+          "title": "YOBI.MDT"
+        },
+        {
+          "kind": "title",
+          "code": "0x000011",
+          "title": "END1.MDT"
+        },
+        {
+          "kind": "title",
+          "code": "0x00ffff",
+          "title": "EFFECT #00"
+        },
+        {
+          "kind": "title",
+          "code": "0x01ffff",
+          "title": "EFFECT #01"
+        },
+        {
+          "kind": "title",
+          "code": "0x02ffff",
+          "title": "EFFECT #02"
+        },
+        {
+          "kind": "title",
+          "code": "0x03ffff",
+          "title": "EFFECT #03"
+        },
+        {
+          "kind": "title",
+          "code": "0x04ffff",
+          "title": "EFFECT #04"
+        },
+        {
+          "kind": "title",
+          "code": "0x05ffff",
+          "title": "EFFECT #05"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/gamearts.xml",
+      "source_order": 2249,
+      "archive": "jt2_98",
+      "id": "jt2-98-beep"
+    },
+    {
+      "title": "[PC-9801] 雀皇登龍門II(MT-32)",
+      "driver": {
+        "name": "pc98dos",
+        "type": "beep",
+        "alias": "GAME ARTS",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "clockmul",
+          "value": "8"
+        },
+        {
+          "name": "midiout",
+          "value": "1"
+        },
+        {
+          "name": "midiout_type",
+          "value": "2"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "janoh2.com",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "GAMDMT.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MEFFECT.DAT",
+          "offset": "0x05"
+        },
+        {
+          "type": "file",
+          "path": "8BEAT.MTD",
+          "offset": "0x10"
+        },
+        {
+          "type": "file",
+          "path": "END1.MTD",
+          "offset": "0x11"
+        },
+        {
+          "type": "file",
+          "path": "END2.MTD",
+          "offset": "0x12"
+        },
+        {
+          "type": "file",
+          "path": "JANRYOKU.MTD",
+          "offset": "0x13"
+        },
+        {
+          "type": "file",
+          "path": "JAZZ.MTD",
+          "offset": "0x14"
+        },
+        {
+          "type": "file",
+          "path": "OPEN.MTD",
+          "offset": "0x15"
+        },
+        {
+          "type": "file",
+          "path": "SALON.MTD",
+          "offset": "0x16"
+        },
+        {
+          "type": "file",
+          "path": "SEISEKI.MTD",
+          "offset": "0x17"
+        },
+        {
+          "type": "file",
+          "path": "YOBI.MTD",
+          "offset": "0x18"
+        },
+        {
+          "type": "shell",
+          "path": "gamdmt",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "janoh2",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x000015",
+          "title": "OPEN.MTD     : オープニング"
+        },
+        {
+          "kind": "title",
+          "code": "0x000016",
+          "title": "SALON.MTD    : 音楽１"
+        },
+        {
+          "kind": "title",
+          "code": "0x000014",
+          "title": "JAZZ.MTD     : 音楽２"
+        },
+        {
+          "kind": "title",
+          "code": "0x000010",
+          "title": "8BEAT.MTD    : 音楽３"
+        },
+        {
+          "kind": "title",
+          "code": "0x000013",
+          "title": "JANRYOKU.MTD : 雀力診断"
+        },
+        {
+          "kind": "title",
+          "code": "0x000017",
+          "title": "SEISEKI.MTD  : 過去の成績"
+        },
+        {
+          "kind": "title",
+          "code": "0x000012",
+          "title": "END2.MTD     : 半荘終了"
+        },
+        {
+          "kind": "title",
+          "code": "0x000018",
+          "title": "YOBI.MTD"
+        },
+        {
+          "kind": "title",
+          "code": "0x000011",
+          "title": "END1.MTD"
+        },
+        {
+          "kind": "title",
+          "code": "0x00ffff",
+          "title": "EFFECT #00"
+        },
+        {
+          "kind": "title",
+          "code": "0x01ffff",
+          "title": "EFFECT #01"
+        },
+        {
+          "kind": "title",
+          "code": "0x02ffff",
+          "title": "EFFECT #02"
+        },
+        {
+          "kind": "title",
+          "code": "0x03ffff",
+          "title": "EFFECT #03"
+        },
+        {
+          "kind": "title",
+          "code": "0x04ffff",
+          "title": "EFFECT #04"
+        },
+        {
+          "kind": "title",
+          "code": "0x05ffff",
+          "title": "EFFECT #05"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/gamearts.xml",
+      "source_order": 2250,
+      "archive": "jt2_98",
+      "id": "jt2-98-beep-2"
+    },
+    {
+      "title": "[PC-9801] 雀皇登龍門II(MT-32 Emulation)",
+      "driver": {
+        "name": "pc98dos",
+        "type": "beep",
+        "alias": "GAME ARTS",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "clockmul",
+          "value": "8"
+        },
+        {
+          "name": "midiout",
+          "value": "1"
+        },
+        {
+          "name": "midiout_type",
+          "value": "1"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "janoh2.com",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "GAMDMT.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MEFFECT.DAT",
+          "offset": "0x05"
+        },
+        {
+          "type": "file",
+          "path": "8BEAT.MTD",
+          "offset": "0x10"
+        },
+        {
+          "type": "file",
+          "path": "END1.MTD",
+          "offset": "0x11"
+        },
+        {
+          "type": "file",
+          "path": "END2.MTD",
+          "offset": "0x12"
+        },
+        {
+          "type": "file",
+          "path": "JANRYOKU.MTD",
+          "offset": "0x13"
+        },
+        {
+          "type": "file",
+          "path": "JAZZ.MTD",
+          "offset": "0x14"
+        },
+        {
+          "type": "file",
+          "path": "OPEN.MTD",
+          "offset": "0x15"
+        },
+        {
+          "type": "file",
+          "path": "SALON.MTD",
+          "offset": "0x16"
+        },
+        {
+          "type": "file",
+          "path": "SEISEKI.MTD",
+          "offset": "0x17"
+        },
+        {
+          "type": "file",
+          "path": "YOBI.MTD",
+          "offset": "0x18"
+        },
+        {
+          "type": "shell",
+          "path": "gamdmt",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "janoh2",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x000015",
+          "title": "OPEN.MTD     : オープニング"
+        },
+        {
+          "kind": "title",
+          "code": "0x000016",
+          "title": "SALON.MTD    : 音楽１"
+        },
+        {
+          "kind": "title",
+          "code": "0x000014",
+          "title": "JAZZ.MTD     : 音楽２"
+        },
+        {
+          "kind": "title",
+          "code": "0x000010",
+          "title": "8BEAT.MTD    : 音楽３"
+        },
+        {
+          "kind": "title",
+          "code": "0x000013",
+          "title": "JANRYOKU.MTD : 雀力診断"
+        },
+        {
+          "kind": "title",
+          "code": "0x000017",
+          "title": "SEISEKI.MTD  : 過去の成績"
+        },
+        {
+          "kind": "title",
+          "code": "0x000012",
+          "title": "END2.MTD     : 半荘終了"
+        },
+        {
+          "kind": "title",
+          "code": "0x000018",
+          "title": "YOBI.MTD"
+        },
+        {
+          "kind": "title",
+          "code": "0x000011",
+          "title": "END1.MTD"
+        },
+        {
+          "kind": "title",
+          "code": "0x00ffff",
+          "title": "EFFECT #00"
+        },
+        {
+          "kind": "title",
+          "code": "0x01ffff",
+          "title": "EFFECT #01"
+        },
+        {
+          "kind": "title",
+          "code": "0x02ffff",
+          "title": "EFFECT #02"
+        },
+        {
+          "kind": "title",
+          "code": "0x03ffff",
+          "title": "EFFECT #03"
+        },
+        {
+          "kind": "title",
+          "code": "0x04ffff",
+          "title": "EFFECT #04"
+        },
+        {
+          "kind": "title",
+          "code": "0x05ffff",
+          "title": "EFFECT #05"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/gamearts.xml",
+      "source_order": 2251,
+      "archive": "jt2_98",
+      "id": "jt2-98-beep-3"
+    },
+    {
+      "title": "[X1] Zeliard(OPM)",
+      "driver": {
+        "name": "x1",
+        "type": "opm",
+        "alias": "GAME ARTS",
+        "platform": "SHARP X1"
+      },
+      "options": [
+        {
+          "name": "mdata_size",
+          "value": "0x2700"
+        },
+        {
+          "name": "mfile_size",
+          "value": "0x2700"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "PATCH",
+          "offset": "0x0000"
+        },
+        {
+          "type": "code",
+          "path": "MUSG",
+          "offset": "0x0500"
+        },
+        {
+          "type": "bgm",
+          "path": "MA000",
+          "offset": "0x01"
+        },
+        {
+          "type": "bgm",
+          "path": "MA001",
+          "offset": "0x11"
+        },
+        {
+          "type": "bgm",
+          "path": "MA002",
+          "offset": "0x02"
+        },
+        {
+          "type": "bgm",
+          "path": "MA003",
+          "offset": "0x03"
+        },
+        {
+          "type": "bgm",
+          "path": "MA004",
+          "offset": "0x04"
+        },
+        {
+          "type": "bgm",
+          "path": "MA005",
+          "offset": "0x05"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS1",
+          "offset": "0x06"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS2",
+          "offset": "0x07"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS3",
+          "offset": "0x08"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS4",
+          "offset": "0x09"
+        },
+        {
+          "type": "bgm",
+          "path": "MA006",
+          "offset": "0x0a"
+        },
+        {
+          "type": "bgm",
+          "path": "MA007",
+          "offset": "0x0b"
+        },
+        {
+          "type": "bgm",
+          "path": "MA008",
+          "offset": "0x0c"
+        },
+        {
+          "type": "bgm",
+          "path": "MA009",
+          "offset": "0x0d"
+        },
+        {
+          "type": "bgm",
+          "path": "MA010",
+          "offset": "0x0e"
+        },
+        {
+          "type": "bgm",
+          "path": "MMAO",
+          "offset": "0x0f"
+        },
+        {
+          "type": "bgm",
+          "path": "MA011",
+          "offset": "0x10"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "MA000 : エスメサンテの輝き"
+        },
+        {
+          "kind": "title",
+          "code": "0x02",
+          "title": "MA002 : 旅立ち"
+        },
+        {
+          "kind": "title",
+          "code": "0x03",
+          "title": "MA003 : 束の間の休息"
+        },
+        {
+          "kind": "title",
+          "code": "0x04",
+          "title": "MA004 : 地下の街"
+        },
+        {
+          "kind": "title",
+          "code": "0x05",
+          "title": "MA005 : 閉ざされた街"
+        },
+        {
+          "kind": "title",
+          "code": "0x06",
+          "title": "MUS1  : 闇の世界へ"
+        },
+        {
+          "kind": "title",
+          "code": "0x07",
+          "title": "MUS2  : 洞窟を越えて"
+        },
+        {
+          "kind": "title",
+          "code": "0x08",
+          "title": "MUS3  : 樹の世界"
+        },
+        {
+          "kind": "title",
+          "code": "0x09",
+          "title": "MUS4  : 氷の世界"
+        },
+        {
+          "kind": "title",
+          "code": "0x0a",
+          "title": "MA006 : 腐土の世界"
+        },
+        {
+          "kind": "title",
+          "code": "0x0b",
+          "title": "MA007 : 黄金の世界"
+        },
+        {
+          "kind": "title",
+          "code": "0x0c",
+          "title": "MA008 : 炎の世界"
+        },
+        {
+          "kind": "title",
+          "code": "0x0d",
+          "title": "MA009 : 不思議の世界"
+        },
+        {
+          "kind": "title",
+          "code": "0x0e",
+          "title": "MA010 : 闇の使者"
+        },
+        {
+          "kind": "title",
+          "code": "0x0f",
+          "title": "MMAO  : 魔王"
+        },
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "MA011 : 勝利"
+        },
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "MA001 : 新たなる冒険へ"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/gamearts.xml",
+      "source_order": 2252,
+      "archive": "x1zeliard",
+      "id": "x1zeliard-opm"
+    },
+    {
+      "title": "[X1] Zeliard(PSG)",
+      "driver": {
+        "name": "x1",
+        "type": "psg",
+        "alias": "GAME ARTS",
+        "platform": "SHARP X1"
+      },
+      "options": [],
+      "assets": [
+        {
+          "type": "code",
+          "path": "PATCH2",
+          "offset": "0x0000"
+        },
+        {
+          "type": "code",
+          "path": "MUSG",
+          "offset": "0x0500"
+        },
+        {
+          "type": "bgm",
+          "path": "MB000",
+          "offset": "0x01"
+        },
+        {
+          "type": "bgm",
+          "path": "MB001",
+          "offset": "0x11"
+        },
+        {
+          "type": "bgm",
+          "path": "MA002",
+          "offset": "0x02"
+        },
+        {
+          "type": "bgm",
+          "path": "MA003",
+          "offset": "0x03"
+        },
+        {
+          "type": "bgm",
+          "path": "MA004",
+          "offset": "0x04"
+        },
+        {
+          "type": "bgm",
+          "path": "MA005",
+          "offset": "0x05"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS1",
+          "offset": "0x06"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS2",
+          "offset": "0x07"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS3",
+          "offset": "0x08"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS4",
+          "offset": "0x09"
+        },
+        {
+          "type": "bgm",
+          "path": "MA006",
+          "offset": "0x0a"
+        },
+        {
+          "type": "bgm",
+          "path": "MA007",
+          "offset": "0x0b"
+        },
+        {
+          "type": "bgm",
+          "path": "MA008",
+          "offset": "0x0c"
+        },
+        {
+          "type": "bgm",
+          "path": "MA009",
+          "offset": "0x0d"
+        },
+        {
+          "type": "bgm",
+          "path": "MA010",
+          "offset": "0x0e"
+        },
+        {
+          "type": "bgm",
+          "path": "MMAO",
+          "offset": "0x0f"
+        },
+        {
+          "type": "bgm",
+          "path": "MA011",
+          "offset": "0x10"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "MB000 : エスメサンテの輝き"
+        },
+        {
+          "kind": "comment",
+          "text": "\t<title code=\"0x02\">MA002 : 旅立ち</title> "
+        },
+        {
+          "kind": "comment",
+          "text": "\t<title code=\"0x03\">MA003 : 束の間の休息</title> "
+        },
+        {
+          "kind": "comment",
+          "text": "\t<title code=\"0x04\">MA004 : 地下の街</title> "
+        },
+        {
+          "kind": "comment",
+          "text": "\t<title code=\"0x05\">MA005 : 閉ざされた街</title> "
+        },
+        {
+          "kind": "comment",
+          "text": "\t<title code=\"0x06\">MUS1  : 闇の世界へ</title> "
+        },
+        {
+          "kind": "comment",
+          "text": "\t<title code=\"0x07\">MUS2  : 洞窟を越えて</title> "
+        },
+        {
+          "kind": "comment",
+          "text": "\t<title code=\"0x08\">MUS3  : 樹の世界</title> "
+        },
+        {
+          "kind": "comment",
+          "text": "\t<title code=\"0x09\">MUS4  : 氷の世界</title> "
+        },
+        {
+          "kind": "comment",
+          "text": "\t<title code=\"0x0a\">MA006 : 腐土の世界</title> "
+        },
+        {
+          "kind": "comment",
+          "text": "\t<title code=\"0x0b\">MA007 : 黄金の世界</title> "
+        },
+        {
+          "kind": "comment",
+          "text": "\t<title code=\"0x0c\">MA008 : 炎の世界</title> "
+        },
+        {
+          "kind": "comment",
+          "text": "\t<title code=\"0x0d\">MA009 : 不思議の世界</title> "
+        },
+        {
+          "kind": "comment",
+          "text": "\t<title code=\"0x0e\">MA010 : 闇の使者</title> "
+        },
+        {
+          "kind": "comment",
+          "text": "\t<title code=\"0x0f\">MMAO  : 魔王</title> "
+        },
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "MA011 : 勝利"
+        },
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "MB001 : 新たなる冒険へ"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/gamearts.xml",
+      "source_order": 2253,
+      "archive": "x1zeliard",
+      "id": "x1zeliard-psg"
+    },
+    {
+      "title": "[X1] Solitaire Royale(OPM)",
+      "driver": {
+        "name": "x1",
+        "type": "opm",
+        "alias": "GAME ARTS",
+        "platform": "SHARP X1"
+      },
+      "options": [
+        {
+          "name": "init_pc",
+          "value": "0xf000"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "SOLMAIN",
+          "offset": "0x0500"
+        },
+        {
+          "type": "code",
+          "path": "OPEN",
+          "offset": "0x3700"
+        },
+        {
+          "type": "code",
+          "path": "FMMUSIC",
+          "offset": "0x5220"
+        },
+        {
+          "type": "code",
+          "path": "PATCH",
+          "offset": "0xf000"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x00",
+          "title": "00 : title"
+        },
+        {
+          "kind": "title",
+          "code": "0x07",
+          "title": "07 : pyramid"
+        },
+        {
+          "kind": "title",
+          "code": "0x08",
+          "title": "08 : golf"
+        },
+        {
+          "kind": "title",
+          "code": "0x05",
+          "title": "05 : klondike"
+        },
+        {
+          "kind": "title",
+          "code": "0x04",
+          "title": "04 : canfield"
+        },
+        {
+          "kind": "title",
+          "code": "0x03",
+          "title": "03 : corners"
+        },
+        {
+          "kind": "title",
+          "code": "0x06",
+          "title": "06 : calculation"
+        },
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "01 : shuffle & draw"
+        },
+        {
+          "kind": "title",
+          "code": "0x02",
+          "title": "02 : reno"
+        },
+        {
+          "kind": "title",
+          "code": "0x09",
+          "title": "09 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x0a",
+          "title": "0a :"
+        },
+        {
+          "kind": "title",
+          "code": "0x0b",
+          "title": "0b :"
+        },
+        {
+          "kind": "title",
+          "code": "0x0c",
+          "title": "0c : shuffle & draw clear"
+        },
+        {
+          "kind": "title",
+          "code": "0x0d",
+          "title": "0d :"
+        },
+        {
+          "kind": "title",
+          "code": "0x0e",
+          "title": "0e :"
+        },
+        {
+          "kind": "title",
+          "code": "0x0f",
+          "title": "0f :"
+        },
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "10 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "11 :"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/gamearts.xml",
+      "source_order": 2254,
+      "archive": "x1sr",
+      "id": "x1sr-opm"
+    },
+    {
+      "title": "[X1] Solitaire Royale(PSG)",
+      "driver": {
+        "name": "x1",
+        "type": "psg",
+        "alias": "GAME ARTS",
+        "platform": "SHARP X1"
+      },
+      "options": [
+        {
+          "name": "init_pc",
+          "value": "0xf000"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "SOLMAIN",
+          "offset": "0x0500"
+        },
+        {
+          "type": "code",
+          "path": "OPEN",
+          "offset": "0x3700"
+        },
+        {
+          "type": "code",
+          "path": "PLAYX1",
+          "offset": "0x5220"
+        },
+        {
+          "type": "code",
+          "path": "PATCH2",
+          "offset": "0xf000"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x00",
+          "title": "00 : title"
+        },
+        {
+          "kind": "title",
+          "code": "0x07",
+          "title": "07 : pyramid"
+        },
+        {
+          "kind": "title",
+          "code": "0x08",
+          "title": "08 : golf"
+        },
+        {
+          "kind": "title",
+          "code": "0x05",
+          "title": "05 : klondike"
+        },
+        {
+          "kind": "title",
+          "code": "0x04",
+          "title": "04 : canfield"
+        },
+        {
+          "kind": "title",
+          "code": "0x03",
+          "title": "03 : corners"
+        },
+        {
+          "kind": "title",
+          "code": "0x06",
+          "title": "06 : calculation"
+        },
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "01 : shuffle & draw"
+        },
+        {
+          "kind": "title",
+          "code": "0x02",
+          "title": "02 : reno"
+        },
+        {
+          "kind": "title",
+          "code": "0x09",
+          "title": "09 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x0a",
+          "title": "0a :"
+        },
+        {
+          "kind": "title",
+          "code": "0x0b",
+          "title": "0b :"
+        },
+        {
+          "kind": "title",
+          "code": "0x0c",
+          "title": "0c : shuffle & draw clear"
+        },
+        {
+          "kind": "title",
+          "code": "0x0d",
+          "title": "0d :"
+        },
+        {
+          "kind": "title",
+          "code": "0x0e",
+          "title": "0e :"
+        },
+        {
+          "kind": "title",
+          "code": "0x0f",
+          "title": "0f :"
+        },
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "10 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "11 :"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/gamearts.xml",
+      "source_order": 2255,
+      "archive": "x1sr",
+      "id": "x1sr-psg"
+    },
+    {
+      "title": "[MSX] FIRE HAWK - THEXDER THE SECOND CONTACT -(OPLL)",
+      "driver": {
+        "name": "msx",
+        "type": "generic",
+        "alias": "GAME ARTS",
+        "platform": "MSX"
+      },
+      "options": [
+        {
+          "name": "mdata_addr",
+          "value": "0x4000"
+        },
+        {
+          "name": "mdata_size",
+          "value": "0x1400"
+        },
+        {
+          "name": "mfile_size",
+          "value": "0x1400"
+        },
+        {
+          "name": "init_pc",
+          "value": "0x400"
+        },
+        {
+          "name": "use_opll",
+          "value": "0x01"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "patch",
+          "offset": "0x0400"
+        },
+        {
+          "type": "code",
+          "path": "LTPLAY.COM",
+          "offset": "0x1B00"
+        },
+        {
+          "type": "bgm",
+          "path": "TMUS1M",
+          "offset": "0x00"
+        },
+        {
+          "type": "bgm",
+          "path": "TMUS2M",
+          "offset": "0x01"
+        },
+        {
+          "type": "bgm",
+          "path": "TMUS3M",
+          "offset": "0x02"
+        },
+        {
+          "type": "bgm",
+          "path": "TMUS4M",
+          "offset": "0x03"
+        },
+        {
+          "type": "bgm",
+          "path": "TMUS5M",
+          "offset": "0x04"
+        },
+        {
+          "type": "bgm",
+          "path": "TMUS6M",
+          "offset": "0x05"
+        },
+        {
+          "type": "bgm",
+          "path": "TMUS7M",
+          "offset": "0x06"
+        },
+        {
+          "type": "bgm",
+          "path": "TMUS8M",
+          "offset": "0x07"
+        },
+        {
+          "type": "bgm",
+          "path": "TMUS9M",
+          "offset": "0x08"
+        },
+        {
+          "type": "bgm",
+          "path": "TMUS10M",
+          "offset": "0x09"
+        },
+        {
+          "type": "bgm",
+          "path": "TMUSOAM",
+          "offset": "0x0a"
+        },
+        {
+          "type": "bgm",
+          "path": "TMUSOBM",
+          "offset": "0x0b"
+        },
+        {
+          "type": "bgm",
+          "path": "MOONM",
+          "offset": "0x0c"
+        },
+        {
+          "type": "bgm",
+          "path": "ENDINGM",
+          "offset": "0x0d"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x0a",
+          "title": "TMUSOAM : OPENING 1"
+        },
+        {
+          "kind": "title",
+          "code": "0x0c",
+          "title": "MOONM   : OPENING 2 (Moon Light Sonata)"
+        },
+        {
+          "kind": "title",
+          "code": "0x0b",
+          "title": "TMUSOBM : OPENING 3"
+        },
+        {
+          "kind": "title",
+          "code": "0x00",
+          "title": "TMUS1M  : MISSION 1"
+        },
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "TMUS2M  : MISSION 2"
+        },
+        {
+          "kind": "title",
+          "code": "0x02",
+          "title": "TMUS3M  : MISSION 3"
+        },
+        {
+          "kind": "title",
+          "code": "0x03",
+          "title": "TMUS4M  : MISSION 4"
+        },
+        {
+          "kind": "title",
+          "code": "0x04",
+          "title": "TMUS5M  : MISSION 5"
+        },
+        {
+          "kind": "title",
+          "code": "0x05",
+          "title": "TMUS6M  : MISSION 6"
+        },
+        {
+          "kind": "title",
+          "code": "0x06",
+          "title": "TMUS7M  : MISSION 7"
+        },
+        {
+          "kind": "title",
+          "code": "0x07",
+          "title": "TMUS8M  : MISSION 8"
+        },
+        {
+          "kind": "title",
+          "code": "0x08",
+          "title": "TMUS9M  : MISSION 9"
+        },
+        {
+          "kind": "title",
+          "code": "0x09",
+          "title": "TMUS10M : LAST BOSS"
+        },
+        {
+          "kind": "title",
+          "code": "0x0d",
+          "title": "ENDINGM : ENDING"
+        },
+        {
+          "kind": "title",
+          "code": "0xff",
+          "title": "BOSS    : TO BOSS BGM"
+        },
+        {
+          "kind": "range",
+          "min": "0x101",
+          "max": "0x111",
+          "title_format": "SE      : 0x%02x",
+          "extcode": "0"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/gamearts.xml",
+      "source_order": 2256,
+      "archive": "firehawk_msx",
+      "id": "firehawk-msx-generic"
+    },
+    {
+      "title": "[MSX] FIRE HAWK - THEXDER THE SECOND CONTACT -(PSG)",
+      "driver": {
+        "name": "msx",
+        "type": "generic",
+        "alias": "GAME ARTS",
+        "platform": "MSX"
+      },
+      "options": [
+        {
+          "name": "mdata_addr",
+          "value": "0x4000"
+        },
+        {
+          "name": "mdata_size",
+          "value": "0x1400"
+        },
+        {
+          "name": "mfile_size",
+          "value": "0x1400"
+        },
+        {
+          "name": "init_pc",
+          "value": "0x400"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "patch",
+          "offset": "0x0400"
+        },
+        {
+          "type": "code",
+          "path": "PTPLAY.COM",
+          "offset": "0x1B00"
+        },
+        {
+          "type": "bgm",
+          "path": "TMUS1M",
+          "offset": "0x00"
+        },
+        {
+          "type": "bgm",
+          "path": "TMUS2M",
+          "offset": "0x01"
+        },
+        {
+          "type": "bgm",
+          "path": "TMUS3M",
+          "offset": "0x02"
+        },
+        {
+          "type": "bgm",
+          "path": "TMUS4M",
+          "offset": "0x03"
+        },
+        {
+          "type": "bgm",
+          "path": "TMUS5M",
+          "offset": "0x04"
+        },
+        {
+          "type": "bgm",
+          "path": "TMUS6M",
+          "offset": "0x05"
+        },
+        {
+          "type": "bgm",
+          "path": "TMUS7M",
+          "offset": "0x06"
+        },
+        {
+          "type": "bgm",
+          "path": "TMUS8M",
+          "offset": "0x07"
+        },
+        {
+          "type": "bgm",
+          "path": "TMUS9M",
+          "offset": "0x08"
+        },
+        {
+          "type": "bgm",
+          "path": "TMUS10M",
+          "offset": "0x09"
+        },
+        {
+          "type": "bgm",
+          "path": "TMUSOAM",
+          "offset": "0x0a"
+        },
+        {
+          "type": "bgm",
+          "path": "TMUSOBM",
+          "offset": "0x0b"
+        },
+        {
+          "type": "bgm",
+          "path": "MOONM",
+          "offset": "0x0c"
+        },
+        {
+          "type": "bgm",
+          "path": "ENDINGM",
+          "offset": "0x0d"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x0a",
+          "title": "TMUSOAM : OPENING 1"
+        },
+        {
+          "kind": "title",
+          "code": "0x0c",
+          "title": "MOONM   : OPENING 2 (Moon Light Sonata)"
+        },
+        {
+          "kind": "title",
+          "code": "0x0b",
+          "title": "TMUSOBM : OPENING 3"
+        },
+        {
+          "kind": "title",
+          "code": "0x00",
+          "title": "TMUS1M  : MISSION 1"
+        },
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "TMUS2M  : MISSION 2"
+        },
+        {
+          "kind": "title",
+          "code": "0x02",
+          "title": "TMUS3M  : MISSION 3"
+        },
+        {
+          "kind": "title",
+          "code": "0x03",
+          "title": "TMUS4M  : MISSION 4"
+        },
+        {
+          "kind": "title",
+          "code": "0x04",
+          "title": "TMUS5M  : MISSION 5"
+        },
+        {
+          "kind": "title",
+          "code": "0x05",
+          "title": "TMUS6M  : MISSION 6"
+        },
+        {
+          "kind": "title",
+          "code": "0x06",
+          "title": "TMUS7M  : MISSION 7"
+        },
+        {
+          "kind": "title",
+          "code": "0x07",
+          "title": "TMUS8M  : MISSION 8"
+        },
+        {
+          "kind": "title",
+          "code": "0x08",
+          "title": "TMUS9M  : MISSION 9"
+        },
+        {
+          "kind": "title",
+          "code": "0x09",
+          "title": "TMUS10M : LAST BOSS"
+        },
+        {
+          "kind": "title",
+          "code": "0x0d",
+          "title": "ENDINGM : ENDING"
+        },
+        {
+          "kind": "title",
+          "code": "0xff",
+          "title": "BOSS    : TO BOSS BGM"
+        },
+        {
+          "kind": "range",
+          "min": "0x101",
+          "max": "0x111",
+          "title_format": "SE      : 0x%02x",
+          "extcode": "0"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/gamearts.xml",
+      "source_order": 2257,
+      "archive": "firehawk_msx",
+      "id": "firehawk-msx-generic-2"
+    },
+    {
+      "title": "[MSX] Solitaire Royale",
+      "driver": {
+        "name": "msx",
+        "type": "generic",
+        "alias": "GAME ARTS",
+        "platform": "MSX"
+      },
+      "options": [
+        {
+          "name": "mdata_addr",
+          "value": "0xc000"
+        },
+        {
+          "name": "mdata_size",
+          "value": "0x300"
+        },
+        {
+          "name": "mfile_size",
+          "value": "0x300"
+        },
+        {
+          "name": "init_pc",
+          "value": "0x0400"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "patch",
+          "offset": "0x0400"
+        },
+        {
+          "type": "code",
+          "path": "SOLIT1.SOL",
+          "offset": "0x0500"
+        },
+        {
+          "type": "bgm",
+          "path": "TITLE.COM",
+          "offset": "0x00"
+        },
+        {
+          "type": "bgm",
+          "path": "END1.COM",
+          "offset": "0x01"
+        },
+        {
+          "type": "bgm",
+          "path": "END2.COM",
+          "offset": "0x02"
+        },
+        {
+          "type": "bgm",
+          "path": "END3.COM",
+          "offset": "0x03"
+        },
+        {
+          "type": "bgm",
+          "path": "END4.COM",
+          "offset": "0x04"
+        },
+        {
+          "type": "bgm",
+          "path": "END5.COM",
+          "offset": "0x05"
+        },
+        {
+          "type": "bgm",
+          "path": "END6.COM",
+          "offset": "0x06"
+        },
+        {
+          "type": "bgm",
+          "path": "END7.COM",
+          "offset": "0x07"
+        },
+        {
+          "type": "bgm",
+          "path": "END8.COM",
+          "offset": "0x08"
+        },
+        {
+          "type": "bgm",
+          "path": "ENDING.COM",
+          "offset": "0x09"
+        },
+        {
+          "type": "bgm",
+          "path": "SOLIT2.000",
+          "offset": "0x0a"
+        },
+        {
+          "type": "bgm",
+          "path": "SOLIT2.001",
+          "offset": "0x0b"
+        },
+        {
+          "type": "bgm",
+          "path": "SOLIT2.002",
+          "offset": "0x0c"
+        },
+        {
+          "type": "bgm",
+          "path": "SOLIT2.003",
+          "offset": "0x0d"
+        },
+        {
+          "type": "bgm",
+          "path": "SOLIT3.000",
+          "offset": "0x0e"
+        },
+        {
+          "type": "bgm",
+          "path": "SOLIT3.001",
+          "offset": "0x0f"
+        },
+        {
+          "type": "bgm",
+          "path": "SOLIT3.002",
+          "offset": "0x10"
+        },
+        {
+          "type": "bgm",
+          "path": "SOLIT3.003",
+          "offset": "0x11"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x00",
+          "title": "TITLE.COM  : title"
+        },
+        {
+          "kind": "title",
+          "code": "0x0a",
+          "title": "SOLIT2.000 : pyramid"
+        },
+        {
+          "kind": "title",
+          "code": "0x0b",
+          "title": "SOLIT2.001 : golf"
+        },
+        {
+          "kind": "title",
+          "code": "0x0c",
+          "title": "SOLIT2.002 : klondike"
+        },
+        {
+          "kind": "title",
+          "code": "0x0d",
+          "title": "SOLIT2.003 : canfield"
+        },
+        {
+          "kind": "title",
+          "code": "0x0e",
+          "title": "SOLIT3.000 : corners"
+        },
+        {
+          "kind": "title",
+          "code": "0x0f",
+          "title": "SOLIT3.001 : calculation"
+        },
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "SOLIT3.002 : shuffle & draw"
+        },
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "SOLIT3.003 : reno"
+        },
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "END1.COM   :"
+        },
+        {
+          "kind": "title",
+          "code": "0x02",
+          "title": "END2.COM   :"
+        },
+        {
+          "kind": "title",
+          "code": "0x03",
+          "title": "END3.COM   :"
+        },
+        {
+          "kind": "title",
+          "code": "0x04",
+          "title": "END4.COM   : shuffle & draw clear"
+        },
+        {
+          "kind": "title",
+          "code": "0x05",
+          "title": "END5.COM   :"
+        },
+        {
+          "kind": "title",
+          "code": "0x06",
+          "title": "END6.COM   :"
+        },
+        {
+          "kind": "title",
+          "code": "0x07",
+          "title": "END7.COM   :"
+        },
+        {
+          "kind": "title",
+          "code": "0x08",
+          "title": "END8.COM   :"
+        },
+        {
+          "kind": "title",
+          "code": "0x09",
+          "title": "ENDING.COM :"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/gamearts.xml",
+      "source_order": 2258,
+      "archive": "solitair_msx",
+      "id": "solitair-msx-generic"
+    },
+    {
+      "title": "[MSX] FIRE HAWK - THEXDER THE SECOND CONTACT - AUTO DEMO(DS #07)",
+      "driver": {
+        "name": "msx",
+        "type": "generic",
+        "alias": "GAME ARTS",
+        "platform": "MSX"
+      },
+      "options": [
+        {
+          "name": "mdata_addr",
+          "value": "0x4000"
+        },
+        {
+          "name": "mdata_size",
+          "value": "0x0c00"
+        },
+        {
+          "name": "mfile_size",
+          "value": "0x0c00"
+        },
+        {
+          "name": "init_pc",
+          "value": "0x0400"
+        },
+        {
+          "name": "use_opll",
+          "value": "0x01"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "patch",
+          "offset": "0x0400"
+        },
+        {
+          "type": "code",
+          "path": "DRIVER.BIN",
+          "offset": "0x1900"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS00.BIN",
+          "offset": "0x00"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS01.BIN",
+          "offset": "0x01"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "Moon Light Sonata"
+        },
+        {
+          "kind": "title",
+          "code": "0x00",
+          "title": "Demo"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/gamearts.xml",
+      "source_order": 2259,
+      "archive": "fhdemo_msx",
+      "id": "fhdemo-msx-generic"
+    },
+    {
+      "title": "[FM-7] THEXDER",
+      "driver": {
+        "name": "fm77av",
+        "type": "generic",
+        "alias": "GAME ARTS",
+        "platform": "FUJITSU FM-7"
+      },
+      "options": [
+        {
+          "name": "init_pc",
+          "value": "0x0000"
+        },
+        {
+          "name": "mdata_addr",
+          "value": "0x1500"
+        },
+        {
+          "name": "mfile_size",
+          "value": "0x2000"
+        },
+        {
+          "name": "mdata_size",
+          "value": "0x2000"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "PATCH.BIN",
+          "offset": "0x0000"
+        },
+        {
+          "type": "code",
+          "path": "INIT.BIN",
+          "offset": "0x1000"
+        },
+        {
+          "type": "code",
+          "path": "L.EB",
+          "offset": "0x1300"
+        },
+        {
+          "type": "code",
+          "path": "PUTGA.EB",
+          "offset": "0x1500"
+        },
+        {
+          "type": "code",
+          "path": "END2.BIN",
+          "offset": "0xc000"
+        },
+        {
+          "type": "code",
+          "path": "MUSIC",
+          "offset": "0xc600"
+        },
+        {
+          "type": "bgm",
+          "path": "PUTGA.EB",
+          "offset": "0x00"
+        },
+        {
+          "type": "bgm",
+          "path": "END.EB",
+          "offset": "0x01"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x00",
+          "title": "THEXDER / H.GODAI"
+        },
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "MOON LIGHT SONATA / BEETHOVEN"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/gamearts.xml",
+      "source_order": 2260,
+      "archive": "thexder_fm7",
+      "id": "thexder-fm7-generic"
+    },
+    {
+      "title": "[FM-7] ぎゅわんぶらあ自己中心派",
+      "driver": {
+        "name": "fm7",
+        "type": "generic",
+        "alias": "GAME ARTS",
+        "platform": "FUJITSU FM-7"
+      },
+      "options": [
+        {
+          "name": "init_pc",
+          "value": "0x4000"
+        },
+        {
+          "name": "mdata_addr",
+          "value": "0xc000"
+        },
+        {
+          "name": "mfile_size",
+          "value": "0x0600"
+        },
+        {
+          "name": "mdata_size",
+          "value": "0x0600"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "PATCH.BIN",
+          "offset": "0x4000"
+        },
+        {
+          "type": "code",
+          "path": "OPEN1_S",
+          "offset": "0xc000"
+        },
+        {
+          "type": "bgm",
+          "path": "OPEN1_S",
+          "offset": "0x00"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x00",
+          "title": "オープニングデモ1"
+        },
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "オープニングデモ2"
+        },
+        {
+          "kind": "title",
+          "code": "0x02",
+          "title": "???"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/gamearts.xml",
+      "source_order": 2261,
+      "archive": "jikochu_fm7",
+      "id": "jikochu-fm7-generic"
+    }
+  ]
+}

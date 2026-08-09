@@ -1,0 +1,3524 @@
+{
+  "format": "hoot-catalog-shard",
+  "version": 1,
+  "source_file": "xml/sps.xml",
+  "date": "2005/09/25",
+  "comments": [
+    " //SPS "
+  ],
+  "games": [
+    {
+      "title": "[X68000] 英雄伝説",
+      "driver": {
+        "name": "x68k",
+        "type": "generic",
+        "alias": "SPS",
+        "platform": "SHARP X68000"
+      },
+      "options": [],
+      "assets": [
+        {
+          "type": "code",
+          "path": "ds668snd.bin"
+        },
+        {
+          "type": "x",
+          "path": "DSMDRV.X",
+          "offset": "0x08000"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x0000",
+          "title": "演奏停止"
+        },
+        {
+          "kind": "title",
+          "code": "0x0001",
+          "title": "フィールド"
+        },
+        {
+          "kind": "title",
+          "code": "0x0002",
+          "title": "戦闘シーン"
+        },
+        {
+          "kind": "title",
+          "code": "0x0003",
+          "title": "ゲームオーバー"
+        },
+        {
+          "kind": "title",
+          "code": "0x0004",
+          "title": "ドラゴン"
+        },
+        {
+          "kind": "title",
+          "code": "0x0005",
+          "title": "城"
+        },
+        {
+          "kind": "title",
+          "code": "0x0006",
+          "title": "神の声"
+        },
+        {
+          "kind": "title",
+          "code": "0x0007",
+          "title": "ニルギド城"
+        },
+        {
+          "kind": "title",
+          "code": "0x0008",
+          "title": "街&解放後"
+        },
+        {
+          "kind": "title",
+          "code": "0x0009",
+          "title": "洞窟，塔"
+        },
+        {
+          "kind": "title",
+          "code": "0x000a",
+          "title": "船"
+        },
+        {
+          "kind": "title",
+          "code": "0x000b",
+          "title": "海賊島"
+        },
+        {
+          "kind": "title",
+          "code": "0x000c",
+          "title": "クリアー"
+        },
+        {
+          "kind": "title",
+          "code": "0x000d",
+          "title": "オープニング"
+        },
+        {
+          "kind": "title",
+          "code": "0x000e",
+          "title": "エンディング1"
+        },
+        {
+          "kind": "title",
+          "code": "0x000f",
+          "title": "ロードスタート"
+        },
+        {
+          "kind": "title",
+          "code": "0x0010",
+          "title": "セットアップメニュー"
+        },
+        {
+          "kind": "title",
+          "code": "0x0014",
+          "title": "ディスクバックアップ"
+        },
+        {
+          "kind": "title",
+          "code": "0x0015",
+          "title": "エンディング2"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/sps.xml",
+      "source_order": 4216,
+      "archive": "ds668snd",
+      "id": "ds668snd-generic"
+    },
+    {
+      "title": "[PC-8801] Re Birth",
+      "driver": {
+        "name": "pc88",
+        "type": "opn",
+        "alias": "SPS",
+        "platform": "NEC PC-8801"
+      },
+      "options": [
+        {
+          "name": "mdata_addr",
+          "value": "0x6900"
+        },
+        {
+          "name": "init_pc",
+          "value": "0xef00"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "SAMPLEP.COM",
+          "offset": "0x0000"
+        },
+        {
+          "type": "code",
+          "path": "PATCH",
+          "offset": "0xef00"
+        },
+        {
+          "type": "bgm",
+          "path": "PROLOG.COM",
+          "offset": "0x00"
+        },
+        {
+          "type": "bgm",
+          "path": "BEPSUB.COM",
+          "offset": "0x01"
+        },
+        {
+          "type": "bgm",
+          "path": "EPILOG.COM",
+          "offset": "0x02"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x00",
+          "title": "Prologue"
+        },
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "BGM"
+        },
+        {
+          "kind": "title",
+          "code": "0x02",
+          "title": "Epilogue"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/sps.xml",
+      "source_order": 4217,
+      "archive": "rebirth",
+      "id": "rebirth-opn"
+    },
+    {
+      "title": "[PC-8801] THE RETURN OF ISHTAR",
+      "driver": {
+        "name": "pc88",
+        "type": "opn",
+        "alias": "SPS",
+        "platform": "NEC PC-8801"
+      },
+      "options": [
+        {
+          "name": "init_pc",
+          "value": "0xf000"
+        },
+        {
+          "name": "mfile_size",
+          "value": "0x4000"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "SYS88.Z80",
+          "offset": "0x0000"
+        },
+        {
+          "type": "code",
+          "path": "IBGM5.COM",
+          "offset": "0xb000"
+        },
+        {
+          "type": "code",
+          "path": "ISSD.COM",
+          "offset": "0xc000"
+        },
+        {
+          "type": "code",
+          "path": "OPN88.Z80",
+          "offset": "0xc680"
+        },
+        {
+          "type": "code",
+          "path": "PATCH",
+          "offset": "0xf000"
+        },
+        {
+          "type": "bgm",
+          "path": "IBGM1.COM",
+          "offset": "0x00"
+        },
+        {
+          "type": "bgm",
+          "path": "IBGM2.COM",
+          "offset": "0x01"
+        },
+        {
+          "type": "bgm",
+          "path": "IBGM3.COM",
+          "offset": "0x02"
+        },
+        {
+          "type": "bgm",
+          "path": "IBGM4.COM",
+          "offset": "0x03"
+        },
+        {
+          "type": "bgm",
+          "path": "IBGM5.COM",
+          "offset": "0x04"
+        },
+        {
+          "type": "bgm",
+          "path": "IBGM6.COM",
+          "offset": "0x05"
+        },
+        {
+          "type": "bgm",
+          "path": "ISED.COM",
+          "offset": "0x06"
+        },
+        {
+          "type": "bgm",
+          "path": "ISGATE.COM",
+          "offset": "0x07"
+        },
+        {
+          "type": "bgm",
+          "path": "ISSD.COM",
+          "offset": "0x08"
+        },
+        {
+          "type": "bgm",
+          "path": "MAINGATE.DAT",
+          "offset": "0x09"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x00028408",
+          "title": "ISSD.COM     : CREDIT"
+        },
+        {
+          "kind": "title",
+          "code": "0x00028000",
+          "title": "IBGM1.COM    : OPENING THEME"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000008",
+          "title": "ISSD.COM     : ROUND START"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000000",
+          "title": "IBGM1.COM    : MAIN THEME"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000005",
+          "title": "IBGM6.COM    : DRUAGA A"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000003",
+          "title": "IBGM4.COM    : QUOX"
+        },
+        {
+          "kind": "title",
+          "code": "0x000cac07",
+          "title": "ISGATE.COM   : ROUND CLEAR"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000001",
+          "title": "IBGM2.COM    : ROPER"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000002",
+          "title": "IBGM3.COM    : SUCCUBUS"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000004",
+          "title": "IBGM5.COM    : DRUAGA B"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000406",
+          "title": "ISED.COM     : MISS"
+        },
+        {
+          "kind": "title",
+          "code": "0x0000f606",
+          "title": "ISED.COM     : GAME OVER"
+        },
+        {
+          "kind": "title",
+          "code": "0x00310809",
+          "title": "MAINGATE.DAT : ALL ROUND CLEAR"
+        },
+        {
+          "kind": "title",
+          "code": "0x00321c09",
+          "title": "MAINGATE.DAT : CONGRATULATIONS!"
+        },
+        {
+          "kind": "title",
+          "code": "0x00017805",
+          "title": "IBGM6.COM    : PROTECT TRAP #1 (DRUAGA NAME ENTRY)"
+        },
+        {
+          "kind": "title",
+          "code": "0x000000fe",
+          "title": "IBGM5.COM    : PROTECT TRAP #2"
+        },
+        {
+          "kind": "title",
+          "code": "0x000000ff",
+          "title": "ISSD.COM     : SE #00"
+        },
+        {
+          "kind": "title",
+          "code": "0x010000ff",
+          "title": "ISSD.COM     : SE #01"
+        },
+        {
+          "kind": "title",
+          "code": "0x020000ff",
+          "title": "ISSD.COM     : SE #02"
+        },
+        {
+          "kind": "title",
+          "code": "0x030000ff",
+          "title": "ISSD.COM     : SE #03"
+        },
+        {
+          "kind": "title",
+          "code": "0x040000ff",
+          "title": "ISSD.COM     : SE #04"
+        },
+        {
+          "kind": "title",
+          "code": "0x050000ff",
+          "title": "ISSD.COM     : SE #05"
+        },
+        {
+          "kind": "title",
+          "code": "0x060000ff",
+          "title": "ISSD.COM     : SE #06"
+        },
+        {
+          "kind": "title",
+          "code": "0x070000ff",
+          "title": "ISSD.COM     : SE #07"
+        },
+        {
+          "kind": "title",
+          "code": "0x080000ff",
+          "title": "ISSD.COM     : SE #08"
+        },
+        {
+          "kind": "title",
+          "code": "0x090000ff",
+          "title": "ISSD.COM     : SE #09"
+        },
+        {
+          "kind": "title",
+          "code": "0x0a0000ff",
+          "title": "ISSD.COM     : SE #10"
+        },
+        {
+          "kind": "title",
+          "code": "0x00030d08",
+          "title": "ISSD.COM     : SE #11"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/sps.xml",
+      "source_order": 4218,
+      "archive": "ishtar88",
+      "id": "ishtar88-opn"
+    },
+    {
+      "title": "[PC-9801] Re Birth",
+      "driver": {
+        "name": "pc98vx",
+        "type": "opn",
+        "alias": "SPS",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "bootcs",
+          "value": "0x1000"
+        },
+        {
+          "name": "bootip",
+          "value": "0xf000"
+        },
+        {
+          "name": "dataaddr",
+          "value": "0x06900"
+        },
+        {
+          "name": "filesize",
+          "value": "0x01000"
+        },
+        {
+          "name": "funcvect",
+          "value": "0x7f"
+        },
+        {
+          "name": "datamax",
+          "value": "0x04"
+        },
+        {
+          "name": "dummysndrom",
+          "value": "1"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "MAIN.COM",
+          "offset": "0x10000"
+        },
+        {
+          "type": "code",
+          "path": "rebirth.bin",
+          "offset": "0x1f000"
+        },
+        {
+          "type": "bgm",
+          "path": "PROLOG.COM",
+          "offset": "0x01"
+        },
+        {
+          "type": "bgm",
+          "path": "BEPSUB.COM",
+          "offset": "0x02"
+        },
+        {
+          "type": "bgm",
+          "path": "EPILOG.COM",
+          "offset": "0x03"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "PROLOG.COM : Prologue"
+        },
+        {
+          "kind": "title",
+          "code": "0x02",
+          "title": "BEPSUB.COM : BGM"
+        },
+        {
+          "kind": "title",
+          "code": "0x03",
+          "title": "EPILOG.COM : Epilogue"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/sps.xml",
+      "source_order": 4219,
+      "archive": "rebirth98",
+      "id": "rebirth98-opn"
+    },
+    {
+      "title": "[PC-9801] THE RETURN OF ISHTAR",
+      "driver": {
+        "name": "pc98dos",
+        "type": "opn",
+        "alias": "SPS",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "clockmul",
+          "value": "0x08"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "MU.EXE",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MUPLAY.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "SDATA.COM",
+          "offset": "0x05"
+        },
+        {
+          "type": "file",
+          "path": "IBGM1.COM",
+          "offset": "0x06"
+        },
+        {
+          "type": "file",
+          "path": "IBGM2.COM",
+          "offset": "0x07"
+        },
+        {
+          "type": "file",
+          "path": "IBGM3.COM",
+          "offset": "0x08"
+        },
+        {
+          "type": "file",
+          "path": "IBGM4.COM",
+          "offset": "0x09"
+        },
+        {
+          "type": "file",
+          "path": "IBGM5.COM",
+          "offset": "0x0a"
+        },
+        {
+          "type": "file",
+          "path": "IBGM6.COM",
+          "offset": "0x0b"
+        },
+        {
+          "type": "file",
+          "path": "ISED.COM",
+          "offset": "0x0c"
+        },
+        {
+          "type": "file",
+          "path": "ISSD.COM",
+          "offset": "0x0d"
+        },
+        {
+          "type": "file",
+          "path": "ISGATE.EXE",
+          "offset": "0x0e"
+        },
+        {
+          "type": "file",
+          "path": "MAINGATE.DAT",
+          "offset": "0x0f"
+        },
+        {
+          "type": "shell",
+          "path": "mu",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "muplay",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x0284000d",
+          "title": "ISSD.COM     : CREDIT"
+        },
+        {
+          "kind": "title",
+          "code": "0x02800006",
+          "title": "IBGM1.COM    : OPENING THEME"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000006",
+          "title": "IBGM1.COM    : MAIN THEME"
+        },
+        {
+          "kind": "title",
+          "code": "0x0000000b",
+          "title": "IBGM6.COM    : DRUAGA A"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000009",
+          "title": "IBGM4.COM    : QUOX"
+        },
+        {
+          "kind": "title",
+          "code": "0x10d6000e",
+          "title": "ISGATE.EXE   : ROUND CLEAR"
+        },
+        {
+          "kind": "title",
+          "code": "0x0000000d",
+          "title": "ISSD.COM     : ROUND START"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000007",
+          "title": "IBGM2.COM    : ROPER"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000008",
+          "title": "IBGM3.COM    : SUCCUBUS"
+        },
+        {
+          "kind": "title",
+          "code": "0x0000000a",
+          "title": "IBGM5.COM    : DRUAGA B"
+        },
+        {
+          "kind": "title",
+          "code": "0x0004000c",
+          "title": "ISED.COM     : MISS"
+        },
+        {
+          "kind": "title",
+          "code": "0x00f6000c",
+          "title": "ISED.COM     : GAME OVER"
+        },
+        {
+          "kind": "title",
+          "code": "0x3108000f",
+          "title": "MAINGATE.DAT : ALL ROUND CLEAR"
+        },
+        {
+          "kind": "title",
+          "code": "0x321c000f",
+          "title": "MAINGATE.DAT : CONGRATULATIONS!"
+        },
+        {
+          "kind": "title",
+          "code": "0x0178000b",
+          "title": "IBGM6.COM    : PROTECT TRAP #1 (DRUAGA NAME ENTRY)"
+        },
+        {
+          "kind": "title",
+          "code": "0x000000fe",
+          "title": "IBGM5.COM    : PROTECT TRAP #2"
+        },
+        {
+          "kind": "title",
+          "code": "0x000000ff",
+          "title": "ISSD.COM     : SE #00"
+        },
+        {
+          "kind": "title",
+          "code": "0x000001ff",
+          "title": "ISSD.COM     : SE #01"
+        },
+        {
+          "kind": "title",
+          "code": "0x000002ff",
+          "title": "ISSD.COM     : SE #02"
+        },
+        {
+          "kind": "title",
+          "code": "0x000003ff",
+          "title": "ISSD.COM     : SE #03"
+        },
+        {
+          "kind": "title",
+          "code": "0x000004ff",
+          "title": "ISSD.COM     : SE #04"
+        },
+        {
+          "kind": "title",
+          "code": "0x000005ff",
+          "title": "ISSD.COM     : SE #05"
+        },
+        {
+          "kind": "title",
+          "code": "0x000006ff",
+          "title": "ISSD.COM     : SE #06"
+        },
+        {
+          "kind": "title",
+          "code": "0x000007ff",
+          "title": "ISSD.COM     : SE #07"
+        },
+        {
+          "kind": "title",
+          "code": "0x000008ff",
+          "title": "ISSD.COM     : SE #08"
+        },
+        {
+          "kind": "title",
+          "code": "0x000009ff",
+          "title": "ISSD.COM     : SE #09"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000aff",
+          "title": "ISSD.COM     : SE #10"
+        },
+        {
+          "kind": "title",
+          "code": "0x030d000d",
+          "title": "ISSD.COM     : SE #11"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/sps.xml",
+      "source_order": 4220,
+      "archive": "ishtar98",
+      "id": "ishtar98-opn"
+    },
+    {
+      "title": "[X1] TONKY",
+      "driver": {
+        "name": "x1",
+        "type": "psg",
+        "alias": "SPS",
+        "platform": "SHARP X1"
+      },
+      "options": [
+        {
+          "name": "init_pc",
+          "value": "0xf000"
+        },
+        {
+          "name": "mdata_addr",
+          "value": "0x5000"
+        },
+        {
+          "name": "mdata_size",
+          "value": "0x6000"
+        },
+        {
+          "name": "mfile_size",
+          "value": "0x6000"
+        },
+        {
+          "name": "ctc0",
+          "value": "0x5a"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "PAGE01",
+          "offset": "0x0000"
+        },
+        {
+          "type": "code",
+          "path": "PATCH",
+          "offset": "0xf000"
+        },
+        {
+          "type": "bgm",
+          "path": "ENDING",
+          "offset": "0x01"
+        },
+        {
+          "type": "bgm",
+          "path": "PAGE02",
+          "offset": "0x02"
+        },
+        {
+          "type": "bgm",
+          "path": "PAGE03",
+          "offset": "0x03"
+        },
+        {
+          "type": "bgm",
+          "path": "PAGE04",
+          "offset": "0x04"
+        },
+        {
+          "type": "bgm",
+          "path": "PAGE05",
+          "offset": "0x05"
+        },
+        {
+          "type": "bgm",
+          "path": "PAGE06",
+          "offset": "0x06"
+        },
+        {
+          "type": "bgm",
+          "path": "PAGE07",
+          "offset": "0x07"
+        },
+        {
+          "type": "bgm",
+          "path": "PAGE08",
+          "offset": "0x08"
+        },
+        {
+          "type": "bgm",
+          "path": "PAGE09",
+          "offset": "0x09"
+        },
+        {
+          "type": "bgm",
+          "path": "PAGE10",
+          "offset": "0x0a"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x02000000",
+          "title": "OPENING TITLE"
+        },
+        {
+          "kind": "title",
+          "code": "0x03000000",
+          "title": "Page 1  Demonstration"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000002",
+          "title": "Page 2  Magical forest  (Jingle)"
+        },
+        {
+          "kind": "title",
+          "code": "0x01000002",
+          "title": "Page 2  Magical forest  (BGM)"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000003",
+          "title": "Page 3  Dangerous river (Jingle)"
+        },
+        {
+          "kind": "title",
+          "code": "0x02000003",
+          "title": "Page 3  Dangerous river (BGM)"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000004",
+          "title": "Page 4  Chick'n tokage  (Jingle)"
+        },
+        {
+          "kind": "title",
+          "code": "0x03000004",
+          "title": "Page 4  Chick'n tokage  (BGM)"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000005",
+          "title": "Page 5  Jog-LION        (Jingle)"
+        },
+        {
+          "kind": "title",
+          "code": "0x04000005",
+          "title": "Page 5  Jog-LION        (BGM)"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000006",
+          "title": "Page 6  Rock climbing   (Jingle)"
+        },
+        {
+          "kind": "title",
+          "code": "0x05000006",
+          "title": "Page 6  Rock climbing   (BGM)"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000007",
+          "title": "Page 7  Animal's town   (Jingle)"
+        },
+        {
+          "kind": "title",
+          "code": "0x06000007",
+          "title": "Page 7  Animal's town   (BGM)"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000008",
+          "title": "Page 8  Garden of plant (Jingle)"
+        },
+        {
+          "kind": "title",
+          "code": "0x07000008",
+          "title": "Page 8  Garden of plant (BGM)"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000009",
+          "title": "Page 9  automatic plant (Jingle)"
+        },
+        {
+          "kind": "title",
+          "code": "0x08000009",
+          "title": "Page 9  automatic plant (BGM)"
+        },
+        {
+          "kind": "title",
+          "code": "0x0000000a",
+          "title": "Page 10 Cold sleep room (Jingle)"
+        },
+        {
+          "kind": "title",
+          "code": "0x0900000a",
+          "title": "Page 10 Cold sleep room (BGM)"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000000",
+          "title": "STAGE CLEAR"
+        },
+        {
+          "kind": "title",
+          "code": "0x0a000001",
+          "title": "ENDING (1)"
+        },
+        {
+          "kind": "title",
+          "code": "0x0b000001",
+          "title": "ENDING (2)"
+        },
+        {
+          "kind": "title",
+          "code": "0x0c000001",
+          "title": "ENDING (3)"
+        },
+        {
+          "kind": "title",
+          "code": "0x01000000",
+          "title": "MISS"
+        },
+        {
+          "kind": "title",
+          "code": "0x04000000",
+          "title": "GAME OVER"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/sps.xml",
+      "source_order": 4221,
+      "archive": "x1tonky",
+      "id": "x1tonky-psg"
+    },
+    {
+      "title": "[X1] Re Birth(OPM)",
+      "driver": {
+        "name": "x1",
+        "type": "opm",
+        "alias": "SPS",
+        "platform": "SHARP X1"
+      },
+      "options": [
+        {
+          "name": "mdata_addr",
+          "value": "0x6900"
+        },
+        {
+          "name": "init_pc",
+          "value": "0xef00"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "SAMPLEX.COM",
+          "offset": "0x0000"
+        },
+        {
+          "type": "code",
+          "path": "PATCHX",
+          "offset": "0xef00"
+        },
+        {
+          "type": "bgm",
+          "path": "PROLOG.COM",
+          "offset": "0x00"
+        },
+        {
+          "type": "bgm",
+          "path": "BEPSUB.COM",
+          "offset": "0x01"
+        },
+        {
+          "type": "bgm",
+          "path": "EPILOG.COM",
+          "offset": "0x02"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x00",
+          "title": "Prologue"
+        },
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "BGM"
+        },
+        {
+          "kind": "title",
+          "code": "0x02",
+          "title": "Epilogue"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/sps.xml",
+      "source_order": 4222,
+      "archive": "rebirth",
+      "id": "rebirth-opm"
+    },
+    {
+      "title": "[X1] Re Birth(PSG)",
+      "driver": {
+        "name": "x1",
+        "type": "psg",
+        "alias": "SPS",
+        "platform": "SHARP X1"
+      },
+      "options": [
+        {
+          "name": "mdata_addr",
+          "value": "0x6900"
+        },
+        {
+          "name": "init_pc",
+          "value": "0xef00"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "SAMPLEX.COM",
+          "offset": "0x0000"
+        },
+        {
+          "type": "code",
+          "path": "PATCHX",
+          "offset": "0xef00"
+        },
+        {
+          "type": "bgm",
+          "path": "PROLOG.COM",
+          "offset": "0x00"
+        },
+        {
+          "type": "bgm",
+          "path": "BEPSUB.COM",
+          "offset": "0x01"
+        },
+        {
+          "type": "bgm",
+          "path": "EPILOG.COM",
+          "offset": "0x02"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x00",
+          "title": "Prologue"
+        },
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "BGM"
+        },
+        {
+          "kind": "title",
+          "code": "0x02",
+          "title": "Epilogue"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/sps.xml",
+      "source_order": 4223,
+      "archive": "rebirth",
+      "id": "rebirth-psg"
+    },
+    {
+      "title": "[X1] THE RETURN OF ISHTAR(OPM)",
+      "driver": {
+        "name": "x1",
+        "type": "opm",
+        "alias": "SPS",
+        "platform": "SHARP X1"
+      },
+      "options": [
+        {
+          "name": "init_pc",
+          "value": "0xf000"
+        },
+        {
+          "name": "mfile_size",
+          "value": "0x4000"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "SYSX1.Z80",
+          "offset": "0x0000"
+        },
+        {
+          "type": "code",
+          "path": "IBGM5.COM",
+          "offset": "0xb000"
+        },
+        {
+          "type": "code",
+          "path": "ISSD.COM",
+          "offset": "0xbf00"
+        },
+        {
+          "type": "code",
+          "path": "OPMX1.Z80",
+          "offset": "0xc580"
+        },
+        {
+          "type": "code",
+          "path": "PATCH",
+          "offset": "0xf000"
+        },
+        {
+          "type": "bgm",
+          "path": "IBGM1.COM",
+          "offset": "0x00"
+        },
+        {
+          "type": "bgm",
+          "path": "IBGM2.COM",
+          "offset": "0x01"
+        },
+        {
+          "type": "bgm",
+          "path": "IBGM3.COM",
+          "offset": "0x02"
+        },
+        {
+          "type": "bgm",
+          "path": "IBGM4.COM",
+          "offset": "0x03"
+        },
+        {
+          "type": "bgm",
+          "path": "IBGM5.COM",
+          "offset": "0x04"
+        },
+        {
+          "type": "bgm",
+          "path": "IBGM6.COM",
+          "offset": "0x05"
+        },
+        {
+          "type": "bgm",
+          "path": "ISED.COM",
+          "offset": "0x06"
+        },
+        {
+          "type": "bgm",
+          "path": "ISGATE.COM",
+          "offset": "0x07"
+        },
+        {
+          "type": "bgm",
+          "path": "ISSD.COM",
+          "offset": "0x08"
+        },
+        {
+          "type": "bgm",
+          "path": "MAINGATE.DAT",
+          "offset": "0x09"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x00028408",
+          "title": "ISSD.COM     : CREDIT"
+        },
+        {
+          "kind": "title",
+          "code": "0x00028000",
+          "title": "IBGM1.COM    : OPENING THEME"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000008",
+          "title": "ISSD.COM     : ROUND START"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000000",
+          "title": "IBGM1.COM    : MAIN THEME"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000005",
+          "title": "IBGM6.COM    : DRUAGA A"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000003",
+          "title": "IBGM4.COM    : QUOX"
+        },
+        {
+          "kind": "title",
+          "code": "0x000d6407",
+          "title": "ISGATE.COM   : ROUND CLEAR"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000001",
+          "title": "IBGM2.COM    : ROPER"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000002",
+          "title": "IBGM3.COM    : SUCCUBUS"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000004",
+          "title": "IBGM5.COM    : DRUAGA B"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000406",
+          "title": "ISED.COM     : MISS"
+        },
+        {
+          "kind": "title",
+          "code": "0x0000f606",
+          "title": "ISED.COM     : GAME OVER"
+        },
+        {
+          "kind": "title",
+          "code": "0x00310809",
+          "title": "MAINGATE.DAT : ALL ROUND CLEAR"
+        },
+        {
+          "kind": "title",
+          "code": "0x00321c09",
+          "title": "MAINGATE.DAT : CONGRATULATIONS!"
+        },
+        {
+          "kind": "title",
+          "code": "0x00017805",
+          "title": "IBGM6.COM    : PROTECT TRAP #1 (DRUAGA NAME ENTRY)"
+        },
+        {
+          "kind": "title",
+          "code": "0x000000fe",
+          "title": "IBGM5.COM    : PROTECT TRAP #2"
+        },
+        {
+          "kind": "title",
+          "code": "0x000000ff",
+          "title": "ISSD.COM     : SE #00"
+        },
+        {
+          "kind": "title",
+          "code": "0x010000ff",
+          "title": "ISSD.COM     : SE #01"
+        },
+        {
+          "kind": "title",
+          "code": "0x020000ff",
+          "title": "ISSD.COM     : SE #02"
+        },
+        {
+          "kind": "title",
+          "code": "0x030000ff",
+          "title": "ISSD.COM     : SE #03"
+        },
+        {
+          "kind": "title",
+          "code": "0x040000ff",
+          "title": "ISSD.COM     : SE #04"
+        },
+        {
+          "kind": "title",
+          "code": "0x050000ff",
+          "title": "ISSD.COM     : SE #05"
+        },
+        {
+          "kind": "title",
+          "code": "0x060000ff",
+          "title": "ISSD.COM     : SE #06"
+        },
+        {
+          "kind": "title",
+          "code": "0x070000ff",
+          "title": "ISSD.COM     : SE #07"
+        },
+        {
+          "kind": "title",
+          "code": "0x080000ff",
+          "title": "ISSD.COM     : SE #08"
+        },
+        {
+          "kind": "title",
+          "code": "0x090000ff",
+          "title": "ISSD.COM     : SE #09"
+        },
+        {
+          "kind": "title",
+          "code": "0x0a0000ff",
+          "title": "ISSD.COM     : SE #10"
+        },
+        {
+          "kind": "title",
+          "code": "0x00030d08",
+          "title": "ISSD.COM     : SE #11"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/sps.xml",
+      "source_order": 4224,
+      "archive": "x1ishtar",
+      "id": "x1ishtar-opm"
+    },
+    {
+      "title": "[X1] THE RETURN OF ISHTAR(PSG)",
+      "driver": {
+        "name": "x1",
+        "type": "psg",
+        "alias": "SPS",
+        "platform": "SHARP X1"
+      },
+      "options": [
+        {
+          "name": "init_pc",
+          "value": "0xf000"
+        },
+        {
+          "name": "mfile_size",
+          "value": "0x4000"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "SYSX1.Z80",
+          "offset": "0x0000"
+        },
+        {
+          "type": "code",
+          "path": "IBGM5.COM",
+          "offset": "0xb000"
+        },
+        {
+          "type": "code",
+          "path": "ISSD.COM",
+          "offset": "0xbf00"
+        },
+        {
+          "type": "code",
+          "path": "PSGX1.Z80",
+          "offset": "0xc580"
+        },
+        {
+          "type": "code",
+          "path": "PATCH",
+          "offset": "0xf000"
+        },
+        {
+          "type": "bgm",
+          "path": "IBGM1.COM",
+          "offset": "0x00"
+        },
+        {
+          "type": "bgm",
+          "path": "IBGM2.COM",
+          "offset": "0x01"
+        },
+        {
+          "type": "bgm",
+          "path": "IBGM3.COM",
+          "offset": "0x02"
+        },
+        {
+          "type": "bgm",
+          "path": "IBGM4.COM",
+          "offset": "0x03"
+        },
+        {
+          "type": "bgm",
+          "path": "IBGM5.COM",
+          "offset": "0x04"
+        },
+        {
+          "type": "bgm",
+          "path": "IBGM6.COM",
+          "offset": "0x05"
+        },
+        {
+          "type": "bgm",
+          "path": "ISED.COM",
+          "offset": "0x06"
+        },
+        {
+          "type": "bgm",
+          "path": "ISGATE.COM",
+          "offset": "0x07"
+        },
+        {
+          "type": "bgm",
+          "path": "ISSD.COM",
+          "offset": "0x08"
+        },
+        {
+          "type": "bgm",
+          "path": "MAINGATE.DAT",
+          "offset": "0x09"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x00028408",
+          "title": "ISSD.COM     : CREDIT"
+        },
+        {
+          "kind": "title",
+          "code": "0x00028000",
+          "title": "IBGM1.COM    : OPENING THEME"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000008",
+          "title": "ISSD.COM     : ROUND START"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000000",
+          "title": "IBGM1.COM    : MAIN THEME"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000005",
+          "title": "IBGM6.COM    : DRUAGA A"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000003",
+          "title": "IBGM4.COM    : QUOX"
+        },
+        {
+          "kind": "title",
+          "code": "0x000d6407",
+          "title": "ISGATE.COM   : ROUND CLEAR"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000001",
+          "title": "IBGM2.COM    : ROPER"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000002",
+          "title": "IBGM3.COM    : SUCCUBUS"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000004",
+          "title": "IBGM5.COM    : DRUAGA B"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000406",
+          "title": "ISED.COM     : MISS"
+        },
+        {
+          "kind": "title",
+          "code": "0x0000f606",
+          "title": "ISED.COM     : GAME OVER"
+        },
+        {
+          "kind": "title",
+          "code": "0x00310809",
+          "title": "MAINGATE.DAT : ALL ROUND CLEAR"
+        },
+        {
+          "kind": "title",
+          "code": "0x00321c09",
+          "title": "MAINGATE.DAT : CONGRATULATIONS!"
+        },
+        {
+          "kind": "title",
+          "code": "0x00017805",
+          "title": "IBGM6.COM    : PROTECT TRAP #1 (DRUAGA NAME ENTRY)"
+        },
+        {
+          "kind": "title",
+          "code": "0x000000fe",
+          "title": "IBGM5.COM    : PROTECT TRAP #2"
+        },
+        {
+          "kind": "title",
+          "code": "0x000000ff",
+          "title": "ISSD.COM     : SE #00"
+        },
+        {
+          "kind": "title",
+          "code": "0x010000ff",
+          "title": "ISSD.COM     : SE #01"
+        },
+        {
+          "kind": "title",
+          "code": "0x020000ff",
+          "title": "ISSD.COM     : SE #02"
+        },
+        {
+          "kind": "title",
+          "code": "0x030000ff",
+          "title": "ISSD.COM     : SE #03"
+        },
+        {
+          "kind": "title",
+          "code": "0x040000ff",
+          "title": "ISSD.COM     : SE #04"
+        },
+        {
+          "kind": "title",
+          "code": "0x050000ff",
+          "title": "ISSD.COM     : SE #05"
+        },
+        {
+          "kind": "title",
+          "code": "0x060000ff",
+          "title": "ISSD.COM     : SE #06"
+        },
+        {
+          "kind": "title",
+          "code": "0x070000ff",
+          "title": "ISSD.COM     : SE #07"
+        },
+        {
+          "kind": "title",
+          "code": "0x080000ff",
+          "title": "ISSD.COM     : SE #08"
+        },
+        {
+          "kind": "title",
+          "code": "0x090000ff",
+          "title": "ISSD.COM     : SE #09"
+        },
+        {
+          "kind": "title",
+          "code": "0x0a0000ff",
+          "title": "ISSD.COM     : SE #10"
+        },
+        {
+          "kind": "title",
+          "code": "0x00030d08",
+          "title": "ISSD.COM     : SE #11"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/sps.xml",
+      "source_order": 4225,
+      "archive": "x1ishtar",
+      "id": "x1ishtar-psg"
+    },
+    {
+      "title": "[X1] THE RETURN OF ISHTAR(OPN)",
+      "driver": {
+        "name": "x1",
+        "type": "opn",
+        "alias": "SPS",
+        "platform": "SHARP X1"
+      },
+      "options": [
+        {
+          "name": "init_pc",
+          "value": "0xf000"
+        },
+        {
+          "name": "mfile_size",
+          "value": "0x4000"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "SYSX1.Z80",
+          "offset": "0x0000"
+        },
+        {
+          "type": "code",
+          "path": "IBGM5.COM",
+          "offset": "0xb000"
+        },
+        {
+          "type": "code",
+          "path": "ISSD.COM",
+          "offset": "0xbf00"
+        },
+        {
+          "type": "code",
+          "path": "OPNX1.Z80",
+          "offset": "0xc580"
+        },
+        {
+          "type": "code",
+          "path": "PATCH",
+          "offset": "0xf000"
+        },
+        {
+          "type": "bgm",
+          "path": "IBGM1.COM",
+          "offset": "0x00"
+        },
+        {
+          "type": "bgm",
+          "path": "IBGM2.COM",
+          "offset": "0x01"
+        },
+        {
+          "type": "bgm",
+          "path": "IBGM3.COM",
+          "offset": "0x02"
+        },
+        {
+          "type": "bgm",
+          "path": "IBGM4.COM",
+          "offset": "0x03"
+        },
+        {
+          "type": "bgm",
+          "path": "IBGM5.COM",
+          "offset": "0x04"
+        },
+        {
+          "type": "bgm",
+          "path": "IBGM6.COM",
+          "offset": "0x05"
+        },
+        {
+          "type": "bgm",
+          "path": "ISED.COM",
+          "offset": "0x06"
+        },
+        {
+          "type": "bgm",
+          "path": "ISGATE.COM",
+          "offset": "0x07"
+        },
+        {
+          "type": "bgm",
+          "path": "ISSD.COM",
+          "offset": "0x08"
+        },
+        {
+          "type": "bgm",
+          "path": "MAINGATE.DAT",
+          "offset": "0x09"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x00028408",
+          "title": "ISSD.COM     : CREDIT"
+        },
+        {
+          "kind": "title",
+          "code": "0x00028000",
+          "title": "IBGM1.COM    : OPENING THEME"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000008",
+          "title": "ISSD.COM     : ROUND START"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000000",
+          "title": "IBGM1.COM    : MAIN THEME"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000005",
+          "title": "IBGM6.COM    : DRUAGA A"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000003",
+          "title": "IBGM4.COM    : QUOX"
+        },
+        {
+          "kind": "title",
+          "code": "0x000d6407",
+          "title": "ISGATE.COM   : ROUND CLEAR"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000001",
+          "title": "IBGM2.COM    : ROPER"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000002",
+          "title": "IBGM3.COM    : SUCCUBUS"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000004",
+          "title": "IBGM5.COM    : DRUAGA B"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000406",
+          "title": "ISED.COM     : MISS"
+        },
+        {
+          "kind": "title",
+          "code": "0x0000f606",
+          "title": "ISED.COM     : GAME OVER"
+        },
+        {
+          "kind": "title",
+          "code": "0x00310809",
+          "title": "MAINGATE.DAT : ALL ROUND CLEAR"
+        },
+        {
+          "kind": "title",
+          "code": "0x00321c09",
+          "title": "MAINGATE.DAT : CONGRATULATIONS!"
+        },
+        {
+          "kind": "title",
+          "code": "0x00017805",
+          "title": "IBGM6.COM    : PROTECT TRAP #1 (DRUAGA NAME ENTRY)"
+        },
+        {
+          "kind": "title",
+          "code": "0x000000fe",
+          "title": "IBGM5.COM    : PROTECT TRAP #2"
+        },
+        {
+          "kind": "title",
+          "code": "0x000000ff",
+          "title": "ISSD.COM     : SE #00"
+        },
+        {
+          "kind": "title",
+          "code": "0x010000ff",
+          "title": "ISSD.COM     : SE #01"
+        },
+        {
+          "kind": "title",
+          "code": "0x020000ff",
+          "title": "ISSD.COM     : SE #02"
+        },
+        {
+          "kind": "title",
+          "code": "0x030000ff",
+          "title": "ISSD.COM     : SE #03"
+        },
+        {
+          "kind": "title",
+          "code": "0x040000ff",
+          "title": "ISSD.COM     : SE #04"
+        },
+        {
+          "kind": "title",
+          "code": "0x050000ff",
+          "title": "ISSD.COM     : SE #05"
+        },
+        {
+          "kind": "title",
+          "code": "0x060000ff",
+          "title": "ISSD.COM     : SE #06"
+        },
+        {
+          "kind": "title",
+          "code": "0x070000ff",
+          "title": "ISSD.COM     : SE #07"
+        },
+        {
+          "kind": "title",
+          "code": "0x080000ff",
+          "title": "ISSD.COM     : SE #08"
+        },
+        {
+          "kind": "title",
+          "code": "0x090000ff",
+          "title": "ISSD.COM     : SE #09"
+        },
+        {
+          "kind": "title",
+          "code": "0x0a0000ff",
+          "title": "ISSD.COM     : SE #10"
+        },
+        {
+          "kind": "title",
+          "code": "0x00030d08",
+          "title": "ISSD.COM     : SE #11"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/sps.xml",
+      "source_order": 4226,
+      "archive": "x1ishtar",
+      "id": "x1ishtar-opn"
+    },
+    {
+      "title": "[X68000] THE FAIRY LAND STORY",
+      "driver": {
+        "name": "x68k",
+        "type": "generic",
+        "alias": "SPS",
+        "platform": "SHARP X68000"
+      },
+      "options": [
+        {
+          "name": "mfp",
+          "value": "0x01"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "fls68snd.bin",
+          "offset": "0x00000"
+        },
+        {
+          "type": "x",
+          "path": "MDRV.X",
+          "offset": "0x10000"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x02",
+          "title": "クレジット"
+        },
+        {
+          "kind": "title",
+          "code": "0x03",
+          "title": "ステージスタート"
+        },
+        {
+          "kind": "title",
+          "code": "0x05",
+          "title": "前半ステージ"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "後半ステージ"
+        },
+        {
+          "kind": "title",
+          "code": "0x0e",
+          "title": "ハリーアップ"
+        },
+        {
+          "kind": "title",
+          "code": "0x17",
+          "title": "ステージスタート～前半ステージ"
+        },
+        {
+          "kind": "title",
+          "code": "0x18",
+          "title": "ステージスタート～後半ステージ"
+        },
+        {
+          "kind": "title",
+          "code": "0x08",
+          "title": "ステージクリア"
+        },
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "月出現"
+        },
+        {
+          "kind": "title",
+          "code": "0x06",
+          "title": "月出現中"
+        },
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "月消滅"
+        },
+        {
+          "kind": "title",
+          "code": "0x09",
+          "title": "ステージ間デモ"
+        },
+        {
+          "kind": "title",
+          "code": "0x0c",
+          "title": "ゲームオーバー"
+        },
+        {
+          "kind": "title",
+          "code": "0x0d",
+          "title": "ネームエントリー"
+        },
+        {
+          "kind": "title",
+          "code": "0x0f",
+          "title": "全ステージクリア"
+        },
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "??"
+        },
+        {
+          "kind": "title",
+          "code": "0x04",
+          "title": "1up"
+        },
+        {
+          "kind": "title",
+          "code": "0x07",
+          "title": "ミス1"
+        },
+        {
+          "kind": "title",
+          "code": "0x0a",
+          "title": "ミス2"
+        },
+        {
+          "kind": "title",
+          "code": "0x0b",
+          "title": "ミス3"
+        },
+        {
+          "kind": "title",
+          "code": "0x1a",
+          "title": "クレジット(アレンジ)"
+        },
+        {
+          "kind": "title",
+          "code": "0x1b",
+          "title": "ステージスタート(アレンジ)"
+        },
+        {
+          "kind": "title",
+          "code": "0x1d",
+          "title": "前半ステージ(アレンジ)"
+        },
+        {
+          "kind": "title",
+          "code": "0x2b",
+          "title": "後半ステージ(アレンジ)"
+        },
+        {
+          "kind": "title",
+          "code": "0x26",
+          "title": "ハリーアップ(アレンジ)"
+        },
+        {
+          "kind": "title",
+          "code": "0x2f",
+          "title": "ステージスタート～前半ステージ(アレンジ)"
+        },
+        {
+          "kind": "title",
+          "code": "0x30",
+          "title": "ステージスタート～後半ステージ(アレンジ)"
+        },
+        {
+          "kind": "title",
+          "code": "0x20",
+          "title": "ステージクリア(アレンジ)"
+        },
+        {
+          "kind": "title",
+          "code": "0x28",
+          "title": "月出現(アレンジ)"
+        },
+        {
+          "kind": "title",
+          "code": "0x1e",
+          "title": "月出現中(アレンジ)"
+        },
+        {
+          "kind": "title",
+          "code": "0x29",
+          "title": "月消滅(アレンジ)"
+        },
+        {
+          "kind": "title",
+          "code": "0x21",
+          "title": "ステージ間デモ(アレンジ)"
+        },
+        {
+          "kind": "title",
+          "code": "0x24",
+          "title": "ゲームオーバー(アレンジ)"
+        },
+        {
+          "kind": "title",
+          "code": "0x25",
+          "title": "ネームエントリー(アレンジ)"
+        },
+        {
+          "kind": "title",
+          "code": "0x27",
+          "title": "全ステージクリア(アレンジ)"
+        },
+        {
+          "kind": "title",
+          "code": "0x19",
+          "title": "???(アレンジ)"
+        },
+        {
+          "kind": "title",
+          "code": "0x1c",
+          "title": "1up(アレンジ)"
+        },
+        {
+          "kind": "title",
+          "code": "0x1f",
+          "title": "ミス1(アレンジ)"
+        },
+        {
+          "kind": "title",
+          "code": "0x22",
+          "title": "ミス2(アレンジ)"
+        },
+        {
+          "kind": "title",
+          "code": "0x23",
+          "title": "ミス3(アレンジ)"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/sps.xml",
+      "source_order": 4227,
+      "archive": "flstory68snd",
+      "id": "flstory68snd-generic"
+    },
+    {
+      "title": "[X68000] Cyber Core",
+      "driver": {
+        "name": "x68k",
+        "type": "generic",
+        "alias": "SPS",
+        "platform": "SHARP X68000"
+      },
+      "options": [
+        {
+          "name": "mfp",
+          "value": "0x01"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "cc68snd.bin",
+          "offset": "0x000000"
+        },
+        {
+          "type": "x",
+          "path": "Y.X",
+          "offset": "0x010000"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x0e",
+          "title": "IGS Logo"
+        },
+        {
+          "kind": "title",
+          "code": "0x0c",
+          "title": "序章 (Title)"
+        },
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "Start Demo"
+        },
+        {
+          "kind": "title",
+          "code": "0x02",
+          "title": "海上・空中 (Stage 1)"
+        },
+        {
+          "kind": "title",
+          "code": "0x06",
+          "title": "廃墟の都市 (Stage 2)"
+        },
+        {
+          "kind": "title",
+          "code": "0x09",
+          "title": "森林 (Stage 3)"
+        },
+        {
+          "kind": "title",
+          "code": "0x03",
+          "title": "昆虫都市 (Stage 4)"
+        },
+        {
+          "kind": "title",
+          "code": "0x08",
+          "title": "砂漠 (Stage 5)"
+        },
+        {
+          "kind": "title",
+          "code": "0x07",
+          "title": "昆虫都市 (Stage 6)"
+        },
+        {
+          "kind": "title",
+          "code": "0x04",
+          "title": "ハイパー・インセクト (Stage 7)"
+        },
+        {
+          "kind": "title",
+          "code": "0x05",
+          "title": "砂漠 (Stage 8)"
+        },
+        {
+          "kind": "title",
+          "code": "0x0a",
+          "title": "産室 (Boss)"
+        },
+        {
+          "kind": "title",
+          "code": "0x0b",
+          "title": "Stage Clear"
+        },
+        {
+          "kind": "title",
+          "code": "0x0f",
+          "title": "終章 (Ending)"
+        },
+        {
+          "kind": "title",
+          "code": "0x0d",
+          "title": "Game Over"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/sps.xml",
+      "source_order": 4228,
+      "archive": "cybrcore68snd",
+      "id": "cybrcore68snd-generic"
+    },
+    {
+      "title": "[X68000] DEATH BRADE",
+      "driver": {
+        "name": "x68k",
+        "type": "generic",
+        "alias": "SPS",
+        "platform": "SHARP X68000"
+      },
+      "options": [
+        {
+          "name": "mfp",
+          "value": "0x01"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "deathbrd68snd.bin",
+          "offset": "0x00000"
+        },
+        {
+          "type": "x",
+          "path": "MUX.X",
+          "offset": "0x10000"
+        },
+        {
+          "type": "code",
+          "path": "bgm1.d",
+          "offset": "0x20000"
+        },
+        {
+          "type": "code",
+          "path": "bgm2.d",
+          "offset": "0x21000"
+        },
+        {
+          "type": "code",
+          "path": "bgm3.d",
+          "offset": "0x22000"
+        },
+        {
+          "type": "code",
+          "path": "bgm4.d",
+          "offset": "0x23000"
+        },
+        {
+          "type": "code",
+          "path": "bgm5.d",
+          "offset": "0x24000"
+        },
+        {
+          "type": "code",
+          "path": "bgm6.d",
+          "offset": "0x25000"
+        },
+        {
+          "type": "code",
+          "path": "bgm7.d",
+          "offset": "0x26000"
+        },
+        {
+          "type": "code",
+          "path": "bgm8.d",
+          "offset": "0x27000"
+        },
+        {
+          "type": "code",
+          "path": "bgm9.d",
+          "offset": "0x28000"
+        },
+        {
+          "type": "code",
+          "path": "bgm10.d",
+          "offset": "0x29000"
+        },
+        {
+          "type": "code",
+          "path": "bgm11.d",
+          "offset": "0x2a000"
+        },
+        {
+          "type": "code",
+          "path": "bgm32.d",
+          "offset": "0x2b000"
+        },
+        {
+          "type": "code",
+          "path": "bgm52.d",
+          "offset": "0x2c000"
+        },
+        {
+          "type": "x",
+          "path": "DBFILE.X",
+          "offset": "0x30000"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x06",
+          "title": "bgm6.d  : 偉大なる選択"
+        },
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "bgm1.d  : 肉体賛歌"
+        },
+        {
+          "kind": "title",
+          "code": "0x02",
+          "title": "bgm2.d  : リングに舞う肉体"
+        },
+        {
+          "kind": "title",
+          "code": "0x03",
+          "title": "bgm3.d  : 自己とのあくなき闘い"
+        },
+        {
+          "kind": "title",
+          "code": "0x04",
+          "title": "bgm4.d  : 超絶死闘"
+        },
+        {
+          "kind": "title",
+          "code": "0x05",
+          "title": "bgm5.d  : 阿鼻叫喚"
+        },
+        {
+          "kind": "title",
+          "code": "0x08",
+          "title": "bgm8.d  : クリア"
+        },
+        {
+          "kind": "title",
+          "code": "0x09",
+          "title": "bgm9.d  : 敗者の叫び"
+        },
+        {
+          "kind": "title",
+          "code": "0x0a",
+          "title": "bgm10.d : 闘いの金字塔"
+        },
+        {
+          "kind": "title",
+          "code": "0x0b",
+          "title": "bgm11.d : 涙と感動の共演者"
+        },
+        {
+          "kind": "title",
+          "code": "0x07",
+          "title": "bgm7.d  : 必殺技"
+        },
+        {
+          "kind": "title",
+          "code": "0x0c",
+          "title": "bgm32.d :"
+        },
+        {
+          "kind": "title",
+          "code": "0x0d",
+          "title": "bgm52.d :"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/sps.xml",
+      "source_order": 4229,
+      "archive": "deathbrd68snd",
+      "id": "deathbrd68snd-generic"
+    },
+    {
+      "title": "[X68000] THE RETURN OF ISHTAR",
+      "driver": {
+        "name": "x68k",
+        "type": "generic",
+        "alias": "SPS",
+        "platform": "SHARP X68000"
+      },
+      "options": [
+        {
+          "name": "mfp",
+          "value": "0x01"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "ishtar68snd.bin",
+          "offset": "0x00000"
+        },
+        {
+          "type": "x",
+          "path": "MUX.X",
+          "offset": "0x10000"
+        },
+        {
+          "type": "code",
+          "path": "SDATA.COM",
+          "offset": "0x20000"
+        },
+        {
+          "type": "code",
+          "path": "IBGM1.COM",
+          "offset": "0x30000"
+        },
+        {
+          "type": "code",
+          "path": "IBGM2.COM",
+          "offset": "0x40000"
+        },
+        {
+          "type": "code",
+          "path": "IBGM3.COM",
+          "offset": "0x50000"
+        },
+        {
+          "type": "code",
+          "path": "IBGM4.COM",
+          "offset": "0x60000"
+        },
+        {
+          "type": "code",
+          "path": "IBGM5.COM",
+          "offset": "0x70000"
+        },
+        {
+          "type": "code",
+          "path": "IBGM6.COM",
+          "offset": "0x80000"
+        },
+        {
+          "type": "code",
+          "path": "ENDING.COM",
+          "offset": "0x90000"
+        },
+        {
+          "type": "code",
+          "path": "GCLR.COM",
+          "offset": "0xa0000"
+        },
+        {
+          "type": "code",
+          "path": "GOVER.COM",
+          "offset": "0xb0000"
+        },
+        {
+          "type": "code",
+          "path": "OPNG.COM",
+          "offset": "0xc0000"
+        },
+        {
+          "type": "code",
+          "path": "RCLR.COM",
+          "offset": "0xd0000"
+        },
+        {
+          "type": "code",
+          "path": "RSTART.COM",
+          "offset": "0xe0000"
+        },
+        {
+          "type": "code",
+          "path": "IPCM01.COM",
+          "offset": "0xf0000"
+        },
+        {
+          "type": "code",
+          "path": "BLOCK01.PCM",
+          "offset": "0x100000"
+        },
+        {
+          "type": "code",
+          "path": "BLOCK02.PCM",
+          "offset": "0x120000"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x080",
+          "title": "IPCM01.COM : CREDIT"
+        },
+        {
+          "kind": "title",
+          "code": "0x941",
+          "title": "OPNG.COM   : OPENING THEME"
+        },
+        {
+          "kind": "title",
+          "code": "0x001",
+          "title": "IBGM1.COM  : MAIN THEME"
+        },
+        {
+          "kind": "title",
+          "code": "0x002",
+          "title": "IBGM1.COM  : MAIN THEME (HURRY UP!)"
+        },
+        {
+          "kind": "title",
+          "code": "0xa41",
+          "title": "RCLR.COM   : ROUND CLEAR"
+        },
+        {
+          "kind": "title",
+          "code": "0xb41",
+          "title": "RSTART.COM : ROUND START"
+        },
+        {
+          "kind": "title",
+          "code": "0x501",
+          "title": "IBGM6.COM  : DRUAGA"
+        },
+        {
+          "kind": "title",
+          "code": "0x502",
+          "title": "IBGM6.COM  : DRUAGA (HURRY UP!)"
+        },
+        {
+          "kind": "title",
+          "code": "0x301",
+          "title": "IBGM4.COM  : QUOX"
+        },
+        {
+          "kind": "title",
+          "code": "0x302",
+          "title": "IBGM4.COM  : QUOX (HURRY UP!)"
+        },
+        {
+          "kind": "title",
+          "code": "0x101",
+          "title": "IBGM2.COM  : ROPER"
+        },
+        {
+          "kind": "title",
+          "code": "0x102",
+          "title": "IBGM2.COM  : ROPER (HURRY UP!)"
+        },
+        {
+          "kind": "title",
+          "code": "0x201",
+          "title": "IBGM3.COM  : SUCCUBUS"
+        },
+        {
+          "kind": "title",
+          "code": "0x202",
+          "title": "IBGM3.COM  : SUCCUBUS (HURRY UP!)"
+        },
+        {
+          "kind": "title",
+          "code": "0x401",
+          "title": "IBGM5.COM  : DRUAGA (ENTRANT HALL)"
+        },
+        {
+          "kind": "title",
+          "code": "0x402",
+          "title": "IBGM5.COM  : DRUAGA (ENTRANT HALL HURRY UP!)"
+        },
+        {
+          "kind": "title",
+          "code": "0x741",
+          "title": "GCLR.COM   : ALL ROUND CLEAR"
+        },
+        {
+          "kind": "title",
+          "code": "0x641",
+          "title": "ENDING.COM : ENDING"
+        },
+        {
+          "kind": "title",
+          "code": "0x841",
+          "title": "GOVER.COM  : GAME OVER"
+        },
+        {
+          "kind": "range",
+          "min": "0x81",
+          "max": "0x97",
+          "title_format": "IPCM01.COM : SE 0x%02X",
+          "extcode": "1"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/sps.xml",
+      "source_order": 4230,
+      "archive": "ishtar68snd",
+      "id": "ishtar68snd-generic"
+    },
+    {
+      "title": "[FM-7] THE RETURN OF ISHTAR",
+      "driver": {
+        "name": "fm77av",
+        "type": "generic",
+        "alias": "SPS",
+        "platform": "FUJITSU FM-7"
+      },
+      "options": [
+        {
+          "name": "init_pc",
+          "value": "0x8000"
+        },
+        {
+          "name": "mdata_addr",
+          "value": "0x1000"
+        },
+        {
+          "name": "mfile_size",
+          "value": "0x4000"
+        },
+        {
+          "name": "mdata_size",
+          "value": "0x4000"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "PATCH.BIN",
+          "offset": "0x8000"
+        },
+        {
+          "type": "code",
+          "path": "MUSIC.P",
+          "offset": "0x5000"
+        },
+        {
+          "type": "code",
+          "path": "ISSD.M",
+          "offset": "0x9000"
+        },
+        {
+          "type": "bgm",
+          "path": "IBGM1.M",
+          "offset": "0x00"
+        },
+        {
+          "type": "bgm",
+          "path": "IBGM2.M",
+          "offset": "0x01"
+        },
+        {
+          "type": "bgm",
+          "path": "IBGM3.M",
+          "offset": "0x02"
+        },
+        {
+          "type": "bgm",
+          "path": "IBGM4.M",
+          "offset": "0x03"
+        },
+        {
+          "type": "bgm",
+          "path": "IBGM5.M",
+          "offset": "0x04"
+        },
+        {
+          "type": "bgm",
+          "path": "IBGM6.M",
+          "offset": "0x05"
+        },
+        {
+          "type": "bgm",
+          "path": "ISED.M",
+          "offset": "0x06"
+        },
+        {
+          "type": "bgm",
+          "path": "ISSD.M",
+          "offset": "0x07"
+        },
+        {
+          "type": "bgm",
+          "path": "MAINGATE",
+          "offset": "0x08"
+        },
+        {
+          "type": "bgm",
+          "path": "MAIN.P",
+          "offset": "0x09"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x0807",
+          "title": "ISSD.M   : CREDIT"
+        },
+        {
+          "kind": "title",
+          "code": "0x0100",
+          "title": "IBGM1.M  : OPENING THEME"
+        },
+        {
+          "kind": "title",
+          "code": "0x0000",
+          "title": "IBGM1.M  : MAIN THEME"
+        },
+        {
+          "kind": "title",
+          "code": "0x0005",
+          "title": "IBGM6.M  : DRUAGA A"
+        },
+        {
+          "kind": "title",
+          "code": "0x0003",
+          "title": "IBGM4.M  : QUOX"
+        },
+        {
+          "kind": "title",
+          "code": "0x0007",
+          "title": "ISSD.M   : ROUND START"
+        },
+        {
+          "kind": "title",
+          "code": "0x0709",
+          "title": "MAIN.P   : ROUND CLEAR"
+        },
+        {
+          "kind": "title",
+          "code": "0x0001",
+          "title": "IBGM2.M  : ROPER"
+        },
+        {
+          "kind": "title",
+          "code": "0x0002",
+          "title": "IBGM3.M  : SUCCUBUS"
+        },
+        {
+          "kind": "title",
+          "code": "0x0004",
+          "title": "IBGM5.M  : DRUAGA B"
+        },
+        {
+          "kind": "title",
+          "code": "0x0306",
+          "title": "ISED.M   : MISS"
+        },
+        {
+          "kind": "title",
+          "code": "0x0406",
+          "title": "ISED.M   : GAME OVER"
+        },
+        {
+          "kind": "title",
+          "code": "0x0508",
+          "title": "MAINGATE : ALL ROUND CLEAR"
+        },
+        {
+          "kind": "title",
+          "code": "0x0608",
+          "title": "MAINGATE : CONGRATULATIONS!"
+        },
+        {
+          "kind": "title",
+          "code": "0x0205",
+          "title": "IBGM6.M  : NAME ENTRY"
+        },
+        {
+          "kind": "title",
+          "code": "0xff00",
+          "title": "ISSD.M   : SE"
+        },
+        {
+          "kind": "title",
+          "code": "0xff01",
+          "title": "ISSD.M   : SE"
+        },
+        {
+          "kind": "title",
+          "code": "0xff02",
+          "title": "ISSD.M   : SE"
+        },
+        {
+          "kind": "title",
+          "code": "0xff03",
+          "title": "ISSD.M   : SE"
+        },
+        {
+          "kind": "title",
+          "code": "0xff04",
+          "title": "ISSD.M   : SE"
+        },
+        {
+          "kind": "title",
+          "code": "0xff05",
+          "title": "ISSD.M   : SE"
+        },
+        {
+          "kind": "title",
+          "code": "0xff06",
+          "title": "ISSD.M   : SE"
+        },
+        {
+          "kind": "title",
+          "code": "0xff07",
+          "title": "ISSD.M   : SE"
+        },
+        {
+          "kind": "title",
+          "code": "0xff08",
+          "title": "ISSD.M   : SE"
+        },
+        {
+          "kind": "title",
+          "code": "0xff09",
+          "title": "ISSD.M   : SE"
+        },
+        {
+          "kind": "title",
+          "code": "0xff0a",
+          "title": "ISSD.M   : SE"
+        },
+        {
+          "kind": "title",
+          "code": "0xff0b",
+          "title": "ISSD.M   : SE"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/sps.xml",
+      "source_order": 4231,
+      "archive": "ishtar_fm7",
+      "id": "ishtar-fm7-generic"
+    },
+    {
+      "title": "[X68000] CUEB RUNNER",
+      "driver": {
+        "name": "x68k",
+        "type": "generic",
+        "alias": "SPS",
+        "platform": "SHARP X68000"
+      },
+      "options": [
+        {
+          "name": "mfp",
+          "value": "0x01"
+        },
+        {
+          "name": "opm_mix",
+          "value": "0x100"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "cr68snd.bin"
+        },
+        {
+          "type": "x",
+          "path": "CB.X",
+          "offset": "0x010000"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x0c",
+          "title": "COIN"
+        },
+        {
+          "kind": "title",
+          "code": "0x87",
+          "title": "MODE SELECT"
+        },
+        {
+          "kind": "title",
+          "code": "0x80",
+          "title": "DEMO"
+        },
+        {
+          "kind": "title",
+          "code": "0x88",
+          "title": "BGM 1"
+        },
+        {
+          "kind": "title",
+          "code": "0x89",
+          "title": "STAGE CLEAR"
+        },
+        {
+          "kind": "title",
+          "code": "0x8f",
+          "title": "MOAI's DEMO"
+        },
+        {
+          "kind": "title",
+          "code": "0x81",
+          "title": "BGM 2"
+        },
+        {
+          "kind": "title",
+          "code": "0x8c",
+          "title": "BGM 3"
+        },
+        {
+          "kind": "title",
+          "code": "0x8d",
+          "title": "BGM 4"
+        },
+        {
+          "kind": "title",
+          "code": "0x8e",
+          "title": "BGM 5"
+        },
+        {
+          "kind": "title",
+          "code": "0x8b",
+          "title": "ENDING"
+        },
+        {
+          "kind": "title",
+          "code": "0x86",
+          "title": "PASSWORD"
+        },
+        {
+          "kind": "title",
+          "code": "0x85",
+          "title": "GAME OVER"
+        },
+        {
+          "kind": "range",
+          "min": "0x01",
+          "max": "0x17",
+          "title_format": "SE 0x%02x",
+          "extcode": "1"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/sps.xml",
+      "source_order": 4232,
+      "archive": "cr68snd",
+      "id": "cr68snd-generic"
+    },
+    {
+      "title": "[X68000] WORLD COURT",
+      "driver": {
+        "name": "x68k",
+        "type": "generic",
+        "alias": "SPS",
+        "platform": "SHARP X68000"
+      },
+      "options": [
+        {
+          "name": "mfp",
+          "value": "0x01"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "wcourt68snd.bin",
+          "offset": "0x000000"
+        },
+        {
+          "type": "x",
+          "path": "M2.X",
+          "offset": "0x010000"
+        },
+        {
+          "type": "x",
+          "path": "SEQ2.X",
+          "offset": "0x012000"
+        },
+        {
+          "type": "x",
+          "path": "OPM2WC.X",
+          "offset": "0x014000"
+        },
+        {
+          "type": "x",
+          "path": "WC.X",
+          "offset": "0x018000"
+        },
+        {
+          "type": "code",
+          "path": "MUSIC.WC",
+          "offset": "0x07e000"
+        },
+        {
+          "type": "code",
+          "path": "ADPCM.WC",
+          "offset": "0x084000"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "100",
+          "title": "SELECT"
+        },
+        {
+          "kind": "title",
+          "code": "103",
+          "title": "START"
+        },
+        {
+          "kind": "title",
+          "code": "105",
+          "title": "NEWYORK HARD COURT"
+        },
+        {
+          "kind": "title",
+          "code": "106",
+          "title": "LONDON LAWN COURT"
+        },
+        {
+          "kind": "title",
+          "code": "104",
+          "title": "PARIS CLAY COURT"
+        },
+        {
+          "kind": "title",
+          "code": "102",
+          "title": "PLAY END"
+        },
+        {
+          "kind": "title",
+          "code": "101",
+          "title": "???"
+        },
+        {
+          "kind": "title",
+          "code": "217",
+          "title": "VOICE:love (pre)"
+        },
+        {
+          "kind": "title",
+          "code": "218",
+          "title": "VOICE:15 (pre)"
+        },
+        {
+          "kind": "title",
+          "code": "219",
+          "title": "VOICE:30 (pre)"
+        },
+        {
+          "kind": "title",
+          "code": "220",
+          "title": "VOICE:40 (pre)"
+        },
+        {
+          "kind": "title",
+          "code": "221",
+          "title": "VOICE:love (post)"
+        },
+        {
+          "kind": "title",
+          "code": "222",
+          "title": "VOICE:15 (post)"
+        },
+        {
+          "kind": "title",
+          "code": "223",
+          "title": "VOICE:30 (post)"
+        },
+        {
+          "kind": "title",
+          "code": "224",
+          "title": "VOICE:40 (post)"
+        },
+        {
+          "kind": "title",
+          "code": "225",
+          "title": "VOICE:change"
+        },
+        {
+          "kind": "title",
+          "code": "226",
+          "title": "VOICE:serve"
+        },
+        {
+          "kind": "title",
+          "code": "227",
+          "title": "VOICE:court"
+        },
+        {
+          "kind": "title",
+          "code": "228",
+          "title": "VOICE:first serve"
+        },
+        {
+          "kind": "title",
+          "code": "229",
+          "title": "VOICE:second serve"
+        },
+        {
+          "kind": "title",
+          "code": "230",
+          "title": "VOICE:receiver"
+        },
+        {
+          "kind": "title",
+          "code": "231",
+          "title": "VOICE:server"
+        },
+        {
+          "kind": "title",
+          "code": "232",
+          "title": "VOICE:tiebreak"
+        },
+        {
+          "kind": "title",
+          "code": "233",
+          "title": "VOICE:all"
+        },
+        {
+          "kind": "title",
+          "code": "234",
+          "title": "VOICE:deuce"
+        },
+        {
+          "kind": "title",
+          "code": "235",
+          "title": "VOICE:advantage"
+        },
+        {
+          "kind": "title",
+          "code": "236",
+          "title": "VOICE:let"
+        },
+        {
+          "kind": "title",
+          "code": "237",
+          "title": "VOICE:out"
+        },
+        {
+          "kind": "title",
+          "code": "238",
+          "title": "VOICE:fault"
+        },
+        {
+          "kind": "title",
+          "code": "239",
+          "title": "VOICE:double fault"
+        },
+        {
+          "kind": "title",
+          "code": "240",
+          "title": "VOICE:tie"
+        },
+        {
+          "kind": "title",
+          "code": "241",
+          "title": "VOICE:play"
+        },
+        {
+          "kind": "title",
+          "code": "242",
+          "title": "VOICE:game"
+        },
+        {
+          "kind": "title",
+          "code": "243",
+          "title": "VOICE:game, set, and match"
+        },
+        {
+          "kind": "title",
+          "code": "244",
+          "title": "VOICE:歓声 1"
+        },
+        {
+          "kind": "title",
+          "code": "245",
+          "title": "VOICE:歓声 2"
+        },
+        {
+          "kind": "title",
+          "code": "246",
+          "title": "VOICE:歓声 3"
+        },
+        {
+          "kind": "range",
+          "min": "200",
+          "max": "216",
+          "title_format": "SE %03d",
+          "extcode": "1"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/sps.xml",
+      "source_order": 4233,
+      "archive": "wcourt68snd",
+      "id": "wcourt68snd-generic"
+    },
+    {
+      "title": "[X68000] MARCHEN MAZE",
+      "driver": {
+        "name": "x68k",
+        "type": "generic",
+        "alias": "SPS",
+        "platform": "SHARP X68000"
+      },
+      "options": [
+        {
+          "name": "mfp",
+          "value": "0x01"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "marchenm68snd.bin",
+          "offset": "0x000000"
+        },
+        {
+          "type": "x",
+          "path": "M2.X",
+          "offset": "0x010000"
+        },
+        {
+          "type": "x",
+          "path": "SEQMM.X",
+          "offset": "0x012000"
+        },
+        {
+          "type": "x",
+          "path": "OPMMM.X",
+          "offset": "0x020000"
+        },
+        {
+          "type": "x",
+          "path": "MHM.X",
+          "offset": "0x028000"
+        },
+        {
+          "type": "code",
+          "path": "ADPCM.MM",
+          "offset": "0x084000"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "133",
+          "title": "ROUND1 おかしの国"
+        },
+        {
+          "kind": "title",
+          "code": "134",
+          "title": "ROUND2 おもちゃの国"
+        },
+        {
+          "kind": "title",
+          "code": "135",
+          "title": "ROUND3 つみきの国"
+        },
+        {
+          "kind": "title",
+          "code": "136",
+          "title": "ROUND4 きかいの国"
+        },
+        {
+          "kind": "title",
+          "code": "137",
+          "title": "ROUND5 そらの国"
+        },
+        {
+          "kind": "title",
+          "code": "138",
+          "title": "ROUND6 びっくりの国"
+        },
+        {
+          "kind": "title",
+          "code": "139",
+          "title": "ROUND7 むしの国"
+        },
+        {
+          "kind": "title",
+          "code": "140",
+          "title": "ROUND8 へいたいの国"
+        },
+        {
+          "kind": "title",
+          "code": "141",
+          "title": "ROUND9 女王の国"
+        },
+        {
+          "kind": "title",
+          "code": "142",
+          "title": "BOSS"
+        },
+        {
+          "kind": "title",
+          "code": "143",
+          "title": "LAST BOSS"
+        },
+        {
+          "kind": "title",
+          "code": "144",
+          "title": "OPENING"
+        },
+        {
+          "kind": "title",
+          "code": "145",
+          "title": "ENDING"
+        },
+        {
+          "kind": "title",
+          "code": "146",
+          "title": "MISS"
+        },
+        {
+          "kind": "title",
+          "code": "147",
+          "title": "ROUND CLEAR"
+        },
+        {
+          "kind": "title",
+          "code": "148",
+          "title": "ROUND START"
+        },
+        {
+          "kind": "title",
+          "code": "149",
+          "title": "CONTINUE"
+        },
+        {
+          "kind": "title",
+          "code": "150",
+          "title": "THANKS YOU!"
+        },
+        {
+          "kind": "title",
+          "code": "151",
+          "title": "NAME ENTRY"
+        },
+        {
+          "kind": "comment",
+          "text": "\n\t\t\t<title code=\"100\">ROUND1</title>\n\t\t\t<title code=\"101\">ROUND2 partA</title>\n\t\t\t<title code=\"102\">ROUND2 partB</title>\n\t\t\t<title code=\"103\">ROUND3</title>\n\t\t\t<title code=\"104\">ROUND4 partA</title>\n\t\t\t<title code=\"105\">ROUND4 partB</title>\n\t\t\t<title code=\"106\">ROUND4 partC</title>\n\t\t\t<title code=\"107\">ROUND5</title>\n\t\t\t<title code=\"108\">ROUND6</title>\n\t\t\t<title code=\"109\">ROUND7 partA</title>\n\t\t\t<title code=\"110\">ROUND7 partB</title>\n\t\t\t<title code=\"111\">ROUND8</title>\n\t\t\t<title code=\"112\">ROUND9 partA</title>\n\t\t\t<title code=\"113\">ROUND9 partB</title>\n\t\t\t<title code=\"114\">BOSS partA</title>\n\t\t\t<title code=\"115\">BOSS partB</title>\n\t\t\t<title code=\"116\">BOSS partC</title>\n\t\t\t<title code=\"117\">LAST BOSS partA</title>\n\t\t\t<title code=\"118\">LAST BOSS partB</title>\n\t\t\t<title code=\"119\">LAST BOSS partC</title>\n\t\t\t<title code=\"120\">OPENING partA</title>\n\t\t\t<title code=\"121\">OPENING partB</title>\n\t\t\t<title code=\"122\">MISS</title>\n\t\t\t<title code=\"123\">ROUND CLEAR</title>\n\t\t\t<title code=\"124\">CONTINUE</title>\n\t\t\t<title code=\"125\">THANKS YOU!</title>\n\t\t\t<title code=\"126\">NAME ENTRY</title>\n\t\t\t<title code=\"127\">ENDING</title>\n\t\t\t<title code=\"128\">ROUND START</title>\n\t\t\t<title code=\"152\">BOSS partB,C</title>\n\t\t\t<title code=\"153\">LAST BOSS partB,C</title>\n\t\t\t<title code=\"154\">OPENING partB</title>\n\t\t"
+        },
+        {
+          "kind": "range",
+          "min": "200",
+          "max": "207",
+          "title_format": "SE %03d",
+          "extcode": "1"
+        },
+        {
+          "kind": "range",
+          "min": "210",
+          "max": "217",
+          "title_format": "SE %03d",
+          "extcode": "1"
+        },
+        {
+          "kind": "range",
+          "min": "219",
+          "max": "224",
+          "title_format": "SE %03d",
+          "extcode": "1"
+        },
+        {
+          "kind": "range",
+          "min": "230",
+          "max": "239",
+          "title_format": "SE %03d",
+          "extcode": "1"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/sps.xml",
+      "source_order": 4234,
+      "archive": "marchenm68snd",
+      "id": "marchenm68snd-generic"
+    },
+    {
+      "title": "[FM-7] Re Birth(OPN)",
+      "driver": {
+        "name": "fm77av",
+        "type": "generic",
+        "alias": "SPS",
+        "platform": "FUJITSU FM-7"
+      },
+      "options": [
+        {
+          "name": "init_pc",
+          "value": "0x4000"
+        },
+        {
+          "name": "mdata_addr",
+          "value": "0x6500"
+        },
+        {
+          "name": "mdata_size",
+          "value": "0x1000"
+        },
+        {
+          "name": "mfile_size",
+          "value": "0x1000"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "SAMPLEF.COM",
+          "offset": "0x0000"
+        },
+        {
+          "type": "code",
+          "path": "PATCH.BIN",
+          "offset": "0x4000"
+        },
+        {
+          "type": "bgm",
+          "path": "PROLOG.COM",
+          "offset": "0x00"
+        },
+        {
+          "type": "bgm",
+          "path": "BEPSUB.COM",
+          "offset": "0x01"
+        },
+        {
+          "type": "bgm",
+          "path": "EPILOG.COM",
+          "offset": "0x02"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x00",
+          "title": "Prologue"
+        },
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "BGM"
+        },
+        {
+          "kind": "title",
+          "code": "0x02",
+          "title": "Epilogue"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/sps.xml",
+      "source_order": 4235,
+      "archive": "rebirth_fm7",
+      "id": "rebirth-fm7-generic"
+    },
+    {
+      "title": "[FM-7] Re Birth(PSG)",
+      "driver": {
+        "name": "fm7",
+        "type": "generic",
+        "alias": "SPS",
+        "platform": "FUJITSU FM-7"
+      },
+      "options": [
+        {
+          "name": "init_pc",
+          "value": "0x4000"
+        },
+        {
+          "name": "mdata_addr",
+          "value": "0x6500"
+        },
+        {
+          "name": "mdata_size",
+          "value": "0x1000"
+        },
+        {
+          "name": "mfile_size",
+          "value": "0x1000"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "SAMPLEF.COM",
+          "offset": "0x0000"
+        },
+        {
+          "type": "code",
+          "path": "PATCH.BIN",
+          "offset": "0x4000"
+        },
+        {
+          "type": "bgm",
+          "path": "PROLOG.COM",
+          "offset": "0x00"
+        },
+        {
+          "type": "bgm",
+          "path": "BEPSUB.COM",
+          "offset": "0x01"
+        },
+        {
+          "type": "bgm",
+          "path": "EPILOG.COM",
+          "offset": "0x02"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x00",
+          "title": "Prologue"
+        },
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "BGM"
+        },
+        {
+          "kind": "title",
+          "code": "0x02",
+          "title": "Epilogue"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/sps.xml",
+      "source_order": 4236,
+      "archive": "rebirth_fm7",
+      "id": "rebirth-fm7-generic-2"
+    }
+  ]
+}

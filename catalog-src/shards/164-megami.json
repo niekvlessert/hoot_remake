@@ -1,0 +1,125 @@
+{
+  "format": "hoot-catalog-shard",
+  "version": 1,
+  "source_file": "xml/megami.xml",
+  "date": "2005/09/25",
+  "comments": [
+    " //megami "
+  ],
+  "games": [
+    {
+      "title": "[PC-9801] 夢現 Dreamy",
+      "driver": {
+        "name": "pc98dos",
+        "type": "opn",
+        "alias": "megami",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "clockmul",
+          "value": "8"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "MDRV98.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MDRV98P.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MUON.MDT",
+          "offset": "0x01"
+        },
+        {
+          "type": "file",
+          "path": "MEGAMI01.MDT",
+          "offset": "0x02"
+        },
+        {
+          "type": "file",
+          "path": "MEGAMI02.MDT",
+          "offset": "0x03"
+        },
+        {
+          "type": "file",
+          "path": "MEGAMI03.MDT",
+          "offset": "0x04"
+        },
+        {
+          "type": "file",
+          "path": "MEGAMI04.MDT",
+          "offset": "0x05"
+        },
+        {
+          "type": "file",
+          "path": "MEGAMI05.MDT",
+          "offset": "0x06"
+        },
+        {
+          "type": "file",
+          "path": "MEGAMI06.MDT",
+          "offset": "0x07"
+        },
+        {
+          "type": "shell",
+          "path": "MDRV98",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "MDRV98P",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "[STOP]"
+        },
+        {
+          "kind": "title",
+          "code": "0x02",
+          "title": "MEGAMI01.MDT"
+        },
+        {
+          "kind": "title",
+          "code": "0x03",
+          "title": "MEGAMI02.MDT"
+        },
+        {
+          "kind": "title",
+          "code": "0x04",
+          "title": "MEGAMI03.MDT"
+        },
+        {
+          "kind": "title",
+          "code": "0x05",
+          "title": "MEGAMI04.MDT"
+        },
+        {
+          "kind": "title",
+          "code": "0x06",
+          "title": "MEGAMI05.MDT"
+        },
+        {
+          "kind": "title",
+          "code": "0x07",
+          "title": "MEGAMI06.MDT"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/megami.xml",
+      "source_order": 3161,
+      "archive": "yumeut_98",
+      "id": "yumeut-98-opn"
+    }
+  ]
+}

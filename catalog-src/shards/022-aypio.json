@@ -1,0 +1,4320 @@
+{
+  "format": "hoot-catalog-shard",
+  "version": 1,
+  "source_file": "xml/aypio.xml",
+  "date": "2005/09/25",
+  "comments": [
+    " //アーヴォリオ/Aypio "
+  ],
+  "games": [
+    {
+      "title": "[PC-9801] Concert(OPN)",
+      "driver": {
+        "name": "pc98dos",
+        "type": "opn",
+        "alias": "Aypio",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "clockmul",
+          "value": "12"
+        },
+        {
+          "name": "ssg_mix",
+          "value": "-18"
+        },
+        {
+          "name": "wstimer",
+          "value": "1"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "NAX.com",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "NLP_HOOT.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "SSGPCM.DTA",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "SSGPCM.TBL",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "A_LITTLE.FMM",
+          "offset": "0x10"
+        },
+        {
+          "type": "file",
+          "path": "BASS_RUN.FMM",
+          "offset": "0x11"
+        },
+        {
+          "type": "file",
+          "path": "CAN'T_SA.FMM",
+          "offset": "0x12"
+        },
+        {
+          "type": "file",
+          "path": "CAN2.FMM",
+          "offset": "0x13"
+        },
+        {
+          "type": "file",
+          "path": "COUNTRY.FMM",
+          "offset": "0x14"
+        },
+        {
+          "type": "file",
+          "path": "DARKNESS.FMM",
+          "offset": "0x15"
+        },
+        {
+          "type": "file",
+          "path": "DRUM.FMM",
+          "offset": "0x16"
+        },
+        {
+          "type": "file",
+          "path": "FLOWER.FMM",
+          "offset": "0x17"
+        },
+        {
+          "type": "file",
+          "path": "FRIENDSH.FMM",
+          "offset": "0x18"
+        },
+        {
+          "type": "file",
+          "path": "HEADAKE.FMM",
+          "offset": "0x19"
+        },
+        {
+          "type": "file",
+          "path": "HP_BATT.FMM",
+          "offset": "0x1A"
+        },
+        {
+          "type": "file",
+          "path": "HP_TEME.FMM",
+          "offset": "0x1B"
+        },
+        {
+          "type": "file",
+          "path": "MOONLIGH.FMM",
+          "offset": "0x1C"
+        },
+        {
+          "type": "file",
+          "path": "PUSSION.FMM",
+          "offset": "0x1D"
+        },
+        {
+          "type": "file",
+          "path": "REGGAE.FMM",
+          "offset": "0x1E"
+        },
+        {
+          "type": "file",
+          "path": "ROCK'N'R.FMM",
+          "offset": "0x1F"
+        },
+        {
+          "type": "file",
+          "path": "SAY_YEAH.FMM",
+          "offset": "0x20"
+        },
+        {
+          "type": "file",
+          "path": "VOOGIE.FMM",
+          "offset": "0x21"
+        },
+        {
+          "type": "file",
+          "path": "WHAT_ARE.FMM",
+          "offset": "0x22"
+        },
+        {
+          "type": "shell",
+          "path": "NAX -b80 -q -t",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "NLP_HOOT",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "A_LITTLE.FMM"
+        },
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "BASS_RUN.FMM"
+        },
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "CAN'T_SA.FMM"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "CAN2.FMM"
+        },
+        {
+          "kind": "title",
+          "code": "0x14",
+          "title": "COUNTRY.FMM"
+        },
+        {
+          "kind": "title",
+          "code": "0x15",
+          "title": "DARKNESS.FMM"
+        },
+        {
+          "kind": "title",
+          "code": "0x16",
+          "title": "DRUM.FMM"
+        },
+        {
+          "kind": "title",
+          "code": "0x17",
+          "title": "FLOWER.FMM"
+        },
+        {
+          "kind": "title",
+          "code": "0x18",
+          "title": "FRIENDSH.FMM"
+        },
+        {
+          "kind": "title",
+          "code": "0x19",
+          "title": "HEADAKE.FMM"
+        },
+        {
+          "kind": "title",
+          "code": "0x1A",
+          "title": "HP_BATT.FMM"
+        },
+        {
+          "kind": "title",
+          "code": "0x1B",
+          "title": "HP_TEME.FMM"
+        },
+        {
+          "kind": "title",
+          "code": "0x1C",
+          "title": "MOONLIGH.FMM"
+        },
+        {
+          "kind": "title",
+          "code": "0x1D",
+          "title": "PUSSION.FMM"
+        },
+        {
+          "kind": "title",
+          "code": "0x1E",
+          "title": "REGGAE.FMM"
+        },
+        {
+          "kind": "title",
+          "code": "0x1F",
+          "title": "ROCK'N'R.FMM"
+        },
+        {
+          "kind": "title",
+          "code": "0x20",
+          "title": "SAY_YEAH.FMM"
+        },
+        {
+          "kind": "title",
+          "code": "0x21",
+          "title": "VOOGIE.FMM"
+        },
+        {
+          "kind": "title",
+          "code": "0x22",
+          "title": "WHAT_ARE.FMM"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/aypio.xml",
+      "source_order": 391,
+      "archive": "concert_98",
+      "id": "concert-98-opn"
+    },
+    {
+      "title": "[PC-9801] Concert(OPNA)",
+      "driver": {
+        "name": "pc98dos",
+        "type": "opna",
+        "alias": "Aypio",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "clockmul",
+          "value": "12"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "NAX.com",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "NLP_HOOT.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "SSGPCM.DTA",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "SSGPCM.TBL",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "A_LITTLE.SPB",
+          "offset": "0x10"
+        },
+        {
+          "type": "file",
+          "path": "BASS_RUN.SPB",
+          "offset": "0x11"
+        },
+        {
+          "type": "file",
+          "path": "CAN'T_SA.SPB",
+          "offset": "0x12"
+        },
+        {
+          "type": "file",
+          "path": "CAN2.SPB",
+          "offset": "0x13"
+        },
+        {
+          "type": "file",
+          "path": "COUNTRY.SPB",
+          "offset": "0x14"
+        },
+        {
+          "type": "file",
+          "path": "DARKNESS.SPB",
+          "offset": "0x15"
+        },
+        {
+          "type": "file",
+          "path": "DRUM.SPB",
+          "offset": "0x16"
+        },
+        {
+          "type": "file",
+          "path": "FLOWER.SPB",
+          "offset": "0x17"
+        },
+        {
+          "type": "file",
+          "path": "FRIENDSH.SPB",
+          "offset": "0x18"
+        },
+        {
+          "type": "file",
+          "path": "HEADAKE.SPB",
+          "offset": "0x19"
+        },
+        {
+          "type": "file",
+          "path": "HP_BATT.SPB",
+          "offset": "0x1A"
+        },
+        {
+          "type": "file",
+          "path": "HP_TEME.SPB",
+          "offset": "0x1B"
+        },
+        {
+          "type": "file",
+          "path": "MOONLIGH.SPB",
+          "offset": "0x1C"
+        },
+        {
+          "type": "file",
+          "path": "PUSSION.SPB",
+          "offset": "0x1D"
+        },
+        {
+          "type": "file",
+          "path": "REGGAE.SPB",
+          "offset": "0x1E"
+        },
+        {
+          "type": "file",
+          "path": "ROCK'N'R.SPB",
+          "offset": "0x1F"
+        },
+        {
+          "type": "file",
+          "path": "SAY_YEAH.SPB",
+          "offset": "0x20"
+        },
+        {
+          "type": "file",
+          "path": "VOOGIE.SPB",
+          "offset": "0x21"
+        },
+        {
+          "type": "file",
+          "path": "WHAT_ARE.SPB",
+          "offset": "0x22"
+        },
+        {
+          "type": "shell",
+          "path": "NAX -b80 -q -t",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "NLP_HOOT",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "A_LITTLE.SPB"
+        },
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "BASS_RUN.SPB"
+        },
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "CAN'T_SA.SPB"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "CAN2.SPB"
+        },
+        {
+          "kind": "title",
+          "code": "0x14",
+          "title": "COUNTRY.SPB"
+        },
+        {
+          "kind": "title",
+          "code": "0x15",
+          "title": "DARKNESS.SPB"
+        },
+        {
+          "kind": "title",
+          "code": "0x16",
+          "title": "DRUM.SPB"
+        },
+        {
+          "kind": "title",
+          "code": "0x17",
+          "title": "FLOWER.SPB"
+        },
+        {
+          "kind": "title",
+          "code": "0x18",
+          "title": "FRIENDSH.SPB"
+        },
+        {
+          "kind": "title",
+          "code": "0x19",
+          "title": "HEADAKE.SPB"
+        },
+        {
+          "kind": "title",
+          "code": "0x1A",
+          "title": "HP_BATT.SPB"
+        },
+        {
+          "kind": "title",
+          "code": "0x1B",
+          "title": "HP_TEME.SPB"
+        },
+        {
+          "kind": "title",
+          "code": "0x1C",
+          "title": "MOONLIGH.SPB"
+        },
+        {
+          "kind": "title",
+          "code": "0x1D",
+          "title": "PUSSION.SPB"
+        },
+        {
+          "kind": "title",
+          "code": "0x1E",
+          "title": "REGGAE.SPB"
+        },
+        {
+          "kind": "title",
+          "code": "0x1F",
+          "title": "ROCK'N'R.SPB"
+        },
+        {
+          "kind": "title",
+          "code": "0x20",
+          "title": "SAY_YEAH.SPB"
+        },
+        {
+          "kind": "title",
+          "code": "0x21",
+          "title": "VOOGIE.SPB"
+        },
+        {
+          "kind": "title",
+          "code": "0x22",
+          "title": "WHAT_ARE.SPB"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/aypio.xml",
+      "source_order": 392,
+      "archive": "concert_98",
+      "id": "concert-98-opna"
+    },
+    {
+      "title": "[PC-9801] SEX",
+      "driver": {
+        "name": "pc98dos",
+        "type": "opn",
+        "alias": "Aypio",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "clockmul",
+          "value": "8"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "NAX.com",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "NLP_HOOT.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "ｶﾗ.FMM",
+          "offset": "0x10"
+        },
+        {
+          "type": "file",
+          "path": "SUNRISE.FMM",
+          "offset": "0x11"
+        },
+        {
+          "type": "file",
+          "path": "MUSIC_OP.FMM",
+          "offset": "0x12"
+        },
+        {
+          "type": "file",
+          "path": "MUSIC_01.FMM",
+          "offset": "0x13"
+        },
+        {
+          "type": "file",
+          "path": "MUSIC_02.FMM",
+          "offset": "0x14"
+        },
+        {
+          "type": "file",
+          "path": "MUSIC_03.FMM",
+          "offset": "0x15"
+        },
+        {
+          "type": "file",
+          "path": "MUSIC_04.FMM",
+          "offset": "0x16"
+        },
+        {
+          "type": "file",
+          "path": "MUSIC_ED.FMM",
+          "offset": "0x17"
+        },
+        {
+          "type": "shell",
+          "path": "NAX",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "NLP_HOOT",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "[STOP]"
+        },
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "SUNRISE.FMM"
+        },
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "MUSIC_OP.FMM"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "MUSIC_01.FMM"
+        },
+        {
+          "kind": "title",
+          "code": "0x14",
+          "title": "MUSIC_02.FMM"
+        },
+        {
+          "kind": "title",
+          "code": "0x15",
+          "title": "MUSIC_03.FMM"
+        },
+        {
+          "kind": "title",
+          "code": "0x16",
+          "title": "MUSIC_04.FMM"
+        },
+        {
+          "kind": "title",
+          "code": "0x17",
+          "title": "MUSIC_ED.FMM"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/aypio.xml",
+      "source_order": 393,
+      "archive": "sex_98",
+      "id": "sex-98-opn"
+    },
+    {
+      "title": "[PC-9801] SEX2(OPN)",
+      "driver": {
+        "name": "pc98dos",
+        "type": "opn",
+        "alias": "Aypio",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "funcvect",
+          "value": "0x7e"
+        },
+        {
+          "name": "clockmul",
+          "value": "8"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "PMD_98.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "PMD.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "S2.EFC",
+          "offset": "0x08"
+        },
+        {
+          "type": "file",
+          "path": "S2_1.MMM",
+          "offset": "0x10"
+        },
+        {
+          "type": "file",
+          "path": "S2_2.MMM",
+          "offset": "0x11"
+        },
+        {
+          "type": "file",
+          "path": "S2_3.MMM",
+          "offset": "0x12"
+        },
+        {
+          "type": "file",
+          "path": "S2_4.MMM",
+          "offset": "0x13"
+        },
+        {
+          "type": "file",
+          "path": "S2_5.MMM",
+          "offset": "0x14"
+        },
+        {
+          "type": "file",
+          "path": "S2_6.MMM",
+          "offset": "0x15"
+        },
+        {
+          "type": "file",
+          "path": "S2_7.MMM",
+          "offset": "0x16"
+        },
+        {
+          "type": "file",
+          "path": "S2_8.MMM",
+          "offset": "0x17"
+        },
+        {
+          "type": "file",
+          "path": "S2_9.MMM",
+          "offset": "0x18"
+        },
+        {
+          "type": "file",
+          "path": "S2_10.MMM",
+          "offset": "0x19"
+        },
+        {
+          "type": "file",
+          "path": "S2_11.MMM",
+          "offset": "0x1A"
+        },
+        {
+          "type": "file",
+          "path": "S2_12.MMM",
+          "offset": "0x1B"
+        },
+        {
+          "type": "file",
+          "path": "S2_13.MMM",
+          "offset": "0x1C"
+        },
+        {
+          "type": "file",
+          "path": "S2_14.MMM",
+          "offset": "0x1D"
+        },
+        {
+          "type": "shell",
+          "path": "pmd # /m10 /v0 /e2 /k",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "pmd_98",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "S2_1.MMM  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "S2_2.MMM  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "S2_3.MMM  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "S2_4.MMM  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x14",
+          "title": "S2_5.MMM  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x15",
+          "title": "S2_6.MMM  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x16",
+          "title": "S2_7.MMM  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x17",
+          "title": "S2_8.MMM  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x18",
+          "title": "S2_9.MMM  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x19",
+          "title": "S2_10.MMM :"
+        },
+        {
+          "kind": "title",
+          "code": "0x1A",
+          "title": "S2_11.MMM :"
+        },
+        {
+          "kind": "title",
+          "code": "0x1B",
+          "title": "S2_12.MMM :"
+        },
+        {
+          "kind": "title",
+          "code": "0x1C",
+          "title": "S2_13.MMM :"
+        },
+        {
+          "kind": "title",
+          "code": "0x1D",
+          "title": "S2_14.MMM :"
+        },
+        {
+          "kind": "range",
+          "min": "0x0801",
+          "max": "0x0805",
+          "title_format": "S2.EFC    : %02X",
+          "extcode": "0"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/aypio.xml",
+      "source_order": 394,
+      "archive": "sex2_98",
+      "id": "sex2-98-opn"
+    },
+    {
+      "title": "[PC-9801] SEX2(OPNA)",
+      "driver": {
+        "name": "pc98dos",
+        "type": "opna",
+        "alias": "Aypio",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "funcvect",
+          "value": "0x7e"
+        },
+        {
+          "name": "clockmul",
+          "value": "8"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "PMD_98.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "PMDB2.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "S2.EFC",
+          "offset": "0x08"
+        },
+        {
+          "type": "file",
+          "path": "S2_1.MMM",
+          "offset": "0x10"
+        },
+        {
+          "type": "file",
+          "path": "S2_2.MMM",
+          "offset": "0x11"
+        },
+        {
+          "type": "file",
+          "path": "S2_3.MMM",
+          "offset": "0x12"
+        },
+        {
+          "type": "file",
+          "path": "S2_4.MMM",
+          "offset": "0x13"
+        },
+        {
+          "type": "file",
+          "path": "S2_5.MMM",
+          "offset": "0x14"
+        },
+        {
+          "type": "file",
+          "path": "S2_6.MMM",
+          "offset": "0x15"
+        },
+        {
+          "type": "file",
+          "path": "S2_7.MMM",
+          "offset": "0x16"
+        },
+        {
+          "type": "file",
+          "path": "S2_8.MMM",
+          "offset": "0x17"
+        },
+        {
+          "type": "file",
+          "path": "S2_9.MMM",
+          "offset": "0x18"
+        },
+        {
+          "type": "file",
+          "path": "S2_10.MMM",
+          "offset": "0x19"
+        },
+        {
+          "type": "file",
+          "path": "S2_11.MMM",
+          "offset": "0x1A"
+        },
+        {
+          "type": "file",
+          "path": "S2_12.MMM",
+          "offset": "0x1B"
+        },
+        {
+          "type": "file",
+          "path": "S2_13.MMM",
+          "offset": "0x1C"
+        },
+        {
+          "type": "file",
+          "path": "S2_14.MMM",
+          "offset": "0x1D"
+        },
+        {
+          "type": "shell",
+          "path": "PMDB2 # /m10 /v0 /e2 /k",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "pmd_98",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "S2_1.MMM  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "S2_2.MMM  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "S2_3.MMM  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "S2_4.MMM  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x14",
+          "title": "S2_5.MMM  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x15",
+          "title": "S2_6.MMM  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x16",
+          "title": "S2_7.MMM  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x17",
+          "title": "S2_8.MMM  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x18",
+          "title": "S2_9.MMM  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x19",
+          "title": "S2_10.MMM :"
+        },
+        {
+          "kind": "title",
+          "code": "0x1A",
+          "title": "S2_11.MMM :"
+        },
+        {
+          "kind": "title",
+          "code": "0x1B",
+          "title": "S2_12.MMM :"
+        },
+        {
+          "kind": "title",
+          "code": "0x1C",
+          "title": "S2_13.MMM :"
+        },
+        {
+          "kind": "title",
+          "code": "0x1D",
+          "title": "S2_14.MMM :"
+        },
+        {
+          "kind": "range",
+          "min": "0x0801",
+          "max": "0x0805",
+          "title_format": "S2.EFC    : %02X",
+          "extcode": "0"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/aypio.xml",
+      "source_order": 395,
+      "archive": "sex2_98",
+      "id": "sex2-98-opna"
+    },
+    {
+      "title": "[PC-9801] SEX2(GS)",
+      "driver": {
+        "name": "pc98dos",
+        "type": "beep",
+        "alias": "Aypio",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "clockmul",
+          "value": "8"
+        },
+        {
+          "name": "midiout",
+          "value": "1"
+        },
+        {
+          "name": "midiout_type",
+          "value": "4"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "MMD.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MMP_HOOT.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "S2_1.MMD",
+          "offset": "0x10"
+        },
+        {
+          "type": "file",
+          "path": "S2_2.MMD",
+          "offset": "0x11"
+        },
+        {
+          "type": "file",
+          "path": "S2_3.MMD",
+          "offset": "0x12"
+        },
+        {
+          "type": "file",
+          "path": "S2_4.MMD",
+          "offset": "0x13"
+        },
+        {
+          "type": "file",
+          "path": "S2_5.MMD",
+          "offset": "0x14"
+        },
+        {
+          "type": "file",
+          "path": "S2_6.MMD",
+          "offset": "0x15"
+        },
+        {
+          "type": "file",
+          "path": "S2_7.MMD",
+          "offset": "0x16"
+        },
+        {
+          "type": "file",
+          "path": "S2_8.MMD",
+          "offset": "0x17"
+        },
+        {
+          "type": "file",
+          "path": "S2_9.MMD",
+          "offset": "0x18"
+        },
+        {
+          "type": "file",
+          "path": "S2_10.MMD",
+          "offset": "0x19"
+        },
+        {
+          "type": "file",
+          "path": "S2_11.MMD",
+          "offset": "0x1A"
+        },
+        {
+          "type": "file",
+          "path": "S2_12.MMD",
+          "offset": "0x1B"
+        },
+        {
+          "type": "file",
+          "path": "S2_13.MMD",
+          "offset": "0x1C"
+        },
+        {
+          "type": "file",
+          "path": "S2_14.MMD",
+          "offset": "0x1D"
+        },
+        {
+          "type": "file",
+          "path": "GS_RESET.MMD",
+          "offset": "0x1E"
+        },
+        {
+          "type": "shell",
+          "path": "MMD /M36 /K",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "MMP_HOOT",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x1E",
+          "title": "[音源初期化]"
+        },
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "S2_1.MMD"
+        },
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "S2_2.MMD"
+        },
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "S2_3.MMD"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "S2_4.MMD"
+        },
+        {
+          "kind": "title",
+          "code": "0x14",
+          "title": "S2_5.MMD"
+        },
+        {
+          "kind": "title",
+          "code": "0x15",
+          "title": "S2_6.MMD"
+        },
+        {
+          "kind": "title",
+          "code": "0x16",
+          "title": "S2_7.MMD"
+        },
+        {
+          "kind": "title",
+          "code": "0x17",
+          "title": "S2_8.MMD"
+        },
+        {
+          "kind": "title",
+          "code": "0x18",
+          "title": "S2_9.MMD"
+        },
+        {
+          "kind": "title",
+          "code": "0x19",
+          "title": "S2_10.MMD"
+        },
+        {
+          "kind": "title",
+          "code": "0x1A",
+          "title": "S2_11.MMD"
+        },
+        {
+          "kind": "title",
+          "code": "0x1B",
+          "title": "S2_12.MMD"
+        },
+        {
+          "kind": "title",
+          "code": "0x1C",
+          "title": "S2_13.MMD"
+        },
+        {
+          "kind": "title",
+          "code": "0x1D",
+          "title": "S2_14.MMD"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/aypio.xml",
+      "source_order": 396,
+      "archive": "sex2_98",
+      "id": "sex2-98-beep"
+    },
+    {
+      "title": "[PC-9801] STARS",
+      "driver": {
+        "name": "pc98dos",
+        "type": "opn",
+        "alias": "Aypio",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "clockmul",
+          "value": "8"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "NAX.com",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "NLP_HOOT.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "STRS01.FMM",
+          "offset": "0x10"
+        },
+        {
+          "type": "file",
+          "path": "STRS02.FMM",
+          "offset": "0x11"
+        },
+        {
+          "type": "file",
+          "path": "STRS03.FMM",
+          "offset": "0x12"
+        },
+        {
+          "type": "file",
+          "path": "STRS04.FMM",
+          "offset": "0x13"
+        },
+        {
+          "type": "file",
+          "path": "STRS05.FMM",
+          "offset": "0x14"
+        },
+        {
+          "type": "file",
+          "path": "STRS06.FMM",
+          "offset": "0x15"
+        },
+        {
+          "type": "file",
+          "path": "STRS07.FMM",
+          "offset": "0x16"
+        },
+        {
+          "type": "file",
+          "path": "STRS08.FMM",
+          "offset": "0x17"
+        },
+        {
+          "type": "file",
+          "path": "STRS09.FMM",
+          "offset": "0x18"
+        },
+        {
+          "type": "file",
+          "path": "STRS10.FMM",
+          "offset": "0x19"
+        },
+        {
+          "type": "file",
+          "path": "STRS11.FMM",
+          "offset": "0x1A"
+        },
+        {
+          "type": "file",
+          "path": "STRS12.FMM",
+          "offset": "0x1B"
+        },
+        {
+          "type": "file",
+          "path": "STRS13.FMM",
+          "offset": "0x1C"
+        },
+        {
+          "type": "file",
+          "path": "STRS14.FMM",
+          "offset": "0x1D"
+        },
+        {
+          "type": "file",
+          "path": "STRS15.FMM",
+          "offset": "0x1E"
+        },
+        {
+          "type": "file",
+          "path": "STRS16.FMM",
+          "offset": "0x1F"
+        },
+        {
+          "type": "file",
+          "path": "STRS17.FMM",
+          "offset": "0x20"
+        },
+        {
+          "type": "file",
+          "path": "STRS18.FMM",
+          "offset": "0x21"
+        },
+        {
+          "type": "file",
+          "path": "STRS19.FMM",
+          "offset": "0x22"
+        },
+        {
+          "type": "file",
+          "path": "EFFECT04.FMM",
+          "offset": "0x23"
+        },
+        {
+          "type": "file",
+          "path": "EFFECT05.FMM",
+          "offset": "0x24"
+        },
+        {
+          "type": "file",
+          "path": "EFFECT06.FMM",
+          "offset": "0x25"
+        },
+        {
+          "type": "file",
+          "path": "EFFECT07.FMM",
+          "offset": "0x26"
+        },
+        {
+          "type": "file",
+          "path": "EFFECT08.FMM",
+          "offset": "0x27"
+        },
+        {
+          "type": "file",
+          "path": "EFFECT09.FMM",
+          "offset": "0x28"
+        },
+        {
+          "type": "file",
+          "path": "EFFECT10.FMM",
+          "offset": "0x29"
+        },
+        {
+          "type": "shell",
+          "path": "NAX",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "NLP_HOOT",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "STRS01.FMM   : 愛を見せて"
+        },
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "STRS03.FMM   : Walkin' arround"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "STRS04.FMM   : Stardust dunce"
+        },
+        {
+          "kind": "title",
+          "code": "0x14",
+          "title": "STRS05.FMM   : Girlhood"
+        },
+        {
+          "kind": "title",
+          "code": "0x15",
+          "title": "STRS06.FMM   : Ya・ya・ya…"
+        },
+        {
+          "kind": "title",
+          "code": "0x16",
+          "title": "STRS07.FMM   : Feminine whisper"
+        },
+        {
+          "kind": "title",
+          "code": "0x17",
+          "title": "STRS08.FMM   : Gloomy blues"
+        },
+        {
+          "kind": "title",
+          "code": "0x18",
+          "title": "STRS09.FMM   : Temporary sorrow"
+        },
+        {
+          "kind": "title",
+          "code": "0x19",
+          "title": "STRS10.FMM   : Little desire"
+        },
+        {
+          "kind": "title",
+          "code": "0x1A",
+          "title": "STRS11.FMM   : Genial fantasia"
+        },
+        {
+          "kind": "title",
+          "code": "0x1B",
+          "title": "STRS12.FMM   : Sense of crisis"
+        },
+        {
+          "kind": "title",
+          "code": "0x1C",
+          "title": "STRS13.FMM   : Cold fit"
+        },
+        {
+          "kind": "title",
+          "code": "0x1D",
+          "title": "STRS14.FMM   : The pursuer"
+        },
+        {
+          "kind": "title",
+          "code": "0x1E",
+          "title": "STRS15.FMM   : 元気がとりえ☆"
+        },
+        {
+          "kind": "title",
+          "code": "0x1F",
+          "title": "STRS16.FMM   : Snow white lovers"
+        },
+        {
+          "kind": "title",
+          "code": "0x20",
+          "title": "STRS17.FMM   : Holly Night"
+        },
+        {
+          "kind": "title",
+          "code": "0x21",
+          "title": "STRS18.FMM   : White love song"
+        },
+        {
+          "kind": "title",
+          "code": "0x22",
+          "title": "STRS19.FMM   : (妖精さんの占い)"
+        },
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "STRS02.FMM   : SE 電話"
+        },
+        {
+          "kind": "title",
+          "code": "0x23",
+          "title": "EFFECT04.FMM : SE"
+        },
+        {
+          "kind": "title",
+          "code": "0x24",
+          "title": "EFFECT05.FMM : SE"
+        },
+        {
+          "kind": "title",
+          "code": "0x25",
+          "title": "EFFECT06.FMM : SE"
+        },
+        {
+          "kind": "title",
+          "code": "0x26",
+          "title": "EFFECT07.FMM : SE"
+        },
+        {
+          "kind": "title",
+          "code": "0x27",
+          "title": "EFFECT08.FMM : SE"
+        },
+        {
+          "kind": "title",
+          "code": "0x28",
+          "title": "EFFECT09.FMM : SE"
+        },
+        {
+          "kind": "title",
+          "code": "0x29",
+          "title": "EFFECT10.FMM : SE"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/aypio.xml",
+      "source_order": 397,
+      "archive": "stars_98",
+      "id": "stars-98-opn"
+    },
+    {
+      "title": "[PC-9801] SATYR(OPN)",
+      "driver": {
+        "name": "pc98dos",
+        "type": "opn",
+        "alias": "Aypio",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "clockmul",
+          "value": "12"
+        },
+        {
+          "name": "ssg_mix",
+          "value": "-18"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "NAX.com",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "NLP_HOOT.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "SSGPCM.DTA",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "SSGPCM.TBL",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "AMEAGARI.FMM",
+          "offset": "0x10"
+        },
+        {
+          "type": "file",
+          "path": "ANGEL.FMM",
+          "offset": "0x11"
+        },
+        {
+          "type": "file",
+          "path": "WALTZ.FMM",
+          "offset": "0x12"
+        },
+        {
+          "type": "file",
+          "path": "BLUESKY2.FMM",
+          "offset": "0x13"
+        },
+        {
+          "type": "file",
+          "path": "RAINY2.FMM",
+          "offset": "0x14"
+        },
+        {
+          "type": "file",
+          "path": "CLOUDY2.FMM",
+          "offset": "0x15"
+        },
+        {
+          "type": "file",
+          "path": "OPENING.FMM",
+          "offset": "0x16"
+        },
+        {
+          "type": "file",
+          "path": "DANDY.FMM",
+          "offset": "0x17"
+        },
+        {
+          "type": "file",
+          "path": "SANBIKA.FMM",
+          "offset": "0x18"
+        },
+        {
+          "type": "file",
+          "path": "ENDING.FMM",
+          "offset": "0x19"
+        },
+        {
+          "type": "file",
+          "path": "MIST_VO.FMM",
+          "offset": "0x1A"
+        },
+        {
+          "type": "file",
+          "path": "KOAKUMA.FMM",
+          "offset": "0x1B"
+        },
+        {
+          "type": "shell",
+          "path": "NAX -b30 -q -t",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "NLP_HOOT",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x16",
+          "title": "OPENING.FMM"
+        },
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "AMEAGARI.FMM"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "BLUESKY2.FMM"
+        },
+        {
+          "kind": "title",
+          "code": "0x15",
+          "title": "CLOUDY2.FMM"
+        },
+        {
+          "kind": "title",
+          "code": "0x14",
+          "title": "RAINY2.FMM"
+        },
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "ANGEL.FMM"
+        },
+        {
+          "kind": "title",
+          "code": "0x17",
+          "title": "DANDY.FMM"
+        },
+        {
+          "kind": "title",
+          "code": "0x1B",
+          "title": "KOAKUMA.FMM"
+        },
+        {
+          "kind": "title",
+          "code": "0x1A",
+          "title": "MIST_VO.FMM"
+        },
+        {
+          "kind": "title",
+          "code": "0x18",
+          "title": "SANBIKA.FMM"
+        },
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "WALTZ.FMM"
+        },
+        {
+          "kind": "title",
+          "code": "0x19",
+          "title": "ENDING.FMM"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/aypio.xml",
+      "source_order": 398,
+      "archive": "satyr_98",
+      "id": "satyr-98-opn"
+    },
+    {
+      "title": "[PC-9801] SATYR(OPNA)",
+      "driver": {
+        "name": "pc98dos",
+        "type": "opna",
+        "alias": "Aypio",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "clockmul",
+          "value": "12"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "NAX.com",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "NLP_HOOT.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "SSGPCM.DTA",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "SSGPCM.TBL",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "AMEAGARI.SPB",
+          "offset": "0x10"
+        },
+        {
+          "type": "file",
+          "path": "ANGEL.SPB",
+          "offset": "0x11"
+        },
+        {
+          "type": "file",
+          "path": "WALTZ.SPB",
+          "offset": "0x12"
+        },
+        {
+          "type": "file",
+          "path": "BLUESKY2.SPB",
+          "offset": "0x13"
+        },
+        {
+          "type": "file",
+          "path": "RAINY2.SPB",
+          "offset": "0x14"
+        },
+        {
+          "type": "file",
+          "path": "CLOUDY2.SPB",
+          "offset": "0x15"
+        },
+        {
+          "type": "file",
+          "path": "OPENING.SPB",
+          "offset": "0x16"
+        },
+        {
+          "type": "file",
+          "path": "DANDY.SPB",
+          "offset": "0x17"
+        },
+        {
+          "type": "file",
+          "path": "SANBIKA.SPB",
+          "offset": "0x18"
+        },
+        {
+          "type": "file",
+          "path": "ENDING.SPB",
+          "offset": "0x19"
+        },
+        {
+          "type": "file",
+          "path": "MIST_VO.SPB",
+          "offset": "0x1A"
+        },
+        {
+          "type": "file",
+          "path": "KOAKUMA.SPB",
+          "offset": "0x1B"
+        },
+        {
+          "type": "shell",
+          "path": "NAX -b30 -q -t",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "NLP_HOOT",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x16",
+          "title": "OPENING.SPB"
+        },
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "AMEAGARI.SPB"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "BLUESKY2.SPB"
+        },
+        {
+          "kind": "title",
+          "code": "0x15",
+          "title": "CLOUDY2.SPB"
+        },
+        {
+          "kind": "title",
+          "code": "0x14",
+          "title": "RAINY2.SPB"
+        },
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "ANGEL.SPB"
+        },
+        {
+          "kind": "title",
+          "code": "0x17",
+          "title": "DANDY.SPB"
+        },
+        {
+          "kind": "title",
+          "code": "0x1B",
+          "title": "KOAKUMA.SPB"
+        },
+        {
+          "kind": "title",
+          "code": "0x1A",
+          "title": "MIST_VO.SPB"
+        },
+        {
+          "kind": "title",
+          "code": "0x18",
+          "title": "SANBIKA.SPB"
+        },
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "WALTZ.SPB"
+        },
+        {
+          "kind": "title",
+          "code": "0x19",
+          "title": "ENDING.SPB"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/aypio.xml",
+      "source_order": 399,
+      "archive": "satyr_98",
+      "id": "satyr-98-opna"
+    },
+    {
+      "title": "[PC-9801] SATYR(GS)",
+      "driver": {
+        "name": "pc98dos",
+        "type": "beep",
+        "alias": "Aypio",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "clockmul",
+          "value": "8"
+        },
+        {
+          "name": "midiout",
+          "value": "1"
+        },
+        {
+          "name": "midiout_type",
+          "value": "4"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "MINT.com",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "NMISYS.INS",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "SC-55.TDF",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "SC-55DRM.TDF",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "FM2608.TDF",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "PCM2608.TDF",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "NLP_HOOT.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "AMEAGARI.MID",
+          "offset": "0x10"
+        },
+        {
+          "type": "file",
+          "path": "ANGEL.MID",
+          "offset": "0x11"
+        },
+        {
+          "type": "file",
+          "path": "WALTZ.MID",
+          "offset": "0x12"
+        },
+        {
+          "type": "file",
+          "path": "BLUESKY2.MID",
+          "offset": "0x13"
+        },
+        {
+          "type": "file",
+          "path": "RAINY2.MID",
+          "offset": "0x14"
+        },
+        {
+          "type": "file",
+          "path": "CLOUDY2.MID",
+          "offset": "0x15"
+        },
+        {
+          "type": "file",
+          "path": "OPENING.MID",
+          "offset": "0x16"
+        },
+        {
+          "type": "file",
+          "path": "DANDY.MID",
+          "offset": "0x17"
+        },
+        {
+          "type": "file",
+          "path": "SANBIKA.MID",
+          "offset": "0x18"
+        },
+        {
+          "type": "file",
+          "path": "ENDING.MID",
+          "offset": "0x19"
+        },
+        {
+          "type": "file",
+          "path": "MIST_VO.MID",
+          "offset": "0x1A"
+        },
+        {
+          "type": "file",
+          "path": "KOAKUMA.MID",
+          "offset": "0x1B"
+        },
+        {
+          "type": "shell",
+          "path": "MINT",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "NLP_HOOT",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x16",
+          "title": "OPENING.MID"
+        },
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "AMEAGARI.MID"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "BLUESKY2.MID"
+        },
+        {
+          "kind": "title",
+          "code": "0x15",
+          "title": "CLOUDY2.MID"
+        },
+        {
+          "kind": "title",
+          "code": "0x14",
+          "title": "RAINY2.MID"
+        },
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "ANGEL.MID"
+        },
+        {
+          "kind": "title",
+          "code": "0x17",
+          "title": "DANDY.MID"
+        },
+        {
+          "kind": "title",
+          "code": "0x1B",
+          "title": "KOAKUMA.MID"
+        },
+        {
+          "kind": "title",
+          "code": "0x1A",
+          "title": "MIST_VO.MID"
+        },
+        {
+          "kind": "title",
+          "code": "0x18",
+          "title": "SANBIKA.MID"
+        },
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "WALTZ.MID"
+        },
+        {
+          "kind": "title",
+          "code": "0x19",
+          "title": "ENDING.MID"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/aypio.xml",
+      "source_order": 400,
+      "archive": "satyr_98",
+      "id": "satyr-98-beep"
+    },
+    {
+      "title": "[PC-9801] Sorcer Kingdom(OPN)",
+      "driver": {
+        "name": "pc98dos",
+        "type": "opn",
+        "alias": "Aypio",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "funcvect",
+          "value": "0x7e"
+        },
+        {
+          "name": "clockmul",
+          "value": "8"
+        },
+        {
+          "name": "showfm3ex",
+          "value": "1"
+        },
+        {
+          "name": "ssg_mix",
+          "value": "-18"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "PMD_98.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "PMD.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "AKEUTA.MMM",
+          "offset": "0x10"
+        },
+        {
+          "type": "file",
+          "path": "ANKOKU.MMM",
+          "offset": "0x11"
+        },
+        {
+          "type": "file",
+          "path": "BALLADE.MMM",
+          "offset": "0x12"
+        },
+        {
+          "type": "file",
+          "path": "BALPIVER.MMM",
+          "offset": "0x13"
+        },
+        {
+          "type": "file",
+          "path": "BATTLE.MMM",
+          "offset": "0x14"
+        },
+        {
+          "type": "file",
+          "path": "BLACK.MMM",
+          "offset": "0x15"
+        },
+        {
+          "type": "file",
+          "path": "BOSANOVA.MMM",
+          "offset": "0x16"
+        },
+        {
+          "type": "file",
+          "path": "CUTE.MMM",
+          "offset": "0x17"
+        },
+        {
+          "type": "file",
+          "path": "DARK.MMM",
+          "offset": "0x18"
+        },
+        {
+          "type": "file",
+          "path": "DOUKUTSU.MMM",
+          "offset": "0x19"
+        },
+        {
+          "type": "file",
+          "path": "EVL_SORD.MMM",
+          "offset": "0x1A"
+        },
+        {
+          "type": "file",
+          "path": "FIGHT.MMM",
+          "offset": "0x1B"
+        },
+        {
+          "type": "file",
+          "path": "IGYOU.MMM",
+          "offset": "0x1C"
+        },
+        {
+          "type": "file",
+          "path": "IZUMI.MMM",
+          "offset": "0x1D"
+        },
+        {
+          "type": "file",
+          "path": "KUON.MMM",
+          "offset": "0x1E"
+        },
+        {
+          "type": "file",
+          "path": "KURAYAMI.MMM",
+          "offset": "0x1F"
+        },
+        {
+          "type": "file",
+          "path": "KYOUEN.MMM",
+          "offset": "0x20"
+        },
+        {
+          "type": "file",
+          "path": "MAZOKU.MMM",
+          "offset": "0x21"
+        },
+        {
+          "type": "file",
+          "path": "MIDNIGHT.MMM",
+          "offset": "0x22"
+        },
+        {
+          "type": "file",
+          "path": "NOTENKI.MMM",
+          "offset": "0x23"
+        },
+        {
+          "type": "file",
+          "path": "ONDO.MMM",
+          "offset": "0x24"
+        },
+        {
+          "type": "file",
+          "path": "OP_1.MMM",
+          "offset": "0x25"
+        },
+        {
+          "type": "file",
+          "path": "OP_2.MMM",
+          "offset": "0x26"
+        },
+        {
+          "type": "file",
+          "path": "SOUGEN.MMM",
+          "offset": "0x27"
+        },
+        {
+          "type": "file",
+          "path": "SOYOKAZE.MMM",
+          "offset": "0x28"
+        },
+        {
+          "type": "file",
+          "path": "TASOGARE.MMM",
+          "offset": "0x29"
+        },
+        {
+          "type": "file",
+          "path": "TENSHI.MMM",
+          "offset": "0x2A"
+        },
+        {
+          "type": "file",
+          "path": "TITLE.MMM",
+          "offset": "0x2B"
+        },
+        {
+          "type": "file",
+          "path": "TOKEI.MMM",
+          "offset": "0x2C"
+        },
+        {
+          "type": "file",
+          "path": "ZUOOO.MMM",
+          "offset": "0x2D"
+        },
+        {
+          "type": "shell",
+          "path": "pmd # /m9 /e0 /v0 /k",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "pmd_98",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "AKEUTA.MMM   : 暁の詩"
+        },
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "ANKOKU.MMM   : 暗黒の軍団"
+        },
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "BALLADE.MMM  : 星空に願いを"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "BALPIVER.MMM : 星空に願いを"
+        },
+        {
+          "kind": "title",
+          "code": "0x14",
+          "title": "BATTLE.MMM   : I'll get win all my power."
+        },
+        {
+          "kind": "title",
+          "code": "0x15",
+          "title": "BLACK.MMM    : Battle de Black"
+        },
+        {
+          "kind": "title",
+          "code": "0x16",
+          "title": "BOSANOVA.MMM : 自由の旅人"
+        },
+        {
+          "kind": "title",
+          "code": "0x17",
+          "title": "CUTE.MMM     : Angel Sanctuary"
+        },
+        {
+          "kind": "title",
+          "code": "0x18",
+          "title": "DARK.MMM     : ダークマター"
+        },
+        {
+          "kind": "title",
+          "code": "0x19",
+          "title": "DOUKUTSU.MMM : Quickening"
+        },
+        {
+          "kind": "title",
+          "code": "0x1A",
+          "title": "EVL_SORD.MMM : Neuralfear"
+        },
+        {
+          "kind": "title",
+          "code": "0x1B",
+          "title": "FIGHT.MMM    : Fight For Justice"
+        },
+        {
+          "kind": "title",
+          "code": "0x1C",
+          "title": "IGYOU.MMM    : 異形の騎士"
+        },
+        {
+          "kind": "title",
+          "code": "0x1D",
+          "title": "IZUMI.MMM    : Eternal Field"
+        },
+        {
+          "kind": "title",
+          "code": "0x1E",
+          "title": "KUON.MMM     : 久遠の静寂"
+        },
+        {
+          "kind": "title",
+          "code": "0x1F",
+          "title": "KURAYAMI.MMM : 暗闇に輝く剣"
+        },
+        {
+          "kind": "title",
+          "code": "0x20",
+          "title": "KYOUEN.MMM   : 魔の饗宴"
+        },
+        {
+          "kind": "title",
+          "code": "0x21",
+          "title": "MAZOKU.MMM   : Infinity Resident"
+        },
+        {
+          "kind": "title",
+          "code": "0x22",
+          "title": "MIDNIGHT.MMM : ミッドナイト クロー"
+        },
+        {
+          "kind": "title",
+          "code": "0x23",
+          "title": "NOTENKI.MMM  : 今日も一日脳天気"
+        },
+        {
+          "kind": "title",
+          "code": "0x24",
+          "title": "ONDO.MMM     : そぉさる音頭"
+        },
+        {
+          "kind": "title",
+          "code": "0x25",
+          "title": "OP_1.MMM     : オープニング1A"
+        },
+        {
+          "kind": "title",
+          "code": "0x26",
+          "title": "OP_2.MMM     : オープニング2 (悠久の大地)"
+        },
+        {
+          "kind": "title",
+          "code": "0x27",
+          "title": "SOUGEN.MMM   : 流れる雲の様に"
+        },
+        {
+          "kind": "title",
+          "code": "0x28",
+          "title": "SOYOKAZE.MMM : Bell Epoch"
+        },
+        {
+          "kind": "title",
+          "code": "0x29",
+          "title": "TASOGARE.MMM : 黄昏"
+        },
+        {
+          "kind": "title",
+          "code": "0x2A",
+          "title": "TENSHI.MMM   : 天使の贈物"
+        },
+        {
+          "kind": "title",
+          "code": "0x2B",
+          "title": "TITLE.MMM    : タイトル"
+        },
+        {
+          "kind": "title",
+          "code": "0x2C",
+          "title": "TOKEI.MMM    : Chrono Traveler"
+        },
+        {
+          "kind": "title",
+          "code": "0x2D",
+          "title": "ZUOOO.MMM    : タイトル"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/aypio.xml",
+      "source_order": 401,
+      "archive": "sk_98",
+      "id": "sk-98-opn"
+    },
+    {
+      "title": "[PC-9801] Sorcer Kingdom(OPNA)",
+      "driver": {
+        "name": "pc98dos",
+        "type": "opna",
+        "alias": "Aypio",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "funcvect",
+          "value": "0x7e"
+        },
+        {
+          "name": "clockmul",
+          "value": "8"
+        },
+        {
+          "name": "showfm3ex",
+          "value": "1"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "PMD_98.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "PMDB2.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "AKEUTA.MMM",
+          "offset": "0x10"
+        },
+        {
+          "type": "file",
+          "path": "ANKOKU.MMM",
+          "offset": "0x11"
+        },
+        {
+          "type": "file",
+          "path": "BALLADE.MMM",
+          "offset": "0x12"
+        },
+        {
+          "type": "file",
+          "path": "BALPIVER.MMM",
+          "offset": "0x13"
+        },
+        {
+          "type": "file",
+          "path": "BATTLE.MMM",
+          "offset": "0x14"
+        },
+        {
+          "type": "file",
+          "path": "BLACK.MMM",
+          "offset": "0x15"
+        },
+        {
+          "type": "file",
+          "path": "BOSANOVA.MMM",
+          "offset": "0x16"
+        },
+        {
+          "type": "file",
+          "path": "CUTE.MMM",
+          "offset": "0x17"
+        },
+        {
+          "type": "file",
+          "path": "DARK.MMM",
+          "offset": "0x18"
+        },
+        {
+          "type": "file",
+          "path": "DOUKUTSU.MMM",
+          "offset": "0x19"
+        },
+        {
+          "type": "file",
+          "path": "EVL_SORD.MMM",
+          "offset": "0x1A"
+        },
+        {
+          "type": "file",
+          "path": "FIGHT.MMM",
+          "offset": "0x1B"
+        },
+        {
+          "type": "file",
+          "path": "IGYOU.MMM",
+          "offset": "0x1C"
+        },
+        {
+          "type": "file",
+          "path": "IZUMI.MMM",
+          "offset": "0x1D"
+        },
+        {
+          "type": "file",
+          "path": "KUON.MMM",
+          "offset": "0x1E"
+        },
+        {
+          "type": "file",
+          "path": "KURAYAMI.MMM",
+          "offset": "0x1F"
+        },
+        {
+          "type": "file",
+          "path": "KYOUEN.MMM",
+          "offset": "0x20"
+        },
+        {
+          "type": "file",
+          "path": "MAZOKU.MMM",
+          "offset": "0x21"
+        },
+        {
+          "type": "file",
+          "path": "MIDNIGHT.MMM",
+          "offset": "0x22"
+        },
+        {
+          "type": "file",
+          "path": "NOTENKI.MMM",
+          "offset": "0x23"
+        },
+        {
+          "type": "file",
+          "path": "ONDO.MMM",
+          "offset": "0x24"
+        },
+        {
+          "type": "file",
+          "path": "OP_1.MMM",
+          "offset": "0x25"
+        },
+        {
+          "type": "file",
+          "path": "OP_2.MMM",
+          "offset": "0x26"
+        },
+        {
+          "type": "file",
+          "path": "SOUGEN.MMM",
+          "offset": "0x27"
+        },
+        {
+          "type": "file",
+          "path": "SOYOKAZE.MMM",
+          "offset": "0x28"
+        },
+        {
+          "type": "file",
+          "path": "TASOGARE.MMM",
+          "offset": "0x29"
+        },
+        {
+          "type": "file",
+          "path": "TENSHI.MMM",
+          "offset": "0x2A"
+        },
+        {
+          "type": "file",
+          "path": "TITLE.MMM",
+          "offset": "0x2B"
+        },
+        {
+          "type": "file",
+          "path": "TOKEI.MMM",
+          "offset": "0x2C"
+        },
+        {
+          "type": "file",
+          "path": "ZUOOO.MMM",
+          "offset": "0x2D"
+        },
+        {
+          "type": "shell",
+          "path": "PMDB2 # /m9 /e0 /v0 /k /p",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "pmd_98",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "AKEUTA.MMM   : 暁の詩"
+        },
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "ANKOKU.MMM   : 暗黒の軍団"
+        },
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "BALLADE.MMM  : 星空に願いを"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "BALPIVER.MMM : 星空に願いを"
+        },
+        {
+          "kind": "title",
+          "code": "0x14",
+          "title": "BATTLE.MMM   : I'll get win all my power."
+        },
+        {
+          "kind": "title",
+          "code": "0x15",
+          "title": "BLACK.MMM    : Battle de Black"
+        },
+        {
+          "kind": "title",
+          "code": "0x16",
+          "title": "BOSANOVA.MMM : 自由の旅人"
+        },
+        {
+          "kind": "title",
+          "code": "0x17",
+          "title": "CUTE.MMM     : Angel Sanctuary"
+        },
+        {
+          "kind": "title",
+          "code": "0x18",
+          "title": "DARK.MMM     : ダークマター"
+        },
+        {
+          "kind": "title",
+          "code": "0x19",
+          "title": "DOUKUTSU.MMM : Quickening"
+        },
+        {
+          "kind": "title",
+          "code": "0x1A",
+          "title": "EVL_SORD.MMM : Neuralfear"
+        },
+        {
+          "kind": "title",
+          "code": "0x1B",
+          "title": "FIGHT.MMM    : Fight For Justice"
+        },
+        {
+          "kind": "title",
+          "code": "0x1C",
+          "title": "IGYOU.MMM    : 異形の騎士"
+        },
+        {
+          "kind": "title",
+          "code": "0x1D",
+          "title": "IZUMI.MMM    : Eternal Field"
+        },
+        {
+          "kind": "title",
+          "code": "0x1E",
+          "title": "KUON.MMM     : 久遠の静寂"
+        },
+        {
+          "kind": "title",
+          "code": "0x1F",
+          "title": "KURAYAMI.MMM : 暗闇に輝く剣"
+        },
+        {
+          "kind": "title",
+          "code": "0x20",
+          "title": "KYOUEN.MMM   : 魔の饗宴"
+        },
+        {
+          "kind": "title",
+          "code": "0x21",
+          "title": "MAZOKU.MMM   : Infinity Resident"
+        },
+        {
+          "kind": "title",
+          "code": "0x22",
+          "title": "MIDNIGHT.MMM : ミッドナイト クロー"
+        },
+        {
+          "kind": "title",
+          "code": "0x23",
+          "title": "NOTENKI.MMM  : 今日も一日脳天気"
+        },
+        {
+          "kind": "title",
+          "code": "0x24",
+          "title": "ONDO.MMM     : そぉさる音頭"
+        },
+        {
+          "kind": "title",
+          "code": "0x25",
+          "title": "OP_1.MMM     : オープニング1A"
+        },
+        {
+          "kind": "title",
+          "code": "0x26",
+          "title": "OP_2.MMM     : オープニング2 (悠久の大地)"
+        },
+        {
+          "kind": "title",
+          "code": "0x27",
+          "title": "SOUGEN.MMM   : 流れる雲の様に"
+        },
+        {
+          "kind": "title",
+          "code": "0x28",
+          "title": "SOYOKAZE.MMM : Bell Epoch"
+        },
+        {
+          "kind": "title",
+          "code": "0x29",
+          "title": "TASOGARE.MMM : 黄昏"
+        },
+        {
+          "kind": "title",
+          "code": "0x2A",
+          "title": "TENSHI.MMM   : 天使の贈物"
+        },
+        {
+          "kind": "title",
+          "code": "0x2B",
+          "title": "TITLE.MMM    : タイトル"
+        },
+        {
+          "kind": "title",
+          "code": "0x2C",
+          "title": "TOKEI.MMM    : Chrono Traveler"
+        },
+        {
+          "kind": "title",
+          "code": "0x2D",
+          "title": "ZUOOO.MMM    : タイトル"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/aypio.xml",
+      "source_order": 402,
+      "archive": "sk_98",
+      "id": "sk-98-opna"
+    },
+    {
+      "title": "[PC-9801] Sorcer Kingdom(GS)",
+      "driver": {
+        "name": "pc98dos",
+        "type": "beep",
+        "alias": "Aypio",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "clockmul",
+          "value": "8"
+        },
+        {
+          "name": "midiout",
+          "value": "1"
+        },
+        {
+          "name": "midiout_type",
+          "value": "4"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "MMD.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MMP_HOOT.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "AKEUTA.MMD",
+          "offset": "0x10"
+        },
+        {
+          "type": "file",
+          "path": "ANKOKU.MMD",
+          "offset": "0x11"
+        },
+        {
+          "type": "file",
+          "path": "BALLADE.MMD",
+          "offset": "0x12"
+        },
+        {
+          "type": "file",
+          "path": "BALPIVER.MMD",
+          "offset": "0x13"
+        },
+        {
+          "type": "file",
+          "path": "BATTLE.MMD",
+          "offset": "0x14"
+        },
+        {
+          "type": "file",
+          "path": "BLACK.MMD",
+          "offset": "0x15"
+        },
+        {
+          "type": "file",
+          "path": "BOSANOVA.MMD",
+          "offset": "0x16"
+        },
+        {
+          "type": "file",
+          "path": "CUTE.MMD",
+          "offset": "0x17"
+        },
+        {
+          "type": "file",
+          "path": "DARK.MMD",
+          "offset": "0x18"
+        },
+        {
+          "type": "file",
+          "path": "DOUKUTSU.MMD",
+          "offset": "0x19"
+        },
+        {
+          "type": "file",
+          "path": "EVL_SORD.MMD",
+          "offset": "0x1A"
+        },
+        {
+          "type": "file",
+          "path": "FIGHT.MMD",
+          "offset": "0x1B"
+        },
+        {
+          "type": "file",
+          "path": "IGYOU.MMD",
+          "offset": "0x1C"
+        },
+        {
+          "type": "file",
+          "path": "IZUMI.MMD",
+          "offset": "0x1D"
+        },
+        {
+          "type": "file",
+          "path": "KUON.MMD",
+          "offset": "0x1E"
+        },
+        {
+          "type": "file",
+          "path": "KURAYAMI.MMD",
+          "offset": "0x1F"
+        },
+        {
+          "type": "file",
+          "path": "KYOUEN.MMD",
+          "offset": "0x20"
+        },
+        {
+          "type": "file",
+          "path": "MAZOKU.MMD",
+          "offset": "0x21"
+        },
+        {
+          "type": "file",
+          "path": "MIDNIGHT.MMD",
+          "offset": "0x22"
+        },
+        {
+          "type": "file",
+          "path": "NOTENKI.MMD",
+          "offset": "0x23"
+        },
+        {
+          "type": "file",
+          "path": "ONDO.MMD",
+          "offset": "0x24"
+        },
+        {
+          "type": "file",
+          "path": "OP_1.MMD",
+          "offset": "0x25"
+        },
+        {
+          "type": "file",
+          "path": "OP_2.MMD",
+          "offset": "0x26"
+        },
+        {
+          "type": "file",
+          "path": "SOUGEN.MMD",
+          "offset": "0x27"
+        },
+        {
+          "type": "file",
+          "path": "SOYOKAZE.MMD",
+          "offset": "0x28"
+        },
+        {
+          "type": "file",
+          "path": "TASOGARE.MMD",
+          "offset": "0x29"
+        },
+        {
+          "type": "file",
+          "path": "TENSHI.MMD",
+          "offset": "0x2A"
+        },
+        {
+          "type": "file",
+          "path": "TITLE.MMD",
+          "offset": "0x2B"
+        },
+        {
+          "type": "file",
+          "path": "TOKEI.MMD",
+          "offset": "0x2C"
+        },
+        {
+          "type": "file",
+          "path": "ZUOOO.MMD",
+          "offset": "0x2D"
+        },
+        {
+          "type": "file",
+          "path": "GMINIT.MMD",
+          "offset": "0x2E"
+        },
+        {
+          "type": "shell",
+          "path": "MMD /M22 /K",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "MMP_HOOT",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x2E",
+          "title": "[音源初期化]"
+        },
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "AKEUTA.MMD   : 暁の詩"
+        },
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "ANKOKU.MMD   : 暗黒の軍団"
+        },
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "BALLADE.MMD  : 星空に願いを"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "BALPIVER.MMD : 星空に願いを"
+        },
+        {
+          "kind": "title",
+          "code": "0x14",
+          "title": "BATTLE.MMD   : I'll get win all my power."
+        },
+        {
+          "kind": "title",
+          "code": "0x15",
+          "title": "BLACK.MMD    : Battle de Black"
+        },
+        {
+          "kind": "title",
+          "code": "0x16",
+          "title": "BOSANOVA.MMD : 自由の旅人"
+        },
+        {
+          "kind": "title",
+          "code": "0x17",
+          "title": "CUTE.MMD     : Angel Sanctuary"
+        },
+        {
+          "kind": "title",
+          "code": "0x18",
+          "title": "DARK.MMD     : ダークマター"
+        },
+        {
+          "kind": "title",
+          "code": "0x19",
+          "title": "DOUKUTSU.MMD : Quickening"
+        },
+        {
+          "kind": "title",
+          "code": "0x1A",
+          "title": "EVL_SORD.MMD : Neuralfear"
+        },
+        {
+          "kind": "title",
+          "code": "0x1B",
+          "title": "FIGHT.MMD    : Fight For Justice"
+        },
+        {
+          "kind": "title",
+          "code": "0x1C",
+          "title": "IGYOU.MMD    : 異形の騎士"
+        },
+        {
+          "kind": "title",
+          "code": "0x1D",
+          "title": "IZUMI.MMD    : Eternal Field"
+        },
+        {
+          "kind": "title",
+          "code": "0x1E",
+          "title": "KUON.MMD     : 久遠の静寂"
+        },
+        {
+          "kind": "title",
+          "code": "0x1F",
+          "title": "KURAYAMI.MMD : 暗闇に輝く剣"
+        },
+        {
+          "kind": "title",
+          "code": "0x20",
+          "title": "KYOUEN.MMD   : 魔の饗宴"
+        },
+        {
+          "kind": "title",
+          "code": "0x21",
+          "title": "MAZOKU.MMD   : Infinity Resident"
+        },
+        {
+          "kind": "title",
+          "code": "0x22",
+          "title": "MIDNIGHT.MMD : ミッドナイト クロー"
+        },
+        {
+          "kind": "title",
+          "code": "0x23",
+          "title": "NOTENKI.MMD  : 今日も一日脳天気"
+        },
+        {
+          "kind": "title",
+          "code": "0x24",
+          "title": "ONDO.MMD     : そぉさる音頭"
+        },
+        {
+          "kind": "title",
+          "code": "0x25",
+          "title": "OP_1.MMD     : オープニング1A"
+        },
+        {
+          "kind": "title",
+          "code": "0x26",
+          "title": "OP_2.MMD     : オープニング2 (悠久の大地)"
+        },
+        {
+          "kind": "title",
+          "code": "0x27",
+          "title": "SOUGEN.MMD   : 流れる雲の様に"
+        },
+        {
+          "kind": "title",
+          "code": "0x28",
+          "title": "SOYOKAZE.MMD : Bell Epoch"
+        },
+        {
+          "kind": "title",
+          "code": "0x29",
+          "title": "TASOGARE.MMD : 黄昏"
+        },
+        {
+          "kind": "title",
+          "code": "0x2A",
+          "title": "TENSHI.MMD   : 天使の贈物"
+        },
+        {
+          "kind": "title",
+          "code": "0x2B",
+          "title": "TITLE.MMD    : タイトル"
+        },
+        {
+          "kind": "title",
+          "code": "0x2C",
+          "title": "TOKEI.MMD    : Chrono Traveler"
+        },
+        {
+          "kind": "title",
+          "code": "0x2D",
+          "title": "ZUOOO.MMD    : タイトル"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/aypio.xml",
+      "source_order": 403,
+      "archive": "sk_98",
+      "id": "sk-98-beep"
+    },
+    {
+      "title": "[PC-9801] HALF PIPE",
+      "driver": {
+        "name": "pc98dos",
+        "type": "opn",
+        "alias": "Aypio",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "clockmul",
+          "value": "8"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "NA.com",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "NLP_HOOT.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "ｶﾗ.BGM",
+          "offset": "0x10"
+        },
+        {
+          "type": "file",
+          "path": "BEACH.BGM",
+          "offset": "0x11"
+        },
+        {
+          "type": "file",
+          "path": "BLUSE.BGM",
+          "offset": "0x12"
+        },
+        {
+          "type": "file",
+          "path": "BUTTLE.BGM",
+          "offset": "0x13"
+        },
+        {
+          "type": "file",
+          "path": "COUNTRY.BGM",
+          "offset": "0x14"
+        },
+        {
+          "type": "file",
+          "path": "COURAGE.BGM",
+          "offset": "0x15"
+        },
+        {
+          "type": "file",
+          "path": "ENDING.BGM",
+          "offset": "0x16"
+        },
+        {
+          "type": "file",
+          "path": "FUNK.BGM",
+          "offset": "0x17"
+        },
+        {
+          "type": "file",
+          "path": "MORNIN.BGM",
+          "offset": "0x18"
+        },
+        {
+          "type": "file",
+          "path": "MOUSE.BGM",
+          "offset": "0x19"
+        },
+        {
+          "type": "file",
+          "path": "RACE.BGM",
+          "offset": "0x1A"
+        },
+        {
+          "type": "file",
+          "path": "SHOT.BGM",
+          "offset": "0x1B"
+        },
+        {
+          "type": "file",
+          "path": "STARS.BGM",
+          "offset": "0x1C"
+        },
+        {
+          "type": "file",
+          "path": "THEME.BGM",
+          "offset": "0x1D"
+        },
+        {
+          "type": "file",
+          "path": "TWILIGHT.BGM",
+          "offset": "0x1E"
+        },
+        {
+          "type": "file",
+          "path": "UNDER.BGM",
+          "offset": "0x1F"
+        },
+        {
+          "type": "shell",
+          "path": "NA",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "NLP_HOOT",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "[STOP]"
+        },
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "BEACH.BGM"
+        },
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "BLUSE.BGM"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "BUTTLE.BGM"
+        },
+        {
+          "kind": "title",
+          "code": "0x14",
+          "title": "COUNTRY.BGM"
+        },
+        {
+          "kind": "title",
+          "code": "0x15",
+          "title": "COURAGE.BGM"
+        },
+        {
+          "kind": "title",
+          "code": "0x16",
+          "title": "ENDING.BGM"
+        },
+        {
+          "kind": "title",
+          "code": "0x17",
+          "title": "FUNK.BGM"
+        },
+        {
+          "kind": "title",
+          "code": "0x18",
+          "title": "MORNIN.BGM"
+        },
+        {
+          "kind": "title",
+          "code": "0x19",
+          "title": "MOUSE.BGM"
+        },
+        {
+          "kind": "title",
+          "code": "0x1A",
+          "title": "RACE.BGM"
+        },
+        {
+          "kind": "title",
+          "code": "0x1B",
+          "title": "SHOT.BGM"
+        },
+        {
+          "kind": "title",
+          "code": "0x1C",
+          "title": "STARS.BGM"
+        },
+        {
+          "kind": "title",
+          "code": "0x1D",
+          "title": "THEME.BGM"
+        },
+        {
+          "kind": "title",
+          "code": "0x1E",
+          "title": "TWILIGHT.BGM"
+        },
+        {
+          "kind": "title",
+          "code": "0x1F",
+          "title": "UNDER.BGM"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/aypio.xml",
+      "source_order": 404,
+      "archive": "half_p_98",
+      "id": "half-p-98-opn"
+    },
+    {
+      "title": "[PC-9801] 注射器",
+      "driver": {
+        "name": "pc98dos",
+        "type": "opn",
+        "alias": "Aypio",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "clockmul",
+          "value": "8"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "NAX.com",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "NLP_HOOT.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "CSK01.FMM",
+          "offset": "0x10"
+        },
+        {
+          "type": "file",
+          "path": "CSK02.FMM",
+          "offset": "0x11"
+        },
+        {
+          "type": "file",
+          "path": "CSK03.FMM",
+          "offset": "0x12"
+        },
+        {
+          "type": "file",
+          "path": "CSK04.FMM",
+          "offset": "0x13"
+        },
+        {
+          "type": "file",
+          "path": "CSK05.FMM",
+          "offset": "0x14"
+        },
+        {
+          "type": "file",
+          "path": "CSK06.FMM",
+          "offset": "0x15"
+        },
+        {
+          "type": "file",
+          "path": "CSK07.FMM",
+          "offset": "0x16"
+        },
+        {
+          "type": "file",
+          "path": "CSK08.FMM",
+          "offset": "0x17"
+        },
+        {
+          "type": "file",
+          "path": "CSK09.FMM",
+          "offset": "0x18"
+        },
+        {
+          "type": "file",
+          "path": "CSK10.FMM",
+          "offset": "0x19"
+        },
+        {
+          "type": "file",
+          "path": "CSK11.FMM",
+          "offset": "0x1A"
+        },
+        {
+          "type": "file",
+          "path": "CSK12.FMM",
+          "offset": "0x1B"
+        },
+        {
+          "type": "file",
+          "path": "CSK13.FMM",
+          "offset": "0x1C"
+        },
+        {
+          "type": "file",
+          "path": "CSK14.FMM",
+          "offset": "0x1D"
+        },
+        {
+          "type": "file",
+          "path": "CSK15.FMM",
+          "offset": "0x1E"
+        },
+        {
+          "type": "file",
+          "path": "CSK16.FMM",
+          "offset": "0x1F"
+        },
+        {
+          "type": "file",
+          "path": "CSK17.FMM",
+          "offset": "0x20"
+        },
+        {
+          "type": "file",
+          "path": "BEBEN.FMM",
+          "offset": "0x21"
+        },
+        {
+          "type": "file",
+          "path": "BOO.FMM",
+          "offset": "0x22"
+        },
+        {
+          "type": "file",
+          "path": "CHIME.FMM",
+          "offset": "0x23"
+        },
+        {
+          "type": "file",
+          "path": "DON.FMM",
+          "offset": "0x24"
+        },
+        {
+          "type": "file",
+          "path": "MUTI.FMM",
+          "offset": "0x25"
+        },
+        {
+          "type": "file",
+          "path": "NOCK.FMM",
+          "offset": "0x26"
+        },
+        {
+          "type": "file",
+          "path": "PINPON.FMM",
+          "offset": "0x27"
+        },
+        {
+          "type": "file",
+          "path": "TEL.FMM",
+          "offset": "0x28"
+        },
+        {
+          "type": "shell",
+          "path": "NAX",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "NLP_HOOT",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "CSK01.FMM"
+        },
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "CSK02.FMM"
+        },
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "CSK03.FMM"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "CSK04.FMM"
+        },
+        {
+          "kind": "title",
+          "code": "0x14",
+          "title": "CSK05.FMM"
+        },
+        {
+          "kind": "title",
+          "code": "0x15",
+          "title": "CSK06.FMM"
+        },
+        {
+          "kind": "title",
+          "code": "0x16",
+          "title": "CSK07.FMM"
+        },
+        {
+          "kind": "title",
+          "code": "0x17",
+          "title": "CSK08.FMM"
+        },
+        {
+          "kind": "title",
+          "code": "0x18",
+          "title": "CSK09.FMM"
+        },
+        {
+          "kind": "title",
+          "code": "0x19",
+          "title": "CSK10.FMM"
+        },
+        {
+          "kind": "title",
+          "code": "0x1A",
+          "title": "CSK11.FMM"
+        },
+        {
+          "kind": "title",
+          "code": "0x1B",
+          "title": "CSK12.FMM"
+        },
+        {
+          "kind": "title",
+          "code": "0x1C",
+          "title": "CSK13.FMM"
+        },
+        {
+          "kind": "title",
+          "code": "0x1D",
+          "title": "CSK14.FMM"
+        },
+        {
+          "kind": "title",
+          "code": "0x1E",
+          "title": "CSK15.FMM"
+        },
+        {
+          "kind": "title",
+          "code": "0x1F",
+          "title": "CSK16.FMM"
+        },
+        {
+          "kind": "title",
+          "code": "0x20",
+          "title": "CSK17.FMM"
+        },
+        {
+          "kind": "title",
+          "code": "0x21",
+          "title": "BEBEN.FMM"
+        },
+        {
+          "kind": "title",
+          "code": "0x22",
+          "title": "BOO.FMM"
+        },
+        {
+          "kind": "title",
+          "code": "0x23",
+          "title": "CHIME.FMM"
+        },
+        {
+          "kind": "title",
+          "code": "0x24",
+          "title": "DON.FMM"
+        },
+        {
+          "kind": "title",
+          "code": "0x25",
+          "title": "MUTI.FMM"
+        },
+        {
+          "kind": "title",
+          "code": "0x26",
+          "title": "NOCK.FMM"
+        },
+        {
+          "kind": "title",
+          "code": "0x27",
+          "title": "PINPON.FMM"
+        },
+        {
+          "kind": "title",
+          "code": "0x28",
+          "title": "TEL.FMM"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/aypio.xml",
+      "source_order": 405,
+      "archive": "chusya_98",
+      "id": "chusya-98-opn"
+    },
+    {
+      "title": "[IBM PC] SEX",
+      "driver": {
+        "name": "pcatdos",
+        "type": "adlib",
+        "alias": "Aypio",
+        "platform": "IBM PC"
+      },
+      "options": [
+        {
+          "name": "funcvect",
+          "value": "0x7e"
+        },
+        {
+          "name": "clockmul",
+          "value": "0x12"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "PMD_98.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "PMDIBM.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MUSIC_01.MMM",
+          "offset": "0x10"
+        },
+        {
+          "type": "file",
+          "path": "MUSIC_02.MMM",
+          "offset": "0x11"
+        },
+        {
+          "type": "file",
+          "path": "MUSIC_03.MMM",
+          "offset": "0x12"
+        },
+        {
+          "type": "file",
+          "path": "MUSIC_04.MMM",
+          "offset": "0x13"
+        },
+        {
+          "type": "file",
+          "path": "MUSIC_ED.MMM",
+          "offset": "0x14"
+        },
+        {
+          "type": "file",
+          "path": "MUSIC_OP.MMM",
+          "offset": "0x15"
+        },
+        {
+          "type": "file",
+          "path": "SUNRISE.MMM",
+          "offset": "0x16"
+        },
+        {
+          "type": "shell",
+          "path": "pmdibm /K",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "pmd_98",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x15",
+          "title": "MUSIC_OP.MMM :"
+        },
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "MUSIC_01.MMM :"
+        },
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "MUSIC_02.MMM :"
+        },
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "MUSIC_03.MMM :"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "MUSIC_04.MMM :"
+        },
+        {
+          "kind": "title",
+          "code": "0x14",
+          "title": "MUSIC_ED.MMM :"
+        },
+        {
+          "kind": "title",
+          "code": "0x16",
+          "title": "SUNRISE.MMM  :"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/aypio.xml",
+      "source_order": 406,
+      "archive": "sex_at",
+      "id": "sex-at-adlib"
+    },
+    {
+      "title": "[IBM PC] SEX2",
+      "driver": {
+        "name": "pcatdos",
+        "type": "adlib",
+        "alias": "Aypio",
+        "platform": "IBM PC"
+      },
+      "options": [
+        {
+          "name": "funcvect",
+          "value": "0x7e"
+        },
+        {
+          "name": "clockmul",
+          "value": "0x12"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "PMD_98.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "PMDIBM.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "S2.EFC",
+          "offset": "0x08"
+        },
+        {
+          "type": "file",
+          "path": "S2_1.MMM",
+          "offset": "0x10"
+        },
+        {
+          "type": "file",
+          "path": "S2_2.MMM",
+          "offset": "0x11"
+        },
+        {
+          "type": "file",
+          "path": "S2_3.MMM",
+          "offset": "0x12"
+        },
+        {
+          "type": "file",
+          "path": "S2_4.MMM",
+          "offset": "0x13"
+        },
+        {
+          "type": "file",
+          "path": "S2_5.MMM",
+          "offset": "0x14"
+        },
+        {
+          "type": "file",
+          "path": "S2_6.MMM",
+          "offset": "0x15"
+        },
+        {
+          "type": "file",
+          "path": "S2_7.MMM",
+          "offset": "0x16"
+        },
+        {
+          "type": "file",
+          "path": "S2_8.MMM",
+          "offset": "0x17"
+        },
+        {
+          "type": "file",
+          "path": "S2_9.MMM",
+          "offset": "0x18"
+        },
+        {
+          "type": "file",
+          "path": "S2_10.MMM",
+          "offset": "0x19"
+        },
+        {
+          "type": "file",
+          "path": "S2_11.MMM",
+          "offset": "0x1A"
+        },
+        {
+          "type": "file",
+          "path": "S2_12.MMM",
+          "offset": "0x1B"
+        },
+        {
+          "type": "file",
+          "path": "S2_13.MMM",
+          "offset": "0x1C"
+        },
+        {
+          "type": "file",
+          "path": "S2_14.MMM",
+          "offset": "0x1D"
+        },
+        {
+          "type": "shell",
+          "path": "pmdibm /K",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "pmd_98",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "S2_1.MMM  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "S2_2.MMM  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "S2_3.MMM  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "S2_4.MMM  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x14",
+          "title": "S2_5.MMM  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x15",
+          "title": "S2_6.MMM  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x16",
+          "title": "S2_7.MMM  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x17",
+          "title": "S2_8.MMM  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x18",
+          "title": "S2_9.MMM  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x19",
+          "title": "S2_10.MMM :"
+        },
+        {
+          "kind": "title",
+          "code": "0x1A",
+          "title": "S2_11.MMM :"
+        },
+        {
+          "kind": "title",
+          "code": "0x1B",
+          "title": "S2_12.MMM :"
+        },
+        {
+          "kind": "title",
+          "code": "0x1C",
+          "title": "S2_13.MMM :"
+        },
+        {
+          "kind": "title",
+          "code": "0x1D",
+          "title": "S2_14.MMM :"
+        },
+        {
+          "kind": "range",
+          "min": "0x0801",
+          "max": "0x0805",
+          "title_format": "S2.EFC    : %02X",
+          "extcode": "0"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/aypio.xml",
+      "source_order": 407,
+      "archive": "sex2_at",
+      "id": "sex2-at-adlib"
+    },
+    {
+      "title": "[IBM PC] Sorcer Kingdom",
+      "driver": {
+        "name": "pcatdos",
+        "type": "adlib",
+        "alias": "Aypio",
+        "platform": "IBM PC"
+      },
+      "options": [
+        {
+          "name": "funcvect",
+          "value": "0x7e"
+        },
+        {
+          "name": "clockmul",
+          "value": "0x12"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "PMD_98.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "PMDIBM.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "AKEUTA.MMM",
+          "offset": "0x10"
+        },
+        {
+          "type": "file",
+          "path": "ANKOKU.MMM",
+          "offset": "0x11"
+        },
+        {
+          "type": "file",
+          "path": "BALLADE.MMM",
+          "offset": "0x12"
+        },
+        {
+          "type": "file",
+          "path": "BALPIVER.MMM",
+          "offset": "0x13"
+        },
+        {
+          "type": "file",
+          "path": "BATTLE.MMM",
+          "offset": "0x14"
+        },
+        {
+          "type": "file",
+          "path": "BLACK.MMM",
+          "offset": "0x15"
+        },
+        {
+          "type": "file",
+          "path": "BOSANOVA.MMM",
+          "offset": "0x16"
+        },
+        {
+          "type": "file",
+          "path": "CUTE.MMM",
+          "offset": "0x17"
+        },
+        {
+          "type": "file",
+          "path": "DARK.MMM",
+          "offset": "0x18"
+        },
+        {
+          "type": "file",
+          "path": "DOUKUTSU.MMM",
+          "offset": "0x19"
+        },
+        {
+          "type": "file",
+          "path": "EVL_SORD.MMM",
+          "offset": "0x1a"
+        },
+        {
+          "type": "file",
+          "path": "FIGHT.MMM",
+          "offset": "0x1b"
+        },
+        {
+          "type": "file",
+          "path": "IGYOU.MMM",
+          "offset": "0x1c"
+        },
+        {
+          "type": "file",
+          "path": "IZUMI.MMM",
+          "offset": "0x1d"
+        },
+        {
+          "type": "file",
+          "path": "KUON.MMM",
+          "offset": "0x1e"
+        },
+        {
+          "type": "file",
+          "path": "KURAYAMI.MMM",
+          "offset": "0x1f"
+        },
+        {
+          "type": "file",
+          "path": "KYOUEN.MMM",
+          "offset": "0x20"
+        },
+        {
+          "type": "file",
+          "path": "MAZOKU.MMM",
+          "offset": "0x21"
+        },
+        {
+          "type": "file",
+          "path": "MIDNIGHT.MMM",
+          "offset": "0x22"
+        },
+        {
+          "type": "file",
+          "path": "NOTENKI.MMM",
+          "offset": "0x23"
+        },
+        {
+          "type": "file",
+          "path": "ONDO.MMM",
+          "offset": "0x24"
+        },
+        {
+          "type": "file",
+          "path": "OP_1.MMM",
+          "offset": "0x25"
+        },
+        {
+          "type": "file",
+          "path": "OP_2.MMM",
+          "offset": "0x26"
+        },
+        {
+          "type": "file",
+          "path": "SOUGEN.MMM",
+          "offset": "0x27"
+        },
+        {
+          "type": "file",
+          "path": "SOYOKAZE.MMM",
+          "offset": "0x28"
+        },
+        {
+          "type": "file",
+          "path": "TASOGARE.MMM",
+          "offset": "0x29"
+        },
+        {
+          "type": "file",
+          "path": "TENSHI.MMM",
+          "offset": "0x2a"
+        },
+        {
+          "type": "file",
+          "path": "TITLE.MMM",
+          "offset": "0x2b"
+        },
+        {
+          "type": "file",
+          "path": "TOKEI.MMM",
+          "offset": "0x2c"
+        },
+        {
+          "type": "file",
+          "path": "ZUOOO.MMM",
+          "offset": "0x2d"
+        },
+        {
+          "type": "shell",
+          "path": "pmdibm /k",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "pmd_98",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "AKEUTA.MMM   : 暁の詩"
+        },
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "ANKOKU.MMM   : 暗黒の軍団"
+        },
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "BALLADE.MMM  : 星空に願いを"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "BALPIVER.MMM : 星空に願いを"
+        },
+        {
+          "kind": "title",
+          "code": "0x14",
+          "title": "BATTLE.MMM   : I'll get win all my power."
+        },
+        {
+          "kind": "title",
+          "code": "0x15",
+          "title": "BLACK.MMM    : Battle de Black"
+        },
+        {
+          "kind": "title",
+          "code": "0x16",
+          "title": "BOSANOVA.MMM : 自由の旅人"
+        },
+        {
+          "kind": "title",
+          "code": "0x17",
+          "title": "CUTE.MMM     : Angel Sanctuary"
+        },
+        {
+          "kind": "title",
+          "code": "0x18",
+          "title": "DARK.MMM     : ダークマター"
+        },
+        {
+          "kind": "title",
+          "code": "0x19",
+          "title": "DOUKUTSU.MMM : Quickening"
+        },
+        {
+          "kind": "title",
+          "code": "0x1A",
+          "title": "EVL_SORD.MMM : Neuralfear"
+        },
+        {
+          "kind": "title",
+          "code": "0x1B",
+          "title": "FIGHT.MMM    : Fight For Justice"
+        },
+        {
+          "kind": "title",
+          "code": "0x1C",
+          "title": "IGYOU.MMM    : 異形の騎士"
+        },
+        {
+          "kind": "title",
+          "code": "0x1D",
+          "title": "IZUMI.MMM    : Eternal Field"
+        },
+        {
+          "kind": "title",
+          "code": "0x1E",
+          "title": "KUON.MMM     : 久遠の静寂"
+        },
+        {
+          "kind": "title",
+          "code": "0x1F",
+          "title": "KURAYAMI.MMM : 暗闇に輝く剣"
+        },
+        {
+          "kind": "title",
+          "code": "0x20",
+          "title": "KYOUEN.MMM   : 魔の饗宴"
+        },
+        {
+          "kind": "title",
+          "code": "0x21",
+          "title": "MAZOKU.MMM   : Infinity Resident"
+        },
+        {
+          "kind": "title",
+          "code": "0x22",
+          "title": "MIDNIGHT.MMM : ミッドナイト クロー"
+        },
+        {
+          "kind": "title",
+          "code": "0x23",
+          "title": "NOTENKI.MMM  : 今日も一日脳天気"
+        },
+        {
+          "kind": "title",
+          "code": "0x24",
+          "title": "ONDO.MMM     : そぉさる音頭"
+        },
+        {
+          "kind": "title",
+          "code": "0x25",
+          "title": "OP_1.MMM     : オープニング1A"
+        },
+        {
+          "kind": "title",
+          "code": "0x26",
+          "title": "OP_2.MMM     : オープニング2(悠久の大地)"
+        },
+        {
+          "kind": "title",
+          "code": "0x27",
+          "title": "SOUGEN.MMM   : 流れる雲の様に"
+        },
+        {
+          "kind": "title",
+          "code": "0x28",
+          "title": "SOYOKAZE.MMM : Bell Epoch"
+        },
+        {
+          "kind": "title",
+          "code": "0x29",
+          "title": "TASOGARE.MMM : 黄昏"
+        },
+        {
+          "kind": "title",
+          "code": "0x2A",
+          "title": "TENSHI.MMM   : 天使の贈物"
+        },
+        {
+          "kind": "title",
+          "code": "0x2B",
+          "title": "TITLE.MMM    : タイトル"
+        },
+        {
+          "kind": "title",
+          "code": "0x2C",
+          "title": "TOKEI.MMM    : Chrono Traveler"
+        },
+        {
+          "kind": "title",
+          "code": "0x2D",
+          "title": "ZUOOO.MMM    : タイトル"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/aypio.xml",
+      "source_order": 408,
+      "archive": "sk_at",
+      "id": "sk-at-adlib"
+    }
+  ]
+}

@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="hoot.xsl"?>
+<!DOCTYPE gamelist [
+	<!ELEMENT gamelist (game|bind|childlists)*>
+	<!ATTLIST gamelist date CDATA #IMPLIED>
+	<!ELEMENT childlists (list)*>
+	<!ELEMENT list (#PCDATA)>
+	<!ELEMENT bind (exts,driver,options?)>
+	<!ELEMENT exts (ext)*>
+	<!ELEMENT ext (#PCDATA)>
+	<!ELEMENT game (name,driver,driveralias?,options?,romlist?,titlelist?)>
+	<!ELEMENT name (#PCDATA)>
+	<!ELEMENT driver (#PCDATA)>
+	<!ATTLIST driver type CDATA #IMPLIED>
+	<!ELEMENT driveralias (#PCDATA)>
+	<!ATTLIST driveralias type CDATA #IMPLIED>
+	<!ELEMENT options (option)*>
+	<!ELEMENT option EMPTY>
+	<!ATTLIST option name CDATA #REQUIRED
+					 value CDATA #REQUIRED>
+	<!ELEMENT romlist (rom)*>
+	<!ATTLIST romlist archive CDATA #IMPLIED>
+	<!ELEMENT rom (#PCDATA)>
+	<!ATTLIST rom type CDATA #REQUIRED
+				  offset CDATA #IMPLIED
+				  crc32 CDATA #IMPLIED>
+	<!ELEMENT titlelist (title|range)*>
+	<!ELEMENT title (#PCDATA)>
+	<!ATTLIST title code CDATA #REQUIRED
+					type CDATA #IMPLIED>
+	<!ELEMENT range (#PCDATA)>
+	<!ATTLIST range min CDATA #REQUIRED
+					max CDATA #REQUIRED
+					extcode CDATA #IMPLIED
+					start CDATA #IMPLIED>
+
+]>
+<gamelist date="2005/09/25">
+	<!-- //EPIC/SONY RECORDS-->
+	<game>
+		<name>[PC-9801] XENON 2 MEGABLAST</name>
+		<driver type="opn">pc98dos</driver>
+		<driveralias type="NEC PC-9801">EPIC/SONY RECORDS</driveralias>
+		<romlist archive="xenon2_98">
+			<rom type="file" offset="-1">x2.com</rom>
+			<rom type="file" offset="-1">XENON2.EXE</rom>
+			<rom type="file" offset="0x10">MSCDAT.MO</rom>
+			<rom type="file" offset="0x11">S0/MSCBOS.MO</rom>
+			<rom type="file" offset="0x12">S0/MSCDAT.MO</rom>
+			<rom type="file" offset="0x13">S1/MSCBOS.MO</rom>
+			<rom type="file" offset="0x14">S1/MSCDAT.MO</rom>
+			<rom type="file" offset="0x15">S2/MSCBOS.MO</rom>
+			<rom type="file" offset="0x16">S2/MSCDAT.MO</rom>
+			<rom type="file" offset="0x17">S3/MSCBOS.MO</rom>
+			<rom type="file" offset="0x18">S3/MSCDAT.MO</rom>
+			<rom type="file" offset="0x19">S4/MSCBOS.MO</rom>
+			<rom type="file" offset="0x1a">S4/MSCDAT.MO</rom>
+			<rom type="file" offset="0x1b">S5/MSCBOS.MO</rom>
+			<rom type="file" offset="0x1c">S5/MSCDAT.MO</rom>
+			<rom type="shell" offset="0">x2</rom>
+		</romlist>
+		<titlelist>
+			<title code="0x0010">MSCDAT.MO    : Title</title>
+			<title code="0x0012">S0/MSCDAT.MO : Main BGM / Special Mode Ending</title>
+		<!--	<title code="0x0011">S0/MSCBOS.MO : Boss</title> -->
+			<title code="0x0014">S1/MSCDAT.MO : Special Mode Level 1</title>
+			<title code="0x0013">S1/MSCBOS.MO : Special Mode Boss 1</title>
+			<title code="0x0016">S2/MSCDAT.MO : Special Mode Level 2</title>
+			<title code="0x0015">S2/MSCBOS.MO : Special Mode Boss 2</title>
+			<title code="0x0018">S3/MSCDAT.MO : Special Mode Level 3</title>
+		<!--	<title code="0x0017">S3/MSCBOS.MO : Special Mode Boss 1</title> -->
+			<title code="0x001a">S4/MSCDAT.MO : Special Mode Level 4</title>
+		<!--	<title code="0x0019">S4/MSCBOS.MO : Special Mode Boss 2</title> -->
+			<title code="0x001c">S5/MSCDAT.MO : Special Mode Level 5</title>
+			<title code="0x001b">S5/MSCBOS.MO : Special Mode Last Boss</title>
+		</titlelist>
+	</game>
+	<game>
+		<name>[PC-9801] DRAKKHEN</name>
+		<driver type="opn">pc98dos</driver>
+		<driveralias type="NEC PC-9801">EPIC/SONY RECORDS</driveralias>
+		<options>
+			<option name="clockmul" value="8"/>
+		</options>
+		<romlist archive="drk98">
+			<rom type="file" offset="-1">drk.com</rom>
+			<rom type="file" offset="-1">DRKMUS.EXE</rom>
+			<rom type="shell" offset="0">drkmus</rom>
+			<rom type="shell" offset="0">drk</rom>
+		</romlist>
+		<titlelist>
+		<!--	<title code="0x0000">MUSIC STOP</title> -->
+			<title code="0x0001">Title</title>
+			<title code="0x0011">Character Making</title>
+			<title code="0x0004">Earth Area (Day)</title>
+			<title code="0x0005">Water Area (Day)</title>
+			<title code="0x0002">Air Area (Day)</title>
+			<title code="0x0008">Fire Area (Day)</title>
+			<title code="0x0009">All Area (Night)</title>
+			<title code="0x0003">Haaggkhen's Castle / Haaggkha's Castle</title>
+			<title code="0x000f">Hordkhen's Castle / Naaktkha's Castle / Hazulkha's Castle / Hazulkhen's Castle</title>
+			<title code="0x0013">Hordkhen / Hazhulkha / Naaktkha / Haaggkhen / Hazhulkhen</title>
+			<title code="0x000c">Bar</title>
+			<title code="0x0007">House in Earth Area / House in Water Area</title>
+			<title code="0x000a">House in Air Area / House in Fire Area</title>
+			<title code="0x000b">Weapon Shop</title>
+			<title code="0x000e">ANAK</title>
+			<title code="0x0014">Transference</title>
+			<title code="0x0015">Center of Island</title>
+		<!--	<title code="0x0010">Center of Island</title> -->
+			<title code="0x0017">Ending</title>
+			<title code="0x0006">Game Over</title>
+			<title code="0x0012">Shade of Doom</title>
+			<title code="0x000d">Music #0D</title>
+			<title code="0x0016">Music #16</title>
+			<title code="0x0100">Effect Stop</title>
+			<title code="0x0101">Effect #01</title>
+			<title code="0x0103">Effect #03</title>
+			<title code="0x0105">Effect #05</title>
+			<title code="0x0106">Effect #06</title>
+			<title code="0x0107">Effect #07</title>
+			<title code="0x0108">Effect #08</title>
+			<title code="0x0109">Effect #09</title>
+			<title code="0x010b">Effect #0b</title>
+			<title code="0x010c">Effect #0c</title>
+			<title code="0x010f">Effect #0f</title>
+			<title code="0x0111">Effect #11</title>
+			<title code="0x0112">Effect #12</title>
+			<title code="0x0113">Effect #13</title>
+			<title code="0x0114">Effect #14</title>
+			<title code="0x0115">Effect #15</title>
+			<title code="0x0116">Effect #16</title>
+			<title code="0x0117">Effect #17</title>
+			<title code="0x0118">Effect #18</title>
+			<title code="0x0119">Effect #19</title>
+			<title code="0x011a">Effect #1A</title>
+			<title code="0x011b">Effect #1B</title>
+			<title code="0x011c">Effect #1C</title>
+			<title code="0x011d">Effect #1D</title>
+			<title code="0x011e">Effect #1E</title>
+			<title code="0x011f">Effect #1F</title>
+			<title code="0x0120">Effect #20</title>
+			<title code="0x0123">Effect #23</title>
+			<title code="0x0124">Effect #24</title>
+			<title code="0x0125">Effect #25</title>
+			<title code="0x0126">Effect #26</title>
+			<title code="0x0127">Effect #27</title>
+			<title code="0x0128">Effect #28</title>
+			<title code="0x012a">Effect #2A</title>
+			<title code="0x012b">Effect #2B</title>
+			<title code="0x012c">Effect #2C</title>
+			<title code="0x012d">Effect #2D</title>
+			<title code="0x012e">Effect #2E</title>
+			<title code="0x012f">Effect #2F</title>
+			<title code="0x0130">Effect #30</title>
+			<title code="0x0131">Effect #31</title>
+			<title code="0x0132">Effect #32</title>
+			<title code="0x0133">Effect #33</title>
+			<title code="0x0134">Effect #34</title>
+			<title code="0x0135">Effect #35</title>
+			<title code="0x0136">Effect #36</title>
+			<title code="0x0137">Effect #37</title>
+		</titlelist>
+	</game>
+	<game>
+		<name>[X68000] XENON2 MEGABLAST(OPM)</name>
+		<driver type="generic">x68k</driver>
+		<driveralias type="SHARP X68000">EPIC/SONY RECORDS</driveralias>
+		<options>
+			<option name="mfp" value="0x01"/>
+			<option name="dmaint"  value="1"/>
+		</options>
+		<romlist archive="xenon68snd">
+			<rom type="code" offset="0x00000">xenon68snd.bin</rom>
+			<rom type="x" offset="0x10000">SAKDRV.X</rom>
+			<rom type="code" offset="0x020000">XENON2.DAT</rom>
+			<rom type="code" offset="0x022000">XENON2.MO</rom>
+			<rom type="code" offset="0x024000">XEN2.MO</rom>
+			<rom type="code" offset="0x027000">XN002.MO</rom>
+			<rom type="code" offset="0x029000">XN003.MO</rom>
+			<rom type="code" offset="0x02b000">XN004.MO</rom>
+			<rom type="code" offset="0x02d000">XN005.MO</rom>
+			<rom type="code" offset="0x02f000">XN007.MO</rom>
+			<rom type="code" offset="0x031000">XN008.MO</rom>
+			<rom type="code" offset="0x033000">XN009.MO</rom>
+			<rom type="code" offset="0x035000">XN010.MO</rom>
+			<rom type="code" offset="0x037000">XEN2.PCM</rom>
+			<rom type="code" offset="0x044000">XENON2.PCM</rom>
+		</romlist>
+		<titlelist>
+			<title code="0x01">XENON2.MO : Title</title>
+			<title code="0x02">XEN2.MO   : Main BGM / Special Mode Ending</title>
+			<title code="0x05">XN004.MO  : Special Mode Level 1</title>
+			<title code="0x07">XN007.MO  : Special Mode Boss 1</title>
+			<title code="0x04">XN003.MO  : Special Mode Level 2</title>
+			<title code="0x08">XN008.MO  : Special Mode Boss 2</title>
+			<title code="0x03">XN002.MO  : Special Mode Level 3</title>
+			<title code="0x06">XN005.MO  : Special Mode Level 4</title>
+			<title code="0x0a">XN010.MO  : Special Mode Level 5</title>
+			<title code="0x09">XN009.MO  : Special Mode Last Boss</title>
+		</titlelist>
+	</game>
+	<game>
+		<name>[X68000] XENON2 MEGABLAST(MT-32)</name>
+		<driver type="generic">x68k</driver>
+		<driveralias type="SHARP X68000">EPIC/SONY RECORDS</driveralias>
+		<options>
+			<option name="mfp" value="0x01"/>
+			<option name="dmaint"  value="1"/>
+			<option name="midiout" value="1"/>
+			<option name="midiout_type" value="2"/>
+		</options>
+		<romlist archive="xenon68snd">
+			<rom type="code" offset="0x00000">xenon68mid.bin</rom>
+			<rom type="x" offset="0x10000">MIDIDRV.X</rom>
+			<rom type="code" offset="0x022000">XENON2.MD</rom>
+			<rom type="code" offset="0x024000">XEN2.MD</rom>
+			<rom type="code" offset="0x027000">XN002.MD</rom>
+			<rom type="code" offset="0x029000">XN003.MD</rom>
+			<rom type="code" offset="0x02b000">XN004.MD</rom>
+			<rom type="code" offset="0x02d000">XN005.MD</rom>
+			<rom type="code" offset="0x02f000">XN007.MD</rom>
+			<rom type="code" offset="0x031000">XN008.MD</rom>
+			<rom type="code" offset="0x033000">XN009.MD</rom>
+			<rom type="code" offset="0x035000">XN010.MD</rom>
+		</romlist>
+		<titlelist>
+			<title code="0x01">XENON2.MO : Title</title>
+			<title code="0x02">XEN2.MO   : Main BGM / Special Mode Ending</title>
+			<title code="0x05">XN004.MO  : Special Mode Level 1</title>
+			<title code="0x07">XN007.MO  : Special Mode Boss 1</title>
+			<title code="0x04">XN003.MO  : Special Mode Level 2</title>
+			<title code="0x08">XN008.MO  : Special Mode Boss 2</title>
+			<title code="0x03">XN002.MO  : Special Mode Level 3</title>
+			<title code="0x06">XN005.MO  : Special Mode Level 4</title>
+			<title code="0x0a">XN010.MO  : Special Mode Level 5</title>
+			<title code="0x09">XN009.MO  : Special Mode Last Boss</title>
+		</titlelist>
+	</game>
+	<game>
+		<name>[X68000] XENON2 MEGABLAST(MT-32 Emulation)</name>
+		<driver type="generic">x68k</driver>
+		<driveralias type="SHARP X68000">EPIC/SONY RECORDS</driveralias>
+		<options>
+			<option name="mfp" value="0x01"/>
+			<option name="dmaint"  value="1"/>
+			<option name="midiout" value="1"/>
+			<option name="midiout_type" value="1"/>
+		</options>
+		<romlist archive="xenon68snd">
+			<rom type="code" offset="0x00000">xenon68mid.bin</rom>
+			<rom type="x" offset="0x10000">MIDIDRV.X</rom>
+			<rom type="code" offset="0x022000">XENON2.MD</rom>
+			<rom type="code" offset="0x024000">XEN2.MD</rom>
+			<rom type="code" offset="0x027000">XN002.MD</rom>
+			<rom type="code" offset="0x029000">XN003.MD</rom>
+			<rom type="code" offset="0x02b000">XN004.MD</rom>
+			<rom type="code" offset="0x02d000">XN005.MD</rom>
+			<rom type="code" offset="0x02f000">XN007.MD</rom>
+			<rom type="code" offset="0x031000">XN008.MD</rom>
+			<rom type="code" offset="0x033000">XN009.MD</rom>
+			<rom type="code" offset="0x035000">XN010.MD</rom>
+		</romlist>
+		<titlelist>
+			<title code="0x01">XENON2.MO : Title</title>
+			<title code="0x02">XEN2.MO   : Main BGM / Special Mode Ending</title>
+			<title code="0x05">XN004.MO  : Special Mode Level 1</title>
+			<title code="0x07">XN007.MO  : Special Mode Boss 1</title>
+			<title code="0x04">XN003.MO  : Special Mode Level 2</title>
+			<title code="0x08">XN008.MO  : Special Mode Boss 2</title>
+			<title code="0x03">XN002.MO  : Special Mode Level 3</title>
+			<title code="0x06">XN005.MO  : Special Mode Level 4</title>
+			<title code="0x0a">XN010.MO  : Special Mode Level 5</title>
+			<title code="0x09">XN009.MO  : Special Mode Last Boss</title>
+		</titlelist>
+	</game>
+	<game>
+		<name>[X68000] DRAKKHEN</name>
+		<driver type="generic">x68k</driver>
+		<driveralias type="SHARP X68000">EPIC/SONY RECORDS</driveralias>
+		<options>
+			<option name="mfp"     value="0x01"/>
+		</options>
+		<romlist archive="drk68snd">
+			<rom type="code" offset="0x00000">drkn68snd.bin</rom>
+			<rom type="x"    offset="0x10000">GAME.X</rom>
+			<rom type="code" offset="0x41000">DRK_M.MGD</rom>
+			<rom type="code" offset="0x47000">DRK_E.MGD</rom>
+			<rom type="code" offset="0x49000">DRA.SMP</rom>
+			<rom type="code" offset="0x73000">DRKEND.SMP</rom>
+		</romlist>
+		<titlelist>
+			<title code="0x02">Title</title>
+			<title code="0x12">Character Making</title>
+			<title code="0x05">Earth Area (Day)</title>
+			<title code="0x06">Water Area (Day)</title>
+			<title code="0x03">Air Area (Day)</title>
+			<title code="0x09">Fire Area (Day)</title>
+			<title code="0x0a">All Area (Night)</title>
+			<title code="0x04">Haaggkhen's Castle / Haaggkha's Castle</title>
+			<title code="0x10">Hordkhen's Castle / Naaktkha's Castle / Hazulkha's Castle / Hazulkhen's Castle</title>
+			<title code="0x14">Hordkhen / Hazhulkha / Naaktkha / Haaggkhen / Hazhulkhen</title>
+			<title code="0x0d">Bar</title>
+			<title code="0x08">House in Earth Area / House in Water Area</title>
+			<title code="0x0b">House in Air Area / House in Fire Area</title>
+			<title code="0x0c">Weapon Shop</title>
+			<title code="0x0f">ANAK</title>
+			<title code="0x15">Transference</title>
+			<title code="0x16">Center of Island</title>
+			<title code="0x18">Ending</title>
+			<title code="0x07">Game Over</title>
+			<title code="0x13">Shade of Doom</title>
+		</titlelist>
+	</game>
+</gamelist>

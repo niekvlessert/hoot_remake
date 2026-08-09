@@ -1,0 +1,68 @@
+{
+  "format": "hoot-catalog-shard",
+  "version": 1,
+  "source_file": "xml/chatnoir.xml",
+  "date": "2005/09/25",
+  "comments": [
+    " //Chatnoir "
+  ],
+  "games": [
+    {
+      "title": "[X68000] プロフェッショナル麻雀悟空",
+      "driver": {
+        "name": "x68k",
+        "type": "generic",
+        "alias": "Chatnoir",
+        "platform": "SHARP X68000"
+      },
+      "options": [
+        {
+          "name": "mfp",
+          "value": "0x01"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "mjgokuh68snd.bin"
+        },
+        {
+          "type": "x",
+          "path": "GOKU.X",
+          "offset": "0x010000"
+        },
+        {
+          "type": "code",
+          "path": "DATA.BIN",
+          "offset": "0x0c0000"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "range",
+          "min": "0x01",
+          "max": "0x16",
+          "title_format": "BGM %02x",
+          "extcode": "1"
+        },
+        {
+          "kind": "title",
+          "code": "0x0101",
+          "title": "SE 01"
+        },
+        {
+          "kind": "range",
+          "min": "0x102",
+          "max": "0x107",
+          "title_format": "VOICE %02x",
+          "extcode": "0"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/chatnoir.xml",
+      "source_order": 694,
+      "archive": "pmjgokuh68snd",
+      "id": "pmjgokuh68snd-generic"
+    }
+  ]
+}

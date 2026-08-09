@@ -1,0 +1,120 @@
+{
+  "format": "hoot-catalog-shard",
+  "version": 1,
+  "source_file": "xml/microvision.xml",
+  "date": "2022/09/29",
+  "comments": [
+    " //Micro Vision "
+  ],
+  "games": [
+    {
+      "title": "[PC-9801] EX-LANDER ～青き紋章の騎士団～",
+      "driver": {
+        "name": "pc98dos",
+        "type": "opn",
+        "alias": "Micro Vision",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "clockmul",
+          "value": "8"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "exldr_98.com",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "OPENING.EXE",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "CEREMONY.MDS",
+          "offset": "0x10"
+        },
+        {
+          "type": "file",
+          "path": "ENDING.MDS",
+          "offset": "0x11"
+        },
+        {
+          "type": "file",
+          "path": "MV_03.MDS",
+          "offset": "0x12"
+        },
+        {
+          "type": "file",
+          "path": "MV_04.MDS",
+          "offset": "0x13"
+        },
+        {
+          "type": "file",
+          "path": "OPENING.MDS",
+          "offset": "0x14"
+        },
+        {
+          "type": "file",
+          "path": "SCENARIO.MDS",
+          "offset": "0x15"
+        },
+        {
+          "type": "file",
+          "path": "THEME.MDS",
+          "offset": "0x16"
+        },
+        {
+          "type": "shell",
+          "path": "exldr_98.com",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x14",
+          "title": "OPENING.MDS  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x16",
+          "title": "THEME.MDS    :"
+        },
+        {
+          "kind": "title",
+          "code": "0x15",
+          "title": "SCENARIO.MDS :"
+        },
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "CEREMONY.MDS :"
+        },
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "ENDING.MDS   :"
+        },
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "MV_03.MDS    :"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "MV_04.MDS    :"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/microvision.xml",
+      "source_order": 3272,
+      "archive": "exlander_98",
+      "id": "exlander-98-opn"
+    }
+  ]
+}

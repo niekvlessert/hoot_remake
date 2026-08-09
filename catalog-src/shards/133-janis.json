@@ -1,0 +1,5168 @@
+{
+  "format": "hoot-catalog-shard",
+  "version": 1,
+  "source_file": "xml/janis.xml",
+  "date": "2005/09/25",
+  "comments": [
+    " //JANIS "
+  ],
+  "games": [
+    {
+      "title": "[PC-9801] ごくらくアリーナ",
+      "driver": {
+        "name": "pc98dos",
+        "type": "opn",
+        "alias": "JANIS",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "clockmul",
+          "value": "8"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "mdznplay.com",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MDZN.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "GOKU_01.MDZ",
+          "offset": "0x10"
+        },
+        {
+          "type": "file",
+          "path": "GOKU_02.MDZ",
+          "offset": "0x11"
+        },
+        {
+          "type": "file",
+          "path": "GOKU_03.MDZ",
+          "offset": "0x12"
+        },
+        {
+          "type": "file",
+          "path": "GOKU_04.MDZ",
+          "offset": "0x13"
+        },
+        {
+          "type": "file",
+          "path": "GOKU_05.MDZ",
+          "offset": "0x14"
+        },
+        {
+          "type": "file",
+          "path": "GOKU_06.MDZ",
+          "offset": "0x15"
+        },
+        {
+          "type": "file",
+          "path": "GOKU_07.MDZ",
+          "offset": "0x16"
+        },
+        {
+          "type": "file",
+          "path": "GOKU_08.MDZ",
+          "offset": "0x17"
+        },
+        {
+          "type": "file",
+          "path": "GOKU_09.MDZ",
+          "offset": "0x18"
+        },
+        {
+          "type": "file",
+          "path": "GOKU_10.MDZ",
+          "offset": "0x19"
+        },
+        {
+          "type": "file",
+          "path": "GOKU_11.MDZ",
+          "offset": "0x1A"
+        },
+        {
+          "type": "file",
+          "path": "GOKU_12.MDZ",
+          "offset": "0x1B"
+        },
+        {
+          "type": "file",
+          "path": "GOKU_13.MDZ",
+          "offset": "0x1C"
+        },
+        {
+          "type": "file",
+          "path": "GOKU_14.MDZ",
+          "offset": "0x1D"
+        },
+        {
+          "type": "file",
+          "path": "GOKU_15.MDZ",
+          "offset": "0x1E"
+        },
+        {
+          "type": "file",
+          "path": "GOKU_16.MDZ",
+          "offset": "0x1F"
+        },
+        {
+          "type": "file",
+          "path": "GOKU_17.MDZ",
+          "offset": "0x20"
+        },
+        {
+          "type": "shell",
+          "path": "mdzn S -#8 -E8",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "mdznplay",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "GOKU_01.MDZ : 通常画面(シナリオ2)"
+        },
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "GOKU_02.MDZ : オチ画面(シナリオ2)"
+        },
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "GOKU_03.MDZ : Hシーン(シナリオ1,2)"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "GOKU_04.MDZ : 通常画面(シナリオ3)"
+        },
+        {
+          "kind": "title",
+          "code": "0x14",
+          "title": "GOKU_05.MDZ : Hシーン(シナリオ3,4,5)"
+        },
+        {
+          "kind": "title",
+          "code": "0x15",
+          "title": "GOKU_06.MDZ : しのぶとのHシーン(シナリオ4)"
+        },
+        {
+          "kind": "title",
+          "code": "0x16",
+          "title": "GOKU_07.MDZ : 通常画面(シナリオ4)"
+        },
+        {
+          "kind": "title",
+          "code": "0x17",
+          "title": "GOKU_08.MDZ : アイドルの曲(シナリオ4)"
+        },
+        {
+          "kind": "title",
+          "code": "0x18",
+          "title": "GOKU_09.MDZ : 通常画面(シナリオ5)"
+        },
+        {
+          "kind": "title",
+          "code": "0x19",
+          "title": "GOKU_10.MDZ : 機内(シナリオ5)"
+        },
+        {
+          "kind": "title",
+          "code": "0x1A",
+          "title": "GOKU_11.MDZ : 通常画面(シナリオ1)"
+        },
+        {
+          "kind": "title",
+          "code": "0x1B",
+          "title": "GOKU_12.MDZ : オープニング"
+        },
+        {
+          "kind": "title",
+          "code": "0x1C",
+          "title": "GOKU_13.MDZ : スタッフロール"
+        },
+        {
+          "kind": "title",
+          "code": "0x1D",
+          "title": "GOKU_14.MDZ : エンディング1.2"
+        },
+        {
+          "kind": "title",
+          "code": "0x1E",
+          "title": "GOKU_15.MDZ : エンディング3,4"
+        },
+        {
+          "kind": "title",
+          "code": "0x1F",
+          "title": "GOKU_16.MDZ : ビデオ選択画面"
+        },
+        {
+          "kind": "title",
+          "code": "0x20",
+          "title": "GOKU_17.MDZ : エンディング5"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/janis.xml",
+      "source_order": 2658,
+      "archive": "goku_98",
+      "id": "goku-98-opn"
+    },
+    {
+      "title": "[PC-9801] 学園トライアングル(OPN)",
+      "driver": {
+        "name": "pc98dos",
+        "type": "opn",
+        "alias": "JANIS",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "showfm3ex",
+          "value": "1"
+        },
+        {
+          "name": "clockmul",
+          "value": "8"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "IBGM.EXE",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "IBGMP.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "GT000.MID",
+          "offset": "0x10"
+        },
+        {
+          "type": "file",
+          "path": "GT001.MID",
+          "offset": "0x11"
+        },
+        {
+          "type": "file",
+          "path": "GT002.MID",
+          "offset": "0x12"
+        },
+        {
+          "type": "file",
+          "path": "GT003.MID",
+          "offset": "0x13"
+        },
+        {
+          "type": "file",
+          "path": "GT004.MID",
+          "offset": "0x14"
+        },
+        {
+          "type": "file",
+          "path": "GT005.MID",
+          "offset": "0x15"
+        },
+        {
+          "type": "file",
+          "path": "GT006.MID",
+          "offset": "0x16"
+        },
+        {
+          "type": "file",
+          "path": "GT007.MID",
+          "offset": "0x17"
+        },
+        {
+          "type": "file",
+          "path": "GT008.MID",
+          "offset": "0x18"
+        },
+        {
+          "type": "file",
+          "path": "GT009.MID",
+          "offset": "0x19"
+        },
+        {
+          "type": "file",
+          "path": "GT010.MID",
+          "offset": "0x1a"
+        },
+        {
+          "type": "file",
+          "path": "GT011.MID",
+          "offset": "0x1b"
+        },
+        {
+          "type": "file",
+          "path": "GT012.MID",
+          "offset": "0x1c"
+        },
+        {
+          "type": "file",
+          "path": "GT013.MID",
+          "offset": "0x1d"
+        },
+        {
+          "type": "file",
+          "path": "GT014.MID",
+          "offset": "0x1e"
+        },
+        {
+          "type": "shell",
+          "path": "IBGM.EXE -J",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "IBGMP.COM",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "GT000.MID : れべるあっぷ!"
+        },
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "GT001.MID : オープニング"
+        },
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "GT002.MID : 準備画面"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "GT003.MID : 平和な曲"
+        },
+        {
+          "kind": "title",
+          "code": "0x14",
+          "title": "GT004.MID : 緊張"
+        },
+        {
+          "kind": "title",
+          "code": "0x15",
+          "title": "GT005.MID : ほのぼのH"
+        },
+        {
+          "kind": "title",
+          "code": "0x16",
+          "title": "GT006.MID : お仕置きH"
+        },
+        {
+          "kind": "title",
+          "code": "0x17",
+          "title": "GT007.MID : コミカル"
+        },
+        {
+          "kind": "title",
+          "code": "0x18",
+          "title": "GT008.MID : 明るいマーチの戦闘曲"
+        },
+        {
+          "kind": "title",
+          "code": "0x19",
+          "title": "GT009.MID : 戦闘3"
+        },
+        {
+          "kind": "title",
+          "code": "0x1a",
+          "title": "GT010.MID : 戦闘2"
+        },
+        {
+          "kind": "title",
+          "code": "0x1b",
+          "title": "GT011.MID : 戦闘4"
+        },
+        {
+          "kind": "title",
+          "code": "0x1c",
+          "title": "GT012.MID : エンディング1"
+        },
+        {
+          "kind": "title",
+          "code": "0x1d",
+          "title": "GT013.MID : エンディング2"
+        },
+        {
+          "kind": "title",
+          "code": "0x1e",
+          "title": "GT014.MID : れべるあっぷ!"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/janis.xml",
+      "source_order": 2659,
+      "archive": "gtriangl_98",
+      "id": "gtriangl-98-opn"
+    },
+    {
+      "title": "[PC-9801] 学園トライアングル(OPNA)",
+      "driver": {
+        "name": "pc98dos",
+        "type": "opna",
+        "alias": "JANIS",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "showfm3ex",
+          "value": "1"
+        },
+        {
+          "name": "clockmul",
+          "value": "8"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "IBGM.EXE",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "IBGMP.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "GT000.MID",
+          "offset": "0x10"
+        },
+        {
+          "type": "file",
+          "path": "GT001.MID",
+          "offset": "0x11"
+        },
+        {
+          "type": "file",
+          "path": "GT002.MID",
+          "offset": "0x12"
+        },
+        {
+          "type": "file",
+          "path": "GT003.MID",
+          "offset": "0x13"
+        },
+        {
+          "type": "file",
+          "path": "GT004.MID",
+          "offset": "0x14"
+        },
+        {
+          "type": "file",
+          "path": "GT005.MID",
+          "offset": "0x15"
+        },
+        {
+          "type": "file",
+          "path": "GT006.MID",
+          "offset": "0x16"
+        },
+        {
+          "type": "file",
+          "path": "GT007.MID",
+          "offset": "0x17"
+        },
+        {
+          "type": "file",
+          "path": "GT008.MID",
+          "offset": "0x18"
+        },
+        {
+          "type": "file",
+          "path": "GT009.MID",
+          "offset": "0x19"
+        },
+        {
+          "type": "file",
+          "path": "GT010.MID",
+          "offset": "0x1a"
+        },
+        {
+          "type": "file",
+          "path": "GT011.MID",
+          "offset": "0x1b"
+        },
+        {
+          "type": "file",
+          "path": "GT012.MID",
+          "offset": "0x1c"
+        },
+        {
+          "type": "file",
+          "path": "GT013.MID",
+          "offset": "0x1d"
+        },
+        {
+          "type": "file",
+          "path": "GT014.MID",
+          "offset": "0x1e"
+        },
+        {
+          "type": "shell",
+          "path": "IBGM.EXE -J",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "IBGMP.COM",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "GT000.MID : れべるあっぷ!"
+        },
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "GT001.MID : オープニング"
+        },
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "GT002.MID : 準備画面"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "GT003.MID : 平和な曲"
+        },
+        {
+          "kind": "title",
+          "code": "0x14",
+          "title": "GT004.MID : 緊張"
+        },
+        {
+          "kind": "title",
+          "code": "0x15",
+          "title": "GT005.MID : ほのぼのH"
+        },
+        {
+          "kind": "title",
+          "code": "0x16",
+          "title": "GT006.MID : お仕置きH"
+        },
+        {
+          "kind": "title",
+          "code": "0x17",
+          "title": "GT007.MID : コミカル"
+        },
+        {
+          "kind": "title",
+          "code": "0x18",
+          "title": "GT008.MID : 明るいマーチの戦闘曲"
+        },
+        {
+          "kind": "title",
+          "code": "0x19",
+          "title": "GT009.MID : 戦闘3"
+        },
+        {
+          "kind": "title",
+          "code": "0x1a",
+          "title": "GT010.MID : 戦闘2"
+        },
+        {
+          "kind": "title",
+          "code": "0x1b",
+          "title": "GT011.MID : 戦闘4"
+        },
+        {
+          "kind": "title",
+          "code": "0x1c",
+          "title": "GT012.MID : エンディング1"
+        },
+        {
+          "kind": "title",
+          "code": "0x1d",
+          "title": "GT013.MID : エンディング2"
+        },
+        {
+          "kind": "title",
+          "code": "0x1e",
+          "title": "GT014.MID : れべるあっぷ!"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/janis.xml",
+      "source_order": 2660,
+      "archive": "gtriangl_98",
+      "id": "gtriangl-98-opna"
+    },
+    {
+      "title": "[PC-9801] 学園トライアングル(GS)",
+      "driver": {
+        "name": "pc98dos",
+        "type": "beep",
+        "alias": "JANIS",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "clockmul",
+          "value": "8"
+        },
+        {
+          "name": "midiout",
+          "value": "1"
+        },
+        {
+          "name": "midiout_type",
+          "value": "4"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "IBGM.EXE",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "IBGMPM.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "GT000.MID",
+          "offset": "0x10"
+        },
+        {
+          "type": "file",
+          "path": "GT001.MID",
+          "offset": "0x11"
+        },
+        {
+          "type": "file",
+          "path": "GT002.MID",
+          "offset": "0x12"
+        },
+        {
+          "type": "file",
+          "path": "GT003.MID",
+          "offset": "0x13"
+        },
+        {
+          "type": "file",
+          "path": "GT004.MID",
+          "offset": "0x14"
+        },
+        {
+          "type": "file",
+          "path": "GT005.MID",
+          "offset": "0x15"
+        },
+        {
+          "type": "file",
+          "path": "GT006.MID",
+          "offset": "0x16"
+        },
+        {
+          "type": "file",
+          "path": "GT007.MID",
+          "offset": "0x17"
+        },
+        {
+          "type": "file",
+          "path": "GT008.MID",
+          "offset": "0x18"
+        },
+        {
+          "type": "file",
+          "path": "GT009.MID",
+          "offset": "0x19"
+        },
+        {
+          "type": "file",
+          "path": "GT010.MID",
+          "offset": "0x1a"
+        },
+        {
+          "type": "file",
+          "path": "GT011.MID",
+          "offset": "0x1b"
+        },
+        {
+          "type": "file",
+          "path": "GT012.MID",
+          "offset": "0x1c"
+        },
+        {
+          "type": "file",
+          "path": "GT013.MID",
+          "offset": "0x1d"
+        },
+        {
+          "type": "file",
+          "path": "GT014.MID",
+          "offset": "0x1e"
+        },
+        {
+          "type": "shell",
+          "path": "IBGM.EXE -J",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "IBGMPM.COM",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "GT000.MID : れべるあっぷ！"
+        },
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "GT001.MID : オープニング"
+        },
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "GT002.MID : 準備画面"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "GT003.MID : 平和な曲"
+        },
+        {
+          "kind": "title",
+          "code": "0x14",
+          "title": "GT004.MID : 緊張"
+        },
+        {
+          "kind": "title",
+          "code": "0x15",
+          "title": "GT005.MID : ほのぼのH"
+        },
+        {
+          "kind": "title",
+          "code": "0x16",
+          "title": "GT006.MID : お仕置きH"
+        },
+        {
+          "kind": "title",
+          "code": "0x17",
+          "title": "GT007.MID : コミカル"
+        },
+        {
+          "kind": "title",
+          "code": "0x18",
+          "title": "GT008.MID : 明るいマーチの戦闘曲"
+        },
+        {
+          "kind": "title",
+          "code": "0x19",
+          "title": "GT009.MID : 戦闘3"
+        },
+        {
+          "kind": "title",
+          "code": "0x1a",
+          "title": "GT010.MID : 戦闘2"
+        },
+        {
+          "kind": "title",
+          "code": "0x1b",
+          "title": "GT011.MID : 戦闘4"
+        },
+        {
+          "kind": "title",
+          "code": "0x1c",
+          "title": "GT012.MID : エンディング1"
+        },
+        {
+          "kind": "title",
+          "code": "0x1d",
+          "title": "GT013.MID : エンディング2"
+        },
+        {
+          "kind": "title",
+          "code": "0x1e",
+          "title": "GT014.MID : れべるあっぷ!"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/janis.xml",
+      "source_order": 2661,
+      "archive": "gtriangl_98",
+      "id": "gtriangl-98-beep"
+    },
+    {
+      "title": "[PC-9801] くるみちゃんにんじゃあ(OPN)",
+      "driver": {
+        "name": "pc98dos",
+        "type": "opn",
+        "alias": "JANIS",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "showfm3ex",
+          "value": "1"
+        },
+        {
+          "name": "clockmul",
+          "value": "8"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "IBGM.EXE",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "IBGMP.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "KRM000.SND",
+          "offset": "0x10"
+        },
+        {
+          "type": "file",
+          "path": "KRM001.SND",
+          "offset": "0x11"
+        },
+        {
+          "type": "file",
+          "path": "KRM002.SND",
+          "offset": "0x12"
+        },
+        {
+          "type": "file",
+          "path": "KRM003.SND",
+          "offset": "0x13"
+        },
+        {
+          "type": "file",
+          "path": "KRM004.SND",
+          "offset": "0x14"
+        },
+        {
+          "type": "file",
+          "path": "KRM005.SND",
+          "offset": "0x15"
+        },
+        {
+          "type": "file",
+          "path": "KRM006.SND",
+          "offset": "0x16"
+        },
+        {
+          "type": "file",
+          "path": "KRM007.SND",
+          "offset": "0x17"
+        },
+        {
+          "type": "file",
+          "path": "KRM008.SND",
+          "offset": "0x18"
+        },
+        {
+          "type": "file",
+          "path": "KRM009.SND",
+          "offset": "0x19"
+        },
+        {
+          "type": "file",
+          "path": "KRM010.SND",
+          "offset": "0x1A"
+        },
+        {
+          "type": "file",
+          "path": "KRM011.SND",
+          "offset": "0x1B"
+        },
+        {
+          "type": "file",
+          "path": "KRM012.SND",
+          "offset": "0x1C"
+        },
+        {
+          "type": "file",
+          "path": "KRM013.SND",
+          "offset": "0x1D"
+        },
+        {
+          "type": "file",
+          "path": "KRM014.SND",
+          "offset": "0x1E"
+        },
+        {
+          "type": "file",
+          "path": "KRM015.SND",
+          "offset": "0x1F"
+        },
+        {
+          "type": "shell",
+          "path": "IBGM.EXE -J",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "IBGMP.COM",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "KRM000.SND : オープニング"
+        },
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "KRM001.SND : エンディング"
+        },
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "KRM002.SND : すずらん通りの昼下がり"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "KRM003.SND : お星さまきらきら"
+        },
+        {
+          "kind": "title",
+          "code": "0x14",
+          "title": "KRM004.SND : にんじゃのてーま"
+        },
+        {
+          "kind": "title",
+          "code": "0x15",
+          "title": "KRM005.SND : 堤防小町ドキッ!"
+        },
+        {
+          "kind": "title",
+          "code": "0x16",
+          "title": "KRM006.SND : 趣味は拘束"
+        },
+        {
+          "kind": "title",
+          "code": "0x17",
+          "title": "KRM007.SND : くるみファイト!"
+        },
+        {
+          "kind": "title",
+          "code": "0x18",
+          "title": "KRM008.SND : 高速NINJAバトル"
+        },
+        {
+          "kind": "title",
+          "code": "0x19",
+          "title": "KRM009.SND : いざ尋常に!"
+        },
+        {
+          "kind": "title",
+          "code": "0x1A",
+          "title": "KRM010.SND : 魅せます、くるみ大変幻!"
+        },
+        {
+          "kind": "title",
+          "code": "0x1B",
+          "title": "KRM011.SND : 尋問えっち"
+        },
+        {
+          "kind": "title",
+          "code": "0x1C",
+          "title": "KRM012.SND : 濡れ場だGo!"
+        },
+        {
+          "kind": "title",
+          "code": "0x1D",
+          "title": "KRM013.SND : ぴ～んち!"
+        },
+        {
+          "kind": "title",
+          "code": "0x1E",
+          "title": "KRM014.SND : 修羅の地に花一輪"
+        },
+        {
+          "kind": "title",
+          "code": "0x1F",
+          "title": "KRM015.SND : 天からサンライズ"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/janis.xml",
+      "source_order": 2662,
+      "archive": "krm_98",
+      "id": "krm-98-opn"
+    },
+    {
+      "title": "[PC-9801] くるみちゃんにんじゃあ(OPNA)",
+      "driver": {
+        "name": "pc98dos",
+        "type": "opna",
+        "alias": "JANIS",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "showfm3ex",
+          "value": "1"
+        },
+        {
+          "name": "clockmul",
+          "value": "8"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "IBGM.EXE",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "IBGMP.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "KRM000.SND",
+          "offset": "0x10"
+        },
+        {
+          "type": "file",
+          "path": "KRM001.SND",
+          "offset": "0x11"
+        },
+        {
+          "type": "file",
+          "path": "KRM002.SND",
+          "offset": "0x12"
+        },
+        {
+          "type": "file",
+          "path": "KRM003.SND",
+          "offset": "0x13"
+        },
+        {
+          "type": "file",
+          "path": "KRM004.SND",
+          "offset": "0x14"
+        },
+        {
+          "type": "file",
+          "path": "KRM005.SND",
+          "offset": "0x15"
+        },
+        {
+          "type": "file",
+          "path": "KRM006.SND",
+          "offset": "0x16"
+        },
+        {
+          "type": "file",
+          "path": "KRM007.SND",
+          "offset": "0x17"
+        },
+        {
+          "type": "file",
+          "path": "KRM008.SND",
+          "offset": "0x18"
+        },
+        {
+          "type": "file",
+          "path": "KRM009.SND",
+          "offset": "0x19"
+        },
+        {
+          "type": "file",
+          "path": "KRM010.SND",
+          "offset": "0x1A"
+        },
+        {
+          "type": "file",
+          "path": "KRM011.SND",
+          "offset": "0x1B"
+        },
+        {
+          "type": "file",
+          "path": "KRM012.SND",
+          "offset": "0x1C"
+        },
+        {
+          "type": "file",
+          "path": "KRM013.SND",
+          "offset": "0x1D"
+        },
+        {
+          "type": "file",
+          "path": "KRM014.SND",
+          "offset": "0x1E"
+        },
+        {
+          "type": "file",
+          "path": "KRM015.SND",
+          "offset": "0x1F"
+        },
+        {
+          "type": "shell",
+          "path": "IBGM.EXE -J",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "IBGMP.COM",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "KRM000.SND : オープニング"
+        },
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "KRM001.SND : エンディング"
+        },
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "KRM002.SND : すずらん通りの昼下がり"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "KRM003.SND : お星さまきらきら"
+        },
+        {
+          "kind": "title",
+          "code": "0x14",
+          "title": "KRM004.SND : にんじゃのてーま"
+        },
+        {
+          "kind": "title",
+          "code": "0x15",
+          "title": "KRM005.SND : 堤防小町ドキッ!"
+        },
+        {
+          "kind": "title",
+          "code": "0x16",
+          "title": "KRM006.SND : 趣味は拘束"
+        },
+        {
+          "kind": "title",
+          "code": "0x17",
+          "title": "KRM007.SND : くるみファイト!"
+        },
+        {
+          "kind": "title",
+          "code": "0x18",
+          "title": "KRM008.SND : 高速NINJAバトル"
+        },
+        {
+          "kind": "title",
+          "code": "0x19",
+          "title": "KRM009.SND : いざ尋常に!"
+        },
+        {
+          "kind": "title",
+          "code": "0x1A",
+          "title": "KRM010.SND : 魅せます、くるみ大変幻!"
+        },
+        {
+          "kind": "title",
+          "code": "0x1B",
+          "title": "KRM011.SND : 尋問えっち"
+        },
+        {
+          "kind": "title",
+          "code": "0x1C",
+          "title": "KRM012.SND : 濡れ場だGo!"
+        },
+        {
+          "kind": "title",
+          "code": "0x1D",
+          "title": "KRM013.SND : ぴ～んち!"
+        },
+        {
+          "kind": "title",
+          "code": "0x1E",
+          "title": "KRM014.SND : 修羅の地に花一輪"
+        },
+        {
+          "kind": "title",
+          "code": "0x1F",
+          "title": "KRM015.SND : 天からサンライズ"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/janis.xml",
+      "source_order": 2663,
+      "archive": "krm_98",
+      "id": "krm-98-opna"
+    },
+    {
+      "title": "[PC-9801] くるみちゃんにんじゃあ(GS)",
+      "driver": {
+        "name": "pc98dos",
+        "type": "beep",
+        "alias": "JANIS",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "clockmul",
+          "value": "8"
+        },
+        {
+          "name": "midiout",
+          "value": "1"
+        },
+        {
+          "name": "midiout_type",
+          "value": "4"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "IBGM.EXE",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "IBGMPM.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "KRM000.SND",
+          "offset": "0x10"
+        },
+        {
+          "type": "file",
+          "path": "KRM001.SND",
+          "offset": "0x11"
+        },
+        {
+          "type": "file",
+          "path": "KRM002.SND",
+          "offset": "0x12"
+        },
+        {
+          "type": "file",
+          "path": "KRM003.SND",
+          "offset": "0x13"
+        },
+        {
+          "type": "file",
+          "path": "KRM004.SND",
+          "offset": "0x14"
+        },
+        {
+          "type": "file",
+          "path": "KRM005.SND",
+          "offset": "0x15"
+        },
+        {
+          "type": "file",
+          "path": "KRM006.SND",
+          "offset": "0x16"
+        },
+        {
+          "type": "file",
+          "path": "KRM007.SND",
+          "offset": "0x17"
+        },
+        {
+          "type": "file",
+          "path": "KRM008.SND",
+          "offset": "0x18"
+        },
+        {
+          "type": "file",
+          "path": "KRM009.SND",
+          "offset": "0x19"
+        },
+        {
+          "type": "file",
+          "path": "KRM010.SND",
+          "offset": "0x1A"
+        },
+        {
+          "type": "file",
+          "path": "KRM011.SND",
+          "offset": "0x1B"
+        },
+        {
+          "type": "file",
+          "path": "KRM012.SND",
+          "offset": "0x1C"
+        },
+        {
+          "type": "file",
+          "path": "KRM013.SND",
+          "offset": "0x1D"
+        },
+        {
+          "type": "file",
+          "path": "KRM014.SND",
+          "offset": "0x1E"
+        },
+        {
+          "type": "file",
+          "path": "KRM015.SND",
+          "offset": "0x1F"
+        },
+        {
+          "type": "shell",
+          "path": "IBGM.EXE -J",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "IBGMPM.COM",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "KRM000.SND : オープニング"
+        },
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "KRM001.SND : エンディング"
+        },
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "KRM002.SND : すずらん通りの昼下がり"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "KRM003.SND : お星さまきらきら"
+        },
+        {
+          "kind": "title",
+          "code": "0x14",
+          "title": "KRM004.SND : にんじゃのてーま"
+        },
+        {
+          "kind": "title",
+          "code": "0x15",
+          "title": "KRM005.SND : 堤防小町ドキッ!"
+        },
+        {
+          "kind": "title",
+          "code": "0x16",
+          "title": "KRM006.SND : 趣味は拘束"
+        },
+        {
+          "kind": "title",
+          "code": "0x17",
+          "title": "KRM007.SND : くるみファイト!"
+        },
+        {
+          "kind": "title",
+          "code": "0x18",
+          "title": "KRM008.SND : 高速NINJAバトル"
+        },
+        {
+          "kind": "title",
+          "code": "0x19",
+          "title": "KRM009.SND : いざ尋常に!"
+        },
+        {
+          "kind": "title",
+          "code": "0x1A",
+          "title": "KRM010.SND : 魅せます、くるみ大変幻!"
+        },
+        {
+          "kind": "title",
+          "code": "0x1B",
+          "title": "KRM011.SND : 尋問えっち"
+        },
+        {
+          "kind": "title",
+          "code": "0x1C",
+          "title": "KRM012.SND : 濡れ場だGo!"
+        },
+        {
+          "kind": "title",
+          "code": "0x1D",
+          "title": "KRM013.SND : ぴ～んち!"
+        },
+        {
+          "kind": "title",
+          "code": "0x1E",
+          "title": "KRM014.SND : 修羅の地に花一輪"
+        },
+        {
+          "kind": "title",
+          "code": "0x1F",
+          "title": "KRM015.SND : 天からサンライズ"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/janis.xml",
+      "source_order": 2664,
+      "archive": "krm_98",
+      "id": "krm-98-beep"
+    },
+    {
+      "title": "[PC-9801] ばにぃはんたぁ零(OPN)",
+      "driver": {
+        "name": "pc98dos",
+        "type": "opn",
+        "alias": "JANIS",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "clockmul",
+          "value": "8"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "IBGM.EXE",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "IBGMP.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "BNY000.SND",
+          "offset": "0x10"
+        },
+        {
+          "type": "file",
+          "path": "BNY001.SND",
+          "offset": "0x11"
+        },
+        {
+          "type": "file",
+          "path": "BNY002.SND",
+          "offset": "0x12"
+        },
+        {
+          "type": "file",
+          "path": "BNY003.SND",
+          "offset": "0x13"
+        },
+        {
+          "type": "file",
+          "path": "BNY004.SND",
+          "offset": "0x14"
+        },
+        {
+          "type": "file",
+          "path": "BNY005.SND",
+          "offset": "0x15"
+        },
+        {
+          "type": "file",
+          "path": "BNY006.SND",
+          "offset": "0x16"
+        },
+        {
+          "type": "file",
+          "path": "BNY007.SND",
+          "offset": "0x17"
+        },
+        {
+          "type": "file",
+          "path": "BNY008.SND",
+          "offset": "0x18"
+        },
+        {
+          "type": "file",
+          "path": "BNY009.SND",
+          "offset": "0x19"
+        },
+        {
+          "type": "file",
+          "path": "BNY010.SND",
+          "offset": "0x1A"
+        },
+        {
+          "type": "file",
+          "path": "BNY011.SND",
+          "offset": "0x1B"
+        },
+        {
+          "type": "file",
+          "path": "BNY012.SND",
+          "offset": "0x1C"
+        },
+        {
+          "type": "file",
+          "path": "BNY013.SND",
+          "offset": "0x1D"
+        },
+        {
+          "type": "file",
+          "path": "BNY014.SND",
+          "offset": "0x1E"
+        },
+        {
+          "type": "file",
+          "path": "BNY015.SND",
+          "offset": "0x1F"
+        },
+        {
+          "type": "file",
+          "path": "BNY016.SND",
+          "offset": "0x20"
+        },
+        {
+          "type": "file",
+          "path": "BNY017.SND",
+          "offset": "0x21"
+        },
+        {
+          "type": "file",
+          "path": "BNY018.SND",
+          "offset": "0x22"
+        },
+        {
+          "type": "file",
+          "path": "BNY019.SND",
+          "offset": "0x23"
+        },
+        {
+          "type": "file",
+          "path": "BNY020.SND",
+          "offset": "0x24"
+        },
+        {
+          "type": "shell",
+          "path": "IBGM.EXE -J",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "IBGMP.COM",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "BNY000.SND : 零 ～ 海を越えて In PasoDoble"
+        },
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "BNY001.SND : らぶらぶエブリデイ In Ballade"
+        },
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "BNY002.SND : スキップ街角 In Bossanova"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "BNY003.SND : 愛の薔薇ード In Ballade"
+        },
+        {
+          "kind": "title",
+          "code": "0x14",
+          "title": "BNY004.SND : ドレスアッププリンセス In Samba"
+        },
+        {
+          "kind": "title",
+          "code": "0x15",
+          "title": "BNY005.SND : 燃えよ我が情熱の衣よ！ In PassoDoble"
+        },
+        {
+          "kind": "title",
+          "code": "0x16",
+          "title": "BNY006.SND : ハイル！ネオバニー In Disco new"
+        },
+        {
+          "kind": "title",
+          "code": "0x17",
+          "title": "BNY007.SND : 貧しき乳のために In Waltz"
+        },
+        {
+          "kind": "title",
+          "code": "0x18",
+          "title": "BNY008.SND : 胃袋のファンファーレ"
+        },
+        {
+          "kind": "title",
+          "code": "0x19",
+          "title": "BNY009.SND : 怒りの美沙"
+        },
+        {
+          "kind": "title",
+          "code": "0x1A",
+          "title": "BNY010.SND : 番台の未亡人 In Rumba"
+        },
+        {
+          "kind": "title",
+          "code": "0x1B",
+          "title": "BNY011.SND : 愛と情熱のアルゼンチンタンゴ In HardRockStyle"
+        },
+        {
+          "kind": "title",
+          "code": "0x1C",
+          "title": "BNY012.SND : ハイパー・オクラホマミクサStep"
+        },
+        {
+          "kind": "title",
+          "code": "0x1D",
+          "title": "BNY013.SND : スーパー・タタロチカStep"
+        },
+        {
+          "kind": "title",
+          "code": "0x1E",
+          "title": "BNY014.SND : シャイニングサンバ STEP002"
+        },
+        {
+          "kind": "title",
+          "code": "0x1F",
+          "title": "BNY015.SND : カルメンステップ"
+        },
+        {
+          "kind": "title",
+          "code": "0x20",
+          "title": "BNY016.SND : スペインの情熱"
+        },
+        {
+          "kind": "title",
+          "code": "0x21",
+          "title": "BNY017.SND : カリブ海の熱風 STEP005"
+        },
+        {
+          "kind": "title",
+          "code": "0x22",
+          "title": "BNY018.SND : 勝利ファンファーレ STEP006"
+        },
+        {
+          "kind": "title",
+          "code": "0x23",
+          "title": "BNY019.SND : 敗北ファンファーレ STEP007"
+        },
+        {
+          "kind": "title",
+          "code": "0x24",
+          "title": "BNY020.SND : 愛と情熱のアルゼンチンタンゴ In HardRockStyle Part2"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/janis.xml",
+      "source_order": 2665,
+      "archive": "bny_98",
+      "id": "bny-98-opn"
+    },
+    {
+      "title": "[PC-9801] ばにぃはんたぁ零(OPNA)",
+      "driver": {
+        "name": "pc98dos",
+        "type": "opna",
+        "alias": "JANIS",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "clockmul",
+          "value": "8"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "IBGM.EXE",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "IBGMP.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "BNY000.SND",
+          "offset": "0x10"
+        },
+        {
+          "type": "file",
+          "path": "BNY001.SND",
+          "offset": "0x11"
+        },
+        {
+          "type": "file",
+          "path": "BNY002.SND",
+          "offset": "0x12"
+        },
+        {
+          "type": "file",
+          "path": "BNY003.SND",
+          "offset": "0x13"
+        },
+        {
+          "type": "file",
+          "path": "BNY004.SND",
+          "offset": "0x14"
+        },
+        {
+          "type": "file",
+          "path": "BNY005.SND",
+          "offset": "0x15"
+        },
+        {
+          "type": "file",
+          "path": "BNY006.SND",
+          "offset": "0x16"
+        },
+        {
+          "type": "file",
+          "path": "BNY007.SND",
+          "offset": "0x17"
+        },
+        {
+          "type": "file",
+          "path": "BNY008.SND",
+          "offset": "0x18"
+        },
+        {
+          "type": "file",
+          "path": "BNY009.SND",
+          "offset": "0x19"
+        },
+        {
+          "type": "file",
+          "path": "BNY010.SND",
+          "offset": "0x1A"
+        },
+        {
+          "type": "file",
+          "path": "BNY011.SND",
+          "offset": "0x1B"
+        },
+        {
+          "type": "file",
+          "path": "BNY012.SND",
+          "offset": "0x1C"
+        },
+        {
+          "type": "file",
+          "path": "BNY013.SND",
+          "offset": "0x1D"
+        },
+        {
+          "type": "file",
+          "path": "BNY014.SND",
+          "offset": "0x1E"
+        },
+        {
+          "type": "file",
+          "path": "BNY015.SND",
+          "offset": "0x1F"
+        },
+        {
+          "type": "file",
+          "path": "BNY016.SND",
+          "offset": "0x20"
+        },
+        {
+          "type": "file",
+          "path": "BNY017.SND",
+          "offset": "0x21"
+        },
+        {
+          "type": "file",
+          "path": "BNY018.SND",
+          "offset": "0x22"
+        },
+        {
+          "type": "file",
+          "path": "BNY019.SND",
+          "offset": "0x23"
+        },
+        {
+          "type": "file",
+          "path": "BNY020.SND",
+          "offset": "0x24"
+        },
+        {
+          "type": "shell",
+          "path": "IBGM.EXE -J",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "IBGMP.COM",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "BNY000.SND : 零 ～ 海を越えて In PasoDoble"
+        },
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "BNY001.SND : らぶらぶエブリデイ In Ballade"
+        },
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "BNY002.SND : スキップ街角 In Bossanova"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "BNY003.SND : 愛の薔薇ード In Ballade"
+        },
+        {
+          "kind": "title",
+          "code": "0x14",
+          "title": "BNY004.SND : ドレスアッププリンセス In Samba"
+        },
+        {
+          "kind": "title",
+          "code": "0x15",
+          "title": "BNY005.SND : 燃えよ我が情熱の衣よ！ In PassoDoble"
+        },
+        {
+          "kind": "title",
+          "code": "0x16",
+          "title": "BNY006.SND : ハイル！ネオバニー In Disco new"
+        },
+        {
+          "kind": "title",
+          "code": "0x17",
+          "title": "BNY007.SND : 貧しき乳のために In Waltz"
+        },
+        {
+          "kind": "title",
+          "code": "0x18",
+          "title": "BNY008.SND : 胃袋のファンファーレ"
+        },
+        {
+          "kind": "title",
+          "code": "0x19",
+          "title": "BNY009.SND : 怒りの美沙"
+        },
+        {
+          "kind": "title",
+          "code": "0x1A",
+          "title": "BNY010.SND : 番台の未亡人 In Rumba"
+        },
+        {
+          "kind": "title",
+          "code": "0x1B",
+          "title": "BNY011.SND : 愛と情熱のアルゼンチンタンゴ In HardRockStyle"
+        },
+        {
+          "kind": "title",
+          "code": "0x1C",
+          "title": "BNY012.SND : ハイパー・オクラホマミクサStep"
+        },
+        {
+          "kind": "title",
+          "code": "0x1D",
+          "title": "BNY013.SND : スーパー・タタロチカStep"
+        },
+        {
+          "kind": "title",
+          "code": "0x1E",
+          "title": "BNY014.SND : シャイニングサンバ STEP002"
+        },
+        {
+          "kind": "title",
+          "code": "0x1F",
+          "title": "BNY015.SND : カルメンステップ"
+        },
+        {
+          "kind": "title",
+          "code": "0x20",
+          "title": "BNY016.SND : スペインの情熱"
+        },
+        {
+          "kind": "title",
+          "code": "0x21",
+          "title": "BNY017.SND : カリブ海の熱風 STEP005"
+        },
+        {
+          "kind": "title",
+          "code": "0x22",
+          "title": "BNY018.SND : 勝利ファンファーレ STEP006"
+        },
+        {
+          "kind": "title",
+          "code": "0x23",
+          "title": "BNY019.SND : 敗北ファンファーレ STEP007"
+        },
+        {
+          "kind": "title",
+          "code": "0x24",
+          "title": "BNY020.SND : 愛と情熱のアルゼンチンタンゴ In HardRockStyle Part2"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/janis.xml",
+      "source_order": 2666,
+      "archive": "bny_98",
+      "id": "bny-98-opna"
+    },
+    {
+      "title": "[PC-9801] ばにぃはんたぁ零(GS)",
+      "driver": {
+        "name": "pc98dos",
+        "type": "beep",
+        "alias": "JANIS",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "clockmul",
+          "value": "8"
+        },
+        {
+          "name": "midiout",
+          "value": "1"
+        },
+        {
+          "name": "midiout_type",
+          "value": "4"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "IBGM.EXE",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "IBGMPM.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "BNY000.SND",
+          "offset": "0x10"
+        },
+        {
+          "type": "file",
+          "path": "BNY001.SND",
+          "offset": "0x11"
+        },
+        {
+          "type": "file",
+          "path": "BNY002.SND",
+          "offset": "0x12"
+        },
+        {
+          "type": "file",
+          "path": "BNY003.SND",
+          "offset": "0x13"
+        },
+        {
+          "type": "file",
+          "path": "BNY004.SND",
+          "offset": "0x14"
+        },
+        {
+          "type": "file",
+          "path": "BNY005.SND",
+          "offset": "0x15"
+        },
+        {
+          "type": "file",
+          "path": "BNY006.SND",
+          "offset": "0x16"
+        },
+        {
+          "type": "file",
+          "path": "BNY007.SND",
+          "offset": "0x17"
+        },
+        {
+          "type": "file",
+          "path": "BNY008.SND",
+          "offset": "0x18"
+        },
+        {
+          "type": "file",
+          "path": "BNY009.SND",
+          "offset": "0x19"
+        },
+        {
+          "type": "file",
+          "path": "BNY010.SND",
+          "offset": "0x1A"
+        },
+        {
+          "type": "file",
+          "path": "BNY011.SND",
+          "offset": "0x1B"
+        },
+        {
+          "type": "file",
+          "path": "BNY012.SND",
+          "offset": "0x1C"
+        },
+        {
+          "type": "file",
+          "path": "BNY013.SND",
+          "offset": "0x1D"
+        },
+        {
+          "type": "file",
+          "path": "BNY014.SND",
+          "offset": "0x1E"
+        },
+        {
+          "type": "file",
+          "path": "BNY015.SND",
+          "offset": "0x1F"
+        },
+        {
+          "type": "file",
+          "path": "BNY016.SND",
+          "offset": "0x20"
+        },
+        {
+          "type": "file",
+          "path": "BNY017.SND",
+          "offset": "0x21"
+        },
+        {
+          "type": "file",
+          "path": "BNY018.SND",
+          "offset": "0x22"
+        },
+        {
+          "type": "file",
+          "path": "BNY019.SND",
+          "offset": "0x23"
+        },
+        {
+          "type": "file",
+          "path": "BNY020.SND",
+          "offset": "0x24"
+        },
+        {
+          "type": "shell",
+          "path": "IBGM.EXE -J",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "IBGMPM.COM",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "BNY000.SND : 零 ～ 海を越えて In PasoDoble"
+        },
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "BNY001.SND : らぶらぶエブリデイ In Ballade"
+        },
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "BNY002.SND : スキップ街角 In Bossanova"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "BNY003.SND : 愛の薔薇ード In Ballade"
+        },
+        {
+          "kind": "title",
+          "code": "0x14",
+          "title": "BNY004.SND : ドレスアッププリンセス In Samba"
+        },
+        {
+          "kind": "title",
+          "code": "0x15",
+          "title": "BNY005.SND : 燃えよ我が情熱の衣よ！ In PassoDoble"
+        },
+        {
+          "kind": "title",
+          "code": "0x16",
+          "title": "BNY006.SND : ハイル！ネオバニー In Disco new"
+        },
+        {
+          "kind": "title",
+          "code": "0x17",
+          "title": "BNY007.SND : 貧しき乳のために In Waltz"
+        },
+        {
+          "kind": "title",
+          "code": "0x18",
+          "title": "BNY008.SND : 胃袋のファンファーレ"
+        },
+        {
+          "kind": "title",
+          "code": "0x19",
+          "title": "BNY009.SND : 怒りの美沙"
+        },
+        {
+          "kind": "title",
+          "code": "0x1A",
+          "title": "BNY010.SND : 番台の未亡人 In Rumba"
+        },
+        {
+          "kind": "title",
+          "code": "0x1B",
+          "title": "BNY011.SND : 愛と情熱のアルゼンチンタンゴ In HardRockStyle"
+        },
+        {
+          "kind": "title",
+          "code": "0x1C",
+          "title": "BNY012.SND : ハイパー・オクラホマミクサStep"
+        },
+        {
+          "kind": "title",
+          "code": "0x1D",
+          "title": "BNY013.SND : スーパー・タタロチカStep"
+        },
+        {
+          "kind": "title",
+          "code": "0x1E",
+          "title": "BNY014.SND : シャイニングサンバ STEP002"
+        },
+        {
+          "kind": "title",
+          "code": "0x1F",
+          "title": "BNY015.SND : カルメンステップ"
+        },
+        {
+          "kind": "title",
+          "code": "0x20",
+          "title": "BNY016.SND : スペインの情熱"
+        },
+        {
+          "kind": "title",
+          "code": "0x21",
+          "title": "BNY017.SND : カリブ海の熱風 STEP005"
+        },
+        {
+          "kind": "title",
+          "code": "0x22",
+          "title": "BNY018.SND : 勝利ファンファーレ STEP006"
+        },
+        {
+          "kind": "title",
+          "code": "0x23",
+          "title": "BNY019.SND : 敗北ファンファーレ STEP007"
+        },
+        {
+          "kind": "title",
+          "code": "0x24",
+          "title": "BNY020.SND : 愛と情熱のアルゼンチンタンゴ In HardRockStyle Part2"
+        }
+      ],
+      "comments": [
+        " ゲーム中ではこの組み合わせは出来ない "
+      ],
+      "source_file": "xml/janis.xml",
+      "source_order": 2667,
+      "archive": "bny_98",
+      "id": "bny-98-beep"
+    },
+    {
+      "title": "[PC-9801] 機械じかけのマリアン(OPN)",
+      "driver": {
+        "name": "pc98dos",
+        "type": "opn",
+        "alias": "JANIS",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "clockmul",
+          "value": "8"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "IBGM.EXE",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "IBGMP.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "PSY000.SND",
+          "offset": "0x10"
+        },
+        {
+          "type": "file",
+          "path": "PSY001.SND",
+          "offset": "0x11"
+        },
+        {
+          "type": "file",
+          "path": "PSY002.SND",
+          "offset": "0x12"
+        },
+        {
+          "type": "file",
+          "path": "PSY003.SND",
+          "offset": "0x13"
+        },
+        {
+          "type": "file",
+          "path": "PSY004.SND",
+          "offset": "0x14"
+        },
+        {
+          "type": "file",
+          "path": "PSY005.SND",
+          "offset": "0x15"
+        },
+        {
+          "type": "file",
+          "path": "PSY006.SND",
+          "offset": "0x16"
+        },
+        {
+          "type": "file",
+          "path": "PSY007.SND",
+          "offset": "0x17"
+        },
+        {
+          "type": "file",
+          "path": "PSY008.SND",
+          "offset": "0x18"
+        },
+        {
+          "type": "file",
+          "path": "PSY009.SND",
+          "offset": "0x19"
+        },
+        {
+          "type": "file",
+          "path": "PSY010.SND",
+          "offset": "0x1A"
+        },
+        {
+          "type": "file",
+          "path": "PSY011.SND",
+          "offset": "0x1B"
+        },
+        {
+          "type": "file",
+          "path": "PSY012.SND",
+          "offset": "0x1C"
+        },
+        {
+          "type": "file",
+          "path": "PSY013.SND",
+          "offset": "0x1D"
+        },
+        {
+          "type": "file",
+          "path": "PSY014.SND",
+          "offset": "0x1E"
+        },
+        {
+          "type": "shell",
+          "path": "IBGM.EXE -J",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "IBGMP.COM",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "PSY000.SND : オープニング・ある没落貴族の回想"
+        },
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "PSY001.SND : あてなき捜索行"
+        },
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "PSY002.SND : 魔法少女マイトゥナ"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "PSY003.SND : パブ『クラーケン・バスター』"
+        },
+        {
+          "kind": "title",
+          "code": "0x14",
+          "title": "PSY004.SND : 教会の音楽"
+        },
+        {
+          "kind": "title",
+          "code": "0x15",
+          "title": "PSY005.SND : 骨董屋の音楽"
+        },
+        {
+          "kind": "title",
+          "code": "0x16",
+          "title": "PSY006.SND : 迫る来る怪異"
+        },
+        {
+          "kind": "title",
+          "code": "0x17",
+          "title": "PSY007.SND : 異形の者共との戦い"
+        },
+        {
+          "kind": "title",
+          "code": "0x18",
+          "title": "PSY008.SND : 宿命の戦い"
+        },
+        {
+          "kind": "title",
+          "code": "0x19",
+          "title": "PSY009.SND : それでも私は生きている!"
+        },
+        {
+          "kind": "title",
+          "code": "0x1A",
+          "title": "PSY010.SND : 大好きサイラスさま"
+        },
+        {
+          "kind": "title",
+          "code": "0x1B",
+          "title": "PSY011.SND : いぢめて! サイラス卿"
+        },
+        {
+          "kind": "title",
+          "code": "0x1C",
+          "title": "PSY012.SND : 紅茶を飲みながら"
+        },
+        {
+          "kind": "title",
+          "code": "0x1D",
+          "title": "PSY013.SND : エンディング"
+        },
+        {
+          "kind": "title",
+          "code": "0x1E",
+          "title": "PSY014.SND : スタッフロール"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/janis.xml",
+      "source_order": 2668,
+      "archive": "k-marian_98",
+      "id": "k-marian-98-opn"
+    },
+    {
+      "title": "[PC-9801] 機械じかけのマリアン(OPNA)",
+      "driver": {
+        "name": "pc98dos",
+        "type": "opna",
+        "alias": "JANIS",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "clockmul",
+          "value": "8"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "IBGM.EXE",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "IBGMP.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "PSY000.SND",
+          "offset": "0x10"
+        },
+        {
+          "type": "file",
+          "path": "PSY001.SND",
+          "offset": "0x11"
+        },
+        {
+          "type": "file",
+          "path": "PSY002.SND",
+          "offset": "0x12"
+        },
+        {
+          "type": "file",
+          "path": "PSY003.SND",
+          "offset": "0x13"
+        },
+        {
+          "type": "file",
+          "path": "PSY004.SND",
+          "offset": "0x14"
+        },
+        {
+          "type": "file",
+          "path": "PSY005.SND",
+          "offset": "0x15"
+        },
+        {
+          "type": "file",
+          "path": "PSY006.SND",
+          "offset": "0x16"
+        },
+        {
+          "type": "file",
+          "path": "PSY007.SND",
+          "offset": "0x17"
+        },
+        {
+          "type": "file",
+          "path": "PSY008.SND",
+          "offset": "0x18"
+        },
+        {
+          "type": "file",
+          "path": "PSY009.SND",
+          "offset": "0x19"
+        },
+        {
+          "type": "file",
+          "path": "PSY010.SND",
+          "offset": "0x1A"
+        },
+        {
+          "type": "file",
+          "path": "PSY011.SND",
+          "offset": "0x1B"
+        },
+        {
+          "type": "file",
+          "path": "PSY012.SND",
+          "offset": "0x1C"
+        },
+        {
+          "type": "file",
+          "path": "PSY013.SND",
+          "offset": "0x1D"
+        },
+        {
+          "type": "file",
+          "path": "PSY014.SND",
+          "offset": "0x1E"
+        },
+        {
+          "type": "shell",
+          "path": "IBGM.EXE -J",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "IBGMP.COM",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "PSY000.SND : オープニング・ある没落貴族の回想"
+        },
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "PSY001.SND : あてなき捜索行"
+        },
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "PSY002.SND : 魔法少女マイトゥナ"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "PSY003.SND : パブ『クラーケン・バスター』"
+        },
+        {
+          "kind": "title",
+          "code": "0x14",
+          "title": "PSY004.SND : 教会の音楽"
+        },
+        {
+          "kind": "title",
+          "code": "0x15",
+          "title": "PSY005.SND : 骨董屋の音楽"
+        },
+        {
+          "kind": "title",
+          "code": "0x16",
+          "title": "PSY006.SND : 迫る来る怪異"
+        },
+        {
+          "kind": "title",
+          "code": "0x17",
+          "title": "PSY007.SND : 異形の者共との戦い"
+        },
+        {
+          "kind": "title",
+          "code": "0x18",
+          "title": "PSY008.SND : 宿命の戦い"
+        },
+        {
+          "kind": "title",
+          "code": "0x19",
+          "title": "PSY009.SND : それでも私は生きている!"
+        },
+        {
+          "kind": "title",
+          "code": "0x1A",
+          "title": "PSY010.SND : 大好きサイラスさま"
+        },
+        {
+          "kind": "title",
+          "code": "0x1B",
+          "title": "PSY011.SND : いぢめて! サイラス卿"
+        },
+        {
+          "kind": "title",
+          "code": "0x1C",
+          "title": "PSY012.SND : 紅茶を飲みながら"
+        },
+        {
+          "kind": "title",
+          "code": "0x1D",
+          "title": "PSY013.SND : エンディング"
+        },
+        {
+          "kind": "title",
+          "code": "0x1E",
+          "title": "PSY014.SND : スタッフロール"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/janis.xml",
+      "source_order": 2669,
+      "archive": "k-marian_98",
+      "id": "k-marian-98-opna"
+    },
+    {
+      "title": "[PC-9801] 機械じかけのマリアン(GS)",
+      "driver": {
+        "name": "pc98dos",
+        "type": "beep",
+        "alias": "JANIS",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "clockmul",
+          "value": "8"
+        },
+        {
+          "name": "midiout",
+          "value": "1"
+        },
+        {
+          "name": "midiout_type",
+          "value": "4"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "IBGM.EXE",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "IBGMPM.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "PSY000.SND",
+          "offset": "0x10"
+        },
+        {
+          "type": "file",
+          "path": "PSY001.SND",
+          "offset": "0x11"
+        },
+        {
+          "type": "file",
+          "path": "PSY002.SND",
+          "offset": "0x12"
+        },
+        {
+          "type": "file",
+          "path": "PSY003.SND",
+          "offset": "0x13"
+        },
+        {
+          "type": "file",
+          "path": "PSY004.SND",
+          "offset": "0x14"
+        },
+        {
+          "type": "file",
+          "path": "PSY005.SND",
+          "offset": "0x15"
+        },
+        {
+          "type": "file",
+          "path": "PSY006.SND",
+          "offset": "0x16"
+        },
+        {
+          "type": "file",
+          "path": "PSY007.SND",
+          "offset": "0x17"
+        },
+        {
+          "type": "file",
+          "path": "PSY008.SND",
+          "offset": "0x18"
+        },
+        {
+          "type": "file",
+          "path": "PSY009.SND",
+          "offset": "0x19"
+        },
+        {
+          "type": "file",
+          "path": "PSY010.SND",
+          "offset": "0x1A"
+        },
+        {
+          "type": "file",
+          "path": "PSY011.SND",
+          "offset": "0x1B"
+        },
+        {
+          "type": "file",
+          "path": "PSY012.SND",
+          "offset": "0x1C"
+        },
+        {
+          "type": "file",
+          "path": "PSY013.SND",
+          "offset": "0x1D"
+        },
+        {
+          "type": "file",
+          "path": "PSY014.SND",
+          "offset": "0x1E"
+        },
+        {
+          "type": "shell",
+          "path": "IBGM.EXE -J",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "IBGMPM.COM",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "PSY000.SND : オープニング・ある没落貴族の回想"
+        },
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "PSY001.SND : あてなき捜索行"
+        },
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "PSY002.SND : 魔法少女マイトゥナ"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "PSY003.SND : パブ『クラーケン・バスター』"
+        },
+        {
+          "kind": "title",
+          "code": "0x14",
+          "title": "PSY004.SND : 教会の音楽"
+        },
+        {
+          "kind": "title",
+          "code": "0x15",
+          "title": "PSY005.SND : 骨董屋の音楽"
+        },
+        {
+          "kind": "title",
+          "code": "0x16",
+          "title": "PSY006.SND : 迫る来る怪異"
+        },
+        {
+          "kind": "title",
+          "code": "0x17",
+          "title": "PSY007.SND : 異形の者共との戦い"
+        },
+        {
+          "kind": "title",
+          "code": "0x18",
+          "title": "PSY008.SND : 宿命の戦い"
+        },
+        {
+          "kind": "title",
+          "code": "0x19",
+          "title": "PSY009.SND : それでも私は生きている!"
+        },
+        {
+          "kind": "title",
+          "code": "0x1A",
+          "title": "PSY010.SND : 大好きサイラスさま"
+        },
+        {
+          "kind": "title",
+          "code": "0x1B",
+          "title": "PSY011.SND : いぢめて! サイラス卿"
+        },
+        {
+          "kind": "title",
+          "code": "0x1C",
+          "title": "PSY012.SND : 紅茶を飲みながら"
+        },
+        {
+          "kind": "title",
+          "code": "0x1D",
+          "title": "PSY013.SND : エンディング"
+        },
+        {
+          "kind": "title",
+          "code": "0x1E",
+          "title": "PSY014.SND : スタッフロール"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/janis.xml",
+      "source_order": 2670,
+      "archive": "k-marian_98",
+      "id": "k-marian-98-beep"
+    },
+    {
+      "title": "[PC-9801] ぷりんせすでんじゃあ(OPN)",
+      "driver": {
+        "name": "pc98dos",
+        "type": "opn",
+        "alias": "JANIS",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "clockmul",
+          "value": "8"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "IKDRV.EXE",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "IBGMP.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "AYM000.SND",
+          "offset": "0x10"
+        },
+        {
+          "type": "file",
+          "path": "AYM001.SND",
+          "offset": "0x11"
+        },
+        {
+          "type": "file",
+          "path": "AYM002.SND",
+          "offset": "0x12"
+        },
+        {
+          "type": "file",
+          "path": "AYM003.SND",
+          "offset": "0x13"
+        },
+        {
+          "type": "file",
+          "path": "AYM004.SND",
+          "offset": "0x14"
+        },
+        {
+          "type": "file",
+          "path": "AYM005.SND",
+          "offset": "0x15"
+        },
+        {
+          "type": "file",
+          "path": "AYM006.SND",
+          "offset": "0x16"
+        },
+        {
+          "type": "file",
+          "path": "AYM007.SND",
+          "offset": "0x17"
+        },
+        {
+          "type": "file",
+          "path": "AYM008.SND",
+          "offset": "0x18"
+        },
+        {
+          "type": "file",
+          "path": "AYM009.SND",
+          "offset": "0x19"
+        },
+        {
+          "type": "file",
+          "path": "AYM010.SND",
+          "offset": "0x1A"
+        },
+        {
+          "type": "file",
+          "path": "AYM011.SND",
+          "offset": "0x1B"
+        },
+        {
+          "type": "file",
+          "path": "AYM012.SND",
+          "offset": "0x1C"
+        },
+        {
+          "type": "file",
+          "path": "AYM013.SND",
+          "offset": "0x1D"
+        },
+        {
+          "type": "file",
+          "path": "AYM014.SND",
+          "offset": "0x1E"
+        },
+        {
+          "type": "file",
+          "path": "AYM015.SND",
+          "offset": "0x1F"
+        },
+        {
+          "type": "shell",
+          "path": "IKDRV",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "IBGMP",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "AYM000.SND : 疲れちゃったよオレは"
+        },
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "AYM001.SND : のどかすぎるいつもの町並み"
+        },
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "AYM002.SND : 飲んでりゃ幸せ 其の弐"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "AYM003.SND : お腹いっぱいの歌"
+        },
+        {
+          "kind": "title",
+          "code": "0x14",
+          "title": "AYM004.SND : わたいちは近所の定食屋"
+        },
+        {
+          "kind": "title",
+          "code": "0x15",
+          "title": "AYM005.SND : ちゃんばら好き好き"
+        },
+        {
+          "kind": "title",
+          "code": "0x16",
+          "title": "AYM006.SND : 英雄叙事詩ショートヴァージョン"
+        },
+        {
+          "kind": "title",
+          "code": "0x17",
+          "title": "AYM007.SND : 英雄叙事詩ロングヴァージョン"
+        },
+        {
+          "kind": "title",
+          "code": "0x18",
+          "title": "AYM008.SND : 秘密節承前"
+        },
+        {
+          "kind": "title",
+          "code": "0x19",
+          "title": "AYM009.SND : 秘密節"
+        },
+        {
+          "kind": "title",
+          "code": "0x1A",
+          "title": "AYM010.SND : ワルツじゃないけど桃色ワルツ"
+        },
+        {
+          "kind": "title",
+          "code": "0x1B",
+          "title": "AYM011.SND : そんな事できるわけないでしょう"
+        },
+        {
+          "kind": "title",
+          "code": "0x1C",
+          "title": "AYM012.SND : だから無理だって言ってるのにぃ"
+        },
+        {
+          "kind": "title",
+          "code": "0x1D",
+          "title": "AYM013.SND : エンディング?"
+        },
+        {
+          "kind": "title",
+          "code": "0x1E",
+          "title": "AYM014.SND : あと２単位くれ～(;_;)"
+        },
+        {
+          "kind": "title",
+          "code": "0x1F",
+          "title": "AYM015.SND : これで終わりにしてやるぜ!!"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/janis.xml",
+      "source_order": 2671,
+      "archive": "p_danger_98",
+      "id": "p-danger-98-opn"
+    },
+    {
+      "title": "[PC-9801] ぷりんせすでんじゃあ(GS)",
+      "driver": {
+        "name": "pc98dos",
+        "type": "beep",
+        "alias": "JANIS",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "clockmul",
+          "value": "8"
+        },
+        {
+          "name": "midiout",
+          "value": "1"
+        },
+        {
+          "name": "midiout_type",
+          "value": "4"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "IKDRV.EXE",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "IBGMPM.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "AYM000.SND",
+          "offset": "0x10"
+        },
+        {
+          "type": "file",
+          "path": "AYM001.SND",
+          "offset": "0x11"
+        },
+        {
+          "type": "file",
+          "path": "AYM002.SND",
+          "offset": "0x12"
+        },
+        {
+          "type": "file",
+          "path": "AYM003.SND",
+          "offset": "0x13"
+        },
+        {
+          "type": "file",
+          "path": "AYM004.SND",
+          "offset": "0x14"
+        },
+        {
+          "type": "file",
+          "path": "AYM005.SND",
+          "offset": "0x15"
+        },
+        {
+          "type": "file",
+          "path": "AYM006.SND",
+          "offset": "0x16"
+        },
+        {
+          "type": "file",
+          "path": "AYM007.SND",
+          "offset": "0x17"
+        },
+        {
+          "type": "file",
+          "path": "AYM008.SND",
+          "offset": "0x18"
+        },
+        {
+          "type": "file",
+          "path": "AYM009.SND",
+          "offset": "0x19"
+        },
+        {
+          "type": "file",
+          "path": "AYM010.SND",
+          "offset": "0x1A"
+        },
+        {
+          "type": "file",
+          "path": "AYM011.SND",
+          "offset": "0x1B"
+        },
+        {
+          "type": "file",
+          "path": "AYM012.SND",
+          "offset": "0x1C"
+        },
+        {
+          "type": "file",
+          "path": "AYM013.SND",
+          "offset": "0x1D"
+        },
+        {
+          "type": "file",
+          "path": "AYM014.SND",
+          "offset": "0x1E"
+        },
+        {
+          "type": "file",
+          "path": "AYM015.SND",
+          "offset": "0x1F"
+        },
+        {
+          "type": "shell",
+          "path": "IKDRV.EXE -J",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "IBGMPM.COM",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "AYM000.SND : 疲れちゃったよオレは"
+        },
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "AYM001.SND : のどかすぎるいつもの町並み"
+        },
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "AYM002.SND : 飲んでりゃ幸せ 其の弐"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "AYM003.SND : お腹いっぱいの歌"
+        },
+        {
+          "kind": "title",
+          "code": "0x14",
+          "title": "AYM004.SND : わたいちは近所の定食屋"
+        },
+        {
+          "kind": "title",
+          "code": "0x15",
+          "title": "AYM005.SND : ちゃんばら好き好き"
+        },
+        {
+          "kind": "title",
+          "code": "0x16",
+          "title": "AYM006.SND : 英雄叙事詩ショートヴァージョン"
+        },
+        {
+          "kind": "title",
+          "code": "0x17",
+          "title": "AYM007.SND : 英雄叙事詩ロングヴァージョン"
+        },
+        {
+          "kind": "title",
+          "code": "0x18",
+          "title": "AYM008.SND : 秘密節承前"
+        },
+        {
+          "kind": "title",
+          "code": "0x19",
+          "title": "AYM009.SND : 秘密節"
+        },
+        {
+          "kind": "title",
+          "code": "0x1A",
+          "title": "AYM010.SND : ワルツじゃないけど桃色ワルツ"
+        },
+        {
+          "kind": "title",
+          "code": "0x1B",
+          "title": "AYM011.SND : そんな事できるわけないでしょう"
+        },
+        {
+          "kind": "title",
+          "code": "0x1C",
+          "title": "AYM012.SND : だから無理だって言ってるのにぃ"
+        },
+        {
+          "kind": "title",
+          "code": "0x1D",
+          "title": "AYM013.SND : エンディング?"
+        },
+        {
+          "kind": "title",
+          "code": "0x1E",
+          "title": "AYM014.SND : あと2単位くれ～(;_;)"
+        },
+        {
+          "kind": "title",
+          "code": "0x1F",
+          "title": "AYM015.SND : これで終わりにしてやるぜ!!"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/janis.xml",
+      "source_order": 2672,
+      "archive": "p_danger_98",
+      "id": "p-danger-98-beep"
+    },
+    {
+      "title": "[PC-9801] Anniversary ～夏休みの想い出～",
+      "driver": {
+        "name": "pc98dos",
+        "type": "opn",
+        "alias": "JANIS",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "clockmul",
+          "value": "8"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "FMPP.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "FMP.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "APPLE01.OPI",
+          "offset": "0x10"
+        },
+        {
+          "type": "file",
+          "path": "APPLE02.OPI",
+          "offset": "0x11"
+        },
+        {
+          "type": "file",
+          "path": "APPLE03.OPI",
+          "offset": "0x12"
+        },
+        {
+          "type": "file",
+          "path": "APPLE04.OPI",
+          "offset": "0x13"
+        },
+        {
+          "type": "file",
+          "path": "APPLE05.OPI",
+          "offset": "0x14"
+        },
+        {
+          "type": "file",
+          "path": "APPLE06.OPI",
+          "offset": "0x15"
+        },
+        {
+          "type": "file",
+          "path": "APPLE07.OPI",
+          "offset": "0x16"
+        },
+        {
+          "type": "file",
+          "path": "APPLE08.OPI",
+          "offset": "0x17"
+        },
+        {
+          "type": "file",
+          "path": "APPLE09.OPI",
+          "offset": "0x18"
+        },
+        {
+          "type": "file",
+          "path": "APPLE10.OPI",
+          "offset": "0x19"
+        },
+        {
+          "type": "file",
+          "path": "APPLE11.OPI",
+          "offset": "0x1A"
+        },
+        {
+          "type": "file",
+          "path": "APPLE12.OPI",
+          "offset": "0x1B"
+        },
+        {
+          "type": "file",
+          "path": "APPLE13.OPI",
+          "offset": "0x1C"
+        },
+        {
+          "type": "file",
+          "path": "APPLE14.OPI",
+          "offset": "0x1D"
+        },
+        {
+          "type": "file",
+          "path": "APPLE15.OPI",
+          "offset": "0x1E"
+        },
+        {
+          "type": "file",
+          "path": "APPLE16.OPI",
+          "offset": "0x1F"
+        },
+        {
+          "type": "file",
+          "path": "APPLE17.OPI",
+          "offset": "0x20"
+        },
+        {
+          "type": "file",
+          "path": "APPLE18.OPI",
+          "offset": "0x21"
+        },
+        {
+          "type": "file",
+          "path": "APPLE19.OPI",
+          "offset": "0x22"
+        },
+        {
+          "type": "file",
+          "path": "APPLE20.OPI",
+          "offset": "0x23"
+        },
+        {
+          "type": "file",
+          "path": "APPLE21.OPI",
+          "offset": "0x24"
+        },
+        {
+          "type": "shell",
+          "path": "FMP S /S /#32",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "FMPP",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "APPLE01.OPI : メインタイトル (りんごとチェリー)"
+        },
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "APPLE02.OPI : 変身シーン"
+        },
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "APPLE03.OPI : りんごの部屋"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "APPLE04.OPI : 捜査"
+        },
+        {
+          "kind": "title",
+          "code": "0x14",
+          "title": "APPLE05.OPI : Hシーン"
+        },
+        {
+          "kind": "title",
+          "code": "0x15",
+          "title": "APPLE06.OPI : りんごの危機"
+        },
+        {
+          "kind": "title",
+          "code": "0x16",
+          "title": "APPLE07.OPI : ヒメノセ・ヴィレッジ"
+        },
+        {
+          "kind": "title",
+          "code": "0x17",
+          "title": "APPLE08.OPI : 旭台病院"
+        },
+        {
+          "kind": "title",
+          "code": "0x18",
+          "title": "APPLE09.OPI : うらない堂"
+        },
+        {
+          "kind": "title",
+          "code": "0x19",
+          "title": "APPLE10.OPI : 彩子"
+        },
+        {
+          "kind": "title",
+          "code": "0x1A",
+          "title": "APPLE11.OPI : まみ"
+        },
+        {
+          "kind": "title",
+          "code": "0x1B",
+          "title": "APPLE12.OPI : ちさと"
+        },
+        {
+          "kind": "title",
+          "code": "0x1C",
+          "title": "APPLE13.OPI : リカ"
+        },
+        {
+          "kind": "title",
+          "code": "0x1D",
+          "title": "APPLE14.OPI : 舞子"
+        },
+        {
+          "kind": "title",
+          "code": "0x1E",
+          "title": "APPLE15.OPI : 呉葉"
+        },
+        {
+          "kind": "title",
+          "code": "0x1F",
+          "title": "APPLE16.OPI : 最後の闘い"
+        },
+        {
+          "kind": "title",
+          "code": "0x20",
+          "title": "APPLE17.OPI : クロージングタイトル"
+        },
+        {
+          "kind": "title",
+          "code": "0x21",
+          "title": "APPLE18.OPI : ユニハンター講座"
+        },
+        {
+          "kind": "title",
+          "code": "0x22",
+          "title": "APPLE19.OPI : 電話のコール音"
+        },
+        {
+          "kind": "title",
+          "code": "0x23",
+          "title": "APPLE20.OPI : パトカーのサイレン音"
+        },
+        {
+          "kind": "title",
+          "code": "0x24",
+          "title": "APPLE21.OPI : 電話をかける音"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/janis.xml",
+      "source_order": 2673,
+      "archive": "annivers_98",
+      "id": "annivers-98-opn"
+    },
+    {
+      "title": "[PC-9801] 卒業旅行",
+      "driver": {
+        "name": "pc98dos",
+        "type": "opn",
+        "alias": "JANIS",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "clockmul",
+          "value": "8"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "KMD_98.com",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "KMD.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "ADV01.KMD",
+          "offset": "0x10"
+        },
+        {
+          "type": "file",
+          "path": "ADV04.KMD",
+          "offset": "0x11"
+        },
+        {
+          "type": "file",
+          "path": "ADV07.KMD",
+          "offset": "0x12"
+        },
+        {
+          "type": "file",
+          "path": "ADV08.KMD",
+          "offset": "0x13"
+        },
+        {
+          "type": "file",
+          "path": "ADV09.KMD",
+          "offset": "0x14"
+        },
+        {
+          "type": "file",
+          "path": "ADV10.KMD",
+          "offset": "0x15"
+        },
+        {
+          "type": "file",
+          "path": "ADV11.KMD",
+          "offset": "0x16"
+        },
+        {
+          "type": "file",
+          "path": "ADV12.KMD",
+          "offset": "0x17"
+        },
+        {
+          "type": "shell",
+          "path": "KMD /K- /A-",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "KMD_98",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "ADV01.KMD"
+        },
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "ADV04.KMD"
+        },
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "ADV07.KMD"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "ADV08.KMD"
+        },
+        {
+          "kind": "title",
+          "code": "0x14",
+          "title": "ADV09.KMD"
+        },
+        {
+          "kind": "title",
+          "code": "0x15",
+          "title": "ADV10.KMD"
+        },
+        {
+          "kind": "title",
+          "code": "0x16",
+          "title": "ADV11.KMD"
+        },
+        {
+          "kind": "title",
+          "code": "0x17",
+          "title": "ADV12.KMD"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/janis.xml",
+      "source_order": 2674,
+      "archive": "sryokou_98",
+      "id": "sryokou-98-opn"
+    },
+    {
+      "title": "[PC-9801] 緋色の姉妹",
+      "driver": {
+        "name": "pc98dos",
+        "type": "opn",
+        "alias": "JANIS",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "clockmul",
+          "value": "8"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "hiiro_98.com",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "START.EXE",
+          "offset": "-1"
+        },
+        {
+          "type": "conin",
+          "path": "START.EXE",
+          "offset": "5"
+        },
+        {
+          "type": "file",
+          "path": "SND.DAT",
+          "offset": "6"
+        },
+        {
+          "type": "file",
+          "path": "EFF.DAT",
+          "offset": "7"
+        },
+        {
+          "type": "file",
+          "path": "SE.EFF",
+          "offset": "8"
+        },
+        {
+          "type": "file",
+          "path": "HI_00.MUF",
+          "offset": "11"
+        },
+        {
+          "type": "file",
+          "path": "HI_01.MUF",
+          "offset": "12"
+        },
+        {
+          "type": "file",
+          "path": "HI_02.MUF",
+          "offset": "13"
+        },
+        {
+          "type": "file",
+          "path": "HI_03.MUF",
+          "offset": "14"
+        },
+        {
+          "type": "file",
+          "path": "HI_04.MUF",
+          "offset": "15"
+        },
+        {
+          "type": "file",
+          "path": "HI_05.MUF",
+          "offset": "16"
+        },
+        {
+          "type": "file",
+          "path": "HI_06.MUF",
+          "offset": "17"
+        },
+        {
+          "type": "file",
+          "path": "HI_07.MUF",
+          "offset": "18"
+        },
+        {
+          "type": "file",
+          "path": "HI_08.MUF",
+          "offset": "19"
+        },
+        {
+          "type": "file",
+          "path": "HI_PIPI.MUF",
+          "offset": "20"
+        },
+        {
+          "type": "shell",
+          "path": "hiiro_98",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "11",
+          "title": "HI_00.MUF    :"
+        },
+        {
+          "kind": "title",
+          "code": "12",
+          "title": "HI_01.MUF    :"
+        },
+        {
+          "kind": "title",
+          "code": "13",
+          "title": "HI_02.MUF    :"
+        },
+        {
+          "kind": "title",
+          "code": "14",
+          "title": "HI_03.MUF    :"
+        },
+        {
+          "kind": "title",
+          "code": "15",
+          "title": "HI_04.MUF    :"
+        },
+        {
+          "kind": "title",
+          "code": "16",
+          "title": "HI_05.MUF    :"
+        },
+        {
+          "kind": "title",
+          "code": "17",
+          "title": "HI_06.MUF    :"
+        },
+        {
+          "kind": "title",
+          "code": "18",
+          "title": "HI_07.MUF    :"
+        },
+        {
+          "kind": "title",
+          "code": "19",
+          "title": "HI_08.MUF    :"
+        },
+        {
+          "kind": "title",
+          "code": "20",
+          "title": "HI_PIPI.MUF  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x010007",
+          "title": "EFF.DAT : 00 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x020007",
+          "title": "EFF.DAT : 01 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x030007",
+          "title": "EFF.DAT : 02 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x040007",
+          "title": "EFF.DAT : 03 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x050007",
+          "title": "EFF.DAT : 04 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x060007",
+          "title": "EFF.DAT : 05 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x070007",
+          "title": "EFF.DAT : 06 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x080007",
+          "title": "EFF.DAT : 07 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x090007",
+          "title": "EFF.DAT : 08 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x0a0007",
+          "title": "EFF.DAT : 09 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x0b0007",
+          "title": "EFF.DAT : 0a :"
+        },
+        {
+          "kind": "title",
+          "code": "0x0c0007",
+          "title": "EFF.DAT : 0b :"
+        },
+        {
+          "kind": "title",
+          "code": "0x0d0007",
+          "title": "EFF.DAT : 0c :"
+        },
+        {
+          "kind": "title",
+          "code": "0x0e0007",
+          "title": "EFF.DAT : 0d :"
+        },
+        {
+          "kind": "title",
+          "code": "0x0f0007",
+          "title": "EFF.DAT : 0e :"
+        },
+        {
+          "kind": "title",
+          "code": "0x100007",
+          "title": "EFF.DAT : 0f :"
+        },
+        {
+          "kind": "title",
+          "code": "0x110007",
+          "title": "EFF.DAT : 10 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x120007",
+          "title": "EFF.DAT : 11 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x130007",
+          "title": "EFF.DAT : 12 :"
+        },
+        {
+          "kind": "comment",
+          "text": "\n\t\t\t<title code=\"0x140007\">EFF.DAT : 13  : </title>\n\t\t\t<title code=\"0x150007\">EFF.DAT : 14  : </title>\n\t\t\t<title code=\"0x160007\">EFF.DAT : 15  : </title>\n\t\t\t<title code=\"0x170007\">EFF.DAT : 16  : </title>\n\t\t\t<title code=\"0x180007\">EFF.DAT : 17  : </title>\n\t\t\t<title code=\"0x190007\">EFF.DAT : 18  : </title>\n\t\t\t<title code=\"0x1a0007\">EFF.DAT : 19  : </title>\n\t\t\t<title code=\"0x1b0007\">EFF.DAT : 1a  : </title>\n\t\t\t<title code=\"0x1c0007\">EFF.DAT : 1b  : </title>\n\t\t\t<title code=\"0x1d0007\">EFF.DAT : 1c  : </title>\n\t\t\t<title code=\"0x1e0007\">EFF.DAT : 1d  : </title>\n\t\t\t<title code=\"0x1f0007\">EFF.DAT : 1e  : </title>\n\t\t\t<title code=\"0x010008\">SE.EFF : 00  : </title>\n"
+        },
+        {
+          "kind": "title",
+          "code": "0x020008",
+          "title": "SE.EFF  : 01 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x030008",
+          "title": "SE.EFF  : 02 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x040008",
+          "title": "SE.EFF  : 03 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x050008",
+          "title": "SE.EFF  : 04 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x060008",
+          "title": "SE.EFF  : 05 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x070008",
+          "title": "SE.EFF  : 06 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x080008",
+          "title": "SE.EFF  : 07 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x090008",
+          "title": "SE.EFF  : 08 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x0a0008",
+          "title": "SE.EFF  : 09 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x0b0008",
+          "title": "SE.EFF  : 0a :"
+        },
+        {
+          "kind": "comment",
+          "text": "\n\t\t\t<title code=\"0x0c0008\">SE.EFF  : 0b : </title>\n\t\t\t<title code=\"0x0d0008\">SE.EFF  : 0c : </title>\n\t\t\t<title code=\"0x0e0008\">SE.EFF  : 0d : </title>\n\t\t\t<title code=\"0x0f0008\">SE.EFF  : 0e : </title>\n\t\t\t<title code=\"0x100008\">SE.EFF  : 0f : </title>\n\t\t\t<title code=\"0x110008\">SE.EFF  : 10 : </title>\n\t\t\t<title code=\"0x120008\">SE.EFF  : 11 : </title>\n\t\t\t<title code=\"0x130008\">SE.EFF  : 12 : </title>\n\t\t\t<title code=\"0x140008\">SE.EFF  : 13 : </title>\n"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/janis.xml",
+      "source_order": 2675,
+      "archive": "hiiro_98",
+      "id": "hiiro-98-opn"
+    },
+    {
+      "title": "[PC-9801] マスカレード",
+      "driver": {
+        "name": "pc98dos",
+        "type": "opn",
+        "alias": "JANIS",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "clockmul",
+          "value": "8"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "masqu_98.com",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MSQ.EXE",
+          "offset": "-1"
+        },
+        {
+          "type": "conin",
+          "path": "MSQ.EXE",
+          "offset": "5"
+        },
+        {
+          "type": "file",
+          "path": "SND.DAT",
+          "offset": "6"
+        },
+        {
+          "type": "file",
+          "path": "EFF.DAT",
+          "offset": "7"
+        },
+        {
+          "type": "file",
+          "path": "MQ1.ML",
+          "offset": "11"
+        },
+        {
+          "type": "file",
+          "path": "MQ10.ML",
+          "offset": "12"
+        },
+        {
+          "type": "file",
+          "path": "MQ11.ML",
+          "offset": "13"
+        },
+        {
+          "type": "file",
+          "path": "MQ12B.ML",
+          "offset": "14"
+        },
+        {
+          "type": "file",
+          "path": "MQ1B.ML",
+          "offset": "15"
+        },
+        {
+          "type": "file",
+          "path": "MQ2.ML",
+          "offset": "16"
+        },
+        {
+          "type": "file",
+          "path": "MQ2B.ML",
+          "offset": "17"
+        },
+        {
+          "type": "file",
+          "path": "MQ3.ML",
+          "offset": "18"
+        },
+        {
+          "type": "file",
+          "path": "MQ4B.ML",
+          "offset": "19"
+        },
+        {
+          "type": "file",
+          "path": "MQ5.ML",
+          "offset": "20"
+        },
+        {
+          "type": "file",
+          "path": "MQ6.ML",
+          "offset": "21"
+        },
+        {
+          "type": "file",
+          "path": "MQ7.ML",
+          "offset": "22"
+        },
+        {
+          "type": "file",
+          "path": "MQ8.ML",
+          "offset": "23"
+        },
+        {
+          "type": "file",
+          "path": "MQ9.ML",
+          "offset": "24"
+        },
+        {
+          "type": "file",
+          "path": "PING.ML",
+          "offset": "25"
+        },
+        {
+          "type": "file",
+          "path": "REST.ML",
+          "offset": "26"
+        },
+        {
+          "type": "file",
+          "path": "TEL.ML",
+          "offset": "27"
+        },
+        {
+          "type": "shell",
+          "path": "masqu_98",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "11",
+          "title": "MQ1.ML       :"
+        },
+        {
+          "kind": "title",
+          "code": "12",
+          "title": "MQ10.ML      :"
+        },
+        {
+          "kind": "title",
+          "code": "13",
+          "title": "MQ11.ML      :"
+        },
+        {
+          "kind": "title",
+          "code": "14",
+          "title": "MQ12B.ML     :"
+        },
+        {
+          "kind": "title",
+          "code": "15",
+          "title": "MQ1B.ML      :"
+        },
+        {
+          "kind": "title",
+          "code": "16",
+          "title": "MQ2.ML       :"
+        },
+        {
+          "kind": "title",
+          "code": "17",
+          "title": "MQ2B.ML      :"
+        },
+        {
+          "kind": "title",
+          "code": "18",
+          "title": "MQ3.ML       :"
+        },
+        {
+          "kind": "title",
+          "code": "19",
+          "title": "MQ4B.ML      :"
+        },
+        {
+          "kind": "title",
+          "code": "20",
+          "title": "MQ5.ML       :"
+        },
+        {
+          "kind": "title",
+          "code": "21",
+          "title": "MQ6.ML       :"
+        },
+        {
+          "kind": "title",
+          "code": "22",
+          "title": "MQ7.ML       :"
+        },
+        {
+          "kind": "title",
+          "code": "23",
+          "title": "MQ8.ML       :"
+        },
+        {
+          "kind": "title",
+          "code": "24",
+          "title": "MQ9.ML       :"
+        },
+        {
+          "kind": "title",
+          "code": "25",
+          "title": "PING.ML      :"
+        },
+        {
+          "kind": "title",
+          "code": "26",
+          "title": "REST.ML      :"
+        },
+        {
+          "kind": "title",
+          "code": "27",
+          "title": "TEL.ML       :"
+        },
+        {
+          "kind": "title",
+          "code": "0x010007",
+          "title": "EFF.DAT : 00 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x020007",
+          "title": "EFF.DAT : 01 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x030007",
+          "title": "EFF.DAT : 02 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x040007",
+          "title": "EFF.DAT : 03 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x050007",
+          "title": "EFF.DAT : 04 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x060007",
+          "title": "EFF.DAT : 05 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x070007",
+          "title": "EFF.DAT : 06 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x080007",
+          "title": "EFF.DAT : 07 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x090007",
+          "title": "EFF.DAT : 08 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x0a0007",
+          "title": "EFF.DAT : 09 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x0b0007",
+          "title": "EFF.DAT : 0a :"
+        },
+        {
+          "kind": "title",
+          "code": "0x0c0007",
+          "title": "EFF.DAT : 0b :"
+        },
+        {
+          "kind": "title",
+          "code": "0x0d0007",
+          "title": "EFF.DAT : 0c :"
+        },
+        {
+          "kind": "title",
+          "code": "0x0e0007",
+          "title": "EFF.DAT : 0d :"
+        },
+        {
+          "kind": "title",
+          "code": "0x0f0007",
+          "title": "EFF.DAT : 0e :"
+        },
+        {
+          "kind": "title",
+          "code": "0x100007",
+          "title": "EFF.DAT : 0f :"
+        },
+        {
+          "kind": "title",
+          "code": "0x110007",
+          "title": "EFF.DAT : 10 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x120007",
+          "title": "EFF.DAT : 11 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x130007",
+          "title": "EFF.DAT : 12 :"
+        },
+        {
+          "kind": "comment",
+          "text": "\n\t\t\t<title code=\"0x140007\">EFF.DAT : 13  : </title>\n\t\t\t<title code=\"0x150007\">EFF.DAT : 14  : </title>\n\t\t\t<title code=\"0x160007\">EFF.DAT : 15  : </title>\n\t\t\t<title code=\"0x170007\">EFF.DAT : 16  : </title>\n\t\t\t<title code=\"0x180007\">EFF.DAT : 17  : </title>\n\t\t\t<title code=\"0x190007\">EFF.DAT : 18  : </title>\n\t\t\t<title code=\"0x1a0007\">EFF.DAT : 19  : </title>\n\t\t\t<title code=\"0x1b0007\">EFF.DAT : 1a  : </title>\n\t\t\t<title code=\"0x1c0007\">EFF.DAT : 1b  : </title>\n\t\t\t<title code=\"0x1d0007\">EFF.DAT : 1c  : </title>\n\t\t\t<title code=\"0x1e0007\">EFF.DAT : 1d  : </title>\n\t\t\t<title code=\"0x1f0007\">EFF.DAT : 1e  : </title>\n"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/janis.xml",
+      "source_order": 2676,
+      "archive": "msqrade_98",
+      "id": "msqrade-98-opn"
+    },
+    {
+      "title": "[PC-9801] 卒業写真 ～Naked Color～",
+      "driver": {
+        "name": "pc98dos",
+        "type": "opn",
+        "alias": "JANIS",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "clockmul",
+          "value": "8"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "sshas_98.com",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "NC.EXE",
+          "offset": "-1"
+        },
+        {
+          "type": "conin",
+          "path": "NC.EXE",
+          "offset": "5"
+        },
+        {
+          "type": "file",
+          "path": "SND.DAT",
+          "offset": "6"
+        },
+        {
+          "type": "file",
+          "path": "EFF.DAT",
+          "offset": "7"
+        },
+        {
+          "type": "file",
+          "path": "NA_DI.MUF",
+          "offset": "11"
+        },
+        {
+          "type": "file",
+          "path": "NA_END.MUF",
+          "offset": "12"
+        },
+        {
+          "type": "file",
+          "path": "NA_H1.MUF",
+          "offset": "13"
+        },
+        {
+          "type": "file",
+          "path": "NA_H2.MUF",
+          "offset": "14"
+        },
+        {
+          "type": "file",
+          "path": "NA_HA.MUF",
+          "offset": "15"
+        },
+        {
+          "type": "file",
+          "path": "NA_HU.MUF",
+          "offset": "16"
+        },
+        {
+          "type": "file",
+          "path": "NA_KA.MUF",
+          "offset": "17"
+        },
+        {
+          "type": "file",
+          "path": "NA_KI.MUF",
+          "offset": "18"
+        },
+        {
+          "type": "file",
+          "path": "NA_KU.MUF",
+          "offset": "19"
+        },
+        {
+          "type": "file",
+          "path": "NA_MAIN.MUF",
+          "offset": "20"
+        },
+        {
+          "type": "file",
+          "path": "NA_NI.MUF",
+          "offset": "21"
+        },
+        {
+          "type": "file",
+          "path": "NA_OP.MUF",
+          "offset": "22"
+        },
+        {
+          "type": "file",
+          "path": "NA_SE.MUF",
+          "offset": "23"
+        },
+        {
+          "type": "file",
+          "path": "NA_TA.MUF",
+          "offset": "24"
+        },
+        {
+          "type": "file",
+          "path": "NA_XMAS.MUF",
+          "offset": "25"
+        },
+        {
+          "type": "file",
+          "path": "SE_KIN.MUF",
+          "offset": "26"
+        },
+        {
+          "type": "file",
+          "path": "SE_TEL.MUF",
+          "offset": "27"
+        },
+        {
+          "type": "shell",
+          "path": "sshas_98",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "11",
+          "title": "NA_DI.MUF    :"
+        },
+        {
+          "kind": "title",
+          "code": "12",
+          "title": "NA_END.MUF   :"
+        },
+        {
+          "kind": "title",
+          "code": "13",
+          "title": "NA_H1.MUF    :"
+        },
+        {
+          "kind": "title",
+          "code": "14",
+          "title": "NA_H2.MUF    :"
+        },
+        {
+          "kind": "title",
+          "code": "15",
+          "title": "NA_HA.MUF    :"
+        },
+        {
+          "kind": "title",
+          "code": "16",
+          "title": "NA_HU.MUF    :"
+        },
+        {
+          "kind": "title",
+          "code": "17",
+          "title": "NA_KA.MUF    :"
+        },
+        {
+          "kind": "title",
+          "code": "18",
+          "title": "NA_KI.MUF    :"
+        },
+        {
+          "kind": "title",
+          "code": "19",
+          "title": "NA_KU.MUF    :"
+        },
+        {
+          "kind": "title",
+          "code": "20",
+          "title": "NA_MAIN.MUF  :"
+        },
+        {
+          "kind": "title",
+          "code": "21",
+          "title": "NA_NI.MUF    :"
+        },
+        {
+          "kind": "title",
+          "code": "22",
+          "title": "NA_OP.MUF    :"
+        },
+        {
+          "kind": "title",
+          "code": "23",
+          "title": "NA_SE.MUF    :"
+        },
+        {
+          "kind": "title",
+          "code": "24",
+          "title": "NA_TA.MUF    :"
+        },
+        {
+          "kind": "title",
+          "code": "25",
+          "title": "NA_XMAS.MUF  :"
+        },
+        {
+          "kind": "title",
+          "code": "26",
+          "title": "SE_KIN.MUF   :"
+        },
+        {
+          "kind": "title",
+          "code": "27",
+          "title": "SE_TEL.MUF   :"
+        },
+        {
+          "kind": "title",
+          "code": "0x010007",
+          "title": "EFF.DAT : 00 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x020007",
+          "title": "EFF.DAT : 01 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x030007",
+          "title": "EFF.DAT : 02 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x040007",
+          "title": "EFF.DAT : 03 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x050007",
+          "title": "EFF.DAT : 04 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x060007",
+          "title": "EFF.DAT : 05 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x070007",
+          "title": "EFF.DAT : 06 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x080007",
+          "title": "EFF.DAT : 07 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x090007",
+          "title": "EFF.DAT : 08 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x0a0007",
+          "title": "EFF.DAT : 09 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x0b0007",
+          "title": "EFF.DAT : 0a :"
+        },
+        {
+          "kind": "title",
+          "code": "0x0c0007",
+          "title": "EFF.DAT : 0b :"
+        },
+        {
+          "kind": "title",
+          "code": "0x0d0007",
+          "title": "EFF.DAT : 0c :"
+        },
+        {
+          "kind": "title",
+          "code": "0x0e0007",
+          "title": "EFF.DAT : 0d :"
+        },
+        {
+          "kind": "title",
+          "code": "0x0f0007",
+          "title": "EFF.DAT : 0e :"
+        },
+        {
+          "kind": "title",
+          "code": "0x100007",
+          "title": "EFF.DAT : 0f :"
+        },
+        {
+          "kind": "title",
+          "code": "0x110007",
+          "title": "EFF.DAT : 10 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x120007",
+          "title": "EFF.DAT : 11 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x130007",
+          "title": "EFF.DAT : 12 :"
+        },
+        {
+          "kind": "comment",
+          "text": "\n\t\t\t<title code=\"0x140007\">EFF.DAT : 13  : </title>\n\t\t\t<title code=\"0x150007\">EFF.DAT : 14  : </title>\n\t\t\t<title code=\"0x160007\">EFF.DAT : 15  : </title>\n\t\t\t<title code=\"0x170007\">EFF.DAT : 16  : </title>\n\t\t\t<title code=\"0x180007\">EFF.DAT : 17  : </title>\n\t\t\t<title code=\"0x190007\">EFF.DAT : 18  : </title>\n\t\t\t<title code=\"0x1a0007\">EFF.DAT : 19  : </title>\n\t\t\t<title code=\"0x1b0007\">EFF.DAT : 1a  : </title>\n\t\t\t<title code=\"0x1c0007\">EFF.DAT : 1b  : </title>\n\t\t\t<title code=\"0x1d0007\">EFF.DAT : 1c  : </title>\n\t\t\t<title code=\"0x1e0007\">EFF.DAT : 1d  : </title>\n\t\t\t<title code=\"0x1f0007\">EFF.DAT : 1e  : </title>\n"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/janis.xml",
+      "source_order": 2677,
+      "archive": "sshasin_98",
+      "id": "sshasin-98-opn"
+    },
+    {
+      "title": "[PC-9801] 卒業写真2 ～Raspberry Dream～",
+      "driver": {
+        "name": "pc98dos",
+        "type": "opn",
+        "alias": "JANIS",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "clockmul",
+          "value": "8"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "ssha2_98.com",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "START.EXE",
+          "offset": "-1"
+        },
+        {
+          "type": "conin",
+          "path": "START.EXE",
+          "offset": "5"
+        },
+        {
+          "type": "file",
+          "path": "SND.DAT",
+          "offset": "6"
+        },
+        {
+          "type": "file",
+          "path": "EFF.DAT",
+          "offset": "7"
+        },
+        {
+          "type": "file",
+          "path": "2_M01.MUF",
+          "offset": "11"
+        },
+        {
+          "type": "file",
+          "path": "2_M02.MUF",
+          "offset": "12"
+        },
+        {
+          "type": "file",
+          "path": "2_M03.MUF",
+          "offset": "13"
+        },
+        {
+          "type": "file",
+          "path": "2_M04.MUF",
+          "offset": "14"
+        },
+        {
+          "type": "file",
+          "path": "2_M05.MUF",
+          "offset": "15"
+        },
+        {
+          "type": "file",
+          "path": "2_M06.MUF",
+          "offset": "16"
+        },
+        {
+          "type": "file",
+          "path": "2_M07.MUF",
+          "offset": "17"
+        },
+        {
+          "type": "file",
+          "path": "2_M08.MUF",
+          "offset": "18"
+        },
+        {
+          "type": "file",
+          "path": "2_M09.MUF",
+          "offset": "19"
+        },
+        {
+          "type": "file",
+          "path": "2_M10.MUF",
+          "offset": "20"
+        },
+        {
+          "type": "file",
+          "path": "2_M11.MUF",
+          "offset": "21"
+        },
+        {
+          "type": "file",
+          "path": "2_M12.MUF",
+          "offset": "22"
+        },
+        {
+          "type": "file",
+          "path": "2_M13.MUF",
+          "offset": "23"
+        },
+        {
+          "type": "file",
+          "path": "2_M14.MUF",
+          "offset": "24"
+        },
+        {
+          "type": "file",
+          "path": "2_M14A.MUF",
+          "offset": "25"
+        },
+        {
+          "type": "file",
+          "path": "2_M14B.MUF",
+          "offset": "26"
+        },
+        {
+          "type": "file",
+          "path": "2_M15.MUF",
+          "offset": "27"
+        },
+        {
+          "type": "file",
+          "path": "2_M15A.MUF",
+          "offset": "28"
+        },
+        {
+          "type": "file",
+          "path": "2_M16.MUF",
+          "offset": "29"
+        },
+        {
+          "type": "file",
+          "path": "2_M16A.MUF",
+          "offset": "30"
+        },
+        {
+          "type": "file",
+          "path": "2_M17.MUF",
+          "offset": "31"
+        },
+        {
+          "type": "file",
+          "path": "2_M18.MUF",
+          "offset": "32"
+        },
+        {
+          "type": "file",
+          "path": "2_M19.MUF",
+          "offset": "33"
+        },
+        {
+          "type": "file",
+          "path": "2_M20.MUF",
+          "offset": "34"
+        },
+        {
+          "type": "file",
+          "path": "2_M23.MUF",
+          "offset": "35"
+        },
+        {
+          "type": "file",
+          "path": "2_M24.MUF",
+          "offset": "36"
+        },
+        {
+          "type": "file",
+          "path": "2_M25.MUF",
+          "offset": "37"
+        },
+        {
+          "type": "file",
+          "path": "KIN.MUF",
+          "offset": "38"
+        },
+        {
+          "type": "file",
+          "path": "KIN5.MUF",
+          "offset": "39"
+        },
+        {
+          "type": "file",
+          "path": "KINEND.MUF",
+          "offset": "40"
+        },
+        {
+          "type": "file",
+          "path": "NA_HU.MUF",
+          "offset": "41"
+        },
+        {
+          "type": "file",
+          "path": "NA_NI.MUF",
+          "offset": "42"
+        },
+        {
+          "type": "file",
+          "path": "NA_SE.MUF",
+          "offset": "43"
+        },
+        {
+          "type": "file",
+          "path": "NA_TA.MUF",
+          "offset": "44"
+        },
+        {
+          "type": "file",
+          "path": "NA_XMAS.MUF",
+          "offset": "45"
+        },
+        {
+          "type": "file",
+          "path": "PINPON.MUF",
+          "offset": "46"
+        },
+        {
+          "type": "file",
+          "path": "PIPI.MUF",
+          "offset": "47"
+        },
+        {
+          "type": "file",
+          "path": "PON.MUF",
+          "offset": "48"
+        },
+        {
+          "type": "file",
+          "path": "SE_05.MUF",
+          "offset": "49"
+        },
+        {
+          "type": "file",
+          "path": "SE_06.MUF",
+          "offset": "50"
+        },
+        {
+          "type": "file",
+          "path": "SE_07.MUF",
+          "offset": "51"
+        },
+        {
+          "type": "file",
+          "path": "SE_KIN.MUF",
+          "offset": "52"
+        },
+        {
+          "type": "file",
+          "path": "SE_KINLP.MUF",
+          "offset": "53"
+        },
+        {
+          "type": "file",
+          "path": "SEA.MUF",
+          "offset": "54"
+        },
+        {
+          "type": "file",
+          "path": "TEL.MUF",
+          "offset": "55"
+        },
+        {
+          "type": "shell",
+          "path": "ssha2_98",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "11",
+          "title": "2_M01.MUF    :"
+        },
+        {
+          "kind": "title",
+          "code": "12",
+          "title": "2_M02.MUF    :"
+        },
+        {
+          "kind": "title",
+          "code": "13",
+          "title": "2_M03.MUF    :"
+        },
+        {
+          "kind": "title",
+          "code": "14",
+          "title": "2_M04.MUF    :"
+        },
+        {
+          "kind": "title",
+          "code": "15",
+          "title": "2_M05.MUF    :"
+        },
+        {
+          "kind": "title",
+          "code": "16",
+          "title": "2_M06.MUF    :"
+        },
+        {
+          "kind": "title",
+          "code": "17",
+          "title": "2_M07.MUF    :"
+        },
+        {
+          "kind": "title",
+          "code": "18",
+          "title": "2_M08.MUF    :"
+        },
+        {
+          "kind": "title",
+          "code": "19",
+          "title": "2_M09.MUF    :"
+        },
+        {
+          "kind": "title",
+          "code": "20",
+          "title": "2_M10.MUF    :"
+        },
+        {
+          "kind": "title",
+          "code": "21",
+          "title": "2_M11.MUF    :"
+        },
+        {
+          "kind": "title",
+          "code": "22",
+          "title": "2_M12.MUF    :"
+        },
+        {
+          "kind": "title",
+          "code": "23",
+          "title": "2_M13.MUF    :"
+        },
+        {
+          "kind": "title",
+          "code": "24",
+          "title": "2_M14.MUF    :"
+        },
+        {
+          "kind": "title",
+          "code": "25",
+          "title": "2_M14A.MUF   :"
+        },
+        {
+          "kind": "title",
+          "code": "26",
+          "title": "2_M14B.MUF   :"
+        },
+        {
+          "kind": "title",
+          "code": "27",
+          "title": "2_M15.MUF    :"
+        },
+        {
+          "kind": "title",
+          "code": "28",
+          "title": "2_M15A.MUF   :"
+        },
+        {
+          "kind": "title",
+          "code": "29",
+          "title": "2_M16.MUF    :"
+        },
+        {
+          "kind": "title",
+          "code": "30",
+          "title": "2_M16A.MUF   :"
+        },
+        {
+          "kind": "title",
+          "code": "31",
+          "title": "2_M17.MUF    :"
+        },
+        {
+          "kind": "title",
+          "code": "32",
+          "title": "2_M18.MUF    :"
+        },
+        {
+          "kind": "title",
+          "code": "33",
+          "title": "2_M19.MUF    :"
+        },
+        {
+          "kind": "title",
+          "code": "34",
+          "title": "2_M20.MUF    :"
+        },
+        {
+          "kind": "title",
+          "code": "35",
+          "title": "2_M23.MUF    :"
+        },
+        {
+          "kind": "title",
+          "code": "36",
+          "title": "2_M24.MUF    :"
+        },
+        {
+          "kind": "title",
+          "code": "37",
+          "title": "2_M25.MUF    :"
+        },
+        {
+          "kind": "title",
+          "code": "38",
+          "title": "KIN.MUF      :"
+        },
+        {
+          "kind": "title",
+          "code": "39",
+          "title": "KIN5.MUF     :"
+        },
+        {
+          "kind": "title",
+          "code": "40",
+          "title": "KINEND.MUF   :"
+        },
+        {
+          "kind": "title",
+          "code": "41",
+          "title": "NA_HU.MUF    :"
+        },
+        {
+          "kind": "title",
+          "code": "42",
+          "title": "NA_NI.MUF    :"
+        },
+        {
+          "kind": "title",
+          "code": "43",
+          "title": "NA_SE.MUF    :"
+        },
+        {
+          "kind": "title",
+          "code": "44",
+          "title": "NA_TA.MUF    :"
+        },
+        {
+          "kind": "title",
+          "code": "45",
+          "title": "NA_XMAS.MUF  :"
+        },
+        {
+          "kind": "title",
+          "code": "46",
+          "title": "PINPON.MUF   :"
+        },
+        {
+          "kind": "title",
+          "code": "47",
+          "title": "PIPI.MUF     :"
+        },
+        {
+          "kind": "title",
+          "code": "48",
+          "title": "PON.MUF      :"
+        },
+        {
+          "kind": "title",
+          "code": "49",
+          "title": "SE_05.MUF    :"
+        },
+        {
+          "kind": "title",
+          "code": "50",
+          "title": "SE_06.MUF    :"
+        },
+        {
+          "kind": "title",
+          "code": "51",
+          "title": "SE_07.MUF    :"
+        },
+        {
+          "kind": "title",
+          "code": "52",
+          "title": "SE_KIN.MUF   :"
+        },
+        {
+          "kind": "title",
+          "code": "53",
+          "title": "SE_KINLP.MUF :"
+        },
+        {
+          "kind": "title",
+          "code": "54",
+          "title": "SEA.MUF      :"
+        },
+        {
+          "kind": "title",
+          "code": "55",
+          "title": "TEL.MUF      :"
+        },
+        {
+          "kind": "comment",
+          "text": "\n\t\t\t<title code=\"0x010007\">EFF.DAT : 00  : </title>\n"
+        },
+        {
+          "kind": "title",
+          "code": "0x020007",
+          "title": "EFF.DAT : 01 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x030007",
+          "title": "EFF.DAT : 02 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x040007",
+          "title": "EFF.DAT : 03 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x050007",
+          "title": "EFF.DAT : 04 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x060007",
+          "title": "EFF.DAT : 05 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x070007",
+          "title": "EFF.DAT : 06 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x080007",
+          "title": "EFF.DAT : 07 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x090007",
+          "title": "EFF.DAT : 08 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x0a0007",
+          "title": "EFF.DAT : 09 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x0b0007",
+          "title": "EFF.DAT : 0a :"
+        },
+        {
+          "kind": "title",
+          "code": "0x0c0007",
+          "title": "EFF.DAT : 0b :"
+        },
+        {
+          "kind": "title",
+          "code": "0x0d0007",
+          "title": "EFF.DAT : 0c :"
+        },
+        {
+          "kind": "title",
+          "code": "0x0e0007",
+          "title": "EFF.DAT : 0d :"
+        },
+        {
+          "kind": "title",
+          "code": "0x0f0007",
+          "title": "EFF.DAT : 0e :"
+        },
+        {
+          "kind": "title",
+          "code": "0x100007",
+          "title": "EFF.DAT : 0f :"
+        },
+        {
+          "kind": "title",
+          "code": "0x110007",
+          "title": "EFF.DAT : 10 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x120007",
+          "title": "EFF.DAT : 11 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x130007",
+          "title": "EFF.DAT : 12 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x140007",
+          "title": "EFF.DAT : 13 :"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/janis.xml",
+      "source_order": 2678,
+      "archive": "sshasin2_98",
+      "id": "sshasin2-98-opn"
+    }
+  ]
+}

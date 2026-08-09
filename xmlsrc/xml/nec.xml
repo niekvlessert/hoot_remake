@@ -1,0 +1,572 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="hoot.xsl"?>
+<!DOCTYPE gamelist [
+	<!ELEMENT gamelist (game|bind|childlists)*>
+	<!ATTLIST gamelist date CDATA #IMPLIED>
+	<!ELEMENT childlists (list)*>
+	<!ELEMENT list (#PCDATA)>
+	<!ELEMENT bind (exts,driver,options?)>
+	<!ELEMENT exts (ext)*>
+	<!ELEMENT ext (#PCDATA)>
+	<!ELEMENT game (name,driver,driveralias?,options?,romlist?,titlelist?)>
+	<!ELEMENT name (#PCDATA)>
+	<!ELEMENT driver (#PCDATA)>
+	<!ATTLIST driver type CDATA #IMPLIED>
+	<!ELEMENT driveralias (#PCDATA)>
+	<!ATTLIST driveralias type CDATA #IMPLIED>
+	<!ELEMENT options (option)*>
+	<!ELEMENT option EMPTY>
+	<!ATTLIST option name CDATA #REQUIRED
+					 value CDATA #REQUIRED>
+	<!ELEMENT romlist (rom)*>
+	<!ATTLIST romlist archive CDATA #IMPLIED>
+	<!ELEMENT rom (#PCDATA)>
+	<!ATTLIST rom type CDATA #REQUIRED
+				  offset CDATA #IMPLIED
+				  crc32 CDATA #IMPLIED>
+	<!ELEMENT titlelist (title|range)*>
+	<!ELEMENT title (#PCDATA)>
+	<!ATTLIST title code CDATA #REQUIRED
+					type CDATA #IMPLIED>
+	<!ELEMENT range (#PCDATA)>
+	<!ATTLIST range min CDATA #REQUIRED
+					max CDATA #REQUIRED
+					extcode CDATA #IMPLIED
+					start CDATA #IMPLIED>
+
+]>
+<gamelist date="2006/11/09">
+
+	<!-- //nec -->
+	<game>
+		<name>[PC-8801] PC-8801mkIIFR Demonstration</name>
+		<driver type="opn">pc88</driver>
+		<driveralias type="NEC PC-8801">NEC</driveralias>
+		<options>
+			<option name="mdata_addr" value="0xa000"/>
+		</options>
+		<romlist archive="88frdemo">
+			<rom type="code" offset="0x0000">PATCH</rom>
+			<rom type="code" offset="0x0100">PROG</rom>
+			<rom type="bgm" offset="0x00">MUS00</rom>
+			<rom type="bgm" offset="0x01">MUS01</rom>
+			<rom type="bgm" offset="0x02">MUS02</rom>
+			<rom type="bgm" offset="0x03">MUS03</rom>
+			<rom type="bgm" offset="0x04">MUS04</rom>
+			<rom type="bgm" offset="0x05">MUS05</rom>
+			<rom type="bgm" offset="0x06">MUS06</rom>
+		</romlist>
+		<titlelist>
+			<title code="0x01">MUS01 : ハイスクールはダンステリア   / Cyndi Lauper</title>
+			<title code="0x05">MUS05 : ねこふんじゃった             / 作曲者未詳</title>
+			<title code="0x04">MUS04 : Material Girl                / Madonna</title>
+			<title code="0x00">MUS00 : クラリネットをこわしちゃった / フランス民謡</title>
+			<title code="0x02">MUS02 : Hotel California             / Eagles</title>
+			<title code="0x06">MUS06 : ZOOM                         / CASIOPEA</title>
+			<title code="0x03">MUS03 : BLUE LAGOON                  / 高中正義</title>
+		</titlelist>
+	</game>
+	<game>
+		<name>[PC-8801] PC-8801mkIIMR Demonstration</name>
+		<driver type="opn">pc88</driver>
+		<driveralias type="NEC PC-8801">NEC</driveralias>
+		<options>
+			<option name="mdata_addr" value="0xc000"/>
+		</options>
+		<romlist archive="88mrdemo">
+			<rom type="code" offset="0x0000">PATCH</rom>
+			<rom type="code" offset="0x8000">000</rom>
+			<rom type="bgm" offset="0x00">002</rom>
+			<rom type="bgm" offset="0x01">003</rom>
+			<rom type="bgm" offset="0x02">004</rom>
+			<rom type="bgm" offset="0x03">005</rom>
+			<rom type="bgm" offset="0x04">006</rom>
+			<rom type="bgm" offset="0x05">007</rom>
+			<rom type="bgm" offset="0x06">008</rom>
+		</romlist>
+		<titlelist>
+			<title code="0x04">006 : 炎のランナー     / VANGELIS</title>
+			<title code="0x02">004 : ARABESQUE No.1   / Debussy</title>
+			<title code="0x00">002 : Some Like It Hot / The Power Station</title>
+			<title code="0x01">003 : カナリア諸島にて / 大瀧詠一</title>
+			<title code="0x05">007 : Birdland         / Weather Report</title>
+			<title code="0x06">008 : ウェディングベル / SUGAR</title>
+			<title code="0x03">005 : くるみ割り人形   / Tchaikovsky (未使用)</title>
+		</titlelist>
+	</game>
+	<game>
+		<name>[PC-8801] PC-8801FH Demonstration</name>
+		<driver type="opn">pc88</driver>
+		<driveralias type="NEC PC-8801">NEC</driveralias>
+		<romlist archive="88fhdemo">
+			<rom type="code" offset="0x0000">PATCH</rom>
+			<rom type="code" offset="0xa000">DRIVER</rom>
+			<rom type="code" offset="0xc000">MUSIC</rom>
+		</romlist>
+		<titlelist>
+			<title code="0x01">花のワルツ    / Peter Ilyich Tchaikovsky</title>
+			<title code="0x00">Like A Virgin / Madonna</title>
+			<title code="0x02">Firecracker   / Yellow Magic Orchestra</title>
+		</titlelist>
+	</game>
+	<game>
+		<name>[PC-8801] PC-8801MH Demonstration</name>
+		<driver type="opn">pc88</driver>
+		<driveralias type="NEC PC-8801">NEC</driveralias>
+		<romlist archive="88mhdemo">
+			<rom type="code" offset="0x0000">PATCH</rom>
+			<rom type="code" offset="0xb000">DRIVER</rom>
+			<rom type="code" offset="0xc000">MUS00</rom>
+			<rom type="code" offset="0xd400">MUS01</rom>
+			<rom type="code" offset="0xf400">MUS02</rom>
+		</romlist>
+		<titlelist>
+			<title code="0x02">PC-8801MHロゴ</title>
+			<title code="0x03">花のワルツ    / Peter Ilyich Tchaikovsky</title>
+			<title code="0x00">Firecracker   / Yellow Magic Orchestra</title>
+			<title code="0x01">ERROR</title>
+		</titlelist>
+	</game>
+	<game>
+		<name>[PC-8801] PC-8801MH/FH Demonstration</name>
+		<driver type="opn">pc88</driver>
+		<driveralias type="NEC PC-8801">NEC</driveralias>
+		<options>
+			<option name="mdata_addr" value="0x0400"/>
+		</options>
+		<romlist archive="88mhfhdemo">
+			<rom type="code" offset="0x0000">PATCH</rom>
+			<rom type="bgm" offset="0x00">JIT.COM</rom>
+			<rom type="bgm" offset="0x01">YUB.COM</rom>
+			<rom type="bgm" offset="0x02">HIK.COM</rom>
+			<rom type="bgm" offset="0x03">SEN.COM</rom>
+			<rom type="bgm" offset="0x04">USO.COM</rom>
+		</romlist>
+		<titlelist>
+			<title code="0x03">SEN.COM : LP「ガラスの鼓動」より 千の風音</title>
+			<title code="0x02">HIK.COM : LP「ガラスの鼓動」より お引越し・忘れもの</title>
+			<title code="0x00">JIT.COM : LP「チャイム」より     自転車に乗って</title>
+			<title code="0x04">USO.COM : LP「チャイム」より     つけなかった嘘</title>
+			<title code="0x01">YUB.COM : LP「チャイム」より     指輪物語</title>
+		</titlelist>
+	</game>
+	<game>
+		<name>[PC-8801] PC-8801FE Demonstration(Panic Bears)(OPNA)</name>
+		<driver type="opna">pc88</driver>
+		<driveralias type="NEC PC-8801">NEC</driveralias>
+		<romlist archive="88fedemo">
+			<rom type="code" offset="0x0000">PATCH</rom>
+			<rom type="code" offset="0xc000">C000</rom>
+		</romlist>
+		<titlelist>
+			<title code="0x00">MUSIC 00 (OPNA)</title>
+			<title code="0x01">MUSIC 01 (OPNA)</title>
+			<title code="0x02">MUSIC 02 (OPNA)</title>
+			<title code="0x03">MUSIC 03 (OPNA)</title>
+			<title code="0x04">MUSIC 04 (OPNA)</title>
+		<!--	<title code="0x05">MUSIC 01 (OPN)</title> -->
+		<!--	<title code="0x06">MUSIC 02 (OPN)</title> -->
+		<!--	<title code="0x07">MUSIC 03 (OPN)</title> -->
+		<!--	<title code="0x08">MUSIC 04 (OPN)</title> -->
+		<!--	<title code="0x09">MUSIC 05 (OPN)</title> -->
+		</titlelist>
+	</game>
+	<game>
+		<name>[PC-8801] PC-8801FE Demonstration(Panic Bears)(OPN)</name>
+		<driver type="opn">pc88</driver>
+		<driveralias type="NEC PC-8801">NEC</driveralias>
+		<romlist archive="88fedemo">
+			<rom type="code" offset="0x0000">PATCH</rom>
+			<rom type="code" offset="0xc000">C000</rom>
+		</romlist>
+		<titlelist>
+		<!--	<title code="0x00">MUSIC 00 (OPNA)</title> -->
+		<!--	<title code="0x01">MUSIC 01 (OPNA)</title> -->
+		<!--	<title code="0x02">MUSIC 02 (OPNA)</title> -->
+		<!--	<title code="0x03">MUSIC 03 (OPNA)</title> -->
+		<!--	<title code="0x04">MUSIC 04 (OPNA)</title> -->
+			<title code="0x05">MUSIC 01 (OPN)</title>
+			<title code="0x06">MUSIC 02 (OPN)</title>
+			<title code="0x07">MUSIC 03 (OPN)</title>
+			<title code="0x08">MUSIC 04 (OPN)</title>
+			<title code="0x09">MUSIC 05 (OPN)</title>
+		</titlelist>
+	</game>
+	<game>
+		<name>[PC-8801] PC-8801MA2 Demonstration(Panic Bears)(OPNA)</name>
+		<driver type="opna">pc88</driver>
+		<driveralias type="NEC PC-8801">NEC</driveralias>
+		<romlist archive="88ma2demo">
+			<rom type="code" offset="0x0000">PATCH</rom>
+			<rom type="code" offset="0xc000">C000</rom>
+		</romlist>
+		<titlelist>
+			<title code="0x00">MUSIC 00 (OPNA)</title>
+			<title code="0x01">MUSIC 01 (OPNA)</title>
+			<title code="0x02">MUSIC 02 (OPNA)</title>
+			<title code="0x03">MUSIC 03 (OPNA)</title>
+			<title code="0x04">MUSIC 04 (OPNA)</title>
+		<!--	<title code="0x05">MUSIC 01 (OPN)</title> -->
+		<!--	<title code="0x06">MUSIC 02 (OPN)</title> -->
+		<!--	<title code="0x07">MUSIC 03 (OPN)</title> -->
+		<!--	<title code="0x08">MUSIC 04 (OPN)</title> -->
+		<!--	<title code="0x09">MUSIC 05 (OPN)</title> -->
+		</titlelist>
+	</game>
+	<game>
+		<name>[PC-8801] PC-8801MA2 Demonstration(Panic Bears)(OPN)</name>
+		<driver type="opn">pc88</driver>
+		<driveralias type="NEC PC-8801">NEC</driveralias>
+		<romlist archive="88ma2demo">
+			<rom type="code" offset="0x0000">PATCH</rom>
+			<rom type="code" offset="0xc000">C000</rom>
+		</romlist>
+		<titlelist>
+		<!--	<title code="0x00">MUSIC 00 (OPNA)</title> -->
+		<!--	<title code="0x01">MUSIC 01 (OPNA)</title> -->
+		<!--	<title code="0x02">MUSIC 02 (OPNA)</title> -->
+		<!--	<title code="0x03">MUSIC 03 (OPNA)</title> -->
+		<!--	<title code="0x04">MUSIC 04 (OPNA)</title> -->
+			<title code="0x05">MUSIC 01 (OPN)</title>
+			<title code="0x06">MUSIC 02 (OPN)</title>
+			<title code="0x07">MUSIC 03 (OPN)</title>
+			<title code="0x08">MUSIC 04 (OPN)</title>
+			<title code="0x09">MUSIC 05 (OPN)</title>
+		</titlelist>
+	</game>
+	<game>
+		<name>[PC-8801] PC-8801FE2/MC Demonstration(SpaceBall Bears)(OPNA)</name>
+		<driver type="opna">pc88</driver>
+		<driveralias type="NEC PC-8801">NEC</driveralias>
+		<options>
+			<option name="mdata_addr" value="0xd000"/>
+			<option name="use_rtc" value="0x01"/>
+		</options>
+		<romlist archive="88fe2mcdemo">
+			<rom type="code" offset="0x0000">PATCH</rom>
+			<rom type="code" offset="0xc010">SOUND</rom>
+			<rom type="code" offset="0xc580">NEPLY2</rom>
+			<rom type="bgm" offset="0x00">NEE</rom>
+			<rom type="bgm" offset="0x01">NEM</rom>
+			<rom type="bgm" offset="0x02">NEO</rom>
+		</romlist>
+		<titlelist>
+			<title code="0x00000002">NEO : オープニング</title>
+			<title code="0x00000001">NEM : ラウンドスタート</title>
+			<title code="0x00018301">NEM : ミス</title>
+			<title code="0x0002aa01">NEM : ラウンドクリア</title>
+			<title code="0x0015a001">NEM : ROUND 1</title>
+			<title code="0x00047401">NEM : ROUND 2</title>
+			<title code="0x000f1901">NEM : ROUND 3</title>
+			<title code="0x00099301">NEM : ROUND 4</title>
+			<title code="0x00000000">NEE : ランキング(1位)</title>
+			<title code="0x00057100">NEE : ランキング(2～5位)</title>
+			<title code="0x0009de00">NEE : ランキング(ランキング外)</title>
+			<title code="0x010000ff">効果音01</title>
+			<title code="0x020000ff">効果音02</title>
+			<title code="0x030000ff">効果音03</title>
+			<title code="0x040000ff">効果音04</title>
+			<title code="0x050000ff">効果音05</title>
+			<title code="0x060000ff">効果音06</title>
+			<title code="0x070000ff">効果音07</title>
+			<title code="0x080000ff">効果音08</title>
+		</titlelist>
+	</game>
+	<game>
+		<name>[PC-8801] PC-8801FE2/MC Demonstration(Spaceball Bears)(OPN)</name>
+		<driver type="opn">pc88</driver>
+		<driveralias type="NEC PC-8801">NEC</driveralias>
+		<options>
+			<option name="mdata_addr" value="0xd000"/>
+			<option name="use_rtc" value="0x01"/>
+		</options>
+		<romlist archive="88fe2mcdemo">
+			<rom type="code" offset="0x0000">PATCH</rom>
+			<rom type="code" offset="0xc010">SOUND</rom>
+			<rom type="code" offset="0xc580">NEPLY</rom>
+			<rom type="bgm" offset="0x00">NEE</rom>
+			<rom type="bgm" offset="0x01">NEM</rom>
+			<rom type="bgm" offset="0x02">NEO</rom>
+		</romlist>
+		<titlelist>
+			<title code="0x00000002">NEO : オープニング</title>
+			<title code="0x00000001">NEM : ラウンドスタート</title>
+			<title code="0x00018301">NEM : ミス</title>
+			<title code="0x0002aa01">NEM : ラウンドクリア</title>
+			<title code="0x0015a001">NEM : ROUND 1</title>
+			<title code="0x00047401">NEM : ROUND 2</title>
+			<title code="0x000f1901">NEM : ROUND 3</title>
+			<title code="0x00099301">NEM : ROUND 4</title>
+			<title code="0x00000000">NEE : ランキング(1位)</title>
+			<title code="0x00057100">NEE : ランキング(2～5位)</title>
+			<title code="0x0009de00">NEE : ランキング(ランキング外)</title>
+			<title code="0x010000ff">効果音01</title>
+			<title code="0x020000ff">効果音02</title>
+			<title code="0x030000ff">効果音03</title>
+			<title code="0x040000ff">効果音04</title>
+			<title code="0x050000ff">効果音05</title>
+			<title code="0x060000ff">効果音06</title>
+			<title code="0x070000ff">効果音07</title>
+			<title code="0x080000ff">効果音08</title>
+		</titlelist>
+	</game>
+	<game>
+		<name>[PC-8801] PC-98DO Demonstration(OPNA)</name>
+		<driver type="opna">pc88</driver>
+		<driveralias type="NEC PC-8801">NEC</driveralias>
+		<options>
+			<option name="mdata_addr" value="0xc000"/>
+			<option name="mdata_size" value="0x4000"/>
+			<option name="mfile_size" value="0x4000"/>
+		</options>
+		<romlist archive="98dodemo">
+			<rom type="code" offset="0x0000">PATCH</rom>
+			<rom type="code" offset="0xc000">DEMO</rom>
+			<rom type="bgm" offset="0x00">DEMO</rom>
+			<rom type="bgm" offset="0x01">GAME</rom>
+		</romlist>
+		<titlelist>
+			<title code="0x00000000">Demonstration (OPN)</title>
+			<title code="0x00000001">Panic Bears : MUSIC 01 (OPNA)</title>
+			<title code="0x01000001">Panic Bears : MUSIC 02 (OPNA)</title>
+			<title code="0x02000001">Panic Bears : MUSIC 03 (OPNA)</title>
+			<title code="0x03000001">Panic Bears : MUSIC 04 (OPNA)</title>
+			<title code="0x04000001">Panic Bears : MUSIC 05 (OPNA)</title>
+		<!--	<title code="0x05000001">Panic Bears : MUSIC 01 (OPN)</title> -->
+		<!--	<title code="0x06000001">Panic Bears : MUSIC 02 (OPN)</title> -->
+		<!--	<title code="0x07000001">Panic Bears : MUSIC 03 (OPN)</title> -->
+		<!--	<title code="0x08000001">Panic Bears : MUSIC 04 (OPN)</title> -->
+		<!--	<title code="0x09000001">Panic Bears : MUSIC 05 (OPN)</title> -->
+		</titlelist>
+	</game>
+	<game>
+		<name>[PC-8801] PC-98DO Demonstration(OPN)</name>
+		<driver type="opn">pc88</driver>
+		<driveralias type="NEC PC-8801">NEC</driveralias>
+		<options>
+			<option name="mdata_addr" value="0xc000"/>
+			<option name="mdata_size" value="0x4000"/>
+			<option name="mfile_size" value="0x4000"/>
+		</options>
+		<romlist archive="98dodemo">
+			<rom type="code" offset="0x0000">PATCH</rom>
+			<rom type="code" offset="0xc000">DEMO</rom>
+			<rom type="bgm" offset="0x00">DEMO</rom>
+			<rom type="bgm" offset="0x01">GAME</rom>
+		</romlist>
+		<titlelist>
+			<title code="0x00000000">Demonstration (OPN)</title>
+		<!--	<title code="0x00000001">Panic Bears : MUSIC 01 (OPNA)</title> -->
+		<!--	<title code="0x01000001">Panic Bears : MUSIC 02 (OPNA)</title> -->
+		<!--	<title code="0x02000001">Panic Bears : MUSIC 03 (OPNA)</title> -->
+		<!--	<title code="0x03000001">Panic Bears : MUSIC 04 (OPNA)</title> -->
+		<!--	<title code="0x04000001">Panic Bears : MUSIC 05 (OPNA)</title> -->
+			<title code="0x05000001">Panic Bears : MUSIC 01 (OPN)</title>
+			<title code="0x06000001">Panic Bears : MUSIC 02 (OPN)</title>
+			<title code="0x07000001">Panic Bears : MUSIC 03 (OPN)</title>
+			<title code="0x08000001">Panic Bears : MUSIC 04 (OPN)</title>
+			<title code="0x09000001">Panic Bears : MUSIC 05 (OPN)</title>
+		</titlelist>
+	</game>
+	<game>
+		<name>[PC-8801] PC-8801MA2 店頭用デモンストレーションディスク</name>
+		<driver type="opna">pc88</driver>
+		<driveralias type="NEC PC-8801">NEC</driveralias>
+		<options>
+			<option name="use_pcmx8" value="0x01"/>
+		</options>
+		<romlist archive="88ma2shopdemo">
+			<rom type="code" offset="0x0000">PATCH</rom>
+			<rom type="code" offset="0x9600">mdata.bin</rom>
+			<rom type="code" offset="0xa600">ssd.bin</rom>
+			<rom type="code" offset="0xb600">main.bin</rom>
+			<rom type="adpcm" offset="0x00000">ADPCM</rom>
+		</romlist>
+		<titlelist>
+			<title code="0x00">夢の中へ (FM音源)</title>
+			<title code="0x01">夢の中へ (ADPCM)</title>
+		</titlelist>
+	</game>
+	<game>
+		<name>[PC-8801] CDたから箱(OPNA)</name>
+		<driver type="opna">pc88</driver>
+		<driveralias type="NEC PC-8801">NEC</driveralias>
+		<options>
+			<option name="init_pc"    value="0x8000"/>
+			<option name="mdata_addr" value="0x0000"/>
+			<option name="mdata_size" value="0x7000"/>
+			<option name="mfile_size" value="0x7000"/>
+		</options>
+		<romlist archive="cdtakara">
+			<rom type="code" offset="0x8000">PATCH</rom>
+			<rom type="bgm" offset="0x00">TITLE</rom>
+			<rom type="bgm" offset="0x01">MENU</rom>
+		</romlist>
+		<titlelist>
+			<title code="0x00">タイトル</title>
+			<title code="0x01">メニュー</title>
+		</titlelist>
+	</game>
+	<game>
+		<name>[PC-8801] CDたから箱(OPN)</name>
+		<driver type="opn">pc88</driver>
+		<driveralias type="NEC PC-8801">NEC</driveralias>
+		<options>
+			<option name="init_pc"    value="0x8000"/>
+			<option name="mdata_addr" value="0x0000"/>
+			<option name="mdata_size" value="0x7000"/>
+			<option name="mfile_size" value="0x7000"/>
+		</options>
+		<romlist archive="cdtakara">
+			<rom type="code" offset="0x0000">TITLE</rom>
+			<rom type="code" offset="0x8000">PATCH</rom>
+			<rom type="bgm" offset="0x00">TITLE</rom>
+			<rom type="bgm" offset="0x01">MENU</rom>
+		</romlist>
+		<titlelist>
+			<title code="0x00">タイトル</title>
+			<title code="0x01">メニュー</title>
+		</titlelist>
+	</game>
+	<game>
+		<name>[PC-88VA] PC-88VA Demonstration</name>
+		<driver type="opn">pc88vados</driver>
+		<driveralias type="NEC PC-88VA">NEC</driveralias>
+		<romlist archive="demo_va">
+			<rom type="file" offset="-1">DEMO2.SYS</rom>
+			<rom type="file" offset="-1">shangva.com</rom>
+			<rom type="device" offset="0">DEMO2.SYS</rom>
+			<rom type="shell" offset="0">shangva</rom>
+		</romlist>
+		<titlelist>
+			<title code="0x01">01 : An der schonen, blauen Donau (美しく青きドナウ) / Johann Strauss II.</title>
+			<title code="0x02">02 : Rosen aus dem Suden (南国のバラ) / Johann Strauss II.</title>
+			<title code="0x03">03 : Fruhlingsstimmen (春の声) / Johann Strauss II.</title>
+			<title code="0x04">04 : Symphony No.9, from The New World / Antonin Dvorak</title>
+			<title code="0x05">05 : Eine kleine Nachtmusik, K.525 / W.A.Mozart</title>
+		<!--	<title code="0x06">06 : Eine kleine Nachtmusik, K.525 / W.A.Mozart</title> -->
+			<title code="0x07">07 : ワルキューレの騎行 / Wilhelm Richard Wagner</title>
+		<!--	<title code="0x08">08 : ワルキューレの騎行 / Wilhelm Richard Wagner</title> -->
+		</titlelist>
+	</game>
+	<game>
+		<name>[PC-88VA] PC-88VA 店頭デモ</name>
+		<driver type="opn">pc88vados</driver>
+		<driveralias type="NEC PC-88VA">NEC</driveralias>
+		<romlist archive="demoshop_va">
+			<rom type="file" offset="-1">MUDEMO.SYS</rom>
+			<rom type="file" offset="-1">shangva.com</rom>
+			<rom type="device" offset="0">MUDEMO.SYS</rom>
+			<rom type="shell" offset="0">shangva</rom>
+		</romlist>
+		<titlelist>
+			<title code="0x01">01 : Up Where We Belong (愛と青春の旅立ち) / John Robert Cocker &amp; Jennifer Warnes</title>
+			<title code="0x02">02 : Rosen aus dem Suden (南国のバラ) / Johann Strauss II.</title>
+			<title code="0x03">03 : Penelope (エーゲ海の真珠) / Paul Mauriat</title>
+			<title code="0x04">04 : 交響曲第9番 ホ短調 作品95 新世界より / Antonin Leopold Dvorak</title>
+			<title code="0x05">05 : Misty Lady / Casiopea</title>
+			<title code="0x09">09 : 効果音1</title>
+			<title code="0x0a">10 : 効果音2</title>
+			<title code="0x0b">11 : 効果音3</title>
+			<title code="0x0c">12 : 効果音4</title>
+			<title code="0x0d">13 : 効果音5</title>
+			<title code="0x0e">14 : 効果音6</title>
+		</titlelist>
+	</game>
+	<game>
+		<name>[PC-88VA] R-TYPE(OPNA)</name>
+		<driver type="opna">pc88vados</driver>
+		<driveralias type="NEC PC-88VA">NEC</driveralias>
+		<romlist archive="rtypeva">
+			<rom type="file" offset="-1">rtype.com</rom>
+			<rom type="file" offset="-1">MAIN.EXE</rom>
+			<rom type="file" offset="0x10">JOINT.0B</rom>
+			<rom type="file" offset="0x11">RT02.0B</rom>
+			<rom type="file" offset="0x12">RT03.0B</rom>
+			<rom type="file" offset="0x13">RT04.0B</rom>
+			<rom type="file" offset="0x14">RT05.0B</rom>
+			<rom type="file" offset="0x15">RT06.0B</rom>
+			<rom type="file" offset="0x16">RT07.0B</rom>
+			<rom type="file" offset="0x17">RT08.0B</rom>
+			<rom type="file" offset="0x18">RTCLR2.0B</rom>
+			<rom type="file" offset="0x19">RTOP01.0B</rom>
+			<rom type="file" offset="0x1a">RTOPS2.0B</rom>
+			<rom type="file" offset="0x1b">RTSCOR.0B</rom>
+			<rom type="file" offset="0x1c">TITLE4.0B</rom>
+			<rom type="file" offset="0x1d">BOSS.0B</rom>
+			<rom type="file" offset="0x1e">CLEAR.0B</rom>
+			<rom type="file" offset="0x1f">GAMEOVER.0B</rom>
+			<rom type="file" offset="0x20">ENDING.0B</rom>
+			<rom type="file" offset="0x21">EFFECT.0B</rom>
+			<rom type="shell" offset="0">rtype</rom>
+		</romlist>
+		<titlelist>
+		<!--	<title code="0x01010019">RTOP01.0B   : オープニング</title> -->
+			<title code="0x0001001a">RTOPS2.0B   : オープニング</title>
+			<title code="0x01000010">JOINT.0B    : START ～ BATTLE THEME                : STAGE 1</title>
+			<title code="0x0100001c">TITLE4.0B   : BATTLE THEME                         : STAGE 1</title>
+			<title code="0x01000011">RT02.0B     : MONSTER BEAT                         : STAGE 2</title>
+			<title code="0x01000012">RT03.0B     : BATTLE PRESSURE                      : STAGE 3</title>
+			<title code="0x01000013">RT04.0B     : ブツ・ブツ…                         : STAGE 4</title>
+			<title code="0x01000014">RT05.0B     : 洞窟に潜むモンスター                 : STAGE 5</title>
+			<title code="0x01000015">RT06.0B     : SCRAMBLE CROSSROAD                   : STAGE 6</title>
+			<title code="0x01000016">RT07.0B     : 夢の島 (OGORERUMONO WA HISASIKARAZU) : STAGE 7</title>
+			<title code="0x01000017">RT08.0B     : 母胎                                 : STAGE 8</title>
+			<title code="0x01010018">RTCLR2.0B   : CONTINUE                             : CONTINUE</title>
+			<title code="0x0100001b">RTSCOR.0B   : SCORING                              : NAME ENTRY</title>
+			<title code="0x0100001d">BOSS.0B     : BOSS THEME                           : BOSS</title>
+			<title code="0x0101001e">CLEAR.0B    : RETURN IN TRIUMPH                    : STAGE CLEAR</title>
+			<title code="0x01000020">ENDING.0B   : LIKE A HERO                          : ENDING</title>
+			<title code="0x0101001f">GAMEOVER.0B : THE END OF A WAR                     : GAME OVER</title>
+		<!--	<title code="0x01010021">EFFECT.0B   : 効果音</title> -->
+		</titlelist>
+	</game>
+	<game>
+		<name>[PC-88VA] R-TYPE(OPN)</name>
+		<driver type="opn">pc88vados</driver>
+		<driveralias type="NEC PC-88VA">NEC</driveralias>
+		<romlist archive="rtypeva">
+			<rom type="file" offset="-1">rtype.com</rom>
+			<rom type="file" offset="-1">MAIN.EXE</rom>
+			<rom type="file" offset="0x10">JOINT.0B</rom>
+			<rom type="file" offset="0x11">RT02.0B</rom>
+			<rom type="file" offset="0x12">RT03.0B</rom>
+			<rom type="file" offset="0x13">RT04.0B</rom>
+			<rom type="file" offset="0x14">RT05.0B</rom>
+			<rom type="file" offset="0x15">RT06.0B</rom>
+			<rom type="file" offset="0x16">RT07.0B</rom>
+			<rom type="file" offset="0x17">RT08.0B</rom>
+			<rom type="file" offset="0x18">RTCLR2.0B</rom>
+			<rom type="file" offset="0x19">RTOP01.0B</rom>
+			<rom type="file" offset="0x1a">RTOPS2.0B</rom>
+			<rom type="file" offset="0x1b">RTSCOR.0B</rom>
+			<rom type="file" offset="0x1c">TITLE4.0B</rom>
+			<rom type="file" offset="0x1d">BOSS.0B</rom>
+			<rom type="file" offset="0x1e">CLEAR.0B</rom>
+			<rom type="file" offset="0x1f">GAMEOVER.0B</rom>
+			<rom type="file" offset="0x20">ENDING.0B</rom>
+			<rom type="file" offset="0x21">EFFECT.0B</rom>
+			<rom type="shell" offset="0">rtype</rom>
+		</romlist>
+		<titlelist>
+			<title code="0x01010019">RTOP01.0B   : オープニング</title>
+		<!--	<title code="0x0001001a">RTOPS2.0B   : オープニング</title> -->
+			<title code="0x01000010">JOINT.0B    : START ～ BATTLE THEME                : STAGE 1</title>
+			<title code="0x0100001c">TITLE4.0B   : BATTLE THEME                         : STAGE 1</title>
+			<title code="0x01000011">RT02.0B     : MONSTER BEAT                         : STAGE 2</title>
+			<title code="0x01000012">RT03.0B     : BATTLE PRESSURE                      : STAGE 3</title>
+			<title code="0x01000013">RT04.0B     : ブツ・ブツ…                         : STAGE 4</title>
+			<title code="0x01000014">RT05.0B     : 洞窟に潜むモンスター                 : STAGE 5</title>
+			<title code="0x01000015">RT06.0B     : SCRAMBLE CROSSROAD                   : STAGE 6</title>
+			<title code="0x01000016">RT07.0B     : 夢の島 (OGORERUMONO WA HISASIKARAZU) : STAGE 7</title>
+			<title code="0x01000017">RT08.0B     : 母胎                                 : STAGE 8</title>
+			<title code="0x01010018">RTCLR2.0B   : CONTINUE                             : CONTINUE</title>
+			<title code="0x0100001b">RTSCOR.0B   : SCORING                              : NAME ENTRY</title>
+			<title code="0x0100001d">BOSS.0B     : BOSS THEME                           : BOSS</title>
+			<title code="0x0101001e">CLEAR.0B    : RETURN IN TRIUMPH                    : STAGE CLEAR</title>
+			<title code="0x01000020">ENDING.0B   : LIKE A HERO                          : ENDING</title>
+			<title code="0x0101001f">GAMEOVER.0B : THE END OF A WAR                     : GAME OVER</title>
+		<!--	<title code="0x01010021">EFFECT.0B   : 効果音</title> -->
+		</titlelist>
+	</game>
+</gamelist>

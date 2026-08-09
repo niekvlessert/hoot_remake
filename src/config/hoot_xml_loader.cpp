@@ -1,4 +1,6 @@
 #include "config/hoot_xml_loader.h"
+#include "core/utf8_util.h"
+#include "core/text_encoding.h"
 
 #include <algorithm>
 #include <cctype>
@@ -7,7 +9,9 @@
 #include <filesystem>
 #include <fstream>
 #include <iterator>
+#include <iomanip>
 #include <map>
+#include <sstream>
 #include <string>
 #include <vector>
 #include <utility>
@@ -38,26 +42,43 @@ std::string trim(std::string value)
 
 std::string xml_unescape(std::string value)
 {
-    struct Replacement {
-        const char* from;
-        const char* to;
-    };
-    constexpr Replacement replacements[] = {
-        {"&quot;", "\""},
-        {"&apos;", "'"},
-        {"&lt;", "<"},
-        {"&gt;", ">"},
-        {"&amp;", "&"},
-    };
-
-    for (const auto& replacement : replacements) {
-        size_t pos = 0;
-        while ((pos = value.find(replacement.from, pos)) != std::string::npos) {
-            value.replace(pos, std::strlen(replacement.from), replacement.to);
-            pos += std::strlen(replacement.to);
+    std::string out;
+    out.reserve(value.size());
+    for (size_t i = 0; i < value.size();) {
+        if (value[i] != '&') {
+            out.push_back(value[i++]);
+            continue;
         }
+        const auto semi = value.find(';', i + 1);
+        if (semi == std::string::npos) {
+            out.push_back(value[i++]);
+            continue;
+        }
+        const auto entity = value.substr(i + 1, semi - i - 1);
+        if (entity == "quot") out.push_back('"');
+        else if (entity == "apos") out.push_back('\'');
+        else if (entity == "lt") out.push_back('<');
+        else if (entity == "gt") out.push_back('>');
+        else if (entity == "amp") out.push_back('&');
+        else if (!entity.empty() && entity[0] == '#') {
+            char* tail = nullptr;
+            const bool hex = entity.size() > 2 && (entity[1] == 'x' || entity[1] == 'X');
+            const char* digits = entity.c_str() + (hex ? 2 : 1);
+            const unsigned long parsed = std::strtoul(digits, &tail, hex ? 16 : 10);
+            if (tail == digits || *tail != '\0' || parsed > 0x10ffffUL ||
+                (parsed >= 0xd800UL && parsed <= 0xdfffUL)) {
+                out.append(value, i, semi - i + 1);
+            } else {
+                hoot::utf8::append_codepoint(out, static_cast<uint32_t>(parsed));
+            }
+        } else {
+            // Preserve unknown entities verbatim instead of silently corrupting
+            // catalog text. The current Hoot XML uses standard/numeric entities.
+            out.append(value, i, semi - i + 1);
+        }
+        i = semi + 1;
     }
-    return value;
+    return out;
 }
 
 
@@ -68,6 +89,48 @@ uint32_t parse_u32(const std::string& text)
     }
     char* end = nullptr;
     return static_cast<uint32_t>(std::strtoul(text.c_str(), &end, 0));
+}
+
+std::string format_code(const std::string& format, uint32_t code)
+{
+    std::string result;
+    for (size_t i = 0; i < format.size();) {
+        if (format[i] != '%') {
+            result.push_back(format[i++]);
+            continue;
+        }
+        if (i + 1 < format.size() && format[i + 1] == '%') {
+            result.push_back('%');
+            i += 2;
+            continue;
+        }
+        size_t j = i + 1;
+        bool zero_pad = false;
+        int width = 0;
+        if (j < format.size() && format[j] == '0') {
+            zero_pad = true;
+            ++j;
+        }
+        while (j < format.size() && std::isdigit(static_cast<unsigned char>(format[j]))) {
+            width = width * 10 + (format[j] - '0');
+            ++j;
+        }
+        if (j >= format.size() || std::string("xXdu").find(format[j]) == std::string::npos) {
+            result.push_back(format[i++]);
+            continue;
+        }
+        std::ostringstream rendered;
+        if (width > 0) rendered << std::setw(width) << std::setfill(zero_pad ? '0' : ' ');
+        if (format[j] == 'x' || format[j] == 'X') {
+            if (format[j] == 'X') rendered << std::uppercase;
+            rendered << std::hex << code;
+        } else {
+            rendered << std::dec << code;
+        }
+        result += rendered.str();
+        i = j + 1;
+    }
+    return result;
 }
 
 std::string slugify(const std::string& text)
@@ -380,6 +443,9 @@ bool parse_games(const XmlNode& root, HootCatalog& catalog, std::map<std::string
                         HootAssetRef asset;
                         asset.type = rom_child.attribute("type");
                         asset.offset = parse_u32(rom_child.attribute("offset"));
+                        const auto crc32 = rom_child.attribute("crc32");
+                        asset.has_crc32 = !crc32.empty();
+                        if (asset.has_crc32) asset.crc32 = parse_u32(crc32);
                         asset.path = xml_unescape(trim(rom_child.text));
                         entry.assets.push_back(std::move(asset));
                     }
@@ -391,6 +457,24 @@ bool parse_games(const XmlNode& root, HootCatalog& catalog, std::map<std::string
                         track.code = parse_u32(title_child.attribute("code"));
                         track.title = xml_unescape(trim(title_child.text));
                         entry.tracks.push_back(std::move(track));
+                    } else if (title_child.name == "range") {
+                        const auto minimum = parse_u32(title_child.attribute("min"));
+                        const auto maximum = parse_u32(title_child.attribute("max"));
+                        if (maximum < minimum || static_cast<uint64_t>(maximum) - minimum > 1000000ULL) {
+                            continue;
+                        }
+                        const auto start_text = title_child.attribute("start");
+                        const bool has_start = !start_text.empty();
+                        const auto start = parse_u32(start_text);
+                        const auto title_format = xml_unescape(trim(title_child.text));
+                        for (uint32_t code = minimum;; ++code) {
+                            CatalogTrack track;
+                            track.code = code;
+                            const auto display_code = has_start ? start + (code - minimum) : code;
+                            track.title = format_code(title_format, display_code);
+                            entry.tracks.push_back(std::move(track));
+                            if (code == maximum) break;
+                        }
                     }
                 }
             }
@@ -432,9 +516,14 @@ bool apply_overrides(const std::filesystem::path& path,
                      HootCatalog& catalog,
                      std::string& error)
 {
-    const auto xml = read_file(path.string());
-    if (xml.empty()) {
+    const auto xml_bytes = read_file(path.string());
+    if (xml_bytes.empty()) {
         error = "unable to read overrides: " + path.string();
+        return false;
+    }
+    std::string xml;
+    if (!normalize_xml_to_utf8(xml_bytes, xml, error)) {
+        error = "unable to decode overrides: " + error + " in " + path.string();
         return false;
     }
 
@@ -545,9 +634,14 @@ bool load_file_recursive(const std::filesystem::path& path,
     }
     visited[canonical_path] = true;
 
-    const auto xml = read_file(canonical_path.string());
-    if (xml.empty()) {
+    const auto xml_bytes = read_file(canonical_path.string());
+    if (xml_bytes.empty()) {
         error = "unable to read catalog: " + canonical_path.string();
+        return false;
+    }
+    std::string xml;
+    if (!normalize_xml_to_utf8(xml_bytes, xml, error)) {
+        error = "unable to decode XML: " + error + " in " + canonical_path.string();
         return false;
     }
 
@@ -571,6 +665,11 @@ bool load_file_recursive(const std::filesystem::path& path,
 }
 
 } // namespace
+
+bool apply_hoot_overrides(const std::string& path, HootCatalog& catalog, std::string& error)
+{
+    return apply_overrides(std::filesystem::path(path), catalog, error);
+}
 
 bool HootXmlLoader::load_file(const std::string& path, HootCatalog& catalog, std::string& error) const
 {
@@ -608,10 +707,12 @@ bool HootXmlLoader::load_file(const std::string& path, HootCatalog& catalog, std
     return true;
 }
 
-bool HootXmlLoader::load_string(const std::string& xml, HootCatalog& catalog, std::string& error) const
+bool HootXmlLoader::load_string(const std::string& xml_bytes, HootCatalog& catalog, std::string& error) const
 {
     catalog.clear();
     std::map<std::string, int> seen_ids;
+    std::string xml;
+    if (!normalize_xml_to_utf8(xml_bytes, xml, error)) return false;
     XmlNode root;
     if (!parse_xml(xml, root, error)) {
         return false;

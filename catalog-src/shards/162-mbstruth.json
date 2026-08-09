@@ -1,0 +1,722 @@
+{
+  "format": "hoot-catalog-shard",
+  "version": 1,
+  "source_file": "xml/mbstruth.xml",
+  "date": "2005/09/25",
+  "comments": [
+    " //MBS Truth "
+  ],
+  "games": [
+    {
+      "title": "[PC-9801] DOOP ～ドォープ～",
+      "driver": {
+        "name": "pc98dos",
+        "type": "opn",
+        "alias": "MBS Truth",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "clockmul",
+          "value": "8"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "MBMUS.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MBMUSP.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "END.MSB",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "EPI_A.MSB",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "EPI_B.MSB",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MAIN_A.MSB",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MAIN_B.MSB",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MAIN_C.MSB",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MAIN_D.MSB",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MAIN_E.MSB",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MAIN_F.MSB",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MAIN_G.MSB",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "OPEN.MSB",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "SE_A.MSB",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "SE_B.MSB",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "SE_C.MSB",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "SE_D.MSB",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "SE_E.MSB",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "SE_F.MSB",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "SE_G.MSB",
+          "offset": "-1"
+        },
+        {
+          "type": "conin",
+          "path": "END.MSB",
+          "offset": "0x10"
+        },
+        {
+          "type": "conin",
+          "path": "EPI_A.MSB",
+          "offset": "0x11"
+        },
+        {
+          "type": "conin",
+          "path": "EPI_B.MSB",
+          "offset": "0x12"
+        },
+        {
+          "type": "conin",
+          "path": "MAIN_A.MSB",
+          "offset": "0x13"
+        },
+        {
+          "type": "conin",
+          "path": "MAIN_B.MSB",
+          "offset": "0x14"
+        },
+        {
+          "type": "conin",
+          "path": "MAIN_C.MSB",
+          "offset": "0x15"
+        },
+        {
+          "type": "conin",
+          "path": "MAIN_D.MSB",
+          "offset": "0x16"
+        },
+        {
+          "type": "conin",
+          "path": "MAIN_E.MSB",
+          "offset": "0x17"
+        },
+        {
+          "type": "conin",
+          "path": "MAIN_F.MSB",
+          "offset": "0x18"
+        },
+        {
+          "type": "conin",
+          "path": "MAIN_G.MSB",
+          "offset": "0x19"
+        },
+        {
+          "type": "conin",
+          "path": "OPEN.MSB",
+          "offset": "0x1a"
+        },
+        {
+          "type": "conin",
+          "path": "SE_A.MSB",
+          "offset": "0x1b"
+        },
+        {
+          "type": "conin",
+          "path": "SE_B.MSB",
+          "offset": "0x1c"
+        },
+        {
+          "type": "conin",
+          "path": "SE_C.MSB",
+          "offset": "0x1d"
+        },
+        {
+          "type": "conin",
+          "path": "SE_D.MSB",
+          "offset": "0x1e"
+        },
+        {
+          "type": "conin",
+          "path": "SE_E.MSB",
+          "offset": "0x1f"
+        },
+        {
+          "type": "conin",
+          "path": "SE_F.MSB",
+          "offset": "0x20"
+        },
+        {
+          "type": "conin",
+          "path": "SE_G.MSB",
+          "offset": "0x21"
+        },
+        {
+          "type": "shell",
+          "path": "MBMUS",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "MBMUSP",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "END.MSB"
+        },
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "EPI_A.MSB"
+        },
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "EPI_B.MSB"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "MAIN_A.MSB"
+        },
+        {
+          "kind": "title",
+          "code": "0x14",
+          "title": "MAIN_B.MSB"
+        },
+        {
+          "kind": "title",
+          "code": "0x15",
+          "title": "MAIN_C.MSB"
+        },
+        {
+          "kind": "title",
+          "code": "0x16",
+          "title": "MAIN_D.MSB"
+        },
+        {
+          "kind": "title",
+          "code": "0x17",
+          "title": "MAIN_E.MSB"
+        },
+        {
+          "kind": "title",
+          "code": "0x18",
+          "title": "MAIN_F.MSB"
+        },
+        {
+          "kind": "title",
+          "code": "0x19",
+          "title": "MAIN_G.MSB"
+        },
+        {
+          "kind": "title",
+          "code": "0x1a",
+          "title": "OPEN.MSB"
+        },
+        {
+          "kind": "title",
+          "code": "0x1b",
+          "title": "SE_A.MSB"
+        },
+        {
+          "kind": "title",
+          "code": "0x1c",
+          "title": "SE_B.MSB"
+        },
+        {
+          "kind": "title",
+          "code": "0x1d",
+          "title": "SE_C.MSB"
+        },
+        {
+          "kind": "title",
+          "code": "0x1e",
+          "title": "SE_D.MSB"
+        },
+        {
+          "kind": "title",
+          "code": "0x1f",
+          "title": "SE_E.MSB"
+        },
+        {
+          "kind": "title",
+          "code": "0x20",
+          "title": "SE_F.MSB"
+        },
+        {
+          "kind": "title",
+          "code": "0x21",
+          "title": "SE_G.MSB"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/mbstruth.xml",
+      "source_order": 3155,
+      "archive": "doop_98",
+      "id": "doop-98-opn"
+    },
+    {
+      "title": "[PC-9801] 脳力者",
+      "driver": {
+        "name": "pc98dos",
+        "type": "opn",
+        "alias": "MBS Truth",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "clockmul",
+          "value": "8"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "MBMUS.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MBMUSP.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "ES_BAD.MSB",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "ES_CH.MSB",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "ES_HAPPY.MSB",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "ES_HARD.MSB",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "ES_MAIN.MSB",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "ES_OPEN.MSB",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "ES_ROOMA.MSB",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "ES_ROOMB.MSB",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "ES_SOFT.MSB",
+          "offset": "-1"
+        },
+        {
+          "type": "conin",
+          "path": "ES_BAD.MSB",
+          "offset": "0x10"
+        },
+        {
+          "type": "conin",
+          "path": "ES_CH.MSB",
+          "offset": "0x11"
+        },
+        {
+          "type": "conin",
+          "path": "ES_HAPPY.MSB",
+          "offset": "0x12"
+        },
+        {
+          "type": "conin",
+          "path": "ES_HARD.MSB",
+          "offset": "0x13"
+        },
+        {
+          "type": "conin",
+          "path": "ES_MAIN.MSB",
+          "offset": "0x14"
+        },
+        {
+          "type": "conin",
+          "path": "ES_OPEN.MSB",
+          "offset": "0x15"
+        },
+        {
+          "type": "conin",
+          "path": "ES_ROOMA.MSB",
+          "offset": "0x16"
+        },
+        {
+          "type": "conin",
+          "path": "ES_ROOMB.MSB",
+          "offset": "0x17"
+        },
+        {
+          "type": "conin",
+          "path": "ES_SOFT.MSB",
+          "offset": "0x18"
+        },
+        {
+          "type": "shell",
+          "path": "MBMUS",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "MBMUSP",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "ES_BAD.MSB"
+        },
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "ES_CH.MSB"
+        },
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "ES_HAPPY.MSB"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "ES_HARD.MSB"
+        },
+        {
+          "kind": "title",
+          "code": "0x14",
+          "title": "ES_MAIN.MSB"
+        },
+        {
+          "kind": "title",
+          "code": "0x15",
+          "title": "ES_OPEN.MSB"
+        },
+        {
+          "kind": "title",
+          "code": "0x16",
+          "title": "ES_ROOMA.MSB"
+        },
+        {
+          "kind": "title",
+          "code": "0x17",
+          "title": "ES_ROOMB.MSB"
+        },
+        {
+          "kind": "title",
+          "code": "0x18",
+          "title": "ES_SOFT.MSB"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/mbstruth.xml",
+      "source_order": 3156,
+      "archive": "nou_98",
+      "id": "nou-98-opn"
+    },
+    {
+      "title": "[PC-9801] 歪み ～ひずみ～",
+      "driver": {
+        "name": "pc98dos",
+        "type": "opn",
+        "alias": "MBS Truth",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "clockmul",
+          "value": "8"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "UFMD.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "UFMD_98.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "HIZUMI01.USG",
+          "offset": "0x10"
+        },
+        {
+          "type": "file",
+          "path": "HIZUMI02.USG",
+          "offset": "0x11"
+        },
+        {
+          "type": "file",
+          "path": "HIZUMI03.USG",
+          "offset": "0x12"
+        },
+        {
+          "type": "file",
+          "path": "HIZUMI04.USG",
+          "offset": "0x13"
+        },
+        {
+          "type": "file",
+          "path": "HIZUMI05.USG",
+          "offset": "0x14"
+        },
+        {
+          "type": "file",
+          "path": "HIZUMI06.USG",
+          "offset": "0x15"
+        },
+        {
+          "type": "file",
+          "path": "HIZUMI07.USG",
+          "offset": "0x16"
+        },
+        {
+          "type": "shell",
+          "path": "UFMD",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "UFMD_98",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "HIZUMI01.USG"
+        },
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "HIZUMI02.USG"
+        },
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "HIZUMI03.USG"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "HIZUMI04.USG"
+        },
+        {
+          "kind": "title",
+          "code": "0x14",
+          "title": "HIZUMI05.USG"
+        },
+        {
+          "kind": "title",
+          "code": "0x15",
+          "title": "HIZUMI06.USG"
+        },
+        {
+          "kind": "title",
+          "code": "0x16",
+          "title": "HIZUMI07.USG"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/mbstruth.xml",
+      "source_order": 3157,
+      "archive": "hizumi_98",
+      "id": "hizumi-98-opn"
+    },
+    {
+      "title": "[PC-9801] 慾 ～むさぼり～",
+      "driver": {
+        "name": "pc98dos",
+        "type": "opn",
+        "alias": "MBS Truth",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "clockmul",
+          "value": "8"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "UFMD.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "UFMD_98.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MUSA11.USG",
+          "offset": "0x10"
+        },
+        {
+          "type": "file",
+          "path": "MUSA21.USG",
+          "offset": "0x11"
+        },
+        {
+          "type": "file",
+          "path": "MUSA31.USG",
+          "offset": "0x12"
+        },
+        {
+          "type": "file",
+          "path": "MUSA41.USG",
+          "offset": "0x13"
+        },
+        {
+          "type": "file",
+          "path": "MUSA51.USG",
+          "offset": "0x14"
+        },
+        {
+          "type": "file",
+          "path": "MUSA61.USG",
+          "offset": "0x15"
+        },
+        {
+          "type": "shell",
+          "path": "UFMD",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "UFMD_98",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "MUSA11.USG"
+        },
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "MUSA21.USG"
+        },
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "MUSA31.USG"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "MUSA41.USG"
+        },
+        {
+          "kind": "title",
+          "code": "0x14",
+          "title": "MUSA51.USG"
+        },
+        {
+          "kind": "title",
+          "code": "0x15",
+          "title": "MUSA61.USG"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/mbstruth.xml",
+      "source_order": 3158,
+      "archive": "musabori_98",
+      "id": "musabori-98-opn"
+    }
+  ]
+}

@@ -1,0 +1,1998 @@
+{
+  "format": "hoot-catalog-shard",
+  "version": 1,
+  "source_file": "xml/nec.xml",
+  "date": "2006/11/09",
+  "comments": [
+    " //nec "
+  ],
+  "games": [
+    {
+      "title": "[PC-8801] PC-8801mkIIFR Demonstration",
+      "driver": {
+        "name": "pc88",
+        "type": "opn",
+        "alias": "NEC",
+        "platform": "NEC PC-8801"
+      },
+      "options": [
+        {
+          "name": "mdata_addr",
+          "value": "0xa000"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "PATCH",
+          "offset": "0x0000"
+        },
+        {
+          "type": "code",
+          "path": "PROG",
+          "offset": "0x0100"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS00",
+          "offset": "0x00"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS01",
+          "offset": "0x01"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS02",
+          "offset": "0x02"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS03",
+          "offset": "0x03"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS04",
+          "offset": "0x04"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS05",
+          "offset": "0x05"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS06",
+          "offset": "0x06"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "MUS01 : ハイスクールはダンステリア   / Cyndi Lauper"
+        },
+        {
+          "kind": "title",
+          "code": "0x05",
+          "title": "MUS05 : ねこふんじゃった             / 作曲者未詳"
+        },
+        {
+          "kind": "title",
+          "code": "0x04",
+          "title": "MUS04 : Material Girl                / Madonna"
+        },
+        {
+          "kind": "title",
+          "code": "0x00",
+          "title": "MUS00 : クラリネットをこわしちゃった / フランス民謡"
+        },
+        {
+          "kind": "title",
+          "code": "0x02",
+          "title": "MUS02 : Hotel California             / Eagles"
+        },
+        {
+          "kind": "title",
+          "code": "0x06",
+          "title": "MUS06 : ZOOM                         / CASIOPEA"
+        },
+        {
+          "kind": "title",
+          "code": "0x03",
+          "title": "MUS03 : BLUE LAGOON                  / 高中正義"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/nec.xml",
+      "source_order": 3417,
+      "archive": "88frdemo",
+      "id": "88frdemo-opn"
+    },
+    {
+      "title": "[PC-8801] PC-8801mkIIMR Demonstration",
+      "driver": {
+        "name": "pc88",
+        "type": "opn",
+        "alias": "NEC",
+        "platform": "NEC PC-8801"
+      },
+      "options": [
+        {
+          "name": "mdata_addr",
+          "value": "0xc000"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "PATCH",
+          "offset": "0x0000"
+        },
+        {
+          "type": "code",
+          "path": "000",
+          "offset": "0x8000"
+        },
+        {
+          "type": "bgm",
+          "path": "002",
+          "offset": "0x00"
+        },
+        {
+          "type": "bgm",
+          "path": "003",
+          "offset": "0x01"
+        },
+        {
+          "type": "bgm",
+          "path": "004",
+          "offset": "0x02"
+        },
+        {
+          "type": "bgm",
+          "path": "005",
+          "offset": "0x03"
+        },
+        {
+          "type": "bgm",
+          "path": "006",
+          "offset": "0x04"
+        },
+        {
+          "type": "bgm",
+          "path": "007",
+          "offset": "0x05"
+        },
+        {
+          "type": "bgm",
+          "path": "008",
+          "offset": "0x06"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x04",
+          "title": "006 : 炎のランナー     / VANGELIS"
+        },
+        {
+          "kind": "title",
+          "code": "0x02",
+          "title": "004 : ARABESQUE No.1   / Debussy"
+        },
+        {
+          "kind": "title",
+          "code": "0x00",
+          "title": "002 : Some Like It Hot / The Power Station"
+        },
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "003 : カナリア諸島にて / 大瀧詠一"
+        },
+        {
+          "kind": "title",
+          "code": "0x05",
+          "title": "007 : Birdland         / Weather Report"
+        },
+        {
+          "kind": "title",
+          "code": "0x06",
+          "title": "008 : ウェディングベル / SUGAR"
+        },
+        {
+          "kind": "title",
+          "code": "0x03",
+          "title": "005 : くるみ割り人形   / Tchaikovsky (未使用)"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/nec.xml",
+      "source_order": 3418,
+      "archive": "88mrdemo",
+      "id": "88mrdemo-opn"
+    },
+    {
+      "title": "[PC-8801] PC-8801FH Demonstration",
+      "driver": {
+        "name": "pc88",
+        "type": "opn",
+        "alias": "NEC",
+        "platform": "NEC PC-8801"
+      },
+      "options": [],
+      "assets": [
+        {
+          "type": "code",
+          "path": "PATCH",
+          "offset": "0x0000"
+        },
+        {
+          "type": "code",
+          "path": "DRIVER",
+          "offset": "0xa000"
+        },
+        {
+          "type": "code",
+          "path": "MUSIC",
+          "offset": "0xc000"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "花のワルツ    / Peter Ilyich Tchaikovsky"
+        },
+        {
+          "kind": "title",
+          "code": "0x00",
+          "title": "Like A Virgin / Madonna"
+        },
+        {
+          "kind": "title",
+          "code": "0x02",
+          "title": "Firecracker   / Yellow Magic Orchestra"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/nec.xml",
+      "source_order": 3419,
+      "archive": "88fhdemo",
+      "id": "88fhdemo-opn"
+    },
+    {
+      "title": "[PC-8801] PC-8801MH Demonstration",
+      "driver": {
+        "name": "pc88",
+        "type": "opn",
+        "alias": "NEC",
+        "platform": "NEC PC-8801"
+      },
+      "options": [],
+      "assets": [
+        {
+          "type": "code",
+          "path": "PATCH",
+          "offset": "0x0000"
+        },
+        {
+          "type": "code",
+          "path": "DRIVER",
+          "offset": "0xb000"
+        },
+        {
+          "type": "code",
+          "path": "MUS00",
+          "offset": "0xc000"
+        },
+        {
+          "type": "code",
+          "path": "MUS01",
+          "offset": "0xd400"
+        },
+        {
+          "type": "code",
+          "path": "MUS02",
+          "offset": "0xf400"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x02",
+          "title": "PC-8801MHロゴ"
+        },
+        {
+          "kind": "title",
+          "code": "0x03",
+          "title": "花のワルツ    / Peter Ilyich Tchaikovsky"
+        },
+        {
+          "kind": "title",
+          "code": "0x00",
+          "title": "Firecracker   / Yellow Magic Orchestra"
+        },
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "ERROR"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/nec.xml",
+      "source_order": 3420,
+      "archive": "88mhdemo",
+      "id": "88mhdemo-opn"
+    },
+    {
+      "title": "[PC-8801] PC-8801MH/FH Demonstration",
+      "driver": {
+        "name": "pc88",
+        "type": "opn",
+        "alias": "NEC",
+        "platform": "NEC PC-8801"
+      },
+      "options": [
+        {
+          "name": "mdata_addr",
+          "value": "0x0400"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "PATCH",
+          "offset": "0x0000"
+        },
+        {
+          "type": "bgm",
+          "path": "JIT.COM",
+          "offset": "0x00"
+        },
+        {
+          "type": "bgm",
+          "path": "YUB.COM",
+          "offset": "0x01"
+        },
+        {
+          "type": "bgm",
+          "path": "HIK.COM",
+          "offset": "0x02"
+        },
+        {
+          "type": "bgm",
+          "path": "SEN.COM",
+          "offset": "0x03"
+        },
+        {
+          "type": "bgm",
+          "path": "USO.COM",
+          "offset": "0x04"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x03",
+          "title": "SEN.COM : LP「ガラスの鼓動」より 千の風音"
+        },
+        {
+          "kind": "title",
+          "code": "0x02",
+          "title": "HIK.COM : LP「ガラスの鼓動」より お引越し・忘れもの"
+        },
+        {
+          "kind": "title",
+          "code": "0x00",
+          "title": "JIT.COM : LP「チャイム」より     自転車に乗って"
+        },
+        {
+          "kind": "title",
+          "code": "0x04",
+          "title": "USO.COM : LP「チャイム」より     つけなかった嘘"
+        },
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "YUB.COM : LP「チャイム」より     指輪物語"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/nec.xml",
+      "source_order": 3421,
+      "archive": "88mhfhdemo",
+      "id": "88mhfhdemo-opn"
+    },
+    {
+      "title": "[PC-8801] PC-8801FE Demonstration(Panic Bears)(OPNA)",
+      "driver": {
+        "name": "pc88",
+        "type": "opna",
+        "alias": "NEC",
+        "platform": "NEC PC-8801"
+      },
+      "options": [],
+      "assets": [
+        {
+          "type": "code",
+          "path": "PATCH",
+          "offset": "0x0000"
+        },
+        {
+          "type": "code",
+          "path": "C000",
+          "offset": "0xc000"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x00",
+          "title": "MUSIC 00 (OPNA)"
+        },
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "MUSIC 01 (OPNA)"
+        },
+        {
+          "kind": "title",
+          "code": "0x02",
+          "title": "MUSIC 02 (OPNA)"
+        },
+        {
+          "kind": "title",
+          "code": "0x03",
+          "title": "MUSIC 03 (OPNA)"
+        },
+        {
+          "kind": "title",
+          "code": "0x04",
+          "title": "MUSIC 04 (OPNA)"
+        },
+        {
+          "kind": "comment",
+          "text": "\t<title code=\"0x05\">MUSIC 01 (OPN)</title> "
+        },
+        {
+          "kind": "comment",
+          "text": "\t<title code=\"0x06\">MUSIC 02 (OPN)</title> "
+        },
+        {
+          "kind": "comment",
+          "text": "\t<title code=\"0x07\">MUSIC 03 (OPN)</title> "
+        },
+        {
+          "kind": "comment",
+          "text": "\t<title code=\"0x08\">MUSIC 04 (OPN)</title> "
+        },
+        {
+          "kind": "comment",
+          "text": "\t<title code=\"0x09\">MUSIC 05 (OPN)</title> "
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/nec.xml",
+      "source_order": 3422,
+      "archive": "88fedemo",
+      "id": "88fedemo-opna"
+    },
+    {
+      "title": "[PC-8801] PC-8801FE Demonstration(Panic Bears)(OPN)",
+      "driver": {
+        "name": "pc88",
+        "type": "opn",
+        "alias": "NEC",
+        "platform": "NEC PC-8801"
+      },
+      "options": [],
+      "assets": [
+        {
+          "type": "code",
+          "path": "PATCH",
+          "offset": "0x0000"
+        },
+        {
+          "type": "code",
+          "path": "C000",
+          "offset": "0xc000"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "comment",
+          "text": "\t<title code=\"0x00\">MUSIC 00 (OPNA)</title> "
+        },
+        {
+          "kind": "comment",
+          "text": "\t<title code=\"0x01\">MUSIC 01 (OPNA)</title> "
+        },
+        {
+          "kind": "comment",
+          "text": "\t<title code=\"0x02\">MUSIC 02 (OPNA)</title> "
+        },
+        {
+          "kind": "comment",
+          "text": "\t<title code=\"0x03\">MUSIC 03 (OPNA)</title> "
+        },
+        {
+          "kind": "comment",
+          "text": "\t<title code=\"0x04\">MUSIC 04 (OPNA)</title> "
+        },
+        {
+          "kind": "title",
+          "code": "0x05",
+          "title": "MUSIC 01 (OPN)"
+        },
+        {
+          "kind": "title",
+          "code": "0x06",
+          "title": "MUSIC 02 (OPN)"
+        },
+        {
+          "kind": "title",
+          "code": "0x07",
+          "title": "MUSIC 03 (OPN)"
+        },
+        {
+          "kind": "title",
+          "code": "0x08",
+          "title": "MUSIC 04 (OPN)"
+        },
+        {
+          "kind": "title",
+          "code": "0x09",
+          "title": "MUSIC 05 (OPN)"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/nec.xml",
+      "source_order": 3423,
+      "archive": "88fedemo",
+      "id": "88fedemo-opn"
+    },
+    {
+      "title": "[PC-8801] PC-8801MA2 Demonstration(Panic Bears)(OPNA)",
+      "driver": {
+        "name": "pc88",
+        "type": "opna",
+        "alias": "NEC",
+        "platform": "NEC PC-8801"
+      },
+      "options": [],
+      "assets": [
+        {
+          "type": "code",
+          "path": "PATCH",
+          "offset": "0x0000"
+        },
+        {
+          "type": "code",
+          "path": "C000",
+          "offset": "0xc000"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x00",
+          "title": "MUSIC 00 (OPNA)"
+        },
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "MUSIC 01 (OPNA)"
+        },
+        {
+          "kind": "title",
+          "code": "0x02",
+          "title": "MUSIC 02 (OPNA)"
+        },
+        {
+          "kind": "title",
+          "code": "0x03",
+          "title": "MUSIC 03 (OPNA)"
+        },
+        {
+          "kind": "title",
+          "code": "0x04",
+          "title": "MUSIC 04 (OPNA)"
+        },
+        {
+          "kind": "comment",
+          "text": "\t<title code=\"0x05\">MUSIC 01 (OPN)</title> "
+        },
+        {
+          "kind": "comment",
+          "text": "\t<title code=\"0x06\">MUSIC 02 (OPN)</title> "
+        },
+        {
+          "kind": "comment",
+          "text": "\t<title code=\"0x07\">MUSIC 03 (OPN)</title> "
+        },
+        {
+          "kind": "comment",
+          "text": "\t<title code=\"0x08\">MUSIC 04 (OPN)</title> "
+        },
+        {
+          "kind": "comment",
+          "text": "\t<title code=\"0x09\">MUSIC 05 (OPN)</title> "
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/nec.xml",
+      "source_order": 3424,
+      "archive": "88ma2demo",
+      "id": "88ma2demo-opna"
+    },
+    {
+      "title": "[PC-8801] PC-8801MA2 Demonstration(Panic Bears)(OPN)",
+      "driver": {
+        "name": "pc88",
+        "type": "opn",
+        "alias": "NEC",
+        "platform": "NEC PC-8801"
+      },
+      "options": [],
+      "assets": [
+        {
+          "type": "code",
+          "path": "PATCH",
+          "offset": "0x0000"
+        },
+        {
+          "type": "code",
+          "path": "C000",
+          "offset": "0xc000"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "comment",
+          "text": "\t<title code=\"0x00\">MUSIC 00 (OPNA)</title> "
+        },
+        {
+          "kind": "comment",
+          "text": "\t<title code=\"0x01\">MUSIC 01 (OPNA)</title> "
+        },
+        {
+          "kind": "comment",
+          "text": "\t<title code=\"0x02\">MUSIC 02 (OPNA)</title> "
+        },
+        {
+          "kind": "comment",
+          "text": "\t<title code=\"0x03\">MUSIC 03 (OPNA)</title> "
+        },
+        {
+          "kind": "comment",
+          "text": "\t<title code=\"0x04\">MUSIC 04 (OPNA)</title> "
+        },
+        {
+          "kind": "title",
+          "code": "0x05",
+          "title": "MUSIC 01 (OPN)"
+        },
+        {
+          "kind": "title",
+          "code": "0x06",
+          "title": "MUSIC 02 (OPN)"
+        },
+        {
+          "kind": "title",
+          "code": "0x07",
+          "title": "MUSIC 03 (OPN)"
+        },
+        {
+          "kind": "title",
+          "code": "0x08",
+          "title": "MUSIC 04 (OPN)"
+        },
+        {
+          "kind": "title",
+          "code": "0x09",
+          "title": "MUSIC 05 (OPN)"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/nec.xml",
+      "source_order": 3425,
+      "archive": "88ma2demo",
+      "id": "88ma2demo-opn"
+    },
+    {
+      "title": "[PC-8801] PC-8801FE2/MC Demonstration(SpaceBall Bears)(OPNA)",
+      "driver": {
+        "name": "pc88",
+        "type": "opna",
+        "alias": "NEC",
+        "platform": "NEC PC-8801"
+      },
+      "options": [
+        {
+          "name": "mdata_addr",
+          "value": "0xd000"
+        },
+        {
+          "name": "use_rtc",
+          "value": "0x01"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "PATCH",
+          "offset": "0x0000"
+        },
+        {
+          "type": "code",
+          "path": "SOUND",
+          "offset": "0xc010"
+        },
+        {
+          "type": "code",
+          "path": "NEPLY2",
+          "offset": "0xc580"
+        },
+        {
+          "type": "bgm",
+          "path": "NEE",
+          "offset": "0x00"
+        },
+        {
+          "type": "bgm",
+          "path": "NEM",
+          "offset": "0x01"
+        },
+        {
+          "type": "bgm",
+          "path": "NEO",
+          "offset": "0x02"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x00000002",
+          "title": "NEO : オープニング"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000001",
+          "title": "NEM : ラウンドスタート"
+        },
+        {
+          "kind": "title",
+          "code": "0x00018301",
+          "title": "NEM : ミス"
+        },
+        {
+          "kind": "title",
+          "code": "0x0002aa01",
+          "title": "NEM : ラウンドクリア"
+        },
+        {
+          "kind": "title",
+          "code": "0x0015a001",
+          "title": "NEM : ROUND 1"
+        },
+        {
+          "kind": "title",
+          "code": "0x00047401",
+          "title": "NEM : ROUND 2"
+        },
+        {
+          "kind": "title",
+          "code": "0x000f1901",
+          "title": "NEM : ROUND 3"
+        },
+        {
+          "kind": "title",
+          "code": "0x00099301",
+          "title": "NEM : ROUND 4"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000000",
+          "title": "NEE : ランキング(1位)"
+        },
+        {
+          "kind": "title",
+          "code": "0x00057100",
+          "title": "NEE : ランキング(2～5位)"
+        },
+        {
+          "kind": "title",
+          "code": "0x0009de00",
+          "title": "NEE : ランキング(ランキング外)"
+        },
+        {
+          "kind": "title",
+          "code": "0x010000ff",
+          "title": "効果音01"
+        },
+        {
+          "kind": "title",
+          "code": "0x020000ff",
+          "title": "効果音02"
+        },
+        {
+          "kind": "title",
+          "code": "0x030000ff",
+          "title": "効果音03"
+        },
+        {
+          "kind": "title",
+          "code": "0x040000ff",
+          "title": "効果音04"
+        },
+        {
+          "kind": "title",
+          "code": "0x050000ff",
+          "title": "効果音05"
+        },
+        {
+          "kind": "title",
+          "code": "0x060000ff",
+          "title": "効果音06"
+        },
+        {
+          "kind": "title",
+          "code": "0x070000ff",
+          "title": "効果音07"
+        },
+        {
+          "kind": "title",
+          "code": "0x080000ff",
+          "title": "効果音08"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/nec.xml",
+      "source_order": 3426,
+      "archive": "88fe2mcdemo",
+      "id": "88fe2mcdemo-opna"
+    },
+    {
+      "title": "[PC-8801] PC-8801FE2/MC Demonstration(Spaceball Bears)(OPN)",
+      "driver": {
+        "name": "pc88",
+        "type": "opn",
+        "alias": "NEC",
+        "platform": "NEC PC-8801"
+      },
+      "options": [
+        {
+          "name": "mdata_addr",
+          "value": "0xd000"
+        },
+        {
+          "name": "use_rtc",
+          "value": "0x01"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "PATCH",
+          "offset": "0x0000"
+        },
+        {
+          "type": "code",
+          "path": "SOUND",
+          "offset": "0xc010"
+        },
+        {
+          "type": "code",
+          "path": "NEPLY",
+          "offset": "0xc580"
+        },
+        {
+          "type": "bgm",
+          "path": "NEE",
+          "offset": "0x00"
+        },
+        {
+          "type": "bgm",
+          "path": "NEM",
+          "offset": "0x01"
+        },
+        {
+          "type": "bgm",
+          "path": "NEO",
+          "offset": "0x02"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x00000002",
+          "title": "NEO : オープニング"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000001",
+          "title": "NEM : ラウンドスタート"
+        },
+        {
+          "kind": "title",
+          "code": "0x00018301",
+          "title": "NEM : ミス"
+        },
+        {
+          "kind": "title",
+          "code": "0x0002aa01",
+          "title": "NEM : ラウンドクリア"
+        },
+        {
+          "kind": "title",
+          "code": "0x0015a001",
+          "title": "NEM : ROUND 1"
+        },
+        {
+          "kind": "title",
+          "code": "0x00047401",
+          "title": "NEM : ROUND 2"
+        },
+        {
+          "kind": "title",
+          "code": "0x000f1901",
+          "title": "NEM : ROUND 3"
+        },
+        {
+          "kind": "title",
+          "code": "0x00099301",
+          "title": "NEM : ROUND 4"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000000",
+          "title": "NEE : ランキング(1位)"
+        },
+        {
+          "kind": "title",
+          "code": "0x00057100",
+          "title": "NEE : ランキング(2～5位)"
+        },
+        {
+          "kind": "title",
+          "code": "0x0009de00",
+          "title": "NEE : ランキング(ランキング外)"
+        },
+        {
+          "kind": "title",
+          "code": "0x010000ff",
+          "title": "効果音01"
+        },
+        {
+          "kind": "title",
+          "code": "0x020000ff",
+          "title": "効果音02"
+        },
+        {
+          "kind": "title",
+          "code": "0x030000ff",
+          "title": "効果音03"
+        },
+        {
+          "kind": "title",
+          "code": "0x040000ff",
+          "title": "効果音04"
+        },
+        {
+          "kind": "title",
+          "code": "0x050000ff",
+          "title": "効果音05"
+        },
+        {
+          "kind": "title",
+          "code": "0x060000ff",
+          "title": "効果音06"
+        },
+        {
+          "kind": "title",
+          "code": "0x070000ff",
+          "title": "効果音07"
+        },
+        {
+          "kind": "title",
+          "code": "0x080000ff",
+          "title": "効果音08"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/nec.xml",
+      "source_order": 3427,
+      "archive": "88fe2mcdemo",
+      "id": "88fe2mcdemo-opn"
+    },
+    {
+      "title": "[PC-8801] PC-98DO Demonstration(OPNA)",
+      "driver": {
+        "name": "pc88",
+        "type": "opna",
+        "alias": "NEC",
+        "platform": "NEC PC-8801"
+      },
+      "options": [
+        {
+          "name": "mdata_addr",
+          "value": "0xc000"
+        },
+        {
+          "name": "mdata_size",
+          "value": "0x4000"
+        },
+        {
+          "name": "mfile_size",
+          "value": "0x4000"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "PATCH",
+          "offset": "0x0000"
+        },
+        {
+          "type": "code",
+          "path": "DEMO",
+          "offset": "0xc000"
+        },
+        {
+          "type": "bgm",
+          "path": "DEMO",
+          "offset": "0x00"
+        },
+        {
+          "type": "bgm",
+          "path": "GAME",
+          "offset": "0x01"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x00000000",
+          "title": "Demonstration (OPN)"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000001",
+          "title": "Panic Bears : MUSIC 01 (OPNA)"
+        },
+        {
+          "kind": "title",
+          "code": "0x01000001",
+          "title": "Panic Bears : MUSIC 02 (OPNA)"
+        },
+        {
+          "kind": "title",
+          "code": "0x02000001",
+          "title": "Panic Bears : MUSIC 03 (OPNA)"
+        },
+        {
+          "kind": "title",
+          "code": "0x03000001",
+          "title": "Panic Bears : MUSIC 04 (OPNA)"
+        },
+        {
+          "kind": "title",
+          "code": "0x04000001",
+          "title": "Panic Bears : MUSIC 05 (OPNA)"
+        },
+        {
+          "kind": "comment",
+          "text": "\t<title code=\"0x05000001\">Panic Bears : MUSIC 01 (OPN)</title> "
+        },
+        {
+          "kind": "comment",
+          "text": "\t<title code=\"0x06000001\">Panic Bears : MUSIC 02 (OPN)</title> "
+        },
+        {
+          "kind": "comment",
+          "text": "\t<title code=\"0x07000001\">Panic Bears : MUSIC 03 (OPN)</title> "
+        },
+        {
+          "kind": "comment",
+          "text": "\t<title code=\"0x08000001\">Panic Bears : MUSIC 04 (OPN)</title> "
+        },
+        {
+          "kind": "comment",
+          "text": "\t<title code=\"0x09000001\">Panic Bears : MUSIC 05 (OPN)</title> "
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/nec.xml",
+      "source_order": 3428,
+      "archive": "98dodemo",
+      "id": "98dodemo-opna"
+    },
+    {
+      "title": "[PC-8801] PC-98DO Demonstration(OPN)",
+      "driver": {
+        "name": "pc88",
+        "type": "opn",
+        "alias": "NEC",
+        "platform": "NEC PC-8801"
+      },
+      "options": [
+        {
+          "name": "mdata_addr",
+          "value": "0xc000"
+        },
+        {
+          "name": "mdata_size",
+          "value": "0x4000"
+        },
+        {
+          "name": "mfile_size",
+          "value": "0x4000"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "PATCH",
+          "offset": "0x0000"
+        },
+        {
+          "type": "code",
+          "path": "DEMO",
+          "offset": "0xc000"
+        },
+        {
+          "type": "bgm",
+          "path": "DEMO",
+          "offset": "0x00"
+        },
+        {
+          "type": "bgm",
+          "path": "GAME",
+          "offset": "0x01"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x00000000",
+          "title": "Demonstration (OPN)"
+        },
+        {
+          "kind": "comment",
+          "text": "\t<title code=\"0x00000001\">Panic Bears : MUSIC 01 (OPNA)</title> "
+        },
+        {
+          "kind": "comment",
+          "text": "\t<title code=\"0x01000001\">Panic Bears : MUSIC 02 (OPNA)</title> "
+        },
+        {
+          "kind": "comment",
+          "text": "\t<title code=\"0x02000001\">Panic Bears : MUSIC 03 (OPNA)</title> "
+        },
+        {
+          "kind": "comment",
+          "text": "\t<title code=\"0x03000001\">Panic Bears : MUSIC 04 (OPNA)</title> "
+        },
+        {
+          "kind": "comment",
+          "text": "\t<title code=\"0x04000001\">Panic Bears : MUSIC 05 (OPNA)</title> "
+        },
+        {
+          "kind": "title",
+          "code": "0x05000001",
+          "title": "Panic Bears : MUSIC 01 (OPN)"
+        },
+        {
+          "kind": "title",
+          "code": "0x06000001",
+          "title": "Panic Bears : MUSIC 02 (OPN)"
+        },
+        {
+          "kind": "title",
+          "code": "0x07000001",
+          "title": "Panic Bears : MUSIC 03 (OPN)"
+        },
+        {
+          "kind": "title",
+          "code": "0x08000001",
+          "title": "Panic Bears : MUSIC 04 (OPN)"
+        },
+        {
+          "kind": "title",
+          "code": "0x09000001",
+          "title": "Panic Bears : MUSIC 05 (OPN)"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/nec.xml",
+      "source_order": 3429,
+      "archive": "98dodemo",
+      "id": "98dodemo-opn"
+    },
+    {
+      "title": "[PC-8801] PC-8801MA2 店頭用デモンストレーションディスク",
+      "driver": {
+        "name": "pc88",
+        "type": "opna",
+        "alias": "NEC",
+        "platform": "NEC PC-8801"
+      },
+      "options": [
+        {
+          "name": "use_pcmx8",
+          "value": "0x01"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "PATCH",
+          "offset": "0x0000"
+        },
+        {
+          "type": "code",
+          "path": "mdata.bin",
+          "offset": "0x9600"
+        },
+        {
+          "type": "code",
+          "path": "ssd.bin",
+          "offset": "0xa600"
+        },
+        {
+          "type": "code",
+          "path": "main.bin",
+          "offset": "0xb600"
+        },
+        {
+          "type": "adpcm",
+          "path": "ADPCM",
+          "offset": "0x00000"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x00",
+          "title": "夢の中へ (FM音源)"
+        },
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "夢の中へ (ADPCM)"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/nec.xml",
+      "source_order": 3430,
+      "archive": "88ma2shopdemo",
+      "id": "88ma2shopdemo-opna"
+    },
+    {
+      "title": "[PC-8801] CDたから箱(OPNA)",
+      "driver": {
+        "name": "pc88",
+        "type": "opna",
+        "alias": "NEC",
+        "platform": "NEC PC-8801"
+      },
+      "options": [
+        {
+          "name": "init_pc",
+          "value": "0x8000"
+        },
+        {
+          "name": "mdata_addr",
+          "value": "0x0000"
+        },
+        {
+          "name": "mdata_size",
+          "value": "0x7000"
+        },
+        {
+          "name": "mfile_size",
+          "value": "0x7000"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "PATCH",
+          "offset": "0x8000"
+        },
+        {
+          "type": "bgm",
+          "path": "TITLE",
+          "offset": "0x00"
+        },
+        {
+          "type": "bgm",
+          "path": "MENU",
+          "offset": "0x01"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x00",
+          "title": "タイトル"
+        },
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "メニュー"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/nec.xml",
+      "source_order": 3431,
+      "archive": "cdtakara",
+      "id": "cdtakara-opna"
+    },
+    {
+      "title": "[PC-8801] CDたから箱(OPN)",
+      "driver": {
+        "name": "pc88",
+        "type": "opn",
+        "alias": "NEC",
+        "platform": "NEC PC-8801"
+      },
+      "options": [
+        {
+          "name": "init_pc",
+          "value": "0x8000"
+        },
+        {
+          "name": "mdata_addr",
+          "value": "0x0000"
+        },
+        {
+          "name": "mdata_size",
+          "value": "0x7000"
+        },
+        {
+          "name": "mfile_size",
+          "value": "0x7000"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "TITLE",
+          "offset": "0x0000"
+        },
+        {
+          "type": "code",
+          "path": "PATCH",
+          "offset": "0x8000"
+        },
+        {
+          "type": "bgm",
+          "path": "TITLE",
+          "offset": "0x00"
+        },
+        {
+          "type": "bgm",
+          "path": "MENU",
+          "offset": "0x01"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x00",
+          "title": "タイトル"
+        },
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "メニュー"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/nec.xml",
+      "source_order": 3432,
+      "archive": "cdtakara",
+      "id": "cdtakara-opn"
+    },
+    {
+      "title": "[PC-88VA] PC-88VA Demonstration",
+      "driver": {
+        "name": "pc88vados",
+        "type": "opn",
+        "alias": "NEC",
+        "platform": "NEC PC-88VA"
+      },
+      "options": [],
+      "assets": [
+        {
+          "type": "file",
+          "path": "DEMO2.SYS",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "shangva.com",
+          "offset": "-1"
+        },
+        {
+          "type": "device",
+          "path": "DEMO2.SYS",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "shangva",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "01 : An der schonen, blauen Donau (美しく青きドナウ) / Johann Strauss II."
+        },
+        {
+          "kind": "title",
+          "code": "0x02",
+          "title": "02 : Rosen aus dem Suden (南国のバラ) / Johann Strauss II."
+        },
+        {
+          "kind": "title",
+          "code": "0x03",
+          "title": "03 : Fruhlingsstimmen (春の声) / Johann Strauss II."
+        },
+        {
+          "kind": "title",
+          "code": "0x04",
+          "title": "04 : Symphony No.9, from The New World / Antonin Dvorak"
+        },
+        {
+          "kind": "title",
+          "code": "0x05",
+          "title": "05 : Eine kleine Nachtmusik, K.525 / W.A.Mozart"
+        },
+        {
+          "kind": "comment",
+          "text": "\t<title code=\"0x06\">06 : Eine kleine Nachtmusik, K.525 / W.A.Mozart</title> "
+        },
+        {
+          "kind": "title",
+          "code": "0x07",
+          "title": "07 : ワルキューレの騎行 / Wilhelm Richard Wagner"
+        },
+        {
+          "kind": "comment",
+          "text": "\t<title code=\"0x08\">08 : ワルキューレの騎行 / Wilhelm Richard Wagner</title> "
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/nec.xml",
+      "source_order": 3433,
+      "archive": "demo_va",
+      "id": "demo-va-opn"
+    },
+    {
+      "title": "[PC-88VA] PC-88VA 店頭デモ",
+      "driver": {
+        "name": "pc88vados",
+        "type": "opn",
+        "alias": "NEC",
+        "platform": "NEC PC-88VA"
+      },
+      "options": [],
+      "assets": [
+        {
+          "type": "file",
+          "path": "MUDEMO.SYS",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "shangva.com",
+          "offset": "-1"
+        },
+        {
+          "type": "device",
+          "path": "MUDEMO.SYS",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "shangva",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "01 : Up Where We Belong (愛と青春の旅立ち) / John Robert Cocker & Jennifer Warnes"
+        },
+        {
+          "kind": "title",
+          "code": "0x02",
+          "title": "02 : Rosen aus dem Suden (南国のバラ) / Johann Strauss II."
+        },
+        {
+          "kind": "title",
+          "code": "0x03",
+          "title": "03 : Penelope (エーゲ海の真珠) / Paul Mauriat"
+        },
+        {
+          "kind": "title",
+          "code": "0x04",
+          "title": "04 : 交響曲第9番 ホ短調 作品95 新世界より / Antonin Leopold Dvorak"
+        },
+        {
+          "kind": "title",
+          "code": "0x05",
+          "title": "05 : Misty Lady / Casiopea"
+        },
+        {
+          "kind": "title",
+          "code": "0x09",
+          "title": "09 : 効果音1"
+        },
+        {
+          "kind": "title",
+          "code": "0x0a",
+          "title": "10 : 効果音2"
+        },
+        {
+          "kind": "title",
+          "code": "0x0b",
+          "title": "11 : 効果音3"
+        },
+        {
+          "kind": "title",
+          "code": "0x0c",
+          "title": "12 : 効果音4"
+        },
+        {
+          "kind": "title",
+          "code": "0x0d",
+          "title": "13 : 効果音5"
+        },
+        {
+          "kind": "title",
+          "code": "0x0e",
+          "title": "14 : 効果音6"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/nec.xml",
+      "source_order": 3434,
+      "archive": "demoshop_va",
+      "id": "demoshop-va-opn"
+    },
+    {
+      "title": "[PC-88VA] R-TYPE(OPNA)",
+      "driver": {
+        "name": "pc88vados",
+        "type": "opna",
+        "alias": "NEC",
+        "platform": "NEC PC-88VA"
+      },
+      "options": [],
+      "assets": [
+        {
+          "type": "file",
+          "path": "rtype.com",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MAIN.EXE",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "JOINT.0B",
+          "offset": "0x10"
+        },
+        {
+          "type": "file",
+          "path": "RT02.0B",
+          "offset": "0x11"
+        },
+        {
+          "type": "file",
+          "path": "RT03.0B",
+          "offset": "0x12"
+        },
+        {
+          "type": "file",
+          "path": "RT04.0B",
+          "offset": "0x13"
+        },
+        {
+          "type": "file",
+          "path": "RT05.0B",
+          "offset": "0x14"
+        },
+        {
+          "type": "file",
+          "path": "RT06.0B",
+          "offset": "0x15"
+        },
+        {
+          "type": "file",
+          "path": "RT07.0B",
+          "offset": "0x16"
+        },
+        {
+          "type": "file",
+          "path": "RT08.0B",
+          "offset": "0x17"
+        },
+        {
+          "type": "file",
+          "path": "RTCLR2.0B",
+          "offset": "0x18"
+        },
+        {
+          "type": "file",
+          "path": "RTOP01.0B",
+          "offset": "0x19"
+        },
+        {
+          "type": "file",
+          "path": "RTOPS2.0B",
+          "offset": "0x1a"
+        },
+        {
+          "type": "file",
+          "path": "RTSCOR.0B",
+          "offset": "0x1b"
+        },
+        {
+          "type": "file",
+          "path": "TITLE4.0B",
+          "offset": "0x1c"
+        },
+        {
+          "type": "file",
+          "path": "BOSS.0B",
+          "offset": "0x1d"
+        },
+        {
+          "type": "file",
+          "path": "CLEAR.0B",
+          "offset": "0x1e"
+        },
+        {
+          "type": "file",
+          "path": "GAMEOVER.0B",
+          "offset": "0x1f"
+        },
+        {
+          "type": "file",
+          "path": "ENDING.0B",
+          "offset": "0x20"
+        },
+        {
+          "type": "file",
+          "path": "EFFECT.0B",
+          "offset": "0x21"
+        },
+        {
+          "type": "shell",
+          "path": "rtype",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "comment",
+          "text": "\t<title code=\"0x01010019\">RTOP01.0B   : オープニング</title> "
+        },
+        {
+          "kind": "title",
+          "code": "0x0001001a",
+          "title": "RTOPS2.0B   : オープニング"
+        },
+        {
+          "kind": "title",
+          "code": "0x01000010",
+          "title": "JOINT.0B    : START ～ BATTLE THEME                : STAGE 1"
+        },
+        {
+          "kind": "title",
+          "code": "0x0100001c",
+          "title": "TITLE4.0B   : BATTLE THEME                         : STAGE 1"
+        },
+        {
+          "kind": "title",
+          "code": "0x01000011",
+          "title": "RT02.0B     : MONSTER BEAT                         : STAGE 2"
+        },
+        {
+          "kind": "title",
+          "code": "0x01000012",
+          "title": "RT03.0B     : BATTLE PRESSURE                      : STAGE 3"
+        },
+        {
+          "kind": "title",
+          "code": "0x01000013",
+          "title": "RT04.0B     : ブツ・ブツ…                         : STAGE 4"
+        },
+        {
+          "kind": "title",
+          "code": "0x01000014",
+          "title": "RT05.0B     : 洞窟に潜むモンスター                 : STAGE 5"
+        },
+        {
+          "kind": "title",
+          "code": "0x01000015",
+          "title": "RT06.0B     : SCRAMBLE CROSSROAD                   : STAGE 6"
+        },
+        {
+          "kind": "title",
+          "code": "0x01000016",
+          "title": "RT07.0B     : 夢の島 (OGORERUMONO WA HISASIKARAZU) : STAGE 7"
+        },
+        {
+          "kind": "title",
+          "code": "0x01000017",
+          "title": "RT08.0B     : 母胎                                 : STAGE 8"
+        },
+        {
+          "kind": "title",
+          "code": "0x01010018",
+          "title": "RTCLR2.0B   : CONTINUE                             : CONTINUE"
+        },
+        {
+          "kind": "title",
+          "code": "0x0100001b",
+          "title": "RTSCOR.0B   : SCORING                              : NAME ENTRY"
+        },
+        {
+          "kind": "title",
+          "code": "0x0100001d",
+          "title": "BOSS.0B     : BOSS THEME                           : BOSS"
+        },
+        {
+          "kind": "title",
+          "code": "0x0101001e",
+          "title": "CLEAR.0B    : RETURN IN TRIUMPH                    : STAGE CLEAR"
+        },
+        {
+          "kind": "title",
+          "code": "0x01000020",
+          "title": "ENDING.0B   : LIKE A HERO                          : ENDING"
+        },
+        {
+          "kind": "title",
+          "code": "0x0101001f",
+          "title": "GAMEOVER.0B : THE END OF A WAR                     : GAME OVER"
+        },
+        {
+          "kind": "comment",
+          "text": "\t<title code=\"0x01010021\">EFFECT.0B   : 効果音</title> "
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/nec.xml",
+      "source_order": 3435,
+      "archive": "rtypeva",
+      "id": "rtypeva-opna"
+    },
+    {
+      "title": "[PC-88VA] R-TYPE(OPN)",
+      "driver": {
+        "name": "pc88vados",
+        "type": "opn",
+        "alias": "NEC",
+        "platform": "NEC PC-88VA"
+      },
+      "options": [],
+      "assets": [
+        {
+          "type": "file",
+          "path": "rtype.com",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MAIN.EXE",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "JOINT.0B",
+          "offset": "0x10"
+        },
+        {
+          "type": "file",
+          "path": "RT02.0B",
+          "offset": "0x11"
+        },
+        {
+          "type": "file",
+          "path": "RT03.0B",
+          "offset": "0x12"
+        },
+        {
+          "type": "file",
+          "path": "RT04.0B",
+          "offset": "0x13"
+        },
+        {
+          "type": "file",
+          "path": "RT05.0B",
+          "offset": "0x14"
+        },
+        {
+          "type": "file",
+          "path": "RT06.0B",
+          "offset": "0x15"
+        },
+        {
+          "type": "file",
+          "path": "RT07.0B",
+          "offset": "0x16"
+        },
+        {
+          "type": "file",
+          "path": "RT08.0B",
+          "offset": "0x17"
+        },
+        {
+          "type": "file",
+          "path": "RTCLR2.0B",
+          "offset": "0x18"
+        },
+        {
+          "type": "file",
+          "path": "RTOP01.0B",
+          "offset": "0x19"
+        },
+        {
+          "type": "file",
+          "path": "RTOPS2.0B",
+          "offset": "0x1a"
+        },
+        {
+          "type": "file",
+          "path": "RTSCOR.0B",
+          "offset": "0x1b"
+        },
+        {
+          "type": "file",
+          "path": "TITLE4.0B",
+          "offset": "0x1c"
+        },
+        {
+          "type": "file",
+          "path": "BOSS.0B",
+          "offset": "0x1d"
+        },
+        {
+          "type": "file",
+          "path": "CLEAR.0B",
+          "offset": "0x1e"
+        },
+        {
+          "type": "file",
+          "path": "GAMEOVER.0B",
+          "offset": "0x1f"
+        },
+        {
+          "type": "file",
+          "path": "ENDING.0B",
+          "offset": "0x20"
+        },
+        {
+          "type": "file",
+          "path": "EFFECT.0B",
+          "offset": "0x21"
+        },
+        {
+          "type": "shell",
+          "path": "rtype",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x01010019",
+          "title": "RTOP01.0B   : オープニング"
+        },
+        {
+          "kind": "comment",
+          "text": "\t<title code=\"0x0001001a\">RTOPS2.0B   : オープニング</title> "
+        },
+        {
+          "kind": "title",
+          "code": "0x01000010",
+          "title": "JOINT.0B    : START ～ BATTLE THEME                : STAGE 1"
+        },
+        {
+          "kind": "title",
+          "code": "0x0100001c",
+          "title": "TITLE4.0B   : BATTLE THEME                         : STAGE 1"
+        },
+        {
+          "kind": "title",
+          "code": "0x01000011",
+          "title": "RT02.0B     : MONSTER BEAT                         : STAGE 2"
+        },
+        {
+          "kind": "title",
+          "code": "0x01000012",
+          "title": "RT03.0B     : BATTLE PRESSURE                      : STAGE 3"
+        },
+        {
+          "kind": "title",
+          "code": "0x01000013",
+          "title": "RT04.0B     : ブツ・ブツ…                         : STAGE 4"
+        },
+        {
+          "kind": "title",
+          "code": "0x01000014",
+          "title": "RT05.0B     : 洞窟に潜むモンスター                 : STAGE 5"
+        },
+        {
+          "kind": "title",
+          "code": "0x01000015",
+          "title": "RT06.0B     : SCRAMBLE CROSSROAD                   : STAGE 6"
+        },
+        {
+          "kind": "title",
+          "code": "0x01000016",
+          "title": "RT07.0B     : 夢の島 (OGORERUMONO WA HISASIKARAZU) : STAGE 7"
+        },
+        {
+          "kind": "title",
+          "code": "0x01000017",
+          "title": "RT08.0B     : 母胎                                 : STAGE 8"
+        },
+        {
+          "kind": "title",
+          "code": "0x01010018",
+          "title": "RTCLR2.0B   : CONTINUE                             : CONTINUE"
+        },
+        {
+          "kind": "title",
+          "code": "0x0100001b",
+          "title": "RTSCOR.0B   : SCORING                              : NAME ENTRY"
+        },
+        {
+          "kind": "title",
+          "code": "0x0100001d",
+          "title": "BOSS.0B     : BOSS THEME                           : BOSS"
+        },
+        {
+          "kind": "title",
+          "code": "0x0101001e",
+          "title": "CLEAR.0B    : RETURN IN TRIUMPH                    : STAGE CLEAR"
+        },
+        {
+          "kind": "title",
+          "code": "0x01000020",
+          "title": "ENDING.0B   : LIKE A HERO                          : ENDING"
+        },
+        {
+          "kind": "title",
+          "code": "0x0101001f",
+          "title": "GAMEOVER.0B : THE END OF A WAR                     : GAME OVER"
+        },
+        {
+          "kind": "comment",
+          "text": "\t<title code=\"0x01010021\">EFFECT.0B   : 効果音</title> "
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/nec.xml",
+      "source_order": 3436,
+      "archive": "rtypeva",
+      "id": "rtypeva-opn"
+    }
+  ]
+}

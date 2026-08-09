@@ -1,0 +1,913 @@
+{
+  "format": "hoot-catalog-shard",
+  "version": 1,
+  "source_file": "xml/spaceproject.xml",
+  "date": "2005/09/25",
+  "comments": [
+    " //SPACE PROJECT "
+  ],
+  "games": [
+    {
+      "title": "[PC-9801] クローンドール 課外授業(OPN)",
+      "driver": {
+        "name": "pc98dos",
+        "type": "opn",
+        "alias": "SPACE PROJECT",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "clockmul",
+          "value": "8"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "TRPSCR98.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "TRPSCHRN.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "ANE.MDT",
+          "offset": "0x10"
+        },
+        {
+          "type": "file",
+          "path": "BAD_E.MDT",
+          "offset": "0x11"
+        },
+        {
+          "type": "file",
+          "path": "DOUKYU1.MDT",
+          "offset": "0x12"
+        },
+        {
+          "type": "file",
+          "path": "DOUKYU2.MDT",
+          "offset": "0x13"
+        },
+        {
+          "type": "file",
+          "path": "GOOD_E.MDT",
+          "offset": "0x14"
+        },
+        {
+          "type": "file",
+          "path": "IMOUTO.MDT",
+          "offset": "0x15"
+        },
+        {
+          "type": "file",
+          "path": "KAISOU.MDT",
+          "offset": "0x16"
+        },
+        {
+          "type": "file",
+          "path": "NITIJYO.MDT",
+          "offset": "0x17"
+        },
+        {
+          "type": "file",
+          "path": "OPEN.MDT",
+          "offset": "0x18"
+        },
+        {
+          "type": "file",
+          "path": "TYOKYO.MDT",
+          "offset": "0x19"
+        },
+        {
+          "type": "shell",
+          "path": "TRPSCHRN",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "TRPSCR98",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x18",
+          "title": "OPEN.MDT    : オープニング"
+        },
+        {
+          "kind": "title",
+          "code": "0x17",
+          "title": "NITIJYO.MDT : 日常風景"
+        },
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "ANE.MDT     : 姉登場"
+        },
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "DOUKYU1.MDT : 同級生登場"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "DOUKYU2.MDT : 同級生変身"
+        },
+        {
+          "kind": "title",
+          "code": "0x15",
+          "title": "IMOUTO.MDT  : 妹登場"
+        },
+        {
+          "kind": "title",
+          "code": "0x19",
+          "title": "TYOKYO.MDT  : 調教"
+        },
+        {
+          "kind": "title",
+          "code": "0x16",
+          "title": "KAISOU.MDT  : 回想"
+        },
+        {
+          "kind": "title",
+          "code": "0x14",
+          "title": "GOOD_E.MDT  : Goodエンディング"
+        },
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "BAD_E.MDT   : Badエンディング"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/spaceproject.xml",
+      "source_order": 4210,
+      "archive": "c_doll_98",
+      "id": "c-doll-98-opn"
+    },
+    {
+      "title": "[PC-9801] クローンドール 課外授業(GS)",
+      "driver": {
+        "name": "pc98dos",
+        "type": "beep",
+        "alias": "SPACE PROJECT",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "clockmul",
+          "value": "8"
+        },
+        {
+          "name": "midiout",
+          "value": "1"
+        },
+        {
+          "name": "midiout_type",
+          "value": "4"
+        },
+        {
+          "name": "wstimer",
+          "value": "2"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "midrv_98.com",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MIDRV_LT.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "ANE.RCP",
+          "offset": "11"
+        },
+        {
+          "type": "file",
+          "path": "BAD_E.RCP",
+          "offset": "12"
+        },
+        {
+          "type": "file",
+          "path": "DOUKYU1.RCP",
+          "offset": "13"
+        },
+        {
+          "type": "file",
+          "path": "DOUKYU2.RCP",
+          "offset": "14"
+        },
+        {
+          "type": "file",
+          "path": "GOOD_E.RCP",
+          "offset": "15"
+        },
+        {
+          "type": "file",
+          "path": "IMOUTO.RCP",
+          "offset": "16"
+        },
+        {
+          "type": "file",
+          "path": "KAISOU.RCP",
+          "offset": "17"
+        },
+        {
+          "type": "file",
+          "path": "NITIJYO.RCP",
+          "offset": "18"
+        },
+        {
+          "type": "file",
+          "path": "OPEN.RCP",
+          "offset": "19"
+        },
+        {
+          "type": "file",
+          "path": "TYOKYO.RCP",
+          "offset": "20"
+        },
+        {
+          "type": "shell",
+          "path": "midrv_lt",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "midrv_98",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "19",
+          "title": "OPEN.RCP    : オープニング"
+        },
+        {
+          "kind": "title",
+          "code": "18",
+          "title": "NITIJYO.RCP : 日常風景"
+        },
+        {
+          "kind": "title",
+          "code": "11",
+          "title": "ANE.RCP     : 姉登場"
+        },
+        {
+          "kind": "title",
+          "code": "13",
+          "title": "DOUKYU1.RCP : 同級生登場"
+        },
+        {
+          "kind": "title",
+          "code": "14",
+          "title": "DOUKYU2.RCP : 同級生変身"
+        },
+        {
+          "kind": "title",
+          "code": "16",
+          "title": "IMOUTO.RCP  : 妹登場"
+        },
+        {
+          "kind": "title",
+          "code": "20",
+          "title": "TYOKYO.RCP  : 調教"
+        },
+        {
+          "kind": "title",
+          "code": "17",
+          "title": "KAISOU.RCP  : 回想"
+        },
+        {
+          "kind": "title",
+          "code": "15",
+          "title": "GOOD_E.RCP  : Goodエンディング"
+        },
+        {
+          "kind": "title",
+          "code": "12",
+          "title": "BAD_E.RCP   : Badエンディング"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/spaceproject.xml",
+      "source_order": 4211,
+      "archive": "c_doll_98",
+      "id": "c-doll-98-beep"
+    },
+    {
+      "title": "[PC-9801] 転校生",
+      "driver": {
+        "name": "pc98dos",
+        "type": "opn",
+        "alias": "SPACE PROJECT",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "clockmul",
+          "value": "8"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "NAX.com",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "NLP_HOOT.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "S00X_01.BIN",
+          "offset": "0x10"
+        },
+        {
+          "type": "file",
+          "path": "S00X_02.BIN",
+          "offset": "0x11"
+        },
+        {
+          "type": "file",
+          "path": "S00X_03.BIN",
+          "offset": "0x12"
+        },
+        {
+          "type": "file",
+          "path": "S00X_04.BIN",
+          "offset": "0x13"
+        },
+        {
+          "type": "file",
+          "path": "S01X_01.BIN",
+          "offset": "0x14"
+        },
+        {
+          "type": "shell",
+          "path": "NAX",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "NLP_HOOT",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "S00X.OFM : 01"
+        },
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "S00X.OFM : 02"
+        },
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "S00X.OFM : 03"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "S00X.OFM : 04"
+        },
+        {
+          "kind": "title",
+          "code": "0x14",
+          "title": "S01X.OFM : 01"
+        },
+        {
+          "kind": "comment",
+          "text": "\n\t\t\t<title code=\"0x15\">S01X.OFM : 02</title>\n\t\t\t<title code=\"0x16\">S01X.OFM : 03</title>\n\t\t\t<title code=\"0x17\">S01X.OFM : 04</title>\n"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/spaceproject.xml",
+      "source_order": 4212,
+      "archive": "tenkousi_98",
+      "id": "tenkousi-98-opn"
+    },
+    {
+      "title": "[PC-9801] 聖翼学園Seraphita(OPN)",
+      "driver": {
+        "name": "pc98dos",
+        "type": "opn",
+        "alias": "SPACE PROJECT",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "clockmul",
+          "value": "8"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "TRPSCR98.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "TRPSCHRN.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "01.MDT",
+          "offset": "11"
+        },
+        {
+          "type": "file",
+          "path": "02.MDT",
+          "offset": "12"
+        },
+        {
+          "type": "file",
+          "path": "03.MDT",
+          "offset": "13"
+        },
+        {
+          "type": "file",
+          "path": "04.MDT",
+          "offset": "14"
+        },
+        {
+          "type": "file",
+          "path": "05.MDT",
+          "offset": "15"
+        },
+        {
+          "type": "file",
+          "path": "06.MDT",
+          "offset": "16"
+        },
+        {
+          "type": "file",
+          "path": "07.MDT",
+          "offset": "17"
+        },
+        {
+          "type": "file",
+          "path": "08.MDT",
+          "offset": "18"
+        },
+        {
+          "type": "file",
+          "path": "09.MDT",
+          "offset": "19"
+        },
+        {
+          "type": "file",
+          "path": "10.MDT",
+          "offset": "20"
+        },
+        {
+          "type": "shell",
+          "path": "TRPSCHRN",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "TRPSCR98",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "11",
+          "title": "01.MDT :"
+        },
+        {
+          "kind": "title",
+          "code": "12",
+          "title": "02.MDT :"
+        },
+        {
+          "kind": "title",
+          "code": "13",
+          "title": "03.MDT :"
+        },
+        {
+          "kind": "title",
+          "code": "14",
+          "title": "04.MDT :"
+        },
+        {
+          "kind": "title",
+          "code": "15",
+          "title": "05.MDT :"
+        },
+        {
+          "kind": "title",
+          "code": "16",
+          "title": "06.MDT :"
+        },
+        {
+          "kind": "title",
+          "code": "17",
+          "title": "07.MDT :"
+        },
+        {
+          "kind": "title",
+          "code": "18",
+          "title": "08.MDT :"
+        },
+        {
+          "kind": "title",
+          "code": "19",
+          "title": "09.MDT :"
+        },
+        {
+          "kind": "title",
+          "code": "20",
+          "title": "10.MDT :"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/spaceproject.xml",
+      "source_order": 4213,
+      "archive": "seraphit_98",
+      "id": "seraphit-98-opn"
+    },
+    {
+      "title": "[PC-9801] 聖翼学園Seraphita(GS)",
+      "driver": {
+        "name": "pc98dos",
+        "type": "beep",
+        "alias": "SPACE PROJECT",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "clockmul",
+          "value": "8"
+        },
+        {
+          "name": "midiout",
+          "value": "1"
+        },
+        {
+          "name": "midiout_type",
+          "value": "7"
+        },
+        {
+          "name": "wstimer",
+          "value": "2"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "midrv_98.com",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MIDRV_LT.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "01.RCP",
+          "offset": "11"
+        },
+        {
+          "type": "file",
+          "path": "02.RCP",
+          "offset": "12"
+        },
+        {
+          "type": "file",
+          "path": "03.RCP",
+          "offset": "13"
+        },
+        {
+          "type": "file",
+          "path": "04.RCP",
+          "offset": "14"
+        },
+        {
+          "type": "file",
+          "path": "05.RCP",
+          "offset": "15"
+        },
+        {
+          "type": "file",
+          "path": "06.RCP",
+          "offset": "16"
+        },
+        {
+          "type": "file",
+          "path": "07.RCP",
+          "offset": "17"
+        },
+        {
+          "type": "file",
+          "path": "08.RCP",
+          "offset": "18"
+        },
+        {
+          "type": "file",
+          "path": "09.RCP",
+          "offset": "19"
+        },
+        {
+          "type": "file",
+          "path": "10.RCP",
+          "offset": "20"
+        },
+        {
+          "type": "shell",
+          "path": "midrv_lt",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "midrv_98",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "11",
+          "title": "01.RCP : ハメハメハ女王"
+        },
+        {
+          "kind": "title",
+          "code": "12",
+          "title": "02.RCP : 河内のねーちゃんの唄"
+        },
+        {
+          "kind": "title",
+          "code": "13",
+          "title": "03.RCP : なぞなぞ★クイズ"
+        },
+        {
+          "kind": "title",
+          "code": "14",
+          "title": "04.RCP : 夢路の館"
+        },
+        {
+          "kind": "title",
+          "code": "15",
+          "title": "05.RCP : つばさがほしい"
+        },
+        {
+          "kind": "title",
+          "code": "16",
+          "title": "06.RCP : オレはりょーか"
+        },
+        {
+          "kind": "title",
+          "code": "17",
+          "title": "07.RCP : シバの女王…"
+        },
+        {
+          "kind": "title",
+          "code": "18",
+          "title": "08.RCP : クイーンorレズハーレム"
+        },
+        {
+          "kind": "title",
+          "code": "19",
+          "title": "09.RCP : いんびり・マンぐり"
+        },
+        {
+          "kind": "title",
+          "code": "20",
+          "title": "10.RCP : 愛のかたち"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/spaceproject.xml",
+      "source_order": 4214,
+      "archive": "seraphit_98",
+      "id": "seraphit-98-beep"
+    },
+    {
+      "title": "[PC-9801] BATTLE QUEEN 最強ファイターズ列伝",
+      "driver": {
+        "name": "pc98dos",
+        "type": "opn",
+        "alias": "SPACE PROJECT",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "clockmul",
+          "value": "8"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "TRPSCR98.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "TRPSCHRN.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "BQ_01.MDT",
+          "offset": "11"
+        },
+        {
+          "type": "file",
+          "path": "BQ_02.MDT",
+          "offset": "12"
+        },
+        {
+          "type": "file",
+          "path": "BQ_03.MDT",
+          "offset": "13"
+        },
+        {
+          "type": "file",
+          "path": "BQ_04.MDT",
+          "offset": "14"
+        },
+        {
+          "type": "file",
+          "path": "BQ_05.MDT",
+          "offset": "15"
+        },
+        {
+          "type": "file",
+          "path": "BQ_06.MDT",
+          "offset": "16"
+        },
+        {
+          "type": "file",
+          "path": "BQ_07.MDT",
+          "offset": "17"
+        },
+        {
+          "type": "file",
+          "path": "BQ_08.MDT",
+          "offset": "18"
+        },
+        {
+          "type": "file",
+          "path": "BQ_09.MDT",
+          "offset": "19"
+        },
+        {
+          "type": "file",
+          "path": "BQ_10.MDT",
+          "offset": "20"
+        },
+        {
+          "type": "file",
+          "path": "BQ_11.MDT",
+          "offset": "21"
+        },
+        {
+          "type": "file",
+          "path": "BQ_12.MDT",
+          "offset": "22"
+        },
+        {
+          "type": "file",
+          "path": "BQ_13.MDT",
+          "offset": "23"
+        },
+        {
+          "type": "file",
+          "path": "BQ_14.MDT",
+          "offset": "24"
+        },
+        {
+          "type": "file",
+          "path": "BQ_15.MDT",
+          "offset": "25"
+        },
+        {
+          "type": "file",
+          "path": "BQ_16.MDT",
+          "offset": "26"
+        },
+        {
+          "type": "shell",
+          "path": "TRPSCHRN",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "TRPSCR98",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "11",
+          "title": "MUSIC.DAT : 01 :"
+        },
+        {
+          "kind": "title",
+          "code": "12",
+          "title": "MUSIC.DAT : 02 :"
+        },
+        {
+          "kind": "title",
+          "code": "13",
+          "title": "MUSIC.DAT : 03 :"
+        },
+        {
+          "kind": "title",
+          "code": "14",
+          "title": "MUSIC.DAT : 04 :"
+        },
+        {
+          "kind": "title",
+          "code": "15",
+          "title": "MUSIC.DAT : 05 :"
+        },
+        {
+          "kind": "title",
+          "code": "16",
+          "title": "MUSIC.DAT : 06 :"
+        },
+        {
+          "kind": "title",
+          "code": "17",
+          "title": "MUSIC.DAT : 07 :"
+        },
+        {
+          "kind": "title",
+          "code": "18",
+          "title": "MUSIC.DAT : 08 :"
+        },
+        {
+          "kind": "title",
+          "code": "19",
+          "title": "MUSIC.DAT : 09 :"
+        },
+        {
+          "kind": "title",
+          "code": "20",
+          "title": "MUSIC.DAT : 10 : SE"
+        },
+        {
+          "kind": "title",
+          "code": "21",
+          "title": "MUSIC.DAT : 11 : SE"
+        },
+        {
+          "kind": "title",
+          "code": "22",
+          "title": "MUSIC.DAT : 12 : SE"
+        },
+        {
+          "kind": "title",
+          "code": "23",
+          "title": "MUSIC.DAT : 13 : SE"
+        },
+        {
+          "kind": "title",
+          "code": "24",
+          "title": "MUSIC.DAT : 14 : SE"
+        },
+        {
+          "kind": "title",
+          "code": "25",
+          "title": "MUSIC.DAT : 15 : SE"
+        },
+        {
+          "kind": "title",
+          "code": "26",
+          "title": "MUSIC.DAT : 16 : SE"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/spaceproject.xml",
+      "source_order": 4215,
+      "archive": "bq_98",
+      "id": "bq-98-opn"
+    }
+  ]
+}

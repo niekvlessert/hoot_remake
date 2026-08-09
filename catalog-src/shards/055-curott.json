@@ -1,0 +1,992 @@
+{
+  "format": "hoot-catalog-shard",
+  "version": 1,
+  "source_file": "xml/curott.xml",
+  "date": "2005/09/25",
+  "comments": [
+    " //きゅろっと(Curott) "
+  ],
+  "games": [
+    {
+      "title": "[PC-9801] Oh!きつねさま☆(OPN)",
+      "driver": {
+        "name": "pc98dos",
+        "type": "opn",
+        "alias": "Curott",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "clockmul",
+          "value": "8"
+        },
+        {
+          "name": "ssg_mix",
+          "value": "-18"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "NAX.com",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "NLP_HOOT.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "DM.O26",
+          "offset": "0x10"
+        },
+        {
+          "type": "file",
+          "path": "FOX_01.O26",
+          "offset": "0x11"
+        },
+        {
+          "type": "file",
+          "path": "FOX_02.O26",
+          "offset": "0x12"
+        },
+        {
+          "type": "file",
+          "path": "FOX_02_.O26",
+          "offset": "0x13"
+        },
+        {
+          "type": "file",
+          "path": "FOX_04.O26",
+          "offset": "0x14"
+        },
+        {
+          "type": "file",
+          "path": "FOX_05.O26",
+          "offset": "0x15"
+        },
+        {
+          "type": "file",
+          "path": "FOX_07.O26",
+          "offset": "0x16"
+        },
+        {
+          "type": "file",
+          "path": "FOX_08.O26",
+          "offset": "0x17"
+        },
+        {
+          "type": "file",
+          "path": "FOX_09.O26",
+          "offset": "0x18"
+        },
+        {
+          "type": "file",
+          "path": "FOX_10.O26",
+          "offset": "0x19"
+        },
+        {
+          "type": "file",
+          "path": "FOX_11.O26",
+          "offset": "0x1A"
+        },
+        {
+          "type": "file",
+          "path": "FOX_12.O26",
+          "offset": "0x1B"
+        },
+        {
+          "type": "file",
+          "path": "FOX_13.O26",
+          "offset": "0x1C"
+        },
+        {
+          "type": "file",
+          "path": "FOX_13_.O26",
+          "offset": "0x1D"
+        },
+        {
+          "type": "file",
+          "path": "FOX_H1.O26",
+          "offset": "0x1E"
+        },
+        {
+          "type": "file",
+          "path": "FOX_H2.O26",
+          "offset": "0x1F"
+        },
+        {
+          "type": "file",
+          "path": "FOX_H3.O26",
+          "offset": "0x20"
+        },
+        {
+          "type": "file",
+          "path": "FOX_H4.O26",
+          "offset": "0x21"
+        },
+        {
+          "type": "file",
+          "path": "FOX_SCN.O26",
+          "offset": "0x22"
+        },
+        {
+          "type": "file",
+          "path": "FOX_SDG.O26",
+          "offset": "0x23"
+        },
+        {
+          "type": "shell",
+          "path": "NAX -T -F7",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "NLP_HOOT",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "DM.O26      : [STOP]"
+        },
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "FOX_01.O26  : ポコポコ"
+        },
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "FOX_02.O26  : シッポネワルツ"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "FOX_02_.O26 : シッポネワルツ(波あり)"
+        },
+        {
+          "kind": "title",
+          "code": "0x14",
+          "title": "FOX_04.O26  : 四川の思い出"
+        },
+        {
+          "kind": "title",
+          "code": "0x15",
+          "title": "FOX_05.O26  : 霊媒師ふたたび"
+        },
+        {
+          "kind": "title",
+          "code": "0x16",
+          "title": "FOX_07.O26  : 神々のトライラブ"
+        },
+        {
+          "kind": "title",
+          "code": "0x17",
+          "title": "FOX_08.O26  : きつねの伝説"
+        },
+        {
+          "kind": "title",
+          "code": "0x18",
+          "title": "FOX_09.O26  : 悲しき運命"
+        },
+        {
+          "kind": "title",
+          "code": "0x19",
+          "title": "FOX_10.O26  : Oh!きつねさま"
+        },
+        {
+          "kind": "title",
+          "code": "0x1A",
+          "title": "FOX_11.O26  : すっぱい稲荷寿司"
+        },
+        {
+          "kind": "title",
+          "code": "0x1B",
+          "title": "FOX_12.O26  : エンディングテーマ"
+        },
+        {
+          "kind": "title",
+          "code": "0x1C",
+          "title": "FOX_13.O26  : 雨にぬれても…。(雨付き)"
+        },
+        {
+          "kind": "title",
+          "code": "0x1D",
+          "title": "FOX_13_.O26 : 雨にぬれても…。(雨なし)"
+        },
+        {
+          "kind": "title",
+          "code": "0x1E",
+          "title": "FOX_H1.O26  : 恋はきつね色"
+        },
+        {
+          "kind": "title",
+          "code": "0x1F",
+          "title": "FOX_H2.O26  : 宇宙を駆けろ"
+        },
+        {
+          "kind": "title",
+          "code": "0x20",
+          "title": "FOX_H3.O26  : スリップトリップ"
+        },
+        {
+          "kind": "title",
+          "code": "0x21",
+          "title": "FOX_H4.O26  : 倒せ中ボス!"
+        },
+        {
+          "kind": "title",
+          "code": "0x23",
+          "title": "FOX_SDG.O26 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x22",
+          "title": "FOX_SCN.O26 : SE"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/curott.xml",
+      "source_order": 978,
+      "archive": "ohkitune_98",
+      "id": "ohkitune-98-opn"
+    },
+    {
+      "title": "[PC-9801] Oh!きつねさま☆(86)",
+      "driver": {
+        "name": "pc98dos",
+        "type": "opna",
+        "alias": "Curott",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "clockmul",
+          "value": "8"
+        },
+        {
+          "name": "ssg_mix",
+          "value": "-18"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "NAX.com",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "NLP_HOOT.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "DM.O86",
+          "offset": "0x10"
+        },
+        {
+          "type": "file",
+          "path": "FOX_01.O86",
+          "offset": "0x11"
+        },
+        {
+          "type": "file",
+          "path": "FOX_02.O86",
+          "offset": "0x12"
+        },
+        {
+          "type": "file",
+          "path": "FOX_02_.O86",
+          "offset": "0x13"
+        },
+        {
+          "type": "file",
+          "path": "FOX_04.O86",
+          "offset": "0x14"
+        },
+        {
+          "type": "file",
+          "path": "FOX_05.O86",
+          "offset": "0x15"
+        },
+        {
+          "type": "file",
+          "path": "FOX_07.O86",
+          "offset": "0x16"
+        },
+        {
+          "type": "file",
+          "path": "FOX_08.O86",
+          "offset": "0x17"
+        },
+        {
+          "type": "file",
+          "path": "FOX_09.O86",
+          "offset": "0x18"
+        },
+        {
+          "type": "file",
+          "path": "FOX_10.O86",
+          "offset": "0x19"
+        },
+        {
+          "type": "file",
+          "path": "FOX_11.O86",
+          "offset": "0x1A"
+        },
+        {
+          "type": "file",
+          "path": "FOX_12.O86",
+          "offset": "0x1B"
+        },
+        {
+          "type": "file",
+          "path": "FOX_13.O86",
+          "offset": "0x1C"
+        },
+        {
+          "type": "file",
+          "path": "FOX_13_.O86",
+          "offset": "0x1D"
+        },
+        {
+          "type": "file",
+          "path": "FOX_H1.O86",
+          "offset": "0x1E"
+        },
+        {
+          "type": "file",
+          "path": "FOX_H2.O86",
+          "offset": "0x1F"
+        },
+        {
+          "type": "file",
+          "path": "FOX_H3.O86",
+          "offset": "0x20"
+        },
+        {
+          "type": "file",
+          "path": "FOX_H4.O86",
+          "offset": "0x21"
+        },
+        {
+          "type": "file",
+          "path": "FOX_SCN.O86",
+          "offset": "0x22"
+        },
+        {
+          "type": "file",
+          "path": "FOX_SDG.O86",
+          "offset": "0x23"
+        },
+        {
+          "type": "shell",
+          "path": "NAX -T -3 -F7",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "NLP_HOOT",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "DM.O86      : [STOP]"
+        },
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "FOX_01.O86  : ポコポコ"
+        },
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "FOX_02.O86  : シッポネワルツ"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "FOX_02_.O86 : シッポネワルツ(波あり)"
+        },
+        {
+          "kind": "title",
+          "code": "0x14",
+          "title": "FOX_04.O86  : 四川の思い出"
+        },
+        {
+          "kind": "title",
+          "code": "0x15",
+          "title": "FOX_05.O86  : 霊媒師ふたたび"
+        },
+        {
+          "kind": "title",
+          "code": "0x16",
+          "title": "FOX_07.O86  : 神々のトライラブ"
+        },
+        {
+          "kind": "title",
+          "code": "0x17",
+          "title": "FOX_08.O86  : きつねの伝説"
+        },
+        {
+          "kind": "title",
+          "code": "0x18",
+          "title": "FOX_09.O86  : 悲しき運命"
+        },
+        {
+          "kind": "title",
+          "code": "0x19",
+          "title": "FOX_10.O86  : Oh!きつねさま"
+        },
+        {
+          "kind": "title",
+          "code": "0x1A",
+          "title": "FOX_11.O86  : すっぱい稲荷寿司"
+        },
+        {
+          "kind": "title",
+          "code": "0x1B",
+          "title": "FOX_12.O86  : エンディングテーマ"
+        },
+        {
+          "kind": "title",
+          "code": "0x1C",
+          "title": "FOX_13.O86  : 雨にぬれても…。(雨付き)"
+        },
+        {
+          "kind": "title",
+          "code": "0x1D",
+          "title": "FOX_13_.O86 : 雨にぬれても…。(雨なし)"
+        },
+        {
+          "kind": "title",
+          "code": "0x1E",
+          "title": "FOX_H1.O86  : 恋はきつね色"
+        },
+        {
+          "kind": "title",
+          "code": "0x1F",
+          "title": "FOX_H2.O86  : 宇宙を駆けろ"
+        },
+        {
+          "kind": "title",
+          "code": "0x20",
+          "title": "FOX_H3.O86  : スリップトリップ"
+        },
+        {
+          "kind": "title",
+          "code": "0x21",
+          "title": "FOX_H4.O86  : 倒せ中ボス!"
+        },
+        {
+          "kind": "title",
+          "code": "0x23",
+          "title": "FOX_SDG.O86 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x22",
+          "title": "FOX_SCN.O86 : SE"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/curott.xml",
+      "source_order": 979,
+      "archive": "ohkitune_98",
+      "id": "ohkitune-98-opna"
+    },
+    {
+      "title": "[PC-9801] Oh!きつねさま☆(GS)",
+      "driver": {
+        "name": "pc98dos",
+        "type": "beep",
+        "alias": "Curott",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "clockmul",
+          "value": "8"
+        },
+        {
+          "name": "midiout",
+          "value": "1"
+        },
+        {
+          "name": "midiout_type",
+          "value": "4"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "MINT.com",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "NMISYS55.INS",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "SC_55.TDF",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "SC_55DRM.TDF",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "NLP_HOOT.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "DM.INT",
+          "offset": "0x10"
+        },
+        {
+          "type": "file",
+          "path": "FOX_01.INT",
+          "offset": "0x11"
+        },
+        {
+          "type": "file",
+          "path": "FOX_02.INT",
+          "offset": "0x12"
+        },
+        {
+          "type": "file",
+          "path": "FOX_02_.INT",
+          "offset": "0x13"
+        },
+        {
+          "type": "file",
+          "path": "FOX_04.INT",
+          "offset": "0x14"
+        },
+        {
+          "type": "file",
+          "path": "FOX_05.INT",
+          "offset": "0x15"
+        },
+        {
+          "type": "file",
+          "path": "FOX_07.INT",
+          "offset": "0x16"
+        },
+        {
+          "type": "file",
+          "path": "FOX_08.INT",
+          "offset": "0x17"
+        },
+        {
+          "type": "file",
+          "path": "FOX_09.INT",
+          "offset": "0x18"
+        },
+        {
+          "type": "file",
+          "path": "FOX_10.INT",
+          "offset": "0x19"
+        },
+        {
+          "type": "file",
+          "path": "FOX_11.INT",
+          "offset": "0x1A"
+        },
+        {
+          "type": "file",
+          "path": "FOX_12.INT",
+          "offset": "0x1B"
+        },
+        {
+          "type": "file",
+          "path": "FOX_13.INT",
+          "offset": "0x1C"
+        },
+        {
+          "type": "file",
+          "path": "FOX_13_.INT",
+          "offset": "0x1D"
+        },
+        {
+          "type": "file",
+          "path": "FOX_H1.INT",
+          "offset": "0x1E"
+        },
+        {
+          "type": "file",
+          "path": "FOX_H2.INT",
+          "offset": "0x1F"
+        },
+        {
+          "type": "file",
+          "path": "FOX_H3.INT",
+          "offset": "0x20"
+        },
+        {
+          "type": "file",
+          "path": "FOX_H4.INT",
+          "offset": "0x21"
+        },
+        {
+          "type": "file",
+          "path": "FOX_SCN.INT",
+          "offset": "0x22"
+        },
+        {
+          "type": "file",
+          "path": "FOX_SDG.INT",
+          "offset": "0x23"
+        },
+        {
+          "type": "file",
+          "path": "FOX_XX.INT",
+          "offset": "0x24"
+        },
+        {
+          "type": "shell",
+          "path": "MINT -F9 -NINMISYS55.INS",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "NLP_HOOT",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "DM.INT      : [STOP]"
+        },
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "FOX_01.INT  : ポコポコ"
+        },
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "FOX_02.INT  : シッポネワルツ"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "FOX_02_.INT : シッポネワルツ(波あり)"
+        },
+        {
+          "kind": "title",
+          "code": "0x14",
+          "title": "FOX_04.INT  : 四川の思い出"
+        },
+        {
+          "kind": "title",
+          "code": "0x15",
+          "title": "FOX_05.INT  : 霊媒師ふたたび"
+        },
+        {
+          "kind": "title",
+          "code": "0x16",
+          "title": "FOX_07.INT  : 神々のトライラブ"
+        },
+        {
+          "kind": "title",
+          "code": "0x17",
+          "title": "FOX_08.INT  : きつねの伝説"
+        },
+        {
+          "kind": "title",
+          "code": "0x18",
+          "title": "FOX_09.INT  : 悲しき運命"
+        },
+        {
+          "kind": "title",
+          "code": "0x19",
+          "title": "FOX_10.INT  : Oh!きつねさま"
+        },
+        {
+          "kind": "title",
+          "code": "0x1A",
+          "title": "FOX_11.INT  : すっぱい稲荷寿司"
+        },
+        {
+          "kind": "title",
+          "code": "0x1B",
+          "title": "FOX_12.INT  : エンディングテーマ"
+        },
+        {
+          "kind": "title",
+          "code": "0x1C",
+          "title": "FOX_13.INT  : 雨にぬれても…。(雨付き)"
+        },
+        {
+          "kind": "title",
+          "code": "0x1D",
+          "title": "FOX_13_.INT : 雨にぬれても…。(雨なし)"
+        },
+        {
+          "kind": "title",
+          "code": "0x1E",
+          "title": "FOX_H1.INT  : 恋はきつね色"
+        },
+        {
+          "kind": "title",
+          "code": "0x1F",
+          "title": "FOX_H2.INT  : 宇宙を駆けろ"
+        },
+        {
+          "kind": "title",
+          "code": "0x20",
+          "title": "FOX_H3.INT  : スリップトリップ"
+        },
+        {
+          "kind": "title",
+          "code": "0x21",
+          "title": "FOX_H4.INT  : 倒せ中ボス!"
+        },
+        {
+          "kind": "title",
+          "code": "0x23",
+          "title": "FOX_SDG.INT :"
+        },
+        {
+          "kind": "title",
+          "code": "0x24",
+          "title": "FOX_XX.INT  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x22",
+          "title": "FOX_SCN.INT : SE"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/curott.xml",
+      "source_order": 980,
+      "archive": "ohkitune_98",
+      "id": "ohkitune-98-beep"
+    },
+    {
+      "title": "[PC-9801] Making Candy ～お気に召すまま～",
+      "driver": {
+        "name": "pc98dos",
+        "type": "opn",
+        "alias": "Curott",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "clockmul",
+          "value": "8"
+        },
+        {
+          "name": "ssg_mix",
+          "value": "-18"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "NAX.com",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "NLP_HOOT.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "DM.O26",
+          "offset": "0x10"
+        },
+        {
+          "type": "file",
+          "path": "GAGAN.O26",
+          "offset": "0x11"
+        },
+        {
+          "type": "file",
+          "path": "MC_01.O26",
+          "offset": "0x12"
+        },
+        {
+          "type": "file",
+          "path": "MC_03.O26",
+          "offset": "0x13"
+        },
+        {
+          "type": "file",
+          "path": "MC_04.O26",
+          "offset": "0x14"
+        },
+        {
+          "type": "file",
+          "path": "MC_05.O26",
+          "offset": "0x15"
+        },
+        {
+          "type": "file",
+          "path": "MC_06.O26",
+          "offset": "0x16"
+        },
+        {
+          "type": "file",
+          "path": "MC_07.O26",
+          "offset": "0x17"
+        },
+        {
+          "type": "file",
+          "path": "MC_08.O26",
+          "offset": "0x18"
+        },
+        {
+          "type": "file",
+          "path": "MC_09.O26",
+          "offset": "0x19"
+        },
+        {
+          "type": "file",
+          "path": "MC_10.O26",
+          "offset": "0x1A"
+        },
+        {
+          "type": "file",
+          "path": "MC_12.O26",
+          "offset": "0x1B"
+        },
+        {
+          "type": "file",
+          "path": "MC_13.O26",
+          "offset": "0x1C"
+        },
+        {
+          "type": "file",
+          "path": "MC_14.O26",
+          "offset": "0x1D"
+        },
+        {
+          "type": "file",
+          "path": "MC_15.O26",
+          "offset": "0x1E"
+        },
+        {
+          "type": "file",
+          "path": "MC_16.O26",
+          "offset": "0x1F"
+        },
+        {
+          "type": "shell",
+          "path": "NAX -T",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "NLP_HOOT",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "DM.O26    : [STOP]"
+        },
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "MC_01.O26 : 月光のノクターン"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "MC_03.O26 : 旅立ちの朝"
+        },
+        {
+          "kind": "title",
+          "code": "0x14",
+          "title": "MC_04.O26 : 深夜の大脱走"
+        },
+        {
+          "kind": "title",
+          "code": "0x15",
+          "title": "MC_05.O26 : うららかな春の陽だまり"
+        },
+        {
+          "kind": "title",
+          "code": "0x16",
+          "title": "MC_06.O26 : ファニーステップ"
+        },
+        {
+          "kind": "title",
+          "code": "0x17",
+          "title": "MC_07.O26 : 激情"
+        },
+        {
+          "kind": "title",
+          "code": "0x18",
+          "title": "MC_08.O26 : 果てしなき道のり"
+        },
+        {
+          "kind": "title",
+          "code": "0x19",
+          "title": "MC_09.O26 : アラビアンナイト"
+        },
+        {
+          "kind": "title",
+          "code": "0x1A",
+          "title": "MC_10.O26 : おもちゃの行進曲"
+        },
+        {
+          "kind": "title",
+          "code": "0x1B",
+          "title": "MC_12.O26 : 失われし時を求めて"
+        },
+        {
+          "kind": "title",
+          "code": "0x1C",
+          "title": "MC_13.O26 : ハッピーウェディング"
+        },
+        {
+          "kind": "title",
+          "code": "0x1D",
+          "title": "MC_14.O26 : 猟奇の香り"
+        },
+        {
+          "kind": "title",
+          "code": "0x1E",
+          "title": "MC_15.O26 : ロマンチック・クルーズ"
+        },
+        {
+          "kind": "title",
+          "code": "0x1F",
+          "title": "MC_16.O26 : あの日僕は…"
+        },
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "GAGAN.O26 : ガガーン"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/curott.xml",
+      "source_order": 981,
+      "archive": "mcandy_98",
+      "id": "mcandy-98-opn"
+    }
+  ]
+}

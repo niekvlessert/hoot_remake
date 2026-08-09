@@ -1,0 +1,2934 @@
+{
+  "format": "hoot-catalog-shard",
+  "version": 1,
+  "source_file": "xml/momonokihouse.xml",
+  "date": "2014/03/02",
+  "comments": [
+    " //もものきはうす "
+  ],
+  "games": [
+    {
+      "title": "[MSX] ピーチアップ総集編II(笑) みらぁめいず ～鏡の中のアオナたち～(OPLL)",
+      "driver": {
+        "name": "msx",
+        "type": "generic",
+        "alias": "もものきはうす",
+        "platform": "MSX"
+      },
+      "options": [
+        {
+          "name": "mdata_addr",
+          "value": "0x1000"
+        },
+        {
+          "name": "mdata_size",
+          "value": "0x3000"
+        },
+        {
+          "name": "mfile_size",
+          "value": "0x3000"
+        },
+        {
+          "name": "use_opll",
+          "value": "0x01"
+        },
+        {
+          "name": "init_pc",
+          "value": "0x0400"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "patch",
+          "offset": "0x0400"
+        },
+        {
+          "type": "code",
+          "path": "DRIVER0.BIN",
+          "offset": "0x1000"
+        },
+        {
+          "type": "bgm",
+          "path": "DRIVER0.BIN",
+          "offset": "0x00"
+        },
+        {
+          "type": "bgm",
+          "path": "DRIVER1.BIN",
+          "offset": "0x01"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x10001",
+          "title": "BGM 0x01"
+        },
+        {
+          "kind": "title",
+          "code": "0x10002",
+          "title": "BGM 0x02"
+        },
+        {
+          "kind": "title",
+          "code": "0x10003",
+          "title": "BGM 0x03"
+        },
+        {
+          "kind": "title",
+          "code": "0x10004",
+          "title": "BGM 0x04"
+        },
+        {
+          "kind": "title",
+          "code": "0x10005",
+          "title": "BGM 0x05"
+        },
+        {
+          "kind": "title",
+          "code": "0x10006",
+          "title": "BGM 0x06"
+        },
+        {
+          "kind": "title",
+          "code": "0x10007",
+          "title": "BGM 0x07"
+        },
+        {
+          "kind": "title",
+          "code": "0x10101",
+          "title": "BGM 0x08"
+        },
+        {
+          "kind": "title",
+          "code": "0x10102",
+          "title": "BGM 0x09"
+        },
+        {
+          "kind": "title",
+          "code": "0x10103",
+          "title": "BGM 0x0A"
+        },
+        {
+          "kind": "range",
+          "min": "0x11",
+          "max": "0x26",
+          "title_format": "SE 0x%02x",
+          "extcode": "1"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/momonokihouse.xml",
+      "source_order": 3326,
+      "archive": "pupsp2_msx",
+      "id": "pupsp2-msx-generic"
+    },
+    {
+      "title": "[MSX] ピーチアップ総集編II(笑) みらぁめいず ～鏡の中のアオナたち～(PSG)",
+      "driver": {
+        "name": "msx",
+        "type": "generic",
+        "alias": "もものきはうす",
+        "platform": "MSX"
+      },
+      "options": [
+        {
+          "name": "mdata_addr",
+          "value": "0x1000"
+        },
+        {
+          "name": "mdata_size",
+          "value": "0x3000"
+        },
+        {
+          "name": "mfile_size",
+          "value": "0x3000"
+        },
+        {
+          "name": "init_pc",
+          "value": "0x0400"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "patch",
+          "offset": "0x0400"
+        },
+        {
+          "type": "code",
+          "path": "DRIVER0.BIN",
+          "offset": "0x1000"
+        },
+        {
+          "type": "bgm",
+          "path": "DRIVER0.BIN",
+          "offset": "0x00"
+        },
+        {
+          "type": "bgm",
+          "path": "DRIVER1.BIN",
+          "offset": "0x01"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x10001",
+          "title": "BGM 0x01"
+        },
+        {
+          "kind": "title",
+          "code": "0x10002",
+          "title": "BGM 0x02"
+        },
+        {
+          "kind": "title",
+          "code": "0x10003",
+          "title": "BGM 0x03"
+        },
+        {
+          "kind": "title",
+          "code": "0x10004",
+          "title": "BGM 0x04"
+        },
+        {
+          "kind": "title",
+          "code": "0x10005",
+          "title": "BGM 0x05"
+        },
+        {
+          "kind": "title",
+          "code": "0x10006",
+          "title": "BGM 0x06"
+        },
+        {
+          "kind": "title",
+          "code": "0x10007",
+          "title": "BGM 0x07"
+        },
+        {
+          "kind": "title",
+          "code": "0x10101",
+          "title": "BGM 0x08"
+        },
+        {
+          "kind": "title",
+          "code": "0x10102",
+          "title": "BGM 0x09"
+        },
+        {
+          "kind": "title",
+          "code": "0x10103",
+          "title": "BGM 0x0A"
+        },
+        {
+          "kind": "range",
+          "min": "0x11",
+          "max": "0x26",
+          "title_format": "SE 0x%02x",
+          "extcode": "1"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/momonokihouse.xml",
+      "source_order": 3327,
+      "archive": "pupsp2_msx",
+      "id": "pupsp2-msx-generic-2"
+    },
+    {
+      "title": "[MSX] ピーチアップ総集編II(笑) サナトリウム・オブ・ロマンス2(OPLL)",
+      "driver": {
+        "name": "msx",
+        "type": "generic",
+        "alias": "もものきはうす",
+        "platform": "MSX"
+      },
+      "options": [
+        {
+          "name": "mdata_addr",
+          "value": "0x1000"
+        },
+        {
+          "name": "mdata_size",
+          "value": "0x3000"
+        },
+        {
+          "name": "mfile_size",
+          "value": "0x3000"
+        },
+        {
+          "name": "use_opll",
+          "value": "0x01"
+        },
+        {
+          "name": "init_pc",
+          "value": "0x0400"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "patch",
+          "offset": "0x0400"
+        },
+        {
+          "type": "code",
+          "path": "patch2",
+          "offset": "0x0480"
+        },
+        {
+          "type": "code",
+          "path": "DRIVER3.BIN",
+          "offset": "0x1000"
+        },
+        {
+          "type": "bgm",
+          "path": "DRIVER3.BIN",
+          "offset": "0x00"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x10001",
+          "title": "BGM 0x01"
+        },
+        {
+          "kind": "title",
+          "code": "0x10002",
+          "title": "BGM 0x02"
+        },
+        {
+          "kind": "title",
+          "code": "0x10003",
+          "title": "BGM 0x03"
+        },
+        {
+          "kind": "title",
+          "code": "0x10004",
+          "title": "BGM 0x04"
+        },
+        {
+          "kind": "title",
+          "code": "0x10005",
+          "title": "BGM 0x05"
+        },
+        {
+          "kind": "title",
+          "code": "0x10006",
+          "title": "BGM 0x06"
+        },
+        {
+          "kind": "title",
+          "code": "0x10007",
+          "title": "BGM 0x07"
+        },
+        {
+          "kind": "title",
+          "code": "0x10008",
+          "title": "BGM 0x08"
+        },
+        {
+          "kind": "title",
+          "code": "0x10009",
+          "title": "BGM 0x09"
+        },
+        {
+          "kind": "title",
+          "code": "0x1000b",
+          "title": "BGM 0x0B"
+        },
+        {
+          "kind": "title",
+          "code": "0x1000a",
+          "title": "SE 0x0A"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/momonokihouse.xml",
+      "source_order": 3328,
+      "archive": "pupsp2_msx",
+      "id": "pupsp2-msx-generic-3"
+    },
+    {
+      "title": "[MSX] ピーチアップ総集編II(笑) サナトリウム・オブ・ロマンス2(PSG)",
+      "driver": {
+        "name": "msx",
+        "type": "generic",
+        "alias": "もものきはうす",
+        "platform": "MSX"
+      },
+      "options": [
+        {
+          "name": "mdata_addr",
+          "value": "0x1000"
+        },
+        {
+          "name": "mdata_size",
+          "value": "0x3000"
+        },
+        {
+          "name": "mfile_size",
+          "value": "0x3000"
+        },
+        {
+          "name": "init_pc",
+          "value": "0x0400"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "patch",
+          "offset": "0x0400"
+        },
+        {
+          "type": "code",
+          "path": "DRIVER3.BIN",
+          "offset": "0x1000"
+        },
+        {
+          "type": "bgm",
+          "path": "DRIVER3.BIN",
+          "offset": "0x00"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x10001",
+          "title": "BGM 0x01"
+        },
+        {
+          "kind": "title",
+          "code": "0x10002",
+          "title": "BGM 0x02"
+        },
+        {
+          "kind": "title",
+          "code": "0x10003",
+          "title": "BGM 0x03"
+        },
+        {
+          "kind": "title",
+          "code": "0x10004",
+          "title": "BGM 0x04"
+        },
+        {
+          "kind": "title",
+          "code": "0x10005",
+          "title": "BGM 0x05"
+        },
+        {
+          "kind": "title",
+          "code": "0x10006",
+          "title": "BGM 0x06"
+        },
+        {
+          "kind": "title",
+          "code": "0x10007",
+          "title": "BGM 0x07"
+        },
+        {
+          "kind": "title",
+          "code": "0x10008",
+          "title": "BGM 0x08"
+        },
+        {
+          "kind": "title",
+          "code": "0x10009",
+          "title": "BGM 0x09"
+        },
+        {
+          "kind": "title",
+          "code": "0x1000b",
+          "title": "BGM 0x0B"
+        },
+        {
+          "kind": "title",
+          "code": "0x1000a",
+          "title": "SE 0x0A"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/momonokihouse.xml",
+      "source_order": 3329,
+      "archive": "pupsp2_msx",
+      "id": "pupsp2-msx-generic-4"
+    },
+    {
+      "title": "[MSX] ピーチアップ総集編II(笑) また チンと手と(OPLL)",
+      "driver": {
+        "name": "msx",
+        "type": "generic",
+        "alias": "もものきはうす",
+        "platform": "MSX"
+      },
+      "options": [
+        {
+          "name": "mdata_addr",
+          "value": "0x1000"
+        },
+        {
+          "name": "mdata_size",
+          "value": "0x3000"
+        },
+        {
+          "name": "mfile_size",
+          "value": "0x3000"
+        },
+        {
+          "name": "use_opll",
+          "value": "0x01"
+        },
+        {
+          "name": "init_pc",
+          "value": "0x0400"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "patch",
+          "offset": "0x0400"
+        },
+        {
+          "type": "code",
+          "path": "DRIVER2.BIN",
+          "offset": "0x1000"
+        },
+        {
+          "type": "bgm",
+          "path": "DRIVER2.BIN",
+          "offset": "0x00"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x10001",
+          "title": "BGM 0x01"
+        },
+        {
+          "kind": "title",
+          "code": "0x10002",
+          "title": "BGM 0x02"
+        },
+        {
+          "kind": "title",
+          "code": "0x10003",
+          "title": "BGM 0x03"
+        },
+        {
+          "kind": "title",
+          "code": "0x10004",
+          "title": "BGM 0x04"
+        },
+        {
+          "kind": "title",
+          "code": "0x10005",
+          "title": "BGM 0x05"
+        },
+        {
+          "kind": "title",
+          "code": "0x10006",
+          "title": "BGM 0x06"
+        },
+        {
+          "kind": "title",
+          "code": "0x10007",
+          "title": "BGM 0x07"
+        },
+        {
+          "kind": "range",
+          "min": "0x10",
+          "max": "0x13",
+          "title_format": "SE 0x%02x",
+          "extcode": "1"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/momonokihouse.xml",
+      "source_order": 3330,
+      "archive": "pupsp2_msx",
+      "id": "pupsp2-msx-generic-5"
+    },
+    {
+      "title": "[MSX] ピーチアップ総集編II(笑) また チンと手と(PSG)",
+      "driver": {
+        "name": "msx",
+        "type": "generic",
+        "alias": "もものきはうす",
+        "platform": "MSX"
+      },
+      "options": [
+        {
+          "name": "mdata_addr",
+          "value": "0x1000"
+        },
+        {
+          "name": "mdata_size",
+          "value": "0x3000"
+        },
+        {
+          "name": "mfile_size",
+          "value": "0x3000"
+        },
+        {
+          "name": "init_pc",
+          "value": "0x0400"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "patch",
+          "offset": "0x0400"
+        },
+        {
+          "type": "code",
+          "path": "DRIVER2.BIN",
+          "offset": "0x1000"
+        },
+        {
+          "type": "bgm",
+          "path": "DRIVER2.BIN",
+          "offset": "0x00"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x10001",
+          "title": "BGM 0x01"
+        },
+        {
+          "kind": "title",
+          "code": "0x10002",
+          "title": "BGM 0x02"
+        },
+        {
+          "kind": "title",
+          "code": "0x10003",
+          "title": "BGM 0x03"
+        },
+        {
+          "kind": "title",
+          "code": "0x10004",
+          "title": "BGM 0x04"
+        },
+        {
+          "kind": "title",
+          "code": "0x10005",
+          "title": "BGM 0x05"
+        },
+        {
+          "kind": "title",
+          "code": "0x10006",
+          "title": "BGM 0x06"
+        },
+        {
+          "kind": "title",
+          "code": "0x10007",
+          "title": "BGM 0x07"
+        },
+        {
+          "kind": "range",
+          "min": "0x10",
+          "max": "0x13",
+          "title_format": "SE 0x%02x",
+          "extcode": "1"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/momonokihouse.xml",
+      "source_order": 3331,
+      "archive": "pupsp2_msx",
+      "id": "pupsp2-msx-generic-6"
+    },
+    {
+      "title": "[MSX] ピーチアップ総集編II(笑) 華姉妹(OPLL)",
+      "driver": {
+        "name": "msx",
+        "type": "generic",
+        "alias": "もものきはうす",
+        "platform": "MSX"
+      },
+      "options": [
+        {
+          "name": "mdata_addr",
+          "value": "0x1000"
+        },
+        {
+          "name": "mdata_size",
+          "value": "0x3000"
+        },
+        {
+          "name": "mfile_size",
+          "value": "0x3000"
+        },
+        {
+          "name": "use_opll",
+          "value": "0x01"
+        },
+        {
+          "name": "init_pc",
+          "value": "0x0400"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "patch",
+          "offset": "0x0400"
+        },
+        {
+          "type": "code",
+          "path": "DRIVER4.BIN",
+          "offset": "0x1000"
+        },
+        {
+          "type": "bgm",
+          "path": "DRIVER4.BIN",
+          "offset": "0x00"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x10001",
+          "title": "BGM 0x01"
+        },
+        {
+          "kind": "title",
+          "code": "0x10002",
+          "title": "BGM 0x02"
+        },
+        {
+          "kind": "title",
+          "code": "0x10003",
+          "title": "BGM 0x03"
+        },
+        {
+          "kind": "title",
+          "code": "0x10004",
+          "title": "BGM 0x04"
+        },
+        {
+          "kind": "title",
+          "code": "0x10005",
+          "title": "BGM 0x05"
+        },
+        {
+          "kind": "title",
+          "code": "0x10006",
+          "title": "BGM 0x06"
+        },
+        {
+          "kind": "title",
+          "code": "0x10007",
+          "title": "BGM 0x07"
+        },
+        {
+          "kind": "title",
+          "code": "0x10008",
+          "title": "BGM 0x08"
+        },
+        {
+          "kind": "title",
+          "code": "0x10009",
+          "title": "BGM 0x09"
+        },
+        {
+          "kind": "title",
+          "code": "0x1000a",
+          "title": "BGM 0x0A"
+        },
+        {
+          "kind": "title",
+          "code": "0x1000b",
+          "title": "BGM 0x0B"
+        },
+        {
+          "kind": "range",
+          "min": "0x10",
+          "max": "0x16",
+          "title_format": "SE 0x%02x",
+          "extcode": "1"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/momonokihouse.xml",
+      "source_order": 3332,
+      "archive": "pupsp2_msx",
+      "id": "pupsp2-msx-generic-7"
+    },
+    {
+      "title": "[MSX] ピーチアップ総集編II(笑) 華姉妹(PSG)",
+      "driver": {
+        "name": "msx",
+        "type": "generic",
+        "alias": "もものきはうす",
+        "platform": "MSX"
+      },
+      "options": [
+        {
+          "name": "mdata_addr",
+          "value": "0x1000"
+        },
+        {
+          "name": "mdata_size",
+          "value": "0x3000"
+        },
+        {
+          "name": "mfile_size",
+          "value": "0x3000"
+        },
+        {
+          "name": "init_pc",
+          "value": "0x0400"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "patch",
+          "offset": "0x0400"
+        },
+        {
+          "type": "code",
+          "path": "DRIVER4.BIN",
+          "offset": "0x1000"
+        },
+        {
+          "type": "bgm",
+          "path": "DRIVER4.BIN",
+          "offset": "0x00"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x10001",
+          "title": "BGM 0x01"
+        },
+        {
+          "kind": "title",
+          "code": "0x10002",
+          "title": "BGM 0x02"
+        },
+        {
+          "kind": "title",
+          "code": "0x10003",
+          "title": "BGM 0x03"
+        },
+        {
+          "kind": "title",
+          "code": "0x10004",
+          "title": "BGM 0x04"
+        },
+        {
+          "kind": "title",
+          "code": "0x10005",
+          "title": "BGM 0x05"
+        },
+        {
+          "kind": "title",
+          "code": "0x10006",
+          "title": "BGM 0x06"
+        },
+        {
+          "kind": "title",
+          "code": "0x10007",
+          "title": "BGM 0x07"
+        },
+        {
+          "kind": "title",
+          "code": "0x10008",
+          "title": "BGM 0x08"
+        },
+        {
+          "kind": "title",
+          "code": "0x10009",
+          "title": "BGM 0x09"
+        },
+        {
+          "kind": "title",
+          "code": "0x1000a",
+          "title": "BGM 0x0A"
+        },
+        {
+          "kind": "title",
+          "code": "0x1000b",
+          "title": "BGM 0x0B"
+        },
+        {
+          "kind": "range",
+          "min": "0x10",
+          "max": "0x16",
+          "title_format": "SE 0x%02x",
+          "extcode": "1"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/momonokihouse.xml",
+      "source_order": 3333,
+      "archive": "pupsp2_msx",
+      "id": "pupsp2-msx-generic-8"
+    },
+    {
+      "title": "[MSX] ピーチアップ総集編II(笑) 3画面でDON III -夢色コイン-(OPLL)",
+      "driver": {
+        "name": "msx",
+        "type": "generic",
+        "alias": "もものきはうす",
+        "platform": "MSX"
+      },
+      "options": [
+        {
+          "name": "mdata_addr",
+          "value": "0x1000"
+        },
+        {
+          "name": "mdata_size",
+          "value": "0x3000"
+        },
+        {
+          "name": "mfile_size",
+          "value": "0x3000"
+        },
+        {
+          "name": "use_opll",
+          "value": "0x01"
+        },
+        {
+          "name": "init_pc",
+          "value": "0x0400"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "patch",
+          "offset": "0x0400"
+        },
+        {
+          "type": "code",
+          "path": "DRIVER5.BIN",
+          "offset": "0x1000"
+        },
+        {
+          "type": "bgm",
+          "path": "DRIVER5.BIN",
+          "offset": "0x00"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x10001",
+          "title": "BGM 0x01"
+        },
+        {
+          "kind": "title",
+          "code": "0x10002",
+          "title": "BGM 0x02"
+        },
+        {
+          "kind": "title",
+          "code": "0x10003",
+          "title": "BGM 0x03"
+        },
+        {
+          "kind": "title",
+          "code": "0x10004",
+          "title": "BGM 0x04"
+        },
+        {
+          "kind": "title",
+          "code": "0x10005",
+          "title": "BGM 0x05"
+        },
+        {
+          "kind": "range",
+          "min": "0x06",
+          "max": "0x06",
+          "title_format": "SE 0x%02x",
+          "extcode": "1"
+        },
+        {
+          "kind": "range",
+          "min": "0x12",
+          "max": "0x1c",
+          "title_format": "SE 0x%02x",
+          "extcode": "1"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/momonokihouse.xml",
+      "source_order": 3334,
+      "archive": "pupsp2_msx",
+      "id": "pupsp2-msx-generic-9"
+    },
+    {
+      "title": "[MSX] ピーチアップ総集編II(笑) 3画面でDON III -夢色コイン-(PSG)",
+      "driver": {
+        "name": "msx",
+        "type": "generic",
+        "alias": "もものきはうす",
+        "platform": "MSX"
+      },
+      "options": [
+        {
+          "name": "mdata_addr",
+          "value": "0x1000"
+        },
+        {
+          "name": "mdata_size",
+          "value": "0x3000"
+        },
+        {
+          "name": "mfile_size",
+          "value": "0x3000"
+        },
+        {
+          "name": "init_pc",
+          "value": "0x0400"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "patch",
+          "offset": "0x0400"
+        },
+        {
+          "type": "code",
+          "path": "DRIVER5.BIN",
+          "offset": "0x1000"
+        },
+        {
+          "type": "bgm",
+          "path": "DRIVER5.BIN",
+          "offset": "0x00"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x10001",
+          "title": "BGM 0x01"
+        },
+        {
+          "kind": "title",
+          "code": "0x10002",
+          "title": "BGM 0x02"
+        },
+        {
+          "kind": "title",
+          "code": "0x10003",
+          "title": "BGM 0x03"
+        },
+        {
+          "kind": "title",
+          "code": "0x10004",
+          "title": "BGM 0x04"
+        },
+        {
+          "kind": "title",
+          "code": "0x10005",
+          "title": "BGM 0x05"
+        },
+        {
+          "kind": "range",
+          "min": "0x06",
+          "max": "0x06",
+          "title_format": "SE 0x%02x",
+          "extcode": "1"
+        },
+        {
+          "kind": "range",
+          "min": "0x12",
+          "max": "0x1c",
+          "title_format": "SE 0x%02x",
+          "extcode": "1"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/momonokihouse.xml",
+      "source_order": 3335,
+      "archive": "pupsp2_msx",
+      "id": "pupsp2-msx-generic-10"
+    },
+    {
+      "title": "[MSX] ピーチアップ総集編II(笑) MAIL BOX(OPLL)",
+      "driver": {
+        "name": "msx",
+        "type": "generic",
+        "alias": "もものきはうす",
+        "platform": "MSX"
+      },
+      "options": [
+        {
+          "name": "mdata_addr",
+          "value": "0x1000"
+        },
+        {
+          "name": "mdata_size",
+          "value": "0x3000"
+        },
+        {
+          "name": "mfile_size",
+          "value": "0x3000"
+        },
+        {
+          "name": "use_opll",
+          "value": "0x01"
+        },
+        {
+          "name": "init_pc",
+          "value": "0x0400"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "patch",
+          "offset": "0x0400"
+        },
+        {
+          "type": "code",
+          "path": "DRIVER6.BIN",
+          "offset": "0x1000"
+        },
+        {
+          "type": "bgm",
+          "path": "DRIVER6.BIN",
+          "offset": "0x00"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x10001",
+          "title": "BGM 0x01"
+        },
+        {
+          "kind": "title",
+          "code": "0x10002",
+          "title": "BGM 0x02"
+        },
+        {
+          "kind": "range",
+          "min": "0x03",
+          "max": "0x03",
+          "title_format": "SE 0x%02x",
+          "extcode": "1"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/momonokihouse.xml",
+      "source_order": 3336,
+      "archive": "pupsp2_msx",
+      "id": "pupsp2-msx-generic-11"
+    },
+    {
+      "title": "[MSX] ピーチアップ総集編II(笑) MAIL BOX(PSG)",
+      "driver": {
+        "name": "msx",
+        "type": "generic",
+        "alias": "もものきはうす",
+        "platform": "MSX"
+      },
+      "options": [
+        {
+          "name": "mdata_addr",
+          "value": "0x1000"
+        },
+        {
+          "name": "mdata_size",
+          "value": "0x3000"
+        },
+        {
+          "name": "mfile_size",
+          "value": "0x3000"
+        },
+        {
+          "name": "init_pc",
+          "value": "0x0400"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "patch",
+          "offset": "0x0400"
+        },
+        {
+          "type": "code",
+          "path": "DRIVER6.BIN",
+          "offset": "0x1000"
+        },
+        {
+          "type": "bgm",
+          "path": "DRIVER6.BIN",
+          "offset": "0x00"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x10001",
+          "title": "BGM 0x01"
+        },
+        {
+          "kind": "title",
+          "code": "0x10002",
+          "title": "BGM 0x02"
+        },
+        {
+          "kind": "range",
+          "min": "0x03",
+          "max": "0x03",
+          "title_format": "SE 0x%02x",
+          "extcode": "1"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/momonokihouse.xml",
+      "source_order": 3337,
+      "archive": "pupsp2_msx",
+      "id": "pupsp2-msx-generic-12"
+    },
+    {
+      "title": "[MSX] ピーチアップ総集編 PEACH CLUB II GIRLS SAVER(OPLL)",
+      "driver": {
+        "name": "msx",
+        "type": "generic",
+        "alias": "もものきはうす",
+        "platform": "MSX"
+      },
+      "options": [
+        {
+          "name": "mdata_addr",
+          "value": "0x1000"
+        },
+        {
+          "name": "mdata_size",
+          "value": "0x4000"
+        },
+        {
+          "name": "mfile_size",
+          "value": "0x4000"
+        },
+        {
+          "name": "use_opll",
+          "value": "0x01"
+        },
+        {
+          "name": "init_pc",
+          "value": "0x0400"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "patch",
+          "offset": "0x0400"
+        },
+        {
+          "type": "code",
+          "path": "DRIVER0.BIN",
+          "offset": "0x1000"
+        },
+        {
+          "type": "bgm",
+          "path": "DRIVER0.BIN",
+          "offset": "0x00"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x10001",
+          "title": "Opening 1"
+        },
+        {
+          "kind": "title",
+          "code": "0x1000d",
+          "title": "Opening 2"
+        },
+        {
+          "kind": "title",
+          "code": "0x10003",
+          "title": "Battle 1"
+        },
+        {
+          "kind": "title",
+          "code": "0x10104",
+          "title": "Battle 2"
+        },
+        {
+          "kind": "title",
+          "code": "0x10105",
+          "title": "Battle 3"
+        },
+        {
+          "kind": "title",
+          "code": "0x10106",
+          "title": "Battle 4"
+        },
+        {
+          "kind": "title",
+          "code": "0x10107",
+          "title": "Game Over 1"
+        },
+        {
+          "kind": "title",
+          "code": "0x10102",
+          "title": "Game Over 2"
+        },
+        {
+          "kind": "title",
+          "code": "0x1000a",
+          "title": "Ending 1"
+        },
+        {
+          "kind": "title",
+          "code": "0x10008",
+          "title": "Ending 2"
+        },
+        {
+          "kind": "title",
+          "code": "0x10109",
+          "title": "えっち BGM"
+        },
+        {
+          "kind": "title",
+          "code": "0x1010b",
+          "title": "ファンファーレ 1"
+        },
+        {
+          "kind": "title",
+          "code": "0x1010c",
+          "title": "ファンファーレ 2"
+        },
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "クリック 1"
+        },
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "クリック 2"
+        },
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "正解"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "不正解"
+        },
+        {
+          "kind": "title",
+          "code": "0x14",
+          "title": "Count"
+        },
+        {
+          "kind": "title",
+          "code": "0x16",
+          "title": "シャッター"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/momonokihouse.xml",
+      "source_order": 3338,
+      "archive": "pupsp1_msx",
+      "id": "pupsp1-msx-generic"
+    },
+    {
+      "title": "[MSX] ピーチアップ総集編 PEACH CLUB II GIRLS SAVER(PSG)",
+      "driver": {
+        "name": "msx",
+        "type": "generic",
+        "alias": "もものきはうす",
+        "platform": "MSX"
+      },
+      "options": [
+        {
+          "name": "mdata_addr",
+          "value": "0x1000"
+        },
+        {
+          "name": "mdata_size",
+          "value": "0x4000"
+        },
+        {
+          "name": "mfile_size",
+          "value": "0x4000"
+        },
+        {
+          "name": "init_pc",
+          "value": "0x0400"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "patch",
+          "offset": "0x0400"
+        },
+        {
+          "type": "code",
+          "path": "DRIVER0.BIN",
+          "offset": "0x1000"
+        },
+        {
+          "type": "bgm",
+          "path": "DRIVER0.BIN",
+          "offset": "0x00"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x10001",
+          "title": "Opening 1"
+        },
+        {
+          "kind": "title",
+          "code": "0x1000d",
+          "title": "Opening 2"
+        },
+        {
+          "kind": "title",
+          "code": "0x10003",
+          "title": "Battle 1"
+        },
+        {
+          "kind": "title",
+          "code": "0x10104",
+          "title": "Battle 2"
+        },
+        {
+          "kind": "title",
+          "code": "0x10105",
+          "title": "Battle 3"
+        },
+        {
+          "kind": "title",
+          "code": "0x10106",
+          "title": "Battle 4"
+        },
+        {
+          "kind": "title",
+          "code": "0x10107",
+          "title": "Game Over 1"
+        },
+        {
+          "kind": "title",
+          "code": "0x10102",
+          "title": "Game Over 2"
+        },
+        {
+          "kind": "title",
+          "code": "0x1000a",
+          "title": "Ending 1"
+        },
+        {
+          "kind": "title",
+          "code": "0x10008",
+          "title": "Ending 2"
+        },
+        {
+          "kind": "title",
+          "code": "0x10109",
+          "title": "えっち BGM"
+        },
+        {
+          "kind": "title",
+          "code": "0x1010b",
+          "title": "ファンファーレ 1"
+        },
+        {
+          "kind": "title",
+          "code": "0x1010c",
+          "title": "ファンファーレ 2"
+        },
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "クリック 1"
+        },
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "クリック 2"
+        },
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "正解"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "不正解"
+        },
+        {
+          "kind": "title",
+          "code": "0x14",
+          "title": "Count"
+        },
+        {
+          "kind": "title",
+          "code": "0x16",
+          "title": "シャッター"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/momonokihouse.xml",
+      "source_order": 3339,
+      "archive": "pupsp1_msx",
+      "id": "pupsp1-msx-generic-2"
+    },
+    {
+      "title": "[MSX] ピーチアップ総集編 スーパーピーチスロット(OPLL)",
+      "driver": {
+        "name": "msx",
+        "type": "generic",
+        "alias": "もものきはうす",
+        "platform": "MSX"
+      },
+      "options": [
+        {
+          "name": "mdata_addr",
+          "value": "0x1000"
+        },
+        {
+          "name": "mdata_size",
+          "value": "0x3000"
+        },
+        {
+          "name": "mfile_size",
+          "value": "0x3000"
+        },
+        {
+          "name": "use_opll",
+          "value": "0x01"
+        },
+        {
+          "name": "init_pc",
+          "value": "0x0400"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "patch2",
+          "offset": "0x0400"
+        },
+        {
+          "type": "code",
+          "path": "DRIVER1.BIN",
+          "offset": "0x1000"
+        },
+        {
+          "type": "bgm",
+          "path": "DRIVER1.BIN",
+          "offset": "0x00"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x10001",
+          "title": "TITLE"
+        },
+        {
+          "kind": "title",
+          "code": "0x10002",
+          "title": "MAIN BGM"
+        },
+        {
+          "kind": "title",
+          "code": "0x10004",
+          "title": "GAME OVER"
+        },
+        {
+          "kind": "title",
+          "code": "0x10003",
+          "title": "BGM 0x03"
+        },
+        {
+          "kind": "title",
+          "code": "0x10005",
+          "title": "BGM 0x05"
+        },
+        {
+          "kind": "title",
+          "code": "0x10006",
+          "title": "BGM 0x06"
+        },
+        {
+          "kind": "range",
+          "min": "0x10",
+          "max": "0x1b",
+          "title_format": "SE 0x%02x",
+          "extcode": "1"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/momonokihouse.xml",
+      "source_order": 3340,
+      "archive": "pupsp1_msx",
+      "id": "pupsp1-msx-generic-3"
+    },
+    {
+      "title": "[MSX] ピーチアップ総集編 スーパーピーチスロット(PSG)",
+      "driver": {
+        "name": "msx",
+        "type": "generic",
+        "alias": "もものきはうす",
+        "platform": "MSX"
+      },
+      "options": [
+        {
+          "name": "mdata_addr",
+          "value": "0x1000"
+        },
+        {
+          "name": "mdata_size",
+          "value": "0x3000"
+        },
+        {
+          "name": "mfile_size",
+          "value": "0x3000"
+        },
+        {
+          "name": "init_pc",
+          "value": "0x0400"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "patch2",
+          "offset": "0x0400"
+        },
+        {
+          "type": "code",
+          "path": "DRIVER1.BIN",
+          "offset": "0x1000"
+        },
+        {
+          "type": "bgm",
+          "path": "DRIVER1.BIN",
+          "offset": "0x00"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x10001",
+          "title": "TITLE"
+        },
+        {
+          "kind": "title",
+          "code": "0x10002",
+          "title": "MAIN BGM"
+        },
+        {
+          "kind": "title",
+          "code": "0x10004",
+          "title": "GAME OVER"
+        },
+        {
+          "kind": "title",
+          "code": "0x10003",
+          "title": "BGM 0x03"
+        },
+        {
+          "kind": "title",
+          "code": "0x10005",
+          "title": "BGM 0x05"
+        },
+        {
+          "kind": "title",
+          "code": "0x10006",
+          "title": "BGM 0x06"
+        },
+        {
+          "kind": "range",
+          "min": "0x10",
+          "max": "0x1b",
+          "title_format": "SE 0x%02x",
+          "extcode": "1"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/momonokihouse.xml",
+      "source_order": 3341,
+      "archive": "pupsp1_msx",
+      "id": "pupsp1-msx-generic-4"
+    },
+    {
+      "title": "[MSX] ピーチアップ総集編 シーソーでぺろんちょ スペシャル(OPLL)",
+      "driver": {
+        "name": "msx",
+        "type": "generic",
+        "alias": "もものきはうす",
+        "platform": "MSX"
+      },
+      "options": [
+        {
+          "name": "mdata_addr",
+          "value": "0x1000"
+        },
+        {
+          "name": "mdata_size",
+          "value": "0x3000"
+        },
+        {
+          "name": "mfile_size",
+          "value": "0x3000"
+        },
+        {
+          "name": "use_opll",
+          "value": "0x01"
+        },
+        {
+          "name": "init_pc",
+          "value": "0x0400"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "patch",
+          "offset": "0x0400"
+        },
+        {
+          "type": "code",
+          "path": "DRIVER2.BIN",
+          "offset": "0x1000"
+        },
+        {
+          "type": "bgm",
+          "path": "DRIVER2.BIN",
+          "offset": "0x00"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x10001",
+          "title": "TITLE"
+        },
+        {
+          "kind": "title",
+          "code": "0x10002",
+          "title": "BGM"
+        },
+        {
+          "kind": "title",
+          "code": "0x10006",
+          "title": "GAME OVER"
+        },
+        {
+          "kind": "title",
+          "code": "0x10004",
+          "title": "VISUAL"
+        },
+        {
+          "kind": "title",
+          "code": "0x10003",
+          "title": "BGM 0x03"
+        },
+        {
+          "kind": "title",
+          "code": "0x10005",
+          "title": "BGM 0x05"
+        },
+        {
+          "kind": "title",
+          "code": "0x10007",
+          "title": "BGM 0x07"
+        },
+        {
+          "kind": "range",
+          "min": "0x20",
+          "max": "0x26",
+          "title_format": "SE 0x%02x",
+          "extcode": "1"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/momonokihouse.xml",
+      "source_order": 3342,
+      "archive": "pupsp1_msx",
+      "id": "pupsp1-msx-generic-5"
+    },
+    {
+      "title": "[MSX] ピーチアップ総集編 シーソーでぺろんちょ スペシャル(PSG)",
+      "driver": {
+        "name": "msx",
+        "type": "generic",
+        "alias": "もものきはうす",
+        "platform": "MSX"
+      },
+      "options": [
+        {
+          "name": "mdata_addr",
+          "value": "0x1000"
+        },
+        {
+          "name": "mdata_size",
+          "value": "0x3000"
+        },
+        {
+          "name": "mfile_size",
+          "value": "0x3000"
+        },
+        {
+          "name": "init_pc",
+          "value": "0x0400"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "patch",
+          "offset": "0x0400"
+        },
+        {
+          "type": "code",
+          "path": "DRIVER2.BIN",
+          "offset": "0x1000"
+        },
+        {
+          "type": "bgm",
+          "path": "DRIVER2.BIN",
+          "offset": "0x00"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x10001",
+          "title": "TITLE"
+        },
+        {
+          "kind": "title",
+          "code": "0x10002",
+          "title": "BGM"
+        },
+        {
+          "kind": "title",
+          "code": "0x10006",
+          "title": "GAME OVER"
+        },
+        {
+          "kind": "title",
+          "code": "0x10004",
+          "title": "VISUAL"
+        },
+        {
+          "kind": "title",
+          "code": "0x10003",
+          "title": "BGM 0x03"
+        },
+        {
+          "kind": "title",
+          "code": "0x10005",
+          "title": "BGM 0x05"
+        },
+        {
+          "kind": "title",
+          "code": "0x10007",
+          "title": "BGM 0x07"
+        },
+        {
+          "kind": "range",
+          "min": "0x20",
+          "max": "0x26",
+          "title_format": "SE 0x%02x",
+          "extcode": "1"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/momonokihouse.xml",
+      "source_order": 3343,
+      "archive": "pupsp1_msx",
+      "id": "pupsp1-msx-generic-6"
+    },
+    {
+      "title": "[MSX] ピーチアップ総集編 グリエルの聖杯 - EXCELLENT -(OPLL)",
+      "driver": {
+        "name": "msx",
+        "type": "generic",
+        "alias": "もものきはうす",
+        "platform": "MSX"
+      },
+      "options": [
+        {
+          "name": "mdata_addr",
+          "value": "0x1000"
+        },
+        {
+          "name": "mdata_size",
+          "value": "0x3000"
+        },
+        {
+          "name": "mfile_size",
+          "value": "0x3000"
+        },
+        {
+          "name": "use_opll",
+          "value": "0x01"
+        },
+        {
+          "name": "init_pc",
+          "value": "0x0400"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "patch3",
+          "offset": "0x0400"
+        },
+        {
+          "type": "code",
+          "path": "DRIVER3.BIN",
+          "offset": "0x1000"
+        },
+        {
+          "type": "bgm",
+          "path": "DRIVER3.BIN",
+          "offset": "0x00"
+        },
+        {
+          "type": "bgm",
+          "path": "DRIVER4.BIN",
+          "offset": "0x01"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x10001",
+          "title": "TITLE"
+        },
+        {
+          "kind": "title",
+          "code": "0x1000a",
+          "title": "STAGE SELECT"
+        },
+        {
+          "kind": "title",
+          "code": "0x10002",
+          "title": "DEMO"
+        },
+        {
+          "kind": "title",
+          "code": "0x10101",
+          "title": "ROUND 01-06"
+        },
+        {
+          "kind": "title",
+          "code": "0x10106",
+          "title": "ROUND 07-12"
+        },
+        {
+          "kind": "title",
+          "code": "0x10102",
+          "title": "ROUND 13-18"
+        },
+        {
+          "kind": "title",
+          "code": "0x10105",
+          "title": "ROUND 19-24"
+        },
+        {
+          "kind": "title",
+          "code": "0x10109",
+          "title": "ROUND CLEAR"
+        },
+        {
+          "kind": "title",
+          "code": "0x1000b",
+          "title": "BGM 0x00b"
+        },
+        {
+          "kind": "title",
+          "code": "0x1000d",
+          "title": "BGM 0x00d"
+        },
+        {
+          "kind": "title",
+          "code": "0x10107",
+          "title": "BGM 0x107"
+        },
+        {
+          "kind": "title",
+          "code": "0x10108",
+          "title": "BGM 0x108"
+        },
+        {
+          "kind": "title",
+          "code": "0x1010a",
+          "title": "BGM 0x10a"
+        },
+        {
+          "kind": "range",
+          "min": "0x20",
+          "max": "0x27",
+          "title_format": "SE 0x%02x",
+          "extcode": "1"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/momonokihouse.xml",
+      "source_order": 3344,
+      "archive": "pupsp1_msx",
+      "id": "pupsp1-msx-generic-7"
+    },
+    {
+      "title": "[MSX] ピーチアップ総集編 グリエルの聖杯 - EXCELLENT -(PSG)",
+      "driver": {
+        "name": "msx",
+        "type": "generic",
+        "alias": "もものきはうす",
+        "platform": "MSX"
+      },
+      "options": [
+        {
+          "name": "mdata_addr",
+          "value": "0x1000"
+        },
+        {
+          "name": "mdata_size",
+          "value": "0x3000"
+        },
+        {
+          "name": "mfile_size",
+          "value": "0x3000"
+        },
+        {
+          "name": "init_pc",
+          "value": "0x0400"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "patch3",
+          "offset": "0x0400"
+        },
+        {
+          "type": "code",
+          "path": "DRIVER3.BIN",
+          "offset": "0x1000"
+        },
+        {
+          "type": "bgm",
+          "path": "DRIVER3.BIN",
+          "offset": "0x00"
+        },
+        {
+          "type": "bgm",
+          "path": "DRIVER4.BIN",
+          "offset": "0x01"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x10001",
+          "title": "TITLE"
+        },
+        {
+          "kind": "title",
+          "code": "0x1000a",
+          "title": "STAGE SELECT"
+        },
+        {
+          "kind": "title",
+          "code": "0x10002",
+          "title": "DEMO"
+        },
+        {
+          "kind": "title",
+          "code": "0x10101",
+          "title": "ROUND 01-06"
+        },
+        {
+          "kind": "title",
+          "code": "0x10106",
+          "title": "ROUND 07-12"
+        },
+        {
+          "kind": "title",
+          "code": "0x10102",
+          "title": "ROUND 13-18"
+        },
+        {
+          "kind": "title",
+          "code": "0x10105",
+          "title": "ROUND 19-24"
+        },
+        {
+          "kind": "title",
+          "code": "0x10109",
+          "title": "ROUND CLEAR"
+        },
+        {
+          "kind": "title",
+          "code": "0x1000b",
+          "title": "BGM 0x00b"
+        },
+        {
+          "kind": "title",
+          "code": "0x1000d",
+          "title": "BGM 0x00d"
+        },
+        {
+          "kind": "title",
+          "code": "0x10107",
+          "title": "BGM 0x107"
+        },
+        {
+          "kind": "title",
+          "code": "0x10108",
+          "title": "BGM 0x108"
+        },
+        {
+          "kind": "title",
+          "code": "0x1010a",
+          "title": "BGM 0x10a"
+        },
+        {
+          "kind": "range",
+          "min": "0x20",
+          "max": "0x27",
+          "title_format": "SE 0x%02x",
+          "extcode": "1"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/momonokihouse.xml",
+      "source_order": 3345,
+      "archive": "pupsp1_msx",
+      "id": "pupsp1-msx-generic-8"
+    },
+    {
+      "title": "[MSX] ピーチアップ総集編 帰ってきた3画面でドン! 立直!リーチ!りぃち!(OPLL)",
+      "driver": {
+        "name": "msx",
+        "type": "generic",
+        "alias": "もものきはうす",
+        "platform": "MSX"
+      },
+      "options": [
+        {
+          "name": "mdata_addr",
+          "value": "0x1000"
+        },
+        {
+          "name": "mdata_size",
+          "value": "0x3000"
+        },
+        {
+          "name": "mfile_size",
+          "value": "0x3000"
+        },
+        {
+          "name": "use_opll",
+          "value": "0x01"
+        },
+        {
+          "name": "init_pc",
+          "value": "0x0400"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "patch2",
+          "offset": "0x0400"
+        },
+        {
+          "type": "code",
+          "path": "DRIVER5.BIN",
+          "offset": "0x1000"
+        },
+        {
+          "type": "bgm",
+          "path": "DRIVER5.BIN",
+          "offset": "0x00"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x10001",
+          "title": "TITLE"
+        },
+        {
+          "kind": "title",
+          "code": "0x10003",
+          "title": "BGM"
+        },
+        {
+          "kind": "title",
+          "code": "0x10004",
+          "title": "DEMO"
+        },
+        {
+          "kind": "title",
+          "code": "0x10102",
+          "title": "GAME OVER"
+        },
+        {
+          "kind": "range",
+          "min": "0x10",
+          "max": "0x13",
+          "title_format": "SE 0x%02x",
+          "extcode": "1"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/momonokihouse.xml",
+      "source_order": 3346,
+      "archive": "pupsp1_msx",
+      "id": "pupsp1-msx-generic-9"
+    },
+    {
+      "title": "[MSX] ピーチアップ総集編 帰ってきた3画面でドン! 立直!リーチ!りぃち!(PSG)",
+      "driver": {
+        "name": "msx",
+        "type": "generic",
+        "alias": "もものきはうす",
+        "platform": "MSX"
+      },
+      "options": [
+        {
+          "name": "mdata_addr",
+          "value": "0x1000"
+        },
+        {
+          "name": "mdata_size",
+          "value": "0x3000"
+        },
+        {
+          "name": "mfile_size",
+          "value": "0x3000"
+        },
+        {
+          "name": "init_pc",
+          "value": "0x0400"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "patch2",
+          "offset": "0x0400"
+        },
+        {
+          "type": "code",
+          "path": "DRIVER5.BIN",
+          "offset": "0x1000"
+        },
+        {
+          "type": "bgm",
+          "path": "DRIVER5.BIN",
+          "offset": "0x00"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x10001",
+          "title": "TITLE"
+        },
+        {
+          "kind": "title",
+          "code": "0x10003",
+          "title": "BGM"
+        },
+        {
+          "kind": "title",
+          "code": "0x10004",
+          "title": "DEMO"
+        },
+        {
+          "kind": "title",
+          "code": "0x10102",
+          "title": "GAME OVER"
+        },
+        {
+          "kind": "range",
+          "min": "0x10",
+          "max": "0x13",
+          "title_format": "SE 0x%02x",
+          "extcode": "1"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/momonokihouse.xml",
+      "source_order": 3347,
+      "archive": "pupsp1_msx",
+      "id": "pupsp1-msx-generic-10"
+    },
+    {
+      "title": "[MSX] ピーチアップ総集編 ハイパーブロック くずしちゃえぬがしちゃえ!(OPLL)",
+      "driver": {
+        "name": "msx",
+        "type": "generic",
+        "alias": "もものきはうす",
+        "platform": "MSX"
+      },
+      "options": [
+        {
+          "name": "mdata_addr",
+          "value": "0x1000"
+        },
+        {
+          "name": "mdata_size",
+          "value": "0x2400"
+        },
+        {
+          "name": "mfile_size",
+          "value": "0x2400"
+        },
+        {
+          "name": "use_opll",
+          "value": "0x01"
+        },
+        {
+          "name": "init_pc",
+          "value": "0x0400"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "patch2",
+          "offset": "0x0400"
+        },
+        {
+          "type": "code",
+          "path": "DRIVER6.BIN",
+          "offset": "0x1000"
+        },
+        {
+          "type": "bgm",
+          "path": "DRIVER6.BIN",
+          "offset": "0x00"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x10001",
+          "title": "TITLE"
+        },
+        {
+          "kind": "title",
+          "code": "0x10002",
+          "title": "MAIN BGM"
+        },
+        {
+          "kind": "title",
+          "code": "0x10004",
+          "title": "STAGE CLEAR"
+        },
+        {
+          "kind": "title",
+          "code": "0x10005",
+          "title": "GAME OVER"
+        },
+        {
+          "kind": "title",
+          "code": "0x10003",
+          "title": "BGM 0x03"
+        },
+        {
+          "kind": "range",
+          "min": "0x10",
+          "max": "0x15",
+          "title_format": "SE 0x%02x",
+          "extcode": "1"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/momonokihouse.xml",
+      "source_order": 3348,
+      "archive": "pupsp1_msx",
+      "id": "pupsp1-msx-generic-11"
+    },
+    {
+      "title": "[MSX] ピーチアップ総集編 ハイパーブロック くずしちゃえぬがしちゃえ!(PSG)",
+      "driver": {
+        "name": "msx",
+        "type": "generic",
+        "alias": "もものきはうす",
+        "platform": "MSX"
+      },
+      "options": [
+        {
+          "name": "mdata_addr",
+          "value": "0x1000"
+        },
+        {
+          "name": "mdata_size",
+          "value": "0x2400"
+        },
+        {
+          "name": "mfile_size",
+          "value": "0x2400"
+        },
+        {
+          "name": "init_pc",
+          "value": "0x0400"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "patch2",
+          "offset": "0x0400"
+        },
+        {
+          "type": "code",
+          "path": "DRIVER6.BIN",
+          "offset": "0x1000"
+        },
+        {
+          "type": "bgm",
+          "path": "DRIVER6.BIN",
+          "offset": "0x00"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x10001",
+          "title": "TITLE"
+        },
+        {
+          "kind": "title",
+          "code": "0x10002",
+          "title": "MAIN BGM"
+        },
+        {
+          "kind": "title",
+          "code": "0x10004",
+          "title": "STAGE CLEAR"
+        },
+        {
+          "kind": "title",
+          "code": "0x10005",
+          "title": "GAME OVER"
+        },
+        {
+          "kind": "title",
+          "code": "0x10003",
+          "title": "BGM 0x03"
+        },
+        {
+          "kind": "range",
+          "min": "0x10",
+          "max": "0x15",
+          "title_format": "SE 0x%02x",
+          "extcode": "1"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/momonokihouse.xml",
+      "source_order": 3349,
+      "archive": "pupsp1_msx",
+      "id": "pupsp1-msx-generic-12"
+    },
+    {
+      "title": "[MSX] ピーチアップ8 MIRROR MAZE(OPLL)",
+      "driver": {
+        "name": "msx",
+        "type": "generic",
+        "alias": "もものきはうす",
+        "platform": "MSX"
+      },
+      "options": [
+        {
+          "name": "use_opll",
+          "value": "0x01"
+        },
+        {
+          "name": "init_pc",
+          "value": "0x0400"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "patch",
+          "offset": "0x0400"
+        },
+        {
+          "type": "code",
+          "path": "DRIVER0.BIN",
+          "offset": "0x1000"
+        },
+        {
+          "type": "code",
+          "path": "DRIVER1.BIN",
+          "offset": "0x4000"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x0201",
+          "title": "ピーチアップ タイトル"
+        },
+        {
+          "kind": "title",
+          "code": "0x0101",
+          "title": "Title"
+        },
+        {
+          "kind": "title",
+          "code": "0x0102",
+          "title": "Stage Select"
+        },
+        {
+          "kind": "title",
+          "code": "0x0104",
+          "title": "Main BGM"
+        },
+        {
+          "kind": "title",
+          "code": "0x0107",
+          "title": "Stage Clear"
+        },
+        {
+          "kind": "title",
+          "code": "0x0103",
+          "title": "Visual"
+        },
+        {
+          "kind": "title",
+          "code": "0x0105",
+          "title": "Game Over"
+        },
+        {
+          "kind": "title",
+          "code": "0x0106",
+          "title": "BGM 0x06"
+        },
+        {
+          "kind": "title",
+          "code": "0x0202",
+          "title": "ピーチアップ メニュー(未使用)"
+        },
+        {
+          "kind": "range",
+          "min": "0x21",
+          "max": "0x2e",
+          "title_format": "SE 0x%02x",
+          "extcode": "1"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/momonokihouse.xml",
+      "source_order": 3350,
+      "archive": "pup8_msx",
+      "id": "pup8-msx-generic"
+    },
+    {
+      "title": "[MSX] ピーチアップ8 MIRROR MAZE(PSG)",
+      "driver": {
+        "name": "msx",
+        "type": "generic",
+        "alias": "もものきはうす",
+        "platform": "MSX"
+      },
+      "options": [
+        {
+          "name": "init_pc",
+          "value": "0x0400"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "patch",
+          "offset": "0x0400"
+        },
+        {
+          "type": "code",
+          "path": "DRIVER0.BIN",
+          "offset": "0x1000"
+        },
+        {
+          "type": "code",
+          "path": "DRIVER1.BIN",
+          "offset": "0x4000"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x0201",
+          "title": "ピーチアップ タイトル"
+        },
+        {
+          "kind": "title",
+          "code": "0x0101",
+          "title": "Title"
+        },
+        {
+          "kind": "title",
+          "code": "0x0102",
+          "title": "Stage Select"
+        },
+        {
+          "kind": "title",
+          "code": "0x0104",
+          "title": "Main BGM"
+        },
+        {
+          "kind": "title",
+          "code": "0x0107",
+          "title": "Stage Clear"
+        },
+        {
+          "kind": "title",
+          "code": "0x0103",
+          "title": "Visual"
+        },
+        {
+          "kind": "title",
+          "code": "0x0105",
+          "title": "Game Over"
+        },
+        {
+          "kind": "title",
+          "code": "0x0106",
+          "title": "BGM 0x06"
+        },
+        {
+          "kind": "title",
+          "code": "0x0202",
+          "title": "ピーチアップ メニュー(未使用)"
+        },
+        {
+          "kind": "range",
+          "min": "0x21",
+          "max": "0x2e",
+          "title_format": "SE 0x%02x",
+          "extcode": "1"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/momonokihouse.xml",
+      "source_order": 3351,
+      "archive": "pup8_msx",
+      "id": "pup8-msx-generic-2"
+    },
+    {
+      "title": "[MSX] ピーチアップ8 アウター番外編II R-POLICE採用試験(OPLL)",
+      "driver": {
+        "name": "msx",
+        "type": "generic",
+        "alias": "もものきはうす",
+        "platform": "MSX"
+      },
+      "options": [
+        {
+          "name": "mdata_addr",
+          "value": "0x1000"
+        },
+        {
+          "name": "mdata_size",
+          "value": "0x3000"
+        },
+        {
+          "name": "mfile_size",
+          "value": "0x3000"
+        },
+        {
+          "name": "use_opll",
+          "value": "0x01"
+        },
+        {
+          "name": "init_pc",
+          "value": "0x0400"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "patch2",
+          "offset": "0x0400"
+        },
+        {
+          "type": "code",
+          "path": "DRIVER3.BIN",
+          "offset": "0x1000"
+        },
+        {
+          "type": "bgm",
+          "path": "DRIVER2.BIN",
+          "offset": "0x00"
+        },
+        {
+          "type": "bgm",
+          "path": "DRIVER3.BIN",
+          "offset": "0x01"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x0201",
+          "title": "ピーチアップ タイトル"
+        },
+        {
+          "kind": "title",
+          "code": "0x0202",
+          "title": "ピーチアップ メニュー"
+        },
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "Today, So Fine"
+        },
+        {
+          "kind": "title",
+          "code": "0x02",
+          "title": "あいしゅうのあうたぁ2"
+        },
+        {
+          "kind": "title",
+          "code": "0x03",
+          "title": "Who's Next?"
+        },
+        {
+          "kind": "title",
+          "code": "0x04",
+          "title": "Let's Go Home"
+        },
+        {
+          "kind": "title",
+          "code": "0x05",
+          "title": "Don't Cry..."
+        },
+        {
+          "kind": "title",
+          "code": "0x06",
+          "title": "Too Bad, Ha!"
+        },
+        {
+          "kind": "title",
+          "code": "0x07",
+          "title": "Dit It!"
+        },
+        {
+          "kind": "title",
+          "code": "0x08",
+          "title": "でへへへのへへ"
+        },
+        {
+          "kind": "title",
+          "code": "0x20",
+          "title": "シャッフル"
+        },
+        {
+          "kind": "title",
+          "code": "0x21",
+          "title": "クリック"
+        },
+        {
+          "kind": "title",
+          "code": "0x22",
+          "title": "配る"
+        },
+        {
+          "kind": "title",
+          "code": "0x23",
+          "title": "ダメージ"
+        },
+        {
+          "kind": "title",
+          "code": "0x24",
+          "title": "必殺技"
+        },
+        {
+          "kind": "title",
+          "code": "0x25",
+          "title": "防御"
+        },
+        {
+          "kind": "title",
+          "code": "0x26",
+          "title": "Hクリック"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/momonokihouse.xml",
+      "source_order": 3352,
+      "archive": "pup8_msx",
+      "id": "pup8-msx-generic-3"
+    },
+    {
+      "title": "[MSX] ピーチアップ8 アウター番外編II R-POLICE採用試験(PSG)",
+      "driver": {
+        "name": "msx",
+        "type": "generic",
+        "alias": "もものきはうす",
+        "platform": "MSX"
+      },
+      "options": [
+        {
+          "name": "mdata_addr",
+          "value": "0x1000"
+        },
+        {
+          "name": "mdata_size",
+          "value": "0x3000"
+        },
+        {
+          "name": "mfile_size",
+          "value": "0x3000"
+        },
+        {
+          "name": "init_pc",
+          "value": "0x0400"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "patch2",
+          "offset": "0x0400"
+        },
+        {
+          "type": "code",
+          "path": "DRIVER3.BIN",
+          "offset": "0x1000"
+        },
+        {
+          "type": "bgm",
+          "path": "DRIVER2.BIN",
+          "offset": "0x00"
+        },
+        {
+          "type": "bgm",
+          "path": "DRIVER3.BIN",
+          "offset": "0x01"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x0201",
+          "title": "ピーチアップ タイトル"
+        },
+        {
+          "kind": "title",
+          "code": "0x0202",
+          "title": "ピーチアップ メニュー"
+        },
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "Today, So Fine"
+        },
+        {
+          "kind": "title",
+          "code": "0x02",
+          "title": "あいしゅうのあうたぁ2"
+        },
+        {
+          "kind": "title",
+          "code": "0x03",
+          "title": "Who's Next?"
+        },
+        {
+          "kind": "title",
+          "code": "0x04",
+          "title": "Let's Go Home"
+        },
+        {
+          "kind": "title",
+          "code": "0x05",
+          "title": "Don't Cry..."
+        },
+        {
+          "kind": "title",
+          "code": "0x06",
+          "title": "Too Bad, Ha!"
+        },
+        {
+          "kind": "title",
+          "code": "0x07",
+          "title": "Dit It!"
+        },
+        {
+          "kind": "title",
+          "code": "0x08",
+          "title": "でへへへのへへ"
+        },
+        {
+          "kind": "title",
+          "code": "0x20",
+          "title": "シャッフル"
+        },
+        {
+          "kind": "title",
+          "code": "0x21",
+          "title": "クリック"
+        },
+        {
+          "kind": "title",
+          "code": "0x22",
+          "title": "配る"
+        },
+        {
+          "kind": "title",
+          "code": "0x23",
+          "title": "ダメージ"
+        },
+        {
+          "kind": "title",
+          "code": "0x24",
+          "title": "必殺技"
+        },
+        {
+          "kind": "title",
+          "code": "0x25",
+          "title": "防御"
+        },
+        {
+          "kind": "title",
+          "code": "0x26",
+          "title": "Hクリック"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/momonokihouse.xml",
+      "source_order": 3353,
+      "archive": "pup8_msx",
+      "id": "pup8-msx-generic-4"
+    }
+  ]
+}

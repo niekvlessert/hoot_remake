@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="hoot.xsl"?>
+<!DOCTYPE gamelist [
+	<!ELEMENT gamelist (game|bind|childlists)*>
+	<!ATTLIST gamelist date CDATA #IMPLIED>
+	<!ELEMENT childlists (list)*>
+	<!ELEMENT list (#PCDATA)>
+	<!ELEMENT bind (exts,driver,options?)>
+	<!ELEMENT exts (ext)*>
+	<!ELEMENT ext (#PCDATA)>
+	<!ELEMENT game (name,driver,driveralias?,options?,romlist?,titlelist?)>
+	<!ELEMENT name (#PCDATA)>
+	<!ELEMENT driver (#PCDATA)>
+	<!ATTLIST driver type CDATA #IMPLIED>
+	<!ELEMENT driveralias (#PCDATA)>
+	<!ATTLIST driveralias type CDATA #IMPLIED>
+	<!ELEMENT options (option)*>
+	<!ELEMENT option EMPTY>
+	<!ATTLIST option name CDATA #REQUIRED
+					 value CDATA #REQUIRED>
+	<!ELEMENT romlist (rom)*>
+	<!ATTLIST romlist archive CDATA #IMPLIED>
+	<!ELEMENT rom (#PCDATA)>
+	<!ATTLIST rom type CDATA #REQUIRED
+				  offset CDATA #IMPLIED
+				  crc32 CDATA #IMPLIED>
+	<!ELEMENT titlelist (title|range)*>
+	<!ELEMENT title (#PCDATA)>
+	<!ATTLIST title code CDATA #REQUIRED
+					type CDATA #IMPLIED>
+	<!ELEMENT range (#PCDATA)>
+	<!ATTLIST range min CDATA #REQUIRED
+					max CDATA #REQUIRED
+					extcode CDATA #IMPLIED
+					start CDATA #IMPLIED>
+
+]>
+<gamelist date="2005/09/25">
+	<!-- //PSK -->
+	<game>
+		<name>[PC-8801] ザ・病院</name>
+		<driver type="opn">pc88</driver>
+		<driveralias type="NEC PC-8801">PSK</driveralias>
+		<options>
+			<option name="mdata_addr" value="0x6000"/>
+			<option name="mdata_size" value="0x1000"/>
+			<option name="mfile_size" value="0x1000"/>
+		</options>
+		<romlist archive="byouin_88">
+			<rom type="code" offset="0x0000">PATCH</rom>
+			<rom type="code" offset="0x9c00">MUSIC.SYS</rom>
+			<rom type="bgm" offset="0x00">DEMO.MDT</rom>
+			<rom type="bgm" offset="0x01">ENDING.MDT</rom>
+			<rom type="bgm" offset="0x02">MDTA00.MDT</rom>
+			<rom type="bgm" offset="0x03">MDTA01.MDT</rom>
+			<rom type="bgm" offset="0x04">MDTA02.MDT</rom>
+			<rom type="bgm" offset="0x05">MDTA03.MDT</rom>
+			<rom type="bgm" offset="0x06">MDTA04.MDT</rom>
+			<rom type="bgm" offset="0x07">MDTA05.MDT</rom>
+			<rom type="bgm" offset="0x08">MDTA06.MDT</rom>
+		</romlist>
+		<titlelist>
+			<title code="0x00">DEMO.MDT   : Lost My Love</title>
+			<title code="0x02">MDTA00.MDT : Intermission</title>
+			<title code="0x03">MDTA01.MDT : A faint hope for her</title>
+			<title code="0x04">MDTA02.MDT : General anesthesia surgery</title>
+			<title code="0x05">MDTA03.MDT : Star Struck</title>
+			<title code="0x06">MDTA04.MDT : EVE -the previous night-</title>
+			<title code="0x07">MDTA05.MDT : Chase and Escape!</title>
+			<title code="0x08">MDTA06.MDT : Reality beyond imagination</title>
+			<title code="0x01">ENDING.MDT : Syntax Error</title>
+		</titlelist>
+	</game>
+	<game>
+		<name>[PC-8801] SKAPON探検隊</name>
+		<driver type="opn">pc88</driver>
+		<driveralias type="NEC PC-8801">PSK</driveralias>
+		<options>
+			<option name="mdata_addr" value="0x5000"/>
+			<option name="mdata_size" value="0x2000"/>
+			<option name="mfile_size" value="0x2000"/>
+		</options>
+		<romlist archive="skapon_88">
+			<rom type="code" offset="0x0000">PATCH</rom>
+			<rom type="code" offset="0xd600">1/SSIDB.SYS</rom>
+			<rom type="bgm" offset="0x00">1/SKAPON.MDT</rom>
+			<rom type="bgm" offset="0x01">1/SKPN-2.MDT</rom>
+			<rom type="bgm" offset="0x02">1/SKPN-3.MDT</rom>
+			<rom type="bgm" offset="0x03">1/SKPN-4.MDT</rom>
+			<rom type="bgm" offset="0x04">1/SKPN-5.MDT</rom>
+			<rom type="bgm" offset="0x05">1/SKPN-6.MDT</rom>
+			<rom type="bgm" offset="0x06">1/SKPN-7.MDT</rom>
+			<rom type="bgm" offset="0x07">1/SKPN-8.MDT</rom>
+			<rom type="bgm" offset="0x08">1/SKPN-9.MDT</rom>
+			<rom type="bgm" offset="0x09">1/SKPN10.MDT</rom>
+			<rom type="bgm" offset="0x0a">1/SKPN11.MDT</rom>
+			<rom type="bgm" offset="0x0b">1/SKPN12.MDT</rom>
+			<rom type="bgm" offset="0x0c">1/SKPN13.MDT</rom>
+			<rom type="bgm" offset="0x0d">1/SKPN14.MDT</rom>
+			<rom type="bgm" offset="0x0e">1/SKPN15.MDT</rom>
+			<rom type="bgm" offset="0x0f">2/SKPN16.MDT</rom>
+			<rom type="bgm" offset="0x10">3/SKAPON.MDT</rom>
+		</romlist>
+		<titlelist>
+			<title code="0x00">SKAPON.MDT : Syntax Error II</title>
+		<!--	<title code="0x10">SKAPON.MDT : Syntax Error II</title> -->
+			<title code="0x01">SKPN-2.MDT : Fried Rice on the Hot Tin Roof</title>
+			<title code="0x02">SKPN-3.MDT : Shooting the Star</title>
+			<title code="0x03">SKPN-4.MDT : 大いなる無責任と小心な偏執狂</title>
+			<title code="0x04">SKPN-5.MDT : Palade of ...</title>
+			<title code="0x05">SKPN-6.MDT : S L U S H</title>
+			<title code="0x06">SKPN-7.MDT : One Base Samba</title>
+			<title code="0x07">SKPN-8.MDT : Skapon March</title>
+			<title code="0x08">SKPN-9.MDT : A Peaceful Moment</title>
+			<title code="0x09">SKPN10.MDT : Space Strayer -迷い星</title>
+			<title code="0x0a">SKPN11.MDT : EMERGENCY,PANIC!</title>
+			<title code="0x0b">SKPN12.MDT : Salade Davocat a la Sause Piqudute</title>
+			<title code="0x0c">SKPN13.MDT : 外宇宙探査船STRANGE LOVE号</title>
+			<title code="0x0d">SKPN14.MDT : The Cerlian Blue</title>
+			<title code="0x0e">SKPN15.MDT : Rhythm Machine</title>
+			<title code="0x0f">SKPN16.MDT : Death of Flare</title>
+		</titlelist>
+	</game>
+</gamelist>

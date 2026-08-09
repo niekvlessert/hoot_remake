@@ -250,6 +250,20 @@ void LibvgmYm2608::set_ssg_inverted(bool inverted)
     ssg_polarity_ = inverted ? -1.0 : 1.0;
 }
 
+void LibvgmYm2608::allocate_adpcm_memory(uint32_t bytes)
+{
+    if (chip_ != nullptr) {
+        ym2608_alloc_pcmromb(chip_, bytes);
+    }
+}
+
+void LibvgmYm2608::write_adpcm_memory(uint32_t offset, const uint8_t* data, uint32_t bytes)
+{
+    if (chip_ != nullptr && data != nullptr && bytes != 0) {
+        ym2608_write_pcmromb(chip_, offset, bytes, data);
+    }
+}
+
 void LibvgmYm2608::set_ssg_clock(void* param, uint32_t clock)
 {
     auto* self = static_cast<LibvgmYm2608*>(param);

@@ -1,0 +1,593 @@
+{
+  "format": "hoot-catalog-shard",
+  "version": 1,
+  "source_file": "xml/juice.xml",
+  "date": "2005/09/25",
+  "comments": [
+    " //JUICE "
+  ],
+  "games": [
+    {
+      "title": "[PC-9801] SECRET EYES",
+      "driver": {
+        "name": "pc98dos",
+        "type": "opn",
+        "alias": "JUICE",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "clockmul",
+          "value": "8"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "mlalf_98.com",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "SPA_MAIN.EXE",
+          "offset": "-1"
+        },
+        {
+          "type": "conin",
+          "path": "SPA_MAIN.EXE",
+          "offset": "5"
+        },
+        {
+          "type": "file",
+          "path": "SE-SI5.MLO",
+          "offset": "0x11"
+        },
+        {
+          "type": "file",
+          "path": "SI_SE2.MLO",
+          "offset": "0x12"
+        },
+        {
+          "type": "file",
+          "path": "SIA5_EN2.MLO",
+          "offset": "0x13"
+        },
+        {
+          "type": "file",
+          "path": "SIA6_MI2.MLO",
+          "offset": "0x14"
+        },
+        {
+          "type": "file",
+          "path": "SPA_BEAM.MLO",
+          "offset": "0x15"
+        },
+        {
+          "type": "file",
+          "path": "SPA_BOM1.MLO",
+          "offset": "0x16"
+        },
+        {
+          "type": "file",
+          "path": "SPA_CLA0.MLO",
+          "offset": "0x17"
+        },
+        {
+          "type": "file",
+          "path": "SPA_DOMM.MLO",
+          "offset": "0x18"
+        },
+        {
+          "type": "file",
+          "path": "SPA_DOWN.MLO",
+          "offset": "0x19"
+        },
+        {
+          "type": "file",
+          "path": "SPA_ENDI.MLO",
+          "offset": "0x1a"
+        },
+        {
+          "type": "file",
+          "path": "SPA_GAOO.MLO",
+          "offset": "0x1b"
+        },
+        {
+          "type": "file",
+          "path": "SPA_M1.MLO",
+          "offset": "0x1c"
+        },
+        {
+          "type": "file",
+          "path": "SPA_M2.MLO",
+          "offset": "0x1d"
+        },
+        {
+          "type": "file",
+          "path": "SPA_M3.MLO",
+          "offset": "0x1e"
+        },
+        {
+          "type": "file",
+          "path": "SPA_M4.MLO",
+          "offset": "0x1f"
+        },
+        {
+          "type": "file",
+          "path": "SPA_M5.MLO",
+          "offset": "0x20"
+        },
+        {
+          "type": "file",
+          "path": "SPA_M6.MLO",
+          "offset": "0x21"
+        },
+        {
+          "type": "file",
+          "path": "SPA_M7.MLO",
+          "offset": "0x22"
+        },
+        {
+          "type": "file",
+          "path": "SPA_M8.MLO",
+          "offset": "0x23"
+        },
+        {
+          "type": "file",
+          "path": "SPA_M9.MLO",
+          "offset": "0x24"
+        },
+        {
+          "type": "file",
+          "path": "SPA_MA.MLO",
+          "offset": "0x25"
+        },
+        {
+          "type": "file",
+          "path": "SPA_MB.MLO",
+          "offset": "0x26"
+        },
+        {
+          "type": "file",
+          "path": "SPA_MC.MLO",
+          "offset": "0x27"
+        },
+        {
+          "type": "file",
+          "path": "SPA_MD.MLO",
+          "offset": "0x28"
+        },
+        {
+          "type": "file",
+          "path": "SPA_ME.MLO",
+          "offset": "0x29"
+        },
+        {
+          "type": "file",
+          "path": "SPA_SE1.MLO",
+          "offset": "0x2a"
+        },
+        {
+          "type": "file",
+          "path": "SPA_SE2.MLO",
+          "offset": "0x2b"
+        },
+        {
+          "type": "file",
+          "path": "SPA_SE3.MLO",
+          "offset": "0x2c"
+        },
+        {
+          "type": "file",
+          "path": "SPA_SE9.MLO",
+          "offset": "0x2d"
+        },
+        {
+          "type": "shell",
+          "path": "mlalf_98",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x1c",
+          "title": "SPA_M1.MLO   : オープニング"
+        },
+        {
+          "kind": "title",
+          "code": "0x1d",
+          "title": "SPA_M2.MLO   : タイトル"
+        },
+        {
+          "kind": "title",
+          "code": "0x1e",
+          "title": "SPA_M3.MLO   : Order説明"
+        },
+        {
+          "kind": "title",
+          "code": "0x1f",
+          "title": "SPA_M4.MLO   : メインBGM"
+        },
+        {
+          "kind": "title",
+          "code": "0x20",
+          "title": "SPA_M5.MLO   : Peep Point Chance"
+        },
+        {
+          "kind": "title",
+          "code": "0x21",
+          "title": "SPA_M6.MLO   : Peep Point Chance 失敗"
+        },
+        {
+          "kind": "title",
+          "code": "0x22",
+          "title": "SPA_M7.MLO   : Peep Point Chance Perfect"
+        },
+        {
+          "kind": "title",
+          "code": "0x23",
+          "title": "SPA_M8.MLO   : クイズ"
+        },
+        {
+          "kind": "title",
+          "code": "0x24",
+          "title": "SPA_M9.MLO   : CG表示"
+        },
+        {
+          "kind": "title",
+          "code": "0x25",
+          "title": "SPA_MA.MLO   :"
+        },
+        {
+          "kind": "title",
+          "code": "0x26",
+          "title": "SPA_MB.MLO   :"
+        },
+        {
+          "kind": "title",
+          "code": "0x27",
+          "title": "SPA_MC.MLO   : カメラ撮影"
+        },
+        {
+          "kind": "title",
+          "code": "0x28",
+          "title": "SPA_MD.MLO   : Order終了"
+        },
+        {
+          "kind": "title",
+          "code": "0x29",
+          "title": "SPA_ME.MLO   : Game Over"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "SIA5_EN2.MLO"
+        },
+        {
+          "kind": "title",
+          "code": "0x14",
+          "title": "SIA6_MI2.MLO"
+        },
+        {
+          "kind": "title",
+          "code": "0x17",
+          "title": "SPA_CLA0.MLO"
+        },
+        {
+          "kind": "title",
+          "code": "0x1a",
+          "title": "SPA_ENDI.MLO"
+        },
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "SE-SI5.MLO"
+        },
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "SI_SE2.MLO"
+        },
+        {
+          "kind": "title",
+          "code": "0x15",
+          "title": "SPA_BEAM.MLO"
+        },
+        {
+          "kind": "title",
+          "code": "0x16",
+          "title": "SPA_BOM1.MLO"
+        },
+        {
+          "kind": "title",
+          "code": "0x18",
+          "title": "SPA_DOMM.MLO"
+        },
+        {
+          "kind": "title",
+          "code": "0x19",
+          "title": "SPA_DOWN.MLO"
+        },
+        {
+          "kind": "title",
+          "code": "0x1b",
+          "title": "SPA_GAOO.MLO"
+        },
+        {
+          "kind": "title",
+          "code": "0x2a",
+          "title": "SPA_SE1.MLO"
+        },
+        {
+          "kind": "title",
+          "code": "0x2b",
+          "title": "SPA_SE2.MLO"
+        },
+        {
+          "kind": "title",
+          "code": "0x2c",
+          "title": "SPA_SE3.MLO"
+        },
+        {
+          "kind": "title",
+          "code": "0x2d",
+          "title": "SPA_SE9.MLO"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/juice.xml",
+      "source_order": 2721,
+      "archive": "secrete_98",
+      "id": "secrete-98-opn"
+    },
+    {
+      "title": "[PC-9801] GIRL",
+      "driver": {
+        "name": "pc98dos",
+        "type": "opn",
+        "alias": "JUICE",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "clockmul",
+          "value": "8"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "girl_98.com",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "GIRL.EXE",
+          "offset": "-1"
+        },
+        {
+          "type": "conin",
+          "path": "GIRL.EXE",
+          "offset": "0x05"
+        },
+        {
+          "type": "file",
+          "path": "ENDING.PML",
+          "offset": "0x10"
+        },
+        {
+          "type": "file",
+          "path": "LOGO.PML",
+          "offset": "0x11"
+        },
+        {
+          "type": "file",
+          "path": "PINPON.PML",
+          "offset": "0x12"
+        },
+        {
+          "type": "file",
+          "path": "SELECT.PML",
+          "offset": "0x13"
+        },
+        {
+          "type": "file",
+          "path": "STORY1.PML",
+          "offset": "0x14"
+        },
+        {
+          "type": "file",
+          "path": "STORY2.PML",
+          "offset": "0x15"
+        },
+        {
+          "type": "file",
+          "path": "STORY3.PML",
+          "offset": "0x16"
+        },
+        {
+          "type": "file",
+          "path": "TITLE.PML",
+          "offset": "0x17"
+        },
+        {
+          "type": "shell",
+          "path": "girl_98",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "LOGO.PML   :"
+        },
+        {
+          "kind": "title",
+          "code": "0x17",
+          "title": "TITLE.PML  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "SELECT.PML :"
+        },
+        {
+          "kind": "title",
+          "code": "0x14",
+          "title": "STORY1.PML :"
+        },
+        {
+          "kind": "title",
+          "code": "0x15",
+          "title": "STORY2.PML :"
+        },
+        {
+          "kind": "title",
+          "code": "0x16",
+          "title": "STORY3.PML :"
+        },
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "ENDING.PML :"
+        },
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "PINPON.PML :"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/juice.xml",
+      "source_order": 2722,
+      "archive": "girl_98",
+      "id": "girl-98-opn"
+    },
+    {
+      "title": "[PC-9801] GIRL2",
+      "driver": {
+        "name": "pc98dos",
+        "type": "opn",
+        "alias": "JUICE",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "clockmul",
+          "value": "8"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "girl2_98.com",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "GIRL2.EXE",
+          "offset": "-1"
+        },
+        {
+          "type": "conin",
+          "path": "GIRL2.EXE",
+          "offset": "0x05"
+        },
+        {
+          "type": "file",
+          "path": "ENDING.PML",
+          "offset": "0x10"
+        },
+        {
+          "type": "file",
+          "path": "LOGO.PML",
+          "offset": "0x11"
+        },
+        {
+          "type": "file",
+          "path": "PROFEEL.PML",
+          "offset": "0x12"
+        },
+        {
+          "type": "file",
+          "path": "SELECT.PML",
+          "offset": "0x13"
+        },
+        {
+          "type": "file",
+          "path": "STORY1.PML",
+          "offset": "0x14"
+        },
+        {
+          "type": "file",
+          "path": "STORY2.PML",
+          "offset": "0x15"
+        },
+        {
+          "type": "file",
+          "path": "STORY3.PML",
+          "offset": "0x16"
+        },
+        {
+          "type": "file",
+          "path": "TITLE.PML",
+          "offset": "0x17"
+        },
+        {
+          "type": "shell",
+          "path": "girl2_98",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "LOGO.PML    :"
+        },
+        {
+          "kind": "title",
+          "code": "0x17",
+          "title": "TITLE.PML   :"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "SELECT.PML  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "PROFEEL.PML :"
+        },
+        {
+          "kind": "title",
+          "code": "0x14",
+          "title": "STORY1.PML  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x15",
+          "title": "STORY2.PML  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x16",
+          "title": "STORY3.PML  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "ENDING.PML  :"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/juice.xml",
+      "source_order": 2723,
+      "archive": "girl2_98",
+      "id": "girl2-98-opn"
+    }
+  ]
+}

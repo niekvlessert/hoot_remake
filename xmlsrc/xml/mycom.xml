@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="hoot.xsl"?>
+<!DOCTYPE gamelist [
+	<!ELEMENT gamelist (game|bind|childlists)*>
+	<!ATTLIST gamelist date CDATA #IMPLIED>
+	<!ELEMENT childlists (list)*>
+	<!ELEMENT list (#PCDATA)>
+	<!ELEMENT bind (exts,driver,options?)>
+	<!ELEMENT exts (ext)*>
+	<!ELEMENT ext (#PCDATA)>
+	<!ELEMENT game (name,driver,driveralias?,options?,romlist?,titlelist?)>
+	<!ELEMENT name (#PCDATA)>
+	<!ELEMENT driver (#PCDATA)>
+	<!ATTLIST driver type CDATA #IMPLIED>
+	<!ELEMENT driveralias (#PCDATA)>
+	<!ATTLIST driveralias type CDATA #IMPLIED>
+	<!ELEMENT options (option)*>
+	<!ELEMENT option EMPTY>
+	<!ATTLIST option name CDATA #REQUIRED
+					 value CDATA #REQUIRED>
+	<!ELEMENT romlist (rom)*>
+	<!ATTLIST romlist archive CDATA #IMPLIED>
+	<!ELEMENT rom (#PCDATA)>
+	<!ATTLIST rom type CDATA #REQUIRED
+				  offset CDATA #IMPLIED
+				  crc32 CDATA #IMPLIED>
+	<!ELEMENT titlelist (title|range)*>
+	<!ELEMENT title (#PCDATA)>
+	<!ATTLIST title code CDATA #REQUIRED
+					type CDATA #IMPLIED>
+	<!ELEMENT range (#PCDATA)>
+	<!ATTLIST range min CDATA #REQUIRED
+					max CDATA #REQUIRED
+					extcode CDATA #IMPLIED
+					start CDATA #IMPLIED>
+
+]>
+<gamelist date="2015/02/20">
+	<!-- //MYCOM/毎日コミュニケーションズ -->
+	<game>
+		<name>[PC-9801] Super野球道リミテッド</name>
+		<driver type="opn">pc98dos</driver>
+		<driveralias type="NEC PC-9801">毎日コミュニケーションズ</driveralias>
+		<options>
+			<option name="clockmul" value="8"/>
+		</options>
+		<romlist archive="syakyulm_98">
+			<rom type="file" offset="-1">SSHD.EXE</rom>
+			<rom type="file" offset="-1">SS_98.COM</rom>
+			<rom type="file" offset="-1">CAMP.MSD</rom>
+			<rom type="file" offset="-1">DORAFUTO.MSD</rom>
+			<rom type="file" offset="-1">FILE1.MSD</rom>
+			<rom type="file" offset="-1">FILE10.MSD</rom>
+			<rom type="file" offset="-1">FILE11.MSD</rom>
+			<rom type="file" offset="-1">FILE12.MSD</rom>
+			<rom type="file" offset="-1">FILE15.MSD</rom>
+			<rom type="file" offset="-1">FILE16.MSD</rom>
+			<rom type="file" offset="-1">FILE17.MSD</rom>
+			<rom type="file" offset="-1">FILE18.MSD</rom>
+			<rom type="file" offset="-1">FILE2.MSD</rom>
+			<rom type="file" offset="-1">FILE3.MSD</rom>
+			<rom type="file" offset="-1">FILE4.MSD</rom>
+			<rom type="file" offset="-1">FILE5.MSD</rom>
+			<rom type="file" offset="-1">FILE6.MSD</rom>
+			<rom type="file" offset="-1">FILE7.MSD</rom>
+			<rom type="file" offset="-1">FILE8.MSD</rom>
+			<rom type="file" offset="-1">FILE9.MSD</rom>
+			<rom type="file" offset="-1">HOME.MSD</rom>
+			<rom type="file" offset="-1">HYO.MSD</rom>
+			<rom type="file" offset="-1">IDOU.MSD</rom>
+			<rom type="file" offset="-1">IVENT.MSD</rom>
+			<rom type="file" offset="-1">MAKE.MSD</rom>
+			<rom type="file" offset="-1">MEATING.MSD</rom>
+			<rom type="file" offset="-1">NEWS3.MSD</rom>
+			<rom type="file" offset="-1">NIHON11.MSD</rom>
+			<rom type="file" offset="-1">PENA.MSD</rom>
+			<rom type="file" offset="-1">PENANT.MSD</rom>
+			<rom type="file" offset="-1">RG3.MSD</rom>
+			<rom type="file" offset="-1">SOFF.MSD</rom>
+			<rom type="conin" offset="0x10">CAMP.MSD</rom>
+			<rom type="conin" offset="0x11">DORAFUTO.MSD</rom>
+			<rom type="conin" offset="0x12">FILE1.MSD</rom>
+			<rom type="conin" offset="0x13">FILE10.MSD</rom>
+			<rom type="conin" offset="0x14">FILE11.MSD</rom>
+			<rom type="conin" offset="0x15">FILE12.MSD</rom>
+			<rom type="conin" offset="0x16">FILE15.MSD</rom>
+			<rom type="conin" offset="0x17">FILE16.MSD</rom>
+			<rom type="conin" offset="0x18">FILE17.MSD</rom>
+			<rom type="conin" offset="0x19">FILE18.MSD</rom>
+			<rom type="conin" offset="0x1a">FILE2.MSD</rom>
+			<rom type="conin" offset="0x1b">FILE3.MSD</rom>
+			<rom type="conin" offset="0x1c">FILE4.MSD</rom>
+			<rom type="conin" offset="0x1d">FILE5.MSD</rom>
+			<rom type="conin" offset="0x1e">FILE6.MSD</rom>
+			<rom type="conin" offset="0x1f">FILE7.MSD</rom>
+			<rom type="conin" offset="0x20">FILE8.MSD</rom>
+			<rom type="conin" offset="0x21">FILE9.MSD</rom>
+			<rom type="conin" offset="0x22">HOME.MSD</rom>
+			<rom type="conin" offset="0x23">HYO.MSD</rom>
+			<rom type="conin" offset="0x24">IDOU.MSD</rom>
+			<rom type="conin" offset="0x25">IVENT.MSD</rom>
+			<rom type="conin" offset="0x26">MAKE.MSD</rom>
+			<rom type="conin" offset="0x27">MEATING.MSD</rom>
+			<rom type="conin" offset="0x28">NEWS3.MSD</rom>
+			<rom type="conin" offset="0x29">NIHON11.MSD</rom>
+			<rom type="conin" offset="0x2a">PENA.MSD</rom>
+			<rom type="conin" offset="0x2b">PENANT.MSD</rom>
+			<rom type="conin" offset="0x2c">RG3.MSD</rom>
+			<rom type="conin" offset="0x2d">SOFF.MSD</rom>
+			<rom type="shell" offset="0">sshd</rom>
+			<rom type="shell" offset="0">ss_98</rom>
+		</romlist>
+		<titlelist>
+			<title code="0x10">CAMP.MSD     : </title>
+			<title code="0x11">DORAFUTO.MSD : </title>
+			<title code="0x12">FILE1.MSD    : </title>
+			<title code="0x1a">FILE2.MSD    : </title>
+			<title code="0x1b">FILE3.MSD    : </title>
+			<title code="0x1c">FILE4.MSD    : </title>
+			<title code="0x1d">FILE5.MSD    : </title>
+			<title code="0x1e">FILE6.MSD    : </title>
+			<title code="0x1f">FILE7.MSD    : </title>
+			<title code="0x20">FILE8.MSD    : </title>
+			<title code="0x21">FILE9.MSD    : </title>
+			<title code="0x13">FILE10.MSD   : </title>
+			<title code="0x14">FILE11.MSD   : </title>
+			<title code="0x15">FILE12.MSD   : </title>
+			<title code="0x16">FILE15.MSD   : </title>
+			<title code="0x17">FILE16.MSD   : </title>
+			<title code="0x18">FILE17.MSD   : </title>
+			<title code="0x19">FILE18.MSD   : </title>
+			<title code="0x22">HOME.MSD     : </title>
+			<title code="0x23">HYO.MSD      : </title>
+			<title code="0x24">IDOU.MSD     : </title>
+			<title code="0x25">IVENT.MSD    : </title>
+			<title code="0x26">MAKE.MSD     : </title>
+			<title code="0x27">MEATING.MSD  : </title>
+			<title code="0x28">NEWS3.MSD    : </title>
+			<!-- MEATING.MSDとバイナリ一致
+			<title code="0x29">NIHON11.MSD  : </title>
+			  -->
+			<title code="0x2a">PENA.MSD     : </title>
+			<!-- PENA.MSDとバイナリ一致
+			<title code="0x2b">PENANT.MSD   : </title>
+			  -->
+			<title code="0x2c">RG3.MSD      : </title>
+			<title code="0x2d">SOFF.MSD     : </title>
+		</titlelist>
+	</game>
+	<game>
+		<name>[PC-9801] 究極のパズル 極 大道棋</name>
+		<driver type="opn">pc98dos</driver>
+		<driveralias type="NEC PC-9801">毎日コミュニケーションズ</driveralias>
+		<options>
+			<option name="clockmul" value="8"/>
+		</options>
+		<romlist archive="daidou_98">
+			<rom type="file" offset="-1">EMD.COM</rom>
+			<rom type="file" offset="-1">EMD_98.COM</rom>
+			<rom type="file" offset="-1">DAIDOUGI.EMI</rom>
+			<rom type="file" offset="-1">END.EMI</rom>
+			<rom type="file" offset="-1">HASAN.EMI</rom>
+			<rom type="file" offset="-1">KACHI.EMI</rom>
+			<rom type="file" offset="-1">KOMA.EMI</rom>
+			<rom type="file" offset="-1">MAKE.EMI</rom>
+			<rom type="conin" offset="0x10">DAIDOUGI.EMI</rom>
+			<rom type="conin" offset="0x11">END.EMI</rom>
+			<rom type="conin" offset="0x12">HASAN.EMI</rom>
+			<rom type="conin" offset="0x13">KACHI.EMI</rom>
+			<rom type="conin" offset="0x14">KOMA.EMI</rom>
+			<rom type="conin" offset="0x15">MAKE.EMI</rom>
+			<rom type="shell" offset="0">EMD -V</rom>
+			<rom type="shell" offset="0">EMD_98</rom>
+		</romlist>
+		<titlelist>
+			<title code="0x10">DAIDOUGI.EMI</title>
+			<title code="0x11">END.EMI</title>
+			<title code="0x12">HASAN.EMI</title>
+			<title code="0x13">KACHI.EMI</title>
+			<title code="0x14">KOMA.EMI</title>
+			<title code="0x15">MAKE.EMI</title>
+		</titlelist>
+	</game>
+</gamelist>

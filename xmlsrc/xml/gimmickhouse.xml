@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="hoot.xsl"?>
+<!DOCTYPE gamelist [
+	<!ELEMENT gamelist (game|bind|childlists)*>
+	<!ATTLIST gamelist date CDATA #IMPLIED>
+	<!ELEMENT childlists (list)*>
+	<!ELEMENT list (#PCDATA)>
+	<!ELEMENT bind (exts,driver,options?)>
+	<!ELEMENT exts (ext)*>
+	<!ELEMENT ext (#PCDATA)>
+	<!ELEMENT game (name,driver,driveralias?,options?,romlist?,titlelist?)>
+	<!ELEMENT name (#PCDATA)>
+	<!ELEMENT driver (#PCDATA)>
+	<!ATTLIST driver type CDATA #IMPLIED>
+	<!ELEMENT driveralias (#PCDATA)>
+	<!ATTLIST driveralias type CDATA #IMPLIED>
+	<!ELEMENT options (option)*>
+	<!ELEMENT option EMPTY>
+	<!ATTLIST option name CDATA #REQUIRED
+					 value CDATA #REQUIRED>
+	<!ELEMENT romlist (rom)*>
+	<!ATTLIST romlist archive CDATA #IMPLIED>
+	<!ELEMENT rom (#PCDATA)>
+	<!ATTLIST rom type CDATA #REQUIRED
+				  offset CDATA #IMPLIED
+				  crc32 CDATA #IMPLIED>
+	<!ELEMENT titlelist (title|range)*>
+	<!ELEMENT title (#PCDATA)>
+	<!ATTLIST title code CDATA #REQUIRED
+					type CDATA #IMPLIED>
+	<!ELEMENT range (#PCDATA)>
+	<!ATTLIST range min CDATA #REQUIRED
+					max CDATA #REQUIRED
+					extcode CDATA #IMPLIED
+					start CDATA #IMPLIED>
+
+]>
+<gamelist date="2005/09/25">
+	<!-- //Gimmick house -->
+	<game>
+		<name>[PC-9801] DRAGON MASTER Silk ～龍召還娘～ EPISODE II</name>
+		<driver type="opn">pc98dos</driver>
+		<driveralias type="NEC PC-9801">Gimmick house</driveralias>
+		<options>
+			<option name="clockmul" value="8"/>
+		</options>
+		<romlist archive="silk_98">
+			<rom type="file" offset="-1">TRPSCR98.COM</rom>
+			<rom type="file" offset="-1">TRPSCHRN.COM</rom>
+			<rom type="file" offset="11">SLKJKL02.MDT</rom>
+			<rom type="file" offset="12">SLKJKL03.MDT</rom>
+			<rom type="file" offset="13">SLKJKL05.MDT</rom>
+			<rom type="file" offset="14">SLKJKL07.MDT</rom>
+			<rom type="file" offset="15">SLKJKL09.MDT</rom>
+			<rom type="file" offset="16">SLKJKL11.MDT</rom>
+			<rom type="file" offset="17">SLKJKL14.MDT</rom>
+			<rom type="file" offset="18">SLKJKL17.MDT</rom>
+			<rom type="file" offset="19">SLKJKL20.MDT</rom>
+			<rom type="file" offset="20">SLKJKL22.MDT</rom>
+			<rom type="file" offset="21">SLKJKL23.MDT</rom>
+			<rom type="file" offset="22">SLKJKL24.MDT</rom>
+			<rom type="file" offset="23">SLKJKL25.MDT</rom>
+			<rom type="file" offset="24">SLKJKL26.MDT</rom>
+			<rom type="file" offset="25">SLKJKL27.MDT</rom>
+			<rom type="file" offset="26">SLKJKL28.MDT</rom>
+			<rom type="file" offset="27">SLKJKL29.MDT</rom>
+			<rom type="file" offset="28">SLKJKL30.MDT</rom>
+			<rom type="file" offset="29">SLKJKL32.MDT</rom>
+			<rom type="file" offset="30">SLKJKL33.MDT</rom>
+			<rom type="file" offset="31">SLKJKL34.MDT</rom>
+			<rom type="shell" offset="0">TRPSCHRN</rom>
+			<rom type="shell" offset="0">TRPSCR98</rom>
+		</romlist>
+		<titlelist>
+			<title code="21">SLKJKL23.MDT : オープニング</title>
+			<title code="22">SLKJKL24.MDT : オープニング</title>
+			<title code="20">SLKJKL22.MDT : タイトル</title>
+			<title code="14">SLKJKL07.MDT : 宿屋</title>
+			<title code="11">SLKJKL02.MDT : 雑貨屋 / 洞窟のなんでも屋</title>
+			<title code="17">SLKJKL14.MDT : 武具屋 / 洞窟の武具屋</title>
+			<title code="19">SLKJKL20.MDT : 酒場</title>
+			<title code="13">SLKJKL05.MDT : ダンジョン1~2階</title>
+			<title code="15">SLKJKL09.MDT : 戦闘</title>
+			<title code="12">SLKJKL03.MDT : 戦闘終了</title>
+			<title code="26">SLKJKL28.MDT : 会話イベント1</title>
+			<title code="27">SLKJKL29.MDT : 会話イベント2</title>
+			<title code="16">SLKJKL11.MDT : ダンジョン 3~4階</title>
+			<title code="23">SLKJKL25.MDT : 会話イベント3</title>
+			<title code="24">SLKJKL26.MDT : 会話イベント4</title>
+			<title code="18">SLKJKL17.MDT : ダンジョン5~6階</title>
+			<title code="25">SLKJKL27.MDT : 会話イベント5</title>
+			<title code="31">SLKJKL34.MDT : 会話イベント6</title>
+			<title code="28">SLKJKL30.MDT : 魔王戦</title>
+			<title code="30">SLKJKL33.MDT : エンディング</title>
+			<title code="29">SLKJKL32.MDT : スタッフロール</title>
+		</titlelist>
+	</game>
+	<game>
+		<name>[PC-9801] DRAGON MASTER Silk II</name>
+		<driver type="opn">pc98dos</driver>
+		<driveralias type="NEC PC-9801">Gimmick house</driveralias>
+		<options>
+			<option name="clockmul" value="8"/>
+		</options>
+		<romlist archive="silk2_98">
+			<rom type="file" offset="-1">TRPSCR98.COM</rom>
+			<rom type="file" offset="-1">TRPSCHRN.COM</rom>
+			<rom type="file" offset="10">SLKMSC00.MDT</rom>
+			<rom type="file" offset="11">SLKMSC01.MDT</rom>
+			<rom type="file" offset="12">SLKMSC02.MDT</rom>
+			<rom type="file" offset="13">SLKMSC03.MDT</rom>
+			<rom type="file" offset="14">SLKMSC04.MDT</rom>
+			<rom type="file" offset="15">SLKMSC05.MDT</rom>
+			<rom type="file" offset="16">SLKMSC06.MDT</rom>
+			<rom type="file" offset="17">SLKMSC07.MDT</rom>
+			<rom type="file" offset="18">SLKMSC08.MDT</rom>
+			<rom type="file" offset="19">SLKMSC09.MDT</rom>
+			<rom type="file" offset="20">SLKMSC10.MDT</rom>
+			<rom type="file" offset="21">SLKMSC11.MDT</rom>
+			<rom type="file" offset="22">SLKMSC12.MDT</rom>
+			<rom type="file" offset="23">SLKMSC13.MDT</rom>
+			<rom type="file" offset="24">SLKMSC14.MDT</rom>
+			<rom type="file" offset="25">SLKMSC15.MDT</rom>
+			<rom type="file" offset="26">SLKMSC16.MDT</rom>
+			<rom type="file" offset="27">SLKMSC17.MDT</rom>
+			<rom type="file" offset="28">SLKMSC18.MDT</rom>
+			<rom type="file" offset="29">SLKMSC19.MDT</rom>
+			<rom type="file" offset="30">SLKMSC20.MDT</rom>
+			<rom type="file" offset="31">SLKMSC21.MDT</rom>
+			<rom type="file" offset="32">SLKMSC22.MDT</rom>
+			<rom type="file" offset="33">SLKMSC23.MDT</rom>
+			<rom type="file" offset="34">SLKMSC24.MDT</rom>
+			<rom type="file" offset="35">SLKMSC25.MDT</rom>
+			<rom type="file" offset="36">SLKMSC26.MDT</rom>
+			<rom type="file" offset="37">SLKMSC27.MDT</rom>
+			<rom type="file" offset="38">SLKMSC28.MDT</rom>
+			<rom type="file" offset="39">SLKMSC29.MDT</rom>
+			<rom type="file" offset="40">SLKMSC30.MDT</rom>
+			<rom type="file" offset="41">SLKMSC32.MDT</rom>
+			<rom type="file" offset="42">SLKMSC33.MDT</rom>
+			<rom type="file" offset="43">SLKMSC34.MDT</rom>
+			<rom type="shell" offset="0">TRPSCHRN</rom>
+			<rom type="shell" offset="0">TRPSCR98</rom>
+		</romlist>
+		<titlelist>
+			<title code="11">SLKMSC01.MDT : オープニング 1 / キャラクタ紹介</title>
+			<title code="12">SLKMSC02.MDT : オープニング 2 / 会話イベント16</title>
+			<title code="13">SLKMSC03.MDT : 地上</title>
+			<title code="14">SLKMSC04.MDT : 宿屋 / 道具屋 / 武具屋 / 鍛冶屋</title>
+			<title code="15">SLKMSC05.MDT : ダンジョン 1~3階</title>
+			<title code="16">SLKMSC06.MDT : ダンジョン 4~6階</title>
+			<title code="17">SLKMSC07.MDT : ダンジョン 7~8階 / 会話イベント15</title>
+			<title code="18">SLKMSC08.MDT : ダンジョン 9階</title>
+			<title code="21">SLKMSC11.MDT : ボス戦 / 強敵戦 / 会話イベント7</title>
+			<title code="20">SLKMSC10.MDT : 戦闘 奇数階 / 会話イベント6</title>
+			<title code="19">SLKMSC09.MDT : 戦闘 偶数階</title>
+			<title code="42">SLKMSC33.MDT : 戦闘終了</title>
+			<title code="23">SLKMSC13.MDT : 全滅</title>
+			<title code="24">SLKMSC14.MDT : 会話イベント1 / エンディング2</title>
+			<title code="25">SLKMSC15.MDT : 会話イベント2</title>
+			<title code="41">SLKMSC32.MDT : 会話イベント3</title>
+			<title code="27">SLKMSC17.MDT : 会話イベント4</title>
+			<title code="26">SLKMSC16.MDT : 会話イベント5</title>
+			<title code="28">SLKMSC18.MDT : 会話イベント8</title>
+			<title code="29">SLKMSC19.MDT : 会話イベント9</title>
+			<title code="33">SLKMSC23.MDT : 会話イベント10</title>
+			<title code="35">SLKMSC25.MDT : 会話イベント11</title>
+			<title code="30">SLKMSC20.MDT : 会話イベント12</title>
+			<title code="32">SLKMSC22.MDT : 会話イベント13</title>
+			<title code="31">SLKMSC21.MDT : 会話イベント14</title>
+			<title code="34">SLKMSC24.MDT : 会話イベント16</title>
+			<title code="36">SLKMSC26.MDT : 会話イベント17</title>
+			<title code="37">SLKMSC27.MDT : 会話イベント18</title>
+			<title code="22">SLKMSC12.MDT : 邪龍帝戦</title>
+			<title code="38">SLKMSC28.MDT : 会話イベント19</title>
+			<title code="40">SLKMSC30.MDT : エンディング1 / スタッフロール</title>
+			<title code="39">SLKMSC29.MDT : エピローグ</title>
+			<title code="10">SLKMSC00.MDT : SILK1 タイトル</title>
+			<title code="43">SLKMSC34.MDT : SILK1 タイトル</title>
+		</titlelist>
+	</game>
+</gamelist>

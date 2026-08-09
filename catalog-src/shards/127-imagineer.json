@@ -1,0 +1,3479 @@
+{
+  "format": "hoot-catalog-shard",
+  "version": 1,
+  "source_file": "xml/imagineer.xml",
+  "date": "2005/09/25",
+  "comments": [
+    " //Imagineer "
+  ],
+  "games": [
+    {
+      "title": "[X68000] Lemmings",
+      "driver": {
+        "name": "x68k",
+        "type": "generic",
+        "alias": "Imagineer",
+        "platform": "SHARP X68000"
+      },
+      "options": [],
+      "assets": [
+        {
+          "type": "code",
+          "path": "lem68snd.bin"
+        },
+        {
+          "type": "x",
+          "path": "lemmings.x",
+          "offset": "0x8000"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x16",
+          "title": "16 : Intro"
+        },
+        {
+          "kind": "title",
+          "code": "0x06",
+          "title": "06 : Lemming1"
+        },
+        {
+          "kind": "title",
+          "code": "0x07",
+          "title": "07 : Lemming2"
+        },
+        {
+          "kind": "title",
+          "code": "0x08",
+          "title": "08 : Lemming3"
+        },
+        {
+          "kind": "title",
+          "code": "0x0b",
+          "title": "0b : Tim1"
+        },
+        {
+          "kind": "title",
+          "code": "0x0c",
+          "title": "0c : Tim2"
+        },
+        {
+          "kind": "title",
+          "code": "0x0d",
+          "title": "0d : Tim3"
+        },
+        {
+          "kind": "title",
+          "code": "0x0e",
+          "title": "0e : Tim4"
+        },
+        {
+          "kind": "title",
+          "code": "0x0f",
+          "title": "0f : Tim5"
+        },
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "10 : Tim6     (葦笛の踊り)"
+        },
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "11 : Tim7     (トルコ行進曲)"
+        },
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "12 : Tim8     (白鳥の湖)"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "13 : Tim9     (ロンドン橋落ちた)"
+        },
+        {
+          "kind": "title",
+          "code": "0x14",
+          "title": "14 : Tim10    (All Beautiful the March of Days)"
+        },
+        {
+          "kind": "title",
+          "code": "0x15",
+          "title": "15 : Doggie   (How Much Is That Doggie In The Window)"
+        },
+        {
+          "kind": "title",
+          "code": "0x0a",
+          "title": "0a : Mountain (あの子が山にやってくる)"
+        },
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "01 : TenLem   (Ten Green Bottles/葬送行進曲/結婚行進曲)"
+        },
+        {
+          "kind": "title",
+          "code": "0x05",
+          "title": "05 : Cancan   (天国と地獄)"
+        },
+        {
+          "kind": "title",
+          "code": "0x02",
+          "title": "02 : Awesome"
+        },
+        {
+          "kind": "title",
+          "code": "0x03",
+          "title": "03 : BeastI   Shadow of the Beast"
+        },
+        {
+          "kind": "title",
+          "code": "0x04",
+          "title": "04 : BeastII  Shadow of the Beast II"
+        },
+        {
+          "kind": "title",
+          "code": "0x09",
+          "title": "09 : Menace"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/imagineer.xml",
+      "source_order": 2613,
+      "archive": "lem68snd",
+      "id": "lem68snd-generic"
+    },
+    {
+      "title": "[PC-9801] POPULOUS",
+      "driver": {
+        "name": "pc98",
+        "type": "opn",
+        "alias": "Imagineer",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "bootcs",
+          "value": "0x0060"
+        },
+        {
+          "name": "bootip",
+          "value": "0x0000"
+        },
+        {
+          "name": "funcvect",
+          "value": "0x7f"
+        },
+        {
+          "name": "dataaddr",
+          "value": "0x20000"
+        },
+        {
+          "name": "filesize",
+          "value": "0x4000"
+        },
+        {
+          "name": "datamax",
+          "value": "0x03"
+        },
+        {
+          "name": "clockmul",
+          "value": "8"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "poplus98.bin",
+          "offset": "0x00600"
+        },
+        {
+          "type": "code",
+          "path": "OPNDRV.COM",
+          "offset": "0x10100"
+        },
+        {
+          "type": "bgm",
+          "path": "TITLE.BIN",
+          "offset": "0x01"
+        },
+        {
+          "type": "bgm",
+          "path": "POPBGM.BIN",
+          "offset": "0x02"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "TITLE.BIN  : Title Theme"
+        },
+        {
+          "kind": "title",
+          "code": "0x02",
+          "title": "POPBGM.BIN : Main Theme"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/imagineer.xml",
+      "source_order": 2614,
+      "archive": "poplus98",
+      "id": "poplus98-opn"
+    },
+    {
+      "title": "[PC-9801] Melty Lancer(OPN)",
+      "driver": {
+        "name": "pc98dos",
+        "type": "opn",
+        "alias": "Imagineer",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "clockmul",
+          "value": "8"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "mdzsplay.com",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MDZ86.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MLEFFECT.EFZ",
+          "offset": "6"
+        },
+        {
+          "type": "file",
+          "path": "MLTY_01.MDZ",
+          "offset": "11"
+        },
+        {
+          "type": "file",
+          "path": "MLTY_01I.MDZ",
+          "offset": "12"
+        },
+        {
+          "type": "file",
+          "path": "MLTY_02.MDZ",
+          "offset": "13"
+        },
+        {
+          "type": "file",
+          "path": "MLTY_03.MDZ",
+          "offset": "14"
+        },
+        {
+          "type": "file",
+          "path": "MLTY_03B.MDZ",
+          "offset": "15"
+        },
+        {
+          "type": "file",
+          "path": "MLTY_04.MDZ",
+          "offset": "16"
+        },
+        {
+          "type": "file",
+          "path": "MLTY_04B.MDZ",
+          "offset": "17"
+        },
+        {
+          "type": "file",
+          "path": "MLTY_05.MDZ",
+          "offset": "18"
+        },
+        {
+          "type": "file",
+          "path": "MLTY_06.MDZ",
+          "offset": "19"
+        },
+        {
+          "type": "file",
+          "path": "MLTY_07.MDZ",
+          "offset": "20"
+        },
+        {
+          "type": "file",
+          "path": "MLTY_08.MDZ",
+          "offset": "21"
+        },
+        {
+          "type": "file",
+          "path": "MLTY_09.MDZ",
+          "offset": "22"
+        },
+        {
+          "type": "file",
+          "path": "MLTY_10.MDZ",
+          "offset": "23"
+        },
+        {
+          "type": "file",
+          "path": "MLTY_11.MDZ",
+          "offset": "24"
+        },
+        {
+          "type": "file",
+          "path": "MLTY_12.MDZ",
+          "offset": "25"
+        },
+        {
+          "type": "file",
+          "path": "MLTY_13.MDZ",
+          "offset": "26"
+        },
+        {
+          "type": "file",
+          "path": "MLTY_14.MDZ",
+          "offset": "27"
+        },
+        {
+          "type": "file",
+          "path": "MLTY_15.MDZ",
+          "offset": "28"
+        },
+        {
+          "type": "file",
+          "path": "MLTY_16.MDZ",
+          "offset": "29"
+        },
+        {
+          "type": "file",
+          "path": "MLTY_17.MDZ",
+          "offset": "30"
+        },
+        {
+          "type": "file",
+          "path": "MLTY_18.MDZ",
+          "offset": "31"
+        },
+        {
+          "type": "file",
+          "path": "MLTY_19.MDZ",
+          "offset": "32"
+        },
+        {
+          "type": "file",
+          "path": "MLTY_20.MDZ",
+          "offset": "33"
+        },
+        {
+          "type": "shell",
+          "path": "mdz86 s /#8 /e10 /t0",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "mdzsplay",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "11",
+          "title": "MLTY_01.MDZ  : メインテ－マ"
+        },
+        {
+          "kind": "title",
+          "code": "12",
+          "title": "MLTY_01I.MDZ : メインテ－マ (with Intro)"
+        },
+        {
+          "kind": "title",
+          "code": "13",
+          "title": "MLTY_02.MDZ  : 一日の始まり"
+        },
+        {
+          "kind": "title",
+          "code": "14",
+          "title": "MLTY_03.MDZ  : ファンファ－レ"
+        },
+        {
+          "kind": "title",
+          "code": "15",
+          "title": "MLTY_03B.MDZ : ファンファ－レ"
+        },
+        {
+          "kind": "title",
+          "code": "16",
+          "title": "MLTY_04.MDZ  : ボスクラスとの戦闘"
+        },
+        {
+          "kind": "title",
+          "code": "17",
+          "title": "MLTY_04B.MDZ : ボスクラスとの戦闘 (b)"
+        },
+        {
+          "kind": "title",
+          "code": "18",
+          "title": "MLTY_05.MDZ  : ノワ－ル"
+        },
+        {
+          "kind": "title",
+          "code": "19",
+          "title": "MLTY_06.MDZ  : 幹部クラスとの戦闘"
+        },
+        {
+          "kind": "title",
+          "code": "20",
+          "title": "MLTY_07.MDZ  : ヴァネッサ"
+        },
+        {
+          "kind": "title",
+          "code": "21",
+          "title": "MLTY_08.MDZ  : スペシャルウェポン"
+        },
+        {
+          "kind": "title",
+          "code": "22",
+          "title": "MLTY_09.MDZ  : 最終決戦(vsラヴェンヌ)"
+        },
+        {
+          "kind": "title",
+          "code": "23",
+          "title": "MLTY_10.MDZ  : ラヴェンヌ"
+        },
+        {
+          "kind": "title",
+          "code": "24",
+          "title": "MLTY_11.MDZ  : 一日の終り"
+        },
+        {
+          "kind": "title",
+          "code": "25",
+          "title": "MLTY_12.MDZ  : 戦闘敗北"
+        },
+        {
+          "kind": "title",
+          "code": "26",
+          "title": "MLTY_13.MDZ  : 戦闘員との戦闘"
+        },
+        {
+          "kind": "title",
+          "code": "27",
+          "title": "MLTY_14.MDZ  : ランサーズ解散"
+        },
+        {
+          "kind": "title",
+          "code": "28",
+          "title": "MLTY_15.MDZ  : スクランブル"
+        },
+        {
+          "kind": "title",
+          "code": "29",
+          "title": "MLTY_16.MDZ  : モニタ－ル－ム"
+        },
+        {
+          "kind": "title",
+          "code": "30",
+          "title": "MLTY_17.MDZ  : スキュラ"
+        },
+        {
+          "kind": "title",
+          "code": "31",
+          "title": "MLTY_18.MDZ  : 戒厳令下の捜索"
+        },
+        {
+          "kind": "title",
+          "code": "32",
+          "title": "MLTY_19.MDZ  : メンバーとの別れ"
+        },
+        {
+          "kind": "title",
+          "code": "33",
+          "title": "MLTY_20.MDZ  : エンディング(スタッフロ－ル)"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/imagineer.xml",
+      "source_order": 2615,
+      "archive": "mlancer_98",
+      "id": "mlancer-98-opn"
+    },
+    {
+      "title": "[PC-9801] Melty Lancer(86)",
+      "driver": {
+        "name": "pc98dos",
+        "type": "86",
+        "alias": "Imagineer",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "clockmul",
+          "value": "16"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "mdzsplay.com",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MDZ86.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MLEFFECT.EFZ",
+          "offset": "6"
+        },
+        {
+          "type": "file",
+          "path": "MLTY_01.MDZ",
+          "offset": "11"
+        },
+        {
+          "type": "file",
+          "path": "MLTY_01I.MDZ",
+          "offset": "12"
+        },
+        {
+          "type": "file",
+          "path": "MLTY_02.MDZ",
+          "offset": "13"
+        },
+        {
+          "type": "file",
+          "path": "MLTY_03.MDZ",
+          "offset": "14"
+        },
+        {
+          "type": "file",
+          "path": "MLTY_03B.MDZ",
+          "offset": "15"
+        },
+        {
+          "type": "file",
+          "path": "MLTY_04.MDZ",
+          "offset": "16"
+        },
+        {
+          "type": "file",
+          "path": "MLTY_04B.MDZ",
+          "offset": "17"
+        },
+        {
+          "type": "file",
+          "path": "MLTY_05.MDZ",
+          "offset": "18"
+        },
+        {
+          "type": "file",
+          "path": "MLTY_06.MDZ",
+          "offset": "19"
+        },
+        {
+          "type": "file",
+          "path": "MLTY_07.MDZ",
+          "offset": "20"
+        },
+        {
+          "type": "file",
+          "path": "MLTY_08.MDZ",
+          "offset": "21"
+        },
+        {
+          "type": "file",
+          "path": "MLTY_09.MDZ",
+          "offset": "22"
+        },
+        {
+          "type": "file",
+          "path": "MLTY_10.MDZ",
+          "offset": "23"
+        },
+        {
+          "type": "file",
+          "path": "MLTY_11.MDZ",
+          "offset": "24"
+        },
+        {
+          "type": "file",
+          "path": "MLTY_12.MDZ",
+          "offset": "25"
+        },
+        {
+          "type": "file",
+          "path": "MLTY_13.MDZ",
+          "offset": "26"
+        },
+        {
+          "type": "file",
+          "path": "MLTY_14.MDZ",
+          "offset": "27"
+        },
+        {
+          "type": "file",
+          "path": "MLTY_15.MDZ",
+          "offset": "28"
+        },
+        {
+          "type": "file",
+          "path": "MLTY_16.MDZ",
+          "offset": "29"
+        },
+        {
+          "type": "file",
+          "path": "MLTY_17.MDZ",
+          "offset": "30"
+        },
+        {
+          "type": "file",
+          "path": "MLTY_18.MDZ",
+          "offset": "31"
+        },
+        {
+          "type": "file",
+          "path": "MLTY_19.MDZ",
+          "offset": "32"
+        },
+        {
+          "type": "file",
+          "path": "MLTY_20.MDZ",
+          "offset": "33"
+        },
+        {
+          "type": "shell",
+          "path": "mdz86 s /#8 /e10 /t0",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "mdzsplay",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "11",
+          "title": "MLTY_01.MDZ  : メインテ－マ"
+        },
+        {
+          "kind": "title",
+          "code": "12",
+          "title": "MLTY_01I.MDZ : メインテ－マ (with Intro)"
+        },
+        {
+          "kind": "title",
+          "code": "13",
+          "title": "MLTY_02.MDZ  : 一日の始まり"
+        },
+        {
+          "kind": "title",
+          "code": "14",
+          "title": "MLTY_03.MDZ  : ファンファ－レ"
+        },
+        {
+          "kind": "title",
+          "code": "15",
+          "title": "MLTY_03B.MDZ : ファンファ－レ"
+        },
+        {
+          "kind": "title",
+          "code": "16",
+          "title": "MLTY_04.MDZ  : ボスクラスとの戦闘"
+        },
+        {
+          "kind": "title",
+          "code": "17",
+          "title": "MLTY_04B.MDZ : ボスクラスとの戦闘 (b)"
+        },
+        {
+          "kind": "title",
+          "code": "18",
+          "title": "MLTY_05.MDZ  : ノワ－ル"
+        },
+        {
+          "kind": "title",
+          "code": "19",
+          "title": "MLTY_06.MDZ  : 幹部クラスとの戦闘"
+        },
+        {
+          "kind": "title",
+          "code": "20",
+          "title": "MLTY_07.MDZ  : ヴァネッサ"
+        },
+        {
+          "kind": "title",
+          "code": "21",
+          "title": "MLTY_08.MDZ  : スペシャルウェポン"
+        },
+        {
+          "kind": "title",
+          "code": "22",
+          "title": "MLTY_09.MDZ  : 最終決戦(vsラヴェンヌ)"
+        },
+        {
+          "kind": "title",
+          "code": "23",
+          "title": "MLTY_10.MDZ  : ラヴェンヌ"
+        },
+        {
+          "kind": "title",
+          "code": "24",
+          "title": "MLTY_11.MDZ  : 一日の終り"
+        },
+        {
+          "kind": "title",
+          "code": "25",
+          "title": "MLTY_12.MDZ  : 戦闘敗北"
+        },
+        {
+          "kind": "title",
+          "code": "26",
+          "title": "MLTY_13.MDZ  : 戦闘員との戦闘"
+        },
+        {
+          "kind": "title",
+          "code": "27",
+          "title": "MLTY_14.MDZ  : ランサーズ解散"
+        },
+        {
+          "kind": "title",
+          "code": "28",
+          "title": "MLTY_15.MDZ  : スクランブル"
+        },
+        {
+          "kind": "title",
+          "code": "29",
+          "title": "MLTY_16.MDZ  : モニタ－ル－ム"
+        },
+        {
+          "kind": "title",
+          "code": "30",
+          "title": "MLTY_17.MDZ  : スキュラ"
+        },
+        {
+          "kind": "title",
+          "code": "31",
+          "title": "MLTY_18.MDZ  : 戒厳令下の捜索"
+        },
+        {
+          "kind": "title",
+          "code": "32",
+          "title": "MLTY_19.MDZ  : メンバーとの別れ"
+        },
+        {
+          "kind": "title",
+          "code": "33",
+          "title": "MLTY_20.MDZ  : エンディング(スタッフロ－ル)"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/imagineer.xml",
+      "source_order": 2616,
+      "archive": "mlancer_98",
+      "id": "mlancer-98-86"
+    },
+    {
+      "title": "[X68000] POPULOUS",
+      "driver": {
+        "name": "x68k",
+        "type": "generic",
+        "alias": "Imagineer",
+        "platform": "SHARP X68000"
+      },
+      "options": [],
+      "assets": [
+        {
+          "type": "code",
+          "path": "pop68snd.bin",
+          "offset": "0x00000"
+        },
+        {
+          "type": "x",
+          "path": "OPMDRV.X",
+          "offset": "0x10000"
+        },
+        {
+          "type": "code",
+          "path": "POPBGM.BIN",
+          "offset": "0x13000"
+        },
+        {
+          "type": "code",
+          "path": "TITLE.BIN",
+          "offset": "0x15000"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x02",
+          "title": "TITLE.BIN  : Title Theme"
+        },
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "POPBGM.BIN : Main Theme"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/imagineer.xml",
+      "source_order": 2617,
+      "archive": "poplus68snd",
+      "id": "poplus68snd-generic"
+    },
+    {
+      "title": "[X68000] POPULOUS II - Trials of the Olympian Gods",
+      "driver": {
+        "name": "x68k",
+        "type": "generic",
+        "alias": "Imagineer",
+        "platform": "SHARP X68000"
+      },
+      "options": [],
+      "assets": [
+        {
+          "type": "code",
+          "path": "pop268snd.bin",
+          "offset": "0x00000"
+        },
+        {
+          "type": "x",
+          "path": "OPMDRV.X",
+          "offset": "0x10000"
+        },
+        {
+          "type": "code",
+          "path": "DESERT.BIN",
+          "offset": "0x13000"
+        },
+        {
+          "type": "code",
+          "path": "END.BIN",
+          "offset": "0x15000"
+        },
+        {
+          "type": "code",
+          "path": "GRASS.BIN",
+          "offset": "0x17000"
+        },
+        {
+          "type": "code",
+          "path": "LOGO.BIN",
+          "offset": "0x19000"
+        },
+        {
+          "type": "code",
+          "path": "SNOW.BIN",
+          "offset": "0x1b000"
+        },
+        {
+          "type": "code",
+          "path": "TIT.BIN",
+          "offset": "0x1d000"
+        },
+        {
+          "type": "code",
+          "path": "VOLCANO.BIN",
+          "offset": "0x1f000"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x04",
+          "title": "LOGO.BIN    :"
+        },
+        {
+          "kind": "title",
+          "code": "0x06",
+          "title": "TIT.BIN     :"
+        },
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "DESERT.BIN  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x03",
+          "title": "GRASS.BIN   :"
+        },
+        {
+          "kind": "title",
+          "code": "0x05",
+          "title": "SNOW.BIN    :"
+        },
+        {
+          "kind": "title",
+          "code": "0x07",
+          "title": "VOLCANO.BIN :"
+        },
+        {
+          "kind": "title",
+          "code": "0x02",
+          "title": "END.BIN     :"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/imagineer.xml",
+      "source_order": 2618,
+      "archive": "poplus268snd",
+      "id": "poplus268snd-generic"
+    },
+    {
+      "title": "[X68000] Powermonger",
+      "driver": {
+        "name": "x68k",
+        "type": "generic",
+        "alias": "Imagineer",
+        "platform": "SHARP X68000"
+      },
+      "options": [],
+      "assets": [
+        {
+          "type": "code",
+          "path": "powerm68snd.bin",
+          "offset": "0x00000"
+        },
+        {
+          "type": "x",
+          "path": "OPMDRV.X",
+          "offset": "0x10000"
+        },
+        {
+          "type": "code",
+          "path": "TIT68.BIN",
+          "offset": "0x13000"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "TIT68.BIN : Attract Mode"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/imagineer.xml",
+      "source_order": 2619,
+      "archive": "powerm68snd",
+      "id": "powerm68snd-generic"
+    },
+    {
+      "title": "[PC-9801] Powermonger",
+      "driver": {
+        "name": "pc98dos",
+        "type": "opn",
+        "alias": "Imagineer",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "clockmul",
+          "value": "8"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "OPNDRV.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "OPNDR_98.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "TIT98.BIN",
+          "offset": "0x10"
+        },
+        {
+          "type": "shell",
+          "path": "opndrv",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "opndr_98",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "TIT98.BIN : Attract Mode"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/imagineer.xml",
+      "source_order": 2620,
+      "archive": "powerm_98",
+      "id": "powerm-98-opn"
+    },
+    {
+      "title": "[PC-9801] POPULOUS II EXPERT - Trials of the Olympian Gods",
+      "driver": {
+        "name": "pc98dos",
+        "type": "opn",
+        "alias": "Imagineer",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "clockmul",
+          "value": "8"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "OPNDRV.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "OPNDR_98.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "P_OPEN.BIN",
+          "offset": "0x10"
+        },
+        {
+          "type": "file",
+          "path": "P_END.BIN",
+          "offset": "0x11"
+        },
+        {
+          "type": "shell",
+          "path": "opndrv",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "opndr_98",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "P_OPEN.BIN :"
+        },
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "P_END.BIN  :"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/imagineer.xml",
+      "source_order": 2621,
+      "archive": "poplus2_98",
+      "id": "poplus2-98-opn"
+    },
+    {
+      "title": "[PC-9801] Lemmings",
+      "driver": {
+        "name": "pc98dos",
+        "type": "opn",
+        "alias": "Imagineer",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "clockmul",
+          "value": "8"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "lemm_98.com",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "LEMMINGS.EXE",
+          "offset": "-1"
+        },
+        {
+          "type": "conin",
+          "path": "LEMMINGS.EXE",
+          "offset": "5"
+        },
+        {
+          "type": "shell",
+          "path": "lemm_98",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "01 : Intro"
+        },
+        {
+          "kind": "title",
+          "code": "0x02",
+          "title": "02 : Lemming1"
+        },
+        {
+          "kind": "title",
+          "code": "0x03",
+          "title": "03 : Lemming2"
+        },
+        {
+          "kind": "title",
+          "code": "0x04",
+          "title": "04 : Lemming3"
+        },
+        {
+          "kind": "title",
+          "code": "0x05",
+          "title": "05 : Tim1"
+        },
+        {
+          "kind": "title",
+          "code": "0x06",
+          "title": "06 : Tim2"
+        },
+        {
+          "kind": "title",
+          "code": "0x07",
+          "title": "07 : Tim3"
+        },
+        {
+          "kind": "title",
+          "code": "0x08",
+          "title": "08 : Tim4"
+        },
+        {
+          "kind": "title",
+          "code": "0x09",
+          "title": "09 : Tim5"
+        },
+        {
+          "kind": "title",
+          "code": "0x0a",
+          "title": "10 : Tim6     (葦笛の踊り)"
+        },
+        {
+          "kind": "title",
+          "code": "0x0b",
+          "title": "11 : Tim7     (トルコ行進曲)"
+        },
+        {
+          "kind": "title",
+          "code": "0x0c",
+          "title": "12 : Tim8     (白鳥の湖)"
+        },
+        {
+          "kind": "title",
+          "code": "0x0d",
+          "title": "13 : Tim9     (ロンドン橋落ちた)"
+        },
+        {
+          "kind": "title",
+          "code": "0x0e",
+          "title": "14 : Tim10    (All Beautiful the March of Days)"
+        },
+        {
+          "kind": "comment",
+          "text": "\t<title code=\"0x0f\">15 : Lemmings1</title> "
+        },
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "16 : Mountain (あの子が山にやってくる)"
+        },
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "17 : TenLem   (Ten Green Bottles/葬送行進曲/結婚行進曲)"
+        },
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "18 : Cancan   (天国と地獄)"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "19 : Awesome"
+        },
+        {
+          "kind": "title",
+          "code": "0x14",
+          "title": "20 : BeastI   Shadow of the Beast"
+        },
+        {
+          "kind": "title",
+          "code": "0x15",
+          "title": "21 : BeastII  Shadow of the Beast II"
+        },
+        {
+          "kind": "title",
+          "code": "0x16",
+          "title": "22 : Menace"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/imagineer.xml",
+      "source_order": 2622,
+      "archive": "lemmings_98",
+      "id": "lemmings-98-opn"
+    },
+    {
+      "title": "[X68000] Mega-Lo-Mania",
+      "driver": {
+        "name": "x68k",
+        "type": "generic",
+        "alias": "Imagineer",
+        "platform": "SHARP X68000"
+      },
+      "options": [
+        {
+          "name": "opm_mix",
+          "value": "0x100"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "mlm68snd.bin",
+          "offset": "0x00000"
+        },
+        {
+          "type": "x",
+          "path": "MUSDRV4.X",
+          "offset": "0x10000"
+        },
+        {
+          "type": "code",
+          "path": "SOUND.DAT",
+          "offset": "0x12d72"
+        },
+        {
+          "type": "code",
+          "path": "xop.DAT",
+          "offset": "0x14000"
+        },
+        {
+          "type": "code",
+          "path": "XPM.DAT",
+          "offset": "0x16000"
+        },
+        {
+          "type": "code",
+          "path": "XPS.DAT",
+          "offset": "0x18000"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "xop.DAT : Title"
+        },
+        {
+          "kind": "title",
+          "code": "0x03",
+          "title": "XPS.DAT : Menu"
+        },
+        {
+          "kind": "title",
+          "code": "0x02",
+          "title": "XPM.DAT : Main BGM"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/imagineer.xml",
+      "source_order": 2623,
+      "archive": "mlm68snd",
+      "id": "mlm68snd-generic"
+    },
+    {
+      "title": "[PC-9801] 鳳凰の如く -乱世の覇者・信長-",
+      "driver": {
+        "name": "pc98dos",
+        "type": "opn",
+        "alias": "Imagineer",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "clockmul",
+          "value": "8"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "houou_o.com",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "O.EXE",
+          "offset": "-1"
+        },
+        {
+          "type": "shell",
+          "path": "houou_o",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x00",
+          "title": "00 演奏停止"
+        },
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "01"
+        },
+        {
+          "kind": "title",
+          "code": "0x02",
+          "title": "02"
+        },
+        {
+          "kind": "title",
+          "code": "0x03",
+          "title": "03"
+        },
+        {
+          "kind": "title",
+          "code": "0x04",
+          "title": "04"
+        },
+        {
+          "kind": "title",
+          "code": "0x05",
+          "title": "05"
+        },
+        {
+          "kind": "title",
+          "code": "0x06",
+          "title": "06"
+        },
+        {
+          "kind": "title",
+          "code": "0x07",
+          "title": "07"
+        },
+        {
+          "kind": "title",
+          "code": "0x08",
+          "title": "08"
+        },
+        {
+          "kind": "title",
+          "code": "0x09",
+          "title": "09"
+        },
+        {
+          "kind": "title",
+          "code": "0x0a",
+          "title": "0A"
+        },
+        {
+          "kind": "title",
+          "code": "0x0b",
+          "title": "0B"
+        },
+        {
+          "kind": "title",
+          "code": "0x0c",
+          "title": "0C"
+        },
+        {
+          "kind": "title",
+          "code": "0x0d",
+          "title": "0D"
+        },
+        {
+          "kind": "title",
+          "code": "0x0e",
+          "title": "0E"
+        },
+        {
+          "kind": "title",
+          "code": "0x0f",
+          "title": "0F"
+        },
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "10"
+        },
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "11"
+        },
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "12"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "13"
+        },
+        {
+          "kind": "title",
+          "code": "0x14",
+          "title": "14"
+        },
+        {
+          "kind": "title",
+          "code": "0x15",
+          "title": "15"
+        },
+        {
+          "kind": "title",
+          "code": "0x16",
+          "title": "16"
+        },
+        {
+          "kind": "title",
+          "code": "0x17",
+          "title": "17"
+        },
+        {
+          "kind": "title",
+          "code": "0x18",
+          "title": "18"
+        },
+        {
+          "kind": "title",
+          "code": "0x19",
+          "title": "19"
+        },
+        {
+          "kind": "title",
+          "code": "0x1a",
+          "title": "1A"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/imagineer.xml",
+      "source_order": 2624,
+      "archive": "houou_98",
+      "id": "houou-98-opn"
+    },
+    {
+      "title": "[PC-9801] 家康戦旗",
+      "driver": {
+        "name": "pc98dos",
+        "type": "opn",
+        "alias": "Imagineer",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "clockmul",
+          "value": "8"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "NATT_98.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "NATTEL.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "INTDRV.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "IEYA_SE.NMD",
+          "offset": "0x08"
+        },
+        {
+          "type": "file",
+          "path": "IEYA000.NMD",
+          "offset": "0x11"
+        },
+        {
+          "type": "file",
+          "path": "IEYA001.NMD",
+          "offset": "0x12"
+        },
+        {
+          "type": "file",
+          "path": "IEYA003.NMD",
+          "offset": "0x13"
+        },
+        {
+          "type": "file",
+          "path": "IEYA005.NMD",
+          "offset": "0x14"
+        },
+        {
+          "type": "file",
+          "path": "IEYA006.NMD",
+          "offset": "0x15"
+        },
+        {
+          "type": "file",
+          "path": "IEYA007.NMD",
+          "offset": "0x16"
+        },
+        {
+          "type": "file",
+          "path": "IEYA010.NMD",
+          "offset": "0x17"
+        },
+        {
+          "type": "file",
+          "path": "IEYA011.NMD",
+          "offset": "0x18"
+        },
+        {
+          "type": "file",
+          "path": "IEYA012.NMD",
+          "offset": "0x19"
+        },
+        {
+          "type": "file",
+          "path": "IEYA013.NMD",
+          "offset": "0x1a"
+        },
+        {
+          "type": "file",
+          "path": "IEYA014.NMD",
+          "offset": "0x1b"
+        },
+        {
+          "type": "file",
+          "path": "IEYA015.NMD",
+          "offset": "0x1c"
+        },
+        {
+          "type": "file",
+          "path": "IEYA016.NMD",
+          "offset": "0x1d"
+        },
+        {
+          "type": "file",
+          "path": "IEYA017.NMD",
+          "offset": "0x1e"
+        },
+        {
+          "type": "file",
+          "path": "IEYA019.NMD",
+          "offset": "0x1f"
+        },
+        {
+          "type": "file",
+          "path": "IEYA020.NMD",
+          "offset": "0x20"
+        },
+        {
+          "type": "file",
+          "path": "IEYA021.NMD",
+          "offset": "0x21"
+        },
+        {
+          "type": "file",
+          "path": "IEYA022.NMD",
+          "offset": "0x22"
+        },
+        {
+          "type": "file",
+          "path": "IEYA025.NMD",
+          "offset": "0x23"
+        },
+        {
+          "type": "file",
+          "path": "IEYA026.NMD",
+          "offset": "0x24"
+        },
+        {
+          "type": "file",
+          "path": "IEYA028.NMD",
+          "offset": "0x25"
+        },
+        {
+          "type": "shell",
+          "path": "intdrv",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "nattel -S3 -M5",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "natt_98",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "IEYA000.NMD :"
+        },
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "IEYA001.NMD :"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "IEYA003.NMD :"
+        },
+        {
+          "kind": "title",
+          "code": "0x14",
+          "title": "IEYA005.NMD :"
+        },
+        {
+          "kind": "title",
+          "code": "0x15",
+          "title": "IEYA006.NMD :"
+        },
+        {
+          "kind": "title",
+          "code": "0x16",
+          "title": "IEYA007.NMD :"
+        },
+        {
+          "kind": "title",
+          "code": "0x17",
+          "title": "IEYA010.NMD :"
+        },
+        {
+          "kind": "title",
+          "code": "0x18",
+          "title": "IEYA011.NMD :"
+        },
+        {
+          "kind": "title",
+          "code": "0x19",
+          "title": "IEYA012.NMD :"
+        },
+        {
+          "kind": "title",
+          "code": "0x1a",
+          "title": "IEYA013.NMD :"
+        },
+        {
+          "kind": "title",
+          "code": "0x1b",
+          "title": "IEYA014.NMD :"
+        },
+        {
+          "kind": "title",
+          "code": "0x1c",
+          "title": "IEYA015.NMD :"
+        },
+        {
+          "kind": "title",
+          "code": "0x1d",
+          "title": "IEYA016.NMD :"
+        },
+        {
+          "kind": "title",
+          "code": "0x1e",
+          "title": "IEYA017.NMD :"
+        },
+        {
+          "kind": "title",
+          "code": "0x1f",
+          "title": "IEYA019.NMD :"
+        },
+        {
+          "kind": "title",
+          "code": "0x20",
+          "title": "IEYA020.NMD :"
+        },
+        {
+          "kind": "title",
+          "code": "0x21",
+          "title": "IEYA021.NMD :"
+        },
+        {
+          "kind": "title",
+          "code": "0x22",
+          "title": "IEYA022.NMD :"
+        },
+        {
+          "kind": "title",
+          "code": "0x23",
+          "title": "IEYA025.NMD :"
+        },
+        {
+          "kind": "title",
+          "code": "0x24",
+          "title": "IEYA026.NMD :"
+        },
+        {
+          "kind": "title",
+          "code": "0x25",
+          "title": "IEYA028.NMD :"
+        },
+        {
+          "kind": "range",
+          "min": "0x100",
+          "max": "0x11f",
+          "title_format": "IEYA_SE.NMD : %02X",
+          "extcode": "0"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/imagineer.xml",
+      "source_order": 2625,
+      "archive": "ieyasnki_98",
+      "id": "ieyasnki-98-opn"
+    },
+    {
+      "title": "[PC-9801] 維新開国",
+      "driver": {
+        "name": "pc98dos",
+        "type": "opn",
+        "alias": "Imagineer",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "clockmul",
+          "value": "8"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "NATT_98.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "NATTEL.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "INTDRV.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "ISHIN_SE.NMD",
+          "offset": "0x08"
+        },
+        {
+          "type": "file",
+          "path": "ISHIN000.NMD",
+          "offset": "0x10"
+        },
+        {
+          "type": "file",
+          "path": "ISHIN001.NMD",
+          "offset": "0x11"
+        },
+        {
+          "type": "file",
+          "path": "ISHIN002.NMD",
+          "offset": "0x12"
+        },
+        {
+          "type": "file",
+          "path": "ISHIN003.NMD",
+          "offset": "0x13"
+        },
+        {
+          "type": "file",
+          "path": "ISHIN004.NMD",
+          "offset": "0x14"
+        },
+        {
+          "type": "file",
+          "path": "ISHIN005.NMD",
+          "offset": "0x15"
+        },
+        {
+          "type": "file",
+          "path": "ISHIN006.NMD",
+          "offset": "0x16"
+        },
+        {
+          "type": "file",
+          "path": "ISHIN007.NMD",
+          "offset": "0x17"
+        },
+        {
+          "type": "file",
+          "path": "ISHIN008.NMD",
+          "offset": "0x18"
+        },
+        {
+          "type": "file",
+          "path": "ISHIN009.NMD",
+          "offset": "0x19"
+        },
+        {
+          "type": "file",
+          "path": "ISHIN010.NMD",
+          "offset": "0x1a"
+        },
+        {
+          "type": "file",
+          "path": "ISHIN011.NMD",
+          "offset": "0x1b"
+        },
+        {
+          "type": "file",
+          "path": "ISHIN012.NMD",
+          "offset": "0x1c"
+        },
+        {
+          "type": "file",
+          "path": "ISHIN013.NMD",
+          "offset": "0x1d"
+        },
+        {
+          "type": "file",
+          "path": "ISHIN014.NMD",
+          "offset": "0x1e"
+        },
+        {
+          "type": "file",
+          "path": "ISHIN015.NMD",
+          "offset": "0x1f"
+        },
+        {
+          "type": "file",
+          "path": "ISHIN016.NMD",
+          "offset": "0x20"
+        },
+        {
+          "type": "file",
+          "path": "ISHIN017.NMD",
+          "offset": "0x21"
+        },
+        {
+          "type": "file",
+          "path": "ISHIN018.NMD",
+          "offset": "0x22"
+        },
+        {
+          "type": "file",
+          "path": "ISHIN019.NMD",
+          "offset": "0x23"
+        },
+        {
+          "type": "file",
+          "path": "ISHIN020.NMD",
+          "offset": "0x24"
+        },
+        {
+          "type": "file",
+          "path": "ISHIN021.NMD",
+          "offset": "0x25"
+        },
+        {
+          "type": "file",
+          "path": "ISHIN022.NMD",
+          "offset": "0x26"
+        },
+        {
+          "type": "file",
+          "path": "ISHIN024.NMD",
+          "offset": "0x27"
+        },
+        {
+          "type": "shell",
+          "path": "intdrv",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "nattel /S3 /M5",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "natt_98",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "ISHIN000.NMD :"
+        },
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "ISHIN001.NMD :"
+        },
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "ISHIN002.NMD :"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "ISHIN003.NMD :"
+        },
+        {
+          "kind": "title",
+          "code": "0x14",
+          "title": "ISHIN004.NMD :"
+        },
+        {
+          "kind": "title",
+          "code": "0x15",
+          "title": "ISHIN005.NMD :"
+        },
+        {
+          "kind": "title",
+          "code": "0x16",
+          "title": "ISHIN006.NMD :"
+        },
+        {
+          "kind": "title",
+          "code": "0x17",
+          "title": "ISHIN007.NMD :"
+        },
+        {
+          "kind": "title",
+          "code": "0x18",
+          "title": "ISHIN008.NMD :"
+        },
+        {
+          "kind": "title",
+          "code": "0x19",
+          "title": "ISHIN009.NMD :"
+        },
+        {
+          "kind": "title",
+          "code": "0x1a",
+          "title": "ISHIN010.NMD :"
+        },
+        {
+          "kind": "title",
+          "code": "0x1b",
+          "title": "ISHIN011.NMD :"
+        },
+        {
+          "kind": "title",
+          "code": "0x1c",
+          "title": "ISHIN012.NMD :"
+        },
+        {
+          "kind": "title",
+          "code": "0x1d",
+          "title": "ISHIN013.NMD :"
+        },
+        {
+          "kind": "title",
+          "code": "0x1e",
+          "title": "ISHIN014.NMD :"
+        },
+        {
+          "kind": "title",
+          "code": "0x1f",
+          "title": "ISHIN015.NMD :"
+        },
+        {
+          "kind": "title",
+          "code": "0x20",
+          "title": "ISHIN016.NMD :"
+        },
+        {
+          "kind": "title",
+          "code": "0x21",
+          "title": "ISHIN017.NMD :"
+        },
+        {
+          "kind": "title",
+          "code": "0x22",
+          "title": "ISHIN018.NMD :"
+        },
+        {
+          "kind": "title",
+          "code": "0x23",
+          "title": "ISHIN019.NMD :"
+        },
+        {
+          "kind": "title",
+          "code": "0x24",
+          "title": "ISHIN020.NMD :"
+        },
+        {
+          "kind": "title",
+          "code": "0x25",
+          "title": "ISHIN021.NMD :"
+        },
+        {
+          "kind": "title",
+          "code": "0x26",
+          "title": "ISHIN022.NMD :"
+        },
+        {
+          "kind": "title",
+          "code": "0x27",
+          "title": "ISHIN024.NMD :"
+        },
+        {
+          "kind": "range",
+          "min": "0x100",
+          "max": "0x126",
+          "title_format": "ISHIN_SE.NMD : %02X",
+          "extcode": "0"
+        }
+      ],
+      "comments": [
+        " 維新開国パワーボックスも同等 "
+      ],
+      "source_file": "xml/imagineer.xml",
+      "source_order": 2626,
+      "archive": "ishinkai_98",
+      "id": "ishinkai-98-opn"
+    },
+    {
+      "title": "[PC-9801] 龍王三國志(OPN)",
+      "driver": {
+        "name": "pc98dos",
+        "type": "opn",
+        "alias": "Imagineer",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "clockmul",
+          "value": "8"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "NATT_98.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "NATTEL.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "INTDRV.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "R_SAN_SE.NMD",
+          "offset": "0x08"
+        },
+        {
+          "type": "file",
+          "path": "R_SAN100.NMD",
+          "offset": "0x10"
+        },
+        {
+          "type": "file",
+          "path": "R_SAN102.NMD",
+          "offset": "0x11"
+        },
+        {
+          "type": "file",
+          "path": "R_SAN104.NMD",
+          "offset": "0x12"
+        },
+        {
+          "type": "file",
+          "path": "R_SAN106.NMD",
+          "offset": "0x13"
+        },
+        {
+          "type": "file",
+          "path": "R_SAN107.NMD",
+          "offset": "0x14"
+        },
+        {
+          "type": "file",
+          "path": "R_SAN108.NMD",
+          "offset": "0x15"
+        },
+        {
+          "type": "file",
+          "path": "R_SAN109.NMD",
+          "offset": "0x16"
+        },
+        {
+          "type": "file",
+          "path": "R_SAN111.NMD",
+          "offset": "0x17"
+        },
+        {
+          "type": "file",
+          "path": "R_SAN112.NMD",
+          "offset": "0x18"
+        },
+        {
+          "type": "file",
+          "path": "R_SAN115.NMD",
+          "offset": "0x19"
+        },
+        {
+          "type": "file",
+          "path": "R_SAN116.NMD",
+          "offset": "0x1a"
+        },
+        {
+          "type": "file",
+          "path": "R_SAN118.NMD",
+          "offset": "0x1b"
+        },
+        {
+          "type": "shell",
+          "path": "intdrv",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "nattel",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "natt_98",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "R_SAN102.NMD : 春"
+        },
+        {
+          "kind": "title",
+          "code": "0x14",
+          "title": "R_SAN107.NMD : 夏"
+        },
+        {
+          "kind": "title",
+          "code": "0x16",
+          "title": "R_SAN109.NMD : 秋"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "R_SAN106.NMD : 冬"
+        },
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "R_SAN100.NMD : 城戦1"
+        },
+        {
+          "kind": "title",
+          "code": "0x15",
+          "title": "R_SAN108.NMD : 城戦2"
+        },
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "R_SAN104.NMD : 野戦"
+        },
+        {
+          "kind": "title",
+          "code": "0x17",
+          "title": "R_SAN111.NMD : 海戦"
+        },
+        {
+          "kind": "title",
+          "code": "0x18",
+          "title": "R_SAN112.NMD :"
+        },
+        {
+          "kind": "title",
+          "code": "0x19",
+          "title": "R_SAN115.NMD :"
+        },
+        {
+          "kind": "title",
+          "code": "0x1a",
+          "title": "R_SAN116.NMD :"
+        },
+        {
+          "kind": "title",
+          "code": "0x1b",
+          "title": "R_SAN118.NMD :"
+        },
+        {
+          "kind": "range",
+          "min": "0x100",
+          "max": "0x10c",
+          "title_format": "R_SAN_SE.NMD : %02X",
+          "extcode": "0"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/imagineer.xml",
+      "source_order": 2627,
+      "archive": "r_san_98",
+      "id": "r-san-98-opn"
+    },
+    {
+      "title": "[PC-9801] 龍王三國志(GM)",
+      "driver": {
+        "name": "pc98dos",
+        "type": "beep",
+        "alias": "Imagineer",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "clockmul",
+          "value": "8"
+        },
+        {
+          "name": "midiout",
+          "value": "1"
+        },
+        {
+          "name": "midiout_type",
+          "value": "8"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "NATT_98.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "NATTEL.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "INTDRV.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "R_SAN100.NMD",
+          "offset": "0x10"
+        },
+        {
+          "type": "file",
+          "path": "R_SAN102.NMD",
+          "offset": "0x11"
+        },
+        {
+          "type": "file",
+          "path": "R_SAN104.NMD",
+          "offset": "0x12"
+        },
+        {
+          "type": "file",
+          "path": "R_SAN106.NMD",
+          "offset": "0x13"
+        },
+        {
+          "type": "file",
+          "path": "R_SAN107.NMD",
+          "offset": "0x14"
+        },
+        {
+          "type": "file",
+          "path": "R_SAN108.NMD",
+          "offset": "0x15"
+        },
+        {
+          "type": "file",
+          "path": "R_SAN109.NMD",
+          "offset": "0x16"
+        },
+        {
+          "type": "file",
+          "path": "R_SAN111.NMD",
+          "offset": "0x17"
+        },
+        {
+          "type": "file",
+          "path": "R_SAN112.NMD",
+          "offset": "0x18"
+        },
+        {
+          "type": "file",
+          "path": "R_SAN115.NMD",
+          "offset": "0x19"
+        },
+        {
+          "type": "file",
+          "path": "R_SAN116.NMD",
+          "offset": "0x1a"
+        },
+        {
+          "type": "file",
+          "path": "R_SAN118.NMD",
+          "offset": "0x1b"
+        },
+        {
+          "type": "shell",
+          "path": "intdrv",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "nattel",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "natt_98",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "R_SAN102.NMD : 春"
+        },
+        {
+          "kind": "title",
+          "code": "0x14",
+          "title": "R_SAN107.NMD : 夏"
+        },
+        {
+          "kind": "title",
+          "code": "0x16",
+          "title": "R_SAN109.NMD : 秋"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "R_SAN106.NMD : 冬"
+        },
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "R_SAN100.NMD : 城戦1"
+        },
+        {
+          "kind": "title",
+          "code": "0x15",
+          "title": "R_SAN108.NMD : 城戦2"
+        },
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "R_SAN104.NMD : 野戦"
+        },
+        {
+          "kind": "title",
+          "code": "0x17",
+          "title": "R_SAN111.NMD : 海戦"
+        },
+        {
+          "kind": "title",
+          "code": "0x18",
+          "title": "R_SAN112.NMD :"
+        },
+        {
+          "kind": "title",
+          "code": "0x19",
+          "title": "R_SAN115.NMD :"
+        },
+        {
+          "kind": "title",
+          "code": "0x1a",
+          "title": "R_SAN116.NMD :"
+        },
+        {
+          "kind": "title",
+          "code": "0x1b",
+          "title": "R_SAN118.NMD :"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/imagineer.xml",
+      "source_order": 2628,
+      "archive": "r_san_98",
+      "id": "r-san-98-beep"
+    },
+    {
+      "title": "[PC-9801] 龍王三國志(OPN+GM)",
+      "driver": {
+        "name": "pc98dos",
+        "type": "opn",
+        "alias": "Imagineer",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "clockmul",
+          "value": "8"
+        },
+        {
+          "name": "midiout",
+          "value": "1"
+        },
+        {
+          "name": "midiout_type",
+          "value": "8"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "NATT_98.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "NATTEL.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "INTDRV.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "R_SAN_SE.NMD",
+          "offset": "0x08"
+        },
+        {
+          "type": "file",
+          "path": "R_SAN100.NMD",
+          "offset": "0x10"
+        },
+        {
+          "type": "file",
+          "path": "R_SAN102.NMD",
+          "offset": "0x11"
+        },
+        {
+          "type": "file",
+          "path": "R_SAN104.NMD",
+          "offset": "0x12"
+        },
+        {
+          "type": "file",
+          "path": "R_SAN106.NMD",
+          "offset": "0x13"
+        },
+        {
+          "type": "file",
+          "path": "R_SAN107.NMD",
+          "offset": "0x14"
+        },
+        {
+          "type": "file",
+          "path": "R_SAN108.NMD",
+          "offset": "0x15"
+        },
+        {
+          "type": "file",
+          "path": "R_SAN109.NMD",
+          "offset": "0x16"
+        },
+        {
+          "type": "file",
+          "path": "R_SAN111.NMD",
+          "offset": "0x17"
+        },
+        {
+          "type": "file",
+          "path": "R_SAN112.NMD",
+          "offset": "0x18"
+        },
+        {
+          "type": "file",
+          "path": "R_SAN115.NMD",
+          "offset": "0x19"
+        },
+        {
+          "type": "file",
+          "path": "R_SAN116.NMD",
+          "offset": "0x1a"
+        },
+        {
+          "type": "file",
+          "path": "R_SAN118.NMD",
+          "offset": "0x1b"
+        },
+        {
+          "type": "shell",
+          "path": "intdrv",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "nattel",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "natt_98",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "R_SAN102.NMD : 春"
+        },
+        {
+          "kind": "title",
+          "code": "0x14",
+          "title": "R_SAN107.NMD : 夏"
+        },
+        {
+          "kind": "title",
+          "code": "0x16",
+          "title": "R_SAN109.NMD : 秋"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "R_SAN106.NMD : 冬"
+        },
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "R_SAN100.NMD : 城戦1"
+        },
+        {
+          "kind": "title",
+          "code": "0x15",
+          "title": "R_SAN108.NMD : 城戦2"
+        },
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "R_SAN104.NMD : 野戦"
+        },
+        {
+          "kind": "title",
+          "code": "0x17",
+          "title": "R_SAN111.NMD : 海戦"
+        },
+        {
+          "kind": "title",
+          "code": "0x18",
+          "title": "R_SAN112.NMD :"
+        },
+        {
+          "kind": "title",
+          "code": "0x19",
+          "title": "R_SAN115.NMD :"
+        },
+        {
+          "kind": "title",
+          "code": "0x1a",
+          "title": "R_SAN116.NMD :"
+        },
+        {
+          "kind": "title",
+          "code": "0x1b",
+          "title": "R_SAN118.NMD :"
+        },
+        {
+          "kind": "range",
+          "min": "0x100",
+          "max": "0x10c",
+          "title_format": "R_SAN_SE.NMD : %02X",
+          "extcode": "0"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/imagineer.xml",
+      "source_order": 2629,
+      "archive": "r_san_98",
+      "id": "r-san-98-opn-2"
+    },
+    {
+      "title": "[PC-9801] 龍王三國志 パワーボックス(OPN)",
+      "driver": {
+        "name": "pc98dos",
+        "type": "opn",
+        "alias": "Imagineer",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "clockmul",
+          "value": "8"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "NATT_98.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "NATTEL.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "INTDRV.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "R_SAN100.NMD",
+          "offset": "0x10"
+        },
+        {
+          "type": "file",
+          "path": "R_SAN102.NMD",
+          "offset": "0x11"
+        },
+        {
+          "type": "file",
+          "path": "R_SAN104.NMD",
+          "offset": "0x12"
+        },
+        {
+          "type": "file",
+          "path": "R_SAN106.NMD",
+          "offset": "0x13"
+        },
+        {
+          "type": "file",
+          "path": "R_SAN107.NMD",
+          "offset": "0x14"
+        },
+        {
+          "type": "file",
+          "path": "R_SAN108.NMD",
+          "offset": "0x15"
+        },
+        {
+          "type": "file",
+          "path": "R_SAN109.NMD",
+          "offset": "0x16"
+        },
+        {
+          "type": "file",
+          "path": "R_SAN111.NMD",
+          "offset": "0x17"
+        },
+        {
+          "type": "file",
+          "path": "R_SAN123.NMD",
+          "offset": "0x1c"
+        },
+        {
+          "type": "file",
+          "path": "R_SAN124.NMD",
+          "offset": "0x1d"
+        },
+        {
+          "type": "shell",
+          "path": "intdrv",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "nattel",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "natt_98",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x1d",
+          "title": "R_SAN124.NMD :"
+        },
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "R_SAN102.NMD : 春"
+        },
+        {
+          "kind": "title",
+          "code": "0x14",
+          "title": "R_SAN107.NMD : 夏"
+        },
+        {
+          "kind": "title",
+          "code": "0x16",
+          "title": "R_SAN109.NMD : 秋"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "R_SAN106.NMD : 冬"
+        },
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "R_SAN100.NMD : 城戦1"
+        },
+        {
+          "kind": "title",
+          "code": "0x15",
+          "title": "R_SAN108.NMD : 城戦2"
+        },
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "R_SAN104.NMD : 野戦"
+        },
+        {
+          "kind": "title",
+          "code": "0x17",
+          "title": "R_SAN111.NMD : 海戦"
+        },
+        {
+          "kind": "title",
+          "code": "0x1c",
+          "title": "R_SAN123.NMD : 初期メニュー"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/imagineer.xml",
+      "source_order": 2630,
+      "archive": "r_sanpb_98",
+      "id": "r-sanpb-98-opn"
+    },
+    {
+      "title": "[PC-9801] 龍王三國志 パワーボックス(GM)",
+      "driver": {
+        "name": "pc98dos",
+        "type": "beep",
+        "alias": "Imagineer",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "clockmul",
+          "value": "8"
+        },
+        {
+          "name": "midiout",
+          "value": "1"
+        },
+        {
+          "name": "midiout_type",
+          "value": "8"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "NATT_98.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "NATTEL.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "INTDRV.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "R_SAN100.NMD",
+          "offset": "0x10"
+        },
+        {
+          "type": "file",
+          "path": "R_SAN102.NMD",
+          "offset": "0x11"
+        },
+        {
+          "type": "file",
+          "path": "R_SAN104.NMD",
+          "offset": "0x12"
+        },
+        {
+          "type": "file",
+          "path": "R_SAN106.NMD",
+          "offset": "0x13"
+        },
+        {
+          "type": "file",
+          "path": "R_SAN107.NMD",
+          "offset": "0x14"
+        },
+        {
+          "type": "file",
+          "path": "R_SAN108.NMD",
+          "offset": "0x15"
+        },
+        {
+          "type": "file",
+          "path": "R_SAN109.NMD",
+          "offset": "0x16"
+        },
+        {
+          "type": "file",
+          "path": "R_SAN111.NMD",
+          "offset": "0x17"
+        },
+        {
+          "type": "file",
+          "path": "R_SAN123.NMD",
+          "offset": "0x1c"
+        },
+        {
+          "type": "file",
+          "path": "R_SAN124.NMD",
+          "offset": "0x1d"
+        },
+        {
+          "type": "shell",
+          "path": "intdrv",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "nattel",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "natt_98",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x1d",
+          "title": "R_SAN124.NMD :"
+        },
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "R_SAN102.NMD : 春"
+        },
+        {
+          "kind": "title",
+          "code": "0x14",
+          "title": "R_SAN107.NMD : 夏"
+        },
+        {
+          "kind": "title",
+          "code": "0x16",
+          "title": "R_SAN109.NMD : 秋"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "R_SAN106.NMD : 冬"
+        },
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "R_SAN100.NMD : 城戦1"
+        },
+        {
+          "kind": "title",
+          "code": "0x15",
+          "title": "R_SAN108.NMD : 城戦2"
+        },
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "R_SAN104.NMD : 野戦"
+        },
+        {
+          "kind": "title",
+          "code": "0x17",
+          "title": "R_SAN111.NMD : 海戦"
+        },
+        {
+          "kind": "title",
+          "code": "0x1c",
+          "title": "R_SAN123.NMD : 初期メニュー"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/imagineer.xml",
+      "source_order": 2631,
+      "archive": "r_sanpb_98",
+      "id": "r-sanpb-98-beep"
+    },
+    {
+      "title": "[PC-9801] 龍王三國志 パワーボックス(OPN+GM)",
+      "driver": {
+        "name": "pc98dos",
+        "type": "opn",
+        "alias": "Imagineer",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "clockmul",
+          "value": "8"
+        },
+        {
+          "name": "midiout",
+          "value": "1"
+        },
+        {
+          "name": "midiout_type",
+          "value": "8"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "NATT_98.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "NATTEL.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "INTDRV.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "R_SAN100.NMD",
+          "offset": "0x10"
+        },
+        {
+          "type": "file",
+          "path": "R_SAN102.NMD",
+          "offset": "0x11"
+        },
+        {
+          "type": "file",
+          "path": "R_SAN104.NMD",
+          "offset": "0x12"
+        },
+        {
+          "type": "file",
+          "path": "R_SAN106.NMD",
+          "offset": "0x13"
+        },
+        {
+          "type": "file",
+          "path": "R_SAN107.NMD",
+          "offset": "0x14"
+        },
+        {
+          "type": "file",
+          "path": "R_SAN108.NMD",
+          "offset": "0x15"
+        },
+        {
+          "type": "file",
+          "path": "R_SAN109.NMD",
+          "offset": "0x16"
+        },
+        {
+          "type": "file",
+          "path": "R_SAN111.NMD",
+          "offset": "0x17"
+        },
+        {
+          "type": "file",
+          "path": "R_SAN123.NMD",
+          "offset": "0x1c"
+        },
+        {
+          "type": "file",
+          "path": "R_SAN124.NMD",
+          "offset": "0x1d"
+        },
+        {
+          "type": "shell",
+          "path": "intdrv",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "nattel",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "natt_98",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x1d",
+          "title": "R_SAN124.NMD :"
+        },
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "R_SAN102.NMD : 春"
+        },
+        {
+          "kind": "title",
+          "code": "0x14",
+          "title": "R_SAN107.NMD : 夏"
+        },
+        {
+          "kind": "title",
+          "code": "0x16",
+          "title": "R_SAN109.NMD : 秋"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "R_SAN106.NMD : 冬"
+        },
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "R_SAN100.NMD : 城戦1"
+        },
+        {
+          "kind": "title",
+          "code": "0x15",
+          "title": "R_SAN108.NMD : 城戦2"
+        },
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "R_SAN104.NMD : 野戦"
+        },
+        {
+          "kind": "title",
+          "code": "0x17",
+          "title": "R_SAN111.NMD : 海戦"
+        },
+        {
+          "kind": "title",
+          "code": "0x1c",
+          "title": "R_SAN123.NMD : 初期メニュー"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/imagineer.xml",
+      "source_order": 2632,
+      "archive": "r_sanpb_98",
+      "id": "r-sanpb-98-opn-2"
+    },
+    {
+      "title": "[PC-9801] SimAnt",
+      "driver": {
+        "name": "pc98dos",
+        "type": "opn",
+        "alias": "Imagineer",
+        "platform": "NEC PC-9801"
+      },
+      "options": [],
+      "assets": [
+        {
+          "type": "file",
+          "path": "smant_98.com",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "ANTMUS.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "SA10001.MDT",
+          "offset": "0x10"
+        },
+        {
+          "type": "file",
+          "path": "SA10003.MDT",
+          "offset": "0x11"
+        },
+        {
+          "type": "file",
+          "path": "SA10004.MDT",
+          "offset": "0x12"
+        },
+        {
+          "type": "file",
+          "path": "SA10005.MDT",
+          "offset": "0x13"
+        },
+        {
+          "type": "file",
+          "path": "SA10006.MDT",
+          "offset": "0x14"
+        },
+        {
+          "type": "file",
+          "path": "SA10007.MDT",
+          "offset": "0x15"
+        },
+        {
+          "type": "file",
+          "path": "SA10008.MDT",
+          "offset": "0x16"
+        },
+        {
+          "type": "file",
+          "path": "SA10010.MDT",
+          "offset": "0x17"
+        },
+        {
+          "type": "file",
+          "path": "SA11002.MDT",
+          "offset": "0x18"
+        },
+        {
+          "type": "file",
+          "path": "SA11003.MDT",
+          "offset": "0x19"
+        },
+        {
+          "type": "file",
+          "path": "SA11004.MDT",
+          "offset": "0x1a"
+        },
+        {
+          "type": "file",
+          "path": "SA11005.MDT",
+          "offset": "0x1b"
+        },
+        {
+          "type": "file",
+          "path": "SA11006.MDT",
+          "offset": "0x1c"
+        },
+        {
+          "type": "file",
+          "path": "SA11007.MDT",
+          "offset": "0x1d"
+        },
+        {
+          "type": "file",
+          "path": "SA11013.MDT",
+          "offset": "0x1e"
+        },
+        {
+          "type": "file",
+          "path": "SA11014.MDT",
+          "offset": "0x1f"
+        },
+        {
+          "type": "file",
+          "path": "SA11015.MDT",
+          "offset": "0x20"
+        },
+        {
+          "type": "file",
+          "path": "SA11016.MDT",
+          "offset": "0x21"
+        },
+        {
+          "type": "file",
+          "path": "SA11017.MDT",
+          "offset": "0x22"
+        },
+        {
+          "type": "file",
+          "path": "SA11018.MDT",
+          "offset": "0x23"
+        },
+        {
+          "type": "file",
+          "path": "SA11020.MDT",
+          "offset": "0x24"
+        },
+        {
+          "type": "file",
+          "path": "SA11021.MDT",
+          "offset": "0x25"
+        },
+        {
+          "type": "file",
+          "path": "SA20000.MDT",
+          "offset": "0x26"
+        },
+        {
+          "type": "file",
+          "path": "SA20001.MDT",
+          "offset": "0x27"
+        },
+        {
+          "type": "file",
+          "path": "SA20002.MDT",
+          "offset": "0x28"
+        },
+        {
+          "type": "file",
+          "path": "SA20003.MDT",
+          "offset": "0x29"
+        },
+        {
+          "type": "file",
+          "path": "SA20004.MDT",
+          "offset": "0x2a"
+        },
+        {
+          "type": "file",
+          "path": "SA20005.MDT",
+          "offset": "0x2b"
+        },
+        {
+          "type": "file",
+          "path": "SA20007.MDT",
+          "offset": "0x2c"
+        },
+        {
+          "type": "file",
+          "path": "SA20008.MDT",
+          "offset": "0x2d"
+        },
+        {
+          "type": "file",
+          "path": "SA20009.MDT",
+          "offset": "0x2e"
+        },
+        {
+          "type": "file",
+          "path": "SA20010.MDT",
+          "offset": "0x2f"
+        },
+        {
+          "type": "file",
+          "path": "SA20011.MDT",
+          "offset": "0x30"
+        },
+        {
+          "type": "shell",
+          "path": "ANTMUS",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "smant_98",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "SA10001.MDT :"
+        },
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "SA10003.MDT :"
+        },
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "SA10004.MDT :"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "SA10005.MDT :"
+        },
+        {
+          "kind": "title",
+          "code": "0x14",
+          "title": "SA10006.MDT :"
+        },
+        {
+          "kind": "title",
+          "code": "0x15",
+          "title": "SA10007.MDT :"
+        },
+        {
+          "kind": "title",
+          "code": "0x16",
+          "title": "SA10008.MDT :"
+        },
+        {
+          "kind": "title",
+          "code": "0x17",
+          "title": "SA10010.MDT :"
+        },
+        {
+          "kind": "title",
+          "code": "0x18",
+          "title": "SA11002.MDT :"
+        },
+        {
+          "kind": "title",
+          "code": "0x19",
+          "title": "SA11003.MDT :"
+        },
+        {
+          "kind": "title",
+          "code": "0x1a",
+          "title": "SA11004.MDT :"
+        },
+        {
+          "kind": "title",
+          "code": "0x1b",
+          "title": "SA11005.MDT :"
+        },
+        {
+          "kind": "title",
+          "code": "0x1c",
+          "title": "SA11006.MDT :"
+        },
+        {
+          "kind": "title",
+          "code": "0x1d",
+          "title": "SA11007.MDT :"
+        },
+        {
+          "kind": "title",
+          "code": "0x1e",
+          "title": "SA11013.MDT :"
+        },
+        {
+          "kind": "title",
+          "code": "0x1f",
+          "title": "SA11014.MDT :"
+        },
+        {
+          "kind": "title",
+          "code": "0x20",
+          "title": "SA11015.MDT :"
+        },
+        {
+          "kind": "title",
+          "code": "0x21",
+          "title": "SA11016.MDT :"
+        },
+        {
+          "kind": "title",
+          "code": "0x22",
+          "title": "SA11017.MDT :"
+        },
+        {
+          "kind": "title",
+          "code": "0x23",
+          "title": "SA11018.MDT :"
+        },
+        {
+          "kind": "title",
+          "code": "0x24",
+          "title": "SA11020.MDT :"
+        },
+        {
+          "kind": "title",
+          "code": "0x25",
+          "title": "SA11021.MDT :"
+        },
+        {
+          "kind": "title",
+          "code": "0x26",
+          "title": "SA20000.MDT :"
+        },
+        {
+          "kind": "title",
+          "code": "0x27",
+          "title": "SA20001.MDT :"
+        },
+        {
+          "kind": "title",
+          "code": "0x28",
+          "title": "SA20002.MDT :"
+        },
+        {
+          "kind": "title",
+          "code": "0x29",
+          "title": "SA20003.MDT :"
+        },
+        {
+          "kind": "title",
+          "code": "0x2a",
+          "title": "SA20004.MDT :"
+        },
+        {
+          "kind": "title",
+          "code": "0x2b",
+          "title": "SA20005.MDT :"
+        },
+        {
+          "kind": "title",
+          "code": "0x2c",
+          "title": "SA20007.MDT :"
+        },
+        {
+          "kind": "title",
+          "code": "0x2d",
+          "title": "SA20008.MDT :"
+        },
+        {
+          "kind": "title",
+          "code": "0x2e",
+          "title": "SA20009.MDT :"
+        },
+        {
+          "kind": "title",
+          "code": "0x2f",
+          "title": "SA20010.MDT :"
+        },
+        {
+          "kind": "title",
+          "code": "0x30",
+          "title": "SA20011.MDT :"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/imagineer.xml",
+      "source_order": 2633,
+      "archive": "simant_98",
+      "id": "simant-98-opn"
+    }
+  ]
+}

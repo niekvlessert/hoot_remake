@@ -1,0 +1,1200 @@
+{
+  "format": "hoot-catalog-shard",
+  "version": 1,
+  "source_file": "xml/puchi.xml",
+  "date": "2005/09/25",
+  "comments": [
+    " //ぷち "
+  ],
+  "games": [
+    {
+      "title": "[PC-9801] とらぶる あうとさいだ～ず(OPN)",
+      "driver": {
+        "name": "pc98dos",
+        "type": "opn",
+        "alias": "ぷち",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "funcvect",
+          "value": "0x7e"
+        },
+        {
+          "name": "clockmul",
+          "value": "8"
+        },
+        {
+          "name": "showfm3ex",
+          "value": "1"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "PMD_98.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "PMD.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "EFFEC.DAT",
+          "offset": "0x08"
+        },
+        {
+          "type": "file",
+          "path": "OS_01.M",
+          "offset": "0x10"
+        },
+        {
+          "type": "file",
+          "path": "OS_02.M",
+          "offset": "0x11"
+        },
+        {
+          "type": "file",
+          "path": "OS_03.M",
+          "offset": "0x12"
+        },
+        {
+          "type": "file",
+          "path": "OS_05.M",
+          "offset": "0x13"
+        },
+        {
+          "type": "file",
+          "path": "OS_08.M",
+          "offset": "0x14"
+        },
+        {
+          "type": "file",
+          "path": "OS_09.M",
+          "offset": "0x15"
+        },
+        {
+          "type": "file",
+          "path": "OS_07.M",
+          "offset": "0x16"
+        },
+        {
+          "type": "file",
+          "path": "OS_10.M",
+          "offset": "0x17"
+        },
+        {
+          "type": "file",
+          "path": "OS_11.M",
+          "offset": "0x18"
+        },
+        {
+          "type": "file",
+          "path": "OS_12.M",
+          "offset": "0x19"
+        },
+        {
+          "type": "shell",
+          "path": "pmd # /k /m16 /v0 /ds30",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "pmd_98",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "OS_01.M   :"
+        },
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "OS_02.M   :"
+        },
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "OS_03.M   :"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "OS_05.M   :"
+        },
+        {
+          "kind": "title",
+          "code": "0x14",
+          "title": "OS_08.M   :"
+        },
+        {
+          "kind": "title",
+          "code": "0x15",
+          "title": "OS_09.M   :"
+        },
+        {
+          "kind": "title",
+          "code": "0x16",
+          "title": "OS_07.M   :"
+        },
+        {
+          "kind": "title",
+          "code": "0x17",
+          "title": "OS_10.M   :"
+        },
+        {
+          "kind": "title",
+          "code": "0x18",
+          "title": "OS_11.M   :"
+        },
+        {
+          "kind": "title",
+          "code": "0x19",
+          "title": "OS_12.M   :"
+        },
+        {
+          "kind": "range",
+          "min": "0x0880",
+          "max": "0x08a5",
+          "title_format": "EFFEC.DAT : %02X",
+          "extcode": "0",
+          "start": "0x80"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/puchi.xml",
+      "source_order": 3755,
+      "archive": "outsider_98",
+      "id": "outsider-98-opn"
+    },
+    {
+      "title": "[PC-9801] とらぶる あうとさいだ～ず(86)",
+      "driver": {
+        "name": "pc98dos",
+        "type": "86",
+        "alias": "ぷち",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "funcvect",
+          "value": "0x7e"
+        },
+        {
+          "name": "clockmul",
+          "value": "8"
+        },
+        {
+          "name": "pcm_mix",
+          "value": "0x90"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "PMD_98.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "PMD86.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "P86DRV.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "PMDPCM86.EXE",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "PCM.P86",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "EFFEC.DAT",
+          "offset": "0x08"
+        },
+        {
+          "type": "file",
+          "path": "OS_01.M2",
+          "offset": "0x10"
+        },
+        {
+          "type": "file",
+          "path": "OS_02.M2",
+          "offset": "0x11"
+        },
+        {
+          "type": "file",
+          "path": "OS_03.M2",
+          "offset": "0x12"
+        },
+        {
+          "type": "file",
+          "path": "OS_05.M2",
+          "offset": "0x13"
+        },
+        {
+          "type": "file",
+          "path": "OS_08.M2",
+          "offset": "0x14"
+        },
+        {
+          "type": "file",
+          "path": "OS_09.M2",
+          "offset": "0x15"
+        },
+        {
+          "type": "file",
+          "path": "OS_07.M2",
+          "offset": "0x16"
+        },
+        {
+          "type": "file",
+          "path": "OS_10.M2",
+          "offset": "0x17"
+        },
+        {
+          "type": "file",
+          "path": "OS_11.M2",
+          "offset": "0x18"
+        },
+        {
+          "type": "file",
+          "path": "OS_12.M2",
+          "offset": "0x19"
+        },
+        {
+          "type": "shell",
+          "path": "P86DRV #/m /4",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "PMD86 # /k /m10 /v0",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "PMDPCM86 /l PCM.P86",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "pmd_98",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "OS_01.M2  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "OS_02.M2  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "OS_03.M2  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "OS_05.M2  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x14",
+          "title": "OS_08.M2  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x15",
+          "title": "OS_09.M2  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x16",
+          "title": "OS_07.M2  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x17",
+          "title": "OS_10.M2  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x18",
+          "title": "OS_11.M2  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x19",
+          "title": "OS_12.M2  :"
+        },
+        {
+          "kind": "range",
+          "min": "0x0880",
+          "max": "0x08a5",
+          "title_format": "EFFEC.DAT : %02X",
+          "extcode": "0",
+          "start": "0x80"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/puchi.xml",
+      "source_order": 3756,
+      "archive": "outsider_98",
+      "id": "outsider-98-86"
+    },
+    {
+      "title": "[PC-9801] The Beast Breaders(OPN)",
+      "driver": {
+        "name": "pc98dos",
+        "type": "opn",
+        "alias": "ぷち",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "funcvect",
+          "value": "0x7e"
+        },
+        {
+          "name": "clockmul",
+          "value": "8"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "PMD_98.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "PMD.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "EFFEC.DAT",
+          "offset": "0x08"
+        },
+        {
+          "type": "file",
+          "path": "BST_00.M",
+          "offset": "0x10"
+        },
+        {
+          "type": "file",
+          "path": "BST_01.M",
+          "offset": "0x11"
+        },
+        {
+          "type": "file",
+          "path": "BST_02.M",
+          "offset": "0x12"
+        },
+        {
+          "type": "file",
+          "path": "BST_03.M",
+          "offset": "0x13"
+        },
+        {
+          "type": "file",
+          "path": "BST_04.M",
+          "offset": "0x14"
+        },
+        {
+          "type": "file",
+          "path": "BST_05.M",
+          "offset": "0x15"
+        },
+        {
+          "type": "file",
+          "path": "BST_06.M",
+          "offset": "0x16"
+        },
+        {
+          "type": "file",
+          "path": "BST_07.M",
+          "offset": "0x17"
+        },
+        {
+          "type": "file",
+          "path": "BST_08.M",
+          "offset": "0x18"
+        },
+        {
+          "type": "file",
+          "path": "BST_11.M",
+          "offset": "0x19"
+        },
+        {
+          "type": "file",
+          "path": "BST_12.M",
+          "offset": "0x1A"
+        },
+        {
+          "type": "shell",
+          "path": "pmd # /k /m10 /v0",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "pmd_98",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "BST_00.M  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "BST_01.M  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "BST_02.M  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "BST_03.M  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x14",
+          "title": "BST_04.M  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x15",
+          "title": "BST_05.M  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x16",
+          "title": "BST_06.M  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x17",
+          "title": "BST_07.M  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x18",
+          "title": "BST_08.M  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x19",
+          "title": "BST_11.M  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x1A",
+          "title": "BST_12.M  :"
+        },
+        {
+          "kind": "range",
+          "min": "0x0880",
+          "max": "0x08a5",
+          "title_format": "EFFEC.DAT : %02X",
+          "extcode": "0",
+          "start": "0x80"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/puchi.xml",
+      "source_order": 3757,
+      "archive": "beast_b_98",
+      "id": "beast-b-98-opn"
+    },
+    {
+      "title": "[PC-9801] The Beast Breaders(OPNA)",
+      "driver": {
+        "name": "pc98dos",
+        "type": "opna",
+        "alias": "ぷち",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "funcvect",
+          "value": "0x7e"
+        },
+        {
+          "name": "clockmul",
+          "value": "8"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "PMD_98.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "PMDB2.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "EFFEC.DAT",
+          "offset": "0x08"
+        },
+        {
+          "type": "file",
+          "path": "BST_00.M2",
+          "offset": "0x10"
+        },
+        {
+          "type": "file",
+          "path": "BST_01.M2",
+          "offset": "0x11"
+        },
+        {
+          "type": "file",
+          "path": "BST_02.M2",
+          "offset": "0x12"
+        },
+        {
+          "type": "file",
+          "path": "BST_03.M2",
+          "offset": "0x13"
+        },
+        {
+          "type": "file",
+          "path": "BST_04.M2",
+          "offset": "0x14"
+        },
+        {
+          "type": "file",
+          "path": "BST_05.M2",
+          "offset": "0x15"
+        },
+        {
+          "type": "file",
+          "path": "BST_06.M2",
+          "offset": "0x16"
+        },
+        {
+          "type": "file",
+          "path": "BST_07.M2",
+          "offset": "0x17"
+        },
+        {
+          "type": "file",
+          "path": "BST_08.M2",
+          "offset": "0x18"
+        },
+        {
+          "type": "file",
+          "path": "BST_11.M2",
+          "offset": "0x19"
+        },
+        {
+          "type": "file",
+          "path": "BST_12.M2",
+          "offset": "0x1A"
+        },
+        {
+          "type": "shell",
+          "path": "PMDB2 # /k /m10 /v0",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "pmd_98",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "BST_00.M2 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "BST_01.M2 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "BST_02.M2 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "BST_03.M2 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x14",
+          "title": "BST_04.M2 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x15",
+          "title": "BST_05.M2 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x16",
+          "title": "BST_06.M2 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x17",
+          "title": "BST_07.M2 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x18",
+          "title": "BST_08.M2 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x19",
+          "title": "BST_11.M2 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x1A",
+          "title": "BST_12.M2 :"
+        },
+        {
+          "kind": "range",
+          "min": "0x0880",
+          "max": "0x08a5",
+          "title_format": "EFFEC.DAT : %02X",
+          "extcode": "0",
+          "start": "0x80"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/puchi.xml",
+      "source_order": 3758,
+      "archive": "beast_b_98",
+      "id": "beast-b-98-opna"
+    },
+    {
+      "title": "[PC-9801] メモリーズ ～白い夜空に舞う天使～",
+      "driver": {
+        "name": "pc98dos",
+        "type": "opn",
+        "alias": "ぷち",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "funcvect",
+          "value": "0x7e"
+        },
+        {
+          "name": "clockmul",
+          "value": "8"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "PMD_98.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "PMD.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "EFFEC.DAT",
+          "offset": "0x08"
+        },
+        {
+          "type": "file",
+          "path": "MEM001.M",
+          "offset": "0x10"
+        },
+        {
+          "type": "file",
+          "path": "MEM002.M",
+          "offset": "0x11"
+        },
+        {
+          "type": "file",
+          "path": "MEM003.M",
+          "offset": "0x12"
+        },
+        {
+          "type": "file",
+          "path": "MEM004.M",
+          "offset": "0x13"
+        },
+        {
+          "type": "file",
+          "path": "MEM005.M",
+          "offset": "0x14"
+        },
+        {
+          "type": "file",
+          "path": "MEM006.M",
+          "offset": "0x15"
+        },
+        {
+          "type": "file",
+          "path": "MEM007.M",
+          "offset": "0x16"
+        },
+        {
+          "type": "file",
+          "path": "MEM008.M",
+          "offset": "0x17"
+        },
+        {
+          "type": "file",
+          "path": "MEM009.M",
+          "offset": "0x18"
+        },
+        {
+          "type": "file",
+          "path": "MEM010.M",
+          "offset": "0x19"
+        },
+        {
+          "type": "file",
+          "path": "MEM011.M",
+          "offset": "0x1A"
+        },
+        {
+          "type": "file",
+          "path": "MEM012.M",
+          "offset": "0x1B"
+        },
+        {
+          "type": "file",
+          "path": "MEM013.M",
+          "offset": "0x1C"
+        },
+        {
+          "type": "file",
+          "path": "MEM014.M",
+          "offset": "0x1D"
+        },
+        {
+          "type": "file",
+          "path": "MEM015.M",
+          "offset": "0x1E"
+        },
+        {
+          "type": "file",
+          "path": "MEM016.M",
+          "offset": "0x1F"
+        },
+        {
+          "type": "shell",
+          "path": "pmd # /V0 /k",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "pmd_98",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "MEM001.M  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "MEM002.M  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "MEM003.M  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "MEM004.M  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x14",
+          "title": "MEM005.M  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x15",
+          "title": "MEM006.M  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x16",
+          "title": "MEM007.M  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x17",
+          "title": "MEM008.M  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x18",
+          "title": "MEM009.M  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x19",
+          "title": "MEM010.M  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x1A",
+          "title": "MEM011.M  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x1B",
+          "title": "MEM012.M  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x1C",
+          "title": "MEM013.M  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x1D",
+          "title": "MEM014.M  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x1E",
+          "title": "MEM015.M  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x1F",
+          "title": "MEM016.M  :"
+        },
+        {
+          "kind": "range",
+          "min": "0x0880",
+          "max": "0x0890",
+          "title_format": "EFFEC.DAT : %02X",
+          "extcode": "0",
+          "start": "0x80"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/puchi.xml",
+      "source_order": 3759,
+      "archive": "memories_98",
+      "id": "memories-98-opn"
+    },
+    {
+      "title": "[PC-9801] メモリーズリフレイン 思い出はいつまでも…",
+      "driver": {
+        "name": "pc98dos",
+        "type": "opn",
+        "alias": "ぷち",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "funcvect",
+          "value": "0x7e"
+        },
+        {
+          "name": "clockmul",
+          "value": "8"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "PMD_98.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "PMD.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "EFFEC.DAT",
+          "offset": "0x08"
+        },
+        {
+          "type": "file",
+          "path": "MR_01.M",
+          "offset": "0x10"
+        },
+        {
+          "type": "file",
+          "path": "MR_02.M",
+          "offset": "0x11"
+        },
+        {
+          "type": "file",
+          "path": "MR_03.M",
+          "offset": "0x12"
+        },
+        {
+          "type": "file",
+          "path": "MR_04.M",
+          "offset": "0x13"
+        },
+        {
+          "type": "file",
+          "path": "MR_05.M",
+          "offset": "0x14"
+        },
+        {
+          "type": "file",
+          "path": "MR_06.M",
+          "offset": "0x15"
+        },
+        {
+          "type": "file",
+          "path": "MR_07.M",
+          "offset": "0x16"
+        },
+        {
+          "type": "file",
+          "path": "MR_08.M",
+          "offset": "0x17"
+        },
+        {
+          "type": "file",
+          "path": "MR_09.M",
+          "offset": "0x18"
+        },
+        {
+          "type": "file",
+          "path": "MR_10.M",
+          "offset": "0x19"
+        },
+        {
+          "type": "file",
+          "path": "MR_11.M",
+          "offset": "0x1A"
+        },
+        {
+          "type": "file",
+          "path": "MR_12.M",
+          "offset": "0x1B"
+        },
+        {
+          "type": "file",
+          "path": "MR_13.M",
+          "offset": "0x1C"
+        },
+        {
+          "type": "file",
+          "path": "MR_14.M",
+          "offset": "0x1D"
+        },
+        {
+          "type": "file",
+          "path": "MR_15.M",
+          "offset": "0x1E"
+        },
+        {
+          "type": "file",
+          "path": "MR_16.M",
+          "offset": "0x1F"
+        },
+        {
+          "type": "file",
+          "path": "MR_17.M",
+          "offset": "0x20"
+        },
+        {
+          "type": "file",
+          "path": "MR_18.M",
+          "offset": "0x21"
+        },
+        {
+          "type": "file",
+          "path": "MR_19.M",
+          "offset": "0x22"
+        },
+        {
+          "type": "file",
+          "path": "MR_20.M",
+          "offset": "0x23"
+        },
+        {
+          "type": "file",
+          "path": "MR_21.M",
+          "offset": "0x24"
+        },
+        {
+          "type": "shell",
+          "path": "pmd # /k /m16 /v0",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "pmd_98",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "MR_01.M   :"
+        },
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "MR_02.M   :"
+        },
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "MR_03.M   :"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "MR_04.M   :"
+        },
+        {
+          "kind": "title",
+          "code": "0x14",
+          "title": "MR_05.M   :"
+        },
+        {
+          "kind": "title",
+          "code": "0x15",
+          "title": "MR_06.M   :"
+        },
+        {
+          "kind": "title",
+          "code": "0x16",
+          "title": "MR_07.M   :"
+        },
+        {
+          "kind": "title",
+          "code": "0x17",
+          "title": "MR_08.M   :"
+        },
+        {
+          "kind": "title",
+          "code": "0x18",
+          "title": "MR_09.M   :"
+        },
+        {
+          "kind": "title",
+          "code": "0x19",
+          "title": "MR_10.M   :"
+        },
+        {
+          "kind": "title",
+          "code": "0x1A",
+          "title": "MR_11.M   :"
+        },
+        {
+          "kind": "title",
+          "code": "0x1B",
+          "title": "MR_12.M   :"
+        },
+        {
+          "kind": "title",
+          "code": "0x1C",
+          "title": "MR_13.M   :"
+        },
+        {
+          "kind": "title",
+          "code": "0x1D",
+          "title": "MR_14.M   :"
+        },
+        {
+          "kind": "title",
+          "code": "0x1E",
+          "title": "MR_15.M   :"
+        },
+        {
+          "kind": "title",
+          "code": "0x1F",
+          "title": "MR_16.M   :"
+        },
+        {
+          "kind": "title",
+          "code": "0x20",
+          "title": "MR_17.M   :"
+        },
+        {
+          "kind": "title",
+          "code": "0x21",
+          "title": "MR_18.M   :"
+        },
+        {
+          "kind": "title",
+          "code": "0x22",
+          "title": "MR_19.M   :"
+        },
+        {
+          "kind": "title",
+          "code": "0x23",
+          "title": "MR_20.M   :"
+        },
+        {
+          "kind": "title",
+          "code": "0x24",
+          "title": "MR_21.M   :"
+        },
+        {
+          "kind": "range",
+          "min": "0x0880",
+          "max": "0x0890",
+          "title_format": "EFFEC.DAT : %02X",
+          "extcode": "0",
+          "start": "0x80"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/puchi.xml",
+      "source_order": 3760,
+      "archive": "memoref_98",
+      "id": "memoref-98-opn"
+    }
+  ]
+}

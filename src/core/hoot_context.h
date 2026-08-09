@@ -21,4 +21,5 @@ struct HootContext {
     const hoot::HootEntry* current_entry = nullptr;
     std::unique_ptr<hoot::HootDriver> current_driver;
     std::unique_ptr<hoot::AssetProvider> asset_provider;
+    uint64_t rendered_frames = 0;
 };

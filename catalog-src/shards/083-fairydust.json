@@ -1,0 +1,6444 @@
+{
+  "format": "hoot-catalog-shard",
+  "version": 1,
+  "source_file": "xml/fairydust.xml",
+  "date": "2005/09/25",
+  "comments": [
+    " //FairyDust "
+  ],
+  "games": [
+    {
+      "title": "[PC-9801] 5時間目のヴィーナス",
+      "driver": {
+        "name": "pc98dos",
+        "type": "opn",
+        "alias": "FairyDust",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "funcvect",
+          "value": "0x7e"
+        },
+        {
+          "name": "clockmul",
+          "value": "8"
+        },
+        {
+          "name": "showfm3ex",
+          "value": "1"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "PMD_98.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "PMD.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "SE.EFC",
+          "offset": "0x08"
+        },
+        {
+          "type": "file",
+          "path": "5_01.M",
+          "offset": "0x10"
+        },
+        {
+          "type": "file",
+          "path": "5_02.M",
+          "offset": "0x11"
+        },
+        {
+          "type": "file",
+          "path": "5_03.M",
+          "offset": "0x12"
+        },
+        {
+          "type": "file",
+          "path": "5_04.M",
+          "offset": "0x13"
+        },
+        {
+          "type": "file",
+          "path": "5_05.M",
+          "offset": "0x14"
+        },
+        {
+          "type": "file",
+          "path": "5_06.M",
+          "offset": "0x15"
+        },
+        {
+          "type": "file",
+          "path": "5_07.M",
+          "offset": "0x16"
+        },
+        {
+          "type": "file",
+          "path": "5_08.M",
+          "offset": "0x17"
+        },
+        {
+          "type": "file",
+          "path": "5_09.M",
+          "offset": "0x18"
+        },
+        {
+          "type": "file",
+          "path": "5_10.M",
+          "offset": "0x19"
+        },
+        {
+          "type": "file",
+          "path": "5_11.M",
+          "offset": "0x1a"
+        },
+        {
+          "type": "file",
+          "path": "5_20.M",
+          "offset": "0x1b"
+        },
+        {
+          "type": "file",
+          "path": "SE_10.M",
+          "offset": "0x1c"
+        },
+        {
+          "type": "shell",
+          "path": "PMD # /M10 /V0 /K",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "pmd_98",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x1a",
+          "title": "5_11.M  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "5_01.M  : BGM No.1"
+        },
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "5_02.M  : BGM No.2"
+        },
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "5_03.M  : BGM No.3"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "5_04.M  : BGM No.4"
+        },
+        {
+          "kind": "title",
+          "code": "0x14",
+          "title": "5_05.M  : BGM No.5"
+        },
+        {
+          "kind": "title",
+          "code": "0x15",
+          "title": "5_06.M  : BGM No.6"
+        },
+        {
+          "kind": "title",
+          "code": "0x16",
+          "title": "5_07.M  : BGM No.7"
+        },
+        {
+          "kind": "title",
+          "code": "0x17",
+          "title": "5_08.M  : BGM No.8"
+        },
+        {
+          "kind": "title",
+          "code": "0x18",
+          "title": "5_09.M  : BGM No.9"
+        },
+        {
+          "kind": "title",
+          "code": "0x19",
+          "title": "5_10.M  : BGM No.10"
+        },
+        {
+          "kind": "title",
+          "code": "0x1b",
+          "title": "5_20.M  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x1c",
+          "title": "SE_10.M :"
+        },
+        {
+          "kind": "range",
+          "min": "0x0801",
+          "max": "0x0809",
+          "title_format": "SE.EFC  : %02X",
+          "extcode": "0"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/fairydust.xml",
+      "source_order": 1778,
+      "archive": "5venus_98",
+      "id": "5venus-98-opn"
+    },
+    {
+      "title": "[PC-9801] STAR TRAP",
+      "driver": {
+        "name": "pc98dos",
+        "type": "opn",
+        "alias": "FairyDust",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "clockmul",
+          "value": "8"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "MDZ86.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MDZSPLAY.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "_____001.CHM",
+          "offset": "0x10"
+        },
+        {
+          "type": "file",
+          "path": "_____002.CHM",
+          "offset": "0x11"
+        },
+        {
+          "type": "file",
+          "path": "_____003.CHM",
+          "offset": "0x12"
+        },
+        {
+          "type": "file",
+          "path": "_____004.CHM",
+          "offset": "0x13"
+        },
+        {
+          "type": "file",
+          "path": "_____005.CHM",
+          "offset": "0x14"
+        },
+        {
+          "type": "file",
+          "path": "_____006.CHM",
+          "offset": "0x15"
+        },
+        {
+          "type": "file",
+          "path": "_____007.CHM",
+          "offset": "0x16"
+        },
+        {
+          "type": "file",
+          "path": "_____008.CHM",
+          "offset": "0x17"
+        },
+        {
+          "type": "file",
+          "path": "_____009.CHM",
+          "offset": "0x18"
+        },
+        {
+          "type": "file",
+          "path": "_____010.CHM",
+          "offset": "0x19"
+        },
+        {
+          "type": "file",
+          "path": "_____011.CHM",
+          "offset": "0x1a"
+        },
+        {
+          "type": "file",
+          "path": "_____012.CHM",
+          "offset": "0x1b"
+        },
+        {
+          "type": "file",
+          "path": "_____013.CHM",
+          "offset": "0x1c"
+        },
+        {
+          "type": "file",
+          "path": "_____014.CHM",
+          "offset": "0x1d"
+        },
+        {
+          "type": "file",
+          "path": "_____015.CHM",
+          "offset": "0x1e"
+        },
+        {
+          "type": "file",
+          "path": "_____016.CHM",
+          "offset": "0x1f"
+        },
+        {
+          "type": "file",
+          "path": "_____017.CHM",
+          "offset": "0x20"
+        },
+        {
+          "type": "file",
+          "path": "_____018.CHM",
+          "offset": "0x21"
+        },
+        {
+          "type": "file",
+          "path": "_____019.CHM",
+          "offset": "0x22"
+        },
+        {
+          "type": "file",
+          "path": "_____020.CHM",
+          "offset": "0x23"
+        },
+        {
+          "type": "file",
+          "path": "_____021.CHM",
+          "offset": "0x24"
+        },
+        {
+          "type": "file",
+          "path": "_____022.CHM",
+          "offset": "0x25"
+        },
+        {
+          "type": "file",
+          "path": "_____023.CHM",
+          "offset": "0x26"
+        },
+        {
+          "type": "file",
+          "path": "_____024.CHM",
+          "offset": "0x27"
+        },
+        {
+          "type": "file",
+          "path": "_____025.CHM",
+          "offset": "0x28"
+        },
+        {
+          "type": "file",
+          "path": "_____026.CHM",
+          "offset": "0x29"
+        },
+        {
+          "type": "shell",
+          "path": "MDZ86 S",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "MDZSPLAY",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "STAR_BGM.CHM : 01 : オープニング"
+        },
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "STAR_BGM.CHM : 02 : ラン＆かなた"
+        },
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "STAR_BGM.CHM : 03 : ラン"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "STAR_BGM.CHM : 04 : かなた"
+        },
+        {
+          "kind": "title",
+          "code": "0x14",
+          "title": "STAR_BGM.CHM : 05 : レイミ (ulk2)"
+        },
+        {
+          "kind": "title",
+          "code": "0x15",
+          "title": "STAR_BGM.CHM : 06 : 教官＆シンディ (ulk2)"
+        },
+        {
+          "kind": "title",
+          "code": "0x16",
+          "title": "STAR_BGM.CHM : 07 : 妖精ピスティル (Nava)"
+        },
+        {
+          "kind": "title",
+          "code": "0x17",
+          "title": "STAR_BGM.CHM : 08 : Hシーン1 (ulk2)"
+        },
+        {
+          "kind": "title",
+          "code": "0x18",
+          "title": "STAR_BGM.CHM : 09 : 緊急事態 (Nava)"
+        },
+        {
+          "kind": "title",
+          "code": "0x19",
+          "title": "STAR_BGM.CHM : 10 : 宇宙空間 (Nava)"
+        },
+        {
+          "kind": "title",
+          "code": "0x1a",
+          "title": "STAR_BGM.CHM : 11 : 宇宙戦闘 (Nava)"
+        },
+        {
+          "kind": "title",
+          "code": "0x1b",
+          "title": "STAR_BGM.CHM : 12 : 宇宙ステーション シーベル (Nava)"
+        },
+        {
+          "kind": "title",
+          "code": "0x1c",
+          "title": "STAR_BGM.CHM : 13 : オナニー (ulk2)"
+        },
+        {
+          "kind": "title",
+          "code": "0x1d",
+          "title": "STAR_BGM.CHM : 14 : 犯されるラン"
+        },
+        {
+          "kind": "title",
+          "code": "0x1e",
+          "title": "STAR_BGM.CHM : 15 : 触手にいたぶられる少女たち"
+        },
+        {
+          "kind": "title",
+          "code": "0x1f",
+          "title": "STAR_BGM.CHM : 16 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x20",
+          "title": "STAR_BGM.CHM : 17 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x21",
+          "title": "STAR_BGM.CHM : 18 : Hシーン2 (ulk2)"
+        },
+        {
+          "kind": "title",
+          "code": "0x22",
+          "title": "STAR_BGM.CHM : 19 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x23",
+          "title": "STAR_BGM.CHM : 20 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x24",
+          "title": "STAR_BGM.CHM : 21 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x25",
+          "title": "STAR_BGM.CHM : 22 : 大暴れ (NOGICHAN.)"
+        },
+        {
+          "kind": "title",
+          "code": "0x26",
+          "title": "STAR_BGM.CHM : 23 : 帰還 (NOGICHAN.)"
+        },
+        {
+          "kind": "title",
+          "code": "0x27",
+          "title": "STAR_BGM.CHM : 24 : エピローグ"
+        },
+        {
+          "kind": "title",
+          "code": "0x28",
+          "title": "STAR_BGM.CHM : 25 : エンディング"
+        },
+        {
+          "kind": "title",
+          "code": "0x29",
+          "title": "STAR_BGM.CHM : 26 : アイキャッチ (NOGICHAN.)"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/fairydust.xml",
+      "source_order": 1779,
+      "archive": "startrap_98",
+      "id": "startrap-98-opn"
+    },
+    {
+      "title": "[PC-9801] うきうきアイランド(OPN)",
+      "driver": {
+        "name": "pc98dos",
+        "type": "opn",
+        "alias": "FairyDust",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "funcvect",
+          "value": "0x7e"
+        },
+        {
+          "name": "clockmul",
+          "value": "8"
+        },
+        {
+          "name": "showfm3ex",
+          "value": "1"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "PMD_98.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "PMD.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "M_EMIK01.M",
+          "offset": "0x10"
+        },
+        {
+          "type": "file",
+          "path": "M_EMIKO.M",
+          "offset": "0x11"
+        },
+        {
+          "type": "file",
+          "path": "M_END01.M",
+          "offset": "0x12"
+        },
+        {
+          "type": "file",
+          "path": "M_END02.M",
+          "offset": "0x13"
+        },
+        {
+          "type": "file",
+          "path": "M_END03.M",
+          "offset": "0x14"
+        },
+        {
+          "type": "file",
+          "path": "M_HIROMI.M",
+          "offset": "0x15"
+        },
+        {
+          "type": "file",
+          "path": "M_KEIKO.M",
+          "offset": "0x16"
+        },
+        {
+          "type": "file",
+          "path": "M_KONATU.M",
+          "offset": "0x17"
+        },
+        {
+          "type": "file",
+          "path": "M_KUSU01.M",
+          "offset": "0x18"
+        },
+        {
+          "type": "file",
+          "path": "M_KUSU02.M",
+          "offset": "0x19"
+        },
+        {
+          "type": "file",
+          "path": "M_KUSU03.M",
+          "offset": "0x1a"
+        },
+        {
+          "type": "file",
+          "path": "M_KUSU04.M",
+          "offset": "0x1b"
+        },
+        {
+          "type": "file",
+          "path": "M_KUSU05.M",
+          "offset": "0x1c"
+        },
+        {
+          "type": "file",
+          "path": "M_MASA01.M",
+          "offset": "0x1d"
+        },
+        {
+          "type": "file",
+          "path": "M_MASA02.M",
+          "offset": "0x1e"
+        },
+        {
+          "type": "file",
+          "path": "M_MIYO.M",
+          "offset": "0x1f"
+        },
+        {
+          "type": "file",
+          "path": "M_NANA.M",
+          "offset": "0x20"
+        },
+        {
+          "type": "file",
+          "path": "M_OP01.M",
+          "offset": "0x21"
+        },
+        {
+          "type": "file",
+          "path": "M_OP02.M",
+          "offset": "0x22"
+        },
+        {
+          "type": "file",
+          "path": "M_OP03.M",
+          "offset": "0x23"
+        },
+        {
+          "type": "file",
+          "path": "M_RURI.M",
+          "offset": "0x24"
+        },
+        {
+          "type": "file",
+          "path": "M_RYOUKO.M",
+          "offset": "0x25"
+        },
+        {
+          "type": "file",
+          "path": "M_SING01.M",
+          "offset": "0x26"
+        },
+        {
+          "type": "file",
+          "path": "M_SING02.M",
+          "offset": "0x27"
+        },
+        {
+          "type": "file",
+          "path": "M_SYS01.M",
+          "offset": "0x28"
+        },
+        {
+          "type": "file",
+          "path": "M_SYS02.M",
+          "offset": "0x29"
+        },
+        {
+          "type": "file",
+          "path": "M_TAKU01.M",
+          "offset": "0x2a"
+        },
+        {
+          "type": "shell",
+          "path": "PMD #/I/K",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "pmd_98",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x28",
+          "title": "M_SYS01.M  : システム曲"
+        },
+        {
+          "kind": "title",
+          "code": "0x21",
+          "title": "M_OP01.M   : オープニング曲"
+        },
+        {
+          "kind": "title",
+          "code": "0x23",
+          "title": "M_OP03.M   : スタート曲"
+        },
+        {
+          "kind": "title",
+          "code": "0x29",
+          "title": "M_SYS02.M  : 回想モード曲"
+        },
+        {
+          "kind": "title",
+          "code": "0x2a",
+          "title": "M_TAKU01.M : 主人公1のテーマ"
+        },
+        {
+          "kind": "title",
+          "code": "0x1d",
+          "title": "M_MASA01.M : 主人公2のテーマ"
+        },
+        {
+          "kind": "title",
+          "code": "0x26",
+          "title": "M_SING01.M : 主人公3のテーマ"
+        },
+        {
+          "kind": "title",
+          "code": "0x27",
+          "title": "M_SING02.M : 主人公3の後半テーマ"
+        },
+        {
+          "kind": "title",
+          "code": "0x22",
+          "title": "M_OP02.M   : イベント曲1"
+        },
+        {
+          "kind": "title",
+          "code": "0x1e",
+          "title": "M_MASA02.M : イベント曲2"
+        },
+        {
+          "kind": "title",
+          "code": "0x18",
+          "title": "M_KUSU01.M : イベント曲3"
+        },
+        {
+          "kind": "title",
+          "code": "0x19",
+          "title": "M_KUSU02.M : イベント曲4"
+        },
+        {
+          "kind": "title",
+          "code": "0x1a",
+          "title": "M_KUSU03.M : イベント曲5"
+        },
+        {
+          "kind": "title",
+          "code": "0x1b",
+          "title": "M_KUSU04.M : イベント曲6"
+        },
+        {
+          "kind": "title",
+          "code": "0x1c",
+          "title": "M_KUSU05.M : イベント曲7"
+        },
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "M_EMIK01.M : 微笑子のテーマ"
+        },
+        {
+          "kind": "title",
+          "code": "0x17",
+          "title": "M_KONATU.M : Hシーン小夏"
+        },
+        {
+          "kind": "title",
+          "code": "0x16",
+          "title": "M_KEIKO.M  : Hシーン景子"
+        },
+        {
+          "kind": "title",
+          "code": "0x1f",
+          "title": "M_MIYO.M   : Hシーン美代"
+        },
+        {
+          "kind": "title",
+          "code": "0x20",
+          "title": "M_NANA.M   : Hシーン奈菜"
+        },
+        {
+          "kind": "title",
+          "code": "0x15",
+          "title": "M_HIROMI.M : Hシーン洋海"
+        },
+        {
+          "kind": "title",
+          "code": "0x25",
+          "title": "M_RYOUKO.M : Hシーン漁子"
+        },
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "M_EMIKO.M  : Hシーン微笑子"
+        },
+        {
+          "kind": "title",
+          "code": "0x24",
+          "title": "M_RURI.M   : Hシーン瑠莉"
+        },
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "M_END01.M  : エピローグ曲"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "M_END02.M  : エンディング曲"
+        },
+        {
+          "kind": "title",
+          "code": "0x14",
+          "title": "M_END03.M  : スタッフロール"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/fairydust.xml",
+      "source_order": 1780,
+      "archive": "ukiukiis_98",
+      "id": "ukiukiis-98-opn"
+    },
+    {
+      "title": "[PC-9801] うきうきアイランド(GS)",
+      "driver": {
+        "name": "pc98dos",
+        "type": "beep",
+        "alias": "FairyDust",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "clockmul",
+          "value": "8"
+        },
+        {
+          "name": "midiout",
+          "value": "1"
+        },
+        {
+          "name": "midiout_type",
+          "value": "4"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "MMD.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MMP_HOOT.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "M_EMIK01.MMD",
+          "offset": "0x10"
+        },
+        {
+          "type": "file",
+          "path": "M_EMIKO.MMD",
+          "offset": "0x11"
+        },
+        {
+          "type": "file",
+          "path": "M_END01.MMD",
+          "offset": "0x12"
+        },
+        {
+          "type": "file",
+          "path": "M_END02.MMD",
+          "offset": "0x13"
+        },
+        {
+          "type": "file",
+          "path": "M_END03.MMD",
+          "offset": "0x14"
+        },
+        {
+          "type": "file",
+          "path": "M_HIROMI.MMD",
+          "offset": "0x15"
+        },
+        {
+          "type": "file",
+          "path": "M_KEIKO.MMD",
+          "offset": "0x16"
+        },
+        {
+          "type": "file",
+          "path": "M_KONATU.MMD",
+          "offset": "0x17"
+        },
+        {
+          "type": "file",
+          "path": "M_KUSU01.MMD",
+          "offset": "0x18"
+        },
+        {
+          "type": "file",
+          "path": "M_KUSU02.MMD",
+          "offset": "0x19"
+        },
+        {
+          "type": "file",
+          "path": "M_KUSU03.MMD",
+          "offset": "0x1a"
+        },
+        {
+          "type": "file",
+          "path": "M_KUSU04.MMD",
+          "offset": "0x1b"
+        },
+        {
+          "type": "file",
+          "path": "M_KUSU05.MMD",
+          "offset": "0x1c"
+        },
+        {
+          "type": "file",
+          "path": "M_MASA01.MMD",
+          "offset": "0x1d"
+        },
+        {
+          "type": "file",
+          "path": "M_MASA02.MMD",
+          "offset": "0x1e"
+        },
+        {
+          "type": "file",
+          "path": "M_MIYO.MMD",
+          "offset": "0x1f"
+        },
+        {
+          "type": "file",
+          "path": "M_NANA.MMD",
+          "offset": "0x20"
+        },
+        {
+          "type": "file",
+          "path": "M_OP01.MMD",
+          "offset": "0x21"
+        },
+        {
+          "type": "file",
+          "path": "M_OP02.MMD",
+          "offset": "0x22"
+        },
+        {
+          "type": "file",
+          "path": "M_OP03.MMD",
+          "offset": "0x23"
+        },
+        {
+          "type": "file",
+          "path": "M_RURI.MMD",
+          "offset": "0x24"
+        },
+        {
+          "type": "file",
+          "path": "M_RYOUKO.MMD",
+          "offset": "0x25"
+        },
+        {
+          "type": "file",
+          "path": "M_SING01.MMD",
+          "offset": "0x26"
+        },
+        {
+          "type": "file",
+          "path": "M_SING02.MMD",
+          "offset": "0x27"
+        },
+        {
+          "type": "file",
+          "path": "M_SYS01.MMD",
+          "offset": "0x28"
+        },
+        {
+          "type": "file",
+          "path": "M_SYS02.MMD",
+          "offset": "0x29"
+        },
+        {
+          "type": "file",
+          "path": "M_TAKU01.MMD",
+          "offset": "0x2a"
+        },
+        {
+          "type": "shell",
+          "path": "MMD /K",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "MMP_HOOT",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x28",
+          "title": "M_SYS01.MMD  : システム曲"
+        },
+        {
+          "kind": "title",
+          "code": "0x21",
+          "title": "M_OP01.MMD   : オープニング曲"
+        },
+        {
+          "kind": "title",
+          "code": "0x23",
+          "title": "M_OP03.MMD   : スタート曲"
+        },
+        {
+          "kind": "title",
+          "code": "0x29",
+          "title": "M_SYS02.MMD  : 回想モード曲"
+        },
+        {
+          "kind": "title",
+          "code": "0x2a",
+          "title": "M_TAKU01.MMD : 主人公1のテーマ"
+        },
+        {
+          "kind": "title",
+          "code": "0x1d",
+          "title": "M_MASA01.MMD : 主人公2のテーマ"
+        },
+        {
+          "kind": "title",
+          "code": "0x26",
+          "title": "M_SING01.MMD : 主人公3のテーマ"
+        },
+        {
+          "kind": "title",
+          "code": "0x27",
+          "title": "M_SING02.MMD : 主人公3の後半テーマ"
+        },
+        {
+          "kind": "title",
+          "code": "0x22",
+          "title": "M_OP02.MMD   : イベント曲1"
+        },
+        {
+          "kind": "title",
+          "code": "0x1e",
+          "title": "M_MASA02.MMD : イベント曲2"
+        },
+        {
+          "kind": "title",
+          "code": "0x18",
+          "title": "M_KUSU01.MMD : イベント曲3"
+        },
+        {
+          "kind": "title",
+          "code": "0x19",
+          "title": "M_KUSU02.MMD : イベント曲4"
+        },
+        {
+          "kind": "title",
+          "code": "0x1a",
+          "title": "M_KUSU03.MMD : イベント曲5"
+        },
+        {
+          "kind": "title",
+          "code": "0x1b",
+          "title": "M_KUSU04.MMD : イベント曲6"
+        },
+        {
+          "kind": "title",
+          "code": "0x1c",
+          "title": "M_KUSU05.MMD : イベント曲7"
+        },
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "M_EMIK01.MMD : 微笑子のテーマ"
+        },
+        {
+          "kind": "title",
+          "code": "0x17",
+          "title": "M_KONATU.MMD : Hシーン小夏"
+        },
+        {
+          "kind": "title",
+          "code": "0x16",
+          "title": "M_KEIKO.MMD  : Hシーン景子"
+        },
+        {
+          "kind": "title",
+          "code": "0x1f",
+          "title": "M_MIYO.MMD   : Hシーン美代"
+        },
+        {
+          "kind": "title",
+          "code": "0x20",
+          "title": "M_NANA.MMD   : Hシーン奈菜"
+        },
+        {
+          "kind": "title",
+          "code": "0x15",
+          "title": "M_HIROMI.MMD : Hシーン洋海"
+        },
+        {
+          "kind": "title",
+          "code": "0x25",
+          "title": "M_RYOUKO.MMD : Hシーン漁子"
+        },
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "M_EMIKO.MMD  : Hシーン微笑子"
+        },
+        {
+          "kind": "title",
+          "code": "0x24",
+          "title": "M_RURI.MMD   : Hシーン瑠莉"
+        },
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "M_END01.MMD  : エピローグ曲"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "M_END02.MMD  : エンディング曲"
+        },
+        {
+          "kind": "title",
+          "code": "0x14",
+          "title": "M_END03.MMD  : スタッフロール"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/fairydust.xml",
+      "source_order": 1781,
+      "archive": "ukiukiis_98",
+      "id": "ukiukiis-98-beep"
+    },
+    {
+      "title": "[PC-9801] こうかん日記(OPN)",
+      "driver": {
+        "name": "pc98dos",
+        "type": "opn",
+        "alias": "FairyDust",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "clockmul",
+          "value": "8"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "MDRV.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MDRV_98.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "GUN_KUAN.TDT",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "DRUMS.DRM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "G001.KMD",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "G002.KMD",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "G003.KMD",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "G004.KMD",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "G005.KMD",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "G006.KMD",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "G007.KMD",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "G008.KMD",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "G009.KMD",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "G010.KMD",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "G011.KMD",
+          "offset": "-1"
+        },
+        {
+          "type": "conin",
+          "path": "G001.KMD",
+          "offset": "0x10"
+        },
+        {
+          "type": "conin",
+          "path": "G002.KMD",
+          "offset": "0x11"
+        },
+        {
+          "type": "conin",
+          "path": "G003.KMD",
+          "offset": "0x12"
+        },
+        {
+          "type": "conin",
+          "path": "G004.KMD",
+          "offset": "0x13"
+        },
+        {
+          "type": "conin",
+          "path": "G005.KMD",
+          "offset": "0x14"
+        },
+        {
+          "type": "conin",
+          "path": "G006.KMD",
+          "offset": "0x15"
+        },
+        {
+          "type": "conin",
+          "path": "G007.KMD",
+          "offset": "0x16"
+        },
+        {
+          "type": "conin",
+          "path": "G008.KMD",
+          "offset": "0x17"
+        },
+        {
+          "type": "conin",
+          "path": "G009.KMD",
+          "offset": "0x18"
+        },
+        {
+          "type": "conin",
+          "path": "G010.KMD",
+          "offset": "0x19"
+        },
+        {
+          "type": "conin",
+          "path": "G011.KMD",
+          "offset": "0x1a"
+        },
+        {
+          "type": "shell",
+          "path": "MDRV",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "MDRV -tGUN_KUAN.TDT",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "MDRV -dDRUMS.DRM",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "MDRV_98",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "G001.KMD"
+        },
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "G002.KMD"
+        },
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "G003.KMD"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "G004.KMD"
+        },
+        {
+          "kind": "title",
+          "code": "0x14",
+          "title": "G005.KMD"
+        },
+        {
+          "kind": "title",
+          "code": "0x15",
+          "title": "G006.KMD"
+        },
+        {
+          "kind": "title",
+          "code": "0x16",
+          "title": "G007.KMD"
+        },
+        {
+          "kind": "title",
+          "code": "0x17",
+          "title": "G008.KMD"
+        },
+        {
+          "kind": "title",
+          "code": "0x18",
+          "title": "G009.KMD"
+        },
+        {
+          "kind": "title",
+          "code": "0x19",
+          "title": "G010.KMD"
+        },
+        {
+          "kind": "title",
+          "code": "0x1a",
+          "title": "G011.KMD"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/fairydust.xml",
+      "source_order": 1782,
+      "archive": "koukan_n_98",
+      "id": "koukan-n-98-opn"
+    },
+    {
+      "title": "[PC-9801] こうかん日記(GS)",
+      "driver": {
+        "name": "pc98dos",
+        "type": "beep",
+        "alias": "FairyDust",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "clockmul",
+          "value": "8"
+        },
+        {
+          "name": "midiout",
+          "value": "1"
+        },
+        {
+          "name": "midiout_type",
+          "value": "4"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "MDDRV.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MDDRV_98.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "G001.KMM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "G002.KMM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "G003.KMM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "G004.KMM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "G005.KMM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "G006.KMM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "G007.KMM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "G008.KMM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "G009.KMM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "G010.KMM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "G011.KMM",
+          "offset": "-1"
+        },
+        {
+          "type": "conin",
+          "path": "G001.KMM",
+          "offset": "0x10"
+        },
+        {
+          "type": "conin",
+          "path": "G002.KMM",
+          "offset": "0x11"
+        },
+        {
+          "type": "conin",
+          "path": "G003.KMM",
+          "offset": "0x12"
+        },
+        {
+          "type": "conin",
+          "path": "G004.KMM",
+          "offset": "0x13"
+        },
+        {
+          "type": "conin",
+          "path": "G005.KMM",
+          "offset": "0x14"
+        },
+        {
+          "type": "conin",
+          "path": "G006.KMM",
+          "offset": "0x15"
+        },
+        {
+          "type": "conin",
+          "path": "G007.KMM",
+          "offset": "0x16"
+        },
+        {
+          "type": "conin",
+          "path": "G008.KMM",
+          "offset": "0x17"
+        },
+        {
+          "type": "conin",
+          "path": "G009.KMM",
+          "offset": "0x18"
+        },
+        {
+          "type": "conin",
+          "path": "G010.KMM",
+          "offset": "0x19"
+        },
+        {
+          "type": "conin",
+          "path": "G011.KMM",
+          "offset": "0x1a"
+        },
+        {
+          "type": "shell",
+          "path": "MDDRV",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "MDDRV_98",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "G001.KMM"
+        },
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "G002.KMM"
+        },
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "G003.KMM"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "G004.KMM"
+        },
+        {
+          "kind": "title",
+          "code": "0x14",
+          "title": "G005.KMM"
+        },
+        {
+          "kind": "title",
+          "code": "0x15",
+          "title": "G006.KMM"
+        },
+        {
+          "kind": "title",
+          "code": "0x16",
+          "title": "G007.KMM"
+        },
+        {
+          "kind": "title",
+          "code": "0x17",
+          "title": "G008.KMM"
+        },
+        {
+          "kind": "title",
+          "code": "0x18",
+          "title": "G009.KMM"
+        },
+        {
+          "kind": "title",
+          "code": "0x19",
+          "title": "G010.KMM"
+        },
+        {
+          "kind": "title",
+          "code": "0x1a",
+          "title": "G011.KMM"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/fairydust.xml",
+      "source_order": 1783,
+      "archive": "koukan_n_98",
+      "id": "koukan-n-98-beep"
+    },
+    {
+      "title": "[PC-9801] エスカレーション'95 ～お姉さまって呼んでいいですか?～(OPN)",
+      "driver": {
+        "name": "pc98dos",
+        "type": "opn",
+        "alias": "FairyDust",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "funcvect",
+          "value": "0x70"
+        },
+        {
+          "name": "clockmul",
+          "value": "8"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "usmd_98.com",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "USMD.EXE",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "ES_01.USO",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "ES_01V.USO",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "ES_02.USO",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "ES_02V.USO",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "ES_03.USO",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "ES_03V.USO",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "ES_04.USO",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "ES_04V.USO",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "ES_05.USO",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "ES_05V.USO",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "ES_06.USO",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "ES_06V.USO",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "ES_07.USO",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "ES_07V.USO",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "ES_08.USO",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "ES_08V.USO",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "ES_09.USO",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "ES_09V.USO",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "ES_10.USO",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "ES_10V.USO",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "ES_11.USO",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "ES_11V.USO",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "OFF.USO",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "OFFV.USO",
+          "offset": "-1"
+        },
+        {
+          "type": "conin",
+          "path": "ES_01.USO",
+          "offset": "0x10"
+        },
+        {
+          "type": "conin",
+          "path": "ES_01V.USO",
+          "offset": "0x11"
+        },
+        {
+          "type": "conin",
+          "path": "ES_02.USO",
+          "offset": "0x12"
+        },
+        {
+          "type": "conin",
+          "path": "ES_02V.USO",
+          "offset": "0x13"
+        },
+        {
+          "type": "conin",
+          "path": "ES_03.USO",
+          "offset": "0x14"
+        },
+        {
+          "type": "conin",
+          "path": "ES_03V.USO",
+          "offset": "0x15"
+        },
+        {
+          "type": "conin",
+          "path": "ES_04.USO",
+          "offset": "0x16"
+        },
+        {
+          "type": "conin",
+          "path": "ES_04V.USO",
+          "offset": "0x17"
+        },
+        {
+          "type": "conin",
+          "path": "ES_05.USO",
+          "offset": "0x18"
+        },
+        {
+          "type": "conin",
+          "path": "ES_05V.USO",
+          "offset": "0x19"
+        },
+        {
+          "type": "conin",
+          "path": "ES_06.USO",
+          "offset": "0x1A"
+        },
+        {
+          "type": "conin",
+          "path": "ES_06V.USO",
+          "offset": "0x1B"
+        },
+        {
+          "type": "conin",
+          "path": "ES_07.USO",
+          "offset": "0x1C"
+        },
+        {
+          "type": "conin",
+          "path": "ES_07V.USO",
+          "offset": "0x1D"
+        },
+        {
+          "type": "conin",
+          "path": "ES_08.USO",
+          "offset": "0x1E"
+        },
+        {
+          "type": "conin",
+          "path": "ES_08V.USO",
+          "offset": "0x1F"
+        },
+        {
+          "type": "conin",
+          "path": "ES_09.USO",
+          "offset": "0x20"
+        },
+        {
+          "type": "conin",
+          "path": "ES_09V.USO",
+          "offset": "0x21"
+        },
+        {
+          "type": "conin",
+          "path": "ES_10.USO",
+          "offset": "0x22"
+        },
+        {
+          "type": "conin",
+          "path": "ES_10V.USO",
+          "offset": "0x23"
+        },
+        {
+          "type": "conin",
+          "path": "ES_11.USO",
+          "offset": "0x24"
+        },
+        {
+          "type": "conin",
+          "path": "ES_11V.USO",
+          "offset": "0x25"
+        },
+        {
+          "type": "conin",
+          "path": "OFF.USO",
+          "offset": "0x26"
+        },
+        {
+          "type": "conin",
+          "path": "OFFV.USO",
+          "offset": "0x27"
+        },
+        {
+          "type": "shell",
+          "path": "usmd_98",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "usmd",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "comment",
+          "text": " SSGバランスDX用\n\t\t\t<title code=\"0x10\">ES_01.USO</title>\n\t\t\t<title code=\"0x12\">ES_02.USO</title>\n\t\t\t<title code=\"0x14\">ES_03.USO</title>\n\t\t\t<title code=\"0x16\">ES_04.USO</title>\n\t\t\t<title code=\"0x18\">ES_05.USO</title>\n\t\t\t<title code=\"0x1A\">ES_06.USO</title>\n\t\t\t<title code=\"0x1C\">ES_07.USO</title>\n\t\t\t<title code=\"0x1E\">ES_08.USO</title>\n\t\t\t<title code=\"0x20\">ES_09.USO</title>\n\t\t\t<title code=\"0x22\">ES_10.USO</title>\n\t\t\t<title code=\"0x24\">ES_11.USO</title>\n"
+        },
+        {
+          "kind": "title",
+          "code": "0x27",
+          "title": "[STOP]"
+        },
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "ES_01V.USO"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "ES_02V.USO"
+        },
+        {
+          "kind": "title",
+          "code": "0x15",
+          "title": "ES_03V.USO"
+        },
+        {
+          "kind": "title",
+          "code": "0x17",
+          "title": "ES_04V.USO"
+        },
+        {
+          "kind": "title",
+          "code": "0x19",
+          "title": "ES_05V.USO"
+        },
+        {
+          "kind": "title",
+          "code": "0x1B",
+          "title": "ES_06V.USO"
+        },
+        {
+          "kind": "title",
+          "code": "0x1D",
+          "title": "ES_07V.USO"
+        },
+        {
+          "kind": "title",
+          "code": "0x1F",
+          "title": "ES_08V.USO"
+        },
+        {
+          "kind": "title",
+          "code": "0x21",
+          "title": "ES_09V.USO"
+        },
+        {
+          "kind": "title",
+          "code": "0x23",
+          "title": "ES_10V.USO"
+        },
+        {
+          "kind": "title",
+          "code": "0x25",
+          "title": "ES_11V.USO"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/fairydust.xml",
+      "source_order": 1784,
+      "archive": "es95_98",
+      "id": "es95-98-opn"
+    },
+    {
+      "title": "[PC-9801] エスカレーション'95 ～お姉さまって呼んでいいですか?～(GS)",
+      "driver": {
+        "name": "pc98dos",
+        "type": "beep",
+        "alias": "FairyDust",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "clockmul",
+          "value": "8"
+        },
+        {
+          "name": "midiout",
+          "value": "1"
+        },
+        {
+          "name": "midiout_type",
+          "value": "4"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "MFD.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MFD_98.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "ES_01.MFD",
+          "offset": "0x10"
+        },
+        {
+          "type": "file",
+          "path": "ES_02.MFD",
+          "offset": "0x11"
+        },
+        {
+          "type": "file",
+          "path": "ES_03.MFD",
+          "offset": "0x12"
+        },
+        {
+          "type": "file",
+          "path": "ES_04.MFD",
+          "offset": "0x13"
+        },
+        {
+          "type": "file",
+          "path": "ES_05.MFD",
+          "offset": "0x14"
+        },
+        {
+          "type": "file",
+          "path": "ES_06.MFD",
+          "offset": "0x15"
+        },
+        {
+          "type": "file",
+          "path": "ES_07.MFD",
+          "offset": "0x16"
+        },
+        {
+          "type": "file",
+          "path": "ES_08.MFD",
+          "offset": "0x17"
+        },
+        {
+          "type": "file",
+          "path": "ES_09.MFD",
+          "offset": "0x18"
+        },
+        {
+          "type": "file",
+          "path": "ES_10.MFD",
+          "offset": "0x19"
+        },
+        {
+          "type": "file",
+          "path": "ES_11.MFD",
+          "offset": "0x1a"
+        },
+        {
+          "type": "file",
+          "path": "OFF.MFD",
+          "offset": "0x1b"
+        },
+        {
+          "type": "shell",
+          "path": "mfd",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "mfd_98",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x1b",
+          "title": "OFF.MFD   : [STOP]"
+        },
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "ES_01.MFD :"
+        },
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "ES_02.MFD :"
+        },
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "ES_03.MFD :"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "ES_04.MFD :"
+        },
+        {
+          "kind": "title",
+          "code": "0x14",
+          "title": "ES_05.MFD :"
+        },
+        {
+          "kind": "title",
+          "code": "0x15",
+          "title": "ES_06.MFD :"
+        },
+        {
+          "kind": "title",
+          "code": "0x16",
+          "title": "ES_07.MFD :"
+        },
+        {
+          "kind": "title",
+          "code": "0x17",
+          "title": "ES_08.MFD :"
+        },
+        {
+          "kind": "title",
+          "code": "0x18",
+          "title": "ES_09.MFD :"
+        },
+        {
+          "kind": "title",
+          "code": "0x19",
+          "title": "ES_10.MFD :"
+        },
+        {
+          "kind": "title",
+          "code": "0x1a",
+          "title": "ES_11.MFD :"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/fairydust.xml",
+      "source_order": 1785,
+      "archive": "es95_98",
+      "id": "es95-98-beep"
+    },
+    {
+      "title": "[PC-9801] フェアリーダスト ファン感謝ディスク FINAL",
+      "driver": {
+        "name": "pc98dos",
+        "type": "opn",
+        "alias": "FairyDust",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "funcvect",
+          "value": "0x7e"
+        },
+        {
+          "name": "clockmul",
+          "value": "8"
+        },
+        {
+          "name": "showfm3ex",
+          "value": "1"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "PMD_98.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "PMD.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "SOUND.EFC",
+          "offset": "0x08"
+        },
+        {
+          "type": "file",
+          "path": "BFAST.M",
+          "offset": "0x10"
+        },
+        {
+          "type": "file",
+          "path": "BKATI.M",
+          "offset": "0x11"
+        },
+        {
+          "type": "file",
+          "path": "BMAIN.M",
+          "offset": "0x12"
+        },
+        {
+          "type": "file",
+          "path": "BMAKE.M",
+          "offset": "0x13"
+        },
+        {
+          "type": "file",
+          "path": "DOC.M",
+          "offset": "0x14"
+        },
+        {
+          "type": "file",
+          "path": "QEND.M",
+          "offset": "0x15"
+        },
+        {
+          "type": "file",
+          "path": "QMAIN.M",
+          "offset": "0x16"
+        },
+        {
+          "type": "file",
+          "path": "QOVER.M",
+          "offset": "0x17"
+        },
+        {
+          "type": "file",
+          "path": "QTITLE.M",
+          "offset": "0x18"
+        },
+        {
+          "type": "file",
+          "path": "SELECT.M",
+          "offset": "0x19"
+        },
+        {
+          "type": "file",
+          "path": "STITLE.M",
+          "offset": "0x1A"
+        },
+        {
+          "type": "shell",
+          "path": "PMD /k/m8/v0/e2",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "pmd_98",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x1A",
+          "title": "STITLE.M  : Title"
+        },
+        {
+          "kind": "title",
+          "code": "0x19",
+          "title": "SELECT.M  : SELECT"
+        },
+        {
+          "kind": "title",
+          "code": "0x14",
+          "title": "DOC.M     : 色々"
+        },
+        {
+          "kind": "title",
+          "code": "0x18",
+          "title": "QTITLE.M  : Quiz Title"
+        },
+        {
+          "kind": "title",
+          "code": "0x16",
+          "title": "QMAIN.M   : Theme of Quiz"
+        },
+        {
+          "kind": "title",
+          "code": "0x15",
+          "title": "QEND.M    : Quiz Ending"
+        },
+        {
+          "kind": "title",
+          "code": "0x17",
+          "title": "QOVER.M   : Quiz Game Over"
+        },
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "BFAST.M   : 闘う前の曲"
+        },
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "BMAIN.M   : Theme of Battle"
+        },
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "BKATI.M   : 勝ったのね?"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "BMAKE.M   : 負けちゃったぁ"
+        },
+        {
+          "kind": "range",
+          "min": "0x0801",
+          "max": "0x0813",
+          "title_format": "SOUND.EFC : %2X",
+          "extcode": "1"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/fairydust.xml",
+      "source_order": 1786,
+      "archive": "fdus_fan_98",
+      "id": "fdus-fan-98-opn"
+    },
+    {
+      "title": "[PC-9801] レモンエンジェル(OPN)",
+      "driver": {
+        "name": "pc98dos",
+        "type": "opn",
+        "alias": "FairyDust",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "clockmul",
+          "value": "8"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "FMX.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "FMXP.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "FAKECALL.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "shell",
+          "path": "FAKECALL",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "FMX",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "FMXP",
+          "offset": "0"
+        },
+        {
+          "type": "file",
+          "path": "LA01.FMX",
+          "offset": "0x10"
+        },
+        {
+          "type": "file",
+          "path": "LA02.FMX",
+          "offset": "0x11"
+        },
+        {
+          "type": "file",
+          "path": "LA03.FMX",
+          "offset": "0x12"
+        },
+        {
+          "type": "file",
+          "path": "LA04.FMX",
+          "offset": "0x13"
+        },
+        {
+          "type": "file",
+          "path": "LA05.FMX",
+          "offset": "0x14"
+        },
+        {
+          "type": "file",
+          "path": "LA06.FMX",
+          "offset": "0x15"
+        },
+        {
+          "type": "file",
+          "path": "LA07.FMX",
+          "offset": "0x16"
+        },
+        {
+          "type": "file",
+          "path": "LA08.FMX",
+          "offset": "0x17"
+        },
+        {
+          "type": "file",
+          "path": "LA09.FMX",
+          "offset": "0x18"
+        },
+        {
+          "type": "file",
+          "path": "LA10.FMX",
+          "offset": "0x19"
+        },
+        {
+          "type": "file",
+          "path": "LA11.FMX",
+          "offset": "0x1a"
+        },
+        {
+          "type": "file",
+          "path": "LA12.FMX",
+          "offset": "0x1b"
+        },
+        {
+          "type": "file",
+          "path": "LAEFC.FMX",
+          "offset": "0x1c"
+        },
+        {
+          "type": "file",
+          "path": "LAEYE.FMX",
+          "offset": "0x1d"
+        },
+        {
+          "type": "file",
+          "path": "STUP.FMX",
+          "offset": "0x1e"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "LA01.FMX  : たそがれロンリー"
+        },
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "LA02.FMX  : セレクト"
+        },
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "LA03.FMX  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "LA04.FMX  : いちごのボーイ"
+        },
+        {
+          "kind": "title",
+          "code": "0x14",
+          "title": "LA05.FMX  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x15",
+          "title": "LA06.FMX  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x16",
+          "title": "LA07.FMX  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x17",
+          "title": "LA08.FMX  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x18",
+          "title": "LA09.FMX  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x19",
+          "title": "LA10.FMX  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x1a",
+          "title": "LA11.FMX  : 天使はエスケープ"
+        },
+        {
+          "kind": "title",
+          "code": "0x1b",
+          "title": "LA12.FMX  :"
+        },
+        {
+          "kind": "comment",
+          "text": "\t<title code=\"0x1c\">LAEFC.FMX</title> "
+        },
+        {
+          "kind": "title",
+          "code": "0x1d",
+          "title": "LAEYE.FMX : fairy dust eyecatch"
+        },
+        {
+          "kind": "title",
+          "code": "0x1e",
+          "title": "STUP.FMX  : インストール"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/fairydust.xml",
+      "source_order": 1787,
+      "archive": "lemmona_98",
+      "id": "lemmona-98-opn"
+    },
+    {
+      "title": "[PC-9801] レモンエンジェル(86)",
+      "driver": {
+        "name": "pc98dos",
+        "type": "86",
+        "alias": "FairyDust",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "clockmul",
+          "value": "8"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "FMX.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "FMXP.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "FAKECALL.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "shell",
+          "path": "FAKECALL",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "FMX",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "FMXP",
+          "offset": "0"
+        },
+        {
+          "type": "file",
+          "path": "LA01.FMX",
+          "offset": "0x10"
+        },
+        {
+          "type": "file",
+          "path": "LA02.FMX",
+          "offset": "0x11"
+        },
+        {
+          "type": "file",
+          "path": "LA03.FMX",
+          "offset": "0x12"
+        },
+        {
+          "type": "file",
+          "path": "LA04.FMX",
+          "offset": "0x13"
+        },
+        {
+          "type": "file",
+          "path": "LA05.FMX",
+          "offset": "0x14"
+        },
+        {
+          "type": "file",
+          "path": "LA06.FMX",
+          "offset": "0x15"
+        },
+        {
+          "type": "file",
+          "path": "LA07.FMX",
+          "offset": "0x16"
+        },
+        {
+          "type": "file",
+          "path": "LA08.FMX",
+          "offset": "0x17"
+        },
+        {
+          "type": "file",
+          "path": "LA09.FMX",
+          "offset": "0x18"
+        },
+        {
+          "type": "file",
+          "path": "LA10.FMX",
+          "offset": "0x19"
+        },
+        {
+          "type": "file",
+          "path": "LA11.FMX",
+          "offset": "0x1a"
+        },
+        {
+          "type": "file",
+          "path": "LA12.FMX",
+          "offset": "0x1b"
+        },
+        {
+          "type": "file",
+          "path": "LAEFC.FMX",
+          "offset": "0x1c"
+        },
+        {
+          "type": "file",
+          "path": "LAEYE.FMX",
+          "offset": "0x1d"
+        },
+        {
+          "type": "file",
+          "path": "STUP.FMX",
+          "offset": "0x1e"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "LA01.FMX  : たそがれロンリー"
+        },
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "LA02.FMX  : セレクト"
+        },
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "LA03.FMX  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "LA04.FMX  : いちごのボーイ"
+        },
+        {
+          "kind": "title",
+          "code": "0x14",
+          "title": "LA05.FMX  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x15",
+          "title": "LA06.FMX  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x16",
+          "title": "LA07.FMX  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x17",
+          "title": "LA08.FMX  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x18",
+          "title": "LA09.FMX  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x19",
+          "title": "LA10.FMX  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x1a",
+          "title": "LA11.FMX  : 天使はエスケープ"
+        },
+        {
+          "kind": "title",
+          "code": "0x1b",
+          "title": "LA12.FMX"
+        },
+        {
+          "kind": "comment",
+          "text": "\t<title code=\"0x1c\">LAEFC.FMX</title> "
+        },
+        {
+          "kind": "title",
+          "code": "0x1d",
+          "title": "LAEYE.FMX : fairy dust eyecatch"
+        },
+        {
+          "kind": "title",
+          "code": "0x1e",
+          "title": "STUP.FMX  : インストール"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/fairydust.xml",
+      "source_order": 1788,
+      "archive": "lemmona_98",
+      "id": "lemmona-98-86"
+    },
+    {
+      "title": "[PC-9801] レモンエンジェル(GS)",
+      "driver": {
+        "name": "pc98dos",
+        "type": "opn",
+        "alias": "FairyDust",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "clockmul",
+          "value": "8"
+        },
+        {
+          "name": "midiout",
+          "value": "1"
+        },
+        {
+          "name": "midiout_type",
+          "value": "4"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "FMX.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "FMXPM.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "FAKECALL.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "shell",
+          "path": "FAKECALL",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "FMX",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "FMXPM",
+          "offset": "0"
+        },
+        {
+          "type": "file",
+          "path": "LA01.MMX",
+          "offset": "0x10"
+        },
+        {
+          "type": "file",
+          "path": "LA02.MMX",
+          "offset": "0x11"
+        },
+        {
+          "type": "file",
+          "path": "LA03.MMX",
+          "offset": "0x12"
+        },
+        {
+          "type": "file",
+          "path": "LA04.MMX",
+          "offset": "0x13"
+        },
+        {
+          "type": "file",
+          "path": "LA05.MMX",
+          "offset": "0x14"
+        },
+        {
+          "type": "file",
+          "path": "LA06.MMX",
+          "offset": "0x15"
+        },
+        {
+          "type": "file",
+          "path": "LA07.MMX",
+          "offset": "0x16"
+        },
+        {
+          "type": "file",
+          "path": "LA08.MMX",
+          "offset": "0x17"
+        },
+        {
+          "type": "file",
+          "path": "LA09.MMX",
+          "offset": "0x18"
+        },
+        {
+          "type": "file",
+          "path": "LA10.MMX",
+          "offset": "0x19"
+        },
+        {
+          "type": "file",
+          "path": "LA11.MMX",
+          "offset": "0x1a"
+        },
+        {
+          "type": "file",
+          "path": "LA12.MMX",
+          "offset": "0x1b"
+        },
+        {
+          "type": "file",
+          "path": "LAEYE.MMX",
+          "offset": "0x1c"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "LA01.MMX  : たそがれロンリー"
+        },
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "LA02.MMX  : セレクト"
+        },
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "LA03.MMX  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "LA04.MMX  : いちごのボーイ"
+        },
+        {
+          "kind": "title",
+          "code": "0x14",
+          "title": "LA05.MMX  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x15",
+          "title": "LA06.MMX  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x16",
+          "title": "LA07.MMX  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x17",
+          "title": "LA08.MMX  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x18",
+          "title": "LA09.MMX  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x19",
+          "title": "LA10.MMX  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x1a",
+          "title": "LA11.MMX  : 天使はエスケープ"
+        },
+        {
+          "kind": "title",
+          "code": "0x1b",
+          "title": "LA12.MMX  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x1c",
+          "title": "LAEYE.MMX : fairy dust eyecatch"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/fairydust.xml",
+      "source_order": 1789,
+      "archive": "lemmona_98",
+      "id": "lemmona-98-opn-2"
+    },
+    {
+      "title": "[PC-9801] 亜美・風立ちぬ",
+      "driver": {
+        "name": "pc98dos",
+        "type": "opn",
+        "alias": "FairyDust",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "funcvect",
+          "value": "0x7e"
+        },
+        {
+          "name": "clockmul",
+          "value": "8"
+        },
+        {
+          "name": "showfm3ex",
+          "value": "1"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "PMD_98.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "PMD.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "AMI_01.M",
+          "offset": "0x10"
+        },
+        {
+          "type": "file",
+          "path": "AMI_02.M",
+          "offset": "0x11"
+        },
+        {
+          "type": "file",
+          "path": "AMI_03.M",
+          "offset": "0x12"
+        },
+        {
+          "type": "file",
+          "path": "AMI_04.M",
+          "offset": "0x13"
+        },
+        {
+          "type": "file",
+          "path": "AMI_05.M",
+          "offset": "0x14"
+        },
+        {
+          "type": "file",
+          "path": "AMI_06.M",
+          "offset": "0x15"
+        },
+        {
+          "type": "file",
+          "path": "AMI_07.M",
+          "offset": "0x16"
+        },
+        {
+          "type": "file",
+          "path": "AMI_08.M",
+          "offset": "0x17"
+        },
+        {
+          "type": "file",
+          "path": "AMI_09.M",
+          "offset": "0x18"
+        },
+        {
+          "type": "file",
+          "path": "AMI_10.M",
+          "offset": "0x19"
+        },
+        {
+          "type": "file",
+          "path": "AMI_11.M",
+          "offset": "0x1a"
+        },
+        {
+          "type": "file",
+          "path": "AMI_12.M",
+          "offset": "0x1b"
+        },
+        {
+          "type": "file",
+          "path": "AMI_21.M",
+          "offset": "0x1c"
+        },
+        {
+          "type": "file",
+          "path": "AMI_212.M",
+          "offset": "0x1d"
+        },
+        {
+          "type": "file",
+          "path": "AMI_22.M",
+          "offset": "0x1e"
+        },
+        {
+          "type": "file",
+          "path": "AMI_23.M",
+          "offset": "0x1f"
+        },
+        {
+          "type": "file",
+          "path": "AMI_24.M",
+          "offset": "0x20"
+        },
+        {
+          "type": "file",
+          "path": "AMI_25.M",
+          "offset": "0x21"
+        },
+        {
+          "type": "file",
+          "path": "AMI_26.M",
+          "offset": "0x22"
+        },
+        {
+          "type": "file",
+          "path": "AMI_27.M",
+          "offset": "0x23"
+        },
+        {
+          "type": "file",
+          "path": "AMI_28.M",
+          "offset": "0x24"
+        },
+        {
+          "type": "file",
+          "path": "AMI_29.M",
+          "offset": "0x25"
+        },
+        {
+          "type": "file",
+          "path": "AMI_32.M",
+          "offset": "0x26"
+        },
+        {
+          "type": "file",
+          "path": "AMI_33.M",
+          "offset": "0x27"
+        },
+        {
+          "type": "shell",
+          "path": "PMD /M12 /K /V0 /E0",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "pmd_98",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "AMI_01.M :"
+        },
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "AMI_02.M :"
+        },
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "AMI_03.M :"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "AMI_04.M :"
+        },
+        {
+          "kind": "title",
+          "code": "0x14",
+          "title": "AMI_05.M :"
+        },
+        {
+          "kind": "title",
+          "code": "0x15",
+          "title": "AMI_06.M :"
+        },
+        {
+          "kind": "title",
+          "code": "0x16",
+          "title": "AMI_07.M :"
+        },
+        {
+          "kind": "title",
+          "code": "0x17",
+          "title": "AMI_08.M :"
+        },
+        {
+          "kind": "title",
+          "code": "0x18",
+          "title": "AMI_09.M :"
+        },
+        {
+          "kind": "title",
+          "code": "0x19",
+          "title": "AMI_10.M : キャンドルを消さないで"
+        },
+        {
+          "kind": "title",
+          "code": "0x1a",
+          "title": "AMI_11.M :"
+        },
+        {
+          "kind": "title",
+          "code": "0x1b",
+          "title": "AMI_12.M :"
+        },
+        {
+          "kind": "title",
+          "code": "0x1c",
+          "title": "AMI_21.M : 亜美のGuilty Night!"
+        },
+        {
+          "kind": "comment",
+          "text": "\t<title code=\"0x1d\">AMI_212.M</title> AMI_21とCRC一致 "
+        },
+        {
+          "kind": "title",
+          "code": "0x1e",
+          "title": "AMI_22.M :"
+        },
+        {
+          "kind": "title",
+          "code": "0x1f",
+          "title": "AMI_23.M :"
+        },
+        {
+          "kind": "title",
+          "code": "0x20",
+          "title": "AMI_24.M :"
+        },
+        {
+          "kind": "title",
+          "code": "0x21",
+          "title": "AMI_25.M :"
+        },
+        {
+          "kind": "title",
+          "code": "0x22",
+          "title": "AMI_26.M :"
+        },
+        {
+          "kind": "title",
+          "code": "0x23",
+          "title": "AMI_27.M :"
+        },
+        {
+          "kind": "title",
+          "code": "0x24",
+          "title": "AMI_28.M : My Love そして…"
+        },
+        {
+          "kind": "title",
+          "code": "0x25",
+          "title": "AMI_29.M :"
+        },
+        {
+          "kind": "title",
+          "code": "0x26",
+          "title": "AMI_32.M : 旅立ち"
+        },
+        {
+          "kind": "title",
+          "code": "0x27",
+          "title": "AMI_33.M : 恋はタイトロープ"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/fairydust.xml",
+      "source_order": 1790,
+      "archive": "ami_kaze_98",
+      "id": "ami-kaze-98-opn"
+    },
+    {
+      "title": "[PC-9801] 赤い水晶の瞳(OPN)",
+      "driver": {
+        "name": "pc98dos",
+        "type": "opn",
+        "alias": "FairyDust",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "funcvect",
+          "value": "0x7e"
+        },
+        {
+          "name": "clockmul",
+          "value": "8"
+        },
+        {
+          "name": "showfm3ex",
+          "value": "1"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "PMD_98.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "PMD.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "ANO_E01.M",
+          "offset": "0x10"
+        },
+        {
+          "type": "file",
+          "path": "ANO_E02.M",
+          "offset": "0x11"
+        },
+        {
+          "type": "file",
+          "path": "ANO_E03.M",
+          "offset": "0x12"
+        },
+        {
+          "type": "file",
+          "path": "ANO_E04.M",
+          "offset": "0x13"
+        },
+        {
+          "type": "file",
+          "path": "ANO_E05.M",
+          "offset": "0x14"
+        },
+        {
+          "type": "file",
+          "path": "ANO_H01.M",
+          "offset": "0x15"
+        },
+        {
+          "type": "file",
+          "path": "ANO_H02.M",
+          "offset": "0x16"
+        },
+        {
+          "type": "file",
+          "path": "ANO_H03.M",
+          "offset": "0x17"
+        },
+        {
+          "type": "file",
+          "path": "ANO_I01.M",
+          "offset": "0x18"
+        },
+        {
+          "type": "file",
+          "path": "ANO_I02.M",
+          "offset": "0x19"
+        },
+        {
+          "type": "file",
+          "path": "ANO_I03.M",
+          "offset": "0x1a"
+        },
+        {
+          "type": "file",
+          "path": "ANO_J01.M",
+          "offset": "0x1b"
+        },
+        {
+          "type": "file",
+          "path": "ANO_J02.M",
+          "offset": "0x1c"
+        },
+        {
+          "type": "file",
+          "path": "ANO_J03.M",
+          "offset": "0x1d"
+        },
+        {
+          "type": "file",
+          "path": "ANO_J04.M",
+          "offset": "0x1e"
+        },
+        {
+          "type": "file",
+          "path": "ANO_J05.M",
+          "offset": "0x1f"
+        },
+        {
+          "type": "file",
+          "path": "ANO_J06.M",
+          "offset": "0x20"
+        },
+        {
+          "type": "file",
+          "path": "ANO_J07.M",
+          "offset": "0x21"
+        },
+        {
+          "type": "file",
+          "path": "ANO_J08.M",
+          "offset": "0x22"
+        },
+        {
+          "type": "file",
+          "path": "ANO_J09.M",
+          "offset": "0x23"
+        },
+        {
+          "type": "file",
+          "path": "ANO_K01.M",
+          "offset": "0x24"
+        },
+        {
+          "type": "file",
+          "path": "ANO_K02.M",
+          "offset": "0x25"
+        },
+        {
+          "type": "file",
+          "path": "ANO_K03.M",
+          "offset": "0x26"
+        },
+        {
+          "type": "file",
+          "path": "ANO_K04.M",
+          "offset": "0x27"
+        },
+        {
+          "type": "file",
+          "path": "ANO_O01A.M",
+          "offset": "0x28"
+        },
+        {
+          "type": "file",
+          "path": "ANO_O01B.M",
+          "offset": "0x29"
+        },
+        {
+          "type": "file",
+          "path": "ANO_O02.M",
+          "offset": "0x2a"
+        },
+        {
+          "type": "file",
+          "path": "ANO_O03.M",
+          "offset": "0x2b"
+        },
+        {
+          "type": "file",
+          "path": "ANO_S01.M",
+          "offset": "0x2c"
+        },
+        {
+          "type": "shell",
+          "path": "PMD # /K /I",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "pmd_98",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x28",
+          "title": "ANO_O01A.M : タイトル"
+        },
+        {
+          "kind": "title",
+          "code": "0x29",
+          "title": "ANO_O01B.M : タイトル"
+        },
+        {
+          "kind": "title",
+          "code": "0x2a",
+          "title": "ANO_O02.M  : ハード"
+        },
+        {
+          "kind": "title",
+          "code": "0x2b",
+          "title": "ANO_O03.M  : つなぎ"
+        },
+        {
+          "kind": "title",
+          "code": "0x1a",
+          "title": "ANO_I03.M  : 移動&会話1"
+        },
+        {
+          "kind": "title",
+          "code": "0x18",
+          "title": "ANO_I01.M  : 移動2"
+        },
+        {
+          "kind": "title",
+          "code": "0x19",
+          "title": "ANO_I02.M  : 移動3"
+        },
+        {
+          "kind": "title",
+          "code": "0x1f",
+          "title": "ANO_J05.M  : 移動(夜)"
+        },
+        {
+          "kind": "title",
+          "code": "0x1b",
+          "title": "ANO_J01.M  : 手帳オープン"
+        },
+        {
+          "kind": "title",
+          "code": "0x1c",
+          "title": "ANO_J02.M  : 推理中"
+        },
+        {
+          "kind": "title",
+          "code": "0x1d",
+          "title": "ANO_J03.M  : 推理終了(シナリオ後半)"
+        },
+        {
+          "kind": "title",
+          "code": "0x1e",
+          "title": "ANO_J04.M  : ミイラ発見"
+        },
+        {
+          "kind": "title",
+          "code": "0x20",
+          "title": "ANO_J06.M  : 強姦シーン"
+        },
+        {
+          "kind": "title",
+          "code": "0x21",
+          "title": "ANO_J07.M  : 対決"
+        },
+        {
+          "kind": "title",
+          "code": "0x22",
+          "title": "ANO_J08.M  : 酒場"
+        },
+        {
+          "kind": "title",
+          "code": "0x23",
+          "title": "ANO_J09.M  : 萌デッド"
+        },
+        {
+          "kind": "title",
+          "code": "0x15",
+          "title": "ANO_H01.M  : Hシーン1"
+        },
+        {
+          "kind": "title",
+          "code": "0x16",
+          "title": "ANO_H02.M  : Hシーン2"
+        },
+        {
+          "kind": "title",
+          "code": "0x17",
+          "title": "ANO_H03.M  : Hシーン3"
+        },
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "ANO_E01.M  : END(真琴)"
+        },
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "ANO_E02.M  : END(萌ハッピー)"
+        },
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "ANO_E03.M  : END(墓参り)"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "ANO_E04.M  : END(愛子)"
+        },
+        {
+          "kind": "title",
+          "code": "0x14",
+          "title": "ANO_E05.M  : END(逮捕)"
+        },
+        {
+          "kind": "title",
+          "code": "0x2c",
+          "title": "ANO_S01.M  : スタッフロール"
+        },
+        {
+          "kind": "title",
+          "code": "0x24",
+          "title": "ANO_K01.M  : シャワー音"
+        },
+        {
+          "kind": "title",
+          "code": "0x25",
+          "title": "ANO_K02.M  : 電話音"
+        },
+        {
+          "kind": "title",
+          "code": "0x26",
+          "title": "ANO_K03.M  : 電話音"
+        },
+        {
+          "kind": "title",
+          "code": "0x27",
+          "title": "ANO_K04.M  : 無音"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/fairydust.xml",
+      "source_order": 1791,
+      "archive": "akasui_98",
+      "id": "akasui-98-opn"
+    },
+    {
+      "title": "[PC-9801] 赤い水晶の瞳(GS)",
+      "driver": {
+        "name": "pc98dos",
+        "type": "beep",
+        "alias": "FairyDust",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "clockmul",
+          "value": "8"
+        },
+        {
+          "name": "midiout",
+          "value": "1"
+        },
+        {
+          "name": "midiout_type",
+          "value": "4"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "MMD.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MMP_HOOT.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "ANO_E01.MMD",
+          "offset": "0x10"
+        },
+        {
+          "type": "file",
+          "path": "ANO_E02.MMD",
+          "offset": "0x11"
+        },
+        {
+          "type": "file",
+          "path": "ANO_E03.MMD",
+          "offset": "0x12"
+        },
+        {
+          "type": "file",
+          "path": "ANO_E04.MMD",
+          "offset": "0x13"
+        },
+        {
+          "type": "file",
+          "path": "ANO_E05.MMD",
+          "offset": "0x14"
+        },
+        {
+          "type": "file",
+          "path": "ANO_H01.MMD",
+          "offset": "0x15"
+        },
+        {
+          "type": "file",
+          "path": "ANO_H02.MMD",
+          "offset": "0x16"
+        },
+        {
+          "type": "file",
+          "path": "ANO_H03.MMD",
+          "offset": "0x17"
+        },
+        {
+          "type": "file",
+          "path": "ANO_I01.MMD",
+          "offset": "0x18"
+        },
+        {
+          "type": "file",
+          "path": "ANO_I02.MMD",
+          "offset": "0x19"
+        },
+        {
+          "type": "file",
+          "path": "ANO_I03.MMD",
+          "offset": "0x1a"
+        },
+        {
+          "type": "file",
+          "path": "ANO_J01.MMD",
+          "offset": "0x1b"
+        },
+        {
+          "type": "file",
+          "path": "ANO_J02.MMD",
+          "offset": "0x1c"
+        },
+        {
+          "type": "file",
+          "path": "ANO_J03.MMD",
+          "offset": "0x1d"
+        },
+        {
+          "type": "file",
+          "path": "ANO_J04.MMD",
+          "offset": "0x1e"
+        },
+        {
+          "type": "file",
+          "path": "ANO_J05.MMD",
+          "offset": "0x1f"
+        },
+        {
+          "type": "file",
+          "path": "ANO_J06.MMD",
+          "offset": "0x20"
+        },
+        {
+          "type": "file",
+          "path": "ANO_J07.MMD",
+          "offset": "0x21"
+        },
+        {
+          "type": "file",
+          "path": "ANO_J08.MMD",
+          "offset": "0x22"
+        },
+        {
+          "type": "file",
+          "path": "ANO_J09.MMD",
+          "offset": "0x23"
+        },
+        {
+          "type": "file",
+          "path": "ANO_K01.MMD",
+          "offset": "0x24"
+        },
+        {
+          "type": "file",
+          "path": "ANO_K02.MMD",
+          "offset": "0x25"
+        },
+        {
+          "type": "file",
+          "path": "ANO_K03.MMD",
+          "offset": "0x26"
+        },
+        {
+          "type": "file",
+          "path": "ANO_K04.MMD",
+          "offset": "0x27"
+        },
+        {
+          "type": "file",
+          "path": "ANO_O01A.MMD",
+          "offset": "0x28"
+        },
+        {
+          "type": "file",
+          "path": "ANO_O01B.MMD",
+          "offset": "0x29"
+        },
+        {
+          "type": "file",
+          "path": "ANO_O02.MMD",
+          "offset": "0x2a"
+        },
+        {
+          "type": "file",
+          "path": "ANO_O03.MMD",
+          "offset": "0x2b"
+        },
+        {
+          "type": "file",
+          "path": "ANO_S01.MMD",
+          "offset": "0x2c"
+        },
+        {
+          "type": "shell",
+          "path": "MMD /K /D",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "MMP_HOOT",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x28",
+          "title": "ANO_O01A.MMD : タイトル"
+        },
+        {
+          "kind": "title",
+          "code": "0x29",
+          "title": "ANO_O01B.MMD : タイトル"
+        },
+        {
+          "kind": "title",
+          "code": "0x2a",
+          "title": "ANO_O02.MMD  : ハード"
+        },
+        {
+          "kind": "title",
+          "code": "0x2b",
+          "title": "ANO_O03.MMD  : つなぎ"
+        },
+        {
+          "kind": "title",
+          "code": "0x1a",
+          "title": "ANO_I03.MMD  : 移動&会話1"
+        },
+        {
+          "kind": "title",
+          "code": "0x18",
+          "title": "ANO_I01.MMD  : 移動2"
+        },
+        {
+          "kind": "title",
+          "code": "0x19",
+          "title": "ANO_I02.MMD  : 移動3"
+        },
+        {
+          "kind": "title",
+          "code": "0x1f",
+          "title": "ANO_J05.MMD  : 移動(夜)"
+        },
+        {
+          "kind": "title",
+          "code": "0x1b",
+          "title": "ANO_J01.MMD  : 手帳オープン"
+        },
+        {
+          "kind": "title",
+          "code": "0x1c",
+          "title": "ANO_J02.MMD  : 推理中"
+        },
+        {
+          "kind": "title",
+          "code": "0x1d",
+          "title": "ANO_J03.MMD  : 推理終了(シナリオ後半)"
+        },
+        {
+          "kind": "title",
+          "code": "0x1e",
+          "title": "ANO_J04.MMD  : ミイラ発見"
+        },
+        {
+          "kind": "title",
+          "code": "0x20",
+          "title": "ANO_J06.MMD  : 強姦シーン"
+        },
+        {
+          "kind": "title",
+          "code": "0x21",
+          "title": "ANO_J07.MMD  : 対決"
+        },
+        {
+          "kind": "title",
+          "code": "0x22",
+          "title": "ANO_J08.MMD  : 酒場"
+        },
+        {
+          "kind": "title",
+          "code": "0x23",
+          "title": "ANO_J09.MMD  : 萌デッド"
+        },
+        {
+          "kind": "title",
+          "code": "0x15",
+          "title": "ANO_H01.MMD  : Hシーン1"
+        },
+        {
+          "kind": "title",
+          "code": "0x16",
+          "title": "ANO_H02.MMD  : Hシーン2"
+        },
+        {
+          "kind": "title",
+          "code": "0x17",
+          "title": "ANO_H03.MMD  : Hシーン3"
+        },
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "ANO_E01.MMD  : END(真琴)"
+        },
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "ANO_E02.MMD  : END(萌ハッピー)"
+        },
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "ANO_E03.MMD  : END(墓参り)"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "ANO_E04.MMD  : END(愛子)"
+        },
+        {
+          "kind": "title",
+          "code": "0x14",
+          "title": "ANO_E05.MMD  : END(逮捕)"
+        },
+        {
+          "kind": "title",
+          "code": "0x2c",
+          "title": "ANO_S01.MMD  : スタッフロール"
+        },
+        {
+          "kind": "title",
+          "code": "0x24",
+          "title": "ANO_K01.MMD  : シャワー音"
+        },
+        {
+          "kind": "title",
+          "code": "0x25",
+          "title": "ANO_K02.MMD  : 電話音"
+        },
+        {
+          "kind": "title",
+          "code": "0x26",
+          "title": "ANO_K03.MMD  : 電話音"
+        },
+        {
+          "kind": "title",
+          "code": "0x27",
+          "title": "ANO_K04.MMD  : 無音"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/fairydust.xml",
+      "source_order": 1792,
+      "archive": "akasui_98",
+      "id": "akasui-98-beep"
+    },
+    {
+      "title": "[PC-9801] 超次元伝説RALL III ～覚醒編～(OPN)",
+      "driver": {
+        "name": "pc98dos",
+        "type": "opn",
+        "alias": "FairyDust",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "funcvect",
+          "value": "0x7e"
+        },
+        {
+          "name": "clockmul",
+          "value": "8"
+        },
+        {
+          "name": "showfm3ex",
+          "value": "1"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "PMD_98.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "PMD.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "RALL_SE.EFC",
+          "offset": "0x08"
+        },
+        {
+          "type": "file",
+          "path": "RALL_01.M",
+          "offset": "0x10"
+        },
+        {
+          "type": "file",
+          "path": "RALL_02.M",
+          "offset": "0x11"
+        },
+        {
+          "type": "file",
+          "path": "RALL_09.M",
+          "offset": "0x12"
+        },
+        {
+          "type": "file",
+          "path": "RALL_11.M",
+          "offset": "0x13"
+        },
+        {
+          "type": "file",
+          "path": "RALL_12.M",
+          "offset": "0x14"
+        },
+        {
+          "type": "file",
+          "path": "RALL_13.M",
+          "offset": "0x15"
+        },
+        {
+          "type": "file",
+          "path": "RALL_14.M",
+          "offset": "0x16"
+        },
+        {
+          "type": "file",
+          "path": "RALL_15.M",
+          "offset": "0x17"
+        },
+        {
+          "type": "file",
+          "path": "RALL_16.M",
+          "offset": "0x18"
+        },
+        {
+          "type": "file",
+          "path": "RALL_20.M",
+          "offset": "0x19"
+        },
+        {
+          "type": "file",
+          "path": "RALL_21.M",
+          "offset": "0x1a"
+        },
+        {
+          "type": "file",
+          "path": "RALL_22.M",
+          "offset": "0x1b"
+        },
+        {
+          "type": "shell",
+          "path": "PMD /M15 /V0 /K",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "pmd_98",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "RALL_01.M   : 町(Endress Gossip)"
+        },
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "RALL_02.M   : Battle I(Winning Expectation)"
+        },
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "RALL_09.M   : Opening(Single Luster)"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "RALL_11.M   : Stage Extend I"
+        },
+        {
+          "kind": "title",
+          "code": "0x14",
+          "title": "RALL_12.M   : Stage Extend II"
+        },
+        {
+          "kind": "title",
+          "code": "0x15",
+          "title": "RALL_13.M   : Ending I"
+        },
+        {
+          "kind": "title",
+          "code": "0x16",
+          "title": "RALL_14.M   : トリラス村消失"
+        },
+        {
+          "kind": "title",
+          "code": "0x17",
+          "title": "RALL_15.M   : イグドラシル神殿"
+        },
+        {
+          "kind": "title",
+          "code": "0x18",
+          "title": "RALL_16.M   : ショック"
+        },
+        {
+          "kind": "title",
+          "code": "0x19",
+          "title": "RALL_20.M   : Pinch"
+        },
+        {
+          "kind": "title",
+          "code": "0x1a",
+          "title": "RALL_21.M   :"
+        },
+        {
+          "kind": "title",
+          "code": "0x1b",
+          "title": "RALL_22.M   :"
+        },
+        {
+          "kind": "range",
+          "min": "0x0803",
+          "max": "0x0805",
+          "title_format": "RALL_SE.EFC : %2X",
+          "extcode": "1"
+        },
+        {
+          "kind": "range",
+          "min": "0x080b",
+          "max": "0x0810",
+          "title_format": "RALL_SE.EFC : %2X",
+          "extcode": "1"
+        },
+        {
+          "kind": "range",
+          "min": "0x0812",
+          "max": "0x082b",
+          "title_format": "RALL_SE.EFC : %2X",
+          "extcode": "1"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/fairydust.xml",
+      "source_order": 1793,
+      "archive": "rall3_98",
+      "id": "rall3-98-opn"
+    },
+    {
+      "title": "[PC-9801] 超次元伝説RALL III ～覚醒編～(GS)",
+      "driver": {
+        "name": "pc98dos",
+        "type": "beep",
+        "alias": "FairyDust",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "clockmul",
+          "value": "8"
+        },
+        {
+          "name": "midiout",
+          "value": "1"
+        },
+        {
+          "name": "midiout_type",
+          "value": "4"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "MMD.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MMP_HOOT.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "RALL_01.MMD",
+          "offset": "0x10"
+        },
+        {
+          "type": "file",
+          "path": "RALL_02.MMD",
+          "offset": "0x11"
+        },
+        {
+          "type": "file",
+          "path": "RALL_09.MMD",
+          "offset": "0x12"
+        },
+        {
+          "type": "file",
+          "path": "RALL_11.MMD",
+          "offset": "0x13"
+        },
+        {
+          "type": "file",
+          "path": "RALL_12.MMD",
+          "offset": "0x14"
+        },
+        {
+          "type": "shell",
+          "path": "MMD /M30 /K",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "MMP_HOOT",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "RALL_01.MMD : Endress Gossip"
+        },
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "RALL_02.MMD : Winning Expection"
+        },
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "RALL_09.MMD : Opening Theme"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "RALL_11.MMD : Opening Theme"
+        },
+        {
+          "kind": "title",
+          "code": "0x14",
+          "title": "RALL_12.MMD : The Next Stage"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/fairydust.xml",
+      "source_order": 1794,
+      "archive": "rall3_98",
+      "id": "rall3-98-beep"
+    },
+    {
+      "title": "[PC-9801] こうかん日記第II章 ～聖夜をあなたと～(OPN)",
+      "driver": {
+        "name": "pc98dos",
+        "type": "opn",
+        "alias": "FairyDust",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "clockmul",
+          "value": "4"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "MFD.EXE",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "mfd_98.com",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "M01.MID",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "M02.MID",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "M03.MID",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "M04.MID",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "M05.MID",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "M06.MID",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "M07.MID",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "M08.MID",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "M09.MID",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "M10.MID",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "M11.MID",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "M12.MID",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "M13.MID",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "M14.MID",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "M15.MID",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "M16.MID",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "M17.MID",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "M18.MID",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "M19.MID",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "M20.MID",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "M21.MID",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "M22.MID",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "M23_1.MID",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "M23_2.MID",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "M24.MID",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "M25.MID",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "M26.MID",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "M27.MID",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "M28.MID",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "M29.MID",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "M30.MID",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "M31.MID",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "M32.MID",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "M33.MID",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "M34.MID",
+          "offset": "-1"
+        },
+        {
+          "type": "conin",
+          "path": "M01.MID",
+          "offset": "0x00"
+        },
+        {
+          "type": "conin",
+          "path": "M02.MID",
+          "offset": "0x01"
+        },
+        {
+          "type": "conin",
+          "path": "M03.MID",
+          "offset": "0x02"
+        },
+        {
+          "type": "conin",
+          "path": "M04.MID",
+          "offset": "0x03"
+        },
+        {
+          "type": "conin",
+          "path": "M05.MID",
+          "offset": "0x04"
+        },
+        {
+          "type": "conin",
+          "path": "M06.MID",
+          "offset": "0x05"
+        },
+        {
+          "type": "conin",
+          "path": "M07.MID",
+          "offset": "0x06"
+        },
+        {
+          "type": "conin",
+          "path": "M08.MID",
+          "offset": "0x07"
+        },
+        {
+          "type": "conin",
+          "path": "M09.MID",
+          "offset": "0x08"
+        },
+        {
+          "type": "conin",
+          "path": "M10.MID",
+          "offset": "0x09"
+        },
+        {
+          "type": "conin",
+          "path": "M11.MID",
+          "offset": "0x0a"
+        },
+        {
+          "type": "conin",
+          "path": "M12.MID",
+          "offset": "0x0b"
+        },
+        {
+          "type": "conin",
+          "path": "M13.MID",
+          "offset": "0x0c"
+        },
+        {
+          "type": "conin",
+          "path": "M14.MID",
+          "offset": "0x0d"
+        },
+        {
+          "type": "conin",
+          "path": "M15.MID",
+          "offset": "0x0e"
+        },
+        {
+          "type": "conin",
+          "path": "M16.MID",
+          "offset": "0x0f"
+        },
+        {
+          "type": "conin",
+          "path": "M17.MID",
+          "offset": "0x10"
+        },
+        {
+          "type": "conin",
+          "path": "M18.MID",
+          "offset": "0x11"
+        },
+        {
+          "type": "conin",
+          "path": "M19.MID",
+          "offset": "0x12"
+        },
+        {
+          "type": "conin",
+          "path": "M20.MID",
+          "offset": "0x13"
+        },
+        {
+          "type": "conin",
+          "path": "M21.MID",
+          "offset": "0x14"
+        },
+        {
+          "type": "conin",
+          "path": "M22.MID",
+          "offset": "0x15"
+        },
+        {
+          "type": "conin",
+          "path": "M23_1.MID",
+          "offset": "0x16"
+        },
+        {
+          "type": "conin",
+          "path": "M23_2.MID",
+          "offset": "0x17"
+        },
+        {
+          "type": "conin",
+          "path": "M24.MID",
+          "offset": "0x18"
+        },
+        {
+          "type": "conin",
+          "path": "M25.MID",
+          "offset": "0x19"
+        },
+        {
+          "type": "conin",
+          "path": "M26.MID",
+          "offset": "0x1a"
+        },
+        {
+          "type": "conin",
+          "path": "M27.MID",
+          "offset": "0x1b"
+        },
+        {
+          "type": "conin",
+          "path": "M28.MID",
+          "offset": "0x1c"
+        },
+        {
+          "type": "conin",
+          "path": "M29.MID",
+          "offset": "0x1d"
+        },
+        {
+          "type": "conin",
+          "path": "M30.MID",
+          "offset": "0x1e"
+        },
+        {
+          "type": "conin",
+          "path": "M31.MID",
+          "offset": "0x1f"
+        },
+        {
+          "type": "conin",
+          "path": "M32.MID",
+          "offset": "0x20"
+        },
+        {
+          "type": "conin",
+          "path": "M33.MID",
+          "offset": "0x21"
+        },
+        {
+          "type": "conin",
+          "path": "M34.MID",
+          "offset": "0x22"
+        },
+        {
+          "type": "shell",
+          "path": "MFD L",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "mfd_98",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x020000",
+          "title": "M01.MID   :"
+        },
+        {
+          "kind": "title",
+          "code": "0x020001",
+          "title": "M02.MID   :"
+        },
+        {
+          "kind": "title",
+          "code": "0x020002",
+          "title": "M03.MID   :"
+        },
+        {
+          "kind": "title",
+          "code": "0x020003",
+          "title": "M04.MID   :"
+        },
+        {
+          "kind": "title",
+          "code": "0x020004",
+          "title": "M05.MID   :"
+        },
+        {
+          "kind": "title",
+          "code": "0x020005",
+          "title": "M06.MID   :"
+        },
+        {
+          "kind": "title",
+          "code": "0x020006",
+          "title": "M07.MID   :"
+        },
+        {
+          "kind": "title",
+          "code": "0x020007",
+          "title": "M08.MID   :"
+        },
+        {
+          "kind": "title",
+          "code": "0x020008",
+          "title": "M09.MID   :"
+        },
+        {
+          "kind": "title",
+          "code": "0x020009",
+          "title": "M10.MID   :"
+        },
+        {
+          "kind": "title",
+          "code": "0x02000a",
+          "title": "M11.MID   :"
+        },
+        {
+          "kind": "title",
+          "code": "0x02000b",
+          "title": "M12.MID   :"
+        },
+        {
+          "kind": "title",
+          "code": "0x02000c",
+          "title": "M13.MID   :"
+        },
+        {
+          "kind": "title",
+          "code": "0x02000d",
+          "title": "M14.MID   :"
+        },
+        {
+          "kind": "title",
+          "code": "0x02000e",
+          "title": "M15.MID   :"
+        },
+        {
+          "kind": "title",
+          "code": "0x02000f",
+          "title": "M16.MID   :"
+        },
+        {
+          "kind": "title",
+          "code": "0x020010",
+          "title": "M17.MID   :"
+        },
+        {
+          "kind": "title",
+          "code": "0x020011",
+          "title": "M18.MID   :"
+        },
+        {
+          "kind": "title",
+          "code": "0x020012",
+          "title": "M19.MID   :"
+        },
+        {
+          "kind": "title",
+          "code": "0x020013",
+          "title": "M20.MID   :"
+        },
+        {
+          "kind": "title",
+          "code": "0x020014",
+          "title": "M21.MID   :"
+        },
+        {
+          "kind": "title",
+          "code": "0x020015",
+          "title": "M22.MID   :"
+        },
+        {
+          "kind": "title",
+          "code": "0x020016",
+          "title": "M23_1.MID :"
+        },
+        {
+          "kind": "title",
+          "code": "0x020017",
+          "title": "M23_2.MID :"
+        },
+        {
+          "kind": "title",
+          "code": "0x020018",
+          "title": "M24.MID   :"
+        },
+        {
+          "kind": "title",
+          "code": "0x020019",
+          "title": "M25.MID   :"
+        },
+        {
+          "kind": "title",
+          "code": "0x02001a",
+          "title": "M26.MID   :"
+        },
+        {
+          "kind": "title",
+          "code": "0x02001b",
+          "title": "M27.MID   :"
+        },
+        {
+          "kind": "title",
+          "code": "0x02001c",
+          "title": "M28.MID   :"
+        },
+        {
+          "kind": "title",
+          "code": "0x02001d",
+          "title": "M29.MID   :"
+        },
+        {
+          "kind": "title",
+          "code": "0x02001e",
+          "title": "M30.MID   :"
+        },
+        {
+          "kind": "title",
+          "code": "0x02001f",
+          "title": "M31.MID   :"
+        },
+        {
+          "kind": "title",
+          "code": "0x020020",
+          "title": "M32.MID   :"
+        },
+        {
+          "kind": "title",
+          "code": "0x020021",
+          "title": "M33.MID   :"
+        },
+        {
+          "kind": "title",
+          "code": "0x020022",
+          "title": "M34.MID   :"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/fairydust.xml",
+      "source_order": 1795,
+      "archive": "koukan2_98",
+      "id": "koukan2-98-opn"
+    },
+    {
+      "title": "[PC-9801] こうかん日記第II章 ～聖夜をあなたと～(GS)",
+      "driver": {
+        "name": "pc98dos",
+        "type": "beep",
+        "alias": "FairyDust",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "clockmul",
+          "value": "8"
+        },
+        {
+          "name": "midiout",
+          "value": "1"
+        },
+        {
+          "name": "midiout_type",
+          "value": "4"
+        },
+        {
+          "name": "wstimer",
+          "value": "1"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "MFD.EXE",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "mfd_98.com",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "M01.MID",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "M02.MID",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "M03.MID",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "M04.MID",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "M05.MID",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "M06.MID",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "M07.MID",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "M08.MID",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "M09.MID",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "M10.MID",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "M11.MID",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "M12.MID",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "M13.MID",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "M14.MID",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "M15.MID",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "M16.MID",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "M17.MID",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "M18.MID",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "M19.MID",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "M20.MID",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "M21.MID",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "M22.MID",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "M23_1.MID",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "M23_2.MID",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "M24.MID",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "M25.MID",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "M26.MID",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "M27.MID",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "M28.MID",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "M29.MID",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "M30.MID",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "M31.MID",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "M32.MID",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "M33.MID",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "M34.MID",
+          "offset": "-1"
+        },
+        {
+          "type": "conin",
+          "path": "M01.MID",
+          "offset": "0x00"
+        },
+        {
+          "type": "conin",
+          "path": "M02.MID",
+          "offset": "0x01"
+        },
+        {
+          "type": "conin",
+          "path": "M03.MID",
+          "offset": "0x02"
+        },
+        {
+          "type": "conin",
+          "path": "M04.MID",
+          "offset": "0x03"
+        },
+        {
+          "type": "conin",
+          "path": "M05.MID",
+          "offset": "0x04"
+        },
+        {
+          "type": "conin",
+          "path": "M06.MID",
+          "offset": "0x05"
+        },
+        {
+          "type": "conin",
+          "path": "M07.MID",
+          "offset": "0x06"
+        },
+        {
+          "type": "conin",
+          "path": "M08.MID",
+          "offset": "0x07"
+        },
+        {
+          "type": "conin",
+          "path": "M09.MID",
+          "offset": "0x08"
+        },
+        {
+          "type": "conin",
+          "path": "M10.MID",
+          "offset": "0x09"
+        },
+        {
+          "type": "conin",
+          "path": "M11.MID",
+          "offset": "0x0a"
+        },
+        {
+          "type": "conin",
+          "path": "M12.MID",
+          "offset": "0x0b"
+        },
+        {
+          "type": "conin",
+          "path": "M13.MID",
+          "offset": "0x0c"
+        },
+        {
+          "type": "conin",
+          "path": "M14.MID",
+          "offset": "0x0d"
+        },
+        {
+          "type": "conin",
+          "path": "M15.MID",
+          "offset": "0x0e"
+        },
+        {
+          "type": "conin",
+          "path": "M16.MID",
+          "offset": "0x0f"
+        },
+        {
+          "type": "conin",
+          "path": "M17.MID",
+          "offset": "0x10"
+        },
+        {
+          "type": "conin",
+          "path": "M18.MID",
+          "offset": "0x11"
+        },
+        {
+          "type": "conin",
+          "path": "M19.MID",
+          "offset": "0x12"
+        },
+        {
+          "type": "conin",
+          "path": "M20.MID",
+          "offset": "0x13"
+        },
+        {
+          "type": "conin",
+          "path": "M21.MID",
+          "offset": "0x14"
+        },
+        {
+          "type": "conin",
+          "path": "M22.MID",
+          "offset": "0x15"
+        },
+        {
+          "type": "conin",
+          "path": "M23_1.MID",
+          "offset": "0x16"
+        },
+        {
+          "type": "conin",
+          "path": "M23_2.MID",
+          "offset": "0x17"
+        },
+        {
+          "type": "conin",
+          "path": "M24.MID",
+          "offset": "0x18"
+        },
+        {
+          "type": "conin",
+          "path": "M25.MID",
+          "offset": "0x19"
+        },
+        {
+          "type": "conin",
+          "path": "M26.MID",
+          "offset": "0x1a"
+        },
+        {
+          "type": "conin",
+          "path": "M27.MID",
+          "offset": "0x1b"
+        },
+        {
+          "type": "conin",
+          "path": "M28.MID",
+          "offset": "0x1c"
+        },
+        {
+          "type": "conin",
+          "path": "M29.MID",
+          "offset": "0x1d"
+        },
+        {
+          "type": "conin",
+          "path": "M30.MID",
+          "offset": "0x1e"
+        },
+        {
+          "type": "conin",
+          "path": "M31.MID",
+          "offset": "0x1f"
+        },
+        {
+          "type": "conin",
+          "path": "M32.MID",
+          "offset": "0x20"
+        },
+        {
+          "type": "conin",
+          "path": "M33.MID",
+          "offset": "0x21"
+        },
+        {
+          "type": "conin",
+          "path": "M34.MID",
+          "offset": "0x22"
+        },
+        {
+          "type": "shell",
+          "path": "MFD L",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "mfd_98",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x010000",
+          "title": "M01.MID   :"
+        },
+        {
+          "kind": "title",
+          "code": "0x010001",
+          "title": "M02.MID   :"
+        },
+        {
+          "kind": "title",
+          "code": "0x010002",
+          "title": "M03.MID   :"
+        },
+        {
+          "kind": "title",
+          "code": "0x010003",
+          "title": "M04.MID   :"
+        },
+        {
+          "kind": "title",
+          "code": "0x010004",
+          "title": "M05.MID   :"
+        },
+        {
+          "kind": "title",
+          "code": "0x010005",
+          "title": "M06.MID   :"
+        },
+        {
+          "kind": "title",
+          "code": "0x010006",
+          "title": "M07.MID   :"
+        },
+        {
+          "kind": "title",
+          "code": "0x010007",
+          "title": "M08.MID   :"
+        },
+        {
+          "kind": "title",
+          "code": "0x010008",
+          "title": "M09.MID   :"
+        },
+        {
+          "kind": "title",
+          "code": "0x010009",
+          "title": "M10.MID   :"
+        },
+        {
+          "kind": "title",
+          "code": "0x01000a",
+          "title": "M11.MID   :"
+        },
+        {
+          "kind": "title",
+          "code": "0x01000b",
+          "title": "M12.MID   :"
+        },
+        {
+          "kind": "title",
+          "code": "0x01000c",
+          "title": "M13.MID   :"
+        },
+        {
+          "kind": "title",
+          "code": "0x01000d",
+          "title": "M14.MID   :"
+        },
+        {
+          "kind": "title",
+          "code": "0x01000e",
+          "title": "M15.MID   :"
+        },
+        {
+          "kind": "title",
+          "code": "0x01000f",
+          "title": "M16.MID   :"
+        },
+        {
+          "kind": "title",
+          "code": "0x010010",
+          "title": "M17.MID   :"
+        },
+        {
+          "kind": "title",
+          "code": "0x010011",
+          "title": "M18.MID   :"
+        },
+        {
+          "kind": "title",
+          "code": "0x010012",
+          "title": "M19.MID   :"
+        },
+        {
+          "kind": "title",
+          "code": "0x010013",
+          "title": "M20.MID   :"
+        },
+        {
+          "kind": "title",
+          "code": "0x010014",
+          "title": "M21.MID   :"
+        },
+        {
+          "kind": "title",
+          "code": "0x010015",
+          "title": "M22.MID   :"
+        },
+        {
+          "kind": "title",
+          "code": "0x010016",
+          "title": "M23_1.MID :"
+        },
+        {
+          "kind": "title",
+          "code": "0x010017",
+          "title": "M23_2.MID :"
+        },
+        {
+          "kind": "title",
+          "code": "0x010018",
+          "title": "M24.MID   :"
+        },
+        {
+          "kind": "title",
+          "code": "0x010019",
+          "title": "M25.MID   :"
+        },
+        {
+          "kind": "title",
+          "code": "0x01001a",
+          "title": "M26.MID   :"
+        },
+        {
+          "kind": "title",
+          "code": "0x01001b",
+          "title": "M27.MID   :"
+        },
+        {
+          "kind": "title",
+          "code": "0x01001c",
+          "title": "M28.MID   :"
+        },
+        {
+          "kind": "title",
+          "code": "0x01001d",
+          "title": "M29.MID   :"
+        },
+        {
+          "kind": "title",
+          "code": "0x01001e",
+          "title": "M30.MID   :"
+        },
+        {
+          "kind": "title",
+          "code": "0x01001f",
+          "title": "M31.MID   :"
+        },
+        {
+          "kind": "title",
+          "code": "0x010020",
+          "title": "M32.MID   :"
+        },
+        {
+          "kind": "title",
+          "code": "0x010021",
+          "title": "M33.MID   :"
+        },
+        {
+          "kind": "title",
+          "code": "0x010022",
+          "title": "M34.MID   :"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/fairydust.xml",
+      "source_order": 1796,
+      "archive": "koukan2_98",
+      "id": "koukan2-98-beep"
+    },
+    {
+      "title": "[PC-9801] 魔人形(OPN)",
+      "driver": {
+        "name": "pc98dos",
+        "type": "opn",
+        "alias": "FairyDust",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "clockmul",
+          "value": "4"
+        },
+        {
+          "name": "wstimer",
+          "value": "1"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "MFD.EXE",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "mfd_98.com",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MAD01.MID",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MAD02.MID",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MAD03.MID",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MAD04.MID",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MAD05.MID",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MAD06.MID",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MAD07.MID",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MAD08.MID",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MAD09.MID",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MAD10.MID",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MAD11.MID",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MAD12.MID",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MAD13.MID",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MAD14.MID",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MAD15.MID",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MAD16.MID",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MAD17.MID",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MAD18.MID",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MAD19.MID",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MAD20.MID",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MAD21.MID",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MAD22.MID",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MAD23.MID",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MAD24.MID",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MAD25.MID",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MAD26.MID",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MAD27.MID",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MAD28.MID",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MAD29.MID",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MAD30.MID",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MAD31.MID",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MAD32.MID",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MAD33.MID",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MAD34.MID",
+          "offset": "-1"
+        },
+        {
+          "type": "conin",
+          "path": "MAD01.MID",
+          "offset": "0x00"
+        },
+        {
+          "type": "conin",
+          "path": "MAD02.MID",
+          "offset": "0x01"
+        },
+        {
+          "type": "conin",
+          "path": "MAD03.MID",
+          "offset": "0x02"
+        },
+        {
+          "type": "conin",
+          "path": "MAD04.MID",
+          "offset": "0x03"
+        },
+        {
+          "type": "conin",
+          "path": "MAD05.MID",
+          "offset": "0x04"
+        },
+        {
+          "type": "conin",
+          "path": "MAD06.MID",
+          "offset": "0x05"
+        },
+        {
+          "type": "conin",
+          "path": "MAD07.MID",
+          "offset": "0x06"
+        },
+        {
+          "type": "conin",
+          "path": "MAD08.MID",
+          "offset": "0x07"
+        },
+        {
+          "type": "conin",
+          "path": "MAD09.MID",
+          "offset": "0x08"
+        },
+        {
+          "type": "conin",
+          "path": "MAD10.MID",
+          "offset": "0x09"
+        },
+        {
+          "type": "conin",
+          "path": "MAD11.MID",
+          "offset": "0x0a"
+        },
+        {
+          "type": "conin",
+          "path": "MAD12.MID",
+          "offset": "0x0b"
+        },
+        {
+          "type": "conin",
+          "path": "MAD13.MID",
+          "offset": "0x0c"
+        },
+        {
+          "type": "conin",
+          "path": "MAD14.MID",
+          "offset": "0x0d"
+        },
+        {
+          "type": "conin",
+          "path": "MAD15.MID",
+          "offset": "0x0e"
+        },
+        {
+          "type": "conin",
+          "path": "MAD16.MID",
+          "offset": "0x0f"
+        },
+        {
+          "type": "conin",
+          "path": "MAD17.MID",
+          "offset": "0x10"
+        },
+        {
+          "type": "conin",
+          "path": "MAD18.MID",
+          "offset": "0x11"
+        },
+        {
+          "type": "conin",
+          "path": "MAD19.MID",
+          "offset": "0x12"
+        },
+        {
+          "type": "conin",
+          "path": "MAD20.MID",
+          "offset": "0x13"
+        },
+        {
+          "type": "conin",
+          "path": "MAD21.MID",
+          "offset": "0x14"
+        },
+        {
+          "type": "conin",
+          "path": "MAD22.MID",
+          "offset": "0x15"
+        },
+        {
+          "type": "conin",
+          "path": "MAD23.MID",
+          "offset": "0x16"
+        },
+        {
+          "type": "conin",
+          "path": "MAD24.MID",
+          "offset": "0x17"
+        },
+        {
+          "type": "conin",
+          "path": "MAD25.MID",
+          "offset": "0x18"
+        },
+        {
+          "type": "conin",
+          "path": "MAD26.MID",
+          "offset": "0x19"
+        },
+        {
+          "type": "conin",
+          "path": "MAD27.MID",
+          "offset": "0x1a"
+        },
+        {
+          "type": "conin",
+          "path": "MAD28.MID",
+          "offset": "0x1b"
+        },
+        {
+          "type": "conin",
+          "path": "MAD29.MID",
+          "offset": "0x1c"
+        },
+        {
+          "type": "conin",
+          "path": "MAD30.MID",
+          "offset": "0x1d"
+        },
+        {
+          "type": "conin",
+          "path": "MAD31.MID",
+          "offset": "0x1e"
+        },
+        {
+          "type": "conin",
+          "path": "MAD32.MID",
+          "offset": "0x1f"
+        },
+        {
+          "type": "conin",
+          "path": "MAD33.MID",
+          "offset": "0x20"
+        },
+        {
+          "type": "conin",
+          "path": "MAD34.MID",
+          "offset": "0x21"
+        },
+        {
+          "type": "shell",
+          "path": "MFD L",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "mfd_98",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x020000",
+          "title": "MAD01.MID : オープニング"
+        },
+        {
+          "kind": "title",
+          "code": "0x020001",
+          "title": "MAD02.MID : オープニング2"
+        },
+        {
+          "kind": "title",
+          "code": "0x020002",
+          "title": "MAD03.MID : 涼子のテーマ"
+        },
+        {
+          "kind": "title",
+          "code": "0x020003",
+          "title": "MAD04.MID : 涼子のテーマ2"
+        },
+        {
+          "kind": "title",
+          "code": "0x020004",
+          "title": "MAD05.MID : あやのテーマ"
+        },
+        {
+          "kind": "title",
+          "code": "0x020005",
+          "title": "MAD06.MID : 瑞穂のテーマ"
+        },
+        {
+          "kind": "title",
+          "code": "0x020006",
+          "title": "MAD07.MID : 結衣のテーマ"
+        },
+        {
+          "kind": "title",
+          "code": "0x020007",
+          "title": "MAD08.MID : 智代のテーマ"
+        },
+        {
+          "kind": "title",
+          "code": "0x020008",
+          "title": "MAD09.MID : アケミのテーマ"
+        },
+        {
+          "kind": "title",
+          "code": "0x020009",
+          "title": "MAD10.MID : 真理のテーマ"
+        },
+        {
+          "kind": "title",
+          "code": "0x02000a",
+          "title": "MAD11.MID : まゆのテーマ"
+        },
+        {
+          "kind": "title",
+          "code": "0x02000b",
+          "title": "MAD12.MID : 和也のテーマ"
+        },
+        {
+          "kind": "title",
+          "code": "0x02000c",
+          "title": "MAD13.MID : 謎の女のテーマ"
+        },
+        {
+          "kind": "title",
+          "code": "0x02000d",
+          "title": "MAD14.MID : 粧子のテーマ"
+        },
+        {
+          "kind": "title",
+          "code": "0x02000e",
+          "title": "MAD15.MID : 広夢のテーマ"
+        },
+        {
+          "kind": "title",
+          "code": "0x02000f",
+          "title": "MAD16.MID : 粧子と謎の女"
+        },
+        {
+          "kind": "title",
+          "code": "0x020010",
+          "title": "MAD17.MID : 新田のテーマ"
+        },
+        {
+          "kind": "title",
+          "code": "0x020011",
+          "title": "MAD18.MID : 喫茶店"
+        },
+        {
+          "kind": "title",
+          "code": "0x020012",
+          "title": "MAD19.MID : ディスコ"
+        },
+        {
+          "kind": "title",
+          "code": "0x020013",
+          "title": "MAD20.MID : スペシャルエンディング"
+        },
+        {
+          "kind": "title",
+          "code": "0x020014",
+          "title": "MAD21.MID : バー"
+        },
+        {
+          "kind": "title",
+          "code": "0x020015",
+          "title": "MAD22.MID : アンティークショップ"
+        },
+        {
+          "kind": "title",
+          "code": "0x020016",
+          "title": "MAD23.MID : 洋館"
+        },
+        {
+          "kind": "title",
+          "code": "0x020017",
+          "title": "MAD24.MID : 怒り"
+        },
+        {
+          "kind": "title",
+          "code": "0x020018",
+          "title": "MAD25.MID : ノーマルH1"
+        },
+        {
+          "kind": "title",
+          "code": "0x020019",
+          "title": "MAD26.MID : ノーマルH2"
+        },
+        {
+          "kind": "title",
+          "code": "0x02001a",
+          "title": "MAD27.MID : アブノーマルH"
+        },
+        {
+          "kind": "title",
+          "code": "0x02001b",
+          "title": "MAD28.MID : バッドエンディング"
+        },
+        {
+          "kind": "title",
+          "code": "0x02001c",
+          "title": "MAD29.MID : ノーマルエンディング"
+        },
+        {
+          "kind": "title",
+          "code": "0x02001d",
+          "title": "MAD30.MID : 薫子のテーマ"
+        },
+        {
+          "kind": "title",
+          "code": "0x02001e",
+          "title": "MAD31.MID : ラブホテル"
+        },
+        {
+          "kind": "title",
+          "code": "0x02001f",
+          "title": "MAD32.MID : メインストリート1"
+        },
+        {
+          "kind": "title",
+          "code": "0x020020",
+          "title": "MAD33.MID : メインストリート2"
+        },
+        {
+          "kind": "title",
+          "code": "0x020021",
+          "title": "MAD34.MID : 公園"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/fairydust.xml",
+      "source_order": 1797,
+      "archive": "madol_98",
+      "id": "madol-98-opn"
+    },
+    {
+      "title": "[PC-9801] 魔人形(GS)",
+      "driver": {
+        "name": "pc98dos",
+        "type": "beep",
+        "alias": "FairyDust",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "clockmul",
+          "value": "8"
+        },
+        {
+          "name": "midiout",
+          "value": "1"
+        },
+        {
+          "name": "midiout_type",
+          "value": "4"
+        },
+        {
+          "name": "wstimer",
+          "value": "1"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "MFD.EXE",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "mfd_98.com",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MAD01.MID",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MAD02.MID",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MAD03.MID",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MAD04.MID",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MAD05.MID",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MAD06.MID",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MAD07.MID",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MAD08.MID",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MAD09.MID",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MAD10.MID",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MAD11.MID",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MAD12.MID",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MAD13.MID",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MAD14.MID",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MAD15.MID",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MAD16.MID",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MAD17.MID",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MAD18.MID",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MAD19.MID",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MAD20.MID",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MAD21.MID",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MAD22.MID",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MAD23.MID",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MAD24.MID",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MAD25.MID",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MAD26.MID",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MAD27.MID",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MAD28.MID",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MAD29.MID",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MAD30.MID",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MAD31.MID",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MAD32.MID",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MAD33.MID",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MAD34.MID",
+          "offset": "-1"
+        },
+        {
+          "type": "conin",
+          "path": "MAD01.MID",
+          "offset": "0x00"
+        },
+        {
+          "type": "conin",
+          "path": "MAD02.MID",
+          "offset": "0x01"
+        },
+        {
+          "type": "conin",
+          "path": "MAD03.MID",
+          "offset": "0x02"
+        },
+        {
+          "type": "conin",
+          "path": "MAD04.MID",
+          "offset": "0x03"
+        },
+        {
+          "type": "conin",
+          "path": "MAD05.MID",
+          "offset": "0x04"
+        },
+        {
+          "type": "conin",
+          "path": "MAD06.MID",
+          "offset": "0x05"
+        },
+        {
+          "type": "conin",
+          "path": "MAD07.MID",
+          "offset": "0x06"
+        },
+        {
+          "type": "conin",
+          "path": "MAD08.MID",
+          "offset": "0x07"
+        },
+        {
+          "type": "conin",
+          "path": "MAD09.MID",
+          "offset": "0x08"
+        },
+        {
+          "type": "conin",
+          "path": "MAD10.MID",
+          "offset": "0x09"
+        },
+        {
+          "type": "conin",
+          "path": "MAD11.MID",
+          "offset": "0x0a"
+        },
+        {
+          "type": "conin",
+          "path": "MAD12.MID",
+          "offset": "0x0b"
+        },
+        {
+          "type": "conin",
+          "path": "MAD13.MID",
+          "offset": "0x0c"
+        },
+        {
+          "type": "conin",
+          "path": "MAD14.MID",
+          "offset": "0x0d"
+        },
+        {
+          "type": "conin",
+          "path": "MAD15.MID",
+          "offset": "0x0e"
+        },
+        {
+          "type": "conin",
+          "path": "MAD16.MID",
+          "offset": "0x0f"
+        },
+        {
+          "type": "conin",
+          "path": "MAD17.MID",
+          "offset": "0x10"
+        },
+        {
+          "type": "conin",
+          "path": "MAD18.MID",
+          "offset": "0x11"
+        },
+        {
+          "type": "conin",
+          "path": "MAD19.MID",
+          "offset": "0x12"
+        },
+        {
+          "type": "conin",
+          "path": "MAD20.MID",
+          "offset": "0x13"
+        },
+        {
+          "type": "conin",
+          "path": "MAD21.MID",
+          "offset": "0x14"
+        },
+        {
+          "type": "conin",
+          "path": "MAD22.MID",
+          "offset": "0x15"
+        },
+        {
+          "type": "conin",
+          "path": "MAD23.MID",
+          "offset": "0x16"
+        },
+        {
+          "type": "conin",
+          "path": "MAD24.MID",
+          "offset": "0x17"
+        },
+        {
+          "type": "conin",
+          "path": "MAD25.MID",
+          "offset": "0x18"
+        },
+        {
+          "type": "conin",
+          "path": "MAD26.MID",
+          "offset": "0x19"
+        },
+        {
+          "type": "conin",
+          "path": "MAD27.MID",
+          "offset": "0x1a"
+        },
+        {
+          "type": "conin",
+          "path": "MAD28.MID",
+          "offset": "0x1b"
+        },
+        {
+          "type": "conin",
+          "path": "MAD29.MID",
+          "offset": "0x1c"
+        },
+        {
+          "type": "conin",
+          "path": "MAD30.MID",
+          "offset": "0x1d"
+        },
+        {
+          "type": "conin",
+          "path": "MAD31.MID",
+          "offset": "0x1e"
+        },
+        {
+          "type": "conin",
+          "path": "MAD32.MID",
+          "offset": "0x1f"
+        },
+        {
+          "type": "conin",
+          "path": "MAD33.MID",
+          "offset": "0x20"
+        },
+        {
+          "type": "conin",
+          "path": "MAD34.MID",
+          "offset": "0x21"
+        },
+        {
+          "type": "shell",
+          "path": "MFD L",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "mfd_98",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x010000",
+          "title": "MAD01.MID : オープニング"
+        },
+        {
+          "kind": "title",
+          "code": "0x010001",
+          "title": "MAD02.MID : オープニング2"
+        },
+        {
+          "kind": "title",
+          "code": "0x010002",
+          "title": "MAD03.MID : 涼子のテーマ"
+        },
+        {
+          "kind": "title",
+          "code": "0x010003",
+          "title": "MAD04.MID : 涼子のテーマ2"
+        },
+        {
+          "kind": "title",
+          "code": "0x010004",
+          "title": "MAD05.MID : あやのテーマ"
+        },
+        {
+          "kind": "title",
+          "code": "0x010005",
+          "title": "MAD06.MID : 瑞穂のテーマ"
+        },
+        {
+          "kind": "title",
+          "code": "0x010006",
+          "title": "MAD07.MID : 結衣のテーマ"
+        },
+        {
+          "kind": "title",
+          "code": "0x010007",
+          "title": "MAD08.MID : 智代のテーマ"
+        },
+        {
+          "kind": "title",
+          "code": "0x010008",
+          "title": "MAD09.MID : アケミのテーマ"
+        },
+        {
+          "kind": "title",
+          "code": "0x010009",
+          "title": "MAD10.MID : 真理のテーマ"
+        },
+        {
+          "kind": "title",
+          "code": "0x01000a",
+          "title": "MAD11.MID : まゆのテーマ"
+        },
+        {
+          "kind": "title",
+          "code": "0x01000b",
+          "title": "MAD12.MID : 和也のテーマ"
+        },
+        {
+          "kind": "title",
+          "code": "0x01000c",
+          "title": "MAD13.MID : 謎の女のテーマ"
+        },
+        {
+          "kind": "title",
+          "code": "0x01000d",
+          "title": "MAD14.MID : 粧子のテーマ"
+        },
+        {
+          "kind": "title",
+          "code": "0x01000e",
+          "title": "MAD15.MID : 広夢のテーマ"
+        },
+        {
+          "kind": "title",
+          "code": "0x01000f",
+          "title": "MAD16.MID : 粧子と謎の女"
+        },
+        {
+          "kind": "title",
+          "code": "0x010010",
+          "title": "MAD17.MID : 新田のテーマ"
+        },
+        {
+          "kind": "title",
+          "code": "0x010011",
+          "title": "MAD18.MID : 喫茶店"
+        },
+        {
+          "kind": "title",
+          "code": "0x010012",
+          "title": "MAD19.MID : ディスコ"
+        },
+        {
+          "kind": "title",
+          "code": "0x010013",
+          "title": "MAD20.MID : スペシャルエンディング"
+        },
+        {
+          "kind": "title",
+          "code": "0x010014",
+          "title": "MAD21.MID : バー"
+        },
+        {
+          "kind": "title",
+          "code": "0x010015",
+          "title": "MAD22.MID : アンティークショップ"
+        },
+        {
+          "kind": "title",
+          "code": "0x010016",
+          "title": "MAD23.MID : 洋館"
+        },
+        {
+          "kind": "title",
+          "code": "0x010017",
+          "title": "MAD24.MID : 怒り"
+        },
+        {
+          "kind": "title",
+          "code": "0x010018",
+          "title": "MAD25.MID : ノーマルH1"
+        },
+        {
+          "kind": "title",
+          "code": "0x010019",
+          "title": "MAD26.MID : ノーマルH2"
+        },
+        {
+          "kind": "title",
+          "code": "0x01001a",
+          "title": "MAD27.MID : アブノーマルH"
+        },
+        {
+          "kind": "title",
+          "code": "0x01001b",
+          "title": "MAD28.MID : バッドエンディング"
+        },
+        {
+          "kind": "title",
+          "code": "0x01001c",
+          "title": "MAD29.MID : ノーマルエンディング"
+        },
+        {
+          "kind": "title",
+          "code": "0x01001d",
+          "title": "MAD30.MID : 薫子のテーマ"
+        },
+        {
+          "kind": "title",
+          "code": "0x01001e",
+          "title": "MAD31.MID : ラブホテル"
+        },
+        {
+          "kind": "title",
+          "code": "0x01001f",
+          "title": "MAD32.MID : メインストリート1"
+        },
+        {
+          "kind": "title",
+          "code": "0x010020",
+          "title": "MAD33.MID : メインストリート2"
+        },
+        {
+          "kind": "title",
+          "code": "0x010021",
+          "title": "MAD34.MID : 公園"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/fairydust.xml",
+      "source_order": 1798,
+      "archive": "madol_98",
+      "id": "madol-98-beep"
+    }
+  ]
+}

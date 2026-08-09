@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="hoot.xsl"?>
+<!DOCTYPE gamelist [
+	<!ELEMENT gamelist (game|bind|childlists)*>
+	<!ATTLIST gamelist date CDATA #IMPLIED>
+	<!ELEMENT childlists (list)*>
+	<!ELEMENT list (#PCDATA)>
+	<!ELEMENT bind (exts,driver,options?)>
+	<!ELEMENT exts (ext)*>
+	<!ELEMENT ext (#PCDATA)>
+	<!ELEMENT game (name,driver,driveralias?,options?,romlist?,titlelist?)>
+	<!ELEMENT name (#PCDATA)>
+	<!ELEMENT driver (#PCDATA)>
+	<!ATTLIST driver type CDATA #IMPLIED>
+	<!ELEMENT driveralias (#PCDATA)>
+	<!ATTLIST driveralias type CDATA #IMPLIED>
+	<!ELEMENT options (option)*>
+	<!ELEMENT option EMPTY>
+	<!ATTLIST option name CDATA #REQUIRED
+					 value CDATA #REQUIRED>
+	<!ELEMENT romlist (rom)*>
+	<!ATTLIST romlist archive CDATA #IMPLIED>
+	<!ELEMENT rom (#PCDATA)>
+	<!ATTLIST rom type CDATA #REQUIRED
+				  offset CDATA #IMPLIED
+				  crc32 CDATA #IMPLIED>
+	<!ELEMENT titlelist (title)*>
+	<!ELEMENT title (#PCDATA)>
+	<!ATTLIST title code CDATA #REQUIRED
+					type CDATA #IMPLIED>
+	<!ELEMENT range (#PCDATA)>
+	<!ATTLIST range min CDATA #REQUIRED
+					max CDATA #REQUIRED
+					extcode CDATA #IMPLIED
+					start CDATA #IMPLIED>
+
+]>
+<gamelist date="2005/02/13">
+	<!--//HAL研究所 -->
+	<game>
+		<name>[MSX] 田代まさしのプリンセスがいっぱい</name>
+		<driver type="generic">msx</driver>
+		<driveralias type="MSX">HAL研究所</driveralias>
+		<options>
+			<option name="mdata_addr" value="0x0100"/>
+			<option name="mdata_size" value="0xd000"/>
+			<option name="mfile_size" value="0xd000"/>
+			<option name="init_pc" value="0xe000"/>
+		</options>
+		<romlist archive="tashiro_msx">
+			<rom type="bgm" offset="0x00">PRINCESS.COM</rom>
+			<rom type="bgm" offset="0x01">P.COM</rom>
+			<rom type="code" offset="0xe000">patch</rom>
+		</romlist>
+		<titlelist>
+			<title code="0x01">タイトル</title>
+			<title code="0x02">ストーンマージョ ステージ(白雪姫)</title>
+			<title code="0x08">マージョ城</title>
+			<title code="0x07">マージョ戦</title>
+			<title code="0x0a">ステージクリア</title>
+			<title code="0x03">アイスマージョ ステージ(シンデレラ)</title>
+			<title code="0x05">ファイヤーマージョ ステージ(人魚姫)</title>
+			<title code="0x04">プラントマージョ ステージ(おやゆび姫)</title>
+			<title code="0x106">ハイパーマージョ ステージ</title>
+			<title code="0x10b">浮遊城</title>
+			<title code="0x10c">ハイパーマージョ戦</title>
+			<title code="0x109">スタッフロール (ランナウェイ)</title>
+		</titlelist>
+	</game>
+</gamelist>

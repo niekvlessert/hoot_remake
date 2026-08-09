@@ -1,0 +1,7582 @@
+{
+  "format": "hoot-catalog-shard",
+  "version": 1,
+  "source_file": "xml/ponyca.xml",
+  "date": "2005/09/25",
+  "comments": [
+    " //PONYCA "
+  ],
+  "games": [
+    {
+      "title": "[PC-8801] SUPER PITFALL",
+      "driver": {
+        "name": "pc88",
+        "type": "opn",
+        "alias": "PONYCA",
+        "platform": "NEC PC-8801"
+      },
+      "options": [
+        {
+          "name": "use_rtc",
+          "value": "0x01"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "PATCH",
+          "offset": "0x0000"
+        },
+        {
+          "type": "code",
+          "path": "PROG",
+          "offset": "0xa000"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x00",
+          "title": "Main BGM"
+        },
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "Last Boss"
+        },
+        {
+          "kind": "title",
+          "code": "0x02",
+          "title": "Congratulations!!"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/ponyca.xml",
+      "source_order": 3679,
+      "archive": "spitfl88",
+      "id": "spitfl88-opn"
+    },
+    {
+      "title": "[PC-8801] Ultima IV - Quest of the Avator -",
+      "driver": {
+        "name": "pc88",
+        "type": "opn",
+        "alias": "PONYCA",
+        "platform": "NEC PC-8801"
+      },
+      "options": [
+        {
+          "name": "mdata_addr",
+          "value": "0x49d1"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "PATCH",
+          "offset": "0x0000"
+        },
+        {
+          "type": "code",
+          "path": "PROG",
+          "offset": "0x0100"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS00",
+          "offset": "0x00"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS01",
+          "offset": "0x01"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS02",
+          "offset": "0x02"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS03",
+          "offset": "0x03"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS04",
+          "offset": "0x04"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x00000004",
+          "title": "MUS04 : オープニング"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000003",
+          "title": "MUS03 : 地上"
+        },
+        {
+          "kind": "title",
+          "code": "0x01000001",
+          "title": "MUS01 : コンバット"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000002",
+          "title": "MUS02 : ダンジョン"
+        },
+        {
+          "kind": "title",
+          "code": "0x03000001",
+          "title": "MUS01 : 店"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000001",
+          "title": "MUS01 : 城"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000000",
+          "title": "MUS00 : ロード・ブリティッシュ"
+        },
+        {
+          "kind": "title",
+          "code": "0x03000002",
+          "title": "MUS02 : キャンプ"
+        },
+        {
+          "kind": "title",
+          "code": "0x02000001",
+          "title": "MUS01 : 神殿"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/ponyca.xml",
+      "source_order": 3680,
+      "archive": "ultima4",
+      "id": "ultima4-opn"
+    },
+    {
+      "title": "[X1] Ultima IV - Quest of the Avator -(OPM)",
+      "driver": {
+        "name": "x1",
+        "type": "opm",
+        "alias": "PONYCA",
+        "platform": "SHARP X1"
+      },
+      "options": [
+        {
+          "name": "mdata_addr",
+          "value": "0xf30b"
+        },
+        {
+          "name": "mdata_size",
+          "value": "0x0800"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "PATCH",
+          "offset": "0x0000"
+        },
+        {
+          "type": "code",
+          "path": "PROG",
+          "offset": "0x1000"
+        },
+        {
+          "type": "code",
+          "path": "DRIVER",
+          "offset": "0xec00"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS00",
+          "offset": "0x00"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS01",
+          "offset": "0x01"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS02",
+          "offset": "0x02"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS03",
+          "offset": "0x03"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS04",
+          "offset": "0x04"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x01000004",
+          "title": "04-01 : オープニング"
+        },
+        {
+          "kind": "title",
+          "code": "0x01000003",
+          "title": "03-01 : 地上"
+        },
+        {
+          "kind": "title",
+          "code": "0x02000001",
+          "title": "01-02 : コンバット"
+        },
+        {
+          "kind": "title",
+          "code": "0x01000002",
+          "title": "02-01 : ダンジョン"
+        },
+        {
+          "kind": "title",
+          "code": "0x04000001",
+          "title": "01-04 : 店"
+        },
+        {
+          "kind": "title",
+          "code": "0x01000001",
+          "title": "01-01 : 城"
+        },
+        {
+          "kind": "title",
+          "code": "0x01000000",
+          "title": "00-01 : ロード・ブリティッシュ"
+        },
+        {
+          "kind": "title",
+          "code": "0x04000002",
+          "title": "02-04 : キャンプ"
+        },
+        {
+          "kind": "title",
+          "code": "0x03000001",
+          "title": "01-03 : 神殿"
+        },
+        {
+          "kind": "comment",
+          "text": "\t<title code=\"0x02000002\">02-02 : コンバット</title> "
+        },
+        {
+          "kind": "comment",
+          "text": "\t<title code=\"0x03000002\">02-03 : 神殿</title> "
+        },
+        {
+          "kind": "comment",
+          "text": "\t<title code=\"0x02000003\">03-02 : コンバット</title> "
+        },
+        {
+          "kind": "comment",
+          "text": "\t<title code=\"0x03000003\">03-03 : 神殿</title> "
+        },
+        {
+          "kind": "comment",
+          "text": "\t<title code=\"0x04000003\">03-04 : キャンプ</title> "
+        },
+        {
+          "kind": "comment",
+          "text": "\t<title code=\"0x02000004\">04-02 : コンバット</title> "
+        },
+        {
+          "kind": "comment",
+          "text": "\t<title code=\"0x03000004\">04-03 : 神殿</title> "
+        },
+        {
+          "kind": "comment",
+          "text": "\t<title code=\"0x04000004\">04-04 : 店</title> "
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/ponyca.xml",
+      "source_order": 3681,
+      "archive": "x1u4",
+      "id": "x1u4-opm"
+    },
+    {
+      "title": "[X1] Ultima IV - Quest of the Avator -(PSG)",
+      "driver": {
+        "name": "x1",
+        "type": "psg",
+        "alias": "PONYCA",
+        "platform": "SHARP X1"
+      },
+      "options": [
+        {
+          "name": "mdata_addr",
+          "value": "0xf30b"
+        },
+        {
+          "name": "mdata_size",
+          "value": "0x0800"
+        },
+        {
+          "name": "psg_mix",
+          "value": "0x32"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "PATCH",
+          "offset": "0x0000"
+        },
+        {
+          "type": "code",
+          "path": "PROG",
+          "offset": "0x1000"
+        },
+        {
+          "type": "code",
+          "path": "DRIVER",
+          "offset": "0xec00"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS00",
+          "offset": "0x00"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS01",
+          "offset": "0x01"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS02",
+          "offset": "0x02"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS03",
+          "offset": "0x03"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS04",
+          "offset": "0x04"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x01000004",
+          "title": "04-01 : オープニング"
+        },
+        {
+          "kind": "title",
+          "code": "0x01000003",
+          "title": "03-01 : 地上"
+        },
+        {
+          "kind": "title",
+          "code": "0x02000001",
+          "title": "01-02 : コンバット"
+        },
+        {
+          "kind": "title",
+          "code": "0x01000002",
+          "title": "02-01 : ダンジョン"
+        },
+        {
+          "kind": "title",
+          "code": "0x04000001",
+          "title": "01-04 : 店"
+        },
+        {
+          "kind": "title",
+          "code": "0x01000001",
+          "title": "01-01 : 城"
+        },
+        {
+          "kind": "title",
+          "code": "0x01000000",
+          "title": "00-01 : ロード・ブリティッシュ"
+        },
+        {
+          "kind": "title",
+          "code": "0x04000002",
+          "title": "02-04 : キャンプ"
+        },
+        {
+          "kind": "title",
+          "code": "0x03000001",
+          "title": "01-03 : 神殿"
+        },
+        {
+          "kind": "comment",
+          "text": "\t<title code=\"0x02000002\">02-02 : コンバット</title> "
+        },
+        {
+          "kind": "comment",
+          "text": "\t<title code=\"0x03000002\">02-03 : 神殿</title> "
+        },
+        {
+          "kind": "comment",
+          "text": "\t<title code=\"0x02000003\">03-02 : コンバット</title> "
+        },
+        {
+          "kind": "comment",
+          "text": "\t<title code=\"0x03000003\">03-03 : 神殿</title> "
+        },
+        {
+          "kind": "comment",
+          "text": "\t<title code=\"0x04000003\">03-04 : キャンプ</title> "
+        },
+        {
+          "kind": "comment",
+          "text": "\t<title code=\"0x02000004\">04-02 : コンバット</title> "
+        },
+        {
+          "kind": "comment",
+          "text": "\t<title code=\"0x03000004\">04-03 : 神殿</title> "
+        },
+        {
+          "kind": "comment",
+          "text": "\t<title code=\"0x04000004\">04-04 : 店</title> "
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/ponyca.xml",
+      "source_order": 3682,
+      "archive": "x1u4",
+      "id": "x1u4-psg"
+    },
+    {
+      "title": "[X68000] Ultima IV - Quest of the Avator -",
+      "driver": {
+        "name": "x68k",
+        "type": "generic",
+        "alias": "PONYCA",
+        "platform": "SHARP X68000"
+      },
+      "options": [],
+      "assets": [
+        {
+          "type": "code",
+          "path": "u468snd.bin"
+        },
+        {
+          "type": "x",
+          "path": "ultsnd.x",
+          "offset": "0x08000"
+        },
+        {
+          "type": "code",
+          "path": "ult.mgd",
+          "offset": "0x10000"
+        },
+        {
+          "type": "code",
+          "path": "ult.smp",
+          "offset": "0x18000"
+        },
+        {
+          "type": "code",
+          "path": "ult.efc",
+          "offset": "0x20000"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x000",
+          "title": "STOP"
+        },
+        {
+          "kind": "title",
+          "code": "0x100",
+          "title": "BGM #00 : オープニング"
+        },
+        {
+          "kind": "title",
+          "code": "0x101",
+          "title": "BGM #01 : 地上"
+        },
+        {
+          "kind": "title",
+          "code": "0x102",
+          "title": "BGM #02 : コンバット"
+        },
+        {
+          "kind": "title",
+          "code": "0x103",
+          "title": "BGM #03 : ダンジョン"
+        },
+        {
+          "kind": "title",
+          "code": "0x104",
+          "title": "BGM #04 : 未使用曲"
+        },
+        {
+          "kind": "title",
+          "code": "0x105",
+          "title": "BGM #05 : 店"
+        },
+        {
+          "kind": "title",
+          "code": "0x106",
+          "title": "BGM #06 : 城"
+        },
+        {
+          "kind": "title",
+          "code": "0x107",
+          "title": "BGM #07 : ロード・ブリティッシュ"
+        },
+        {
+          "kind": "title",
+          "code": "0x108",
+          "title": "BGM #08 : キャンプ"
+        },
+        {
+          "kind": "title",
+          "code": "0x109",
+          "title": "BGM #09 : 神殿"
+        },
+        {
+          "kind": "title",
+          "code": "0x200",
+          "title": "SE #00"
+        },
+        {
+          "kind": "title",
+          "code": "0x201",
+          "title": "SE #01"
+        },
+        {
+          "kind": "title",
+          "code": "0x202",
+          "title": "SE #02"
+        },
+        {
+          "kind": "title",
+          "code": "0x203",
+          "title": "SE #03"
+        },
+        {
+          "kind": "title",
+          "code": "0x204",
+          "title": "SE #04"
+        },
+        {
+          "kind": "title",
+          "code": "0x205",
+          "title": "SE #05"
+        },
+        {
+          "kind": "title",
+          "code": "0x206",
+          "title": "SE #06"
+        },
+        {
+          "kind": "title",
+          "code": "0x207",
+          "title": "SE #07"
+        },
+        {
+          "kind": "title",
+          "code": "0x208",
+          "title": "SE #08"
+        },
+        {
+          "kind": "title",
+          "code": "0x209",
+          "title": "SE #09"
+        },
+        {
+          "kind": "title",
+          "code": "0x20a",
+          "title": "SE #0a"
+        },
+        {
+          "kind": "title",
+          "code": "0x20b",
+          "title": "SE #0b"
+        },
+        {
+          "kind": "title",
+          "code": "0x20c",
+          "title": "SE #0c"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/ponyca.xml",
+      "source_order": 3683,
+      "archive": "u468snd",
+      "id": "u468snd-generic"
+    },
+    {
+      "title": "[PC-9801] Advanced Dungeons & Dragons / EYE OF THE BEHOLDER",
+      "driver": {
+        "name": "pc98dos",
+        "type": "opn",
+        "alias": "PONYCA",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "clockmul",
+          "value": "8"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "mlfplay.com",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MUSIC98.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "EFECT.OBJ",
+          "offset": "0x05"
+        },
+        {
+          "type": "file",
+          "path": "E1.OBJ",
+          "offset": "0x10"
+        },
+        {
+          "type": "file",
+          "path": "E2.OBJ",
+          "offset": "0x11"
+        },
+        {
+          "type": "file",
+          "path": "E3.OBJ",
+          "offset": "0x12"
+        },
+        {
+          "type": "file",
+          "path": "E4.OBJ",
+          "offset": "0x13"
+        },
+        {
+          "type": "file",
+          "path": "E5.OBJ",
+          "offset": "0x14"
+        },
+        {
+          "type": "file",
+          "path": "E6.OBJ",
+          "offset": "0x15"
+        },
+        {
+          "type": "file",
+          "path": "E7.OBJ",
+          "offset": "0x16"
+        },
+        {
+          "type": "file",
+          "path": "E8.OBJ",
+          "offset": "0x17"
+        },
+        {
+          "type": "file",
+          "path": "E9.OBJ",
+          "offset": "0x18"
+        },
+        {
+          "type": "file",
+          "path": "EOBOP",
+          "offset": "0x19"
+        },
+        {
+          "type": "file",
+          "path": "EOBEND",
+          "offset": "0x1a"
+        },
+        {
+          "type": "file",
+          "path": "DUM",
+          "offset": "0x1b"
+        },
+        {
+          "type": "shell",
+          "path": "music98",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "mlfplay",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x000019",
+          "title": "EOBOP  : Introduction"
+        },
+        {
+          "kind": "title",
+          "code": "0x000010",
+          "title": "E1.OBJ : Character Generation"
+        },
+        {
+          "kind": "title",
+          "code": "0x000011",
+          "title": "E2.OBJ : Dungeon 1"
+        },
+        {
+          "kind": "title",
+          "code": "0x000012",
+          "title": "E3.OBJ : Dungeon 2"
+        },
+        {
+          "kind": "title",
+          "code": "0x000013",
+          "title": "E4.OBJ : Dungeon 3"
+        },
+        {
+          "kind": "title",
+          "code": "0x000014",
+          "title": "E5.OBJ : Dungeon 4"
+        },
+        {
+          "kind": "title",
+          "code": "0x000015",
+          "title": "E6.OBJ : Dungeon 5"
+        },
+        {
+          "kind": "title",
+          "code": "0x000016",
+          "title": "E7.OBJ : Dungeon 6"
+        },
+        {
+          "kind": "title",
+          "code": "0x000017",
+          "title": "E8.OBJ : Dungeon 7"
+        },
+        {
+          "kind": "title",
+          "code": "0x000018",
+          "title": "E9.OBJ : Dungeon 8"
+        },
+        {
+          "kind": "title",
+          "code": "0x00001a",
+          "title": "EOBEND : Ending"
+        },
+        {
+          "kind": "title",
+          "code": "0x00001b",
+          "title": "DUM    : 演奏停止"
+        },
+        {
+          "kind": "title",
+          "code": "0x01ffff",
+          "title": "EFFECT #001"
+        },
+        {
+          "kind": "title",
+          "code": "0x02ffff",
+          "title": "EFFECT #002"
+        },
+        {
+          "kind": "title",
+          "code": "0x03ffff",
+          "title": "EFFECT #003"
+        },
+        {
+          "kind": "title",
+          "code": "0x04ffff",
+          "title": "EFFECT #004"
+        },
+        {
+          "kind": "title",
+          "code": "0x05ffff",
+          "title": "EFFECT #005"
+        },
+        {
+          "kind": "title",
+          "code": "0x06ffff",
+          "title": "EFFECT #006"
+        },
+        {
+          "kind": "title",
+          "code": "0x07ffff",
+          "title": "EFFECT #007"
+        },
+        {
+          "kind": "title",
+          "code": "0x08ffff",
+          "title": "EFFECT #008"
+        },
+        {
+          "kind": "title",
+          "code": "0x09ffff",
+          "title": "EFFECT #009"
+        },
+        {
+          "kind": "title",
+          "code": "0x0affff",
+          "title": "EFFECT #010"
+        },
+        {
+          "kind": "title",
+          "code": "0x0bffff",
+          "title": "EFFECT #011"
+        },
+        {
+          "kind": "title",
+          "code": "0x0cffff",
+          "title": "EFFECT #012"
+        },
+        {
+          "kind": "title",
+          "code": "0x0dffff",
+          "title": "EFFECT #013"
+        },
+        {
+          "kind": "title",
+          "code": "0x0effff",
+          "title": "EFFECT #014"
+        },
+        {
+          "kind": "title",
+          "code": "0x0fffff",
+          "title": "EFFECT #015"
+        },
+        {
+          "kind": "title",
+          "code": "0x10ffff",
+          "title": "EFFECT #016"
+        },
+        {
+          "kind": "title",
+          "code": "0x11ffff",
+          "title": "EFFECT #017"
+        },
+        {
+          "kind": "title",
+          "code": "0x12ffff",
+          "title": "EFFECT #018"
+        },
+        {
+          "kind": "title",
+          "code": "0x13ffff",
+          "title": "EFFECT #019"
+        },
+        {
+          "kind": "title",
+          "code": "0x14ffff",
+          "title": "EFFECT #020"
+        },
+        {
+          "kind": "title",
+          "code": "0x15ffff",
+          "title": "EFFECT #021"
+        },
+        {
+          "kind": "title",
+          "code": "0x16ffff",
+          "title": "EFFECT #022"
+        },
+        {
+          "kind": "title",
+          "code": "0x17ffff",
+          "title": "EFFECT #023"
+        },
+        {
+          "kind": "title",
+          "code": "0x18ffff",
+          "title": "EFFECT #024"
+        },
+        {
+          "kind": "title",
+          "code": "0x19ffff",
+          "title": "EFFECT #025"
+        },
+        {
+          "kind": "title",
+          "code": "0x1affff",
+          "title": "EFFECT #026"
+        },
+        {
+          "kind": "title",
+          "code": "0x1bffff",
+          "title": "EFFECT #027"
+        },
+        {
+          "kind": "title",
+          "code": "0x1cffff",
+          "title": "EFFECT #028"
+        },
+        {
+          "kind": "title",
+          "code": "0x1dffff",
+          "title": "EFFECT #029"
+        },
+        {
+          "kind": "title",
+          "code": "0x1effff",
+          "title": "EFFECT #030"
+        },
+        {
+          "kind": "title",
+          "code": "0x1fffff",
+          "title": "EFFECT #031"
+        },
+        {
+          "kind": "title",
+          "code": "0x20ffff",
+          "title": "EFFECT #032"
+        },
+        {
+          "kind": "title",
+          "code": "0x21ffff",
+          "title": "EFFECT #033"
+        },
+        {
+          "kind": "title",
+          "code": "0x22ffff",
+          "title": "EFFECT #034"
+        },
+        {
+          "kind": "title",
+          "code": "0x23ffff",
+          "title": "EFFECT #035"
+        },
+        {
+          "kind": "title",
+          "code": "0x24ffff",
+          "title": "EFFECT #036"
+        },
+        {
+          "kind": "title",
+          "code": "0x25ffff",
+          "title": "EFFECT #037"
+        },
+        {
+          "kind": "title",
+          "code": "0x26ffff",
+          "title": "EFFECT #038"
+        },
+        {
+          "kind": "title",
+          "code": "0x27ffff",
+          "title": "EFFECT #039"
+        },
+        {
+          "kind": "title",
+          "code": "0x28ffff",
+          "title": "EFFECT #040"
+        },
+        {
+          "kind": "title",
+          "code": "0x29ffff",
+          "title": "EFFECT #041"
+        },
+        {
+          "kind": "title",
+          "code": "0x2affff",
+          "title": "EFFECT #042"
+        },
+        {
+          "kind": "title",
+          "code": "0x2bffff",
+          "title": "EFFECT #043"
+        },
+        {
+          "kind": "title",
+          "code": "0x2cffff",
+          "title": "EFFECT #044"
+        },
+        {
+          "kind": "title",
+          "code": "0x2dffff",
+          "title": "EFFECT #045"
+        },
+        {
+          "kind": "title",
+          "code": "0x2effff",
+          "title": "EFFECT #046"
+        },
+        {
+          "kind": "title",
+          "code": "0x2fffff",
+          "title": "EFFECT #047"
+        },
+        {
+          "kind": "title",
+          "code": "0x30ffff",
+          "title": "EFFECT #048"
+        },
+        {
+          "kind": "title",
+          "code": "0x31ffff",
+          "title": "EFFECT #049"
+        },
+        {
+          "kind": "title",
+          "code": "0x32ffff",
+          "title": "EFFECT #050"
+        },
+        {
+          "kind": "title",
+          "code": "0x33ffff",
+          "title": "EFFECT #051"
+        },
+        {
+          "kind": "title",
+          "code": "0x34ffff",
+          "title": "EFFECT #052"
+        },
+        {
+          "kind": "title",
+          "code": "0x35ffff",
+          "title": "EFFECT #053"
+        },
+        {
+          "kind": "title",
+          "code": "0x36ffff",
+          "title": "EFFECT #054"
+        },
+        {
+          "kind": "title",
+          "code": "0x37ffff",
+          "title": "EFFECT #055"
+        },
+        {
+          "kind": "title",
+          "code": "0x38ffff",
+          "title": "EFFECT #056"
+        },
+        {
+          "kind": "title",
+          "code": "0x39ffff",
+          "title": "EFFECT #057"
+        },
+        {
+          "kind": "title",
+          "code": "0x3affff",
+          "title": "EFFECT #058"
+        },
+        {
+          "kind": "title",
+          "code": "0x3bffff",
+          "title": "EFFECT #059"
+        },
+        {
+          "kind": "title",
+          "code": "0x3cffff",
+          "title": "EFFECT #060"
+        },
+        {
+          "kind": "title",
+          "code": "0x3dffff",
+          "title": "EFFECT #061"
+        },
+        {
+          "kind": "title",
+          "code": "0x3effff",
+          "title": "EFFECT #062"
+        },
+        {
+          "kind": "title",
+          "code": "0x3fffff",
+          "title": "EFFECT #063"
+        },
+        {
+          "kind": "title",
+          "code": "0x40ffff",
+          "title": "EFFECT #064"
+        },
+        {
+          "kind": "title",
+          "code": "0x41ffff",
+          "title": "EFFECT #065"
+        },
+        {
+          "kind": "title",
+          "code": "0x42ffff",
+          "title": "EFFECT #066"
+        },
+        {
+          "kind": "title",
+          "code": "0x43ffff",
+          "title": "EFFECT #067"
+        },
+        {
+          "kind": "title",
+          "code": "0x44ffff",
+          "title": "EFFECT #068"
+        },
+        {
+          "kind": "title",
+          "code": "0x45ffff",
+          "title": "EFFECT #069"
+        },
+        {
+          "kind": "title",
+          "code": "0x46ffff",
+          "title": "EFFECT #070"
+        },
+        {
+          "kind": "title",
+          "code": "0x47ffff",
+          "title": "EFFECT #071"
+        },
+        {
+          "kind": "title",
+          "code": "0x48ffff",
+          "title": "EFFECT #072"
+        },
+        {
+          "kind": "title",
+          "code": "0x49ffff",
+          "title": "EFFECT #073"
+        },
+        {
+          "kind": "title",
+          "code": "0x4affff",
+          "title": "EFFECT #074"
+        },
+        {
+          "kind": "title",
+          "code": "0x4bffff",
+          "title": "EFFECT #075"
+        },
+        {
+          "kind": "title",
+          "code": "0x4cffff",
+          "title": "EFFECT #076"
+        },
+        {
+          "kind": "title",
+          "code": "0x4dffff",
+          "title": "EFFECT #077"
+        },
+        {
+          "kind": "title",
+          "code": "0x4effff",
+          "title": "EFFECT #078"
+        },
+        {
+          "kind": "title",
+          "code": "0x4fffff",
+          "title": "EFFECT #079"
+        },
+        {
+          "kind": "title",
+          "code": "0x50ffff",
+          "title": "EFFECT #080"
+        },
+        {
+          "kind": "title",
+          "code": "0x51ffff",
+          "title": "EFFECT #081"
+        },
+        {
+          "kind": "title",
+          "code": "0x52ffff",
+          "title": "EFFECT #082"
+        },
+        {
+          "kind": "title",
+          "code": "0x53ffff",
+          "title": "EFFECT #083"
+        },
+        {
+          "kind": "title",
+          "code": "0x54ffff",
+          "title": "EFFECT #084"
+        },
+        {
+          "kind": "title",
+          "code": "0x55ffff",
+          "title": "EFFECT #085"
+        },
+        {
+          "kind": "title",
+          "code": "0x56ffff",
+          "title": "EFFECT #086"
+        },
+        {
+          "kind": "title",
+          "code": "0x57ffff",
+          "title": "EFFECT #087"
+        },
+        {
+          "kind": "title",
+          "code": "0x58ffff",
+          "title": "EFFECT #088"
+        },
+        {
+          "kind": "title",
+          "code": "0x59ffff",
+          "title": "EFFECT #089"
+        },
+        {
+          "kind": "title",
+          "code": "0x5affff",
+          "title": "EFFECT #090"
+        },
+        {
+          "kind": "title",
+          "code": "0x5bffff",
+          "title": "EFFECT #091"
+        },
+        {
+          "kind": "title",
+          "code": "0x5cffff",
+          "title": "EFFECT #092"
+        },
+        {
+          "kind": "title",
+          "code": "0x5dffff",
+          "title": "EFFECT #093"
+        },
+        {
+          "kind": "title",
+          "code": "0x5effff",
+          "title": "EFFECT #094"
+        },
+        {
+          "kind": "title",
+          "code": "0x5fffff",
+          "title": "EFFECT #095"
+        },
+        {
+          "kind": "title",
+          "code": "0x60ffff",
+          "title": "EFFECT #096"
+        },
+        {
+          "kind": "title",
+          "code": "0x61ffff",
+          "title": "EFFECT #097"
+        },
+        {
+          "kind": "title",
+          "code": "0x62ffff",
+          "title": "EFFECT #098"
+        },
+        {
+          "kind": "title",
+          "code": "0x63ffff",
+          "title": "EFFECT #099"
+        },
+        {
+          "kind": "title",
+          "code": "0x64ffff",
+          "title": "EFFECT #100"
+        },
+        {
+          "kind": "title",
+          "code": "0x65ffff",
+          "title": "EFFECT #101"
+        },
+        {
+          "kind": "title",
+          "code": "0x66ffff",
+          "title": "EFFECT #102"
+        },
+        {
+          "kind": "title",
+          "code": "0x67ffff",
+          "title": "EFFECT #103"
+        },
+        {
+          "kind": "title",
+          "code": "0x68ffff",
+          "title": "EFFECT #104"
+        },
+        {
+          "kind": "title",
+          "code": "0x69ffff",
+          "title": "EFFECT #105"
+        },
+        {
+          "kind": "title",
+          "code": "0x6affff",
+          "title": "EFFECT #106"
+        },
+        {
+          "kind": "title",
+          "code": "0x6bffff",
+          "title": "EFFECT #107"
+        },
+        {
+          "kind": "title",
+          "code": "0x6cffff",
+          "title": "EFFECT #108"
+        },
+        {
+          "kind": "title",
+          "code": "0x6dffff",
+          "title": "EFFECT #109"
+        },
+        {
+          "kind": "title",
+          "code": "0x6effff",
+          "title": "EFFECT #110"
+        },
+        {
+          "kind": "title",
+          "code": "0x6fffff",
+          "title": "EFFECT #111"
+        },
+        {
+          "kind": "title",
+          "code": "0x70ffff",
+          "title": "EFFECT #112"
+        },
+        {
+          "kind": "title",
+          "code": "0x71ffff",
+          "title": "EFFECT #113"
+        },
+        {
+          "kind": "title",
+          "code": "0x72ffff",
+          "title": "EFFECT #114"
+        },
+        {
+          "kind": "title",
+          "code": "0x73ffff",
+          "title": "EFFECT #115"
+        },
+        {
+          "kind": "title",
+          "code": "0x74ffff",
+          "title": "EFFECT #116"
+        },
+        {
+          "kind": "title",
+          "code": "0x75ffff",
+          "title": "EFFECT #117"
+        },
+        {
+          "kind": "title",
+          "code": "0x76ffff",
+          "title": "EFFECT #118"
+        },
+        {
+          "kind": "title",
+          "code": "0x77ffff",
+          "title": "EFFECT #119"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/ponyca.xml",
+      "source_order": 3684,
+      "archive": "eob98",
+      "id": "eob98-opn"
+    },
+    {
+      "title": "[PC-9801] Ultima V - Warriors of Destiny -",
+      "driver": {
+        "name": "pc98dos",
+        "type": "opn",
+        "alias": "PONYCA",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "clockmul",
+          "value": "8"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "OPNDRV.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "OPNDR_98.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "UL01.BIN",
+          "offset": "0x10"
+        },
+        {
+          "type": "file",
+          "path": "UL02.BIN",
+          "offset": "0x11"
+        },
+        {
+          "type": "file",
+          "path": "UL03.BIN",
+          "offset": "0x12"
+        },
+        {
+          "type": "file",
+          "path": "UL04.BIN",
+          "offset": "0x13"
+        },
+        {
+          "type": "file",
+          "path": "UL05.BIN",
+          "offset": "0x14"
+        },
+        {
+          "type": "file",
+          "path": "UL06.BIN",
+          "offset": "0x15"
+        },
+        {
+          "type": "file",
+          "path": "UL07.BIN",
+          "offset": "0x16"
+        },
+        {
+          "type": "file",
+          "path": "UL08.BIN",
+          "offset": "0x17"
+        },
+        {
+          "type": "file",
+          "path": "UL09.BIN",
+          "offset": "0x18"
+        },
+        {
+          "type": "file",
+          "path": "UL10.BIN",
+          "offset": "0x19"
+        },
+        {
+          "type": "file",
+          "path": "UL11.BIN",
+          "offset": "0x1a"
+        },
+        {
+          "type": "file",
+          "path": "UL12.BIN",
+          "offset": "0x1b"
+        },
+        {
+          "type": "file",
+          "path": "UL13.BIN",
+          "offset": "0x1c"
+        },
+        {
+          "type": "file",
+          "path": "UL14.BIN",
+          "offset": "0x1d"
+        },
+        {
+          "type": "file",
+          "path": "UL15.BIN",
+          "offset": "0x1e"
+        },
+        {
+          "type": "shell",
+          "path": "opndrv",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "opndr_98",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "UL01.BIN : Ultima Theme"
+        },
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "UL02.BIN : Britannic lands"
+        },
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "UL03.BIN : Cap'n Johne's Hornpipe"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "UL04.BIN : Engagement and melee"
+        },
+        {
+          "kind": "title",
+          "code": "0x14",
+          "title": "UL05.BIN : Stones"
+        },
+        {
+          "kind": "title",
+          "code": "0x15",
+          "title": "UL06.BIN : Greyson's tale"
+        },
+        {
+          "kind": "title",
+          "code": "0x16",
+          "title": "UL07.BIN : Fanfare for the virtuous"
+        },
+        {
+          "kind": "title",
+          "code": "0x17",
+          "title": "UL08.BIN : The Missing Monarch"
+        },
+        {
+          "kind": "title",
+          "code": "0x18",
+          "title": "UL09.BIN : Villager Tarantella"
+        },
+        {
+          "kind": "title",
+          "code": "0x19",
+          "title": "UL10.BIN : Halls of Doom"
+        },
+        {
+          "kind": "title",
+          "code": "0x1a",
+          "title": "UL11.BIN : Worlds below"
+        },
+        {
+          "kind": "title",
+          "code": "0x1b",
+          "title": "UL12.BIN : Lord Blackthorn"
+        },
+        {
+          "kind": "title",
+          "code": "0x1c",
+          "title": "UL13.BIN : Dream of Lady Nan"
+        },
+        {
+          "kind": "title",
+          "code": "0x1d",
+          "title": "UL14.BIN : Joyous reunion"
+        },
+        {
+          "kind": "title",
+          "code": "0x1e",
+          "title": "UL15.BIN : Rule Britannia"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/ponyca.xml",
+      "source_order": 3685,
+      "archive": "u5_98",
+      "id": "u5-98-opn"
+    },
+    {
+      "title": "[PC-9801] Ultima III - Exodus -",
+      "driver": {
+        "name": "pc98dos",
+        "type": "opn",
+        "alias": "PONYCA",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "clockmul",
+          "value": "8"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "OPNDRV.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "OPNDR_98.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "M01.BIN",
+          "offset": "0x10"
+        },
+        {
+          "type": "file",
+          "path": "M02.BIN",
+          "offset": "0x11"
+        },
+        {
+          "type": "file",
+          "path": "M03.BIN",
+          "offset": "0x12"
+        },
+        {
+          "type": "file",
+          "path": "M05.BIN",
+          "offset": "0x14"
+        },
+        {
+          "type": "file",
+          "path": "M06.BIN",
+          "offset": "0x15"
+        },
+        {
+          "type": "file",
+          "path": "M07.BIN",
+          "offset": "0x16"
+        },
+        {
+          "type": "file",
+          "path": "M08.BIN",
+          "offset": "0x17"
+        },
+        {
+          "type": "file",
+          "path": "M09.BIN",
+          "offset": "0x18"
+        },
+        {
+          "type": "file",
+          "path": "M10.BIN",
+          "offset": "0x19"
+        },
+        {
+          "type": "file",
+          "path": "M11.BIN",
+          "offset": "0x1a"
+        },
+        {
+          "type": "shell",
+          "path": "opndrv",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "opndr_98",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "M01.BIN : Wanderer"
+        },
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "M02.BIN : Towns & Dwellings"
+        },
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "M03.BIN : Castles"
+        },
+        {
+          "kind": "title",
+          "code": "0x14",
+          "title": "M05.BIN : Combat"
+        },
+        {
+          "kind": "title",
+          "code": "0x15",
+          "title": "M06.BIN : Shopping"
+        },
+        {
+          "kind": "title",
+          "code": "0x16",
+          "title": "M07.BIN : Exodus - The Isle of Fire"
+        },
+        {
+          "kind": "title",
+          "code": "0x17",
+          "title": "M08.BIN : Rule Britannia"
+        },
+        {
+          "kind": "title",
+          "code": "0x18",
+          "title": "M09.BIN : Alive"
+        },
+        {
+          "kind": "title",
+          "code": "0x19",
+          "title": "M10.BIN : Fanfare"
+        },
+        {
+          "kind": "title",
+          "code": "0x1a",
+          "title": "M11.BIN : Fanfare of Lord British (Ultima IV)"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/ponyca.xml",
+      "source_order": 3686,
+      "archive": "u3_98",
+      "id": "u3-98-opn"
+    },
+    {
+      "title": "[X68000] Ultima V - Warriors of Destiny -",
+      "driver": {
+        "name": "x68k",
+        "type": "generic",
+        "alias": "PONYCA",
+        "platform": "SHARP X68000"
+      },
+      "options": [
+        {
+          "name": "opm_mix",
+          "value": "0x100"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "u568snd.bin",
+          "offset": "0x00000"
+        },
+        {
+          "type": "x",
+          "path": "OPNDRV.X",
+          "offset": "0x10000"
+        },
+        {
+          "type": "code",
+          "path": "UL01.BIN",
+          "offset": "0x13000"
+        },
+        {
+          "type": "code",
+          "path": "UL02.BIN",
+          "offset": "0x15000"
+        },
+        {
+          "type": "code",
+          "path": "UL03.BIN",
+          "offset": "0x17000"
+        },
+        {
+          "type": "code",
+          "path": "UL04.BIN",
+          "offset": "0x19000"
+        },
+        {
+          "type": "code",
+          "path": "UL05.BIN",
+          "offset": "0x1b000"
+        },
+        {
+          "type": "code",
+          "path": "UL06.BIN",
+          "offset": "0x1d000"
+        },
+        {
+          "type": "code",
+          "path": "UL07.BIN",
+          "offset": "0x1f000"
+        },
+        {
+          "type": "code",
+          "path": "UL08.BIN",
+          "offset": "0x21000"
+        },
+        {
+          "type": "code",
+          "path": "UL09.BIN",
+          "offset": "0x23000"
+        },
+        {
+          "type": "code",
+          "path": "UL10.BIN",
+          "offset": "0x25000"
+        },
+        {
+          "type": "code",
+          "path": "UL11.BIN",
+          "offset": "0x27000"
+        },
+        {
+          "type": "code",
+          "path": "UL12.BIN",
+          "offset": "0x29000"
+        },
+        {
+          "type": "code",
+          "path": "UL13.BIN",
+          "offset": "0x2b000"
+        },
+        {
+          "type": "code",
+          "path": "UL14.BIN",
+          "offset": "0x2d000"
+        },
+        {
+          "type": "code",
+          "path": "UL15.BIN",
+          "offset": "0x2f000"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "UL01.BIN : Ultima Theme"
+        },
+        {
+          "kind": "title",
+          "code": "0x02",
+          "title": "UL02.BIN : Britannic lands"
+        },
+        {
+          "kind": "title",
+          "code": "0x03",
+          "title": "UL03.BIN : Cap'n Johne's Hornpipe"
+        },
+        {
+          "kind": "title",
+          "code": "0x04",
+          "title": "UL04.BIN : Engagement and melee"
+        },
+        {
+          "kind": "title",
+          "code": "0x05",
+          "title": "UL05.BIN : Stones"
+        },
+        {
+          "kind": "title",
+          "code": "0x06",
+          "title": "UL06.BIN : Greyson's tale"
+        },
+        {
+          "kind": "title",
+          "code": "0x07",
+          "title": "UL07.BIN : Fanfare for the virtuous"
+        },
+        {
+          "kind": "title",
+          "code": "0x08",
+          "title": "UL08.BIN : The Missing Monarch"
+        },
+        {
+          "kind": "title",
+          "code": "0x09",
+          "title": "UL09.BIN : Villager Tarantella"
+        },
+        {
+          "kind": "title",
+          "code": "0x0a",
+          "title": "UL10.BIN : Halls of Doom"
+        },
+        {
+          "kind": "title",
+          "code": "0x0b",
+          "title": "UL11.BIN : Worlds below"
+        },
+        {
+          "kind": "title",
+          "code": "0x0c",
+          "title": "UL12.BIN : Lord Blackthorn"
+        },
+        {
+          "kind": "title",
+          "code": "0x0d",
+          "title": "UL13.BIN : Dream of Lady Nan"
+        },
+        {
+          "kind": "title",
+          "code": "0x0e",
+          "title": "UL14.BIN : Joyous reunion"
+        },
+        {
+          "kind": "title",
+          "code": "0x0f",
+          "title": "UL15.BIN : Rule Britannia"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/ponyca.xml",
+      "source_order": 3687,
+      "archive": "u568snd",
+      "id": "u568snd-generic"
+    },
+    {
+      "title": "[PC-9801] Advanced Dungeons & Dragons / DEATH KNIGHTS OF KRYNN(OPN)",
+      "driver": {
+        "name": "pc98dos",
+        "type": "opn",
+        "alias": "PONYCA",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "clockmul",
+          "value": "8"
+        },
+        {
+          "name": "showfm3ex",
+          "value": "1"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "TRPSCR98.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "TRPSCHRN.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "DKK01.MDT",
+          "offset": "0x10"
+        },
+        {
+          "type": "file",
+          "path": "DKK02.MDT",
+          "offset": "0x11"
+        },
+        {
+          "type": "file",
+          "path": "DKK03.MDT",
+          "offset": "0x12"
+        },
+        {
+          "type": "file",
+          "path": "DKK04.MDT",
+          "offset": "0x13"
+        },
+        {
+          "type": "file",
+          "path": "DKK05.MDT",
+          "offset": "0x14"
+        },
+        {
+          "type": "file",
+          "path": "DKK06.MDT",
+          "offset": "0x15"
+        },
+        {
+          "type": "file",
+          "path": "DKK07.MDT",
+          "offset": "0x16"
+        },
+        {
+          "type": "file",
+          "path": "DKK08.MDT",
+          "offset": "0x17"
+        },
+        {
+          "type": "file",
+          "path": "DKK09.MDT",
+          "offset": "0x18"
+        },
+        {
+          "type": "file",
+          "path": "DKK10.MDT",
+          "offset": "0x19"
+        },
+        {
+          "type": "file",
+          "path": "DKK11.MDT",
+          "offset": "0x1a"
+        },
+        {
+          "type": "file",
+          "path": "DKK12.MDT",
+          "offset": "0x1b"
+        },
+        {
+          "type": "file",
+          "path": "DKK13.MDT",
+          "offset": "0x1c"
+        },
+        {
+          "type": "file",
+          "path": "DKK14.MDT",
+          "offset": "0x1d"
+        },
+        {
+          "type": "file",
+          "path": "DKK15.MDT",
+          "offset": "0x1e"
+        },
+        {
+          "type": "file",
+          "path": "DKK16.MDT",
+          "offset": "0x1f"
+        },
+        {
+          "type": "file",
+          "path": "DKK17.MDT",
+          "offset": "0x20"
+        },
+        {
+          "type": "file",
+          "path": "DKK18.MDT",
+          "offset": "0x21"
+        },
+        {
+          "type": "file",
+          "path": "DKK19.MDT",
+          "offset": "0x22"
+        },
+        {
+          "type": "shell",
+          "path": "TRPSCHRN",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "TRPSCR98",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "DKK01.MDT : OPENING THEME"
+        },
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "DKK02.MDT : MACHI"
+        },
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "DKK03.MDT : DUNGEON-1"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "DKK04.MDT : DANGUEON-2"
+        },
+        {
+          "kind": "title",
+          "code": "0x14",
+          "title": "DKK05.MDT : CAMP"
+        },
+        {
+          "kind": "title",
+          "code": "0x15",
+          "title": "DKK06.MDT : SENTOU NORMAL"
+        },
+        {
+          "kind": "title",
+          "code": "0x16",
+          "title": "DKK07.MDT : CHYUU-BOSS"
+        },
+        {
+          "kind": "title",
+          "code": "0x17",
+          "title": "DKK08.MDT : LAST BOSS"
+        },
+        {
+          "kind": "title",
+          "code": "0x18",
+          "title": "DKK09.MDT : MAP"
+        },
+        {
+          "kind": "title",
+          "code": "0x19",
+          "title": "DKK10.MDT : EVENT SHOCKING"
+        },
+        {
+          "kind": "title",
+          "code": "0x1a",
+          "title": "DKK11.MDT : EVENT DEAI"
+        },
+        {
+          "kind": "title",
+          "code": "0x1b",
+          "title": "DKK12.MDT : EVENT-WAKARE"
+        },
+        {
+          "kind": "title",
+          "code": "0x1c",
+          "title": "DKK13.MDT : IKARI"
+        },
+        {
+          "kind": "title",
+          "code": "0x1d",
+          "title": "DKK14.MDT : MIKATA NPC"
+        },
+        {
+          "kind": "title",
+          "code": "0x1e",
+          "title": "DKK15.MDT : TEKI-NPC"
+        },
+        {
+          "kind": "title",
+          "code": "0x1f",
+          "title": "DKK16.MDT : CHARACTER MAKING"
+        },
+        {
+          "kind": "title",
+          "code": "0x20",
+          "title": "DKK17.MDT : Ending Event"
+        },
+        {
+          "kind": "title",
+          "code": "0x21",
+          "title": "DKK18.MDT : ZENNMETSU 10sec"
+        },
+        {
+          "kind": "title",
+          "code": "0x22",
+          "title": "DKK19.MDT : MAYA'S THEME"
+        },
+        {
+          "kind": "range",
+          "min": "0x120",
+          "max": "0x12e",
+          "title_format": "SE %02x",
+          "extcode": "1"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/ponyca.xml",
+      "source_order": 3688,
+      "archive": "adnddkok_98",
+      "id": "adnddkok-98-opn"
+    },
+    {
+      "title": "[PC-9801] Advanced Dungeons & Dragons / DEATH KNIGHTS OF KRYNN(GS)",
+      "driver": {
+        "name": "pc98dos",
+        "type": "beep",
+        "alias": "PONYCA",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "clockmul",
+          "value": "8"
+        },
+        {
+          "name": "midiout",
+          "value": "1"
+        },
+        {
+          "name": "midiout_type",
+          "value": "7"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "MIDRV_98.com",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MIDRV.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "DKK_MD01.MID",
+          "offset": "0x10"
+        },
+        {
+          "type": "file",
+          "path": "DKK_MD02.MID",
+          "offset": "0x11"
+        },
+        {
+          "type": "file",
+          "path": "DKK_MD03.MID",
+          "offset": "0x12"
+        },
+        {
+          "type": "file",
+          "path": "DKK_MD04.MID",
+          "offset": "0x13"
+        },
+        {
+          "type": "file",
+          "path": "DKK_MD05.MID",
+          "offset": "0x14"
+        },
+        {
+          "type": "file",
+          "path": "DKK_MD06.MID",
+          "offset": "0x15"
+        },
+        {
+          "type": "file",
+          "path": "DKK_MD07.MID",
+          "offset": "0x16"
+        },
+        {
+          "type": "file",
+          "path": "DKK_MD08.MID",
+          "offset": "0x17"
+        },
+        {
+          "type": "file",
+          "path": "DKK_MD09.MID",
+          "offset": "0x18"
+        },
+        {
+          "type": "file",
+          "path": "DKK_MD10.MID",
+          "offset": "0x19"
+        },
+        {
+          "type": "file",
+          "path": "DKK_MD11.MID",
+          "offset": "0x1a"
+        },
+        {
+          "type": "file",
+          "path": "DKK_MD12.MID",
+          "offset": "0x1b"
+        },
+        {
+          "type": "file",
+          "path": "DKK_MD13.MID",
+          "offset": "0x1c"
+        },
+        {
+          "type": "file",
+          "path": "DKK_MD14.MID",
+          "offset": "0x1d"
+        },
+        {
+          "type": "file",
+          "path": "DKK_MD15.MID",
+          "offset": "0x1e"
+        },
+        {
+          "type": "file",
+          "path": "DKK_MD16.MID",
+          "offset": "0x1f"
+        },
+        {
+          "type": "file",
+          "path": "DKK_MD17.MID",
+          "offset": "0x20"
+        },
+        {
+          "type": "file",
+          "path": "DKK_MD18.MID",
+          "offset": "0x21"
+        },
+        {
+          "type": "file",
+          "path": "DKK_MD19.MID",
+          "offset": "0x22"
+        },
+        {
+          "type": "shell",
+          "path": "midrv",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "midrv_98",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "DKK_MD01.MID : OPENING THEME"
+        },
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "DKK_MD02.MID : MACHI"
+        },
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "DKK_MD03.MID : DUNGEON-1"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "DKK_MD04.MID : DANGUEON-2"
+        },
+        {
+          "kind": "title",
+          "code": "0x14",
+          "title": "DKK_MD05.MID : CAMP"
+        },
+        {
+          "kind": "title",
+          "code": "0x15",
+          "title": "DKK_MD06.MID : SENTOU NORMAL"
+        },
+        {
+          "kind": "title",
+          "code": "0x16",
+          "title": "DKK_MD07.MID : CHYUU-BOSS"
+        },
+        {
+          "kind": "title",
+          "code": "0x17",
+          "title": "DKK_MD08.MID : LAST BOSS"
+        },
+        {
+          "kind": "title",
+          "code": "0x18",
+          "title": "DKK_MD09.MID : MAP"
+        },
+        {
+          "kind": "title",
+          "code": "0x19",
+          "title": "DKK_MD10.MID : EVENT SHOCKING"
+        },
+        {
+          "kind": "title",
+          "code": "0x1a",
+          "title": "DKK_MD11.MID : EVENT DEAI"
+        },
+        {
+          "kind": "title",
+          "code": "0x1b",
+          "title": "DKK_MD12.MID : EVENT-WAKARE"
+        },
+        {
+          "kind": "title",
+          "code": "0x1c",
+          "title": "DKK_MD13.MID : IKARI"
+        },
+        {
+          "kind": "title",
+          "code": "0x1d",
+          "title": "DKK_MD14.MID : MIKATA NPC"
+        },
+        {
+          "kind": "title",
+          "code": "0x1e",
+          "title": "DKK_MD15.MID : TEKI-NPC"
+        },
+        {
+          "kind": "title",
+          "code": "0x1f",
+          "title": "DKK_MD16.MID : CHARACTER MAKING"
+        },
+        {
+          "kind": "title",
+          "code": "0x20",
+          "title": "DKK_MD17.MID : Ending Event"
+        },
+        {
+          "kind": "title",
+          "code": "0x21",
+          "title": "DKK_MD18.MID : ZENNMETSU 10sec"
+        },
+        {
+          "kind": "title",
+          "code": "0x22",
+          "title": "DKK_MD19.MID : MAYA'S THEME"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/ponyca.xml",
+      "source_order": 3689,
+      "archive": "adnddkok_98",
+      "id": "adnddkok-98-beep"
+    },
+    {
+      "title": "[PC-9801] Advanced Dungeons & Dragons / CHAMPIONS OF KRYNN(OPN)",
+      "driver": {
+        "name": "pc98dos",
+        "type": "opn",
+        "alias": "PONYCA",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "clockmul",
+          "value": "8"
+        },
+        {
+          "name": "showfm3ex",
+          "value": "1"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "TRPSCR98.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "TRPSCHRN.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "COK01.MDT",
+          "offset": "0x10"
+        },
+        {
+          "type": "file",
+          "path": "COK02.MDT",
+          "offset": "0x11"
+        },
+        {
+          "type": "file",
+          "path": "COK03.MDT",
+          "offset": "0x12"
+        },
+        {
+          "type": "file",
+          "path": "COK04.MDT",
+          "offset": "0x13"
+        },
+        {
+          "type": "file",
+          "path": "COK05.MDT",
+          "offset": "0x14"
+        },
+        {
+          "type": "file",
+          "path": "COK06.MDT",
+          "offset": "0x15"
+        },
+        {
+          "type": "file",
+          "path": "COK07.MDT",
+          "offset": "0x16"
+        },
+        {
+          "type": "file",
+          "path": "COK08.MDT",
+          "offset": "0x17"
+        },
+        {
+          "type": "file",
+          "path": "COK09.MDT",
+          "offset": "0x18"
+        },
+        {
+          "type": "file",
+          "path": "COK10.MDT",
+          "offset": "0x19"
+        },
+        {
+          "type": "file",
+          "path": "COK11.MDT",
+          "offset": "0x1a"
+        },
+        {
+          "type": "file",
+          "path": "COK12.MDT",
+          "offset": "0x1b"
+        },
+        {
+          "type": "file",
+          "path": "COK13.MDT",
+          "offset": "0x1c"
+        },
+        {
+          "type": "file",
+          "path": "COK14.MDT",
+          "offset": "0x1d"
+        },
+        {
+          "type": "shell",
+          "path": "TRPSCHRN",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "TRPSCR98",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "COK01.MDT : オープニング"
+        },
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "COK02.MDT : 街"
+        },
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "COK03.MDT : DUNGEON1 前半"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "COK04.MDT : DUNGEON2 後半"
+        },
+        {
+          "kind": "title",
+          "code": "0x14",
+          "title": "COK05.MDT : キャンプ"
+        },
+        {
+          "kind": "title",
+          "code": "0x15",
+          "title": "COK06.MDT : BATTLE-1 ノーマル"
+        },
+        {
+          "kind": "title",
+          "code": "0x16",
+          "title": "COK07.MDT : BATTLE ファイナル"
+        },
+        {
+          "kind": "title",
+          "code": "0x17",
+          "title": "COK08.MDT : ワールドマップ"
+        },
+        {
+          "kind": "title",
+          "code": "0x18",
+          "title": "COK09.MDT : EVENT 驚き!"
+        },
+        {
+          "kind": "title",
+          "code": "0x19",
+          "title": "COK10.MDT : EVENT 出会い"
+        },
+        {
+          "kind": "title",
+          "code": "0x1a",
+          "title": "COK11.MDT : 別れ"
+        },
+        {
+          "kind": "title",
+          "code": "0x1b",
+          "title": "COK12.MDT : 味方NPC"
+        },
+        {
+          "kind": "title",
+          "code": "0x1c",
+          "title": "COK13.MDT : 敵NPC"
+        },
+        {
+          "kind": "title",
+          "code": "0x1d",
+          "title": "COK14.MDT : エンディング"
+        },
+        {
+          "kind": "range",
+          "min": "0x120",
+          "max": "0x12c",
+          "title_format": "SE %02x",
+          "extcode": "1"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/ponyca.xml",
+      "source_order": 3690,
+      "archive": "adndcok_98",
+      "id": "adndcok-98-opn"
+    },
+    {
+      "title": "[PC-9801] Advanced Dungeons & Dragons / CHAMPIONS OF KRYNN(GS)",
+      "driver": {
+        "name": "pc98dos",
+        "type": "beep",
+        "alias": "PONYCA",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "clockmul",
+          "value": "8"
+        },
+        {
+          "name": "midiout",
+          "value": "1"
+        },
+        {
+          "name": "midiout_type",
+          "value": "7"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "MIDRV_98.com",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MIDRV.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "COKMD01.MID",
+          "offset": "0x10"
+        },
+        {
+          "type": "file",
+          "path": "COKMD02.MID",
+          "offset": "0x11"
+        },
+        {
+          "type": "file",
+          "path": "COKMD03.MID",
+          "offset": "0x12"
+        },
+        {
+          "type": "file",
+          "path": "COKMD04.MID",
+          "offset": "0x13"
+        },
+        {
+          "type": "file",
+          "path": "COKMD05.MID",
+          "offset": "0x14"
+        },
+        {
+          "type": "file",
+          "path": "COKMD06.MID",
+          "offset": "0x15"
+        },
+        {
+          "type": "file",
+          "path": "COKMD07.MID",
+          "offset": "0x16"
+        },
+        {
+          "type": "file",
+          "path": "COKMD08.MID",
+          "offset": "0x17"
+        },
+        {
+          "type": "file",
+          "path": "COKMD09.MID",
+          "offset": "0x18"
+        },
+        {
+          "type": "file",
+          "path": "COKMD10.MID",
+          "offset": "0x19"
+        },
+        {
+          "type": "file",
+          "path": "COKMD11.MID",
+          "offset": "0x1a"
+        },
+        {
+          "type": "file",
+          "path": "COKMD12.MID",
+          "offset": "0x1b"
+        },
+        {
+          "type": "file",
+          "path": "COKMD13.MID",
+          "offset": "0x1c"
+        },
+        {
+          "type": "file",
+          "path": "COKMD14.MID",
+          "offset": "0x1d"
+        },
+        {
+          "type": "shell",
+          "path": "midrv",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "midrv_98",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "COKMD01.MID : オープニング"
+        },
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "COKMD02.MID : 街"
+        },
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "COKMD03.MID : DUNGEON1 前半"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "COKMD04.MID : DUNGEON2 後半"
+        },
+        {
+          "kind": "title",
+          "code": "0x14",
+          "title": "COKMD05.MID : キャンプ"
+        },
+        {
+          "kind": "title",
+          "code": "0x15",
+          "title": "COKMD06.MID : BATTLE-1 ノーマル"
+        },
+        {
+          "kind": "title",
+          "code": "0x16",
+          "title": "COKMD07.MID : BATTLE ファイナル"
+        },
+        {
+          "kind": "title",
+          "code": "0x17",
+          "title": "COKMD08.MID : ワールドマップ"
+        },
+        {
+          "kind": "title",
+          "code": "0x18",
+          "title": "COKMD09.MID : EVENT 驚き!"
+        },
+        {
+          "kind": "title",
+          "code": "0x19",
+          "title": "COKMD10.MID : EVENT 出会い"
+        },
+        {
+          "kind": "title",
+          "code": "0x1a",
+          "title": "COKMD11.MID : 別れ"
+        },
+        {
+          "kind": "title",
+          "code": "0x1b",
+          "title": "COKMD12.MID : 味方NPC"
+        },
+        {
+          "kind": "title",
+          "code": "0x1c",
+          "title": "COKMD13.MID : 敵NPC"
+        },
+        {
+          "kind": "title",
+          "code": "0x1d",
+          "title": "COKMD14.MID : エンディング"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/ponyca.xml",
+      "source_order": 3691,
+      "archive": "adndcok_98",
+      "id": "adndcok-98-beep"
+    },
+    {
+      "title": "[PC-9801] Advanced Dungeons & Dragons / CURSE OF THE AZURE BONDS",
+      "driver": {
+        "name": "pc98dos",
+        "type": "opn",
+        "alias": "PONYCA",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "clockmul",
+          "value": "8"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "SOUND.ROM",
+          "offset": "0xCC000"
+        },
+        {
+          "type": "file",
+          "path": "MSCDRV.EXE",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MSCD_98.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "shell",
+          "path": "mscdrv",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "mscd_98",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x00",
+          "title": "タイトル"
+        },
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "キャラクター作成"
+        },
+        {
+          "kind": "title",
+          "code": "0x02",
+          "title": "街"
+        },
+        {
+          "kind": "title",
+          "code": "0x08",
+          "title": "盗賊ギルド"
+        },
+        {
+          "kind": "title",
+          "code": "0x06",
+          "title": "戦闘"
+        },
+        {
+          "kind": "title",
+          "code": "0x0b",
+          "title": "ダンジョン"
+        },
+        {
+          "kind": "title",
+          "code": "0x04",
+          "title": "荒野"
+        },
+        {
+          "kind": "title",
+          "code": "0x05",
+          "title": "村"
+        },
+        {
+          "kind": "title",
+          "code": "0x0a",
+          "title": "ダンジョン2"
+        },
+        {
+          "kind": "title",
+          "code": "0x07",
+          "title": "ズヘンティル城壁"
+        },
+        {
+          "kind": "title",
+          "code": "0x03",
+          "title": "ダンジョン3"
+        },
+        {
+          "kind": "title",
+          "code": "0x09",
+          "title": "エンディング"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/ponyca.xml",
+      "source_order": 3692,
+      "archive": "adndcoab_98",
+      "id": "adndcoab-98-opn"
+    },
+    {
+      "title": "[PC-9801] Advanced Dungeons & Dragons / HILLSFAR",
+      "driver": {
+        "name": "pc98dos",
+        "type": "opn",
+        "alias": "PONYCA",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "clockmul",
+          "value": "8"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "SOUND.ROM",
+          "offset": "0xCC000"
+        },
+        {
+          "type": "file",
+          "path": "MSCDRV.EXE",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MSCD_98.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "shell",
+          "path": "mscdrv",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "mscd_98",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "タイトル"
+        },
+        {
+          "kind": "title",
+          "code": "0x02",
+          "title": "キャンプ"
+        },
+        {
+          "kind": "title",
+          "code": "0x03",
+          "title": "NPC出会い"
+        },
+        {
+          "kind": "title",
+          "code": "0x04",
+          "title": "ギルド / 交易所"
+        },
+        {
+          "kind": "title",
+          "code": "0x09",
+          "title": "酒場 / 寺院"
+        },
+        {
+          "kind": "title",
+          "code": "0x05",
+          "title": "闘技場 バトル"
+        },
+        {
+          "kind": "title",
+          "code": "0x06",
+          "title": "闘技場 勝利"
+        },
+        {
+          "kind": "title",
+          "code": "0x07",
+          "title": "闘技場 敗北"
+        },
+        {
+          "kind": "title",
+          "code": "0x0a",
+          "title": "エンディング"
+        },
+        {
+          "kind": "title",
+          "code": "0x0b",
+          "title": "死亡"
+        },
+        {
+          "kind": "title",
+          "code": "0x08",
+          "title": "未使用曲"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/ponyca.xml",
+      "source_order": 3693,
+      "archive": "adndhill_98",
+      "id": "adndhill-98-opn"
+    },
+    {
+      "title": "[PC-9801] Advanced Dungeons & Dragons / POOL OF RADIANCE",
+      "driver": {
+        "name": "pc98dos",
+        "type": "opn",
+        "alias": "PONYCA",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "clockmul",
+          "value": "8"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "SOUND.ROM",
+          "offset": "0xCC000"
+        },
+        {
+          "type": "file",
+          "path": "MSCDRV.EXE",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MSCD_98.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "shell",
+          "path": "mscdrv",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "mscd_98",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x00",
+          "title": "Title (Unused)"
+        },
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "New Phlan"
+        },
+        {
+          "kind": "title",
+          "code": "0x0d",
+          "title": "Shop Theme"
+        },
+        {
+          "kind": "title",
+          "code": "0x02",
+          "title": "Dungeon Theme 1"
+        },
+        {
+          "kind": "title",
+          "code": "0x03",
+          "title": "Dungeon Theme 2"
+        },
+        {
+          "kind": "title",
+          "code": "0x05",
+          "title": "Dungeon Theme 3"
+        },
+        {
+          "kind": "title",
+          "code": "0x0c",
+          "title": "Wilderness Theme"
+        },
+        {
+          "kind": "title",
+          "code": "0x04",
+          "title": "Diogenes's Theme"
+        },
+        {
+          "kind": "title",
+          "code": "0x07",
+          "title": "Valhingen Graveyard"
+        },
+        {
+          "kind": "title",
+          "code": "0x06",
+          "title": "Yarash's Pyramid"
+        },
+        {
+          "kind": "title",
+          "code": "0x08",
+          "title": "Stojanow Gate & Valjevo Castle"
+        },
+        {
+          "kind": "title",
+          "code": "0x09",
+          "title": "Tyranthraxus' Lair"
+        },
+        {
+          "kind": "title",
+          "code": "0x0a",
+          "title": "Combat Theme"
+        },
+        {
+          "kind": "title",
+          "code": "0x0b",
+          "title": "Tyranthraxus Combat"
+        },
+        {
+          "kind": "title",
+          "code": "0x0e",
+          "title": "Ending"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/ponyca.xml",
+      "source_order": 3694,
+      "archive": "adndpor_98",
+      "id": "adndpor-98-opn"
+    },
+    {
+      "title": "[PC-9801] Advanced Dungeons & Dragons / POOLS OF DARKNESS",
+      "driver": {
+        "name": "pc98dos",
+        "type": "opn",
+        "alias": "PONYCA",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "clockmul",
+          "value": "8"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "SOUND.ROM",
+          "offset": "0xCC000"
+        },
+        {
+          "type": "file",
+          "path": "MSCDRV.EXE",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MSCD_98.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "shell",
+          "path": "mscdrv",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "mscd_98",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x00",
+          "title": "タイトル"
+        },
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "街"
+        },
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "カットシーン"
+        },
+        {
+          "kind": "title",
+          "code": "0x02",
+          "title": "周辺の荒野"
+        },
+        {
+          "kind": "title",
+          "code": "0x07",
+          "title": "ダンジョン"
+        },
+        {
+          "kind": "title",
+          "code": "0x04",
+          "title": "砦"
+        },
+        {
+          "kind": "title",
+          "code": "0x08",
+          "title": "マンシューンの塔"
+        },
+        {
+          "kind": "title",
+          "code": "0x09",
+          "title": "ドロウの地下都市"
+        },
+        {
+          "kind": "title",
+          "code": "0x03",
+          "title": "リンボ"
+        },
+        {
+          "kind": "title",
+          "code": "0x0a",
+          "title": "カリステスの次元(荒野)"
+        },
+        {
+          "kind": "title",
+          "code": "0x0b",
+          "title": "カリステスの次元(ダンジョン)"
+        },
+        {
+          "kind": "title",
+          "code": "0x0c",
+          "title": "マーカスの塔"
+        },
+        {
+          "kind": "title",
+          "code": "0x0d",
+          "title": "モーンダー神の身体上"
+        },
+        {
+          "kind": "title",
+          "code": "0x0e",
+          "title": "モーンダー神の心臓"
+        },
+        {
+          "kind": "title",
+          "code": "0x0f",
+          "title": "ビホルダーの洞窟"
+        },
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "ダーク・フラン"
+        },
+        {
+          "kind": "title",
+          "code": "0x05",
+          "title": "ゴートメネス宮殿"
+        },
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "戦闘"
+        },
+        {
+          "kind": "title",
+          "code": "0x06",
+          "title": "エンディング"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/ponyca.xml",
+      "source_order": 3695,
+      "archive": "adndpod_98",
+      "id": "adndpod-98-opn"
+    },
+    {
+      "title": "[PC-9801] Advanced Dungeons & Dragons / SECRET OF THE SILVER BLADES",
+      "driver": {
+        "name": "pc98dos",
+        "type": "opn",
+        "alias": "PONYCA",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "clockmul",
+          "value": "8"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "SOUND.ROM",
+          "offset": "0xCC000"
+        },
+        {
+          "type": "file",
+          "path": "MSCDRV.EXE",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MSCD_98.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "shell",
+          "path": "mscdrv",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "mscd_98",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x00",
+          "title": "タイトル"
+        },
+        {
+          "kind": "title",
+          "code": "0x0b",
+          "title": "ニューヴァディグリスの村"
+        },
+        {
+          "kind": "title",
+          "code": "0x02",
+          "title": "廃墟"
+        },
+        {
+          "kind": "title",
+          "code": "0x07",
+          "title": "戦闘"
+        },
+        {
+          "kind": "title",
+          "code": "0x0c",
+          "title": "知識の井戸"
+        },
+        {
+          "kind": "title",
+          "code": "0x0e",
+          "title": "黒の盟友(本部)"
+        },
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "鉱山"
+        },
+        {
+          "kind": "title",
+          "code": "0x0d",
+          "title": "神殿"
+        },
+        {
+          "kind": "title",
+          "code": "0x03",
+          "title": "迷宮"
+        },
+        {
+          "kind": "title",
+          "code": "0x04",
+          "title": "クレパス"
+        },
+        {
+          "kind": "title",
+          "code": "0x05",
+          "title": "フロストジャイアントの村"
+        },
+        {
+          "kind": "title",
+          "code": "0x0a",
+          "title": "城1"
+        },
+        {
+          "kind": "title",
+          "code": "0x06",
+          "title": "城2"
+        },
+        {
+          "kind": "title",
+          "code": "0x08",
+          "title": "ボス戦"
+        },
+        {
+          "kind": "title",
+          "code": "0x09",
+          "title": "エンディング"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/ponyca.xml",
+      "source_order": 3696,
+      "archive": "adndsosb_98",
+      "id": "adndsosb-98-opn"
+    },
+    {
+      "title": "[PC-9801] Advanced Dungeons & Dragons / DRAGONS OF FLAME",
+      "driver": {
+        "name": "pc98dos",
+        "type": "opn",
+        "alias": "PONYCA",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "clockmul",
+          "value": "8"
+        },
+        {
+          "name": "showfm3ex",
+          "value": "1"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "DOF_98.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MSCDRV.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "DOF01.MDT",
+          "offset": "0x10"
+        },
+        {
+          "type": "file",
+          "path": "DOF02.MDT",
+          "offset": "0x11"
+        },
+        {
+          "type": "file",
+          "path": "DOF03.MDT",
+          "offset": "0x12"
+        },
+        {
+          "type": "file",
+          "path": "DOF04B.MDT",
+          "offset": "0x13"
+        },
+        {
+          "type": "file",
+          "path": "DOF04W.MDT",
+          "offset": "0x14"
+        },
+        {
+          "type": "file",
+          "path": "DOF05.MDT",
+          "offset": "0x15"
+        },
+        {
+          "type": "file",
+          "path": "DOF06.MDT",
+          "offset": "0x16"
+        },
+        {
+          "type": "file",
+          "path": "DOF07.MDT",
+          "offset": "0x17"
+        },
+        {
+          "type": "file",
+          "path": "DOF08.MDT",
+          "offset": "0x18"
+        },
+        {
+          "type": "file",
+          "path": "DOF09.MDT",
+          "offset": "0x19"
+        },
+        {
+          "type": "file",
+          "path": "DOF10.MDT",
+          "offset": "0x1a"
+        },
+        {
+          "type": "file",
+          "path": "DOF11.MDT",
+          "offset": "0x1b"
+        },
+        {
+          "type": "file",
+          "path": "DOF12.MDT",
+          "offset": "0x1c"
+        },
+        {
+          "type": "file",
+          "path": "DOF13.MDT",
+          "offset": "0x1d"
+        },
+        {
+          "type": "shell",
+          "path": "MSCDRV",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "DOF_98",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "DOF01.MDT  : Introduction"
+        },
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "DOF02.MDT  : Cutscene 1"
+        },
+        {
+          "kind": "title",
+          "code": "0x14",
+          "title": "DOF04W.MDT : Wilderness 1"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "DOF04B.MDT : Combat"
+        },
+        {
+          "kind": "title",
+          "code": "0x1b",
+          "title": "DOF11.MDT  : Talk"
+        },
+        {
+          "kind": "title",
+          "code": "0x15",
+          "title": "DOF05.MDT  : Wilderness 2"
+        },
+        {
+          "kind": "title",
+          "code": "0x18",
+          "title": "DOF08.MDT  : Boss Combat"
+        },
+        {
+          "kind": "title",
+          "code": "0x16",
+          "title": "DOF06.MDT  : Wilderness 3"
+        },
+        {
+          "kind": "title",
+          "code": "0x17",
+          "title": "DOF07.MDT  : Dungeon"
+        },
+        {
+          "kind": "title",
+          "code": "0x1c",
+          "title": "DOF12.MDT  : Cutscene 2"
+        },
+        {
+          "kind": "title",
+          "code": "0x19",
+          "title": "DOF09.MDT  : Last Combat"
+        },
+        {
+          "kind": "title",
+          "code": "0x1a",
+          "title": "DOF10.MDT  : Dragon Combat"
+        },
+        {
+          "kind": "title",
+          "code": "0x1d",
+          "title": "DOF13.MDT  : Ending"
+        },
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "DOF03.MDT  : Game Over"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/ponyca.xml",
+      "source_order": 3697,
+      "archive": "adnddof_98",
+      "id": "adnddof-98-opn"
+    },
+    {
+      "title": "[X68000] Advanced Dungeons & Dragons / DRAGON STRIKE",
+      "driver": {
+        "name": "x68k",
+        "type": "generic",
+        "alias": "PONYCA",
+        "platform": "SHARP X68000"
+      },
+      "options": [
+        {
+          "name": "opm_mix",
+          "value": "0xc0"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "opmdrv.bin"
+        },
+        {
+          "type": "x",
+          "path": "OPMDRV.X",
+          "offset": "0x08000"
+        },
+        {
+          "type": "code",
+          "path": "ARR.OPM",
+          "offset": "0x24000"
+        },
+        {
+          "type": "code",
+          "path": "BACK.OPM",
+          "offset": "0x28000"
+        },
+        {
+          "type": "code",
+          "path": "BEEP.OPM",
+          "offset": "0x2c000"
+        },
+        {
+          "type": "code",
+          "path": "DOPEN2.OPM",
+          "offset": "0x30000"
+        },
+        {
+          "type": "code",
+          "path": "DSET.OPM",
+          "offset": "0x34000"
+        },
+        {
+          "type": "code",
+          "path": "DSET2.OPM",
+          "offset": "0x38000"
+        },
+        {
+          "type": "code",
+          "path": "DSST1.OPM",
+          "offset": "0x3c000"
+        },
+        {
+          "type": "code",
+          "path": "DSST2.OPM",
+          "offset": "0x40000"
+        },
+        {
+          "type": "code",
+          "path": "DSST3.OPM",
+          "offset": "0x44000"
+        },
+        {
+          "type": "code",
+          "path": "DSST4.OPM",
+          "offset": "0x48000"
+        },
+        {
+          "type": "code",
+          "path": "FIRE.OPM",
+          "offset": "0x4c000"
+        },
+        {
+          "type": "code",
+          "path": "FST.OPM",
+          "offset": "0x50000"
+        },
+        {
+          "type": "code",
+          "path": "LAND.OPM",
+          "offset": "0x54000"
+        },
+        {
+          "type": "code",
+          "path": "LVOI.OPM",
+          "offset": "0x58000"
+        },
+        {
+          "type": "code",
+          "path": "OVER.OPM",
+          "offset": "0x5c000"
+        },
+        {
+          "type": "code",
+          "path": "PUSHU.OPM",
+          "offset": "0x60000"
+        },
+        {
+          "type": "code",
+          "path": "RAN6.OPM",
+          "offset": "0x64000"
+        },
+        {
+          "type": "code",
+          "path": "STOCK2.OPM",
+          "offset": "0x68000"
+        },
+        {
+          "type": "code",
+          "path": "WIN1.OPM",
+          "offset": "0x6c000"
+        },
+        {
+          "type": "code",
+          "path": "WIN3.OPM",
+          "offset": "0x70000"
+        },
+        {
+          "type": "code",
+          "path": "WING2.OPM",
+          "offset": "0x74000"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x05",
+          "title": "DOPEN2.OPM : Opening"
+        },
+        {
+          "kind": "title",
+          "code": "0x08",
+          "title": "DSST1.OPM  : Enter class chapters (Manual Protect)"
+        },
+        {
+          "kind": "title",
+          "code": "0x03",
+          "title": "BACK.OPM   : Mission description 1"
+        },
+        {
+          "kind": "title",
+          "code": "0x0a",
+          "title": "DSST3.OPM  : Mission description 2"
+        },
+        {
+          "kind": "title",
+          "code": "0x09",
+          "title": "DSST2.OPM  : Mission description 3"
+        },
+        {
+          "kind": "title",
+          "code": "0x0b",
+          "title": "DSST4.OPM  : Mission description 4"
+        },
+        {
+          "kind": "title",
+          "code": "0x0d",
+          "title": "FST.OPM    : Mission description 5"
+        },
+        {
+          "kind": "title",
+          "code": "0x14",
+          "title": "WIN1.OPM   : Mission Clear 1"
+        },
+        {
+          "kind": "title",
+          "code": "0x15",
+          "title": "WIN3.OPM   : Mission Clear 2"
+        },
+        {
+          "kind": "title",
+          "code": "0x06",
+          "title": "DSET.OPM   : Ending 1"
+        },
+        {
+          "kind": "title",
+          "code": "0x07",
+          "title": "DSET2.OPM  : Ending 2"
+        },
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "OVER.OPM   : Game Over"
+        },
+        {
+          "kind": "title",
+          "code": "0x02",
+          "title": "ARR.OPM    : SE"
+        },
+        {
+          "kind": "title",
+          "code": "0x04",
+          "title": "BEEP.OPM   : SE"
+        },
+        {
+          "kind": "title",
+          "code": "0x0c",
+          "title": "FIRE.OPM   : SE"
+        },
+        {
+          "kind": "title",
+          "code": "0x0e",
+          "title": "LAND.OPM   : SE"
+        },
+        {
+          "kind": "title",
+          "code": "0x0f",
+          "title": "LVOI.OPM   : SE"
+        },
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "PUSHU.OPM  : SE"
+        },
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "RAN6.OPM   : SE"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "STOCK2.OPM : SE"
+        },
+        {
+          "kind": "title",
+          "code": "0x16",
+          "title": "WING2.OPM  : SE"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/ponyca.xml",
+      "source_order": 3698,
+      "archive": "drgnstrk68snd",
+      "id": "drgnstrk68snd-generic"
+    },
+    {
+      "title": "[MSX] Ultima IV - Quest of the Avator -",
+      "driver": {
+        "name": "msx",
+        "type": "generic",
+        "alias": "PONYCA",
+        "platform": "MSX"
+      },
+      "options": [
+        {
+          "name": "mdata_addr",
+          "value": "0xCEB1"
+        },
+        {
+          "name": "mdata_size",
+          "value": "0x500"
+        },
+        {
+          "name": "mfile_size",
+          "value": "0x500"
+        },
+        {
+          "name": "init_pc",
+          "value": "0x0400"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "patch",
+          "offset": "0x0400"
+        },
+        {
+          "type": "code",
+          "path": "MUSICMSX.CIM",
+          "offset": "0xCA80"
+        },
+        {
+          "type": "bgm",
+          "path": "B.DAT",
+          "offset": "0x00"
+        },
+        {
+          "type": "bgm",
+          "path": "C.DAT",
+          "offset": "0x01"
+        },
+        {
+          "type": "bgm",
+          "path": "D.DAT",
+          "offset": "0x02"
+        },
+        {
+          "type": "bgm",
+          "path": "O.DAT",
+          "offset": "0x03"
+        },
+        {
+          "type": "bgm",
+          "path": "T.DAT",
+          "offset": "0x04"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x0104",
+          "title": "T.DAT : 01 : オープニング"
+        },
+        {
+          "kind": "title",
+          "code": "0x0103",
+          "title": "O.DAT : 01 : 地上"
+        },
+        {
+          "kind": "title",
+          "code": "0x0201",
+          "title": "C.DAT : 02 : コンバット"
+        },
+        {
+          "kind": "comment",
+          "text": "\n\t\t\t<title code=\"0x0202\">D.DAT : 02 : コンバット</title>\n\t\t\t<title code=\"0x0203\">O.DAT : 02 : コンバット</title>\n\t\t\t<title code=\"0x0204\">T.DAT : 02 : コンバット</title>\n\t\t\t  "
+        },
+        {
+          "kind": "title",
+          "code": "0x0102",
+          "title": "D.DAT : 01 : ダンジョン"
+        },
+        {
+          "kind": "title",
+          "code": "0x0401",
+          "title": "C.DAT : 04 : 店"
+        },
+        {
+          "kind": "comment",
+          "text": "\n\t\t\t<title code=\"0x0404\">T.DAT : 04 : 店</title>\n\t\t\t  "
+        },
+        {
+          "kind": "title",
+          "code": "0x0101",
+          "title": "C.DAT : 01 : 城"
+        },
+        {
+          "kind": "title",
+          "code": "0x0100",
+          "title": "B.DAT : 01 : ロード・ブリティッシュ"
+        },
+        {
+          "kind": "title",
+          "code": "0x0402",
+          "title": "D.DAT : 04 : キャンプ"
+        },
+        {
+          "kind": "comment",
+          "text": "\n\t\t\t<title code=\"0x0403\">O.DAT : 04 : キャンプ</title>\n\t\t\t  "
+        },
+        {
+          "kind": "title",
+          "code": "0x0301",
+          "title": "C.DAT : 03 : 神殿"
+        },
+        {
+          "kind": "comment",
+          "text": "\n\t\t\t<title code=\"0x0302\">D.DAT : 03 : 神殿</title>\n\t\t\t<title code=\"0x0303\">O.DAT : 03 : 神殿</title>\n\t\t\t<title code=\"0x0304\">T.DAT : 03 : 神殿</title>\n\t\t\t  "
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/ponyca.xml",
+      "source_order": 3699,
+      "archive": "ultima4_msx",
+      "id": "ultima4-msx-generic"
+    },
+    {
+      "title": "[PC-88VA] Ultima IV - Quest of the Avator -(OPNA)",
+      "driver": {
+        "name": "pc88vados",
+        "type": "opna",
+        "alias": "PONYCA",
+        "platform": "NEC PC-88VA"
+      },
+      "options": [],
+      "assets": [
+        {
+          "type": "file",
+          "path": "ultima4.com",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "U4.EXE",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "CAMP.BIN",
+          "offset": "0x10"
+        },
+        {
+          "type": "file",
+          "path": "CASTLE.BIN",
+          "offset": "0x11"
+        },
+        {
+          "type": "file",
+          "path": "CDE1.BIN",
+          "offset": "0x12"
+        },
+        {
+          "type": "file",
+          "path": "CDE2.BIN",
+          "offset": "0x13"
+        },
+        {
+          "type": "file",
+          "path": "CDE3.BIN",
+          "offset": "0x14"
+        },
+        {
+          "type": "file",
+          "path": "CDE4.BIN",
+          "offset": "0x15"
+        },
+        {
+          "type": "file",
+          "path": "COMBAT.BIN",
+          "offset": "0x16"
+        },
+        {
+          "type": "file",
+          "path": "DUN.BIN",
+          "offset": "0x17"
+        },
+        {
+          "type": "file",
+          "path": "GEM.BIN",
+          "offset": "0x18"
+        },
+        {
+          "type": "file",
+          "path": "LORD.BIN",
+          "offset": "0x19"
+        },
+        {
+          "type": "file",
+          "path": "OUT.BIN",
+          "offset": "0x1a"
+        },
+        {
+          "type": "file",
+          "path": "SEER.BIN",
+          "offset": "0x1b"
+        },
+        {
+          "type": "file",
+          "path": "TOWN.BIN",
+          "offset": "0x1c"
+        },
+        {
+          "type": "shell",
+          "path": "ultima4",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x1c",
+          "title": "TOWN.BIN   : オープニング"
+        },
+        {
+          "kind": "title",
+          "code": "0x1a",
+          "title": "OUT.BIN    : 地上"
+        },
+        {
+          "kind": "title",
+          "code": "0x16",
+          "title": "COMBAT.BIN : コンバット"
+        },
+        {
+          "kind": "title",
+          "code": "0x17",
+          "title": "DUN.BIN    : ダンジョン"
+        },
+        {
+          "kind": "title",
+          "code": "0x1b",
+          "title": "SEER.BIN   : 店"
+        },
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "CASTLE.BIN : 城"
+        },
+        {
+          "kind": "title",
+          "code": "0x19",
+          "title": "LORD.BIN   : ロード・ブリティッシュ"
+        },
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "CAMP.BIN   : キャンプ"
+        },
+        {
+          "kind": "title",
+          "code": "0x18",
+          "title": "GEM.BIN    : 神殿"
+        },
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "CDE1.BIN   :"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "CDE2.BIN   :"
+        },
+        {
+          "kind": "title",
+          "code": "0x14",
+          "title": "CDE3.BIN   :"
+        },
+        {
+          "kind": "title",
+          "code": "0x15",
+          "title": "CDE4.BIN   :"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/ponyca.xml",
+      "source_order": 3700,
+      "archive": "ultima4_va",
+      "id": "ultima4-va-opna"
+    },
+    {
+      "title": "[PC-88VA] Ultima IV - Quest of the Avator -(OPN)",
+      "driver": {
+        "name": "pc88vados",
+        "type": "opn",
+        "alias": "PONYCA",
+        "platform": "NEC PC-88VA"
+      },
+      "options": [],
+      "assets": [
+        {
+          "type": "file",
+          "path": "ultima4.com",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "U4.EXE",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "CAMP.BIN",
+          "offset": "0x10"
+        },
+        {
+          "type": "file",
+          "path": "CASTLE.BIN",
+          "offset": "0x11"
+        },
+        {
+          "type": "file",
+          "path": "CDE1.BIN",
+          "offset": "0x12"
+        },
+        {
+          "type": "file",
+          "path": "CDE2.BIN",
+          "offset": "0x13"
+        },
+        {
+          "type": "file",
+          "path": "CDE3.BIN",
+          "offset": "0x14"
+        },
+        {
+          "type": "file",
+          "path": "CDE4.BIN",
+          "offset": "0x15"
+        },
+        {
+          "type": "file",
+          "path": "COMBAT.BIN",
+          "offset": "0x16"
+        },
+        {
+          "type": "file",
+          "path": "DUN.BIN",
+          "offset": "0x17"
+        },
+        {
+          "type": "file",
+          "path": "GEM.BIN",
+          "offset": "0x18"
+        },
+        {
+          "type": "file",
+          "path": "LORD.BIN",
+          "offset": "0x19"
+        },
+        {
+          "type": "file",
+          "path": "OUT.BIN",
+          "offset": "0x1a"
+        },
+        {
+          "type": "file",
+          "path": "SEER.BIN",
+          "offset": "0x1b"
+        },
+        {
+          "type": "file",
+          "path": "TOWN.BIN",
+          "offset": "0x1c"
+        },
+        {
+          "type": "shell",
+          "path": "ultima4",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x1c",
+          "title": "TOWN.BIN   : オープニング"
+        },
+        {
+          "kind": "title",
+          "code": "0x1a",
+          "title": "OUT.BIN    : 地上"
+        },
+        {
+          "kind": "title",
+          "code": "0x16",
+          "title": "COMBAT.BIN : コンバット"
+        },
+        {
+          "kind": "title",
+          "code": "0x17",
+          "title": "DUN.BIN    : ダンジョン"
+        },
+        {
+          "kind": "title",
+          "code": "0x1b",
+          "title": "SEER.BIN   : 店"
+        },
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "CASTLE.BIN : 城"
+        },
+        {
+          "kind": "title",
+          "code": "0x19",
+          "title": "LORD.BIN   : ロード・ブリティッシュ"
+        },
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "CAMP.BIN   : キャンプ"
+        },
+        {
+          "kind": "title",
+          "code": "0x18",
+          "title": "GEM.BIN    : 神殿"
+        },
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "CDE1.BIN   :"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "CDE2.BIN   :"
+        },
+        {
+          "kind": "title",
+          "code": "0x14",
+          "title": "CDE3.BIN   :"
+        },
+        {
+          "kind": "title",
+          "code": "0x15",
+          "title": "CDE4.BIN   :"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/ponyca.xml",
+      "source_order": 3701,
+      "archive": "ultima4_va",
+      "id": "ultima4-va-opn"
+    },
+    {
+      "title": "[PC-88VA] Ultima V - Warriors of Destiny -",
+      "driver": {
+        "name": "pc88vados",
+        "type": "opn",
+        "alias": "PONYCA",
+        "platform": "NEC PC-88VA"
+      },
+      "options": [],
+      "assets": [
+        {
+          "type": "file",
+          "path": "ultima5.com",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "OPNDRV.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "UL01.BIN",
+          "offset": "0x10"
+        },
+        {
+          "type": "file",
+          "path": "UL02.BIN",
+          "offset": "0x11"
+        },
+        {
+          "type": "file",
+          "path": "UL03.BIN",
+          "offset": "0x12"
+        },
+        {
+          "type": "file",
+          "path": "UL04.BIN",
+          "offset": "0x13"
+        },
+        {
+          "type": "file",
+          "path": "UL05.BIN",
+          "offset": "0x14"
+        },
+        {
+          "type": "file",
+          "path": "UL06.BIN",
+          "offset": "0x15"
+        },
+        {
+          "type": "file",
+          "path": "UL07.BIN",
+          "offset": "0x16"
+        },
+        {
+          "type": "file",
+          "path": "UL08.BIN",
+          "offset": "0x17"
+        },
+        {
+          "type": "file",
+          "path": "UL09.BIN",
+          "offset": "0x18"
+        },
+        {
+          "type": "file",
+          "path": "UL10.BIN",
+          "offset": "0x19"
+        },
+        {
+          "type": "file",
+          "path": "UL11.BIN",
+          "offset": "0x1a"
+        },
+        {
+          "type": "file",
+          "path": "UL12.BIN",
+          "offset": "0x1b"
+        },
+        {
+          "type": "file",
+          "path": "UL13.BIN",
+          "offset": "0x1c"
+        },
+        {
+          "type": "file",
+          "path": "UL14.BIN",
+          "offset": "0x1d"
+        },
+        {
+          "type": "file",
+          "path": "UL15.BIN",
+          "offset": "0x1e"
+        },
+        {
+          "type": "shell",
+          "path": "opndrv",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "ultima5",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "UL01.BIN : Ultima Theme"
+        },
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "UL02.BIN : Britannic lands"
+        },
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "UL03.BIN : Cap'n Johne's Hornpipe"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "UL04.BIN : Engagement and melee"
+        },
+        {
+          "kind": "title",
+          "code": "0x14",
+          "title": "UL05.BIN : Stones"
+        },
+        {
+          "kind": "title",
+          "code": "0x15",
+          "title": "UL06.BIN : Greyson's tale"
+        },
+        {
+          "kind": "title",
+          "code": "0x16",
+          "title": "UL07.BIN : Fanfare for the virtuous"
+        },
+        {
+          "kind": "title",
+          "code": "0x17",
+          "title": "UL08.BIN : The Missing Monarch"
+        },
+        {
+          "kind": "title",
+          "code": "0x18",
+          "title": "UL09.BIN : Villager Tarantella"
+        },
+        {
+          "kind": "title",
+          "code": "0x19",
+          "title": "UL10.BIN : Halls of Doom"
+        },
+        {
+          "kind": "title",
+          "code": "0x1a",
+          "title": "UL11.BIN : Worlds below"
+        },
+        {
+          "kind": "title",
+          "code": "0x1b",
+          "title": "UL12.BIN : Lord Blackthorn"
+        },
+        {
+          "kind": "title",
+          "code": "0x1c",
+          "title": "UL13.BIN : Dream of Lady Nan"
+        },
+        {
+          "kind": "title",
+          "code": "0x1d",
+          "title": "UL14.BIN : Joyous reunion"
+        },
+        {
+          "kind": "title",
+          "code": "0x1e",
+          "title": "UL15.BIN : Rule Britannia"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/ponyca.xml",
+      "source_order": 3702,
+      "archive": "ultima5_va",
+      "id": "ultima5-va-opn"
+    },
+    {
+      "title": "[PC-9801] Ultima IV - Quest of the Avator -",
+      "driver": {
+        "name": "pc98dos",
+        "type": "opn",
+        "alias": "PONYCA",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "clockmul",
+          "value": "8"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "SOUND.ROM",
+          "offset": "0xcc000"
+        },
+        {
+          "type": "file",
+          "path": "ultm4_98.com",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "U4.EXE",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "VOICE.DAT",
+          "offset": "-1"
+        },
+        {
+          "type": "conin",
+          "path": "U4.EXE",
+          "offset": "5"
+        },
+        {
+          "type": "file",
+          "path": "B.DAT",
+          "offset": "0x10"
+        },
+        {
+          "type": "file",
+          "path": "C.DAT",
+          "offset": "0x11"
+        },
+        {
+          "type": "file",
+          "path": "D.DAT",
+          "offset": "0x12"
+        },
+        {
+          "type": "file",
+          "path": "O.DAT",
+          "offset": "0x13"
+        },
+        {
+          "type": "file",
+          "path": "T.DAT",
+          "offset": "0x14"
+        },
+        {
+          "type": "shell",
+          "path": "ultm4_98",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x010014",
+          "title": "T.DAT : 01 : オープニング"
+        },
+        {
+          "kind": "title",
+          "code": "0x010013",
+          "title": "O.DAT : 01 : 地上"
+        },
+        {
+          "kind": "title",
+          "code": "0x020011",
+          "title": "C.DAT : 02 : コンバット"
+        },
+        {
+          "kind": "comment",
+          "text": "\n\t\t\t<title code=\"0x020012\">D.DAT : 02 : コンバット</title>\n\t\t\t<title code=\"0x020013\">O.DAT : 02 : コンバット</title>\n\t\t\t<title code=\"0x020014\">T.DAT : 02 : コンバット</title>\n\t\t\t"
+        },
+        {
+          "kind": "title",
+          "code": "0x010012",
+          "title": "D.DAT : 01 : ダンジョン"
+        },
+        {
+          "kind": "title",
+          "code": "0x040011",
+          "title": "C.DAT : 04 : 店"
+        },
+        {
+          "kind": "comment",
+          "text": "\n\t\t\t<title code=\"0x040014\">T.DAT : 04 : 店</title>\n\t\t\t"
+        },
+        {
+          "kind": "title",
+          "code": "0x010011",
+          "title": "C.DAT : 01 : 城"
+        },
+        {
+          "kind": "title",
+          "code": "0x010010",
+          "title": "B.DAT : 01 : ロード・ブリティッシュ"
+        },
+        {
+          "kind": "title",
+          "code": "0x040012",
+          "title": "D.DAT : 04 : キャンプ"
+        },
+        {
+          "kind": "comment",
+          "text": "\n\t\t\t<title code=\"0x040013\">O.DAT : 04 : キャンプ</title>\n\t\t\t"
+        },
+        {
+          "kind": "title",
+          "code": "0x030011",
+          "title": "C.DAT : 03 : 神殿"
+        },
+        {
+          "kind": "comment",
+          "text": "\n\t\t\t<title code=\"0x030012\">D.DAT : 03 : 神殿</title>\n\t\t\t<title code=\"0x030013\">O.DAT : 03 : 神殿</title>\n\t\t\t<title code=\"0x030014\">T.DAT : 03 : 神殿</title>\n\t\t\t<title code=\"0x020010\">B.DAT : 02 : </title>\n\t\t\t<title code=\"0x030010\">B.DAT : 03 : </title>\n\t\t\t<title code=\"0x040010\">B.DAT : 04 : </title>\n\t\t\t<title code=\"0x050010\">B.DAT : 05 : </title>\n\t\t\t"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/ponyca.xml",
+      "source_order": 3703,
+      "archive": "ultima4_98",
+      "id": "ultima4-98-opn"
+    },
+    {
+      "title": "[MSX] Ultima I - The First Age of Darkness -",
+      "driver": {
+        "name": "msx",
+        "type": "generic",
+        "alias": "PONYCA",
+        "platform": "MSX"
+      },
+      "options": [
+        {
+          "name": "mdata_addr",
+          "value": "0xb000"
+        },
+        {
+          "name": "mdata_size",
+          "value": "0x0800"
+        },
+        {
+          "name": "mfile_size",
+          "value": "0x0800"
+        },
+        {
+          "name": "init_pc",
+          "value": "0x0400"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "TOWN.COM",
+          "offset": "0x0100"
+        },
+        {
+          "type": "code",
+          "path": "patch",
+          "offset": "0x0400"
+        },
+        {
+          "type": "bgm",
+          "path": "ULT1.MCP",
+          "offset": "0x00"
+        },
+        {
+          "type": "bgm",
+          "path": "ULT6.MCP",
+          "offset": "0x01"
+        },
+        {
+          "type": "bgm",
+          "path": "ULT7.MCP",
+          "offset": "0x02"
+        },
+        {
+          "type": "bgm",
+          "path": "ULT12R.MCP",
+          "offset": "0x03"
+        },
+        {
+          "type": "bgm",
+          "path": "ULT13.MCP",
+          "offset": "0x04"
+        },
+        {
+          "type": "bgm",
+          "path": "ULT16R.MCP",
+          "offset": "0x05"
+        },
+        {
+          "type": "bgm",
+          "path": "ULT19.MCP",
+          "offset": "0x06"
+        },
+        {
+          "type": "bgm",
+          "path": "ULT22.MCP",
+          "offset": "0x07"
+        },
+        {
+          "type": "bgm",
+          "path": "ULT23.MCP",
+          "offset": "0x08"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x04",
+          "title": "ULT13.MCP  : Title"
+        },
+        {
+          "kind": "title",
+          "code": "0x00",
+          "title": "ULT1.MCP   : Rule Britannia"
+        },
+        {
+          "kind": "title",
+          "code": "0x08",
+          "title": "ULT23.MCP  : Field"
+        },
+        {
+          "kind": "title",
+          "code": "0x02",
+          "title": "ULT7.MCP   : Towns"
+        },
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "ULT6.MCP   : Castles"
+        },
+        {
+          "kind": "title",
+          "code": "0x03",
+          "title": "ULT12R.MCP : Dungeon"
+        },
+        {
+          "kind": "title",
+          "code": "0x07",
+          "title": "ULT22.MCP  : Outer Space"
+        },
+        {
+          "kind": "title",
+          "code": "0x06",
+          "title": "ULT19.MCP  : Mindein"
+        },
+        {
+          "kind": "title",
+          "code": "0x05",
+          "title": "ULT16R.MCP :"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/ponyca.xml",
+      "source_order": 3704,
+      "archive": "ultima1_msx",
+      "id": "ultima1-msx-generic"
+    },
+    {
+      "title": "[MSX] Ultima II - The Revenge of the Enchantress -",
+      "driver": {
+        "name": "msx",
+        "type": "generic",
+        "alias": "PONYCA",
+        "platform": "MSX"
+      },
+      "options": [
+        {
+          "name": "mdata_addr",
+          "value": "0x92f4"
+        },
+        {
+          "name": "mdata_size",
+          "value": "0x0a00"
+        },
+        {
+          "name": "mfile_size",
+          "value": "0x0a00"
+        },
+        {
+          "name": "init_pc",
+          "value": "0x0400"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "OUT.COM",
+          "offset": "0x0100"
+        },
+        {
+          "type": "code",
+          "path": "patch",
+          "offset": "0x0400"
+        },
+        {
+          "type": "bgm",
+          "path": "ULT1.MCP",
+          "offset": "0x00"
+        },
+        {
+          "type": "bgm",
+          "path": "ULT2.MCP",
+          "offset": "0x01"
+        },
+        {
+          "type": "bgm",
+          "path": "ULT6.MCP",
+          "offset": "0x02"
+        },
+        {
+          "type": "bgm",
+          "path": "ULT7.MCP",
+          "offset": "0x03"
+        },
+        {
+          "type": "bgm",
+          "path": "ULT12R.MCP",
+          "offset": "0x04"
+        },
+        {
+          "type": "bgm",
+          "path": "ULT16R.MCP",
+          "offset": "0x05"
+        },
+        {
+          "type": "bgm",
+          "path": "ULT20.MCP",
+          "offset": "0x06"
+        },
+        {
+          "type": "bgm",
+          "path": "ULT21.MCP",
+          "offset": "0x07"
+        },
+        {
+          "type": "bgm",
+          "path": "ULT23.MCP",
+          "offset": "0x08"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "ULT2.MCP   : Title"
+        },
+        {
+          "kind": "title",
+          "code": "0x08",
+          "title": "ULT23.MCP  : Field"
+        },
+        {
+          "kind": "title",
+          "code": "0x02",
+          "title": "ULT6.MCP   : Castles"
+        },
+        {
+          "kind": "title",
+          "code": "0x03",
+          "title": "ULT7.MCP   : Towns"
+        },
+        {
+          "kind": "title",
+          "code": "0x04",
+          "title": "ULT12R.MCP : Dungeon"
+        },
+        {
+          "kind": "title",
+          "code": "0x07",
+          "title": "ULT21.MCP  : Planet"
+        },
+        {
+          "kind": "title",
+          "code": "0x06",
+          "title": "ULT20.MCP  : Castle of Minax"
+        },
+        {
+          "kind": "title",
+          "code": "0x00",
+          "title": "ULT1.MCP   : Rule Britannia"
+        },
+        {
+          "kind": "title",
+          "code": "0x05",
+          "title": "ULT16R.MCP :"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/ponyca.xml",
+      "source_order": 3705,
+      "archive": "ultima2_msx",
+      "id": "ultima2-msx-generic"
+    },
+    {
+      "title": "[PC-9801] Advanced Dungeons & Dragons / DRAGON STRIKE",
+      "driver": {
+        "name": "pc98dos",
+        "type": "opn",
+        "alias": "PONYCA",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "clockmul",
+          "value": "8"
+        },
+        {
+          "name": "dummysndrom",
+          "value": "1"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "DSTR_98.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "SOUND.EXE",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "DSTUNE1.MUS",
+          "offset": "0x10"
+        },
+        {
+          "type": "file",
+          "path": "DSTUNE3.MUS",
+          "offset": "0x12"
+        },
+        {
+          "type": "file",
+          "path": "DSTUNE5.MUS",
+          "offset": "0x13"
+        },
+        {
+          "type": "file",
+          "path": "DSTUNE7.MUS",
+          "offset": "0x14"
+        },
+        {
+          "type": "file",
+          "path": "DSTUNE8.MUS",
+          "offset": "0x15"
+        },
+        {
+          "type": "file",
+          "path": "DST10.MUS",
+          "offset": "0x16"
+        },
+        {
+          "type": "file",
+          "path": "DST11.MUS",
+          "offset": "0x17"
+        },
+        {
+          "type": "file",
+          "path": "DST12.MUS",
+          "offset": "0x18"
+        },
+        {
+          "type": "file",
+          "path": "DST13.MUS",
+          "offset": "0x19"
+        },
+        {
+          "type": "file",
+          "path": "DST14.MUS",
+          "offset": "0x1a"
+        },
+        {
+          "type": "file",
+          "path": "DST15.MUS",
+          "offset": "0x1b"
+        },
+        {
+          "type": "file",
+          "path": "DST16.MUS",
+          "offset": "0x1c"
+        },
+        {
+          "type": "shell",
+          "path": "dstr_98",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "DSTUNE1.MUS : Opening"
+        },
+        {
+          "kind": "title",
+          "code": "0x18",
+          "title": "DST12.MUS   : Enter class chapters (Manual Protect)"
+        },
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "DSTUNE3.MUS : Mission Clear 1"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "DSTUNE5.MUS : Mission Clear 2"
+        },
+        {
+          "kind": "title",
+          "code": "0x14",
+          "title": "DSTUNE7.MUS : Mission description 1"
+        },
+        {
+          "kind": "title",
+          "code": "0x1a",
+          "title": "DST14.MUS   : Mission description 2"
+        },
+        {
+          "kind": "title",
+          "code": "0x19",
+          "title": "DST13.MUS   : Mission description 3"
+        },
+        {
+          "kind": "title",
+          "code": "0x1b",
+          "title": "DST15.MUS   : Mission description 4"
+        },
+        {
+          "kind": "title",
+          "code": "0x17",
+          "title": "DST11.MUS   : Mission description 5"
+        },
+        {
+          "kind": "title",
+          "code": "0x16",
+          "title": "DST10.MUS   : Ending 1"
+        },
+        {
+          "kind": "title",
+          "code": "0x1c",
+          "title": "DST16.MUS   : Ending 2"
+        },
+        {
+          "kind": "title",
+          "code": "0x15",
+          "title": "DSTUNE8.MUS : Game Over"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/ponyca.xml",
+      "source_order": 3706,
+      "archive": "adndds_98",
+      "id": "adndds-98-opn"
+    },
+    {
+      "title": "[FM-7] Ultima IV - Quest of the Avator -(OPN)",
+      "driver": {
+        "name": "fm77av",
+        "type": "generic",
+        "alias": "PONYCA",
+        "platform": "FUJITSU FM-7"
+      },
+      "options": [
+        {
+          "name": "init_pc",
+          "value": "0x5000"
+        },
+        {
+          "name": "mdata_addr",
+          "value": "0x3000"
+        },
+        {
+          "name": "mdata_size",
+          "value": "0x0400"
+        },
+        {
+          "name": "mfile_size",
+          "value": "0x0400"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "PATCH.BIN",
+          "offset": "0x5000"
+        },
+        {
+          "type": "code",
+          "path": "DRIVER.BIN",
+          "offset": "0x0100"
+        },
+        {
+          "type": "bgm",
+          "path": "MUSIC0.BIN",
+          "offset": "0x00"
+        },
+        {
+          "type": "bgm",
+          "path": "MUSIC1.BIN",
+          "offset": "0x01"
+        },
+        {
+          "type": "bgm",
+          "path": "MUSIC2.BIN",
+          "offset": "0x02"
+        },
+        {
+          "type": "bgm",
+          "path": "MUSIC3.BIN",
+          "offset": "0x03"
+        },
+        {
+          "type": "bgm",
+          "path": "MUSIC4.BIN",
+          "offset": "0x04"
+        },
+        {
+          "type": "bgm",
+          "path": "MUSIC5.BIN",
+          "offset": "0x05"
+        },
+        {
+          "type": "bgm",
+          "path": "MUSIC6.BIN",
+          "offset": "0x06"
+        },
+        {
+          "type": "bgm",
+          "path": "MUSIC7.BIN",
+          "offset": "0x07"
+        },
+        {
+          "type": "bgm",
+          "path": "MUSIC8.BIN",
+          "offset": "0x08"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "オープニング"
+        },
+        {
+          "kind": "title",
+          "code": "0x00",
+          "title": "地上"
+        },
+        {
+          "kind": "title",
+          "code": "0x05",
+          "title": "コンバット"
+        },
+        {
+          "kind": "title",
+          "code": "0x02",
+          "title": "ダンジョン"
+        },
+        {
+          "kind": "title",
+          "code": "0x06",
+          "title": "店"
+        },
+        {
+          "kind": "title",
+          "code": "0x04",
+          "title": "城"
+        },
+        {
+          "kind": "title",
+          "code": "0x03",
+          "title": "ロード・ブリティッシュ"
+        },
+        {
+          "kind": "title",
+          "code": "0x07",
+          "title": "キャンプ"
+        },
+        {
+          "kind": "title",
+          "code": "0x06",
+          "title": "神殿"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/ponyca.xml",
+      "source_order": 3707,
+      "archive": "ultima4_fm7",
+      "id": "ultima4-fm7-generic"
+    },
+    {
+      "title": "[FM-7] Ultima IV - Quest of the Avator -(PSG)",
+      "driver": {
+        "name": "fm7",
+        "type": "generic",
+        "alias": "PONYCA",
+        "platform": "FUJITSU FM-7"
+      },
+      "options": [
+        {
+          "name": "init_pc",
+          "value": "0x5000"
+        },
+        {
+          "name": "mdata_addr",
+          "value": "0x3000"
+        },
+        {
+          "name": "mdata_size",
+          "value": "0x0400"
+        },
+        {
+          "name": "mfile_size",
+          "value": "0x0400"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "PATCH.BIN",
+          "offset": "0x5000"
+        },
+        {
+          "type": "code",
+          "path": "DRIVER.BIN",
+          "offset": "0x0100"
+        },
+        {
+          "type": "bgm",
+          "path": "MUSIC0.BIN",
+          "offset": "0x00"
+        },
+        {
+          "type": "bgm",
+          "path": "MUSIC1.BIN",
+          "offset": "0x01"
+        },
+        {
+          "type": "bgm",
+          "path": "MUSIC2.BIN",
+          "offset": "0x02"
+        },
+        {
+          "type": "bgm",
+          "path": "MUSIC3.BIN",
+          "offset": "0x03"
+        },
+        {
+          "type": "bgm",
+          "path": "MUSIC4.BIN",
+          "offset": "0x04"
+        },
+        {
+          "type": "bgm",
+          "path": "MUSIC5.BIN",
+          "offset": "0x05"
+        },
+        {
+          "type": "bgm",
+          "path": "MUSIC6.BIN",
+          "offset": "0x06"
+        },
+        {
+          "type": "bgm",
+          "path": "MUSIC7.BIN",
+          "offset": "0x07"
+        },
+        {
+          "type": "bgm",
+          "path": "MUSIC8.BIN",
+          "offset": "0x08"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "オープニング"
+        },
+        {
+          "kind": "title",
+          "code": "0x00",
+          "title": "地上"
+        },
+        {
+          "kind": "title",
+          "code": "0x05",
+          "title": "コンバット"
+        },
+        {
+          "kind": "title",
+          "code": "0x02",
+          "title": "ダンジョン"
+        },
+        {
+          "kind": "title",
+          "code": "0x06",
+          "title": "店"
+        },
+        {
+          "kind": "title",
+          "code": "0x04",
+          "title": "城"
+        },
+        {
+          "kind": "title",
+          "code": "0x03",
+          "title": "ロード・ブリティッシュ"
+        },
+        {
+          "kind": "title",
+          "code": "0x07",
+          "title": "キャンプ"
+        },
+        {
+          "kind": "title",
+          "code": "0x06",
+          "title": "神殿"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/ponyca.xml",
+      "source_order": 3708,
+      "archive": "ultima4_fm7",
+      "id": "ultima4-fm7-generic-2"
+    },
+    {
+      "title": "[MSX] 孔雀王",
+      "driver": {
+        "name": "msx",
+        "type": "generic",
+        "alias": "PONYCA",
+        "platform": "MSX"
+      },
+      "options": [
+        {
+          "name": "init_pc",
+          "value": "0x1000"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "patch",
+          "offset": "0x1000"
+        },
+        {
+          "type": "code",
+          "path": "MAIN.COM",
+          "offset": "0x4000"
+        },
+        {
+          "type": "code",
+          "path": "MCDATA.COM",
+          "offset": "0x7800"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x0000",
+          "title": "タイトル/スタッフロール"
+        },
+        {
+          "kind": "title",
+          "code": "0x0001",
+          "title": "寺院"
+        },
+        {
+          "kind": "title",
+          "code": "0x0005",
+          "title": "ADVパート1"
+        },
+        {
+          "kind": "title",
+          "code": "0x0002",
+          "title": "戦闘"
+        },
+        {
+          "kind": "title",
+          "code": "0x0009",
+          "title": "死亡"
+        },
+        {
+          "kind": "title",
+          "code": "0x0008",
+          "title": "敵地"
+        },
+        {
+          "kind": "title",
+          "code": "0x0006",
+          "title": "ADVパート2"
+        },
+        {
+          "kind": "title",
+          "code": "0x0007",
+          "title": "ADVパート3"
+        },
+        {
+          "kind": "title",
+          "code": "0x0003",
+          "title": "ラスボス"
+        },
+        {
+          "kind": "title",
+          "code": "0x0004",
+          "title": "エピローグ"
+        },
+        {
+          "kind": "title",
+          "code": "0x0100",
+          "title": "SE 00"
+        },
+        {
+          "kind": "title",
+          "code": "0x0101",
+          "title": "SE 01"
+        },
+        {
+          "kind": "title",
+          "code": "0x0102",
+          "title": "SE 02"
+        },
+        {
+          "kind": "title",
+          "code": "0x0103",
+          "title": "SE 03"
+        },
+        {
+          "kind": "title",
+          "code": "0x0104",
+          "title": "SE 04"
+        },
+        {
+          "kind": "title",
+          "code": "0x0105",
+          "title": "SE 05"
+        },
+        {
+          "kind": "title",
+          "code": "0x0106",
+          "title": "SE 06"
+        },
+        {
+          "kind": "title",
+          "code": "0x0107",
+          "title": "SE 07"
+        },
+        {
+          "kind": "title",
+          "code": "0x0108",
+          "title": "SE 08"
+        },
+        {
+          "kind": "title",
+          "code": "0x0109",
+          "title": "SE 09"
+        },
+        {
+          "kind": "title",
+          "code": "0x010a",
+          "title": "SE 0A"
+        },
+        {
+          "kind": "title",
+          "code": "0x010b",
+          "title": "SE 0B"
+        },
+        {
+          "kind": "title",
+          "code": "0x010c",
+          "title": "SE 0C"
+        },
+        {
+          "kind": "title",
+          "code": "0x010d",
+          "title": "SE 0D"
+        },
+        {
+          "kind": "title",
+          "code": "0x010f",
+          "title": "SE 0F"
+        },
+        {
+          "kind": "title",
+          "code": "0x0110",
+          "title": "SE 10"
+        },
+        {
+          "kind": "title",
+          "code": "0x0111",
+          "title": "SE 11"
+        },
+        {
+          "kind": "title",
+          "code": "0x0112",
+          "title": "SE 12"
+        },
+        {
+          "kind": "title",
+          "code": "0x0113",
+          "title": "SE 13"
+        },
+        {
+          "kind": "title",
+          "code": "0x0114",
+          "title": "SE 14"
+        },
+        {
+          "kind": "title",
+          "code": "0x0115",
+          "title": "SE 15"
+        },
+        {
+          "kind": "title",
+          "code": "0x0116",
+          "title": "SE 16"
+        },
+        {
+          "kind": "title",
+          "code": "0x0117",
+          "title": "SE 17"
+        },
+        {
+          "kind": "title",
+          "code": "0x0118",
+          "title": "SE 18"
+        },
+        {
+          "kind": "title",
+          "code": "0x011a",
+          "title": "SE 1A"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/ponyca.xml",
+      "source_order": 3709,
+      "archive": "kujakuou_msx",
+      "id": "kujakuou-msx-generic"
+    },
+    {
+      "title": "[PC-9801] 谷川浩司の将棋指南III",
+      "driver": {
+        "name": "pc98dos",
+        "type": "opn",
+        "alias": "PONYCA",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "clockmul",
+          "value": "8"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "SHOGI3.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "DRV.BIN",
+          "offset": "10"
+        },
+        {
+          "type": "shell",
+          "path": "SHOGI3",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x08",
+          "title": "08"
+        },
+        {
+          "kind": "title",
+          "code": "0x00",
+          "title": "00"
+        },
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "01"
+        },
+        {
+          "kind": "title",
+          "code": "0x02",
+          "title": "02"
+        },
+        {
+          "kind": "title",
+          "code": "0x03",
+          "title": "03"
+        },
+        {
+          "kind": "title",
+          "code": "0x0E",
+          "title": "14"
+        },
+        {
+          "kind": "title",
+          "code": "0x04",
+          "title": "04: SE"
+        },
+        {
+          "kind": "title",
+          "code": "0x05",
+          "title": "05: SE"
+        },
+        {
+          "kind": "title",
+          "code": "0x06",
+          "title": "06: SE"
+        },
+        {
+          "kind": "title",
+          "code": "0x07",
+          "title": "07: SE"
+        },
+        {
+          "kind": "title",
+          "code": "0x09",
+          "title": "09: SE"
+        },
+        {
+          "kind": "title",
+          "code": "0x0A",
+          "title": "10: SE"
+        },
+        {
+          "kind": "title",
+          "code": "0x0B",
+          "title": "11: SE"
+        },
+        {
+          "kind": "title",
+          "code": "0x0C",
+          "title": "12: SE"
+        },
+        {
+          "kind": "title",
+          "code": "0x0D",
+          "title": "13: SE"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/ponyca.xml",
+      "source_order": 3710,
+      "archive": "tkshogi3_98",
+      "id": "tkshogi3-98-opn"
+    },
+    {
+      "title": "[PC-9801] 田村光昭の麻雀ゼミナール",
+      "driver": {
+        "name": "pc98dos",
+        "type": "opn",
+        "alias": "PONYCA",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "clockmul",
+          "value": "8"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "SOUND.ROM",
+          "offset": "0xCC000"
+        },
+        {
+          "type": "file",
+          "path": "TMMS.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MJ.COM",
+          "offset": "10"
+        },
+        {
+          "type": "shell",
+          "path": "TMMS",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "BGM 01"
+        },
+        {
+          "kind": "title",
+          "code": "0x02",
+          "title": "BGM 02"
+        },
+        {
+          "kind": "title",
+          "code": "0x03",
+          "title": "BGM 03"
+        },
+        {
+          "kind": "title",
+          "code": "0x04",
+          "title": "BGM 04"
+        },
+        {
+          "kind": "title",
+          "code": "0x05",
+          "title": "BGM 05"
+        },
+        {
+          "kind": "title",
+          "code": "0x06",
+          "title": "BGM 06"
+        },
+        {
+          "kind": "title",
+          "code": "0x07",
+          "title": "BGM 07"
+        },
+        {
+          "kind": "title",
+          "code": "0x08",
+          "title": "BGM 08"
+        },
+        {
+          "kind": "title",
+          "code": "0x09",
+          "title": "BGM 09"
+        },
+        {
+          "kind": "title",
+          "code": "0x0A",
+          "title": "BGM 10"
+        },
+        {
+          "kind": "title",
+          "code": "0x0B",
+          "title": "BGM 11"
+        },
+        {
+          "kind": "title",
+          "code": "0x0C",
+          "title": "BGM 12"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/ponyca.xml",
+      "source_order": 3711,
+      "archive": "tmms_98",
+      "id": "tmms-98-opn"
+    },
+    {
+      "title": "[PC-9801] Advanced Dungeons & Dragons / HEROES OF THE LANCE",
+      "driver": {
+        "name": "pc98dos",
+        "type": "opn",
+        "alias": "PONYCA",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "clockmul",
+          "value": "8"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "SOUND.ROM",
+          "offset": "0xCC000"
+        },
+        {
+          "type": "file",
+          "path": "HOL.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "ADD.EXE",
+          "offset": "-1"
+        },
+        {
+          "type": "shell",
+          "path": "HOL",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "Title"
+        },
+        {
+          "kind": "title",
+          "code": "0x02",
+          "title": "Dungeon BGM 1"
+        },
+        {
+          "kind": "title",
+          "code": "0x03",
+          "title": "Dungeon BGM 2"
+        },
+        {
+          "kind": "title",
+          "code": "0x04",
+          "title": "Waterfall"
+        },
+        {
+          "kind": "title",
+          "code": "0x05",
+          "title": "Dungeon BGM 3"
+        },
+        {
+          "kind": "title",
+          "code": "0x06",
+          "title": "Boss"
+        },
+        {
+          "kind": "title",
+          "code": "0x07",
+          "title": "Ending"
+        },
+        {
+          "kind": "title",
+          "code": "0x00",
+          "title": "Unused"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/ponyca.xml",
+      "source_order": 3712,
+      "archive": "adndhol_98",
+      "id": "adndhol-98-opn"
+    },
+    {
+      "title": "[PC-9801] Ultima I - The First Age of Darkness -",
+      "driver": {
+        "name": "pc98dos",
+        "type": "opn",
+        "alias": "PONYCA",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "clockmul",
+          "value": "8"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "SOUND.ROM",
+          "offset": "0xCC000"
+        },
+        {
+          "type": "file",
+          "path": "U1.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "ULTIMA.EXE",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "SCORE.DAT",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "VOICE.DAT",
+          "offset": "-1"
+        },
+        {
+          "type": "shell",
+          "path": "U1",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "Title"
+        },
+        {
+          "kind": "title",
+          "code": "0x02",
+          "title": "Rule Britannia"
+        },
+        {
+          "kind": "title",
+          "code": "0x03",
+          "title": "Field"
+        },
+        {
+          "kind": "title",
+          "code": "0x04",
+          "title": "Towns"
+        },
+        {
+          "kind": "title",
+          "code": "0x05",
+          "title": "Castles"
+        },
+        {
+          "kind": "title",
+          "code": "0x06",
+          "title": "Dungeon"
+        },
+        {
+          "kind": "title",
+          "code": "0x08",
+          "title": "Outer Space"
+        },
+        {
+          "kind": "title",
+          "code": "0x09",
+          "title": "Mindein"
+        },
+        {
+          "kind": "title",
+          "code": "0x07",
+          "title": "BGM 07"
+        },
+        {
+          "kind": "title",
+          "code": "0x0A",
+          "title": "BGM 10"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/ponyca.xml",
+      "source_order": 3713,
+      "archive": "u1_98",
+      "id": "u1-98-opn"
+    },
+    {
+      "title": "[PC-9801] Ultima II - The Revenge of the Enchantress -",
+      "driver": {
+        "name": "pc98dos",
+        "type": "opn",
+        "alias": "PONYCA",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "clockmul",
+          "value": "8"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "SOUND.ROM",
+          "offset": "0xCC000"
+        },
+        {
+          "type": "file",
+          "path": "U2.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "ULTIMA.EXE",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "SCORE.DAT",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "VOICE.DAT",
+          "offset": "-1"
+        },
+        {
+          "type": "shell",
+          "path": "U2",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "Title"
+        },
+        {
+          "kind": "title",
+          "code": "0x02",
+          "title": "Field"
+        },
+        {
+          "kind": "title",
+          "code": "0x03",
+          "title": "Castles"
+        },
+        {
+          "kind": "title",
+          "code": "0x04",
+          "title": "Towns"
+        },
+        {
+          "kind": "title",
+          "code": "0x05",
+          "title": "Dungeon"
+        },
+        {
+          "kind": "title",
+          "code": "0x09",
+          "title": "Planet"
+        },
+        {
+          "kind": "title",
+          "code": "0x0A",
+          "title": "Castle of Minax"
+        },
+        {
+          "kind": "title",
+          "code": "0x07",
+          "title": "Rule Britannia"
+        },
+        {
+          "kind": "title",
+          "code": "0x06",
+          "title": "BGM 06"
+        },
+        {
+          "kind": "title",
+          "code": "0x08",
+          "title": "BGM 08"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/ponyca.xml",
+      "source_order": 3714,
+      "archive": "u2_98",
+      "id": "u2-98-opn"
+    },
+    {
+      "title": "[PC-9801] Ultima VI - The False Prophet -(OPN)",
+      "driver": {
+        "name": "pc98dos",
+        "type": "opn",
+        "alias": "PONYCA",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "clockmul",
+          "value": "8"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "U6.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "END.EXE",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "U6FM.DRV",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MIDI.DAT",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "F_ULTIMA.M",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "F_BOOTUP.M",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "F_INTRO.M",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "F_CREATE.M",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "F_FOREST.M",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "F_HORNPI.M",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "F_ENGAGE.M",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "F_STONES.M",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "F_DUNGEO.M",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "F_BRIT.M",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "F_GARGOY.M",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "F_END.M",
+          "offset": "-1"
+        },
+        {
+          "type": "shell",
+          "path": "U6",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "F_ULTIMA.M : Ultima Theme"
+        },
+        {
+          "kind": "title",
+          "code": "0x02",
+          "title": "F_BOOTUP.M : Bootup"
+        },
+        {
+          "kind": "title",
+          "code": "0x03",
+          "title": "F_INTRO.M  : Introduction"
+        },
+        {
+          "kind": "title",
+          "code": "0x04",
+          "title": "F_CREATE.M : Character Creation"
+        },
+        {
+          "kind": "title",
+          "code": "0x05",
+          "title": "F_FOREST.M : Forest"
+        },
+        {
+          "kind": "title",
+          "code": "0x06",
+          "title": "F_HORNPI.M : Captain Johne's Hornpipe"
+        },
+        {
+          "kind": "title",
+          "code": "0x07",
+          "title": "F_ENGAGE.M : Engagement and Melee"
+        },
+        {
+          "kind": "title",
+          "code": "0x08",
+          "title": "F_STONES.M : Stones"
+        },
+        {
+          "kind": "title",
+          "code": "0x09",
+          "title": "F_DUNGEO.M : Dungeon"
+        },
+        {
+          "kind": "title",
+          "code": "0x0A",
+          "title": "F_BRIT.M   : Rule Britannia"
+        },
+        {
+          "kind": "title",
+          "code": "0x0B",
+          "title": "F_GARGOY.M : Audchar Gargl Zenmur"
+        },
+        {
+          "kind": "title",
+          "code": "0x0C",
+          "title": "F_END.M    : Endgame Music"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/ponyca.xml",
+      "source_order": 3715,
+      "archive": "u6_98",
+      "id": "u6-98-opn"
+    },
+    {
+      "title": "[PC-9801] Ultima VI - The False Prophet -(MT-32)",
+      "driver": {
+        "name": "pc98dos",
+        "type": "beep",
+        "alias": "PONYCA",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "clockmul",
+          "value": "8"
+        },
+        {
+          "name": "midiout",
+          "value": "1"
+        },
+        {
+          "name": "midiout_type",
+          "value": "2"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "U6.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "END.EXE",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "U6MIDI.DRV",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MIDI.DAT",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "ULTIMA.M",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "BOOTUP.M",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "INTRO.M",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "CREATE.M",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "FOREST.M",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "HORNPIPE.M",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "ENGAGE.M",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "STONES.M",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "DUNGEON.M",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "BRIT.M",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "GARGOYLE.M",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "END.M",
+          "offset": "-1"
+        },
+        {
+          "type": "shell",
+          "path": "U6 M",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "ULTIMA.M   : Ultima Theme"
+        },
+        {
+          "kind": "title",
+          "code": "0x02",
+          "title": "BOOTUP.M   : Bootup"
+        },
+        {
+          "kind": "title",
+          "code": "0x03",
+          "title": "INTRO.M    : Introduction"
+        },
+        {
+          "kind": "title",
+          "code": "0x04",
+          "title": "CREATE.M   : Character Creation"
+        },
+        {
+          "kind": "title",
+          "code": "0x05",
+          "title": "FOREST.M   : Forest"
+        },
+        {
+          "kind": "title",
+          "code": "0x06",
+          "title": "HORNPIPE.M : Captain Johne's Hornpipe"
+        },
+        {
+          "kind": "title",
+          "code": "0x07",
+          "title": "ENGAGE.M   : Engagement and Melee"
+        },
+        {
+          "kind": "title",
+          "code": "0x08",
+          "title": "STONES.M   : Stones"
+        },
+        {
+          "kind": "title",
+          "code": "0x09",
+          "title": "DUNGEON.M  : Dungeon"
+        },
+        {
+          "kind": "title",
+          "code": "0x0A",
+          "title": "BRIT.M     : Rule Britannia"
+        },
+        {
+          "kind": "title",
+          "code": "0x0B",
+          "title": "GARGOYLE.M : Audchar Gargl Zenmur"
+        },
+        {
+          "kind": "title",
+          "code": "0x0C",
+          "title": "END.M      : Endgame Music"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/ponyca.xml",
+      "source_order": 3716,
+      "archive": "u6_98",
+      "id": "u6-98-beep"
+    },
+    {
+      "title": "[PC-9801] Ultima VI - The False Prophet -(MT-32 Emulation)",
+      "driver": {
+        "name": "pc98dos",
+        "type": "beep",
+        "alias": "PONYCA",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "clockmul",
+          "value": "8"
+        },
+        {
+          "name": "midiout",
+          "value": "1"
+        },
+        {
+          "name": "midiout_type",
+          "value": "1"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "U6.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "END.EXE",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "U6MIDI.DRV",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MIDI.DAT",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "ULTIMA.M",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "BOOTUP.M",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "INTRO.M",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "CREATE.M",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "FOREST.M",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "HORNPIPE.M",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "ENGAGE.M",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "STONES.M",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "DUNGEON.M",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "BRIT.M",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "GARGOYLE.M",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "END.M",
+          "offset": "-1"
+        },
+        {
+          "type": "shell",
+          "path": "U6 M",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "ULTIMA.M   : Ultima Theme"
+        },
+        {
+          "kind": "title",
+          "code": "0x02",
+          "title": "BOOTUP.M   : Bootup"
+        },
+        {
+          "kind": "title",
+          "code": "0x03",
+          "title": "INTRO.M    : Introduction"
+        },
+        {
+          "kind": "title",
+          "code": "0x04",
+          "title": "CREATE.M   : Character Creation"
+        },
+        {
+          "kind": "title",
+          "code": "0x05",
+          "title": "FOREST.M   : Forest"
+        },
+        {
+          "kind": "title",
+          "code": "0x06",
+          "title": "HORNPIPE.M : Captain Johne's Hornpipe"
+        },
+        {
+          "kind": "title",
+          "code": "0x07",
+          "title": "ENGAGE.M   : Engagement and Melee"
+        },
+        {
+          "kind": "title",
+          "code": "0x08",
+          "title": "STONES.M   : Stones"
+        },
+        {
+          "kind": "title",
+          "code": "0x09",
+          "title": "DUNGEON.M  : Dungeon"
+        },
+        {
+          "kind": "title",
+          "code": "0x0A",
+          "title": "BRIT.M     : Rule Britannia"
+        },
+        {
+          "kind": "title",
+          "code": "0x0B",
+          "title": "GARGOYLE.M : Audchar Gargl Zenmur"
+        },
+        {
+          "kind": "title",
+          "code": "0x0C",
+          "title": "END.M      : Endgame Music"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/ponyca.xml",
+      "source_order": 3717,
+      "archive": "u6_98",
+      "id": "u6-98-beep-2"
+    },
+    {
+      "title": "[PC-9801] Test Drive",
+      "driver": {
+        "name": "pc98dos",
+        "type": "opn",
+        "alias": "PONYCA",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "clockmul",
+          "value": "8"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "SOUND.ROM",
+          "offset": "0xCC000"
+        },
+        {
+          "type": "file",
+          "path": "TD.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": ".EXE",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MUSIC.MUS",
+          "offset": "10"
+        },
+        {
+          "type": "shell",
+          "path": "TD",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x00",
+          "title": "BGM 00"
+        },
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "BGM 01"
+        },
+        {
+          "kind": "title",
+          "code": "0x02",
+          "title": "BGM 02"
+        },
+        {
+          "kind": "title",
+          "code": "0x03",
+          "title": "BGM 03"
+        },
+        {
+          "kind": "title",
+          "code": "0x04",
+          "title": "BGM 04"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/ponyca.xml",
+      "source_order": 3718,
+      "archive": "tdrive_98",
+      "id": "tdrive-98-opn"
+    },
+    {
+      "title": "[PC-9801] The Bard's Tale",
+      "driver": {
+        "name": "pc98dos",
+        "type": "opn",
+        "alias": "PONYCA",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "clockmul",
+          "value": "8"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "SOUND.ROM",
+          "offset": "0xCC000"
+        },
+        {
+          "type": "file",
+          "path": "BT.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "STARTUP.EXE",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "WO_#5.SNG/TR08.TRK",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "WO_#5.SNG/TR09.TRK",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "WO_#5.SNG/TR10.TRK",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "WO_#5.SNG/TR11.TRK",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "WO_#5.SNG/TR12.TRK",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "WO_#5.SNG/TR13.TRK",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "WO_#5.SNG/WO_#5.SNG",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "WO_#12.SNG/TR08.TRK",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "WO_#12.SNG/TR09.TRK",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "WO_#12.SNG/TR10.TRK",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "WO_#12.SNG/TR11.TRK",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "WO_#12.SNG/TR12.TRK",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "WO_#12.SNG/TR13.TRK",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "WO_#12.SNG/WO_#12.SNG",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "WO_TEOS.SNG/TR08.TRK",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "WO_TEOS.SNG/TR09.TRK",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "WO_TEOS.SNG/TR10.TRK",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "WO_TEOS.SNG/TR11.TRK",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "WO_TEOS.SNG/TR12.TRK",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "WO_TEOS.SNG/TR13.TRK",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "WO_TEOS.SNG/WO_TEOS.SNG",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "Z_GARIAR.SNG/TR08.TRK",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "Z_GARIAR.SNG/TR09.TRK",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "Z_GARIAR.SNG/TR10.TRK",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "Z_GARIAR.SNG/TR11.TRK",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "Z_GARIAR.SNG/TR12.TRK",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "Z_GARIAR.SNG/TR13.TRK",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "Z_GARIAR.SNG/Z_GARIAR.SNG",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "Z_JCK.SNG/TR08.TRK",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "Z_JCK.SNG/TR09.TRK",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "Z_JCK.SNG/TR10.TRK",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "Z_JCK.SNG/TR11.TRK",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "Z_JCK.SNG/Z_JCK.SNG",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "Z_PIECS.SNG/TR08.TRK",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "Z_PIECS.SNG/TR09.TRK",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "Z_PIECS.SNG/TR10.TRK",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "Z_PIECS.SNG/TR11.TRK",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "Z_PIECS.SNG/Z_PIECS.SNG",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "Z_T_C_W.SNG/TR08.TRK",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "Z_T_C_W.SNG/TR09.TRK",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "Z_T_C_W.SNG/TR10.TRK",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "Z_T_C_W.SNG/TR11.TRK",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "Z_T_C_W.SNG/TR12.TRK",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "Z_T_C_W.SNG/TR13.TRK",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "Z_T_C_W.SNG/Z_T_C_W.SNG",
+          "offset": "-1"
+        },
+        {
+          "type": "shell",
+          "path": "BT",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x00",
+          "title": "WO_#12.SNG   : Falken's Fury"
+        },
+        {
+          "kind": "title",
+          "code": "0x02",
+          "title": "WO_#5.SNG    : Seeker's Ballad"
+        },
+        {
+          "kind": "title",
+          "code": "0x04",
+          "title": "WO_TEOS.SNG  : Waylands Watch"
+        },
+        {
+          "kind": "title",
+          "code": "0x06",
+          "title": "Z_GARIAR.SNG : Badhr Kilnfest"
+        },
+        {
+          "kind": "title",
+          "code": "0x08",
+          "title": "Z_JCK.SNG    : Traveller tune"
+        },
+        {
+          "kind": "title",
+          "code": "0x0A",
+          "title": "Z_T_C_W.SNG  : Lucklaran"
+        },
+        {
+          "kind": "title",
+          "code": "0x0C",
+          "title": "Z_PIECS.SNG  :"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/ponyca.xml",
+      "source_order": 3719,
+      "archive": "btale_98",
+      "id": "btale-98-opn"
+    },
+    {
+      "title": "[PC-9801] The Bard's Tale II - The Destiny Knight -",
+      "driver": {
+        "name": "pc98dos",
+        "type": "opn",
+        "alias": "PONYCA",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "clockmul",
+          "value": "8"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "SOUND.ROM",
+          "offset": "0xCC000"
+        },
+        {
+          "type": "file",
+          "path": "BT2.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "DK.EXE",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "VOICE.DAT",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "VOICE0.DAT",
+          "offset": "10"
+        },
+        {
+          "type": "file",
+          "path": "VOICE1.DAT",
+          "offset": "11"
+        },
+        {
+          "type": "file",
+          "path": "VOICE2.DAT",
+          "offset": "12"
+        },
+        {
+          "type": "file",
+          "path": "VOICE3.DAT",
+          "offset": "13"
+        },
+        {
+          "type": "file",
+          "path": "VOICE4.DAT",
+          "offset": "14"
+        },
+        {
+          "type": "file",
+          "path": "BARD00.SNG",
+          "offset": "0x10"
+        },
+        {
+          "type": "file",
+          "path": "BARD01.SNG",
+          "offset": "0x11"
+        },
+        {
+          "type": "file",
+          "path": "BARD02.SNG",
+          "offset": "0x12"
+        },
+        {
+          "type": "file",
+          "path": "BARD1.SNG",
+          "offset": "0x13"
+        },
+        {
+          "type": "file",
+          "path": "BARD2.SNG",
+          "offset": "0x14"
+        },
+        {
+          "type": "file",
+          "path": "BARD3.SNG",
+          "offset": "0x15"
+        },
+        {
+          "type": "file",
+          "path": "BARD4.SNG",
+          "offset": "0x16"
+        },
+        {
+          "type": "file",
+          "path": "BARD5.SNG",
+          "offset": "0x17"
+        },
+        {
+          "type": "file",
+          "path": "BARD6.SNG",
+          "offset": "0x18"
+        },
+        {
+          "type": "file",
+          "path": "BARD7.SNG",
+          "offset": "0x19"
+        },
+        {
+          "type": "file",
+          "path": "BARD8.SNG",
+          "offset": "0x1A"
+        },
+        {
+          "type": "file",
+          "path": "BARD9.SNG",
+          "offset": "0x1B"
+        },
+        {
+          "type": "shell",
+          "path": "BT2",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x1000",
+          "title": "BARD00.SNG : OPENING 1"
+        },
+        {
+          "kind": "title",
+          "code": "0x1100",
+          "title": "BARD01.SNG : OPENING 2"
+        },
+        {
+          "kind": "title",
+          "code": "0x1200",
+          "title": "BARD02.SNG : OPENING 3"
+        },
+        {
+          "kind": "title",
+          "code": "0x130B",
+          "title": "BARD1.SNG  : アーチャーの歌 (Instrument 1)"
+        },
+        {
+          "kind": "title",
+          "code": "0x140B",
+          "title": "BARD2.SNG  : 呪文の歌 (Instrument 1)"
+        },
+        {
+          "kind": "title",
+          "code": "0x150B",
+          "title": "BARD3.SNG  : 聖域の歌 (Instrument 1)"
+        },
+        {
+          "kind": "title",
+          "code": "0x160B",
+          "title": "BARD4.SNG  : 戦闘の声 (Instrument 1)"
+        },
+        {
+          "kind": "title",
+          "code": "0x170B",
+          "title": "BARD5.SNG  : ザンデュバーのカラック (Instrument 1)"
+        },
+        {
+          "kind": "title",
+          "code": "0x180B",
+          "title": "BARD6.SNG  : デュオタイムの詩 (Instrument 1)"
+        },
+        {
+          "kind": "title",
+          "code": "0x190B",
+          "title": "BARD7.SNG  : 見張りの森のメロディー (Instrument 1)"
+        },
+        {
+          "kind": "title",
+          "code": "0x130C",
+          "title": "BARD1.SNG  : アーチャーの歌 (Instrument 2)"
+        },
+        {
+          "kind": "title",
+          "code": "0x140C",
+          "title": "BARD2.SNG  : 呪文の歌 (Instrument 2)"
+        },
+        {
+          "kind": "title",
+          "code": "0x150C",
+          "title": "BARD3.SNG  : 聖域の歌 (Instrument 2)"
+        },
+        {
+          "kind": "title",
+          "code": "0x160C",
+          "title": "BARD4.SNG  : 戦闘の声 (Instrument 2)"
+        },
+        {
+          "kind": "title",
+          "code": "0x170C",
+          "title": "BARD5.SNG  : ザンデュバーのカラック (Instrument 2)"
+        },
+        {
+          "kind": "title",
+          "code": "0x180C",
+          "title": "BARD6.SNG  : デュオタイムの詩 (Instrument 2)"
+        },
+        {
+          "kind": "title",
+          "code": "0x190C",
+          "title": "BARD7.SNG  : 見張りの森のメロディー (Instrument 2)"
+        },
+        {
+          "kind": "title",
+          "code": "0x130D",
+          "title": "BARD1.SNG  : アーチャーの歌 (Instrument 3)"
+        },
+        {
+          "kind": "title",
+          "code": "0x140D",
+          "title": "BARD2.SNG  : 呪文の歌 (Instrument 3)"
+        },
+        {
+          "kind": "title",
+          "code": "0x150D",
+          "title": "BARD3.SNG  : 聖域の歌 (Instrument 3)"
+        },
+        {
+          "kind": "title",
+          "code": "0x160D",
+          "title": "BARD4.SNG  : 戦闘の声 (Instrument 3)"
+        },
+        {
+          "kind": "title",
+          "code": "0x170D",
+          "title": "BARD5.SNG  : ザンデュバーのカラック (Instrument 3)"
+        },
+        {
+          "kind": "title",
+          "code": "0x180D",
+          "title": "BARD6.SNG  : デュオタイムの詩 (Instrument 3)"
+        },
+        {
+          "kind": "title",
+          "code": "0x190D",
+          "title": "BARD7.SNG  : 見張りの森のメロディー (Instrument 3)"
+        },
+        {
+          "kind": "title",
+          "code": "0x130E",
+          "title": "BARD1.SNG  : アーチャーの歌 (Instrument 4)"
+        },
+        {
+          "kind": "title",
+          "code": "0x140E",
+          "title": "BARD2.SNG  : 呪文の歌 (Instrument 4)"
+        },
+        {
+          "kind": "title",
+          "code": "0x150E",
+          "title": "BARD3.SNG  : 聖域の歌 (Instrument 4)"
+        },
+        {
+          "kind": "title",
+          "code": "0x160E",
+          "title": "BARD4.SNG  : 戦闘の声 (Instrument 4)"
+        },
+        {
+          "kind": "title",
+          "code": "0x170E",
+          "title": "BARD5.SNG  : ザンデュバーのカラック (Instrument 4)"
+        },
+        {
+          "kind": "title",
+          "code": "0x180E",
+          "title": "BARD6.SNG  : デュオタイムの詩 (Instrument 4)"
+        },
+        {
+          "kind": "title",
+          "code": "0x190E",
+          "title": "BARD7.SNG  : 見張りの森のメロディー (Instrument 4)"
+        },
+        {
+          "kind": "title",
+          "code": "0x1A0A",
+          "title": "BARD8.SNG  : UNUSED OPENING 3"
+        },
+        {
+          "kind": "title",
+          "code": "0x1B0A",
+          "title": "BARD9.SNG  : UNUSED OPENING 2"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/ponyca.xml",
+      "source_order": 3720,
+      "archive": "btale2_98",
+      "id": "btale2-98-opn"
+    },
+    {
+      "title": "[PC-9801] The Bard's Tale III - Thief of Fate -",
+      "driver": {
+        "name": "pc98dos",
+        "type": "opn",
+        "alias": "PONYCA",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "clockmul",
+          "value": "8"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "SOUND.ROM",
+          "offset": "0xCC000"
+        },
+        {
+          "type": "file",
+          "path": "BT3.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "THIEF.EXE",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "BARD1.SNG",
+          "offset": "0x10"
+        },
+        {
+          "type": "file",
+          "path": "BARD2.SNG",
+          "offset": "0x11"
+        },
+        {
+          "type": "file",
+          "path": "BARD3.SNG",
+          "offset": "0x12"
+        },
+        {
+          "type": "file",
+          "path": "BARD4.SNG",
+          "offset": "0x13"
+        },
+        {
+          "type": "file",
+          "path": "BARD5.SNG",
+          "offset": "0x14"
+        },
+        {
+          "type": "file",
+          "path": "BARD6.SNG",
+          "offset": "0x15"
+        },
+        {
+          "type": "file",
+          "path": "BARD7.SNG",
+          "offset": "0x16"
+        },
+        {
+          "type": "file",
+          "path": "BARD8.SNG",
+          "offset": "0x17"
+        },
+        {
+          "type": "file",
+          "path": "BARD9.SNG",
+          "offset": "0x18"
+        },
+        {
+          "type": "shell",
+          "path": "BT3",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "BARD1.SNG : サー・ロビンの歌"
+        },
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "BARD2.SNG : セイフティーソング"
+        },
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "BARD3.SNG : 聖域の歌"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "BARD4.SNG : 回復のバラード"
+        },
+        {
+          "kind": "title",
+          "code": "0x14",
+          "title": "BARD5.SNG : 二回の詩"
+        },
+        {
+          "kind": "title",
+          "code": "0x15",
+          "title": "BARD6.SNG : 森番のメロディー"
+        },
+        {
+          "kind": "title",
+          "code": "0x16",
+          "title": "BARD7.SNG : キールの序曲"
+        },
+        {
+          "kind": "title",
+          "code": "0x17",
+          "title": "BARD8.SNG : 詩人の盾"
+        },
+        {
+          "kind": "title",
+          "code": "0x18",
+          "title": "BARD9.SNG :"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/ponyca.xml",
+      "source_order": 3721,
+      "archive": "btale3_98",
+      "id": "btale3-98-opn"
+    },
+    {
+      "title": "[MSX] Ultima III - Exodus(OPLL)",
+      "driver": {
+        "name": "msx",
+        "type": "generic",
+        "alias": "PONYCA",
+        "platform": "MSX"
+      },
+      "options": [
+        {
+          "name": "mdata_addr",
+          "value": "0xd000"
+        },
+        {
+          "name": "mdata_size",
+          "value": "0x1010"
+        },
+        {
+          "name": "mfile_size",
+          "value": "0x1010"
+        },
+        {
+          "name": "init_pc",
+          "value": "0xb100"
+        },
+        {
+          "name": "use_opll",
+          "value": "0x01"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "ULTIMA.COM",
+          "offset": "0x0100"
+        },
+        {
+          "type": "code",
+          "path": "patch",
+          "offset": "0xb100"
+        },
+        {
+          "type": "code",
+          "path": "MUSDAT1.DAT",
+          "offset": "0xd000"
+        },
+        {
+          "type": "fmbios",
+          "path": "fmpac.rom",
+          "offset": "0x0000"
+        },
+        {
+          "type": "bgm",
+          "path": "MUSDAT1.DAT",
+          "offset": "0x00"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x00000000",
+          "title": "Wanderer"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000100",
+          "title": "Towns & Dwellings"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000200",
+          "title": "Castles"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000300",
+          "title": "Combat"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000400",
+          "title": "Shopping"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000500",
+          "title": "Exodus - The Isle of Fire"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000600",
+          "title": "Rule Britannia"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000700",
+          "title": "Alive"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000800",
+          "title": "Fanfare"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/ponyca.xml",
+      "source_order": 3722,
+      "archive": "ultima3_msx,fmpac_msx",
+      "id": "ultima3-msx-fmpac-msx-generic"
+    },
+    {
+      "title": "[MSX] Ultima III - Exodus(PSG)",
+      "driver": {
+        "name": "msx",
+        "type": "generic",
+        "alias": "PONYCA",
+        "platform": "MSX"
+      },
+      "options": [
+        {
+          "name": "mdata_addr",
+          "value": "0xd000"
+        },
+        {
+          "name": "mdata_size",
+          "value": "0x1010"
+        },
+        {
+          "name": "mfile_size",
+          "value": "0x1010"
+        },
+        {
+          "name": "init_pc",
+          "value": "0xb100"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "ULTIMA.COM",
+          "offset": "0x0100"
+        },
+        {
+          "type": "code",
+          "path": "patch",
+          "offset": "0xb100"
+        },
+        {
+          "type": "code",
+          "path": "MUSDAT0.DAT",
+          "offset": "0xd000"
+        },
+        {
+          "type": "bgm",
+          "path": "MUSDAT0.DAT",
+          "offset": "0x00"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x00000000",
+          "title": "Wanderer"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000100",
+          "title": "Towns & Dwellings"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000200",
+          "title": "Castles"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000300",
+          "title": "Combat"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000400",
+          "title": "Shopping"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000500",
+          "title": "Exodus - The Isle of Fire"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000600",
+          "title": "Rule Britannia"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000700",
+          "title": "Alive"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000800",
+          "title": "Fanfare"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/ponyca.xml",
+      "source_order": 3723,
+      "archive": "ultima3_msx",
+      "id": "ultima3-msx-generic"
+    }
+  ]
+}

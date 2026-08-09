@@ -1,0 +1,114 @@
+{
+  "format": "hoot-catalog-shard",
+  "version": 1,
+  "source_file": "xml/studioangel.xml",
+  "date": "2005/09/25",
+  "comments": [
+    " //Studio ANGEL "
+  ],
+  "games": [
+    {
+      "title": "[PC-9801] 制服マンション 只今マン室 -1号棟-",
+      "driver": {
+        "name": "pc98dos",
+        "type": "opn",
+        "alias": "Studio ANGEL",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "clockmul",
+          "value": "8"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "NLP_HOOT.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "NAX.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "TONES.DTA",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "M01.O",
+          "offset": "0x10"
+        },
+        {
+          "type": "file",
+          "path": "M02.O",
+          "offset": "0x11"
+        },
+        {
+          "type": "file",
+          "path": "M03.O",
+          "offset": "0x12"
+        },
+        {
+          "type": "file",
+          "path": "M04.O",
+          "offset": "0x13"
+        },
+        {
+          "type": "file",
+          "path": "M05.O",
+          "offset": "0x14"
+        },
+        {
+          "type": "file",
+          "path": "M06.O",
+          "offset": "0x15"
+        },
+        {
+          "type": "file",
+          "path": "SE.O",
+          "offset": "0x16"
+        },
+        {
+          "type": "shell",
+          "path": "nax",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "nlp_hoot",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "M01.O :"
+        },
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "M02.O :"
+        },
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "M03.O :"
+        },
+        {
+          "kind": "comment",
+          "text": "\n\t\t\t<title code=\"0x13\">M04.O : </title>\n\t\t\t<title code=\"0x14\">M05.O : </title>\n\t\t\t<title code=\"0x15\">M06.O : </title>\n\t\t\t<title code=\"0x16\">SE.O  : </title>\n"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/studioangel.xml",
+      "source_order": 4297,
+      "archive": "sfkmnsn_98",
+      "id": "sfkmnsn-98-opn"
+    }
+  ]
+}

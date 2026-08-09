@@ -1,0 +1,3872 @@
+{
+  "format": "hoot-catalog-shard",
+  "version": 1,
+  "source_file": "xml/custom.xml",
+  "date": "2005/09/25",
+  "comments": [
+    " //CUSTOM "
+  ],
+  "games": [
+    {
+      "title": "[PC-8801] CYBER BLOCK METAL ORANGE",
+      "driver": {
+        "name": "pc88",
+        "type": "opn",
+        "alias": "CUSTOM",
+        "platform": "NEC PC-8801"
+      },
+      "options": [
+        {
+          "name": "init_pc",
+          "value": "0x1000"
+        },
+        {
+          "name": "mdata_addr",
+          "value": "0xd400"
+        },
+        {
+          "name": "mdata_size",
+          "value": "0x1000"
+        },
+        {
+          "name": "baseclock",
+          "value": "0x04"
+        },
+        {
+          "name": "showfm3ex",
+          "value": "0x01"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "MOPATCH.BIN",
+          "offset": "0x1000"
+        },
+        {
+          "type": "code",
+          "path": "MUSIC.PCK",
+          "offset": "0x3000"
+        },
+        {
+          "type": "code",
+          "path": "TRPSCR.SYS",
+          "offset": "0xbf40"
+        },
+        {
+          "type": "bgm",
+          "path": "CBIAM01.MDT",
+          "offset": "0x00"
+        },
+        {
+          "type": "bgm",
+          "path": "CBIAM03.MDT",
+          "offset": "0x01"
+        },
+        {
+          "type": "bgm",
+          "path": "CBIAM05.MDT",
+          "offset": "0x02"
+        },
+        {
+          "type": "bgm",
+          "path": "CBIAM072.MDT",
+          "offset": "0x03"
+        },
+        {
+          "type": "bgm",
+          "path": "CBIAM08.MDT",
+          "offset": "0x04"
+        },
+        {
+          "type": "bgm",
+          "path": "CBIAM09.MDT",
+          "offset": "0x05"
+        },
+        {
+          "type": "bgm",
+          "path": "COSUMO.MDT",
+          "offset": "0x06"
+        },
+        {
+          "type": "bgm",
+          "path": "INFO.MDT",
+          "offset": "0x07"
+        },
+        {
+          "type": "bgm",
+          "path": "MO_VIS_A.MDT",
+          "offset": "0x08"
+        },
+        {
+          "type": "bgm",
+          "path": "MO_VIS_B.MDT",
+          "offset": "0x09"
+        },
+        {
+          "type": "bgm",
+          "path": "MO_VIS_C.MDT",
+          "offset": "0x0a"
+        },
+        {
+          "type": "bgm",
+          "path": "MO_VIS_D.MDT",
+          "offset": "0x0b"
+        },
+        {
+          "type": "bgm",
+          "path": "MO_VIS_E.MDT",
+          "offset": "0x0c"
+        },
+        {
+          "type": "bgm",
+          "path": "ORION.MDT",
+          "offset": "0x0d"
+        },
+        {
+          "type": "bgm",
+          "path": "SFC.MDT",
+          "offset": "0x0e"
+        },
+        {
+          "type": "bgm",
+          "path": "SFO2.MDT",
+          "offset": "0x0f"
+        },
+        {
+          "type": "bgm",
+          "path": "SFP.MDT",
+          "offset": "0x10"
+        },
+        {
+          "type": "bgm",
+          "path": "SFP2.MDT",
+          "offset": "0x11"
+        },
+        {
+          "type": "bgm",
+          "path": "SFQ.MDT",
+          "offset": "0x12"
+        },
+        {
+          "type": "bgm",
+          "path": "SFR.MDT",
+          "offset": "0x13"
+        },
+        {
+          "type": "bgm",
+          "path": "SFT3.MDT",
+          "offset": "0x14"
+        },
+        {
+          "type": "bgm",
+          "path": "SFX.MDT",
+          "offset": "0x15"
+        },
+        {
+          "type": "bgm",
+          "path": "SFZ.MDT",
+          "offset": "0x16"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x00000012",
+          "title": "-01- LOGINCHK         : SF_Q     : FURUKAWA"
+        },
+        {
+          "kind": "title",
+          "code": "0x0000000f",
+          "title": "-02- OPENING          : SF_O2    : FURUKAWA"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000010",
+          "title": "-03- RANKING          : SF_P     : FURUKAWA"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000005",
+          "title": "-04- START            : CB_IAM09 : REZON"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000011",
+          "title": "-05- STAGE            : SF_P2    : FURUKAWA"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000008",
+          "title": "-06- VISUAL01 TOMO    : MO_V3    : MOKOMOKO"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000009",
+          "title": "-07- VISUAL02 KAZUMI  : MO_V8    : MOKOMOKO"
+        },
+        {
+          "kind": "title",
+          "code": "0x0000000a",
+          "title": "-08- VISUAL03 MIKA    : MO_V1    : MOKOMOKO"
+        },
+        {
+          "kind": "title",
+          "code": "0x0000000b",
+          "title": "-09- VISUAL04 RINN    : CHINA    : FURUKAWA"
+        },
+        {
+          "kind": "title",
+          "code": "0x0000000c",
+          "title": "-10- VISUAL05 CYNTHIA : MO_V4    : MOKOMOKO"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000007",
+          "title": "-11- INFO             : CB_IAM02 : REZON"
+        },
+        {
+          "kind": "title",
+          "code": "0x0000000d",
+          "title": "-12- STAGE01          : ORION    : FURUKAWA"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000000",
+          "title": "-13- STAGE02          : CB_IAM01 : REZON"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000006",
+          "title": "-14- STAGE03          : COSMO    : FURUKAWA"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000002",
+          "title": "-15- STAGE04          : CB_IAM05 : REZON"
+        },
+        {
+          "kind": "title",
+          "code": "0x0000000e",
+          "title": "-16- STAGE05          : SF_C     : FURUKAWA"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000003",
+          "title": "-17- CLEAR            : CBIAM07  : REZON"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000013",
+          "title": "-18- CONTINUE         : SF_R     : FURUKAWA"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000001",
+          "title": "-19- GAMEOVER         : CB_IAM03 : REZON"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000015",
+          "title": "-20- TOPENTRY         : SF_X     : FURUKAWA"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000004",
+          "title": "-21- ENTRY2-8         : CB_IAM08 : REZON"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000014",
+          "title": "-22- ENDING           : SF_T3    : FURUKAWA"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000016",
+          "title": "-??- NOT USED         : SF_Z     : FURUKAWA"
+        },
+        {
+          "kind": "title",
+          "code": "0x200000ff",
+          "title": "EFFECT #20"
+        },
+        {
+          "kind": "title",
+          "code": "0x210000ff",
+          "title": "EFFECT #21"
+        },
+        {
+          "kind": "title",
+          "code": "0x220000ff",
+          "title": "EFFECT #22"
+        },
+        {
+          "kind": "title",
+          "code": "0x230000ff",
+          "title": "EFFECT #23"
+        },
+        {
+          "kind": "title",
+          "code": "0x240000ff",
+          "title": "EFFECT #24"
+        },
+        {
+          "kind": "title",
+          "code": "0x250000ff",
+          "title": "EFFECT #25"
+        },
+        {
+          "kind": "title",
+          "code": "0x260000ff",
+          "title": "EFFECT #26"
+        },
+        {
+          "kind": "title",
+          "code": "0x270000ff",
+          "title": "EFFECT #27"
+        },
+        {
+          "kind": "title",
+          "code": "0x280000ff",
+          "title": "EFFECT #28"
+        },
+        {
+          "kind": "title",
+          "code": "0x290000ff",
+          "title": "EFFECT #29"
+        },
+        {
+          "kind": "title",
+          "code": "0x2a0000ff",
+          "title": "EFFECT #2A"
+        },
+        {
+          "kind": "title",
+          "code": "0x2b0000ff",
+          "title": "EFFECT #2B"
+        },
+        {
+          "kind": "title",
+          "code": "0x2c0000ff",
+          "title": "EFFECT #2C"
+        },
+        {
+          "kind": "title",
+          "code": "0x2d0000ff",
+          "title": "EFFECT #2D"
+        },
+        {
+          "kind": "title",
+          "code": "0x2e0000ff",
+          "title": "EFFECT #2E"
+        },
+        {
+          "kind": "title",
+          "code": "0x2f0000ff",
+          "title": "EFFECT #2F"
+        },
+        {
+          "kind": "title",
+          "code": "0x300000ff",
+          "title": "EFFECT #30"
+        },
+        {
+          "kind": "title",
+          "code": "0x310000ff",
+          "title": "EFFECT #31"
+        },
+        {
+          "kind": "title",
+          "code": "0x320000ff",
+          "title": "EFFECT #32"
+        },
+        {
+          "kind": "title",
+          "code": "0x330000ff",
+          "title": "EFFECT #33"
+        },
+        {
+          "kind": "title",
+          "code": "0x340000ff",
+          "title": "EFFECT #34"
+        },
+        {
+          "kind": "title",
+          "code": "0x350000ff",
+          "title": "EFFECT #35"
+        },
+        {
+          "kind": "title",
+          "code": "0x360000ff",
+          "title": "EFFECT #36"
+        },
+        {
+          "kind": "title",
+          "code": "0x370000ff",
+          "title": "EFFECT #37"
+        },
+        {
+          "kind": "title",
+          "code": "0x380000ff",
+          "title": "EFFECT #38"
+        },
+        {
+          "kind": "title",
+          "code": "0x390000ff",
+          "title": "EFFECT #39"
+        },
+        {
+          "kind": "title",
+          "code": "0x3a0000ff",
+          "title": "EFFECT #3A"
+        },
+        {
+          "kind": "title",
+          "code": "0x3b0000ff",
+          "title": "EFFECT #3B"
+        },
+        {
+          "kind": "title",
+          "code": "0x3c0000ff",
+          "title": "EFFECT #3C"
+        },
+        {
+          "kind": "title",
+          "code": "0x3d0000ff",
+          "title": "EFFECT #3D"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/custom.xml",
+      "source_order": 982,
+      "archive": "morange",
+      "id": "morange-opn"
+    },
+    {
+      "title": "[PC-9801] CYBER BLOCK METAL ORANGE",
+      "driver": {
+        "name": "pc98dos",
+        "type": "opn",
+        "alias": "CUSTOM",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "clockmul",
+          "value": "4"
+        },
+        {
+          "name": "showfm3ex",
+          "value": "1"
+        },
+        {
+          "name": "wstimer",
+          "value": "1"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "MORG_98.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "TRPSCHRN.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "CBIAM01.MDT",
+          "offset": "0x10"
+        },
+        {
+          "type": "file",
+          "path": "CBIAM02.MDT",
+          "offset": "0x11"
+        },
+        {
+          "type": "file",
+          "path": "CBIAM03.MDT",
+          "offset": "0x12"
+        },
+        {
+          "type": "file",
+          "path": "CBIAM06.MDT",
+          "offset": "0x13"
+        },
+        {
+          "type": "file",
+          "path": "CBIAM07.MDT",
+          "offset": "0x14"
+        },
+        {
+          "type": "file",
+          "path": "CBIAM08.MDT",
+          "offset": "0x15"
+        },
+        {
+          "type": "file",
+          "path": "CBIAM09.MDT",
+          "offset": "0x16"
+        },
+        {
+          "type": "file",
+          "path": "CHINA.MDT",
+          "offset": "0x17"
+        },
+        {
+          "type": "file",
+          "path": "COSUMO.MDT",
+          "offset": "0x18"
+        },
+        {
+          "type": "file",
+          "path": "MOV1.MDT",
+          "offset": "0x19"
+        },
+        {
+          "type": "file",
+          "path": "MOV3.MDT",
+          "offset": "0x1a"
+        },
+        {
+          "type": "file",
+          "path": "MOV4.MDT",
+          "offset": "0x1b"
+        },
+        {
+          "type": "file",
+          "path": "MOV8.MDT",
+          "offset": "0x1c"
+        },
+        {
+          "type": "file",
+          "path": "ORION.MDT",
+          "offset": "0x1d"
+        },
+        {
+          "type": "file",
+          "path": "SFC.MDT",
+          "offset": "0x1e"
+        },
+        {
+          "type": "file",
+          "path": "SFO2.MDT",
+          "offset": "0x1f"
+        },
+        {
+          "type": "file",
+          "path": "SFP.MDT",
+          "offset": "0x20"
+        },
+        {
+          "type": "file",
+          "path": "SFP2.MDT",
+          "offset": "0x21"
+        },
+        {
+          "type": "file",
+          "path": "SFQ.MDT",
+          "offset": "0x22"
+        },
+        {
+          "type": "file",
+          "path": "SFR.MDT",
+          "offset": "0x23"
+        },
+        {
+          "type": "file",
+          "path": "SFT3.MDT",
+          "offset": "0x24"
+        },
+        {
+          "type": "file",
+          "path": "SFX.MDT",
+          "offset": "0x25"
+        },
+        {
+          "type": "shell",
+          "path": "TRPSCHRN",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "MORG_98",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x22",
+          "title": "SFQ.MDT     : LOGINCHK         : FURUKAWA"
+        },
+        {
+          "kind": "title",
+          "code": "0x1f",
+          "title": "SFO2.MDT    : OPENING          : FURUKAWA"
+        },
+        {
+          "kind": "title",
+          "code": "0x20",
+          "title": "SFP.MDT     : RANKING          : FURUKAWA"
+        },
+        {
+          "kind": "title",
+          "code": "0x16",
+          "title": "CBIAM09.MDT : START            : REZON"
+        },
+        {
+          "kind": "title",
+          "code": "0x21",
+          "title": "SFP2.MDT    : STAGE            : FURUKAWA"
+        },
+        {
+          "kind": "title",
+          "code": "0x1a",
+          "title": "MOV3.MDT    : VISUAL01 TOMO    : MOKOMOKO"
+        },
+        {
+          "kind": "title",
+          "code": "0x1c",
+          "title": "MOV8.MDT    : VISUAL02 KAZUMI  : MOKOMOKO"
+        },
+        {
+          "kind": "title",
+          "code": "0x19",
+          "title": "MOV1.MDT    : VISUAL03 MIKA    : MOKOMOKO"
+        },
+        {
+          "kind": "title",
+          "code": "0x17",
+          "title": "CHINA.MDT   : VISUAL04 RINN    : FURUKAWA"
+        },
+        {
+          "kind": "title",
+          "code": "0x1b",
+          "title": "MOV4.MDT    : VISUAL05 CYNTHIA : MOKOMOKO"
+        },
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "CBIAM02.MDT : INFO             : REZON"
+        },
+        {
+          "kind": "title",
+          "code": "0x1d",
+          "title": "ORION.MDT   : STAGE01          : FURUKAWA"
+        },
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "CBIAM01.MDT : STAGE02          : REZON"
+        },
+        {
+          "kind": "title",
+          "code": "0x18",
+          "title": "COSUMO.MDT  : STAGE03          : FURUKAWA"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "CBIAM06.MDT : STAGE04          : REZON"
+        },
+        {
+          "kind": "title",
+          "code": "0x1e",
+          "title": "SFC.MDT     : STAGE05          : FURUKAWA"
+        },
+        {
+          "kind": "title",
+          "code": "0x14",
+          "title": "CBIAM07.MDT : CLEAR            : REZON"
+        },
+        {
+          "kind": "title",
+          "code": "0x23",
+          "title": "SFR.MDT     : CONTINUE         : FURUKAWA"
+        },
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "CBIAM03.MDT : GAMEOVER         : REZON"
+        },
+        {
+          "kind": "title",
+          "code": "0x25",
+          "title": "SFX.MDT     : TOPENTRY         : FURUKAWA"
+        },
+        {
+          "kind": "title",
+          "code": "0x15",
+          "title": "CBIAM08.MDT : ENTRY2-8         : REZON"
+        },
+        {
+          "kind": "title",
+          "code": "0x24",
+          "title": "SFT3.MDT    : ENDING           : FURUKAWA"
+        },
+        {
+          "kind": "range",
+          "min": "0x120",
+          "max": "0x13d",
+          "title_format": "SE          : %02x",
+          "extcode": "0"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/custom.xml",
+      "source_order": 983,
+      "archive": "morang98",
+      "id": "morang98-opn"
+    },
+    {
+      "title": "[PC-9801] MAGICAL BLOCK CARAT",
+      "driver": {
+        "name": "pc98dos",
+        "type": "opn",
+        "alias": "CUSTOM",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "clockmul",
+          "value": "8"
+        },
+        {
+          "name": "showfm3ex",
+          "value": "1"
+        },
+        {
+          "name": "fm_mix",
+          "value": "0"
+        },
+        {
+          "name": "ssg_mix",
+          "value": "-18"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "TRPSCR98.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "TRPSCHRN.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "CRTJKL01.MDT",
+          "offset": "0x10"
+        },
+        {
+          "type": "file",
+          "path": "CRTJKL02.MDT",
+          "offset": "0x11"
+        },
+        {
+          "type": "file",
+          "path": "CRTJKL04.MDT",
+          "offset": "0x12"
+        },
+        {
+          "type": "file",
+          "path": "CRTJKL05.MDT",
+          "offset": "0x13"
+        },
+        {
+          "type": "file",
+          "path": "CRTJKL06.MDT",
+          "offset": "0x14"
+        },
+        {
+          "type": "file",
+          "path": "CRTJKL07.MDT",
+          "offset": "0x15"
+        },
+        {
+          "type": "file",
+          "path": "CRTJKL08.MDT",
+          "offset": "0x16"
+        },
+        {
+          "type": "file",
+          "path": "CRTJKL12.MDT",
+          "offset": "0x17"
+        },
+        {
+          "type": "file",
+          "path": "CRTJKL15.MDT",
+          "offset": "0x18"
+        },
+        {
+          "type": "file",
+          "path": "CRTJKL16.MDT",
+          "offset": "0x19"
+        },
+        {
+          "type": "file",
+          "path": "CRTJKL17.MDT",
+          "offset": "0x1a"
+        },
+        {
+          "type": "file",
+          "path": "CRTJKL18.MDT",
+          "offset": "0x1b"
+        },
+        {
+          "type": "file",
+          "path": "CRTJKL26.MDT",
+          "offset": "0x1c"
+        },
+        {
+          "type": "file",
+          "path": "CRTJKL31.MDT",
+          "offset": "0x1d"
+        },
+        {
+          "type": "file",
+          "path": "CRTJKL33.MDT",
+          "offset": "0x1e"
+        },
+        {
+          "type": "file",
+          "path": "CRTJKL35.MDT",
+          "offset": "0x1f"
+        },
+        {
+          "type": "file",
+          "path": "CRTJKL36.MDT",
+          "offset": "0x20"
+        },
+        {
+          "type": "file",
+          "path": "CRTWIN02.MDT",
+          "offset": "0x21"
+        },
+        {
+          "type": "file",
+          "path": "CRTWIN03.MDT",
+          "offset": "0x22"
+        },
+        {
+          "type": "file",
+          "path": "CRTWIN04.MDT",
+          "offset": "0x23"
+        },
+        {
+          "type": "file",
+          "path": "CRTWIN05.MDT",
+          "offset": "0x24"
+        },
+        {
+          "type": "file",
+          "path": "CRTWIN06.MDT",
+          "offset": "0x25"
+        },
+        {
+          "type": "file",
+          "path": "CRTWIN07.MDT",
+          "offset": "0x26"
+        },
+        {
+          "type": "file",
+          "path": "CRTWIN08.MDT",
+          "offset": "0x27"
+        },
+        {
+          "type": "file",
+          "path": "CRTWIN09.MDT",
+          "offset": "0x28"
+        },
+        {
+          "type": "file",
+          "path": "CRTYHS01.MDT",
+          "offset": "0x29"
+        },
+        {
+          "type": "file",
+          "path": "CRTYHS02.MDT",
+          "offset": "0x2a"
+        },
+        {
+          "type": "shell",
+          "path": "TRPSCHRN",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "TRPSCR98",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x29",
+          "title": "CRTYHS01.MDT : オ～プニング"
+        },
+        {
+          "kind": "title",
+          "code": "0x1b",
+          "title": "CRTJKL18.MDT : タイトル"
+        },
+        {
+          "kind": "title",
+          "code": "0x15",
+          "title": "CRTJKL07.MDT : インフォメ～ション"
+        },
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "CRTJKL02.MDT : BGM1"
+        },
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "CRTJKL01.MDT : ピンチ1"
+        },
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "CRTJKL04.MDT : BGM2"
+        },
+        {
+          "kind": "title",
+          "code": "0x19",
+          "title": "CRTJKL16.MDT : BGM3"
+        },
+        {
+          "kind": "title",
+          "code": "0x17",
+          "title": "CRTJKL12.MDT : ピンチ2"
+        },
+        {
+          "kind": "title",
+          "code": "0x16",
+          "title": "CRTJKL08.MDT : BGM4"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "CRTJKL05.MDT : BGM5"
+        },
+        {
+          "kind": "title",
+          "code": "0x21",
+          "title": "CRTWIN02.MDT : BGM6"
+        },
+        {
+          "kind": "title",
+          "code": "0x22",
+          "title": "CRTWIN03.MDT : ピンチ3"
+        },
+        {
+          "kind": "title",
+          "code": "0x27",
+          "title": "CRTWIN08.MDT : BGM7"
+        },
+        {
+          "kind": "title",
+          "code": "0x28",
+          "title": "CRTWIN09.MDT : ピンチ4"
+        },
+        {
+          "kind": "title",
+          "code": "0x14",
+          "title": "CRTJKL06.MDT ; 未使用"
+        },
+        {
+          "kind": "title",
+          "code": "0x23",
+          "title": "CRTWIN04.MDT : クリア～"
+        },
+        {
+          "kind": "title",
+          "code": "0x1c",
+          "title": "CRTJKL26.MDT : ステ～ジクリア"
+        },
+        {
+          "kind": "title",
+          "code": "0x1d",
+          "title": "CRTJKL31.MDT : 試合終了1"
+        },
+        {
+          "kind": "title",
+          "code": "0x1e",
+          "title": "CRTJKL33.MDT : 試合終了2"
+        },
+        {
+          "kind": "title",
+          "code": "0x26",
+          "title": "CRTWIN07.MDT : コンティニュ～"
+        },
+        {
+          "kind": "title",
+          "code": "0x25",
+          "title": "CRTWIN06.MDT : ゲ～ムオ～バ～"
+        },
+        {
+          "kind": "title",
+          "code": "0x24",
+          "title": "CRTWIN05.MDT : ネ～ムエントリ～"
+        },
+        {
+          "kind": "title",
+          "code": "0x2a",
+          "title": "CRTYHS02.MDT : リトライ"
+        },
+        {
+          "kind": "title",
+          "code": "0x1a",
+          "title": "CRTJKL17.MDT : ヴィジュアル"
+        },
+        {
+          "kind": "title",
+          "code": "0x18",
+          "title": "CRTJKL15.MDT : エンディング(妖艶天使)"
+        },
+        {
+          "kind": "title",
+          "code": "0x1f",
+          "title": "CRTJKL35.MDT : エンディング(ノ～マル)"
+        },
+        {
+          "kind": "title",
+          "code": "0x20",
+          "title": "CRTJKL36.MDT : エンディング(ハ～ド)"
+        },
+        {
+          "kind": "title",
+          "code": "0x120",
+          "title": "SE           : ブロックが崩れる"
+        },
+        {
+          "kind": "title",
+          "code": "0x121",
+          "title": "SE           : ブロック着地"
+        },
+        {
+          "kind": "title",
+          "code": "0x122",
+          "title": "SE           : ブロックが回転不能"
+        },
+        {
+          "kind": "title",
+          "code": "0x123",
+          "title": "SE           : ゲ～ムエンド1"
+        },
+        {
+          "kind": "title",
+          "code": "0x124",
+          "title": "SE           : ゲ～ムエンド2"
+        },
+        {
+          "kind": "title",
+          "code": "0x125",
+          "title": "SE           : レベルアップ"
+        },
+        {
+          "kind": "title",
+          "code": "0x126",
+          "title": "SE           : ブロック回転"
+        },
+        {
+          "kind": "title",
+          "code": "0x127",
+          "title": "SE           : ブロックが消える"
+        },
+        {
+          "kind": "title",
+          "code": "0x128",
+          "title": "SE           : スコア＆タイム表示"
+        },
+        {
+          "kind": "title",
+          "code": "0x129",
+          "title": "SE           : カーソル移動"
+        },
+        {
+          "kind": "title",
+          "code": "0x12a",
+          "title": "SE           : 決定"
+        },
+        {
+          "kind": "title",
+          "code": "0x12b",
+          "title": "SE           :"
+        },
+        {
+          "kind": "title",
+          "code": "0x12c",
+          "title": "SE           : カウント"
+        },
+        {
+          "kind": "title",
+          "code": "0x12d",
+          "title": "SE           :"
+        },
+        {
+          "kind": "title",
+          "code": "0x12e",
+          "title": "SE           : スタ～ト"
+        },
+        {
+          "kind": "title",
+          "code": "0x12f",
+          "title": "SE           : 方向変更"
+        },
+        {
+          "kind": "title",
+          "code": "0x130",
+          "title": "SE           : ネ～ムエントリ～カ～ソル移動"
+        },
+        {
+          "kind": "title",
+          "code": "0x131",
+          "title": "SE           : ネ～ムエントリ～文字決定"
+        },
+        {
+          "kind": "title",
+          "code": "0x132",
+          "title": "SE           : ネ～ムエントリ～バックスペ～ス"
+        },
+        {
+          "kind": "title",
+          "code": "0x133",
+          "title": "SE           : がお～"
+        },
+        {
+          "kind": "title",
+          "code": "0x134",
+          "title": "SE           :"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/custom.xml",
+      "source_order": 984,
+      "archive": "carat_98",
+      "id": "carat-98-opn"
+    },
+    {
+      "title": "[PC-9801] TEEN",
+      "driver": {
+        "name": "pc98dos",
+        "type": "opn",
+        "alias": "CUSTOM",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "clockmul",
+          "value": "8"
+        },
+        {
+          "name": "showfm3ex",
+          "value": "1"
+        },
+        {
+          "name": "ssg_mix",
+          "value": "-18"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "TRPSCR98.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "TRPSCHRN.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "CHIP_OP.MDT",
+          "offset": "0x10"
+        },
+        {
+          "type": "file",
+          "path": "TEEN101.MDT",
+          "offset": "0x11"
+        },
+        {
+          "type": "file",
+          "path": "TEEN102.MDT",
+          "offset": "0x12"
+        },
+        {
+          "type": "file",
+          "path": "TEEN103.MDT",
+          "offset": "0x13"
+        },
+        {
+          "type": "file",
+          "path": "TEEN104.MDT",
+          "offset": "0x14"
+        },
+        {
+          "type": "file",
+          "path": "TEEN105.MDT",
+          "offset": "0x15"
+        },
+        {
+          "type": "file",
+          "path": "TEEN109.MDT",
+          "offset": "0x16"
+        },
+        {
+          "type": "file",
+          "path": "TEEN111.MDT",
+          "offset": "0x17"
+        },
+        {
+          "type": "file",
+          "path": "TEEN1H1.MDT",
+          "offset": "0x18"
+        },
+        {
+          "type": "file",
+          "path": "TEEN1H2.MDT",
+          "offset": "0x19"
+        },
+        {
+          "type": "file",
+          "path": "TEEN1H3.MDT",
+          "offset": "0x1a"
+        },
+        {
+          "type": "file",
+          "path": "TEEN201.MDT",
+          "offset": "0x1b"
+        },
+        {
+          "type": "file",
+          "path": "TEEN201B.MDT",
+          "offset": "0x1c"
+        },
+        {
+          "type": "file",
+          "path": "TEEN202.MDT",
+          "offset": "0x1d"
+        },
+        {
+          "type": "file",
+          "path": "TEEN203.MDT",
+          "offset": "0x1e"
+        },
+        {
+          "type": "file",
+          "path": "TEEN204.MDT",
+          "offset": "0x1f"
+        },
+        {
+          "type": "file",
+          "path": "TEEN205.MDT",
+          "offset": "0x20"
+        },
+        {
+          "type": "file",
+          "path": "TEEN206.MDT",
+          "offset": "0x21"
+        },
+        {
+          "type": "file",
+          "path": "TEEN207.MDT",
+          "offset": "0x22"
+        },
+        {
+          "type": "file",
+          "path": "TEENSE01.MDT",
+          "offset": "0x23"
+        },
+        {
+          "type": "file",
+          "path": "TEENSE02.MDT",
+          "offset": "0x24"
+        },
+        {
+          "type": "file",
+          "path": "TEENSE03.MDT",
+          "offset": "0x25"
+        },
+        {
+          "type": "file",
+          "path": "TEENSE04.MDT",
+          "offset": "0x26"
+        },
+        {
+          "type": "file",
+          "path": "TEENSE05.MDT",
+          "offset": "0x27"
+        },
+        {
+          "type": "shell",
+          "path": "TRPSCHRN",
+          "offset": "0x00"
+        },
+        {
+          "type": "shell",
+          "path": "TRPSCR98",
+          "offset": "0x00"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "CHIP_OP.MDT  : オ～プニング"
+        },
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "TEEN102.MDT  : てんやわんやが!女子高生 [OP]"
+        },
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "TEEN101.MDT  : あたし若瀬あゆみ☆"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "TEEN103.MDT  : ハーイ、ミ～キ～ちゃん!"
+        },
+        {
+          "kind": "title",
+          "code": "0x14",
+          "title": "TEEN104.MDT  : 愛ちゃんてば…もぅ～☆"
+        },
+        {
+          "kind": "title",
+          "code": "0x16",
+          "title": "TEEN109.MDT  : 愛ちゃんの憂鬱!?"
+        },
+        {
+          "kind": "title",
+          "code": "0x1a",
+          "title": "TEEN1H3.MDT  : Hな気分"
+        },
+        {
+          "kind": "title",
+          "code": "0x18",
+          "title": "TEEN1H1.MDT  : あゆみちゃんに捧げます……"
+        },
+        {
+          "kind": "title",
+          "code": "0x19",
+          "title": "TEEN1H2.MDT  : 気持ちよくしてあげる☆"
+        },
+        {
+          "kind": "title",
+          "code": "0x15",
+          "title": "TEEN105.MDT  : EYE CATCH"
+        },
+        {
+          "kind": "title",
+          "code": "0x17",
+          "title": "TEEN111.MDT  : てんやわんやが!女子高生 [ED]"
+        },
+        {
+          "kind": "title",
+          "code": "0x1b",
+          "title": "TEEN201.MDT  : 愛欲の戯れ"
+        },
+        {
+          "kind": "title",
+          "code": "0x1c",
+          "title": "TEEN201B.MDT : 小さき花の雫"
+        },
+        {
+          "kind": "title",
+          "code": "0x1d",
+          "title": "TEEN202.MDT  : 天使達の休日"
+        },
+        {
+          "kind": "title",
+          "code": "0x1e",
+          "title": "TEEN203.MDT  : 悦虐の陶酔"
+        },
+        {
+          "kind": "title",
+          "code": "0x1f",
+          "title": "TEEN204.MDT  : 調教された天使"
+        },
+        {
+          "kind": "title",
+          "code": "0x20",
+          "title": "TEEN205.MDT  : 堕天使の涙"
+        },
+        {
+          "kind": "title",
+          "code": "0x21",
+          "title": "TEEN206.MDT  : 優しさの中で"
+        },
+        {
+          "kind": "title",
+          "code": "0x22",
+          "title": "TEEN207.MDT  : 恋色TEEN"
+        },
+        {
+          "kind": "title",
+          "code": "0x23",
+          "title": "TEENSE01.MDT : SE"
+        },
+        {
+          "kind": "title",
+          "code": "0x24",
+          "title": "TEENSE02.MDT : SE"
+        },
+        {
+          "kind": "title",
+          "code": "0x25",
+          "title": "TEENSE03.MDT : SE"
+        },
+        {
+          "kind": "title",
+          "code": "0x26",
+          "title": "TEENSE04.MDT : SE"
+        },
+        {
+          "kind": "title",
+          "code": "0x27",
+          "title": "TEENSE05.MDT : SE"
+        },
+        {
+          "kind": "range",
+          "min": "0x120",
+          "max": "0x13e",
+          "title_format": "SE           : %02x",
+          "extcode": "0"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/custom.xml",
+      "source_order": 985,
+      "archive": "teen_98",
+      "id": "teen-98-opn"
+    },
+    {
+      "title": "[PC-9801] Star Platinum(OPN)",
+      "driver": {
+        "name": "pc98dos",
+        "type": "opn",
+        "alias": "CUSTOM",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "clockmul",
+          "value": "8"
+        },
+        {
+          "name": "showfm3ex",
+          "value": "1"
+        },
+        {
+          "name": "ssg_mix",
+          "value": "-18"
+        },
+        {
+          "name": "opn_type",
+          "value": "0"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "TRPSCR98.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "TRPSCHRN.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "017.DAT",
+          "offset": "11"
+        },
+        {
+          "type": "file",
+          "path": "019.DAT",
+          "offset": "12"
+        },
+        {
+          "type": "file",
+          "path": "021.DAT",
+          "offset": "13"
+        },
+        {
+          "type": "file",
+          "path": "023.DAT",
+          "offset": "14"
+        },
+        {
+          "type": "file",
+          "path": "025.DAT",
+          "offset": "15"
+        },
+        {
+          "type": "file",
+          "path": "027.DAT",
+          "offset": "16"
+        },
+        {
+          "type": "file",
+          "path": "029.DAT",
+          "offset": "17"
+        },
+        {
+          "type": "file",
+          "path": "031.DAT",
+          "offset": "18"
+        },
+        {
+          "type": "file",
+          "path": "033.DAT",
+          "offset": "19"
+        },
+        {
+          "type": "file",
+          "path": "035.DAT",
+          "offset": "20"
+        },
+        {
+          "type": "file",
+          "path": "037.DAT",
+          "offset": "21"
+        },
+        {
+          "type": "file",
+          "path": "039.DAT",
+          "offset": "22"
+        },
+        {
+          "type": "file",
+          "path": "041.DAT",
+          "offset": "23"
+        },
+        {
+          "type": "file",
+          "path": "043.DAT",
+          "offset": "24"
+        },
+        {
+          "type": "file",
+          "path": "045.DAT",
+          "offset": "25"
+        },
+        {
+          "type": "file",
+          "path": "047.DAT",
+          "offset": "26"
+        },
+        {
+          "type": "file",
+          "path": "049.DAT",
+          "offset": "27"
+        },
+        {
+          "type": "file",
+          "path": "051.DAT",
+          "offset": "28"
+        },
+        {
+          "type": "file",
+          "path": "053.DAT",
+          "offset": "29"
+        },
+        {
+          "type": "file",
+          "path": "055.DAT",
+          "offset": "30"
+        },
+        {
+          "type": "file",
+          "path": "057.DAT",
+          "offset": "31"
+        },
+        {
+          "type": "file",
+          "path": "059.DAT",
+          "offset": "32"
+        },
+        {
+          "type": "file",
+          "path": "061.DAT",
+          "offset": "33"
+        },
+        {
+          "type": "file",
+          "path": "063.DAT",
+          "offset": "34"
+        },
+        {
+          "type": "file",
+          "path": "065.DAT",
+          "offset": "35"
+        },
+        {
+          "type": "file",
+          "path": "067.DAT",
+          "offset": "36"
+        },
+        {
+          "type": "file",
+          "path": "069.DAT",
+          "offset": "37"
+        },
+        {
+          "type": "file",
+          "path": "071.DAT",
+          "offset": "38"
+        },
+        {
+          "type": "file",
+          "path": "073.DAT",
+          "offset": "39"
+        },
+        {
+          "type": "file",
+          "path": "075.DAT",
+          "offset": "40"
+        },
+        {
+          "type": "file",
+          "path": "077.DAT",
+          "offset": "41"
+        },
+        {
+          "type": "file",
+          "path": "079.DAT",
+          "offset": "42"
+        },
+        {
+          "type": "file",
+          "path": "081.DAT",
+          "offset": "43"
+        },
+        {
+          "type": "file",
+          "path": "083.DAT",
+          "offset": "44"
+        },
+        {
+          "type": "file",
+          "path": "085.DAT",
+          "offset": "45"
+        },
+        {
+          "type": "file",
+          "path": "087.DAT",
+          "offset": "46"
+        },
+        {
+          "type": "file",
+          "path": "089.DAT",
+          "offset": "47"
+        },
+        {
+          "type": "file",
+          "path": "091.DAT",
+          "offset": "48"
+        },
+        {
+          "type": "file",
+          "path": "093.DAT",
+          "offset": "49"
+        },
+        {
+          "type": "file",
+          "path": "095.DAT",
+          "offset": "50"
+        },
+        {
+          "type": "file",
+          "path": "097.DAT",
+          "offset": "51"
+        },
+        {
+          "type": "file",
+          "path": "099.DAT",
+          "offset": "52"
+        },
+        {
+          "type": "file",
+          "path": "101.DAT",
+          "offset": "53"
+        },
+        {
+          "type": "file",
+          "path": "103.DAT",
+          "offset": "54"
+        },
+        {
+          "type": "file",
+          "path": "105.DAT",
+          "offset": "55"
+        },
+        {
+          "type": "file",
+          "path": "107.DAT",
+          "offset": "56"
+        },
+        {
+          "type": "file",
+          "path": "109.DAT",
+          "offset": "57"
+        },
+        {
+          "type": "file",
+          "path": "111.DAT",
+          "offset": "58"
+        },
+        {
+          "type": "file",
+          "path": "113.DAT",
+          "offset": "59"
+        },
+        {
+          "type": "shell",
+          "path": "TRPSCHRN",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "TRPSCR98",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "13",
+          "title": "021.DAT : オープニング"
+        },
+        {
+          "kind": "title",
+          "code": "19",
+          "title": "033.DAT : タイトル"
+        },
+        {
+          "kind": "title",
+          "code": "21",
+          "title": "037.DAT : カード説明デモ"
+        },
+        {
+          "kind": "title",
+          "code": "22",
+          "title": "039.DAT : ゲームBGM1"
+        },
+        {
+          "kind": "title",
+          "code": "53",
+          "title": "101.DAT : ゲームBGM2"
+        },
+        {
+          "kind": "title",
+          "code": "20",
+          "title": "035.DAT : ゲームBGM3"
+        },
+        {
+          "kind": "title",
+          "code": "18",
+          "title": "031.DAT : ゲームBGM4"
+        },
+        {
+          "kind": "title",
+          "code": "43",
+          "title": "081.DAT : ゲームBGM5"
+        },
+        {
+          "kind": "title",
+          "code": "51",
+          "title": "097.DAT : 勝ちファンファーレ"
+        },
+        {
+          "kind": "title",
+          "code": "56",
+          "title": "107.DAT : 負けファンファーレ"
+        },
+        {
+          "kind": "title",
+          "code": "57",
+          "title": "109.DAT : ドローゲーム"
+        },
+        {
+          "kind": "title",
+          "code": "52",
+          "title": "099.DAT : 役表示BGM"
+        },
+        {
+          "kind": "title",
+          "code": "48",
+          "title": "091.DAT : コンティニュー"
+        },
+        {
+          "kind": "title",
+          "code": "59",
+          "title": "113.DAT : ゲームオーバー"
+        },
+        {
+          "kind": "title",
+          "code": "23",
+          "title": "041.DAT : M01 星雲と追いかけっこ"
+        },
+        {
+          "kind": "title",
+          "code": "47",
+          "title": "089.DAT : M29 サブタイトルバック"
+        },
+        {
+          "kind": "title",
+          "code": "26",
+          "title": "047.DAT : M02 第1次接近遭遇とは…"
+        },
+        {
+          "kind": "title",
+          "code": "25",
+          "title": "045.DAT : M04 リュシィのテーマ P1"
+        },
+        {
+          "kind": "title",
+          "code": "30",
+          "title": "055.DAT : M05 天上界回想"
+        },
+        {
+          "kind": "title",
+          "code": "37",
+          "title": "069.DAT : M08 リュシィのテーマ P2"
+        },
+        {
+          "kind": "title",
+          "code": "54",
+          "title": "103.DAT : M09 花札へんし～ん"
+        },
+        {
+          "kind": "title",
+          "code": "31",
+          "title": "057.DAT : M11 放課後水泳娘"
+        },
+        {
+          "kind": "title",
+          "code": "38",
+          "title": "071.DAT : M12 星霊召還"
+        },
+        {
+          "kind": "title",
+          "code": "42",
+          "title": "079.DAT : M19 夕焼けこやけで日が暮れる"
+        },
+        {
+          "kind": "title",
+          "code": "28",
+          "title": "051.DAT : M13 ぱ～ぷりん少女"
+        },
+        {
+          "kind": "title",
+          "code": "34",
+          "title": "063.DAT : M14 夜になっても星霊探し"
+        },
+        {
+          "kind": "title",
+          "code": "33",
+          "title": "061.DAT : M15 人気の無い神社"
+        },
+        {
+          "kind": "title",
+          "code": "44",
+          "title": "083.DAT : M16 豪邸とお嬢様"
+        },
+        {
+          "kind": "title",
+          "code": "27",
+          "title": "049.DAT : M17 困った双子"
+        },
+        {
+          "kind": "title",
+          "code": "41",
+          "title": "077.DAT : M21 リュシィのテーマ P3"
+        },
+        {
+          "kind": "title",
+          "code": "40",
+          "title": "075.DAT : M22 リュシィへんし～ん!"
+        },
+        {
+          "kind": "title",
+          "code": "35",
+          "title": "065.DAT : M25 幸せの余韻"
+        },
+        {
+          "kind": "title",
+          "code": "39",
+          "title": "073.DAT : M26 別れの時"
+        },
+        {
+          "kind": "title",
+          "code": "36",
+          "title": "067.DAT : M27 女神様登場!"
+        },
+        {
+          "kind": "title",
+          "code": "46",
+          "title": "087.DAT : M30 またヨロシクね!"
+        },
+        {
+          "kind": "title",
+          "code": "11",
+          "title": "017.DAT : M28 それぞれの幸せ"
+        },
+        {
+          "kind": "title",
+          "code": "55",
+          "title": "105.DAT : 脱ぎ脱ぎBGM1"
+        },
+        {
+          "kind": "title",
+          "code": "49",
+          "title": "093.DAT : 脱ぎ脱ぎBGM2"
+        },
+        {
+          "kind": "title",
+          "code": "50",
+          "title": "095.DAT : 脱ぎ脱ぎBGM3"
+        },
+        {
+          "kind": "title",
+          "code": "58",
+          "title": "111.DAT : ずべ子ちゃんと遊ぼう!"
+        },
+        {
+          "kind": "title",
+          "code": "45",
+          "title": "085.DAT : ずべ子ちゃん スタッフロール"
+        },
+        {
+          "kind": "title",
+          "code": "12",
+          "title": "019.DAT : (オープニング 1"
+        },
+        {
+          "kind": "title",
+          "code": "14",
+          "title": "023.DAT : (オープニング 2"
+        },
+        {
+          "kind": "title",
+          "code": "15",
+          "title": "025.DAT : (SE 1"
+        },
+        {
+          "kind": "title",
+          "code": "16",
+          "title": "027.DAT : (SE 2"
+        },
+        {
+          "kind": "title",
+          "code": "17",
+          "title": "029.DAT : (METAL ORANGE"
+        },
+        {
+          "kind": "title",
+          "code": "24",
+          "title": "043.DAT : (M01 星雲と追いかけっこ"
+        },
+        {
+          "kind": "title",
+          "code": "29",
+          "title": "053.DAT : (METAL ORANGE"
+        },
+        {
+          "kind": "title",
+          "code": "32",
+          "title": "059.DAT : (METAL ORANGE"
+        },
+        {
+          "kind": "range",
+          "min": "0x121",
+          "max": "0x141",
+          "title_format": "SE      : %02x",
+          "extcode": "0"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/custom.xml",
+      "source_order": 986,
+      "archive": "starpltn_98",
+      "id": "starpltn-98-opn"
+    },
+    {
+      "title": "[X68000] CYBER BLOCK METAL ORANGE EX(OPM)",
+      "driver": {
+        "name": "x68k",
+        "type": "generic",
+        "alias": "CUSTOM",
+        "platform": "SHARP X68000"
+      },
+      "options": [
+        {
+          "name": "mfp",
+          "value": "0x01"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "moex68snd.bin",
+          "offset": "0x000000"
+        },
+        {
+          "type": "code",
+          "path": "MO00.ZMD",
+          "offset": "0x010000"
+        },
+        {
+          "type": "code",
+          "path": "MO01.ZMD",
+          "offset": "0x012000"
+        },
+        {
+          "type": "code",
+          "path": "MO02.ZMD",
+          "offset": "0x019000"
+        },
+        {
+          "type": "code",
+          "path": "MO03.ZMD",
+          "offset": "0x01b000"
+        },
+        {
+          "type": "code",
+          "path": "MO04.ZMD",
+          "offset": "0x01d000"
+        },
+        {
+          "type": "code",
+          "path": "MO05.ZMD",
+          "offset": "0x01f000"
+        },
+        {
+          "type": "code",
+          "path": "MO06.ZMD",
+          "offset": "0x023000"
+        },
+        {
+          "type": "code",
+          "path": "MO07.ZMD",
+          "offset": "0x025000"
+        },
+        {
+          "type": "code",
+          "path": "MO08.ZMD",
+          "offset": "0x027000"
+        },
+        {
+          "type": "code",
+          "path": "MO09.ZMD",
+          "offset": "0x02b000"
+        },
+        {
+          "type": "code",
+          "path": "MO10.ZMD",
+          "offset": "0x033000"
+        },
+        {
+          "type": "code",
+          "path": "MO11.ZMD",
+          "offset": "0x035000"
+        },
+        {
+          "type": "code",
+          "path": "MO12.ZMD",
+          "offset": "0x039000"
+        },
+        {
+          "type": "code",
+          "path": "MO13.ZMD",
+          "offset": "0x03d000"
+        },
+        {
+          "type": "code",
+          "path": "MO14.ZMD",
+          "offset": "0x040000"
+        },
+        {
+          "type": "code",
+          "path": "MO15.ZMD",
+          "offset": "0x046000"
+        },
+        {
+          "type": "code",
+          "path": "MO16.ZMD",
+          "offset": "0x04c000"
+        },
+        {
+          "type": "code",
+          "path": "MO17.ZMD",
+          "offset": "0x04f000"
+        },
+        {
+          "type": "code",
+          "path": "MO18.ZMD",
+          "offset": "0x050000"
+        },
+        {
+          "type": "code",
+          "path": "MO19.ZMD",
+          "offset": "0x051000"
+        },
+        {
+          "type": "code",
+          "path": "MO20.ZMD",
+          "offset": "0x055000"
+        },
+        {
+          "type": "code",
+          "path": "MO21.ZMD",
+          "offset": "0x057000"
+        },
+        {
+          "type": "code",
+          "path": "MO22.ZMD",
+          "offset": "0x05c000"
+        },
+        {
+          "type": "code",
+          "path": "MO23.ZMD",
+          "offset": "0x05d000"
+        },
+        {
+          "type": "code",
+          "path": "MO24.ZMD",
+          "offset": "0x05e000"
+        },
+        {
+          "type": "code",
+          "path": "MO25.ZMD",
+          "offset": "0x05f000"
+        },
+        {
+          "type": "code",
+          "path": "MO26.ZMD",
+          "offset": "0x060000"
+        },
+        {
+          "type": "code",
+          "path": "MO27.ZMD",
+          "offset": "0x062000"
+        },
+        {
+          "type": "code",
+          "path": "MO28.ZMD",
+          "offset": "0x063000"
+        },
+        {
+          "type": "code",
+          "path": "MO29.ZMD",
+          "offset": "0x064000"
+        },
+        {
+          "type": "code",
+          "path": "MO30.ZMD",
+          "offset": "0x065000"
+        },
+        {
+          "type": "code",
+          "path": "MO31.ZMD",
+          "offset": "0x068000"
+        },
+        {
+          "type": "code",
+          "path": "MO32.ZMD",
+          "offset": "0x069000"
+        },
+        {
+          "type": "code",
+          "path": "MO33.ZMD",
+          "offset": "0x06a000"
+        },
+        {
+          "type": "code",
+          "path": "MO22.ZMD",
+          "offset": "0x06b000"
+        },
+        {
+          "type": "x",
+          "path": "ZMSC.x",
+          "offset": "0x080000"
+        },
+        {
+          "type": "x",
+          "path": "MO_EX.x",
+          "offset": "0x0b0000"
+        },
+        {
+          "type": "code",
+          "path": "MO68.ZPD",
+          "offset": "0x110000"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x02",
+          "title": "MO01.ZMD : OPENING"
+        },
+        {
+          "kind": "title",
+          "code": "0x04",
+          "title": "MO03.ZMD : SELECT"
+        },
+        {
+          "kind": "comment",
+          "text": "\n\t\t\t<title code=\"0x05\">MO04.ZMD : SELECT</title>\n\t\t\t  "
+        },
+        {
+          "kind": "title",
+          "code": "0x06",
+          "title": "MO05.ZMD : VISUAL 1"
+        },
+        {
+          "kind": "title",
+          "code": "0x07",
+          "title": "MO06.ZMD : VISUAL 2"
+        },
+        {
+          "kind": "title",
+          "code": "0x08",
+          "title": "MO07.ZMD : VISUAL 3"
+        },
+        {
+          "kind": "title",
+          "code": "0x09",
+          "title": "MO08.ZMD : VISUAL 4"
+        },
+        {
+          "kind": "title",
+          "code": "0x0a",
+          "title": "MO09.ZMD : VISUAL 5"
+        },
+        {
+          "kind": "title",
+          "code": "0x0b",
+          "title": "MO10.ZMD : INFORMATION"
+        },
+        {
+          "kind": "title",
+          "code": "0x0c",
+          "title": "MO11.ZMD : STAGE 1"
+        },
+        {
+          "kind": "title",
+          "code": "0x0d",
+          "title": "MO12.ZMD : STAGE 2"
+        },
+        {
+          "kind": "title",
+          "code": "0x0e",
+          "title": "MO13.ZMD : STAGE 3"
+        },
+        {
+          "kind": "title",
+          "code": "0x0f",
+          "title": "MO14.ZMD : STAGE 4"
+        },
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "MO15.ZMD : STAGE 5"
+        },
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "MO16.ZMD : STAGE CLEAR"
+        },
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "MO00.ZMD : PAUSE"
+        },
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "MO17.ZMD : CONTINUE"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "MO18.ZMD : GAME OVER"
+        },
+        {
+          "kind": "title",
+          "code": "0x14",
+          "title": "MO19.ZMD : RANKING 1"
+        },
+        {
+          "kind": "title",
+          "code": "0x15",
+          "title": "MO20.ZMD : RANKING 2"
+        },
+        {
+          "kind": "title",
+          "code": "0x16",
+          "title": "MO21.ZMD : ENDING"
+        },
+        {
+          "kind": "title",
+          "code": "0x03",
+          "title": "MO02.ZMD : UNUSE"
+        },
+        {
+          "kind": "comment",
+          "text": "\n\t\t\t<title code=\"0x17\">MO22.ZMD : SE TONE</title>\n\t\t\t<title code=\"0x18\">MO23.ZMD : SOUND EFFECTS</title>\n "
+        },
+        {
+          "kind": "title",
+          "code": "0x19",
+          "title": "MO24.ZMD : SELECT (OPM)"
+        },
+        {
+          "kind": "title",
+          "code": "0x1a",
+          "title": "MO25.ZMD : INFORMATION (OPM)"
+        },
+        {
+          "kind": "title",
+          "code": "0x1b",
+          "title": "MO26.ZMD : STAGE 2 (OPM)"
+        },
+        {
+          "kind": "title",
+          "code": "0x1c",
+          "title": "MO27.ZMD : SELECT (PSG)"
+        },
+        {
+          "kind": "title",
+          "code": "0x1d",
+          "title": "MO28.ZMD : INFORMATION (PSG)"
+        },
+        {
+          "kind": "title",
+          "code": "0x1e",
+          "title": "MO29.ZMD : STAGE 2 (PSG)"
+        },
+        {
+          "kind": "title",
+          "code": "0x1f",
+          "title": "MO30.ZMD : STAGE 4 (PSG)"
+        },
+        {
+          "kind": "title",
+          "code": "0x20",
+          "title": "MO31.ZMD : STAGE CLEAR (PSG)"
+        },
+        {
+          "kind": "title",
+          "code": "0x21",
+          "title": "MO32.ZMD : GAME OVER (PSG)"
+        },
+        {
+          "kind": "title",
+          "code": "0x22",
+          "title": "MO33.ZMD : RANKING 2 (PSG)"
+        },
+        {
+          "kind": "title",
+          "code": "0x23",
+          "title": "SE  : 00 : BALL HIT!"
+        },
+        {
+          "kind": "title",
+          "code": "0x24",
+          "title": "SE  : 01 : N.BLOCK HIT!"
+        },
+        {
+          "kind": "title",
+          "code": "0x25",
+          "title": "SE  : 02 : B.BLOCK HIT!"
+        },
+        {
+          "kind": "title",
+          "code": "0x26",
+          "title": "SE  : 03 : LASER SHOOT!"
+        },
+        {
+          "kind": "title",
+          "code": "0x27",
+          "title": "SE  : 04 : POWER UP!"
+        },
+        {
+          "kind": "title",
+          "code": "0x28",
+          "title": "SE  : 05 : CAPSULE GET!"
+        },
+        {
+          "kind": "title",
+          "code": "0x29",
+          "title": "SE  : 06 : 1UP!"
+        },
+        {
+          "kind": "title",
+          "code": "0x2a",
+          "title": "SE  : 07 : ENEMY!!"
+        },
+        {
+          "kind": "title",
+          "code": "0x2b",
+          "title": "SE  : 08 : D.BLOCK HIT!"
+        },
+        {
+          "kind": "title",
+          "code": "0x2c",
+          "title": "SE  : 09 : ENEMY HIT!"
+        },
+        {
+          "kind": "title",
+          "code": "0x2d",
+          "title": "SE  : 0a : CAPSULE BONUS"
+        },
+        {
+          "kind": "title",
+          "code": "0x2e",
+          "title": "SE  : 0b : BIT OFF"
+        },
+        {
+          "kind": "title",
+          "code": "0x2f",
+          "title": "SE  : 0c : M.BLOCK HIT!"
+        },
+        {
+          "kind": "title",
+          "code": "0x30",
+          "title": "SE  : 0d : BONUS COUNT"
+        },
+        {
+          "kind": "title",
+          "code": "0x31",
+          "title": "SE  : 0e : NO USE"
+        },
+        {
+          "kind": "title",
+          "code": "0x32",
+          "title": "SE  : 0f : BEEP"
+        },
+        {
+          "kind": "title",
+          "code": "0x33",
+          "title": "SE  : 10 : PLAYER MISS"
+        },
+        {
+          "kind": "title",
+          "code": "0x34",
+          "title": "SE  : 11 : ILLUSION HIT"
+        },
+        {
+          "kind": "title",
+          "code": "0x35",
+          "title": "SE  : 12 : NO USE"
+        },
+        {
+          "kind": "title",
+          "code": "0x36",
+          "title": "SE  : 13 : BARRIER HIT!"
+        },
+        {
+          "kind": "title",
+          "code": "0x37",
+          "title": "SE  : 14 : R.BLOCK HIT!"
+        },
+        {
+          "kind": "title",
+          "code": "0x38",
+          "title": "SE  : 15 : S.BLOCK HIT!"
+        },
+        {
+          "kind": "title",
+          "code": "0x39",
+          "title": "SE  : 16 : SHUTTER OPEN"
+        },
+        {
+          "kind": "title",
+          "code": "0x3a",
+          "title": "SE  : 17 : CURSOR MOVE"
+        },
+        {
+          "kind": "title",
+          "code": "0x3b",
+          "title": "SE  : 18 : SPEED DOWN"
+        },
+        {
+          "kind": "title",
+          "code": "0x3c",
+          "title": "SE  : 19 : G.BALL BREAK"
+        },
+        {
+          "kind": "title",
+          "code": "0x3d",
+          "title": "SE  : 1a :"
+        },
+        {
+          "kind": "title",
+          "code": "0x3e",
+          "title": "SE  : 1b :"
+        },
+        {
+          "kind": "title",
+          "code": "0x3f",
+          "title": "SE  : 1c :"
+        },
+        {
+          "kind": "title",
+          "code": "0x40",
+          "title": "SE  : 1d :"
+        },
+        {
+          "kind": "title",
+          "code": "0x41",
+          "title": "SE  : 1e :"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/custom.xml",
+      "source_order": 987,
+      "archive": "moex68snd",
+      "id": "moex68snd-generic"
+    },
+    {
+      "title": "[X68000] CYBER BLOCK METAL ORANGE EX(GS)",
+      "driver": {
+        "name": "x68k",
+        "type": "generic",
+        "alias": "CUSTOM",
+        "platform": "SHARP X68000"
+      },
+      "options": [
+        {
+          "name": "mfp",
+          "value": "0x01"
+        },
+        {
+          "name": "midiout",
+          "value": "1"
+        },
+        {
+          "name": "midiout_type",
+          "value": "4"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "moex68snd.bin",
+          "offset": "0x000000"
+        },
+        {
+          "type": "code",
+          "path": "MO34.ZMD",
+          "offset": "0x010000"
+        },
+        {
+          "type": "code",
+          "path": "MO35.ZMD",
+          "offset": "0x012000"
+        },
+        {
+          "type": "code",
+          "path": "MO36.ZMD",
+          "offset": "0x019000"
+        },
+        {
+          "type": "code",
+          "path": "MO37.ZMD",
+          "offset": "0x01b000"
+        },
+        {
+          "type": "code",
+          "path": "MO38.ZMD",
+          "offset": "0x01d000"
+        },
+        {
+          "type": "code",
+          "path": "MO39.ZMD",
+          "offset": "0x01f000"
+        },
+        {
+          "type": "code",
+          "path": "MO40.ZMD",
+          "offset": "0x023000"
+        },
+        {
+          "type": "code",
+          "path": "MO41.ZMD",
+          "offset": "0x025000"
+        },
+        {
+          "type": "code",
+          "path": "MO42.ZMD",
+          "offset": "0x027000"
+        },
+        {
+          "type": "code",
+          "path": "MO43.ZMD",
+          "offset": "0x02b000"
+        },
+        {
+          "type": "code",
+          "path": "MO44.ZMD",
+          "offset": "0x033000"
+        },
+        {
+          "type": "code",
+          "path": "MO45.ZMD",
+          "offset": "0x035000"
+        },
+        {
+          "type": "code",
+          "path": "MO46.ZMD",
+          "offset": "0x039000"
+        },
+        {
+          "type": "code",
+          "path": "MO47.ZMD",
+          "offset": "0x03d000"
+        },
+        {
+          "type": "code",
+          "path": "MO48.ZMD",
+          "offset": "0x040000"
+        },
+        {
+          "type": "code",
+          "path": "MO49.ZMD",
+          "offset": "0x046000"
+        },
+        {
+          "type": "code",
+          "path": "MO50.ZMD",
+          "offset": "0x04c000"
+        },
+        {
+          "type": "code",
+          "path": "MO51.ZMD",
+          "offset": "0x04f000"
+        },
+        {
+          "type": "code",
+          "path": "MO52.ZMD",
+          "offset": "0x050000"
+        },
+        {
+          "type": "code",
+          "path": "MO53.ZMD",
+          "offset": "0x051000"
+        },
+        {
+          "type": "code",
+          "path": "MO54.ZMD",
+          "offset": "0x055000"
+        },
+        {
+          "type": "code",
+          "path": "MO55.ZMD",
+          "offset": "0x057000"
+        },
+        {
+          "type": "code",
+          "path": "MO56.ZMD",
+          "offset": "0x05c000"
+        },
+        {
+          "type": "code",
+          "path": "MO57.ZMD",
+          "offset": "0x05d000"
+        },
+        {
+          "type": "code",
+          "path": "MO58.ZMD",
+          "offset": "0x05e000"
+        },
+        {
+          "type": "x",
+          "path": "ZMSC.x",
+          "offset": "0x080000"
+        },
+        {
+          "type": "x",
+          "path": "MO_EX.x",
+          "offset": "0x0b0000"
+        },
+        {
+          "type": "code",
+          "path": "MO68.ZPD",
+          "offset": "0x110000"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x02",
+          "title": "MO35.ZMD : OPENING"
+        },
+        {
+          "kind": "title",
+          "code": "0x04",
+          "title": "MO37.ZMD : SELECT"
+        },
+        {
+          "kind": "comment",
+          "text": "\n\t\t\t<title code=\"0x05\">MO38.ZMD : SELECT</title>\n "
+        },
+        {
+          "kind": "title",
+          "code": "0x06",
+          "title": "MO39.ZMD : VISUAL 1"
+        },
+        {
+          "kind": "title",
+          "code": "0x07",
+          "title": "MO40.ZMD : VISUAL 2"
+        },
+        {
+          "kind": "title",
+          "code": "0x08",
+          "title": "MO41.ZMD : VISUAL 3"
+        },
+        {
+          "kind": "title",
+          "code": "0x09",
+          "title": "MO42.ZMD : VISUAL 4"
+        },
+        {
+          "kind": "title",
+          "code": "0x0a",
+          "title": "MO43.ZMD : VISUAL 5"
+        },
+        {
+          "kind": "title",
+          "code": "0x0b",
+          "title": "MO44.ZMD : INFORMATION"
+        },
+        {
+          "kind": "title",
+          "code": "0x0c",
+          "title": "MO45.ZMD : STAGE 1"
+        },
+        {
+          "kind": "title",
+          "code": "0x0d",
+          "title": "MO46.ZMD : STAGE 2"
+        },
+        {
+          "kind": "title",
+          "code": "0x0e",
+          "title": "MO47.ZMD : STAGE 3"
+        },
+        {
+          "kind": "title",
+          "code": "0x0f",
+          "title": "MO48.ZMD : STAGE 4"
+        },
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "MO49.ZMD : STAGE 5"
+        },
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "MO50.ZMD : STAGE CLEAR"
+        },
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "MO34.ZMD : PAUSE"
+        },
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "MO51.ZMD : CONTINUE"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "MO52.ZMD : GAME OVER"
+        },
+        {
+          "kind": "title",
+          "code": "0x14",
+          "title": "MO53.ZMD : RANKING 1"
+        },
+        {
+          "kind": "title",
+          "code": "0x15",
+          "title": "MO54.ZMD : RANKING 2"
+        },
+        {
+          "kind": "title",
+          "code": "0x16",
+          "title": "MO55.ZMD : ENDING"
+        },
+        {
+          "kind": "title",
+          "code": "0x03",
+          "title": "MO36.ZMD : UNUSE"
+        },
+        {
+          "kind": "title",
+          "code": "0x17",
+          "title": "MO56.ZMD : UNUSE"
+        },
+        {
+          "kind": "title",
+          "code": "0x18",
+          "title": "MO57.ZMD : UNUSE"
+        },
+        {
+          "kind": "title",
+          "code": "0x19",
+          "title": "MO58.ZMD : UNUSE"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/custom.xml",
+      "source_order": 988,
+      "archive": "moex68snd",
+      "id": "moex68snd-generic-2"
+    },
+    {
+      "title": "[X68000] MAGICAL BLOCK CARAT(OPM)",
+      "driver": {
+        "name": "x68k",
+        "type": "generic",
+        "alias": "CUSTOM",
+        "platform": "SHARP X68000"
+      },
+      "options": [
+        {
+          "name": "mfp",
+          "value": "0x01"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "carat68snd.bin",
+          "offset": "0x000000"
+        },
+        {
+          "type": "code",
+          "path": "fm/sefm.zmd",
+          "offset": "0x00f000"
+        },
+        {
+          "type": "code",
+          "path": "fm/CRTEND2J.ZMD",
+          "offset": "0x010000"
+        },
+        {
+          "type": "code",
+          "path": "fm/CRTJKL01.ZMD",
+          "offset": "0x01a000"
+        },
+        {
+          "type": "code",
+          "path": "fm/CRTJKL02.ZMD",
+          "offset": "0x01d000"
+        },
+        {
+          "type": "code",
+          "path": "fm/CRTJKL04.ZMD",
+          "offset": "0x01f000"
+        },
+        {
+          "type": "code",
+          "path": "fm/CRTJKL05.ZMD",
+          "offset": "0x021000"
+        },
+        {
+          "type": "code",
+          "path": "fm/CRTJKL07.ZMD",
+          "offset": "0x024000"
+        },
+        {
+          "type": "code",
+          "path": "fm/CRTJKL08.ZMD",
+          "offset": "0x026000"
+        },
+        {
+          "type": "code",
+          "path": "fm/CRTJKL12.ZMD",
+          "offset": "0x028000"
+        },
+        {
+          "type": "code",
+          "path": "fm/CRTJKL15.ZMD",
+          "offset": "0x02a000"
+        },
+        {
+          "type": "code",
+          "path": "fm/CRTJKL16.ZMD",
+          "offset": "0x02d000"
+        },
+        {
+          "type": "code",
+          "path": "fm/CRTJKL17.ZMD",
+          "offset": "0x02f000"
+        },
+        {
+          "type": "code",
+          "path": "fm/CRTJKL18.ZMD",
+          "offset": "0x035000"
+        },
+        {
+          "type": "code",
+          "path": "fm/CRTJKL26.ZMD",
+          "offset": "0x038000"
+        },
+        {
+          "type": "code",
+          "path": "fm/CRTJKL31.ZMD",
+          "offset": "0x039000"
+        },
+        {
+          "type": "code",
+          "path": "fm/CRTJKL33.ZMD",
+          "offset": "0x03b000"
+        },
+        {
+          "type": "code",
+          "path": "fm/CRTJKLN1.ZMD",
+          "offset": "0x03c000"
+        },
+        {
+          "type": "code",
+          "path": "fm/CRTJKLN2.ZMD",
+          "offset": "0x03d000"
+        },
+        {
+          "type": "code",
+          "path": "fm/CRTJKLN3.ZMD",
+          "offset": "0x040000"
+        },
+        {
+          "type": "code",
+          "path": "fm/CRTXA_.ZMD",
+          "offset": "0x045000"
+        },
+        {
+          "type": "code",
+          "path": "fm/CRTXB_.ZMD",
+          "offset": "0x049000"
+        },
+        {
+          "type": "code",
+          "path": "fm/CRTXC_.ZMD",
+          "offset": "0x04c000"
+        },
+        {
+          "type": "code",
+          "path": "fm/CRTXD_.ZMD",
+          "offset": "0x04e000"
+        },
+        {
+          "type": "code",
+          "path": "fm/CRTXE_.ZMD",
+          "offset": "0x051000"
+        },
+        {
+          "type": "code",
+          "path": "fm/CRTXG_.ZMD",
+          "offset": "0x052000"
+        },
+        {
+          "type": "code",
+          "path": "fm/CRTXH_.ZMD",
+          "offset": "0x054000"
+        },
+        {
+          "type": "code",
+          "path": "fm/CRTXI_.ZMD",
+          "offset": "0x056000"
+        },
+        {
+          "type": "code",
+          "path": "fm/CRTXJ_.ZMD",
+          "offset": "0x057000"
+        },
+        {
+          "type": "code",
+          "path": "fm/CRTYHS01.ZMD",
+          "offset": "0x05a000"
+        },
+        {
+          "type": "code",
+          "path": "fm/CRTXSA.ZMD",
+          "offset": "0x05c000"
+        },
+        {
+          "type": "code",
+          "path": "fm/CRTXSB.ZMD",
+          "offset": "0x05c800"
+        },
+        {
+          "type": "code",
+          "path": "fm/CRTXSC.ZMD",
+          "offset": "0x05d000"
+        },
+        {
+          "type": "code",
+          "path": "fm/CRTXSD.ZMD",
+          "offset": "0x05d800"
+        },
+        {
+          "type": "code",
+          "path": "fm/CRTXSE.ZMD",
+          "offset": "0x05e000"
+        },
+        {
+          "type": "code",
+          "path": "fm/CRTXSF.ZMD",
+          "offset": "0x05e800"
+        },
+        {
+          "type": "code",
+          "path": "fm/CRTXSG.ZMD",
+          "offset": "0x05f000"
+        },
+        {
+          "type": "code",
+          "path": "fm/CRTXSH.ZMD",
+          "offset": "0x05f800"
+        },
+        {
+          "type": "code",
+          "path": "fm/CRTXSI.ZMD",
+          "offset": "0x060000"
+        },
+        {
+          "type": "code",
+          "path": "fm/CRTXSJ.ZMD",
+          "offset": "0x060800"
+        },
+        {
+          "type": "code",
+          "path": "fm/CRTXSK.ZMD",
+          "offset": "0x061000"
+        },
+        {
+          "type": "code",
+          "path": "fm/CRTXSL.ZMD",
+          "offset": "0x061800"
+        },
+        {
+          "type": "code",
+          "path": "fm/CRTXSM.ZMD",
+          "offset": "0x062000"
+        },
+        {
+          "type": "code",
+          "path": "fm/CRTXSN.ZMD",
+          "offset": "0x062800"
+        },
+        {
+          "type": "code",
+          "path": "fm/CRTXSO.ZMD",
+          "offset": "0x063000"
+        },
+        {
+          "type": "code",
+          "path": "fm/CRTXSP.ZMD",
+          "offset": "0x063800"
+        },
+        {
+          "type": "code",
+          "path": "fm/CRTXSQ.ZMD",
+          "offset": "0x064000"
+        },
+        {
+          "type": "code",
+          "path": "fm/CRTXSR.ZMD",
+          "offset": "0x064800"
+        },
+        {
+          "type": "code",
+          "path": "fm/CRTXSS.ZMD",
+          "offset": "0x065000"
+        },
+        {
+          "type": "x",
+          "path": "zmsc.x",
+          "offset": "0x080000"
+        },
+        {
+          "type": "code",
+          "path": "carat68.zpd",
+          "offset": "0x0a0000"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x1c",
+          "title": "CRTYHS01.ZMD : オ～プニング"
+        },
+        {
+          "kind": "title",
+          "code": "0x0c",
+          "title": "CRTJKL18.ZMD : タイトル"
+        },
+        {
+          "kind": "title",
+          "code": "0x06",
+          "title": "CRTJKL07.ZMD : インフォメ～ション"
+        },
+        {
+          "kind": "title",
+          "code": "0x03",
+          "title": "CRTJKL02.ZMD : BGM1"
+        },
+        {
+          "kind": "title",
+          "code": "0x02",
+          "title": "CRTJKL01.ZMD : ピンチ1"
+        },
+        {
+          "kind": "title",
+          "code": "0x04",
+          "title": "CRTJKL04.ZMD : BGM2"
+        },
+        {
+          "kind": "title",
+          "code": "0x0a",
+          "title": "CRTJKL16.ZMD : BGM3"
+        },
+        {
+          "kind": "title",
+          "code": "0x08",
+          "title": "CRTJKL12.ZMD : ピンチ2"
+        },
+        {
+          "kind": "title",
+          "code": "0x07",
+          "title": "CRTJKL08.ZMD : BGM4"
+        },
+        {
+          "kind": "title",
+          "code": "0x05",
+          "title": "CRTJKL05.ZMD : BGM5"
+        },
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "CRTJKLN2.ZMD : BGM6"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "CRTXA_.ZMD   : BGM7"
+        },
+        {
+          "kind": "title",
+          "code": "0x14",
+          "title": "CRTXB_.ZMD   : ピンチ3"
+        },
+        {
+          "kind": "title",
+          "code": "0x16",
+          "title": "CRTXD_.ZMD   : BGM8"
+        },
+        {
+          "kind": "title",
+          "code": "0x18",
+          "title": "CRTXG_.ZMD   : ピンチ4"
+        },
+        {
+          "kind": "title",
+          "code": "0x15",
+          "title": "CRTXC_.ZMD   : クリア～"
+        },
+        {
+          "kind": "title",
+          "code": "0x0d",
+          "title": "CRTJKL26.ZMD : ステ～ジクリア"
+        },
+        {
+          "kind": "title",
+          "code": "0x0e",
+          "title": "CRTJKL31.ZMD : 試合終了1"
+        },
+        {
+          "kind": "title",
+          "code": "0x0f",
+          "title": "CRTJKL33.ZMD : 試合終了2"
+        },
+        {
+          "kind": "title",
+          "code": "0x1b",
+          "title": "CRTXJ_.ZMD   : コンティニュ～"
+        },
+        {
+          "kind": "title",
+          "code": "0x17",
+          "title": "CRTXE_.ZMD   : ゲ～ムオ～バ～"
+        },
+        {
+          "kind": "title",
+          "code": "0x19",
+          "title": "CRTXH_.ZMD   : ネ～ムエントリ～"
+        },
+        {
+          "kind": "title",
+          "code": "0x1a",
+          "title": "CRTXI_.ZMD   : リトライ"
+        },
+        {
+          "kind": "title",
+          "code": "0x0b",
+          "title": "CRTJKL17.ZMD : ヴィジュアル"
+        },
+        {
+          "kind": "title",
+          "code": "0x09",
+          "title": "CRTJKL15.ZMD : エンディング(妖艶天使)"
+        },
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "CRTEND2J.ZMD : エンディング(ノ～マル)"
+        },
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "CRTJKLN3.ZMD : エンディング(ハ～ド)"
+        },
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "CRTJKLN1.ZMD : 未使用曲"
+        },
+        {
+          "kind": "title",
+          "code": "0x1d",
+          "title": "CRTXSA.ZMD   : ブロックが崩れる"
+        },
+        {
+          "kind": "title",
+          "code": "0x1e",
+          "title": "CRTXSB.ZMD   : ブロック着地"
+        },
+        {
+          "kind": "title",
+          "code": "0x1f",
+          "title": "CRTXSC.ZMD   : ブロック回転不可能"
+        },
+        {
+          "kind": "title",
+          "code": "0x20",
+          "title": "CRTXSD.ZMD   : ゲ～ムエンド1"
+        },
+        {
+          "kind": "title",
+          "code": "0x21",
+          "title": "CRTXSE.ZMD   : ゲ～ムエンド2"
+        },
+        {
+          "kind": "title",
+          "code": "0x22",
+          "title": "CRTXSF.ZMD   : レベルアップ"
+        },
+        {
+          "kind": "title",
+          "code": "0x23",
+          "title": "CRTXSG.ZMD   : ブロック回転"
+        },
+        {
+          "kind": "title",
+          "code": "0x24",
+          "title": "CRTXSH.ZMD   : ブロックが消える"
+        },
+        {
+          "kind": "title",
+          "code": "0x25",
+          "title": "CRTXSI.ZMD   : スコア&タイム表示"
+        },
+        {
+          "kind": "title",
+          "code": "0x26",
+          "title": "CRTXSJ.ZMD   : カ～ソル移動"
+        },
+        {
+          "kind": "title",
+          "code": "0x27",
+          "title": "CRTXSK.ZMD   : 決定"
+        },
+        {
+          "kind": "title",
+          "code": "0x28",
+          "title": "CRTXSL.ZMD   : カウント"
+        },
+        {
+          "kind": "title",
+          "code": "0x29",
+          "title": "CRTXSM.ZMD   : スタ～ト"
+        },
+        {
+          "kind": "title",
+          "code": "0x2a",
+          "title": "CRTXSN.ZMD   : 方向変更"
+        },
+        {
+          "kind": "title",
+          "code": "0x2b",
+          "title": "CRTXSO.ZMD   : ネ～ムエントリ～カ～ソル移動"
+        },
+        {
+          "kind": "title",
+          "code": "0x2c",
+          "title": "CRTXSP.ZMD   : ネ～ムエントリ～文字決定"
+        },
+        {
+          "kind": "title",
+          "code": "0x2d",
+          "title": "CRTXSQ.ZMD   : ネ～ムエントリ～バックスペ～ス"
+        },
+        {
+          "kind": "title",
+          "code": "0x2e",
+          "title": "CRTXSR.ZMD   : ブロックが固まる"
+        },
+        {
+          "kind": "title",
+          "code": "0x2f",
+          "title": "CRTXSS.ZMD   : ポ～ズ"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/custom.xml",
+      "source_order": 989,
+      "archive": "carat68snd",
+      "id": "carat68snd-generic"
+    },
+    {
+      "title": "[X68000] MAGICAL BLOCK CARAT(GS)",
+      "driver": {
+        "name": "x68k",
+        "type": "generic",
+        "alias": "CUSTOM",
+        "platform": "SHARP X68000"
+      },
+      "options": [
+        {
+          "name": "mfp",
+          "value": "0x01"
+        },
+        {
+          "name": "midiout",
+          "value": "1"
+        },
+        {
+          "name": "midiout_type",
+          "value": "4"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "carat68snd.bin",
+          "offset": "0x000000"
+        },
+        {
+          "type": "code",
+          "path": "fm/sefm.zmd",
+          "offset": "0x00f000"
+        },
+        {
+          "type": "code",
+          "path": "md/CRTEND2J.ZMD",
+          "offset": "0x010000"
+        },
+        {
+          "type": "code",
+          "path": "md/CRTJKL01.ZMD",
+          "offset": "0x01a000"
+        },
+        {
+          "type": "code",
+          "path": "md/CRTJKL02.ZMD",
+          "offset": "0x01d000"
+        },
+        {
+          "type": "code",
+          "path": "md/CRTJKL04.ZMD",
+          "offset": "0x01f000"
+        },
+        {
+          "type": "code",
+          "path": "md/CRTJKL05.ZMD",
+          "offset": "0x021000"
+        },
+        {
+          "type": "code",
+          "path": "md/CRTJKL07.ZMD",
+          "offset": "0x024000"
+        },
+        {
+          "type": "code",
+          "path": "md/CRTJKL08.ZMD",
+          "offset": "0x026000"
+        },
+        {
+          "type": "code",
+          "path": "md/CRTJKL12.ZMD",
+          "offset": "0x028000"
+        },
+        {
+          "type": "code",
+          "path": "md/CRTJKL15.ZMD",
+          "offset": "0x02a000"
+        },
+        {
+          "type": "code",
+          "path": "md/CRTJKL16.ZMD",
+          "offset": "0x02d000"
+        },
+        {
+          "type": "code",
+          "path": "md/CRTJKL17.ZMD",
+          "offset": "0x02f000"
+        },
+        {
+          "type": "code",
+          "path": "md/CRTJKL18.ZMD",
+          "offset": "0x035000"
+        },
+        {
+          "type": "code",
+          "path": "md/CRTJKL26.ZMD",
+          "offset": "0x038000"
+        },
+        {
+          "type": "code",
+          "path": "md/CRTJKL31.ZMD",
+          "offset": "0x039000"
+        },
+        {
+          "type": "code",
+          "path": "md/CRTJKL33.ZMD",
+          "offset": "0x03b000"
+        },
+        {
+          "type": "code",
+          "path": "md/CRTJKLN2.ZMD",
+          "offset": "0x03d000"
+        },
+        {
+          "type": "code",
+          "path": "md/CRTJKLN3.ZMD",
+          "offset": "0x040000"
+        },
+        {
+          "type": "code",
+          "path": "md/CRTXA_.ZMD",
+          "offset": "0x045000"
+        },
+        {
+          "type": "code",
+          "path": "md/CRTXB_.ZMD",
+          "offset": "0x049000"
+        },
+        {
+          "type": "code",
+          "path": "md/CRTXC_.ZMD",
+          "offset": "0x04c000"
+        },
+        {
+          "type": "code",
+          "path": "md/CRTXD_.ZMD",
+          "offset": "0x04e000"
+        },
+        {
+          "type": "code",
+          "path": "md/CRTXE_.ZMD",
+          "offset": "0x051000"
+        },
+        {
+          "type": "code",
+          "path": "md/CRTXG_.ZMD",
+          "offset": "0x052000"
+        },
+        {
+          "type": "code",
+          "path": "md/CRTXH_.ZMD",
+          "offset": "0x054000"
+        },
+        {
+          "type": "code",
+          "path": "md/CRTXI_.ZMD",
+          "offset": "0x056000"
+        },
+        {
+          "type": "code",
+          "path": "md/CRTXJ_.ZMD",
+          "offset": "0x057000"
+        },
+        {
+          "type": "code",
+          "path": "md/CRTYHS01.ZMD",
+          "offset": "0x05a000"
+        },
+        {
+          "type": "code",
+          "path": "fm/CRTXSA.ZMD",
+          "offset": "0x05c000"
+        },
+        {
+          "type": "code",
+          "path": "fm/CRTXSB.ZMD",
+          "offset": "0x05c800"
+        },
+        {
+          "type": "code",
+          "path": "fm/CRTXSC.ZMD",
+          "offset": "0x05d000"
+        },
+        {
+          "type": "code",
+          "path": "fm/CRTXSD.ZMD",
+          "offset": "0x05d800"
+        },
+        {
+          "type": "code",
+          "path": "fm/CRTXSE.ZMD",
+          "offset": "0x05e000"
+        },
+        {
+          "type": "code",
+          "path": "fm/CRTXSF.ZMD",
+          "offset": "0x05e800"
+        },
+        {
+          "type": "code",
+          "path": "fm/CRTXSG.ZMD",
+          "offset": "0x05f000"
+        },
+        {
+          "type": "code",
+          "path": "fm/CRTXSH.ZMD",
+          "offset": "0x05f800"
+        },
+        {
+          "type": "code",
+          "path": "fm/CRTXSI.ZMD",
+          "offset": "0x060000"
+        },
+        {
+          "type": "code",
+          "path": "fm/CRTXSJ.ZMD",
+          "offset": "0x060800"
+        },
+        {
+          "type": "code",
+          "path": "fm/CRTXSK.ZMD",
+          "offset": "0x061000"
+        },
+        {
+          "type": "code",
+          "path": "fm/CRTXSL.ZMD",
+          "offset": "0x061800"
+        },
+        {
+          "type": "code",
+          "path": "fm/CRTXSM.ZMD",
+          "offset": "0x062000"
+        },
+        {
+          "type": "code",
+          "path": "fm/CRTXSN.ZMD",
+          "offset": "0x062800"
+        },
+        {
+          "type": "code",
+          "path": "fm/CRTXSO.ZMD",
+          "offset": "0x063000"
+        },
+        {
+          "type": "code",
+          "path": "fm/CRTXSP.ZMD",
+          "offset": "0x063800"
+        },
+        {
+          "type": "code",
+          "path": "fm/CRTXSQ.ZMD",
+          "offset": "0x064000"
+        },
+        {
+          "type": "code",
+          "path": "fm/CRTXSR.ZMD",
+          "offset": "0x064800"
+        },
+        {
+          "type": "code",
+          "path": "fm/CRTXSS.ZMD",
+          "offset": "0x065000"
+        },
+        {
+          "type": "x",
+          "path": "zmsc.x",
+          "offset": "0x080000"
+        },
+        {
+          "type": "code",
+          "path": "carat68.zpd",
+          "offset": "0x0a0000"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x1c",
+          "title": "CRTYHS01.ZMD : オ～プニング"
+        },
+        {
+          "kind": "title",
+          "code": "0x0c",
+          "title": "CRTJKL18.ZMD : タイトル"
+        },
+        {
+          "kind": "title",
+          "code": "0x06",
+          "title": "CRTJKL07.ZMD : インフォメ～ション"
+        },
+        {
+          "kind": "title",
+          "code": "0x03",
+          "title": "CRTJKL02.ZMD : BGM1"
+        },
+        {
+          "kind": "title",
+          "code": "0x02",
+          "title": "CRTJKL01.ZMD : ピンチ1"
+        },
+        {
+          "kind": "title",
+          "code": "0x04",
+          "title": "CRTJKL04.ZMD : BGM2"
+        },
+        {
+          "kind": "title",
+          "code": "0x0a",
+          "title": "CRTJKL16.ZMD : BGM3"
+        },
+        {
+          "kind": "title",
+          "code": "0x08",
+          "title": "CRTJKL12.ZMD : ピンチ2"
+        },
+        {
+          "kind": "title",
+          "code": "0x07",
+          "title": "CRTJKL08.ZMD : BGM4"
+        },
+        {
+          "kind": "title",
+          "code": "0x05",
+          "title": "CRTJKL05.ZMD : BGM5"
+        },
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "CRTJKLN2.ZMD : BGM6"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "CRTXA_.ZMD   : BGM7"
+        },
+        {
+          "kind": "title",
+          "code": "0x14",
+          "title": "CRTXB_.ZMD   : ピンチ3"
+        },
+        {
+          "kind": "title",
+          "code": "0x16",
+          "title": "CRTXD_.ZMD   : BGM8"
+        },
+        {
+          "kind": "title",
+          "code": "0x18",
+          "title": "CRTXG_.ZMD   : ピンチ4"
+        },
+        {
+          "kind": "title",
+          "code": "0x15",
+          "title": "CRTXC_.ZMD   : クリア～"
+        },
+        {
+          "kind": "title",
+          "code": "0x0d",
+          "title": "CRTJKL26.ZMD : ステ～ジクリア"
+        },
+        {
+          "kind": "title",
+          "code": "0x0e",
+          "title": "CRTJKL31.ZMD : 試合終了1"
+        },
+        {
+          "kind": "title",
+          "code": "0x0f",
+          "title": "CRTJKL33.ZMD : 試合終了2"
+        },
+        {
+          "kind": "title",
+          "code": "0x1b",
+          "title": "CRTXJ_.ZMD   : コンティニュ～"
+        },
+        {
+          "kind": "title",
+          "code": "0x17",
+          "title": "CRTXE_.ZMD   : ゲ～ムオ～バ～"
+        },
+        {
+          "kind": "title",
+          "code": "0x19",
+          "title": "CRTXH_.ZMD   : ネ～ムエントリ～"
+        },
+        {
+          "kind": "title",
+          "code": "0x1a",
+          "title": "CRTXI_.ZMD   : リトライ"
+        },
+        {
+          "kind": "title",
+          "code": "0x0b",
+          "title": "CRTJKL17.ZMD : ヴィジュアル"
+        },
+        {
+          "kind": "title",
+          "code": "0x09",
+          "title": "CRTJKL15.ZMD : エンディング(妖艶天使)"
+        },
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "CRTEND2J.ZMD : エンディング(ノ～マル)"
+        },
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "CRTJKLN3.ZMD : エンディング(ハ～ド)"
+        },
+        {
+          "kind": "title",
+          "code": "0x1d",
+          "title": "CRTXSA.ZMD   : ブロックが崩れる"
+        },
+        {
+          "kind": "title",
+          "code": "0x1e",
+          "title": "CRTXSB.ZMD   : ブロック着地"
+        },
+        {
+          "kind": "title",
+          "code": "0x1f",
+          "title": "CRTXSC.ZMD   : ブロック回転不可能"
+        },
+        {
+          "kind": "title",
+          "code": "0x20",
+          "title": "CRTXSD.ZMD   : ゲ～ムエンド1"
+        },
+        {
+          "kind": "title",
+          "code": "0x21",
+          "title": "CRTXSE.ZMD   : ゲ～ムエンド2"
+        },
+        {
+          "kind": "title",
+          "code": "0x22",
+          "title": "CRTXSF.ZMD   : レベルアップ"
+        },
+        {
+          "kind": "title",
+          "code": "0x23",
+          "title": "CRTXSG.ZMD   : ブロック回転"
+        },
+        {
+          "kind": "title",
+          "code": "0x24",
+          "title": "CRTXSH.ZMD   : ブロックが消える"
+        },
+        {
+          "kind": "title",
+          "code": "0x25",
+          "title": "CRTXSI.ZMD   : スコア&タイム表示"
+        },
+        {
+          "kind": "title",
+          "code": "0x26",
+          "title": "CRTXSJ.ZMD   : カ～ソル移動"
+        },
+        {
+          "kind": "title",
+          "code": "0x27",
+          "title": "CRTXSK.ZMD   : 決定"
+        },
+        {
+          "kind": "title",
+          "code": "0x28",
+          "title": "CRTXSL.ZMD   : カウント"
+        },
+        {
+          "kind": "title",
+          "code": "0x29",
+          "title": "CRTXSM.ZMD   : スタ～ト"
+        },
+        {
+          "kind": "title",
+          "code": "0x2a",
+          "title": "CRTXSN.ZMD   : 方向変更"
+        },
+        {
+          "kind": "title",
+          "code": "0x2b",
+          "title": "CRTXSO.ZMD   : ネ～ムエントリ～カ～ソル移動"
+        },
+        {
+          "kind": "title",
+          "code": "0x2c",
+          "title": "CRTXSP.ZMD   : ネ～ムエントリ～文字決定"
+        },
+        {
+          "kind": "title",
+          "code": "0x2d",
+          "title": "CRTXSQ.ZMD   : ネ～ムエントリ～バックスペ～ス"
+        },
+        {
+          "kind": "title",
+          "code": "0x2e",
+          "title": "CRTXSR.ZMD   : ブロックが固まる"
+        },
+        {
+          "kind": "title",
+          "code": "0x2f",
+          "title": "CRTXSS.ZMD   : ポ～ズ"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/custom.xml",
+      "source_order": 990,
+      "archive": "carat68snd",
+      "id": "carat68snd-generic-2"
+    }
+  ]
+}

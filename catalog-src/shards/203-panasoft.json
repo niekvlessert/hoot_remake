@@ -1,0 +1,1556 @@
+{
+  "format": "hoot-catalog-shard",
+  "version": 1,
+  "source_file": "xml/panasoft.xml",
+  "date": "2011/10/10",
+  "comments": [
+    " //Panasoft "
+  ],
+  "games": [
+    {
+      "title": "[MSX] F1 SPIRIT 3D SPECIAL(OPLL)",
+      "driver": {
+        "name": "msx",
+        "type": "generic",
+        "alias": "Panasoft",
+        "platform": "MSX"
+      },
+      "options": [
+        {
+          "name": "mdata_addr",
+          "value": "0xb000"
+        },
+        {
+          "name": "mdata_size",
+          "value": "0x0d00"
+        },
+        {
+          "name": "mfile_size",
+          "value": "0x0d00"
+        },
+        {
+          "name": "init_pc",
+          "value": "0x0400"
+        },
+        {
+          "name": "use_opll",
+          "value": "0x01"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "patch",
+          "offset": "0x0400"
+        },
+        {
+          "type": "code",
+          "path": "BIOS.BIN",
+          "offset": "0x8000"
+        },
+        {
+          "type": "code",
+          "path": "FMDRV.BIN",
+          "offset": "0x9000"
+        },
+        {
+          "type": "bgm",
+          "path": "FM0.BIN",
+          "offset": "0x00"
+        },
+        {
+          "type": "bgm",
+          "path": "FM1.BIN",
+          "offset": "0x01"
+        },
+        {
+          "type": "bgm",
+          "path": "FM2.BIN",
+          "offset": "0x02"
+        },
+        {
+          "type": "bgm",
+          "path": "FM3.BIN",
+          "offset": "0x03"
+        },
+        {
+          "type": "bgm",
+          "path": "FM4.BIN",
+          "offset": "0x04"
+        },
+        {
+          "type": "bgm",
+          "path": "FM5.BIN",
+          "offset": "0x05"
+        },
+        {
+          "type": "bgm",
+          "path": "FM6.BIN",
+          "offset": "0x06"
+        },
+        {
+          "type": "bgm",
+          "path": "FM7.BIN",
+          "offset": "0x07"
+        },
+        {
+          "type": "bgm",
+          "path": "FM8.BIN",
+          "offset": "0x08"
+        },
+        {
+          "type": "bgm",
+          "path": "FM9.BIN",
+          "offset": "0x09"
+        },
+        {
+          "type": "bgm",
+          "path": "FMA.BIN",
+          "offset": "0x0a"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x0300",
+          "title": "Is it \"Domingo\" Today?   (Title)"
+        },
+        {
+          "kind": "title",
+          "code": "0x0401",
+          "title": "Constructor              (Select)"
+        },
+        {
+          "kind": "title",
+          "code": "0x0802",
+          "title": "Practice Makes Perfect   (Stage 1)"
+        },
+        {
+          "kind": "title",
+          "code": "0x0903",
+          "title": "Turn on The Run          (Stage 2)"
+        },
+        {
+          "kind": "title",
+          "code": "0x0a04",
+          "title": "Out of Rap               (Stage 3)"
+        },
+        {
+          "kind": "title",
+          "code": "0x0b05",
+          "title": "Hot Road                 (Stage 4)"
+        },
+        {
+          "kind": "title",
+          "code": "0x0508",
+          "title": "Make What Haste You Can! (Pit)"
+        },
+        {
+          "kind": "title",
+          "code": "0x0d09",
+          "title": "Big Don                  (Grand Prix: 1st)"
+        },
+        {
+          "kind": "comment",
+          "text": " <title code=\"0x0d0a\">Big Don</title> "
+        },
+        {
+          "kind": "title",
+          "code": "0x0e09",
+          "title": "Glory                    (Grand Prix: 2nd,3rd)"
+        },
+        {
+          "kind": "title",
+          "code": "0x0606",
+          "title": "Light Step               (Ranking)"
+        },
+        {
+          "kind": "title",
+          "code": "0x0707",
+          "title": "Calm Feelings            (Ending)"
+        },
+        {
+          "kind": "range",
+          "min": "0x10",
+          "max": "0x1f",
+          "title_format": "SE 0x%02x",
+          "extcode": "1"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/panasoft.xml",
+      "source_order": 3553,
+      "archive": "f1sp3d_msx",
+      "id": "f1sp3d-msx-generic"
+    },
+    {
+      "title": "[MSX] F1 SPIRIT 3D SPECIAL(PSG)",
+      "driver": {
+        "name": "msx",
+        "type": "generic",
+        "alias": "Panasoft",
+        "platform": "MSX"
+      },
+      "options": [
+        {
+          "name": "mdata_addr",
+          "value": "0xaa00"
+        },
+        {
+          "name": "mdata_size",
+          "value": "0x0a00"
+        },
+        {
+          "name": "mfile_size",
+          "value": "0x0a00"
+        },
+        {
+          "name": "init_pc",
+          "value": "0x0400"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "patch",
+          "offset": "0x0400"
+        },
+        {
+          "type": "code",
+          "path": "BIOS.BIN",
+          "offset": "0x8000"
+        },
+        {
+          "type": "code",
+          "path": "PSGDRV.BIN",
+          "offset": "0x9000"
+        },
+        {
+          "type": "bgm",
+          "path": "PSG0.BIN",
+          "offset": "0x00"
+        },
+        {
+          "type": "bgm",
+          "path": "PSG1.BIN",
+          "offset": "0x01"
+        },
+        {
+          "type": "bgm",
+          "path": "PSG2.BIN",
+          "offset": "0x02"
+        },
+        {
+          "type": "bgm",
+          "path": "PSG3.BIN",
+          "offset": "0x03"
+        },
+        {
+          "type": "bgm",
+          "path": "PSG4.BIN",
+          "offset": "0x04"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x0300",
+          "title": "Is it \"Domingo\" Today?   (Title)"
+        },
+        {
+          "kind": "title",
+          "code": "0x0401",
+          "title": "Constructor              (Select)"
+        },
+        {
+          "kind": "title",
+          "code": "0x0501",
+          "title": "Make What Haste You Can! (Pit in)"
+        },
+        {
+          "kind": "title",
+          "code": "0x0d03",
+          "title": "Big Don                  (Grand Prix: 1st)"
+        },
+        {
+          "kind": "title",
+          "code": "0x0e03",
+          "title": "Glory                    (Grand Prix: 2nd,3rd)"
+        },
+        {
+          "kind": "title",
+          "code": "0x0604",
+          "title": "Light Step               (Ranking)"
+        },
+        {
+          "kind": "title",
+          "code": "0x0702",
+          "title": "Calm Feelings            (Ending)"
+        },
+        {
+          "kind": "range",
+          "min": "0x10",
+          "max": "0x1f",
+          "title_format": "SE 0x%02x",
+          "extcode": "1"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/panasoft.xml",
+      "source_order": 3554,
+      "archive": "f1sp3d_msx",
+      "id": "f1sp3d-msx-generic-2"
+    },
+    {
+      "title": "[MSX] Disc Pana Amusement Collection あーぱーみゃあどっく(OPLL)",
+      "driver": {
+        "name": "msx",
+        "type": "generic",
+        "alias": "Panasoft",
+        "platform": "MSX"
+      },
+      "options": [
+        {
+          "name": "init_pc",
+          "value": "0x0400"
+        },
+        {
+          "name": "use_opll",
+          "value": "0x01"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "patch",
+          "offset": "0x0400"
+        },
+        {
+          "type": "code",
+          "path": "OPLL.DRV",
+          "offset": "0xc000"
+        },
+        {
+          "type": "code",
+          "path": "BGM.OPL",
+          "offset": "0xb000"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "オープニングテーマ"
+        },
+        {
+          "kind": "title",
+          "code": "0x00",
+          "title": "プレイ中BGM"
+        },
+        {
+          "kind": "range",
+          "min": "0x02",
+          "max": "0x05",
+          "title_format": "SE %02x",
+          "extcode": "0"
+        },
+        {
+          "kind": "range",
+          "min": "0x07",
+          "max": "0x07",
+          "title_format": "SE %02x",
+          "extcode": "0"
+        },
+        {
+          "kind": "range",
+          "min": "0x0a",
+          "max": "0x0b",
+          "title_format": "SE %02x",
+          "extcode": "0"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/panasoft.xml",
+      "source_order": 3555,
+      "archive": "dpanaac_msx",
+      "id": "dpanaac-msx-generic"
+    },
+    {
+      "title": "[MSX] Disc Pana Amusement Collection あーぱーみゃあどっく(PSG)",
+      "driver": {
+        "name": "msx",
+        "type": "generic",
+        "alias": "Panasoft",
+        "platform": "MSX"
+      },
+      "options": [
+        {
+          "name": "init_pc",
+          "value": "0x0400"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "patch",
+          "offset": "0x0400"
+        },
+        {
+          "type": "code",
+          "path": "PSG.DRV",
+          "offset": "0xc000"
+        },
+        {
+          "type": "code",
+          "path": "BGM.PSG",
+          "offset": "0xb000"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "オープニングテーマ"
+        },
+        {
+          "kind": "title",
+          "code": "0x00",
+          "title": "プレイ中BGM"
+        },
+        {
+          "kind": "range",
+          "min": "0x02",
+          "max": "0x05",
+          "title_format": "SE %02x",
+          "extcode": "0"
+        },
+        {
+          "kind": "range",
+          "min": "0x07",
+          "max": "0x07",
+          "title_format": "SE %02x",
+          "extcode": "0"
+        },
+        {
+          "kind": "range",
+          "min": "0x0a",
+          "max": "0x0b",
+          "title_format": "SE %02x",
+          "extcode": "0"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/panasoft.xml",
+      "source_order": 3556,
+      "archive": "dpanaac_msx",
+      "id": "dpanaac-msx-generic-2"
+    },
+    {
+      "title": "[MSX] Disc Pana Amusement Collection(OPLL)",
+      "driver": {
+        "name": "msx",
+        "type": "generic",
+        "alias": "Panasoft",
+        "platform": "MSX"
+      },
+      "options": [
+        {
+          "name": "init_pc",
+          "value": "0x0400"
+        },
+        {
+          "name": "use_opll",
+          "value": "0x01"
+        },
+        {
+          "name": "mdata_addr",
+          "value": "0xb800"
+        },
+        {
+          "name": "mdata_size",
+          "value": "0x0800"
+        },
+        {
+          "name": "mfile_size",
+          "value": "0x0800"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "patch2",
+          "offset": "0x0400"
+        },
+        {
+          "type": "code",
+          "path": "MUSIC.CIM",
+          "offset": "0xc000"
+        },
+        {
+          "type": "bgm",
+          "path": "BUTAO.MDT",
+          "offset": "0x00"
+        },
+        {
+          "type": "bgm",
+          "path": "GOVERO.MDT",
+          "offset": "0x01"
+        },
+        {
+          "type": "bgm",
+          "path": "DISKMO.MDT",
+          "offset": "0x02"
+        },
+        {
+          "type": "bgm",
+          "path": "BGM1O.MDT",
+          "offset": "0x03"
+        },
+        {
+          "type": "bgm",
+          "path": "BGM2O.MDT",
+          "offset": "0x04"
+        },
+        {
+          "type": "bgm",
+          "path": "BGM3O.MDT",
+          "offset": "0x05"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x02",
+          "title": "DISKMO.MDT : メニュー"
+        },
+        {
+          "kind": "title",
+          "code": "0x00",
+          "title": "BUTAO.MDT  : フンフンばすけっと メインBGM"
+        },
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "GOVERO.MDT : フンフンばすけっと ゲームオーバー"
+        },
+        {
+          "kind": "title",
+          "code": "0x04",
+          "title": "BGM2O.MDT  : GAME EASY"
+        },
+        {
+          "kind": "title",
+          "code": "0x05",
+          "title": "BGM3O.MDT  : E.S.EASY"
+        },
+        {
+          "kind": "title",
+          "code": "0x03",
+          "title": "BGM1O.MDT  :"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/panasoft.xml",
+      "source_order": 3557,
+      "archive": "dpanaac_msx",
+      "id": "dpanaac-msx-generic-3"
+    },
+    {
+      "title": "[MSX] Disc Pana Amusement Collection(PSG)",
+      "driver": {
+        "name": "msx",
+        "type": "generic",
+        "alias": "Panasoft",
+        "platform": "MSX"
+      },
+      "options": [
+        {
+          "name": "init_pc",
+          "value": "0x0400"
+        },
+        {
+          "name": "mdata_addr",
+          "value": "0xb800"
+        },
+        {
+          "name": "mdata_size",
+          "value": "0x0800"
+        },
+        {
+          "name": "mfile_size",
+          "value": "0x0800"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "patch2",
+          "offset": "0x0400"
+        },
+        {
+          "type": "code",
+          "path": "MUSIC.CIM",
+          "offset": "0xc000"
+        },
+        {
+          "type": "bgm",
+          "path": "BUTAP.MDT",
+          "offset": "0x00"
+        },
+        {
+          "type": "bgm",
+          "path": "GOVERP.MDT",
+          "offset": "0x01"
+        },
+        {
+          "type": "bgm",
+          "path": "DISKMP.MDT",
+          "offset": "0x02"
+        },
+        {
+          "type": "bgm",
+          "path": "BGM1P.MDT",
+          "offset": "0x03"
+        },
+        {
+          "type": "bgm",
+          "path": "BGM2P.MDT",
+          "offset": "0x04"
+        },
+        {
+          "type": "bgm",
+          "path": "BGM3P.MDT",
+          "offset": "0x05"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x02",
+          "title": "DISKMP.MDT : メニュー"
+        },
+        {
+          "kind": "title",
+          "code": "0x00",
+          "title": "BUTAP.MDT  : フンフンばすけっと メインBGM"
+        },
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "GOVERP.MDT : フンフンばすけっと ゲームオーバー"
+        },
+        {
+          "kind": "title",
+          "code": "0x04",
+          "title": "BGM2P.MDT  : GAME EASY"
+        },
+        {
+          "kind": "title",
+          "code": "0x05",
+          "title": "BGM3P.MDT  : E.S.EASY"
+        },
+        {
+          "kind": "title",
+          "code": "0x03",
+          "title": "BGM1P.MDT  :"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/panasoft.xml",
+      "source_order": 3558,
+      "archive": "dpanaac_msx",
+      "id": "dpanaac-msx-generic-4"
+    },
+    {
+      "title": "[MSX] FMパナアミューズメントカートリッジ",
+      "driver": {
+        "name": "msx",
+        "type": "ascii16",
+        "alias": "Panasoft",
+        "platform": "MSX"
+      },
+      "options": [
+        {
+          "name": "init_pc",
+          "value": "0x400"
+        },
+        {
+          "name": "use_opll",
+          "value": "0x01"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "fmpatch",
+          "offset": "0x0400"
+        },
+        {
+          "type": "rom",
+          "path": "FMPAC.ROM",
+          "offset": "0x0000"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "range",
+          "min": "0x00",
+          "max": "0x04",
+          "title_format": "サンプル %02d",
+          "extcode": "1"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/panasoft.xml",
+      "source_order": 3559,
+      "archive": "fmpac_msx",
+      "id": "fmpac-msx-ascii16"
+    },
+    {
+      "title": "[MSX] 激走ニャンクル(OPLL)",
+      "driver": {
+        "name": "msx",
+        "type": "generic",
+        "alias": "Panasoft",
+        "platform": "MSX"
+      },
+      "options": [
+        {
+          "name": "mdata_addr",
+          "value": "0x8c00"
+        },
+        {
+          "name": "mdata_size",
+          "value": "0x1000"
+        },
+        {
+          "name": "mfile_size",
+          "value": "0x1000"
+        },
+        {
+          "name": "init_pc",
+          "value": "0x0400"
+        },
+        {
+          "name": "use_opll",
+          "value": "0x01"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "patch",
+          "offset": "0x0400"
+        },
+        {
+          "type": "code",
+          "path": "MAIN.BIN",
+          "offset": "0x4000"
+        },
+        {
+          "type": "code",
+          "path": "FMDRV.BIN",
+          "offset": "0x8000"
+        },
+        {
+          "type": "code",
+          "path": "TONE.BIN",
+          "offset": "0xce10"
+        },
+        {
+          "type": "bgm",
+          "path": "FM00.BIN",
+          "offset": "0x0000"
+        },
+        {
+          "type": "bgm",
+          "path": "FM01.BIN",
+          "offset": "0x0001"
+        },
+        {
+          "type": "bgm",
+          "path": "FM02.BIN",
+          "offset": "0x0002"
+        },
+        {
+          "type": "bgm",
+          "path": "FM03.BIN",
+          "offset": "0x0003"
+        },
+        {
+          "type": "bgm",
+          "path": "FM04.BIN",
+          "offset": "0x0004"
+        },
+        {
+          "type": "bgm",
+          "path": "FM05.BIN",
+          "offset": "0x0005"
+        },
+        {
+          "type": "bgm",
+          "path": "FM06.BIN",
+          "offset": "0x0006"
+        },
+        {
+          "type": "bgm",
+          "path": "FM07.BIN",
+          "offset": "0x0007"
+        },
+        {
+          "type": "bgm",
+          "path": "FM08.BIN",
+          "offset": "0x0008"
+        },
+        {
+          "type": "bgm",
+          "path": "FM09.BIN",
+          "offset": "0x0009"
+        },
+        {
+          "type": "bgm",
+          "path": "FM0A.BIN",
+          "offset": "0x000a"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x010201",
+          "title": "タイトル/デモ"
+        },
+        {
+          "kind": "title",
+          "code": "0x010202",
+          "title": "プレイヤー セレクト"
+        },
+        {
+          "kind": "title",
+          "code": "0x010203",
+          "title": "マップ"
+        },
+        {
+          "kind": "title",
+          "code": "0x010204",
+          "title": "レース開始デモ"
+        },
+        {
+          "kind": "title",
+          "code": "0x000307",
+          "title": "レース開始"
+        },
+        {
+          "kind": "title",
+          "code": "0x010301",
+          "title": "アップリケタウン"
+        },
+        {
+          "kind": "title",
+          "code": "0x010401",
+          "title": "マシュマロード"
+        },
+        {
+          "kind": "title",
+          "code": "0x010501",
+          "title": "ミズアメール"
+        },
+        {
+          "kind": "title",
+          "code": "0x010601",
+          "title": "グリンピースコリーヌ"
+        },
+        {
+          "kind": "title",
+          "code": "0x010701",
+          "title": "ピーナッツディザート"
+        },
+        {
+          "kind": "title",
+          "code": "0x010901",
+          "title": "ピットイン"
+        },
+        {
+          "kind": "title",
+          "code": "0x010902",
+          "title": "アイテムショップ"
+        },
+        {
+          "kind": "title",
+          "code": "0x010903",
+          "title": "ホスピタル"
+        },
+        {
+          "kind": "title",
+          "code": "0x010304",
+          "title": "シップ セレクト"
+        },
+        {
+          "kind": "title",
+          "code": "0x010801",
+          "title": "中ステージ"
+        },
+        {
+          "kind": "title",
+          "code": "0x000306",
+          "title": "ゴール"
+        },
+        {
+          "kind": "title",
+          "code": "0x000a01",
+          "title": "ワールドクリア"
+        },
+        {
+          "kind": "title",
+          "code": "0x010a03",
+          "title": "順位"
+        },
+        {
+          "kind": "title",
+          "code": "0x010a06",
+          "title": "コングラチュレーション"
+        },
+        {
+          "kind": "title",
+          "code": "0x010a05",
+          "title": "スタッフロール"
+        },
+        {
+          "kind": "title",
+          "code": "0x000303",
+          "title": "ミス"
+        },
+        {
+          "kind": "title",
+          "code": "0x000302",
+          "title": "ゲームオーバー"
+        },
+        {
+          "kind": "title",
+          "code": "0x000904",
+          "title": "BGM 0904"
+        },
+        {
+          "kind": "title",
+          "code": "0x000a02",
+          "title": "BGM 0a02"
+        },
+        {
+          "kind": "title",
+          "code": "0x010a04",
+          "title": "BGM 0a04"
+        },
+        {
+          "kind": "title",
+          "code": "0x000305",
+          "title": "UNUSED"
+        },
+        {
+          "kind": "title",
+          "code": "0x000405",
+          "title": "UNUSED"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/panasoft.xml",
+      "source_order": 3560,
+      "archive": "nyancle_msx",
+      "id": "nyancle-msx-generic"
+    },
+    {
+      "title": "[MSX] 激走ニャンクル(PSG)",
+      "driver": {
+        "name": "msx",
+        "type": "generic",
+        "alias": "Panasoft",
+        "platform": "MSX"
+      },
+      "options": [
+        {
+          "name": "mdata_addr",
+          "value": "0x8c00"
+        },
+        {
+          "name": "mdata_size",
+          "value": "0x1000"
+        },
+        {
+          "name": "mfile_size",
+          "value": "0x1000"
+        },
+        {
+          "name": "init_pc",
+          "value": "0x0400"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "patch",
+          "offset": "0x0400"
+        },
+        {
+          "type": "code",
+          "path": "MAIN.BIN",
+          "offset": "0x4000"
+        },
+        {
+          "type": "code",
+          "path": "PSGDRV.BIN",
+          "offset": "0x8000"
+        },
+        {
+          "type": "bgm",
+          "path": "PSG00.BIN",
+          "offset": "0x0000"
+        },
+        {
+          "type": "bgm",
+          "path": "PSG01.BIN",
+          "offset": "0x0001"
+        },
+        {
+          "type": "bgm",
+          "path": "PSG02.BIN",
+          "offset": "0x0002"
+        },
+        {
+          "type": "bgm",
+          "path": "PSG03.BIN",
+          "offset": "0x0003"
+        },
+        {
+          "type": "bgm",
+          "path": "PSG04.BIN",
+          "offset": "0x0004"
+        },
+        {
+          "type": "bgm",
+          "path": "PSG05.BIN",
+          "offset": "0x0005"
+        },
+        {
+          "type": "bgm",
+          "path": "PSG06.BIN",
+          "offset": "0x0006"
+        },
+        {
+          "type": "bgm",
+          "path": "PSG07.BIN",
+          "offset": "0x0007"
+        },
+        {
+          "type": "bgm",
+          "path": "PSG08.BIN",
+          "offset": "0x0008"
+        },
+        {
+          "type": "bgm",
+          "path": "PSG09.BIN",
+          "offset": "0x0009"
+        },
+        {
+          "type": "bgm",
+          "path": "PSG0A.BIN",
+          "offset": "0x000a"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x010201",
+          "title": "タイトルデモ"
+        },
+        {
+          "kind": "title",
+          "code": "0x010202",
+          "title": "プレイヤー セレクト"
+        },
+        {
+          "kind": "title",
+          "code": "0x010203",
+          "title": "マップ"
+        },
+        {
+          "kind": "title",
+          "code": "0x010204",
+          "title": "レース開始デモ"
+        },
+        {
+          "kind": "title",
+          "code": "0x000307",
+          "title": "レース開始"
+        },
+        {
+          "kind": "title",
+          "code": "0x010301",
+          "title": "アップリケタウン"
+        },
+        {
+          "kind": "title",
+          "code": "0x010401",
+          "title": "マシュマロード"
+        },
+        {
+          "kind": "title",
+          "code": "0x010501",
+          "title": "ミズアメール"
+        },
+        {
+          "kind": "title",
+          "code": "0x010601",
+          "title": "グリンピースコリーヌ"
+        },
+        {
+          "kind": "title",
+          "code": "0x010701",
+          "title": "ピーナッツディザート"
+        },
+        {
+          "kind": "title",
+          "code": "0x010901",
+          "title": "ピットイン"
+        },
+        {
+          "kind": "title",
+          "code": "0x010902",
+          "title": "アイテムショップ"
+        },
+        {
+          "kind": "title",
+          "code": "0x010903",
+          "title": "ホスピタル"
+        },
+        {
+          "kind": "title",
+          "code": "0x010304",
+          "title": "シップ セレクト"
+        },
+        {
+          "kind": "title",
+          "code": "0x010801",
+          "title": "中ステージ"
+        },
+        {
+          "kind": "title",
+          "code": "0x000306",
+          "title": "ゴール"
+        },
+        {
+          "kind": "title",
+          "code": "0x000a01",
+          "title": "ワールドクリア"
+        },
+        {
+          "kind": "title",
+          "code": "0x010a03",
+          "title": "順位"
+        },
+        {
+          "kind": "title",
+          "code": "0x010a06",
+          "title": "コングラチュレーション"
+        },
+        {
+          "kind": "title",
+          "code": "0x010a05",
+          "title": "スタッフロール"
+        },
+        {
+          "kind": "title",
+          "code": "0x000303",
+          "title": "ミス"
+        },
+        {
+          "kind": "title",
+          "code": "0x000302",
+          "title": "ゲームオーバー"
+        },
+        {
+          "kind": "title",
+          "code": "0x000904",
+          "title": "BGM 0904"
+        },
+        {
+          "kind": "title",
+          "code": "0x000a02",
+          "title": "BGM 0a02"
+        },
+        {
+          "kind": "title",
+          "code": "0x010a04",
+          "title": "BGM 0a04"
+        },
+        {
+          "kind": "title",
+          "code": "0x000305",
+          "title": "UNUSED"
+        },
+        {
+          "kind": "title",
+          "code": "0x000405",
+          "title": "UNUSED"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/panasoft.xml",
+      "source_order": 3561,
+      "archive": "nyancle_msx",
+      "id": "nyancle-msx-generic-2"
+    },
+    {
+      "title": "[MSX] LAYDOCK2 - LAST ATTACK(OPLL)",
+      "driver": {
+        "name": "msx",
+        "type": "generic",
+        "alias": "Panasoft",
+        "platform": "MSX"
+      },
+      "options": [
+        {
+          "name": "mdata_addr",
+          "value": "0xb800"
+        },
+        {
+          "name": "mdata_size",
+          "value": "0x0800"
+        },
+        {
+          "name": "mfile_size",
+          "value": "0x0800"
+        },
+        {
+          "name": "init_pc",
+          "value": "0x0400"
+        },
+        {
+          "name": "use_opll",
+          "value": "0x01"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "patch",
+          "offset": "0x0400"
+        },
+        {
+          "type": "code",
+          "path": "PCM.BIN",
+          "offset": "0x4000"
+        },
+        {
+          "type": "code",
+          "path": "MAIN.BIN",
+          "offset": "0x9000"
+        },
+        {
+          "type": "code",
+          "path": "OPLLDRV.BIN",
+          "offset": "0xC000"
+        },
+        {
+          "type": "bgm",
+          "path": "FMUS00.BIN",
+          "offset": "0x00"
+        },
+        {
+          "type": "bgm",
+          "path": "FMUS01.BIN",
+          "offset": "0x01"
+        },
+        {
+          "type": "bgm",
+          "path": "FMUS02.BIN",
+          "offset": "0x02"
+        },
+        {
+          "type": "bgm",
+          "path": "FMUS03.BIN",
+          "offset": "0x03"
+        },
+        {
+          "type": "bgm",
+          "path": "FMUS04.BIN",
+          "offset": "0x04"
+        },
+        {
+          "type": "bgm",
+          "path": "FMUS05.BIN",
+          "offset": "0x05"
+        },
+        {
+          "type": "bgm",
+          "path": "FMUS06.BIN",
+          "offset": "0x06"
+        },
+        {
+          "type": "bgm",
+          "path": "FMUS07.BIN",
+          "offset": "0x07"
+        },
+        {
+          "type": "bgm",
+          "path": "FMUS08.BIN",
+          "offset": "0x08"
+        },
+        {
+          "type": "bgm",
+          "path": "FMUS09.BIN",
+          "offset": "0x09"
+        },
+        {
+          "type": "bgm",
+          "path": "FMUS0A.BIN",
+          "offset": "0x0a"
+        },
+        {
+          "type": "bgm",
+          "path": "FMUS0B.BIN",
+          "offset": "0x0b"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x0c",
+          "title": "Opening Voice"
+        },
+        {
+          "kind": "title",
+          "code": "0x05",
+          "title": "Last Attack           (Opening)"
+        },
+        {
+          "kind": "title",
+          "code": "0x00",
+          "title": "Ice of Death          (Stage 1)"
+        },
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "Cold Ameba            (Boss)"
+        },
+        {
+          "kind": "title",
+          "code": "0x02",
+          "title": "Mad Flame             (Stage 2)"
+        },
+        {
+          "kind": "title",
+          "code": "0x03",
+          "title": "Beyond the Dimensions (Stage 3)"
+        },
+        {
+          "kind": "title",
+          "code": "0x04",
+          "title": "Get the Luck          (Stage 3 Boss)"
+        },
+        {
+          "kind": "title",
+          "code": "0x09",
+          "title": "Inorgranic Beat       (Stage 4)"
+        },
+        {
+          "kind": "title",
+          "code": "0x0a",
+          "title": "Bio-Monster           (Last Boss)"
+        },
+        {
+          "kind": "comment",
+          "text": "\n\t\t\t<title code=\"0x0b\">Bio-Monster           (Last Boss)</title>\n\t\t\t  "
+        },
+        {
+          "kind": "title",
+          "code": "0x06",
+          "title": "Interlude             (Visual)"
+        },
+        {
+          "kind": "title",
+          "code": "0x07",
+          "title": "Return of Peace       (Ending)"
+        },
+        {
+          "kind": "title",
+          "code": "0x08",
+          "title": "Your Rank             (Clear Ranking)"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/panasoft.xml",
+      "source_order": 3562,
+      "archive": "laydock2_msx",
+      "id": "laydock2-msx-generic"
+    },
+    {
+      "title": "[MSX] LAYDOCK2 - LAST ATTACK(PSG)",
+      "driver": {
+        "name": "msx",
+        "type": "generic",
+        "alias": "Panasoft",
+        "platform": "MSX"
+      },
+      "options": [
+        {
+          "name": "mdata_addr",
+          "value": "0xb800"
+        },
+        {
+          "name": "mdata_size",
+          "value": "0x0800"
+        },
+        {
+          "name": "mfile_size",
+          "value": "0x0800"
+        },
+        {
+          "name": "init_pc",
+          "value": "0x0400"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "patch",
+          "offset": "0x0400"
+        },
+        {
+          "type": "code",
+          "path": "PCM.BIN",
+          "offset": "0x4000"
+        },
+        {
+          "type": "code",
+          "path": "MAIN.BIN",
+          "offset": "0x9000"
+        },
+        {
+          "type": "code",
+          "path": "PSGDRV.BIN",
+          "offset": "0xC000"
+        },
+        {
+          "type": "bgm",
+          "path": "PMUS00.BIN",
+          "offset": "0x00"
+        },
+        {
+          "type": "bgm",
+          "path": "PMUS01.BIN",
+          "offset": "0x01"
+        },
+        {
+          "type": "bgm",
+          "path": "PMUS02.BIN",
+          "offset": "0x02"
+        },
+        {
+          "type": "bgm",
+          "path": "PMUS03.BIN",
+          "offset": "0x03"
+        },
+        {
+          "type": "bgm",
+          "path": "PMUS04.BIN",
+          "offset": "0x04"
+        },
+        {
+          "type": "bgm",
+          "path": "PMUS05.BIN",
+          "offset": "0x05"
+        },
+        {
+          "type": "bgm",
+          "path": "PMUS06.BIN",
+          "offset": "0x06"
+        },
+        {
+          "type": "bgm",
+          "path": "PMUS07.BIN",
+          "offset": "0x07"
+        },
+        {
+          "type": "bgm",
+          "path": "PMUS08.BIN",
+          "offset": "0x08"
+        },
+        {
+          "type": "bgm",
+          "path": "PMUS09.BIN",
+          "offset": "0x09"
+        },
+        {
+          "type": "bgm",
+          "path": "PMUS0A.BIN",
+          "offset": "0x0a"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x0c",
+          "title": "Opening Voice"
+        },
+        {
+          "kind": "title",
+          "code": "0x05",
+          "title": "Last Attack           (Opening)"
+        },
+        {
+          "kind": "title",
+          "code": "0x04",
+          "title": "Ice of Death          (Stage 1)"
+        },
+        {
+          "kind": "title",
+          "code": "0x00",
+          "title": "Cold Ameba            (Boss)"
+        },
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "Mad Flame             (Stage 2)"
+        },
+        {
+          "kind": "title",
+          "code": "0x02",
+          "title": "Beyond the Dimensions (Stage 3)"
+        },
+        {
+          "kind": "title",
+          "code": "0x03",
+          "title": "Get the Luck          (Stage 3 Boss)"
+        },
+        {
+          "kind": "title",
+          "code": "0x09",
+          "title": "Inorgranic Beat       (Stage 4)"
+        },
+        {
+          "kind": "title",
+          "code": "0x0a",
+          "title": "Bio-Monster           (Last Boss)"
+        },
+        {
+          "kind": "title",
+          "code": "0x06",
+          "title": "Interlude             (Visual)"
+        },
+        {
+          "kind": "title",
+          "code": "0x07",
+          "title": "Return of Peace       (Ending)"
+        },
+        {
+          "kind": "title",
+          "code": "0x08",
+          "title": "Your Rank             (Clear Ranking)"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/panasoft.xml",
+      "source_order": 3563,
+      "archive": "laydock2_msx",
+      "id": "laydock2-msx-generic-2"
+    }
+  ]
+}

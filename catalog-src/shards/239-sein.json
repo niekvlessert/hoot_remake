@@ -1,0 +1,4607 @@
+{
+  "format": "hoot-catalog-shard",
+  "version": 1,
+  "source_file": "xml/sein.xml",
+  "date": "2007/03/25",
+  "comments": [
+    " //ザインソフト(sein & xain & zain) "
+  ],
+  "games": [
+    {
+      "title": "[PC-8801] トリトーン",
+      "driver": {
+        "name": "pc88",
+        "type": "opn",
+        "alias": "ザインソフト",
+        "platform": "NEC PC-8801"
+      },
+      "options": [
+        {
+          "name": "baseclock",
+          "value": "0x04"
+        },
+        {
+          "name": "use_vrtc",
+          "value": "0x01"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "PATCH",
+          "offset": "0x0000"
+        },
+        {
+          "type": "code",
+          "path": "MUSIC",
+          "offset": "0x1000"
+        },
+        {
+          "type": "code",
+          "path": "PROG",
+          "offset": "0x2000"
+        },
+        {
+          "type": "code",
+          "path": "MUSIC",
+          "offset": "0x8000"
+        },
+        {
+          "type": "code",
+          "path": "ENDING",
+          "offset": "0xf000"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x00",
+          "title": "00 通常BGM"
+        },
+        {
+          "kind": "comment",
+          "text": "\t<title code=\"0x01\">01 剣を振る音</title> "
+        },
+        {
+          "kind": "comment",
+          "text": "\t<title code=\"0x02\">02 マジックボール発射音</title> "
+        },
+        {
+          "kind": "comment",
+          "text": "\t<title code=\"0x03\">03 HIT音</title> "
+        },
+        {
+          "kind": "title",
+          "code": "0x04",
+          "title": "04 未使用効果音"
+        },
+        {
+          "kind": "title",
+          "code": "0x05",
+          "title": "05 ゲームオーバー"
+        },
+        {
+          "kind": "title",
+          "code": "0x06",
+          "title": "06 未使用ジングル"
+        },
+        {
+          "kind": "title",
+          "code": "0x07",
+          "title": "07 エンディング"
+        },
+        {
+          "kind": "title",
+          "code": "0x08",
+          "title": "08 アイテム入手/レベルアップ"
+        },
+        {
+          "kind": "title",
+          "code": "0x09",
+          "title": "09 効果音"
+        },
+        {
+          "kind": "title",
+          "code": "0x0a",
+          "title": "0A オープニング"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/sein.xml",
+      "source_order": 3953,
+      "archive": "triton",
+      "id": "triton-opn"
+    },
+    {
+      "title": "[PC-8801] 未来 (PC-8801mkIISR専用版)",
+      "driver": {
+        "name": "pc88",
+        "type": "opn",
+        "alias": "ザインソフト",
+        "platform": "NEC PC-8801"
+      },
+      "options": [
+        {
+          "name": "use_vrtc",
+          "value": "0x01"
+        },
+        {
+          "name": "mdata_addr",
+          "value": "0xe300"
+        },
+        {
+          "name": "mdata_size",
+          "value": "0x0300"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "PATCH",
+          "offset": "0x0000"
+        },
+        {
+          "type": "code",
+          "path": "OP",
+          "offset": "0x1000"
+        },
+        {
+          "type": "code",
+          "path": "PROG",
+          "offset": "0x78e0"
+        },
+        {
+          "type": "bgm",
+          "path": "OP",
+          "offset": "0x00"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS00",
+          "offset": "0x01"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS01",
+          "offset": "0x02"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS02",
+          "offset": "0x03"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS03",
+          "offset": "0x04"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS04",
+          "offset": "0x05"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS05",
+          "offset": "0x06"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS06",
+          "offset": "0x07"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS07",
+          "offset": "0x08"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS08",
+          "offset": "0x09"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS09",
+          "offset": "0x0a"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x00",
+          "title": "OP    : オープニング"
+        },
+        {
+          "kind": "title",
+          "code": "0x02",
+          "title": "MUS01 : 地上 (惑星1,5)"
+        },
+        {
+          "kind": "title",
+          "code": "0x03",
+          "title": "MUS02 : 地下 (惑星1,5,7)"
+        },
+        {
+          "kind": "title",
+          "code": "0x08",
+          "title": "MUS07 : 地上 (惑星2,7)"
+        },
+        {
+          "kind": "title",
+          "code": "0x04",
+          "title": "MUS03 : 地下 (惑星2,6)"
+        },
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "MUS00 : 地上 (惑星3,6)"
+        },
+        {
+          "kind": "title",
+          "code": "0x05",
+          "title": "MUS04 : 地下 (惑星3)"
+        },
+        {
+          "kind": "title",
+          "code": "0x06",
+          "title": "MUS05 : 地上 (惑星4)"
+        },
+        {
+          "kind": "title",
+          "code": "0x07",
+          "title": "MUS06 : 地下 (惑星4)"
+        },
+        {
+          "kind": "title",
+          "code": "0x0a",
+          "title": "MUS09 : ボス"
+        },
+        {
+          "kind": "title",
+          "code": "0x09",
+          "title": "MUS08 : エンディング"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/sein.xml",
+      "source_order": 3954,
+      "archive": "mirai",
+      "id": "mirai-opn"
+    },
+    {
+      "title": "[PC-8801] 未来 (PC-8801/mkII版)",
+      "driver": {
+        "name": "pc88",
+        "type": "8801-11",
+        "alias": "ザインソフト",
+        "platform": "NEC PC-8801"
+      },
+      "options": [
+        {
+          "name": "use_vrtc",
+          "value": "0x01"
+        },
+        {
+          "name": "mdata_addr",
+          "value": "0xe300"
+        },
+        {
+          "name": "mdata_size",
+          "value": "0x0300"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "PATCH",
+          "offset": "0x0000"
+        },
+        {
+          "type": "code",
+          "path": "OP",
+          "offset": "0x4000"
+        },
+        {
+          "type": "code",
+          "path": "PROG",
+          "offset": "0x78e0"
+        },
+        {
+          "type": "bgm",
+          "path": "OP",
+          "offset": "0x00"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS00",
+          "offset": "0x01"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS01",
+          "offset": "0x02"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS02",
+          "offset": "0x03"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS03",
+          "offset": "0x04"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS04",
+          "offset": "0x05"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS05",
+          "offset": "0x06"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS06",
+          "offset": "0x07"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS07",
+          "offset": "0x08"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS08",
+          "offset": "0x09"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS09",
+          "offset": "0x0a"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x00",
+          "title": "OP    : オープニング"
+        },
+        {
+          "kind": "title",
+          "code": "0x02",
+          "title": "MUS01 : 地上 (惑星1,5)"
+        },
+        {
+          "kind": "title",
+          "code": "0x03",
+          "title": "MUS02 : 地下 (惑星1,5,7)"
+        },
+        {
+          "kind": "title",
+          "code": "0x08",
+          "title": "MUS07 : 地上 (惑星2,7)"
+        },
+        {
+          "kind": "title",
+          "code": "0x04",
+          "title": "MUS03 : 地下 (惑星2,6)"
+        },
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "MUS00 : 地上 (惑星3,6)"
+        },
+        {
+          "kind": "title",
+          "code": "0x05",
+          "title": "MUS04 : 地下 (惑星3)"
+        },
+        {
+          "kind": "title",
+          "code": "0x06",
+          "title": "MUS05 : 地上 (惑星4)"
+        },
+        {
+          "kind": "title",
+          "code": "0x07",
+          "title": "MUS06 : 地下 (惑星4)"
+        },
+        {
+          "kind": "title",
+          "code": "0x0a",
+          "title": "MUS09 : ボス"
+        },
+        {
+          "kind": "title",
+          "code": "0x09",
+          "title": "MUS08 : エンディング"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/sein.xml",
+      "source_order": 3955,
+      "archive": "miraimk2",
+      "id": "miraimk2-8801-11"
+    },
+    {
+      "title": "[PC-8801] JOTUNN",
+      "driver": {
+        "name": "pc88",
+        "type": "opn",
+        "alias": "ザインソフト",
+        "platform": "NEC PC-8801"
+      },
+      "options": [
+        {
+          "name": "use_vrtc",
+          "value": "0x01"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "PATCH",
+          "offset": "0x0000"
+        },
+        {
+          "type": "code",
+          "path": "DRIVER",
+          "offset": "0x6000"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x04",
+          "title": "タイトル"
+        },
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "メインBGM"
+        },
+        {
+          "kind": "title",
+          "code": "0x03",
+          "title": "店/教会"
+        },
+        {
+          "kind": "title",
+          "code": "0x02",
+          "title": "戦闘"
+        },
+        {
+          "kind": "title",
+          "code": "0x05",
+          "title": "演奏停止"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/sein.xml",
+      "source_order": 3956,
+      "archive": "jotunn",
+      "id": "jotunn-opn"
+    },
+    {
+      "title": "[PC-9801] JOTUNN",
+      "driver": {
+        "name": "pc98vx",
+        "type": "opn",
+        "alias": "ザインソフト",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "cpuclock",
+          "value": "1996800"
+        },
+        {
+          "name": "clockmul",
+          "value": "1"
+        },
+        {
+          "name": "bootcs",
+          "value": "0x0800"
+        },
+        {
+          "name": "bootip",
+          "value": "0x0000"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "jotunn.bin",
+          "offset": "0x08000"
+        },
+        {
+          "type": "code",
+          "path": "DRIVER",
+          "offset": "0x16000"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x04",
+          "title": "タイトル"
+        },
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "メインBGM"
+        },
+        {
+          "kind": "title",
+          "code": "0x03",
+          "title": "店/教会"
+        },
+        {
+          "kind": "title",
+          "code": "0x02",
+          "title": "戦闘"
+        },
+        {
+          "kind": "title",
+          "code": "0x05",
+          "title": "演奏停止"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/sein.xml",
+      "source_order": 3957,
+      "archive": "jotunn98",
+      "id": "jotunn98-opn"
+    },
+    {
+      "title": "[PC-8801] HERLESH",
+      "driver": {
+        "name": "pc88",
+        "type": "opn",
+        "alias": "ザインソフト",
+        "platform": "NEC PC-8801"
+      },
+      "options": [
+        {
+          "name": "use_vrtc",
+          "value": "0x01"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "PATCH",
+          "offset": "0x0000"
+        },
+        {
+          "type": "code",
+          "path": "MUSIC",
+          "offset": "0x0300"
+        },
+        {
+          "type": "code",
+          "path": "DRIVER",
+          "offset": "0x7100"
+        },
+        {
+          "type": "code",
+          "path": "OP",
+          "offset": "0xc000"
+        },
+        {
+          "type": "code",
+          "path": "MUSIC",
+          "offset": "0xd000"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x00",
+          "title": "MUSIC 00"
+        },
+        {
+          "kind": "title",
+          "code": "0x04",
+          "title": "MUSIC 01"
+        },
+        {
+          "kind": "title",
+          "code": "0x07",
+          "title": "MUSIC 02"
+        },
+        {
+          "kind": "title",
+          "code": "0x0a",
+          "title": "MUSIC 03"
+        },
+        {
+          "kind": "title",
+          "code": "0x0d",
+          "title": "MUSIC 04"
+        },
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "MUSIC 05"
+        },
+        {
+          "kind": "comment",
+          "text": "\t<title code=\"0x13\">MUSIC 05</title> "
+        },
+        {
+          "kind": "title",
+          "code": "0x16",
+          "title": "MUSIC 06"
+        },
+        {
+          "kind": "title",
+          "code": "0x19",
+          "title": "MUSIC 07"
+        },
+        {
+          "kind": "title",
+          "code": "0x1f",
+          "title": "MUSIC 08"
+        },
+        {
+          "kind": "title",
+          "code": "0x1c",
+          "title": "演奏停止"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/sein.xml",
+      "source_order": 3958,
+      "archive": "herlesh",
+      "id": "herlesh-opn"
+    },
+    {
+      "title": "[PC-8801] HIDEGER",
+      "driver": {
+        "name": "pc88",
+        "type": "opn",
+        "alias": "ザインソフト",
+        "platform": "NEC PC-8801"
+      },
+      "options": [
+        {
+          "name": "mdata_addr",
+          "value": "0x9000"
+        },
+        {
+          "name": "use_vrtc",
+          "value": "0x01"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "PATCH",
+          "offset": "0x0000"
+        },
+        {
+          "type": "code",
+          "path": "MUS00",
+          "offset": "0x9000"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS00",
+          "offset": "0x00"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS01",
+          "offset": "0x01"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x00000000",
+          "title": "MUSIC 00"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000001",
+          "title": "MUSIC 01"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/sein.xml",
+      "source_order": 3959,
+      "archive": "hideger",
+      "id": "hideger-opn"
+    },
+    {
+      "title": "[PC-8801] Bastard Special",
+      "driver": {
+        "name": "pc88",
+        "type": "opn",
+        "alias": "ザインソフト",
+        "platform": "NEC PC-8801"
+      },
+      "options": [
+        {
+          "name": "use_vrtc",
+          "value": "0x01"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "PATCH",
+          "offset": "0x0000"
+        },
+        {
+          "type": "code",
+          "path": "DRIVER1",
+          "offset": "0x5c00"
+        },
+        {
+          "type": "code",
+          "path": "DRIVER2",
+          "offset": "0x6600"
+        },
+        {
+          "type": "code",
+          "path": "MUSIC",
+          "offset": "0x9900"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x0000000a",
+          "title": "タイトル"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000007",
+          "title": "メインBGM"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000010",
+          "title": "ショップ"
+        },
+        {
+          "kind": "title",
+          "code": "0x0000000d",
+          "title": "ボス"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000004",
+          "title": "ボス撃破"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000001",
+          "title": "ゲームオーバー"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000013",
+          "title": "エンディング"
+        },
+        {
+          "kind": "comment",
+          "text": "\t<title code=\"0x00000016\">無音</title> "
+        },
+        {
+          "kind": "title",
+          "code": "0x010000ff",
+          "title": "EFFECT #01"
+        },
+        {
+          "kind": "title",
+          "code": "0x020000ff",
+          "title": "EFFECT #02"
+        },
+        {
+          "kind": "title",
+          "code": "0x030000ff",
+          "title": "EFFECT #03"
+        },
+        {
+          "kind": "title",
+          "code": "0x040000ff",
+          "title": "EFFECT #04"
+        },
+        {
+          "kind": "title",
+          "code": "0x050000ff",
+          "title": "EFFECT #05"
+        },
+        {
+          "kind": "title",
+          "code": "0x060000ff",
+          "title": "EFFECT #06"
+        },
+        {
+          "kind": "title",
+          "code": "0x070000ff",
+          "title": "EFFECT #07"
+        },
+        {
+          "kind": "title",
+          "code": "0x080000ff",
+          "title": "EFFECT #08"
+        },
+        {
+          "kind": "title",
+          "code": "0x090000ff",
+          "title": "EFFECT #09"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/sein.xml",
+      "source_order": 3960,
+      "archive": "bastards",
+      "id": "bastards-opn"
+    },
+    {
+      "title": "[PC-8801] CLUJU",
+      "driver": {
+        "name": "pc88",
+        "type": "opn",
+        "alias": "ザインソフト",
+        "platform": "NEC PC-8801"
+      },
+      "options": [
+        {
+          "name": "mdata_addr",
+          "value": "0x5d06"
+        },
+        {
+          "name": "use_vrtc",
+          "value": "0x01"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "PATCH",
+          "offset": "0x0000"
+        },
+        {
+          "type": "code",
+          "path": "DRIVER",
+          "offset": "0x5140"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS00",
+          "offset": "0x00"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS01",
+          "offset": "0x01"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS02",
+          "offset": "0x02"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS03",
+          "offset": "0x03"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS04",
+          "offset": "0x04"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS05",
+          "offset": "0x05"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x04000000",
+          "title": "MUSIC 00"
+        },
+        {
+          "kind": "title",
+          "code": "0x04000001",
+          "title": "MUSIC 01"
+        },
+        {
+          "kind": "title",
+          "code": "0x04000002",
+          "title": "MUSIC 02"
+        },
+        {
+          "kind": "title",
+          "code": "0x04000003",
+          "title": "MUSIC 03"
+        },
+        {
+          "kind": "title",
+          "code": "0x04000004",
+          "title": "MUSIC 04"
+        },
+        {
+          "kind": "title",
+          "code": "0x04000005",
+          "title": "MUSIC 05"
+        },
+        {
+          "kind": "title",
+          "code": "0x010000ff",
+          "title": "EFFECT #01"
+        },
+        {
+          "kind": "title",
+          "code": "0x020000ff",
+          "title": "EFFECT #02"
+        },
+        {
+          "kind": "title",
+          "code": "0x030000ff",
+          "title": "EFFECT #03"
+        },
+        {
+          "kind": "title",
+          "code": "0x040000ff",
+          "title": "EFFECT #04"
+        },
+        {
+          "kind": "title",
+          "code": "0x050000ff",
+          "title": "EFFECT #05"
+        },
+        {
+          "kind": "title",
+          "code": "0x060000ff",
+          "title": "EFFECT #06"
+        },
+        {
+          "kind": "title",
+          "code": "0x070000ff",
+          "title": "EFFECT #07"
+        },
+        {
+          "kind": "title",
+          "code": "0x080000ff",
+          "title": "EFFECT #08"
+        },
+        {
+          "kind": "title",
+          "code": "0x090000ff",
+          "title": "EFFECT #09"
+        },
+        {
+          "kind": "title",
+          "code": "0x0a0000ff",
+          "title": "効果音停止"
+        },
+        {
+          "kind": "comment",
+          "text": "\t<title code=\"0x0b0000ff\">効果音停止</title> "
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/sein.xml",
+      "source_order": 3961,
+      "archive": "cluju",
+      "id": "cluju-opn"
+    },
+    {
+      "title": "[PC-8801] トリトーンII ROAD OF DARKNESS",
+      "driver": {
+        "name": "pc88",
+        "type": "opn",
+        "alias": "ザインソフト",
+        "platform": "NEC PC-8801"
+      },
+      "options": [
+        {
+          "name": "mdata_addr",
+          "value": "0xf800"
+        },
+        {
+          "name": "mdata_size",
+          "value": "0x0800"
+        },
+        {
+          "name": "use_vrtc",
+          "value": "0x01"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "PATCH",
+          "offset": "0x0000"
+        },
+        {
+          "type": "code",
+          "path": "DRIVER",
+          "offset": "0x0100"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS00",
+          "offset": "0x00"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS01",
+          "offset": "0x01"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS02",
+          "offset": "0x02"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS03",
+          "offset": "0x03"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS04",
+          "offset": "0x04"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "comment",
+          "text": "\t<title code=\"0x01000000\">MUS00</title> "
+        },
+        {
+          "kind": "title",
+          "code": "0x01000001",
+          "title": "タイトル"
+        },
+        {
+          "kind": "title",
+          "code": "0x01000002",
+          "title": "メインBGM"
+        },
+        {
+          "kind": "title",
+          "code": "0x01000003",
+          "title": "ボス"
+        },
+        {
+          "kind": "title",
+          "code": "0x01000004",
+          "title": "エンディング"
+        },
+        {
+          "kind": "title",
+          "code": "0x000000ff",
+          "title": "EFFECT #00"
+        },
+        {
+          "kind": "title",
+          "code": "0x010000ff",
+          "title": "EFFECT #01"
+        },
+        {
+          "kind": "title",
+          "code": "0x020000ff",
+          "title": "EFFECT #02"
+        },
+        {
+          "kind": "title",
+          "code": "0x030000ff",
+          "title": "EFFECT #03"
+        },
+        {
+          "kind": "title",
+          "code": "0x040000ff",
+          "title": "EFFECT #04"
+        },
+        {
+          "kind": "title",
+          "code": "0x050000ff",
+          "title": "EFFECT #05"
+        },
+        {
+          "kind": "title",
+          "code": "0x060000ff",
+          "title": "EFFECT #06"
+        },
+        {
+          "kind": "title",
+          "code": "0x070000ff",
+          "title": "EFFECT #07"
+        },
+        {
+          "kind": "title",
+          "code": "0x080000ff",
+          "title": "EFFECT #08"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/sein.xml",
+      "source_order": 3962,
+      "archive": "triton2",
+      "id": "triton2-opn"
+    },
+    {
+      "title": "[PC-8801] GALF STREEM",
+      "driver": {
+        "name": "pc88",
+        "type": "opn",
+        "alias": "ザインソフト",
+        "platform": "NEC PC-8801"
+      },
+      "options": [],
+      "assets": [
+        {
+          "type": "code",
+          "path": "PATCH",
+          "offset": "0x0000"
+        },
+        {
+          "type": "code",
+          "path": "PROG",
+          "offset": "0x0100"
+        },
+        {
+          "type": "bgm",
+          "path": "MUSOP1",
+          "offset": "0x00"
+        },
+        {
+          "type": "bgm",
+          "path": "MUSOP2",
+          "offset": "0x01"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS000",
+          "offset": "0x02"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS001",
+          "offset": "0x03"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS002",
+          "offset": "0x04"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS003",
+          "offset": "0x05"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS004",
+          "offset": "0x06"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS005",
+          "offset": "0x07"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS006",
+          "offset": "0x08"
+        },
+        {
+          "type": "bgm",
+          "path": "MUSEND",
+          "offset": "0x09"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0xe0000000",
+          "title": "MUSOP1 :"
+        },
+        {
+          "kind": "title",
+          "code": "0xe0000001",
+          "title": "MUSOP2 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x68000002",
+          "title": "MUS000 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x68000003",
+          "title": "MUS001 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x68000004",
+          "title": "MUS002 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x68000005",
+          "title": "MUS003 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x68000006",
+          "title": "MUS004 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x68000007",
+          "title": "MUS005 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x68000008",
+          "title": "MUS006 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x30000009",
+          "title": "MUSEND :"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/sein.xml",
+      "source_order": 3963,
+      "archive": "galfstrm",
+      "id": "galfstrm-opn"
+    },
+    {
+      "title": "[PC-8801] DIOS(OPNA)",
+      "driver": {
+        "name": "pc88",
+        "type": "opna",
+        "alias": "ザインソフト",
+        "platform": "NEC PC-8801"
+      },
+      "options": [
+        {
+          "name": "mdata_addr",
+          "value": "0x3000"
+        },
+        {
+          "name": "use_pcmx8",
+          "value": "0x01"
+        },
+        {
+          "name": "use_vrtc",
+          "value": "0x01"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "PATCH",
+          "offset": "0x0000"
+        },
+        {
+          "type": "code",
+          "path": "PROG1",
+          "offset": "0x0100"
+        },
+        {
+          "type": "code",
+          "path": "PROG2",
+          "offset": "0x7100"
+        },
+        {
+          "type": "adpcm",
+          "path": "ADPCM",
+          "offset": "0x00000"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS100",
+          "offset": "0x00"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS101",
+          "offset": "0x01"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS102",
+          "offset": "0x02"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS300",
+          "offset": "0x03"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS301",
+          "offset": "0x04"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS302",
+          "offset": "0x05"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS303",
+          "offset": "0x06"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS304",
+          "offset": "0x07"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS305",
+          "offset": "0x08"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS306",
+          "offset": "0x09"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS307",
+          "offset": "0x0a"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS308",
+          "offset": "0x0b"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS600",
+          "offset": "0x0c"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x00000001",
+          "title": "Opening 1"
+        },
+        {
+          "kind": "comment",
+          "text": "\t<title code=\"0x00000002\">Opening 1</title> "
+        },
+        {
+          "kind": "title",
+          "code": "0x00000000",
+          "title": "Opening 2"
+        },
+        {
+          "kind": "comment",
+          "text": "\t<title code=\"0x0000000c\">Opening 2</title> "
+        },
+        {
+          "kind": "title",
+          "code": "0x00000003",
+          "title": "Zack Hunt"
+        },
+        {
+          "kind": "comment",
+          "text": "\t<title code=\"0x00000009\">Zack Hunt</title> "
+        },
+        {
+          "kind": "title",
+          "code": "0x00000004",
+          "title": "Boss"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000005",
+          "title": "Mark Hols"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000006",
+          "title": "Shery Reiban"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000007",
+          "title": "Rod Soul"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000008",
+          "title": "Famie Mart"
+        },
+        {
+          "kind": "title",
+          "code": "0x0000000a",
+          "title": "Sam Chest"
+        },
+        {
+          "kind": "title",
+          "code": "0x0000000b",
+          "title": "Ending"
+        },
+        {
+          "kind": "title",
+          "code": "0x000000fe",
+          "title": "PCMEFC #00"
+        },
+        {
+          "kind": "title",
+          "code": "0x010000fe",
+          "title": "PCMEFC #01"
+        },
+        {
+          "kind": "title",
+          "code": "0x020000fe",
+          "title": "PCMEFC #02"
+        },
+        {
+          "kind": "title",
+          "code": "0x030000fe",
+          "title": "PCMEFC #03"
+        },
+        {
+          "kind": "title",
+          "code": "0x040000fe",
+          "title": "PCMEFC #04"
+        },
+        {
+          "kind": "title",
+          "code": "0x050000fe",
+          "title": "PCMEFC #05"
+        },
+        {
+          "kind": "title",
+          "code": "0x000000ff",
+          "title": "SSGEFC #00"
+        },
+        {
+          "kind": "title",
+          "code": "0x010000ff",
+          "title": "SSGEFC #01"
+        },
+        {
+          "kind": "title",
+          "code": "0x020000ff",
+          "title": "SSGEFC #02"
+        },
+        {
+          "kind": "title",
+          "code": "0x030000ff",
+          "title": "SSGEFC #03"
+        },
+        {
+          "kind": "title",
+          "code": "0x040000ff",
+          "title": "SSGEFC #04"
+        },
+        {
+          "kind": "title",
+          "code": "0x050000ff",
+          "title": "SSGEFC #05"
+        },
+        {
+          "kind": "title",
+          "code": "0x060000ff",
+          "title": "SSGEFC #06"
+        },
+        {
+          "kind": "title",
+          "code": "0x070000ff",
+          "title": "SSGEFC #07"
+        },
+        {
+          "kind": "title",
+          "code": "0x080000ff",
+          "title": "SSGEFC #08"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/sein.xml",
+      "source_order": 3964,
+      "archive": "dios",
+      "id": "dios-opna"
+    },
+    {
+      "title": "[PC-8801] DIOS(OPN)",
+      "driver": {
+        "name": "pc88",
+        "type": "opn",
+        "alias": "ザインソフト",
+        "platform": "NEC PC-8801"
+      },
+      "options": [
+        {
+          "name": "mdata_addr",
+          "value": "0x3000"
+        },
+        {
+          "name": "use_vrtc",
+          "value": "0x01"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "PATCH",
+          "offset": "0x0000"
+        },
+        {
+          "type": "code",
+          "path": "PROG1",
+          "offset": "0x0100"
+        },
+        {
+          "type": "code",
+          "path": "PROG2",
+          "offset": "0x7100"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS100",
+          "offset": "0x00"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS101",
+          "offset": "0x01"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS102",
+          "offset": "0x02"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS300",
+          "offset": "0x03"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS301",
+          "offset": "0x04"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS302",
+          "offset": "0x05"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS303",
+          "offset": "0x06"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS304",
+          "offset": "0x07"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS305",
+          "offset": "0x08"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS306",
+          "offset": "0x09"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS307",
+          "offset": "0x0a"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS308",
+          "offset": "0x0b"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS600",
+          "offset": "0x0c"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x00000001",
+          "title": "Opening 1"
+        },
+        {
+          "kind": "comment",
+          "text": "\t<title code=\"0x00000002\">Opening 1</title> "
+        },
+        {
+          "kind": "title",
+          "code": "0x00000000",
+          "title": "Opening 2"
+        },
+        {
+          "kind": "comment",
+          "text": "\t<title code=\"0x0000000c\">Opening 2</title> "
+        },
+        {
+          "kind": "title",
+          "code": "0x00000003",
+          "title": "Zack Hunt"
+        },
+        {
+          "kind": "comment",
+          "text": "\t<title code=\"0x00000009\">Zack Hunt</title> "
+        },
+        {
+          "kind": "title",
+          "code": "0x00000004",
+          "title": "Boss"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000005",
+          "title": "Mark Hols"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000006",
+          "title": "Shery Reiban"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000007",
+          "title": "Rod Soul"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000008",
+          "title": "Famie Mart"
+        },
+        {
+          "kind": "title",
+          "code": "0x0000000a",
+          "title": "Sam Chest"
+        },
+        {
+          "kind": "title",
+          "code": "0x0000000b",
+          "title": "Ending"
+        },
+        {
+          "kind": "title",
+          "code": "0x000000ff",
+          "title": "SSGEFC #00"
+        },
+        {
+          "kind": "title",
+          "code": "0x010000ff",
+          "title": "SSGEFC #01"
+        },
+        {
+          "kind": "title",
+          "code": "0x020000ff",
+          "title": "SSGEFC #02"
+        },
+        {
+          "kind": "title",
+          "code": "0x030000ff",
+          "title": "SSGEFC #03"
+        },
+        {
+          "kind": "title",
+          "code": "0x040000ff",
+          "title": "SSGEFC #04"
+        },
+        {
+          "kind": "title",
+          "code": "0x050000ff",
+          "title": "SSGEFC #05"
+        },
+        {
+          "kind": "title",
+          "code": "0x060000ff",
+          "title": "SSGEFC #06"
+        },
+        {
+          "kind": "title",
+          "code": "0x070000ff",
+          "title": "SSGEFC #07"
+        },
+        {
+          "kind": "title",
+          "code": "0x080000ff",
+          "title": "SSGEFC #08"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/sein.xml",
+      "source_order": 3965,
+      "archive": "dios",
+      "id": "dios-opn"
+    },
+    {
+      "title": "[PC-8801] ALFAIM(OPNA)",
+      "driver": {
+        "name": "pc88",
+        "type": "opna",
+        "alias": "ザインソフト",
+        "platform": "NEC PC-8801"
+      },
+      "options": [
+        {
+          "name": "mdata_addr",
+          "value": "0x6000"
+        },
+        {
+          "name": "mdata_size",
+          "value": "0x1000"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "PATCH",
+          "offset": "0x0000"
+        },
+        {
+          "type": "code",
+          "path": "PROG",
+          "offset": "0x7100"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS00",
+          "offset": "0x00"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS01",
+          "offset": "0x01"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS02",
+          "offset": "0x02"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS03",
+          "offset": "0x03"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x00",
+          "title": "MUS00 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "MUS01 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x02",
+          "title": "MUS02 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x03",
+          "title": "MUS03 :"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/sein.xml",
+      "source_order": 3966,
+      "archive": "alfaim",
+      "id": "alfaim-opna"
+    },
+    {
+      "title": "[PC-8801] ALFAIM(OPN)",
+      "driver": {
+        "name": "pc88",
+        "type": "opn",
+        "alias": "ザインソフト",
+        "platform": "NEC PC-8801"
+      },
+      "options": [
+        {
+          "name": "mdata_addr",
+          "value": "0x6000"
+        },
+        {
+          "name": "mdata_size",
+          "value": "0x1000"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "PATCH",
+          "offset": "0x0000"
+        },
+        {
+          "type": "code",
+          "path": "PROG",
+          "offset": "0x7100"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS00",
+          "offset": "0x00"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS01",
+          "offset": "0x01"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS02",
+          "offset": "0x02"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS03",
+          "offset": "0x03"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x00",
+          "title": "MUS00 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "MUS01 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x02",
+          "title": "MUS02 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x03",
+          "title": "MUS03 :"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/sein.xml",
+      "source_order": 3967,
+      "archive": "alfaim",
+      "id": "alfaim-opn"
+    },
+    {
+      "title": "[PC-8801] 神戸恋愛物語(OPNA)",
+      "driver": {
+        "name": "pc88",
+        "type": "opna",
+        "alias": "ザインソフト",
+        "platform": "NEC PC-8801"
+      },
+      "options": [
+        {
+          "name": "mdata_addr",
+          "value": "0x6000"
+        },
+        {
+          "name": "mdata_size",
+          "value": "0x1000"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "PATCH",
+          "offset": "0x0000"
+        },
+        {
+          "type": "code",
+          "path": "PROG",
+          "offset": "0x7100"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS100",
+          "offset": "0x00"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS101",
+          "offset": "0x01"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS102",
+          "offset": "0x02"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS103",
+          "offset": "0x03"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS104",
+          "offset": "0x04"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS200",
+          "offset": "0x05"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS600",
+          "offset": "0x06"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x05",
+          "title": "MUS200 : オープニング"
+        },
+        {
+          "kind": "title",
+          "code": "0x02",
+          "title": "MUS102 : 第一章「出会い… そして…」"
+        },
+        {
+          "kind": "title",
+          "code": "0x03",
+          "title": "MUS103 : 第二章「現実…」"
+        },
+        {
+          "kind": "title",
+          "code": "0x04",
+          "title": "MUS104 : 第三章「真実…」"
+        },
+        {
+          "kind": "title",
+          "code": "0x06",
+          "title": "MUS600 : 第四章「離れ…」"
+        },
+        {
+          "kind": "title",
+          "code": "0x00",
+          "title": "MUS100 : 未使用曲"
+        },
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "MUS101 : 未使用曲(ALFAIM)"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/sein.xml",
+      "source_order": 3968,
+      "archive": "kobe",
+      "id": "kobe-opna"
+    },
+    {
+      "title": "[PC-8801] 神戸恋愛物語(OPN)",
+      "driver": {
+        "name": "pc88",
+        "type": "opn",
+        "alias": "ザインソフト",
+        "platform": "NEC PC-8801"
+      },
+      "options": [
+        {
+          "name": "mdata_addr",
+          "value": "0x6000"
+        },
+        {
+          "name": "mdata_size",
+          "value": "0x1000"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "PATCH",
+          "offset": "0x0000"
+        },
+        {
+          "type": "code",
+          "path": "PROG",
+          "offset": "0x7100"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS100",
+          "offset": "0x00"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS101",
+          "offset": "0x01"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS102",
+          "offset": "0x02"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS103",
+          "offset": "0x03"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS104",
+          "offset": "0x04"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS200",
+          "offset": "0x05"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS600",
+          "offset": "0x06"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x05",
+          "title": "MUS200 : オープニング"
+        },
+        {
+          "kind": "title",
+          "code": "0x02",
+          "title": "MUS102 : 第一章「出会い… そして…」"
+        },
+        {
+          "kind": "title",
+          "code": "0x03",
+          "title": "MUS103 : 第二章「現実…」"
+        },
+        {
+          "kind": "title",
+          "code": "0x04",
+          "title": "MUS104 : 第三章「真実…」"
+        },
+        {
+          "kind": "title",
+          "code": "0x06",
+          "title": "MUS600 : 第四章「離れ…」"
+        },
+        {
+          "kind": "title",
+          "code": "0x00",
+          "title": "MUS100 : 未使用曲"
+        },
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "MUS101 : 未使用曲(ALFAIM)"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/sein.xml",
+      "source_order": 3969,
+      "archive": "kobe",
+      "id": "kobe-opn"
+    },
+    {
+      "title": "[PC-8801] TUG OF WAR(OPNA)",
+      "driver": {
+        "name": "pc88",
+        "type": "opna",
+        "alias": "ザインソフト",
+        "platform": "NEC PC-8801"
+      },
+      "options": [
+        {
+          "name": "mdata_addr",
+          "value": "0x2000"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "PATCH",
+          "offset": "0x0000"
+        },
+        {
+          "type": "code",
+          "path": "PROG1",
+          "offset": "0x0100"
+        },
+        {
+          "type": "code",
+          "path": "PROG2",
+          "offset": "0x7100"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS100A",
+          "offset": "0x00"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS101A",
+          "offset": "0x01"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS102A",
+          "offset": "0x02"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS103A",
+          "offset": "0x03"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS104A",
+          "offset": "0x04"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS105A",
+          "offset": "0x05"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS106A",
+          "offset": "0x06"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS107A",
+          "offset": "0x07"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS100B",
+          "offset": "0x08"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS101B",
+          "offset": "0x09"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x00",
+          "title": "MUS100A :"
+        },
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "MUS101A :"
+        },
+        {
+          "kind": "title",
+          "code": "0x02",
+          "title": "MUS102A :"
+        },
+        {
+          "kind": "title",
+          "code": "0x03",
+          "title": "MUS103A :"
+        },
+        {
+          "kind": "title",
+          "code": "0x04",
+          "title": "MUS104A :"
+        },
+        {
+          "kind": "title",
+          "code": "0x05",
+          "title": "MUS105A :"
+        },
+        {
+          "kind": "title",
+          "code": "0x06",
+          "title": "MUS106A :"
+        },
+        {
+          "kind": "title",
+          "code": "0x07",
+          "title": "MUS107A :"
+        },
+        {
+          "kind": "title",
+          "code": "0x08",
+          "title": "MUS100B :"
+        },
+        {
+          "kind": "title",
+          "code": "0x09",
+          "title": "MUS101B :"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/sein.xml",
+      "source_order": 3970,
+      "archive": "tugofwar",
+      "id": "tugofwar-opna"
+    },
+    {
+      "title": "[PC-8801] TUG OF WAR(OPN)",
+      "driver": {
+        "name": "pc88",
+        "type": "opn",
+        "alias": "ザインソフト",
+        "platform": "NEC PC-8801"
+      },
+      "options": [
+        {
+          "name": "mdata_addr",
+          "value": "0x2000"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "PATCH2",
+          "offset": "0x0000"
+        },
+        {
+          "type": "code",
+          "path": "PROG1",
+          "offset": "0x0100"
+        },
+        {
+          "type": "code",
+          "path": "PROG2",
+          "offset": "0x7100"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS100A",
+          "offset": "0x00"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS101A",
+          "offset": "0x01"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS102A",
+          "offset": "0x02"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS103A",
+          "offset": "0x03"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS104A",
+          "offset": "0x04"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS105A",
+          "offset": "0x05"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS106A",
+          "offset": "0x06"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS107A",
+          "offset": "0x07"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS100B",
+          "offset": "0x08"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS101B",
+          "offset": "0x09"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x00",
+          "title": "MUS100A :"
+        },
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "MUS101A :"
+        },
+        {
+          "kind": "title",
+          "code": "0x02",
+          "title": "MUS102A :"
+        },
+        {
+          "kind": "title",
+          "code": "0x03",
+          "title": "MUS103A :"
+        },
+        {
+          "kind": "title",
+          "code": "0x04",
+          "title": "MUS104A :"
+        },
+        {
+          "kind": "title",
+          "code": "0x05",
+          "title": "MUS105A :"
+        },
+        {
+          "kind": "title",
+          "code": "0x06",
+          "title": "MUS106A :"
+        },
+        {
+          "kind": "title",
+          "code": "0x07",
+          "title": "MUS107A :"
+        },
+        {
+          "kind": "title",
+          "code": "0x08",
+          "title": "MUS100B :"
+        },
+        {
+          "kind": "title",
+          "code": "0x09",
+          "title": "MUS101B :"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/sein.xml",
+      "source_order": 3971,
+      "archive": "tugofwar",
+      "id": "tugofwar-opn"
+    },
+    {
+      "title": "[PC-9801] 未来",
+      "driver": {
+        "name": "pc98vx",
+        "type": "opn",
+        "alias": "ザインソフト",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "cpuclock",
+          "value": "1996800"
+        },
+        {
+          "name": "clockmul",
+          "value": "1"
+        },
+        {
+          "name": "bootcs",
+          "value": "0x0800"
+        },
+        {
+          "name": "bootip",
+          "value": "0x0000"
+        },
+        {
+          "name": "dataaddr",
+          "value": "0x17b00"
+        },
+        {
+          "name": "filesize",
+          "value": "0x00300"
+        },
+        {
+          "name": "funcvect",
+          "value": "0x7f"
+        },
+        {
+          "name": "datamax",
+          "value": "0x0b"
+        },
+        {
+          "name": "wstimer",
+          "value": "0x04"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "mirai.bin",
+          "offset": "0x08000"
+        },
+        {
+          "type": "code",
+          "path": "OP",
+          "offset": "0x0c000"
+        },
+        {
+          "type": "code",
+          "path": "PROG",
+          "offset": "0x0f800"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS00",
+          "offset": "0x00"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS00",
+          "offset": "0x01"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS01",
+          "offset": "0x02"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS02",
+          "offset": "0x03"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS03",
+          "offset": "0x04"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS04",
+          "offset": "0x05"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS05",
+          "offset": "0x06"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS06",
+          "offset": "0x07"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS07",
+          "offset": "0x08"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS08",
+          "offset": "0x09"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS09",
+          "offset": "0x0a"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x00",
+          "title": "OP    : オープニング"
+        },
+        {
+          "kind": "title",
+          "code": "0x02",
+          "title": "MUS01 : 地上(惑星1,5)"
+        },
+        {
+          "kind": "title",
+          "code": "0x03",
+          "title": "MUS02 : 地下(惑星1,5,7)"
+        },
+        {
+          "kind": "title",
+          "code": "0x08",
+          "title": "MUS07 : 地上(惑星2,7)"
+        },
+        {
+          "kind": "title",
+          "code": "0x04",
+          "title": "MUS03 : 地下(惑星2,6)"
+        },
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "MUS00 : 地上(惑星3,6)"
+        },
+        {
+          "kind": "title",
+          "code": "0x05",
+          "title": "MUS04 : 地下(惑星3)"
+        },
+        {
+          "kind": "title",
+          "code": "0x06",
+          "title": "MUS05 : 地上(惑星4)"
+        },
+        {
+          "kind": "title",
+          "code": "0x07",
+          "title": "MUS06 : 地下(惑星4)"
+        },
+        {
+          "kind": "title",
+          "code": "0x0a",
+          "title": "MUS09 : ボス"
+        },
+        {
+          "kind": "title",
+          "code": "0x09",
+          "title": "MUS08 : エンディング"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/sein.xml",
+      "source_order": 3972,
+      "archive": "mirai98",
+      "id": "mirai98-opn"
+    },
+    {
+      "title": "[X1] 未来",
+      "driver": {
+        "name": "x1",
+        "type": "psg",
+        "alias": "ザインソフト",
+        "platform": "SHARP X1"
+      },
+      "options": [
+        {
+          "name": "init_pc",
+          "value": "0x0100"
+        },
+        {
+          "name": "mdata_addr",
+          "value": "0xe300"
+        },
+        {
+          "name": "mdata_size",
+          "value": "0x0300"
+        },
+        {
+          "name": "mfile_size",
+          "value": "0x0300"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "PATCH",
+          "offset": "0x0100"
+        },
+        {
+          "type": "code",
+          "path": "OP",
+          "offset": "0x4000"
+        },
+        {
+          "type": "code",
+          "path": "PROG",
+          "offset": "0x78e0"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS00",
+          "offset": "0x01"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS01",
+          "offset": "0x02"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS02",
+          "offset": "0x03"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS03",
+          "offset": "0x04"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS04",
+          "offset": "0x05"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS05",
+          "offset": "0x06"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS06",
+          "offset": "0x07"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS07",
+          "offset": "0x08"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS08",
+          "offset": "0x09"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS09",
+          "offset": "0x0a"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS10",
+          "offset": "0x0b"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS11",
+          "offset": "0x0c"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS12",
+          "offset": "0x0d"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS13",
+          "offset": "0x0e"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS14",
+          "offset": "0x0f"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS15",
+          "offset": "0x10"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS16",
+          "offset": "0x11"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS17",
+          "offset": "0x12"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x00",
+          "title": "OP    : オープニング"
+        },
+        {
+          "kind": "title",
+          "code": "0x0b",
+          "title": "MUS10 : 地上(惑星1,4,7)"
+        },
+        {
+          "kind": "title",
+          "code": "0x0c",
+          "title": "MUS11 : 地下(惑星1,4,7)"
+        },
+        {
+          "kind": "title",
+          "code": "0x0e",
+          "title": "MUS13 : 地上(惑星2,5)"
+        },
+        {
+          "kind": "title",
+          "code": "0x0f",
+          "title": "MUS14 : 地下(惑星2,5)"
+        },
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "MUS15 : 地上(惑星3,6)"
+        },
+        {
+          "kind": "title",
+          "code": "0x0d",
+          "title": "MUS12 : 地下(惑星3,6)"
+        },
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "MUS16 : エンディング"
+        },
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "MUS17 : ボス"
+        },
+        {
+          "kind": "title",
+          "code": "0x02",
+          "title": "MUS01 : 地上(PC88版惑星1,5)   (未使用)"
+        },
+        {
+          "kind": "title",
+          "code": "0x03",
+          "title": "MUS02 : 地下(PC88版惑星1,5,7) (未使用)"
+        },
+        {
+          "kind": "title",
+          "code": "0x08",
+          "title": "MUS07 : 地上(PC88版惑星2,7)   (未使用)"
+        },
+        {
+          "kind": "title",
+          "code": "0x04",
+          "title": "MUS03 : 地下(PC88版惑星2,6)   (未使用)"
+        },
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "MUS00 : 地上(PC88版惑星3,6)   (未使用)"
+        },
+        {
+          "kind": "title",
+          "code": "0x05",
+          "title": "MUS04 : 地下(PC88版惑星3)     (未使用)"
+        },
+        {
+          "kind": "title",
+          "code": "0x06",
+          "title": "MUS05 : 地上(PC88版惑星4)     (未使用)"
+        },
+        {
+          "kind": "title",
+          "code": "0x07",
+          "title": "MUS06 : 地下(PC88版惑星4)     (未使用)"
+        },
+        {
+          "kind": "title",
+          "code": "0x09",
+          "title": "MUS08 : エンディング          (未使用)"
+        },
+        {
+          "kind": "title",
+          "code": "0x0a",
+          "title": "MUS09 : ボス                  (未使用)"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/sein.xml",
+      "source_order": 3973,
+      "archive": "x1mirai",
+      "id": "x1mirai-psg"
+    },
+    {
+      "title": "[X1] トリトーンⅡ ROAD OF DARKNESS(OPM)",
+      "driver": {
+        "name": "x1",
+        "type": "opm",
+        "alias": "ザインソフト",
+        "platform": "SHARP X1"
+      },
+      "options": [
+        {
+          "name": "init_pc",
+          "value": "0xf000"
+        },
+        {
+          "name": "mdata_addr",
+          "value": "0xf800"
+        },
+        {
+          "name": "mdata_size",
+          "value": "0x0400"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "GAME",
+          "offset": "0x0000"
+        },
+        {
+          "type": "code",
+          "path": "IPL",
+          "offset": "0xe000"
+        },
+        {
+          "type": "code",
+          "path": "PATCH",
+          "offset": "0xf000"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS00F",
+          "offset": "0x00"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS01F",
+          "offset": "0x01"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS02F",
+          "offset": "0x02"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS03F",
+          "offset": "0x03"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x01000000",
+          "title": "タイトル"
+        },
+        {
+          "kind": "title",
+          "code": "0x01000001",
+          "title": "メインBGM"
+        },
+        {
+          "kind": "title",
+          "code": "0x01000002",
+          "title": "ボス"
+        },
+        {
+          "kind": "title",
+          "code": "0x01000003",
+          "title": "エンディング"
+        },
+        {
+          "kind": "title",
+          "code": "0x000000ff",
+          "title": "EFFECT #00"
+        },
+        {
+          "kind": "title",
+          "code": "0x010000ff",
+          "title": "EFFECT #01"
+        },
+        {
+          "kind": "title",
+          "code": "0x020000ff",
+          "title": "EFFECT #02"
+        },
+        {
+          "kind": "title",
+          "code": "0x030000ff",
+          "title": "EFFECT #03"
+        },
+        {
+          "kind": "title",
+          "code": "0x040000ff",
+          "title": "EFFECT #04"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/sein.xml",
+      "source_order": 3974,
+      "archive": "x1tritorn2",
+      "id": "x1tritorn2-opm"
+    },
+    {
+      "title": "[X1] トリトーンⅡ ROAD OF DARKNESS(PSG)",
+      "driver": {
+        "name": "x1",
+        "type": "psg",
+        "alias": "ザインソフト",
+        "platform": "SHARP X1"
+      },
+      "options": [
+        {
+          "name": "init_pc",
+          "value": "0xf000"
+        },
+        {
+          "name": "mdata_addr",
+          "value": "0xf800"
+        },
+        {
+          "name": "mdata_size",
+          "value": "0x0400"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "GAME",
+          "offset": "0x0000"
+        },
+        {
+          "type": "code",
+          "path": "PSGDRV",
+          "offset": "0x4d00"
+        },
+        {
+          "type": "code",
+          "path": "IPL",
+          "offset": "0xe000"
+        },
+        {
+          "type": "code",
+          "path": "PATCH",
+          "offset": "0xf000"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS00P",
+          "offset": "0x00"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS01P",
+          "offset": "0x01"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS02P",
+          "offset": "0x02"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS03P",
+          "offset": "0x03"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x01000000",
+          "title": "タイトル"
+        },
+        {
+          "kind": "title",
+          "code": "0x01000001",
+          "title": "メインBGM"
+        },
+        {
+          "kind": "title",
+          "code": "0x01000002",
+          "title": "ボス"
+        },
+        {
+          "kind": "title",
+          "code": "0x01000003",
+          "title": "エンディング"
+        },
+        {
+          "kind": "title",
+          "code": "0x000000ff",
+          "title": "EFFECT #00"
+        },
+        {
+          "kind": "title",
+          "code": "0x010000ff",
+          "title": "EFFECT #01"
+        },
+        {
+          "kind": "title",
+          "code": "0x020000ff",
+          "title": "EFFECT #02"
+        },
+        {
+          "kind": "title",
+          "code": "0x030000ff",
+          "title": "EFFECT #03"
+        },
+        {
+          "kind": "title",
+          "code": "0x040000ff",
+          "title": "EFFECT #04"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/sein.xml",
+      "source_order": 3975,
+      "archive": "x1tritorn2",
+      "id": "x1tritorn2-psg"
+    },
+    {
+      "title": "[X68000] ALFAIM",
+      "driver": {
+        "name": "x68k",
+        "type": "generic",
+        "alias": "ザインソフト",
+        "platform": "SHARP X68000"
+      },
+      "options": [
+        {
+          "name": "opm_mix",
+          "value": "0xc0"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "alf68snd.bin"
+        },
+        {
+          "type": "x",
+          "path": "OPMDRV.X",
+          "offset": "0x10000"
+        },
+        {
+          "type": "x",
+          "path": "X68.X",
+          "offset": "0x20000"
+        },
+        {
+          "type": "x",
+          "path": "ALF.X",
+          "offset": "0x30000"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "00 : オープニング"
+        },
+        {
+          "kind": "title",
+          "code": "0x02",
+          "title": "01 : メインBGM1"
+        },
+        {
+          "kind": "title",
+          "code": "0x03",
+          "title": "02 : メインBGM2"
+        },
+        {
+          "kind": "title",
+          "code": "0x04",
+          "title": "03 : エンディング"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/sein.xml",
+      "source_order": 3976,
+      "archive": "alfaim68snd",
+      "id": "alfaim68snd-generic"
+    },
+    {
+      "title": "[X68000] DIOS",
+      "driver": {
+        "name": "x68k",
+        "type": "generic",
+        "alias": "ザインソフト",
+        "platform": "SHARP X68000"
+      },
+      "options": [
+        {
+          "name": "mfp",
+          "value": "0x01"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "dios68snd.bin",
+          "offset": "0x000000"
+        },
+        {
+          "type": "x",
+          "path": "OPMDRV.X",
+          "offset": "0x010000"
+        },
+        {
+          "type": "x",
+          "path": "OPENING.X",
+          "offset": "0x020000"
+        },
+        {
+          "type": "code",
+          "path": "MUS00.BIN",
+          "offset": "0x030000"
+        },
+        {
+          "type": "code",
+          "path": "MUS01.BIN",
+          "offset": "0x032000"
+        },
+        {
+          "type": "code",
+          "path": "MUS02.BIN",
+          "offset": "0x034000"
+        },
+        {
+          "type": "code",
+          "path": "MUS03.BIN",
+          "offset": "0x036000"
+        },
+        {
+          "type": "code",
+          "path": "MUS04.BIN",
+          "offset": "0x038000"
+        },
+        {
+          "type": "code",
+          "path": "MUS05.BIN",
+          "offset": "0x03a000"
+        },
+        {
+          "type": "code",
+          "path": "MUS06.BIN",
+          "offset": "0x03c000"
+        },
+        {
+          "type": "code",
+          "path": "MUS07.BIN",
+          "offset": "0x03e000"
+        },
+        {
+          "type": "code",
+          "path": "MUS08.BIN",
+          "offset": "0x040000"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "Opening 1"
+        },
+        {
+          "kind": "title",
+          "code": "0x02",
+          "title": "Opening 2"
+        },
+        {
+          "kind": "title",
+          "code": "0x03",
+          "title": "Zack Hunt"
+        },
+        {
+          "kind": "title",
+          "code": "0x04",
+          "title": "Mark Hols"
+        },
+        {
+          "kind": "title",
+          "code": "0x05",
+          "title": "Shery Reiban"
+        },
+        {
+          "kind": "title",
+          "code": "0x06",
+          "title": "Rod Soul"
+        },
+        {
+          "kind": "title",
+          "code": "0x07",
+          "title": "Famie Mart"
+        },
+        {
+          "kind": "title",
+          "code": "0x08",
+          "title": "RSC Duo"
+        },
+        {
+          "kind": "title",
+          "code": "0x09",
+          "title": "Sam Chest"
+        },
+        {
+          "kind": "title",
+          "code": "0x0a",
+          "title": "Boss"
+        },
+        {
+          "kind": "title",
+          "code": "0x0b",
+          "title": "Ending"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/sein.xml",
+      "source_order": 3977,
+      "archive": "dios68snd",
+      "id": "dios68snd-generic"
+    },
+    {
+      "title": "[X68000] Ground Master -失われた宝珠の伝説-",
+      "driver": {
+        "name": "x68k",
+        "type": "generic",
+        "alias": "ザインソフト",
+        "platform": "SHARP X68000"
+      },
+      "options": [
+        {
+          "name": "opm_mix",
+          "value": "0xc0"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "gmast68snd.bin"
+        },
+        {
+          "type": "x",
+          "path": "OPMDRV.X",
+          "offset": "0x010000"
+        },
+        {
+          "type": "x",
+          "path": "ground.x",
+          "offset": "0x030000"
+        },
+        {
+          "type": "code",
+          "path": "opening.OPM",
+          "offset": "0x080000"
+        },
+        {
+          "type": "code",
+          "path": "FIELD.OPM",
+          "offset": "0x084000"
+        },
+        {
+          "type": "code",
+          "path": "TOWN.OPM",
+          "offset": "0x088000"
+        },
+        {
+          "type": "code",
+          "path": "tower.OPM",
+          "offset": "0x08c000"
+        },
+        {
+          "type": "code",
+          "path": "CAVE.OPM",
+          "offset": "0x090000"
+        },
+        {
+          "type": "code",
+          "path": "BATTLE.OPM",
+          "offset": "0x094000"
+        },
+        {
+          "type": "code",
+          "path": "ending.OPM",
+          "offset": "0x098000"
+        },
+        {
+          "type": "code",
+          "path": "staff.OPM",
+          "offset": "0x09c000"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "opening.OPM :"
+        },
+        {
+          "kind": "title",
+          "code": "0x02",
+          "title": "FIELD.OPM   :"
+        },
+        {
+          "kind": "title",
+          "code": "0x03",
+          "title": "TOWN.OPM    :"
+        },
+        {
+          "kind": "title",
+          "code": "0x04",
+          "title": "tower.OPM   :"
+        },
+        {
+          "kind": "title",
+          "code": "0x05",
+          "title": "CAVE.OPM    :"
+        },
+        {
+          "kind": "title",
+          "code": "0x06",
+          "title": "BATTLE.OPM  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x07",
+          "title": "ending.OPM  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x08",
+          "title": "staff.OPM   :"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/sein.xml",
+      "source_order": 3978,
+      "archive": "gmaster68snd",
+      "id": "gmaster68snd-generic"
+    },
+    {
+      "title": "[X68000] REINFORCER",
+      "driver": {
+        "name": "x68k",
+        "type": "generic",
+        "alias": "ザインソフト",
+        "platform": "SHARP X68000"
+      },
+      "options": [
+        {
+          "name": "opm_mix",
+          "value": "0xc0"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "rein68snd.bin"
+        },
+        {
+          "type": "x",
+          "path": "OPMDRV.X",
+          "offset": "0x10000"
+        },
+        {
+          "type": "x",
+          "path": "OPENING.X",
+          "offset": "0x20000"
+        },
+        {
+          "type": "x",
+          "path": "ENDING.X",
+          "offset": "0x30000"
+        },
+        {
+          "type": "code",
+          "path": "MUS/BGM2.X",
+          "offset": "0x40000"
+        },
+        {
+          "type": "code",
+          "path": "MUS/END0.X",
+          "offset": "0x42000"
+        },
+        {
+          "type": "code",
+          "path": "BGM1.X",
+          "offset": "0x44000"
+        },
+        {
+          "type": "code",
+          "path": "BGM2.X",
+          "offset": "0x46000"
+        },
+        {
+          "type": "code",
+          "path": "BGM3.X",
+          "offset": "0x48000"
+        },
+        {
+          "type": "code",
+          "path": "BGM4.X",
+          "offset": "0x4a000"
+        },
+        {
+          "type": "code",
+          "path": "BGM5.X",
+          "offset": "0x4c000"
+        },
+        {
+          "type": "code",
+          "path": "BGM6.X",
+          "offset": "0x4e000"
+        },
+        {
+          "type": "code",
+          "path": "BGM7.X",
+          "offset": "0x50000"
+        },
+        {
+          "type": "code",
+          "path": "BGM8.X",
+          "offset": "0x52000"
+        },
+        {
+          "type": "code",
+          "path": "BGM9.X",
+          "offset": "0x54000"
+        },
+        {
+          "type": "code",
+          "path": "BGM10.X",
+          "offset": "0x56000"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "OPENING.X :"
+        },
+        {
+          "kind": "title",
+          "code": "0x05",
+          "title": "BGM1.X    :"
+        },
+        {
+          "kind": "comment",
+          "text": " BGM1.Xとバイナリ一致\n\t\t\t<title code=\"0x06\">BGM2.X    : </title>\n\t\t\t  "
+        },
+        {
+          "kind": "title",
+          "code": "0x03",
+          "title": "BGM2.X    :"
+        },
+        {
+          "kind": "title",
+          "code": "0x07",
+          "title": "BGM3.X    :"
+        },
+        {
+          "kind": "title",
+          "code": "0x08",
+          "title": "BGM4.X    :"
+        },
+        {
+          "kind": "comment",
+          "text": " BGM4.Xとバイナリ一致\n\t\t\t<title code=\"0x09\">BGM5.X    : </title>\n\t\t\t  "
+        },
+        {
+          "kind": "title",
+          "code": "0x0a",
+          "title": "BGM6.X    :"
+        },
+        {
+          "kind": "comment",
+          "text": " BGM6.Xとバイナリ一致\n\t\t\t<title code=\"0x0b\">BGM7.X    : </title>\n\t\t\t  "
+        },
+        {
+          "kind": "title",
+          "code": "0x0c",
+          "title": "BGM8.X    :"
+        },
+        {
+          "kind": "comment",
+          "text": " BGM8.Xとバイナリ一致\n\t\t\t<title code=\"0x0d\">BGM9.X    : </title>\n\t\t\t  "
+        },
+        {
+          "kind": "title",
+          "code": "0x0e",
+          "title": "BGM10.X   :"
+        },
+        {
+          "kind": "title",
+          "code": "0x04",
+          "title": "END0.X    :"
+        },
+        {
+          "kind": "title",
+          "code": "0x02",
+          "title": "ENDING.X  :"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/sein.xml",
+      "source_order": 3979,
+      "archive": "reinf68snd",
+      "id": "reinf68snd-generic"
+    },
+    {
+      "title": "[X68000] バルーサの復讐",
+      "driver": {
+        "name": "x68k",
+        "type": "generic",
+        "alias": "ザインソフト",
+        "platform": "SHARP X68000"
+      },
+      "options": [
+        {
+          "name": "opm_mix",
+          "value": "0xc0"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "brs68snd.bin"
+        },
+        {
+          "type": "x",
+          "path": "OPMDRV.X",
+          "offset": "0x10000"
+        },
+        {
+          "type": "x",
+          "path": "OPEN.X",
+          "offset": "0x30000"
+        },
+        {
+          "type": "x",
+          "path": "BARUSA.X",
+          "offset": "0x40000"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "OPEN.X   : 00 : オープニング"
+        },
+        {
+          "kind": "title",
+          "code": "0x07",
+          "title": "BARUSA.X : 05 : BGM1 (海/町)"
+        },
+        {
+          "kind": "title",
+          "code": "0x04",
+          "title": "BARUSA.X : 02 : ビジュアルシーン1"
+        },
+        {
+          "kind": "title",
+          "code": "0x03",
+          "title": "BARUSA.X : 01 : ボス"
+        },
+        {
+          "kind": "title",
+          "code": "0x02",
+          "title": "BARUSA.X : 00 : BGM2 (墓場/森)"
+        },
+        {
+          "kind": "title",
+          "code": "0x08",
+          "title": "BARUSA.X : 06 : BGM3 (洞窟/遺跡)"
+        },
+        {
+          "kind": "title",
+          "code": "0x09",
+          "title": "BARUSA.X : 07 : BGM4 (炎/神殿)"
+        },
+        {
+          "kind": "title",
+          "code": "0x0a",
+          "title": "BARUSA.X : 08 : ビジュアルシーン2"
+        },
+        {
+          "kind": "title",
+          "code": "0x05",
+          "title": "BARUSA.X : 03 : バルーサ"
+        },
+        {
+          "kind": "title",
+          "code": "0x0b",
+          "title": "BARUSA.X : 09 : エンディング"
+        },
+        {
+          "kind": "title",
+          "code": "0x06",
+          "title": "BARUSA.X : 04 : ゲームオーバー"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/sein.xml",
+      "source_order": 3980,
+      "archive": "barusa68snd",
+      "id": "barusa68snd-generic"
+    },
+    {
+      "title": "[X68000] 神戸恋愛物語",
+      "driver": {
+        "name": "x68k",
+        "type": "generic",
+        "alias": "ザインソフト",
+        "platform": "SHARP X68000"
+      },
+      "options": [
+        {
+          "name": "opm_mix",
+          "value": "0xc0"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "kobe68snd.bin"
+        },
+        {
+          "type": "x",
+          "path": "OPMDRV.X",
+          "offset": "0x10000"
+        },
+        {
+          "type": "x",
+          "path": "KOBE.X",
+          "offset": "0x30000"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "00 : オープニング"
+        },
+        {
+          "kind": "title",
+          "code": "0x02",
+          "title": "01 : 第一章「出会い… そして…」"
+        },
+        {
+          "kind": "title",
+          "code": "0x03",
+          "title": "02 : 第二章「現実…」"
+        },
+        {
+          "kind": "title",
+          "code": "0x04",
+          "title": "03 : 第三章「真実…」"
+        },
+        {
+          "kind": "title",
+          "code": "0x05",
+          "title": "04 : 第四章「離れ…」"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/sein.xml",
+      "source_order": 3981,
+      "archive": "kobe68snd",
+      "id": "kobe68snd-generic"
+    },
+    {
+      "title": "[MSX] BASTARD",
+      "driver": {
+        "name": "msx",
+        "type": "generic",
+        "alias": "ザインソフト",
+        "platform": "MSX"
+      },
+      "options": [
+        {
+          "name": "init_pc",
+          "value": "0x0400"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "patch",
+          "offset": "0x0400"
+        },
+        {
+          "type": "code",
+          "path": "DRIVER.BIN",
+          "offset": "0x4c00"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x0193",
+          "title": "タイトル"
+        },
+        {
+          "kind": "title",
+          "code": "0x0191",
+          "title": "メインBGM"
+        },
+        {
+          "kind": "title",
+          "code": "0x0198",
+          "title": "ショップ"
+        },
+        {
+          "kind": "title",
+          "code": "0x0195",
+          "title": "ボス"
+        },
+        {
+          "kind": "title",
+          "code": "0x018f",
+          "title": "ボス撃破"
+        },
+        {
+          "kind": "title",
+          "code": "0x018d",
+          "title": "ゲームオーバー"
+        },
+        {
+          "kind": "title",
+          "code": "0x019d",
+          "title": "エンディング"
+        },
+        {
+          "kind": "range",
+          "min": "0x01",
+          "max": "0x0c",
+          "title_format": "SE 0x%02x",
+          "extcode": "1"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/sein.xml",
+      "source_order": 3982,
+      "archive": "bastard_msx",
+      "id": "bastard-msx-generic"
+    },
+    {
+      "title": "[MSX] DIOS(OPLL)",
+      "driver": {
+        "name": "msx",
+        "type": "generic",
+        "alias": "ザインソフト",
+        "platform": "MSX"
+      },
+      "options": [
+        {
+          "name": "init_pc",
+          "value": "0x0400"
+        },
+        {
+          "name": "mdata_addr",
+          "value": "0x9800"
+        },
+        {
+          "name": "mdata_size",
+          "value": "0x0800"
+        },
+        {
+          "name": "mfile_size",
+          "value": "0x0800"
+        },
+        {
+          "name": "use_opll",
+          "value": "0x01"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "patch",
+          "offset": "0x0400"
+        },
+        {
+          "type": "code",
+          "path": "DRIVER.BIN",
+          "offset": "0x4000"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS20.BIN",
+          "offset": "0x00"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS21.BIN",
+          "offset": "0x01"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS22.BIN",
+          "offset": "0x02"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS23.BIN",
+          "offset": "0x03"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS24.BIN",
+          "offset": "0x04"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS25.BIN",
+          "offset": "0x05"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS26.BIN",
+          "offset": "0x06"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS27.BIN",
+          "offset": "0x07"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x100",
+          "title": "Zack Hunt"
+        },
+        {
+          "kind": "title",
+          "code": "0x101",
+          "title": "Boss"
+        },
+        {
+          "kind": "title",
+          "code": "0x102",
+          "title": "Mark Hols"
+        },
+        {
+          "kind": "title",
+          "code": "0x103",
+          "title": "Shery Reiban"
+        },
+        {
+          "kind": "title",
+          "code": "0x104",
+          "title": "Rod Soul"
+        },
+        {
+          "kind": "title",
+          "code": "0x105",
+          "title": "Famie Mart"
+        },
+        {
+          "kind": "title",
+          "code": "0x106",
+          "title": "RSC Duo"
+        },
+        {
+          "kind": "title",
+          "code": "0x107",
+          "title": "Sam Chest"
+        },
+        {
+          "kind": "range",
+          "min": "0x00",
+          "max": "0x08",
+          "title_format": "SE 0x%02x",
+          "extcode": "1"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/sein.xml",
+      "source_order": 3983,
+      "archive": "dios_msx",
+      "id": "dios-msx-generic"
+    },
+    {
+      "title": "[MSX] DIOS(PSG)",
+      "driver": {
+        "name": "msx",
+        "type": "generic",
+        "alias": "ザインソフト",
+        "platform": "MSX"
+      },
+      "options": [
+        {
+          "name": "init_pc",
+          "value": "0x0400"
+        },
+        {
+          "name": "mdata_addr",
+          "value": "0x9800"
+        },
+        {
+          "name": "mdata_size",
+          "value": "0x0800"
+        },
+        {
+          "name": "mfile_size",
+          "value": "0x0800"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "patch",
+          "offset": "0x0400"
+        },
+        {
+          "type": "code",
+          "path": "DRIVER.BIN",
+          "offset": "0x4000"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS20.BIN",
+          "offset": "0x00"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS21.BIN",
+          "offset": "0x01"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS22.BIN",
+          "offset": "0x02"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS23.BIN",
+          "offset": "0x03"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS24.BIN",
+          "offset": "0x04"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS25.BIN",
+          "offset": "0x05"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS26.BIN",
+          "offset": "0x06"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS27.BIN",
+          "offset": "0x07"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x100",
+          "title": "Zack Hunt"
+        },
+        {
+          "kind": "title",
+          "code": "0x101",
+          "title": "Boss"
+        },
+        {
+          "kind": "title",
+          "code": "0x102",
+          "title": "Mark Hols"
+        },
+        {
+          "kind": "title",
+          "code": "0x103",
+          "title": "Shery Reiban"
+        },
+        {
+          "kind": "title",
+          "code": "0x104",
+          "title": "Rod Soul"
+        },
+        {
+          "kind": "title",
+          "code": "0x105",
+          "title": "Famie Mart"
+        },
+        {
+          "kind": "title",
+          "code": "0x106",
+          "title": "RSC Duo"
+        },
+        {
+          "kind": "title",
+          "code": "0x107",
+          "title": "Sam Chest"
+        },
+        {
+          "kind": "range",
+          "min": "0x00",
+          "max": "0x08",
+          "title_format": "SE 0x%02x",
+          "extcode": "1"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/sein.xml",
+      "source_order": 3984,
+      "archive": "dios_msx",
+      "id": "dios-msx-generic-2"
+    },
+    {
+      "title": "[MSX] GALF STREEM(OPLL)",
+      "driver": {
+        "name": "msx",
+        "type": "generic",
+        "alias": "ザインソフト",
+        "platform": "MSX"
+      },
+      "options": [
+        {
+          "name": "init_pc",
+          "value": "0x0400"
+        },
+        {
+          "name": "mdata_addr",
+          "value": "0xd000"
+        },
+        {
+          "name": "mdata_size",
+          "value": "0x0800"
+        },
+        {
+          "name": "mfile_size",
+          "value": "0x0800"
+        },
+        {
+          "name": "use_opll",
+          "value": "0x01"
+        },
+        {
+          "name": "psg_mix",
+          "value": "0x30"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "patch",
+          "offset": "0x0400"
+        },
+        {
+          "type": "code",
+          "path": "DRIVER.BIN",
+          "offset": "0x4000"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS00.BIN",
+          "offset": "0x00"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS01.BIN",
+          "offset": "0x01"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS02.BIN",
+          "offset": "0x02"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS03.BIN",
+          "offset": "0x03"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS04.BIN",
+          "offset": "0x04"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS05.BIN",
+          "offset": "0x05"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS06.BIN",
+          "offset": "0x06"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS07.BIN",
+          "offset": "0x07"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "range",
+          "min": "0x00",
+          "max": "0x07",
+          "title_format": "BGM 0x%02x",
+          "extcode": "1"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/sein.xml",
+      "source_order": 3985,
+      "archive": "galfstrm_msx",
+      "id": "galfstrm-msx-generic"
+    },
+    {
+      "title": "[MSX] GALF STREEM(PSG)",
+      "driver": {
+        "name": "msx",
+        "type": "generic",
+        "alias": "ザインソフト",
+        "platform": "MSX"
+      },
+      "options": [
+        {
+          "name": "init_pc",
+          "value": "0x0400"
+        },
+        {
+          "name": "mdata_addr",
+          "value": "0xd000"
+        },
+        {
+          "name": "mdata_size",
+          "value": "0x0800"
+        },
+        {
+          "name": "mfile_size",
+          "value": "0x0800"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "patch",
+          "offset": "0x0400"
+        },
+        {
+          "type": "code",
+          "path": "DRIVER.BIN",
+          "offset": "0x4000"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS00.BIN",
+          "offset": "0x00"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS01.BIN",
+          "offset": "0x01"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS02.BIN",
+          "offset": "0x02"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS03.BIN",
+          "offset": "0x03"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS04.BIN",
+          "offset": "0x04"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS05.BIN",
+          "offset": "0x05"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS06.BIN",
+          "offset": "0x06"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS07.BIN",
+          "offset": "0x07"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "range",
+          "min": "0x00",
+          "max": "0x07",
+          "title_format": "BGM 0x%02x",
+          "extcode": "1"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/sein.xml",
+      "source_order": 3986,
+      "archive": "galfstrm_msx",
+      "id": "galfstrm-msx-generic-2"
+    },
+    {
+      "title": "[MSX] HIDEGER(OPLL)",
+      "driver": {
+        "name": "msx",
+        "type": "generic",
+        "alias": "ザインソフト",
+        "platform": "MSX"
+      },
+      "options": [
+        {
+          "name": "init_pc",
+          "value": "0x0400"
+        },
+        {
+          "name": "use_opll",
+          "value": "0x01"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "patch",
+          "offset": "0x0400"
+        },
+        {
+          "type": "code",
+          "path": "OPLL.BIN",
+          "offset": "0xb000"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "タイトル"
+        },
+        {
+          "kind": "title",
+          "code": "0x02",
+          "title": "BGM 02"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/sein.xml",
+      "source_order": 3987,
+      "archive": "hideger_msx",
+      "id": "hideger-msx-generic"
+    },
+    {
+      "title": "[MSX] HIDEGER(PSG)",
+      "driver": {
+        "name": "msx",
+        "type": "generic",
+        "alias": "ザインソフト",
+        "platform": "MSX"
+      },
+      "options": [
+        {
+          "name": "init_pc",
+          "value": "0x0400"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "patch",
+          "offset": "0x0400"
+        },
+        {
+          "type": "code",
+          "path": "PSG.BIN",
+          "offset": "0xb000"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "タイトル"
+        },
+        {
+          "kind": "title",
+          "code": "0x02",
+          "title": "BGM 02"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/sein.xml",
+      "source_order": 3988,
+      "archive": "hideger_msx",
+      "id": "hideger-msx-generic-2"
+    },
+    {
+      "title": "[MSX] JOTUNN",
+      "driver": {
+        "name": "msx",
+        "type": "generic",
+        "alias": "ザインソフト",
+        "platform": "MSX"
+      },
+      "options": [
+        {
+          "name": "init_pc",
+          "value": "0x0400"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "patch",
+          "offset": "0x0400"
+        },
+        {
+          "type": "code",
+          "path": "DRIVER.BIN",
+          "offset": "0x4000"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x04",
+          "title": "タイトル"
+        },
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "メインBGM"
+        },
+        {
+          "kind": "title",
+          "code": "0x02",
+          "title": "店/教会"
+        },
+        {
+          "kind": "title",
+          "code": "0x03",
+          "title": "戦闘"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/sein.xml",
+      "source_order": 3989,
+      "archive": "jotunn_msx",
+      "id": "jotunn-msx-generic"
+    },
+    {
+      "title": "[MSX] トリトーンII ROAD OF DARKNESS(OPLL)",
+      "driver": {
+        "name": "msx",
+        "type": "generic",
+        "alias": "ザインソフト",
+        "platform": "MSX"
+      },
+      "options": [
+        {
+          "name": "init_pc",
+          "value": "0x0400"
+        },
+        {
+          "name": "mdata_addr",
+          "value": "0xb800"
+        },
+        {
+          "name": "mdata_size",
+          "value": "0x0400"
+        },
+        {
+          "name": "mfile_size",
+          "value": "0x0400"
+        },
+        {
+          "name": "use_opll",
+          "value": "0x01"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "patch",
+          "offset": "0x0400"
+        },
+        {
+          "type": "code",
+          "path": "FMDRV.BIN",
+          "offset": "0x8000"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS0.BIN",
+          "offset": "0x00"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS1.BIN",
+          "offset": "0x01"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS2.BIN",
+          "offset": "0x02"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS3.BIN",
+          "offset": "0x03"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "タイトル"
+        },
+        {
+          "kind": "title",
+          "code": "0x03",
+          "title": "メインBGM"
+        },
+        {
+          "kind": "title",
+          "code": "0x00",
+          "title": "ボス"
+        },
+        {
+          "kind": "title",
+          "code": "0x02",
+          "title": "エンディング"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/sein.xml",
+      "source_order": 3990,
+      "archive": "triton2_msx",
+      "id": "triton2-msx-generic"
+    },
+    {
+      "title": "[MSX] トリトーンII ROAD OF DARKNESS(PSG)",
+      "driver": {
+        "name": "msx",
+        "type": "generic",
+        "alias": "ザインソフト",
+        "platform": "MSX"
+      },
+      "options": [
+        {
+          "name": "init_pc",
+          "value": "0x0400"
+        },
+        {
+          "name": "mdata_addr",
+          "value": "0xb800"
+        },
+        {
+          "name": "mdata_size",
+          "value": "0x0400"
+        },
+        {
+          "name": "mfile_size",
+          "value": "0x0400"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "patch2",
+          "offset": "0x0400"
+        },
+        {
+          "type": "code",
+          "path": "PSGDRV.BIN",
+          "offset": "0x8000"
+        },
+        {
+          "type": "code",
+          "path": "TONE.BIN",
+          "offset": "0x9E80"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS0.BIN",
+          "offset": "0x00"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS1.BIN",
+          "offset": "0x01"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS2.BIN",
+          "offset": "0x02"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS3.BIN",
+          "offset": "0x03"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "タイトル"
+        },
+        {
+          "kind": "title",
+          "code": "0x03",
+          "title": "メインBGM"
+        },
+        {
+          "kind": "title",
+          "code": "0x00",
+          "title": "ボス"
+        },
+        {
+          "kind": "title",
+          "code": "0x02",
+          "title": "エンディング"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/sein.xml",
+      "source_order": 3991,
+      "archive": "triton2_msx",
+      "id": "triton2-msx-generic-2"
+    },
+    {
+      "title": "[MSX] 魔神宮",
+      "driver": {
+        "name": "msx",
+        "type": "generic",
+        "alias": "ザインソフト",
+        "platform": "MSX"
+      },
+      "options": [
+        {
+          "name": "init_pc",
+          "value": "0x0400"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "patch",
+          "offset": "0x0400"
+        },
+        {
+          "type": "code",
+          "path": "DRIVER.BIN",
+          "offset": "0x4000"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "タイトル"
+        },
+        {
+          "kind": "title",
+          "code": "0x02",
+          "title": "メインBGM"
+        },
+        {
+          "kind": "title",
+          "code": "0x03",
+          "title": "街"
+        },
+        {
+          "kind": "title",
+          "code": "0x05",
+          "title": "戦闘"
+        },
+        {
+          "kind": "title",
+          "code": "0x04",
+          "title": "塔"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/sein.xml",
+      "source_order": 3992,
+      "archive": "majinkyu_msx",
+      "id": "majinkyu-msx-generic"
+    }
+  ]
+}

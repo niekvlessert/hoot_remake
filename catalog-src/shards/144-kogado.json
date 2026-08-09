@@ -1,0 +1,7028 @@
+{
+  "format": "hoot-catalog-shard",
+  "version": 1,
+  "source_file": "xml/kogado.xml",
+  "date": "2005/09/25",
+  "comments": [
+    " //工画堂スタジオ "
+  ],
+  "games": [
+    {
+      "title": "[PC-8801] 覇邪の封印",
+      "driver": {
+        "name": "pc88",
+        "type": "opn",
+        "alias": "工画堂スタジオ",
+        "platform": "NEC PC-8801"
+      },
+      "options": [
+        {
+          "name": "use_rtc",
+          "value": "0x01"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "PATCH",
+          "offset": "0x0000"
+        },
+        {
+          "type": "code",
+          "path": "MUSIC",
+          "offset": "0x8000"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x00",
+          "title": "ENDING"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/kogado.xml",
+      "source_order": 2889,
+      "archive": "haja",
+      "id": "haja-opn"
+    },
+    {
+      "title": "[PC-8801] へらくれす",
+      "driver": {
+        "name": "pc88",
+        "type": "opn",
+        "alias": "工画堂スタジオ",
+        "platform": "NEC PC-8801"
+      },
+      "options": [
+        {
+          "name": "mdata_addr",
+          "value": "0xb000"
+        },
+        {
+          "name": "mdata_size",
+          "value": "0x3000"
+        },
+        {
+          "name": "mfile_size",
+          "value": "0x3000"
+        },
+        {
+          "name": "baseclock",
+          "value": "0x04"
+        },
+        {
+          "name": "use_vrtc",
+          "value": "0x01"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "PATCH",
+          "offset": "0x0000"
+        },
+        {
+          "type": "code",
+          "path": "PROG",
+          "offset": "0xb000"
+        },
+        {
+          "type": "bgm",
+          "path": "PROG",
+          "offset": "0x00"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x00000000",
+          "title": "ROUND START"
+        },
+        {
+          "kind": "title",
+          "code": "0x01000000",
+          "title": "BGM"
+        },
+        {
+          "kind": "title",
+          "code": "0x02000000",
+          "title": "MISS"
+        },
+        {
+          "kind": "title",
+          "code": "0x03000000",
+          "title": "??"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/kogado.xml",
+      "source_order": 2890,
+      "archive": "hercules",
+      "id": "hercules-opn"
+    },
+    {
+      "title": "[PC-8801] PSYCHIC WAR - COSMIC SOLDIER 2 -",
+      "driver": {
+        "name": "pc88",
+        "type": "opn",
+        "alias": "工画堂スタジオ",
+        "platform": "NEC PC-8801"
+      },
+      "options": [
+        {
+          "name": "mdata_addr",
+          "value": "0xf000"
+        },
+        {
+          "name": "mdata_size",
+          "value": "0x1000"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "PATCH",
+          "offset": "0x0000"
+        },
+        {
+          "type": "code",
+          "path": "DRIVER",
+          "offset": "0xe000"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS00",
+          "offset": "0x00"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS01",
+          "offset": "0x01"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x00000000",
+          "title": "オープニング 「起の序曲」"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000001",
+          "title": "アンドロイドのテーマ ～「君にはチャイナ服がよく似合う」"
+        },
+        {
+          "kind": "title",
+          "code": "0x02000001",
+          "title": "帝国のテーマ 「悪意の象徴」"
+        },
+        {
+          "kind": "title",
+          "code": "0x03000001",
+          "title": "戦闘のテーマ 「サイキック・バトル」"
+        },
+        {
+          "kind": "title",
+          "code": "0x01000001",
+          "title": "レクイエム 「君よ静かに眠れ」"
+        },
+        {
+          "kind": "title",
+          "code": "0x04000001",
+          "title": "エンディング 「新たなる予感」"
+        },
+        {
+          "kind": "title",
+          "code": "0x01000000",
+          "title": "ばんざい! 「大団円」"
+        },
+        {
+          "kind": "title",
+          "code": "0x05000001",
+          "title": "警報"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/kogado.xml",
+      "source_order": 2891,
+      "archive": "psywar",
+      "id": "psywar-opn"
+    },
+    {
+      "title": "[PC-8801] 原宿AFTeR DARK",
+      "driver": {
+        "name": "pc88",
+        "type": "opn",
+        "alias": "工画堂スタジオ",
+        "platform": "NEC PC-8801"
+      },
+      "options": [
+        {
+          "name": "init_pc",
+          "value": "0x8000"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "PROG",
+          "offset": "0x0000"
+        },
+        {
+          "type": "code",
+          "path": "PATCH",
+          "offset": "0x8000"
+        },
+        {
+          "type": "code",
+          "path": "MUSIC",
+          "offset": "0xe000"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x00",
+          "title": "オープニング"
+        },
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "聞き込み"
+        },
+        {
+          "kind": "title",
+          "code": "0x02",
+          "title": "捜査"
+        },
+        {
+          "kind": "title",
+          "code": "0x03",
+          "title": "告白"
+        },
+        {
+          "kind": "title",
+          "code": "0x04",
+          "title": "出張捜査"
+        },
+        {
+          "kind": "title",
+          "code": "0x05",
+          "title": "渋谷署"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/kogado.xml",
+      "source_order": 2892,
+      "archive": "aftdark",
+      "id": "aftdark-opn"
+    },
+    {
+      "title": "[PC-8801] アルギースの翼",
+      "driver": {
+        "name": "pc88",
+        "type": "opn",
+        "alias": "工画堂スタジオ",
+        "platform": "NEC PC-8801"
+      },
+      "options": [
+        {
+          "name": "mdata_addr",
+          "value": "0xf000"
+        },
+        {
+          "name": "mdata_size",
+          "value": "0x1000"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "PATCH",
+          "offset": "0x0000"
+        },
+        {
+          "type": "code",
+          "path": "DRIVER",
+          "offset": "0xe000"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS00",
+          "offset": "0x00"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS01",
+          "offset": "0x01"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS02",
+          "offset": "0x02"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS03",
+          "offset": "0x03"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS04",
+          "offset": "0x04"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS05",
+          "offset": "0x05"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x00000000",
+          "title": "00-0 : オープニング"
+        },
+        {
+          "kind": "comment",
+          "text": "\t<title code=\"0x01000000\">00-1 : エンディング</title> "
+        },
+        {
+          "kind": "comment",
+          "text": "\t<title code=\"0x02000000\">00-2 : スタッフロール</title> "
+        },
+        {
+          "kind": "title",
+          "code": "0x00000001",
+          "title": "01-0 : 店/メニュー"
+        },
+        {
+          "kind": "title",
+          "code": "0x01000001",
+          "title": "01-1 : 戦闘"
+        },
+        {
+          "kind": "title",
+          "code": "0x02000001",
+          "title": "01-2 : カズノヒロブ"
+        },
+        {
+          "kind": "title",
+          "code": "0x03000001",
+          "title": "01-3 : フィールド"
+        },
+        {
+          "kind": "title",
+          "code": "0x04000001",
+          "title": "01-4 : 塔"
+        },
+        {
+          "kind": "comment",
+          "text": "\t<title code=\"0x00000002\">02-0 : 店/メニュー</title> "
+        },
+        {
+          "kind": "comment",
+          "text": "\t<title code=\"0x01000002\">02-1 : 戦闘</title> "
+        },
+        {
+          "kind": "comment",
+          "text": "\t<title code=\"0x02000002\">02-2 : カズノヒロブ</title> "
+        },
+        {
+          "kind": "title",
+          "code": "0x03000002",
+          "title": "02-3 : アテパル城"
+        },
+        {
+          "kind": "title",
+          "code": "0x04000002",
+          "title": "02-4 : 天空の王宮"
+        },
+        {
+          "kind": "title",
+          "code": "0x05000002",
+          "title": "02-5 : 妖獣の城"
+        },
+        {
+          "kind": "comment",
+          "text": "\t<title code=\"0x00000003\">03-0 : 店/メニュー</title> "
+        },
+        {
+          "kind": "comment",
+          "text": "\t<title code=\"0x01000003\">03-1 : 戦闘</title> "
+        },
+        {
+          "kind": "comment",
+          "text": "\t<title code=\"0x02000003\">03-2 : カズノヒロブ</title> "
+        },
+        {
+          "kind": "title",
+          "code": "0x03000003",
+          "title": "03-3 : 城"
+        },
+        {
+          "kind": "title",
+          "code": "0x04000003",
+          "title": "03-4 : 天空界"
+        },
+        {
+          "kind": "comment",
+          "text": "\t<title code=\"0x00000004\">04-0 : 店/メニュー</title> "
+        },
+        {
+          "kind": "title",
+          "code": "0x01000004",
+          "title": "04-1 : ユーザーディスク作成/ゲームオーバー"
+        },
+        {
+          "kind": "comment",
+          "text": "\t<title code=\"0x02000004\">04-2 : スタッフロール</title> "
+        },
+        {
+          "kind": "title",
+          "code": "0x03000004",
+          "title": "04-3 : 街"
+        },
+        {
+          "kind": "comment",
+          "text": "\t<title code=\"0x00000005\">05-0 : オープニング</title> "
+        },
+        {
+          "kind": "title",
+          "code": "0x01000005",
+          "title": "05-1 : エンディング"
+        },
+        {
+          "kind": "title",
+          "code": "0x02000005",
+          "title": "05-2 : スタッフロール"
+        },
+        {
+          "kind": "title",
+          "code": "0x03000005",
+          "title": "05-3 :"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/kogado.xml",
+      "source_order": 2893,
+      "archive": "arugies",
+      "id": "arugies-opn"
+    },
+    {
+      "title": "[PC-8801] 時空の花嫁",
+      "driver": {
+        "name": "pc88",
+        "type": "opn",
+        "alias": "工画堂スタジオ",
+        "platform": "NEC PC-8801"
+      },
+      "options": [
+        {
+          "name": "mdata_addr",
+          "value": "0xf000"
+        },
+        {
+          "name": "mdata_size",
+          "value": "0x1000"
+        },
+        {
+          "name": "init_pc",
+          "value": "0x8000"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "PATCH",
+          "offset": "0x8000"
+        },
+        {
+          "type": "code",
+          "path": "DRIVER.BIN",
+          "offset": "0x0000"
+        },
+        {
+          "type": "bgm",
+          "path": "MDAT1",
+          "offset": "0x00"
+        },
+        {
+          "type": "bgm",
+          "path": "MDAT2",
+          "offset": "0x01"
+        },
+        {
+          "type": "bgm",
+          "path": "MDAT3",
+          "offset": "0x02"
+        },
+        {
+          "type": "bgm",
+          "path": "MDAT4",
+          "offset": "0x03"
+        },
+        {
+          "type": "bgm",
+          "path": "MDAT5",
+          "offset": "0x04"
+        },
+        {
+          "type": "bgm",
+          "path": "MDAT6",
+          "offset": "0x05"
+        },
+        {
+          "type": "bgm",
+          "path": "MDAT7",
+          "offset": "0x06"
+        },
+        {
+          "type": "bgm",
+          "path": "MDAT8",
+          "offset": "0x07"
+        },
+        {
+          "type": "bgm",
+          "path": "MDAT9",
+          "offset": "0x08"
+        },
+        {
+          "type": "bgm",
+          "path": "MDAT10",
+          "offset": "0x09"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x00",
+          "title": "デモ曲"
+        },
+        {
+          "kind": "title",
+          "code": "0x06",
+          "title": "タイトル"
+        },
+        {
+          "kind": "title",
+          "code": "0x08",
+          "title": "街"
+        },
+        {
+          "kind": "title",
+          "code": "0x02",
+          "title": "キャンプ"
+        },
+        {
+          "kind": "title",
+          "code": "0x04",
+          "title": "戦闘"
+        },
+        {
+          "kind": "title",
+          "code": "0x05",
+          "title": "ゲームオーバー"
+        },
+        {
+          "kind": "title",
+          "code": "0x09",
+          "title": "タイムマシン"
+        },
+        {
+          "kind": "title",
+          "code": "0x03",
+          "title": "ラストダンジョン"
+        },
+        {
+          "kind": "title",
+          "code": "0x07",
+          "title": "ラスボス前"
+        },
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "エンディング"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/kogado.xml",
+      "source_order": 2894,
+      "archive": "jiku",
+      "id": "jiku-opn"
+    },
+    {
+      "title": "[PC-8801] 魔晶伝紀ラ・ヴァルー",
+      "driver": {
+        "name": "pc88",
+        "type": "opn",
+        "alias": "工画堂スタジオ",
+        "platform": "NEC PC-8801"
+      },
+      "options": [
+        {
+          "name": "mdata_addr",
+          "value": "0xf000"
+        },
+        {
+          "name": "mdata_size",
+          "value": "0x1000"
+        },
+        {
+          "name": "init_pc",
+          "value": "0x8000"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "PATCH",
+          "offset": "0x8000"
+        },
+        {
+          "type": "code",
+          "path": "DRIVER.BIN",
+          "offset": "0x0000"
+        },
+        {
+          "type": "bgm",
+          "path": "LDAT1",
+          "offset": "0x00"
+        },
+        {
+          "type": "bgm",
+          "path": "LDAT2",
+          "offset": "0x01"
+        },
+        {
+          "type": "bgm",
+          "path": "LDAT3",
+          "offset": "0x02"
+        },
+        {
+          "type": "bgm",
+          "path": "LDAT4",
+          "offset": "0x03"
+        },
+        {
+          "type": "bgm",
+          "path": "LDAT5",
+          "offset": "0x04"
+        },
+        {
+          "type": "bgm",
+          "path": "LDAT6",
+          "offset": "0x05"
+        },
+        {
+          "type": "bgm",
+          "path": "LDAT7",
+          "offset": "0x06"
+        },
+        {
+          "type": "bgm",
+          "path": "LDAT8",
+          "offset": "0x07"
+        },
+        {
+          "type": "bgm",
+          "path": "LDAT9",
+          "offset": "0x08"
+        },
+        {
+          "type": "bgm",
+          "path": "LDAT10",
+          "offset": "0x09"
+        },
+        {
+          "type": "bgm",
+          "path": "LDAT11",
+          "offset": "0x0a"
+        },
+        {
+          "type": "bgm",
+          "path": "LDAT12",
+          "offset": "0x0b"
+        },
+        {
+          "type": "bgm",
+          "path": "LDAT13",
+          "offset": "0x0c"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x06",
+          "title": "工画堂ロゴ/アイテムゲット"
+        },
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "デモ/ゲームオーバー"
+        },
+        {
+          "kind": "title",
+          "code": "0x0b",
+          "title": "タイトル"
+        },
+        {
+          "kind": "title",
+          "code": "0x00",
+          "title": "村/フィールド"
+        },
+        {
+          "kind": "title",
+          "code": "0x05",
+          "title": "洞窟"
+        },
+        {
+          "kind": "title",
+          "code": "0x07",
+          "title": "ソームリエの塔"
+        },
+        {
+          "kind": "title",
+          "code": "0x0c",
+          "title": "荒野"
+        },
+        {
+          "kind": "title",
+          "code": "0x09",
+          "title": "鉱山"
+        },
+        {
+          "kind": "title",
+          "code": "0x0a",
+          "title": "水の城"
+        },
+        {
+          "kind": "title",
+          "code": "0x08",
+          "title": "ザンゼリアン城"
+        },
+        {
+          "kind": "title",
+          "code": "0x03",
+          "title": "戦闘"
+        },
+        {
+          "kind": "title",
+          "code": "0x04",
+          "title": "キャンプ"
+        },
+        {
+          "kind": "title",
+          "code": "0x02",
+          "title": "エンディング"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/kogado.xml",
+      "source_order": 2895,
+      "archive": "lav",
+      "id": "lav-opn"
+    },
+    {
+      "title": "[PC-8801] NAVITUNE ドラゴン航海記",
+      "driver": {
+        "name": "pc88",
+        "type": "opn",
+        "alias": "工画堂スタジオ",
+        "platform": "NEC PC-8801"
+      },
+      "options": [
+        {
+          "name": "mdata_addr",
+          "value": "0x7700"
+        },
+        {
+          "name": "mfile_size",
+          "value": "0x4000"
+        },
+        {
+          "name": "init_pc",
+          "value": "0x0100"
+        },
+        {
+          "name": "showfm3ex",
+          "value": "0x01"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "PATCH",
+          "offset": "0x0100"
+        },
+        {
+          "type": "code",
+          "path": "m2.o",
+          "offset": "0x1000"
+        },
+        {
+          "type": "code",
+          "path": "naviprg.bin",
+          "offset": "0x4d00"
+        },
+        {
+          "type": "code",
+          "path": "navimus.o",
+          "offset": "0x7700"
+        },
+        {
+          "type": "code",
+          "path": "naviprg.bin",
+          "offset": "0xc000"
+        },
+        {
+          "type": "bgm",
+          "path": "navimus.o",
+          "offset": "0x00"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x00000000",
+          "title": "BGM 00"
+        },
+        {
+          "kind": "title",
+          "code": "0x00046d00",
+          "title": "BGM 01"
+        },
+        {
+          "kind": "title",
+          "code": "0x01079a00",
+          "title": "BGM 02"
+        },
+        {
+          "kind": "title",
+          "code": "0x000a3a00",
+          "title": "BGM 03"
+        },
+        {
+          "kind": "title",
+          "code": "0x000fcb00",
+          "title": "BGM 04"
+        },
+        {
+          "kind": "title",
+          "code": "0x00132700",
+          "title": "BGM 05"
+        },
+        {
+          "kind": "title",
+          "code": "0x01160600",
+          "title": "BGM 06"
+        },
+        {
+          "kind": "title",
+          "code": "0x001bfd00",
+          "title": "BGM 07"
+        },
+        {
+          "kind": "title",
+          "code": "0x001dba00",
+          "title": "BGM 08"
+        },
+        {
+          "kind": "title",
+          "code": "0x00236f00",
+          "title": "BGM 09"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/kogado.xml",
+      "source_order": 2896,
+      "archive": "navitune",
+      "id": "navitune-opn"
+    },
+    {
+      "title": "[PC-8801] Schwarzschild 狂嵐の銀河",
+      "driver": {
+        "name": "pc88",
+        "type": "opn",
+        "alias": "工画堂スタジオ",
+        "platform": "NEC PC-8801"
+      },
+      "options": [
+        {
+          "name": "mdata_addr",
+          "value": "0xf000"
+        },
+        {
+          "name": "mdata_size",
+          "value": "0x1000"
+        },
+        {
+          "name": "mfile_size",
+          "value": "0x1000"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "PATCH",
+          "offset": "0x0000"
+        },
+        {
+          "type": "code",
+          "path": "DRIVER",
+          "offset": "0xe000"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS100",
+          "offset": "0x00"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS101",
+          "offset": "0x01"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS102",
+          "offset": "0x02"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS200",
+          "offset": "0x03"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS201",
+          "offset": "0x04"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x05000004",
+          "title": "ねこさんちーむBGM"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000004",
+          "title": "オープニング・テーマ"
+        },
+        {
+          "kind": "title",
+          "code": "0x01000000",
+          "title": "通常1BGM"
+        },
+        {
+          "kind": "title",
+          "code": "0x03000000",
+          "title": "戦闘のテーマ"
+        },
+        {
+          "kind": "title",
+          "code": "0x02000001",
+          "title": "通常2BGM"
+        },
+        {
+          "kind": "comment",
+          "text": "\t<title code=\"0x03000001\">戦闘のテーマ</title> "
+        },
+        {
+          "kind": "title",
+          "code": "0x04000002",
+          "title": "レクイエム"
+        },
+        {
+          "kind": "title",
+          "code": "0x06000003",
+          "title": "エンディング・テーマ"
+        },
+        {
+          "kind": "title",
+          "code": "0x07000003",
+          "title": "スタッフ･テーマ"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/kogado.xml",
+      "source_order": 2897,
+      "archive": "schwarz",
+      "id": "schwarz-opn"
+    },
+    {
+      "title": "[PC-8801] Schwarzschild II 帝國ノ背信",
+      "driver": {
+        "name": "pc88",
+        "type": "opn",
+        "alias": "工画堂スタジオ",
+        "platform": "NEC PC-8801"
+      },
+      "options": [
+        {
+          "name": "mdata_addr",
+          "value": "0xf000"
+        },
+        {
+          "name": "mdata_size",
+          "value": "0x1000"
+        },
+        {
+          "name": "mfile_size",
+          "value": "0x1000"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "PATCH",
+          "offset": "0x0000"
+        },
+        {
+          "type": "code",
+          "path": "DRIVER",
+          "offset": "0xe000"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS100",
+          "offset": "0x00"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS101",
+          "offset": "0x01"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS102",
+          "offset": "0x02"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS103",
+          "offset": "0x03"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS104",
+          "offset": "0x04"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS200",
+          "offset": "0x05"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS201",
+          "offset": "0x06"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS202",
+          "offset": "0x07"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS203",
+          "offset": "0x08"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS204",
+          "offset": "0x09"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS205",
+          "offset": "0x0a"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS206",
+          "offset": "0x0b"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS207",
+          "offset": "0x0c"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS208",
+          "offset": "0x0d"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS209",
+          "offset": "0x0e"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS210",
+          "offset": "0x0f"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x00000007",
+          "title": "ねこさんちーむBGM"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000008",
+          "title": "オープニング・テーマ"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000000",
+          "title": "通常1BGM"
+        },
+        {
+          "kind": "comment",
+          "text": "\n\t\t\t<title code=\"0x00000009\">通常1BGM</title>\n\t\t\t  "
+        },
+        {
+          "kind": "title",
+          "code": "0x00000001",
+          "title": "通常2BGM"
+        },
+        {
+          "kind": "comment",
+          "text": "\n\t\t\t<title code=\"0x0000000a\">通常2BGM</title>\n\t\t\t  "
+        },
+        {
+          "kind": "title",
+          "code": "0x00000002",
+          "title": "戦闘のテーマ"
+        },
+        {
+          "kind": "comment",
+          "text": "\n\t\t\t<title code=\"0x0000000b\">戦闘のテーマ</title>\n\t\t\t  "
+        },
+        {
+          "kind": "title",
+          "code": "0x00000003",
+          "title": "レクイエム"
+        },
+        {
+          "kind": "comment",
+          "text": "\n\t\t\t<title code=\"0x0000000c\">レクイエム</title>\n\t\t\t  "
+        },
+        {
+          "kind": "title",
+          "code": "0x00000004",
+          "title": "演習モードBGM"
+        },
+        {
+          "kind": "comment",
+          "text": "\n\t\t\t<title code=\"0x0000000d\">演習モードBGM</title>\n\t\t\t  "
+        },
+        {
+          "kind": "title",
+          "code": "0x0000000e",
+          "title": "エンディング・テーマ"
+        },
+        {
+          "kind": "title",
+          "code": "0x0000000f",
+          "title": "スタッフ･テーマ"
+        },
+        {
+          "kind": "title",
+          "code": "0x06000005",
+          "title": "[Schwarzschild] エンディング・テーマ"
+        },
+        {
+          "kind": "title",
+          "code": "0x07000005",
+          "title": "[Schwarzschild] スタッフ・テーマ"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000006",
+          "title": "[Schwarzschild] オープニング・テーマ"
+        },
+        {
+          "kind": "title",
+          "code": "0x05000006",
+          "title": "[Schwarzschild] ねこさんちーむBGM"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/kogado.xml",
+      "source_order": 2898,
+      "archive": "schwarz2",
+      "id": "schwarz2-opn"
+    },
+    {
+      "title": "[PC-9801] 原宿AFTeR DARK",
+      "driver": {
+        "name": "pc98vx",
+        "type": "opn",
+        "alias": "工画堂スタジオ",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "bootcs",
+          "value": "0x1000"
+        },
+        {
+          "name": "bootip",
+          "value": "0xf000"
+        },
+        {
+          "name": "funcvect",
+          "value": "0x7f"
+        },
+        {
+          "name": "dummysndrom",
+          "value": "1"
+        },
+        {
+          "name": "clockmul",
+          "value": "8"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "MUSIC",
+          "offset": "0x02000"
+        },
+        {
+          "type": "code",
+          "path": "PROG",
+          "offset": "0x10000"
+        },
+        {
+          "type": "code",
+          "path": "aftdark.bin",
+          "offset": "0x1f000"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x00",
+          "title": "オープニング"
+        },
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "聞き込み"
+        },
+        {
+          "kind": "title",
+          "code": "0x02",
+          "title": "捜査"
+        },
+        {
+          "kind": "title",
+          "code": "0x03",
+          "title": "告白"
+        },
+        {
+          "kind": "title",
+          "code": "0x04",
+          "title": "出張捜査"
+        },
+        {
+          "kind": "title",
+          "code": "0x05",
+          "title": "渋谷署"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/kogado.xml",
+      "source_order": 2899,
+      "archive": "aftdark98",
+      "id": "aftdark98-opn"
+    },
+    {
+      "title": "[PC-9801] アルギースの翼",
+      "driver": {
+        "name": "pc98vx",
+        "type": "opn",
+        "alias": "工画堂スタジオ",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "bootcs",
+          "value": "0x0800"
+        },
+        {
+          "name": "bootip",
+          "value": "0x2000"
+        },
+        {
+          "name": "funcvect",
+          "value": "0x7f"
+        },
+        {
+          "name": "dataaddr",
+          "value": "0x16000"
+        },
+        {
+          "name": "filesize",
+          "value": "0x1000"
+        },
+        {
+          "name": "datamax",
+          "value": "0x06"
+        },
+        {
+          "name": "dummysndrom",
+          "value": "1"
+        },
+        {
+          "name": "clockmul",
+          "value": "8"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "DRIVER",
+          "offset": "0x08000"
+        },
+        {
+          "type": "code",
+          "path": "arugies.bin",
+          "offset": "0x0a000"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS01",
+          "offset": "0x01"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS02",
+          "offset": "0x02"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS03",
+          "offset": "0x03"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS04",
+          "offset": "0x04"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS05",
+          "offset": "0x05"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x000001",
+          "title": "#01-0 : 店/メニュー"
+        },
+        {
+          "kind": "title",
+          "code": "0x010001",
+          "title": "#01-1 : 戦闘"
+        },
+        {
+          "kind": "title",
+          "code": "0x020001",
+          "title": "#01-2 : カズノヒロブ"
+        },
+        {
+          "kind": "title",
+          "code": "0x030001",
+          "title": "#01-3 : フィールド"
+        },
+        {
+          "kind": "title",
+          "code": "0x040001",
+          "title": "#01-4 : 塔"
+        },
+        {
+          "kind": "comment",
+          "text": "\t<title code=\"0x000002\">#02-0 : 店/メニュー</title> "
+        },
+        {
+          "kind": "comment",
+          "text": "\t<title code=\"0x010002\">#02-1 : 戦闘</title> "
+        },
+        {
+          "kind": "comment",
+          "text": "\t<title code=\"0x020002\">#02-2 : カズノヒロブ</title> "
+        },
+        {
+          "kind": "title",
+          "code": "0x030002",
+          "title": "#02-3 : アテパル城"
+        },
+        {
+          "kind": "title",
+          "code": "0x040002",
+          "title": "#02-4 : 天空の王宮"
+        },
+        {
+          "kind": "title",
+          "code": "0x050002",
+          "title": "#02-5 : 妖獣の城"
+        },
+        {
+          "kind": "comment",
+          "text": "\t<title code=\"0x000003\">#03-0 : 店/メニュー</title> "
+        },
+        {
+          "kind": "comment",
+          "text": "\t<title code=\"0x010003\">#03-1 : 戦闘</title> "
+        },
+        {
+          "kind": "comment",
+          "text": "\t<title code=\"0x020003\">#03-2 : カズノヒロブ</title> "
+        },
+        {
+          "kind": "title",
+          "code": "0x030003",
+          "title": "#03-3 : 城"
+        },
+        {
+          "kind": "title",
+          "code": "0x040003",
+          "title": "#03-4 : 天空界"
+        },
+        {
+          "kind": "comment",
+          "text": "\t<title code=\"0x000004\">#04-0 : 店/メニュー</title> "
+        },
+        {
+          "kind": "title",
+          "code": "0x010004",
+          "title": "#04-1 : ユーザーディスク作成/ゲームオーバー"
+        },
+        {
+          "kind": "comment",
+          "text": "\t<title code=\"0x020004\">#04-2 : スタッフロール</title> "
+        },
+        {
+          "kind": "title",
+          "code": "0x030004",
+          "title": "#04-3 : 街"
+        },
+        {
+          "kind": "title",
+          "code": "0x000005",
+          "title": "#05-0 : オープニング"
+        },
+        {
+          "kind": "title",
+          "code": "0x010005",
+          "title": "#05-1 : エンディング"
+        },
+        {
+          "kind": "title",
+          "code": "0x020005",
+          "title": "#05-2 : スタッフロール"
+        },
+        {
+          "kind": "title",
+          "code": "0x030005",
+          "title": "#05-3 :"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/kogado.xml",
+      "source_order": 2900,
+      "archive": "arugies98",
+      "id": "arugies98-opn"
+    },
+    {
+      "title": "[PC-9801] 時空の花嫁",
+      "driver": {
+        "name": "pc98vx",
+        "type": "opn",
+        "alias": "工画堂スタジオ",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "bootcs",
+          "value": "0x1000"
+        },
+        {
+          "name": "bootip",
+          "value": "0x6000"
+        },
+        {
+          "name": "funcvect",
+          "value": "0x7f"
+        },
+        {
+          "name": "dummysndrom",
+          "value": "1"
+        },
+        {
+          "name": "clockmul",
+          "value": "8"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "MUSIC",
+          "offset": "0x01000"
+        },
+        {
+          "type": "code",
+          "path": "PROG",
+          "offset": "0x10000"
+        },
+        {
+          "type": "code",
+          "path": "jiku.bin",
+          "offset": "0x16000"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x0b",
+          "title": "0B : オープニング効果音1"
+        },
+        {
+          "kind": "title",
+          "code": "0x0c",
+          "title": "0C : オープニング効果音2"
+        },
+        {
+          "kind": "title",
+          "code": "0x0d",
+          "title": "0D : オープニング効果音3"
+        },
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "01 : デモ曲"
+        },
+        {
+          "kind": "title",
+          "code": "0x07",
+          "title": "07 : タイトル"
+        },
+        {
+          "kind": "title",
+          "code": "0x09",
+          "title": "09 : 街"
+        },
+        {
+          "kind": "title",
+          "code": "0x03",
+          "title": "03 : キャンプ"
+        },
+        {
+          "kind": "title",
+          "code": "0x05",
+          "title": "05 : 戦闘"
+        },
+        {
+          "kind": "title",
+          "code": "0x06",
+          "title": "06 : ゲームオーバー"
+        },
+        {
+          "kind": "title",
+          "code": "0x0a",
+          "title": "0A : タイムマシン"
+        },
+        {
+          "kind": "title",
+          "code": "0x04",
+          "title": "04 : ラストダンジョン"
+        },
+        {
+          "kind": "title",
+          "code": "0x08",
+          "title": "08 : ラスボス前"
+        },
+        {
+          "kind": "title",
+          "code": "0x02",
+          "title": "02 : エンディング"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/kogado.xml",
+      "source_order": 2901,
+      "archive": "jiku98",
+      "id": "jiku98-opn"
+    },
+    {
+      "title": "[PC-9801] NAVITUNE ドラゴン航海記",
+      "driver": {
+        "name": "pc98vx",
+        "type": "opn",
+        "alias": "工画堂スタジオ",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "bootcs",
+          "value": "0x0060"
+        },
+        {
+          "name": "bootip",
+          "value": "0x0000"
+        },
+        {
+          "name": "funcvect",
+          "value": "0x7f"
+        },
+        {
+          "name": "clockmul",
+          "value": "8"
+        },
+        {
+          "name": "dummysndrom",
+          "value": "1"
+        },
+        {
+          "name": "showfm3ex",
+          "value": "1"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "navitn98.bin",
+          "offset": "0x00600"
+        },
+        {
+          "type": "code",
+          "path": "MUSIC.O",
+          "offset": "0x10000"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "BGM 1"
+        },
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "BGM 2"
+        },
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "BGM 3"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "BGM 4"
+        },
+        {
+          "kind": "title",
+          "code": "0x14",
+          "title": "BGM 5"
+        },
+        {
+          "kind": "title",
+          "code": "0x15",
+          "title": "BGM 6"
+        },
+        {
+          "kind": "title",
+          "code": "0x16",
+          "title": "BGM 7"
+        },
+        {
+          "kind": "title",
+          "code": "0x17",
+          "title": "BGM 8"
+        },
+        {
+          "kind": "title",
+          "code": "0x18",
+          "title": "BGM 9"
+        },
+        {
+          "kind": "title",
+          "code": "0x19",
+          "title": "BGM 10"
+        },
+        {
+          "kind": "title",
+          "code": "0x1a",
+          "title": "BGM 11"
+        },
+        {
+          "kind": "title",
+          "code": "0x1b",
+          "title": "BGM 12"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/kogado.xml",
+      "source_order": 2902,
+      "archive": "navitn98",
+      "id": "navitn98-opn"
+    },
+    {
+      "title": "[PC-9801] Sabnack",
+      "driver": {
+        "name": "pc98vx",
+        "type": "opn",
+        "alias": "工画堂スタジオ",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "bootcs",
+          "value": "0x0e78"
+        },
+        {
+          "name": "bootip",
+          "value": "0x5a00"
+        },
+        {
+          "name": "funcvect",
+          "value": "0x7f"
+        },
+        {
+          "name": "clockmul",
+          "value": "8"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "MAINPROG.BIN",
+          "offset": "0x0e530"
+        },
+        {
+          "type": "code",
+          "path": "sabnack.bin",
+          "offset": "0x14180"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x00",
+          "title": "MUSIC #00"
+        },
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "MUSIC #01"
+        },
+        {
+          "kind": "title",
+          "code": "0x02",
+          "title": "MUSIC #02"
+        },
+        {
+          "kind": "title",
+          "code": "0x03",
+          "title": "MUSIC #03"
+        },
+        {
+          "kind": "title",
+          "code": "0x04",
+          "title": "MUSIC #04"
+        },
+        {
+          "kind": "title",
+          "code": "0x05",
+          "title": "MUSIC #05"
+        },
+        {
+          "kind": "title",
+          "code": "0x06",
+          "title": "MUSIC #06"
+        },
+        {
+          "kind": "title",
+          "code": "0x07",
+          "title": "MUSIC #07"
+        },
+        {
+          "kind": "title",
+          "code": "0x08",
+          "title": "MUSIC #08"
+        },
+        {
+          "kind": "title",
+          "code": "0x09",
+          "title": "MUSIC #09"
+        },
+        {
+          "kind": "title",
+          "code": "0x0a",
+          "title": "MUSIC #0A"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/kogado.xml",
+      "source_order": 2903,
+      "archive": "sabnack98",
+      "id": "sabnack98-opn"
+    },
+    {
+      "title": "[PC-9801] POWER DoLLS(OPN)",
+      "driver": {
+        "name": "pc98dos",
+        "type": "opn",
+        "alias": "工画堂スタジオ",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "clockmul",
+          "value": "8"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "EMI.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "EMIP.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "CM_NEIRO.DAT",
+          "offset": "0x10"
+        },
+        {
+          "type": "file",
+          "path": "CM_SE.DAT",
+          "offset": "0x11"
+        },
+        {
+          "type": "file",
+          "path": "CM_LFO.DAT",
+          "offset": "0x12"
+        },
+        {
+          "type": "file",
+          "path": "CM_VIV.DAT",
+          "offset": "0x13"
+        },
+        {
+          "type": "file",
+          "path": "CM_ENV.DAT",
+          "offset": "0x14"
+        },
+        {
+          "type": "file",
+          "path": "PDL_00.CMD",
+          "offset": "0x20"
+        },
+        {
+          "type": "file",
+          "path": "PDL_01.CMD",
+          "offset": "0x21"
+        },
+        {
+          "type": "file",
+          "path": "PDL_02.CMD",
+          "offset": "0x22"
+        },
+        {
+          "type": "file",
+          "path": "PDL_03.CMD",
+          "offset": "0x23"
+        },
+        {
+          "type": "file",
+          "path": "PDL_502.CMD",
+          "offset": "0x24"
+        },
+        {
+          "type": "file",
+          "path": "PDL_70.CMD",
+          "offset": "0x25"
+        },
+        {
+          "type": "file",
+          "path": "PDL_81.CMD",
+          "offset": "0x26"
+        },
+        {
+          "type": "file",
+          "path": "PDL_END.CMD",
+          "offset": "0x27"
+        },
+        {
+          "type": "file",
+          "path": "PDL_OVER.CMD",
+          "offset": "0x28"
+        },
+        {
+          "type": "shell",
+          "path": "EMI",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "EMIP",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x21",
+          "title": "PDL_01.CMD   : ALTERNATIVE WALLS"
+        },
+        {
+          "kind": "title",
+          "code": "0x22",
+          "title": "PDL_02.CMD   : HIGH ALTITUDE CIRCLE"
+        },
+        {
+          "kind": "title",
+          "code": "0x26",
+          "title": "PDL_81.CMD   : POWER DoLLS"
+        },
+        {
+          "kind": "title",
+          "code": "0x24",
+          "title": "PDL_502.CMD  : LAND AROUND"
+        },
+        {
+          "kind": "title",
+          "code": "0x23",
+          "title": "PDL_03.CMD   : GUST OF WIND"
+        },
+        {
+          "kind": "title",
+          "code": "0x20",
+          "title": "PDL_00.CMD   : SPANK MISSION"
+        },
+        {
+          "kind": "title",
+          "code": "0x25",
+          "title": "PDL_70.CMD   : DAYBREAK"
+        },
+        {
+          "kind": "title",
+          "code": "0x27",
+          "title": "PDL_END.CMD  : SILKY GROUNI"
+        },
+        {
+          "kind": "title",
+          "code": "0x28",
+          "title": "PDL_OVER.CMD : ECLIPSE"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/kogado.xml",
+      "source_order": 2904,
+      "archive": "pdoll_98",
+      "id": "pdoll-98-opn"
+    },
+    {
+      "title": "[PC-9801] POWER DoLLS(GS)",
+      "driver": {
+        "name": "pc98dos",
+        "type": "beep",
+        "alias": "工画堂スタジオ",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "clockmul",
+          "value": "8"
+        },
+        {
+          "name": "midiout",
+          "value": "1"
+        },
+        {
+          "name": "midiout_type",
+          "value": "4"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "naru_98.com",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "NARU.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "CHORUS.DAT",
+          "offset": "5"
+        },
+        {
+          "type": "file",
+          "path": "REVERB.DAT",
+          "offset": "6"
+        },
+        {
+          "type": "file",
+          "path": "RHYTHM.DAT",
+          "offset": "7"
+        },
+        {
+          "type": "file",
+          "path": "PDEND_05.MID",
+          "offset": "11"
+        },
+        {
+          "type": "file",
+          "path": "PDL002GS.MID",
+          "offset": "12"
+        },
+        {
+          "type": "file",
+          "path": "PDL_011.MID",
+          "offset": "13"
+        },
+        {
+          "type": "file",
+          "path": "PDL_02GS.MID",
+          "offset": "14"
+        },
+        {
+          "type": "file",
+          "path": "PDL_03GS.MID",
+          "offset": "15"
+        },
+        {
+          "type": "file",
+          "path": "PDL_503.MID",
+          "offset": "16"
+        },
+        {
+          "type": "file",
+          "path": "PDL_73GS.MID",
+          "offset": "17"
+        },
+        {
+          "type": "file",
+          "path": "PDL_85GS.MID",
+          "offset": "18"
+        },
+        {
+          "type": "file",
+          "path": "PDL_OV01.MID",
+          "offset": "19"
+        },
+        {
+          "type": "shell",
+          "path": "naru",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "naru_98",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "13",
+          "title": "PDL_011.MID  : ALTERNATIVE WALLS"
+        },
+        {
+          "kind": "title",
+          "code": "14",
+          "title": "PDL_02GS.MID : HIGH ALTITUDE CIRCLE"
+        },
+        {
+          "kind": "title",
+          "code": "17",
+          "title": "PDL_73GS.MID : POWER DOLLS"
+        },
+        {
+          "kind": "title",
+          "code": "16",
+          "title": "PDL_503.MID  : LAND AROUND"
+        },
+        {
+          "kind": "title",
+          "code": "15",
+          "title": "PDL_03GS.MID : GUST OF WIND"
+        },
+        {
+          "kind": "title",
+          "code": "12",
+          "title": "PDL002GS.MID : SPANK MISSION"
+        },
+        {
+          "kind": "title",
+          "code": "18",
+          "title": "PDL_85GS.MID : DAYBREAK"
+        },
+        {
+          "kind": "title",
+          "code": "11",
+          "title": "PDEND_05.MID : SILKY GROUND"
+        },
+        {
+          "kind": "title",
+          "code": "19",
+          "title": "PDL_OV01.MID : ECLIPSE"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/kogado.xml",
+      "source_order": 2905,
+      "archive": "pdoll_98",
+      "id": "pdoll-98-beep"
+    },
+    {
+      "title": "[PC-9801] POWER DoLLS S-Premium Disk(OPN)",
+      "driver": {
+        "name": "pc98dos",
+        "type": "opn",
+        "alias": "工画堂スタジオ",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "clockmul",
+          "value": "8"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "EMI.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "EMIP.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "CM_NEIRO.DAT",
+          "offset": "0x10"
+        },
+        {
+          "type": "file",
+          "path": "CM_SE.DAT",
+          "offset": "0x11"
+        },
+        {
+          "type": "file",
+          "path": "CM_LFO.DAT",
+          "offset": "0x12"
+        },
+        {
+          "type": "file",
+          "path": "CM_VIV.DAT",
+          "offset": "0x13"
+        },
+        {
+          "type": "file",
+          "path": "CM_ENV.DAT",
+          "offset": "0x14"
+        },
+        {
+          "type": "file",
+          "path": "SOUND_00.CMD",
+          "offset": "0x20"
+        },
+        {
+          "type": "file",
+          "path": "SOUND_01.CMD",
+          "offset": "0x21"
+        },
+        {
+          "type": "file",
+          "path": "SOUND_02.CMD",
+          "offset": "0x22"
+        },
+        {
+          "type": "file",
+          "path": "SOUND_03.CMD",
+          "offset": "0x23"
+        },
+        {
+          "type": "file",
+          "path": "PDL_81.CMD",
+          "offset": "0x26"
+        },
+        {
+          "type": "shell",
+          "path": "EMI",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "EMIP",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x26",
+          "title": "PDL_81.CMD   : POWER DoLLS"
+        },
+        {
+          "kind": "title",
+          "code": "0x20",
+          "title": "SOUND_00.CMD : SPANK MISSION"
+        },
+        {
+          "kind": "title",
+          "code": "0x21",
+          "title": "SOUND_01.CMD : DAYBREAK"
+        },
+        {
+          "kind": "title",
+          "code": "0x22",
+          "title": "SOUND_02.CMD : LAND AROUND"
+        },
+        {
+          "kind": "title",
+          "code": "0x23",
+          "title": "SOUND_03.CMD : HIGH ALTITUDE CIRCLE"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/kogado.xml",
+      "source_order": 2906,
+      "archive": "pdollp_98",
+      "id": "pdollp-98-opn"
+    },
+    {
+      "title": "[PC-9801] POWER DoLLS S-Premium Disk(GS)",
+      "driver": {
+        "name": "pc98dos",
+        "type": "beep",
+        "alias": "工画堂スタジオ",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "clockmul",
+          "value": "8"
+        },
+        {
+          "name": "midiout",
+          "value": "1"
+        },
+        {
+          "name": "midiout_type",
+          "value": "4"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "naru_98.com",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "NARU.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "CHORUS.DAT",
+          "offset": "5"
+        },
+        {
+          "type": "file",
+          "path": "REVERB.DAT",
+          "offset": "6"
+        },
+        {
+          "type": "file",
+          "path": "RHYTHM.DAT",
+          "offset": "7"
+        },
+        {
+          "type": "file",
+          "path": "SOUND_00.MID",
+          "offset": "12"
+        },
+        {
+          "type": "file",
+          "path": "SOUND_01.MID",
+          "offset": "13"
+        },
+        {
+          "type": "file",
+          "path": "SOUND_02.MID",
+          "offset": "14"
+        },
+        {
+          "type": "file",
+          "path": "SOUND_03.MID",
+          "offset": "15"
+        },
+        {
+          "type": "file",
+          "path": "PDL_85GS.MID",
+          "offset": "18"
+        },
+        {
+          "type": "shell",
+          "path": "naru",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "naru_98",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "18",
+          "title": "PDL_85GS.MID : POWER DoLLS"
+        },
+        {
+          "kind": "title",
+          "code": "12",
+          "title": "SOUND_00.MID : SPANK MISSION"
+        },
+        {
+          "kind": "title",
+          "code": "13",
+          "title": "SOUND_01.MID : DAYBREAK"
+        },
+        {
+          "kind": "title",
+          "code": "14",
+          "title": "SOUND_02.MID : LAND AROUND"
+        },
+        {
+          "kind": "title",
+          "code": "15",
+          "title": "SOUND_03.MID : HIGH ALTITUDE CIRCLE"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/kogado.xml",
+      "source_order": 2907,
+      "archive": "pdollp_98",
+      "id": "pdollp-98-beep"
+    },
+    {
+      "title": "[PC-9801] POWER DoLLS 2(OPN)",
+      "driver": {
+        "name": "pc98dos",
+        "type": "opn",
+        "alias": "工画堂スタジオ",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "clockmul",
+          "value": "8"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "EMI.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "EMIP.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "CM_NEIRO.DAT",
+          "offset": "0x10"
+        },
+        {
+          "type": "file",
+          "path": "CM_SE.DAT",
+          "offset": "0x11"
+        },
+        {
+          "type": "file",
+          "path": "CM_LFO.DAT",
+          "offset": "0x12"
+        },
+        {
+          "type": "file",
+          "path": "CM_VIV.DAT",
+          "offset": "0x13"
+        },
+        {
+          "type": "file",
+          "path": "CM_ENV.DAT",
+          "offset": "0x14"
+        },
+        {
+          "type": "file",
+          "path": "PD2_F01.CMD",
+          "offset": "0x20"
+        },
+        {
+          "type": "file",
+          "path": "PD2_F20.CMD",
+          "offset": "0x21"
+        },
+        {
+          "type": "file",
+          "path": "PD2_F30.CMD",
+          "offset": "0x22"
+        },
+        {
+          "type": "file",
+          "path": "PD2_F40.CMD",
+          "offset": "0x23"
+        },
+        {
+          "type": "file",
+          "path": "PD2_F50.CMD",
+          "offset": "0x24"
+        },
+        {
+          "type": "file",
+          "path": "PD2_F61.CMD",
+          "offset": "0x25"
+        },
+        {
+          "type": "file",
+          "path": "PD2_F70.CMD",
+          "offset": "0x26"
+        },
+        {
+          "type": "file",
+          "path": "PDM01.CMD",
+          "offset": "0x27"
+        },
+        {
+          "type": "file",
+          "path": "PDM02.CMD",
+          "offset": "0x28"
+        },
+        {
+          "type": "file",
+          "path": "PDM03.CMD",
+          "offset": "0x29"
+        },
+        {
+          "type": "file",
+          "path": "PDM04.CMD",
+          "offset": "0x2a"
+        },
+        {
+          "type": "shell",
+          "path": "EMI",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "EMIP",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x27",
+          "title": "PDM01.CMD   : SETTLE DOWN"
+        },
+        {
+          "kind": "title",
+          "code": "0x28",
+          "title": "PDM02.CMD   : IVORY ILLUSION"
+        },
+        {
+          "kind": "title",
+          "code": "0x25",
+          "title": "PD2_F61.CMD : D-NAIL"
+        },
+        {
+          "kind": "title",
+          "code": "0x21",
+          "title": "PD2_F20.CMD : NIGHT RAID"
+        },
+        {
+          "kind": "title",
+          "code": "0x23",
+          "title": "PD2_F40.CMD : CALLING ME"
+        },
+        {
+          "kind": "title",
+          "code": "0x24",
+          "title": "PD2_F50.CMD : OUT FLANKS"
+        },
+        {
+          "kind": "title",
+          "code": "0x29",
+          "title": "PDM03.CMD   : TAKE THE FIELD"
+        },
+        {
+          "kind": "title",
+          "code": "0x20",
+          "title": "PD2_F01.CMD : MOVE IN ON"
+        },
+        {
+          "kind": "title",
+          "code": "0x26",
+          "title": "PD2_F70.CMD : POWER DOLLS 2"
+        },
+        {
+          "kind": "title",
+          "code": "0x2a",
+          "title": "PDM04.CMD   : STREAMED BLUE"
+        },
+        {
+          "kind": "title",
+          "code": "0x22",
+          "title": "PD2_F30.CMD : SWITCHED ON \"DOLLS\""
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/kogado.xml",
+      "source_order": 2908,
+      "archive": "pdoll2_98",
+      "id": "pdoll2-98-opn"
+    },
+    {
+      "title": "[PC-9801] POWER DoLLS 2(GS)",
+      "driver": {
+        "name": "pc98dos",
+        "type": "beep",
+        "alias": "工画堂スタジオ",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "clockmul",
+          "value": "8"
+        },
+        {
+          "name": "midiout",
+          "value": "1"
+        },
+        {
+          "name": "midiout_type",
+          "value": "4"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "naru_98.com",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "NARU.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "CHORUS.DAT",
+          "offset": "5"
+        },
+        {
+          "type": "file",
+          "path": "REVERB.DAT",
+          "offset": "6"
+        },
+        {
+          "type": "file",
+          "path": "RHYTHM.DAT",
+          "offset": "7"
+        },
+        {
+          "type": "file",
+          "path": "PD2_M01.MID",
+          "offset": "11"
+        },
+        {
+          "type": "file",
+          "path": "PD2_M11.MID",
+          "offset": "12"
+        },
+        {
+          "type": "file",
+          "path": "PD2_M20.MID",
+          "offset": "13"
+        },
+        {
+          "type": "file",
+          "path": "PD2_M30.MID",
+          "offset": "14"
+        },
+        {
+          "type": "file",
+          "path": "PD2_M40.MID",
+          "offset": "15"
+        },
+        {
+          "type": "file",
+          "path": "PD2_M50.MID",
+          "offset": "16"
+        },
+        {
+          "type": "file",
+          "path": "PD2_M61.MID",
+          "offset": "17"
+        },
+        {
+          "type": "file",
+          "path": "PD2_M70.MID",
+          "offset": "18"
+        },
+        {
+          "type": "file",
+          "path": "PDM01.MID",
+          "offset": "19"
+        },
+        {
+          "type": "file",
+          "path": "PDM02.MID",
+          "offset": "20"
+        },
+        {
+          "type": "file",
+          "path": "PDM03.MID",
+          "offset": "21"
+        },
+        {
+          "type": "file",
+          "path": "PDM04.MID",
+          "offset": "22"
+        },
+        {
+          "type": "shell",
+          "path": "naru",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "naru_98",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "19",
+          "title": "PDM01.MID   : SETTLE DOWN"
+        },
+        {
+          "kind": "title",
+          "code": "20",
+          "title": "PDM02.MID   : IVORY ILLUSION"
+        },
+        {
+          "kind": "title",
+          "code": "17",
+          "title": "PD2_M61.MID : D-NAIL"
+        },
+        {
+          "kind": "title",
+          "code": "13",
+          "title": "PD2_M20.MID : NIGHT RAID"
+        },
+        {
+          "kind": "title",
+          "code": "15",
+          "title": "PD2_M40.MID : CALLING ME"
+        },
+        {
+          "kind": "title",
+          "code": "16",
+          "title": "PD2_M50.MID : OUT FLANKS"
+        },
+        {
+          "kind": "title",
+          "code": "21",
+          "title": "PDM03.MID   : TAKE THE FIELD"
+        },
+        {
+          "kind": "title",
+          "code": "11",
+          "title": "PD2_M01.MID : MOVE IN ON"
+        },
+        {
+          "kind": "title",
+          "code": "18",
+          "title": "PD2_M70.MID : POWER DoLLS 2"
+        },
+        {
+          "kind": "title",
+          "code": "22",
+          "title": "PDM04.MID   : STREAMED BLUE"
+        },
+        {
+          "kind": "title",
+          "code": "14",
+          "title": "PD2_M30.MID : SWITCHED ON \"DOLLS\""
+        },
+        {
+          "kind": "title",
+          "code": "12",
+          "title": "PD2_M11.MID :"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/kogado.xml",
+      "source_order": 2909,
+      "archive": "pdoll2_98",
+      "id": "pdoll2-98-beep"
+    },
+    {
+      "title": "[PC-9801] POWER DoLLS 2 Premium Disk(OPN)",
+      "driver": {
+        "name": "pc98dos",
+        "type": "opn",
+        "alias": "工画堂スタジオ",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "clockmul",
+          "value": "8"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "EMI.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "EMIP.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "CM_NEIRO.DAT",
+          "offset": "0x10"
+        },
+        {
+          "type": "file",
+          "path": "CM_SE.DAT",
+          "offset": "0x11"
+        },
+        {
+          "type": "file",
+          "path": "CM_LFO.DAT",
+          "offset": "0x12"
+        },
+        {
+          "type": "file",
+          "path": "CM_VIV.DAT",
+          "offset": "0x13"
+        },
+        {
+          "type": "file",
+          "path": "CM_ENV.DAT",
+          "offset": "0x14"
+        },
+        {
+          "type": "file",
+          "path": "PD2_F01.CMD",
+          "offset": "0x20"
+        },
+        {
+          "type": "file",
+          "path": "PD2_F20.CMD",
+          "offset": "0x21"
+        },
+        {
+          "type": "file",
+          "path": "PD2_F40.CMD",
+          "offset": "0x23"
+        },
+        {
+          "type": "file",
+          "path": "PD2_F50.CMD",
+          "offset": "0x24"
+        },
+        {
+          "type": "file",
+          "path": "PD2_F61.CMD",
+          "offset": "0x25"
+        },
+        {
+          "type": "file",
+          "path": "PD2_F70.CMD",
+          "offset": "0x26"
+        },
+        {
+          "type": "file",
+          "path": "PDM01.CMD",
+          "offset": "0x27"
+        },
+        {
+          "type": "file",
+          "path": "PDM02.CMD",
+          "offset": "0x28"
+        },
+        {
+          "type": "file",
+          "path": "PDM03.CMD",
+          "offset": "0x29"
+        },
+        {
+          "type": "shell",
+          "path": "EMI",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "EMIP",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x23",
+          "title": "PD2_F40.CMD : CALLING ME"
+        },
+        {
+          "kind": "title",
+          "code": "0x26",
+          "title": "PD2_F70.CMD : POWER DOLLS 2"
+        },
+        {
+          "kind": "title",
+          "code": "0x25",
+          "title": "PD2_F61.CMD : D-NAIL"
+        },
+        {
+          "kind": "title",
+          "code": "0x21",
+          "title": "PD2_F20.CMD : NIGHT RAID"
+        },
+        {
+          "kind": "title",
+          "code": "0x24",
+          "title": "PD2_F50.CMD : OUT FLANKS"
+        },
+        {
+          "kind": "title",
+          "code": "0x29",
+          "title": "PDM03.CMD   : TAKE THE FIELD"
+        },
+        {
+          "kind": "title",
+          "code": "0x28",
+          "title": "PDM02.CMD   : IVORY ILLUSION"
+        },
+        {
+          "kind": "title",
+          "code": "0x20",
+          "title": "PD2_F01.CMD : MOVE IN ON"
+        },
+        {
+          "kind": "title",
+          "code": "0x27",
+          "title": "PDM01.CMD   : SETTLE DOWN"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/kogado.xml",
+      "source_order": 2910,
+      "archive": "pdoll2p_98",
+      "id": "pdoll2p-98-opn"
+    },
+    {
+      "title": "[PC-9801] POWER DoLLS 2 Premium Disk(GS)",
+      "driver": {
+        "name": "pc98dos",
+        "type": "beep",
+        "alias": "工画堂スタジオ",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "clockmul",
+          "value": "8"
+        },
+        {
+          "name": "midiout",
+          "value": "1"
+        },
+        {
+          "name": "midiout_type",
+          "value": "4"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "naru_98.com",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "NARU.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "CHORUS.DAT",
+          "offset": "5"
+        },
+        {
+          "type": "file",
+          "path": "REVERB.DAT",
+          "offset": "6"
+        },
+        {
+          "type": "file",
+          "path": "RHYTHM.DAT",
+          "offset": "7"
+        },
+        {
+          "type": "file",
+          "path": "PD2_M01.MID",
+          "offset": "11"
+        },
+        {
+          "type": "file",
+          "path": "PD2_M20.MID",
+          "offset": "13"
+        },
+        {
+          "type": "file",
+          "path": "PD2_P40.MID",
+          "offset": "15"
+        },
+        {
+          "type": "file",
+          "path": "PD2_M50.MID",
+          "offset": "16"
+        },
+        {
+          "type": "file",
+          "path": "PD2_M61.MID",
+          "offset": "17"
+        },
+        {
+          "type": "file",
+          "path": "PD2_M71.MID",
+          "offset": "18"
+        },
+        {
+          "type": "file",
+          "path": "PDM01.MID",
+          "offset": "19"
+        },
+        {
+          "type": "file",
+          "path": "PDM02.MID",
+          "offset": "20"
+        },
+        {
+          "type": "file",
+          "path": "PDM03.MID",
+          "offset": "21"
+        },
+        {
+          "type": "shell",
+          "path": "naru",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "naru_98",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "15",
+          "title": "PD2_P40.MID : CALLING ME"
+        },
+        {
+          "kind": "title",
+          "code": "18",
+          "title": "PD2_M71.MID : POWER DoLLS 2"
+        },
+        {
+          "kind": "title",
+          "code": "17",
+          "title": "PD2_M61.MID : D-NAIL"
+        },
+        {
+          "kind": "title",
+          "code": "13",
+          "title": "PD2_M20.MID : NIGHT RAID"
+        },
+        {
+          "kind": "title",
+          "code": "16",
+          "title": "PD2_M50.MID : OUT FLANKS"
+        },
+        {
+          "kind": "title",
+          "code": "21",
+          "title": "PDM03.MID   : TAKE THE FIELD"
+        },
+        {
+          "kind": "title",
+          "code": "20",
+          "title": "PDM02.MID   : IVORY ILLUSION"
+        },
+        {
+          "kind": "title",
+          "code": "11",
+          "title": "PD2_M01.MID : MOVE IN ON"
+        },
+        {
+          "kind": "title",
+          "code": "19",
+          "title": "PDM01.MID   : SETTLE DOWN"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/kogado.xml",
+      "source_order": 2911,
+      "archive": "pdoll2p_98",
+      "id": "pdoll2p-98-beep"
+    },
+    {
+      "title": "[PC-9801] POWER DoLLS 2 DASH(OPN)",
+      "driver": {
+        "name": "pc98dos",
+        "type": "opn",
+        "alias": "工画堂スタジオ",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "clockmul",
+          "value": "8"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "EMI.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "EMIP.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "CM_NEIRO.DAT",
+          "offset": "0x10"
+        },
+        {
+          "type": "file",
+          "path": "CM_SE.DAT",
+          "offset": "0x11"
+        },
+        {
+          "type": "file",
+          "path": "CM_LFO.DAT",
+          "offset": "0x12"
+        },
+        {
+          "type": "file",
+          "path": "CM_VIV.DAT",
+          "offset": "0x13"
+        },
+        {
+          "type": "file",
+          "path": "CM_ENV.DAT",
+          "offset": "0x14"
+        },
+        {
+          "type": "file",
+          "path": "PD2_F01.CMD",
+          "offset": "0x20"
+        },
+        {
+          "type": "file",
+          "path": "PD2_F20.CMD",
+          "offset": "0x21"
+        },
+        {
+          "type": "file",
+          "path": "PD2_F30.CMD",
+          "offset": "0x22"
+        },
+        {
+          "type": "file",
+          "path": "PD2_F50.CMD",
+          "offset": "0x23"
+        },
+        {
+          "type": "file",
+          "path": "PD2_F61.CMD",
+          "offset": "0x24"
+        },
+        {
+          "type": "file",
+          "path": "PD2_F70.CMD",
+          "offset": "0x25"
+        },
+        {
+          "type": "file",
+          "path": "PD2_F80.CMD",
+          "offset": "0x26"
+        },
+        {
+          "type": "file",
+          "path": "PD2_F90.CMD",
+          "offset": "0x27"
+        },
+        {
+          "type": "file",
+          "path": "PD2_P40F.CMD",
+          "offset": "0x28"
+        },
+        {
+          "type": "file",
+          "path": "PDM01.CMD",
+          "offset": "0x29"
+        },
+        {
+          "type": "file",
+          "path": "PDM02.CMD",
+          "offset": "0x2a"
+        },
+        {
+          "type": "file",
+          "path": "PDM03.CMD",
+          "offset": "0x2b"
+        },
+        {
+          "type": "file",
+          "path": "PDM04.CMD",
+          "offset": "0x2c"
+        },
+        {
+          "type": "shell",
+          "path": "EMI",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "EMIP",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x29",
+          "title": "PDM01.CMD    : SETTLE DOWN"
+        },
+        {
+          "kind": "title",
+          "code": "0x2a",
+          "title": "PDM02.CMD    : IVORY ILLUSION"
+        },
+        {
+          "kind": "title",
+          "code": "0x24",
+          "title": "PD2_F61.CMD  : D-NAIL"
+        },
+        {
+          "kind": "title",
+          "code": "0x21",
+          "title": "PD2_F20.CMD  : NIGHT RAID"
+        },
+        {
+          "kind": "title",
+          "code": "0x28",
+          "title": "PD2_P40F.CMD : CALLING ME"
+        },
+        {
+          "kind": "title",
+          "code": "0x23",
+          "title": "PD2_F50.CMD  : OUT FLANKS"
+        },
+        {
+          "kind": "title",
+          "code": "0x2b",
+          "title": "PDM03.CMD    : TAKE THE FIELD"
+        },
+        {
+          "kind": "title",
+          "code": "0x20",
+          "title": "PD2_F01.CMD  : MOVE IN ON"
+        },
+        {
+          "kind": "title",
+          "code": "0x25",
+          "title": "PD2_F70.CMD  : POWER DOLLS 2"
+        },
+        {
+          "kind": "title",
+          "code": "0x2c",
+          "title": "PDM04.CMD    : STREAMED BLUE"
+        },
+        {
+          "kind": "title",
+          "code": "0x22",
+          "title": "PD2_F30.CMD  : SWITCHED ON \"DOLLS\""
+        },
+        {
+          "kind": "title",
+          "code": "0x26",
+          "title": "PD2_F80.CMD  : NOSTALGIA"
+        },
+        {
+          "kind": "title",
+          "code": "0x27",
+          "title": "PD2_F90.CMD  : ROLLING STEEL"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/kogado.xml",
+      "source_order": 2912,
+      "archive": "pdoll2d_98",
+      "id": "pdoll2d-98-opn"
+    },
+    {
+      "title": "[PC-9801] POWER DoLLS 2 DASH(GS)",
+      "driver": {
+        "name": "pc98dos",
+        "type": "beep",
+        "alias": "工画堂スタジオ",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "clockmul",
+          "value": "8"
+        },
+        {
+          "name": "midiout",
+          "value": "1"
+        },
+        {
+          "name": "midiout_type",
+          "value": "4"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "naru_98.com",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "NARU.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "CHORUS.DAT",
+          "offset": "5"
+        },
+        {
+          "type": "file",
+          "path": "REVERB.DAT",
+          "offset": "6"
+        },
+        {
+          "type": "file",
+          "path": "RHYTHM.DAT",
+          "offset": "7"
+        },
+        {
+          "type": "file",
+          "path": "PD2_M01.MID",
+          "offset": "11"
+        },
+        {
+          "type": "file",
+          "path": "PD2_M11.MID",
+          "offset": "12"
+        },
+        {
+          "type": "file",
+          "path": "PD2_M20.MID",
+          "offset": "13"
+        },
+        {
+          "type": "file",
+          "path": "PD2_M30.MID",
+          "offset": "14"
+        },
+        {
+          "type": "file",
+          "path": "PD2_M50.MID",
+          "offset": "15"
+        },
+        {
+          "type": "file",
+          "path": "PD2_M61.MID",
+          "offset": "16"
+        },
+        {
+          "type": "file",
+          "path": "PD2_M71.MID",
+          "offset": "17"
+        },
+        {
+          "type": "file",
+          "path": "PD2_M80.MID",
+          "offset": "18"
+        },
+        {
+          "type": "file",
+          "path": "PD2_M90.MID",
+          "offset": "19"
+        },
+        {
+          "type": "file",
+          "path": "PD2_P40.MID",
+          "offset": "20"
+        },
+        {
+          "type": "file",
+          "path": "PDM01.MID",
+          "offset": "21"
+        },
+        {
+          "type": "file",
+          "path": "PDM02.MID",
+          "offset": "22"
+        },
+        {
+          "type": "file",
+          "path": "PDM03.MID",
+          "offset": "23"
+        },
+        {
+          "type": "file",
+          "path": "PDM04.MID",
+          "offset": "24"
+        },
+        {
+          "type": "shell",
+          "path": "naru",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "naru_98",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "21",
+          "title": "PDM01.MID    : SETTLE DOWN"
+        },
+        {
+          "kind": "title",
+          "code": "22",
+          "title": "PDM02.MID    : IVORY ILLUSION"
+        },
+        {
+          "kind": "title",
+          "code": "16",
+          "title": "PD2_M61.MID  : D-NAIL"
+        },
+        {
+          "kind": "title",
+          "code": "13",
+          "title": "PD2_M20.MID  : NIGHT RAID"
+        },
+        {
+          "kind": "title",
+          "code": "20",
+          "title": "PD2_P40.MID  : CALLING ME"
+        },
+        {
+          "kind": "title",
+          "code": "15",
+          "title": "PD2_M50.MID  : OUT FLANKS"
+        },
+        {
+          "kind": "title",
+          "code": "23",
+          "title": "PDM03.MID    : TAKE THE FIELD"
+        },
+        {
+          "kind": "title",
+          "code": "11",
+          "title": "PD2_M01.MID  : MOVE IN ON"
+        },
+        {
+          "kind": "title",
+          "code": "17",
+          "title": "PD2_M71.MID  : POWER DOLLS 2"
+        },
+        {
+          "kind": "title",
+          "code": "24",
+          "title": "PDM04.MID    : STREAMED BLUE"
+        },
+        {
+          "kind": "title",
+          "code": "14",
+          "title": "PD2_M30.MID  : SWITCHED ON \"DOLLS\""
+        },
+        {
+          "kind": "title",
+          "code": "18",
+          "title": "PD2_M80.MID  : NOSTALGIA"
+        },
+        {
+          "kind": "title",
+          "code": "19",
+          "title": "PD2_M90.MID  : ROLLING STEEL"
+        },
+        {
+          "kind": "title",
+          "code": "12",
+          "title": "PD2_M11.MID  :"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/kogado.xml",
+      "source_order": 2913,
+      "archive": "pdoll2d_98",
+      "id": "pdoll2d-98-beep"
+    },
+    {
+      "title": "[PC-9801] ADVANCED POWER DoLLS 2(OPN)",
+      "driver": {
+        "name": "pc98dos",
+        "type": "opn",
+        "alias": "工画堂スタジオ",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "clockmul",
+          "value": "8"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "EMI.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "EMIP.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "CM_NEIRO.DAT",
+          "offset": "0x10"
+        },
+        {
+          "type": "file",
+          "path": "CM_SE.DAT",
+          "offset": "0x11"
+        },
+        {
+          "type": "file",
+          "path": "CM_LFO.DAT",
+          "offset": "0x12"
+        },
+        {
+          "type": "file",
+          "path": "CM_VIV.DAT",
+          "offset": "0x13"
+        },
+        {
+          "type": "file",
+          "path": "CM_ENV.DAT",
+          "offset": "0x14"
+        },
+        {
+          "type": "file",
+          "path": "ADPD_10F.CMD",
+          "offset": "0x20"
+        },
+        {
+          "type": "file",
+          "path": "ADPD_31F.CMD",
+          "offset": "0x21"
+        },
+        {
+          "type": "file",
+          "path": "ADPD_40F.CMD",
+          "offset": "0x22"
+        },
+        {
+          "type": "file",
+          "path": "ADPD_50F.CMD",
+          "offset": "0x23"
+        },
+        {
+          "type": "file",
+          "path": "ADPD_60F.CMD",
+          "offset": "0x24"
+        },
+        {
+          "type": "file",
+          "path": "ADPD_70F.CMD",
+          "offset": "0x25"
+        },
+        {
+          "type": "file",
+          "path": "ADPD_80F.CMD",
+          "offset": "0x26"
+        },
+        {
+          "type": "file",
+          "path": "ADPD_90F.CMD",
+          "offset": "0x27"
+        },
+        {
+          "type": "file",
+          "path": "ADPD_A0F.CMD",
+          "offset": "0x28"
+        },
+        {
+          "type": "file",
+          "path": "ADPD_B0F.CMD",
+          "offset": "0x29"
+        },
+        {
+          "type": "file",
+          "path": "ADPD_C0F.CMD",
+          "offset": "0x2a"
+        },
+        {
+          "type": "shell",
+          "path": "EMI",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "EMIP",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x20",
+          "title": "ADPD_10F.CMD : TIPTOP THRILL (タイトル)"
+        },
+        {
+          "kind": "title",
+          "code": "0x21",
+          "title": "ADPD_31F.CMD : WIND FLAW (編成C3)"
+        },
+        {
+          "kind": "title",
+          "code": "0x22",
+          "title": "ADPD_40F.CMD : WAVE (編成C2)"
+        },
+        {
+          "kind": "title",
+          "code": "0x23",
+          "title": "ADPD_50F.CMD : BELIEVE IN MOTIVATION (エンディング)"
+        },
+        {
+          "kind": "title",
+          "code": "0x24",
+          "title": "ADPD_60F.CMD : QUIET AFTERNOON (作戦失敗)"
+        },
+        {
+          "kind": "title",
+          "code": "0x25",
+          "title": "ADPD_70F.CMD : SPEEDY"
+        },
+        {
+          "kind": "title",
+          "code": "0x26",
+          "title": "ADPD_80F.CMD : FUTURITY (編成C1)"
+        },
+        {
+          "kind": "title",
+          "code": "0x27",
+          "title": "ADPD_90F.CMD : POPPOBOOV (作戦成功)"
+        },
+        {
+          "kind": "title",
+          "code": "0x28",
+          "title": "ADPD_A0F.CMD : J.A.V.E (作戦C1)"
+        },
+        {
+          "kind": "title",
+          "code": "0x29",
+          "title": "ADPD_B0F.CMD : GETTING THERE (作戦C2A)"
+        },
+        {
+          "kind": "title",
+          "code": "0x2a",
+          "title": "ADPD_C0F.CMD : BREATH OF ABYSS (作戦C2B)"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/kogado.xml",
+      "source_order": 2914,
+      "archive": "apdoll2_98",
+      "id": "apdoll2-98-opn"
+    },
+    {
+      "title": "[PC-9801] ADVANCED POWER DoLLS 2(GS)",
+      "driver": {
+        "name": "pc98dos",
+        "type": "beep",
+        "alias": "工画堂スタジオ",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "clockmul",
+          "value": "8"
+        },
+        {
+          "name": "midiout",
+          "value": "1"
+        },
+        {
+          "name": "midiout_type",
+          "value": "4"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "naru_98.com",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "NARU.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "CHORUS.DAT",
+          "offset": "5"
+        },
+        {
+          "type": "file",
+          "path": "REVERB.DAT",
+          "offset": "6"
+        },
+        {
+          "type": "file",
+          "path": "RHYTHM.DAT",
+          "offset": "7"
+        },
+        {
+          "type": "file",
+          "path": "ADPD_10M.MID",
+          "offset": "11"
+        },
+        {
+          "type": "file",
+          "path": "ADPD_30M.MID",
+          "offset": "12"
+        },
+        {
+          "type": "file",
+          "path": "ADPD_40M.MID",
+          "offset": "13"
+        },
+        {
+          "type": "file",
+          "path": "ADPD_50M.MID",
+          "offset": "14"
+        },
+        {
+          "type": "file",
+          "path": "ADPD_60M.MID",
+          "offset": "15"
+        },
+        {
+          "type": "file",
+          "path": "ADPD_70M.MID",
+          "offset": "16"
+        },
+        {
+          "type": "file",
+          "path": "ADPD_80M.MID",
+          "offset": "17"
+        },
+        {
+          "type": "file",
+          "path": "ADPD_90M.MID",
+          "offset": "18"
+        },
+        {
+          "type": "file",
+          "path": "ADPD_A0M.MID",
+          "offset": "19"
+        },
+        {
+          "type": "file",
+          "path": "ADPD_B0M.MID",
+          "offset": "20"
+        },
+        {
+          "type": "file",
+          "path": "ADPD_C0M.MID",
+          "offset": "21"
+        },
+        {
+          "type": "shell",
+          "path": "naru",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "naru_98",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "11",
+          "title": "ADPD_10M.MID : TIPTOP THRILL (タイトル)"
+        },
+        {
+          "kind": "title",
+          "code": "12",
+          "title": "ADPD_30M.MID : WIND FLAW (編成C3)"
+        },
+        {
+          "kind": "title",
+          "code": "13",
+          "title": "ADPD_40M.MID : WAVE (編成C2)"
+        },
+        {
+          "kind": "title",
+          "code": "14",
+          "title": "ADPD_50M.MID : BELIEVE IN MOTIVATION (エンディング)"
+        },
+        {
+          "kind": "title",
+          "code": "15",
+          "title": "ADPD_60M.MID : QUIET AFTERNOON (作戦失敗)"
+        },
+        {
+          "kind": "title",
+          "code": "16",
+          "title": "ADPD_70M.MID : SPEEDY"
+        },
+        {
+          "kind": "title",
+          "code": "17",
+          "title": "ADPD_80M.MID : FUTURITY (編成C1)"
+        },
+        {
+          "kind": "title",
+          "code": "18",
+          "title": "ADPD_90M.MID : POPPOBOOV (作戦成功)"
+        },
+        {
+          "kind": "title",
+          "code": "19",
+          "title": "ADPD_A0M.MID : J.A.V.E (作戦C1)"
+        },
+        {
+          "kind": "title",
+          "code": "20",
+          "title": "ADPD_B0M.MID : GETTING THERE (作戦C2A)"
+        },
+        {
+          "kind": "title",
+          "code": "21",
+          "title": "ADPD_C0M.MID : BREATH OF ABYSS (作戦C2B)"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/kogado.xml",
+      "source_order": 2915,
+      "archive": "apdoll2_98",
+      "id": "apdoll2-98-beep"
+    },
+    {
+      "title": "[PC-9801] Schwarzschild 狂嵐の銀河",
+      "driver": {
+        "name": "pc98vx",
+        "type": "opn",
+        "alias": "工画堂スタジオ",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "bootcs",
+          "value": "0x00e4"
+        },
+        {
+          "name": "bootip",
+          "value": "0x7100"
+        },
+        {
+          "name": "funcvect",
+          "value": "0x7f"
+        },
+        {
+          "name": "dummysndrom",
+          "value": "1"
+        },
+        {
+          "name": "clockmul",
+          "value": "8"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "PROG",
+          "offset": "0x00800"
+        },
+        {
+          "type": "code",
+          "path": "schwarz.bin",
+          "offset": "0x07f40"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x05",
+          "title": "05 : ねこさんちーむBGM"
+        },
+        {
+          "kind": "title",
+          "code": "0x00",
+          "title": "00 : オープニング・テーマ"
+        },
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "01 : 通常1BGM"
+        },
+        {
+          "kind": "title",
+          "code": "0x02",
+          "title": "02 : 通常2BGM"
+        },
+        {
+          "kind": "title",
+          "code": "0x03",
+          "title": "03 : 戦闘のテーマ"
+        },
+        {
+          "kind": "title",
+          "code": "0x04",
+          "title": "04 : レクイエム"
+        },
+        {
+          "kind": "title",
+          "code": "0x06",
+          "title": "06 : エンディング・テーマ"
+        },
+        {
+          "kind": "title",
+          "code": "0x07",
+          "title": "07 : スタッフ･テーマ"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/kogado.xml",
+      "source_order": 2916,
+      "archive": "schwarz98",
+      "id": "schwarz98-opn"
+    },
+    {
+      "title": "[PC-9801] Schwarzschild II 帝國ノ背信",
+      "driver": {
+        "name": "pc98vx",
+        "type": "opn",
+        "alias": "工画堂スタジオ",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "bootcs",
+          "value": "0x00e4"
+        },
+        {
+          "name": "bootip",
+          "value": "0x6c00"
+        },
+        {
+          "name": "funcvect",
+          "value": "0x7f"
+        },
+        {
+          "name": "dummysndrom",
+          "value": "1"
+        },
+        {
+          "name": "clockmul",
+          "value": "8"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "PROG",
+          "offset": "0x00800"
+        },
+        {
+          "type": "code",
+          "path": "schwarz2b.bin",
+          "offset": "0x07a40"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x00",
+          "title": "00 : [Schwarzschild] オープニング･テーマ"
+        },
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "01 : [Schwarzschild] 通常1BGM"
+        },
+        {
+          "kind": "title",
+          "code": "0x02",
+          "title": "02 : [Schwarzschild] 通常2BGM"
+        },
+        {
+          "kind": "title",
+          "code": "0x03",
+          "title": "03 : [Schwarzschild] 戦闘のテーマ"
+        },
+        {
+          "kind": "title",
+          "code": "0x04",
+          "title": "04 : [Schwarzschild] レクイエム"
+        },
+        {
+          "kind": "title",
+          "code": "0x05",
+          "title": "05 : [Schwarzschild] ねこさんちーむBGM"
+        },
+        {
+          "kind": "title",
+          "code": "0x06",
+          "title": "06 : [Schwarzschild] エンディング・テーマ"
+        },
+        {
+          "kind": "title",
+          "code": "0x07",
+          "title": "07 : [Schwarzschild] スタッフ･テーマ"
+        },
+        {
+          "kind": "title",
+          "code": "0x08",
+          "title": "08 : オープニング・テーマ"
+        },
+        {
+          "kind": "title",
+          "code": "0x09",
+          "title": "09 : 通常1BGM"
+        },
+        {
+          "kind": "title",
+          "code": "0x0a",
+          "title": "0A : 通常2BGM"
+        },
+        {
+          "kind": "title",
+          "code": "0x0b",
+          "title": "0B : 戦闘のテーマ"
+        },
+        {
+          "kind": "title",
+          "code": "0x0c",
+          "title": "0C : レクイエム"
+        },
+        {
+          "kind": "title",
+          "code": "0x0d",
+          "title": "0D : ねこさんちーむBGM"
+        },
+        {
+          "kind": "title",
+          "code": "0x0e",
+          "title": "0E : エンディング・テーマ"
+        },
+        {
+          "kind": "title",
+          "code": "0x0f",
+          "title": "0F : スタッフ･テーマ"
+        },
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "10 : 演習モードBGM"
+        },
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "11 : [アルギースの翼]"
+        },
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "12 : [アルギースの翼] 店/メニュー"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "13 : [アルギースの翼]"
+        },
+        {
+          "kind": "title",
+          "code": "0x14",
+          "title": "14 : [アルギースの翼]"
+        },
+        {
+          "kind": "title",
+          "code": "0x15",
+          "title": "15 : [アルギースの翼] ユーザーディスク作成/ゲームオーバー"
+        },
+        {
+          "kind": "title",
+          "code": "0x16",
+          "title": "16 : [アルギースの翼]"
+        },
+        {
+          "kind": "title",
+          "code": "0x17",
+          "title": "17 : [アルギースの翼] フィールド"
+        },
+        {
+          "kind": "title",
+          "code": "0x18",
+          "title": "18 : [アルギースの翼] 街"
+        },
+        {
+          "kind": "title",
+          "code": "0x19",
+          "title": "19 : [アルギースの翼]"
+        },
+        {
+          "kind": "title",
+          "code": "0x1a",
+          "title": "1A : [アルギースの翼] 城/塔"
+        },
+        {
+          "kind": "title",
+          "code": "0x1b",
+          "title": "1B : [アルギースの翼]"
+        },
+        {
+          "kind": "title",
+          "code": "0x1c",
+          "title": "1C : [アルギースの翼]"
+        },
+        {
+          "kind": "title",
+          "code": "0x1d",
+          "title": "1D : [アルギースの翼]"
+        },
+        {
+          "kind": "title",
+          "code": "0x1e",
+          "title": "1E : [アルギースの翼]"
+        },
+        {
+          "kind": "title",
+          "code": "0x1f",
+          "title": "1F : [アルギースの翼] オープニング"
+        },
+        {
+          "kind": "title",
+          "code": "0x20",
+          "title": "20 : [アルギースの翼] 戦闘"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/kogado.xml",
+      "source_order": 2917,
+      "archive": "schwarz2_98",
+      "id": "schwarz2-98-opn"
+    },
+    {
+      "title": "[PC-9801] Schwarzschild III 惑星デスペラン",
+      "driver": {
+        "name": "pc98vx",
+        "type": "opn",
+        "alias": "工画堂スタジオ",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "bootcs",
+          "value": "0x0080"
+        },
+        {
+          "name": "bootip",
+          "value": "0x3000"
+        },
+        {
+          "name": "funcvect",
+          "value": "0x7f"
+        },
+        {
+          "name": "clockmul",
+          "value": "8"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "Z122.COM",
+          "offset": "0x00800"
+        },
+        {
+          "type": "code",
+          "path": "schwarz3.bin",
+          "offset": "0x03800"
+        },
+        {
+          "type": "code",
+          "path": "B000.DAT",
+          "offset": "0x10000"
+        },
+        {
+          "type": "code",
+          "path": "ENDING.BIN",
+          "offset": "0x20000"
+        },
+        {
+          "type": "code",
+          "path": "GAMEMAIN.BIN",
+          "offset": "0x40000"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x0000",
+          "title": "B000.DAT   : 00 : 演奏停止"
+        },
+        {
+          "kind": "title",
+          "code": "0x0001",
+          "title": "B000.DAT   : 01 : ねこさんちーむBGM"
+        },
+        {
+          "kind": "title",
+          "code": "0x0002",
+          "title": "B000.DAT   : 02 : Theme From Schwarzschild III"
+        },
+        {
+          "kind": "title",
+          "code": "0x0201",
+          "title": "GAMEDATA   : 01 : Operation"
+        },
+        {
+          "kind": "title",
+          "code": "0x0202",
+          "title": "GAMEDATA   : 02 : War Songs Part.1"
+        },
+        {
+          "kind": "title",
+          "code": "0x0203",
+          "title": "GAMEDATA   : 03 : Here Comes The Planets!"
+        },
+        {
+          "kind": "title",
+          "code": "0x0204",
+          "title": "GAMEDATA   : 04 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x0205",
+          "title": "GAMEDATA   : 05 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x0206",
+          "title": "GAMEDATA   : 06 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x0207",
+          "title": "GAMEDATA   : 07 : The Dethperant"
+        },
+        {
+          "kind": "title",
+          "code": "0x0208",
+          "title": "GAMEDATA   : 08 : War Songs Part.2"
+        },
+        {
+          "kind": "title",
+          "code": "0x0209",
+          "title": "GAMEDATA   : 09 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x0101",
+          "title": "ENDING.BIN : 01 : Ending Theme Of Schwarzschild III"
+        },
+        {
+          "kind": "comment",
+          "text": "\t<title code=\"0x0102\">ENDING.BIN : 02 : </title> "
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/kogado.xml",
+      "source_order": 2918,
+      "archive": "schwarz3_98",
+      "id": "schwarz3-98-opn"
+    },
+    {
+      "title": "[PC-9801] Schwarzschild IV THE CRADLE END",
+      "driver": {
+        "name": "pc98dos",
+        "type": "opn",
+        "alias": "工画堂スタジオ",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "clockmul",
+          "value": "8"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "schw4_98.com",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "ending.exe",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "cm_neiro.dat",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "cm_se.dat",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "cm_lfo.dat",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "cm_viv.dat",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "cm_env.dat",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "m100.cmd",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "m101.cmd",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "m102.cmd",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "m103.cmd",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "m104.cmd",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "m105.cmd",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "m106.cmd",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "m107.cmd",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "m108.cmd",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "m109.cmd",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "m110.cmd",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "neko.cmd",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "s407.cmd",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "s408.cmd",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "s415.cmd",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "s422.cmd",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "s424.cmd",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "s428.cmd",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "s430.cmd",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "s431.cmd",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "s432.cmd",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "s433.cmd",
+          "offset": "-1"
+        },
+        {
+          "type": "conin",
+          "path": "cm_neiro.dat",
+          "offset": "5"
+        },
+        {
+          "type": "conin",
+          "path": "cm_se.dat",
+          "offset": "6"
+        },
+        {
+          "type": "conin",
+          "path": "cm_lfo.dat",
+          "offset": "7"
+        },
+        {
+          "type": "conin",
+          "path": "cm_viv.dat",
+          "offset": "8"
+        },
+        {
+          "type": "conin",
+          "path": "cm_env.dat",
+          "offset": "9"
+        },
+        {
+          "type": "conin",
+          "path": "m100.cmd",
+          "offset": "11"
+        },
+        {
+          "type": "conin",
+          "path": "m101.cmd",
+          "offset": "12"
+        },
+        {
+          "type": "conin",
+          "path": "m102.cmd",
+          "offset": "13"
+        },
+        {
+          "type": "conin",
+          "path": "m103.cmd",
+          "offset": "14"
+        },
+        {
+          "type": "conin",
+          "path": "m104.cmd",
+          "offset": "15"
+        },
+        {
+          "type": "conin",
+          "path": "m105.cmd",
+          "offset": "16"
+        },
+        {
+          "type": "conin",
+          "path": "m106.cmd",
+          "offset": "17"
+        },
+        {
+          "type": "conin",
+          "path": "m107.cmd",
+          "offset": "18"
+        },
+        {
+          "type": "conin",
+          "path": "m108.cmd",
+          "offset": "19"
+        },
+        {
+          "type": "conin",
+          "path": "m109.cmd",
+          "offset": "20"
+        },
+        {
+          "type": "conin",
+          "path": "m110.cmd",
+          "offset": "21"
+        },
+        {
+          "type": "conin",
+          "path": "neko.cmd",
+          "offset": "22"
+        },
+        {
+          "type": "conin",
+          "path": "s407.cmd",
+          "offset": "23"
+        },
+        {
+          "type": "conin",
+          "path": "s408.cmd",
+          "offset": "24"
+        },
+        {
+          "type": "conin",
+          "path": "s415.cmd",
+          "offset": "25"
+        },
+        {
+          "type": "conin",
+          "path": "s422.cmd",
+          "offset": "26"
+        },
+        {
+          "type": "conin",
+          "path": "s424.cmd",
+          "offset": "27"
+        },
+        {
+          "type": "conin",
+          "path": "s428.cmd",
+          "offset": "28"
+        },
+        {
+          "type": "conin",
+          "path": "s430.cmd",
+          "offset": "29"
+        },
+        {
+          "type": "conin",
+          "path": "s431.cmd",
+          "offset": "30"
+        },
+        {
+          "type": "conin",
+          "path": "s432.cmd",
+          "offset": "31"
+        },
+        {
+          "type": "conin",
+          "path": "s433.cmd",
+          "offset": "32"
+        },
+        {
+          "type": "shell",
+          "path": "schw4_98",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "22",
+          "title": "neko.cmd : ねこさんちーむBGM"
+        },
+        {
+          "kind": "title",
+          "code": "19",
+          "title": "m108.cmd : Theme From Schwarzschild IV"
+        },
+        {
+          "kind": "title",
+          "code": "11",
+          "title": "m100.cmd :"
+        },
+        {
+          "kind": "title",
+          "code": "12",
+          "title": "m101.cmd :"
+        },
+        {
+          "kind": "title",
+          "code": "13",
+          "title": "m102.cmd : Operation 2"
+        },
+        {
+          "kind": "title",
+          "code": "14",
+          "title": "m103.cmd :"
+        },
+        {
+          "kind": "title",
+          "code": "15",
+          "title": "m104.cmd : War Songs Part.3"
+        },
+        {
+          "kind": "title",
+          "code": "16",
+          "title": "m105.cmd :"
+        },
+        {
+          "kind": "title",
+          "code": "17",
+          "title": "m106.cmd :"
+        },
+        {
+          "kind": "title",
+          "code": "18",
+          "title": "m107.cmd : Operation 1"
+        },
+        {
+          "kind": "title",
+          "code": "20",
+          "title": "m109.cmd :"
+        },
+        {
+          "kind": "title",
+          "code": "21",
+          "title": "m110.cmd :"
+        },
+        {
+          "kind": "title",
+          "code": "23",
+          "title": "s407.cmd :"
+        },
+        {
+          "kind": "title",
+          "code": "24",
+          "title": "s408.cmd :"
+        },
+        {
+          "kind": "title",
+          "code": "25",
+          "title": "s415.cmd :"
+        },
+        {
+          "kind": "title",
+          "code": "26",
+          "title": "s422.cmd :"
+        },
+        {
+          "kind": "title",
+          "code": "27",
+          "title": "s424.cmd : War Songs Part.4"
+        },
+        {
+          "kind": "title",
+          "code": "28",
+          "title": "s428.cmd : The Cradle End"
+        },
+        {
+          "kind": "title",
+          "code": "29",
+          "title": "s430.cmd :"
+        },
+        {
+          "kind": "title",
+          "code": "30",
+          "title": "s431.cmd :"
+        },
+        {
+          "kind": "title",
+          "code": "31",
+          "title": "s432.cmd :"
+        },
+        {
+          "kind": "title",
+          "code": "32",
+          "title": "s433.cmd : Ending Theme Of Schwarzschild IV"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/kogado.xml",
+      "source_order": 2919,
+      "archive": "schw4_98",
+      "id": "schw4-98-opn"
+    },
+    {
+      "title": "[X1] アルギースの翼(OPM)",
+      "driver": {
+        "name": "x1",
+        "type": "opm",
+        "alias": "工画堂スタジオ",
+        "platform": "SHARP X1"
+      },
+      "options": [
+        {
+          "name": "mdata_addr",
+          "value": "0xf000"
+        },
+        {
+          "name": "mdata_size",
+          "value": "0x1000"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "PATCH",
+          "offset": "0x0000"
+        },
+        {
+          "type": "code",
+          "path": "DRIVER",
+          "offset": "0xe000"
+        },
+        {
+          "type": "code",
+          "path": "MUS00",
+          "offset": "0xf000"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS00",
+          "offset": "0x00"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS01",
+          "offset": "0x01"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS02",
+          "offset": "0x02"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS03",
+          "offset": "0x03"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS04",
+          "offset": "0x04"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS05",
+          "offset": "0x05"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x00000000",
+          "title": "#00-0 : オープニング"
+        },
+        {
+          "kind": "comment",
+          "text": "\t<title code=\"0x01000000\">#00-1 : エンディング</title> "
+        },
+        {
+          "kind": "comment",
+          "text": "\t<title code=\"0x02000000\">#00-2 : スタッフロール</title> "
+        },
+        {
+          "kind": "title",
+          "code": "0x00000001",
+          "title": "#01-0 : 店/メニュー"
+        },
+        {
+          "kind": "title",
+          "code": "0x01000001",
+          "title": "#01-1 : 戦闘"
+        },
+        {
+          "kind": "title",
+          "code": "0x02000001",
+          "title": "#01-2 : カズノヒロブ"
+        },
+        {
+          "kind": "title",
+          "code": "0x03000001",
+          "title": "#01-3 : フィールド"
+        },
+        {
+          "kind": "title",
+          "code": "0x04000001",
+          "title": "#01-4 : 塔"
+        },
+        {
+          "kind": "comment",
+          "text": "\t<title code=\"0x00000002\">#02-0 : 店/メニュー</title> "
+        },
+        {
+          "kind": "comment",
+          "text": "\t<title code=\"0x01000002\">#02-1 : 戦闘</title> "
+        },
+        {
+          "kind": "comment",
+          "text": "\t<title code=\"0x02000002\">#02-2 : カズノヒロブ</title> "
+        },
+        {
+          "kind": "title",
+          "code": "0x03000002",
+          "title": "#02-3 : アテパル城"
+        },
+        {
+          "kind": "title",
+          "code": "0x04000002",
+          "title": "#02-4 : 天空の王宮"
+        },
+        {
+          "kind": "title",
+          "code": "0x05000002",
+          "title": "#02-5 : 妖獣の城"
+        },
+        {
+          "kind": "comment",
+          "text": "\t<title code=\"0x00000003\">#03-0 : 店/メニュー</title> "
+        },
+        {
+          "kind": "comment",
+          "text": "\t<title code=\"0x01000003\">#03-1 : 戦闘</title> "
+        },
+        {
+          "kind": "comment",
+          "text": "\t<title code=\"0x02000003\">#03-2 : カズノヒロブ</title> "
+        },
+        {
+          "kind": "title",
+          "code": "0x03000003",
+          "title": "#03-3 : 城"
+        },
+        {
+          "kind": "title",
+          "code": "0x04000003",
+          "title": "#03-4 : 天空界"
+        },
+        {
+          "kind": "comment",
+          "text": "\t<title code=\"0x00000004\">#04-0 : 店/メニュー</title> "
+        },
+        {
+          "kind": "title",
+          "code": "0x01000004",
+          "title": "#04-1 : ユーザーディスク作成/ゲームオーバー"
+        },
+        {
+          "kind": "comment",
+          "text": "\t<title code=\"0x02000004\">#04-2 : スタッフロール</title> "
+        },
+        {
+          "kind": "title",
+          "code": "0x03000004",
+          "title": "#04-3 : 街"
+        },
+        {
+          "kind": "comment",
+          "text": "\t<title code=\"0x00000005\">#05-0 : オープニング</title> "
+        },
+        {
+          "kind": "title",
+          "code": "0x01000005",
+          "title": "#05-1 : エンディング"
+        },
+        {
+          "kind": "title",
+          "code": "0x02000005",
+          "title": "#05-2 : スタッフロール"
+        },
+        {
+          "kind": "title",
+          "code": "0x03000005",
+          "title": "#05-3 :"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/kogado.xml",
+      "source_order": 2920,
+      "archive": "x1arugies",
+      "id": "x1arugies-opm"
+    },
+    {
+      "title": "[X1] アルギースの翼(PSG)",
+      "driver": {
+        "name": "x1",
+        "type": "psg",
+        "alias": "工画堂スタジオ",
+        "platform": "SHARP X1"
+      },
+      "options": [
+        {
+          "name": "mdata_addr",
+          "value": "0xf000"
+        },
+        {
+          "name": "mdata_size",
+          "value": "0x1000"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "PATCH",
+          "offset": "0x0000"
+        },
+        {
+          "type": "code",
+          "path": "DRIVER",
+          "offset": "0xe000"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS00",
+          "offset": "0x00"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS01",
+          "offset": "0x01"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS02",
+          "offset": "0x02"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS03",
+          "offset": "0x03"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS04",
+          "offset": "0x04"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS05",
+          "offset": "0x05"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x00000000",
+          "title": "#00-0 : オープニング"
+        },
+        {
+          "kind": "comment",
+          "text": "\t<title code=\"0x01000000\">#00-1 : エンディング</title> "
+        },
+        {
+          "kind": "comment",
+          "text": "\t<title code=\"0x02000000\">#00-2 : スタッフロール</title> "
+        },
+        {
+          "kind": "title",
+          "code": "0x00000001",
+          "title": "#01-0 : 店/メニュー"
+        },
+        {
+          "kind": "title",
+          "code": "0x01000001",
+          "title": "#01-1 : 戦闘"
+        },
+        {
+          "kind": "title",
+          "code": "0x02000001",
+          "title": "#01-2 : カズノヒロブ"
+        },
+        {
+          "kind": "title",
+          "code": "0x03000001",
+          "title": "#01-3 : フィールド"
+        },
+        {
+          "kind": "title",
+          "code": "0x04000001",
+          "title": "#01-4 : 塔"
+        },
+        {
+          "kind": "comment",
+          "text": "\t<title code=\"0x00000002\">#02-0 : 店/メニュー</title> "
+        },
+        {
+          "kind": "comment",
+          "text": "\t<title code=\"0x01000002\">#02-1 : 戦闘</title> "
+        },
+        {
+          "kind": "comment",
+          "text": "\t<title code=\"0x02000002\">#02-2 : カズノヒロブ</title> "
+        },
+        {
+          "kind": "title",
+          "code": "0x03000002",
+          "title": "#02-3 : アテパル城"
+        },
+        {
+          "kind": "title",
+          "code": "0x04000002",
+          "title": "#02-4 : 天空の王宮"
+        },
+        {
+          "kind": "title",
+          "code": "0x05000002",
+          "title": "#02-5 : 妖獣の城"
+        },
+        {
+          "kind": "comment",
+          "text": "\t<title code=\"0x00000003\">#03-0 : 店/メニュー</title> "
+        },
+        {
+          "kind": "comment",
+          "text": "\t<title code=\"0x01000003\">#03-1 : 戦闘</title> "
+        },
+        {
+          "kind": "comment",
+          "text": "\t<title code=\"0x02000003\">#03-2 : カズノヒロブ</title> "
+        },
+        {
+          "kind": "title",
+          "code": "0x03000003",
+          "title": "#03-3 : 城"
+        },
+        {
+          "kind": "title",
+          "code": "0x04000003",
+          "title": "#03-4 : 天空界"
+        },
+        {
+          "kind": "comment",
+          "text": "\t<title code=\"0x00000004\">#04-0 : 店/メニュー</title> "
+        },
+        {
+          "kind": "title",
+          "code": "0x01000004",
+          "title": "#04-1 : ユーザーディスク作成/ゲームオーバー"
+        },
+        {
+          "kind": "comment",
+          "text": "\t<title code=\"0x02000004\">#04-2 : スタッフロール</title> "
+        },
+        {
+          "kind": "title",
+          "code": "0x03000004",
+          "title": "#04-3 : 街"
+        },
+        {
+          "kind": "comment",
+          "text": "\t<title code=\"0x00000005\">#05-0 : オープニング</title> "
+        },
+        {
+          "kind": "title",
+          "code": "0x01000005",
+          "title": "#05-1 : エンディング"
+        },
+        {
+          "kind": "title",
+          "code": "0x02000005",
+          "title": "#05-2 : スタッフロール"
+        },
+        {
+          "kind": "title",
+          "code": "0x03000005",
+          "title": "#05-3 :"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/kogado.xml",
+      "source_order": 2921,
+      "archive": "x1arugies",
+      "id": "x1arugies-psg"
+    },
+    {
+      "title": "[X68000] Schwarzschild 狂嵐の銀河",
+      "driver": {
+        "name": "x68k",
+        "type": "generic",
+        "alias": "工画堂スタジオ",
+        "platform": "SHARP X68000"
+      },
+      "options": [],
+      "assets": [
+        {
+          "type": "code",
+          "path": "opmdrv.bin"
+        },
+        {
+          "type": "x",
+          "path": "OPMDRV.X",
+          "offset": "0x08000"
+        },
+        {
+          "type": "code",
+          "path": "OFF.OPM",
+          "offset": "0x20000"
+        },
+        {
+          "type": "code",
+          "path": "NEKO.OPM",
+          "offset": "0x24000"
+        },
+        {
+          "type": "code",
+          "path": "OPEN.OPM",
+          "offset": "0x28000"
+        },
+        {
+          "type": "code",
+          "path": "M1.OPM",
+          "offset": "0x2c000"
+        },
+        {
+          "type": "code",
+          "path": "M2.OPM",
+          "offset": "0x30000"
+        },
+        {
+          "type": "code",
+          "path": "M3.OPM",
+          "offset": "0x34000"
+        },
+        {
+          "type": "code",
+          "path": "M4.OPM",
+          "offset": "0x38000"
+        },
+        {
+          "type": "code",
+          "path": "END.OPM",
+          "offset": "0x3c000"
+        },
+        {
+          "type": "code",
+          "path": "STAFF.OPM",
+          "offset": "0x40000"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x00",
+          "title": "OFF.OPM   : [STOP]"
+        },
+        {
+          "kind": "title",
+          "code": "0x02",
+          "title": "NEKO.OPM  : ねこさんちーむBGM"
+        },
+        {
+          "kind": "title",
+          "code": "0x03",
+          "title": "OPEN.OPM  : オープニング・テーマ"
+        },
+        {
+          "kind": "title",
+          "code": "0x04",
+          "title": "M1.OPM    : 通常1BGM"
+        },
+        {
+          "kind": "title",
+          "code": "0x05",
+          "title": "M2.OPM    : 通常2BGM"
+        },
+        {
+          "kind": "title",
+          "code": "0x06",
+          "title": "M3.OPM    : 戦闘のテーマ"
+        },
+        {
+          "kind": "title",
+          "code": "0x07",
+          "title": "M4.OPM    : レクイエム"
+        },
+        {
+          "kind": "title",
+          "code": "0x08",
+          "title": "END.OPM   : エンディング・テーマ"
+        },
+        {
+          "kind": "title",
+          "code": "0x09",
+          "title": "STAFF.OPM : スタッフ･テーマ"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/kogado.xml",
+      "source_order": 2922,
+      "archive": "schw68snd",
+      "id": "schw68snd-generic"
+    },
+    {
+      "title": "[MSX] NAVITUNE ドラゴン航海記",
+      "driver": {
+        "name": "msx",
+        "type": "generic",
+        "alias": "工画堂スタジオ",
+        "platform": "MSX"
+      },
+      "options": [
+        {
+          "name": "mdata_addr",
+          "value": "0xa072"
+        },
+        {
+          "name": "mdata_size",
+          "value": "0x1400"
+        },
+        {
+          "name": "mfile_size",
+          "value": "0x1400"
+        },
+        {
+          "name": "init_pc",
+          "value": "0x400"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "patch",
+          "offset": "0x0400"
+        },
+        {
+          "type": "code",
+          "path": "PRG.BIN",
+          "offset": "0x81B0"
+        },
+        {
+          "type": "code",
+          "path": "NAVIMUS.O",
+          "offset": "0x4000"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "range",
+          "min": "0x00",
+          "max": "0x09",
+          "title_format": "BGM 0x%02x",
+          "extcode": "1"
+        },
+        {
+          "kind": "range",
+          "min": "0x80",
+          "max": "0x9c",
+          "title_format": "SE 0x%02x",
+          "extcode": "1"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/kogado.xml",
+      "source_order": 2923,
+      "archive": "navitn_msx",
+      "id": "navitn-msx-generic"
+    },
+    {
+      "title": "[MSX] 原宿AFTeR DARK",
+      "driver": {
+        "name": "msx",
+        "type": "generic",
+        "alias": "工画堂スタジオ",
+        "platform": "MSX"
+      },
+      "options": [
+        {
+          "name": "init_pc",
+          "value": "0x400"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "patch",
+          "offset": "0x0400"
+        },
+        {
+          "type": "code",
+          "path": "MUSIC.COM",
+          "offset": "0xC800"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x00",
+          "title": "オープニング"
+        },
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "告白"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/kogado.xml",
+      "source_order": 2924,
+      "archive": "aftdark_msx",
+      "id": "aftdark-msx-generic"
+    },
+    {
+      "title": "[MSX] 時空の花嫁(OPLL)",
+      "driver": {
+        "name": "msx",
+        "type": "generic",
+        "alias": "工画堂スタジオ",
+        "platform": "MSX"
+      },
+      "options": [
+        {
+          "name": "mdata_addr",
+          "value": "0xd200"
+        },
+        {
+          "name": "mdata_size",
+          "value": "0xc00"
+        },
+        {
+          "name": "mfile_size",
+          "value": "0xc00"
+        },
+        {
+          "name": "init_pc",
+          "value": "0x400"
+        },
+        {
+          "name": "use_opll",
+          "value": "0x01"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "patch",
+          "offset": "0x0400"
+        },
+        {
+          "type": "code",
+          "path": "MUSIC.COM",
+          "offset": "0xCE00"
+        },
+        {
+          "type": "bgm",
+          "path": "B001.BIN",
+          "offset": "0x00"
+        },
+        {
+          "type": "bgm",
+          "path": "B002.BIN",
+          "offset": "0x01"
+        },
+        {
+          "type": "bgm",
+          "path": "B003.BIN",
+          "offset": "0x02"
+        },
+        {
+          "type": "bgm",
+          "path": "B004.BIN",
+          "offset": "0x03"
+        },
+        {
+          "type": "bgm",
+          "path": "B005.BIN",
+          "offset": "0x04"
+        },
+        {
+          "type": "bgm",
+          "path": "B006.BIN",
+          "offset": "0x05"
+        },
+        {
+          "type": "bgm",
+          "path": "B007.BIN",
+          "offset": "0x06"
+        },
+        {
+          "type": "bgm",
+          "path": "B008.BIN",
+          "offset": "0x07"
+        },
+        {
+          "type": "bgm",
+          "path": "B009.BIN",
+          "offset": "0x08"
+        },
+        {
+          "type": "bgm",
+          "path": "B010.BIN",
+          "offset": "0x09"
+        },
+        {
+          "type": "bgm",
+          "path": "MUSIC1.COM",
+          "offset": "0x0a"
+        },
+        {
+          "type": "bgm",
+          "path": "MUSIC3.COM",
+          "offset": "0x0b"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x0a",
+          "title": "MUSIC1.COM : オープニング"
+        },
+        {
+          "kind": "title",
+          "code": "0x0b",
+          "title": "MUSIC3.COM : オープニング効果音"
+        },
+        {
+          "kind": "title",
+          "code": "0x00",
+          "title": "B001.BIN   : デモ曲"
+        },
+        {
+          "kind": "title",
+          "code": "0x06",
+          "title": "B007.BIN   : タイトル"
+        },
+        {
+          "kind": "title",
+          "code": "0x08",
+          "title": "B009.BIN   : 街"
+        },
+        {
+          "kind": "title",
+          "code": "0x02",
+          "title": "B003.BIN   : キャンプ"
+        },
+        {
+          "kind": "title",
+          "code": "0x04",
+          "title": "B005.BIN   : 戦闘"
+        },
+        {
+          "kind": "title",
+          "code": "0x05",
+          "title": "B006.BIN   : ゲームオーバー"
+        },
+        {
+          "kind": "title",
+          "code": "0x09",
+          "title": "B010.BIN   : タイムマシン"
+        },
+        {
+          "kind": "title",
+          "code": "0x03",
+          "title": "B004.BIN   : ラストダンジョン"
+        },
+        {
+          "kind": "title",
+          "code": "0x07",
+          "title": "B008.BIN   : ラスボス前"
+        },
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "B002.BIN   : エンディング"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/kogado.xml",
+      "source_order": 2925,
+      "archive": "jiku_msx",
+      "id": "jiku-msx-generic"
+    },
+    {
+      "title": "[MSX] 時空の花嫁(PSG)",
+      "driver": {
+        "name": "msx",
+        "type": "generic",
+        "alias": "工画堂スタジオ",
+        "platform": "MSX"
+      },
+      "options": [
+        {
+          "name": "mdata_addr",
+          "value": "0xd200"
+        },
+        {
+          "name": "mdata_size",
+          "value": "0xc00"
+        },
+        {
+          "name": "mfile_size",
+          "value": "0xc00"
+        },
+        {
+          "name": "init_pc",
+          "value": "0x400"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "patch",
+          "offset": "0x0400"
+        },
+        {
+          "type": "code",
+          "path": "MUSIC.COM",
+          "offset": "0xCE00"
+        },
+        {
+          "type": "bgm",
+          "path": "B001.BIN",
+          "offset": "0x00"
+        },
+        {
+          "type": "bgm",
+          "path": "B002.BIN",
+          "offset": "0x01"
+        },
+        {
+          "type": "bgm",
+          "path": "B003.BIN",
+          "offset": "0x02"
+        },
+        {
+          "type": "bgm",
+          "path": "B004.BIN",
+          "offset": "0x03"
+        },
+        {
+          "type": "bgm",
+          "path": "B005.BIN",
+          "offset": "0x04"
+        },
+        {
+          "type": "bgm",
+          "path": "B006.BIN",
+          "offset": "0x05"
+        },
+        {
+          "type": "bgm",
+          "path": "B007.BIN",
+          "offset": "0x06"
+        },
+        {
+          "type": "bgm",
+          "path": "B008.BIN",
+          "offset": "0x07"
+        },
+        {
+          "type": "bgm",
+          "path": "B009.BIN",
+          "offset": "0x08"
+        },
+        {
+          "type": "bgm",
+          "path": "B010.BIN",
+          "offset": "0x09"
+        },
+        {
+          "type": "bgm",
+          "path": "MUSIC1.COM",
+          "offset": "0x0a"
+        },
+        {
+          "type": "bgm",
+          "path": "MUSIC3.COM",
+          "offset": "0x0b"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x0a",
+          "title": "MUSIC1.COM : オープニング"
+        },
+        {
+          "kind": "title",
+          "code": "0x0b",
+          "title": "MUSIC3.COM : オープニング効果音"
+        },
+        {
+          "kind": "title",
+          "code": "0x00",
+          "title": "B001.BIN   : デモ曲"
+        },
+        {
+          "kind": "title",
+          "code": "0x06",
+          "title": "B007.BIN   : タイトル"
+        },
+        {
+          "kind": "title",
+          "code": "0x08",
+          "title": "B009.BIN   : 街"
+        },
+        {
+          "kind": "title",
+          "code": "0x02",
+          "title": "B003.BIN   : キャンプ"
+        },
+        {
+          "kind": "title",
+          "code": "0x04",
+          "title": "B005.BIN   : 戦闘"
+        },
+        {
+          "kind": "title",
+          "code": "0x05",
+          "title": "B006.BIN   : ゲームオーバー"
+        },
+        {
+          "kind": "title",
+          "code": "0x09",
+          "title": "B010.BIN   : タイムマシン"
+        },
+        {
+          "kind": "title",
+          "code": "0x03",
+          "title": "B004.BIN   : ラストダンジョン"
+        },
+        {
+          "kind": "title",
+          "code": "0x07",
+          "title": "B008.BIN   : ラスボス前"
+        },
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "B002.BIN   : エンディング"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/kogado.xml",
+      "source_order": 2926,
+      "archive": "jiku_msx",
+      "id": "jiku-msx-generic-2"
+    },
+    {
+      "title": "[MSX] PSYCHIC WAR - COSMIC SOLDIER 2 -",
+      "driver": {
+        "name": "msx",
+        "type": "generic",
+        "alias": "工画堂スタジオ",
+        "platform": "MSX"
+      },
+      "options": [
+        {
+          "name": "mdata_addr",
+          "value": "0x4000"
+        },
+        {
+          "name": "mdata_size",
+          "value": "0x1800"
+        },
+        {
+          "name": "mfile_size",
+          "value": "0x1800"
+        },
+        {
+          "name": "init_pc",
+          "value": "0x0400"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "patch",
+          "offset": "0x0400"
+        },
+        {
+          "type": "code",
+          "path": "RPGRUN.COM",
+          "offset": "0x8400"
+        },
+        {
+          "type": "bgm",
+          "path": "MDATA1.COM",
+          "offset": "0x00"
+        },
+        {
+          "type": "bgm",
+          "path": "MDATA2.COM",
+          "offset": "0x01"
+        },
+        {
+          "type": "bgm",
+          "path": "MDATA3.COM",
+          "offset": "0x02"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x0600",
+          "title": "MDATA1.COM:06 : オープニング 「起の序曲」"
+        },
+        {
+          "kind": "title",
+          "code": "0x0000",
+          "title": "MDATA1.COM:00 : アンドロイドのテーマ 「君にはチャイナ服がよく似合う」"
+        },
+        {
+          "kind": "comment",
+          "text": "\n\t\t\t<title code=\"0x0001\">MDATA2.COM:00 : アンドロイドのテーマ 「君にはチャイナ服がよく似合う」</title>\n\t\t\t  "
+        },
+        {
+          "kind": "title",
+          "code": "0x0201",
+          "title": "MDATA2.COM:02 : 帝国のテーマ 「悪意の象徴」"
+        },
+        {
+          "kind": "title",
+          "code": "0x0301",
+          "title": "MDATA2.COM:03 : 戦闘のテーマ 「サイキック・バトル」"
+        },
+        {
+          "kind": "title",
+          "code": "0x0101",
+          "title": "MDATA2.COM:01 : レクイエム 「君よ静かに眠れ」"
+        },
+        {
+          "kind": "title",
+          "code": "0x0802",
+          "title": "MDATA3.COM:08 : エンディング 「新たなる予感」 #1"
+        },
+        {
+          "kind": "title",
+          "code": "0x0902",
+          "title": "MDATA3.COM:09 : エンディング 「新たなる予感」 #2"
+        },
+        {
+          "kind": "title",
+          "code": "0x0a02",
+          "title": "MDATA3.COM:0A : ばんざい! 「大団円」 #1"
+        },
+        {
+          "kind": "title",
+          "code": "0x0b02",
+          "title": "MDATA3.COM:0B : ばんざい! 「大団円」 #2"
+        },
+        {
+          "kind": "title",
+          "code": "0x0501",
+          "title": "MDATA2.COM:05 : 警報"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/kogado.xml",
+      "source_order": 2927,
+      "archive": "psywar_msx",
+      "id": "psywar-msx-generic"
+    },
+    {
+      "title": "[MSX] Schwarzschild 狂嵐の銀河",
+      "driver": {
+        "name": "msx",
+        "type": "generic",
+        "alias": "工画堂スタジオ",
+        "platform": "MSX"
+      },
+      "options": [
+        {
+          "name": "mdata_addr",
+          "value": "0xa000"
+        },
+        {
+          "name": "mdata_size",
+          "value": "0x1000"
+        },
+        {
+          "name": "mfile_size",
+          "value": "0x1000"
+        },
+        {
+          "name": "init_pc",
+          "value": "0x0400"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "patch",
+          "offset": "0x0400"
+        },
+        {
+          "type": "code",
+          "path": "DRIVER.BIN",
+          "offset": "0xB000"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS00.BIN",
+          "offset": "0x00"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS01.BIN",
+          "offset": "0x01"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS02.BIN",
+          "offset": "0x02"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS03.BIN",
+          "offset": "0x03"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS04.BIN",
+          "offset": "0x04"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS05.BIN",
+          "offset": "0x05"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS06.BIN",
+          "offset": "0x06"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS07.BIN",
+          "offset": "0x07"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x0000",
+          "title": "ねこさんちーむBGM"
+        },
+        {
+          "kind": "title",
+          "code": "0x0001",
+          "title": "オープニング・テーマ"
+        },
+        {
+          "kind": "title",
+          "code": "0x0004",
+          "title": "通常1BGM"
+        },
+        {
+          "kind": "title",
+          "code": "0x0005",
+          "title": "通常2BGM"
+        },
+        {
+          "kind": "title",
+          "code": "0x0006",
+          "title": "戦闘のテーマ"
+        },
+        {
+          "kind": "title",
+          "code": "0x0007",
+          "title": "レクイエム"
+        },
+        {
+          "kind": "title",
+          "code": "0x0002",
+          "title": "エンディング・テーマ"
+        },
+        {
+          "kind": "title",
+          "code": "0x0003",
+          "title": "スタッフ･テーマ"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/kogado.xml",
+      "source_order": 2928,
+      "archive": "schwarz_msx",
+      "id": "schwarz-msx-generic"
+    },
+    {
+      "title": "[MSX] Schwarzschild II 帝國ノ背信",
+      "driver": {
+        "name": "msx",
+        "type": "generic",
+        "alias": "工画堂スタジオ",
+        "platform": "MSX"
+      },
+      "options": [
+        {
+          "name": "mdata_addr",
+          "value": "0xa000"
+        },
+        {
+          "name": "mdata_size",
+          "value": "0x1000"
+        },
+        {
+          "name": "mfile_size",
+          "value": "0x1000"
+        },
+        {
+          "name": "init_pc",
+          "value": "0x0400"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "patch",
+          "offset": "0x0400"
+        },
+        {
+          "type": "code",
+          "path": "DRIVER.BIN",
+          "offset": "0xB000"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS00.BIN",
+          "offset": "0x00"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS01.BIN",
+          "offset": "0x01"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS02.BIN",
+          "offset": "0x02"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS03.BIN",
+          "offset": "0x03"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS04.BIN",
+          "offset": "0x04"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS05.BIN",
+          "offset": "0x05"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS06.BIN",
+          "offset": "0x06"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS07.BIN",
+          "offset": "0x07"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS08.BIN",
+          "offset": "0x08"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x0000",
+          "title": "ねこさんちーむBGM"
+        },
+        {
+          "kind": "title",
+          "code": "0x0001",
+          "title": "オープニング・テーマ"
+        },
+        {
+          "kind": "title",
+          "code": "0x0004",
+          "title": "通常1BGM"
+        },
+        {
+          "kind": "title",
+          "code": "0x0005",
+          "title": "通常2BGM"
+        },
+        {
+          "kind": "title",
+          "code": "0x0006",
+          "title": "戦闘のテーマ"
+        },
+        {
+          "kind": "title",
+          "code": "0x0007",
+          "title": "レクイエム"
+        },
+        {
+          "kind": "title",
+          "code": "0x0008",
+          "title": "演習モードBGM"
+        },
+        {
+          "kind": "title",
+          "code": "0x0002",
+          "title": "エンディング･テーマ"
+        },
+        {
+          "kind": "title",
+          "code": "0x0003",
+          "title": "スタッフ･テーマ"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/kogado.xml",
+      "source_order": 2929,
+      "archive": "schwarz2_msx",
+      "id": "schwarz2-msx-generic"
+    },
+    {
+      "title": "[MSX] アルギースの翼",
+      "driver": {
+        "name": "msx",
+        "type": "generic",
+        "alias": "工画堂スタジオ",
+        "platform": "MSX"
+      },
+      "options": [
+        {
+          "name": "mdata_addr",
+          "value": "0xb000"
+        },
+        {
+          "name": "mdata_size",
+          "value": "0x1000"
+        },
+        {
+          "name": "mfile_size",
+          "value": "0x1000"
+        },
+        {
+          "name": "init_pc",
+          "value": "0x0400"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "patch",
+          "offset": "0x0400"
+        },
+        {
+          "type": "code",
+          "path": "DRIVER.BIN",
+          "offset": "0xd000"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS00.BIN",
+          "offset": "0x00"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS01.BIN",
+          "offset": "0x01"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS02.BIN",
+          "offset": "0x02"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS03.BIN",
+          "offset": "0x03"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS04.BIN",
+          "offset": "0x04"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x0004",
+          "title": "オープニング"
+        },
+        {
+          "kind": "title",
+          "code": "0x0303",
+          "title": "街"
+        },
+        {
+          "kind": "title",
+          "code": "0x0300",
+          "title": "フィールド"
+        },
+        {
+          "kind": "title",
+          "code": "0x0000",
+          "title": "店/メニュー"
+        },
+        {
+          "kind": "title",
+          "code": "0x0100",
+          "title": "戦闘"
+        },
+        {
+          "kind": "title",
+          "code": "0x0302",
+          "title": "城"
+        },
+        {
+          "kind": "title",
+          "code": "0x0400",
+          "title": "塔"
+        },
+        {
+          "kind": "title",
+          "code": "0x0301",
+          "title": "アテパル城"
+        },
+        {
+          "kind": "title",
+          "code": "0x0402",
+          "title": "天空界"
+        },
+        {
+          "kind": "title",
+          "code": "0x0401",
+          "title": "天空の王宮"
+        },
+        {
+          "kind": "title",
+          "code": "0x0501",
+          "title": "妖獣の城"
+        },
+        {
+          "kind": "title",
+          "code": "0x0200",
+          "title": "カズノヒロブ"
+        },
+        {
+          "kind": "title",
+          "code": "0x0103",
+          "title": "ゲームオーバー"
+        },
+        {
+          "kind": "title",
+          "code": "0x0104",
+          "title": "エンディング"
+        },
+        {
+          "kind": "title",
+          "code": "0x0304",
+          "title": "スタッフロール"
+        },
+        {
+          "kind": "title",
+          "code": "0x0204",
+          "title": "???"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/kogado.xml",
+      "source_order": 2930,
+      "archive": "arugies_msx",
+      "id": "arugies-msx-generic"
+    },
+    {
+      "title": "[MSX] 魔晶伝紀ラ・ヴァルー(OPLL)",
+      "driver": {
+        "name": "msx",
+        "type": "generic",
+        "alias": "工画堂スタジオ",
+        "platform": "MSX"
+      },
+      "options": [
+        {
+          "name": "mdata_addr",
+          "value": "0xca00"
+        },
+        {
+          "name": "mdata_size",
+          "value": "0x0b00"
+        },
+        {
+          "name": "mfile_size",
+          "value": "0x0b00"
+        },
+        {
+          "name": "init_pc",
+          "value": "0x0400"
+        },
+        {
+          "name": "use_opll",
+          "value": "0x01"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "patch",
+          "offset": "0x0400"
+        },
+        {
+          "type": "code",
+          "path": "DRIVER.BIN",
+          "offset": "0xD000"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS00.BIN",
+          "offset": "0x00"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS01.BIN",
+          "offset": "0x01"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS02.BIN",
+          "offset": "0x02"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS03.BIN",
+          "offset": "0x03"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS04.BIN",
+          "offset": "0x04"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS05.BIN",
+          "offset": "0x05"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS06.BIN",
+          "offset": "0x06"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS07.BIN",
+          "offset": "0x07"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS08.BIN",
+          "offset": "0x08"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS09.BIN",
+          "offset": "0x09"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS0A.BIN",
+          "offset": "0x0a"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS0B.BIN",
+          "offset": "0x0b"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS0C.BIN",
+          "offset": "0x0c"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x06",
+          "title": "工画堂ロゴ/アイテムゲット"
+        },
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "デモ/ゲームオーバー"
+        },
+        {
+          "kind": "title",
+          "code": "0x0b",
+          "title": "タイトル"
+        },
+        {
+          "kind": "title",
+          "code": "0x00",
+          "title": "村/フィールド"
+        },
+        {
+          "kind": "title",
+          "code": "0x05",
+          "title": "洞窟"
+        },
+        {
+          "kind": "title",
+          "code": "0x07",
+          "title": "ソームリエの塔"
+        },
+        {
+          "kind": "title",
+          "code": "0x0c",
+          "title": "荒野"
+        },
+        {
+          "kind": "title",
+          "code": "0x09",
+          "title": "鉱山"
+        },
+        {
+          "kind": "title",
+          "code": "0x0a",
+          "title": "水の城"
+        },
+        {
+          "kind": "title",
+          "code": "0x08",
+          "title": "ザンゼリアン城"
+        },
+        {
+          "kind": "title",
+          "code": "0x03",
+          "title": "戦闘"
+        },
+        {
+          "kind": "title",
+          "code": "0x04",
+          "title": "キャンプ"
+        },
+        {
+          "kind": "title",
+          "code": "0x02",
+          "title": "エンディング"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/kogado.xml",
+      "source_order": 2931,
+      "archive": "lav_msx",
+      "id": "lav-msx-generic"
+    },
+    {
+      "title": "[MSX] 魔晶伝紀ラ・ヴァルー(PSG)",
+      "driver": {
+        "name": "msx",
+        "type": "generic",
+        "alias": "工画堂スタジオ",
+        "platform": "MSX"
+      },
+      "options": [
+        {
+          "name": "mdata_addr",
+          "value": "0xca00"
+        },
+        {
+          "name": "mdata_size",
+          "value": "0x0b00"
+        },
+        {
+          "name": "mfile_size",
+          "value": "0x0b00"
+        },
+        {
+          "name": "init_pc",
+          "value": "0x0400"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "patch",
+          "offset": "0x0400"
+        },
+        {
+          "type": "code",
+          "path": "DRIVER.BIN",
+          "offset": "0xD000"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS00.BIN",
+          "offset": "0x00"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS01.BIN",
+          "offset": "0x01"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS02.BIN",
+          "offset": "0x02"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS03.BIN",
+          "offset": "0x03"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS04.BIN",
+          "offset": "0x04"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS05.BIN",
+          "offset": "0x05"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS06.BIN",
+          "offset": "0x06"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS07.BIN",
+          "offset": "0x07"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS08.BIN",
+          "offset": "0x08"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS09.BIN",
+          "offset": "0x09"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS0A.BIN",
+          "offset": "0x0a"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS0B.BIN",
+          "offset": "0x0b"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS0C.BIN",
+          "offset": "0x0c"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x06",
+          "title": "工画堂ロゴ/アイテムゲット"
+        },
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "デモ/ゲームオーバー"
+        },
+        {
+          "kind": "title",
+          "code": "0x0b",
+          "title": "タイトル"
+        },
+        {
+          "kind": "title",
+          "code": "0x00",
+          "title": "村/フィールド"
+        },
+        {
+          "kind": "title",
+          "code": "0x05",
+          "title": "洞窟"
+        },
+        {
+          "kind": "title",
+          "code": "0x07",
+          "title": "ソームリエの塔"
+        },
+        {
+          "kind": "title",
+          "code": "0x0c",
+          "title": "荒野"
+        },
+        {
+          "kind": "title",
+          "code": "0x09",
+          "title": "鉱山"
+        },
+        {
+          "kind": "title",
+          "code": "0x0a",
+          "title": "水の城"
+        },
+        {
+          "kind": "title",
+          "code": "0x08",
+          "title": "ザンゼリアン城"
+        },
+        {
+          "kind": "title",
+          "code": "0x03",
+          "title": "戦闘"
+        },
+        {
+          "kind": "title",
+          "code": "0x04",
+          "title": "キャンプ"
+        },
+        {
+          "kind": "title",
+          "code": "0x02",
+          "title": "エンディング"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/kogado.xml",
+      "source_order": 2932,
+      "archive": "lav_msx",
+      "id": "lav-msx-generic-2"
+    },
+    {
+      "title": "[X68000] Sabnack",
+      "driver": {
+        "name": "x68k",
+        "type": "generic",
+        "alias": "工画堂スタジオ",
+        "platform": "SHARP X68000"
+      },
+      "options": [
+        {
+          "name": "mfp",
+          "value": "0x01"
+        },
+        {
+          "name": "pcm8",
+          "value": "1"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "sabnack68snd.bin"
+        },
+        {
+          "type": "x",
+          "path": "OPMDRV2.X",
+          "offset": "0x010000"
+        },
+        {
+          "type": "x",
+          "path": "OPMD.X",
+          "offset": "0x040000"
+        },
+        {
+          "type": "code",
+          "path": "QQQ3",
+          "offset": "0x048000"
+        },
+        {
+          "type": "code",
+          "path": "MD0.OPM",
+          "offset": "0x050000"
+        },
+        {
+          "type": "code",
+          "path": "MD1.OPM",
+          "offset": "0x052000"
+        },
+        {
+          "type": "code",
+          "path": "MD2.OPM",
+          "offset": "0x054000"
+        },
+        {
+          "type": "code",
+          "path": "MD3.OPM",
+          "offset": "0x056000"
+        },
+        {
+          "type": "code",
+          "path": "MD4.OPM",
+          "offset": "0x058000"
+        },
+        {
+          "type": "code",
+          "path": "MD5.OPM",
+          "offset": "0x05a000"
+        },
+        {
+          "type": "code",
+          "path": "MD6.OPM",
+          "offset": "0x05c000"
+        },
+        {
+          "type": "code",
+          "path": "MD7.OPM",
+          "offset": "0x05e000"
+        },
+        {
+          "type": "code",
+          "path": "MD8.OPM",
+          "offset": "0x060000"
+        },
+        {
+          "type": "code",
+          "path": "MD9.OPM",
+          "offset": "0x062000"
+        },
+        {
+          "type": "code",
+          "path": "MD10.OPM",
+          "offset": "0x064000"
+        },
+        {
+          "type": "code",
+          "path": "MD11.OPM",
+          "offset": "0x066000"
+        },
+        {
+          "type": "code",
+          "path": "MD12.OPM",
+          "offset": "0x068000"
+        },
+        {
+          "type": "code",
+          "path": "MD13.OPM",
+          "offset": "0x06a000"
+        },
+        {
+          "type": "code",
+          "path": "MD14.OPM",
+          "offset": "0x06c000"
+        },
+        {
+          "type": "code",
+          "path": "MD15.OPM",
+          "offset": "0x06e000"
+        },
+        {
+          "type": "code",
+          "path": "MD16.OPM",
+          "offset": "0x070000"
+        },
+        {
+          "type": "code",
+          "path": "MD17.OPM",
+          "offset": "0x072000"
+        },
+        {
+          "type": "code",
+          "path": "MD18.OPM",
+          "offset": "0x074000"
+        },
+        {
+          "type": "code",
+          "path": "MD19.OPM",
+          "offset": "0x076000"
+        },
+        {
+          "type": "code",
+          "path": "whip1.pcm",
+          "offset": "0x078000"
+        },
+        {
+          "type": "code",
+          "path": "BD2.pcm",
+          "offset": "0x079000"
+        },
+        {
+          "type": "code",
+          "path": "CRSH2V10.pcm",
+          "offset": "0x07a000"
+        },
+        {
+          "type": "code",
+          "path": "RIDE1.pcm",
+          "offset": "0x07d000"
+        },
+        {
+          "type": "code",
+          "path": "sd_cymv8.pcm",
+          "offset": "0x07f000"
+        },
+        {
+          "type": "code",
+          "path": "HHC1V8.pcm",
+          "offset": "0x082000"
+        },
+        {
+          "type": "code",
+          "path": "HHO1V8.pcm",
+          "offset": "0x083000"
+        },
+        {
+          "type": "code",
+          "path": "clp.pcm",
+          "offset": "0x084000"
+        },
+        {
+          "type": "code",
+          "path": "BD_SD.pcm",
+          "offset": "0x085000"
+        },
+        {
+          "type": "code",
+          "path": "SD1V10.pcm",
+          "offset": "0x086000"
+        },
+        {
+          "type": "code",
+          "path": "tm1_1v13.pcm",
+          "offset": "0x087000"
+        },
+        {
+          "type": "code",
+          "path": "tm1_2v13.pcm",
+          "offset": "0x088000"
+        },
+        {
+          "type": "code",
+          "path": "tm1_3v13.pcm",
+          "offset": "0x089000"
+        },
+        {
+          "type": "code",
+          "path": "SD5V15.pcm",
+          "offset": "0x08a000"
+        },
+        {
+          "type": "code",
+          "path": "SD5V13.pcm",
+          "offset": "0x08c000"
+        },
+        {
+          "type": "code",
+          "path": "SD5V10.pcm",
+          "offset": "0x08e000"
+        },
+        {
+          "type": "code",
+          "path": "SD3V15.pcm",
+          "offset": "0x08f000"
+        },
+        {
+          "type": "code",
+          "path": "SD3V13.pcm",
+          "offset": "0x090000"
+        },
+        {
+          "type": "code",
+          "path": "SD3V10.pcm",
+          "offset": "0x091000"
+        },
+        {
+          "type": "code",
+          "path": "SD2V15.pcm",
+          "offset": "0x092000"
+        },
+        {
+          "type": "code",
+          "path": "SD2V13.pcm",
+          "offset": "0x093000"
+        },
+        {
+          "type": "code",
+          "path": "SD2V10.pcm",
+          "offset": "0x094000"
+        },
+        {
+          "type": "code",
+          "path": "BD1V15.pcm",
+          "offset": "0x095000"
+        },
+        {
+          "type": "code",
+          "path": "TOM2_1.pcm",
+          "offset": "0x096000"
+        },
+        {
+          "type": "code",
+          "path": "TOM2_2.pcm",
+          "offset": "0x097000"
+        },
+        {
+          "type": "code",
+          "path": "TOM2_3.pcm",
+          "offset": "0x098000"
+        },
+        {
+          "type": "code",
+          "path": "TOM2_4.pcm",
+          "offset": "0x099000"
+        },
+        {
+          "type": "code",
+          "path": "ET1V10.pcm",
+          "offset": "0x09a000"
+        },
+        {
+          "type": "code",
+          "path": "ET2V10.pcm",
+          "offset": "0x09b000"
+        },
+        {
+          "type": "code",
+          "path": "ET3V10.pcm",
+          "offset": "0x09c000"
+        },
+        {
+          "type": "code",
+          "path": "ET4V10.pcm",
+          "offset": "0x09d000"
+        },
+        {
+          "type": "code",
+          "path": "TIMB1.pcm",
+          "offset": "0x09e000"
+        },
+        {
+          "type": "code",
+          "path": "TIMB2.pcm",
+          "offset": "0x09f000"
+        },
+        {
+          "type": "code",
+          "path": "TIMB3.pcm",
+          "offset": "0x0a0000"
+        },
+        {
+          "type": "code",
+          "path": "TIMB4.pcm",
+          "offset": "0x0a1000"
+        },
+        {
+          "type": "code",
+          "path": "Oh_3G.pcm",
+          "offset": "0x0a2000"
+        },
+        {
+          "type": "code",
+          "path": "Oh_4F.pcm",
+          "offset": "0x0a6000"
+        },
+        {
+          "type": "code",
+          "path": "Oh_4G.pcm",
+          "offset": "0x0a9000"
+        },
+        {
+          "type": "code",
+          "path": "Oh_4A.pcm",
+          "offset": "0x0ac000"
+        },
+        {
+          "type": "code",
+          "path": "Oh_5C.pcm",
+          "offset": "0x0ae000"
+        },
+        {
+          "type": "code",
+          "path": "ET1V8.pcm",
+          "offset": "0x0b0000"
+        },
+        {
+          "type": "code",
+          "path": "ET2V8.pcm",
+          "offset": "0x0b1000"
+        },
+        {
+          "type": "code",
+          "path": "ET3V8.pcm",
+          "offset": "0x0b2000"
+        },
+        {
+          "type": "code",
+          "path": "ET4V8.pcm",
+          "offset": "0x0b3000"
+        },
+        {
+          "type": "code",
+          "path": "TOM1_1.pcm",
+          "offset": "0x0b4000"
+        },
+        {
+          "type": "code",
+          "path": "TOM1_2.pcm",
+          "offset": "0x0b5000"
+        },
+        {
+          "type": "code",
+          "path": "TOM1_3.pcm",
+          "offset": "0x0b6000"
+        },
+        {
+          "type": "code",
+          "path": "HHC1V10.pcm",
+          "offset": "0x0b7000"
+        },
+        {
+          "type": "code",
+          "path": "HHO1V10.pcm",
+          "offset": "0x0b8000"
+        },
+        {
+          "type": "code",
+          "path": "o_bc.pcm",
+          "offset": "0x0b9000"
+        },
+        {
+          "type": "code",
+          "path": "o_etom1.pcm",
+          "offset": "0x0bb000"
+        },
+        {
+          "type": "code",
+          "path": "o_etom2.pcm",
+          "offset": "0x0bc000"
+        },
+        {
+          "type": "code",
+          "path": "o_etom3.pcm",
+          "offset": "0x0bd000"
+        },
+        {
+          "type": "code",
+          "path": "o_bassD2.pcm",
+          "offset": "0x0be000"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x0a",
+          "title": "MD9.OPM  : Prorogue"
+        },
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "MD0.OPM  : Title"
+        },
+        {
+          "kind": "title",
+          "code": "0x04",
+          "title": "MD3.OPM  : Stage 00~10"
+        },
+        {
+          "kind": "comment",
+          "text": "\t<title code=\"0x11\">MD16.OPM : Stage 00~10</title> "
+        },
+        {
+          "kind": "title",
+          "code": "0x03",
+          "title": "MD2.OPM  : All Monster Killed"
+        },
+        {
+          "kind": "title",
+          "code": "0x02",
+          "title": "MD1.OPM  : Stage Clear"
+        },
+        {
+          "kind": "title",
+          "code": "0x05",
+          "title": "MD4.OPM  : Stage 11~20"
+        },
+        {
+          "kind": "title",
+          "code": "0x09",
+          "title": "MD8.OPM  : Stage 21~25"
+        },
+        {
+          "kind": "title",
+          "code": "0x06",
+          "title": "MD5.OPM  : Stage 26~30"
+        },
+        {
+          "kind": "title",
+          "code": "0x08",
+          "title": "MD7.OPM  : Stage 31~35"
+        },
+        {
+          "kind": "title",
+          "code": "0x07",
+          "title": "MD6.OPM  : Stage 36~40"
+        },
+        {
+          "kind": "title",
+          "code": "0x0c",
+          "title": "MD11.OPM : Event 1"
+        },
+        {
+          "kind": "title",
+          "code": "0x0d",
+          "title": "MD12.OPM : Event 2"
+        },
+        {
+          "kind": "title",
+          "code": "0x0e",
+          "title": "MD13.OPM : Event 3"
+        },
+        {
+          "kind": "title",
+          "code": "0x0f",
+          "title": "MD14.OPM : Ending 1"
+        },
+        {
+          "kind": "title",
+          "code": "0x0b",
+          "title": "MD10.OPM : Ending 2"
+        },
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "MD15.OPM : Exit"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/kogado.xml",
+      "source_order": 2933,
+      "archive": "sabnack68snd",
+      "id": "sabnack68snd-generic"
+    }
+  ]
+}

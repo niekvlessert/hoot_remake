@@ -1,124 +1,23 @@
 #include "core/hoot_context.h"
+#include "core/utf8_util.h"
 
 #include <algorithm>
 #include <cstring>
 #include <filesystem>
-#include <set>
 #include <vector>
+#include <cctype>
 
-#include "config/hoot_xml_loader.h"
-#include "drivers/microcabin_pc88_driver.h"
-#include "drivers/microcabin_pc98dos_driver.h"
-#include "drivers/pc98_dos_driver.h"
-#include "drivers/x68k_generic_driver.h"
-#include "io/d88_image.h"
+#include "config/hoot_catalog_loader.h"
+#include "core/entry_validation.h"
+#include "drivers/driver_registry.h"
 #include "io/filesystem_asset_provider.h"
-#include "io/zip_archive.h"
 
 namespace {
 
 template <size_t N>
 void copy_c_string(char (&dest)[N], const std::string& source)
 {
-    static_assert(N > 0, "destination must have room for a terminator");
-    const auto count = std::min(source.size(), N - 1);
-    std::memcpy(dest, source.data(), count);
-    dest[count] = '\0';
-}
-
-bool has_catalog_asset(const hoot::ZipArchive& archive,
-                       const hoot::HootEntry& entry,
-                       const hoot::HootAssetRef& asset,
-                       const std::filesystem::path& packs_path)
-{
-    if (asset.type == "device" || asset.type == "shell") {
-        return true;
-    }
-    if (archive.contains(asset.path)) {
-        return true;
-    }
-    if (asset.path.find('_') != std::string::npos) {
-        auto alternate = asset.path;
-        *std::find(alternate.begin(), alternate.end(), '_') = '/';
-        if (archive.contains(alternate)) {
-            return true;
-        }
-    }
-    if (entry.archive == "ad68snd" && asset.path == "kmdrv.bin"
-        && archive.contains("ad68snd.bin") && archive.contains("KMDRV.X")
-        && archive.contains("ADPCM_BG.DAT") && archive.contains("ADPCM_SE.DAT")
-        && archive.contains("SOUND_BG.DAT") && archive.contains("SOUND_SE.DAT")
-        && archive.contains("VOICE_BG.DAT") && archive.contains("VOICE_SE.DAT")
-        && archive.contains("TABLE_BG.DAT") && archive.contains("YUSEN_TB.DAT")) {
-        return true;
-    }
-
-    auto has_gazzel_d88_driver_member = [&]() {
-        if (entry.archive == "xak2_98" || (asset.path != "MMD.COM" && asset.path != "MMD2.COM")) {
-            return false;
-        }
-        hoot::D88Image d88;
-        std::string error;
-        const auto d88_path = packs_path / "Xak - The Tower of Gazzel (Disk 3).d88";
-        if (!d88.open(d88_path, error)) {
-            return false;
-        }
-        if (asset.path == "MMD.COM") {
-            const auto data = d88.read_data(0, 0x04, 0x02, 0, 0x06, 0x02, 0x01, 0x09, 0x200, error);
-            return data.size() >= 0x20 && data[0x10] == 0xf3 && data[0x11] == 0xe5;
-        }
-        const auto data = d88.read_data(0, 0x0b, 0x05, 1, 0x09, 0x02, 0x01, 0x09, 0xc00, error);
-        return data.size() >= 4 && data[0] == 0xe5 && data[1] == 0xd5 && data[2] == 0xc5;
-    };
-    if (has_gazzel_d88_driver_member()) {
-        return true;
-    }
-
-    struct Fallback {
-        std::string archive;
-        std::string member;
-    };
-    std::vector<Fallback> fallbacks;
-    if (asset.path == "PATCH") {
-        if (entry.archive == "xak2_98") {
-            fallbacks.push_back({"cabin98", "PATCH_XAK2_88/PATCH"});
-        }
-        if (entry.archive == "gazzel_98" || entry.archive == "fray_98") {
-            fallbacks.push_back({"cabin98", "PATCH_GAZZEL_88/PATCH"});
-        }
-    } else if (asset.path == "MMD.COM") {
-        fallbacks.push_back({"xak2_98", "MMD.COM"});
-    } else if (asset.path == "MMD2.COM") {
-        fallbacks.push_back({"xak2_98", "MMD2.COM"});
-    }
-
-    for (const auto& fallback : fallbacks) {
-        hoot::ZipArchive fallback_archive;
-        std::string error;
-        if (fallback_archive.open(packs_path / (fallback.archive + ".zip"), error)
-            && fallback_archive.contains(fallback.member)) {
-            return true;
-        }
-    }
-    return false;
-}
-
-std::unique_ptr<hoot::HootDriver> create_driver_for_entry(const hoot::HootEntry& entry)
-{
-    if (entry.driver_alias == "microcabin/pc88"
-        || (entry.driver_name == "pc88/opn" && entry.archive == "xak2_98")) {
-        return std::make_unique<hoot::MicrocabinPc88Driver>();
-    }
-    if (entry.driver_name == "pc98dos/opn") {
-        if (entry.driver_alias.find("MICROCABIN") != std::string::npos) {
-            return std::make_unique<hoot::MicrocabinPc98DosDriver>();
-        }
-        return std::make_unique<hoot::Pc98DosDriver>();
-    }
-    if (entry.driver_name == "x68k/generic") {
-        return std::make_unique<hoot::X68kGenericDriver>();
-    }
-    return nullptr;
+    hoot::utf8::copy_c_string(dest, source);
 }
 
 } // namespace
@@ -144,6 +43,8 @@ void HootContext::set_error(std::string message)
 
 extern "C" {
 
+uint32_t hoot_get_api_version(void) { return HOOT_API_VERSION; }
+
 HootContext* hoot_create(const HootConfig* config)
 {
     return new HootContext(config);
@@ -154,22 +55,38 @@ void hoot_destroy(HootContext* ctx)
     delete ctx;
 }
 
-HootResult hoot_load_xml(HootContext* ctx, const char* xml_path)
+HootResult hoot_set_packs_path(HootContext* ctx, const char* packs_path)
 {
-    if (ctx == nullptr || xml_path == nullptr) {
+    if (ctx == nullptr || packs_path == nullptr) return HOOT_ERROR_INVALID_ARGUMENT;
+    ctx->packs_path = packs_path;
+    ctx->asset_provider = std::make_unique<hoot::FilesystemAssetProvider>(ctx->packs_path);
+    return HOOT_OK;
+}
+
+HootResult hoot_load_catalog(HootContext* ctx, const char* catalog_path)
+{
+    if (ctx == nullptr || catalog_path == nullptr) {
         return HOOT_ERROR_INVALID_ARGUMENT;
     }
 
     ctx->catalog.clear();
     ctx->current_entry = nullptr;
+    ctx->current_driver.reset();
+    ctx->selected_track = 0;
+    ctx->rendered_frames = 0;
 
-    hoot::HootXmlLoader loader;
+    hoot::HootCatalogLoader loader;
     std::string error;
-    if (!loader.load_file(xml_path, ctx->catalog, error)) {
+    if (!loader.load_file(catalog_path, ctx->catalog, error)) {
         ctx->set_error(error);
         return HOOT_ERROR_PARSE;
     }
     return HOOT_OK;
+}
+
+HootResult hoot_load_xml(HootContext* ctx, const char* xml_path)
+{
+    return hoot_load_catalog(ctx, xml_path);
 }
 
 HootResult hoot_load_entry(HootContext* ctx, const char* entry_id)
@@ -178,35 +95,39 @@ HootResult hoot_load_entry(HootContext* ctx, const char* entry_id)
         return HOOT_ERROR_INVALID_ARGUMENT;
     }
 
+    ctx->current_entry = nullptr;
+    ctx->current_driver.reset();
+    ctx->selected_track = 0;
+    ctx->rendered_frames = 0;
+
     const auto* entry = ctx->catalog.find(entry_id);
     if (entry == nullptr) {
         ctx->set_error(std::string("entry not found: ") + entry_id);
         return HOOT_ERROR_NOT_FOUND;
     }
-    if (!entry->archive.empty()) {
-        const auto archive_path = std::filesystem::path(ctx->packs_path) / (entry->archive + ".zip");
-        hoot::ZipArchive archive;
-        std::string error;
-        if (!archive.open(archive_path, error)) {
-            ctx->set_error(error);
-            return HOOT_ERROR_IO;
-        }
-
-        std::set<std::string> checked;
-        for (const auto& asset : entry->assets) {
-            if (asset.path.empty() || checked.find(asset.path) != checked.end()) {
-                continue;
-            }
-            checked.insert(asset.path);
-            if (!has_catalog_asset(archive, *entry, asset, std::filesystem::path(ctx->packs_path))) {
-                ctx->set_error("missing archive member in " + archive_path.string() + ": " + asset.path);
-                return HOOT_ERROR_NOT_FOUND;
-            }
-        }
+    const auto probe = hoot::DriverRegistry::instance().probe(*entry);
+    if (!probe.supported()) {
+        ctx->set_error(probe.reason);
+        return HOOT_ERROR_UNSUPPORTED;
     }
 
-    auto driver = create_driver_for_entry(*entry);
-    if (driver != nullptr) {
+    const auto validation = hoot::validate_entry_assets(*entry, std::filesystem::path(ctx->packs_path));
+    if (!validation.archive_present || !validation.error.empty()) {
+        ctx->set_error(validation.error);
+        return HOOT_ERROR_IO;
+    }
+    if (!validation.missing_assets.empty()) {
+        ctx->set_error("missing archive member in " + validation.archive_path.string()
+            + ": " + validation.missing_assets.front());
+        return HOOT_ERROR_NOT_FOUND;
+    }
+
+    auto driver = hoot::DriverRegistry::instance().create(*entry);
+    if (driver == nullptr) {
+        ctx->set_error("driver registry matched entry but did not create a driver: " + probe.driver_id);
+        return HOOT_ERROR_UNSUPPORTED;
+    }
+    {
         std::string error;
         const auto result = driver->load(*entry, ctx->packs_path, ctx->sample_rate, error);
         if (result != HOOT_OK) {
@@ -219,6 +140,30 @@ HootResult hoot_load_entry(HootContext* ctx, const char* entry_id)
     ctx->current_driver = std::move(driver);
     ctx->selected_track = 0;
     return HOOT_OK;
+}
+
+HootResult hoot_probe_entry(HootContext* ctx, const char* entry_id, HootDriverProbe* out)
+{
+    if (ctx == nullptr || entry_id == nullptr || out == nullptr) {
+        return HOOT_ERROR_INVALID_ARGUMENT;
+    }
+    const auto* entry = ctx->catalog.find(entry_id);
+    if (entry == nullptr) {
+        ctx->set_error(std::string("entry not found: ") + entry_id);
+        return HOOT_ERROR_NOT_FOUND;
+    }
+
+    const auto probe = hoot::DriverRegistry::instance().probe(*entry);
+    std::memset(out, 0, sizeof(*out));
+    out->status = static_cast<HootSupportStatus>(probe.status);
+    copy_c_string(out->driver_id, probe.driver_id);
+    copy_c_string(out->reason, probe.reason);
+    return HOOT_OK;
+}
+
+const char* hoot_support_status_name(HootSupportStatus status)
+{
+    return hoot::driver_support_status_name(static_cast<hoot::DriverSupportStatus>(status));
 }
 
 HootResult hoot_select_track(HootContext* ctx, int track_index)
@@ -235,6 +180,7 @@ HootResult hoot_select_track(HootContext* ctx, int track_index)
         }
     }
     ctx->selected_track = track_index;
+    ctx->rendered_frames = 0;
     return HOOT_OK;
 }
 
@@ -246,6 +192,7 @@ HootResult hoot_reset(HootContext* ctx)
     if (ctx->current_driver != nullptr) {
         ctx->current_driver->reset();
     }
+    ctx->rendered_frames = 0;
     return HOOT_OK;
 }
 
@@ -255,7 +202,9 @@ int hoot_render_s16(HootContext* ctx, int16_t* interleaved_stereo, int frames)
         return 0;
     }
     if (ctx->current_driver != nullptr) {
-        return ctx->current_driver->render_s16(interleaved_stereo, frames);
+        const int rendered = ctx->current_driver->render_s16(interleaved_stereo, frames);
+        if (rendered > 0) ctx->rendered_frames += static_cast<uint64_t>(rendered);
+        return rendered;
     }
     std::fill(interleaved_stereo, interleaved_stereo + (frames * 2), int16_t{0});
     return frames;
@@ -267,7 +216,9 @@ int hoot_render_float(HootContext* ctx, float* interleaved_stereo, int frames)
         return 0;
     }
     if (ctx->current_driver != nullptr) {
-        return ctx->current_driver->render_float(interleaved_stereo, frames);
+        const int rendered = ctx->current_driver->render_float(interleaved_stereo, frames);
+        if (rendered > 0) ctx->rendered_frames += static_cast<uint64_t>(rendered);
+        return rendered;
     }
     std::fill(interleaved_stereo, interleaved_stereo + (frames * 2), 0.0f);
     return frames;
@@ -300,6 +251,182 @@ HootResult hoot_get_track_info(HootContext* ctx, HootTrackInfo* out)
         copy_c_string(out->title, ctx->current_entry->title);
     }
 
+    return HOOT_OK;
+}
+
+
+int hoot_get_entry_count(HootContext* ctx)
+{
+    if (ctx == nullptr) return 0;
+    return static_cast<int>(ctx->catalog.entries().size());
+}
+
+HootResult hoot_get_entry_info(HootContext* ctx, int index, HootEntryInfo* out)
+{
+    if (ctx == nullptr || out == nullptr || index < 0) return HOOT_ERROR_INVALID_ARGUMENT;
+    const auto& entries = ctx->catalog.entries();
+    if (static_cast<size_t>(index) >= entries.size()) return HOOT_ERROR_NOT_FOUND;
+    const auto& entry = entries[static_cast<size_t>(index)];
+    std::memset(out, 0, sizeof(*out));
+    out->index = index;
+    out->track_count = static_cast<int>(entry.tracks.size());
+    out->refresh_hz = entry.refresh_hz;
+    out->default_sample_rate = entry.default_sample_rate;
+    copy_c_string(out->id, entry.id);
+    copy_c_string(out->title, entry.title);
+    copy_c_string(out->archive, entry.archive);
+    copy_c_string(out->driver, entry.driver_name);
+    return HOOT_OK;
+}
+
+HootResult hoot_find_entry(HootContext* ctx, const char* id_or_archive, HootEntryInfo* out)
+{
+    if (ctx == nullptr || id_or_archive == nullptr || out == nullptr) return HOOT_ERROR_INVALID_ARGUMENT;
+    std::string needle = id_or_archive;
+    std::filesystem::path path(needle);
+    auto ext = path.extension().string();
+    std::transform(ext.begin(), ext.end(), ext.begin(), [](unsigned char ch) { return static_cast<char>(std::tolower(ch)); });
+    if (ext == ".zip") needle = path.stem().string();
+    const auto& entries = ctx->catalog.entries();
+    const hoot::HootEntry* first_archive = nullptr;
+    int first_archive_index = -1;
+    for (size_t i = 0; i < entries.size(); ++i) {
+        const auto& entry = entries[i];
+        if (entry.id == needle) return hoot_get_entry_info(ctx, static_cast<int>(i), out);
+        if (entry.archive == needle && first_archive == nullptr) {
+            first_archive = &entry;
+            first_archive_index = static_cast<int>(i);
+        }
+        if (entry.archive == needle && hoot::DriverRegistry::instance().probe(entry).supported()) {
+            return hoot_get_entry_info(ctx, static_cast<int>(i), out);
+        }
+    }
+    if (first_archive != nullptr) return hoot_get_entry_info(ctx, first_archive_index, out);
+    ctx->set_error("entry/archive not found: " + needle);
+    return HOOT_ERROR_NOT_FOUND;
+}
+
+HootResult hoot_load_archive(HootContext* ctx, const char* archive_or_zip)
+{
+    if (ctx == nullptr || archive_or_zip == nullptr) return HOOT_ERROR_INVALID_ARGUMENT;
+    HootEntryInfo info{};
+    const auto result = hoot_find_entry(ctx, archive_or_zip, &info);
+    if (result != HOOT_OK) return result;
+    return hoot_load_entry(ctx, info.id);
+}
+
+int hoot_get_track_count(HootContext* ctx)
+{
+    if (ctx == nullptr || ctx->current_entry == nullptr) return 0;
+    return static_cast<int>(ctx->current_entry->tracks.size());
+}
+
+HootResult hoot_get_entry_catalog_track_info(HootContext* ctx, int entry_index, int track_index, HootEntryTrackInfo* out)
+{
+    if (ctx == nullptr || out == nullptr || entry_index < 0 || track_index < 0) return HOOT_ERROR_INVALID_ARGUMENT;
+    const auto& entries = ctx->catalog.entries();
+    if (static_cast<size_t>(entry_index) >= entries.size()) return HOOT_ERROR_NOT_FOUND;
+    const auto& tracks = entries[static_cast<size_t>(entry_index)].tracks;
+    if (static_cast<size_t>(track_index) >= tracks.size()) return HOOT_ERROR_NOT_FOUND;
+    const auto& track = tracks[static_cast<size_t>(track_index)];
+    std::memset(out, 0, sizeof(*out));
+    out->index = track_index;
+    out->code = track.code;
+    copy_c_string(out->title, track.title);
+    copy_c_string(out->voice_bank, track.voice_bank);
+    return HOOT_OK;
+}
+
+HootResult hoot_get_catalog_track_info(HootContext* ctx, int track_index, HootCatalogTrackInfo* out)
+{
+    if (ctx == nullptr || out == nullptr || track_index < 0) return HOOT_ERROR_INVALID_ARGUMENT;
+    if (ctx->current_entry == nullptr) return HOOT_ERROR_NOT_LOADED;
+    if (static_cast<size_t>(track_index) >= ctx->current_entry->tracks.size()) return HOOT_ERROR_NOT_FOUND;
+    const auto& track = ctx->current_entry->tracks[static_cast<size_t>(track_index)];
+    std::memset(out, 0, sizeof(*out));
+    out->index = track_index;
+    out->code = track.code;
+    copy_c_string(out->title, track.title);
+    return HOOT_OK;
+}
+
+HootResult hoot_get_entry_driver_info(HootContext* ctx, int entry_index, HootEntryDriverInfo* out)
+{
+    if (!ctx || !out || entry_index < 0) return HOOT_ERROR_INVALID_ARGUMENT;
+    const auto& entries = ctx->catalog.entries();
+    if (static_cast<size_t>(entry_index) >= entries.size()) return HOOT_ERROR_NOT_FOUND;
+    std::memset(out, 0, sizeof(*out));
+    out->index = entry_index;
+    copy_c_string(out->alias, entries[static_cast<size_t>(entry_index)].driver_alias);
+    return HOOT_OK;
+}
+
+int hoot_get_entry_option_count(HootContext* ctx, int entry_index)
+{
+    if (!ctx || entry_index < 0 || static_cast<size_t>(entry_index) >= ctx->catalog.entries().size()) return 0;
+    return static_cast<int>(ctx->catalog.entries()[static_cast<size_t>(entry_index)].options.size());
+}
+
+HootResult hoot_get_entry_option_info(HootContext* ctx, int entry_index, int option_index, HootEntryOptionInfo* out)
+{
+    if (!ctx || !out || entry_index < 0 || option_index < 0) return HOOT_ERROR_INVALID_ARGUMENT;
+    const auto& entries = ctx->catalog.entries();
+    if (static_cast<size_t>(entry_index) >= entries.size()) return HOOT_ERROR_NOT_FOUND;
+    const auto& options = entries[static_cast<size_t>(entry_index)].options;
+    if (static_cast<size_t>(option_index) >= options.size()) return HOOT_ERROR_NOT_FOUND;
+    auto it = options.begin();
+    std::advance(it, option_index);
+    std::memset(out, 0, sizeof(*out));
+    out->index = option_index;
+    out->value = it->second;
+    copy_c_string(out->name, it->first);
+    return HOOT_OK;
+}
+
+int hoot_get_entry_asset_count(HootContext* ctx, int entry_index)
+{
+    if (!ctx || entry_index < 0 || static_cast<size_t>(entry_index) >= ctx->catalog.entries().size()) return 0;
+    return static_cast<int>(ctx->catalog.entries()[static_cast<size_t>(entry_index)].assets.size());
+}
+
+HootResult hoot_get_entry_asset_info(HootContext* ctx, int entry_index, int asset_index, HootEntryAssetInfo* out)
+{
+    if (!ctx || !out || entry_index < 0 || asset_index < 0) return HOOT_ERROR_INVALID_ARGUMENT;
+    const auto& entries = ctx->catalog.entries();
+    if (static_cast<size_t>(entry_index) >= entries.size()) return HOOT_ERROR_NOT_FOUND;
+    const auto& assets = entries[static_cast<size_t>(entry_index)].assets;
+    if (static_cast<size_t>(asset_index) >= assets.size()) return HOOT_ERROR_NOT_FOUND;
+    const auto& asset = assets[static_cast<size_t>(asset_index)];
+    std::memset(out, 0, sizeof(*out));
+    out->index = asset_index;
+    out->offset = asset.offset;
+    out->crc32 = asset.crc32;
+    out->has_crc32 = asset.has_crc32 ? 1 : 0;
+    copy_c_string(out->type, asset.type);
+    copy_c_string(out->path, asset.path);
+    copy_c_string(out->transform, asset.transform);
+    return HOOT_OK;
+}
+
+HootResult hoot_get_visual_state(HootContext* ctx, HootVisualState* out)
+{
+    if (ctx == nullptr || out == nullptr) return HOOT_ERROR_INVALID_ARGUMENT;
+    std::memset(out, 0, sizeof(*out));
+    out->abi_version = HOOT_VISUAL_ABI_VERSION;
+    out->struct_size = sizeof(*out);
+    out->sample_rate = static_cast<uint32_t>(ctx->sample_rate);
+    out->rendered_frames = ctx->rendered_frames;
+    if (ctx->current_entry == nullptr) {
+        ctx->set_error("no entry loaded");
+        return HOOT_ERROR_NOT_LOADED;
+    }
+    if (ctx->current_driver != nullptr) {
+        ctx->current_driver->fill_visual_state(*ctx->current_entry, ctx->selected_track, *out);
+    }
+    // The driver may intentionally leave generic fields blank.
+    if (out->driver[0] == '\0' && ctx->current_driver != nullptr) copy_c_string(out->driver, ctx->current_driver->name());
+    out->sample_rate = static_cast<uint32_t>(ctx->sample_rate);
+    out->rendered_frames = ctx->rendered_frames;
     return HOOT_OK;
 }
 

@@ -1,0 +1,433 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="hoot.xsl"?>
+<!DOCTYPE gamelist [
+	<!ELEMENT gamelist (game|bind|childlists)*>
+	<!ATTLIST gamelist date CDATA #IMPLIED>
+	<!ELEMENT childlists (list)*>
+	<!ELEMENT list (#PCDATA)>
+	<!ELEMENT bind (exts,driver,options?)>
+	<!ELEMENT exts (ext)*>
+	<!ELEMENT ext (#PCDATA)>
+	<!ELEMENT game (name,driver,driveralias?,options?,romlist?,titlelist?)>
+	<!ELEMENT name (#PCDATA)>
+	<!ELEMENT driver (#PCDATA)>
+	<!ATTLIST driver type CDATA #IMPLIED>
+	<!ELEMENT driveralias (#PCDATA)>
+	<!ATTLIST driveralias type CDATA #IMPLIED>
+	<!ELEMENT options (option)*>
+	<!ELEMENT option EMPTY>
+	<!ATTLIST option name CDATA #REQUIRED
+					 value CDATA #REQUIRED>
+	<!ELEMENT romlist (rom)*>
+	<!ATTLIST romlist archive CDATA #IMPLIED>
+	<!ELEMENT rom (#PCDATA)>
+	<!ATTLIST rom type CDATA #REQUIRED
+				  offset CDATA #IMPLIED
+				  crc32 CDATA #IMPLIED>
+	<!ELEMENT titlelist (title|range)*>
+	<!ELEMENT title (#PCDATA)>
+	<!ATTLIST title code CDATA #REQUIRED
+					type CDATA #IMPLIED>
+	<!ELEMENT range (#PCDATA)>
+	<!ATTLIST range min CDATA #REQUIRED
+					max CDATA #REQUIRED
+					extcode CDATA #IMPLIED
+					start CDATA #IMPLIED>
+
+]>
+<gamelist date="2011/10/10">
+	<!-- //Panasoft -->
+	<game>
+		<name>[MSX] F1 SPIRIT 3D SPECIAL(OPLL)</name>
+		<driver type="generic">msx</driver>
+		<driveralias type="MSX">Panasoft</driveralias>
+		<options>
+			<option name="mdata_addr" value="0xb000"/>
+			<option name="mdata_size" value="0x0d00"/>
+			<option name="mfile_size" value="0x0d00"/>
+			<option name="init_pc"    value="0x0400"/>
+			<option name="use_opll"   value="0x01"/>
+		</options>
+		<romlist archive="f1sp3d_msx">
+			<rom type="code" offset="0x0400">patch</rom>
+			<rom type="code" offset="0x8000">BIOS.BIN</rom>
+			<rom type="code" offset="0x9000">FMDRV.BIN</rom>
+			<rom type="bgm" offset="0x00">FM0.BIN</rom>
+			<rom type="bgm" offset="0x01">FM1.BIN</rom>
+			<rom type="bgm" offset="0x02">FM2.BIN</rom>
+			<rom type="bgm" offset="0x03">FM3.BIN</rom>
+			<rom type="bgm" offset="0x04">FM4.BIN</rom>
+			<rom type="bgm" offset="0x05">FM5.BIN</rom>
+			<rom type="bgm" offset="0x06">FM6.BIN</rom>
+			<rom type="bgm" offset="0x07">FM7.BIN</rom>
+			<rom type="bgm" offset="0x08">FM8.BIN</rom>
+			<rom type="bgm" offset="0x09">FM9.BIN</rom>
+			<rom type="bgm" offset="0x0a">FMA.BIN</rom>
+		</romlist>
+		<titlelist>
+			<title code="0x0300">Is it "Domingo" Today?   (Title)</title>
+			<title code="0x0401">Constructor              (Select)</title>
+			<title code="0x0802">Practice Makes Perfect   (Stage 1)</title>
+			<title code="0x0903">Turn on The Run          (Stage 2)</title>
+			<title code="0x0a04">Out of Rap               (Stage 3)</title>
+			<title code="0x0b05">Hot Road                 (Stage 4)</title>
+			<title code="0x0508">Make What Haste You Can! (Pit)</title>
+			<title code="0x0d09">Big Don                  (Grand Prix: 1st)</title>
+			<!-- <title code="0x0d0a">Big Don</title> -->
+			<title code="0x0e09">Glory                    (Grand Prix: 2nd,3rd)</title>
+			<title code="0x0606">Light Step               (Ranking)</title>
+			<title code="0x0707">Calm Feelings            (Ending)</title>
+			<range min="0x10" max="0x1f" extcode="1">SE 0x%02x</range>
+		</titlelist>
+	</game>
+	<game>
+		<name>[MSX] F1 SPIRIT 3D SPECIAL(PSG)</name>
+		<driver type="generic">msx</driver>
+		<driveralias type="MSX">Panasoft</driveralias>
+		<options>
+			<option name="mdata_addr" value="0xaa00"/>
+			<option name="mdata_size" value="0x0a00"/>
+			<option name="mfile_size" value="0x0a00"/>
+			<option name="init_pc"    value="0x0400"/>
+		</options>
+		<romlist archive="f1sp3d_msx">
+			<rom type="code" offset="0x0400">patch</rom>
+			<rom type="code" offset="0x8000">BIOS.BIN</rom>
+			<rom type="code" offset="0x9000">PSGDRV.BIN</rom>
+			<rom type="bgm" offset="0x00">PSG0.BIN</rom>
+			<rom type="bgm" offset="0x01">PSG1.BIN</rom>
+			<rom type="bgm" offset="0x02">PSG2.BIN</rom>
+			<rom type="bgm" offset="0x03">PSG3.BIN</rom>
+			<rom type="bgm" offset="0x04">PSG4.BIN</rom>
+		</romlist>
+		<titlelist>
+			<title code="0x0300">Is it "Domingo" Today?   (Title)</title>
+			<title code="0x0401">Constructor              (Select)</title>
+			<title code="0x0501">Make What Haste You Can! (Pit in)</title>
+			<title code="0x0d03">Big Don                  (Grand Prix: 1st)</title>
+			<title code="0x0e03">Glory                    (Grand Prix: 2nd,3rd)</title>
+			<title code="0x0604">Light Step               (Ranking)</title>
+			<title code="0x0702">Calm Feelings            (Ending)</title>
+			<range min="0x10" max="0x1f" extcode="1">SE 0x%02x</range>
+		</titlelist>
+	</game>
+	<game>
+		<name>[MSX] Disc Pana Amusement Collection あーぱーみゃあどっく(OPLL)</name>
+		<driver type="generic">msx</driver>
+		<driveralias type="MSX">Panasoft</driveralias>
+		<options>
+			<option name="init_pc"  value="0x0400"/>
+			<option name="use_opll" value="0x01"/>
+		</options>
+		<romlist archive="dpanaac_msx">
+			<rom type="code" offset="0x0400">patch</rom>
+			<rom type="code" offset="0xc000">OPLL.DRV</rom>
+			<rom type="code" offset="0xb000">BGM.OPL</rom>
+		</romlist>
+		<titlelist>
+			<title code="0x01">オープニングテーマ</title>
+			<title code="0x00">プレイ中BGM</title>
+			<range min="0x02" max="0x05" extcode="0">SE %02x</range>
+			<range min="0x07" max="0x07" extcode="0">SE %02x</range>
+			<range min="0x0a" max="0x0b" extcode="0">SE %02x</range>
+		</titlelist>
+	</game>
+	<game>
+		<name>[MSX] Disc Pana Amusement Collection あーぱーみゃあどっく(PSG)</name>
+		<driver type="generic">msx</driver>
+		<driveralias type="MSX">Panasoft</driveralias>
+		<options>
+			<option name="init_pc" value="0x0400"/>
+		</options>
+		<romlist archive="dpanaac_msx">
+			<rom type="code" offset="0x0400">patch</rom>
+			<rom type="code" offset="0xc000">PSG.DRV</rom>
+			<rom type="code" offset="0xb000">BGM.PSG</rom>
+		</romlist>
+		<titlelist>
+			<title code="0x01">オープニングテーマ</title>
+			<title code="0x00">プレイ中BGM</title>
+			<range min="0x02" max="0x05" extcode="0">SE %02x</range>
+			<range min="0x07" max="0x07" extcode="0">SE %02x</range>
+			<range min="0x0a" max="0x0b" extcode="0">SE %02x</range>
+		</titlelist>
+	</game>
+	<game>
+		<name>[MSX] Disc Pana Amusement Collection(OPLL)</name>
+		<driver type="generic">msx</driver>
+		<driveralias type="MSX">Panasoft</driveralias>
+		<options>
+			<option name="init_pc"  value="0x0400"/>
+			<option name="use_opll" value="0x01"/>
+			<option name="mdata_addr" value="0xb800"/>
+			<option name="mdata_size" value="0x0800"/>
+			<option name="mfile_size" value="0x0800"/>
+		</options>
+		<romlist archive="dpanaac_msx">
+			<rom type="code" offset="0x0400">patch2</rom>
+			<rom type="code" offset="0xc000">MUSIC.CIM</rom>
+			<rom type="bgm" offset="0x00">BUTAO.MDT</rom>
+			<rom type="bgm" offset="0x01">GOVERO.MDT</rom>
+			<rom type="bgm" offset="0x02">DISKMO.MDT</rom>
+			<rom type="bgm" offset="0x03">BGM1O.MDT</rom>
+			<rom type="bgm" offset="0x04">BGM2O.MDT</rom>
+			<rom type="bgm" offset="0x05">BGM3O.MDT</rom>
+		</romlist>
+		<titlelist>
+			<title code="0x02">DISKMO.MDT : メニュー</title>
+			<title code="0x00">BUTAO.MDT  : フンフンばすけっと メインBGM</title>
+			<title code="0x01">GOVERO.MDT : フンフンばすけっと ゲームオーバー</title>
+			<title code="0x04">BGM2O.MDT  : GAME EASY</title>
+			<title code="0x05">BGM3O.MDT  : E.S.EASY </title>
+			<title code="0x03">BGM1O.MDT  : </title>
+		</titlelist>
+	</game>
+	<game>
+		<name>[MSX] Disc Pana Amusement Collection(PSG)</name>
+		<driver type="generic">msx</driver>
+		<driveralias type="MSX">Panasoft</driveralias>
+		<options>
+			<option name="init_pc"  value="0x0400"/>
+			<option name="mdata_addr" value="0xb800"/>
+			<option name="mdata_size" value="0x0800"/>
+			<option name="mfile_size" value="0x0800"/>
+		</options>
+		<romlist archive="dpanaac_msx">
+			<rom type="code" offset="0x0400">patch2</rom>
+			<rom type="code" offset="0xc000">MUSIC.CIM</rom>
+			<rom type="bgm" offset="0x00">BUTAP.MDT</rom>
+			<rom type="bgm" offset="0x01">GOVERP.MDT</rom>
+			<rom type="bgm" offset="0x02">DISKMP.MDT</rom>
+			<rom type="bgm" offset="0x03">BGM1P.MDT</rom>
+			<rom type="bgm" offset="0x04">BGM2P.MDT</rom>
+			<rom type="bgm" offset="0x05">BGM3P.MDT</rom>
+		</romlist>
+		<titlelist>
+			<title code="0x02">DISKMP.MDT : メニュー</title>
+			<title code="0x00">BUTAP.MDT  : フンフンばすけっと メインBGM</title>
+			<title code="0x01">GOVERP.MDT : フンフンばすけっと ゲームオーバー</title>
+			<title code="0x04">BGM2P.MDT  : GAME EASY</title>
+			<title code="0x05">BGM3P.MDT  : E.S.EASY </title>
+			<title code="0x03">BGM1P.MDT  : </title>
+		</titlelist>
+	</game>
+	<game>
+		<name>[MSX] FMパナアミューズメントカートリッジ</name>
+		<driver type="ascii16">msx</driver>
+		<driveralias type="MSX">Panasoft</driveralias>
+		<options>
+			<option name="init_pc" value="0x400"/>
+			<option name="use_opll" value="0x01"/>
+		</options>
+		<romlist archive="fmpac_msx">
+			<rom type="code" offset="0x0400">fmpatch</rom>
+			<rom type="rom"  offset="0x0000">FMPAC.ROM</rom>
+		</romlist>
+		<titlelist>
+			<range min="0x00" max="0x04" extcode="1">サンプル %02d</range>
+		</titlelist>
+	</game>
+	<game>
+		<name>[MSX] 激走ニャンクル(OPLL)</name>
+		<driver type="generic">msx</driver>
+		<driveralias type="MSX">Panasoft</driveralias>
+		<options>
+			<option name="mdata_addr" value="0x8c00"/>
+			<option name="mdata_size" value="0x1000"/>
+			<option name="mfile_size" value="0x1000"/>
+			<option name="init_pc"    value="0x0400"/>
+			<option name="use_opll"   value="0x01"/>
+		</options>
+		<romlist archive="nyancle_msx">
+			<rom type="code" offset="0x0400">patch</rom>
+			<rom type="code" offset="0x4000">MAIN.BIN</rom>
+			<rom type="code" offset="0x8000">FMDRV.BIN</rom>
+			<rom type="code" offset="0xce10">TONE.BIN</rom>
+			<rom type="bgm" offset="0x0000">FM00.BIN</rom>
+			<rom type="bgm" offset="0x0001">FM01.BIN</rom>
+			<rom type="bgm" offset="0x0002">FM02.BIN</rom>
+			<rom type="bgm" offset="0x0003">FM03.BIN</rom>
+			<rom type="bgm" offset="0x0004">FM04.BIN</rom>
+			<rom type="bgm" offset="0x0005">FM05.BIN</rom>
+			<rom type="bgm" offset="0x0006">FM06.BIN</rom>
+			<rom type="bgm" offset="0x0007">FM07.BIN</rom>
+			<rom type="bgm" offset="0x0008">FM08.BIN</rom>
+			<rom type="bgm" offset="0x0009">FM09.BIN</rom>
+			<rom type="bgm" offset="0x000a">FM0A.BIN</rom>
+		</romlist>
+		<titlelist>
+			<title code="0x010201">タイトル/デモ</title>
+			<title code="0x010202">プレイヤー セレクト</title>
+			<title code="0x010203">マップ</title>
+			<title code="0x010204">レース開始デモ</title>
+			<title code="0x000307">レース開始</title>
+			<title code="0x010301">アップリケタウン</title>
+			<title code="0x010401">マシュマロード</title>
+			<title code="0x010501">ミズアメール</title>
+			<title code="0x010601">グリンピースコリーヌ</title>
+			<title code="0x010701">ピーナッツディザート</title>
+			<title code="0x010901">ピットイン</title>
+			<title code="0x010902">アイテムショップ</title>
+			<title code="0x010903">ホスピタル</title>
+			<title code="0x010304">シップ セレクト</title>
+			<title code="0x010801">中ステージ</title>
+			<title code="0x000306">ゴール</title>
+			<title code="0x000a01">ワールドクリア</title>
+			<title code="0x010a03">順位</title>
+			<title code="0x010a06">コングラチュレーション</title>
+			<title code="0x010a05">スタッフロール</title>
+			<title code="0x000303">ミス</title>
+			<title code="0x000302">ゲームオーバー</title>
+			<title code="0x000904">BGM 0904</title>
+			<title code="0x000a02">BGM 0a02</title>
+			<title code="0x010a04">BGM 0a04</title>
+			<title code="0x000305">UNUSED</title>
+			<title code="0x000405">UNUSED</title>
+		</titlelist>
+	</game>
+	<game>
+		<name>[MSX] 激走ニャンクル(PSG)</name>
+		<driver type="generic">msx</driver>
+		<driveralias type="MSX">Panasoft</driveralias>
+		<options>
+			<option name="mdata_addr" value="0x8c00"/>
+			<option name="mdata_size" value="0x1000"/>
+			<option name="mfile_size" value="0x1000"/>
+			<option name="init_pc"    value="0x0400"/>
+		</options>
+		<romlist archive="nyancle_msx">
+			<rom type="code" offset="0x0400">patch</rom>
+			<rom type="code" offset="0x4000">MAIN.BIN</rom>
+			<rom type="code" offset="0x8000">PSGDRV.BIN</rom>
+			<rom type="bgm" offset="0x0000">PSG00.BIN</rom>
+			<rom type="bgm" offset="0x0001">PSG01.BIN</rom>
+			<rom type="bgm" offset="0x0002">PSG02.BIN</rom>
+			<rom type="bgm" offset="0x0003">PSG03.BIN</rom>
+			<rom type="bgm" offset="0x0004">PSG04.BIN</rom>
+			<rom type="bgm" offset="0x0005">PSG05.BIN</rom>
+			<rom type="bgm" offset="0x0006">PSG06.BIN</rom>
+			<rom type="bgm" offset="0x0007">PSG07.BIN</rom>
+			<rom type="bgm" offset="0x0008">PSG08.BIN</rom>
+			<rom type="bgm" offset="0x0009">PSG09.BIN</rom>
+			<rom type="bgm" offset="0x000a">PSG0A.BIN</rom>
+		</romlist>
+		<titlelist>
+			<title code="0x010201">タイトルデモ</title>
+			<title code="0x010202">プレイヤー セレクト</title>
+			<title code="0x010203">マップ</title>
+			<title code="0x010204">レース開始デモ</title>
+			<title code="0x000307">レース開始</title>
+			<title code="0x010301">アップリケタウン</title>
+			<title code="0x010401">マシュマロード</title>
+			<title code="0x010501">ミズアメール</title>
+			<title code="0x010601">グリンピースコリーヌ</title>
+			<title code="0x010701">ピーナッツディザート</title>
+			<title code="0x010901">ピットイン</title>
+			<title code="0x010902">アイテムショップ</title>
+			<title code="0x010903">ホスピタル</title>
+			<title code="0x010304">シップ セレクト</title>
+			<title code="0x010801">中ステージ</title>
+			<title code="0x000306">ゴール</title>
+			<title code="0x000a01">ワールドクリア</title>
+			<title code="0x010a03">順位</title>
+			<title code="0x010a06">コングラチュレーション</title>
+			<title code="0x010a05">スタッフロール</title>
+			<title code="0x000303">ミス</title>
+			<title code="0x000302">ゲームオーバー</title>
+			<title code="0x000904">BGM 0904</title>
+			<title code="0x000a02">BGM 0a02</title>
+			<title code="0x010a04">BGM 0a04</title>
+			<title code="0x000305">UNUSED</title>
+			<title code="0x000405">UNUSED</title>
+		</titlelist>
+	</game>
+	<game>
+		<name>[MSX] LAYDOCK2 - LAST ATTACK(OPLL)</name>
+		<driver type="generic">msx</driver>
+		<driveralias type="MSX">Panasoft</driveralias>
+		<options>
+			<option name="mdata_addr" value="0xb800"/>
+			<option name="mdata_size" value="0x0800"/>
+			<option name="mfile_size" value="0x0800"/>
+			<option name="init_pc"    value="0x0400"/>
+			<option name="use_opll"   value="0x01"/>
+		      </options>
+		<romlist archive="laydock2_msx">
+			<rom type="code" offset="0x0400">patch</rom>
+			<rom type="code" offset="0x4000">PCM.BIN</rom>
+			<rom type="code" offset="0x9000">MAIN.BIN</rom>
+			<rom type="code" offset="0xC000">OPLLDRV.BIN</rom>
+			<rom type="bgm" offset="0x00">FMUS00.BIN</rom>
+			<rom type="bgm" offset="0x01">FMUS01.BIN</rom>
+			<rom type="bgm" offset="0x02">FMUS02.BIN</rom>
+			<rom type="bgm" offset="0x03">FMUS03.BIN</rom>
+			<rom type="bgm" offset="0x04">FMUS04.BIN</rom>
+			<rom type="bgm" offset="0x05">FMUS05.BIN</rom>
+			<rom type="bgm" offset="0x06">FMUS06.BIN</rom>
+			<rom type="bgm" offset="0x07">FMUS07.BIN</rom>
+			<rom type="bgm" offset="0x08">FMUS08.BIN</rom>
+			<rom type="bgm" offset="0x09">FMUS09.BIN</rom>
+			<rom type="bgm" offset="0x0a">FMUS0A.BIN</rom>
+			<rom type="bgm" offset="0x0b">FMUS0B.BIN</rom>
+		</romlist>
+		<titlelist>
+			<title code="0x0c">Opening Voice</title>
+			<title code="0x05">Last Attack           (Opening)</title>
+			<title code="0x00">Ice of Death          (Stage 1)</title>
+			<title code="0x01">Cold Ameba            (Boss)</title>
+			<title code="0x02">Mad Flame             (Stage 2)</title>
+			<title code="0x03">Beyond the Dimensions (Stage 3)</title>
+			<title code="0x04">Get the Luck          (Stage 3 Boss)</title>
+			<title code="0x09">Inorgranic Beat       (Stage 4)</title>
+			<title code="0x0a">Bio-Monster           (Last Boss)</title>
+			<!--
+			<title code="0x0b">Bio-Monster           (Last Boss)</title>
+			  -->
+			<title code="0x06">Interlude             (Visual)</title>
+			<title code="0x07">Return of Peace       (Ending)</title>
+			<title code="0x08">Your Rank             (Clear Ranking)</title>
+		</titlelist>
+	</game>
+	<game>
+		<name>[MSX] LAYDOCK2 - LAST ATTACK(PSG)</name>
+		<driver type="generic">msx</driver>
+		<driveralias type="MSX">Panasoft</driveralias>
+		<options>
+			<option name="mdata_addr" value="0xb800"/>
+			<option name="mdata_size" value="0x0800"/>
+			<option name="mfile_size" value="0x0800"/>
+			<option name="init_pc"    value="0x0400"/>
+		      </options>
+		<romlist archive="laydock2_msx">
+			<rom type="code" offset="0x0400">patch</rom>
+			<rom type="code" offset="0x4000">PCM.BIN</rom>
+			<rom type="code" offset="0x9000">MAIN.BIN</rom>
+			<rom type="code" offset="0xC000">PSGDRV.BIN</rom>
+			<rom type="bgm" offset="0x00">PMUS00.BIN</rom>
+			<rom type="bgm" offset="0x01">PMUS01.BIN</rom>
+			<rom type="bgm" offset="0x02">PMUS02.BIN</rom>
+			<rom type="bgm" offset="0x03">PMUS03.BIN</rom>
+			<rom type="bgm" offset="0x04">PMUS04.BIN</rom>
+			<rom type="bgm" offset="0x05">PMUS05.BIN</rom>
+			<rom type="bgm" offset="0x06">PMUS06.BIN</rom>
+			<rom type="bgm" offset="0x07">PMUS07.BIN</rom>
+			<rom type="bgm" offset="0x08">PMUS08.BIN</rom>
+			<rom type="bgm" offset="0x09">PMUS09.BIN</rom>
+			<rom type="bgm" offset="0x0a">PMUS0A.BIN</rom>
+		</romlist>
+		<titlelist>
+			<title code="0x0c">Opening Voice</title>
+			<title code="0x05">Last Attack           (Opening)</title>
+			<title code="0x04">Ice of Death          (Stage 1)</title>
+			<title code="0x00">Cold Ameba            (Boss)</title>
+			<title code="0x01">Mad Flame             (Stage 2)</title>
+			<title code="0x02">Beyond the Dimensions (Stage 3)</title>
+			<title code="0x03">Get the Luck          (Stage 3 Boss)</title>
+			<title code="0x09">Inorgranic Beat       (Stage 4)</title>
+			<title code="0x0a">Bio-Monster           (Last Boss)</title>
+			<title code="0x06">Interlude             (Visual)</title>
+			<title code="0x07">Return of Peace       (Ending)</title>
+			<title code="0x08">Your Rank             (Clear Ranking)</title>
+		</titlelist>
+	</game>
+</gamelist>

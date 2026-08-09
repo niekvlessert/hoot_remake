@@ -1,0 +1,179 @@
+{
+  "format": "hoot-catalog-shard",
+  "version": 1,
+  "source_file": "xml/aion.xml",
+  "date": "2005/09/25",
+  "comments": [
+    " //AION "
+  ],
+  "games": [
+    {
+      "title": "[PC-9801] パラ・ダイス ～君は追い剥ぎを見たか?～",
+      "driver": {
+        "name": "pc98dos",
+        "type": "opn",
+        "alias": "AION",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "clockmul",
+          "value": "8"
+        },
+        {
+          "name": "ssg_mix",
+          "value": "-18"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "mlalf_98.com",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "OPEN4.EXE",
+          "offset": "-1"
+        },
+        {
+          "type": "conin",
+          "path": "OPEN4.EXE",
+          "offset": "5"
+        },
+        {
+          "type": "file",
+          "path": "END.MLO",
+          "offset": "0x10"
+        },
+        {
+          "type": "file",
+          "path": "JIN1.MLO",
+          "offset": "0x11"
+        },
+        {
+          "type": "file",
+          "path": "JIN2.MLO",
+          "offset": "0x12"
+        },
+        {
+          "type": "file",
+          "path": "JIN3.MLO",
+          "offset": "0x13"
+        },
+        {
+          "type": "file",
+          "path": "JIN4.MLO",
+          "offset": "0x14"
+        },
+        {
+          "type": "file",
+          "path": "JIN5.MLO",
+          "offset": "0x15"
+        },
+        {
+          "type": "file",
+          "path": "JIN6.MLO",
+          "offset": "0x16"
+        },
+        {
+          "type": "file",
+          "path": "JIN7.MLO",
+          "offset": "0x17"
+        },
+        {
+          "type": "file",
+          "path": "OPNING-A.MLO",
+          "offset": "0x18"
+        },
+        {
+          "type": "file",
+          "path": "THEME1.MLO",
+          "offset": "0x19"
+        },
+        {
+          "type": "file",
+          "path": "THEME2.MLO",
+          "offset": "0x1a"
+        },
+        {
+          "type": "file",
+          "path": "THEME3.MLO",
+          "offset": "0x1b"
+        },
+        {
+          "type": "shell",
+          "path": "mlalf_98",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x18",
+          "title": "OPNING-A.MLO"
+        },
+        {
+          "kind": "title",
+          "code": "0x19",
+          "title": "THEME1.MLO"
+        },
+        {
+          "kind": "title",
+          "code": "0x1a",
+          "title": "THEME2.MLO"
+        },
+        {
+          "kind": "title",
+          "code": "0x1b",
+          "title": "THEME3.MLO"
+        },
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "END.MLO"
+        },
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "JIN1.MLO"
+        },
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "JIN2.MLO"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "JIN3.MLO"
+        },
+        {
+          "kind": "title",
+          "code": "0x14",
+          "title": "JIN4.MLO"
+        },
+        {
+          "kind": "title",
+          "code": "0x15",
+          "title": "JIN5.MLO"
+        },
+        {
+          "kind": "title",
+          "code": "0x16",
+          "title": "JIN6.MLO"
+        },
+        {
+          "kind": "title",
+          "code": "0x17",
+          "title": "JIN7.MLO"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/aion.xml",
+      "source_order": 102,
+      "archive": "paradice_98",
+      "id": "paradice-98-opn"
+    }
+  ]
+}

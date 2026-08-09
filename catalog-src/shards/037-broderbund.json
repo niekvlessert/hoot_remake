@@ -1,0 +1,3047 @@
+{
+  "format": "hoot-catalog-shard",
+  "version": 1,
+  "source_file": "xml/broderbund.xml",
+  "date": "2005/09/25",
+  "comments": [
+    " //Broderbund "
+  ],
+  "games": [
+    {
+      "title": "[PC-9801] WINGS - BLAZE YOUR WAY TO GLORY!",
+      "driver": {
+        "name": "pc98",
+        "type": "opn",
+        "alias": "Broderbund",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "bootcs",
+          "value": "0x0060"
+        },
+        {
+          "name": "bootip",
+          "value": "0x0003"
+        },
+        {
+          "name": "funcvect",
+          "value": "0x7f"
+        },
+        {
+          "name": "dataaddr",
+          "value": "0x20000"
+        },
+        {
+          "name": "filesize",
+          "value": "0x360"
+        },
+        {
+          "name": "data2addr",
+          "value": "0x21000"
+        },
+        {
+          "name": "file2size",
+          "value": "0x2000"
+        },
+        {
+          "name": "datamax",
+          "value": "0x0c"
+        },
+        {
+          "name": "dummysndrom",
+          "value": "1"
+        },
+        {
+          "name": "clockmul",
+          "value": "8"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "ss98md2.bin",
+          "offset": "0x00600"
+        },
+        {
+          "type": "code",
+          "path": "MUSDRV2.SYS",
+          "offset": "0x01000"
+        },
+        {
+          "type": "bgm",
+          "path": "AIRBORN.MUD",
+          "offset": "0x01"
+        },
+        {
+          "type": "bgm2",
+          "path": "AIRBORN.MUS",
+          "offset": "0x01"
+        },
+        {
+          "type": "bgm",
+          "path": "ATTACK.MUD",
+          "offset": "0x02"
+        },
+        {
+          "type": "bgm2",
+          "path": "ATTACK.MUS",
+          "offset": "0x02"
+        },
+        {
+          "type": "bgm",
+          "path": "CLS.MUD",
+          "offset": "0x03"
+        },
+        {
+          "type": "bgm2",
+          "path": "CLS.MUS",
+          "offset": "0x03"
+        },
+        {
+          "type": "bgm",
+          "path": "DANGEROU.MUD",
+          "offset": "0x04"
+        },
+        {
+          "type": "bgm2",
+          "path": "DANGEROU.MUS",
+          "offset": "0x04"
+        },
+        {
+          "type": "bgm",
+          "path": "FALLINGO.MUD",
+          "offset": "0x05"
+        },
+        {
+          "type": "bgm2",
+          "path": "FALLINGO.MUS",
+          "offset": "0x05"
+        },
+        {
+          "type": "bgm",
+          "path": "INTERCEP.MUD",
+          "offset": "0x06"
+        },
+        {
+          "type": "bgm2",
+          "path": "INTERCEP.MUS",
+          "offset": "0x06"
+        },
+        {
+          "type": "bgm",
+          "path": "KX.MUD",
+          "offset": "0x07"
+        },
+        {
+          "type": "bgm2",
+          "path": "KX.MUS",
+          "offset": "0x07"
+        },
+        {
+          "type": "bgm",
+          "path": "SAME.MUD",
+          "offset": "0x08"
+        },
+        {
+          "type": "bgm2",
+          "path": "SAME.MUS",
+          "offset": "0x08"
+        },
+        {
+          "type": "bgm",
+          "path": "SCORE.MUD",
+          "offset": "0x09"
+        },
+        {
+          "type": "bgm2",
+          "path": "SCORE.MUS",
+          "offset": "0x09"
+        },
+        {
+          "type": "bgm",
+          "path": "VICTORY.MUD",
+          "offset": "0x0a"
+        },
+        {
+          "type": "bgm2",
+          "path": "VICTORY.MUS",
+          "offset": "0x0a"
+        },
+        {
+          "type": "bgm",
+          "path": "WEAPON.MUD",
+          "offset": "0x0b"
+        },
+        {
+          "type": "bgm2",
+          "path": "WEAPON.MUS",
+          "offset": "0x0b"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x08",
+          "title": "SAME.MUS     : タイトル"
+        },
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "AIRBORN.MUS  : 下士官"
+        },
+        {
+          "kind": "title",
+          "code": "0x04",
+          "title": "DANGEROU.MUS : 少尉"
+        },
+        {
+          "kind": "title",
+          "code": "0x0a",
+          "title": "VICTORY.MUS  : 中尉"
+        },
+        {
+          "kind": "title",
+          "code": "0x0b",
+          "title": "WEAPON.MUS   : 大尉"
+        },
+        {
+          "kind": "title",
+          "code": "0x06",
+          "title": "INTERCEP.MUS : 少佐"
+        },
+        {
+          "kind": "title",
+          "code": "0x02",
+          "title": "ATTACK.MUS   : 中佐"
+        },
+        {
+          "kind": "title",
+          "code": "0x03",
+          "title": "CLS.MUS      : 大佐"
+        },
+        {
+          "kind": "title",
+          "code": "0x05",
+          "title": "FALLINGO.MUS : クリア"
+        },
+        {
+          "kind": "title",
+          "code": "0x07",
+          "title": "KX.MUS       : ゲームオーバー"
+        },
+        {
+          "kind": "title",
+          "code": "0x09",
+          "title": "SCORE.MUS    : ランキング"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/broderbund.xml",
+      "source_order": 647,
+      "archive": "wings98",
+      "id": "wings98-opn"
+    },
+    {
+      "title": "[PC-9801] LOOPZ(OPN)",
+      "driver": {
+        "name": "pc98vx",
+        "type": "opn",
+        "alias": "Broderbund",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "bootcs",
+          "value": "0x0060"
+        },
+        {
+          "name": "bootip",
+          "value": "0x0000"
+        },
+        {
+          "name": "funcvect",
+          "value": "0x7f"
+        },
+        {
+          "name": "dataaddr",
+          "value": "0x10500"
+        },
+        {
+          "name": "filesize",
+          "value": "0x1000"
+        },
+        {
+          "name": "clockmul",
+          "value": "0x04"
+        },
+        {
+          "name": "datamax",
+          "value": "0x0a"
+        },
+        {
+          "name": "clockmul",
+          "value": "8"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "loopz.bin",
+          "offset": "0x00600"
+        },
+        {
+          "type": "code",
+          "path": "DRIVER",
+          "offset": "0x10000"
+        },
+        {
+          "type": "bgm",
+          "path": "MA000",
+          "offset": "0x01"
+        },
+        {
+          "type": "bgm",
+          "path": "MA001",
+          "offset": "0x02"
+        },
+        {
+          "type": "bgm",
+          "path": "MA002",
+          "offset": "0x03"
+        },
+        {
+          "type": "bgm",
+          "path": "MA003",
+          "offset": "0x04"
+        },
+        {
+          "type": "bgm",
+          "path": "MA004",
+          "offset": "0x05"
+        },
+        {
+          "type": "bgm",
+          "path": "MA005",
+          "offset": "0x06"
+        },
+        {
+          "type": "bgm",
+          "path": "MA006",
+          "offset": "0x07"
+        },
+        {
+          "type": "bgm",
+          "path": "MA007",
+          "offset": "0x08"
+        },
+        {
+          "type": "bgm",
+          "path": "MA008",
+          "offset": "0x09"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x03000001",
+          "title": "MA000 : CARTOON"
+        },
+        {
+          "kind": "title",
+          "code": "0x03000002",
+          "title": "MA001 : OLD FILM"
+        },
+        {
+          "kind": "title",
+          "code": "0x03000003",
+          "title": "MA002 : DEAD SPACE"
+        },
+        {
+          "kind": "title",
+          "code": "0x03000004",
+          "title": "MA003 : FUTUROLOGY"
+        },
+        {
+          "kind": "title",
+          "code": "0x03000005",
+          "title": "MA004 : PERSIAN CARPET"
+        },
+        {
+          "kind": "title",
+          "code": "0x03000006",
+          "title": "MA005 : OPPEKE SONG"
+        },
+        {
+          "kind": "title",
+          "code": "0x03800007",
+          "title": "MA006 : LOOP COMPLETE"
+        },
+        {
+          "kind": "title",
+          "code": "0x01800008",
+          "title": "MA007 : GAME OVER"
+        },
+        {
+          "kind": "title",
+          "code": "0x01800009",
+          "title": "MA008 : FANFARE"
+        },
+        {
+          "kind": "title",
+          "code": "0x0000ffff",
+          "title": ": TEMPO UP"
+        },
+        {
+          "kind": "title",
+          "code": "0x0000fffe",
+          "title": ": TEMPO DOWN"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/broderbund.xml",
+      "source_order": 648,
+      "archive": "loopz_98",
+      "id": "loopz-98-opn"
+    },
+    {
+      "title": "[PC-9801] LOOPZ(BEEP)",
+      "driver": {
+        "name": "pc98vx",
+        "type": "beep",
+        "alias": "Broderbund",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "bootcs",
+          "value": "0x0060"
+        },
+        {
+          "name": "bootip",
+          "value": "0x0000"
+        },
+        {
+          "name": "funcvect",
+          "value": "0x7f"
+        },
+        {
+          "name": "dataaddr",
+          "value": "0x10500"
+        },
+        {
+          "name": "filesize",
+          "value": "0x1000"
+        },
+        {
+          "name": "clockmul",
+          "value": "8"
+        },
+        {
+          "name": "datamax",
+          "value": "0x10"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "loopz.bin",
+          "offset": "0x00600"
+        },
+        {
+          "type": "code",
+          "path": "DRIVER",
+          "offset": "0x10000"
+        },
+        {
+          "type": "bgm",
+          "path": "MB000",
+          "offset": "0x01"
+        },
+        {
+          "type": "bgm",
+          "path": "MB001",
+          "offset": "0x02"
+        },
+        {
+          "type": "bgm",
+          "path": "MB002",
+          "offset": "0x03"
+        },
+        {
+          "type": "bgm",
+          "path": "MB003",
+          "offset": "0x04"
+        },
+        {
+          "type": "bgm",
+          "path": "MB004",
+          "offset": "0x05"
+        },
+        {
+          "type": "bgm",
+          "path": "MB005",
+          "offset": "0x06"
+        },
+        {
+          "type": "bgm",
+          "path": "MB006",
+          "offset": "0x07"
+        },
+        {
+          "type": "bgm",
+          "path": "MB007",
+          "offset": "0x08"
+        },
+        {
+          "type": "bgm",
+          "path": "MB008",
+          "offset": "0x09"
+        },
+        {
+          "type": "bgm",
+          "path": "MB009",
+          "offset": "0x0a"
+        },
+        {
+          "type": "bgm",
+          "path": "MB010",
+          "offset": "0x0b"
+        },
+        {
+          "type": "bgm",
+          "path": "MB011",
+          "offset": "0x0c"
+        },
+        {
+          "type": "bgm",
+          "path": "MB012",
+          "offset": "0x0d"
+        },
+        {
+          "type": "bgm",
+          "path": "MB013",
+          "offset": "0x0e"
+        },
+        {
+          "type": "bgm",
+          "path": "MB014",
+          "offset": "0x0f"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x03000001",
+          "title": "MB000 : CARTOON"
+        },
+        {
+          "kind": "title",
+          "code": "0x03000002",
+          "title": "MB001 : OLD FILM"
+        },
+        {
+          "kind": "title",
+          "code": "0x03000003",
+          "title": "MB002 : DEAD SPACE"
+        },
+        {
+          "kind": "title",
+          "code": "0x03000004",
+          "title": "MB003 : FUTUROLOGY"
+        },
+        {
+          "kind": "title",
+          "code": "0x03000005",
+          "title": "MB004 : PERSIAN CARPET"
+        },
+        {
+          "kind": "title",
+          "code": "0x03000006",
+          "title": "MB005 : OPPEKE SONG"
+        },
+        {
+          "kind": "title",
+          "code": "0x03800007",
+          "title": "MB006 : LOOP COMPLETE"
+        },
+        {
+          "kind": "title",
+          "code": "0x01800008",
+          "title": "MB007 : GAME OVER"
+        },
+        {
+          "kind": "title",
+          "code": "0x01800009",
+          "title": "MB008 : FANFARE"
+        },
+        {
+          "kind": "title",
+          "code": "0x0380000a",
+          "title": "MB009 : EFFECT #1"
+        },
+        {
+          "kind": "title",
+          "code": "0x0380000b",
+          "title": "MB010 : EFFECT #2"
+        },
+        {
+          "kind": "title",
+          "code": "0x0380000c",
+          "title": "MB011 : EFFECT #3"
+        },
+        {
+          "kind": "title",
+          "code": "0x0380000d",
+          "title": "MB012 : EFFECT #4"
+        },
+        {
+          "kind": "title",
+          "code": "0x0380000e",
+          "title": "MB013 : EFFECT #5"
+        },
+        {
+          "kind": "title",
+          "code": "0x0380000f",
+          "title": "MB014 : EFFECT #6"
+        },
+        {
+          "kind": "title",
+          "code": "0x0000ffff",
+          "title": ": TEMPO UP"
+        },
+        {
+          "kind": "title",
+          "code": "0x0000fffe",
+          "title": ": TEMPO DOWN"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/broderbund.xml",
+      "source_order": 649,
+      "archive": "loopz_98",
+      "id": "loopz-98-beep"
+    },
+    {
+      "title": "[PC-8801] THE ANCIENT ART OF WAR",
+      "driver": {
+        "name": "pc88",
+        "type": "opn",
+        "alias": "Broderbund",
+        "platform": "NEC PC-8801"
+      },
+      "options": [
+        {
+          "name": "mdata_addr",
+          "value": "0xd000"
+        },
+        {
+          "name": "use_vrtc",
+          "value": "0x01"
+        },
+        {
+          "name": "baseclock",
+          "value": "0x04"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "PATCH",
+          "offset": "0x0000"
+        },
+        {
+          "type": "code",
+          "path": "title",
+          "offset": "0x8500"
+        },
+        {
+          "type": "code",
+          "path": "main6",
+          "offset": "0xa903"
+        },
+        {
+          "type": "bgm",
+          "path": "misoSR",
+          "offset": "0x00"
+        },
+        {
+          "type": "bgm",
+          "path": "main6",
+          "offset": "0x01"
+        },
+        {
+          "type": "bgm",
+          "path": "sound",
+          "offset": "0x02"
+        },
+        {
+          "type": "bgm",
+          "path": "sound",
+          "offset": "0x03"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x00",
+          "title": "Broderbund LOGO"
+        },
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "Opening"
+        },
+        {
+          "kind": "title",
+          "code": "0x02",
+          "title": "Lose"
+        },
+        {
+          "kind": "title",
+          "code": "0x03",
+          "title": "Win"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/broderbund.xml",
+      "source_order": 650,
+      "archive": "artofwar",
+      "id": "artofwar-opn"
+    },
+    {
+      "title": "[PC-88VA] THE ANCIENT ART OF WAR(OPNA)",
+      "driver": {
+        "name": "pc88va",
+        "type": "opna",
+        "alias": "Broderbund",
+        "platform": "NEC PC-88VA"
+      },
+      "options": [
+        {
+          "name": "bootcs",
+          "value": "0x0060"
+        },
+        {
+          "name": "bootip",
+          "value": "0xf500"
+        },
+        {
+          "name": "funcvect",
+          "value": "0x7f"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "W1.COM",
+          "offset": "0x00700"
+        },
+        {
+          "type": "code",
+          "path": "artofwar.bin",
+          "offset": "0x0fb00"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x00",
+          "title": "Opening"
+        },
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "Win"
+        },
+        {
+          "kind": "title",
+          "code": "0x02",
+          "title": "Lose"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/broderbund.xml",
+      "source_order": 651,
+      "archive": "artofwar_va",
+      "id": "artofwar-va-opna"
+    },
+    {
+      "title": "[PC-88VA] THE ANCIENT ART OF WAR(OPN)",
+      "driver": {
+        "name": "pc88va",
+        "type": "opn",
+        "alias": "Broderbund",
+        "platform": "NEC PC-88VA"
+      },
+      "options": [
+        {
+          "name": "bootcs",
+          "value": "0x0060"
+        },
+        {
+          "name": "bootip",
+          "value": "0xf500"
+        },
+        {
+          "name": "funcvect",
+          "value": "0x7f"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "W1.COM",
+          "offset": "0x00700"
+        },
+        {
+          "type": "code",
+          "path": "artofwar.bin",
+          "offset": "0x0fb00"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x00",
+          "title": "Opening"
+        },
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "Win"
+        },
+        {
+          "kind": "title",
+          "code": "0x02",
+          "title": "Lose"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/broderbund.xml",
+      "source_order": 652,
+      "archive": "artofwar_va",
+      "id": "artofwar-va-opn"
+    },
+    {
+      "title": "[PC-9801] CARMEN SANDIEGO in JAPAN",
+      "driver": {
+        "name": "pc98",
+        "type": "opn",
+        "alias": "Broderbund",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "bootcs",
+          "value": "0x0060"
+        },
+        {
+          "name": "bootip",
+          "value": "0x0003"
+        },
+        {
+          "name": "funcvect",
+          "value": "0x7f"
+        },
+        {
+          "name": "dataaddr",
+          "value": "0x20000"
+        },
+        {
+          "name": "filesize",
+          "value": "0x361"
+        },
+        {
+          "name": "data2addr",
+          "value": "0x21000"
+        },
+        {
+          "name": "file2size",
+          "value": "0x2000"
+        },
+        {
+          "name": "datamax",
+          "value": "0x09"
+        },
+        {
+          "name": "dummysndrom",
+          "value": "1"
+        },
+        {
+          "name": "clockmul",
+          "value": "8"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "ss98md2.bin",
+          "offset": "0x00600"
+        },
+        {
+          "type": "code",
+          "path": "MUSIC.SYS",
+          "offset": "0x01000"
+        },
+        {
+          "type": "bgm",
+          "path": "TAIHO.MUD",
+          "offset": "0x01"
+        },
+        {
+          "type": "bgm2",
+          "path": "CARMEN.MUS",
+          "offset": "0x01"
+        },
+        {
+          "type": "bgm",
+          "path": "SAMPLE.MUD",
+          "offset": "0x02"
+        },
+        {
+          "type": "bgm2",
+          "path": "ENDING.MUS",
+          "offset": "0x02"
+        },
+        {
+          "type": "bgm",
+          "path": "SAMPLE.MUD",
+          "offset": "0x03"
+        },
+        {
+          "type": "bgm2",
+          "path": "ETUDES.MUS",
+          "offset": "0x03"
+        },
+        {
+          "type": "bgm",
+          "path": "GOOD.MUD",
+          "offset": "0x04"
+        },
+        {
+          "type": "bgm2",
+          "path": "MAIL.MUS",
+          "offset": "0x04"
+        },
+        {
+          "type": "bgm",
+          "path": "CHOUTEI.MUD",
+          "offset": "0x05"
+        },
+        {
+          "type": "bgm2",
+          "path": "NIGETA.MUS",
+          "offset": "0x05"
+        },
+        {
+          "type": "bgm",
+          "path": "TAIHO.MUD",
+          "offset": "0x06"
+        },
+        {
+          "type": "bgm2",
+          "path": "SEIKYU.MUS",
+          "offset": "0x06"
+        },
+        {
+          "type": "bgm",
+          "path": "TAIHO.MUD",
+          "offset": "0x07"
+        },
+        {
+          "type": "bgm2",
+          "path": "TAIHO.MUS",
+          "offset": "0x07"
+        },
+        {
+          "type": "bgm",
+          "path": "SAMPLE.MUD",
+          "offset": "0x08"
+        },
+        {
+          "type": "bgm2",
+          "path": "WAKARE.MUS",
+          "offset": "0x08"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "CARMEN.MUS : オープニング"
+        },
+        {
+          "kind": "title",
+          "code": "0x06",
+          "title": "SEIKYU.MUS : 逮捕状請求"
+        },
+        {
+          "kind": "title",
+          "code": "0x07",
+          "title": "TAIHO.MUS  : 逮捕"
+        },
+        {
+          "kind": "title",
+          "code": "0x04",
+          "title": "MAIL.MUS   : カルメン・サンディエゴからの手紙"
+        },
+        {
+          "kind": "title",
+          "code": "0x03",
+          "title": "ETUDES.MUS : 逮捕状請求 (カルメン・サンディエゴ)"
+        },
+        {
+          "kind": "title",
+          "code": "0x02",
+          "title": "ENDING.MUS : エンディング"
+        },
+        {
+          "kind": "title",
+          "code": "0x08",
+          "title": "WAKARE.MUS : エンディング (ループver)"
+        },
+        {
+          "kind": "title",
+          "code": "0x05",
+          "title": "NIGETA.MUS : 逮捕失敗"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/broderbund.xml",
+      "source_order": 653,
+      "archive": "csij_98",
+      "id": "csij-98-opn"
+    },
+    {
+      "title": "[PC-9801] PRINCE of PERSIA",
+      "driver": {
+        "name": "pc98",
+        "type": "opn",
+        "alias": "Broderbund",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "bootcs",
+          "value": "0x0060"
+        },
+        {
+          "name": "bootip",
+          "value": "0x0000"
+        },
+        {
+          "name": "funcvect",
+          "value": "0x7f"
+        },
+        {
+          "name": "dataaddr",
+          "value": "0x20000"
+        },
+        {
+          "name": "filesize",
+          "value": "0x4000"
+        },
+        {
+          "name": "datamax",
+          "value": "0x1b"
+        },
+        {
+          "name": "clockmul",
+          "value": "8"
+        },
+        {
+          "name": "ssg_mix",
+          "value": "-18"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "persia98.bin",
+          "offset": "0x00600"
+        },
+        {
+          "type": "code",
+          "path": "MUSIC.SYS",
+          "offset": "0x10000"
+        },
+        {
+          "type": "bgm",
+          "path": "MUSIC1.MUS",
+          "offset": "0x01"
+        },
+        {
+          "type": "bgm",
+          "path": "MUSIC2.MUS",
+          "offset": "0x02"
+        },
+        {
+          "type": "bgm",
+          "path": "MUSIC3.MUS",
+          "offset": "0x03"
+        },
+        {
+          "type": "bgm",
+          "path": "MUSIC4.MUS",
+          "offset": "0x04"
+        },
+        {
+          "type": "bgm",
+          "path": "FIGHT.MUS",
+          "offset": "0x05"
+        },
+        {
+          "type": "bgm",
+          "path": "FIGHTF.MUS",
+          "offset": "0x06"
+        },
+        {
+          "type": "bgm",
+          "path": "FIGHTS.MUS",
+          "offset": "0x07"
+        },
+        {
+          "type": "bgm",
+          "path": "FIGHTK.MUS",
+          "offset": "0x08"
+        },
+        {
+          "type": "bgm",
+          "path": "VICT1.MUS",
+          "offset": "0x09"
+        },
+        {
+          "type": "bgm",
+          "path": "APPEAR.MUS",
+          "offset": "0x0a"
+        },
+        {
+          "type": "bgm",
+          "path": "APPEAR2.MUS",
+          "offset": "0x0b"
+        },
+        {
+          "type": "bgm",
+          "path": "PICKUP.MUS",
+          "offset": "0x0c"
+        },
+        {
+          "type": "bgm",
+          "path": "POWUP.MUS",
+          "offset": "0x0d"
+        },
+        {
+          "type": "bgm",
+          "path": "KUSURI.MUS",
+          "offset": "0x0e"
+        },
+        {
+          "type": "bgm",
+          "path": "CLEAR.MUS",
+          "offset": "0x0f"
+        },
+        {
+          "type": "bgm",
+          "path": "EXIT.MUS",
+          "offset": "0x10"
+        },
+        {
+          "type": "bgm",
+          "path": "DEAD.MUS",
+          "offset": "0x11"
+        },
+        {
+          "type": "bgm",
+          "path": "DEAD2.MUS",
+          "offset": "0x12"
+        },
+        {
+          "type": "bgm",
+          "path": "OPEN.MUS",
+          "offset": "0x13"
+        },
+        {
+          "type": "bgm",
+          "path": "ROOM1.MUS",
+          "offset": "0x14"
+        },
+        {
+          "type": "bgm",
+          "path": "ROOM2.MUS",
+          "offset": "0x15"
+        },
+        {
+          "type": "bgm",
+          "path": "END1.MUS",
+          "offset": "0x16"
+        },
+        {
+          "type": "bgm",
+          "path": "END2.MUS",
+          "offset": "0x17"
+        },
+        {
+          "type": "bgm",
+          "path": "END3.MUS",
+          "offset": "0x18"
+        },
+        {
+          "type": "bgm",
+          "path": "TIMEOUT.MUS",
+          "offset": "0x19"
+        },
+        {
+          "type": "bgm",
+          "path": "MENU.MUS",
+          "offset": "0x1a"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x00",
+          "title": "[STOP]"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "OPEN.MUS    : プリンス・オブ・ペルシャ"
+        },
+        {
+          "kind": "title",
+          "code": "0x14",
+          "title": "ROOM1.MUS   : ジャファーの陰謀"
+        },
+        {
+          "kind": "title",
+          "code": "0x1a",
+          "title": "MENU.MUS    : メニュー画面"
+        },
+        {
+          "kind": "title",
+          "code": "0x02",
+          "title": "MUSIC2.MUS  : 石造りの部屋"
+        },
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "MUSIC1.MUS  : 装飾のある部屋"
+        },
+        {
+          "kind": "title",
+          "code": "0x05",
+          "title": "FIGHT.MUS   : 正義の戦い"
+        },
+        {
+          "kind": "title",
+          "code": "0x07",
+          "title": "FIGHTS.MUS  : スケルトン"
+        },
+        {
+          "kind": "title",
+          "code": "0x08",
+          "title": "FIGHTK.MUS  : ドッペルゲンガー"
+        },
+        {
+          "kind": "title",
+          "code": "0x04",
+          "title": "MUSIC4.MUS  : 心臓破りの部屋"
+        },
+        {
+          "kind": "title",
+          "code": "0x03",
+          "title": "MUSIC3.MUS  : ジャファーの部屋"
+        },
+        {
+          "kind": "title",
+          "code": "0x06",
+          "title": "FIGHTF.MUS  : ジャファーとの対決"
+        },
+        {
+          "kind": "title",
+          "code": "0x16",
+          "title": "END1.MUS    : 勝利の凱旋"
+        },
+        {
+          "kind": "title",
+          "code": "0x17",
+          "title": "END2.MUS    : 戦いの軌跡"
+        },
+        {
+          "kind": "title",
+          "code": "0x18",
+          "title": "END3.MUS    : ペルシャの平和"
+        },
+        {
+          "kind": "title",
+          "code": "0x15",
+          "title": "ROOM2.MUS   : プリンセスの不安"
+        },
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "DEAD.MUS    : SE くし刺し"
+        },
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "DEAD2.MUS   : SE 主人公死亡"
+        },
+        {
+          "kind": "title",
+          "code": "0x0c",
+          "title": "PICKUP.MUS  : SE 剣を拾う"
+        },
+        {
+          "kind": "title",
+          "code": "0x0d",
+          "title": "POWUP.MUS   : SE ライフアップ薬"
+        },
+        {
+          "kind": "title",
+          "code": "0x0b",
+          "title": "APPEAR2.MUS : SE ドッペルゲンガー出現"
+        },
+        {
+          "kind": "title",
+          "code": "0x19",
+          "title": "TIMEOUT.MUS : SE ゲームオーバー"
+        },
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "EXIT.MUS    : SE ステージ扉が開く"
+        },
+        {
+          "kind": "title",
+          "code": "0x0f",
+          "title": "CLEAR.MUS   : SE ステージクリアー"
+        },
+        {
+          "kind": "title",
+          "code": "0x09",
+          "title": "VICT1.MUS   : SE 敵を倒した"
+        },
+        {
+          "kind": "title",
+          "code": "0x0a",
+          "title": "APPEAR.MUS  : SE ジャファー登場"
+        },
+        {
+          "kind": "title",
+          "code": "0x0e",
+          "title": "KUSURI.MUS  : SE 回復薬を飲んだ"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/broderbund.xml",
+      "source_order": 654,
+      "archive": "persia98",
+      "id": "persia98-opn"
+    },
+    {
+      "title": "[PC-9801] PUZZNIC",
+      "driver": {
+        "name": "pc98",
+        "type": "opn",
+        "alias": "Broderbund",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "bootcs",
+          "value": "0x0060"
+        },
+        {
+          "name": "bootip",
+          "value": "0x0003"
+        },
+        {
+          "name": "funcvect",
+          "value": "0x7f"
+        },
+        {
+          "name": "dataaddr",
+          "value": "0x20000"
+        },
+        {
+          "name": "filesize",
+          "value": "0x360"
+        },
+        {
+          "name": "data2addr",
+          "value": "0x21000"
+        },
+        {
+          "name": "file2size",
+          "value": "0x2000"
+        },
+        {
+          "name": "datamax",
+          "value": "0x04"
+        },
+        {
+          "name": "dummysndrom",
+          "value": "1"
+        },
+        {
+          "name": "clockmul",
+          "value": "8"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "ss98md2.bin",
+          "offset": "0x00600"
+        },
+        {
+          "type": "code",
+          "path": "MUSDRV2.SYS",
+          "offset": "0x01000"
+        },
+        {
+          "type": "bgm",
+          "path": "PUZ01.MUD",
+          "offset": "0x01"
+        },
+        {
+          "type": "bgm2",
+          "path": "CLEAR.MUS",
+          "offset": "0x01"
+        },
+        {
+          "type": "bgm",
+          "path": "PUZ01.MUD",
+          "offset": "0x02"
+        },
+        {
+          "type": "bgm2",
+          "path": "SELECT.MUS",
+          "offset": "0x02"
+        },
+        {
+          "type": "bgm",
+          "path": "PUZ01.MUD",
+          "offset": "0x03"
+        },
+        {
+          "type": "bgm2",
+          "path": "START.MUS",
+          "offset": "0x03"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x02",
+          "title": "SELECT.MUS : Level Select"
+        },
+        {
+          "kind": "title",
+          "code": "0x03",
+          "title": "START.MUS  : Round Start"
+        },
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "CLEAR.MUS  : Round Clear"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/broderbund.xml",
+      "source_order": 655,
+      "archive": "puzznic_98",
+      "id": "puzznic-98-opn"
+    },
+    {
+      "title": "[X68000] PUZZNIC",
+      "driver": {
+        "name": "x68k",
+        "type": "generic",
+        "alias": "Broderbund",
+        "platform": "SHARP X68000"
+      },
+      "options": [],
+      "assets": [
+        {
+          "type": "code",
+          "path": "pznc68snd.bin",
+          "offset": "0x00000"
+        },
+        {
+          "type": "code",
+          "path": "PUZMYU.R",
+          "offset": "0x10000"
+        },
+        {
+          "type": "code",
+          "path": "PUZMUS.MDT",
+          "offset": "0x10d9a"
+        },
+        {
+          "type": "code",
+          "path": "PUZ.PCM",
+          "offset": "0x113fe"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x123",
+          "title": "Round Start (Unused)"
+        },
+        {
+          "kind": "title",
+          "code": "0x001",
+          "title": "Main BGM"
+        },
+        {
+          "kind": "title",
+          "code": "0x102",
+          "title": "SE  1"
+        },
+        {
+          "kind": "title",
+          "code": "0x103",
+          "title": "SE  2"
+        },
+        {
+          "kind": "title",
+          "code": "0x104",
+          "title": "SE  3"
+        },
+        {
+          "kind": "title",
+          "code": "0x105",
+          "title": "SE  4"
+        },
+        {
+          "kind": "title",
+          "code": "0x106",
+          "title": "SE  5"
+        },
+        {
+          "kind": "title",
+          "code": "0x107",
+          "title": "SE  6"
+        },
+        {
+          "kind": "title",
+          "code": "0x108",
+          "title": "SE  7"
+        },
+        {
+          "kind": "title",
+          "code": "0x109",
+          "title": "SE  8"
+        },
+        {
+          "kind": "title",
+          "code": "0x10a",
+          "title": "SE  9"
+        },
+        {
+          "kind": "title",
+          "code": "0x10b",
+          "title": "SE 10"
+        },
+        {
+          "kind": "title",
+          "code": "0x10c",
+          "title": "SE 11"
+        },
+        {
+          "kind": "title",
+          "code": "0x10d",
+          "title": "SE 12"
+        },
+        {
+          "kind": "title",
+          "code": "0x10e",
+          "title": "SE 13"
+        },
+        {
+          "kind": "title",
+          "code": "0x10f",
+          "title": "SE 14"
+        },
+        {
+          "kind": "title",
+          "code": "0x110",
+          "title": "SE 15"
+        },
+        {
+          "kind": "title",
+          "code": "0x111",
+          "title": "SE 16"
+        },
+        {
+          "kind": "title",
+          "code": "0x112",
+          "title": "SE 17"
+        },
+        {
+          "kind": "title",
+          "code": "0x113",
+          "title": "SE 18"
+        },
+        {
+          "kind": "title",
+          "code": "0x114",
+          "title": "SE 19"
+        },
+        {
+          "kind": "title",
+          "code": "0x115",
+          "title": "SE 20"
+        },
+        {
+          "kind": "title",
+          "code": "0x116",
+          "title": "SE 21"
+        },
+        {
+          "kind": "title",
+          "code": "0x117",
+          "title": "SE 22"
+        },
+        {
+          "kind": "title",
+          "code": "0x118",
+          "title": "SE 23"
+        },
+        {
+          "kind": "title",
+          "code": "0x119",
+          "title": "SE 24"
+        },
+        {
+          "kind": "title",
+          "code": "0x11a",
+          "title": "SE 25"
+        },
+        {
+          "kind": "title",
+          "code": "0x11b",
+          "title": "SE 26"
+        },
+        {
+          "kind": "title",
+          "code": "0x11c",
+          "title": "SE 27"
+        },
+        {
+          "kind": "title",
+          "code": "0x11d",
+          "title": "SE 28"
+        },
+        {
+          "kind": "title",
+          "code": "0x11e",
+          "title": "SE 29"
+        },
+        {
+          "kind": "title",
+          "code": "0x11f",
+          "title": "SE 30"
+        },
+        {
+          "kind": "title",
+          "code": "0x120",
+          "title": "SE 31"
+        },
+        {
+          "kind": "title",
+          "code": "0x121",
+          "title": "SE 32"
+        },
+        {
+          "kind": "title",
+          "code": "0x122",
+          "title": "SE 33"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/broderbund.xml",
+      "source_order": 656,
+      "archive": "pznc68snd",
+      "id": "pznc68snd-generic"
+    },
+    {
+      "title": "[X68000] Shufflepuck Cafe",
+      "driver": {
+        "name": "x68k",
+        "type": "generic",
+        "alias": "Broderbund",
+        "platform": "SHARP X68000"
+      },
+      "options": [],
+      "assets": [
+        {
+          "type": "code",
+          "path": "spc68snd.bin",
+          "offset": "0x00000"
+        },
+        {
+          "type": "x",
+          "path": "spmusdrv.x",
+          "offset": "0x10000"
+        },
+        {
+          "type": "code",
+          "path": "spmusic.dat",
+          "offset": "0x11cb6"
+        },
+        {
+          "type": "code",
+          "path": "spadpcm.dat",
+          "offset": "0x1a132"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x0e",
+          "title": "Title"
+        },
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "Character Select"
+        },
+        {
+          "kind": "title",
+          "code": "0x02",
+          "title": "Princess Bejin"
+        },
+        {
+          "kind": "title",
+          "code": "0x03",
+          "title": "Saming Lolan"
+        },
+        {
+          "kind": "title",
+          "code": "0x04",
+          "title": "Biff Raunch"
+        },
+        {
+          "kind": "title",
+          "code": "0x05",
+          "title": "Bongo Banger"
+        },
+        {
+          "kind": "title",
+          "code": "0x06",
+          "title": "DC3 ALSO"
+        },
+        {
+          "kind": "title",
+          "code": "0x07",
+          "title": "The General"
+        },
+        {
+          "kind": "title",
+          "code": "0x08",
+          "title": "Visine Orb"
+        },
+        {
+          "kind": "title",
+          "code": "0x09",
+          "title": "Skip Freeney"
+        },
+        {
+          "kind": "title",
+          "code": "0x0a",
+          "title": "Nerual Ttoille"
+        },
+        {
+          "kind": "title",
+          "code": "0x0b",
+          "title": "Vinnie the Dweeb"
+        },
+        {
+          "kind": "title",
+          "code": "0x0c",
+          "title": "Lexan Smythe-Worthington"
+        },
+        {
+          "kind": "title",
+          "code": "0x0d",
+          "title": "Ending"
+        },
+        {
+          "kind": "title",
+          "code": "0x0f",
+          "title": "Unused"
+        },
+        {
+          "kind": "title",
+          "code": "0x101",
+          "title": "SE  1"
+        },
+        {
+          "kind": "title",
+          "code": "0x102",
+          "title": "SE  2"
+        },
+        {
+          "kind": "title",
+          "code": "0x103",
+          "title": "SE  3"
+        },
+        {
+          "kind": "title",
+          "code": "0x104",
+          "title": "SE  4"
+        },
+        {
+          "kind": "title",
+          "code": "0x105",
+          "title": "SE  5"
+        },
+        {
+          "kind": "title",
+          "code": "0x106",
+          "title": "SE  6"
+        },
+        {
+          "kind": "title",
+          "code": "0x107",
+          "title": "SE  7"
+        },
+        {
+          "kind": "title",
+          "code": "0x108",
+          "title": "SE  8"
+        },
+        {
+          "kind": "title",
+          "code": "0x109",
+          "title": "SE  9"
+        },
+        {
+          "kind": "title",
+          "code": "0x10a",
+          "title": "SE 10"
+        },
+        {
+          "kind": "title",
+          "code": "0x10b",
+          "title": "SE 11"
+        },
+        {
+          "kind": "title",
+          "code": "0x10c",
+          "title": "SE 12"
+        },
+        {
+          "kind": "title",
+          "code": "0x10d",
+          "title": "SE 13"
+        },
+        {
+          "kind": "title",
+          "code": "0x10e",
+          "title": "SE 14"
+        },
+        {
+          "kind": "title",
+          "code": "0x10f",
+          "title": "SE 15"
+        },
+        {
+          "kind": "title",
+          "code": "0x110",
+          "title": "SE 16"
+        },
+        {
+          "kind": "title",
+          "code": "0x111",
+          "title": "SE 17"
+        },
+        {
+          "kind": "title",
+          "code": "0x112",
+          "title": "SE 18"
+        },
+        {
+          "kind": "title",
+          "code": "0x113",
+          "title": "SE 19"
+        },
+        {
+          "kind": "title",
+          "code": "0x114",
+          "title": "SE 20"
+        },
+        {
+          "kind": "title",
+          "code": "0x115",
+          "title": "SE 21"
+        },
+        {
+          "kind": "title",
+          "code": "0x116",
+          "title": "SE 22"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/broderbund.xml",
+      "source_order": 657,
+      "archive": "spc68snd",
+      "id": "spc68snd-generic"
+    },
+    {
+      "title": "[X68000] BLODIA",
+      "driver": {
+        "name": "x68k",
+        "type": "generic",
+        "alias": "Broderbund",
+        "platform": "SHARP X68000"
+      },
+      "options": [],
+      "assets": [
+        {
+          "type": "code",
+          "path": "opmdrv.bin"
+        },
+        {
+          "type": "x",
+          "path": "OPMDRV.X",
+          "offset": "0x08000"
+        },
+        {
+          "type": "code",
+          "path": "TITLE.OPM",
+          "offset": "0x24000"
+        },
+        {
+          "type": "code",
+          "path": "BGM_1.OPM",
+          "offset": "0x28000"
+        },
+        {
+          "type": "code",
+          "path": "BGM_2.OPM",
+          "offset": "0x2c000"
+        },
+        {
+          "type": "code",
+          "path": "CLEAR.OPM",
+          "offset": "0x30000"
+        },
+        {
+          "type": "code",
+          "path": "COFFEE_B.OPM",
+          "offset": "0x34000"
+        },
+        {
+          "type": "code",
+          "path": "GAME_OVE.OPM",
+          "offset": "0x38000"
+        },
+        {
+          "type": "code",
+          "path": "ENDING.OPM",
+          "offset": "0x3c000"
+        },
+        {
+          "type": "code",
+          "path": "SOUND.OPM",
+          "offset": "0x40000"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x0902",
+          "title": "TITLE.OPM    : Title"
+        },
+        {
+          "kind": "title",
+          "code": "0x0903",
+          "title": "BGM_1.OPM    : BGM 1"
+        },
+        {
+          "kind": "title",
+          "code": "0x0904",
+          "title": "BGM_2.OPM    : BGM 2"
+        },
+        {
+          "kind": "title",
+          "code": "0x0905",
+          "title": "CLEAR.OPM    : Map Clear"
+        },
+        {
+          "kind": "title",
+          "code": "0x0906",
+          "title": "COFFEE_B.OPM : Coffee Break"
+        },
+        {
+          "kind": "title",
+          "code": "0x0907",
+          "title": "GAME_OVE.OPM : Game Over"
+        },
+        {
+          "kind": "title",
+          "code": "0x0908",
+          "title": "ENDING.OPM   : Ending"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/broderbund.xml",
+      "source_order": 658,
+      "archive": "blodia68snd",
+      "id": "blodia68snd-generic"
+    },
+    {
+      "title": "[X68000] PRINCE of PERSIA",
+      "driver": {
+        "name": "x68k",
+        "type": "generic",
+        "alias": "Broderbund",
+        "platform": "SHARP X68000"
+      },
+      "options": [],
+      "assets": [
+        {
+          "type": "code",
+          "path": "opmdrv.bin"
+        },
+        {
+          "type": "x",
+          "path": "OPMDRV.X",
+          "offset": "0x08000"
+        },
+        {
+          "type": "code",
+          "path": "DEATH3.OPM",
+          "offset": "0x24000"
+        },
+        {
+          "type": "code",
+          "path": "END1.OPM",
+          "offset": "0x28000"
+        },
+        {
+          "type": "code",
+          "path": "END24.OPM",
+          "offset": "0x2c000"
+        },
+        {
+          "type": "code",
+          "path": "FIGHT.OPM",
+          "offset": "0x34000"
+        },
+        {
+          "type": "code",
+          "path": "FIGHT2.OPM",
+          "offset": "0x38000"
+        },
+        {
+          "type": "code",
+          "path": "FIGHTS.OPM",
+          "offset": "0x3c000"
+        },
+        {
+          "type": "code",
+          "path": "GET2.OPM",
+          "offset": "0x40000"
+        },
+        {
+          "type": "code",
+          "path": "GETSWOAD.OPM",
+          "offset": "0x44000"
+        },
+        {
+          "type": "code",
+          "path": "IDOU.OPM",
+          "offset": "0x48000"
+        },
+        {
+          "type": "code",
+          "path": "IDOU2.OPM",
+          "offset": "0x50000"
+        },
+        {
+          "type": "code",
+          "path": "IDOU3.OPM",
+          "offset": "0x54000"
+        },
+        {
+          "type": "code",
+          "path": "IDOU4.OPM",
+          "offset": "0x58000"
+        },
+        {
+          "type": "code",
+          "path": "ITIDAIJI.OPM",
+          "offset": "0x5c000"
+        },
+        {
+          "type": "code",
+          "path": "MATU.OPM",
+          "offset": "0x60000"
+        },
+        {
+          "type": "code",
+          "path": "MED4.OPM",
+          "offset": "0x64000"
+        },
+        {
+          "type": "code",
+          "path": "NEW.OPM",
+          "offset": "0x68000"
+        },
+        {
+          "type": "code",
+          "path": "OPEN22.OPM",
+          "offset": "0x6c000"
+        },
+        {
+          "type": "code",
+          "path": "OPENV3.OPM",
+          "offset": "0x70000"
+        },
+        {
+          "type": "code",
+          "path": "SENTOU2.OPM",
+          "offset": "0x74000"
+        },
+        {
+          "type": "code",
+          "path": "SHYUL.OPM",
+          "offset": "0x78000"
+        },
+        {
+          "type": "code",
+          "path": "STAGEV2.OPM",
+          "offset": "0x7c000"
+        },
+        {
+          "type": "code",
+          "path": "TAIKE2.OPM",
+          "offset": "0x80000"
+        },
+        {
+          "type": "code",
+          "path": "TAOSITA.OPM",
+          "offset": "0x84000"
+        },
+        {
+          "type": "code",
+          "path": "THEEND.OPM",
+          "offset": "0x88000"
+        },
+        {
+          "type": "code",
+          "path": "TIMEOUT.OPM",
+          "offset": "0x8c000"
+        },
+        {
+          "type": "code",
+          "path": "TITLE.OPM",
+          "offset": "0x90000"
+        },
+        {
+          "type": "code",
+          "path": "TOBIRA2.OPM",
+          "offset": "0x94000"
+        },
+        {
+          "type": "code",
+          "path": "TOJYO.OPM",
+          "offset": "0x98000"
+        },
+        {
+          "type": "code",
+          "path": "PERSIA.OPM",
+          "offset": "0x9c000"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x2015",
+          "title": "OPENV3.OPM   : プリンス・オブ・ペルシャ"
+        },
+        {
+          "kind": "title",
+          "code": "0x2014",
+          "title": "OPEN22.OPM   : ジャファーの陰謀"
+        },
+        {
+          "kind": "title",
+          "code": "0x201d",
+          "title": "TITLE.OPM    : メニュー画面"
+        },
+        {
+          "kind": "title",
+          "code": "0x200d",
+          "title": "IDOU2.OPM    : 石造りの部屋"
+        },
+        {
+          "kind": "title",
+          "code": "0x200b",
+          "title": "IDOU.OPM     : 装飾のある部屋"
+        },
+        {
+          "kind": "title",
+          "code": "0x2006",
+          "title": "FIGHT.OPM    : 正義の戦い"
+        },
+        {
+          "kind": "title",
+          "code": "0x2016",
+          "title": "SENTOU2.OPM  : スケルトン"
+        },
+        {
+          "kind": "title",
+          "code": "0x2008",
+          "title": "FIGHTS.OPM   : ドッペルゲンガー"
+        },
+        {
+          "kind": "title",
+          "code": "0x200f",
+          "title": "IDOU4.OPM    : 心臓破りの部屋"
+        },
+        {
+          "kind": "title",
+          "code": "0x200e",
+          "title": "IDOU3.OPM    : ジャファーの部屋"
+        },
+        {
+          "kind": "title",
+          "code": "0x2007",
+          "title": "FIGHT2.OPM   : ジャファーとの対決"
+        },
+        {
+          "kind": "title",
+          "code": "0x2003",
+          "title": "END1.OPM     : 勝利の凱旋"
+        },
+        {
+          "kind": "title",
+          "code": "0x2004",
+          "title": "END24.OPM    : 戦いの軌跡"
+        },
+        {
+          "kind": "title",
+          "code": "0x201b",
+          "title": "THEEND.OPM   : ペルシャの平和"
+        },
+        {
+          "kind": "title",
+          "code": "0x2011",
+          "title": "MATU.OPM     : プリンセスの不安"
+        },
+        {
+          "kind": "title",
+          "code": "0x2002",
+          "title": "DEATH3.OPM   : SE くし刺し"
+        },
+        {
+          "kind": "title",
+          "code": "0x201f",
+          "title": "TOJYO.OPM    : SE 主人公死亡"
+        },
+        {
+          "kind": "title",
+          "code": "0x2009",
+          "title": "GET2.OPM     : SE 剣を拾う"
+        },
+        {
+          "kind": "title",
+          "code": "0x200a",
+          "title": "GETSWOAD.OPM : SE ライフアップ薬"
+        },
+        {
+          "kind": "title",
+          "code": "0x2010",
+          "title": "ITIDAIJI.OPM : SE ドッペルゲンガー出現"
+        },
+        {
+          "kind": "title",
+          "code": "0x201c",
+          "title": "TIMEOUT.OPM  : SE ゲームオーバー"
+        },
+        {
+          "kind": "title",
+          "code": "0x201e",
+          "title": "TOBIRA2.OPM  : SE ステージ扉が開く"
+        },
+        {
+          "kind": "title",
+          "code": "0x2018",
+          "title": "STAGEV2.OPM  : SE ステージクリアー"
+        },
+        {
+          "kind": "title",
+          "code": "0x201a",
+          "title": "TAOSITA.OPM  : SE 敵を倒した"
+        },
+        {
+          "kind": "title",
+          "code": "0x2019",
+          "title": "TAIKE2.OPM   : SE ジャファー登場"
+        },
+        {
+          "kind": "title",
+          "code": "0x2012",
+          "title": "MED4.OPM     : SE 回復薬を飲んだ"
+        },
+        {
+          "kind": "title",
+          "code": "0x2013",
+          "title": "NEW.OPM      : INIT"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/broderbund.xml",
+      "source_order": 659,
+      "archive": "pofp68snd",
+      "id": "pofp68snd-generic"
+    },
+    {
+      "title": "[X68000] WINGS - BLAZE YOUR WAY TO GLORY!",
+      "driver": {
+        "name": "x68k",
+        "type": "generic",
+        "alias": "Broderbund",
+        "platform": "SHARP X68000"
+      },
+      "options": [],
+      "assets": [
+        {
+          "type": "code",
+          "path": "opmdrv.bin"
+        },
+        {
+          "type": "x",
+          "path": "OPMDRV.X",
+          "offset": "0x08000"
+        },
+        {
+          "type": "code",
+          "path": "AIRBORN.OPM",
+          "offset": "0x24000"
+        },
+        {
+          "type": "code",
+          "path": "ATTACK.OPM",
+          "offset": "0x28000"
+        },
+        {
+          "type": "code",
+          "path": "CLS.OPM",
+          "offset": "0x2c000"
+        },
+        {
+          "type": "code",
+          "path": "DANGEROU.OPM",
+          "offset": "0x30000"
+        },
+        {
+          "type": "code",
+          "path": "FALLINGO.OPM",
+          "offset": "0x34000"
+        },
+        {
+          "type": "code",
+          "path": "INTERCEP.OPM",
+          "offset": "0x38000"
+        },
+        {
+          "type": "code",
+          "path": "KX.OPM",
+          "offset": "0x3c000"
+        },
+        {
+          "type": "code",
+          "path": "SAME.OPM",
+          "offset": "0x40000"
+        },
+        {
+          "type": "code",
+          "path": "SCORE.OPM",
+          "offset": "0x44000"
+        },
+        {
+          "type": "code",
+          "path": "VICTORY.OPM",
+          "offset": "0x48000"
+        },
+        {
+          "type": "code",
+          "path": "WEAPON.OPM",
+          "offset": "0x4c000"
+        },
+        {
+          "type": "code",
+          "path": "KIBI.OPM",
+          "offset": "0x50000"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x0d09",
+          "title": "SAME.OPM     : タイトル"
+        },
+        {
+          "kind": "title",
+          "code": "0x0d02",
+          "title": "AIRBORN.OPM  : 下士官"
+        },
+        {
+          "kind": "title",
+          "code": "0x0d05",
+          "title": "DANGEROU.OPM : 少尉"
+        },
+        {
+          "kind": "title",
+          "code": "0x0d0b",
+          "title": "VICTORY.OPM  : 中尉"
+        },
+        {
+          "kind": "title",
+          "code": "0x0d0c",
+          "title": "WEAPON.OPM   : 大尉"
+        },
+        {
+          "kind": "title",
+          "code": "0x0d07",
+          "title": "INTERCEP.OPM : 少佐"
+        },
+        {
+          "kind": "title",
+          "code": "0x0d03",
+          "title": "ATTACK.OPM   : 中佐"
+        },
+        {
+          "kind": "title",
+          "code": "0x0d04",
+          "title": "CLS.OPM      : 大佐"
+        },
+        {
+          "kind": "title",
+          "code": "0x0d06",
+          "title": "FALLINGO.OPM : クリア"
+        },
+        {
+          "kind": "title",
+          "code": "0x0d08",
+          "title": "KX.OPM       : ゲームオーバー"
+        },
+        {
+          "kind": "title",
+          "code": "0x0d0a",
+          "title": "SCORE.OPM    : ランキング"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/broderbund.xml",
+      "source_order": 660,
+      "archive": "wings68snd",
+      "id": "wings68snd-generic"
+    },
+    {
+      "title": "[MSX] DIABLO",
+      "driver": {
+        "name": "msx",
+        "type": "generic",
+        "alias": "Broderbund",
+        "platform": "MSX"
+      },
+      "options": [
+        {
+          "name": "init_pc",
+          "value": "0x0400"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "patch",
+          "offset": "0x0400"
+        },
+        {
+          "type": "code",
+          "path": "DIABLO.BIN",
+          "offset": "0x83F9"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x06",
+          "title": "Title"
+        },
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "Main BGM"
+        },
+        {
+          "kind": "title",
+          "code": "0x05",
+          "title": "Coffee Break"
+        },
+        {
+          "kind": "title",
+          "code": "0x02",
+          "title": "Game Over"
+        },
+        {
+          "kind": "title",
+          "code": "0x07",
+          "title": "Ending"
+        },
+        {
+          "kind": "title",
+          "code": "0x103",
+          "title": "SE Moving Tile"
+        },
+        {
+          "kind": "title",
+          "code": "0x104",
+          "title": "SE Ball Warp"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/broderbund.xml",
+      "source_order": 661,
+      "archive": "diablo_msx",
+      "id": "diablo-msx-generic"
+    },
+    {
+      "title": "[IBM PC] WiBARM(TANDY)",
+      "driver": {
+        "name": "pcatdos",
+        "type": "tandy",
+        "alias": "Broderbund",
+        "platform": "IBM PC"
+      },
+      "options": [
+        {
+          "name": "clockmul",
+          "value": "0x04"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "wibarmat.com",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "WIBARM.JR",
+          "offset": "0x05"
+        },
+        {
+          "type": "file",
+          "path": "DATADAT.DAT",
+          "offset": "0x06"
+        },
+        {
+          "type": "file",
+          "path": "MUSIC.DAT",
+          "offset": "0x10"
+        },
+        {
+          "type": "file",
+          "path": "WIBARM.DAT/MUSIC.DAT",
+          "offset": "0x11"
+        },
+        {
+          "type": "shell",
+          "path": "wibarmat",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x0010",
+          "title": "Title"
+        },
+        {
+          "kind": "title",
+          "code": "0x0811",
+          "title": "Outdoor"
+        },
+        {
+          "kind": "title",
+          "code": "0x0211",
+          "title": "Base"
+        },
+        {
+          "kind": "title",
+          "code": "0x0411",
+          "title": "Information unit 1"
+        },
+        {
+          "kind": "title",
+          "code": "0x0111",
+          "title": "Battle"
+        },
+        {
+          "kind": "title",
+          "code": "0x0611",
+          "title": "Indoor"
+        },
+        {
+          "kind": "title",
+          "code": "0x0311",
+          "title": "Information unit 2"
+        },
+        {
+          "kind": "title",
+          "code": "0x0011",
+          "title": "Big enemy battle"
+        },
+        {
+          "kind": "title",
+          "code": "0x0511",
+          "title": "Demo scene 1"
+        },
+        {
+          "kind": "title",
+          "code": "0x0b11",
+          "title": "Demo scene 2"
+        },
+        {
+          "kind": "title",
+          "code": "0x0911",
+          "title": "Last stage"
+        },
+        {
+          "kind": "title",
+          "code": "0x0a11",
+          "title": "Input security code"
+        },
+        {
+          "kind": "title",
+          "code": "0x0c11",
+          "title": "Demo scene 3"
+        },
+        {
+          "kind": "title",
+          "code": "0x0711",
+          "title": "Ending"
+        },
+        {
+          "kind": "title",
+          "code": "0x0e11",
+          "title": "Staff roll"
+        },
+        {
+          "kind": "title",
+          "code": "0x0d11",
+          "title": "Effect"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/broderbund.xml",
+      "source_order": 662,
+      "archive": "wibarm_at",
+      "id": "wibarm-at-tandy"
+    },
+    {
+      "title": "[IBM PC] WiBARM(BEEP)",
+      "driver": {
+        "name": "pcatdos",
+        "type": "beep",
+        "alias": "Broderbund",
+        "platform": "IBM PC"
+      },
+      "options": [
+        {
+          "name": "clockmul",
+          "value": "0x04"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "wibarmat.com",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "WIBARM.JR",
+          "offset": "0x05"
+        },
+        {
+          "type": "file",
+          "path": "DATADAT.DAT",
+          "offset": "0x06"
+        },
+        {
+          "type": "file",
+          "path": "MUSIC.DAT",
+          "offset": "0x10"
+        },
+        {
+          "type": "file",
+          "path": "WIBARM.DAT/MUSIC.DAT",
+          "offset": "0x11"
+        },
+        {
+          "type": "shell",
+          "path": "wibarmat",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x2010",
+          "title": "Title"
+        },
+        {
+          "kind": "title",
+          "code": "0x2811",
+          "title": "Outdoor"
+        },
+        {
+          "kind": "title",
+          "code": "0x2211",
+          "title": "Base"
+        },
+        {
+          "kind": "title",
+          "code": "0x2411",
+          "title": "Information unit 1"
+        },
+        {
+          "kind": "title",
+          "code": "0x2111",
+          "title": "Battle"
+        },
+        {
+          "kind": "title",
+          "code": "0x2611",
+          "title": "Indoor"
+        },
+        {
+          "kind": "title",
+          "code": "0x2311",
+          "title": "Information unit 2"
+        },
+        {
+          "kind": "title",
+          "code": "0x2011",
+          "title": "Big enemy battle"
+        },
+        {
+          "kind": "title",
+          "code": "0x2511",
+          "title": "Demo scene 1"
+        },
+        {
+          "kind": "title",
+          "code": "0x2b11",
+          "title": "Demo scene 2"
+        },
+        {
+          "kind": "title",
+          "code": "0x2911",
+          "title": "Last stage"
+        },
+        {
+          "kind": "title",
+          "code": "0x2a11",
+          "title": "Input security code"
+        },
+        {
+          "kind": "title",
+          "code": "0x2c11",
+          "title": "Demo scene 3"
+        },
+        {
+          "kind": "title",
+          "code": "0x2711",
+          "title": "Ending"
+        },
+        {
+          "kind": "title",
+          "code": "0x2e11",
+          "title": "Staff roll"
+        },
+        {
+          "kind": "title",
+          "code": "0x2d11",
+          "title": "Effect"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/broderbund.xml",
+      "source_order": 663,
+      "archive": "wibarm_at",
+      "id": "wibarm-at-beep"
+    },
+    {
+      "title": "[X68000] LOOPZ",
+      "driver": {
+        "name": "x68k",
+        "type": "generic",
+        "alias": "Broderbund",
+        "platform": "SHARP X68000"
+      },
+      "options": [
+        {
+          "name": "mfp",
+          "value": "1"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "loopz68snd.bin"
+        },
+        {
+          "type": "x",
+          "path": "loopz.X",
+          "offset": "0x10000"
+        },
+        {
+          "type": "code",
+          "path": "IB6811.S",
+          "offset": "0x73094"
+        },
+        {
+          "type": "code",
+          "path": "IB6811.S",
+          "offset": "0x100000"
+        },
+        {
+          "type": "code",
+          "path": "IB6812.S",
+          "offset": "0x102000"
+        },
+        {
+          "type": "code",
+          "path": "IB6810.S",
+          "offset": "0x104000"
+        },
+        {
+          "type": "code",
+          "path": "IB688.S",
+          "offset": "0x106000"
+        },
+        {
+          "type": "code",
+          "path": "IB682.S",
+          "offset": "0x108000"
+        },
+        {
+          "type": "code",
+          "path": "IB683.S",
+          "offset": "0x10a000"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "IB6811.S : CARTOON"
+        },
+        {
+          "kind": "title",
+          "code": "0x02",
+          "title": "IB6812.S : OLD FILM"
+        },
+        {
+          "kind": "title",
+          "code": "0x03",
+          "title": "IB6810.S : DEAD SPACE"
+        },
+        {
+          "kind": "title",
+          "code": "0x04",
+          "title": "IB688.S  : FUTUROLOGY"
+        },
+        {
+          "kind": "title",
+          "code": "0x05",
+          "title": "IB682.S  : PERSIAN CARPET"
+        },
+        {
+          "kind": "title",
+          "code": "0x06",
+          "title": "IB683.S  : OPPEKE SONG"
+        },
+        {
+          "kind": "title",
+          "code": "0x101",
+          "title": "LOOPZ.X  : LOOP COMPLETE"
+        },
+        {
+          "kind": "title",
+          "code": "0x102",
+          "title": "LOOPZ.X  : GAME OVER"
+        },
+        {
+          "kind": "title",
+          "code": "0x103",
+          "title": "LOOPZ.X  : FANFARE"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/broderbund.xml",
+      "source_order": 664,
+      "archive": "loopz68snd",
+      "id": "loopz68snd-generic"
+    },
+    {
+      "title": "[PC-9801] BLODIA",
+      "driver": {
+        "name": "pc98dos",
+        "type": "opn",
+        "alias": "Broderbund",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "clockmul",
+          "value": "0x04"
+        },
+        {
+          "name": "dummysndrom",
+          "value": "1"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "BLODIA_98.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "BLODIA.EXE",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "FM.DAT",
+          "offset": "-1"
+        },
+        {
+          "type": "shell",
+          "path": "blodia_98",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x06",
+          "title": "Title"
+        },
+        {
+          "kind": "title",
+          "code": "0x00",
+          "title": "BGM 1"
+        },
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "BGM 2"
+        },
+        {
+          "kind": "title",
+          "code": "0x03",
+          "title": "Map Clear"
+        },
+        {
+          "kind": "title",
+          "code": "0x02",
+          "title": "Coffee Break"
+        },
+        {
+          "kind": "title",
+          "code": "0x05",
+          "title": "Game Over"
+        },
+        {
+          "kind": "title",
+          "code": "0x04",
+          "title": "Ending"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/broderbund.xml",
+      "source_order": 665,
+      "archive": "blodia_98",
+      "id": "blodia-98-opn"
+    },
+    {
+      "title": "[PC-8801] DIABLO",
+      "driver": {
+        "name": "pc88",
+        "type": "opn",
+        "alias": "Broderbund",
+        "platform": "NEC PC-8801"
+      },
+      "options": [
+        {
+          "name": "init_pc",
+          "value": "0xa000"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "PATCH",
+          "offset": "0xa000"
+        },
+        {
+          "type": "code",
+          "path": "DIABLO.COM",
+          "offset": "0x0100"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "Title"
+        },
+        {
+          "kind": "title",
+          "code": "0x02",
+          "title": "Main BGM"
+        },
+        {
+          "kind": "title",
+          "code": "0x03",
+          "title": "Coffee Break"
+        },
+        {
+          "kind": "title",
+          "code": "0x04",
+          "title": "Game Over"
+        },
+        {
+          "kind": "title",
+          "code": "0x00",
+          "title": "Ending"
+        },
+        {
+          "kind": "comment",
+          "text": "\t<title code=\"0x05\">SE Moving Tile</title>\n\t\t\t<title code=\"0x06\">SE Ball Warp</title>\n\t\t\t<title code=\"0x08\">SE Ball Broken</title> "
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/broderbund.xml",
+      "source_order": 666,
+      "archive": "diablo_88",
+      "id": "diablo-88-opn"
+    }
+  ]
+}

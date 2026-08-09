@@ -1,0 +1,551 @@
+{
+  "format": "hoot-catalog-shard",
+  "version": 1,
+  "source_file": "xml/apricot.xml",
+  "date": "2005/09/25",
+  "comments": [
+    " //ApRicoT "
+  ],
+  "games": [
+    {
+      "title": "[PC-9801] 夢幻夜想曲(OPN)",
+      "driver": {
+        "name": "pc98dos",
+        "type": "opn",
+        "alias": "ApRicoT",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "funcvect",
+          "value": "0x7e"
+        },
+        {
+          "name": "clockmul",
+          "value": "8"
+        },
+        {
+          "name": "ssg_mix",
+          "value": "-18"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "PMD_98.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "PMD.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "SE.EFC",
+          "offset": "0x08"
+        },
+        {
+          "type": "file",
+          "path": "N00.M",
+          "offset": "0x10"
+        },
+        {
+          "type": "file",
+          "path": "N01.M",
+          "offset": "0x11"
+        },
+        {
+          "type": "file",
+          "path": "N02.M",
+          "offset": "0x12"
+        },
+        {
+          "type": "file",
+          "path": "N04.M",
+          "offset": "0x13"
+        },
+        {
+          "type": "file",
+          "path": "N06.M",
+          "offset": "0x14"
+        },
+        {
+          "type": "file",
+          "path": "N07.M",
+          "offset": "0x15"
+        },
+        {
+          "type": "file",
+          "path": "N08.M",
+          "offset": "0x16"
+        },
+        {
+          "type": "file",
+          "path": "N09.M",
+          "offset": "0x17"
+        },
+        {
+          "type": "file",
+          "path": "N11.M",
+          "offset": "0x18"
+        },
+        {
+          "type": "file",
+          "path": "N12.M",
+          "offset": "0x19"
+        },
+        {
+          "type": "file",
+          "path": "N13.M",
+          "offset": "0x1A"
+        },
+        {
+          "type": "file",
+          "path": "N14.M",
+          "offset": "0x1B"
+        },
+        {
+          "type": "shell",
+          "path": "PMD # /M8 /V1 /DF20 /K",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "pmd_98",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "N01.M  : 夢幻夜想曲"
+        },
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "N02.M  : 挽歌"
+        },
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "N00.M  : 抒情歌"
+        },
+        {
+          "kind": "title",
+          "code": "0x14",
+          "title": "N06.M  : baroque"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "N04.M  : ラグタイム"
+        },
+        {
+          "kind": "title",
+          "code": "0x15",
+          "title": "N07.M  : 不安の刻"
+        },
+        {
+          "kind": "title",
+          "code": "0x16",
+          "title": "N08.M  : 炎の舞"
+        },
+        {
+          "kind": "title",
+          "code": "0x17",
+          "title": "N09.M  : 愛の夜想曲"
+        },
+        {
+          "kind": "title",
+          "code": "0x18",
+          "title": "N11.M  : 妖精円舞曲"
+        },
+        {
+          "kind": "title",
+          "code": "0x19",
+          "title": "N12.M  : 忍び寄る危機"
+        },
+        {
+          "kind": "title",
+          "code": "0x1A",
+          "title": "N13.M  : 朝日"
+        },
+        {
+          "kind": "title",
+          "code": "0x1B",
+          "title": "N14.M  : スタッフロール"
+        },
+        {
+          "kind": "range",
+          "min": "0x0801",
+          "max": "0x0804",
+          "title_format": "SE.EFC : 効果音%X",
+          "extcode": "0"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/apricot.xml",
+      "source_order": 235,
+      "archive": "mugenya_98",
+      "id": "mugenya-98-opn"
+    },
+    {
+      "title": "[PC-9801] 夢幻夜想曲(OPNA)",
+      "driver": {
+        "name": "pc98dos",
+        "type": "opna",
+        "alias": "ApRicoT",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "funcvect",
+          "value": "0x7e"
+        },
+        {
+          "name": "clockmul",
+          "value": "8"
+        },
+        {
+          "name": "total_mix",
+          "value": "0x80"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "PMD_98.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "PMDB2.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "SE.EFC",
+          "offset": "0x08"
+        },
+        {
+          "type": "file",
+          "path": "B00.M",
+          "offset": "0x10"
+        },
+        {
+          "type": "file",
+          "path": "B01.M",
+          "offset": "0x11"
+        },
+        {
+          "type": "file",
+          "path": "B02.M",
+          "offset": "0x12"
+        },
+        {
+          "type": "file",
+          "path": "B04.M",
+          "offset": "0x13"
+        },
+        {
+          "type": "file",
+          "path": "B06.M",
+          "offset": "0x14"
+        },
+        {
+          "type": "file",
+          "path": "B07.M",
+          "offset": "0x15"
+        },
+        {
+          "type": "file",
+          "path": "B08.M",
+          "offset": "0x16"
+        },
+        {
+          "type": "file",
+          "path": "B09.M",
+          "offset": "0x17"
+        },
+        {
+          "type": "file",
+          "path": "B11.M",
+          "offset": "0x18"
+        },
+        {
+          "type": "file",
+          "path": "B12.M",
+          "offset": "0x19"
+        },
+        {
+          "type": "file",
+          "path": "B13.M",
+          "offset": "0x1A"
+        },
+        {
+          "type": "file",
+          "path": "B14.M",
+          "offset": "0x1B"
+        },
+        {
+          "type": "shell",
+          "path": "PMDB2 # /M8 /V1 /DF10 /DS0 /DR16 /K",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "pmd_98",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "B01.M  : 夢幻夜想曲"
+        },
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "B02.M  : 挽歌"
+        },
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "B00.M  : 抒情歌"
+        },
+        {
+          "kind": "title",
+          "code": "0x14",
+          "title": "B06.M  : baroque"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "B04.M  : ラグタイム"
+        },
+        {
+          "kind": "title",
+          "code": "0x15",
+          "title": "B07.M  : 不安の刻"
+        },
+        {
+          "kind": "title",
+          "code": "0x16",
+          "title": "B08.M  : 炎の舞"
+        },
+        {
+          "kind": "title",
+          "code": "0x17",
+          "title": "B09.M  : 愛の夜想曲"
+        },
+        {
+          "kind": "title",
+          "code": "0x18",
+          "title": "B11.M  : 妖精円舞曲"
+        },
+        {
+          "kind": "title",
+          "code": "0x19",
+          "title": "B12.M  : 忍び寄る危機"
+        },
+        {
+          "kind": "title",
+          "code": "0x1A",
+          "title": "B13.M  : 朝日"
+        },
+        {
+          "kind": "title",
+          "code": "0x1B",
+          "title": "B14.M  : スタッフロール"
+        },
+        {
+          "kind": "range",
+          "min": "0x0801",
+          "max": "0x0804",
+          "title_format": "SE.EFC : 効果音%X",
+          "extcode": "0"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/apricot.xml",
+      "source_order": 236,
+      "archive": "mugenya_98",
+      "id": "mugenya-98-opna"
+    },
+    {
+      "title": "[PC-9801] 夢幻夜想曲(GS)",
+      "driver": {
+        "name": "pc98dos",
+        "type": "beep",
+        "alias": "ApRicoT",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "clockmul",
+          "value": "8"
+        },
+        {
+          "name": "midiout",
+          "value": "1"
+        },
+        {
+          "name": "midiout_type",
+          "value": "4"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "mmp_hoot.com",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MMD.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "G00.M",
+          "offset": "0x10"
+        },
+        {
+          "type": "file",
+          "path": "G01.M",
+          "offset": "0x11"
+        },
+        {
+          "type": "file",
+          "path": "G02.M",
+          "offset": "0x12"
+        },
+        {
+          "type": "file",
+          "path": "G04.M",
+          "offset": "0x13"
+        },
+        {
+          "type": "file",
+          "path": "G06.M",
+          "offset": "0x14"
+        },
+        {
+          "type": "file",
+          "path": "G07.M",
+          "offset": "0x15"
+        },
+        {
+          "type": "file",
+          "path": "G08.M",
+          "offset": "0x16"
+        },
+        {
+          "type": "file",
+          "path": "G09.M",
+          "offset": "0x17"
+        },
+        {
+          "type": "file",
+          "path": "G11.M",
+          "offset": "0x18"
+        },
+        {
+          "type": "file",
+          "path": "G12.M",
+          "offset": "0x19"
+        },
+        {
+          "type": "file",
+          "path": "G13.M",
+          "offset": "0x1A"
+        },
+        {
+          "type": "file",
+          "path": "G14.M",
+          "offset": "0x1B"
+        },
+        {
+          "type": "shell",
+          "path": "MMD",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "mmp_hoot",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "G01.M : 夢幻夜想曲"
+        },
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "G02.M : 挽歌"
+        },
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "G00.M : 抒情歌"
+        },
+        {
+          "kind": "title",
+          "code": "0x14",
+          "title": "G06.M : baroque"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "G04.M : ラグタイム"
+        },
+        {
+          "kind": "title",
+          "code": "0x15",
+          "title": "G07.M : 不安の刻"
+        },
+        {
+          "kind": "title",
+          "code": "0x16",
+          "title": "G08.M : 炎の舞"
+        },
+        {
+          "kind": "title",
+          "code": "0x17",
+          "title": "G09.M : 愛の夜想曲"
+        },
+        {
+          "kind": "title",
+          "code": "0x18",
+          "title": "G11.M : 妖精円舞曲"
+        },
+        {
+          "kind": "title",
+          "code": "0x19",
+          "title": "G12.M : 忍び寄る危機"
+        },
+        {
+          "kind": "title",
+          "code": "0x1A",
+          "title": "G13.M : 朝日"
+        },
+        {
+          "kind": "title",
+          "code": "0x1B",
+          "title": "G14.M : スタッフロール"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/apricot.xml",
+      "source_order": 237,
+      "archive": "mugenya_98",
+      "id": "mugenya-98-beep"
+    }
+  ]
+}

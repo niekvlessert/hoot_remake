@@ -1,0 +1,70 @@
+{
+  "format": "hoot-catalog-shard",
+  "version": 1,
+  "source_file": "xml/maborosiware.xml",
+  "date": "2024/02/24",
+  "comments": [
+    " //MABOROSI WARE "
+  ],
+  "games": [
+    {
+      "title": "[PC-9801] TIME SLIP 桃雀郷",
+      "driver": {
+        "name": "pc98dos",
+        "type": "opn",
+        "alias": "MABOROSI WARE",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "fm_mix",
+          "value": "-8"
+        },
+        {
+          "name": "ssg_mix",
+          "value": "-26"
+        },
+        {
+          "name": "clockmul",
+          "value": "8"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "FM.SYS",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "TST_98.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "device",
+          "path": "fm.sys",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "tst_98",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "range",
+          "min": "0x02",
+          "max": "0x08",
+          "title_format": "BGM %02X",
+          "extcode": "0"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/maborosiware.xml",
+      "source_order": 3095,
+      "archive": "tstougen_98",
+      "id": "tstougen-98-opn"
+    }
+  ]
+}

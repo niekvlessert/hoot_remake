@@ -1,0 +1,2173 @@
+{
+  "format": "hoot-catalog-shard",
+  "version": 1,
+  "source_file": "xml/pegasusjapan.xml",
+  "date": "2005/09/25",
+  "comments": [
+    " //Pegasus Japan "
+  ],
+  "games": [
+    {
+      "title": "[PC-9801] CHECK SIX(OPN)",
+      "driver": {
+        "name": "pc98dos",
+        "type": "opn",
+        "alias": "Pegasus Japan",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "clockmul",
+          "value": "8"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "MUSIC.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MUSPJ_98.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "OPN2.DAT",
+          "offset": "0x06"
+        },
+        {
+          "type": "file",
+          "path": "SSG2.DAT",
+          "offset": "0x07"
+        },
+        {
+          "type": "file",
+          "path": "OPN.DAT",
+          "offset": "0x08"
+        },
+        {
+          "type": "file",
+          "path": "SSG.DAT",
+          "offset": "0x09"
+        },
+        {
+          "type": "file",
+          "path": "C6M00.MDP",
+          "offset": "0x10"
+        },
+        {
+          "type": "file",
+          "path": "C6M01.MDP",
+          "offset": "0x11"
+        },
+        {
+          "type": "file",
+          "path": "C6M02.MDP",
+          "offset": "0x12"
+        },
+        {
+          "type": "file",
+          "path": "C6M03.MDP",
+          "offset": "0x13"
+        },
+        {
+          "type": "file",
+          "path": "C6M04.MDP",
+          "offset": "0x14"
+        },
+        {
+          "type": "file",
+          "path": "C6M05.MDP",
+          "offset": "0x15"
+        },
+        {
+          "type": "file",
+          "path": "C6M06.MDP",
+          "offset": "0x16"
+        },
+        {
+          "type": "shell",
+          "path": "MUSIC",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "MUSPJ_98",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x090810",
+          "title": "C6M00.MDP : オープニングテーマ"
+        },
+        {
+          "kind": "title",
+          "code": "0x000011",
+          "title": "C6M01.MDP : PROGRESS"
+        },
+        {
+          "kind": "title",
+          "code": "0x000012",
+          "title": "C6M02.MDP : DOG FIGHT"
+        },
+        {
+          "kind": "title",
+          "code": "0x070613",
+          "title": "C6M03.MDP : FLIGHT #9"
+        },
+        {
+          "kind": "title",
+          "code": "0x070614",
+          "title": "C6M04.MDP : 歓喜の帰還"
+        },
+        {
+          "kind": "title",
+          "code": "0x000015",
+          "title": "C6M05.MDP : FAIL"
+        },
+        {
+          "kind": "title",
+          "code": "0x000016",
+          "title": "C6M06.MDP : エピローグ"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/pegasusjapan.xml",
+      "source_order": 3650,
+      "archive": "checksix_98",
+      "id": "checksix-98-opn"
+    },
+    {
+      "title": "[PC-9801] CHECK SIX(GM)",
+      "driver": {
+        "name": "pc98dos",
+        "type": "beep",
+        "alias": "Pegasus Japan",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "clockmul",
+          "value": "8"
+        },
+        {
+          "name": "midiout",
+          "value": "1"
+        },
+        {
+          "name": "midiout_type",
+          "value": "8"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "MUSIC.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MUSPJ_98.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "C6M00M.MDP",
+          "offset": "0x10"
+        },
+        {
+          "type": "file",
+          "path": "C6M01M.MDP",
+          "offset": "0x11"
+        },
+        {
+          "type": "file",
+          "path": "C6M02M.MDP",
+          "offset": "0x12"
+        },
+        {
+          "type": "file",
+          "path": "C6M03M.MDP",
+          "offset": "0x13"
+        },
+        {
+          "type": "file",
+          "path": "C6M04M.MDP",
+          "offset": "0x14"
+        },
+        {
+          "type": "file",
+          "path": "C6M05M.MDP",
+          "offset": "0x15"
+        },
+        {
+          "type": "file",
+          "path": "C6M06M.MDP",
+          "offset": "0x16"
+        },
+        {
+          "type": "shell",
+          "path": "MUSIC",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "MUSPJ_98",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "C6M00M.MDP : オープニングテーマ"
+        },
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "C6M01M.MDP : PROGRESS"
+        },
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "C6M02M.MDP : DOG FIGHT"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "C6M03M.MDP : FLIGHT #9"
+        },
+        {
+          "kind": "title",
+          "code": "0x14",
+          "title": "C6M04M.MDP : 歓喜の帰還"
+        },
+        {
+          "kind": "title",
+          "code": "0x15",
+          "title": "C6M05M.MDP : FAIL"
+        },
+        {
+          "kind": "title",
+          "code": "0x16",
+          "title": "C6M06M.MDP : エピローグ"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/pegasusjapan.xml",
+      "source_order": 3651,
+      "archive": "checksix_98",
+      "id": "checksix-98-beep"
+    },
+    {
+      "title": "[PC-9801] CHECK SIX2 碧空の狼(OPN)",
+      "driver": {
+        "name": "pc98dos",
+        "type": "opn",
+        "alias": "Pegasus Japan",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "clockmul",
+          "value": "8"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "MUSIC.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MUSPJ_98.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "OPN2.DAT",
+          "offset": "0x08"
+        },
+        {
+          "type": "file",
+          "path": "SSG2.DAT",
+          "offset": "0x09"
+        },
+        {
+          "type": "file",
+          "path": "C0.MDP",
+          "offset": "0x10"
+        },
+        {
+          "type": "file",
+          "path": "C1.MDP",
+          "offset": "0x11"
+        },
+        {
+          "type": "file",
+          "path": "C2.MDP",
+          "offset": "0x12"
+        },
+        {
+          "type": "file",
+          "path": "C3.MDP",
+          "offset": "0x13"
+        },
+        {
+          "type": "file",
+          "path": "C4.MDP",
+          "offset": "0x14"
+        },
+        {
+          "type": "file",
+          "path": "C5.MDP",
+          "offset": "0x15"
+        },
+        {
+          "type": "file",
+          "path": "C6.MDP",
+          "offset": "0x16"
+        },
+        {
+          "type": "shell",
+          "path": "MUSIC",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "MUSPJ_98",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "C0.MDP"
+        },
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "C1.MDP"
+        },
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "C2.MDP"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "C3.MDP"
+        },
+        {
+          "kind": "title",
+          "code": "0x14",
+          "title": "C4.MDP"
+        },
+        {
+          "kind": "title",
+          "code": "0x15",
+          "title": "C5.MDP"
+        },
+        {
+          "kind": "title",
+          "code": "0x16",
+          "title": "C6.MDP"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/pegasusjapan.xml",
+      "source_order": 3652,
+      "archive": "checksx2_98",
+      "id": "checksx2-98-opn"
+    },
+    {
+      "title": "[PC-9801] CHECK SIX2 碧空の狼(MT-32)",
+      "driver": {
+        "name": "pc98dos",
+        "type": "beep",
+        "alias": "Pegasus Japan",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "clockmul",
+          "value": "8"
+        },
+        {
+          "name": "midiout",
+          "value": "1"
+        },
+        {
+          "name": "midiout_type",
+          "value": "2"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "MUSIC.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MUSPJ_98.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "C0L.MDP",
+          "offset": "0x10"
+        },
+        {
+          "type": "file",
+          "path": "C1L.MDP",
+          "offset": "0x11"
+        },
+        {
+          "type": "file",
+          "path": "C2L.MDP",
+          "offset": "0x12"
+        },
+        {
+          "type": "file",
+          "path": "C3L.MDP",
+          "offset": "0x13"
+        },
+        {
+          "type": "file",
+          "path": "C4L.MDP",
+          "offset": "0x14"
+        },
+        {
+          "type": "file",
+          "path": "C5L.MDP",
+          "offset": "0x15"
+        },
+        {
+          "type": "file",
+          "path": "C6L.MDP",
+          "offset": "0x16"
+        },
+        {
+          "type": "shell",
+          "path": "MUSIC",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "MUSPJ_98",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "C0L.MDP"
+        },
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "C1L.MDP"
+        },
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "C2L.MDP"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "C3L.MDP"
+        },
+        {
+          "kind": "title",
+          "code": "0x14",
+          "title": "C4L.MDP"
+        },
+        {
+          "kind": "title",
+          "code": "0x15",
+          "title": "C5L.MDP"
+        },
+        {
+          "kind": "title",
+          "code": "0x16",
+          "title": "C6L.MDP"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/pegasusjapan.xml",
+      "source_order": 3653,
+      "archive": "checksx2_98",
+      "id": "checksx2-98-beep"
+    },
+    {
+      "title": "[PC-9801] CHECK SIX2 碧空の狼(MT-32 Emulation)",
+      "driver": {
+        "name": "pc98dos",
+        "type": "beep",
+        "alias": "Pegasus Japan",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "clockmul",
+          "value": "8"
+        },
+        {
+          "name": "midiout",
+          "value": "1"
+        },
+        {
+          "name": "midiout_type",
+          "value": "1"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "MUSIC.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MUSPJ_98.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "C0L.MDP",
+          "offset": "0x10"
+        },
+        {
+          "type": "file",
+          "path": "C1L.MDP",
+          "offset": "0x11"
+        },
+        {
+          "type": "file",
+          "path": "C2L.MDP",
+          "offset": "0x12"
+        },
+        {
+          "type": "file",
+          "path": "C3L.MDP",
+          "offset": "0x13"
+        },
+        {
+          "type": "file",
+          "path": "C4L.MDP",
+          "offset": "0x14"
+        },
+        {
+          "type": "file",
+          "path": "C5L.MDP",
+          "offset": "0x15"
+        },
+        {
+          "type": "file",
+          "path": "C6L.MDP",
+          "offset": "0x16"
+        },
+        {
+          "type": "shell",
+          "path": "MUSIC",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "MUSPJ_98",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "C0L.MDP"
+        },
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "C1L.MDP"
+        },
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "C2L.MDP"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "C3L.MDP"
+        },
+        {
+          "kind": "title",
+          "code": "0x14",
+          "title": "C4L.MDP"
+        },
+        {
+          "kind": "title",
+          "code": "0x15",
+          "title": "C5L.MDP"
+        },
+        {
+          "kind": "title",
+          "code": "0x16",
+          "title": "C6L.MDP"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/pegasusjapan.xml",
+      "source_order": 3654,
+      "archive": "checksx2_98",
+      "id": "checksx2-98-beep-2"
+    },
+    {
+      "title": "[PC-9801] CHECK SIX2 碧空の狼(GM)",
+      "driver": {
+        "name": "pc98dos",
+        "type": "beep",
+        "alias": "Pegasus Japan",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "clockmul",
+          "value": "8"
+        },
+        {
+          "name": "midiout",
+          "value": "1"
+        },
+        {
+          "name": "midiout_type",
+          "value": "8"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "MUSIC.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MUSPJ_98.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "C0M.MDP",
+          "offset": "0x10"
+        },
+        {
+          "type": "file",
+          "path": "C1M.MDP",
+          "offset": "0x11"
+        },
+        {
+          "type": "file",
+          "path": "C2M.MDP",
+          "offset": "0x12"
+        },
+        {
+          "type": "file",
+          "path": "C3M.MDP",
+          "offset": "0x13"
+        },
+        {
+          "type": "file",
+          "path": "C4M.MDP",
+          "offset": "0x14"
+        },
+        {
+          "type": "file",
+          "path": "C5M.MDP",
+          "offset": "0x15"
+        },
+        {
+          "type": "file",
+          "path": "C6M.MDP",
+          "offset": "0x16"
+        },
+        {
+          "type": "shell",
+          "path": "MUSIC",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "MUSPJ_98",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "C0M.MDP"
+        },
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "C1M.MDP"
+        },
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "C2M.MDP"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "C3M.MDP"
+        },
+        {
+          "kind": "title",
+          "code": "0x14",
+          "title": "C4M.MDP"
+        },
+        {
+          "kind": "title",
+          "code": "0x15",
+          "title": "C5M.MDP"
+        },
+        {
+          "kind": "title",
+          "code": "0x16",
+          "title": "C6M.MDP"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/pegasusjapan.xml",
+      "source_order": 3655,
+      "archive": "checksx2_98",
+      "id": "checksx2-98-beep-3"
+    },
+    {
+      "title": "[PC-9801] ROUND WARRIOR(OPN)",
+      "driver": {
+        "name": "pc98dos",
+        "type": "opn",
+        "alias": "Pegasus Japan",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "clockmul",
+          "value": "8"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "MUSIC.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MUSPJ_98.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "OPN.DAT",
+          "offset": "0x08"
+        },
+        {
+          "type": "file",
+          "path": "SSG.DAT",
+          "offset": "0x09"
+        },
+        {
+          "type": "file",
+          "path": "ED01.MDP",
+          "offset": "0x10"
+        },
+        {
+          "type": "file",
+          "path": "ED02.MDP",
+          "offset": "0x11"
+        },
+        {
+          "type": "file",
+          "path": "ED03.MDP",
+          "offset": "0x12"
+        },
+        {
+          "type": "file",
+          "path": "ED11.MDP",
+          "offset": "0x13"
+        },
+        {
+          "type": "file",
+          "path": "MENU1.MDP",
+          "offset": "0x15"
+        },
+        {
+          "type": "file",
+          "path": "RWE00.MDP",
+          "offset": "0x17"
+        },
+        {
+          "type": "file",
+          "path": "RW00.MDP",
+          "offset": "0x18"
+        },
+        {
+          "type": "file",
+          "path": "SG00.MDP",
+          "offset": "0x19"
+        },
+        {
+          "type": "file",
+          "path": "SG01.MDP",
+          "offset": "0x1a"
+        },
+        {
+          "type": "file",
+          "path": "SG02.MDP",
+          "offset": "0x1b"
+        },
+        {
+          "type": "file",
+          "path": "SG03.MDP",
+          "offset": "0x1c"
+        },
+        {
+          "type": "file",
+          "path": "STG1.MDP",
+          "offset": "0x1d"
+        },
+        {
+          "type": "shell",
+          "path": "MUSIC",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "MUSPJ_98",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "ED01.MDP"
+        },
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "ED02.MDP"
+        },
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "ED03.MDP"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "ED11.MDP"
+        },
+        {
+          "kind": "comment",
+          "text": "\t\t\t<title code=\"0x14\">ED12.MDP</title> "
+        },
+        {
+          "kind": "title",
+          "code": "0x15",
+          "title": "MENU1.MDP"
+        },
+        {
+          "kind": "title",
+          "code": "0x17",
+          "title": "RW00.MDP"
+        },
+        {
+          "kind": "title",
+          "code": "0x18",
+          "title": "RWE00.MDP"
+        },
+        {
+          "kind": "title",
+          "code": "0x19",
+          "title": "SG00.MDP"
+        },
+        {
+          "kind": "title",
+          "code": "0x1a",
+          "title": "SG01.MDP"
+        },
+        {
+          "kind": "title",
+          "code": "0x1b",
+          "title": "SG02.MDP"
+        },
+        {
+          "kind": "title",
+          "code": "0x1c",
+          "title": "SG03.MDP"
+        },
+        {
+          "kind": "title",
+          "code": "0x1d",
+          "title": "STG1.MDP"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/pegasusjapan.xml",
+      "source_order": 3656,
+      "archive": "roundwar_98",
+      "id": "roundwar-98-opn"
+    },
+    {
+      "title": "[PC-9801] ROUND WARRIOR(GM)",
+      "driver": {
+        "name": "pc98dos",
+        "type": "beep",
+        "alias": "Pegasus Japan",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "clockmul",
+          "value": "8"
+        },
+        {
+          "name": "midiout",
+          "value": "1"
+        },
+        {
+          "name": "midiout_type",
+          "value": "8"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "MUSIC.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MUSPJ_98.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "ED01M.MDP",
+          "offset": "0x10"
+        },
+        {
+          "type": "file",
+          "path": "ED02M.MDP",
+          "offset": "0x11"
+        },
+        {
+          "type": "file",
+          "path": "ED03M.MDP",
+          "offset": "0x12"
+        },
+        {
+          "type": "file",
+          "path": "MENU2.MDP",
+          "offset": "0x16"
+        },
+        {
+          "type": "file",
+          "path": "RWE00M.MDP",
+          "offset": "0x17"
+        },
+        {
+          "type": "file",
+          "path": "RW00M.MDP",
+          "offset": "0x18"
+        },
+        {
+          "type": "file",
+          "path": "SG00M.MDP",
+          "offset": "0x19"
+        },
+        {
+          "type": "file",
+          "path": "SG01M.MDP",
+          "offset": "0x1a"
+        },
+        {
+          "type": "file",
+          "path": "SG02M.MDP",
+          "offset": "0x1b"
+        },
+        {
+          "type": "file",
+          "path": "SG03M.MDP",
+          "offset": "0x1c"
+        },
+        {
+          "type": "file",
+          "path": "STG2.MDP",
+          "offset": "0x1e"
+        },
+        {
+          "type": "shell",
+          "path": "MUSIC",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "MUSPJ_98",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "ED01M.MDP"
+        },
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "ED02M.MDP"
+        },
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "ED03M.MDP"
+        },
+        {
+          "kind": "title",
+          "code": "0x16",
+          "title": "MENU2.MDP"
+        },
+        {
+          "kind": "title",
+          "code": "0x17",
+          "title": "RW00M.MDP"
+        },
+        {
+          "kind": "title",
+          "code": "0x18",
+          "title": "RWE00M.MDP"
+        },
+        {
+          "kind": "title",
+          "code": "0x19",
+          "title": "SG00M.MDP"
+        },
+        {
+          "kind": "title",
+          "code": "0x1a",
+          "title": "SG01M.MDP"
+        },
+        {
+          "kind": "title",
+          "code": "0x1b",
+          "title": "SG02M.MDP"
+        },
+        {
+          "kind": "title",
+          "code": "0x1c",
+          "title": "SG03M.MDP"
+        },
+        {
+          "kind": "title",
+          "code": "0x1e",
+          "title": "STG2.MDP"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/pegasusjapan.xml",
+      "source_order": 3657,
+      "archive": "roundwar_98",
+      "id": "roundwar-98-beep"
+    },
+    {
+      "title": "[PC-9801] グレイストンサーガ ～魔界の泉～(OPN)",
+      "driver": {
+        "name": "pc98dos",
+        "type": "opn",
+        "alias": "Pegasus Japan",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "clockmul",
+          "value": "8"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "MUSIC.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MUSPJ_98.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "OPN2.DAT",
+          "offset": "0x08"
+        },
+        {
+          "type": "file",
+          "path": "SSG2.DAT",
+          "offset": "0x09"
+        },
+        {
+          "type": "file",
+          "path": "GS1.MDP",
+          "offset": "0x10"
+        },
+        {
+          "type": "file",
+          "path": "GS2.MDP",
+          "offset": "0x11"
+        },
+        {
+          "type": "file",
+          "path": "GS3.MDP",
+          "offset": "0x12"
+        },
+        {
+          "type": "file",
+          "path": "GS4.MDP",
+          "offset": "0x13"
+        },
+        {
+          "type": "file",
+          "path": "GS6.MDP",
+          "offset": "0x14"
+        },
+        {
+          "type": "file",
+          "path": "GS7.MDP",
+          "offset": "0x15"
+        },
+        {
+          "type": "file",
+          "path": "GS8.MDP",
+          "offset": "0x16"
+        },
+        {
+          "type": "file",
+          "path": "GS9.MDP",
+          "offset": "0x17"
+        },
+        {
+          "type": "file",
+          "path": "GS10.MDP",
+          "offset": "0x18"
+        },
+        {
+          "type": "file",
+          "path": "GS11.MDP",
+          "offset": "0x19"
+        },
+        {
+          "type": "file",
+          "path": "GS12.MDP",
+          "offset": "0x1a"
+        },
+        {
+          "type": "file",
+          "path": "GS0.MDP",
+          "offset": "0x1b"
+        },
+        {
+          "type": "shell",
+          "path": "MUSIC",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "MUSPJ_98",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x1b",
+          "title": "GS0.MDP  : Legand Of Pegasus"
+        },
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "GS3.MDP  : Graystone Saga"
+        },
+        {
+          "kind": "title",
+          "code": "0x18",
+          "title": "GS10.MDP : Under The Graystone World"
+        },
+        {
+          "kind": "title",
+          "code": "0x14",
+          "title": "GS6.MDP  : Go Ahead!"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "GS4.MDP  : Field Of Island"
+        },
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "GS2.MDP  : Legend Of \"Graystone\""
+        },
+        {
+          "kind": "title",
+          "code": "0x17",
+          "title": "GS9.MDP  : Dark Town"
+        },
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "GS1.MDP  : Dungeon"
+        },
+        {
+          "kind": "title",
+          "code": "0x1a",
+          "title": "GS12.MDP : Sword & Magic"
+        },
+        {
+          "kind": "title",
+          "code": "0x15",
+          "title": "GS7.MDP  : Final Battle"
+        },
+        {
+          "kind": "title",
+          "code": "0x19",
+          "title": "GS11.MDP : Fantastic Story"
+        },
+        {
+          "kind": "title",
+          "code": "0x16",
+          "title": "GS8.MDP  : Making Of \"Graystone Saga\""
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/pegasusjapan.xml",
+      "source_order": 3658,
+      "archive": "gssaga_98",
+      "id": "gssaga-98-opn"
+    },
+    {
+      "title": "[PC-9801] グレイストンサーガ ～魔界の泉～(MT-32)",
+      "driver": {
+        "name": "pc98dos",
+        "type": "beep",
+        "alias": "Pegasus Japan",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "clockmul",
+          "value": "8"
+        },
+        {
+          "name": "midiout",
+          "value": "1"
+        },
+        {
+          "name": "midiout_type",
+          "value": "2"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "MUSIC.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MUSPJ_98.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "GS1L.MDP",
+          "offset": "0x10"
+        },
+        {
+          "type": "file",
+          "path": "GS2L.MDP",
+          "offset": "0x11"
+        },
+        {
+          "type": "file",
+          "path": "GS3L.MDP",
+          "offset": "0x12"
+        },
+        {
+          "type": "file",
+          "path": "GS4L.MDP",
+          "offset": "0x13"
+        },
+        {
+          "type": "file",
+          "path": "GS6L.MDP",
+          "offset": "0x14"
+        },
+        {
+          "type": "file",
+          "path": "GS7L.MDP",
+          "offset": "0x15"
+        },
+        {
+          "type": "file",
+          "path": "GS8L.MDP",
+          "offset": "0x16"
+        },
+        {
+          "type": "file",
+          "path": "GS9L.MDP",
+          "offset": "0x17"
+        },
+        {
+          "type": "file",
+          "path": "GS10L.MDP",
+          "offset": "0x18"
+        },
+        {
+          "type": "file",
+          "path": "GS11L.MDP",
+          "offset": "0x19"
+        },
+        {
+          "type": "file",
+          "path": "GS12L.MDP",
+          "offset": "0x1a"
+        },
+        {
+          "type": "file",
+          "path": "GS0L.MDP",
+          "offset": "0x1b"
+        },
+        {
+          "type": "shell",
+          "path": "MUSIC",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "MUSPJ_98",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x1b",
+          "title": "GS0L.MDP  : Legand Of Pegasus"
+        },
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "GS3L.MDP  : Graystone Saga"
+        },
+        {
+          "kind": "title",
+          "code": "0x18",
+          "title": "GS10L.MDP : Under The Graystone World"
+        },
+        {
+          "kind": "title",
+          "code": "0x14",
+          "title": "GS6L.MDP  : Go Ahead!"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "GS4L.MDP  : Field Of Island"
+        },
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "GS2L.MDP  : Legend Of \"Graystone\""
+        },
+        {
+          "kind": "title",
+          "code": "0x17",
+          "title": "GS9L.MDP  : Dark Town"
+        },
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "GS1L.MDP  : Dungeon"
+        },
+        {
+          "kind": "title",
+          "code": "0x1a",
+          "title": "GS12L.MDP : Sword & Magic"
+        },
+        {
+          "kind": "title",
+          "code": "0x15",
+          "title": "GS7L.MDP  : Final Battle"
+        },
+        {
+          "kind": "title",
+          "code": "0x19",
+          "title": "GS11L.MDP : Fantastic Story"
+        },
+        {
+          "kind": "title",
+          "code": "0x16",
+          "title": "GS8L.MDP  : Making Of \"Graystone Saga\""
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/pegasusjapan.xml",
+      "source_order": 3659,
+      "archive": "gssaga_98",
+      "id": "gssaga-98-beep"
+    },
+    {
+      "title": "[PC-9801] グレイストンサーガ ～魔界の泉～(MT-32 Emulation)",
+      "driver": {
+        "name": "pc98dos",
+        "type": "beep",
+        "alias": "Pegasus Japan",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "clockmul",
+          "value": "8"
+        },
+        {
+          "name": "midiout",
+          "value": "1"
+        },
+        {
+          "name": "midiout_type",
+          "value": "1"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "MUSIC.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MUSPJ_98.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "GS1L.MDP",
+          "offset": "0x10"
+        },
+        {
+          "type": "file",
+          "path": "GS2L.MDP",
+          "offset": "0x11"
+        },
+        {
+          "type": "file",
+          "path": "GS3L.MDP",
+          "offset": "0x12"
+        },
+        {
+          "type": "file",
+          "path": "GS4L.MDP",
+          "offset": "0x13"
+        },
+        {
+          "type": "file",
+          "path": "GS6L.MDP",
+          "offset": "0x14"
+        },
+        {
+          "type": "file",
+          "path": "GS7L.MDP",
+          "offset": "0x15"
+        },
+        {
+          "type": "file",
+          "path": "GS8L.MDP",
+          "offset": "0x16"
+        },
+        {
+          "type": "file",
+          "path": "GS9L.MDP",
+          "offset": "0x17"
+        },
+        {
+          "type": "file",
+          "path": "GS10L.MDP",
+          "offset": "0x18"
+        },
+        {
+          "type": "file",
+          "path": "GS11L.MDP",
+          "offset": "0x19"
+        },
+        {
+          "type": "file",
+          "path": "GS12L.MDP",
+          "offset": "0x1a"
+        },
+        {
+          "type": "file",
+          "path": "GS0L.MDP",
+          "offset": "0x1b"
+        },
+        {
+          "type": "shell",
+          "path": "MUSIC",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "MUSPJ_98",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x1b",
+          "title": "GS0L.MDP  : Legand Of Pegasus"
+        },
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "GS3L.MDP  : Graystone Saga"
+        },
+        {
+          "kind": "title",
+          "code": "0x18",
+          "title": "GS10L.MDP : Under The Graystone World"
+        },
+        {
+          "kind": "title",
+          "code": "0x14",
+          "title": "GS6L.MDP  : Go Ahead!"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "GS4L.MDP  : Field Of Island"
+        },
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "GS2L.MDP  : Legend Of \"Graystone\""
+        },
+        {
+          "kind": "title",
+          "code": "0x17",
+          "title": "GS9L.MDP  : Dark Town"
+        },
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "GS1L.MDP  : Dungeon"
+        },
+        {
+          "kind": "title",
+          "code": "0x1a",
+          "title": "GS12L.MDP : Sword & Magic"
+        },
+        {
+          "kind": "title",
+          "code": "0x15",
+          "title": "GS7L.MDP  : Final Battle"
+        },
+        {
+          "kind": "title",
+          "code": "0x19",
+          "title": "GS11L.MDP : Fantastic Story"
+        },
+        {
+          "kind": "title",
+          "code": "0x16",
+          "title": "GS8L.MDP  : Making Of \"Graystone Saga\""
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/pegasusjapan.xml",
+      "source_order": 3660,
+      "archive": "gssaga_98",
+      "id": "gssaga-98-beep-2"
+    },
+    {
+      "title": "[PC-9801] グレイストンサーガ ～魔界の泉～(GM)",
+      "driver": {
+        "name": "pc98dos",
+        "type": "beep",
+        "alias": "Pegasus Japan",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "clockmul",
+          "value": "8"
+        },
+        {
+          "name": "midiout",
+          "value": "1"
+        },
+        {
+          "name": "midiout_type",
+          "value": "8"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "MUSIC.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MUSPJ_98.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "GS1M.MDP",
+          "offset": "0x10"
+        },
+        {
+          "type": "file",
+          "path": "GS2M.MDP",
+          "offset": "0x11"
+        },
+        {
+          "type": "file",
+          "path": "GS3M.MDP",
+          "offset": "0x12"
+        },
+        {
+          "type": "file",
+          "path": "GS4M.MDP",
+          "offset": "0x13"
+        },
+        {
+          "type": "file",
+          "path": "GS6M.MDP",
+          "offset": "0x14"
+        },
+        {
+          "type": "file",
+          "path": "GS7M.MDP",
+          "offset": "0x15"
+        },
+        {
+          "type": "file",
+          "path": "GS8M.MDP",
+          "offset": "0x16"
+        },
+        {
+          "type": "file",
+          "path": "GS9M.MDP",
+          "offset": "0x17"
+        },
+        {
+          "type": "file",
+          "path": "GS10M.MDP",
+          "offset": "0x18"
+        },
+        {
+          "type": "file",
+          "path": "GS11M.MDP",
+          "offset": "0x19"
+        },
+        {
+          "type": "file",
+          "path": "GS12M.MDP",
+          "offset": "0x1a"
+        },
+        {
+          "type": "file",
+          "path": "GS0M.MDP",
+          "offset": "0x1b"
+        },
+        {
+          "type": "shell",
+          "path": "MUSIC",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "MUSPJ_98",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x1b",
+          "title": "GS0M.MDP  : Legand Of Pegasus"
+        },
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "GS3M.MDP  : Graystone Saga"
+        },
+        {
+          "kind": "title",
+          "code": "0x18",
+          "title": "GS10M.MDP : Under The Graystone World"
+        },
+        {
+          "kind": "title",
+          "code": "0x14",
+          "title": "GS6M.MDP  : Go Ahead!"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "GS4M.MDP  : Field Of Island"
+        },
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "GS2M.MDP  : Legend Of \"Graystone\""
+        },
+        {
+          "kind": "title",
+          "code": "0x17",
+          "title": "GS9M.MDP  : Dark Town"
+        },
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "GS1M.MDP  : Dungeon"
+        },
+        {
+          "kind": "title",
+          "code": "0x1a",
+          "title": "GS12M.MDP : Sword & Magic"
+        },
+        {
+          "kind": "title",
+          "code": "0x15",
+          "title": "GS7M.MDP  : Final Battle"
+        },
+        {
+          "kind": "title",
+          "code": "0x19",
+          "title": "GS11M.MDP : Fantastic Story"
+        },
+        {
+          "kind": "title",
+          "code": "0x16",
+          "title": "GS8M.MDP  : Making Of \"Graystone Saga\""
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/pegasusjapan.xml",
+      "source_order": 3661,
+      "archive": "gssaga_98",
+      "id": "gssaga-98-beep-3"
+    },
+    {
+      "title": "[PC-9801] グレイストンサーガ外伝 ～動乱の魔都～(OPN)",
+      "driver": {
+        "name": "pc98dos",
+        "type": "opn",
+        "alias": "Pegasus Japan",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "clockmul",
+          "value": "8"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "MUSIC.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MUSPJ_98.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "OPN2.DAT",
+          "offset": "0x08"
+        },
+        {
+          "type": "file",
+          "path": "SSG2.DAT",
+          "offset": "0x09"
+        },
+        {
+          "type": "file",
+          "path": "GS1.MDP",
+          "offset": "0x10"
+        },
+        {
+          "type": "file",
+          "path": "GS2.MDP",
+          "offset": "0x11"
+        },
+        {
+          "type": "file",
+          "path": "GS3.MDP",
+          "offset": "0x12"
+        },
+        {
+          "type": "file",
+          "path": "GS4.MDP",
+          "offset": "0x13"
+        },
+        {
+          "type": "file",
+          "path": "GS5.MDP",
+          "offset": "0x14"
+        },
+        {
+          "type": "file",
+          "path": "GS6.MDP",
+          "offset": "0x15"
+        },
+        {
+          "type": "file",
+          "path": "GS7.MDP",
+          "offset": "0x16"
+        },
+        {
+          "type": "file",
+          "path": "GS8.MDP",
+          "offset": "0x17"
+        },
+        {
+          "type": "file",
+          "path": "GS9.MDP",
+          "offset": "0x18"
+        },
+        {
+          "type": "file",
+          "path": "GS10.MDP",
+          "offset": "0x19"
+        },
+        {
+          "type": "file",
+          "path": "GS11.MDP",
+          "offset": "0x1a"
+        },
+        {
+          "type": "file",
+          "path": "GS12.MDP",
+          "offset": "0x1b"
+        },
+        {
+          "type": "file",
+          "path": "GS13.MDP",
+          "offset": "0x1c"
+        },
+        {
+          "type": "file",
+          "path": "GS14.MDP",
+          "offset": "0x1d"
+        },
+        {
+          "type": "shell",
+          "path": "MUSIC",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "MUSPJ_98",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "GS1.MDP  : Legend Of Pegasus"
+        },
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "GS2.MDP  : Graystone Sage"
+        },
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "GS3.MDP  : The World"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "GS4.MDP  : Graystone Fields"
+        },
+        {
+          "kind": "title",
+          "code": "0x14",
+          "title": "GS5.MDP  : Dark Dungeon"
+        },
+        {
+          "kind": "title",
+          "code": "0x15",
+          "title": "GS6.MDP  : Town"
+        },
+        {
+          "kind": "title",
+          "code": "0x16",
+          "title": "GS7.MDP  : Power Tower"
+        },
+        {
+          "kind": "title",
+          "code": "0x17",
+          "title": "GS8.MDP  : Ned-Nis"
+        },
+        {
+          "kind": "title",
+          "code": "0x18",
+          "title": "GS9.MDP  : Battle!"
+        },
+        {
+          "kind": "title",
+          "code": "0x19",
+          "title": "GS10.MDP : Stage Clear!"
+        },
+        {
+          "kind": "title",
+          "code": "0x1a",
+          "title": "GS11.MDP : Final Stage"
+        },
+        {
+          "kind": "title",
+          "code": "0x1b",
+          "title": "GS12.MDP : Sub Story"
+        },
+        {
+          "kind": "title",
+          "code": "0x1c",
+          "title": "GS13.MDP : Short Story"
+        },
+        {
+          "kind": "title",
+          "code": "0x1d",
+          "title": "GS14.MDP : For Next Generation"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/pegasusjapan.xml",
+      "source_order": 3662,
+      "archive": "gsgaiden_98",
+      "id": "gsgaiden-98-opn"
+    },
+    {
+      "title": "[PC-9801] グレイストンサーガ外伝 ～動乱の魔都～(GM)",
+      "driver": {
+        "name": "pc98dos",
+        "type": "opn",
+        "alias": "Pegasus Japan",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "clockmul",
+          "value": "8"
+        },
+        {
+          "name": "midiout",
+          "value": "1"
+        },
+        {
+          "name": "midiout_type",
+          "value": "8"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "MUSIC.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MUSPJ_98.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "GS1M.MDP",
+          "offset": "0x10"
+        },
+        {
+          "type": "file",
+          "path": "GS2M.MDP",
+          "offset": "0x11"
+        },
+        {
+          "type": "file",
+          "path": "GS3M.MDP",
+          "offset": "0x12"
+        },
+        {
+          "type": "file",
+          "path": "GS4M.MDP",
+          "offset": "0x13"
+        },
+        {
+          "type": "file",
+          "path": "GS5M.MDP",
+          "offset": "0x14"
+        },
+        {
+          "type": "file",
+          "path": "GS6M.MDP",
+          "offset": "0x15"
+        },
+        {
+          "type": "file",
+          "path": "GS7M.MDP",
+          "offset": "0x16"
+        },
+        {
+          "type": "file",
+          "path": "GS8M.MDP",
+          "offset": "0x17"
+        },
+        {
+          "type": "file",
+          "path": "GS9M.MDP",
+          "offset": "0x18"
+        },
+        {
+          "type": "file",
+          "path": "GS10M.MDP",
+          "offset": "0x19"
+        },
+        {
+          "type": "file",
+          "path": "GS11M.MDP",
+          "offset": "0x1a"
+        },
+        {
+          "type": "file",
+          "path": "GS12M.MDP",
+          "offset": "0x1b"
+        },
+        {
+          "type": "file",
+          "path": "GS13M.MDP",
+          "offset": "0x1c"
+        },
+        {
+          "type": "file",
+          "path": "GS14M.MDP",
+          "offset": "0x1d"
+        },
+        {
+          "type": "shell",
+          "path": "MUSIC",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "MUSPJ_98",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "GS1M.MDP  : Legend Of Pegasus"
+        },
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "GS2M.MDP  : Graystone Sage"
+        },
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "GS3M.MDP  : The World"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "GS4M.MDP  : Graystone Fields"
+        },
+        {
+          "kind": "title",
+          "code": "0x14",
+          "title": "GS5M.MDP  : Dark Dungeon"
+        },
+        {
+          "kind": "title",
+          "code": "0x15",
+          "title": "GS6M.MDP  : Town"
+        },
+        {
+          "kind": "title",
+          "code": "0x16",
+          "title": "GS7M.MDP  : Power Tower"
+        },
+        {
+          "kind": "title",
+          "code": "0x17",
+          "title": "GS8M.MDP  : Ned-Nis"
+        },
+        {
+          "kind": "title",
+          "code": "0x18",
+          "title": "GS9M.MDP  : Battle!"
+        },
+        {
+          "kind": "title",
+          "code": "0x19",
+          "title": "GS10M.MDP : Stage Clear!"
+        },
+        {
+          "kind": "title",
+          "code": "0x1a",
+          "title": "GS11M.MDP : Final Stage"
+        },
+        {
+          "kind": "title",
+          "code": "0x1b",
+          "title": "GS12M.MDP : Sub Story"
+        },
+        {
+          "kind": "title",
+          "code": "0x1c",
+          "title": "GS13M.MDP : Short Story"
+        },
+        {
+          "kind": "title",
+          "code": "0x1d",
+          "title": "GS14M.MDP : For Next Generation"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/pegasusjapan.xml",
+      "source_order": 3663,
+      "archive": "gsgaiden_98",
+      "id": "gsgaiden-98-opn-2"
+    }
+  ]
+}

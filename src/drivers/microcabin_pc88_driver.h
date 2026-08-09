@@ -28,6 +28,8 @@ public:
     void fill_track_info(const HootEntry& entry,
                          int track_index,
                          HootTrackInfo& out) const override;
+    void fill_visual_state(const HootEntry& entry, int track_index,
+                           HootVisualState& out) const override;
     const char* name() const override;
 
 private:
@@ -67,6 +69,8 @@ private:
     uint8_t debug_last_opn_reg_ = 0;
     uint8_t debug_last_opn_data_ = 0;
     uint8_t current_opn_reg_ = 0;
+    std::array<uint8_t, 256> opn_registers_{};
+    std::array<uint8_t, 3> opn_key_on_{};
     uint8_t opn_timer_b_ = 0;
     uint8_t opn_mode_ = 0;
     uint8_t opn_prescaler_sel_ = 2;

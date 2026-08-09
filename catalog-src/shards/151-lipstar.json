@@ -1,0 +1,279 @@
+{
+  "format": "hoot-catalog-shard",
+  "version": 1,
+  "source_file": "xml/lipstar.xml",
+  "date": "2005/09/25",
+  "comments": [
+    " //Lip Star "
+  ],
+  "games": [
+    {
+      "title": "[PC-9801] ESTATE(OPN)",
+      "driver": {
+        "name": "pc98dos",
+        "type": "opn",
+        "alias": "Lip Star",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "clockmul",
+          "value": "8"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "MUSDRV.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MBMUSP.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "ESTE_00N.MSB",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "ESTE_01N.MSB",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "ESTE_02N.MSB",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "ESTE_03N.MSB",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "ESTE_04N.MSB",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "ESTE_05N.MSB",
+          "offset": "-1"
+        },
+        {
+          "type": "conin",
+          "path": "ESTE_00N.MSB",
+          "offset": "0x10"
+        },
+        {
+          "type": "conin",
+          "path": "ESTE_01N.MSB",
+          "offset": "0x11"
+        },
+        {
+          "type": "conin",
+          "path": "ESTE_02N.MSB",
+          "offset": "0x12"
+        },
+        {
+          "type": "conin",
+          "path": "ESTE_03N.MSB",
+          "offset": "0x13"
+        },
+        {
+          "type": "conin",
+          "path": "ESTE_04N.MSB",
+          "offset": "0x14"
+        },
+        {
+          "type": "conin",
+          "path": "ESTE_05N.MSB",
+          "offset": "0x15"
+        },
+        {
+          "type": "shell",
+          "path": "MUSDRV",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "MBMUSP",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "ESTE_00N.MSB"
+        },
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "ESTE_01N.MSB"
+        },
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "ESTE_02N.MSB"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "ESTE_03N.MSB"
+        },
+        {
+          "kind": "title",
+          "code": "0x14",
+          "title": "ESTE_04N.MSB"
+        },
+        {
+          "kind": "title",
+          "code": "0x15",
+          "title": "ESTE_05N.MSB"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/lipstar.xml",
+      "source_order": 3084,
+      "archive": "estate_98",
+      "id": "estate-98-opn"
+    },
+    {
+      "title": "[PC-9801] ESTATE(OPNA)",
+      "driver": {
+        "name": "pc98dos",
+        "type": "opna",
+        "alias": "Lip Star",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "clockmul",
+          "value": "8"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "MUSDRV.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MBMUSP.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "ESTE_00S.MSB",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "ESTE_01S.MSB",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "ESTE_02S.MSB",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "ESTE_03S.MSB",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "ESTE_04S.MSB",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "ESTE_05S.MSB",
+          "offset": "-1"
+        },
+        {
+          "type": "conin",
+          "path": "ESTE_00S.MSB",
+          "offset": "0x10"
+        },
+        {
+          "type": "conin",
+          "path": "ESTE_01S.MSB",
+          "offset": "0x11"
+        },
+        {
+          "type": "conin",
+          "path": "ESTE_02S.MSB",
+          "offset": "0x12"
+        },
+        {
+          "type": "conin",
+          "path": "ESTE_03S.MSB",
+          "offset": "0x13"
+        },
+        {
+          "type": "conin",
+          "path": "ESTE_04S.MSB",
+          "offset": "0x14"
+        },
+        {
+          "type": "conin",
+          "path": "ESTE_05S.MSB",
+          "offset": "0x15"
+        },
+        {
+          "type": "shell",
+          "path": "MUSDRV",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "MBMUSP",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "ESTE_00S.MSB"
+        },
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "ESTE_01S.MSB"
+        },
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "ESTE_02S.MSB"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "ESTE_03S.MSB"
+        },
+        {
+          "kind": "title",
+          "code": "0x14",
+          "title": "ESTE_04S.MSB"
+        },
+        {
+          "kind": "title",
+          "code": "0x15",
+          "title": "ESTE_05S.MSB"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/lipstar.xml",
+      "source_order": 3085,
+      "archive": "estate_98",
+      "id": "estate-98-opna"
+    }
+  ]
+}

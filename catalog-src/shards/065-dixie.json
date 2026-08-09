@@ -1,0 +1,603 @@
+{
+  "format": "hoot-catalog-shard",
+  "version": 1,
+  "source_file": "xml/dixie.xml",
+  "date": "2005/09/25",
+  "comments": [
+    " //Dixie "
+  ],
+  "games": [
+    {
+      "title": "[MSX] RONA 地母神の審判 (OPLL)",
+      "driver": {
+        "name": "msx",
+        "type": "generic",
+        "alias": "Dixie",
+        "platform": "MSX"
+      },
+      "options": [
+        {
+          "name": "mdata_addr",
+          "value": "0xbc00"
+        },
+        {
+          "name": "mdata_size",
+          "value": "0x1000"
+        },
+        {
+          "name": "mfile_size",
+          "value": "0x1000"
+        },
+        {
+          "name": "use_opll",
+          "value": "0x01"
+        },
+        {
+          "name": "init_pc",
+          "value": "0x0400"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "patch",
+          "offset": "0x0400"
+        },
+        {
+          "type": "code",
+          "path": "MUSDRV.BIN",
+          "offset": "0xce00"
+        },
+        {
+          "type": "fmbios",
+          "path": "FMPAC.ROM",
+          "offset": "0x0000"
+        },
+        {
+          "type": "bgm",
+          "path": "FM00.BIN",
+          "offset": "0x00"
+        },
+        {
+          "type": "bgm",
+          "path": "FM01.BIN",
+          "offset": "0x01"
+        },
+        {
+          "type": "bgm",
+          "path": "FM02.BIN",
+          "offset": "0x02"
+        },
+        {
+          "type": "bgm",
+          "path": "FM03.BIN",
+          "offset": "0x03"
+        },
+        {
+          "type": "bgm",
+          "path": "FM04.BIN",
+          "offset": "0x04"
+        },
+        {
+          "type": "bgm",
+          "path": "FM05.BIN",
+          "offset": "0x05"
+        },
+        {
+          "type": "bgm",
+          "path": "FM06.BIN",
+          "offset": "0x06"
+        },
+        {
+          "type": "bgm",
+          "path": "FM07.BIN",
+          "offset": "0x07"
+        },
+        {
+          "type": "bgm",
+          "path": "FM08.BIN",
+          "offset": "0x08"
+        },
+        {
+          "type": "bgm",
+          "path": "FM09.BIN",
+          "offset": "0x09"
+        },
+        {
+          "type": "bgm",
+          "path": "FM10.BIN",
+          "offset": "0x0a"
+        },
+        {
+          "type": "bgm",
+          "path": "FM11.BIN",
+          "offset": "0x0b"
+        },
+        {
+          "type": "bgm",
+          "path": "FM12.BIN",
+          "offset": "0x0c"
+        },
+        {
+          "type": "bgm",
+          "path": "FM13.BIN",
+          "offset": "0x0d"
+        },
+        {
+          "type": "bgm",
+          "path": "FM14.BIN",
+          "offset": "0x0e"
+        },
+        {
+          "type": "bgm",
+          "path": "FM15.BIN",
+          "offset": "0x0f"
+        },
+        {
+          "type": "bgm",
+          "path": "FM16.BIN",
+          "offset": "0x10"
+        },
+        {
+          "type": "bgm",
+          "path": "FM17.BIN",
+          "offset": "0x11"
+        },
+        {
+          "type": "bgm",
+          "path": "FM18.BIN",
+          "offset": "0x12"
+        },
+        {
+          "type": "bgm",
+          "path": "FM19.BIN",
+          "offset": "0x13"
+        },
+        {
+          "type": "bgm",
+          "path": "FM20.BIN",
+          "offset": "0x14"
+        },
+        {
+          "type": "bgm",
+          "path": "FM21.BIN",
+          "offset": "0x15"
+        },
+        {
+          "type": "bgm",
+          "path": "FM22.BIN",
+          "offset": "0x16"
+        },
+        {
+          "type": "bgm",
+          "path": "FM23.BIN",
+          "offset": "0x17"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x0e",
+          "title": "Opening 1"
+        },
+        {
+          "kind": "title",
+          "code": "0x0f",
+          "title": "Opening 2 / Epilogue 1"
+        },
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "Opening 3"
+        },
+        {
+          "kind": "title",
+          "code": "0x0d",
+          "title": "Title"
+        },
+        {
+          "kind": "title",
+          "code": "0x07",
+          "title": "Stage 1"
+        },
+        {
+          "kind": "title",
+          "code": "0x00",
+          "title": "Boss 1"
+        },
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "Boss 2"
+        },
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "Demo 1 / Epilogue 2"
+        },
+        {
+          "kind": "title",
+          "code": "0x08",
+          "title": "Stage 2"
+        },
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "Demo 2"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "Demo 3"
+        },
+        {
+          "kind": "title",
+          "code": "0x09",
+          "title": "Stage 3"
+        },
+        {
+          "kind": "title",
+          "code": "0x14",
+          "title": "Demo 4"
+        },
+        {
+          "kind": "title",
+          "code": "0x0a",
+          "title": "Stage 4"
+        },
+        {
+          "kind": "title",
+          "code": "0x16",
+          "title": "Demo 5"
+        },
+        {
+          "kind": "title",
+          "code": "0x0b",
+          "title": "Stage 5-1"
+        },
+        {
+          "kind": "title",
+          "code": "0x0c",
+          "title": "Stage 5-2"
+        },
+        {
+          "kind": "title",
+          "code": "0x05",
+          "title": "Last Boss"
+        },
+        {
+          "kind": "title",
+          "code": "0x0102",
+          "title": "Stage Clear"
+        },
+        {
+          "kind": "title",
+          "code": "0x0106",
+          "title": "Game Over"
+        },
+        {
+          "kind": "title",
+          "code": "0x04",
+          "title": "Staff Roll"
+        },
+        {
+          "kind": "comment",
+          "text": "\t<title code=\"0x0115\">未使用</title> "
+        },
+        {
+          "kind": "title",
+          "code": "0x0117",
+          "title": "未使用"
+        },
+        {
+          "kind": "title",
+          "code": "0x03",
+          "title": "SE"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/dixie.xml",
+      "source_order": 1125,
+      "archive": "rona_msx,fmpac_msx",
+      "id": "rona-msx-fmpac-msx-generic"
+    },
+    {
+      "title": "[MSX] RONA 地母神の審判 (PSG)",
+      "driver": {
+        "name": "msx",
+        "type": "generic",
+        "alias": "Dixie",
+        "platform": "MSX"
+      },
+      "options": [
+        {
+          "name": "mdata_addr",
+          "value": "0xbc00"
+        },
+        {
+          "name": "mdata_size",
+          "value": "0x1000"
+        },
+        {
+          "name": "mfile_size",
+          "value": "0x1000"
+        },
+        {
+          "name": "init_pc",
+          "value": "0x0400"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "patch",
+          "offset": "0x0400"
+        },
+        {
+          "type": "code",
+          "path": "MUSDRV.BIN",
+          "offset": "0xce00"
+        },
+        {
+          "type": "bgm",
+          "path": "PSG00.BIN",
+          "offset": "0x00"
+        },
+        {
+          "type": "bgm",
+          "path": "PSG01.BIN",
+          "offset": "0x01"
+        },
+        {
+          "type": "bgm",
+          "path": "PSG02.BIN",
+          "offset": "0x02"
+        },
+        {
+          "type": "bgm",
+          "path": "PSG03.BIN",
+          "offset": "0x03"
+        },
+        {
+          "type": "bgm",
+          "path": "PSG04.BIN",
+          "offset": "0x04"
+        },
+        {
+          "type": "bgm",
+          "path": "PSG05.BIN",
+          "offset": "0x05"
+        },
+        {
+          "type": "bgm",
+          "path": "PSG06.BIN",
+          "offset": "0x06"
+        },
+        {
+          "type": "bgm",
+          "path": "PSG07.BIN",
+          "offset": "0x07"
+        },
+        {
+          "type": "bgm",
+          "path": "PSG08.BIN",
+          "offset": "0x08"
+        },
+        {
+          "type": "bgm",
+          "path": "PSG09.BIN",
+          "offset": "0x09"
+        },
+        {
+          "type": "bgm",
+          "path": "PSG10.BIN",
+          "offset": "0x0a"
+        },
+        {
+          "type": "bgm",
+          "path": "PSG11.BIN",
+          "offset": "0x0b"
+        },
+        {
+          "type": "bgm",
+          "path": "PSG12.BIN",
+          "offset": "0x0c"
+        },
+        {
+          "type": "bgm",
+          "path": "PSG13.BIN",
+          "offset": "0x0d"
+        },
+        {
+          "type": "bgm",
+          "path": "PSG14.BIN",
+          "offset": "0x0e"
+        },
+        {
+          "type": "bgm",
+          "path": "PSG15.BIN",
+          "offset": "0x0f"
+        },
+        {
+          "type": "bgm",
+          "path": "PSG16.BIN",
+          "offset": "0x10"
+        },
+        {
+          "type": "bgm",
+          "path": "PSG17.BIN",
+          "offset": "0x11"
+        },
+        {
+          "type": "bgm",
+          "path": "PSG18.BIN",
+          "offset": "0x12"
+        },
+        {
+          "type": "bgm",
+          "path": "PSG19.BIN",
+          "offset": "0x13"
+        },
+        {
+          "type": "bgm",
+          "path": "PSG20.BIN",
+          "offset": "0x14"
+        },
+        {
+          "type": "bgm",
+          "path": "PSG21.BIN",
+          "offset": "0x15"
+        },
+        {
+          "type": "bgm",
+          "path": "PSG22.BIN",
+          "offset": "0x16"
+        },
+        {
+          "type": "bgm",
+          "path": "PSG23.BIN",
+          "offset": "0x17"
+        },
+        {
+          "type": "bgm",
+          "path": "PSG24.BIN",
+          "offset": "0x18"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x0e",
+          "title": "Opening 1"
+        },
+        {
+          "kind": "title",
+          "code": "0x0f",
+          "title": "Opening 2 / Epilogue 1"
+        },
+        {
+          "kind": "comment",
+          "text": "\t<title code=\"0x16\">Opening 2 / Epilogue 1</title> "
+        },
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "Opening 3"
+        },
+        {
+          "kind": "comment",
+          "text": "\t<title code=\"0x17\">Opening 3</title> "
+        },
+        {
+          "kind": "title",
+          "code": "0x0d",
+          "title": "Title"
+        },
+        {
+          "kind": "title",
+          "code": "0x07",
+          "title": "Stage 1"
+        },
+        {
+          "kind": "title",
+          "code": "0x00",
+          "title": "Boss 1"
+        },
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "Boss 2"
+        },
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "Demo 1 / Epilogue 2"
+        },
+        {
+          "kind": "comment",
+          "text": "\t<title code=\"0x18\">Demo 1</title> "
+        },
+        {
+          "kind": "title",
+          "code": "0x08",
+          "title": "Stage 2"
+        },
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "Demo 2"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "Demo 3"
+        },
+        {
+          "kind": "title",
+          "code": "0x09",
+          "title": "Stage 3"
+        },
+        {
+          "kind": "title",
+          "code": "0x14",
+          "title": "Demo 4"
+        },
+        {
+          "kind": "title",
+          "code": "0x0a",
+          "title": "Stage 4"
+        },
+        {
+          "kind": "title",
+          "code": "0x15",
+          "title": "Demo 5"
+        },
+        {
+          "kind": "title",
+          "code": "0x0b",
+          "title": "Stage 5-1"
+        },
+        {
+          "kind": "title",
+          "code": "0x0c",
+          "title": "Stage 5-2"
+        },
+        {
+          "kind": "title",
+          "code": "0x05",
+          "title": "Last Boss"
+        },
+        {
+          "kind": "title",
+          "code": "0x0102",
+          "title": "Stage Clear"
+        },
+        {
+          "kind": "title",
+          "code": "0x0106",
+          "title": "Game Over"
+        },
+        {
+          "kind": "title",
+          "code": "0x04",
+          "title": "Staff Roll"
+        },
+        {
+          "kind": "title",
+          "code": "0x14",
+          "title": "未使用"
+        },
+        {
+          "kind": "title",
+          "code": "0x03",
+          "title": "SE"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/dixie.xml",
+      "source_order": 1126,
+      "archive": "rona_msx",
+      "id": "rona-msx-generic"
+    }
+  ]
+}

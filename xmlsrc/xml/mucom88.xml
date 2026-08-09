@@ -1,0 +1,712 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="hoot.xsl"?>
+<!DOCTYPE gamelist [
+	<!ELEMENT gamelist (game|bind|childlists)*>
+	<!ATTLIST gamelist date CDATA #IMPLIED>
+	<!ELEMENT childlists (list)*>
+	<!ELEMENT list (#PCDATA)>
+	<!ELEMENT bind (exts,driver,options?)>
+	<!ELEMENT exts (ext)*>
+	<!ELEMENT ext (#PCDATA)>
+	<!ELEMENT game (name,driver,driveralias?,options?,romlist?,titlelist?)>
+	<!ELEMENT name (#PCDATA)>
+	<!ELEMENT driver (#PCDATA)>
+	<!ATTLIST driver type CDATA #IMPLIED>
+	<!ELEMENT driveralias (#PCDATA)>
+	<!ATTLIST driveralias type CDATA #IMPLIED>
+	<!ELEMENT options (option)*>
+	<!ELEMENT option EMPTY>
+	<!ATTLIST option name CDATA #REQUIRED
+					 value CDATA #REQUIRED>
+	<!ELEMENT romlist (rom)*>
+	<!ATTLIST romlist archive CDATA #IMPLIED>
+	<!ELEMENT rom (#PCDATA)>
+	<!ATTLIST rom type CDATA #REQUIRED
+				  offset CDATA #IMPLIED
+				  crc32 CDATA #IMPLIED>
+	<!ELEMENT titlelist (title|range)*>
+	<!ELEMENT title (#PCDATA)>
+	<!ATTLIST title code CDATA #REQUIRED
+					type CDATA #IMPLIED>
+	<!ELEMENT range (#PCDATA)>
+	<!ATTLIST range min CDATA #REQUIRED
+					max CDATA #REQUIRED
+					extcode CDATA #IMPLIED
+					start CDATA #IMPLIED>
+
+]>
+<gamelist date="2018/12/24">
+	<!--//MUCOM88 -->
+	<game>
+		<name>[PC-8801] MUCOM88 V1.5</name>
+		<driver type="opna">pc88</driver>
+		<driveralias type="NEC PC-8801">MUCOM88</driveralias>
+		<options>
+			<option name="mdata_addr" value="0x0001"/>
+			<option name="init_pc" value="0x8000"/>
+			<option name="use_gvram" value="1"/>
+			<option name="use_n88rom" value="1"/>
+			<option name="debug_mem" value="0xf300"/>
+		</options>
+		<romlist archive="MUCOM88_V1.5">
+			<rom type="code" offset="0x8000">patch</rom>
+			<!-- <rom type="code" offset="0x9000">pcmldr</rom> -->
+			<rom type="code" offset="0x8800">errmsg</rom>
+			<rom type="code" offset="0xb000">music</rom>
+			<rom type="code" offset="0x9600">muc88</rom>
+			<rom type="code" offset="0x9000">msub</rom>
+			<rom type="code" offset="0xab00">expand</rom>
+			<rom type="code" offset="0x6000">voice.dat</rom>
+			<!-- <rom type="code" offset="0x4800">kbd</rom> -->
+			<rom type="code" offset="0xde00">smon</rom>
+			<rom type="code" offset="0x5e00">ssgdat</rom>
+			<!-- <rom type="code" offset="0xc200">swfile</rom> -->
+			<!-- <rom type="code" offset="0xe400">time</rom> -->
+			<rom type="code" offset="0xe300">PCM.adr</rom>
+			<rom type="adpcm" offset="0x00000000">VOICE.1</rom>
+			<rom type="adpcm" offset="0x000003f8">VOICE.2</rom>
+			<rom type="adpcm" offset="0x00001088">VOICE.3</rom>
+			<rom type="adpcm" offset="0x00001ad8">VOICE.4</rom>
+			<rom type="adpcm" offset="0x00003a70">VOICE.5</rom>
+			<rom type="adpcm" offset="0x00006048">VOICE.6</rom>
+			<rom type="adpcm" offset="0x000067f0">VOICE.7</rom>
+			<rom type="adpcm" offset="0x00007450">VOICE.8</rom>
+			<rom type="adpcm" offset="0x000080d8">VOICE.9</rom>
+			<rom type="adpcm" offset="0x00009798">VOICE.10</rom>
+			<rom type="adpcm" offset="0x00009d68">VOICE.11</rom>
+			<rom type="adpcm" offset="0x0000a328">VOICE.12</rom>
+			<rom type="adpcm" offset="0x0000b7e0">VOICE.13</rom>
+			<rom type="adpcm" offset="0x0000bcf0">VOICE.14</rom>
+			<rom type="adpcm" offset="0x0000c070">VOICE.15</rom>
+			<rom type="adpcm" offset="0x0000d4a0">VOICE.16</rom>
+			<rom type="bgm" offset="0x01">sampl1</rom>
+			<rom type="bgm" offset="0x02">sampl2</rom>
+			<rom type="bgm" offset="0x03">sampl3</rom>
+		</romlist>
+		<titlelist>
+			<title code="0x01">Sample Music 1</title>
+			<title code="0x02">Sample Music 2</title>
+			<title code="0x03">Sample Music 3</title>
+		</titlelist>
+	</game>
+	<game>
+		<name>[PC-8801] MUCOM88 V1.7</name>
+		<driver type="opna">pc88</driver>
+		<driveralias type="NEC PC-8801">MUCOM88</driveralias>
+		<options>
+			<option name="mdata_addr" value="0x0001"/>
+			<option name="init_pc" value="0x8000"/>
+			<option name="use_gvram" value="1"/>
+			<option name="use_n88rom" value="1"/>
+			<option name="debug_mem" value="0xf300"/>
+		</options>
+		<romlist archive="MUCOM88_V1.7">
+			<rom type="code" offset="0x8000">patch</rom>
+			<!-- <rom type="code" offset="0x9000">pcmldr</rom> -->
+			<rom type="code" offset="0x8800">errmsg</rom>
+			<rom type="code" offset="0xb000">music</rom>
+			<rom type="code" offset="0x9600">muc88</rom>
+			<rom type="code" offset="0x9000">msub</rom>
+			<rom type="code" offset="0xab00">expand</rom>
+			<rom type="code" offset="0x6000">voice.dat</rom>
+			<!-- <rom type="code" offset="0x4800">kbd</rom> -->
+			<rom type="code" offset="0xde00">smon</rom>
+			<rom type="code" offset="0x5e00">ssgdat</rom>
+			<!-- <rom type="code" offset="0xc200">swfile</rom> -->
+			<!-- <rom type="code" offset="0xe400">time</rom> -->
+			<rom type="code" offset="0xe300">PCM.adr</rom>
+			<rom type="adpcm" offset="0x00000000">VOICE.1</rom>
+			<rom type="adpcm" offset="0x000003f8">VOICE.2</rom>
+			<rom type="adpcm" offset="0x00001088">VOICE.3</rom>
+			<rom type="adpcm" offset="0x00001ad8">VOICE.4</rom>
+			<rom type="adpcm" offset="0x00003a70">VOICE.5</rom>
+			<rom type="adpcm" offset="0x00006048">VOICE.6</rom>
+			<rom type="adpcm" offset="0x000067f0">VOICE.7</rom>
+			<rom type="adpcm" offset="0x00007450">VOICE.8</rom>
+			<rom type="adpcm" offset="0x000080d8">VOICE.9</rom>
+			<rom type="adpcm" offset="0x00009798">VOICE.10</rom>
+			<rom type="adpcm" offset="0x00009d68">VOICE.11</rom>
+			<rom type="adpcm" offset="0x0000a328">VOICE.12</rom>
+			<rom type="adpcm" offset="0x0000b7e0">VOICE.13</rom>
+			<rom type="adpcm" offset="0x0000bcf0">VOICE.14</rom>
+			<rom type="adpcm" offset="0x0000c070">VOICE.15</rom>
+			<rom type="adpcm" offset="0x0000d4a0">VOICE.16</rom>
+			<rom type="bgm" offset="0x01">sampl1</rom>
+			<rom type="bgm" offset="0x02">sampl2</rom>
+			<rom type="bgm" offset="0x03">sampl3</rom>
+		</romlist>
+		<titlelist>
+			<title code="0x01">Sample Music 1</title>
+			<title code="0x02">Sample Music 2</title>
+			<title code="0x03">Sample Music 3</title>
+		</titlelist>
+	</game>
+	<game>
+		<name>[PC-8801] ACTRAISER (MUCOM88)</name>
+		<driver type="opna">pc88</driver>
+		<driveralias type="NEC PC-8801">MUCOM88</driveralias>
+		<options>
+			<option name="mdata_addr" value="0x0001"/>
+			<option name="init_pc" value="0x8000"/>
+			<option name="use_gvram" value="1"/>
+			<option name="use_n88rom" value="1"/>
+			<option name="debug_mem" value="0xf300"/>
+		</options>
+		<romlist archive="MUCOM88_V1.5_ACTRAISER">
+			<rom type="code" offset="0x8000">patch</rom>
+			<!-- <rom type="code" offset="0x9000">pcmldr</rom> -->
+			<rom type="code" offset="0x8800">errmsg</rom>
+			<rom type="code" offset="0xb000">music</rom>
+			<rom type="code" offset="0x9600">muc88</rom>
+			<rom type="code" offset="0x9000">msub</rom>
+			<rom type="code" offset="0xab00">expand</rom>
+			<rom type="code" offset="0x6000">voice.dat</rom>
+			<!-- <rom type="code" offset="0x4800">kbd</rom> -->
+			<rom type="code" offset="0xde00">smon</rom>
+			<rom type="code" offset="0x5e00">ssgdat</rom>
+			<!-- <rom type="code" offset="0xc200">swfile</rom> -->
+			<!-- <rom type="code" offset="0xe400">time</rom> -->
+			<rom type="code" offset="0xe300">PCM_ACTRAISER.adr</rom>
+			<rom type="adpcm" offset="0x00000000">VOICE.1</rom>
+			<rom type="adpcm" offset="0x000007b0">VOICE.2</rom>
+			<rom type="adpcm" offset="0x00001440">VOICE.3</rom>
+			<rom type="adpcm" offset="0x00001e90">VOICE.4</rom>
+			<rom type="adpcm" offset="0x000026c0">VOICE.5</rom>
+			<rom type="adpcm" offset="0x000030e0">VOICE.6</rom>
+			<rom type="adpcm" offset="0x000039c0">VOICE.7</rom>
+			<rom type="adpcm" offset="0x00005958">VOICE.8</rom>
+			<rom type="adpcm" offset="0x00007f30">VOICE.9</rom>
+			<rom type="adpcm" offset="0x00009a98">VOICE.10</rom>
+			<rom type="adpcm" offset="0x0000a6f8">VOICE.11</rom>
+			<rom type="adpcm" offset="0x0000b380">VOICE.12</rom>
+			<rom type="adpcm" offset="0x0000bd30">VOICE.13</rom>
+			<rom type="adpcm" offset="0x0000c1b0">VOICE.14</rom>
+			<rom type="adpcm" offset="0x0000dc00">VOICE.15</rom>
+			<rom type="adpcm" offset="0x0000e090">VOICE.16</rom>
+			<rom type="adpcm" offset="0x0000f350">VOICE.17</rom>
+			<rom type="adpcm" offset="0x0000f880">VOICE.18</rom>
+			<rom type="adpcm" offset="0x00010160">VOICE.19</rom>
+			<rom type="adpcm" offset="0x00011e48">VOICE.20</rom>
+			<rom type="adpcm" offset="0x00013818">VOICE.21</rom>
+			<rom type="bgm" offset="0x01">gh002</rom>
+			<rom type="bgm" offset="0x02">gh011</rom>
+			<rom type="bgm" offset="0x03">gh029</rom>
+			<rom type="bgm" offset="0x04">stg001</rom>
+		</romlist>
+		<titlelist>
+			<title code="0x01">Filmoa</title>
+			<title code="0x02">Blood Pool ~ Casandora</title>
+			<title code="0x03">Sacrifices</title>
+			<title code="0x04">Space Fight</title>
+		</titlelist>
+	</game>
+	<game>
+		<name>[PC-8801] ALGARNA (MUCOM88)</name>
+		<driver type="opna">pc88</driver>
+		<driveralias type="NEC PC-8801">MUCOM88</driveralias>
+		<options>
+			<option name="mdata_addr" value="0x0001"/>
+			<option name="init_pc" value="0x8000"/>
+			<option name="use_gvram" value="1"/>
+			<option name="use_n88rom" value="1"/>
+			<option name="debug_mem" value="0xf300"/>
+		</options>
+		<romlist archive="MUCOM88_V1.7_ALGARNA">
+			<rom type="code" offset="0x8000">patch</rom>
+			<!-- <rom type="code" offset="0x9000">pcmldr</rom> -->
+			<rom type="code" offset="0x8800">errmsg</rom>
+			<rom type="code" offset="0xb000">music</rom>
+			<rom type="code" offset="0x9600">muc88</rom>
+			<rom type="code" offset="0x9000">msub</rom>
+			<rom type="code" offset="0xab00">expand</rom>
+			<rom type="code" offset="0x6000">voice.dat</rom>
+			<!-- <rom type="code" offset="0x4800">kbd</rom> -->
+			<rom type="code" offset="0xde00">smon</rom>
+			<rom type="code" offset="0x5e00">ssgdat</rom>
+			<!-- <rom type="code" offset="0xc200">swfile</rom> -->
+			<!-- <rom type="code" offset="0xe400">time</rom> -->
+			<rom type="code" offset="0xe300">PCM.adr</rom>
+			<rom type="adpcm" offset="0x00000000">VOICE.1</rom>
+			<rom type="adpcm" offset="0x000003f8">VOICE.2</rom>
+			<rom type="adpcm" offset="0x00001088">VOICE.3</rom>
+			<rom type="adpcm" offset="0x00001ad8">VOICE.4</rom>
+			<rom type="adpcm" offset="0x00003a70">VOICE.5</rom>
+			<rom type="adpcm" offset="0x00006048">VOICE.6</rom>
+			<rom type="adpcm" offset="0x000067f0">VOICE.7</rom>
+			<rom type="adpcm" offset="0x00007450">VOICE.8</rom>
+			<rom type="adpcm" offset="0x000080d8">VOICE.9</rom>
+			<rom type="adpcm" offset="0x00009798">VOICE.10</rom>
+			<rom type="adpcm" offset="0x00009d68">VOICE.11</rom>
+			<rom type="adpcm" offset="0x0000a328">VOICE.12</rom>
+			<rom type="adpcm" offset="0x0000b7e0">VOICE.13</rom>
+			<rom type="adpcm" offset="0x0000bcf0">VOICE.14</rom>
+			<rom type="adpcm" offset="0x0000c070">VOICE.15</rom>
+			<rom type="adpcm" offset="0x0000d4a0">VOICE.16</rom>
+			<rom type="bgm" offset="0x01">arg006</rom>
+			<rom type="bgm" offset="0x02">arg007</rom>
+			<rom type="bgm" offset="0x03">arg011</rom>
+			<rom type="bgm" offset="0x04">arg014</rom>
+		</romlist>
+		<titlelist>
+			<title code="0x01">サルーンの城</title>
+			<title code="0x02">バレンツでの戦闘</title>
+			<title code="0x03">パトロンの山</title>
+			<title code="0x04">カラクームの町</title>
+		</titlelist>
+	</game>
+	<game>
+		<name>[PC-8801] BARE KNUCKLE (MUCOM88)</name>
+		<driver type="opna">pc88</driver>
+		<driveralias type="NEC PC-8801">MUCOM88</driveralias>
+		<options>
+			<option name="mdata_addr" value="0x0001"/>
+			<option name="init_pc" value="0x8000"/>
+			<option name="use_gvram" value="1"/>
+			<option name="use_n88rom" value="1"/>
+			<option name="debug_mem" value="0xf300"/>
+		</options>
+		<romlist archive="MUCOM88_V1.5_BARE_KNUCKLE">
+			<rom type="code" offset="0x8000">patch</rom>
+			<!-- <rom type="code" offset="0x9000">pcmldr</rom> -->
+			<rom type="code" offset="0x8800">errmsg</rom>
+			<rom type="code" offset="0xb000">music</rom>
+			<rom type="code" offset="0x9600">muc88</rom>
+			<rom type="code" offset="0x9000">msub</rom>
+			<rom type="code" offset="0xab00">expand</rom>
+			<rom type="code" offset="0x6000">voice.dat</rom>
+			<!-- <rom type="code" offset="0x4800">kbd</rom> -->
+			<rom type="code" offset="0xde00">smon</rom>
+			<rom type="code" offset="0x5e00">ssgdat</rom>
+			<!-- <rom type="code" offset="0xc200">swfile</rom> -->
+			<!-- <rom type="code" offset="0xe400">time</rom> -->
+			<rom type="code" offset="0xe300">PCM_BARE_KNUCKLE.adr</rom>
+			<rom type="adpcm" offset="0x00000000">VOICE.1</rom>
+			<rom type="adpcm" offset="0x000005d0">VOICE.2</rom>
+			<rom type="adpcm" offset="0x00000b90">VOICE.3</rom>
+			<rom type="adpcm" offset="0x000013a0">VOICE.4</rom>
+			<rom type="adpcm" offset="0x00002858">VOICE.5</rom>
+			<rom type="bgm" offset="0x01">stk004</rom>
+			<rom type="bgm" offset="0x02">stk013</rom>
+			<rom type="bgm" offset="0x03">stk020</rom>
+			<rom type="bgm" offset="0x04">stk023</rom>
+			<rom type="bgm" offset="0x05">stk027</rom>
+		</romlist>
+		<titlelist>
+			<title code="0x01">Fighting in the Street</title>
+			<title code="0x02">Attack the Barbarian</title>
+			<title code="0x03">Stealthy Steps</title>
+			<title code="0x04">The Street of Rage</title>
+			<title code="0x05">Moon Beach</title>
+		</titlelist>
+	</game>
+	<game>
+		<name>[PC-8801] BARE KNUCKLE2 (MUCOM88)</name>
+		<driver type="opna">pc88</driver>
+		<driveralias type="NEC PC-8801">MUCOM88</driveralias>
+		<options>
+			<option name="mdata_addr" value="0x0001"/>
+			<option name="mdata_size" value="0x2400"/>
+			<option name="mfile_size" value="0x2400"/>
+			<option name="init_pc" value="0x8000"/>
+			<option name="use_gvram" value="1"/>
+			<option name="use_n88rom" value="1"/>
+			<option name="debug_mem" value="0xf300"/>
+		</options>
+		<romlist archive="MUCOM88_V1.7_BARE_KNUCKLE2">
+			<rom type="code" offset="0x8000">patch</rom>
+			<!-- <rom type="code" offset="0x9000">pcmldr</rom> -->
+			<rom type="code" offset="0x8800">errmsg</rom>
+			<rom type="code" offset="0xb000">music</rom>
+			<rom type="code" offset="0x9600">muc88</rom>
+			<rom type="code" offset="0x9000">msub</rom>
+			<rom type="code" offset="0xab00">expand</rom>
+			<rom type="code" offset="0x6000">voice.dat</rom>
+			<!-- <rom type="code" offset="0x4800">kbd</rom> -->
+			<rom type="code" offset="0xde00">smon</rom>
+			<rom type="code" offset="0x5e00">ssgdat</rom>
+			<!-- <rom type="code" offset="0xc200">swfile</rom> -->
+			<!-- <rom type="code" offset="0xe400">time</rom> -->
+			<rom type="code" offset="0xe300">PCM_BARE_KNUCKLE2.adr</rom>
+			<rom type="adpcm" offset="0x00000000">VOICE.1</rom>
+			<rom type="adpcm" offset="0x00000648">VOICE.2</rom>
+			<rom type="adpcm" offset="0x00000da0">VOICE.3</rom>
+			<rom type="bgm" offset="0x01">bare03</rom>
+			<rom type="bgm" offset="0x02">bare04</rom>
+			<rom type="bgm" offset="0x03">bare09</rom>
+			<rom type="bgm" offset="0x04">bare12</rom>
+			<rom type="bgm" offset="0x05">bare16</rom>
+			<rom type="bgm" offset="0x06">bare21</rom>
+			<rom type="bgm" offset="0x07">bare75</rom>
+		</romlist>
+		<titlelist>
+			<title code="0x01">Go Straight</title>
+			<title code="0x02">Never Return Alive</title>
+			<title code="0x03">Too Deep</title>
+			<title code="0x04">Round Clear</title>
+			<title code="0x05">Dreamer</title>
+			<title code="0x06">Alien Power</title>
+			<title code="0x07">Expander</title>
+		</titlelist>
+	</game>
+	<game>
+		<name>[PC-8801] BOSCONIAN (MUCOM88)</name>
+		<driver type="opna">pc88</driver>
+		<driveralias type="NEC PC-8801">MUCOM88</driveralias>
+		<options>
+			<option name="mdata_addr" value="0x0001"/>
+			<option name="mdata_size" value="0x2800"/>
+			<option name="mfile_size" value="0x2800"/>
+			<option name="init_pc" value="0x8000"/>
+			<option name="use_gvram" value="1"/>
+			<option name="use_n88rom" value="1"/>
+			<option name="debug_mem" value="0xf300"/>
+		</options>
+		<romlist archive="MUCOM88_V1.7_BOSCONIAN">
+			<rom type="code" offset="0x8000">patch</rom>
+			<!-- <rom type="code" offset="0x9000">pcmldr</rom> -->
+			<rom type="code" offset="0x8800">errmsg</rom>
+			<rom type="code" offset="0xb000">music</rom>
+			<rom type="code" offset="0x9600">muc88</rom>
+			<rom type="code" offset="0x9000">msub</rom>
+			<rom type="code" offset="0xab00">expand</rom>
+			<rom type="code" offset="0x6000">voice.dat</rom>
+			<!-- <rom type="code" offset="0x4800">kbd</rom> -->
+			<rom type="code" offset="0xde00">smon</rom>
+			<rom type="code" offset="0x5e00">ssgdat</rom>
+			<!-- <rom type="code" offset="0xc200">swfile</rom> -->
+			<!-- <rom type="code" offset="0xe400">time</rom> -->
+			<rom type="code" offset="0xe300">PCM_BOSCONIAN.adr</rom>
+			<rom type="adpcm" offset="0x00000000">VOICE.1</rom>
+			<rom type="adpcm" offset="0x000003b8">VOICE.2</rom>
+			<rom type="adpcm" offset="0x00001290">VOICE.3</rom>
+			<rom type="adpcm" offset="0x00002418">VOICE.4</rom>
+			<rom type="adpcm" offset="0x000028a8">VOICE.5</rom>
+			<rom type="adpcm" offset="0x00003130">VOICE.6</rom>
+			<rom type="adpcm" offset="0x00005210">VOICE.7</rom>
+			<rom type="adpcm" offset="0x00007470">VOICE.8</rom>
+			<rom type="adpcm" offset="0x000092e0">VOICE.9</rom>
+			<rom type="adpcm" offset="0x000094e8">VOICE.10</rom>
+			<rom type="adpcm" offset="0x0000a430">VOICE.11</rom>
+			<rom type="adpcm" offset="0x0000a7b0">VOICE.12</rom>
+			<rom type="adpcm" offset="0x0000be70">VOICE.13</rom>
+			<rom type="adpcm" offset="0x0000c280">VOICE.14</rom>
+			<rom type="adpcm" offset="0x0000c6e8">VOICE.15</rom>
+			<rom type="adpcm" offset="0x0000ca30">VOICE.16</rom>
+			<rom type="adpcm" offset="0x0000cf40">VOICE.17</rom>
+			<rom type="adpcm" offset="0x0000d560">VOICE.18</rom>
+			<rom type="adpcm" offset="0x0000dd70">VOICE.19</rom>
+			<rom type="adpcm" offset="0x0000e5c8">VOICE.20</rom>
+			<rom type="adpcm" offset="0x0000e990">VOICE.21</rom>
+			<rom type="adpcm" offset="0x0000edd8">VOICE.22</rom>
+			<rom type="adpcm" offset="0x0000f2d0">VOICE.23</rom>
+			<rom type="adpcm" offset="0x0000f8a0">VOICE.24</rom>
+			<rom type="adpcm" offset="0x0000fcd0">VOICE.25</rom>
+			<rom type="adpcm" offset="0x000101e0">VOICE.26</rom>
+			<rom type="adpcm" offset="0x00010890">VOICE.27</rom>
+			<rom type="bgm" offset="0x01">bos010</rom>
+			<rom type="bgm" offset="0x02">bos011</rom>
+			<rom type="bgm" offset="0x03">bos012</rom>
+		</romlist>
+		<titlelist>
+			<title code="0x01">Blast Power!</title>
+			<title code="0x02">Flash Flash Flash</title>
+			<title code="0x03">Asteroid Memory</title>
+		</titlelist>
+	</game>
+	<game>
+		<name>[PC-8801] Etrian Odyssey (MUCOM88)</name>
+		<driver type="opna">pc88</driver>
+		<driveralias type="NEC PC-8801">MUCOM88</driveralias>
+		<options>
+			<option name="mdata_addr" value="0x0001"/>
+			<option name="init_pc" value="0x8000"/>
+			<option name="use_gvram" value="1"/>
+			<option name="use_n88rom" value="1"/>
+			<option name="debug_mem" value="0xf300"/>
+		</options>
+		<romlist archive="MUCOM88_V1.7_Etrian_Odyssey">
+			<rom type="code" offset="0x8000">patch</rom>
+			<!-- <rom type="code" offset="0x9000">pcmldr</rom> -->
+			<rom type="code" offset="0x8800">errmsg</rom>
+			<rom type="code" offset="0xb000">music</rom>
+			<rom type="code" offset="0x9600">muc88</rom>
+			<rom type="code" offset="0x9000">msub</rom>
+			<rom type="code" offset="0xab00">expand</rom>
+			<rom type="code" offset="0x6000">voice.dat</rom>
+			<!-- <rom type="code" offset="0x4800">kbd</rom> -->
+			<rom type="code" offset="0xde00">smon</rom>
+			<rom type="code" offset="0x5e00">ssgdat</rom>
+			<!-- <rom type="code" offset="0xc200">swfile</rom> -->
+			<!-- <rom type="code" offset="0xe400">time</rom> -->
+			<rom type="code" offset="0xe300">PCM_Etrian_Odyssey.adr</rom>
+			<rom type="adpcm" offset="0x00000000">VOICE.1</rom>
+			<rom type="adpcm" offset="0x00000648">VOICE.2</rom>
+			<rom type="adpcm" offset="0x00000da0">VOICE.3</rom>
+			<rom type="adpcm" offset="0x00000000">VOICE.1</rom>
+			<rom type="adpcm" offset="0x000003b8">VOICE.2</rom>
+			<rom type="adpcm" offset="0x00000d00">VOICE.3</rom>
+			<rom type="adpcm" offset="0x00001570">VOICE.4</rom>
+			<rom type="adpcm" offset="0x00004e80">VOICE.5</rom>
+			<rom type="adpcm" offset="0x00008878">VOICE.6</rom>
+			<rom type="adpcm" offset="0x00008b60">VOICE.7</rom>
+			<rom type="adpcm" offset="0x0000a7d0">VOICE.8</rom>
+			<rom type="adpcm" offset="0x0000b208">VOICE.9</rom>
+			<rom type="adpcm" offset="0x0000c0c8">VOICE.10</rom>
+			<rom type="adpcm" offset="0x0000ce48">VOICE.11</rom>
+			<rom type="adpcm" offset="0x0000d7f8">VOICE.12</rom>
+			<rom type="adpcm" offset="0x0000d920">VOICE.13</rom>
+			<rom type="adpcm" offset="0x0000de88">VOICE.14</rom>
+			<rom type="adpcm" offset="0x0000f8b0">VOICE.15</rom>
+			<rom type="adpcm" offset="0x00010010">VOICE.16</rom>
+			<rom type="adpcm" offset="0x00011528">VOICE.17</rom>
+			<rom type="adpcm" offset="0x00011720">VOICE.18</rom>
+			<rom type="adpcm" offset="0x00013268">VOICE.19</rom>
+			<rom type="adpcm" offset="0x000133d8">VOICE.20</rom>
+			<rom type="adpcm" offset="0x00013e38">VOICE.21</rom>
+			<rom type="adpcm" offset="0x000142a8">VOICE.22</rom>
+			<rom type="adpcm" offset="0x000145c0">VOICE.23</rom>
+			<rom type="adpcm" offset="0x00014cd0">VOICE.24</rom>
+			<rom type="adpcm" offset="0x00015318">VOICE.25</rom>
+			<rom type="bgm" offset="0x01">sq1_10.3</rom>
+			<rom type="bgm" offset="0x02">sq1_10.4</rom>
+			<rom type="bgm" offset="0x03">sq1_11.2</rom>
+			<rom type="bgm" offset="0x04">sq1_11.5</rom>
+			<rom type="bgm" offset="0x05">sq1_ou.t06</rom>
+		</romlist>
+		<titlelist>
+			<title code="0x01">迷宮Ⅰ 翠緑ノ樹海</title>
+			<title code="0x02">鉄華 初太刀</title>
+			<title code="0x03">戦場 朱にそまる</title>
+			<title code="0x04">鉄華 討ち果て朽ち果て</title>
+			<title code="0x05">眠らずの戦場</title>
+		</titlelist>
+	</game>
+	<game>
+		<name>[PC-8801] MISTY BLUE (MUCOM88)</name>
+		<driver type="opna">pc88</driver>
+		<driveralias type="NEC PC-8801">MUCOM88</driveralias>
+		<options>
+			<option name="mdata_addr" value="0x0001"/>
+			<option name="init_pc" value="0x8000"/>
+			<option name="use_gvram" value="1"/>
+			<option name="use_n88rom" value="1"/>
+			<option name="debug_mem" value="0xf300"/>
+		</options>
+		<romlist archive="MUCOM88_V1.5_MISTY_BLUE">
+			<rom type="code" offset="0x8000">patch</rom>
+			<!-- <rom type="code" offset="0x9000">pcmldr</rom> -->
+			<rom type="code" offset="0x8800">errmsg</rom>
+			<rom type="code" offset="0xb000">music</rom>
+			<rom type="code" offset="0x9600">muc88</rom>
+			<rom type="code" offset="0x9000">msub</rom>
+			<rom type="code" offset="0xab00">expand</rom>
+			<rom type="code" offset="0x6000">voice.dat</rom>
+			<!-- <rom type="code" offset="0x4800">kbd</rom> -->
+			<rom type="code" offset="0xde00">smon</rom>
+			<rom type="code" offset="0x5e00">ssgdat</rom>
+			<!-- <rom type="code" offset="0xc200">swfile</rom> -->
+			<!-- <rom type="code" offset="0xe400">time</rom> -->
+			<rom type="code" offset="0xe300">PCM_MISTY_BLUE.adr</rom>
+			<rom type="adpcm" offset="0x00000000">VOICE.1</rom>
+			<rom type="adpcm" offset="0x000007b0">VOICE.2</rom>
+			<rom type="adpcm" offset="0x00001440">VOICE.3</rom>
+			<rom type="adpcm" offset="0x00001e90">VOICE.4</rom>
+			<rom type="adpcm" offset="0x000026c0">VOICE.5</rom>
+			<rom type="adpcm" offset="0x000030e0">VOICE.6</rom>
+			<rom type="adpcm" offset="0x000039c0">VOICE.7</rom>
+			<rom type="adpcm" offset="0x00005958">VOICE.8</rom>
+			<rom type="adpcm" offset="0x00007f30">VOICE.9</rom>
+			<rom type="adpcm" offset="0x00009a98">VOICE.10</rom>
+			<rom type="adpcm" offset="0x0000a6f8">VOICE.11</rom>
+			<rom type="adpcm" offset="0x0000b380">VOICE.12</rom>
+			<rom type="adpcm" offset="0x0000bd30">VOICE.13</rom>
+			<rom type="adpcm" offset="0x0000c1b0">VOICE.14</rom>
+			<rom type="adpcm" offset="0x0000dc00">VOICE.15</rom>
+			<rom type="adpcm" offset="0x0000e090">VOICE.16</rom>
+			<rom type="adpcm" offset="0x0000f350">VOICE.17</rom>
+			<rom type="adpcm" offset="0x0000f880">VOICE.18</rom>
+			<rom type="adpcm" offset="0x00010160">VOICE.19</rom>
+			<rom type="adpcm" offset="0x00011e48">VOICE.20</rom>
+			<rom type="adpcm" offset="0x00012b70">VOICE.21</rom>
+			<rom type="bgm" offset="0x01">disco1</rom>
+			<rom type="bgm" offset="0x02">disco3</rom>
+			<rom type="bgm" offset="0x03">disco4</rom>
+			<rom type="bgm" offset="0x04">hrock1</rom>
+		</romlist>
+		<titlelist>
+			<title code="0x01">Misty Blue</title>
+			<title code="0x02">Catch the step</title>
+			<title code="0x03">Hold me tonight</title>
+			<title code="0x04">Opening</title>
+		</titlelist>
+	</game>
+	<game>
+		<name>[PC-8801] SLAP FIGHT MD (MUCOM88)</name>
+		<driver type="opna">pc88</driver>
+		<driveralias type="NEC PC-8801">MUCOM88</driveralias>
+		<options>
+			<option name="mdata_addr" value="0x0001"/>
+			<option name="init_pc" value="0x8000"/>
+			<option name="use_gvram" value="1"/>
+			<option name="use_n88rom" value="1"/>
+			<option name="debug_mem" value="0xf300"/>
+		</options>
+		<romlist archive="MUCOM88_V1.7_SLAP_FIGHT_MD">
+			<rom type="code" offset="0x8000">patch</rom>
+			<!-- <rom type="code" offset="0x9000">pcmldr</rom> -->
+			<rom type="code" offset="0x8800">errmsg</rom>
+			<rom type="code" offset="0xb000">music</rom>
+			<rom type="code" offset="0x9600">muc88</rom>
+			<rom type="code" offset="0x9000">msub</rom>
+			<rom type="code" offset="0xab00">expand</rom>
+			<rom type="code" offset="0x6000">voice.dat</rom>
+			<!-- <rom type="code" offset="0x4800">kbd</rom> -->
+			<rom type="code" offset="0xde00">smon</rom>
+			<rom type="code" offset="0x5e00">ssgdat</rom>
+			<!-- <rom type="code" offset="0xc200">swfile</rom> -->
+			<!-- <rom type="code" offset="0xe400">time</rom> -->
+			<rom type="code" offset="0xe300">PCM.adr</rom>
+			<rom type="adpcm" offset="0x00000000">VOICE.1</rom>
+			<rom type="adpcm" offset="0x000003f8">VOICE.2</rom>
+			<rom type="adpcm" offset="0x00001088">VOICE.3</rom>
+			<rom type="adpcm" offset="0x00001ad8">VOICE.4</rom>
+			<rom type="adpcm" offset="0x00003a70">VOICE.5</rom>
+			<rom type="adpcm" offset="0x00006048">VOICE.6</rom>
+			<rom type="adpcm" offset="0x000067f0">VOICE.7</rom>
+			<rom type="adpcm" offset="0x00007450">VOICE.8</rom>
+			<rom type="adpcm" offset="0x000080d8">VOICE.9</rom>
+			<rom type="adpcm" offset="0x00009798">VOICE.10</rom>
+			<rom type="adpcm" offset="0x00009d68">VOICE.11</rom>
+			<rom type="adpcm" offset="0x0000a328">VOICE.12</rom>
+			<rom type="adpcm" offset="0x0000b7e0">VOICE.13</rom>
+			<rom type="adpcm" offset="0x0000bcf0">VOICE.14</rom>
+			<rom type="adpcm" offset="0x0000c070">VOICE.15</rom>
+			<rom type="adpcm" offset="0x0000d4a0">VOICE.16</rom>
+			<rom type="bgm" offset="0x01">slp005.b</rom>
+			<rom type="bgm" offset="0x02">slp010</rom>
+			<rom type="bgm" offset="0x03">slp020</rom>
+		</romlist>
+		<titlelist>
+			<title code="0x01">飛翔</title>
+			<title code="0x02">作戦</title>
+			<title code="0x03">希望</title>
+		</titlelist>
+	</game>
+	<game>
+		<name>[PC-8801] THE SCHEME (MUCOM88)</name>
+		<driver type="opna">pc88</driver>
+		<driveralias type="NEC PC-8801">MUCOM88</driveralias>
+		<options>
+			<option name="mdata_addr" value="0x0001"/>
+			<option name="init_pc" value="0x8000"/>
+			<option name="use_gvram" value="1"/>
+			<option name="use_n88rom" value="1"/>
+			<option name="debug_mem" value="0xf300"/>
+		</options>
+		<romlist archive="MUCOM88_V1.5_THE_SCHEME">
+			<rom type="code" offset="0x8000">patch</rom>
+			<!-- <rom type="code" offset="0x9000">pcmldr</rom> -->
+			<rom type="code" offset="0x8800">errmsg</rom>
+			<rom type="code" offset="0xb000">music</rom>
+			<rom type="code" offset="0x9600">muc88</rom>
+			<rom type="code" offset="0x9000">msub</rom>
+			<rom type="code" offset="0xab00">expand</rom>
+			<rom type="code" offset="0x6000">voice.dat</rom>
+			<!-- <rom type="code" offset="0x4800">kbd</rom> -->
+			<rom type="code" offset="0xde00">smon</rom>
+			<rom type="code" offset="0x5e00">ssgdat</rom>
+			<!-- <rom type="code" offset="0xc200">swfile</rom> -->
+			<!-- <rom type="code" offset="0xe400">time</rom> -->
+			<rom type="code" offset="0xe300">PCM_THE_SCHEME.adr</rom>
+			<rom type="adpcm" offset="0x00000000">VOICE.1</rom>
+			<rom type="adpcm" offset="0x00000c88">VOICE.2</rom>
+			<rom type="adpcm" offset="0x00001968">VOICE.3</rom>
+			<rom type="adpcm" offset="0x000024f8">VOICE.4</rom>
+			<rom type="adpcm" offset="0x00002800">VOICE.5</rom>
+			<rom type="adpcm" offset="0x00002c08">VOICE.6</rom>
+			<rom type="adpcm" offset="0x00002e68">VOICE.7</rom>
+			<rom type="adpcm" offset="0x00003fb8">VOICE.8</rom>
+			<rom type="adpcm" offset="0x000048a8">VOICE.9</rom>
+			<rom type="adpcm" offset="0x00005400">VOICE.10</rom>
+			<rom type="adpcm" offset="0x00005ac8">VOICE.11</rom>
+			<rom type="adpcm" offset="0x000065d0">VOICE.12</rom>
+			<rom type="adpcm" offset="0x00007140">VOICE.13</rom>
+			<rom type="adpcm" offset="0x0000b140">VOICE.14</rom>
+			<rom type="adpcm" offset="0x0000cb90">VOICE.15</rom>
+			<rom type="adpcm" offset="0x0000d468">VOICE.16</rom>
+			<rom type="adpcm" offset="0x0000e100">VOICE.17</rom>
+			<rom type="adpcm" offset="0x0000e738">VOICE.18</rom>
+			<rom type="adpcm" offset="0x0000efa0">VOICE.19</rom>
+			<rom type="adpcm" offset="0x0000fc20">VOICE.20</rom>
+			<rom type="adpcm" offset="0x00012b70">VOICE.21</rom>
+			<rom type="adpcm" offset="0x000134e8">VOICE.22</rom>
+			<rom type="adpcm" offset="0x00017258">VOICE.23</rom>
+			<rom type="adpcm" offset="0x000179b8">VOICE.24</rom>
+			<rom type="adpcm" offset="0x0001b298">VOICE.25</rom>
+			<rom type="adpcm" offset="0x0001b7e8">VOICE.26</rom>
+			<rom type="adpcm" offset="0x0001bcf8">VOICE.27</rom>
+			<rom type="adpcm" offset="0x0001c0b0">VOICE.28</rom>
+			<rom type="adpcm" offset="0x0001c798">VOICE.29</rom>
+			<rom type="bgm" offset="0x01">pcmt12</rom>
+			<rom type="bgm" offset="0x02">pcmt13</rom>
+			<rom type="bgm" offset="0x03">pcmt16</rom>
+			<rom type="bgm" offset="0x04">pcmt17</rom>
+			<rom type="bgm" offset="0x05">pcmt18</rom>
+			<rom type="bgm" offset="0x06">pcmt20</rom>
+			<rom type="bgm" offset="0x07">pcmt31</rom>
+		</romlist>
+		<titlelist>
+			<title code="0x01">I'LL SAVE YOU ALL MY JUSTICE</title>
+			<title code="0x02">PERPETUAL DARK!</title>
+			<title code="0x03">SHOUT DOWN</title>
+			<title code="0x04">THOUSAND EYES</title>
+			<title code="0x05">DEATH WORLD</title>
+			<title code="0x06">THE FORCE ROTTED AWAY</title>
+			<title code="0x07">CHALLENGING TOMORROW</title>
+		</titlelist>
+	</game>
+	<game>
+		<name>[PC-8801] THE SUPER SHINOBI (MUCOM88)</name>
+		<driver type="opna">pc88</driver>
+		<driveralias type="NEC PC-8801">MUCOM88</driveralias>
+		<options>
+			<option name="mdata_addr" value="0x0001"/>
+			<option name="init_pc" value="0x8000"/>
+			<option name="use_gvram" value="1"/>
+			<option name="use_n88rom" value="1"/>
+			<option name="debug_mem" value="0xf300"/>
+		</options>
+		<romlist archive="MUCOM88_V1.5_THE_SUPER_SHINOBI">
+			<rom type="code" offset="0x8000">patch</rom>
+			<!-- <rom type="code" offset="0x9000">pcmldr</rom> -->
+			<rom type="code" offset="0x8800">errmsg</rom>
+			<rom type="code" offset="0xb000">music</rom>
+			<rom type="code" offset="0x9600">muc88</rom>
+			<rom type="code" offset="0x9000">msub</rom>
+			<rom type="code" offset="0xab00">expand</rom>
+			<rom type="code" offset="0x6000">voice.dat</rom>
+			<!-- <rom type="code" offset="0x4800">kbd</rom> -->
+			<rom type="code" offset="0xde00">smon</rom>
+			<rom type="code" offset="0x5e00">ssgdat</rom>
+			<!-- <rom type="code" offset="0xc200">swfile</rom> -->
+			<!-- <rom type="code" offset="0xe400">time</rom> -->
+			<rom type="code" offset="0xe300">PCM_THE_SUPER_SHINOBI.adr</rom>
+			<rom type="adpcm" offset="0x00000000">VOICE.1</rom>
+			<rom type="adpcm" offset="0x000007b0">VOICE.2</rom>
+			<rom type="adpcm" offset="0x00001440">VOICE.3</rom>
+			<rom type="adpcm" offset="0x00001e90">VOICE.4</rom>
+			<rom type="adpcm" offset="0x00002088">VOICE.5</rom>
+			<rom type="adpcm" offset="0x000025b8">VOICE.6</rom>
+			<rom type="bgm" offset="0x01">sin002</rom>
+			<rom type="bgm" offset="0x02">sin008</rom>
+			<rom type="bgm" offset="0x03">sin013</rom>
+			<rom type="bgm" offset="0x04">sin014</rom>
+		</romlist>
+		<titlelist>
+			<title code="0x01">THE SHINOBI</title>
+			<title code="0x02">CHINA TOWN</title>
+			<title code="0x03">LIKE A WIND</title>
+			<title code="0x04">SUNRISE BLVD.</title>
+		</titlelist>
+	</game>
+</gamelist>

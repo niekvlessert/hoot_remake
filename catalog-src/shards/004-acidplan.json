@@ -1,0 +1,983 @@
+{
+  "format": "hoot-catalog-shard",
+  "version": 1,
+  "source_file": "xml/acidplan.xml",
+  "date": "2005/09/25",
+  "comments": [
+    " //ACID PLAN "
+  ],
+  "games": [
+    {
+      "title": "[PC-9801] Charm",
+      "driver": {
+        "name": "pc98dos",
+        "type": "opn",
+        "alias": "ACID PLAN",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "clockmul",
+          "value": "8"
+        },
+        {
+          "name": "ssg_mix",
+          "value": "-18"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "MDRV.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MDRV_98.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "GUN_KUAN.TDT",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MS01.KMD",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MS02.KMD",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MS03.KMD",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MS04.KMD",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MS05.KMD",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MS06.KMD",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MS07.KMD",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MS08.KMD",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MS09.KMD",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MS10.KMD",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MS11.KMD",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MS12.KMD",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MS13.KMD",
+          "offset": "-1"
+        },
+        {
+          "type": "conin",
+          "path": "MS01.KMD",
+          "offset": "0x10"
+        },
+        {
+          "type": "conin",
+          "path": "MS02.KMD",
+          "offset": "0x11"
+        },
+        {
+          "type": "conin",
+          "path": "MS03.KMD",
+          "offset": "0x12"
+        },
+        {
+          "type": "conin",
+          "path": "MS04.KMD",
+          "offset": "0x13"
+        },
+        {
+          "type": "conin",
+          "path": "MS05.KMD",
+          "offset": "0x14"
+        },
+        {
+          "type": "conin",
+          "path": "MS06.KMD",
+          "offset": "0x15"
+        },
+        {
+          "type": "conin",
+          "path": "MS07.KMD",
+          "offset": "0x16"
+        },
+        {
+          "type": "conin",
+          "path": "MS08.KMD",
+          "offset": "0x17"
+        },
+        {
+          "type": "conin",
+          "path": "MS09.KMD",
+          "offset": "0x18"
+        },
+        {
+          "type": "conin",
+          "path": "MS10.KMD",
+          "offset": "0x19"
+        },
+        {
+          "type": "conin",
+          "path": "MS11.KMD",
+          "offset": "0x1a"
+        },
+        {
+          "type": "conin",
+          "path": "MS12.KMD",
+          "offset": "0x1b"
+        },
+        {
+          "type": "conin",
+          "path": "MS13.KMD",
+          "offset": "0x1c"
+        },
+        {
+          "type": "shell",
+          "path": "MDRV",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "MDRV -tGUN_KUAN.TDT",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "MDRV_98",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "MS01.KMD"
+        },
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "MS02.KMD"
+        },
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "MS03.KMD"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "MS04.KMD"
+        },
+        {
+          "kind": "title",
+          "code": "0x14",
+          "title": "MS05.KMD"
+        },
+        {
+          "kind": "title",
+          "code": "0x15",
+          "title": "MS06.KMD"
+        },
+        {
+          "kind": "title",
+          "code": "0x16",
+          "title": "MS07.KMD"
+        },
+        {
+          "kind": "title",
+          "code": "0x17",
+          "title": "MS08.KMD"
+        },
+        {
+          "kind": "title",
+          "code": "0x18",
+          "title": "MS09.KMD"
+        },
+        {
+          "kind": "title",
+          "code": "0x19",
+          "title": "MS10.KMD"
+        },
+        {
+          "kind": "title",
+          "code": "0x1a",
+          "title": "MS11.KMD"
+        },
+        {
+          "kind": "title",
+          "code": "0x1b",
+          "title": "MS12.KMD"
+        },
+        {
+          "kind": "title",
+          "code": "0x1c",
+          "title": "MS13.KMD"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/acidplan.xml",
+      "source_order": 13,
+      "archive": "charm_98",
+      "id": "charm-98-opn"
+    },
+    {
+      "title": "[PC-9801] Charm2 -虹色の風-(OPN)",
+      "driver": {
+        "name": "pc98dos",
+        "type": "opn",
+        "alias": "ACID PLAN",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "clockmul",
+          "value": "8"
+        },
+        {
+          "name": "ssg_mix",
+          "value": "-18"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "MDRV.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MDRV_98.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "GUN_KUAN.TDT",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "DRUMS.DRM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "C001.KMD",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "C002.KMD",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "C003.KMD",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "C004.KMD",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "C005.KMD",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "C006.KMD",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "C007.KMD",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "C008.KMD",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "C009.KMD",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "C010.KMD",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "C011.KMD",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "C012.KMD",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "C013.KMD",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "C014.KMD",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "OPENING.KMD",
+          "offset": "-1"
+        },
+        {
+          "type": "conin",
+          "path": "C001.KMD",
+          "offset": "0x10"
+        },
+        {
+          "type": "conin",
+          "path": "C002.KMD",
+          "offset": "0x11"
+        },
+        {
+          "type": "conin",
+          "path": "C003.KMD",
+          "offset": "0x12"
+        },
+        {
+          "type": "conin",
+          "path": "C004.KMD",
+          "offset": "0x13"
+        },
+        {
+          "type": "conin",
+          "path": "C005.KMD",
+          "offset": "0x14"
+        },
+        {
+          "type": "conin",
+          "path": "C006.KMD",
+          "offset": "0x15"
+        },
+        {
+          "type": "conin",
+          "path": "C007.KMD",
+          "offset": "0x16"
+        },
+        {
+          "type": "conin",
+          "path": "C008.KMD",
+          "offset": "0x17"
+        },
+        {
+          "type": "conin",
+          "path": "C009.KMD",
+          "offset": "0x18"
+        },
+        {
+          "type": "conin",
+          "path": "C010.KMD",
+          "offset": "0x19"
+        },
+        {
+          "type": "conin",
+          "path": "C011.KMD",
+          "offset": "0x1a"
+        },
+        {
+          "type": "conin",
+          "path": "C012.KMD",
+          "offset": "0x1b"
+        },
+        {
+          "type": "conin",
+          "path": "C013.KMD",
+          "offset": "0x1c"
+        },
+        {
+          "type": "conin",
+          "path": "C014.KMD",
+          "offset": "0x1d"
+        },
+        {
+          "type": "conin",
+          "path": "OPENING.KMD",
+          "offset": "0x1e"
+        },
+        {
+          "type": "shell",
+          "path": "MDRV",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "MDRV -tGUN_KUAN.TDT",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "MDRV -dDRUMS.DRM",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "MDRV_98",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x1e",
+          "title": "OPENING.KMD : 虹色の風"
+        },
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "C001.KMD    : 英里子"
+        },
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "C002.KMD    : 想い"
+        },
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "C003.KMD    : ともしび"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "C004.KMD    : そよやぜ"
+        },
+        {
+          "kind": "title",
+          "code": "0x14",
+          "title": "C005.KMD    : 紅鶯翼"
+        },
+        {
+          "kind": "title",
+          "code": "0x15",
+          "title": "C006.KMD    : 鏡映し"
+        },
+        {
+          "kind": "title",
+          "code": "0x16",
+          "title": "C007.KMD    : 心の陰り"
+        },
+        {
+          "kind": "title",
+          "code": "0x17",
+          "title": "C008.KMD    : WALK"
+        },
+        {
+          "kind": "title",
+          "code": "0x18",
+          "title": "C009.KMD    : V.S."
+        },
+        {
+          "kind": "title",
+          "code": "0x19",
+          "title": "C010.KMD    : Skip"
+        },
+        {
+          "kind": "title",
+          "code": "0x1a",
+          "title": "C011.KMD    : フレンド"
+        },
+        {
+          "kind": "title",
+          "code": "0x1b",
+          "title": "C012.KMD    : Pikky"
+        },
+        {
+          "kind": "title",
+          "code": "0x1c",
+          "title": "C013.KMD    : 雀の歌"
+        },
+        {
+          "kind": "title",
+          "code": "0x1d",
+          "title": "C014.KMD    : 西風の中で"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/acidplan.xml",
+      "source_order": 14,
+      "archive": "charm2_98",
+      "id": "charm2-98-opn"
+    },
+    {
+      "title": "[PC-9801] Charm2 -虹色の風-(GS)",
+      "driver": {
+        "name": "pc98dos",
+        "type": "beep",
+        "alias": "ACID PLAN",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "clockmul",
+          "value": "8"
+        },
+        {
+          "name": "midiout",
+          "value": "1"
+        },
+        {
+          "name": "midiout_type",
+          "value": "4"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "MDDRV.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MDDRV_98.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "C001.KMM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "C002.KMM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "C003.KMM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "C004.KMM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "C005.KMM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "C006.KMM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "C007.KMM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "C008.KMM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "C009.KMM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "C010.KMM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "C011.KMM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "C012.KMM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "C013.KMM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "C014.KMM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "OPENING.KMM",
+          "offset": "-1"
+        },
+        {
+          "type": "conin",
+          "path": "C001.KMM",
+          "offset": "0x10"
+        },
+        {
+          "type": "conin",
+          "path": "C002.KMM",
+          "offset": "0x11"
+        },
+        {
+          "type": "conin",
+          "path": "C003.KMM",
+          "offset": "0x12"
+        },
+        {
+          "type": "conin",
+          "path": "C004.KMM",
+          "offset": "0x13"
+        },
+        {
+          "type": "conin",
+          "path": "C005.KMM",
+          "offset": "0x14"
+        },
+        {
+          "type": "conin",
+          "path": "C006.KMM",
+          "offset": "0x15"
+        },
+        {
+          "type": "conin",
+          "path": "C007.KMM",
+          "offset": "0x16"
+        },
+        {
+          "type": "conin",
+          "path": "C008.KMM",
+          "offset": "0x17"
+        },
+        {
+          "type": "conin",
+          "path": "C009.KMM",
+          "offset": "0x18"
+        },
+        {
+          "type": "conin",
+          "path": "C010.KMM",
+          "offset": "0x19"
+        },
+        {
+          "type": "conin",
+          "path": "C011.KMM",
+          "offset": "0x1a"
+        },
+        {
+          "type": "conin",
+          "path": "C012.KMM",
+          "offset": "0x1b"
+        },
+        {
+          "type": "conin",
+          "path": "C013.KMM",
+          "offset": "0x1c"
+        },
+        {
+          "type": "conin",
+          "path": "C014.KMM",
+          "offset": "0x1d"
+        },
+        {
+          "type": "conin",
+          "path": "OPENING.KMM",
+          "offset": "0x1e"
+        },
+        {
+          "type": "shell",
+          "path": "MDDRV",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "MDDRV_98",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x1e",
+          "title": "OPENING.KMM : 虹色の風"
+        },
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "C001.KMM    : 英里子"
+        },
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "C002.KMM    : 想い"
+        },
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "C003.KMM    : ともしび"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "C004.KMM    : そよやぜ"
+        },
+        {
+          "kind": "title",
+          "code": "0x14",
+          "title": "C005.KMM    : 紅鶯翼"
+        },
+        {
+          "kind": "title",
+          "code": "0x15",
+          "title": "C006.KMM    : 鏡映し"
+        },
+        {
+          "kind": "title",
+          "code": "0x16",
+          "title": "C007.KMM    : 心の陰り"
+        },
+        {
+          "kind": "title",
+          "code": "0x17",
+          "title": "C008.KMM    : WALK"
+        },
+        {
+          "kind": "title",
+          "code": "0x18",
+          "title": "C009.KMM    : V.S."
+        },
+        {
+          "kind": "title",
+          "code": "0x19",
+          "title": "C010.KMM    : Skip"
+        },
+        {
+          "kind": "title",
+          "code": "0x1a",
+          "title": "C011.KMM    : フレンド"
+        },
+        {
+          "kind": "title",
+          "code": "0x1b",
+          "title": "C012.KMM    : Pikky"
+        },
+        {
+          "kind": "title",
+          "code": "0x1c",
+          "title": "C013.KMM    : 雀の歌"
+        },
+        {
+          "kind": "title",
+          "code": "0x1d",
+          "title": "C014.KMM    : 西風の中で"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/acidplan.xml",
+      "source_order": 15,
+      "archive": "charm2_98",
+      "id": "charm2-98-beep"
+    },
+    {
+      "title": "[PC-9801] 銀白色の楽園 -クロムパラダイス-",
+      "driver": {
+        "name": "pc98dos",
+        "type": "opn",
+        "alias": "ACID PLAN",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "clockmul",
+          "value": "8"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "NAX.com",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "NLP_HOOT.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "TONES.DTA",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "M_1.O",
+          "offset": "0x10"
+        },
+        {
+          "type": "file",
+          "path": "M_2.O",
+          "offset": "0x11"
+        },
+        {
+          "type": "file",
+          "path": "M_3.O",
+          "offset": "0x12"
+        },
+        {
+          "type": "file",
+          "path": "M_4.O",
+          "offset": "0x13"
+        },
+        {
+          "type": "file",
+          "path": "M_5.O",
+          "offset": "0x14"
+        },
+        {
+          "type": "file",
+          "path": "M_6.O",
+          "offset": "0x15"
+        },
+        {
+          "type": "file",
+          "path": "M_7.O",
+          "offset": "0x16"
+        },
+        {
+          "type": "file",
+          "path": "M_8.O",
+          "offset": "0x17"
+        },
+        {
+          "type": "file",
+          "path": "M_9.O",
+          "offset": "0x18"
+        },
+        {
+          "type": "file",
+          "path": "M_10.O",
+          "offset": "0x19"
+        },
+        {
+          "type": "shell",
+          "path": "NAX",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "NLP_HOOT",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "M_1.O"
+        },
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "M_2.O"
+        },
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "M_3.O"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "M_4.O"
+        },
+        {
+          "kind": "title",
+          "code": "0x14",
+          "title": "M_5.O"
+        },
+        {
+          "kind": "title",
+          "code": "0x15",
+          "title": "M_6.O"
+        },
+        {
+          "kind": "title",
+          "code": "0x16",
+          "title": "M_7.O"
+        },
+        {
+          "kind": "title",
+          "code": "0x17",
+          "title": "M_8.O"
+        },
+        {
+          "kind": "title",
+          "code": "0x18",
+          "title": "M_9.O"
+        },
+        {
+          "kind": "title",
+          "code": "0x19",
+          "title": "M_10.O"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/acidplan.xml",
+      "source_order": 16,
+      "archive": "cp_98",
+      "id": "cp-98-opn"
+    }
+  ]
+}

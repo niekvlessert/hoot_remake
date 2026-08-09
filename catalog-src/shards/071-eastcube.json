@@ -1,0 +1,396 @@
+{
+  "format": "hoot-catalog-shard",
+  "version": 1,
+  "source_file": "xml/eastcube.xml",
+  "date": "2005/09/25",
+  "comments": [
+    " //EAST CUBE "
+  ],
+  "games": [
+    {
+      "title": "[MSX] 白夜物語 -ウインチェスター家の末裔-(OPLL)",
+      "driver": {
+        "name": "msx",
+        "type": "generic",
+        "alias": "EAST CUBE",
+        "platform": "MSX"
+      },
+      "options": [
+        {
+          "name": "init_pc",
+          "value": "0x0400"
+        },
+        {
+          "name": "use_opll",
+          "value": "0x01"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "patch",
+          "offset": "0x0400"
+        },
+        {
+          "type": "code",
+          "path": "MUSIC",
+          "offset": "0x3000"
+        },
+        {
+          "type": "code",
+          "path": "MAIN",
+          "offset": "0x8000"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x100",
+          "title": "00 : タイトル"
+        },
+        {
+          "kind": "title",
+          "code": "0x103",
+          "title": "03 : ホテル"
+        },
+        {
+          "kind": "title",
+          "code": "0x102",
+          "title": "02 : 風呂"
+        },
+        {
+          "kind": "title",
+          "code": "0x108",
+          "title": "08 : 危機/戦闘"
+        },
+        {
+          "kind": "title",
+          "code": "0x109",
+          "title": "09 : 学校"
+        },
+        {
+          "kind": "title",
+          "code": "0x10a",
+          "title": "0A : ディスコ"
+        },
+        {
+          "kind": "title",
+          "code": "0x10c",
+          "title": "0C : ディスコ2"
+        },
+        {
+          "kind": "title",
+          "code": "0x107",
+          "title": "07 : 書斎"
+        },
+        {
+          "kind": "title",
+          "code": "0x10b",
+          "title": "0B : エンディング"
+        },
+        {
+          "kind": "title",
+          "code": "0x005",
+          "title": "05 : 戦闘敗北"
+        },
+        {
+          "kind": "title",
+          "code": "0x106",
+          "title": "06 : ゲームオーバー"
+        },
+        {
+          "kind": "title",
+          "code": "0x001",
+          "title": "01 : アイテム入手"
+        },
+        {
+          "kind": "title",
+          "code": "0x004",
+          "title": "04"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/eastcube.xml",
+      "source_order": 1546,
+      "archive": "byakuya_msx",
+      "id": "byakuya-msx-generic"
+    },
+    {
+      "title": "[MSX] 白夜物語 -ウインチェスター家の末裔-(PSG)",
+      "driver": {
+        "name": "msx",
+        "type": "generic",
+        "alias": "EAST CUBE",
+        "platform": "MSX"
+      },
+      "options": [
+        {
+          "name": "init_pc",
+          "value": "0x0400"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "patch",
+          "offset": "0x0400"
+        },
+        {
+          "type": "code",
+          "path": "MUSIC",
+          "offset": "0x3000"
+        },
+        {
+          "type": "code",
+          "path": "MAIN",
+          "offset": "0x8000"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x100",
+          "title": "00 : タイトル"
+        },
+        {
+          "kind": "title",
+          "code": "0x103",
+          "title": "03 : ホテル"
+        },
+        {
+          "kind": "title",
+          "code": "0x102",
+          "title": "02 : 風呂"
+        },
+        {
+          "kind": "title",
+          "code": "0x108",
+          "title": "08 : 危機/戦闘"
+        },
+        {
+          "kind": "title",
+          "code": "0x109",
+          "title": "09 : 学校"
+        },
+        {
+          "kind": "title",
+          "code": "0x10a",
+          "title": "0A : ディスコ"
+        },
+        {
+          "kind": "title",
+          "code": "0x10c",
+          "title": "0C : ディスコ2"
+        },
+        {
+          "kind": "title",
+          "code": "0x107",
+          "title": "07 : 書斎"
+        },
+        {
+          "kind": "title",
+          "code": "0x10b",
+          "title": "0B : エンディング"
+        },
+        {
+          "kind": "title",
+          "code": "0x005",
+          "title": "05 : 戦闘敗北"
+        },
+        {
+          "kind": "title",
+          "code": "0x106",
+          "title": "06 : ゲームオーバー"
+        },
+        {
+          "kind": "title",
+          "code": "0x001",
+          "title": "01 : アイテム入手"
+        },
+        {
+          "kind": "title",
+          "code": "0x004",
+          "title": "04"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/eastcube.xml",
+      "source_order": 1547,
+      "archive": "byakuya_msx",
+      "id": "byakuya-msx-generic-2"
+    },
+    {
+      "title": "[X68000] 白夜物語 -ウインチェスター家の末裔-",
+      "driver": {
+        "name": "x68k",
+        "type": "generic",
+        "alias": "EAST CUBE",
+        "platform": "SHARP X68000"
+      },
+      "options": [
+        {
+          "name": "mfp",
+          "value": "0x01"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "byaku68snd.bin"
+        },
+        {
+          "type": "x",
+          "path": "MAIN.X",
+          "offset": "0x010000"
+        },
+        {
+          "type": "code",
+          "path": "FM.DAT",
+          "offset": "0x076e18"
+        },
+        {
+          "type": "x",
+          "path": "FLOAT2.X",
+          "offset": "0x0a0000"
+        },
+        {
+          "type": "code",
+          "path": "KYOKU00.DAT",
+          "offset": "0x0b0000"
+        },
+        {
+          "type": "code",
+          "path": "KYOKU01.DAT",
+          "offset": "0x0b1000"
+        },
+        {
+          "type": "code",
+          "path": "KYOKU02.DAT",
+          "offset": "0x0b2000"
+        },
+        {
+          "type": "code",
+          "path": "KYOKU03.DAT",
+          "offset": "0x0b3000"
+        },
+        {
+          "type": "code",
+          "path": "KYOKU04.DAT",
+          "offset": "0x0b4000"
+        },
+        {
+          "type": "code",
+          "path": "KYOKU05.DAT",
+          "offset": "0x0b5000"
+        },
+        {
+          "type": "code",
+          "path": "KYOKU06.DAT",
+          "offset": "0x0b6000"
+        },
+        {
+          "type": "code",
+          "path": "KYOKU07.DAT",
+          "offset": "0x0b7000"
+        },
+        {
+          "type": "code",
+          "path": "KYOKU08.DAT",
+          "offset": "0x0b8000"
+        },
+        {
+          "type": "code",
+          "path": "KYOKU09.DAT",
+          "offset": "0x0b9000"
+        },
+        {
+          "type": "code",
+          "path": "KYOKU10.DAT",
+          "offset": "0x0ba000"
+        },
+        {
+          "type": "code",
+          "path": "KYOKU11.DAT",
+          "offset": "0x0bb000"
+        },
+        {
+          "type": "code",
+          "path": "KYOKU12.DAT",
+          "offset": "0x0bc000"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x301",
+          "title": "KYOKU00.DAT : タイトル"
+        },
+        {
+          "kind": "title",
+          "code": "0x304",
+          "title": "KYOKU03.DAT : ホテル"
+        },
+        {
+          "kind": "title",
+          "code": "0x303",
+          "title": "KYOKU02.DAT : 風呂"
+        },
+        {
+          "kind": "title",
+          "code": "0x309",
+          "title": "KYOKU08.DAT : 危機/戦闘"
+        },
+        {
+          "kind": "title",
+          "code": "0x30a",
+          "title": "KYOKU09.DAT : 学校"
+        },
+        {
+          "kind": "title",
+          "code": "0x30b",
+          "title": "KYOKU10.DAT : ディスコ"
+        },
+        {
+          "kind": "title",
+          "code": "0x30d",
+          "title": "KYOKU12.DAT : ディスコ2"
+        },
+        {
+          "kind": "title",
+          "code": "0x308",
+          "title": "KYOKU07.DAT : 書斎"
+        },
+        {
+          "kind": "title",
+          "code": "0x30c",
+          "title": "KYOKU11.DAT : エンディング"
+        },
+        {
+          "kind": "title",
+          "code": "0x206",
+          "title": "KYOKU05.DAT : 戦闘敗北"
+        },
+        {
+          "kind": "title",
+          "code": "0x307",
+          "title": "KYOKU06.DAT : ゲームオーバー"
+        },
+        {
+          "kind": "title",
+          "code": "0x202",
+          "title": "KYOKU01.DAT : アイテム入手"
+        },
+        {
+          "kind": "title",
+          "code": "0x205",
+          "title": "KYOKU04.DAT"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/eastcube.xml",
+      "source_order": 1548,
+      "archive": "byakuya68snd",
+      "id": "byakuya68snd-generic"
+    }
+  ]
+}

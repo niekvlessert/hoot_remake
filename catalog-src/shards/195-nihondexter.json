@@ -1,0 +1,285 @@
+{
+  "format": "hoot-catalog-shard",
+  "version": 1,
+  "source_file": "xml/nihondexter.xml",
+  "date": "2005/09/25",
+  "comments": [
+    " //日本デクスタ "
+  ],
+  "games": [
+    {
+      "title": "[X68000] The LAS VEGAS",
+      "driver": {
+        "name": "x68k",
+        "type": "generic",
+        "alias": "日本デクスタ",
+        "platform": "SHARP X68000"
+      },
+      "options": [],
+      "assets": [
+        {
+          "type": "code",
+          "path": "opmdrv.bin"
+        },
+        {
+          "type": "x",
+          "path": "OPMDRV.SYS",
+          "offset": "0x08000"
+        },
+        {
+          "type": "code",
+          "path": "LASEND.OPM",
+          "offset": "0x24000"
+        },
+        {
+          "type": "code",
+          "path": "LASGOD.OPM",
+          "offset": "0x28000"
+        },
+        {
+          "type": "code",
+          "path": "LASINT1.OPM",
+          "offset": "0x2c000"
+        },
+        {
+          "type": "code",
+          "path": "LASINT2.OPM",
+          "offset": "0x30000"
+        },
+        {
+          "type": "code",
+          "path": "LASINT3.OPM",
+          "offset": "0x34000"
+        },
+        {
+          "type": "code",
+          "path": "LASLOSE.OPM",
+          "offset": "0x38000"
+        },
+        {
+          "type": "code",
+          "path": "LASOPEN.OPM",
+          "offset": "0x3c000"
+        },
+        {
+          "type": "code",
+          "path": "LASWIN.OPM",
+          "offset": "0x40000"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x08",
+          "title": "LASOPEN.OPM :"
+        },
+        {
+          "kind": "title",
+          "code": "0x04",
+          "title": "LASINT1.OPM :"
+        },
+        {
+          "kind": "title",
+          "code": "0x05",
+          "title": "LASINT2.OPM :"
+        },
+        {
+          "kind": "title",
+          "code": "0x06",
+          "title": "LASINT3.OPM :"
+        },
+        {
+          "kind": "title",
+          "code": "0x09",
+          "title": "LASWIN.OPM  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x07",
+          "title": "LASLOSE.OPM :"
+        },
+        {
+          "kind": "title",
+          "code": "0x03",
+          "title": "LASGOD.OPM  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x02",
+          "title": "LASEND.OPM  :"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/nihondexter.xml",
+      "source_order": 3489,
+      "archive": "lasvegas68snd",
+      "id": "lasvegas68snd-generic"
+    },
+    {
+      "title": "[MSX] 妖魔降臨",
+      "driver": {
+        "name": "msx",
+        "type": "generic",
+        "alias": "日本デクスタ",
+        "platform": "MSX"
+      },
+      "options": [
+        {
+          "name": "mdata_addr",
+          "value": "0x9000"
+        },
+        {
+          "name": "mdata_size",
+          "value": "0x1000"
+        },
+        {
+          "name": "mfile_size",
+          "value": "0x1000"
+        },
+        {
+          "name": "init_pc",
+          "value": "0x2000"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "M.COM",
+          "offset": "0x0100"
+        },
+        {
+          "type": "code",
+          "path": "patch",
+          "offset": "0x2000"
+        },
+        {
+          "type": "bgm",
+          "path": "BGM00.BIN",
+          "offset": "0x00"
+        },
+        {
+          "type": "bgm",
+          "path": "BGM01.BIN",
+          "offset": "0x01"
+        },
+        {
+          "type": "bgm",
+          "path": "BGM02.BIN",
+          "offset": "0x02"
+        },
+        {
+          "type": "bgm",
+          "path": "BGM03.BIN",
+          "offset": "0x03"
+        },
+        {
+          "type": "bgm",
+          "path": "BGM04.BIN",
+          "offset": "0x04"
+        },
+        {
+          "type": "bgm",
+          "path": "BGM05.BIN",
+          "offset": "0x05"
+        },
+        {
+          "type": "bgm",
+          "path": "BGM06.BIN",
+          "offset": "0x06"
+        },
+        {
+          "type": "bgm",
+          "path": "BGM07.BIN",
+          "offset": "0x07"
+        },
+        {
+          "type": "bgm",
+          "path": "BGM08.BIN",
+          "offset": "0x08"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x900000",
+          "title": "BGM00.BIN : タイトル"
+        },
+        {
+          "kind": "title",
+          "code": "0x900001",
+          "title": "BGM01.BIN : 壱之巻"
+        },
+        {
+          "kind": "title",
+          "code": "0x953201",
+          "title": "BGM01.BIN : 壱之巻 ボス"
+        },
+        {
+          "kind": "title",
+          "code": "0x900002",
+          "title": "BGM02.BIN : 弐之巻"
+        },
+        {
+          "kind": "title",
+          "code": "0x927102",
+          "title": "BGM02.BIN : 弐之巻 ボス"
+        },
+        {
+          "kind": "title",
+          "code": "0x900003",
+          "title": "BGM03.BIN : 参之巻"
+        },
+        {
+          "kind": "title",
+          "code": "0x942103",
+          "title": "BGM03.BIN : 参之巻 ボス"
+        },
+        {
+          "kind": "title",
+          "code": "0x900004",
+          "title": "BGM04.BIN : 四之巻"
+        },
+        {
+          "kind": "title",
+          "code": "0x923104",
+          "title": "BGM04.BIN : 四之巻 ボス"
+        },
+        {
+          "kind": "title",
+          "code": "0x900005",
+          "title": "BGM05.BIN : 五之巻"
+        },
+        {
+          "kind": "title",
+          "code": "0x909505",
+          "title": "BGM05.BIN : 五之巻 ボス"
+        },
+        {
+          "kind": "title",
+          "code": "0x900006",
+          "title": "BGM06.BIN : 六之巻"
+        },
+        {
+          "kind": "title",
+          "code": "0x900007",
+          "title": "BGM07.BIN : 七之巻"
+        },
+        {
+          "kind": "title",
+          "code": "0x900008",
+          "title": "BGM08.BIN : 八之巻"
+        },
+        {
+          "kind": "title",
+          "code": "0x94b500",
+          "title": "BGM00.BIN : エンデイング"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/nihondexter.xml",
+      "source_order": 3490,
+      "archive": "youmakrn_msx",
+      "id": "youmakrn-msx-generic"
+    }
+  ]
+}

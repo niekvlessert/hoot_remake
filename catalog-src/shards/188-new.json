@@ -1,0 +1,723 @@
+{
+  "format": "hoot-catalog-shard",
+  "version": 1,
+  "source_file": "xml/new.xml",
+  "date": "2010/11/03",
+  "comments": [
+    " //NEW "
+  ],
+  "games": [
+    {
+      "title": "[X68000] PRINCESS MAKER(OPM)",
+      "driver": {
+        "name": "x68k",
+        "type": "generic",
+        "alias": "NEW",
+        "platform": "SHARP X68000"
+      },
+      "options": [
+        {
+          "name": "mfp",
+          "value": "1"
+        },
+        {
+          "name": "pcm8",
+          "value": "1"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "pm68snd.bin",
+          "offset": "0x000000"
+        },
+        {
+          "type": "x",
+          "path": "ZMSC.X",
+          "offset": "0x010000"
+        },
+        {
+          "type": "code",
+          "path": "PM.ZPD",
+          "offset": "0x060000"
+        },
+        {
+          "type": "code",
+          "path": "SETUP.ZMD",
+          "offset": "0x080000"
+        },
+        {
+          "type": "code",
+          "path": "BGM1FM.ZMD",
+          "offset": "0x084000"
+        },
+        {
+          "type": "code",
+          "path": "BGM2FM.ZMD",
+          "offset": "0x088000"
+        },
+        {
+          "type": "code",
+          "path": "BGM3FM.ZMD",
+          "offset": "0x08c000"
+        },
+        {
+          "type": "code",
+          "path": "BGM4FM.ZMD",
+          "offset": "0x090000"
+        },
+        {
+          "type": "code",
+          "path": "BGM5FM.ZMD",
+          "offset": "0x094000"
+        },
+        {
+          "type": "code",
+          "path": "BGM6FM.ZMD",
+          "offset": "0x098000"
+        },
+        {
+          "type": "code",
+          "path": "BGM7FM.ZMD",
+          "offset": "0x09c000"
+        },
+        {
+          "type": "code",
+          "path": "BGM8FM.ZMD",
+          "offset": "0x0a0000"
+        },
+        {
+          "type": "code",
+          "path": "BGM9FM.ZMD",
+          "offset": "0x0a4000"
+        },
+        {
+          "type": "code",
+          "path": "BGM10FM.ZMD",
+          "offset": "0x0a8000"
+        },
+        {
+          "type": "code",
+          "path": "BGM11FM.ZMD",
+          "offset": "0x0ac000"
+        },
+        {
+          "type": "code",
+          "path": "BGM12FM.ZMD",
+          "offset": "0x0b0000"
+        },
+        {
+          "type": "code",
+          "path": "BGM13FM.ZMD",
+          "offset": "0x0b4000"
+        },
+        {
+          "type": "code",
+          "path": "BGM14FM.ZMD",
+          "offset": "0x0b8000"
+        },
+        {
+          "type": "code",
+          "path": "BGM15FM.ZMD",
+          "offset": "0x0bc000"
+        },
+        {
+          "type": "code",
+          "path": "BGM16FM.ZMD",
+          "offset": "0x0c0000"
+        },
+        {
+          "type": "code",
+          "path": "BGM17FM.ZMD",
+          "offset": "0x0c4000"
+        },
+        {
+          "type": "code",
+          "path": "BGM18FM.ZMD",
+          "offset": "0x0c8000"
+        },
+        {
+          "type": "code",
+          "path": "BGM19FM.ZMD",
+          "offset": "0x0cc000"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "BGM1FM.ZMD  : プロローグ"
+        },
+        {
+          "kind": "title",
+          "code": "0x02",
+          "title": "BGM2FM.ZMD  : メインテーマ"
+        },
+        {
+          "kind": "title",
+          "code": "0x03",
+          "title": "BGM3FM.ZMD  : 子育て"
+        },
+        {
+          "kind": "title",
+          "code": "0x04",
+          "title": "BGM4FM.ZMD  : 病気"
+        },
+        {
+          "kind": "title",
+          "code": "0x05",
+          "title": "BGM5FM.ZMD  : 非行化"
+        },
+        {
+          "kind": "title",
+          "code": "0x06",
+          "title": "BGM6FM.ZMD  : 教育"
+        },
+        {
+          "kind": "title",
+          "code": "0x07",
+          "title": "BGM7FM.ZMD  : 武者修行"
+        },
+        {
+          "kind": "title",
+          "code": "0x08",
+          "title": "BGM8FM.ZMD  : アルバイト"
+        },
+        {
+          "kind": "title",
+          "code": "0x09",
+          "title": "BGM9FM.ZMD  : お休み"
+        },
+        {
+          "kind": "title",
+          "code": "0x0a",
+          "title": "BGM10FM.ZMD : バカンス"
+        },
+        {
+          "kind": "title",
+          "code": "0x0b",
+          "title": "BGM11FM.ZMD : 収穫祭"
+        },
+        {
+          "kind": "title",
+          "code": "0x0c",
+          "title": "BGM12FM.ZMD : ミスコン"
+        },
+        {
+          "kind": "title",
+          "code": "0x0d",
+          "title": "BGM13FM.ZMD : 武闘会"
+        },
+        {
+          "kind": "title",
+          "code": "0x0e",
+          "title": "BGM14FM.ZMD : バトル"
+        },
+        {
+          "kind": "title",
+          "code": "0x0f",
+          "title": "BGM15FM.ZMD : お城"
+        },
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "BGM16FM.ZMD : 評判"
+        },
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "BGM17FM.ZMD : 親子の対話"
+        },
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "BGM18FM.ZMD : 買い物"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "BGM19FM.ZMD : エンディング"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/new.xml",
+      "source_order": 3442,
+      "archive": "pm68snd",
+      "id": "pm68snd-generic"
+    },
+    {
+      "title": "[X68000] PRINCESS MAKER(GM)",
+      "driver": {
+        "name": "x68k",
+        "type": "generic",
+        "alias": "NEW",
+        "platform": "SHARP X68000"
+      },
+      "options": [
+        {
+          "name": "mfp",
+          "value": "1"
+        },
+        {
+          "name": "midiout",
+          "value": "1"
+        },
+        {
+          "name": "midiout_type",
+          "value": "8"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "pm68snd.bin",
+          "offset": "0x000000"
+        },
+        {
+          "type": "x",
+          "path": "ZMSC.X",
+          "offset": "0x010000"
+        },
+        {
+          "type": "code",
+          "path": "SETUP.ZMD",
+          "offset": "0x080000"
+        },
+        {
+          "type": "code",
+          "path": "BGM1GM.ZMD",
+          "offset": "0x084000"
+        },
+        {
+          "type": "code",
+          "path": "BGM2GM.ZMD",
+          "offset": "0x088000"
+        },
+        {
+          "type": "code",
+          "path": "BGM3GM.ZMD",
+          "offset": "0x08c000"
+        },
+        {
+          "type": "code",
+          "path": "BGM4GM.ZMD",
+          "offset": "0x090000"
+        },
+        {
+          "type": "code",
+          "path": "BGM5GM.ZMD",
+          "offset": "0x094000"
+        },
+        {
+          "type": "code",
+          "path": "BGM6GM.ZMD",
+          "offset": "0x098000"
+        },
+        {
+          "type": "code",
+          "path": "BGM7GM.ZMD",
+          "offset": "0x09c000"
+        },
+        {
+          "type": "code",
+          "path": "BGM8GM.ZMD",
+          "offset": "0x0a0000"
+        },
+        {
+          "type": "code",
+          "path": "BGM9GM.ZMD",
+          "offset": "0x0a4000"
+        },
+        {
+          "type": "code",
+          "path": "BGM10GM.ZMD",
+          "offset": "0x0a8000"
+        },
+        {
+          "type": "code",
+          "path": "BGM11GM.ZMD",
+          "offset": "0x0ac000"
+        },
+        {
+          "type": "code",
+          "path": "BGM12GM.ZMD",
+          "offset": "0x0b0000"
+        },
+        {
+          "type": "code",
+          "path": "BGM13GM.ZMD",
+          "offset": "0x0b4000"
+        },
+        {
+          "type": "code",
+          "path": "BGM14GM.ZMD",
+          "offset": "0x0b8000"
+        },
+        {
+          "type": "code",
+          "path": "BGM15GM.ZMD",
+          "offset": "0x0bc000"
+        },
+        {
+          "type": "code",
+          "path": "BGM16GM.ZMD",
+          "offset": "0x0c0000"
+        },
+        {
+          "type": "code",
+          "path": "BGM17GM.ZMD",
+          "offset": "0x0c4000"
+        },
+        {
+          "type": "code",
+          "path": "BGM18GM.ZMD",
+          "offset": "0x0c8000"
+        },
+        {
+          "type": "code",
+          "path": "BGM19GM.ZMD",
+          "offset": "0x0cc000"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "BGM1GM.ZMD  : プロローグ"
+        },
+        {
+          "kind": "title",
+          "code": "0x02",
+          "title": "BGM2GM.ZMD  : メインテーマ"
+        },
+        {
+          "kind": "title",
+          "code": "0x03",
+          "title": "BGM3GM.ZMD  : 子育て"
+        },
+        {
+          "kind": "title",
+          "code": "0x04",
+          "title": "BGM4GM.ZMD  : 病気"
+        },
+        {
+          "kind": "title",
+          "code": "0x05",
+          "title": "BGM5GM.ZMD  : 非行化"
+        },
+        {
+          "kind": "title",
+          "code": "0x06",
+          "title": "BGM6GM.ZMD  : 教育"
+        },
+        {
+          "kind": "title",
+          "code": "0x07",
+          "title": "BGM7GM.ZMD  : 武者修行"
+        },
+        {
+          "kind": "title",
+          "code": "0x08",
+          "title": "BGM8GM.ZMD  : アルバイト"
+        },
+        {
+          "kind": "title",
+          "code": "0x09",
+          "title": "BGM9GM.ZMD  : お休み"
+        },
+        {
+          "kind": "title",
+          "code": "0x0a",
+          "title": "BGM10GM.ZMD : バカンス"
+        },
+        {
+          "kind": "title",
+          "code": "0x0b",
+          "title": "BGM11GM.ZMD : 収穫祭"
+        },
+        {
+          "kind": "title",
+          "code": "0x0c",
+          "title": "BGM12GM.ZMD : ミスコン"
+        },
+        {
+          "kind": "title",
+          "code": "0x0d",
+          "title": "BGM13GM.ZMD : 武闘会"
+        },
+        {
+          "kind": "title",
+          "code": "0x0e",
+          "title": "BGM14GM.ZMD : バトル"
+        },
+        {
+          "kind": "title",
+          "code": "0x0f",
+          "title": "BGM15GM.ZMD : お城"
+        },
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "BGM16GM.ZMD : 評判"
+        },
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "BGM17GM.ZMD : 親子の対話"
+        },
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "BGM18GM.ZMD : 買い物"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "BGM19GM.ZMD : エンディング"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/new.xml",
+      "source_order": 3443,
+      "archive": "pm68snd",
+      "id": "pm68snd-generic-2"
+    },
+    {
+      "title": "[X68000] PRINCESS MAKER(SC-88)",
+      "driver": {
+        "name": "x68k",
+        "type": "generic",
+        "alias": "NEW",
+        "platform": "SHARP X68000"
+      },
+      "options": [
+        {
+          "name": "mfp",
+          "value": "1"
+        },
+        {
+          "name": "midiout",
+          "value": "1"
+        },
+        {
+          "name": "midiout_type",
+          "value": "7"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "pm68snd.bin",
+          "offset": "0x000000"
+        },
+        {
+          "type": "x",
+          "path": "ZMSC.X",
+          "offset": "0x010000"
+        },
+        {
+          "type": "code",
+          "path": "SETUP.ZMD",
+          "offset": "0x080000"
+        },
+        {
+          "type": "code",
+          "path": "BGM1SC.ZMD",
+          "offset": "0x084000"
+        },
+        {
+          "type": "code",
+          "path": "BGM2SC.ZMD",
+          "offset": "0x088000"
+        },
+        {
+          "type": "code",
+          "path": "BGM3SC.ZMD",
+          "offset": "0x08c000"
+        },
+        {
+          "type": "code",
+          "path": "BGM4SC.ZMD",
+          "offset": "0x090000"
+        },
+        {
+          "type": "code",
+          "path": "BGM5SC.ZMD",
+          "offset": "0x094000"
+        },
+        {
+          "type": "code",
+          "path": "BGM6SC.ZMD",
+          "offset": "0x098000"
+        },
+        {
+          "type": "code",
+          "path": "BGM7SC.ZMD",
+          "offset": "0x09c000"
+        },
+        {
+          "type": "code",
+          "path": "BGM8SC.ZMD",
+          "offset": "0x0a0000"
+        },
+        {
+          "type": "code",
+          "path": "BGM9SC.ZMD",
+          "offset": "0x0a4000"
+        },
+        {
+          "type": "code",
+          "path": "BGM10SC.ZMD",
+          "offset": "0x0a8000"
+        },
+        {
+          "type": "code",
+          "path": "BGM11SC.ZMD",
+          "offset": "0x0ac000"
+        },
+        {
+          "type": "code",
+          "path": "BGM12SC.ZMD",
+          "offset": "0x0b0000"
+        },
+        {
+          "type": "code",
+          "path": "BGM13SC.ZMD",
+          "offset": "0x0b4000"
+        },
+        {
+          "type": "code",
+          "path": "BGM14SC.ZMD",
+          "offset": "0x0b8000"
+        },
+        {
+          "type": "code",
+          "path": "BGM15SC.ZMD",
+          "offset": "0x0bc000"
+        },
+        {
+          "type": "code",
+          "path": "BGM16SC.ZMD",
+          "offset": "0x0c0000"
+        },
+        {
+          "type": "code",
+          "path": "BGM17SC.ZMD",
+          "offset": "0x0c4000"
+        },
+        {
+          "type": "code",
+          "path": "BGM18SC.ZMD",
+          "offset": "0x0c8000"
+        },
+        {
+          "type": "code",
+          "path": "BGM19SC.ZMD",
+          "offset": "0x0cc000"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "BGM1SC.ZMD  : プロローグ"
+        },
+        {
+          "kind": "title",
+          "code": "0x02",
+          "title": "BGM2SC.ZMD  : メインテーマ"
+        },
+        {
+          "kind": "title",
+          "code": "0x03",
+          "title": "BGM3SC.ZMD  : 子育て"
+        },
+        {
+          "kind": "title",
+          "code": "0x04",
+          "title": "BGM4SC.ZMD  : 病気"
+        },
+        {
+          "kind": "title",
+          "code": "0x05",
+          "title": "BGM5SC.ZMD  : 非行化"
+        },
+        {
+          "kind": "title",
+          "code": "0x06",
+          "title": "BGM6SC.ZMD  : 教育"
+        },
+        {
+          "kind": "title",
+          "code": "0x07",
+          "title": "BGM7SC.ZMD  : 武者修行"
+        },
+        {
+          "kind": "title",
+          "code": "0x08",
+          "title": "BGM8SC.ZMD  : アルバイト"
+        },
+        {
+          "kind": "title",
+          "code": "0x09",
+          "title": "BGM9SC.ZMD  : お休み"
+        },
+        {
+          "kind": "title",
+          "code": "0x0a",
+          "title": "BGM10SC.ZMD : バカンス"
+        },
+        {
+          "kind": "title",
+          "code": "0x0b",
+          "title": "BGM11SC.ZMD : 収穫祭"
+        },
+        {
+          "kind": "title",
+          "code": "0x0c",
+          "title": "BGM12SC.ZMD : ミスコン"
+        },
+        {
+          "kind": "title",
+          "code": "0x0d",
+          "title": "BGM13SC.ZMD : 武闘会"
+        },
+        {
+          "kind": "title",
+          "code": "0x0e",
+          "title": "BGM14SC.ZMD : バトル"
+        },
+        {
+          "kind": "title",
+          "code": "0x0f",
+          "title": "BGM15SC.ZMD : お城"
+        },
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "BGM16SC.ZMD : 評判"
+        },
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "BGM17SC.ZMD : 親子の対話"
+        },
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "BGM18SC.ZMD : 買い物"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "BGM19SC.ZMD : エンディング"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/new.xml",
+      "source_order": 3444,
+      "archive": "pm68snd",
+      "id": "pm68snd-generic-3"
+    }
+  ]
+}

@@ -1,0 +1,3170 @@
+{
+  "format": "hoot-catalog-shard",
+  "version": 1,
+  "source_file": "xml/wiz.xml",
+  "date": "2005/09/25",
+  "comments": [
+    " //WIZ "
+  ],
+  "games": [
+    {
+      "title": "[PC-9801] BURNING DRAGON(OPNA)",
+      "driver": {
+        "name": "pc98",
+        "type": "opna",
+        "alias": "WIZ",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "bootcs",
+          "value": "0x0060"
+        },
+        {
+          "name": "bootip",
+          "value": "0x0000"
+        },
+        {
+          "name": "funcvect",
+          "value": "0x7f"
+        },
+        {
+          "name": "dataaddr",
+          "value": "0x658e"
+        },
+        {
+          "name": "filesize",
+          "value": "0x200c"
+        },
+        {
+          "name": "datamax",
+          "value": "0x1a"
+        },
+        {
+          "name": "opna_mix",
+          "value": "0x280"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "bd98.bin",
+          "offset": "0x00600"
+        },
+        {
+          "type": "code",
+          "path": "BD_MAIN.COM",
+          "offset": "0x01100"
+        },
+        {
+          "type": "code",
+          "path": "CM_NEIRO.DAT",
+          "offset": "0x0458e"
+        },
+        {
+          "type": "code",
+          "path": "CM_ENV.DAT",
+          "offset": "0x0638e"
+        },
+        {
+          "type": "code",
+          "path": "CM_SE.DAT",
+          "offset": "0x04d8e"
+        },
+        {
+          "type": "binary",
+          "path": "01",
+          "offset": "0x01a45"
+        },
+        {
+          "type": "bgm",
+          "path": "BDC.CMD",
+          "offset": "0x01"
+        },
+        {
+          "type": "bgm",
+          "path": "BDX.CMD",
+          "offset": "0x02"
+        },
+        {
+          "type": "bgm",
+          "path": "BD_0.CMD",
+          "offset": "0x03"
+        },
+        {
+          "type": "bgm",
+          "path": "BD_1.CMD",
+          "offset": "0x04"
+        },
+        {
+          "type": "bgm",
+          "path": "BD_2.CMD",
+          "offset": "0x05"
+        },
+        {
+          "type": "bgm",
+          "path": "BD_3.CMD",
+          "offset": "0x06"
+        },
+        {
+          "type": "bgm",
+          "path": "BD_4.CMD",
+          "offset": "0x07"
+        },
+        {
+          "type": "bgm",
+          "path": "BD_5.CMD",
+          "offset": "0x08"
+        },
+        {
+          "type": "bgm",
+          "path": "BD_6.CMD",
+          "offset": "0x09"
+        },
+        {
+          "type": "bgm",
+          "path": "BD_BS1.CMD",
+          "offset": "0x0a"
+        },
+        {
+          "type": "bgm",
+          "path": "BD_BS2.CMD",
+          "offset": "0x0b"
+        },
+        {
+          "type": "bgm",
+          "path": "BD_BS4.CMD",
+          "offset": "0x0c"
+        },
+        {
+          "type": "bgm",
+          "path": "BD_BS5.CMD",
+          "offset": "0x0d"
+        },
+        {
+          "type": "bgm",
+          "path": "BD_BS6A.CMD",
+          "offset": "0x0e"
+        },
+        {
+          "type": "bgm",
+          "path": "BD_BS6B.CMD",
+          "offset": "0x0f"
+        },
+        {
+          "type": "bgm",
+          "path": "BD_CLEAR.CMD",
+          "offset": "0x10"
+        },
+        {
+          "type": "bgm",
+          "path": "BD_DM1.CMD",
+          "offset": "0x11"
+        },
+        {
+          "type": "bgm",
+          "path": "BD_DM2.CMD",
+          "offset": "0x12"
+        },
+        {
+          "type": "bgm",
+          "path": "BD_END.CMD",
+          "offset": "0x13"
+        },
+        {
+          "type": "bgm",
+          "path": "BD_NAME.CMD",
+          "offset": "0x14"
+        },
+        {
+          "type": "bgm",
+          "path": "BD_OVER.CMD",
+          "offset": "0x15"
+        },
+        {
+          "type": "bgm",
+          "path": "BD_STAFF.CMD",
+          "offset": "0x16"
+        },
+        {
+          "type": "bgm",
+          "path": "BD_TITLE.CMD",
+          "offset": "0x17"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x00",
+          "title": "演奏停止"
+        },
+        {
+          "kind": "comment",
+          "text": "\t<title code=\"0x02\">BDX.CMD      : MUSIC STOP</title> "
+        },
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "BD_DM1.CMD   : OPENING DEMO 1"
+        },
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "BD_DM2.CMD   : OPENING DEMO 2"
+        },
+        {
+          "kind": "title",
+          "code": "0x17",
+          "title": "BD_TITLE.CMD : TITLE LOGO"
+        },
+        {
+          "kind": "comment",
+          "text": "\t<title code=\"0x03\">BD_0.CMD     : </title> "
+        },
+        {
+          "kind": "title",
+          "code": "0x04",
+          "title": "BD_1.CMD     : STAGE 1"
+        },
+        {
+          "kind": "title",
+          "code": "0x05",
+          "title": "BD_2.CMD     : STAGE 2"
+        },
+        {
+          "kind": "title",
+          "code": "0x06",
+          "title": "BD_3.CMD     : STAGE 3"
+        },
+        {
+          "kind": "title",
+          "code": "0x07",
+          "title": "BD_4.CMD     : STAGE 4"
+        },
+        {
+          "kind": "title",
+          "code": "0x08",
+          "title": "BD_5.CMD     : STAGE 5"
+        },
+        {
+          "kind": "title",
+          "code": "0x09",
+          "title": "BD_6.CMD     : STAGE 6"
+        },
+        {
+          "kind": "title",
+          "code": "0x0a",
+          "title": "BD_BS1.CMD   : BOSS 1"
+        },
+        {
+          "kind": "title",
+          "code": "0x0b",
+          "title": "BD_BS2.CMD   : BOSS 2"
+        },
+        {
+          "kind": "title",
+          "code": "0x0c",
+          "title": "BD_BS4.CMD   : BOSS 4"
+        },
+        {
+          "kind": "title",
+          "code": "0x0d",
+          "title": "BD_BS5.CMD   : BOSS 5"
+        },
+        {
+          "kind": "title",
+          "code": "0x0e",
+          "title": "BD_BS6A.CMD  : BOSS 6-A"
+        },
+        {
+          "kind": "title",
+          "code": "0x0f",
+          "title": "BD_BS6B.CMD  : BOSS 6-B"
+        },
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "BD_CLEAR.CMD : STAGE CLEAR"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "BD_END.CMD   : ENDING"
+        },
+        {
+          "kind": "title",
+          "code": "0x14",
+          "title": "BD_NAME.CMD  : NAME ENTRY"
+        },
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "BDC.CMD      : CONTINUE"
+        },
+        {
+          "kind": "title",
+          "code": "0x15",
+          "title": "BD_OVER.CMD  : GAME OVER"
+        },
+        {
+          "kind": "title",
+          "code": "0x16",
+          "title": "BD_STAFF.CMD : STAFF CREDIT"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/wiz.xml",
+      "source_order": 4973,
+      "archive": "bd98",
+      "id": "bd98-opna"
+    },
+    {
+      "title": "[PC-9801] BURNING DRAGON(OPN)",
+      "driver": {
+        "name": "pc98",
+        "type": "opn",
+        "alias": "WIZ",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "bootcs",
+          "value": "0x0060"
+        },
+        {
+          "name": "bootip",
+          "value": "0x0000"
+        },
+        {
+          "name": "funcvect",
+          "value": "0x7f"
+        },
+        {
+          "name": "dataaddr",
+          "value": "0x658e"
+        },
+        {
+          "name": "filesize",
+          "value": "0x200c"
+        },
+        {
+          "name": "datamax",
+          "value": "0x1a"
+        },
+        {
+          "name": "opn_mix",
+          "value": "0x280"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "bd98.bin",
+          "offset": "0x00600"
+        },
+        {
+          "type": "code",
+          "path": "BD_MAIN.COM",
+          "offset": "0x01100"
+        },
+        {
+          "type": "code",
+          "path": "CM_NEIRO.DAT",
+          "offset": "0x0458e"
+        },
+        {
+          "type": "code",
+          "path": "CM_ENV.DAT",
+          "offset": "0x0638e"
+        },
+        {
+          "type": "code",
+          "path": "CM_SE.DAT",
+          "offset": "0x04d8e"
+        },
+        {
+          "type": "bgm",
+          "path": "BDC.CMD",
+          "offset": "0x01"
+        },
+        {
+          "type": "bgm",
+          "path": "BDX.CMD",
+          "offset": "0x02"
+        },
+        {
+          "type": "bgm",
+          "path": "BD_0.CMD",
+          "offset": "0x03"
+        },
+        {
+          "type": "bgm",
+          "path": "BD_1.CMD",
+          "offset": "0x04"
+        },
+        {
+          "type": "bgm",
+          "path": "BD_2.CMD",
+          "offset": "0x05"
+        },
+        {
+          "type": "bgm",
+          "path": "BD_3.CMD",
+          "offset": "0x06"
+        },
+        {
+          "type": "bgm",
+          "path": "BD_4.CMD",
+          "offset": "0x07"
+        },
+        {
+          "type": "bgm",
+          "path": "BD_5.CMD",
+          "offset": "0x08"
+        },
+        {
+          "type": "bgm",
+          "path": "BD_6.CMD",
+          "offset": "0x09"
+        },
+        {
+          "type": "bgm",
+          "path": "BD_BS1.CMD",
+          "offset": "0x0a"
+        },
+        {
+          "type": "bgm",
+          "path": "BD_BS2.CMD",
+          "offset": "0x0b"
+        },
+        {
+          "type": "bgm",
+          "path": "BD_BS4.CMD",
+          "offset": "0x0c"
+        },
+        {
+          "type": "bgm",
+          "path": "BD_BS5.CMD",
+          "offset": "0x0d"
+        },
+        {
+          "type": "bgm",
+          "path": "BD_BS6A.CMD",
+          "offset": "0x0e"
+        },
+        {
+          "type": "bgm",
+          "path": "BD_BS6B.CMD",
+          "offset": "0x0f"
+        },
+        {
+          "type": "bgm",
+          "path": "BD_CLEAR.CMD",
+          "offset": "0x10"
+        },
+        {
+          "type": "bgm",
+          "path": "BD_DM1.CMD",
+          "offset": "0x11"
+        },
+        {
+          "type": "bgm",
+          "path": "BD_DM2.CMD",
+          "offset": "0x12"
+        },
+        {
+          "type": "bgm",
+          "path": "BD_END.CMD",
+          "offset": "0x13"
+        },
+        {
+          "type": "bgm",
+          "path": "BD_NAME.CMD",
+          "offset": "0x14"
+        },
+        {
+          "type": "bgm",
+          "path": "BD_OVER.CMD",
+          "offset": "0x15"
+        },
+        {
+          "type": "bgm",
+          "path": "BD_STAFF.CMD",
+          "offset": "0x16"
+        },
+        {
+          "type": "bgm",
+          "path": "BD_TITLE.CMD",
+          "offset": "0x17"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x00",
+          "title": "演奏停止"
+        },
+        {
+          "kind": "comment",
+          "text": "\t<title code=\"0x02\">BDX.CMD      : MUSIC STOP</title> "
+        },
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "BD_DM1.CMD   : OPENING DEMO 1"
+        },
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "BD_DM2.CMD   : OPENING DEMO 2"
+        },
+        {
+          "kind": "title",
+          "code": "0x17",
+          "title": "BD_TITLE.CMD : TITLE LOGO"
+        },
+        {
+          "kind": "comment",
+          "text": "\t<title code=\"0x03\">BD_0.CMD     : </title> "
+        },
+        {
+          "kind": "title",
+          "code": "0x04",
+          "title": "BD_1.CMD     : STAGE 1"
+        },
+        {
+          "kind": "title",
+          "code": "0x05",
+          "title": "BD_2.CMD     : STAGE 2"
+        },
+        {
+          "kind": "title",
+          "code": "0x06",
+          "title": "BD_3.CMD     : STAGE 3"
+        },
+        {
+          "kind": "title",
+          "code": "0x07",
+          "title": "BD_4.CMD     : STAGE 4"
+        },
+        {
+          "kind": "title",
+          "code": "0x08",
+          "title": "BD_5.CMD     : STAGE 5"
+        },
+        {
+          "kind": "title",
+          "code": "0x09",
+          "title": "BD_6.CMD     : STAGE 6"
+        },
+        {
+          "kind": "title",
+          "code": "0x0a",
+          "title": "BD_BS1.CMD   : BOSS 1"
+        },
+        {
+          "kind": "title",
+          "code": "0x0b",
+          "title": "BD_BS2.CMD   : BOSS 2"
+        },
+        {
+          "kind": "title",
+          "code": "0x0c",
+          "title": "BD_BS4.CMD   : BOSS 4"
+        },
+        {
+          "kind": "title",
+          "code": "0x0d",
+          "title": "BD_BS5.CMD   : BOSS 5"
+        },
+        {
+          "kind": "title",
+          "code": "0x0e",
+          "title": "BD_BS6A.CMD  : BOSS 6-A"
+        },
+        {
+          "kind": "title",
+          "code": "0x0f",
+          "title": "BD_BS6B.CMD  : BOSS 6-B"
+        },
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "BD_CLEAR.CMD : STAGE CLEAR"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "BD_END.CMD   : ENDING"
+        },
+        {
+          "kind": "title",
+          "code": "0x14",
+          "title": "BD_NAME.CMD  : NAME ENTRY"
+        },
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "BDC.CMD      : CONTINUE"
+        },
+        {
+          "kind": "title",
+          "code": "0x15",
+          "title": "BD_OVER.CMD  : GAME OVER"
+        },
+        {
+          "kind": "title",
+          "code": "0x16",
+          "title": "BD_STAFF.CMD : STAFF CREDIT"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/wiz.xml",
+      "source_order": 4974,
+      "archive": "bd98",
+      "id": "bd98-opn"
+    },
+    {
+      "title": "[PC-9801] BURNING DRAGON PLUS(OPNA)",
+      "driver": {
+        "name": "pc98",
+        "type": "opna",
+        "alias": "WIZ",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "bootcs",
+          "value": "0x0060"
+        },
+        {
+          "name": "bootip",
+          "value": "0x0000"
+        },
+        {
+          "name": "funcvect",
+          "value": "0x7f"
+        },
+        {
+          "name": "dataaddr",
+          "value": "0x658e"
+        },
+        {
+          "name": "filesize",
+          "value": "0x200c"
+        },
+        {
+          "name": "datamax",
+          "value": "0x1a"
+        },
+        {
+          "name": "opna_mix",
+          "value": "0x280"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "bdp98.bin",
+          "offset": "0x00600"
+        },
+        {
+          "type": "code",
+          "path": "BD_MAIN.COM",
+          "offset": "0x01100"
+        },
+        {
+          "type": "code",
+          "path": "CM_NEIRO.DAT",
+          "offset": "0x0458e"
+        },
+        {
+          "type": "code",
+          "path": "CM_ENV.DAT",
+          "offset": "0x0638e"
+        },
+        {
+          "type": "code",
+          "path": "CM_SE.DAT",
+          "offset": "0x04d8e"
+        },
+        {
+          "type": "binary",
+          "path": "01",
+          "offset": "0x01a24"
+        },
+        {
+          "type": "bgm",
+          "path": "BDC.CMD",
+          "offset": "0x01"
+        },
+        {
+          "type": "bgm",
+          "path": "BDX.CMD",
+          "offset": "0x02"
+        },
+        {
+          "type": "bgm",
+          "path": "BD_1.CMD",
+          "offset": "0x03"
+        },
+        {
+          "type": "bgm",
+          "path": "BD_2.CMD",
+          "offset": "0x04"
+        },
+        {
+          "type": "bgm",
+          "path": "BD_3.CMD",
+          "offset": "0x05"
+        },
+        {
+          "type": "bgm",
+          "path": "BD_4.CMD",
+          "offset": "0x06"
+        },
+        {
+          "type": "bgm",
+          "path": "BD_5.CMD",
+          "offset": "0x07"
+        },
+        {
+          "type": "bgm",
+          "path": "BD_6.CMD",
+          "offset": "0x08"
+        },
+        {
+          "type": "bgm",
+          "path": "BD_7.CMD",
+          "offset": "0x09"
+        },
+        {
+          "type": "bgm",
+          "path": "BD_BS1_2.CMD",
+          "offset": "0x0a"
+        },
+        {
+          "type": "bgm",
+          "path": "BD_BS3_5.CMD",
+          "offset": "0x0b"
+        },
+        {
+          "type": "bgm",
+          "path": "BD_BS4.CMD",
+          "offset": "0x0c"
+        },
+        {
+          "type": "bgm",
+          "path": "BD_BS6.CMD",
+          "offset": "0x0d"
+        },
+        {
+          "type": "bgm",
+          "path": "BD_BS7A.CMD",
+          "offset": "0x0e"
+        },
+        {
+          "type": "bgm",
+          "path": "BD_BS7B.CMD",
+          "offset": "0x0f"
+        },
+        {
+          "type": "bgm",
+          "path": "BD_CLEAR.CMD",
+          "offset": "0x10"
+        },
+        {
+          "type": "bgm",
+          "path": "BD_DM1.CMD",
+          "offset": "0x11"
+        },
+        {
+          "type": "bgm",
+          "path": "BD_DM2.CMD",
+          "offset": "0x12"
+        },
+        {
+          "type": "bgm",
+          "path": "BD_END.CMD",
+          "offset": "0x13"
+        },
+        {
+          "type": "bgm",
+          "path": "BD_END2.CMD",
+          "offset": "0x14"
+        },
+        {
+          "type": "bgm",
+          "path": "BD_NAME.CMD",
+          "offset": "0x15"
+        },
+        {
+          "type": "bgm",
+          "path": "BD_OVER.CMD",
+          "offset": "0x16"
+        },
+        {
+          "type": "bgm",
+          "path": "BD_SEL.CMD",
+          "offset": "0x17"
+        },
+        {
+          "type": "bgm",
+          "path": "BD_STAFF.CMD",
+          "offset": "0x18"
+        },
+        {
+          "type": "bgm",
+          "path": "BD_TITLE.CMD",
+          "offset": "0x19"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x00",
+          "title": "演奏停止"
+        },
+        {
+          "kind": "comment",
+          "text": "\t<title code=\"0x02\">BDX.CMD      : MUSIC STOP</title> "
+        },
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "BD_DM1.CMD   : OPENING DEMO 1"
+        },
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "BD_DM2.CMD   : OPENING DEMO 2"
+        },
+        {
+          "kind": "title",
+          "code": "0x19",
+          "title": "BD_TITLE.CMD : TITLE LOGO"
+        },
+        {
+          "kind": "title",
+          "code": "0x17",
+          "title": "BD_SEL.CMD   : MACHINE SELECT"
+        },
+        {
+          "kind": "title",
+          "code": "0x03",
+          "title": "BD_1.CMD     : STAGE 1"
+        },
+        {
+          "kind": "title",
+          "code": "0x04",
+          "title": "BD_2.CMD     : STAGE 2"
+        },
+        {
+          "kind": "title",
+          "code": "0x05",
+          "title": "BD_3.CMD     : STAGE 3"
+        },
+        {
+          "kind": "title",
+          "code": "0x06",
+          "title": "BD_4.CMD     : STAGE 4"
+        },
+        {
+          "kind": "title",
+          "code": "0x07",
+          "title": "BD_5.CMD     : STAGE 5"
+        },
+        {
+          "kind": "title",
+          "code": "0x08",
+          "title": "BD_6.CMD     : STAGE 6"
+        },
+        {
+          "kind": "title",
+          "code": "0x09",
+          "title": "BD_7.CMD     : STAGE 7"
+        },
+        {
+          "kind": "title",
+          "code": "0x0a",
+          "title": "BD_BS1_2.CMD : BOSS 1,2"
+        },
+        {
+          "kind": "title",
+          "code": "0x0b",
+          "title": "BD_BS3_5.CMD : BOSS 3,5"
+        },
+        {
+          "kind": "title",
+          "code": "0x0c",
+          "title": "BD_BS4.CMD   : BOSS 4"
+        },
+        {
+          "kind": "title",
+          "code": "0x0d",
+          "title": "BD_BS6.CMD   : BOSS 6"
+        },
+        {
+          "kind": "title",
+          "code": "0x0e",
+          "title": "BD_BS7A.CMD  : BOSS 7-A"
+        },
+        {
+          "kind": "title",
+          "code": "0x0f",
+          "title": "BD_BS7B.CMD  : BOSS 7-B"
+        },
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "BD_CLEAR.CMD : STAGE CLEAR"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "BD_END.CMD   : ENDING 1"
+        },
+        {
+          "kind": "title",
+          "code": "0x14",
+          "title": "BD_END2.CMD  : ENDING 2"
+        },
+        {
+          "kind": "title",
+          "code": "0x18",
+          "title": "BD_STAFF.CMD : STAFF CREDIT"
+        },
+        {
+          "kind": "title",
+          "code": "0x15",
+          "title": "BD_NAME.CMD  : NAME ENTRY"
+        },
+        {
+          "kind": "title",
+          "code": "0x16",
+          "title": "BD_OVER.CMD  : GAME OVER"
+        },
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "BDC.CMD      : BEST PLAYERS"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/wiz.xml",
+      "source_order": 4975,
+      "archive": "bdp98",
+      "id": "bdp98-opna"
+    },
+    {
+      "title": "[PC-9801] BURNING DRAGON PLUS(OPN)",
+      "driver": {
+        "name": "pc98",
+        "type": "opn",
+        "alias": "WIZ",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "bootcs",
+          "value": "0x0060"
+        },
+        {
+          "name": "bootip",
+          "value": "0x0000"
+        },
+        {
+          "name": "funcvect",
+          "value": "0x7f"
+        },
+        {
+          "name": "dataaddr",
+          "value": "0x658e"
+        },
+        {
+          "name": "filesize",
+          "value": "0x200c"
+        },
+        {
+          "name": "datamax",
+          "value": "0x1a"
+        },
+        {
+          "name": "opn_mix",
+          "value": "0x280"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "bdp98.bin",
+          "offset": "0x00600"
+        },
+        {
+          "type": "code",
+          "path": "BD_MAIN.COM",
+          "offset": "0x01100"
+        },
+        {
+          "type": "code",
+          "path": "CM_NEIRO.DAT",
+          "offset": "0x0458e"
+        },
+        {
+          "type": "code",
+          "path": "CM_ENV.DAT",
+          "offset": "0x0638e"
+        },
+        {
+          "type": "code",
+          "path": "CM_SE.DAT",
+          "offset": "0x04d8e"
+        },
+        {
+          "type": "bgm",
+          "path": "BDC.CMD",
+          "offset": "0x01"
+        },
+        {
+          "type": "bgm",
+          "path": "BDX.CMD",
+          "offset": "0x02"
+        },
+        {
+          "type": "bgm",
+          "path": "BD_1.CMD",
+          "offset": "0x03"
+        },
+        {
+          "type": "bgm",
+          "path": "BD_2.CMD",
+          "offset": "0x04"
+        },
+        {
+          "type": "bgm",
+          "path": "BD_3.CMD",
+          "offset": "0x05"
+        },
+        {
+          "type": "bgm",
+          "path": "BD_4.CMD",
+          "offset": "0x06"
+        },
+        {
+          "type": "bgm",
+          "path": "BD_5.CMD",
+          "offset": "0x07"
+        },
+        {
+          "type": "bgm",
+          "path": "BD_6.CMD",
+          "offset": "0x08"
+        },
+        {
+          "type": "bgm",
+          "path": "BD_7.CMD",
+          "offset": "0x09"
+        },
+        {
+          "type": "bgm",
+          "path": "BD_BS1_2.CMD",
+          "offset": "0x0a"
+        },
+        {
+          "type": "bgm",
+          "path": "BD_BS3_5.CMD",
+          "offset": "0x0b"
+        },
+        {
+          "type": "bgm",
+          "path": "BD_BS4.CMD",
+          "offset": "0x0c"
+        },
+        {
+          "type": "bgm",
+          "path": "BD_BS6.CMD",
+          "offset": "0x0d"
+        },
+        {
+          "type": "bgm",
+          "path": "BD_BS7A.CMD",
+          "offset": "0x0e"
+        },
+        {
+          "type": "bgm",
+          "path": "BD_BS7B.CMD",
+          "offset": "0x0f"
+        },
+        {
+          "type": "bgm",
+          "path": "BD_CLEAR.CMD",
+          "offset": "0x10"
+        },
+        {
+          "type": "bgm",
+          "path": "BD_DM1.CMD",
+          "offset": "0x11"
+        },
+        {
+          "type": "bgm",
+          "path": "BD_DM2.CMD",
+          "offset": "0x12"
+        },
+        {
+          "type": "bgm",
+          "path": "BD_END.CMD",
+          "offset": "0x13"
+        },
+        {
+          "type": "bgm",
+          "path": "BD_END2.CMD",
+          "offset": "0x14"
+        },
+        {
+          "type": "bgm",
+          "path": "BD_NAME.CMD",
+          "offset": "0x15"
+        },
+        {
+          "type": "bgm",
+          "path": "BD_OVER.CMD",
+          "offset": "0x16"
+        },
+        {
+          "type": "bgm",
+          "path": "BD_SEL.CMD",
+          "offset": "0x17"
+        },
+        {
+          "type": "bgm",
+          "path": "BD_STAFF.CMD",
+          "offset": "0x18"
+        },
+        {
+          "type": "bgm",
+          "path": "BD_TITLE.CMD",
+          "offset": "0x19"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x00",
+          "title": "演奏停止"
+        },
+        {
+          "kind": "comment",
+          "text": "\t<title code=\"0x02\">BDX.CMD      : MUSIC STOP</title> "
+        },
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "BD_DM1.CMD   : OPENING DEMO 1"
+        },
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "BD_DM2.CMD   : OPENING DEMO 2"
+        },
+        {
+          "kind": "title",
+          "code": "0x19",
+          "title": "BD_TITLE.CMD : TITLE LOGO"
+        },
+        {
+          "kind": "title",
+          "code": "0x17",
+          "title": "BD_SEL.CMD   : MACHINE SELECT"
+        },
+        {
+          "kind": "title",
+          "code": "0x03",
+          "title": "BD_1.CMD     : STAGE 1"
+        },
+        {
+          "kind": "title",
+          "code": "0x04",
+          "title": "BD_2.CMD     : STAGE 2"
+        },
+        {
+          "kind": "title",
+          "code": "0x05",
+          "title": "BD_3.CMD     : STAGE 3"
+        },
+        {
+          "kind": "title",
+          "code": "0x06",
+          "title": "BD_4.CMD     : STAGE 4"
+        },
+        {
+          "kind": "title",
+          "code": "0x07",
+          "title": "BD_5.CMD     : STAGE 5"
+        },
+        {
+          "kind": "title",
+          "code": "0x08",
+          "title": "BD_6.CMD     : STAGE 6"
+        },
+        {
+          "kind": "title",
+          "code": "0x09",
+          "title": "BD_7.CMD     : STAGE 7"
+        },
+        {
+          "kind": "title",
+          "code": "0x0a",
+          "title": "BD_BS1_2.CMD : BOSS 1,2"
+        },
+        {
+          "kind": "title",
+          "code": "0x0b",
+          "title": "BD_BS3_5.CMD : BOSS 3,5"
+        },
+        {
+          "kind": "title",
+          "code": "0x0c",
+          "title": "BD_BS4.CMD   : BOSS 4"
+        },
+        {
+          "kind": "title",
+          "code": "0x0d",
+          "title": "BD_BS6.CMD   : BOSS 6"
+        },
+        {
+          "kind": "title",
+          "code": "0x0e",
+          "title": "BD_BS7A.CMD  : BOSS 7-A"
+        },
+        {
+          "kind": "title",
+          "code": "0x0f",
+          "title": "BD_BS7B.CMD  : BOSS 7-B"
+        },
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "BD_CLEAR.CMD : STAGE CLEAR"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "BD_END.CMD   : ENDING 1"
+        },
+        {
+          "kind": "title",
+          "code": "0x14",
+          "title": "BD_END2.CMD  : ENDING 2"
+        },
+        {
+          "kind": "title",
+          "code": "0x18",
+          "title": "BD_STAFF.CMD : STAFF CREDIT"
+        },
+        {
+          "kind": "title",
+          "code": "0x15",
+          "title": "BD_NAME.CMD  : NAME ENTRY"
+        },
+        {
+          "kind": "title",
+          "code": "0x16",
+          "title": "BD_OVER.CMD  : GAME OVER"
+        },
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "BDC.CMD      : BEST PLAYERS"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/wiz.xml",
+      "source_order": 4976,
+      "archive": "bdp98",
+      "id": "bdp98-opn"
+    },
+    {
+      "title": "[PC-9801] CRW Metal Jacket",
+      "driver": {
+        "name": "pc98dos",
+        "type": "opn",
+        "alias": "WIZ",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "clockmul",
+          "value": "8"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "nlp_hoot.com",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "NL.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "TONE.DTA",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MJ_00.O",
+          "offset": "0x10"
+        },
+        {
+          "type": "file",
+          "path": "MJ_01.O",
+          "offset": "0x11"
+        },
+        {
+          "type": "file",
+          "path": "MJ_02.O",
+          "offset": "0x12"
+        },
+        {
+          "type": "file",
+          "path": "MJ_03.O",
+          "offset": "0x13"
+        },
+        {
+          "type": "file",
+          "path": "MJ_04.O",
+          "offset": "0x14"
+        },
+        {
+          "type": "file",
+          "path": "MJ_05.O",
+          "offset": "0x15"
+        },
+        {
+          "type": "file",
+          "path": "MJ_06.O",
+          "offset": "0x16"
+        },
+        {
+          "type": "file",
+          "path": "MJ_07.O",
+          "offset": "0x17"
+        },
+        {
+          "type": "file",
+          "path": "MJ_08.O",
+          "offset": "0x18"
+        },
+        {
+          "type": "file",
+          "path": "MJ_09.O",
+          "offset": "0x19"
+        },
+        {
+          "type": "file",
+          "path": "MJ_10.O",
+          "offset": "0x1a"
+        },
+        {
+          "type": "file",
+          "path": "MJ_11.O",
+          "offset": "0x1b"
+        },
+        {
+          "type": "file",
+          "path": "MJ_12.O",
+          "offset": "0x1c"
+        },
+        {
+          "type": "file",
+          "path": "MJ_13.O",
+          "offset": "0x1d"
+        },
+        {
+          "type": "file",
+          "path": "MJ_14.O",
+          "offset": "0x1e"
+        },
+        {
+          "type": "file",
+          "path": "MJ_15.O",
+          "offset": "0x1f"
+        },
+        {
+          "type": "shell",
+          "path": "nl",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "nlp_hoot",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "MJ_00.O"
+        },
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "MJ_01.O"
+        },
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "MJ_02.O"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "MJ_03.O"
+        },
+        {
+          "kind": "title",
+          "code": "0x14",
+          "title": "MJ_04.O"
+        },
+        {
+          "kind": "title",
+          "code": "0x15",
+          "title": "MJ_05.O"
+        },
+        {
+          "kind": "title",
+          "code": "0x16",
+          "title": "MJ_06.O"
+        },
+        {
+          "kind": "title",
+          "code": "0x17",
+          "title": "MJ_07.O"
+        },
+        {
+          "kind": "title",
+          "code": "0x18",
+          "title": "MJ_08.O"
+        },
+        {
+          "kind": "title",
+          "code": "0x19",
+          "title": "MJ_09.O"
+        },
+        {
+          "kind": "title",
+          "code": "0x1a",
+          "title": "MJ_10.O"
+        },
+        {
+          "kind": "title",
+          "code": "0x1b",
+          "title": "MJ_11.O"
+        },
+        {
+          "kind": "title",
+          "code": "0x1c",
+          "title": "MJ_12.O"
+        },
+        {
+          "kind": "title",
+          "code": "0x1d",
+          "title": "MJ_13.O"
+        },
+        {
+          "kind": "title",
+          "code": "0x1e",
+          "title": "MJ_14.O"
+        },
+        {
+          "kind": "title",
+          "code": "0x1f",
+          "title": "MJ_15.O"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/wiz.xml",
+      "source_order": 4977,
+      "archive": "crw_98",
+      "id": "crw-98-opn"
+    },
+    {
+      "title": "[PC-9801] CRW2(OPN)",
+      "driver": {
+        "name": "pc98dos",
+        "type": "opn",
+        "alias": "WIZ",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "clockmul",
+          "value": "8"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "NLP_HOOT.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "NAX.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "TONES.DTA",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "CR2_00.O",
+          "offset": "11"
+        },
+        {
+          "type": "file",
+          "path": "CR2_01.O",
+          "offset": "12"
+        },
+        {
+          "type": "file",
+          "path": "CR2_02.O",
+          "offset": "13"
+        },
+        {
+          "type": "file",
+          "path": "CR2_03.O",
+          "offset": "14"
+        },
+        {
+          "type": "file",
+          "path": "CR2_04.O",
+          "offset": "15"
+        },
+        {
+          "type": "file",
+          "path": "CR2_05.O",
+          "offset": "16"
+        },
+        {
+          "type": "file",
+          "path": "CR2_06.O",
+          "offset": "17"
+        },
+        {
+          "type": "file",
+          "path": "CR2_07.O",
+          "offset": "18"
+        },
+        {
+          "type": "file",
+          "path": "CR2_08.O",
+          "offset": "19"
+        },
+        {
+          "type": "file",
+          "path": "CR2_09.O",
+          "offset": "20"
+        },
+        {
+          "type": "file",
+          "path": "CR2_10.O",
+          "offset": "21"
+        },
+        {
+          "type": "file",
+          "path": "CR2_11.O",
+          "offset": "22"
+        },
+        {
+          "type": "file",
+          "path": "CR2_12.O",
+          "offset": "23"
+        },
+        {
+          "type": "file",
+          "path": "CR2_13.O",
+          "offset": "24"
+        },
+        {
+          "type": "file",
+          "path": "CR2_14.O",
+          "offset": "25"
+        },
+        {
+          "type": "file",
+          "path": "CR2_15.O",
+          "offset": "26"
+        },
+        {
+          "type": "file",
+          "path": "CR2_16.O",
+          "offset": "27"
+        },
+        {
+          "type": "file",
+          "path": "CR2_17.O",
+          "offset": "28"
+        },
+        {
+          "type": "file",
+          "path": "CR2_18.O",
+          "offset": "29"
+        },
+        {
+          "type": "file",
+          "path": "CR2_19.O",
+          "offset": "30"
+        },
+        {
+          "type": "file",
+          "path": "CR2_20.O",
+          "offset": "31"
+        },
+        {
+          "type": "file",
+          "path": "CR2_21.O",
+          "offset": "32"
+        },
+        {
+          "type": "file",
+          "path": "CR2_22.O",
+          "offset": "33"
+        },
+        {
+          "type": "shell",
+          "path": "NAX",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "NLP_HOOT",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "11",
+          "title": "CR2_00.O"
+        },
+        {
+          "kind": "title",
+          "code": "12",
+          "title": "CR2_01.O"
+        },
+        {
+          "kind": "title",
+          "code": "13",
+          "title": "CR2_02.O"
+        },
+        {
+          "kind": "title",
+          "code": "14",
+          "title": "CR2_03.O"
+        },
+        {
+          "kind": "title",
+          "code": "15",
+          "title": "CR2_04.O"
+        },
+        {
+          "kind": "title",
+          "code": "16",
+          "title": "CR2_05.O"
+        },
+        {
+          "kind": "title",
+          "code": "17",
+          "title": "CR2_06.O"
+        },
+        {
+          "kind": "title",
+          "code": "18",
+          "title": "CR2_07.O"
+        },
+        {
+          "kind": "title",
+          "code": "19",
+          "title": "CR2_08.O"
+        },
+        {
+          "kind": "title",
+          "code": "20",
+          "title": "CR2_09.O"
+        },
+        {
+          "kind": "title",
+          "code": "21",
+          "title": "CR2_10.O"
+        },
+        {
+          "kind": "title",
+          "code": "22",
+          "title": "CR2_11.O"
+        },
+        {
+          "kind": "title",
+          "code": "23",
+          "title": "CR2_12.O"
+        },
+        {
+          "kind": "title",
+          "code": "24",
+          "title": "CR2_13.O"
+        },
+        {
+          "kind": "title",
+          "code": "25",
+          "title": "CR2_14.O"
+        },
+        {
+          "kind": "title",
+          "code": "26",
+          "title": "CR2_15.O"
+        },
+        {
+          "kind": "title",
+          "code": "27",
+          "title": "CR2_16.O"
+        },
+        {
+          "kind": "title",
+          "code": "28",
+          "title": "CR2_17.O"
+        },
+        {
+          "kind": "title",
+          "code": "29",
+          "title": "CR2_18.O"
+        },
+        {
+          "kind": "title",
+          "code": "30",
+          "title": "CR2_19.O"
+        },
+        {
+          "kind": "title",
+          "code": "31",
+          "title": "CR2_20.O"
+        },
+        {
+          "kind": "title",
+          "code": "32",
+          "title": "CR2_21.O"
+        },
+        {
+          "kind": "title",
+          "code": "33",
+          "title": "CR2_22.O"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/wiz.xml",
+      "source_order": 4978,
+      "archive": "crw2_98",
+      "id": "crw2-98-opn"
+    },
+    {
+      "title": "[PC-9801] CRW2(GS)",
+      "driver": {
+        "name": "pc98dos",
+        "type": "opna",
+        "alias": "WIZ",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "clockmul",
+          "value": "8"
+        },
+        {
+          "name": "midiout",
+          "value": "1"
+        },
+        {
+          "name": "midiout_type",
+          "value": "4"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "ARC_DRV.EXE",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "crw2m_98.com",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "CR2_01.MID",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "CR2_02.MID",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "CR2_03.MID",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "CR2_04.MID",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "CR2_05.MID",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "CR2_06.MID",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "CR2_07.MID",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "CR2_08.MID",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "CR2_09.MID",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "CR2_10.MID",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "CR2_11.MID",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "CR2_12.MID",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "CR2_13.MID",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "CR2_14.MID",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "CR2_15.MID",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "CR2_16.MID",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "CR2_17.MID",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "CR2_18.MID",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "CR2_19.MID",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "CR2_20.MID",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "CR2_21.MID",
+          "offset": "-1"
+        },
+        {
+          "type": "conin",
+          "path": "CR2_01.MID",
+          "offset": "0x10"
+        },
+        {
+          "type": "conin",
+          "path": "CR2_02.MID",
+          "offset": "0x11"
+        },
+        {
+          "type": "conin",
+          "path": "CR2_03.MID",
+          "offset": "0x12"
+        },
+        {
+          "type": "conin",
+          "path": "CR2_04.MID",
+          "offset": "0x13"
+        },
+        {
+          "type": "conin",
+          "path": "CR2_05.MID",
+          "offset": "0x14"
+        },
+        {
+          "type": "conin",
+          "path": "CR2_06.MID",
+          "offset": "0x15"
+        },
+        {
+          "type": "conin",
+          "path": "CR2_07.MID",
+          "offset": "0x16"
+        },
+        {
+          "type": "conin",
+          "path": "CR2_08.MID",
+          "offset": "0x17"
+        },
+        {
+          "type": "conin",
+          "path": "CR2_09.MID",
+          "offset": "0x18"
+        },
+        {
+          "type": "conin",
+          "path": "CR2_10.MID",
+          "offset": "0x19"
+        },
+        {
+          "type": "conin",
+          "path": "CR2_11.MID",
+          "offset": "0x1a"
+        },
+        {
+          "type": "conin",
+          "path": "CR2_12.MID",
+          "offset": "0x1b"
+        },
+        {
+          "type": "conin",
+          "path": "CR2_13.MID",
+          "offset": "0x1c"
+        },
+        {
+          "type": "conin",
+          "path": "CR2_14.MID",
+          "offset": "0x1d"
+        },
+        {
+          "type": "conin",
+          "path": "CR2_15.MID",
+          "offset": "0x1e"
+        },
+        {
+          "type": "conin",
+          "path": "CR2_16.MID",
+          "offset": "0x1f"
+        },
+        {
+          "type": "conin",
+          "path": "CR2_17.MID",
+          "offset": "0x20"
+        },
+        {
+          "type": "conin",
+          "path": "CR2_18.MID",
+          "offset": "0x21"
+        },
+        {
+          "type": "conin",
+          "path": "CR2_19.MID",
+          "offset": "0x22"
+        },
+        {
+          "type": "conin",
+          "path": "CR2_20.MID",
+          "offset": "0x23"
+        },
+        {
+          "type": "conin",
+          "path": "CR2_21.MID",
+          "offset": "0x24"
+        },
+        {
+          "type": "shell",
+          "path": "ARC_DRV",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "crw2m_98",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "CR2_01.MID :"
+        },
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "CR2_02.MID :"
+        },
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "CR2_03.MID :"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "CR2_04.MID :"
+        },
+        {
+          "kind": "title",
+          "code": "0x14",
+          "title": "CR2_05.MID :"
+        },
+        {
+          "kind": "title",
+          "code": "0x15",
+          "title": "CR2_06.MID :"
+        },
+        {
+          "kind": "title",
+          "code": "0x16",
+          "title": "CR2_07.MID :"
+        },
+        {
+          "kind": "title",
+          "code": "0x17",
+          "title": "CR2_08.MID :"
+        },
+        {
+          "kind": "title",
+          "code": "0x18",
+          "title": "CR2_09.MID :"
+        },
+        {
+          "kind": "title",
+          "code": "0x19",
+          "title": "CR2_10.MID :"
+        },
+        {
+          "kind": "title",
+          "code": "0x1a",
+          "title": "CR2_11.MID :"
+        },
+        {
+          "kind": "title",
+          "code": "0x1b",
+          "title": "CR2_12.MID :"
+        },
+        {
+          "kind": "title",
+          "code": "0x1c",
+          "title": "CR2_13.MID :"
+        },
+        {
+          "kind": "title",
+          "code": "0x1d",
+          "title": "CR2_14.MID :"
+        },
+        {
+          "kind": "title",
+          "code": "0x1e",
+          "title": "CR2_15.MID :"
+        },
+        {
+          "kind": "title",
+          "code": "0x1f",
+          "title": "CR2_16.MID :"
+        },
+        {
+          "kind": "title",
+          "code": "0x20",
+          "title": "CR2_17.MID :"
+        },
+        {
+          "kind": "title",
+          "code": "0x21",
+          "title": "CR2_18.MID :"
+        },
+        {
+          "kind": "title",
+          "code": "0x22",
+          "title": "CR2_19.MID :"
+        },
+        {
+          "kind": "title",
+          "code": "0x23",
+          "title": "CR2_20.MID :"
+        },
+        {
+          "kind": "title",
+          "code": "0x24",
+          "title": "CR2_21.MID :"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/wiz.xml",
+      "source_order": 4979,
+      "archive": "crw2_98",
+      "id": "crw2-98-opna"
+    },
+    {
+      "title": "[PC-9801] Magic Master - Monster Maker",
+      "driver": {
+        "name": "pc98dos",
+        "type": "opn",
+        "alias": "WIZ",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "clockmul",
+          "value": "8"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "NLP_HOOT.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "NL.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "TONE.DTA",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MM2_01A.O",
+          "offset": "11"
+        },
+        {
+          "type": "file",
+          "path": "MM2_01B.O",
+          "offset": "12"
+        },
+        {
+          "type": "file",
+          "path": "MM2_02A.O",
+          "offset": "13"
+        },
+        {
+          "type": "file",
+          "path": "MM2_02B.O",
+          "offset": "14"
+        },
+        {
+          "type": "file",
+          "path": "MM2_03A.O",
+          "offset": "15"
+        },
+        {
+          "type": "file",
+          "path": "MM2_03B.O",
+          "offset": "16"
+        },
+        {
+          "type": "file",
+          "path": "MM2_04A.O",
+          "offset": "17"
+        },
+        {
+          "type": "file",
+          "path": "MM2_04B.O",
+          "offset": "18"
+        },
+        {
+          "type": "file",
+          "path": "MM2_04C.O",
+          "offset": "19"
+        },
+        {
+          "type": "file",
+          "path": "MM2_04D.O",
+          "offset": "20"
+        },
+        {
+          "type": "file",
+          "path": "MM2_06.O",
+          "offset": "21"
+        },
+        {
+          "type": "file",
+          "path": "MM2_08.O",
+          "offset": "22"
+        },
+        {
+          "type": "file",
+          "path": "MM2_END.O",
+          "offset": "23"
+        },
+        {
+          "type": "file",
+          "path": "MM2_GO.O",
+          "offset": "24"
+        },
+        {
+          "type": "file",
+          "path": "MM2_OP.O",
+          "offset": "25"
+        },
+        {
+          "type": "file",
+          "path": "MM2_TT.O",
+          "offset": "26"
+        },
+        {
+          "type": "shell",
+          "path": "NL",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "NLP_HOOT",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "11",
+          "title": "MM2_01A.O"
+        },
+        {
+          "kind": "title",
+          "code": "12",
+          "title": "MM2_01B.O"
+        },
+        {
+          "kind": "title",
+          "code": "13",
+          "title": "MM2_02A.O"
+        },
+        {
+          "kind": "title",
+          "code": "14",
+          "title": "MM2_02B.O"
+        },
+        {
+          "kind": "title",
+          "code": "15",
+          "title": "MM2_03A.O"
+        },
+        {
+          "kind": "title",
+          "code": "16",
+          "title": "MM2_03B.O"
+        },
+        {
+          "kind": "title",
+          "code": "17",
+          "title": "MM2_04A.O"
+        },
+        {
+          "kind": "title",
+          "code": "18",
+          "title": "MM2_04B.O"
+        },
+        {
+          "kind": "title",
+          "code": "19",
+          "title": "MM2_04C.O"
+        },
+        {
+          "kind": "title",
+          "code": "20",
+          "title": "MM2_04D.O"
+        },
+        {
+          "kind": "title",
+          "code": "21",
+          "title": "MM2_06.O"
+        },
+        {
+          "kind": "title",
+          "code": "22",
+          "title": "MM2_08.O"
+        },
+        {
+          "kind": "title",
+          "code": "23",
+          "title": "MM2_END.O"
+        },
+        {
+          "kind": "title",
+          "code": "24",
+          "title": "MM2_GO.O"
+        },
+        {
+          "kind": "title",
+          "code": "25",
+          "title": "MM2_OP.O"
+        },
+        {
+          "kind": "title",
+          "code": "26",
+          "title": "MM2_TT.O"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/wiz.xml",
+      "source_order": 4980,
+      "archive": "mmaker2_98",
+      "id": "mmaker2-98-opn"
+    },
+    {
+      "title": "[PC-9801] Monster Maker",
+      "driver": {
+        "name": "pc98dos",
+        "type": "opn",
+        "alias": "WIZ",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "clockmul",
+          "value": "8"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "mmake_98.com",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "SND7A.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "ARAB.SND",
+          "offset": "11"
+        },
+        {
+          "type": "file",
+          "path": "CHIN.SND",
+          "offset": "12"
+        },
+        {
+          "type": "file",
+          "path": "FLEU.SND",
+          "offset": "13"
+        },
+        {
+          "type": "file",
+          "path": "IHUU.SND",
+          "offset": "14"
+        },
+        {
+          "type": "file",
+          "path": "KONP.SND",
+          "offset": "15"
+        },
+        {
+          "type": "file",
+          "path": "MARC.SND",
+          "offset": "16"
+        },
+        {
+          "type": "file",
+          "path": "MINI.SND",
+          "offset": "17"
+        },
+        {
+          "type": "file",
+          "path": "MIRL.SND",
+          "offset": "18"
+        },
+        {
+          "type": "file",
+          "path": "TREP.SND",
+          "offset": "19"
+        },
+        {
+          "type": "shell",
+          "path": "snd7a",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "mmake_98",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "11",
+          "title": "ARAB.SND :"
+        },
+        {
+          "kind": "title",
+          "code": "12",
+          "title": "CHIN.SND :"
+        },
+        {
+          "kind": "title",
+          "code": "13",
+          "title": "FLEU.SND :"
+        },
+        {
+          "kind": "title",
+          "code": "14",
+          "title": "IHUU.SND :"
+        },
+        {
+          "kind": "title",
+          "code": "15",
+          "title": "KONP.SND :"
+        },
+        {
+          "kind": "title",
+          "code": "16",
+          "title": "MARC.SND :"
+        },
+        {
+          "kind": "title",
+          "code": "17",
+          "title": "MINI.SND :"
+        },
+        {
+          "kind": "title",
+          "code": "18",
+          "title": "MIRL.SND :"
+        },
+        {
+          "kind": "title",
+          "code": "19",
+          "title": "TREP.SND :"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/wiz.xml",
+      "source_order": 4981,
+      "archive": "mmaker_98",
+      "id": "mmaker-98-opn"
+    },
+    {
+      "title": "[PC-9801] ブロッククエスト V",
+      "driver": {
+        "name": "pc98dos",
+        "type": "opn",
+        "alias": "WIZ",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "clockmul",
+          "value": "8"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "NL.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "NLP_HOOT.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "TONE.DTA",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "BQ_CLEAR.O",
+          "offset": "0x10"
+        },
+        {
+          "type": "file",
+          "path": "BQ_COSM.O",
+          "offset": "0x11"
+        },
+        {
+          "type": "file",
+          "path": "BQ_COSM2.O",
+          "offset": "0x12"
+        },
+        {
+          "type": "file",
+          "path": "BQ_END.O",
+          "offset": "0x13"
+        },
+        {
+          "type": "file",
+          "path": "BQ_GOVER.O",
+          "offset": "0x14"
+        },
+        {
+          "type": "file",
+          "path": "BQ_HEART.O",
+          "offset": "0x15"
+        },
+        {
+          "type": "file",
+          "path": "BQ_HOSHI.O",
+          "offset": "0x16"
+        },
+        {
+          "type": "file",
+          "path": "BQ_OVER.O",
+          "offset": "0x17"
+        },
+        {
+          "type": "file",
+          "path": "BQ_QUEST.O",
+          "offset": "0x18"
+        },
+        {
+          "type": "file",
+          "path": "BQ_ST.O",
+          "offset": "0x19"
+        },
+        {
+          "type": "file",
+          "path": "BQ_TITLE.O",
+          "offset": "0x1a"
+        },
+        {
+          "type": "file",
+          "path": "BQ_VIS.O",
+          "offset": "0x1b"
+        },
+        {
+          "type": "shell",
+          "path": "NL -f9 -i",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "NLP_HOOT",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x1a",
+          "title": "BQ_TITLE.O"
+        },
+        {
+          "kind": "title",
+          "code": "0x18",
+          "title": "BQ_QUEST.O"
+        },
+        {
+          "kind": "title",
+          "code": "0x19",
+          "title": "BQ_ST.O"
+        },
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "BQ_COSM.O"
+        },
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "BQ_COSM2.O"
+        },
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "BQ_CLEAR.O"
+        },
+        {
+          "kind": "title",
+          "code": "0x1b",
+          "title": "BQ_VIS.O"
+        },
+        {
+          "kind": "title",
+          "code": "0x17",
+          "title": "BQ_OVER.O"
+        },
+        {
+          "kind": "title",
+          "code": "0x14",
+          "title": "BQ_GOVER.O"
+        },
+        {
+          "kind": "title",
+          "code": "0x15",
+          "title": "BQ_HEART.O"
+        },
+        {
+          "kind": "title",
+          "code": "0x16",
+          "title": "BQ_HOSHI.O"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "BQ_END.O"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/wiz.xml",
+      "source_order": 4982,
+      "archive": "blockq_98",
+      "id": "blockq-98-opn"
+    },
+    {
+      "title": "[PC-9801] Pac-Man(OPN)",
+      "driver": {
+        "name": "pc98dos",
+        "type": "opn",
+        "alias": "WIZ",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "clockmul",
+          "value": "8"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "pacmnf_98.com",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "SND7.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "PACMAIN.COM",
+          "offset": "9"
+        },
+        {
+          "type": "shell",
+          "path": "snd7",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "pacmnf_98",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x00",
+          "title": "スタートミュージック"
+        },
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "コーヒーブレイクミュージック"
+        },
+        {
+          "kind": "title",
+          "code": "0x02",
+          "title": "ゴースト：平常移動"
+        },
+        {
+          "kind": "title",
+          "code": "0x05",
+          "title": "ゴースト：いじけ"
+        },
+        {
+          "kind": "title",
+          "code": "0x0a",
+          "title": "ゴースト：巣に戻る"
+        },
+        {
+          "kind": "title",
+          "code": "0x03",
+          "title": "パックマン：クッキーを食べる1"
+        },
+        {
+          "kind": "title",
+          "code": "0x04",
+          "title": "パックマン：クッキーを食べる2"
+        },
+        {
+          "kind": "title",
+          "code": "0x0b",
+          "title": "パックマン：フルーツを食べる"
+        },
+        {
+          "kind": "title",
+          "code": "0x06",
+          "title": "パックマン：ゴーストを食べる"
+        },
+        {
+          "kind": "title",
+          "code": "0x07",
+          "title": "ミス"
+        },
+        {
+          "kind": "title",
+          "code": "0x09",
+          "title": "エクステンドサウンド"
+        },
+        {
+          "kind": "title",
+          "code": "0x08",
+          "title": "ポーズ"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/wiz.xml",
+      "source_order": 4983,
+      "archive": "pacman_98",
+      "id": "pacman-98-opn"
+    },
+    {
+      "title": "[PC-9801] Pac-Man(BEEP)",
+      "driver": {
+        "name": "pc98dos",
+        "type": "beep",
+        "alias": "WIZ",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "clockmul",
+          "value": "8"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "pacmn_98.com",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "rbeep.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "PACMAIN.COM",
+          "offset": "9"
+        },
+        {
+          "type": "shell",
+          "path": "rbeep",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "pacmn_98",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x00",
+          "title": "スタートミュージック"
+        },
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "コーヒーブレイクミュージック"
+        },
+        {
+          "kind": "title",
+          "code": "0x02",
+          "title": "ゴースト：平常移動"
+        },
+        {
+          "kind": "title",
+          "code": "0x05",
+          "title": "ゴースト：いじけ"
+        },
+        {
+          "kind": "title",
+          "code": "0x0a",
+          "title": "ゴースト：巣に戻る"
+        },
+        {
+          "kind": "title",
+          "code": "0x03",
+          "title": "パックマン：クッキーを食べる1"
+        },
+        {
+          "kind": "title",
+          "code": "0x04",
+          "title": "パックマン：クッキーを食べる2"
+        },
+        {
+          "kind": "title",
+          "code": "0x0b",
+          "title": "パックマン：フルーツを食べる"
+        },
+        {
+          "kind": "title",
+          "code": "0x06",
+          "title": "パックマン：ゴーストを食べる"
+        },
+        {
+          "kind": "title",
+          "code": "0x07",
+          "title": "ミス"
+        },
+        {
+          "kind": "title",
+          "code": "0x09",
+          "title": "エクステンドサウンド"
+        },
+        {
+          "kind": "title",
+          "code": "0x08",
+          "title": "ポーズ"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/wiz.xml",
+      "source_order": 4984,
+      "archive": "pacman_98",
+      "id": "pacman-98-beep"
+    },
+    {
+      "title": "[PC-9801] SPACE INVADERS - ORIGINAL VERSION(OPN)",
+      "driver": {
+        "name": "pc98dos",
+        "type": "opn",
+        "alias": "WIZ",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "clockmul",
+          "value": "8"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "hinv_98.com",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "rbeep.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "HINV.COM",
+          "offset": "9"
+        },
+        {
+          "type": "shell",
+          "path": "rbeep",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "hinv_98",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x00",
+          "title": "Main BGM #0"
+        },
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "Main BGM #1"
+        },
+        {
+          "kind": "title",
+          "code": "0x02",
+          "title": "Main BGM #2"
+        },
+        {
+          "kind": "title",
+          "code": "0x03",
+          "title": "Game Over"
+        },
+        {
+          "kind": "range",
+          "min": "0x100",
+          "max": "0x109",
+          "title_format": "SE 0x%02x",
+          "extcode": "0",
+          "start": "0"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/wiz.xml",
+      "source_order": 4985,
+      "archive": "spinv_98",
+      "id": "spinv-98-opn"
+    },
+    {
+      "title": "[PC-9801] SPACE INVADERS - ORIGINAL VERSION(BEEP)",
+      "driver": {
+        "name": "pc98dos",
+        "type": "beep",
+        "alias": "WIZ",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "clockmul",
+          "value": "8"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "hinv_98.com",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "rbeep.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "HINV.COM",
+          "offset": "9"
+        },
+        {
+          "type": "shell",
+          "path": "rbeep",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "hinv_98",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x00",
+          "title": "Main BGM #0"
+        },
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "Main BGM #1"
+        },
+        {
+          "kind": "title",
+          "code": "0x02",
+          "title": "Main BGM #2"
+        },
+        {
+          "kind": "title",
+          "code": "0x03",
+          "title": "Game Over"
+        },
+        {
+          "kind": "range",
+          "min": "0x100",
+          "max": "0x109",
+          "title_format": "SE 0x%02x",
+          "extcode": "0",
+          "start": "0"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/wiz.xml",
+      "source_order": 4986,
+      "archive": "spinv_98",
+      "id": "spinv-98-beep"
+    },
+    {
+      "title": "[PC-9801] SPACE INVADERS - PARODY VERSION(OPN)",
+      "driver": {
+        "name": "pc98dos",
+        "type": "opn",
+        "alias": "WIZ",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "clockmul",
+          "value": "8"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "pinv_98.com",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "rbeep.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "PINV.COM",
+          "offset": "9"
+        },
+        {
+          "type": "shell",
+          "path": "rbeep",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "pinv_98",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x00",
+          "title": "Main BGM #0"
+        },
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "Main BGM #1"
+        },
+        {
+          "kind": "title",
+          "code": "0x03",
+          "title": "Game Over"
+        },
+        {
+          "kind": "range",
+          "min": "0x100",
+          "max": "0x109",
+          "title_format": "SE 0x%02x",
+          "extcode": "0",
+          "start": "0"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/wiz.xml",
+      "source_order": 4987,
+      "archive": "spinv_98",
+      "id": "spinv-98-opn-2"
+    },
+    {
+      "title": "[PC-9801] SPACE INVADERS - PARODY VERSION(BEEP)",
+      "driver": {
+        "name": "pc98dos",
+        "type": "beep",
+        "alias": "WIZ",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "clockmul",
+          "value": "8"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "pinv_98.com",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "rbeep.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "PINV.COM",
+          "offset": "9"
+        },
+        {
+          "type": "shell",
+          "path": "rbeep",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "pinv_98",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x00",
+          "title": "Main BGM #0"
+        },
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "Main BGM #1"
+        },
+        {
+          "kind": "title",
+          "code": "0x03",
+          "title": "Game Over"
+        },
+        {
+          "kind": "range",
+          "min": "0x100",
+          "max": "0x109",
+          "title_format": "SE 0x%02x",
+          "extcode": "0",
+          "start": "0"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/wiz.xml",
+      "source_order": 4988,
+      "archive": "spinv_98",
+      "id": "spinv-98-beep-2"
+    }
+  ]
+}

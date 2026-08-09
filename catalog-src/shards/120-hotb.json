@@ -1,0 +1,836 @@
+{
+  "format": "hoot-catalog-shard",
+  "version": 1,
+  "source_file": "xml/hotb.xml",
+  "date": "2005/09/25",
+  "comments": [
+    " //HOT-B "
+  ],
+  "games": [
+    {
+      "title": "[X68000] SLIMYER",
+      "driver": {
+        "name": "x68k",
+        "type": "generic",
+        "alias": "HOT-B",
+        "platform": "SHARP X68000"
+      },
+      "options": [
+        {
+          "name": "opm_mix",
+          "value": "0x100"
+        },
+        {
+          "name": "pcm_mix",
+          "value": "0x100"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "slm68snd.bin",
+          "offset": "0x00000"
+        },
+        {
+          "type": "code",
+          "path": "SLIMYU.R",
+          "offset": "0x10000"
+        },
+        {
+          "type": "code",
+          "path": "SLMUS.MDT",
+          "offset": "0x12944"
+        },
+        {
+          "type": "code",
+          "path": "KON.PCM",
+          "offset": "0x17e80"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "01 : Title"
+        },
+        {
+          "kind": "title",
+          "code": "0x02",
+          "title": "02 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x03",
+          "title": "03 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x04",
+          "title": "04 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x05",
+          "title": "05 :"
+        },
+        {
+          "kind": "title",
+          "code": "0x06",
+          "title": "06 : Game Over"
+        },
+        {
+          "kind": "title",
+          "code": "0x07",
+          "title": "07 : Ending"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/hotb.xml",
+      "source_order": 2538,
+      "archive": "slmy68snd",
+      "id": "slmy68snd-generic"
+    },
+    {
+      "title": "[PC-9801] THE 7colors(OPN)",
+      "driver": {
+        "name": "pc98dos",
+        "type": "opn",
+        "alias": "HOT-B",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "clockmul",
+          "value": "8"
+        },
+        {
+          "name": "showfm3ex",
+          "value": "1"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "TRPSCR98.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "TRPSCHRN.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "SEVEN01.MDT",
+          "offset": "0x10"
+        },
+        {
+          "type": "file",
+          "path": "SEVEN02.MDT",
+          "offset": "0x11"
+        },
+        {
+          "type": "file",
+          "path": "SEVEN03.MDT",
+          "offset": "0x12"
+        },
+        {
+          "type": "file",
+          "path": "SEVEN04.MDT",
+          "offset": "0x13"
+        },
+        {
+          "type": "file",
+          "path": "SEVEN05.MDT",
+          "offset": "0x14"
+        },
+        {
+          "type": "shell",
+          "path": "TRPSCHRN",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "TRPSCR98",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "SEVEN01.MDT :"
+        },
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "SEVEN02.MDT :"
+        },
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "SEVEN03.MDT :"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "SEVEN04.MDT :"
+        },
+        {
+          "kind": "title",
+          "code": "0x14",
+          "title": "SEVEN05.MDT :"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/hotb.xml",
+      "source_order": 2539,
+      "archive": "7colors_98",
+      "id": "7colors-98-opn"
+    },
+    {
+      "title": "[PC-9801] THE 7colors(MT-32)",
+      "driver": {
+        "name": "pc98dos",
+        "type": "beep",
+        "alias": "HOT-B",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "clockmul",
+          "value": "8"
+        },
+        {
+          "name": "midiout",
+          "value": "1"
+        },
+        {
+          "name": "midiout_type",
+          "value": "2"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "7COLM_98.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MIDIDRV.EXE",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "PP01.MDT",
+          "offset": "0x10"
+        },
+        {
+          "type": "file",
+          "path": "PP02.MDT",
+          "offset": "0x11"
+        },
+        {
+          "type": "file",
+          "path": "PP03.MDT",
+          "offset": "0x12"
+        },
+        {
+          "type": "file",
+          "path": "PP04.MDT",
+          "offset": "0x13"
+        },
+        {
+          "type": "file",
+          "path": "PP05.MDT",
+          "offset": "0x14"
+        },
+        {
+          "type": "shell",
+          "path": "MIDIDRV",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "7COLM_98",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x000010",
+          "title": "PP01.MDT :"
+        },
+        {
+          "kind": "title",
+          "code": "0x010011",
+          "title": "PP02.MDT :"
+        },
+        {
+          "kind": "title",
+          "code": "0x010012",
+          "title": "PP03.MDT :"
+        },
+        {
+          "kind": "title",
+          "code": "0x010013",
+          "title": "PP04.MDT :"
+        },
+        {
+          "kind": "title",
+          "code": "0x000014",
+          "title": "PP05.MDT :"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/hotb.xml",
+      "source_order": 2540,
+      "archive": "7colors_98",
+      "id": "7colors-98-beep"
+    },
+    {
+      "title": "[PC-9801] THE 7colors(MT-32 Emulation)",
+      "driver": {
+        "name": "pc98dos",
+        "type": "beep",
+        "alias": "HOT-B",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "clockmul",
+          "value": "8"
+        },
+        {
+          "name": "midiout",
+          "value": "1"
+        },
+        {
+          "name": "midiout_type",
+          "value": "1"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "7COLM_98.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MIDIDRV.EXE",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "PP01.MDT",
+          "offset": "0x10"
+        },
+        {
+          "type": "file",
+          "path": "PP02.MDT",
+          "offset": "0x11"
+        },
+        {
+          "type": "file",
+          "path": "PP03.MDT",
+          "offset": "0x12"
+        },
+        {
+          "type": "file",
+          "path": "PP04.MDT",
+          "offset": "0x13"
+        },
+        {
+          "type": "file",
+          "path": "PP05.MDT",
+          "offset": "0x14"
+        },
+        {
+          "type": "shell",
+          "path": "MIDIDRV",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "7COLM_98",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x000010",
+          "title": "PP01.MDT :"
+        },
+        {
+          "kind": "title",
+          "code": "0x010011",
+          "title": "PP02.MDT :"
+        },
+        {
+          "kind": "title",
+          "code": "0x010012",
+          "title": "PP03.MDT :"
+        },
+        {
+          "kind": "title",
+          "code": "0x010013",
+          "title": "PP04.MDT :"
+        },
+        {
+          "kind": "title",
+          "code": "0x000014",
+          "title": "PP05.MDT :"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/hotb.xml",
+      "source_order": 2541,
+      "archive": "7colors_98",
+      "id": "7colors-98-beep-2"
+    },
+    {
+      "title": "[X68000] SUPER上海 DRAGON'S EYE(OPM)",
+      "driver": {
+        "name": "x68k",
+        "type": "generic",
+        "alias": "HOT-B",
+        "platform": "SHARP X68000"
+      },
+      "options": [
+        {
+          "name": "opm_mix",
+          "value": "0xc0"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "opmdrv.bin"
+        },
+        {
+          "type": "x",
+          "path": "OPMDRV.X",
+          "offset": "0x08000"
+        },
+        {
+          "type": "code",
+          "path": "FM.000",
+          "offset": "0x24000"
+        },
+        {
+          "type": "code",
+          "path": "FM.001",
+          "offset": "0x28000"
+        },
+        {
+          "type": "code",
+          "path": "FM.002",
+          "offset": "0x2c000"
+        },
+        {
+          "type": "code",
+          "path": "FM.003",
+          "offset": "0x30000"
+        },
+        {
+          "type": "code",
+          "path": "FM.004",
+          "offset": "0x34000"
+        },
+        {
+          "type": "code",
+          "path": "FM.005",
+          "offset": "0x38000"
+        },
+        {
+          "type": "code",
+          "path": "FM.006",
+          "offset": "0x3c000"
+        },
+        {
+          "type": "code",
+          "path": "FM.007",
+          "offset": "0x40000"
+        },
+        {
+          "type": "code",
+          "path": "FM.008",
+          "offset": "0x44000"
+        },
+        {
+          "type": "code",
+          "path": "FM.009",
+          "offset": "0x48000"
+        },
+        {
+          "type": "code",
+          "path": "FM.010",
+          "offset": "0x4c000"
+        },
+        {
+          "type": "code",
+          "path": "FM.011",
+          "offset": "0x50000"
+        },
+        {
+          "type": "code",
+          "path": "FM.012",
+          "offset": "0x54000"
+        },
+        {
+          "type": "code",
+          "path": "FM.013",
+          "offset": "0x58000"
+        },
+        {
+          "type": "code",
+          "path": "FM.014",
+          "offset": "0x5c000"
+        },
+        {
+          "type": "code",
+          "path": "FM.015",
+          "offset": "0x60000"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x02",
+          "title": "FM.BGM : 00"
+        },
+        {
+          "kind": "title",
+          "code": "0x03",
+          "title": "FM.BGM : 01"
+        },
+        {
+          "kind": "title",
+          "code": "0x04",
+          "title": "FM.BGM : 02"
+        },
+        {
+          "kind": "title",
+          "code": "0x05",
+          "title": "FM.BGM : 03"
+        },
+        {
+          "kind": "title",
+          "code": "0x06",
+          "title": "FM.BGM : 04"
+        },
+        {
+          "kind": "title",
+          "code": "0x07",
+          "title": "FM.BGM : 05"
+        },
+        {
+          "kind": "title",
+          "code": "0x08",
+          "title": "FM.BGM : 06"
+        },
+        {
+          "kind": "title",
+          "code": "0x09",
+          "title": "FM.BGM : 07"
+        },
+        {
+          "kind": "title",
+          "code": "0x0a",
+          "title": "FM.BGM : 08"
+        },
+        {
+          "kind": "title",
+          "code": "0x0b",
+          "title": "FM.BGM : 09"
+        },
+        {
+          "kind": "title",
+          "code": "0x0c",
+          "title": "FM.BGM : 10"
+        },
+        {
+          "kind": "title",
+          "code": "0x0d",
+          "title": "FM.BGM : 11"
+        },
+        {
+          "kind": "title",
+          "code": "0x0e",
+          "title": "FM.BGM : 12"
+        },
+        {
+          "kind": "title",
+          "code": "0x0f",
+          "title": "FM.BGM : 13"
+        },
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "FM.BGM : 14"
+        },
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "FM.BGM : 15"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/hotb.xml",
+      "source_order": 2542,
+      "archive": "sshang68snd",
+      "id": "sshang68snd-generic"
+    },
+    {
+      "title": "[MSX] SUPER上海 DRAGON'S EYE(OPLL)",
+      "driver": {
+        "name": "msx",
+        "type": "generic",
+        "alias": "HOT-B",
+        "platform": "MSX"
+      },
+      "options": [
+        {
+          "name": "init_pc",
+          "value": "0x0400"
+        },
+        {
+          "name": "use_opll",
+          "value": "0x01"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "patch2",
+          "offset": "0x0400"
+        },
+        {
+          "type": "code",
+          "path": "FMPAC.ROM",
+          "offset": "0x4000"
+        },
+        {
+          "type": "code",
+          "path": "OPLBGM.SND",
+          "offset": "0x8200"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "range",
+          "min": "0x00",
+          "max": "0x0f",
+          "title_format": "OPLBGM.SND : %02x",
+          "extcode": "1"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/hotb.xml",
+      "source_order": 2543,
+      "archive": "sshang_msx,fmpac_msx",
+      "id": "sshang-msx-fmpac-msx-generic"
+    },
+    {
+      "title": "[MSX] SUPER上海 DRAGON'S EYE(PSG)",
+      "driver": {
+        "name": "msx",
+        "type": "generic",
+        "alias": "HOT-B",
+        "platform": "MSX"
+      },
+      "options": [
+        {
+          "name": "init_pc",
+          "value": "0x0400"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "SHANGHAI.COM",
+          "offset": "0x0100"
+        },
+        {
+          "type": "code",
+          "path": "patch",
+          "offset": "0x0400"
+        },
+        {
+          "type": "code",
+          "path": "PSGBGM.SND",
+          "offset": "0x9000"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "range",
+          "min": "0x00",
+          "max": "0x0f",
+          "title_format": "PSGBGM.SND : %02x",
+          "extcode": "1"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/hotb.xml",
+      "source_order": 2544,
+      "archive": "sshang_msx",
+      "id": "sshang-msx-generic"
+    },
+    {
+      "title": "[MSX] 中華大仙",
+      "driver": {
+        "name": "msx",
+        "type": "generic",
+        "alias": "HOT-B",
+        "platform": "MSX"
+      },
+      "options": [
+        {
+          "name": "init_pc",
+          "value": "0xb000"
+        },
+        {
+          "name": "total_mix",
+          "value": "0x140"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "patch",
+          "offset": "0xb000"
+        },
+        {
+          "type": "code",
+          "path": "DS.COM",
+          "offset": "0x0100"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0xff00",
+          "title": "五行山"
+        },
+        {
+          "kind": "title",
+          "code": "0xff01",
+          "title": "黄河"
+        },
+        {
+          "kind": "title",
+          "code": "0xff02",
+          "title": "万里長城"
+        },
+        {
+          "kind": "title",
+          "code": "0xff03",
+          "title": "泰山"
+        },
+        {
+          "kind": "title",
+          "code": "0xff04",
+          "title": "天上界"
+        },
+        {
+          "kind": "title",
+          "code": "0xff05",
+          "title": "ボス"
+        },
+        {
+          "kind": "title",
+          "code": "0xff06",
+          "title": "法術セレクト"
+        },
+        {
+          "kind": "title",
+          "code": "0xff07",
+          "title": "エンディング"
+        },
+        {
+          "kind": "title",
+          "code": "0x0108",
+          "title": "ゲームオーバー"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/hotb.xml",
+      "source_order": 2545,
+      "archive": "chukatai_msx",
+      "id": "chukatai-msx-generic"
+    },
+    {
+      "title": "[MSX] PALAMEDES",
+      "driver": {
+        "name": "msx",
+        "type": "generic",
+        "alias": "HOT-B",
+        "platform": "MSX"
+      },
+      "options": [
+        {
+          "name": "init_pc",
+          "value": "0x400"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "patch",
+          "offset": "0x0400"
+        },
+        {
+          "type": "code",
+          "path": "DRIVER.BIN",
+          "offset": "0x9000"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x03",
+          "title": "セレクト"
+        },
+        {
+          "kind": "title",
+          "code": "0x00",
+          "title": "メインBGM"
+        },
+        {
+          "kind": "title",
+          "code": "0x02",
+          "title": "クリア"
+        },
+        {
+          "kind": "title",
+          "code": "0x04",
+          "title": "ゲームオーバー"
+        },
+        {
+          "kind": "range",
+          "min": "0x05",
+          "max": "0x05",
+          "title_format": "BGM 0x%02x",
+          "extcode": "1"
+        },
+        {
+          "kind": "range",
+          "min": "0x100",
+          "max": "0x108",
+          "title_format": "SE 0x%02x",
+          "extcode": "1"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/hotb.xml",
+      "source_order": 2546,
+      "archive": "palameds_msx",
+      "id": "palameds-msx-generic"
+    }
+  ]
+}

@@ -1,0 +1,284 @@
+{
+  "format": "hoot-catalog-shard",
+  "version": 1,
+  "source_file": "xml/zeit.xml",
+  "date": "2010/01/25",
+  "comments": [
+    " //Zeit "
+  ],
+  "games": [
+    {
+      "title": "[X68000] ねじ式",
+      "driver": {
+        "name": "x68k",
+        "type": "generic",
+        "alias": "Zeit",
+        "platform": "SHARP X68000"
+      },
+      "options": [],
+      "assets": [
+        {
+          "type": "code",
+          "path": "opmdrv.bin"
+        },
+        {
+          "type": "x",
+          "path": "OPMDRV.X",
+          "offset": "0x08000"
+        },
+        {
+          "type": "code",
+          "path": "NEJISIKI.OPM",
+          "offset": "0x24000"
+        },
+        {
+          "type": "code",
+          "path": "BGM1.OPM",
+          "offset": "0x28000"
+        },
+        {
+          "type": "code",
+          "path": "BGM3.OPM",
+          "offset": "0x2c000"
+        },
+        {
+          "type": "code",
+          "path": "MAIN_BGM.OPM",
+          "offset": "0x30000"
+        },
+        {
+          "type": "code",
+          "path": "E_2.OPM",
+          "offset": "0x34000"
+        },
+        {
+          "type": "code",
+          "path": "G_1.OPM",
+          "offset": "0x38000"
+        },
+        {
+          "type": "code",
+          "path": "MA_1.OPM",
+          "offset": "0x3c000"
+        },
+        {
+          "type": "code",
+          "path": "MA_2.OPM",
+          "offset": "0x40000"
+        },
+        {
+          "type": "code",
+          "path": "MA_3.OPM",
+          "offset": "0x44000"
+        },
+        {
+          "type": "code",
+          "path": "M_1.OPM",
+          "offset": "0x48000"
+        },
+        {
+          "type": "code",
+          "path": "M_2.OPM",
+          "offset": "0x4c000"
+        },
+        {
+          "type": "code",
+          "path": "NA_1.OPM",
+          "offset": "0x50000"
+        },
+        {
+          "type": "code",
+          "path": "NA_2.OPM",
+          "offset": "0x54000"
+        },
+        {
+          "type": "code",
+          "path": "O_1.OPM",
+          "offset": "0x58000"
+        },
+        {
+          "type": "code",
+          "path": "SE_B.OPM",
+          "offset": "0x5c000"
+        },
+        {
+          "type": "code",
+          "path": "SE_U.OPM",
+          "offset": "0x60000"
+        },
+        {
+          "type": "code",
+          "path": "SE_W.OPM",
+          "offset": "0x64000"
+        },
+        {
+          "type": "code",
+          "path": "SYO1.OPM",
+          "offset": "0x68000"
+        },
+        {
+          "type": "code",
+          "path": "SYO2.OPM",
+          "offset": "0x6c000"
+        },
+        {
+          "type": "code",
+          "path": "SYO3.OPM",
+          "offset": "0x70000"
+        },
+        {
+          "type": "code",
+          "path": "SYO4.OPM",
+          "offset": "0x74000"
+        },
+        {
+          "type": "code",
+          "path": "SYO5.OPM",
+          "offset": "0x78000"
+        },
+        {
+          "type": "code",
+          "path": "SYO6.OPM",
+          "offset": "0x7c000"
+        },
+        {
+          "type": "code",
+          "path": "SY_1.OPM",
+          "offset": "0x80000"
+        },
+        {
+          "type": "code",
+          "path": "S_1.OPM",
+          "offset": "0x90000"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x020f",
+          "title": "O_1.DAT      : オープニング"
+        },
+        {
+          "kind": "title",
+          "code": "0x020b",
+          "title": "M_1.DAT      : タイトル"
+        },
+        {
+          "kind": "title",
+          "code": "0x020e",
+          "title": "NA_2.DAT     : 内部"
+        },
+        {
+          "kind": "title",
+          "code": "0x020d",
+          "title": "NA_1.DAT     : 内部"
+        },
+        {
+          "kind": "title",
+          "code": "0x0204",
+          "title": "BGM3.DAT     : メインBGM"
+        },
+        {
+          "kind": "title",
+          "code": "0x0205",
+          "title": "MAIN_BGM.DAT : メインBGM (非ループ)"
+        },
+        {
+          "kind": "title",
+          "code": "0x0208",
+          "title": "MA_1.DAT     : 回想"
+        },
+        {
+          "kind": "title",
+          "code": "0x0209",
+          "title": "MA_2.DAT     : 探索(ビル)"
+        },
+        {
+          "kind": "title",
+          "code": "0x0207",
+          "title": "G_1.DAT      : 赤い絵"
+        },
+        {
+          "kind": "title",
+          "code": "0x020a",
+          "title": "MA_3.DAT     : 探索(樹海)"
+        },
+        {
+          "kind": "title",
+          "code": "0x0203",
+          "title": "BGM1.DAT     : 海辺"
+        },
+        {
+          "kind": "title",
+          "code": "0x020c",
+          "title": "M_2.DAT      : 手術"
+        },
+        {
+          "kind": "title",
+          "code": "0x0219",
+          "title": "SY_1.DAT     : ゲンセンカン"
+        },
+        {
+          "kind": "title",
+          "code": "0x0206",
+          "title": "E_2.DAT      : エンディング"
+        },
+        {
+          "kind": "title",
+          "code": "0x021d",
+          "title": "S_1.DAT      : セーブ"
+        },
+        {
+          "kind": "title",
+          "code": "0x0210",
+          "title": "SE_B.DAT     : SE"
+        },
+        {
+          "kind": "title",
+          "code": "0x0211",
+          "title": "SE_U.DAT     : SE"
+        },
+        {
+          "kind": "title",
+          "code": "0x0212",
+          "title": "SE_W.DAT     : SE"
+        },
+        {
+          "kind": "title",
+          "code": "0x0213",
+          "title": "SYO1.DAT     : SE"
+        },
+        {
+          "kind": "title",
+          "code": "0x0214",
+          "title": "SYO2.DAT     : SE"
+        },
+        {
+          "kind": "title",
+          "code": "0x0215",
+          "title": "SYO3.DAT     : SE"
+        },
+        {
+          "kind": "title",
+          "code": "0x0216",
+          "title": "SYO4.DAT     : SE"
+        },
+        {
+          "kind": "title",
+          "code": "0x0217",
+          "title": "SYO5.DAT     : SE"
+        },
+        {
+          "kind": "title",
+          "code": "0x0218",
+          "title": "SYO6.DAT     : SE"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/zeit.xml",
+      "source_order": 5188,
+      "archive": "neji68snd",
+      "id": "neji68snd-generic"
+    }
+  ]
+}

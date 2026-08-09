@@ -1,0 +1,765 @@
+{
+  "format": "hoot-catalog-shard",
+  "version": 1,
+  "source_file": "xml/ving.xml",
+  "date": "2008/02/26",
+  "comments": [
+    "//VING "
+  ],
+  "games": [
+    {
+      "title": "[X68000] スーパーリアル麻雀PII&PIII",
+      "driver": {
+        "name": "x68k",
+        "type": "generic",
+        "alias": "VING",
+        "platform": "SHARP X68000"
+      },
+      "options": [
+        {
+          "name": "opm_mix",
+          "value": "0x70"
+        },
+        {
+          "name": "pcm_mix",
+          "value": "0x82"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "p368snd.bin",
+          "offset": "0x00000"
+        },
+        {
+          "type": "x",
+          "path": "AXDRIVE.X",
+          "offset": "0x10000"
+        },
+        {
+          "type": "code",
+          "path": "PCMDATA.PDX",
+          "offset": "0x13000"
+        },
+        {
+          "type": "code",
+          "path": "P01.MDX",
+          "offset": "0x34000"
+        },
+        {
+          "type": "code",
+          "path": "P02.MDX",
+          "offset": "0x38000"
+        },
+        {
+          "type": "code",
+          "path": "P03.MDX",
+          "offset": "0x3C000"
+        },
+        {
+          "type": "code",
+          "path": "P04.MDX",
+          "offset": "0x40000"
+        },
+        {
+          "type": "code",
+          "path": "P05.MDX",
+          "offset": "0x44000"
+        },
+        {
+          "type": "code",
+          "path": "P06.MDX",
+          "offset": "0x48000"
+        },
+        {
+          "type": "code",
+          "path": "P08.MDX",
+          "offset": "0x4C000"
+        },
+        {
+          "type": "code",
+          "path": "P09.MDX",
+          "offset": "0x50000"
+        },
+        {
+          "type": "code",
+          "path": "P10.MDX",
+          "offset": "0x54000"
+        },
+        {
+          "type": "code",
+          "path": "P11.MDX",
+          "offset": "0x58000"
+        },
+        {
+          "type": "code",
+          "path": "P12.MDX",
+          "offset": "0x5C000"
+        },
+        {
+          "type": "code",
+          "path": "P13.MDX",
+          "offset": "0x60000"
+        },
+        {
+          "type": "code",
+          "path": "P16.MDX",
+          "offset": "0x64000"
+        },
+        {
+          "type": "code",
+          "path": "PO00.MDX",
+          "offset": "0x68000"
+        },
+        {
+          "type": "code",
+          "path": "PO05.MDX",
+          "offset": "0x6C000"
+        },
+        {
+          "type": "code",
+          "path": "PO06.MDX",
+          "offset": "0x70000"
+        },
+        {
+          "type": "code",
+          "path": "PO08.MDX",
+          "offset": "0x74000"
+        },
+        {
+          "type": "code",
+          "path": "PO09.MDX",
+          "offset": "0x78000"
+        },
+        {
+          "type": "code",
+          "path": "PO10.MDX",
+          "offset": "0x7C000"
+        },
+        {
+          "type": "code",
+          "path": "PO11.MDX",
+          "offset": "0x80000"
+        },
+        {
+          "type": "code",
+          "path": "PO12.MDX",
+          "offset": "0x84000"
+        },
+        {
+          "type": "code",
+          "path": "PO13.MDX",
+          "offset": "0x88000"
+        },
+        {
+          "type": "code",
+          "path": "PO14.MDX",
+          "offset": "0x8C000"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "P01.MDX  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x02",
+          "title": "P02.MDX  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x03",
+          "title": "P03.MDX  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x04",
+          "title": "P04.MDX  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x05",
+          "title": "P05.MDX  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x06",
+          "title": "P06.MDX  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x07",
+          "title": "P08.MDX  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x08",
+          "title": "P09.MDX  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x09",
+          "title": "P10.MDX  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x0a",
+          "title": "P11.MDX  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x0b",
+          "title": "P12.MDX  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x0c",
+          "title": "P13.MDX  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x0d",
+          "title": "P16.MDX  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x0e",
+          "title": "PO00.MDX :"
+        },
+        {
+          "kind": "title",
+          "code": "0x0f",
+          "title": "PO05.MDX :"
+        },
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "PO06.MDX :"
+        },
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "PO08.MDX :"
+        },
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "PO09.MDX :"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "PO10.MDX :"
+        },
+        {
+          "kind": "title",
+          "code": "0x14",
+          "title": "PO11.MDX :"
+        },
+        {
+          "kind": "title",
+          "code": "0x15",
+          "title": "PO12.MDX :"
+        },
+        {
+          "kind": "title",
+          "code": "0x16",
+          "title": "PO13.MDX :"
+        },
+        {
+          "kind": "title",
+          "code": "0x17",
+          "title": "PO14.MDX :"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/ving.xml",
+      "source_order": 4901,
+      "archive": "srmp2368snd",
+      "id": "srmp2368snd-generic"
+    },
+    {
+      "title": "[PC-9801] スーパーリアル麻雀PIV",
+      "driver": {
+        "name": "pc98dos",
+        "type": "opn",
+        "alias": "VING",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "clockmul",
+          "value": "8"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "SRMP4_98.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MUSIC.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "P4.MDP",
+          "offset": "7"
+        },
+        {
+          "type": "file",
+          "path": "OPN2.DAT",
+          "offset": "8"
+        },
+        {
+          "type": "file",
+          "path": "SSG2.DAT",
+          "offset": "9"
+        },
+        {
+          "type": "shell",
+          "path": "music",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "srmp4_98",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x00",
+          "title": "P4.MDP"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/ving.xml",
+      "source_order": 4902,
+      "archive": "srmp4_98",
+      "id": "srmp4-98-opn"
+    },
+    {
+      "title": "[PC-9821] スーパーリアル麻雀PIV FINAL(OPN)",
+      "driver": {
+        "name": "pc98dos",
+        "type": "opn",
+        "alias": "VING",
+        "platform": "NEC PC-9821"
+      },
+      "options": [
+        {
+          "name": "clockmul",
+          "value": "8"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "SRMP4_21.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MUSIC.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "P4.MDP",
+          "offset": "7"
+        },
+        {
+          "type": "file",
+          "path": "OPN2.DAT",
+          "offset": "8"
+        },
+        {
+          "type": "file",
+          "path": "SSG2.DAT",
+          "offset": "9"
+        },
+        {
+          "type": "shell",
+          "path": "music 1",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "srmp4_21",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x00",
+          "title": "P4.MDP"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/ving.xml",
+      "source_order": 4903,
+      "archive": "srmp4_21",
+      "id": "srmp4-21-opn"
+    },
+    {
+      "title": "[PC-9821] スーパーリアル麻雀PIV FINAL(86)",
+      "driver": {
+        "name": "pc98dos",
+        "type": "86",
+        "alias": "VING",
+        "platform": "NEC PC-9821"
+      },
+      "options": [
+        {
+          "name": "clockmul",
+          "value": "8"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "SRMP4_21.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MUSIC.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "P486.MDP",
+          "offset": "7"
+        },
+        {
+          "type": "file",
+          "path": "OPN2.DAT",
+          "offset": "8"
+        },
+        {
+          "type": "file",
+          "path": "SSG2.DAT",
+          "offset": "9"
+        },
+        {
+          "type": "shell",
+          "path": "music 1",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "srmp4_21",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x00",
+          "title": "P4.MDP"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/ving.xml",
+      "source_order": 4904,
+      "archive": "srmp4_21",
+      "id": "srmp4-21-86"
+    },
+    {
+      "title": "[PC-9821] スーパーリアル麻雀PIV FINAL(GM)",
+      "driver": {
+        "name": "pc98dos",
+        "type": "beep",
+        "alias": "VING",
+        "platform": "NEC PC-9821"
+      },
+      "options": [
+        {
+          "name": "clockmul",
+          "value": "8"
+        },
+        {
+          "name": "midiout",
+          "value": "1"
+        },
+        {
+          "name": "midiout_type",
+          "value": "4"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "SRMP4_21.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MUSIC.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "P4M.MDP",
+          "offset": "7"
+        },
+        {
+          "type": "file",
+          "path": "OPN2.DAT",
+          "offset": "8"
+        },
+        {
+          "type": "file",
+          "path": "SSG2.DAT",
+          "offset": "9"
+        },
+        {
+          "type": "shell",
+          "path": "music 1",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "srmp4_21",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x00",
+          "title": "P4.MDP"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/ving.xml",
+      "source_order": 4905,
+      "archive": "srmp4_21",
+      "id": "srmp4-21-beep"
+    },
+    {
+      "title": "[PC-9821] スーパーリアル麻雀PIV FINAL(SB16)",
+      "driver": {
+        "name": "pc98dos",
+        "type": "soundblaster16",
+        "alias": "VING",
+        "platform": "NEC PC-9821"
+      },
+      "options": [
+        {
+          "name": "clockmul",
+          "value": "8"
+        },
+        {
+          "name": "opl3_mix",
+          "value": "0x0c0"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "SRMP4_21.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MUSIC.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "P4B.MDP",
+          "offset": "7"
+        },
+        {
+          "type": "file",
+          "path": "OPL2.DAT",
+          "offset": "8"
+        },
+        {
+          "type": "file",
+          "path": "SSG2.DAT",
+          "offset": "9"
+        },
+        {
+          "type": "shell",
+          "path": "music 1",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "srmp4_21",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x00",
+          "title": "P4.MDP"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/ving.xml",
+      "source_order": 4906,
+      "archive": "srmp4_21",
+      "id": "srmp4-21-soundblaster16"
+    },
+    {
+      "title": "[X68000] スーパーリアル麻雀PIV(OPM)",
+      "driver": {
+        "name": "x68k",
+        "type": "generic",
+        "alias": "VING",
+        "platform": "SHARP X68000"
+      },
+      "options": [
+        {
+          "name": "opm_mix",
+          "value": "0xc0"
+        },
+        {
+          "name": "pcm_mix",
+          "value": "0xf0"
+        },
+        {
+          "name": "dmaint",
+          "value": "0x01"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "srmp468snd.bin",
+          "offset": "0x00000"
+        },
+        {
+          "type": "x",
+          "path": "MCDRV.X",
+          "offset": "0x10000"
+        },
+        {
+          "type": "code",
+          "path": "PCMDATA.PDX",
+          "offset": "0x20000"
+        },
+        {
+          "type": "code",
+          "path": "RM4A01.MDC",
+          "offset": "0x70000"
+        },
+        {
+          "type": "code",
+          "path": "RM4M01.MDC",
+          "offset": "0x74000"
+        },
+        {
+          "type": "code",
+          "path": "RM4M02.MDC",
+          "offset": "0x78000"
+        },
+        {
+          "type": "code",
+          "path": "RM4M03.MDC",
+          "offset": "0x7c000"
+        },
+        {
+          "type": "code",
+          "path": "RM4M04.MDC",
+          "offset": "0x80000"
+        },
+        {
+          "type": "code",
+          "path": "RM4M05.MDC",
+          "offset": "0x84000"
+        },
+        {
+          "type": "code",
+          "path": "RM4M06.MDC",
+          "offset": "0x88000"
+        },
+        {
+          "type": "code",
+          "path": "RM4M07.MDC",
+          "offset": "0x8c000"
+        },
+        {
+          "type": "code",
+          "path": "RM4M08.MDC",
+          "offset": "0x90000"
+        },
+        {
+          "type": "code",
+          "path": "RM4M09.MDC",
+          "offset": "0x94000"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "RM4A01.MDC : アーケードモード"
+        },
+        {
+          "kind": "title",
+          "code": "0x02",
+          "title": "RM4M01.MDC : キャラクター選択"
+        },
+        {
+          "kind": "title",
+          "code": "0x03",
+          "title": "RM4M02.MDC : VS画面"
+        },
+        {
+          "kind": "title",
+          "code": "0x04",
+          "title": "RM4M03.MDC : メインBGM"
+        },
+        {
+          "kind": "title",
+          "code": "0x05",
+          "title": "RM4M04.MDC : 点数計算画面"
+        },
+        {
+          "kind": "title",
+          "code": "0x06",
+          "title": "RM4M05.MDC : 対戦結果画面"
+        },
+        {
+          "kind": "title",
+          "code": "0x07",
+          "title": "RM4M06.MDC : コンティニュー画面"
+        },
+        {
+          "kind": "title",
+          "code": "0x08",
+          "title": "RM4M07.MDC : エンディング"
+        },
+        {
+          "kind": "title",
+          "code": "0x09",
+          "title": "RM4M08.MDC : ゲームオーバー画面"
+        },
+        {
+          "kind": "title",
+          "code": "0x0a",
+          "title": "RM4M09.MDC : メインメニュー"
+        }
+      ],
+      "comments": [
+        " MCDRVを0.69に差し替えて使用 "
+      ],
+      "source_file": "xml/ving.xml",
+      "source_order": 4907,
+      "archive": "srmp468snd",
+      "id": "srmp468snd-generic"
+    }
+  ]
+}

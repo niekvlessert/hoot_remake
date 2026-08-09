@@ -1,0 +1,134 @@
+{
+  "format": "hoot-catalog-shard",
+  "version": 1,
+  "source_file": "xml/amorphous.xml",
+  "date": "2005/09/25",
+  "comments": [
+    " //Amorphous "
+  ],
+  "games": [
+    {
+      "title": "[X68000] Shooting 68K",
+      "driver": {
+        "name": "x68k",
+        "type": "generic",
+        "alias": "Amorphous",
+        "platform": "SHARP X68000"
+      },
+      "options": [
+        {
+          "name": "opm_mix",
+          "value": "0xe0"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "opmdrv.bin"
+        },
+        {
+          "type": "x",
+          "path": "OPMDRV.X",
+          "offset": "0x08000"
+        },
+        {
+          "type": "code",
+          "path": "S68MUS00.OPM",
+          "offset": "0x24000"
+        },
+        {
+          "type": "code",
+          "path": "S68MUS01.OPM",
+          "offset": "0x28000"
+        },
+        {
+          "type": "code",
+          "path": "S68MUS02.OPM",
+          "offset": "0x2c000"
+        },
+        {
+          "type": "code",
+          "path": "S68MUS03.OPM",
+          "offset": "0x30000"
+        },
+        {
+          "type": "code",
+          "path": "S68MUS04.OPM",
+          "offset": "0x34000"
+        },
+        {
+          "type": "code",
+          "path": "S68MUS05.OPM",
+          "offset": "0x38000"
+        },
+        {
+          "type": "code",
+          "path": "S68MUS06.OPM",
+          "offset": "0x3c000"
+        },
+        {
+          "type": "code",
+          "path": "S68MUS08.OPM",
+          "offset": "0x40000"
+        },
+        {
+          "type": "code",
+          "path": "S68MUS99.OPM",
+          "offset": "0x44000"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x02",
+          "title": "S68MUS00.OPM : On A Gigantic Scale"
+        },
+        {
+          "kind": "title",
+          "code": "0x03",
+          "title": "S68MUS01.OPM : Into The Comet"
+        },
+        {
+          "kind": "title",
+          "code": "0x04",
+          "title": "S68MUS02.OPM : Attack The Base"
+        },
+        {
+          "kind": "title",
+          "code": "0x05",
+          "title": "S68MUS03.OPM : Container"
+        },
+        {
+          "kind": "title",
+          "code": "0x06",
+          "title": "S68MUS04.OPM : Inner World"
+        },
+        {
+          "kind": "title",
+          "code": "0x07",
+          "title": "S68MUS05.OPM : Dangerous Moment"
+        },
+        {
+          "kind": "title",
+          "code": "0x08",
+          "title": "S68MUS06.OPM : I'll Beat You"
+        },
+        {
+          "kind": "title",
+          "code": "0x09",
+          "title": "S68MUS08.OPM : See You"
+        },
+        {
+          "kind": "title",
+          "code": "0x0a",
+          "title": "S68MUS99.OPM : Try Again"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/amorphous.xml",
+      "source_order": 201,
+      "archive": "shooting68snd",
+      "id": "shooting68snd-generic"
+    }
+  ]
+}

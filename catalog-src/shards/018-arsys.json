@@ -1,0 +1,8765 @@
+{
+  "format": "hoot-catalog-shard",
+  "version": 1,
+  "source_file": "xml/arsys.xml",
+  "date": "2005/09/25",
+  "comments": [
+    " //Arsys Software "
+  ],
+  "games": [
+    {
+      "title": "[PC-8801] WiBARM",
+      "driver": {
+        "name": "pc88",
+        "type": "opn",
+        "alias": "Arsys Software",
+        "platform": "NEC PC-8801"
+      },
+      "options": [
+        {
+          "name": "mdata_addr",
+          "value": "0xf200"
+        },
+        {
+          "name": "mdata_size",
+          "value": "0x0e00"
+        },
+        {
+          "name": "use_vrtc",
+          "value": "0x01"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "PATCH",
+          "offset": "0x0000"
+        },
+        {
+          "type": "code",
+          "path": "PROG",
+          "offset": "0x7400"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS00",
+          "offset": "0x00"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS01",
+          "offset": "0x01"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS02",
+          "offset": "0x02"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS03",
+          "offset": "0x03"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x00000001",
+          "title": "MUS01 : 基地"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000002",
+          "title": "MUS02 : 地上"
+        },
+        {
+          "kind": "title",
+          "code": "0x01000002",
+          "title": "MUS02 : 戦闘"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000000",
+          "title": "MUS00 : 3D迷路(建物内)"
+        },
+        {
+          "kind": "comment",
+          "text": "\t<title code=\"0x01000000\">MUS00 : 戦闘</title> "
+        },
+        {
+          "kind": "title",
+          "code": "0xff000003",
+          "title": "MUS03 : エンディング"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/arsys.xml",
+      "source_order": 238,
+      "archive": "wibarm",
+      "id": "wibarm-opn"
+    },
+    {
+      "title": "[PC-8801] Reviver",
+      "driver": {
+        "name": "pc88",
+        "type": "opn",
+        "alias": "Arsys Software",
+        "platform": "NEC PC-8801"
+      },
+      "options": [
+        {
+          "name": "init_pc",
+          "value": "0x8000"
+        },
+        {
+          "name": "mdata_addr",
+          "value": "0xd300"
+        },
+        {
+          "name": "mdata_size",
+          "value": "0x2100"
+        },
+        {
+          "name": "mfile_size",
+          "value": "0x2100"
+        },
+        {
+          "name": "use_rtc",
+          "value": "0x01"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "PROG",
+          "offset": "0x0000"
+        },
+        {
+          "type": "code",
+          "path": "PATCH",
+          "offset": "0x8000"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS01",
+          "offset": "0x00"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS02",
+          "offset": "0x01"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS03",
+          "offset": "0x02"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS04",
+          "offset": "0x03"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS05",
+          "offset": "0x04"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS06",
+          "offset": "0x05"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS07",
+          "offset": "0x06"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS08",
+          "offset": "0x07"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS09",
+          "offset": "0x08"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS10",
+          "offset": "0x09"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS11",
+          "offset": "0x0a"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS12",
+          "offset": "0x0b"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS13",
+          "offset": "0x0c"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS14",
+          "offset": "0x0d"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS15",
+          "offset": "0x0e"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS16",
+          "offset": "0x0f"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS17",
+          "offset": "0x10"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS18",
+          "offset": "0x11"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS19",
+          "offset": "0x12"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS20",
+          "offset": "0x13"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS21",
+          "offset": "0x14"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS22",
+          "offset": "0x15"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x15",
+          "title": "Logo"
+        },
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "オープニング"
+        },
+        {
+          "kind": "title",
+          "code": "0x07",
+          "title": "サダリアーン登場"
+        },
+        {
+          "kind": "title",
+          "code": "0x06",
+          "title": "魔導師タンダライド"
+        },
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "酒場"
+        },
+        {
+          "kind": "title",
+          "code": "0x0e",
+          "title": "ラビスターク"
+        },
+        {
+          "kind": "title",
+          "code": "0x03",
+          "title": "城"
+        },
+        {
+          "kind": "title",
+          "code": "0x00",
+          "title": "ラトウィーン"
+        },
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "女剣士アルマ"
+        },
+        {
+          "kind": "title",
+          "code": "0x02",
+          "title": "洞窟"
+        },
+        {
+          "kind": "title",
+          "code": "0x09",
+          "title": "魔物との遭遇"
+        },
+        {
+          "kind": "title",
+          "code": "0x08",
+          "title": "戦い"
+        },
+        {
+          "kind": "title",
+          "code": "0x0a",
+          "title": "重要アイテム入手"
+        },
+        {
+          "kind": "title",
+          "code": "0x0d",
+          "title": "落とし穴"
+        },
+        {
+          "kind": "title",
+          "code": "0x0b",
+          "title": "クリスタルロッド"
+        },
+        {
+          "kind": "title",
+          "code": "0x04",
+          "title": "天界・ハリイザード"
+        },
+        {
+          "kind": "title",
+          "code": "0x0c",
+          "title": "剣士コートの死"
+        },
+        {
+          "kind": "title",
+          "code": "0x05",
+          "title": "邪神界・ザリオザード"
+        },
+        {
+          "kind": "title",
+          "code": "0x0f",
+          "title": "サダリアーンとの戦い"
+        },
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "サダリアーンの最期"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "エンディング"
+        },
+        {
+          "kind": "title",
+          "code": "0x14",
+          "title": "死"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/arsys.xml",
+      "source_order": 239,
+      "archive": "reviver",
+      "id": "reviver-opn"
+    },
+    {
+      "title": "[PC-8801] 妖獣機甲兵ワードラゴン(OPNA)",
+      "driver": {
+        "name": "pc88",
+        "type": "opna",
+        "alias": "Arsys Software",
+        "platform": "NEC PC-8801"
+      },
+      "options": [
+        {
+          "name": "init_pc",
+          "value": "0xf000"
+        },
+        {
+          "name": "mdata_addr",
+          "value": "0xa300"
+        },
+        {
+          "name": "mdata_size",
+          "value": "0x1800"
+        },
+        {
+          "name": "use_rtc",
+          "value": "1"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "WDmain",
+          "offset": "0x0000"
+        },
+        {
+          "type": "code",
+          "path": "GAMEMAIN",
+          "offset": "0x2000"
+        },
+        {
+          "type": "code",
+          "path": "SEDATFM",
+          "offset": "0xbb00"
+        },
+        {
+          "type": "code",
+          "path": "PATCH",
+          "offset": "0xf000"
+        },
+        {
+          "type": "adpcm",
+          "path": "PCMDATA1",
+          "offset": "0x00000"
+        },
+        {
+          "type": "adpcm",
+          "path": "PCMDATA2",
+          "offset": "0x06000"
+        },
+        {
+          "type": "adpcm",
+          "path": "PCMDATA3",
+          "offset": "0x0c000"
+        },
+        {
+          "type": "adpcm",
+          "path": "PCMDATA4",
+          "offset": "0x12000"
+        },
+        {
+          "type": "adpcm",
+          "path": "PCMDATA5",
+          "offset": "0x18000"
+        },
+        {
+          "type": "bgm",
+          "path": "OPENMU1F",
+          "offset": "0x00"
+        },
+        {
+          "type": "bgm",
+          "path": "OPENMU3F",
+          "offset": "0x01"
+        },
+        {
+          "type": "bgm",
+          "path": "BGM1.FM",
+          "offset": "0x02"
+        },
+        {
+          "type": "bgm",
+          "path": "BGM2.FM",
+          "offset": "0x03"
+        },
+        {
+          "type": "bgm",
+          "path": "BGM3.FM",
+          "offset": "0x04"
+        },
+        {
+          "type": "bgm",
+          "path": "BGM4.FM",
+          "offset": "0x05"
+        },
+        {
+          "type": "bgm",
+          "path": "BGM5.FM",
+          "offset": "0x06"
+        },
+        {
+          "type": "bgm",
+          "path": "BGM6.FM",
+          "offset": "0x07"
+        },
+        {
+          "type": "bgm",
+          "path": "BOSS.FM",
+          "offset": "0x08"
+        },
+        {
+          "type": "bgm",
+          "path": "DIALOGF",
+          "offset": "0x09"
+        },
+        {
+          "type": "bgm",
+          "path": "ENDMUF",
+          "offset": "0x0a"
+        },
+        {
+          "type": "bgm",
+          "path": "FLIGHTF",
+          "offset": "0x0b"
+        },
+        {
+          "type": "bgm",
+          "path": "JOUSAIF",
+          "offset": "0x0c"
+        },
+        {
+          "type": "bgm",
+          "path": "LASTBOSS.FM",
+          "offset": "0x0d"
+        },
+        {
+          "type": "bgm",
+          "path": "METABOSS.FM",
+          "offset": "0x0e"
+        },
+        {
+          "type": "bgm",
+          "path": "OVER.FM",
+          "offset": "0x0f"
+        },
+        {
+          "type": "bgm",
+          "path": "VIBOSSF",
+          "offset": "0x10"
+        },
+        {
+          "type": "bgm",
+          "path": "VTRANSF",
+          "offset": "0x11"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x00000000",
+          "title": "OPENMU1F    : OPENING 1"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000001",
+          "title": "OPENMU3F    : OPENING 2"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000002",
+          "title": "BGM1.FM     : STAGE 1"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000011",
+          "title": "VTRANSF     : 変身"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000008",
+          "title": "BOSS.FM     : BOSS"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000009",
+          "title": "DIALOGF     : VISUAL SCENE 1 & 2"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000003",
+          "title": "BGM2.FM     : STAGE 2"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000004",
+          "title": "BGM3.FM     : STAGE 3"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000010",
+          "title": "VIBOSSF     : VISUAL SCENE 3"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000005",
+          "title": "BGM4.FM     : STAGE 4"
+        },
+        {
+          "kind": "title",
+          "code": "0x0000000b",
+          "title": "FLIGHTF     : VISUAL SCENE 4 (飛翔)"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000006",
+          "title": "BGM5.FM     : STAGE 5        (ブルースカイ)"
+        },
+        {
+          "kind": "title",
+          "code": "0x0000000c",
+          "title": "JOUSAIF     : VISUAL SCENE 5"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000007",
+          "title": "BGM6.FM     : STAGE 6"
+        },
+        {
+          "kind": "title",
+          "code": "0x0000000e",
+          "title": "METABOSS.FM : LAST BOSS 1 (変身前)"
+        },
+        {
+          "kind": "title",
+          "code": "0x0000000d",
+          "title": "LASTBOSS.FM : LAST BOSS 2 (変身後)"
+        },
+        {
+          "kind": "title",
+          "code": "0x0000000a",
+          "title": "ENDMUF      : ENDING"
+        },
+        {
+          "kind": "title",
+          "code": "0x0000000f",
+          "title": "OVER.FM     : GAME OVER"
+        },
+        {
+          "kind": "title",
+          "code": "0x010000ff",
+          "title": "SEDATFM     : FM効果音#01"
+        },
+        {
+          "kind": "title",
+          "code": "0x020000ff",
+          "title": "SEDATFM     : FM効果音#02"
+        },
+        {
+          "kind": "title",
+          "code": "0x030000ff",
+          "title": "SEDATFM     : FM効果音#03"
+        },
+        {
+          "kind": "title",
+          "code": "0x040000ff",
+          "title": "SEDATFM     : FM効果音#04"
+        },
+        {
+          "kind": "title",
+          "code": "0x050000ff",
+          "title": "SEDATFM     : FM効果音#05"
+        },
+        {
+          "kind": "title",
+          "code": "0x060000ff",
+          "title": "SEDATFM     : FM効果音#06"
+        },
+        {
+          "kind": "title",
+          "code": "0x070000ff",
+          "title": "SEDATFM     : FM効果音#07"
+        },
+        {
+          "kind": "title",
+          "code": "0x080000ff",
+          "title": "SEDATFM     : FM効果音#08"
+        },
+        {
+          "kind": "title",
+          "code": "0x090000ff",
+          "title": "SEDATFM     : FM効果音#09"
+        },
+        {
+          "kind": "title",
+          "code": "0x0a0000ff",
+          "title": "SEDATFM     : FM効果音#10"
+        },
+        {
+          "kind": "title",
+          "code": "0x0b0000ff",
+          "title": "SEDATFM     : FM効果音#11"
+        },
+        {
+          "kind": "title",
+          "code": "0x0c0000ff",
+          "title": "SEDATFM     : FM効果音#12"
+        },
+        {
+          "kind": "title",
+          "code": "0x0d0000ff",
+          "title": "SEDATFM     : FM効果音#13"
+        },
+        {
+          "kind": "title",
+          "code": "0x0e0000ff",
+          "title": "SEDATFM     : FM効果音#14"
+        },
+        {
+          "kind": "title",
+          "code": "0x0f0000ff",
+          "title": "SEDATFM     : FM効果音#15"
+        },
+        {
+          "kind": "title",
+          "code": "0x100000ff",
+          "title": "SEDATFM     : FM効果音#16"
+        },
+        {
+          "kind": "title",
+          "code": "0x110000ff",
+          "title": "SEDATFM     : FM効果音#17"
+        },
+        {
+          "kind": "title",
+          "code": "0x120000ff",
+          "title": "SEDATFM     : FM効果音#18"
+        },
+        {
+          "kind": "title",
+          "code": "0x130000ff",
+          "title": "SEDATFM     : FM効果音#19"
+        },
+        {
+          "kind": "title",
+          "code": "0x140000ff",
+          "title": "SEDATFM     : FM効果音#20"
+        },
+        {
+          "kind": "title",
+          "code": "0x150000ff",
+          "title": "SEDATFM     : FM効果音#21"
+        },
+        {
+          "kind": "title",
+          "code": "0x010000fe",
+          "title": "SEDATFM     : SSG効果音#01"
+        },
+        {
+          "kind": "title",
+          "code": "0x020000fe",
+          "title": "SEDATFM     : SSG効果音#02"
+        },
+        {
+          "kind": "comment",
+          "text": "\t<title code=\"0x030000fe\">SEDATFM     : SSG効果音#03</title> "
+        },
+        {
+          "kind": "title",
+          "code": "0x040000fe",
+          "title": "SEDATFM     : SSG効果音#04"
+        },
+        {
+          "kind": "title",
+          "code": "0x050000fe",
+          "title": "SEDATFM     : SSG効果音#05"
+        },
+        {
+          "kind": "comment",
+          "text": "\t<title code=\"0x060000fe\">SEDATFM     : SSG効果音#06</title> "
+        },
+        {
+          "kind": "comment",
+          "text": "\t<title code=\"0x070000fe\">SEDATFM     : SSG効果音#07</title> "
+        },
+        {
+          "kind": "comment",
+          "text": "\t<title code=\"0x080000fe\">SEDATFM     : SSG効果音#08</title> "
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/arsys.xml",
+      "source_order": 240,
+      "archive": "werdragn",
+      "id": "werdragn-opna"
+    },
+    {
+      "title": "[PC-8801] 妖獣機甲兵ワードラゴン(OPN)",
+      "driver": {
+        "name": "pc88",
+        "type": "opn",
+        "alias": "Arsys Software",
+        "platform": "NEC PC-8801"
+      },
+      "options": [
+        {
+          "name": "init_pc",
+          "value": "0xf000"
+        },
+        {
+          "name": "mdata_addr",
+          "value": "0xa300"
+        },
+        {
+          "name": "mdata_size",
+          "value": "0x1800"
+        },
+        {
+          "name": "use_rtc",
+          "value": "1"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "WDmain",
+          "offset": "0x0000"
+        },
+        {
+          "type": "code",
+          "path": "GAMEMAIN",
+          "offset": "0x2000"
+        },
+        {
+          "type": "code",
+          "path": "SEDATFM",
+          "offset": "0xbb00"
+        },
+        {
+          "type": "code",
+          "path": "PATCH",
+          "offset": "0xf000"
+        },
+        {
+          "type": "bgm",
+          "path": "OPENMU1P",
+          "offset": "0x00"
+        },
+        {
+          "type": "bgm",
+          "path": "OPENMU3P",
+          "offset": "0x01"
+        },
+        {
+          "type": "bgm",
+          "path": "BGM1.PC",
+          "offset": "0x02"
+        },
+        {
+          "type": "bgm",
+          "path": "BGM2.PC",
+          "offset": "0x03"
+        },
+        {
+          "type": "bgm",
+          "path": "BGM3.PC",
+          "offset": "0x04"
+        },
+        {
+          "type": "bgm",
+          "path": "BGM4.PC",
+          "offset": "0x05"
+        },
+        {
+          "type": "bgm",
+          "path": "BGM5.PC",
+          "offset": "0x06"
+        },
+        {
+          "type": "bgm",
+          "path": "BGM6.PC",
+          "offset": "0x07"
+        },
+        {
+          "type": "bgm",
+          "path": "BOSS.PC",
+          "offset": "0x08"
+        },
+        {
+          "type": "bgm",
+          "path": "DIALOGP",
+          "offset": "0x09"
+        },
+        {
+          "type": "bgm",
+          "path": "ENDMUP",
+          "offset": "0x0a"
+        },
+        {
+          "type": "bgm",
+          "path": "FLIGHTP",
+          "offset": "0x0b"
+        },
+        {
+          "type": "bgm",
+          "path": "JOUSAIP",
+          "offset": "0x0c"
+        },
+        {
+          "type": "bgm",
+          "path": "LASTBOSS.PC",
+          "offset": "0x0d"
+        },
+        {
+          "type": "bgm",
+          "path": "METABOSS.PC",
+          "offset": "0x0e"
+        },
+        {
+          "type": "bgm",
+          "path": "OVER.PC",
+          "offset": "0x0f"
+        },
+        {
+          "type": "bgm",
+          "path": "VIBOSSP",
+          "offset": "0x10"
+        },
+        {
+          "type": "bgm",
+          "path": "VTRANSP",
+          "offset": "0x11"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x00000000",
+          "title": "OPENMU1P    : OPENING 1"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000001",
+          "title": "OPENMU3P    : OPENING 2"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000002",
+          "title": "BGM1.PC     : STAGE 1"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000011",
+          "title": "VTRANSP     : 変身"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000008",
+          "title": "BOSS.PC     : BOSS"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000009",
+          "title": "DIALOGP     : VISUAL SCENE 1 & 2"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000003",
+          "title": "BGM2.PC     : STAGE 2"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000004",
+          "title": "BGM3.PC     : STAGE 3"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000010",
+          "title": "VIBOSSP     : VISUAL SCENE 3"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000005",
+          "title": "BGM4.PC     : STAGE 4"
+        },
+        {
+          "kind": "title",
+          "code": "0x0000000b",
+          "title": "FLIGHTP     : VISUAL SCENE 4 (飛翔)"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000006",
+          "title": "BGM5.PC     : STAGE 5        (ブルースカイ)"
+        },
+        {
+          "kind": "title",
+          "code": "0x0000000c",
+          "title": "JOUSAIP     : VISUAL SCENE 5"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000007",
+          "title": "BGM6.PC     : STAGE 6"
+        },
+        {
+          "kind": "title",
+          "code": "0x0000000e",
+          "title": "METABOSS.PC : LAST BOSS 1 (変身前)"
+        },
+        {
+          "kind": "title",
+          "code": "0x0000000d",
+          "title": "LASTBOSS.PC : LAST BOSS 2 (変身後)"
+        },
+        {
+          "kind": "title",
+          "code": "0x0000000a",
+          "title": "ENDMUP      : ENDING"
+        },
+        {
+          "kind": "title",
+          "code": "0x0000000f",
+          "title": "OVER.PC     : GAME OVER"
+        },
+        {
+          "kind": "title",
+          "code": "0x010000ff",
+          "title": "SEDATFM     : 効果音#01"
+        },
+        {
+          "kind": "title",
+          "code": "0x020000ff",
+          "title": "SEDATFM     : 効果音#02"
+        },
+        {
+          "kind": "title",
+          "code": "0x030000ff",
+          "title": "SEDATFM     : 効果音#03"
+        },
+        {
+          "kind": "title",
+          "code": "0x040000ff",
+          "title": "SEDATFM     : 効果音#04"
+        },
+        {
+          "kind": "title",
+          "code": "0x050000ff",
+          "title": "SEDATFM     : 効果音#05"
+        },
+        {
+          "kind": "title",
+          "code": "0x060000ff",
+          "title": "SEDATFM     : 効果音#06"
+        },
+        {
+          "kind": "title",
+          "code": "0x070000ff",
+          "title": "SEDATFM     : 効果音#07"
+        },
+        {
+          "kind": "title",
+          "code": "0x080000ff",
+          "title": "SEDATFM     : 効果音#08"
+        },
+        {
+          "kind": "title",
+          "code": "0x090000ff",
+          "title": "SEDATFM     : 効果音#09"
+        },
+        {
+          "kind": "title",
+          "code": "0x0a0000ff",
+          "title": "SEDATFM     : 効果音#10"
+        },
+        {
+          "kind": "title",
+          "code": "0x0b0000ff",
+          "title": "SEDATFM     : 効果音#11"
+        },
+        {
+          "kind": "title",
+          "code": "0x0c0000ff",
+          "title": "SEDATFM     : 効果音#12"
+        },
+        {
+          "kind": "title",
+          "code": "0x0d0000ff",
+          "title": "SEDATFM     : 効果音#13"
+        },
+        {
+          "kind": "title",
+          "code": "0x0e0000ff",
+          "title": "SEDATFM     : 効果音#14"
+        },
+        {
+          "kind": "title",
+          "code": "0x0f0000ff",
+          "title": "SEDATFM     : 効果音#15"
+        },
+        {
+          "kind": "title",
+          "code": "0x100000ff",
+          "title": "SEDATFM     : 効果音#16"
+        },
+        {
+          "kind": "title",
+          "code": "0x110000ff",
+          "title": "SEDATFM     : 効果音#17"
+        },
+        {
+          "kind": "title",
+          "code": "0x120000ff",
+          "title": "SEDATFM     : 効果音#18"
+        },
+        {
+          "kind": "title",
+          "code": "0x130000ff",
+          "title": "SEDATFM     : 効果音#19"
+        },
+        {
+          "kind": "title",
+          "code": "0x140000ff",
+          "title": "SEDATFM     : 効果音#20"
+        },
+        {
+          "kind": "title",
+          "code": "0x150000ff",
+          "title": "SEDATFM     : 効果音#21"
+        },
+        {
+          "kind": "title",
+          "code": "0x010000fe",
+          "title": "SEDATFM     : SSG効果音#01"
+        },
+        {
+          "kind": "title",
+          "code": "0x020000fe",
+          "title": "SEDATFM     : SSG効果音#02"
+        },
+        {
+          "kind": "comment",
+          "text": "\t<title code=\"0x030000fe\">SEDATFM     : SSG効果音#03</title> "
+        },
+        {
+          "kind": "title",
+          "code": "0x040000fe",
+          "title": "SEDATFM     : SSG効果音#04"
+        },
+        {
+          "kind": "title",
+          "code": "0x050000fe",
+          "title": "SEDATFM     : SSG効果音#05"
+        },
+        {
+          "kind": "comment",
+          "text": "\t<title code=\"0x060000fe\">SEDATFM     : SSG効果音#06</title> "
+        },
+        {
+          "kind": "comment",
+          "text": "\t<title code=\"0x070000fe\">SEDATFM     : SSG効果音#07</title> "
+        },
+        {
+          "kind": "comment",
+          "text": "\t<title code=\"0x080000fe\">SEDATFM     : SSG効果音#08</title> "
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/arsys.xml",
+      "source_order": 241,
+      "archive": "werdragn",
+      "id": "werdragn-opn"
+    },
+    {
+      "title": "[PC-8801] STAR CRUISER(OPNA)",
+      "driver": {
+        "name": "pc88",
+        "type": "opna",
+        "alias": "Arsys Software",
+        "platform": "NEC PC-8801"
+      },
+      "options": [
+        {
+          "name": "init_pc",
+          "value": "0xf000"
+        },
+        {
+          "name": "mdata_addr",
+          "value": "0x5000"
+        },
+        {
+          "name": "use_rtc",
+          "value": "0x01"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "DRIVER",
+          "offset": "0x0000"
+        },
+        {
+          "type": "code",
+          "path": "EFFECT",
+          "offset": "0xeb00"
+        },
+        {
+          "type": "code",
+          "path": "PATCH",
+          "offset": "0xf000"
+        },
+        {
+          "type": "bgm",
+          "path": "MA001",
+          "offset": "0x00"
+        },
+        {
+          "type": "bgm",
+          "path": "MA002",
+          "offset": "0x01"
+        },
+        {
+          "type": "bgm",
+          "path": "MA003",
+          "offset": "0x02"
+        },
+        {
+          "type": "bgm",
+          "path": "MA004",
+          "offset": "0x03"
+        },
+        {
+          "type": "bgm",
+          "path": "MA005",
+          "offset": "0x04"
+        },
+        {
+          "type": "bgm",
+          "path": "MA006",
+          "offset": "0x05"
+        },
+        {
+          "type": "bgm",
+          "path": "MA007",
+          "offset": "0x06"
+        },
+        {
+          "type": "bgm",
+          "path": "MA008",
+          "offset": "0x07"
+        },
+        {
+          "type": "bgm",
+          "path": "MA009",
+          "offset": "0x08"
+        },
+        {
+          "type": "bgm",
+          "path": "MA010",
+          "offset": "0x09"
+        },
+        {
+          "type": "bgm",
+          "path": "MA011",
+          "offset": "0x0a"
+        },
+        {
+          "type": "bgm",
+          "path": "MA012",
+          "offset": "0x0b"
+        },
+        {
+          "type": "bgm",
+          "path": "MA013",
+          "offset": "0x0c"
+        },
+        {
+          "type": "bgm",
+          "path": "MA014",
+          "offset": "0x0d"
+        },
+        {
+          "type": "bgm",
+          "path": "MA015",
+          "offset": "0x0e"
+        },
+        {
+          "type": "bgm",
+          "path": "MA016",
+          "offset": "0x0f"
+        },
+        {
+          "type": "bgm",
+          "path": "MA017",
+          "offset": "0x10"
+        },
+        {
+          "type": "bgm",
+          "path": "MA018",
+          "offset": "0x11"
+        },
+        {
+          "type": "bgm",
+          "path": "MA019",
+          "offset": "0x12"
+        },
+        {
+          "type": "bgm",
+          "path": "MA020",
+          "offset": "0x13"
+        },
+        {
+          "type": "bgm",
+          "path": "MA021",
+          "offset": "0x14"
+        },
+        {
+          "type": "bgm",
+          "path": "MA022",
+          "offset": "0x15"
+        },
+        {
+          "type": "bgm",
+          "path": "MA023",
+          "offset": "0x16"
+        },
+        {
+          "type": "bgm",
+          "path": "MA024",
+          "offset": "0x17"
+        },
+        {
+          "type": "bgm",
+          "path": "MA025",
+          "offset": "0x18"
+        },
+        {
+          "type": "bgm",
+          "path": "MA026",
+          "offset": "0x19"
+        },
+        {
+          "type": "bgm",
+          "path": "MA027",
+          "offset": "0x1a"
+        },
+        {
+          "type": "bgm",
+          "path": "MA028",
+          "offset": "0x1b"
+        },
+        {
+          "type": "bgm",
+          "path": "MA029",
+          "offset": "0x1c"
+        },
+        {
+          "type": "bgm",
+          "path": "MA030",
+          "offset": "0x1d"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x00",
+          "title": "スペースフライト"
+        },
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "スペースファイト"
+        },
+        {
+          "kind": "title",
+          "code": "0x02",
+          "title": "デザートゾーン"
+        },
+        {
+          "kind": "title",
+          "code": "0x03",
+          "title": "スタークルーザー"
+        },
+        {
+          "kind": "title",
+          "code": "0x04",
+          "title": "レッドゾーン"
+        },
+        {
+          "kind": "title",
+          "code": "0x05",
+          "title": "スペースボート"
+        },
+        {
+          "kind": "title",
+          "code": "0x06",
+          "title": "ショップ"
+        },
+        {
+          "kind": "title",
+          "code": "0x07",
+          "title": "バトルスペース"
+        },
+        {
+          "kind": "title",
+          "code": "0x08",
+          "title": "ディージー"
+        },
+        {
+          "kind": "title",
+          "code": "0x09",
+          "title": "土星"
+        },
+        {
+          "kind": "title",
+          "code": "0x0a",
+          "title": "大赤斑"
+        },
+        {
+          "kind": "title",
+          "code": "0x0b",
+          "title": "ビッグボス"
+        },
+        {
+          "kind": "title",
+          "code": "0x0c",
+          "title": "ミッドボス"
+        },
+        {
+          "kind": "title",
+          "code": "0x0d",
+          "title": "基地内部"
+        },
+        {
+          "kind": "title",
+          "code": "0x0e",
+          "title": "レクイエム"
+        },
+        {
+          "kind": "title",
+          "code": "0x0f",
+          "title": "生体プラント"
+        },
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "ワープアウト"
+        },
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "ゲームオーバー"
+        },
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "リジル＝ケント星系"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "NINETEEN"
+        },
+        {
+          "kind": "title",
+          "code": "0x14",
+          "title": "ジューン"
+        },
+        {
+          "kind": "title",
+          "code": "0x15",
+          "title": "ブローカー"
+        },
+        {
+          "kind": "title",
+          "code": "0x16",
+          "title": "惑星オールドニューヨーク"
+        },
+        {
+          "kind": "title",
+          "code": "0x17",
+          "title": "バーナード星系"
+        },
+        {
+          "kind": "title",
+          "code": "0x18",
+          "title": "火星"
+        },
+        {
+          "kind": "title",
+          "code": "0x19",
+          "title": "遥かな宇宙へ"
+        },
+        {
+          "kind": "title",
+          "code": "0x1a",
+          "title": "シリウス星系"
+        },
+        {
+          "kind": "title",
+          "code": "0x1b",
+          "title": "VOID大戦艦"
+        },
+        {
+          "kind": "title",
+          "code": "0x1c",
+          "title": "G-カタパルト"
+        },
+        {
+          "kind": "title",
+          "code": "0x1d",
+          "title": "ハイパースペース"
+        },
+        {
+          "kind": "title",
+          "code": "0x20",
+          "title": "効果音#01"
+        },
+        {
+          "kind": "title",
+          "code": "0x21",
+          "title": "効果音#02"
+        },
+        {
+          "kind": "title",
+          "code": "0x22",
+          "title": "効果音#03"
+        },
+        {
+          "kind": "title",
+          "code": "0x23",
+          "title": "効果音#04"
+        },
+        {
+          "kind": "title",
+          "code": "0x24",
+          "title": "効果音#05"
+        },
+        {
+          "kind": "title",
+          "code": "0x25",
+          "title": "効果音#06"
+        },
+        {
+          "kind": "title",
+          "code": "0x26",
+          "title": "効果音#07"
+        },
+        {
+          "kind": "title",
+          "code": "0x27",
+          "title": "効果音#08"
+        },
+        {
+          "kind": "title",
+          "code": "0x28",
+          "title": "効果音#09"
+        },
+        {
+          "kind": "title",
+          "code": "0x29",
+          "title": "効果音#10"
+        },
+        {
+          "kind": "title",
+          "code": "0x2a",
+          "title": "効果音#11"
+        },
+        {
+          "kind": "title",
+          "code": "0x2b",
+          "title": "効果音#12"
+        },
+        {
+          "kind": "title",
+          "code": "0x2c",
+          "title": "効果音#13"
+        },
+        {
+          "kind": "title",
+          "code": "0x2d",
+          "title": "効果音#14"
+        },
+        {
+          "kind": "title",
+          "code": "0x2e",
+          "title": "効果音#15"
+        },
+        {
+          "kind": "title",
+          "code": "0x2f",
+          "title": "効果音#16"
+        },
+        {
+          "kind": "title",
+          "code": "0x30",
+          "title": "効果音#17"
+        },
+        {
+          "kind": "title",
+          "code": "0x31",
+          "title": "効果音#18"
+        },
+        {
+          "kind": "title",
+          "code": "0x32",
+          "title": "効果音#19"
+        },
+        {
+          "kind": "title",
+          "code": "0x33",
+          "title": "効果音#20"
+        },
+        {
+          "kind": "title",
+          "code": "0x34",
+          "title": "効果音#21"
+        },
+        {
+          "kind": "title",
+          "code": "0x35",
+          "title": "効果音#22"
+        },
+        {
+          "kind": "title",
+          "code": "0x36",
+          "title": "効果音#23"
+        },
+        {
+          "kind": "title",
+          "code": "0x37",
+          "title": "効果音#24"
+        },
+        {
+          "kind": "title",
+          "code": "0x38",
+          "title": "効果音#25"
+        },
+        {
+          "kind": "title",
+          "code": "0x39",
+          "title": "効果音#26"
+        },
+        {
+          "kind": "title",
+          "code": "0x3a",
+          "title": "効果音#27"
+        },
+        {
+          "kind": "title",
+          "code": "0x3b",
+          "title": "効果音#28"
+        },
+        {
+          "kind": "title",
+          "code": "0x3c",
+          "title": "効果音#29"
+        },
+        {
+          "kind": "title",
+          "code": "0x3d",
+          "title": "効果音#30"
+        },
+        {
+          "kind": "title",
+          "code": "0x3e",
+          "title": "効果音#31"
+        },
+        {
+          "kind": "title",
+          "code": "0x3f",
+          "title": "効果音#32"
+        },
+        {
+          "kind": "title",
+          "code": "0x40",
+          "title": "効果音#33"
+        },
+        {
+          "kind": "title",
+          "code": "0x41",
+          "title": "効果音#34"
+        },
+        {
+          "kind": "title",
+          "code": "0x42",
+          "title": "効果音#35"
+        },
+        {
+          "kind": "title",
+          "code": "0x43",
+          "title": "効果音#36"
+        },
+        {
+          "kind": "title",
+          "code": "0x44",
+          "title": "効果音#37"
+        },
+        {
+          "kind": "title",
+          "code": "0x45",
+          "title": "効果音#38"
+        },
+        {
+          "kind": "title",
+          "code": "0x46",
+          "title": "効果音#39"
+        },
+        {
+          "kind": "title",
+          "code": "0x47",
+          "title": "効果音#40"
+        },
+        {
+          "kind": "title",
+          "code": "0x48",
+          "title": "効果音#41"
+        },
+        {
+          "kind": "title",
+          "code": "0x49",
+          "title": "効果音#42"
+        },
+        {
+          "kind": "title",
+          "code": "0x4a",
+          "title": "効果音#43"
+        },
+        {
+          "kind": "title",
+          "code": "0x4b",
+          "title": "効果音#44"
+        },
+        {
+          "kind": "title",
+          "code": "0x4c",
+          "title": "効果音#45"
+        },
+        {
+          "kind": "title",
+          "code": "0x4d",
+          "title": "効果音#46"
+        },
+        {
+          "kind": "title",
+          "code": "0x4e",
+          "title": "効果音#47"
+        },
+        {
+          "kind": "title",
+          "code": "0x4f",
+          "title": "効果音#48"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/arsys.xml",
+      "source_order": 242,
+      "archive": "starcruiser88",
+      "id": "starcruiser88-opna"
+    },
+    {
+      "title": "[PC-8801] STAR CRUISER(OPN)",
+      "driver": {
+        "name": "pc88",
+        "type": "opn",
+        "alias": "Arsys Software",
+        "platform": "NEC PC-8801"
+      },
+      "options": [
+        {
+          "name": "init_pc",
+          "value": "0xf000"
+        },
+        {
+          "name": "mdata_addr",
+          "value": "0x5000"
+        },
+        {
+          "name": "use_rtc",
+          "value": "0x01"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "DRIVER",
+          "offset": "0x0000"
+        },
+        {
+          "type": "code",
+          "path": "EFFECT",
+          "offset": "0xeb00"
+        },
+        {
+          "type": "code",
+          "path": "PATCH",
+          "offset": "0xf000"
+        },
+        {
+          "type": "bgm",
+          "path": "MB001",
+          "offset": "0x00"
+        },
+        {
+          "type": "bgm",
+          "path": "MB002",
+          "offset": "0x01"
+        },
+        {
+          "type": "bgm",
+          "path": "MB003",
+          "offset": "0x02"
+        },
+        {
+          "type": "bgm",
+          "path": "MB004",
+          "offset": "0x03"
+        },
+        {
+          "type": "bgm",
+          "path": "MB005",
+          "offset": "0x04"
+        },
+        {
+          "type": "bgm",
+          "path": "MB006",
+          "offset": "0x05"
+        },
+        {
+          "type": "bgm",
+          "path": "MB007",
+          "offset": "0x06"
+        },
+        {
+          "type": "bgm",
+          "path": "MB008",
+          "offset": "0x07"
+        },
+        {
+          "type": "bgm",
+          "path": "MB009",
+          "offset": "0x08"
+        },
+        {
+          "type": "bgm",
+          "path": "MB010",
+          "offset": "0x09"
+        },
+        {
+          "type": "bgm",
+          "path": "MB011",
+          "offset": "0x0a"
+        },
+        {
+          "type": "bgm",
+          "path": "MB012",
+          "offset": "0x0b"
+        },
+        {
+          "type": "bgm",
+          "path": "MB013",
+          "offset": "0x0c"
+        },
+        {
+          "type": "bgm",
+          "path": "MB014",
+          "offset": "0x0d"
+        },
+        {
+          "type": "bgm",
+          "path": "MB015",
+          "offset": "0x0e"
+        },
+        {
+          "type": "bgm",
+          "path": "MB016",
+          "offset": "0x0f"
+        },
+        {
+          "type": "bgm",
+          "path": "MB017",
+          "offset": "0x10"
+        },
+        {
+          "type": "bgm",
+          "path": "MB018",
+          "offset": "0x11"
+        },
+        {
+          "type": "bgm",
+          "path": "MB019",
+          "offset": "0x12"
+        },
+        {
+          "type": "bgm",
+          "path": "MB020",
+          "offset": "0x13"
+        },
+        {
+          "type": "bgm",
+          "path": "MB021",
+          "offset": "0x14"
+        },
+        {
+          "type": "bgm",
+          "path": "MB022",
+          "offset": "0x15"
+        },
+        {
+          "type": "bgm",
+          "path": "MB023",
+          "offset": "0x16"
+        },
+        {
+          "type": "bgm",
+          "path": "MB024",
+          "offset": "0x17"
+        },
+        {
+          "type": "bgm",
+          "path": "MB025",
+          "offset": "0x18"
+        },
+        {
+          "type": "bgm",
+          "path": "MB026",
+          "offset": "0x19"
+        },
+        {
+          "type": "bgm",
+          "path": "MB027",
+          "offset": "0x1a"
+        },
+        {
+          "type": "bgm",
+          "path": "MB028",
+          "offset": "0x1b"
+        },
+        {
+          "type": "bgm",
+          "path": "MB029",
+          "offset": "0x1c"
+        },
+        {
+          "type": "bgm",
+          "path": "MB030",
+          "offset": "0x1d"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x00",
+          "title": "スペースフライト"
+        },
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "スペースファイト"
+        },
+        {
+          "kind": "title",
+          "code": "0x02",
+          "title": "デザートゾーン"
+        },
+        {
+          "kind": "title",
+          "code": "0x03",
+          "title": "スタークルーザー"
+        },
+        {
+          "kind": "title",
+          "code": "0x04",
+          "title": "レッドゾーン"
+        },
+        {
+          "kind": "title",
+          "code": "0x05",
+          "title": "スペースボート"
+        },
+        {
+          "kind": "title",
+          "code": "0x06",
+          "title": "ショップ"
+        },
+        {
+          "kind": "title",
+          "code": "0x07",
+          "title": "バトルスペース"
+        },
+        {
+          "kind": "title",
+          "code": "0x08",
+          "title": "ディージー"
+        },
+        {
+          "kind": "title",
+          "code": "0x09",
+          "title": "土星"
+        },
+        {
+          "kind": "title",
+          "code": "0x0a",
+          "title": "大赤斑"
+        },
+        {
+          "kind": "title",
+          "code": "0x0b",
+          "title": "ビッグボス"
+        },
+        {
+          "kind": "title",
+          "code": "0x0c",
+          "title": "ミッドボス"
+        },
+        {
+          "kind": "title",
+          "code": "0x0d",
+          "title": "基地内部"
+        },
+        {
+          "kind": "title",
+          "code": "0x0e",
+          "title": "レクイエム"
+        },
+        {
+          "kind": "title",
+          "code": "0x0f",
+          "title": "生体プラント"
+        },
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "ワープアウト"
+        },
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "ゲームオーバー"
+        },
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "リジル＝ケント星系"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "NINETEEN"
+        },
+        {
+          "kind": "title",
+          "code": "0x14",
+          "title": "ジューン"
+        },
+        {
+          "kind": "title",
+          "code": "0x15",
+          "title": "ブローカー"
+        },
+        {
+          "kind": "title",
+          "code": "0x16",
+          "title": "惑星オールドニューヨーク"
+        },
+        {
+          "kind": "title",
+          "code": "0x17",
+          "title": "バーナード星系"
+        },
+        {
+          "kind": "title",
+          "code": "0x18",
+          "title": "火星"
+        },
+        {
+          "kind": "title",
+          "code": "0x19",
+          "title": "遥かな宇宙へ"
+        },
+        {
+          "kind": "title",
+          "code": "0x1a",
+          "title": "シリウス星系"
+        },
+        {
+          "kind": "title",
+          "code": "0x1b",
+          "title": "VOID大戦艦"
+        },
+        {
+          "kind": "title",
+          "code": "0x1c",
+          "title": "G-カタパルト"
+        },
+        {
+          "kind": "title",
+          "code": "0x1d",
+          "title": "ハイパースペース"
+        },
+        {
+          "kind": "title",
+          "code": "0x20",
+          "title": "効果音#01"
+        },
+        {
+          "kind": "title",
+          "code": "0x21",
+          "title": "効果音#02"
+        },
+        {
+          "kind": "title",
+          "code": "0x22",
+          "title": "効果音#03"
+        },
+        {
+          "kind": "title",
+          "code": "0x23",
+          "title": "効果音#04"
+        },
+        {
+          "kind": "title",
+          "code": "0x24",
+          "title": "効果音#05"
+        },
+        {
+          "kind": "title",
+          "code": "0x25",
+          "title": "効果音#06"
+        },
+        {
+          "kind": "title",
+          "code": "0x26",
+          "title": "効果音#07"
+        },
+        {
+          "kind": "title",
+          "code": "0x27",
+          "title": "効果音#08"
+        },
+        {
+          "kind": "title",
+          "code": "0x28",
+          "title": "効果音#09"
+        },
+        {
+          "kind": "title",
+          "code": "0x29",
+          "title": "効果音#10"
+        },
+        {
+          "kind": "title",
+          "code": "0x2a",
+          "title": "効果音#11"
+        },
+        {
+          "kind": "title",
+          "code": "0x2b",
+          "title": "効果音#12"
+        },
+        {
+          "kind": "title",
+          "code": "0x2c",
+          "title": "効果音#13"
+        },
+        {
+          "kind": "title",
+          "code": "0x2d",
+          "title": "効果音#14"
+        },
+        {
+          "kind": "title",
+          "code": "0x2e",
+          "title": "効果音#15"
+        },
+        {
+          "kind": "title",
+          "code": "0x2f",
+          "title": "効果音#16"
+        },
+        {
+          "kind": "title",
+          "code": "0x30",
+          "title": "効果音#17"
+        },
+        {
+          "kind": "title",
+          "code": "0x31",
+          "title": "効果音#18"
+        },
+        {
+          "kind": "title",
+          "code": "0x32",
+          "title": "効果音#19"
+        },
+        {
+          "kind": "title",
+          "code": "0x33",
+          "title": "効果音#20"
+        },
+        {
+          "kind": "title",
+          "code": "0x34",
+          "title": "効果音#21"
+        },
+        {
+          "kind": "title",
+          "code": "0x35",
+          "title": "効果音#22"
+        },
+        {
+          "kind": "title",
+          "code": "0x36",
+          "title": "効果音#23"
+        },
+        {
+          "kind": "title",
+          "code": "0x37",
+          "title": "効果音#24"
+        },
+        {
+          "kind": "title",
+          "code": "0x38",
+          "title": "効果音#25"
+        },
+        {
+          "kind": "title",
+          "code": "0x39",
+          "title": "効果音#26"
+        },
+        {
+          "kind": "title",
+          "code": "0x3a",
+          "title": "効果音#27"
+        },
+        {
+          "kind": "title",
+          "code": "0x3b",
+          "title": "効果音#28"
+        },
+        {
+          "kind": "title",
+          "code": "0x3c",
+          "title": "効果音#29"
+        },
+        {
+          "kind": "title",
+          "code": "0x3d",
+          "title": "効果音#30"
+        },
+        {
+          "kind": "title",
+          "code": "0x3e",
+          "title": "効果音#31"
+        },
+        {
+          "kind": "title",
+          "code": "0x3f",
+          "title": "効果音#32"
+        },
+        {
+          "kind": "title",
+          "code": "0x40",
+          "title": "効果音#33"
+        },
+        {
+          "kind": "title",
+          "code": "0x41",
+          "title": "効果音#34"
+        },
+        {
+          "kind": "title",
+          "code": "0x42",
+          "title": "効果音#35"
+        },
+        {
+          "kind": "title",
+          "code": "0x43",
+          "title": "効果音#36"
+        },
+        {
+          "kind": "title",
+          "code": "0x44",
+          "title": "効果音#37"
+        },
+        {
+          "kind": "title",
+          "code": "0x45",
+          "title": "効果音#38"
+        },
+        {
+          "kind": "title",
+          "code": "0x46",
+          "title": "効果音#39"
+        },
+        {
+          "kind": "title",
+          "code": "0x47",
+          "title": "効果音#40"
+        },
+        {
+          "kind": "title",
+          "code": "0x48",
+          "title": "効果音#41"
+        },
+        {
+          "kind": "title",
+          "code": "0x49",
+          "title": "効果音#42"
+        },
+        {
+          "kind": "title",
+          "code": "0x4a",
+          "title": "効果音#43"
+        },
+        {
+          "kind": "title",
+          "code": "0x4b",
+          "title": "効果音#44"
+        },
+        {
+          "kind": "title",
+          "code": "0x4c",
+          "title": "効果音#45"
+        },
+        {
+          "kind": "title",
+          "code": "0x4d",
+          "title": "効果音#46"
+        },
+        {
+          "kind": "title",
+          "code": "0x4e",
+          "title": "効果音#47"
+        },
+        {
+          "kind": "title",
+          "code": "0x4f",
+          "title": "効果音#48"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/arsys.xml",
+      "source_order": 243,
+      "archive": "starcruiser88",
+      "id": "starcruiser88-opn"
+    },
+    {
+      "title": "[PC-9801] WiBARM",
+      "driver": {
+        "name": "pc98vx",
+        "type": "opn",
+        "alias": "Arsys Software",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "bootcs",
+          "value": "0x0060"
+        },
+        {
+          "name": "bootip",
+          "value": "0xfa00"
+        },
+        {
+          "name": "funcvect",
+          "value": "0x7f"
+        },
+        {
+          "name": "dataaddr",
+          "value": "0x0add0"
+        },
+        {
+          "name": "filesize",
+          "value": "0x0800"
+        },
+        {
+          "name": "clockmul",
+          "value": "8"
+        },
+        {
+          "name": "datamax",
+          "value": "0x05"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "PROG",
+          "offset": "0x00600"
+        },
+        {
+          "type": "code",
+          "path": "DATA",
+          "offset": "0x0d010"
+        },
+        {
+          "type": "code",
+          "path": "wibarm98.bin",
+          "offset": "0x10000"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS00",
+          "offset": "0x01"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS01",
+          "offset": "0x02"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS02",
+          "offset": "0x03"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS03",
+          "offset": "0x04"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x000002",
+          "title": "MUS01 : 基地"
+        },
+        {
+          "kind": "title",
+          "code": "0x000003",
+          "title": "MUS02 : 地上"
+        },
+        {
+          "kind": "title",
+          "code": "0x010003",
+          "title": "MUS02 : 戦闘"
+        },
+        {
+          "kind": "title",
+          "code": "0x000001",
+          "title": "MUS00 : 3D迷路(建物内)"
+        },
+        {
+          "kind": "comment",
+          "text": "\t<title code=\"0x010001\">MUS00 : 戦闘</title> "
+        },
+        {
+          "kind": "title",
+          "code": "0x000004",
+          "title": "MUS03 : エンディング"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/arsys.xml",
+      "source_order": 244,
+      "archive": "wibarm98",
+      "id": "wibarm98-opn"
+    },
+    {
+      "title": "[PC-9801] Spindizzy II",
+      "driver": {
+        "name": "pc98",
+        "type": "opn",
+        "alias": "Arsys Software",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "bootcs",
+          "value": "0x0060"
+        },
+        {
+          "name": "bootip",
+          "value": "0x0000"
+        },
+        {
+          "name": "funcvect",
+          "value": "0x7f"
+        },
+        {
+          "name": "dataaddr",
+          "value": "0x20000"
+        },
+        {
+          "name": "filesize",
+          "value": "0x4000"
+        },
+        {
+          "name": "datamax",
+          "value": "0x2d"
+        },
+        {
+          "name": "clockmul",
+          "value": "8"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "persia98.bin",
+          "offset": "0x00600"
+        },
+        {
+          "type": "code",
+          "path": "NOPNDRV.COM",
+          "offset": "0x10000"
+        },
+        {
+          "type": "bgm",
+          "path": "ARIOSO.OJ",
+          "offset": "0x01"
+        },
+        {
+          "type": "bgm",
+          "path": "BALL_R.OJ",
+          "offset": "0x02"
+        },
+        {
+          "type": "bgm",
+          "path": "CHASE.OJ",
+          "offset": "0x03"
+        },
+        {
+          "type": "bgm",
+          "path": "CTTY.OJ",
+          "offset": "0x04"
+        },
+        {
+          "type": "bgm",
+          "path": "EASY.OJ",
+          "offset": "0x05"
+        },
+        {
+          "type": "bgm",
+          "path": "END.OJ",
+          "offset": "0x06"
+        },
+        {
+          "type": "bgm",
+          "path": "FINAL.OJ",
+          "offset": "0x07"
+        },
+        {
+          "type": "bgm",
+          "path": "GAME.OJ",
+          "offset": "0x08"
+        },
+        {
+          "type": "bgm",
+          "path": "GLAVE.OJ",
+          "offset": "0x09"
+        },
+        {
+          "type": "bgm",
+          "path": "GRASS.OJ",
+          "offset": "0x0a"
+        },
+        {
+          "type": "bgm",
+          "path": "HARD.OJ",
+          "offset": "0x0b"
+        },
+        {
+          "type": "bgm",
+          "path": "HURRY_UP.OJ",
+          "offset": "0x0c"
+        },
+        {
+          "type": "bgm",
+          "path": "JACK.OJ",
+          "offset": "0x0d"
+        },
+        {
+          "type": "bgm",
+          "path": "JAZZ.OJ",
+          "offset": "0x0e"
+        },
+        {
+          "type": "bgm",
+          "path": "JIVE.OJ",
+          "offset": "0x0f"
+        },
+        {
+          "type": "bgm",
+          "path": "KUKU.OJ",
+          "offset": "0x10"
+        },
+        {
+          "type": "bgm",
+          "path": "KUKU2.OJ",
+          "offset": "0x11"
+        },
+        {
+          "type": "bgm",
+          "path": "LOGO.OJ",
+          "offset": "0x12"
+        },
+        {
+          "type": "bgm",
+          "path": "MF.OJ",
+          "offset": "0x13"
+        },
+        {
+          "type": "bgm",
+          "path": "MODERATO.OJ",
+          "offset": "0x14"
+        },
+        {
+          "type": "bgm",
+          "path": "MON.OJ",
+          "offset": "0x15"
+        },
+        {
+          "type": "bgm",
+          "path": "MRX2.OJ",
+          "offset": "0x16"
+        },
+        {
+          "type": "bgm",
+          "path": "MTSTAR.OJ",
+          "offset": "0x17"
+        },
+        {
+          "type": "bgm",
+          "path": "NAKANO.OJ",
+          "offset": "0x18"
+        },
+        {
+          "type": "bgm",
+          "path": "NHK.OJ",
+          "offset": "0x19"
+        },
+        {
+          "type": "bgm",
+          "path": "NO1.OJ",
+          "offset": "0x1a"
+        },
+        {
+          "type": "bgm",
+          "path": "OPEN.OJ",
+          "offset": "0x1b"
+        },
+        {
+          "type": "bgm",
+          "path": "PEC.OJ",
+          "offset": "0x1c"
+        },
+        {
+          "type": "bgm",
+          "path": "PENGIN.OJ",
+          "offset": "0x1d"
+        },
+        {
+          "type": "bgm",
+          "path": "PENTA.OJ",
+          "offset": "0x1e"
+        },
+        {
+          "type": "bgm",
+          "path": "POCO.OJ",
+          "offset": "0x1f"
+        },
+        {
+          "type": "bgm",
+          "path": "PP.OJ",
+          "offset": "0x20"
+        },
+        {
+          "type": "bgm",
+          "path": "Q2.OJ",
+          "offset": "0x21"
+        },
+        {
+          "type": "bgm",
+          "path": "RAMP.OJ",
+          "offset": "0x22"
+        },
+        {
+          "type": "bgm",
+          "path": "RATIO.OJ",
+          "offset": "0x23"
+        },
+        {
+          "type": "bgm",
+          "path": "ROPOP.OJ",
+          "offset": "0x24"
+        },
+        {
+          "type": "bgm",
+          "path": "SP.OJ",
+          "offset": "0x25"
+        },
+        {
+          "type": "bgm",
+          "path": "SPINBALL.OJ",
+          "offset": "0x26"
+        },
+        {
+          "type": "bgm",
+          "path": "STR.OJ",
+          "offset": "0x27"
+        },
+        {
+          "type": "bgm",
+          "path": "TUKURI.OJ",
+          "offset": "0x28"
+        },
+        {
+          "type": "bgm",
+          "path": "URANUS.OJ",
+          "offset": "0x29"
+        },
+        {
+          "type": "bgm",
+          "path": "WAWORKS.OJ",
+          "offset": "0x2a"
+        },
+        {
+          "type": "bgm",
+          "path": "WOO.OJ",
+          "offset": "0x2b"
+        },
+        {
+          "type": "bgm",
+          "path": "XYZ.OJ",
+          "offset": "0x2c"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x00",
+          "title": "[STOP]"
+        },
+        {
+          "kind": "title",
+          "code": "0x1a",
+          "title": "NO1     .OJ: Beginners'"
+        },
+        {
+          "kind": "title",
+          "code": "0x28",
+          "title": "TUKURI  .OJ: WaterWorks"
+        },
+        {
+          "kind": "title",
+          "code": "0x26",
+          "title": "SPINBALL.OJ: Pak Attack"
+        },
+        {
+          "kind": "title",
+          "code": "0x25",
+          "title": "SP      .OJ: Pyramidea"
+        },
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "ARIOSO  .OJ: Buxton cat"
+        },
+        {
+          "kind": "title",
+          "code": "0x0d",
+          "title": "JACK    .OJ: Tri Path"
+        },
+        {
+          "kind": "title",
+          "code": "0x09",
+          "title": "GLAVE   .OJ: Sandy Island"
+        },
+        {
+          "kind": "title",
+          "code": "0x02",
+          "title": "BALL_R  .OJ: Ballrace"
+        },
+        {
+          "kind": "title",
+          "code": "0x18",
+          "title": "NAKANO  .OJ: Grass hopper"
+        },
+        {
+          "kind": "title",
+          "code": "0x0b",
+          "title": "HARD    .OJ: Roller-ama"
+        },
+        {
+          "kind": "title",
+          "code": "0x0f",
+          "title": "JIVE    .OJ: Frigia"
+        },
+        {
+          "kind": "title",
+          "code": "0x23",
+          "title": "RATIO   .OJ: Arrow Maze"
+        },
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "KUKU2   .OJ: Castle Quest"
+        },
+        {
+          "kind": "title",
+          "code": "0x19",
+          "title": "NHK     .OJ: Tower City"
+        },
+        {
+          "kind": "title",
+          "code": "0x0a",
+          "title": "GRASS   .OJ: Grass Maze"
+        },
+        {
+          "kind": "title",
+          "code": "0x1f",
+          "title": "POCO    .OJ: RADIMA"
+        },
+        {
+          "kind": "title",
+          "code": "0x27",
+          "title": "STR     .OJ: Oily Way"
+        },
+        {
+          "kind": "title",
+          "code": "0x2a",
+          "title": "WAWORKS .OJ: WaterWorld"
+        },
+        {
+          "kind": "title",
+          "code": "0x14",
+          "title": "MODERATO.OJ: MisDirection"
+        },
+        {
+          "kind": "title",
+          "code": "0x15",
+          "title": "MON     .OJ: Torture!"
+        },
+        {
+          "kind": "title",
+          "code": "0x03",
+          "title": "CHASE   .OJ: Obelisk Run"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "MF      .OJ: Canal Side"
+        },
+        {
+          "kind": "title",
+          "code": "0x08",
+          "title": "GAME    .OJ: Spindizzy!"
+        },
+        {
+          "kind": "title",
+          "code": "0x16",
+          "title": "MRX2    .OJ: Tutorial"
+        },
+        {
+          "kind": "title",
+          "code": "0x21",
+          "title": "Q2      .OJ: Quadrant 2"
+        },
+        {
+          "kind": "title",
+          "code": "0x22",
+          "title": "RAMP    .OJ: Ramp Run"
+        },
+        {
+          "kind": "title",
+          "code": "0x1e",
+          "title": "PENTA   .OJ: Split Up"
+        },
+        {
+          "kind": "title",
+          "code": "0x24",
+          "title": "ROPOP   .OJ: Lavalite"
+        },
+        {
+          "kind": "title",
+          "code": "0x20",
+          "title": "PP      .OJ: Gargoyle"
+        },
+        {
+          "kind": "title",
+          "code": "0x05",
+          "title": "EASY    .OJ: EasyDizzy"
+        },
+        {
+          "kind": "title",
+          "code": "0x29",
+          "title": "URANUS  .OJ: URANUS"
+        },
+        {
+          "kind": "title",
+          "code": "0x17",
+          "title": "MTSTAR  .OJ: CLUSTER"
+        },
+        {
+          "kind": "title",
+          "code": "0x1d",
+          "title": "PENGIN  .OJ: Paradise"
+        },
+        {
+          "kind": "title",
+          "code": "0x2b",
+          "title": "WOO     .OJ: Woo!!"
+        },
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "LOGO    .OJ: Arsys Logo"
+        },
+        {
+          "kind": "title",
+          "code": "0x04",
+          "title": "CTTY    .OJ: Eternal Move"
+        },
+        {
+          "kind": "title",
+          "code": "0x06",
+          "title": "END     .OJ: Ending"
+        },
+        {
+          "kind": "title",
+          "code": "0x1b",
+          "title": "OPEN    .OJ: Zoom Up"
+        },
+        {
+          "kind": "title",
+          "code": "0x0e",
+          "title": "JAZZ    .OJ: Solid Time"
+        },
+        {
+          "kind": "title",
+          "code": "0x0c",
+          "title": "HURRY_UP.OJ: HURRY UP!"
+        },
+        {
+          "kind": "title",
+          "code": "0x07",
+          "title": "FINAL   .OJ:"
+        },
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "KUKU    .OJ:"
+        },
+        {
+          "kind": "title",
+          "code": "0x1c",
+          "title": "PEC     .OJ:"
+        },
+        {
+          "kind": "title",
+          "code": "0x2c",
+          "title": "XYZ     .OJ:"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/arsys.xml",
+      "source_order": 245,
+      "archive": "spnd2_98",
+      "id": "spnd2-98-opn"
+    },
+    {
+      "title": "[PC-9801] STAR CRUISER",
+      "driver": {
+        "name": "pc98vx",
+        "type": "opn",
+        "alias": "Arsys Software",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "bootcs",
+          "value": "0x0060"
+        },
+        {
+          "name": "bootip",
+          "value": "0xe000"
+        },
+        {
+          "name": "funcvect",
+          "value": "0x7f"
+        },
+        {
+          "name": "dataaddr",
+          "value": "0x1be00"
+        },
+        {
+          "name": "filesize",
+          "value": "0x2000"
+        },
+        {
+          "name": "clockmul",
+          "value": "8"
+        },
+        {
+          "name": "datamax",
+          "value": "0x1f"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "PROG",
+          "offset": "0x00600"
+        },
+        {
+          "type": "code",
+          "path": "SC.BIN",
+          "offset": "0x0e600"
+        },
+        {
+          "type": "code",
+          "path": "DATA",
+          "offset": "0x10600"
+        },
+        {
+          "type": "code",
+          "path": "EFFECT",
+          "offset": "0x1f100"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS01",
+          "offset": "0x01"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS02",
+          "offset": "0x02"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS03",
+          "offset": "0x03"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS04",
+          "offset": "0x04"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS05",
+          "offset": "0x05"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS06",
+          "offset": "0x06"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS07",
+          "offset": "0x07"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS08",
+          "offset": "0x08"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS09",
+          "offset": "0x09"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS10",
+          "offset": "0x0a"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS11",
+          "offset": "0x0b"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS12",
+          "offset": "0x0c"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS13",
+          "offset": "0x0d"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS14",
+          "offset": "0x0e"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS15",
+          "offset": "0x0f"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS16",
+          "offset": "0x10"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS17",
+          "offset": "0x11"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS18",
+          "offset": "0x12"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS19",
+          "offset": "0x13"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS20",
+          "offset": "0x14"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS21",
+          "offset": "0x15"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS22",
+          "offset": "0x16"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS23",
+          "offset": "0x17"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS24",
+          "offset": "0x18"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS25",
+          "offset": "0x19"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS26",
+          "offset": "0x1a"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS27",
+          "offset": "0x1b"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS28",
+          "offset": "0x1c"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS29",
+          "offset": "0x1d"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS30",
+          "offset": "0x1e"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "スペースフライト"
+        },
+        {
+          "kind": "title",
+          "code": "0x02",
+          "title": "スペースファイト"
+        },
+        {
+          "kind": "title",
+          "code": "0x03",
+          "title": "デザートゾーン"
+        },
+        {
+          "kind": "title",
+          "code": "0x04",
+          "title": "スタークルーザー"
+        },
+        {
+          "kind": "title",
+          "code": "0x05",
+          "title": "レッドゾーン"
+        },
+        {
+          "kind": "title",
+          "code": "0x06",
+          "title": "スペースボート"
+        },
+        {
+          "kind": "title",
+          "code": "0x07",
+          "title": "ショップ"
+        },
+        {
+          "kind": "title",
+          "code": "0x08",
+          "title": "バトルスペース"
+        },
+        {
+          "kind": "title",
+          "code": "0x09",
+          "title": "ディージー"
+        },
+        {
+          "kind": "title",
+          "code": "0x0a",
+          "title": "土星"
+        },
+        {
+          "kind": "title",
+          "code": "0x0b",
+          "title": "大赤斑"
+        },
+        {
+          "kind": "title",
+          "code": "0x0c",
+          "title": "ビッグボス"
+        },
+        {
+          "kind": "title",
+          "code": "0x0d",
+          "title": "ミッドボス"
+        },
+        {
+          "kind": "title",
+          "code": "0x0e",
+          "title": "基地内部"
+        },
+        {
+          "kind": "title",
+          "code": "0x0f",
+          "title": "レクイエム"
+        },
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "生体プラント"
+        },
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "ワープアウト"
+        },
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "ゲームオーバー"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "リジル＝ケント星系"
+        },
+        {
+          "kind": "title",
+          "code": "0x14",
+          "title": "NINETEEN"
+        },
+        {
+          "kind": "title",
+          "code": "0x15",
+          "title": "ジューン"
+        },
+        {
+          "kind": "title",
+          "code": "0x16",
+          "title": "ブローカー"
+        },
+        {
+          "kind": "title",
+          "code": "0x17",
+          "title": "惑星オールドニューヨーク"
+        },
+        {
+          "kind": "title",
+          "code": "0x18",
+          "title": "バーナード星系"
+        },
+        {
+          "kind": "title",
+          "code": "0x19",
+          "title": "火星"
+        },
+        {
+          "kind": "title",
+          "code": "0x1a",
+          "title": "遥かな宇宙へ"
+        },
+        {
+          "kind": "title",
+          "code": "0x1b",
+          "title": "シリウス星系"
+        },
+        {
+          "kind": "title",
+          "code": "0x1c",
+          "title": "VOID 大戦艦"
+        },
+        {
+          "kind": "title",
+          "code": "0x1d",
+          "title": "G-カタパルト"
+        },
+        {
+          "kind": "title",
+          "code": "0x1e",
+          "title": "ハイパースペース"
+        },
+        {
+          "kind": "title",
+          "code": "0x20",
+          "title": "効果音#01"
+        },
+        {
+          "kind": "title",
+          "code": "0x21",
+          "title": "効果音#02"
+        },
+        {
+          "kind": "title",
+          "code": "0x22",
+          "title": "効果音#03"
+        },
+        {
+          "kind": "title",
+          "code": "0x23",
+          "title": "効果音#04"
+        },
+        {
+          "kind": "title",
+          "code": "0x24",
+          "title": "効果音#05"
+        },
+        {
+          "kind": "title",
+          "code": "0x25",
+          "title": "効果音#06"
+        },
+        {
+          "kind": "title",
+          "code": "0x26",
+          "title": "効果音#07"
+        },
+        {
+          "kind": "title",
+          "code": "0x27",
+          "title": "効果音#08"
+        },
+        {
+          "kind": "title",
+          "code": "0x28",
+          "title": "効果音#09"
+        },
+        {
+          "kind": "title",
+          "code": "0x29",
+          "title": "効果音#10"
+        },
+        {
+          "kind": "title",
+          "code": "0x2a",
+          "title": "効果音#11"
+        },
+        {
+          "kind": "title",
+          "code": "0x2b",
+          "title": "効果音#12"
+        },
+        {
+          "kind": "title",
+          "code": "0x2c",
+          "title": "効果音#13"
+        },
+        {
+          "kind": "title",
+          "code": "0x2d",
+          "title": "効果音#14"
+        },
+        {
+          "kind": "title",
+          "code": "0x2e",
+          "title": "効果音#15"
+        },
+        {
+          "kind": "title",
+          "code": "0x2f",
+          "title": "効果音#16"
+        },
+        {
+          "kind": "title",
+          "code": "0x30",
+          "title": "効果音#17"
+        },
+        {
+          "kind": "title",
+          "code": "0x31",
+          "title": "効果音#18"
+        },
+        {
+          "kind": "title",
+          "code": "0x32",
+          "title": "効果音#19"
+        },
+        {
+          "kind": "title",
+          "code": "0x33",
+          "title": "効果音#20"
+        },
+        {
+          "kind": "title",
+          "code": "0x34",
+          "title": "効果音#21"
+        },
+        {
+          "kind": "title",
+          "code": "0x35",
+          "title": "効果音#22"
+        },
+        {
+          "kind": "title",
+          "code": "0x36",
+          "title": "効果音#23"
+        },
+        {
+          "kind": "title",
+          "code": "0x37",
+          "title": "効果音#24"
+        },
+        {
+          "kind": "title",
+          "code": "0x38",
+          "title": "効果音#25"
+        },
+        {
+          "kind": "title",
+          "code": "0x39",
+          "title": "効果音#26"
+        },
+        {
+          "kind": "title",
+          "code": "0x3a",
+          "title": "効果音#27"
+        },
+        {
+          "kind": "title",
+          "code": "0x3b",
+          "title": "効果音#28"
+        },
+        {
+          "kind": "title",
+          "code": "0x3c",
+          "title": "効果音#29"
+        },
+        {
+          "kind": "title",
+          "code": "0x3d",
+          "title": "効果音#30"
+        },
+        {
+          "kind": "title",
+          "code": "0x3e",
+          "title": "効果音#31"
+        },
+        {
+          "kind": "title",
+          "code": "0x3f",
+          "title": "効果音#32"
+        },
+        {
+          "kind": "title",
+          "code": "0x40",
+          "title": "効果音#33"
+        },
+        {
+          "kind": "title",
+          "code": "0x41",
+          "title": "効果音#34"
+        },
+        {
+          "kind": "title",
+          "code": "0x42",
+          "title": "効果音#35"
+        },
+        {
+          "kind": "title",
+          "code": "0x43",
+          "title": "効果音#36"
+        },
+        {
+          "kind": "title",
+          "code": "0x44",
+          "title": "効果音#37"
+        },
+        {
+          "kind": "title",
+          "code": "0x45",
+          "title": "効果音#38"
+        },
+        {
+          "kind": "title",
+          "code": "0x46",
+          "title": "効果音#39"
+        },
+        {
+          "kind": "title",
+          "code": "0x47",
+          "title": "効果音#40"
+        },
+        {
+          "kind": "title",
+          "code": "0x48",
+          "title": "効果音#41"
+        },
+        {
+          "kind": "title",
+          "code": "0x49",
+          "title": "効果音#42"
+        },
+        {
+          "kind": "title",
+          "code": "0x4a",
+          "title": "効果音#43"
+        },
+        {
+          "kind": "title",
+          "code": "0x4b",
+          "title": "効果音#44"
+        },
+        {
+          "kind": "title",
+          "code": "0x4c",
+          "title": "効果音#45"
+        },
+        {
+          "kind": "title",
+          "code": "0x4d",
+          "title": "効果音#46"
+        },
+        {
+          "kind": "title",
+          "code": "0x4e",
+          "title": "効果音#47"
+        },
+        {
+          "kind": "title",
+          "code": "0x4f",
+          "title": "効果音#48"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/arsys.xml",
+      "source_order": 246,
+      "archive": "sc_98",
+      "id": "sc-98-opn"
+    },
+    {
+      "title": "[PC-9801] STAR CRUISER II - The Odysseus project -(OPN)",
+      "driver": {
+        "name": "pc98dos",
+        "type": "opn",
+        "alias": "Arsys Software",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "clockmul",
+          "value": "8"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "sc2_98.com",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "OPNDRVX.EXE",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MUSICS1.ARC",
+          "offset": "5"
+        },
+        {
+          "type": "file",
+          "path": "MUSICS2.ARC",
+          "offset": "6"
+        },
+        {
+          "type": "file",
+          "path": "MUSICS3.ARC",
+          "offset": "7"
+        },
+        {
+          "type": "shell",
+          "path": "opndrvx",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "sc2_98",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x0500",
+          "title": "(初期化)"
+        },
+        {
+          "kind": "title",
+          "code": "0x0501",
+          "title": "アルシスロゴ"
+        },
+        {
+          "kind": "title",
+          "code": "0x0502",
+          "title": "オープニング"
+        },
+        {
+          "kind": "title",
+          "code": "0x0503",
+          "title": "スタークルーザー タイトル"
+        },
+        {
+          "kind": "title",
+          "code": "0x0504",
+          "title": "VOID 戦闘のテーマ"
+        },
+        {
+          "kind": "title",
+          "code": "0x0505",
+          "title": "ナレーション"
+        },
+        {
+          "kind": "title",
+          "code": "0x0506",
+          "title": "遥かなる旅立ち"
+        },
+        {
+          "kind": "title",
+          "code": "0x0507",
+          "title": "PRINCE"
+        },
+        {
+          "kind": "title",
+          "code": "0x0508",
+          "title": "AREA 1"
+        },
+        {
+          "kind": "title",
+          "code": "0x0509",
+          "title": "傷心のテーマ"
+        },
+        {
+          "kind": "title",
+          "code": "0x050a",
+          "title": "出航のテーマ"
+        },
+        {
+          "kind": "title",
+          "code": "0x050b",
+          "title": "ディオニカ"
+        },
+        {
+          "kind": "title",
+          "code": "0x0600",
+          "title": "ゲームオーバー"
+        },
+        {
+          "kind": "title",
+          "code": "0x0601",
+          "title": "艦隊ワープ"
+        },
+        {
+          "kind": "title",
+          "code": "0x0602",
+          "title": "BASE"
+        },
+        {
+          "kind": "title",
+          "code": "0x0603",
+          "title": "不安な情景その1"
+        },
+        {
+          "kind": "title",
+          "code": "0x0604",
+          "title": "SNOW LAND"
+        },
+        {
+          "kind": "title",
+          "code": "0x0605",
+          "title": "I Cannot Trust Any of Them"
+        },
+        {
+          "kind": "title",
+          "code": "0x0606",
+          "title": "Space Flight"
+        },
+        {
+          "kind": "title",
+          "code": "0x0607",
+          "title": "UNI"
+        },
+        {
+          "kind": "title",
+          "code": "0x0608",
+          "title": "地上戦のテーマその1"
+        },
+        {
+          "kind": "title",
+          "code": "0x0609",
+          "title": "士気高揚"
+        },
+        {
+          "kind": "title",
+          "code": "0x060a",
+          "title": "地上戦のテーマその2"
+        },
+        {
+          "kind": "title",
+          "code": "0x060b",
+          "title": "White Comet"
+        },
+        {
+          "kind": "title",
+          "code": "0x060c",
+          "title": "Bar"
+        },
+        {
+          "kind": "title",
+          "code": "0x060d",
+          "title": "不安な情景その2"
+        },
+        {
+          "kind": "title",
+          "code": "0x060e",
+          "title": "艦内効果音"
+        },
+        {
+          "kind": "title",
+          "code": "0x060f",
+          "title": "SHOP1"
+        },
+        {
+          "kind": "title",
+          "code": "0x0610",
+          "title": "SHOP2"
+        },
+        {
+          "kind": "title",
+          "code": "0x0611",
+          "title": "ENERGY SHOP"
+        },
+        {
+          "kind": "title",
+          "code": "0x0612",
+          "title": "Dangerous Zone"
+        },
+        {
+          "kind": "title",
+          "code": "0x0613",
+          "title": "Shocking"
+        },
+        {
+          "kind": "title",
+          "code": "0x0614",
+          "title": "緊迫"
+        },
+        {
+          "kind": "title",
+          "code": "0x0615",
+          "title": "G-Catapult"
+        },
+        {
+          "kind": "title",
+          "code": "0x0616",
+          "title": "水中生物"
+        },
+        {
+          "kind": "title",
+          "code": "0x0617",
+          "title": "リタナー艦隊"
+        },
+        {
+          "kind": "title",
+          "code": "0x0618",
+          "title": "地上戦のテーマその1"
+        },
+        {
+          "kind": "title",
+          "code": "0x0619",
+          "title": "CORE"
+        },
+        {
+          "kind": "title",
+          "code": "0x0700",
+          "title": "Woody Planet"
+        },
+        {
+          "kind": "title",
+          "code": "0x0701",
+          "title": "Alien's Bar"
+        },
+        {
+          "kind": "title",
+          "code": "0x0702",
+          "title": "人工都市惑星"
+        },
+        {
+          "kind": "title",
+          "code": "0x0703",
+          "title": "The Center of Galaxy"
+        },
+        {
+          "kind": "title",
+          "code": "0x0704",
+          "title": "神殿"
+        },
+        {
+          "kind": "title",
+          "code": "0x0705",
+          "title": "AREA 2"
+        },
+        {
+          "kind": "title",
+          "code": "0x0706",
+          "title": "Juke Box"
+        },
+        {
+          "kind": "title",
+          "code": "0x0707",
+          "title": "エンディングのテーマ (Shine on)"
+        },
+        {
+          "kind": "title",
+          "code": "0x0708",
+          "title": "爆発音"
+        },
+        {
+          "kind": "title",
+          "code": "0x0709",
+          "title": "プリ ノヴァ"
+        },
+        {
+          "kind": "title",
+          "code": "0x070a",
+          "title": "ディオニカ"
+        },
+        {
+          "kind": "title",
+          "code": "0x070b",
+          "title": "Powerful Blade"
+        },
+        {
+          "kind": "title",
+          "code": "0x070c",
+          "title": "Bio Punc"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/arsys.xml",
+      "source_order": 247,
+      "archive": "sc2_98",
+      "id": "sc2-98-opn"
+    },
+    {
+      "title": "[PC-9801] STAR CRUISER II - The Odysseus project -(MT-32)",
+      "driver": {
+        "name": "pc98dos",
+        "type": "beep",
+        "alias": "Arsys Software",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "clockmul",
+          "value": "8"
+        },
+        {
+          "name": "midiout",
+          "value": "1"
+        },
+        {
+          "name": "midiout_type",
+          "value": "2"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "sc2_98.com",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "NMD.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MUSICS1.ARC",
+          "offset": "5"
+        },
+        {
+          "type": "file",
+          "path": "MUSICS2.ARC",
+          "offset": "6"
+        },
+        {
+          "type": "file",
+          "path": "MUSICS3.ARC",
+          "offset": "7"
+        },
+        {
+          "type": "shell",
+          "path": "nmd",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "sc2_98",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x2500",
+          "title": "(初期化)"
+        },
+        {
+          "kind": "title",
+          "code": "0x2501",
+          "title": "アルシスロゴ"
+        },
+        {
+          "kind": "title",
+          "code": "0x2502",
+          "title": "オープニング"
+        },
+        {
+          "kind": "title",
+          "code": "0x2503",
+          "title": "スタークルーザー タイトル"
+        },
+        {
+          "kind": "title",
+          "code": "0x2504",
+          "title": "VOID 戦闘のテーマ"
+        },
+        {
+          "kind": "title",
+          "code": "0x2505",
+          "title": "ナレーション"
+        },
+        {
+          "kind": "title",
+          "code": "0x2506",
+          "title": "遥かなる旅立ち"
+        },
+        {
+          "kind": "title",
+          "code": "0x2507",
+          "title": "PRINCE"
+        },
+        {
+          "kind": "title",
+          "code": "0x2508",
+          "title": "AREA 1"
+        },
+        {
+          "kind": "title",
+          "code": "0x2509",
+          "title": "傷心のテーマ"
+        },
+        {
+          "kind": "title",
+          "code": "0x250a",
+          "title": "出航のテーマ"
+        },
+        {
+          "kind": "title",
+          "code": "0x250b",
+          "title": "ディオニカ"
+        },
+        {
+          "kind": "title",
+          "code": "0x2600",
+          "title": "ゲームオーバー"
+        },
+        {
+          "kind": "title",
+          "code": "0x2601",
+          "title": "艦隊ワープ"
+        },
+        {
+          "kind": "title",
+          "code": "0x2602",
+          "title": "BASE"
+        },
+        {
+          "kind": "title",
+          "code": "0x2603",
+          "title": "不安な情景その1"
+        },
+        {
+          "kind": "title",
+          "code": "0x2604",
+          "title": "SNOW LAND"
+        },
+        {
+          "kind": "title",
+          "code": "0x2605",
+          "title": "I Cannot Trust Any of Them"
+        },
+        {
+          "kind": "title",
+          "code": "0x2606",
+          "title": "Space Flight"
+        },
+        {
+          "kind": "title",
+          "code": "0x2607",
+          "title": "UNI"
+        },
+        {
+          "kind": "title",
+          "code": "0x2608",
+          "title": "地上戦のテーマその1"
+        },
+        {
+          "kind": "title",
+          "code": "0x2609",
+          "title": "士気高揚"
+        },
+        {
+          "kind": "title",
+          "code": "0x260a",
+          "title": "地上戦のテーマその2"
+        },
+        {
+          "kind": "title",
+          "code": "0x260b",
+          "title": "White Comet"
+        },
+        {
+          "kind": "title",
+          "code": "0x260c",
+          "title": "Bar"
+        },
+        {
+          "kind": "title",
+          "code": "0x260d",
+          "title": "不安な情景その2"
+        },
+        {
+          "kind": "title",
+          "code": "0x260e",
+          "title": "艦内効果音"
+        },
+        {
+          "kind": "title",
+          "code": "0x260f",
+          "title": "SHOP1"
+        },
+        {
+          "kind": "title",
+          "code": "0x2610",
+          "title": "SHOP2"
+        },
+        {
+          "kind": "title",
+          "code": "0x2611",
+          "title": "ENERGY SHOP"
+        },
+        {
+          "kind": "title",
+          "code": "0x2612",
+          "title": "Dangerous Zone"
+        },
+        {
+          "kind": "title",
+          "code": "0x2613",
+          "title": "Shocking"
+        },
+        {
+          "kind": "title",
+          "code": "0x2614",
+          "title": "緊迫"
+        },
+        {
+          "kind": "title",
+          "code": "0x2615",
+          "title": "G-Catapult"
+        },
+        {
+          "kind": "title",
+          "code": "0x2616",
+          "title": "水中生物"
+        },
+        {
+          "kind": "title",
+          "code": "0x2617",
+          "title": "リタナー艦隊"
+        },
+        {
+          "kind": "title",
+          "code": "0x2618",
+          "title": "地上戦のテーマその1"
+        },
+        {
+          "kind": "title",
+          "code": "0x2619",
+          "title": "CORE"
+        },
+        {
+          "kind": "title",
+          "code": "0x2700",
+          "title": "Woody Planet"
+        },
+        {
+          "kind": "title",
+          "code": "0x2701",
+          "title": "Alien's Bar"
+        },
+        {
+          "kind": "title",
+          "code": "0x2702",
+          "title": "人工都市惑星"
+        },
+        {
+          "kind": "title",
+          "code": "0x2703",
+          "title": "The Center of Galaxy"
+        },
+        {
+          "kind": "title",
+          "code": "0x2704",
+          "title": "神殿"
+        },
+        {
+          "kind": "title",
+          "code": "0x2705",
+          "title": "AREA 2"
+        },
+        {
+          "kind": "title",
+          "code": "0x2706",
+          "title": "Juke Box"
+        },
+        {
+          "kind": "title",
+          "code": "0x2707",
+          "title": "エンディングのテーマ (Shine on)"
+        },
+        {
+          "kind": "title",
+          "code": "0x2708",
+          "title": "爆発音"
+        },
+        {
+          "kind": "title",
+          "code": "0x2709",
+          "title": "プリ ノヴァ"
+        },
+        {
+          "kind": "title",
+          "code": "0x270a",
+          "title": "ディオニカ"
+        },
+        {
+          "kind": "title",
+          "code": "0x270b",
+          "title": "Powerful Blade"
+        },
+        {
+          "kind": "title",
+          "code": "0x270c",
+          "title": "Bio Punc"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/arsys.xml",
+      "source_order": 248,
+      "archive": "sc2_98",
+      "id": "sc2-98-beep"
+    },
+    {
+      "title": "[PC-9801] STAR CRUISER II - The Odysseus project -(MT-32 Emulation)",
+      "driver": {
+        "name": "pc98dos",
+        "type": "beep",
+        "alias": "Arsys Software",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "clockmul",
+          "value": "8"
+        },
+        {
+          "name": "midiout",
+          "value": "1"
+        },
+        {
+          "name": "midiout_type",
+          "value": "1"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "sc2_98.com",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "NMD.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MUSICS1.ARC",
+          "offset": "5"
+        },
+        {
+          "type": "file",
+          "path": "MUSICS2.ARC",
+          "offset": "6"
+        },
+        {
+          "type": "file",
+          "path": "MUSICS3.ARC",
+          "offset": "7"
+        },
+        {
+          "type": "shell",
+          "path": "nmd",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "sc2_98",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x2500",
+          "title": "(初期化)"
+        },
+        {
+          "kind": "title",
+          "code": "0x2501",
+          "title": "アルシスロゴ"
+        },
+        {
+          "kind": "title",
+          "code": "0x2502",
+          "title": "オープニング"
+        },
+        {
+          "kind": "title",
+          "code": "0x2503",
+          "title": "スタークルーザー タイトル"
+        },
+        {
+          "kind": "title",
+          "code": "0x2504",
+          "title": "VOID 戦闘のテーマ"
+        },
+        {
+          "kind": "title",
+          "code": "0x2505",
+          "title": "ナレーション"
+        },
+        {
+          "kind": "title",
+          "code": "0x2506",
+          "title": "遥かなる旅立ち"
+        },
+        {
+          "kind": "title",
+          "code": "0x2507",
+          "title": "PRINCE"
+        },
+        {
+          "kind": "title",
+          "code": "0x2508",
+          "title": "AREA 1"
+        },
+        {
+          "kind": "title",
+          "code": "0x2509",
+          "title": "傷心のテーマ"
+        },
+        {
+          "kind": "title",
+          "code": "0x250a",
+          "title": "出航のテーマ"
+        },
+        {
+          "kind": "title",
+          "code": "0x250b",
+          "title": "ディオニカ"
+        },
+        {
+          "kind": "title",
+          "code": "0x2600",
+          "title": "ゲームオーバー"
+        },
+        {
+          "kind": "title",
+          "code": "0x2601",
+          "title": "艦隊ワープ"
+        },
+        {
+          "kind": "title",
+          "code": "0x2602",
+          "title": "BASE"
+        },
+        {
+          "kind": "title",
+          "code": "0x2603",
+          "title": "不安な情景その1"
+        },
+        {
+          "kind": "title",
+          "code": "0x2604",
+          "title": "SNOW LAND"
+        },
+        {
+          "kind": "title",
+          "code": "0x2605",
+          "title": "I Cannot Trust Any of Them"
+        },
+        {
+          "kind": "title",
+          "code": "0x2606",
+          "title": "Space Flight"
+        },
+        {
+          "kind": "title",
+          "code": "0x2607",
+          "title": "UNI"
+        },
+        {
+          "kind": "title",
+          "code": "0x2608",
+          "title": "地上戦のテーマその1"
+        },
+        {
+          "kind": "title",
+          "code": "0x2609",
+          "title": "士気高揚"
+        },
+        {
+          "kind": "title",
+          "code": "0x260a",
+          "title": "地上戦のテーマその2"
+        },
+        {
+          "kind": "title",
+          "code": "0x260b",
+          "title": "White Comet"
+        },
+        {
+          "kind": "title",
+          "code": "0x260c",
+          "title": "Bar"
+        },
+        {
+          "kind": "title",
+          "code": "0x260d",
+          "title": "不安な情景その2"
+        },
+        {
+          "kind": "title",
+          "code": "0x260e",
+          "title": "艦内効果音"
+        },
+        {
+          "kind": "title",
+          "code": "0x260f",
+          "title": "SHOP1"
+        },
+        {
+          "kind": "title",
+          "code": "0x2610",
+          "title": "SHOP2"
+        },
+        {
+          "kind": "title",
+          "code": "0x2611",
+          "title": "ENERGY SHOP"
+        },
+        {
+          "kind": "title",
+          "code": "0x2612",
+          "title": "Dangerous Zone"
+        },
+        {
+          "kind": "title",
+          "code": "0x2613",
+          "title": "Shocking"
+        },
+        {
+          "kind": "title",
+          "code": "0x2614",
+          "title": "緊迫"
+        },
+        {
+          "kind": "title",
+          "code": "0x2615",
+          "title": "G-Catapult"
+        },
+        {
+          "kind": "title",
+          "code": "0x2616",
+          "title": "水中生物"
+        },
+        {
+          "kind": "title",
+          "code": "0x2617",
+          "title": "リタナー艦隊"
+        },
+        {
+          "kind": "title",
+          "code": "0x2618",
+          "title": "地上戦のテーマその1"
+        },
+        {
+          "kind": "title",
+          "code": "0x2619",
+          "title": "CORE"
+        },
+        {
+          "kind": "title",
+          "code": "0x2700",
+          "title": "Woody Planet"
+        },
+        {
+          "kind": "title",
+          "code": "0x2701",
+          "title": "Alien's Bar"
+        },
+        {
+          "kind": "title",
+          "code": "0x2702",
+          "title": "人工都市惑星"
+        },
+        {
+          "kind": "title",
+          "code": "0x2703",
+          "title": "The Center of Galaxy"
+        },
+        {
+          "kind": "title",
+          "code": "0x2704",
+          "title": "神殿"
+        },
+        {
+          "kind": "title",
+          "code": "0x2705",
+          "title": "AREA 2"
+        },
+        {
+          "kind": "title",
+          "code": "0x2706",
+          "title": "Juke Box"
+        },
+        {
+          "kind": "title",
+          "code": "0x2707",
+          "title": "エンディングのテーマ (Shine on)"
+        },
+        {
+          "kind": "title",
+          "code": "0x2708",
+          "title": "爆発音"
+        },
+        {
+          "kind": "title",
+          "code": "0x2709",
+          "title": "プリ ノヴァ"
+        },
+        {
+          "kind": "title",
+          "code": "0x270a",
+          "title": "ディオニカ"
+        },
+        {
+          "kind": "title",
+          "code": "0x270b",
+          "title": "Powerful Blade"
+        },
+        {
+          "kind": "title",
+          "code": "0x270c",
+          "title": "Bio Punc"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/arsys.xml",
+      "source_order": 249,
+      "archive": "sc2_98",
+      "id": "sc2-98-beep-2"
+    },
+    {
+      "title": "[PC-9801] STAR CRUISER II - The Odysseus project -(GS)",
+      "driver": {
+        "name": "pc98dos",
+        "type": "beep",
+        "alias": "Arsys Software",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "clockmul",
+          "value": "8"
+        },
+        {
+          "name": "midiout",
+          "value": "1"
+        },
+        {
+          "name": "midiout_type",
+          "value": "4"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "sc2_98.com",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "NMD.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MUSICS1.ARC",
+          "offset": "5"
+        },
+        {
+          "type": "file",
+          "path": "MUSICS2.ARC",
+          "offset": "6"
+        },
+        {
+          "type": "file",
+          "path": "MUSICS3.ARC",
+          "offset": "7"
+        },
+        {
+          "type": "shell",
+          "path": "nmd",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "sc2_98",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x1500",
+          "title": "(初期化)"
+        },
+        {
+          "kind": "title",
+          "code": "0x1501",
+          "title": "アルシスロゴ"
+        },
+        {
+          "kind": "title",
+          "code": "0x1502",
+          "title": "オープニング"
+        },
+        {
+          "kind": "title",
+          "code": "0x1503",
+          "title": "スタークルーザー タイトル"
+        },
+        {
+          "kind": "title",
+          "code": "0x1504",
+          "title": "VOID 戦闘のテーマ"
+        },
+        {
+          "kind": "title",
+          "code": "0x1505",
+          "title": "ナレーション"
+        },
+        {
+          "kind": "title",
+          "code": "0x1506",
+          "title": "遥かなる旅立ち"
+        },
+        {
+          "kind": "title",
+          "code": "0x1507",
+          "title": "PRINCE"
+        },
+        {
+          "kind": "title",
+          "code": "0x1508",
+          "title": "AREA 1"
+        },
+        {
+          "kind": "title",
+          "code": "0x1509",
+          "title": "傷心のテーマ"
+        },
+        {
+          "kind": "title",
+          "code": "0x150a",
+          "title": "出航のテーマ"
+        },
+        {
+          "kind": "title",
+          "code": "0x150b",
+          "title": "ディオニカ"
+        },
+        {
+          "kind": "title",
+          "code": "0x1600",
+          "title": "ゲームオーバー"
+        },
+        {
+          "kind": "title",
+          "code": "0x1601",
+          "title": "艦隊ワープ"
+        },
+        {
+          "kind": "title",
+          "code": "0x1602",
+          "title": "BASE"
+        },
+        {
+          "kind": "title",
+          "code": "0x1603",
+          "title": "不安な情景その1"
+        },
+        {
+          "kind": "title",
+          "code": "0x1604",
+          "title": "SNOW LAND"
+        },
+        {
+          "kind": "title",
+          "code": "0x1605",
+          "title": "I Cannot Trust Any of Them"
+        },
+        {
+          "kind": "title",
+          "code": "0x1606",
+          "title": "Space Flight"
+        },
+        {
+          "kind": "title",
+          "code": "0x1607",
+          "title": "UNI"
+        },
+        {
+          "kind": "title",
+          "code": "0x1608",
+          "title": "地上戦のテーマその1"
+        },
+        {
+          "kind": "title",
+          "code": "0x1609",
+          "title": "士気高揚"
+        },
+        {
+          "kind": "title",
+          "code": "0x160a",
+          "title": "地上戦のテーマその2"
+        },
+        {
+          "kind": "title",
+          "code": "0x160b",
+          "title": "White Comet"
+        },
+        {
+          "kind": "title",
+          "code": "0x160c",
+          "title": "Bar"
+        },
+        {
+          "kind": "title",
+          "code": "0x160d",
+          "title": "不安な情景その2"
+        },
+        {
+          "kind": "title",
+          "code": "0x160e",
+          "title": "艦内効果音"
+        },
+        {
+          "kind": "title",
+          "code": "0x160f",
+          "title": "SHOP1"
+        },
+        {
+          "kind": "title",
+          "code": "0x1610",
+          "title": "SHOP2"
+        },
+        {
+          "kind": "title",
+          "code": "0x1611",
+          "title": "ENERGY SHOP"
+        },
+        {
+          "kind": "title",
+          "code": "0x1612",
+          "title": "Dangerous Zone"
+        },
+        {
+          "kind": "title",
+          "code": "0x1613",
+          "title": "Shocking"
+        },
+        {
+          "kind": "title",
+          "code": "0x1614",
+          "title": "緊迫"
+        },
+        {
+          "kind": "title",
+          "code": "0x1615",
+          "title": "G-Catapult"
+        },
+        {
+          "kind": "title",
+          "code": "0x1616",
+          "title": "水中生物"
+        },
+        {
+          "kind": "title",
+          "code": "0x1617",
+          "title": "リタナー艦隊"
+        },
+        {
+          "kind": "title",
+          "code": "0x1618",
+          "title": "地上戦のテーマその1"
+        },
+        {
+          "kind": "title",
+          "code": "0x1619",
+          "title": "CORE"
+        },
+        {
+          "kind": "title",
+          "code": "0x1700",
+          "title": "Woody Planet"
+        },
+        {
+          "kind": "title",
+          "code": "0x1701",
+          "title": "Alien's Bar"
+        },
+        {
+          "kind": "title",
+          "code": "0x1702",
+          "title": "人工都市惑星"
+        },
+        {
+          "kind": "title",
+          "code": "0x1703",
+          "title": "The Center of Galaxy"
+        },
+        {
+          "kind": "title",
+          "code": "0x1704",
+          "title": "神殿"
+        },
+        {
+          "kind": "title",
+          "code": "0x1705",
+          "title": "AREA 2"
+        },
+        {
+          "kind": "title",
+          "code": "0x1706",
+          "title": "Juke Box"
+        },
+        {
+          "kind": "title",
+          "code": "0x1707",
+          "title": "エンディングのテーマ (Shine on)"
+        },
+        {
+          "kind": "title",
+          "code": "0x1708",
+          "title": "爆発音"
+        },
+        {
+          "kind": "title",
+          "code": "0x1709",
+          "title": "プリ ノヴァ"
+        },
+        {
+          "kind": "title",
+          "code": "0x170a",
+          "title": "ディオニカ"
+        },
+        {
+          "kind": "title",
+          "code": "0x170b",
+          "title": "Powerful Blade"
+        },
+        {
+          "kind": "title",
+          "code": "0x170c",
+          "title": "Bio Punc"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/arsys.xml",
+      "source_order": 250,
+      "archive": "sc2_98",
+      "id": "sc2-98-beep-3"
+    },
+    {
+      "title": "[X1] WiBARM",
+      "driver": {
+        "name": "x1",
+        "type": "psg",
+        "alias": "Arsys Software",
+        "platform": "SHARP X1"
+      },
+      "options": [
+        {
+          "name": "init_pc",
+          "value": "0xf000"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "PROG",
+          "offset": "0x0000"
+        },
+        {
+          "type": "code",
+          "path": "PATCH",
+          "offset": "0xf000"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS00",
+          "offset": "0x00"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS01",
+          "offset": "0x01"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS02",
+          "offset": "0x02"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS03",
+          "offset": "0x03"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x00000001",
+          "title": "MUS01 : 基地"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000002",
+          "title": "MUS02 : 地上"
+        },
+        {
+          "kind": "title",
+          "code": "0x01000002",
+          "title": "MUS02 : 戦闘"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000000",
+          "title": "MUS00 : 3D迷路(建物内)"
+        },
+        {
+          "kind": "comment",
+          "text": "\t<title code=\"0x01000000\">MUS00 : 戦闘</title> "
+        },
+        {
+          "kind": "title",
+          "code": "0xff000003",
+          "title": "MUS03 : エンディング"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/arsys.xml",
+      "source_order": 251,
+      "archive": "x1wibarm",
+      "id": "x1wibarm-psg"
+    },
+    {
+      "title": "[X1] Reviver(OPM)",
+      "driver": {
+        "name": "x1",
+        "type": "opm",
+        "alias": "Arsys Software",
+        "platform": "SHARP X1"
+      },
+      "options": [
+        {
+          "name": "init_pc",
+          "value": "0x8000"
+        },
+        {
+          "name": "mdata_addr",
+          "value": "0xd300"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "PROG",
+          "offset": "0x0000"
+        },
+        {
+          "type": "code",
+          "path": "PATCH",
+          "offset": "0x8000"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS01F",
+          "offset": "0x00"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS02F",
+          "offset": "0x01"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS03F",
+          "offset": "0x02"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS04F",
+          "offset": "0x03"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS05F",
+          "offset": "0x04"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS06F",
+          "offset": "0x05"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS07F",
+          "offset": "0x06"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS08F",
+          "offset": "0x07"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS09F",
+          "offset": "0x08"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS10F",
+          "offset": "0x09"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS11F",
+          "offset": "0x0a"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS12F",
+          "offset": "0x0b"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS13F",
+          "offset": "0x0c"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS14F",
+          "offset": "0x0d"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS15F",
+          "offset": "0x0e"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS16F",
+          "offset": "0x0f"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS17F",
+          "offset": "0x10"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS18F",
+          "offset": "0x11"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS19F",
+          "offset": "0x12"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS20F",
+          "offset": "0x13"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS21F",
+          "offset": "0x14"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS22F",
+          "offset": "0x15"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x15",
+          "title": "Logo"
+        },
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "オープニング"
+        },
+        {
+          "kind": "title",
+          "code": "0x07",
+          "title": "サダリアーン登場"
+        },
+        {
+          "kind": "title",
+          "code": "0x06",
+          "title": "魔導師タンダライド"
+        },
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "酒場"
+        },
+        {
+          "kind": "title",
+          "code": "0x0e",
+          "title": "ラビスターク"
+        },
+        {
+          "kind": "title",
+          "code": "0x03",
+          "title": "城"
+        },
+        {
+          "kind": "title",
+          "code": "0x00",
+          "title": "ラトウィーン"
+        },
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "女剣士アルマ"
+        },
+        {
+          "kind": "title",
+          "code": "0x02",
+          "title": "洞窟"
+        },
+        {
+          "kind": "title",
+          "code": "0x09",
+          "title": "魔物との遭遇"
+        },
+        {
+          "kind": "title",
+          "code": "0x08",
+          "title": "戦い"
+        },
+        {
+          "kind": "title",
+          "code": "0x0a",
+          "title": "重要アイテム入手"
+        },
+        {
+          "kind": "title",
+          "code": "0x0d",
+          "title": "落とし穴"
+        },
+        {
+          "kind": "title",
+          "code": "0x0b",
+          "title": "クリスタルロッド"
+        },
+        {
+          "kind": "title",
+          "code": "0x04",
+          "title": "天界・ハリイザード"
+        },
+        {
+          "kind": "title",
+          "code": "0x0c",
+          "title": "剣士コートの死"
+        },
+        {
+          "kind": "title",
+          "code": "0x05",
+          "title": "邪神界・ザリオザード"
+        },
+        {
+          "kind": "title",
+          "code": "0x0f",
+          "title": "サダリアーンとの戦い"
+        },
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "サダリアーンの最期"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "エンディング"
+        },
+        {
+          "kind": "title",
+          "code": "0x14",
+          "title": "死"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/arsys.xml",
+      "source_order": 252,
+      "archive": "x1rv",
+      "id": "x1rv-opm"
+    },
+    {
+      "title": "[X1] Reviver(PSG)",
+      "driver": {
+        "name": "x1",
+        "type": "psg",
+        "alias": "Arsys Software",
+        "platform": "SHARP X1"
+      },
+      "options": [
+        {
+          "name": "init_pc",
+          "value": "0x8000"
+        },
+        {
+          "name": "mdata_addr",
+          "value": "0xd300"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "PROG",
+          "offset": "0x0000"
+        },
+        {
+          "type": "code",
+          "path": "PATCH",
+          "offset": "0x8000"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS01P",
+          "offset": "0x00"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS02P",
+          "offset": "0x01"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS03P",
+          "offset": "0x02"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS04P",
+          "offset": "0x03"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS05P",
+          "offset": "0x04"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS06P",
+          "offset": "0x05"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS07P",
+          "offset": "0x06"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS08P",
+          "offset": "0x07"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS09P",
+          "offset": "0x08"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS10P",
+          "offset": "0x09"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS11P",
+          "offset": "0x0a"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS12P",
+          "offset": "0x0b"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS13P",
+          "offset": "0x0c"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS14P",
+          "offset": "0x0d"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS15P",
+          "offset": "0x0e"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS16P",
+          "offset": "0x0f"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS17P",
+          "offset": "0x10"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS18P",
+          "offset": "0x11"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS19P",
+          "offset": "0x12"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS20P",
+          "offset": "0x13"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS21P",
+          "offset": "0x14"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "オープニング"
+        },
+        {
+          "kind": "title",
+          "code": "0x07",
+          "title": "サダリアーン登場"
+        },
+        {
+          "kind": "title",
+          "code": "0x06",
+          "title": "魔導師タンダライド"
+        },
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "酒場"
+        },
+        {
+          "kind": "title",
+          "code": "0x0e",
+          "title": "ラビスターク"
+        },
+        {
+          "kind": "title",
+          "code": "0x03",
+          "title": "城"
+        },
+        {
+          "kind": "title",
+          "code": "0x00",
+          "title": "ラトウィーン"
+        },
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "女剣士アルマ"
+        },
+        {
+          "kind": "title",
+          "code": "0x02",
+          "title": "洞窟"
+        },
+        {
+          "kind": "title",
+          "code": "0x09",
+          "title": "魔物との遭遇"
+        },
+        {
+          "kind": "title",
+          "code": "0x08",
+          "title": "戦い"
+        },
+        {
+          "kind": "title",
+          "code": "0x0a",
+          "title": "重要アイテム入手"
+        },
+        {
+          "kind": "title",
+          "code": "0x0d",
+          "title": "落とし穴"
+        },
+        {
+          "kind": "title",
+          "code": "0x0b",
+          "title": "クリスタルロッド"
+        },
+        {
+          "kind": "title",
+          "code": "0x04",
+          "title": "天界・ハリイザード"
+        },
+        {
+          "kind": "title",
+          "code": "0x0c",
+          "title": "剣士コートの死"
+        },
+        {
+          "kind": "title",
+          "code": "0x05",
+          "title": "邪神界・ザリオザード"
+        },
+        {
+          "kind": "title",
+          "code": "0x0f",
+          "title": "サダリアーンとの戦い"
+        },
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "サダリアーンの最期"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "エンディング"
+        },
+        {
+          "kind": "title",
+          "code": "0x14",
+          "title": "死"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/arsys.xml",
+      "source_order": 253,
+      "archive": "x1rv",
+      "id": "x1rv-psg"
+    },
+    {
+      "title": "[X1] STAR CRUISER(OPM)",
+      "driver": {
+        "name": "x1",
+        "type": "opm",
+        "alias": "Arsys Software",
+        "platform": "SHARP X1"
+      },
+      "options": [
+        {
+          "name": "init_pc",
+          "value": "0xf000"
+        },
+        {
+          "name": "mdata_addr",
+          "value": "0x5000"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "DRIVER",
+          "offset": "0x0000"
+        },
+        {
+          "type": "code",
+          "path": "EFC00F",
+          "offset": "0xeb00"
+        },
+        {
+          "type": "code",
+          "path": "PATCH",
+          "offset": "0xf000"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS01F",
+          "offset": "0x00"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS02F",
+          "offset": "0x01"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS03F",
+          "offset": "0x02"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS04F",
+          "offset": "0x03"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS05F",
+          "offset": "0x04"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS06F",
+          "offset": "0x05"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS07F",
+          "offset": "0x06"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS08F",
+          "offset": "0x07"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS09F",
+          "offset": "0x08"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS10F",
+          "offset": "0x09"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS11F",
+          "offset": "0x0a"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS12F",
+          "offset": "0x0b"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS13F",
+          "offset": "0x0c"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS14F",
+          "offset": "0x0d"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS15F",
+          "offset": "0x0e"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS16F",
+          "offset": "0x0f"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS17F",
+          "offset": "0x10"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS18F",
+          "offset": "0x11"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS19F",
+          "offset": "0x12"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS20F",
+          "offset": "0x13"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS21F",
+          "offset": "0x14"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS22F",
+          "offset": "0x15"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS23F",
+          "offset": "0x16"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS24F",
+          "offset": "0x17"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS25F",
+          "offset": "0x18"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS26F",
+          "offset": "0x19"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS27F",
+          "offset": "0x1a"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS28F",
+          "offset": "0x1b"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS29F",
+          "offset": "0x1c"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS30F",
+          "offset": "0x1d"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x00",
+          "title": "スペースフライト"
+        },
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "スペースファイト"
+        },
+        {
+          "kind": "title",
+          "code": "0x02",
+          "title": "デザートゾーン"
+        },
+        {
+          "kind": "title",
+          "code": "0x03",
+          "title": "スタークルーザー"
+        },
+        {
+          "kind": "title",
+          "code": "0x04",
+          "title": "レッドゾーン"
+        },
+        {
+          "kind": "title",
+          "code": "0x05",
+          "title": "スペースボート"
+        },
+        {
+          "kind": "title",
+          "code": "0x06",
+          "title": "ショップ"
+        },
+        {
+          "kind": "title",
+          "code": "0x07",
+          "title": "バトルスペース"
+        },
+        {
+          "kind": "title",
+          "code": "0x08",
+          "title": "ディージー"
+        },
+        {
+          "kind": "title",
+          "code": "0x09",
+          "title": "土星"
+        },
+        {
+          "kind": "title",
+          "code": "0x0a",
+          "title": "大赤斑"
+        },
+        {
+          "kind": "title",
+          "code": "0x0b",
+          "title": "ビッグボス"
+        },
+        {
+          "kind": "title",
+          "code": "0x0c",
+          "title": "ミッドボス"
+        },
+        {
+          "kind": "title",
+          "code": "0x0d",
+          "title": "基地内部"
+        },
+        {
+          "kind": "title",
+          "code": "0x0e",
+          "title": "レクイエム"
+        },
+        {
+          "kind": "title",
+          "code": "0x0f",
+          "title": "生体プラント"
+        },
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "ワープアウト"
+        },
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "ゲームオーバー"
+        },
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "リジル＝ケント星系"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "NINETEEN"
+        },
+        {
+          "kind": "title",
+          "code": "0x14",
+          "title": "ジューン"
+        },
+        {
+          "kind": "title",
+          "code": "0x15",
+          "title": "ブローカー"
+        },
+        {
+          "kind": "title",
+          "code": "0x16",
+          "title": "惑星オールドニューヨーク"
+        },
+        {
+          "kind": "title",
+          "code": "0x17",
+          "title": "バーナード星系"
+        },
+        {
+          "kind": "title",
+          "code": "0x18",
+          "title": "火星"
+        },
+        {
+          "kind": "title",
+          "code": "0x19",
+          "title": "遥かな宇宙へ"
+        },
+        {
+          "kind": "title",
+          "code": "0x1a",
+          "title": "シリウス星系"
+        },
+        {
+          "kind": "title",
+          "code": "0x1b",
+          "title": "VOID 大戦艦"
+        },
+        {
+          "kind": "title",
+          "code": "0x1c",
+          "title": "G-カタパルト"
+        },
+        {
+          "kind": "title",
+          "code": "0x1d",
+          "title": "ハイパースペース"
+        },
+        {
+          "kind": "title",
+          "code": "0x20",
+          "title": "効果音#01"
+        },
+        {
+          "kind": "title",
+          "code": "0x21",
+          "title": "効果音#02"
+        },
+        {
+          "kind": "title",
+          "code": "0x22",
+          "title": "効果音#03"
+        },
+        {
+          "kind": "title",
+          "code": "0x23",
+          "title": "効果音#04"
+        },
+        {
+          "kind": "title",
+          "code": "0x24",
+          "title": "効果音#05"
+        },
+        {
+          "kind": "title",
+          "code": "0x25",
+          "title": "効果音#06"
+        },
+        {
+          "kind": "title",
+          "code": "0x26",
+          "title": "効果音#07"
+        },
+        {
+          "kind": "title",
+          "code": "0x27",
+          "title": "効果音#08"
+        },
+        {
+          "kind": "title",
+          "code": "0x28",
+          "title": "効果音#09"
+        },
+        {
+          "kind": "title",
+          "code": "0x29",
+          "title": "効果音#10"
+        },
+        {
+          "kind": "title",
+          "code": "0x2a",
+          "title": "効果音#11"
+        },
+        {
+          "kind": "title",
+          "code": "0x2b",
+          "title": "効果音#12"
+        },
+        {
+          "kind": "title",
+          "code": "0x2c",
+          "title": "効果音#13"
+        },
+        {
+          "kind": "title",
+          "code": "0x2d",
+          "title": "効果音#14"
+        },
+        {
+          "kind": "title",
+          "code": "0x2e",
+          "title": "効果音#15"
+        },
+        {
+          "kind": "title",
+          "code": "0x2f",
+          "title": "効果音#16"
+        },
+        {
+          "kind": "title",
+          "code": "0x30",
+          "title": "効果音#17"
+        },
+        {
+          "kind": "title",
+          "code": "0x31",
+          "title": "効果音#18"
+        },
+        {
+          "kind": "title",
+          "code": "0x32",
+          "title": "効果音#19"
+        },
+        {
+          "kind": "title",
+          "code": "0x33",
+          "title": "効果音#20"
+        },
+        {
+          "kind": "title",
+          "code": "0x34",
+          "title": "効果音#21"
+        },
+        {
+          "kind": "title",
+          "code": "0x35",
+          "title": "効果音#22"
+        },
+        {
+          "kind": "title",
+          "code": "0x36",
+          "title": "効果音#23"
+        },
+        {
+          "kind": "title",
+          "code": "0x37",
+          "title": "効果音#24"
+        },
+        {
+          "kind": "title",
+          "code": "0x38",
+          "title": "効果音#25"
+        },
+        {
+          "kind": "title",
+          "code": "0x39",
+          "title": "効果音#26"
+        },
+        {
+          "kind": "title",
+          "code": "0x3a",
+          "title": "効果音#27"
+        },
+        {
+          "kind": "title",
+          "code": "0x3b",
+          "title": "効果音#28"
+        },
+        {
+          "kind": "title",
+          "code": "0x3c",
+          "title": "効果音#29"
+        },
+        {
+          "kind": "title",
+          "code": "0x3d",
+          "title": "効果音#30"
+        },
+        {
+          "kind": "title",
+          "code": "0x3e",
+          "title": "効果音#31"
+        },
+        {
+          "kind": "title",
+          "code": "0x3f",
+          "title": "効果音#32"
+        },
+        {
+          "kind": "title",
+          "code": "0x40",
+          "title": "効果音#33"
+        },
+        {
+          "kind": "title",
+          "code": "0x41",
+          "title": "効果音#34"
+        },
+        {
+          "kind": "title",
+          "code": "0x42",
+          "title": "効果音#35"
+        },
+        {
+          "kind": "title",
+          "code": "0x43",
+          "title": "効果音#36"
+        },
+        {
+          "kind": "title",
+          "code": "0x44",
+          "title": "効果音#37"
+        },
+        {
+          "kind": "title",
+          "code": "0x45",
+          "title": "効果音#38"
+        },
+        {
+          "kind": "title",
+          "code": "0x46",
+          "title": "効果音#39"
+        },
+        {
+          "kind": "title",
+          "code": "0x47",
+          "title": "効果音#40"
+        },
+        {
+          "kind": "title",
+          "code": "0x48",
+          "title": "効果音#41"
+        },
+        {
+          "kind": "title",
+          "code": "0x49",
+          "title": "効果音#42"
+        },
+        {
+          "kind": "title",
+          "code": "0x4a",
+          "title": "効果音#43"
+        },
+        {
+          "kind": "title",
+          "code": "0x4b",
+          "title": "効果音#44"
+        },
+        {
+          "kind": "title",
+          "code": "0x4c",
+          "title": "効果音#45"
+        },
+        {
+          "kind": "title",
+          "code": "0x4d",
+          "title": "効果音#46"
+        },
+        {
+          "kind": "title",
+          "code": "0x4e",
+          "title": "効果音#47"
+        },
+        {
+          "kind": "title",
+          "code": "0x4f",
+          "title": "効果音#48"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/arsys.xml",
+      "source_order": 254,
+      "archive": "x1sc",
+      "id": "x1sc-opm"
+    },
+    {
+      "title": "[X1] STAR CRUISER(PSG)",
+      "driver": {
+        "name": "x1",
+        "type": "psg",
+        "alias": "Arsys Software",
+        "platform": "SHARP X1"
+      },
+      "options": [
+        {
+          "name": "init_pc",
+          "value": "0xf000"
+        },
+        {
+          "name": "mdata_addr",
+          "value": "0x5000"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "DRIVER",
+          "offset": "0x0000"
+        },
+        {
+          "type": "code",
+          "path": "EFC00P",
+          "offset": "0xeb00"
+        },
+        {
+          "type": "code",
+          "path": "PATCH",
+          "offset": "0xf000"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS01P",
+          "offset": "0x00"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS02P",
+          "offset": "0x01"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS03P",
+          "offset": "0x02"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS04P",
+          "offset": "0x03"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS05P",
+          "offset": "0x04"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS06P",
+          "offset": "0x05"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS07P",
+          "offset": "0x06"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS08P",
+          "offset": "0x07"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS09P",
+          "offset": "0x08"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS10P",
+          "offset": "0x09"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS11P",
+          "offset": "0x0a"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS12P",
+          "offset": "0x0b"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS13P",
+          "offset": "0x0c"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS14P",
+          "offset": "0x0d"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS15P",
+          "offset": "0x0e"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS16P",
+          "offset": "0x0f"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS17P",
+          "offset": "0x10"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS18P",
+          "offset": "0x11"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS19P",
+          "offset": "0x12"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS20P",
+          "offset": "0x13"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS21P",
+          "offset": "0x14"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS22P",
+          "offset": "0x15"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS23P",
+          "offset": "0x16"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS24P",
+          "offset": "0x17"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS25P",
+          "offset": "0x18"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS26P",
+          "offset": "0x19"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS27P",
+          "offset": "0x1a"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS28P",
+          "offset": "0x1b"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS29P",
+          "offset": "0x1c"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS30P",
+          "offset": "0x1d"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x00",
+          "title": "スペースフライト"
+        },
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "スペースファイト"
+        },
+        {
+          "kind": "title",
+          "code": "0x02",
+          "title": "デザートゾーン"
+        },
+        {
+          "kind": "title",
+          "code": "0x03",
+          "title": "スタークルーザー"
+        },
+        {
+          "kind": "title",
+          "code": "0x04",
+          "title": "レッドゾーン"
+        },
+        {
+          "kind": "title",
+          "code": "0x05",
+          "title": "スペースボート"
+        },
+        {
+          "kind": "title",
+          "code": "0x06",
+          "title": "ショップ"
+        },
+        {
+          "kind": "title",
+          "code": "0x07",
+          "title": "バトルスペース"
+        },
+        {
+          "kind": "title",
+          "code": "0x08",
+          "title": "ディージー"
+        },
+        {
+          "kind": "title",
+          "code": "0x09",
+          "title": "土星"
+        },
+        {
+          "kind": "title",
+          "code": "0x0a",
+          "title": "大赤斑"
+        },
+        {
+          "kind": "title",
+          "code": "0x0b",
+          "title": "ビッグボス"
+        },
+        {
+          "kind": "title",
+          "code": "0x0c",
+          "title": "ミッドボス"
+        },
+        {
+          "kind": "title",
+          "code": "0x0d",
+          "title": "基地内部"
+        },
+        {
+          "kind": "title",
+          "code": "0x0e",
+          "title": "レクイエム"
+        },
+        {
+          "kind": "title",
+          "code": "0x0f",
+          "title": "生体プラント"
+        },
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "ワープアウト"
+        },
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "ゲームオーバー"
+        },
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "リジル＝ケント星系"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "NINETEEN"
+        },
+        {
+          "kind": "title",
+          "code": "0x14",
+          "title": "ジューン"
+        },
+        {
+          "kind": "title",
+          "code": "0x15",
+          "title": "ブローカー"
+        },
+        {
+          "kind": "title",
+          "code": "0x16",
+          "title": "惑星オールドニューヨーク"
+        },
+        {
+          "kind": "title",
+          "code": "0x17",
+          "title": "バーナード星系"
+        },
+        {
+          "kind": "title",
+          "code": "0x18",
+          "title": "火星"
+        },
+        {
+          "kind": "title",
+          "code": "0x19",
+          "title": "遥かな宇宙へ"
+        },
+        {
+          "kind": "title",
+          "code": "0x1a",
+          "title": "シリウス星系"
+        },
+        {
+          "kind": "title",
+          "code": "0x1b",
+          "title": "VOID 大戦艦"
+        },
+        {
+          "kind": "title",
+          "code": "0x1c",
+          "title": "G-カタパルト"
+        },
+        {
+          "kind": "title",
+          "code": "0x1d",
+          "title": "ハイパースペース"
+        },
+        {
+          "kind": "title",
+          "code": "0x20",
+          "title": "効果音#01"
+        },
+        {
+          "kind": "title",
+          "code": "0x21",
+          "title": "効果音#02"
+        },
+        {
+          "kind": "title",
+          "code": "0x22",
+          "title": "効果音#02"
+        },
+        {
+          "kind": "title",
+          "code": "0x23",
+          "title": "効果音#03"
+        },
+        {
+          "kind": "title",
+          "code": "0x24",
+          "title": "効果音#04"
+        },
+        {
+          "kind": "title",
+          "code": "0x25",
+          "title": "効果音#05"
+        },
+        {
+          "kind": "title",
+          "code": "0x26",
+          "title": "効果音#06"
+        },
+        {
+          "kind": "title",
+          "code": "0x27",
+          "title": "効果音#07"
+        },
+        {
+          "kind": "title",
+          "code": "0x28",
+          "title": "効果音#08"
+        },
+        {
+          "kind": "title",
+          "code": "0x29",
+          "title": "効果音#09"
+        },
+        {
+          "kind": "title",
+          "code": "0x2a",
+          "title": "効果音#10"
+        },
+        {
+          "kind": "title",
+          "code": "0x2b",
+          "title": "効果音#11"
+        },
+        {
+          "kind": "title",
+          "code": "0x2c",
+          "title": "効果音#12"
+        },
+        {
+          "kind": "title",
+          "code": "0x2d",
+          "title": "効果音#13"
+        },
+        {
+          "kind": "title",
+          "code": "0x2e",
+          "title": "効果音#14"
+        },
+        {
+          "kind": "title",
+          "code": "0x2f",
+          "title": "効果音#15"
+        },
+        {
+          "kind": "title",
+          "code": "0x30",
+          "title": "効果音#16"
+        },
+        {
+          "kind": "title",
+          "code": "0x31",
+          "title": "効果音#17"
+        },
+        {
+          "kind": "title",
+          "code": "0x32",
+          "title": "効果音#18"
+        },
+        {
+          "kind": "title",
+          "code": "0x33",
+          "title": "効果音#19"
+        },
+        {
+          "kind": "title",
+          "code": "0x34",
+          "title": "効果音#20"
+        },
+        {
+          "kind": "title",
+          "code": "0x35",
+          "title": "効果音#21"
+        },
+        {
+          "kind": "title",
+          "code": "0x36",
+          "title": "効果音#22"
+        },
+        {
+          "kind": "title",
+          "code": "0x37",
+          "title": "効果音#23"
+        },
+        {
+          "kind": "title",
+          "code": "0x38",
+          "title": "効果音#24"
+        },
+        {
+          "kind": "title",
+          "code": "0x39",
+          "title": "効果音#25"
+        },
+        {
+          "kind": "title",
+          "code": "0x3a",
+          "title": "効果音#26"
+        },
+        {
+          "kind": "title",
+          "code": "0x3b",
+          "title": "効果音#27"
+        },
+        {
+          "kind": "title",
+          "code": "0x3c",
+          "title": "効果音#28"
+        },
+        {
+          "kind": "title",
+          "code": "0x3d",
+          "title": "効果音#29"
+        },
+        {
+          "kind": "title",
+          "code": "0x3e",
+          "title": "効果音#30"
+        },
+        {
+          "kind": "title",
+          "code": "0x3f",
+          "title": "効果音#31"
+        },
+        {
+          "kind": "title",
+          "code": "0x40",
+          "title": "効果音#32"
+        },
+        {
+          "kind": "title",
+          "code": "0x41",
+          "title": "効果音#33"
+        },
+        {
+          "kind": "title",
+          "code": "0x42",
+          "title": "効果音#34"
+        },
+        {
+          "kind": "title",
+          "code": "0x43",
+          "title": "効果音#35"
+        },
+        {
+          "kind": "title",
+          "code": "0x44",
+          "title": "効果音#36"
+        },
+        {
+          "kind": "title",
+          "code": "0x45",
+          "title": "効果音#37"
+        },
+        {
+          "kind": "title",
+          "code": "0x46",
+          "title": "効果音#38"
+        },
+        {
+          "kind": "title",
+          "code": "0x47",
+          "title": "効果音#39"
+        },
+        {
+          "kind": "title",
+          "code": "0x48",
+          "title": "効果音#40"
+        },
+        {
+          "kind": "title",
+          "code": "0x49",
+          "title": "効果音#41"
+        },
+        {
+          "kind": "title",
+          "code": "0x4a",
+          "title": "効果音#42"
+        },
+        {
+          "kind": "title",
+          "code": "0x4b",
+          "title": "効果音#43"
+        },
+        {
+          "kind": "title",
+          "code": "0x4c",
+          "title": "効果音#44"
+        },
+        {
+          "kind": "title",
+          "code": "0x4d",
+          "title": "効果音#45"
+        },
+        {
+          "kind": "title",
+          "code": "0x4e",
+          "title": "効果音#46"
+        },
+        {
+          "kind": "title",
+          "code": "0x4f",
+          "title": "効果音#47"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/arsys.xml",
+      "source_order": 255,
+      "archive": "x1sc",
+      "id": "x1sc-psg"
+    },
+    {
+      "title": "[X68000] STAR CRUISER",
+      "driver": {
+        "name": "x68k",
+        "type": "generic",
+        "alias": "Arsys Software",
+        "platform": "SHARP X68000"
+      },
+      "options": [],
+      "assets": [
+        {
+          "type": "code",
+          "path": "sc.bin"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x00",
+          "title": "[STOP]"
+        },
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "スペースフライト"
+        },
+        {
+          "kind": "title",
+          "code": "0x02",
+          "title": "スペースファイト"
+        },
+        {
+          "kind": "title",
+          "code": "0x03",
+          "title": "デザートゾーン"
+        },
+        {
+          "kind": "title",
+          "code": "0x04",
+          "title": "スタークルーザー"
+        },
+        {
+          "kind": "title",
+          "code": "0x05",
+          "title": "レッドゾーン"
+        },
+        {
+          "kind": "title",
+          "code": "0x06",
+          "title": "スペースボート"
+        },
+        {
+          "kind": "title",
+          "code": "0x07",
+          "title": "ショップ"
+        },
+        {
+          "kind": "title",
+          "code": "0x08",
+          "title": "バトルスペース"
+        },
+        {
+          "kind": "title",
+          "code": "0x09",
+          "title": "ディージー"
+        },
+        {
+          "kind": "title",
+          "code": "0x0A",
+          "title": "土星"
+        },
+        {
+          "kind": "title",
+          "code": "0x0B",
+          "title": "大赤斑"
+        },
+        {
+          "kind": "title",
+          "code": "0x0C",
+          "title": "ビッグボス"
+        },
+        {
+          "kind": "title",
+          "code": "0x0D",
+          "title": "ミッドボス"
+        },
+        {
+          "kind": "title",
+          "code": "0x0E",
+          "title": "基地内部"
+        },
+        {
+          "kind": "title",
+          "code": "0x0F",
+          "title": "レクイエム"
+        },
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "生体プラント"
+        },
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "ワープアウト"
+        },
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "ゲームオーバー"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "リジル＝ケント星系"
+        },
+        {
+          "kind": "title",
+          "code": "0x14",
+          "title": "ようこそスタークルーザーの世界へ"
+        },
+        {
+          "kind": "title",
+          "code": "0x15",
+          "title": "ジューン"
+        },
+        {
+          "kind": "title",
+          "code": "0x16",
+          "title": "ブローカー"
+        },
+        {
+          "kind": "title",
+          "code": "0x17",
+          "title": "惑星オールドニューヨーク"
+        },
+        {
+          "kind": "title",
+          "code": "0x18",
+          "title": "バーナード星系"
+        },
+        {
+          "kind": "title",
+          "code": "0x19",
+          "title": "火星"
+        },
+        {
+          "kind": "title",
+          "code": "0x1A",
+          "title": "遥かな宇宙へ"
+        },
+        {
+          "kind": "title",
+          "code": "0x1B",
+          "title": "シリウス星系"
+        },
+        {
+          "kind": "title",
+          "code": "0x1C",
+          "title": "VOID 大戦艦"
+        },
+        {
+          "kind": "title",
+          "code": "0x1D",
+          "title": "G-カタパルト"
+        },
+        {
+          "kind": "title",
+          "code": "0x1E",
+          "title": "ハイパースペース"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/arsys.xml",
+      "source_order": 256,
+      "archive": "scsnd",
+      "id": "scsnd-generic"
+    },
+    {
+      "title": "[X68000] Spindizzy II",
+      "driver": {
+        "name": "x68k",
+        "type": "generic",
+        "alias": "Arsys Software",
+        "platform": "SHARP X68000"
+      },
+      "options": [],
+      "assets": [
+        {
+          "type": "code",
+          "path": "sd2.bin"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x00",
+          "title": "[STOP]"
+        },
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "OPEN.X     : Note"
+        },
+        {
+          "kind": "title",
+          "code": "0x02",
+          "title": "TITLE.X    : Flash Logo"
+        },
+        {
+          "kind": "title",
+          "code": "0x03",
+          "title": "ARIOSO.R   : Buxton cat"
+        },
+        {
+          "kind": "title",
+          "code": "0x04",
+          "title": "BALL_R.R   : Ballrace"
+        },
+        {
+          "kind": "title",
+          "code": "0x05",
+          "title": "CHASE.R    : Obelisk Run"
+        },
+        {
+          "kind": "title",
+          "code": "0x06",
+          "title": "CTTY.R     : Eternal Move"
+        },
+        {
+          "kind": "title",
+          "code": "0x07",
+          "title": "DOKAN.R    : Explosion 2"
+        },
+        {
+          "kind": "title",
+          "code": "0x08",
+          "title": "EASY.R     : EasyDizzy"
+        },
+        {
+          "kind": "title",
+          "code": "0x09",
+          "title": "ENDING.R   : Ending"
+        },
+        {
+          "kind": "title",
+          "code": "0x0A",
+          "title": "EXP.R      : Explosion 1"
+        },
+        {
+          "kind": "title",
+          "code": "0x0B",
+          "title": "FINALE.R   : All Clear"
+        },
+        {
+          "kind": "title",
+          "code": "0x0C",
+          "title": "GAME.R     : Spindizzy!"
+        },
+        {
+          "kind": "title",
+          "code": "0x0D",
+          "title": "GRASS.R    : Grass Maze"
+        },
+        {
+          "kind": "title",
+          "code": "0x0E",
+          "title": "GRAVE.R    : Sandy Island"
+        },
+        {
+          "kind": "title",
+          "code": "0x0F",
+          "title": "HARD.R     : Roller-ama"
+        },
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "HURRY.R    : Hurry Up!"
+        },
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "IKU.R      : Gathering"
+        },
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "JACK.R     : Tri Path"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "JAZZ.R     : Solid Time"
+        },
+        {
+          "kind": "title",
+          "code": "0x14",
+          "title": "JIVE.R     : Frigia"
+        },
+        {
+          "kind": "title",
+          "code": "0x15",
+          "title": "KUKU.R     : Castle Quest"
+        },
+        {
+          "kind": "title",
+          "code": "0x16",
+          "title": "LOGO.R     : Alsys Logo"
+        },
+        {
+          "kind": "title",
+          "code": "0x17",
+          "title": "MF.R       : Canal Side"
+        },
+        {
+          "kind": "title",
+          "code": "0x18",
+          "title": "MODERATO.R : MisDirection"
+        },
+        {
+          "kind": "title",
+          "code": "0x19",
+          "title": "MON.R      : Torture!"
+        },
+        {
+          "kind": "title",
+          "code": "0x1A",
+          "title": "MRX2.R     : Tutorial"
+        },
+        {
+          "kind": "title",
+          "code": "0x1B",
+          "title": "MTSTAR.R   : CLUSTER"
+        },
+        {
+          "kind": "title",
+          "code": "0x1C",
+          "title": "NAKANO.R   : Grass Hopper"
+        },
+        {
+          "kind": "title",
+          "code": "0x1D",
+          "title": "NHK.R      : Tower City"
+        },
+        {
+          "kind": "title",
+          "code": "0x1E",
+          "title": "NICE_DAY.R : NICE DAY"
+        },
+        {
+          "kind": "title",
+          "code": "0x1F",
+          "title": "NO1.R      : Beginners!"
+        },
+        {
+          "kind": "title",
+          "code": "0x20",
+          "title": "OPEN.R     : Zoom Up"
+        },
+        {
+          "kind": "title",
+          "code": "0x21",
+          "title": "PENGIN.R   : Paradise"
+        },
+        {
+          "kind": "title",
+          "code": "0x22",
+          "title": "PENTA.R    : Split Up"
+        },
+        {
+          "kind": "title",
+          "code": "0x23",
+          "title": "POKO.R     : RADIMA"
+        },
+        {
+          "kind": "title",
+          "code": "0x24",
+          "title": "PP.R       : Gargoyle"
+        },
+        {
+          "kind": "title",
+          "code": "0x25",
+          "title": "Q2.R       : Quadrant 2"
+        },
+        {
+          "kind": "title",
+          "code": "0x26",
+          "title": "RAMP.R     : Ramp Run"
+        },
+        {
+          "kind": "title",
+          "code": "0x27",
+          "title": "RATIO.R    : Arrow Maze"
+        },
+        {
+          "kind": "title",
+          "code": "0x28",
+          "title": "ROPOP.R    : Lavalite"
+        },
+        {
+          "kind": "title",
+          "code": "0x29",
+          "title": "SAIGO.R    : Escape"
+        },
+        {
+          "kind": "title",
+          "code": "0x2A",
+          "title": "SP.R       : Pyramidea"
+        },
+        {
+          "kind": "title",
+          "code": "0x2B",
+          "title": "SPINBALL.R : Pak Attack"
+        },
+        {
+          "kind": "title",
+          "code": "0x2C",
+          "title": "STR.R      : Oily Way"
+        },
+        {
+          "kind": "title",
+          "code": "0x2D",
+          "title": "TUKURI.R   : WaterWorks"
+        },
+        {
+          "kind": "title",
+          "code": "0x2E",
+          "title": "URANUS.R   : URANUS"
+        },
+        {
+          "kind": "title",
+          "code": "0x2F",
+          "title": "WAWORLD.R  : WaterWorld"
+        },
+        {
+          "kind": "title",
+          "code": "0x30",
+          "title": "WOO.R      : Woo!!"
+        },
+        {
+          "kind": "title",
+          "code": "0x31",
+          "title": "NOBUYA.X   : Note"
+        },
+        {
+          "kind": "title",
+          "code": "0x32",
+          "title": "ARIOSO.R   : Buxton cat"
+        },
+        {
+          "kind": "title",
+          "code": "0x33",
+          "title": "BALL_R.R   : Ballrace"
+        },
+        {
+          "kind": "title",
+          "code": "0x34",
+          "title": "CHASE.R    : Oblisk Run"
+        },
+        {
+          "kind": "title",
+          "code": "0x35",
+          "title": "CTTY.R     : Eternal Move"
+        },
+        {
+          "kind": "title",
+          "code": "0x36",
+          "title": "EASY.R     : Easydizzy"
+        },
+        {
+          "kind": "title",
+          "code": "0x37",
+          "title": "END.R      : Ending"
+        },
+        {
+          "kind": "title",
+          "code": "0x38",
+          "title": "FINALE.R   : All Clear"
+        },
+        {
+          "kind": "title",
+          "code": "0x39",
+          "title": "GAME.R     : Spindizzy!"
+        },
+        {
+          "kind": "title",
+          "code": "0x3A",
+          "title": "GRASS.R    : Grass Maze"
+        },
+        {
+          "kind": "title",
+          "code": "0x3B",
+          "title": "GRAVE.R    : Sandy Island"
+        },
+        {
+          "kind": "title",
+          "code": "0x3C",
+          "title": "HARD.R     : Roller-ama"
+        },
+        {
+          "kind": "title",
+          "code": "0x3D",
+          "title": "HURRY.R    : HURRY"
+        },
+        {
+          "kind": "title",
+          "code": "0x3E",
+          "title": "HURRY_UP.R : Hurry Up!"
+        },
+        {
+          "kind": "title",
+          "code": "0x3F",
+          "title": "JACK.R     : Tri Path"
+        },
+        {
+          "kind": "title",
+          "code": "0x40",
+          "title": "JAZZ.R     : Solid Time"
+        },
+        {
+          "kind": "title",
+          "code": "0x41",
+          "title": "JIVE.R     : Frigia"
+        },
+        {
+          "kind": "title",
+          "code": "0x42",
+          "title": "KUKU.R     : Castle Quest"
+        },
+        {
+          "kind": "title",
+          "code": "0x43",
+          "title": "LOGO.R     : Alsys Logo"
+        },
+        {
+          "kind": "title",
+          "code": "0x44",
+          "title": "MF.R       : Canal Side"
+        },
+        {
+          "kind": "title",
+          "code": "0x45",
+          "title": "MODERATO.R : MisDirection"
+        },
+        {
+          "kind": "title",
+          "code": "0x46",
+          "title": "MON.R      : Torture!"
+        },
+        {
+          "kind": "title",
+          "code": "0x47",
+          "title": "MRX2.R     : Tutorial"
+        },
+        {
+          "kind": "title",
+          "code": "0x48",
+          "title": "MTSTAR.R   : CLUSTER"
+        },
+        {
+          "kind": "title",
+          "code": "0x49",
+          "title": "NAKANO.R   : Grass Hopper"
+        },
+        {
+          "kind": "title",
+          "code": "0x4A",
+          "title": "NHK.R      : Tower City"
+        },
+        {
+          "kind": "title",
+          "code": "0x4B",
+          "title": "NICE_DAY.R : NICE DAY"
+        },
+        {
+          "kind": "title",
+          "code": "0x4C",
+          "title": "NO1.R      : Beginners!"
+        },
+        {
+          "kind": "title",
+          "code": "0x4D",
+          "title": "OPEN.R     : Zoom Up"
+        },
+        {
+          "kind": "title",
+          "code": "0x4E",
+          "title": "PENGIN.R   : Paradise"
+        },
+        {
+          "kind": "title",
+          "code": "0x4F",
+          "title": "PENTA.R    : Split Up"
+        },
+        {
+          "kind": "title",
+          "code": "0x50",
+          "title": "POKO.R     : RADIMA"
+        },
+        {
+          "kind": "title",
+          "code": "0x51",
+          "title": "PP.R       : Gargoyle"
+        },
+        {
+          "kind": "title",
+          "code": "0x52",
+          "title": "Q2.R       : Quadrant 2"
+        },
+        {
+          "kind": "title",
+          "code": "0x53",
+          "title": "RAMP.R     : Ramp Run"
+        },
+        {
+          "kind": "title",
+          "code": "0x54",
+          "title": "RATIO.R    : Arrow Maze"
+        },
+        {
+          "kind": "title",
+          "code": "0x55",
+          "title": "ROPOP.R    : Lavalite"
+        },
+        {
+          "kind": "title",
+          "code": "0x56",
+          "title": "SP.R       : Pyramidea"
+        },
+        {
+          "kind": "title",
+          "code": "0x57",
+          "title": "SPINBALL.R : Pak Attack"
+        },
+        {
+          "kind": "title",
+          "code": "0x58",
+          "title": "STR.R      : Oily Way"
+        },
+        {
+          "kind": "title",
+          "code": "0x59",
+          "title": "TUKURI.R   : WaterWorks"
+        },
+        {
+          "kind": "title",
+          "code": "0x5A",
+          "title": "URANUS.R   : URANUS"
+        },
+        {
+          "kind": "title",
+          "code": "0x5B",
+          "title": "WAWORLD.R  : WaterWorld"
+        },
+        {
+          "kind": "title",
+          "code": "0x5C",
+          "title": "WOO.R      : Woo!!"
+        },
+        {
+          "kind": "title",
+          "code": "0x5D",
+          "title": "ZOOM.R     : ZOOM"
+        },
+        {
+          "kind": "title",
+          "code": "0x5E",
+          "title": "GAME.X     : SE00"
+        },
+        {
+          "kind": "title",
+          "code": "0x5F",
+          "title": "GAME.X     : SE01"
+        },
+        {
+          "kind": "title",
+          "code": "0x60",
+          "title": "GAME.X     : SE02"
+        },
+        {
+          "kind": "title",
+          "code": "0x61",
+          "title": "GAME.X     : SE03"
+        },
+        {
+          "kind": "title",
+          "code": "0x62",
+          "title": "GAME.X     : SE04"
+        },
+        {
+          "kind": "title",
+          "code": "0x63",
+          "title": "GAME.X     : SE05"
+        },
+        {
+          "kind": "title",
+          "code": "0x64",
+          "title": "GAME.X     : SE06"
+        },
+        {
+          "kind": "title",
+          "code": "0x65",
+          "title": "GAME.X     : SE07"
+        },
+        {
+          "kind": "title",
+          "code": "0x66",
+          "title": "GAME.X     : SE08"
+        },
+        {
+          "kind": "title",
+          "code": "0x67",
+          "title": "GAME.X     : SE09"
+        },
+        {
+          "kind": "title",
+          "code": "0x68",
+          "title": "GAME.X     : SE0A"
+        },
+        {
+          "kind": "title",
+          "code": "0x6A",
+          "title": "GAME.X     : SE0B"
+        },
+        {
+          "kind": "title",
+          "code": "0x6B",
+          "title": "GAME.X     : SE0C"
+        },
+        {
+          "kind": "title",
+          "code": "0x6C",
+          "title": "GAME.X     : SE0D"
+        },
+        {
+          "kind": "title",
+          "code": "0x6D",
+          "title": "GAME.X     : SE0E"
+        },
+        {
+          "kind": "title",
+          "code": "0x6E",
+          "title": "GAME.X     : SE0F"
+        },
+        {
+          "kind": "title",
+          "code": "0x6F",
+          "title": "GAME.X     : SE10"
+        },
+        {
+          "kind": "title",
+          "code": "0x70",
+          "title": "GAME.X     : SE11"
+        },
+        {
+          "kind": "title",
+          "code": "0x71",
+          "title": "GAME.X     : SE12"
+        },
+        {
+          "kind": "title",
+          "code": "0x72",
+          "title": "GAME.X     : SE13"
+        },
+        {
+          "kind": "title",
+          "code": "0x73",
+          "title": "GAME.X     : SE14"
+        },
+        {
+          "kind": "title",
+          "code": "0x74",
+          "title": "GAME.X     : SE15"
+        },
+        {
+          "kind": "title",
+          "code": "0x75",
+          "title": "GAME.X     : SE16"
+        },
+        {
+          "kind": "title",
+          "code": "0x76",
+          "title": "GAME.X     : SE17"
+        },
+        {
+          "kind": "title",
+          "code": "0x77",
+          "title": "GAME.X     : SE18"
+        },
+        {
+          "kind": "title",
+          "code": "0x78",
+          "title": "GAME.X     : SE19"
+        },
+        {
+          "kind": "title",
+          "code": "0x79",
+          "title": "GAME.X     : SE1A"
+        },
+        {
+          "kind": "title",
+          "code": "0x7A",
+          "title": "GAME.X     : SE1B"
+        },
+        {
+          "kind": "title",
+          "code": "0x7B",
+          "title": "GAME.X     : SE1C"
+        },
+        {
+          "kind": "title",
+          "code": "0x7C",
+          "title": "GAME.X     : SE1D"
+        },
+        {
+          "kind": "title",
+          "code": "0x7D",
+          "title": "GAME.X     : SE1E"
+        },
+        {
+          "kind": "title",
+          "code": "0x7E",
+          "title": "GAME.X     : SE1F"
+        },
+        {
+          "kind": "title",
+          "code": "0x7F",
+          "title": "GAME.X     : SE20"
+        },
+        {
+          "kind": "title",
+          "code": "0x80",
+          "title": "GAME.X     : SE21"
+        },
+        {
+          "kind": "title",
+          "code": "0x81",
+          "title": "GAME.X     : SE22"
+        },
+        {
+          "kind": "title",
+          "code": "0x82",
+          "title": "MENU.X     : SE23"
+        },
+        {
+          "kind": "title",
+          "code": "0x83",
+          "title": "MENU.X     : SE24"
+        },
+        {
+          "kind": "title",
+          "code": "0x84",
+          "title": "OPEN.X     : SE25"
+        },
+        {
+          "kind": "title",
+          "code": "0x85",
+          "title": "SELECT.X   : SE26"
+        },
+        {
+          "kind": "title",
+          "code": "0x86",
+          "title": "SELECT.X   : SE27"
+        },
+        {
+          "kind": "title",
+          "code": "0x87",
+          "title": "SELECT.X   : SE28"
+        },
+        {
+          "kind": "title",
+          "code": "0x88",
+          "title": "SELECT.X   : SE29"
+        },
+        {
+          "kind": "title",
+          "code": "0x89",
+          "title": "SELECT.X   : SE2A"
+        },
+        {
+          "kind": "title",
+          "code": "0x8A",
+          "title": "SELECT.X   : SE2B"
+        },
+        {
+          "kind": "title",
+          "code": "0x8B",
+          "title": "SELECT.X   : SE2C"
+        },
+        {
+          "kind": "title",
+          "code": "0x8C",
+          "title": "SELECT.X   : SE2D"
+        },
+        {
+          "kind": "title",
+          "code": "0x8D",
+          "title": "SELECT.X   : SE2E"
+        },
+        {
+          "kind": "title",
+          "code": "0x8E",
+          "title": "SELECT.X   : SE2F"
+        },
+        {
+          "kind": "title",
+          "code": "0x8F",
+          "title": "SELECT.X   : SE30"
+        },
+        {
+          "kind": "title",
+          "code": "0x90",
+          "title": "SELECT.X   : SE31"
+        },
+        {
+          "kind": "title",
+          "code": "0x91",
+          "title": "SELECT.X   : SE32"
+        },
+        {
+          "kind": "title",
+          "code": "0x92",
+          "title": "SELECT.X   : SE33"
+        },
+        {
+          "kind": "title",
+          "code": "0x93",
+          "title": "SELECT.X   : SE34"
+        },
+        {
+          "kind": "title",
+          "code": "0x94",
+          "title": "SELECT.X   : SE35"
+        },
+        {
+          "kind": "title",
+          "code": "0x95",
+          "title": "SELECT.X   : SE36"
+        },
+        {
+          "kind": "title",
+          "code": "0x96",
+          "title": "SELECT.X   : SE37"
+        },
+        {
+          "kind": "title",
+          "code": "0x97",
+          "title": "SELECT.X   : SE38"
+        },
+        {
+          "kind": "title",
+          "code": "0x98",
+          "title": "SELECT.X   : SE39"
+        },
+        {
+          "kind": "title",
+          "code": "0x99",
+          "title": "SELECT.X   : SE3A"
+        },
+        {
+          "kind": "title",
+          "code": "0x9A",
+          "title": "SELECT.X   : SE3B"
+        },
+        {
+          "kind": "title",
+          "code": "0x9B",
+          "title": "SELECT.X   : SE3C"
+        },
+        {
+          "kind": "title",
+          "code": "0x9C",
+          "title": "SELECT.X   : SE3D"
+        },
+        {
+          "kind": "title",
+          "code": "0x9D",
+          "title": "SELECT.X   : SE3E"
+        },
+        {
+          "kind": "title",
+          "code": "0x9E",
+          "title": "SELECT.X   : SE3F"
+        },
+        {
+          "kind": "title",
+          "code": "0x9F",
+          "title": "SELECT.X   : SE40"
+        },
+        {
+          "kind": "title",
+          "code": "0xA0",
+          "title": "SELECT.X   : SE41"
+        },
+        {
+          "kind": "title",
+          "code": "0xA1",
+          "title": "SELECT.X   : SE42"
+        },
+        {
+          "kind": "title",
+          "code": "0xA2",
+          "title": "SELECT.X   : SE43"
+        },
+        {
+          "kind": "title",
+          "code": "0xA3",
+          "title": "SELECT.X   : SE44"
+        },
+        {
+          "kind": "title",
+          "code": "0xA4",
+          "title": "SELECT.X   : SE45"
+        },
+        {
+          "kind": "title",
+          "code": "0xA5",
+          "title": "SELECT.X   : SE46"
+        },
+        {
+          "kind": "title",
+          "code": "0xA6",
+          "title": "SELECT.X   : SE47"
+        },
+        {
+          "kind": "title",
+          "code": "0xA7",
+          "title": "SELECT.X   : SE48"
+        },
+        {
+          "kind": "title",
+          "code": "0xA8",
+          "title": "SELECT.X   : SE49"
+        },
+        {
+          "kind": "title",
+          "code": "0xA9",
+          "title": "SELECT.X   : SE4A"
+        },
+        {
+          "kind": "title",
+          "code": "0xAA",
+          "title": "SELECT.X   : SE4B"
+        },
+        {
+          "kind": "title",
+          "code": "0xAB",
+          "title": "SELECT.X   : SE4C"
+        },
+        {
+          "kind": "title",
+          "code": "0xAC",
+          "title": "SELECT.X   : SE4D"
+        },
+        {
+          "kind": "title",
+          "code": "0xAD",
+          "title": "SELECT.X   : SE4E"
+        },
+        {
+          "kind": "title",
+          "code": "0xAE",
+          "title": "SELECT.X   : SE4F"
+        },
+        {
+          "kind": "title",
+          "code": "0xAF",
+          "title": "SELECT.X   : SE50"
+        },
+        {
+          "kind": "title",
+          "code": "0xB0",
+          "title": "SELECT.X   : SE51"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/arsys.xml",
+      "source_order": 257,
+      "archive": "sd2snd",
+      "id": "sd2snd-generic"
+    },
+    {
+      "title": "[X68000] Knight Arms",
+      "driver": {
+        "name": "x68k",
+        "type": "generic",
+        "alias": "Arsys Software",
+        "platform": "SHARP X68000"
+      },
+      "options": [],
+      "assets": [
+        {
+          "type": "code",
+          "path": "ka.bin"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x00",
+          "title": "[STOP]"
+        },
+        {
+          "kind": "title",
+          "code": "0x09",
+          "title": "loading    : Arsys Christmas Song"
+        },
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "logo       : Arsys Presents"
+        },
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "demo       : Knight Arms"
+        },
+        {
+          "kind": "title",
+          "code": "0x0C",
+          "title": "title      : Galaxy Knights March"
+        },
+        {
+          "kind": "title",
+          "code": "0x02",
+          "title": "3D         : Bad Shooter"
+        },
+        {
+          "kind": "title",
+          "code": "0x04",
+          "title": "2D         : Slapping Ball"
+        },
+        {
+          "kind": "title",
+          "code": "0x07",
+          "title": "Boss       : Metal Lady"
+        },
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "stage 2-1  : Jazzy Moon"
+        },
+        {
+          "kind": "title",
+          "code": "0x05",
+          "title": "stage 3-1  : Banquet of Pterodactyls"
+        },
+        {
+          "kind": "title",
+          "code": "0x0B",
+          "title": "stage 3-2  : A Shamble Rock"
+        },
+        {
+          "kind": "title",
+          "code": "0x0A",
+          "title": "game over  : Re-in"
+        },
+        {
+          "kind": "title",
+          "code": "0x06",
+          "title": "stage 4-2  : Travellers Tales"
+        },
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "stage 5-1  : Blues for a Dark Star"
+        },
+        {
+          "kind": "title",
+          "code": "0x03",
+          "title": "stage 5-3  : Bad Condition"
+        },
+        {
+          "kind": "title",
+          "code": "0x0E",
+          "title": "final Boss : Destruction"
+        },
+        {
+          "kind": "title",
+          "code": "0x0D",
+          "title": "ending 1   : Gloria in Excelsis Deo!"
+        },
+        {
+          "kind": "title",
+          "code": "0x0F",
+          "title": "ending 2   : Last Drive"
+        },
+        {
+          "kind": "title",
+          "code": "0x08",
+          "title": "unused     : Crome"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/arsys.xml",
+      "source_order": 258,
+      "archive": "kasnd",
+      "id": "kasnd-generic"
+    },
+    {
+      "title": "[MSX] Reviver",
+      "driver": {
+        "name": "msx",
+        "type": "generic",
+        "alias": "Arsys Software",
+        "platform": "MSX"
+      },
+      "options": [
+        {
+          "name": "mdata_addr",
+          "value": "0x8900"
+        },
+        {
+          "name": "mdata_size",
+          "value": "0x1000"
+        },
+        {
+          "name": "mfile_size",
+          "value": "0x1000"
+        },
+        {
+          "name": "init_pc",
+          "value": "0x0400"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "patch",
+          "offset": "0x0400"
+        },
+        {
+          "type": "code",
+          "path": "DRIVER.BIN",
+          "offset": "0xC000"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS00.BIN",
+          "offset": "0x00"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS01.BIN",
+          "offset": "0x01"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS02.BIN",
+          "offset": "0x02"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS03.BIN",
+          "offset": "0x03"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS04.BIN",
+          "offset": "0x04"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS05.BIN",
+          "offset": "0x05"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS06.BIN",
+          "offset": "0x06"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS07.BIN",
+          "offset": "0x07"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS08.BIN",
+          "offset": "0x08"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS09.BIN",
+          "offset": "0x09"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS0A.BIN",
+          "offset": "0x0a"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS0B.BIN",
+          "offset": "0x0b"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS0C.BIN",
+          "offset": "0x0c"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS0D.BIN",
+          "offset": "0x0d"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS0E.BIN",
+          "offset": "0x0e"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS0F.BIN",
+          "offset": "0x0f"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS10.BIN",
+          "offset": "0x10"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS11.BIN",
+          "offset": "0x11"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS12.BIN",
+          "offset": "0x12"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS13.BIN",
+          "offset": "0x13"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS14.BIN",
+          "offset": "0x14"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x05",
+          "title": "オープニング"
+        },
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "サダリアーン登場"
+        },
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "魔導師タンダライド"
+        },
+        {
+          "kind": "title",
+          "code": "0x0b",
+          "title": "酒場"
+        },
+        {
+          "kind": "title",
+          "code": "0x03",
+          "title": "ラビスターク"
+        },
+        {
+          "kind": "title",
+          "code": "0x0d",
+          "title": "城"
+        },
+        {
+          "kind": "title",
+          "code": "0x0a",
+          "title": "ラトウィーン"
+        },
+        {
+          "kind": "title",
+          "code": "0x07",
+          "title": "女剣士アルマ"
+        },
+        {
+          "kind": "title",
+          "code": "0x0c",
+          "title": "洞窟"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "魔物との遭遇"
+        },
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "戦い"
+        },
+        {
+          "kind": "title",
+          "code": "0x14",
+          "title": "重要アイテム入手"
+        },
+        {
+          "kind": "title",
+          "code": "0x02",
+          "title": "落とし穴"
+        },
+        {
+          "kind": "title",
+          "code": "0x00",
+          "title": "クリスタルロッド"
+        },
+        {
+          "kind": "title",
+          "code": "0x0e",
+          "title": "天界・ハリイザード"
+        },
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "剣士コートの死"
+        },
+        {
+          "kind": "title",
+          "code": "0x0f",
+          "title": "邪神界・ザリオザード"
+        },
+        {
+          "kind": "title",
+          "code": "0x04",
+          "title": "サダリアーンとの戦い"
+        },
+        {
+          "kind": "title",
+          "code": "0x06",
+          "title": "サダリアーンの最期"
+        },
+        {
+          "kind": "title",
+          "code": "0x08",
+          "title": "エンディング"
+        },
+        {
+          "kind": "title",
+          "code": "0x09",
+          "title": "死"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/arsys.xml",
+      "source_order": 259,
+      "archive": "reviver_msx",
+      "id": "reviver-msx-generic"
+    },
+    {
+      "title": "[FM-7] Reviver(OPN)",
+      "driver": {
+        "name": "fm77av",
+        "type": "generic",
+        "alias": "Arsys Software",
+        "platform": "FUJITSU FM-7"
+      },
+      "options": [
+        {
+          "name": "init_pc",
+          "value": "0x4000"
+        },
+        {
+          "name": "mdata_addr",
+          "value": "0xCE00"
+        },
+        {
+          "name": "mfile_size",
+          "value": "0x2000"
+        },
+        {
+          "name": "mdata_size",
+          "value": "0x2000"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "PATCH.BIN",
+          "offset": "0x4000"
+        },
+        {
+          "type": "code",
+          "path": "DRIVER.BIN",
+          "offset": "0x0000"
+        },
+        {
+          "type": "bgm",
+          "path": "FM00.BIN",
+          "offset": "0x00"
+        },
+        {
+          "type": "bgm",
+          "path": "FM01.BIN",
+          "offset": "0x01"
+        },
+        {
+          "type": "bgm",
+          "path": "FM02.BIN",
+          "offset": "0x02"
+        },
+        {
+          "type": "bgm",
+          "path": "FM03.BIN",
+          "offset": "0x03"
+        },
+        {
+          "type": "bgm",
+          "path": "FM04.BIN",
+          "offset": "0x04"
+        },
+        {
+          "type": "bgm",
+          "path": "FM05.BIN",
+          "offset": "0x05"
+        },
+        {
+          "type": "bgm",
+          "path": "FM06.BIN",
+          "offset": "0x06"
+        },
+        {
+          "type": "bgm",
+          "path": "FM07.BIN",
+          "offset": "0x07"
+        },
+        {
+          "type": "bgm",
+          "path": "FM08.BIN",
+          "offset": "0x08"
+        },
+        {
+          "type": "bgm",
+          "path": "FM09.BIN",
+          "offset": "0x09"
+        },
+        {
+          "type": "bgm",
+          "path": "FM10.BIN",
+          "offset": "0x0a"
+        },
+        {
+          "type": "bgm",
+          "path": "FM11.BIN",
+          "offset": "0x0b"
+        },
+        {
+          "type": "bgm",
+          "path": "FM12.BIN",
+          "offset": "0x0c"
+        },
+        {
+          "type": "bgm",
+          "path": "FM13.BIN",
+          "offset": "0x0d"
+        },
+        {
+          "type": "bgm",
+          "path": "FM14.BIN",
+          "offset": "0x0e"
+        },
+        {
+          "type": "bgm",
+          "path": "FM15.BIN",
+          "offset": "0x0f"
+        },
+        {
+          "type": "bgm",
+          "path": "FM16.BIN",
+          "offset": "0x10"
+        },
+        {
+          "type": "bgm",
+          "path": "FM17.BIN",
+          "offset": "0x11"
+        },
+        {
+          "type": "bgm",
+          "path": "FM18.BIN",
+          "offset": "0x12"
+        },
+        {
+          "type": "bgm",
+          "path": "FM19.BIN",
+          "offset": "0x13"
+        },
+        {
+          "type": "bgm",
+          "path": "FM20.BIN",
+          "offset": "0x14"
+        },
+        {
+          "type": "bgm",
+          "path": "FM21.BIN",
+          "offset": "0x15"
+        },
+        {
+          "type": "bgm",
+          "path": "FM22.BIN",
+          "offset": "0x16"
+        },
+        {
+          "type": "bgm",
+          "path": "FM23.BIN",
+          "offset": "0x17"
+        },
+        {
+          "type": "bgm",
+          "path": "FM24.BIN",
+          "offset": "0x18"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x0a",
+          "title": "Logo"
+        },
+        {
+          "kind": "title",
+          "code": "0x05",
+          "title": "オープニング"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "サダリアーン登場"
+        },
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "魔導師タンダライド"
+        },
+        {
+          "kind": "title",
+          "code": "0x0d",
+          "title": "酒場"
+        },
+        {
+          "kind": "title",
+          "code": "0x03",
+          "title": "ラビスターク"
+        },
+        {
+          "kind": "title",
+          "code": "0x0f",
+          "title": "城"
+        },
+        {
+          "kind": "title",
+          "code": "0x0c",
+          "title": "ラトウィーン"
+        },
+        {
+          "kind": "title",
+          "code": "0x07",
+          "title": "女剣士アルマ"
+        },
+        {
+          "kind": "title",
+          "code": "0x0e",
+          "title": "洞窟"
+        },
+        {
+          "kind": "title",
+          "code": "0x15",
+          "title": "魔物との遭遇"
+        },
+        {
+          "kind": "title",
+          "code": "0x14",
+          "title": "戦い"
+        },
+        {
+          "kind": "title",
+          "code": "0x16",
+          "title": "重要アイテム入手"
+        },
+        {
+          "kind": "title",
+          "code": "0x02",
+          "title": "落とし穴"
+        },
+        {
+          "kind": "title",
+          "code": "0x00",
+          "title": "クリスタルロッド"
+        },
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "天界・ハリイザード"
+        },
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "剣士コートの死"
+        },
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "邪神界・ザリオザード"
+        },
+        {
+          "kind": "title",
+          "code": "0x04",
+          "title": "サダリアーンとの戦い"
+        },
+        {
+          "kind": "title",
+          "code": "0x06",
+          "title": "サダリアーンの最期"
+        },
+        {
+          "kind": "title",
+          "code": "0x08",
+          "title": "エンディング"
+        },
+        {
+          "kind": "title",
+          "code": "0x09",
+          "title": "死"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/arsys.xml",
+      "source_order": 260,
+      "archive": "reviver_fm7",
+      "id": "reviver-fm7-generic"
+    },
+    {
+      "title": "[FM-7] Reviver(PSG)",
+      "driver": {
+        "name": "fm7",
+        "type": "generic",
+        "alias": "Arsys Software",
+        "platform": "FUJITSU FM-7"
+      },
+      "options": [
+        {
+          "name": "init_pc",
+          "value": "0x4000"
+        },
+        {
+          "name": "mdata_addr",
+          "value": "0xCE00"
+        },
+        {
+          "name": "mfile_size",
+          "value": "0x2000"
+        },
+        {
+          "name": "mdata_size",
+          "value": "0x2000"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "PATCH.BIN",
+          "offset": "0x4000"
+        },
+        {
+          "type": "code",
+          "path": "DRIVER.BIN",
+          "offset": "0x0000"
+        },
+        {
+          "type": "bgm",
+          "path": "PSG00.BIN",
+          "offset": "0x00"
+        },
+        {
+          "type": "bgm",
+          "path": "PSG01.BIN",
+          "offset": "0x01"
+        },
+        {
+          "type": "bgm",
+          "path": "PSG02.BIN",
+          "offset": "0x02"
+        },
+        {
+          "type": "bgm",
+          "path": "PSG03.BIN",
+          "offset": "0x03"
+        },
+        {
+          "type": "bgm",
+          "path": "PSG04.BIN",
+          "offset": "0x04"
+        },
+        {
+          "type": "bgm",
+          "path": "PSG05.BIN",
+          "offset": "0x05"
+        },
+        {
+          "type": "bgm",
+          "path": "PSG06.BIN",
+          "offset": "0x06"
+        },
+        {
+          "type": "bgm",
+          "path": "PSG07.BIN",
+          "offset": "0x07"
+        },
+        {
+          "type": "bgm",
+          "path": "PSG08.BIN",
+          "offset": "0x08"
+        },
+        {
+          "type": "bgm",
+          "path": "PSG09.BIN",
+          "offset": "0x09"
+        },
+        {
+          "type": "bgm",
+          "path": "PSG10.BIN",
+          "offset": "0x0a"
+        },
+        {
+          "type": "bgm",
+          "path": "PSG11.BIN",
+          "offset": "0x0b"
+        },
+        {
+          "type": "bgm",
+          "path": "PSG12.BIN",
+          "offset": "0x0c"
+        },
+        {
+          "type": "bgm",
+          "path": "PSG13.BIN",
+          "offset": "0x0d"
+        },
+        {
+          "type": "bgm",
+          "path": "PSG14.BIN",
+          "offset": "0x0e"
+        },
+        {
+          "type": "bgm",
+          "path": "PSG15.BIN",
+          "offset": "0x0f"
+        },
+        {
+          "type": "bgm",
+          "path": "PSG16.BIN",
+          "offset": "0x10"
+        },
+        {
+          "type": "bgm",
+          "path": "PSG17.BIN",
+          "offset": "0x11"
+        },
+        {
+          "type": "bgm",
+          "path": "PSG18.BIN",
+          "offset": "0x12"
+        },
+        {
+          "type": "bgm",
+          "path": "PSG19.BIN",
+          "offset": "0x13"
+        },
+        {
+          "type": "bgm",
+          "path": "PSG20.BIN",
+          "offset": "0x14"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x05",
+          "title": "オープニング"
+        },
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "サダリアーン登場"
+        },
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "魔導師タンダライド"
+        },
+        {
+          "kind": "title",
+          "code": "0x0b",
+          "title": "酒場"
+        },
+        {
+          "kind": "title",
+          "code": "0x03",
+          "title": "ラビスターク"
+        },
+        {
+          "kind": "title",
+          "code": "0x0d",
+          "title": "城"
+        },
+        {
+          "kind": "title",
+          "code": "0x0a",
+          "title": "ラトウィーン"
+        },
+        {
+          "kind": "title",
+          "code": "0x07",
+          "title": "女剣士アルマ"
+        },
+        {
+          "kind": "title",
+          "code": "0x0c",
+          "title": "洞窟"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "魔物との遭遇"
+        },
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "戦い"
+        },
+        {
+          "kind": "title",
+          "code": "0x14",
+          "title": "重要アイテム入手"
+        },
+        {
+          "kind": "title",
+          "code": "0x02",
+          "title": "落とし穴"
+        },
+        {
+          "kind": "title",
+          "code": "0x00",
+          "title": "クリスタルロッド"
+        },
+        {
+          "kind": "title",
+          "code": "0x0e",
+          "title": "天界・ハリイザード"
+        },
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "剣士コートの死"
+        },
+        {
+          "kind": "title",
+          "code": "0x0f",
+          "title": "邪神界・ザリオザード"
+        },
+        {
+          "kind": "title",
+          "code": "0x04",
+          "title": "サダリアーンとの戦い"
+        },
+        {
+          "kind": "title",
+          "code": "0x06",
+          "title": "サダリアーンの最期"
+        },
+        {
+          "kind": "title",
+          "code": "0x08",
+          "title": "エンディング"
+        },
+        {
+          "kind": "title",
+          "code": "0x09",
+          "title": "死"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/arsys.xml",
+      "source_order": 261,
+      "archive": "reviver_fm7",
+      "id": "reviver-fm7-generic-2"
+    },
+    {
+      "title": "[FM-7] WiBARM(OPN)",
+      "driver": {
+        "name": "fm77av",
+        "type": "generic",
+        "alias": "Arsys Software",
+        "platform": "FUJITSU FM-7"
+      },
+      "options": [
+        {
+          "name": "init_pc",
+          "value": "0x4000"
+        },
+        {
+          "name": "mdata_addr",
+          "value": "0xed00"
+        },
+        {
+          "name": "mfile_size",
+          "value": "0x0800"
+        },
+        {
+          "name": "mdata_size",
+          "value": "0x0800"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "DRIVER.BIN",
+          "offset": "0x0000"
+        },
+        {
+          "type": "code",
+          "path": "PATCH.BIN",
+          "offset": "0x4000"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS00.BIN",
+          "offset": "0x00"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS01.BIN",
+          "offset": "0x01"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS02.BIN",
+          "offset": "0x02"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS03.BIN",
+          "offset": "0x03"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x0001",
+          "title": "基地"
+        },
+        {
+          "kind": "title",
+          "code": "0x0002",
+          "title": "地上"
+        },
+        {
+          "kind": "comment",
+          "text": "\t<title code=\"0x0100\">戦闘</title> "
+        },
+        {
+          "kind": "title",
+          "code": "0x0102",
+          "title": "戦闘"
+        },
+        {
+          "kind": "title",
+          "code": "0x0000",
+          "title": "3D迷路(建物内)"
+        },
+        {
+          "kind": "title",
+          "code": "0xff03",
+          "title": "エンディング"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/arsys.xml",
+      "source_order": 262,
+      "archive": "wibarm_fm7",
+      "id": "wibarm-fm7-generic"
+    },
+    {
+      "title": "[FM-7] WiBARM(PSG)",
+      "driver": {
+        "name": "fm7",
+        "type": "generic",
+        "alias": "Arsys Software",
+        "platform": "FUJITSU FM-7"
+      },
+      "options": [
+        {
+          "name": "init_pc",
+          "value": "0x4000"
+        },
+        {
+          "name": "mdata_addr",
+          "value": "0xed00"
+        },
+        {
+          "name": "mfile_size",
+          "value": "0x0800"
+        },
+        {
+          "name": "mdata_size",
+          "value": "0x0800"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "DRIVER.BIN",
+          "offset": "0x0000"
+        },
+        {
+          "type": "code",
+          "path": "PATCH.BIN",
+          "offset": "0x4000"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS00.BIN",
+          "offset": "0x00"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS01.BIN",
+          "offset": "0x01"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS02.BIN",
+          "offset": "0x02"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS03.BIN",
+          "offset": "0x03"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x0001",
+          "title": "基地"
+        },
+        {
+          "kind": "title",
+          "code": "0x0002",
+          "title": "地上"
+        },
+        {
+          "kind": "comment",
+          "text": "\t<title code=\"0x0100\">戦闘</title> "
+        },
+        {
+          "kind": "title",
+          "code": "0x0102",
+          "title": "戦闘"
+        },
+        {
+          "kind": "title",
+          "code": "0x0000",
+          "title": "3D迷路(建物内)"
+        },
+        {
+          "kind": "title",
+          "code": "0xff03",
+          "title": "エンディング"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/arsys.xml",
+      "source_order": 263,
+      "archive": "wibarm_fm7",
+      "id": "wibarm-fm7-generic-2"
+    }
+  ]
+}

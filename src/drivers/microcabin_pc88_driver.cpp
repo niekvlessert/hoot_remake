@@ -1,4 +1,6 @@
 #include "drivers/microcabin_pc88_driver.h"
+#include "core/utf8_util.h"
+#include "core/visual_state_util.h"
 
 #include <algorithm>
 #include <cmath>
@@ -17,10 +19,7 @@ namespace {
 template <size_t N>
 void copy_c_string(char (&dest)[N], const std::string& source)
 {
-    static_assert(N > 0, "destination must have room for a terminator");
-    const auto count = std::min(source.size(), N - 1);
-    std::memcpy(dest, source.data(), count);
-    dest[count] = '\0';
+    hoot::utf8::copy_c_string(dest, source);
 }
 
 HootResult load_member(ZipArchive& archive,
@@ -303,6 +302,57 @@ void MicrocabinPc88Driver::fill_track_info(const HootEntry& entry,
     }
 }
 
+void MicrocabinPc88Driver::fill_visual_state(const HootEntry&, int, HootVisualState& out) const
+{
+    out.abi_version = HOOT_VISUAL_ABI_VERSION;
+    out.struct_size = sizeof(out);
+    visual::copy(out.architecture, "PC-88");
+    visual::copy(out.cpu, "Z80");
+    visual::copy(out.device, "YM2203");
+    visual::copy(out.driver, name());
+    visual::add_register(out, "AF", cpu_.af());
+    visual::add_register(out, "BC", cpu_.bc());
+    visual::add_register(out, "DE", cpu_.de());
+    visual::add_register(out, "HL", cpu_.hl());
+    visual::add_register(out, "IX", cpu_.ix());
+    visual::add_register(out, "IY", cpu_.iy());
+    visual::add_register(out, "PC", cpu_.pc());
+    visual::add_register(out, "SP", cpu_.sp());
+    visual::add_register(out, "I", cpu_.i(), 2);
+    visual::add_register(out, "R", cpu_.r(), 2);
+    visual::add_register(out, "IM", cpu_.interrupt_mode(), 2);
+    for (int ch = 0; ch < 3; ++ch) {
+        auto* v = visual::add_channel(out, HOOT_VISUAL_CHANNEL_FM, ch, "YM2203 FM#" + std::to_string(ch));
+        if (!v) break;
+        const uint16_t fnum = static_cast<uint16_t>(opn_registers_[0xa0 + ch] | ((opn_registers_[0xa4 + ch] & 7) << 8));
+        const uint8_t block = (opn_registers_[0xa4 + ch] >> 3) & 7;
+        v->active = opn_key_on_[static_cast<size_t>(ch)] ? 1 : 0;
+        v->midi_note = visual::opn_fnum_to_midi(fnum, block, 3993600.0);
+        if (v->midi_note >= 0) v->key_mask_lo = v->midi_note < 64 ? (1ull << v->midi_note) : 0;
+        if (v->midi_note >= 64) v->key_mask_hi = 1ull << (v->midi_note - 64);
+        v->volume = visual::inverse_tl_volume(opn_registers_[0x4c + ch]);
+        v->level = v->active ? static_cast<float>(v->volume) / 127.0f : 0.0f;
+    }
+    const uint8_t mixer = opn_registers_[7];
+    for (int ch = 0; ch < 3; ++ch) {
+        auto* v = visual::add_channel(out, HOOT_VISUAL_CHANNEL_SSG, ch, "YM2203 SSG#" + std::to_string(ch));
+        if (!v) break;
+        const uint16_t period = static_cast<uint16_t>(opn_registers_[ch * 2] | ((opn_registers_[ch * 2 + 1] & 15) << 8));
+        const int vol = opn_registers_[8 + ch] & 15;
+        const bool tone = (mixer & (1u << ch)) == 0;
+        const bool noise = (mixer & (1u << (ch + 3))) == 0;
+        v->active = vol && (tone || noise);
+        v->midi_note = tone && period ? visual::frequency_to_midi(3993600.0 / (64.0 * period)) : -1;
+        if (v->midi_note >= 0 && v->midi_note < 64) v->key_mask_lo = 1ull << v->midi_note;
+        if (v->midi_note >= 64) v->key_mask_hi = 1ull << (v->midi_note - 64);
+        v->volume = std::clamp(vol * 8 + (vol ? 7 : 0), 0, 127);
+        v->level = v->active ? static_cast<float>(v->volume) / 127.0f : 0.0f;
+    }
+    out.driver_work_base = 0xf000;
+    out.driver_work_size = HOOT_VISUAL_DRIVER_WORK_MAX;
+    std::copy_n(ram_.data() + out.driver_work_base, out.driver_work_size, out.driver_work);
+}
+
 const char* MicrocabinPc88Driver::name() const
 {
     return "microcabin-pc88-opn";
@@ -330,6 +380,8 @@ void MicrocabinPc88Driver::clear()
     debug_last_opn_reg_ = 0;
     debug_last_opn_data_ = 0;
     current_opn_reg_ = 0;
+    opn_registers_.fill(0);
+    opn_key_on_.fill(0);
     opn_timer_b_ = 0;
     opn_mode_ = 0;
     opn_prescaler_sel_ = 2;
@@ -414,8 +466,13 @@ void MicrocabinPc88Driver::write_io(uint16_t port, uint8_t data)
         } else {
             debug_last_opn_reg_ = current_opn_reg_;
             debug_last_opn_data_ = data;
-            if (current_opn_reg_ == 0x28 && (data & 0xf0) != 0) {
-                ++debug_opn_keyons_;
+            opn_registers_[current_opn_reg_] = data;
+            if (current_opn_reg_ == 0x28) {
+                const int ch = data & 0x03;
+                if (ch < 3) {
+                    opn_key_on_[static_cast<size_t>(ch)] = (data & 0xf0) != 0;
+                    if ((data & 0xf0) != 0) ++debug_opn_keyons_;
+                }
             }
             trace_event("opn-data", current_opn_reg_, data);
             update_opn_timer(current_opn_reg_, data);

@@ -1,4 +1,6 @@
 #include "drivers/microcabin_pc98dos_driver.h"
+#include "core/utf8_util.h"
+#include "core/visual_state_util.h"
 
 #include <algorithm>
 #include <cmath>
@@ -15,10 +17,7 @@ namespace {
 template <size_t N>
 void copy_c_string(char (&dest)[N], const std::string& source)
 {
-    static_assert(N > 0, "destination must have room for a terminator");
-    const auto count = std::min(source.size(), N - 1);
-    std::memcpy(dest, source.data(), count);
-    dest[count] = '\0';
+    hoot::utf8::copy_c_string(dest, source);
 }
 
 std::string first_token(const std::string& text)
@@ -244,6 +243,57 @@ int MicrocabinPc98DosDriver::render_float(float* interleaved_stereo, int frames)
     return frames;
 }
 
+void MicrocabinPc98DosDriver::fill_visual_state(const HootEntry&, int, HootVisualState& out) const
+{
+    out.abi_version = HOOT_VISUAL_ABI_VERSION;
+    out.struct_size = sizeof(out);
+    visual::copy(out.architecture, "PC-98");
+    visual::copy(out.cpu, "V30 / x86");
+    visual::copy(out.device, "YM2608");
+    visual::copy(out.driver, name());
+    if (cpu_) {
+        visual::add_register(out, "AX", cpu_->get_ax()); visual::add_register(out, "BX", cpu_->get_bx());
+        visual::add_register(out, "CX", cpu_->get_cx()); visual::add_register(out, "DX", cpu_->get_dx());
+        visual::add_register(out, "SI", cpu_->get_si()); visual::add_register(out, "DI", cpu_->get_di());
+        visual::add_register(out, "BP", cpu_->get_bp()); visual::add_register(out, "CS", cpu_->get_cs());
+        visual::add_register(out, "DS", cpu_->get_ds()); visual::add_register(out, "ES", cpu_->get_es());
+        visual::add_register(out, "SS", cpu_->get_ss()); visual::add_register(out, "IP", cpu_->get_pc());
+        visual::add_register(out, "FL", cpu_->get_flags());
+    }
+    for (int ch = 0; ch < 6; ++ch) {
+        const int bank = ch >= 3; const int local = ch % 3;
+        auto* v = visual::add_channel(out, HOOT_VISUAL_CHANNEL_FM, ch, "YM2608 FM#" + std::to_string(ch));
+        if (!v) break;
+        const uint16_t fnum = static_cast<uint16_t>(opna_registers_[bank][0xa0 + local] | ((opna_registers_[bank][0xa4 + local] & 7) << 8));
+        const uint8_t block = (opna_registers_[bank][0xa4 + local] >> 3) & 7;
+        v->active = opna_key_on_[static_cast<size_t>(ch)];
+        v->midi_note = visual::opn_fnum_to_midi(fnum, block, 7987200.0);
+        if (v->midi_note >= 0 && v->midi_note < 64) v->key_mask_lo = 1ull << v->midi_note;
+        if (v->midi_note >= 64) v->key_mask_hi = 1ull << (v->midi_note - 64);
+        v->volume = visual::inverse_tl_volume(opna_registers_[bank][0x4c + local]);
+        v->pan = visual::opn_pan(opna_registers_[bank][0xb4 + local]);
+        v->level = v->active ? static_cast<float>(v->volume) / 127.0f : 0.0f;
+    }
+    const uint8_t mixer = opna_registers_[0][7];
+    for (int ch = 0; ch < 3; ++ch) {
+        auto* v = visual::add_channel(out, HOOT_VISUAL_CHANNEL_SSG, ch, "YM2608 SSG#" + std::to_string(ch));
+        if (!v) break;
+        const uint16_t period = static_cast<uint16_t>(opna_registers_[0][ch*2] | ((opna_registers_[0][ch*2+1] & 15) << 8));
+        const int vol = opna_registers_[0][8+ch] & 15; const bool tone=(mixer&(1u<<ch))==0; const bool noise=(mixer&(1u<<(ch+3)))==0;
+        v->active = vol && (tone || noise); v->midi_note = tone && period ? visual::frequency_to_midi(7987200.0/(64.0*period)) : -1;
+        if (v->midi_note >= 0 && v->midi_note < 64) v->key_mask_lo = 1ull << v->midi_note;
+        if (v->midi_note >= 64) v->key_mask_hi = 1ull << (v->midi_note - 64);
+        v->volume = std::clamp(vol*8+(vol?7:0),0,127); v->level = v->active ? static_cast<float>(v->volume)/127.0f : 0.0f;
+    }
+    auto* ad=visual::add_channel(out,HOOT_VISUAL_CHANNEL_ADPCM,0,"YM2608 ADPCM#0"); if(ad){ ad->active=(opna_registers_[1][0]&0x80)!=0; ad->volume=opna_registers_[1][0x0b]&0x7f; ad->pan=visual::opn_pan(opna_registers_[1][1]); ad->level=ad->active?static_cast<float>(ad->volume)/127.0f:0.0f; }
+    for(int ch=0;ch<6;++ch){ auto*r=visual::add_channel(out,HOOT_VISUAL_CHANNEL_RHYTHM,ch,"YM2608 RHYTHM#"+std::to_string(ch)); if(!r)break; r->volume=std::clamp((0x3f-static_cast<int>(opna_registers_[0][0x11]&0x3f))*2,0,127); r->pan=visual::opn_pan(opna_registers_[0][0x18+ch]); r->active=r->volume!=0; r->level=r->active?static_cast<float>(r->volume)/127.0f:0.0f; }
+    if (cpu_) {
+        out.driver_work_base = (static_cast<uint32_t>(cpu_->get_ds()) << 4);
+        out.driver_work_size = std::min<uint32_t>(HOOT_VISUAL_DRIVER_WORK_MAX, kMemorySize - std::min<uint32_t>(out.driver_work_base, kMemorySize));
+        if (out.driver_work_base < kMemorySize) std::copy_n(cpu_->memory() + out.driver_work_base, out.driver_work_size, out.driver_work);
+    }
+}
+
 void MicrocabinPc98DosDriver::fill_track_info(const HootEntry& entry,
                                               int track_index,
                                               HootTrackInfo& out) const
@@ -281,6 +331,12 @@ void MicrocabinPc98DosDriver::fill_track_info(const HootEntry& entry,
     out.debug_port_writes_45 = (static_cast<uint32_t>(debug_mmd_play_errors_) << 24)
         | (static_cast<uint32_t>(debug_last_mmd_command_) << 8)
         | debug_last_mmd_return_;
+    if (cpu_) {
+        out.debug_unsupported_opcodes = cpu_->unsupported_count();
+        out.debug_last_unsupported_opcode = cpu_->last_unsupported_opcode();
+        out.debug_last_unsupported_cs = cpu_->last_unsupported_cs();
+        out.debug_last_unsupported_ip = cpu_->last_unsupported_ip();
+    }
     copy_c_string(out.driver, name());
     if (track_index >= 0 && static_cast<size_t>(track_index) < entry.tracks.size()) {
         copy_c_string(out.title, entry.tracks[track_index].title);
@@ -353,6 +409,7 @@ void MicrocabinPc98DosDriver::clear()
     for (auto& bank : opna_registers_) {
         bank.fill(0);
     }
+    opna_key_on_.fill(0);
 }
 
 bool MicrocabinPc98DosDriver::setup_runtime(std::string& error)
@@ -743,15 +800,16 @@ void MicrocabinPc98DosDriver::write_io_port(uint16_t port, uint8_t data)
         } else if (current_opna_address_[0] >= 0x10 && current_opna_address_[0] < 0x20) {
             ++debug_opna_rhythm_writes_;
         }
-        if (current_opna_address_[0] == 0x28 && (data & 0xf0) != 0) {
-            ++debug_opna_keyons_;
+        if (current_opna_address_[0] == 0x28) {
             uint8_t channel = data & 0x03;
             if (channel != 3) {
-                if ((data & 0x04) != 0) {
-                    channel = static_cast<uint8_t>(channel + 3);
-                }
-                if (channel < debug_fm_keyons_by_channel_.size()) {
-                    ++debug_fm_keyons_by_channel_[channel];
+                if ((data & 0x04) != 0) channel = static_cast<uint8_t>(channel + 3);
+                if (channel < opna_key_on_.size()) {
+                    opna_key_on_[channel] = (data & 0xf0) != 0;
+                    if ((data & 0xf0) != 0) {
+                        ++debug_opna_keyons_;
+                        ++debug_fm_keyons_by_channel_[channel];
+                    }
                 }
             }
         }

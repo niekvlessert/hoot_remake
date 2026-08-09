@@ -1,0 +1,145 @@
+{
+  "format": "hoot-catalog-shard",
+  "version": 1,
+  "source_file": "xml/happytime.xml",
+  "date": "2005/09/25",
+  "comments": [
+    " //ハッピータイム "
+  ],
+  "games": [
+    {
+      "title": "[PC-9801] AMBITION",
+      "driver": {
+        "name": "pc98dos",
+        "type": "opn",
+        "alias": "ハッピータイム",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "clockmul",
+          "value": "8"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "AMBIT_98.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "ANBSYAS.EXE",
+          "offset": "-1"
+        },
+        {
+          "type": "conin",
+          "path": "ANBSYAS.EXE",
+          "offset": "5"
+        },
+        {
+          "type": "file",
+          "path": "ANB.OPN",
+          "offset": "6"
+        },
+        {
+          "type": "file",
+          "path": "ANB.SSG",
+          "offset": "7"
+        },
+        {
+          "type": "file",
+          "path": "KONPEI.MU",
+          "offset": "11"
+        },
+        {
+          "type": "file",
+          "path": "NAZO01.MU",
+          "offset": "12"
+        },
+        {
+          "type": "file",
+          "path": "NAZO02.MU",
+          "offset": "13"
+        },
+        {
+          "type": "file",
+          "path": "NAZO03.MU",
+          "offset": "14"
+        },
+        {
+          "type": "file",
+          "path": "NAZO04.MU",
+          "offset": "15"
+        },
+        {
+          "type": "file",
+          "path": "NAZO05.MU",
+          "offset": "16"
+        },
+        {
+          "type": "file",
+          "path": "NAZO06.MU",
+          "offset": "17"
+        },
+        {
+          "type": "file",
+          "path": "REST.MU",
+          "offset": "18"
+        },
+        {
+          "type": "shell",
+          "path": "ambit_98",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "18",
+          "title": "REST.MU   : [STOP]"
+        },
+        {
+          "kind": "title",
+          "code": "11",
+          "title": "KONPEI.MU :"
+        },
+        {
+          "kind": "title",
+          "code": "12",
+          "title": "NAZO01.MU :"
+        },
+        {
+          "kind": "title",
+          "code": "13",
+          "title": "NAZO02.MU :"
+        },
+        {
+          "kind": "title",
+          "code": "14",
+          "title": "NAZO03.MU :"
+        },
+        {
+          "kind": "title",
+          "code": "15",
+          "title": "NAZO04.MU :"
+        },
+        {
+          "kind": "title",
+          "code": "16",
+          "title": "NAZO05.MU :"
+        },
+        {
+          "kind": "title",
+          "code": "17",
+          "title": "NAZO06.MU :"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/happytime.xml",
+      "source_order": 2388,
+      "archive": "ambition_98",
+      "id": "ambition-98-opn"
+    }
+  ]
+}

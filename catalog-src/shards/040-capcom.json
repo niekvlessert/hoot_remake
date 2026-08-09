@@ -1,0 +1,1195 @@
+{
+  "format": "hoot-catalog-shard",
+  "version": 1,
+  "source_file": "xml/capcom.xml",
+  "date": "2014/06/19",
+  "comments": [
+    " //CAPCOM "
+  ],
+  "games": [
+    {
+      "title": "[X68000] ストライダー飛竜",
+      "driver": {
+        "name": "x68k",
+        "type": "generic",
+        "alias": "CAPCOM",
+        "platform": "SHARP X68000"
+      },
+      "options": [
+        {
+          "name": "opm_mix",
+          "value": "0xc0"
+        },
+        {
+          "name": "stop",
+          "value": "0xff"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "srh68snd.bin"
+        },
+        {
+          "type": "x",
+          "path": "STR.X",
+          "offset": "0x8000"
+        },
+        {
+          "type": "code",
+          "path": "SHSOUND.SLD",
+          "offset": "0xa0000"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0xFF",
+          "title": "STOP"
+        },
+        {
+          "kind": "title",
+          "code": "0x00",
+          "title": "-1 Stage BGM1- [     踏み込め！     ]"
+        },
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "-1 Stage BGM2- [    非情の大伽藍    ]"
+        },
+        {
+          "kind": "title",
+          "code": "0x02",
+          "title": "-1 Stage BGM3- [        野獣        ]"
+        },
+        {
+          "kind": "title",
+          "code": "0x03",
+          "title": "-1 Stage BGM4- [      銃弾回廊      ]"
+        },
+        {
+          "kind": "title",
+          "code": "0x04",
+          "title": "-    中敵    - [        一撃        ]"
+        },
+        {
+          "kind": "title",
+          "code": "0x05",
+          "title": "-    大敵    - [ウロボロス-鉄の統治-]"
+        },
+        {
+          "kind": "title",
+          "code": "0x06",
+          "title": "-大敵<コング>- [    シベリア坑道    ]"
+        },
+        {
+          "kind": "title",
+          "code": "0x07",
+          "title": "-2 Stage BGM1- [        動輪        ]"
+        },
+        {
+          "kind": "title",
+          "code": "0x08",
+          "title": "-2 Stage BGM2- [       大走破       ]"
+        },
+        {
+          "kind": "title",
+          "code": "0x09",
+          "title": "-2 Stage BGM3- [        雲塊        ]"
+        },
+        {
+          "kind": "title",
+          "code": "0x0a",
+          "title": "-   Start 1  - [       ひびき       ]"
+        },
+        {
+          "kind": "title",
+          "code": "0x0b",
+          "title": "-4 Stage BGM1- [       谷と河       ]"
+        },
+        {
+          "kind": "title",
+          "code": "0x0c",
+          "title": "-4 Stage BGM2- [       吠える       ]"
+        },
+        {
+          "kind": "title",
+          "code": "0x0d",
+          "title": "-    大敵    - [   アフリカの魔王   ]"
+        },
+        {
+          "kind": "title",
+          "code": "0x0e",
+          "title": "-  Game Over - [  ゲーム・オーバー  ]"
+        },
+        {
+          "kind": "title",
+          "code": "0x0f",
+          "title": "- Stage Clear- [   ステージクリア   ]"
+        },
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "-  大敵<空>  - [        風陣        ]"
+        },
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "-1 Stage Demo- [       防衛圏       ]"
+        },
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "-2 Stage Demo- [  ステージ２・デモ  ]"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "-4 Stage Demo- [  ステージ４・デモ  ]"
+        },
+        {
+          "kind": "title",
+          "code": "0x14",
+          "title": "-   Credit   - [     クレジット     ]"
+        },
+        {
+          "kind": "title",
+          "code": "0x15",
+          "title": "-  Continue  - [   コンティニュー   ]"
+        },
+        {
+          "kind": "title",
+          "code": "0x16",
+          "title": "-   Start 2  - [        包囲        ]"
+        },
+        {
+          "kind": "title",
+          "code": "0x17",
+          "title": "-   Start 3  - [      ひびき 2      ]"
+        },
+        {
+          "kind": "title",
+          "code": "0x18",
+          "title": "-3 Stage BGM1- [  ショート・スピン  ]"
+        },
+        {
+          "kind": "title",
+          "code": "0x19",
+          "title": "-3 Stage BGM2- [   逆転マイナーＧ   ]"
+        },
+        {
+          "kind": "title",
+          "code": "0x1a",
+          "title": "-    大敵    - [       奪取！       ]"
+        },
+        {
+          "kind": "title",
+          "code": "0x1b",
+          "title": "-5 Stage BGM1- [        飛竜        ]"
+        },
+        {
+          "kind": "title",
+          "code": "0x1c",
+          "title": "-5 Stage BGM2- [     逆襲の速力     ]"
+        },
+        {
+          "kind": "title",
+          "code": "0x1d",
+          "title": "-    大敵    - [        冥王        ]"
+        },
+        {
+          "kind": "title",
+          "code": "0x1e",
+          "title": "-3 Stage Demo- [  ステージ３・デモ  ]"
+        },
+        {
+          "kind": "title",
+          "code": "0x1f",
+          "title": "-5 Stage Demo- [  ステージ５・デモ  ]"
+        },
+        {
+          "kind": "title",
+          "code": "0x20",
+          "title": "-  All Clear - [     最終クリア     ]"
+        },
+        {
+          "kind": "title",
+          "code": "0x21",
+          "title": "-   Ending   - [    さらに･･････    ]"
+        },
+        {
+          "kind": "title",
+          "code": "0x22",
+          "title": "-   Ranking  - [     ランキング     ]"
+        },
+        {
+          "kind": "title",
+          "code": "0x23",
+          "title": "-  Hurry Up  - [    ハリーアップ    ]"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/capcom.xml",
+      "source_order": 678,
+      "archive": "srh68snd",
+      "id": "srh68snd-generic"
+    },
+    {
+      "title": "[X68000] 大魔界村(OPM)",
+      "driver": {
+        "name": "x68k",
+        "type": "generic",
+        "alias": "CAPCOM",
+        "platform": "SHARP X68000"
+      },
+      "options": [
+        {
+          "name": "opm_mix",
+          "value": "0xc0"
+        },
+        {
+          "name": "mfp",
+          "value": "1"
+        },
+        {
+          "name": "stop",
+          "value": "0xff"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "dm68snd.bin"
+        },
+        {
+          "type": "x",
+          "path": "M3.X",
+          "offset": "0x01000"
+        },
+        {
+          "type": "x",
+          "path": "OPMDMK.X",
+          "offset": "0x03300"
+        },
+        {
+          "type": "x",
+          "path": "SEQSTD.X",
+          "offset": "0x10000"
+        },
+        {
+          "type": "code",
+          "path": "TEXTDAT2.SLD",
+          "offset": "0x30000"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0xFF",
+          "title": "STOP"
+        },
+        {
+          "kind": "title",
+          "code": "0x07",
+          "title": "Credit"
+        },
+        {
+          "kind": "title",
+          "code": "0x00",
+          "title": "Start"
+        },
+        {
+          "kind": "title",
+          "code": "0x0a",
+          "title": "Map"
+        },
+        {
+          "kind": "title",
+          "code": "0x0c",
+          "title": "1st BGM"
+        },
+        {
+          "kind": "title",
+          "code": "0x0d",
+          "title": "1st Boss BGM"
+        },
+        {
+          "kind": "title",
+          "code": "0x0e",
+          "title": "2nd BGM"
+        },
+        {
+          "kind": "title",
+          "code": "0x0f",
+          "title": "2nd Boss BGM"
+        },
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "3rd BGM"
+        },
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "3rd Boss BGM"
+        },
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "4th BGM"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "4th Boss BGM"
+        },
+        {
+          "kind": "title",
+          "code": "0x14",
+          "title": "5th BGM"
+        },
+        {
+          "kind": "title",
+          "code": "0x15",
+          "title": "5th Boss BGM"
+        },
+        {
+          "kind": "title",
+          "code": "0x17",
+          "title": "1st Lap End"
+        },
+        {
+          "kind": "title",
+          "code": "0x16",
+          "title": "6th BGM (Lucifer)"
+        },
+        {
+          "kind": "title",
+          "code": "0x02",
+          "title": "Round Clear"
+        },
+        {
+          "kind": "title",
+          "code": "0x18",
+          "title": "End"
+        },
+        {
+          "kind": "title",
+          "code": "0x19",
+          "title": "Ending"
+        },
+        {
+          "kind": "title",
+          "code": "0x09",
+          "title": "Hurry Up"
+        },
+        {
+          "kind": "title",
+          "code": "0x08",
+          "title": "Death"
+        },
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "Game Over"
+        },
+        {
+          "kind": "title",
+          "code": "0x0b",
+          "title": "Continue"
+        },
+        {
+          "kind": "title",
+          "code": "0x03",
+          "title": "Ranking Top"
+        },
+        {
+          "kind": "title",
+          "code": "0x04",
+          "title": "Ranking Under 2nd"
+        },
+        {
+          "kind": "title",
+          "code": "0x05",
+          "title": "Display Top"
+        },
+        {
+          "kind": "title",
+          "code": "0x06",
+          "title": "Display Under 2nd"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/capcom.xml",
+      "source_order": 679,
+      "archive": "dm68snd",
+      "id": "dm68snd-generic"
+    },
+    {
+      "title": "[X68000] 大魔界村(GM)",
+      "driver": {
+        "name": "x68k",
+        "type": "generic",
+        "alias": "CAPCOM",
+        "platform": "SHARP X68000"
+      },
+      "options": [
+        {
+          "name": "mfp",
+          "value": "1"
+        },
+        {
+          "name": "stop",
+          "value": "0xff"
+        },
+        {
+          "name": "midiout",
+          "value": "1"
+        },
+        {
+          "name": "midiout_type",
+          "value": "8"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "dm68snd.bin"
+        },
+        {
+          "type": "x",
+          "path": "M3.X",
+          "offset": "0x01000"
+        },
+        {
+          "type": "x",
+          "path": "OPMDMK.X",
+          "offset": "0x03300"
+        },
+        {
+          "type": "x",
+          "path": "SEQSTD.X",
+          "offset": "0x10000"
+        },
+        {
+          "type": "code",
+          "path": "TEXTDAT4.SLD",
+          "offset": "0x30000"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0xFF",
+          "title": "STOP"
+        },
+        {
+          "kind": "title",
+          "code": "0x07",
+          "title": "Credit"
+        },
+        {
+          "kind": "title",
+          "code": "0x00",
+          "title": "Start"
+        },
+        {
+          "kind": "title",
+          "code": "0x0a",
+          "title": "Map"
+        },
+        {
+          "kind": "title",
+          "code": "0x0c",
+          "title": "1st BGM"
+        },
+        {
+          "kind": "title",
+          "code": "0x0d",
+          "title": "1st Boss BGM"
+        },
+        {
+          "kind": "title",
+          "code": "0x0e",
+          "title": "2nd BGM"
+        },
+        {
+          "kind": "title",
+          "code": "0x0f",
+          "title": "2nd Boss BGM"
+        },
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "3rd BGM"
+        },
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "3rd Boss BGM"
+        },
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "4th BGM"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "4th Boss BGM"
+        },
+        {
+          "kind": "title",
+          "code": "0x14",
+          "title": "5th BGM"
+        },
+        {
+          "kind": "title",
+          "code": "0x15",
+          "title": "5th Boss BGM"
+        },
+        {
+          "kind": "title",
+          "code": "0x17",
+          "title": "1st Lap End"
+        },
+        {
+          "kind": "title",
+          "code": "0x16",
+          "title": "6th BGM (Lucifer)"
+        },
+        {
+          "kind": "title",
+          "code": "0x02",
+          "title": "Round Clear"
+        },
+        {
+          "kind": "title",
+          "code": "0x18",
+          "title": "End"
+        },
+        {
+          "kind": "title",
+          "code": "0x19",
+          "title": "Ending"
+        },
+        {
+          "kind": "title",
+          "code": "0x09",
+          "title": "Hurry Up"
+        },
+        {
+          "kind": "title",
+          "code": "0x08",
+          "title": "Death"
+        },
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "Game Over"
+        },
+        {
+          "kind": "title",
+          "code": "0x0b",
+          "title": "Continue"
+        },
+        {
+          "kind": "title",
+          "code": "0x03",
+          "title": "Ranking Top"
+        },
+        {
+          "kind": "title",
+          "code": "0x04",
+          "title": "Ranking Under 2nd"
+        },
+        {
+          "kind": "title",
+          "code": "0x05",
+          "title": "Display Top"
+        },
+        {
+          "kind": "title",
+          "code": "0x06",
+          "title": "Display Under 2nd"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/capcom.xml",
+      "source_order": 680,
+      "archive": "dm68snd",
+      "id": "dm68snd-generic-2"
+    },
+    {
+      "title": "[X68000] Final Fight(OPM)",
+      "driver": {
+        "name": "x68k",
+        "type": "generic",
+        "alias": "CAPCOM",
+        "platform": "SHARP X68000"
+      },
+      "options": [
+        {
+          "name": "opm_mix",
+          "value": "0xc0"
+        },
+        {
+          "name": "stop",
+          "value": "0xff"
+        },
+        {
+          "name": "mfp",
+          "value": "1"
+        },
+        {
+          "name": "dmaint",
+          "value": "1"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "ffght68snd.bin"
+        },
+        {
+          "type": "x",
+          "path": "M2.X",
+          "offset": "0x01000"
+        },
+        {
+          "type": "x",
+          "path": "OPM3FF.X",
+          "offset": "0x03000"
+        },
+        {
+          "type": "x",
+          "path": "M2MOPC.X",
+          "offset": "0x0A000"
+        },
+        {
+          "type": "x",
+          "path": "M2MOPC.X",
+          "offset": "0x11000"
+        },
+        {
+          "type": "x",
+          "path": "MOPV.X",
+          "offset": "0x20000"
+        },
+        {
+          "type": "x",
+          "path": "SEQ2.X",
+          "offset": "0x30000"
+        },
+        {
+          "type": "code",
+          "path": "BGM.SLD",
+          "offset": "0x4F61D"
+        },
+        {
+          "type": "code",
+          "path": "DRUMS.MOP",
+          "offset": "0x80000"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0xFF",
+          "title": "STOP"
+        },
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "Opening"
+        },
+        {
+          "kind": "title",
+          "code": "0x1f",
+          "title": "Credit"
+        },
+        {
+          "kind": "title",
+          "code": "0x15",
+          "title": "Character Select/Name Entry"
+        },
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "Round Start"
+        },
+        {
+          "kind": "title",
+          "code": "0x00",
+          "title": "Round1 Slum1/Round4/Round6"
+        },
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "Round1 Slum2"
+        },
+        {
+          "kind": "title",
+          "code": "0x16",
+          "title": "Round Clear"
+        },
+        {
+          "kind": "title",
+          "code": "0x02",
+          "title": "Round2 Subway Park1/Round6"
+        },
+        {
+          "kind": "title",
+          "code": "0x03",
+          "title": "Round2 Subway Park2"
+        },
+        {
+          "kind": "title",
+          "code": "0x0a",
+          "title": "BONUS Stage"
+        },
+        {
+          "kind": "title",
+          "code": "0x04",
+          "title": "Round3 West Side1"
+        },
+        {
+          "kind": "title",
+          "code": "0x08",
+          "title": "Round4 Industrial Area1"
+        },
+        {
+          "kind": "title",
+          "code": "0x09",
+          "title": "Round4 Industrial Area2/Round6"
+        },
+        {
+          "kind": "title",
+          "code": "0x05",
+          "title": "Round5 Bay Area1"
+        },
+        {
+          "kind": "title",
+          "code": "0x06",
+          "title": "Round5 Bay Area2"
+        },
+        {
+          "kind": "title",
+          "code": "0x07",
+          "title": "Round5 Bay Area3/Round6"
+        },
+        {
+          "kind": "title",
+          "code": "0x18",
+          "title": "All Round Clear"
+        },
+        {
+          "kind": "title",
+          "code": "0x14",
+          "title": "Ending"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "Continue"
+        },
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "Game Over"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/capcom.xml",
+      "source_order": 681,
+      "archive": "ffght68snd",
+      "id": "ffght68snd-generic"
+    },
+    {
+      "title": "[X68000] Final Fight(MT-32)",
+      "driver": {
+        "name": "x68k",
+        "type": "generic",
+        "alias": "CAPCOM",
+        "platform": "SHARP X68000"
+      },
+      "options": [
+        {
+          "name": "opm_mix",
+          "value": "0xc0"
+        },
+        {
+          "name": "mfp",
+          "value": "1"
+        },
+        {
+          "name": "stop",
+          "value": "0xff"
+        },
+        {
+          "name": "dmaint",
+          "value": "1"
+        },
+        {
+          "name": "midiout",
+          "value": "1"
+        },
+        {
+          "name": "midiout_type",
+          "value": "0"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "ffght68snd.bin"
+        },
+        {
+          "type": "x",
+          "path": "M2.X",
+          "offset": "0x01000"
+        },
+        {
+          "type": "x",
+          "path": "OPM3FF.X",
+          "offset": "0x03000"
+        },
+        {
+          "type": "x",
+          "path": "M2MOPC.X",
+          "offset": "0x0A000"
+        },
+        {
+          "type": "x",
+          "path": "M2MOPC.X",
+          "offset": "0x11000"
+        },
+        {
+          "type": "x",
+          "path": "MOPV.X",
+          "offset": "0x20000"
+        },
+        {
+          "type": "x",
+          "path": "SEQ2.X",
+          "offset": "0x30000"
+        },
+        {
+          "type": "code",
+          "path": "BGM_MIDI.SLD",
+          "offset": "0x4DC7E"
+        },
+        {
+          "type": "code",
+          "path": "DRUMS.MOP",
+          "offset": "0x80000"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0xFF",
+          "title": "STOP"
+        },
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "Opening"
+        },
+        {
+          "kind": "title",
+          "code": "0x1f",
+          "title": "Credit"
+        },
+        {
+          "kind": "title",
+          "code": "0x15",
+          "title": "Character Select/Name Entry"
+        },
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "Round Start"
+        },
+        {
+          "kind": "title",
+          "code": "0x00",
+          "title": "Round1 Slum1/Round4/Round6"
+        },
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "Round1 Slum2"
+        },
+        {
+          "kind": "title",
+          "code": "0x16",
+          "title": "Round Clear"
+        },
+        {
+          "kind": "title",
+          "code": "0x02",
+          "title": "Round2 Subway Park1/Round6"
+        },
+        {
+          "kind": "title",
+          "code": "0x03",
+          "title": "Round2 Subway Park2"
+        },
+        {
+          "kind": "title",
+          "code": "0x0a",
+          "title": "BONUS Stage"
+        },
+        {
+          "kind": "title",
+          "code": "0x04",
+          "title": "Round3 West Side1"
+        },
+        {
+          "kind": "title",
+          "code": "0x08",
+          "title": "Round4 Industrial Area1"
+        },
+        {
+          "kind": "title",
+          "code": "0x09",
+          "title": "Round4 Industrial Area2/Round6"
+        },
+        {
+          "kind": "title",
+          "code": "0x05",
+          "title": "Round5 Bay Area1"
+        },
+        {
+          "kind": "title",
+          "code": "0x06",
+          "title": "Round5 Bay Area2"
+        },
+        {
+          "kind": "title",
+          "code": "0x07",
+          "title": "Round5 Bay Area3/Round6"
+        },
+        {
+          "kind": "title",
+          "code": "0x18",
+          "title": "All Round Clear"
+        },
+        {
+          "kind": "title",
+          "code": "0x14",
+          "title": "Ending"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "Continue"
+        },
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "Game Over"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/capcom.xml",
+      "source_order": 682,
+      "archive": "ffght68snd",
+      "id": "ffght68snd-generic-2"
+    },
+    {
+      "title": "[X68000] Final Fight(MT-32 Emulation)",
+      "driver": {
+        "name": "x68k",
+        "type": "generic",
+        "alias": "CAPCOM",
+        "platform": "SHARP X68000"
+      },
+      "options": [
+        {
+          "name": "opm_mix",
+          "value": "0xc0"
+        },
+        {
+          "name": "mfp",
+          "value": "1"
+        },
+        {
+          "name": "stop",
+          "value": "0xff"
+        },
+        {
+          "name": "dmaint",
+          "value": "1"
+        },
+        {
+          "name": "midiout",
+          "value": "1"
+        },
+        {
+          "name": "midiout_type",
+          "value": "1"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "ffght68snd.bin"
+        },
+        {
+          "type": "x",
+          "path": "M2.X",
+          "offset": "0x01000"
+        },
+        {
+          "type": "x",
+          "path": "OPM3FF.X",
+          "offset": "0x03000"
+        },
+        {
+          "type": "x",
+          "path": "M2MOPC.X",
+          "offset": "0x0A000"
+        },
+        {
+          "type": "x",
+          "path": "M2MOPC.X",
+          "offset": "0x11000"
+        },
+        {
+          "type": "x",
+          "path": "MOPV.X",
+          "offset": "0x20000"
+        },
+        {
+          "type": "x",
+          "path": "SEQ2.X",
+          "offset": "0x30000"
+        },
+        {
+          "type": "code",
+          "path": "BGM_MIDI.SLD",
+          "offset": "0x4DC7E"
+        },
+        {
+          "type": "code",
+          "path": "DRUMS.MOP",
+          "offset": "0x80000"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0xFF",
+          "title": "STOP"
+        },
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "Opening"
+        },
+        {
+          "kind": "title",
+          "code": "0x1f",
+          "title": "Credit"
+        },
+        {
+          "kind": "title",
+          "code": "0x15",
+          "title": "Character Select/Name Entry"
+        },
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "Round Start"
+        },
+        {
+          "kind": "title",
+          "code": "0x00",
+          "title": "Round1 Slum1/Round4/Round6"
+        },
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "Round1 Slum2"
+        },
+        {
+          "kind": "title",
+          "code": "0x16",
+          "title": "Round Clear"
+        },
+        {
+          "kind": "title",
+          "code": "0x02",
+          "title": "Round2 Subway Park1/Round6"
+        },
+        {
+          "kind": "title",
+          "code": "0x03",
+          "title": "Round2 Subway Park2"
+        },
+        {
+          "kind": "title",
+          "code": "0x0a",
+          "title": "BONUS Stage"
+        },
+        {
+          "kind": "title",
+          "code": "0x04",
+          "title": "Round3 West Side1"
+        },
+        {
+          "kind": "title",
+          "code": "0x08",
+          "title": "Round4 Industrial Area1"
+        },
+        {
+          "kind": "title",
+          "code": "0x09",
+          "title": "Round4 Industrial Area2/Round6"
+        },
+        {
+          "kind": "title",
+          "code": "0x05",
+          "title": "Round5 Bay Area1"
+        },
+        {
+          "kind": "title",
+          "code": "0x06",
+          "title": "Round5 Bay Area2"
+        },
+        {
+          "kind": "title",
+          "code": "0x07",
+          "title": "Round5 Bay Area3/Round6"
+        },
+        {
+          "kind": "title",
+          "code": "0x18",
+          "title": "All Round Clear"
+        },
+        {
+          "kind": "title",
+          "code": "0x14",
+          "title": "Ending"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "Continue"
+        },
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "Game Over"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/capcom.xml",
+      "source_order": 683,
+      "archive": "ffght68snd",
+      "id": "ffght68snd-generic-3"
+    }
+  ]
+}

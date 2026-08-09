@@ -1,0 +1,2199 @@
+{
+  "format": "hoot-catalog-shard",
+  "version": 1,
+  "source_file": "xml/ncs.xml",
+  "date": "2005/09/25",
+  "comments": [
+    " //NCS "
+  ],
+  "games": [
+    {
+      "title": "[PC-9801] エルスリード戦史",
+      "driver": {
+        "name": "pc98vx",
+        "type": "opn",
+        "alias": "NCS",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "bootcs",
+          "value": "0x2000"
+        },
+        {
+          "name": "bootip",
+          "value": "0xd000"
+        },
+        {
+          "name": "funcvect",
+          "value": "0x7f"
+        },
+        {
+          "name": "dataaddr",
+          "value": "0x2e000"
+        },
+        {
+          "name": "filesize",
+          "value": "0x1900"
+        },
+        {
+          "name": "datamax",
+          "value": "0x04"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "OPE",
+          "offset": "0x20000"
+        },
+        {
+          "type": "code",
+          "path": "elthlead.bin",
+          "offset": "0x2d000"
+        },
+        {
+          "type": "bgm",
+          "path": "MUDAT1",
+          "offset": "0x01"
+        },
+        {
+          "type": "bgm",
+          "path": "MUDAT2",
+          "offset": "0x02"
+        },
+        {
+          "type": "bgm",
+          "path": "MUDAT3",
+          "offset": "0x03"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x010001",
+          "title": "MUDAT1 : エルスリード オープニング"
+        },
+        {
+          "kind": "title",
+          "code": "0x020001",
+          "title": "MUDAT1 : エンディング"
+        },
+        {
+          "kind": "title",
+          "code": "0x010002",
+          "title": "MUDAT2 : ガイアの紋章 オープニング"
+        },
+        {
+          "kind": "title",
+          "code": "0x030002",
+          "title": "MUDAT2 : ガイアの紋章 メニュー"
+        },
+        {
+          "kind": "title",
+          "code": "0x040002",
+          "title": "MUDAT2 : (未使用) エルスリード 劣勢"
+        },
+        {
+          "kind": "title",
+          "code": "0x050003",
+          "title": "MUDAT3 : ガイアの紋章 BGM #00"
+        },
+        {
+          "kind": "title",
+          "code": "0x010003",
+          "title": "MUDAT3 : ガイアの紋章 BGM #01"
+        },
+        {
+          "kind": "title",
+          "code": "0x060003",
+          "title": "MUDAT3 : ガイアの紋章 BGM #02"
+        },
+        {
+          "kind": "title",
+          "code": "0x070003",
+          "title": "MUDAT3 : ガイアの紋章 BGM #03"
+        },
+        {
+          "kind": "title",
+          "code": "0x080003",
+          "title": "MUDAT3 : 効果音 00"
+        },
+        {
+          "kind": "title",
+          "code": "0x090003",
+          "title": "MUDAT3 : 効果音 01"
+        },
+        {
+          "kind": "title",
+          "code": "0x0a0003",
+          "title": "MUDAT3 : 効果音 02"
+        },
+        {
+          "kind": "title",
+          "code": "0x0b0003",
+          "title": "MUDAT3 : 効果音 03"
+        },
+        {
+          "kind": "title",
+          "code": "0x0c0003",
+          "title": "MUDAT3 : 効果音 04"
+        },
+        {
+          "kind": "title",
+          "code": "0x0d0003",
+          "title": "MUDAT3 : 効果音 05"
+        },
+        {
+          "kind": "title",
+          "code": "0x0e0003",
+          "title": "MUDAT3 : 効果音 06"
+        },
+        {
+          "kind": "title",
+          "code": "0x0f0003",
+          "title": "MUDAT3 : 効果音 07"
+        },
+        {
+          "kind": "title",
+          "code": "0x100003",
+          "title": "MUDAT3 : 効果音 08"
+        },
+        {
+          "kind": "title",
+          "code": "0x110003",
+          "title": "MUDAT3 : 効果音 09"
+        },
+        {
+          "kind": "title",
+          "code": "0x120003",
+          "title": "MUDAT3 : 効果音 10"
+        },
+        {
+          "kind": "title",
+          "code": "0x130003",
+          "title": "MUDAT3 : 効果音 11"
+        },
+        {
+          "kind": "title",
+          "code": "0x140003",
+          "title": "MUDAT3 : 効果音 12"
+        },
+        {
+          "kind": "title",
+          "code": "0x150003",
+          "title": "MUDAT3 : 効果音 13"
+        },
+        {
+          "kind": "title",
+          "code": "0x160003",
+          "title": "MUDAT3 : 効果音 14"
+        },
+        {
+          "kind": "title",
+          "code": "0x170003",
+          "title": "MUDAT3 : 効果音 15"
+        },
+        {
+          "kind": "title",
+          "code": "0x180003",
+          "title": "MUDAT3 : 効果音 16"
+        },
+        {
+          "kind": "title",
+          "code": "0x190003",
+          "title": "MUDAT3 : 効果音 17"
+        },
+        {
+          "kind": "title",
+          "code": "0x1a0003",
+          "title": "MUDAT3 : 効果音 18"
+        },
+        {
+          "kind": "title",
+          "code": "0x1b0003",
+          "title": "MUDAT3 : 効果音 19"
+        },
+        {
+          "kind": "title",
+          "code": "0x1c0003",
+          "title": "MUDAT3 : 効果音 20"
+        },
+        {
+          "kind": "title",
+          "code": "0x1d0003",
+          "title": "MUDAT3 : 効果音 21"
+        },
+        {
+          "kind": "title",
+          "code": "0x1e0003",
+          "title": "MUDAT3 : 効果音 22"
+        },
+        {
+          "kind": "title",
+          "code": "0x1f0003",
+          "title": "MUDAT3 : 効果音 23"
+        },
+        {
+          "kind": "title",
+          "code": "0x200003",
+          "title": "MUDAT3 : 効果音 24"
+        },
+        {
+          "kind": "title",
+          "code": "0x210003",
+          "title": "MUDAT3 : 効果音 25"
+        },
+        {
+          "kind": "title",
+          "code": "0x220003",
+          "title": "MUDAT3 : 効果音 26"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/ncs.xml",
+      "source_order": 3403,
+      "archive": "elthlead98",
+      "id": "elthlead98-opn"
+    },
+    {
+      "title": "[PC-9801] ライトニングバッカス - THE KNIGHT of IRON -",
+      "driver": {
+        "name": "pc98vx",
+        "type": "opn",
+        "alias": "NCS",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "bootcs",
+          "value": "0x0100"
+        },
+        {
+          "name": "bootip",
+          "value": "0x0000"
+        },
+        {
+          "name": "funcvect",
+          "value": "0x7f"
+        },
+        {
+          "name": "dummysndrom",
+          "value": "1"
+        },
+        {
+          "name": "clockmul",
+          "value": "8"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "lvaccus.bin",
+          "offset": "0x01000"
+        },
+        {
+          "type": "code",
+          "path": "COMMAND.COM",
+          "offset": "0x01100"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "comment",
+          "text": " crc32 = 0x869327d7 (1st version) "
+        },
+        {
+          "kind": "comment",
+          "text": "\t<title code=\"0xa58f0000\">演奏停止</title> "
+        },
+        {
+          "kind": "title",
+          "code": "0xa5aa0000",
+          "title": "オープニング"
+        },
+        {
+          "kind": "title",
+          "code": "0xa5c50000",
+          "title": "メインBGM"
+        },
+        {
+          "kind": "title",
+          "code": "0xa5e00000",
+          "title": "クリア"
+        },
+        {
+          "kind": "title",
+          "code": "0xa5fb0000",
+          "title": "作戦失敗"
+        },
+        {
+          "kind": "title",
+          "code": "0xa6160000",
+          "title": "中隊日誌 / スタッフロール"
+        },
+        {
+          "kind": "comment",
+          "text": " crc32 = 0xcada4e5e (another version) "
+        },
+        {
+          "kind": "comment",
+          "text": "\t<title code=\"0xa64f0000\">演奏停止</title>\n\t\t\t<title code=\"0xa66a0000\">オープニング</title>\n\t\t\t<title code=\"0xa6850000\">メインBGM</title>\n\t\t\t<title code=\"0xa6a00000\">クリア</title>\n\t\t\t<title code=\"0xa6bb0000\">作戦失敗</title>\n\t\t\t<title code=\"0xa6d60000\">中隊日誌 / スタッフロール</title> "
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/ncs.xml",
+      "source_order": 3404,
+      "archive": "lvaccus98",
+      "id": "lvaccus98-opn"
+    },
+    {
+      "title": "[PC-8801] Mr.BUMP",
+      "driver": {
+        "name": "pc88",
+        "type": "opn",
+        "alias": "NCS",
+        "platform": "NEC PC-8801"
+      },
+      "options": [
+        {
+          "name": "mdata_addr",
+          "value": "0xe7fd"
+        },
+        {
+          "name": "mdata_size",
+          "value": "0x1600"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "PATCH",
+          "offset": "0x0000"
+        },
+        {
+          "type": "bgm",
+          "path": "MDAT01",
+          "offset": "0x00"
+        },
+        {
+          "type": "bgm",
+          "path": "MDAT02",
+          "offset": "0x01"
+        },
+        {
+          "type": "bgm",
+          "path": "MDAT03",
+          "offset": "0x02"
+        },
+        {
+          "type": "bgm",
+          "path": "MDAT04",
+          "offset": "0x03"
+        },
+        {
+          "type": "bgm",
+          "path": "MDAT05",
+          "offset": "0x04"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "MUS01 : Opening"
+        },
+        {
+          "kind": "title",
+          "code": "0x02",
+          "title": "MUS02 : Area"
+        },
+        {
+          "kind": "title",
+          "code": "0x00",
+          "title": "MUS03 : Demo?"
+        },
+        {
+          "kind": "title",
+          "code": "0x03",
+          "title": "MUS04 : Demo?"
+        },
+        {
+          "kind": "title",
+          "code": "0x04",
+          "title": "MUS05 : GameOver"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/ncs.xml",
+      "source_order": 3405,
+      "archive": "bump",
+      "id": "bump-opn"
+    },
+    {
+      "title": "[PC-8801] エルスリード",
+      "driver": {
+        "name": "pc88",
+        "type": "opn",
+        "alias": "NCS",
+        "platform": "NEC PC-8801"
+      },
+      "options": [
+        {
+          "name": "mdata_addr",
+          "value": "0xc000"
+        },
+        {
+          "name": "mdata_size",
+          "value": "0x2400"
+        },
+        {
+          "name": "mfile_size",
+          "value": "0x2400"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "PATCH",
+          "offset": "0x0000"
+        },
+        {
+          "type": "code",
+          "path": "DRIVER1",
+          "offset": "0xa000"
+        },
+        {
+          "type": "code",
+          "path": "DRIVER2",
+          "offset": "0xa800"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS00",
+          "offset": "0x00"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS01",
+          "offset": "0x01"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x18000000",
+          "title": "演奏停止"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000000",
+          "title": "オープニング"
+        },
+        {
+          "kind": "title",
+          "code": "0x02000001",
+          "title": "エルスリード軍BGM"
+        },
+        {
+          "kind": "title",
+          "code": "0x03000001",
+          "title": "ヴェルゼリア軍BGM"
+        },
+        {
+          "kind": "title",
+          "code": "0x04000001",
+          "title": "エルスリード軍BGM2"
+        },
+        {
+          "kind": "title",
+          "code": "0x01000000",
+          "title": "エンディング"
+        },
+        {
+          "kind": "title",
+          "code": "0x05000001",
+          "title": "効果音#00"
+        },
+        {
+          "kind": "title",
+          "code": "0x06000001",
+          "title": "効果音#01"
+        },
+        {
+          "kind": "title",
+          "code": "0x07000001",
+          "title": "効果音#02"
+        },
+        {
+          "kind": "title",
+          "code": "0x0b000001",
+          "title": "効果音#03"
+        },
+        {
+          "kind": "title",
+          "code": "0x0c000001",
+          "title": "効果音#04"
+        },
+        {
+          "kind": "title",
+          "code": "0x0d000001",
+          "title": "効果音#05"
+        },
+        {
+          "kind": "title",
+          "code": "0x0e000001",
+          "title": "効果音#06"
+        },
+        {
+          "kind": "title",
+          "code": "0x0f000001",
+          "title": "効果音#07"
+        },
+        {
+          "kind": "title",
+          "code": "0x10000001",
+          "title": "効果音#08"
+        },
+        {
+          "kind": "title",
+          "code": "0x11000001",
+          "title": "効果音#09"
+        },
+        {
+          "kind": "title",
+          "code": "0x12000001",
+          "title": "効果音#10"
+        },
+        {
+          "kind": "title",
+          "code": "0x13000001",
+          "title": "効果音#11"
+        },
+        {
+          "kind": "title",
+          "code": "0x14000001",
+          "title": "効果音#12"
+        },
+        {
+          "kind": "title",
+          "code": "0x15000001",
+          "title": "効果音#13"
+        },
+        {
+          "kind": "title",
+          "code": "0x16000001",
+          "title": "効果音#14"
+        },
+        {
+          "kind": "title",
+          "code": "0x17000001",
+          "title": "効果音#15"
+        },
+        {
+          "kind": "title",
+          "code": "0x19000001",
+          "title": "効果音#16"
+        },
+        {
+          "kind": "title",
+          "code": "0x1a000001",
+          "title": "効果音#17"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/ncs.xml",
+      "source_order": 3406,
+      "archive": "elthlead",
+      "id": "elthlead-opn"
+    },
+    {
+      "title": "[PC-8801] ガイアの紋章",
+      "driver": {
+        "name": "pc88",
+        "type": "opn",
+        "alias": "NCS",
+        "platform": "NEC PC-8801"
+      },
+      "options": [
+        {
+          "name": "mdata_addr",
+          "value": "0xc000"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "PATCH",
+          "offset": "0x0000"
+        },
+        {
+          "type": "code",
+          "path": "DRIVER1",
+          "offset": "0xa000"
+        },
+        {
+          "type": "code",
+          "path": "DRIVER2",
+          "offset": "0xa800"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS00",
+          "offset": "0x00"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS01",
+          "offset": "0x01"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS02",
+          "offset": "0x02"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x31000000",
+          "title": "演奏停止"
+        },
+        {
+          "kind": "comment",
+          "text": "\t<title code=\"0x30000002\">効果音停止</title> "
+        },
+        {
+          "kind": "title",
+          "code": "0x02000001",
+          "title": "オープニング"
+        },
+        {
+          "kind": "title",
+          "code": "0x03000001",
+          "title": "メニュー"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000000",
+          "title": "勝利"
+        },
+        {
+          "kind": "title",
+          "code": "0x04000001",
+          "title": "敗北"
+        },
+        {
+          "kind": "title",
+          "code": "0x06000002",
+          "title": "BGM 1"
+        },
+        {
+          "kind": "title",
+          "code": "0x07000002",
+          "title": "BGM 2"
+        },
+        {
+          "kind": "title",
+          "code": "0x08000002",
+          "title": "BGM 3"
+        },
+        {
+          "kind": "title",
+          "code": "0x01000000",
+          "title": "エンディング"
+        },
+        {
+          "kind": "title",
+          "code": "0x09000002",
+          "title": "効果音#00"
+        },
+        {
+          "kind": "title",
+          "code": "0x0a000002",
+          "title": "効果音#01"
+        },
+        {
+          "kind": "title",
+          "code": "0x0b000002",
+          "title": "効果音#02"
+        },
+        {
+          "kind": "title",
+          "code": "0x0c000002",
+          "title": "効果音#03"
+        },
+        {
+          "kind": "title",
+          "code": "0x0d000002",
+          "title": "効果音#04"
+        },
+        {
+          "kind": "title",
+          "code": "0x0e000002",
+          "title": "効果音#05"
+        },
+        {
+          "kind": "title",
+          "code": "0x0f000002",
+          "title": "効果音#06"
+        },
+        {
+          "kind": "title",
+          "code": "0x10000002",
+          "title": "効果音#07"
+        },
+        {
+          "kind": "title",
+          "code": "0x11000002",
+          "title": "効果音#08"
+        },
+        {
+          "kind": "title",
+          "code": "0x12000002",
+          "title": "効果音#09"
+        },
+        {
+          "kind": "title",
+          "code": "0x13000002",
+          "title": "効果音#10"
+        },
+        {
+          "kind": "title",
+          "code": "0x19000002",
+          "title": "効果音#11"
+        },
+        {
+          "kind": "title",
+          "code": "0x20000002",
+          "title": "効果音#12"
+        },
+        {
+          "kind": "title",
+          "code": "0x21000002",
+          "title": "効果音#13"
+        },
+        {
+          "kind": "title",
+          "code": "0x22000002",
+          "title": "効果音#14"
+        },
+        {
+          "kind": "title",
+          "code": "0x25000002",
+          "title": "効果音#15"
+        },
+        {
+          "kind": "title",
+          "code": "0x26000002",
+          "title": "効果音#16"
+        },
+        {
+          "kind": "title",
+          "code": "0x27000002",
+          "title": "効果音#17"
+        },
+        {
+          "kind": "title",
+          "code": "0x28000002",
+          "title": "効果音#18"
+        },
+        {
+          "kind": "title",
+          "code": "0x29000002",
+          "title": "効果音#19"
+        },
+        {
+          "kind": "title",
+          "code": "0x2d000002",
+          "title": "効果音#20"
+        },
+        {
+          "kind": "title",
+          "code": "0x2e000002",
+          "title": "効果音#21"
+        },
+        {
+          "kind": "comment",
+          "text": "\t<title code=\"0x32000002\">効果音#22</title> "
+        },
+        {
+          "kind": "comment",
+          "text": "\t<title code=\"0x33000002\">効果音#23</title> "
+        },
+        {
+          "kind": "comment",
+          "text": "\t<title code=\"0x34000002\">効果音#24</title> "
+        },
+        {
+          "kind": "comment",
+          "text": "\t<title code=\"0x38000002\">効果音#25</title> "
+        },
+        {
+          "kind": "comment",
+          "text": "\t<title code=\"0x39000002\">効果音#26</title> "
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/ncs.xml",
+      "source_order": 3407,
+      "archive": "gaia88",
+      "id": "gaia88-opn"
+    },
+    {
+      "title": "[PC-8801] ガイフレーム",
+      "driver": {
+        "name": "pc88",
+        "type": "opn",
+        "alias": "NCS",
+        "platform": "NEC PC-8801"
+      },
+      "options": [
+        {
+          "name": "mdata_addr",
+          "value": "0x1000"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "PATCH",
+          "offset": "0x0000"
+        },
+        {
+          "type": "code",
+          "path": "DRIVER",
+          "offset": "0x0500"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS00",
+          "offset": "0x00"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS01",
+          "offset": "0x01"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS02",
+          "offset": "0x02"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS03",
+          "offset": "0x10"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS04",
+          "offset": "0x11"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS05",
+          "offset": "0x12"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x01000000",
+          "title": "MUS00"
+        },
+        {
+          "kind": "title",
+          "code": "0x02000000",
+          "title": "MUS00"
+        },
+        {
+          "kind": "title",
+          "code": "0x01000001",
+          "title": "MUS01"
+        },
+        {
+          "kind": "title",
+          "code": "0x01000002",
+          "title": "MUS02"
+        },
+        {
+          "kind": "title",
+          "code": "0x06000010",
+          "title": "MUS03"
+        },
+        {
+          "kind": "title",
+          "code": "0x06000011",
+          "title": "MUS04"
+        },
+        {
+          "kind": "title",
+          "code": "0x01000012",
+          "title": "MUS05"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/ncs.xml",
+      "source_order": 3408,
+      "archive": "gaiflame",
+      "id": "gaiflame-opn"
+    },
+    {
+      "title": "[PC-8801] ライトニングバッカス - THE KNIGHT of IRON -",
+      "driver": {
+        "name": "pc88",
+        "type": "opn",
+        "alias": "NCS",
+        "platform": "NEC PC-8801"
+      },
+      "options": [
+        {
+          "name": "mdata_addr",
+          "value": "0xa200"
+        },
+        {
+          "name": "use_vrtc",
+          "value": "0x01"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "PATCH",
+          "offset": "0x0000"
+        },
+        {
+          "type": "code",
+          "path": "N88_3.ROM",
+          "offset": "0x6000"
+        },
+        {
+          "type": "code",
+          "path": "DRIVER",
+          "offset": "0x9800"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS00",
+          "offset": "0x00"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS01",
+          "offset": "0x01"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS02",
+          "offset": "0x02"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS03",
+          "offset": "0x03"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS04",
+          "offset": "0x04"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x01000000",
+          "title": "00-01 : オープニング"
+        },
+        {
+          "kind": "title",
+          "code": "0x01000001",
+          "title": "01-01 : メインBGM"
+        },
+        {
+          "kind": "title",
+          "code": "0x01000002",
+          "title": "02-01 : クリア"
+        },
+        {
+          "kind": "title",
+          "code": "0x01000003",
+          "title": "03-01 : 作戦失敗"
+        },
+        {
+          "kind": "title",
+          "code": "0x01000004",
+          "title": "04-00 : 中隊日誌 / スタッフロール"
+        },
+        {
+          "kind": "title",
+          "code": "0x02000001",
+          "title": "01-02 : 爆発音"
+        },
+        {
+          "kind": "title",
+          "code": "0x0b000001",
+          "title": "01-0b : 効果音#1"
+        },
+        {
+          "kind": "title",
+          "code": "0x0c000001",
+          "title": "01-0c : 効果音#2"
+        },
+        {
+          "kind": "title",
+          "code": "0x0d000001",
+          "title": "01-0d : 効果音#3"
+        },
+        {
+          "kind": "comment",
+          "text": "\t<title code=\"0x02000004\">04-01 : 爆発音</title> "
+        },
+        {
+          "kind": "comment",
+          "text": "\t<title code=\"0x0b000004\">04-0b : 効果音#1</title> "
+        },
+        {
+          "kind": "comment",
+          "text": "\t<title code=\"0x0c000004\">04-0c : 効果音#2</title> "
+        },
+        {
+          "kind": "comment",
+          "text": "\t<title code=\"0x0d000004\">04-0d : 効果音#3</title> "
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/ncs.xml",
+      "source_order": 3409,
+      "archive": "lvaccus",
+      "id": "lvaccus-opn"
+    },
+    {
+      "title": "[X1] ガイアの紋章(OPM)",
+      "driver": {
+        "name": "x1",
+        "type": "opm",
+        "alias": "NCS",
+        "platform": "SHARP X1"
+      },
+      "options": [
+        {
+          "name": "mdata_addr",
+          "value": "0xc000"
+        },
+        {
+          "name": "mdata_size",
+          "value": "0x3000"
+        },
+        {
+          "name": "mfile_size",
+          "value": "0x3000"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "PATCH",
+          "offset": "0x0000"
+        },
+        {
+          "type": "code",
+          "path": "DRIVER1",
+          "offset": "0xa000"
+        },
+        {
+          "type": "code",
+          "path": "DRIVER2",
+          "offset": "0xa800"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS00",
+          "offset": "0x00"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS01",
+          "offset": "0x01"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS02",
+          "offset": "0x02"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x06000001",
+          "title": "#01-06 オープニング"
+        },
+        {
+          "kind": "title",
+          "code": "0x03000001",
+          "title": "#01-03 メニュー"
+        },
+        {
+          "kind": "title",
+          "code": "0x05000002",
+          "title": "#02-05 BGM 1"
+        },
+        {
+          "kind": "title",
+          "code": "0x07000002",
+          "title": "#02-07 BGM 2"
+        },
+        {
+          "kind": "title",
+          "code": "0x08000002",
+          "title": "#02-08 BGM 3"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000000",
+          "title": "#00-00 勝利"
+        },
+        {
+          "kind": "comment",
+          "text": "\t<title code=\"0x02000000\">#00-02 勝利</title> "
+        },
+        {
+          "kind": "title",
+          "code": "0x04000001",
+          "title": "#01-04 敗北"
+        },
+        {
+          "kind": "title",
+          "code": "0x01000000",
+          "title": "#00-01 エンディング"
+        },
+        {
+          "kind": "title",
+          "code": "0x09000002",
+          "title": "#02-09 効果音"
+        },
+        {
+          "kind": "title",
+          "code": "0x0a000002",
+          "title": "#02-0a 効果音"
+        },
+        {
+          "kind": "title",
+          "code": "0x0b000002",
+          "title": "#02-0b 効果音"
+        },
+        {
+          "kind": "title",
+          "code": "0x0c000002",
+          "title": "#02-0c 効果音"
+        },
+        {
+          "kind": "title",
+          "code": "0x0d000002",
+          "title": "#02-0d 効果音"
+        },
+        {
+          "kind": "title",
+          "code": "0x0e000002",
+          "title": "#02-0e 効果音"
+        },
+        {
+          "kind": "title",
+          "code": "0x0f000002",
+          "title": "#02-0f 効果音"
+        },
+        {
+          "kind": "title",
+          "code": "0x10000002",
+          "title": "#02-10 効果音"
+        },
+        {
+          "kind": "title",
+          "code": "0x11000002",
+          "title": "#02-11 効果音"
+        },
+        {
+          "kind": "title",
+          "code": "0x12000002",
+          "title": "#02-12 効果音"
+        },
+        {
+          "kind": "title",
+          "code": "0x13000002",
+          "title": "#02-13 効果音"
+        },
+        {
+          "kind": "title",
+          "code": "0x19000002",
+          "title": "#02-19 効果音"
+        },
+        {
+          "kind": "title",
+          "code": "0x1a000002",
+          "title": "#02-1a 効果音"
+        },
+        {
+          "kind": "title",
+          "code": "0x1b000002",
+          "title": "#02-1b 効果音"
+        },
+        {
+          "kind": "title",
+          "code": "0x1c000002",
+          "title": "#02-1c 効果音"
+        },
+        {
+          "kind": "title",
+          "code": "0x1d000002",
+          "title": "#02-1d 効果音"
+        },
+        {
+          "kind": "title",
+          "code": "0x1e000002",
+          "title": "#02-1e 効果音"
+        },
+        {
+          "kind": "title",
+          "code": "0x1f000002",
+          "title": "#02-1f 効果音"
+        },
+        {
+          "kind": "title",
+          "code": "0x20000002",
+          "title": "#02-20 効果音"
+        },
+        {
+          "kind": "title",
+          "code": "0x21000002",
+          "title": "#02-21 効果音"
+        },
+        {
+          "kind": "title",
+          "code": "0x25000002",
+          "title": "#02-25 効果音"
+        },
+        {
+          "kind": "title",
+          "code": "0x26000002",
+          "title": "#02-26 効果音"
+        },
+        {
+          "kind": "title",
+          "code": "0x27000002",
+          "title": "#02-27 効果音"
+        },
+        {
+          "kind": "title",
+          "code": "0x28000002",
+          "title": "#02-28 効果音"
+        },
+        {
+          "kind": "title",
+          "code": "0x29000002",
+          "title": "#02-29 効果音"
+        },
+        {
+          "kind": "title",
+          "code": "0x2d000002",
+          "title": "#02-2d 効果音"
+        },
+        {
+          "kind": "title",
+          "code": "0x2e000002",
+          "title": "#02-2e 効果音"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/ncs.xml",
+      "source_order": 3410,
+      "archive": "x1gaia",
+      "id": "x1gaia-opm"
+    },
+    {
+      "title": "[X1] ガイアの紋章(PSG)",
+      "driver": {
+        "name": "x1",
+        "type": "psg",
+        "alias": "NCS",
+        "platform": "SHARP X1"
+      },
+      "options": [
+        {
+          "name": "mdata_addr",
+          "value": "0xc000"
+        },
+        {
+          "name": "mdata_size",
+          "value": "0x2a00"
+        },
+        {
+          "name": "mfile_size",
+          "value": "0x2a00"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "PATCH",
+          "offset": "0x0000"
+        },
+        {
+          "type": "code",
+          "path": "DRIVER1",
+          "offset": "0xa000"
+        },
+        {
+          "type": "code",
+          "path": "DRIVER2",
+          "offset": "0xa800"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS00",
+          "offset": "0x00"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS01",
+          "offset": "0x01"
+        },
+        {
+          "type": "bgm",
+          "path": "MUS02",
+          "offset": "0x02"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x06000001",
+          "title": "#01-06 オープニング"
+        },
+        {
+          "kind": "title",
+          "code": "0x03000001",
+          "title": "#01-03 メニュー"
+        },
+        {
+          "kind": "title",
+          "code": "0x05000002",
+          "title": "#02-05 BGM 1"
+        },
+        {
+          "kind": "title",
+          "code": "0x07000002",
+          "title": "#02-07 BGM 2"
+        },
+        {
+          "kind": "title",
+          "code": "0x08000002",
+          "title": "#02-08 BGM 3"
+        },
+        {
+          "kind": "title",
+          "code": "0x00000000",
+          "title": "#00-00 勝利"
+        },
+        {
+          "kind": "comment",
+          "text": "\t<title code=\"0x02000000\">#00-02 勝利</title> "
+        },
+        {
+          "kind": "title",
+          "code": "0x04000001",
+          "title": "#01-04 敗北"
+        },
+        {
+          "kind": "title",
+          "code": "0x01000000",
+          "title": "#00-01 エンディング"
+        },
+        {
+          "kind": "title",
+          "code": "0x09000002",
+          "title": "#02-09 効果音"
+        },
+        {
+          "kind": "title",
+          "code": "0x0a000002",
+          "title": "#02-0a 効果音"
+        },
+        {
+          "kind": "title",
+          "code": "0x0b000002",
+          "title": "#02-0b 効果音"
+        },
+        {
+          "kind": "title",
+          "code": "0x0c000002",
+          "title": "#02-0c 効果音"
+        },
+        {
+          "kind": "title",
+          "code": "0x0d000002",
+          "title": "#02-0d 効果音"
+        },
+        {
+          "kind": "title",
+          "code": "0x0e000002",
+          "title": "#02-0e 効果音"
+        },
+        {
+          "kind": "title",
+          "code": "0x0f000002",
+          "title": "#02-0f 効果音"
+        },
+        {
+          "kind": "title",
+          "code": "0x10000002",
+          "title": "#02-10 効果音"
+        },
+        {
+          "kind": "title",
+          "code": "0x11000002",
+          "title": "#02-11 効果音"
+        },
+        {
+          "kind": "title",
+          "code": "0x12000002",
+          "title": "#02-12 効果音"
+        },
+        {
+          "kind": "title",
+          "code": "0x13000002",
+          "title": "#02-13 効果音"
+        },
+        {
+          "kind": "title",
+          "code": "0x19000002",
+          "title": "#02-19 効果音"
+        },
+        {
+          "kind": "title",
+          "code": "0x1a000002",
+          "title": "#02-1a 効果音"
+        },
+        {
+          "kind": "title",
+          "code": "0x1b000002",
+          "title": "#02-1b 効果音"
+        },
+        {
+          "kind": "title",
+          "code": "0x1c000002",
+          "title": "#02-1c 効果音"
+        },
+        {
+          "kind": "title",
+          "code": "0x1d000002",
+          "title": "#02-1d 効果音"
+        },
+        {
+          "kind": "title",
+          "code": "0x1e000002",
+          "title": "#02-1e 効果音"
+        },
+        {
+          "kind": "title",
+          "code": "0x1f000002",
+          "title": "#02-1f 効果音"
+        },
+        {
+          "kind": "title",
+          "code": "0x20000002",
+          "title": "#02-20 効果音"
+        },
+        {
+          "kind": "title",
+          "code": "0x21000002",
+          "title": "#02-21 効果音"
+        },
+        {
+          "kind": "title",
+          "code": "0x25000002",
+          "title": "#02-25 効果音"
+        },
+        {
+          "kind": "title",
+          "code": "0x26000002",
+          "title": "#02-26 効果音"
+        },
+        {
+          "kind": "title",
+          "code": "0x27000002",
+          "title": "#02-27 効果音"
+        },
+        {
+          "kind": "title",
+          "code": "0x28000002",
+          "title": "#02-28 効果音"
+        },
+        {
+          "kind": "title",
+          "code": "0x29000002",
+          "title": "#02-29 効果音"
+        },
+        {
+          "kind": "title",
+          "code": "0x2d000002",
+          "title": "#02-2d 効果音"
+        },
+        {
+          "kind": "title",
+          "code": "0x2e000002",
+          "title": "#02-2e 効果音"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/ncs.xml",
+      "source_order": 3411,
+      "archive": "x1gaia",
+      "id": "x1gaia-psg"
+    },
+    {
+      "title": "[X68000] History of Elthlead",
+      "driver": {
+        "name": "x68k",
+        "type": "generic",
+        "alias": "NCS",
+        "platform": "SHARP X68000"
+      },
+      "options": [
+        {
+          "name": "mfp",
+          "value": "0x01"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "els68snd.bin"
+        },
+        {
+          "type": "x",
+          "path": "OPMDRV.X",
+          "offset": "0x010000"
+        },
+        {
+          "type": "x",
+          "path": "dum.x",
+          "offset": "0x030000"
+        },
+        {
+          "type": "code",
+          "path": "tk1.dat",
+          "offset": "0x0c0000"
+        },
+        {
+          "type": "code",
+          "path": "tk2.dat",
+          "offset": "0x0c1000"
+        },
+        {
+          "type": "code",
+          "path": "tk3.dat",
+          "offset": "0x0c2000"
+        },
+        {
+          "type": "code",
+          "path": "tk4.dat",
+          "offset": "0x0c3000"
+        },
+        {
+          "type": "code",
+          "path": "tk5.dat",
+          "offset": "0x0c4000"
+        },
+        {
+          "type": "code",
+          "path": "tk6.dat",
+          "offset": "0x0c5000"
+        },
+        {
+          "type": "code",
+          "path": "tk10.dat",
+          "offset": "0x0c6000"
+        },
+        {
+          "type": "code",
+          "path": "tk11.dat",
+          "offset": "0x0c7000"
+        },
+        {
+          "type": "code",
+          "path": "tk13.dat",
+          "offset": "0x0c8000"
+        },
+        {
+          "type": "code",
+          "path": "tk15.dat",
+          "offset": "0x0c9000"
+        },
+        {
+          "type": "code",
+          "path": "tk16.dat",
+          "offset": "0x0ca000"
+        },
+        {
+          "type": "code",
+          "path": "tk17.dat",
+          "offset": "0x0cb000"
+        },
+        {
+          "type": "code",
+          "path": "tk18.dat",
+          "offset": "0x0cc000"
+        },
+        {
+          "type": "code",
+          "path": "tk19.dat",
+          "offset": "0x0cd000"
+        },
+        {
+          "type": "code",
+          "path": "tk20.dat",
+          "offset": "0x0ce000"
+        },
+        {
+          "type": "x",
+          "path": "load.x",
+          "offset": "0x0d0000"
+        },
+        {
+          "type": "x",
+          "path": "make1.x",
+          "offset": "0x120000"
+        },
+        {
+          "type": "x",
+          "path": "win1.x",
+          "offset": "0x140000"
+        },
+        {
+          "type": "x",
+          "path": "win2.x",
+          "offset": "0x190000"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "load.x   : (演奏まで時間かかります)"
+        },
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "tk1.dat  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x02",
+          "title": "tk2.dat  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x03",
+          "title": "tk3.dat  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x04",
+          "title": "tk4.dat  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x05",
+          "title": "tk5.dat  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x06",
+          "title": "tk6.dat  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x07",
+          "title": "tk10.dat :"
+        },
+        {
+          "kind": "title",
+          "code": "0x08",
+          "title": "tk11.dat :"
+        },
+        {
+          "kind": "title",
+          "code": "0x09",
+          "title": "tk13.dat :"
+        },
+        {
+          "kind": "title",
+          "code": "0x0a",
+          "title": "tk15.dat :"
+        },
+        {
+          "kind": "title",
+          "code": "0x0b",
+          "title": "tk16.dat :"
+        },
+        {
+          "kind": "title",
+          "code": "0x0c",
+          "title": "tk17.dat :"
+        },
+        {
+          "kind": "title",
+          "code": "0x0d",
+          "title": "tk18.dat :"
+        },
+        {
+          "kind": "title",
+          "code": "0x0e",
+          "title": "tk19.dat :"
+        },
+        {
+          "kind": "title",
+          "code": "0x0f",
+          "title": "tk20.dat :"
+        },
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "make1.x  :"
+        },
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "win1.x   :"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "win2.x   :"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/ncs.xml",
+      "source_order": 3412,
+      "archive": "hofe68snd",
+      "id": "hofe68snd-generic"
+    },
+    {
+      "title": "[X68000] SIGNATORY -調印者-",
+      "driver": {
+        "name": "x68k",
+        "type": "generic",
+        "alias": "NCS",
+        "platform": "SHARP X68000"
+      },
+      "options": [
+        {
+          "name": "opm_mix",
+          "value": "0x100"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "opmdrv.bin"
+        },
+        {
+          "type": "x",
+          "path": "OPMDRV.X",
+          "offset": "0x08000"
+        },
+        {
+          "type": "code",
+          "path": "BYON.ONG",
+          "offset": "0x2c000"
+        },
+        {
+          "type": "code",
+          "path": "M_00B.ONG",
+          "offset": "0x30000"
+        },
+        {
+          "type": "code",
+          "path": "M_01.ONG",
+          "offset": "0x34000"
+        },
+        {
+          "type": "code",
+          "path": "M_01B.ONG",
+          "offset": "0x38000"
+        },
+        {
+          "type": "code",
+          "path": "M_02.ONG",
+          "offset": "0x3c000"
+        },
+        {
+          "type": "code",
+          "path": "M_03B.ONG",
+          "offset": "0x40000"
+        },
+        {
+          "type": "code",
+          "path": "M_04.ONG",
+          "offset": "0x44000"
+        },
+        {
+          "type": "code",
+          "path": "M_05.ONG",
+          "offset": "0x48000"
+        },
+        {
+          "type": "code",
+          "path": "M_06.ONG",
+          "offset": "0x4c000"
+        },
+        {
+          "type": "code",
+          "path": "M_06B.ONG",
+          "offset": "0x50000"
+        },
+        {
+          "type": "code",
+          "path": "M_07.ONG",
+          "offset": "0x54000"
+        },
+        {
+          "type": "code",
+          "path": "M_08.ONG",
+          "offset": "0x58000"
+        },
+        {
+          "type": "code",
+          "path": "M_09.ONG",
+          "offset": "0x5c000"
+        },
+        {
+          "type": "code",
+          "path": "M_10B.ONG",
+          "offset": "0x60000"
+        },
+        {
+          "type": "code",
+          "path": "M_11.ONG",
+          "offset": "0x64000"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x0004",
+          "title": "BYON.ONG  : NCSロゴ"
+        },
+        {
+          "kind": "title",
+          "code": "0x0005",
+          "title": "M_00B.ONG : シグナトリーのテーマ"
+        },
+        {
+          "kind": "title",
+          "code": "0x0007",
+          "title": "M_01B.ONG : NYのテーマ"
+        },
+        {
+          "kind": "title",
+          "code": "0x0008",
+          "title": "M_02.ONG  : 夜のセントラルパーク"
+        },
+        {
+          "kind": "title",
+          "code": "0x0009",
+          "title": "M_03B.ONG : 1945・ベルリン"
+        },
+        {
+          "kind": "title",
+          "code": "0x000a",
+          "title": "M_04.ONG  : 2039・Gキャニオン"
+        },
+        {
+          "kind": "title",
+          "code": "0x000b",
+          "title": "M_05.ONG  : チリ基地を攻撃せよ"
+        },
+        {
+          "kind": "title",
+          "code": "0x000c",
+          "title": "M_06.ONG  : ヒトラー去る"
+        },
+        {
+          "kind": "title",
+          "code": "0x000e",
+          "title": "M_07.ONG  : 戦闘/BGM"
+        },
+        {
+          "kind": "title",
+          "code": "0x000f",
+          "title": "M_08.ONG  : 戦闘/負けた..."
+        },
+        {
+          "kind": "title",
+          "code": "0x0010",
+          "title": "M_09.ONG  : 戦闘/勝った!!!"
+        },
+        {
+          "kind": "title",
+          "code": "0x0011",
+          "title": "M_10B.ONG : ムード曲(笑)"
+        },
+        {
+          "kind": "title",
+          "code": "0x0012",
+          "title": "M_11.ONG  : ワープ!!"
+        },
+        {
+          "kind": "title",
+          "code": "0x0006",
+          "title": "M_01.ONG  : LNのテーマ"
+        },
+        {
+          "kind": "title",
+          "code": "0x000d",
+          "title": "M_06B.ONG : エンディングクレジット"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/ncs.xml",
+      "source_order": 3413,
+      "archive": "sig68snd",
+      "id": "sig68snd-generic"
+    },
+    {
+      "title": "[X68000] ライトニングバッカス - THE KNIGHT of IRON -",
+      "driver": {
+        "name": "x68k",
+        "type": "generic",
+        "alias": "NCS",
+        "platform": "SHARP X68000"
+      },
+      "options": [],
+      "assets": [
+        {
+          "type": "code",
+          "path": "lb68snd.bin"
+        },
+        {
+          "type": "code",
+          "path": "bsound.r",
+          "offset": "0x08000"
+        },
+        {
+          "type": "code",
+          "path": "music.dta",
+          "offset": "0x10000"
+        },
+        {
+          "type": "code",
+          "path": "adpcm.dta",
+          "offset": "0x30000"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x101",
+          "title": "オープニング"
+        },
+        {
+          "kind": "title",
+          "code": "0x103",
+          "title": "デモ"
+        },
+        {
+          "kind": "title",
+          "code": "0x102",
+          "title": "部隊編成モード"
+        },
+        {
+          "kind": "title",
+          "code": "0x105",
+          "title": "メインテーマ"
+        },
+        {
+          "kind": "title",
+          "code": "0x104",
+          "title": "シナリオクリア"
+        },
+        {
+          "kind": "title",
+          "code": "0x106",
+          "title": "ゲームオーバー"
+        },
+        {
+          "kind": "title",
+          "code": "0x107",
+          "title": "エンディング"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/ncs.xml",
+      "source_order": 3414,
+      "archive": "lb68snd",
+      "id": "lb68snd-generic"
+    },
+    {
+      "title": "[MSX] ガイアの紋章",
+      "driver": {
+        "name": "msx",
+        "type": "generic",
+        "alias": "NCS",
+        "platform": "MSX"
+      },
+      "options": [
+        {
+          "name": "init_pc",
+          "value": "0x0400"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "patch",
+          "offset": "0x0400"
+        },
+        {
+          "type": "code",
+          "path": "BGMDAT.COM",
+          "offset": "0x2000"
+        },
+        {
+          "type": "code",
+          "path": "MSXG4.DAT",
+          "offset": "0x4000"
+        },
+        {
+          "type": "code",
+          "path": "MSXG5.DAT",
+          "offset": "0x8000"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x06",
+          "title": "オープニング"
+        },
+        {
+          "kind": "title",
+          "code": "0x03",
+          "title": "メニュー"
+        },
+        {
+          "kind": "title",
+          "code": "0x08",
+          "title": "BGM 1"
+        },
+        {
+          "kind": "title",
+          "code": "0x07",
+          "title": "BGM 2"
+        },
+        {
+          "kind": "title",
+          "code": "0x02",
+          "title": "BGM 3"
+        },
+        {
+          "kind": "comment",
+          "text": "\t<title code=\"0x05\">BGM 3</title> "
+        },
+        {
+          "kind": "title",
+          "code": "0x00",
+          "title": "勝利"
+        },
+        {
+          "kind": "title",
+          "code": "0x04",
+          "title": "敗北"
+        },
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "エンディング"
+        },
+        {
+          "kind": "range",
+          "min": "0x108",
+          "max": "0x113",
+          "title_format": "SE 0x%03x",
+          "extcode": "1"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/ncs.xml",
+      "source_order": 3415,
+      "archive": "gaia_msx",
+      "id": "gaia-msx-generic"
+    },
+    {
+      "title": "[MSX] ライトニングバッカス - THE KNIGHT of IRON -",
+      "driver": {
+        "name": "msx",
+        "type": "generic",
+        "alias": "NCS",
+        "platform": "MSX"
+      },
+      "options": [
+        {
+          "name": "init_pc",
+          "value": "0x0400"
+        }
+      ],
+      "assets": [
+        {
+          "type": "code",
+          "path": "patch",
+          "offset": "0x0400"
+        },
+        {
+          "type": "code",
+          "path": "MUSIC.COM",
+          "offset": "0xA400"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x01",
+          "title": "オープニング"
+        },
+        {
+          "kind": "title",
+          "code": "0x03",
+          "title": "メインBGM"
+        },
+        {
+          "kind": "title",
+          "code": "0x05",
+          "title": "クリア"
+        },
+        {
+          "kind": "title",
+          "code": "0x04",
+          "title": "作戦失敗"
+        },
+        {
+          "kind": "title",
+          "code": "0x02",
+          "title": "中隊日誌 / スタッフロール"
+        },
+        {
+          "kind": "range",
+          "min": "0x101",
+          "max": "0x103",
+          "title_format": "SE 0x%03x",
+          "extcode": "1"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/ncs.xml",
+      "source_order": 3416,
+      "archive": "lbacchus_msx",
+      "id": "lbacchus-msx-generic"
+    }
+  ]
+}

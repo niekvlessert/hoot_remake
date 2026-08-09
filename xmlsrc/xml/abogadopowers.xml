@@ -1,0 +1,470 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="hoot.xsl"?>
+<!DOCTYPE gamelist [
+	<!ELEMENT gamelist (game|bind|childlists)*>
+	<!ATTLIST gamelist date CDATA #IMPLIED>
+	<!ELEMENT childlists (list)*>
+	<!ELEMENT list (#PCDATA)>
+	<!ELEMENT bind (exts,driver,options?)>
+	<!ELEMENT exts (ext)*>
+	<!ELEMENT ext (#PCDATA)>
+	<!ELEMENT game (name,driver,driveralias?,options?,romlist?,titlelist?)>
+	<!ELEMENT name (#PCDATA)>
+	<!ELEMENT driver (#PCDATA)>
+	<!ATTLIST driver type CDATA #IMPLIED>
+	<!ELEMENT driveralias (#PCDATA)>
+	<!ATTLIST driveralias type CDATA #IMPLIED>
+	<!ELEMENT options (option)*>
+	<!ELEMENT option EMPTY>
+	<!ATTLIST option name CDATA #REQUIRED
+					 value CDATA #REQUIRED>
+	<!ELEMENT romlist (rom)*>
+	<!ATTLIST romlist archive CDATA #IMPLIED>
+	<!ELEMENT rom (#PCDATA)>
+	<!ATTLIST rom type CDATA #REQUIRED
+				  offset CDATA #IMPLIED
+				  crc32 CDATA #IMPLIED>
+	<!ELEMENT titlelist (title|range)*>
+	<!ELEMENT title (#PCDATA)>
+	<!ATTLIST title code CDATA #REQUIRED
+					type CDATA #IMPLIED>
+	<!ELEMENT range (#PCDATA)>
+	<!ATTLIST range min CDATA #REQUIRED
+					max CDATA #REQUIRED
+					extcode CDATA #IMPLIED
+					start CDATA #IMPLIED>
+
+]>
+<gamelist date="2005/09/25">
+	<!-- //アボガドパワーズ(Abogado Powers) -->
+	<game>
+		<name>[PC-9801] 黒の断章 THE LITERARY FRAGMENT(OPNA)</name>
+		<driver type="opna">pc98dos</driver>
+		<driveralias type="NEC PC-9801">Abogado Powers</driveralias>
+		<options>
+			<option name="clockmul" value="8"/>
+			<option name="wstimer" value="8"/>
+		</options>
+		<romlist archive="kurodan_98">
+			<rom type="file" offset="-1">CMD.COM</rom>
+			<rom type="file" offset="-1">CMDP.COM</rom>
+			<rom type="file" offset="0x10">BGM_00.KM</rom>
+			<rom type="file" offset="0x11">BGM_01.KM</rom>
+			<rom type="file" offset="0x12">BGM_02.KM</rom>
+			<rom type="file" offset="0x13">BGM_03.KM</rom>
+			<rom type="file" offset="0x14">BGM_04.KM</rom>
+			<rom type="file" offset="0x15">BGM_05.KM</rom>
+			<rom type="file" offset="0x16">BGM_06.KM</rom>
+			<rom type="file" offset="0x17">BGM_07.KM</rom>
+			<rom type="file" offset="0x18">BGM_08.KM</rom>
+			<rom type="file" offset="0x19">BGM_09.KM</rom>
+			<rom type="file" offset="0x1A">BGM_10.KM</rom>
+			<rom type="file" offset="0x1B">BGM_11.KM</rom>
+			<rom type="file" offset="0x1C">BGM_12.KM</rom>
+			<rom type="file" offset="0x1D">BGM_13.KM</rom>
+			<rom type="file" offset="0x1E">BGM_14.KM</rom>
+			<rom type="file" offset="0x1F">BGM_15.KM</rom>
+			<rom type="file" offset="0x20">BGM_16.KM</rom>
+			<rom type="file" offset="0x21">BGM_17.KM</rom>
+			<rom type="shell" offset="0">CMD /K</rom>
+			<rom type="shell" offset="0">CMDP.COM</rom>
+		</romlist>
+		<titlelist>
+			<title code="0x21">[STOP]</title>
+			<title code="0x10">BGM.KMN : 00</title>
+			<title code="0x11">BGM.KMN : 01</title>
+			<title code="0x12">BGM.KMN : 02</title>
+			<title code="0x13">BGM.KMN : 03</title>
+			<title code="0x14">BGM.KMN : 04</title>
+			<title code="0x15">BGM.KMN : 05</title>
+			<title code="0x16">BGM.KMN : 06</title>
+			<title code="0x17">BGM.KMN : 07</title>
+			<title code="0x18">BGM.KMN : 08</title>
+			<title code="0x19">BGM.KMN : 09</title>
+			<title code="0x1A">BGM.KMN : 10</title>
+			<title code="0x1B">BGM.KMN : 11</title>
+			<title code="0x1C">BGM.KMN : 12</title>
+			<title code="0x1D">BGM.KMN : 13</title>
+			<title code="0x1E">BGM.KMN : 14</title>
+			<title code="0x1F">BGM.KMN : 15</title>
+			<title code="0x20">BGM.KMN : 16</title>
+		</titlelist>
+	</game>
+	<game>
+		<name>[PC-9801] 黒の断章 THE LITERARY FRAGMENT(OPN)</name>
+		<driver type="opn">pc98dos</driver>
+		<driveralias type="NEC PC-9801">Abogado Powers</driveralias>
+		<options>
+			<option name="clockmul" value="8"/>
+			<option name="wstimer" value="8"/>
+		</options>
+		<romlist archive="kurodan_98">
+			<rom type="file" offset="-1">CMD.COM</rom>
+			<rom type="file" offset="-1">CMDP.COM</rom>
+			<rom type="file" offset="0x10">BGM_00.KM</rom>
+			<rom type="file" offset="0x11">BGM_01.KM</rom>
+			<rom type="file" offset="0x12">BGM_02.KM</rom>
+			<rom type="file" offset="0x13">BGM_03.KM</rom>
+			<rom type="file" offset="0x14">BGM_04.KM</rom>
+			<rom type="file" offset="0x15">BGM_05.KM</rom>
+			<rom type="file" offset="0x16">BGM_06.KM</rom>
+			<rom type="file" offset="0x17">BGM_07.KM</rom>
+			<rom type="file" offset="0x18">BGM_08.KM</rom>
+			<rom type="file" offset="0x19">BGM_09.KM</rom>
+			<rom type="file" offset="0x1A">BGM_10.KM</rom>
+			<rom type="file" offset="0x1B">BGM_11.KM</rom>
+			<rom type="file" offset="0x1C">BGM_12.KM</rom>
+			<rom type="file" offset="0x1D">BGM_13.KM</rom>
+			<rom type="file" offset="0x1E">BGM_14.KM</rom>
+			<rom type="file" offset="0x1F">BGM_15.KM</rom>
+			<rom type="file" offset="0x20">BGM_16.KM</rom>
+			<rom type="file" offset="0x21">BGM_17.KM</rom>
+			<rom type="shell" offset="0">CMD /K</rom>
+			<rom type="shell" offset="0">CMDP.COM</rom>
+		</romlist>
+		<titlelist>
+			<title code="0x21">[STOP]</title>
+			<title code="0x10">BGM.KMN : 00</title>
+			<title code="0x11">BGM.KMN : 01</title>
+			<title code="0x12">BGM.KMN : 02</title>
+			<title code="0x13">BGM.KMN : 03</title>
+			<title code="0x14">BGM.KMN : 04</title>
+			<title code="0x15">BGM.KMN : 05</title>
+			<title code="0x16">BGM.KMN : 06</title>
+			<title code="0x17">BGM.KMN : 07</title>
+			<title code="0x18">BGM.KMN : 08</title>
+			<title code="0x19">BGM.KMN : 09</title>
+			<title code="0x1A">BGM.KMN : 10</title>
+			<title code="0x1B">BGM.KMN : 11</title>
+			<title code="0x1C">BGM.KMN : 12</title>
+			<title code="0x1D">BGM.KMN : 13</title>
+			<title code="0x1E">BGM.KMN : 14</title>
+			<title code="0x1F">BGM.KMN : 15</title>
+			<title code="0x20">BGM.KMN : 16</title>
+		</titlelist>
+	</game>
+	<game>
+		<name>[PC-9801] Esの方程式(OPNA)</name>
+		<driver type="opna">pc98dos</driver>
+		<driveralias type="NEC PC-9801">Abogado Powers</driveralias>
+		<options>
+			<option name="clockmul" value="8"/>
+			<option name="wstimer" value="8"/>
+		</options>
+		<romlist archive="eshoutei_98">
+			<rom type="file" offset="-1">CMD.COM</rom>
+			<rom type="file" offset="-1">CMDP.COM</rom>
+			<rom type="file" offset="0x10">BGM_00.KM</rom>
+			<rom type="file" offset="0x11">BGM_02.KM</rom>
+			<rom type="file" offset="0x12">BGM_04.KM</rom>
+			<rom type="file" offset="0x13">BGM_06.KM</rom>
+			<rom type="file" offset="0x14">BGM_08.KM</rom>
+			<rom type="file" offset="0x15">BGM_10.KM</rom>
+			<rom type="file" offset="0x16">BGM_12.KM</rom>
+			<rom type="file" offset="0x17">BGM_14.KM</rom>
+			<rom type="file" offset="0x18">BGM_16.KM</rom>
+			<rom type="file" offset="0x19">BGM_18.KM</rom>
+			<rom type="file" offset="0x1A">BGM_20.KM</rom>
+			<rom type="file" offset="0x1B">BGM_22.KM</rom>
+			<rom type="file" offset="0x1C">BGM_24.KM</rom>
+			<rom type="file" offset="0x1D">BGM_26.KM</rom>
+			<rom type="file" offset="0x1E">BGM_28.KM</rom>
+			<rom type="file" offset="0x1F">BGM_30.KM</rom>
+			<rom type="file" offset="0x20">BGM_32.KM</rom>
+			<rom type="file" offset="0x21">BGM_34.KM</rom>
+			<rom type="file" offset="0x22">BGM_36.KM</rom>
+			<rom type="shell" offset="0">CMD /K</rom>
+			<rom type="shell" offset="0">CMDP.COM</rom>
+		</romlist>
+		<titlelist>
+			<title code="0x22">[STOP]</title>
+			<title code="0x10">BGM.KPN : 00 : LOOK UP AT THE SKY</title>
+			<title code="0x11">BGM.KPN : 02 : RETRACE ONE'S MEMORY</title>
+			<title code="0x12">BGM.KPN : 04 : LEAVE……</title>
+			<title code="0x13">BGM.KPN : 06 : SOFT WIND</title>
+			<title code="0x14">BGM.KPN : 08 : ANSWER</title>
+			<title code="0x15">BGM.KPN : 10 : WHY</title>
+			<title code="0x16">BGM.KPN : 12 : SENSE DANGER</title>
+			<title code="0x17">BGM.KPN : 14 : NEXT DEVELOPMENT</title>
+			<title code="0x18">BGM.KPN : 16 : CALMNESS</title>
+			<title code="0x19">BGM.KPN : 18 : BRUTAL MURDER</title>
+			<title code="0x1A">BGM.KPN : 20 : KENTA'S THEME</title>
+			<title code="0x1B">BGM.KPN : 22 : WHAT'S UP?</title>
+			<title code="0x1C">BGM.KPN : 24 : FEAR OF DEATH</title>
+			<title code="0x1D">BGM.KPN : 26 : DEEP IN SORROW</title>
+			<title code="0x1E">BGM.KPN : 28 : OCCURRENCE</title>
+			<title code="0x1F">BGM.KPN : 30 : THE ORIGIN OF NEXT TRAGEDY</title>
+			<title code="0x20">BGM.KPN : 32 : STAGE CLEAR</title>
+			<title code="0x21">BGM.KPN : 34 : MISS</title>
+		</titlelist>
+	</game>
+	<game>
+		<name>[PC-9801] Esの方程式(OPN)</name>
+		<driver type="opn">pc98dos</driver>
+		<driveralias type="NEC PC-9801">Abogado Powers</driveralias>
+		<options>
+			<option name="clockmul" value="8"/>
+			<option name="wstimer" value="8"/>
+			<option name="ssg_mix" value="-18"/>
+		</options>
+		<romlist archive="eshoutei_98">
+			<rom type="file" offset="-1">CMD.COM</rom>
+			<rom type="file" offset="-1">CMDP.COM</rom>
+			<rom type="file" offset="0x10">BGM_00.KM</rom>
+			<rom type="file" offset="0x11">BGM_02.KM</rom>
+			<rom type="file" offset="0x12">BGM_04.KM</rom>
+			<rom type="file" offset="0x13">BGM_06.KM</rom>
+			<rom type="file" offset="0x14">BGM_08.KM</rom>
+			<rom type="file" offset="0x15">BGM_10.KM</rom>
+			<rom type="file" offset="0x16">BGM_12.KM</rom>
+			<rom type="file" offset="0x17">BGM_14.KM</rom>
+			<rom type="file" offset="0x18">BGM_16.KM</rom>
+			<rom type="file" offset="0x19">BGM_18.KM</rom>
+			<rom type="file" offset="0x1A">BGM_20.KM</rom>
+			<rom type="file" offset="0x1B">BGM_22.KM</rom>
+			<rom type="file" offset="0x1C">BGM_24.KM</rom>
+			<rom type="file" offset="0x1D">BGM_26.KM</rom>
+			<rom type="file" offset="0x1E">BGM_28.KM</rom>
+			<rom type="file" offset="0x1F">BGM_30.KM</rom>
+			<rom type="file" offset="0x20">BGM_32.KM</rom>
+			<rom type="file" offset="0x21">BGM_34.KM</rom>
+			<rom type="file" offset="0x22">BGM_36.KM</rom>
+			<rom type="shell" offset="0">CMD /K</rom>
+			<rom type="shell" offset="0">CMDP.COM</rom>
+		</romlist>
+		<titlelist>
+			<title code="0x22">[STOP]</title>
+			<title code="0x10">BGM.KPN : 00 : LOOK UP AT THE SKY</title>
+			<title code="0x11">BGM.KPN : 02 : RETRACE ONE'S MEMORY</title>
+			<title code="0x12">BGM.KPN : 04 : LEAVE……</title>
+			<title code="0x13">BGM.KPN : 06 : SOFT WIND</title>
+			<title code="0x14">BGM.KPN : 08 : ANSWER</title>
+			<title code="0x15">BGM.KPN : 10 : WHY</title>
+			<title code="0x16">BGM.KPN : 12 : SENSE DANGER</title>
+			<title code="0x17">BGM.KPN : 14 : NEXT DEVELOPMENT</title>
+			<title code="0x18">BGM.KPN : 16 : CALMNESS</title>
+			<title code="0x19">BGM.KPN : 18 : BRUTAL MURDER</title>
+			<title code="0x1A">BGM.KPN : 20 : KENTA'S THEME</title>
+			<title code="0x1B">BGM.KPN : 22 : WHAT'S UP?</title>
+			<title code="0x1C">BGM.KPN : 24 : FEAR OF DEATH</title>
+			<title code="0x1D">BGM.KPN : 26 : DEEP IN SORROW</title>
+			<title code="0x1E">BGM.KPN : 28 : OCCURRENCE</title>
+			<title code="0x1F">BGM.KPN : 30 : THE ORIGIN OF NEXT TRAGEDY</title>
+			<title code="0x20">BGM.KPN : 32 : STAGE CLEAR</title>
+			<title code="0x21">BGM.KPN : 34 : MISS</title>
+		</titlelist>
+	</game>
+	<game>
+		<name>[PC-9801] つもバカ日誌(OPN)</name>
+		<driver type="opn">pc98dos</driver>
+		<driveralias type="NEC PC-9801">Abogado Powers</driveralias>
+		<options>
+			<option name="clockmul" value="8"/>
+			<option name="wstimer" value="8"/>
+			<option name="ssg_mix" value="-18"/>
+		</options>
+		<romlist archive="tumobaka_98">
+			<rom type="file" offset="-1">CMD.COM</rom>
+			<rom type="file" offset="-1">CMDP.COM</rom>
+			<rom type="file" offset="0x10">BA01.KM</rom>
+			<rom type="file" offset="0x11">BA02.KM</rom>
+			<rom type="file" offset="0x12">BA03.KM</rom>
+			<rom type="file" offset="0x13">BA04.KM</rom>
+			<rom type="file" offset="0x14">BA05.KM</rom>
+			<rom type="file" offset="0x15">BA06.KM</rom>
+			<rom type="file" offset="0x16">BA07.KM</rom>
+			<rom type="file" offset="0x17">BA08.KM</rom>
+			<rom type="file" offset="0x18">BA09.KM</rom>
+			<rom type="file" offset="0x19">BA10.KM</rom>
+			<rom type="file" offset="0x1a">BA11.KM</rom>
+			<rom type="file" offset="0x1b">BA12.KM</rom>
+			<rom type="file" offset="0x1c">BA13.KM</rom>
+			<rom type="file" offset="0x1d">BA14.KM</rom>
+			<rom type="file" offset="0x1e">BA15.KM</rom>
+			<rom type="file" offset="0x1f">BA16.KM</rom>
+			<rom type="file" offset="0x20">BA17.KM</rom>
+			<rom type="shell" offset="0">CMD /K</rom>
+			<rom type="shell" offset="0">CMDP.COM</rom>
+		</romlist>
+		<titlelist>
+			<title code="0x10">BA01.KM : 雀荘八連荘のテーマ</title>
+			<title code="0x11">BA02.KM : グースネックのテーマ</title>
+			<title code="0x12">BA03.KM : 景楼閣のテーマ</title>
+			<title code="0x13">BA04.KM : カジノで流れる曲</title>
+			<title code="0x14">BA05.KM : エスクワイアのテーマ</title>
+			<title code="0x15">BA06.KM : パチスロボーナスゲーム</title>
+			<title code="0x16">BA07.KM : 移動時の曲</title>
+			<title code="0x17">BA08.KM : ぬぎぬぎBGM</title>
+			<title code="0x18">BA09.KM : ガンクラブチェックのBGM</title>
+			<title code="0x19">BA10.KM : オープニングの曲</title>
+			<title code="0x1A">BA11.KM : アイテムショップのBGM</title>
+			<title code="0x1B">BA12.KM : エンディングその1</title>
+			<title code="0x1C">BA13.KM : スタッフロール</title>
+			<title code="0x1D">BA14.KM : キャラクター紹介</title>
+			<title code="0x1E">BA15.KM : エンディングその2</title>
+			<title code="0x1F">BA16.KM : 半チャン終了時のBGM</title>
+			<title code="0x20">BA17.KM : パチスロレギュラー時</title>
+		</titlelist>
+	</game>
+	<game>
+		<name>[PC-9801] つもバカ日誌(OPNA)</name>
+		<driver type="opna">pc98dos</driver>
+		<driveralias type="NEC PC-9801">Abogado Powers</driveralias>
+		<options>
+			<option name="clockmul" value="8"/>
+			<option name="wstimer" value="8"/>
+		</options>
+		<romlist archive="tumobaka_98">
+			<rom type="file" offset="-1">CMD.COM</rom>
+			<rom type="file" offset="-1">CMDP.COM</rom>
+			<rom type="file" offset="0x10">BA01.KM</rom>
+			<rom type="file" offset="0x11">BA02.KM</rom>
+			<rom type="file" offset="0x12">BA03.KM</rom>
+			<rom type="file" offset="0x13">BA04.KM</rom>
+			<rom type="file" offset="0x14">BA05.KM</rom>
+			<rom type="file" offset="0x15">BA06.KM</rom>
+			<rom type="file" offset="0x16">BA07.KM</rom>
+			<rom type="file" offset="0x17">BA08.KM</rom>
+			<rom type="file" offset="0x18">BA09.KM</rom>
+			<rom type="file" offset="0x19">BA10.KM</rom>
+			<rom type="file" offset="0x1a">BA11.KM</rom>
+			<rom type="file" offset="0x1b">BA12.KM</rom>
+			<rom type="file" offset="0x1c">BA13.KM</rom>
+			<rom type="file" offset="0x1d">BA14.KM</rom>
+			<rom type="file" offset="0x1e">BA15.KM</rom>
+			<rom type="file" offset="0x1f">BA16.KM</rom>
+			<rom type="file" offset="0x20">BA17.KM</rom>
+			<rom type="shell" offset="0">CMD /K</rom>
+			<rom type="shell" offset="0">CMDP.COM</rom>
+		</romlist>
+		<titlelist>
+			<title code="0x10">BA01.KM : 雀荘八連荘のテーマ</title>
+			<title code="0x11">BA02.KM : グースネックのテーマ</title>
+			<title code="0x12">BA03.KM : 景楼閣のテーマ</title>
+			<title code="0x13">BA04.KM : カジノで流れる曲</title>
+			<title code="0x14">BA05.KM : エスクワイアのテーマ</title>
+			<title code="0x15">BA06.KM : パチスロボーナスゲーム</title>
+			<title code="0x16">BA07.KM : 移動時の曲</title>
+			<title code="0x17">BA08.KM : ぬぎぬぎBGM</title>
+			<title code="0x18">BA09.KM : ガンクラブチェックのBGM</title>
+			<title code="0x19">BA10.KM : オープニングの曲</title>
+			<title code="0x1A">BA11.KM : アイテムショップのBGM</title>
+			<title code="0x1B">BA12.KM : エンディングその1</title>
+			<title code="0x1C">BA13.KM : スタッフロール</title>
+			<title code="0x1D">BA14.KM : キャラクター紹介</title>
+			<title code="0x1E">BA15.KM : エンディングその2</title>
+			<title code="0x1F">BA16.KM : 半チャン終了時のBGM</title>
+			<title code="0x20">BA17.KM : パチスロレギュラー時</title>
+		</titlelist>
+	</game>
+	<game>
+		<name>[IBM PC] 黒の断章 THE LITERARY FRAGMENT</name>
+		<driver type="soundblaster16">pcatdos</driver>
+		<driveralias type="IBM PC">Abogado Powers</driveralias>
+		<options>
+			<option name="clockmul" value="0x20"/>
+		</options>
+		<romlist archive="kurodan_at">
+			<rom type="file" offset="-1">TIMER.COM</rom>
+			<rom type="file" offset="-1">CMD.COM</rom>
+			<rom type="file" offset="-1">CMDP.COM</rom>
+			<rom type="file" offset="0x10">BGM_00.KM</rom>
+			<rom type="file" offset="0x11">BGM_01.KM</rom>
+			<rom type="file" offset="0x12">BGM_02.KM</rom>
+			<rom type="file" offset="0x13">BGM_03.KM</rom>
+			<rom type="file" offset="0x14">BGM_04.KM</rom>
+			<rom type="file" offset="0x15">BGM_05.KM</rom>
+			<rom type="file" offset="0x16">BGM_06.KM</rom>
+			<rom type="file" offset="0x17">BGM_07.KM</rom>
+			<rom type="file" offset="0x18">BGM_08.KM</rom>
+			<rom type="file" offset="0x19">BGM_09.KM</rom>
+			<rom type="file" offset="0x1A">BGM_10.KM</rom>
+			<rom type="file" offset="0x1B">BGM_11.KM</rom>
+			<rom type="file" offset="0x1C">BGM_12.KM</rom>
+			<rom type="file" offset="0x1D">BGM_13.KM</rom>
+			<rom type="file" offset="0x1E">BGM_14.KM</rom>
+			<rom type="file" offset="0x1F">BGM_15.KM</rom>
+			<rom type="file" offset="0x20">BGM_16.KM</rom>
+			<rom type="file" offset="0x21">BGM_17.KM</rom>
+			<rom type="shell" offset="0">TIMER</rom>
+			<rom type="shell" offset="0">CMD /K</rom>
+			<rom type="shell" offset="0">CMDP.COM</rom>
+		</romlist>
+		<titlelist>
+			<title code="0x21">[STOP]</title>
+			<title code="0x10">BGM.KMN : 00</title>
+			<title code="0x11">BGM.KMN : 01</title>
+			<title code="0x12">BGM.KMN : 02</title>
+			<title code="0x13">BGM.KMN : 03</title>
+			<title code="0x14">BGM.KMN : 04</title>
+			<title code="0x15">BGM.KMN : 05</title>
+			<title code="0x16">BGM.KMN : 06</title>
+			<title code="0x17">BGM.KMN : 07</title>
+			<title code="0x18">BGM.KMN : 08</title>
+			<title code="0x19">BGM.KMN : 09</title>
+			<title code="0x1A">BGM.KMN : 10</title>
+			<title code="0x1B">BGM.KMN : 11</title>
+			<title code="0x1C">BGM.KMN : 12</title>
+			<title code="0x1D">BGM.KMN : 13</title>
+			<title code="0x1E">BGM.KMN : 14</title>
+			<title code="0x1F">BGM.KMN : 15</title>
+			<title code="0x20">BGM.KMN : 16</title>
+		</titlelist>
+	</game>
+	<game>
+		<name>[IBM PC] Esの方程式</name>
+		<driver type="soundblaster16">pcatdos</driver>
+		<driveralias type="IBM PC">Abogado Powers</driveralias>
+		<options>
+			<option name="clockmul" value="0x20"/>
+		</options>
+		<romlist archive="eshoutei_at">
+			<rom type="file" offset="-1">TIMER.COM</rom>
+			<rom type="file" offset="-1">CMD.COM</rom>
+			<rom type="file" offset="-1">CMDP.COM</rom>
+			<rom type="file" offset="0x10">BGM_01.KM</rom>
+			<rom type="file" offset="0x11">BGM_03.KM</rom>
+			<rom type="file" offset="0x12">BGM_05.KM</rom>
+			<rom type="file" offset="0x13">BGM_07.KM</rom>
+			<rom type="file" offset="0x14">BGM_09.KM</rom>
+			<rom type="file" offset="0x15">BGM_11.KM</rom>
+			<rom type="file" offset="0x16">BGM_13.KM</rom>
+			<rom type="file" offset="0x17">BGM_15.KM</rom>
+			<rom type="file" offset="0x18">BGM_17.KM</rom>
+			<rom type="file" offset="0x19">BGM_19.KM</rom>
+			<rom type="file" offset="0x1A">BGM_21.KM</rom>
+			<rom type="file" offset="0x1B">BGM_23.KM</rom>
+			<rom type="file" offset="0x1C">BGM_25.KM</rom>
+			<rom type="file" offset="0x1D">BGM_27.KM</rom>
+			<rom type="file" offset="0x1E">BGM_29.KM</rom>
+			<rom type="file" offset="0x1F">BGM_31.KM</rom>
+			<rom type="file" offset="0x20">BGM_33.KM</rom>
+			<rom type="file" offset="0x21">BGM_35.KM</rom>
+			<rom type="file" offset="0x22">BGM_37.KM</rom>
+			<rom type="shell" offset="0">TIMER</rom>
+			<rom type="shell" offset="0">CMD /K</rom>
+			<rom type="shell" offset="0">CMDP.COM</rom>
+		</romlist>
+		<titlelist>
+			<title code="0x22">BGM.KPN : 37 : [STOP]</title>
+			<title code="0x10">BGM.KPN : 01 : LOOK UP AT THE SKY</title>
+			<title code="0x11">BGM.KPN : 03 : RETRACE ONE'S MEMORY</title>
+			<title code="0x12">BGM.KPN : 05 : LEAVE……</title>
+			<title code="0x13">BGM.KPN : 07 : SOFT WIND</title>
+			<title code="0x14">BGM.KPN : 09 : ANSWER</title>
+			<title code="0x15">BGM.KPN : 11 : WHY</title>
+			<title code="0x16">BGM.KPN : 13 : SENSE DANGER</title>
+			<title code="0x17">BGM.KPN : 15 : NEXT DEVELOPMENT</title>
+			<title code="0x18">BGM.KPN : 17 : CALMNESS</title>
+			<title code="0x19">BGM.KPN : 19 : BRUTAL MURDER</title>
+			<title code="0x1A">BGM.KPN : 21 : KENTA'S THEME</title>
+			<title code="0x1B">BGM.KPN : 23 : WHAT'S UP?</title>
+			<title code="0x1C">BGM.KPN : 25 : FEAR OF DEATH</title>
+			<title code="0x1D">BGM.KPN : 27 : DEEP IN SORROW</title>
+			<title code="0x1E">BGM.KPN : 29 : OCCURRENCE</title>
+			<title code="0x1F">BGM.KPN : 31 : THE ORIGIN OF NEXT TRAGEDY</title>
+			<title code="0x20">BGM.KPN : 33 : STAGE CLEAR</title>
+			<title code="0x21">BGM.KPN : 35 : MISS</title>
+		</titlelist>
+	</game>
+</gamelist>

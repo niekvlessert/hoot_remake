@@ -1,0 +1,113 @@
+{
+  "format": "hoot-catalog-shard",
+  "version": 1,
+  "source_file": "xml/inside.xml",
+  "date": "2005/09/25",
+  "comments": [
+    " //淫・SIDE "
+  ],
+  "games": [
+    {
+      "title": "[PC-9801] BIND -緊縛尋問伝説-",
+      "driver": {
+        "name": "pc98dos",
+        "type": "opn",
+        "alias": "淫・SIDE",
+        "platform": "NEC PC-9801"
+      },
+      "options": [
+        {
+          "name": "clockmul",
+          "value": "8"
+        },
+        {
+          "name": "ssg_mix",
+          "value": "-18"
+        },
+        {
+          "name": "wstimer",
+          "value": "2"
+        }
+      ],
+      "assets": [
+        {
+          "type": "file",
+          "path": "MV.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "MV_98.COM",
+          "offset": "-1"
+        },
+        {
+          "type": "file",
+          "path": "EPISODE1.MV",
+          "offset": "0x10"
+        },
+        {
+          "type": "file",
+          "path": "EPISODE2.MV",
+          "offset": "0x11"
+        },
+        {
+          "type": "file",
+          "path": "EPISODE3.MV",
+          "offset": "0x12"
+        },
+        {
+          "type": "file",
+          "path": "GAMEOVER.MV",
+          "offset": "0x13"
+        },
+        {
+          "type": "file",
+          "path": "OPEN.MV",
+          "offset": "0x14"
+        },
+        {
+          "type": "shell",
+          "path": "mv",
+          "offset": "0"
+        },
+        {
+          "type": "shell",
+          "path": "mv_98",
+          "offset": "0"
+        }
+      ],
+      "title_entries": [
+        {
+          "kind": "title",
+          "code": "0x14",
+          "title": "OPEN.MV     : Opening(オープニングテーマ)"
+        },
+        {
+          "kind": "title",
+          "code": "0x10",
+          "title": "EPISODE1.MV : EPISODE I"
+        },
+        {
+          "kind": "title",
+          "code": "0x11",
+          "title": "EPISODE2.MV : EPISODE II"
+        },
+        {
+          "kind": "title",
+          "code": "0x12",
+          "title": "EPISODE3.MV : EPISODE III"
+        },
+        {
+          "kind": "title",
+          "code": "0x13",
+          "title": "GAMEOVER.MV : GAME OVER"
+        }
+      ],
+      "comments": [],
+      "source_file": "xml/inside.xml",
+      "source_order": 2634,
+      "archive": "bind_98",
+      "id": "bind-98-opn"
+    }
+  ]
+}
