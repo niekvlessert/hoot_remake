@@ -74,6 +74,30 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 set(CMAKE_CXX_EXTENSIONS OFF)
 set(CMAKE_POSITION_INDEPENDENT_CODE ON)
 
+set(HOOT_REQUIRED_VENDOR_SOURCES
+    third_party/libkss/modules/kmz80/kmz80.c
+    third_party/libkss/modules/kmz80/kmz80c.c
+    third_party/libkss/modules/kmz80/kmz80t.c
+    third_party/libkss/modules/kmz80/kmevent.c
+    third_party/libvgm/emu/cores/ay8910.c
+    third_party/libvgm/emu/cores/fmopn.c
+    third_party/libvgm/emu/cores/ym2151.c
+    third_party/libvgm/emu/cores/nukedopm.c
+    third_party/libvgm/emu/cores/ymdeltat.c
+    third_party/libvgm/emu/cores/fmopl.c
+    third_party/libvgm/emu/cores/ymf262.c
+    third_party/libvgm/emu/logging.c
+    third_party/px68k-libretro/m68000/musashi/m68kcpu.c
+    third_party/px68k-libretro/m68000/musashi/m68kops.c
+    third_party/px68k-libretro/m68000/musashi/softfloat/softfloat.c)
+foreach(vendor_source IN LISTS HOOT_REQUIRED_VENDOR_SOURCES)
+    if(NOT EXISTS "${CMAKE_CURRENT_SOURCE_DIR}/${vendor_source}")
+        message(FATAL_ERROR
+            "Missing vendored dependency source: ${vendor_source}. "
+            "Run 'bash tools/ci/fetch_dependencies.sh' before configuring Hoot.")
+    endif()
+endforeach()
+
 add_library(kmz80 STATIC
     third_party/libkss/modules/kmz80/kmz80.c
     third_party/libkss/modules/kmz80/kmz80c.c

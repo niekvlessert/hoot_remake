@@ -23,6 +23,11 @@ artifact. These are CI build artifacts, not fully self-contained redistributable
 application bundles; system/runtime library packaging and code signing are a
 separate release concern.
 
+The three CMake dependency trees are intentionally excluded from the main Git
+repository. CI restores them from `hoot-dependencies-latest.zip` when that
+source package is present, or clones the pinned revisions (including libkss's
+recursive submodules) with `tools/ci/fetch_dependencies.sh`.
+
 ## Termux
 
 The same workflow has a best-effort `termux-aarch64` job. It intentionally uses
@@ -38,6 +43,12 @@ environment. The CLI remains usable without opening the UI.
 The Termux job is `continue-on-error` because the upstream rolling Termux
 package repository can change independently of this project; Linux, Windows and
 macOS remain the blocking CI gates.
+
+## Web player deployment
+
+The WASM job uploads the complete `hootweb.html`/JavaScript/Wasm/data bundle.
+Successful pushes to `main` pass that artifact to the GitHub Pages deployment
+job. Pull requests still build and validate the player but do not publish it.
 
 ## Japanese fonts
 

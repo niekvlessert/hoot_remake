@@ -32,9 +32,21 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
+      - name: Restore vendored dependency sources
+        shell: bash
+        run: bash tools/ci/fetch_dependencies.sh
+
       - uses: actions/setup-python@v5
         with:
           python-version: '3.x'
+
+      - name: Install Linux build prerequisites
+        if: runner.os == 'Linux'
+        shell: bash
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y \
+            autoconf autoconf-archive automake libtool ninja-build pkg-config fonts-noto-cjk
 
       - name: Export GitHub Actions cache variables
         shell: bash
@@ -61,13 +73,6 @@ jobs:
           "$VCPKG" install \
             --triplet "${{ matrix.triplet }}" \
             zlib sqlite3 zstd sdl3 sdl3-ttf
-
-      - name: Install Japanese system font (Linux)
-        if: runner.os == 'Linux'
-        shell: bash
-        run: |
-          sudo apt-get update
-          sudo apt-get install -y fonts-noto-cjk
 
       - name: Configure
         shell: bash
@@ -131,15 +136,27 @@ jobs:
         with:
           path: hoot
 
+      - name: Restore vendored dependency sources
+        working-directory: hoot
+        shell: bash
+        run: bash tools/ci/fetch_dependencies.sh
+
       - name: Prepare official Termux package builder
         shell: bash
         run: |
           git clone --depth 1 https://github.com/termux/termux-packages.git termux-packages
           mkdir -p termux-packages/sources
-          tar --exclude='./build' --exclude='./termux-packages' -C hoot -czf termux-packages/sources/hoot.tar.gz .
+          tar \
+            --exclude='./build' \
+            --exclude='./build-web' \
+            --exclude='./termux-packages' \
+            --exclude='./.git' \
+            --exclude='*/.git' \
+            -C hoot -czf termux-packages/sources/hoot.tar.gz .
           mkdir -p termux-packages/x11-packages/hoot
-          cat > termux-packages/x11-packages/hoot/build.sh <<'EOF'
-          TERMUX_PKG_HOMEPAGE=https://github.com/${GITHUB_REPOSITORY}
+          TERMUX_REPOSITORY="${GITHUB_REPOSITORY:-niekvlessert/hoot_remake}"
+          cat > termux-packages/x11-packages/hoot/build.sh <<EOF
+          TERMUX_PKG_HOMEPAGE=https://github.com/${TERMUX_REPOSITORY}
           TERMUX_PKG_DESCRIPTION="Native Hoot sound hardware emulator"
           TERMUX_PKG_LICENSE="custom"
           TERMUX_PKG_MAINTAINER="Hoot contributors"
@@ -168,6 +185,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+
+      - name: Restore vendored dependency sources
+        shell: bash
+        run: bash tools/ci/fetch_dependencies.sh
 
       - uses: actions/setup-python@v5
         with:
@@ -247,3 +268,38 @@ jobs:
             build-web/hootweb.wasm
             build-web/hootweb.data
           if-no-files-found: error
+
+  deploy-pages:
+    name: Deploy Web / WASM to GitHub Pages
+    if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+    needs: web-wasm
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Download web bundle
+        uses: actions/download-artifact@v4
+        with:
+          name: hoot-web-wasm
+          path: site
+
+      - name: Make the player the Pages entrypoint
+        shell: bash
+        run: cp site/hootweb.html site/index.html
+
+      - name: Configure GitHub Pages
+        uses: actions/configure-pages@v5
+
+      - name: Package Pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: site
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
