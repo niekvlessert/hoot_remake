@@ -12,7 +12,8 @@ namespace {
 
 bool run_case(const char* packs_dir, const std::string& driver_name,
               const std::string& code_path, uint32_t code_address, bool segmented,
-              const std::string& expected_id, bool expect_beep = false)
+              const std::string& expected_id, bool expect_beep = false,
+              const std::string& expected_architecture = "PC-98")
 {
     hoot::HootEntry entry;
     entry.id = "synthetic-" + driver_name;
@@ -59,10 +60,15 @@ bool run_case(const char* packs_dir, const std::string& driver_name,
     }
     HootTrackInfo info{};
     driver->fill_track_info(entry, 0, info);
+    HootVisualState visual{};
+    driver->fill_visual_state(entry, 0, visual);
     const bool activity_ok = expect_beep
         ? (info.debug_beep_audible_frames > 1000 && info.debug_beep_pit_data_writes >= 2)
         : (info.debug_opn_writes >= 4);
-    if (peak < 100 || nonzero < 1000 || !activity_ok || info.debug_unsupported_opcodes != 0) {
+    const bool runtime_name_ok = expected_architecture != "PC-88VA"
+        || std::string(driver->name()) == expected_id;
+    if (peak < 100 || nonzero < 1000 || !activity_ok || info.debug_unsupported_opcodes != 0
+        || visual.architecture != expected_architecture || !runtime_name_ok) {
         std::cerr << "bad bare render peak=" << peak << " nonzero=" << nonzero
                   << " writes=" << info.debug_opn_writes
                   << " beep_frames=" << info.debug_beep_audible_frames
@@ -70,7 +76,9 @@ bool run_case(const char* packs_dir, const std::string& driver_name,
                   << " unsupported=" << info.debug_unsupported_opcodes
                   << " opcode=" << info.debug_last_unsupported_opcode
                   << " cs=" << info.debug_last_unsupported_cs
-                  << " ip=" << info.debug_last_unsupported_ip << "\n";
+                  << " ip=" << info.debug_last_unsupported_ip
+                  << " architecture=" << visual.architecture
+                  << " driver=" << driver->name() << "\n";
         return false;
     }
     return true;
@@ -131,12 +139,12 @@ bool run_dynamic_dataaddr_case(const char* packs_dir)
 }
 
 
-bool run_pic14_timer_case(const char* packs_dir)
+bool run_pic14_timer_case(const char* packs_dir, const std::string& driver_name)
 {
     hoot::HootEntry entry;
-    entry.id = "synthetic-pc98vx-pic14-timer";
+    entry.id = "synthetic-pic14-timer-" + driver_name;
     entry.title = entry.id;
-    entry.driver_name = "pc98vx/opn";
+    entry.driver_name = driver_name;
     entry.archive = "pc98_bare_synthetic";
     entry.options["bootcs"] = 0x0060;
     entry.options["bootip"] = 0;
@@ -225,8 +233,13 @@ int main(int argc, char** argv)
     if (!run_case(argv[1], "pc98/opna", "player.bin", 0x00000600, false, "pc98-bare-opna")) return 1;
     if (!run_case(argv[1], "pc98vx/86", "player.bin", 0x00000600, false, "pc98vx-bare-86")) return 1;
     if (!run_case(argv[1], "pc98vx/beep", "beep.bin", 0x00000600, false, "pc98vx-bare-beep", true)) return 1;
+    if (!run_case(argv[1], "pc88va/opn", "player.bin", 0x00000600, false,
+                  "pc88va-bare-opn", false, "PC-88VA")) return 1;
+    if (!run_case(argv[1], "pc88va/opna", "player.bin", 0x00000600, false,
+                  "pc88va-bare-opna", false, "PC-88VA")) return 1;
     if (!run_dynamic_dataaddr_case(argv[1])) return 1;
-    if (!run_pic14_timer_case(argv[1])) return 1;
+    if (!run_pic14_timer_case(argv[1], "pc98vx/opn")) return 1;
+    if (!run_pic14_timer_case(argv[1], "pc88va/opn")) return 1;
     if (!run_streamed_loader_case(argv[1])) return 1;
     return 0;
 }

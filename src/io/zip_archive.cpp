@@ -188,6 +188,22 @@ const ZipArchive::Entry* ZipArchive::find(std::string_view name) const
             return &entry;
         }
     }
+    // Some preserved Hoot packs were repacked without their original
+    // directories while the catalogue retained paths such as OP/SONG.BGM.
+    // Accept a basename only when it identifies exactly one archive member.
+    const auto slash = name.find_last_of("/\\");
+    const std::string_view basename = slash == std::string_view::npos
+        ? name : name.substr(slash + 1);
+    const Entry* match = nullptr;
+    for (const auto& entry : entries_) {
+        const auto entry_slash = entry.name.find_last_of("/\\");
+        const std::string_view entry_basename = entry_slash == std::string::npos
+            ? std::string_view(entry.name) : std::string_view(entry.name).substr(entry_slash + 1);
+        if (!equal_ascii_case_insensitive(entry_basename, basename)) continue;
+        if (match != nullptr) return nullptr;
+        match = &entry;
+    }
+    if (match != nullptr) return match;
     return nullptr;
 }
 

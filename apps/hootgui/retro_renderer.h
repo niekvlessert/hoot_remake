@@ -18,7 +18,7 @@ namespace hootgui {
 
 enum class TopMenu { None, Edit, Playback, View, Help };
 
-enum class LibraryRowKind { Folder, Entry, Track };
+enum class LibraryRowKind { Parent, Folder, Entry, Track };
 
 struct LibraryRow {
     LibraryRowKind kind = LibraryRowKind::Folder;
@@ -29,9 +29,18 @@ struct LibraryRow {
     bool available = true;
 };
 
+enum class LibraryBreadcrumbTarget { Root, Major, Games };
+
+struct LibraryBreadcrumbPart {
+    std::string label;
+    LibraryBreadcrumbTarget target = LibraryBreadcrumbTarget::Root;
+    bool clickable = false;
+};
+
 struct LibraryView {
     const std::vector<LibraryRow>* rows = nullptr;
     std::string breadcrumb;
+    std::vector<LibraryBreadcrumbPart> breadcrumb_parts;
     std::string search;
     std::string message;
     std::string pack_location;
@@ -149,6 +158,7 @@ public:
     bool unicode_text_available() const;
     const std::string& text_status() const;
     static bool probe_japanese_font(const std::string& requested, std::string& status);
+    int library_breadcrumb_at(float x, float y) const;
 
 private:
     struct TextState;
@@ -182,6 +192,7 @@ private:
     int meter_track_ = -1;
     std::string marquee_text_;
     float marquee_x_ = 0.0f;
+    std::vector<SDL_FRect> library_breadcrumb_hits_;
 };
 
 } // namespace hootgui

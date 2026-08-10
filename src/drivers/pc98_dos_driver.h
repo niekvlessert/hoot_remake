@@ -174,6 +174,7 @@ private:
     bool uses_pmd98_bridge_ = false;
     bool bridge_stdin_filename_ = false;
     bool bare_mode_ = false;
+    bool pc88va_mode_ = false;
     bool bare_segmented_addresses_ = false;
     uint16_t bare_boot_cs_ = 0x0060;
     uint16_t bare_boot_ip_ = 0x0000;
@@ -273,8 +274,6 @@ private:
     uint16_t fm_timer_a_ = 0;
     uint8_t fm_timer_b_ = 0;
     uint8_t fm_mode_ = 0;
-    // YM2203/YM2608 reset with the 1/6 prescaler path selected (selector 2).
-    uint8_t fm_prescaler_sel_ = 2;
     uint8_t fm_status_ = 0;
     int fm_timer_a_interval_frames_ = 0;
     int fm_timer_a_frames_until_next_ = 0;
@@ -331,6 +330,8 @@ private:
     static constexpr uint32_t kDosEntryPoint = 0x0100;
     static constexpr uint16_t kIretOffset = 0x00f0;
     static constexpr uint16_t kHaltOffset = 0x00f1;
+    static constexpr uint16_t kPc88vaHaltSegment = 0xf000;
+    static constexpr uint16_t kPc88vaHaltOffset = 0xfff0;
     static constexpr uint16_t kBridgeBufferOffset = 0x0000;
     static constexpr uint16_t kBridgeBufferParagraphs = 0x0010;
     static constexpr uint16_t kResidentDataOffset = 0x4000;

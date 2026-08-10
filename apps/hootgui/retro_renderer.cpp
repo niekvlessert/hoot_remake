@@ -785,7 +785,27 @@ void RetroRenderer::draw_library(const LibraryView& library)
     rect(px, py, pw, ph, kBrightBlue[0], kBrightBlue[1], kBrightBlue[2]);
     fill(px + 1, py + 1, pw - 2, header_h, 20, 27, 61);
     text(px + 20, py + 15, "Hoot Library", 1.55f);
-    clipped_text(px + 190, py + 20, pw - 250, library.breadcrumb, 0.95f);
+    library_breadcrumb_hits_.clear();
+    if (library.breadcrumb_parts.empty()) {
+        clipped_text(px + 190, py + 20, pw - 250, library.breadcrumb, 0.95f);
+    } else {
+        float breadcrumb_x = px + 190.0f;
+        for (std::size_t i = 0; i < library.breadcrumb_parts.size(); ++i) {
+            const auto& part = library.breadcrumb_parts[i];
+            if (i > 0) {
+                const std::string separator = i == 1 ? " " : " / ";
+                text(breadcrumb_x, py + 20, separator, 0.95f);
+                breadcrumb_x += measure_text_width(separator, 0.95f);
+            }
+            const float part_width = measure_text_width(part.label, 0.95f);
+            if (part.clickable)
+                line(breadcrumb_x, py + 45, breadcrumb_x + part_width, py + 45, 104, 132, 255);
+            text(breadcrumb_x, py + 20, part.label, 0.95f);
+            library_breadcrumb_hits_.push_back({breadcrumb_x, py + 8,
+                                                 part.clickable ? part_width : 0.0f, 42});
+            breadcrumb_x += part_width;
+        }
+    }
 
     if (library.can_edit) {
         fill(px + pw - 170, py + 13, 108, 32, 29, 43, 91);
@@ -839,6 +859,7 @@ void RetroRenderer::draw_library(const LibraryView& library)
 
         std::string prefix;
         switch (item.kind) {
+        case LibraryRowKind::Parent: prefix = "< "; break;
         case LibraryRowKind::Folder: prefix = "> "; break;
         case LibraryRowKind::Entry: prefix = "  "; break;
         case LibraryRowKind::Track: prefix = "  "; break;
@@ -871,6 +892,15 @@ void RetroRenderer::draw_library(const LibraryView& library)
              "Based on original Hoot: driver family / subtype / game / tracks. Folder positions are remembered.", 0.80f);
 }
 
+int RetroRenderer::library_breadcrumb_at(float x, float y) const
+{
+    for (std::size_t i = 0; i < library_breadcrumb_hits_.size(); ++i) {
+        const auto& hit = library_breadcrumb_hits_[i];
+        if (hit.w > 0.0f && x >= hit.x && x < hit.x + hit.w && y >= hit.y && y < hit.y + hit.h)
+            return static_cast<int>(i);
+    }
+    return -1;
+}
 
 
 void RetroRenderer::draw_catalog_editor(const CatalogEditorView& editor)

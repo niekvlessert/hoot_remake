@@ -144,10 +144,7 @@ HootResult MicrocabinPc88Driver::load(const HootEntry& entry,
     for (const auto& asset : entry.assets) {
         std::vector<uint8_t> data;
         const auto result = load_member(archive, asset, entry.archive, packs_path, data, error);
-        if (result != HOOT_OK) {
-            return result;
-        }
-
+        if (result != HOOT_OK) return result;
         if (asset.type == "code") {
             if (asset.offset >= ram_.size()) {
                 error = "code asset offset is outside RAM: " + asset.path;
@@ -195,17 +192,20 @@ HootResult MicrocabinPc88Driver::select_track(const HootEntry& entry,
     selected_track_ = track_index;
     selected_code_ = entry.tracks[track_index].code;
     trace_event("select-track", static_cast<uint32_t>(track_index), selected_code_);
-    if (selected_code_ < kMaxSlots && bgm_present_[selected_code_]) {
+    const uint32_t bgm_slot = selected_code_ & 0xffffu;
+    const uint32_t voice_slot = (selected_code_ >> 16) != 0
+        ? ((selected_code_ >> 16) & 0xffu) : bgm_slot;
+    if (bgm_slot < kMaxSlots && bgm_present_[bgm_slot]) {
         const auto mdata_addr = static_cast<uint16_t>(options_.count("mdata_addr") ? options_["mdata_addr"] : 0xf800);
         const auto mdata_size = static_cast<size_t>(options_.count("mdata_size") ? options_["mdata_size"] : kBgmSlotSize);
-        const auto source_offset = static_cast<size_t>(selected_code_) * kBgmSlotSize;
-        const auto count = std::min({mdata_size, static_cast<size_t>(bgm_size_[selected_code_]), ram_.size() - mdata_addr});
+        const auto source_offset = static_cast<size_t>(bgm_slot) * kBgmSlotSize;
+        const auto count = std::min({mdata_size, static_cast<size_t>(bgm_size_[bgm_slot]), ram_.size() - mdata_addr});
         std::copy_n(
             bgm_.begin() + static_cast<std::ptrdiff_t>(source_offset),
             count,
             ram_.begin() + mdata_addr);
     }
-    const auto voice = voices_.find(selected_code_);
+    const auto voice = voices_.find(voice_slot);
     if (voice != voices_.end()) {
         const auto vdata_addr = static_cast<uint16_t>(options_.count("vdata_addr") ? options_["vdata_addr"] : 0xf400);
         const auto count = std::min(voice->second.size(), ram_.size() - vdata_addr);
@@ -409,7 +409,6 @@ void MicrocabinPc88Driver::clear()
     opn_key_on_.fill(0);
     opn_timer_b_ = 0;
     opn_mode_ = 0;
-    opn_prescaler_sel_ = 2;
     irq_interval_frames_ = 0;
     irq_frames_until_next_ = 0;
     debug_port_writes_.fill(0);
@@ -450,6 +449,14 @@ uint8_t MicrocabinPc88Driver::read_io(uint16_t port)
         return io_[low_port];
     case 0x01:
         io_[low_port] = static_cast<uint8_t>(selected_code_ & 0xff);
+        trace_event("io-read", low_port, io_[low_port]);
+        return io_[low_port];
+    case 0x02:
+        io_[low_port] = static_cast<uint8_t>((selected_code_ >> 8) & 0xff);
+        trace_event("io-read", low_port, io_[low_port]);
+        return io_[low_port];
+    case 0x03:
+        io_[low_port] = static_cast<uint8_t>((selected_code_ >> 16) & 0xff);
         trace_event("io-read", low_port, io_[low_port]);
         return io_[low_port];
     case 0x44:
@@ -534,18 +541,6 @@ void MicrocabinPc88Driver::update_opn_timer(uint8_t reg, uint8_t data)
         opn_mode_ = data;
         refresh_irq_interval();
         break;
-    case 0x2d:
-        opn_prescaler_sel_ |= 0x02;
-        refresh_irq_interval();
-        break;
-    case 0x2e:
-        opn_prescaler_sel_ |= 0x01;
-        refresh_irq_interval();
-        break;
-    case 0x2f:
-        opn_prescaler_sel_ = 0;
-        refresh_irq_interval();
-        break;
     default:
         break;
     }
@@ -553,16 +548,14 @@ void MicrocabinPc88Driver::update_opn_timer(uint8_t reg, uint8_t data)
 
 void MicrocabinPc88Driver::refresh_irq_interval()
 {
-    if ((opn_mode_ & 0x0a) != 0x0a || opn_timer_b_ == 0xff) {
+    if ((opn_mode_ & 0x0a) != 0x0a) {
         irq_interval_frames_ = 0;
         irq_frames_until_next_ = 0;
         return;
     }
 
-    static constexpr int kTimerPrescalerBySel[4] = {24, 24, 72, 36};
-    const int timer_prescaler = kTimerPrescalerBySel[opn_prescaler_sel_ & 0x03];
     const double timer_seconds =
-        static_cast<double>((256 - opn_timer_b_) << 4) * static_cast<double>(timer_prescaler) / 3993600.0;
+        static_cast<double>((256 - opn_timer_b_) << 4) * 72.0 / 3993600.0;
     irq_interval_frames_ = std::max(1, static_cast<int>(std::lround(timer_seconds * sample_rate_)));
     if (irq_frames_until_next_ <= 0) {
         irq_frames_until_next_ = irq_interval_frames_;

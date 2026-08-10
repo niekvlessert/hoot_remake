@@ -41,6 +41,34 @@ std::string hex_slot(uint32_t slot)
     return out.str();
 }
 
+bool load_shared_driver_component(const std::filesystem::path& packs_path,
+                                  const std::string& current_archive,
+                                  const std::string& member,
+                                  std::vector<uint8_t>& out)
+{
+    std::vector<std::vector<uint8_t>> candidates;
+    std::error_code ec;
+    for (const auto& item : std::filesystem::directory_iterator(packs_path, ec)) {
+        if (ec || !item.is_regular_file() || item.path().extension() != ".zip"
+            || item.path().stem() == current_archive) {
+            continue;
+        }
+        ZipArchive candidate_archive;
+        std::string candidate_error;
+        if (!candidate_archive.open(item.path(), candidate_error)) continue;
+        auto data = candidate_archive.read(member, candidate_error);
+        if (candidate_error.empty() && !data.empty()) {
+            candidates.push_back(std::move(data));
+        }
+    }
+    if (candidates.empty()) return false;
+    // MMD residents are backward-compatible; prefer the smallest matching
+    // generation when an old pack omitted its shared copy.
+    out = std::move(*std::min_element(candidates.begin(), candidates.end(),
+        [](const auto& a, const auto& b) { return a.size() < b.size(); }));
+    return true;
+}
+
 } // namespace
 
 HootResult MicrocabinPc98DosDriver::load(const HootEntry& entry,
@@ -50,6 +78,7 @@ HootResult MicrocabinPc98DosDriver::load(const HootEntry& entry,
 {
     clear();
     sample_rate_ = sample_rate;
+    pc88va_mode_ = entry.driver_name.rfind("pc88vados/", 0) == 0;
 
     const auto archive_path = std::filesystem::path(packs_path) / (entry.archive + ".zip");
     ZipArchive archive;
@@ -63,7 +92,11 @@ HootResult MicrocabinPc98DosDriver::load(const HootEntry& entry,
             auto driver_name = first_token(asset.path);
             auto data = archive.read(driver_name, error);
             if (!error.empty()) {
-                return HOOT_ERROR_IO;
+                if (!pc88va_mode_
+                    || !load_shared_driver_component(packs_path, entry.archive, driver_name, data)) {
+                    return HOOT_ERROR_IO;
+                }
+                error.clear();
             }
             mmd_sys_ = std::move(data);
             continue;
@@ -78,6 +111,10 @@ HootResult MicrocabinPc98DosDriver::load(const HootEntry& entry,
 
         auto data = archive.read(asset.path, error);
         if (!error.empty()) {
+            if (pc88va_mode_ && has_negative_offset(asset.offset)) {
+                error.clear();
+                continue;
+            }
             return HOOT_ERROR_IO;
         }
         if (asset.path == "MMD.SYS" || asset.path == "MMD2.SYS" || asset.path == "mmd.sys") {
@@ -98,6 +135,13 @@ HootResult MicrocabinPc98DosDriver::load(const HootEntry& entry,
     if (shell_command_.empty()) {
         error = "pc98dos Microcabin entry did not provide a shell command";
         return HOOT_ERROR_NOT_FOUND;
+    }
+    if (mmd_helper_.empty() && pc88va_mode_) {
+        // mmd2va only forwards host commands and streams to the resident MMD
+        // API. Invoke that API directly and park the otherwise unused helper
+        // context instead of requiring the tiny DOS bridge binary.
+        mmd_helper_.assign(0x2d, 0);
+        mmd_helper_[0x2c] = 0xf4;
     }
     if (mmd_helper_.empty()) {
         error = "pc98dos Microcabin entry did not provide helper executable " + shell_command_;
@@ -249,9 +293,9 @@ void MicrocabinPc98DosDriver::fill_visual_state(const HootEntry&, int, HootVisua
 {
     out.abi_version = HOOT_VISUAL_ABI_VERSION;
     out.struct_size = sizeof(out);
-    visual::copy(out.architecture, "PC-98");
-    visual::copy(out.cpu, "V30 / x86");
-    visual::copy(out.device, "YM2608");
+    visual::copy(out.architecture, pc88va_mode_ ? "PC-88VA" : "PC-98");
+    visual::copy(out.cpu, pc88va_mode_ ? "V50 / x86" : "V30 / x86");
+    visual::copy(out.device, pc88va_mode_ ? "YM2203" : "YM2608");
     visual::copy(out.driver, name());
     if (cpu_) {
         visual::add_register(out, "AX", cpu_->get_ax()); visual::add_register(out, "BX", cpu_->get_bx());
@@ -262,14 +306,17 @@ void MicrocabinPc98DosDriver::fill_visual_state(const HootEntry&, int, HootVisua
         visual::add_register(out, "SS", cpu_->get_ss()); visual::add_register(out, "IP", cpu_->get_pc());
         visual::add_register(out, "FL", cpu_->get_flags());
     }
-    for (int ch = 0; ch < 6; ++ch) {
+    const int fm_channels = pc88va_mode_ ? 3 : 6;
+    const double fm_clock = pc88va_mode_ ? 3993600.0 : 7987200.0;
+    const char* chip_name = pc88va_mode_ ? "YM2203" : "YM2608";
+    for (int ch = 0; ch < fm_channels; ++ch) {
         const int bank = ch >= 3; const int local = ch % 3;
-        auto* v = visual::add_channel(out, HOOT_VISUAL_CHANNEL_FM, ch, "YM2608 FM#" + std::to_string(ch));
+        auto* v = visual::add_channel(out, HOOT_VISUAL_CHANNEL_FM, ch, std::string(chip_name) + " FM#" + std::to_string(ch));
         if (!v) break;
         const uint16_t fnum = static_cast<uint16_t>(opna_registers_[bank][0xa0 + local] | ((opna_registers_[bank][0xa4 + local] & 7) << 8));
         const uint8_t block = (opna_registers_[bank][0xa4 + local] >> 3) & 7;
         v->active = opna_key_on_[static_cast<size_t>(ch)];
-        v->midi_note = visual::opn_fnum_to_midi(fnum, block, 7987200.0);
+        v->midi_note = visual::opn_fnum_to_midi(fnum, block, fm_clock);
         if (v->midi_note >= 0 && v->midi_note < 64) v->key_mask_lo = 1ull << v->midi_note;
         if (v->midi_note >= 64) v->key_mask_hi = 1ull << (v->midi_note - 64);
         v->volume = visual::inverse_tl_volume(opna_registers_[bank][0x4c + local]);
@@ -278,17 +325,19 @@ void MicrocabinPc98DosDriver::fill_visual_state(const HootEntry&, int, HootVisua
     }
     const uint8_t mixer = opna_registers_[0][7];
     for (int ch = 0; ch < 3; ++ch) {
-        auto* v = visual::add_channel(out, HOOT_VISUAL_CHANNEL_SSG, ch, "YM2608 SSG#" + std::to_string(ch));
+        auto* v = visual::add_channel(out, HOOT_VISUAL_CHANNEL_SSG, ch, std::string(chip_name) + " SSG#" + std::to_string(ch));
         if (!v) break;
         const uint16_t period = static_cast<uint16_t>(opna_registers_[0][ch*2] | ((opna_registers_[0][ch*2+1] & 15) << 8));
         const int vol = opna_registers_[0][8+ch] & 15; const bool tone=(mixer&(1u<<ch))==0; const bool noise=(mixer&(1u<<(ch+3)))==0;
-        v->active = vol && (tone || noise); v->midi_note = tone && period ? visual::frequency_to_midi(7987200.0/(64.0*period)) : -1;
+        v->active = vol && (tone || noise); v->midi_note = tone && period ? visual::frequency_to_midi(fm_clock/(64.0*period)) : -1;
         if (v->midi_note >= 0 && v->midi_note < 64) v->key_mask_lo = 1ull << v->midi_note;
         if (v->midi_note >= 64) v->key_mask_hi = 1ull << (v->midi_note - 64);
         v->volume = std::clamp(vol*8+(vol?7:0),0,127); v->level = v->active ? static_cast<float>(v->volume)/127.0f : 0.0f;
     }
-    auto* ad=visual::add_channel(out,HOOT_VISUAL_CHANNEL_ADPCM,0,"YM2608 ADPCM#0"); if(ad){ ad->active=(opna_registers_[1][0]&0x80)!=0; ad->volume=opna_registers_[1][0x0b]&0x7f; ad->pan=visual::opn_pan(opna_registers_[1][1]); ad->level=ad->active?static_cast<float>(ad->volume)/127.0f:0.0f; }
-    for(int ch=0;ch<6;++ch){ auto*r=visual::add_channel(out,HOOT_VISUAL_CHANNEL_RHYTHM,ch,"YM2608 RHYTHM#"+std::to_string(ch)); if(!r)break; r->volume=std::clamp((0x3f-static_cast<int>(opna_registers_[0][0x11]&0x3f))*2,0,127); r->pan=visual::opn_pan(opna_registers_[0][0x18+ch]); r->active=r->volume!=0; r->level=r->active?static_cast<float>(r->volume)/127.0f:0.0f; }
+    if (!pc88va_mode_) {
+        auto* ad=visual::add_channel(out,HOOT_VISUAL_CHANNEL_ADPCM,0,"YM2608 ADPCM#0"); if(ad){ ad->active=(opna_registers_[1][0]&0x80)!=0; ad->volume=opna_registers_[1][0x0b]&0x7f; ad->pan=visual::opn_pan(opna_registers_[1][1]); ad->level=ad->active?static_cast<float>(ad->volume)/127.0f:0.0f; }
+        for(int ch=0;ch<6;++ch){ auto*r=visual::add_channel(out,HOOT_VISUAL_CHANNEL_RHYTHM,ch,"YM2608 RHYTHM#"+std::to_string(ch)); if(!r)break; r->volume=std::clamp((0x3f-static_cast<int>(opna_registers_[0][0x11]&0x3f))*2,0,127); r->pan=visual::opn_pan(opna_registers_[0][0x18+ch]); r->active=r->volume!=0; r->level=r->active?static_cast<float>(r->volume)/127.0f:0.0f; }
+    }
     if (cpu_) {
         out.driver_work_base = (static_cast<uint32_t>(cpu_->get_ds()) << 4);
         out.driver_work_size = std::min<uint32_t>(HOOT_VISUAL_DRIVER_WORK_MAX, kMemorySize - std::min<uint32_t>(out.driver_work_base, kMemorySize));
@@ -349,10 +398,10 @@ void MicrocabinPc98DosDriver::fill_track_info(const HootEntry& entry,
 
 bool MicrocabinPc98DosDriver::channel_mute_supported(int kind, int index) const
 {
-    if (kind == HOOT_VISUAL_CHANNEL_FM) return index >= 0 && index < 6;
+    if (kind == HOOT_VISUAL_CHANNEL_FM) return index >= 0 && index < (pc88va_mode_ ? 3 : 6);
     if (kind == HOOT_VISUAL_CHANNEL_SSG) return index >= 0 && index < 3;
-    if (kind == HOOT_VISUAL_CHANNEL_ADPCM) return index == 0;
-    if (kind == HOOT_VISUAL_CHANNEL_RHYTHM) return index >= 0 && index < 6;
+    if (kind == HOOT_VISUAL_CHANNEL_ADPCM) return !pc88va_mode_ && index == 0;
+    if (kind == HOOT_VISUAL_CHANNEL_RHYTHM) return !pc88va_mode_ && index >= 0 && index < 6;
     return false;
 }
 
@@ -381,7 +430,7 @@ void MicrocabinPc98DosDriver::clear_channel_mutes()
 
 const char* MicrocabinPc98DosDriver::name() const
 {
-    return "microcabin-pc98dos-opn";
+    return pc88va_mode_ ? "pc88vados-mmd-opn" : "microcabin-pc98dos-opn";
 }
 
 void MicrocabinPc98DosDriver::clear()
@@ -403,6 +452,7 @@ void MicrocabinPc98DosDriver::clear()
     selected_code_ = 0;
     loaded_ = false;
     playing_ = false;
+    pc88va_mode_ = false;
     command_pending_ = false;
     command_latch_ = 0;
     command_low_ = 0xff;
@@ -456,8 +506,10 @@ bool MicrocabinPc98DosDriver::setup_runtime(std::string& error)
     cpu_->set_interrupt_callback([this](uint8_t int_num) { handle_interrupt(int_num); });
 
     ym2608_ = std::make_unique<LibvgmYm2608>();
-    if (!ym2608_->initialize(7'987'200, static_cast<uint32_t>(sample_rate_))) {
-        error = "failed to initialize YM2608 for Microcabin PC-98 DOS driver";
+    const uint32_t fm_clock = pc88va_mode_ ? 3'993'600u : 7'987'200u;
+    if (!ym2608_->initialize(fm_clock, static_cast<uint32_t>(sample_rate_))) {
+        error = std::string("failed to initialize FM core for Microcabin ")
+            + (pc88va_mode_ ? "PC-88VA DOS" : "PC-98 DOS") + " driver";
         return false;
     }
 
@@ -793,9 +845,11 @@ uint8_t MicrocabinPc98DosDriver::read_io_port(uint16_t port)
         debug_last_mailbox_port_ = static_cast<uint8_t>(port & 0xff);
         debug_last_mailbox_value_ = selected_bgm_data_.empty() ? 0 : selected_file_handle_;
         return debug_last_mailbox_value_;
+    case 0x0044:
     case 0x0088:
     case 0x008b:
         return ym2608_ ? ym2608_->read(0) : 0xff;
+    case 0x0045:
     case 0x0089:
     case 0x008a:
         return opna_registers_[0][current_opna_address_[0]];
@@ -824,10 +878,10 @@ void MicrocabinPc98DosDriver::write_io_port(uint16_t port, uint8_t data)
     if (!ym2608_) {
         return;
     }
-    if (port == 0x0088 || port == 0x0188) {
+    if (port == 0x0044 || port == 0x0088 || port == 0x0188) {
         current_opna_address_[0] = data;
         ym2608_->write(0, data);
-    } else if (port == 0x0089 || port == 0x008a || port == 0x018a) {
+    } else if (port == 0x0045 || port == 0x0089 || port == 0x008a || port == 0x018a) {
         ++debug_opna_writes_;
         if (current_opna_address_[0] < 0x10) {
             ++debug_opna_ssg_writes_;
@@ -1067,7 +1121,7 @@ double MicrocabinPc98DosDriver::mmd_timer_rate_hz() const
         }
     }
 
-    constexpr double kPc98OpnaClock = 7987200.0;
+    const double fm_clock = pc88va_mode_ ? 3993600.0 : 7987200.0;
     // The original MMD2 DOS host dispatches two service phases per raw Timer A
     // period. Later resident builds use the established half-rate callback.
     const double opna_timer_clock_divisor = mmd2_api_ ? 36.0 : 144.0;
@@ -1078,7 +1132,7 @@ double MicrocabinPc98DosDriver::mmd_timer_rate_hz() const
     if (period <= 0) {
         return 60.0;
     }
-    return (kPc98OpnaClock / opna_timer_clock_divisor) / static_cast<double>(period);
+    return (fm_clock / opna_timer_clock_divisor) / static_cast<double>(period);
 }
 
 } // namespace hoot

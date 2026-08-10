@@ -252,6 +252,47 @@ DriverProbeResult probe_pc98_bare(const HootEntry& entry)
     return {DriverSupportStatus::Experimental, id, reason.str()};
 }
 
+DriverProbeResult probe_pc88va_bare(const HootEntry& entry)
+{
+    if (entry.driver_name.rfind("pc88va/", 0) != 0) return {};
+    const auto slash = entry.driver_name.find('/');
+    const std::string type = slash == std::string::npos
+        ? std::string{} : entry.driver_name.substr(slash + 1);
+    if (type != "opn" && type != "opna") return {};
+
+    const std::string id = std::string("pc88va-bare-") + type;
+    bool has_code = false;
+    for (const auto& asset : entry.assets) {
+        if (asset.type == "code") has_code = true;
+    }
+    if (!has_code) {
+        return {DriverSupportStatus::Recognized, id,
+                "PC-88VA bare replay entry recognized, but no code asset is present"};
+    }
+    return {DriverSupportStatus::Experimental, id,
+            std::string("generic PC-88VA V50 bare replay host loads catalog code and BGM assets, implements the Hoot control/loader port ABI, vertical-sync and FM timer interrupts, and PC-88VA FM port aliases with ")
+                + (type == "opn" ? "YM2203 OPN" : "YM2608 OPNA")};
+}
+
+DriverProbeResult probe_pc88vados(const HootEntry& entry)
+{
+    if (entry.driver_name.rfind("pc88vados/", 0) != 0) return {};
+    const auto slash = entry.driver_name.find('/');
+    const std::string type = slash == std::string::npos
+        ? std::string{} : entry.driver_name.substr(slash + 1);
+    if (type != "opn" && type != "opna") return {};
+
+    const std::string id = std::string("pc88vados-v50-") + type;
+    const auto shells = shell_names(entry);
+    if (shells.empty()) {
+        return {DriverSupportStatus::Recognized, id,
+                "PC-88VA DOS replay entry recognized, but no shell command is present"};
+    }
+    return {DriverSupportStatus::Experimental, id,
+            std::string("generic PC-88VA DOS MMD compatibility bridge with archive file/device services and ")
+                + (type == "opn" ? "YM2203 OPN" : "YM2608 OPNA")};
+}
+
 DriverProbeResult probe_x68k_mxdrv(const HootEntry& entry)
 {
     if (entry.driver_name != "x68k/mxdrv") return {};
@@ -367,6 +408,14 @@ DriverRegistry::DriverRegistry()
     registrations_.push_back({
         "microcabin-pc98dos-opna",
         probe_microcabin_pc98,
+        [] { return std::make_unique<MicrocabinPc98DosDriver>(); }});
+    registrations_.push_back({
+        "pc88va-bare",
+        probe_pc88va_bare,
+        [] { return std::make_unique<Pc98DosDriver>(); }});
+    registrations_.push_back({
+        "pc88vados-v50",
+        probe_pc88vados,
         [] { return std::make_unique<MicrocabinPc98DosDriver>(); }});
     registrations_.push_back({
         "pc98-bare",

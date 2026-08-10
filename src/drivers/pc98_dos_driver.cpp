@@ -195,7 +195,10 @@ HootResult Pc98DosDriver::load(const HootEntry& entry,
         clock_multiplier_ = std::clamp(clockmul->second, 1, 64);
     }
 
-    bare_mode_ = entry.driver_name.rfind("pc98/", 0) == 0
+    const bool pc88va_bare = entry.driver_name.rfind("pc88va/", 0) == 0;
+    pc88va_mode_ = pc88va_bare || entry.driver_name.rfind("pc88vados/", 0) == 0;
+    bare_mode_ = pc88va_bare
+        || entry.driver_name.rfind("pc98/", 0) == 0
         || entry.driver_name.rfind("pc98vx/", 0) == 0;
     if (bare_mode_) {
         driver_type_ = DriverType::Bare;
@@ -382,7 +385,8 @@ HootResult Pc98DosDriver::load(const HootEntry& entry,
         return HOOT_ERROR_NOT_FOUND;
     }
     if (bare_mode_ && bare_chunks_.empty()) {
-        error = "PC-98 bare entry did not provide any code assets";
+        error = std::string(pc88va_mode_ ? "PC-88VA" : "PC-98")
+            + " bare entry did not provide any code assets";
         return HOOT_ERROR_NOT_FOUND;
     }
 
@@ -481,7 +485,8 @@ HootResult Pc98DosDriver::load(const HootEntry& entry,
 
     if (use_ym2203_) {
         ym2203_ = std::make_unique<LibvgmYm2203>();
-        if (!ym2203_->initialize(3'993'632, static_cast<uint32_t>(sample_rate_))) {
+        const uint32_t clock = pc88va_mode_ ? 3'993'600u : 3'993'632u;
+        if (!ym2203_->initialize(clock, static_cast<uint32_t>(sample_rate_))) {
             error = "failed to initialize YM2203 sound chip";
             return HOOT_ERROR_UNSUPPORTED;
         }
@@ -490,7 +495,8 @@ HootResult Pc98DosDriver::load(const HootEntry& entry,
         }
     } else if (!use_beep_ && !use_sb16_ && !use_amd98_ && !use_px_) {
         ym2608_ = std::make_unique<LibvgmYm2608>();
-        if (!ym2608_->initialize(7'967'264, static_cast<uint32_t>(sample_rate_))) {
+        const uint32_t clock = pc88va_mode_ ? 7'987'200u : 7'967'264u;
+        if (!ym2608_->initialize(clock, static_cast<uint32_t>(sample_rate_))) {
             error = "failed to initialize YM2608 sound chip";
             return HOOT_ERROR_UNSUPPORTED;
         }
@@ -556,7 +562,7 @@ HootResult Pc98DosDriver::load(const HootEntry& entry,
     }
 
     if (!setup_memory()) {
-        error = "failed to setup PC-98 memory";
+        error = std::string("failed to setup ") + (pc88va_mode_ ? "PC-88VA" : "PC-98") + " memory";
         return HOOT_ERROR_UNSUPPORTED;
     }
 
@@ -566,12 +572,22 @@ HootResult Pc98DosDriver::load(const HootEntry& entry,
         for (const auto& chunk : bare_chunks_) {
             if (chunk.address >= 1024u * 1024u
                 || chunk.data.size() > 1024u * 1024u - chunk.address) {
-                error = "PC-98 code/patch asset exceeds the 1 MiB guest address space";
+                error = std::string(pc88va_mode_ ? "PC-88VA" : "PC-98")
+                    + " code/patch asset exceeds the 1 MiB guest address space";
                 return HOOT_ERROR_PARSE;
             }
             for (size_t i = 0; i < chunk.data.size(); ++i) {
                 write_memory_byte(chunk.address + static_cast<uint32_t>(i), chunk.data[i]);
             }
+        }
+        if (pc88va_mode_) {
+            // PC-88VA BIOS images occupy low memory, including the PC-98
+            // host's normal 0000:00F1 interrupt-return trampoline. Keep the
+            // VA idle loop at the reset-vector end of its 1 MiB address space.
+            const uint32_t halt = bare_linear_address(kPc88vaHaltSegment, kPc88vaHaltOffset);
+            write_memory_byte(halt, 0xf4);
+            write_memory_byte(halt + 1, 0xeb);
+            write_memory_byte(halt + 2, 0xfd);
         }
         cpu_->clear_halted();
         cpu_->set_cs(bare_boot_cs_);
@@ -667,8 +683,8 @@ HootResult Pc98DosDriver::select_track(const HootEntry& entry,
             trigger_interrupt_vector(function_vector_, 5'000'000);
         }
         bare_interrupt_reason_ = 0xff;
-        cpu_->set_cs(0x0000);
-        cpu_->set_pc(kHaltOffset);
+        cpu_->set_cs(pc88va_mode_ ? kPc88vaHaltSegment : 0x0000);
+        cpu_->set_pc(pc88va_mode_ ? kPc88vaHaltOffset : kHaltOffset);
         cpu_->set_ss(kProgramSegment);
         cpu_->set_sp(0xfffe);
         cpu_->halt();
@@ -797,7 +813,6 @@ void Pc98DosDriver::reset()
     fm_timer_a_ = 0;
     fm_timer_b_ = 0;
     fm_mode_ = 0;
-    fm_prescaler_sel_ = 2;
     fm_status_ = 0;
     fm_timer_a_interval_frames_ = 0;
     fm_timer_a_frames_until_next_ = 0;
@@ -852,12 +867,12 @@ int Pc98DosDriver::render_s16(int16_t* interleaved_stereo, int frames)
                 service_fm_timer_irq(0x02);
             }
             if (timer_frames_until_tick_ <= 0.0) {
-                // PC-98 vertical retrace is IRQ2 / INT 0Ah. Bare pc98/pc98vx
-                // wrappers may use it even when the sound target is FM, while
-                // DOS PMDB uses it for PIT-speaker sequencing.
+                // PC-88VA maps vertical sync to INT 08h and the FM-board
+                // interrupt to INT 14h. PC-98 vertical retrace is IRQ2/INT 0Ah.
+                const uint8_t vrtc_vector = pc88va_mode_ ? 0x08 : 0x0a;
                 if ((driver_type_ == DriverType::Bare || use_beep_)
-                    && is_interrupt_vector_active(0x0a)) {
-                    trigger_interrupt_vector(0x0a, 200000);
+                    && is_interrupt_vector_active(vrtc_vector)) {
+                    trigger_interrupt_vector(vrtc_vector, 200000);
                     ++debug_beep_vrtc_irqs_;
                 }
                 if (driver_type_ == DriverType::Shell) {
@@ -1123,8 +1138,8 @@ void Pc98DosDriver::fill_visual_state(const HootEntry&, int, HootVisualState& ou
 {
     out.abi_version = HOOT_VISUAL_ABI_VERSION;
     out.struct_size = sizeof(out);
-    visual::copy(out.architecture, pc9821_mode_ ? "PC-9821" : "PC-98");
-    visual::copy(out.cpu, "V30 / x86");
+    visual::copy(out.architecture, pc88va_mode_ ? "PC-88VA" : (pc9821_mode_ ? "PC-9821" : "PC-98"));
+    visual::copy(out.cpu, pc88va_mode_ ? "V50 / x86" : "V30 / x86");
     std::string devices;
     if (ym2608_) devices += "YM2608";
     else if (ym2203_) devices += "YM2203";
@@ -1344,6 +1359,10 @@ void Pc98DosDriver::clear_channel_mutes()
 
 const char* Pc98DosDriver::name() const
 {
+    if (pc88va_mode_) {
+        if (bare_mode_) return use_ym2203_ ? "pc88va-bare-opn" : "pc88va-bare-opna";
+        return use_ym2203_ ? "pc88vados-v50-opn" : "pc88vados-v50-opna";
+    }
     if (use_sound_orchestra_) return bare_mode_ ? "pc98-bare-soundorchestra" : "pc98dos-v30-soundorchestra";
     if (use_sb16_) return "pc98dos-v30-sb16";
     if (use_amd98_) return bare_mode_ ? "pc98-bare-amd98" : "pc98dos-v30-amd98";
@@ -1370,6 +1389,7 @@ const char* Pc98DosDriver::name() const
 void Pc98DosDriver::clear()
 {
     pc9821_mode_ = false;
+    pc88va_mode_ = false;
     files_by_slot_.clear();
     files2_by_slot_.clear();
     files_by_name_.clear();
@@ -1478,7 +1498,6 @@ void Pc98DosDriver::clear()
     fm_timer_a_ = 0;
     fm_timer_b_ = 0;
     fm_mode_ = 0;
-    fm_prescaler_sel_ = 2;
     fm_status_ = 0;
     fm_timer_a_interval_frames_ = 0;
     fm_timer_a_frames_until_next_ = 0;
@@ -2172,7 +2191,8 @@ uint8_t Pc98DosDriver::read_io_port(uint16_t port)
         return value;
     }
 
-    if (port == 0x88 || port == 0x8B || port == 0x188) {
+    if (port == 0x88 || port == 0x8B || port == 0x188
+        || (pc88va_mode_ && port == 0x44)) {
         if (use_ym2203_ && uses_hhd98_bridge_ && cpu_ && cpu_->get_pc() == 0x067d) {
             if (trace_dos_) {
                 std::fprintf(stderr, "pc98dos hhd timer-status pc=%04x\n", cpu_->get_pc());
@@ -2189,7 +2209,8 @@ uint8_t Pc98DosDriver::read_io_port(uint16_t port)
         trace_io_event("in", port, value);
         return value;
     }
-    if (port == 0x89 || port == 0x8A || port == 0x18A) {
+    if (port == 0x89 || port == 0x8A || port == 0x18A
+        || (pc88va_mode_ && port == 0x45)) {
         // YM2608 register FFh is the chip-identification register.  PC-98
         // utilities such as PCMSET probe it through each candidate I/O base
         // and require the documented value 01h before using the extended
@@ -2202,7 +2223,8 @@ uint8_t Pc98DosDriver::read_io_port(uint16_t port)
         trace_io_event("in", port, value);
         return value;
     }
-    if (port == 0x8C || port == 0x8F || port == 0x18C) {
+    if (port == 0x8C || port == 0x8F || port == 0x18C
+        || (pc88va_mode_ && port == 0x46)) {
         // On the PC-9801-86, A460h bit 0 controls decode of the extended
         // YM2608 port pair. PMD86 deliberately clears it during board
         // detection and expects the disabled ports to float high (FFh).
@@ -2214,7 +2236,8 @@ uint8_t Pc98DosDriver::read_io_port(uint16_t port)
         trace_io_event("in", port, value);
         return value;
     }
-    if (port == 0x8D || port == 0x8E || port == 0x18E) {
+    if (port == 0x8D || port == 0x8E || port == 0x18E
+        || (pc88va_mode_ && port == 0x47)) {
         if (pcm86_ && !pcm86_->extended_opna_enabled() && port == 0x18E) {
             value = 0xff;
         } else {
@@ -2280,10 +2303,12 @@ void Pc98DosDriver::write_io_port(uint16_t port, uint8_t data)
         return;
     }
 
-    if (port == 0x88 || port == 0x188) {
+    if (port == 0x88 || port == 0x188 || (pc88va_mode_ && port == 0x44)) {
         current_opna_address_[0] = data;
         write_opn(0, data);
-    } else if (port == 0x89 || port == 0x8A || port == 0x18A) {
+        // OPN prescaler registers are address-port strobes.
+    } else if (port == 0x89 || port == 0x8A || port == 0x18A
+               || (pc88va_mode_ && port == 0x45)) {
         const uint8_t chip_data = (current_opna_address_[0] >= 0xb4 && current_opna_address_[0] <= 0xb6)
             ? static_cast<uint8_t>(data | 0xc0)
             : data;
@@ -2374,12 +2399,13 @@ void Pc98DosDriver::write_io_port(uint16_t port, uint8_t data)
             || (current_opna_address_[0] >= 0xb0 && current_opna_address_[0] <= 0xb2)) {
             apply_opn_fm_tl_compat(static_cast<uint8_t>(current_opna_address_[0] & 0x03));
         }
-    } else if (port == 0x8C || port == 0x18C) {
+    } else if (port == 0x8C || port == 0x18C || (pc88va_mode_ && port == 0x46)) {
         if (!(pcm86_ && !pcm86_->extended_opna_enabled() && port == 0x18C)) {
             current_opna_address_[1] = data;
             write_opn(2, data);
         }
-    } else if (port == 0x8D || port == 0x8E || port == 0x18E) {
+    } else if (port == 0x8D || port == 0x8E || port == 0x18E
+               || (pc88va_mode_ && port == 0x47)) {
         if (pcm86_ && !pcm86_->extended_opna_enabled() && port == 0x18E) {
             return;
         }
@@ -2443,18 +2469,6 @@ void Pc98DosDriver::update_fm_timer(uint8_t reg, uint8_t data)
         fm_mode_ = data;
         refresh_fm_irq_interval();
         break;
-    case 0x2d:
-        fm_prescaler_sel_ |= 0x02;
-        refresh_fm_irq_interval();
-        break;
-    case 0x2e:
-        fm_prescaler_sel_ |= 0x01;
-        refresh_fm_irq_interval();
-        break;
-    case 0x2f:
-        fm_prescaler_sel_ = 0;
-        refresh_fm_irq_interval();
-        break;
     default:
         break;
     }
@@ -2462,16 +2476,15 @@ void Pc98DosDriver::update_fm_timer(uint8_t reg, uint8_t data)
 
 void Pc98DosDriver::refresh_fm_irq_interval()
 {
-    static constexpr int kTimerPrescalerBySel[4] = {24, 24, 72, 36};
     // YM2608 runs the OPN timer block behind the chip's extra /2 input stage.
-    // This matches both the bundled FM core (OPNPrescaler_w pre_divider=2)
-    // and original Hoot's 72/(clock/2) timer interval.  Using selector 0 and
-    // omitting the YM2608 pre-divider made default OPN playback 3x too fast
-    // and default OPNA playback 6x too fast.
+    // The 2Dh/2Eh/2Fh address strobes select FM/SSG prescalers, not the
+    // timer's fixed /72 input. Original Hoot likewise leaves ssFMTimer's
+    // clock unchanged when one of those prescaler addresses is selected.
     const int chip_predivider = use_ym2203_ ? 1 : 2;
-    const int prescaler = kTimerPrescalerBySel[fm_prescaler_sel_ & 0x03]
-        * chip_predivider;
-    const double clock = use_ym2203_ ? 3'993'632.0 : 7'967'264.0;
+    const int prescaler = 72 * chip_predivider;
+    const double clock = use_ym2203_
+        ? (pc88va_mode_ ? 3'993'600.0 : 3'993'632.0)
+        : (pc88va_mode_ ? 7'987'200.0 : 7'967'264.0);
 
     if ((fm_mode_ & 0x01) != 0 && sample_rate_ > 0) {
         const uint16_t timer_a = static_cast<uint16_t>(fm_timer_a_ & 0x03ffu);
@@ -2486,7 +2499,7 @@ void Pc98DosDriver::refresh_fm_irq_interval()
         fm_timer_a_frames_until_next_ = 0;
     }
 
-    if ((fm_mode_ & 0x02) != 0 && fm_timer_b_ != 0xff && sample_rate_ > 0) {
+    if ((fm_mode_ & 0x02) != 0 && sample_rate_ > 0) {
         const double seconds = static_cast<double>((256 - fm_timer_b_) << 4)
             * static_cast<double>(prescaler) / clock;
         fm_timer_b_interval_frames_ = std::max(1, static_cast<int>(std::lround(seconds * sample_rate_)));
@@ -2516,6 +2529,12 @@ void Pc98DosDriver::service_fm_timer_irq(uint8_t status_bit)
     const bool irq_enabled = (status_bit == 0x01) ? ((fm_mode_ & 0x04) != 0)
                                                    : ((fm_mode_ & 0x08) != 0);
     if (irq_enabled) {
+        if (pc88va_mode_ && bare_hoot_interrupts_enabled_
+            && is_interrupt_vector_active(0x14)) {
+            ++debug_fm_timer_irqs_;
+            trigger_interrupt_vector(0x14, 200000);
+            return;
+        }
         // PC-98 OPN/OPNA residents commonly install the sound-board IRQ on
         // INT 0Bh.  The former code incorrectly interpreted physical 0000:1000
         // as a far-pointer hook; that address is ordinary low memory, not the
@@ -3414,8 +3433,8 @@ void Pc98DosDriver::trigger_interrupt_vector(uint8_t vector, int steps)
     cpu_->set_ss(kProgramSegment);
     cpu_->set_sp(0xfffe);
     push_cpu_word(0x0200);
-    push_cpu_word(0x0000);
-    push_cpu_word(kHaltOffset);
+    push_cpu_word(pc88va_mode_ ? kPc88vaHaltSegment : 0x0000);
+    push_cpu_word(pc88va_mode_ ? kPc88vaHaltOffset : kHaltOffset);
     cpu_->set_cs(segment);
     cpu_->set_pc(offset);
     run_cpu_steps(steps);
@@ -3536,7 +3555,6 @@ bool Pc98DosDriver::rebuild_shell_runtime()
     fm_timer_a_ = 0;
     fm_timer_b_ = 0;
     fm_mode_ = 0;
-    fm_prescaler_sel_ = 2;
     fm_status_ = 0;
     fm_timer_a_interval_frames_ = 0;
     fm_timer_a_frames_until_next_ = 0;

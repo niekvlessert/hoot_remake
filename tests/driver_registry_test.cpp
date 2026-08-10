@@ -92,6 +92,16 @@ int main()
     pc88opna.options["use_pcmx8"] = 1;
     ok &= expect_status(pc88opna, hoot::DriverSupportStatus::Experimental, "generic pc88 opna");
 
+    hoot::HootEntry pc88vados;
+    pc88vados.driver_name = "pc88vados/opn";
+    pc88vados.assets.push_back({"shell", "mmd2va", {}, 0, 0, false});
+    const auto pc88vados_probe = hoot::DriverRegistry::instance().probe(pc88vados);
+    ok &= expect_status(pc88vados, hoot::DriverSupportStatus::Experimental, "pc88va dos opn");
+    if (pc88vados_probe.driver_id != "pc88vados-v50-opn") {
+        std::cerr << "pc88va dos opn: wrong driver id: " << pc88vados_probe.driver_id << "\n";
+        ok = false;
+    }
+
     hoot::HootEntry pc98;
     pc98.driver_name = "pc98dos/opn";
     pc98.assets.push_back({"shell", "pmd_98", {}, 0, 0, false});

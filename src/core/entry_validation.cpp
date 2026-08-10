@@ -1,6 +1,7 @@
 #include "core/entry_validation.h"
 
 #include <algorithm>
+#include <cstdint>
 #include <set>
 #include <vector>
 
@@ -15,6 +16,13 @@ bool has_catalog_asset(const hoot::ZipArchive& archive,
                        const std::filesystem::path& packs_path)
 {
     if (asset.type == "device" || asset.type == "shell") {
+        return true;
+    }
+    // pc88vados catalogue entries name DOS-side bridge binaries with offset
+    // -1. They are host plumbing rather than music data; the native bridge
+    // supplies their behavior and must not require those binaries in a pack.
+    if (entry.driver_name.rfind("pc88vados/", 0) == 0
+        && asset.type == "file" && asset.offset == UINT32_MAX) {
         return true;
     }
     if (archive.contains(asset.path)) {

@@ -99,10 +99,11 @@ private:
     uint16_t fm_timer_a_ = 0;
     uint8_t fm_timer_b_ = 0;
     uint8_t fm_mode_ = 0;
-    uint8_t fm_prescaler_sel_ = 2;
     uint8_t fm_irq_bus_ = 0x08;
-    int fm_irq_interval_frames_ = 0;
-    int fm_irq_frames_until_next_ = 0;
+    int fm_timer_a_interval_frames_ = 0;
+    int fm_timer_a_frames_until_next_ = 0;
+    int fm_timer_b_interval_frames_ = 0;
+    int fm_timer_b_frames_until_next_ = 0;
     std::array<uint64_t, 0x100> debug_port_writes_{};
     std::ofstream trace_;
     uint64_t trace_limit_ = 0;

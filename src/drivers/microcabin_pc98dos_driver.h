@@ -81,6 +81,7 @@ private:
     uint32_t selected_code_ = 0;
     bool loaded_ = false;
     bool playing_ = false;
+    bool pc88va_mode_ = false;
     bool command_pending_ = false;
     bool mmd2_api_ = false;
     bool early_mmd2_layout_ = false;

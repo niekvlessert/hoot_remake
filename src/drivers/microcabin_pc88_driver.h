@@ -76,7 +76,6 @@ private:
     std::array<uint8_t, 3> opn_key_on_{};
     uint8_t opn_timer_b_ = 0;
     uint8_t opn_mode_ = 0;
-    uint8_t opn_prescaler_sel_ = 2;
     int irq_interval_frames_ = 0;
     int irq_frames_until_next_ = 0;
     std::array<uint64_t, 0x100> debug_port_writes_{};

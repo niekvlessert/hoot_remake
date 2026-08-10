@@ -157,7 +157,7 @@ void usage(const char* argv0)
         "usage: %s [--config file] [--catalog file] [--packs dir] [--font file] [--check-font] [--rate hz] [--track n] [archive-or-entry-or-zip]\n"
         "controls: O open pack, Space play/pause, Ctrl+S stop, Ctrl+R restart, Left/P previous, Right/N next,\n"
         "          M mute/unmute, Ctrl+Shift+R WAV record, Up/Down playlist, PageUp/PageDown channel bank,\n"
-        "          L Library, Alt+Enter fullscreen, Q/Escape quit; drop a ZIP to load it\n", argv0);
+        "          L Library, Alt+Enter fullscreen, Q quits, Escape backs out; drop a ZIP to load it\n", argv0);
 }
 
 bool need_value(int argc, char** argv, int index)
@@ -1074,6 +1074,9 @@ void rebuild_library_rows(App& app)
     app.library_rows.clear();
     const std::string query = app.library_search;
 
+    if (app.library_level != LibraryLevel::Root)
+        app.library_rows.push_back({hootgui::LibraryRowKind::Parent, "..", "parent", "", -1, true});
+
     if (app.library_level == LibraryLevel::Root) {
         int total = 0;
         std::unordered_map<std::string, int> counts;
@@ -1182,6 +1185,43 @@ std::string library_breadcrumb(const App& app)
     return "/";
 }
 
+std::vector<hootgui::LibraryBreadcrumbPart> library_breadcrumb_parts(const App& app)
+{
+    using Target = hootgui::LibraryBreadcrumbTarget;
+    std::vector<hootgui::LibraryBreadcrumbPart> parts;
+    parts.push_back({"/", Target::Root, app.library_level != LibraryLevel::Root});
+
+    switch (app.library_level) {
+    case LibraryLevel::Root:
+        break;
+    case LibraryLevel::Major:
+        parts.push_back({app.library_major, Target::Major, true});
+        break;
+    case LibraryLevel::Games:
+        if (!app.library_major.empty()) parts.push_back({app.library_major, Target::Major, true});
+        parts.push_back({app.library_subtype == "*" ? "- all -" : app.library_subtype, Target::Games, true});
+        break;
+    case LibraryLevel::Variants:
+        parts.push_back({"Choose playback variant", Target::Root, false});
+        parts.push_back({app.library_variant_archive + ".zip", Target::Root, false});
+        break;
+    case LibraryLevel::Tracks:
+        if (!app.library_variant_archive.empty()) {
+            parts.push_back({"Choose playback variant", Target::Root, false});
+            parts.push_back({app.library_variant_archive + ".zip", Target::Root, false});
+        } else {
+            if (!app.library_major.empty()) parts.push_back({app.library_major, Target::Major, true});
+            parts.push_back({app.library_subtype == "*" ? "- all -" : app.library_subtype, Target::Games, true});
+        }
+        if (app.library_entry_index >= 0 && app.library_entry_index < static_cast<int>(app.catalog_entries.size())) {
+            parts.push_back({std::string(app.catalog_entries[static_cast<std::size_t>(app.library_entry_index)].title),
+                             Target::Games, false});
+        }
+        break;
+    }
+    return parts;
+}
+
 void stop_library_search(App& app)
 {
     if (!app.library_search_editing) return;
@@ -1280,6 +1320,26 @@ void library_back(App& app)
     }
 }
 
+void activate_library_breadcrumb(App& app, int part_index)
+{
+    const auto parts = library_breadcrumb_parts(app);
+    if (part_index < 0 || part_index >= static_cast<int>(parts.size())) return;
+    const auto& part = parts[static_cast<std::size_t>(part_index)];
+    if (!part.clickable) return;
+
+    switch (part.target) {
+    case hootgui::LibraryBreadcrumbTarget::Root:
+        set_library_level(app, LibraryLevel::Root);
+        break;
+    case hootgui::LibraryBreadcrumbTarget::Major:
+        set_library_level(app, LibraryLevel::Major, app.library_major);
+        break;
+    case hootgui::LibraryBreadcrumbTarget::Games:
+        set_library_level(app, LibraryLevel::Games, app.library_major, app.library_subtype);
+        break;
+    }
+}
+
 void move_library_selection(App& app, int delta)
 {
     if (app.library_rows.empty()) return;
@@ -1291,6 +1351,10 @@ void activate_library_row(App& app, bool play_and_advance)
 {
     if (app.library_rows.empty() || app.library_selected < 0 || app.library_selected >= static_cast<int>(app.library_rows.size())) return;
     const auto row = app.library_rows[static_cast<std::size_t>(app.library_selected)];
+    if (row.kind == hootgui::LibraryRowKind::Parent) {
+        library_back(app);
+        return;
+    }
     if (app.library_level == LibraryLevel::Root && row.kind == hootgui::LibraryRowKind::Folder) {
         if (row.label == "- all -") set_library_level(app, LibraryLevel::Games, "", "*");
         else set_library_level(app, LibraryLevel::Major, row.label);
@@ -2121,6 +2185,13 @@ bool handle_library_event(App& app, const SDL_Event& e)
             close_library(app);
             return true;
         }
+        if (app.ui) {
+            const int breadcrumb = app.ui->library_breadcrumb_at(x, y);
+            if (breadcrumb >= 0) {
+                activate_library_breadcrumb(app, breadcrumb);
+                return true;
+            }
+        }
         if (x >= px + pw - 216.0f && x < px + pw - 20.0f && y >= search_y && y < search_y + 31.0f) {
             toggle_library_available_only(app);
             return true;
@@ -2480,7 +2551,7 @@ void handle_event(App& app, const SDL_Event& e)
         return;
     }
     switch (e.key.key) {
-    case SDLK_ESCAPE: case SDLK_Q: app.running = false; break;
+    case SDLK_Q: app.running = false; break;
     case SDLK_O: request_open_pack(app); break;
     case SDLK_L: open_library(app); break;
     case SDLK_M: toggle_master_mute(app); break;
@@ -2538,6 +2609,7 @@ void frame(void* opaque)
         if (app.library_open) {
             library_view.rows = &app.library_rows;
             library_view.breadcrumb = library_breadcrumb(app);
+            library_view.breadcrumb_parts = library_breadcrumb_parts(app);
             library_view.search = app.library_search;
             library_view.message = app.library_message;
             library_view.available_only = app.library_available_only;

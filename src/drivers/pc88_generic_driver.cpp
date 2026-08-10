@@ -475,10 +475,11 @@ void Pc88GenericDriver::clear()
     fm_timer_a_ = 0;
     fm_timer_b_ = 0;
     fm_mode_ = 0;
-    fm_prescaler_sel_ = 2;
     fm_irq_bus_ = 0x08;
-    fm_irq_interval_frames_ = 0;
-    fm_irq_frames_until_next_ = 0;
+    fm_timer_a_interval_frames_ = 0;
+    fm_timer_a_frames_until_next_ = 0;
+    fm_timer_b_interval_frames_ = 0;
+    fm_timer_b_frames_until_next_ = 0;
     debug_port_writes_.fill(0);
     if (trace_.is_open()) {
         trace_.close();
@@ -499,9 +500,10 @@ void Pc88GenericDriver::restart_guest_for_track()
     fm_timer_a_ = 0;
     fm_timer_b_ = 0;
     fm_mode_ = 0;
-    fm_prescaler_sel_ = 2;
-    fm_irq_interval_frames_ = 0;
-    fm_irq_frames_until_next_ = 0;
+    fm_timer_a_interval_frames_ = 0;
+    fm_timer_a_frames_until_next_ = 0;
+    fm_timer_b_interval_frames_ = 0;
+    fm_timer_b_frames_until_next_ = 0;
     periodic_irq_frames_until_next_ = periodic_irq_interval_frames_;
 
     if (use_opna_) {
@@ -640,18 +642,6 @@ void Pc88GenericDriver::update_fm_timer(uint8_t reg, uint8_t data)
         fm_mode_ = data;
         refresh_fm_irq_interval();
         break;
-    case 0x2d:
-        fm_prescaler_sel_ |= 0x02;
-        refresh_fm_irq_interval();
-        break;
-    case 0x2e:
-        fm_prescaler_sel_ |= 0x01;
-        refresh_fm_irq_interval();
-        break;
-    case 0x2f:
-        fm_prescaler_sel_ = 0;
-        refresh_fm_irq_interval();
-        break;
     default:
         break;
     }
@@ -659,49 +649,68 @@ void Pc88GenericDriver::update_fm_timer(uint8_t reg, uint8_t data)
 
 void Pc88GenericDriver::refresh_fm_irq_interval()
 {
-    static constexpr int kTimerPrescalerBySel[4] = {24, 24, 72, 36};
-    const int prescaler = kTimerPrescalerBySel[fm_prescaler_sel_ & 0x03];
+    // YM2608's OPN timer block is fed through an additional /2 stage. Its
+    // doubled master clock therefore does not double the wall-clock timer
+    // cadence relative to YM2203. The 2Dh/2Eh/2Fh address strobes select the
+    // FM/SSG prescalers, but do not alter the timer's fixed /72 input. This is
+    // also how original Hoot's ssYM2203/ssYM2608 hosts model those strobes.
+    const int chip_predivider = use_opna_ ? 2 : 1;
+    const int prescaler = 72 * chip_predivider;
     const double clock = use_opna_ ? static_cast<double>(kOpnaClock) : static_cast<double>(kOpmClock);
-    double best = 0.0;
 
-    // Bits 2/0 control Timer A IRQ enable/start; bits 3/1 do the same for B.
-    if ((fm_mode_ & 0x05) == 0x05) {
+    // Start and IRQ-enable are independent mode bits. Keep both timer
+    // counters independent too: folding them into the shortest period loses
+    // Timer B overflows whenever Timer A is also running.
+    if ((fm_mode_ & 0x01) != 0 && sample_rate_ > 0) {
         const uint16_t timer_a = static_cast<uint16_t>(fm_timer_a_ & 0x03ffu);
         const double seconds = static_cast<double>(1024 - timer_a) * static_cast<double>(prescaler) / clock;
-        if (seconds > 0.0) best = seconds;
-    }
-    if ((fm_mode_ & 0x0a) == 0x0a && fm_timer_b_ != 0xff) {
-        const double seconds = static_cast<double>((256 - fm_timer_b_) << 4)
-            * static_cast<double>(prescaler) / clock;
-        if (seconds > 0.0 && (best == 0.0 || seconds < best)) best = seconds;
+        fm_timer_a_interval_frames_ = std::max(1, static_cast<int>(std::lround(seconds * sample_rate_)));
+        if (fm_timer_a_frames_until_next_ <= 0
+            || fm_timer_a_frames_until_next_ > fm_timer_a_interval_frames_ * 4) {
+            fm_timer_a_frames_until_next_ = fm_timer_a_interval_frames_;
+        }
+    } else {
+        fm_timer_a_interval_frames_ = 0;
+        fm_timer_a_frames_until_next_ = 0;
     }
 
-    if (best == 0.0) {
-        fm_irq_interval_frames_ = 0;
-        fm_irq_frames_until_next_ = 0;
-        return;
-    }
-    fm_irq_interval_frames_ = std::max(1, static_cast<int>(std::lround(best * sample_rate_)));
-    if (fm_irq_frames_until_next_ <= 0) {
-        fm_irq_frames_until_next_ = fm_irq_interval_frames_;
+    if ((fm_mode_ & 0x02) != 0 && sample_rate_ > 0) {
+        const double seconds = static_cast<double>((256 - fm_timer_b_) << 4)
+            * static_cast<double>(prescaler) / clock;
+        fm_timer_b_interval_frames_ = std::max(1, static_cast<int>(std::lround(seconds * sample_rate_)));
+        if (fm_timer_b_frames_until_next_ <= 0
+            || fm_timer_b_frames_until_next_ > fm_timer_b_interval_frames_ * 4) {
+            fm_timer_b_frames_until_next_ = fm_timer_b_interval_frames_;
+        }
+    } else {
+        fm_timer_b_interval_frames_ = 0;
+        fm_timer_b_frames_until_next_ = 0;
     }
 }
 
 void Pc88GenericDriver::schedule_irq_sources(int& todo)
 {
-    const bool fm_due = fm_irq_interval_frames_ > 0 && fm_irq_frames_until_next_ <= 0;
+    const bool timer_a_due = fm_timer_a_interval_frames_ > 0
+        && fm_timer_a_frames_until_next_ <= 0;
+    const bool timer_b_due = fm_timer_b_interval_frames_ > 0
+        && fm_timer_b_frames_until_next_ <= 0;
     const bool periodic_due = use_periodic_irq_ && periodic_irq_frames_until_next_ <= 0;
-    if (fm_due && (io_[0x32] & 0x80) == 0) {
+
+    if (timer_a_due) fm_timer_a_frames_until_next_ += fm_timer_a_interval_frames_;
+    if (timer_b_due) fm_timer_b_frames_until_next_ += fm_timer_b_interval_frames_;
+    const bool fm_irq_due = (timer_a_due && (fm_mode_ & 0x04) != 0)
+        || (timer_b_due && (fm_mode_ & 0x08) != 0);
+    if (fm_irq_due && (io_[0x32] & 0x80) == 0) {
         raise_irq(fm_irq_bus_, "fm");
-        fm_irq_frames_until_next_ += fm_irq_interval_frames_;
     } else if (periodic_due) {
         raise_irq(0x02, "rtc-vrtc");
         periodic_irq_frames_until_next_ += periodic_irq_interval_frames_;
     }
 
-    if (fm_irq_interval_frames_ > 0) {
-        todo = std::min(todo, std::max(1, fm_irq_frames_until_next_));
-    }
+    if (fm_timer_a_interval_frames_ > 0)
+        todo = std::min(todo, std::max(1, fm_timer_a_frames_until_next_));
+    if (fm_timer_b_interval_frames_ > 0)
+        todo = std::min(todo, std::max(1, fm_timer_b_frames_until_next_));
     if (use_periodic_irq_) {
         todo = std::min(todo, std::max(1, periodic_irq_frames_until_next_));
     }
@@ -709,9 +718,8 @@ void Pc88GenericDriver::schedule_irq_sources(int& todo)
 
 void Pc88GenericDriver::advance_irq_sources(int frames)
 {
-    if (fm_irq_interval_frames_ > 0) {
-        fm_irq_frames_until_next_ -= frames;
-    }
+    if (fm_timer_a_interval_frames_ > 0) fm_timer_a_frames_until_next_ -= frames;
+    if (fm_timer_b_interval_frames_ > 0) fm_timer_b_frames_until_next_ -= frames;
     if (use_periodic_irq_) {
         periodic_irq_frames_until_next_ -= frames;
     }
