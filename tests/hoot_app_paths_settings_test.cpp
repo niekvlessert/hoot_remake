@@ -89,10 +89,12 @@ int main()
     hoot::HootAppPaths second;
     assert(hoot::bootstrap_hoot_home(second, error));
     assert(!second.imported_config);
-    std::ifstream existing(second.config);
-    std::string all((std::istreambuf_iterator<char>(existing)), std::istreambuf_iterator<char>());
-    assert(all.find("32000") != std::string::npos);
-    assert(all.find("22050") == std::string::npos);
+    {
+        std::ifstream existing(second.config);
+        std::string all((std::istreambuf_iterator<char>(existing)), std::istreambuf_iterator<char>());
+        assert(all.find("32000") != std::string::npos);
+        assert(all.find("22050") == std::string::npos);
+    }
 
     // Settings editor round-trip: known fields remain typed/config-compatible.
     hoot::HootSettingsDocument doc;

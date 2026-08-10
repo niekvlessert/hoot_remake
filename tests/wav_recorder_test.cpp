@@ -18,12 +18,14 @@ int main()
     assert(recorder.append(samples, 4, error));
     assert(recorder.frames() == 4);
     assert(recorder.stop(error));
-    std::ifstream in(path, std::ios::binary);
-    std::vector<unsigned char> bytes((std::istreambuf_iterator<char>(in)), {});
-    assert(bytes.size() == 44 + 16);
-    assert(std::string(reinterpret_cast<const char*>(bytes.data()), 4) == "RIFF");
-    assert(std::string(reinterpret_cast<const char*>(bytes.data() + 8), 4) == "WAVE");
-    assert(bytes[40] == 16 && bytes[41] == 0 && bytes[42] == 0 && bytes[43] == 0);
+    {
+        std::ifstream in(path, std::ios::binary);
+        std::vector<unsigned char> bytes((std::istreambuf_iterator<char>(in)), {});
+        assert(bytes.size() == 44 + 16);
+        assert(std::string(reinterpret_cast<const char*>(bytes.data()), 4) == "RIFF");
+        assert(std::string(reinterpret_cast<const char*>(bytes.data() + 8), 4) == "WAVE");
+        assert(bytes[40] == 16 && bytes[41] == 0 && bytes[42] == 0 && bytes[43] == 0);
+    }
     std::filesystem::remove(path);
     return 0;
 }
