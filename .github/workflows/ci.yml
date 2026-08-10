@@ -162,6 +162,8 @@ jobs:
         shell: bash
         run: |
           if [ "${{ runner.os }}" = "Windows" ]; then
+            VCPKG_BIN="$(cygpath -u "$VCPKG_ROOT/installed/${{ matrix.triplet }}/bin")"
+            export PATH="/mingw64/bin:$VCPKG_BIN:$PATH"
             ./build/hootui.exe --check-font
           else
             ./build/hootui --check-font
