@@ -30,6 +30,15 @@ struct Options {
     int trace_limit = 0;
 };
 
+void set_environment_value(const char* name, const char* value)
+{
+#if defined(_WIN32)
+    _putenv_s(name, value);
+#else
+    setenv(name, value, 1);
+#endif
+}
+
 void usage()
 {
     std::cerr
@@ -197,10 +206,10 @@ int main(int argc, char** argv)
     }
 
     if (options.mute_percussion) {
-        setenv("HOOT_X68K_MUTE_PERCUSSION", "1", 1);
+        set_environment_value("HOOT_X68K_MUTE_PERCUSSION", "1");
     }
     if (!options.channels.empty()) {
-        setenv("HOOT_X68K_CHANNELS", options.channels.c_str(), 1);
+        set_environment_value("HOOT_X68K_CHANNELS", options.channels.c_str());
     }
 
     HootConfig config{};
@@ -208,15 +217,15 @@ int main(int argc, char** argv)
     config.packs_path = options.packs.c_str();
 
     if (!options.trace_xak2.empty()) {
-        setenv("HOOT_XAK2_TRACE", options.trace_xak2.c_str(), 1);
+        set_environment_value("HOOT_XAK2_TRACE", options.trace_xak2.c_str());
         if (options.trace_limit > 0) {
-            setenv("HOOT_XAK2_TRACE_LIMIT", std::to_string(options.trace_limit).c_str(), 1);
+            set_environment_value("HOOT_XAK2_TRACE_LIMIT", std::to_string(options.trace_limit).c_str());
         }
     }
     if (!options.trace_pc98.empty()) {
-        setenv("HOOT_PC98_TRACE", options.trace_pc98.c_str(), 1);
+        set_environment_value("HOOT_PC98_TRACE", options.trace_pc98.c_str());
         if (options.trace_limit > 0) {
-            setenv("HOOT_PC98_TRACE_LIMIT", std::to_string(options.trace_limit).c_str(), 1);
+            set_environment_value("HOOT_PC98_TRACE_LIMIT", std::to_string(options.trace_limit).c_str());
         }
     }
 

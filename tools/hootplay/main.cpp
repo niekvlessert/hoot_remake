@@ -330,7 +330,9 @@ public:
 
 void keyboard_thread()
 {
+#if !defined(_WIN32)
     TerminalRawMode raw;
+#endif
     while (!g_quit) {
         if (_kbhit()) handle_command_char(static_cast<char>(_getch()));
         else Sleep(20);
