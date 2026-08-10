@@ -5,6 +5,8 @@ project(hoot_port
     DESCRIPTION "Headless Hoot replay core port"
     LANGUAGES C CXX)
 
+include(GNUInstallDirs)
+
 # Keep source/execution character sets deterministic on MSVC. Hoot's public
 # metadata contract is UTF-8, including Japanese catalogue text.
 if(MSVC)
@@ -196,27 +198,28 @@ add_library(hootcore STATIC $<TARGET_OBJECTS:hootcore_objects>)
 target_compile_definitions(hootcore PUBLIC HOOT_STATIC)
 
 add_library(hoot SHARED $<TARGET_OBJECTS:hootcore_objects>)
+add_library(Hoot::hoot ALIAS hoot)
 set_target_properties(hoot PROPERTIES
     OUTPUT_NAME hoot
     VERSION ${PROJECT_VERSION}
     SOVERSION 0
     WINDOWS_EXPORT_ALL_SYMBOLS ON)
 
-target_include_directories(hootcore_objects
-    PUBLIC
-        ${CMAKE_CURRENT_SOURCE_DIR}/src)
-
+target_include_directories(hootcore_objects PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/src)
 target_include_directories(hootcore PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/src)
-target_include_directories(hoot PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/src)
+target_include_directories(hoot PUBLIC
+    $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/src>
+    $<INSTALL_INTERFACE:${CMAKE_INSTALL_INCLUDEDIR}>)
 target_compile_features(hootcore_objects PUBLIC cxx_std_17)
 target_compile_features(hootcore PUBLIC cxx_std_17)
 target_compile_features(hoot PUBLIC cxx_std_17)
 
-foreach(core_target hootcore hoot)
-    target_link_libraries(${core_target} PUBLIC
-        ${_HOOT_ZLIB_TARGET} ${_HOOT_SQLITE_TARGET} ${_HOOT_ZSTD_TARGET} ${_HOOT_ICONV_TARGET}
-        kmz80 libvgm_ym2203 px68k_musashi ${CMAKE_DL_LIBS})
-endforeach()
+target_link_libraries(hootcore PUBLIC
+    ${_HOOT_ZLIB_TARGET} ${_HOOT_SQLITE_TARGET} ${_HOOT_ZSTD_TARGET} ${_HOOT_ICONV_TARGET}
+    kmz80 libvgm_ym2203 px68k_musashi ${CMAKE_DL_LIBS})
+target_link_libraries(hoot PRIVATE
+    ${_HOOT_ZLIB_TARGET} ${_HOOT_SQLITE_TARGET} ${_HOOT_ZSTD_TARGET} ${_HOOT_ICONV_TARGET}
+    kmz80 libvgm_ym2203 px68k_musashi ${CMAKE_DL_LIBS})
 
 if(MSVC)
     target_compile_options(hootcore_objects PRIVATE /W4)
@@ -571,7 +574,7 @@ if(BUILD_TESTING)
     endforeach()
 endif()
 
-include(GNUInstallDirs)
+include(CMakePackageConfigHelpers)
 if(APPLE)
     set(_HOOT_INSTALL_RPATH "@loader_path/../${CMAKE_INSTALL_LIBDIR}")
 elseif(UNIX)
@@ -583,10 +586,14 @@ if(DEFINED _HOOT_INSTALL_RPATH)
         set_target_properties(hootgui PROPERTIES INSTALL_RPATH "${_HOOT_INSTALL_RPATH}")
     endif()
 endif()
-install(TARGETS hoot hootplay hootprobe hoot2wav
+install(TARGETS hoot
+    EXPORT HootTargets
     RUNTIME DESTINATION ${CMAKE_INSTALL_BINDIR}
     LIBRARY DESTINATION ${CMAKE_INSTALL_LIBDIR}
-    ARCHIVE DESTINATION ${CMAKE_INSTALL_LIBDIR})
+    ARCHIVE DESTINATION ${CMAKE_INSTALL_LIBDIR}
+    INCLUDES DESTINATION ${CMAKE_INSTALL_INCLUDEDIR})
+install(TARGETS hootplay hootprobe hoot2wav
+    RUNTIME DESTINATION ${CMAKE_INSTALL_BINDIR})
 if(TARGET hootgui)
     install(TARGETS hootgui RUNTIME DESTINATION ${CMAKE_INSTALL_BINDIR})
     install(FILES apps/hootgui/hootui_icon.bmp DESTINATION ${CMAKE_INSTALL_DATADIR}/hoot)
@@ -601,3 +608,25 @@ install(FILES
 
 install(FILES docs/LIBHOOT.md docs/SDL_GUI.md docs/WASM.md docs/BUILD_FRONTENDS.md docs/INSTALLATION.md
     DESTINATION ${CMAKE_INSTALL_DOCDIR})
+
+set(HOOT_CMAKE_INSTALL_DIR "${CMAKE_INSTALL_LIBDIR}/cmake/Hoot")
+configure_package_config_file(
+    cmake/HootConfig.cmake.in
+    "${CMAKE_CURRENT_BINARY_DIR}/HootConfig.cmake"
+    INSTALL_DESTINATION "${HOOT_CMAKE_INSTALL_DIR}")
+write_basic_package_version_file(
+    "${CMAKE_CURRENT_BINARY_DIR}/HootConfigVersion.cmake"
+    VERSION "${PROJECT_VERSION}"
+    COMPATIBILITY SameMajorVersion)
+install(EXPORT HootTargets
+    FILE HootTargets.cmake
+    NAMESPACE Hoot::
+    DESTINATION "${HOOT_CMAKE_INSTALL_DIR}")
+install(FILES
+    "${CMAKE_CURRENT_BINARY_DIR}/HootConfig.cmake"
+    "${CMAKE_CURRENT_BINARY_DIR}/HootConfigVersion.cmake"
+    DESTINATION "${HOOT_CMAKE_INSTALL_DIR}")
+
+configure_file(cmake/hoot.pc.in "${CMAKE_CURRENT_BINARY_DIR}/hoot.pc" @ONLY)
+install(FILES "${CMAKE_CURRENT_BINARY_DIR}/hoot.pc"
+    DESTINATION "${CMAKE_INSTALL_LIBDIR}/pkgconfig")

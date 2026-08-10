@@ -51,3 +51,23 @@ The native build intentionally exposes three distinct products:
 `hootprobe` and `hoot2wav` remain utility frontends. Frontend-only parsing of
 `hootplay.ini` is kept outside `libhoot`, so the library itself has no UI,
 SDL, terminal or configuration-file dependency.
+
+## Integrating libhoot
+
+After installing Hoot, CMake clients can consume the shared library without
+hard-coding include or library paths:
+
+```cmake
+find_package(Hoot CONFIG REQUIRED)
+target_link_libraries(my_player PRIVATE Hoot::hoot)
+```
+
+Include the API as `#include <hoot/hoot_api.h>`. Non-CMake builds can use the
+installed `hoot.pc` file through `pkg-config --cflags --libs hoot`.
+
+A player creates one `HootContext`, loads a catalogue and an entry, selects a
+track, then repeatedly calls `hoot_render_s16()` or `hoot_render_float()` from
+its own audio scheduling code. The caller owns the audio device, buffering,
+transport UI and thread synchronization. Packs and catalogue data remain
+runtime inputs; set their locations with `HootConfig.packs_path` and
+`hoot_load_catalog()`.

@@ -46,7 +46,13 @@ jobs:
         run: |
           sudo apt-get update
           sudo apt-get install -y \
-            autoconf autoconf-archive automake libtool ninja-build pkg-config fonts-noto-cjk
+            autoconf autoconf-archive automake libtool libltdl-dev ninja-build pkg-config fonts-noto-cjk
+
+      - name: Install macOS build prerequisites
+        if: runner.os == 'macOS'
+        shell: bash
+        run: |
+          brew list ninja >/dev/null 2>&1 || brew install ninja
 
       - name: Export GitHub Actions cache variables
         shell: bash
@@ -75,16 +81,19 @@ jobs:
       - name: Install native dependencies
         shell: bash
         run: |
-          VCPKG="$VCPKG_ROOT_UNIX/vcpkg"
-          if [ "${{ runner.os }}" = "Windows" ]; then VCPKG="$VCPKG_ROOT_UNIX/vcpkg.exe"; fi
-          "$VCPKG" install \
-            --triplet "${{ matrix.triplet }}" \
-            zlib sqlite3 zstd sdl3 sdl3-ttf
+          if [ "${{ runner.os }}" = "Windows" ]; then
+            VCPKG_NATIVE_EXE="$(cygpath -w "$VCPKG_ROOT_UNIX/vcpkg.exe")"
+            cmd.exe /d /s /c "\"$VCPKG_NATIVE_EXE\" install --triplet ${{ matrix.triplet }} zlib sqlite3 zstd sdl3 sdl3-ttf"
+          else
+            "$VCPKG_ROOT_UNIX/vcpkg" install \
+              --triplet "${{ matrix.triplet }}" \
+              zlib sqlite3 zstd sdl3 sdl3-ttf
+          fi
 
       - name: Configure
         shell: bash
         run: |
-          TOOLCHAIN_FILE="$VCPKG_ROOT_NATIVE/scripts/buildsystems/vcpkg.cmake"
+          TOOLCHAIN_FILE="$VCPKG_ROOT/scripts/buildsystems/vcpkg.cmake"
           cmake -S . -B build -G Ninja \
             -DCMAKE_BUILD_TYPE=Release \
             -DCMAKE_TOOLCHAIN_FILE="$TOOLCHAIN_FILE" \
