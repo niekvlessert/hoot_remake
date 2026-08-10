@@ -158,16 +158,21 @@ jobs:
       - name: Test
         run: ctest --test-dir build --output-on-failure -C Release
 
-      - name: Japanese UI font smoke
-        shell: bash
+      - name: Japanese UI font smoke (Windows)
+        if: runner.os == 'Windows'
+        shell: pwsh
         run: |
-          if [ "${{ runner.os }}" = "Windows" ]; then
-            VCPKG_BIN="$(cygpath -u "$VCPKG_ROOT/installed/${{ matrix.triplet }}/bin")"
-            export PATH="/mingw64/bin:$VCPKG_BIN:$PATH"
-            ./build/hootui.exe --check-font
-          else
-            ./build/hootui --check-font
-          fi
+          $vcpkgBin = Join-Path $env:VCPKG_ROOT "installed\${{ matrix.triplet }}\bin"
+          $env:Path = "$vcpkgBin;C:\mingw64\bin;$env:Path"
+          & .\build\hootui.exe --check-font
+          if ($LASTEXITCODE -ne 0) {
+            exit $LASTEXITCODE
+          }
+
+      - name: Japanese UI font smoke (Unix)
+        if: runner.os != 'Windows'
+        shell: bash
+        run: ./build/hootui --check-font
 
       - name: Japanese UTF-8 smoke
         run: python ci/unicode_smoke.py build
