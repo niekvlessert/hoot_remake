@@ -33,5 +33,9 @@ if proc.returncode != 0:
 required = ["スレイヤーズ", "ドラゴン", "PC-9801"]
 missing = [text for text in required if text not in proc.stdout]
 if missing:
-    raise SystemExit(f"UTF-8 catalog smoke failed; missing {missing!r}")
-print("UTF-8/Japanese catalogue smoke passed:", ", ".join(required))
+    # Keep diagnostics printable on Windows' legacy CP1252 console. The
+    # catalogue comparison above remains a real Unicode check.
+    raise SystemExit(f"UTF-8 catalog smoke failed; missing {ascii(missing)}")
+# Use escaped Unicode in the status line so the check also works when Python
+# inherits a non-UTF-8 console encoding (notably GitHub Actions on Windows).
+print("UTF-8/Japanese catalogue smoke passed:", ", ".join(ascii(text) for text in required))
