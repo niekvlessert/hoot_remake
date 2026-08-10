@@ -68,6 +68,7 @@ void X68kPcm8Mixer::reset()
     voices_.fill(Voice{});
     stats_ = Stats{};
     globally_paused_ = false;
+    mute_mask_ = 0;
     enabled_ = true;
     system_channels_ = kVoiceCount;
     system_work_units_ = 4;
@@ -719,7 +720,8 @@ void X68kPcm8Mixer::mix_s32(int32_t* interleaved_stereo,
     }
 
     const int64_t gain_q16 = std::llround(std::clamp(gain, 0.0, 16.0) * 65536.0);
-    for (auto& voice : voices_) {
+    for (size_t voice_index = 0; voice_index < voices_.size(); ++voice_index) {
+        auto& voice = voices_[voice_index];
         if (!voice.active || voice.channel_paused || voice.mode.encoding == Encoding::Unknown
             || voice.mode.pan == 0 || voice.mode.sample_rate == 0) {
             continue;
@@ -747,7 +749,8 @@ void X68kPcm8Mixer::mix_s32(int32_t* interleaved_stereo,
                 source_sample = voice.signal;
             }
 
-            const int32_t scaled = clamp_i32(
+            const bool muted = (mute_mask_ & (1u << voice_index)) != 0;
+            const int32_t scaled = muted ? 0 : clamp_i32(
                 (static_cast<int64_t>(source_sample) * scale_q32 + (int64_t{1} << 31)) >> 32);
             const size_t sample_index = static_cast<size_t>(frame) * 2u;
             if ((voice.mode.pan & 1u) != 0) {

@@ -28,6 +28,7 @@ bool LibvgmOpl::initialize(Model model, uint32_t clock, uint32_t sample_rate)
     shutdown();
     model_ = model;
     sample_rate_ = sample_rate;
+    mute_mask_ = 0;
     chip_ = model == Model::YMF262 ? ymf262_init(clock, sample_rate)
                                    : ym3812_init(clock, sample_rate);
     if (!chip_) return false;
@@ -40,8 +41,8 @@ void LibvgmOpl::reset()
     address_latch_.fill(0);
     for (auto& bank : registers_) bank.fill(0);
     if (!chip_) return;
-    if (model_ == Model::YMF262) ymf262_reset_chip(chip_);
-    else ym3812_reset_chip(chip_);
+    if (model_ == Model::YMF262) { ymf262_reset_chip(chip_); ymf262_set_mute_mask(chip_, mute_mask_); }
+    else { ym3812_reset_chip(chip_); opl_set_mute_mask(chip_, mute_mask_); }
 }
 
 void LibvgmOpl::write(uint8_t port, uint8_t data)
@@ -60,6 +61,14 @@ uint8_t LibvgmOpl::read(uint8_t port) const
     if (!chip_) return 0xff;
     return model_ == Model::YMF262 ? ymf262_read(chip_, static_cast<uint8_t>(port & 3))
                                    : ym3812_read(chip_, static_cast<uint8_t>(port & 1));
+}
+
+void LibvgmOpl::set_mute_mask(uint32_t mask)
+{
+    mute_mask_ = mask;
+    if (!chip_) return;
+    if (model_ == Model::YMF262) ymf262_set_mute_mask(chip_, mute_mask_);
+    else opl_set_mute_mask(chip_, mute_mask_);
 }
 
 void LibvgmOpl::render_s16(int16_t* interleaved_stereo, int frames)

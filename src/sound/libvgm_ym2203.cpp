@@ -83,6 +83,8 @@ bool LibvgmYm2203::initialize(uint32_t clock, uint32_t sample_rate)
         ssg_ = nullptr;
     }
     sample_rate_ = sample_rate;
+    mute_mask_ = 0;
+    ssg_mute_mask_ = 0;
     ssg_sample_rate_ = 0;
     ssg_phase_ = 0.0;
     ssg_dc_prev_in_left_ = 0.0;
@@ -135,6 +137,8 @@ void LibvgmYm2203::reset()
         ssg_dc_prev_out_right_ = 0.0;
         reset_debug_ssg_state();
         update_ssg_sample_rate();
+        ym2203_set_mute_mask(chip_, mute_mask_);
+        if (ssg_ != nullptr) ay8910_set_mute_mask(ssg_, ssg_mute_mask_);
     }
 }
 
@@ -151,6 +155,19 @@ uint8_t LibvgmYm2203::read(uint8_t port)
         return 0xff;
     }
     return ym2203_read(chip_, static_cast<uint8_t>(port & 1));
+}
+
+
+void LibvgmYm2203::set_mute_mask(uint32_t mask)
+{
+    mute_mask_ = mask & 0x07u;
+    if (chip_ != nullptr) ym2203_set_mute_mask(chip_, mute_mask_);
+}
+
+void LibvgmYm2203::set_ssg_mute_mask(uint32_t mask)
+{
+    ssg_mute_mask_ = mask & 0x07u;
+    if (ssg_ != nullptr) ay8910_set_mute_mask(ssg_, ssg_mute_mask_);
 }
 
 void LibvgmYm2203::set_ssg_gain(double gain)

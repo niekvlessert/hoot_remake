@@ -137,6 +137,8 @@ public:
     const Stats& stats() const { return stats_; }
     int active_voice_count() const;
     bool globally_paused() const { return globally_paused_; }
+    void set_mute_mask(uint32_t mask) { mute_mask_ = mask & ((1u << kVoiceCount) - 1u); }
+    uint32_t mute_mask() const { return mute_mask_; }
     bool enabled() const { return enabled_; }
 
     static const char* command_name(CommandKind kind);
@@ -192,6 +194,7 @@ private:
     std::array<Voice, kVoiceCount> voices_{};
     Stats stats_{};
     bool globally_paused_ = false;
+    uint32_t mute_mask_ = 0;
     bool enabled_ = true;
     uint8_t system_channels_ = kVoiceCount;
     uint8_t system_work_units_ = 4;

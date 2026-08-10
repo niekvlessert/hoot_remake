@@ -29,6 +29,15 @@ int main(void)
         hoot_destroy(ctx);
         return 1;
     }
+    /* Additive visual-channel mute API must be linkable and reject an empty
+       context cleanly rather than exposing frontend-specific state. */
+    if (hoot_can_mute_channel(ctx, 0) != 0 ||
+        hoot_set_channel_muted(ctx, 0, 1) == HOOT_OK ||
+        hoot_clear_channel_mutes(ctx) == HOOT_OK) {
+        fprintf(stderr, "empty-context channel mute API returned an invalid success\n");
+        hoot_destroy(ctx);
+        return 1;
+    }
     hoot_destroy(ctx);
     return 0;
 }

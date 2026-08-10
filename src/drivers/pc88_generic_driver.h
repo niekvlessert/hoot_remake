@@ -34,6 +34,9 @@ public:
                          HootTrackInfo& out) const override;
     void fill_visual_state(const HootEntry& entry, int track_index,
                            HootVisualState& out) const override;
+    bool channel_mute_supported(int kind, int index) const override;
+    bool set_channel_muted(int kind, int index, bool muted) override;
+    void clear_channel_mutes() override;
     const char* name() const override;
 
 private:
@@ -108,6 +111,8 @@ private:
     Kmz80Cpu cpu_;
     LibvgmYm2203 ym2203_;
     LibvgmYm2608 ym2608_;
+    uint32_t ui_opn_mute_mask_ = 0;
+    uint32_t ui_ssg_mute_mask_ = 0;
 };
 
 } // namespace hoot

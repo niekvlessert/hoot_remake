@@ -20,6 +20,7 @@ public:
     void write(uint8_t port, uint8_t data);
     uint8_t read(uint8_t port) const;
     void render_s16(int16_t* interleaved_stereo, int frames);
+    void set_mute_mask(uint32_t mask);
     Model model() const { return model_; }
     uint8_t register_value(int bank, uint8_t reg) const { return registers_[bank & 1][reg]; }
 
@@ -29,6 +30,7 @@ private:
     void* chip_ = nullptr;
     Model model_ = Model::YM3812;
     uint32_t sample_rate_ = 44100;
+    uint32_t mute_mask_ = 0;
     std::array<uint8_t, 2> address_latch_{};
     std::array<std::array<uint8_t, 256>, 2> registers_{};
     std::vector<int32_t> left_;

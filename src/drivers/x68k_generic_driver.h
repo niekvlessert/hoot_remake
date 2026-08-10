@@ -35,6 +35,9 @@ public:
                          HootTrackInfo& out) const override;
     void fill_visual_state(const HootEntry& entry, int track_index,
                            HootVisualState& out) const override;
+    bool channel_mute_supported(int kind, int index) const override;
+    bool set_channel_muted(int kind, int index, bool muted) override;
+    void clear_channel_mutes() override;
     const char* name() const override;
 
     uint8_t read_memory_8(uint32_t address);
@@ -156,6 +159,10 @@ private:
     double total_gain_ = 1.0;
     bool mute_percussion_ = false;
     uint32_t opm_mute_mask_ = 0;
+    uint32_t ui_opm_mute_mask_ = 0;
+    uint32_t ui_pcm8_mute_mask_ = 0;
+    uint16_t ui_midi_mute_mask_ = 0;
+    bool ui_adpcm_muted_ = false;
     uint8_t current_ym2151_reg_ = 0;
     std::array<uint8_t, 256> ym2151_registers_{};
     std::array<bool, 8> ym2151_key_on_{};

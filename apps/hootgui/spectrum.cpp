@@ -80,8 +80,12 @@ void SpectrumAnalyzer::calculate()
             l = std::max(l, calculate_bin(0, f * scale));
             r = std::max(r, calculate_bin(1, f * scale));
         }
-        left_[i] = l;
-        right_[i] = r;
+        // Original Hoot's analyser has a quick rise and a visibly slower,
+        // continuous fall. Keep peaks responsive while letting inactive bands
+        // glide down instead of disappearing on the next analysis window.
+        constexpr float release_per_tick = 0.075f;
+        left_[i] = l >= left_[i] ? l : std::max(l, left_[i] - release_per_tick);
+        right_[i] = r >= right_[i] ? r : std::max(r, right_[i] - release_per_tick);
     }
 }
 

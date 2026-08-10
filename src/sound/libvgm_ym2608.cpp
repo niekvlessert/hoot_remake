@@ -76,6 +76,8 @@ bool LibvgmYm2608::initialize(uint32_t clock, uint32_t sample_rate)
         ssg_ = nullptr;
     }
     sample_rate_ = sample_rate;
+    mute_mask_ = 0;
+    ssg_mute_mask_ = 0;
     ssg_sample_rate_ = 0;
     ssg_phase_ = 0.0;
     ssg_gain_ = 0.90;
@@ -136,6 +138,8 @@ void LibvgmYm2608::reset()
         ssg_dc_prev_out_right_ = 0.0;
         reset_debug_ssg_state();
         update_ssg_sample_rate();
+        ym2608_set_mute_mask(chip_, mute_mask_);
+        if (ssg_ != nullptr) ay8910_set_mute_mask(ssg_, ssg_mute_mask_);
     }
 }
 
@@ -235,9 +239,14 @@ void LibvgmYm2608::render_s16(int16_t* interleaved_stereo, int frames)
 
 void LibvgmYm2608::set_mute_mask(uint32_t mask)
 {
-    if (chip_ != nullptr) {
-        ym2608_set_mute_mask(chip_, mask);
-    }
+    mute_mask_ = mask & 0x1fffu;
+    if (chip_ != nullptr) ym2608_set_mute_mask(chip_, mute_mask_);
+}
+
+void LibvgmYm2608::set_ssg_mute_mask(uint32_t mask)
+{
+    ssg_mute_mask_ = mask & 0x07u;
+    if (ssg_ != nullptr) ay8910_set_mute_mask(ssg_, ssg_mute_mask_);
 }
 
 void LibvgmYm2608::set_ssg_gain(double gain)

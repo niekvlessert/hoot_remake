@@ -438,4 +438,43 @@ const char* hoot_last_error(HootContext* ctx)
     return ctx->last_error.c_str();
 }
 
+
+int hoot_can_mute_channel(HootContext* ctx, int visual_channel_index)
+{
+    if (ctx == nullptr || visual_channel_index < 0 || ctx->current_driver == nullptr || ctx->current_entry == nullptr)
+        return 0;
+    HootVisualState state{};
+    ctx->current_driver->fill_visual_state(*ctx->current_entry, ctx->selected_track, state);
+    if (visual_channel_index >= static_cast<int>(state.channel_count)) return 0;
+    const auto& ch = state.channels[visual_channel_index];
+    return ctx->current_driver->channel_mute_supported(ch.kind, ch.index) ? 1 : 0;
+}
+
+HootResult hoot_set_channel_muted(HootContext* ctx, int visual_channel_index, int muted)
+{
+    if (ctx == nullptr || visual_channel_index < 0) return HOOT_ERROR_INVALID_ARGUMENT;
+    if (ctx->current_driver == nullptr || ctx->current_entry == nullptr) return HOOT_ERROR_NOT_LOADED;
+    HootVisualState state{};
+    ctx->current_driver->fill_visual_state(*ctx->current_entry, ctx->selected_track, state);
+    if (visual_channel_index >= static_cast<int>(state.channel_count)) return HOOT_ERROR_INVALID_ARGUMENT;
+    const auto& ch = state.channels[visual_channel_index];
+    if (!ctx->current_driver->channel_mute_supported(ch.kind, ch.index)) {
+        ctx->set_error("selected channel cannot be muted by this driver backend");
+        return HOOT_ERROR_UNSUPPORTED;
+    }
+    if (!ctx->current_driver->set_channel_muted(ch.kind, ch.index, muted != 0)) {
+        ctx->set_error("driver rejected channel mute request");
+        return HOOT_ERROR_UNSUPPORTED;
+    }
+    return HOOT_OK;
+}
+
+HootResult hoot_clear_channel_mutes(HootContext* ctx)
+{
+    if (ctx == nullptr) return HOOT_ERROR_INVALID_ARGUMENT;
+    if (ctx->current_driver == nullptr) return HOOT_ERROR_NOT_LOADED;
+    ctx->current_driver->clear_channel_mutes();
+    return HOOT_OK;
+}
+
 } // extern "C"

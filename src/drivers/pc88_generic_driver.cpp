@@ -398,6 +398,43 @@ void Pc88GenericDriver::fill_visual_state(const HootEntry&, int, HootVisualState
     out.driver_work_size = 0;
 }
 
+bool Pc88GenericDriver::channel_mute_supported(int kind, int index) const
+{
+    if (kind == HOOT_VISUAL_CHANNEL_FM) return index >= 0 && index < (use_opna_ ? 6 : 3);
+    if (kind == HOOT_VISUAL_CHANNEL_SSG) return index >= 0 && index < 3;
+    if (use_opna_ && kind == HOOT_VISUAL_CHANNEL_ADPCM) return index == 0;
+    if (use_opna_ && kind == HOOT_VISUAL_CHANNEL_RHYTHM) return index >= 0 && index < 6;
+    return false;
+}
+
+bool Pc88GenericDriver::set_channel_muted(int kind, int index, bool muted)
+{
+    if (!channel_mute_supported(kind, index)) return false;
+    auto set_bit = [muted](uint32_t& mask, int bit) {
+        if (muted) mask |= (1u << bit); else mask &= ~(1u << bit);
+    };
+    if (kind == HOOT_VISUAL_CHANNEL_FM) set_bit(ui_opn_mute_mask_, index);
+    else if (kind == HOOT_VISUAL_CHANNEL_SSG) set_bit(ui_ssg_mute_mask_, index);
+    else if (kind == HOOT_VISUAL_CHANNEL_RHYTHM) set_bit(ui_opn_mute_mask_, 6 + index);
+    else if (kind == HOOT_VISUAL_CHANNEL_ADPCM) set_bit(ui_opn_mute_mask_, 12);
+    if (use_opna_) {
+        ym2608_.set_mute_mask(ui_opn_mute_mask_);
+        ym2608_.set_ssg_mute_mask(ui_ssg_mute_mask_);
+    } else {
+        ym2203_.set_mute_mask(ui_opn_mute_mask_);
+        ym2203_.set_ssg_mute_mask(ui_ssg_mute_mask_);
+    }
+    return true;
+}
+
+void Pc88GenericDriver::clear_channel_mutes()
+{
+    ui_opn_mute_mask_ = 0;
+    ui_ssg_mute_mask_ = 0;
+    if (use_opna_) { ym2608_.set_mute_mask(0); ym2608_.set_ssg_mute_mask(0); }
+    else { ym2203_.set_mute_mask(0); ym2203_.set_ssg_mute_mask(0); }
+}
+
 const char* Pc88GenericDriver::name() const
 {
     return use_opna_ ? "pc88-generic-opna" : "pc88-generic-opn";
@@ -420,6 +457,8 @@ void Pc88GenericDriver::clear()
     cpu_clock_hz_ = kDefaultCpuClock;
     loaded_ = false;
     use_opna_ = false;
+    ui_opn_mute_mask_ = 0;
+    ui_ssg_mute_mask_ = 0;
     use_periodic_irq_ = false;
     periodic_irq_interval_frames_ = 0;
     periodic_irq_frames_until_next_ = 0;

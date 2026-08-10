@@ -32,6 +32,12 @@ public:
         out.abi_version = HOOT_VISUAL_ABI_VERSION;
         out.struct_size = sizeof(out);
     }
+    // Host/UI channel muting uses the same kind/index pairs published in
+    // HootVisualState. Drivers that can safely silence an individual hardware
+    // voice implement these methods; unsupported adapters remain explicit.
+    virtual bool channel_mute_supported(int, int) const { return false; }
+    virtual bool set_channel_muted(int, int, bool) { return false; }
+    virtual void clear_channel_mutes() {}
     virtual const char* name() const = 0;
 };
 

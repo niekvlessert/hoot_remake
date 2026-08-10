@@ -135,6 +135,35 @@ Selecting a game loads its driver/pack but keeps the Library open on the game's 
 so tracks can be auditioned without leaving the browser. Playback continues when navigating
 back up the Library tree.
 
+
+## Channel mute / solo
+
+The channel display is interactive. Hoot keeps the emulated guest driver running
+and suppresses only the selected host-side sound voice, so muting a channel does
+not stop its timers, sequence state or visual activity.
+
+- left-click a channel row: toggle mute
+- right-click, Shift+click or double-click a row: toggle solo
+- `1`..`9`, `0`: mute/unmute the first ten rows in the currently visible channel bank
+- `Shift+1`..`Shift+0`: solo the corresponding visible row
+- `U`: clear every channel mute and solo state
+- `M`: master output mute; independent from channel muting
+
+Muted channels remain visible and their activity meters are dimmed rather than
+frozen. `Mxx` and `Sxx` markers identify muted and soloed rows. Not every legacy
+backend exposes independent voices; when a backend cannot perform a requested
+channel mute, Hoot reports that explicitly instead of pretending the channel was
+silenced.
+
+## Classic visual behaviour
+
+The channel meters use the classic center-origin stereo presentation: centered
+signals extend left and right, while panned signals extend toward their audible
+side. They have fast attack, a short peak hold and smooth release. Keyboard
+highlights, note/tone text and the scrolling current-track strip remain active
+while playback is running. The spectrum analyser uses the same fast-attack,
+slow-release principle so quiet bands decay smoothly rather than snapping off.
+
 ## Catalog editor
 
 The native Library can edit catalogue entries without modifying the upstream
@@ -153,7 +182,8 @@ The SDL frontend has a functional **Playback** menu rather than a placeholder:
 - Restart Track (`Ctrl+R`)
 - Previous Track (`Left` / `P`)
 - Next Track (`Right` / `N`)
-- Mute All / Unmute All (`M`)
+- Mute All / Unmute All (`M`) — master output mute
+- Clear Channel Mutes / Solo (`U`)
 - Record WAV / Stop WAV Recording (`Ctrl+Shift+R`)
 
 Stop clears queued audio; Play after Stop restarts the selected track. Mute All

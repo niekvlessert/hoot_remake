@@ -183,6 +183,8 @@ void MicrocabinPc98DosDriver::reset()
     selected_file_offset_ = 0;
     mmd_timer_frames_until_tick_ = 0.0;
     playing_ = false;
+    ui_opn_mute_mask_ = 0;
+    ui_ssg_mute_mask_ = 0;
     command_pending_ = false;
     if (ym2608_) {
         ym2608_->reset();
@@ -343,6 +345,38 @@ void MicrocabinPc98DosDriver::fill_track_info(const HootEntry& entry,
     } else {
         copy_c_string(out.title, entry.title);
     }
+}
+
+bool MicrocabinPc98DosDriver::channel_mute_supported(int kind, int index) const
+{
+    if (kind == HOOT_VISUAL_CHANNEL_FM) return index >= 0 && index < 6;
+    if (kind == HOOT_VISUAL_CHANNEL_SSG) return index >= 0 && index < 3;
+    if (kind == HOOT_VISUAL_CHANNEL_ADPCM) return index == 0;
+    if (kind == HOOT_VISUAL_CHANNEL_RHYTHM) return index >= 0 && index < 6;
+    return false;
+}
+
+bool MicrocabinPc98DosDriver::set_channel_muted(int kind, int index, bool muted)
+{
+    if (!channel_mute_supported(kind, index)) return false;
+    auto set_bit = [muted](uint32_t& mask, int bit) {
+        if (muted) mask |= (1u << bit); else mask &= ~(1u << bit);
+    };
+    if (kind == HOOT_VISUAL_CHANNEL_FM) set_bit(ui_opn_mute_mask_, index);
+    else if (kind == HOOT_VISUAL_CHANNEL_SSG) set_bit(ui_ssg_mute_mask_, index);
+    else if (kind == HOOT_VISUAL_CHANNEL_RHYTHM) set_bit(ui_opn_mute_mask_, 6 + index);
+    else if (kind == HOOT_VISUAL_CHANNEL_ADPCM) set_bit(ui_opn_mute_mask_, 12);
+    if (ym2608_) {
+        ym2608_->set_mute_mask(ui_opn_mute_mask_);
+        ym2608_->set_ssg_mute_mask(ui_ssg_mute_mask_);
+    }
+    return true;
+}
+
+void MicrocabinPc98DosDriver::clear_channel_mutes()
+{
+    ui_opn_mute_mask_ = ui_ssg_mute_mask_ = 0;
+    if (ym2608_) { ym2608_->set_mute_mask(0); ym2608_->set_ssg_mute_mask(0); }
 }
 
 const char* MicrocabinPc98DosDriver::name() const

@@ -6,6 +6,7 @@
 #endif
 
 #include <algorithm>
+#include <array>
 #include <cctype>
 #include <cstdio>
 #include <cstdlib>
@@ -72,6 +73,9 @@ struct App {
     bool pack_loaded = false;
     bool master_muted = false;
     bool stopped = false;
+    std::array<bool, HOOT_VISUAL_CHANNELS_MAX> manual_channel_muted{};
+    std::array<bool, HOOT_VISUAL_CHANNELS_MAX> effective_channel_muted{};
+    int solo_channel = -1;
     hootgui::WavRecorder recorder;
     Uint64 last_visual_tick = 0;
     Uint64 last_spectrum_tick = 0;
@@ -460,6 +464,83 @@ void toggle_master_mute(App& app)
     app.model.notice = app.master_muted ? "All output muted" : "All output unmuted";
 }
 
+void sync_channel_mute_model(App& app)
+{
+    app.model.channel_muted = app.effective_channel_muted;
+    app.model.solo_channel = app.solo_channel;
+}
+
+void apply_channel_mutes(App& app)
+{
+    app.effective_channel_muted.fill(false);
+    if (!app.pack_loaded) { sync_channel_mute_model(app); return; }
+    const int count = std::min<int>(static_cast<int>(app.model.visual.channel_count), HOOT_VISUAL_CHANNELS_MAX);
+    bool partial_solo = false;
+    for (int i = 0; i < count; ++i) {
+        const bool effective = app.manual_channel_muted[static_cast<size_t>(i)]
+            || (app.solo_channel >= 0 && i != app.solo_channel);
+        app.effective_channel_muted[static_cast<size_t>(i)] = effective;
+        if (!hoot_can_mute_channel(app.hoot, i)) {
+            if (effective && app.solo_channel >= 0) partial_solo = true;
+            continue;
+        }
+        hoot_set_channel_muted(app.hoot, i, effective ? 1 : 0);
+    }
+    sync_channel_mute_model(app);
+    if (partial_solo)
+        app.model.notice = "Solo is partial: this backend cannot mute every published channel.";
+}
+
+void clear_channel_mutes(App& app)
+{
+    app.manual_channel_muted.fill(false);
+    app.effective_channel_muted.fill(false);
+    app.solo_channel = -1;
+    if (app.pack_loaded) hoot_clear_channel_mutes(app.hoot);
+    sync_channel_mute_model(app);
+    app.model.notice = "Channel mutes cleared";
+}
+
+void toggle_channel_mute(App& app, int ordinal)
+{
+    if (!app.pack_loaded || ordinal < 0 || ordinal >= static_cast<int>(app.model.visual.channel_count)) return;
+    if (!hoot_can_mute_channel(app.hoot, ordinal)) {
+        app.model.notice = "This backend does not expose per-channel mute for that voice.";
+        return;
+    }
+    app.manual_channel_muted[static_cast<size_t>(ordinal)] = !app.manual_channel_muted[static_cast<size_t>(ordinal)];
+    apply_channel_mutes(app);
+    app.model.notice = app.manual_channel_muted[static_cast<size_t>(ordinal)]
+        ? "Channel muted" : "Channel unmuted";
+}
+
+void toggle_channel_solo(App& app, int ordinal)
+{
+    if (!app.pack_loaded || ordinal < 0 || ordinal >= static_cast<int>(app.model.visual.channel_count)) return;
+    if (!hoot_can_mute_channel(app.hoot, ordinal)) {
+        app.model.notice = "This backend does not expose per-channel solo for that voice.";
+        return;
+    }
+    app.solo_channel = app.solo_channel == ordinal ? -1 : ordinal;
+    apply_channel_mutes(app);
+    app.model.notice = app.solo_channel >= 0 ? "Channel solo" : "Solo cleared";
+}
+
+int channel_ordinal_at(App& app, float x, float y)
+{
+    using R = hootgui::RetroRenderer;
+    if (!app.pack_loaded || x < 0.0f || x >= R::kLeftPanelWidth || y < R::kChannelFirstY) return -1;
+    const float content_h = R::kLogicalHeight - R::kContentY - 255.0f - 28.0f;
+    if (y >= R::kContentY + content_h) return -1;
+    const int visible_channels = std::max(1, static_cast<int>((content_h - 6.0f) / R::kChannelRowHeight));
+    const int max_scroll = std::max(0, static_cast<int>(app.model.visual.channel_count) - visible_channels);
+    const int start = std::clamp(app.model.channel_scroll, 0, max_scroll);
+    const int row = static_cast<int>((y - R::kChannelFirstY) / R::kChannelRowHeight);
+    if (row < 0 || row >= visible_channels) return -1;
+    const int ordinal = start + row;
+    return ordinal < static_cast<int>(app.model.visual.channel_count) ? ordinal : -1;
+}
+
 void update_visual(App& app)
 {
     if (app.pack_loaded) hoot_get_visual_state(app.hoot, &app.model.visual);
@@ -469,6 +550,7 @@ void update_visual(App& app)
     app.model.stopped = app.stopped;
     app.model.muted_all = app.master_muted;
     app.model.recording = app.recorder.active();
+    sync_channel_mute_model(app);
 }
 
 bool switch_track(App& app, int index)
@@ -509,6 +591,7 @@ bool switch_track(App& app, int index)
         }
     }
     update_visual(app);
+    apply_channel_mutes(app);
     return true;
 }
 
@@ -568,6 +651,9 @@ bool load_reference(App& app, const std::string& ref, int requested_track)
     }
 
     app.pack_loaded = true;
+    app.manual_channel_muted.fill(false);
+    app.effective_channel_muted.fill(false);
+    app.solo_channel = -1;
     app.model.entry = entry;
     app.model.tracks.clear();
     const int count = hoot_get_track_count(app.hoot);
@@ -2159,7 +2245,8 @@ void playback_menu_action(App& app, int row)
         if (app.pack_loaded) switch_track(app, app.model.selected_track + 1);
         break;
     case 5: toggle_master_mute(app); break;
-    case 6: request_wav_recording(app); break;
+    case 6: clear_channel_mutes(app); break;
+    case 7: request_wav_recording(app); break;
     default: break;
     }
 }
@@ -2327,6 +2414,11 @@ void handle_event(App& app, const SDL_Event& e)
                 return;
             }
             if (!app.pack_loaded) return;
+            if (const int channel = channel_ordinal_at(app, lx, ly); channel >= 0) {
+                if ((e.button.clicks >= 2) || (SDL_GetModState() & SDL_KMOD_SHIFT)) toggle_channel_solo(app, channel);
+                else toggle_channel_mute(app, channel);
+                return;
+            }
             constexpr float playlist_y = hootgui::RetroRenderer::kLogicalHeight - 255.0f - 28.0f;
             constexpr float first_row_y = playlist_y + 28.0f;
             constexpr float row_h = 17.0f;
@@ -2334,6 +2426,15 @@ void handle_event(App& app, const SDL_Event& e)
                 const int row = static_cast<int>((ly - first_row_y) / row_h);
                 const int index = app.model.playlist_scroll + row;
                 if (index >= 0 && index < static_cast<int>(app.model.tracks.size())) switch_track(app, index);
+            }
+        }
+        return;
+    }
+    if (e.type == SDL_EVENT_MOUSE_BUTTON_DOWN && e.button.button == SDL_BUTTON_RIGHT) {
+        float lx = 0.0f, ly = 0.0f;
+        if (SDL_RenderCoordinatesFromWindow(app.renderer, e.button.x, e.button.y, &lx, &ly)) {
+            if (const int channel = channel_ordinal_at(app, lx, ly); channel >= 0) {
+                toggle_channel_solo(app, channel);
             }
         }
         return;
@@ -2346,11 +2447,41 @@ void handle_event(App& app, const SDL_Event& e)
     }
     if ((e.key.mod & SDL_KMOD_CTRL) && e.key.key == SDLK_R) { restart_playback(app); return; }
     if ((e.key.mod & SDL_KMOD_CTRL) && e.key.key == SDLK_S) { stop_playback(app); return; }
+    const bool shift = (e.key.mod & SDL_KMOD_SHIFT) != 0;
+    int visible_number = -1;
+    // Map the number-row keys explicitly instead of depending on keycode
+    // contiguity. The number refers to the visible channel bank, matching the
+    // rows the user currently sees.
+    switch (e.key.key) {
+    case SDLK_1: visible_number = 0; break;
+    case SDLK_2: visible_number = 1; break;
+    case SDLK_3: visible_number = 2; break;
+    case SDLK_4: visible_number = 3; break;
+    case SDLK_5: visible_number = 4; break;
+    case SDLK_6: visible_number = 5; break;
+    case SDLK_7: visible_number = 6; break;
+    case SDLK_8: visible_number = 7; break;
+    case SDLK_9: visible_number = 8; break;
+    case SDLK_0: visible_number = 9; break;
+    default: break;
+    }
+    if (visible_number >= 0 && app.pack_loaded) {
+        const float content_h = hootgui::RetroRenderer::kLogicalHeight - hootgui::RetroRenderer::kContentY - 255.0f - 28.0f;
+        const int visible_channels = std::max(1, static_cast<int>((content_h - 6.0f) / hootgui::RetroRenderer::kChannelRowHeight));
+        const int max_scroll = std::max(0, static_cast<int>(app.model.visual.channel_count) - visible_channels);
+        const int start = std::clamp(app.model.channel_scroll, 0, max_scroll);
+        const int ordinal = start + visible_number;
+        if (ordinal < static_cast<int>(app.model.visual.channel_count)) {
+            if (shift) toggle_channel_solo(app, ordinal); else toggle_channel_mute(app, ordinal);
+        }
+        return;
+    }
     switch (e.key.key) {
     case SDLK_ESCAPE: case SDLK_Q: app.running = false; break;
     case SDLK_O: request_open_pack(app); break;
     case SDLK_L: open_library(app); break;
     case SDLK_M: toggle_master_mute(app); break;
+    case SDLK_U: clear_channel_mutes(app); break;
     case SDLK_SPACE:
         if (app.stopped || app.model.paused) set_paused(app, false);
         else set_paused(app, true);

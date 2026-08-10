@@ -353,6 +353,29 @@ void MicrocabinPc88Driver::fill_visual_state(const HootEntry&, int, HootVisualSt
     std::copy_n(ram_.data() + out.driver_work_base, out.driver_work_size, out.driver_work);
 }
 
+bool MicrocabinPc88Driver::channel_mute_supported(int kind, int index) const
+{
+    return (kind == HOOT_VISUAL_CHANNEL_FM && index >= 0 && index < 3)
+        || (kind == HOOT_VISUAL_CHANNEL_SSG && index >= 0 && index < 3);
+}
+
+bool MicrocabinPc88Driver::set_channel_muted(int kind, int index, bool muted)
+{
+    if (!channel_mute_supported(kind, index)) return false;
+    uint32_t& mask = kind == HOOT_VISUAL_CHANNEL_FM ? ui_opn_mute_mask_ : ui_ssg_mute_mask_;
+    if (muted) mask |= (1u << index); else mask &= ~(1u << index);
+    ym2203_.set_mute_mask(ui_opn_mute_mask_);
+    ym2203_.set_ssg_mute_mask(ui_ssg_mute_mask_);
+    return true;
+}
+
+void MicrocabinPc88Driver::clear_channel_mutes()
+{
+    ui_opn_mute_mask_ = ui_ssg_mute_mask_ = 0;
+    ym2203_.set_mute_mask(0);
+    ym2203_.set_ssg_mute_mask(0);
+}
+
 const char* MicrocabinPc88Driver::name() const
 {
     return "microcabin-pc88-opn";
@@ -372,6 +395,8 @@ void MicrocabinPc88Driver::clear()
     play_pending_ = false;
     sample_rate_ = 44100;
     loaded_ = false;
+    ui_opn_mute_mask_ = 0;
+    ui_ssg_mute_mask_ = 0;
     debug_cpu_cycles_ = 0;
     debug_io_reads_ = 0;
     debug_io_writes_ = 0;

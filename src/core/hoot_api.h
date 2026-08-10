@@ -82,6 +82,10 @@ HOOT_API HootResult hoot_get_entry_option_info(HootContext* ctx, int entry_index
 HOOT_API int hoot_get_entry_asset_count(HootContext* ctx, int entry_index);
 HOOT_API HootResult hoot_get_entry_asset_info(HootContext* ctx, int entry_index, int asset_index, HootEntryAssetInfo* out);
 HOOT_API HootResult hoot_get_visual_state(HootContext* ctx, HootVisualState* out);
+// Channel indices refer to the current HootVisualState.channels[] ordering.
+HOOT_API int hoot_can_mute_channel(HootContext* ctx, int visual_channel_index);
+HOOT_API HootResult hoot_set_channel_muted(HootContext* ctx, int visual_channel_index, int muted);
+HOOT_API HootResult hoot_clear_channel_mutes(HootContext* ctx);
 
 
 #ifdef __cplusplus

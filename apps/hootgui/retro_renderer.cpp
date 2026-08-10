@@ -421,7 +421,7 @@ void RetroRenderer::draw_keyboard(const HootVisualChannel& c, float x, float y, 
             line(kx, y, kx, y + height, 66, 68, 78);
             if (key_active(c, note) || (c.active && c.midi_note == note))
                 fill(kx + 0.5f, y + height * 0.53f, std::max(1.0f, key_w - 1.0f), height * 0.45f,
-                     kRed[0], kRed[1], kRed[2]);
+                     kBrightBlue[0], kBrightBlue[1], kBrightBlue[2]);
         }
     }
     for (int note = first_note; note <= last_note; ++note) {
@@ -430,20 +430,24 @@ void RetroRenderer::draw_keyboard(const HootVisualChannel& c, float x, float y, 
         fill(kx - key_w * 0.22f, y, std::max(1.0f, key_w * 0.62f), height * 0.58f, 8, 9, 11);
         if (key_active(c, note) || (c.active && c.midi_note == note))
             fill(kx - key_w * 0.20f, y + 1.0f, std::max(1.0f, key_w * 0.55f), height * 0.52f,
-                 kRed[0], kRed[1], kRed[2]);
+                 kBrightBlue[0], kBrightBlue[1], kBrightBlue[2]);
     }
     rect(x, y, width, height, 92, 96, 110);
 }
 
-void RetroRenderer::draw_channel_row(const HootVisualChannel& channel, int ordinal, float y, float width)
+void RetroRenderer::draw_channel_row(const HootVisualChannel& channel, int ordinal, float y, float width, bool muted, bool solo)
 {
     // Original-Hoot style: keyboard on top, then channel description, a
     // centre-origin stereo activity meter and the current note/tone beneath it.
-    SDL_SetRenderDrawColor(renderer_, kRed[0], kRed[1], kRed[2], 255);
-    SDL_RenderDebugText(renderer_, 10.0f, y + 1.0f, "CH");
-    char idx[4];
-    std::snprintf(idx, sizeof(idx), "%02X", ordinal & 0xff);
-    SDL_RenderDebugText(renderer_, 10.0f, y + 10.0f, idx);
+    // Keep the left edge compact like classic Hoot: channel number plus a
+    // persistent mute/solo marker.  Muting never stops the guest driver clock.
+    const Uint8* marker = solo ? kBrightBlue : (muted ? kRed : kBlue);
+    SDL_SetRenderDrawColor(renderer_, marker[0], marker[1], marker[2], 255);
+    char idx[8];
+    if (solo) std::snprintf(idx, sizeof(idx), "S%02X", ordinal & 0xff);
+    else if (muted) std::snprintf(idx, sizeof(idx), "M%02X", ordinal & 0xff);
+    else std::snprintf(idx, sizeof(idx), " %02X", ordinal & 0xff);
+    SDL_RenderDebugText(renderer_, 8.0f, y + 8.0f, idx);
 
     const float keyboard_x = 40.0f;
     const float keyboard_y = y + 1.0f;
@@ -454,6 +458,11 @@ void RetroRenderer::draw_channel_row(const HootVisualChannel& channel, int ordin
     constexpr float label_w = 142.0f;
     constexpr float note_w = 54.0f;
     clipped_text(keyboard_x, y + info_y_offset, label_w, channel.label, 0.85f);
+    if (muted) {
+        text(keyboard_x + label_w - 35.0f, y + info_y_offset, "M", 0.78f);
+    } else if (solo) {
+        text(keyboard_x + label_w - 35.0f, y + info_y_offset, "S", 0.78f);
+    }
 
     const std::size_t meter_index = static_cast<std::size_t>(
         std::clamp(ordinal, 0, HOOT_VISUAL_CHANNELS_MAX - 1));
@@ -476,10 +485,13 @@ void RetroRenderer::draw_channel_row(const HootVisualChannel& channel, int ordin
     const float right_gain = pan >= 0.0f ? 1.0f : 1.0f + pan;
     const float left_extent = half * shown * std::clamp(left_gain, 0.0f, 1.0f);
     const float right_extent = half * shown * std::clamp(right_gain, 0.0f, 1.0f);
+    const Uint8 meter_r = muted ? static_cast<Uint8>(kMeterDim[0] + 18) : kMeter[0];
+    const Uint8 meter_g = muted ? static_cast<Uint8>(kMeterDim[1] + 10) : kMeter[1];
+    const Uint8 meter_b = muted ? static_cast<Uint8>(kMeterDim[2] + 18) : kMeter[2];
     if (left_extent > 0.5f)
-        fill(centre - left_extent - 2.0f, meter_y, left_extent, 4.0f, kMeter[0], kMeter[1], kMeter[2]);
+        fill(centre - left_extent - 2.0f, meter_y, left_extent, 4.0f, meter_r, meter_g, meter_b);
     if (right_extent > 0.5f)
-        fill(centre + 2.0f, meter_y, right_extent, 4.0f, kMeter[0], kMeter[1], kMeter[2]);
+        fill(centre + 2.0f, meter_y, right_extent, 4.0f, meter_r, meter_g, meter_b);
     fill(centre - 1.0f, meter_y - 1.0f, 2.0f, 6.0f, kBlue[0], kBlue[1], kBlue[2]);
 
     std::string tone = note_text(channel.midi_note);
@@ -1069,11 +1081,12 @@ void RetroRenderer::draw_top_menu(TopMenu top_menu, const UiModel& model)
             "Restart Track",
             "Previous Track",
             "Next Track",
-            model.muted_all ? "Unmute All" : "Mute All",
+            model.muted_all ? "Unmute Master" : "Mute Master",
+            "Clear Channel Mutes / Solo",
             model.recording ? "Stop WAV Recording" : "Record WAV..."
         };
         const char* shortcuts[kPlaybackRowCount] = {
-            "Space", "Ctrl+S", "Ctrl+R", "Left / P", "Right / N", "M", "Ctrl+Shift+R"
+            "Space", "Ctrl+S", "Ctrl+R", "Left / P", "Right / N", "M", "U", "Ctrl+Shift+R"
         };
         for (int i = 0; i < kPlaybackRowCount; ++i) {
             const float ry = y + i * kPlaybackRowHeight;
@@ -1149,8 +1162,14 @@ void RetroRenderer::draw(const UiModel& model, const SettingsView* settings, con
     for (std::size_t i = 0; i < meter_count; ++i) {
         const float target = std::clamp(model.visual.channels[i].level, 0.0f, 1.0f);
         float& shown = channel_meter_level_[i];
-        if (target >= shown) shown = target;
-        else shown = std::max(target, shown - frame_dt_seconds_ * 1.82f);
+        if (target >= shown) {
+            shown = target;
+            channel_meter_hold_until_[i] = tick + 70;
+        } else if (tick >= channel_meter_hold_until_[i]) {
+            // Classic Hoot's meters drop visibly slower than their attack.
+            // Keep a short peak hold and then release smoothly.
+            shown = std::max(target, shown - frame_dt_seconds_ * 1.12f);
+        }
     }
 
     SDL_SetRenderDrawColor(renderer_, kBlack[0], kBlack[1], kBlack[2], 255);
@@ -1174,19 +1193,22 @@ void RetroRenderer::draw(const UiModel& model, const SettingsView* settings, con
 
     constexpr float bottom_h = 255.0f;
     constexpr float status_h = 28.0f;
-    const float content_y = 36.0f;
+    const float content_y = kContentY;
     const float content_h = kLogicalHeight - content_y - bottom_h - status_h;
-    const float left_w = 690.0f;
+    const float left_w = kLeftPanelWidth;
     const float right_x = left_w + 2.0f;
 
     fill(0, content_y, left_w, content_h, kBlack[0], kBlack[1], kBlack[2]);
     rect(0, content_y, left_w, content_h, kGrey[0], kGrey[1], kGrey[2]);
-    const float row_h = 31.0f;
+    const float row_h = kChannelRowHeight;
     const int visible_channels = std::max(1, static_cast<int>((content_h - 6.0f) / row_h));
     const int max_scroll = std::max(0, static_cast<int>(model.visual.channel_count) - visible_channels);
     const int start = std::clamp(model.channel_scroll, 0, max_scroll);
-    for (int row = 0; row < visible_channels && start + row < static_cast<int>(model.visual.channel_count); ++row)
-        draw_channel_row(model.visual.channels[start + row], start + row, content_y + 4.0f + row * row_h, left_w);
+    for (int row = 0; row < visible_channels && start + row < static_cast<int>(model.visual.channel_count); ++row) {
+        const int ordinal = start + row;
+        draw_channel_row(model.visual.channels[ordinal], ordinal, content_y + 4.0f + row * row_h, left_w,
+                         model.channel_muted[static_cast<size_t>(ordinal)], model.solo_channel == ordinal);
+    }
 
     fill(right_x, content_y, kLogicalWidth - right_x, content_h, kBlack[0], kBlack[1], kBlack[2]);
     rect(right_x, content_y, kLogicalWidth - right_x, content_h, kGrey[0], kGrey[1], kGrey[2]);

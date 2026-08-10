@@ -41,6 +41,9 @@ public:
                          HootTrackInfo& out) const override;
     void fill_visual_state(const HootEntry& entry, int track_index,
                            HootVisualState& out) const override;
+    bool channel_mute_supported(int kind, int index) const override;
+    bool set_channel_muted(int kind, int index, bool muted) override;
+    void clear_channel_mutes() override;
     const char* name() const override;
 
 private:
@@ -241,6 +244,12 @@ private:
     std::string driver_warning_;
     double pcm86_gain_ = 1.0;
     double beep_gain_ = 1.0;
+    uint32_t ui_opn_mute_mask_ = 0;
+    uint32_t ui_ssg_mute_mask_ = 0;
+    uint32_t ui_opl_mute_mask_ = 0;
+    uint16_t ui_midi_mute_mask_ = 0;
+    bool ui_pcm86_muted_ = false;
+    bool ui_beep_muted_ = false;
     uint64_t debug_beep_vrtc_irqs_ = 0;
     int clock_multiplier_ = 8;
 

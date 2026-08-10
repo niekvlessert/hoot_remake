@@ -71,3 +71,18 @@ its own audio scheduling code. The caller owns the audio device, buffering,
 transport UI and thread synchronization. Packs and catalogue data remain
 runtime inputs; set their locations with `HootConfig.packs_path` and
 `hoot_load_catalog()`.
+
+## Visual channel mute control
+
+Frontends can mute published visual channels without pausing the guest driver:
+
+```c
+int hoot_can_mute_channel(HootContext* ctx, int visual_channel_index);
+HootResult hoot_set_channel_muted(HootContext* ctx, int visual_channel_index, int muted);
+HootResult hoot_clear_channel_mutes(HootContext* ctx);
+```
+
+The index is the ordinal from `HootVisualState.channels`. Support is backend- and
+voice-type-specific; call `hoot_can_mute_channel()` before presenting a mute as
+available. Muting suppresses host audio for that voice while keeping emulated
+sequence and timer state advancing.

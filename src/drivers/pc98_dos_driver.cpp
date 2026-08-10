@@ -1288,6 +1288,60 @@ void Pc98DosDriver::fill_visual_state(const HootEntry&, int, HootVisualState& ou
     out.driver_work_size = 0;
 }
 
+bool Pc98DosDriver::channel_mute_supported(int kind, int index) const
+{
+    if (kind == HOOT_VISUAL_CHANNEL_FM) return index >= 0 && index < (ym2608_ ? 6 : (ym2203_ ? 3 : 0));
+    if (kind == HOOT_VISUAL_CHANNEL_SSG) return (ym2203_ || ym2608_) && index >= 0 && index < 3;
+    if (kind == HOOT_VISUAL_CHANNEL_ADPCM) return ym2608_ && index == 0;
+    if (kind == HOOT_VISUAL_CHANNEL_RHYTHM) return ym2608_ && index >= 0 && index < 6;
+    if (kind == HOOT_VISUAL_CHANNEL_OPL) return opl_ && index >= 0 && index < (opl_->model() == LibvgmOpl::Model::YMF262 ? 18 : 9);
+    if (kind == HOOT_VISUAL_CHANNEL_PCM) return pcm86_ && index == 0;
+    if (kind == HOOT_VISUAL_CHANNEL_BEEP) return beep_ && index == 0;
+    if (kind == HOOT_VISUAL_CHANNEL_MIDI) return midi_enabled_ && index >= 0 && index < 16;
+    return false;
+}
+
+bool Pc98DosDriver::set_channel_muted(int kind, int index, bool muted)
+{
+    if (!channel_mute_supported(kind, index)) return false;
+    auto set_bit = [muted](auto& mask, int bit) {
+        using Mask = std::decay_t<decltype(mask)>;
+        if (muted) mask = static_cast<Mask>(mask | (static_cast<Mask>(1) << bit));
+        else mask = static_cast<Mask>(mask & ~(static_cast<Mask>(1) << bit));
+    };
+    if (kind == HOOT_VISUAL_CHANNEL_FM) set_bit(ui_opn_mute_mask_, index);
+    else if (kind == HOOT_VISUAL_CHANNEL_SSG) set_bit(ui_ssg_mute_mask_, index);
+    else if (kind == HOOT_VISUAL_CHANNEL_RHYTHM) set_bit(ui_opn_mute_mask_, 6 + index);
+    else if (kind == HOOT_VISUAL_CHANNEL_ADPCM) set_bit(ui_opn_mute_mask_, 12);
+    else if (kind == HOOT_VISUAL_CHANNEL_OPL) set_bit(ui_opl_mute_mask_, index);
+    else if (kind == HOOT_VISUAL_CHANNEL_PCM) ui_pcm86_muted_ = muted;
+    else if (kind == HOOT_VISUAL_CHANNEL_BEEP) ui_beep_muted_ = muted;
+    else if (kind == HOOT_VISUAL_CHANNEL_MIDI) {
+        set_bit(ui_midi_mute_mask_, index);
+        if (muted && midi_synth_ && midi_synth_->active()) {
+            midi_synth_->short_message(static_cast<uint8_t>(0xb0 | index), 120, 0, 3);
+            midi_synth_->short_message(static_cast<uint8_t>(0xb0 | index), 123, 0, 3);
+        }
+    }
+    if (ym2203_) { ym2203_->set_mute_mask(ui_opn_mute_mask_); ym2203_->set_ssg_mute_mask(ui_ssg_mute_mask_); }
+    if (ym2608_) { ym2608_->set_mute_mask(ui_opn_mute_mask_); ym2608_->set_ssg_mute_mask(ui_ssg_mute_mask_); }
+    if (opl_) opl_->set_mute_mask(ui_opl_mute_mask_);
+    return true;
+}
+
+void Pc98DosDriver::clear_channel_mutes()
+{
+    ui_opn_mute_mask_ = 0;
+    ui_ssg_mute_mask_ = 0;
+    ui_opl_mute_mask_ = 0;
+    ui_midi_mute_mask_ = 0;
+    ui_pcm86_muted_ = false;
+    ui_beep_muted_ = false;
+    if (ym2203_) { ym2203_->set_mute_mask(0); ym2203_->set_ssg_mute_mask(0); }
+    if (ym2608_) { ym2608_->set_mute_mask(0); ym2608_->set_ssg_mute_mask(0); }
+    if (opl_) opl_->set_mute_mask(0);
+}
+
 const char* Pc98DosDriver::name() const
 {
     if (use_sound_orchestra_) return bare_mode_ ? "pc98-bare-soundorchestra" : "pc98dos-v30-soundorchestra";
@@ -1400,6 +1454,12 @@ void Pc98DosDriver::clear()
     driver_warning_.clear();
     pcm86_gain_ = 1.0;
     beep_gain_ = 1.0;
+    ui_opn_mute_mask_ = 0;
+    ui_ssg_mute_mask_ = 0;
+    ui_opl_mute_mask_ = 0;
+    ui_midi_mute_mask_ = 0;
+    ui_pcm86_muted_ = false;
+    ui_beep_muted_ = false;
     debug_beep_vrtc_irqs_ = 0;
     clock_multiplier_ = 8;
     shell_programs_.clear();
@@ -2572,10 +2632,10 @@ void Pc98DosDriver::render_opn(int16_t* interleaved_stereo, int frames)
     }
     render_special_boards(interleaved_stereo, frames);
     if (pcm86_) {
-        pcm86_->mix_s16(interleaved_stereo, frames, pcm86_gain_);
+        pcm86_->mix_s16(interleaved_stereo, frames, ui_pcm86_muted_ ? 0.0 : pcm86_gain_);
     }
     if (beep_) {
-        beep_->mix_s16(interleaved_stereo, frames, beep_gain_);
+        beep_->mix_s16(interleaved_stereo, frames, ui_beep_muted_ ? 0.0 : beep_gain_);
     }
     render_midi(interleaved_stereo, frames);
 }
@@ -2739,7 +2799,12 @@ void Pc98DosDriver::handle_midi_message(const X68kMidiMessage& message)
         midi_synth_->sysex(message.sysex);
         ++debug_midi_sysex_handled_;
     } else {
-        midi_synth_->short_message(message.status, message.data1, message.data2, message.size);
+        const uint8_t op = static_cast<uint8_t>(message.status & 0xf0);
+        const int channel = message.status < 0xf0 ? static_cast<int>(message.status & 0x0f) : -1;
+        const bool muted_note_on = channel >= 0 && (ui_midi_mute_mask_ & (1u << channel)) != 0
+            && op == 0x90 && message.data2 != 0;
+        if (!muted_note_on)
+            midi_synth_->short_message(message.status, message.data1, message.data2, message.size);
     }
 }
 

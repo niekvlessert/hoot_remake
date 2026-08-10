@@ -81,6 +81,8 @@ struct UiModel {
     bool stopped = false;
     bool muted_all = false;
     bool recording = false;
+    std::array<bool, HOOT_VISUAL_CHANNELS_MAX> channel_muted{};
+    int solo_channel = -1;
     float gain = 1.0f;
     std::string notice;
     std::string warning;
@@ -92,6 +94,10 @@ class RetroRenderer {
 public:
     static constexpr int kLogicalWidth = 1440;
     static constexpr int kLogicalHeight = 900;
+    static constexpr float kContentY = 36.0f;
+    static constexpr float kLeftPanelWidth = 690.0f;
+    static constexpr float kChannelRowHeight = 31.0f;
+    static constexpr float kChannelFirstY = kContentY + 4.0f;
     static constexpr float kEditMenuX = 560.0f;
     static constexpr float kEditMenuWidth = 54.0f;
     static constexpr float kPlaybackMenuX = 624.0f;
@@ -105,7 +111,7 @@ public:
     static constexpr float kMenuPopupY = 33.0f;
     static constexpr float kPlaybackPopupWidth = 304.0f;
     static constexpr float kPlaybackRowHeight = 32.0f;
-    static constexpr int kPlaybackRowCount = 7;
+    static constexpr int kPlaybackRowCount = 8;
     static constexpr float kAboutX = 410.0f;
     static constexpr float kAboutY = 250.0f;
     static constexpr float kAboutWidth = 620.0f;
@@ -152,7 +158,7 @@ private:
     void fill(float x, float y, float w, float h, Uint8 r, Uint8 g, Uint8 b, Uint8 a = 255);
     void line(float x1, float y1, float x2, float y2, Uint8 r, Uint8 g, Uint8 b, Uint8 a = 255);
     void rect(float x, float y, float w, float h, Uint8 r, Uint8 g, Uint8 b, Uint8 a = 255);
-    void draw_channel_row(const HootVisualChannel& channel, int ordinal, float y, float width);
+    void draw_channel_row(const HootVisualChannel& channel, int ordinal, float y, float width, bool muted, bool solo);
     void draw_keyboard(const HootVisualChannel& channel, float x, float y, float width, float height);
     void draw_spectrum(const std::array<float, SpectrumAnalyzer::kBins>& bins,
                        float x, float y, float width, float height, const char* label);
@@ -170,6 +176,7 @@ private:
     SDL_Renderer* renderer_ = nullptr;
     std::unique_ptr<TextState> text_state_;
     std::array<float, HOOT_VISUAL_CHANNELS_MAX> channel_meter_level_{};
+    std::array<Uint64, HOOT_VISUAL_CHANNELS_MAX> channel_meter_hold_until_{};
     Uint64 last_frame_tick_ = 0;
     float frame_dt_seconds_ = 1.0f / 60.0f;
     int meter_track_ = -1;

@@ -19,6 +19,8 @@ public:
     void write(uint8_t port, uint8_t data);
     uint8_t read(uint8_t port);
     void render_s16(int16_t* interleaved_stereo, int frames);
+    void set_mute_mask(uint32_t mask);
+    void set_ssg_mute_mask(uint32_t mask);
     void set_ssg_gain(double gain);
 
 private:
@@ -42,6 +44,8 @@ private:
     double ssg_dc_prev_out_left_ = 0.0;
     double ssg_dc_prev_out_right_ = 0.0;
     uint8_t debug_psg_channel_mask_ = 0x07;
+    uint32_t mute_mask_ = 0;
+    uint32_t ssg_mute_mask_ = 0;
     bool debug_psg_disable_tone_ = false;
     bool debug_psg_disable_noise_ = false;
     bool debug_psg_raw_dc_ = false;

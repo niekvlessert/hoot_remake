@@ -30,6 +30,9 @@ public:
                          HootTrackInfo& out) const override;
     void fill_visual_state(const HootEntry& entry, int track_index,
                            HootVisualState& out) const override;
+    bool channel_mute_supported(int kind, int index) const override;
+    bool set_channel_muted(int kind, int index, bool muted) override;
+    void clear_channel_mutes() override;
     const char* name() const override;
 
 private:
@@ -117,6 +120,8 @@ private:
     uint8_t current_opna_address_[2] = {0, 0};
     std::array<std::array<uint8_t, 256>, 2> opna_registers_{};
     std::array<uint8_t, 6> opna_key_on_{};
+    uint32_t ui_opn_mute_mask_ = 0;
+    uint32_t ui_ssg_mute_mask_ = 0;
 
     static constexpr uint32_t kMemorySize = 1024 * 1024;
     static constexpr uint16_t kHelperSegment = 0x0000;

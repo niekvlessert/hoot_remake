@@ -145,6 +145,35 @@ bool run_case(const std::string& packs, const char* driver_name, bool opna)
                   << " writes=" << info.debug_opn_writes << " pc=0x" << std::hex << info.debug_pc << std::dec << "\n";
         return false;
     }
+
+    // Host-side channel mute must silence voices without stopping the guest
+    // sequencer. Mute every published voice, render forward, then clear and
+    // verify that later key/activity becomes audible again.
+    for (uint32_t i = 0; i < visual.channel_count; ++i) {
+        const auto& ch = visual.channels[i];
+        if (driver->channel_mute_supported(ch.kind, ch.index))
+            driver->set_channel_muted(ch.kind, ch.index, true);
+    }
+    // Let the SSG DC-blocker's short filter tail settle before measuring.
+    std::vector<int16_t> settle_audio(4096 * 2);
+    driver->render_s16(settle_audio.data(), 4096);
+    std::vector<int16_t> muted_audio(4096 * 2);
+    driver->render_s16(muted_audio.data(), 4096);
+    int muted_peak = 0;
+    for (auto sample : muted_audio) muted_peak = std::max(muted_peak, std::abs(static_cast<int>(sample)));
+    if (muted_peak > 512) {
+        std::cerr << entry.id << ": channel mute leaked audio peak=" << muted_peak << "\n";
+        return false;
+    }
+    driver->clear_channel_mutes();
+    std::vector<int16_t> unmuted_audio(8192 * 2);
+    driver->render_s16(unmuted_audio.data(), 8192);
+    int unmuted_peak = 0;
+    for (auto sample : unmuted_audio) unmuted_peak = std::max(unmuted_peak, std::abs(static_cast<int>(sample)));
+    if (unmuted_peak < 100) {
+        std::cerr << entry.id << ": audio did not recover after clear_channel_mutes peak=" << unmuted_peak << "\n";
+        return false;
+    }
     return true;
 }
 

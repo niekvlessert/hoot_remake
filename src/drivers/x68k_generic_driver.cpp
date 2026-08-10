@@ -471,6 +471,7 @@ HootResult X68kGenericDriver::load(const HootEntry& entry,
         }
     }
     pcm8_.reset();
+    pcm8_.set_mute_mask(ui_pcm8_mute_mask_);
     const auto dmaint = entry.options.find("dmaint");
     dmaint_enabled_ = dmaint != entry.options.end() && dmaint->second != 0;
     const auto mfp = entry.options.find("mfp");
@@ -923,7 +924,7 @@ HootResult X68kGenericDriver::load(const HootEntry& entry,
             || std::strcmp(value, "true") == 0;
     }
     opm_mute_mask_ = parse_opm_mute_mask(std::getenv("HOOT_X68K_CHANNELS"));
-    ym2151_.set_mute_mask(opm_mute_mask_);
+    ym2151_.set_mute_mask(opm_mute_mask_ | ui_opm_mute_mask_);
     g_active_driver = this;
     m68k_set_cpu_type(M68K_CPU_TYPE_68000);
     m68k_init();
@@ -1353,9 +1354,10 @@ void X68kGenericDriver::reset()
     debug_last_ym2151_reg_ = 0;
     debug_last_ym2151_data_ = 0;
     ym2151_.reset();
-    ym2151_.set_mute_mask(opm_mute_mask_);
+    ym2151_.set_mute_mask(opm_mute_mask_ | ui_opm_mute_mask_);
     adpcm_.reset();
     pcm8_.reset();
+    pcm8_.set_mute_mask(ui_pcm8_mute_mask_);
     pcm8_mix_buffer_.clear();
     midi_mix_buffer_.clear();
     startup_preroll_.clear();
@@ -1407,11 +1409,11 @@ int X68kGenericDriver::render_s16(int16_t* interleaved_stereo, int frames)
             destination[sample] = static_cast<int16_t>(std::clamp(value, -32768l, 32767l));
         }
         const bool adpcm_was_playing = adpcm_.is_playing();
-        if (!mute_percussion_) {
+        if (!mute_percussion_ && !ui_adpcm_muted_) {
             adpcm_.mix_s16(destination, todo, adpcm_gain_);
-        } else if (dmaint_enabled_ && adpcm_was_playing) {
-            // DMA completion must remain clocked even when the audible PCM
-            // contribution is muted. Advance into a throwaway stereo buffer.
+        } else if (adpcm_was_playing) {
+            // A host mute must silence the contribution without freezing the
+            // guest DMA/sample timeline. Advance into a throwaway buffer.
             mix_buffer_.assign(static_cast<size_t>(todo) * 2u, 0);
             adpcm_.mix_s16(mix_buffer_.data(), todo, 0.0);
         }
@@ -1662,6 +1664,47 @@ void X68kGenericDriver::fill_visual_state(const HootEntry&, int, HootVisualState
     std::copy_n(high_memory_.data(), out.driver_work_size, out.driver_work);
 }
 
+bool X68kGenericDriver::channel_mute_supported(int kind, int index) const
+{
+    if (kind == HOOT_VISUAL_CHANNEL_FM) return index >= 0 && index < 8;
+    if (kind == HOOT_VISUAL_CHANNEL_ADPCM) return index == 0;
+    if (kind == HOOT_VISUAL_CHANNEL_PCM) return pcm8_enabled_ && index >= 0 && index < X68kPcm8Mixer::kVoiceCount;
+    if (kind == HOOT_VISUAL_CHANNEL_MIDI) return midi_enabled_ && index >= 0 && index < 16;
+    return false;
+}
+
+bool X68kGenericDriver::set_channel_muted(int kind, int index, bool muted)
+{
+    if (!channel_mute_supported(kind, index)) return false;
+    if (kind == HOOT_VISUAL_CHANNEL_FM) {
+        if (muted) ui_opm_mute_mask_ |= (1u << index); else ui_opm_mute_mask_ &= ~(1u << index);
+        ym2151_.set_mute_mask(opm_mute_mask_ | ui_opm_mute_mask_);
+    } else if (kind == HOOT_VISUAL_CHANNEL_ADPCM) {
+        ui_adpcm_muted_ = muted;
+    } else if (kind == HOOT_VISUAL_CHANNEL_PCM) {
+        if (muted) ui_pcm8_mute_mask_ |= (1u << index); else ui_pcm8_mute_mask_ &= ~(1u << index);
+        pcm8_.set_mute_mask(ui_pcm8_mute_mask_);
+    } else if (kind == HOOT_VISUAL_CHANNEL_MIDI) {
+        if (muted) ui_midi_mute_mask_ |= static_cast<uint16_t>(1u << index);
+        else ui_midi_mute_mask_ &= static_cast<uint16_t>(~(1u << index));
+        if (muted && midi_synth_ && midi_synth_->active()) {
+            midi_synth_->short_message(static_cast<uint8_t>(0xb0 | index), 120, 0, 3);
+            midi_synth_->short_message(static_cast<uint8_t>(0xb0 | index), 123, 0, 3);
+        }
+    }
+    return true;
+}
+
+void X68kGenericDriver::clear_channel_mutes()
+{
+    ui_opm_mute_mask_ = 0;
+    ui_pcm8_mute_mask_ = 0;
+    ui_midi_mute_mask_ = 0;
+    ui_adpcm_muted_ = false;
+    ym2151_.set_mute_mask(opm_mute_mask_);
+    pcm8_.set_mute_mask(0);
+}
+
 const char* X68kGenericDriver::name() const
 {
     return "x68k-generic";
@@ -1718,6 +1761,10 @@ void X68kGenericDriver::clear()
     startup_preroll_offset_ = 0;
     mute_percussion_ = false;
     opm_mute_mask_ = 0;
+    ui_opm_mute_mask_ = 0;
+    ui_pcm8_mute_mask_ = 0;
+    ui_midi_mute_mask_ = 0;
+    ui_adpcm_muted_ = false;
     current_ym2151_reg_ = 0;
     debug_last_ym2151_reg_ = 0;
     debug_last_ym2151_data_ = 0;
@@ -1726,6 +1773,7 @@ void X68kGenericDriver::clear()
     midi_enabled_ = false;
     pcm8_enabled_ = false;
     pcm8_.reset();
+    pcm8_.set_mute_mask(ui_pcm8_mute_mask_);
     dmaint_enabled_ = false;
     dma_irq_pending_ = false;
     dma_niv_ = 0x6a;
@@ -2541,7 +2589,12 @@ void X68kGenericDriver::handle_midi_message(const X68kMidiMessage& message)
         midi_synth_->sysex(message.sysex);
         ++debug_midi_sysex_handled_;
     } else {
-        midi_synth_->short_message(message.status, message.data1, message.data2, message.size);
+        const uint8_t op = static_cast<uint8_t>(message.status & 0xf0);
+        const int channel = message.status < 0xf0 ? static_cast<int>(message.status & 0x0f) : -1;
+        const bool muted_note_on = channel >= 0 && (ui_midi_mute_mask_ & (1u << channel)) != 0
+            && op == 0x90 && message.data2 != 0;
+        if (!muted_note_on)
+            midi_synth_->short_message(message.status, message.data1, message.data2, message.size);
     }
 }
 

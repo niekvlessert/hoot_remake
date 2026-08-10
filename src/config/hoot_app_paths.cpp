@@ -70,7 +70,8 @@ std::filesystem::path hoot_user_home()
     if (auto profile = env_path("USERPROFILE"); !profile.empty()) return profile / ".hoot";
     const auto drive = env_path("HOMEDRIVE");
     const auto path = env_path("HOMEPATH");
-    if (!drive.empty() && !path.empty()) return (drive.string() + path.string()) / ".hoot";
+    if (!drive.empty() && !path.empty())
+        return std::filesystem::path(drive.string() + path.string()) / ".hoot";
 #endif
     std::error_code ec;
     const auto cwd = std::filesystem::current_path(ec);
