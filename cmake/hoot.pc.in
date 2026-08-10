@@ -1,0 +1,11 @@
+prefix=${pcfiledir}/../..
+exec_prefix=${prefix}
+# Keep the pkg-config paths relative to the installation prefix.
+libdir=${prefix}/@CMAKE_INSTALL_LIBDIR@
+includedir=${prefix}/@CMAKE_INSTALL_INCLUDEDIR@
+
+Name: libhoot
+Description: Headless Hoot replay and telemetry library
+Version: @PROJECT_VERSION@
+Libs: -L${libdir} -lhoot
+Cflags: -I${includedir}
