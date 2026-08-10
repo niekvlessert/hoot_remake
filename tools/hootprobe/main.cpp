@@ -567,6 +567,7 @@ EntryScan scan_entry(const hoot::HootEntry& entry, const Options& options)
     return result;
 }
 
+#if !defined(_WIN32)
 int outcome_exit_code(const EntryScan& scan)
 {
     if (scan.outcome == "audio-active") return ExitPass;
@@ -582,6 +583,7 @@ int outcome_exit_code(const EntryScan& scan)
     if (scan.outcome == "timeout") return ExitTimeout;
     return ExitInternalError;
 }
+#endif
 
 void append_track_json(std::ostringstream& out, const TrackScan& track)
 {
@@ -733,6 +735,7 @@ struct IsolatedResult {
     int signal = 0;
 };
 
+#if !defined(_WIN32)
 std::string temporary_result_path(size_t ordinal)
 {
     std::filesystem::path base = std::filesystem::temp_directory_path();
@@ -744,12 +747,14 @@ std::string temporary_result_path(size_t ordinal)
 #endif
     return (base / name.str()).string();
 }
+#endif
 
 IsolatedResult run_isolated(const hoot::HootEntry& entry,
                             const Options& options,
                             size_t ordinal)
 {
 #if defined(_WIN32)
+    (void)ordinal;
     const auto scan = scan_entry(entry, options);
     return {scan_json(scan), scan.outcome, false, false, 0};
 #else

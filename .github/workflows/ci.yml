@@ -43,6 +43,16 @@ jobs:
         with:
           python-version: '3.x'
 
+      - name: Install current CMake (Linux ARM64)
+        if: matrix.triplet == 'arm64-linux'
+        shell: bash
+        run: |
+          python -m pip install --user --upgrade cmake
+          CMAKE_USER_BIN="$(python -c 'import site; print(site.getuserbase() + "/bin")')"
+          echo "$CMAKE_USER_BIN" >> "$GITHUB_PATH"
+          export PATH="$CMAKE_USER_BIN:$PATH"
+          cmake --version
+
       - name: Install Linux build prerequisites
         if: runner.os == 'Linux'
         shell: bash
