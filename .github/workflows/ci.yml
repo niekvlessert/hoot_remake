@@ -60,22 +60,31 @@ jobs:
           echo "ACTIONS_CACHE_URL=$ACTIONS_CACHE_URL" >> "$GITHUB_ENV"
           echo "ACTIONS_RUNTIME_TOKEN=$ACTIONS_RUNTIME_TOKEN" >> "$GITHUB_ENV"
 
-      - name: Bootstrap vcpkg
+      - name: Bootstrap vcpkg (Windows)
+        if: runner.os == 'Windows'
+        shell: pwsh
+        run: |
+          $vcpkgRoot = Join-Path $env:RUNNER_TEMP 'vcpkg'
+          git clone --depth 1 https://github.com/microsoft/vcpkg.git $vcpkgRoot
+          $bootstrap = Join-Path $vcpkgRoot 'bootstrap-vcpkg.bat'
+          & $bootstrap -disableMetrics
+          if ($LASTEXITCODE -ne 0) {
+            exit $LASTEXITCODE
+          }
+          $vcpkg = Join-Path $vcpkgRoot 'vcpkg.exe'
+          if (-not (Test-Path $vcpkg)) {
+            throw "vcpkg bootstrap did not create $vcpkg"
+          }
+          Add-Content -Path $env:GITHUB_ENV -Value "VCPKG_ROOT=$vcpkgRoot"
+
+      - name: Bootstrap vcpkg (Unix)
+        if: runner.os != 'Windows'
         shell: bash
         run: |
           VCPKG_ROOT_UNIX="$RUNNER_TEMP/vcpkg"
-          VCPKG_ROOT_NATIVE="$VCPKG_ROOT_UNIX"
-          if [ "${{ runner.os }}" = "Windows" ]; then
-            VCPKG_ROOT_UNIX="$(cygpath -u "$RUNNER_TEMP")/vcpkg"
-            VCPKG_ROOT_NATIVE="$(cygpath -w "$VCPKG_ROOT_UNIX")"
-          fi
           git clone --depth 1 https://github.com/microsoft/vcpkg.git "$VCPKG_ROOT_UNIX"
-          if [ "${{ runner.os }}" = "Windows" ]; then
-            cmd.exe /c "$(cygpath -w "$VCPKG_ROOT_UNIX/bootstrap-vcpkg.bat") -disableMetrics"
-          else
-            "$VCPKG_ROOT_UNIX/bootstrap-vcpkg.sh" -disableMetrics
-          fi
-          echo "VCPKG_ROOT=$VCPKG_ROOT_NATIVE" >> "$GITHUB_ENV"
+          "$VCPKG_ROOT_UNIX/bootstrap-vcpkg.sh" -disableMetrics
+          echo "VCPKG_ROOT=$VCPKG_ROOT_UNIX" >> "$GITHUB_ENV"
           echo "VCPKG_ROOT_UNIX=$VCPKG_ROOT_UNIX" >> "$GITHUB_ENV"
 
       - name: Install native dependencies (Windows)
@@ -100,7 +109,27 @@ jobs:
             --triplet "${{ matrix.triplet }}" \
             zlib sqlite3 zstd sdl3 sdl3-ttf
 
-      - name: Configure
+      - name: Configure (Windows)
+        if: runner.os == 'Windows'
+        shell: pwsh
+        run: |
+          $toolchain = Join-Path $env:VCPKG_ROOT 'scripts\buildsystems\vcpkg.cmake'
+          $cmakeArgs = @(
+            '-S', '.',
+            '-B', 'build',
+            '-G', 'Ninja',
+            '-DCMAKE_BUILD_TYPE=Release',
+            "-DCMAKE_TOOLCHAIN_FILE=$toolchain",
+            '-DVCPKG_TARGET_TRIPLET=${{ matrix.triplet }}',
+            '-DHOOT_BUILD_GUI=ON'
+          )
+          & cmake @cmakeArgs
+          if ($LASTEXITCODE -ne 0) {
+            exit $LASTEXITCODE
+          }
+
+      - name: Configure (Unix)
+        if: runner.os != 'Windows'
         shell: bash
         run: |
           TOOLCHAIN_FILE="$VCPKG_ROOT/scripts/buildsystems/vcpkg.cmake"
@@ -136,7 +165,7 @@ jobs:
           else
             test -f build/hootui
           fi
-          grep -R "HOOT_HAVE_SDL3_TTF=1" build/CMakeFiles/hootgui.dir/flags.make build/build.ninja >/dev/null 2>&1 || {
+          grep -q "HOOT_HAVE_SDL3_TTF=1" build/build.ninja || {
             echo "SDL3_ttf Unicode renderer was not enabled" >&2
             exit 1
           }
