@@ -244,7 +244,10 @@ std::string warning_help(const std::string& warning, const std::filesystem::path
 {
     const std::string lower = lower_ascii(warning);
     const std::filesystem::path roms = roms_dir.empty() ? std::filesystem::path("~/.hoot/roms") : roms_dir;
-    auto rom_path = [&](const char* name) { return (roms / name).string() + std::filesystem::path::preferred_separator; };
+    auto rom_path = [&](const char* name) {
+        return (roms / name).string()
+            + std::string(1, static_cast<char>(std::filesystem::path::preferred_separator));
+    };
     const bool rom_related = lower.find("rom") != std::string::npos
         || lower.find("ic18") != std::string::npos || lower.find("ic19") != std::string::npos
         || lower.find("ic20") != std::string::npos || lower.find("sn-u110") != std::string::npos;
