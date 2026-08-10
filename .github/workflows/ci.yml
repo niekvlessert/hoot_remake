@@ -78,17 +78,27 @@ jobs:
           echo "VCPKG_ROOT=$VCPKG_ROOT_NATIVE" >> "$GITHUB_ENV"
           echo "VCPKG_ROOT_UNIX=$VCPKG_ROOT_UNIX" >> "$GITHUB_ENV"
 
-      - name: Install native dependencies
+      - name: Install native dependencies (Windows)
+        if: runner.os == 'Windows'
+        shell: pwsh
+        run: |
+          $vcpkg = Join-Path $env:VCPKG_ROOT 'vcpkg.exe'
+          & $vcpkg install --triplet "${{ matrix.triplet }}" zlib sqlite3 zstd sdl3 sdl3-ttf
+          if ($LASTEXITCODE -ne 0) {
+            exit $LASTEXITCODE
+          }
+          $zlibHeader = Join-Path $env:VCPKG_ROOT "installed\${{ matrix.triplet }}\include\zlib.h"
+          if (-not (Test-Path $zlibHeader)) {
+            throw "vcpkg did not install zlib at $zlibHeader"
+          }
+
+      - name: Install native dependencies (Unix)
+        if: runner.os != 'Windows'
         shell: bash
         run: |
-          if [ "${{ runner.os }}" = "Windows" ]; then
-            VCPKG_NATIVE_EXE="$(cygpath -w "$VCPKG_ROOT_UNIX/vcpkg.exe")"
-            cmd.exe /d /s /c "\"$VCPKG_NATIVE_EXE\" install --triplet ${{ matrix.triplet }} zlib sqlite3 zstd sdl3 sdl3-ttf"
-          else
-            "$VCPKG_ROOT_UNIX/vcpkg" install \
-              --triplet "${{ matrix.triplet }}" \
-              zlib sqlite3 zstd sdl3 sdl3-ttf
-          fi
+          "$VCPKG_ROOT_UNIX/vcpkg" install \
+            --triplet "${{ matrix.triplet }}" \
+            zlib sqlite3 zstd sdl3 sdl3-ttf
 
       - name: Configure
         shell: bash
