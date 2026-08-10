@@ -59,7 +59,10 @@ jobs:
         run: |
           sudo apt-get update
           sudo apt-get install -y \
-            autoconf autoconf-archive automake libtool libltdl-dev ninja-build pkg-config fonts-noto-cjk
+            autoconf autoconf-archive automake ca-certificates libtool libltdl-dev ninja-build pkg-config fonts-noto-cjk
+          sudo update-ca-certificates
+          echo "CURL_CA_BUNDLE=/etc/ssl/certs/ca-certificates.crt" >> "$GITHUB_ENV"
+          echo "SSL_CERT_FILE=/etc/ssl/certs/ca-certificates.crt" >> "$GITHUB_ENV"
 
       - name: Install macOS build prerequisites
         if: runner.os == 'macOS'
@@ -99,6 +102,18 @@ jobs:
           "$VCPKG_ROOT_UNIX/bootstrap-vcpkg.sh" -disableMetrics
           echo "VCPKG_ROOT=$VCPKG_ROOT_UNIX" >> "$GITHUB_ENV"
           echo "VCPKG_ROOT_UNIX=$VCPKG_ROOT_UNIX" >> "$GITHUB_ENV"
+
+      - name: Prime vcpkg Brotli source cache (Linux)
+        if: runner.os == 'Linux'
+        shell: bash
+        run: |
+          BROTLI_ARCHIVE="$VCPKG_ROOT_UNIX/downloads/google-brotli-v1.2.0.tar.gz"
+          mkdir -p "$(dirname "$BROTLI_ARCHIVE")"
+          curl --fail --location --retry 3 --retry-delay 2 \
+            --cacert /etc/ssl/certs/ca-certificates.crt \
+            --output "$BROTLI_ARCHIVE" \
+            https://github.com/google/brotli/archive/v1.2.0.tar.gz
+          test -s "$BROTLI_ARCHIVE"
 
       - name: Install native dependencies (Windows)
         if: runner.os == 'Windows'
