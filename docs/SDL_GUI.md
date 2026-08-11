@@ -124,7 +124,10 @@ The native browser preserves the original selector semantics:
 Enhancements that do not change the hierarchy:
 
 - Mouse selection and double-click activation.
-- `F` / `Ctrl+F` starts UTF-8 search in the current folder. Japanese queries are supported.
+- `F` / `Ctrl+F` starts UTF-8 search. At the root or a driver-family folder it
+  searches games recursively; in game, variant, and track lists it filters the
+  current folder. Titles, entry IDs, archive names, and driver names are searchable,
+  and Japanese queries are supported.
 - Games show `READY` when `<archive>.zip` is present in the configured or last-used pack
   directory, otherwise `missing pack`. Missing games remain visible just like original Hoot.
 - Recognizable external MIDI targets (MT-32, CM-64, SC-55, SC-88, Vermouth, etc.) are

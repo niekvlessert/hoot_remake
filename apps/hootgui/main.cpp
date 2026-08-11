@@ -1048,6 +1048,20 @@ bool library_search_match(const std::string& query, const std::string& a, const 
     return lower_ascii(a).find(needle) != std::string::npos || lower_ascii(b).find(needle) != std::string::npos;
 }
 
+bool library_entry_search_match(const std::string& query, const HootEntryInfo& entry)
+{
+    return library_search_match(query, entry.title, entry.archive)
+        || library_search_match(query, entry.id, entry.driver);
+}
+
+bool library_level_has_entry_rows(const App& app)
+{
+    return app.library_level == LibraryLevel::Games
+        || app.library_level == LibraryLevel::Variants
+        || (!app.library_search.empty()
+            && (app.library_level == LibraryLevel::Root || app.library_level == LibraryLevel::Major));
+}
+
 bool library_entry_visible(const App& app, const HootEntryInfo& entry)
 {
     return !app.library_available_only || library_pack_path(app, entry) != nullptr;
@@ -1076,6 +1090,31 @@ void rebuild_library_rows(App& app)
 
     if (app.library_level != LibraryLevel::Root)
         app.library_rows.push_back({hootgui::LibraryRowKind::Parent, "..", "parent", "", -1, true});
+
+    // A search started at the root or a driver-family folder should find
+    // games below that folder, not merely filter the names of its immediate
+    // child folders. This also makes archive names such as rusty98 and
+    // rusty_at directly discoverable from the Library's initial view.
+    if (!query.empty()
+        && (app.library_level == LibraryLevel::Root || app.library_level == LibraryLevel::Major)) {
+        for (std::size_t i = 0; i < app.catalog_entries.size(); ++i) {
+            const auto& entry = app.catalog_entries[i];
+            if (!library_entry_visible(app, entry)) continue;
+            if (app.library_level == LibraryLevel::Major
+                && split_library_driver(entry).first != app.library_major) continue;
+            if (!library_entry_search_match(query, entry)) continue;
+            const bool available = library_pack_path(app, entry) != nullptr;
+            std::string status = available ? "PACK FOUND" : "missing pack";
+            status += " · " + library_support_label(app, entry);
+            if (const auto special = library_special_target(entry); !special.empty()) status += " · " + special;
+            if (app.user_overrides.entries.find(entry.id) != app.user_overrides.entries.end()) status += " · EDITED";
+            app.library_rows.push_back({hootgui::LibraryRowKind::Entry, entry.title,
+                                        std::string(entry.archive) + ".zip", status,
+                                        static_cast<int>(i), available});
+        }
+        clamp_library_cursor(app);
+        return;
+    }
 
     if (app.library_level == LibraryLevel::Root) {
         int total = 0;
@@ -1364,8 +1403,7 @@ void activate_library_row(App& app, bool play_and_advance)
         set_library_level(app, LibraryLevel::Games, app.library_major, row.label == "- all -" ? "*" : row.label);
         return;
     }
-    if ((app.library_level == LibraryLevel::Games || app.library_level == LibraryLevel::Variants) &&
-        row.kind == hootgui::LibraryRowKind::Entry) {
+    if (library_level_has_entry_rows(app) && row.kind == hootgui::LibraryRowKind::Entry) {
         if (row.payload < 0 || row.payload >= static_cast<int>(app.catalog_entries.size())) return;
         const auto& entry = app.catalog_entries[static_cast<std::size_t>(row.payload)];
         if (const auto* pack = library_pack_path(app, entry)) {
@@ -2174,7 +2212,7 @@ bool handle_library_event(App& app, const SDL_Event& e)
         if (x >= px + pw - 170.0f && x < px + pw - 62.0f && y >= py + 13.0f && y < py + 45.0f) {
             if (app.library_level == LibraryLevel::Tracks && app.library_entry_index >= 0) {
                 open_catalog_editor(app, app.library_entry_index);
-            } else if ((app.library_level == LibraryLevel::Games || app.library_level == LibraryLevel::Variants) && !app.library_rows.empty()
+            } else if (library_level_has_entry_rows(app) && !app.library_rows.empty()
                        && app.library_selected >= 0 && app.library_selected < static_cast<int>(app.library_rows.size())) {
                 const auto& row = app.library_rows[static_cast<size_t>(app.library_selected)];
                 if (row.kind == hootgui::LibraryRowKind::Entry) open_catalog_editor(app, row.payload);
@@ -2268,7 +2306,7 @@ bool handle_library_event(App& app, const SDL_Event& e)
     case SDLK_KP_ENTER: activate_library_row(app, false); break;
     case SDLK_SPACE: activate_library_row(app, true); break;
     case SDLK_E:
-        if ((app.library_level == LibraryLevel::Games || app.library_level == LibraryLevel::Variants) && !app.library_rows.empty()
+        if (library_level_has_entry_rows(app) && !app.library_rows.empty()
             && app.library_selected >= 0 && app.library_selected < static_cast<int>(app.library_rows.size())) {
             const auto& row = app.library_rows[static_cast<size_t>(app.library_selected)];
             if (row.kind == hootgui::LibraryRowKind::Entry) open_catalog_editor(app, row.payload);
@@ -2619,7 +2657,7 @@ void frame(void* opaque)
             library_view.scroll = app.library_scroll;
             library_view.search_editing = app.library_search_editing;
             library_view.can_edit = app.library_level == LibraryLevel::Tracks;
-            if ((app.library_level == LibraryLevel::Games || app.library_level == LibraryLevel::Variants) && !app.library_rows.empty()
+            if (library_level_has_entry_rows(app) && !app.library_rows.empty()
                 && app.library_selected >= 0 && app.library_selected < static_cast<int>(app.library_rows.size()))
                 library_view.can_edit = app.library_rows[static_cast<size_t>(app.library_selected)].kind == hootgui::LibraryRowKind::Entry;
             library_ptr = &library_view;

@@ -197,6 +197,7 @@ HootResult Pc98DosDriver::load(const HootEntry& entry,
 
     const bool pc88va_bare = entry.driver_name.rfind("pc88va/", 0) == 0;
     pc88va_mode_ = pc88va_bare || entry.driver_name.rfind("pc88vados/", 0) == 0;
+    pcatdos_mode_ = entry.driver_name.rfind("pcatdos/", 0) == 0;
     bare_mode_ = pc88va_bare
         || entry.driver_name.rfind("pc98/", 0) == 0
         || entry.driver_name.rfind("pc98vx/", 0) == 0;
@@ -408,6 +409,7 @@ HootResult Pc98DosDriver::load(const HootEntry& entry,
     pc9821_mode_ = entry.driver_name.rfind("pc9821dos/", 0) == 0;
     const auto slash = entry.driver_name.find('/');
     const std::string board_type = slash == std::string::npos ? std::string{} : entry.driver_name.substr(slash + 1);
+    const bool use_pcat_adlib = pcatdos_mode_ && board_type == "adlib";
     use_sound_orchestra_ = board_type == "soundorchestra";
     use_sb16_ = board_type == "soundblaster16";
     use_amd98_ = board_type == "amd98";
@@ -447,7 +449,7 @@ HootResult Pc98DosDriver::load(const HootEntry& entry,
     // Board-specific sound cores. These are kept separate from the normal
     // OPN/OPNA path because several PC-98 expansion boards intentionally
     // decode ports that overlap the 86-board extended OPNA window.
-    if (use_sound_orchestra_ || use_sb16_) {
+    if (use_pcat_adlib || use_sound_orchestra_ || use_sb16_) {
         opl_ = std::make_unique<LibvgmOpl>();
         const auto model = use_sb16_ ? LibvgmOpl::Model::YMF262 : LibvgmOpl::Model::YM3812;
         const uint32_t clock = use_sb16_ ? 14'318'180u : 3'579'545u;
@@ -493,7 +495,7 @@ HootResult Pc98DosDriver::load(const HootEntry& entry,
         if (catalog_controls_ssg) {
             ym2203_->set_ssg_gain(catalog_ssg_gain);
         }
-    } else if (!use_beep_ && !use_sb16_ && !use_amd98_ && !use_px_) {
+    } else if (!pcatdos_mode_ && !use_beep_ && !use_sb16_ && !use_amd98_ && !use_px_) {
         ym2608_ = std::make_unique<LibvgmYm2608>();
         const uint32_t clock = pc88va_mode_ ? 7'987'200u : 7'967'264u;
         if (!ym2608_->initialize(clock, static_cast<uint32_t>(sample_rate_))) {
@@ -733,6 +735,11 @@ HootResult Pc98DosDriver::select_track(const HootEntry& entry,
     timer_frames_until_tick_ = sample_rate_ > 0
         ? static_cast<double>(sample_rate_) / 60.0
         : 735.0;
+    if (pcatdos_mode_) {
+        refresh_pcat_timer_interval();
+        pcat_timer_frames_until_next_ = pcat_timer_interval_frames_;
+        pcat_cpu_timer_steps_ = 0;
+    }
     if (driver_type_ == DriverType::Shell) {
         selected_file_open_ = true;
         selected_file_offset_ = 0;
@@ -833,6 +840,13 @@ void Pc98DosDriver::reset()
     selected_mpu_irq_line_ = -1;
     pic_master_mask_ = 0xff;
     pic_slave_mask_ = 0xff;
+    pcat_pic_master_mask_ = 0xfe;
+    pcat_pic_slave_mask_ = 0xff;
+    if (pcatdos_mode_) {
+        refresh_pcat_timer_interval();
+        pcat_timer_frames_until_next_ = pcat_timer_interval_frames_;
+        pcat_cpu_timer_steps_ = 0;
+    }
     vrtc_phase_ = false;
     debug_beep_vrtc_irqs_ = 0;
     reset_cpu_context();
@@ -857,6 +871,12 @@ int Pc98DosDriver::render_s16(int16_t* interleaved_stereo, int frames)
             if (pcm86_ && pcm86_->irq_pending()) {
                 service_pcm86_irq();
             }
+            if (pcat_timer_interval_frames_ > 0 && pcat_timer_frames_until_next_ <= 0) {
+                service_pcat_timer_irq();
+            }
+            if (pc98_timer_interval_frames_ > 0.0 && pc98_timer_frames_until_next_ <= 0.0) {
+                service_pc98_timer_irq();
+            }
             if (amd_timer_interval_frames_ > 0 && amd_timer_frames_until_next_ <= 0) {
                 service_amd98_timer_irq();
             }
@@ -875,10 +895,11 @@ int Pc98DosDriver::render_s16(int16_t* interleaved_stereo, int frames)
                     trigger_interrupt_vector(vrtc_vector, 200000);
                     ++debug_beep_vrtc_irqs_;
                 }
-                if (driver_type_ == DriverType::Shell) {
+                if (driver_type_ == DriverType::Shell && !pcatdos_mode_) {
                     // Several PC-98 MIDI residents (including Nihon Create's NC
                     // and ACID PLAN's MDDRV families) hook the system timer.
-                    if (midi_enabled_ && use_beep_ && is_interrupt_vector_active(0x08)) {
+                    if (pc98_timer_interval_frames_ <= 0.0
+                        && midi_enabled_ && use_beep_ && is_interrupt_vector_active(0x08)) {
                         trigger_interrupt_vector(0x08, 200000);
                     }
                     const uint32_t hook_addr = static_cast<uint32_t>(function_vector_) * 4;
@@ -934,6 +955,13 @@ int Pc98DosDriver::render_s16(int16_t* interleaved_stereo, int frames)
             if (fm_timer_b_interval_frames_ > 0) {
                 chunk = std::min(chunk, std::max(1, fm_timer_b_frames_until_next_));
             }
+            if (pcat_timer_interval_frames_ > 0) {
+                chunk = std::min(chunk, std::max(1, pcat_timer_frames_until_next_));
+            }
+            if (pc98_timer_interval_frames_ > 0.0) {
+                chunk = std::min(chunk,
+                                 std::max(1, static_cast<int>(std::ceil(pc98_timer_frames_until_next_))));
+            }
             if (amd_timer_interval_frames_ > 0) {
                 chunk = std::min(chunk, std::max(1, amd_timer_frames_until_next_));
             }
@@ -958,6 +986,10 @@ int Pc98DosDriver::render_s16(int16_t* interleaved_stereo, int frames)
             timer_frames_until_tick_ -= static_cast<double>(chunk);
             if (fm_timer_a_interval_frames_ > 0) fm_timer_a_frames_until_next_ -= chunk;
             if (fm_timer_b_interval_frames_ > 0) fm_timer_b_frames_until_next_ -= chunk;
+            if (pcat_timer_interval_frames_ > 0) pcat_timer_frames_until_next_ -= chunk;
+            if (pc98_timer_interval_frames_ > 0.0) {
+                pc98_timer_frames_until_next_ -= static_cast<double>(chunk);
+            }
             if (amd_timer_interval_frames_ > 0) amd_timer_frames_until_next_ -= chunk;
             rendered += chunk;
             rendered_frames_ += static_cast<uint64_t>(chunk);
@@ -1138,8 +1170,8 @@ void Pc98DosDriver::fill_visual_state(const HootEntry&, int, HootVisualState& ou
 {
     out.abi_version = HOOT_VISUAL_ABI_VERSION;
     out.struct_size = sizeof(out);
-    visual::copy(out.architecture, pc88va_mode_ ? "PC-88VA" : (pc9821_mode_ ? "PC-9821" : "PC-98"));
-    visual::copy(out.cpu, pc88va_mode_ ? "V50 / x86" : "V30 / x86");
+    visual::copy(out.architecture, pcatdos_mode_ ? "IBM PC/AT" : (pc88va_mode_ ? "PC-88VA" : (pc9821_mode_ ? "PC-9821" : "PC-98")));
+    visual::copy(out.cpu, pcatdos_mode_ ? "8086 / x86" : (pc88va_mode_ ? "V50 / x86" : "V30 / x86"));
     std::string devices;
     if (ym2608_) devices += "YM2608";
     else if (ym2203_) devices += "YM2203";
@@ -1149,7 +1181,7 @@ void Pc98DosDriver::fill_visual_state(const HootEntry&, int, HootVisualState& ou
     if (midi_enabled_) devices += devices.empty() ? "MPU-401 MIDI" : " + MIDI";
     if (use_amd98_) devices += devices.empty() ? "AMD-98" : " + AMD-98";
     if (use_px_) devices += devices.empty() ? "Otomi-chan" : " + Otomi-chan";
-    visual::copy(out.device, devices.empty() ? "PC-98 audio" : devices);
+    visual::copy(out.device, devices.empty() ? (pcatdos_mode_ ? "IBM PC audio" : "PC-98 audio") : devices);
     visual::copy(out.driver, name());
 
     if (cpu_) {
@@ -1359,6 +1391,7 @@ void Pc98DosDriver::clear_channel_mutes()
 
 const char* Pc98DosDriver::name() const
 {
+    if (pcatdos_mode_) return use_sb16_ ? "pcatdos-sb16" : "pcatdos-adlib";
     if (pc88va_mode_) {
         if (bare_mode_) return use_ym2203_ ? "pc88va-bare-opn" : "pc88va-bare-opna";
         return use_ym2203_ ? "pc88vados-v50-opn" : "pc88vados-v50-opna";
@@ -1390,6 +1423,7 @@ void Pc98DosDriver::clear()
 {
     pc9821_mode_ = false;
     pc88va_mode_ = false;
+    pcatdos_mode_ = false;
     files_by_slot_.clear();
     files2_by_slot_.clear();
     files_by_name_.clear();
@@ -1503,6 +1537,19 @@ void Pc98DosDriver::clear()
     fm_timer_a_frames_until_next_ = 0;
     fm_timer_b_interval_frames_ = 0;
     fm_timer_b_frames_until_next_ = 0;
+    pcat_pic_master_mask_ = 0xfe;
+    pcat_pic_slave_mask_ = 0xff;
+    pcat_pit_control_ = 0;
+    pcat_pit_reload_ = 0;
+    pcat_pit_low_pending_ = true;
+    pcat_timer_interval_frames_ = 0;
+    pcat_timer_frames_until_next_ = 0;
+    pcat_cpu_timer_steps_ = 0;
+    pc98_pit_control_ = 0;
+    pc98_pit_reload_ = 0;
+    pc98_pit_low_pending_ = true;
+    pc98_timer_interval_frames_ = 0.0;
+    pc98_timer_frames_until_next_ = 0.0;
     debug_fm_timer_irqs_ = 0;
     current_opna_address_[0] = 0;
     current_opna_address_[1] = 0;
@@ -1655,6 +1702,24 @@ void Pc98DosDriver::setup_interrupt_vectors()
 
 void Pc98DosDriver::setup_pit()
 {
+    if (pcatdos_mode_) {
+        // IBM PC channel 0 defaults to mode 3 with a divisor of zero, which
+        // means 65536 clocks at the 1.193182 MHz PIT input (~18.2 Hz).
+        // IRQ0 is enabled as it would be after BIOS startup; PMD preserves
+        // this mask while calibrating and installing its timer hook.
+        pcat_pic_master_mask_ = 0xfe;
+        pcat_pic_slave_mask_ = 0xff;
+        pcat_pit_control_ = 0x36;
+        pcat_pit_reload_ = 0;
+        pcat_pit_low_pending_ = true;
+        refresh_pcat_timer_interval();
+        return;
+    }
+    pc98_pit_control_ = 0;
+    pc98_pit_reload_ = 0;
+    pc98_pit_low_pending_ = true;
+    pc98_timer_interval_frames_ = 0.0;
+    pc98_timer_frames_until_next_ = 0.0;
     const uint32_t pit_clock = 14318184 / 12;
     pit_rate_ = pit_clock / 60;
     pit_target_ = 0x10000 - pit_rate_;
@@ -1792,6 +1857,24 @@ void Pc98DosDriver::execute_bare_hoot_function(uint8_t function)
 
 bool Pc98DosDriver::read_special_board_port(uint16_t port, uint8_t& value)
 {
+    if (pcatdos_mode_ && opl_) {
+        // IBM PC AdLib's OPL2 register latch/data pair is fixed at 388h/389h.
+        // LibvgmOpl exposes the same two-port interface as the real YM3812.
+        if (port == 0x0388) {
+            value = opl_->read(0);
+            // The FMOPL core leaves the write-only status/data reads at FFh,
+            // while real AdLib hardware returns a non-FF status byte. PMD's
+            // board probe intentionally rejects an all-FF pair.
+            if (value == 0xff) value = 0x00;
+            return true;
+        }
+        if (port == 0x0389) {
+            value = opl_->read(1);
+            if (value == 0xff) value = 0x00;
+            return true;
+        }
+    }
+
     if (use_sound_orchestra_ && opl_) {
         if (port == 0x018c) { value = opl_->read(0); return true; }
         if (port == 0x018e) { value = opl_->read(1); return true; }
@@ -1898,6 +1981,17 @@ void Pc98DosDriver::service_amd98_timer_irq()
 
 bool Pc98DosDriver::write_special_board_port(uint16_t port, uint8_t data)
 {
+    if (pcatdos_mode_ && opl_) {
+        if (port == 0x0388) {
+            opl_->write(0, data);
+            return true;
+        }
+        if (port == 0x0389) {
+            opl_->write(1, data);
+            return true;
+        }
+    }
+
     if (use_sound_orchestra_ && opl_) {
         if (port == 0x018c) { opl_->write(0, data); return true; }
         if (port == 0x018e) { opl_->write(1, data); return true; }
@@ -2145,6 +2239,22 @@ uint8_t Pc98DosDriver::read_io_port(uint16_t port)
         trace_io_event("in", port, value);
         return value;
     }
+    if (pcatdos_mode_) {
+        // IBM PC/AT 8259 PIC masks. PMD uses these while installing and
+        // servicing its IRQ0 timer hook.
+        if (port == 0x0021) { value = pcat_pic_master_mask_; trace_io_event("in-pcat-pic", port, value); return value; }
+        if (port == 0x00a1) { value = pcat_pic_slave_mask_; trace_io_event("in-pcat-pic", port, value); return value; }
+        // A music driver normally does not read PIT channel 0, but returning
+        // the programmed divisor makes the emulated device useful to probes
+        // and to PMD's board-detection code.
+        if (port == 0x0040) {
+            value = pcat_pit_low_pending_
+                ? static_cast<uint8_t>(pcat_pit_reload_ & 0xffu)
+                : static_cast<uint8_t>((pcat_pit_reload_ >> 8) & 0xffu);
+            trace_io_event("in-pcat-pit", port, value);
+            return value;
+        }
+    }
     // PC-98 8259 interrupt-mask registers.  MIDI residents probe and
     // temporarily unmask their candidate MPU IRQ here even on BEEP-only
     // configurations, so these ports must exist independently from OPN.
@@ -2283,6 +2393,76 @@ void Pc98DosDriver::write_io_port(uint16_t port, uint8_t data)
     if (port == 0x000a) {
         pic_slave_mask_ = data;
         return;
+    }
+    if (!pcatdos_mode_ && port == 0x0077 && ((data >> 6) & 3u) == 0) {
+        // PC-98 PIT channel 0 drives IRQ0/INT 08h. PDR/PPSDRV temporarily
+        // raises it to roughly 16 kHz and writes one decoded PCM nibble to
+        // YM2203/2608 SSG channel C on every interrupt.
+        pc98_pit_control_ = data;
+        const unsigned access = (data >> 4) & 3u;
+        pc98_pit_low_pending_ = access != 2;
+        return;
+    }
+    if (!pcatdos_mode_ && port == 0x0071 && (pc98_pit_control_ >> 6) == 0) {
+        const unsigned access = (pc98_pit_control_ >> 4) & 3u;
+        if (access == 1) {
+            pc98_pit_reload_ = static_cast<uint16_t>((pc98_pit_reload_ & 0xff00u) | data);
+            refresh_pc98_timer_interval();
+        } else if (access == 2) {
+            pc98_pit_reload_ = static_cast<uint16_t>((pc98_pit_reload_ & 0x00ffu)
+                | (static_cast<uint16_t>(data) << 8));
+            refresh_pc98_timer_interval();
+        } else if (access == 3) {
+            if (pc98_pit_low_pending_) {
+                pc98_pit_reload_ = static_cast<uint16_t>((pc98_pit_reload_ & 0xff00u) | data);
+                pc98_pit_low_pending_ = false;
+            } else {
+                pc98_pit_reload_ = static_cast<uint16_t>((pc98_pit_reload_ & 0x00ffu)
+                    | (static_cast<uint16_t>(data) << 8));
+                pc98_pit_low_pending_ = true;
+                refresh_pc98_timer_interval();
+            }
+        }
+        return;
+    }
+    if (pcatdos_mode_) {
+        if (port == 0x0021) { pcat_pic_master_mask_ = data; return; }
+        if (port == 0x00a1) { pcat_pic_slave_mask_ = data; return; }
+        if (port == 0x0020 || port == 0x00a0) {
+            // Non-specific EOI. The host delivers one interrupt at a time,
+            // so there is no separate in-service register to update.
+            return;
+        }
+        if (port == 0x0043) {
+            pcat_pit_control_ = data;
+            if ((data >> 6) == 0) {
+                const unsigned access = (data >> 4) & 3u;
+                pcat_pit_low_pending_ = access != 2;
+            }
+            return;
+        }
+        if (port == 0x0040 && (pcat_pit_control_ >> 6) == 0) {
+            const unsigned access = (pcat_pit_control_ >> 4) & 3u;
+            if (access == 1) {
+                pcat_pit_reload_ = static_cast<uint16_t>((pcat_pit_reload_ & 0xff00u) | data);
+                pcat_pit_low_pending_ = true;
+                refresh_pcat_timer_interval();
+            } else if (access == 2) {
+                pcat_pit_reload_ = static_cast<uint16_t>((pcat_pit_reload_ & 0x00ffu) | (static_cast<uint16_t>(data) << 8));
+                pcat_pit_low_pending_ = true;
+                refresh_pcat_timer_interval();
+            } else if (access == 3) {
+                if (pcat_pit_low_pending_) {
+                    pcat_pit_reload_ = static_cast<uint16_t>((pcat_pit_reload_ & 0xff00u) | data);
+                    pcat_pit_low_pending_ = false;
+                } else {
+                    pcat_pit_reload_ = static_cast<uint16_t>((pcat_pit_reload_ & 0x00ffu) | (static_cast<uint16_t>(data) << 8));
+                    pcat_pit_low_pending_ = true;
+                    refresh_pcat_timer_interval();
+                }
+            }
+            return;
+        }
     }
     if (mpu401_ && mpu401_->handles_port(port)) {
         mpu401_->write_port(port, data);
@@ -3205,7 +3385,9 @@ void Pc98DosDriver::dos_read_file()
     std::string path;
 
     std::vector<uint8_t> filename_input;
-    if (handle == 0 && selected_file_open_) {
+    const bool pcat_selected_handle = pcatdos_mode_ && selected_file_open_
+        && handle >= selected_file_handle_ && handle < static_cast<uint16_t>(selected_file_handle_ + 5);
+    if ((handle == 0 || pcat_selected_handle) && selected_file_open_) {
         if (bridge_stdin_filename_) {
             const auto basename = std::filesystem::path(selected_bgm_path_).filename().string();
             filename_input.assign(basename.begin(), basename.end());
@@ -3255,7 +3437,7 @@ void Pc98DosDriver::dos_read_file()
     }
     *file_offset += count;
     cpu_->set_ax(static_cast<uint16_t>(count));
-    if (handle == 0) {
+    if (handle == 0 || pcat_selected_handle) {
         bridge_load_pending_ = false;
     }
     std::ostringstream event;
@@ -3281,7 +3463,8 @@ void Pc98DosDriver::dos_close_file()
         return;
     }
     const uint16_t handle = cpu_->get_bx();
-    if (handle == 0) {
+    if (handle == 0 || (pcatdos_mode_ && handle >= selected_file_handle_
+                        && handle < static_cast<uint16_t>(selected_file_handle_ + 5))) {
         selected_file_open_ = false;
     } else {
         dos_open_files_.erase(handle);
@@ -3297,7 +3480,9 @@ void Pc98DosDriver::dos_seek_file()
     const uint16_t handle = cpu_->get_bx();
     const std::vector<uint8_t>* data = nullptr;
     size_t* file_offset = nullptr;
-    if (handle == 0 && selected_file_open_) {
+    const bool pcat_selected_handle = pcatdos_mode_ && selected_file_open_
+        && handle >= selected_file_handle_ && handle < static_cast<uint16_t>(selected_file_handle_ + 5);
+    if ((handle == 0 || pcat_selected_handle) && selected_file_open_) {
         data = &selected_bgm_data_;
         file_offset = &selected_file_offset_;
     } else {
@@ -3346,9 +3531,58 @@ void Pc98DosDriver::dos_seek_file()
 
 void Pc98DosDriver::pit_timer_tick()
 {
+    if (pcatdos_mode_) return;
     pit_counter_++;
     if (pit_counter_ >= pit_rate_) {
         pit_counter_ = 0;
+    }
+}
+
+void Pc98DosDriver::refresh_pcat_timer_interval()
+{
+    if (!pcatdos_mode_ || sample_rate_ <= 0) return;
+    const uint32_t divisor = pcat_pit_reload_ == 0 ? 0x10000u : pcat_pit_reload_;
+    constexpr double pit_clock = 1'193'182.0;
+    const double seconds = static_cast<double>(divisor) / pit_clock;
+    pcat_timer_interval_frames_ = std::max(1, static_cast<int>(std::lround(seconds * sample_rate_)));
+    if (pcat_timer_frames_until_next_ <= 0
+        || pcat_timer_frames_until_next_ > pcat_timer_interval_frames_ * 4) {
+        pcat_timer_frames_until_next_ = pcat_timer_interval_frames_;
+    }
+}
+
+void Pc98DosDriver::service_pcat_timer_irq()
+{
+    if (!pcatdos_mode_ || pcat_timer_interval_frames_ <= 0) return;
+    pcat_timer_frames_until_next_ += pcat_timer_interval_frames_;
+    // IRQ0 is vector 08h on the IBM PC. PMD installs its resident sequencer
+    // on that vector and acknowledges the emulated PIC through port 20h.
+    if ((pcat_pic_master_mask_ & 0x01u) == 0 && is_interrupt_vector_active(0x08)) {
+        ++debug_fm_timer_irqs_;
+        trigger_interrupt_vector(0x08, 20000000);
+    }
+}
+
+void Pc98DosDriver::refresh_pc98_timer_interval()
+{
+    if (pcatdos_mode_ || sample_rate_ <= 0) return;
+    const uint32_t divisor = pc98_pit_reload_ == 0 ? 0x10000u : pc98_pit_reload_;
+    // Rusty-era PC-98 software selects the 1.9968 MHz PIT clock. In
+    // particular PDR uses divisor 125 for its documented ~16 kHz PPS stream.
+    constexpr double pit_clock = 1'996'800.0;
+    pc98_timer_interval_frames_ = std::max(
+        1.0,
+        static_cast<double>(divisor) * static_cast<double>(sample_rate_) / pit_clock);
+    // Programming a PIT counter restarts that counter.
+    pc98_timer_frames_until_next_ = pc98_timer_interval_frames_;
+}
+
+void Pc98DosDriver::service_pc98_timer_irq()
+{
+    if (pcatdos_mode_ || pc98_timer_interval_frames_ <= 0.0) return;
+    pc98_timer_frames_until_next_ += pc98_timer_interval_frames_;
+    if ((pic_master_mask_ & 0x01u) == 0 && is_interrupt_vector_active(0x08)) {
+        trigger_interrupt_vector(0x08, 200000);
     }
 }
 
@@ -3809,6 +4043,18 @@ void Pc98DosDriver::call_shell_player_api(uint16_t ax, uint16_t ds, uint16_t dx)
     trigger_interrupt_vector(function_vector_, 5000000);
     bridge_command_active_ = false;
     cpu_->clear_unsupported_status();
+    if (pcatdos_mode_ && cpu_) {
+        const uint32_t base = static_cast<uint32_t>(0x1000) << 4;
+        if (read_memory_byte(base + 0x144e) == 0) {
+            // PMD's PC/AT helper exposes the normal start operation through
+            // INT 60h, but some PMD/PMD_98 revisions return through the
+            // resident dispatch trampoline before committing the start flag.
+            // Re-enter the resident start routine with its own code/data and
+            // stack segments so those revisions cannot lose the near-return
+            // frame while switching from the helper back to the TSR.
+            trigger_near_subroutine(0x1000, 0x019d, 5000000);
+        }
+    }
     // Resident DOS music drivers are interrupt/API driven after installation.
     // Park the foreground CPU on the real HLT trampoline in segment 0000.
     // Async IRQ delivery saves/restores CS:IP, so parking on the former
@@ -4075,7 +4321,20 @@ void Pc98DosDriver::run_cpu_steps(int steps)
             && !suppress_async_interrupts_
             && cpu_->get_interrupt_flag()
             && is_interrupt_vector_active(0x08)) {
-            trigger_async_interrupt_vector(0x08, 64);
+            if (!pcatdos_mode_) {
+                trigger_async_interrupt_vector(0x08, 64);
+            } else if ((pcat_pic_master_mask_ & 0x01u) == 0 && pcat_timer_interval_frames_ > 0) {
+                // During DOS/TSR startup there is no rendered-audio clock yet.
+                // Advance the PC/AT PIT from guest CPU time so PMD's own PIT
+                // calibration and interrupt-vector installation can complete.
+                pcat_cpu_timer_steps_ += static_cast<uint64_t>(std::max(0, executed));
+                const uint64_t steps_per_tick = static_cast<uint64_t>(std::max(1, pcat_timer_interval_frames_))
+                    * static_cast<uint64_t>(std::max(1, clock_multiplier_));
+                while (pcat_cpu_timer_steps_ >= steps_per_tick) {
+                    pcat_cpu_timer_steps_ -= steps_per_tick;
+                    trigger_async_interrupt_vector(0x08, 200000);
+                }
+            }
         }
     }
 }

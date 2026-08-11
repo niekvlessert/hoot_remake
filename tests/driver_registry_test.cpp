@@ -107,6 +107,11 @@ int main()
     pc98.assets.push_back({"shell", "pmd_98", {}, 0, 0, false});
     ok &= expect_status(pc98, hoot::DriverSupportStatus::Experimental, "pc98 pmd bridge");
 
+    hoot::HootEntry pcat;
+    pcat.driver_name = "pcatdos/adlib";
+    pcat.assets.push_back({"shell", "PMD /df32", {}, 0, 0, false});
+    ok &= expect_status(pcat, hoot::DriverSupportStatus::Experimental, "pcat adlib");
+
     pc98.assets.clear();
     pc98.assets.push_back({"shell", "unknown_player", {}, 0, 0, false});
     ok &= expect_status(pc98, hoot::DriverSupportStatus::Experimental, "pc98 generic shell");

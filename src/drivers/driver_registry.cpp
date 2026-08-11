@@ -115,6 +115,24 @@ DriverProbeResult probe_microcabin_pc98(const HootEntry& entry)
             "specialized Microcabin PC-98 DOS bridge; only the implemented MMD/HHD-style command paths are expected to work"};
 }
 
+DriverProbeResult probe_pcatdos(const HootEntry& entry)
+{
+    if (entry.driver_name != "pcatdos/adlib") {
+        return {};
+    }
+
+    const auto shells = shell_names(entry);
+    if (shells.empty()) {
+        return {DriverSupportStatus::Recognized,
+                "pcatdos-adlib",
+                "IBM PC/AT DOS AdLib entry recognized, but no shell command is present"};
+    }
+
+    return {DriverSupportStatus::Experimental,
+            "pcatdos-adlib",
+            "generic IBM PC/AT DOS shell host with YM3812 OPL2 at 388h/389h, 8253 PIT IRQ0 timing, 8259 PIC masks and PMD/PMD_98 bridge support"};
+}
+
 DriverProbeResult probe_pc98dos(const HootEntry& entry)
 {
     const bool is_pc9821 = entry.driver_name.rfind("pc9821dos/", 0) == 0;
@@ -409,6 +427,10 @@ DriverRegistry::DriverRegistry()
         "microcabin-pc98dos-opna",
         probe_microcabin_pc98,
         [] { return std::make_unique<MicrocabinPc98DosDriver>(); }});
+    registrations_.push_back({
+        "pcatdos-adlib",
+        probe_pcatdos,
+        [] { return std::make_unique<Pc98DosDriver>(); }});
     registrations_.push_back({
         "pc88va-bare",
         probe_pc88va_bare,

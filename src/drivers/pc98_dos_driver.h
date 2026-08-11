@@ -127,6 +127,10 @@ private:
     void update_fm_timer(uint8_t reg, uint8_t data);
     void refresh_fm_irq_interval();
     void service_fm_timer_irq(uint8_t status_bit);
+    void refresh_pcat_timer_interval();
+    void service_pcat_timer_irq();
+    void refresh_pc98_timer_interval();
+    void service_pc98_timer_irq();
     void service_pcm86_irq();
     void service_mpu401_irq();
     int current_mpu_irq_line() const;
@@ -175,6 +179,7 @@ private:
     bool bridge_stdin_filename_ = false;
     bool bare_mode_ = false;
     bool pc88va_mode_ = false;
+    bool pcatdos_mode_ = false;
     bool bare_segmented_addresses_ = false;
     uint16_t bare_boot_cs_ = 0x0060;
     uint16_t bare_boot_ip_ = 0x0000;
@@ -241,6 +246,21 @@ private:
     int selected_mpu_irq_line_ = -1;
     uint8_t pic_master_mask_ = 0xff;
     uint8_t pic_slave_mask_ = 0xff;
+    // A normal IBM PC BIOS leaves the PIT IRQ0 line unmasked. PMD saves and
+    // restores this value during timer calibration.
+    uint8_t pcat_pic_master_mask_ = 0xfe;
+    uint8_t pcat_pic_slave_mask_ = 0xff;
+    uint8_t pcat_pit_control_ = 0;
+    uint16_t pcat_pit_reload_ = 0;
+    bool pcat_pit_low_pending_ = true;
+    int pcat_timer_interval_frames_ = 0;
+    int pcat_timer_frames_until_next_ = 0;
+    uint64_t pcat_cpu_timer_steps_ = 0;
+    uint8_t pc98_pit_control_ = 0;
+    uint16_t pc98_pit_reload_ = 0;
+    bool pc98_pit_low_pending_ = true;
+    double pc98_timer_interval_frames_ = 0.0;
+    double pc98_timer_frames_until_next_ = 0.0;
     bool vrtc_phase_ = false;
     std::string driver_warning_;
     double pcm86_gain_ = 1.0;
