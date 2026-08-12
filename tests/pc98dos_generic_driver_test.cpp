@@ -7,6 +7,39 @@
 
 #include "config/hoot_catalog.h"
 #include "drivers/driver_registry.h"
+#include "drivers/pc98_dos_driver.h"
+
+namespace hoot {
+
+struct Pc98DosDriverTimerTestAccess {
+    static bool scheduler_owns_opna_timer_status()
+    {
+        return Pc98DosDriver::merge_fm_status(0x83, 0x02) == 0x82
+            && Pc98DosDriver::merge_fm_status(0x03, 0x00) == 0x00;
+    }
+
+    static bool pending_parallel_timer_survives_mode_acknowledge()
+    {
+        Pc98DosDriver driver;
+        driver.sample_rate_ = 44100;
+        driver.use_ym2203_ = false;
+        driver.fm_timer_a_ = 0;
+        driver.fm_timer_b_ = 147;
+        driver.fm_mode_ = 0x0f;
+        driver.fm_timer_a_interval_frames_ = 100;
+        driver.fm_timer_b_interval_frames_ = 1390;
+        driver.fm_timer_a_frames_until_next_ = 50;
+        driver.fm_timer_b_frames_until_next_ = -7;
+
+        // PMD/PPSDRV's Timer A handler acknowledges both status bits while a
+        // Timer B musical tick can already be due. The mode write must not
+        // convert that pending B overflow into a fresh full-period delay.
+        driver.update_fm_timer(0x27, 0x3f);
+        return driver.fm_timer_b_frames_until_next_ == -7;
+    }
+};
+
+} // namespace hoot
 
 namespace {
 
@@ -59,6 +92,19 @@ bool run_case(const char* packs_dir, const std::string& driver_name, const std::
     }
     std::vector<int16_t> audio(44100 * 2);
     driver->render_s16(audio.data(), 44100);
+    // A Shell selection must be independent of the mutable DOS TSR state left
+    // by its previous playback. PMD/PDR/PPSDRV otherwise make replaying one
+    // track produce a different timer cadence each time in hootui.
+    if (driver->select_track(entry, 0, error) != HOOT_OK) {
+        std::cerr << "post-render reselect failed for " << driver_name << ": " << error << "\n";
+        return false;
+    }
+    std::vector<int16_t> replay_audio(44100 * 2);
+    driver->render_s16(replay_audio.data(), 44100);
+    if (replay_audio != audio) {
+        std::cerr << "non-deterministic Shell replay for " << driver_name << "\n";
+        return false;
+    }
     int peak = 0;
     size_t nonzero = 0;
     for (auto v : audio) {
@@ -98,6 +144,14 @@ int main(int argc, char** argv)
     if (argc != 2) {
         std::cerr << "usage: pc98dos_generic_driver_test PACKS_DIR\n";
         return 2;
+    }
+    if (!hoot::Pc98DosDriverTimerTestAccess::pending_parallel_timer_survives_mode_acknowledge()) {
+        std::cerr << "YM parallel timer acknowledgement swallowed a pending tempo tick\n";
+        return 1;
+    }
+    if (!hoot::Pc98DosDriverTimerTestAccess::scheduler_owns_opna_timer_status()) {
+        std::cerr << "libvgm timer status leaked into frame-scheduled PMD timing\n";
+        return 1;
     }
     if (!run_case(argv[1], "pc98dos/opn", "pc98dos-v30-opn")) return 1;
     if (!run_case(argv[1], "pc98dos/opna", "pc98dos-v30-opna")) return 1;

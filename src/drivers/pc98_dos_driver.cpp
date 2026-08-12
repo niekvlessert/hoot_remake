@@ -624,17 +624,15 @@ HootResult Pc98DosDriver::select_track(const HootEntry& entry,
         return HOOT_ERROR_INVALID_ARGUMENT;
     }
 
-    // The PC-9801-86 stack is built from several DOS TSRs (EMMDRV/P86DRV/
-    // PMD86/PMDPCM86).  Their resident heaps, interrupt vectors and board
-    // state are intentionally mutable while a song is active.  Reusing that
-    // guest state across catalog track selections caused later FC98 songs to
-    // inherit stale PMD/P86 state even though each song worked in a fresh
-    // process.  Rebuild the DOS resident environment for every 86 selection.
-    // Track changes are infrequent, so deterministic correctness is preferable
-    // to preserving a few milliseconds of TSR startup time.
-    if (driver_type_ == DriverType::Shell && use_pcm86_) {
+    // DOS music stacks are collections of mutable TSRs. This applies not only
+    // to the PC-9801-86 stack (EMMDRV/P86DRV/PMD86), but also to OPNA-era PMD,
+    // PDR and PPSDRV: timers, sample cursors, interrupt vectors and resident
+    // heaps remain modified after a song stops. Reusing that guest state makes
+    // the same selection depend on which track was played before it. Rebuild
+    // every shell stack so track selection is process-independent.
+    if (driver_type_ == DriverType::Shell) {
         if (!rebuild_shell_runtime()) {
-            error = "failed to rebuild PC-9801-86 DOS resident environment";
+            error = "failed to rebuild DOS resident environment";
             return HOOT_ERROR_UNSUPPORTED;
         }
     }
@@ -2315,7 +2313,7 @@ uint8_t Pc98DosDriver::read_io_port(uint16_t port)
         // flag for OPN compatibility, but expose timer status so resident
         // PMD/NAX interrupt handlers can acknowledge the actual source.
         value = use_ym2203_ ? static_cast<uint8_t>(fm_status_ & 0x03)
-                            : static_cast<uint8_t>(read_opn(0) | (fm_status_ & 0x03));
+                            : merge_fm_status(read_opn(0), fm_status_);
         trace_io_event("in", port, value);
         return value;
     }
@@ -2654,6 +2652,16 @@ void Pc98DosDriver::update_fm_timer(uint8_t reg, uint8_t data)
     }
 }
 
+uint8_t Pc98DosDriver::merge_fm_status(uint8_t chip_status, uint8_t scheduler_status)
+{
+    // Audio rendering advances libvgm's internal timer flags in buffer-sized
+    // chunks, while this host schedules guest interrupts at exact frame
+    // boundaries. Never expose both clocks to PMD: stale libvgm A/B bits make
+    // its ISR process extra ticks depending on the UI's current queue depth.
+    // Preserve only non-timer chip flags such as busy/ADPCM status.
+    return static_cast<uint8_t>((chip_status & ~0x03u) | (scheduler_status & 0x03u));
+}
+
 void Pc98DosDriver::refresh_fm_irq_interval()
 {
     // YM2608 runs the OPN timer block behind the chip's extra /2 input stage.
@@ -2666,13 +2674,24 @@ void Pc98DosDriver::refresh_fm_irq_interval()
         ? (pc88va_mode_ ? 3'993'600.0 : 3'993'632.0)
         : (pc88va_mode_ ? 7'987'200.0 : 7'967'264.0);
 
+    const int old_timer_a_interval = fm_timer_a_interval_frames_;
+    const int old_timer_b_interval = fm_timer_b_interval_frames_;
+
     if ((fm_mode_ & 0x01) != 0 && sample_rate_ > 0) {
         const uint16_t timer_a = static_cast<uint16_t>(fm_timer_a_ & 0x03ffu);
         const double seconds = static_cast<double>(1024 - timer_a) * static_cast<double>(prescaler) / clock;
         fm_timer_a_interval_frames_ = std::max(1, static_cast<int>(std::lround(seconds * sample_rate_)));
-        if (fm_timer_a_frames_until_next_ <= 0
-            || fm_timer_a_frames_until_next_ > fm_timer_a_interval_frames_ * 4) {
+        if (old_timer_a_interval <= 0) {
             fm_timer_a_frames_until_next_ = fm_timer_a_interval_frames_;
+        } else if (fm_timer_a_frames_until_next_ > 0
+                   && old_timer_a_interval != fm_timer_a_interval_frames_) {
+            // A period change affects the unexpired portion of the current
+            // cycle. An already-expired timer must remain pending: PMD/PPSDRV
+            // can acknowledge Timer A while Timer B is also due, and silently
+            // reloading B here drops a musical tempo tick.
+            fm_timer_a_frames_until_next_ = std::max(1, static_cast<int>(std::lround(
+                static_cast<double>(fm_timer_a_frames_until_next_)
+                * fm_timer_a_interval_frames_ / old_timer_a_interval)));
         }
     } else {
         fm_timer_a_interval_frames_ = 0;
@@ -2683,9 +2702,13 @@ void Pc98DosDriver::refresh_fm_irq_interval()
         const double seconds = static_cast<double>((256 - fm_timer_b_) << 4)
             * static_cast<double>(prescaler) / clock;
         fm_timer_b_interval_frames_ = std::max(1, static_cast<int>(std::lround(seconds * sample_rate_)));
-        if (fm_timer_b_frames_until_next_ <= 0
-            || fm_timer_b_frames_until_next_ > fm_timer_b_interval_frames_ * 4) {
+        if (old_timer_b_interval <= 0) {
             fm_timer_b_frames_until_next_ = fm_timer_b_interval_frames_;
+        } else if (fm_timer_b_frames_until_next_ > 0
+                   && old_timer_b_interval != fm_timer_b_interval_frames_) {
+            fm_timer_b_frames_until_next_ = std::max(1, static_cast<int>(std::lround(
+                static_cast<double>(fm_timer_b_frames_until_next_)
+                * fm_timer_b_interval_frames_ / old_timer_b_interval)));
         }
     } else {
         fm_timer_b_interval_frames_ = 0;

@@ -21,6 +21,8 @@
 
 namespace hoot {
 
+struct Pc98DosDriverTimerTestAccess;
+
 class Pc98DosDriver final : public HootDriver {
 public:
     Pc98DosDriver();
@@ -47,6 +49,8 @@ public:
     const char* name() const override;
 
 private:
+    friend struct Pc98DosDriverTimerTestAccess;
+
     struct LoadedFile {
         std::string path;
         std::vector<uint8_t> data;
@@ -125,6 +129,7 @@ private:
     void trigger_far_interrupt(uint16_t segment, uint16_t offset, int steps = 200000);
     void trigger_near_subroutine(uint16_t segment, uint16_t offset, int steps = 200000);
     void update_fm_timer(uint8_t reg, uint8_t data);
+    static uint8_t merge_fm_status(uint8_t chip_status, uint8_t scheduler_status);
     void refresh_fm_irq_interval();
     void service_fm_timer_irq(uint8_t status_bit);
     void refresh_pcat_timer_interval();
