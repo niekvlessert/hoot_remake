@@ -136,6 +136,7 @@ private:
     void service_pcat_timer_irq();
     void refresh_pc98_timer_interval();
     void service_pc98_timer_irq();
+    bool service_pdr_timer_irq_fast();
     void service_pcm86_irq();
     void service_mpu401_irq();
     int current_mpu_irq_line() const;

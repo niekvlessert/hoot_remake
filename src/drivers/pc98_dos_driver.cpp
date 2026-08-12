@@ -3605,8 +3605,98 @@ void Pc98DosDriver::service_pc98_timer_irq()
     if (pcatdos_mode_ || pc98_timer_interval_frames_ <= 0.0) return;
     pc98_timer_frames_until_next_ += pc98_timer_interval_frames_;
     if ((pic_master_mask_ & 0x01u) == 0 && is_interrupt_vector_active(0x08)) {
+#ifdef __EMSCRIPTEN__
+        if (service_pdr_timer_irq_fast()) {
+            return;
+        }
+#endif
         trigger_interrupt_vector(0x08, 200000);
     }
+}
+
+bool Pc98DosDriver::service_pdr_timer_irq_fast()
+{
+#ifndef __EMSCRIPTEN__
+    return false;
+#else
+    // RUSTY's PDR.COM raises the PC-98 PIT to about 16 kHz and runs this
+    // interrupt once per decoded PCM nibble. Interpreting the small 8086 ISR
+    // is substantially more expensive than synthesizing the audio in Wasm.
+    // Match the resident handler itself before touching its private state so
+    // other IRQ0 drivers continue through the normal x86 interpreter.
+    constexpr uint32_t vector = 0x08u * 4u;
+    const uint16_t offset = static_cast<uint16_t>(read_memory_byte(vector)
+        | (static_cast<uint16_t>(read_memory_byte(vector + 1)) << 8));
+    const uint16_t segment = static_cast<uint16_t>(read_memory_byte(vector + 2)
+        | (static_cast<uint16_t>(read_memory_byte(vector + 3)) << 8));
+    const uint32_t handler = (static_cast<uint32_t>(segment) << 4) + offset;
+    static constexpr uint8_t signature[] = {
+        0x50, 0xb0, 0x60, 0xe6, 0x00, 0x2e, 0x80, 0x3e,
+        0xc0, 0x05, 0x01, 0x75, 0x03, 0xe9, 0x9f, 0x00
+    };
+    for (size_t i = 0; i < sizeof(signature); ++i) {
+        if (read_memory_byte(handler + static_cast<uint32_t>(i)) != signature[i]) {
+            return false;
+        }
+    }
+
+    const uint32_t base = static_cast<uint32_t>(segment) << 4;
+    const auto read_word = [this](uint32_t address) {
+        return static_cast<uint16_t>(read_memory_byte(address)
+            | (static_cast<uint16_t>(read_memory_byte(address + 1)) << 8));
+    };
+    const auto write_word = [this](uint32_t address, uint16_t value) {
+        write_memory_byte(address, static_cast<uint8_t>(value & 0xff));
+        write_memory_byte(address + 1, static_cast<uint8_t>(value >> 8));
+    };
+
+    // Let the interpreter execute the uncommon mixing and end-of-sample
+    // branches. Besides keeping this shortcut small, that preserves PDR's
+    // chaining/cleanup behavior exactly at sample boundaries.
+    const uint16_t secondary_remaining = read_word(base + 0x05b6);
+    const uint16_t primary_remaining = read_word(base + 0x05af);
+    if (secondary_remaining != 0 || primary_remaining <= 1
+        || read_memory_byte(base + 0x05ba) == 0) {
+        return false;
+    }
+
+    if (read_memory_byte(base + 0x05c0) == 1) {
+        return true;
+    }
+    write_memory_byte(base + 0x05c0, 1);
+
+    uint16_t sample_offset = read_word(base + 0x05ab);
+    const uint16_t sample_segment = read_word(base + 0x05ad);
+    uint8_t sample = read_memory_byte((static_cast<uint32_t>(sample_segment) << 4)
+                                      + sample_offset);
+    bool consume_byte = read_memory_byte(base + 0x05bc) != 0;
+    if (!consume_byte) {
+        const uint8_t nibble_phase = static_cast<uint8_t>(read_memory_byte(base + 0x05bb) ^ 1u);
+        write_memory_byte(base + 0x05bb, nibble_phase);
+        consume_byte = nibble_phase == 0;
+        sample = consume_byte ? static_cast<uint8_t>(sample & 0x0f)
+                              : static_cast<uint8_t>(sample >> 4);
+    } else {
+        sample &= 0x0f;
+    }
+
+    if (consume_byte) {
+        write_word(base + 0x05ab, static_cast<uint16_t>(sample_offset + 1));
+        write_word(base + 0x05af, static_cast<uint16_t>(primary_remaining - 1));
+    }
+
+    const uint8_t attenuation = read_memory_byte(base + 0x05b1);
+    sample = sample >= attenuation ? static_cast<uint8_t>(sample - attenuation) : 0;
+    const uint8_t amplitude = read_memory_byte(base + 0x04a7 + sample);
+    if (amplitude != read_memory_byte(base + 0x05c1)) {
+        const uint16_t opn_address_port = read_word(base + 0x05a7);
+        write_io_port(opn_address_port, 0x0a);
+        write_memory_byte(base + 0x05c1, amplitude);
+        write_io_port(static_cast<uint16_t>(opn_address_port + 2), amplitude);
+    }
+    write_memory_byte(base + 0x05c0, 0);
+    return true;
+#endif
 }
 
 void Pc98DosDriver::reset_cpu_context(uint16_t segment)
