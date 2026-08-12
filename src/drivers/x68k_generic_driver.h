@@ -9,6 +9,7 @@
 #include <vector>
 
 #include "drivers/hoot_driver.h"
+#include "cpu/musashi_bus.h"
 #include "sound/libvgm_okim6258.h"
 #include "sound/libvgm_ym2151.h"
 #include "sound/midi_synth.h"
@@ -18,7 +19,7 @@
 
 namespace hoot {
 
-class X68kGenericDriver final : public HootDriver {
+class X68kGenericDriver final : public HootDriver, public MusashiBus {
 public:
     HootResult load(const HootEntry& entry,
                     const std::string& packs_path,
@@ -40,10 +41,10 @@ public:
     void clear_channel_mutes() override;
     const char* name() const override;
 
-    uint8_t read_memory_8(uint32_t address);
-    void write_memory_8(uint32_t address, uint8_t data);
-    int acknowledge_interrupt(int level);
-    void instruction_hook(uint32_t pc);
+    uint8_t read_memory_8(uint32_t address) override;
+    void write_memory_8(uint32_t address, uint8_t data) override;
+    int acknowledge_interrupt(int level) override;
+    void instruction_hook(uint32_t pc) override;
 
 private:
     enum class StartupPolicy : uint8_t {
@@ -94,9 +95,9 @@ private:
     void reset_midi_synth_mode();
     void handle_host_callback(uint8_t vector);
     void handle_iocs_call();
-    void write_memory_32(uint32_t address, uint32_t value);
+    void write_memory_32(uint32_t address, uint32_t value) override;
     uint8_t iocs_adpcm_mode_to_ppi(uint32_t mode) const;
-    uint32_t read_memory_32(uint32_t address);
+    uint32_t read_memory_32(uint32_t address) override;
     bool read_pcm_memory_8(uint32_t address, uint8_t& value) const;
     bool bus_address_readable(uint32_t address, uint32_t size) const;
     bool bus_address_writable(uint32_t address, uint32_t size) const;

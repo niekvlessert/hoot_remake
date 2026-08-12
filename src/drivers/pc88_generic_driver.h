@@ -2,6 +2,7 @@
 
 #include <array>
 #include <cstdint>
+#include <filesystem>
 #include <fstream>
 #include <map>
 #include <string>
@@ -13,6 +14,8 @@
 #include "sound/libvgm_ym2608.h"
 
 namespace hoot {
+
+class ZipArchive;
 
 // Generic headless host for the Hoot pc88/opn and pc88/opna catalog ABIs.
 // The guest patch remains responsible for game/driver-specific music logic;
@@ -41,6 +44,8 @@ public:
 
 private:
     static constexpr size_t kRamSize = 0x10000;
+    static constexpr size_t kGvramPlaneSize = 0x4000;
+    static constexpr size_t kN88RomSize = 0x8000;
     static constexpr double kDefaultCpuClock = 4000000.0;
     static constexpr uint32_t kOpmClock = 3993600;
     static constexpr uint32_t kOpnaClock = 7987200;
@@ -57,11 +62,13 @@ private:
     void schedule_irq_sources(int& todo);
     void advance_irq_sources(int frames);
     void raise_irq(uint8_t bus, const char* source);
+    bool interrupt_line_enabled(int line) const;
     void copy_bgm_to_ram(uint32_t slot, uint16_t destination, size_t limit = 0);
     void copy_voice_to_ram(uint32_t slot);
     uint8_t chip_read(uint8_t port);
     void chip_write(uint8_t port, uint8_t data);
     void load_opna_adpcm_assets();
+    bool load_n88_rom(const std::filesystem::path& packs_path, const ZipArchive& archive);
     void open_trace_from_environment();
     void trace_event(const char* kind, uint32_t a = 0, uint32_t b = 0);
     bool should_trace_memory(uint16_t address) const;
@@ -70,6 +77,8 @@ private:
 
     std::array<uint8_t, kRamSize> ram_{};
     std::array<uint8_t, kRamSize> initial_ram_{};
+    std::array<std::array<uint8_t, kGvramPlaneSize>, 3> gvram_{};
+    std::array<uint8_t, kN88RomSize> n88_rom_{};
     std::array<uint8_t, 0x100> io_{};
     std::map<uint32_t, std::vector<uint8_t>> bgm_;
     std::map<uint32_t, std::vector<uint8_t>> voices_;
@@ -83,9 +92,20 @@ private:
     bool play_pending_ = false;
     bool loaded_ = false;
     bool use_opna_ = false;
+    bool use_gvram_ = false;
+    bool use_n88rom_ = false;
+    bool n88_rom_available_ = false;
+    bool n88_rom_mapped_ = false;
+    int gvram_bank_ = -1;
+    int ssgpcm_slice_frames_ = 0;
     bool use_periodic_irq_ = false;
-    int periodic_irq_interval_frames_ = 0;
-    int periodic_irq_frames_until_next_ = 0;
+    double periodic_irq_interval_frames_ = 0.0;
+    double periodic_irq_frames_until_next_ = 0.0;
+    bool use_rtc_irq_ = false;
+    double rtc_irq_interval_frames_ = 0.0;
+    double rtc_irq_frames_until_next_ = 0.0;
+    uint8_t interrupt_level_ = 8;
+    uint8_t interrupt_mask_ = 0xff;
     uint64_t debug_cpu_cycles_ = 0;
     uint64_t debug_io_reads_ = 0;
     uint64_t debug_io_writes_ = 0;

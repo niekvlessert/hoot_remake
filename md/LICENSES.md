@@ -14,6 +14,15 @@ Hoot source snapshot kept for provenance.
 - Local game/music packs: not redistributed by this project unless explicitly
   licensed for that purpose.
 
+## Konami Hornet audio support
+
+The standalone RF5C400 and K056800 implementations are adaptations of the
+corresponding BSD-3-Clause MAME device sources by Ville Linde. MAME's RF5C400
+source also credits improvements by the Hoot development team. The surrounding
+Hornet sound-board integration is new project code and does not include MAME's
+device framework. Gradius IV program and PCM ROMs remain external,
+user-provided copyrighted assets and are not distributed by this project.
+
 ## Optional Nuked-SC55 CLAP runtime backend
 
 Hoot contains a small CLAP 1.x host adapter but does **not** include Nuked-SC55,

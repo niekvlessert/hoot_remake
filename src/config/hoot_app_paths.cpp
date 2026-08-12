@@ -49,6 +49,60 @@ bool copy_file_if_missing(const std::filesystem::path& source,
     return true;
 }
 
+std::string checksum_token(const std::filesystem::path& marker)
+{
+    std::ifstream input(marker, std::ios::binary);
+    std::string token;
+    input >> token;
+    return token;
+}
+
+bool update_managed_catalog(const std::filesystem::path& source_dir,
+                            const std::filesystem::path& destination_dir,
+                            std::string& error)
+{
+    const auto source_catalog = source_dir / "hoot.sqlite.zst";
+    const auto source_marker = source_dir / "hoot.sqlite.zst.sha256";
+    const auto destination_catalog = destination_dir / "hoot.sqlite.zst";
+    const auto destination_marker = destination_dir / "hoot.sqlite.zst.sha256";
+    if (!std::filesystem::is_regular_file(source_catalog) ||
+        !std::filesystem::is_regular_file(source_marker) ||
+        !std::filesystem::is_regular_file(destination_catalog) ||
+        !std::filesystem::is_regular_file(destination_marker)) return true;
+
+    const std::string source_checksum = checksum_token(source_marker);
+    const std::string destination_checksum = checksum_token(destination_marker);
+    if (source_checksum.empty() || destination_checksum.empty() ||
+        source_checksum == destination_checksum) return true;
+
+    std::error_code ec;
+    const auto temporary_catalog = destination_catalog.string() + ".update";
+    const auto temporary_marker = destination_marker.string() + ".update";
+    std::filesystem::copy_file(source_catalog, temporary_catalog,
+                               std::filesystem::copy_options::overwrite_existing, ec);
+    if (!ec) std::filesystem::copy_file(source_marker, temporary_marker,
+                                        std::filesystem::copy_options::overwrite_existing, ec);
+    // copy_file(overwrite_existing) is portable to Windows, where rename does
+    // not replace an existing destination. Publish the marker last so an
+    // interrupted catalogue copy remains eligible for repair next launch.
+    if (!ec) std::filesystem::copy_file(temporary_catalog, destination_catalog,
+                                        std::filesystem::copy_options::overwrite_existing, ec);
+    if (!ec) std::filesystem::copy_file(temporary_marker, destination_marker,
+                                        std::filesystem::copy_options::overwrite_existing, ec);
+    if (!ec) {
+        std::filesystem::remove(temporary_catalog, ec);
+        if (!ec) std::filesystem::remove(temporary_marker, ec);
+    }
+    if (ec) {
+        std::error_code cleanup_ec;
+        std::filesystem::remove(temporary_catalog, cleanup_ec);
+        std::filesystem::remove(temporary_marker, cleanup_ec);
+        error = "unable to update managed catalogue in " + destination_dir.string() + ": " + ec.message();
+        return false;
+    }
+    return true;
+}
+
 void set_environment_if_empty(const char* name, const std::filesystem::path& value)
 {
     const char* current = std::getenv(name);
@@ -239,6 +293,11 @@ bool bootstrap_hoot_home(HootAppPaths& paths, std::string& error)
     if (cwd.lexically_normal() != paths.home.lexically_normal()) {
         if (!copy_file_if_missing(cwd / "hootplay.ini", paths.config, error)) return false;
         if (!copy_tree_if_missing(cwd / "catalog", paths.catalog_dir, error)) return false;
+        // A catalogue imported on first launch is managed only while both its
+        // source and destination retain the shipped checksum marker. This lets
+        // application updates refresh stale data without replacing a user's
+        // custom marker-less catalogue.
+        if (!update_managed_catalog(cwd / "catalog", paths.catalog_dir, error)) return false;
     }
     paths.imported_config = !had_config && std::filesystem::is_regular_file(paths.config);
     paths.imported_catalog = !had_catalog && std::filesystem::is_directory(paths.catalog_dir);

@@ -30,7 +30,7 @@ proc = subprocess.run(
 if proc.returncode != 0:
     sys.stderr.write(proc.stderr)
     raise SystemExit(proc.returncode)
-required = ["スレイヤーズ", "ドラゴン", "PC-9801"]
+required = ["スレイヤーズ", "ドラゴン", "PC-9801", "Gradius IV"]
 missing = [text for text in required if text not in proc.stdout]
 if missing:
     # Keep diagnostics printable on Windows' legacy CP1252 console. The

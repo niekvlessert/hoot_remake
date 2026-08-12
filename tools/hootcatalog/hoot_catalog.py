@@ -33,6 +33,32 @@ def comment_parser() -> ET.XMLParser:
     return ET.XMLParser(target=ET.TreeBuilder(insert_comments=True))
 
 
+def parse_xml(path: Path) -> ET.ElementTree:
+    """Parse Hoot XML, including legacy CP932 files labelled Shift_JIS.
+
+    Expat intentionally rejects multibyte encodings other than UTF-8/UTF-16.
+    Community Hoot catalogues commonly declare Shift_JIS while using Microsoft's
+    CP932 extensions, so normalize those files in memory before parsing.
+    """
+    raw = path.read_bytes()
+    declaration = re.match(br"\s*<\?xml\s+[^>]*encoding\s*=\s*['\"]([^'\"]+)", raw, re.IGNORECASE)
+    if declaration is None:
+        return ET.parse(path, parser=comment_parser())
+    encoding = declaration.group(1).decode("ascii", errors="replace").casefold().replace("-", "_")
+    if encoding in {"utf_8", "utf8", "utf_16", "utf16", "us_ascii", "ascii"}:
+        return ET.parse(path, parser=comment_parser())
+    codec = "cp932" if encoding in {"shift_jis", "shiftjis", "sjis", "windows_31j", "ms_kanji"} else encoding
+    decoded = raw.decode(codec)
+    decoded = re.sub(
+        r"(<\?xml\s+[^>]*encoding\s*=\s*['\"])[^'\"]+(['\"])",
+        r"\1utf-8\2",
+        decoded,
+        count=1,
+        flags=re.IGNORECASE,
+    )
+    return ET.ElementTree(ET.fromstring(decoded.encode("utf-8"), parser=comment_parser()))
+
+
 def is_comment(node: ET.Element) -> bool:
     return node.tag is ET.Comment
 
@@ -52,8 +78,11 @@ def parse_num(value: str | int | None) -> int | None:
     sign = -1 if value.startswith("-") else 1
     if sign < 0:
         value = value[1:]
-    base = 16 if value.lower().startswith("0x") else 10
-    if base == 16:
+    # Older community XML sometimes writes hexadecimal track codes without the
+    # conventional 0x prefix (for example "289a").
+    prefixed_hex = value.lower().startswith("0x")
+    base = 16 if prefixed_hex or re.search(r"[a-f]", value, re.IGNORECASE) else 10
+    if prefixed_hex:
         value = value[2:]
     return sign * int(value, base)
 
@@ -332,7 +361,7 @@ def discover_xml_files(root_xml: Path) -> list[Path]:
             return
         visited.add(path)
         result.append(path)
-        root = ET.parse(path, parser=comment_parser()).getroot()
+        root = parse_xml(path).getroot()
         childlists = root.find("childlists")
         if childlists is None:
             return
@@ -370,7 +399,7 @@ def import_xml(input_path: Path, json_dir: Path, overrides_path: Path | None = N
         bindings: list[dict[str, Any]] = []
 
         for index, xml_file in enumerate(files):
-            root = ET.parse(xml_file, parser=comment_parser()).getroot()
+            root = parse_xml(xml_file).getroot()
             relative = xml_file.relative_to(base_dir).as_posix()
             games: list[dict[str, Any]] = []
             file_comments: list[str] = []

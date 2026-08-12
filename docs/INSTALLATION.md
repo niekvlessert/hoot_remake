@@ -35,6 +35,12 @@ catalogue/configuration: FluidSynth, Munt/libmt32emu, Vermouth, mdxmini and the
 Nuked-SC55 CLAP plugin. Their SoundFonts, MT-32/CM-32L/CM-32P/Sound Canvas ROMs
 and expansion-card ROMs are user data and are not bundled.
 
+PC-88 catalogue entries that enable `use_n88rom` can use an original 32 KiB
+N88-BASIC image named `N88.ROM` or `PC88.ROM`. Put it at the configured packs
+root or in its `roms/` subdirectory. A pack may also contain the image itself.
+The ROM is optional and is not bundled; without one, the PC-88 host keeps work
+RAM visible so packs that do not actually call BASIC services still run.
+
 Copying only a build-tree `hootui` binary to `/usr/local/bin` is therefore not a
 complete installation: the matching `libhoot` and SDL runtime libraries must be
 visible to the dynamic loader. `cmake --install` is the supported layout.

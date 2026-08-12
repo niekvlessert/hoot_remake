@@ -36,6 +36,7 @@ public:
     void set_ssg_mute_mask(uint32_t mask);
     void set_ssg_gain(double gain);
     void set_ssg_inverted(bool inverted);
+    void set_adpcm_memory_x8(bool enabled);
     void allocate_adpcm_memory(uint32_t bytes);
     void write_adpcm_memory(uint32_t offset, const uint8_t* data, uint32_t bytes);
 
@@ -66,6 +67,7 @@ private:
     bool debug_psg_disable_tone_ = false;
     bool debug_psg_disable_noise_ = false;
     bool debug_psg_raw_dc_ = false;
+    bool adpcm_memory_x8_ = false;
     uint8_t debug_ssg_latch_ = 0;
     std::array<uint8_t, 16> debug_ssg_regs_{};
     std::vector<int32_t> left_;

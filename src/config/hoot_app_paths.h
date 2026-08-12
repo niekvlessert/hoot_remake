@@ -23,8 +23,10 @@ std::filesystem::path hoot_user_home();
 
 // Prepare the per-user runtime directory. The first invocation imports a
 // ./hootplay.ini and ./catalog directory from the current working directory
-// when present. If no config exists, a complete disabled-by-default config is
-// generated in ~/.hoot. Existing user files are never overwritten.
+// when present. Shipped catalogues carrying matching checksum marker files are
+// refreshed on later application updates; marker-less custom catalogues are
+// never overwritten. If no config exists, a complete disabled-by-default
+// config is generated in ~/.hoot.
 bool bootstrap_hoot_home(HootAppPaths& paths, std::string& error);
 
 // Install non-destructive per-user runtime defaults: ROM search paths rooted

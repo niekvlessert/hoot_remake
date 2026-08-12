@@ -74,15 +74,6 @@ std::string cm64_la_only_warning(const std::string& hint)
 }
 
 
-X68kGenericDriver* g_active_driver = nullptr;
-
-void m68k_instruction_hook(unsigned int pc)
-{
-    if (g_active_driver != nullptr) {
-        g_active_driver->instruction_hook(pc);
-    }
-}
-
 uint16_t read_be16(const std::vector<uint8_t>& data, size_t offset)
 {
     return static_cast<uint16_t>((data[offset] << 8) | data[offset + 1]);
@@ -348,66 +339,6 @@ std::vector<uint8_t> expand_opmdrv_compact_voice(const std::vector<uint8_t>& dat
 } // namespace
 
 } // namespace hoot
-
-extern "C" {
-
-signed int my_irqh_callback(signed int level)
-{
-    return hoot::g_active_driver != nullptr
-        ? hoot::g_active_driver->acknowledge_interrupt(level)
-        : M68K_INT_ACK_AUTOVECTOR;
-}
-
-uint32_t m68k_read_memory_8(uint32_t address)
-{
-    return hoot::g_active_driver != nullptr ? hoot::g_active_driver->read_memory_8(address) : 0;
-}
-
-uint32_t m68k_read_memory_16(uint32_t address)
-{
-    return (m68k_read_memory_8(address) << 8) | m68k_read_memory_8(address + 1);
-}
-
-uint32_t m68k_read_memory_32(uint32_t address)
-{
-    return (m68k_read_memory_16(address) << 16) | m68k_read_memory_16(address + 2);
-}
-
-void m68k_write_memory_8(uint32_t address, uint32_t value)
-{
-    if (hoot::g_active_driver != nullptr) {
-        hoot::g_active_driver->write_memory_8(address, static_cast<uint8_t>(value));
-    }
-}
-
-void m68k_write_memory_16(uint32_t address, uint32_t value)
-{
-    m68k_write_memory_8(address, value >> 8);
-    m68k_write_memory_8(address + 1, value);
-}
-
-void m68k_write_memory_32(uint32_t address, uint32_t value)
-{
-    m68k_write_memory_16(address, value >> 16);
-    m68k_write_memory_16(address + 2, value);
-}
-
-void m68k_write_memory_32_pd(uint32_t address, uint32_t value)
-{
-    m68k_write_memory_16(address + 2, value >> 16);
-    m68k_write_memory_16(address, value);
-}
-
-uint32_t m68k_read_immediate_16(uint32_t address) { return m68k_read_memory_16(address); }
-uint32_t m68k_read_immediate_32(uint32_t address) { return m68k_read_memory_32(address); }
-uint32_t m68k_read_pcrelative_8(uint32_t address) { return m68k_read_memory_8(address); }
-uint32_t m68k_read_pcrelative_16(uint32_t address) { return m68k_read_memory_16(address); }
-uint32_t m68k_read_pcrelative_32(uint32_t address) { return m68k_read_memory_32(address); }
-uint32_t m68k_read_disassembler_8(uint32_t address) { return m68k_read_memory_8(address); }
-uint32_t m68k_read_disassembler_16(uint32_t address) { return m68k_read_memory_16(address); }
-uint32_t m68k_read_disassembler_32(uint32_t address) { return m68k_read_memory_32(address); }
-
-}
 
 namespace hoot {
 
@@ -925,10 +856,10 @@ HootResult X68kGenericDriver::load(const HootEntry& entry,
     }
     opm_mute_mask_ = parse_opm_mute_mask(std::getenv("HOOT_X68K_CHANNELS"));
     ym2151_.set_mute_mask(opm_mute_mask_ | ui_opm_mute_mask_);
-    g_active_driver = this;
+    musashi_set_active_bus(this);
     m68k_set_cpu_type(M68K_CPU_TYPE_68000);
     m68k_init();
-    m68k_set_instr_hook_callback(trace_.is_open() ? m68k_instruction_hook : nullptr);
+    m68k_set_instr_hook_callback(trace_.is_open() ? musashi_instruction_hook_callback : nullptr);
     m68k_pulse_reset();
     m68k_set_reg(M68K_REG_ISP, reset_sp_);
     m68k_set_reg(M68K_REG_MSP, reset_sp_);
@@ -1164,7 +1095,7 @@ void X68kGenericDriver::post_mailbox_command_fixed(uint16_t command, uint32_t cy
 {
     mailbox_code_ = command;
     mailbox_flag_ = 0x01;
-    g_active_driver = this;
+    musashi_set_active_bus(this);
     mfp_suspended_ = true;
     m68k_set_irq(0);
     execute_with_audio_clock(static_cast<double>(cycles) / cpu_clock_hz_);
@@ -1177,7 +1108,7 @@ bool X68kGenericDriver::dispatch_mailbox_command(uint16_t command, uint32_t max_
 {
     mailbox_code_ = command;
     mailbox_flag_ = 0x01;
-    g_active_driver = this;
+    musashi_set_active_bus(this);
     mfp_suspended_ = true;
     m68k_set_irq(0);
     // Poll the guest's own mailbox acknowledgement in short slices. A native
@@ -1362,7 +1293,7 @@ void X68kGenericDriver::reset()
     midi_mix_buffer_.clear();
     startup_preroll_.clear();
     startup_preroll_offset_ = 0;
-    g_active_driver = this;
+    musashi_set_active_bus(this);
     m68k_pulse_reset();
     m68k_set_irq(0);
     m68k_set_reg(M68K_REG_ISP, reset_sp_);
@@ -1837,7 +1768,7 @@ void X68kGenericDriver::execute_seconds(double seconds)
     if (seconds <= 0.0) {
         return;
     }
-    g_active_driver = this;
+    musashi_set_active_bus(this);
     const auto cycles = static_cast<int>(cpu_clock_hz_ * seconds);
     int remaining = cycles - cpu_cycle_debt_;
     cpu_cycle_debt_ = 0;

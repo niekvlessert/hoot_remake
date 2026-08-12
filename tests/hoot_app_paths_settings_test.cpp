@@ -32,6 +32,7 @@ int main()
     fs::create_directories(home);
     {
         std::ofstream(source / "catalog" / "hoot.sqlite.zst", std::ios::binary) << "catalog";
+        std::ofstream(source / "catalog" / "hoot.sqlite.zst.sha256") << "old-checksum  hoot.sqlite.zst\n";
         std::ofstream(source / "hootplay.ini")
             << "[player]\n"
                "catalog = catalog/hoot.sqlite.zst\n"
@@ -56,6 +57,33 @@ int main()
     assert(fs::is_directory(paths.roms_dir / "cm32l"));
     assert(fs::is_directory(paths.roms_dir / "cm32p"));
     assert(fs::is_directory(paths.roms_dir / "sc55"));
+
+    // A later shipped catalogue replaces a stale first-run managed copy.
+    {
+        std::ofstream(source / "catalog" / "hoot.sqlite.zst", std::ios::binary | std::ios::trunc) << "new catalog";
+        std::ofstream(source / "catalog" / "hoot.sqlite.zst.sha256", std::ios::trunc)
+            << "new-checksum  hoot.sqlite.zst\n";
+    }
+    hoot::HootAppPaths updated;
+    assert(hoot::bootstrap_hoot_home(updated, error));
+    {
+        std::ifstream catalog(updated.default_catalog, std::ios::binary);
+        std::string contents((std::istreambuf_iterator<char>(catalog)), std::istreambuf_iterator<char>());
+        assert(contents == "new catalog");
+    }
+
+    // Removing the destination marker opts a custom catalogue out of updates.
+    fs::remove(updated.catalog_dir / "hoot.sqlite.zst.sha256");
+    std::ofstream(updated.default_catalog, std::ios::binary | std::ios::trunc) << "custom catalog";
+    std::ofstream(source / "catalog" / "hoot.sqlite.zst", std::ios::binary | std::ios::trunc) << "newer catalog";
+    std::ofstream(source / "catalog" / "hoot.sqlite.zst.sha256", std::ios::trunc)
+        << "newer-checksum  hoot.sqlite.zst\n";
+    assert(hoot::bootstrap_hoot_home(updated, error));
+    {
+        std::ifstream catalog(updated.default_catalog, std::ios::binary);
+        std::string contents((std::istreambuf_iterator<char>(catalog)), std::istreambuf_iterator<char>());
+        assert(contents == "custom catalog");
+    }
 
     // ROM resources in ~/.hoot are usable without enabling path settings.
     // Explicit environment/config values must still win.

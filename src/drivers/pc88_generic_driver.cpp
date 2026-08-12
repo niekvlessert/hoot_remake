@@ -6,7 +6,9 @@
 #include <cstdlib>
 #include <cstring>
 #include <filesystem>
+#include <fstream>
 #include <iomanip>
+#include <iterator>
 #include <string_view>
 
 #include "io/d88_image.h"
@@ -115,6 +117,16 @@ HootResult Pc88GenericDriver::load(const HootEntry& entry,
     sample_rate_ = sample_rate;
     options_ = entry.options;
     use_opna_ = entry.driver_name == "pc88/opna";
+    use_gvram_ = option_enabled("use_gvram");
+    use_n88rom_ = option_enabled("use_n88rom");
+    const int ssgpcm_interval = option("use_ssgpcm", 0);
+    const bool use_pcmx8 = option_enabled("use_pcmx8");
+    // Original Hoot installs a no-op timer whose interval is
+    // use_ssgpcm/output_rate. Its event boundaries keep software PCM volume
+    // writes interleaved with PSG rendering.
+    ssgpcm_slice_frames_ = ssgpcm_interval > 0
+        ? std::clamp(ssgpcm_interval, 1, 256)
+        : 0;
     init_pc_ = static_cast<uint16_t>(option("init_pc", 0));
     const int baseclock_mhz = option("baseclock", 4);
     cpu_clock_hz_ = (baseclock_mhz >= 1 && baseclock_mhz <= 64)
@@ -131,6 +143,9 @@ HootResult Pc88GenericDriver::load(const HootEntry& entry,
         error = use_opna_ ? "unable to initialize libvgm YM2608 core"
                           : "unable to initialize libvgm YM2203 core";
         return HOOT_ERROR_UNSUPPORTED;
+    }
+    if (use_opna_) {
+        ym2608_.set_adpcm_memory_x8(use_pcmx8);
     }
 
     cpu_.set_memory_callbacks(
@@ -152,6 +167,10 @@ HootResult Pc88GenericDriver::load(const HootEntry& entry,
     ZipArchive archive;
     if (!archive.open(archive_path, error)) {
         return HOOT_ERROR_IO;
+    }
+
+    if (use_n88rom_) {
+        n88_rom_available_ = load_n88_rom(std::filesystem::path(packs_path), archive);
     }
 
     for (const auto& asset : entry.assets) {
@@ -181,13 +200,21 @@ HootResult Pc88GenericDriver::load(const HootEntry& entry,
         load_opna_adpcm_assets();
     }
 
-    use_periodic_irq_ = option_enabled("use_vrtc");
+    const int vrtc_mode = option("use_vrtc", 0);
+    use_periodic_irq_ = vrtc_mode != 0;
     if (use_periodic_irq_) {
-        // Original Hoot PC-88 hosts use the periodic RTC/VRTC callback as the
-        // Z80 RST 02h source. 60 Hz is the common cadence for these catalog
-        // patches; FM Timer A/B remain separate RST 08h sources.
-        periodic_irq_interval_frames_ = std::max(1, static_cast<int>(std::lround(sample_rate_ / 60.0)));
+        // Original Hoot distinguishes the two PC-88 display timings. Mode 1
+        // is 62.42 Hz; the alternate non-zero mode is 55.42 Hz.
+        const double vrtc_hz = vrtc_mode == 1 ? 62.42 : 55.42;
+        periodic_irq_interval_frames_ = std::max(1.0, sample_rate_ / vrtc_hz);
         periodic_irq_frames_until_next_ = periodic_irq_interval_frames_;
+    }
+    use_rtc_irq_ = option_enabled("use_rtc");
+    if (use_rtc_irq_) {
+        // The PC-88 clock interrupt used by Hoot patches runs at 600 Hz and
+        // occupies interrupt-controller line 2 (IM2 vector low byte 04h).
+        rtc_irq_interval_frames_ = std::max(1.0, sample_rate_ / 600.0);
+        rtc_irq_frames_until_next_ = rtc_irq_interval_frames_;
     }
 
     // Keep an immutable post-load image of the patch/program RAM. Several
@@ -252,6 +279,7 @@ int Pc88GenericDriver::render_s16(int16_t* interleaved_stereo, int frames)
     int rendered = 0;
     while (rendered < frames) {
         int todo = std::min(kChunkFrames, frames - rendered);
+        if (ssgpcm_slice_frames_ > 0) todo = std::min(todo, ssgpcm_slice_frames_);
         schedule_irq_sources(todo);
         execute_seconds(static_cast<double>(todo) / static_cast<double>(sample_rate_));
         cpu_.lower_irq();
@@ -444,6 +472,8 @@ void Pc88GenericDriver::clear()
 {
     ram_.fill(0);
     initial_ram_.fill(0);
+    for (auto& plane : gvram_) plane.fill(0);
+    n88_rom_.fill(0xff);
     io_.fill(0xff);
     bgm_.clear();
     voices_.clear();
@@ -457,11 +487,22 @@ void Pc88GenericDriver::clear()
     cpu_clock_hz_ = kDefaultCpuClock;
     loaded_ = false;
     use_opna_ = false;
+    use_gvram_ = false;
+    use_n88rom_ = false;
+    n88_rom_available_ = false;
+    n88_rom_mapped_ = false;
+    gvram_bank_ = -1;
+    ssgpcm_slice_frames_ = 0;
     ui_opn_mute_mask_ = 0;
     ui_ssg_mute_mask_ = 0;
     use_periodic_irq_ = false;
-    periodic_irq_interval_frames_ = 0;
-    periodic_irq_frames_until_next_ = 0;
+    periodic_irq_interval_frames_ = 0.0;
+    periodic_irq_frames_until_next_ = 0.0;
+    use_rtc_irq_ = false;
+    rtc_irq_interval_frames_ = 0.0;
+    rtc_irq_frames_until_next_ = 0.0;
+    interrupt_level_ = 8;
+    interrupt_mask_ = 0xff;
     debug_cpu_cycles_ = 0;
     debug_io_reads_ = 0;
     debug_io_writes_ = 0;
@@ -494,7 +535,17 @@ void Pc88GenericDriver::restart_guest_for_track()
     if (!loaded_) return;
 
     ram_ = initial_ram_;
+    for (auto& plane : gvram_) plane.fill(0);
     io_.fill(0xff);
+    // The PC-88 reset state selects N88-BASIC ROM at 0000h-7fffh. Port 31h
+    // bit 1 switches that range to underlying work RAM when set.
+    io_[0x31] = 0x31;
+    io_[0xe4] = 0xff;
+    io_[0xe6] = 0xff;
+    n88_rom_mapped_ = use_n88rom_ && n88_rom_available_;
+    gvram_bank_ = -1;
+    interrupt_level_ = 8;
+    interrupt_mask_ = 0xff;
     play_pending_ = false;
     current_fm_reg_.fill(0);
     fm_timer_a_ = 0;
@@ -505,6 +556,7 @@ void Pc88GenericDriver::restart_guest_for_track()
     fm_timer_b_interval_frames_ = 0;
     fm_timer_b_frames_until_next_ = 0;
     periodic_irq_frames_until_next_ = periodic_irq_interval_frames_;
+    rtc_irq_frames_until_next_ = rtc_irq_interval_frames_;
 
     if (use_opna_) {
         ym2608_.reset();
@@ -520,12 +572,24 @@ void Pc88GenericDriver::restart_guest_for_track()
 
 uint8_t Pc88GenericDriver::read_memory(uint16_t address) const
 {
+    if (n88_rom_mapped_ && address < kN88RomSize) {
+        return n88_rom_[address];
+    }
+    if (use_gvram_ && gvram_bank_ >= 0 && address >= 0xc000) {
+        return gvram_[static_cast<size_t>(gvram_bank_)][address - 0xc000];
+    }
     return ram_[address];
 }
 
 void Pc88GenericDriver::write_memory(uint16_t address, uint8_t data)
 {
-    ram_[address] = data;
+    // Low-memory writes reach work RAM even while the BASIC ROM is visible.
+    // This is what lets software prepare RAM before switching port 31h.
+    if (use_gvram_ && gvram_bank_ >= 0 && address >= 0xc000) {
+        gvram_[static_cast<size_t>(gvram_bank_)][address - 0xc000] = data;
+    } else {
+        ram_[address] = data;
+    }
     if (should_trace_memory(address)) {
         trace_event("mem-write", address, data);
     }
@@ -558,6 +622,11 @@ uint8_t Pc88GenericDriver::read_io(uint16_t port)
     case 0x46:
     case 0x47:
         io_[low] = use_opna_ ? chip_read(low - 0x44) : 0xff;
+        break;
+    case 0x5c:
+        if (use_gvram_) {
+            io_[low] = static_cast<uint8_t>(0xf8u | (gvram_bank_ < 0 ? 0u : (1u << gvram_bank_)));
+        }
         break;
     case 0xa8: io_[low] = chip_read(0); break;
     case 0xa9: io_[low] = chip_read(1); break;
@@ -595,10 +664,39 @@ void Pc88GenericDriver::write_io(uint16_t port, uint8_t data)
         copy_bgm_to_ram(data, static_cast<uint16_t>(option("mdata_addr", 0xc000)),
                         static_cast<size_t>(std::max(0, option("mdata_size", 0))));
         break;
+    case 0x31:
+        n88_rom_mapped_ = use_n88rom_ && n88_rom_available_ && (data & 0x02u) == 0;
+        trace_event("n88-rom-map", n88_rom_mapped_ ? 1u : 0u, data);
+        break;
     case 0x44: chip_write(0, data); break;
     case 0x45: chip_write(1, data); break;
     case 0x46: if (use_opna_) chip_write(2, data); break;
     case 0x47: if (use_opna_) chip_write(3, data); break;
+    case 0x5c:
+    case 0x5d:
+    case 0x5e:
+        if (use_gvram_) gvram_bank_ = low - 0x5c;
+        trace_event("gvram-bank", static_cast<uint32_t>(gvram_bank_ + 1), low);
+        break;
+    case 0x5f:
+        if (use_gvram_) gvram_bank_ = -1;
+        trace_event("gvram-bank", 0, low);
+        break;
+    case 0xe4:
+        // PC-88 interrupt priority register: level N admits controller lines
+        // below N. Hoot clamps out-of-range values at the controller limit.
+        interrupt_level_ = static_cast<uint8_t>(std::min<int>(data, 8));
+        trace_event("irq-level", interrupt_level_, data);
+        break;
+    case 0xe6:
+        // Hardware wiring exposed by the PC-88 controller: E6 bit 1 gates
+        // VRTC (line 1), bit 0 gates RTC (line 2); FM (line 4) is unaffected.
+        interrupt_mask_ = static_cast<uint8_t>(0xf8u
+            | ((data & 0x01u) << 2)
+            | (data & 0x02u)
+            | ((data >> 2) & 0x01u));
+        trace_event("irq-mask", interrupt_mask_, data);
+        break;
     case 0xa8: chip_write(0, data); break;
     case 0xa9: chip_write(1, data); break;
     case 0xaa: io_[0x32] = data; break;
@@ -695,16 +793,29 @@ void Pc88GenericDriver::schedule_irq_sources(int& todo)
     const bool timer_b_due = fm_timer_b_interval_frames_ > 0
         && fm_timer_b_frames_until_next_ <= 0;
     const bool periodic_due = use_periodic_irq_ && periodic_irq_frames_until_next_ <= 0;
+    const bool rtc_due = use_rtc_irq_ && rtc_irq_frames_until_next_ <= 0;
 
     if (timer_a_due) fm_timer_a_frames_until_next_ += fm_timer_a_interval_frames_;
     if (timer_b_due) fm_timer_b_frames_until_next_ += fm_timer_b_interval_frames_;
     const bool fm_irq_due = (timer_a_due && (fm_mode_ & 0x04) != 0)
         || (timer_b_due && (fm_mode_ & 0x08) != 0);
-    if (fm_irq_due && (io_[0x32] & 0x80) == 0) {
-        raise_irq(fm_irq_bus_, "fm");
-    } else if (periodic_due) {
-        raise_irq(0x02, "rtc-vrtc");
+    const bool rtc_serviceable = rtc_due && interrupt_line_enabled(2);
+    const bool periodic_serviceable = periodic_due && interrupt_line_enabled(1);
+    // Masked periodic edges are consumed. Simultaneous enabled edges remain
+    // due until a higher-priority line has been delivered, matching the
+    // original controller's pending-bit behavior.
+    if (rtc_due && !rtc_serviceable) rtc_irq_frames_until_next_ += rtc_irq_interval_frames_;
+    if (periodic_due && !periodic_serviceable)
         periodic_irq_frames_until_next_ += periodic_irq_interval_frames_;
+
+    if (fm_irq_due && (io_[0x32] & 0x80) == 0 && interrupt_line_enabled(4)) {
+        raise_irq(fm_irq_bus_, "fm");
+    } else if (rtc_serviceable) {
+        rtc_irq_frames_until_next_ += rtc_irq_interval_frames_;
+        raise_irq(0x04, "rtc");
+    } else if (periodic_serviceable) {
+        periodic_irq_frames_until_next_ += periodic_irq_interval_frames_;
+        raise_irq(0x02, "rtc-vrtc");
     }
 
     if (fm_timer_a_interval_frames_ > 0)
@@ -712,7 +823,12 @@ void Pc88GenericDriver::schedule_irq_sources(int& todo)
     if (fm_timer_b_interval_frames_ > 0)
         todo = std::min(todo, std::max(1, fm_timer_b_frames_until_next_));
     if (use_periodic_irq_) {
-        todo = std::min(todo, std::max(1, periodic_irq_frames_until_next_));
+        todo = std::min(todo, std::max(1, static_cast<int>(
+            std::ceil(periodic_irq_frames_until_next_))));
+    }
+    if (use_rtc_irq_) {
+        todo = std::min(todo, std::max(1, static_cast<int>(
+            std::ceil(rtc_irq_frames_until_next_))));
     }
 }
 
@@ -723,6 +839,13 @@ void Pc88GenericDriver::advance_irq_sources(int frames)
     if (use_periodic_irq_) {
         periodic_irq_frames_until_next_ -= frames;
     }
+    if (use_rtc_irq_) rtc_irq_frames_until_next_ -= frames;
+}
+
+bool Pc88GenericDriver::interrupt_line_enabled(int line) const
+{
+    return line >= 0 && line < interrupt_level_
+        && (interrupt_mask_ & (1u << line)) != 0;
 }
 
 void Pc88GenericDriver::raise_irq(uint8_t bus, const char* source)
@@ -819,6 +942,49 @@ void Pc88GenericDriver::load_opna_adpcm_assets()
         ym2608_.write_adpcm_memory(offset, data.data(), count);
     }
     trace_event("adpcm-load", static_cast<uint32_t>(required), static_cast<uint32_t>(adpcm_assets_.size()));
+}
+
+bool Pc88GenericDriver::load_n88_rom(const std::filesystem::path& packs_path,
+                                     const ZipArchive& archive)
+{
+    constexpr std::array<const char*, 2> kRomNames{{"N88.ROM", "PC88.ROM"}};
+
+    for (const char* name : kRomNames) {
+        std::string rom_error;
+        auto data = archive.read(name, rom_error);
+        if (rom_error.empty() && data.size() >= n88_rom_.size()) {
+            std::copy_n(data.begin(), n88_rom_.size(), n88_rom_.begin());
+            trace_event("n88-rom-load", 1, static_cast<uint32_t>(data.size()));
+            return true;
+        }
+    }
+
+    const std::array<std::filesystem::path, 8> candidates{{
+        packs_path / "N88.ROM",
+        packs_path / "PC88.ROM",
+        packs_path / "n88.rom",
+        packs_path / "pc88.rom",
+        packs_path / "roms" / "N88.ROM",
+        packs_path / "roms" / "PC88.ROM",
+        packs_path / "roms" / "n88.rom",
+        packs_path / "roms" / "pc88.rom",
+    }};
+    for (const auto& path : candidates) {
+        std::ifstream input(path, std::ios::binary);
+        if (!input) continue;
+        std::vector<uint8_t> data(
+            (std::istreambuf_iterator<char>(input)),
+            std::istreambuf_iterator<char>());
+        if (data.size() < n88_rom_.size()) continue;
+        std::copy_n(data.begin(), n88_rom_.size(), n88_rom_.begin());
+        trace_event("n88-rom-load", 2, static_cast<uint32_t>(data.size()));
+        return true;
+    }
+
+    // A ROM image is intentionally not bundled. Keep the underlying RAM
+    // visible when none is supplied so existing packs continue to run.
+    trace_event("n88-rom-missing");
+    return false;
 }
 
 void Pc88GenericDriver::open_trace_from_environment()

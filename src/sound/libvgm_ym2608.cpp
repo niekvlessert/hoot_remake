@@ -131,6 +131,7 @@ void LibvgmYm2608::reset()
         ym2608_reset_chip(chip_);
         ym2608_write(chip_, 0, 0x29);
         ym2608_write(chip_, 1, 0x80);
+        set_adpcm_memory_x8(adpcm_memory_x8_);
         ssg_phase_ = 0.0;
         ssg_dc_prev_in_left_ = 0.0;
         ssg_dc_prev_in_right_ = 0.0;
@@ -141,6 +142,19 @@ void LibvgmYm2608::reset()
         ym2608_set_mute_mask(chip_, mute_mask_);
         if (ssg_ != nullptr) ay8910_set_mute_mask(ssg_, ssg_mute_mask_);
     }
+}
+
+void LibvgmYm2608::set_adpcm_memory_x8(bool enabled)
+{
+    adpcm_memory_x8_ = enabled;
+    if (chip_ == nullptr) return;
+
+    // YM2608 ADPCM control register 01h selects the external-memory wiring
+    // in bits 1:0. Hoot's PCMx8 helper sets it to 2 (x8 DRAM) instead of
+    // the reset default 0 (x1 DRAM), which changes the ADPCM address shift
+    // from 2 to 5 in the chip core.
+    ym2608_write(chip_, 2, 0x01);
+    ym2608_write(chip_, 3, enabled ? 0x02 : 0x00);
 }
 
 void LibvgmYm2608::write(uint8_t port, uint8_t data)

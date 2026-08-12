@@ -32,6 +32,16 @@ int main()
 {
     bool ok = true;
 
+    hoot::HootEntry hornet;
+    hornet.driver_name = "konami/hornet";
+    const auto hornet_probe = hoot::DriverRegistry::instance().probe(hornet);
+    ok &= expect_status(hornet, hoot::DriverSupportStatus::Experimental, "Konami Hornet");
+    if (hornet_probe.driver_id != "konami-hornet-rf5c400"
+        || hornet_probe.reason.find("RF5C400") == std::string::npos) {
+        std::cerr << "Konami Hornet: incomplete probe metadata\n";
+        ok = false;
+    }
+
     hoot::HootEntry x68k;
     x68k.driver_name = "x68k/generic";
     ok &= expect_status(x68k, hoot::DriverSupportStatus::Playable, "plain x68k");
@@ -91,6 +101,12 @@ int main()
     pc88opna.driver_name = "pc88/opna";
     pc88opna.options["use_pcmx8"] = 1;
     ok &= expect_status(pc88opna, hoot::DriverSupportStatus::Experimental, "generic pc88 opna");
+
+    for (const char* driver : {"x1/psg", "x1/opm", "x1/opmx2", "x1/opn"}) {
+        hoot::HootEntry x1;
+        x1.driver_name = driver;
+        ok &= expect_status(x1, hoot::DriverSupportStatus::Experimental, driver);
+    }
 
     hoot::HootEntry pc88vados;
     pc88vados.driver_name = "pc88vados/opn";

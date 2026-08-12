@@ -14,26 +14,62 @@ if(MSVC)
 endif()
 
 option(HOOT_CATALOG_ONLY "Configure only the JSON/SQLite catalogue build target" OFF)
+option(HOOT_USE_MASTER_CATALOG "Build the multi-source/provenance Hoot master catalogue" ON)
 find_package(Python3 COMPONENTS Interpreter REQUIRED)
 set(HOOT_CATALOG_JSON "${CMAKE_BINARY_DIR}/catalog-src/hoot.catalog.json")
 set(HOOT_CATALOG_SQLITE "${CMAKE_BINARY_DIR}/hoot.sqlite")
 set(HOOT_CATALOG_ZSTD "${CMAKE_BINARY_DIR}/hoot.sqlite.zst")
-add_custom_command(
-    OUTPUT "${HOOT_CATALOG_JSON}" "${HOOT_CATALOG_SQLITE}" "${HOOT_CATALOG_ZSTD}"
-    COMMAND "${Python3_EXECUTABLE}" "${CMAKE_CURRENT_SOURCE_DIR}/tools/hootcatalog/hoot_catalog.py"
-        build
-        --input "${CMAKE_CURRENT_SOURCE_DIR}/xml_20251231.zip"
-        --json-dir "${CMAKE_BINARY_DIR}/catalog-src"
-        --overrides "${CMAKE_CURRENT_SOURCE_DIR}/hoot-overrides.xml"
-        --sqlite "${HOOT_CATALOG_SQLITE}"
-        --zstd "${HOOT_CATALOG_ZSTD}"
-        --level 19
-    DEPENDS
-        "${CMAKE_CURRENT_SOURCE_DIR}/tools/hootcatalog/hoot_catalog.py"
-        "${CMAKE_CURRENT_SOURCE_DIR}/xml_20251231.zip"
-        "${CMAKE_CURRENT_SOURCE_DIR}/hoot-overrides.xml"
-    COMMENT "Building JSON and zstd level 19 SQLite Hoot catalogues"
-    VERBATIM)
+
+if(HOOT_USE_MASTER_CATALOG)
+    set(HOOT_MASTER_SOURCES "${CMAKE_CURRENT_SOURCE_DIR}/catalog-sources/master_sources.json")
+    set(HOOT_MASTER_PACKS "${CMAKE_CURRENT_SOURCE_DIR}/catalog-sources/hoot_archive_catalog.json")
+    set(HOOT_MASTER_PACK_INDEX "${CMAKE_BINARY_DIR}/catalog-src/hoot.pack-index.json")
+    set(HOOT_MASTER_REPORT "${CMAKE_BINARY_DIR}/hoot-master-build.json")
+    file(GLOB_RECURSE HOOT_BASELINE_CATALOG_FILES CONFIGURE_DEPENDS
+        "${CMAKE_CURRENT_SOURCE_DIR}/catalog-src/*.json")
+    file(GLOB_RECURSE HOOT_OPTIONAL_CATALOG_SNAPSHOTS CONFIGURE_DEPENDS
+        "${CMAKE_CURRENT_SOURCE_DIR}/catalog-sources/snapshots/*")
+    add_custom_command(
+        OUTPUT "${HOOT_CATALOG_JSON}" "${HOOT_CATALOG_SQLITE}" "${HOOT_CATALOG_ZSTD}" "${HOOT_MASTER_PACK_INDEX}"
+        COMMAND "${Python3_EXECUTABLE}" "${CMAKE_CURRENT_SOURCE_DIR}/tools/hootcatalog/hoot_master_catalog.py"
+            build-master
+            --sources "${HOOT_MASTER_SOURCES}"
+            --output "${CMAKE_BINARY_DIR}/catalog-src"
+            --overrides "${CMAKE_CURRENT_SOURCE_DIR}/hoot-overrides.xml"
+            --pack-catalog "${HOOT_MASTER_PACKS}"
+            --pack-index "${HOOT_MASTER_PACK_INDEX}"
+            --sqlite "${HOOT_CATALOG_SQLITE}"
+            --zstd "${HOOT_CATALOG_ZSTD}"
+            --level 19
+            --report "${HOOT_MASTER_REPORT}"
+        DEPENDS
+            "${CMAKE_CURRENT_SOURCE_DIR}/tools/hootcatalog/hoot_catalog.py"
+            "${CMAKE_CURRENT_SOURCE_DIR}/tools/hootcatalog/hoot_master_catalog.py"
+            "${HOOT_MASTER_SOURCES}"
+            "${HOOT_MASTER_PACKS}"
+            "${CMAKE_CURRENT_SOURCE_DIR}/hoot-overrides.xml"
+            ${HOOT_BASELINE_CATALOG_FILES}
+            ${HOOT_OPTIONAL_CATALOG_SNAPSHOTS}
+        COMMENT "Building merged/provenance Hoot master catalogue and zstd level 19 SQLite"
+        VERBATIM)
+else()
+    add_custom_command(
+        OUTPUT "${HOOT_CATALOG_JSON}" "${HOOT_CATALOG_SQLITE}" "${HOOT_CATALOG_ZSTD}"
+        COMMAND "${Python3_EXECUTABLE}" "${CMAKE_CURRENT_SOURCE_DIR}/tools/hootcatalog/hoot_catalog.py"
+            build
+            --input "${CMAKE_CURRENT_SOURCE_DIR}/xml_20251231.zip"
+            --json-dir "${CMAKE_BINARY_DIR}/catalog-src"
+            --overrides "${CMAKE_CURRENT_SOURCE_DIR}/hoot-overrides.xml"
+            --sqlite "${HOOT_CATALOG_SQLITE}"
+            --zstd "${HOOT_CATALOG_ZSTD}"
+            --level 19
+        DEPENDS
+            "${CMAKE_CURRENT_SOURCE_DIR}/tools/hootcatalog/hoot_catalog.py"
+            "${CMAKE_CURRENT_SOURCE_DIR}/xml_20251231.zip"
+            "${CMAKE_CURRENT_SOURCE_DIR}/hoot-overrides.xml"
+        COMMENT "Building legacy JSON and zstd level 19 SQLite Hoot catalogues"
+        VERBATIM)
+endif()
 add_custom_target(hoot_catalog
     DEPENDS "${HOOT_CATALOG_JSON}" "${HOOT_CATALOG_SQLITE}" "${HOOT_CATALOG_ZSTD}")
 
@@ -147,12 +183,15 @@ set(HOOT_CORE_SOURCES
     src/core/entry_validation.cpp
     src/core/text_encoding.cpp
     src/cpu/kmz80_cpu.cpp
+    src/cpu/musashi_bus.cpp
     src/cpu/x86_cpu.cpp
     src/drivers/driver_registry.cpp
+    src/drivers/konami_hornet_driver.cpp
     src/drivers/microcabin_pc88_driver.cpp
     src/drivers/pc88_generic_driver.cpp
     src/drivers/microcabin_pc98dos_driver.cpp
     src/drivers/pc98_dos_driver.cpp
+    src/drivers/sharp_x1_generic_driver.cpp
     src/drivers/x68k_generic_driver.cpp
     src/drivers/x68k_mxdrv_driver.cpp
     src/io/d88_image.cpp
@@ -164,6 +203,8 @@ set(HOOT_CORE_SOURCES
     src/sound/libvgm_ym2203.cpp
     src/sound/libvgm_opl.cpp
     src/sound/libvgm_ym2608.cpp
+    src/sound/k056800.cpp
+    src/sound/rf5c400.cpp
     src/sound/pc98_pcm86.cpp
     src/sound/pc98_beep.cpp
     src/sound/pc98_mpu401.cpp
@@ -428,6 +469,11 @@ endif()
 
 include(CTest)
 if(BUILD_TESTING)
+    add_test(NAME hoot_master_catalog
+        COMMAND "${Python3_EXECUTABLE}" -m unittest tests/test_hoot_master_catalog.py)
+    set_tests_properties(hoot_master_catalog PROPERTIES
+        WORKING_DIRECTORY "${CMAKE_CURRENT_SOURCE_DIR}")
+
     add_executable(hoot_c_api_test tests/hoot_c_api_test.c)
     target_link_libraries(hoot_c_api_test PRIVATE hoot)
     add_test(NAME hoot_c_api COMMAND hoot_c_api_test)
@@ -521,6 +567,20 @@ if(BUILD_TESTING)
     target_link_libraries(pc88_generic_driver_test PRIVATE hootcore)
     add_test(NAME pc88_generic_driver COMMAND pc88_generic_driver_test ${CMAKE_CURRENT_SOURCE_DIR}/tests/fixtures)
 
+    set(_SHARP_X1_FIXTURE_DIR ${CMAKE_CURRENT_BINARY_DIR}/tests/fixtures)
+    set(_SHARP_X1_FIXTURE ${_SHARP_X1_FIXTURE_DIR}/sharp_x1_synthetic.zip)
+    add_custom_command(
+        OUTPUT ${_SHARP_X1_FIXTURE}
+        COMMAND ${CMAKE_COMMAND} -E make_directory ${_SHARP_X1_FIXTURE_DIR}
+        COMMAND ${Python3_EXECUTABLE} ${CMAKE_CURRENT_SOURCE_DIR}/tests/generate_sharp_x1_fixture.py ${_SHARP_X1_FIXTURE}
+        DEPENDS ${CMAKE_CURRENT_SOURCE_DIR}/tests/generate_sharp_x1_fixture.py
+        VERBATIM)
+    add_custom_target(sharp_x1_test_fixture DEPENDS ${_SHARP_X1_FIXTURE})
+    add_executable(sharp_x1_generic_driver_test tests/sharp_x1_generic_driver_test.cpp)
+    add_dependencies(sharp_x1_generic_driver_test sharp_x1_test_fixture)
+    target_link_libraries(sharp_x1_generic_driver_test PRIVATE hootcore)
+    add_test(NAME sharp_x1_generic_driver COMMAND sharp_x1_generic_driver_test ${_SHARP_X1_FIXTURE_DIR})
+
     add_executable(pc98_bare_driver_test tests/pc98_bare_driver_test.cpp)
     target_link_libraries(pc98_bare_driver_test PRIVATE hootcore)
     add_test(NAME pc98_bare_driver COMMAND pc98_bare_driver_test ${CMAKE_CURRENT_SOURCE_DIR}/tests/fixtures)
@@ -536,6 +596,10 @@ if(BUILD_TESTING)
     add_executable(libvgm_opl_test tests/libvgm_opl_test.cpp)
     target_link_libraries(libvgm_opl_test PRIVATE hootcore)
     add_test(NAME libvgm_opl COMMAND libvgm_opl_test)
+
+    add_executable(rf5c400_test tests/rf5c400_test.cpp)
+    target_link_libraries(rf5c400_test PRIVATE hootcore)
+    add_test(NAME rf5c400 COMMAND rf5c400_test)
 
     add_executable(pc98_pcm86_test tests/pc98_pcm86_test.cpp)
     target_link_libraries(pc98_pcm86_test PRIVATE hootcore)
@@ -565,7 +629,7 @@ if(BUILD_TESTING)
 
     # The test sources use assert() as executable checks. Keep those checks
     # enabled even when the project itself is configured as Release.
-    foreach(test_target driver_registry_test x68k_memory_test x68k_pcm8_mixer_test x68k_dmaint_test x68k_midi_transport_test x68k_mxdrv_driver_test vermouth_midi_synth_test nuked_sc55_clap_synth_test mt32emu_midi_synth_test cm32p_midi_synth_test hootplay_config_test hoot_app_paths_settings_test hoot_user_overrides_test utf8_util_test hoot_xml_unicode_test hoot_legacy_sjis_test pc88_generic_driver_test pc98_bare_driver_test pc98dos_generic_driver_test pc98_special_boards_test libvgm_opl_test pc98_pcm86_test pc98_beep_test pc98_mpu401_test pc98_midi_driver_test spectrum_analyzer_test wav_recorder_test)
+    foreach(test_target driver_registry_test x68k_memory_test x68k_pcm8_mixer_test x68k_dmaint_test x68k_midi_transport_test x68k_mxdrv_driver_test vermouth_midi_synth_test nuked_sc55_clap_synth_test mt32emu_midi_synth_test cm32p_midi_synth_test hootplay_config_test hoot_app_paths_settings_test hoot_user_overrides_test utf8_util_test hoot_xml_unicode_test hoot_legacy_sjis_test pc88_generic_driver_test sharp_x1_generic_driver_test pc98_bare_driver_test pc98dos_generic_driver_test pc98_special_boards_test libvgm_opl_test rf5c400_test pc98_pcm86_test pc98_beep_test pc98_mpu401_test pc98_midi_driver_test spectrum_analyzer_test wav_recorder_test)
         if(MSVC)
             target_compile_options(${test_target} PRIVATE /UNDEBUG)
         else()

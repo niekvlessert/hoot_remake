@@ -6,9 +6,11 @@
 #include <sstream>
 
 #include "drivers/microcabin_pc88_driver.h"
+#include "drivers/konami_hornet_driver.h"
 #include "drivers/pc88_generic_driver.h"
 #include "drivers/microcabin_pc98dos_driver.h"
 #include "drivers/pc98_dos_driver.h"
+#include "drivers/sharp_x1_generic_driver.h"
 #include "drivers/x68k_generic_driver.h"
 #include "drivers/x68k_mxdrv_driver.h"
 
@@ -86,22 +88,37 @@ DriverProbeResult probe_pc88_generic(const HootEntry& entry)
     if (entry.driver_name != "pc88/opn" && entry.driver_name != "pc88/opna") {
         return {};
     }
-    std::vector<std::string> limitations;
-    if (option_enabled(entry, "use_ssgpcm")) limitations.emplace_back("SSG PCM helper path is not yet implemented");
-    if (option_enabled(entry, "use_pcmx8")) limitations.emplace_back("PCMx8 helper path is not yet implemented");
-    if (option_enabled(entry, "use_gvram")) limitations.emplace_back("GVRAM side effects are stubbed");
-    if (option_enabled(entry, "use_n88rom")) limitations.emplace_back("N88-BASIC ROM services are not yet emulated");
     std::ostringstream reason;
     reason << "generic PC-88 Z80/" << (entry.driver_name == "pc88/opna" ? "YM2608 OPNA" : "YM2203 OPN")
-           << " host implements init_pc/baseclock, variable BGM/voice sizes, FM Timer A/B, RTC/VRTC interrupts and Hoot host I/O";
-    if (!limitations.empty()) {
-        reason << "; remaining limitations: ";
-        for (size_t i = 0; i < limitations.size(); ++i) {
-            if (i) reason << ", ";
-            reason << limitations[i];
-        }
-    }
+           << " host implements init_pc/baseclock, variable BGM/voice sizes, FM Timer A/B, RTC/VRTC interrupts, "
+              "600 Hz RTC and exact VRTC interrupts, PC-88 interrupt masking, SSG-PCM timing, PCM x8 ADPCM memory mode, "
+              "GVRAM banking, optional N88-BASIC ROM mapping and Hoot host I/O";
     return {DriverSupportStatus::Experimental, "pc88-generic", reason.str()};
+}
+
+DriverProbeResult probe_konami_hornet(const HootEntry& entry)
+{
+    if (entry.driver_name != "konami/hornet") return {};
+    return {DriverSupportStatus::Experimental,
+            "konami-hornet-rf5c400",
+            "Konami Hornet 16 MHz 68000 sound board with K056800 command interface and 32-channel RF5C400 PCM"};
+}
+
+DriverProbeResult probe_sharp_x1(const HootEntry& entry)
+{
+    if (entry.driver_name != "x1/psg" && entry.driver_name != "x1/opm"
+        && entry.driver_name != "x1/opmx2" && entry.driver_name != "x1/opn") {
+        return {};
+    }
+    const char* board = entry.driver_name == "x1/psg" ? "AY-3-8910"
+        : entry.driver_name == "x1/opm" ? "AY-3-8910/YM2151"
+        : entry.driver_name == "x1/opmx2" ? "AY-3-8910/dual-YM2151"
+        : "AY-3-8910/YM2203";
+    std::ostringstream reason;
+    reason << "Sharp X1 4 MHz Z80/" << board
+           << " host with flat 64 KiB RAM, 16-bit I/O memory, X1 timer/CTC/VSync interrupts, "
+              "dynamic BGM/voice loading and PSG-PCM scheduling";
+    return {DriverSupportStatus::Experimental, "sharp-x1-generic", reason.str()};
 }
 
 DriverProbeResult probe_microcabin_pc98(const HootEntry& entry)
@@ -419,6 +436,14 @@ const DriverRegistry& DriverRegistry::instance()
 
 DriverRegistry::DriverRegistry()
 {
+    registrations_.push_back({
+        "konami-hornet-rf5c400",
+        probe_konami_hornet,
+        [] { return std::make_unique<KonamiHornetDriver>(); }});
+    registrations_.push_back({
+        "sharp-x1-generic",
+        probe_sharp_x1,
+        [] { return std::make_unique<SharpX1GenericDriver>(); }});
     registrations_.push_back({
         "pc88-generic",
         probe_pc88_generic,
