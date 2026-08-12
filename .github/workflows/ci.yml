@@ -103,17 +103,28 @@ jobs:
           echo "VCPKG_ROOT=$VCPKG_ROOT_UNIX" >> "$GITHUB_ENV"
           echo "VCPKG_ROOT_UNIX=$VCPKG_ROOT_UNIX" >> "$GITHUB_ENV"
 
-      - name: Prime vcpkg Brotli source cache (Linux)
+      - name: Prime fragile vcpkg source downloads (Linux)
         if: runner.os == 'Linux'
         shell: bash
         run: |
-          BROTLI_ARCHIVE="$VCPKG_ROOT_UNIX/downloads/google-brotli-v1.2.0.tar.gz"
-          mkdir -p "$(dirname "$BROTLI_ARCHIVE")"
-          curl --fail --location --retry 3 --retry-delay 2 \
-            --cacert /etc/ssl/certs/ca-certificates.crt \
-            --output "$BROTLI_ARCHIVE" \
-            https://github.com/google/brotli/archive/v1.2.0.tar.gz
-          test -s "$BROTLI_ARCHIVE"
+          download_vcpkg_source() {
+            destination="$VCPKG_ROOT_UNIX/downloads/$1"
+            url="$2"
+            mkdir -p "$(dirname "$destination")"
+            curl --fail --location \
+              --retry 5 --retry-all-errors --retry-delay 2 \
+              --connect-timeout 20 --max-time 300 \
+              --cacert /etc/ssl/certs/ca-certificates.crt \
+              --output "$destination" \
+              "$url"
+            test -s "$destination"
+          }
+          download_vcpkg_source \
+            google-brotli-v1.2.0.tar.gz \
+            https://codeload.github.com/google/brotli/tar.gz/refs/tags/v1.2.0
+          download_vcpkg_source \
+            besser82-libxcrypt-v4.5.2.tar.gz \
+            https://codeload.github.com/besser82/libxcrypt/tar.gz/refs/tags/v4.5.2
 
       - name: Install native dependencies (Windows)
         if: runner.os == 'Windows'
@@ -133,9 +144,19 @@ jobs:
         if: runner.os != 'Windows'
         shell: bash
         run: |
-          "$VCPKG_ROOT_UNIX/vcpkg" install \
-            --triplet "${{ matrix.triplet }}" \
-            zlib sqlite3 zstd sdl3 sdl3-ttf
+          for attempt in 1 2 3; do
+            if "$VCPKG_ROOT_UNIX/vcpkg" install \
+              --triplet "${{ matrix.triplet }}" \
+              zlib sqlite3 zstd sdl3 sdl3-ttf; then
+              exit 0
+            fi
+            if [ "$attempt" -eq 3 ]; then
+              echo "vcpkg install failed after $attempt attempts" >&2
+              exit 1
+            fi
+            echo "vcpkg install attempt $attempt failed; retrying with the preserved download/build cache" >&2
+            sleep "$((attempt * 10))"
+          done
 
       - name: Configure (Windows)
         if: runner.os == 'Windows'
